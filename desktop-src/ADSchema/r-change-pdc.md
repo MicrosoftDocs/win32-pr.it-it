@@ -1,10 +1,10 @@
 ---
-title: Modifica-PDC esteso a destra
+title: Diritto esteso Change-PDC
 description: Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emulatore del controller di dominio primario (PDC).
 ms.assetid: f23452de-3c19-4bb2-836a-a3a97eb336b9
 ms.tgt_platform: multiple
 keywords:
-- Modifica-schema AD esteso a destra PDC
+- Change-PDC extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87dc1912937e9726209e2871e7b365e9f37cfe14
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3dcfe6833c7ff7e2a5a11425a3ada7deac006ec93224673a6a496b22680d297
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532651"
 ---
-# <a name="change-pdc-extended-right"></a>Modifica-PDC esteso a destra
+# <a name="change-pdc-extended-right"></a>Diritto esteso Change-PDC
 
 Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emulatore del controller di dominio primario (PDC).
 
@@ -28,7 +28,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Modifica-PDC                           |
+| CN           | Change-PDC                           |
 | Display-Name | Modificare il PDC                           |
 | Rights-GUID  | bae50096-4752-11d1-9052-00c04fc2d4cf |
 
@@ -49,8 +49,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -60,8 +60,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -71,8 +71,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -82,8 +82,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -93,8 +93,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -104,8 +104,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'emu
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 34                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 

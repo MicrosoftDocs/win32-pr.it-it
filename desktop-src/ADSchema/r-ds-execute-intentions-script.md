@@ -1,10 +1,10 @@
 ---
-title: DS-Execute-Intentions-script esteso a destra
-description: Controllare l'accesso a destra, che deve essere concesso al contenitore partizioni, che consente l'utilizzo dell'operazione di Rendom.exe o preparazione in una ridenominazione del dominio.
+title: Diritto esteso DS-Execute-Intentions-Script
+description: Diritto di accesso di controllo, che deve essere concesso al contenitore partizioni, che consente l'Rendom.exe o l'operazione di preparazione da usare in una ridenominazione del dominio.
 ms.assetid: 39e9e76c-55c5-4514-ad4d-102844bcbc5a
 ms.tgt_platform: multiple
 keywords:
-- DS-Execute-Intentions-schema AD esteso destro dello script
+- Schema AD esteso DS-Execute-Intentions-Script
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b34765db2063688ccc8fced0a1e25cac23b98ded
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3a106fed07b677b74e5ec620bc58d605938809868347ec0d6ef354d0d9d28a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532270"
 ---
-# <a name="ds-execute-intentions-script-extended-right"></a>DS-Execute-Intentions-script esteso a destra
+# <a name="ds-execute-intentions-script-extended-right"></a>Diritto esteso DS-Execute-Intentions-Script
 
-Controllare l'accesso a destra, che deve essere concesso al contenitore partizioni, che consente l'utilizzo dell'operazione di Rendom.exe o preparazione in una ridenominazione del dominio. Questo diritto di accesso al controllo viene inoltre visualizzato come diritto di controllo solo quando viene eseguita l'operazione di Rendom.exe o di esecuzione del passaggio.
+Diritto di accesso di controllo, che deve essere concesso al contenitore partizioni, che consente l'Rendom.exe o l'operazione di preparazione da usare in una ridenominazione del dominio. Questo diritto di accesso di controllo viene visualizzato anche come diritto di sola controllo quando viene eseguita l'Rendom.exe o di esecuzione del passaggio.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | DS-Execute-Intentions-script         |
-| Display-Name | Esegui script di aggiornamento foresta         |
+| CN           | DS-Execute-Intentions-Script         |
+| Display-Name | Eseguire lo script di aggiornamento della foresta         |
 | Rights-GUID  | 2f16c4a5-b98e-432c-952a-cb388ba33f2e |
 
 
@@ -37,7 +37,7 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -49,19 +49,19 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 
@@ -71,8 +71,8 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 
@@ -82,8 +82,8 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 
@@ -93,8 +93,8 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 
@@ -104,8 +104,8 @@ Controllare l'accesso a destra, che deve essere concesso al contenitore partizio
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------|
-| Applies-To              | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
-| Localization-display-ID | 66                                                            |
+| Applies-To              | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
+| Localization-Display-ID | 66                                                            |
 
 
 

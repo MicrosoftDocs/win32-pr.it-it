@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/MediaClassPrimaryID
-description: L'attributo WM/MediaClassPrimaryID è un GUID che specifica una delle classi multimediali primarie Music, audio non musicale, video o altro.
+description: L'attributo WM/MediaClassPrimaryID è un GUID che specifica una delle classi multimediali principali music, audio non musicale, video o altro.
 ms.assetid: eb78f4a9-7c18-4cad-bb34-fd1ff15bad4f
 keywords:
-- Media Player Windows per gli attributi WM/MediaClassPrimaryID
+- Attributo WM/MediaClassPrimaryID Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5107a2c4e04e9424bf0a20a7d4cf7b8edef80492
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7aebc52488ebcabfca843a8fdfdfbb51307cd96be4fe923386c718bab8752c61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506461"
 ---
 # <a name="wmmediaclassprimaryid-attribute"></a>Attributo WM/MediaClassPrimaryID
 
-L'attributo **WM/MediaClassPrimaryID** è un GUID che specifica una delle classi multimediali primarie: musica, audio non musicale, video o altro.
+**L'attributo WM/MediaClassPrimaryID** è un GUID che specifica una delle classi multimediali principali: musica, audio non musicale, video o altro.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Altri elementi](other-item-attributes.md)
 -   [Elementi foto](photo-item-attributes.md)
 -   [Playlist](playlist-attributes-ref.md)
@@ -37,11 +37,11 @@ L'attributo **WM/MediaClassPrimaryID** è un GUID che specifica una delle classi
 
 Questo attributo viene archiviato sia nella libreria che nel file multimediale digitale.
 
-**MediaClassPrimaryID** è un alias per questo attributo.
+**MediaClassPrimaryID è** un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMMediaClassPrimaryID.
+La Windows Media Format SDK per questo attributo è g \_ wszWMMediaClassPrimaryID.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 Series o versione successiva (l'elemento Photo è supportato solo in Windows Media Player 10 o versione successiva)<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva (l'elemento foto è supportato solo in Windows Media Player 10 o versioni successive)<br/> |
 
 
 
@@ -57,7 +57,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

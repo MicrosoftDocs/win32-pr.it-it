@@ -1,5 +1,5 @@
 ---
-title: MS-TS-Remote-Control (attributo)
+title: Attributo ms-TS-Remote-Control
 description: Controllo remoto di Servizi terminal specifica se consentire l'osservazione remota o il controllo remoto della sessione di Servizi terminal dell'utente.
 ms.assetid: 151e9327-c29e-413b-9485-4c408a67560f
 ms.tgt_platform: multiple
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfb2428b047ea06a8e0faa5eed390875cd0380be
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 342082e76a422b5ec136c7fc76a59dfd0f0aaf9405b7e56404e94c2516bd5768
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507841"
 ---
-# <a name="ms-ts-remote-control-attribute"></a>MS-TS-Remote-Control (attributo)
+# <a name="ms-ts-remote-control-attribute"></a>Attributo ms-TS-Remote-Control
 
 Controllo remoto di Servizi terminal specifica se consentire l'osservazione remota o il controllo remoto della sessione di Servizi terminal dell'utente.
 
@@ -29,13 +29,13 @@ Controllo remoto di Servizi terminal specifica se consentire l'osservazione remo
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Remote-Control                 |
-| LDAP-Display-Name | msTSRemoteControl                    |
+| CN                | ms-TS-Remote-Control                 |
+| Ldap-Display-Name | msTSRemoteControl                    |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1980              |
-| System-ID-GUID    | 15177226-8642-468b-8c48-03ddfd004982 |
+| System-Id-Guid    | 15177226-8642-468b-8c48-03ddfd004982 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Controllo remoto di Servizi terminal specifica se consentire l'osservazione remo
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Controllo remoto di Servizi terminal specifica se consentire l'osservazione remo
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Controllo remoto di Servizi terminal specifica se consentire l'osservazione remo
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

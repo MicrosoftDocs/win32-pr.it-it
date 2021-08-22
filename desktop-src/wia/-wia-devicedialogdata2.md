@@ -1,5 +1,5 @@
 ---
-description: 'Struttura DEVICEDIALOGDATA2: definisce i dati necessari per chiamare una finestra di dialogo del dispositivo.'
+description: 'Struttura DEVICEDIALOGDATA2: definisce i dati necessari per chiamare un dialogo del dispositivo.'
 ms.assetid: 544238de-310f-4fc3-b519-bb4e6b309272
 title: Struttura DEVICEDIALOGDATA2 (Wiadefd.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: 82ca6cba81101e577eed882ad45272ab81546fed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 800f7ceb102cafcad8ddda5204990706b908a4a0137a16143af76a90345b472e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451191"
 ---
 # <a name="devicedialogdata2-structure"></a>Struttura DEVICEDIALOGDATA2
 
@@ -84,7 +84,7 @@ Specifica un set di flag che controllano l'operazione della finestra di dialogo.
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamento predefinito.                                                                                                                                                                           |
 | IMMAGINE SINGOLA \_ DELLA FINESTRA DI DIALOGO DEL \_ \_ DISPOSITIVO \_ WIA   | Limitare la selezione dell'immagine a una singola immagine nella finestra di dialogo di acquisizione dell'immagine del dispositivo.                                                                                                      |
-| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ - USARE \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
+| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ USA \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
 
 
 
@@ -143,7 +143,7 @@ Tipo: **BSTR \***
 
 </dd> <dd>
 
-Puntatore a una matrice di puntatori BSTR. Ogni elemento della matrice punta a un BSTR che contiene il nome di destinazione di un file che è stato trasferito correttamente nella cartella identificata da bstrFolderName. Il metodo deve allocare l'archiviazione per questo membro.
+Puntatore a una matrice di puntatori BSTR. Ogni elemento della matrice punta a un BSTR che contiene il nome di destinazione di un file trasferito correttamente nella cartella identificata da bstrFolderName. Il metodo deve allocare l'archiviazione per questo membro.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 </dd> <dd>
 
-Puntatore [**all'interfaccia IWiaItem2**](-wia-iwiaitem2.md) dell'elemento WIA che trasferisce i dati al file o ai file denominati nella matrice **pbstrFilePaths.**
+Puntatore [**all'interfaccia IWiaItem2**](-wia-iwiaitem2.md) dell'elemento WIA che trasferisce dati al file o ai file denominati nella matrice **pbstrFilePaths.**
 
 </dd> </dl>
 
@@ -164,8 +164,8 @@ Puntatore [**all'interfaccia IWiaItem2**](-wia-iwiaitem2.md) dell'elemento WIA c
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 

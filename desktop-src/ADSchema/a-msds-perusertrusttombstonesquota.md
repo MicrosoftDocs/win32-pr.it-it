@@ -1,11 +1,11 @@
 ---
-title: Attributo MS-DS-per-User-Trust-tombstones-quota
-description: Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted-Domain quando l'autorizzazione è basata sulla corrispondenza del SID dell'utente.
+title: Attributo MS-DS-Per-User-Trust-Tombstones-Quota
+description: Usato per applicare una quota per utente per l'eliminazione di Trusted-Domain quando l'autorizzazione è basata sulla corrispondenza del SID dell'utente.
 ms.assetid: 4db98754-a2d1-43a4-b9cb-0e3fcbbf3ed9
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-per-User-Trust-tombstones-schema AD dell'attributo quota
-- attributo msDS-PerUserTrustTombstonesQuota-schema AD
+- Schema AD dell'attributo MS-DS-Per-User-Trust-Tombstones-Quota
+- Schema AD dell'attributo msDS-PerUserTrustTombstonesQuota
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c94bb62b822552a863df99dac83e98462514c42
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee025cb904d0e37a0498b021183ea0ab8f45f621644843734ddef16d842d6ac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294631"
 ---
-# <a name="ms-ds-per-user-trust-tombstones-quota-attribute"></a>Attributo MS-DS-per-User-Trust-tombstones-quota
+# <a name="ms-ds-per-user-trust-tombstones-quota-attribute"></a>Attributo MS-DS-Per-User-Trust-Tombstones-Quota
 
-Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted-Domain quando l'autorizzazione è basata sulla corrispondenza del SID dell'utente.
+Usato per applicare una quota per utente per l'eliminazione di Trusted-Domain quando l'autorizzazione è basata sulla corrispondenza del SID dell'utente.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------|
-| CN                | MS-DS-per utente-Trust-Tombstone-quota     |
-| LDAP-Display-Name | msDS-PerUserTrustTombstonesQuota          |
+| CN                | MS-DS-Per-User-Trust-Tombstones-Quota     |
+| Ldap-Display-Name | msDS-PerUserTrustTombstonesQuota          |
 | Dimensione              | \-                                        |
-| Privilegio aggiornamento  | Amministratore di dominio                      |
-| Frequenza di aggiornamento  | Alla creazione della foresta e, successivamente, raramente. |
+| Privilegio di aggiornamento  | Amministratore di dominio                      |
+| Frequenza di aggiornamento  | Alla creazione della foresta e raramente dopo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1790                   |
-| System-ID-GUID    | 8b70a6c6-50f9-4fa3-a71e-1ce03040449b      |
+| System-Id-Guid    | 8b70a6c6-50f9-4fa3-a71e-1ce03040449b      |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)      |
 
 
@@ -57,15 +57,15 @@ Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Consente di applicare una quota per utente per l'eliminazione di oggetti Trusted
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

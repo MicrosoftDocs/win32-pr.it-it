@@ -1,7 +1,7 @@
 ---
-description: Recupera le intestazioni della risposta HTTP.
+description: Recupera le intestazioni di risposta HTTP.
 ms.assetid: 3d59ee83-280c-4074-82e1-ded203fa1049
-title: 'Metodo IWinHttpRequest:: GetResponseHeader'
+title: Metodo IWinHttpRequest::GetResponseHeader
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 6e51b0973c7b078c7de592565db19bf6e029c5a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1566ea05f78f9e90a97db3a14c61f7c59cfc61ecdb1eb390823d99a32d4983ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643881"
 ---
-# <a name="iwinhttprequestgetresponseheader-method"></a>Metodo IWinHttpRequest:: GetResponseHeader
+# <a name="iwinhttprequestgetresponseheader-method"></a>Metodo IWinHttpRequest::GetResponseHeader
 
-Il metodo **getResponseHeader** recupera le intestazioni della risposta http.
+Il **metodo GetResponseHeader** recupera le intestazioni della risposta HTTP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ HRESULT GetResponseHeader(
 
 <dl> <dt>
 
-*Intestazione* \[ di in\]
+*Intestazione* \[ Pollici\]
 </dt> <dd>
 
 Specifica il nome dell'intestazione senza distinzione tra maiuscole e minuscole.
 
 </dd> <dt>
 
-*Valore* \[ di out, retval\]
+*Valore* \[ out, retval\]
 </dt> <dd>
 
 Riceve le informazioni di intestazione risultanti.
@@ -57,20 +57,20 @@ Riceve le informazioni di intestazione risultanti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce il valore dell'intestazione della risposta denominata in *header*. Tenere presente che i client di automazione, ad esempio script, ottengono i dati di intestazione come valore restituito della chiamata di funzione, non tramite un parametro di funzione. Richiamare questo metodo solo dopo la chiamata del metodo [**Send**](iwinhttprequest-send.md) .
+Questo metodo restituisce il valore dell'intestazione della risposta denominata in *Header*. Tenere presente che i client di automazione, ad esempio lo script, ottengono i dati di intestazione come valore restituito dalla chiamata di funzione, non tramite un parametro di funzione. Richiamare questo metodo solo dopo che [**è stato**](iwinhttprequest-send.md) chiamato il metodo Send.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere l'intestazione della data dalla risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
+L'esempio seguente illustra come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere l'intestazione della data dalla risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
 
 
 ```C++
@@ -169,7 +169,7 @@ int main()
 
 
 
-Nell'esempio di script seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere l'intestazione della data dalla risposta.
+L'esempio di scripting seguente illustra come aprire una connessione HTTP, inviare una richiesta HTTP e ottenere l'intestazione della data dalla risposta.
 
 
 ```JScript
@@ -196,11 +196,11 @@ WScript.Echo( WinHttpReq.GetResponseHeader("Date"));
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -218,7 +218,7 @@ WScript.Echo( WinHttpReq.GetResponseHeader("Date"));
 [**GetAllResponseHeaders**](iwinhttprequest-getallresponseheaders.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

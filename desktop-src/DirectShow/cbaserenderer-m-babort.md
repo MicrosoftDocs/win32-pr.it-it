@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se arrestare il rendering e rifiutare ulteriori esempi.
+description: Flag che indica se arrestare il rendering e rifiutare altri campioni.
 ms.assetid: 5c8f0ee1-a1ba-4545-96cb-b38cec0f9654
-title: 'Membro CBaseRenderer:: m_bAbort (Renbase. h)'
+title: Membro CBaseRenderer::m_bAbort (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85b6a972cac8a381030ae04b8da806d92fe9c849
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef77bb1db508459bb96b3ebfa8970096ac2b1dbbf5d6c4242fb1b8350297e810
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502771"
 ---
-# <a name="cbaserendererm_babort-member"></a>Membro bAbort di CBaseRenderer:: m \_
+# <a name="cbaserendererm_babort-member"></a>Membro BAbort CBaseRenderer::m \_
 
-Flag che indica se arrestare il rendering e rifiutare ulteriori esempi.
+Flag che indica se arrestare il rendering e rifiutare altri campioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bAbort;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -14,20 +14,20 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 168ce6e371495901f2ed93fb69b605a807bc363c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c032c4c0dcb67f60f64fe2b447fd1af7061df51ed19586f4ee15b43d6a6f870c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561761"
 ---
 # <a name="disableuserpromptforservervalidation-servervalidationparameters-element-peap"></a>Elemento DisableUserPromptForServerValidation (ServerValidationParameters) (PEAP)
 
-L'elemento **DisableUserPromptForServerValidation (ServerValidationParameters)** indica se all'utente deve essere richiesta la convalida del server.
+**L'elemento DisableUserPromptForServerValidation (ServerValidationParameters)** indica se all'utente deve essere richiesta la convalida del server.
 
-Se **DisableUserPromptForServerValidation** è true, EAP-TLS esegue la convalida del server senza l'input dell'utente; Se la convalida ha esito negativo, EAP-TLS ha esito negativo per l'autenticazione. Se **DisableUserPromptForServerValidation** è false, all'utente viene richiesto di specificare un certificato o un nome del server convalidato oppure un'autorità di certificazione radice (CA).
+Se **DisableUserPromptForServerValidation** è TRUE, EAP-TLS esegue la convalida del server senza input dell'utente. se la convalida non riesce, EAP-TLS non riesce l'autenticazione. Se **DisableUserPromptForServerValidation** è FALSE, all'utente viene richiesto di specificare un nome o un certificato del server convalidato o un'autorità di certificazione radice.
 
-L'elemento **DisableUserPromptForServerValidation** è facoltativo.
+**L'elemento DisableUserPromptForServerValidation** è facoltativo.
 
 ``` syntax
 <xs:element name="DisableUserPromptForServerValidation"
@@ -35,16 +35,16 @@ L'elemento **DisableUserPromptForServerValidation** è facoltativo.
  />
 ```
 
-L'elemento **DisableUserPromptForServerValidation** è definito dal tipo complesso [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md) .
+**L'elemento DisableUserPromptForServerValidation** è definito dal tipo complesso [**ServerValidationParameters.**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Richiede all'Servizi Desktop remoto dispositivo virtuale di avviare una connessione tramite pipe alla macchina virtuale.
+description: Richiede al Servizi Desktop remoto virtuale di avviare una connessione pipe con la macchina virtuale.
 ms.assetid: e53238ee-8264-416b-8855-193c28089cfa
 title: Metodo EnableEndPoints della classe Msvm_RdvComponent
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a668e6a2605a52c7021f630145d6e4897e1c76ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a23f39ee46cb41c5941be3d9632fbe15901dfffd35078e680ebe61d46fdb131
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532531"
 ---
-# <a name="enableendpoints-method-of-the-msvm_rdvcomponent-class"></a>Metodo EnableEndPoints della classe MSVM \_ RdvComponent
+# <a name="enableendpoints-method-of-the-msvm_rdvcomponent-class"></a>Metodo EnableEndPoints della classe Msvm \_ RdvComponent
 
-Richiede all'Servizi Desktop remoto dispositivo virtuale di avviare una connessione tramite pipe alla macchina virtuale.
+Richiede al Servizi Desktop remoto virtuale di avviare una connessione pipe con la macchina virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,10 +46,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -58,13 +58,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Memoria insufficiente** (32774)
@@ -100,10 +100,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -112,7 +112,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_RdvComponent MSVM**](msvm-rdvcomponent.md)
+[**Msvm \_ RdvComponent**](msvm-rdvcomponent.md)
 </dt> </dl>
 
  

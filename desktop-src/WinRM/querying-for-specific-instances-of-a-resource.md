@@ -1,6 +1,6 @@
 ---
 title: Esecuzione di query per istanze specifiche di una risorsa
-description: La chiamata a Session. enumerate dispone di parametri facoltativi che limitano l'enumerazione in una query.
+description: La chiamata a Session.Enumerate ha parametri facoltativi che restringeno l'enumerazione in una query.
 ms.assetid: 69d2fe79-9aad-4c8c-a65e-c6bb0e51c063
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,22 +10,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 30ae068c712dd04ba892220657ad64820a890040
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f757b6392ec26f809004d599f6c5603629d23e8eb7a7f4b08a4f3a4ef18791a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642851"
 ---
 # <a name="querying-for-specific-instances-of-a-resource"></a>Esecuzione di query per istanze specifiche di una risorsa
 
-La chiamata a [**Session. enumerate**](session-enumerate.md) dispone di parametri facoltativi che limitano l'enumerazione in una query. Poiché l' [API di scripting WinRM](winrm-scripting-api.md) e l' [API C++ WinRM](winrm-c---api.md) sono strettamente modellate sul protocollo di WS-Management sottostante, i parametri utilizzano la stessa terminologia per l'esecuzione di query come protocollo:*filtro* e *dialetto del filtro*.
+La chiamata a [**Session.Enumerate ha**](session-enumerate.md) parametri facoltativi che restringeno l'enumerazione in una query. Poiché l'API di [scripting WinRM](winrm-scripting-api.md) e l'API [C++ WinRM](winrm-c---api.md) sono strettamente modellate sul protocollo WS-Management sottostante, i parametri usano la stessa terminologia per l'esecuzione di query del *protocollo,* ovvero il filtro e il dialetto di filtro *.*
 
-È possibile usare i parametri Filter e dialetto di [**Session. enumerate**](session-enumerate.md) oppure è possibile creare e fornire un oggetto [**resourceLocator**](resourcelocator.md) e il metodo [**AddSelector**](resourcelocator-addselector.md) , ma non è possibile eseguire entrambe le operazioni.
+È possibile usare i parametri di filtro e dialetto di [**Session.Enumerate**](session-enumerate.md) oppure è possibile costruire e fornire un oggetto [**ResourceLocator**](resourcelocator.md) e il metodo [**AddSelector,**](resourcelocator-addselector.md) ma non è possibile eseguire entrambe le operazioni.
 
-Questa procedura consente di eseguire una query per le schede di rete con binding TCP/IP e abilitati. La query richiede tutte le istanze di [**Win32 \_ NetworkAdapterConfiguration**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration) con la proprietà **IpEnabled** impostata su **true**. Fatta eccezione per l'aggiunta del *filtro* e del *dialetto*, la query viene gestita come una semplice enumerazione.
+Questa procedura esegue una query per le schede di rete che hanno TCP/IP associato e abilitato. La query richiede tutte le istanze di [**Win32 \_ NetworkAdapterConfiguration**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration) con la **proprietà IpEnabled** impostata su **True.** Ad eccezione dell'aggiunta del *filtro e* del *dialetto*, la query viene gestita come una semplice enumerazione.
 
-In questo esempio, il nome della risorsa per la costante di risorsa è rappresentato da un asterisco " \* " perché il nome della classe, [**Win32 \_ NetworkAdapterConfiguration**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration), è già indicato nella stringa *strFilter* .
+In questo esempio il nome della risorsa per la costante Resource è rappresentato da un asterisco " " perché il nome della \* [**classe, Win32 \_ NetworkAdapterConfiguration,**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration)è già indicato nella stringa *strFilter.*
 
 **Per eseguire una query per istanze specifiche di una risorsa**
 
@@ -48,7 +48,7 @@ In questo esempio, il nome della risorsa per la costante di risorsa è rappresen
 
     
 
-3.  Costruire la stringa di filtro. Gestione remota Windows supporta [WQL](/windows/desktop/WmiSdk/wql-sql-for-wmi) come dialetto del filtro.
+3.  Costruire la stringa di filtro. Windows Gestione remota supporta [WQL](/windows/desktop/WmiSdk/wql-sql-for-wmi) come dialetto di filtro.
 
     ```VB
     strFilter = "SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IpEnabled=TRUE"
@@ -56,11 +56,11 @@ In questo esempio, il nome della risorsa per la costante di risorsa è rappresen
 
     
 
-4.  Impostare le [**costanti di enumerazione**](enumeration-constants.md) necessarie nel parametro *Flags* .
+4.  Impostare le costanti [**di enumerazione necessarie**](enumeration-constants.md) nel parametro *flags.*
 
-    Tenere presente che se i flag includono le [**costanti di enumerazione**](enumeration-constants.md) **WSManFlagHierarchyDeepBasePropsOnly** o **WSManFlagHierarchyShallow** , il servizio WinRM restituisce il codice di errore **errore \_ WSMan \_ modalità di polimorfismo non \_ \_ supportata**.
+    Tenere presente che se [](enumeration-constants.md) i flag includono le costanti di enumerazione **WSManFlagHierarchyDeepBasePropsOnly** o **WSManFlagHierarchyShallow,** il servizio WinRM restituisce il codice di errore **ERROR \_ WSMAN \_ POLYMORPHISM \_ MODE \_ UNSUPPORTED**.
 
-5.  Chiamare il metodo [**Session. enumerate**](session-enumerate.md) . Questa chiamata avvia un'enumerazione. Il metodo **Session. enumerate** stabilisce un contesto di enumerazione del protocollo WS-Management, gestito nell'oggetto [**enumeratore**](enumerator.md) .
+5.  Chiamare il [**metodo Session.Enumerate.**](session-enumerate.md) Questa chiamata avvia un'enumerazione. Il **metodo Session.Enumerate** stabilisce un contesto WS-Management di enumerazione del protocollo, mantenuto nell'oggetto [**Enumerator.**](enumerator.md)
 
     ```VB
     Set objResultSet = objSession.Enumerate(Resource, strFilter, Dialect)
@@ -68,7 +68,7 @@ In questo esempio, il nome della risorsa per la costante di risorsa è rappresen
 
     
 
-6.  Chiamare il metodo [**Enumerator. ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo dei risultati. Nel protocollo WS-Management corrisponde all'operazione pull. Usare il metodo [**Enumerator. AtEndOfStream**](enumerator-atendofstream.md) come controllo per capire quando interrompere la lettura.
+6.  Chiamare il [**metodo Enumerator.ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo dei risultati. In WS-Management protocollo corrisponde all'operazione pull. Usare il [**metodo Enumerator.AtEndOfStream**](enumerator-atendofstream.md) come controllo per sapere quando interrompere la lettura.
 
     ```VB
     While Not objResultSet.AtEndOfStream
@@ -78,7 +78,7 @@ In questo esempio, il nome della risorsa per la costante di risorsa è rappresen
 
     
 
-Nell'esempio di codice VBScript riportato di seguito viene illustrato lo script completo.
+Nell'esempio di codice VBScript seguente viene illustrato lo script completo.
 
 
 ```VB
@@ -116,7 +116,7 @@ End Sub
 
 <dl> <dt>
 
-[Utilizzo di Gestione remota Windows](using-windows-remote-management.md)
+[Uso Windows gestione remota](using-windows-remote-management.md)
 </dt> <dt>
 
 [Enumerazione o elenco di tutte le istanze di una risorsa](enumerating-or-listing-all-instances-of-a-resource.md)
@@ -125,6 +125,6 @@ End Sub
 [**ResourceLocator**](resourcelocator.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

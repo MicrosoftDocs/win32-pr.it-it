@@ -2,7 +2,7 @@
 description: La proprietà Namespace dell'oggetto SWbemObjectPath contiene il nome dello spazio dei nomi che fa parte del percorso dell'oggetto.
 ms.assetid: be88670d-6f0d-4b9d-886f-3e70bf4758ed
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectPath. Namespace (wbemdisp. h)
+title: Proprietà SWbemObjectPath.Namespace (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,22 +17,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 885f7069e901d1d4a490ad7539077463f6c1838c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9daa9b74918c16d58546f6830bb474e40e449a8c596f61f7e27f03342c47b4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503761"
 ---
-# <a name="swbemobjectpathnamespace-property"></a>Proprietà SWbemObjectPath. Namespace
+# <a name="swbemobjectpathnamespace-property"></a>Proprietà SWbemObjectPath.Namespace
 
-La proprietà **namespace** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il nome dello spazio dei nomi che fa parte del percorso dell'oggetto. Ad esempio, il percorso seguente mostra la proprietà Namespace che restituisce la radice \\ CIMV2:
+La **proprietà Namespace** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il nome dello spazio dei nomi che fa parte del percorso dell'oggetto. Ad esempio, il percorso seguente mostra la proprietà dello spazio dei nomi che restituisce \\ cimv2 radice:
 
 ``` syntax
 \\computer\root\cimv2:win32_logicaldisk="a:"
 ```
 
-Per la spiegazione della sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per la spiegazione della sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -49,7 +49,7 @@ SWbemObjectPath.Namespace As String
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come ottenere il nome dello spazio dei nomi da istanze di [**Win32 \_ disco logico**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) che sono dischi rigidi. Lo script si connette allo spazio dei nomi predefinito.
+L'esempio seguente illustra come ottenere il nome dello spazio dei nomi dalle istanze di [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) che sono dischi rigidi. Lo script si connette allo spazio dei nomi predefinito.
 
 
 ```VB
@@ -78,11 +78,11 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

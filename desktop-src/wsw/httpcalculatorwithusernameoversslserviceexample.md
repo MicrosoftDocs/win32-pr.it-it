@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithUserNameOverSslServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice su HTTP, con nome utente sulla sicurezza in modalità mista SSL.
+description: Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con nome utente tramite sicurezza SSL in modalità mista.
 ms.assetid: 92dfec48-2314-4e83-8fe9-9d25aa100043
 keywords:
-- HttpCalculatorWithUserNameOverSslServiceExample native-servizi Web
+- HttpCalculatorWithUserNameOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a281172b097c4b00a2a589c6a6bf528d79ce427
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1f6eedd02e54590c991928576bebc7600be07f9f16c029f873f4d4fb4415de6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590041"
 ---
 # <a name="httpcalculatorwithusernameoversslserviceexample"></a>HttpCalculatorWithUserNameOverSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per ospitare un servizio di calcolatrice su HTTP, con nome utente sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password in un'intestazione WS-Security nel messaggio.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con nome utente tramite sicurezza SSL in modalità mista. In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password in WS-Security intestazione nel messaggio.
 
--   [CalculatorServiceUserNameOverSsl. cpp](#calculatorserviceusernameoversslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [CalculatorServiceUserNameOverSsl.cpp](#calculatorserviceusernameoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="calculatorserviceusernameoversslcpp"></a>CalculatorServiceUserNameOverSsl. cpp
+## <a name="calculatorserviceusernameoversslcpp"></a>CalculatorServiceUserNameOverSsl.cpp
 
 
 ```C++
@@ -355,7 +355,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -480,9 +480,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Aggiungi-GUID esteso a destra
-description: Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID specifico.
+title: Diritto esteso Add-GUID
+description: Diritto esteso necessario nella radice del NC per aggiungere un oggetto con un GUID specifico.
 ms.assetid: 33b3580f-6a3c-416d-9a64-c1d91a262641
 ms.tgt_platform: multiple
 keywords:
-- Schema AD esteso Right di aggiunta-GUID
+- Schema ad Active Directory con estensione GUID aggiuntivo
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97b398d611cc832154898386e6faf547bd7b695c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad0aa987f9c7b539da3332b89b672f181b7f41da6ebca64aaf22f33fc3503fb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532831"
 ---
-# <a name="add-guid-extended-right"></a>Aggiungi-GUID esteso a destra
+# <a name="add-guid-extended-right"></a>Diritto esteso Add-GUID
 
-Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID specifico.
+Diritto esteso necessario nella radice del NC per aggiungere un oggetto con un GUID specifico.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Aggiungi GUID                             |
+| CN           | Guid aggiuntivo                             |
 | Display-Name | Aggiungere il GUID                             |
 | Rights-GUID  | 440820ad-65b4-11d1-a3da-0000f875ae0d |
 
@@ -49,8 +49,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -60,8 +60,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -71,8 +71,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -82,8 +82,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -93,8 +93,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -104,8 +104,8 @@ Diritto esteso necessario alla radice NC per aggiungere un oggetto con un GUID s
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 35                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 

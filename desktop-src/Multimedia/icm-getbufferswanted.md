@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_GETBUFFERSWANTED (VFW. h)
-description: Il \_ messaggio MCI GETBUFFERSWANTED esegue una query su un driver per il numero di buffer da allocare. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro ICGetBuffersWanted.
+title: ICM_GETBUFFERSWANTED messaggio (Vfw.h)
+description: Il ICM \_ GETBUFFERSWANTED esegue una query su un driver per il numero di buffer da allocare. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICGetBuffersWanted.
 ms.assetid: 109e8627-7ed4-4f17-bf7f-e77f42dfc8c7
 keywords:
-- ICM_GETBUFFERSWANTED messaggi multimediali di Windows
+- ICM_GETBUFFERSWANTED messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06de8cc3bcfe463d0318651c8e2d51b269504769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4bd5fae6e9f008649366cf922ef117f5b6f7560a7764c4f8d81552a255de48a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495871"
 ---
-# <a name="icm_getbufferswanted-message"></a>\_Messaggio GETBUFFERSWANTED ICM
+# <a name="icm_getbufferswanted-message"></a>\_ICM GETBUFFERSWANTED message
 
-Il messaggio **MCI \_ GETBUFFERSWANTED** esegue una query su un driver per il numero di buffer da allocare. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICGetBuffersWanted**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted) .
+Il **ICM \_ getBUFFERSWANTED** esegue una query su un driver per il numero di buffer da allocare. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICGetBuffersWanted.**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = 0;
 <span id="lpdwBuffers"></span><span id="lpdwbuffers"></span><span id="LPDWBUFFERS"></span>*lpdwBuffers*
 </dt> <dd>
 
-Indirizzo per contenere il numero di campioni necessari al driver per eseguire in modo efficiente il rendering dei dati.
+Indirizzo per contenere il numero di campioni di cui il driver ha bisogno per eseguire in modo efficiente il rendering dei dati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce ICERR \_ OK se ha esito positivo o ICERR non \_ supportato in caso contrario.
+Restituisce ICERR \_ OK in caso di esito positivo o ICERR \_ UNSUPPORTED in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene usato dai driver che usano l'hardware per eseguire il rendering dei dati e vogliono garantire un ritardo di tempo minimo causato dall'attesa dell'arrivo dei buffer. Ad esempio, se un driver controlla una lavagna di decompressione video che può ospitare 10 frame di video, potrebbe restituire 10 per questo messaggio. In questo modo, le applicazioni devono provare a rimanere 10 frame prima del frame attualmente necessario.
+Questo messaggio viene usato dai driver che usano hardware per il rendering dei dati e desiderano garantire un ritardo di tempo minimo causato dall'attesa dell'arrivo dei buffer. Ad esempio, se un driver controlla una scheda di decompressione video che può contenere 10 fotogrammi di video, potrebbe restituire 10 per questo messaggio. Questo indica alle applicazioni di provare a rimanere 10 fotogrammi avanti rispetto al frame attualmente necessario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Questo messaggio viene usato dai driver che usano l'hardware per eseguire il ren
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

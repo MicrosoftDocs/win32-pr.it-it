@@ -1,35 +1,35 @@
 ---
-description: Per informazioni sugli attributi del controllo, vedere il collegamento al particolare controllo che è necessario creare nei controlli e i collegamenti a specifici attributi di controllo negli elenchi seguenti.
+description: Per informazioni sugli attributi del controllo, vedere il collegamento al controllo specifico che è necessario creare in Controls, nonché i collegamenti a particolari attributi del controllo negli elenchi seguenti.
 ms.assetid: 948ce3d3-e463-40de-8b5f-21ef18b1a0ce
 title: Attributi del controllo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d026e84dadefa67ce9d6e00146c6e1c2017cb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb9d7412ce3893b785dccf067287c191f033bdf5a100628577260ff10f74ce1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500721"
 ---
 # <a name="control-attributes"></a>Attributi del controllo
 
-Per informazioni sugli attributi del controllo, vedere il collegamento al particolare controllo che è necessario creare nei [controlli](controls.md) e i collegamenti a specifici attributi di controllo negli elenchi seguenti.
+Per informazioni sugli attributi del controllo, vedere il collegamento al controllo specifico che è necessario creare in [Controls,](controls.md) nonché i collegamenti a particolari attributi del controllo negli elenchi seguenti.
 
-Per specificare gli attributi di un controllo, vengono usati i metodi seguenti:
+Per specificare gli attributi di un controllo vengono usati i metodi seguenti:
 
--   Usare la [tabella ControlCondition](controlcondition-table.md) per disabilitare, abilitare, nascondere o mostrare un controllo in base al valore di una proprietà o di un'istruzione condizionale. È inoltre possibile utilizzare questa tabella per eseguire l'override del controllo predefinito specificato nella [tabella della finestra di dialogo](dialog-table.md).
--   Sottoscrivere il controllo in un ControlEvent nella [tabella EventMapping](eventmapping-table.md). Immettere l'identificatore dell'attributo nella colonna Attribute e l'identificatore di ControlEvent nella colonna Event della tabella.
--   Impostare i flag di bit dell'attributo di controllo per il controllo nella colonna attributo della [tabella dei controlli](control-table.md). Consente di impostare gli attributi durante la creazione del controllo.
+-   Usare la [tabella ControlCondition per](controlcondition-table.md) disabilitare, abilitare, nascondere o visualizzare un controllo in base al valore di una proprietà o di un'istruzione condizionale. È anche possibile usare questa tabella per eseguire l'override del controllo predefinito specificato nella [tabella Dialog](dialog-table.md).
+-   Sottoscrivere il controllo a un ControlEvent nella [tabella EventMapping](eventmapping-table.md). Immettere l'identificatore dell'attributo nella colonna Attributo e l'identificatore di ControlEvent nella colonna Event di questa tabella.
+-   Impostare i flag di bit dell'attributo del controllo per il controllo nella colonna Attribute della [tabella Control](control-table.md). In questo modo gli attributi vengono impostate al momento della creazione del controllo.
 
-Alcuni attributi non possono essere impostati per ogni controllo o essere specificati da tutti i metodi descritti in precedenza. Per informazioni dettagliate, vedere gli argomenti relativi a controlli e attributi specifici.
+Alcuni attributi non possono essere impostati per ogni controllo o essere specificati da tutti i metodi precedenti. Per informazioni dettagliate, vedere gli argomenti relativi a controlli e attributi specifici.
 
-I valori iniziali di alcuni attributi di controllo possono essere impostati con bit nella [tabella del controllo](control-table.md).
+I valori iniziali di alcuni attributi di controllo possono essere impostati con bit nella [tabella Control](control-table.md).
 
 
 
 | Attributo                                          | Decimal | Valore esadecimale | Costante                               |
 |----------------------------------------------------|---------|-------------|----------------------------------------|
-| [BiDi](bidi-control-attribute.md)                 | 224     | 0x000000E0  | **msidbControlAttributesBiDi**         |
+| [Bidi](bidi-control-attribute.md)                 | 224     | 0x000000E0  | **msidbControlAttributesBiDi**         |
 | [Enabled](enabled-control-attribute.md)           | 2       | 0x00000002  | **msidbControlAttributesEnabled**      |
 | [Indiretto](indirect-control-attribute.md)         | 8       | 0x00000008  | **msidbControlAttributesIndirect**     |
 | [Controllo Integer](integer-control-attribute.md)   | 16      | 0x00000010  | **msidbControlAttributesInteger**      |
@@ -43,7 +43,7 @@ I valori iniziali di alcuni attributi di controllo possono essere impostati con 
 
  
 
-Questi attributi dei controlli testo sono impostati con BITS.
+Questi attributi dei controlli Text sono impostati con bit.
 
 
 
@@ -51,28 +51,28 @@ Questi attributi dei controlli testo sono impostati con BITS.
 |------------------------------------------------------|---------|-------------|-----------------------------------------|
 | [FormatSize](formatsize-control-attribute.md)       | 524288  | 0x00080000  | **msidbControlAttributesFormatSize**    |
 | [NoPrefix](noprefix-control-attribute.md)           | 131072  | 0x00020000  | **msidbControlAttributesNoPrefix**      |
-| [NoWrap](nowrap-control-attribute.md)               | 262144  | 0x00040000  | **msidbControlAttributesNoWrap**        |
+| [Nowrap](nowrap-control-attribute.md)               | 262144  | 0x00040000  | **msidbControlAttributesNoWrap**        |
 | [Password](password-control-attribute.md)           | 2097152 | 0x00200000  | **msidbControlAttributesPasswordInput** |
 | [Modalità trasparente](transparent-control-attribute.md)     | 65536   | 0x00010000  | **msidbControlAttributesTransparent**   |
-| [UsersLanguage](userslanguage-control-attribute.md) | 1048576 | 0x00100000  | **msidbControlAttributesUsersLanguage** |
+| [UtentiLingua](userslanguage-control-attribute.md) | 1048576 | 0x00100000  | **msidbControlAttributesUsersLanguage** |
 
 
 
  
 
-Questo attributo del controllo ProgressBar è impostato su un bit.
+Questo attributo del controllo ProgressBar è impostato con un bit.
 
 
 
 | Attributo                                      | Decimal | Valore esadecimale | Costante                             |
 |------------------------------------------------|---------|-------------|--------------------------------------|
-| [Progress95](progress95-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesProgress95** |
+| [Stato di avanzamento95](progress95-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesProgress95** |
 
 
 
  
 
-Questi attributi dei controlli SelectCombo del volume e della directory sono impostati con BITS.
+Questi attributi dei controlli Volume e Directory SelectCombo sono impostati con bit.
 
 
 
@@ -89,32 +89,32 @@ Questi attributi dei controlli SelectCombo del volume e della directory sono imp
 
  
 
-Questi attributi dei controlli ListBox e ComboBox sono impostati con BITS.
+Questi attributi dei controlli ListBox e ComboBox sono impostati con bit.
 
 
 
 | Attributo                                            | Decimal | Valore esadecimale | Costante                            |
 |------------------------------------------------------|---------|-------------|-------------------------------------|
-| [Controllo ComboBox](combolist-control-attribute.md) | 131072  | 0x00020000  | **msidbControlAttributesComboList** |
+| [Controllo ComboList](combolist-control-attribute.md) | 131072  | 0x00020000  | **msidbControlAttributesComboList** |
 | [Controllo ordinato](sorted-control-attribute.md)       | 65536   | 0x00010000  | **msidbControlAttributesSorted**    |
 
 
 
  
 
-Questo attributo del controllo di modifica è impostato su un bit.
+Questo attributo del controllo Edit è impostato con un bit.
 
 
 
 | Attributo                                    | Decimal | Valore esadecimale | Costante                            |
 |----------------------------------------------|---------|-------------|-------------------------------------|
-| [MultiLine](multiline-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesMultiline** |
+| [Multilinea](multiline-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesMultiline** |
 
 
 
  
 
-Questi attributi dei controlli PictureButton sono impostati con BITS.
+Questi attributi dei controlli PictureButton sono impostati con bit.
 
 
 
@@ -132,7 +132,7 @@ Questi attributi dei controlli PictureButton sono impostati con BITS.
 
  
 
-Questo attributo del controllo RadioButton è impostato su un bit.
+Questo attributo del controllo RadioButton è impostato con un bit.
 
 
 
@@ -144,7 +144,7 @@ Questo attributo del controllo RadioButton è impostato su un bit.
 
  
 
-Questo attributo del controllo pulsante è impostato su un bit.
+Questo attributo del controllo PushButton è impostato con un bit.
 
 
 
@@ -156,7 +156,7 @@ Questo attributo del controllo pulsante è impostato su un bit.
 
  
 
-Questo attributo del controllo VolumeCostList è impostato su un bit.
+Questo attributo del controllo VolumeCostList è impostato con un bit.
 
 
 
@@ -168,9 +168,9 @@ Questo attributo del controllo VolumeCostList è impostato su un bit.
 
  
 
-Gli attributi di controllo seguenti non sono impostati con BITS. Questi attributi vengono creati nelle tabelle dell'interfaccia utente o vengono impostati utilizzando [gli eventi di controllo](control-events.md).
+Gli attributi di controllo seguenti non sono impostati con bit. Questi attributi vengono creati nelle tabelle dell'interfaccia utente o vengono impostati tramite Eventi [di controllo](control-events.md).
 
-[Billboardname](billboardname-control-attribute.md)
+[NomeSezione](billboardname-control-attribute.md)
 
  
 
@@ -182,7 +182,7 @@ Gli attributi di controllo seguenti non sono impostati con BITS. Questi attribut
 
  
 
-[Controllo dello stato di avanzamento](progress-control-attribute.md)
+[Controllo Progress](progress-control-attribute.md)
 
  
 
@@ -200,7 +200,7 @@ Gli attributi di controllo seguenti non sono impostati con BITS. Questi attribut
 
 [TimeRemaining](timeremaining-control-attribute.md)
 
-Vedere [aggiunta di controlli e testo](adding-controls-and-text.md).
+Vedere [Aggiunta di controlli e testo.](adding-controls-and-text.md)
 
  
 

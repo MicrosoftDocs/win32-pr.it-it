@@ -1,10 +1,10 @@
 ---
-title: attributo ms-TS-Secondary-desktops
-description: Questo attributo rappresenta la matrice di collegamenti in diretta ai desktop secondari di un utente.
+title: Attributo ms-TS-Secondary-Desktops
+description: Questo attributo rappresenta la matrice di collegamenti in avanti ai desktop secondari di un utente.
 ms.assetid: 41b978b8-042f-49f7-a3ea-61be727561ad
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TS-Secondary-desktops
+- Schema AD dell'attributo ms-TS-Secondary-Desktops
 - Schema AD dell'attributo msTSSecondaryDesktops
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3697937f2050e2a3a6a4eeeb67d17a5e443b3d67
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a5720892964af4ccf5b7ea20c83dfdf0897f51b0c36bd97415270d6a35b69fef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507811"
 ---
-# <a name="ms-ts-secondary-desktops-attribute"></a>attributo ms-TS-Secondary-desktops
+# <a name="ms-ts-secondary-desktops-attribute"></a>Attributo ms-TS-Secondary-Desktops
 
-Questo attributo rappresenta la matrice di collegamenti in diretta ai desktop secondari di un utente.
+Questo attributo rappresenta la matrice di collegamenti in avanti ai desktop secondari di un utente.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MS-TS-secondario-desktop                |
-| LDAP-Display-Name | msTSSecondaryDesktops                   |
+| CN                | ms-TS-Secondary-Desktops                |
+| Ldap-Display-Name | msTSSecondaryDesktops                   |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2075                 |
-| System-ID-GUID    | f63aa29a-bb31-48e1-bfab-0a6c5a1d39c2    |
+| System-Id-Guid    | f63aa29a-bb31-48e1-bfab-0a6c5a1d39c2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -54,15 +54,15 @@ Questo attributo rappresenta la matrice di collegamenti in diretta ai desktop se
 | ID collegamento                | 2172                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Questo attributo rappresenta la matrice di collegamenti in diretta ai desktop se
 | ID collegamento                | 2172                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

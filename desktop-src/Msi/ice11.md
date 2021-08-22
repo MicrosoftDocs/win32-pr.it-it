@@ -1,29 +1,29 @@
 ---
-description: ICE11 viene usato con le installazioni simultanee. Le installazioni simultanee non sono consigliate per l'installazione di applicazioni destinate al rilascio al pubblico. Per informazioni sulle installazioni simultanee, vedere installazioni simultanee.
+description: ICE11 viene usato con installazioni simultanee. Le installazioni simultanee non sono consigliate per l'installazione di applicazioni destinate al rilascio al pubblico. Per informazioni sulle installazioni simultanee, vedere Installazioni simultanee.
 ms.assetid: fbcc94fa-be94-4ad1-a3f0-ea7d50ee0a15
 title: ICE11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d3f85a4dc4d736acfbd4385324aa35565f399bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eed6e578cd6f7da09cc1894bc154ba77225f1efaafedf45f3fb7cdd3f30190e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119296491"
 ---
 # <a name="ice11"></a>ICE11
 
-ICE11 viene usato con le installazioni simultanee. Le installazioni simultanee non sono consigliate per l'installazione di applicazioni destinate al rilascio al pubblico. Per informazioni sulle installazioni simultanee, vedere [installazioni simultanee](concurrent-installations.md).
+ICE11 viene usato con installazioni simultanee. Le installazioni simultanee non sono consigliate per l'installazione di applicazioni destinate al rilascio al pubblico. Per informazioni sulle installazioni simultanee, vedere [Installazioni simultanee](concurrent-installations.md).
 
 ## <a name="result"></a>Risultato
 
-ICE11 convalida la colonna di origine della [tabella CustomAction](customaction-table.md) delle azioni personalizzate di installazione simultanea. La colonna di origine deve contenere un [GUID](guid.md) valido (Codice prodotto MSI).
+ICE11 convalida la colonna Source della tabella [CustomAction delle](customaction-table.md) azioni personalizzate di installazione simultanea. La colonna Source deve contenere un [GUID](guid.md) valido (codice prodotto MSI).
 
-ICE11 Invia un errore se la colonna di origine della tabella CustomAction non è stata creata correttamente per le azioni personalizzate di installazione simultanea.
+ICE11 invia un errore se la colonna Source della tabella CustomAction viene creato in modo non corretto per le azioni personalizzate di installazione simultanea.
 
 ## <a name="example"></a>Esempio
 
-ICE inserisce i messaggi di errore seguenti per l'esempio illustrato.
+ICE pubblica i messaggi di errore seguenti per l'esempio illustrato.
 
 ``` syntax
 CustomAction: CA4 is a nested install of an advertised MSI.  The 'Source' must contain a valid MSI product code.  Current: ProductCode.
@@ -58,7 +58,7 @@ CustomAction: CA2 is a nested install of an advertised MSI.  The GUID must be al
 
  
 
-Per correggere gli errori, per CA1 non è possibile eseguire un'installazione simultanea del "pacchetto di base". Ciò comporta un'installazione ricorsiva. Questa voce deve essere rimossa o la colonna di origine deve essere modificata in un GUID per un file MSI annunciato che differisce dal GUID del pacchetto di base. Per il CA2, fare in modo che tutti i caratteri del GUID siano maiuscoli. Infine, modificare la colonna di origine CA4's per fare riferimento a un GUID valido di un file MSI annunciato.
+Per correggere gli errori, per CA1 non è possibile eseguire un'installazione simultanea del "pacchetto di base". Ciò comporta un'installazione ricorsiva. Questa voce deve essere rimossa o la colonna Source deve essere modificata in un GUID per un file MSI annunciato diverso dal GUID del pacchetto di base. Per CA2, impostare tutti i caratteri del GUID in maiuscolo. Modificare infine la colonna Source di CA4 in modo da fare riferimento a un GUID valido di un'istanza di MSI annunciata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -67,7 +67,7 @@ Per correggere gli errori, per CA1 non è possibile eseguire un'installazione si
 [Installazioni simultanee](concurrent-installations.md)
 </dt> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

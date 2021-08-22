@@ -1,23 +1,23 @@
 ---
-description: I valori di sincronizzazione possono essere determinati o vincolati automaticamente dalla configurazione di altre proprietà, ad esempio i requisiti transazionali e l'attivazione JIT (just-in-Time).
+description: I valori di sincronizzazione possono essere determinati o vincolati automaticamente dalla configurazione di altre proprietà, ad esempio requisiti transazionali e attivazione JIT.
 ms.assetid: 16771121-cb10-42b4-babc-59270188495a
 title: Dipendenze di sincronizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c139d0d6e78288b25e42bd0a84b29432cebb44ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ed2976426d652ca50c4e7399f39e98ba13ef337d15ef8c15a2271d4a562d1790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499731"
 ---
 # <a name="synchronization-dependencies"></a>Dipendenze di sincronizzazione
 
-I valori di sincronizzazione possono essere determinati o vincolati automaticamente dalla configurazione di altre proprietà, ad esempio i requisiti transazionali e l'attivazione JIT (just-in-Time). COM+, ad esempio, impone la sincronizzazione sia per i componenti transazionali che per quelli attivati da JIT.
+I valori di sincronizzazione possono essere determinati o vincolati automaticamente dalla configurazione di altre proprietà, ad esempio requisiti transazionali e attivazione JIT. Ad esempio, COM+ applica la sincronizzazione sia per i componenti transazionali che per i componenti attivati tramite JIT.
 
-Queste dipendenze sono dovute al fatto che i componenti che sono attivati tramite JIT o che partecipano alle transazioni devono avere un comportamento di isolamento e concorrenza appropriato. Per questo motivo, COM+ richiede che l'accesso a questi componenti venga serializzato tramite l'applicazione della sincronizzazione. Per informazioni dettagliate su queste dipendenze, vedere [attivazione JIT (just-in-Time](com--just-in-time-activation.md)) di com+.
+Queste dipendenze esistono perché i componenti attivati tramite JIT o che partecipano alle transazioni devono avere un comportamento di isolamento e concorrenza appropriato. Com+ richiede quindi che l'accesso a questi componenti sia serializzato tramite l'applicazione della sincronizzazione. Per informazioni dettagliate su queste dipendenze, vedere [Attivazione just-in-time COM+.](com--just-in-time-activation.md)
 
-Nelle tabelle seguenti sono illustrate le caratteristiche dei valori degli attributi di sincronizzazione COM+.
+Le tabelle seguenti illustrano le caratteristiche dei valori degli attributi di sincronizzazione COM+.
 
 ### <a name="transactional-requirement"></a>Requisito transazionale
 
@@ -29,7 +29,7 @@ Nelle tabelle seguenti sono illustrate le caratteristiche dei valori degli attri
 | Non supportato<br/>     | Qualsiasi elemento, a seconda dell'attivazione JIT<br/> |
 | Supportato<br/>         | Obbligatoria<br/>                              |
 | Obbligatoria<br/>          | Obbligatoria<br/>                              |
-| RequiresNew<br/>      | Obbligatorio o richiede nuovo<br/>              |
+| RequiresNew<br/>      | Obbligatorio o nuovo<br/>              |
 
 
 
@@ -41,14 +41,14 @@ Nelle tabelle seguenti sono illustrate le caratteristiche dei valori degli attri
 
 | Quando l'attivazione JIT è impostata su | La sincronizzazione può essere impostata su       |
 |-------------------------------|-------------------------------------|
-| Abilitato<br/>            | Obbligatorio o richiede nuovo<br/> |
+| Attivato<br/>            | Obbligatorio o nuovo<br/> |
 | Disabled<br/>           | Nulla<br/>                 |
 
 
 
  
 
-Per informazioni più dettagliate sul comportamento delle transazioni, dell'attivazione JIT e degli attributi di sincronizzazione, vedere [Configuring Transactions](configuring-transactions.md).
+Per altre informazioni sul comportamento degli attributi di transazione, attivazione JIT e sincronizzazione, vedere [Configurazione delle transazioni](configuring-transactions.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

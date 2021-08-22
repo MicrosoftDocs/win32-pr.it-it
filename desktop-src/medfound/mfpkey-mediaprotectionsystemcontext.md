@@ -1,31 +1,31 @@
 ---
-description: Specifica un BLOB che contiene il contesto da usare per l'inizializzazione di un modulo di input attendibile per i sistemi di protezione multimediale.
+description: Specifica un BLOB che contiene il contesto da utilizzare durante l'inizializzazione di un modulo di input attendibile dei sistemi di protezione dei supporti.
 ms.assetid: A1B1E088-72D3-4B5F-B868-64896AF04EF1
-title: Proprietà MFPKEY_MediaProtectionSystemContext
+title: MFPKEY_MediaProtectionSystemContext proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 130d8a42883acb2ca32870242a28e2ca6db8b320
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a64efadd5d0e3145a036236f7f173aae1c1fb4f4920102b428fccfabfd04bd0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663371"
 ---
-# <a name="mfpkey_mediaprotectionsystemcontext-property"></a>\_Proprietà MediaProtectionSystemContext di MFPKEY
+# <a name="mfpkey_mediaprotectionsystemcontext-property"></a>MFPKEY \_ MediaProtectionSystemContext - proprietà
 
-Specifica un BLOB che contiene il contesto da usare per l'inizializzazione di un modulo di input attendibile del sistema di protezione multimediale.
+Specifica un BLOB che contiene il contesto da usare durante l'inizializzazione del modulo di input attendibile di un sistema di protezione multimediale.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**BLOB**
+**Blob**
 
-\_BLOB VT
+VT \_ BLOB
 
 **blob**
 
@@ -37,7 +37,7 @@ membro PROPVARIANT
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ membro PROPVARIANT
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

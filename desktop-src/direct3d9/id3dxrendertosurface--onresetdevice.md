@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 17af145a236d2b3a51d271c6687d78d81a387363
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 362be67fb60bb85b2a1e8e54fbe8276e221f62d1d7288bfc2c33488c8f11740a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492421"
 ---
 # <a name="id3dxrendertosurfaceonresetdevice-method"></a>Metodo ID3DXRenderToSurface::OnResetDevice
 

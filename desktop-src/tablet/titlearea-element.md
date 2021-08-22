@@ -4,12 +4,12 @@ ms.assetid: b193f6c2-5f26-41f9-acc8-d734c426b069
 title: Elemento TitleArea
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88d563e8d7f6fc0107bc3302d3f8d94d29dfbfb8
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: f95c06e6aabe7c73cdc02a7fdb66c60f220adfbe72ea565b73cbc2c3f1a88bd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589311"
 ---
 # <a name="titlearea-element"></a>Elemento TitleArea
 
@@ -35,10 +35,10 @@ Nessuno.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Obbligatoria | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Necessario | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Necessario | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -50,7 +50,7 @@ Nessuno.
 
 |   Elemento    | valore                                                           |
 |--------------|-----------------------------------------------------------------|
-| Tipo di elemento | [**complexType TitleAreaType**](titleareatype-complex-type.md) |
+| Tipo di elemento | [**ComplexType TitleAreaType**](titleareatype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                      |
 | Nome schema  | Lettore journal                                                  |
 

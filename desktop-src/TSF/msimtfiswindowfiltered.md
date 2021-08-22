@@ -1,9 +1,9 @@
 ---
-title: MsimtfIsWindowFiltered (funzione)
-description: La funzione MsimtfIsWindowFiltered verifica se la finestra specificata è filtrata in base a AIMM (gestore del metodo di input attivo).
+title: Funzione MsimtfIsWindowFiltered
+description: La funzione MsimtfIsWindowFiltered verifica se la finestra specificata è filtrata in base ad AIMM (Active Input Method Manager).
 ms.assetid: 1f5e98f1-3626-4aa5-b2da-b6bc48d02184
 keywords:
-- Framework servizi di testo funzione MsimtfIsWindowFiltered
+- Funzione MsimtfIsWindowFiltered Framework servizi di testo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70ad9bd9fb61c546ec3e2f1d96d5fc9cf932613a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06f3841ed5c0436d991d02291c1e395f42d6b31b66f442a3caac0b2062fc27db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476751"
 ---
-# <a name="msimtfiswindowfiltered-function"></a>MsimtfIsWindowFiltered (funzione)
+# <a name="msimtfiswindowfiltered-function"></a>Funzione MsimtfIsWindowFiltered
 
-La funzione **MsimtfIsWindowFiltered** verifica se la finestra specificata è filtrata in base a AIMM (gestore del metodo di input attivo).
+La **funzione MsimtfIsWindowFiltered** verifica se la finestra specificata è filtrata in base ad AIMM (Active Input Method Manager).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ BOOL CALLBACK MsimtfIsWindowFiltered(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
-Handle di finestra da verificare.
+Handle di finestra da testare.
 
 </dd> </dl>
 
@@ -53,8 +53,8 @@ Handle di finestra da verificare.
 
 | Codice restituito                                                                          | Descrizione                                                               |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | Se questa finestra è filtrata in base al gestore del metodo di input attivo.<br/>     |
-| <dl> <dt>**FALSE**</dt> </dl> | Se questa finestra non viene filtrata in base al gestore del metodo di input attivo.<br/> |
+| <dl> <dt>**Vero**</dt> </dl>  | Se questa finestra è filtrata in base a Gestione metodo di input attivo.<br/>     |
+| <dl> <dt>**False**</dt> </dl> | Se questa finestra non è filtrata da Gestione metodi di input attivi.<br/> |
 
 
 
@@ -62,7 +62,7 @@ Handle di finestra da verificare.
 
 ## <a name="remarks"></a>Commenti
 
-Una finestra può essere filtrata in base a IActiveIMMApp:: FilterClientWindows.
+Una finestra può essere filtrata in base a IActiveIMMApp::FilterClientWindows.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Una finestra può essere filtrata in base a IActiveIMMApp:: FilterClientWindows.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Msimtf.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 551810c839e619985d9a380197553f5fe4fc9be8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85929a4cca88d9547ac0f00861f694932c7566cb3b6f5db6d4e6da189842e712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564811"
 ---
 # <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>Funzione D3DXLoadMeshHierarchyFromXInMemory
 
@@ -97,7 +97,7 @@ Puntatore a [**un'interfaccia ID3DXAllocateHierarchy.**](id3dxallocatehierarchy.
 
 Tipo: **[ **LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**
 
-Interfaccia fornita dall'applicazione che consente il caricamento dei dati utente. Vedere [**ID3DXLoadUserData.**](id3dxloaduserdata.md)
+Interfaccia fornita dall'applicazione che consente il caricamento dei dati utente. Vedere [**ID3DXLoadUserData**](id3dxloaduserdata.md).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Interfaccia fornita dall'applicazione che consente il caricamento dei dati utent
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***
 
-Restituisce un puntatore alla gerarchia di frame caricata. Vedere [**D3DXFRAME.**](d3dxframe.md)
+Restituisce un puntatore alla gerarchia di frame caricata. Vedere [**D3DXFRAME**](d3dxframe.md).
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Restituisce un puntatore alla gerarchia di frame caricata. Vedere [**D3DXFRAME.*
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Restituisce un puntatore al controller di animazione corrispondente all'animazione nel file con estensione x. Viene creato con tracce ed eventi predefiniti. Vedere [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
+Restituisce un puntatore al controller di animazione corrispondente all'animazione nel file con estensione x. Viene creato con tracce ed eventi predefiniti. Vedere [**ID3DXAnimationController**](id3dxanimationcontroller.md).
 
 </dd> </dl>
 

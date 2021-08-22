@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_CLIPFORMAT (RichEdit. h)
-description: Notifica alla finestra padre di un controllo Rich Edit che è stata eseguita una copia con un formato degli Appunti specifico. Un controllo Rich Edit senza finestra Invia questa notifica tramite il metodo ITextHost TxNotify.
+title: EN_CLIPFORMAT di notifica (Richedit.h)
+description: Notifica alla finestra padre di un controllo Rich Edit che si è verificato un'operazione Incolla con un particolare formato degli Appunti. Un controllo Rich Edit senza finestra invia questa notifica usando il metodo ITextHost TxNotify.
 ms.assetid: 79FE1350-4D45-447B-B705-63E966AC7F0E
 keywords:
-- Controlli di Windows per il codice di notifica EN_CLIPFORMAT
+- EN_CLIPFORMAT del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0430e8a4dba0b1a18f81f4e28ec67f2c93551cd5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f4ad87f1c05ac9f5461da8a4ee1d26295be0ae1baafd8991801efc0d90197a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437041"
 ---
-# <a name="en_clipformat-notification-code"></a>\_Codice di notifica en CLIPFORMAT
+# <a name="en_clipformat-notification-code"></a>Codice di notifica EN \_ CLIPFORMAT
 
-Notifica alla finestra padre di un controllo Rich Edit che è stata eseguita una copia con un formato degli Appunti specifico. Un controllo Rich Edit senza finestra Invia questa notifica tramite il metodo [**ITextHost:: TxNotify**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify) .
+Notifica alla finestra padre di un controllo Rich Edit che si è verificato un'operazione Incolla con un particolare formato degli Appunti. Un controllo Rich Edit senza finestra invia questa notifica usando il [**metodo ITextHost::TxNotify.**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify)
 
 
 ```C++
@@ -41,14 +41,14 @@ EN_CLIPFORMAT
 *wParam* 
 </dt> <dd>
 
-ID della finestra recuperato chiamando la funzione [**GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con il \_ valore ID GWL.
+ID della finestra recuperato chiamando la [**funzione GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con il valore \_ GWL ID.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**CLIPBOARDFORMAT**](/windows/desktop/api/Richedit/ns-richedit-clipboardformat) che contiene informazioni sul formato degli Appunti.
+Puntatore a una [**struttura CLIPBOARDFORMAT**](/windows/desktop/api/Richedit/ns-richedit-clipboardformat) che contiene informazioni sul formato degli Appunti.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Per ricevere \_ i codici di notifica en CLIPFORMAT, specificare [**ENM \_ CLIPFORMAT**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere i \_ codici di notifica EN CLIPFORMAT, specificare [**ENM \_ CLIPFORMAT**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,9 +66,9 @@ Per ricevere \_ i codici di notifica en CLIPFORMAT, specificare [**ENM \_ CLIPFO
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

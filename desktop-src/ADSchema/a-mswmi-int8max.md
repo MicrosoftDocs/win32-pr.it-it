@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-int8Max
+title: Attributo ms-WMI-int8Max
 description: Valore massimo per un oggetto parametro integer WMI a 64 bit.
 ms.assetid: f2e9949f-7ad6-4e4c-9335-8915062a89a5
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-int8Max
-- msWMI-schema AD attributo Int8Max
+- Schema AD dell'attributo msWMI-Int8Max
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e011881127785d52b4d993f713f6b371b5674f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 894a710419a8d1711900e0835ddcf940705b9e6f4e3019629f0ffd865b188a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507641"
 ---
-# <a name="ms-wmi-int8max-attribute"></a>attributo ms-WMI-int8Max
+# <a name="ms-wmi-int8max-attribute"></a>Attributo ms-WMI-int8Max
 
 Valore massimo per un oggetto parametro integer WMI a 64 bit.
 
@@ -29,14 +29,14 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-int8Max                       |
-| LDAP-Display-Name | msWMI-Int8Max                        |
+| CN                | ms-WMI-int8Max                       |
+| Ldap-Display-Name | msWMI-Int8Max                        |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo           |
+| Aggiorna privilegio  | Criteri di gruppo amministratore           |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1633              |
-| System-ID-GUID    | e3d8b547-003D-4946-a32b-dc7cedc96b74 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | e3d8b547-003d-4946-a32b-dc7cedc96b74 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -57,15 +57,15 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Valore massimo per un oggetto parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

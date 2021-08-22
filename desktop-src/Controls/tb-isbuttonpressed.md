@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_ISBUTTONPRESSED (COMmctrl. h)
-description: Determina se viene premuto il pulsante specificato in una barra degli strumenti.
+title: TB_ISBUTTONPRESSED messaggio (Commctrl.h)
+description: Determina se il pulsante specificato in una barra degli strumenti è premuto.
 ms.assetid: b8e2434c-24c2-47eb-b243-ffdaf31d5b8f
 keywords:
-- Controlli di Windows Message TB_ISBUTTONPRESSED
+- TB_ISBUTTONPRESSED dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc2e6ec7b56ce205f3d89bc22a7c9dbbee90b1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 187b7dd6c39fb972d53391dcbd67d7b45bb895a2e521fa8db22c2a7a411c05e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503641"
 ---
-# <a name="tb_isbuttonpressed-message"></a>TB \_ ISBUTTONPRESSED messaggio
+# <a name="tb_isbuttonpressed-message"></a>TB \_ ISBUTTONPRESSED message
 
-Determina se viene premuto il pulsante specificato in una barra degli strumenti.
+Determina se il pulsante specificato in una barra degli strumenti è premuto.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Determina se viene premuto il pulsante specificato in una barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Identificatore del comando del pulsante.
+Identificatore di comando del pulsante.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Identificatore del comando del pulsante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se il pulsante è premuto oppure zero in caso contrario.
+Restituisce un valore diverso da zero se il pulsante viene premuto oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se il pulsante è premuto oppure zero in c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

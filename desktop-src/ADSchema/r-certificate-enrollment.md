@@ -1,10 +1,10 @@
 ---
-title: Certificate-Enrollment esteso a destra
-description: Diritto esteso necessario per la registrazione del certificato.
+title: Certificate-Enrollment destro esteso
+description: Diritto esteso necessario per causare la registrazione del certificato.
 ms.assetid: 12b8bab8-3b52-46a7-887a-28f6645311cc
 ms.tgt_platform: multiple
 keywords:
-- Certificate-Enrollment schema AD esteso a destra
+- Certificate-Enrollment di Active Directory con diritto esteso
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c42d7c39cecc9796dddfebd981bb27353ed9594e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 626892db9421d6c5cdf27e5085c13b2b80b4079e2c540c474dfd657e2a8442af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532761"
 ---
-# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment esteso a destra
+# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment destro esteso
 
-Diritto esteso necessario per la registrazione del certificato.
+Diritto esteso necessario per causare la registrazione del certificato.
 
 
 
@@ -49,8 +49,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -60,8 +60,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -71,8 +71,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -82,8 +82,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -93,8 +93,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -104,8 +104,8 @@ Diritto esteso necessario per la registrazione del certificato.
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localization-display-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 

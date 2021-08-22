@@ -1,7 +1,7 @@
 ---
-description: Associazione utilizzata per stabilire relazioni tra un'istanza di un EmulatedEthernetPortSettingData di MSVM \_ e una o più istanze di un \_ EthernetSwitchFeatureSettingData MSVM.
+description: Associazione utilizzata per stabilire relazioni tra un'istanza di Msvm EmulatedEthernetPortSettingData e una o più istanze di \_ msvm \_ EthernetSwitchFeatureSettingData.
 ms.assetid: A2929D81-ED86-4C5A-9280-276204EDE89B
-title: Classe Msvm_EthernetPortFailoverSettingDataComponent
+title: Msvm_EthernetPortFailoverSettingDataComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 50fff8688beea91495014dd75b1f1c33020869f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00653b19cffabeb658e7727332b7e6fe1b2e23be7ff0c4eba298ef198404234c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531521"
 ---
-# <a name="msvm_ethernetportfailoversettingdatacomponent-class"></a>\_Classe MSVM EthernetPortFailoverSettingDataComponent
+# <a name="msvm_ethernetportfailoversettingdatacomponent-class"></a>Classe Msvm \_ EthernetPortFailoverSettingDataComponent
 
-Associazione utilizzata per stabilire relazioni tra un'istanza di un [**\_ EmulatedEthernetPortSettingData di MSVM**](msvm-emulatedethernetportsettingdata.md) e una o più istanze di un [**\_ EthernetSwitchFeatureSettingData MSVM**](msvm-ethernetswitchfeaturesettingdata.md).
+Associazione utilizzata per stabilire relazioni tra un'istanza di [**Msvm \_ EmulatedEthernetPortSettingData**](msvm-emulatedethernetportsettingdata.md) e una o più istanze di [**msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md).
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class Msvm_EthernetPortFailoverSettingDataComponent : CIM_Component
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetPortFailoverSettingDataComponent di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetPortFailoverSettingDataComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetPortFailoverSettingDataComponent di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetPortFailoverSettingDataComponent** dispone di queste proprietà.
 
 <dl> <dt>
 
@@ -60,26 +60,26 @@ Tipo di dati: **[ **CIM \_ ResourceAllocationSettingData**](/previous-versions/w
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**aggregazione**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ EmulatedEthernetPortSettingData**](msvm-emulatedethernetportsettingdata.md) o [**MSVM \_ SyntheticEthernetPortSettingData**](msvm-syntheticethernetportsettingdata.md) che rappresenta la porta Ethernet.
+Riferimento a un'istanza della [**classe Msvm \_ EmulatedEthernetPortSettingData**](msvm-emulatedethernetportsettingdata.md) o [**Msvm \_ SyntheticEthernetPortSettingData**](msvm-syntheticethernetportsettingdata.md) che rappresenta la porta Ethernet.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ FailoverNetworkAdapterSettingData**](msvm-failovernetworkadaptersettingdata.md)**
+Tipo di dati: **[ **Msvm \_ FailoverNetworkAdapterSettingData**](msvm-failovernetworkadaptersettingdata.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ FailoverNetworkAdapterSettingData**](msvm-failovernetworkadaptersettingdata.md) che rappresenta la configurazione della scheda di rete Guest.
+Riferimento a un'istanza della [**classe Msvm \_ FailoverNetworkAdapterSettingData**](msvm-failovernetworkadaptersettingdata.md) che rappresenta la configurazione della scheda di rete guest.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento a un'istanza della classe [**MSVM \_ FailoverNetworkAdapterSettingDa
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

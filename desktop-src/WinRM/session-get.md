@@ -1,12 +1,12 @@
 ---
-title: Metodo Session. Get (WSManDisp. h)
+title: Metodo Session.Get (WSManDisp.h)
 description: Recupera la risorsa specificata dall'URI e restituisce una rappresentazione XML dell'istanza corrente della risorsa.
 ms.assetid: 873242fd-9da3-42f4-a18e-258fedba77ec
 ms.tgt_platform: multiple
 keywords:
-- Metodo Get Gestione remota Windows
-- Metodo Get Gestione remota Windows, oggetto Session
-- Gestione remota Windows oggetto sessione, metodo Get
+- Metodo Get Windows Gestione remota
+- Metodo Get Windows gestione remota , oggetto Session
+- Oggetto Session Windows metodo , Get di Gestione remota
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e4ee84cc711db312389151d1dd95fb890474dcd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c983c5f95ddfa3acc88b85b383ec85ddf85f885293031fe9bc4e4e07c90850a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642561"
 ---
-# <a name="sessionget-method"></a>Metodo Session. Get
+# <a name="sessionget-method"></a>Metodo Session.Get
 
-Recupera la risorsa specificata dall' [*URI*](windows-remote-management-glossary.md) e restituisce una rappresentazione XML dell'istanza corrente della risorsa.
+Recupera la risorsa specificata [*dall'URI e*](windows-remote-management-glossary.md) restituisce una rappresentazione XML dell'istanza corrente della risorsa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ Session.Get( _
 
 <dl> <dt>
 
-*resourceUri* \[ in\]
+*resourceUri* \[ Pollici\]
 </dt> <dd>
 
 Identificatore della risorsa da recuperare.
 
-Questo parametro può contenere uno dei seguenti elementi:
+Questo parametro può contenere uno degli elementi seguenti:
 
--   URI con o senza [*selettori*](windows-remote-management-glossary.md). Quando si chiama il metodo **Get** con un selettore per ottenere una risorsa WMI, utilizzare la proprietà o le proprietà chiave dell'oggetto. Nell'esempio di codice seguente Visual Basic Scripting Edition (VBScript), ad esempio, la chiave viene specificata da `Win32_Service?Name=winmgmt` . Per le classi singleton, ad esempio [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime), non è possibile usare un selettore.
+-   URI con o senza [*selettori*](windows-remote-management-glossary.md). Quando si chiama **il metodo Get** con un selettore per ottenere una risorsa WMI, usare la proprietà o le proprietà chiave dell'oggetto . Nell'esempio di codice Visual Basic Scripting Edition (VBScript) seguente la chiave viene specificata da `Win32_Service?Name=winmgmt` . Per le classi singleton, ad esempio [**Win32 \_ LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime), non è possibile usare un selettore.
 
     ```VB
     strResourceUri = "http://schemas.microsoft.com/" _ 
@@ -63,8 +63,8 @@ Questo parametro può contenere uno dei seguenti elementi:
 
     
 
--   Oggetto [**resourceLocator**](resourcelocator.md) che può contenere selettori, [*frammenti*](windows-remote-management-glossary.md)o [*Opzioni*](windows-remote-management-glossary.md).
--   Riferimento all'endpoint di [*WS-Addressing*](windows-remote-management-glossary.md) come descritto nello standard del protocollo WS-Management. Per ulteriori informazioni sulla specifica pubblica per [protocollo WS-Management](ws-management-protocol.md), vedere la [pagina](/previous-versions/dotnet/articles/ms951267(v=msdn.10))relativa all'indice delle specifiche di gestione.
+-   Oggetto [**ResourceLocator**](resourcelocator.md) che può contenere selettori, [*frammenti*](windows-remote-management-glossary.md)o [*opzioni*](windows-remote-management-glossary.md).
+-   Informazioni [*di riferimento sull'endpoint WS-Addressing,*](windows-remote-management-glossary.md) come descritto nello standard WS-Management protocollo WS-Addressing. Per altre informazioni sulla specifica pubblica per protocollo WS-Management , [vedere](ws-management-protocol.md) [Pagina di indice delle specifiche di gestione](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Rappresentazione XML della risorsa.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene recuperata la rappresentazione XML dell'istanza del [**\_ servizio Win32**](/windows/desktop/CIMWin32Prov/win32-service) che rappresenta il servizio WMI WinMgmt nel computer locale.
+Nell'esempio di codice VBScript seguente viene recuperata la rappresentazione XML dell'istanza del servizio [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-service) che rappresenta il servizio Wmi Winmgmt nel computer locale.
 
 
 ```VB
@@ -129,7 +129,7 @@ End Sub
 
 
 
-Nell'esempio di codice VBScript seguente viene recuperata l'istanza del servizio WMI WinMgmt da un computer remoto. Il computer remoto è identificato dal nome di dominio completo (servername.domain.com). L'unica differenza tra la versione locale e quella remota è la specifica del computer remoto nella chiamata a [**WSMan. CreateSession**](wsman-createsession.md).
+Nell'esempio di codice VBScript seguente viene recuperata l'istanza del servizio Wmi Winmgmt da un computer remoto. Il computer remoto è identificato dal nome di dominio completo (servername.domain.com). L'unica differenza tra la versione locale e remota è la specifica del computer remoto nella chiamata a [**WSMan.CreateSession.**](wsman-createsession.md)
 
 
 ```VB
@@ -187,9 +187,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

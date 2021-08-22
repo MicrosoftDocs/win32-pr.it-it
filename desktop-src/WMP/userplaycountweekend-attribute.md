@@ -1,6 +1,6 @@
 ---
 title: Attributo UserPlaycountWeekend
-description: L'attributo UserPlaycountWeekend è il numero di volte in cui l'elemento è stato riprodotto a sabato o domenica.
+description: L'attributo UserPlaycountWeekend è il numero di volte in cui l'elemento è stato riprodotto il sabato o la domenica.
 ms.assetid: 672b7ca8-6a1d-470d-bd66-ab7b35a1d55c
 keywords:
 - Attributo UserPlaycountWeekend Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c7919a352819eafa6d8cd5c3c72d77255824fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3809208abddc317cff7ba9799860a4ee9ccae96e987e94eecab9ad5c3aba226f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507161"
 ---
 # <a name="userplaycountweekend-attribute"></a>Attributo UserPlaycountWeekend
 
-L'attributo **UserPlaycountWeekend** è il numero di volte in cui l'elemento è stato riprodotto a sabato o domenica.
+**L'attributo UserPlaycountWeekend** è il numero di volte in cui l'elemento è stato riprodotto il sabato o la domenica.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -32,9 +32,9 @@ L'attributo **UserPlaycountWeekend** è il numero di volte in cui l'elemento è 
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -50,7 +50,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

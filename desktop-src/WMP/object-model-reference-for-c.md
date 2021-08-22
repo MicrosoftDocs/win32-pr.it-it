@@ -1,75 +1,75 @@
 ---
-title: Riferimento del modello a oggetti per C++
-description: Riferimento del modello a oggetti per C++
+title: Informazioni di riferimento sul modello a oggetti per C++
+description: Informazioni di riferimento sul modello a oggetti per C++
 ms.assetid: 4215947a-4a12-42da-b1a0-599a4d382147
 keywords:
-- Windows Media Player, modello a oggetti
+- Windows Media Player,modello a oggetti
 - Windows Media Player Mobile, modello a oggetti
-- Modello a oggetti di Windows Media Player, riferimento
+- Windows Media Player a oggetti, riferimento
 - modello a oggetti, riferimento
-- Controllo ActiveX, riferimento
-- Controllo ActiveX di Windows Media Player, riferimento
-- Controllo ActiveX Windows Media Player Mobile, riferimento
-- riferimento per il modello a oggetti, C++
-- Windows Media Player, C++
-- Windows Media Player Mobile, C++
-- Modello a oggetti di Windows Media Player, C++
-- modello a oggetti, C++
-- Controllo ActiveX di Windows Media Player, C++
-- Controllo ActiveX Windows Media Player Mobile, C++
-- Controllo ActiveX, C++
-- Riferimento al modello a oggetti C++
+- ActiveX, riferimento
+- Windows Media Player ActiveX, riferimento
+- Windows Media Player Controllo ActiveX per dispositivi mobili, informazioni di riferimento
+- informazioni di riferimento per il modello a oggetti,C++
+- Windows Media Player,C++
+- Windows Media Player Mobile,C++
+- Windows Media Player a oggetti, C++
+- modello a oggetti,C++
+- Windows Media Player ActiveX, C++
+- Windows Media Player Controllo ActiveX per dispositivi mobili,C++
+- ActiveX, C++
+- Informazioni di riferimento sul modello a oggetti C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d27d63e909b55b9a99f14d755b1384940e87a989
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d765e43331f38e20cc6dc681144d036f58bb9bf6c6e99d34a3f568169867cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508201"
 ---
-# <a name="object-model-reference-for-c"></a>Riferimento del modello a oggetti per C++
+# <a name="object-model-reference-for-c"></a>Informazioni di riferimento sul modello a oggetti per C++
 
 > [!Note]  
-> L'uso del controllo ActiveX Windows Media Player con C++ è supportato per la serie Windows Media Player 9 o versioni successive.
+> L'uso Windows Media Player ActiveX controllo con C++ è supportato per Windows Media Player serie 9 o successive.
 
- 
+ 
 
-Il riferimento del modello a oggetti per C++ fornisce la documentazione per le interfacce Windows Media Player e Windows Media Player mobile e i tipi di enumerazione.
+Le informazioni di riferimento sul modello a oggetti per C++ forniscono la documentazione Windows Media Player e Windows Media Player per dispositivi mobili e i tipi di enumerazione.
 
-Se si vuole usare la comunicazione remota o le interfacce con il controllo Media Player di Windows, è necessario conoscere anche le interfacce **IWMPPlayerServices** e **IWMPRemoteMediaServices** , progettate per essere usate con C++.
+Se si vogliono usare interfacce o servizi remoti con il controllo Windows Media Player, è anche necessario conoscere le interfacce **IWMPPlayerServices** e **IWMPRemoteMediaServices,** progettate per l'uso con C++.
 
-Per una dimostrazione dell'incorporamento del controllo Windows Media Player in un programma C++, vedere gli esempi di C++ inclusi in questo SDK.
+Per una dimostrazione dell'incorporamento del controllo Windows Media Player in un programma C++, vedere gli esempi C++ inclusi in questo SDK.
 
-Nelle sezioni seguenti vengono documentate le interfacce e le enumerazioni C++ fornite dal modello a oggetti di Windows Media Player.
+Le sezioni seguenti illustrano le interfacce e le enumerazioni C++ fornite dal modello Windows Media Player a oggetti.
 
 
 
 | Sezione                                    | Descrizione                                                                                                     |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [Interfacce](interfaces.md)               | Elenca le interfacce e i metodi disponibili per i programmatori C++ che utilizzano il controllo ActiveX di Windows Media Player. |
+| [Interfacce](interfaces.md)               | Elenca le interfacce e i metodi disponibili per i programmatori C++ che usano il Windows Media Player ActiveX controllo. |
 | [Tipi di enumerazione](enumeration-types.md) | Elenca i tipi di enumerazione disponibili nel codice C++.                                                              |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Riferimento al modello a oggetti di Windows Media Player**](windows-media-player-object-model-reference.md)
+[**Windows Media Player Informazioni di riferimento sul modello a oggetti**](windows-media-player-object-model-reference.md)
 </dt> <dt>
 
-[**Uso del controllo Media Player di Windows in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Uso del Windows Media Player controllo in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> <dt>
 
 [**Esempi**](samples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

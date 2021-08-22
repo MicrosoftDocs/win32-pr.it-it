@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_TAKEFOCUS (COMmctrl. h)
-description: Impone a un controllo di modifica a riga singola di ricevere lo stato attivo. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro Edit TakeFocus.
+title: EM_TAKEFOCUS messaggio (Commctrl.h)
+description: Forza un controllo di modifica a riga singola a ricevere lo stato attivo della tastiera. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro Modifica TakeFocus.
 ms.assetid: 27470857-4219-4426-bc69-e1271afc6ffb
 keywords:
-- Controlli di Windows Message EM_TAKEFOCUS
+- EM_TAKEFOCUS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e4abdf926cdd337760b5cf151c3f8ee08cb418b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8283f2f9ea033439ef9ad7ec0ce40b08bb6396db8f5ebc7a9b1d513f29c209a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437141"
 ---
-# <a name="em_takefocus-message"></a>\_Messaggio TAKEFOCUS em
+# <a name="em_takefocus-message"></a>Messaggio \_ EM TAKEFOCUS
 
-\[Progettato per uso interno; sconsigliato per l'utilizzo nelle applicazioni. Questo messaggio potrebbe non essere supportato nelle versioni future di Windows.\]
+\[Destinato all'uso interno; non consigliato per l'uso nelle applicazioni. Questo messaggio potrebbe non essere supportato nelle versioni future di Windows.\]
 
-Impone a un controllo di modifica a riga singola di ricevere lo stato attivo. È possibile inviare questo messaggio in modo esplicito o usando la macro [**Edit \_ TakeFocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_takefocus) .
+Forza un controllo di modifica a riga singola a ricevere lo stato attivo della tastiera. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ Modifica TakeFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-edit_takefocus)
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,20 +34,20 @@ Impone a un controllo di modifica a riga singola di ricevere lo stato attivo. È
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito non viene utilizzato.
+Il valore restituito non viene usato.
 
 ## <a name="security-considerations"></a>Considerazioni relative alla sicurezza
 
@@ -57,7 +57,7 @@ L'uso di questo messaggio potrebbe compromettere la sicurezza del programma.
 
 Questo messaggio viene ignorato se il controllo di modifica non è un controllo di modifica a riga singola.
 
-Se il controllo di modifica ha ricevuto in precedenza un messaggio [**\_ NOSETFOCUS em**](em-nosetfocus.md) , il controllo di modifica apparirà lo stato attivo senza che sia effettivamente presente. in caso contrario, il controllo di modifica riceve lo stato attivo.
+Se il controllo di modifica ha ricevuto in precedenza un messaggio [**EM \_ NOSETFOCUS,**](em-nosetfocus.md) il controllo di modifica avrà lo stato attivo senza averlo effettivamente; in caso contrario, il controllo di modifica riceverà lo stato attivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Se il controllo di modifica ha ricevuto in precedenza un messaggio [**\_ NOSETFO
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -78,10 +78,10 @@ Se il controllo di modifica ha ricevuto in precedenza un messaggio [**\_ NOSETFO
 **Riferimento**
 </dt> <dt>
 
-[**Modifica \_ TakeFocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_takefocus)
+[**Modificare \_ TakeFocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_takefocus)
 </dt> <dt>
 
-[**\_NOSETFOCUS em**](em-nosetfocus.md)
+[**EM \_ NOSETFOCUS**](em-nosetfocus.md)
 </dt> </dl>
 
  

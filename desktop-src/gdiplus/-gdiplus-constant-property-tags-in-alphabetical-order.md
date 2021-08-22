@@ -1,23 +1,23 @@
 ---
-description: Nella tabella seguente sono elencati i tag delle proprietà dell'immagine GDI+ di Windows in ordine alfabetico.
+description: Nella tabella seguente sono elencati i Windows GDI+ delle proprietà dell'immagine in ordine alfabetico.
 ms.assetid: c6d196a8-b10f-4e09-bf43-0198d96e5f40
 title: Tag di proprietà in ordine alfabetico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7179fa936d5e0e934ea1d317c1d14c25c189ed8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73ef09cbc65d1e52dbe466f0d151ecd6a17b7becedc3bc8c80e1b293a775cf43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612511"
 ---
 # <a name="property-tags-in-alphabetical-order"></a>Tag di proprietà in ordine alfabetico
 
-Nella tabella seguente sono elencati i tag delle proprietà dell'immagine GDI+ di Windows in ordine alfabetico.
+Nella tabella seguente sono elencati i Windows GDI+ delle proprietà dell'immagine in ordine alfabetico.
 
 
 
-| Tag proprietà                                                                                                                            | Valore  |
+| Tag di proprietà                                                                                                                            | Valore  |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------|
 | [PropertyTagArtist](-gdiplus-constant-property-item-descriptions.md)                                                 | 0x013B |
 | [PropertyTagBitsPerSample](-gdiplus-constant-property-item-descriptions.md)                                   | 0x0102 |
@@ -40,9 +40,9 @@ Nella tabella seguente sono elencati i tag delle proprietà dell'immagine GDI+ d
 | [PropertyTagExifCompBPP](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9102 |
 | [PropertyTagExifCompConfig](-gdiplus-constant-property-item-descriptions.md)                                 | 0x9101 |
 | [PropertyTagExifDTDigitized](-gdiplus-constant-property-item-descriptions.md)                               | 0x9004 |
-| [PropertyTagExifDTDigSS](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9292 |
+| [PropertyTagExifDTDigSSS](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9292 |
 | [PropertyTagExifDTOrig](-gdiplus-constant-property-item-descriptions.md)                                         | 0x9003 |
-| [PropertyTagExifDTOrigSS](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9291 |
+| [PropertyTagExifDTOrigss](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9291 |
 | [PropertyTagExifDTSubsec](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9290 |
 | [PropertyTagExifExposureBias](-gdiplus-constant-property-item-descriptions.md)                             | 0x9204 |
 | [PropertyTagExifExposureIndex](-gdiplus-constant-property-item-descriptions.md)                           | 0xA215 |
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencati i tag delle proprietà dell'immagine GDI+ d
 | [PropertyTagExifExposureTime](-gdiplus-constant-property-item-descriptions.md)                             | 0x829A |
 | [PropertyTagExifFileSource](-gdiplus-constant-property-item-descriptions.md)                                 | 0xA300 |
 | [PropertyTagExifFlash](-gdiplus-constant-property-item-descriptions.md)                                           | 0x9209 |
-| [PropertyTagExifFlashEnergy](-gdiplus-constant-property-item-descriptions.md)                               | 0xA20B |
+| [PropertyTagExifFlashTagy](-gdiplus-constant-property-item-descriptions.md)                               | 0xA20B |
 | [PropertyTagExifFNumber](-gdiplus-constant-property-item-descriptions.md)                                       | 0x829D |
 | [PropertyTagExifFocalLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x920A |
 | [PropertyTagExifFocalResUnit](-gdiplus-constant-property-item-descriptions.md)                             | 0xA210 |
@@ -245,10 +245,10 @@ Nella tabella seguente sono elencati i tag delle proprietà dell'immagine GDI+ d
 
 <dl> <dt>
 
-[Costanti Tag proprietà immagine](-gdiplus-constant-image-property-tag-constants.md)
+[Costanti dei tag delle proprietà image](-gdiplus-constant-image-property-tag-constants.md)
 </dt> <dt>
 
-[**Costanti del tipo di tag della proprietà Image**](-gdiplus-constant-image-property-tag-type-constants.md)
+[**Costanti del tipo di tag di proprietà Image**](-gdiplus-constant-image-property-tag-type-constants.md)
 </dt> <dt>
 
 [Descrizioni degli elementi delle proprietà](-gdiplus-constant-property-item-descriptions.md)

@@ -1,7 +1,7 @@
 ---
-description: La funzione GetSubtypeName Recupera il nome leggibile di un sottotipo video.
+description: La funzione GetSubtypeName recupera il nome leggibile dell'utente di un sottotipo video.
 ms.assetid: 493b434e-2d36-4897-a5b2-7be0eb0a560f
-title: Funzione GetSubtypeName (Wxutil. h)
+title: Funzione GetSubtypeName (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f5cae835a3a7f1b5510d85ecf3f2ae9d15251a45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c676f3e08f55bd010e761853b777e0eb4b28933536ab7af09bd94e457032b583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564850"
 ---
-# <a name="getsubtypename-function"></a>GetSubtypeName (funzione)
+# <a name="getsubtypename-function"></a>Funzione GetSubtypeName
 
-La `GetSubtypeName` funzione recupera il nome leggibile di un sottotipo video.
+La `GetSubtypeName` funzione recupera il nome leggibile dall'utente di un sottotipo video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ TCHAR* GetSubtypeName(
 *pSubtype* 
 </dt> <dd>
 
-Puntatore a un **GUID** del sottotipo video.
+Puntatore a un sottotipo **video GUID**.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Restituisce una stringa contenente il nome.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Restituisce una stringa contenente il nome.
 
 <dl> <dt>
 
-[Funzioni video e immagine](video-and-image-functions.md)
+[Funzioni per video e immagini](video-and-image-functions.md)
 </dt> </dl>
 
  

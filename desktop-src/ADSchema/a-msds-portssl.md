@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Port-SSL
+title: Attributo ms-DS-Port-SSL
 description: Specifica la porta usata dal servizio directory per le richieste SSL.
 ms.assetid: bb28863c-e882-401a-90d5-08da3f3f30ae
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-Port-SSL
-- attributo msDS-PortSSL-schema AD
+- Schema AD dell'attributo msDS-PortSSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d25b46c8d76416d543007139cee8038a25f2a92e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 354b92228e78dea4c2a66595cafe507c0cf0180445fa47083e208755e95658fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294411"
 ---
-# <a name="ms-ds-port-ssl-attribute"></a>attributo ms-DS-Port-SSL
+# <a name="ms-ds-port-ssl-attribute"></a>Attributo ms-DS-Port-SSL
 
 Specifica la porta usata dal servizio directory per le richieste SSL.
 
@@ -29,22 +29,22 @@ Specifica la porta usata dal servizio directory per le richieste SSL.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-porta-SSL                       |
-| LDAP-Display-Name | msDS-PortSSL                         |
+| CN                | ms-DS-Port-SSL                       |
+| Ldap-Display-Name | msDS-PortSSL                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1860              |
-| System-ID-GUID    | 2c85cfc2-2061-468c-a0ea-c8e0910f7374 |
+| System-Id-Guid    | 2c85cfc2-2061-468c-a0ea-c8e0910f7374 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
 
 ## <a name="implementations"></a>Implementazioni
 
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -53,15 +53,15 @@ Specifica la porta usata dal servizio directory per le richieste SSL.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 65535                                    |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 

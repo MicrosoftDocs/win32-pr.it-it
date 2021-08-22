@@ -81,25 +81,25 @@ Il codice di errore seguente può essere recuperato dalla [**funzione glGetError
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione glScaled** produce un ridimensionamento generale lungo gli *assi x*, *y* *e z.* I tre argomenti indicano i fattori di scala desiderati lungo ognuno dei tre assi. La matrice risultante è
+La **funzione glScaled** produce un ridimensionamento generale lungo gli assi *x*, *y* e *z.* I tre argomenti indicano i fattori di scala desiderati lungo ognuno dei tre assi. La matrice risultante è
 
-![Diagramma che mostra la matrice di fattori di scala lungo gli assi x, y e z.](images/scale01.png)
+![Diagramma che mostra la matrice dei fattori di scala lungo gli assi x, y e z.](images/scale01.png)
 
-La matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)) viene moltiplicata per questa matrice di scala, con il prodotto che sostituisce la matrice corrente. Ciò significa che se M è la matrice corrente e S è la matrice di scala, M viene sostituito con M S.
+La matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)) viene moltiplicata per questa matrice di scala, con il prodotto che sostituisce la matrice corrente. In altri punti, se M è la matrice corrente e S è la matrice di scala, M viene sostituito con M S.
 
-Se la modalità matrice è GL MODELVIEW o GL PROJECTION, tutti gli oggetti disegnati dopo \_ \_ la chiamata di **glScaled** vengono ridimensionati. Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare il sistema di coordinate non ridimensionato.
+Se la modalità matrice è GL MODELVIEW o GL PROJECTION, tutti gli oggetti tracciati dopo la chiamata \_ \_ a **glScaled** vengono ridimensionati. Usare [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) per salvare e ripristinare il sistema di coordinate non ridimensionato.
 
-Se alla matrice della visualizzazione del modello vengono applicati fattori di scala diversi da 1.0 e l'illuminazione è abilitata, è probabile che sia abilitata anche la normalizzazione automatica delle normali ([**glEnable**](glenable.md) e [**glDisable**](gldisable.md) con l'argomento GL \_ NORMALIZE).
+Se alla matrice modelview vengono applicati fattori di scala diversi da 1.0 e l'illuminazione è abilitata, è probabile che sia abilitata anche la normalizzazione automatica delle normali ([**glEnable**](glenable.md) e [**glDisable**](gldisable.md) con l'argomento GL \_ NORMALIZE).
 
-Le funzioni seguenti recuperano informazioni correlate **a glScaled**:
+Le funzioni seguenti recuperano informazioni correlate a **glScaled**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MATRIX \_ MODE
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MATRIX \_ MODE
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MODELVIEW \_ MATRIX
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MODELVIEW \_ MATRIX
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ PROJECTION \_ MATRIX
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ TEXTURE \_ MATRIX
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 

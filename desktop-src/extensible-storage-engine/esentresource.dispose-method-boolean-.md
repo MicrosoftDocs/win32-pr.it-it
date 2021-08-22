@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo EsentResource. Dispose (Boolean)'
-title: Metodo EsentResource. Dispose (Boolean)
+description: 'Altre informazioni su: Metodo EsentResource.Dispose (booleano)'
+title: Metodo EsentResource.Dispose (Boolean)
 TOCTitle: Dispose method (Boolean)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Dispose(System.Boolean)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.dispose(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf74291bf4c54ffa1d61c28bf7caff1e8c2b231b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cc2f9fab375e2ae2b9a27611192c3db9e3bba4eb272de1dfca243d13bf7766f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119477331"
 ---
-# <a name="esentresourcedispose-method-boolean"></a>Metodo EsentResource. Dispose (Boolean)
+# <a name="esentresourcedispose-method-boolean"></a>Metodo EsentResource.Dispose (Boolean)
 
 Chiamato da Dispose e dal finalizzatore.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,9 +56,9 @@ protected virtual void Dispose(
 #### <a name="parameters"></a>Parametri
 
   - isDisposing  
-    Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+    Tipo: [System.Boolean](/dotnet/api/system.boolean)  
     
-    True se chiamato da Dispose.
+    True se viene chiamato da Dispose.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -68,6 +68,6 @@ protected virtual void Dispose(
 
 [Membri di EsentResource](./esentresource-members.md)
 
-[Overload Dispose](./esentresource.dispose-method.md)
+[Overload dispose](./esentresource.dispose-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

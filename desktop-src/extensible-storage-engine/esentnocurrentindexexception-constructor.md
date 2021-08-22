@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentNoCurrentIndexException'
+description: Altre informazioni sul costruttore EsentNoCurrentIndexException
 title: Costruttore EsentNoCurrentIndexException
 TOCTitle: 'EsentNoCurrentIndexException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoCurrentIndexException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8c713bb1bb06483b00ea426f2663c5fff6ee476c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a55a77b47c205d05494854e5c98ea1432b18d801e381624648c87f0abf15fa63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478796"
 ---
 # <a name="esentnocurrentindexexception-constructor"></a>Costruttore EsentNoCurrentIndexException
 
 Inizializza una nuova istanza della classe EsentNoCurrentIndexException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentNoCurrentIndexException()
 
 [Membri di EsentNoCurrentIndexException](./esentnocurrentindexexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: ms-DS-user-account-attributo con blocco automatico
+title: Attributo ms-DS-User-Account-Auto-Locked
 description: Indica se l'account a cui fa riferimento questo attributo è stato bloccato.
 ms.assetid: f9d9c98a-3c4f-4687-8133-4476aeec10e8
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-user-account-schema AD attributo con blocco automatico
+- Ms-DS-User-Account-Auto-Locked attribute AD Schema
 - Schema AD dell'attributo ms-DS-UserAccountAutoLocked
 topic_type:
 - apiref
@@ -14,37 +14,37 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6623a1b348af14fecc8dab41a44439bf2d745bf9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7d1360b9169d5355ef23caf47fa56a283dc4e5267fb603aa08bd0600f126c69f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300301"
 ---
-# <a name="ms-ds-user-account-auto-locked-attribute"></a>ms-DS-user-account-attributo con blocco automatico
+# <a name="ms-ds-user-account-auto-locked-attribute"></a>Attributo ms-DS-User-Account-Auto-Locked
 
-Indica se l'account a cui fa riferimento questo attributo è stato bloccato. True se l'account è bloccato; in caso contrario, false.
+Indica se l'account a cui fa riferimento questo attributo è stato bloccato. True se l'account è bloccato; in caso contrario, False.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-user-account-bloccato automaticamente       |
-| LDAP-Display-Name | ms-DS-UserAccountAutoLocked          |
+| CN                | ms-DS-User-Account-Auto-Locked       |
+| Ldap-Display-Name | ms-DS-UserAccountAutoLocked          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1857              |
-| System-ID-GUID    | f2dd7bab-1f3b-47cf-89fa-143b56ad0a3d |
+| System-Id-Guid    | f2dd7bab-1f3b-47cf-89fa-143b56ad0a3d |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
 
 ## <a name="implementations"></a>Implementazioni
 
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -53,21 +53,21 @@ Indica se l'account a cui fa riferimento questo attributo è stato bloccato. Tru
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-associabile-oggetto**](c-msds-bindableobject.md)<br/> |
+| Classi usate in        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-In ADAM questo attributo sostituisce il flag [**Ads \_ UF \_ locking**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) dell'attributo [**userAccountControl**](a-useraccountcontrol.md) .
+In ADAM questo attributo sostituisce il flag [**ADS \_ UF \_ LOCKOUT**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) dell'attributo [**userAccountControl.**](a-useraccountcontrol.md)
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: Domain-amministra-server esteso a destra
-description: Legacy SAM right.
+title: Diritto esteso Domain-Administer-Server
+description: Diritto SAM legacy.
 ms.assetid: 64055571-a491-4f94-a802-6a189995e6f0
 ms.tgt_platform: multiple
 keywords:
-- Domain-amministra-schema AD esteso destro del server
+- Schema AD esteso Domain-Administer-Server
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1514a2b9bd9d290e1dc09f037ea01ed17cb053a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aed8b87904ff780169a02b8d4e5bf1666f0e8fb6995e216bc3439565c25a938e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532441"
 ---
-# <a name="domain-administer-server-extended-right"></a>Domain-amministra-server esteso a destra
+# <a name="domain-administer-server-extended-right"></a>Diritto esteso Domain-Administer-Server
 
-Legacy SAM right.
+Diritto SAM legacy.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Domain-amministra-server             |
-| Display-Name | Server amministrazione dominio             |
+| CN           | Domain-Administer-Server             |
+| Display-Name | Server di amministrazione del dominio             |
 | Rights-GUID  | ab721a52-1e2f-11d0-9819-00aa0040529b |
 
 
@@ -49,8 +49,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 
@@ -60,8 +60,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 
@@ -71,8 +71,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 
@@ -82,8 +82,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 
@@ -93,8 +93,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 
@@ -104,8 +104,8 @@ Legacy SAM right.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 1                                            |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 1                                            |
 
 
 

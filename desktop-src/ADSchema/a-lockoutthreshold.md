@@ -1,10 +1,10 @@
 ---
-title: Attributo Lockout-Threshold
-description: Numero di tentativi di accesso non validi consentiti prima del blocco dell'account.
+title: Lockout-Threshold attributo
+description: Numero di tentativi di accesso non validi consentiti prima che l'account venga bloccato.
 ms.assetid: c4dcbbb6-0680-45f3-9b0b-f9c4bbf2b349
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Lockout-Threshold attribute
+- Lockout-Threshold schema AD dell'attributo
 - Schema AD dell'attributo lockoutThreshold
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 345977055597c48d70e30a20ce9bfbc9f07f3929
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cbc16d010425c89b24fd77994f215b0baab929a702c42f57e5aa81e6c0046a38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301711"
 ---
-# <a name="lockout-threshold-attribute"></a>Attributo Lockout-Threshold
+# <a name="lockout-threshold-attribute"></a>Lockout-Threshold attributo
 
-Numero di tentativi di accesso non validi consentiti prima del blocco dell'account.
+Numero di tentativi di accesso non validi consentiti prima che l'account venga bloccato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Lockout-Threshold                    |
-| LDAP-Display-Name | lockoutThreshold                     |
+| Ldap-Display-Name | lockoutThreshold                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.73                |
-| System-ID-GUID    | bf9679a6-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679a6-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -179,7 +179,7 @@ Numero di tentativi di accesso non validi consentiti prima del blocco dell'accou
 
 <dl> <dt>
 
-[**Blocco-durata**](a-lockoutduration.md)
+[**Lockout-Duration (Durata blocco)**](a-lockoutduration.md)
 </dt> </dl>
 
  

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 766b117b69ecfebd13986d02ca21df3725981bb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1da8a842f00af68d5fb07a23ec9d12a99d48b0669e00c1e1f2997bf7ef941767
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532581"
 ---
-# <a name="convertvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ConvertVirtualHardDisk della classe MSVM \_ servizio
+# <a name="convertvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ConvertVirtualHardDisk della classe Msvm \_ ImageManagementService
 
-Converte un disco rigido virtuale esistente in un tipo o formato diverso. Questo metodo crea un nuovo disco rigido virtuale e non converte il disco rigido virtuale di origine sul posto. Per informazioni sulle restrizioni di utilizzo di questo metodo, vedere la sezione Osservazioni.
+Converte un disco rigido virtuale esistente in un tipo o formato diverso. Questo metodo crea un nuovo disco rigido virtuale e non converte il disco rigido virtuale di origine sul posto. Per informazioni sulle restrizioni di utilizzo per questo metodo, vedere Note.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ uint32 ConvertVirtualHardDisk(
 
 <dl> <dt>
 
-*SourcePath* \[ in\]
+*SourcePath* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Percorso completo del file di disco rigido virtuale di origine da convertire. Il file non verrà modificato in seguito a questa operazione.
+Percorso completo del file del disco rigido virtuale di origine da convertire. Questo file non verrà modificato in seguito a questa operazione.
 
 </dd> <dt>
 
-*VirtualDiskSettingData* \[ in\]
+*VirtualDiskSettingData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Rappresentazione di stringa della classe [**\_ VirtualHardDiskSettingData di MSVM**](msvm-virtualharddisksettingdata.md) che specifica gli attributi del nuovo disco rigido virtuale. È necessario impostare le proprietà **path**, **Type**, **Format**, **ParentPath**, **blockSize** e **LogicalSectorSize** . Se non è necessario, la proprietà **ParentPath** può essere **null** . Impostare le proprietà **blockSize** e **LogicalSectorSize** su 0 per usare i valori predefiniti.
+Rappresentazione di stringa della [**classe Msvm \_ VirtualHardDiskSettingData**](msvm-virtualharddisksettingdata.md) che specifica gli attributi del nuovo disco rigido virtuale. È **necessario** impostare le proprietà Path , **Type**, **Format**, **ParentPath**, **BlockSize** e **LogicalSectorSize.** La **proprietà ParentPath** può essere **Null** se non è necessaria. Impostare le **proprietà BlockSize** **e LogicalSectorSize** su 0 per usare i valori predefiniti.
 
-Per specificare il formato (VHD o VHDX) del nuovo disco rigido virtuale, impostare l'estensione del **percorso** sul valore appropriato (". VHD" o ". vhdx"). La proprietà **Format** deve corrispondere all'estensione del nome di file nel **percorso**.
+Per specificare il formato (VHD o VHDX) del nuovo disco  rigido virtuale, impostare l'estensione del percorso sul valore appropriato (".vhd" o ".vhdx"). La **proprietà Format** deve corrispondere all'estensione del nome file nel **percorso**.
 
-La proprietà **LogicalSectorSize** verrà ignorata.
+La **proprietà LogicalSectorSize** verrà ignorata.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
@@ -74,7 +74,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo può restituire uno dei valori seguenti.
 
@@ -83,10 +83,10 @@ Questo metodo può restituire uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -95,25 +95,25 @@ Questo metodo può restituire uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -124,20 +124,20 @@ Il **sistema è in uso** (32774)
 
 ## <a name="remarks"></a>Commenti
 
-Con questo metodo è possibile usare solo i tipi di dischi rigidi virtuali seguenti:
+Con questo metodo è possibile usare solo i tipi seguenti di dischi rigidi virtuali:
 
--   VHD fisso
--   Correzione di VHDX
--   VHD dinamico
+-   Disco rigido virtuale fisso
+-   VHDX fisso
+-   Disco rigido virtuale dinamico
 -   VHDX dinamico
 -   Disco rigido virtuale differenze
--   VHDX differenze
+-   Differenze di VHDX
 
-L'accesso alla [**classe \_ servizio di MSVM**](msvm-imagemanagementservice.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio C# seguente viene convertito un disco rigido virtuale. Le utilità a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+L'esempio C# seguente converte un disco rigido virtuale. Le utilità di riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -220,10 +220,10 @@ public static void ConvertVirtualHardDisk(string sourcePath, string destinationP
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -235,10 +235,10 @@ public static void ConvertVirtualHardDisk(string sourcePath, string destinationP
 [**ConvertVirtualHardDisk (V1)**](/previous-versions/windows/desktop/virtual/convertvirtualharddisk-msvm-imagemanagementservice)
 </dt> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

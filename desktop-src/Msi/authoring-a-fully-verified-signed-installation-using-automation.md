@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene illustrato come popolare la tabella MsiDigitalCertificate e la tabella MsiDigitalSignature utilizzando una subroutine Visual Basic, Applications Edition (VBA).
+description: L'esempio seguente illustra come popolare la tabella MsiDigitalCertificate e la tabella MsiDigitalSignature usando una subroutine Visual Basic, Applications Edition (VBA).
 ms.assetid: 3a23a721-0672-4eac-bdf2-434282b92590
-title: Creazione di un'installazione firmata completamente verificata tramite l'automazione
+title: Creazione di un'installazione firmata completamente verificata tramite Automazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e99267feffac71401f36635c08fa7f9f6598a0c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27f1b0b90296ad92e471449213e86721482a545ff1932458b2ad6b21d47b665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559101"
 ---
-# <a name="authoring-a-fully-verified-signed-installation-using-automation"></a>Creazione di un'installazione firmata completamente verificata tramite l'automazione
+# <a name="authoring-a-fully-verified-signed-installation-using-automation"></a>Creazione di un'installazione firmata completamente verificata tramite Automazione
 
-Nell'esempio seguente viene illustrato come popolare la [tabella MsiDigitalCertificate](msidigitalcertificate-table.md) e la [tabella MsiDigitalSignature](msidigitalsignature-table.md) utilizzando una subroutine Visual Basic, Applications Edition (VBA). Per ulteriori informazioni sulla protezione dei pacchetti di Windows Installer, vedere [linee guida per la creazione di installazioni protette](guidelines-for-authoring-secure-installations.md).
+L'esempio seguente illustra come popolare la tabella [MsiDigitalCertificate](msidigitalcertificate-table.md) e la tabella [MsiDigitalSignature](msidigitalsignature-table.md) usando una subroutine Visual Basic, Applications Edition (VBA). Per altre informazioni sulla protezione dei Windows installer, vedere Linee guida per [la creazione di installazioni protette.](guidelines-for-authoring-secure-installations.md)
 
-Il [**Metodo FileSignatureInfo**](installer-filesignatureinfo.md) restituisce un SAFEARRAY di byte. Per ulteriori informazioni, vedere il [**tipo di dati SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray). I dati di questa matrice devono essere convertiti in Unicode perché Visual Basic non dispone di un modo per scrivere i byte direttamente in un file. Il [**Metodo sestream**](record-setstream.md) può quindi utilizzare il file di dati convertiti per scrivere i dati di flusso in un campo record specificato di un [**oggetto record**](record-object.md). Si noti che la conversione dei dati in byte in formato Unicode può potenzialmente modificare i dati e che i dati convertiti devono corrispondere ai dati originali per la corretta verifica della firma. L'autore del pacchetto deve garantire che i dati originali e convertiti corrispondano.
+Il [**metodo FileSignatureInfo restituisce**](installer-filesignatureinfo.md) un SAFEARRAY di byte. Per altre informazioni, vedere Il [**tipo di dati SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray). I dati di questa matrice devono essere convertiti in Unicode Visual Basic non è possibile scrivere byte direttamente in un file. Il [**metodo SetStream può**](record-setstream.md) quindi usare il file di dati convertiti per scrivere dati di flusso in un campo di record specificato di un oggetto [**Record**](record-object.md). Si noti che la conversione dei dati in byte in Unicode può potenzialmente modificare i dati e che i dati convertiti devono corrispondere ai dati originali per la verifica della firma corretta. L'autore del pacchetto deve assicurarsi che i dati originali e convertiti corrispondano.
 
 
 ```VB

@@ -1,19 +1,19 @@
 ---
-title: Come trovare gli elementi dell'interfaccia utente
-description: Questo argomento contiene codice di esempio che illustra come trovare gli elementi dell'interfaccia utente nell'albero di automazione interfaccia utente.
+title: Come trovare elementi dell'interfaccia utente
+description: Questo argomento contiene codice di esempio che illustra come trovare elementi dell'interfaccia utente nell'Automazione interfaccia utente albero.
 ms.assetid: b613eb18-e14d-468e-833d-072bad29ba06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 887ef914d7abcf5ed6dfc546f0930334f53215d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52998ad92fe1912a5159443642d95bbc14a28da595ddd2b2a255ebecaed8c74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505271"
 ---
-# <a name="how-to-find-ui-elements"></a>Come trovare gli elementi dell'interfaccia utente
+# <a name="how-to-find-ui-elements"></a>Come trovare elementi dell'interfaccia utente
 
-Questo argomento contiene codice di esempio che illustra come trovare gli elementi dell'interfaccia utente nell'albero di automazione interfaccia utente.
+Questo argomento contiene codice di esempio che illustra come trovare elementi dell'interfaccia utente nell'Automazione interfaccia utente albero.
 
 -   [Ricerca di un elemento in base al nome](#finding-an-element-by-name)
 -   [Ricerca di elementi correlati](#finding-related-elements)
@@ -21,7 +21,7 @@ Questo argomento contiene codice di esempio che illustra come trovare gli elemen
 
 ## <a name="finding-an-element-by-name"></a>Ricerca di un elemento in base al nome
 
-Nell'esempio seguente viene individuato l'elemento di automazione interfaccia utente Microsoft con il nome specificato ed è un figlio della finestra desktop.
+Nell'esempio seguente viene trovato l'Automazione interfaccia utente microsoft con il nome specificato ed è un elemento figlio della finestra del desktop.
 
 
 ```C++
@@ -137,12 +137,12 @@ cleanup:
 [Ottenere elementi di automazione interfaccia utente](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Procedure per i client di automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-clients.md)
+[Argomenti relativi alle procedure per Automazione interfaccia utente client](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

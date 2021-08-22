@@ -1,33 +1,33 @@
 ---
 title: Schema di calibrazione WCS
-description: Questo argomento descrive lo schema di calibrazione WCS che espande il profilo del modello del dispositivo a colori WCS.
+description: In questo argomento viene descritto lo schema di calibrazione WCS che espande il profilo del modello di dispositivo a colori WCS.
 ms.assetid: 99f3e9e3-15b7-4bca-87cc-a3bf3b6d0112
 keywords:
-- Sistema di colori Windows (WCS), calibrazione
-- WCS (sistema di colori Windows), calibrazione
-- Gestione colori immagine, calibrazione
+- Windows Sistema di colori (WCS), calibrazione
+- WCS (Windows Color System),calibrazione
+- gestione dei colori delle immagini, calibrazione
 - gestione dei colori, calibrazione
 - colori, calibrazione
 - schemi, calibrazione
 - Calibrazione WCS
-- calibrazione
+- Calibrazione
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e859ab9d2b47355db063961004f17a8cc1537694
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 3744f8aa0190f09acf80b469ae01fddb035c48deda73d53871094ef9ece8e88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "106320153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451421"
 ---
 # <a name="wcs-calibration-schema"></a>Schema di calibrazione WCS
 
-Questo argomento descrive lo schema di calibrazione WCS che espande il [profilo del modello del dispositivo a colori WCS](wcs-color-device-model-profile-schema-and-algorithms.md).
+In questo argomento viene descritto lo schema di calibrazione WCS che espande il profilo del modello di dispositivo a colori [WCS](wcs-color-device-model-profile-schema-and-algorithms.md).
 
 ## <a name="the-wcs-calibration-schema"></a>Schema di calibrazione WCS
 
-La definizione dello schema seguente viene utilizzata per specificare le nuove definizioni di Windows 7 che supportano la calibrazione del [profilo del modello del dispositivo a colori WCS](wcs-color-device-model-profile-schema-and-algorithms.md) .
+La definizione dello schema seguente viene utilizzata per specificare le nuove definizioni Windows 7 che supportano la calibrazione del profilo del modello di dispositivo a colori [WCS.](wcs-color-device-model-profile-schema-and-algorithms.md)
 
 
 ```C++
@@ -74,7 +74,7 @@ La definizione dello schema seguente viene utilizzata per specificare le nuove d
 
 
 
-Per la compatibilità con Windows Vista, i profili contenenti tag di calibratura devono includere l'attributo `mc:Ignoreable="cdm_calibration"` .
+Per compatibilità con Windows Vista, i profili contenenti tag di calibrazione devono includere l'attributo `mc:Ignoreable="cdm_calibration"` .
 
  
 
