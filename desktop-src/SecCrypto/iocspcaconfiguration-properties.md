@@ -1,31 +1,31 @@
 ---
 description: L'interfaccia IOCSPCAConfiguration espone le proprietà seguenti.
 ms.assetid: 55F0245D-FC56-449E-A4D8-0DB9F1930393
-title: Proprietà di IOCSPCAConfiguration
+title: Proprietà IOCSPCAConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2076b1b031848a51dd35f43736f2936f500d5662
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34ff840e5af24650958fec9a8e8def9abdc13bf7e60b1f0b43c5245b6f235667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005269"
 ---
-# <a name="iocspcaconfiguration-properties"></a>Proprietà di IOCSPCAConfiguration
+# <a name="iocspcaconfiguration-properties"></a>Proprietà IOCSPCAConfiguration
 
-L'interfaccia [**IOCSPCAConfiguration**](/windows/desktop/api/Certadm/nn-certadm-iocspcaconfiguration) espone le proprietà seguenti.
+[**L'interfaccia IOCSPCAConfiguration**](/windows/desktop/api/Certadm/nn-certadm-iocspcaconfiguration) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà Cacertificate**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cacertificate)
--   [**Proprietà caconfig**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_caconfig)
--   [**Proprietà NomeCSP**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cspname)
--   [**ErrorCode (proprietà)**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_errorcode)
--   [**HashAlgorithm (proprietà)**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_hashalgorithm)
--   [**Identificatore (proprietà)**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_identifier)
--   [**Proprietà di specifica**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_keyspec)
+-   [**Proprietà CACertificate**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cacertificate)
+-   [**Proprietà CAConfig**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_caconfig)
+-   [**Proprietà CSPName**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cspname)
+-   [**Proprietà ErrorCode**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_errorcode)
+-   [**Proprietà HashAlgorithm**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_hashalgorithm)
+-   [**Proprietà Identifier**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_identifier)
+-   [**Proprietà KeySpec**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_keyspec)
 -   [**Proprietà LocalRevocationInformation**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_localrevocationinformation)
--   [**Proprietà modificata**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_modified)
+-   [**Proprietà Modified**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_modified)
 -   [**Proprietà ProviderCLSID**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_providerclsid)
 -   [**Proprietà ProviderProperties**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_providerproperties)
 -   [**Proprietà ReminderDuration**](/windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_reminderduration)

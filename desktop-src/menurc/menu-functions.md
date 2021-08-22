@@ -4,12 +4,12 @@ description: Funzioni di menu
 ms.assetid: c40719aa-3735-4f46-88f7-6cc20b088ad4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12e55dec7532d30749d709f815b232ad3bcc6419
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bce474d55191baf9cbcb7acbff9d5220de197e38233571c9b71c5892d93031be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119226337"
 ---
 # <a name="menu-functions"></a>Funzioni di menu
 

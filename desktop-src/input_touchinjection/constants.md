@@ -1,6 +1,6 @@
 ---
-title: Costanti touch Injection
-description: In questa sezione vengono fornite le specifiche di riferimento per le costanti touch injection.
+title: Costanti di inserimento tocco
+description: Questa sezione fornisce le specifiche di riferimento per le costanti touch injection.
 ms.assetid: 52941DF1-88AF-452B-BF3E-838ADBDBC9B2
 topic_type:
 - apiref
@@ -15,32 +15,32 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: 76a763a7153bbb9aa67254ffeb5e994a55426e43
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: d86af0d67c48218e8cb3f5909b647ff59d8b0cdddddef24057e02521a7f253ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451741"
 ---
-# <a name="touch-injection-constants"></a>Costanti touch Injection
+# <a name="touch-injection-constants"></a>Costanti di inserimento tocco
 
-In questa sezione vengono fornite le specifiche di riferimento per le costanti [touch Injection](touch-injection-portal.md) .
+Questa sezione fornisce le specifiche di riferimento per le [costanti touch injection.](touch-injection-portal.md)
 
 | Costante/valore | Descrizione |
 |---|---|
 | **MAX_TOUCH_COUNT** 256                            | Specifica il numero massimo di contatti simultanei.<br/> |
 | **TOUCH_FEEDBACK_DEFAULT** 0x1    | Specifica le visualizzazioni tocco predefinite.<br/>                |
-| **TOUCH_FEEDBACK_INDIRECT** 0x2 | Specifica le visualizzazioni con tocco indiretto.<br/>               |
-| **TOUCH_FEEDBACK_NONE** 0x3             | Non specifica alcuna visualizzazione touch.<br/>                     |
+| **TOUCH_FEEDBACK_INDIRECT** 0x2 | Specifica le visualizzazioni tocco indirette.<br/>               |
+| **TOUCH_FEEDBACK_NONE** 0x3             | Non specifica visualizzazioni tocco.<br/>                     |
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato | \[Solo app desktop di Windows 8\]                                           |
-| Server minimo supportato | \[Solo app desktop Windows Server 2012\]                                 |
-| Intestazione                   | Winuser. h |
+| Client minimo supportato | \[Windows 8 solo app desktop\]                                           |
+| Server minimo supportato | \[Windows Server 2012 solo app desktop\]                                 |
+| Intestazione                   | Winuser |
 
 ## <a name="see-also"></a>Vedi anche
 
-[Riferimento all'Injection tocco](touch-injection-reference.md)
+[Informazioni di riferimento sul tocco injection](touch-injection-reference.md)

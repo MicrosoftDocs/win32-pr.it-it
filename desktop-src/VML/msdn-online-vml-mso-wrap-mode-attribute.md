@@ -1,34 +1,34 @@
 ---
-title: La MSO-attributo in modalità wrap
-description: La MSO-attributo in modalità wrap
+title: Attributo VML MSO-Wrap-Mode
+description: Attributo VML MSO-Wrap-Mode
 ms.assetid: 51c4e90d-62cc-4646-9c71-8a6bf3366b2f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5657192fcf9da72ff99dc25cff7930b6d2d9b6b9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 88e3743522b9286da8a7f30e9100e06205430b1b18fa3c62def60b57f54b65d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136984"
 ---
-# <a name="vml-mso-wrap-mode-attribute"></a>La MSO-attributo in modalità wrap
+# <a name="vml-mso-wrap-mode-attribute"></a>Attributo VML MSO-Wrap-Mode
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce la modalità di wrapping per il testo. Proprietà di lettura/scrittura. **Stringa**.
+Definisce la modalità di ritorno a capo per il testo. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "MSO-Wrap-Mode: *Expression* " >
+<v: *element* style="mso-wrap-mode: *expression* ">
 
 **Osservazioni:**
 
@@ -38,23 +38,23 @@ I possibili valori sono:
 
 | Valore          | Descrizione                          |
 |----------------|--------------------------------------|
-| square         | Esegue il wrapping del testo intorno alla forma in un quadrato. |
-| una stretta          | Il testo viene incapsulato vicino alla forma.  |
+| square         | Racchiude il testo intorno alla forma in un quadrato. |
+| Stretto          | Il testo viene racchiuso in un punto vicino alla forma.  |
 | in alto e in basso | Il testo passa dall'alto verso il basso.       |
 | -        | Il testo viene visualizzato attraverso la forma.     |
-| Nessuno           | Il testo non viene incapsulato.                   |
+| Nessuno           | Il testo non va a capo.                   |
 
 
 
- 
+ 
 
-Usato da Microsoft PowerPoint per il salvataggio nel codice HTML per indicare se il ritorno a capo automatico all'interno di una forma è on (**Square**) o off (**nessuno**).
+Usato da Microsoft PowerPoint salvataggio in HTML per indicare se il ritorno a capo automatico all'interno di una forma è on (**square**) o off (**none**).
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
-Il codice seguente indica che WordWrap all'interno di una forma AutoShape è attivato in PowerPoint.
+Il codice seguente indica che il ritorno a capo automatico all'interno di una forma è attivato in PowerPoint.
 
 
 ```HTML
@@ -68,6 +68,6 @@ Il codice seguente indica che WordWrap all'interno di una forma AutoShape è att
 
 
 
- 
+ 
 
- 
+ 

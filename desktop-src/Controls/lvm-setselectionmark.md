@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETSELECTIONMARK (COMmctrl. h)
-description: Imposta il contrassegno di selezione in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro SetSelectionMark di ListView.
+title: LVM_SETSELECTIONMARK messaggio (Commctrl.h)
+description: Imposta il segno di selezione in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView SetSelectionMark.
 ms.assetid: 3218f1b3-b934-4083-aaaa-e10ef1dbb6bd
 keywords:
-- Controlli di Windows Message LVM_SETSELECTIONMARK
+- LVM_SETSELECTIONMARK dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3efc01068f22585061cae5a6f2c5c0c841810f52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c80f1392b5bb8b8ae49eaefb639a60213b5d4a7deaf153b99262bf608a770e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217361"
 ---
-# <a name="lvm_setselectionmark-message"></a>\_Messaggio SETSELECTIONMARK LVM
+# <a name="lvm_setselectionmark-message"></a>Messaggio LVM \_ SETSELECTIONMARK
 
-Imposta il contrassegno di selezione in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ SetSelectionMark di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark) .
+Imposta il segno di selezione in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView SetSelectionMark.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,17 +35,17 @@ Imposta il contrassegno di selezione in un controllo visualizzazione elenco. È 
 *lParam* 
 </dt> <dd>
 
-Indice in base zero del nuovo contrassegno di selezione. Se è impostato su-1, il contrassegno di selezione verrà rimosso.
+Indice in base zero del nuovo segno di selezione. Se impostato su -1, il segno di selezione viene rimosso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il contrassegno di selezione precedente oppure-1 se non è presente alcun contrassegno di selezione precedente.
+Restituisce il segno di selezione precedente oppure -1 se non è presente alcun segno di selezione precedente.
 
 ## <a name="remarks"></a>Commenti
 
-Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selezione multipla. Questo messaggio non influisce sullo stato di selezione dell'elemento.
+Il *segno di selezione* è l'indice dell'elemento da cui inizia una selezione multipla. Questo messaggio non influisce sullo stato di selezione dell'elemento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selez
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il *contrassegno di selezione* è l'indice dell'elemento da cui inizia una selez
 
 <dl> <dt>
 
-[**\_GETSELECTIONMARK LVM**](lvm-getselectionmark.md)
+[**LVM \_ GETSELECTIONMARK**](lvm-getselectionmark.md)
 </dt> </dl>
 
  

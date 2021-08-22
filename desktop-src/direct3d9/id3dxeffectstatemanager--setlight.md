@@ -1,7 +1,7 @@
 ---
 description: Funzione di callback che deve essere implementata da un utente per impostare una luce.
 ms.assetid: 3b9b2cbd-79f5-4ea4-a47b-da23b091adfd
-title: 'Metodo ID3DXEffectStateManager:: selight (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetLight (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1306283b098922706f39abc7ffe2514d2fba0e5c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 83250450a0510949267ffd52f17e6e9013a646d40229efcf7d5bcc7a396e1b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119372081"
 ---
-# <a name="id3dxeffectstatemanagersetlight-method"></a>Metodo ID3DXEffectStateManager:: selight
+# <a name="id3dxeffectstatemanagersetlight-method"></a>Metodo ID3DXEffectStateManager::SetLight
 
 Funzione di callback che deve essere implementata da un utente per impostare una luce.
 
@@ -41,21 +41,21 @@ HRESULT SetLight(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice in base zero della luce. Si tratta dello stesso indice in [**IDirect3DDevice9:: selight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight).
+Indice in base zero della luce. Si tratta dello stesso indice in [**IDirect3DDevice9::SetLight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight).
 
 </dd> <dt>
 
-*situazione* \[ in\]
+*pLight* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DLight9**](d3dlight9.md) \***
 
-Oggetto chiaro. Vedere [**D3DLIGHT9**](d3dlight9.md).
+Oggetto chiaro. Vedere [**D3DLIGHT9.**](d3dlight9.md)
 
 </dd> </dl>
 
@@ -63,10 +63,10 @@ Oggetto chiaro. Vedere [**D3DLIGHT9**](d3dlight9.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: selight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight), avrà esito negativo.
+-   L'effetto avrà esito negativo [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata dello stato dell'effetto dinamico ( [**ad esempio IDirect3DDevice9::SetLight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,39 +1,39 @@
 ---
-description: Archivia la stringa inviata nell'intestazione del Accept-Language.
+description: Archivia la stringa inviata nell'intestazione Accept-Language personalizzata.
 ms.assetid: b6ac613c-099b-4415-84ad-c0f8ad5f667b
-title: Proprietà MFNETSOURCE_STREAM_LANGUAGE (Mfidl. h)
+title: MFNETSOURCE_STREAM_LANGUAGE proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 200c49d4a14146277c66fbb3389cf1ba6ab13fef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c44b6f55fd2f5652a41d9aa5eed76e60e73152343d2baf6c577be56bc462c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344541"
 ---
-# <a name="mfnetsource_stream_language-property"></a>Proprietà della lingua del \_ flusso MFNETSOURCE \_
+# <a name="mfnetsource_stream_language-property"></a>MFNETSOURCE \_ STREAM LANGUAGE - \_ proprietà
 
-Archivia la stringa inviata nell'intestazione del Accept-Language.
+Archivia la stringa inviata nell'intestazione Accept-Language personalizzata.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**WCHAR \** _
+**Wchar\***
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-_ *pwszVal**
+**pwszVal**
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La \_ costante del linguaggio del flusso MFNETSOURCE \_ definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero. Per impostare questa proprietà nell'origine di rete, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+La costante MFNETSOURCE \_ STREAM LANGUAGE definisce il GUID per la chiave di \_ proprietà. L'identificatore di proprietà (PID) è zero. Per impostare questa proprietà nell'origine di rete, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La \_ costante del linguaggio del flusso MFNETSOURCE \_ definisce il GUID per la
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La \_ costante del linguaggio del flusso MFNETSOURCE \_ definisce il GUID per la
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

@@ -1,76 +1,76 @@
 ---
 title: Caratteri a colori
-description: Questo argomento descrive i tipi di carattere di colore, il relativo supporto in DirectWrite e Direct2D e come usarli nell'app.
+description: Questo argomento descrive i tipi di carattere a colori, il relativo supporto in DirectWrite e Direct2D e come usarli nell'app.
 ms.assetid: 74e096c4-9d1c-8854-e9ee-f8b11ac1c71a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6774089cc1f0bed1349edc940c6a1ae715d052c7
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: a5c0154e528ab8471d40f4771db5479ca9233320177386adbbd849162dbcd598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104562652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329526"
 ---
 # <a name="color-fonts"></a>Caratteri a colori
 
-Questo argomento descrive i tipi di carattere di colore, il relativo supporto in DirectWrite e Direct2D e come usarli nell'app.
+Questo argomento descrive i tipi di carattere a colori, il relativo supporto in DirectWrite e Direct2D e come usarli nell'app.
 
 Questo documento contiene le parti seguenti:
 
--   [Che cosa sono i tipi di carattere colore?](#what-are-color-fonts)
--   [Perché usare i tipi di carattere colore?](#why-use-color-fonts)
--   [Quali tipi di tipi di carattere colori supporta Windows?](#what-kinds-of-color-fonts-does-windows-support)
--   [Uso di tipi di carattere colori](#using-color-fonts)
-    -   [Uso di tipi di carattere a colori in un'app XAML](#using-color-fonts-in-a-xaml-app)
-    -   [Uso di tipi di carattere a colori in Microsoft Edge](#using-color-fonts-in-microsoft-edge)
-    -   [Uso dei tipi di carattere colori con DirectWrite e Direct2D](#using-color-fonts-with-directwrite-and-direct2d)
-    -   [Uso dei tipi di carattere colore con Win2D](#using-color-fonts-with-win2d)
+-   [Che cosa sono i tipi di carattere a colori?](#what-are-color-fonts)
+-   [Perché usare i tipi di carattere a colori?](#why-use-color-fonts)
+-   [Quali tipi di carattere a colori Windows supportati?](#what-kinds-of-color-fonts-does-windows-support)
+-   [Uso dei tipi di carattere a colori](#using-color-fonts)
+    -   [Uso dei tipi di carattere a colori in un'app XAML](#using-color-fonts-in-a-xaml-app)
+    -   [Uso dei tipi di carattere a colori in Microsoft Edge](#using-color-fonts-in-microsoft-edge)
+    -   [Uso dei tipi di carattere a colori DirectWrite e Direct2D](#using-color-fonts-with-directwrite-and-direct2d)
+    -   [Uso dei tipi di carattere a colori con Win2D](#using-color-fonts-with-win2d)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="what-are-color-fonts"></a>Che cosa sono i tipi di carattere colore?
+## <a name="what-are-color-fonts"></a>Che cosa sono i tipi di carattere a colori?
 
-I tipi di carattere colori, detti anche tipi di carattere a colori o tipi di carattere cromatici, rappresentano una tecnologia per i tipi di carattere che consente ai progettisti di utilizzare più colori all'interno di ogni glifo. I tipi di carattere colori consentono scenari di testo multicolore in app e siti Web con meno codice e un supporto più affidabile del sistema operativo rispetto alle tecniche ad hoc implementate sopra il sistema di rendering del testo.
+I tipi di carattere a colori, noti anche come tipi di carattere multicolore o tipi di carattere cromatici, sono una tecnologia dei tipi di carattere che consente ai progettisti di tipi di carattere di usare più colori all'interno di ogni glifo. I tipi di carattere a colori consentono scenari di testo multicolore in app e siti Web con meno codice e supporto del sistema operativo più affidabile rispetto alle tecniche ad hoc implementate sopra il sistema di rendering del testo.
 
-I tipi di carattere con cui si conosce probabilmente non sono tipi di carattere colore. Questi tipi di carattere definiscono solo la forma dei glifi che contengono, sia con le linee di vettore sia con le bitmap monocromatiche. In fase di disegnare, un renderer di testo riempie la forma del glifo usando un solo colore (il colore del carattere) specificato dall'app o dal documento sottoposto a rendering. I tipi di carattere colore, d'altra parte, contengono informazioni sui colori, oltre alle informazioni sulla forma. Alcuni approcci consentono ai progettisti di tipi di carattere di offrire più tavolozze dei colori, offrendo la flessibilità artistica del tipo di carattere.
+I tipi di carattere con cui si ha maggiore familiarità non sono i tipi di carattere a colori. Questi tipi di carattere definiscono solo la forma dei glifi che contengono, con contorni vettoriali o bitmap monocromatiche. In fase di disegno, un renderer di testo riempie la forma del glifo usando un singolo colore (il colore del carattere ) specificato dall'app o dal documento di cui viene eseguito il rendering. I tipi di carattere a colori, d'altra parte, contengono informazioni sui colori oltre alle informazioni sulla forma. Alcuni approcci consentono ai progettisti di tipi di carattere di offrire più tavolozze dei colori, offrendo la flessibilità necessaria per il tipo di carattere dei colori.
 
-Nell'esempio seguente viene illustrato un glifo del tipo di carattere del colore Segoe UI emoji. Il rendering del glifo viene eseguito in monocromia a sinistra e in colore a destra.
+L'esempio seguente mostra un glifo dal tipo di Segoe UI di colore Emoji. Il rendering del glifo viene eseguito in modalità monocromatica a sinistra e a colori a destra.
 
-![Mostra i glifi affiancati, il glifo di sinistra di cui è stato eseguito il rendering in monocromatico, il diritto nel tipo di carattere colore Segoe U I emoji.](images/color-font-cat.png)
+![Mostra i glifi affiancati, il glifo sinistro di cui viene eseguito il rendering in monocromatica, a destra nel tipo di carattere a colori Segoe U I Emoji.](images/color-font-cat.png)
 
-I tipi di carattere dei colori includono in genere informazioni di fallback per le piattaforme che non supportano i tipi di carattere colori o per scenari in cui la funzionalità dei colori è stata disabilitata Su queste piattaforme, i tipi di carattere colore vengono visualizzati come tipi di carattere monocromatici regolari.
+I tipi di carattere a colori includono in genere informazioni di fallback per le piattaforme che non supportano i tipi di carattere a colori o per gli scenari in cui la funzionalità dei colori è stata disabilitata. In queste piattaforme, il rendering dei tipi di carattere a colori viene eseguito come normali tipi di carattere monocromatici.
 
-## <a name="why-use-color-fonts"></a>Perché usare i tipi di carattere colore?
+## <a name="why-use-color-fonts"></a>Perché usare i tipi di carattere a colori?
 
-Storicamente, i progettisti e gli sviluppatori hanno usato diverse tecniche per ottenere testo multicolore. Ad esempio, i siti web usano spesso immagini raster anziché testo per visualizzare intestazioni avanzate. Questo approccio consente la flessibilità artistica, ma la grafica raster non è scalabile correttamente per tutte le dimensioni di visualizzazione, né fornisce le stesse funzionalità di accessibilità del testo reale. Un'altra tecnica comune è quella di sovrapporre più tipi di carattere monocromatici con diversi colori dei tipi di carattere, ma questo in genere richiede un codice di layout aggiuntivo da gestire.
+In genere, progettisti e sviluppatori hanno usato un'ampia gamma di tecniche per ottenere testo multicolore. Ad esempio, i siti Web usano spesso immagini raster anziché testo per visualizzare intestazioni RTF. Questo approccio offre flessibilità, ma la grafica raster non è adatta a tutte le dimensioni di visualizzazione, né offre le stesse funzionalità di accessibilità del testo reale. Un'altra tecnica comune consiste nel sovrapporre più tipi di carattere monocromatici in colori diversi, ma ciò richiede in genere codice di layout aggiuntivo da gestire.
 
-I tipi di carattere colore offrono un modo per ottenere questi effetti visivi con tutta la semplicità e la funzionalità dei tipi di carattere normali. Il testo di cui è stato eseguito il rendering in un tipo di carattere è identico a quello di un altro testo: può essere copiato e incollato, può essere analizzato dagli strumenti di accessibilità e così via.
+I tipi di carattere a colori offrono un modo per ottenere questi effetti visivi con tutta la semplicità e le funzionalità dei tipi di carattere normali. Il testo sottoposto a rendering con un tipo di carattere a colori è identico a quello di altro testo: può essere copiato e incollato, analizzato dagli strumenti di accessibilità e così via.
 
-## <a name="what-kinds-of-color-fonts-does-windows-support"></a>Quali tipi di tipi di carattere colori supporta Windows?
+## <a name="what-kinds-of-color-fonts-does-windows-support"></a>Quali tipi di carattere a colori Windows supportati?
 
-La [specifica OpenType](https://www.microsoft.com/Typography/OpenTypeSpecification.aspx) definisce diversi modi per incorporare le informazioni sui colori in un tipo di carattere. A partire dall'aggiornamento dell'anniversario di Windows 10, DirectWrite e Direct2D (e i Framework Windows basati su di essi) supportano tutti questi approcci. Sono riepilogati nella tabella seguente:
+La [specifica OpenType](https://www.microsoft.com/Typography/OpenTypeSpecification.aspx) definisce diversi modi per incorporare informazioni sui colori in un tipo di carattere. A partire Windows 10'aggiornamento dell'anniversario, DirectWrite e Direct2D (e i framework Windows su cui si basano) supportano tutti questi approcci. Sono riepilogati nella tabella seguente:
 
 
 
 | Tecnica                                                                                                                        | Descrizione                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Colr](/typography/opentype/spec/colr) / Tabelle [CPAL](/typography/opentype/spec/cpal) | USA i livelli di vettori colorati, le cui forme sono definite nello stesso modo dei profili di glifo a colore singolo. **Nota:** Supportato a partire da Windows 8.1. <br/>                                                                                                                                                 |
-| Tabella [SVG](/typography/opentype/spec/svg)                                                                 | Usa immagini vettoriali create nel formato di grafica vettoriale scalabile. **Nota:** A partire dall'aggiornamento dell'anniversario di Windows 10, DirectWrite supporta un subset della specifica SVG completa. Non tutto il contenuto SVG è garantito per il rendering in un tipo di carattere SVG OpenType. Per altri dettagli, vedere [supporto per SVG](../direct2d/svg-support.md) . <br/> |
-| [CBDT](/typography/opentype/spec/cbdt) / Tabelle [cblC](/typography/opentype/spec/cblc) | Usa immagini bitmap a colori incorporati.                                                                                                                                                                                                                                                                                |
-| tabella [sbix](/typography/opentype/spec/sbix)                                                               | Usa immagini bitmap a colori incorporati.                                                                                                                                                                                                                                                                                |
+| [COLR](/typography/opentype/spec/colr) / [Tabelle CPAL](/typography/opentype/spec/cpal) | Usa livelli di vettori colorati, le cui forme sono definite nello stesso modo dei contorni di glifi a colore singolo. **Nota:** Supportato a partire da Windows 8.1. <br/>                                                                                                                                                 |
+| [Tabella SVG](/typography/opentype/spec/svg)                                                                 | Usa immagini vettoriali scritte nel formato di grafica vettoriale scalabile. **Nota:** A Windows 10'aggiornamento dell'anniversario, DirectWrite supporta un subset della specifica SVG completa. Non viene garantito il rendering di tutto il contenuto SVG in un tipo di carattere OpenType SVG. Per [altri dettagli, vedere Supporto SVG.](../direct2d/svg-support.md) <br/> |
+| [ESERET](/typography/opentype/spec/cbdt) / [Tabelle CBLC](/typography/opentype/spec/cblc) | Usa immagini bitmap a colori incorporate.                                                                                                                                                                                                                                                                                |
+| [Tabella sbix](/typography/opentype/spec/sbix)                                                               | Usa immagini bitmap a colori incorporate.                                                                                                                                                                                                                                                                                |
 
 
 
  
 
-## <a name="using-color-fonts"></a>Uso di tipi di carattere colori
+## <a name="using-color-fonts"></a>Uso dei tipi di carattere a colori
 
-Dal punto di vista dell'utente, i tipi di carattere dei colori sono solo tipi di carattere. Ad esempio, possono in genere essere installate e disinstallate dal sistema in modo analogo ai tipi di carattere monocromatici e vengono visualizzate come testo normale e selezionabile.
+Dal punto di vista dell'utente, i tipi di carattere a colori sono solo tipi di carattere . Ad esempio, in genere possono essere installati e disinstallati dal sistema allo stesso modo dei tipi di carattere monocromatici e ne viene eseguito il rendering come testo normale e selezionabile.
 
-Dal punto di vista dello sviluppatore, i tipi di carattere colorati vengono in genere utilizzati allo stesso modo dei tipi di carattere monocromatici. Nei framework XAML e Microsoft Edge è possibile applicare uno stile al testo con i tipi di carattere di colore nello stesso modo dei tipi di carattere normali e, per impostazione predefinita, il rendering del testo verrà eseguito in colore. Tuttavia, se l'app chiama direttamente le API Direct2D (o API Win2D) per eseguire il rendering del testo, deve richiedere esplicitamente il rendering del tipo di carattere colore.
+Anche dal punto di vista dello sviluppatore, i tipi di carattere a colori vengono in genere usati allo stesso modo dei tipi di carattere monocromatici. Nei framework XAML e Microsoft Edge puoi impostare lo stile del testo con tipi di carattere a colori allo stesso modo dei normali tipi di carattere e per impostazione predefinita il rendering del testo verrà eseguito a colori. Tuttavia, se l'app chiama direttamente le API Direct2D (o API Win2D) per eseguire il rendering del testo, deve richiedere in modo esplicito il rendering del tipo di carattere a colori.
 
-### <a name="using-color-fonts-in-a-xaml-app"></a>Uso di tipi di carattere a colori in un'app XAML
+### <a name="using-color-fonts-in-a-xaml-app"></a>Uso dei tipi di carattere a colori in un'app XAML
 
-Gli elementi di testo della piattaforma XAML, ad esempio [TextBlock](/uwp/api/windows.ui.xaml.controls.textblock), [TextBox](/uwp/api/windows.ui.xaml.controls.textbox), [RichEditBox](/uwp/api/windows.ui.xaml.controls.richeditbox), [Glyphs](/uwp/api/windows.ui.xaml.documents.glyphs?f=255&MSPPError=-2147217396)e [FontIcon](/uwp/api/windows.ui.xaml.controls.fonticon), supportano i tipi di carattere colore per impostazione predefinita. È sufficiente applicare uno stile al testo con un tipo di carattere colore. verrà eseguito il rendering di qualsiasi glifo di colore a colori. L'esempio di codice seguente illustra un modo per applicare uno stile a un TextBlock con un tipo di carattere di colore incluso nell'app. La stessa tecnica si applica ai normali tipi di carattere.
+Gli elementi di testo della piattaforma XAML (ad esempio [TextBlock,](/uwp/api/windows.ui.xaml.controls.textblock) [TextBox,](/uwp/api/windows.ui.xaml.controls.textbox) [RichEditBox,](/uwp/api/windows.ui.xaml.controls.richeditbox) [Glifi](/uwp/api/windows.ui.xaml.documents.glyphs?f=255&MSPPError=-2147217396)e [FontIcon)](/uwp/api/windows.ui.xaml.controls.fonticon)supportano i tipi di carattere a colori per impostazione predefinita. È sufficiente eseguire lo stile del testo con un tipo di carattere di colore e verrà eseguito il rendering di tutti i glifi a colori. L'esempio di codice seguente illustra un modo per creare uno stile per un controllo TextBlock con un tipo di carattere di colore in pacchetto con l'app. La stessa tecnica si applica ai tipi di carattere normali.
 
 
 ```XML
@@ -79,17 +79,17 @@ Gli elementi di testo della piattaforma XAML, ad esempio [TextBlock](/uwp/api/wi
 
 
 
-Se non si vuole mai che l'elemento di testo XAML esegua il rendering del testo multicolore, impostare la relativa proprietà [IsColorFontEnabledProperty](/uwp/api/windows.ui.xaml.controls.textblock.iscolorfontenabledproperty) su false.
+Se non si vuole mai che l'elemento di testo XAML eserne il rendering di testo multicolore, impostarne la proprietà [IsColorFontEnabledProperty](/uwp/api/windows.ui.xaml.controls.textblock.iscolorfontenabledproperty) su false.
 
-### <a name="using-color-fonts-in-microsoft-edge"></a>Uso di tipi di carattere a colori in Microsoft Edge
+### <a name="using-color-fonts-in-microsoft-edge"></a>Uso dei tipi di carattere a colori in Microsoft Edge
 
-Per impostazione predefinita, il rendering dei tipi di carattere di colore viene eseguito in siti Web e app Web in esecuzione su Microsoft Edge, incluso il controllo [WebView](/uwp/api/windows.ui.xaml.controls.webview) XAML. È sufficiente usare HTML e CSS per applicare uno stile al testo con un tipo di carattere colore e qualsiasi glifo di colore verrà sottoposto a rendering in colore.
+Il rendering dei tipi di carattere a colori viene eseguito per impostazione predefinita nei siti Web e nelle app Web in Microsoft Edge, incluso il [controllo WebView](/uwp/api/windows.ui.xaml.controls.webview) XAML. È sufficiente usare HTML e CSS per eseguire lo stile del testo con un tipo di carattere di colore e verrà eseguito il rendering di tutti i glifi a colori.
 
-### <a name="using-color-fonts-with-directwrite-and-direct2d"></a>Uso dei tipi di carattere colori con DirectWrite e Direct2D
+### <a name="using-color-fonts-with-directwrite-and-direct2d"></a>Uso dei tipi di carattere a colori DirectWrite e Direct2D
 
-L'app può usare i metodi di disegno del testo di livello superiore di Direct2D ([**DrawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md) e [**DrawTextLayout**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtextlayout)) oppure può usare tecniche di basso livello per disegnare direttamente le esecuzioni di glifi. In entrambi i casi, l'app richiede modifiche al codice per gestire correttamente i glifi dei colori. Se l'app usa le API **DrawText** e **DrawTextLayout** di Direct2D, si noti che per impostazione predefinita non viene eseguito il rendering delle icone dei colori. In questo modo si evitano modifiche impreviste del comportamento nelle app per il rendering del testo progettate prima del supporto dei tipi di carattere colori.
+L'app può usare i metodi di disegno del testo di livello superiore di Direct2D ([**DrawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md) e [**DrawTextLayout**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtextlayout)) oppure può usare tecniche di livello inferiore per disegnare direttamente le esecuzioni di glifi. In entrambi i casi, l'app richiede modifiche al codice per gestire correttamente i glifi di colore. Se l'app usa le API **DrawText** e **DrawTextLayout** di Direct2D, si noti che per impostazione predefinita non viene eseguito il rendering dei glifi a colori. Ciò consente di evitare modifiche impreviste del comportamento nelle app per il rendering del testo progettate prima del supporto dei tipi di carattere a colori.
 
-Per acconsentire esplicitamente al rendering del glifo dei colori, passare le opzioni di testo di disegno d2d1 Abilita il flag opzioni del [**\_ tipo di \_ \_ \_ \_ \_ carattere colore**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) al metodo di disegno. Nell'esempio di codice seguente viene illustrato come chiamare il metodo DrawText di Direct2D per eseguire il rendering di una stringa in un tipo di carattere di colore:
+Per acconsentire esplicitamente al rendering del glifo a colori, passare il flag di opzioni [**D2D1 \_ DRAW TEXT OPTIONS ENABLE COLOR \_ \_ \_ \_ \_ FONT**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) al metodo di disegno. L'esempio di codice seguente illustra come chiamare il metodo DrawText di Direct2D per eseguire il rendering di una stringa con un tipo di carattere a colori:
 
 
 ```C++
@@ -109,14 +109,14 @@ m_deviceContext->DrawText(
 
 
 
-Se l'app usa le API di livello inferiore per gestire le esecuzioni di glifi direttamente, continuerà a funzionare in presenza di tipi di carattere di colore, ma non sarà in grado di creare icone dei colori senza logica aggiuntiva.
+Se l'app usa API di livello inferiore per gestire direttamente le esecuzioni dei glifi, continuerà a funzionare in presenza di tipi di carattere a colori, ma non sarà in grado di disegnare glifi di colore senza logica aggiuntiva.
 
-Per gestire correttamente i glifi dei colori, l'app deve:
+Per gestire correttamente i glifi a colori, l'app deve:
 
-1.  Passare le informazioni di esecuzione del glifo a [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun), insieme a un parametro dei [**formati di \_ \_ immagine \_ del glifo DWrite**](/windows/win32/api/dcommon/ne-dcommon-dwrite_glyph_image_formats) che indica i tipi di glifo del colore che l'app è preparata a gestire. Se sono presenti glifi di colore (in base al tipo di carattere e ai **\_ formati di \_ immagine \_ del glifo DWrite** richiesti), DirectWrite suddividerà il glifo primario in esecuzioni di glifi di colore individuali a cui è possibile accedere tramite l'oggetto [**IDWriteColorGlyphRunEnumerator**](idwritecolorglyphrunenumerator.md) restituito nel passaggio 4.
-2.  Controllare HRESULT restituito da [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) per determinare se sono state rilevate esecuzioni di glifi di colore. Un valore **HRESULT** di **DWrite \_ E \_ nocolor** indica che non è stata eseguita alcuna icona dei colori applicabile.
-3.  Se [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) non ha segnalato l'esecuzione di un glifo dei colori (restituendo **DWrite \_ E \_ nocolor**), l'intera esecuzione del glifo viene considerata come monocromatico e l'app deve essere disegnato come desiderato (ad esempio, usando [**ID2D1DeviceContext::D rawglyphrun**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawglyphrun)).
-4.  Se [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) segnala la presenza delle esecuzioni del glifo dei colori, l'app deve ignorare l'esecuzione del glifo principale e usare invece le esecuzioni del glifo dei colori restituite da TranslateColorGlyphRun. A tale scopo, eseguire l'iterazione dell'oggetto [**IDWriteColorGlyphRunEnumerator1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritecolorglyphrunenumerator1) restituito, recuperare ogni icona del colore e disegnarla come appropriato per il formato dell'immagine del glifo. ad esempio, è possibile usare [**DrawColorBitmapGlyphRun**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawcolorbitmapglyphrun) e [**DrawSvgGlyphRun**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawsvgglyphrun) per disegnare rispettivamente i glifi di bitmap di colore e i glifi svg.
+1.  Passare le informazioni di esecuzione del glifo a [**TranslateColorGlyphRun,**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun)insieme a un parametro [**DWRITE \_ GLYPH \_ IMAGE \_ FORMATS**](/windows/win32/api/dcommon/ne-dcommon-dwrite_glyph_image_formats) che indica quali tipi di glifi di colore l'app è pronta a gestire. Se sono presenti glifi di colore (in base al tipo di carattere e ai formati IMAGE **\_ DWRITE GLYPH \_ \_** richiesti), DirectWrite suddividerà l'esecuzione del glifo primario in singole esecuzioni di glifi a colori accessibili tramite l'oggetto [**IDWriteColorGlyphRunEnumerator**](idwritecolorglyphrunenumerator.md) restituito nel passaggio 4.
+2.  Controllare il valore HRESULT restituito [**da TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) per determinare se sono state rilevate esecuzioni di glifi di colore. Un **valore HRESULT** **di DWRITE E \_ \_ NOCOLOR** indica l'assenza di un'esecuzione di glifi di colore applicabile.
+3.  Se [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) non ha segnalato esecuzioni di glifi di colore (tramite la restituzione di **DWRITE \_ E \_ NOCOLOR),** l'intera esecuzione del glifo viene considerata monocromatica e l'app deve disegnarla come desiderato (ad esempio, usando [**ID2D1DeviceContext::D rawGlyphRun).**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawglyphrun)
+4.  Se [**TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun) segnala la presenza di esecuzioni di glifi a colori, l'app deve ignorare l'esecuzione dell'icona primaria e usare invece le esecuzioni di glifi a colori restituite da TranslateColorGlyphRun. A tale scopo, eseguire l'iterazione dell'oggetto [**IDWriteColorGlyphRunEnumerator1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritecolorglyphrunenumerator1) restituito, recuperando ogni esecuzione del glifo colore e disegnandola nel modo appropriato per il formato immagine del glifo. Ad esempio, è possibile usare [**DrawColorBitmapGlyphRun**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawcolorbitmapglyphrun) e [**DrawSvgGlyphRun**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawsvgglyphrun) per disegnare glifi bitmap a colori e glifi SVG rispettivamente.
 
 Nell'esempio di codice seguente viene illustrata la struttura generale di questa procedura:
 
@@ -199,9 +199,9 @@ HRESULT DrawGlyphRun(
 
 
 
-### <a name="using-color-fonts-with-win2d"></a>Uso dei tipi di carattere colore con Win2D
+### <a name="using-color-fonts-with-win2d"></a>Uso dei tipi di carattere a colori con Win2D
 
-Analogamente a Direct2D, le API di disegno del testo di Win2D non eseguono il rendering delle icone dei colori per impostazione predefinita. Per acconsentire esplicitamente al rendering del glifo dei colori, impostare il flag delle opzioni [EnableColorFont](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Text_CanvasDrawTextOptions.htm) nell'oggetto formato testo che l'app passa al metodo di disegno del testo. Nell'esempio di codice seguente viene illustrato come eseguire il rendering di una stringa in un tipo di carattere colore utilizzando Win2D:
+Analogamente a Direct2D, le API di disegno del testo Win2D non eseguono il rendering dei glifi a colori per impostazione predefinita. Per acconsentire esplicitamente al rendering dei glifi a colori, imposta il flag di opzioni [EnableColorFont](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Text_CanvasDrawTextOptions.htm) nell'oggetto formato testo che l'app passa al metodo di disegno del testo. L'esempio di codice seguente illustra come eseguire il rendering di una stringa in un tipo di carattere a colori usando Win2D:
 
 
 ```C++
@@ -225,16 +225,16 @@ args.DrawingSession.DrawText(
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Esempio di glifo colorato DirectWrite](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteColorGlyph)
+[DirectWrite di glifi colorati](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteColorGlyph)
 
 
 [**Interfaccia IDWriteFontFace4**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface4)
 
 
-[**Metodo IDWriteFactory4:: TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun)
+[**Metodo IDWriteFactory4::TranslateColorGlyphRun**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory4-translatecolorglyphrun)
 
 
-[**ID2D1DeviceContext4::D Metodo rawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md)
+[**Metodo ID2D1DeviceContext4::D rawText**](../direct2d/id2d1devicecontext4-drawtext-overload.md)
 
 
  

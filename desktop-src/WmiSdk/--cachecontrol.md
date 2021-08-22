@@ -1,8 +1,8 @@
 ---
-description: Classe è la classe base astratta per le classi utilizzate per determinare quando WMI deve rilasciare un oggetto Component Object Model (COM).
+description: Classe è la classe di base astratta per le classi utilizzate per determinare quando WMI deve rilasciare un oggetto Component Object Model (COM).
 ms.assetid: 32631610-8c0e-4f04-b0b2-62e5f8e23ef4
 ms.tgt_platform: multiple
-title: Classe __CacheControl
+title: __CacheControl classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: fe5358630a7ac5eb48751135d39c2fd998196bf7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 429e973d83e1f213b011998c75dfbfabd81fb7bb4921f0f8b9f61bcedd6080c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051099"
 ---
 # <a name="__cachecontrol-class"></a>\_\_Classe CacheControl
 
-La classe di sistema **\_ \_ CacheControl** è la classe di base astratta per le classi utilizzate per determinare quando WMI deve rilasciare un oggetto Component Object Model (com). Le istanze di questa classe non vengono mai create. La classe **\_ \_ CacheControl** si trova solo nello spazio dei nomi radice. Per ulteriori informazioni sull'utilizzo di questa classe, vedere [scaricamento di un provider](unloading-a-provider.md).
+La classe di sistema **\_ \_ CacheControl** è la classe di base astratta per le classi usate per determinare quando WMI deve rilasciare un oggetto Component Object Model (COM). Le istanze di questa classe non vengono mai create. La **\_ \_ classe CacheControl** si trova solo nello spazio dei nomi radice. Per altre informazioni sull'uso di questa classe, vedere [Scaricamento di un provider](unloading-a-provider.md).
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,11 +38,11 @@ class __CacheControl : __SystemClass
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ CacheControl** non definisce membri.
+La **\_ \_ classe CacheControl** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ CacheControl** deriva da [**\_ \_ SystemClass**](--systemclass.md).
+La **\_ \_ classe CacheControl** è derivata da [**\_ \_ SystemClass**](--systemclass.md).
 
 ## <a name="requirements"></a>Requisiti
 

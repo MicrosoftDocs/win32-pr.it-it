@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura di byte con etichetta definisce una coppia di bit con etichetta. L'etichetta della coppia di BIT con etichetta viene visualizzata quando viene rilevato un valore di proprietà byte specifico.
+description: La struttura LABELED \_ BYTE definisce una coppia BIT etichettata. L'etichetta della coppia BIT etichettata viene visualizzata quando viene rilevato un valore della proprietà byte specifico.
 ms.assetid: 6dc6a773-da75-4ffe-878f-b30ceef2acb1
-title: Struttura LABELED_BYTE (Netmon. h)
+title: LABELED_BYTE struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 4768e605892b9bfe2a3df67fbdea862f67dc1a16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05aa29942768c0c40816eafce112f12a95cd0a713bebe612d2e5ad32776a33a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494981"
 ---
-# <a name="labeled_byte-structure"></a>Struttura di \_ byte con etichetta
+# <a name="labeled_byte-structure"></a>Struttura LABELED \_ BYTE
 
-La struttura di **\_ byte con etichetta** definisce una coppia di bit con etichetta. L' **etichetta** della coppia di bit con etichetta viene visualizzata quando viene rilevato un valore di proprietà byte specifico.
+La **struttura LABELED \_ BYTE** definisce una coppia BIT etichettata. **L'etichetta** della coppia BIT etichettata viene visualizzata quando viene rilevato un valore della proprietà byte specifico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,13 +50,13 @@ Valore BYTE della proprietà che si desidera rilevare.
 **Etichetta**
 </dt> <dd>
 
-Descrizione testuale o etichetta visualizzata quando viene rilevato il valore specificato nel membro **value** .
+Descrizione testuale o etichetta visualizzata quando viene rilevato il valore specificato nel **membro** Value.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il membro **lpLabeledByteTable** della struttura [set](set.md) punta a una matrice di strutture **set** che definiscono uno o più membri **Label** delle coppie valore byte. Queste coppie vengono utilizzate quando si desidera visualizzare un'etichetta al posto di uno specifico valore BYTE trovato nel pacchetto del protocollo.
+Il **membro lpLabeledByteTable** della struttura [SET](set.md) punta a una matrice di strutture **SET** che definiscono uno o più membri **Label** delle coppie valore BYTE. Queste coppie vengono usate quando si vuole visualizzare un'etichetta al posto di un valore BYTE specifico presente nel pacchetto del protocollo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Il membro **lpLabeledByteTable** della struttura [set](set.md) punta a una matri
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

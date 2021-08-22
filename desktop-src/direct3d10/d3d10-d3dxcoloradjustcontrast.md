@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 09781c5c11560c3497a5af57528cf478f6259816
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 90c36ee9c414b6ae34058b255ad2e7a642f13ef49ee91b586ca974009d4e6b7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498491"
 ---
 # <a name="d3dxcoloradjustcontrast-function-d3dx10mathh"></a>Funzione D3DXColorAdjustContrast (D3DX10Math.h)
 
@@ -65,7 +65,7 @@ Puntatore a una struttura D3DXCOLOR di origine.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore di contrasto. Questo parametro interpola in modo lineare tra il 50% del grigio e il colore, pC. Non sono previsti limiti per il valore di c. Se questo parametro è zero, il colore restituito è il 50% grigio. Se questo parametro è 1, il colore restituito è il colore originale.
+Valore di contrasto. Questo parametro interpola in modo lineare tra la percentuale di grigio e il colore pC. Non sono previsti limiti al valore di c. Se questo parametro è zero, il colore restituito è la percentuale di grigio. Se questo parametro è 1, il colore restituito è il colore originale.
 
 </dd> </dl>
 

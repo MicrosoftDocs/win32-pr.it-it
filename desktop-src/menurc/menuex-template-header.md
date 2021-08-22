@@ -1,9 +1,9 @@
 ---
-title: Struttura MENUEX_TEMPLATE_HEADER
-description: Definisce l'intestazione per un modello di menu esteso. Questa definizione di struttura è solo per la spiegazione; non è presente in alcun file di intestazione standard.
+title: MENUEX_TEMPLATE_HEADER struttura
+description: Definisce l'intestazione per un modello di menu esteso. Questa definizione di struttura è solo a scopo di spiegazione. non è presente in alcun file di intestazione standard.
 ms.assetid: df763349-7127-482e-8613-74e68addde5d
 keywords:
-- Menu struttura MENUEX_TEMPLATE_HEADER e altre risorse
+- MENUEX_TEMPLATE_HEADER struttura menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: caa255ccdbe76c3959d9c730bcaa52ec07428742
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31e52661e04a036cf7a49791be96af002b801af0e0ed1c4b6ad3ddebf971c2c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119226121"
 ---
-# <a name="menuex_template_header-structure"></a>Struttura di intestazione del \_ modello menuex \_
+# <a name="menuex_template_header-structure"></a>Struttura MENUEX \_ TEMPLATE \_ HEADER
 
-Definisce l'intestazione per un modello di menu esteso. Questa definizione di struttura è solo per la spiegazione; non è presente in alcun file di intestazione standard.
+Definisce l'intestazione per un modello di menu esteso. Questa definizione di struttura è solo a scopo di spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct {
 **wVersion**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -55,11 +55,11 @@ Numero di versione del modello. Questo membro deve essere 1 per i modelli di men
 **wOffset**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Offset alla prima struttura dell' [**\_ \_ elemento del modello menuex**](menuex-template-item.md) , relativa alla fine del membro della struttura. Se la definizione del primo elemento segue immediatamente il membro **dwHelpId** , questo membro deve essere 4.
+Offset della prima struttura [**MENUEX \_ TEMPLATE \_ ITEM,**](menuex-template-item.md) rispetto alla fine di questo membro della struttura. Se la definizione del primo elemento segue immediatamente **il membro dwHelpId,** questo membro deve essere 4.
 
 </dd> <dt>
 
@@ -70,13 +70,13 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Identificatore della guida della barra dei menu.
+Identificatore della Guida della barra dei menu.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Un modello di menu esteso è costituito da una struttura di **\_ \_ intestazione del modello menuex** seguita da una o più strutture di [**\_ \_ elementi del modello menuex**](menuex-template-item.md) contigue. Le strutture degli **\_ \_ elementi del modello menuex** , che sono di lunghezza variabile, sono allineate ai limiti **DWORD** . Per creare un menu da un modello di menu esteso in memoria, usare la funzione [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta) .
+Un modello di menu esteso è costituito da **una struttura MENUEX \_ TEMPLATE \_ HEADER** seguita da una o più strutture [**MENUEX TEMPLATE \_ \_ ITEM**](menuex-template-item.md) contigue. Le **strutture MENUEX \_ TEMPLATE \_ ITEM,** di lunghezza variabile, sono allineate ai **limiti DWORD.** Per creare un menu da un modello di menu esteso in memoria, usare la [**funzione LoadMenuIndirect.**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,7 +99,7 @@ Un modello di menu esteso è costituito da una struttura di **\_ \_ intestazione
 [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 </dt> <dt>
 
-[**\_elemento del modello menuex \_**](menuex-template-item.md)
+[**VOCE DEL MODELLO \_ \_ MENUEX**](menuex-template-item.md)
 </dt> <dt>
 
 **Informazioni concettuali**

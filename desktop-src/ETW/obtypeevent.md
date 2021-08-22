@@ -1,5 +1,5 @@
 ---
-description: Rappresenta la classe del tipo di evento per gli eventi del tipo di oggetto correlati all'inizio e alla fine della raccolta dei dati.
+description: Rappresenta la classe del tipo di evento per gli eventi di tipo oggetto correlati all'inizio e alla fine della raccolta dati.
 ms.assetid: 16b21f61-e734-4f51-9b11-e507b5957107
 title: Classe ObTypeEvent
 ms.topic: reference
@@ -15,16 +15,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9d80d5fbe57565d64e9ea53587d7a2c3488e6cf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3659d89baa94da0c3161f7bcd6c9ff94d27efef467af8caafa70adfe1c4a7b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070052"
 ---
 # <a name="obtypeevent-class"></a>Classe ObTypeEvent
 
-Rappresenta la classe del tipo di evento per gli eventi del tipo di oggetto correlati all'inizio e alla fine della raccolta dei dati. Questo evento comporta il mapping dei valori di indice del tipo ai nomi dei tipi.
+Rappresenta la classe del tipo di evento per gli eventi di tipo oggetto correlati all'inizio e alla fine della raccolta dati. Questo evento comporta il mapping dei valori di indice del tipo ai nomi dei tipi.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -42,20 +42,20 @@ class ObTypeEvent : ObTrace
 
 ## <a name="members"></a>Members
 
-La classe **ObTypeEvent** dispone di questi tipi di membri:
+La **classe ObTypeEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ObTypeEvent** dispone di queste proprietà.
+La **classe ObTypeEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **ObjectType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -71,7 +71,7 @@ Tipo di oggetto.
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -84,10 +84,10 @@ Riservato.
 
 </dd> <dt>
 
-**TypeName**
+**Typename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,9 +106,9 @@ Nome del tipo.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

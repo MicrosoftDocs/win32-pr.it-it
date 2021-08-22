@@ -1,7 +1,7 @@
 ---
-description: Associa una testa video al controller video che lo include.
+description: Associa un'head video al controller video che lo include.
 ms.assetid: D072DF7C-D55B-4203-9FE5-B395D1EC1632
-title: Classe Msvm_VideoHeadOnController
+title: Msvm_VideoHeadOnController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 11065c7b7a9e23b786697c3d4f0dbd63e67d6b17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a184f8d07be87839ef6a4d438b87953128d16d5c91b9c5e461b11e3b1312c28c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068441"
 ---
-# <a name="msvm_videoheadoncontroller-class"></a>\_Classe MSVM VideoHeadOnController
+# <a name="msvm_videoheadoncontroller-class"></a>Classe Msvm \_ VideoHeadOnController
 
-Associa una testa video al controller video che lo include.
+Associa un'head video al controller video che lo include.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class Msvm_VideoHeadOnController : CIM_VideoHeadOnController
 
 ## <a name="members"></a>Members
 
-La **classe \_ VideoHeadOnController di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VideoHeadOnController** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VideoHeadOnController di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VideoHeadOnController** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,32 +60,32 @@ Tipo di dati: **[ **CIM \_ DisplayController**](/previous-versions//cc136810(v=v
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Controller video che include l'intestazione.
+Controller video che include l'head.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ VideoHead**](msvm-videohead.md)**
+Tipo di dati: **[ **Msvm \_ VideoHead**](msvm-videohead.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-L'intestazione del dispositivo video.
+Testa del dispositivo video.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ VideoHeadOnController di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ VideoHeadOnController** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,10 +93,10 @@ L'accesso alla **classe \_ VideoHeadOnController di MSVM** potrebbe essere limit
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -105,10 +105,10 @@ L'accesso alla **classe \_ VideoHeadOnController di MSVM** potrebbe essere limit
 
 <dl> <dt>
 
-[**\_VIDEOHEADONCONTROLLER CIM**](cim-videoheadoncontroller.md)
+[**CIM \_ VideoHeadOnController**](cim-videoheadoncontroller.md)
 </dt> <dt>
 
-[**\_VIDEOHEADONCONTROLLER CIM**](/previous-versions//cc136950(v=vs.85))
+[**CIM \_ VideoHeadOnController**](/previous-versions//cc136950(v=vs.85))
 </dt> <dt>
 
 [Classi video](video-classes.md)

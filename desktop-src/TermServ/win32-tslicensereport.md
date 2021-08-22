@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReport
-description: Fornisce istanze di Servizi Desktop remoto licenza di accesso client per utente (RDS \ 160; Report sull'utilizzo di licenze CAL per utente) generate nel server licenze Desktop remoto e metodi per le operazioni di generazione, recupero ed eliminazione dei report delle licenze.
+title: Win32_TSLicenseReport classe
+description: Fornisce istanze di Servizi Desktop remoto di accesso client per utente (Servizi Desktop remoto \ 160; Licenza CAL per utente) report sull'utilizzo generati nel server licenze Desktop remoto e metodi per le operazioni di generazione, recupero ed eliminazione dei report delle licenze.
 ms.assetid: 8d67f158-cda3-4cf4-a766-09d08c21c49e
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSLicenseReport Servizi Desktop remoto
-- Classe Win32_TSLicenseReport Servizi Desktop remoto, descritta
+- Win32_TSLicenseReport classe Servizi Desktop remoto
+- Win32_TSLicenseReport classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de997056222c1b525253f320f6fe191f017614f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93280c00cbd20993907901e1f9b8c16330863a47bddd4e08bc86d51b4b837233
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137834"
 ---
-# <a name="win32_tslicensereport-class"></a>Win32 \_ TSLicenseReport (classe)
+# <a name="win32_tslicensereport-class"></a>Classe \_ TSLicenseReport Win32
 
-Fornisce istanze di Servizi Desktop remoto report sull'utilizzo della licenza di accesso client per utente (RDS per utente CAL) generati nel server licenze Desktop remoto, nonché i metodi per le operazioni di generazione, recupero ed eliminazione dei report delle licenze.
+Fornisce le istanze dei report sull'utilizzo delle licenze CAL per utente di Servizi Desktop remoto per utente generati nel server licenze Desktop remoto e i metodi per la generazione, il recupero e l'eliminazione dei report delle licenze.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,27 +52,27 @@ class Win32_TSLicenseReport
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSLicenseReport** presenta questi tipi di membri:
+La **classe \_ Win32 TSLicenseReport** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSLicenseReport** presenta questi metodi.
+La **classe \_ Win32 TSLicenseReport** include questi metodi.
 
 
 
 | Metodo                                                                                                         | Descrizione                                                                                                                                                                                     |
 |:---------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DeleteReport**](deletereport-win32-tslicensereport.md)                                                     | Elimina un oggetto report nel server licenze Desktop remoto. Non si tratta di un metodo statico.<br/>                                                                                           |
+| [**DeleteReport**](deletereport-win32-tslicensereport.md)                                                     | Elimina un oggetto report nel server Desktop remoto licenze. Non si tratta di un metodo statico.<br/>                                                                                           |
 | [**FetchReportEntries**](fetchreportentries-win32-tslicensereport.md)                                         | Recupera le voci nell'oggetto report.<br/>                                                                                                                                              |
-| [**FetchReportFailedPerUserEntries**](fetchreportfailedperuserentries-win32-tslicensereport.md)               | Recupera i dettagli relativi alle licenze CAL per utente non riuscite Servizi Desktop remoto per utente dal report.<br/>                                                             |
-| [**FetchReportFailedPerUserSummaryEntries**](fetchreportfailedperusersummaryentries-win32-tslicensereport.md) | Recupera le informazioni di riepilogo di Servizi Desktop remoto non riuscite per licenze CAL per utente per utente dal report.<br/>                                                 |
-| [**FetchReportPerDeviceEntries**](fetchreportperdeviceentries-win32-tslicensereport.md)                       | Recupera le informazioni sulle licenze di accesso client per dispositivo di Servizi Desktop remoto emesse dal report.<br/>                                                     |
+| [**FetchReportFailedPerUserEntries**](fetchreportfailedperuserentries-win32-tslicensereport.md)               | Recupera dal report i dettagli Servizi Desktop remoto licenze CAL (Client Access License) per utente per utente non riuscite.<br/>                                                             |
+| [**FetchReportFailedPerUserSummaryEntries**](fetchreportfailedperusersummaryentries-win32-tslicensereport.md) | Recupera dal report le informazioni di riepilogo Servizi Desktop remoto licenze CAL client per utente non riuscite .<br/>                                                 |
+| [**FetchReportPerDeviceEntries**](fetchreportperdeviceentries-win32-tslicensereport.md)                       | Recupera dal report le informazioni Servizi Desktop remoto licenze CAL per dispositivo rilasciate per ogni dispositivo.<br/>                                                     |
 | [**FetchReportSummaryEntries**](win32-tslicensereport-fetchreportsummaryentries.md)                           | Recupera i riepiloghi delle licenze dall'oggetto report.<br/>                                                                                                                                  |
-| [**GenerateReport**](generatereport-win32-tslicensereport.md)                                                 | Questo metodo non è supportato.<br/> **Windows server 2008 R2 e Windows server 2008:** Genera un report di utilizzo delle licenze per utente corrente nel server licenze Desktop remoto.<br/> |
-| [**GenerateReportEx**](generatereportex-win32-tslicensereport.md)                                             | Genera un report di utilizzo delle licenze per utente corrente nel server licenze Desktop remoto.<br/>                                                                                              |
+| [**GenerateReport**](generatereport-win32-tslicensereport.md)                                                 | Questo metodo non è supportato.<br/> **Windows Server 2008 R2 e Windows Server 2008:** Genera un report corrente sull'utilizzo delle licenze per utente nel server Desktop remoto licenze.<br/> |
+| [**GenerateReportEx**](generatereportex-win32-tslicensereport.md)                                             | Genera un report corrente sull'utilizzo delle licenze per utente nel server Desktop remoto licenze.<br/>                                                                                              |
 
 
 
@@ -80,20 +80,20 @@ La classe **Win32 \_ TSLicenseReport** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSLicenseReport** dispone di queste proprietà.
+La **classe \_ Win32 TSLicenseReport** ha queste proprietà.
 
 <dl> <dt>
 
 **FileName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome del report.
@@ -103,108 +103,108 @@ Nome del report.
 **GenerationDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[DateTime](/windows/desktop/WmiSdk/datetime)**
+Tipo di dati: **[DATETIME](/windows/desktop/WmiSdk/datetime)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora di generazione del report di licenze Desktop remoto.
+Data e ora di generazione dei report di Licenze Desktop remoto.
 
 </dd> <dt>
 
 **InstalledLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Questa proprietà non è supportata.
 
-**Windows server 2008 R2 e Windows server 2008:** Numero di licenze CAL per utente di Servizi Desktop remoto installate.
+**Windows Server 2008 R2 e Windows Server 2008:** Numero di licenze CAL Per Utente di Servizi Desktop remoto installate.
 
 </dd> <dt>
 
 **LicenseUsageCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Questa proprietà non è supportata.
 
-**Windows server 2008 R2 e Windows server 2008:** Numero di licenze CAL per utente per utente attualmente in uso.
+**Windows Server 2008 R2 e Windows Server 2008:** Numero di licenze CAL Servizi Desktop remoto per utente attualmente in uso.
 
 </dd> <dt>
 
 **ScopeType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Questa proprietà non è supportata.
 
-**Windows server 2008 R2 e Windows server 2008:** Tipo di ambito del report di licenze Desktop remoto.
+**Windows Server 2008 R2 e Windows Server 2008:** Tipo di ambito del report licenze Desktop remoto.
 
 </dd> <dt>
 
-**ScopeValue**
+**Valore ambito**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Questa proprietà non è supportata.
 
-**Windows server 2008 R2 e Windows server 2008:** Valore dell'ambito del report di licenze Desktop remoto.
+**Windows Server 2008 R2 e Windows Server 2008:** Valore dell'ambito del report di Licenze Desktop remoto.
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione del report di licenze Desktop remoto.
+Versione del report di Licenze Desktop remoto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I report generati tramite WMI vengono visualizzati in gestione licenze Desktop remoto. Anche i report eliminati tramite WMI vengono eliminati da gestione licenze Desktop remoto.
+I report generati tramite WMI vengono visualizzati in Gestione licenze Desktop remoto. Anche i report eliminati tramite WMI vengono eliminati da Gestione licenze Desktop remoto.
 
-Per utilizzare questa classe, è necessario essere membri del gruppo Administrators.
+Per utilizzare questa classe, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -215,7 +215,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -224,16 +224,16 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSIssuedLicense Win32**](win32-tsissuedlicense.md)
+[**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReportEntry Win32**](win32-tslicensereportentry.md)
+[**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

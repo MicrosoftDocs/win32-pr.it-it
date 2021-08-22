@@ -1,19 +1,19 @@
 ---
-title: Riferimento al messaggio di input del puntatore
+title: Informazioni di riferimento sul messaggio di input del puntatore
 description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le notifiche e i messaggi di input del puntatore.
 ms.assetid: B3FAE463-3B1D-412C-9698-8366D6A63806
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 165121acceb974bbfcf46e81a0d11135022df8f4
-ms.sourcegitcommit: f2fe9d9bd65333b74f2af8e30eddbb1643b40c8f
+ms.openlocfilehash: f1de34d28ab2d25ea0875a1c1eac2a5c7d558ff415889fda254403d69909a820
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "104398458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119231391"
 ---
-# <a name="pointer-input-message-reference"></a>Riferimento al messaggio di input del puntatore
+# <a name="pointer-input-message-reference"></a>Informazioni di riferimento sul messaggio di input del puntatore
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [notifiche e i messaggi di input del puntatore](messages-and-notifications-portal.md).
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per i messaggi [di input puntatore e le notifiche](messages-and-notifications-portal.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,12 +21,12 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 | Argomento                                   | Descrizione                                                                                                                                                                                                                        |
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Costanti](constants.md)<br/>   | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [i messaggi di input del puntatore e](messages-and-notifications-portal.md) le costanti di notifica. <br/>                                                              |
-| [Enumerazioni](enums.md)<br/>    | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [i messaggi di input del puntatore e](messages-and-notifications-portal.md) le enumerazioni delle notifiche. <br/>                                                           |
-| [Funzioni](functions.md)<br/>   | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le funzioni di [notifica e messaggi di input del puntatore](messages-and-notifications-portal.md) .<br/>                                                               |
-| [Macro](macros.md)<br/>         | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [i messaggi di input del puntatore e](messages-and-notifications-portal.md) le macro di notifiche per il recupero di informazioni dai parametri dei messaggi di input del puntatore.<br/> |
-| [Messaggi](messages.md)<br/>     | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [notifiche e i messaggi di input](messages-and-notifications-portal.md)specifici del puntatore.<br/>                                                                |
-| [Strutture](structures.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le strutture di [notifiche e messaggi di input del puntatore](messages-and-notifications-portal.md) .<br/>                                                              |
+| [Costanti](constants.md)<br/>   | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le costanti [Pointer Input Messages and Notifications.](messages-and-notifications-portal.md) <br/>                                                              |
+| [Enumerazioni](enums.md)<br/>    | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni [Messaggi di input puntatore](messages-and-notifications-portal.md) e Notifiche. <br/>                                                           |
+| [Funzioni](functions.md)<br/>   | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le funzioni [Messaggi di input puntatore e Notifiche.](messages-and-notifications-portal.md)<br/>                                                               |
+| [Macro](macros.md)<br/>         | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le macro Messaggi di input puntatore e [Notifiche](messages-and-notifications-portal.md) per il recupero di informazioni dai parametri del messaggio di input del puntatore.<br/> |
+| [Messaggi](messages.md)<br/>     | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per i messaggi e le notifiche di [input del puntatore specifici.](messages-and-notifications-portal.md)<br/>                                                                |
+| [Strutture](structures.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le strutture [Pointer Input Messages and Notifications.](messages-and-notifications-portal.md)<br/>                                                              |
 
 
 
@@ -36,7 +36,7 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 <dl> <dt>
 
-[Notifiche e messaggi di input del puntatore](messages-and-notifications-portal.md)
+[Messaggi e notifiche di input del puntatore](messages-and-notifications-portal.md)
 </dt> </dl>
 
  

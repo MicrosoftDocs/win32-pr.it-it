@@ -1,9 +1,9 @@
 ---
 title: Elemento Delay (bootTriggerType)
-description: Specifica l'intervallo di tempo tra il momento in cui il sistema viene avviato e l'avvio dell'attività.
+description: Specifica l'intervallo di tempo tra l'avvio del sistema e l'avvio dell'attività.
 ms.assetid: 2a583069-ad38-43b4-bcf2-f7c9101f1927
 keywords:
-- Utilità di pianificazione elemento Delay
+- Elemento Delay Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1ab28da8e9c739d3deff52572fe6a5d37f862119
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91789b22b992af163e9676ef156a2a72f4316ac49b9b47b30ae5599446918bed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334601"
 ---
 # <a name="delay-boottriggertype-element"></a>Elemento Delay (bootTriggerType)
 
-Specifica l'intervallo di tempo tra il momento in cui il sistema viene avviato e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni,' t'è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per ulteriori informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
+Specifica l'intervallo di tempo tra l'avvio del sistema e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni, 'T' è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per altre informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
 
 ``` syntax
 <xs:element name="Delay"
@@ -30,7 +30,7 @@ Specifica l'intervallo di tempo tra il momento in cui il sistema viene avviato e
  />
 ```
 
-L'elemento **delay** viene definito dal tipo complesso [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md) .
+**L'elemento Delay** è definito dal [**tipo complesso bootTriggerType.**](taskschedulerschema-boottriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,15 +38,15 @@ L'elemento **delay** viene definito dal tipo complesso [**bootTriggerType**](tas
 
 | Elemento                                                                     | Derivato da                                                               | Descrizione                                                                  |
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando viene avviato il sistema.<br/> |
+| [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md) | Specifica un trigger che avvia un'attività all'avvio del sistema.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il ritardo del trigger dell'evento viene specificato dalla proprietà [**BootTrigger. Delay**](boottrigger-delay.md) .
+Per lo sviluppo di script, il ritardo del trigger di evento viene specificato dalla [**proprietà BootTrigger.Delay.**](boottrigger-delay.md)
 
-Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dalla proprietà [**IBootTrigger::D Elay**](/windows/desktop/api/taskschd/nf-taskschd-iboottrigger-get_delay) .
+Per lo sviluppo in C++, il ritardo del trigger di evento viene specificato dalla proprietà [**IBootTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-iboottrigger-get_delay)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dal
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -63,7 +63,7 @@ Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dal
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

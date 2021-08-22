@@ -1,9 +1,9 @@
 ---
-title: Elemento Opcode (OpcodeListType)
-description: Contiene un valore numerico che identifica l'attività o un punto all'interno di un'attività che l'applicazione stava eseguendo durante la generazione dell'evento (ad esempio, l'inizializzazione o la chiusura).
+title: Elemento opcode (OpcodeListType)
+description: Contiene un valore numerico che identifica l'attività o un punto all'interno di un'attività eseguita dall'applicazione quando ha generato l'evento , ad esempio inizializzazione o chiusura.
 ms.assetid: 8c5cfbd3-6a74-452c-a12f-41d663426e2c
 keywords:
-- opcode element EventLog
+- Elemento opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e9d02b77b4a36bac26d52d7bf8d849eab8731d27
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c10d7ae91d29f3bee72ef43b11b9f30f6229d4a43df4ace213d943b333bffd3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136244"
 ---
-# <a name="opcode-opcodelisttype-element"></a>Elemento Opcode (OpcodeListType)
+# <a name="opcode-opcodelisttype-element"></a>Elemento opcode (OpcodeListType)
 
-Contiene un valore numerico che identifica l'attività o un punto all'interno di un'attività che l'applicazione stava eseguendo durante la generazione dell'evento (ad esempio, l'inizializzazione o la chiusura).
+Contiene un valore numerico che identifica l'attività o un punto all'interno di un'attività eseguita dall'applicazione quando ha generato l'evento , ad esempio inizializzazione o chiusura.
 
 ``` syntax
 <xs:element name="opcode"
@@ -30,7 +30,7 @@ Contiene un valore numerico che identifica l'attività o un punto all'interno di
  />
 ```
 
-L'elemento **OpCode** è definito dal tipo complesso [**OpcodeListType**](eventmanifestschema-opcodelisttype-complextype.md) .
+**L'elemento opcode** è definito dal [**tipo complesso OpcodeListType.**](eventmanifestschema-opcodelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **OpCode** è definito dal tipo complesso [**OpcodeListType**](eventm
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,13 +50,13 @@ L'elemento **OpCode** è definito dal tipo complesso [**OpcodeListType**](eventm
 **Elementi padre**
 </dt> <dt>
 
-[**OpCodes (TaskType)**](eventmanifestschema-opcodes-tasktype-element.md)
+[**opcodes (TaskType)**](eventmanifestschema-opcodes-tasktype-element.md)
 </dt> <dt>
 
-[**OpCodes (ProviderType)**](eventmanifestschema-opcodes-providertype-element.md)
+[**opcodes (ProviderType)**](eventmanifestschema-opcodes-providertype-element.md)
 </dt> <dt>
 
-[**OpCodes (MetadataType)**](eventmanifestschema-opcodes-metadatatype-element.md)
+[**opcodes (MetadataType)**](eventmanifestschema-opcodes-metadatatype-element.md)
 </dt> </dl>
 
  

@@ -1,51 +1,51 @@
 ---
 title: Altri ruoli oggetto e metodi supportati (riferimento agli elementi dell'interfaccia utente MSAA)
-description: Questo argomento fornisce informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente.
+description: In questo argomento vengono fornite informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente.
 ms.assetid: 0c3a3ccf-f02a-4aca-9380-a13774598a19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f17e8573142a57e0acf08980895fdae3ea6d1841
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d4e29a4ef0345513912c8ad08e3a322e01b56bd3245291e9def64a49b35ac22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052569"
 ---
 # <a name="other-object-roles-and-supported-methods-msaa-ui-element-reference"></a>Altri ruoli oggetto e metodi supportati (riferimento agli elementi dell'interfaccia utente MSAA)
 
-Questo argomento fornisce informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente. Ogni ruolo oggetto include un elenco dei metodi e delle proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) supportati per il ruolo oggetto. Mentre altri argomenti documentano i metodi e le proprietà **IAccessible** supportati per gli elementi dell'interfaccia utente, questo argomento elenca i metodi e le proprietà che è possibile aspettarsi di essere supportati per un ruolo oggetto specifico. Molti degli elementi dell'interfaccia utente che potrebbero avere uno dei ruoli elencati di seguito sono in genere visibili nei browser.
+In questo argomento vengono fornite informazioni sui ruoli oggetto non inclusi negli argomenti precedenti per gli elementi dell'interfaccia utente. Ogni ruolo oggetto include un elenco dei metodi e delle proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) supportati per il ruolo oggetto. Mentre altri argomenti documentano i metodi e le proprietà **IAccessible** supportati per gli elementi dell'interfaccia utente, questo argomento elenca i metodi e le proprietà che ci si può aspettare di essere supportati per un particolare ruolo oggetto. Molti degli elementi dell'interfaccia utente che potrebbero avere uno dei ruoli elencati di seguito sono in genere visibili nei browser.
 
 > [!Note]  
 > Usare questo argomento come linea guida. È consigliabile usare gli strumenti Microsoft Active Accessibility per verificare il comportamento previsto per un singolo ruolo oggetto.
 
  
 
-Nella tabella seguente sono elencati altri ruoli oggetto supportati Oleacc.dll.
+Nella tabella seguente sono elencati i ruoli oggetto aggiuntivi Oleacc.dll supportati.
 
 
 
 | &nbsp; |  &nbsp; |
 |-------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**AVVISO \_ DI SISTEMA DEL \_ RUOLO**](/windows)                           | [**ELENCO \_ A DISCESA DEL SISTEMA DEI \_ RUOLI**](/windows)       |
-| [**APPLICAZIONE \_ DI SISTEMA DEL \_ RUOLO**](/windows)               | [**EQUAZIONE \_ DEL SISTEMA \_ DEI RUOLI**](/windows)       |
-| [**BORDO \_ DEL SISTEMA DEL \_ RUOLO**](/windows)                         | [**IMMAGINE \_ DEL SISTEMA DEI \_ RUOLI**](/windows)         |
-| [**PULSANTE \_ SISTEMA \_ RUOLODROPDOWN**](/windows)         | [**GUIDA \_ AL SISTEMA DEI \_ RUOLIBALLOON**](/windows) |
-| [**PULSANTE \_ SISTEMA \_ RUOLODROPDOWNGRID**](/windows) | [**INDIRIZZO \_ IP DEL SISTEMA DEL \_ RUOLO**](/windows)     |
-| [**PULSANTE \_ SISTEMA \_ RUOLOMENU**](/windows)                 | [**COLLEGAMENTO \_ AL SISTEMA DEL \_ RUOLO**](/windows)               |
-| [**CELLA \_ DI SISTEMA DEL \_ RUOLO**](/windows)                             | [**RIQUADRO \_ SISTEMA \_ RUOLO**](/windows)               |
-| [**CARATTERE \_ DI SISTEMA DEL \_ RUOLO**](/windows)                   | [**ROLE \_ SYSTEM \_ ROW**](/windows)                 |
-| [**GRAFICO \_ DI SISTEMA DEI \_ RUOLI**](/windows)                           | [**ROLE \_ SYSTEM \_ ROWHEADER**](/windows)     |
-| [**OROLOGIO \_ DEL SISTEMA DEI \_ RUOLI**](/windows)                           | [**SEPARATORE \_ DI SISTEMA DEI \_ RUOLI**](/windows)     |
-| [**COLONNA \_ DI SISTEMA DEL \_ RUOLO**](/windows)                         | [**SUONO \_ DEL SISTEMA DEL \_ RUOLO**](/windows)             |
-| [**DIAGRAMMA \_ SISTEMA RUOLO \_**](/windows)                       | [**PULSANTE \_ DI DIVISIONE DEL SISTEMA DEL \_ RUOLO**](/windows) |
+| [**AVVISO DEL \_ SISTEMA DEL \_ RUOLO**](/windows)                           | [**ROLE \_ SYSTEM \_ DROPLIST**](/windows)       |
+| [**APPLICAZIONE DEL \_ SISTEMA RUOLO \_**](/windows)               | [**EQUAZIONE \_ DEL SISTEMA \_ DI RUOLI**](/windows)       |
+| [**BORDO DEL \_ SISTEMA \_ DI RUOLI**](/windows)                         | [**IMMAGINE DEL \_ SISTEMA \_ RUOLO**](/windows)         |
+| [**ROLE \_ SYSTEM \_ BUTTONDROPDOWN**](/windows)         | [**GUIDA \_ DEL SISTEMA DEI \_ RUOLIBALLOON**](/windows) |
+| [**PULSANTE \_ SISTEMA \_ RUOLODROPDOWNGRID**](/windows) | [**ROLE \_ SYSTEM \_ IPADDRESS**](/windows)     |
+| [**ROLE \_ SYSTEM \_ BUTTONMENU**](/windows)                 | [**COLLEGAMENTO SISTEMA \_ \_ RUOLO**](/windows)               |
+| [**CELLA \_ DEL SISTEMA \_ RUOLO**](/windows)                             | [**RIQUADRO \_ SISTEMA \_ RUOLO**](/windows)               |
+| [**ROLE \_ SYSTEM \_ CHARACTER**](/windows)                   | [**ROLE \_ SYSTEM \_ ROW**](/windows)                 |
+| [**ROLE \_ SYSTEM \_ CHART**](/windows)                           | [**ROLE \_ SYSTEM \_ ROWHEADER**](/windows)     |
+| [**ROLE \_ SYSTEM \_ CLOCK**](/windows)                           | [**ROLE \_ SYSTEM \_ SEPARATOR**](/windows)     |
+| [**ROLE \_ SYSTEM \_ COLUMN**](/windows)                         | [**SUONO \_ DEL SISTEMA DEL \_ RUOLO**](/windows)             |
+| [**DIAGRAMMA DEL \_ SISTEMA DI \_ RUOLI**](/windows)                       | [**RUOLO \_ SISTEMA \_ SPLITBUTTON**](/windows) |
 | [**ROLE \_ SYSTEM \_ DIAL**](/windows)                             | [**TABELLA \_ DI SISTEMA DEI \_ RUOLI**](/windows)             |
-| [**DOCUMENTO \_ DI SISTEMA DEL \_ RUOLO**](/windows)                     | [**SPAZIO \_ VUOTO DEL SISTEMA DEI \_ RUOLI**](/windows)   |
+| [**DOCUMENTO \_ DI SISTEMA DEL \_ RUOLO**](/windows)                     | [**SPAZIO \_ VUOTO DEL SISTEMA DI \_ RUOLI**](/windows)   |
 
 
 
  
 
-## <a name="role_system_alert"></a>AVVISO \_ DI SISTEMA DEL \_ RUOLO
+## <a name="role_system_alert"></a>AVVISO DEL \_ SISTEMA DEL \_ RUOLO
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ALERT**](object-roles.md).
 
@@ -55,9 +55,9 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ALERT**](obj
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_application"></a>APPLICAZIONE \_ DI SISTEMA DEL \_ RUOLO
+## <a name="role_system_application"></a>APPLICAZIONE DEL \_ SISTEMA RUOLO \_
 
-Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ APPLICATION**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ APPLICATION.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -67,7 +67,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ APPLICATION*
 -   get \_ accChild
 -   get \_ accChildCount
 -   get \_ accFocus
--   ottenere \_ accHelp
+-   get \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -75,9 +75,9 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ APPLICATION*
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_border"></a>BORDO \_ DEL SISTEMA DEL \_ RUOLO
+## <a name="role_system_border"></a>BORDO DEL \_ SISTEMA \_ DI RUOLI
 
-Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BORDER**](object-roles.md).
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BORDER.**](object-roles.md)
 
 **Proprietà e metodi supportati**
 
@@ -87,7 +87,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BORDER**](ob
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_buttondropdown"></a>PULSANTE \_ SISTEMA \_ RUOLODROPDOWN
+## <a name="role_system_buttondropdown"></a>ROLE \_ SYSTEM \_ BUTTONDROPDOWN
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONDROPDOWN**](object-roles.md).
 
@@ -101,7 +101,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONDROPDO
 -   get \_ accChildCount
 -   get \_ accDefaultAction
 -   get \_ accFocus
--   ottenere \_ accHelp
+-   get \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -123,7 +123,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ BUTTONDROPDO
 -   get \_ accChildCount
 -   get \_ accDefaultAction
 -   get \_ accFocus
--   ottenere \_ accHelp
+-   get \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -211,7 +211,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CHART.**](ob
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_clock"></a>OROLOGIO \_ DEL SISTEMA DEL \_ RUOLO
+## <a name="role_system_clock"></a>ROLE \_ SYSTEM \_ CLOCK
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ CLOCK**](object-roles.md).
 
@@ -382,7 +382,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ HELPBALLOON*
 -   get \_ accState
 -   get \_ accValue
 
-## <a name="role_system_ipaddress"></a>ROLE \_ SYSTEM \_ IPADDRESS
+## <a name="role_system_ipaddress"></a>INDIRIZZO \_ IP DEL SISTEMA DEL \_ RUOLO
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ IPADDRESS**](object-roles.md).
 
@@ -394,7 +394,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ IPADDRESS**]
 -   get \_ accChild
 -   get \_ accChildCount
 -   get \_ accFocus
--   get \_ accHelp
+-   ottenere \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -403,9 +403,9 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ IPADDRESS**]
 -   get \_ accState
 -   get \_ accValue
 
-## <a name="role_system_link"></a>COLLEGAMENTO SISTEMA \_ \_ RUOLO
+## <a name="role_system_link"></a>COLLEGAMENTO \_ AL SISTEMA DEL \_ RUOLO
 
-Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ LINK.**](object-roles.md)
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ LINK**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -437,7 +437,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ PANE**](obje
 -   get \_ accChild
 -   get \_ accChildCount
 -   get \_ accFocus
--   get \_ accHelp
+-   ottenere \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -447,7 +447,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ PANE**](obje
 
 ## <a name="role_system_row"></a>ROLE \_ SYSTEM \_ ROW
 
-Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ROW.**](object-roles.md)
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ROW**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -486,7 +486,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ ROWHEADER**]
 -   get \_ accState
 -   get \_ accValue
 
-## <a name="role_system_separator"></a>ROLE \_ SYSTEM \_ SEPARATOR
+## <a name="role_system_separator"></a>SEPARATORE \_ DI SISTEMA DEI \_ RUOLI
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SEPARATOR**](object-roles.md).
 
@@ -500,7 +500,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SEPARATOR**]
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_sound"></a>SUONO \_ DEL SISTEMA DEL \_ RUOLO
+## <a name="role_system_sound"></a>SUONO \_ DEL SISTEMA DEI \_ RUOLI
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SOUND**](object-roles.md).
 
@@ -511,7 +511,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SOUND**](obj
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_splitbutton"></a>RUOLO \_ SISTEMA \_ SPLITBUTTON
+## <a name="role_system_splitbutton"></a>ROLE \_ SYSTEM \_ SPLITBUTTON
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SPLITBUTTON**](object-roles.md).
 
@@ -522,7 +522,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SPLITBUTTON*
 -   accLocation
 -   accNavigate
 -   get \_ accDefaultAction
--   get \_ accHelp
+-   ottenere \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -532,7 +532,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ SPLITBUTTON*
 
 ## <a name="role_system_table"></a>TABELLA \_ DI SISTEMA DEI \_ RUOLI
 
-Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ TABLE.**](object-roles.md)
+Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ TABLE**](object-roles.md).
 
 **Proprietà e metodi supportati**
 
@@ -544,7 +544,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ TABLE.**](ob
 -   get \_ accChildCount
 -   get \_ accDescription
 -   get \_ accFocus
--   get \_ accHelp
+-   ottenere \_ accHelp
 -   get \_ accHelpTopic
 -   get \_ accKeyboardShortcut
 -   get \_ accName
@@ -552,7 +552,7 @@ Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ TABLE.**](ob
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_whitespace"></a>SPAZIO \_ VUOTO DEL SISTEMA DI \_ RUOLI
+## <a name="role_system_whitespace"></a>SPAZIO \_ VUOTO DEL SISTEMA DEI \_ RUOLI
 
 Per altre informazioni su questo ruolo, vedere [**ROLE \_ SYSTEM \_ WHITESPACE**](object-roles.md).
 
