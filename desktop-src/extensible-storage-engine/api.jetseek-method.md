@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSeek'
-title: API. JetSeek, metodo
+description: Altre informazioni sul metodo Api.JetSeek
+title: Metodo Api.JetSeek
 TOCTitle: 'JetSeek method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSeek(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.SeekGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetseek(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85c8c61bd4e56b342b33d26f22ae3946967640e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 088a8a8e1fdf968a6a970658257bace3ab42ab65a04a7b39c7a4c57bda6f3741
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118783804"
 ---
-# <a name="apijetseek-method"></a>API. JetSeek, metodo
+# <a name="apijetseek-method"></a>Metodo Api.JetSeek
 
-Posiziona in modo efficiente un cursore in una voce di indice che corrisponde ai criteri di ricerca specificati dalla chiave di ricerca in tale cursore e alla disuguaglianza specificata. È necessario che una chiave di ricerca sia stata costruita in precedenza utilizzando [JetMakeKey (JET_SESID, JET_TABLEID, \[ \] , Int32, MakeKeyGrbit)](./api.jetmakekey-method.md). Vedere anche [TrySeek (JET_SESID, JET_TABLEID, SeekGrbit)](./api.tryseek-method.md).
+Posiziona in modo efficiente un cursore in una voce di indice che corrisponde ai criteri di ricerca specificati dalla chiave di ricerca in tale cursore e dalla disuguaglianza specificata. Una chiave di ricerca deve essere stata costruita in precedenza usando [JetMakeKey(JET_SESID, JET_TABLEID, \[ \] , Int32, MakeKeyGrbit)](./api.jetmakekey-method.md). Vedere anche [TrySeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.tryseek-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,27 +68,27 @@ public static JET_wrn JetSeek(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da posizionare.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SeekGrbit](./seekgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SeekGrbit](./seekgrbit-enumeration.md)  
     
     Opzioni di ricerca.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Avviso ESENT.  
 
 ## <a name="see-also"></a>Vedi anche
@@ -97,6 +97,6 @@ Avviso ESENT.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,24 +4,24 @@ ms.assetid: 64fcd03f-8e0a-498d-82ea-0c69be0a3886
 title: JobCollateAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e75eb21fcd518f0fda4edd4c3c4eff721a6a5b17
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4c5e9adc0b6e9682f3c67f1bc8f5ef46c5e272c434968c3c1490e474b7edc0b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971310"
 ---
 # <a name="jobcollatealldocuments"></a>JobCollateAllDocuments
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di confronto dell'output. Tutti i documenti in ogni singolo processo vengono fascicolati. DocumentCollate e JobCollateAlldocuments si escludono a vicenda. Il comportamento e l'implementazione di se vengono implementate entrambe o solo una di queste parole chiave vengono lasciati al driver.
+Descrive le caratteristiche di confronto dell'output. Tutti i documenti in ogni singolo processo vengono fascicolati. DocumentCollate e JobCollateAlldocuments si escludono a vicenda. Il comportamento e l'implementazione di se vengono implementate entrambe o solo una di queste parole chiave viene lasciata al driver.
 
 Di seguito sono riportate le regole da seguire per l'implementazione di Collate.
 
 ## <a name="element-definition-and-rules"></a>Definizione e regole degli elementi
 
-È prima necessario seguire le regole per JobCollateAllDocument e quindi applicare le regole per DocumentCollate per il funzionamento degli scenari. Si noti che in un'impostazione di conversione da PrintTicket a Devmode, in cui JobCollateAllDocuments non è supportato dal driver, è compito del driver scegliere il comportamento appropriato da adottare (JobCollateAllDocuments = ON o OFF). Inoltre, la scelta può essere modificata a seconda delle altre impostazioni di PrintTicket.
+È prima necessario seguire le regole per JobCollateAllDocument e quindi applicare le regole per DocumentCollate per il funzionamento degli scenari. Si noti che in un'impostazione di conversione da PrintTicket a Devmode, in cui JobCollateAllDocuments non è supportata dal driver, è compito del driver scegliere il comportamento appropriato da adottare (JobCollateAllDocuments = ON o OFF). Inoltre, la scelta può essere modificata a seconda delle altre impostazioni di PrintTicket.
 
 ### <a name="jobcollatealldocuments"></a>JobCollateAllDocuments
 

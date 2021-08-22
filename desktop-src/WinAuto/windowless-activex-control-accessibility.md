@@ -1,6 +1,6 @@
 ---
 title: Accessibilità dei controlli ActiveX finestra
-description: Questa sezione descrive come usare l'Windows API Accessibilità per garantire che i controlli ActiveX Microsoft senza finestra siano accessibili.
+description: Questa sezione descrive come usare il Windows API Accessibilità per garantire che i controlli ActiveX Microsoft senza finestra siano accessibili.
 ms.assetid: 93CBCF20-DADF-4A63-BE60-F2A0D8810C62
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ ms.locfileid: "118563456"
 ---
 # <a name="windowless-activex-control-accessibility"></a>Accessibilità dei controlli ActiveX finestra
 
-Questa sezione descrive come usare l'Windows API Accessibilità per garantire che i controlli ActiveX Microsoft senza finestra siano accessibili.
+Questa sezione descrive come usare il Windows API Accessibilità per garantire che i controlli ActiveX Microsoft senza finestra siano accessibili.
 
-Windows 8 include nuove interfacce Windows API Accessibilità che semplificano l'attività di implementazione dell'accessibilità per i controlli ActiveX finestra. L'API include interfacce implementate in un controllo senza finestra e nel contenitore di controlli, consentendo al controllo senza finestra e al relativo contenitore di lavorare insieme per fornire informazioni sull'accessibilità sul controllo senza finestra. L'API supporta gli scenari seguenti:
+Windows 8 include nuove interfacce Windows API Accessibilità che semplificano l'attività di implementazione dell'accessibilità per i controlli ActiveX finestra. L'API include interfacce implementate in un controllo senza finestra e nel contenitore di controlli, consentendo al controllo senza finestra e al relativo contenitore di funzionare insieme per fornire informazioni di accessibilità sul controllo senza finestra. L'API supporta gli scenari seguenti:
 
--   Microsoft Active Accessibility controlli senza finestra ospitati in un Microsoft Active Accessibility contenitore di controlli.
--   Microsoft Active Accessibility controlli senza finestra ospitati in un contenitore di controlli Automazione interfaccia utente Microsoft.
--   Automazione interfaccia utente controlli senza finestra ospitati in un Microsoft Active Accessibility contenitore di controlli.
--   Automazione interfaccia utente controlli senza finestra ospitati in un Automazione interfaccia utente contenitore di controlli.
+-   Microsoft Active Accessibility controlli senza finestra ospitati in un contenitore Microsoft Active Accessibility di controllo.
+-   Microsoft Active Accessibility controlli senza finestra ospitati in un contenitore di Automazione interfaccia utente Microsoft.
+-   Automazione interfaccia utente controlli senza finestra ospitati in un contenitore Microsoft Active Accessibility di controllo.
+-   Automazione interfaccia utente controlli senza finestra ospitati in un contenitore Automazione interfaccia utente di controllo.
 
-Nella tabella seguente sono elencate le interfacce che supportano ActiveX e identificano gli oggetti che implementano le interfacce.
+Nella tabella seguente sono elencate le interfacce che supportano i controlli ActiveX finestra e identificano gli oggetti che implementano le interfacce.
 
 
 
@@ -38,9 +38,9 @@ Nella tabella seguente sono elencate le interfacce che supportano ActiveX e iden
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Come usare le Automazione interfaccia utente rendere accessibile un controllo ActiveX finestra](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
+-   [Come usare Automazione interfaccia utente rendere accessibile un controllo ActiveX finestra](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
 -   [Come usare MSAA per rendere accessibile un controllo ActiveX finestra](use-msaa-to-make-an-windowless-activex-control-accessible.md)
--   [Come ospitare un controllo Automazione interfaccia utente senza ActiveX finestra](host-a-ui-automation-windowless-activex-control.md)
+-   [Come ospitare un controllo Automazione interfaccia utente windowless ActiveX](host-a-ui-automation-windowless-activex-control.md)
 -   [Come ospitare un controllo ActiveX msaa](host-an-msaa-windowless-activex-control.md)
 
  

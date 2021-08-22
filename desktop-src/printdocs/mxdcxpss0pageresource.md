@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura della \_ risorsa T S0PAGE di MXDC XPS \_ \_ include informazioni su una risorsa, ad esempio un'immagine o un tipo di carattere, associato a una pagina del documento XPS e da passare al file di output di Microsoft XPS Document Converter (MXDC).
+description: La struttura MXDC XPS S0PAGE RESOURCE T contiene informazioni su una risorsa, ad esempio un'immagine o un tipo di carattere, associato a una pagina di documento XPS e deve essere passata al file di \_ \_ output di Microsoft \_ \_ XPS Document Converter (MXDC).
 ms.assetid: af0690a6-3047-4e95-b719-2305948c0f5d
-title: Struttura MXDC_XPS_S0PAGE_RESOURCE_T (MXDC. h)
+title: MXDC_XPS_S0PAGE_RESOURCE_T (Mxdc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mxdc.h
-ms.openlocfilehash: 90f8a52ed3bd1bcba4c8f21a086627781bdbbf67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21035a99b6237c481a5b7560f469086ef2960d655ba32582ed273edb48910ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971180"
 ---
-# <a name="mxdc_xps_s0page_resource_t-structure"></a>\_ \_ \_ Struttura T della risorsa \_ S0PAGE di MXDC XPS
+# <a name="mxdc_xps_s0page_resource_t-structure"></a>Struttura MXDC \_ XPS \_ S0PAGE \_ RESOURCE \_ T
 
-La struttura della **\_ \_ \_ risorsa \_ T S0PAGE di MXDC XPS** include informazioni su una risorsa, ad esempio un'immagine o un tipo di carattere, associato a una pagina del documento XPS e da passare al file di output di Microsoft XPS Document Converter (MXDC).
+La struttura **MXDC \_ XPS \_ S0PAGE \_ RESOURCE \_ T** contiene informazioni su una risorsa, ad esempio un'immagine o un tipo di carattere, associato a una pagina di documento XPS e deve essere passata al file di output di Microsoft XPS Document Converter (MXDC).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct tagMxdcXpsS0PageResource {
 **dwSize**
 </dt> <dd>
 
-Dimensioni totali della struttura e della risorsa a cui fa riferimento.
+Dimensione totale della struttura e della risorsa a cui punta.
 
 </dd> <dt>
 
 **dwResourceType**
 </dt> <dd>
 
-Valore di tipo [**MXDC \_ S0 \_ Page \_ enums**](mxdcs0pageenums.md) che indica il tipo di risorsa, ad esempio l'immagine TIFF o il tipo di carattere TrueType.
+Valore di tipo [**MXDC \_ S0 \_ PAGE \_ ENUMS**](mxdcs0pageenums.md) che indica il tipo di risorsa, ad esempio l'immagine TIFF o il tipo di carattere TrueType.
 
 </dd> <dt>
 
@@ -67,24 +67,24 @@ URI della risorsa. Non può essere superiore a 260 byte.
 **dwDataSize**
 </dt> <dd>
 
-Dimensioni in byte della risorsa.
+Dimensioni della risorsa in byte.
 
 </dd> <dt>
 
 **bData**
 </dt> <dd>
 
-I dati della risorsa in una matrice di byte con dimensioni pari a 1 + le dimensioni della risorsa.
+Dati della risorsa in una matrice di byte con dimensioni 1 + dimensioni della risorsa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene aggiunta a una struttura [**MXDC \_ dell' \_ intestazione \_ di escape t**](mxdcescapeheader.md) (il cui **codice operativo** è impostato su **MXDCOP \_ set \_ S0PAGERESOURCE**) per creare una struttura di [**\_ \_ \_ escape \_ t della risorsa MXDC S0PAGE**](mxdcs0pageresourceescape.md) . La struttura **di \_ \_ \_ escape \_ T della risorsa S0PAGE MXDC** risultante viene quindi passata nel parametro *lpszInData* della funzione [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) chiamata con l'escape di [**\_ escape MXDC**](mxdc-escape.md) . L'effetto è l'invio della risorsa a MXDC per la conversione e la scrittura nel file di output.
+Questa struttura viene aggiunta a una struttura [**MXDC \_ ESCAPE HEADER \_ \_ T**](mxdcescapeheader.md) (la cui proprietà **opCode** è impostata su **MXDCOP \_ SET \_ S0PAGERESOURCE)** per creare una struttura [**MXDC \_ S0PAGE \_ RESOURCE ESCAPE \_ \_ T.**](mxdcs0pageresourceescape.md) La struttura **MXDC \_ S0PAGE \_ RESOURCE ESCAPE \_ \_ T** risultante viene quindi passata nel parametro *lpszInData* della funzione [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) che viene chiamata con l'escape [**MXDC \_ ESCAPE.**](mxdc-escape.md) L'effetto è l'invio della risorsa a MXDC per la conversione e la scrittura nel file di output.
 
-La chiamata a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) deve essere compresa tra una chiamata a [**Startpage**](/windows/desktop/api/Wingdi/nf-wingdi-startpage) e una chiamata a [**EndPage**](/windows/desktop/api/Wingdi/nf-wingdi-endpage); Tuttavia, possono essere presenti più chiamate tra le chiamate a **Startpage** e **EndPage**.
+La chiamata a [**ExtEscape deve**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) essere compresa tra una chiamata a [**StartPage**](/windows/desktop/api/Wingdi/nf-wingdi-startpage) e una chiamata a [**EndPage**](/windows/desktop/api/Wingdi/nf-wingdi-endpage). tuttavia possono essere presenti più chiamate di questo tipo tra le chiamate a **StartPage** ed **EndPage.**
 
-Il consumo di flussi è più efficiente se si chiama [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con **MXDCOP \_ set \_ S0PAGE \_ Resource** **OpCode** per ogni risorsa nella pagina prima di chiamare **ExtEscape** con il **codice operativo** MXDCOP **\_ set \_ S0PAGE** .
+L'utilizzo dello streaming è più efficiente se si chiama [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con il **codice** operativo **MXDCOP \_ SET \_ S0PAGE \_ RESOURCE** per ogni risorsa nella pagina prima di chiamare **ExtEscape** con il codice operativo **MXDCOP \_ SET \_ S0PAGE** **.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,9 +92,9 @@ Il consumo di flussi è più efficiente se si chiama [**ExtEscape**](/windows/de
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>MXDC. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Mxdc.h</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ Il consumo di flussi è più efficiente se si chiama [**ExtEscape**](/windows/de
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [Funzioni di escape della stampante GDI](/previous-versions/windows/desktop/legacy/dd162843(v=vs.85))
@@ -114,7 +114,7 @@ Il consumo di flussi è più efficiente se si chiama [**ExtEscape**](/windows/de
 [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape)
 </dt> <dt>
 
-[**\_escape MXDC**](mxdc-escape.md)
+[**MXDC \_ ESCAPE**](mxdc-escape.md)
 </dt> </dl>
 
  

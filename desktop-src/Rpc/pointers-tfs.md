@@ -4,12 +4,12 @@ description: Informazioni su un puntatore comune RPC, definito come qualsiasi el
 ms.assetid: 9756E637-BCBB-48F1-B962-25AF2C917921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ade676610a310e230eb6fa89dd666996bb82040f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 30a87c13f9657d56e3f85d1d5828dc097c25e29990c617c5f20679a1d6cbe91e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927351"
 ---
 # <a name="pointers-rpc"></a>Puntatori (RPC)
 
@@ -48,7 +48,7 @@ Il \_ tipo di<1> è uno dei seguenti.
 
  
 
-Il motivo per distinguere FC OP è semantico: nelle interfacce oggetto, un puntatore in uscita deve essere liberato prima di eseguire \_ l'unmarsshaling di un nuovo oggetto e assegnare un nuovo valore del \[ \] puntatore.
+Il motivo per distinguere FC OP è semantico: nelle interfacce oggetto, un puntatore in uscita deve essere liberato prima di eseguire l'unmarsshaling di un nuovo oggetto e assegnare un nuovo valore del \_ \[ \] puntatore.
 
 Gli \_ attributi<1> possono avere uno qualsiasi dei flag illustrati nella tabella seguente.
 
@@ -56,7 +56,7 @@ Gli \_ attributi<1> possono avere uno qualsiasi dei flag illustrati nella tabell
 
 | Attributo | Flag              | Descrizione                                                                                                                                                                                                                                      |
 |------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01   | FC \_ ALLOCATE \_ ALL \_ NODES | Il puntatore fa parte di uno schema di allocazione allocate(tutti \_ i nodi).                                                                                                                                                                   |
+| 01   | FC \_ ALLOCA \_ TUTTI I \_ NODI | Il puntatore fa parte di uno schema di allocazione allocate(tutti \_ i nodi).                                                                                                                                                                   |
 | 02   | FC \_ DONT \_ FREE           | Puntatore allocate(don't \_ free).                                                                                                                                                                                                      |
 | 04   | FC \_ ALLOCED \_ ON \_ STACK   | Puntatore il cui riferimento viene allocato nello stack dello stub.                                                                                                                                                                            |
 | 08   | PUNTATORE \_ FC \_ SEMPLICE      | Puntatore a un tipo semplice o a una stringa non conforme. Questo flag impostato indica il layout della descrizione del puntatore come layout del puntatore semplice descritto in precedenza. In caso contrario, viene indicato il formato del descrittore con l'offset. |
@@ -66,7 +66,7 @@ Gli \_ attributi<1> possono avere uno qualsiasi dei flag illustrati nella tabell
 
  
 
-I puntatori con size \_ is(), max \_ is(), length \_ is(), last \_ is() e/o first is() applicati hanno descrizioni di stringa di formato identiche a un puntatore a una matrice del tipo appropriato \_ (ad esempio, \_ \_ una matrice conforme se size is() viene applicato, una matrice variabile conforme se size is() e length viene \_ applicato).
+I puntatori con size \_ is(), max \_ is(), length \_ is(), last \_ is() e/o first is() applicati hanno descrizioni di stringa di formato identiche a un puntatore a una matrice del tipo appropriato \_ (ad esempio, \_ \_ una matrice conforme se size is() viene applicato, una matrice variabile conforme se size is() e length viene \_ applicata).
 
 ## <a name="interface-pointers"></a>Puntatori a interfaccia
 
@@ -92,7 +92,7 @@ La descrizione iid<> descrittore di correlazione e ha 4 o 6 byte a seconda che \
 
 ## <a name="byte-count-pointers"></a>Puntatori di conteggio byte
 
-I puntatori al conteggio dei byte sono correlati a uno speciale attributo di ottimizzazione denominato \[ **byte \_ count** \] . Vengono usati i formati seguenti:
+I puntatori per il conteggio dei byte sono correlati a uno speciale attributo di ottimizzazione denominato \[ **numero \_ di byte** \] . Vengono usati i formati seguenti:
 
 ``` syntax
 FC_BYTE_COUNT_POINTER 

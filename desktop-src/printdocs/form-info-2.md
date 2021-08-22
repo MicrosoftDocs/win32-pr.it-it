@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni su un modulo di stampa localizzabile.
 ms.assetid: 5cc11a77-2b9d-44a4-88de-6ed0b7460bc8
-title: Struttura FORM_INFO_2 (winspool. h)
+title: FORM_INFO_2 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 6e2129f9776706ce331677e75c5d9c81d82393c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd933bf0ace6f394a801ab8dc4ef1fa30344b47966c09865a3aa4b713c6f2ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971520"
 ---
-# <a name="form_info_2-structure"></a>\_Struttura info modulo \_ 2
+# <a name="form_info_2-structure"></a>Struttura \_ INFO \_ MODULO 2
 
 Contiene informazioni su un modulo di stampa localizzabile.
 
@@ -53,15 +53,15 @@ typedef struct _FORM_INFO_2 {
 **Flag**
 </dt> <dd>
 
-Proprietà del form. Sono definiti i valori seguenti, ma è possibile impostarne solo uno. Quando il **modulo \_ info \_ 2** viene restituito da [**GetForm**](getform.md) o [**EnumForms**](enumforms.md), **Flags** viene impostato sul valore corrente nel database dei moduli.
+Proprietà del form. I valori seguenti sono definiti, ma è possibile impostarne solo uno. Quando il **modulo \_ INFO \_ 2** viene restituito da [**GetForm**](getform.md) o [**EnumForms,**](enumforms.md) **Flags** viene impostato sul valore corrente nel database forms.
 
 
 
 | Valore         | Significato                                                                                                                                                                                                                                                                                  |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| utente del modulo \_    | Se viene impostato questo flag di bit, il form è stato definito dall'utente. I form con questo set di flag sono definiti nel registro di sistema.                                                                                                                                                                    |
-| MODULO \_ incorporato | Se viene impostato questo flag di bit, il form fa parte dello spooler. Le definizioni dei moduli con questo set di flag non vengono visualizzate nel registro di sistema. Non è possibile modificare i moduli predefiniti, pertanto non è necessario impostare questo flag quando la struttura viene passata a [**AddForm**](addform.md) o a [**form**](setform.md). |
-| \_stampante modulo | Se viene impostato questo flag di bit, il form è associato a una determinata stampante e la relativa definizione viene visualizzata nel registro di sistema.                                                                                                                                                                      |
+| UTENTE \_ DEL MODULO    | Se questo flag di bit è impostato, il modulo è stato definito dall'utente. I moduli con questo flag impostato vengono definiti nel Registro di sistema.                                                                                                                                                                    |
+| FORM \_ BUILTIN | Se questo flag di bit è impostato, il modulo fa parte dello spooler. Le definizioni dei moduli con questo flag impostato non vengono visualizzate nel Registro di sistema. I moduli predefiniti non possono essere modificati, pertanto questo flag non deve essere impostato quando la struttura viene passata a [**AddForm**](addform.md) o [**SetForm**](setform.md). |
+| STAMPANTE \_ DEL MODULO | Se questo flag di bit è impostato, il modulo è associato a una determinata stampante e la relativa definizione viene visualizzata nel Registro di sistema.                                                                                                                                                                      |
 
 
 
@@ -69,45 +69,45 @@ Proprietà del form. Sono definiti i valori seguenti, ma è possibile impostarne
 
 </dd> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del form. Il nome del modulo non può superare i 31 caratteri.
+Puntatore a una stringa con terminazione Null che specifica il nome del formato. Il nome del modulo non può superare i 31 caratteri.
 
 </dd> <dt>
 
 **Dimensioni**
 </dt> <dd>
 
-Larghezza e altezza del form, in millesimi di millimetro.
+Larghezza e altezza del modulo in migliaia di millimetri.
 
 </dd> <dt>
 
 **ImageableArea**
 </dt> <dd>
 
-Larghezza e altezza, in millesimi di millimetri, dell'area della pagina in cui la stampante è in grado di stampare.
+Larghezza e altezza, in migliaia di millimetri, dell'area della pagina su cui la stampante può stampare.
 
 </dd> <dt>
 
 **pKeyword**
 </dt> <dd>
 
-Puntatore a un identificatore di stringa non localizzabile del form. Quando viene passato a [**AddForm**](addform.md) o a [**Subform**](setform.md), questo fornisce al chiamante un mezzo per identificare il form in tutte le impostazioni locali.
+Puntatore a un identificatore di stringa non localizzabile del formato. Quando viene passato [**a AddForm**](addform.md) o [**SetForm,**](setform.md)questo consente al chiamante di identificare il modulo in tutte le impostazioni locali.
 
 </dd> <dt>
 
 **StringType**
 </dt> <dd>
 
-Specifica il modo in cui viene ottenuto un nome visualizzato localizzato per il form in fase di esecuzione. Vengono definiti i valori seguenti. È possibile impostare un solo in una determinata chiamata a [**AddForm**](addform.md) o a [**form**](setform.md). Sia \_ la stringa MUIDLL che \_ la stringa LANGPAIR possono essere impostate nel **formato \_ info \_ 2** (s) restituito da [**GetForm**](getform.md) o [**EnumForms**](enumforms.md). Vedere la sezione Osservazioni.
+Specifica come viene ottenuto un nome visualizzato localizzato per il form in fase di esecuzione. Vengono definiti i valori seguenti. In una determinata chiamata a [**AddForm**](addform.md) o SetForm è possibile impostarne [**una sola.**](setform.md) È possibile impostare sia STRING MUIDLL che STRING LANGPAIR nel formato \_ \_ INFO **\_ \_ 2** (s) restituito da [**GetForm**](getform.md) o [**EnumForms.**](enumforms.md) Vedere la sezione Osservazioni.
 
 
 
 | Valore            | Significato                                                                                                                                                                                        |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| STRINGA \_ None     | Nessun nome visualizzato localizzato.                                                                                                                                                            |
-| STRINGA \_ MUIDLL   | Il nome visualizzato viene estratto dalla DLL delle risorse localizzate dell' [interfaccia utente multilingue](/windows/desktop/Intl/mui-resource-management) specificata in **pMuiDll**. L'ID si trova nel membro **dwResourceId** . |
+| STRINGA \_ NONE     | Non è presente alcun nome visualizzato localizzato.                                                                                                                                                            |
+| \_MUIDLL DI STRINGA   | Il nome visualizzato viene estratto dalla DLL [interfaccia utente multilingue](/windows/desktop/Intl/mui-resource-management) risorse localizzate specificata in **pMuiDll**. L'ID si trova nel **membro dwResourceId.** |
 | STRINGA \_ LANGPAIR | Il nome visualizzato e l'ID lingua vengono forniti direttamente da **pDisplayName** e la lingua viene specificata da **wLangId**.                                                                       |
 
 
@@ -119,7 +119,7 @@ Specifica il modo in cui viene ottenuto un nome visualizzato localizzato per il 
 **pMuiDll**
 </dt> <dd>
 
-DLL di risorse localizzate dell' [interfaccia utente multilingue](/windows/desktop/Intl/mui-resource-management) che contiene il nome visualizzato localizzato.
+La [interfaccia utente multilingue](/windows/desktop/Intl/mui-resource-management) DLL della risorsa localizzata che contiene il nome visualizzato localizzato.
 
 </dd> <dt>
 
@@ -133,30 +133,30 @@ ID risorsa del nome visualizzato del modulo in **pMuiDll**.
 **pDisplayName**
 </dt> <dd>
 
-Nome visualizzato del modulo nella lingua specificata da **wLangId**.
+Nome visualizzato del form nella lingua specificata da **wLangId**.
 
 </dd> <dt>
 
 **wLangId**
 </dt> <dd>
 
-Lingua del **pDisplayName**.
+Lingua di **pDisplayName**.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-In una chiamata a [**AddForm**](addform.md) o a [**form**](setform.md):
+In una chiamata a [**AddForm**](addform.md) o [**SetForm**](setform.md):
 
--   Se **StringType** è una stringa \_ None, **pMuiDll** e **pDisplayName** devono essere **null** e **dwResourceId** e **wLangId** devono essere 0.
--   Se **StringType** è di stringa \_ MUIDLL, **pDisplayName** deve essere **null** e **wLangId** deve essere 0.
--   Se **StringType** è di stringa \_ LANGPAIR, **pMuiDll** deve essere **null** e **dwResourceId** deve essere 0.
+-   Se **StringType** è STRING \_ NONE, **pMuiDll** e **pDisplayName** devono essere **NULL** e **dwResourceId** e **wLangId** devono essere 0.
+-   Se **StringType** è STRING \_ MUIDLL, **pDisplayName** deve essere **NULL** e **wLangId** deve essere 0.
+-   Se **StringType** è STRING \_ LANGPAIR, **pMuiDll** deve essere **NULL** e **dwResourceId** deve essere 0.
 
-Per un **modulo \_ info \_ 2** restituito da una chiamata a [**GetForm**](getform.md) o [**EnumForms**](enumforms.md):
+Per un **MODULO \_ INFO \_ 2** restituito da una chiamata a [**GetForm**](getform.md) o [**EnumForms**](enumforms.md):
 
--   Se **StringType** è la stringa \_ MUIDLL e la stringa \_ LANGPAIR **, pMuiDll**, **pDisplayName**, **dwResourceId** e **wLangId** avranno tutti valori validi.
--   Se **StringType** è \_ solo stringa MUIDLL, **pMuiDll** e **dwResourceId** avranno valori validi. **pDisplayName** sarà **null** e **wLangId** sarà 0.
--   Se **StringType** è \_ solo stringa LANGPAIR, **pDisplayName** e **wLangId** avranno valori validi. **pMuiDll** sarà **null** e **dwResourceId** sarà 0.
+-   Se **StringType** è sia STRING \_ MUIDLL che STRING \_ LANGPAIR, **pMuiDll,** **pDisplayName,** **dwResourceId** e **wLangId** avranno tutti valori validi.
+-   Se **StringType** è solo STRING \_ MUIDLL, **pMuiDll** e **dwResourceId** avranno valori validi. **pDisplayName** sarà **NULL** e **wLangId** sarà 0.
+-   Se **StringType** è solo STRING \_ LANGPAIR, **pDisplayName** e **wLangId** avranno valori validi. **pMuiDll** sarà **NULL** e **dwResourceId** sarà 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -164,10 +164,10 @@ Per un **modulo \_ info \_ 2** restituito da una chiamata a [**GetForm**](getfor
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ Informazioni sul modulo \_ \_ 2W** (Unicode) e **\_ info del modulo \_ \_ 2a** (ANSI)<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ FORM \_ INFO \_ 2W** (Unicode) e **\_ FORM INFO \_ \_ 2A** (ANSI)<br/>                                 |
 
 
 
@@ -178,7 +178,7 @@ Per un **modulo \_ info \_ 2** restituito da una chiamata a [**GetForm**](getfor
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [Interfaccia utente multilingue](/windows/desktop/Intl/mui-resource-management)
@@ -193,7 +193,7 @@ Per un **modulo \_ info \_ 2** restituito da una chiamata a [**GetForm**](getfor
 [**EnumForms**](enumforms.md)
 </dt> <dt>
 
-[**Diformi**](setform.md)
+[**SetForm**](setform.md)
 </dt> </dl>
 
  

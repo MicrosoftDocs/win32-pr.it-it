@@ -3,12 +3,12 @@ title: IUniversalOrchestrator::HasMoratoriumPassed
 description: Esegue una query su Universal Orchestrator per determinare se il periodo post-OOBE è stato superato.
 ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: 3ccbf673b8fe22fabe7001112e04e87bd45eeaa4
-ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
+ms.openlocfilehash: 61870e1bd57f54afded3f905da34ddc9198bcdb555c42adc4c799e08f2acf392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966128"
 ---
 # <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>Metodo IUniversalOrchestrator::HasMoratoriumPassed
 
@@ -36,7 +36,7 @@ Stringa univoca che identifica tutte le chiamate da questo client specifico.
 Parametro di output che archivia il risultato della query.
 
 ## <a name="return-value"></a>Valore restituito
-Se questo metodo ha esito positivo, restituisce **S_OK**.  In caso contrario, restituisce un **codice di errore HRESULT.**
+Se questo metodo ha esito positivo, **restituisce** S_OK .  In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

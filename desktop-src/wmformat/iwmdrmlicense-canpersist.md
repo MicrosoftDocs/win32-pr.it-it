@@ -1,9 +1,9 @@
 ---
 title: Metodo IWMDRMLicense CanPersist (Wmdrmsdk.h)
-description: Il metodo CanPersist esegue una query per determinare se la licenza può essere resa persistente in un archivio licenze locale.
+description: Il metodo CanPersist esegue una query per determinare se la licenza può essere mantenuta in un archivio licenze locale.
 ms.assetid: 040b30d8-4e47-44a3-8b09-e81cc30e8a53
 keywords:
-- Metodo CanPersist per Windows Media Format
+- Metodo CanPersist windows Media Format
 - Metodo CanPersist windows Media Format , interfaccia IWMDRMLicense
 - Interfaccia IWMDRMLicense windows Media Format , metodo CanPersist
 topic_type:
@@ -25,7 +25,7 @@ ms.locfileid: "118701219"
 ---
 # <a name="iwmdrmlicensecanpersist-method"></a>Metodo IWMDRMLicense::CanPersist
 
-Il **metodo CanPersist** esegue una query per determinare se la licenza può essere resa persistente in un archivio licenze locale.
+Il **metodo CanPersist** esegue una query per determinare se la licenza può essere mantenuta in un archivio licenze locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT CanPersist(
 *pfCanPersist* \[ Cambio\]
 </dt> <dd>
 
-TRUE indica che la licenza può essere resa persistente.
+TRUE indica che la licenza può essere mantenuta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

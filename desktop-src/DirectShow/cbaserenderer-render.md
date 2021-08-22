@@ -1,7 +1,7 @@
 ---
-description: Il metodo Render esegue il rendering di un campione.
+description: Il metodo Render esegue il rendering di un esempio.
 ms.assetid: 82b47777-2900-4821-ab79-1856da432832
-title: Metodo CBaseRenderer. Render (Renbase. h)
+title: Metodo CBaseRenderer.Render (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9fefd44fe1b913fbba0e3ebfaa6f750b88d40813
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 185baf6818d2022dbe7b64cfab888945e1a2405433eefa925d2de70dcca286e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016859"
 ---
-# <a name="cbaserendererrender-method"></a>Metodo CBaseRenderer. Render
+# <a name="cbaserendererrender-method"></a>Metodo CBaseRenderer.Render
 
-Il `Render` metodo esegue il rendering di un campione.
+Il `Render` metodo esegue il rendering di un esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,14 +51,14 @@ Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                      |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Il filtro è stato interrotto oppure *pMediaSample* è **null**.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                              |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il filtro viene arrestato o *pMediaSample* è **NULL.**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                              |
 
 
 
@@ -66,9 +66,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo virtuale pure [**CBaseRenderer::D orendersample**](cbaserenderer-dorendersample.md), che esegue le operazioni effettive. La classe derivata deve implementare **DoRenderSample**.
+Questo metodo chiama il metodo virtuale [**puro CBaseRenderer::D oRenderSample**](cbaserenderer-dorendersample.md), che esegue il lavoro reale. La classe derivata deve implementare **DoRenderSample.**
 
-Immediatamente prima di chiamare **DoRenderSample**, questo metodo chiama il metodo [**CBaseRenderer:: OnRenderStart**](cbaserenderer-onrenderstart.md) . Immediatamente dopo, viene chiamato il metodo [**CBaseRenderer:: OnRenderEnd**](cbaserenderer-onrenderend.md) . La classe derivata può eseguire l'override di questi due metodi in base alle esigenze.
+Immediatamente prima di **chiamare DoRenderSample,** questo metodo chiama il [**metodo CBaseRenderer::OnRenderStart.**](cbaserenderer-onrenderstart.md) Subito dopo, chiama il [**metodo CBaseRenderer::OnRenderEnd.**](cbaserenderer-onrenderend.md) La classe derivata può eseguire l'override di questi due metodi in base alle esigenze.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Immediatamente prima di chiamare **DoRenderSample**, questo metodo chiama il met
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

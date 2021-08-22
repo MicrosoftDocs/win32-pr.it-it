@@ -1,19 +1,19 @@
 ---
-description: Si tratta di costanti shader ed effetti.
+description: Si tratta di costanti shader ed effetto.
 ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
-title: Costanti degli effetti
+title: Costanti dell'effetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: f47b9c469172b9ae41f819cea165709392c3e137def977eca3bfc3f204e447d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803075"
 ---
-# <a name="effect-constants"></a>Costanti degli effetti
+# <a name="effect-constants"></a>Costanti dell'effetto
 
-Si tratta di costanti shader ed effetti.
+Si tratta di costanti shader ed effetto.
 
 -   [**PARAMETRO \_ D3DX**](d3dx-parameter.md)
 -   [D3DXFX](d3dxfx.md)

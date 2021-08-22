@@ -1,5 +1,5 @@
 ---
-description: Esegue un test automatico del TPM e restituisce il risultato.
+description: Esegue un auto-test del TPM e restituisce il risultato.
 ms.assetid: 0f8fdb68-80b1-4fc4-beb9-e87f51b85031
 title: Metodo SelfTest della classe Win32_Tpm
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 8681ee8ca49b8b2f7de550ffc5baa0ff8c0c9470
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42e0cf4e458be4ff95c05086d603f64d17fb7ff3c3da5a6781529d4632627f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891376"
 ---
-# <a name="selftest-method-of-the-win32_tpm-class"></a>Metodo SelfTest della \_ classe TPM Win32
+# <a name="selftest-method-of-the-win32_tpm-class"></a>Metodo SelfTest della classe Tpm Win32 \_
 
-Il metodo **SELFTEST** della classe [**\_ TPM Win32**](win32-tpm.md) esegue un test automatico del TPM e restituisce il risultato.
+Il **metodo SelfTest** della [**classe Win32 \_ Tpm**](win32-tpm.md) esegue un test autotest del TPM e restituisce il risultato.
 
-Un self-test TPM viene eseguito automaticamente all'avvio del computer.
+Un test automatico TPM viene eseguito automaticamente all'avvio del computer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,20 +41,20 @@ uint32 SelfTest(
 
 <dl> <dt>
 
-*SelfTestResult* \[ out\]
+*SelfTestResult* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **Uint8 \[ \]**
+Tipo: **uint8 \[ \]**
 
-Matrice di byte che contiene il risultato di test automatico. Il formato di questo parametro è specifico del produttore.
+Matrice di byte che contiene il risultato dell'auto-test. Il formato di questo parametro è specifico del produttore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici dei servizi di base TPM.
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi di base TPM.
 
 Nella tabella seguente sono elencati alcuni dei codici restituiti comuni.
 
@@ -70,7 +70,7 @@ Nella tabella seguente sono elencati alcuni dei codici restituiti comuni.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,11 +78,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                            |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                      |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> </dl>
 
  

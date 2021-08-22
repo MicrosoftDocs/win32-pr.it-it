@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_KILLFOCUS (winuser. h)
-description: Inviato a una finestra immediatamente prima che perda lo stato attivo della tastiera.
+title: WM_KILLFOCUS messaggio (Winuser.h)
+description: Inviato a una finestra immediatamente prima di perdere lo stato attivo della tastiera.
 ms.assetid: 6d32a09b-a856-4f94-9544-3345b3a700f4
 keywords:
-- Input della tastiera e del mouse WM_KILLFOCUS messaggio
+- WM_KILLFOCUS messaggio Input tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e3bba54f2cdb500ba2ba691ffd30419d5beff1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 644ea7d82a2ae3f316985a882c284d77f3869a75341142d4372b612d66ada1ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118757455"
 ---
-# <a name="wm_killfocus-message"></a>\_Messaggio KILLFOCUS WM
+# <a name="wm_killfocus-message"></a>Messaggio \_ KILLFOCUS WM
 
-Inviato a una finestra immediatamente prima che perda lo stato attivo della tastiera.
+Inviato a una finestra immediatamente prima di perdere lo stato attivo della tastiera.
 
 
 ```C++
@@ -56,9 +56,9 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Se in un'applicazione viene visualizzato un accento circonflesso, il punto di inserimento deve essere eliminato.
+Se un'applicazione visualizza un punto di inserimento, il punto di inserimento deve essere eliminato a questo punto.
 
-Durante l'elaborazione di questo messaggio, non eseguire chiamate di funzione che visualizzano o attivano una finestra. In questo modo il thread genera il controllo e può causare l'interruzione della risposta dei messaggi da parte dell'applicazione. Per ulteriori informazioni, vedere [deadlock dei messaggi](/windows/desktop/winmsg/about-messages-and-message-queues).
+Durante l'elaborazione di questo messaggio, non effettuare chiamate di funzione che visualizzano o attivano una finestra. In questo modo il thread produce il controllo e può causare l'arresto dell'applicazione ai messaggi. Per altre informazioni, vedere [Deadlock dei messaggi](/windows/desktop/winmsg/about-messages-and-message-queues).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Durante l'elaborazione di questo messaggio, non eseguire chiamate di funzione ch
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -79,10 +79,10 @@ Durante l'elaborazione di questo messaggio, non eseguire chiamate di funzione ch
 **Riferimento**
 </dt> <dt>
 
-[**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
+[**Setfocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
 </dt> <dt>
 
-[**\_stato attivo WM**](wm-setfocus.md)
+[**WM \_ SETFOCUS**](wm-setfocus.md)
 </dt> <dt>
 
 **Informazioni concettuali**

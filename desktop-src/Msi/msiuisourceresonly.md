@@ -1,19 +1,19 @@
 ---
-description: Il programma di installazione imposta la proprietà MsiUISourceResOnly su 1 quando il livello di installazione interno è stato impostato in modo da includere INSTALLUILEVEL \_ SOURCERESONLY con la funzione MsiSetInternalUI o la proprietà UILevel dell'oggetto del programma di installazione.
+description: Il programma di installazione imposta la proprietà MsiUISourceResOnly su 1 quando il livello di installazione interno è stato impostato in modo da includere INSTALLUILEVEL SOURCERESONLY con la funzione MsiSetInternalUI o la proprietà UILevel dell'oggetto \_ Installer.
 ms.assetid: 2b7ea11c-ade5-40f6-9ada-cd13296844ac
-title: Proprietà MsiUISourceResOnly
+title: MsiUISourceResOnly - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e34f619c23b942c3d17f8a3770c0cbbf5c419d5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7350d6da66eb883cfbe1da182fd726e8dc54e1617dedb3a3f92fc3e7e21ad825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943955"
 ---
-# <a name="msiuisourceresonly-property"></a>Proprietà MsiUISourceResOnly
+# <a name="msiuisourceresonly-property"></a>MsiUISourceResOnly - proprietà
 
-Il programma di installazione imposta la proprietà **MsiUISourceResOnly** su 1 quando il livello di installazione interno è stato impostato in modo da includere INSTALLUILEVEL \_ SOURCERESONLY con la funzione [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md) dell'oggetto del [**programma di installazione**](installer-object.md) .
+Il programma di installazione imposta la proprietà **MsiUISourceResOnly** su 1 quando il livello di installazione interno è stato impostato in modo da includere INSTALLUILEVEL SOURCERESONLY con la \_ funzione [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md) dell'oggetto [**Installer.**](installer-object.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ Il programma di installazione imposta la proprietà **MsiUISourceResOnly** su 1 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 
@@ -32,7 +32,7 @@ Il programma di installazione imposta la proprietà **MsiUISourceResOnly** su 1 
 [Proprietà](properties.md)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

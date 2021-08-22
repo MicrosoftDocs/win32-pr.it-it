@@ -1,5 +1,5 @@
 ---
-description: Recupera il fattore di blend e il vertice interessati da un'influenza ossea specificata.
+description: Recupera il fattore di blend e il vertice interessati da un'influenza di fusione specificata.
 ms.assetid: bbed4766-e571-4a9e-b7e3-047052470cbe
 title: Metodo ID3DXSkinInfo::GetBoneVertexInfluence (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118801147"
 ---
 # <a name="id3dxskininfogetbonevertexinfluence-method"></a>Metodo ID3DXSkinInfo::GetBoneVertexInfluence
 
-Recupera il fattore di blend e il vertice interessati da un'influenza ossea specificata.
+Recupera il fattore di blend e il vertice interessati da un'influenza di fusione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,12 +43,12 @@ HRESULT GetBoneVertexInfluence(
 
 <dl> <dt>
 
-*valore di boneNum* \[ Pollici\]
+*numnum* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice dell'osso. Deve essere compreso tra 0 e il numero di ossi.
+Indice dell'oggetto . Deve essere compreso tra 0 e il numero di elementi.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Indice dell'osso. Deve essere compreso tra 0 e il numero di ossi.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Indice della matrice di influenza dell'osso specificato.
+Indice della matrice di influenza dell'oggetto specificato.
 
 </dd> <dt>
 

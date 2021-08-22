@@ -24,7 +24,7 @@ ms.locfileid: "118563229"
 ---
 # <a name="iwinhttprequestresponsebody-property"></a>Proprietà IWinHttpRequest::ResponseBody
 
-La **proprietà ResponseBody** recupera il corpo dell'entità di risposta come matrice di byte senza segno.
+La **proprietà ResponseBody** recupera il corpo dell'entità della risposta come matrice di byte senza segno.
 
 Questa proprietà è di sola lettura.
 
@@ -49,7 +49,7 @@ vtResponseBody = WinHttpRequest.ResponseBody
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore **Variant** che riceve il corpo dell'entità di risposta come matrice di byte senza segno. Questa matrice contiene i dati non elaborati ricevuti direttamente dal server.
+Valore **Variant** che riceve il corpo dell'entità della risposta come matrice di byte senza segno. Questa matrice contiene i dati non elaborati ricevuti direttamente dal server.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -60,7 +60,7 @@ Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di err
 Questa proprietà restituisce i dati della risposta in una matrice di byte senza segno. Se la risposta non ha un corpo della risposta, viene restituita una variante vuota. Questa proprietà può essere richiamata solo dopo la [**chiamata del**](iwinhttprequest-send.md) metodo Send.
 
 > [!Note]  
-> Per altre informazioni sull'implementazione Windows XP e Windows 2000, vedere [Requisiti di run-time](winhttp-start-page.md).
+> Per altre informazioni sull'implementazione Windows XP e Windows 2000, vedere [Requisiti di run-time.](winhttp-start-page.md)
 
  
 

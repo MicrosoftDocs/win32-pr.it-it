@@ -4,12 +4,12 @@ description: SignTool è uno strumento da riga di comando che firma digitalmente
 ms.assetid: aa59cb35-5fba-4ce8-97ea-fc767c83f88e
 ms.topic: article
 ms.date: 10/12/2020
-ms.openlocfilehash: f738eddb6e47da12297bffd13a816398ba2c46c9
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: f7105e81b958e463612a5065003ed04c24b913f87f52d8d72bb7a708917ebbed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897956"
 ---
 # <a name="signtool"></a>SignTool
 
@@ -18,7 +18,7 @@ SignTool è uno strumento da riga di comando che firma digitalmente i file, veri
 SignTool è disponibile come parte di Windows SDK, che è possibile scaricare da <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
 
 > [!Note]  
-> Le build Windows 10 SDK, Windows 10 HLK, Windows 10 WDK e Windows 10 ADK **20236** e successive richiederanno ora di specificare l'algoritmo digest. Il comando SignTool sign richiede che le opzioni /fd e /td siano specificate rispettivamente durante la firma e `file digest algorithm` `timestamp digest algorithm` il timestamp. Verrà generato un avviso (codice di errore 0, inizialmente) se /fd non viene specificato durante la firma e se /td non viene specificato durante il timestamp. Nelle versioni successive di SignTool, l'avviso diventerà un errore. SHA256 è consigliato e considerato più sicuro rispetto a SHA1 da parte del settore.  
+> Le build Windows 10 SDK, Windows 10 HLK, Windows 10 WDK e Windows 10 ADK **20236** e successive richiederanno ora di specificare l'algoritmo digest. Il comando SignTool sign richiede che le opzioni /fd e /td siano specificate rispettivamente durante la firma e `file digest algorithm` `timestamp digest algorithm` il timestamp. Verrà generato un avviso (codice di errore 0, inizialmente) se /fd non viene specificato durante la firma e se /td non viene specificato durante il timestamp. Nelle versioni successive di SignTool, l'avviso diventerà un errore. SHA256 è consigliato e considerato più sicuro di SHA1 dal settore.  
 
 
 ## <a name="syntax"></a>Sintassi  
@@ -60,7 +60,7 @@ I comandi seguenti sono supportati da SignTool.
 
 | Opzione catdb | Descrizione |
 |----|----| 
-| **/d** | Specifica che il database del catalogo predefinito deve essere aggiornato. Se non si usa **né l'opzione /d** né **/g** , SignTool aggiorna il database del driver e del componente di sistema. |
+| **/d** | Specifica che il database del catalogo predefinito deve essere aggiornato. Se non si usa **né l'opzione /d** né **/g** , SignTool aggiorna il componente di sistema e il database dei driver. |
 | **/g** *GUID* | Specifica che il database del catalogo identificato dal GUID deve essere aggiornato.|
 | **/r** | Rimuove il catalogo specificato dal database del catalogo. Se questa opzione non viene specificata, SignTool aggiungerà il catalogo specificato al database del catalogo.|
 | **/u** | Specifica che viene generato automaticamente un nome univoco per i file di catalogo aggiunti. Se necessario, i file di catalogo vengono rinominati per evitare conflitti con i nomi dei file di catalogo esistenti. Se questa opzione non viene specificata, SignTool sovrascrive qualsiasi catalogo esistente con lo stesso nome del catalogo da aggiungere.|
@@ -83,9 +83,9 @@ I comandi seguenti sono supportati da SignTool.
 |`/d`  *Desc*|Specifica una descrizione del contenuto firmato.|  
 |`/dg`  *Percorso*|Genera il digest da firmare e i file PKCS7 non firmati. Il digest di output e i file PKCS7 saranno: *Path\FileName.dig* e *Path\FileName.p7u*. Per eseguire l'output di un file XML aggiuntivo, <strong>vedere /dxml</strong>.|  
 |`/di`  *Percorso*|Crea la firma mediante l'inserimento del digest firmato nel file PKCS7 non firmato. I file digest e PKCS7 non firmati di input devono essere: *Path\FileName.dig.signed* e *Path\FileName.p7u*.|  
-|`/dlib`  *DLL*|Specifica la DLL che implementa la <code>AuthenticodeDigestSign</code> funzione con cui firmare il digest. Questa opzione equivale a usare <strong>SignTool</strong> separatamente con le opzioni <strong>/dg</strong>, <strong>/ds</strong>e <strong>/di</strong> , con la differenza che questa opzione richiama tutti e tre i comandi come un'unica operazione atomica.|  
+|`/dlib`  *DLL*|Specifica la DLL che implementa la <code>AuthenticodeDigestSign</code> funzione con cui firmare il digest. Questa opzione equivale a usare <strong>SignTool</strong> separatamente con le opzioni <strong>/dg</strong>, <strong>/ds</strong>e <strong>/di</strong> , ad eccezione del fatto che questa opzione richiama tutti e tre come un'unica operazione atomica.|  
 |`/dmdf`  *Filename*|Se usato con <strong>l'opzione /dg,</strong> passa il contenuto del file alla <code>AuthenticodeDigestSign</code> funzione senza modifiche.|  
-|`/ds`  |Firma solo il digest. Il file di input deve essere il digest generato <strong>dall'opzione /dg.</strong> Il file di output sarà: *File.signed*.|  
+|`/ds`  |Firma solo il digest. Il file di input deve essere il digest generato <strong>dall'opzione /dg.</strong> Il file di output sarà: *File.signed.*|  
 |`/du`  *URL*|Specifica un URL (Uniform Resource Locator) per la descrizione espansa del contenuto firmato.|  
 |`/dxml`  |Se usato con <strong>l'opzione /dg,</strong> genera un file XML. Il file di output sarà: *Path\FileName.dig.xml*.|  
 |`/f`  *SignCertFile*|Specifica il certificato di firma in un file. Se il file è nel formato PFX (Personal Information Exchange) ed è protetto da una password, usare l'opzione `/p` per specificare la password. Se il file non contiene chiavi private, usare le opzioni `/csp` e `/kc` per specificare il CSP e il nome del contenitore delle chiavi private.|  
@@ -96,16 +96,16 @@ I comandi seguenti sono supportati da SignTool.
 |`/n`  *SubjectName*|Specifica il nome del soggetto del certificato di firma. Questo valore può essere una sottostringa dell'intero nome del soggetto.|  
 |`/nph`|Se supportato, sopprime gli hash delle pagine per i file eseguibili. Il valore predefinito è determinato dalla variabile di ambiente SIGNTOOL_PAGE_HASHES e dalla versione di wintrust.dll. Questa opzione viene ignorata per i file non PE.|  
 |`/p`  *Password*|Specifica la password da usare all'apertura di un file PFX (usare l'opzione `/f` per specificare un file PFX).|  
-|`/p7` *Percorso*|Specifica di produrre un file PKCS (Public Key Cryptography Standards) #7 per ogni file di contenuto specificato. PKCS #7 file sono *denominati* percorso \\ *nomefile*.p7.|  
+|`/p7` *Percorso*|Specifica di produrre un file PKCS (Public Key Cryptography Standards) #7 per ogni file di contenuto specificato. PKCS #7 file sono *denominati* path \\ *filename*.p7.|  
 |`/p7ce` *Valore*|Specifica le opzioni per il contenuto PKCS #7 firmato. Impostare *Valore* su "Embedded" per incorporare il contenuto firmato nel file PKCS #7 o su "DetachedSignedData" per generare la parte di dati firmati di un file PKCS #7 scollegato. Se non si usa l'opzione `/p7ce`, il contenuto firmato è incorporato per impostazione predefinita.|  
 |`/p7co` *\<OID>*|Specifica l'identificatore di oggetto (OID) tramite cui viene identificato il contenuto PKCS #7 firmato.|  
 |`/ph`|Se supportato, genera gli hash delle pagine per i file eseguibili.|  
 |`/r`  *RootSubjectName*|Specifica il nome del soggetto del certificato radice cui deve essere concatenato il certificato di firma. Questo valore può essere una sottostringa dell'intero nome del soggetto del certificato radice.|  
-|`/s`  *Storename*|Specifica l'archivio da aprire durante la ricerca del certificato. Se questa opzione non è specificata, viene aperto l'archivio `My`.|  
+|`/s`  *StoreName*|Specifica l'archivio da aprire durante la ricerca del certificato. Se questa opzione non è specificata, viene aperto l'archivio `My`.|  
 |`/sha1`  *Hash*|Specifica l'hash SHA1 del certificato di firma. Il valore hash SHA1 viene specificato in genere quando più certificati soddisfano i criteri specificati dalle opzioni rimanenti.|  
 |`/sm`|Specifica di usare un archivio del computer anziché un archivio utente.|  
 |`/t`  *URL*|Specifica l'URL del server di timestamp. Se questa opzione (o `/tr`) non è presente, al file firmato non verrà aggiunto il timestamp. Se l'aggiunta del timestamp non riesce, viene generato un avviso. Non è possibile usare questa opzione con l'opzione `/tr`.|  
-|`/td`  *Alg*|Usata con l'opzione `/tr` per richiedere un algoritmo digest usato dal server di timestamp RFC 3161. </br> **Nota:** Viene generato un avviso se <strong>l'opzione /td</strong> non viene specificata durante il timestamp. L'alg predefinito è SHA1, ma è consigliato SHA256. <br/> <strong>L'opzione /td</strong> deve essere dichiarata dopo <strong>l'opzione /tr,</strong> non prima. Se <strong>l'opzione /td</strong> viene dichiarata prima dell'opzione <strong>/tr,</strong> il timestamp restituito è da un algoritmo SHA1 anziché dall'algoritmo SHA256 previsto. |
+|`/td`  *Alg*|Usata con l'opzione `/tr` per richiedere un algoritmo digest usato dal server di timestamp RFC 3161. </br> **Nota:** Viene generato un avviso se <strong>l'opzione /td</strong> non viene specificata durante il timestamp. L'alg predefinito è SHA1, ma è consigliato SHA256. <br/> <strong>L'opzione /td</strong> deve essere dichiarata dopo <strong>l'opzione /tr,</strong> non prima. Se <strong>l'opzione /td</strong> viene dichiarata prima dell'opzione <strong>/tr,</strong> il timestamp restituito deriva da un algoritmo SHA1 anziché dall'algoritmo SHA256 previsto. |
 |`/tr`  *URL*|Specifica l'URL del server di timestamp RFC 3161. Se questa opzione (o `/t`) non è presente, al file firmato non verrà aggiunto il timestamp. Se l'aggiunta del timestamp non riesce, viene generato un avviso. Non è possibile usare questa opzione con l'opzione `/t`.|  
 |`/u`  *Utilizzo*|Specifica l'utilizzo chiavi avanzato (EKU) che deve essere presente nel certificato di firma. Il valore di utilizzo può essere specificato tramite OID o stringa. L'utilizzo predefinito è "Firma codice" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Specifica l'utilizzo di "Verifica dei componenti di sistema Windows" (1.3.6.1.4.1.311.10.3.6).|  
@@ -121,7 +121,7 @@ I comandi seguenti sono supportati da SignTool.
 |----|----|  
 |`/p7`|Aggiunge un timestamp ai file PKCS #7.|  
 |`/t`  *URL*|Specifica l'URL del server di timestamp. È necessario che il file a cui viene aggiunto il timestamp sia stato precedentemente firmato. È richiesta l'opzione `/t` o `/tr`.|  
-|`/td`  *Alg*|Usata con l'opzione `/tr` per richiedere un algoritmo digest usato dal server di timestamp RFC 3161. </br> **Nota:** Viene generato un avviso se <strong>l'opzione /td</strong> non viene specificata durante il timestamp. L'alg predefinito è SHA1, ma è consigliato SHA256. <br/> <strong>L'opzione /td</strong> deve essere dichiarata dopo <strong>l'opzione /tr,</strong> non prima. Se <strong>l'opzione /td</strong> viene dichiarata prima dell'opzione <strong>/tr,</strong> il timestamp restituito è da un algoritmo SHA1 anziché dall'algoritmo SHA256 previsto. |
+|`/td`  *Alg*|Usata con l'opzione `/tr` per richiedere un algoritmo digest usato dal server di timestamp RFC 3161. </br> **Nota:** Viene generato un avviso se <strong>l'opzione /td</strong> non viene specificata durante il timestamp. L'alg predefinito è SHA1, ma è consigliato SHA256. <br/> <strong>L'opzione /td</strong> deve essere dichiarata dopo <strong>l'opzione /tr,</strong> non prima. Se <strong>l'opzione /td</strong> viene dichiarata prima dell'opzione <strong>/tr,</strong> il timestamp restituito deriva da un algoritmo SHA1 anziché dall'algoritmo SHA256 previsto. |
 |`/tp`*index*|Aggiunge un timestamp alla firma in corrispondenza di *indice*.|  
 |`/tr`  *URL*|Specifica l'URL del server di timestamp RFC 3161. È necessario che il file a cui viene aggiunto il timestamp sia stato precedentemente firmato. È richiesta l'opzione `/tr` o `/t`.|  
 
@@ -130,7 +130,7 @@ I comandi seguenti sono supportati da SignTool.
 
 |Opzione Verify|Descrizione|
 |----|----|
-| **/a** | Specifica che tutti i metodi possono essere usati per verificare il file. Innanzitutto, viene effettuata una ricerca nei database dei cataloghi per determinare se il file è firmato in un catalogo. Se il file non è firmato in alcun catalogo, SignTool tenta di verificare la firma incorporata del file. Questa opzione è consigliata per la verifica di file che possono risultare firmati o non firmati all'interno di un catalogo. Esempi di file che possono essere firmati o meno includono Windows file o driver. |
+| **/a** | Specifica che tutti i metodi possono essere usati per verificare il file. Innanzitutto, viene effettuata una ricerca nei database dei cataloghi per determinare se il file è firmato in un catalogo. Se il file non è firmato in alcun catalogo, SignTool tenta di verificare la firma incorporata del file. Questa opzione è consigliata per la verifica di file che possono risultare firmati o non firmati all'interno di un catalogo. Esempi di file che possono o non possono essere firmati includono Windows file o driver. |
 | **/ad** | Trova il catalogo usando il database dei cataloghi predefinito. |
 | **/all** | Verifica tutte le firme in un file con più firme. |
 | **/as** | Trova il catalogo usando il database dei cataloghi (driver) dei componenti del sistema. |
@@ -140,11 +140,11 @@ I comandi seguenti sono supportati da SignTool.
 | **/ds** *Index* | Verifica la firma in una determinata posizione. |
 | **/hash**{**SHA1** \| **SHA256**} | Specifica un algoritmo hash facoltativo da usare quando si cerca un file in un catalogo. |
 | **/kp** | Esegue la verifica usando i criteri di firma del driver in modalità kernel x64. |
-| **/ms** | Usa semantica di verifica multipla. Si tratta del comportamento predefinito di una [**chiamata WinVerifyTrust.**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) |
-| **/o** *Versione* | Verifica il file in base alla versione del sistema operativo. Il parametro version ha il formato seguente:<br/> *PlatformID***:**_VerMajor_*_._ *_VerMinor_*_._ * _BuildNumber_<br/> È consigliabile usare *l'opzione /o.* Se */o non* viene specificato, SignTool può restituire risultati imprevisti. Ad esempio, se non si include l'opzione */o,* i cataloghi di sistema che vengono convalidati correttamente in un sistema operativo precedente potrebbero non essere convalidati correttamente in un sistema operativo più recente. |
+| **/ms** | Usa semantica di verifica multipla. Questo è il comportamento predefinito di una [**chiamata WinVerifyTrust.**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) |
+| **/o** *Versione* | Verifica il file in base alla versione del sistema operativo. Il parametro version ha il formato seguente:<br/> *PlatformID***:**_VerMajor_*_._ *_VerMinor_*_._ * _BuildNumber_<br/> È consigliabile usare *l'opzione /o.* Se */o non* è specificato, SignTool può restituire risultati imprevisti. Ad esempio, se non si include l'opzione */o,* i cataloghi di sistema che vengono convalidati correttamente in un sistema operativo precedente potrebbero non essere convalidati correttamente in un sistema operativo più recente. |
 | **/p7** | Verificare i file PKCS \# 7. Non vengono usati criteri esistenti per la convalida PKCS \# 7. La firma viene controllata e viene creata una catena per il certificato di firma. |
 | **/pa** | Specifica che vengono usati i criteri di verifica dell'autenticazione predefiniti. Se **l'opzione /pa** non è specificata, SignTool usa i Windows di verifica del driver. Questa opzione non può essere usata con le **opzioni catdb.** |
-| **/pg** *PolicyGUID* | Specifica un criterio di verifica in base **al GUID**. Il **GUID** corrisponde all'ActionID dei criteri di verifica. Questa opzione non può essere usata con le **opzioni catdb.** |
+| **/pg** *PolicyGUID* | Specifica i criteri di verifica in base **al GUID**. Il **GUID** corrisponde all'ActionID dei criteri di verifica. Questa opzione non può essere usata con le **opzioni catdb.** |
 | **/ph** | Stampare e verificare i valori hash della pagina.<br/> **Windows Vista e versioni precedenti:** Questo flag non è supportato.<br/>  |
 | **/r** *RootSubjectName* | Specifica il nome del soggetto del certificato radice cui deve essere concatenato il certificato di firma. Questo valore può essere una sottostringa dell'intero nome del soggetto del certificato radice. |
 | **/tw** | Specifica che viene generato un avviso se la firma non è contrassegnata con il timestamp.|
@@ -152,7 +152,7 @@ I comandi seguenti sono supportati da SignTool.
 
 Il comando SignTool **verify** determina se il certificato di firma è stato emesso da un'autorità attendibile, se il certificato di firma è stato revocato e, facoltativamente, se il certificato di firma è valido per un criterio specifico.  
 
-Il comando SignTool **verify** restituisce lo stato della firma incorporata a meno che non venga specificata un'opzione per la ricerca in un catalogo (/a, /ad, /as, /ag, /c). 
+Il comando SignTool **verify** restituisce lo stato della firma incorporata, a meno che non venga specificata un'opzione per la ricerca in un catalogo (/a, /ad, /as, /ag, /c). 
 
 
 ## <a name="return-value"></a>Valore restituito  
@@ -166,7 +166,7 @@ Il comando SignTool **verify** restituisce lo stato della firma incorporata a me
 |2|Esecuzione completata con avvisi.|
 
 
-## <a name="examples"></a>Esempi  
+## <a name="examples"></a>Esempio  
 
  Il seguente comando aggiunge il file di catalogo MyCatalogFileName.cat al database dei driver e dei componenti di sistema. L'opzione `/u` genera un nome univoco, se necessario, per impedire la sostituzione di un file di catalogo esistente denominato `MyCatalogFileName.cat`.  
   

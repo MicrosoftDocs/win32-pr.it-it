@@ -1,7 +1,7 @@
 ---
-description: Descrive il tipo di eventi che possono essere codificati dal controller animazione.
+description: Descrive il tipo di eventi che possono essere digitati dal controller di animazione.
 ms.assetid: d98b398e-29e1-41b5-84eb-37983bac8d0a
-title: Enumerazione D3DXEVENT_TYPE (D3dx9anim. h)
+title: D3DXEVENT_TYPE enumerazione (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 97219478b898dc47e385e8e00a5cc9b5484730ce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a7e3dec14876f784bbb4055c483f22552bef80e034798f902196c7b65ff3aa45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804092"
 ---
-# <a name="d3dxevent_type-enumeration"></a>\_Enumerazione del tipo D3DXEVENT
+# <a name="d3dxevent_type-enumeration"></a>Enumerazione D3DXEVENT \_ TYPE
 
-Descrive il tipo di eventi che possono essere codificati dal controller animazione.
+Descrive il tipo di eventi che possono essere digitati dal controller di animazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,45 +44,45 @@ typedef enum D3DXEVENT_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXEVENT_TRACKSPEED"></span><span id="d3dxevent_trackspeed"></span>**\_TRACKSPEED D3DXEVENT**
+<span id="D3DXEVENT_TRACKSPEED"></span><span id="d3dxevent_trackspeed"></span>**D3DXEVENT \_ TRACKSPEED**
 </dt> <dd>
 
-Rileva velocità.
+Velocità di traccia.
 
 </dd> <dt>
 
-<span id="D3DXEVENT_TRACKWEIGHT"></span><span id="d3dxevent_trackweight"></span>**\_TRACKWEIGHT D3DXEVENT**
+<span id="D3DXEVENT_TRACKWEIGHT"></span><span id="d3dxevent_trackweight"></span>**D3DXEVENT \_ TRACKWEIGHT**
 </dt> <dd>
 
 Tenere traccia del peso.
 
 </dd> <dt>
 
-<span id="D3DXEVENT_TRACKPOSITION"></span><span id="d3dxevent_trackposition"></span>**\_TRACKPOSITION D3DXEVENT**
+<span id="D3DXEVENT_TRACKPOSITION"></span><span id="d3dxevent_trackposition"></span>**D3DXEVENT \_ TRACKPOSITION**
 </dt> <dd>
 
-Rilevare la posizione.
+Posizione della traccia.
 
 </dd> <dt>
 
-<span id="D3DXEVENT_TRACKENABLE"></span><span id="d3dxevent_trackenable"></span>**\_TRACKENABLE D3DXEVENT**
+<span id="D3DXEVENT_TRACKENABLE"></span><span id="d3dxevent_trackenable"></span>**D3DXEVENT \_ TRACKENABLE**
 </dt> <dd>
 
-Abilita flag.
+Abilitare il flag.
 
 </dd> <dt>
 
-<span id="D3DXEVENT_PRIORITYBLEND"></span><span id="d3dxevent_priorityblend"></span>**\_PRIORITYBLEND D3DXEVENT**
+<span id="D3DXEVENT_PRIORITYBLEND"></span><span id="d3dxevent_priorityblend"></span>**PRIORITÀ D3DXEVENTBLEND \_**
 </dt> <dd>
 
-Valore di Blend di priorità.
+Valore di combinazione di priorità.
 
 </dd> <dt>
 
-<span id="D3DXEVENT_FORCE_DWORD"></span><span id="d3dxevent_force_dword"></span>**D3DXEVENT \_ Force \_ DWORD**
+<span id="D3DXEVENT_FORCE_DWORD"></span><span id="d3dxevent_force_dword"></span>**D3DXEVENT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: Gli elementi seguenti vengono utilizzati con handle e oggetti.
+description: Gli elementi seguenti vengono usati con handle e oggetti .
 ms.assetid: a35e7400-0e36-45cf-bbde-a3836bb75f73
-title: Handle e riferimento a oggetti
+title: Riferimento all'handle e all'oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e973bc738f0b2a8dd8c1f16781ebe64f76a9064
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38ec937e1d2e63ed6e1ed9562ea4b84eef4fb14c042cc41e0f1e63c943c291d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885754"
 ---
-# <a name="handle-and-object-reference"></a>Handle e riferimento a oggetti
+# <a name="handle-and-object-reference"></a>Riferimento all'handle e all'oggetto
 
-Gli elementi seguenti vengono utilizzati con handle e oggetti.
+Gli elementi seguenti vengono usati con handle e oggetti .
 
--   [Funzioni handle e Object](handle-and-object-functions.md)
+-   [Funzioni handle e oggetto](handle-and-object-functions.md)
 
  
 

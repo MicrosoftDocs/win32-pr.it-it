@@ -1,55 +1,55 @@
 ---
-description: L'account LocalSystem è un account locale predefinito utilizzato da Gestione controllo servizi.
+description: L'account LocalSystem è un account locale predefinito usato da Gestione controllo servizi.
 ms.assetid: 692bceb6-f5bd-4b83-ab3b-ef8099dc84e1
-title: Account LocalSystem
+title: LocalSystem Account
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0132e70044aec7886ce6875239a6bedb502fec8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d4dca5655402b3b4f400d3c1941ccf3978a7d385363567fac01a1d3024f1dff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889442"
 ---
-# <a name="localsystem-account"></a>Account LocalSystem
+# <a name="localsystem-account"></a>LocalSystem Account
 
-L'account LocalSystem è un account locale predefinito utilizzato da Gestione controllo servizi. Questo account non è riconosciuto dal sottosistema di sicurezza, pertanto non è possibile specificarne il nome in una chiamata alla funzione [**LookupAccountName**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea) . Dispone di privilegi estesi sul computer locale e funge da computer in rete. Il token include il \\ sistema di autorità NT e i \\ SID degli amministratori predefiniti. questi account hanno accesso alla maggior parte degli oggetti di sistema. Il nome dell'account in tutte le impostazioni locali è. \\ LocalSystem. È anche possibile usare il nome LocalSystem o *nomecomputer* \\ LocalSystem. Questo account non dispone di una password. Se si specifica l'account LocalSystem in una chiamata alla funzione [**CreateService**](/windows/desktop/api/Winsvc/nf-winsvc-createservicea) o [**ChangeServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) , tutte le informazioni sulla password fornite verranno ignorate.
+L'account LocalSystem è un account locale predefinito usato da Gestione controllo servizi. Questo account non è riconosciuto dal sottosistema di sicurezza, pertanto non è possibile specificarne il nome in una chiamata alla [**funzione LookupAccountName.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea) Dispone di privilegi estesi nel computer locale e funge da computer in rete. Il token include i SID NT AUTHORITY \\ SYSTEM e BUILTIN Administrators. Questi account hanno accesso alla maggior parte degli oggetti di \\ sistema. Il nome dell'account in tutte le impostazioni locali è . \\ Localsystem. È anche possibile usare il nome LocalSystem o *ComputerName* \\ LocalSystem. Questo account non dispone di una password. Se si specifica l'account LocalSystem in una chiamata alla [**funzione CreateService**](/windows/desktop/api/Winsvc/nf-winsvc-createservicea) o [**ChangeServiceConfig,**](/windows/desktop/api/Winsvc/nf-winsvc-changeserviceconfiga) le informazioni sulla password specificate vengono ignorate.
 
-Un servizio che viene eseguito nel contesto dell'account LocalSystem eredita il contesto di sicurezza di SCM. Il SID utente viene creato dal valore **\_ RID del \_ sistema \_ locale di sicurezza** . L'account non è associato ad alcun account utente connesso. Questo ha diverse implicazioni:
+Un servizio eseguito nel contesto dell'account LocalSystem eredita il contesto di sicurezza di Gestione controllo servizi. Il SID utente viene creato dal **valore SECURITY LOCAL SYSTEM \_ \_ \_ RID.** L'account non è associato ad alcun account utente connesso. Questo ha diverse implicazioni:
 
--   La chiave del registro di sistema **HKEY \_ \_ utente corrente** è associata all'utente predefinito, non all'utente corrente. Per accedere al profilo di un altro utente, rappresentare l'utente, quindi accedere **all' \_ \_ utente corrente di HKEY**.
--   Il servizio può aprire la chiave del registro di sistema **HKEY \_ Local \_ Machine \\ Security**.
+-   La chiave del Registro **di sistema HKEY \_ CURRENT \_ USER** è associata all'utente predefinito, non all'utente corrente. Per accedere al profilo di un altro utente, rappresentare l'utente, quindi **accedere a HKEY \_ CURRENT \_ USER**.
+-   Il servizio può aprire la chiave del Registro di **sistema HKEY \_ LOCAL MACHINE \_ \\ SECURITY**.
 -   Il servizio presenta le credenziali del computer ai server remoti.
--   Se il servizio apre una finestra di comando ed esegue un file batch, l'utente può premere CTRL + C per terminare il file batch e ottenere l'accesso a una finestra di comando con le autorizzazioni LocalSystem.
+-   Se il servizio apre una finestra di comando ed esegue un file batch, l'utente potrebbe premere CTRL+C per terminare il file batch e ottenere l'accesso a una finestra di comando con autorizzazioni LocalSystem.
 
-L'account LocalSystem presenta i privilegi seguenti:
+L'account LocalSystem dispone dei privilegi seguenti:
 
--   **Se \_ \_Nome ASSIGNPRIMARYTOKEN** (disabilitato)
--   **Se \_ \_Nome controllo** (abilitato)
--   **Se \_ \_Nome backup** (disabilitato)
--   **Se \_ MODIFICA \_ \_ nome notifica** (abilitato)
--   **Se \_ Crea \_ \_ nome globale** (abilitato)
--   **Se \_ Crea \_ \_ nome del file di paging** (abilitato)
--   **Se \_ Crea \_ \_ nome permanente** (abilitato)
--   **Se \_ Crea \_ \_ nome token** (disabilitato)
--   **Se \_ \_Nome debug** (abilitato)
--   **Se \_ \_Nome rappresentazione** (abilitato)
--   **Se \_ \_Nome della \_ priorità \_ di base di Inc** (abilitato)
--   **Se \_ AUMENTA \_ il \_ nome della quota** (disabilitato)
--   **Se \_ CARICA \_ \_ nome driver** (disabilitato)
--   **Se \_ BLOCCA \_ \_ nome memoria** (abilitato)
--   **Se \_ GESTISCi \_ \_ nome volume** (disabilitato)
--   **Se \_ \_Nome singolo \_ processo \_ prof** (abilitato)
--   **Se \_ \_Nome ripristino** (disabilitato)
--   **Se \_ \_Nome sicurezza** (disabilitato)
--   **Se \_ \_Nome arresto** (disabilitato)
--   **Se \_ \_ \_ Nome dell'ambiente di sistema** (disabilitato)
--   **Se \_ \_Nome SYSTEMTIME** (disabilitato)
--   **Se \_ ASSUMERE \_ il \_ nome della proprietà** (disabilitato)
--   **Se \_ \_Nome TCB** (abilitato)
--   **Se \_ Annulla ancoraggio \_ nome** (disabilitato)
+-   **edizione Standard \_ ASSIGNPRIMARYTOKEN \_ NAME** (disabilitato)
+-   **edizione Standard \_ AUDIT \_ NAME** (abilitato)
+-   **edizione Standard \_ BACKUP \_ NAME** (disabilitato)
+-   **edizione Standard \_ CHANGE \_ NOTIFY \_ NAME** (abilitato)
+-   **edizione Standard \_ CREATE \_ GLOBAL \_ NAME** (abilitato)
+-   **edizione Standard \_ CREATE \_ PAGEFILE \_ NAME** (enabled)
+-   **edizione Standard \_ CREATE \_ PERMANENT \_ NAME** (abilitato)
+-   **edizione Standard \_ CREATE \_ TOKEN \_ NAME** (disabilitato)
+-   **edizione Standard \_ DEBUG \_ NAME** (abilitato)
+-   **edizione Standard \_ NOME \_ IMPERSONATE** (abilitato)
+-   **edizione Standard \_ INC \_ BASE \_ PRIORITY \_ NAME** (enabled)
+-   **edizione Standard \_ INCREASE \_ QUOTA \_ NAME** (disabled)
+-   **edizione Standard \_ LOAD \_ DRIVER \_ NAME** (disabled)
+-   **edizione Standard \_ LOCK \_ MEMORY \_ NAME** (abilitato)
+-   **edizione Standard \_ GESTISCI \_ NOME \_ VOLUME** (disabilitato)
+-   **edizione Standard \_ NOME \_ PROCESSO \_ SINGOLO \_ PROF** (abilitato)
+-   **edizione Standard \_ RESTORE \_ NAME** (disabilitato)
+-   **edizione Standard \_ NOME \_ SICUREZZA** (disabilitato)
+-   **edizione Standard \_ SHUTDOWN \_ NAME** (disabilitato)
+-   **edizione Standard \_ NOME \_ AMBIENTE \_ SISTEMA** (disabilitato)
+-   **edizione Standard \_ SYSTEMTIME \_ NAME** (disabilitato)
+-   **edizione Standard \_ TAKE \_ OWNERSHIP \_ NAME** (DISABILITATO)
+-   **edizione Standard \_ TCB \_ NAME** (abilitato)
+-   **edizione Standard \_ UNDOCK \_ NAME** (disabilitato)
 
-Per la maggior parte dei servizi non è necessario un livello di privilegio elevato. Se il servizio non necessita di questi privilegi e non è un servizio interattivo, è consigliabile usare l' [account LocalService](localservice-account.md) o l' [account NetworkService](networkservice-account.md). Per ulteriori informazioni, vedere [sicurezza del servizio e diritti di accesso](service-security-and-access-rights.md).
+Per la maggior parte dei servizi non è necessario un livello di privilegio così elevato. Se il servizio non richiede questi privilegi e non è un servizio interattivo, è consigliabile usare [l'account LocalService](localservice-account.md) o [l'account NetworkService](networkservice-account.md). Per altre informazioni, vedere [Sicurezza dei servizi e diritti di accesso.](service-security-and-access-rights.md)
 
  
 

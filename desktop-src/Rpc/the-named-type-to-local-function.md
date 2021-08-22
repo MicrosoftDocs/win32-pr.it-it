@@ -1,21 +1,21 @@
 ---
 title: Funzione named_type_to_local
-description: Gli stub chiamano il \_ tipo denominato \_ nella \_ funzione locale per convertire i dati da un tipo trasmesso al tipo che sono presenti nell'applicazione.
+description: Gli stub chiamano il tipo denominato nella funzione locale per convertire i dati da un tipo trasmesso al tipo \_ \_ che presentano \_ all'applicazione.
 ms.assetid: c272cc1f-e47b-4d5a-a4e2-cefeaeb8c175
 keywords:
 - named_type_to_local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746cbdd01ea657408b1bf355f41b3b9dfba673a9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 59fc1d45545c920ef19eb4c230045e62322833d3ef38e765357c29b20a48589c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924061"
 ---
-# <a name="the-named_type_to_local-function"></a>Tipo denominato \_ \_ per la \_ funzione locale
+# <a name="the-named_type_to_local-function"></a>Il tipo \_ denominato per la funzione \_ \_ locale
 
-Gli stub chiamano il **tipo denominato nella funzione \_ \_ \_ locale** per convertire i dati da un tipo trasmesso al tipo che sono presenti nell'applicazione. La funzione è definita come segue:
+Gli stub chiamano il **tipo \_ denominato \_ \_** nella funzione locale per convertire i dati da un tipo trasmesso al tipo che presentano all'applicazione. La funzione è definita come:
 
 ``` syntax
 void __RPC_USER <named_type>_to_local( 
@@ -25,11 +25,11 @@ void __RPC_USER <named_type>_to_local(
 
 Il primo parametro punta ai dati trasmessi. La funzione imposta il secondo parametro in modo che punti ai dati presentati.
 
-Il **\_ tipo denominato \_ per \_** la funzione locale deve gestire la memoria per il tipo presentato. La funzione deve allocare memoria per l'intera struttura di dati che inizia dall'indirizzo indicato dal secondo parametro, ad eccezione del parametro stesso (lo stub alloca memoria per il nodo radice e la passa alla funzione). Il valore del secondo parametro non può essere modificato durante la chiamata. La funzione può modificare il contenuto in corrispondenza di tale indirizzo.
+Il **tipo denominato per la \_ \_ \_ funzione** locale deve gestire la memoria per il tipo presentato. La funzione deve allocare memoria per l'intera struttura di dati che inizia in corrispondenza dell'indirizzo indicato dal secondo parametro, ad eccezione del parametro stesso (lo stub alloca memoria per il nodo radice e lo passa alla funzione). Il valore del secondo parametro non può cambiare durante la chiamata. La funzione può modificare il contenuto in corrispondenza di tale indirizzo.
 
- 
+ 
 
- 
+ 
 
 
 

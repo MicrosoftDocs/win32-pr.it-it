@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetReaderByIndex.
 ms.assetid: 9d70b339-9772-4c13-949e-109f354f9986
-title: Funzione IWICMetadataBlockReader_GetReaderByIndex_Proxy
+title: IWICMetadataBlockReader_GetReaderByIndex_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: e2fc967f810b9ac8e43ad7da543bb1723500da48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1540e6ff0e24125f9381c0dd177dd9dc77ea6fb7f9096d45b88fd7489704f496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965190"
 ---
-# <a name="iwicmetadatablockreader_getreaderbyindex_proxy-function"></a>IWICMetadataBlockReader \_ GetReaderByIndex- \_ funzione proxy
+# <a name="iwicmetadatablockreader_getreaderbyindex_proxy-function"></a>Funzione proxy IWICMetadataBlockReader \_ GetReaderByIndex \_
 
-Funzione proxy per il metodo [**GetReaderByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex) .
+Funzione proxy per il [**metodo GetReaderByIndex.**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,23 +42,23 @@ HRESULT IWICMetadataBlockReader_GetReaderByIndex_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) \** _
+Tipo: **[ **IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)\***
 
-Puntatore a questo oggetto [_ *IWICMetadataBlockReader* *](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) .
+Puntatore a [**questo oggetto IWICMetadataBlockReader.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)
 
 </dd> <dt>
 
-*nIndex* \[ in\]
+*nIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dt>
 
-*ppIMetadataReader* \[ out\]
+*ppIMetadataReader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)\*\***
@@ -69,7 +69,7 @@ Tipo: **[ **IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsd
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -79,9 +79,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

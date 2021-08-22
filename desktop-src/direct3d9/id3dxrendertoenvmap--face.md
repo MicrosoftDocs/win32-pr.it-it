@@ -46,16 +46,16 @@ HRESULT Face(
 
 Tipo: **[ **VISI D3DCUBEMAP \_**](./d3dcubemap-faces.md)**
 
-Prima faccia della mappa cubo ambientale. Vedere [**D3DCUBEMAP \_ FACES (VISI D3DCUBEMAP).**](./d3dcubemap-faces.md)
+Prima faccia della mappa del cubo ambientale. Vedere [**VISI D3DCUBEMAP \_**](./d3dcubemap-faces.md).
 
 </dd> <dt>
 
-*Filtro mip* \[ Pollici\]
+*MipFilter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione valida di uno o più [flag \_ FILTER D3DX.](d3dx-filter.md)
+Combinazione valida di uno o più [flag FILTER \_ D3DX.](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato una volta per ogni tipo di mappa dell'ambiente. L'unica eccezione è una mappa di ambiente cubica che richiede che questo metodo sia chiamato sei volte, una volta per ogni viso in D3DCUBEMAP \_ FACES. Per altre informazioni, vedere [Environment Mapping (Direct3D 9) (Mapping dell'ambiente (Direct3D 9)](environment-mapping.md)).
+Questo metodo deve essere chiamato una volta per ogni tipo di mappa dell'ambiente. L'unica eccezione è una mappa dell'ambiente cubico che richiede che questo metodo sia chiamato sei volte, una volta per ogni viso in D3DCUBEMAP \_ FACES. Per altre informazioni, vedere [Mapping dell'ambiente (Direct3D 9).](environment-mapping.md)
 
 ## <a name="requirements"></a>Requisiti
 

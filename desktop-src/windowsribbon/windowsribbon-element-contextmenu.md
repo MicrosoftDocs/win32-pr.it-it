@@ -24,7 +24,7 @@ ms.locfileid: "118707434"
 
 Rappresenta un controllo menu di scelta rapida.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <ContextMenu

@@ -4,11 +4,11 @@ description: Specifica la directory di lavoro del programma di avvio.
 ms.assetid: e67f7274-be47-42c4-9267-a05bb93e6725
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà WorkDir
-- Servizi Desktop remoto proprietà WorkDir, interfaccia IMsTscSecuredSettings
-- Interfaccia IMsTscSecuredSettings Servizi Desktop remoto, proprietà WorkDir
-- Servizi Desktop remoto proprietà WorkDir, interfaccia IMsRdpClientSecuredSettings
-- Interfaccia IMsRdpClientSecuredSettings Servizi Desktop remoto, proprietà WorkDir
+- Proprietà WorkDir Servizi Desktop remoto
+- Proprietà WorkDir Servizi Desktop remoto, interfaccia IMsTscSecuredSettings
+- Interfaccia IMsTscSecuredSettings Servizi Desktop remoto , proprietà WorkDir
+- Proprietà WorkDir Servizi Desktop remoto, interfaccia IMsRdpClientSecuredSettings
+- Interfaccia IMsRdpClientSecuredSettings Servizi Desktop remoto , proprietà WorkDir
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a0a80b35ba682012150b4277d800bc4a3582e57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7cc6bd8ffe1e2d2f5b835090ee1dec5e3420a8bfb2d5801b3f5f903b3436bf66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118853143"
 ---
-# <a name="imstscsecuredsettingsworkdir-property"></a>Proprietà IMsTscSecuredSettings:: WorkDir
+# <a name="imstscsecuredsettingsworkdir-property"></a>Proprietà IMsTscSecuredSettings::WorkDir
 
 Specifica la directory di lavoro del programma di avvio.
 
@@ -54,17 +54,17 @@ HRESULT get_WorkDir(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuova directory di lavoro. La lunghezza massima di questa stringa è **Max \_ path**-1 caratteri.
+Nuova directory di lavoro. La lunghezza massima di questa stringa è **MAX \_ PATH**-1 caratteri.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni, vedere [la pagina relativa alla sicurezza dei client RDP](providing-for-rdp-client-security.md) .
+Per altre [informazioni, vedere Fornire per RDP Client Security.](providing-for-rdp-client-security.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IMsTscSecuredSettings è definito come c9d65442-A0F9-45b2-8f73-d61d2db8cbb6<br/> |
+| IID<br/>                      | IMSTscSecuredSettings IID è definito come \_ c9d65442-a0f9-45b2-8f73-d61d2db8cbb6<br/> |
 
 
 

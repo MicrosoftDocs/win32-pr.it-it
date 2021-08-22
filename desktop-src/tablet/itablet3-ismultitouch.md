@@ -1,5 +1,5 @@
 ---
-description: Determina se un dispositivo di input supporta multitocco.
+description: Determina se un dispositivo di input supporta multitouch.
 ms.assetid: 4fef7060-2235-4bee-a37b-40d827732b30
 title: Metodo ITablet3::IsMultiTouch
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118717300"
 ---
 # <a name="itablet3ismultitouch-method"></a>Metodo ITablet3::IsMultiTouch
 
-Determina se un dispositivo di input supporta multitocco.
+Determina se un dispositivo di input supporta multitouch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ HRESULT IsMultiTouch(
 *bIsMultiTouch* \[ Cambio\]
 </dt> <dd>
 
-Indica se il dispositivo è multitocco.
+Indica se il dispositivo è multitouch.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **S OK in \_ caso** di esito positivo. In caso contrario, restituisce un codice di errore, **ad esempio E \_ FAIL.**
+Restituisce **S \_ OK in** caso di esito positivo, in caso contrario restituisce un codice di errore, ad esempio E **\_ FAIL**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -82,7 +82,7 @@ spITablet3->get_IsMultiTouch(&b);
 
 <dl> <dt>
 
-[**Tabella ITablet3**](itablet3.md)
+[**ITablet3**](itablet3.md)
 </dt> <dt>
 
 [**MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled)

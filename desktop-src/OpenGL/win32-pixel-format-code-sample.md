@@ -1,23 +1,23 @@
 ---
-title: Esempio di codice in formato pixel Windows
-description: Nell'esempio di codice seguente viene illustrata una funzione che imposta il formato pixel mediante le funzioni di Windows
+title: Windows Esempio di codice per il formato pixel
+description: L'esempio di codice seguente illustra una funzione che imposta il formato pixel usando Windows funzioni
 ms.assetid: fa863999-72f1-4280-b278-d9336f62108d
 keywords:
-- pixel OpenGL, esempio di Windows
-- porting in OpenGL, pixel
-- Porting OpenGL, pixel
+- pixel OpenGL , Windows esempio
+- portabilità in OpenGL, pixel
+- Portabilità OpenGL, pixel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4328976a3622d19c3482aa2845c2094975dd7f74
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7fdd9569b6bef7dd273f6c3ff0370e2e4e44bbbbb6ec41362d1fb7dd32bd7745
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932781"
 ---
-# <a name="windows-pixel-format-code-sample"></a>Esempio di codice in formato pixel Windows
+# <a name="windows-pixel-format-code-sample"></a>Windows Esempio di codice per il formato pixel
 
-Nell'esempio di codice seguente viene illustrata una funzione che imposta il formato pixel utilizzando le funzioni di Windows:
+L'esempio di codice seguente illustra una funzione che imposta il formato pixel usando Windows seguenti:
 
 
 ```C++
@@ -59,9 +59,9 @@ BOOL bSetupPixelFormat(HDC hdc)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

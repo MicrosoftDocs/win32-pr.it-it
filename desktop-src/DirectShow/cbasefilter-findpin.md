@@ -1,5 +1,5 @@
 ---
-description: "Metodo CBaseFilter.FindPin: il metodo FindPin recupera il segnaposto con l'identificatore specificato. Questo metodo implementa il metodo IBaseFilter::FindPin."
+description: "Metodo CBaseFilter.FindPin: il metodo FindPin recupera il pin con l'identificatore specificato. Questo metodo implementa il metodo IBaseFilter::FindPin."
 ms.assetid: 152e4ff3-2809-4c57-b9c8-f51fc50b3703
 title: Metodo CBaseFilter.FindPin (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2bbef9b051a42597b2585a432f544eead4e2e0a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3818ef4356f11a2d003abe4e9442c4de06108aa32e50f480a3d097ea5db0c343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017189"
 ---
 # <a name="cbasefilterfindpin-method"></a>Metodo CBaseFilter.FindPin
 
@@ -46,7 +46,7 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione Null costante che identifica il segnaposto.
+Puntatore a una stringa Unicode costante con terminazione Null che identifica il pin.
 
 </dd> <dt>
 
@@ -66,8 +66,8 @@ Restituisce uno dei valori **HRESULT** seguenti.
 | Codice restituito                                                                                       | Descrizione                               |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>              | Operazione completata.<br/>                       |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>         | Argomento del puntatore **NULL.**<br/>     |
-| <dl> <dt>**VFW \_ E \_ NON \_ TROVATO**</dt> </dl> | Impossibile trovare un segnaposto corrispondente.<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>         | Argomento del puntatore **NULL.**<br/>     |
+| <dl> <dt>**VFW \_ E \_ NON \_ TROVATO**</dt> </dl> | Impossibile trovare un pin corrispondente.<br/> |
 
 
 
@@ -75,9 +75,9 @@ Restituisce uno dei valori **HRESULT** seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il [**metodo CBasePin::Name**](cbasepin-name.md) per confrontare il nome di ogni segnaposto con la stringa specificata dal *parametro Id.*
+Questo metodo chiama il [**metodo CBasePin::Name**](cbasepin-name.md) per confrontare il nome di ogni pin con la stringa specificata dal *parametro Id.*
 
-Se il metodo ha esito positivo, **l'interfaccia IPin** ha un conteggio dei riferimenti in sospeso. Al termine, assicurarsi di rilasciarlo.
+Se il metodo ha esito positivo, **l'interfaccia IPin** ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciarlo al termine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Se il metodo ha esito positivo, **l'interfaccia IPin** ha un conteggio dei rifer
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

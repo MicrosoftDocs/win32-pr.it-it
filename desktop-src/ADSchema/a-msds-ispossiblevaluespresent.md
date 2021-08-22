@@ -30,9 +30,9 @@ Questo attributo identifica se ms-DS-Claim-Possible-Values nella proprietà dell
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Is-Possible-Values-Present     |
-| Ldap-Display-Name | MsDS-IsPossibleValuesPresent         |
+| Ldap-Display-Name | msDS-IsPossibleValuesPresent         |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2186              |
 | System-Id-Guid    | 6fabdcda-8c53-204f-b1a4-9df0c67c1eb4 |
@@ -53,7 +53,7 @@ Questo attributo identifica se ms-DS-Claim-Possible-Values nella proprietà dell
 | ID collegamento                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Vero                                                    |
-| Is-Single-Valued       | Vero                                                    |
+| A valore singolo       | Vero                                                    |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                            |
@@ -61,7 +61,7 @@ Questo attributo identifica se ms-DS-Claim-Possible-Values nella proprietà dell
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi usate in        | [**ms-DS-Value-Type**](c-msds-valuetype.md)<br/> |
+| Classi usate in        | [**Ms-DS-Value-Type**](c-msds-valuetype.md)<br/> |
 
 
 

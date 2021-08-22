@@ -1,7 +1,7 @@
 ---
-description: Recupera le funzionalità di stampanti formattate in conformità con lo schema di stampa XML.
+description: Recupera le funzionalità delle stampanti formattate in conformità con XML Print Schema.
 ms.assetid: 15219c19-b64c-4c51-9357-15a797557693
-title: GetPrintCapabilitiesThunk2 (funzione)
+title: Funzione GetPrintCapabilitiesThunk2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: eb60f1cdabad6287e236fc099fc304e9e7de83ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55127d15eae41380fd5376ca54589488e255a740a7881042f54bc203873701f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971390"
 ---
-# <a name="getprintcapabilitiesthunk2-function"></a>GetPrintCapabilitiesThunk2 (funzione)
+# <a name="getprintcapabilitiesthunk2-function"></a>Funzione GetPrintCapabilitiesThunk2
 
-\[Questa funzione non è supportata e potrebbe essere disabilitata o eliminata nelle versioni future di Windows. [**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities) fornisce funzionalità equivalenti e deve essere usato in alternativa.\]
+\[Questa funzione non è supportata e potrebbe essere disabilitata o eliminata nelle versioni future Windows. [**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities) fornisce funzionalità equivalenti e deve essere usato.\]
 
-Recupera le funzionalità della stampante formattate in conformità con lo [schema di stampa](./printschema.md)XML.
+Recupera le funzionalità della stampante formattate in conformità con XML [Print Schema.](./printschema.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,51 +46,51 @@ HRESULT GetPrintCapabilitiesThunk2(
 
 <dl> <dt>
 
-*hProvider* \[ in\]
+*hProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle per un provider di ticket di stampa aperto. Questo handle viene restituito dalla funzione [**BindPTProviderThunk**](bindptproviderthunk.md) .
+Handle per un provider di ticket di stampa aperto. Questo handle viene restituito dalla [**funzione BindPTProviderThunk.**](bindptproviderthunk.md)
 
 </dd> <dt>
 
-*pPrintTicket* \[ in\]
+*pPrintTicket* \[ Pollici\]
 </dt> <dd>
 
-Buffer che contiene i dati del ticket di stampa, espressi in XML come descritto nello [schema di stampa](./printschema.md).
+Buffer che contiene i dati del ticket di stampa, espresso in XML come descritto in [Schema di stampa](./printschema.md).
 
 </dd> <dt>
 
-*cbPrintTicket* \[ in\]
+*cbPrintTicket* \[ Pollici\]
 </dt> <dd>
 
 Dimensione, in byte, del buffer a cui fa riferimento *pPrintTicket*.
 
 </dd> <dt>
 
-*ppbPrintCapabilities* \[ out\]
+*ppbPrintCapabilities* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo del buffer allocato da questa funzione e contenente le informazioni sulle funzionalità di stampa valide, codificate in formato XML. Questa funzione chiama [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) per allocare il buffer. Quando il buffer non è più necessario, il chiamante deve liberarlo chiamando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Indirizzo del buffer allocato da questa funzione e contenente le informazioni valide sulle funzionalità di stampa, codificate come XML. Questa funzione chiama [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) per allocare questo buffer. Quando il buffer non è più necessario, il chiamante deve liberarlo chiamando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 </dd> <dt>
 
-*pcbPrintCapabilitiesLength* \[ out\]
+*pcbPrintCapabilitiesLength* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer a cui fa riferimento *ppbPrintCapabilities*.
+Dimensione, in byte, del buffer a cui fa riferimento *ppbPrintCapabilities.*
 
 </dd> <dt>
 
 *pbstrErrorMessage* \[ out, facoltativo\]
 </dt> <dd>
 
-Puntatore a una stringa che specifica l'elemento, se presente, non valido per *pPrintTicket*. Se è valido, questo valore è **null**. Se *pbstrErrorMessage* è diverso da **null** quando la funzione restituisce, il chiamante deve liberare la stringa con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Puntatore a una stringa che specifica l'elemento che, se necessario, non è valido *per pPrintTicket.* Se è valido, questo valore è **NULL.** Se *pbstrErrorMessage* non è **NULL quando** la funzione restituisce , il chiamante deve liberare la stringa con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce **S \_ OK**. in caso contrario, restituisce un codice di errore **HRESULT** . Per ulteriori informazioni sui codici di errore COM, vedere [gestione degli errori](../com/error-handling-in-com.md).
+Se il metodo ha esito positivo, restituisce **S \_ OK;** in caso contrario, restituisce un **codice di errore HRESULT.** Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori](../com/error-handling-in-com.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,8 +98,8 @@ Se il metodo ha esito positivo, restituisce **S \_ OK**. in caso contrario, rest
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -111,7 +111,7 @@ Se il metodo ha esito positivo, restituisce **S \_ OK**. in caso contrario, rest
 [**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 </dt> <dt>
 
-[Stampa schema](./printschema.md)
+[Stampare lo schema](./printschema.md)
 </dt> <dt>
 
 [Stampa](printdocs-printing.md)

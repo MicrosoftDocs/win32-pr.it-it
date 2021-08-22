@@ -4,18 +4,18 @@ ms.assetid: 458c5418-94c5-4977-8203-f8299387c6da
 title: Definizione di operazioni in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31431390d3c95dbf4248ffeebc63f29f1fa6757d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87cf547e89c7767f6e04cd2bfb9cdc9e0b42123ce3c7c784c89a4b394af60bbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913784"
 ---
 # <a name="defining-operations-in-c"></a>Definizione di operazioni in C++
 
-In Gestione autorizzazioni un'operazione è una funzione o un metodo di basso livello di un'applicazione. Queste operazioni sono raggruppate come attività. Gli utenti dell'applicazione richiedono l'autorizzazione per completare le attività. Un'operazione è rappresentata da un oggetto [**IAzOperation**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) . Per ulteriori informazioni sulle operazioni, vedere [operazioni e attività](operations-and-tasks.md).
+In Gestione autorizzazioni un'operazione è una funzione o un metodo di basso livello di un'applicazione. Queste operazioni vengono raggruppate come attività. Gli utenti dell'applicazione richiedono l'autorizzazione per completare le attività. Un'operazione è rappresentata da un [**oggetto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Per altre informazioni sulle operazioni, vedere [Operazioni e attività.](operations-and-tasks.md)
 
-Nell'esempio seguente viene illustrato come definire le operazioni in un archivio dei criteri di autorizzazione. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che l'archivio contenga un'applicazione denominata Expense.
+Nell'esempio seguente viene illustrato come definire operazioni in un archivio criteri di autorizzazione. Nell'esempio si presuppone che sia presente un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che questo archivio contenga un'applicazione denominata Expense.
 
 
 ```C++

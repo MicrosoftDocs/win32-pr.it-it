@@ -1,19 +1,19 @@
 ---
-description: Viene creata un'istanza di questo modello in base a mesh solo in mesh che contengono informazioni di skinning esportate. Lo scopo di questo modello è fornire informazioni sulla natura delle informazioni di skinning esportate.
+description: Viene creata un'istanza di questo modello per ogni mesh solo nelle mesh che contengono informazioni di skinning esportate. Lo scopo di questo modello è fornire informazioni sulla natura delle informazioni di skinning esportate.
 ms.assetid: 95a4fa45-63d1-4931-9c91-b26807d2b043
 title: XSkinMeshHeader
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 306f8c183086846fca020040af00b9ccef2665cc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 78c86127e46809cd1415b191a769b25e09535405e6500e511df6248e6174888d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118796855"
 ---
 # <a name="xskinmeshheader"></a>XSkinMeshHeader
 
-Viene creata un'istanza di questo modello in base a mesh solo in mesh che contengono informazioni di skinning esportate. Lo scopo di questo modello è fornire informazioni sulla natura delle informazioni di skinning esportate.
+Viene creata un'istanza di questo modello per ogni mesh solo nelle mesh che contengono informazioni di skinning esportate. Lo scopo di questo modello è fornire informazioni sulla natura delle informazioni di skinning esportate.
 
 ``` syntax
 template XSkinMeshHeader 
@@ -28,8 +28,8 @@ template XSkinMeshHeader
 Dove:
 
 -   nMaxSkinWeightsPerVertex: numero massimo di trasformazioni che interessano un vertice nella mesh.
--   nMaxSkinWeightsPerFace: numero massimo di trasformazioni univoche che interessano i tre vertici di qualsiasi faccia.
--   nBones: numero di ossa che interessano i vertici in questa mesh.
+-   nMaxSkinWeightsPerFace: numero massimo di trasformazioni univoche che influiscono sui tre vertici di qualsiasi viso.
+-   nBones : numero di esche che influiscono sui vertici in questa mesh.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -4,12 +4,12 @@ ms.assetid: 7a947320-ae05-4b17-82bc-f6100a0450da
 title: System.Media.DateReleased
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab106ee47acaa8e2feacc9004d2a0f9fc5f29c1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cb7b7b6c278f810ab3cdf46e40101601a82f129ba32384d36390fb8de9ceed58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725565"
 ---
 # <a name="systemmediadatereleased"></a>System.Media.DateReleased
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un oggetto utile per gli scenari di annotazione in cui gli utenti non sono interessati a eseguire il riconoscimento sull'input penna ma sono interessati alla dimensione, alla forma, al colore e alla posizione dell'input penna.
+description: Rappresenta un oggetto utile per gli scenari di annotazione in cui gli utenti non sono interessati a eseguire il riconoscimento sull'input penna, ma sono invece interessati alle dimensioni, alla forma, al colore e alla posizione dell'input penna.
 ms.assetid: 61191ab3-075e-458b-9e0f-4bc255687b3c
-title: Classe InkOverlay (Msinkaut. h)
+title: Classe InkOverlay (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: bfcc6cc4daedf0ed1bbc43e2ccc78317f9d7e17c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1a818c1fef9006abad2dd31da5a41f43aeb3df9a9b75d348d8987938abfcea6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967120"
 ---
-# <a name="inkoverlay-class"></a>InkOverlay (classe)
+# <a name="inkoverlay-class"></a>Classe InkOverlay
 
-Rappresenta un oggetto utile per gli scenari di annotazione in cui gli utenti non sono interessati a eseguire il riconoscimento sull'input penna ma sono interessati alla dimensione, alla forma, al colore e alla posizione dell'input penna.
+Rappresenta un oggetto utile per gli scenari di annotazione in cui gli utenti non sono interessati a eseguire il riconoscimento sull'input penna, ma sono invece interessati alle dimensioni, alla forma, al colore e alla posizione dell'input penna.
 
-La creazione del controllo **InkOverlay** dietro un controllo trasparente, ad esempio un GroupBox con il \_ set di proprietà WS ex \_ trasparente, impedisce a **InkOverlay** di raccogliere input penna.
+La creazione **del controllo InkOverlay** dietro un controllo trasparente (ad esempio un controllo GroupBox con il set di proprietà WS EX TRANSPARENT) impedirà a \_ \_ **InkOverlay** di raccogliere input penna.
 
-**InkOverlay** presenta questi tipi di membri:
+**InkOverlay** ha questi tipi di membri:
 
 -   [Eventi](#events)
 -   [Interfacce](#interfaces)
@@ -37,39 +37,39 @@ La creazione del controllo **InkOverlay** dietro un controllo trasparente, ad es
 
 ### <a name="events"></a>Eventi
 
-La classe **InkOverlay** presenta questi eventi.
+La **classe InkOverlay** include questi eventi.
 
 
 
 | Event                                                     | Descrizione                                                                                                                                                                                                                                               |
 |:----------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CursorButtonDown**](inkcollector-cursorbuttondown.md) | Si verifica quando l'oggetto **InkOverlay** rileva un pulsante del cursore inattivo.<br/>                                                                                                                                                                           |
-| [**CursorButtonUp**](inkcollector-cursorbuttonup.md)     | Si verifica quando l'oggetto **InkOverlay** rileva un pulsante del cursore che è attivo.<br/>                                                                                                                                                                             |
-| [**CursorDown**](inkcollector-cursordown.md)             | Si verifica quando il suggerimento del cursore Contatta la superficie del Tablet di digitalizzazione.<br/>                                                                                                                                                                             |
-| [**CursorInRange**](inkcollector-cursorinrange.md)       | Si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.<br/>                                                                                                                                                    |
-| [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) | Si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tavoletta.<br/>                                                                                                                                                  |
-| [**DoubleClick**](inkcollector-doubleclick.md)           | Si verifica quando si fa doppio clic sull'oggetto **InkOverlay** .<br/>                                                                                                                                                                                       |
+| [**CursorButtonDown**](inkcollector-cursorbuttondown.md) | Si verifica quando **InkOverlay rileva** un pulsante del cursore verso il basso.<br/>                                                                                                                                                                           |
+| [**CursorButtonUp**](inkcollector-cursorbuttonup.md)     | Si verifica quando **InkOverlay rileva** un pulsante del cursore verso l'alto.<br/>                                                                                                                                                                             |
+| [**CursorDown**](inkcollector-cursordown.md)             | Si verifica quando la punta del cursore contatta la superficie del tablet di digitalizzazione.<br/>                                                                                                                                                                             |
+| [**Cursorinrange**](inkcollector-cursorinrange.md)       | Si verifica quando un cursore entra nell'intervallo di rilevamento fisico (prossimità) del contesto della tablet.<br/>                                                                                                                                                    |
+| [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) | Si verifica quando il cursore esce dall'intervallo di rilevamento fisico (prossimità) del contesto della tablet.<br/>                                                                                                                                                  |
+| [**Doubleclick**](inkcollector-doubleclick.md)           | Si verifica quando si fa doppio clic sull'oggetto **InkOverlay.**<br/>                                                                                                                                                                                       |
 | [**Movimento**](inkcollector-gesture.md)                   | Si verifica quando viene riconosciuto un movimento specifico dell'applicazione.<br/>                                                                                                                                                                                     |
-| [**MouseDown**](inkcollector-mousedown.md)               | Si verifica quando il puntatore del mouse si trova sull'oggetto **InkOverlay** e viene premuto un pulsante del mouse.<br/>                                                                                                                                                 |
-| [**MouseMove**](inkcollector-mousemove.md)               | Si verifica quando il puntatore del mouse viene spostato sull'oggetto **InkOverlay** .<br/>                                                                                                                                                                         |
-| [**MouseUp**](inkcollector-mouseup.md)                   | Si verifica quando il puntatore del mouse si trova sull'oggetto **InkOverlay** e viene rilasciato un pulsante del mouse.<br/>                                                                                                                                                |
-| [**MouseWheel**](inkcollector-mousewheel.md)             | Si verifica quando viene spostata la rotellina del mouse mentre l'oggetto **InkOverlay** dispone dello stato attivo.<br/>                                                                                                                                                                   |
-| [**NewInAirPackets**](inkcollector-newinairpackets.md)   | Si verifica quando viene rilevato un pacchetto in aria, che si verifica quando un utente sposta una penna accanto al tablet e il cursore si trova all'interno della finestra dell'oggetto **InkOverlay** oppure l'utente sposta il mouse all'interno della finestra associata dell'oggetto **InkOverlay** .<br/> |
-| [**NewPackets**](inkcollector-newpackets.md)             | Si verifica quando l'oggetto **InkOverlay** riceve i pacchetti.<br/>                                                                                                                                                                                        |
-| [**Dipinto**](inkoverlay-painted.md)                     | Si verifica quando l'oggetto **InkOverlay** ha completato il ridisegno.<br/>                                                                                                                                                                          |
-| [**Disegno**](inkoverlay-painting.md)                   | Si verifica prima che l'oggetto **InkOverlay** venga ridisegnato.<br/>                                                                                                                                                                                        |
-| [**SelectionChanged**](inkoverlay-selectionchanged.md)   | Si verifica quando la selezione dell'input penna all'interno del controllo viene modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                       |
-| [**SelectionChanging**](inkoverlay-selectionchanging.md) | Si verifica quando la selezione dell'input penna all'interno del controllo sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                |
-| [**SelectionMoved**](inkoverlay-selectionmoved.md)       | Si verifica quando la posizione della selezione corrente viene modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                         |
-| [**SelectionMoving**](inkoverlay-selectionmoving.md)     | Si verifica quando la posizione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                  |
-| [**SelectionResized**](inkoverlay-selectionresized.md)   | Si verifica quando la dimensione della selezione corrente viene modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                             |
-| [**SelectionResizing**](inkoverlay-selectionresizing.md) | Si verifica quando la dimensione della selezione corrente sta per essere modificata, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .<br/>                                      |
-| [**Stroke**](inkcollector-stroke.md)                     | Si verifica quando l'utente completa il disegno di un nuovo tratto su un tablet.<br/>                                                                                                                                                                              |
-| [**StrokesDeleted**](inkoverlay-strokesdeleted.md)       | Si verifica dopo l'eliminazione dei tratti dalla proprietà [**Ink**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink) .<br/>                                                                                                                                                      |
-| [**StrokesDeleting**](inkoverlay-strokesdeleting.md)     | Si verifica prima che i tratti vengano eliminati dalla proprietà [**Ink**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink) .<br/>                                                                                                                                                           |
-| [**SystemGesture**](inkcollector-systemgesture.md)       | Si verifica quando viene riconosciuto un movimento del sistema.<br/>                                                                                                                                                                                                    |
-| [**TabletAdded**](inkcollector-tabletadded.md)           | Si verifica quando un [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene aggiunto al sistema.<br/>                                                                                                                                                                        |
-| [**TabletRemoved**](inkcollector-tabletremoved.md)       | Si verifica quando un [**Tablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene rimosso dal sistema.<br/>                                                                                                                                                                         |
+| [**Mousedown**](inkcollector-mousedown.md)               | Si verifica quando il puntatore del mouse si trova **sull'oggetto InkOverlay** e viene premuto un pulsante del mouse.<br/>                                                                                                                                                 |
+| [**Mousemove**](inkcollector-mousemove.md)               | Si verifica quando il puntatore del mouse viene spostato **sull'oggetto InkOverlay.**<br/>                                                                                                                                                                         |
+| [**Mouseup**](inkcollector-mouseup.md)                   | Si verifica quando il puntatore del mouse si trova **sull'oggetto InkOverlay** e viene rilasciato un pulsante del mouse.<br/>                                                                                                                                                |
+| [**Mousewheel**](inkcollector-mousewheel.md)             | Si verifica quando la rotellina del mouse si sposta mentre **l'oggetto InkOverlay** ha lo stato attivo.<br/>                                                                                                                                                                   |
+| [**NewInAirPackets**](inkcollector-newinairpackets.md)   | Si verifica quando viene visualizzato un pacchetto in aria, che si verifica quando un utente sposta una penna accanto al tablet e il cursore si trova all'interno della finestra dell'oggetto **InkOverlay** oppure quando l'utente sposta un mouse all'interno della finestra associata dell'oggetto **InkOverlay.**<br/> |
+| [**NewPackets**](inkcollector-newpackets.md)             | Si verifica quando **l'oggetto InkOverlay** riceve pacchetti.<br/>                                                                                                                                                                                        |
+| [**Dipinto**](inkoverlay-painted.md)                     | Si verifica quando **l'oggetto InkOverlay** ha completato il ridisegno di se stesso.<br/>                                                                                                                                                                          |
+| [**Pittura**](inkoverlay-painting.md)                   | Si verifica prima **che l'oggetto InkOverlay** venga ridisegnato.<br/>                                                                                                                                                                                        |
+| [**SelectionChanged**](inkoverlay-selectionchanged.md)   | Si verifica quando la selezione dell'input penna all'interno del controllo viene modificata, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                       |
+| [**Selectionchanging**](inkoverlay-selectionchanging.md) | Si verifica quando la selezione dell'input penna all'interno del controllo sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure di taglia e incolla o la [**proprietà Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                |
+| [**SelectionMoved**](inkoverlay-selectionmoved.md)       | Si verifica quando la posizione della selezione corrente viene modificata, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                         |
+| [**SelectionMoving**](inkoverlay-selectionmoving.md)     | Si verifica quando la posizione della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                  |
+| [**SelectionResized**](inkoverlay-selectionresized.md)   | Si verifica quando vengono modificate le dimensioni della selezione corrente, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                             |
+| [**Selectionresizing**](inkoverlay-selectionresizing.md) | Si verifica quando le dimensioni della selezione corrente sta per cambiare, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                      |
+| [**infarto**](inkcollector-stroke.md)                     | Si verifica quando l'utente termina di disegnare un nuovo tratto su qualsiasi tablet.<br/>                                                                                                                                                                              |
+| [**StrokesDeleted**](inkoverlay-strokesdeleted.md)       | Si verifica dopo l'eliminazione dei tratti dalla [**proprietà Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink)<br/>                                                                                                                                                      |
+| [**StrokesDeleting**](inkoverlay-strokesdeleting.md)     | Si verifica prima dell'eliminazione dei tratti dalla [**proprietà Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink)<br/>                                                                                                                                                           |
+| [**SystemGesture**](inkcollector-systemgesture.md)       | Si verifica quando viene riconosciuto un movimento di sistema.<br/>                                                                                                                                                                                                    |
+| [**TabletAggiunta**](inkcollector-tabletadded.md)           | Si verifica quando [**un oggetto IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene aggiunto al sistema.<br/>                                                                                                                                                                        |
+| [**TabletRemoved**](inkcollector-tabletremoved.md)       | Si verifica quando [**un tablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) viene rimosso dal sistema.<br/>                                                                                                                                                                         |
 
 
 
@@ -77,13 +77,13 @@ La classe **InkOverlay** presenta questi eventi.
 
 ### <a name="interfaces"></a>Interfacce
 
-La classe **InkOverlay** definisce queste interfacce.
+La **classe InkOverlay** definisce queste interfacce.
 
 
 
 | Interfaccia       | Descrizione                                                          |
 |:----------------|:---------------------------------------------------------------------|
-| **IInkOverlay** | Questo oggetto implementa l'interfaccia com **IInkOverlay** .<br/> |
+| **IInkOverlay** | Questo oggetto implementa **l'interfaccia COM IInkOverlay.**<br/> |
 
 
 
@@ -91,22 +91,22 @@ La classe **InkOverlay** definisce queste interfacce.
 
 ### <a name="methods"></a>Metodi
 
-La classe **InkOverlay** presenta questi metodi.
+La **classe InkOverlay** include questi metodi.
 
 
 
 | Metodo                                                                              | Descrizione                                                                                                                                                |
 |:------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Disegna**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-draw)                                                     | Imposta un rettangolo in cui ricreare l'input penna nell'oggetto **InkOverlay** .<br/>                                                                   |
-| [**GetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-geteventinterest)                           | Restituisce lo stato corrente di un determinato evento dell'oggetto **InkOverlay** , ovvero se l'evento viene ascoltato o utilizzato.<br/>                |
-| [**GetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getgesturestatus)                           | Restituisce un valore che indica se l'oggetto **InkOverlay** è interessato a un movimento particolare.<br/>                                                                |
+| [**Disegna**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-draw)                                                     | Imposta un rettangolo in cui ridisegnare l'input penna all'interno **dell'oggetto InkOverlay.**<br/>                                                                   |
+| [**GetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-geteventinterest)                           | Restituisce lo stato corrente di un particolare **evento dell'oggetto InkOverlay,** indipendentemente dal fatto che l'evento sia in ascolto o usato.<br/>                |
+| [**GetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getgesturestatus)                           | Restituisce un valore che indica se **l'oggetto InkOverlay** è interessato a un particolare movimento.<br/>                                                                |
 | [**GetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getwindowinputrectangle)             | Recupera il rettangolo della finestra, in pixel, all'interno del quale viene disegnato l'input penna.<br/>                                                                           |
-| [**HitTestSelection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-hittestselection)                             | Determina quale parte della selezione è stata raggiunta durante un hit test.<br/>                                                                             |
-| [**SetAllTabletsMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setalltabletsmode)                         | Questa modalità consente all'oggetto **InkOverlay** di raccogliere input penna da qualsiasi tablet collegato al Tablet PC.<br/>                                            |
-| [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest)                           | Imposta un valore che indica se è necessario ascoltare o utilizzare un evento specifico.<br/>                                                                                   |
-| [**SetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setgesturestatus)                           | Imposta l'interesse dell'oggetto **InkOverlay** in un movimento noto.<br/>                                                                              |
-| [**SetSingleTabletIntegratedMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setsingletabletintegratedmode) | Questa modalità consente all'oggetto **InkOverlay** di raccogliere l'input penna da un solo tablet. L'input penna da altre tavolette viene ignorato dall'oggetto **InkOverlay** .<br/> |
-| [**SetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setwindowinputrectangle)             | Imposta il rettangolo della finestra, in pixel, da utilizzare per eseguire il mapping dell'input penna alla finestra.<br/>                                                                    |
+| [**HitTestSelection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-hittestselection)                             | Determina quale parte della selezione è stata selezionata durante un hit test.<br/>                                                                             |
+| [**SetAllTabletsMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setalltabletsmode)                         | Questa modalità consente **all'oggetto InkOverlay** di raccogliere input penna da qualsiasi tablet collegato al Tablet PC.<br/>                                            |
+| [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest)                           | Imposta un valore che indica se un evento specifico deve essere in ascolto o utilizzato.<br/>                                                                                   |
+| [**SetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setgesturestatus)                           | Imposta l'interesse **dell'oggetto InkOverlay** in un movimento noto.<br/>                                                                              |
+| [**SetSingleTabletIntegratedMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setsingletabletintegratedmode) | Questa modalità consente **all'oggetto InkOverlay** di raccogliere input penna da un solo tablet. L'input penna di altre tablet viene ignorato **dall'oggetto InkOverlay.**<br/> |
+| [**SetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setwindowinputrectangle)             | Imposta il rettangolo della finestra, in pixel, da usare per mappare l'input penna disegnato alla finestra.<br/>                                                                    |
 
 
 
@@ -114,43 +114,43 @@ La classe **InkOverlay** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **InkOverlay** dispone di queste proprietà.
+La **classe InkOverlay** ha queste proprietà.
 
 
 
 | Proprietà                                                                                       | Tipo di accesso           | Descrizione                                                                                                                                                                                  |
 |:-----------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AttachMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_attachmode)<br/>                                         | Lettura/Scrittura<br/> | Ottiene o imposta il valore che specifica se l'oggetto **InkOverlay** è associato dietro o davanti alla finestra nota.<br/>                                                       |
-| [**AutoRedraw**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_autoredraw)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se l'oggetto **InkOverlay** ridisegna l'input penna quando la finestra viene invalidata.<br/>                                                                   |
-| [**CollectingInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectingink)<br/>                                 | Sola lettura<br/>  | Ottiene un valore che specifica se l'input penna è attualmente in fase di disegno su un oggetto **InkOverlay** .<br/>                                                                                     |
-| [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode)<br/>                               | Lettura/Scrittura<br/> | Ottiene o imposta la modalità di raccolta che determina se l'input penna, i movimenti o entrambi sono riconosciuti durante la scrittura dell'utente.<br/>                                                                |
-| [**Cursori**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_cursors)<br/>                                             | Sola lettura<br/>  | Ottiene l'insieme di [**cursori**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursors) che è possibile utilizzare nell'area Inking.<br/>                                                                                |
-| [**DefaultDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_defaultdrawingattributes)<br/>           | Lettura/Scrittura<br/> | Ottiene o imposta l'oggetto [**InkDrawingAttributes**](inkdrawingattributes-class.md) predefinito, che specifica gli attributi di disegno utilizzati durante il disegno e la visualizzazione dell'input penna.<br/> |
-| [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription)<br/>           | Lettura/Scrittura<br/> | Ottiene o imposta un interesse per gli aspetti del pacchetto associato all'input penna disegnato sull'oggetto **InkOverlay** .<br/>                                                                            |
-| [**DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_dynamicrendering)<br/>                             | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se viene eseguito il rendering dell'input penna quando viene disegnato.<br/>                                                                                                       |
-| [**EditingMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_editingmode)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se l'oggetto **InkOverlay** è in modalità input penna, modalità di eliminazione o modalità di selezione o modifica.<br/>                                                          |
-| [**Abilitato**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_enabled)<br/>                                             | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se l'oggetto **InkOverlay** raccoglie l'input penna.<br/>                                                                                         |
-| [**EraserMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_erasermode)<br/>                                         | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se l'input penna è stato cancellato dal tratto o dal punto.<br/>                                                                                                  |
-| [**EraserWidth**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_eraserwidth)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica la larghezza della descrizione della penna della gomma.<br/>                                                                                                              |
-| [**Handle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_hwnd)<br/>                                                 | Lettura/Scrittura<br/> | Ottiene o imposta l'handle della finestra a cui è associato l'oggetto **InkOverlay** .<br/>                                                                                             |
-| [**Input penna**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_ink)<br/>                                                       | Lettura/Scrittura<br/> | Ottiene o imposta l'oggetto [**InkDisp**](inkdisp-class.md) associato all'oggetto **InkOverlay** .<br/>                                                                       |
+| [**AttachMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_attachmode)<br/>                                         | Lettura/Scrittura<br/> | Ottiene o imposta il valore che specifica se **l'oggetto InkOverlay** è collegato dietro o davanti alla finestra nota.<br/>                                                       |
+| [**Ridisegno automatico**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_autoredraw)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se **InkOverlay** ridisegna l'input penna quando la finestra viene invalidata.<br/>                                                                   |
+| [**CollectingInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectingink)<br/>                                 | Sola lettura<br/>  | Ottiene un valore che specifica se l'input penna è attualmente disegnato su un **oggetto InkOverlay.**<br/>                                                                                     |
+| [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode)<br/>                               | Lettura/Scrittura<br/> | Ottiene o imposta la modalità di raccolta che determina se l'input penna, i movimenti o entrambi vengono riconosciuti durante la scrittura da parte dell'utente.<br/>                                                                |
+| [**Cursori**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_cursors)<br/>                                             | Sola lettura<br/>  | Ottiene la [**raccolta Cursors**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursors) disponibile per l'uso nell'area input penna.<br/>                                                                                |
+| [**DefaultDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_defaultdrawingattributes)<br/>           | Lettura/Scrittura<br/> | Ottiene o imposta [**l'oggetto InkDrawingAttributes**](inkdrawingattributes-class.md) predefinito, che specifica gli attributi di disegno utilizzati per disegnare e visualizzare l'input penna.<br/> |
+| [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription)<br/>           | Lettura/Scrittura<br/> | Ottiene o imposta l'interesse per gli aspetti del pacchetto associato all'input penna disegnato **sull'oggetto InkOverlay.**<br/>                                                                            |
+| [**DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_dynamicrendering)<br/>                             | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se viene eseguito il rendering dell'input penna mentre viene disegnato.<br/>                                                                                                       |
+| [**EditingMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_editingmode)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se **InkOverlay** è in modalità input penna, modalità di eliminazione o modalità di selezione/modifica.<br/>                                                          |
+| [**Abilitato**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_enabled)<br/>                                             | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se **l'oggetto InkOverlay** raccoglie l'input penna.<br/>                                                                                         |
+| [**EraserMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_erasermode)<br/>                                         | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica se l'input penna viene cancellato dal tratto o dal punto.<br/>                                                                                                  |
+| [**EraserWidth**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_eraserwidth)<br/>                                       | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica la larghezza della punta della penna della gomma.<br/>                                                                                                              |
+| [**Handle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_hwnd)<br/>                                                 | Lettura/Scrittura<br/> | Ottiene o imposta l'handle della finestra a cui è collegato **l'oggetto InkOverlay.**<br/>                                                                                             |
+| [**Input penna**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_ink)<br/>                                                       | Lettura/Scrittura<br/> | Ottiene o imposta [**l'oggetto InkDisp**](inkdisp-class.md) associato all'oggetto **InkOverlay.**<br/>                                                                       |
 | [**MarginX**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_marginx)<br/>                                             | Lettura/Scrittura<br/> | Ottiene o imposta i margini lungo l'asse x, in pixel.<br/>                                                                                                                             |
 | [**MarginY**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_marginy)<br/>                                             | Lettura/Scrittura<br/> | Ottiene o imposta i margini lungo l'asse y, in pixel.<br/>                                                                                                                             |
 | [**MouseIcon**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_mouseicon)<br/>                                         | Lettura/Scrittura<br/> | Ottiene o imposta l'icona del mouse personalizzata corrente.<br/>                                                                                                                                       |
-| [**MousePointer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_mousepointer)<br/>                                   | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica il tipo di puntatore del mouse visualizzato quando il mouse si trova su una particolare parte dell'oggetto.<br/>                                                |
-| [**Renderer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_renderer)<br/>                                           | Lettura/Scrittura<br/> | Ottiene o imposta l'oggetto [**InkRenderer**](inkrenderer-class.md) utilizzato per creare input penna.<br/>                                                                                        |
-| [**Selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                           | Lettura/Scrittura<br/> | Ottiene o imposta la raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) attualmente selezionata all'interno del controllo **InkOverlay** .<br/>                                                 |
-| [**SupportHighContrastInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_supporthighcontrastink)<br/>               | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se viene eseguito il rendering dell'input penna come un solo colore quando il sistema è in modalità Contrasto elevato.<br/>                                                           |
-| [**SupportHighContrastSelectionUI**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_supporthighcontrastselectionui)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se l'interfaccia utente di selezione viene disegnata in un contrasto elevato quando il sistema è in modalità Contrasto elevato.<br/>                                                  |
-| [**Tablet**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_tablet)<br/>                                                  | Sola lettura<br/>  | Ottiene la tavoletta utilizzata attualmente dall'oggetto **InkOverlay** per raccogliere l'input.<br/>                                                                                        |
+| [**Mousepointer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_mousepointer)<br/>                                   | Lettura/Scrittura<br/> | Ottiene o imposta un valore che indica il tipo di puntatore del mouse visualizzato quando il mouse si trova su una particolare parte dell'oggetto .<br/>                                                |
+| [**Renderer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_renderer)<br/>                                           | Lettura/Scrittura<br/> | Ottiene o imposta [**l'oggetto InkRenderer**](inkrenderer-class.md) utilizzato per disegnare l'input penna.<br/>                                                                                        |
+| [**Selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)<br/>                                           | Lettura/Scrittura<br/> | Ottiene o imposta la [raccolta InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) attualmente selezionata all'interno del **controllo InkOverlay.**<br/>                                                 |
+| [**SupportHighContrastInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_supporthighcontrastink)<br/>               | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se viene eseguito il rendering dell'input penna come un solo colore quando il sistema è in Contrasto elevato predefinita.<br/>                                                           |
+| [**SupportHighContrastSelectionUI**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_supporthighcontrastselectionui)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un valore che specifica se tutta l'interfaccia utente di selezione viene disegnata a contrasto elevato quando il sistema è in Contrasto elevato attiva.<br/>                                                  |
+| [**Tablet**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_tablet)<br/>                                                  | Sola lettura<br/>  | Ottiene il dispositivo tablet attualmente **utilizzato dall'oggetto InkOverlay** per raccogliere l'input.<br/>                                                                                        |
 
 
 
  
 
-## <a name="mfc-implementation-notes"></a>Note sull'implementazione MFC
+## <a name="mfc-implementation-notes"></a>Note sull'implementazione di MFC
 
-Se l'oggetto InkOverlay è stato collegato a un oggetto CView, rilasciare l'oggetto InkOverlay in risposta al \_ messaggio WM Destroy come illustrato nell'esempio seguente:
+Se l'oggetto InkOverlay è stato collegato a un oggetto CView, rilasciare l'oggetto InkOverlay in risposta al messaggio WM DESTROY, come illustrato \_ nell'esempio seguente:
 
 
 ```C++
@@ -166,27 +166,27 @@ BOOL CRecognitionAlternatesSampleCppView::OnWndMsg(UINT msg, WPARAM wp, PARAM lp
 
 ## <a name="remarks"></a>Commenti
 
-È possibile creare un'istanza di questo oggetto chiamando il metodo [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) in C++.
+È possibile creare un'istanza di questo oggetto chiamando il [**metodo CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) in C++.
 
-L'oggetto **InkOverlay** è particolarmente adatto per l'acquisizione di note e per la creazione di un scarabocchio di base. L'utilizzo previsto principale di questo oggetto consiste nel visualizzare input penna come input penna.
+**L'oggetto InkOverlay** è particolarmente adatto per l'acquisizione di note e lo scribbling di base. L'uso principale previsto di questo oggetto è visualizzare l'input penna come input penna.
 
 In generale, l'interfaccia utente di run-time per questo oggetto è una finestra trasparente con input penna opaco.
 
-Gli eventi [**MouseDown**](inkcollector-mousedown.md), [**MouseMove**](inkcollector-mousemove.md), [**MouseUp**](inkcollector-mouseup.md)e [**MouseWheel**](inkcollector-mousewheel.md) restituiscono coordinate x e y in pixel e non le unità HIMETRIC associate allo spazio di input penna. Questo è dovuto al fatto che questi eventi sostituiscono gli eventi del mouse per le applicazioni non compatibili con la penna e queste applicazioni comprendono solo i pixel.
+Gli [**eventi MouseDown**](inkcollector-mousedown.md), [**MouseMove**](inkcollector-mousemove.md), [**MouseUp**](inkcollector-mouseup.md)e [**MouseWheel**](inkcollector-mousewheel.md) restituiscono le coordinate x e y in pixel e non le unità HIMETRIC associate allo spazio input penna. Questo perché questi eventi sostituiscono gli eventi del mouse delle applicazioni che non lo sono e queste applicazioni comprendono solo i pixel.
 
 > [!Caution]  
-> Se si imposta la proprietà [**AttachMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_attachmode) dell'oggetto **InkOverlay** su Infront, creare l'oggetto **InkOverlay** nel thread in cui è in esecuzione il form. L'applicazione potrebbe smettere di rispondere se l'oggetto **InkOverlay** viene creato in un thread diverso e la relativa proprietà **AttachMode** è impostata su Infront.
+> Se si imposta la proprietà [**AttachMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_attachmode) dell'oggetto **InkOverlay** su InFront, creare l'oggetto **InkOverlay** nel thread in cui è in esecuzione il form. L'applicazione potrebbe bloccarsi se **l'oggetto InkOverlay** viene creato in un thread diverso e la relativa proprietà **AttachMode** è impostata su InFront.
 
  
 
 > [!Note]  
-> Non è possibile rilasciare in modo sicuro l'oggetto **InkOverlay** in un thread non dell'interfaccia utente.
+> **L'oggetto InkOverlay** non può essere rilasciato in modo sicuro in un thread non dell'interfaccia utente.
 
  
 
-Per migliorare le prestazioni dell'applicazione, eliminare l'oggetto **InkOverlay** quando non è più necessario.
+Per migliorare le prestazioni dell'applicazione, eliminare **l'oggetto InkOverlay** quando non è più necessario.
 
-Se l'oggetto InkOverlay è stato collegato a un oggetto CView, rilasciare l'oggetto InkOverlay in risposta al \_ messaggio WM Destroy come illustrato nell'esempio seguente:
+Se l'oggetto InkOverlay è stato collegato a un oggetto CView, rilasciare l'oggetto InkOverlay in risposta al messaggio WM DESTROY, come illustrato \_ nell'esempio seguente:
 
 
 ```C++
@@ -206,9 +206,9 @@ BOOL CRecognitionAlternatesSampleCppView::OnWndMsg(UINT msg, WPARAM wp, PARAM lp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -220,10 +220,10 @@ BOOL CRecognitionAlternatesSampleCppView::OnWndMsg(UINT msg, WPARAM wp, PARAM lp
 [**Classe InkCollector**](inkcollector-class.md)
 </dt> <dt>
 
-[Riferimento al controllo InkPicture](inkpicture-control-reference.md)
+[Informazioni di riferimento sul controllo InkPicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[Riferimento al controllo InkEdit](inkedit-control-reference.md)
+[Informazioni di riferimento sul controllo InkEdit](inkedit-control-reference.md)
 </dt> </dl>
 
  

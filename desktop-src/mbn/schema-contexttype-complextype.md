@@ -1,5 +1,5 @@
 ---
-description: Specifica il contesto connenction di un dispositivo mobile broadband.
+description: Specifica il contesto di connessione di un dispositivo Mobile Broadband.
 ms.assetid: 513e744d-bd62-43e9-a636-6690867d8b9b
 title: Tipo complesso contextType
 ms.topic: reference
@@ -11,16 +11,16 @@ api_name:
 - contextType
 api_type:
 - Schema
-ms.openlocfilehash: 63d221c6bd388196abfb73a8ac38a26de516d0df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58189cf27f667b3d7e5e6c387a52143b8c757724106e8d9941d31d2582002b0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744448"
 ---
 # <a name="contexttype-complex-type"></a>Tipo complesso contextType
 
-Il tipo complesso **contextType** specifica il contesto connenction di un dispositivo mobile broadband.
+Il **tipo complesso contextType** specifica il contesto di connessione di un dispositivo Mobile Broadband.
 
 ``` syntax
 <xs:complexType name="contextType">
@@ -108,12 +108,12 @@ Il tipo complesso **contextType** specifica il contesto connenction di un dispos
 
 | Elemento                                                               | Tipo                                           | Descrizione                                                                                    |
 |-----------------------------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [**AccessString**](schema-accessstring-contexttype-element.md)       |                                                | APN o stringa di connessione da usare per stabilire una connessione dati<br/>                        |
-| [**AuthProtocol**](schema-authprotocol-contexttype-element.md)       |                                                | Protocollo di autenticazione da usare per l'attivazione di un contesto di PDP.<br/>                    |
-| [**Compressione**](schema-compression-contexttype-element.md)         |                                                | Specifica se la compressione verrà utilizzata nel collegamento dati per l'intestazione e il trasferimento dei dati<br/> |
+| [**AccessString**](schema-accessstring-contexttype-element.md)       |                                                | APN o stringa di composizione da usare per stabilire una connessione dati<br/>                        |
+| [**AuthProtocol**](schema-authprotocol-contexttype-element.md)       |                                                | Protocollo di autenticazione da usare per l'attivazione di un contesto PDP.<br/>                    |
+| [**Compressione**](schema-compression-contexttype-element.md)         |                                                | Specifica se verrà usata la compressione nel collegamento dati per il trasferimento di intestazione e dati<br/> |
 | [**IgnorePassword**](schema-ignorepassword-userlogoncred-element.md) | boolean                                        | Come gestire le password durante l'aggiornamento dei profili.<br/>                                    |
-| [**Password**](schema-password-userlogoncred-element.md)             | string                                         | Password utilizzata per autenticare un utente<br/>                                                |
-| [**UserLogonCred**](schema-userlogoncred-contexttype-element.md)     |                                                | Accedere alle credenziali per una connessione.<br/>                                                |
+| [**Password**](schema-password-userlogoncred-element.md)             | string                                         | Password usata per autenticare un utente<br/>                                                |
+| [**UserLogonCred**](schema-userlogoncred-contexttype-element.md)     |                                                | Credenziali di accesso per una connessione.<br/>                                                |
 | [**Nome utente**](schema-username-userlogoncred-element.md)             | [**nameType**](schema-nametype-simpletype.md) | Nome utente per l'accesso<br/>                                                                 |
 
 
@@ -124,7 +124,7 @@ Il tipo complesso **contextType** specifica il contesto connenction di un dispos
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

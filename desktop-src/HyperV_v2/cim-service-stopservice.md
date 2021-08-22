@@ -1,7 +1,7 @@
 ---
-description: Paces the service in the stopped state.
+description: Pace del servizio nello stato arrestato.
 ms.assetid: d7469643-bccc-4f55-b2fc-d2bc2e392d84
-title: Metodo StopService della classe CIM_Service (gestione di Hyper-V)
+title: Metodo StopService della classe CIM_Service (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,13 +20,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118647584"
 ---
-# <a name="stopservice-method-of-the-cim_service-class-hyper-v-management"></a>Metodo StopService della classe CIM_Service (gestione di Hyper-V)
+# <a name="stopservice-method-of-the-cim_service-class-hyper-v-management"></a>Metodo StopService della classe CIM_Service (gestione Hyper-V)
 
-Paces the service in the stopped state.
+Pace del servizio nello stato arrestato.
 
 > [!Note]
 >
-> La semantica di questo metodo si sovrappone al **metodo RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement.**](cim-enabledlogicalelement.md) Questo metodo viene mantenuto perché è stato ampiamente implementato e la semplice semantica di arresto è comoda da usare.
+> La semantica di questo metodo si sovrappone al **metodo RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement.**](cim-enabledlogicalelement.md) Questo metodo viene mantenuto perché è stato ampiamente implementato e la semantica di arresto semplice è comoda da usare.
 
  
 
@@ -45,7 +45,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 

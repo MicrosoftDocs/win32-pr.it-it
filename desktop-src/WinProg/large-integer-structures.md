@@ -1,5 +1,5 @@
 ---
-title: Strutture Large Integer
+title: Strutture Di tipo Integer di grandi dimensioni
 description: Le strutture seguenti rappresentano numeri interi di grandi dimensioni
 ms.assetid: 543592d3-7d18-4c8f-b39d-318820ed8426
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118561547"
 ---
-# <a name="large-integer-structures"></a>Strutture Large Integer
+# <a name="large-integer-structures"></a>Strutture Di tipo Integer di grandi dimensioni
 
 Le strutture seguenti rappresentano numeri interi di grandi dimensioni:
 
@@ -22,6 +22,6 @@ Le strutture seguenti rappresentano numeri interi di grandi dimensioni:
   </dt>
   <dt>
   
-  [**ULARGE \_ INTEGER**](/windows/win32/api/winnt/ns-winnt-ularge_integer-r1)
+  [**NUMERO INTERO \_ ULARGE**](/windows/win32/api/winnt/ns-winnt-ularge_integer-r1)
   </dt>
 </dl>

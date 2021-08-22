@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118705960"
 ---
-# <a name="ui_all_commands"></a>TUTTI \_ I COMANDI \_ DELL'INTERFACCIA UTENTE
+# <a name="ui_all_commands"></a>TUTTI I \_ COMANDI \_ DELL'INTERFACCIA UTENTE
 
 Specifica una costante che identifica la raccolta di comandi dichiarati nel file di risorse di markup.
 
@@ -33,8 +33,8 @@ Specifica una costante che identifica la raccolta di comandi dichiarati nel file
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma solo per Windows app desktop di Vista \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per Windows app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma solo per Windows app desktop vista \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per Windows server 2008 \[ desktop\]<br/> |
 | Intestazione<br/>                   | <dl> <dt>Uiribbon.h</dt> </dl>                                             |
 | Idl<br/>                      | <dl> <dt>Uiribbon.idl</dt> </dl>                                           |
 

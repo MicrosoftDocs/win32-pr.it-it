@@ -11,16 +11,16 @@
               href: local-security-policy.md
             - name: Domini predefiniti e account
               href: built-in-and-account-domains.md
-            - name: Domini primari e Trusted
+            - name: Domini primari e trusted
               href: primary-and-trusted-domains.md
             - name: Oggetti criteri LSA
               href: lsa-policy-objects.md
               items:
-                - name: Oggetto Policy
+                - name: Oggetto Criteri
                   href: policy-object.md
                 - name: Oggetto TrustedDomain
                   href: trusteddomain-object.md
-                - name: Oggetto account
+                - name: Oggetto Account
                   href: account-object.md
                 - name: Oggetto dati privato
                   href: private-data-object.md
@@ -29,20 +29,20 @@
           items:
             - name: Considerazioni sulla programmazione del filtro password
               href: password-filter-programming-considerations.md
-            - name: Imposizione avanzata delle password e Passfilt.dll
+            - name: Imposizione delle password complessa e Passfilt.dll
               href: strong-password-enforcement-and-passfilt-dll.md
-        - name: Più sicuro
+        - name: Sicuro
           href: safer.md
         - name: Allegati di sicurezza del servizio
           href: service-security-attachments.md
           items:
-            - name: Estensioni degli snap-in allegati
+            - name: Estensioni dello snap-in allegati
               href: attachment-snap-in-extensions.md
-            - name: Motori allegati
+            - name: Motori di allegati
               href: attachment-engines.md
             - name: Modelli di sicurezza
               href: security-templates.md
-            - name: Configurazione e analisi della sicurezza
+            - name: Analisi e configurazione della sicurezza
               href: security-configuration-and-analysis.md
     - name: Uso della gestione della sicurezza
       href: using-management.md
@@ -52,7 +52,7 @@
           items:
             - name: Uso di stringhe Unicode LSA
               href: using-lsa-unicode-strings.md
-            - name: Apertura di un handle di oggetto Criteri
+            - name: Apertura di un handle di oggetto criteri
               href: opening-a-policy-object-handle.md
             - name: Gestione delle informazioni sui criteri
               href: managing-policy-information.md
@@ -60,23 +60,23 @@
               href: receiving-policy-change-events.md
             - name: Gestione delle autorizzazioni dell'account
               href: managing-account-permissions.md
-            - name: Gestione delle informazioni di dominio trusted
+            - name: Gestione delle informazioni sul dominio trusted
               href: managing-trusted-domain-information.md
-            - name: Conversione tra nomi e SID
+            - name: Traduzione tra nomi e SID
               href: translating-between-names-and-sids.md
-            - name: Mapping degli identificatori POSIX
+            - name: Mapping degli identificatori Posix
               href: mapping-posix-identifiers.md
             - name: Archiviazione di dati privati
               href: storing-private-data.md
         - name: Uso dei filtri password
           href: using-password-filters.md
           items:
-            - name: Installazione e registrazione di una DLL di filtro password
+            - name: Installazione e registrazione di una DLL del filtro password
               href: installing-and-registering-a-password-filter-dll.md
         - name: Uso degli allegati di sicurezza del servizio
           href: using-service-security-attachments.md
           items:
-            - name: Creazione di un'estensione dello snap-in allegati
+            - name: Creazione di un'estensione snap-in allegati
               href: creating-an-attachment-snap-in-extension.md
               items:
                 - name: Implementazione di ISceSvcAttachmentPersistInfo
@@ -85,17 +85,17 @@
                   href: displaying-configuration-and-analysis-information.md
                 - name: Aggiunta di un nodo di estensione dello snap-in allegati
                   href: adding-an-attachment-snap-in-extension-node.md
-                - name: Creazione della comunicazione con gli snap-in di configurazione
+                - name: Stabilire la comunicazione con gli snap-in di configurazione
                   href: establishing-communication-with-configuration-snap-ins.md
                 - name: Recupero di dati dagli snap-in di configurazione
                   href: getting-data-from-the-configuration-snap-ins.md
-                - name: Modifica delle informazioni di configurazione nell'interfaccia utente
+                - name: Modifica delle informazioni di configurazione nel Interfaccia utente
                   href: modifying-configuration-information-in-the-user-interface.md
                 - name: Modifica delle informazioni di configurazione nel database
                   href: modifying-configuration-information-in-the-database.md
-            - name: Registrazione di un'estensione dello snap-in allegati
+            - name: Registrazione di un'estensione snap-in allegati
               href: registering-an-attachment-snap-in-extension.md
-            - name: Creazione di un motore di allegati
+            - name: Creazione di un motore allegati
               href: creating-an-attachment-engine.md
               items:
                 - name: Implementazione di SceSvcAttachmentAnalyze
@@ -104,12 +104,12 @@
                   href: implementing-scesvcattachmentconfig.md
                 - name: Implementazione di SceSvcAttachmentUpdate
                   href: implementing-scesvcattachmentupdate.md
-            - name: Registrazione di un motore di allegati
+            - name: Registrazione di un motore allegati
               href: registering-an-attachment-engine.md
     - name: Informazioni di riferimento sulla gestione della sicurezza
       href: management-reference.md
       items:
-        - name: Tipi di dati di gestione della sicurezza
+        - name: Tipi di dati di Gestione sicurezza
           href: management-data-types.md
           items:
             - name: LSA_ENUMERATION_HANDLE
@@ -273,14 +273,14 @@
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-closehandle
                     - name: Metodo FreeBuffer
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-freebuffer
-                    - name: GetData (metodo)
+                    - name: Metodo GetData
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-getdata
                     - name: Metodo Initialize
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-initialize
             - name: ISceSvcAttachmentPersistInfo
               href: /windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo
               items:
-                - name: Metodi ISceSvcAttachmentPersistInfo
+                - name: Metodi di ISceSvcAttachmentPersistInfo
                   href: iscesvcattachmentpersistinfo-methods.md
                   items:
                     - name: Metodo FreeBuffer
@@ -292,21 +292,21 @@
         - name: Oggetti di gestione della sicurezza
           href: management-objects.md
           items:
-            - name: Tipo di oggetto Criteri
+            - name: Tipo di oggetto criteri
               href: the-policy-object-type.md
               items:
-                - name: Diritti di accesso agli oggetti Criteri
+                - name: Diritti di accesso agli oggetti criteri
                   href: policy-object-access-rights.md
-                - name: Protezione degli oggetti Criteri
+                - name: Protezione degli oggetti criteri
                   href: policy-object-protection.md
             - name: Tipo di oggetto TrustedDomain
               href: the-trusteddomain-object-type.md
               items:
                 - name: Diritti di accesso agli oggetti TrustedDomain
                   href: trusteddomain-object-access-rights.md
-                - name: Protezione dell'oggetto TrustedDomain
+                - name: TrustedDomain Object Protection
                   href: trusteddomain-object-protection.md
-            - name: Tipo di oggetto account
+            - name: Tipo di oggetto Account
               href: the-account-object-type.md
               items:
                 - name: Diritti di accesso agli oggetti account
@@ -320,7 +320,7 @@
                   href: private-data-object-access-rights.md
                 - name: Protezione iniziale dell'oggetto dati privato
                   href: private-data-object-initial-protection.md
-        - name: Valori restituiti per la gestione della sicurezza
+        - name: Valori restituiti dalla gestione della sicurezza
           href: management-return-values.md
         - name: Strutture di gestione della sicurezza
           href: management-structures.md

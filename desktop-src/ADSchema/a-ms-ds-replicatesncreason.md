@@ -31,7 +31,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | CN                | Ms-DS-Replicates-NC-Reason                                                                                                                 |
 | Ldap-Display-Name | mS-DS-ReplicatesNCReason                                                                                                                   |
-| Dimensione              | Valore per la parte binaria: 0 = NO \_ REASON,1 = TOPOLOGIA \_ GC, 2 = TOPOLOGIA \_ RING, 4 = MINIMIZE \_ HOPS \_ TOPOLOGY, 8 = TOPOLOGIA \_ \_ SERVER NON AGGIORNATA. |
+| Dimensione              | Valore per la parte binaria: 0 = NO \_ REASON,1 = TOPOLOGIA \_ GC, 2 = TOPOLOGIA \_ RING, 4 = TOPOLOGIA \_ HOP \_ MINIMI, 8 = \_ \_ TOPOLOGIA SERVER NON AGGIORNATA. |
 | Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                                                                                                           |
 | Frequenza di aggiornamento  | Può cambiare in risposta alle modifiche nella topologia di rete.                                                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1408                                                                                                                    |
@@ -109,7 +109,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -122,7 +122,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Falso                                                  |
+| Is-Single-Valued       | Falso                                                  |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -130,7 +130,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Falso                                                  |
+| Is-Single-Valued       | Falso                                                  |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -151,7 +151,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Falso                                                  |
+| Is-Single-Valued       | Falso                                                  |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -172,7 +172,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Falso                                                  |
+| Is-Single-Valued       | Falso                                                  |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -193,7 +193,7 @@ Attributo dell'oggetto ntdsConnection che indica il motivo (o se) KCC indica che
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 

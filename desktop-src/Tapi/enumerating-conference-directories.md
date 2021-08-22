@@ -1,21 +1,21 @@
 ---
-description: Nel frammento di codice seguente viene illustrata l'enumerazione delle conferenze in un server ILS specificato. Questo frammento presuppone che la connessione a un server ILS sia già stata eseguita.
+description: Il frammento di codice seguente illustra l'enumerazione delle conferenze in un server ILS specificato. Questo frammento presuppone che sia già stata eseguita la connessione a un server ILS.
 ms.assetid: da01c534-c700-4b4f-ac22-cede9930f80d
 title: Enumerazione delle directory delle conferenze
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1eedffb44d92f52293dc9d1add8b53588503282b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47699d5a2f42fceb28ff022abf7004e6ade99070357251063fc96051e1f14d37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118866521"
 ---
 # <a name="enumerating-conference-directories"></a>Enumerazione delle directory delle conferenze
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Nel frammento di codice seguente viene illustrata l'enumerazione delle conferenze in un server ILS specificato. Questo frammento presuppone che la [connessione a un server ILS](connecting-to-an-ils-server.md) sia già stata eseguita.
+Il frammento di codice seguente illustra l'enumerazione delle conferenze in un server ILS specificato. Questo frammento presuppone che sia già stata eseguita la connessione a un [server ILS.](connecting-to-an-ils-server.md)
 
 
 ```C++
@@ -28,7 +28,7 @@ SysFreeString( bNameToSearch );
 
 <dl> <dt>
 
-[**IEnumDirectoryObject**](/windows/desktop/api/Rend/nn-rend-ienumdirectoryobject)
+[**Oggetto IEnumDirectoryObject**](/windows/desktop/api/Rend/nn-rend-ienumdirectoryobject)
 </dt> </dl>
 
  

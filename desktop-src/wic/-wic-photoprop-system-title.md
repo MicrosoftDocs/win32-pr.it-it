@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. title.
+description: Criteri dei metadati delle foto per la proprietà System.Title.
 ms.assetid: 84da345e-ec03-48fe-8fda-043b706e4e1c
-title: Criteri per i metadati delle foto System. title
+title: Criteri metadati foto System.Title
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b02513f3f566576999e83b09c156d36ac480c17d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26917efc84b3308a039abe3a60b279d080aa023e2e4b5f76be8623a7aaae7bf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964660"
 ---
-# <a name="systemtitle-photo-metadata-policy"></a>Criteri per i metadati delle foto System. title
+# <a name="systemtitle-photo-metadata-policy"></a>Criteri metadati foto System.Title
 
-Criteri per i metadati delle foto per la proprietà [System. title](../properties/props-system-title.md) .
+Criteri dei metadati delle foto per [la proprietà System.Title.](../properties/props-system-title.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_Titolo pkey
+PKEY \_ Title
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,36 +27,36 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
 VT \_ LPWSTR o VT \_ LPSTR
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                | Formato disco    |
 |-------|-------------------------------------|----------------|
-| 1     | /App1/IFD/{ushort = 40091}            | \_byte Unicode |
-| 2     | /XMP/ <xmpalt> DC: titolo         | unicode        |
-| 3     | /XMP/DC: titolo                       | unicode        |
-| 4     | /App1/IFD/EXIF/{ushort = 37510}       | unicode        |
-| 5     | /App1/IFD/{ushort = 270}              | ascii          |
+| 1     | /app1/ifd/{ushort=40091}            | byte \_ Unicode |
+| 2     | /xmp/ <xmpalt> dc:title         | unicode        |
+| 3     | /xmp/dc:title                       | unicode        |
+| 4     | /app1/ifd/exif/{ushort=37510}       | unicode        |
+| 5     | /app1/ifd/{ushort=270}              | ascii          |
 | 6     | /app13/irb/8bimiptc/iptc/caption    |                |
-| 7     | /XMP/ <xmpalt> DC: Descrizione   | unicode        |
-| 8     | /XMP/DC: Descrizione                 | unicode        |
+| 7     | /xmp/ <xmpalt> dc:description   | unicode        |
+| 8     | /xmp/dc:description                 | unicode        |
 | 9     | /app13/irb/8bimiptc/iptc/caption    |                |
-| 10    | /XMP/ <xmpalt> EXIF: UserComment | unicode        |
+| 10    | /xmp/ <xmpalt> exif:UserComment | unicode        |
 
 
 
@@ -68,15 +68,15 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                | Formato disco    |
 |-------|-------------------------------------|----------------|
-| 1     | /App1/IFD/{ushort = 40091}            | \_byte Unicode |
-| 2     | /XMP/DC: titolo                       | unicode        |
-| 3     | /XMP/ <xmpalt> DC: titolo         | unicode        |
-| 4     | /App1/IFD/EXIF/{ushort = 37510}       | unicode        |
-| 5     | /XMP/ <xmpalt> EXIF: UserComment | unicode        |
-| 6     | /App1/IFD/{ushort = 270}              | ascii          |
+| 1     | /app1/ifd/{ushort=40091}            | byte \_ Unicode |
+| 2     | /xmp/dc:title                       | unicode        |
+| 3     | /xmp/ <xmpalt> dc:title         | unicode        |
+| 4     | /app1/ifd/exif/{ushort=37510}       | unicode        |
+| 5     | /xmp/ <xmpalt> exif:UserComment | unicode        |
+| 6     | /app1/ifd/{ushort=270}              | ascii          |
 | 7     | /app13/irb/8bimiptc/iptc/caption    |                |
-| 8     | /XMP/DC: Descrizione                 | unicode        |
-| 9     | /XMP/ <xmpalt> DC: Descrizione   | unicode        |
+| 8     | /xmp/dc:description                 | unicode        |
+| 9     | /xmp/ <xmpalt> dc:description   | unicode        |
 
 
 
@@ -88,13 +88,13 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                |
 |-------|-------------------------------------|
-| 1     | /App1/IFD/{ushort = 40091}            |
-| 2     | /XMP/DC: titolo                       |
-| 3     | /App1/IFD/EXIF/{ushort = 37510}       |
-| 4     | /XMP/ <xmpalt> EXIF: UserComment |
-| 5     | /App1/IFD/{ushort = 270}              |
+| 1     | /app1/ifd/{ushort=40091}            |
+| 2     | /xmp/dc:title                       |
+| 3     | /app1/ifd/exif/{ushort=37510}       |
+| 4     | /xmp/ <xmpalt> exif:UserComment |
+| 5     | /app1/ifd/{ushort=270}              |
 | 6     | /app13/irb/8bimiptc/iptc/caption    |
-| 7     | /XMP/DC: Descrizione                 |
+| 7     | /xmp/dc:description                 |
 
 
 
@@ -102,23 +102,23 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policy"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                    | Formato disco    |
 |-------|-----------------------------------------|----------------|
-| 1     | /IFD/{ushort = 40091}                     | \_byte Unicode |
-| 2     | /IFD/XMP/ <xmpalt> DC: titolo         | unicode        |
-| 3     | /IFD/XMP/DC: titolo                       | unicode        |
-| 4     | /IFD/EXIF/{ushort = 37510}                | unicode        |
-| 5     | /IFD/{ushort = 270}                       | ascii          |
+| 1     | /ifd/{ushort=40091}                     | byte \_ unicode |
+| 2     | /ifd/xmp/ <xmpalt> dc:title         | unicode        |
+| 3     | /ifd/xmp/dc:title                       | unicode        |
+| 4     | /ifd/exif/{ushort=37510}                | unicode        |
+| 5     | /ifd/{ushort=270}                       | ascii          |
 | 6     | /ifd/iptc/caption                       |                |
-| 7     | /IFD/XMP/ <xmpalt> DC: Descrizione   | unicode        |
-| 8     | /IFD/XMP/DC: Descrizione                 | unicode        |
+| 7     | /ifd/xmp/ <xmpalt> dc:description   | unicode        |
+| 8     | /ifd/xmp/dc:description                 | unicode        |
 | 9     | /ifd/iptc/caption                       |                |
 | 10    | /ifd/irb/8bimiptc/iptc/caption          |                |
-| 11    | /IFD/XMP/ <xmpalt> EXIF: UserComment | unicode        |
+| 11    | /ifd/xmp/ <xmpalt> exif:UserComment | unicode        |
 
 
 
@@ -130,35 +130,35 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                    | Formato disco    |
 |-------|-----------------------------------------|----------------|
-| 1     | /IFD/{ushort = 40091}                     | \_byte Unicode |
-| 2     | /IFD/XMP/DC: titolo                       | unicode        |
-| 3     | /IFD/XMP/ <xmpalt> DC: titolo         | unicode        |
-| 4     | /IFD/EXIF/{ushort = 37510}                | unicode        |
-| 5     | /IFD/XMP/ <xmpalt> EXIF: UserComment | unicode        |
-| 6     | /IFD/{ushort = 270}                       | ascii          |
+| 1     | /ifd/{ushort=40091}                     | byte \_ unicode |
+| 2     | /ifd/xmp/dc:title                       | unicode        |
+| 3     | /ifd/xmp/ <xmpalt> dc:title         | unicode        |
+| 4     | /ifd/exif/{ushort=37510}                | unicode        |
+| 5     | /ifd/xmp/ <xmpalt> exif:UserComment | unicode        |
+| 6     | /ifd/{ushort=270}                       | ascii          |
 | 7     | /ifd/iptc/caption                       |                |
 | 8     | /ifd/irb/8bimiptc/iptc/caption          |                |
-| 9     | /IFD/XMP/DC: Descrizione                 | unicode        |
-| 10    | /IFD/XMP/ <xmpalt> DC: Descrizione   | unicode        |
+| 9     | /ifd/xmp/dc:description                 | unicode        |
+| 10    | /ifd/xmp/ <xmpalt> dc:description   | unicode        |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                                    |
 |-------|-----------------------------------------|
-| 1     | /IFD/{ushort = 40091}                     |
-| 2     | /IFD/XMP/DC: titolo                       |
-| 3     | /IFD/EXIF/{ushort = 37510}                |
-| 4     | /IFD/XMP/ <xmpalt> EXIF: UserComment |
-| 5     | /IFD/{ushort = 270}                       |
+| 1     | /ifd/{ushort=40091}                     |
+| 2     | /ifd/xmp/dc:title                       |
+| 3     | /ifd/exif/{ushort=37510}                |
+| 4     | /ifd/xmp/ <xmpalt> exif:UserComment |
+| 5     | /ifd/{ushort=270}                       |
 | 6     | /ifd/iptc/caption                       |
 | 7     | /ifd/irb/8bimiptc/iptc/caption          |
-| 8     | /IFD/XMP/DC: Descrizione                 |
+| 8     | /ifd/xmp/dc:description                 |
 
 
 

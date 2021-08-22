@@ -11,16 +11,16 @@ api_name:
 - providerNameType
 api_type:
 - Schema
-ms.openlocfilehash: df61473358a9ed4453bc28f1b5c7974082e515bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0a1a0c999eebe8d4ac9922564a28f3b8abce90397fbbda3556bf7726c7355cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744391"
 ---
 # <a name="providernametype-simple-type"></a>Tipo semplice providerNameType
 
-Il tipo semplice **providerNameType** definisce un tipo stringa per l'elemento [**providerName**](schema-providername-providertype-element.md) nel profilo Mobile Broadband. Questa stringa ha una lunghezza compresa tra almeno un carattere e un massimo di 20 caratteri.
+Il **tipo semplice providerNameType** definisce un tipo stringa per l'elemento [**ProviderName**](schema-providername-providertype-element.md) nel profilo Mobile Broadband. Questa stringa è lunga almeno un carattere e al massimo 20 caratteri.
 
 ``` syntax
 <xs:simpleType name="providerNameType">
@@ -43,7 +43,7 @@ Il tipo semplice **providerNameType** definisce un tipo stringa per l'elemento [
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

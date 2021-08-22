@@ -1,7 +1,7 @@
 ---
-description: Esegue lo schema a mosaico uniforme in base al livello del mosaico.
+description: Esegue un'operazione a più livelli uniforme in base al livello a più livelli.
 ms.assetid: 0fc701b4-0636-450e-b8e0-e7a490871316
-title: 'Metodo ID3DXPatchMesh:: conteggiarla suddividerla (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::Tessellate (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b94b79a9decd2f44fa1675e257a2401e2ae8f7a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1bd1bb3f242078603f84a0ff12c05c0e824a55e759f147c8aa230490ab36af39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802011"
 ---
-# <a name="id3dxpatchmeshtessellate-method"></a>Metodo ID3DXPatchMesh:: conteggiarla suddividerla
+# <a name="id3dxpatchmeshtessellate-method"></a>Metodo ID3DXPatchMesh::Tessellate
 
-Esegue lo schema a mosaico uniforme in base al livello del mosaico.
+Esegue un'operazione a più livelli uniforme in base al livello a più livelli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT Tessellate(
 
 <dl> <dt>
 
-*fTessLevel* \[ in\]
+*fTessLevel* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Livello mosaico. Il numero di vertici introdotti tra i vertici esistenti. L'intervallo di questo parametro float è 0 < fTessLevel <= 32.
+Livello a tessellazione. Questo è il numero di vertici introdotti tra i vertici esistenti. L'intervallo di questo parametro float è 0 < fTessLevel <= 32.
 
 </dd> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Mesh tassellati risultante. Vedere [**ID3DXMesh**](id3dxmesh.md).
+Mesh a trama risultante. Vedere [**ID3DXMesh.**](id3dxmesh.md)
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Mesh tassellati risultante. Vedere [**ID3DXMesh**](id3dxmesh.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione verrà eseguita in modo più efficiente se la mesh patch è stata ottimizzata con [**ID3DXPatchMesh:: Optimize**](id3dxpatchmesh--optimize.md).
+Questa funzione funzionerà in modo più efficiente se la mesh di patch è stata ottimizzata usando [**ID3DXPatchMesh::Optimize**](id3dxpatchmesh--optimize.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questa funzione verrà eseguita in modo più efficiente se la mesh patch è stat
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Windows Rete (WNet)
-description: Le Windows di rete (WNet) consentono di implementare le funzionalità di rete nell'applicazione senza concedere quote per un determinato provider di rete o per l'implementazione di rete fisica.
+description: Le Windows di rete virtuale (WNet) consentono di implementare le funzionalità di rete nell'applicazione senza concedere quote per un provider di rete specifico o un'implementazione di rete fisica.
 ms.assetid: 7668ac55-7104-4ddb-88eb-920cfe4e36fd
 keywords:
 - Windows rete WNet
@@ -16,7 +16,7 @@ ms.locfileid: "118566414"
 ---
 # <a name="windows-networking-wnet"></a>Windows Rete (WNet)
 
-Le Windows di rete (WNet) consentono di implementare le funzionalità di rete nell'applicazione senza concedere quote per un determinato provider di rete o per l'implementazione di rete fisica. Questo perché le funzioni WNet sono indipendenti dalla rete.
+Le Windows di rete virtuale (WNet) consentono di implementare le funzionalità di rete nell'applicazione senza concedere quote per un provider di rete specifico o un'implementazione di rete fisica. Ciò è dovuto al fatto che le funzioni WNet sono indipendenti dalla rete.
 
 -   [Informazioni Windows rete](about-windows-networking.md)
 -   [Uso Windows rete](using-windows-networking.md)

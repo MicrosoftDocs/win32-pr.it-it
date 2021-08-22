@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_Handwriting02
-description: La \_ \_ \_ classe Config01 HANDWRITING02 di criteri MDM viene utilizzata per configurare la modalità predefinita per il pannello grafia.
+title: MDM_Policy_Config01_Handwriting02 classe
+description: La classe \_ Mdm Policy \_ Config01 Handwriting02 viene usata per configurare \_ la modalità predefinita per il pannello di scrittura manuale.
 ms.assetid: 3b835b72-7985-45c9-afc4-b6fdc69b331b
 keywords:
-- Classe MDM_Policy_Config01_Handwriting02
-- Classe MDM_Policy_Config01_Handwriting02, descritta
+- MDM_Policy_Config01_Handwriting02 classe
+- MDM_Policy_Config01_Handwriting02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ef2aa5f8b6563126dfcdd9e75870334853db11a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f7a0b5879055e5014c72c47368b3c72203b17c25d4ba4f1c3107027212ae612
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017939"
 ---
-# <a name="mdm_policy_config01_handwriting02-class"></a>\_ \_ Classe Config01 Handwriting02 di criteri \_ MDM
+# <a name="mdm_policy_config01_handwriting02-class"></a>Classe \_ \_ Handwriting02 di MDM Policy \_ Config01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ \_ classe Config01 HANDWRITING02 di criteri MDM viene utilizzata per configurare la modalità predefinita per il pannello grafia.
+La classe \_ Mdm Policy \_ Config01 Handwriting02 viene usata per configurare \_ la modalità predefinita per il pannello di scrittura manuale.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,26 +46,26 @@ class MDM_Policy_Config01_Handwriting02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ Handwriting02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ Handwriting02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Handwriting02 dei criteri MDM Config01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Config01 \_ Handwriting02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -76,21 +76,21 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> </dl>
@@ -101,10 +101,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

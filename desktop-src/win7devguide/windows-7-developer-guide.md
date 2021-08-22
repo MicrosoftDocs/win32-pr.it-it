@@ -13,16 +13,16 @@ ms.locfileid: "118708793"
 ---
 # <a name="windows-7-developer-guide"></a>Windows 7 Developer Guide (Guida per sviluppatori di Windows 7)
 
-La creazione di applicazioni facili da usare, visivamente accattivanti e che offrono prestazioni elevate è una sfida che gli sviluppatori devono affrontare ogni giorno. Le applicazioni innovative possono migliorare notevolmente l'esperienza utente, per consentire alle aziende di differenziare i servizi e le soluzioni. Tuttavia, agli sviluppatori viene sempre più richiesto di fare di più in meno tempo, ottimizzando al tempo stesso i requisiti di potenza e prestazioni delle applicazioni.
+La creazione di applicazioni facili da usare, visivamente accattivanti e che offrono prestazioni elevate è una sfida che gli sviluppatori devono affrontare ogni giorno. Le applicazioni innovative possono migliorare notevolmente l'esperienza utente, per consentire alle aziende di differenziare i propri servizi e soluzioni. Tuttavia, agli sviluppatori viene sempre più richiesto di fare di più in meno tempo, ottimizzando al tempo stesso i requisiti di potenza e prestazioni delle applicazioni.
 
-La Windows 7 rende più semplice per gli sviluppatori creare applicazioni accattivanti e semplici da usare fornendo strumenti familiari e funzionalità di sviluppo avanzate che consentono loro di sfruttare le funzionalità più recenti del PC.
+La Windows 7 rende più semplice per gli sviluppatori creare applicazioni accattivanti e semplici da usare, fornendo strumenti familiari e funzionalità di sviluppo avanzate che consentono loro di sfruttare le funzionalità pc più recenti.
 
 Per una versione scaricabile della Guida per sviluppatori Windows 7, visitare [Code Gallery](/samples/browse/?redirectedfrom=MSDN-samples) su MSDN.
 
-Nella Guida per Windows 7:
+Nella Guida per Windows 7 per sviluppatori:
 
 -   [Solid Foundation](solid-foundation.md)
--   [Esperienze applicative più ricche](richer-application-experiences.md)
+-   [Esperienze di applicazione più ricche](richer-application-experiences.md)
 -   [The Best of Windows and the Web](the-best-of-windows-and-the-web.md)
 
  

@@ -1,50 +1,50 @@
 ---
 title: Visualizzazione della barra multifunzione
-description: Il Framework della barra multifunzione di Windows espone un set di proprietà che consentono a un'applicazione di specificare la modalità di visualizzazione dell'interfaccia utente della barra multifunzione in fase di esecuzione.
+description: Il Windows del framework della barra multifunzione espone un set di proprietà che consentono a un'applicazione di specificare la modalità di visualizzazione dell'interfaccia utente della barra multifunzione in fase di esecuzione.
 ms.assetid: c6716183-ef32-4fb2-812a-2d8f27448db5
 keywords:
-- Barra multifunzione di Windows, personalizzazione dei colori
+- Windows Barra multifunzione, personalizzazione dei colori
 - Barra multifunzione, personalizzazione dei colori
-- personalizzazione dei colori della barra multifunzione di Windows
+- personalizzazione dei Windows della barra multifunzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 090c77c5b47afd673bc7132a87e3de336683d876
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4b61bae9bae5620d556f26f6c7103ef222f14892c8ce12acd21289dd7bc53b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964435"
 ---
 # <a name="displaying-the-ribbon"></a>Visualizzazione della barra multifunzione
 
-Il Framework della barra multifunzione di Windows espone un set di proprietà che consentono a un'applicazione di specificare la modalità di visualizzazione dell'interfaccia utente della barra multifunzione in fase di esecuzione.
+Il Windows del framework della barra multifunzione espone un set di proprietà che consentono a un'applicazione di specificare la modalità di visualizzazione dell'interfaccia utente della barra multifunzione in fase di esecuzione.
 
 -   [Introduzione](#introduction)
 -   [Ridurre a icona la barra multifunzione](#minimize-the-ribbon)
--   [Nascondi barra multifunzione](#hide-the-ribbon)
+-   [Nascondere la barra multifunzione](#hide-the-ribbon)
 -   [Esempio](#example)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="introduction"></a>Introduzione
 
-Per ingrandire l'area disponibile per lo spazio del documento (o la porta di visualizzazione) di un'applicazione di Framework della barra multifunzione, un'applicazione può specificare se l'interfaccia utente della barra multifunzione è visibile o nascosta e, quando è visibile, se la barra multifunzione è in uno stato espanso o compresso.
+Per ingrandire l'area disponibile per lo spazio del documento (o la porta di visualizzazione) di un'applicazione del framework della barra multifunzione, un'applicazione può specificare se l'interfaccia utente della barra multifunzione è visibile o nascosta e, quando visibile, se la barra multifunzione si trova in uno stato espanso o compresso.
 
-Le [chiavi di proprietà del Framework](windowsribbon-reference-properties-framework.md) elencate nella tabella seguente vengono usate per impostare in modo esplicito le caratteristiche di visualizzazione dell'interfaccia utente della barra multifunzione in un'applicazione di Framework della barra multifunzione. Queste proprietà non hanno effetto sulla visualizzazione del controllo [popup del contesto](windowsribbon-controls-contextpopup.md) .
+Le [chiavi delle proprietà del framework](windowsribbon-reference-properties-framework.md) elencate nella tabella seguente vengono usate per impostare in modo esplicito le caratteristiche di visualizzazione dell'interfaccia utente della barra multifunzione in un'applicazione del framework della barra multifunzione. Queste proprietà non hanno alcun effetto sulla visualizzazione del [controllo Popup](windowsribbon-controls-contextpopup.md) di contesto.
 
 
 
-| Stato di visualizzazione         | Chiave della proprietà Ribbon                                                            |
+| Stato di visualizzazione         | Chiave delle proprietà della barra multifunzione                                                            |
 |-----------------------|--------------------------------------------------------------------------------|
-| Espanso o compresso | [Interfaccia utente \_ pkey \_ ridotta a icona](windowsribbon-reference-properties-uipkey-minimized.md) |
-| Visibile o nascosto     | [Interfaccia utente \_ pkey \_ visualizzabile](windowsribbon-reference-properties-uipkey-viewable.md)   |
+| Espanso o compresso | [Chiave \_ PKEY dell'interfaccia \_ utente ridotta a icona](windowsribbon-reference-properties-uipkey-minimized.md) |
+| Visibile o nascosto     | [\_PKEY \_ visualizzabile dell'interfaccia utente](windowsribbon-reference-properties-uipkey-viewable.md)   |
 
 
 
- 
+ 
 
 ## <a name="minimize-the-ribbon"></a>Ridurre a icona la barra multifunzione
 
-Un'applicazione di Framework della barra multifunzione può impostare in modo dinamico lo stato ridotto a icona della barra dei comandi della barra multifunzione impostando il valore della chiave della proprietà [pkey dell'interfaccia utente \_ \_ ridotta](windowsribbon-reference-properties-uipkey-minimized.md) su **true** o **false**.
+Un'applicazione del framework della barra multifunzione può impostare dinamicamente lo stato ridotto a icona della barra dei comandi della barra multifunzione impostando il valore della chiave della proprietà [ \_ UI PKEY \_ Minimized](windowsribbon-reference-properties-uipkey-minimized.md) su **true** o **false.**
 
 
 
@@ -55,22 +55,22 @@ Un'applicazione di Framework della barra multifunzione può impostare in modo di
 
 
 
- 
+ 
 
-Quando l'interfaccia utente della barra multifunzione è in uno stato ridotto a icona, la riga della scheda della barra multifunzione rimane visibile e completamente funzionante.
+Quando l'interfaccia utente della barra multifunzione si trova in uno stato ridotto a icona, la riga della scheda della barra multifunzione rimane visibile e completamente funzionante.
 
-Lo screenshot seguente mostra la barra multifunzione nello stato ridotto a icona.
+La schermata seguente mostra la barra multifunzione nello stato ridotto a icona.
 
-![screenshot che mostra l'interfaccia utente della barra multifunzione ridotta a icona.](images/overviews/ribbon-minimized.png)
+![Screenshot che mostra l'interfaccia utente della barra multifunzione ridotta a icona.](images/overviews/ribbon-minimized.png)
 
 > [!Note]  
-> Il Framework della barra multifunzione espone questa funzionalità all'utente finale tramite la selezione della barra multifunzione "Riduci a icona" del menu di scelta rapida della barra multifunzione.
+> Il framework della barra multifunzione espone questa funzionalità all'utente finale tramite la selezione "Riduci a icona la barra multifunzione" del menu di scelta rapida della barra multifunzione.
 
- 
+ 
 
-## <a name="hide-the-ribbon"></a>Nascondi barra multifunzione
+## <a name="hide-the-ribbon"></a>Nascondere la barra multifunzione
 
-Un'applicazione Ribbon Framework può impostare in modo dinamico lo stato visualizzabile della barra dei comandi della barra multifunzione impostando il valore della chiave della proprietà [ \_ \_ visualizzabile pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-viewable.md) su **true** o **false**.
+Un'applicazione del framework della barra multifunzione può impostare dinamicamente lo stato visualizzabile della barra dei comandi della barra multifunzione impostando il valore della chiave della proprietà [ \_ UI PKEY \_ Viewable](windowsribbon-reference-properties-uipkey-viewable.md) su **true** o **false.**
 
 
 
@@ -81,19 +81,19 @@ Un'applicazione Ribbon Framework può impostare in modo dinamico lo stato visual
 
 
 
- 
+ 
 
-Diversamente dalla proprietà [pkey dell'interfaccia utente ridotta a \_ \_ icona](windowsribbon-reference-properties-uipkey-minimized.md) , l'impostazione dell' [interfaccia utente \_ pkey \_ VISUALIZZAbile](windowsribbon-reference-properties-uipkey-viewable.md) su **false** rende invisibile l'interfaccia utente della barra multifunzione e completamente inutilizzabile per un utente finale.
+A differenza della proprietà [ \_ PKEY \_ Minimized](windowsribbon-reference-properties-uipkey-minimized.md) dell'interfaccia utente, l'impostazione di [UI \_ PKEY \_ Viewable](windowsribbon-reference-properties-uipkey-viewable.md) su **false** rende l'interfaccia utente della barra multifunzione invisibile e completamente inutilizzabile per un utente finale.
 
 Lo screenshot seguente mostra la barra multifunzione nello stato nascosto.
 
-![screenshot che mostra l'interfaccia utente della barra multifunzione nascosta.](images/overviews/ribbon-viewable.png)
+![Screenshot che mostra l'interfaccia utente della barra multifunzione nascosta.](images/overviews/ribbon-viewable.png)
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato come impostare lo stato dell'interfaccia utente della barra multifunzione in fase di esecuzione.
+L'esempio seguente illustra come impostare lo stato dell'interfaccia utente della barra multifunzione in fase di esecuzione.
 
-In questo caso, viene usata la funzione [**IUICommandHandler:: Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) per espandere o comprimere l'interfaccia utente della barra multifunzione in base allo stato di attivazione o [disattivazione](windowsribbon-controls-togglebutton.md)di un interruttore.
+In questo caso, la [**funzione IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) viene usata per espandere o comprimere l'interfaccia utente della barra multifunzione in base allo stato di attivazione/disattivazione di [un interruttore.](windowsribbon-controls-togglebutton.md)
 
 
 ```C++
@@ -171,6 +171,6 @@ STDMETHODIMP CCommandHandler::Execute(
 [Proprietà della barra multifunzione](windowsribbon-reference-properties-ribbon.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

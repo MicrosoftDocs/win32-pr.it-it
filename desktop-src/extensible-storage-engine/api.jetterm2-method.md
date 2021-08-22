@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetTerm2'
-title: API. JetTerm2, metodo
+description: Altre informazioni sul metodo Api.JetTerm2
+title: Metodo Api.JetTerm2
 TOCTitle: 'JetTerm2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetTerm2(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.TermGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetterm2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e8a4aa8c96f9a4d0242657fe7126abf1388a7f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f269bc28cf9e8b42b8c0922985cb137b05f1f52b82404320e2277e0e4954733d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983091"
 ---
-# <a name="apijetterm2-method"></a>API. JetTerm2, metodo
+# <a name="apijetterm2-method"></a>Metodo Api.JetTerm2
 
-Terminare un'istanza di creata con [JetInit (JET_INSTANCE)](./api.jetinit-method.md) o [JetCreateInstance (JET_INSTANCE, String)](./api.jetcreateinstance-method.md).
+Terminare un'istanza creata con [JetInit(JET_INSTANCE)](./api.jetinit-method.md) o [JetCreateInstance(JET_INSTANCE, String)](./api.jetcreateinstance-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,14 +61,14 @@ public static void JetTerm2(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     Istanza di da terminare.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. TermGrbit](./termgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.TermGrbit](./termgrbit-enumeration.md)  
     
     Opzioni di terminazione.
 
@@ -78,6 +78,6 @@ public static void JetTerm2(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
