@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura info processo \_ 1 specifica le informazioni sul processo di stampa, ad esempio il valore dell'identificatore del processo, il nome della stampante per cui viene eseguito lo spooling del processo, il nome del computer in cui è stato creato il processo di stampa, il nome dell'utente proprietario del processo di stampa e così via.
+description: La struttura JOB INFO 1 specifica informazioni sul processo di stampa, ad esempio il valore dell'identificatore del processo, il nome della stampante per cui viene spoolato il processo, il nome del computer che ha creato il processo di stampa, il nome dell'utente proprietario del processo di stampa e \_ \_ così via.
 ms.assetid: d42ada89-6bc7-4006-81d9-dbcc0347edd3
-title: Struttura JOB_INFO_1 (winspool. h)
+title: JOB_INFO_1 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d56d4d6bce15a661ce141d8e22d27a15837a9f6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e8d5900a0f2d0a2dce5c12d2629abfc80776cdc0ada1354070005e28fbcd37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971330"
 ---
-# <a name="job_info_1-structure"></a>Struttura di informazioni sul processo \_ \_ 1
+# <a name="job_info_1-structure"></a>Struttura JOB \_ INFO \_ 1
 
-La **struttura \_ info processo \_ 1** specifica le informazioni sul processo di stampa, ad esempio il valore dell'identificatore del processo, il nome della stampante per cui viene eseguito lo spooling del processo, il nome del computer in cui è stato creato il processo di stampa, il nome dell'utente proprietario del processo di stampa e così via.
+La struttura **JOB \_ INFO \_ 1** specifica informazioni sul processo di stampa, ad esempio il valore dell'identificatore del processo, il nome della stampante per cui viene spoolato il processo, il nome del computer che ha creato il processo di stampa, il nome dell'utente proprietario del processo di stampa e così via.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,78 +53,78 @@ typedef struct _JOB_INFO_1 {
 
 <dl> <dt>
 
-**JobId**
+**Jobid**
 </dt> <dd>
 
-Identificatore di processo.
+Identificatore del processo.
 
 </dd> <dt>
 
 **pPrinterName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome della stampante per cui viene eseguito lo spooling del processo.
+Puntatore a una stringa con terminazione Null che specifica il nome della stampante per cui viene spoolato il processo.
 
 </dd> <dt>
 
 **pMachineName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del computer in cui è stato creato il processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il nome del computer che ha creato il processo di stampa.
 
 </dd> <dt>
 
 **pUserName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome dell'utente proprietario del processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il nome dell'utente proprietario del processo di stampa.
 
 </dd> <dt>
 
 **pDocument**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del processo di stampa, ad esempio "MS-WORD: Review.doc".
+Puntatore a una stringa con terminazione Null che specifica il nome del processo di stampa, ad esempio "MS-WORD: Review.doc").
 
 </dd> <dt>
 
 **pDatatype**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il tipo di dati utilizzati per registrare il processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il tipo di dati utilizzato per registrare il processo di stampa.
 
 </dd> <dt>
 
 **pStatus**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica lo stato del processo di stampa. Questo membro deve essere controllato prima *dello stato* e, se *pStatus* è **null**, lo stato viene definito dal contenuto del membro di stato.
+Puntatore a una stringa con terminazione Null che specifica lo stato del processo di stampa. Questo membro deve essere controllato prima di *Status* e, se *pStatus* è **NULL,** lo stato viene definito dal contenuto del membro Status.
 
 </dd> <dt>
 
 **Status**
 </dt> <dd>
 
-Stato del processo. Il valore di questo membro può essere zero o una combinazione di uno o più dei valori seguenti. Un valore pari a zero indica che la coda di stampa è stata sospesa al termine dello spooling del documento.
+Stato del processo. Il valore di questo membro può essere zero o una combinazione di uno o più dei valori seguenti. Il valore zero indica che la coda di stampa è stata sospesa al termine dello spooling del documento.
 
 
 
 | Valore                           | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_stato processo \_ bloccato \_ DEVQ      | Il driver non è in grado di stampare il processo.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| \_stato processo \_ completato           | **Windows XP e versioni successive:** Il processo viene inviato alla stampante, ma il processo potrebbe non essere ancora stampato.<br/> Per ulteriori informazioni, vedere la sezione Osservazioni.<br/>                                                                                                                                                                                                                                                                                                                           |
-| \_stato processo \_ eliminato            | Il processo è stato eliminato.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| \_eliminazione dello stato del processo \_           | È in corso l'eliminazione del processo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| \_errore di stato del processo \_              | Un errore è associato al processo.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| stato del processo \_ \_ offline            | La stampante è offline.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| \_carta dello stato del processo \_           | Stampante esaurita.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| \_stato processo \_ sospeso             | Il processo è stato sospeso.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| stato del processo \_ \_ stampato            | Il processo è stato stampato.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| \_stampa dello stato del processo \_           | Il processo viene stampato.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| \_riavvio stato \_ processo            | Il processo è stato riavviato.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| stato del processo \_ \_ mantenuto           | **Windows Vista e versioni successive:** Il processo è stato mantenuto nella coda di stampa e non può essere eliminato. Ciò può essere causato dai seguenti problemi:<br/> 1) il processo è stato mantenuto manualmente da una chiamata a SetJob e lo spooler è in attesa del rilascio del processo.<br/> 2) il processo non ha completato la stampa e deve terminare la stampa prima di poter essere eliminato automaticamente.<br/> Per ulteriori informazioni sui comandi dei processi di stampa, vedere [**SetJob**](setjob.md) .<br/> |
-| \_spooling dello stato del processo \_           | Il processo sta effettuando lo spooling.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| \_ \_ intervento dell'utente sullo stato del processo \_ | La stampante presenta un errore che richiede all'utente di eseguire un'operazione.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| STATO \_ DEL PROCESSO BLOCCATO \_ \_ DEVQ      | Il driver non può stampare il processo.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| STATO \_ DEL \_ PROCESSO COMPLETATO           | **Windows XP e versioni successive:** Il processo viene inviato alla stampante, ma il processo potrebbe non essere ancora stampato.<br/> Per ulteriori informazioni, vedere la sezione Osservazioni.<br/>                                                                                                                                                                                                                                                                                                                           |
+| STATO \_ PROCESSO \_ ELIMINATO            | Il processo è stato eliminato.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ELIMINAZIONE DELLO \_ STATO DEL \_ PROCESSO           | È in corso l'eliminazione del processo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ERRORE \_ DI STATO DEL \_ PROCESSO              | Al processo è associato un errore.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| STATO \_ DEL PROCESSO \_ OFFLINE            | La stampante è offline.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| DOCUMENTO \_ SULLO STATO DEL \_ PROCESSO           | La stampante non è cartacea.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| STATO \_ DEL PROCESSO \_ SOSPESO             | Il processo è sospeso.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| STATO \_ PROCESSO \_ STAMPATO            | Il processo è stato stampato.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| STAMPA \_ DELLO STATO DEL \_ PROCESSO           | Il processo è in corso di stampa.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| RIAVVIO \_ DELLO STATO \_ DEL PROCESSO            | Il processo è stato riavviato.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| STATO \_ DEL \_ PROCESSO MANTENUTO           | **Windows Vista e versioni successive:** Il processo è stato mantenuto nella coda di stampa e non può essere eliminato. Ciò può essere causato dai seguenti problemi:<br/> 1) Il processo è stato mantenuto manualmente da una chiamata a SetJob e lo spooler è in attesa del rilascio del processo.<br/> 2) Il processo non ha completato la stampa e deve terminare la stampa prima di poter essere eliminato automaticamente.<br/> Per altre informazioni sui comandi del processo di stampa, vedere [**SetJob.**](setjob.md)<br/> |
+| \_ \_ SPOOLING DELLO STATO DEL PROCESSO           | Il processo è in spooling.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| INTERVENTO \_ DELL'UTENTE \_ SULLO STATO DEL \_ PROCESSO | La stampante presenta un errore che richiede all'utente di eseguire un'operazione.                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 
 
@@ -135,15 +135,15 @@ Stato del processo. Il valore di questo membro può essere zero o una combinazio
 **Priorità**
 </dt> <dd>
 
-Priorità del processo. Questo membro può essere uno dei valori seguenti o compreso tra 1 e 99 ( \_ priorità minima tramite \_ priorità massima).
+Priorità del processo. Questo membro può essere uno dei valori seguenti o compreso nell'intervallo compreso tra 1 e 99 (MIN \_ PRIORITY fino a MAX \_ PRIORITY).
 
 
 
 | Valore         | Significato           |
 |---------------|-------------------|
-| \_priorità minima | Priorità minima. |
-| \_priorità massima | Priorità massima. |
-| \_priorità def | Priorità predefinita. |
+| PRIORITÀ \_ MINIMA | Priorità minima. |
+| PRIORITÀ \_ MASSIMA | Priorità massima. |
+| PRIORITÀ \_ DEF | Priorità predefinita. |
 
 
 
@@ -161,29 +161,29 @@ Posizione del processo nella coda di stampa.
 **TotalPages**
 </dt> <dd>
 
-Numero totale di pagine contenute nel documento. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione di pagina.
+Numero totale di pagine contenute nel documento. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione della pagina.
 
 </dd> <dt>
 
 **PagesPrinted**
 </dt> <dd>
 
-Numero di pagine stampate. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione di pagina.
+Numero di pagine stampate. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione della pagina.
 
 </dd> <dt>
 
 **Inviata**
 </dt> <dd>
 
-Struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che specifica l'ora in cui è stato eseguito lo spooling del documento.
+Struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che specifica l'ora di spooling del documento.
 
-Questo valore di ora è in formato UTC (Universal Time Coordinate). È necessario convertirlo in un valore di ora locale prima di visualizzarlo. Per eseguire la conversione, è possibile usare la funzione [**FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) .
+Questo valore di ora è in formato UTC (Universal Time Coordinate). È necessario convertirlo in un valore di ora locale prima di visualizzarlo. È possibile usare la [**funzione FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) per eseguire la conversione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in modo che lo stato del processo \_ \_ venga stampato subito dopo l'invio del processo alla stampante.
+I monitoraggi delle porte che non supportano TrueEndOfJob impostano il processo come JOB STATUS PRINTED subito dopo l'invio \_ \_ del processo alla stampante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -193,8 +193,8 @@ I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ \_ Info processo \_ 1W** (Unicode) e **\_ informazioni sul processo \_ \_ 1a** (ANSI)<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ JOB \_ INFO \_ 1W** (Unicode) e **\_ JOB INFO \_ \_ 1A** (ANSI)<br/>                                   |
 
 
 
@@ -205,7 +205,7 @@ I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in 
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumJobs**](enumjobs.md)

@@ -1,5 +1,5 @@
 ---
-description: Non usato. In precedenza una richiesta di elementi come &\# 0034; acquisisce frame&\# 0034; evento.
+description: Non usato. In precedenza una richiesta per elementi come &\# 0034;frame di acquisizione&\# 0034;.
 MS-HAID: vspixengine.IRunActionRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8a4c25265d21a1908e6b7e16f5d7a787b90d6513
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f7a661f2ba049c10934c262fdfd1d047fdcb1fc726c9f8fbfa1f7061c08c8ea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985731"
 ---
 # <a name="span-idvspixengineirunactionrequestspanirunactionrequest-interface"></a><span id="vspixengine.irunactionrequest"></span>Interfaccia IRunActionRequest
 
-Non usato. In precedenza una richiesta di elementi come l'evento "Acquisisci frame".
+Non usato. In precedenza una richiesta per elementi come l'evento "capture frame".
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IRunActionRequest** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IRunActionRequest** dispone anche di questi tipi di membri:
+**L'interfaccia IRunActionRequest** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRunActionRequest** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IRunActionRequest** dispone di questi metodi.
+**L'interfaccia IRunActionRequest** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona di avvio di un'azione (ad esempio, acquisizione di un frame) nel motore.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per avviare un'azione (ad esempio, acquisire un frame) nel motore.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

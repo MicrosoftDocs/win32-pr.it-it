@@ -1,44 +1,44 @@
 ---
-title: Attributi elemento foto
-description: Attributi elemento foto
+title: Attributi dell'elemento foto
+description: Attributi dell'elemento foto
 ms.assetid: 3d3ed3a8-09ac-4e3d-b52d-3614b3a3fc05
 keywords:
-- Windows Media Player, attributi elemento foto
-- Windows Media Player Mobile, attributi elemento foto
-- Modello a oggetti di Windows Media Player, attributi degli elementi della foto
-- modello a oggetti, attributi degli elementi della foto
-- Controllo ActiveX, attributi elemento foto
-- Controllo ActiveX Windows Media Player, attributi elemento foto
-- Controllo ActiveX Windows Media Player Mobile, attributi elemento foto
-- riferimento per il modello a oggetti, gli attributi degli elementi della foto
+- Windows Media Player,attributi dell'elemento foto
+- Windows Media Player Attributi degli elementi per dispositivi mobili e foto
+- Windows Media Player a oggetti, attributi dell'elemento foto
+- modello a oggetti, attributi di elementi foto
+- ActiveX, attributi dell'elemento foto
+- Windows Media Player ActiveX, attributi dell'elemento foto
+- Windows Media Player Controllo ActiveX per dispositivi mobili, attributi dell'elemento foto
+- informazioni di riferimento per il modello a oggetti, attributi dell'elemento photo
 - attributi, elementi foto
-- attributi elemento foto
+- attributi dell'elemento foto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6482151e2d9bbb15cff236f420b1386e5b68bfec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c9a5d36e77e9b58b642469bf8900eb32b3b789882afb7862bf8f44f5ab8cc22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054419"
 ---
-# <a name="photo-item-attributes"></a>Attributi elemento foto
+# <a name="photo-item-attributes"></a>Attributi dell'elemento foto
 
 Gli attributi seguenti sono disponibili per un elemento foto nella libreria.
 
 -   [**Attributo AcquisitionTime**](acquisitiontime-attribute.md)
 -   [**Attributo AlternateSourceURL**](alternatesourceurl-attribute.md)
--   [**Author (attributo)**](author-attribute.md)
--   [**Attributo comment**](comment-attribute.md)
+-   [**Attributo Author**](author-attribute.md)
+-   [**Attributo Comment**](comment-attribute.md)
 -   [**Attributo DLNAServerUDN**](dlnaserverudn-attribute.md)
 -   [**Attributo DLNASourceURI**](dlnasourceuri-attribute.md)
 -   [**Attributo DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**Attributo DTCPIPPort**](dtcpipport-attribute.md)
 -   [**Attributo event**](event-attribute.md)
--   [**Attributo Filesize**](filesize-attribute.md)
--   [**Attributo filetype**](filetype-attribute.md)
--   [**Attributo IDLibreria**](libraryid-attribute.md)
--   [**LibraryName (attributo)**](libraryname-attribute.md)
+-   [**Attributo FileSize**](filesize-attribute.md)
+-   [**Attributo FileType**](filetype-attribute.md)
+-   [**Attributo LibraryID**](libraryid-attribute.md)
+-   [**Attributo LibraryName**](libraryname-attribute.md)
 -   [**Attributo MediaType**](mediatype-attribute.md)
 -   [**Attributo RecordingTime**](recordingtime-attribute.md)
 -   [**Attributo RecordingTimeDay**](recordingtimeday-attribute.md)
@@ -48,7 +48,7 @@ Gli attributi seguenti sono disponibili per un elemento foto nella libreria.
 -   [**Attributo RecordingTimeYearMonthDay**](recordingtimeyearmonthday-attribute.md)
 -   [**Attributo SourceURL**](sourceurl-attribute.md)
 -   [**Attributo SyncState**](syncstate-attribute.md)
--   [**Attributo title**](title-attribute.md)
+-   [**Attributo Title**](title-attribute.md)
 -   [**Attributo TrackingID**](trackingid-attribute.md)
 -   [**Attributo UserCustom1**](usercustom1-attribute.md)
 -   [**Attributo UserCustom2**](usercustom2-attribute.md)
@@ -64,12 +64,12 @@ Gli attributi seguenti sono disponibili per un elemento foto nella libreria.
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

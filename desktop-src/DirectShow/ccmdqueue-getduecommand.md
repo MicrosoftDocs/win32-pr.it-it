@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetDueCommand recupera un puntatore al comando successivo che è dovuto a.
+description: Il metodo GetDueCommand recupera un puntatore al comando successivo dovuto.
 ms.assetid: f23434a6-ad2c-4b64-90b1-2f486a16e7e6
-title: Metodo CCmdQueue. GetDueCommand (Winutil. h)
+title: Metodo CCmdQueue.GetDueCommand (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a1297a3f0d514215270acf7e73b18cba46fca1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6e7c8d133537dc2b185c755e65f3a4febbee762c5c2306de37ad0c627434df7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016429"
 ---
-# <a name="ccmdqueuegetduecommand-method"></a>CCmdQueue. GetDueCommand, metodo
+# <a name="ccmdqueuegetduecommand-method"></a>Metodo CCmdQueue.GetDueCommand
 
-Il `GetDueCommand` metodo recupera un puntatore al comando successivo che è dovuto a.
+Il `GetDueCommand` metodo recupera un puntatore al comando successivo dovuto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,17 +53,17 @@ Indirizzo di un puntatore al comando posticipato.
 *msTimeout* 
 </dt> <dd>
 
-Tempo di attesa prima dell'esecuzione del timeout.
+Tempo di attesa prima di effettuare il timeout.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce E \_ Interrompi se si verifica un timeout. Restituisce \_ OK se ha esito positivo; in caso contrario, restituisce un errore. Restituisce un oggetto che è stato incrementato utilizzando **IUnknown:: AddRef**.
+Restituisce E \_ ABORT se si verifica un timeout. Restituisce S \_ OK in caso di esito positivo; in caso contrario, restituisce un errore. Restituisce un oggetto incrementato utilizzando **IUnknown::AddRef**.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro si blocca fino a quando non è previsto un comando in sospeso. La funzione membro blocca per la quantità di tempo, in millisecondi, specificata nel parametro *msTimeout* . I comandi in fase di flusso diventano dovuti solo tra le funzioni membro [**CCmdQueue:: Run**](ccmdqueue-run.md) e [**CCmdQueue:: EndRun**](ccmdqueue-endrun.md) . Il comando rimane in coda fino a quando non viene eseguito o annullato.
+Questa funzione membro si blocca fino alla scadenza di un comando in sospeso. La funzione membro si blocca per la quantità di tempo, in millisecondi, specificata nel *parametro msTimeout.* I comandi in fase di flusso diventano dovuti solo tra le funzioni membro [**CCmdQueue::Run**](ccmdqueue-run.md) e [**CCmdQueue::EndRun.**](ccmdqueue-endrun.md) Il comando rimane in coda fino all'esecuzione o all'annullamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questa funzione membro si blocca fino a quando non è previsto un comando in sos
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

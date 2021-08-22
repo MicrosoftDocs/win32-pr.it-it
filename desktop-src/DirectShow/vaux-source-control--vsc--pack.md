@@ -1,25 +1,25 @@
 ---
-description: Pack del controllo del codice sorgente (VSC) di VAUX
+description: VAUX Source Control (VSC) Pack
 ms.assetid: 9d5dd89e-9084-409d-86c0-30b57645d33d
-title: Pack del controllo del codice sorgente (VSC) di VAUX
+title: VAUX Source Control (VSC) Pack
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed51363a15c0024dcaf3edca5d21217cb29396d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcdc91d5c4b2cea460c85b696c59bfce7799d39aed0a6bfcbc03f3d3c522a6ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072075"
 ---
-# <a name="vaux-source-control-vsc-pack"></a>Pack del controllo del codice sorgente (VSC) di VAUX
+# <a name="vaux-source-control-vsc-pack"></a>VAUX Source Control (VSC) Pack
 
-Le tabelle seguenti elencano i valori usati dal driver MSDV per compilare il membro **dwDVVAuxCtl** della struttura [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Per ulteriori informazioni, vedere [DVinfo Field Settings nel driver Msdv](dvinfo-field-settings-in-the-msdv-driver.md).
+Nelle tabelle seguenti sono elencati i valori utilizzati dal driver MSDV per compilare il membro **dwDVVAuxCtl** della [**struttura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Per altre informazioni, vedere [DVINFO Field Impostazioni nel driver MSDV.](dvinfo-field-settings-in-the-msdv-driver.md)
 
-**Impostazioni DVCR**
+**DVCR Impostazioni**
 
 
 
-Standard DV
+DV Standard
 
 DVCR (IEC 61834)
 
@@ -27,7 +27,7 @@ FOURCC
 
 dvsl
 
-DVSD
+dvsd
 
 Sistema
 
@@ -209,7 +209,7 @@ Riservato (1)
 
 1
 
-GENERE (7)
+GENRE (7)
 
 111:1111
 
@@ -233,19 +233,19 @@ VSC Pack
 
  
 
-**Impostazioni DVCPRO 25 e DVCPRO 50 (pianificato)**
+**DVCPRO 25 e DVCPRO 50 Impostazioni (pianificato)**
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO (SMPTE 314M)-pianificato
+DVCPRO (SMPTE 314M) - Pianificato
 
 FOURCC
 
-DV25
+dv25
 
-DV50
+dv50
 
 Sistema
 
@@ -401,13 +401,13 @@ VSC Pack
 
  
 
-**Impostazioni DVCPRO 100 (pianificato)**
+**DVCPRO 100 Impostazioni (pianificato)**
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO 100-pianificato
+DVCPRO 100 - Pianificato
 
 FOURCC
 
@@ -539,17 +539,17 @@ VSC Pack
 
 ## <a name="remarks"></a>Commenti
 
-I codici di campo seguenti sono di particolare interesse:
+I codici di campo seguenti sono di interesse:
 
--   **CGMS**: sistema di gestione della generazione della copia. 0 = copia consentita senza restrizioni.
+-   **CGMS:** sistema di gestione della generazione di copie. 0 = la copia è consentita senza restrizioni.
 
     I pacchetti VSC effettivi nel flusso DV possono contenere valori diversi.
 
 <!-- -->
 
--   **Modalità REC**: modalità di registrazione. 1 = originale.
--   **Disp**: Visualizza la modalità di selezione. 000 = 4:3 proporzioni, formato completo; 010 = 16:9 proporzioni.
--   **BCSYS**: sistema broadcast. Questo campo definisce il tipo di informazioni di segnalazione schermo intero.
+-   **REC MODE:** modalità di registrazione. 1 = Originale.
+-   **DISP:** consente di visualizzare la modalità di selezione. 000 = proporzioni 4:3, formato completo; 010 = proporzioni 16:9.
+-   **BCSYS:** sistema di trasmissione. Questo campo definisce il tipo di informazioni di segnalazione dello schermo wide.
     -   0 = tipo 0 (vedere IEC 61880)
     -   1 = tipo 1 (vedere ETSI EN 300 294)
 
@@ -560,7 +560,7 @@ I codici di campo seguenti sono di particolare interesse:
 [Video digitale in DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Impostazioni dei campi DVINFO nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campi DVINFO Impostazioni nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

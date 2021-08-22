@@ -4,9 +4,9 @@ description: DeleteDirectConnectLicenseServer non è più disponibile.
 ms.assetid: 190316ab-b8ed-4102-8346-42603d6451e6
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo DeleteDirectConnectLicenseServer
-- Metodo DeleteDirectConnectLicenseServer Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo DeleteDirectConnectLicenseServer
+- Metodo DeleteDirectConnectLicenseServer Servizi Desktop remoto
+- Metodo DeleteDirectConnectLicenseServer Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto metodo DeleteDirectConnectLicenseServer
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1929ee4294040e80ec9bb633bd70d4709b3e56b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94cefd0bf27e1b285a8badb9c7fc4b33cf11f9cdac764067662a77b90021afe2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999910"
 ---
-# <a name="deletedirectconnectlicenseserver-method-of-the-win32_terminalservicesetting-class"></a>Metodo DeleteDirectConnectLicenseServer della \_ classe TerminalServiceSetting Win32
+# <a name="deletedirectconnectlicenseserver-method-of-the-win32_terminalservicesetting-class"></a>Metodo DeleteDirectConnectLicenseServer della classe TerminalServiceSetting Win32 \_
 
-\[**DeleteDirectConnectLicenseServer** non è più disponibile per l'uso a partire da Windows Server 2008 R2.\]
+\[**DeleteDirectConnectLicenseServer** non è più disponibile per l'uso a Windows Server 2008 R2.\]
 
-**Windows Server 2008:** Rimuove un server licenze dal registro di sistema.
+**Windows Server 2008:** Rimuove un server licenze dal Registro di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ uint32 DeleteDirectConnectLicenseServer(
 
 <dl> <dt>
 
-*LicenseServerName* \[ in\]
+*LicenseServerName* \[ Pollici\]
 </dt> <dd>
 
 Nome del server licenze da rimuovere.
@@ -54,11 +54,11 @@ Nome del server licenze da rimuovere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto codici di errore del provider WMI,](terminal-services-wmi-provider-error-codes.md) vedere .
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                               |
 | Fine del supporto server<br/>    | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

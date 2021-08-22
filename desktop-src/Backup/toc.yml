@@ -1,22 +1,22 @@
 - name: Backup
   href: backup.md
   items:
-    - name: Chiavi e valori del registro di sistema per il backup e il ripristino
+    - name: Chiavi e valori del Registro di sistema per il backup e il ripristino
       href: registry-keys-for-backup-and-restore.md
     - name: Srdelayed.exe
       href: srdelayed-exe.md
     - name: Backup su nastro
       href: tape-backup.md
       items:
-        - name: Inizializzazione del nastro
+        - name: Inizializzazione nastro
           href: tape-initialization.md
         - name: Input e output su nastro
           href: tape-input-and-output.md
         - name: Creazione di un'applicazione di backup
           href: creating-a-backup-application.md
-        - name: Backup e ripristino di collegamenti reali
+        - name: Backup e ripristino di collegamenti rigidi
           href: backing-up-and-restoring-hard-links.md
-    - name: Backup di Single-Instance Store e SIS
+    - name: Single-Instance archivio dati e backup SIS
       href: single-instance-store-and-sis-backup.md
       items:
         - name: Collegamenti SIS e reparse point
@@ -25,7 +25,7 @@
           href: the-sis-common-store-and-common-store-files.md
         - name: Vantaggi dell'uso di SIS
           href: advantages-of-using-sis.md
-    - name: Riferimento al backup
+    - name: Informazioni di riferimento sul backup
       href: backup-reference.md
       items:
         - name: Funzioni di backup

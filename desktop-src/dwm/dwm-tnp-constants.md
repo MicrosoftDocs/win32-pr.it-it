@@ -1,6 +1,6 @@
 ---
-title: Costanti DWM_TNP (dwmapi. h)
-description: Flag utilizzati dalla struttura delle \_ \_ proprietà di anteprima di DWM per indicare quali membri contengono informazioni valide.
+title: DWM_TNP costanti (Dwmapi.h)
+description: Flag utilizzati dalla struttura DWM \_ THUMBNAIL PROPERTIES per indicare quale dei relativi membri contiene informazioni \_ valide.
 ms.assetid: 8eee1baf-e24e-40af-92ab-a7acae267ecc
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fe91862ff4a36bc9c501a95c3c8ba21d051ddf4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ee82f8e0384c5523b8656c0ecc6cc40bad959c2c9ad6fa1c7b19486d73b00db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985245"
 ---
-# <a name="dwm_tnp-constants"></a>\_Costanti TNP di DWM
+# <a name="dwm_tnp-constants"></a>Costanti \_ TNP DWM
 
-Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_thumbnail_properties) per indicare quali membri contengono informazioni valide.
+Flag utilizzati dalla struttura [**DWM \_ THUMBNAIL \_ PROPERTIES**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_thumbnail_properties) per indicare quale dei relativi membri contiene informazioni valide.
 
 <dl> <dt>
 
@@ -37,7 +37,7 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 
 
-È stato specificato un valore per il membro **rcDestination** .
+È stato specificato un valore per il **membro rcDestination.**
 
 
 </dt> </dl> </dd> <dt>
@@ -50,12 +50,12 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 
 
-È stato specificato un valore per il membro **rcSource** .
+È stato specificato un valore per il membro **rcSource.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWM_TNP_OPACITY"></span><span id="dwm_tnp_opacity"></span>**\_ \_ opacità TNP DWM**
+<span id="DWM_TNP_OPACITY"></span><span id="dwm_tnp_opacity"></span>**OPACITÀ TNP DWM \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -63,12 +63,12 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 
 
-È stato specificato un valore per il membro **Opacity** .
+È stato specificato un valore **per** il membro di opacità.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWM_TNP_VISIBLE"></span><span id="dwm_tnp_visible"></span>**DWM \_ TNP \_ visibile**
+<span id="DWM_TNP_VISIBLE"></span><span id="dwm_tnp_visible"></span>**DWM \_ TNP \_ VISIBLE**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -76,7 +76,7 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 
 
-È stato specificato un valore per il membro **fVisible** .
+È stato specificato un valore per il membro **fVisible.**
 
 
 </dt> </dl> </dd> <dt>
@@ -89,7 +89,7 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 
 
-È stato specificato un valore per il membro **fSourceClientAreaOnly** .
+È stato specificato un valore per il membro **fSourceClientAreaOnly.**
 
 
 </dt> </dl> </dd> </dl>
@@ -100,9 +100,9 @@ Flag utilizzati dalla struttura [**delle \_ \_ proprietà di anteprima di DWM**]
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Dwmapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Dwmapi.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_OSSNAPID. Equals (metodo)'
-title: JET_OSSNAPID. Equals (metodo)
+description: 'Altre informazioni su: JET_OSSNAPID. Metodo Equals'
+title: JET_OSSNAPID. Metodo Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid.equals(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 8d2cfe038ab1b598bfeccf5750ed3d779e682d20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6d4f7d61c25722318a53625c81c3776be049e8aba09fbed8c124e2a47553388
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038889"
 ---
-# <a name="jet_ossnapidequals-method"></a>JET_OSSNAPID. Equals (metodo)
+# <a name="jet_ossnapidequals-method"></a>JET_OSSNAPID. Metodo Equals
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh596770(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.</td>
+<td><a href="hh596770(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di . Esegue l'override <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">di ValueType.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh163478(v=exchg.10).md">Uguale a (JET_OSSNAPID)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
+<td><a href="hh163478(v=exchg.10).md">Equals(JET_OSSNAPID)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .</td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID struttura](./jet-ossnapid-structure.md)
 
-[Membri JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID membri](./jet-ossnapid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

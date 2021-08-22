@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_HIDEBALLOONTIP (COMmctrl. h)
-description: Nasconde qualsiasi suggerimento del fumetto associato a un controllo di modifica.
+title: EM_HIDEBALLOONTIP messaggio (Commctrl.h)
+description: Nasconde qualsiasi suggerimento a fumetto associato a un controllo di modifica.
 ms.assetid: 820b98d6-c2bd-4821-ba44-9d58e23eac81
 keywords:
-- Controlli di Windows Message EM_HIDEBALLOONTIP
+- EM_HIDEBALLOONTIP dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8ecececff3d12ad48cfcfb6353a717e8f8875df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a25b9380738b29a938ff59d2d80ac996747b9996ade2f5acb773ec6c7b93a06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019489"
 ---
-# <a name="em_hideballoontip-message"></a>\_Messaggio HIDEBALLOONTIP em
+# <a name="em_hideballoontip-message"></a>MESSAGGIO \_ EM HIDEBALLOONTIP
 
-Nasconde qualsiasi suggerimento del fumetto associato a un controllo di modifica.
+Nasconde qualsiasi suggerimento a fumetto associato a un controllo di modifica.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,25 +32,25 @@ Nasconde qualsiasi suggerimento del fumetto associato a un controllo di modifica
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, restituisce **false**.
+Se il messaggio ha esito positivo, restituisce **TRUE.** In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -60,9 +60,9 @@ Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, rest
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, rest
 
 <dl> <dt>
 
-[**Modifica \_ HideBalloonTip**](/windows/desktop/api/Commctrl/nf-commctrl-edit_hideballoontip)
+[**Modificare \_ HideBalloonTip**](/windows/desktop/api/Commctrl/nf-commctrl-edit_hideballoontip)
 </dt> </dl>
 
  

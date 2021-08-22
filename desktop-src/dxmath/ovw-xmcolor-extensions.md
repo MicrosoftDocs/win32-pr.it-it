@@ -1,19 +1,19 @@
 ---
-description: XMCOLOR descrive un vettore di colore alfa rosso verde (ARGB) a 32 bit, dove ogni canale di colore viene specificato da 8 bit.
+description: XMCOLOR descrive un vettore di colore ARGB (Alpha Red Green Blue) a 32 bit, in cui ogni canale di colore è specificato da 8 bit.
 ms.assetid: c2bf32a8-deb8-4aec-a94e-98d437c315f6
 title: Estensioni XMCOLOR
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a5a03771b0bed576826c1e5159ab6bfa8c55600
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c3a17721ba2a20d43482ea6a662dd341bbb498c1391c8a71222ef24fce2243a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985001"
 ---
 # <a name="xmcolor-extensions"></a>Estensioni XMCOLOR
 
-[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) descrive un vettore di colore alfa rosso verde (ARGB) a 32 bit, dove ogni canale di colore viene specificato da 8 bit.
+[**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) descrive un vettore di colore ARGB (Alpha Red Green Blue) a 32 bit, in cui ogni canale di colore è specificato da 8 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture2DArray:: operator'
-description: 'Restituisce una variabile di risorsa. | Funzione RWTexture2DArray:: operator'
+title: Funzione RWTexture2DArray::Operator
+description: Restituisce una variabile di risorsa. | Funzione RWTexture2DArray::Operator
 ms.assetid: ae3d0697-ea0a-450d-bdfe-7bc5d8faf11a
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: faf49c48fbf5042ce2765005cd8daea4d1227255
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8650b4aed51915591438501fb2c929b846e5be1d4de1219017ec1eb45980d552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104058501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985921"
 ---
-# <a name="rwtexture2darrayoperator--function"></a>Funzione RWTexture2DArray:: operator
+# <a name="rwtexture2darrayoperator--function"></a>Funzione RWTexture2DArray::Operator
 
 Restituisce una variabile di risorsa.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
 
-Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione della matrice desiderata.
+Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione di matrice desiderata.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture2DArray](sm5-object-rwtexture2darray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

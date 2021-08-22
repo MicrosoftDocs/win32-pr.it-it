@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. itemSelectedColor
+title: PLAYLIST.itemSelectedColor
 description: L'attributo itemSelectedColor specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist.
 ms.assetid: b7da5874-b8eb-46b3-8455-23bf146773cf
 keywords:
-- PLAYLIST. itemSelectedColor Windows Media Player
+- PLAYLIST.itemSelectedColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca82e9e8e68daefc746b5bb4a68a20452a584fdc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51cddc80450f7051c4bdaacb78ecce62ed72a4f94f9b10ee583cae89209f027c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054219"
 ---
-# <a name="playlistitemselectedcolor"></a>PLAYLIST. itemSelectedColor
+# <a name="playlistitemselectedcolor"></a>PLAYLIST.itemSelectedColor
 
-L'attributo **itemSelectedColor** specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist.
+**L'attributo itemSelectedColor** specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist.
 
 ``` syntax
         elementID.itemSelectedColor
@@ -29,7 +29,7 @@ L'attributo **itemSelectedColor** specifica o recupera un valore che indica il c
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura che rappresenta un colore. Il valore predefinito è il colore del testo evidenziato di Windows.
+Questo attributo è una stringa di **lettura/scrittura** che rappresenta un colore. Il valore predefinito è il colore Windows testo evidenziato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,10 +45,10 @@ Questo attributo è una **stringa** di lettura/scrittura che rappresenta un colo
 
 <dl> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

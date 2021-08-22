@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 7900e79536cc9ac45037e205962a563bcde8878a
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 5b7066eec7832ba0b76dee38e6483e0bfcfcfb05fdb8448ee7b3a91e701069fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976651"
 ---
 # <a name="dlpactiontype-enumeration"></a>Enumerazione DlpActionType
 
@@ -87,7 +87,7 @@ Operazione di stampa.
 *DlpActionTypeScreenClip*
 </dt> <dd>
 
-Operazione di acquisizione dello schermo.
+Operazione di acquisizione schermo.
 
 </dd> </dl>
 
@@ -140,7 +140,7 @@ Valore massimo dell'enumerazione.
 
 ## <a name="remarks"></a>Commenti
 
-I valori di questa enumerazione vengono usati dalla [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) struttura .
+I valori di questa enumerazione vengono utilizzati dalla [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) struttura .
 
 ## <a name="requirements"></a>Requisiti
 

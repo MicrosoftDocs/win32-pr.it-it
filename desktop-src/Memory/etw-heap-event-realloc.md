@@ -1,7 +1,7 @@
 ---
-description: Evento di traccia della gestione della memoria per un'operazione di riallocazione dell'heap.
+description: Evento di traccia di gestione della memoria per un'operazione di riallocazione dell'heap.
 ms.assetid: D8080B7B-CECC-40DB-B52A-2C3E4F04ABA9
-title: Evento ETW_HEAP_EVENT_REALLOC (Ntwmi. h)
+title: ETW_HEAP_EVENT_REALLOC eventi (Ntwmi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - ntwmi.h
-ms.openlocfilehash: 7aec225793967c38b97fecae88d28141e48a3cfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 705f31eaf403c4edd608c0b3347713e43ec3c81746b5efde90e14b7213425963
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067871"
 ---
-# <a name="etw_heap_event_realloc-event"></a>Evento \_ \_ REALLOC evento \_ heap ETW
+# <a name="etw_heap_event_realloc-event"></a>EVENTO \_ \_ REALLOC DELL'HEAP ETW \_
 
-L'evento **ETW \_ heap \_ Event \_ REALLOC** è un evento di traccia di gestione della memoria per un'operazione di riallocazione dell'heap.
+**L'evento ETW \_ HEAP EVENT \_ \_ REALLOC è** un evento di traccia di gestione della memoria per un'operazione di riallocazione heap.
 
 
 ```C++
@@ -38,7 +38,7 @@ typedef struct ETW_HEAP_EVENT_REALLOC
 *HeapHandle* 
 </dt> <dd>
 
-Handle dell'heap in cui è stata allocata la memoria. Si tratta dell'heap che consente di gestire un'app passata alla funzione [**AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) quando è stata allocata la memoria.
+Handle dell'heap in cui è stata allocata la memoria. Si tratta dell'handle dell'heap passato a un'app alla [**funzione AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) quando è stata allocata la memoria.
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ Nuovo indirizzo della memoria allocata.
 
 </dd> <dt>
 
-*OldAddress* 
+*Indirizzo precedente* 
 </dt> <dd>
 
 Indirizzo precedente della memoria allocata in precedenza.
@@ -75,18 +75,18 @@ Dimensione precedente in byte allocata in precedenza dall'heap.
 
 Origine della memoria utilizzata dall'allocatore per l'allocazione dell'heap.
 
-Nella tabella seguente sono elencati i valori possibili per il parametro di *origine* , come definito nel file di intestazione *ntetw. h* :
+Nella tabella seguente sono elencati i valori possibili per *il parametro Source* come definito nel file di intestazione *ntetw.h:*
 
 
 
 | Valore                                                                                                                                                                                                                                                                               | Significato                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**Memoria \_ di DA \_ LOOKASIDE**</dt> <dt>1</dt> </dl>                                       | Memoria dall'elenco lookaside.<br/>                                   |
-| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**Memoria \_ di DA \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria dall'heap di frammentazione bassa.<br/>                           |
-| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**Memoria \_ di DA \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria dal percorso del codice principale.<br/>                                       |
-| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **Memoria \_ da \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria da c lento.<br/>                                               |
-| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**Memoria \_ di DA \_ 5 non valido**</dt> <dt></dt> </dl>                                             | Memoria non valida.<br/>                                        |
-| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**Memoria \_ di Dall' \_ \_ heap del segmento**</dt> <dt>6</dt> </dl>                             | Questo valore è riservato per un utilizzo futuro e non verrà mai restituito.<br/> |
+| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**MEMORY \_ DA \_ LOOKASIDE**</dt> <dt>1</dt> </dl>                                       | Memoria dall'elenco lookaside.<br/>                                   |
+| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**MEMORY \_ FROM \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria dall'heap a bassa frammentazione.<br/>                           |
+| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**MEMORY \_ FROM \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria dal percorso del codice principale.<br/>                                       |
+| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **MEMORIA \_ DA \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria da c lenta.<br/>                                               |
+| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**MEMORY \_ FROM \_ INVALID**</dt> <dt>5</dt> </dl>                                             | Memoria non valida.<br/>                                        |
+| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**MEMORY \_ FROM \_ SEGMENT \_ HEAP**</dt> <dt>6</dt> </dl>                             | Questo valore è riservato per un uso futuro e non verrà mai restituito.<br/> |
 
 
 
@@ -94,11 +94,11 @@ Nella tabella seguente sono elencati i valori possibili per il parametro di *ori
 
 </dd> </dl>
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-L'evento **ETW \_ heap \_ Event \_ REALLOC** viene registrato in tutte le riallocazioni dell'heap.
+**L'evento ETW \_ HEAP EVENT \_ \_ REALLOC** viene registrato in tutte le riallocazioni dell'heap.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,9 +106,9 @@ L'evento **ETW \_ heap \_ Event \_ REALLOC** viene registrato in tutte le riallo
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Ntwmi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Ntwmi.h</dt> </dl> |
 
 
 

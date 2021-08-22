@@ -4,12 +4,12 @@ ms.assetid: a0e52ba9-9f7c-4cf3-ba5f-b0035ed1794c
 title: Passaggio 3. Supporto di QueryInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b62132a6f24c68453ad4e51f72cdd9a2a78c65
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0761a0ecf57bc7769cf40623c6929655a9f757b66b35bb506167d4263a7e02a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072455"
 ---
 # <a name="step-3-support-queryinterface"></a>Passaggio 3. Supporto di QueryInterface
 
@@ -57,7 +57,7 @@ Passaggio [4. Creare la pagina delle proprietà](step-4--create-the-property-pag
 
 <dl> <dt>
 
-[Creazione di una pagina delle proprietà del filtro](creating-a-filter-property-page.md)
+[Creazione di una pagina delle proprietà Filtro](creating-a-filter-property-page.md)
 </dt> <dt>
 
 [Come implementare IUnknown](how-to-implement-iunknown.md)

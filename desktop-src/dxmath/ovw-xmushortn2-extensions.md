@@ -1,19 +1,19 @@
 ---
-description: XMUSHORTN2 descrive un vettore 2D per l'archiviazione di valori normalizzati senza segno come interi senza segno a 16 bit (tipo Int16 \_ t).
+description: XMUSHORTN2 descrive un vettore 2D per l'archiviazione di valori normalizzati senza segno come interi senza segno a 16 bit (tipo int16 \_ t).
 ms.assetid: b13018c2-cb31-45d6-ba42-f94945a0b63b
 title: Estensioni XMUSHORTN2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7035cf34697e83e861b4c734d1e62db88b23af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6129859ff3cc9e90816ff81ee3fdb1aa05291710ee6f677de6eeeec11724ea39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984851"
 ---
 # <a name="xmushortn2-extensions"></a>Estensioni XMUSHORTN2
 
-[**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) descrive un vettore 2D per l'archiviazione di valori non firmati e normalizzati come interi senza segno a 16 bit, (tipo `int16_t` ).
+[**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) descrive un vettore 2D per l'archiviazione di valori normalizzati senza segno come interi senza segno a 16 bit (tipo `int16_t` ).
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

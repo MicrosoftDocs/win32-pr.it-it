@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_OBJECTINFO Class'
-title: Classe JET_OBJECTINFO
+description: 'Altre informazioni su: JET_OBJECTINFO classe'
+title: JET_OBJECTINFO classe
 TOCTitle: JET_OBJECTINFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38ca80857b5bf6a2e4c8d57342c888c5c5293ae8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e730c32e742be73f9f8d27d70b5c6deeb51984eab0c774878fe684de82679f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979811"
 ---
-# <a name="jet_objectinfo-class"></a>Classe JET_OBJECTINFO
+# <a name="jet_objectinfo-class"></a>JET_OBJECTINFO classe
 
-La struttura JET_OBJECTINFO include informazioni su un oggetto. Le tabelle sono gli unici tipi di oggetto attualmente supportati.
+La JET_OBJECTINFO contiene informazioni su un oggetto. Le tabelle sono gli unici tipi di oggetto attualmente supportati.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_OBJECTINFO  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_OBJECTINFO](./jet-objectinfo-members.md)
+[JET_OBJECTINFO membri](./jet-objectinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

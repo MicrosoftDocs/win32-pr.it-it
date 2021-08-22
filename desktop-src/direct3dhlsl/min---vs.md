@@ -1,6 +1,6 @@
 ---
-title: min-vs
-description: Calcola il numero minimo di origini. | min-vs
+title: min - vs
+description: Calcola il valore minimo delle origini. | min - vs
 ms.assetid: cecfe98b-8efd-4fbf-a7b5-d228de724e71
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: eda47b75398b8643f7010ff7468f72f4a7d8c199
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2fee49698d323b55404b319e28a90e6741e8de51e96d3015d5b348bc741fee84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986341"
 ---
-# <a name="min---vs"></a>min-vs
+# <a name="min---vs"></a>min - vs
 
-Calcola il numero minimo di origini.
+Calcola il valore minimo delle origini.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| min DST, src0, src1 |
+| min dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Calcola il numero minimo di origini.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | min                    | x    | x    | x    | x     | x    | x     |
 
@@ -65,7 +65,7 @@ dest.w=(src0.w < src1.w) ? src0.w : src1.w;
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

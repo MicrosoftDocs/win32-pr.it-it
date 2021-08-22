@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnThreadStartPlay viene chiamato all'inizio del metodo CSourceStream::D oBufferProcessingLoop.
 ms.assetid: 16d3b28f-bfae-49af-b8e4-8cc8cb15ecab
-title: Metodo CSourceStream. OnThreadStartPlay (source. h)
+title: Metodo CSourceStream.OnThreadStartPlay (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 857f27ad39fb9169e1ef67253d5232c7cbc3dbb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fcd1ccf4b507570e0219854d1f5044c1d95db63d04b8f9049449beb3941e95d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073175"
 ---
-# <a name="csourcestreamonthreadstartplay-method"></a>CSourceStream. OnThreadStartPlay, metodo
+# <a name="csourcestreamonthreadstartplay-method"></a>Metodo CSourceStream.OnThreadStartPlay
 
-Il `OnThreadStartPlay` metodo viene chiamato all'inizio del metodo [**CSourceStream::D obufferprocessingloop**](csourcestream-dobufferprocessingloop.md) .
+Il `OnThreadStartPlay` metodo viene chiamato all'inizio del metodo [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
@@ -54,8 +54,8 @@ Questo metodo non esegue alcuna operazione nella classe di base. è disponibile 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

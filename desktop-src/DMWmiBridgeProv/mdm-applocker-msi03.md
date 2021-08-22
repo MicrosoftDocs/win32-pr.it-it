@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_AppLocker_MSI03
-description: La \_ classe MDM AppLocker \_ MSI03 definisce le restrizioni dei criteri per l'elaborazione dei file MSI.
+title: MDM_AppLocker_MSI03 classe
+description: La classe MDM \_ AppLocker \_ MSI03 definisce le restrizioni dei criteri per l'elaborazione dei file MSI.
 ms.assetid: b7b6602d-38b7-46f0-9542-71228ab0c303
 keywords:
-- Classe MDM_AppLocker_MSI03
-- Classe MDM_AppLocker_MSI03, descritta
+- MDM_AppLocker_MSI03 classe
+- MDM_AppLocker_MSI03 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5bd17a979ac0e4a6dcbbc07a38ba72bfd50ede4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e14a83562427df471aa758042369f2589d772247ba99fe736923d7cc5353cd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018209"
 ---
-# <a name="mdm_applocker_msi03-class"></a>MDM \_ AppLocker \_ MSI03 Class
+# <a name="mdm_applocker_msi03-class"></a>Classe MDM \_ AppLocker \_ MSI03
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ AppLocker \_ MSI03** definisce le restrizioni dei criteri per l'elaborazione dei file MSI.
+La **classe MDM \_ AppLocker \_ MSI03** definisce le restrizioni dei criteri per l'elaborazione dei file MSI.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,23 +47,23 @@ class MDM_AppLocker_MSI03
 
 ## <a name="members"></a>Members
 
-I tipi di membri della classe **MDM \_ AppLocker \_ MSI03** sono i seguenti:
+La **classe MDM \_ AppLocker \_ MSI03** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM di \_ AppLocker \_ MSI03** dispone di queste proprietà.
+La **classe MDM \_ AppLocker \_ MSI03** ha queste proprietà.
 
 <dl> <dt>
 
-[**EnforcementMode**](/windows/client-management/mdm/applocker-csp)
+[**Modalità di imposizione**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -71,42 +71,42 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica il nome del nodo padre.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions"
 
 </dd> <dt>
 
 [**Criteri**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -129,7 +129,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

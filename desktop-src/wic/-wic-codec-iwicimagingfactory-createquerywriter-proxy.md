@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo CreateQueryWriter.
 ms.assetid: 7f925117-6244-4be6-bcef-fa852672ac64
-title: Funzione IWICImagingFactory_CreateQueryWriter_Proxy
+title: IWICImagingFactory_CreateQueryWriter_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 4ae0d41b9ceb652f23084c026b130bf711c44f7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe37af1ebcc4c8fd95b578d363fdb498cb06c22f354b7e2ef8f5ed7a3b29ac01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088273"
 ---
-# <a name="iwicimagingfactory_createquerywriter_proxy-function"></a>IWICImagingFactory \_ CreateQueryWriter- \_ funzione proxy
+# <a name="iwicimagingfactory_createquerywriter_proxy-function"></a>Funzione proxy IWICImagingFactory \_ CreateQueryWriter \_
 
-Funzione proxy per il metodo [**CreateQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createquerywriter) .
+Funzione proxy per il [**metodo CreateQueryWriter.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createquerywriter)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT IWICImagingFactory_CreateQueryWriter_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ in\]
+*pFactory* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_guidMetadataFormat * \[ in\]
+*guidMetadataFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **REFGUID**
 
-GUID per il formato dei metadati desiderato.
+GUID per il formato di metadati desiderato.
 
 </dd> <dt>
 
-*pguidVendor* \[ in\]
+*pguidVendor* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* GUID* _
+Tipo: **CONST \* GUID**
 
 GUID del fornitore del writer di metadati.
 
 </dd> <dt>
 
-_ppIQueryWriter * \[ out\]
+*ppIQueryWriter* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)\*\***
 
-Puntatore che riceve un puntatore a un nuovo [**IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter).
+Puntatore che riceve un puntatore a un nuovo [**oggetto IWICMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ Puntatore che riceve un puntatore a un nuovo [**IWICMetadataQueryWriter**](/wind
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -91,9 +91,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

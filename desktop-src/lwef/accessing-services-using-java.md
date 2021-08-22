@@ -4,18 +4,18 @@ description: Accesso ai servizi tramite Java
 ms.assetid: 3eced858-487a-4f36-a7a1-34ac827aad13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c24ae7508b5999e5d07f2480d49cb4c20dd89a0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b19a9a3feb1e6cb5fc9ddb8a24b87adfdb42461ebb4581723c1cdb465739c51a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976851"
 ---
 # <a name="accessing-services-using-java"></a>Accesso ai servizi tramite Java
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-È anche possibile accedere ai servizi di Microsoft Agent da un'applet Java. Molte delle funzioni accessibili tramite le interfacce di Microsoft Agent restituiscono valori tramite parametri passati per riferimento. Per passare questi parametri da Java, è necessario creare matrici a elemento singolo nel codice e passarle come parametri alla funzione appropriata. Se si utilizza Microsoft Visual J++ ed è stata eseguita la procedura guidata libreria dei tipi Java nel server Microsoft Agent, fare riferimento al file summary.txt per verificare quali funzioni richiedono argomenti di matrice. La procedura è simile a quella in C; usare l'interfaccia [**IAgentEx**](https://www.bing.com/search?q=**IAgentEx**) per creare un'istanza del server e quindi caricare il carattere:
+È anche possibile accedere ai servizi di Microsoft Agent da un'applet Java. Molte delle funzioni accessibili tramite le interfacce di Microsoft Agent restituiscono valori tramite parametri passati per riferimento. Per passare questi parametri da Java, è necessario creare matrici a elemento singolo nel codice e passarli come parametri alla funzione appropriata. Se si usa Microsoft Visual J++ ed è stata eseguita la Creazione guidata libreria dei tipi Java nel server Microsoft Agent, fare riferimento al file summary.txt per verificare quali funzioni richiedono argomenti di matrice. La procedura è simile a quella in C; Si usa [**l'interfaccia IAgentEx**](https://www.bing.com/search?q=**IAgentEx**) per creare un'istanza del server, quindi si carica il carattere :
 
 
 ```
@@ -47,7 +47,7 @@ public void start()
 
 
 
-La procedura è leggermente diversa durante il caricamento di caratteri da una posizione remota HTTP, ad esempio un sito Web. In questo caso il metodo [**Load**](/previous-versions/visualstudio/foxpro/h1tx7zt1(v=vs.71)) è asincrono e genererà un'eccezione com di e \_ in sospeso (0x8000000A). Sarà necessario intercettare questa eccezione e gestirla correttamente, come avviene nelle funzioni seguenti:
+La procedura è leggermente diversa quando si caricano caratteri da una posizione remota HTTP, ad esempio un sito Web. In questo caso il [**metodo Load**](/previous-versions/visualstudio/foxpro/h1tx7zt1(v=vs.71)) è asincrono e genererà un'eccezione COM E \_ PENDING (0x8000000a). Sarà necessario intercettare questa eccezione e gestirla correttamente come avviene nelle funzioni seguenti:
 
 
 ```
@@ -110,7 +110,7 @@ public void start()
 
 
 
-Ottenere quindi l'interfaccia [**IAgentCharacterEx**](https://www.bing.com/search?q=**IAgentCharacterEx**) che consente di accedere ai relativi metodi:
+Ottenere quindi [**l'interfaccia IAgentCharacterEx**](https://www.bing.com/search?q=**IAgentCharacterEx**) che consente di accedere ai relativi metodi:
 
 
 ```
@@ -130,7 +130,7 @@ m_Merlin[0].Speak("Hello World!", "", m_RequestID);
 
 
 
-Analogamente, per ricevere una notifica degli eventi, è necessario implementare l'interfaccia [**IAgentNotifySink**](https://www.bing.com/search?q=**IAgentNotifySink**) o [**IAgentNotifySinkEx**](https://www.bing.com/search?q=**IAgentNotifySinkEx**) , creando e registrando un oggetto di quel tipo:
+Analogamente, per ricevere una notifica degli eventi, è necessario implementare l'interfaccia [**IAgentNotifySink**](https://www.bing.com/search?q=**IAgentNotifySink**) o [**IAgentNotifySinkEx,**](https://www.bing.com/search?q=**IAgentNotifySinkEx**) creando e registrando un oggetto di quel tipo:
 
 
 ```
@@ -159,8 +159,8 @@ public void start()
 
 
 
-Per accedere a Microsoft Agent da un'applet Java, è necessario generare le classi Java che si installano con l'applet. Per generare questi file, è possibile utilizzare la procedura guidata della libreria dei tipi Java di Visual J++, ad esempio. Se si prevede di ospitare l'applet in una pagina Web, è necessario compilare un pacchetto CAB Java con firma incluso dei file di classe generati che vengono scaricati con la pagina. I file di classe sono necessari per accedere al server Microsoft Agent poiché si tratta di un oggetto COM, che viene eseguito all'esterno di Java sandbox. Per ulteriori informazioni sulla sicurezza Trust-Based per Java, vedere <https://www.microsoft.com/java/security> .
+Per accedere a Microsoft Agent da un'applet Java, è necessario generare classi Java installate con l'applet. È possibile usare la Creazione guidata libreria dei tipi Java di Visual J++, ad esempio, per generare questi file. Se si prevede di ospitare l'applet in una pagina Web, sarà necessario compilare un file CAB Java firmato che include i file di classe generati che vengono scaricati con la pagina. I file di classe sono necessari per accedere al server Microsoft Agent perché si tratta di un oggetto COM, che viene eseguito all'esterno della sandbox Java. Per altre informazioni su Trust-Based Security per Java, vedere <https://www.microsoft.com/java/security> .
 
- 
+ 
 
- 
+ 

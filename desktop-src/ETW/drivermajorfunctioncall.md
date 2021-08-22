@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c944b11c9019ba5244850f035bfc7c02d5ca3350
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b69012ae3d9dd46d2dd54c3859895288b9113fa89c772172e3f66a730b058d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070241"
 ---
 # <a name="drivermajorfunctioncall-class"></a>Classe DriverMajorFunctionCall
 
@@ -48,58 +48,58 @@ class DriverMajorFunctionCall : DiskIo
 
 ## <a name="members"></a>Members
 
-La classe **DriverMajorFunctionCall** dispone di questi tipi di membri:
+La **classe DriverMajorFunctionCall** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **DriverMajorFunctionCall** dispone di queste proprietà.
+La **classe DriverMajorFunctionCall** ha queste proprietà.
 
 <dl> <dt>
 
 **FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Pointer
 </dt> </dl>
 
-Corrisponde al valore di questo puntatore al valore del puntatore **FileObject** in un evento [**DiskIo \_ TypeGroup1**](diskio-typegroup1.md) per determinare il tipo di operazione di i/O.
+Trova la corrispondenza del valore di questo puntatore al valore del puntatore **FileObject** in un evento [**\_ DiskIo TypeGroup1**](diskio-typegroup1.md) per determinare il tipo di operazione di I/O.
 
 </dd> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), puntatore
+Qualificatori: WmiDataId(5), Pointer
 </dt> </dl>
 
-Pacchetto di richiesta IO.
+Pacchetto di richiesta I/O.
 
 </dd> <dt>
 
 **MajorFunction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Codice che identifica la funzione principale chiamata.
@@ -109,48 +109,48 @@ Codice che identifica la funzione principale chiamata.
 **MinorFunction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Codice che idenitifies la funzione secondaria chiamata.
+Codice che indica la funzione secondaria chiamata.
 
 </dd> <dt>
 
 **RoutineAddr**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), puntatore
+Qualificatori: WmiDataId(3), Pointer
 </dt> </dl>
 
-Indirizzo della funzione di driver chiamata.
+Indirizzo della funzione driver chiamata.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
-Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per la correlazione con gli altri eventi del driver, ad esempio l'evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per la correlazione con gli altri eventi del driver, ad esempio [**l'evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -160,8 +160,8 @@ Identificatore che identifica in modo univoco la richiesta. Usare questo identif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

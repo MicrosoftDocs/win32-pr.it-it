@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_HANDLE. Nil (proprietà)'
-title: JET_HANDLE. Nil (proprietà)
+description: 'Altre informazioni su: JET_HANDLE. Nil - proprietà'
+title: JET_HANDLE. Nil - proprietà
 TOCTitle: 'Nil property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_HANDLE.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_handle.nil(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d5538a5553389bb204edeab48b571ab3d46d77a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5edd6450423c1e945231d9a4c31527ccac6b1988220f6a93dbfaadb87e22baed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039219"
 ---
-# <a name="jet_handlenil-property"></a>JET_HANDLE. Nil (proprietà)
+# <a name="jet_handlenil-property"></a>JET_HANDLE. Nil - proprietà
 
-Ottiene un JET_HANDLE null.
+Ottiene un valore null JET_HANDLE.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,14 +57,14 @@ public static JET_HANDLE Nil { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE struttura](./jet-handle-structure.md)
 
-[Membri JET_HANDLE](./jet-handle-members.md)
+[JET_HANDLE membri](./jet-handle-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

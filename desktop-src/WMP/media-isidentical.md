@@ -1,11 +1,11 @@
 ---
-title: Metodo media. IsValid
-description: Il metodo IsValid recupera un valore che indica se l'oggetto fornito è uguale a quello corrente. | Metodo media. IsValid
+title: Metodo Media.isIdentical
+description: Il metodo isIdentical recupera un valore che indica se l'oggetto fornito è uguale a quello corrente. | Metodo Media.isIdentical
 ms.assetid: af3266d5-4ac2-4e8c-a9f6-44f7938e9c9d
 keywords:
-- Metodo di Media Player di Windows identico
-- Metodo di Windows Media Player, classe multimediale
-- Media class Media Player Windows, metodo identico
+- Metodo isIdentical Windows Media Player
+- Metodo isIdentical Windows Media Player , classe Media
+- Classe media Windows Media Player metodo isIdentical
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 196487889c075938e763c2b2305b614cffb5f09f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5147d6ccc72d570709ef6ad898bf52872909dc5e3800d9cc671c774510b45d1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054639"
 ---
-# <a name="mediaisidentical-method"></a>Metodo media. IsValid
+# <a name="mediaisidentical-method"></a>Metodo Media.isIdentical
 
-Il **Metodo IsValid** recupera un valore che indica se l'oggetto fornito è uguale a quello corrente.
+Il **metodo isIdentical** recupera un valore che indica se l'oggetto fornito è uguale a quello corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +42,20 @@ bRetVal = Media.isIdentical(
 
 <dl> <dt>
 
-*supporto* \[ di in\]
+*supporti* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **multimediale** da confrontare con l'oggetto **multimediale** corrente.
+**Oggetto** multimediale da confrontare con l'oggetto **Media** corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **valore booleano**.
+Questo metodo restituisce un valore **booleano**.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato il *supporto*. è **identico** per verificare se un elemento multimediale denominato newMedia è uguale all'elemento multimediale corrente. Se non sono uguali, viene riprodotto il nuovo elemento multimediale. In caso contrario, i supporti correnti continueranno a essere riprodotti senza interruzioni. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *Media*. **isIdentical per** controllare se un elemento multimediale denominato newMedia corrisponde all'elemento multimediale corrente. Se non sono uguali, viene riprodotto il nuovo elemento multimediale. In caso contrario, il supporto corrente continua a essere riprodotto senza interruzioni. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -79,7 +79,7 @@ if (newMedia.isIdentical(Player.currentMedia) != true){
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

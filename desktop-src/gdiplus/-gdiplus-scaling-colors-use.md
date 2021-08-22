@@ -1,23 +1,23 @@
 ---
-description: Una trasformazione di ridimensionamento moltiplica uno o più dei quattro componenti colore per numero. Nella tabella seguente vengono fornite le voci della matrice di colori che rappresentano il ridimensionamento.
+description: Una trasformazione di ridimensionamento moltiplica uno o più dei quattro componenti di colore per un numero. Le voci della matrice di colori che rappresentano il ridimensionamento sono riportate nella tabella seguente.
 ms.assetid: 08347831-7100-4220-a83b-693bb7b98ccb
-title: Ridimensionamento di colori
+title: Ridimensionamento dei colori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 370155306f7b1a177358d7cf28d329ebb0d75f8c
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 7877db07ff1a11dcb985f8b0ca8ec3cc017f25fe45f00e989c9108891f8ff1ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104234416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036369"
 ---
-# <a name="scaling-colors"></a>Ridimensionamento di colori
+# <a name="scaling-colors"></a>Ridimensionamento dei colori
 
-Una trasformazione di ridimensionamento moltiplica uno o più dei quattro componenti colore per numero. Nella tabella seguente vengono fornite le voci della matrice di colori che rappresentano il ridimensionamento.
+Una trasformazione di ridimensionamento moltiplica uno o più dei quattro componenti di colore per un numero. Le voci della matrice di colori che rappresentano il ridimensionamento sono riportate nella tabella seguente.
 
 
 
-| Componente da ridimensionare | Voce matrice |
+| Componente da ridimensionare | Immissione matrice |
 |------------------------|--------------|
 | Red                    | \[0 \] \[ 0\]   |
 | Green                  | \[1 \] \[ 1\]   |
@@ -28,7 +28,7 @@ Una trasformazione di ridimensionamento moltiplica uno o più dei quattro compon
 
  
 
-Nell'esempio seguente viene costruito un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file ColorBars2.bmp. Quindi il codice ridimensiona il componente blu di ogni pixel nell'immagine per un fattore di 2. L'immagine originale viene disegnata insieme all'immagine trasformata.
+L'esempio seguente costruisce un [**oggetto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file ColorBars2.bmp. Il codice ridimensiona quindi il componente blu di ogni pixel nell'immagine di un fattore di 2. L'immagine originale viene disegnata insieme all'immagine trasformata.
 
 
 ```
@@ -63,15 +63,15 @@ graphics.DrawImage(
 
 
 
-Nell'illustrazione seguente viene mostrata l'immagine originale a sinistra e l'immagine ridimensionata a destra.
+La figura seguente mostra l'immagine originale a sinistra e l'immagine ridimensionata a destra.
 
-![Mostra quattro barre colorate, quindi le stesse barre con colori diversi.](images/colortrans3.png)
+![Mostra quattro barre colorate e quindi le stesse barre con colori diversi.](images/colortrans3.png)
 
-La tabella seguente mostra i vettori di colore per le quattro barre prima e dopo il ridimensionamento blu. Si noti che il componente blu nella quarta barra dei colori è stato compreso tra 0,8 e 0,6. Ciò è dovuto al fatto che GDI+ mantiene solo la parte frazionaria del risultato. Ad esempio, (2) (0.8) = 1,6 e la parte frazionaria di 1,6 è 0,6. La conservazione solo della parte frazionaria garantisce che il risultato sia sempre nell'intervallo \[ compreso tra 0 e 1 \] .
+La tabella seguente mostra i vettori di colore per le quattro barre prima e dopo il ridimensionamento blu. Si noti che il componente blu nella quarta barra dei colori è passato da 0,8 a 0,6. Questo perché GDI+ mantiene solo la parte frazionaria del risultato. Ad esempio, (2)(0,8) = 1,6 e la parte frazionaria di 1,6 è 0,6. Mantenendo solo la parte frazionaria si garantisce che il risultato sia sempre nell'intervallo \[ 0, 1 \] .
 
 
 
-| Originale           | Ridimensionato             |
+| Originale           | Scala             |
 |--------------------|--------------------|
 | (0.4, 0.4, 0.4, 1) | (0.4, 0.4, 0.8, 1) |
 | (0.4, 0.2, 0.2, 1) | (0.4, 0.2, 0.4, 1) |
@@ -82,7 +82,7 @@ La tabella seguente mostra i vettori di colore per le quattro barre prima e dopo
 
  
 
-Nell'esempio seguente viene costruito un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file ColorBars2.bmp. Il codice Ridimensiona quindi i componenti rosso, verde e blu di ogni pixel nell'immagine. I componenti rossi vengono ridimensionati fino al 25%, i componenti verdi vengono ridimensionati fino al 35% e i componenti blu vengono ridimensionati fino al 50%.
+L'esempio seguente costruisce un [**oggetto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file ColorBars2.bmp. Il codice ridimensiona quindi i componenti rosso, verde e blu di ogni pixel nell'immagine. I componenti rossi vengono ridimensionati del 25%, i componenti verdi vengono ridimensionati del 35% e i componenti blu vengono ridimensionati del 50%.
 
 
 ```
@@ -117,15 +117,15 @@ graphics.DrawImage(
 
 
 
-Nell'illustrazione seguente viene mostrata l'immagine originale a sinistra e l'immagine ridimensionata a destra.
+La figura seguente mostra l'immagine originale a sinistra e l'immagine ridimensionata a destra.
 
-![illustrazione che mostra quattro barre colorate, quindi le barre con colori diversi](images/colortrans4.png)
+![illustrazione che mostra quattro barre colorate, quindi quelle con colori diversi](images/colortrans4.png)
 
 La tabella seguente mostra i vettori di colore per le quattro barre prima e dopo il ridimensionamento rosso, verde e blu.
 
 
 
-| Originale           | Ridimensionato               |
+| Originale           | Scala               |
 |--------------------|----------------------|
 | (0.6, 0.6, 0.6, 1) | (0.45, 0.39, 0.3, 1) |
 | (0, 1, 1, 1)       | (0, 0.65, 0.5, 1)    |

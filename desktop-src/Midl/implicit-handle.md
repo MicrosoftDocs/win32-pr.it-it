@@ -1,9 +1,9 @@
 ---
-title: attributo implicit_handle
-description: L'attributo \ Implicit \_ handle \ ACF specifica l'handle usato per le funzioni che non includono un handle esplicito come parametro di procedura.
+title: implicit_handle attributo
+description: L'attributo ACF \ implicit handle\ specifica l'handle usato per le funzioni che non includono un \_ handle esplicito come parametro di routine.
 ms.assetid: 09c17473-87b5-4fd6-beb9-3d9b7bc82d8c
 keywords:
-- attributo implicit_handle MIDL
+- implicit_handle attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f410fa048a27e1f7626690e6308de4c1a31c2a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 17c53ded4c7459be8f0c8eb98f3770d88ff88a9b7da20cb3482c1032a4f74e96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013809"
 ---
-# <a name="implicit_handle-attribute"></a>\_attributo handle implicito
+# <a name="implicit_handle-attribute"></a>attributo \_ handle implicito
 
-L'attributo ACF dell' **\[ \_ handle \] implicito** specifica l'handle usato per le funzioni che non includono un handle esplicito come parametro di procedura.
+L'attributo ACF **\[ \_ dell'handle \] implicito** specifica l'handle usato per le funzioni che non includono un handle esplicito come parametro di routine.
 
 ``` syntax
 implicit_handle(handle-type handle-name)
@@ -31,14 +31,14 @@ implicit_handle(handle-type handle-name)
 
 <dl> <dt>
 
-*tipo di handle* 
+*handle-type* 
 </dt> <dd>
 
-Specifica il tipo di dati dell'handle, ad esempio l' [**handle \_**](handle-t.md) del tipo di base t o un tipo di handle definito dall'utente.
+Specifica il tipo di dati handle, ad esempio l'handle del tipo di base [**\_ t**](handle-t.md) o un tipo di handle definito dall'utente.
 
 </dd> <dt>
 
-*nome handle* 
+*handle-name* 
 </dt> <dd>
 
 Specifica il nome dell'handle.
@@ -47,15 +47,15 @@ Specifica il nome dell'handle.
 
 ## <a name="remarks"></a>Commenti
 
-L'handle specificato dall'attributo **\[ \_ handle \] implicito** viene utilizzato in modi diversi a seconda della natura della routine. Se la procedura è remota, l'handle verrà usato come handle di binding per la chiamata remota. L'handle implicito può essere usato anche per stabilire un'associazione iniziale per una funzione che usa un handle di contesto. Se la procedura è una procedura di serializzazione, l'handle viene utilizzato come un handle di serializzazione che controlla l'operazione. Nel caso della serializzazione del tipo, l'handle viene utilizzato come handle di serializzazione per tutti i tipi serializzati.
+L'handle specificato **\[ dall'attributo \_ handle \] implicito** viene utilizzato in modi diversi a seconda della natura della procedura. Se la procedura è remota, l'handle verrà utilizzato come handle di associazione per la chiamata remota. L'handle implicito può essere usato anche per stabilire un'associazione iniziale per una funzione che usa un handle di contesto. Se la procedura è una procedura di serializzazione, l'handle viene utilizzato come handle di serializzazione che controlla l'operazione. Nel caso della serializzazione del tipo, l'handle viene utilizzato come handle di serializzazione per tutti i tipi serializzati.
 
-L'attributo **\[ \_ handle \] implicito** specifica una variabile globale che contiene un handle utilizzato da qualsiasi funzione che necessita di handle impliciti.
+**\[ \_ L'attributo \] handle implicito** specifica una variabile globale che contiene un handle usato da qualsiasi funzione che necessitano di handle impliciti.
 
-Il tipo di handle di binding implicito deve essere [**handle \_ t**](handle-t.md) (o un tipo basato su **handle \_ t**) o un tipo di handle definito dall'utente specificato con l'attributo [**handle**](handle.md) . L'handle di serializzazione implicita deve essere un tipo basato su **handle \_ t**.
+Il tipo di handle di associazione implicito deve essere [**handle \_ t**](handle-t.md) (o un tipo basato **sull'handle \_ t**) o un tipo di handle definito dall'utente specificato con l'attributo [**handle.**](handle.md) L'handle di serializzazione implicita deve essere un tipo basato **sull'handle \_ t**.
 
-Se il tipo di handle implicito non è definito nel file IDL o nei file inclusi e importati dal file IDL per il computer MIDL, è necessario fornire il file contenente la definizione del tipo di handle quando si compilano gli stub. Usare l'istruzione di [**inclusione**](include.md) di ACF per includere il file contenente la definizione del tipo di handle.
+Se il tipo di handle implicito non è definito nel file IDL o in qualsiasi file incluso e importato dal file IDL per il computer MIDL, è necessario specificare il file contenente la definizione del tipo di handle quando si compilano gli stub. Usare l'istruzione [**INCLUDE**](include.md) di ACF per includere il file contenente la definizione del tipo di handle.
 
-L'attributo **\[ \_ handle \] implicito** può essere presente al massimo una volta. L'attributo **\[ \_ handle \] implicito** può verificarsi solo [**\[ \_ \]**](auto-handle.md) se gli attributi handle automatico e [**\[ \_ handle \] esplicito**](explicit-handle.md) non vengono eseguiti.
+**\[ \_ L'attributo \] handle implicito** può verificarsi al massimo una volta. **\[ \_ L'attributo \] handle implicito** può verificarsi solo se gli [**\[ attributi handle \_ automatico \]**](auto-handle.md) e [**\[ handle \_ \]**](explicit-handle.md) esplicito non si verificano.
 
 ## <a name="examples"></a>Esempi
 
@@ -77,21 +77,21 @@ interface iface
 [File di configurazione dell'applicazione (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**\_handle automatico**](auto-handle.md)
+[**handle \_ automatico**](auto-handle.md)
 </dt> <dt>
 
-[**handle esplicito \_**](explicit-handle.md)
+[**handle \_ esplicito**](explicit-handle.md)
 </dt> <dt>
 
 [**handle \_ t**](handle-t.md)
 </dt> <dt>
 
-[**includere**](include.md)
+[**Includono**](include.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

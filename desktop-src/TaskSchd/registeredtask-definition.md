@@ -1,11 +1,11 @@
 ---
-title: Proprietà RegisteredTask. Definition
-description: Per la creazione di script, ottiene la definizione dell'attività.
+title: RegisteredTask.Definition - proprietà
+description: Per lo scripting, ottiene la definizione dell'attività.
 ms.assetid: 7117ccf3-e21e-41ca-baa2-4cdcaa9cda76
 keywords:
-- Utilità di pianificazione proprietà definizione
-- Utilità di pianificazione proprietà definizione, oggetto RegisteredTask
-- Utilità di pianificazione oggetto RegisteredTask, proprietà Definition
+- Definizione delle proprietà Utilità di pianificazione
+- Proprietà Definition Utilità di pianificazione , oggetto RegisteredTask
+- Proprietà Dell'oggetto RegisteredTask Utilità di pianificazione , Definition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98cb599dee91371935197049d168c3ee5ddff5a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ee910370dbf1ec14fcfc9f80649d720b46e53a1c177da2e6bac91dcb6085c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060059"
 ---
-# <a name="registeredtaskdefinition-property"></a>Proprietà RegisteredTask. Definition
+# <a name="registeredtaskdefinition-property"></a>RegisteredTask.Definition - proprietà
 
-Per la creazione di script, ottiene la definizione dell'attività.
+Per lo scripting, ottiene la definizione dell'attività.
 
 Questa proprietà è di sola lettura.
 
@@ -48,9 +48,9 @@ Definizione dell'attività.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

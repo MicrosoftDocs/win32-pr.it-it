@@ -4,7 +4,7 @@ description: Recupera la descrizione dell'errore per gli eventi di disconnession
 ms.assetid: 8c8f7b10-7f79-4586-845e-e99f5ca81905
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetErrorDescription
+- Metodo GetErrorDescription Servizi Desktop remoto
 - Metodo GetErrorDescription Servizi Desktop remoto, interfaccia IMsRdpClient5
 - Interfaccia IMsRdpClient5 Servizi Desktop remoto, metodo GetErrorDescription
 - Metodo GetErrorDescription Servizi Desktop remoto, interfaccia IMsRdpClient6
@@ -32,14 +32,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c402a0128286964ddeb1c53cd805e4ef6414bfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 197025b4cfb842cf4ca38af64124c02415240ac6fc878f9c121d4e228b77f5b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001489"
 ---
-# <a name="imsrdpclient5geterrordescription-method"></a>Metodo IMsRdpClient5:: GetErrorDescription
+# <a name="imsrdpclient5geterrordescription-method"></a>Metodo IMsRdpClient5::GetErrorDescription
 
 Recupera la descrizione dell'errore per gli eventi di disconnessione della sessione.
 
@@ -60,24 +60,24 @@ HRESULT GetErrorDescription(
 
 <dl> <dt>
 
-*disconnectReason* \[ in\]
+*disconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Motivo della disconnessione.
 
 </dd> <dt>
 
-*extendedDisconnectReason* \[ in\]
+*extendedDisconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Fornisce informazioni dettagliate sul motivo per cui è stata avviata una disconnessione.
 
 </dd> <dt>
 
-*pBstrErrorMsg* \[ out\]
+*pBstrErrorMsg* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile **BSTR** che riceve il testo del messaggio di errore.
+Puntatore a una **variabile BSTR** che riceve il testo del messaggio di errore.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Questo metodo non restituisce valori.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient5 è definito come 4eb5335b-6429-477d-B922-e06a28ecd8bf<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient5 è definito come 4eb5335b-6429-477d-b922-e06a28ecd8bf<br/>       |
 
 
 

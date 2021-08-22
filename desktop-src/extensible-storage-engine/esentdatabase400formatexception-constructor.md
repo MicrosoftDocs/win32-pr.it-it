@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDatabase400FormatException'
+description: Altre informazioni sul costruttore EsentDatabase400FormatException
 title: Costruttore EsentDatabase400FormatException
 TOCTitle: 'EsentDatabase400FormatException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabase400FormatException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4ffda43a6c134963c2b6afa18eeffd6d325c2661
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e2a693e6beb351fef9e92c99bd765dcaee1b4807d5bfff38179d4d997e3566b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116421"
 ---
 # <a name="esentdatabase400formatexception-constructor"></a>Costruttore EsentDatabase400FormatException
 
 Inizializza una nuova istanza della classe EsentDatabase400FormatException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDatabase400FormatException()
 
 [Membri di EsentDatabase400FormatException](./esentdatabase400formatexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Process_V1_TypeGroup1 classe : questa classe è la classe del tipo di evento per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_V1_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: b114d7fd-c308-4f21-8f1a-ab27dc93abc5
 title: Process_V1_TypeGroup1 classe
 ms.topic: reference
@@ -19,12 +19,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8d7f4426f34a97ff79dc41806f1e0070013528d2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cd2b4ab072b04246351ede86027536d777bce3c7e2321260be4d0622f55663d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070001"
 ---
 # <a name="process_v1_typegroup1-class"></a>Elaborare \_ la classe \_ TypeGroup1 V1
 
@@ -120,7 +120,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Identificatore univoco del processo che crea questo processo. I numeri di identificatore del processo vengono riutilizzati, quindi identificano un processo solo per la durata del processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
+Identificatore univoco del processo che crea il processo. I numeri di identificatore di processo vengono riutilizzati, quindi identificano solo un processo per la durata di tale processo. È possibile che il processo identificato da ParentProcessId venga terminato, quindi ParentProcessId potrebbe non fare riferimento a un processo in esecuzione. È anche possibile che ParentProcessId faccia erroneamente riferimento a un processo che riutilizza un identificatore di processo.
 
 **Windows Server 2003:** Include il qualificatore Format("x").
 
@@ -138,7 +138,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Identificatore di processo globale che è possibile usare per identificare un processo. Il valore è valido dal momento in cui un processo viene creato fino a quando non viene terminato.
+Identificatore di processo globale che è possibile usare per identificare un processo. Il valore è valido dal momento in cui viene creato un processo fino a quando non viene terminato.
 
 **Windows Server 2003:** Include il qualificatore Format("x").
 
@@ -172,7 +172,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(6), Extension("Sid")
 </dt> </dl>
 
-Identificatore di sicurezza (SID) per il contesto utente in cui si verifica l'evento.
+ID di sicurezza (SID) per il contesto utente in cui si verifica l'evento.
 
 </dd> </dl>
 
@@ -182,8 +182,8 @@ Identificatore di sicurezza (SID) per il contesto utente in cui si verifica l'ev
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

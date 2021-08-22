@@ -1,5 +1,5 @@
 ---
-description: 'Thread_V2: questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Thread_V2 classe: questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 63e52cba-42a5-44f0-8eb6-e1bac8414a83
 title: Thread_V2 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b00067af61a55e61f70b0c799a1512edf284f11c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d057f80d5cf29f6660ee3a2ebd651c468496529a56a11147225ebd504451184c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069391"
 ---
 # <a name="thread_v2-class"></a>Classe \_ Thread V2
 
@@ -40,12 +40,12 @@ La **classe Thread \_ V2** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare gli eventi del thread in una sessione di registrazione del kernel NT, specificare il flag **EVENT \_ TRACE FLAG \_ \_ THREAD** nel membro **EnableFlags** di una struttura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) quando si chiama la [**funzione StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) È anche possibile specificare i flag seguenti:
+Per abilitare gli eventi di thread in una sessione di registrazione del kernel NT, specificare il flag **EVENT \_ TRACE FLAG \_ \_ THREAD** nel membro **EnableFlags** di una struttura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) quando si chiama la [**funzione StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) È anche possibile specificare i flag seguenti:
 
--   **CSWITCH \_ DEL FLAG DI TRACCIA \_ \_ EVENTI**
+-   **FLAG \_ DI TRACCIA EVENTI \_ \_ CSWITCH**
 -   **\_DISPATCHER DEL FLAG DI TRACCIA \_ \_ EVENTI**
 
-I consumer di traccia eventi possono implementare un'elaborazione speciale per gli eventi del thread chiamando la [**funzione SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e specificando [**ThreadGuid**](nt-kernel-logger-constants.md) come *parametro pGuid.* Usare i tipi di evento seguenti per identificare l'evento del thread effettivo quando si utilizzano gli eventi.
+I consumer di traccia eventi possono implementare un'elaborazione speciale per gli eventi del thread chiamando la [**funzione SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e specificando [**ThreadGuid**](nt-kernel-logger-constants.md) come *parametro pGuid.* Usare i tipi di evento seguenti per identificare l'evento del thread effettivo durante l'utilizzo degli eventi.
 
 
 
@@ -70,8 +70,8 @@ Gli eventi di avvio di processi e thread possono essere registrati nel contesto 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_CORRECTTEXT (RichEdit. h)
-description: Notifica a una finestra padre di un controllo Rich Edit che \_ si è verificato un gesto Syv corretto, assegnando alla finestra padre la possibilità di annullare la correzione del testo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un \_ messaggio di notifica WM.
+title: EN_CORRECTTEXT di notifica (Richedit.h)
+description: Notifica a una finestra padre del controllo Rich Edit che si è verificato un movimento SYV CORRECT, offrendo alla finestra padre la possibilità di annullare \_ la correzione del testo. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: d6f6278f-ff63-4f6a-a352-2b4d70df3e1a
 keywords:
-- Controlli di Windows per il codice di notifica EN_CORRECTTEXT
+- EN_CORRECTTEXT del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5d1339513a94967ab60bdab2b9ee39172b19e76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48f03bf0d1bd31cc1f4139c24c6b0efa904f013231af4e108b0f97ef7f308bbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019419"
 ---
-# <a name="en_correcttext-notification-code"></a>\_Codice di notifica en CORRECTTEXT
+# <a name="en_correcttext-notification-code"></a>Codice di notifica EN \_ CORRECTTEXT
 
-Notifica a una finestra padre di un controllo Rich Edit che \_ si è verificato un gesto Syv corretto, assegnando alla finestra padre la possibilità di annullare la correzione del testo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica a una finestra padre del controllo Rich Edit che si è verificato un movimento SYV CORRECT, offrendo alla finestra padre la possibilità di annullare \_ la correzione del testo. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,18 +47,18 @@ Struttura [**ENCORRECTTEXT**](/windows/desktop/api/Richedit/ns-richedit-encorrec
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero per ignorare l'azione.
+Restituire zero per ignorare l'azione.
 
 Restituisce un valore diverso da zero per elaborare l'azione.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica viene inviato solo se sono disponibili funzionalità di penna.
+Questo codice di notifica viene inviato solo se sono disponibili funzionalità penna.
 
-Per ricevere \_ i codici di notifica en CORRECTTEXT, specificare [**ENM \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere i \_ codici di notifica EN CORRECTTEXT, specificare [**ENM \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 > [!Note]  
-> Il \_ codice di notifica en CORRECTTEXT è supportato solo in Rich Edit version 1,0. Non è supportata nelle versioni successive di Rich Edit. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+> Il codice di notifica EN \_ CORRECTTEXT è supportato solo nella versione Rich Edit 1.0. Non è supportato nelle versioni successive di Rich Edit. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
  
 
@@ -68,9 +68,9 @@ Per ricevere \_ i codici di notifica en CORRECTTEXT, specificare [**ENM \_ CORRE
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

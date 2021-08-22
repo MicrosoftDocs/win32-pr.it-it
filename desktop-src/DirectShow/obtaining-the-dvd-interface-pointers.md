@@ -1,19 +1,19 @@
 ---
-description: Acquisizione dei puntatori dell'interfaccia DVD
+description: Recupero dei puntatori di interfaccia DVD
 ms.assetid: 3d9315fc-dcfb-483a-9437-55c440813dc2
-title: Acquisizione dei puntatori dell'interfaccia DVD
+title: Recupero dei puntatori di interfaccia DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24825b2d24ffae70e3def131e8aa522a987c11d0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 70d965dff48813800fa76821c72fa06a2d2f652e623c8aaeb7c0b44f9f9fafc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072942"
 ---
-# <a name="obtaining-the-dvd-interface-pointers"></a>Acquisizione dei puntatori dell'interfaccia DVD
+# <a name="obtaining-the-dvd-interface-pointers"></a>Recupero dei puntatori di interfaccia DVD
 
-Dopo la creazione del grafico di filtro, l'applicazione può ottenere i puntatori necessari per controllare il navigatore DVD, il gestore del grafico del filtro e la finestra del video. I passaggi di base, con controllo degli errori e altro codice escluso per semplicità, sono illustrati nell'esempio di codice seguente. Il codice completo è disponibile nell'applicazione di esempio DVD nel metodo CDvdCore:: BuildGraph. Per ulteriori informazioni, vedere [esempi di DirectShow](directshow-samples.md).
+Dopo aver compilato il grafico dei filtri, l'applicazione può ottenere i puntatori di cui ha bisogno per controllare lo strumento di navigazione DVD, Il gestore Graph filtri e la finestra video. I passaggi di base, con il controllo degli errori e altro codice lasciato per semplicità, sono illustrati nell'esempio di codice seguente. Il codice completo è disponibile nell'applicazione DVD Sample nel metodo CDvdCore::BuildGraph. Per altre informazioni, vedere esempi [DirectShow.](directshow-samples.md)
 
 
 ```C++

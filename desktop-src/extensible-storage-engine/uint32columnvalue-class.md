@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe UInt32ColumnValue'
+description: Altre informazioni sulla classe UInt32ColumnValue
 title: Classe UInt32ColumnValue
 TOCTitle: UInt32ColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.UInt32ColumnValue
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7511cf3d449002e9fed069fdb721dc3e4cc4b28e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fa507085f214359d3b00602cd8e891b519bfda26c7f4389dadbb6777a8b361a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978351"
 ---
 # <a name="uint32columnvalue-class"></a>Classe UInt32ColumnValue
 
-Valore della colonna [UInt32](/dotnet/api/system.uint32) .
+Valore [della colonna UInt32.](/dotnet/api/system.uint32)
 
 Questa API non è conforme a CLS. 
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\>  
-      Microsoft. ISAM. esent. Interop. UInt32ColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\>  
+      Microsoft.Isam.Esent.Interop.UInt32ColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,4 +73,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di UInt32ColumnValue](./uint32columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

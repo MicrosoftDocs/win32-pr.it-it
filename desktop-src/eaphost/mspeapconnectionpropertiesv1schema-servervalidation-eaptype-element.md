@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1495da3f1a1f5e69e7a6af9c64e69aa1ea354abc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 194057a8769f32902388e733731fb1e3d987ecafd0eff26ea62c15d4fc8555d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984021"
 ---
 # <a name="servervalidation-eaptype-element-peap"></a>Elemento ServerValidation (EapType) (PEAP)
 
-L'elemento **ServerValidation (EapType)** contiene informazioni su come eseguire la convalida del server.
+**L'elemento ServerValidation (EapType)** contiene informazioni su come eseguire la convalida del server.
 
 ``` syntax
 <xs:element name="ServerValidation"
@@ -31,20 +31,20 @@ L'elemento **ServerValidation (EapType)** contiene informazioni su come eseguire
  />
 ```
 
-L'elemento **ServerValidation** è definito dall'elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+**L'elemento ServerValidation** è definito dall'elemento [**EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **ServerValidation** è facoltativo.
+**L'elemento ServerValidation** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -58,13 +58,13 @@ L'elemento **ServerValidation** è facoltativo.
 [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)

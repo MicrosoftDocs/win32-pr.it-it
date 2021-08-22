@@ -1,5 +1,5 @@
 ---
-description: Scrive la chiave esterna associata alla protezione con chiave del volume specificata in un file di sistema, nascosto o di sola lettura nella cartella specificata.
+description: Scrive la chiave esterna associata alla protezione della chiave del volume specificata in un file di sistema nascosto di sola lettura nella cartella specificata.
 ms.assetid: 8d928f85-b392-4119-aebb-f16021eb5c6a
 title: Metodo SaveExternalKeyToFile della classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 879536940ff36a005e1936dffcd7821fff585a65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02269d2b2339ebc8a2b6022bc5f02e63710d496e768be09dad9993c177ed5de9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004289"
 ---
-# <a name="saveexternalkeytofile-method-of-the-win32_encryptablevolume-class"></a>Metodo SaveExternalKeyToFile della \_ classe EncryptableVolume Win32
+# <a name="saveexternalkeytofile-method-of-the-win32_encryptablevolume-class"></a>Metodo SaveExternalKeyToFile della classe \_ EncryptableVolume Win32
 
-Il metodo **SaveExternalKeyToFile** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) scrive la chiave esterna associata alla protezione con chiave del volume specificata in un file di sistema, nascosto o di sola lettura nella cartella specificata.
+Il metodo **SaveExternalKeyToFile** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) scrive la chiave esterna associata alla protezione della chiave del volume specificata in un file di sistema nascosto di sola lettura nella cartella specificata.
 
-Questo metodo è applicabile solo per le protezioni con chiave di tipo "chiave esterna" o "TPM e chiave di avvio".
+Questo metodo è applicabile solo per le chiavi di protezione di tipo "Chiave esterna" o "TPM e chiave di avvio".
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,27 +42,27 @@ uint32 SaveExternalKeyToFile(
 
 <dl> <dt>
 
-*VolumeKeyProtectorID* \[ in\]
+*VolumeKeyProtectorID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Identificatore di stringa univoco utilizzato per gestire una protezione con chiave del volume crittografata.
+Identificatore di stringa univoco usato per gestire una protezione con chiave di volume crittografata.
 
 </dd> <dt>
 
-*Percorso* \[ in\]
+*Percorso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Stringa che contiene il percorso del volume o della cartella in cui salvare la chiave esterna associata alla protezione con chiave specificata. Questo percorso non include il nome del file, che è interno e può variare da una versione all'altra. Usare **GetExternalKeyFileName** per ottenere il nome del file.
+Stringa contenente il percorso del volume o della cartella in cui deve essere salvata la chiave esterna associata alla protezione della chiave specificata. Questo percorso non include il nome del file, che è interno e può cambiare da versione a versione. Usare **GetExternalKeyFileName** per ottenere il nome del file.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se ha esito negativo.
 
@@ -71,10 +71,10 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 | Codice/valore restituito                                                                                                                                                                   | Descrizione                                                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                   | Il metodo è stato eseguito correttamente.<br/>                                                                                                             |
-| <dl> <dt>**FVE \_ E \_ \_ VOLUME bloccato**</dt> <dt>2150694912 (0x80310000)</dt> </dl>  | Il volume è bloccato.<br/>                                                                                                                  |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>           | Il parametro *VolumeKeyProtectorID* non fa riferimento a una protezione con chiave del tipo "chiave esterna" o "TPM e chiave di avvio".<br/>            |
-| <dl> <dt>**Errore \_ PERCORSO \_ non \_ trovato**</dt> <dt>2147942403 (0 x 80070003)</dt> </dl> | Il parametro *path* non fa riferimento a un percorso valido.<br/> Verificare che il nome file non sia incluso nel parametro *path* .<br/> |
-| <dl> <dt>**FVE \_ E \_ non \_ attivato**</dt> <dt>2150694920 (0x80310008)</dt> </dl>  | Nel volume non è abilitato BitLocker. Aggiungere una protezione con chiave per abilitare BitLocker. <br/>                                                      |
+| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME**</dt> <dt>2150694912 (0x80310000)</dt> </dl>  | Il volume è bloccato.<br/>                                                                                                                  |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>           | Il *parametro VolumeKeyProtectorID* non fa riferimento a una protezione della chiave di tipo "Chiave esterna" o "TPM e chiave di avvio".<br/>            |
+| <dl> <dt>**ERRORE \_ PERCORSO \_ NON \_ TROVATO**</dt> 2147942403 <dt>(0x80070003)</dt> </dl> | Il *parametro Path* non fa riferimento a un percorso valido.<br/> Assicurarsi che il nome del file non sia incluso nel *parametro Path.*<br/> |
+| <dl> <dt>**FVE \_ E \_ NOT \_ ACTIVATED**</dt> <dt>2150694920 (0x80310008)</dt> </dl>  | Nel volume non è abilitato BitLocker. Aggiungere una protezione con chiave per abilitare BitLocker. <br/>                                                      |
 
 
 
@@ -82,7 +82,7 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,10 +90,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/>                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftVolumeEncryption<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows Vista Enterprise, Windows solo app desktop di Vista Ultimate \[\]<br/>                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> </dl>
 
  

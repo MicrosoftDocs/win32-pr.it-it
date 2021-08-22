@@ -1,34 +1,34 @@
 ---
-title: Applicazioni di esempio client DRM di Microsoft Windows Media
-description: Applicazioni di esempio client DRM di Microsoft Windows Media
+title: Applicazioni di esempio del client Microsoft Windows Media DRM
+description: Applicazioni di esempio del client Microsoft Windows Media DRM
 ms.assetid: 7bbcc238-2858-4a08-a76b-9502fc453f17
 keywords:
 - Windows Media Format SDK, applicazioni di esempio
-- Windows Media Format SDK, esempi di applicazioni
-- Digital Rights Management (DRM), applicazioni di esempio
+- Windows MEDIA Format SDK, esempi di applicazioni
 - DRM (Digital Rights Management), applicazioni di esempio
-- Digital Rights Management (DRM), esempi di applicazioni
-- DRM (Digital Rights Management), esempi di applicazioni
+- DRM (Digital Rights Management),applicazioni di esempio
+- digital rights management (DRM), esempi di applicazioni
+- DRM (Digital Rights Management),esempi di applicazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f49d38a7a0f4865e319db0dc55841ce9e67c297e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: efd21fc5351b1987eb2476e46a56ef09a51302004c5a29ef4d98bb09535521c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085988"
 ---
-# <a name="microsoft-windows-media-drm-client-sample-applications"></a>Applicazioni di esempio client DRM di Microsoft Windows Media
+# <a name="microsoft-windows-media-drm-client-sample-applications"></a>Applicazioni di esempio del client Microsoft Windows Media DRM
 
-Le applicazioni di esempio che usano le API estese del client Windows Media DRM sono fornite come progetti per Microsoft Visual Studio 2005.
+Le applicazioni di esempio che usano Windows API estese del client Media DRM vengono fornite come progetti per Microsoft Visual Studio 2005.
 
-Nella tabella seguente sono riepilogati gli esempi. Informazioni aggiuntive su ciascun esempio, incluse le informazioni sull'utilizzo, sono reperibili nel file readme.txt in ogni directory di esempio.
+Nella tabella seguente sono riepilogati gli esempi. Informazioni aggiuntive su ogni esempio, incluse le informazioni sull'utilizzo, sono disponibili nel file readme.txt in ogni directory di esempio.
 
 
 
 | Esempio      | Descrizione                                                                                                                                 |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| QueryRights | Segnala i diritti concessi dalle licenze nel computer client per un elenco di figli. Vengono illustrate le query rapide e le query sullo stato delle licenze. |
+| QueryRights | Segnala i diritti concessi dalle licenze nel computer client per un elenco di KID. Vengono illustrate sia le query veloci che le query sullo stato della licenza. |
 | DRMUpdate   | Esegue l'individualizzazione e crea un log di tutti gli eventi generati durante il processo.                                                   |
 
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono riepilogati gli esempi. Informazioni aggiuntive su c
 
 <dl> <dt>
 
-[**Informazioni sulle API estese del client Windows Media DRM**](about-the-windows-media-drm-client-extended-apis.md)
+[**Informazioni sulle WINDOWS client Media DRM estese**](about-the-windows-media-drm-client-extended-apis.md)
 </dt> </dl>
 
  

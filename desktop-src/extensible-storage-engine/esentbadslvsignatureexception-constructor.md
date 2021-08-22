@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadSLVSignatureException'
+description: Altre informazioni sul costruttore EsentBadSLVSignatureException
 title: Costruttore EsentBadSLVSignatureException
 TOCTitle: 'EsentBadSLVSignatureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadSLVSignatureException.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 15c5b76f8916abc2929b773ae8302fb86fcf2c53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 974dcd71c9f12cb15a3f57a5014f7c2340e9a1e830617b2339694e4b1d3142d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117161"
 ---
 # <a name="esentbadslvsignatureexception-constructor"></a>Costruttore EsentBadSLVSignatureException
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public EsentBadSLVSignatureException()
 
 [Membri di EsentBadSLVSignatureException](./esentbadslvsignatureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

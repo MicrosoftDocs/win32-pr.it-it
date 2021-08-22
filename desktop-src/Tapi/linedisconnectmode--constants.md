@@ -1,23 +1,23 @@
 ---
-description: Le \_ costanti del flag di bit LINEDISCONNECTMODE descrivono motivi diversi per una richiesta di disconnessione remota. Una modalità di disconnessione è disponibile come stato della chiamata all'applicazione dopo la transizione dello stato della chiamata a disconnected.
+description: Le costanti del flag di bit LINEDISCONNECTMODE \_ descrivono diversi motivi per una richiesta di disconnessione remota. Una modalità di disconnessione è disponibile come stato della chiamata all'applicazione dopo la transizione dello stato della chiamata a disconnesso.
 ms.assetid: 1b26f13c-b0bf-4d2c-8514-f0c376e36bcd
-title: Costanti LINEDISCONNECTMODE_ (TAPI. h)
+title: LINEDISCONNECTMODE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c70ba70175685e2c264343f9345227ee64c206f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41ad56f993d746e5d09e33e4dcfb74d29766dd359fa47302053e0af13513a7da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060669"
 ---
-# <a name="linedisconnectmode_-constants"></a>\_Costanti LINEDISCONNECTMODE
+# <a name="linedisconnectmode_-constants"></a>Costanti \_ LINEDISCONNECTMODE
 
-Le costanti del flag di bit **LINEDISCONNECTMODE \_** descrivono motivi diversi per una richiesta di disconnessione remota. Una modalità di disconnessione è disponibile come stato della chiamata all'applicazione dopo la transizione dello stato della chiamata a disconnected.
+Le costanti del flag di bit **LINEDISCONNECTMODE \_** descrivono diversi motivi per una richiesta di disconnessione remota. Una modalità di disconnessione è disponibile come stato della chiamata all'applicazione dopo la transizione dello stato della chiamata a disconnesso.
 
 <dl> <dt>
 
-<span id="LINEDISCONNECTMODE_BADADDRESS"></span><span id="linedisconnectmode_badaddress"></span>**\_BADADDRESS LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_BADADDRESS"></span><span id="linedisconnectmode_badaddress"></span>**LINEDISCONNECTMODE \_ BADADDRESS**
 </dt> <dd> <dl> <dt>
 
 
@@ -27,19 +27,19 @@ L'indirizzo di destinazione non è valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_BLOCKED"></span><span id="linedisconnectmode_blocked"></span>**LINEDISCONNECTMODE \_ bloccati**
+<span id="LINEDISCONNECTMODE_BLOCKED"></span><span id="linedisconnectmode_blocked"></span>**LINEDISCONNECTMODE \_ BLOCCATO**
 </dt> <dd> <dl> <dt>
 
 
 
-Impossibile connettere la chiamata poiché le chiamate dall'indirizzo di origine non vengono accettate nell'indirizzo di destinazione. Questo comportamento è diverso da quello di LINEDISCONNECTMODE, \_ in quanto il blocco viene implementato nella rete (un rifiuto passivo), mentre un rifiuto viene implementato nell'attrezzatura di destinazione (rifiuto attivo). Il blocco può essere causato da un'esclusione specifica dell'indirizzo di origine o dal fatto che la destinazione accetta chiamate solo da un set di indirizzi di origine (gruppo di utenti chiusi) selezionato. (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa perché le chiamate dall'indirizzo di origine non vengono accettate all'indirizzo di destinazione. Questo comportamento è diverso da LINEDISCONNECTMODE REJECT perché il blocco viene implementato nella rete (rifiuto passivo) mentre un rifiuto viene implementato nell'apparecchiatura di destinazione \_ (rifiuto attivo). Il blocco può essere dovuto a un'esclusione specifica dell'indirizzo di origine o perché la destinazione accetta chiamate solo da un set selezionato di indirizzi di origine (gruppo di utenti chiuso). (TAPI versioni 2.0 e successive)
 
-Il \_ blocco LINEDISCONNECTMODE è appropriato come risposta Blocklisting. Ad esempio, un modem ha ricevuto una risposta, più di sei secondi senza rilevare la rilevanza, non è stato possibile connettere un numero definito di volte, determina che il numero di telefono non è valido per la chiamata ed emette una risposta "Blocklisting".
+LINEDISCONNECTMODE \_ BLOCKED è appropriato come risposta in blocco. Ad esempio, un modem ha ricevuto una risposta, è passato più di sei secondi senza rilevare Ringback, non è riuscito a connettersi a un numero definito di volte, determina che il numero di telefono non è valido per la chiamata ed esegue una risposta "in blocco".
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_BUSY"></span><span id="linedisconnectmode_busy"></span>**LINEDISCONNECTMODE \_ occupato**
+<span id="LINEDISCONNECTMODE_BUSY"></span><span id="linedisconnectmode_busy"></span>**LINEDISCONNECTMODE \_ OCCUPATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -49,17 +49,17 @@ La stazione dell'utente remoto è occupata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_CANCELLED"></span><span id="linedisconnectmode_cancelled"></span>**LINEDISCONNECTMODE \_ annullato**
+<span id="LINEDISCONNECTMODE_CANCELLED"></span><span id="linedisconnectmode_cancelled"></span>**LINEDISCONNECTMODE \_ ANNULLATO**
 </dt> <dd> <dl> <dt>
 
 
 
-La chiamata è stata annullata. (Versioni TAPI 2,0 e successive)
+La chiamata è stata annullata. (TAPI versioni 2.0 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_CONGESTION"></span><span id="linedisconnectmode_congestion"></span>**congestione LINEDISCONNECTMODE \_**
+<span id="LINEDISCONNECTMODE_CONGESTION"></span><span id="linedisconnectmode_congestion"></span>**CONGESTIONE LINEDISCONNECTMODE \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -69,37 +69,37 @@ La rete è congestionata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_DONOTDISTURB"></span><span id="linedisconnectmode_donotdisturb"></span>**\_DONOTDISTURB LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_DONOTDISTURB"></span><span id="linedisconnectmode_donotdisturb"></span>**LINEDISCONNECTMODE \_ DONOTDISTURB**
 </dt> <dd> <dl> <dt>
 
 
 
-Impossibile connettere la chiamata perché la destinazione ha richiamato la funzionalità non disturbare. (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa perché la destinazione ha richiamato la funzionalità Non disturbare. (TAPI versioni 2.0 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_FORWARDED"></span><span id="linedisconnectmode_forwarded"></span>**LINEDISCONNECTMODE di \_ trasmissione**
+<span id="LINEDISCONNECTMODE_FORWARDED"></span><span id="linedisconnectmode_forwarded"></span>**LINEDISCONNECTMODE \_ INOLTRATO**
 </dt> <dd> <dl> <dt>
 
 
 
-La chiamata è stata trasmessa dall'opzione.
+La chiamata è stata inoltrata dall'opzione .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_INCOMPATIBLE"></span><span id="linedisconnectmode_incompatible"></span>**LINEDISCONNECTMODE \_ INcompatibile**
+<span id="LINEDISCONNECTMODE_INCOMPATIBLE"></span><span id="linedisconnectmode_incompatible"></span>**LINEDISCONNECTMODE \_ INCOMPATIBILE**
 </dt> <dd> <dl> <dt>
 
 
 
-L'apparecchiatura della stazione dell'utente remoto non è compatibile con il tipo di chiamata richiesta.
+Le apparecchiature di stazione dell'utente remoto non sono compatibili con il tipo di chiamata richiesto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_NOANSWER"></span><span id="linedisconnectmode_noanswer"></span>**LINEDISCONNECTMODE \_ NOanswer**
+<span id="LINEDISCONNECTMODE_NOANSWER"></span><span id="linedisconnectmode_noanswer"></span>**LINEDISCONNECTMODE \_ NOANSWER**
 </dt> <dd> <dl> <dt>
 
 
@@ -109,47 +109,47 @@ La stazione dell'utente remoto non risponde.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_NODIALTONE"></span><span id="linedisconnectmode_nodialtone"></span>**\_NODIALTONE LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_NODIALTONE"></span><span id="linedisconnectmode_nodialtone"></span>**LINEDISCONNECTMODE \_ NODIALTONE**
 </dt> <dd> <dl> <dt>
 
 
 
-Un tono di composizione non è stato rilevato all'interno di un timeout definito dal provider di servizi, in un determinato momento durante la composizione quando ne era previsto uno (ad esempio, "W" nella stringa di connessione remota). Questo può verificarsi anche senza un periodo di timeout definito dal provider di servizi o senza un valore specificato nel membro **dwWaitForDialTone** della struttura [**LINEDIALPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linedialparams) . (Versioni TAPI 1,4 e successive)
+Non è stato rilevato un segnale acustico all'interno di un timeout definito dal provider di servizi, in un punto durante la composizione quando ne era previsto uno (ad esempio in una "W" nella stringa dialable). Ciò può verificarsi anche senza un periodo di timeout definito dal provider di servizi o senza un valore specificato nel membro **dwWaitForDialTone** della struttura [**LINEDIALPARAMS.**](/windows/desktop/api/Tapi/ns-tapi-linedialparams) (TAPI versioni 1.4 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_NORMAL"></span><span id="linedisconnectmode_normal"></span>**LINEDISCONNECTMODE \_ normale**
+<span id="LINEDISCONNECTMODE_NORMAL"></span><span id="linedisconnectmode_normal"></span>**LINEDISCONNECTMODE \_ NORMAL**
 </dt> <dd> <dl> <dt>
 
 
 
-Si tratta di una normale richiesta di disconnessione da parte della parte remota. La chiamata è stata terminata normalmente.
+Si tratta di una normale richiesta di disconnessione da parte dell'entità remota. La chiamata è stata terminata normalmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_NUMBERCHANGED"></span><span id="linedisconnectmode_numberchanged"></span>**\_NUMBERCHANGED LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_NUMBERCHANGED"></span><span id="linedisconnectmode_numberchanged"></span>**LINEDISCONNECTMODE \_ NUMBERCHANGED**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è stato possibile connettere la chiamata perché il numero di destinazione è stato modificato, ma non è stato specificato il reindirizzamento automatico al nuovo numero. (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa perché il numero di destinazione è stato modificato, ma non viene fornito il reindirizzamento automatico al nuovo numero. (TAPI versioni 2.0 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_OUTOFORDER"></span><span id="linedisconnectmode_outoforder"></span>**\_OUTOFORDER LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_OUTOFORDER"></span><span id="linedisconnectmode_outoforder"></span>**LINEDISCONNECTMODE \_ OUTOFORDER**
 </dt> <dd> <dl> <dt>
 
 
 
-La chiamata non è stata connessa o è stata disconnessa perché il dispositivo di destinazione non è in ordine (errore hardware). (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa o è stata disconnessa perché il dispositivo di destinazione non è in ordine (errore hardware). (TAPI versioni 2.0 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_PICKUP"></span><span id="linedisconnectmode_pickup"></span>**LINEDISCONNECTMODE \_ pickup**
+<span id="LINEDISCONNECTMODE_PICKUP"></span><span id="linedisconnectmode_pickup"></span>**RITIRO LINEDISCONNECTMODE \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -159,75 +159,75 @@ La chiamata è stata prelevata da un'altra posizione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_QOSUNAVAIL"></span><span id="linedisconnectmode_qosunavail"></span>**\_QOSUNAVAIL LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_QOSUNAVAIL"></span><span id="linedisconnectmode_qosunavail"></span>**LINEDISCONNECTMODE \_ QOSUNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è stato possibile connettere la chiamata o è stata disconnessa perché non è stato possibile ottenere o sostenere la qualità del servizio minima. Questo comportamento è diverso da LINEDISCONNECTMODE \_ incompatibile perché la mancanza di risorse può essere una condizione temporanea nella destinazione. (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa o è stata disconnessa perché non è stato possibile ottenere o sostenere la qualità minima del servizio. Questo comportamento è diverso da LINEDISCONNECTMODE INCOMPATIBLE in base al fatto che la mancanza di risorse può essere una condizione \_ temporanea nella destinazione. (TAPI versioni 2.0 e successive)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_REJECT"></span><span id="linedisconnectmode_reject"></span>**LINEDISCONNECTMODE \_ rifiuta**
+<span id="LINEDISCONNECTMODE_REJECT"></span><span id="linedisconnectmode_reject"></span>**LINEDISCONNECTMODE \_ REJECT**
 </dt> <dd> <dl> <dt>
 
 
 
-La chiamata è stata rifiutata dall'utente remoto.
+L'utente remoto ha rifiutato la chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_TEMPFAILURE"></span><span id="linedisconnectmode_tempfailure"></span>**\_TEMPFAILURE LINEDISCONNECTMODE**
+<span id="LINEDISCONNECTMODE_TEMPFAILURE"></span><span id="linedisconnectmode_tempfailure"></span>**LINEDISCONNECTMODE \_ TEMPFAILURE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è stato possibile connettere la chiamata o è stata disconnessa a causa di un errore temporaneo nella rete. la chiamata può essere ritentata in un secondo momento ed è prevista la fine del completamento. (Versioni TAPI 2,0 e successive)
+La chiamata non è stata connessa o è stata disconnessa a causa di un errore temporaneo nella rete. La chiamata può essere tentata nuovamente in un secondo momento e dovrebbe essere completata. (TAPI versioni 2.0 e successive)
 
-LINEDISCONNECTMODE \_ TEMPFAILURE è appropriato come risposta ritardata. Ad esempio, un modem che riceve un segnale occupato o equivalente troppe volte in un determinato periodo di tempo conclude che il numero non deve essere chiamato di nuovo fino a quando non è trascorso un periodo definito e genera una risposta "ritardata".
+LINEDISCONNECTMODE \_ TEMPFAILURE è appropriato come risposta ritardata. Ad esempio, un modem che riceve un segnale occupato o un numero di volte equivalente in un determinato periodo di tempo conclude che il numero non deve essere chiamato di nuovo fino a quando non è trascorso un tempo definito e non elava una risposta "ritardata".
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_UNAVAIL"></span><span id="linedisconnectmode_unavail"></span>**LINEDISCONNECTMODE non \_ disponibile**
+<span id="LINEDISCONNECTMODE_UNAVAIL"></span><span id="linedisconnectmode_unavail"></span>**LINEDISCONNECTMODE \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-Il motivo della disconnessione non è disponibile e non verrà più noto in seguito.
+Il motivo della disconnessione non è disponibile e non sarà noto in un secondo momento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_UNKNOWN"></span><span id="linedisconnectmode_unknown"></span>**LINEDISCONNECTMODE \_ sconosciuto**
+<span id="LINEDISCONNECTMODE_UNKNOWN"></span><span id="linedisconnectmode_unknown"></span>**LINEDISCONNECTMODE \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 
 
-Il motivo della richiesta di disconnessione è sconosciuto, ma potrebbe essere noto in seguito.
+Il motivo della richiesta di disconnessione è sconosciuto, ma potrebbe diventare noto in un secondo momento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDISCONNECTMODE_UNREACHABLE"></span><span id="linedisconnectmode_unreachable"></span>**LINEDISCONNECTMODE \_ irraggiungibile**
+<span id="LINEDISCONNECTMODE_UNREACHABLE"></span><span id="linedisconnectmode_unreachable"></span>**LINEDISCONNECTMODE \_ NON RAGGIUNGIBILE**
 </dt> <dd> <dl> <dt>
 
 
 
-Non è stato possibile raggiungere l'utente remoto.
+Impossibile raggiungere l'utente remoto.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile assegnare i 16 bit più significativi per le estensioni specifiche del dispositivo. I 16 bit di ordine inferiore sono riservati.
+I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit di ordine basso sono riservati.
 
-Una richiesta di disconnessione remota per una determinata chiamata determina la transizione dello stato della chiamata allo stato disconnesso e all'applicazione viene inviato un messaggio di [**riga \_ CALLSTATE**](line-callstate.md) . Le \_ informazioni LINEDISCONNECTMODE forniscono informazioni dettagliate sulla richiesta di disconnessione remota. È disponibile nella struttura [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) della chiamata quando la chiamata è nello stato disconnected. Mentre una chiamata si trova in questo stato, l'applicazione può comunque eseguire query sulle informazioni e sullo stato della chiamata. Ad esempio, le informazioni utente utente ricevute come parte della disconnessione remota sono disponibili. L'applicazione può cancellare una chiamata disconnessa eliminando la chiamata.
+Una richiesta di disconnessione remota per una determinata chiamata comporta la transizione dello stato della chiamata allo stato disconnesso e viene inviato un messaggio [**LINE \_ CALLSTATE**](line-callstate.md) all'applicazione. Le informazioni LINEDISCONNECTMODE \_ forniscono informazioni dettagliate sulla richiesta di disconnessione remota. È disponibile nella struttura [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) della chiamata quando la chiamata è nello stato disconnesso. Mentre una chiamata si trova in questo stato, l'applicazione può comunque eseguire query sulle informazioni e sullo stato della chiamata. Ad esempio, le informazioni utente-utente ricevute come parte della disconnessione remota sono quindi disponibili. L'applicazione può cancellare una chiamata disconnessa eliminando la chiamata.
 
-Per compatibilità con le versioni precedenti, è responsabilità del provider di servizi esaminare la versione dell'API negoziata sulla riga e non usare questo \_ valore LINEDISCONNECTMODE se non è supportato nella versione negoziata (in alternativa, è possibile usare LINEDISCONNECTMODE \_ Normal o \_ Unknown).
+Per la compatibilità con le versioni precedenti, è responsabilità del provider di servizi esaminare la versione dell'API negoziata nella riga e non usare questo valore LINEDISCONNECTMODE se non è supportato nella versione negoziata (è invece possibile usare \_ LINEDISCONNECTMODE NORMAL o \_ \_ UNKNOWN).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -235,8 +235,8 @@ Per compatibilità con le versioni precedenti, è responsabilità del provider d
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -244,7 +244,7 @@ Per compatibilità con le versioni precedenti, è responsabilità del provider d
 
 <dl> <dt>
 
-[**LINEA \_ CALLSTATE**](line-callstate.md)
+[**LINE \_ CALLSTATE**](line-callstate.md)
 </dt> <dt>
 
 [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus)

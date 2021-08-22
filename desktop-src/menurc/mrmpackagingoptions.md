@@ -1,9 +1,9 @@
 ---
-title: Enumerazione MrmPackagingOptions (MrmResourceIndexer. h)
+title: Enumerazione MrmPackagingOptions (MrmResourceIndexer.h)
 description: Definisce le costanti che specificano le opzioni per il file PRI creato da MrmCreateResourceFile e MrmCreateResourceFileInMemory.
 ms.assetid: 11FADCB2-CE6F-449E-8A85-DA50B52B26D0
 keywords:
-- Menu di enumerazione MrmPackagingOptions e altre risorse
+- Menu e altre risorse dell'enumerazione MrmPackagingOptions
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9a8b2bee733fe17e91501fe295e5f80be159ec5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ede8ef1367bc217827f616514a4fb9ea69e180cb654a19cbbe9593d4c74036d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971970"
 ---
 # <a name="mrmpackagingoptions-enumeration"></a>Enumerazione MrmPackagingOptions
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Definisce le costanti che specificano le opzioni per il file PRI creato da [**MrmCreateResourceFile**](mrmcreateresourcefile.md) e [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Definisce le costanti che specificano le opzioni per il file PRI creato da [**MrmCreateResourceFile**](mrmcreateresourcefile.md) e [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi [di compilazione personalizzati.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ typedef enum _MrmPackagingOptions {
 <span id="MrmPackagingOptionsNone"></span><span id="mrmpackagingoptionsnone"></span><span id="MRMPACKAGINGOPTIONSNONE"></span>**MrmPackagingOptionsNone**
 </dt> <dd>
 
-Non specifica alcuna opzione per la creazione di pacchetti.
+Non specifica opzioni di creazione pacchetti.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Specifica che deve essere creato un pacchetto di risorse senza schema.
 <span id="MrmPackagingOptionsSplitLanguageVariants"></span><span id="mrmpackagingoptionssplitlanguagevariants"></span><span id="MRMPACKAGINGOPTIONSSPLITLANGUAGEVARIANTS"></span>**MrmPackagingOptionsSplitLanguageVariants**
 </dt> <dd>
 
-Specifica che il file PRI deve essere suddiviso automaticamente da tutti i qualificatori supportati (in particolare, lingua e scala).
+Specifica che il file PRI deve essere suddiviso automaticamente in base a tutti i qualificatori supportati (in particolare, lingua e scalabilità).
 
 </dd> </dl>
 
@@ -71,9 +71,9 @@ Specifica che il file PRI deve essere suddiviso automaticamente da tutti i quali
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

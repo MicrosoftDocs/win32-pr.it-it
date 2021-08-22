@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_GETLISTBOXINFO (winuser. h)
+title: LB_GETLISTBOXINFO messaggio (Winuser.h)
 description: Ottiene il numero di elementi per colonna in una casella di riepilogo specificata.
 ms.assetid: 925bebd9-2563-4892-a7d7-73d4ef012b42
 keywords:
-- Controlli di Windows Message LB_GETLISTBOXINFO
+- LB_GETLISTBOXINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51f49f96e3f12b1c21e81e8b5358e174e576d07f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79339e08ef917780668cd54b6bdfc72cb0f4949aaa446cbc2c34db44b216602d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019319"
 ---
-# <a name="lb_getlistboxinfo-message"></a>\_Messaggio GETLISTBOXINFO lb
+# <a name="lb_getlistboxinfo-message"></a>Messaggio \_ LB GETLISTBOXINFO
 
 Ottiene il numero di elementi per colonna in una casella di riepilogo specificata.
 
@@ -32,14 +32,14 @@ Ottiene il numero di elementi per colonna in una casella di riepilogo specificat
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Il valore restituito è il numero di elementi per colonna.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio è equivalente a [**GetListBoxInfo**](/windows/desktop/api/Winuser/nf-winuser-getlistboxinfo).
+Questo messaggio equivale a [**GetListBoxInfo**](/windows/desktop/api/Winuser/nf-winuser-getlistboxinfo).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Questo messaggio è equivalente a [**GetListBoxInfo**](/windows/desktop/api/Winu
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
