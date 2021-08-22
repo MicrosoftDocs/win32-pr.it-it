@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_DIAGONAL (Wmsdkidl. h)
+title: WMT_VIDEOIMAGE_TRANSITION_DIAGONAL (Wmsdkidl.h)
 description: La transizione diagonale rivela la nuova immagine lungo una linea diagonale che ha origine in un angolo del frame.
 ms.assetid: 1aaaf9e8-bbb8-4289-948e-5d352798e831
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_DIAGONAL formato Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_DIAGONAL windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6affa3e0727972e66e1ab6584c94ec233a11655
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b1a356d7325dd01de2ad055750a062d5591fd4aa983fdb21e39e9543a3d26e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658131"
 ---
-# <a name="wmt_videoimage_transition_diagonal"></a>\_ \_ diagonale transizione VIDEOIMAGE WMT \_
+# <a name="wmt_videoimage_transition_diagonal"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ DIAGONAL
 
 La transizione diagonale rivela la nuova immagine lungo una linea diagonale che ha origine in un angolo del frame.
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella seguente vengono descritti i parametri utilizzati da questa transizione ed elencati i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
+La tabella seguente descrive i parametri usati da questa transizione ed elenca i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
 
 
 
@@ -58,12 +58,12 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 <tr class="odd">
 <td>Direzione</td>
 <td><strong>fEffectPara2</strong></td>
-<td>Determina l'angolo da cui ha origine la transizione. Impostare su uno dei seguenti elementi:<br/>
+<td>Determina l'angolo da cui ha origine la transizione. Impostare su uno dei valori seguenti:<br/>
 <ul>
-<li>0-in alto a destra</li>
-<li>1-in alto a sinistra</li>
-<li>2-in basso a destra</li>
-<li>3-in basso a sinistra</li>
+<li>0 - In alto a destra</li>
+<li>1 - In alto a sinistra</li>
+<li>2 - In basso a destra</li>
+<li>3 - In basso a sinistra</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -71,8 +71,8 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 <td><strong>fEffectPara3</strong></td>
 <td>Impostare su uno dei valori seguenti:
 <ul>
-<li>0: specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è il primo piano.</li>
-<li>1-specifica la composizione invertita, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è il primo piano.</li>
+<li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li>
+<li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -88,7 +88,7 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 

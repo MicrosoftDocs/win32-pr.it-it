@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo VistaColtyp. GUID'
-title: Campo VistaColtyp. GUID (Microsoft. ISAM. esent. Interop. vista)
+description: Altre informazioni sul campo VistaColtyp.GUID
+title: Campo VistaColtyp.GUID (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: GUID field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.GUID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp.guid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bbf24d28179c4bf0d58d5a3fbdad602e1d2cf195
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d56fafd5a974a3e1aeb6405c7119743bc1247c9888176cad5cb4a4608fdd08c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559421"
 ---
-# <a name="vistacoltypguid-field"></a>Campo VistaColtyp. GUID
+# <a name="vistacoltypguid-field"></a>Campo VistaColtyp.GUID
 
 GUID a 16 byte.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_coltyp GUID
 
 [Membri di VistaColtyp](./vistacoltyp-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetCountOfType Recupera il numero di oggetti di un determinato tipo contenuto in questa composizione e in tutte le relative tracce virtuali, in modo ricorsivo.
+description: Il metodo GetCountOfType recupera in modo ricorsivo il numero di oggetti di un determinato tipo contenuto in questa composizione e tutte le relative tracce virtuali.
 ms.assetid: 2d14ccf7-77bc-4095-bfb8-12a52b4b9595
-title: 'Metodo IAMTimelineComp:: GetCountOfType (qedit. h)'
+title: Metodo IAMTimelineComp::GetCountOfType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 69c4c582a3883feedec962bfb88b4a833be3750b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b0504a7adb41a0d6a45714090a39aeefda9a3ef53b2d834540f600ec3ef871a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756411"
 ---
-# <a name="iamtimelinecompgetcountoftype-method"></a>Metodo IAMTimelineComp:: GetCountOfType
+# <a name="iamtimelinecompgetcountoftype-method"></a>Metodo IAMTimelineComp::GetCountOfType
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetCountOfType` metodo recupera il numero di oggetti di un tipo specificato contenuto nella composizione e in tutte le relative tracce virtuali, in modo ricorsivo.
+Il metodo recupera in modo ricorsivo il numero di oggetti di un determinato tipo contenuto in questa composizione e tutte le relative tracce `GetCountOfType` virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,46 +47,46 @@ HRESULT GetCountOfType(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Riceve il numero di oggetti del tipo specificato contenuti in questa composizione e in tutte le relative tracce virtuali, in modo ricorsivo.
+Riceve in modo ricorsivo il numero di oggetti del tipo specificato contenuti in questa composizione e tutte le relative tracce virtuali.
 
 </dd> <dt>
 
 *pValWithComps* 
 </dt> <dd>
 
-Riceve il conteggio restituito in *pval* più il numero di composizioni ricercate, incluso quello.
+Riceve il conteggio restituito in *pVal* più il numero di composizioni ricercate, inclusa questa.
 
 </dd> <dt>
 
 *MajorType* 
 </dt> <dd>
 
-Membro del tipo enumerato della [**sequenza temporale \_ principale \_**](timeline-major-type.md) , che specifica il tipo di oggetto da contare.
+Membro del tipo [**enumerato TIMELINE \_ MAJOR \_ TYPE,**](timeline-major-type.md) che specifica il tipo di oggetto da contare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un \_ puntatore e in caso contrario.
+Restituisce S \_ OK in caso di esito positivo oppure E POINTER in caso \_ contrario.
 
 ## <a name="remarks"></a>Commenti
 
 In genere, un'applicazione non chiamerà questo metodo. Viene chiamato dal motore di rendering.
 
-Se si contano le composizioni, il valore restituito in *pval* è zero e il valore restituito in *pValWithComps* è il numero di composizioni. Il valore di *\* pValWithComps* include la composizione sulla quale viene chiamato il metodo. Ad esempio, se si chiama questo metodo su una composizione vuota, *\* pValWithComps* è uguale a 1.
+Se si contano le composizioni, il valore restituito in *pVal* è zero e il valore restituito in *pValWithComps* è il numero di composizioni. Il valore di *\* pValWithComps* include la composizione su cui si chiama il metodo . Ad esempio, se si chiama questo metodo su una composizione vuota, *\* pValWithComps* è uguale a 1.
 
-I gruppi non possono risiedere all'interno di composizioni, pertanto non è possibile usare questo metodo per conteggiare i gruppi. Il conteggio restituito sarà sempre zero. Per conteggiare i gruppi, chiamare il metodo [**IAMTimeline:: GetGroupCount**](iamtimeline-getgroupcount.md) .
+I gruppi non possono risiedere all'interno delle composizioni, pertanto non è possibile usare questo metodo per contare i gruppi. Il conteggio restituito sarà sempre zero. Per contare i gruppi, chiamare il [**metodo IAMTimeline::GetGroupCount.**](iamtimeline-getgroupcount.md)
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -96,8 +96,8 @@ I gruppi non possono risiedere all'interno di composizioni, pertanto non è poss
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

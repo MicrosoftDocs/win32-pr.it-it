@@ -11,44 +11,44 @@ keywords:
 - Modalità RGBA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b82a2db1bade12a0ff844006a1572cdc3b977dd
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a7bd27ae35f11a3fd1fcf775a37852e3a308a4c598ca8152ccf8f63e72e42eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103873198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553821"
 ---
 # <a name="r-opengl"></a>R (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [d](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [i](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) R [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) J [K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) R [S](s.md) T [U](t.md) [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
 <span id="opengl_rasterize"></span><span id="OPENGL_RASTERIZE"></span>**Rasterizza**
 </dt> <dd>
 
-Per convertire un punto, una linea o un poligono proiettato, oppure i pixel di una bitmap o di un'immagine, in frammenti, ognuno corrispondente a un pixel nel framebuffer. Si noti che tutte le primitive vengono rasterizzate, non solo punti, linee e poligoni
+Per convertire un punto, una linea o un poligono proiettato o i pixel di una bitmap o di un'immagine in frammenti, ognuno dei quali corrisponde a un pixel nel buffer frame. Si noti che tutte le primitive sono rasterizzate, non solo punti, linee e poligoni
 
 </dd> <dt>
 
-<span id="opengl_rectangle"></span><span id="OPENGL_RECTANGLE"></span>**rettangolo**
+<span id="opengl_rectangle"></span><span id="OPENGL_RECTANGLE"></span>**Rettangolo**
 </dt> <dd>
 
-Un quadrilatero i cui spigoli alternativi sono paralleli tra loro nelle coordinate dell'oggetto. I poligoni specificati con glRect \* () sono sempre rettangoli. gli altri quadrilateri possono essere rettangoli.
+Oggetto quadrilatero i cui bordi alternativi sono paralleli l'uno all'altro nelle coordinate dell'oggetto. I poligoni specificati con glRect \* ( ) sono sempre rettangoli. Altri quadrilaterali possono essere rettangoli.
 
 </dd> <dt>
 
-<span id="opengl_rendering"></span><span id="OPENGL_RENDERING"></span>**rendering**
+<span id="opengl_rendering"></span><span id="OPENGL_RENDERING"></span>**Rendering**
 </dt> <dd>
 
-Conversione di primitive specificate nelle coordinate dell'oggetto in un'immagine nel framebuffer. Il rendering è il funzionamento principale di OpenGL.
+Conversione di primitive specificate nelle coordinate dell'oggetto in un'immagine nel buffer frame. Il rendering è l'operazione principale di OpenGL.
 
 </dd> <dt>
 
-<span id="opengl_rgba"></span><span id="OPENGL_RGBA"></span>**RGBA**
+<span id="opengl_rgba"></span><span id="OPENGL_RGBA"></span>**Rgba**
 </dt> <dd>
 
-I componenti di colore rosso, verde, blu e alfa della modalità RGBA.
+Componenti di colore rosso, verde, blu e alfa della modalità RGBA.
 
 </dd> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo Update. Save (byte, Int32, Int32)'
-title: Metodo Update. Save (byte, Int32, Int32)
+description: Altre informazioni sul metodo Update.Save (Byte, Int32, Int32)
+title: Metodo Update.Save (Byte, Int32, Int32)
 TOCTitle: Save method (Byte , Int32, Int32)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.Save(System.Byte[],System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.save(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2c798f22039ced1bab30ecaa9c3f650079be0f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17e586177075a34f3832486a9ace4a919abaad65dad21c0e54eba47b79f207be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603541"
 ---
-# <a name="updatesave-method-byte--int32-int32"></a>Metodo Update. Save (byte, Int32, Int32)
+# <a name="updatesave-method-byte--int32-int32"></a>Metodo Update.Save (Byte, Int32, Int32)
 
-Aggiornare il TableID.
+Aggiornare il tableid.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,27 +64,27 @@ public void Save(
 #### <a name="parameters"></a>Parametri
 
   - segnalibro  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Restituisce il segnalibro del record aggiornato. Può essere Null.
 
 <!-- end list -->
 
   - bookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensioni del buffer dei segnalibri.
+    Dimensione del buffer del segnalibro.
 
 <!-- end list -->
 
   - actualBookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Restituisce le dimensioni effettive del segnalibro.
 
 ## <a name="remarks"></a>Commenti
 
-Salva è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando la creazione di un oggetto Update e quindi chiamando JetSetColumn o JetSetColumns una o più volte per impostare lo stato del record. Infine, viene chiamato l'aggiornamento per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo tramite l'aggiornamento o e non durante JetSetColumn o JetSetColumns.
+Il salvataggio è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando la creazione di un oggetto Update e quindi chiamando JetSetColumn o JetSetColumns una o più volte per impostare lo stato del record. Infine, viene chiamato Update per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo da Update o non durante JetSetColumn o JetSetColumns.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -94,6 +94,6 @@ Salva è il passaggio finale per eseguire un inserimento o un aggiornamento. L'a
 
 [Aggiornare i membri](./update-members.md)
 
-[Salva overload](./update.save-method.md)
+[Salvare l'overload](./update.save-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

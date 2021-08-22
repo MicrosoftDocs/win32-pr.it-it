@@ -1,6 +1,6 @@
 ---
 title: Funzione gluOrtho2D (Glu.h)
-description: La funzione gluOrtho2D definisce una matrice di proiezione ortogonale 2D.
+description: La funzione gluOrtho2D definisce una matrice di proiezione ortografica 2D.
 ms.assetid: ba83fb5c-e5c7-4486-a815-a1aff0469757
 keywords:
 - Funzione gluOrtho2D OpenGL
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf07fea583c5ae46680d888f6bf6c0a9c5aa9a0
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: b4a2f0d5fad1a2efb0df0c802dbb2cf51b54ff3e43402c3143bad982009f4f95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110153554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488861"
 ---
 # <a name="gluortho2d-function"></a>Funzione gluOrtho2D
 
-La **funzione gluOrtho2D** definisce una matrice di proiezione ortogonale 2D.
+La **funzione gluOrtho2D** definisce una matrice di proiezione ortografica 2D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,13 +77,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione gluOrtho2D** configura un'area di visualizzazione ortografica bidimensionale. Equivale a chiamare [**glOrtho con**](glortho.md) zNear = -1 e zFar = 1.
+La **funzione gluOrtho2D** configura un'area di visualizzazione ortografica bidimensionale. Equivale a chiamare [**glOrtho**](glortho.md) con zNear = -1 e zFar = 1.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | valore |
+| Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |

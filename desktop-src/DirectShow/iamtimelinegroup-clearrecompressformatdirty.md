@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IAMTimelineGroup::ClearRecompressFormatDirty : non supportato.'
+description: 'Metodo IAMTimelineGroup::ClearRecompressFormatDirty: non supportato.'
 ms.assetid: 43f422ff-d46f-403a-a343-7cd247129159
 title: Metodo IAMTimelineGroup::ClearRecompressFormatDirty (Qedit.h)
 ms.topic: reference
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8b0ee5499bd86094c91a3a8bacc6d25b67e027cc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ba753b23d7325d2e4c1d7792127ddbf80719840c99fde8c508026255fe5dd2c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536263"
 ---
 # <a name="iamtimelinegroupclearrecompressformatdirty-method"></a>Metodo IAMTimelineGroup::ClearRecompressFormatDirty
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -55,7 +55,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

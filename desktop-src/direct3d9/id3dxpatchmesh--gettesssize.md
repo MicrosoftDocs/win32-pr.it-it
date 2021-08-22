@@ -1,7 +1,7 @@
 ---
-description: Ottiene le dimensioni della mesh tassellati, dato un livello a mosaico.
+description: Ottiene le dimensioni della mesh a tessellazione, dato un livello a trama.
 ms.assetid: 86d1d1a0-1934-40e9-bff9-6c435d1e5183
-title: 'Metodo ID3DXPatchMesh:: GetTessSize (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::GetTessSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ef23f46baca7e05005cee83f6ca765b9a5214b8b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4668f50236684f104aedf0ad9ecad413a583facbc45d5f3fa0331abb5938bf5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493051"
 ---
-# <a name="id3dxpatchmeshgettesssize-method"></a>Metodo ID3DXPatchMesh:: GetTessSize
+# <a name="id3dxpatchmeshgettesssize-method"></a>Metodo ID3DXPatchMesh::GetTessSize
 
-Ottiene le dimensioni della mesh tassellati, dato un livello a mosaico.
+Ottiene le dimensioni della mesh a tessellazione, dato un livello a trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT GetTessSize(
 
 <dl> <dt>
 
-*fTessLevel* \[ in\]
+*fTessLevel* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Livello mosaico.
+Livello a tessellazione.
 
 </dd> <dt>
 
-*Adattivo* \[ in\]
+*Adattivo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Mosaico adattivo. Per lo schema a mosaico adattivo, impostare questo valore su **true** e impostare fTessLevel sul valore massimo a mosaico. Ciò comporterà la dimensione massima della mesh necessaria per lo schema a mosaico adattivo.
+A tessitori adattivi. Per lo schema a più livelli adattivo, impostare questo valore su **TRUE** e impostare fTessLevel sul valore massimo. Ciò comporterà la dimensione massima della mesh necessaria per la trama adattiva.
 
 </dd> <dt>
 
-*NumTriangles* \[ out\]
+*NumTriangles* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore al numero di triangoli generati dalla mesh tassellati.
+Puntatore al numero di triangoli generati dalla mesh a scorrimento.
 
 </dd> <dt>
 
-*NumVertices* \[ out\]
+*NumVertices* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore al numero di vertici generati dalla mesh tassellati.
+Puntatore al numero di vertici generati dalla mesh a tessella.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Puntatore al numero di vertici generati dalla mesh tassellati.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo presuppone un mosaico uniforme.
+Questo metodo presuppone una struttura a tessitori uniforme.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Questo metodo presuppone un mosaico uniforme.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,50 +1,50 @@
 ---
-title: Effetto matrice colori
-description: Utilizzare l'effetto matrice colori per modificare i valori RGBA di una bitmap.
+title: Effetto matrice di colori
+description: Usare l'effetto matrice di colori per modificare i valori RGBA di una bitmap.
 ms.assetid: 093EEEF1-8C38-414E-8261-58A6C3DD930D
 keywords:
-- effetto matrice colori
+- Effetto matrice di colori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1078b1858bc68396546e1036c717e01acb1069c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec8bb461698e4f8b39eef3bed57fc21947f3cc1175c1bdf4f990629db87e1c5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653306"
 ---
-# <a name="color-matrix-effect"></a>Effetto matrice colori
+# <a name="color-matrix-effect"></a>Effetto matrice di colori
 
-Utilizzare l'effetto matrice colori per modificare i valori RGBA di una bitmap.
+Usare l'effetto matrice di colori per modificare i valori RGBA di una bitmap.
 
-È possibile utilizzare questo effetto per:
+È possibile usare questo effetto per:
 
 -   Rimuovere un canale di colore da un'immagine.
--   Ridurre il colore in un'immagine.
--   Scambia canali colori.
--   Combinare i canali colori.
+-   Ridurre il colore di un'immagine.
+-   Scambiare i canali di colore.
+-   Combinare i canali di colore.
 
-Molti effetti predefiniti sono specializzazioni della matrice di colori ottimizzate per l'uso previsto degli effetti. Gli esempi includono [saturazione](saturation.md), [Rotazione tonalità](hue-rotate.md), [seppia](sepia-effect.md), [temperatura e tonalità](temperature-and-tint-effect.md).
+Molti effetti predefiniti sono specializzazioni della matrice di colori ottimizzate per l'uso previsto degli effetti. Ad [esempio, saturazione,](saturation.md) [rotazione della tonalità,](hue-rotate.md) [seppia](sepia-effect.md)e [temperatura e tinta.](temperature-and-tint-effect.md)
 
 Il CLSID per questo effetto è CLSID \_ D2D1ColorMatrix.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
--   [Modalità Alpha](#alpha-modes)
+-   [Proprietà degli effetti](#effect-properties)
+-   [Modalità alfa](#alpha-modes)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-Nell'esempio riportato di seguito vengono illustrate le immagini di input e di output dell'effetto della matrice di colori che scambia i canali rosso e blu.
+L'esempio seguente mostra le immagini di input e output dell'effetto matrice di colori che scambia i canali rosso e blu.
 
 
 
 | Prima                                                       |
 |--------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)   |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)   |
 | After                                                        |
-| ![immagine dopo la trasformazione.](images/15-colormatrix.png) |
+| ![l'immagine dopo la trasformazione.](images/15-colormatrix.png) |
 
 
 
@@ -66,34 +66,34 @@ m_d2dContext->EndDraw();
 
 
 
-Questo effetto moltiplica i valori RGBA dell'immagine in base a un 5x4, la matrice principale della colonna, come illustrato in questa equazione.
+Questo effetto moltiplica i valori RGBA dell'immagine per una matrice principale di colonna 5x4, come illustrato in questa equazione.
 
-![definizione di matrice di esempio.](images/color-matrix-formula.png)
+![una definizione di matrice di esempio.](images/color-matrix-formula.png)
 
-Questo effetto funziona su immagini alfa diritte e premoltiplicate.
+Questo effetto funziona su immagini alfa rette e premoltilied.
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Nome visualizzato ed enumerazione dell'indice                                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ColorMatrix<br/> \_Matrice di \_ colori della prop d2d1 COLORMATRIX \_ \_<br/> | Matrice 5x4 di valori float. Gli elementi nella matrice non sono limitati e sono senza unità.<br/> Il valore predefinito è la matrice di identità.<br/> Il tipo è D2D1 \_ Matrix \_ 5x4 \_ F.<br/> Il valore predefinito è Matrix5x4F (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0). <br/>                                                                                                                                                                                                                        |
-| AlphaMode<br/> D2D1 \_ la \_ \_ modalità Alpha della Prop \_<br/>     | Modalità Alpha dell'output. Per altre informazioni, vedere [modalità Alpha](#alpha-modes) . <br/> Il tipo è D2D1 \_ COLORMATRIX \_ Alpha \_ mode.<br/> Il valore predefinito è D2D1 \_ COLORMATRIX \_ Alpha \_ mode \_ premoltiplicato.<br/>                                                                                                                                                                                                                                                                                                    |
-| ClampOutput<br/> \_Output d2d1 COLORMATRIX \_ prop \_ Clamp \_<br/> | Indica se l'effetto fissa i valori dei colori a un valore compreso tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto blocca i valori prima di premoltiplicare l'alfa.<br/> Se si imposta questa impostazione su TRUE, i valori vengono bloccati dall'effetto. Se si imposta questa proprietà su FALSE, l'effetto non blocca i valori dei colori, mentre altri effetti e la superficie di output possono bloccare i valori se non hanno una precisione sufficientemente elevata.<br/> Il tipo è BOOL.<br/> Il valore predefinito è FALSE.<br/> |
+| Colormatrix<br/> MATRICE DI COLORI \_ DI COLORMATRIX \_ PROP \_ D2D1 \_<br/> | Matrice 5x4 di valori float. Gli elementi nella matrice non sono delimitati e sono senza unità.<br/> Il valore predefinito è la matrice di identità.<br/> Il tipo è D2D1 \_ MATRIX \_ 5X4 \_ F.<br/> Il valore predefinito è Matrix5x4F(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0). <br/>                                                                                                                                                                                                                        |
+| AlphaMode<br/> MODALITÀ ALFA \_ DI COLORMATRIX \_ PROP \_ D2D1 \_<br/>     | Modalità alfa dell'output. Per [altre informazioni, vedere](#alpha-modes) Modalità alfa. <br/> Il tipo è D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE.<br/> Il valore predefinito è D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ PREMULTIPLIED.<br/>                                                                                                                                                                                                                                                                                                    |
+| ClampOutput<br/> OUTPUT DEL \_ CLAMP COLORMATRIX \_ PROP \_ D2D1 \_<br/> | Indica se l'effetto stringe i valori di colore tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto stringe i valori prima che premultipli il valore alfa.<br/> Se si imposta questa proprietà su TRUE, l'effetto si anteterà ai valori. Se si imposta questa opzione su FALSE, l'effetto non stringerà i valori di colore, ma altri effetti e la superficie di output potrebbero stringere i valori se non hanno una precisione sufficiente.<br/> Il tipo è BOOL.<br/> Il valore predefinito è FALSE.<br/> |
 
 
 
  
 
-## <a name="alpha-modes"></a>Modalità Alpha
+## <a name="alpha-modes"></a>Modalità alfa
 
 
 
 | Nome                                          | Descrizione                                                                                               |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| D2D1 \_ COLORMATRIX \_ \_ modalità alfa \_ premoltiplicata | L'effetto Annulla la premoltiplicazione dell'input, applica la matrice di colori e premoltiplica l'output.<br/> |
-| D2D1 \_ \_ modalità Alpha \_ COLORMATRIX \_ lineare      | L'effetto applica la matrice di colori direttamente all'input e non premoltiplica l'output.<br/> |
+| D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ PREMULTIPLIED | L'effetto annulla la premoltipla dell'input, applica la matrice di colori e premoltipla l'output.<br/> |
+| D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ STRAIGHT      | L'effetto applica la matrice di colori direttamente all'input e non premoltimultipamente l'output.<br/> |
 
 
 
@@ -105,10 +105,10 @@ Questo effetto funziona su immagini alfa diritte e premoltiplicate.
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Descrive una superficie di rendering.
 ms.assetid: cffa1555-1fa2-427d-8bcb-da0e61d82152
-title: Struttura D3DXRTS_DESC (D3dx9core. h)
+title: D3DXRTS_DESC struttura (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9core.h
-ms.openlocfilehash: 3a0b52f258956f7b62734ca97cc5d1bf5ed00ac3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 838fc7d08eff0889049e7f0c73ae779239934e49049948b926fa956eeac3d40a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607631"
 ---
-# <a name="d3dxrts_desc-structure"></a>\_Struttura D3DXRTS DESC
+# <a name="d3dxrts_desc-structure"></a>Struttura DESC D3DXRTS \_
 
 Descrive una superficie di rendering.
 
@@ -46,7 +46,7 @@ typedef struct D3DXRTS_DESC {
 **Larghezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -57,7 +57,7 @@ Larghezza della superficie di rendering, in pixel.
 **Altezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -72,18 +72,18 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Membro del tipo enumerato [D3DFORMAT](d3dformat.md) , che descrive il formato pixel della superficie di rendering.
+Membro del tipo [enumerato D3DFORMAT,](d3dformat.md) che descrive il formato pixel della superficie di rendering.
 
 </dd> <dt>
 
 **DepthStencil**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se **true**, la superficie di rendering supporta una superficie di stencil profondità; in caso contrario, questo membro è impostato su **false**.
+Se **TRUE,** la superficie di rendering supporta una superficie depth-stencil; in caso contrario, questo membro è impostato su **FALSE.**
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Se DepthStencil è impostato su **true**, questo parametro è un membro del tipo enumerato [D3DFORMAT](d3dformat.md) , che descrive il formato di stencil depth della superficie di rendering.
+Se DepthStencil è impostato su **TRUE,** questo parametro è un membro del tipo enumerato [D3DFORMAT,](d3dformat.md) che descrive il formato depth-stencil della superficie di rendering.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Se DepthStencil è impostato su **true**, questo parametro è un membro del tipo
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9core.h</dt> </dl> |
 
 
 
@@ -115,7 +115,7 @@ Se DepthStencil è impostato su **true**, questo parametro è un membro del tipo
 [Strutture D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
-[**ID3DXRenderToSurface:: getdesc**](id3dxrendertosurface--getdesc.md)
+[**ID3DXRenderToSurface::GetDesc**](id3dxrendertosurface--getdesc.md)
 </dt> </dl>
 
  

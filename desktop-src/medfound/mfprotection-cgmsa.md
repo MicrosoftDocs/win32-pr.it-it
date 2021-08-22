@@ -1,19 +1,19 @@
 ---
-description: Specifica la protezione del sistema di gestione generazionale di copia (CGMS-A).
+description: Specifica la protezione CGMS-A (Copy Generational Management System).
 ms.assetid: 40802859-711E-4531-948F-902E8735A977
-title: Attributo MFPROTECTION_CGMSA (Mfidl. h)
+title: MFPROTECTION_CGMSA attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b6ca190d3d306f5e3e342337966a5cfa53ccb77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd2767e2ee77eb2ff1dbe3df005db2242a095aaf695f0071832503210c9b3041
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555171"
 ---
-# <a name="mfprotection_cgmsa-attribute"></a>\_Attributo CGMSA di MFPROTECTION
+# <a name="mfprotection_cgmsa-attribute"></a>Attributo MFPROTECTION \_ CGMSA
 
-Specifica la protezione del sistema di gestione generazionale di copia (CGMS-A).
+Specifica la protezione CGMS-A (Copy Generational Management System).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Specifica la protezione del sistema di gestione generazionale di copia (CGMS-A).
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica la protezione del sistema di gestione generazionale di copia (CGMS-A).
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

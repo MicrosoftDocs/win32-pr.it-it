@@ -1,9 +1,9 @@
 ---
-title: Funzione UtilLoadStringWithAlloc (Ndattributils. h)
-description: Alloca e carica una stringa fuori dalla tabella delle risorse.
+title: Funzione UtilLoadStringWithAlloc (Ndattributils.h)
+description: Alloca e carica una stringa dalla tabella delle risorse.
 ms.assetid: 34bf0b93-2bec-49c3-9441-c83686c4abdb
 keywords:
-- UtilLoadStringWithAlloc funzione NDF
+- Funzione UtilLoadStringWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e13930fe9bb11ae9c9456152c823491eabc462
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca649599e2a8a29ecdab2dbbfe2c188947b40487ceb82ab4937622ce82c701a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685611"
 ---
-# <a name="utilloadstringwithalloc-function"></a>UtilLoadStringWithAlloc (funzione)
+# <a name="utilloadstringwithalloc-function"></a>Funzione UtilLoadStringWithAlloc
 
-La funzione **UtilLoadStringWithAlloc** alloca e carica una stringa fuori dalla tabella delle risorse.
+La **funzione UtilLoadStringWithAlloc** alloca e carica una stringa dalla tabella delle risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT UtilLoadStringWithAlloc(
 
 <dl> <dt>
 
-*uID* \[ in\]
+*uID* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Identificatore della stringa da caricare.
 
 </dd> <dt>
 
-*ppwzBuffer* \[ out\]
+*ppwzBuffer* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-Posizione in cui verrà posizionata la stringa appena allocata. La stringa deve essere liberata usando [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) quando non è più necessaria.
+Posizione in cui verrà inserita la stringa appena allocata. La stringa deve essere liberata [**usando CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) quando non è più necessaria.
 
 </dd> <dt>
 
-*cchBufferMax* \[ in\]
+*cchBufferMax* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Numero massimo di caratteri da caricare dalla tabella delle risorse. Se la stringa di risorsa supera il numero di caratteri specificato, viene troncata e terminata con null.
+Numero massimo di caratteri da caricare dalla tabella delle risorse. Se la stringa di risorsa è più lunga del numero di caratteri specificato, viene troncata e con terminazione Null.
 
 > [!Note]  
 > Questo parametro non può essere impostato su zero.
@@ -78,13 +78,13 @@ Numero massimo di caratteri da caricare dalla tabella delle risorse. Se la strin
 
 Tipo: **HRESULT**
 
-I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
+I valori restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata.<br/>                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                                |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o più parametri non sono stati specificati correttamente.<br/> |
 
 
@@ -97,9 +97,9 @@ I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

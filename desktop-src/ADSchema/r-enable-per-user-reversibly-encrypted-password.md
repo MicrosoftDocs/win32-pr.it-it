@@ -1,10 +1,10 @@
 ---
-title: Enable-per-User-in modo reversibile-encrypted-password estesa a destra
-description: Diritto di accesso di controllo esteso che consente agli utenti di abilitare o disabilitare la 0034; password crittografata reversibile \ 0034; impostazione per gli oggetti utente e computer.
+title: Diritto esteso Enable-Per-User-Reversibly-Encrypted-Password
+description: Diritto di accesso di controllo esteso che consente agli utenti di abilitare o disabilitare \ 0034;password crittografata reversibile \ 0034; impostazione per gli oggetti utente e computer.
 ms.assetid: 71a21162-e291-440c-9b7d-8d67abf4b608
 ms.tgt_platform: multiple
 keywords:
-- Enable-per-User-in modo reversibile-encrypted-password Extended right AD schema
+- Schema AD esteso Enable-Per-User-Reversibly-Encrypted-Password
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec38d0afe2e04d8ed065a972ab2d4c8779d689c8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1bd7b3ad4c65a2b88cc70b137314e4ebd4eb7f415710da875da12c6aca422a8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531881"
 ---
-# <a name="enable-per-user-reversibly-encrypted-password-extended-right"></a>Enable-per-User-in modo reversibile-encrypted-password estesa a destra
+# <a name="enable-per-user-reversibly-encrypted-password-extended-right"></a>Diritto esteso Enable-Per-User-Reversibly-Encrypted-Password
 
 Diritto di accesso di controllo esteso che consente agli utenti di abilitare o disabilitare l'impostazione "password crittografata reversibile" per gli oggetti utente e computer.
 
@@ -28,8 +28,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |--------------|-----------------------------------------------|
-| CN           | Enable-per-User-in modo reversibile-encrypted-password |
-| Display-Name | Abilita password crittografata per utente in modo reversibile |
+| CN           | Enable-Per-User-Reversibly-Encrypted-Password |
+| Display-Name | Abilitare la password crittografata in modo reversibile per ogni utente |
 | Rights-GUID  | 05c74c5e-4deb-43b4-bd9f-86664c2a7fd5          |
 
 
@@ -48,8 +48,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 70                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 70                                           |
 
 
 
@@ -59,8 +59,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 70                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 70                                           |
 
 
 
@@ -70,8 +70,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 70                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 70                                           |
 
 
 
@@ -81,8 +81,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 70                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 70                                           |
 
 
 
@@ -92,8 +92,8 @@ Diritto di accesso di controllo esteso che consente agli utenti di abilitare o d
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 70                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 70                                           |
 
 
 

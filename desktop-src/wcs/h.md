@@ -3,31 +3,31 @@ title: H
 description: H
 ms.assetid: ef592c79-52cd-4a61-a8f3-ca7f1433cf47
 keywords:
-- Windows Sistema di colori (WCS), glossario
-- WCS (Windows Color System), glossario
-- gestione del colore delle immagini, glossario
+- Windows Sistema colori (WCS), glossario
+- WCS (Windows Color System),glossario
+- gestione dei colori delle immagini, glossario
 - gestione dei colori, glossario
 - colori, glossario
 - Windows Sistema colori (WCS), definizioni
-- WCS (Windows Color System), definizioni
-- gestione del colore delle immagini,definizioni
+- WCS (Windows Color System),definizioni
+- gestione dei colori delle immagini, definizioni
 - gestione dei colori, definizioni
 - colori, definizioni
-- Windows Sistema di colori (WCS), termini
-- WCS (Windows Color System), terms
-- gestione del colore delle immagini, termini
+- Windows Sistema colori (WCS), termini
+- WCS (Windows Color System),terms
+- gestione dei colori delle immagini, termini
 - gestione dei colori, termini
 - colori, termini
-- strumenti di correzione rigidi
+- hard proofing
 - Spazi colori HLS
 - Saturazione della luminosità della tonalità (HLS)
 - HLS (saturazione della luminosità della tonalità)
-- spazi dei colori, HLS
-- spazi dei colori, HSV
+- spazi colori, HLS
+- spazi colori, HSV
 - Spazi colori HSV
 - Hue
 - Valore di saturazione della tonalità (HSV)
-- HSV (valore di saturazione della tonalità)
+- HSV (valore saturazione tonalità)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
@@ -40,21 +40,21 @@ ms.locfileid: "119711011"
 ---
 # <a name="h"></a>H
 
-## <a name="hard-proofing"></a>strumenti di correzione rigidi
+## <a name="hard-proofing"></a>hard proofing
 
-Anteprima o correzione di un'immagine stampando una copia di essa.
+Visualizzazione in anteprima o correzione di un'immagine stampando una copia di essa.
 
 ## <a name="hls"></a>HLS
 
-Uno spazio colori spesso usato dagli artisti. I componenti sono Hue, Lightness e Saturation (chroma).
+Uno spazio colori spesso usato dagli artista. I componenti sono Hue, Lightness e Saturation (chroma).
 
 ## <a name="hsv"></a>Hsv
 
-Uno spazio colori spesso usato dagli artisti. I componenti sono Hue, Saturation (chroma) e Value (lightness).
+Uno spazio colori spesso usato dagli artista. I componenti sono Hue, Saturation (chroma) e Value (lightness).
 
 ## <a name="hue"></a>Hue
 
-Colore puro. Una tonalità è una posizione specifica sulla parte visibile dello spettro elettromagnetico.
+Colore puro. Una sfumatura è una posizione specifica sulla parte visibile dello spettro delle elettromagnetiche.
 
  
 

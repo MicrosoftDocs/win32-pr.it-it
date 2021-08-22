@@ -1,19 +1,19 @@
 ---
-description: Il codice di esempio seguente illustra in che modo le applicazioni possono posizionare correttamente gli oggetti su più visualizzazioni. Si noti che non si presuppone che RECT sia basato sull'origine (0,0).
+description: Il codice di esempio seguente illustra come le applicazioni possono posizionare correttamente gli oggetti su più schermi. Si noti che non presupporre che RECT sia basato sull'origine (0,0).
 ms.assetid: 1144abfc-ca0a-4d59-aa18-b245ba4b1bc3
-title: Posizionamento di oggetti in una configurazione con più visualizzazioni
+title: Posizionamento di oggetti in una configurazione a più display
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd7e00104ea2d48e984fa6898f6e07f23509a6fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91e4fc577b549d2adeba4f9b1afe064f1ca1ce82a9cdd902add5b240b2bab43f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558311"
 ---
-# <a name="positioning-objects-on-a-multiple-display-setup"></a>Posizionamento di oggetti in una configurazione con più visualizzazioni
+# <a name="positioning-objects-on-a-multiple-display-setup"></a>Posizionamento di oggetti in una configurazione a più display
 
-Il codice di esempio seguente illustra in che modo le applicazioni possono posizionare correttamente gli oggetti su più visualizzazioni. Si noti che non si presuppone che RECT sia basato sull'origine (0,0).
+Il codice di esempio seguente illustra come le applicazioni possono posizionare correttamente gli oggetti su più schermi. Si noti che non presupporre che RECT sia basato sull'origine (0,0).
 
 
 ```C++

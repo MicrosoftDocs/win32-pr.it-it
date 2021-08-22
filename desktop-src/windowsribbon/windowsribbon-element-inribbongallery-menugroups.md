@@ -1,9 +1,9 @@
 ---
-title: Proprietà InRibbonGallery.MenuGroups
-description: Rappresenta un contenitore per il set di voci di menu a discesa di un controllo In-Ribbon Gallery.
+title: InRibbonGallery.MenuGroups - proprietà
+description: Rappresenta un contenitore per il set di voci di menu a discesa di un controllo In-Ribbon Raccolta dati.
 ms.assetid: 6b9ded25-4e8e-4e30-a349-f7c091dbfe7a
 keywords:
-- Proprietà InRibbonGallery.MenuGroups Windows ribbon
+- Proprietà InRibbonGallery.MenuGroups Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119710481"
 ---
-# <a name="inribbongallerymenugroups-property"></a>Proprietà InRibbonGallery.MenuGroups
+# <a name="inribbongallerymenugroups-property"></a>InRibbonGallery.MenuGroups - proprietà
 
-Rappresenta un contenitore per il set di voci di menu a discesa di [un controllo Raccolta barra](windowsribbon-controls-inribbongallery.md) multifunzione.
+Rappresenta un contenitore per il set di voci di menu a discesa di [un controllo Raccolta](windowsribbon-controls-inribbongallery.md) nella barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -63,7 +63,7 @@ Può verificarsi al massimo una volta per [**ogni elemento InRibbonGallery.**](w
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [un controllo Raccolta nella barra](windowsribbon-controls-inribbongallery.md) multifunzione.
+L'esempio seguente illustra il markup di base per [un controllo Raccolta nella barra](windowsribbon-controls-inribbongallery.md) multifunzione.
 
 Questa sezione di codice illustra la dichiarazione del controllo **InRibbonGallery.MenuGroups.**
 
@@ -111,13 +111,13 @@ Questa sezione di codice illustra la dichiarazione del controllo **InRibbonGalle
 
 <dl> <dt>
 
-[Controllo Raccolta barra multifunzione](windowsribbon-controls-inribbongallery.md)
+[Controllo Raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)
 </dt> <dt>
 
-[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

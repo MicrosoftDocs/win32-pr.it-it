@@ -1,6 +1,6 @@
 ---
-title: Codici di errore dell'animazione Windows (Winerror. h)
-description: Se si verifica un errore, l'animazione di Windows restituisce un codice come valore HRESULT. In questa sezione viene fornito un elenco di codici di errore specifici dell'animazione Windows. Per un elenco di codici di errore COM generali, vedere codici di errore COM.
+title: Windows Codici di errore di animazione (Winerror.h)
+description: Se si verifica un errore, Windows animation restituisce un codice come valore HRESULT. Questa sezione fornisce un elenco di codici di errore specifici per l'Windows animazione. Per un elenco di codici di errore COM generali, vedere Codici di errore COM.
 ms.assetid: 38f15d61-d415-4c7d-b454-5144fc7c9b1e
 topic_type:
 - apiref
@@ -33,20 +33,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb7c63066690b15ec8fad8ef5b9f74ed5cf2fbc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 44d725874de9c511558cef6ebbe8652905a7f5dac6372230385eaa3253ba3454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513661"
 ---
-# <a name="windows-animation-error-codes"></a>Codici di errore dell'animazione Windows
+# <a name="windows-animation-error-codes"></a>Windows Codici di errore di animazione
 
-Se si verifica un errore, l'animazione di Windows restituisce un codice come valore **HRESULT** . In questa sezione viene fornito un elenco di codici di errore specifici dell'animazione Windows. Per un elenco di codici di errore COM generali, vedere [codici di errore com](/windows/desktop/com/com-error-codes).
+Se si verifica un errore, Windows animation restituisce un codice come **valore HRESULT.** Questa sezione fornisce un elenco di codici di errore specifici per l'Windows animazione. Per un elenco dei codici di errore COM generali, vedere [Codici di errore COM](/windows/desktop/com/com-error-codes).
 
 <dl> <dt>
 
-<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**creazione dell'interfaccia utente \_ E \_ \_ non riuscita**
+<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**CREAZIONE \_ DELL'INTERFACCIA UTENTE \_ NON \_ RIUSCITA**
 </dt> <dd> <dl> <dt>
 
 0x802A0001
@@ -59,7 +59,7 @@ Impossibile creare l'oggetto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_SHUTDOWN_CALLED"></span><span id="ui_e_shutdown_called"></span>**interfaccia utente \_ E \_ chiusura \_ chiamata**
+<span id="UI_E_SHUTDOWN_CALLED"></span><span id="ui_e_shutdown_called"></span>**CHIAMATA \_ DELL'ARRESTO E \_ \_ DELL'INTERFACCIA UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0002
@@ -67,17 +67,17 @@ Impossibile creare l'oggetto.
 
 
 
-Il metodo [**Shutdown**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) è stato chiamato sul gestore delle animazioni, causando l'arresto di gestione animazioni e tutte le variabili di animazione e gli storyboard creati per essere rilasciati.
+Il [**metodo Shutdown**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown) è stato chiamato nel gestore dell'animazione, causando l'arresto del gestore dell'animazione e il rilascio di tutte le variabili di animazione e gli storyboard creati.
 
 > [!Note]  
-> Non è possibile chiamare metodi su alcun oggetto di animazione dopo l' [**arresto**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown).
+> Non è possibile chiamare alcun metodo su qualsiasi oggetto di animazione dopo [**l'arresto.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown)
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**interfaccia utente E rientranza non \_ \_ valida \_**
+<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**REENTRANCY NON VALIDA \_ \_ \_ DELL'INTERFACCIA UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0003
@@ -90,7 +90,7 @@ Questo metodo non può essere chiamato durante questo tipo di callback.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_OBJECT_SEALED"></span><span id="ui_e_object_sealed"></span>**interfaccia utente \_ E \_ oggetto \_ sealed**
+<span id="UI_E_OBJECT_SEALED"></span><span id="ui_e_object_sealed"></span>**SEALED \_ DELL'OGGETTO E \_ \_ DELL'INTERFACCIA UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0004
@@ -98,12 +98,12 @@ Questo metodo non può essere chiamato durante questo tipo di callback.
 
 
 
-Questo oggetto è stato sealed, quindi questa modifica non è più consentita.
+Questo oggetto è stato bloccato, quindi questa modifica non è più consentita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_VALUE_NOT_SET"></span><span id="ui_e_value_not_set"></span>**valore dell'interfaccia utente \_ E \_ \_ non \_ impostato**
+<span id="UI_E_VALUE_NOT_SET"></span><span id="ui_e_value_not_set"></span>**VALORE \_ E \_ DELL'INTERFACCIA \_ UTENTE NON \_ IMPOSTATO**
 </dt> <dd> <dl> <dt>
 
 0x802A0005
@@ -116,7 +116,7 @@ Il valore richiesto non è mai stato impostato e pertanto non può essere recupe
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_VALUE_NOT_DETERMINED"></span><span id="ui_e_value_not_determined"></span>**valore dell'interfaccia utente \_ E \_ \_ non \_ determinato**
+<span id="UI_E_VALUE_NOT_DETERMINED"></span><span id="ui_e_value_not_determined"></span>**VALORE \_ E \_ DELL'INTERFACCIA \_ UTENTE NON \_ DETERMINATO**
 </dt> <dd> <dl> <dt>
 
 0x802A0006
@@ -129,7 +129,7 @@ Impossibile determinare il valore richiesto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**OUTPUT dell'interfaccia utente \_ E \_ non valido \_**
+<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**OUTPUT \_ DELL'INTERFACCIA UTENTE E \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 0x802A0007
@@ -142,7 +142,7 @@ Un callback ha restituito un parametro di output non valido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_BOOLEAN_EXPECTED"></span><span id="ui_e_boolean_expected"></span>**prevista l'interfaccia utente \_ E un \_ valore booleano \_**
+<span id="UI_E_BOOLEAN_EXPECTED"></span><span id="ui_e_boolean_expected"></span>**PREVISTO \_ VALORE BOOLEANO E \_ \_ DELL'INTERFACCIA UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0008
@@ -150,12 +150,12 @@ Un callback ha restituito un parametro di output non valido.
 
 
 
-Un callback ha restituito un codice di esito positivo diverso da S \_ OK o s \_ false.
+Un callback ha restituito un codice di esito positivo diverso da S \_ OK o S \_ FALSE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_DIFFERENT_OWNER"></span><span id="ui_e_different_owner"></span>**interfaccia \_ utente \_ E \_ proprietario diverso**
+<span id="UI_E_DIFFERENT_OWNER"></span><span id="ui_e_different_owner"></span>**INTERFACCIA \_ UTENTE E PROPRIETARIO \_ \_ DIVERSO**
 </dt> <dd> <dl> <dt>
 
 0x802A0009
@@ -168,7 +168,7 @@ Un parametro che deve essere di proprietà di questo oggetto è di proprietà di
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_AMBIGUOUS_MATCH"></span><span id="ui_e_ambiguous_match"></span>**interfaccia \_ utente \_ E \_ corrispondenza ambigua**
+<span id="UI_E_AMBIGUOUS_MATCH"></span><span id="ui_e_ambiguous_match"></span>**CORRISPONDENZA \_ AMBIGUA DELL'INTERFACCIA \_ \_ UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A000A
@@ -181,7 +181,7 @@ Più di un elemento corrisponde ai criteri di ricerca.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_FP_OVERFLOW"></span><span id="ui_e_fp_overflow"></span>**OVERFLOW dell'interfaccia utente \_ E \_ FP \_**
+<span id="UI_E_FP_OVERFLOW"></span><span id="ui_e_fp_overflow"></span>**OVERFLOW \_ FP dell'interfaccia \_ utente E \_**
 </dt> <dd> <dl> <dt>
 
 0x802A000B
@@ -194,7 +194,7 @@ Si è verificato un overflow a virgola mobile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_WRONG_THREAD"></span><span id="ui_e_wrong_thread"></span>**\_thread UI E \_ errato \_**
+<span id="UI_E_WRONG_THREAD"></span><span id="ui_e_wrong_thread"></span>**INTERFACCIA \_ UTENTE E THREAD \_ \_ ERRATO**
 </dt> <dd> <dl> <dt>
 
 0x802A000C
@@ -202,12 +202,12 @@ Si è verificato un overflow a virgola mobile.
 
 
 
-Questo metodo può essere chiamato solo dal thread che ha creato l'oggetto.
+Questo metodo può essere chiamato solo dal thread che ha creato l'oggetto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**interfaccia utente \_ E \_ Storyboard \_ attivi**
+<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**UI \_ E \_ STORYBOARD \_ ACTIVE**
 </dt> <dd> <dl> <dt>
 
 0x802A0101
@@ -215,12 +215,12 @@ Questo metodo può essere chiamato solo dal thread che ha creato l'oggetto.
 
 
 
-Lo storyboard è attualmente nella pianificazione.
+Lo storyboard è attualmente in fase di pianificazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**STORYBOARD dell'interfaccia utente \_ E \_ non in \_ \_ esecuzione**
+<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**STORYBOARD \_ E \_ DELL'INTERFACCIA UTENTE NON IN \_ \_ RIPRODUZIONE**
 </dt> <dd> <dl> <dt>
 
 0x802A0102
@@ -233,7 +233,7 @@ Lo storyboard non viene riprodotto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**interfaccia utente \_ E \_ inizio \_ fotogramma chiave \_ dopo la \_ fine**
+<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**FOTOGRAMMI \_ CHIAVE DI AVVIO \_ DELL'INTERFACCIA UTENTE \_ E DOPO LA \_ \_ FINE**
 </dt> <dd> <dl> <dt>
 
 0x802A0103
@@ -241,12 +241,12 @@ Lo storyboard non viene riprodotto.
 
 
 
-Il fotogramma chiave iniziale potrebbe verificarsi dopo il fotogramma chiave End.
+Il fotogramma chiave iniziale potrebbe verificarsi dopo il fotogramma chiave finale.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_END_KEYFRAME_NOT_DETERMINED"></span><span id="ui_e_end_keyframe_not_determined"></span>**fotogramma chiave dell'interfaccia utente \_ E \_ fine \_ \_ non \_ determinato**
+<span id="UI_E_END_KEYFRAME_NOT_DETERMINED"></span><span id="ui_e_end_keyframe_not_determined"></span>**FOTOGRAMMA \_ CHIAVE FINALE \_ DELL'INTERFACCIA UTENTE E NON \_ \_ \_ DETERMINATO**
 </dt> <dd> <dl> <dt>
 
 0x802A0104
@@ -254,12 +254,12 @@ Il fotogramma chiave iniziale potrebbe verificarsi dopo il fotogramma chiave End
 
 
 
-Potrebbe non essere possibile determinare l'ora di fine del fotogramma chiave quando viene raggiunto il fotogramma chiave di avvio.
+Potrebbe non essere possibile determinare l'ora del fotogramma chiave finale quando viene raggiunto il fotogramma chiave iniziale.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_LOOPS_OVERLAP"></span><span id="ui_e_loops_overlap"></span>**\_sovrapposizione di \_ cicli dell'interfaccia utente \_**
+<span id="UI_E_LOOPS_OVERLAP"></span><span id="ui_e_loops_overlap"></span>**SOVRAPPOSIZIONE \_ DEI CICLI E \_ \_ DELL'INTERFACCIA UTENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0105
@@ -272,7 +272,7 @@ Due parti ripetute di uno storyboard potrebbero sovrapporsi.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**transizione interfaccia utente \_ E \_ già in \_ \_ uso**
+<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**TRANSIZIONE \_ E \_ DELL'INTERFACCIA UTENTE GIÀ \_ \_ USATA**
 </dt> <dd> <dl> <dt>
 
 0x802A0106
@@ -280,12 +280,12 @@ Due parti ripetute di uno storyboard potrebbero sovrapporsi.
 
 
 
-La transizione è già stata aggiunta a uno storyboard diverso oppure è stata aggiunta a uno storyboard che ha terminato la riproduzione ed è stata rilasciata.
+La transizione è già stata aggiunta a uno storyboard diverso o è stata aggiunta a uno storyboard che ha terminato la riproduzione e il rilascio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**transizione dell'interfaccia utente \_ E \_ \_ non \_ nello \_ storyboard**
+<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**TRANSIZIONE \_ DELL'INTERFACCIA UTENTE E \_ NON NELLO \_ \_ \_ STORYBOARD**
 </dt> <dd> <dl> <dt>
 
 0x802A0107
@@ -293,12 +293,12 @@ La transizione è già stata aggiunta a uno storyboard diverso oppure è stata a
 
 
 
-La transizione non è stata aggiunta ad alcun Storyboard.
+La transizione non è stata aggiunta ad alcuno storyboard.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**transizione dell'interfaccia utente \_ E \_ \_ eclissata**
+<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**TRANSIZIONE \_ E DELL'INTERFACCIA \_ UTENTE \_ ECLISSATA**
 </dt> <dd> <dl> <dt>
 
 0x802A0108
@@ -311,7 +311,7 @@ La transizione potrebbe eclissare l'inizio di un'altra transizione nello storybo
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**interfaccia utente \_ E \_ tempo prima dell' \_ \_ ultimo \_ aggiornamento**
+<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**ORA \_ E \_ DELL'INTERFACCIA \_ UTENTE PRIMA \_ DELL'ULTIMO \_ AGGIORNAMENTO**
 </dt> <dd> <dl> <dt>
 
 0x802A0109
@@ -319,12 +319,12 @@ La transizione potrebbe eclissare l'inizio di un'altra transizione nello storybo
 
 
 
-L'ora specificata è precedente all'ora passata all'ultimo aggiornamento.
+L'ora specificata è precedente a quella passata all'ultimo aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**\_client timer interfaccia utente E \_ \_ \_ già \_ connesso**
+<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**CLIENT \_ TIMER E \_ \_ DELL'INTERFACCIA \_ UTENTE GIÀ \_ CONNESSO**
 </dt> <dd> <dl> <dt>
 
 0x802A010A
@@ -343,9 +343,9 @@ Questo client è già connesso a un timer.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista e aggiornamento della piattaforma solo per le applicazioni desktop di Windows Vista \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7, Windows Vista e l'aggiornamento della piattaforma solo per Windows app desktop di Vista \[\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                       |
-| Intestazione<br/>                   | <dl> <dt>Winerror. h</dt> </dl>           |
+| Intestazione<br/>                   | <dl> <dt>Winerror</dt> </dl>           |
 
 
 
@@ -353,7 +353,7 @@ Questo client è già connesso a un timer.
 
 <dl> <dt>
 
-[Informazioni di riferimento sull'animazione Windows](windows-animation-reference.md)
+[Windows Informazioni di riferimento sulle animazioni](windows-animation-reference.md)
 </dt> </dl>
 
  

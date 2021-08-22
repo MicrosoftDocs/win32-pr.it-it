@@ -1,7 +1,7 @@
 ---
-description: Definisce un tipo di dati di dichiarazione vertici.
+description: Definisce un tipo di dati di dichiarazione dei vertici.
 ms.assetid: 993fc7e4-4752-4bce-82d0-0a034fdc69c0
-title: Enumerazione D3DDECLTYPE (D3D9Types. h)
+title: Enumerazione D3DDECLTYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 3edb3f936772a7265c627f10eeb7aeb4f461701e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 23b22a70077eb6f37a5baeb3193b23ee853be4c3123c781293f2e300d597aaaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728631"
 ---
 # <a name="d3ddecltype-enumeration"></a>Enumerazione D3DDECLTYPE
 
-Definisce un tipo di dati di dichiarazione vertici.
+Definisce un tipo di dati di dichiarazione dei vertici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,137 +56,137 @@ typedef enum D3DDECLTYPE {
 
 <dl> <dt>
 
-<span id="D3DDECLTYPE_FLOAT1"></span><span id="d3ddecltype_float1"></span>**\_FLOAT1 D3DDECLTYPE**
+<span id="D3DDECLTYPE_FLOAT1"></span><span id="d3ddecltype_float1"></span>**D3DDECLTYPE \_ FLOAT1**
 </dt> <dd>
 
-Float a un componente espanso fino a (float, 0, 0, 1).
+Float a un componente espanso a (float, 0, 0, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_FLOAT2"></span><span id="d3ddecltype_float2"></span>**\_FLOAT2 D3DDECLTYPE**
+<span id="D3DDECLTYPE_FLOAT2"></span><span id="d3ddecltype_float2"></span>**D3DDECLTYPE \_ FLOAT2**
 </dt> <dd>
 
-Float a due componenti espanso a (float, float, 0, 1).
+Float a due componenti espanso in (float, float, 0, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_FLOAT3"></span><span id="d3ddecltype_float3"></span>**\_FLOAT3 D3DDECLTYPE**
+<span id="D3DDECLTYPE_FLOAT3"></span><span id="d3ddecltype_float3"></span>**D3DDECLTYPE \_ FLOAT3**
 </dt> <dd>
 
-Float a tre componenti espanso a (float, float, float, 1).
+Float a tre componenti espanso in (float, float, float, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_FLOAT4"></span><span id="d3ddecltype_float4"></span>**\_Float4 D3DDECLTYPE**
+<span id="D3DDECLTYPE_FLOAT4"></span><span id="d3ddecltype_float4"></span>**D3DDECLTYPE \_ FLOAT4**
 </dt> <dd>
 
-Float a quattro componenti espanso a (float, float, float, float).
+Float a quattro componenti espanso in (float, float, float, float).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_D3DCOLOR"></span><span id="d3ddecltype_d3dcolor"></span>**\_D3DCOLOR D3DDECLTYPE**
+<span id="D3DDECLTYPE_D3DCOLOR"></span><span id="d3ddecltype_d3dcolor"></span>**D3DDECLTYPE \_ D3DCOLOR**
 </dt> <dd>
 
-Byte con quattro componenti, compressi e senza segno mappati a un intervallo compreso tra 0 e 1. Input è un [**D3DCOLOR**](d3dcolor.md) ed è espanso nell'ordine RGBA.
+Quattro componenti, byte compressi e senza segno mappati a un intervallo da 0 a 1. L'input è [**D3DCOLOR**](d3dcolor.md) e viene espanso nell'ordine RGBA.
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_UBYTE4"></span><span id="d3ddecltype_ubyte4"></span>**\_UBYTE4 D3DDECLTYPE**
+<span id="D3DDECLTYPE_UBYTE4"></span><span id="d3ddecltype_ubyte4"></span>**D3DDECLTYPE \_ UBYTE4**
 </dt> <dd>
 
 Byte senza segno a quattro componenti.
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_SHORT2"></span><span id="d3ddecltype_short2"></span>**\_SHORT2 D3DDECLTYPE**
+<span id="D3DDECLTYPE_SHORT2"></span><span id="d3ddecltype_short2"></span>**D3DDECLTYPE \_ SHORT2**
 </dt> <dd>
 
-A due componenti, con segno Short espanso a (valore, valore, 0, 1).
+Two-component, signed short expanded to (value, value, 0, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_SHORT4"></span><span id="d3ddecltype_short4"></span>**\_SHORT4 D3DDECLTYPE**
+<span id="D3DDECLTYPE_SHORT4"></span><span id="d3ddecltype_short4"></span>**D3DDECLTYPE \_ SHORT4**
 </dt> <dd>
 
-A quattro componenti, con segno Short espanso a (valore, valore, valore, valore).
+Quattro componenti, con segno short espanso in (valore, valore, valore, valore).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_UBYTE4N"></span><span id="d3ddecltype_ubyte4n"></span>**\_Dati UBYTE4N D3DDECLTYPE**
+<span id="D3DDECLTYPE_UBYTE4N"></span><span id="d3ddecltype_ubyte4n"></span>**D3DDECLTYPE \_ UBYTE4N**
 </dt> <dd>
 
-Byte a quattro componenti con ogni byte normalizzato dividendo con 255.0 f.
+Byte a quattro componenti con ogni byte normalizzato dividendo con 255,0f.
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_SHORT2N"></span><span id="d3ddecltype_short2n"></span>**\_SHORT2N D3DDECLTYPE**
+<span id="D3DDECLTYPE_SHORT2N"></span><span id="d3ddecltype_short2n"></span>**D3DDECLTYPE \_ SHORT2N**
 </dt> <dd>
 
-Normalizzato, a due componenti, con segno Short, espanso in (First short/32767.0, Second short/32767.0, 0, 1).
+Normalizzato, a due componenti, con segno breve, espanso in (primo short/32767.0, secondo short/32767.0, 0, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_SHORT4N"></span><span id="d3ddecltype_short4n"></span>**\_SHORT4N D3DDECLTYPE**
+<span id="D3DDECLTYPE_SHORT4N"></span><span id="d3ddecltype_short4n"></span>**D3DDECLTYPE \_ SHORT4N**
 </dt> <dd>
 
-Normalizzato, a quattro componenti, con segno Short, espanso a (First short/32767.0, Second short/32767.0, terzo short/32767.0, Fourth short/32767.0).
+Normalizzato, a quattro componenti, con segno short, espanso a (primo short/32767.0, secondo short/32767.0, terzo short/32767.0, quarto short/32767.0).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_USHORT2N"></span><span id="d3ddecltype_ushort2n"></span>**\_USHORT2N D3DDECLTYPE**
+<span id="D3DDECLTYPE_USHORT2N"></span><span id="d3ddecltype_ushort2n"></span>**D3DDECLTYPE \_ USHORT2N**
 </dt> <dd>
 
-Normalizzato, a due componenti, a breve senza segno, espanso a (First Short/65535.0, Short Short/65535.0, 0, 1).
+Normalizzato, a due componenti, unsigned short, espanso in (first short/65535.0, short short/65535.0, 0, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_USHORT4N"></span><span id="d3ddecltype_ushort4n"></span>**\_USHORT4N D3DDECLTYPE**
+<span id="D3DDECLTYPE_USHORT4N"></span><span id="d3ddecltype_ushort4n"></span>**D3DDECLTYPE \_ USHORT4N**
 </dt> <dd>
 
-Normalizzato, a quattro componenti, senza segno breve, espanso in (First Short/65535.0, Second Short/65535.0, terzo Short/65535.0, Fourth Short/65535.0).
+Normalizzato, a quattro componenti, unsigned short, espanso in (first short/65535.0, second short/65535.0, third short/65535.0, fourth short/65535.0).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_UDEC3"></span><span id="d3ddecltype_udec3"></span>**\_UDEC3 D3DDECLTYPE**
+<span id="D3DDECLTYPE_UDEC3"></span><span id="d3ddecltype_udec3"></span>**D3DDECLTYPE \_ UDEC3**
 </dt> <dd>
 
-Formato a tre componenti, senza segno, 10 10 10 espanso a (valore, valore, valore, 1).
+Formato a tre componenti, senza segno, 10 10 10 espanso in (valore, valore, valore, 1).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_DEC3N"></span><span id="d3ddecltype_dec3n"></span>**\_DEC3N D3DDECLTYPE**
+<span id="D3DDECLTYPE_DEC3N"></span><span id="d3ddecltype_dec3n"></span>**D3DDECLTYPE \_ DEC3N**
 </dt> <dd>
 
-Formato a tre componenti, firmato, 10 10 10 normalizzato ed espanso a (v \[ 0 \] /511,0, v \[ 1 \] /511,0, v \[ 2 \] /511,0, 1).
+Formato a tre componenti, con segno, 10 10 10 normalizzato ed espanso a (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).
 
 </dd> <dt>
 
 <span id="D3DDECLTYPE_FLOAT16_2"></span><span id="d3ddecltype_float16_2"></span>**D3DDECLTYPE \_ FLOAT16 \_ 2**
 </dt> <dd>
 
-A due componenti, a 16 bit, a virgola mobile espansa (valore, valore, 0, 1).
+A due componenti, a 16 bit, a virgola mobile espansa in (valore, valore, 0, 1).
 
 </dd> <dt>
 
 <span id="D3DDECLTYPE_FLOAT16_4"></span><span id="d3ddecltype_float16_4"></span>**D3DDECLTYPE \_ FLOAT16 \_ 4**
 </dt> <dd>
 
-A quattro componenti, a 16 bit, a virgola mobile espansa (valore, valore, valore, valore).
+A quattro componenti, a 16 bit, a virgola mobile espansa in (valore, valore, valore, valore).
 
 </dd> <dt>
 
-<span id="D3DDECLTYPE_UNUSED"></span><span id="d3ddecltype_unused"></span>**D3DDECLTYPE non \_ usato**
+<span id="D3DDECLTYPE_UNUSED"></span><span id="d3ddecltype_unused"></span>**D3DDECLTYPE \_ NON USATO**
 </dt> <dd>
 
-Il campo tipo nella dichiarazione non è usato. Questa soluzione è progettata per l'uso con D3DDECLMETHOD \_ UV e D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
+Il campo Type nella dichiarazione non viene usato. È progettato per l'uso con D3DDECLMETHOD \_ UV e D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I dati dei vertici vengono dichiarati con una matrice di strutture [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) . Ogni elemento nella matrice contiene un tipo di dati di dichiarazione vertici.
+I dati dei vertici vengono dichiarati con una matrice [**di strutture D3DVERTEXELEMENT9.**](d3dvertexelement9.md) Ogni elemento nella matrice contiene un tipo di dati di dichiarazione dei vertici.
 
-Usare lo strumento DirectX Caps Viewer (DXCapsViewer.exe) per vedere quali tipi sono supportati nel dispositivo. È possibile ottenere questo strumento e ottenere informazioni su di esso da DirectX SDK. Per informazioni su DirectX SDK, vedere [dove è DirectX SDK?](../directx-sdk--august-2009-.md).
+Usare lo strumento DirectX Caps Viewer (DXCapsViewer.exe) per visualizzare i tipi supportati nel dispositivo. È possibile ottenere questo strumento e ottenere informazioni da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -194,7 +194,7 @@ Usare lo strumento DirectX Caps Viewer (DXCapsViewer.exe) per vedere quali tipi 
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

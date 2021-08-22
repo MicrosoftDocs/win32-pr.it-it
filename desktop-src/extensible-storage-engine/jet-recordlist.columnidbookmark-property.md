@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECORDLIST. columnidBookmark'
-title: Proprietà JET_RECORDLIST. columnidBookmark
+description: 'Altre informazioni su: JET_RECORDLIST.columnidBookmark'
+title: JET_RECORDLIST.columnidBookmark
 TOCTitle: 'columnidBookmark property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RECORDLIST.columnidBookmark
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recordlist.columnidbookmark(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2069a274c5d89b3198113985a11a5d8af26fd1a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0122462a3d809b59e4b3b17d5ecf82e342fac06267da7aae2875407b69b44deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730411"
 ---
-# <a name="jet_recordlistcolumnidbookmark-property"></a>Proprietà JET_RECORDLIST. columnidBookmark
+# <a name="jet_recordlistcolumnidbookmark-property"></a>JET_RECORDLIST.columnidBookmark
 
-Ottiene l'ColumnID della colonna nella tabella temporanea in cui è archiviato il segnalibro del record. La colonna è di tipo JET_coltyp. Testo.
+Ottiene l'id colonna della colonna nella tabella temporanea in cui è archiviato il segnalibro del record. La colonna è di tipo JET_coltyp. Testo.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidBookmark { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RECORDLIST](./jet-recordlist-class.md)
+[JET_RECORDLIST classe](./jet-recordlist-class.md)
 
-[Membri JET_RECORDLIST](./jet-recordlist-members.md)
+[JET_RECORDLIST membri](./jet-recordlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

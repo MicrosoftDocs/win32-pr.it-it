@@ -1,29 +1,29 @@
 ---
 description: Modifica la frequenza dei fotogrammi di un flusso video.
 ms.assetid: a66b9c52-a015-41d2-b27a-3ce6a4d95be9
-title: Convertitore frequenza frame DSP (Wmcodecdsp. h)
+title: Frame Rate Converter DSP (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6197c29e9e753db6f327aa8b2797ba04131448d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ca4a728f37caa43ee99a0d293d5113e9c26cfb1dcfe51f399482fb614283737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600491"
 ---
-# <a name="frame-rate-converter-dsp"></a>Convertitore frequenza frame DSP
+# <a name="frame-rate-converter-dsp"></a>Provider di servizi di conversione frequenza fotogrammi
 
 Modifica la frequenza dei fotogrammi di un flusso video.
 
 ## <a name="clsid"></a>CLSID
 
-\_CFRAMERATECONVERTDMO CLSID
+CLSID \_ CFrameRateConvertDmo
 
 ## <a name="interfaces"></a>Interfacce
 
 -   **IMediaObject**
 -   **IMFTransform**
--   **IPropertyStore**
+-   **Ipropertystore**
 
 ## <a name="formats"></a>Formati
 
@@ -45,14 +45,14 @@ Modifica la frequenza dei fotogrammi di un flusso video.
 
 ## <a name="properties"></a>Proprietà
 
--   [MFPKEY \_ conv \_ INPUTFRAMERATE](mfpkey-conv-inputframerate.md)
--   [MFPKEY \_ conv \_ OUTPUTFRAMERATE](mfpkey-conv-outputframerate.md)
+-   [MFPKEY \_ CONV \_ INPUTFRAMERATE](mfpkey-conv-inputframerate.md)
+-   [MFPKEY \_ CONV \_ OUTPUTFRAMERATE](mfpkey-conv-outputframerate.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo DSP modifica la frequenza dei fotogrammi ripetendo o eliminando i frame.
+Questo DSP modifica la frequenza dei fotogrammi ripetendo o eliminando i fotogrammi.
 
-Per impostazione predefinita, il DSP ottiene le frequenze dei fotogrammi dai tipi di supporto. Facoltativamente, è possibile specificare le frequenze dei fotogrammi impostando \_ le \_ Proprietà MFPKEY CONV INPUTFRAMERATE e MFPKEY \_ conv \_ OUTPUTFRAMERATE. Questi valori eseguono l'override della frequenza dei fotogrammi specificata nel tipo di supporto. Tuttavia, se si usa questo DSP all'interno della pipeline di Media Foundation, è consigliabile non impostare queste proprietà.
+Per impostazione predefinita, il provider di servizi multimediali ottiene le frequenze dei fotogrammi dai tipi di supporti. Facoltativamente, è possibile specificare le frequenze dei fotogrammi impostando le proprietà MFPKEY \_ CONV \_ INPUTFRAMERATE e MFPKEY \_ CONV \_ OUTPUTFRAMERATE. Questi valori eseguono l'override della frequenza dei fotogrammi specificata nel tipo di supporto. Tuttavia, se si usa questo provider di servizi di distribuzione all'interno Media Foundation pipeline, non è consigliabile impostare queste proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Per impostazione predefinita, il DSP ottiene le frequenze dei fotogrammi dai tip
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Mfvdsp.dll</dt> </dl>   |
 
 
@@ -71,7 +71,7 @@ Per impostazione predefinita, il DSP ottiene le frequenze dei fotogrammi dai tip
 
 <dl> <dt>
 
-[Processori di segnale digitale](windowsmediadigitalsignalprocessors.md)
+[Processori di segnali digitali](windowsmediadigitalsignalprocessors.md)
 </dt> </dl>
 
  

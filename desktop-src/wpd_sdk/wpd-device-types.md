@@ -1,7 +1,7 @@
 ---
-description: Il \_ \_ tipo di enumerazione dei tipi di dispositivi WPD descrive i diversi tipi di dispositivi portatili Windows (WPD) usati comunemente per determinare la classificazione di base e l'aspetto visivo di un dispositivo portatile.
+description: Il tipo di enumerazione WPD DEVICE TYPES descrive i diversi tipi \_ di Windows Portable Device (WPD) comunemente usati per determinare la classificazione di base e l'aspetto visivo di \_ un dispositivo portatile.
 ms.assetid: 51714e0f-e9b7-4474-a8bb-da3875ef5399
-title: Enumerazione WPD_DEVICE_TYPES (PortableDevice. h)
+title: WPD_DEVICE_TYPES enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3e71acf200a95bba05b7298a5824bfa353e4a90b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 747c4631bc2c24a6550904e36e58a6fc02547bc010da7fa1d08b896c6c17489c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657461"
 ---
-# <a name="wpd_device_types-enumeration"></a>Enumerazione dei tipi di \_ dispositivi WPD \_
+# <a name="wpd_device_types-enumeration"></a>Enumerazione WPD \_ DEVICE \_ TYPES
 
-Il tipo di enumerazione dei **\_ \_ tipi di dispositivi WPD** descrive i diversi tipi di dispositivi portatili Windows (WPD) usati comunemente per determinare la classificazione di base e l'aspetto visivo di un dispositivo portatile.
+Il tipo di enumerazione **WPD \_ DEVICE \_ TYPES** descrive i diversi tipi di Windows Portable Device (WPD) comunemente usati per determinare la classificazione di base e l'aspetto visivo di un dispositivo portatile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,61 +45,61 @@ typedef enum tagWPD_DEVICE_TYPES {
 
 <dl> <dt>
 
-<span id="WPD_DEVICE_TYPE_GENERIC"></span><span id="wpd_device_type_generic"></span>**\_tipo di dispositivo WPD \_ \_ generico**
+<span id="WPD_DEVICE_TYPE_GENERIC"></span><span id="wpd_device_type_generic"></span>**TIPO DI DISPOSITIVO WPD \_ \_ \_ GENERICO**
 </dt> <dd>
 
-WPD generico che include dispositivi multifunzione che non rientrano in uno degli altri valori di enumerazione dei [**\_ \_ tipi di dispositivo WPD**](wpd-device-types.md) .
+WPD generico che include dispositivi multifunzione che non rientrano in uno degli altri valori di enumerazione [**DEVICE \_ \_ TYPES WPD.**](wpd-device-types.md)
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_CAMERA"></span><span id="wpd_device_type_camera"></span>**\_fotocamera del \_ tipo di dispositivo WPD \_**
+<span id="WPD_DEVICE_TYPE_CAMERA"></span><span id="wpd_device_type_camera"></span>**FOTOCAMERA CON TIPO DI DISPOSITIVO WPD \_ \_ \_**
 </dt> <dd>
 
-Un dispositivo della fotocamera, ad esempio una fotocamera digitale ancora.
+Un dispositivo fotocamera, ad esempio una fotocamera digitale.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_MEDIA_PLAYER"></span><span id="wpd_device_type_media_player"></span>**\_ \_ \_ media \_ Player tipo di dispositivo WPD**
+<span id="WPD_DEVICE_TYPE_MEDIA_PLAYER"></span><span id="wpd_device_type_media_player"></span>**LETTORE \_ MULTIMEDIALE \_ DI TIPO \_ DISPOSITIVO \_ WPD**
 </dt> <dd>
 
-Dispositivo multimediale che supporta la riproduzione di immagini audio, video o di visualizzazione, ad esempio un lettore musicale portatile o un Media Center portatile. Non tutte queste funzioni sono classificate come un tipo di \_ dispositivo \_ WPD \_ media \_ Player. I dispositivi portatili Music Player, ad esempio, vengono classificati come \_ tipo di dispositivo WPD \_ \_ media \_ Player.
+Dispositivo lettore multimediale che supporta la riproduzione di immagini audio, video o di visualizzazione, ad esempio un lettore musicale portatile o un media center portatile. Non tutto questo funzionalmente è classificato come LETTORE MULTIMEDIALE TIPO \_ DI DISPOSITIVO WPD. \_ \_ \_ Ad esempio, i dispositivi lettore di musica portatile sono classificati come WPD \_ DEVICE \_ TYPE MEDIA \_ \_ PLAYER.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_PHONE"></span><span id="wpd_device_type_phone"></span>**\_ \_ telefono tipo di dispositivo WPD \_**
+<span id="WPD_DEVICE_TYPE_PHONE"></span><span id="wpd_device_type_phone"></span>**TELEFONO CON TIPO DI DISPOSITIVO WPD \_ \_ \_**
 </dt> <dd>
 
 Un dispositivo telefonico, ad esempio un telefono cellulare.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_VIDEO"></span><span id="wpd_device_type_video"></span>**\_video del \_ tipo di dispositivo WPD \_**
+<span id="WPD_DEVICE_TYPE_VIDEO"></span><span id="wpd_device_type_video"></span>**VIDEO SUL TIPO DI DISPOSITIVO WPD \_ \_ \_**
 </dt> <dd>
 
 Un dispositivo video.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_PERSONAL_INFORMATION_MANAGER"></span><span id="wpd_device_type_personal_information_manager"></span>**\_ \_ \_ \_ Gestione informazioni personali del tipo di dispositivo WPD \_**
+<span id="WPD_DEVICE_TYPE_PERSONAL_INFORMATION_MANAGER"></span><span id="wpd_device_type_personal_information_manager"></span>**TIPO DI DISPOSITIVO WPD \_ \_ PERSONAL INFORMATION \_ \_ \_ MANAGER**
 </dt> <dd>
 
-Un dispositivo Personal Information Manager.
+Un dispositivo di gestione delle informazioni personali.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TYPE_AUDIO_RECORDER"></span><span id="wpd_device_type_audio_recorder"></span>**\_ \_ registratore audio del tipo di dispositivo \_ WPD \_**
+<span id="WPD_DEVICE_TYPE_AUDIO_RECORDER"></span><span id="wpd_device_type_audio_recorder"></span>**REGISTRATORE \_ AUDIO DI TIPO DISPOSITIVO \_ \_ \_ WPD**
 </dt> <dd>
 
-Un dispositivo registratore audio.
+Un dispositivo di registrazione audio.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**WPD \_ I \_ tipi di dispositivo** vengono letti usando l'interfaccia [**IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) . Le applicazioni WPD possono usare questi valori per determinare l'aspetto visivo generico del dispositivo. Ovvero viene visualizzata un'immagine della fotocamera per i dispositivi di tipo fotocamera, viene visualizzata un'immagine del telefono cellulare per i dispositivi simili al telefono e così via.
+**WPD \_ I \_ TIPI DI** DISPOSITIVO vengono letti tramite [**l'interfaccia IPortableDeviceManager.**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) Le applicazioni WPD possono usare questi valori per determinare l'aspetto visivo generico del dispositivo. In altri, viene visualizzata un'immagine della fotocamera per i dispositivi simili a una fotocamera, un'immagine del telefono cellulare viene visualizzata per i dispositivi simili al telefono e così via.
 
 > [!Note]  
-> Le applicazioni WPD devono usare le funzionalità del dispositivo portatile per determinare la funzione, non il valore dei **\_ \_ tipi di dispositivo WPD** .
+> Le applicazioni WPD devono usare le funzionalità del dispositivo portatile per determinare funzionalmente, non il **valore WPD \_ DEVICE \_ TYPES.**
 
  
 
@@ -109,7 +109,7 @@ Un dispositivo registratore audio.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

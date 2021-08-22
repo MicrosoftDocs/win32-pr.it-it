@@ -4,12 +4,12 @@ description: Questa sezione contiene il codice correlato alle attività di progr
 ms.assetid: 73678045-1518-46cd-ab55-5d272852ba73
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9e4f42f908bc2ee63cfa273a5251b0bd8d9bf86
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: 78f1186f923a1b882087f9db4ce6afdc467e074d8dafe90008ae6eeff8719a15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599701"
 ---
 # <a name="using-resources"></a>Uso delle risorse
 
@@ -31,7 +31,7 @@ L'esempio seguente copia una risorsa della finestra di dialogo da un file esegui
 
 Il codice seguente implementa questi passaggi.
 
-**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
+**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Fare riferimento alla **documentazione di LoadLibrary** per informazioni su come caricare correttamente le DLL con versioni diverse Windows.
 
 
 ```C++
@@ -123,9 +123,9 @@ Il codice illustra come caricare il file eseguibile, creare un file in cui scriv
 
 Si noti che *lpszType* in [*EnumResTypeProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca) è un ID risorsa o un puntatore a una stringa (contenente un ID risorsa o un nome di tipo); *lpszType* e *lpszName* in [*EnumResNameProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumresnameproca) ed [*EnumResLangProc*](/previous-versions/windows/desktop/legacy/ms648033(v=vs.85)) sono simili. Per caricare una risorsa enumerata, è sufficiente chiamare la funzione appropriata. Ad esempio, se è stata enumerata una risorsa di menu (**RT \_ MENU**), passare *lpszName* a [**LoadMenu**](/windows/desktop/api/Winuser/nf-winuser-loadmenua). Per le risorse personalizzate, passare *lpszType* e *lpszName* [**a FindResource.**](/windows/desktop/api/Winbase/nf-winbase-findresourcea)
 
-Il [codice Aggiornamento risorse](#updating-resources) segue un modello simile per una risorsa della finestra di dialogo.
+Il [codice Di aggiornamento delle](#updating-resources) risorse segue un modello simile per una risorsa della finestra di dialogo.
 
-**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Per informazioni su come caricare correttamente le DLL con versioni diverse di Windows, vedere la documentazione di **LoadLibrary.**
+**Avviso di sicurezza:** [**L'uso errato di LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) può compromettere la sicurezza dell'applicazione caricando la DLL errata. Fare riferimento alla **documentazione di LoadLibrary** per informazioni su come caricare correttamente le DLL con versioni diverse Windows.
 
 
 ```C++

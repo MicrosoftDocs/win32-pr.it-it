@@ -1,26 +1,26 @@
 ---
-title: Porting di comandi BGN/end
-description: IRIS GL usa il paradigma begin/end ma ha una funzione diversa per ogni primitiva grafica.
+title: Porting di comandi bgn/end
+description: IRIS GL usa il paradigma begin/end, ma ha una funzione diversa per ogni primitiva grafica.
 ms.assetid: 4191344b-614a-42d6-8a31-7a708f17371e
 keywords:
-- Porting di IRIS GL, comandi BGN/end
-- porting da comandi IRIS GL, BGN/end
-- porting in OpenGL da IRIS GL, BGN/end Commands
-- Porting OpenGL da IRIS GL, comandi BGN/end
-- funzioni di disegno, comandi BGN/end
-- comandi BGN/end
+- Porting IRIS GL, comandi bgn/end
+- porting da IRIS GL, comandi bgn/end
+- porting a OpenGL da IRIS GL, comandi bgn/end
+- Porting OpenGL da IRIS GL, comandi bgn/end
+- funzioni di disegno, comandi bgn/end
+- Comandi bgn/end
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c25118d4e5050ea22d4b18fab596dfb9c92f562e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c63084b1f05d984fdc19254edaadaca9098d13f974a433f5c6ff7c5d370ec223
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485971"
 ---
-# <a name="porting-bgnend-commands"></a>Porting di comandi BGN/end
+# <a name="porting-bgnend-commands"></a>Porting di comandi bgn/end
 
-IRIS GL usa il paradigma begin/end ma ha una funzione diversa per ogni primitiva grafica. È possibile, ad esempio, usare **bgnpolygon** e **endpolygon** per creare poligoni, **bgnline** e **EndLine** per creare linee. In OpenGL si usa la struttura [**glBegin**](glbegin.md)  /  [**glEnd**](glend.md) per entrambi. In OpenGL è possibile creare la maggior parte degli oggetti geometrici racchiudendo una serie di funzioni che specificano i vertici, le normali, le trame e i colori tra le coppie di **glBegin** e le chiamate **glEnd** . Ad esempio:
+IRIS GL usa il paradigma begin/end, ma ha una funzione diversa per ogni primitiva grafica. Ad esempio, è probabile che si **usino bgnpolygon** e **endpolygon** per disegnare poligoni e **bgnline** e **endline** per disegnare linee. In OpenGL si usa la struttura [**glBegin**](glbegin.md)  /  [**glEnd**](glend.md) per entrambi. In OpenGL si disegna la maggior parte degli oggetti geometrici racchiudendo una serie di funzioni che specificano vertici, normali, trame e colori tra coppie di **chiamate glBegin** e **glEnd.** Esempio:
 
 ``` syntax
 void glBegin( GLenum mode) ; 
@@ -28,7 +28,7 @@ void glBegin( GLenum mode) ;
 void glEnd( void );
 ```
 
-La funzione **glBegin** accetta un singolo parametro che specifica la modalità di disegno e quindi la primitiva. Ecco un esempio di codice OpenGL che disegna un poligono e una riga:
+La **funzione glBegin** accetta un singolo parametro che specifica la modalità di disegno e quindi la primitiva. Ecco un esempio di codice OpenGL che disegna un poligono e quindi una linea:
 
 ``` syntax
 glBegin( GL_POLYGON ) ; 
@@ -45,60 +45,60 @@ glBegin( GL_LINES ) ;
 glEnd();
 ```
 
-Con OpenGL è possibile creare oggetti geometrici diversi specificando parametri diversi per [**glBegin**](glbegin.md). La tabella seguente elenca i parametri OpenGL **glBegin** che corrispondono alle funzioni di Iris GL equivalenti.
+Con OpenGL si disegnano oggetti geometrici diversi specificando parametri diversi per [**glBegin**](glbegin.md). Nella tabella seguente sono elencati i parametri **glBegin** di OpenGL che corrispondono alle funzioni gl IRIS equivalenti.
 
 
 
-| Funzione IRIS GL  | Valore della modalità glBegin | Significato                                                                                  |
+| Funzione GL IRIS  | Valore della modalità glBegin | Significato                                                                                  |
 |-------------------|-----------------------|------------------------------------------------------------------------------------------|
-| **bgnpoint**      | \_punti GL            | Punti singoli.                                                                       |
-| **bgnline**       | \_striscia linea \_ GL       | Serie di segmenti di linea collegati.                                                       |
-| **bgnclosedline** | \_ciclo linea \_ GL        | Serie di segmenti di linea collegati, con un segmento aggiunto tra il primo e l'ultimo vertice. |
-|                   | \_righe GL             | Coppie di vertici interpretate come singoli segmenti di linea.                               |
-| **bgnpolygon**    | \_poligono GL           | Limite di un poligono convesso semplice.                                                     |
-|                   | triangoli GL \_         | Triple di vertici interpretati come triangoli.                                            |
-| **bgntmesh**      | \_striscia del triangolo GL \_   | Strisce collegate di triangoli.                                                              |
-|                   | \_ventola del triangolo GL \_     | Fan collegati di triangoli.                                                                |
-|                   | \_Quad GL             | Quadruple di vertici interpretate come quadrilateri.                                    |
-| **bgnqstrip**     | \_ \_ striping GL quad       | Strisce collegate di quadrilateri.                                                         |
+| **bgnpoint**      | PUNTI DI \_ RIFERIMENTO            | Singoli punti.                                                                       |
+| **bgnline**       | GL \_ LINE \_ STRIP       | Serie di segmenti di linea connessi.                                                       |
+| **bgnclosedline** | CICLO GL \_ LINE \_        | Serie di segmenti di linea connessi, con un segmento aggiunto tra il primo e l'ultimo vertice. |
+|                   | RIGHE DI \_ CONTABILITÀ GENERALE             | Coppie di vertici interpretate come singoli segmenti di linea.                               |
+| **bgnpolygon**    | POLIGONO GL \_           | Limite di un poligono convesso semplice.                                                     |
+|                   | TRIANGOLI \_ GL         | Triple di vertici interpretate come triangoli.                                            |
+| **bgntmesh**      | TRIANGOLO GL \_ \_ STRIP   | Strisce collegate di triangoli.                                                              |
+|                   | VENTOLA \_ TRIANGOLO \_ GL     | Ventole collegate di triangoli.                                                                |
+|                   | QUAD \_ GL             | Quadruple di vertici interpretati come quadrilaterali.                                    |
+| **bgnqstrip**     | GL \_ QUAD \_ STRIP       | Strisce collegate di quadrilaterali.                                                         |
 
 
 
- 
+ 
 
-Per una descrizione dettagliata delle differenze tra le mesh, le strisce e le ventole del triangolo, vedere la sezione relativa ai [triangoli di porting](porting-triangles.md).
+Per una descrizione dettagliata delle differenze tra mesh triangolo, strisce e ventole, vedere [Porting Triangles](porting-triangles.md).
 
-Non esiste alcun limite al numero di vertici che è possibile specificare tra una coppia [**glBegin**](glbegin.md)  /  [**glEnd**](glend.md) .
+Non esiste alcun limite al numero di vertici che è possibile specificare tra una coppia [**glBegin**](glbegin.md)  /  [**glEnd.**](glend.md)
 
-Oltre a specificare i vertici all'interno di una coppia **glBegin**  /  **glEnd** , è possibile specificare un normale corrente, coordinate di trama correnti e un colore corrente. La tabella seguente elenca i comandi validi all'interno di una coppia **glBegin**  /  **glEnd** .
+Oltre a specificare i vertici all'interno di una coppia **glBegin**  /  **glEnd,** è possibile specificare una normale corrente, le coordinate di trama correnti e un colore corrente. Nella tabella seguente sono elencati i comandi validi all'interno di una coppia **glBegin**  /  **glEnd.**
 
 
 
-| Funzione IRIS GL        | OpenGL (funzione)                                                      | Significato                                          |
+| Funzione GL IRIS        | Funzione OpenGL                                                      | Significato                                          |
 |-------------------------|----------------------------------------------------------------------|--------------------------------------------------|
-| **v2**, **v3**, **V4**  | [glVertex](glvertex-functions.md)                                   | Imposta le coordinate del vertice.                         |
-| **RGBcolor**, **CPack** | [glColor](glcolor-functions.md)                                     | Imposta il colore corrente.                              |
-| **color**               | [glIndex](glindex-functions.md)                                     | Imposta l'indice del colore corrente.                        |
-| **n3f**                 | [glNormal](glnormal-functions.md)                                   | Imposta le normali coordinate del vettore.                  |
-|                         | [glEvalCoord](glevalcoord-functions.md)                             | Valuta le mappe con una e due dimensioni abilitate. |
+| **v2**, **v3**, **v4**  | [glVertex](glvertex-functions.md)                                   | Imposta le coordinate dei vertici.                         |
+| **RGBcolor**, **cpack** | [glColor](glcolor-functions.md)                                     | Imposta il colore corrente.                              |
+| **color**               | [glIndex](glindex-functions.md)                                     | Imposta l'indice dei colori corrente.                        |
+| **n3f**                 | [glNormal](glnormal-functions.md)                                   | Imposta le coordinate normali del vettore.                  |
+|                         | [glEvalCoord](glevalcoord-functions.md)                             | Valuta le mappe una e bidimensionali abilitate. |
 | **callobj**             | [**glCallList**](glcalllist.md), [ **glCallLists**](glcalllists.md) | Esegue gli elenchi di visualizzazione.                        |
-| **T2**                  | [glTexCoord](gltexcoord-functions.md)                               | Imposta le coordinate di trama.                        |
-|                         | [glEdgeFlag](gledgeflag-functions.md)                               | Controlla i bordi del disegno.                          |
+| **t2**                  | [glTexCoord](gltexcoord-functions.md)                               | Imposta le coordinate della trama.                        |
+|                         | [glEdgeFlag](gledgeflag-functions.md)                               | Controlla i bordi di disegno.                          |
 | **lmbind**              | [glMaterial](glmaterial-functions.md)                               | Imposta le proprietà del materiale.                        |
 
 
 
- 
+ 
 
 > [!Note]
 >
-> Se si usa una funzione OpenGL diversa da quelle elencate nella tabella precedente all'interno di una coppia [**glBegin**](glbegin.md)  /  [**glEnd**](glend.md) , si otterranno risultati imprevedibili o probabilmente un errore.
+> Se si usa una funzione OpenGL diversa da quelle elencate nella tabella precedente all'interno di una coppia [**glBegin**](glbegin.md)  /  [**glEnd,**](glend.md) si otterrà risultati imprevedibili o probabilmente un errore.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

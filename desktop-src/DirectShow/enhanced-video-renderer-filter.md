@@ -1,26 +1,26 @@
 ---
-description: Il filtro EVR (Enhanced video renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e il modello di plug-in come Media Foundation sink di supporto EVR.
+description: Il filtro EVR (Enhanced Video Renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
 ms.assetid: ead99cb3-2be2-42c6-ac22-be0c2ddf28d5
-title: Filtro renderer video migliorato
+title: Filtro renderer video avanzato
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ba6e7c14386ea37424364274263859844182ed7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4e6b99eefe8f31074c755f4f74b4cd8749e44de996f49592cea5827d6fa1e123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104048970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537071"
 ---
-# <a name="enhanced-video-renderer-filter"></a>Filtro renderer video migliorato
+# <a name="enhanced-video-renderer-filter"></a>Filtro renderer video avanzato
 
 > [!Note]  
 > Questo argomento si applica a Windows Vista e versioni successive.
 
  
 
-Il filtro EVR (Enhanced video renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e il modello di plug-in come Media Foundation sink di supporto EVR.
+Il filtro EVR (Enhanced Video Renderer) è un mixer video a 16 canali e un renderer. Ha la stessa funzionalità di base e lo stesso modello di plug-in del sink Media Foundation multimediale EVR.
 
-Il filtro DirectShow EVR è documentato nella documentazione di Media Foundation SDK; per altre informazioni, vedere [renderer video migliorato](../medfound/enhanced-video-renderer.md).
+Il DirectShow EVR è documentato nella documentazione di Media Foundation SDK. Per altre informazioni, vedere [Renderer video avanzato](../medfound/enhanced-video-renderer.md).
 
 
 
@@ -32,7 +32,7 @@ Il filtro DirectShow EVR è documentato nella documentazione di Media Foundation
 <tbody>
 <tr class="odd">
 <td>Interfacce di filtro (tramite <strong>QueryInterface</strong>)</td>
-<td>Interfacce DirectShow:
+<td>DirectShow interfacce:
 <ul>
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-iamcertifiedoutputprotection"><strong>IAMCertifiedOutputProtection</strong></a></li>
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></li>
@@ -43,7 +43,7 @@ Il filtro DirectShow EVR è documentato nella documentazione di Media Foundation
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li>
 <li><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop"><strong>IQualProp</strong></a></li>
 </ul>
-Interfacce di Media Foundation:<br/>
+Media Foundation interfacce:<br/>
 <ul>
 <li><a href="/windows/desktop/api/evr/nn-evr-ievrfilterconfig"><strong>IEVRFilterConfig</strong></a></li>
 <li><a href="/windows/desktop/api/mfidl/nn-mfidl-imfgetservice"><strong>IMFGetService</strong></a></li>
@@ -53,17 +53,17 @@ Interfacce di Media Foundation:<br/>
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di input</td>
-<td>Variabile, a seconda del driver della grafica.</td>
+<td>Variabile, a seconda del driver di grafica.</td>
 </tr>
 <tr class="odd">
 <td>Interfacce pin di input (tramite <strong>QueryInterface</strong>)</td>
-<td>Interfacce DirectShow:
+<td>DirectShow interfacce:
 <ul>
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a></li>
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a></li>
 <li><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></li>
 </ul>
-Interfacce di Media Foundation:<br/>
+Media Foundation interfacce:<br/>
 <ul>
 <li><a href="/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration"><strong>IDirectXVideoMemoryConfiguration</strong></a></li>
 <li><a href="/windows/desktop/api/evr9/nn-evr9-ievrvideostreamcontrol"><strong>IEVRVideoStreamControl</strong></a></li>
@@ -75,11 +75,11 @@ Interfacce di Media Foundation:<br/>
 <td>Non applicabile.</td>
 </tr>
 <tr class="odd">
-<td>Interfacce del PIN di output</td>
+<td>Interfacce pin di output</td>
 <td>Non applicabile.</td>
 </tr>
 <tr class="even">
-<td>CLSID filtro</td>
+<td>Filtro CLSID</td>
 <td>CLSID_EnhancedVideoRenderer</td>
 </tr>
 <tr class="odd">
@@ -103,31 +103,31 @@ Interfacce di Media Foundation:<br/>
 
 ## <a name="remarks"></a>Commenti
 
-Oltre alle interfacce esposte tramite **QueryInterface**, EVR espone altre interfacce tramite il metodo [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) . Alcune di queste interfacce sono implementate dal relatore EVR o dal mixer EVR, anziché da EVR. Se l'applicazione imposta un Presenter o un mixer personalizzato in EVR, le versioni personalizzate possono esporre un set di interfacce diverso.
+Oltre alle interfacce esposte tramite **QueryInterface,** l'EVR espone altre interfacce tramite il [**metodo IMFGetService::GetService.**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) Alcune di queste interfacce vengono implementate dal presentatore EVR o dal mixer EVR, anziché dall'EVR stesso. Se l'applicazione imposta un presenter o un mixer personalizzato nel EVR, le versioni personalizzate potrebbero esporre un set diverso di interfacce.
 
 
 
-| Oggetto     | Identificatore servizio                                              | Interfacce                                                                                                                                                                                                                                                                                                     |
+| Oggetto     | Identificatore del servizio                                              | Interfacce                                                                                                                                                                                                                                                                                                     |
 |------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filtro EVR | \_Servizio di rendering video di Mr \_ \_ (query EVR o Presenter)<br/> | [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid)<br/> [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol)<br/> [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)<br/> [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)<br/>                                                          |
-| Filtro EVR | \_Servizio di accelerazione video di Mr \_ \_ (Presenter query)<br/>  | [**IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9)                                                                                                                                                                                                                                                      |
-| Filtro EVR | \_Servizio mixer video di Mr \_ \_ (mixer query)<br/>             | [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid)<br/> [**IMFVideoMixerBitmap**](/windows/desktop/api/evr9/nn-evr9-imfvideomixerbitmap)<br/> [**IMFVideoMixerControl**](/windows/desktop/api/evr/nn-evr-imfvideomixercontrol)<br/> [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)<br/> [**IMFVideoProcessor**](/windows/desktop/api/evr9/nn-evr9-imfvideoprocessor)<br/> |
-| Pin di input | \_ \_ servizio accelerazione video di Mr \_                                | [**IDirectXVideoMemoryConfiguration**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration)                                                                                                                                                                                                                                    |
+| Filtro EVR | MR \_ VIDEO RENDER SERVICE \_ \_ (esegue query su EVR o presenter)<br/> | [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid)<br/> [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol)<br/> [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)<br/> [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)<br/>                                                          |
+| Filtro EVR | SERVIZIO DI \_ \_ ACCELERAZIONE VIDEO MR \_ (presentatore di query)<br/>  | [**IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9)                                                                                                                                                                                                                                                      |
+| Filtro EVR | MR \_ VIDEO \_ MIXER SERVICE \_ (mixer di query)<br/>             | [**IMFVideoDeviceID**](/windows/desktop/api/evr/nn-evr-imfvideodeviceid)<br/> [**IMFVideoMixerBitmap**](/windows/desktop/api/evr9/nn-evr9-imfvideomixerbitmap)<br/> [**IMFVideoMixerControl**](/windows/desktop/api/evr/nn-evr-imfvideomixercontrol)<br/> [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)<br/> [**IMFVideoProcessor**](/windows/desktop/api/evr9/nn-evr9-imfvideoprocessor)<br/> |
+| Pin di input | SERVIZIO DI \_ \_ ACCELERAZIONE VIDEO \_ MR                                | [**IDirectXVideoMemoryConfiguration**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideomemoryconfiguration)                                                                                                                                                                                                                                    |
 
 
 
  
 
-EVR può combinare fino a 16 flussi video. Il primo flusso di input (pin 0) viene chiamato *flusso di riferimento*. Il flusso di riferimento viene sempre visualizzato per primo nell'ordine z. Tutti i flussi aggiuntivi sono denominati sottoflussi e sono combinati sopra il flusso di riferimento. L'applicazione può modificare l'ordine z dei sottoflussi, ma nessun sottoflusso può essere prima nell'ordine z.
+L'EVR può combinare fino a 16 flussi video. Il primo flusso di input (pin 0) è denominato *flusso di riferimento*. Il flusso di riferimento viene sempre visualizzato per primo nell'ordine z. Tutti i flussi aggiuntivi sono denominati flussi secondari e vengono misti all'inizio del flusso di riferimento. L'applicazione può modificare l'ordine z dei sottostream, ma nessun flusso secondario può essere prima nell'ordine z.
 
-Il driver di grafica determina quali formati video sono supportati, ma in genere sono limitati agli elementi seguenti:
+Il driver di grafica determina quali formati video sono supportati, ma in genere sono limitati ai seguenti:
 
--   Flusso di riferimento: YUV progressivo o interlacciato senza alfa per pixel, ad esempio NV12 o YUY2. o RGB progressivo.
--   Sottoflussi: YUV progressivo con l'alfa per pixel, ad esempio AYUV o AI44.
+-   Flusso di riferimento: YUV progressivo o interlacciato senza alfa per pixel (ad esempio NV12 o YUY2); o RGB progressivo.
+-   Sottostream: YUV progressivo con alfa per pixel, ad esempio AYUV o AI44.
 
-I formati dei sottoflussi disponibili possono dipendere dal formato del flusso di riferimento.
+I formati di flusso secondari disponibili possono dipendere dal formato del flusso di riferimento.
 
-EVR trasmette i comandi Seek upstream tramite il pin 0. I pin dei sottoflussi non eseguono i comandi Seek. È responsabilità del filtro di origine o di barra di divisione mantenerli sincronizzati con il flusso di riferimento.
+L'EVR inoltra i comandi di ricerca a monte tramite il pin 0. I pin del flusso secondario non inoltrano i comandi di ricerca. È responsabilità del filtro di origine o della barra di divisione mantenere sincronizzati i flussi secondari con il flusso di riferimento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -135,8 +135,8 @@ EVR trasmette i comandi Seek upstream tramite il pin 0. I pin dei sottoflussi no
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -144,6 +144,6 @@ EVR trasmette i comandi Seek upstream tramite il pin 0. I pin dei sottoflussi no
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 

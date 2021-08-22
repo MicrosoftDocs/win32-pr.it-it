@@ -1,5 +1,5 @@
 ---
-description: Il Windows codificatore di schermo Media Video 9 è ottimizzato per la codifica di schermate sequenziali dai monitor del computer.
+description: Il Windows dello schermo di Media Video 9 è ottimizzato per la codifica di schermate sequenziali dai monitor del computer.
 ms.assetid: 22faebf8-40c0-47f9-b66b-c0a8b5ba7202
 title: Windows Codificatore di schermo Media Video 9 (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "119713141"
 ---
 # <a name="windows-media-video-9-screen-encoder"></a>Windows Codificatore di schermo Media Video 9
 
-Il Windows codificatore di schermo Media Video 9 è ottimizzato per la codifica di schermate sequenziali dai monitor del computer.
+Il Windows dello schermo di Media Video 9 è ottimizzato per la codifica di schermate sequenziali dai monitor del computer.
 
 ## <a name="class-identifier"></a>Identificatore di classe
 
-L'identificatore di classe (CLSID) per il codificatore di schermo Windows Media Video 9 è rappresentato dalla costante **CLSID \_ CMSSCEncMediaObject2.** È possibile creare un'istanza del codificatore chiamando **CoCreateInstance.**
+L'identificatore di classe (CLSID) per il codificatore di schermo Windows Media Video 9 è rappresentato dalla costante **CLSID \_ CMSSCEncMediaObject2**. È possibile creare un'istanza del codificatore chiamando **CoCreateInstance**.
 
 ## <a name="input-types"></a>Tipi di input
 
@@ -30,7 +30,7 @@ I tipi di input seguenti sono supportati dal codificatore dello schermo versione
 -   MEDIASUBTYPE \_ RGB555
 -   MEDIASUBTYPE \_ RGB8
 
-I tipi di input seguenti sono supportati dal codificatore dello schermo versione 9 quando viene usato come Media Foundation transform (MFT).
+I tipi di input seguenti sono supportati dal codificatore dello schermo versione 9 quando viene usato come Media Foundation Transform (MFT).
 
 -   MFVideoFormat \_ RGB24
 -   MFVideoFormat \_ RGB32
@@ -41,15 +41,15 @@ I tipi di input seguenti sono supportati dal codificatore dello schermo versione
 
 ## <a name="output-types"></a>Tipi di output
 
-Il codice di quattro caratteri (FOURCC) per il contenuto Windows Media Video Screen Version 9 è "MSS2".
+Il codice a quattro caratteri (FOURCC) per Windows contenuto codificato di Media Video Screen versione 9 è "MSS2".
 
-I tipi di output seguenti sono supportati dal codificatore di schermo versione 9.
+I tipi di output seguenti sono supportati dal codificatore dello schermo versione 9.
 
 -   MEDIASUBTYPE \_ MSS2
 
 ## <a name="encoder-properties"></a>Proprietà del codificatore
 
-Il Windows codificatore di schermo Media Video 9 supporta le proprietà seguenti.
+Il Windows dello schermo di Media Video 9 supporta le proprietà seguenti.
 
 
 
@@ -63,19 +63,19 @@ Il Windows codificatore di schermo Media Video 9 supporta le proprietà seguenti
 <tbody>
 <tr class="odd">
 <td><a href="mfpkey-asfoverheadperframeproperty.md">MFPKEY_ASFOVERHEADPERFRAME</a></td>
-<td>Specifica l'overhead, in byte per pacchetto, necessario per il contenitore utilizzato per archiviare il contenuto compresso.<br/> <dl> Windows XP e versioni successive.<br />
+<td>Specifica il sovraccarico, in byte per pacchetto, necessario per il contenitore utilizzato per archiviare il contenuto compresso.<br/> <dl> Windows XP e versioni successive.<br />
 Sola scrittura.<br />
 </dl></td>
 </tr>
 <tr class="even">
 <td><a href="mfpkey-bavgproperty.md">MFPKEY_BAVG</a></td>
-<td>Specifica la finestra del buffer, in millisecondi, di un flusso vbr (Variable-Bit Rate) vincolato alla velocità in bit media (specificata <a href="mfpkey-ravgproperty.md">da MFPKEY_RAVG</a>).<br/> <dl> Windows XP e versioni successive.<br />
+<td>Specifica la finestra del buffer, in millisecondi, di un flusso a velocità in bit variabile vincolata (VBR) alla velocità in bit media (specificata <a href="mfpkey-ravgproperty.md">da MFPKEY_RAVG</a>).<br/> <dl> Windows XP e versioni successive.<br />
 Proprietà di lettura/scrittura.<br />
 </dl></td>
 </tr>
 <tr class="odd">
 <td><a href="mfpkey-bmaxproperty.md">MFPKEY_BMAX</a></td>
-<td>Specifica la finestra del buffer, in millisecondi, di un flusso vbr (Variable-Bit Rate) vincolato alla velocità in bit massima (specificata <a href="mfpkey-rmaxproperty.md">da MFPKEY_RMAX</a>).<br/> <dl> Windows XP e versioni successive.<br />
+<td>Specifica la finestra del buffer, in millisecondi, di un flusso a velocità in bit variabile vincolata (VBR) alla velocità in bit massima (specificata <a href="mfpkey-rmaxproperty.md">da MFPKEY_RMAX</a>).<br/> <dl> Windows XP e versioni successive.<br />
 Proprietà di lettura/scrittura.<br />
 </dl></td>
 </tr>
@@ -109,7 +109,7 @@ Sola scrittura.<br />
 </tr>
 <tr class="odd">
 <td><a href="mfpkey-crispproperty.md">MFPKEY_CRISP</a></td>
-<td>Specifica una rappresentazione numerica del compromesso tra uniformità del movimento e qualità dell'immagine nell'output del codec.<br/> <dl> Windows XP e versioni successive.<br />
+<td>Specifica una rappresentazione numerica del compromesso tra l'uniformità del movimento e la qualità dell'immagine nell'output del codec.<br/> <dl> Windows XP e versioni successive.<br />
 Sola scrittura.<br />
 </dl></td>
 </tr>
@@ -155,7 +155,7 @@ Proprietà di lettura/scrittura.<br />
 </tr>
 <tr class="odd">
 <td><a href="mfpkey-qpperframeproperty.md">MFPKEY_QPPERFRAME</a></td>
-<td>Specifica QP. I valori possibili sono da 1,0 a 31,0.<br/> <dl> Windows Vista e versioni successive.<br />
+<td>Specifica QP. I valori possibili sono da 1.0 a 31.0.<br/> <dl> Windows Vista e versioni successive.<br />
 Sola scrittura.<br />
 </dl></td>
 </tr>
@@ -191,7 +191,7 @@ Sola scrittura.<br />
 </tr>
 <tr class="odd">
 <td><a href="mfpkey-videowindowproperty.md">MFPKEY_VIDEOWINDOW</a></td>
-<td>Quantità di contenuto, in millisecondi, che può essere inserito nel buffer del modello.<br/> <dl> Windows XP e versioni successive,<br />
+<td>Quantità di contenuto, in millisecondi, che può rientrare nel buffer del modello.<br/> <dl> Windows XP e versioni successive,<br />
 Sola scrittura.<br />
 </dl></td>
 </tr>
@@ -210,16 +210,16 @@ Di sola lettura.<br />
 
 ## <a name="remarks"></a>Commenti
 
-Un oggetto codificatore di schermo espone l'interfaccia **IMediaObject** in modo che l'oggetto possa essere usato come oggetto directx media (DMO) ed espone **l'interfaccia IMFTransform** in modo che l'oggetto possa essere usato come trasformazione Media Foundation (MFT).
+Un oggetto codificatore di schermo espone l'interfaccia **IMediaObject** in modo che l'oggetto possa essere usato come directx media object (DMO) e espone **l'interfaccia IMFTransform** in modo che l'oggetto possa essere usato come trasformazione Media Foundation (MFT).
 
-Un codificatore di schermo si comporta come DMO o MFT a seconda delle interfacce che si ottengono e della versione Windows in esecuzione. La tabella seguente illustra le condizioni in cui un codificatore di schermo si comporta come DMO o MFT.
+Un codificatore di schermo si comporta come DMO o MFT a seconda delle interfacce che si ottengono e della versione di Windows in esecuzione. La tabella seguente illustra le condizioni in cui un codificatore di schermo si comporta come DMO o MFT.
 
 
 
 | Sistema operativo            | Comportamento del codificatore                                                                                                                                    |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Un Windows Media Screen si comporta sempre come DMO.                                                                                             |
-| Windows Vista e Windows 7 | Per impostazione predefinita, un codificatore Windows Media Screen si comporta come DMO. Se si ottiene **un'interfaccia IMFTransform** in un codificatore di schermo, si comporta come un MFT. |
+| Windows XP                  | Un codificatore dello schermo di Windows Media si comporta sempre come DMO.                                                                                             |
+| Windows Vista e Windows 7 | Per impostazione predefinita, un codificatore dello schermo di Windows Media si comporta come DMO. Se si ottiene **un'interfaccia IMFTransform** in un codificatore di schermo, si comporta come un MFT. |
 
 
 
@@ -247,10 +247,10 @@ Un codificatore di schermo si comporta come DMO o MFT a seconda delle interfacce
 [Implementazione di codec](codecimplementation.md)
 </dt> <dt>
 
-[Uso del codec Windows video multimediale 9](usingthewindowsmediavideo9screencodec.md)
+[Uso del codec Windows Media Video 9 schermo](usingthewindowsmediavideo9screencodec.md)
 </dt> <dt>
 
-[Windows Decodificatore schermo Media Video 9](windowsmediavideo9screendecoder.md)
+[Windows Media Video decodificatore schermo 9](windowsmediavideo9screendecoder.md)
 </dt> </dl>
 
  

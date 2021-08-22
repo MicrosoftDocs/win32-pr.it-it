@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. setSelectedState
+title: LISTBOX.setSelectedState
 description: Il metodo setSelectedState seleziona o deseleziona l'elemento con l'indice specificato.
 ms.assetid: a72aa461-f378-4612-b580-ecad735931cb
 keywords:
-- Media Player di Windows LISTBOX. setSelectedState
+- LISTBOX.setSelectedState Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 95ca3b5a1b81224d99aace1cefb9da0d616eedc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c03702df06aa6faf885ec0d4bda01651f4e6ab2d8163047f0756ef5806b108ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616910"
 ---
-# <a name="listboxsetselectedstate"></a>LISTBOX. setSelectedState
+# <a name="listboxsetselectedstate"></a>LISTBOX.setSelectedState
 
-Il metodo **setSelectedState** seleziona o deseleziona l'elemento con l'indice specificato.
+Il **metodo setSelectedState** seleziona o deseleziona l'elemento con l'indice specificato.
 
 ``` syntax
         elementID.setSelectedState(index, selected)
@@ -35,14 +35,14 @@ Il metodo **setSelectedState** seleziona o deseleziona l'elemento con l'indice s
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice dell'elemento da selezionare o deselezionare.
+**Numero** (**long**) contenente l'indice dell'elemento da selezionare o deselezionare.
 
 </dd> <dt>
 
-<span id="selected"></span><span id="SELECTED"></span>*selezionato*
+<span id="selected"></span><span id="SELECTED"></span>*Selezionato*
 </dt> <dd>
 
-Valore **booleano** che indica se l'elemento deve essere selezionato (true) o deselezionato (false).
+**Valore** booleano che indica se l'elemento deve essere selezionato (true) o deselezionato (false).
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Consente di selezionare o deselezionare più righe.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -68,7 +68,7 @@ Consente di selezionare o deselezionare più righe.
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

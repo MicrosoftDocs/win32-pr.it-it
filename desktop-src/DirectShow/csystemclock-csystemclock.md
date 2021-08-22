@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 11ba7449b086f84dc2caff19da922c03f9c7103b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a60ff54d6c1215127b0f2f0655321368fd24c18b1731cdbc6f55debbd4442d78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687321"
 ---
 # <a name="csystemclockcsystemclock-constructor"></a>Costruttore CSystemClock.CSystemClock
 
@@ -47,7 +47,7 @@ CSystemClock(
 *Pname* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
+Stringa contenente il nome di debug dell'oggetto . Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Puntatore al **valore HRESULT.** Se si verifica un errore, il metodo restituisce
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Sysclock.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Sysclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

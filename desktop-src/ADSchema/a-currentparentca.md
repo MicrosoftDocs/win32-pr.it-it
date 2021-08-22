@@ -1,5 +1,5 @@
 ---
-title: Current-Parent-CA-attributo
+title: Attributo Current-Parent-CA
 description: Riferimento alle autorità di certificazione che hanno emesso i certificati correnti per un'autorità di certificazione.
 ms.assetid: 9b851a7f-4a69-46f2-b7e2-6ee0b2d8eec1
 ms.tgt_platform: multiple
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b26be2ccda41d998ed2b2b2c5dcddb1fcd2dcb2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: afead405b98047dfc0cd6182b9a5af288f0a4df298ebf35697b7459df0cd2378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706711"
 ---
-# <a name="current-parent-ca-attribute"></a>Current-Parent-CA-attributo
+# <a name="current-parent-ca-attribute"></a>Attributo Current-Parent-CA
 
 Riferimento alle autorità di certificazione che hanno emesso i certificati correnti per un'autorità di certificazione.
 
@@ -30,12 +30,12 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Current-Parent-CA                       |
-| LDAP-Display-Name | currentParentCA                         |
+| Ldap-Display-Name | currentParentCA                         |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.696                  |
-| System-ID-GUID    | 963d273f-48be-11d1-a9c3-0000f80367c1    |
+| System-Id-Guid    | 963d273f-48be-11d1-a9c3-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento alle autorità di certificazione che hanno emesso i certificati corr
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| Is-Single-Valued       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

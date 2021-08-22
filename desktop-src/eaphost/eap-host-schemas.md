@@ -1,28 +1,28 @@
 ---
-title: Esempi di schemi EAPHost e Legacy
-description: Vengono usati quando si scrivono applicazioni che chiamano o implementano elementi API EAPHost.
+title: Esempi di schema EAPHost e legacy
+description: Vengono usati per la scrittura di applicazioni che chiamano o implementano elementi DELL'API EAPHost.
 ms.assetid: d65c4433-489c-473d-8f03-c753bace2806
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f9ee85b06605efbba601715df3a8c86c502487
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 9a92cd33d2db96064684401aaad333a6d11cddf38e311bad9ca6f8c3787fbe38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104046140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561891"
 ---
-# <a name="eaphost-and-legacy-schema-samples"></a>Esempi di schemi EAPHost e Legacy
+# <a name="eaphost-and-legacy-schema-samples"></a>Esempi di schema EAPHost e legacy
 
-XML Schema vengono utilizzati per la scrittura di applicazioni che chiamano o implementano elementi API EAPHost.
+Xml Schema viene usato per la scrittura di applicazioni che chiamano o implementano elementi API EAPHost.
 
-Qui sono disponibili due diversi gruppi di esempi di schema.
+Esistono due diversi gruppi di esempi di schema disponibili qui.
 
--   [Proprietà di connessione](connection-profiles.md)
+-   [Proprietà connessione](connection-profiles.md)
 -   [Proprietà utente](user-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

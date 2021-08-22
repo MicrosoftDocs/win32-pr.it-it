@@ -1,45 +1,45 @@
 ---
-title: Uso delle playlist automatiche per organizzare il contenuto nella libreria
-description: Uso delle playlist automatiche per organizzare il contenuto nella libreria
+title: Uso delle playlist auto per organizzare il contenuto nella raccolta
+description: Uso delle playlist auto per organizzare il contenuto nella raccolta
 ms.assetid: 118d4357-044f-4986-af51-0c344470e891
 keywords:
-- Windows Media Player Online Stores, playlist automatiche
-- archivi online, playlist automatiche
-- digitare 1 archivi online, playlist automatiche
-- digitare 2 archivi online, playlist automatiche
-- Windows Media Player Online Store, organizzazione del contenuto della libreria
-- negozi online, organizzazione del contenuto della libreria
-- digitare 1 negozi online, organizzare il contenuto della libreria
-- digitare 2 archivi online, organizzare il contenuto della libreria
-- Windows Media Player Online Stores, organizzazione contenuto libreria
-- negozi online, organizzazione del contenuto della libreria
-- digitare 1 negozi online, organizzazione del contenuto della libreria
-- digitare 2 negozi online, organizzazione del contenuto della libreria
+- Windows Media Player store online, playlist auto
+- online store, playlist auto
+- type 1 online stores,auto playlists
+- type 2 online stores,auto playlists
+- Windows Media Player online, organizzazione del contenuto della raccolta
+- negozi online, organizzazione del contenuto della raccolta
+- tipo 1 negozi online, organizzazione del contenuto della raccolta
+- store online di tipo 2, organizzazione del contenuto della raccolta
+- Windows Media Player online, organizzazione del contenuto della raccolta
+- negozi online, organizzazione del contenuto della raccolta
+- tipo 1 negozi online, organizzazione del contenuto della raccolta
+- store online di tipo 2, organizzazione del contenuto della raccolta
 - libreria, organizzazione del contenuto
-- organizzazione del contenuto della libreria
-- playlist automatiche
+- organizzazione del contenuto della raccolta
+- playlist auto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa53a4b9f56a8aa6425f137ef4a8c43bd8ed1454
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0e32d0f95093d9550c71643330267d59a57f56db7e0d666274a492ac29b2c58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507171"
 ---
-# <a name="using-auto-playlists-to-organize-content-in-the-library"></a>Uso delle playlist automatiche per organizzare il contenuto nella libreria
+# <a name="using-auto-playlists-to-organize-content-in-the-library"></a>Uso delle playlist auto per organizzare il contenuto nella raccolta
 
-È possibile usare playlist automatiche per organizzare il contenuto Premium fornito. Ad esempio, è possibile usare Windows Media Player per creare una playlist automatica che contiene solo il contenuto fornito con una classificazione utente di almeno quattro stelle. È quindi possibile aggiungere la playlist automatica alla libreria in Windows Media Player in modo che venga visualizzata nel nodo musica acquistato nel nodo del server di distribuzione del contenuto.
+È possibile usare le playlist auto per organizzare il contenuto Premium fornito. Ad esempio, è possibile usare Windows Media Player per creare una playlist automatica che contenga solo il contenuto fornito con una classificazione utente di almeno quattro stelle. È quindi possibile aggiungere la playlist automatica alla libreria in Windows Media Player in modo che sia visualizzata nel nodo Purchased Musica nel nodo del server di distribuzione del contenuto.
 
 A questo scopo, seguire questa procedura:
 
 1.  Creare la playlist automatica.
-2.  Utilizzando Esplora risorse, passare alla playlist automatica e recuperare il file con estensione WPL.
-3.  Usando il modello a oggetti di Windows Media Player, aggiungere la playlist automatica alla libreria.
-4.  Impostare l'attributo **WM/contentdistributor** per la playlist sul nome della chiave del server di distribuzione del contenuto.
-5.  Impostare l'attributo **SyncOnly** per la playlist su true.
+2.  Usando Windows Explorer, passare alla playlist automatica e recuperare il file con estensione wpl.
+3.  Usando il Windows Media Player a oggetti, aggiungere la playlist automatica alla libreria.
+4.  Impostare **l'attributo WM/ContentDistributor** per la playlist sul nome della chiave del distributore di contenuti.
+5.  Impostare **l'attributo SyncOnly** per la playlist su true.
 
-Il codice di esempio JScript seguente mostra una funzione che aggiunge una playlist automatica denominata "hit preferiti" al nodo Proseware nella libreria:
+L'JScript di esempio seguente mostra una funzione che aggiunge una playlist automatica denominata "Favorite Hits" al nodo Proseware nella libreria:
 
 
 ```C++
@@ -57,19 +57,19 @@ function AddWPL()
 
 <dl> <dt>
 
-[Informazioni sull'integrazione della libreria](download-manager-overview.md)
+[Informazioni sull'integrazione delle librerie](download-manager-overview.md)
 </dt> <dt>
 
 [**Informazioni comuni ai negozi online di tipo 1 e di tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
-[**Mediacollection. Add**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Playlist. setItemInfo**](playlist-setiteminfo.md)
+[**Playlist.setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Playlist statiche e automatiche**](static-and-auto-playlists.md)
+[**Playlist statiche e auto**](static-and-auto-playlists.md)
 </dt> <dt>
 
 [**Attributo SyncOnly**](synconly-attribute.md)
@@ -78,12 +78,12 @@ function AddWPL()
 [**Attributo WM/ContentDistributor**](wm-contentdistributor-attribute.md)
 </dt> <dt>
 
-[**Utilizzo della libreria**](working-with-the-library.md)
+[**Uso della libreria**](working-with-the-library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

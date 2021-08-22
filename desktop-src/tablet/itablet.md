@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una tablet collegata al computer.
+description: Rappresenta un tablet collegato al computer.
 ms.assetid: 31e11f7d-5610-4c49-9203-2dc322fbef95
 title: Interfaccia ITablet
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119712251"
 ---
 # <a name="itablet-interface"></a>Interfaccia ITablet
 
-Rappresenta una tablet collegata al computer.
+Rappresenta un tablet collegato al computer.
 
 ## <a name="members"></a>Membri
 
@@ -39,12 +39,12 @@ Rappresenta una tablet collegata al computer.
 
 | Metodo                                                                 | Descrizione                                                                           |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
-| [**CreateContext**](itablet-createcontext.md)                         | Crea un oggetto contesto che descrive la periferica tablet specificata.<br/>       |
-| [**GetCursor**](/previous-versions/windows/desktop/legacy/aa373535(v=vs.85))                                 | Recupera l'oggetto [**ITabletCursor**](itabletcursor.md) specificato.<br/>     |
-| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera il numero di oggetti cursore associati alla tablet.<br/>         |
+| [**CreateContext**](itablet-createcontext.md)                         | Crea un oggetto contesto che descrive il dispositivo tablet specificato.<br/>       |
+| [**GetCursor**](/previous-versions/windows/desktop/legacy/aa373535(v=vs.85))                                 | Recupera [**l'oggetto ITabletCursor**](itabletcursor.md) specificato.<br/>     |
+| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera il numero di oggetti cursore associati al tablet.<br/>         |
 | [**GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md) | Recupera le impostazioni di contesto predefinite per il tablet.<br/>                     |
 | [**GetHardwareCaps**](itablet-gethardwarecaps.md)                     | Recupera un valore che rappresenta le funzionalità dell'hardware del tablet.<br/> |
-| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera un rettangolo che rappresenta l'area di input massima della tablet.<br/>    |
+| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera un rettangolo che rappresenta l'area di input massima del tablet.<br/>    |
 | [**GetName**](itablet-getname.md)                                     | Recupera una stringa contenente il nome del dispositivo tablet.<br/>               |
 | [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera una stringa contenente l'ID Plug and Play per il dispositivo tablet.<br/>  |
 | [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera i dati delle metriche per una proprietà specificata.<br/>                       |
@@ -57,7 +57,7 @@ Rappresenta una tablet collegata al computer.
 
 Gli sviluppatori non devono usare questa interfaccia.
 
-Nel codice seguente viene descritto come viene **definita l'interfaccia ITablet.**
+Il codice seguente descrive come viene definita **l'interfaccia ITablet.**
 
 ``` syntax
 [
@@ -112,7 +112,7 @@ interface ITablet : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

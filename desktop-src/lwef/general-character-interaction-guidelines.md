@@ -1,29 +1,29 @@
 ---
-title: Linee guida sull'interazione carattere generale
-description: Linee guida sull'interazione carattere generale
+title: Linee guida generali per l'interazione tra caratteri
+description: Linee guida generali per l'interazione tra caratteri
 ms.assetid: 3d317156-f085-4f1b-aafb-a89cb8bd3a65
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f7b3fae86edc6df39989eff473441bd6969e736
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e6c44963b2c8ed491afa472c06a5499e0ae347079f2965633f29a219857dbe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610191"
 ---
-# <a name="general-character-interaction-guidelines"></a>Linee guida sull'interazione carattere generale
+# <a name="general-character-interaction-guidelines"></a>Linee guida generali per l'interazione tra caratteri
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-I principi della progettazione di un'interfaccia utente valida sono validi anche per la progettazione di un'interfaccia tramite Microsoft Agent. È necessario comprendere gli utenti e i rispettivi obiettivi, oltre a seguire un buon processo di progettazione dell'interfaccia utente. Le linee guida per l'interfaccia di Windows per la progettazione del software forniscono una panoramica eccellente dei principi di progettazione e della metodologia generali.
+I principi di una buona progettazione dell'interfaccia utente si applicano anche alla progettazione di un'interfaccia tramite Microsoft Agent. È necessario comprendere gli utenti e i relativi obiettivi, nonché seguire un buon processo di progettazione dell'interfaccia utente. Le linee guida Windows'interfaccia utente per la progettazione del software forniscono un'eccellente panoramica dei principi di progettazione e della metodologia generali.
 
--   [Non essere esclusivo](be-non-exclusive.md)
+-   [Non esclusivo](be-non-exclusive.md)
 -   [Fornire commenti e suggerimenti appropriati](provide-appropriate-feedback.md)
--   [USA variazione naturale](use-natural-variation.md)
+-   [Usare la variazione naturale](use-natural-variation.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Gruppo di metodi utilizzato per modificare i blocchi.
 ms.assetid: ba4cc37c-bd2f-446f-8b3d-bc2a2e2e4de4
-title: Metodi CShareLockNH
+title: Metodi di CShareLockNH
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b16a979c5d1f111c92a64376c48f4c0ed1a165ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 97234d65a3be75ffc1eb679db31360aa6ce6c416d879c67c0ffc5385e10bdb49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654651"
 ---
-# <a name="csharelocknh-methods"></a>Metodi CShareLockNH
+# <a name="csharelocknh-methods"></a>Metodi di CShareLockNH
 
 Gruppo di metodi utilizzato per modificare i blocchi.
 
@@ -23,11 +23,11 @@ Di seguito sono riportati i metodi esportati da Rwnh.dll.
 
 | Metodo                                                                   | Descrizione                                                     |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [**ExclusiveLock**](csharelocknh--exclusivelock.md)                     | Acquisisce un blocco in lettura/scrittura.                                  |
+| [**ExclusiveLock**](csharelocknh--exclusivelock.md)                     | Acquisisce un blocco di lettura/scrittura.                                  |
 | [**ExclusiveToPartial**](csharelocknh--exclusivetopartial.md)           | Modifica lo stato.                                              |
 | [**ExclusiveUnlock**](csharelocknh--exclusiveunlock.md)                 | Rilascia un blocco.                                                |
-| [**FirstPartialToExclusive**](csharelocknh--firstpartialtoexclusive.md) | Utilizzato per la conversione di un blocco parziale in un blocco esclusivo.         |
-| [**PartialLock**](csharelocknh--partiallock.md)                         | Impedisce a più di un thread di completare l'acquisizione di un blocco. |
+| [**FirstPartialToExclusive**](csharelocknh--firstpartialtoexclusive.md) | Utilizzato nella conversione di un blocco parziale in un blocco esclusivo.         |
+| [**PartialLock**](csharelocknh--partiallock.md)                         | Impedisce a più thread di completare l'acquisizione di un blocco. |
 | [**PartialUnlock**](csharelocknh--partialunlock.md)                     | Rilascia un blocco parziale.                                        |
 | [**ShareLock**](csharelocknh--sharelock.md)                             | Ottiene un blocco per la modalità condivisa.                                 |
 | [**ShareUnlock**](csharelocknh--shareunlock.md)                         | Rilascia un blocco dalla modalità condivisa.                               |

@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. deleteItem
-description: Il metodo deleteItem Elimina l'elemento di controllo della casella di riepilogo in corrispondenza dell'indice specificato.
+title: LISTBOX.deleteItem
+description: Il metodo deleteItem elimina l'elemento del controllo casella di riepilogo in corrispondenza dell'indice specificato.
 ms.assetid: b7ed38b7-8495-426f-b799-e62cd149b397
 keywords:
-- Media Player di Windows LISTBOX. deleteItem
+- ListBOX.deleteItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 45f4df09c608500e9a618b310b6296febaf073c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: caa0a8aa74536692f188df4117a41c69af8ead4c510f315125ac0100e690fb1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054779"
 ---
-# <a name="listboxdeleteitem"></a>LISTBOX. deleteItem
+# <a name="listboxdeleteitem"></a>LISTBOX.deleteItem
 
-Il metodo **deleteItem** Elimina l'elemento di controllo della casella di riepilogo in corrispondenza dell'indice specificato.
+Il **metodo deleteItem** elimina l'elemento del controllo casella di riepilogo in corrispondenza dell'indice specificato.
 
 ``` syntax
         elementID.deleteItem(index)
@@ -35,7 +35,7 @@ Il metodo **deleteItem** Elimina l'elemento di controllo della casella di riepil
 <span id="index"></span><span id="INDEX"></span>*Indice*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice dell'elemento da eliminare.
+**Numero** (**long**) contenente l'indice dell'elemento da eliminare.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Le righe sotto la riga eliminata verranno spostate verso l'alto di un valore di 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -61,7 +61,7 @@ Le righe sotto la riga eliminata verranno spostate verso l'alto di un valore di 
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

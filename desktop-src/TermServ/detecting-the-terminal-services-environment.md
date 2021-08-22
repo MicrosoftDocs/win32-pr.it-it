@@ -1,22 +1,22 @@
 ---
-title: Rilevamento dell'ambiente Servizi Desktop remoto
-description: Per ottimizzare le prestazioni, è consigliabile che le applicazioni rilevino se sono in esecuzione in una sessione client Servizi Desktop remoto.
+title: Rilevamento dell'Servizi Desktop remoto virtuale
+description: Per ottimizzare le prestazioni, è consigliabile che le applicazioni rilevino se sono in esecuzione in una Servizi Desktop remoto client.
 ms.assetid: 9ba03801-8471-43a9-8e24-114a082d5776
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fde3263925a3b8bf4921dd0dfc95842a5dc5b4c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f54634112b4a6ac3cc1e981421e4a3e33af5e32bae8ab63ec8690f2df12c7a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657991"
 ---
-# <a name="detecting-the-remote-desktop-services-environment"></a>Rilevamento dell'ambiente Servizi Desktop remoto
+# <a name="detecting-the-remote-desktop-services-environment"></a>Rilevamento dell'Servizi Desktop remoto virtuale
 
-Per ottimizzare le prestazioni, è consigliabile che le applicazioni rilevino se sono in esecuzione in una sessione client Servizi Desktop remoto. Ad esempio, quando un'applicazione è in esecuzione in una sessione remota, deve eliminare gli effetti grafici non necessari, come descritto in [effetti grafici](graphic-effects.md). Se l'utente esegue l'applicazione in un ambiente locale, non è cruciale per l'applicazione ottimizzare il comportamento.
+Per ottimizzare le prestazioni, è consigliabile che le applicazioni rilevino se sono in esecuzione in una Servizi Desktop remoto client. Ad esempio, quando un'applicazione è in esecuzione in una sessione remota, deve eliminare gli effetti grafici non necessari, come descritto in [Effetti grafici.](graphic-effects.md) Se l'utente esegue l'applicazione in un ambiente locale, non è essenziale per l'applicazione ottimizzarne il comportamento.
 
-Nell'esempio seguente viene illustrata una funzione che restituisce **true** se l'applicazione è in esecuzione in una sessione remota e **false** se l'applicazione è in esecuzione nella console di.
+Nell'esempio seguente viene illustrata una funzione che restituisce **TRUE** se l'applicazione è in esecuzione in una sessione remota e **FALSE se** l'applicazione è in esecuzione nella console.
 
 
 ```C++
@@ -31,15 +31,15 @@ BOOL IsRemoteSession(void)
 
 
 
-Per ulteriori informazioni, vedere il [collegamento di run-time a Wtsapi32.dll](run-time-linking-to-wtsapi32-dll.md).
+Per altre informazioni, vedere [Collegamento in fase di esecuzione Wtsapi32.dll](run-time-linking-to-wtsapi32-dll.md).
 
-Non usare **GetSystemMetrics (SM \_ REMOTESESSION)** per determinare se l'applicazione è in esecuzione in una sessione remota in Windows 8 e versioni successive o Windows Server 2012 e versioni successive se la sessione remota può anche usare i miglioramenti RemoteFX VGPU per il protocollo RDP (Remote Display Protocol) di Microsoft. In questo caso, **GetSystemMetrics (SM \_ REMOTESESSION)** identificherà la sessione remota come una sessione locale.
+Non usare **GetSystemMetrics(SM \_ REMOTESESSION)** per determinare se l'applicazione è in esecuzione in una sessione remota in Windows 8 e versioni successive o Windows Server 2012 e versioni successive se la sessione remota potrebbe anche usare i miglioramenti della vGPU di RemoteFX per Microsoft Remote Display Protocol (RDP). In questo caso, **GetSystemMetrics(SM \_ REMOTESESSION)** identificherà la sessione remota come sessione locale.
 
-L'applicazione può controllare la seguente chiave del registro di sistema per determinare se la sessione è una sessione remota che usa RemoteFX vGPU. Se è presente una sessione locale, questa chiave del registro di sistema fornisce l'ID della sessione locale.
+L'applicazione può controllare la chiave del Registro di sistema seguente per determinare se la sessione è una sessione remota che usa RemoteFX vGPU. Se esiste una sessione locale, questa chiave del Registro di sistema fornisce l'ID della sessione locale.
 
-**HKEY \_ Local \_ computer \\ System \\ CurrentControlSet \\ Control \\ Terminal Server \\ GlassSessionId**
+**HKEY \_ LOCAL \_ MACHINE \\ System \\ CurrentControlSet \\ Control \\ Terminal Server \\ GlassSessionId**
 
-Se l'ID della sessione corrente in cui è in esecuzione l'applicazione è identico a quello della chiave del registro di sistema, l'applicazione è in esecuzione in una sessione locale. Le sessioni identificate come sessione remota in questo modo includono sessioni remote che usano RemoteFX vGPU. Nel codice di esempio seguente viene illustrata questa operazione.
+Se l'ID della sessione corrente in cui è in esecuzione l'applicazione è lo stesso della chiave del Registro di sistema, l'applicazione viene eseguita in una sessione locale. Le sessioni identificate come sessione remota in questo modo includono sessioni remote che usano RemoteFX vGPU. Nel codice di esempio seguente viene illustrata questa operazione.
 
 
 ```C++
@@ -106,9 +106,9 @@ IsCurrentSessionRemoteable()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

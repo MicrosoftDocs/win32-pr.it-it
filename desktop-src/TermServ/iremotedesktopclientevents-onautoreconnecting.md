@@ -4,9 +4,9 @@ description: Chiamato quando il controllo client tenta di ristabilire automatica
 ms.assetid: 299408A9-ED14-42F4-B324-AF4C86FEDABE
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnAutoReconnecting
-- Metodo OnAutoReconnecting Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnAutoReconnecting
+- Metodo OnAutoReconnecting Servizi Desktop remoto
+- Metodo OnAutoReconnecting Servizi Desktop remoto , interfaccia IRemoteDesktopClientEvents
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnAutoReconnecting
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d74c37919384727fdf51aad004349478798a3ffd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7246b8822b3d3abed5d483f52c64eee88d67f99694bda44c5d8f72318cb2c04a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511731"
 ---
-# <a name="iremotedesktopclienteventsonautoreconnecting-method"></a>Metodo IRemoteDesktopClientEvents:: OnAutoReconnecting
+# <a name="iremotedesktopclienteventsonautoreconnecting-method"></a>Metodo IRemoteDesktopClientEvents::OnAutoReconnecting
 
 Chiamato quando il controllo client tenta di ristabilire automaticamente una connessione a una sessione remota.
 
@@ -48,42 +48,42 @@ void OnAutoReconnecting(
 
 <dl> <dt>
 
-*disconnectReason* \[ in\]
+*disconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Motivo dell'evento di disconnessione.
 
 </dd> <dt>
 
-*ExtendedDisconnectReason* \[ in\]
+*ExtendedDisconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Informazioni estese per l'evento di disconnessione.
 
 </dd> <dt>
 
-*disconnectErrorMessage* \[ in\]
+*disconnectErrorMessage* \[ Pollici\]
 </dt> <dd>
 
 Messaggio di errore per l'evento di disconnessione.
 
 </dd> <dt>
 
-*NetworkAvailable* \[ in\]
+*networkAvailable* \[ Pollici\]
 </dt> <dd>
 
 Indica se la rete è disponibile.
 
 </dd> <dt>
 
-*attemptCount* \[ in\]
+*attemptCount* \[ Pollici\]
 </dt> <dd>
 
-Il tentativo è.
+Quale tentativo è.
 
 </dd> <dt>
 
-*maxAttemptCount* \[ in\]
+*maxAttemptCount* \[ Pollici\]
 </dt> <dd>
 
 Verrà eseguito il numero massimo di tentativi di riconnessione.

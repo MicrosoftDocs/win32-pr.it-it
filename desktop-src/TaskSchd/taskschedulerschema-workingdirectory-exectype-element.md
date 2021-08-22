@@ -1,9 +1,9 @@
 ---
 title: Elemento WorkingDirectory (execType)
-description: Specifica la directory in cui si trova il file eseguibile o i file utilizzati dall'eseguibile.
+description: Specifica la directory in cui si trova il file eseguibile o i file utilizzati dal file eseguibile.
 ms.assetid: 09e53748-6d21-42df-bbdd-f0fd9693aab0
 keywords:
-- Utilità di pianificazione elemento WorkingDirectory
+- Elemento WorkingDirectory Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e8c382d0e60b16d85fbc86f7579a0e700d3dd30b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a91908d5cd774f19f32a182934688dc899179d1abba967b7871a646efcfe042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513741"
 ---
 # <a name="workingdirectory-exectype-element"></a>Elemento WorkingDirectory (execType)
 
-Specifica la directory in cui si trova il file eseguibile o i file utilizzati dall'eseguibile.
+Specifica la directory in cui si trova il file eseguibile o i file utilizzati dal file eseguibile.
 
 ``` syntax
 <xs:element name="WorkingDirectory"
@@ -30,7 +30,7 @@ Specifica la directory in cui si trova il file eseguibile o i file utilizzati da
  />
 ```
 
-L'elemento **WorkingDirectory** è definito dal tipo complesso [**execType**](taskschedulerschema-exectype-complextype.md) .
+**L'elemento WorkingDirectory** è definito dal [**tipo complesso execType.**](taskschedulerschema-exectype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,13 +44,13 @@ L'elemento **WorkingDirectory** è definito dal tipo complesso [**execType**](ta
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, la directory di lavoro viene specificata dalla proprietà [**ExecAction. WorkingDirectory**](execaction-workingdirectory.md) .
+Per lo sviluppo di script, la directory di lavoro viene specificata dalla [**proprietà ExecAction.WorkingDirectory.**](execaction-workingdirectory.md)
 
-Per lo sviluppo in C++, la directory di lavoro viene specificata dalla proprietà [**IExecAction:: WorkingDirectory**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_workingdirectory) .
+Per lo sviluppo in C++, la directory di lavoro viene specificata dalla [**proprietà IExecAction::WorkingDirectory.**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_workingdirectory)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un'azione di esecuzione.
+Nel codice XML seguente viene definita un'azione di esecuzione.
 
 
 ```XML
@@ -69,8 +69,8 @@ Il codice XML seguente definisce un'azione di esecuzione.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Il codice XML seguente definisce un'azione di esecuzione.
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

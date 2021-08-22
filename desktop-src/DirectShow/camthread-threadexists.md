@@ -1,7 +1,7 @@
 ---
 description: Il metodo ThreadExists esegue una query per determinare se il thread esiste.
 ms.assetid: 16be31c5-fae0-45d7-905d-4a2eef1ed819
-title: Metodo CAMThread. ThreadExists (Wxutil. h)
+title: Metodo CAMThread.ThreadExists (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32e727d8beb984a660c82ec0e1398b7f13eb4af3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fe0681cf444b8b0e1072a38e54bbce99fef96ad7aa4810cd3456283f9850768
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641141"
 ---
-# <a name="camthreadthreadexists-method"></a>CAMThread. ThreadExists, metodo
+# <a name="camthreadthreadexists-method"></a>Metodo CAMThread.ThreadExists
 
-Il `ThreadExists` metodo esegue una query per stabilire se il thread esiste.
+Il `ThreadExists` metodo esegue una query per determinare se il thread esiste.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il thread esiste oppure **false** se il thread non esiste.
+Restituisce **TRUE** se il thread esiste oppure **FALSE** se il thread non esiste.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il thread esiste oppure **false** se il thread non esist
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

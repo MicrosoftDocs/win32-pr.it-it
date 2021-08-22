@@ -5,26 +5,26 @@ ms.assetid: 7e9e25af-e3b9-40ba-a89d-50b3874e3e68
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ccb2ecc6d92a387107dc473bc7c7844c106da43
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e3ec37354fc65e498664f266b9ca7823b0c5ab739111fa09c728d6e329480a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676251"
 ---
 # <a name="adding-a-client"></a>Aggiunta di un client
 
-Il codice di Visual Basic seguente aggiunge un nuovo client RADIUS e imposta l'indirizzo e il segreto condiviso per il client.
+Il codice Visual Basic seguente aggiunge un nuovo client RADIUS e imposta l'indirizzo e il segreto condiviso per il client.
 
 > [!Note]  
-> È necessario aggiungere un riferimento COM al progetto Visual Basic per compilarlo correttamente. Un esempio della sequenza di comandi VB è simile al seguente: Add Reference-> COM-> "IAS SDO 1,0 Type Library". Questa operazione varia in base alla versione di VB.
+> È necessario aggiungere un riferimento COM al progetto Visual Basic per la corretta compilazione. Un esempio della sequenza VB comando è simile al seguente: Aggiungere il riferimento -> COM -> "Libreria dei tipi IAS SDO 1.0". Questo varia in base alla versione di VB.
 
- 
+ 
 
 > [!Note]  
 > Questo esempio non funziona come codice VBScript.
 
- 
+ 
 
 
 ```VB
@@ -175,13 +175,13 @@ End Class
 
 <dl> <dt>
 
-[**CLIENTPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
+[**PROPRIETÀ CLIENT**](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
 </dt> <dt>
 
 [Enumerazione di oggetti in una raccolta](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
 </dt> <dt>
 
-[**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
+[**PROPRIETÀ IAS**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> <dt>
 
 [**ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo)
@@ -190,9 +190,9 @@ End Class
 [**ISdoMachine**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
 </dt> <dt>
 
-[**RADIUSPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
+[**PROPRIETÀ RADIUS**](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

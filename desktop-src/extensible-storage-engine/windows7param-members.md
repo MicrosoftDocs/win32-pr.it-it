@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri di Windows7Param'
-title: Membri di Windows7Param (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Membri di Windows7Param'
+title: Membri Windows7Param (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7Param members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param_members(v=EXCHG.10)
 ms:contentKeyID: 55104286
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a0af5c50dd702bc97a6e228cf12429cae471fab3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d94a394eb5befffe46199dcc04a24b83c3a484fa8552a4ac5db40d1ba0d1d13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104551291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667431"
 ---
 # <a name="windows7param-members"></a>Membri di Windows7Param
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Parametri di sistema aggiunti alla versione di ESENT di Windows 7.
+Parametri di sistema aggiunti alla versione Windows 7 di ESENT.
 
-Il tipo [Windows7Param](./windows7param-class.md) espone i membri seguenti.
+Il [tipo Windows7Param](./windows7param-class.md) espone i membri seguenti.
 
 ## <a name="fields"></a>Campi
 
@@ -37,12 +37,12 @@ Il tipo [Windows7Param](./windows7param-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335314(v=exchg.10).md">DbScanIntervalMaxSec</a></td>
-<td>Intervallo massimo per consentire il completamento dell'analisi del database, in secondi.</td>
+<td>Intervallo massimo, in secondi, per consentire il completamento dell'analisi del database.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335431(v=exchg.10).md">DbScanIntervalMinSec</a></td>
-<td>Intervallo minimo per la ripetizione dell'analisi del database, in secondi.</td>
+<td>Intervallo minimo di ripetizione dell'analisi del database, espresso in secondi.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
@@ -57,32 +57,32 @@ Il tipo [Windows7Param](./windows7param-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335318(v=exchg.10).md">LVChunkSizeMost</a></td>
-<td>Questo parametro viene utilizzato per recuperare le dimensioni del blocco di dati di valore Long (BLOB). L'impostazione e il recupero dei dati in multipli di queste dimensioni aumentano l'efficienza.</td>
+<td>Questo parametro viene usato per recuperare le dimensioni del blocco dei dati a valore lungo (BLOB). L'impostazione e il recupero dei dati in multipli di queste dimensioni aumentano l'efficienza.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335433(v=exchg.10).md">MaxCoalesceReadGapSize</a></td>
-<td>Numero massimo di byte che possono essere gapped per un'operazione di i/o di lettura con Unione.</td>
+<td>Numero massimo di byte che è possibile trovare per un'operazione di I/O di lettura coalesced.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335435(v=exchg.10).md">MaxCoalesceReadSize</a></td>
-<td>Numero massimo di byte che è possibile raggruppare per un'operazione di lettura con Unione.</td>
+<td>Numero massimo di byte che possono essere raggruppati per un'operazione di lettura coalesced.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335322(v=exchg.10).md">MaxCoalesceWriteGapSize</a></td>
-<td>Numero massimo di byte che possono essere gapped per un'operazione di i/o di scrittura coalesta.</td>
+<td>Numero massimo di byte che è possibile trovare per un'operazione di I/O di scrittura coalesced.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335437(v=exchg.10).md">MaxCoalesceWriteSize</a></td>
-<td>Numero massimo di byte che è possibile raggruppare per un'operazione di scrittura coalesta.</td>
+<td>Numero massimo di byte che è possibile raggruppare per un'operazione di scrittura coalesced.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335438(v=exchg.10).md">WaypointLatency</a></td>
-<td>Questo parametro imposta il numero di registri per i quali ESENT rinvia il database. Questa operazione può essere utilizzata per aumentare la recuperabilità del database se gli errori determinano la perdita di file di registro.</td>
+<td>Questo parametro imposta il numero di log per cui esent rinviare gli scaricamenti del database. Può essere usato per aumentare la recuperabilità del database se gli errori causano la perdita dei file di log.</td>
 </tr>
 </tbody>
 </table>
@@ -96,4 +96,4 @@ Inizio
 
 [Classe Windows7Param](./windows7param-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

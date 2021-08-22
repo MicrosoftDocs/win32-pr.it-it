@@ -1,9 +1,9 @@
 ---
-title: funzione glStencilFunc (GL. h)
-description: La funzione glStencilFunc imposta la funzione e il valore di riferimento per il test di stencil.
+title: Funzione glStencilFunc (Gl.h)
+description: La funzione glStencilFunc imposta la funzione e il valore di riferimento per il test degli stencil.
 ms.assetid: 6c84415b-4d22-494b-90f2-6243d1406725
 keywords:
-- funzione glStencilFunc OpenGL
+- Funzione glStencilFunc OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd4f9c0a5ec905ecb061ddb54984bf35ff8edc3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e529bd83cff8ffb25c8853b7d896926e63982370387f7e2fb5d2ca30a394c1cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491511"
 ---
-# <a name="glstencilfunc-function"></a>glStencilFunc (funzione)
+# <a name="glstencilfunc-function"></a>Funzione glStencilFunc
 
-La funzione **glStencilFunc** imposta la funzione e il valore di riferimento per il test di stencil.
+La **funzione glStencilFunc** imposta la funzione e il valore di riferimento per il test degli stencil.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ void WINAPI glStencilFunc(
 *func* 
 </dt> <dd>
 
-Funzione di test. I seguenti otto token sono validi.
+Funzione di test. Gli otto token seguenti sono validi.
 
 
 
 | Valore                                                                                                                                                   | Significato                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="GL_NEVER"></span><span id="gl_never"></span><dl> <dt>**GL \_ mai**</dt> </dl>          | Ha sempre esito negativo.<br/>                                         |
-| <span id="GL_LESS"></span><span id="gl_less"></span><dl> <dt>**\_meno GL**</dt> </dl>             | Passa se (  &  *maschera* di riferimento) < (maschera di *stencil*  &  ).<br/> |
-| <span id="GL_LEQUAL"></span><span id="gl_lequal"></span><dl> <dt>**\_LEQUAL GL**</dt> </dl>       | Passa se (*ref*  &  *mask*) = (  &  *maschera* di stencil).<br/>    |
-| <span id="GL_GREATER"></span><span id="gl_greater"></span><dl> <dt>**maggiore di GL \_**</dt> </dl>    | Passa se (  &  *maschera* di riferimento) > (maschera di *stencil*  &  ).<br/> |
-| <span id="GL_GEQUAL"></span><span id="gl_gequal"></span><dl> <dt>**\_GEQUAL GL**</dt> </dl>       | Passa se (*ref*  &  *mask*) = (  &  *maschera* di stencil).<br/>    |
-| <span id="GL_EQUAL"></span><span id="gl_equal"></span><dl> <dt>**GL \_ uguale**</dt> </dl>          | Passa se (*ref*  &  *mask*) = (  &  *maschera* di stencil).<br/>    |
-| <span id="GL_NOTEQUAL"></span><span id="gl_notequal"></span><dl> <dt>**\_NOTEQUAL GL**</dt> </dl> | Passa se (*ref*  &  *mask*)? (*stencil*  &  *mask*).<br/>    |
-| <span id="GL_ALWAYS"></span><span id="gl_always"></span><dl> <dt>**GL \_ Always**</dt> </dl>       | Passa sempre.<br/>                                        |
+| <span id="GL_NEVER"></span><span id="gl_never"></span><dl> <dt>**GL \_ NEVER**</dt> </dl>          | Ha sempre esito negativo.<br/>                                         |
+| <span id="GL_LESS"></span><span id="gl_less"></span><dl> <dt>**GL \_ LESS**</dt> </dl>             | Passa se (*ref*  &  *mask*) < (*stencil*  &  *mask*).<br/> |
+| <span id="GL_LEQUAL"></span><span id="gl_lequal"></span><dl> <dt>**GL \_ LEQUAL**</dt> </dl>       | Passa se (*ref*  &  *mask*) = (*stencil*  &  *mask*).<br/>    |
+| <span id="GL_GREATER"></span><span id="gl_greater"></span><dl> <dt>**GL \_ GREATER**</dt> </dl>    | Passa se (*ref*  &  *mask*) > (*stencil*  &  *mask*).<br/> |
+| <span id="GL_GEQUAL"></span><span id="gl_gequal"></span><dl> <dt>**GL \_ GEQUAL**</dt> </dl>       | Passa se (*ref*  &  *mask*) = (*stencil*  &  *mask*).<br/>    |
+| <span id="GL_EQUAL"></span><span id="gl_equal"></span><dl> <dt>**GL \_ EQUAL**</dt> </dl>          | Passa se (*ref*  &  *mask*) = (*stencil*  &  *mask*).<br/>    |
+| <span id="GL_NOTEQUAL"></span><span id="gl_notequal"></span><dl> <dt>**GL \_ NOTEQUAL**</dt> </dl> | Passa se (*ref*  &  *mask*) ? (*stencil*  &  *mask*).<br/>    |
+| <span id="GL_ALWAYS"></span><span id="gl_always"></span><dl> <dt>**GL \_ ALWAYS**</dt> </dl>       | Passa sempre .<br/>                                        |
 
 
 
@@ -69,14 +69,14 @@ Funzione di test. I seguenti otto token sono validi.
 *ref* 
 </dt> <dd>
 
-Valore di riferimento per il test di stencil. Il parametro *ref* viene bloccato nell'intervallo \[ 0, 2 *n* 1 \] , dove *n* è il numero di bitplane nel buffer dello stencil.
+Valore di riferimento per il test dello stencil. Il *parametro ref* è limitato all'intervallo \[ 0, 2 *n* 1, dove n è il numero di \] bitplane nel buffer degli stencil. 
 
 </dd> <dt>
 
-*maschera* 
+*Maschera* 
 </dt> <dd>
 
-Maschera che è **e** ed è il valore di riferimento e il valore dello stencil archiviato al termine del test.
+Maschera che è **AND ed** con il valore di riferimento e il valore dello stencil archiviato al termine del test.
 
 </dd> </dl>
 
@@ -86,40 +86,40 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Func* non è uno degli otto valori accettati.<br/>                                                                           |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ \_ NON VALIDA**</dt> </dl>      | *func* non è uno degli otto valori accettati.<br/>                                                                           |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La creazione di stencil, ad esempio il buffer *z*, Abilita e Disabilita il disegno in base ai singoli pixel. Si disegnano i piani stencil usando le primitive di disegno OpenGL, quindi si esegue il rendering di geometria e immagini, usando i piani degli stencil per mascherare parti dello schermo. Lo stencil viene in genere usato negli algoritmi di rendering multipass per ottenere effetti speciali, ad esempio decalcomanie, struttura e rendering di geometria continua costruttiva.
+Lo stencil, ad esempio z-buffering, abilita e disabilita il disegno per pixel.  È possibile disegnare nei piani degli stencil usando primitive di disegno OpenGL, quindi eseguire il rendering di geometria e immagini, usando i piani stencil per mascherare parti dello schermo. Gli stencil vengono in genere usati negli algoritmi di rendering multipass per ottenere effetti speciali, ad esempio decalcomanie, struttura e rendering geometrico a tinta unita.
 
-Il test di stencil Elimina in modo condizionale un pixel in base al risultato di un confronto tra il valore di riferimento e il valore nel buffer dello stencil. Il test è abilitato da [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) con il test di stencil GL degli argomenti \_ \_ . Le azioni eseguite in base al risultato del test dello stencil vengono specificate con [**glStencilOp**](glstencilop.md).
+Il test stencil elimina in modo condizionale un pixel in base al risultato di un confronto tra il valore di riferimento e il valore nel buffer degli stencil. Il test è abilitato da [**glEnable**](glenable.md) e [**glDisable con**](gldisable.md) l'argomento GL \_ STENCIL \_ TEST. Le azioni eseguite in base al risultato del test stencil vengono specificate con [**glStencilOp.**](glstencilop.md)
 
-Il parametro *Func* è una costante simbolica che determina la funzione di confronto dello stencil. Accetta uno degli otto valori indicati sopra. Il parametro *ref* è un valore di riferimento integer utilizzato nel confronto tra stencil. Viene premuto nell'intervallo \[ 0, 2 *n* 1 \] , dove *n* è il numero di bitplane nel buffer dello stencil. Il parametro *mask* è bit per bit **e** ed è il valore di riferimento e il valore dello stencil archiviato, con i valori **e che** partecipano al confronto.
+Il *parametro func* è una costante simbolica che determina la funzione di confronto degli stencil. Accetta uno degli otto valori illustrati in precedenza. Il *parametro ref* è un valore di riferimento integer usato nel confronto degli stencil. È limitato all'intervallo \[ 0, 2 *n* 1 , dove n è il numero di \] bitplane nel buffer degli stencil.  Il *parametro mask* è AND bit per bit con il valore di riferimento e il valore dello stencil archiviato, con i valori ed **AND** che partecipano al confronto. 
 
-Se *stencil* rappresenta il valore archiviato nella posizione del buffer dello stencil corrispondente, l'elenco precedente mostra l'effetto di ogni funzione di confronto che può essere specificata da *Func*. Solo se il confronto ha esito positivo è il pixel passato alla fase successiva nel processo di rasterizzazione (vedere [**glStencilOp**](glstencilop.md)). Tutti i test considerano i valori degli *stencil* come interi senza segno nell'intervallo \[ 0, 2 *n* 1 \] , dove *n* è il numero di bitplane nel buffer dello stencil.
+Se *stencil* rappresenta il valore archiviato nella posizione del buffer degli stencil corrispondente, l'elenco precedente mostra l'effetto di ogni funzione di confronto che può essere specificata da *func*. Solo se il confronto ha esito positivo è il pixel passato alla fase successiva del processo di rasterizzazione (vedere [**glStencilOp).**](glstencilop.md) Tutti i *test trattano* i valori degli stencil come interi senza segno nell'intervallo \[ 0, 2 *n* 1, dove n è il numero di bitplani nel \] buffer degli stencil. 
 
-Inizialmente, il test di stencil è disabilitato. Se non è presente alcun buffer dello stencil, non può verificarsi alcuna modifica dello stencil ed è come se il test di stencil venisse sempre superato.
+Inizialmente, il test degli stencil è disabilitato. Se non è presente alcun buffer di stencil, non è possibile apportare alcuna modifica allo stencil ed è come se il test degli stencil fosse sempre superato.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glStencilFunc**:
+Le funzioni seguenti recuperano informazioni correlate **a glStencilFunc:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argument GL \_ stencil \_ Func
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ STENCIL \_ FUNC
 
-**glGet** con \_ \_ maschera valore stencil GL \_ argomento
+**glGet con** argomento GL \_ STENCIL VALUE \_ \_ MASK
 
-**glGet** con argomento \_ ref dello stencil GL \_
+**glGet** con argomento GL \_ STENCIL \_ REF
 
-**glGet** con \_ bit stencil GL \_ argomento
+**glGet** con argomento GL \_ STENCIL \_ BITS
 
-[**glIsEnabled**](glisenabled.md) con \_ test stencil GL \_ argomento
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ STENCIL \_ TEST
 
 ## <a name="requirements"></a>Requisiti
 
@@ -129,8 +129,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glStenc
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -154,7 +154,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glStenc
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glIsEnabled**](glisenabled.md)

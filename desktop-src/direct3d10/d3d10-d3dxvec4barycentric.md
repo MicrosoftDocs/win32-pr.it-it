@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec4BaryCentric (D3DX10Math.h): restituisce un punto nelle coordinate barycentriche, usando i vettori 4D specificati.'
+description: 'Funzione D3DXVec4BaryCentric (D3DX10Math.h): restituisce un punto in coordinate barycentriche, usando i vettori 4D specificati.'
 ms.assetid: 44406135-3270-4f2e-bb53-29affb2510f2
 title: Funzione D3DXVec4BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 935432d1634a7fd35401d92471b1f366075ac8b7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5ecd9a1882e268ae3f398dd42f16d97e00085f2797a98fb42ad4c1f8851ce89d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753971"
 ---
 # <a name="d3dxvec4barycentric-function-d3dx10mathh"></a>Funzione D3DXVec4BaryCentric (D3DX10Math.h)
 
-Restituisce un punto nelle coordinate barycentriche, usando i vettori 4D specificati.
+Restituisce un punto in coordinate barycentriche, usando i vettori 4D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
