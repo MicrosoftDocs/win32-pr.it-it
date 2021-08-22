@@ -1,7 +1,7 @@
 ---
-description: Usato nel metodo GetSummaryInformation nella \_ classe MSVM VirtualSystemManagementService per recuperare rapidamente informazioni comuni correlate a un sistema virtuale o a uno snapshot.
+description: Usato nel metodo GetSummaryInformation nella classe Msvm VirtualSystemManagementService per recuperare rapidamente le informazioni comuni correlate a un sistema virtuale \_ o a uno snapshot.
 ms.assetid: f8daa387-d812-4f44-bf5f-e0a0c18c6db8
-title: Classe Msvm_SummaryInformationBase
+title: Msvm_SummaryInformationBase classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,16 +30,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 65c20239673f279babba2581c4300f373f1392bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d131a2630c0c64e4b4b6bcec371eb901665c989948a1db510b47a41d9159f06d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950100"
 ---
-# <a name="msvm_summaryinformationbase-class"></a>\_Classe MSVM SummaryInformationBase
+# <a name="msvm_summaryinformationbase-class"></a>Classe Msvm \_ SummaryInformationBase
 
-Usato nel metodo [**GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) nella classe [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) per recuperare rapidamente informazioni comuni correlate a un sistema virtuale o a uno snapshot.
+Usato nel [**metodo GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md) nella classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) per recuperare rapidamente le informazioni comuni correlate a un sistema virtuale o a uno snapshot.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -71,13 +71,13 @@ class Msvm_SummaryInformationBase : CIM_View
 
 ## <a name="members"></a>Members
 
-La **classe \_ SummaryInformationBase di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SummaryInformationBase** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SummaryInformationBase di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SummaryInformationBase** ha queste proprietà.
 
 <dl> <dt>
 
@@ -90,30 +90,30 @@ Tipo di dati: **DateTime**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora in cui è stato creato il sistema virtuale o lo snapshot.
+Ora di creazione del sistema virtuale o dello snapshot.
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ managed. ElementName")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ ManagedElement.ElementName")
 </dt> </dl>
 
-Nome descrittivo per il sistema virtuale o lo snapshot.
+Nome descrittivo del sistema virtuale o dello snapshot.
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -126,13 +126,13 @@ Stato corrente del sistema virtuale o dello snapshot.
 **EnhancedSessionModeState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se le connessioni in modalità avanzata sono consentite dall'host e se sono consentite, indipendentemente dal fatto che siano disponibili o meno per la macchina virtuale.
+Indica se le connessioni in modalità avanzata sono consentite dall'host e, se consentite, se sono disponibili o meno per la macchina virtuale.
 
 <dt>
 
@@ -159,23 +159,23 @@ Indica se le connessioni in modalità avanzata sono consentite dall'host e se so
 
 </dd> <dt>
 
-**HealthState**
+**Stato di integrità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di integrità corrente per il sistema virtuale. Questa proprietà non è valida per le istanze di [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) che rappresentano uno snapshot del sistema virtuale.
+Stato di integrità corrente per il sistema virtuale. Questa proprietà non è valida per le istanze di [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) che rappresentano uno snapshot del sistema virtuale.
 
 </dd> <dt>
 
 **HostComputerSystemName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -188,33 +188,33 @@ Nome del computer che ospita la macchina virtuale.
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ managed. InstanceId"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ ManagedElement.InstanceID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-InstanceID è una proprietà facoltativa che può essere utilizzata per identificare in modo opaco e univoco un'istanza di questa classe nell'ambito dello spazio dei nomi di creazione di istanze. Varie sottoclassi di questa classe possono eseguire l'override di questa proprietà per renderla obbligatoria o una chiave. Tali sottoclassi possono anche modificare gli algoritmi preferiti per garantire l'univocità definita di seguito.
+InstanceID è una proprietà facoltativa che può essere usata per identificare in modo opaco e univoco un'istanza di questa classe nell'ambito dello spazio dei nomi di creazione dell'istanza. Diverse sottoclassi di questa classe possono eseguire l'override di questa proprietà per renderla obbligatoria o una chiave. Tali sottoclassi possono anche modificare gli algoritmi preferiti per garantire l'univocità definita di seguito.
 
-Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente:
+Per garantire l'univocità all'interno di NameSpace, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente:
 
 <OrgID>:<LocalID>
 
-Dove <OrgID> e <LocalID> sono separati da due punti (:) e dove <OrgID> devono includere un nome con copyright, un marchio o in altro modo univoco di proprietà dell'entità di business che crea o definisce InstanceID o che è un ID registrato assegnato all'entità business da un'autorità globale riconosciuta. (Questo requisito è simile al <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Per garantire l'univocità, inoltre, <OrgID> non deve contenere i due punti (:). Quando si utilizza questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra <OrgID> e <LocalID> .
+Dove e sono separati da due punti (:) e dove devono includere un nome protetto da copyright, marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale <OrgID> <LocalID> <OrgID> riconosciuta. Questo requisito è simile al seguente: <Schema Name> \_ <Class Name> struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, <OrgID> non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra <OrgID> e <LocalID> .
 
-<LocalID> viene scelto dall'entità business e non deve essere riutilizzato per identificare elementi diversi (reali) sottostanti. Se non è null e l'algoritmo "preferito" precedente non viene utilizzato, l'entità di definizione deve garantire che l'ID istanza risultante non venga riutilizzato tra le InstanceID prodotte da questo o da altri provider per lo spazio dei nomi di questa istanza.
+<LocalID> viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se non è Null e l'algoritmo "preferito" precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza.
 
-Se non è impostato su null per le istanze definite da DMTF, è necessario usare l'algoritmo "preferito" con <OrgID> impostato su CIM.
+Se non è impostato su Null per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con <OrgID> impostato su CIM.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -227,7 +227,7 @@ Nome univoco per il sistema virtuale o lo snapshot.
 **Note**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -240,7 +240,7 @@ Note associate al sistema virtuale o allo snapshot.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -253,13 +253,13 @@ Numero totale di processori virtuali allocati al sistema virtuale o allo snapsho
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Stato corrente dell'elemento.
@@ -269,68 +269,68 @@ Stato corrente dell'elemento.
 **OtherEnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la proprietà **EnabledState** è impostata su 1 ("altro"). Questa proprietà deve essere impostata su null quando **EnabledState** è un valore diverso da 1.
+Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la **proprietà EnabledState** è impostata su 1 ("Other"). Questa proprietà deve essere impostata su Null quando **EnabledState** è un valore diverso da 1.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Stringhe che descrivono i vari valori della matrice **OperationalStatus** .
+Stringhe che descrivono i vari **valori della matrice OperationalStatus.**
 
 </dd> <dt>
 
-**Tempo**
+**Uptime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di tempo trascorsa dall'ultimo avvio del sistema virtuale. Questa proprietà non è valida per le istanze di [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) che rappresentano uno snapshot del sistema virtuale.
+Periodo di tempo dall'ultimo avvio del sistema virtuale. Questa proprietà non è valida per le istanze di [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) che rappresentano uno snapshot del sistema virtuale.
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione del sistema virtuale in formato "Major. minor"; ad esempio, "2,0".
+Versione del sistema virtuale nel formato "major.minor"; ad esempio "2.0".
 
 </dd> <dt>
 
 **VirtualSwitchNames**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Stringhe che elencano i nomi descrittivi dei commutatori virtuali a cui è connessa la macchina virtuale.
@@ -340,7 +340,7 @@ Stringhe che elencano i nomi descrittivi dei commutatori virtuali a cui è conne
 **VirtualSystemSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -352,14 +352,14 @@ Sottotipo del sistema virtuale.
 
 <span id="Microsoft_Hyper-V_SubType_1"></span><span id="microsoft_hyper-v_subtype_1"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_1"></span>
 
-**Microsoft: Hyper-v: sottotipo: 1** ("Microsoft: Hyper-v: sottotipo: 1")
+**Microsoft:Hyper-V:SubType:1** ("Microsoft:Hyper-V:SubType:1")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Microsoft_Hyper-V_SubType_2"></span><span id="microsoft_hyper-v_subtype_2"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_2"></span>
 
-**Microsoft: Hyper-v: sottotipo: 2** ("Microsoft: Hyper-v: sottotipo: 2")
+**Microsoft:Hyper-V:SubType:2** ("Microsoft:Hyper-V:SubType:2")
 
 
 </dt> <dd></dd> </dl>
@@ -372,10 +372,10 @@ Sottotipo del sistema virtuale.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -384,7 +384,7 @@ Sottotipo del sistema virtuale.
 
 <dl> <dt>
 
-[**\_Visualizzazione CIM**](cim-view.md)
+[**Visualizzazione \_ CIM**](cim-view.md)
 </dt> </dl>
 
  

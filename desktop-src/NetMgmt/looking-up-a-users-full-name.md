@@ -1,28 +1,28 @@
 ---
 title: Ricerca del nome completo di un utente
-description: I computer possono essere organizzati in un dominio, ovvero una raccolta di rete di computer. L'amministratore di dominio mantiene le informazioni sugli account utente e di gruppo centralizzati.
+description: I computer possono essere organizzati in un dominio, ovvero una raccolta di computer di rete. L'amministratore di dominio gestisce informazioni centralizzate sugli account utente e di gruppo.
 ms.assetid: 296ecfd0-1b65-482c-bee1-eff2130cc14e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cb2daa6bc2bc7d7255e961537c641a999d5a0bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 434bdff00483b38ef12355af4dcda4a48d60bf849a8fd5d6829640ae8907e426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012519"
 ---
 # <a name="looking-up-a-users-full-name"></a>Ricerca del nome completo di un utente
 
-I computer possono essere organizzati in un *dominio*, ovvero una raccolta di rete di computer. L'amministratore di dominio mantiene le informazioni sugli account utente e di gruppo centralizzati.
+I computer possono essere organizzati in *un dominio*, ovvero una raccolta di computer di rete. L'amministratore di dominio gestisce informazioni centralizzate sugli account utente e di gruppo.
 
 Per trovare il nome completo di un utente, in base al nome utente e al nome di dominio:
 
 -   Convertire il nome utente e il nome di dominio in Unicode, se non sono già stringhe Unicode.
 -   Cercare il nome del computer del controller di dominio chiamando [**NetGetDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname).
--   Cercare il nome utente nel computer DC chiamando [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo).
--   Convertire il nome utente completo in ANSI, a meno che il programma non sia in attesa di utilizzare stringhe Unicode.
+-   Cercare il nome utente nel computer del controller di dominio chiamando [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo).
+-   Convertire il nome utente completo in ANSI, a meno che il programma non si aspetti di usare stringhe Unicode.
 
-Il codice di esempio seguente è una funzione (getcompletename) che accetta un nome utente e un nome di dominio nei primi due argomenti e restituisce il nome completo dell'utente nel terzo argomento.
+Il codice di esempio seguente è una funzione (GetFullName) che accetta un nome utente e un nome di dominio nei primi due argomenti e restituisce il nome completo dell'utente nel terzo argomento.
 
 
 ```C++
@@ -75,9 +75,9 @@ BOOL GetFullName( char *UserName, char *Domain, char *dest )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

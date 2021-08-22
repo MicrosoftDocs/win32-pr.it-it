@@ -1,29 +1,29 @@
 ---
 description: Specifica la categoria del flusso audio.
 ms.assetid: 0F2DB9A7-64ED-4952-BCB3-F2B15BA37D2A
-title: Attributo MF_MEDIA_ENGINE_AUDIO_CATEGORY
+title: MF_MEDIA_ENGINE_AUDIO_CATEGORY attributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d22cd3795886b78afae03ba4b592d4657857f76b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2939c5ac839544acb8dd65c2ecae1769c7dd79bb78b19fe40c1f8ae27865ca03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103968883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104787"
 ---
-# <a name="mf_media_engine_audio_category-attribute"></a>\_ \_ \_ Attributo categoria audio del motore multimediale MF \_
+# <a name="mf_media_engine_audio_category-attribute"></a>Attributo MF \_ MEDIA \_ ENGINE AUDIO \_ \_ CATEGORY
 
 Specifica la categoria del flusso audio.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**[**\_categoria flusso \_ audio**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)**
+**[**CATEGORIA \_ DI FLUSSI \_ AUDIO**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un membro dell'enumerazione [**di \_ \_ categoria del flusso audio**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) .
+Il valore di questo attributo è un membro [**dell'enumerazione AUDIO \_ STREAM \_ CATEGORY.**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)
 
-Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale. L'attributo è facoltativo.
+Questo attributo viene usato con il [**metodo IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale. L'attributo è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                            |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

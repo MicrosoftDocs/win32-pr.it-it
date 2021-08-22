@@ -1,19 +1,19 @@
 ---
-description: Imposta la frequenza massima di input in tempo reale dei fotogrammi video che vengono inseriti nel codificatore.
+description: Imposta la velocità di input massima in tempo reale dei fotogrammi video da inserire nel codificatore.
 ms.assetid: ACBE8799-A81C-44C3-B985-88ADFB1E51B4
-title: Proprietà CODECAPI_AVEncMaxFrameRate (codecapit. h)
+title: CODECAPI_AVEncMaxFrameRate proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c04d1fd1297f299db133cd98bd493c968fcc29c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bb4202dd2079cc013560947ef11581cdb24b92ad0aaaf544e12923d5e46b319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974930"
 ---
-# <a name="codecapi_avencmaxframerate-property"></a>Proprietà AVEncMaxFrameRate di codecapi \_
+# <a name="codecapi_avencmaxframerate-property"></a>PROPRIETÀ CODECAPI \_ AVEncMaxFrameRate
 
-Imposta la frequenza massima di input in tempo reale dei fotogrammi video che vengono inseriti nel codificatore.
+Imposta la velocità di input massima in tempo reale dei fotogrammi video da inserire nel codificatore.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,13 +21,13 @@ Imposta la frequenza massima di input in tempo reale dei fotogrammi video che ve
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMaxFrameRate**
+**CODECAPI \_ AVEncMaxFrameRate**
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà consente al chiamante di specificare la frequenza massima di input in tempo reale dei fotogrammi video inviati al codificatore. In questo modo, il codificatore indica la velocità di elaborazione dei frame in arrivo. Questa operazione è utile per i codificatori che si configurano in una particolare configurazione dello stato di alimentazione in base alla risoluzione e alla frequenza dei fotogrammi del video di origine.
+Questa proprietà consente al chiamante di specificare la velocità di input in tempo reale massima dei fotogrammi video da inserire nel codificatore. Questo fornisce al codificatore un'indicazione della velocità necessaria per elaborare i fotogrammi in ingresso. Ciò è utile per i codificatori che si impostano in una particolare configurazione dello stato di alimentazione in base alla risoluzione e alla frequenza dei fotogrammi del video di origine.
 
-La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del valore dell'attributo contengono il numeratore e i 32 bit inferiori contengono il denominatore. Se, ad esempio, la frequenza dei fotogrammi è di 30 fotogrammi al secondo (fps), il rapporto è 30/1. Se la frequenza dei fotogrammi è 29,97 fps, il rapporto è 30000/1001.
+La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del valore dell'attributo contengono il numeratore e i 32 bit inferiori contengono il denominatore. Ad esempio, se la frequenza dei fotogrammi è di 30 fotogrammi al secondo (fps), il rapporto è 30/1. Se la frequenza dei fotogrammi è 29,97 fps, il rapporto è 30.000/1001.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del va
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del va
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

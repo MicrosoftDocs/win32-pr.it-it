@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMSArray:: Sample. Funzione operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Texture2DMSArray:: Sample. Funzione operator'
+title: Texture2DMSArray::sample. Funzione operatore
+description: Restituisce una variabile di risorsa di sola lettura. | Texture2DMSArray::sample. Funzione operatore
 ms.assetid: 5334c1d5-dfbd-4987-875c-0b92967b0f13
 keywords:
-- esempio. Funzione operator HLSL
+- Esempio. Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e78746e0afe03e65a313982ca35c27a75ea14f1b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09ac18e7830dfe6b18718deed56e8495ba476dcedcb8290eab4e16aa0d7f24fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104982004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508326"
 ---
-# <a name="texture2dmsarraysampleoperator----function"></a>Texture2DMSArray:: Sample. Funzione operator
+# <a name="texture2dmsarraysampleoperator----function"></a>Texture2DMSArray::sample. Funzione operatore
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -37,7 +37,7 @@ R sample.Operator[][](
 
 <dl> <dt>
 
-*sampleSlice* \[ in\]
+*sampleSlice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,12 +46,12 @@ Indice della sezione di esempio.
 
 </dd> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
 
-Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione della matrice desiderata.
+Posizione dell'indice. Il primo e il secondo componente contengono le coordinate (x, y). Il terzo componente indica la sezione di matrice desiderata.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Posizione dell'indice. Il primo e il secondo componente contengono le coordinate
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -81,7 +81,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -96,7 +96,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DMSArray](sm5-object-texture2dmsarray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

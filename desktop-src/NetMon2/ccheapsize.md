@@ -1,7 +1,7 @@
 ---
 description: La funzione CCHeapSize restituisce le dimensioni della memoria allocata dalla funzione CCHeapAlloc.
 ms.assetid: 45d0fd89-bcd1-4298-8cc3-834d86301f93
-title: Funzione CCHeapSize (Netmon. h)
+title: Funzione CCHeapSize (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: e184ae196253a66fc68f9066615b39c48f6921e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b086777b571af417662bd60a582fbc53a07c49300d21d2c59b6a36d2247b9d14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012313"
 ---
-# <a name="ccheapsize-function"></a>CCHeapSize (funzione)
+# <a name="ccheapsize-function"></a>Funzione CCHeapSize
 
-La funzione **CCHeapSize** restituisce le dimensioni della memoria allocata dalla funzione **CCHeapAlloc** .
+La **funzione CCHeapSize** restituisce le dimensioni della memoria allocata dalla **funzione CCHeapAlloc.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,9 +48,9 @@ Puntatore alla memoria allocata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito corrisponde alla dimensione del blocco di memoria richiesto misurato in byte.
+Se la funzione ha esito positivo, il valore restituito è la dimensione del blocco di memoria richiesto misurato in byte.
 
-Se la funzione ha esito negativo, il valore restituito è **null**.
+Se la funzione ha esito negativo, il valore restituito è **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Se la funzione ha esito negativo, il valore restituito è **null**.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

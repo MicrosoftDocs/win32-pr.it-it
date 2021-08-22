@@ -1,6 +1,6 @@
 ---
-title: Condizioni di filtro disponibili a ogni livello di filtro (Fwpmu. h)
-description: Il motore di filtro della piattaforma filtro Windows (WFP) supporta un set di condizioni di filtro diverso a ogni livello di filtro.
+title: Condizioni di filtro disponibili a ogni livello di filtro (Fwpmu.h)
+description: Il Windows filtro della piattaforma di filtro dei filtri di windows (WFP) supporta un set diverso di condizioni di filtro a ogni livello di filtro.
 ms.assetid: 6faace21-44ec-49dd-8e77-e403c258c14a
 topic_type:
 - apiref
@@ -44,16 +44,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd0c3806c7c3c7a5fa7f10af0e5e11c212bd93e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c66aaceadec9a04e926806cf95859ffff2e4fa542b592edb4a11608a621a3338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951200"
 ---
 # <a name="filtering-conditions-available-at-each-filtering-layer"></a>Condizioni di filtro disponibili a ogni livello di filtro
 
-Il motore di filtro della piattaforma filtro Windows (WFP) supporta un set di condizioni di filtro diverso a ogni livello di filtro.
+Il Windows filtro della piattaforma di filtro dei filtri di windows (WFP) supporta un set diverso di condizioni di filtro a ogni livello di filtro.
 
 Di seguito è riportato l'elenco delle condizioni di filtro disponibili a ogni livello.
 
@@ -178,8 +178,8 @@ Di seguito è riportato l'elenco delle condizioni di filtro disponibili a ogni l
 - FWPM_CONDITION_IP_LOCAL_INTERFACE
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_LOCAL_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
-- FWPM_CONDITION_LOCAL_INTERFACE_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
-- FWPM_CONDITION_LOCAL_TUNNEL_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
+- FWPM_CONDITION_LOCAL_INTERFACE_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
+- FWPM_CONDITION_LOCAL_TUNNEL_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 e versioni successive
 - FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID
 ## <a name="fwpm_layer_outbound_icmp_error_v4--fwpm_layer_outbound_icmp_error_v4_discard--fwpm_layer_outbound_icmp_error_v6--fwpm_layer_outbound_icmp_error_v6_discard"></a>FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD
@@ -286,8 +286,8 @@ Di seguito è riportato l'elenco delle condizioni di filtro disponibili a ogni l
 - FWPM_CONDITION_IP_PROTOCOL
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_IP_REMOTE_PORT
-- FWPM_CONDITION_LOCAL_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
-- FWPM_CONDITION_LOCAL_INTERFACE_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
+- FWPM_CONDITION_LOCAL_INTERFACE_INDEX Windows **Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
+- FWPM_CONDITION_LOCAL_INTERFACE_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
 - FWPM_CONDITION_LOCAL_TUNNEL_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 e versioni successive
 - FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX
@@ -335,7 +335,7 @@ Di seguito è riportato l'elenco delle condizioni di filtro disponibili a ogni l
 - FWPM_CONDITION_IP_ARRIVAL_INTERFACE
 - FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE
 - FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE
-- FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX _sp1 e laterFWPM_CONDITION_INTERFACE_INDEX di Windows Vista 
+- FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX Windows Vista _sp1 e laterFWPM_CONDITION_INTERFACE_INDEX 
 ###  <a name="windows-7--and-later"></a>Windows 7 e versioni successive
 - FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_IP_NEXTHOP_INTERFACE
@@ -522,9 +522,9 @@ I suffissi V4 e V6 alla fine degli identificatori di livello indicano se il live
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

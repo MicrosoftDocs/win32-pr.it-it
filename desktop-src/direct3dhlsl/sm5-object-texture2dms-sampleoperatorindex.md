@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMS:: Sample. Funzione operator'
-description: "Recupera un valore dalla risorsa nella posizione e nell'indice di esempio forniti. | Texture2DMS:: Sample. Funzione operator"
+title: Texture2DMS::sample. Funzione operatore
+description: Recupera un valore dalla risorsa nella posizione e nell'indice di esempio forniti. | Texture2DMS::sample. Funzione operatore
 ms.assetid: 5bc24129-b690-44dd-ae85-8533b10befaa
 keywords:
-- esempio. Funzione operator HLSL
+- Esempio. Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1a73577fa67992b212b4769059f1523e584acbaf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 8f5d7082ee72c49d3aa4be131491151b1bab65502e6fe85884b2a03573c497b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508473"
 ---
-# <a name="texture2dmssampleoperator----function"></a>Texture2DMS:: Sample. Funzione operator
+# <a name="texture2dmssampleoperator----function"></a>Texture2DMS::sample. Funzione operatore
 
 Recupera un valore dalla risorsa nella posizione e nell'indice di esempio forniti.
 
@@ -37,7 +37,7 @@ R sample.Operator[][](
 
 <dl> <dt>
 
-*sampleSlice* \[ in\]
+*sampleSlice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Indice della sezione di esempio.
 
 </dd> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint2**
@@ -59,7 +59,7 @@ Posizione dell'indice. I componenti contengono le coordinate (x, y).
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -81,7 +81,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -96,7 +96,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DMS](sm5-object-texture2dms.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Enumerazione VMVMState (VPCCOMInterfaces. h)
+title: Enumerazione VMVMState (VPCCOMInterfaces.h)
 description: Specifica lo stato di una macchina virtuale.
 ms.assetid: 952dab9d-3d38-4cc5-ab75-4ee5096f7923
 keywords:
-- VMVMState enumerazione PC virtuale
+- Enumerazione VMVMState Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45505e4fb4b444b15697afca4576e889f2da9a6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cff8beb6d0ea01ab60be7a7908fceec32422ef3a9ba06b801df2af94130c526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998311"
 ---
 # <a name="vmvmstate-enumeration"></a>Enumerazione VMVMState
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Specifica lo stato di una macchina virtuale.
 
@@ -52,35 +52,35 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmVMState_Invalid"></span><span id="vmvmstate_invalid"></span><span id="VMVMSTATE_INVALID"></span>**vmVMState \_ non valido**
+<span id="vmVMState_Invalid"></span><span id="vmvmstate_invalid"></span><span id="VMVMSTATE_INVALID"></span>**vmVMState \_ Non valido**
 </dt> <dd>
 
 Uno stato non valido (non deve verificarsi se la macchina virtuale esiste).
 
 </dd> <dt>
 
-<span id="vmVMState_TurnedOff"></span><span id="vmvmstate_turnedoff"></span><span id="VMVMSTATE_TURNEDOFF"></span>**\_turnedOff vmVMState**
+<span id="vmVMState_TurnedOff"></span><span id="vmvmstate_turnedoff"></span><span id="VMVMSTATE_TURNEDOFF"></span>**vmVMState \_ TurnedOff**
 </dt> <dd>
 
-Disattivato e non salvato.
+Disattivata e non salvata.
 
 </dd> <dt>
 
-<span id="vmVMState_Saved"></span><span id="vmvmstate_saved"></span><span id="VMVMSTATE_SAVED"></span>**vmVMState \_ salvato**
+<span id="vmVMState_Saved"></span><span id="vmvmstate_saved"></span><span id="VMVMSTATE_SAVED"></span>**vmVMState \_ saved**
 </dt> <dd>
 
-Ma il Guest viene salvato.
+Disattivata, ma il guest viene salvato.
 
 </dd> <dt>
 
-<span id="vmVMState_TurningOn"></span><span id="vmvmstate_turningon"></span><span id="VMVMSTATE_TURNINGON"></span>**\_TurningOn vmVMState**
+<span id="vmVMState_TurningOn"></span><span id="vmvmstate_turningon"></span><span id="VMVMSTATE_TURNINGON"></span>**VmVMState \_ TurningOn**
 </dt> <dd>
 
-In fase di attivazione.
+In corso di attivazione.
 
 </dd> <dt>
 
-<span id="vmVMState_Restoring"></span><span id="vmvmstate_restoring"></span><span id="VMVMSTATE_RESTORING"></span>**\_ripristino vmVMState**
+<span id="vmVMState_Restoring"></span><span id="vmvmstate_restoring"></span><span id="VMVMSTATE_RESTORING"></span>**Ripristino di \_ vmVMState**
 </dt> <dd>
 
 Ripristino dello stato.
@@ -94,35 +94,35 @@ In esecuzione e non in pausa.
 
 </dd> <dt>
 
-<span id="vmVMState_Paused"></span><span id="vmvmstate_paused"></span><span id="VMVMSTATE_PAUSED"></span>**vmVMState \_ sospeso**
+<span id="vmVMState_Paused"></span><span id="vmvmstate_paused"></span><span id="VMVMSTATE_PAUSED"></span>**vmVMState \_ Paused**
 </dt> <dd>
 
-In esecuzione e sospesa.
+In esecuzione e in pausa.
 
 </dd> <dt>
 
-<span id="vmVMState_Saving"></span><span id="vmvmstate_saving"></span><span id="VMVMSTATE_SAVING"></span>**\_salvataggio vmVMState**
+<span id="vmVMState_Saving"></span><span id="vmvmstate_saving"></span><span id="VMVMSTATE_SAVING"></span>**Salvataggio di \_ vmVMState**
 </dt> <dd>
 
 Salvataggio dello stato.
 
 </dd> <dt>
 
-<span id="vmVMState_TurningOff"></span><span id="vmvmstate_turningoff"></span><span id="VMVMSTATE_TURNINGOFF"></span>**\_TurningOff vmVMState**
+<span id="vmVMState_TurningOff"></span><span id="vmvmstate_turningoff"></span><span id="VMVMSTATE_TURNINGOFF"></span>**VmVMState \_ TurningOff**
 </dt> <dd>
 
-In fase di disattivazione.
+In corso di disattivazione.
 
 </dd> <dt>
 
-<span id="vmVMState_MergingDrives"></span><span id="vmvmstate_mergingdrives"></span><span id="VMVMSTATE_MERGINGDRIVES"></span>**\_MergingDrives vmVMState**
+<span id="vmVMState_MergingDrives"></span><span id="vmvmstate_mergingdrives"></span><span id="VMVMSTATE_MERGINGDRIVES"></span>**VmVMState \_ MergingDrives**
 </dt> <dd>
 
-Durante il processo di Unione delle unità di annullamento.
+Durante il processo di unione delle unità di annullamento.
 
 </dd> <dt>
 
-<span id="vmVMState_DeleteMachine"></span><span id="vmvmstate_deletemachine"></span><span id="VMVMSTATE_DELETEMACHINE"></span>**\_DeleteMachine vmVMState**
+<span id="vmVMState_DeleteMachine"></span><span id="vmvmstate_deletemachine"></span><span id="VMVMSTATE_DELETEMACHINE"></span>**vmVMState \_ DeleteMachine**
 </dt> <dd>
 
 Eliminazione della macchina virtuale.
@@ -135,11 +135,11 @@ Eliminazione della macchina virtuale.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 
@@ -147,10 +147,10 @@ Eliminazione della macchina virtuale.
 
 <dl> <dt>
 
-[**IVMVirtualMachine:: state**](ivmvirtualmachine-state.md)
+[**IVMVirtualMachine::State**](ivmvirtualmachine-state.md)
 </dt> <dt>
 
-[**IVMVirtualMachineEvents:: OnStateChange**](ivmvirtualmachineevents-onstatechange.md)
+[**IVMVirtualMachineEvents::OnStateChange**](ivmvirtualmachineevents-onstatechange.md)
 </dt> <dt>
 
 [**IVMVirtualPCEvents::OnVMStateChange**](ivmvirtualpcevents-onvmstatechange.md)

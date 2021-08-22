@@ -1,15 +1,15 @@
 ---
-description: Il metodo Capture acquisisce un'immagine ancora dal fotogramma video quando l'oggetto MSWebDVD è in modalità senza finestra.
+description: Il metodo Capture acquisisce un'immagine ancorata dal fotogramma video quando l'oggetto MSWebDVD è in modalità senza finestra.
 ms.assetid: 704e64ef-3593-403c-8ecf-625fb4983882
 title: Metodo Capture
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db16bbc6ef50de303dbcdac66bd066861bb5811
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bf005a9696846be91e4a410d831cb1d0456334eb33f37c369a5179eb2b48d943
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955390"
 ---
 # <a name="capture-method"></a>Metodo Capture
 
@@ -18,7 +18,7 @@ ms.locfileid: "104123642"
 
  
 
-Il `Capture` metodo acquisisce un'immagine ancora dal fotogramma video quando l'oggetto mswebdvd è in modalità senza finestra.
+Il `Capture` metodo acquisisce un'immagine ancorata dal fotogramma video quando l'oggetto MSWebDVD è in modalità senza finestra.
 
 ``` syntax
 MSWebDVD.Capture()
@@ -26,7 +26,7 @@ MSWebDVD.Capture()
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo acquisisce il frame corrente dall'immagine DVD-Video e lo incolla in una finestra da cui l'utente può salvare o modificare l'immagine. L'oggetto MSWebDVD deve essere in modalità senza finestra affinché questo metodo abbia esito positivo.
+Questo metodo acquisisce il frame corrente dall'immagine DVD-Video e lo incolla in una finestra da cui l'utente può salvare o modificare l'immagine. Perché questo metodo riesca, l'oggetto MSWebDVD deve essere in modalità senza finestra.
 
  
 

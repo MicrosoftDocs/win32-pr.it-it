@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c734727f3f2f44c9094885e0e743f605f16c91d2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9742a9a0787fe605c84972b87f0a8a6fa17b93fc7a8f091dc3aa38048a9f1dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044649"
 ---
 # <a name="d3dxvec2catmullrom-function-d3dx9mathh"></a>Funzione D3DXVec2CatmullRom (D3dx9math.h)
 
-Esegue unCatmull-Rom interpolazione, usando i vettori 2D specificati.
+Esegue un Catmull-Rom interpolazione, usando i vettori 2D specificati.
 
 ## <a name="syntax"></a>Sintassi
 

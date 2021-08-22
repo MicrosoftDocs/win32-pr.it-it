@@ -1,21 +1,21 @@
 ---
-description: I tasti di scelta rapida forniscono all'utente un modo per modificare rapidamente la modalità di input di un IME o per passare a un altro IME.
+description: I tasti di scelta rapida offrono all'utente un modo per modificare rapidamente la modalità di input di un IME o per passare a un altro IME.
 ms.assetid: e3bfeefd-82aa-423c-9248-b6f54f095b1c
 title: Hot Keys
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 624ccb54c8ebded40e8d1c2cc646b7d8e65bb74a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 107e02412529b7f14e577eef79426b322da494b4c0d613146f0af7fd3ac719df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949380"
 ---
 # <a name="hot-keys"></a>Hot Keys
 
-I tasti di scelta rapida forniscono all'utente un modo per modificare rapidamente la modalità di input di un IME o per passare a un altro IME. Sebbene le applicazioni non possano aggiungere tasti di scelta rapida al sistema operativo, possono avviare la stessa azione di un tasto di scelta rapida tramite la funzione [**ImmSimulateHotKey**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey) .
+I tasti di scelta rapida offrono all'utente un modo per modificare rapidamente la modalità di input di un IME o per passare a un altro IME. Anche se le applicazioni non possono aggiungere tasti di scelta rapida al sistema operativo, possono avviare la stessa azione di un tasto di scelta rapida usando la [**funzione ImmSimulateHotKey.**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey)
 
-L'IME HexToUnicode consente inoltre la conversione tra caratteri esadecimali e Unicode. Per ulteriori informazioni, vedere [HEXTOUNICODE IME](hextounicode-ime.md).
+L'IME HexToUnicode consente anche la conversione tra caratteri esadecimali e Unicode. Per altre informazioni, vedere [HexToUnicode IME](hextounicode-ime.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

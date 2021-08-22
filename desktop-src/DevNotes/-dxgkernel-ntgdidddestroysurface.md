@@ -1,7 +1,7 @@
 ---
-description: Elimina definitivamente un oggetto Surface Microsoft DirectDraw in modalità kernel allocato in precedenza.
+description: Elimina un oggetto della superficie di Microsoft DirectDraw in modalità kernel allocato in precedenza.
 ms.assetid: 65419fce-9e82-4621-9906-832144888a3b
-title: Funzione NtGdiDdDestroySurface (Ntgdi. h)
+title: Funzione NtGdiDdDestroySurface (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 54799aa90007370439b2be8c8cf8c1f584360a5d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1ec5538e7aea7abd938cb57dc3dfba9c51e7c6c60f81630bf6665c1ee467ed24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956510"
 ---
-# <a name="ntgdidddestroysurface-function"></a>NtGdiDdDestroySurface (funzione)
+# <a name="ntgdidddestroysurface-function"></a>Funzione NtGdiDdDestroySurface
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece il DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Elimina definitivamente un oggetto Surface Microsoft DirectDraw in modalità kernel allocato in precedenza.
+Elimina un oggetto della superficie di Microsoft DirectDraw in modalità kernel allocato in precedenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,39 +45,39 @@ DWORD APIENTRY NtGdiDdDestroySurface(
 
 <dl> <dt>
 
-*hSurface* \[ in\]
+*hSurface* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto Surface precedentemente allocato in modalità kernel.
+Handle all'oggetto surface in modalità kernel allocato in precedenza.
 
 </dd> <dt>
 
-*bRealDestroy* \[ in\]
+*bRealDestroy* \[ Pollici\]
 </dt> <dd>
 
-Specifica la modalità di eliminazione della superficie. Può essere uno dei valori seguenti.
+Specifica come eliminare la superficie. Può essere uno dei valori seguenti.
 
 <dt>
 
 
 
- TRUE
+ (TRUE)
 
 
 </dt> <dd>
 
-Elimina la superficie e la memoria video disponibile.
+Eliminare la superficie e liberare memoria video.
 
 </dd> <dt>
 
 
 
- FALSE
+ (FALSE)
 
 
 </dt> <dd>
 
-Liberare la memoria del video, ma lasciare la superficie in uno stato non inizializzato.
+Liberare la memoria video, ma lasciare la superficie in uno stato non inizializzato.
 
 </dd> </dl> </dd> </dl>
 
@@ -89,8 +89,8 @@ Liberare la memoria del video, ma lasciare la superficie in uno stato non inizia
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -98,7 +98,7 @@ Liberare la memoria del video, ma lasciare la superficie in uno stato non inizia
 
 ## <a name="remarks"></a>Commenti
 
-È consigliabile che le applicazioni usino le API DirectDraw e Direct3D per creare ed eliminare definitivamente le superfici anziché questa funzione.
+È consigliabile che le applicazioni usino le API DirectDraw e Direct3D per creare ed eliminare le superfici anziché questa funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Liberare la memoria del video, ma lasciare la superficie in uno stato non inizia
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Liberare la memoria del video, ma lasciare la superficie in uno stato non inizia
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

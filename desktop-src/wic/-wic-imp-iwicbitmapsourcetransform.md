@@ -4,18 +4,18 @@ ms.assetid: 6a3e682c-55c6-4728-9d14-5eb0290f3dcc
 title: Implementazione di IWICBitmapSourceTransform
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0809e1e56fe3c05c8803bb70106c4a24a466eafe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79caa17fdb874b9cbee73a9a371c4ba454e72c6eb249a6ca7d626fdd9c86aea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711076"
 ---
 # <a name="implementing-iwicbitmapsourcetransform"></a>Implementazione di IWICBitmapSourceTransform
 
 ## <a name="iwicbitmapsourcetransform"></a>IWICBitmapSourceTransform
 
-Sebbene sia facoltativo, è consigliabile che ogni decodificatore implementi questa interfaccia sulla classe di decodifica a livello di frame, in quanto può offrire notevoli vantaggi a livello di prestazioni. Quando un'applicazione richiede un'area specifica di interesse, dimensioni, orientamento o formato pixel, anziché semplicemente decodificare l'intera immagine alla risoluzione completa e quindi applicare le trasformazioni richieste, Windows Imaging Component (WIC) chiama [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per questa interfaccia nell'oggetto [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) . Se il decodificatore di frame lo supporta, WIC chiama il metodo o i metodi appropriati per determinare se il decodificatore di frame può eseguire la trasformazione richiesta o determinare il formato pixel o dimensioni più vicino che il decodificatore può fornire a quello richiesto. Se il decodificatore è in grado di eseguire la trasformazione o le trasformazioni richieste, WIC richiama [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) con i parametri appropriati. Se il decodificatore è in grado di eseguire alcune, ma non tutte le trasformazioni richieste, WIC chiede al decodificatore di eseguire quelle che possono e utilizza gli oggetti di trasformazione WIC ([**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler), [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper), [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)) per eseguire le trasformazioni rimanenti che non possono essere eseguite dal decodificatore del frame sul risultato della chiamata **CopyPixels** . Se il decodificatore non supporta [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform), è necessario che WIC usi gli oggetti Transform per eseguire tutte le trasformazioni. È in genere molto più efficiente per il decodificatore eseguire trasformazioni durante il processo di decodifica rispetto a decodificare l'intera immagine e quindi eseguire le trasformazioni. Ciò vale soprattutto per le operazioni, ad esempio il ridimensionamento a una dimensione molto più piccola o le conversioni di formato pixel.
+Anche se facoltativo, è consigliabile che ogni decodificatore implementi questa interfaccia nella classe di decodifica a livello di fotogramma, perché può offrire vantaggi significativi in termini di prestazioni. Quando un'applicazione richiede un'area specifica di interesse, dimensioni, orientamento o formato pixel, anziché semplicemente decodificare l'intera immagine alla risoluzione completa e quindi applicare le trasformazioni richieste, Windows Imaging Component (WIC) chiama [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per questa interfaccia sull'oggetto [**IWICBitmapFrameDecode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) Se il decodificatore di frame lo supporta, WIC chiama il metodo o i metodi appropriati per determinare se il decodificatore può eseguire la trasformazione richiesta o determinare la dimensione o il formato pixel più vicino che il decodificatore può fornire a quello richiesto. Se il decodificatore può eseguire la trasformazione o le trasformazioni richieste, WIC richiama [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) con i parametri appropriati. Se il decodificatore può eseguire alcune, ma non tutte le trasformazioni richieste, WIC chiede al decodificatore di eseguirle e usa gli oggetti di trasformazione WIC ([**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler), [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper), [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)) per eseguire le trasformazioni rimanenti che non possono essere eseguite dal decodificatore di frame sul risultato della chiamata **a CopyPixels.** Se il decodificatore non supporta [**IWICBitmapSourceTransform,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform)WIC deve usare gli oggetti transform per eseguire tutte le trasformazioni. È in genere molto più efficiente per il decodificatore eseguire trasformazioni durante il processo di decodifica rispetto a decodificare l'intera immagine e quindi eseguire le trasformazioni. Ciò vale soprattutto per operazioni quali il ridimensionamento a dimensioni molto più piccole o conversioni in formato pixel.
 
 
 ```C++
@@ -49,7 +49,7 @@ interface IWICBitmapSourceTransform : IUnknown
 
 ### <a name="doessupporttransform"></a>DoesSupportTransform
 
-[**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform) chiede se il decodificatore supporta la rotazione o l'operazione di capovolgimento richiesta. I [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) che possono essere richiesti sono:
+[**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform) chiede se il decodificatore supporta l'operazione di rotazione o capovolgimento richiesta. Le [**wicBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) che possono essere richieste sono:
 
 
 ```C++
@@ -68,9 +68,9 @@ enum WICBitmapTransformOptions
 
 ### <a name="copypixels"></a>CopyPixels
 
-[**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) esegue il lavoro effettivo di decodifica dei bit dell'immagine, ad esempio il metodo [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) sull'interfaccia [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) , ma il metodo [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) su [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) è molto più potente e può migliorare significativamente le prestazioni di elaborazione delle immagini.
+[**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) esegue il lavoro effettivo di decodifica dei bit dell'immagine, ad esempio il metodo [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) [**nell'interfaccia IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) ma il metodo [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels) in [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) è molto più potente e può migliorare notevolmente le prestazioni di elaborazione delle immagini.
 
-Quando vengono richieste più operazioni di trasformazione, il risultato dipende dall'ordine in cui vengono eseguite le operazioni. Per garantire la prevedibilità e la coerenza tra i codec, è importante che tutti i codec eseguano queste operazioni nello stesso ordine. Questo è l'ordine canonico per l'esecuzione di queste operazioni.
+Quando vengono richieste più operazioni di trasformazione, il risultato dipende dall'ordine in cui vengono eseguite le operazioni. Per garantire prevedibilità e coerenza tra i codec, è importante che tutti i codec esercitino queste operazioni nello stesso ordine. Questo è l'ordine canonico per l'esecuzione di queste operazioni.
 
 1.  Scalabilità
 2.  Ritaglia
@@ -78,25 +78,25 @@ Quando vengono richieste più operazioni di trasformazione, il risultato dipende
 
 La conversione del formato pixel può essere eseguita in qualsiasi momento, perché non ha alcun effetto sulle altre trasformazioni.
 
-Il primo parametro, *prcSrc*, viene usato per specificare l'area di interesse per il ritaglio dell'immagine. Poiché il ridimensionamento viene eseguito prima del ritaglio per convenzione, se l'immagine deve essere ridimensionata e ritagliata, è necessario determinare l'area di interesse dopo che l'immagine è stata ridimensionata.
+Il primo parametro, *prcSrc,* viene usato per specificare l'area di interesse per il ritaglio dell'immagine. Poiché il ridimensionamento viene eseguito prima del ritaglio per convenzione, se l'immagine deve essere ridimensionata e ritagliata, l'area di interesse deve essere determinata dopo che l'immagine è stata ridimensionata.
 
-Il secondo e il terzo parametro indicano le dimensioni a cui ridimensionare l'immagine.
+Il secondo e il terzo parametro indicano le dimensioni in base alle quali ridimensionare l'immagine.
 
-Il parametro *pguidDstFormat* indica il formato pixel richiesto per l'immagine decodificata. Poiché WIC ha già chiamato [**GetClosestPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat), deve essere un formato pixel che il decodificatore ha indicato che supporta.
+Il *parametro pguidDstFormat* indica il formato pixel richiesto per l'immagine decodificata. Poiché WIC ha già chiamato [**GetClosestPixelFormat,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat)deve essere un formato pixel che il decodificatore ha indicato di supportare.
 
-Il parametro *dstTransform* indica l'angolo di rotazione richiesto e se capovolgere l'immagine verticalmente, orizzontalmente o entrambi. Anche in questo caso, poiché WIC avrà già chiamato [**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform), la trasformazione richiesta dovrebbe essere una delle quali il decodificatore ha già indicato che supporta. Tenere presente che la rotazione deve sempre essere eseguita dopo il ridimensionamento e il ritaglio.
+Il *parametro dstTransform* indica l'angolo di rotazione richiesto e indica se capovolgere l'immagine verticalmente, orizzontalmente o entrambi. Anche in questo caso, poiché WIC avrà già chiamato [**DoesSupportTransform,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform)la trasformazione richiesta deve essere una trasformazione che il decodificatore ha già indicato di supportare. Tenere presente che la rotazione deve essere sempre eseguita dopo il ridimensionamento e il ritaglio.
 
 ### <a name="getclosestsize"></a>GetClosestSize
 
-[**GetClosestSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestsize) accetta due parametri in/out. Il chiamante utilizza i parametri *puiWidth* e *puiHeight* per specificare le dimensioni in base alle quali il chiamante preferisce l'immagine da decodificare. Tuttavia, un decodificatore può decodificare un'immagine solo in una dimensione che è un multiplo delle dimensioni DCT e formati di immagine diversi possono avere dimensioni DCT diverse. Il decodificatore deve determinare, in base alle proprie dimensioni DCT, il più vicino possibile alla dimensione richiesta e impostare *puiWidth* e *puiHeight* su tali dimensioni alla restituzione. Se è richiesta una dimensione maggiore, ma il codec non supporta il ridimensionamento, verrà restituito il valore originale.
+[**GetClosestSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestsize) accetta due parametri in/out. Il chiamante usa *i parametri puiWidth* e *puiHeight* per specificare le dimensioni in base alle quali il chiamante preferisce la decodifica dell'immagine. Tuttavia, un decodificatore può decodificare un'immagine solo in dimensioni che sono un multiplo delle dimensioni DCT e formati di immagine diversi possono avere dimensioni DCT diverse. Il decodificatore deve determinare, in base alle proprie dimensioni DCT, quanto più vicino può arrivare alla dimensione richiesta e impostare *puiWidth* e *puiHeight* su tali dimensioni al ritorno. Se vengono richieste dimensioni maggiori, ma il codec non supporta l'upscaling, deve essere restituito l'originale.
 
 ### <a name="getclosestpixelformat"></a>GetClosestPixelFormat
 
-[**GetClosestPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat) viene usato per determinare il formato pixel più vicino al formato pixel richiesto che può essere fornito dal decodificatore senza perdita di dati. È sempre preferibile eseguire la conversione in un formato pixel più ampio rispetto a uno più piccolo, anche se aumenterà le dimensioni dell'immagine, perché può sempre essere riconvertito in un formato più restrittivo, se necessario. Tuttavia, una volta persi, i dati non possono essere recuperati.
+[**GetClosestPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat) viene usato per determinare il formato pixel più vicino al formato pixel richiesto che il decodificatore può fornire senza perdita di dati. È sempre preferibile eseguire la conversione in un formato pixel più ampio rispetto a un formato più ristretto, anche se aumenta le dimensioni dell'immagine, perché può sempre essere riconvertito in un formato più restrittivo, se necessario. Tuttavia, dopo che i dati sono stati persi, non possono essere recuperati.
 
-## <a name="continued-reading"></a>Continua lettura
+## <a name="continued-reading"></a>Lettura continua
 
-Per ulteriori informazioni su come creare un codec abilitato per WIC, vedere [implementazione di IWICDevelopRaw](-wic-imp-iwicdevelopraw.md).
+Per altre informazioni su come creare un codec abilitato per WIC, vedere [Implementazione di IWICDevelopRaw.](-wic-imp-iwicdevelopraw.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -120,10 +120,10 @@ Per ulteriori informazioni su come creare un codec abilitato per WIC, vedere [im
 [Implementazione di IWICDevelopRaw](-wic-imp-iwicdevelopraw.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Cenni preliminari sul componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

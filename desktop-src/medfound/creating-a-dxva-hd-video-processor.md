@@ -4,12 +4,12 @@ ms.assetid: 43a97dc8-19b3-412c-a015-339099bf4f6c
 title: Creazione di un processore video DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e89c5a361335f83296eec538a5a6a710b9e19604
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4945153dfd3e14f1d2caae9b0a84f201745ea24722781bf998930477054138c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974820"
 ---
 # <a name="creating-a-dxva-hd-video-processor"></a>Creazione di un processore video DXVA-HD
 
@@ -39,7 +39,7 @@ const UINT          VIDEO_HEIGHT         = 480;
 
 Per creare un processore video DXVA-HD:
 
-1.  Compilare una [**struttura DXVAHD \_ CONTENT \_ DESC**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) con una descrizione del contenuto video. Il driver usa queste informazioni come suggerimento per ottimizzare le funzionalità del processore video. La struttura non contiene una descrizione del formato completa.
+1.  Compilare una [**struttura DXVAHD \_ CONTENT \_ DESC**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_content_desc) con una descrizione del contenuto video. Il driver usa queste informazioni come suggerimento per ottimizzare le funzionalità del processore video. La struttura non contiene una descrizione di formato completa.
     ```C++
         DXVAHD_RATIONAL fps = { VIDEO_FPS, 1 }; 
 
@@ -56,7 +56,7 @@ Per creare un processore video DXVA-HD:
 
     
 
-2.  Chiamare [**DXVAHD \_ CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) per creare il dispositivo DXVA-HD. Questa funzione restituisce un puntatore all'interfaccia del dispositivo [**IDXVAHD. \_**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device)
+2.  Chiamare [**DXVAHD \_ CreateDevice**](/windows/desktop/api/dxvahd/nf-dxvahd-dxvahd_createdevice) per creare il dispositivo DXVA-HD. Questa funzione restituisce un puntatore [**all'interfaccia del dispositivo IDXVAHD. \_**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_device)
     ```C++
         hr = DXVAHD_CreateDevice(g_pD3DDevice, &desc, DXVAHD_DEVICE_USAGE_PLAYBACK_NORMAL,
             NULL, &pDXVAHD);
@@ -64,7 +64,7 @@ Per creare un processore video DXVA-HD:
 
     
 
-3.  Chiamare [**IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps). Questo metodo compila una struttura [**\_ VPDEVCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) con le funzionalità del dispositivo. Se sono necessarie funzionalità di elaborazione video specifiche, ad esempio la chiave luma o il filtro delle immagini, verificarne la disponibilità usando questa struttura.
+3.  Chiamare [**IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps). Questo metodo inserisce in una [**struttura DXVAHD \_ VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) le funzionalità del dispositivo. Se sono necessarie funzionalità di elaborazione video specifiche, ad esempio luma keying o filtro di immagini, controllarne la disponibilità usando questa struttura.
     ```C++
         DXVAHD_VPDEVCAPS caps;
 
@@ -75,7 +75,7 @@ Per creare un processore video DXVA-HD:
 
 4.  Controllare se il dispositivo DXVA-HD supporta i formati video di input necessari. [L'argomento Controllo dei formati DXVA-HD](checking-supported-dxva-hd-formats.md) supportati descrive questo passaggio in modo più dettagliato.
 5.  Controllare se il dispositivo DXVA-HD supporta il formato di output necessario. La sezione [Controllo dei formati DXVA-HD](checking-supported-dxva-hd-formats.md) supportati descrive questo passaggio in modo più dettagliato.
-6.  Allocare una matrice [**di strutture \_ VPCAPS DXVAHD.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) Il numero di elementi della matrice che devono essere allocati è dato dal membro **VideoProcessorCount** della struttura [**\_ VPDEVCAPS DXVAHD,**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) ottenuto nel passaggio 3.
+6.  Allocare una matrice [**di strutture \_ VPCAPS DXVAHD.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) Il numero di elementi della matrice che devono essere allocati viene fornito dal membro **VideoProcessorCount** della struttura [**DXVAHD \_ VPDEVCAPS,**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) ottenuto nel passaggio 3.
     ```C++
         // Create the array of video processor caps. 
         
@@ -90,7 +90,7 @@ Per creare un processore video DXVA-HD:
 
     
 
-7.  Ogni [**struttura \_ VPCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) rappresenta un processore video distinto. È possibile scorrere questa matrice per individuare le funzionalità di ogni processore video. La struttura include informazioni sulle funzionalità di deinterlacing, telecine e conversione della frequenza fotogrammi del processore video.
+7.  Ogni [**struttura \_ VPCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) rappresenta un processore video distinto. È possibile scorrere questa matrice per individuare le funzionalità di ogni processore video. La struttura include informazioni sulle funzionalità di dinterlacciamento, telee conversione della frequenza dei fotogrammi del processore video.
 8.  Selezionare un processore video da creare. Il **membro VPGuid** della struttura [**\_ VPCAPS DXVAHD**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) contiene un GUID che identifica in modo univoco il processore video. Passare questo GUID al [**metodo IDXVAHD \_ Device::CreateVideoProcessor.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) Il metodo restituisce un [**puntatore IDXVAHD \_ VideoProcessor.**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor)
     ```C++
         HRESULT hr = pDXVAHD->GetVideoProcessorCaps(
@@ -222,7 +222,7 @@ done:
 
 
 
-La funzione CreateVPDevice illustrata in questo esempio crea il processore video (passaggi da 5 a 7):
+La funzione CreateVPDevice mostrata in questo esempio crea il processore video (passaggi da 5 a 7):
 
 
 ```C++

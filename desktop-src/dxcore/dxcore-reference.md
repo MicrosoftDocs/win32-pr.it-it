@@ -1,30 +1,30 @@
 ---
 title: Riferimento DXCore
-description: Questa sezione descrive le API DXCore dichiarate in dxcore. h e dxcore_interface. h.
+description: Questa sezione illustra le API DXCore dichiarate in dxcore.h e dxcore_interface.h.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: e90981e05b81508ce54cad1019dcf405f21442c1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 14e4b6999bec8b95a2701f4ffe59b826c19f01ac3633c7597b04957307dcc07c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042959"
 ---
 # <a name="dxcore-reference"></a>Riferimento DXCore
 
-Questa sezione descrive le API DXCore dichiarate in dxcore. h e dxcore_interface. h.
+Questa sezione illustra le API DXCore dichiarate in dxcore.h e dxcore_interface.h.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione |
 |-|-|
-| [GUID di attributi di adapter DXCore](dxcore-adapter-attribute-guids.md) | I GUID dell'attributo adapter seguenti sono dichiarati in dxcore_interface. h. |
-| [Callback di DXCore](dxcore-callbacks.md) | I callback seguenti sono dichiarati in dxcore_interface. h. |
-| [Enumerazioni DXCore](dxcore-enumerations.md) | Le enumerazioni seguenti sono dichiarate in dxcore_interface. h. |
-| [Funzioni DXCore](dxcore-functions.md) | Le funzioni gratuite seguenti sono dichiarate in dxcore. h. |
-| [Interfacce DXCore](dxcore-interfaces.md) | Le interfacce seguenti e i relativi metodi sono dichiarati in dxcore_interface. h. |
-| [Strutture DXCore](dxcore-structures.md) | Le strutture seguenti sono dichiarate in dxcore_interface. h. |
+| [GUID di attributi di adapter DXCore](dxcore-adapter-attribute-guids.md) | I GUID degli attributi dell'adapter seguenti vengono dichiarati in dxcore_interface.h. |
+| [Callback di DXCore](dxcore-callbacks.md) | I callback seguenti vengono dichiarati in dxcore_interface.h. |
+| [Enumerazioni DXCore](dxcore-enumerations.md) | Le enumerazioni seguenti vengono dichiarate in dxcore_interface.h. |
+| [Funzioni DXCore](dxcore-functions.md) | Le funzioni gratuite seguenti sono dichiarate in dxcore.h. |
+| [Interfacce DXCore](dxcore-interfaces.md) | Le interfacce seguenti e i relativi metodi vengono dichiarati in dxcore_interface.h. |
+| [Strutture DXCore](dxcore-structures.md) | Le strutture seguenti vengono dichiarate in dxcore_interface.h. |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

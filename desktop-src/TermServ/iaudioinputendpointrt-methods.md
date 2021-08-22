@@ -5,16 +5,16 @@ ms.assetid: B6F1995C-63EE-4701-9EC4-DB204D54662F
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c6177307cd10dba22b88b6427032d13e70079a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 25e913af4d0b4b6e1034a3f743e499940a357518942f7b59c1e701baf88ed735
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059209"
 ---
 # <a name="iaudioinputendpointrt-methods"></a>Metodi IAudioInputEndpointRT
 
-L'interfaccia [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) espone i metodi seguenti.
+[**L'interfaccia IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioinputendpointrt) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,9 +22,9 @@ L'interfaccia [**IAudioInputEndpointRT**](/windows/desktop/api/Audioengineendpoi
 -   [**Metodo PulseEndpoint**](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-pulseendpoint)
 -   [**Metodo ReleaseInputDataPointer**](/windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioinputendpointrt-releaseinputdatapointer)
 
- 
+ 
 
- 
+ 
 
 
 

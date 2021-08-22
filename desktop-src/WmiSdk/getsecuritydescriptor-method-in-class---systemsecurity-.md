@@ -1,5 +1,5 @@
 ---
-description: Ottiene il descrittore di sicurezza che controlla l'accesso allo spazio dei nomi WMI a cui si è connessi. Il descrittore di sicurezza viene restituito come un'istanza di \_ \_ securityDescriptor.
+description: Ottiene il descrittore di sicurezza che controlla l'accesso allo spazio dei nomi WMI a cui si è connessi. Il descrittore di sicurezza viene restituito come istanza di \_ \_ SecurityDescriptor.
 ms.assetid: b031af45-9237-434d-91db-69222306c615
 ms.tgt_platform: multiple
 title: Metodo GetSecurityDescriptor della classe __SystemSecurity
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: 7aece0a50678689141de9b9a38a014414578de3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77053174878db77409c525510acb54740ac8ad5c5c0505af5bf6ff8421cdf737
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050859"
 ---
 # <a name="getsecuritydescriptor-method-of-the-__systemsecurity-class"></a>Metodo GetSecurityDescriptor della \_ \_ classe SystemSecurity
 
-Il metodo **GetSecurityDescriptor** ottiene il descrittore di sicurezza che controlla l'accesso allo spazio dei nomi WMI a cui si è connessi. Il descrittore di sicurezza viene restituito come un'istanza di [**\_ \_ securityDescriptor**](--securitydescriptor.md). Per ulteriori informazioni, vedere [modifica della sicurezza di accesso per gli oggetti a protezione diretta](changing-access-security-on-securable-objects.md).
+Il **metodo GetSecurityDescriptor** ottiene il descrittore di sicurezza che controlla l'accesso allo spazio dei nomi WMI a cui si è connessi. Il descrittore di sicurezza viene restituito come istanza di [**\_ \_ SecurityDescriptor**](--securitydescriptor.md). Per altre informazioni, vedere [Modifica della sicurezza degli accessi in oggetti a protezione diretta](changing-access-security-on-securable-objects.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ uint32 GetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descrittore* \[ out\]
+*Descrittore* \[ Cambio\]
 </dt> <dd>
 
 Descrittore di sicurezza associato allo spazio dei nomi WMI.
@@ -49,14 +49,14 @@ Descrittore di sicurezza associato allo spazio dei nomi WMI.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per ulteriori informazioni, vedere [codici restituiti WMI](wmi-return-codes.md) o [**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum).
+Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altre informazioni, vedere [Codici restituiti WMI](wmi-return-codes.md) o [**WbemErrorEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum)
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-Operazione completata.
+Completamento.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Errore sconosciuto.
 **9**
 </dt> <dd>
 
-L'utente non dispone di privilegi sufficienti per eseguire il metodo.
+L'utente non dispone di privilegi adeguati per eseguire il metodo .
 
 </dd> <dt>
 
@@ -90,9 +90,9 @@ Un parametro specificato nella chiamata al metodo non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-L' [**istanza Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) rappresenta un tipo di dati di [**\_ \_ controllo del descrittore di sicurezza**](/windows/desktop/SecAuthZ/security-descriptor-control) e contiene un elenco di controllo di [*accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) e un elenco di controllo di accesso di [*sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Per altre informazioni, vedere [elenchi di controllo di accesso](/windows/desktop/SecAuthZ/access-control-lists).
+[**L'istanza \_ di Win32 SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) rappresenta un tipo di dati [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contiene un elenco di controllo di accesso discrezionale (DACL) e un elenco di controllo di accesso [*di*](/windows/desktop/SecGloss/s-gly) sistema (SACL). [](/windows/desktop/SecGloss/d-gly) Per altre informazioni, vedere [Elenchi di controllo di accesso](/windows/desktop/SecAuthZ/access-control-lists).
 
-Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**costanti Privilege**](privilege-constants.md) ed [esecuzione di operazioni con privilegi](executing-privileged-operations.md).
+Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**Costanti dei privilegi**](privilege-constants.md) ed Esecuzione di operazioni con [privilegi](executing-privileged-operations.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,7 +113,7 @@ Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un 
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[Impostazione di descrittori di sicurezza spazio dei nomi](setting-namespace-security-descriptors.md)
+[Impostazione dei descrittori di sicurezza di Namepace](setting-namespace-security-descriptors.md)
 </dt> </dl>
 
  

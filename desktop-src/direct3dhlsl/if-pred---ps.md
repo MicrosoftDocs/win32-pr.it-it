@@ -1,6 +1,6 @@
 ---
-title: Se prede-PS
-description: Inizio di un if bool-PS... else-PS... il blocco endif-PS, con la condizione ricavata dal contenuto del registro predicato.
+title: if pred - ps
+description: Inizio di un if bool - ps... else - ps... endif - ps block, con la condizione prelevata dal contenuto del registro del predicato.
 ms.assetid: 7b43bf71-a2e9-468f-805f-620de065db08
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,64 +9,64 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ead7c5936550715d48ee1ef6a3938b6219558823
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a1a9e1c531e5dc6cd76bdd220a94730f2fb7b859eb99d9bba217a008fb02b4c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511917"
 ---
-# <a name="if-pred---ps"></a>Se prede-PS
+# <a name="if-pred---ps"></a>if pred - ps
 
-Inizio di un [if bool-PS](if-bool---ps.md)... [else-PS](else---ps.md)... il blocco [endif-PS](endif---ps.md) , con la condizione ricavata dal contenuto del registro predicato.
+Inizio di [un if bool - ps](if-bool---ps.md)... [else - ps](else---ps.md)... [endif - ps](endif---ps.md) block, con la condizione prelevata dal contenuto del registro del predicato.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| Se \[ ! \] prede. replicateSwizzle |
+| se \[ ! \] pred.replicateSwizzle |
 |-------------------------------|
 
 
 
- 
+ 
 
 Dove:
 
--   \[!\] è un modificatore facoltativo NOT. Il valore viene modificato nel registro predicato.
--   prede è il [registro predicato](dx9-graphics-reference-asm-ps-registers-predicate.md).
--   replicateSwizzle è un singolo componente copiato (o replicato) in tutti i quattro componenti (swizzled). I componenti validi sono: \[ x, y, z, w \] o \[ r, g, b, a \] .
+-   \[!\] è un modificatore NOT facoltativo. In questo modo viene modificato il valore nel registro del predicato.
+-   pred è il [registro predicato](dx9-graphics-reference-asm-ps-registers-predicate.md).
+-   replicateSwizzle è un singolo componente che viene copiato (o replicato) in tutti e quattro i componenti (con swizzle). I componenti validi \[ sono: x, y, z, w \] o \[ r, g, b, a \] .
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| Se \_ prede              |      |      |      |      |      | x    | x     | x    | x     |
+| if \_ pred              |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Questa istruzione viene utilizzata per ignorare un blocco di codice, in base a un canale del registro predicato. Each se il \_ blocco prede deve terminare con un'istruzione [else-PS](else---ps.md) o [endif-PS](endif---ps.md) .
+Questa istruzione viene usata per ignorare un blocco di codice, in base a un canale del registro predicato. Ogni blocco \_ if pred deve terminare con [un'istruzione else - ps](else---ps.md) o [endif - ps.](endif---ps.md)
 
 Tali restrizioni includono:
 
-Se i \_ blocchi di predazione possono essere annidati. Viene conteggiata la profondità di nidificazione dinamica totale insieme a [if \_ comp](if-comp---ps.md) Blocks.
+se \_ i blocchi pred possono essere annidati. Questo conteggia la profondità di annidamento dinamica totale insieme ai [blocchi \_ comp.](if-comp---ps.md)
 
-Un blocco If prede non può risiedere in \_ un blocco di ciclo, ma deve essere completamente al suo interno o racchiuderlo.
+Se un blocco pred non può essere in un blocco di ciclo, deve essere completamente al suo interno \_ o racchiuderlo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

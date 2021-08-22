@@ -1,7 +1,7 @@
 ---
-description: Il metodo attivo crea un thread di lavoro che estrae i dati dal pin di output. Questo metodo consente inoltre di eseguire il commit dell'allocatore.
+description: Il metodo Active crea un thread di lavoro che esegue il pull dei dati dal pin di output. Questo metodo esegue anche il commit dell'allocatore.
 ms.assetid: 9efa20f3-7909-4d87-bfa8-314d055b80f8
-title: Metodo CPullPin. Active (Pullpin. h)
+title: Metodo CPullPin.Active (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 461f6554f828dc096029ee1e7a1832e12a7c262a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6572ad0b415f4c1a51133d080e84a2e869787dea0c23614478b09c7b86296b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073525"
 ---
-# <a name="cpullpinactive-method"></a>Metodo CPullPin. Active
+# <a name="cpullpinactive-method"></a>Metodo CPullPin.Active
 
-Il metodo **attivo** crea un thread di lavoro che estrae i dati dal pin di output. Questo metodo consente inoltre di eseguire il commit dell'allocatore.
+Il **metodo Active** crea un thread di lavoro che esegue il pull dei dati dal pin di output. Questo metodo esegue anche il commit dell'allocatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                                           |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Esito positivo.<br/>                                                   |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl> | La connessione del PIN non è stata stabilita correttamente.<br/>          |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>       | Non è stato possibile creare il thread oppure il thread esiste già.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                                                   |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | La connessione pin non è stata stabilita correttamente.<br/>          |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>       | Impossibile creare il thread oppure il thread esiste già.<br/> |
 
 
 
@@ -58,9 +58,9 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo quando il filtro proprietario diventa attivo. Se il pin di input deriva da [**CBasePin**](cbasepin.md), eseguire l'override del metodo [**CBasePin:: Active**](cbasepin-active.md) .
+Chiamare questo metodo quando il filtro proprietario diventa attivo. Se il pin di input deriva da [**CBasePin,**](cbasepin.md)eseguire l'override del [**metodo CBasePin::Active.**](cbasepin-active.md)
 
-Prima di chiamare questo metodo, chiamare il metodo [**CPullPin:: Connect**](cpullpin-connect.md) per stabilire la connessione con il pin di output.
+Prima di chiamare questo metodo, chiamare il [**metodo CPullPin::Connessione**](cpullpin-connect.md) per stabilire la connessione con il pin di output.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Prima di chiamare questo metodo, chiamare il metodo [**CPullPin:: Connect**](cpu
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

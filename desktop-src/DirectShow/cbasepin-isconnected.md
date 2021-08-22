@@ -1,7 +1,7 @@
 ---
-description: Il metodo di connessione determina se il PIN è connesso a un altro pin.
+description: Il metodo IsConnected determina se il pin è connesso a un altro pin.
 ms.assetid: d8b9b43b-6f8d-4d75-9688-f0cee3794a78
-title: Metodo CBasePin. Disconnected (Amfilter. h)
+title: Metodo CBasePin.IsConnected (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b857e1ceff4844d66c55cf729a3d2b9771d48846
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95bfbe3613482d879bde4945d32e3df590c9bd5491b9f274442f3315771f9f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955180"
 ---
-# <a name="cbasepinisconnected-method"></a>Metodo CBasePin. disconnected
+# <a name="cbasepinisconnected-method"></a>Metodo CBasePin.IsConnected
 
-Il `IsConnected` metodo determina se il PIN è connesso a un altro pin.
+Il `IsConnected` metodo determina se il pin è connesso a un altro pin.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il PIN è connesso. In caso contrario, restituisce **false**.
+Restituisce **TRUE se** il pin è connesso. In caso contrario, **restituisce FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il PIN è connesso. In caso contrario, restituisce **fal
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

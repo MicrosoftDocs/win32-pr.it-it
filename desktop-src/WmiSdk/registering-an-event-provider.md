@@ -1,5 +1,5 @@
 ---
-description: Per creare un provider di eventi WMI, è necessario registrare l' \_ \_ istanza di Win32Provider che rappresenta il provider utilizzando un'istanza di \_ \_ EventProviderRegistration.
+description: Per creare un provider di eventi WMI, è necessario registrare \_ \_ l'istanza win32Provider che rappresenta il provider usando \_ \_ un'istanza di EventProviderRegistration.
 ms.assetid: 81f2ba3b-a1cb-42f5-b1a7-b1ca65963902
 ms.tgt_platform: multiple
 title: Registrazione di un provider di eventi
@@ -10,31 +10,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2a4aa77c5c5936639435844179f259080085e02c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44c6521e56441c929ef108ce4c4b624c11b06ca26dc508c8f2f924e2f87babba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992511"
 ---
 # <a name="registering-an-event-provider"></a>Registrazione di un provider di eventi
 
-Per creare un [*provider di eventi*](gloss-e.md) WMI, è necessario registrare l'istanza di [**\_ \_ Win32Provider**](--win32provider.md) che rappresenta il provider utilizzando un'istanza di [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md). Come oggetto COM, il provider deve eseguire la registrazione con il sistema operativo e WMI. Nella procedura seguente si presuppone che il processo di registrazione sia già stato implementato come descritto in [registrazione di un provider](registering-a-provider.md).
+Per creare un [*provider di eventi*](gloss-e.md) WMI, è necessario registrare l'istanza [**\_ \_ win32Provider**](--win32provider.md) che rappresenta il provider usando un'istanza di [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md). Come oggetto COM, il provider deve registrarsi con il sistema operativo e WMI. La procedura seguente presuppone che il processo di registrazione sia già stato implementato come descritto in [Registrazione di un provider](registering-a-provider.md).
 
-Nella procedura riportata di seguito viene descritto come registrare un provider di eventi.
+La procedura seguente descrive come registrare un provider di eventi.
 
 **Per registrare un provider di eventi**
 
-1.  Creare un'istanza della classe [**\_ \_ Win32Provider**](--win32provider.md) che descrive il provider.
-2.  Creare un'istanza della classe [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) che descrive il set di funzionalità del provider.
+1.  Creare un'istanza della [**\_ \_ classe Win32Provider**](--win32provider.md) che descrive il provider.
+2.  Creare un'istanza della [**\_ \_ classe EventProviderRegistration**](--eventproviderregistration.md) che descrive il set di funzionalità del provider.
 
-    La classe [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) eredita molte proprietà dalla classe padre [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md) . Le proprietà locali della classe **\_ \_ EventProviderRegistration** sono il percorso dell'oggetto per il provider e un elenco di query che descrivono gli eventi supportati dal provider. Per ulteriori informazioni, vedere [esecuzione di query su WMI](querying-wmi.md).
+    La [**\_ \_ classe EventProviderRegistration**](--eventproviderregistration.md) eredita molte proprietà dalla classe padre [**\_ \_ ObjectProviderRegistration.**](--objectproviderregistration.md) Le proprietà locali della **\_ \_ classe EventProviderRegistration** sono il percorso dell'oggetto per il provider e un elenco di query che descrivono gli eventi supportati dal provider. Per altre informazioni, vedere [Esecuzione di query su WMI.](querying-wmi.md)
 
-3.  Caricare l'implementazione delle classi [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) nel repository WMI.
+3.  Caricare l'implementazione [**\_ \_ delle classi Win32Provider**](--win32provider.md) [**\_ \_ ed EventProviderRegistration**](--eventproviderregistration.md) nel repository WMI.
 
-    WMI utilizza la definizione della classe per registrare e accedere al provider di eventi. Per ulteriori informazioni, vedere la pagina relativa alla [registrazione di un provider](registering-a-provider.md).
+    WMI usa la definizione della classe per registrare e accedere al provider di eventi. Per altre informazioni, vedere [Registrazione di un provider](registering-a-provider.md).
 
-Nell'esempio di codice seguente viene descritta un'implementazione di una classe [**\_ \_ Win32Provider**](--win32provider.md) e di una classe [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) .
+L'esempio di codice seguente descrive un'implementazione di [**\_ \_ una classe Win32Provider**](--win32provider.md) e di [**\_ \_ una classe EventProviderRegistration.**](--eventproviderregistration.md)
 
 ``` syntax
 instance of __Win32Provider as $P
@@ -61,9 +61,9 @@ EventQueryList = {
 };
 ```
 
-La prima query indica che il provider genera tutte le notifiche degli eventi per la classe di evento estrinseca FaxEvent. Poiché usa l'operatore ISA, la seconda query implica che il provider genera notifiche per tutti gli eventi di creazione dell'istanza per la classe [**\_ disco logico Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) e per tutte le relative sottoclassi.
+La prima query indica che il provider genera tutte le notifiche degli eventi per la classe di evento estensiva FaxEvent. Poiché usa l'operatore ISA, la seconda query implica che il provider genera notifiche per tutti gli eventi di creazione dell'istanza per la classe [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) e tutte le relative sottoclassi.
 
-Quando un provider viene registrato per fornire un evento intrinseco, l'evento deve essere applicato a tutte le istanze di una classe. In altre parole, non è possibile scrivere una query per fornire eventi di creazione di istanze solo per alcune unità disco che appartengono alla classe [**Win32 \_ disco logico**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+Quando un provider si registra per fornire un evento intrinseco, l'evento deve essere applicato a tutte le istanze di una classe. In altre parole, non è possibile scrivere una query per fornire eventi di creazione dell'istanza solo per alcune unità disco appartenenti alla [**classe \_ LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
  
 

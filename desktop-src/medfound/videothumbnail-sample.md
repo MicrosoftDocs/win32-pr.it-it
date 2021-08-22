@@ -1,25 +1,25 @@
 ---
-description: Mostra come usare Microsoft Media Foundation per estrarre le immagini di anteprima da un file video. Nell'immagine seguente viene illustrato un esempio di queste immagini di anteprima.
+description: Viene illustrato come usare Microsoft Media Foundation per estrarre immagini di anteprima da un file video. L'immagine seguente mostra un esempio di queste immagini di anteprima.
 ms.assetid: 2c941f57-cd22-4462-bc47-347c383705fd
-title: Esempio VideoThumbnail
+title: Esempio di VideoThumbnail
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caebe2e096ee45361dfe98b19071a5f1e388019e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96fc361f443e870ffe7c3fadf3c4cdadf5b0c15d59819df02369597742d74a32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104555408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972585"
 ---
-# <a name="videothumbnail-sample"></a>Esempio VideoThumbnail
+# <a name="videothumbnail-sample"></a>Esempio di VideoThumbnail
 
-Mostra come usare Microsoft Media Foundation per estrarre le immagini di anteprima da un file video. Nell'immagine seguente viene illustrato un esempio di queste immagini di anteprima.
+Viene illustrato come usare Microsoft Media Foundation per estrarre immagini di anteprima da un file video. L'immagine seguente mostra un esempio di queste immagini di anteprima.
 
-![screenshot dell'esempio video thumbnail ](images/videothumbnail.png)
+![Screenshot dell'esempio di anteprima del video ](images/videothumbnail.png)
 
 ## <a name="apis-demonstrated"></a>API illustrate
 
-In questo esempio vengono illustrate le interfacce Media Foundation seguenti:
+Questo esempio illustra le interfacce Media Foundation seguenti:
 
 -   [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)
 
@@ -37,7 +37,7 @@ In questo esempio vengono illustrate le interfacce Media Foundation seguenti:
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/VideoThumbnail).
+Questo esempio è disponibile nel [repository github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/VideoThumbnail).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

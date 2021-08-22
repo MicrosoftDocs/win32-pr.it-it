@@ -1,32 +1,32 @@
 ---
-description: Negli esempi di codice seguenti viene illustrato come eseguire le attività seguenti associate a messaggi e code di messaggi di Windows.
+description: Gli esempi di codice seguenti illustrano come eseguire le attività seguenti associate Windows messaggi e code di messaggi.
 ms.assetid: 62b4616c-37bf-4d9f-8891-7010c7035d18
-title: Utilizzo di messaggi e code di messaggi
+title: Uso di messaggi e code di messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a33f422a1a7c77f2c2fcd5913f931168a350a26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee617f2c48325eccf5a2fdb07741bb88b47738dea812d372acda1454c9dd3d9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028339"
 ---
-# <a name="using-messages-and-message-queues"></a>Utilizzo di messaggi e code di messaggi
+# <a name="using-messages-and-message-queues"></a>Uso di messaggi e code di messaggi
 
-Negli esempi di codice seguenti viene illustrato come eseguire le attività seguenti associate a messaggi e code di messaggi di Windows.
+Gli esempi di codice seguenti illustrano come eseguire le attività seguenti associate Windows messaggi e code di messaggi.
 
 -   [Creazione di un ciclo di messaggi](#creating-a-message-loop)
--   [Esame di una coda di messaggi](#examining-a-message-queue)
--   [Invio di un messaggio](#posting-a-message)
+-   [Analisi di una coda di messaggi](#examining-a-message-queue)
+-   [Pubblicazione di un messaggio](#posting-a-message)
 -   [Invio di un messaggio](#sending-a-message)
 
 ## <a name="creating-a-message-loop"></a>Creazione di un ciclo di messaggi
 
-Il sistema non crea automaticamente una coda di messaggi per ogni thread. Il sistema crea invece una coda di messaggi solo per i thread che eseguono operazioni che richiedono una coda di messaggi. Se il thread crea una o più finestre, è necessario fornire un ciclo di messaggi. Questo ciclo di messaggi recupera i messaggi dalla coda di messaggi del thread e li invia alle procedure appropriate della finestra.
+Il sistema non crea automaticamente una coda di messaggi per ogni thread. Al contrario, il sistema crea una coda di messaggi solo per i thread che eseguono operazioni che richiedono una coda di messaggi. Se il thread crea una o più finestre, è necessario fornire un ciclo di messaggi. questo ciclo di messaggi recupera i messaggi dalla coda di messaggi del thread e li invia alle procedure della finestra appropriate.
 
-Poiché il sistema indirizza i messaggi a singole finestre in un'applicazione, è necessario che un thread crei almeno una finestra prima di avviare il ciclo di messaggi. La maggior parte delle applicazioni contiene un solo thread che crea finestre. Una tipica applicazione registra la classe della finestra principale, crea e Mostra la finestra principale, quindi avvia il ciclo di messaggi, tutto nella funzione [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) .
+Poiché il sistema indirizza i messaggi a singole finestre in un'applicazione, un thread deve creare almeno una finestra prima di avviare il ciclo di messaggi. La maggior parte delle applicazioni contiene un singolo thread che crea finestre. Un'applicazione tipica registra la classe window per la finestra principale, crea e mostra la finestra principale e quindi avvia il ciclo di messaggi, tutto nella [**funzione WinMain.**](/windows/win32/api/winbase/nf-winbase-winmain)
 
-Per creare un ciclo di messaggi, usare le funzioni [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) e [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . Se l'applicazione deve ottenere l'input di caratteri dall'utente, includere la funzione [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) nel ciclo. **TranslateMessage** converte i messaggi di chiave virtuale in messaggi di tipo carattere. Nell'esempio seguente viene illustrato il ciclo di messaggi nella funzione [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) di una semplice applicazione basata su Windows.
+Per creare un ciclo di messaggi, usare [**le funzioni GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) e [**DispatchMessage.**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Se l'applicazione deve ottenere l'input di caratteri dall'utente, includere la [**funzione TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) nel ciclo . **TranslateMessage** converte i messaggi di chiave virtuale in messaggi di tipo carattere. L'esempio seguente illustra il ciclo di messaggi nella [**funzione WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) di una semplice Windows basata su codice.
 
 
 ```
@@ -105,7 +105,7 @@ int PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 
 
-Nell'esempio seguente viene illustrato un ciclo di messaggi per un thread che utilizza acceleratori e viene visualizzata una finestra di dialogo non modale. Quando [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) o [**IsDialogMessage**](/windows/win32/api/winuser/nf-winuser-isdialogmessagea) restituisce **true** (che indica che il messaggio è stato elaborato), [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) e [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) non vengono chiamati. Il motivo è che **TranslateAccelerator** e **IsDialogMessage** eseguono tutte le operazioni necessarie per la conversione e l'invio dei messaggi.
+Nell'esempio seguente viene illustrato un ciclo di messaggi per un thread che usa i tasti di scelta rapida e visualizza una finestra di dialogo non modali. Quando [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) o [**IsDialogMessage**](/windows/win32/api/winuser/nf-winuser-isdialogmessagea) restituisce **TRUE** (a indicare che il messaggio è stato elaborato), [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) e [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) non vengono chiamati. Il motivo è che **TranslateAccelerator** e **IsDialogMessage** eseguono tutte le operazioni necessarie per la traduzione e l'invio dei messaggi.
 
 
 ```
@@ -140,13 +140,13 @@ while( (bRet = GetMessage( &msg, NULL, 0, 0 )) != 0)
 
 
 
-## <a name="examining-a-message-queue"></a>Esame di una coda di messaggi
+## <a name="examining-a-message-queue"></a>Analisi di una coda di messaggi
 
-Occasionalmente, un'applicazione deve esaminare il contenuto della coda di messaggi di un thread dall'esterno del ciclo di messaggi del thread. Se, ad esempio, la routine della finestra di un'applicazione esegue un'operazione di disegno lunga, potrebbe essere necessario che l'utente sia in grado di interrompere l'operazione. A meno che l'applicazione non esamini periodicamente la coda di messaggi durante l'operazione per i messaggi del mouse e della tastiera, non risponderà all'input dell'utente finché l'operazione non viene completata. Il motivo è che la funzione [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) nel ciclo di messaggi del thread non viene restituita fino al termine dell'elaborazione di un messaggio da parte della routine della finestra.
+In alcuni casi, un'applicazione deve esaminare il contenuto della coda di messaggi di un thread dall'esterno del ciclo di messaggi del thread. Ad esempio, se la routine della finestra di un'applicazione esegue un'operazione di disegno lunga, è possibile che l'utente sia in grado di interrompere l'operazione. A meno che l'applicazione non esamini periodicamente la coda di messaggi durante l'operazione per i messaggi del mouse e della tastiera, non risponderà all'input dell'utente fino al termine dell'operazione. Il motivo è che la funzione [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) nel ciclo di messaggi del thread non viene restituita fino al completamento dell'elaborazione di un messaggio da parte della routine della finestra.
 
-È possibile utilizzare la funzione [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) per esaminare una coda di messaggi durante un'operazione di lunga durata. **PeekMessage** è simile alla funzione [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) . entrambi controllano una coda di messaggi per un messaggio corrispondente ai criteri di filtro, quindi copiano il messaggio in una struttura [**msg**](/windows/win32/api/winuser/ns-winuser-msg) . La differenza principale tra le due funzioni è che **GetMessage** non restituisce un risultato fino a quando un messaggio corrispondente ai criteri di filtro non viene inserito nella coda, mentre **PeekMessage** viene restituito immediatamente, indipendentemente dal fatto che un messaggio si trovi nella coda.
+È possibile usare la [**funzione PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) per esaminare una coda di messaggi durante un'operazione di lunga durata. **PeekMessage** è simile alla [**funzione GetMessage.**](/windows/win32/api/winuser/nf-winuser-getmessage) entrambi controllano la presenza di un messaggio in una coda di messaggi che corrisponde ai criteri di filtro e quindi copiano il messaggio in una [**struttura MSG.**](/windows/win32/api/winuser/ns-winuser-msg) La differenza principale tra le due funzioni è che **GetMessage** non restituisce finché non viene inserito un messaggio corrispondente ai criteri di filtro nella coda, mentre **PeekMessage** restituisce immediatamente indipendentemente dal fatto che un messaggio si trova nella coda.
 
-Nell'esempio seguente viene illustrato come utilizzare [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) per esaminare una coda di messaggi per i clic del mouse e l'input da tastiera durante un'operazione di lunga durata.
+L'esempio seguente illustra come usare [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) per esaminare una coda di messaggi per i clic del mouse e l'input da tastiera durante un'operazione di lunga durata.
 
 
 ```
@@ -184,17 +184,17 @@ while (!fDone)
 
 
 
-Altre funzioni, tra cui [**GetQueueStatus**](/windows/win32/api/winuser/nf-winuser-getqueuestatus) e [**GetInputState**](/windows/win32/api/winuser/nf-winuser-getinputstate), consentono anche di esaminare il contenuto della coda di messaggi di un thread. **GetQueueStatus** restituisce una matrice di flag che indica i tipi di messaggi nella coda. l'uso di questa soluzione è il modo più rapido per individuare se la coda contiene messaggi. **GetInputState** restituisce **true** se la coda contiene messaggi relativi al mouse o alla tastiera. Entrambe queste funzioni possono essere utilizzate per determinare se la coda contiene messaggi che devono essere elaborati.
+Anche altre funzioni, tra [**cui GetQueueStatus**](/windows/win32/api/winuser/nf-winuser-getqueuestatus) e [**GetInputState,**](/windows/win32/api/winuser/nf-winuser-getinputstate)consentono di esaminare il contenuto della coda di messaggi di un thread. **GetQueueStatus** restituisce una matrice di flag che indica i tipi di messaggi nella coda. l'uso di è il modo più rapido per individuare se la coda contiene messaggi. **GetInputState restituisce** **TRUE se** la coda contiene messaggi del mouse o della tastiera. Entrambe queste funzioni possono essere usate per determinare se la coda contiene messaggi che devono essere elaborati.
 
-## <a name="posting-a-message"></a>Invio di un messaggio
+## <a name="posting-a-message"></a>Pubblicazione di un messaggio
 
-È possibile inviare un messaggio a una coda di messaggi tramite la funzione [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) . **PostMessage** inserisce un messaggio alla fine della coda di messaggi di un thread e viene restituito immediatamente, senza attendere l'elaborazione del messaggio da parte del thread. I parametri della funzione includono un handle di finestra, un identificatore di messaggio e due parametri di messaggio. Il sistema copia questi parametri in una struttura [**msg**](/windows/win32/api/winuser/ns-winuser-msg) , compila i membri **Time** e **PT** della struttura e inserisce la struttura nella coda di messaggi.
+È possibile inviare un messaggio a una coda di messaggi usando la [**funzione PostMessage.**](/windows/win32/api/winuser/nf-winuser-postmessagea) **PostMessage** inserisce un messaggio alla fine della coda di messaggi di un thread e restituisce immediatamente, senza attendere l'elaborazione del messaggio da parte del thread. I parametri della funzione includono un handle di finestra, un identificatore di messaggio e due parametri di messaggio. Il sistema copia questi parametri in una struttura  [**MSG,**](/windows/win32/api/winuser/ns-winuser-msg) riempie i membri time e **pt** della struttura e inserisce la struttura nella coda di messaggi.
 
-Il sistema utilizza l'handle di finestra passato con la funzione [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) per determinare quale coda di messaggi del thread deve ricevere il messaggio. Se l'handle è in primo piano **HWND \_**, il sistema invia il messaggio alle code di messaggi del thread di tutte le finestre di primo livello.
+Il sistema usa l'handle di finestra passato con la [**funzione PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) per determinare quale coda di messaggi del thread deve ricevere il messaggio. Se l'handle **è HWND \_ TOPMOST,** il sistema invia il messaggio alle code di messaggi del thread di tutte le finestre di primo livello.
 
-È possibile utilizzare la funzione [**PostThreadMessage**](/windows/win32/api/winuser/nf-winuser-postthreadmessagea) per inviare un messaggio a una coda di messaggi di thread specifici. **PostThreadMessage** è simile a [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea), eccetto il primo parametro è un identificatore di thread anziché un handle di finestra. È possibile recuperare l'identificatore del thread chiamando la funzione [**GetCurrentThreadID**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid) .
+È possibile usare la [**funzione PostThreadMessage**](/windows/win32/api/winuser/nf-winuser-postthreadmessagea) per pubblicare un messaggio in una coda di messaggi del thread specifica. **PostThreadMessage è** simile a [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea), ad eccezione del fatto che il primo parametro è un identificatore di thread anziché un handle di finestra. È possibile recuperare l'identificatore di thread chiamando la [**funzione GetCurrentThreadId.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid)
 
-Utilizzare la funzione [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) per uscire da un ciclo di messaggi. **PostQuitMessage** invia il messaggio [**WM \_ Quit**](wm-quit.md) al thread attualmente in esecuzione. Il ciclo di messaggi del thread termina e restituisce il controllo al sistema quando rileva il messaggio **WM \_ Quit** . Un'applicazione in genere chiama **PostQuitMessage** in risposta al messaggio [**WM \_ Destroy**](wm-destroy.md) , come illustrato nell'esempio seguente.
+Usare la [**funzione PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) per uscire da un ciclo di messaggi. **PostQuitMessage** invia il [**messaggio WM \_ QUIT**](wm-quit.md) al thread attualmente in esecuzione. Il ciclo di messaggi del thread termina e restituisce il controllo al sistema quando rileva il **messaggio WM \_ QUIT.** Un'applicazione chiama **in genere PostQuitMessage** in risposta al [**messaggio WM \_ DESTROY,**](wm-destroy.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -210,11 +210,11 @@ case WM_DESTROY:
 
 ## <a name="sending-a-message"></a>Invio di un messaggio
 
-La funzione [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) viene utilizzata per inviare un messaggio direttamente a una routine della finestra. **SendMessage** chiama una routine della finestra e attende che la procedura elabori il messaggio e restituisca un risultato.
+La [**funzione SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) viene usata per inviare un messaggio direttamente a una routine della finestra. **SendMessage** chiama una routine della finestra e attende che la routine eserciti il messaggio e restituirà un risultato.
 
-Un messaggio può essere inviato a qualsiasi finestra del sistema; è necessario solo un handle di finestra. Il sistema utilizza l'handle per determinare quale routine della finestra deve ricevere il messaggio.
+È possibile inviare un messaggio a qualsiasi finestra del sistema. è necessario solo un handle di finestra. Il sistema usa l'handle per determinare quale routine della finestra deve ricevere il messaggio.
 
-Prima di elaborare un messaggio che potrebbe essere stato inviato da un altro thread, una routine della finestra deve prima chiamare la funzione [**InSendMessage**](/windows/win32/api/winuser/nf-winuser-insendmessage) . Se questa funzione restituisce **true**, la routine della finestra deve chiamare [**ReplyMessage**](/windows/win32/api/winuser/nf-winuser-replymessage) prima di qualsiasi funzione che induce il thread a produrre il controllo, come illustrato nell'esempio seguente.
+Prima di elaborare un messaggio che potrebbe essere stato inviato da un altro thread, una routine della finestra deve chiamare prima [**la funzione InSendMessage.**](/windows/win32/api/winuser/nf-winuser-insendmessage) Se questa funzione restituisce **TRUE,** la routine della finestra deve chiamare [**ReplyMessage**](/windows/win32/api/winuser/nf-winuser-replymessage) prima di qualsiasi funzione che fa sì che il thread restituisca il controllo, come illustrato nell'esempio seguente.
 
 
 ```
@@ -228,9 +228,9 @@ case WM_USER + 5:
 
 
 
-È possibile inviare un numero di messaggi ai controlli in una finestra di dialogo. Questi messaggi di controllo impostano l'aspetto, il comportamento e il contenuto dei controlli o recuperano informazioni sui controlli. Ad esempio, il messaggio [**CB \_ ADDSTRING**](../controls/cb-addstring.md) può aggiungere una stringa a una casella combinata e il messaggio di controllo [**BM \_**](../controls/bm-setcheck.md) può impostare lo stato di selezione di una casella di controllo o di un pulsante di opzione.
+È possibile inviare diversi messaggi ai controlli in una finestra di dialogo. Questi messaggi di controllo impostano l'aspetto, il comportamento e il contenuto dei controlli o recuperano informazioni sui controlli. Ad esempio, il messaggio [**CB \_ ADDSTRING**](../controls/cb-addstring.md) può aggiungere una stringa a una casella combinata e il messaggio [**BM \_ SETCHECK**](../controls/bm-setcheck.md) può impostare lo stato di controllo di una casella di controllo o di un pulsante di opzione.
 
-Utilizzare la funzione [**SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea) per inviare un messaggio a un controllo, specificando l'identificatore del controllo e l'handle della finestra di dialogo che contiene il controllo. Nell'esempio seguente, tratto da una routine della finestra di dialogo, copia una stringa dal controllo di modifica di una casella combinata nella relativa casella di riepilogo. Nell'esempio viene usato **SendDlgItemMessage** per inviare un messaggio [**CB \_ ADDSTRING**](../controls/cb-addstring.md) alla casella combinata.
+Usare la [**funzione SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea) per inviare un messaggio a un controllo, specificando l'identificatore del controllo e l'handle della finestra di dialogo che contiene il controllo. Nell'esempio seguente, tratto da una routine della finestra di dialogo, viene copiata una stringa dal controllo di modifica di una casella combinata nella relativa casella di riepilogo. Nell'esempio viene **utilizzato SendDlgItemMessage** per inviare un [**messaggio \_ CB ADDSTRING**](../controls/cb-addstring.md) alla casella combinata.
 
 
 ```

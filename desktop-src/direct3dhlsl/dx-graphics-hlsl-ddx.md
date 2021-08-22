@@ -1,9 +1,9 @@
 ---
-title: DDX
-description: Restituisce la derivazione parziale del valore specificato rispetto alla coordinata x dello spazio dello schermo.
+title: Ddx
+description: Restituisce la derivata parziale del valore specificato rispetto alla coordinata x dello spazio dello schermo.
 ms.assetid: a21c2d2a-7c62-4dc6-8521-273690be1104
 keywords:
-- HLSL DDX
+- ddx HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dc82f41e8968ccfadaf5d87a8058d332f04ce3a7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a60f2376af13e291ff0c59966bd50261cf2fd29ceb10d8ea26f621e257956ce0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043819"
 ---
-# <a name="ddx"></a>DDX
+# <a name="ddx"></a>Ddx
 
-Restituisce la derivazione parziale del valore specificato rispetto alla coordinata x dello spazio dello schermo.
+Restituisce la derivata parziale del valore specificato rispetto alla coordinata x dello spazio dello schermo.
 
 
 
-| DDX *ret* (*x*) |
+| *ret* ddx(*x*) |
 |----------------|
 
 
 
  
 
-Questa funzione calcola la derivata parziale per quanto riguarda la coordinata x dello spazio dello schermo. Per calcolare la derivazione parziale per quanto riguarda la coordinata y dello spazio dello schermo, usare la funzione [**ddy**](dx-graphics-hlsl-ddy.md) .
+Questa funzione calcola la derivata parziale rispetto alla coordinata x dello spazio dello schermo. Per calcolare la derivata parziale rispetto alla coordinata y dello spazio dello schermo, usare la [**funzione ddy.**](dx-graphics-hlsl-ddy.md)
 
-Questa funzione è supportata solo in pixel shader.
+Questa funzione è supportata solo nei pixel shader.
 
 ## <a name="parameters"></a>Parametri
 
@@ -43,7 +43,7 @@ Questa funzione è supportata solo in pixel shader.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Il valore specificato.<br/> |
 
 
 
@@ -51,7 +51,7 @@ Questa funzione è supportata solo in pixel shader.
 
 ## <a name="return-value"></a>Valore restituito
 
-Derivato parziale del parametro *x* .
+Derivazione parziale del *parametro x.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -59,14 +59,14 @@ Derivato parziale del parametro *x* .
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -74,11 +74,11 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato                                 |
 |-----------------------------------------------------------------------------|-------------------------------------------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì                                       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                                  | sì                                       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì                                       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                                  | sì                                       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)                   | sì                                       |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                   | Sì in PS \_ 2 \_ x; non supportato in PS \_ 2 \_ 0. |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                   | no                                        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                   | sì in ps \_ 2 \_ x; non supportato in ps \_ 2 \_ 0. |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                   | no                                        |
 
 
 
@@ -88,7 +88,7 @@ Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 

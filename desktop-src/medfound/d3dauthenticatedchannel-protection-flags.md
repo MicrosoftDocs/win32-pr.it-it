@@ -1,7 +1,7 @@
 ---
 description: Specifica il livello di protezione per il contenuto video.
 ms.assetid: 681c6ad9-cf55-47e4-bbb9-e7fdc499a709
-title: Struttura D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 2d3111d01f178be3128dcb79f65d2155195c2e4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d1b76a6fea0dd6b966bd72001efb187a7a3a14e75b4d41d631e5a1ea163fe94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974710"
 ---
-# <a name="d3dauthenticatedchannel_protection_flags-structure"></a>Struttura di flag di \_ protezione D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_protection_flags-structure"></a>Struttura DEI FLAG DI PROTEZIONE D3DAUTHENTICATEDCHANNEL \_ \_
 
 Specifica il livello di protezione per il contenuto video.
 
@@ -49,14 +49,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS {
 **ProtectionEnabled**
 </dt> <dd>
 
-Se è 1, la protezione del contenuto video è abilitata.
+Se 1, la protezione del contenuto video è abilitata.
 
 </dd> <dt>
 
 **OverlayOrFullscreenRequired**
 </dt> <dd>
 
-Se è 1, l'applicazione richiede che il video venga visualizzato utilizzando una sovrapposizione hardware o una modalità esclusiva a schermo intero.
+Se 1, l'applicazione richiede che il video sia visualizzato usando una sovrimpressione hardware o la modalità esclusiva a schermo intero.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Riservato. Impostare tutti i bit su zero.
 **Valore**
 </dt> <dd>
 
-Utilizzare questo membro per accedere a tutti i bit nell'Unione.
+Utilizzare questo membro per accedere a tutti i bit nell'unione.
 
 </dd> </dl>
 
@@ -80,9 +80,9 @@ Utilizzare questo membro per accedere a tutti i bit nell'Unione.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

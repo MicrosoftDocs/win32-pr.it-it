@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetErrorValue aggiunge un nuovo valore HRESULT (tipo \_ errore VT) o sovrascrive uno esistente.
+description: Il metodo SetErrorValue aggiunge un nuovo valore HRESULT (tipo VT \_ ERROR) o ne sovrascrive uno esistente.
 ms.assetid: 87369791-42bd-4523-b15a-acf0ea1e5af8
-title: 'Metodo IPortableDeviceValues:: SetErrorValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetErrorValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 19c7ca57d325e31fd9cd8e0bf5130dc594b0b8cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41bb9a6d8f2878b9bcfac6584c39fd55153ecae8a539c7f8886a5d0eb90d1bb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026789"
 ---
-# <a name="iportabledevicevaluesseterrorvalue-method"></a>Metodo IPortableDeviceValues:: SetErrorValue
+# <a name="iportabledevicevaluesseterrorvalue-method"></a>Metodo IPortableDeviceValues::SetErrorValue
 
-Il metodo **SetErrorValue** aggiunge un nuovo valore **HRESULT** (tipo \_ errore VT) o sovrascrive uno esistente.
+Il **metodo SetErrorValue** aggiunge un nuovo **valore HRESULT** (tipo VT \_ ERROR) o ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetErrorValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-**HRESULT** che contiene il nuovo valore.
+HRESULT **che** contiene il nuovo valore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

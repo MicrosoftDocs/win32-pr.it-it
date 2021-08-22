@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio seguente viene crittografato un file di dati. Nell'esempio viene richiesto in modo interattivo il nome del file che contiene testo normale da crittografare e il nome di un file in cui devono essere scritti i dati crittografati.
+description: Nell'esempio seguente viene crittografato un file di dati. L'esempio richiede in modo interattivo il nome del file che contiene testo non crittografato da crittografare e il nome di un file in cui devono essere scritti i dati crittografati.
 ms.assetid: a21dd25a-ac3c-483b-b270-6d86f10ae0a0
-title: 'Esempio di programma C: crittografia di un file'
+title: 'Programma C di esempio: crittografia di un file'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f20d05b1456c6b38783bc9ec10d4c26633c2d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5b67729c5b6068d1c85b3ecdf1b345b89c9554166d1942f266966f5c3702499
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007659"
 ---
-# <a name="example-c-program-encrypting-a-file"></a>Esempio di programma C: crittografia di un file
+# <a name="example-c-program-encrypting-a-file"></a>Programma C di esempio: crittografia di un file
 
-Nell'esempio seguente viene crittografato un file di dati. Nell'esempio viene richiesto in modo interattivo il nome del file che contiene [*testo normale*](../secgloss/p-gly.md) da crittografare e il nome di un file in cui devono essere scritti i dati crittografati.
+Nell'esempio seguente viene crittografato un file di dati. L'esempio richiede in modo interattivo [](../secgloss/p-gly.md) il nome del file che contiene testo non crittografato da crittografare e il nome di un file in cui devono essere scritti i dati crittografati.
 
-Nell'esempio viene richiesto all'utente i nomi di un file di input e di un file di output. Viene inoltre richiesto all'utente se deve essere utilizzata una password per creare la chiave della sessione di crittografia. Se è necessario utilizzare una password nella crittografia dei dati, è necessario utilizzare la stessa password nel programma in cui viene decrittografato il file. Per ulteriori informazioni, vedere [esempio C Program: decrittografia di un file](example-c-program-decrypting-a-file.md).
+L'esempio richiede all'utente i nomi di un file di input e di un file di output. Richiede inoltre all'utente se deve essere usata una password per creare la chiave di sessione di crittografia. Se è necessario usare una password nella crittografia dei dati, è necessario usare la stessa password nel programma che decrittografa il file. Per altre informazioni, vedere [Esempio di programma C: decrittografia di un file](example-c-program-decrypting-a-file.md).
 
-A causa della modifica delle restrizioni di controllo di esportazione, il [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) predefinito e la lunghezza della [*chiave*](../secgloss/k-gly.md) predefinita possono cambiare tra le versioni del sistema operativo. È importante che la crittografia e la decrittografia usino lo stesso CSP e che la lunghezza della chiave sia impostata in modo esplicito per garantire l'interoperabilità su diverse piattaforme del sistema operativo.
+A causa della modifica delle restrizioni di controllo dell'esportazione, il [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) predefinito e la lunghezza della chiave predefinita [*possono*](../secgloss/k-gly.md) cambiare tra le versioni del sistema operativo. È importante che la crittografia e la decrittografia usino lo stesso provider di servizi di crittografia e che la lunghezza della chiave sia impostata in modo esplicito per garantire l'interoperabilità su piattaforme del sistema operativo diverse.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

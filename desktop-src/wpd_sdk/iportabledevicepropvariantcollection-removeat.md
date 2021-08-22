@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 5c62df57a95a9f5a8238ff61c4ca6dc3cb73ed36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 311b3511329ed15f5afd83d5a84c0c5abd62fe3f44000962fbdcd2f8ddd67c9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026899"
 ---
 # <a name="iportabledevicepropvariantcollectionremoveat-method"></a>Metodo IPortableDevicePropVariantCollection::RemoveAt
 
@@ -49,7 +49,7 @@ Specifica l'indice dell'elemento da rimuovere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Altezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce-1 se questo elemento non supporta le anteprime. Di sola lettura.
+description: Altezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce -1 se questo elemento non supporta le anteprime. Di sola lettura.
 ms.assetid: b9c4815e-42b8-49ab-b067-1fd79593cc5c
-title: Proprietà Item. ThumbHeight
+title: Proprietà Item.ThumbHeight
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 196f96198abb6abe8c6392a8cdb05c7c8e420cd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e1e14d025262e0431d36cf3f185b71c89c8f72f8875e035cfcd51e0b8614734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965600"
 ---
-# <a name="itemthumbheight-property"></a>Proprietà Item. ThumbHeight
+# <a name="itemthumbheight-property"></a>Proprietà Item.ThumbHeight
 
-Altezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce-1 se questo elemento non supporta le anteprime. Di sola lettura.
+Altezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce -1 se questo elemento non supporta le anteprime. Di sola lettura.
 
 Questa proprietà è di sola lettura.
 
@@ -37,7 +37,7 @@ propVal = Item.ThumbHeight
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile che riceve l'altezza di anteprima.
+Variabile che riceve l'altezza dell'anteprima.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Variabile che riceve l'altezza di anteprima.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

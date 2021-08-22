@@ -1,63 +1,63 @@
 ---
-title: Classi di macchine virtuali Desktop remoto
-description: Il provider WMI della macchina virtuale Desktop remoto fornisce le classi seguenti.
+title: Desktop remoto di macchine virtuali
+description: Il provider WMI Desktop remoto macchina virtuale fornisce le classi seguenti.
 ms.assetid: C502FF8A-895C-4ABB-8C2D-09D7870AF3E4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3d70ec212f7a239dd9299845d69567b6a5959a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d7b807d9adf5c9c4fa7432bdadf3f15236f7a0dd1bc29bccddfc33d6153006b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058609"
 ---
-# <a name="remote-desktop-virtual-machine-classes"></a>Classi di macchine virtuali Desktop remoto
+# <a name="remote-desktop-virtual-machine-classes"></a>Desktop remoto di macchine virtuali
 
-Il provider WMI della macchina virtuale Desktop remoto fornisce le classi seguenti.
+Il provider WMI Desktop remoto macchina virtuale fornisce le classi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <dl> <dt>
 
-[**\_TSVirtualDesktopServerSettings Win32**](win32-tsvirtualdesktopserversettings.md)
+[**Win32 \_ TSVirtualDesktopServerSettings**](win32-tsvirtualdesktopserversettings.md)
 </dt> <dd>
 
-Contiene informazioni di configurazione per un server di Host di virtualizzazione Desktop remoto (host di virtualizzazione Desktop remoto).
+Contiene informazioni di configurazione per Desktop remoto server Host di virtualizzazione Desktop remoto.
 
 </dd> <dt>
 
-[**\_TSVm Win32**](win32-tsvm.md)
+[**Win32 \_ TSVm**](win32-tsvm.md)
 </dt> <dd>
 
-Rappresenta una macchina virtuale Desktop remoto.
+Rappresenta una Desktop remoto virtuale.
 
 </dd> <dt>
 
-[**\_TSVmMetadataAssociation Win32**](win32-tsvmmetadataassociation.md)
+[**Win32 \_ TSVmMetadataAssociation**](win32-tsvmmetadataassociation.md)
 </dt> <dd>
 
-Rappresenta un'associazione tra una macchina virtuale Desktop remoto e le relative proprietà dei metadati.
+Rappresenta un'associazione tra una Desktop remoto macchina virtuale e le relative proprietà dei metadati.
 
 </dd> <dt>
 
-[**\_TSVmMetadataItem Win32**](win32-tsvmmetadataitem.md)
+[**Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md)
 </dt> <dd>
 
-Rappresenta un elemento di metadati per una macchina virtuale Desktop remoto.
+Rappresenta un elemento di metadati per una Desktop remoto macchina virtuale.
 
 </dd> <dt>
 
-[**\_RdvhManagement Win32**](win32-rdvhmanagement.md)
+[**Win32 \_ RdvhManagement**](win32-rdvhmanagement.md)
 </dt> <dd>
 
-Viene descritto un servizio di gestione di Desktop remoto host virtuale (RDVH).
+Descrive un servizio Desktop remoto di gestione host virtuale (RDVH).
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

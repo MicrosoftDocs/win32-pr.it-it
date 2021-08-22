@@ -1,26 +1,26 @@
 ---
-title: Proprietà RdpdrLocalPrintingDocName di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà RdpdrLocalPrintingDocName di IMsRdpClientAdvancedSettings
+title: Proprietà IMsRdpClientAdvancedSettings RdpdrLocalPrintingDocName
+description: Questa proprietà non è supportata. | Proprietà IMsRdpClientAdvancedSettings RdpdrLocalPrintingDocName
 ms.assetid: ccff4695-920b-4595-9beb-f084ccca420e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
-- Servizi Desktop remoto proprietà RdpdrLocalPrintingDocName, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
+- Proprietà RdpdrLocalPrintingDocName Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RdpdrLocalPrintingDocName
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98eb602e7a882d4c202b4a81aefec9c31105ca0d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b470e9a0e1bc22a06f690cc9577944d73aab9d7381fc38102e5b0489e00c04de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058979"
 ---
-# <a name="imsrdpclientadvancedsettingsrdpdrlocalprintingdocname-property"></a>Proprietà IMsRdpClientAdvancedSettings:: RdpdrLocalPrintingDocName
+# <a name="imsrdpclientadvancedsettingsrdpdrlocalprintingdocname-property"></a>Proprietà IMsRdpClientAdvancedSettings::RdpdrLocalPrintingDocName
 
 Questa proprietà non è supportata.
 
@@ -88,7 +88,7 @@ Nuovo nome.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Restituisce un valore **\_ false**.
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

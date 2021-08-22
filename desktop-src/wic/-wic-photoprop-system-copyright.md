@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. copyright.
+description: Criteri dei metadati delle foto per la proprietà System.Copyright.
 ms.assetid: 84d2f55b-5ca4-4912-b038-c18a72e6fc34
-title: Criteri per i metadati della foto System. Copyright
+title: Criteri relativi ai metadati delle foto di System.Copyright
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fc65024458d88088e3c0cbeccc3bc9ea0211910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b00b57bc3523feaa29da9008340bd34c32401879a8fc4e872082bbdcddd1fdf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710814"
 ---
-# <a name="systemcopyright-photo-metadata-policy"></a>Criteri per i metadati della foto System. Copyright
+# <a name="systemcopyright-photo-metadata-policy"></a>Criteri relativi ai metadati delle foto di System.Copyright
 
-Criteri per i metadati delle foto per la proprietà [System. Copyright](../properties/props-system-copyright.md) .
+Criteri dei metadati delle foto per [la proprietà System.Copyright.](../properties/props-system-copyright.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_Copyright pkey
+PKEY \_ Copyright
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,31 +27,31 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
 string
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                      | Formato disco |
 |-------|-------------------------------------------|-------------|
-|       | /App1/IFD/{ushort = 33432}                  | ascii       |
-|       | avviso/App13/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /XMP/ <xmpalt> DC: diritti              | unicode     |
-|       | /XMP/DC: diritti                            | unicode     |
-|       | avviso/App13/IRB/8bimiptc/IPTC/Copyright |             |
+|       | /app1/ifd/{ushort=33432}                  | ascii       |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
+|       | /xmp/ <xmpalt> dc:rights              | unicode     |
+|       | /xmp/dc:rights                            | unicode     |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
 
 
 
@@ -63,10 +63,10 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                      | Formato disco |
 |-------|-------------------------------------------|-------------|
-|       | /XMP/DC: diritti                            | unicode     |
-|       | /XMP/ <xmpalt> DC: diritti              | unicode     |
-|       | avviso/App13/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /App1/IFD/{ushort = 33432}                  | ascii       |
+|       | /xmp/dc:rights                            | unicode     |
+|       | /xmp/ <xmpalt> dc:rights              | unicode     |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
+|       | /app1/ifd/{ushort=33432}                  | ascii       |
 
 
 
@@ -78,9 +78,9 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                      |
 |-------|-------------------------------------------|
-|       | /XMP/DC: diritti                            |
-|       | avviso/App13/IRB/8bimiptc/IPTC/Copyright |
-|       | /App1/IFD/{ushort = 33432}                  |
+|       | /xmp/dc:rights                            |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |
+|       | /app1/ifd/{ushort=33432}                  |
 
 
 
@@ -88,18 +88,18 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policy"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                    | Formato disco |
 |-------|-----------------------------------------|-------------|
-|       | /IFD/{ushort = 33432}                     | ascii       |
-|       | avviso/IFD/IPTC/Copyright              |             |
-|       | /IFD/XMP/ <xmpalt> DC: diritti        | unicode     |
-|       | /IFD/XMP/DC: diritti                      | unicode     |
-|       | avviso/IFD/IPTC/Copyright              |             |
-|       | avviso/IFD/IRB/8bimiptc/IPTC/Copyright |             |
+|       | /ifd/{ushort=33432}                     | ascii       |
+|       | /ifd/iptc/copyright notice              |             |
+|       | /ifd/xmp/ <xmpalt> dc:rights        | unicode     |
+|       | /ifd/xmp/dc:rights                      | unicode     |
+|       | /ifd/iptc/copyright notice              |             |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |             |
 
 
 
@@ -111,11 +111,11 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                    | Formato disco |
 |-------|-----------------------------------------|-------------|
-|       | /IFD/XMP/DC: diritti                      | unicode     |
-|       | /IFD/XMP/ <xmpalt> DC: diritti        | unicode     |
-|       | avviso/IFD/IPTC/Copyright              |             |
-|       | avviso/IFD/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /IFD/{ushort = 33432}                     | ascii       |
+|       | /ifd/xmp/dc:rights                      | unicode     |
+|       | /ifd/xmp/ <xmpalt> dc:rights        | unicode     |
+|       | /ifd/iptc/copyright notice              |             |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |             |
+|       | /ifd/{ushort=33432}                     | ascii       |
 
 
 
@@ -127,10 +127,10 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                    |
 |-------|-----------------------------------------|
-|       | /IFD/XMP/DC: diritti                      |
-|       | avviso/IFD/IPTC/Copyright              |
-|       | avviso/IFD/IRB/8bimiptc/IPTC/Copyright |
-|       | /IFD/{ushort = 33432}                     |
+|       | /ifd/xmp/dc:rights                      |
+|       | /ifd/iptc/copyright notice              |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |
+|       | /ifd/{ushort=33432}                     |
 
 
 
@@ -142,7 +142,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Copyright](../properties/props-system-copyright.md)
+[System.Copyright](../properties/props-system-copyright.md)
 </dt> </dl>
 
  
