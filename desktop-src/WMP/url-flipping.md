@@ -1,41 +1,41 @@
 ---
-title: Capovolgimento URL
-description: Capovolgimento URL
+title: Capovolgimento url
+description: Capovolgimento url
 ms.assetid: 2921dff1-f740-491c-9b5e-79b7638e2065
 keywords:
 - Windows Media Player, presentazioni basate sul Web
-- Modello a oggetti di Windows Media Player, presentazioni basate sul Web
+- Windows Media Player modello a oggetti, presentazioni basate sul Web
 - modello a oggetti, presentazioni basate sul Web
-- Presentazioni Windows Media Player per dispositivi mobili, basate sul Web
-- Windows Media Player ActiveX Control, presentazioni basate sul Web
-- Controllo ActiveX Windows Media Player Mobile, presentazioni basate sul Web
-- Controllo ActiveX, presentazioni basate sul Web
-- Windows Media Player, capovolgimento URL
-- Modello a oggetti di Windows Media Player, capovolgimento degli URL
-- modello a oggetti, capovolgimento URL
-- Windows Media Player Mobile, capovolgimento URL
-- Controllo ActiveX Windows Media Player, capovolgimento URL
-- Controllo ActiveX Windows Media Player Mobile, capovolgimento URL
-- Controllo ActiveX, capovolgimento URL
-- Presentazioni basate sul Web, capovolgimento degli URL
-- creazione di presentazioni basate sul Web, capovolgimento degli URL
-- Capovolgimento URL
+- Windows Media Player Presentazioni basate sul Web per dispositivi mobili
+- Windows Media Player ActiveX, presentazioni basate sul Web
+- Windows Media Player Controllo ActiveX per dispositivi mobili, presentazioni basate sul Web
+- ActiveX, presentazioni basate sul Web
+- Windows Media Player,CAPOVOLGIMENTO URL
+- Windows Media Player a oggetti, capovolgimento dell'URL
+- modello a oggetti, capovolgimento dell'URL
+- Windows Media Player Mobile, capovolgimento url
+- Windows Media Player ActiveX, capovolgimento dell'URL
+- Windows Media Player Controllo ActiveX mobile, capovolgimento dell'URL
+- ActiveX controllo, capovolgimento dell'URL
+- Presentazioni basate sul Web, capovolgimento dell'URL
+- creazione di presentazioni basate sul Web, capovolgimento dell'URL
+- Capovolgimento dell'URL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 141fdd6b4a7ffc57288a08ffa2f6760cfb029847
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: a4471045506447b93621578f27e2f156bb214016b3fa8ec114a689b919314d10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "103714722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134524"
 ---
-# <a name="url-flipping"></a>Capovolgimento URL
+# <a name="url-flipping"></a>Capovolgimento url
 
-L'uso di pagine Web per le presentazioni è denominato capovolgimento dell'URL e viene gestito automaticamente da Windows Media Player quando rileva i comandi di script URL incorporati nel flusso multimediale digitale che sta riproducendo. È possibile specificare un frame di destinazione per le pagine in ogni comando di script oppure è possibile specificarlo impostando la proprietà **Settings. defaultFrame** . È possibile impostare questa proprietà nel codice script o usando un elemento PARAM all'interno dell'elemento OBJECT che incorpora il controllo Media Player di Windows.
+L'uso di pagine Web per le presentazioni è detto capovolgimento dell'URL e viene gestito automaticamente da Windows Media Player quando rileva comandi di script URL incorporati nel flusso multimediale digitale in riproduzione. È possibile specificare un frame di destinazione per le pagine in ogni comando script oppure impostando la **proprietà Impostazioni.defaultFrame.** È possibile impostare questa proprietà nel codice script o usando un elemento PARAM all'interno dell'elemento OBJECT che incorpora il Windows Media Player controllo.
 
-È possibile gestire i comandi script URL nel codice JScript esattamente come si gestiscono i comandi di script personalizzati. Se si desidera che il controllo Windows Media Player ignori i comandi di script URL, in modo che sia possibile gestirli interamente autonomamente, impostare le *Impostazioni*. proprietà **invokeURLs** su false nel codice script o utilizzando un elemento param come descritto in precedenza.
+È possibile gestire i comandi di script URL nel codice JScript proprio come si gestirebbero i comandi di script personalizzati. Se si vuole che il Windows Media Player ignori i comandi di script URL in modo che sia possibile gestirli completamente da soli, impostare la proprietà *Impostazioni*. **invokeURLs** su false nel codice di script o usando un elemento PARAM come descritto in precedenza.
 
-Nell'esempio seguente viene illustrato un frame tipico per l'capovolgimento degli URL. Per prima cosa, creare una pagina che descrive il frame:
+L'esempio seguente illustra un set di frame tipico per l'inversione dell'URL. Creare prima di tutto una pagina che descriva il set di frame:
 
 
 ```HTML
@@ -50,7 +50,7 @@ Nell'esempio seguente viene illustrato un frame tipico per l'capovolgimento degl
 
 
 
-Successivamente, creare il file player.html a cui viene fatto riferimento nel frame con frame usando il codice seguente (si presuppone che il file video. wmv esista nella stessa directory dei file HTML):
+Creare quindi il file player.html a cui si fa riferimento nel set di frame usando il codice seguente (si presuppone che il file video.wmv esista nella stessa directory dei file HTML):
 
 
 ```HTML
@@ -67,26 +67,26 @@ Successivamente, creare il file player.html a cui viene fatto riferimento nel fr
 
 
 
-Se le pagine Web sono sufficientemente piccole da caricare rapidamente, questa configurazione può essere sufficiente per le proprie esigenze. Se, d'altra parte, le pagine Web sono complesse, i flussi multimediali avanzati possono risultare più efficaci a seconda della velocità di connessione dei destinatari.
+Se le pagine Web sono sufficientemente piccole da essere caricate rapidamente, questa configurazione potrebbe essere sufficiente per le proprie esigenze. Se invece le pagine Web sono complesse, lo streaming multimediale può essere più efficace a seconda della velocità di connessione del pubblico.
 
 > [!Note]  
-> Il capovolgimento degli URL non funziona correttamente con le pagine visualizzate in Netscape Navigator. Anziché apparire nel frame specificato da **DefaultFrame**, ogni comando script URL ricevuto in Navigator Visualizza l'URL in una nuova finestra del browser.
+> Il capovolgimento dell'URL non funziona correttamente con le pagine visualizzate Netscape Navigator. Anziché essere visualizzato nel frame specificato da **defaultFrame,** ogni comando di script URL ricevuto in Navigator visualizza l'URL in una nuova finestra del browser.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Creazione di presentazioni Web-Based**](creating-web-based-presentations.md)
+[**Creazione di Web-Based presentazioni**](creating-web-based-presentations.md)
 </dt> <dt>
 
-[**Uso dello script per controllare il capovolgimento degli URL**](using-script-to-control-url-flipping.md)
+[**Uso dello script per controllare il capovolgimento dell'URL**](using-script-to-control-url-flipping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

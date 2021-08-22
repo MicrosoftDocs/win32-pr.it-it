@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. alphaBlend
-description: L'attributo alphaBlend specifica o recupera un valore per la fusione alfa di qualsiasi visualizzazione, sottovista o widget dell'interfaccia utente.
+title: AmbientAttributes.alphaBlend
+description: L'attributo alphaBlend specifica o recupera un valore per la fusione alfa di qualsiasi widget VIEW, SUBVIEW o UI.
 ms.assetid: a6c47d32-a497-4bfa-8fa3-ef94e267d94b
 keywords:
-- Media Player Windows AmbientAttributes. alphaBlend
+- AmbientAttributes.alphaBlend Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c0f0cb9d885f643b39acfbc5148403a5c8b788
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 84b7170931c8fc266fdc335076dbc6dc687795f9bb432518b62a39d1f610b601
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119391711"
 ---
-# <a name="ambientattributesalphablend"></a>AmbientAttributes. alphaBlend
+# <a name="ambientattributesalphablend"></a>AmbientAttributes.alphaBlend
 
-L'attributo **alphaBlend** specifica o recupera un valore per la fusione alfa di qualsiasi **visualizzazione**, **sottovista** o widget dell'interfaccia utente.
+**L'attributo alphaBlend** specifica o recupera un valore per la fusione alfa di qualsiasi widget **VIEW,** **SUBVIEW** o UI.
 
 ``` syntax
         elementID.alphaBlend
@@ -29,13 +29,13 @@ L'attributo **alphaBlend** specifica o recupera un valore per la fusione alfa di
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore compreso tra 0 (nessuna opacità) e 255 (opacità completa) e un valore predefinito pari a 255.
+Questo attributo è un numero di lettura/scrittura **(** **long**) con un valore compreso tra 0 (nessuna opacità) e 255 (opacità completa) e un valore predefinito di 255.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo consente la visualizzazione di un elemento semitrasparente, a seconda della quantità di set di opacità. Meno opacità, più trasparente verrà visualizzato l'elemento. Ogni elemento nell'interfaccia può avere un valore di opacità separato, ad eccezione degli elementi Button in un controllo **ButtonGroup** . Quando **alphaBlend** è impostato in **visualizzazione**, viene impostata l'opacità dell'intera interfaccia. Alpha Blend non funzionerà per i controlli finestra, tra cui **playlist**, **Effects**, **ListBox**, **popup**, **casella** e **video** (se la **finestra** è impostata su false). Quando **alphaBlend** è impostato su **View**, l'intera interfaccia diventa trasparente. Gli attributi **transparencyColor** usati da diversi elementi non sono supportati con **alphaBlend**.
+Questo attributo consente a un elemento di apparire semitrasparente, a seconda della quantità di opacità impostata. Minore è l'opacità, più trasparente sarà l'elemento. Ogni elemento dell'interfaccia può avere un valore di opacità separato, ad eccezione degli elementi pulsante in un **controllo BUTTONGROUP.** Quando **alphaBlend è** impostato in **VIEW,** verrà impostata l'opacità dell'intera interfaccia. La fusione alfa non funziona per i controlli finestra, tra cui **PLAYLIST,** **EFFECTS,** **LISTBOX,** **POPUP,** **EDITBOX** e **VIDEO** (se **windowless** è impostato su false). Quando **alphaBlend è** impostato su **VIEW,** l'intera interfaccia diventa trasparente. Gli **attributi transparencyColor** usati da diversi elementi non sono supportati con **alphaBlend.**
 
-Quando si usa **alphaBlend** con un elemento di **testo** che non ha il valore **BackgroundColor** specificato, verrà usato un colore di sfondo nero. Se il colore di primo piano è anche nero (ovvero il valore predefinito per il *testo*.**foregroundColor**), il testo potrebbe diventare illeggibile. Per evitare questo problema, specificare sempre l'attributo **BackgroundColor** o impostare **ForegroundColor** su un colore diverso dal nero.
+Quando si usa **alphaBlend** con un elemento **TEXT** per cui non è specificato **backgroundColor,** verrà usato un colore di sfondo nero. Se anche il colore di primo piano è nero ,ovvero il valore predefinito per *TEXT.***foregroundColor**), il testo potrebbe diventare illeggibile. Per evitare questo problema, specificare sempre **l'attributo backgroundColor** o impostare **foregroundColor** su un colore diverso dal nero.
 
 > [!Note]  
 > Questo attributo non è supportato in Windows 98.
@@ -48,7 +48,7 @@ Quando si usa **alphaBlend** con un elemento di **testo** che non ha il valore *
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -65,10 +65,10 @@ Quando si usa **alphaBlend** con un elemento di **testo** che non ha il valore *
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TESTO. backgroundColor**](text-backgroundcolor.md)
+[**TEXT.backgroundColor**](text-backgroundcolor.md)
 </dt> <dt>
 
-[**TESTO. foregroundColor**](text-foregroundcolor.md)
+[**TEXT.foregroundColor**](text-foregroundcolor.md)
 </dt> </dl>
 
  

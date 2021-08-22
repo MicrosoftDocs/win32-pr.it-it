@@ -1,48 +1,48 @@
 ---
 title: Esempio di trigger giornaliero (C++)
-description: In questo esempio di C++ viene illustrato come creare un'attività pianificata per eseguire il blocco note su base giornaliera.
+description: Questo esempio C++ illustra come creare un'attività pianificata per l'esecuzione Blocco note su base giornaliera.
 ms.assetid: f1038142-b83e-4159-9a7b-db2ae4ed3bd2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05778de5740b30f3a7593873e3c9d09c209b807a
-ms.sourcegitcommit: 4834b022f93dae550cfc43068fe9e2c63d86e364
+ms.openlocfilehash: 251ef89dec6955f7a205748589f506635565ce6bf876a3d204e66ebcba37bca6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "106299485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139554"
 ---
 # <a name="daily-trigger-example-c"></a>Esempio di trigger giornaliero (C++)
 
-In questo esempio di C++ viene illustrato come creare un'attività pianificata per eseguire il blocco note su base giornaliera. L'attività contiene un trigger giornaliero che specifica un limite iniziale e un intervallo di giorni per l'avvio dell'attività. Nell'esempio viene inoltre illustrato come impostare un criterio di ripetizione per il trigger per ripetere l'attività. L'attività contiene anche un'azione che specifica l'attività per l'esecuzione del blocco note.
+Questo esempio C++ illustra come creare un'attività pianificata per l'esecuzione Blocco note su base giornaliera. L'attività contiene un trigger giornaliero che specifica un limite di inizio e un intervallo di giorni per l'avvio dell'attività. L'esempio mostra anche come impostare un modello di ripetizione per il trigger per ripetere l'attività. L'attività contiene anche un'azione che specifica l'attività da eseguire Blocco note.
 
-Nella procedura riportata di seguito viene descritto come pianificare un'attività per avviare un file eseguibile su base giornaliera.
+Nella procedura seguente viene descritto come pianificare un'attività per avviare un eseguibile su base giornaliera.
 
-**Per pianificare l'avvio di un blocco note su base giornaliera**
+**Per pianificare Blocco note l'avvio su base giornaliera**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Questo oggetto consente di creare attività in una cartella specificata.
 
-3.  Ottenere una cartella attività per la creazione di un'attività in.
+3.  Ottiene una cartella di attività in cui creare un'attività.
 
-    Usare il metodo [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService:: newTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Usare il [**metodo ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare [**l'oggetto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Definire le informazioni sull'attività usando l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , ad esempio le informazioni di registrazione per l'attività.
+4.  Definire le informazioni sull'attività usando [**l'oggetto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) ad esempio le informazioni di registrazione per l'attività.
 
-    Utilizzare la [**Proprietà RegistrationInfo di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
+    Usare la [**proprietà RegistrationInfo di ITaskDefinition e**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
 
-5.  Creare un trigger giornaliero usando la [**Proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere all'interfaccia [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività.
+5.  Creare un trigger giornaliero usando la [**proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere [**all'interfaccia ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività.
 
-    Usare il metodo [**ITriggerCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) per specificare che si vuole creare un trigger giornaliero. È possibile impostare il limite di inizio e l'intervallo di giorni per il trigger in modo che le azioni dell'attività vengano pianificate per l'esecuzione a un'ora specificata in determinati giorni. Nell'esempio viene inoltre illustrato come impostare un criterio di ripetizione per il trigger per ripetere l'attività.
+    Usare il [**metodo ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) per specificare che si vuole creare un trigger giornaliero. È possibile impostare il limite di inizio e l'intervallo di giorni per il trigger in modo che le azioni dell'attività verranno pianificate per l'esecuzione a un orario specificato in determinati giorni. L'esempio mostra anche come impostare un modello di ripetizione per il trigger per ripetere l'attività.
 
-6.  Creare un'azione per l'attività da eseguire usando la [**Proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere all'interfaccia [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
+6.  Creare un'azione per l'attività da eseguire usando la [**proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere [**all'interfaccia IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
 
-    Usare il metodo [**IActionCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato un oggetto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , che rappresenta un'azione che esegue un'operazione della riga di comando.
+    Usare il [**metodo IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. Questo esempio usa un [**oggetto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) che rappresenta un'azione che esegue un'operazione della riga di comando.
 
-7.  Registrare l'attività usando il metodo [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registrare l'attività [**usando il metodo ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-Nell'esempio C++ riportato di seguito viene illustrato come pianificare un'attività per eseguire il blocco note su base giornaliera.
+Nell'esempio C++ seguente viene illustrato come pianificare un'attività per l Blocco note su base giornaliera.
 
 
 ```C++
@@ -429,12 +429,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

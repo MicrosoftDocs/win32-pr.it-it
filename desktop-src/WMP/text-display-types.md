@@ -3,30 +3,30 @@ title: Tipi di visualizzazione testo
 description: Tipi di visualizzazione testo
 ms.assetid: 6aa3fc89-e5f5-420f-82e0-c605676078cb
 keywords:
-- Windows Media Player Mobile Skins, testo
-- testo in interfacce, tipi di visualizzazione
-- interfacce, testo
+- Windows Media Player Interfaccia per dispositivi mobili, testo
+- testo nelle interfaccia, tipi di visualizzazione
+- interfaccia, testo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4fa8871d889a271bcbc59ce7b3118bc05be2eb7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 01826f35db0d3877a3ecd34c351315872760b1b9b0713a36955bb3161ed6ba8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134604"
 ---
 # <a name="text-display-types"></a>Tipi di visualizzazione testo
 
-Non è necessario includere le visualizzazioni di testo nell'interfaccia utente, ma è possibile scegliere tra molte istanze. È ad esempio possibile includere un TrackBar Seek per consentire all'utente di spostarsi in qualsiasi posizione dell'elemento multimediale, ma è anche possibile includere una visualizzazione di testo che mostra il numero di secondi trascorsi dall'inizio della riproduzione dell'elemento multimediale corrente.
+Non è necessario includere testo visualizzato nell'interfaccia, ma esistono molti casi in cui è consigliabile. Ad esempio, è possibile includere un trackbar Seek per consentire all'utente di spostarsi in qualsiasi posizione nell'elemento multimediale, ma è anche possibile includere una visualizzazione testo che mostra il numero di secondi trascorsi dall'inizio della riproduzione dell'elemento multimediale corrente.
 
 **Caselle di visualizzazione**
 
-Di seguito sono riportati diversi attributi che possono essere visualizzati in un elemento di testo:
+Di seguito sono riportati diversi attributi che un elemento di testo può visualizzare:
 
--   Tempo
+-   Ora
 -   Playlist
 -   Track\#
--   \#Tiene traccia
+-   \#Tracce
 -   Titolo
 -   Autore
 -   Copyright
@@ -37,19 +37,19 @@ Di seguito sono riportati diversi attributi che possono essere visualizzati in u
 -   Stato
 -   VolPercent
 
-Per ulteriori informazioni sui tipi di visualizzazione del testo, vedere la sezione [testo](text.md) del riferimento all'interfaccia.
+Per altre informazioni sui tipi di visualizzazione del testo, vedere la [sezione Text](text.md) di Riferimenti all'interfaccia.
 
-**Selezione scorrevole**
+**Scrolling Marquee**
 
-Oltre a usare i singoli elementi di testo, è possibile combinare uno o più attributi in uno scorrevole del testo di scorrimento. Questa opzione è utile se si desidera visualizzare un raggruppamento di informazioni di testo correlate in un'area di piccole dimensioni. Ad esempio, è possibile visualizzare le informazioni relative a titolo, autore e copyright in un Marquee.
+Oltre a usare i singoli elementi di testo, è possibile combinare uno o più attributi in una cornice di testo scorrente. Ciò è utile se si desidera visualizzare un raggruppamento di informazioni di testo correlate in una piccola area. Ad esempio, è possibile visualizzare le informazioni relative a titolo, autore e copyright in una cornice.
 
-Per ulteriori informazioni sulla creazione di un testo scorrevole, vedere la sezione [Marquee](marquee.md) del riferimento all'interfaccia.
+Per altre informazioni sulla creazione di una cornice di testo, vedere la [sezione Marquee](marquee.md) di Riferimento all'interfaccia.
 
 **Visualizzazione dello stato**
 
-Un altro tipo di visualizzazione del testo è la visualizzazione dello stato. In questo modo è possibile visualizzare automaticamente informazioni sullo stato corrente di Windows Media Player mobile. Ad esempio, la visualizzazione di stato informa l'utente quando un elemento multimediale memorizza nel buffer, in modo che sia evidente che il lettore funziona.
+Un altro tipo di visualizzazione del testo è la visualizzazione dello stato. In questo modo è possibile visualizzare automaticamente le informazioni sullo stato corrente di Windows Media Player Mobile. Ad esempio, la visualizzazione dello stato informerà l'utente quando un elemento multimediale viene memorizzato nel buffer in modo che sia evidente che il lettore funziona.
 
-Nella finestra di stato vengono visualizzati i messaggi seguenti:
+Nella visualizzazione dello stato vengono visualizzati i messaggi seguenti:
 
 -   responseBuffering
 -   Connecting
@@ -59,22 +59,22 @@ Nella finestra di stato vengono visualizzati i messaggi seguenti:
 -   Arrestato
 
 > [!Note]  
-> Quando un elemento multimediale viene riprodotto, la visualizzazione dello stato viene ruotata attraverso il sottotitolo, l'artista, l'album, il genere e la velocità in bit corrente.
+> Quando viene riprodotto un elemento multimediale, la visualizzazione dello stato ruota tra sottotitolo, artista, album, genere e velocità in bit corrente.
 
- 
+ 
 
-Per informazioni sulla creazione di una visualizzazione dello stato tramite l'elemento status, vedere la sezione relativa [allo stato](status.md) del riferimento all'interfaccia. Tuttavia, è preferibile usare l'attributo status nell'elemento Text anziché l'elemento status.
+Per informazioni sulla creazione di una visualizzazione dello stato tramite l'elemento Status, vedere la [sezione Status](status.md) in Riferimenti all'interfaccia; È tuttavia preferibile usare l'attributo status nell'elemento Text anziché l'elemento Status.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità Windows Media Player Mobile**](windows-media-player-mobile-functionality.md)
+[**Windows Media Player Funzionalità per dispositivi mobili**](windows-media-player-mobile-functionality.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

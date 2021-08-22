@@ -1,7 +1,7 @@
 ---
-description: Imposta i dati adiacenza della mesh.
+description: Impostare i dati di adienza della mesh.
 ms.assetid: 67d51ce0-7fe2-484d-9874-f1fa59632d59
-title: 'Metodo ID3DX10Mesh:: SetAdjacencyData (D3DX10. h)'
+title: Metodo ID3DX10Mesh::SetAdjacencyData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 6fabced002caf424fa1fcbcefcb3b326b0c71f7c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8e183fb6fad07b92d8bca15654456ca1d31a11839af033222803044f8207a14f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990381"
 ---
-# <a name="id3dx10meshsetadjacencydata-method"></a>Metodo ID3DX10Mesh:: SetAdjacencyData
+# <a name="id3dx10meshsetadjacencydata-method"></a>Metodo ID3DX10Mesh::SetAdjacencyData
 
-Imposta i dati adiacenza della mesh.
+Impostare i dati di adienza della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetAdjacencyData(
 
 <dl> <dt>
 
-*pAdjacency* \[ in\]
+*pAdjacency* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**uint**](../winprog/windows-data-types.md) \***
+Tipo: **const [**UINT**](../winprog/windows-data-types.md) \***
 
-Dati adiacenza da impostare.
+Dati di adicenza da impostare.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dati adiacenza da impostare.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

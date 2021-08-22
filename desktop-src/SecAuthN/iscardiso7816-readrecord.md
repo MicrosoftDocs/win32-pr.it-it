@@ -1,7 +1,7 @@
 ---
 description: Il metodo ReadRecord costruisce un comando APDU (Application Protocol Data Unit) che legge il contenuto dei record specificati o la parte iniziale di un record di un file elementare.
 ms.assetid: b00a3242-93bc-4779-8c62-89157fbcb5d1
-title: 'Metodo ISCardISO7816:: ReadRecord (scardssp. h)'
+title: Metodo ISCardISO7816::ReadRecord (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 0cb9697315a6f9dd2436cd7a64d54fa6b44e00f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16edb529cb5a1cf6e2badd19c3ac37f1e7ec69649fb854f98ff0b515c573f874
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141084"
 ---
-# <a name="iscardiso7816readrecord-method"></a>Metodo ISCardISO7816:: ReadRecord
+# <a name="iscardiso7816readrecord-method"></a>Metodo ISCardISO7816::ReadRecord
 
-\[Il metodo **ReadRecord** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo ReadRecord** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **ReadRecord** costruisce un comando APDU ( [*Application Protocol Data Unit*](../secgloss/a-gly.md) ) che legge il contenuto dei record specificati o la parte iniziale di un record di un file elementare.
+Il **metodo ReadRecord** costruisce un comando APDU [*(Application Protocol Data Unit)*](../secgloss/a-gly.md) che legge il contenuto dei record specificati o la parte iniziale di un record di un file elementare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ HRESULT ReadRecord(
 
 <dl> <dt>
 
-*byRecordId* \[ in\]
+*byRecordId* \[ Pollici\]
 </dt> <dd>
 
 Numero di record o ID del primo record da leggere (00 indica il record corrente).
 
 </dd> <dt>
 
-*byRefCtrl* \[ in\]
+*byRefCtrl* \[ Pollici\]
 </dt> <dd>
 
 Codifica del controllo di riferimento.
@@ -60,20 +60,20 @@ Codifica del controllo di riferimento.
 
 | Valore                                                                                                                                                                                | Significato                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Current_EF"></span><span id="current_ef"></span><span id="CURRENT_EF"></span><dl> <dt>**EF corrente**</dt> </dl>     | Posizione bit: 00000---<br/> Attualmente selezionato EF.<br/>                    |
-| <span id="Short_EF_ID"></span><span id="short_ef_id"></span><span id="SHORT_EF_ID"></span><dl> <dt>**ID EF breve**</dt> </dl> | Posizione bit: xxxxx---<br/> Identificatore EF breve.<br/>                      |
-| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**RFU**</dt> </dl>                                                       | Posizione bit: 11111---<br/>                                                      |
-| <span id="Record__"></span><span id="record__"></span><span id="RECORD__"></span><dl> <dt>**Record \#**</dt> </dl>            | Posizione bit:-----1xx<br/> Utilizzo del numero di record in P1.<br/>             |
-| <span id="Read_Record"></span><span id="read_record"></span><span id="READ_RECORD"></span><dl> <dt>**Leggi record**</dt> </dl> | Posizione bit:-----100<br/> Leggere il record P1.<br/>                           |
-| <span id="Up_to_Last"></span><span id="up_to_last"></span><span id="UP_TO_LAST"></span><dl> <dt>**Fino alla fine**</dt> </dl>     | Posizione bit:-----101<br/> Leggere tutti i record da P1 fino alla fine. <br/> |
-| <span id="Up_to_P1"></span><span id="up_to_p1"></span><span id="UP_TO_P1"></span><dl> <dt>**Fino a P1**</dt> </dl>             | Posizione bit:-----110<br/> Leggere tutti i record dall'ultimo fino a P1. <br/> |
-| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**RFU**</dt> </dl>                                                       | Posizione bit:-----111<br/>                                                      |
-| <span id="Record_ID"></span><span id="record_id"></span><span id="RECORD_ID"></span><dl> <dt>**ID record**</dt> </dl>         | Posizione bit:-----0xx<br/> Utilizzo del numero di record in P1.<br/>             |
-| <span id="First_Occur"></span><span id="first_occur"></span><span id="FIRST_OCCUR"></span><dl> <dt>**Prima occorrenza**</dt> </dl> | Posizione bit:-----000<br/> Lettura prima occorrenza. <br/>                   |
-| <span id="Last_Occur"></span><span id="last_occur"></span><span id="LAST_OCCUR"></span><dl> <dt>**Ultima occorrenza**</dt> </dl>     | Posizione bit:-----001<br/> Leggere l'ultima occorrenza. <br/>                    |
-| <span id="Next_Occur"></span><span id="next_occur"></span><span id="NEXT_OCCUR"></span><dl> <dt>**Prossima esecuzione**</dt> </dl>     | Posizione bit:-----010<br/> Leggere l'occorrenza successiva. <br/>                    |
-| <span id="Previous"></span><span id="previous"></span><span id="PREVIOUS"></span><dl> <dt>**Indietro**</dt> </dl>             | Posizione bit:-----011<br/> Leggere l'occorrenza precedente. <br/>                |
-| <span id="Secret"></span><span id="secret"></span><span id="SECRET"></span><dl> <dt>**Segreto**</dt> </dl>                     | Posizione bit:---xxxxx<br/>                                                      |
+| <span id="Current_EF"></span><span id="current_ef"></span><span id="CURRENT_EF"></span><dl> <dt>**EF corrente**</dt> </dl>     | Posizione in bit: 00000---<br/> EF attualmente selezionato.<br/>                    |
+| <span id="Short_EF_ID"></span><span id="short_ef_id"></span><span id="SHORT_EF_ID"></span><dl> <dt>**ID EF breve**</dt> </dl> | Posizione di bit: xxxxx---<br/> Identificatore EF breve.<br/>                      |
+| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**Rfu**</dt> </dl>                                                       | Posizione bit: 11111---<br/>                                                      |
+| <span id="Record__"></span><span id="record__"></span><span id="RECORD__"></span><dl> <dt>**Registrazione \#**</dt> </dl>            | Posizione di bit: -----1xx<br/> Utilizzo del numero di record in P1.<br/>             |
+| <span id="Read_Record"></span><span id="read_record"></span><span id="READ_RECORD"></span><dl> <dt>**Legge record**</dt> </dl> | Posizione di bit: -----100<br/> Leggere il record P1.<br/>                           |
+| <span id="Up_to_Last"></span><span id="up_to_last"></span><span id="UP_TO_LAST"></span><dl> <dt>**Fino all'ultimo**</dt> </dl>     | Posizione di bit: -----101<br/> Leggere tutti i record da P1 fino all'ultimo. <br/> |
+| <span id="Up_to_P1"></span><span id="up_to_p1"></span><span id="UP_TO_P1"></span><dl> <dt>**Fino a P1**</dt> </dl>             | Posizione di bit: -----110<br/> Leggere tutti i record dall'ultimo fino a P1. <br/> |
+| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**Rfu**</dt> </dl>                                                       | Posizione di bit: -----111<br/>                                                      |
+| <span id="Record_ID"></span><span id="record_id"></span><span id="RECORD_ID"></span><dl> <dt>**ID record**</dt> </dl>         | Posizione di bit: -----0xx<br/> Utilizzo del numero di record in P1.<br/>             |
+| <span id="First_Occur"></span><span id="first_occur"></span><span id="FIRST_OCCUR"></span><dl> <dt>**Primo evento**</dt> </dl> | Posizione bit: -----000<br/> Legge la prima occorrenza. <br/>                   |
+| <span id="Last_Occur"></span><span id="last_occur"></span><span id="LAST_OCCUR"></span><dl> <dt>**Ultimo evento**</dt> </dl>     | Posizione di bit: -----001<br/> Legge l'ultima occorrenza. <br/>                    |
+| <span id="Next_Occur"></span><span id="next_occur"></span><span id="NEXT_OCCUR"></span><dl> <dt>**Verifica successiva**</dt> </dl>     | Posizione di bit: -----010<br/> Leggere l'occorrenza successiva. <br/>                    |
+| <span id="Previous"></span><span id="previous"></span><span id="PREVIOUS"></span><dl> <dt>**Indietro**</dt> </dl>             | Posizione di bit: -----011<br/> Leggere l'occorrenza precedente. <br/>                |
+| <span id="Secret"></span><span id="secret"></span><span id="SECRET"></span><dl> <dt>**Segreto**</dt> </dl>                     | Posizione di bit: ---xxxxx<br/>                                                      |
 
 
 
@@ -81,21 +81,21 @@ Codifica del controllo di riferimento.
 
 </dd> <dt>
 
-*lBytesToRead* \[ in\]
+*lBytesToRead* \[ Pollici\]
 </dt> <dd>
 
-Numero di byte da leggere dall'EF trasparente.
+Numero di byte da leggere da Transparent EF.
 
-Se il campo le contiene solo zeri, a seconda del valore di b3b2b1 P2 e del limite di 256 per la lunghezza breve o 65536 per la lunghezza prolungata, il comando deve leggere completamente il singolo record richiesto o la sequenza di record richiesta.
+Se il campo Le contiene solo zeri, a seconda di b3b2b1 di P2 e entro il limite di 256 per la lunghezza breve o 65536 per la lunghezza estesa, il comando deve leggere completamente il singolo record richiesto o la sequenza richiesta di record.
 
 </dd> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-In input, un puntatore a un oggetto di interfaccia [**ISCardCmd**](iscardcmd.md) o **null**.
+In input, puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al ritorno, viene compilato con il comando APDU creato da questa operazione. Se *ppCmd* è stato impostato su **null**, un oggetto [**ISCardCmd**](iscardcmd.md) della [*Smart Card*](../secgloss/s-gly.md) viene creato e restituito internamente tramite il puntatore *ppCmd* .
+In caso di restituzione, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** un [*smart card*](../secgloss/s-gly.md) [**isCardCmd**](iscardcmd.md) viene creato internamente e restituito tramite il *puntatore ppCmd.*
 
 </dd> </dl>
 
@@ -107,10 +107,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -118,17 +118,17 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il comando incapsulato può essere eseguito solo se lo stato di sicurezza della [*Smart Card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare letto.
+Il comando incapsulato può essere eseguito solo se lo stato di sicurezza del [*smart card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare letto.
 
-Se al momento dell'invio di questo comando è attualmente selezionato un altro file elementare, è possibile che venga elaborato senza l'identificazione del file attualmente selezionato.
+Se è attualmente selezionato un altro file elementare al momento dell'emissione di questo comando, è possibile elaborarlo senza identificare il file attualmente selezionato.
 
 Quando il comando contiene un identificatore elementare breve valido, imposta il file come file elementare corrente.
 
-Non è possibile leggere i file elementari senza una struttura di record. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura di record.
+I file elementari senza una struttura di record non possono essere letti. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura di record.
 
 Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816**](iscardiso7816.md).
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -136,12 +136,12 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 è definito come 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

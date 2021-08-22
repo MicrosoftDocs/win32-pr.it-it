@@ -1,21 +1,21 @@
 ---
-description: La maggior parte dei tipi di contatore utilizza una formula per il calcolo di un valore visualizzabile per il contatore.
+description: La maggior parte dei tipi di contatore usa una formula per calcolare un valore visualizzabile per il contatore.
 ms.assetid: b65a6874-fffb-41af-8620-27d4036cc7b2
 title: Calcolo dei valori dei contatori
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: c37c5cf128d31011f184baaa6b8543ecfa8c48c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 466c4e4066b0e45fa36a2822ef1439617be545585fd56a5cba8fb664e91f5cc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061249"
 ---
 # <a name="calculating-counter-values"></a>Calcolo dei valori dei contatori
 
-La maggior parte dei tipi di contatore utilizza una formula per il calcolo di un valore visualizzabile per il contatore. Per un elenco dei tipi di contatori e delle relative formule, vedere la sezione relativa ai tipi di contatore del [Kit di distribuzione di Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Se il contatore richiede due esempi per calcolare il valore visualizzabile, viene impostato il flag del tipo di contatore `PERF_DELTA_COUNTER` .
+La maggior parte dei tipi di contatore usa una formula per calcolare un valore visualizzabile per il contatore. Per un elenco dei tipi di contatori e delle relative formule, vedere la sezione Tipi di contatore di [Windows Server 2003 Deployment Kit](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Se il contatore richiede due campioni per calcolare il valore visualizzabile, viene impostato il flag del `PERF_DELTA_COUNTER` tipo di contatore.
 
-Nell'esempio seguente viene illustrato come utilizzare i dati non elaborati per calcolare un valore visualizzabile per ogni tipo di contatore. Questo esempio si basa sull'esempio di [recupero dei dati del contatore](retrieving-counter-data.md).
+Nell'esempio seguente viene illustrato come usare i dati non elaborati per calcolare un valore visualizzabile per ogni tipo di contatore. Questo esempio si basa sull'esempio in [Recupero dei dati del contatore](retrieving-counter-data.md).
 
 ```C
 // Contains the elements required to calculate a counter value.

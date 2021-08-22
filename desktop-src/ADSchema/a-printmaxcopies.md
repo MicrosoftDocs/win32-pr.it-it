@@ -1,10 +1,10 @@
 ---
-title: Print-max-copia attributo
-description: Numero massimo di copie che un dispositivo è in grado di stampare.
+title: Attributo Print-Max-Copies
+description: Numero massimo di copie stampate da un dispositivo.
 ms.assetid: 3b4dd314-6134-4fdb-9f26-cdab3ca37947
 ms.tgt_platform: multiple
 keywords:
-- Print-max-copia lo schema AD dell'attributo
+- Schema AD dell'attributo Print-Max-Copies
 - Schema AD dell'attributo printMaxCopies
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f5a9f6ae70a89b04a52f520b3cb7c3664e69a9b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cd9facdcda05e6e8a6485df03b36f90cd72b3cd567b9e359ef4917dc3a7fcb3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081495"
 ---
-# <a name="print-max-copies-attribute"></a>Print-max-copia attributo
+# <a name="print-max-copies-attribute"></a>Attributo Print-Max-Copies
 
-Numero massimo di copie che un dispositivo è in grado di stampare.
+Numero massimo di copie stampate da un dispositivo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Print-max-copie                     |
-| LDAP-Display-Name | printMaxCopies                       |
+| CN                | Numero massimo di copie stampate                     |
+| Ldap-Display-Name | printMaxCopies                       |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.241               |
-| System-ID-GUID    | 281416d1-1968-11d0-a28f-00aa003049e2 |
+| System-Id-Guid    | 281416d1-1968-11d0-a28f-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero massimo di copie che un dispositivo è in grado di stampare.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

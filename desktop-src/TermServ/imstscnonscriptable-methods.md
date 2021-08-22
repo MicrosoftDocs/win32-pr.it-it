@@ -5,24 +5,24 @@ ms.assetid: CA68E885-46BC-4D25-AD82-E2AA5160C0BE
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3230daeba19b01a299e0bbd0e943b1a90e7e3a73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77d410a0ac65740c8473b599e0158ededc543396033c60bef45329da9ca97cc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138414"
 ---
 # <a name="imstscnonscriptable-methods"></a>Metodi IMsTscNonScriptable
 
-L'interfaccia [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) espone i metodi seguenti.
+[**L'interfaccia IMsTscNonScriptable**](imstscnonscriptable-interface.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Metodo ResetPassword**](imstscnonscriptable-resetpassword.md)
 
- 
+ 
 
- 
+ 
 
 
 

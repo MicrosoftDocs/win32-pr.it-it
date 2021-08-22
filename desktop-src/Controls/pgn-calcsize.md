@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica PGN_CALCSIZE (COMmctrl. h)
-description: Inviato da un controllo cercapersone per ottenere le dimensioni di scorrimento della finestra contenuta.
+title: PGN_CALCSIZE codice di notifica (Commctrl.h)
+description: Inviato da un controllo pager per ottenere le dimensioni scorrevoli della finestra contenuta.
 ms.assetid: a15f4191-2f26-4139-bdaf-bab219449b78
 keywords:
-- Controlli di Windows per il codice di notifica PGN_CALCSIZE
+- PGN_CALCSIZE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee6de1c45402f8bdc154f9f10be00140d7c766c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c2f6da5153457a871918afea60ac1251496454831a09426f16579ac47342406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078875"
 ---
-# <a name="pgn_calcsize-notification-code"></a>\_Codice di notifica CALCSIZE di PGN
+# <a name="pgn_calcsize-notification-code"></a>Codice di \_ notifica PGN CALCSIZE
 
-Inviato da un controllo cercapersone per ottenere le dimensioni di scorrimento della finestra contenuta. Queste dimensioni vengono utilizzate dal controllo pager per determinare la dimensione scorrevole della finestra contenuta. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo pager per ottenere le dimensioni scorrevoli della finestra contenuta. Queste dimensioni vengono usate dal controllo pager per determinare le dimensioni scorrevoli della finestra contenuta. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ PGN_CALCSIZE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) che contiene e riceve informazioni sul codice di notifica. Il membro **dwFlag** della struttura indica la dimensione da calcolare. A seconda del valore di **dwFlag**, è necessario inserire la dimensione desiderata nel membro **larghezza** o **altezza** della struttura.
+Puntatore a [**una struttura NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) che contiene e riceve informazioni sul codice di notifica. Il **membro dwFlag** di questa struttura indica quale dimensione viene calcolata. A seconda del valore **di dwFlag**, è necessario inserire la dimensione desiderata nel membro **iWidth** o **iHeight** di questa struttura.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

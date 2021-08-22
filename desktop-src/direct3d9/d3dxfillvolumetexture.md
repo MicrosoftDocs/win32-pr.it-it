@@ -1,7 +1,7 @@
 ---
-description: Usa una funzione fornita dall'utente per riempire ogni Texel di ogni livello MIP di una determinata trama del volume.
+description: Usa una funzione fornita dall'utente per riempire ogni texel di ogni livello mip di una determinata trama del volume.
 ms.assetid: cc9eb051-8a62-4e35-87df-c255f10e94d8
-title: Funzione D3DXFillVolumeTexture (D3dx9tex. h)
+title: Funzione D3DXFillVolumeTexture (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d817470f0f0617001fd83054e24e8881ac9a3a1f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7e0ef21c3fb9b5443cc488a3b6fc953953cffee6e5d0dc417dee69969907f86e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123291"
 ---
-# <a name="d3dxfillvolumetexture-function"></a>D3DXFillVolumeTexture (funzione)
+# <a name="d3dxfillvolumetexture-function"></a>Funzione D3DXFillVolumeTexture
 
-Usa una funzione fornita dall'utente per riempire ogni Texel di ogni livello MIP di una determinata trama del volume.
+Usa una funzione fornita dall'utente per riempire ogni texel di ogni livello mip di una determinata trama del volume.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ HRESULT D3DXFillVolumeTexture(
 
 <dl> <dt>
 
-*pTexture* \[ out\]
+*pTexture* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVOLUMETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DVolumeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) , che rappresenta la trama compilata.
+Puntatore a [**un'interfaccia IDirect3DVolumeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) che rappresenta la trama riempita.
 
 </dd> <dt>
 
-*pFunction* \[ in\]
+*pFunction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[LPD3DXFILL3D](lpd3dxfill3d.md)**
 
-Puntatore a una funzione dell'analizzatore fornita dall'utente, che verrà usata per calcolare il valore di ogni Texel. La funzione segue il prototipo di [LPD3DXFILL3D](lpd3dxfill3d.md).
+Puntatore a una funzione dell'analizzatore fornita dall'utente, che verrà usata per calcolare il valore di ogni texel. La funzione segue il prototipo [di LPD3DXFILL3D](lpd3dxfill3d.md).
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
@@ -77,7 +77,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Se il volume non è dinamico (poiché Usage è impostato su 0 quando viene creato) e situato nella memoria video (il pool di memoria impostato su D3DPOOL \_ default), **D3DXFillVolumeTexture** avrà esito negativo perché il volume non può essere bloccato.
+Se il volume è non dinamico (perché l'utilizzo è impostato su 0 al momento della creazione) e si trova nella memoria video (il pool di memoria impostato su D3DPOOL \_ DEFAULT), **D3DXFillVolumeTexture** avrà esito negativo perché il volume non può essere bloccato.
 
 Questo esempio crea una funzione denominata ColorVolumeFill, che si basa su D3DXFillVolumeTexture.
 
@@ -106,8 +106,8 @@ if (FAILED (hr = D3DXFillVolumeTexture (m_pTexture, ColorVolumeFill, NULL)))
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

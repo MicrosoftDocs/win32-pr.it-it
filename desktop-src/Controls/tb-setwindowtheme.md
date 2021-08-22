@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETWINDOWTHEME (COMmctrl. h)
-description: Imposta lo stile di visualizzazione di un controllo Toolbar.
+title: TB_SETWINDOWTHEME messaggio (Commctrl.h)
+description: Imposta lo stile di visualizzazione di un controllo barra degli strumenti.
 ms.assetid: 8b05c561-af66-47e7-8ef3-7f9f81da4840
 keywords:
-- Controlli di Windows Message TB_SETWINDOWTHEME
+- TB_SETWINDOWTHEME controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0c293e974eee2e7827225efb06cc439fdf2c39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1f3f4ae5f6e7a3a05670a8ba9bfe533156e1ef3e6043ff2a039744da705da39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078125"
 ---
-# <a name="tb_setwindowtheme-message"></a>TB \_ SETWINDOWTHEME messaggio
+# <a name="tb_setwindowtheme-message"></a>TB \_ SETWINDOWTHEME message
 
-Imposta lo stile di visualizzazione di un controllo Toolbar.
+Imposta lo stile di visualizzazione di un controllo barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -46,11 +46,11 @@ Il valore restituito non viene utilizzato.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
-L'invio di questo messaggio equivale alla chiamata di [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme) sulla barra degli strumenti e del relativo controllo ToolTip, se disponibile.
+L'invio di questo messaggio equivale a chiamare [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme) sulla barra degli strumenti e il relativo controllo della descrizione comando, se presente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,9 +58,9 @@ L'invio di questo messaggio equivale alla chiamata di [**SetWindowTheme**](/wind
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

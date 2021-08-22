@@ -1,7 +1,7 @@
 ---
-description: Specifica il tipo di unità contenuta in un IMFSample in una \_ raccolta ForwardedDecodeUnits MFSampleExtension.
+description: Specifica il tipo di unità contenuto in un oggetto IMFSample in una raccolta MFSampleExtension \_ ForwardedDecodeUnits.
 ms.assetid: B74890ED-9586-475B-8C77-457ECB893980
-title: Enumerazione MF_CUSTOM_DECODE_UNIT_TYPE (Mfapi. h)
+title: MF_CUSTOM_DECODE_UNIT_TYPE enumerazione (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mfapi.h
-ms.openlocfilehash: 406f6b3f6b93ced212ccf06910b69761ac0dfd9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97dd001cfb83f6ffec07035b77558fee591599b087e30dd3b819963db1b70405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104987"
 ---
-# <a name="mf_custom_decode_unit_type-enumeration"></a>\_Enumerazione del \_ tipo di \_ unità di decodifica personalizzato MF \_
+# <a name="mf_custom_decode_unit_type-enumeration"></a>Enumerazione MF \_ CUSTOM \_ DECODE \_ UNIT \_ TYPE
 
-Specifica il tipo di unità contenuta in un [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) in una raccolta [ \_ ForwardedDecodeUnits MFSampleExtension](mfsampleextension-forwardeddecodeunits.md) .
+Specifica il tipo di unità contenuto in [**un oggetto IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) in una [raccolta MFSampleExtension \_ ForwardedDecodeUnits.](mfsampleextension-forwardeddecodeunits.md)
 
 ## <a name="members"></a>Membri
 
@@ -30,8 +30,8 @@ Specifica il tipo di unità contenuta in un [**IMFSample**](/windows/desktop/api
 
 | Membro                    | Descrizione                                                             | Valore |
 |---------------------------|-------------------------------------------------------------------------|-------|
-| **MF \_ Decode \_ unit \_ NAL** | Il tipo di unità è NALU (Network Abstraction Layer Unit). <br/>     | 0     |
-| **MF \_ decodifica \_ unità \_ sei** | Il tipo di unità è informazioni aggiuntive sul miglioramento (SEI).<br/> | 1     |
+| **MF \_ DECODE \_ UNIT \_ NAL** | Il tipo di unità è NALU (Network Abstraction Layer Unit). <br/>     | 0     |
+| **UNITÀ DECODE MF \_ \_ \_ SEI** | Il tipo di unità è Supplemental Enhancement Information (SEI).<br/> | 1     |
 
 
 
@@ -43,9 +43,9 @@ Specifica il tipo di unità contenuta in un [**IMFSample**](/windows/desktop/api
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

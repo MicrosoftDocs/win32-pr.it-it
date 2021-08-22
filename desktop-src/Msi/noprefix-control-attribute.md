@@ -1,17 +1,17 @@
 ---
-description: Se questo bit è impostato su un controllo di testo, l'occorrenza del carattere &\# 0034; &&\# 0034; in una stringa di testo viene visualizzata come se stessa. Se questo bit non è impostato, il carattere che segue &\# 0034; &&\# 0034; nella stringa di testo viene visualizzato come carattere di sottolineatura.
+description: Se questo bit è impostato su un controllo di testo, l'occorrenza del carattere &\# 0034;&&0034; in una stringa di testo viene visualizzata come \# se stessa. Se questo bit non è impostato, il carattere che segue &\# 0034;&&0034; nella stringa di testo viene visualizzato come carattere di \# sottolineatura.
 ms.assetid: b958eecb-2f44-420f-8c93-7a4bd8b589da
-title: NoPrefix (attributo di controllo)
+title: Attributo del controllo NoPrefix
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae1e1a0c6da65605efca1aacc4582b34a8f673d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15345bb56ad85ec654cffe7a0bf2173973e032ac33aca633105d3a220647cf93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065881"
 ---
-# <a name="noprefix-control-attribute"></a>NoPrefix (attributo di controllo)
+# <a name="noprefix-control-attribute"></a>Attributo del controllo NoPrefix
 
 Se questo bit è impostato su un controllo di testo, l'occorrenza del carattere "&" in una stringa di testo viene visualizzata come se stessa. Se questo bit non è impostato, il carattere che segue "&" nella stringa di testo viene visualizzato come carattere di sottolineatura.
 
@@ -33,9 +33,9 @@ Se questo bit è impostato su un controllo di testo, l'occorrenza del carattere 
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit NoPrefix nella colonna attributi del record del controllo nella [tabella dei controlli](control-table.md).
+Per impostare questo attributo in un controllo, includere il bit NoPrefix nella colonna Attributes del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [attributi](control-attributes.md) e [controlli](controls.md)del controllo.
+Vedere [Attributi e controlli](control-attributes.md) del [controllo.](controls.md)
 
  
 

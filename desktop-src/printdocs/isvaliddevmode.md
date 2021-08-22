@@ -1,7 +1,7 @@
 ---
 description: La funzione IsValidDevmode verifica che il contenuto di una struttura DEVMODE sia valido.
 ms.assetid: 8b4e32cc-5eeb-4a0d-a1b7-f6edb99ed8d8
-title: Funzione IsValidDevmode (winspool. h)
+title: Funzione IsValidDevmode (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 0b8a940fd08e1ab19b18969a763448b65fffd9d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c3a5cd33a6a5584ea9373df22df51a09e3e763d284a0f979f0b24e3651dc3d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100529"
 ---
-# <a name="isvaliddevmode-function"></a>IsValidDevmode (funzione)
+# <a name="isvaliddevmode-function"></a>Funzione IsValidDevmode
 
-La funzione **IsValidDevmode** verifica che il contenuto di una struttura DEVMODE sia valido.
+La **funzione IsValidDevmode** verifica che il contenuto di una struttura DEVMODE sia valido.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,33 +42,33 @@ BOOL IsValidDevmode(
 
 <dl> <dt>
 
-*pDevmode* \[ in\]
+*pDevmode* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) da convalidare.
+Puntatore a [**DEVMODE da**](/windows/win32/api/wingdi/ns-wingdi-devmodea) convalidare.
 
 </dd> <dt>
 
 *DevmodeSize* 
 </dt> <dd>
 
-Dimensioni in byte del buffer di byte di input.
+Dimensione in byte del buffer di byte di input.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se l'oggetto [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) è strutturalmente valido. Se vengono rilevati errori secondari, la funzione li correggerà e restituirà **true**.
+**TRUE** se [**DEVMODE è strutturalmente**](/windows/win32/api/wingdi/ns-wingdi-devmodea) valido. Se vengono rilevati errori secondari, la funzione li correggerà e restituirà **TRUE.**
 
-**False** se [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) presenta uno o più problemi strutturali significativi. Il membro **dmSize** , ad esempio, non è allineato correttamente o specifica un buffer troppo piccolo. **False** anche se **pDevmode** è **null**.
+**FALSE** se [**devMODE presenta**](/windows/win32/api/wingdi/ns-wingdi-devmodea) uno o più problemi strutturali significativi. Ad esempio, il **relativo membro dmSize** non è allineato o specifica un buffer troppo piccolo. False se **pDevmode è** **NULL.** 
 
 ## <a name="remarks"></a>Commenti
 
-Non sono controllati campi di driver della stampante privati di [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) , ma solo i campi pubblici.
+Non viene selezionato alcun campo del driver della stampante privato di [**DEVMODE,**](/windows/win32/api/wingdi/ns-wingdi-devmodea) ma solo i campi pubblici.
 
-I chiamanti devono usare **dmSize** + **dmDriverExtra** per **DevmodeSize** solo se possono garantire che la dimensione del buffer di input sia almeno quella grande. Poiché [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) è generalmente dati non attendibili, anche i valori presenti nel buffer di input in corrispondenza degli offset **dmSize** e **dmDriverExtra** non sono attendibili.
+I chiamanti devono **usare** + **dmSize dmDriverExtra** per **DevmodeSize** solo se possono garantire che le dimensioni del buffer di input siano almeno tali. Poiché [**devMODE è**](/windows/win32/api/wingdi/ns-wingdi-devmodea) in genere dati non attendibili, anche i valori presenti nel buffer di input in corrispondenza degli offset **dmSize** e **dmDriverExtra** non sono attendibili.
 
-Questa funzione è eseguibile nel contesto di Least-Privileged account utente (LUA).
+Questa funzione è eseguibile in Least-Privileged contesto dell'account utente (LUA).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,11 +76,11 @@ Questa funzione è eseguibile nel contesto di Least-Privileged account utente (L
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **IsValidDevmodeW** (Unicode) e **IsValidDevmodeA** (ANSI)<br/>                 |
 
 
@@ -95,7 +95,7 @@ Questa funzione è eseguibile nel contesto di Least-Privileged account utente (L
 [Funzioni dell'API spooler di stampa](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> </dl>
 
  

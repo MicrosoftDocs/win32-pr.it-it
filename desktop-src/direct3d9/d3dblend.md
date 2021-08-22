@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 55edb432913720f58860d4f5cb87d8da9b9a8681
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 7ca88dd267ba2d70558347f999ad8d735e999a4d0197692f1e5d546f503b0a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989231"
 ---
 # <a name="d3dblend-enumeration"></a>Enumerazione D3DBLEND
 
@@ -108,7 +108,7 @@ Il fattore di blend è (A<sub>d</sub> A<sub>d</sub> A d<sub>A d</sub> A d<sub>d<
 <span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND \_ INVDESTALPHA**
 </dt> <dd>
 
-Il fattore di blend è (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A d 1 - A<sub>d</sub>).
+Il fattore di blend è (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d 1</sub>- A d ).
 
 </dd> <dt>
 
@@ -143,21 +143,21 @@ Il fattore di blend è (f, f, f, 1); dove f = min(As, 1 - A<sub>d</sub>).
 <span id="D3DBLEND_BOTHINVSRCALPHA"></span><span id="d3dblend_bothinvsrcalpha"></span>**D3DBLEND \_ BOTHINVSRCALPHA**
 </dt> <dd>
 
-**Obsoleto.** Il fattore di blend di origine è (1 - As, 1 - As, 1 - As, 1 - As) e il fattore di blend di destinazione è (As, As, As, As); Viene eseguito l'override della selezione di blend di destinazione. Questa modalità di blend è supportata solo per lo stato di rendering D3DRS \_ SRCBLEND.
+**Obsoleto.** Il fattore di blend di origine è (1 - As, 1 - As, 1 - As, 1 - As) e il fattore di blend di destinazione è (As, As, As, As); viene eseguito l'override della selezione di blend di destinazione. Questa modalità di fusione è supportata solo per lo stato di rendering \_ SRCBLEND D3DRS.
 
 </dd> <dt>
 
 <span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND \_ BLENDFACTOR**
 </dt> <dd>
 
-Fattore di fusione dei colori costante usato dallo blender del buffer di frame. Questa modalità di blend è supportata solo se D3DPBLENDCAPS BLENDFACTOR è impostato nei membri \_ **SrcBlendCaps** o **DestBlendCaps** di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
+Fattore di fusione dei colori costante usato dal blender frame-buffer. Questa modalità di fusione è supportata solo se D3DPBLENDCAPS BLENDFACTOR è impostato nei membri \_ **SrcBlendCaps** o **DestBlendCaps** [**di D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 </dd> <dt>
 
 <span id="D3DBLEND_INVBLENDFACTOR"></span><span id="d3dblend_invblendfactor"></span>**D3DBLEND \_ INVBLENDFACTOR**
 </dt> <dd>
 
-Fattore di fusione dei colori costante invertito usato dal blender frame-buffer. Questa modalità di blend è supportata solo se il bit D3DPBLENDCAPS BLENDFACTOR è impostato nei membri \_ **SrcBlendCaps** o **DestBlendCaps** di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
+Fattore di fusione dei colori costante invertito usato dal frullatore frame-buffer. Questa modalità di fusione è supportata solo se il bit D3DPBLENDCAPS BLENDFACTOR è impostato nei membri \_ **SrcBlendCaps** o **DestBlendCaps** [**di D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 </dd> <dt>
 
@@ -214,7 +214,7 @@ Vedere [ **D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
 
 ### <a name="render-target-blending"></a>Fusione della destinazione di rendering
 
-Direct3D 9Ex ha migliorato le funzionalità di rendering del testo. Il rendering di tipi di carattere non crittografati richiederebbe in genere due passaggi. Per eliminare il secondo passaggio, è pixel shader possibile usare un'pixel shader per l'output di due colori, che è possibile chiamare PSOutColor \[ 0 \] e PSOutColor \[ \] 1. Il primo colore conterrà i componenti standard a 3 colori (RGB). Il secondo colore conterrà 3 componenti alfa (uno per ogni componente del primo colore).
+Direct3D 9Ex include funzionalità di rendering del testo migliorate. Il rendering di tipi di carattere non crittografati richiede in genere due passaggi. Per eliminare il secondo passaggio, è possibile usare pixel shader per l'output di due colori, che è possibile chiamare PSOutColor \[ 0 \] e PSOutColor \[ \] 1. Il primo colore conterrà i 3 componenti di colore standard (RGB). Il secondo colore conterrà 3 componenti alfa (uno per ogni componente del primo colore).
 
 Queste nuove modalità di fusione vengono usate solo per il rendering del testo nella prima destinazione di rendering.
 

@@ -3,10 +3,10 @@ title: Uso degli annunci
 description: Uso degli annunci
 ms.assetid: c372a4f8-2355-4c69-bba2-72b224879c4d
 keywords:
-- Playlist Windows Media Metafile, annunci
+- Windows playlist metafile multimediali,annunci
 - playlist, annunci
 - playlist di metafile, annunci
-- Windows Media Player, annunci
+- Windows Media Player,annunci
 - annunci
 ms.topic: article
 ms.date: 05/31/2018
@@ -15,18 +15,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0c16fafee1984d08992b96c39d7c3893ea54f682
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24408211f6ce708d380406026de45be0cce86521fdc188aaaf785ccf03790c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134384"
 ---
 # <a name="using-announcements"></a>Uso degli annunci
 
-Un annuncio è un file che contiene informazioni sull'URL per un flusso multimediale, tra cui l'indirizzo IP multicast, la porta, il formato del flusso e altre impostazioni della stazione. Gli annunci vengono creati da amministratore di Windows Media quando viene creato un flusso di pubblicazione unicast o multicast. Il client può caricare rapidamente il file di annuncio, quindi procedere con l'accesso al file multimediale di streaming.
+Un annuncio è un file che contiene informazioni sull'URL per un flusso multimediale, inclusi l'indirizzo IP multicast, la porta, il formato del flusso e altre impostazioni della stazione. Gli annunci vengono creati da Windows Media Administrator quando viene creato un flusso di pubblicazione unicast o multicast. Il client può caricare rapidamente il file dell'annuncio e quindi procedere con l'accesso al file multimediale di streaming.
 
-Per un punto di pubblicazione unicast, viene aperto il flusso multimediale del punto di pubblicazione. Per un punto di pubblicazione multicast, l'URL viene Estratto da un file della stazione di trasmissione con estensione NSC e viene eseguito l'accesso al supporto di streaming. A differenza di un flusso unicast, nessuna informazione di intestazione è contenuta in un flusso multicast. Tali informazioni provengono dal file della stazione di trasmissione con estensione NSC. Windows Media Player in genere apre prima di tutto un file di annuncio, ovvero un uso per le playlist di metafile, che punta al percorso del file della stazione di trasmissione.
+Per un punto di pubblicazione unicast, viene aperto il flusso multimediale del punto di pubblicazione. Per un punto di pubblicazione multicast, l'URL viene estratto da un file di stazione di trasmissione con estensione nsc e viene eseguito l'accesso ai supporti di streaming. A differenza di un flusso unicast, nessuna informazione di intestazione è contenuta in un flusso multicast. Queste informazioni provengono dal file della stazione di trasmissione con estensione nsc. Windows Media Player apre in genere un file di annuncio, che viene utilizzato per le playlist di metafile, che punta al percorso del file della stazione di trasmissione.
 
 Codice di esempio
 
@@ -50,12 +50,12 @@ Codice di esempio
 [**Creazione di playlist di metafile**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Uso delle playlist di metafile**](using-metafile-playlists.md)
+[**Uso di playlist di metafile**](using-metafile-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

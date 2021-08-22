@@ -1,36 +1,36 @@
 ---
-title: Come sottoclasse di una casella combinata
-description: In questo argomento viene illustrato come eseguire la sottoclasse delle caselle combinate.
+title: Come creare una sottoclasse di una casella combinata
+description: In questo argomento viene illustrato come creare una sottoclasse di caselle combinate.
 ms.assetid: 9897EA94-1BF7-4711-AED6-5E9C863C287A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b48301309597c53f02ca87d1d1748ab1fe05139
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: ea674cfecf3c84ce4a1fa2abb1f23f8f208a8b8fd220736bbcec61bea7880b34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078445"
 ---
-# <a name="how-to-subclass-a-combo-box"></a>Come sottoclasse di una casella combinata
+# <a name="how-to-subclass-a-combo-box"></a>Come creare una sottoclasse di una casella combinata
 
-In questo argomento viene illustrato come eseguire la sottoclasse delle caselle combinate. L'applicazione di esempio C++ crea una finestra della barra degli strumenti che contiene due caselle combinate. Eseguendo la sottoclasse dei controlli di modifica all'interno delle caselle combinate, la finestra della barra degli strumenti intercetta le chiavi, invio e ESC che altrimenti verrebbero ignorate.
+In questo argomento viene illustrato come creare una sottoclasse di caselle combinate. L'applicazione di esempio C++ crea una finestra della barra degli strumenti che contiene due caselle combinate. Sottoclassando i controlli di modifica all'interno delle caselle combinate, la finestra della barra degli strumenti intercetta i tasti TAB, INVIO ed ESC che altrimenti verrebbero ignorati.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="process-the-wm_create-message"></a>Elaborare il \_ messaggio di creazione WM
+### <a name="process-the-wm_create-message"></a>Elaborare il messaggio \_ CREATE WM
 
-L'applicazione elabora il messaggio [**WM \_ create**](/windows/desktop/winmsg/wm-create) per creare due controlli casella combinata come finestre figlio.
+L'applicazione elabora il [**messaggio WM \_ CREATE**](/windows/desktop/winmsg/wm-create) per creare due controlli casella combinata come finestre figlio.
 
 
 ```C++
@@ -56,11 +56,11 @@ hwndCombo2 = CreateWindow(L"COMBOBOX", L"",
 
 
 
-L'applicazione quindi sottoclasse i controlli di modifica (campi di selezione) in ogni casella combinata, perché ricevono l'input di caratteri per la casella combinata semplice e a discesa. Infine, chiama la funzione [**ChildWindowFromPoint**](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) per recuperare l'handle a ogni controllo di modifica.
+L'applicazione sottoclassa quindi i controlli di modifica (campi di selezione) in ogni casella combinata, perché ricevono l'input di caratteri per una casella combinata semplice e a discesa. Infine, chiama la funzione [**ChildWindowFromPoint**](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) per recuperare l'handle per ogni controllo di modifica.
 
-Per sottoclassare i controlli di modifica, l'applicazione chiama la funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) , sostituendo il puntatore alla routine della finestra della classe con un puntatore alla funzione **SubClassProc** definita dall'applicazione. Il puntatore alla routine della finestra originale viene salvato nella variabile globale *lpfnEditWndProc*.
+Per creare una sottoclasse dei controlli di modifica, l'applicazione chiama la funzione [**SetWindowLong,**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) sostituendo il puntatore alla routine della finestra della classe con un puntatore alla funzione **SubClassProc** definita dall'applicazione. Il puntatore alla routine della finestra originale viene salvato nella variabile globale *lpfnEditWndProc*.
 
-**SubClassProc** intercetta i tasti TAB, invio e ESC e notifica la finestra della barra degli strumenti inviando messaggi definiti dall'applicazione (WM \_ Tab, WM \_ ESC e WM \_ Enter). **SubClassProc** usa la funzione [**CallWindowProc**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) per passare la maggior parte dei messaggi alla routine della finestra originale, *lpfnEditWndProc*.
+**SubClassProc** intercetta i tasti TAB, INVIO ed ESC e invia una notifica alla finestra della barra degli strumenti inviando messaggi definiti dall'applicazione (WM \_ TAB, WM \_ ESC e WM \_ INVIO). **SubClassProc** usa la [**funzione CallWindowProc**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) per passare la maggior parte dei messaggi alla routine della finestra originale, *lpfnEditWndProc.*
 
 
 ```C++
@@ -80,9 +80,9 @@ SetWindowLongPtr(hwndEdit2, GWLP_WNDPROC, (LONG_PTR) SubClassProc);
 
 
 
-### <a name="process-the-wm_setfocus-message"></a>Elaborare il messaggio di SetFocus di WM \_
+### <a name="process-the-wm_setfocus-message"></a>Elaborare il messaggio \_ WM SETFOCUS
 
-Quando la finestra della barra degli strumenti riceve lo stato attivo per l'input, imposta immediatamente lo stato attivo sulla prima casella combinata nella barra degli strumenti. A tale scopo, nell'esempio viene chiamata la funzione [**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) in risposta al messaggio [**di \_ SetFocus di WM**](/windows/desktop/inputdev/wm-setfocus) .
+Quando la finestra della barra degli strumenti riceve lo stato attivo per l'input, imposta immediatamente lo stato attivo sulla prima casella combinata nella barra degli strumenti. A tale scopo, l'esempio chiama la [**funzione SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) in risposta al [**messaggio WM \_ SETFOCUS.**](/windows/desktop/inputdev/wm-setfocus)
 
 
 ```C++
@@ -93,11 +93,11 @@ case WM_SETFOCUS:
 
 
 
-### <a name="process-application-defined-messages"></a>Elabora messaggi di Application-Defined
+### <a name="process-application-defined-messages"></a>Elaborare Application-Defined messaggi
 
-La funzione **SubClassProc** invia messaggi definiti dall'applicazione alla finestra della barra degli strumenti quando l'utente preme il tasto TAB, invio o ESC in una casella combinata. Il messaggio della **\_ scheda WM** viene inviato per il tasto TAB, il messaggio **WM \_ ESC** per il tasto ESC e il messaggio di **\_ immissione WM** per il tasto INVIO.
+La **funzione SubClassProc** invia messaggi definiti dall'applicazione alla finestra della barra degli strumenti quando l'utente preme TAB, INVIO o ESC in una casella combinata. Il **messaggio \_ WM TAB** viene inviato per il tasto TAB, il messaggio WM **\_ ESC** per il tasto ESC e il messaggio **WM \_ INVIO** per il tasto INVIO.
 
-L'esempio elabora il messaggio della **\_ scheda WM** impostando lo stato attivo sulla casella combinata successiva sulla barra degli strumenti. Elabora il messaggio **WM \_ ESC** impostando lo stato attivo sulla finestra principale dell'applicazione.
+L'esempio elabora il **messaggio WM \_ TAB** impostando lo stato attivo sulla casella combinata successiva nella barra degli strumenti. Elabora il messaggio **WM \_ ESC** impostando lo stato attivo sulla finestra principale dell'applicazione.
 
 
 ```C++
@@ -122,7 +122,7 @@ L'esempio elabora il messaggio della **\_ scheda WM** impostando lo stato attivo
 
 
 
-In risposta al messaggio **di \_ invio di WM** , l'esempio garantisce che la selezione corrente per la casella combinata sia valida, quindi imposta lo stato attivo sulla finestra principale dell'applicazione. Se la casella combinata non contiene alcuna selezione corrente, nell'esempio viene utilizzato il messaggio [**CB \_ FindExactString**](cb-findstringexact.md) per cercare un elemento elenco corrispondente al contenuto del campo di selezione. Se è presente una corrispondenza, nell'esempio viene impostata la selezione corrente. in caso contrario, viene aggiunto un nuovo elemento elenco.
+In risposta al messaggio **WM \_ ENTER,** l'esempio assicura che la selezione corrente per la casella combinata sia valida e quindi imposta lo stato attivo sulla finestra principale dell'applicazione. Se la casella combinata non contiene alcuna selezione corrente, nell'esempio viene utilizzato il messaggio [**\_ CB FINDSTRINGEXACT**](cb-findstringexact.md) per cercare un elemento dell'elenco corrispondente al contenuto del campo di selezione. Se è presente una corrispondenza, nell'esempio viene impostata la selezione corrente. In caso contrario, aggiunge un nuovo elemento dell'elenco.
 
 
 ```C++
@@ -163,7 +163,7 @@ default:
 
 ## <a name="complete-example"></a>Esempio completo
 
-Di seguito sono illustrate le procedure della finestra per la barra degli strumenti e la procedura di sottoclasse per le due caselle combinate.
+Di seguito è riportata la procedura della finestra per la barra degli strumenti e la routine di sottoclasse per le due caselle combinate.
 
 
 ```C++
@@ -346,15 +346,15 @@ LRESULT CALLBACK SubClassProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 [Informazioni sulle caselle combinate](about-combo-boxes.md)
 </dt> <dt>
 
-[Riferimento al controllo ComboBox](bumper-combobox-combobox-control-reference.md)
+[Informazioni di riferimento sul controllo ComboBox](bumper-combobox-combobox-control-reference.md)
 </dt> <dt>
 
-[Uso di caselle combinate](using-combo-boxes.md)
+[Uso delle caselle combinate](using-combo-boxes.md)
 </dt> <dt>
 
 [ComboBox](combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_SETMAXSELCOUNT (COMmctrl. h)
-description: Imposta il numero massimo di giorni che possono essere selezionati in un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro MonthCal SetMaxSelCount.
+title: MCM_SETMAXSELCOUNT messaggio (Commctrl.h)
+description: Imposta il numero massimo di giorni che è possibile selezionare in un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro MonthCal SetMaxSelCount.
 ms.assetid: 190453ab-e53b-4db7-82c1-f9d50188ad39
 keywords:
-- Controlli di Windows Message MCM_SETMAXSELCOUNT
+- MCM_SETMAXSELCOUNT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c67bcb7191bb20b9688c2fe1ffc2b458ecb7b8a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 491e28f9af1e01a97ccbdb0d2928d35117939b82d9acc1e91ea8078aae337bcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078975"
 ---
-# <a name="mcm_setmaxselcount-message"></a>\_Messaggio SETMAXSELCOUNT MCM
+# <a name="mcm_setmaxselcount-message"></a>Messaggio \_ MCM SETMAXSELCOUNT
 
-Imposta il numero massimo di giorni che possono essere selezionati in un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MonthCal \_ SetMaxSelCount**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setmaxselcount) .
+Imposta il numero massimo di giorni che è possibile selezionare in un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ MonthCal SetMaxSelCount.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setmaxselcount)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Valore di tipo **int** che verrà impostato per rappresentare il numero massimo 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario. Questo messaggio avrà esito negativo se applicato a un controllo calendario mensile che non usa lo stile [**\_ MultiSelect MCS**](month-calendar-control-styles.md) .
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario. Questo messaggio avrà esito negativo se applicato a un controllo calendario mensile che non usa lo [**stile MCS \_ MULTISELECT.**](month-calendar-control-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

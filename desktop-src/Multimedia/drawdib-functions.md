@@ -3,25 +3,25 @@ title: Funzioni DrawDib
 description: Funzioni DrawDib
 ms.assetid: 9ba47b8d-5328-477e-9272-21e897e54348
 keywords:
-- Windows Multimedia, funzioni DrawDib
-- funzioni multimediali, DrawDib
+- Windows multimediali, funzioni DrawDib
+- multimedia,Funzioni DrawDib
 - Video per Windows (VFW), funzioni DrawDib
-- VFW (video per Windows), funzioni DrawDib
+- VFW (Video per Windows),Funzioni DrawDib
 - DrawDib, funzioni
-- Riferimento DrawDib, funzioni
-- riferimento per DrawDib, funzioni
+- Informazioni di riferimento su DrawDib, funzioni
+- informazioni di riferimento per DrawDib, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f27d33581775f38383d72adcf6a1776c5fe6530b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a179a6102f3ec2f5e891d22d817a51af26ef7a5db4d031841ceef6152eb655c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144444"
 ---
 # <a name="drawdib-functions"></a>Funzioni DrawDib
 
-Con DrawDib vengono usate le funzioni seguenti.
+Le funzioni seguenti vengono usate con DrawDib.
 
 -   [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin)
 -   [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette)
@@ -43,12 +43,12 @@ Con DrawDib vengono usate le funzioni seguenti.
 
 <dl> <dt>
 
-[Riferimento a DrawDib](drawdib-reference.md)
+[Informazioni di riferimento su DrawDib](drawdib-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

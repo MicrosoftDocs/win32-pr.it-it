@@ -1,50 +1,50 @@
 ---
-title: Uso del controllo Media Player di Windows in una soluzione .NET Framework
-description: Uso del controllo Media Player di Windows in una soluzione .NET Framework
+title: Uso del controllo Windows Media Player in una .NET Framework soluzione
+description: Uso del controllo Windows Media Player in una .NET Framework soluzione
 ms.assetid: f1cc2ef0-a341-402f-bf7c-2ba07eea1f6a
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Windows Media Player, .NET Framework
-- Modello a oggetti Media Player Windows, .NET Framework
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Dispositivi mobili, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player,.NET Framework
+- Windows Media Player a oggetti, .NET Framework
 - modello a oggetti, .NET Framework
-- Windows Media Player Mobile, .NET Framework
-- Windows Media Player ActiveX Control, .NET Framework
-- Controllo ActiveX Windows Media Player Mobile, .NET Framework
-- Controllo ActiveX, .NET Framework
-- .NET Framework, informazioni sull'incorporamento del controllo ActiveX
-- incorporamento, soluzioni .NET Framework
+- Windows Media Player Dispositivi mobili, .NET Framework
+- Windows Media Player ActiveX controllo, .NET Framework
+- Windows Media Player Controllo ActiveX per dispositivi mobili,.NET Framework
+- ActiveX,.NET Framework
+- .NET Framework, informazioni sull'incorporamento ActiveX controllo
+- incorporamento, .NET Framework soluzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af0e6b09474c9340733cf45fb7c49a57100a1b11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7b443bab0d48301062df502252a70538dd04457db87ccd31430cbcea09418639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134314"
 ---
-# <a name="using-the-windows-media-player-control-in-a-net-framework-solution"></a>Uso del controllo Media Player di Windows in una soluzione .NET Framework
+# <a name="using-the-windows-media-player-control-in-a-net-framework-solution"></a>Uso del controllo Windows Media Player in una .NET Framework soluzione
 
-Il controllo ActiveX Windows Media Player 9 o versioni successive supporta l'incorporamento in applicazioni .NET Framework. Nelle sezioni seguenti vengono fornite informazioni specifiche sull'utilizzo del controllo Windows Media Player con il .NET Framework.
+Il controllo Windows Media Player 9 Series o versioni successive ActiveX supporta l'incorporamento in .NET Framework applicazioni. Le sezioni seguenti forniscono informazioni specifiche sull'uso del controllo Windows Media Player con il .NET Framework.
 
 
 
 | Sezione                                                                                                                                                      | Descrizione                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| [Uso del controllo Media Player di Windows con Microsoft Visual Studio](using-the-windows-media-player-control-with-microsoft-visual-studio.md)               | Fornisce informazioni dettagliate sull'aggiunta della serie Windows Media Player 9 o del controllo successivo a una soluzione di Visual Studio.                |
-| [Incorporamento del controllo Media Player Windows in una soluzione C#](embedding-the-windows-media-player-control-in-a-c--solution.md)                              | Vengono fornite istruzioni per la creazione di una semplice applicazione C# che utilizza il controllo Media Player di Windows.                      |
-| [Incorporamento del controllo Media Player Windows in una soluzione Visual Basic .NET](embedding-the-windows-media-player-control-in-a-visual-basic--net-solution.md) | Vengono fornite istruzioni per la creazione di una semplice applicazione Visual Basic .NET che utilizza il controllo Media Player di Windows.        |
-| [Creazione del controllo Media Player Windows a livello di codice](creating-the-windows-media-player-control-programmatically.md)                                 | Viene descritto come creare un controllo Media Player Windows in un'applicazione senza utilizzare la casella degli strumenti di Visual Studio.            |
-| [Informazioni sui tipi di dati .NET Framework](about--net-framework-data-types.md)                                                                                       | Fornisce le informazioni necessarie per tradurre il riferimento del modello a oggetti orientato allo script in .NET Framework tipi di dati di base. |
+| [Uso del controllo Windows Media Player con Microsoft Visual Studio](using-the-windows-media-player-control-with-microsoft-visual-studio.md)               | Fornisce informazioni dettagliate sull'aggiunta del controllo Windows Media Player 9 o versione successiva a una Visual Studio soluzione.                |
+| [Incorporamento del controllo Windows Media Player in una soluzione C#](embedding-the-windows-media-player-control-in-a-c--solution.md)                              | Fornisce istruzioni per la creazione di una semplice applicazione C# che usa il Windows Media Player controllo .                      |
+| [Incorporamento del controllo Windows Media Player in una Visual Basic .NET](embedding-the-windows-media-player-control-in-a-visual-basic--net-solution.md) | Fornisce istruzioni per la creazione di un'Visual Basic semplice .NET che usa il Windows Media Player controllo .        |
+| [Creazione del controllo Windows Media Player a livello di codice](creating-the-windows-media-player-control-programmatically.md)                                 | Viene descritto come creare un controllo Windows Media Player in un'applicazione senza usare la casella Visual Studio strumenti.            |
+| [Informazioni sui .NET Framework dati](about--net-framework-data-types.md)                                                                                       | Fornisce le informazioni necessarie per convertire il riferimento al modello a oggetti orientato agli script .NET Framework tipi di dati di base. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -53,9 +53,9 @@ Il controllo ActiveX Windows Media Player 9 o versioni successive supporta l'inc
 [**Guida al controllo del lettore**](player-control-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

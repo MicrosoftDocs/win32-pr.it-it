@@ -1,6 +1,6 @@
 ---
 title: Costanti DirectML
-description: Le costanti seguenti vengono dichiarate in `DirectML.h` .
+description: Le costanti seguenti sono dichiarate in `DirectML.h` .
 keywords:
 - Costanti
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 11/04/2020
-ms.openlocfilehash: ad4ff8c409f79a03cb4021974fe374498926c3e2
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 5f2d95d0eef67309ef1e5902ed6b968616b38bc081bd259d77418e950e4e028f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989601"
 ---
 # <a name="directml-constants"></a>Costanti DirectML
 
-Le costanti seguenti vengono dichiarate in `DirectML.h` .
+Le costanti seguenti sono dichiarate in `DirectML.h` .
 
 | Costante | Valore | Descrizione |
 |-|-|-|

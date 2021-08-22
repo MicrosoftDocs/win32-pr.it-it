@@ -1,9 +1,9 @@
 ---
-title: Column. ColumnName
-description: L'attributo ColumnName specifica o recupera un nome di colonna nel controllo PLAYLIST.
+title: COLUMN.columnName
+description: L'attributo columnName specifica o recupera il nome di una colonna nel controllo PLAYLIST.
 ms.assetid: 1d127678-2223-4597-84f4-66a1eaa55eba
 keywords:
-- COLUMN. ColumnName Windows Media Player
+- COLUMN.columnName Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f10b4ef9e42da7bf6d921bf706fa5c6e219c70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed410678d9c810709ec1489990b9184b707d671f80d0bb9815250776fc78b5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135774"
 ---
-# <a name="columncolumnname"></a>Column. ColumnName
+# <a name="columncolumnname"></a>COLUMN.columnName
 
-L'attributo **ColumnName** specifica o recupera un nome di colonna nel controllo **playlist** .
+**L'attributo columnName** specifica o recupera il nome di una colonna nel **controllo PLAYLIST.**
 
 ``` syntax
         elementID.columnName
@@ -29,11 +29,11 @@ L'attributo **ColumnName** specifica o recupera un nome di colonna nel controllo
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura.
+Questo attributo è una stringa di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Il nome della colonna è il nome descrittivo che viene visualizzato nell'intestazione della colonna.
+Il nome della colonna è il nome descrittivo visualizzato nell'intestazione della colonna.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Il nome della colonna è il nome descrittivo che viene visualizzato nell'intesta
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Il nome della colonna è il nome descrittivo che viene visualizzato nell'intesta
 
 <dl> <dt>
 
-[**COLUMN-elemento**](column-element.md)
+[**Elemento COLUMN**](column-element.md)
 </dt> </dl>
 
  

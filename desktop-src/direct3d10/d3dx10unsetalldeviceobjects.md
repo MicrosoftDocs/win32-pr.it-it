@@ -1,7 +1,7 @@
 ---
-description: Rimuove tutte le risorse dal dispositivo impostando i relativi puntatori su NULL. Questa operazione deve essere chiamata durante l'arresto dell'applicazione. Consente di assicurare che, quando si rilasciano tutte le relative risorse, nessuna delle quali è associata al dispositivo.
+description: Rimuove tutte le risorse dal dispositivo impostando i relativi puntatori su NULL. Questa operazione deve essere chiamata durante l'arresto dell'applicazione. Consente di assicurarsi che, quando si rilasciano tutte le risorse, nessuna di esse sia associata al dispositivo.
 ms.assetid: f41ce97e-5a81-43a4-a8c7-7411b43c0d61
-title: Funzione D3DX10UnsetAllDeviceObjects (D3DX10Core. h)
+title: Funzione D3DX10UnsetAllDeviceObjects (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4d3a113be935f77dbd62b2f3fac4c16c7cac9881
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 079c5f1b437c2755bf7125dee6be10baed1a91b4a37276997e70543c72904036
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128343"
 ---
-# <a name="d3dx10unsetalldeviceobjects-function"></a>D3DX10UnsetAllDeviceObjects (funzione)
+# <a name="d3dx10unsetalldeviceobjects-function"></a>Funzione D3DX10UnsetAllDeviceObjects
 
-Rimuove tutte le risorse dal dispositivo impostando i relativi puntatori su **null**. Questa operazione deve essere chiamata durante l'arresto dell'applicazione. Consente di assicurare che, quando si rilasciano tutte le relative risorse, nessuna delle quali è associata al dispositivo.
+Rimuove tutte le risorse dal dispositivo impostando i relativi puntatori su **NULL.** Questa operazione deve essere chiamata durante l'arresto dell'applicazione. Consente di assicurarsi che, quando si rilasciano tutte le risorse, nessuna di esse sia associata al dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT D3DX10UnsetAllDeviceObjects(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Puntatore al dispositivo. Vedere [**interfaccia ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device).
+Puntatore al dispositivo. Vedere [**ID3D10 InterfaceDevice**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore al dispositivo. Vedere [**interfaccia ID3D10Device**](/windows/desktop
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX10Core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
@@ -70,7 +70,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

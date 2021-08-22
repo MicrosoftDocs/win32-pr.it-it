@@ -3,7 +3,7 @@ title: Evento MediaCollectionMediaRemoved dell'oggetto AxWindowsMediaPlayer
 description: L'evento MediaCollectionMediaRemoved si verifica quando un elemento multimediale viene rimosso dalla libreria locale. | Evento MediaCollectionMediaRemoved dell'oggetto AxWindowsMediaPlayer
 ms.assetid: 66dae2be-2a71-4d53-b2e2-f106426d4eea
 keywords:
-- Evento MediaCollectionMediaRemoved dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento MediaCollectionMediaRemoved dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea15ff63fb913cd399a152913a27ffda1090d9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ee9555b3efc4cb95b164fc8922b1ce4253613fbd2c45c0624a3d61d0fa7a9f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135984"
 ---
 # <a name="mediacollectionmediaremoved-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionMediaRemoved dell'oggetto AxWindowsMediaPlayer
 
@@ -41,13 +41,13 @@ Private Sub player_MediaCollectionMediaRemoved(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_MediaCollectionMediaRemovedEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaRemovedEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaRemovedEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaRemovedEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà | Descrizione                                                                                                                      |
 |----------|----------------------------------------------------------------------------------------------------------------------------------|
-| pMedia   | Elemento multimediale System. ObjectThe rimosso dalla libreria locale. È possibile eseguire il cast di questo oggetto a un'interfaccia IWMPMedia per accedervi.<br/> |
+| pMedia   | System.ObjectL'elemento multimediale rimosso dalla libreria locale. È possibile eseguire il cast a un'interfaccia IWMPMedia per accedervi.<br/> |
 
 
 

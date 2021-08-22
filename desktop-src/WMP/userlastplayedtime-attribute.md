@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85fb7759c5e235575935df642f6fa1cfd53202a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5fdff7ad1c1e129da2de930f786d995cb8eab4c9d6ba6b58847303721980ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134414"
 ---
 # <a name="userlastplayedtime-attribute"></a>Attributo UserLastPlayedTime
 
-L'attributo **UserLastPlayedTime** è la data e l'ora in cui l'elemento è stato riprodotto più di recente.
+**L'attributo UserLastPlayedTime** è la data e l'ora in cui l'elemento è stato riprodotto più di recente.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -34,7 +34,7 @@ L'attributo **UserLastPlayedTime** è la data e l'ora in cui l'elemento è stato
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -50,7 +50,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

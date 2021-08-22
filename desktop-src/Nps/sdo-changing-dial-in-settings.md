@@ -1,20 +1,20 @@
 ---
-title: Modifica delle impostazioni di connessione remota
-description: Modifica delle impostazioni di connessione remota
+title: Modifica delle impostazioni di accesso Impostazioni
+description: Modifica delle impostazioni di accesso Impostazioni
 ms.assetid: db9d6d1c-2317-40ed-832b-f72f8e9e81bb
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9d2759ce57651b393debb810f534310c24f7a74
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5d0700bf5dfa0e7889fdc3b9171e0e8058404733a793bda1f6149911ead7dbb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063361"
 ---
-# <a name="changing-dial-in-settings"></a>Modifica delle impostazioni di connessione remota
+# <a name="changing-dial-in-settings"></a>Modifica delle impostazioni di accesso Impostazioni
 
-Il codice VBScript seguente imposta il bit di connessione e il numero di callback per un utente.
+Il codice VBScript seguente imposta il bit di accesso remoto e il numero di callback per un utente.
 
 
 ```VB
@@ -244,7 +244,7 @@ End Sub
 
 <dl> <dt>
 
-[**CLIENTPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
+[**PROPRIETÀ CLIENT**](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
 </dt> <dt>
 
 [Enumerazione di oggetti in una raccolta](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
@@ -259,9 +259,9 @@ End Sub
 [**ISdoMachine**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine)
 </dt> <dt>
 
-[**RADIUSPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
+[**PROPRIETÀ RADIUS**](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

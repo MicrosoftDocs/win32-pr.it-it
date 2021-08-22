@@ -4,12 +4,12 @@ ms.assetid: 26e9e7d6-7c01-4687-aa64-7aea867b4e58
 title: JobHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c82a36784ab6a1fb5eb0c8d682c45cce574ee9e
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 302a904436b47ad8e5630ccb495fed769d686aad62e022f6b0923ebc54075d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100519"
 ---
 # <a name="jobholepunch"></a>JobHolePunch
 
@@ -69,7 +69,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobHolePunch">

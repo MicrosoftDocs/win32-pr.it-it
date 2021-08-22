@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXSHEvalConeLight (D3DX10.h): valuta una luce che è un cono di intensità costante e restituisce dati sferici sferici(SH).'
+description: 'Funzione D3DXSHEvalConeLight (D3DX10.h): valuta una luce che è un cono di intensità costante e restituisce dati sferici armonici sferici (SH).'
 ms.assetid: ad2b9c86-cf1a-426e-88e6-4c543519e002
 title: Funzione D3DXSHEvalConeLight (D3DX10.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: fc11e7bab4cbbd6c8a685b289d4bde476cd465ca
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f3dd506c8349bd4b8648e2670baf815fcc7bb946d8996e196cd4a9a1fc8e8067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990901"
 ---
 # <a name="d3dxshevalconelight-function-d3dx10h"></a>Funzione D3DXSHEvalConeLight (D3DX10.h)
 
@@ -53,7 +53,7 @@ HRESULT D3DXSHEvalConeLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso nell'intervallo da D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo tra D3DXSH \_ MINORDER e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Ordine della valutazione SH. Deve essere compreso nell'intervallo da D3DXSH \_ M
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore al vettore di direzione dell'asse dell'asse dell'emisfero (x, y, z) in cui valutare le funzioni di base sh. Vedere la sezione Osservazioni.
+Puntatore al vettore di direzione dell'asse dell'emisfero (x, y, z) in cui valutare le funzioni di base SH. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -133,11 +133,11 @@ Puntatore al vettore SH di output per il componente blu.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere: D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Valuta una luce che è un cono di intensità costante e restituisce dati SH spettrali. Il vettore di output viene calcolato in modo che se il rapporto di intensità R/G/B è uguale a 1, la luminosità di uscita di un punto direttamente sotto la luce (orientata nella direzione del cono su un oggetto diffuso con albedo pari a 1) sarà 1,0. Verranno calcolati tre esempi spettrali. Verrà restituito pROut, mentre pGOut e pBOut possono essere restituiti.
+Valuta una luce che è un cono di intensità costante e restituisce dati SH spettrale. Il vettore di output viene calcolato in modo che se il rapporto di intensità R/G/B è uguale a 1, la luminosità di uscita di un punto direttamente sotto la luce (orientata nella direzione del cono su un oggetto diffuso con albedo pari a 1) sarebbe 1,0. Verranno calcolati tre esempi spettrale. Verrà restituito pROut, mentre pGOut e pBOut possono essere restituiti.
 
 Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo circa l'asse z nella direzione destra e phi, l'angolo da z.
 

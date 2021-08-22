@@ -1,17 +1,17 @@
 ---
-description: Video (Sistema di proprietà Windows)
+description: Video (Windows Property System)
 ms.assetid: 5d36b057-3712-4d00-99b7-3ddf45620b7a
-title: Video (Sistema di proprietà Windows)
+title: Video (Windows Property System)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d0def20ed46e97dd0b0df445fb2a7fcbfb83b95
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3d2023da08536add0084146d0000e6d4c0261d892452d1b221cdaa37e529ba5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095298"
 ---
-# <a name="video-windows-property-system"></a>Video (Sistema di proprietà Windows)
+# <a name="video-windows-property-system"></a>Video (Windows Property System)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -20,7 +20,7 @@ ms.locfileid: "108089909"
 | Argomento                                                                                                | Descrizione                                                                                                                                |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [System.Video.Compression](./props-system-video-compression.md)<br/>                     | Specifica il formato di compressione video.<br/>                                                                                         |
-| [System.Video.Director](./props-system-video-director.md)<br/>                           | Indica la persona che ha indirizzato il video. <br/>                                                                                   |
+| [System.Video.Director](./props-system-video-director.md)<br/>                           | Indica la persona che ha diretto il video. <br/>                                                                                   |
 | [System.Video.EncodingBitrate](./props-system-video-encodingbitrate.md)<br/>             | Indica la velocità dei dati in "bit al secondo" per il flusso video. "DataRate".<br/>                                                  |
 | [System.Video.FourCC](./props-system-video-fourcc.md)<br/>                               | Specifica il codice FOURCC per il flusso video.<br/>                                                                                 |
 | [System.Video.FrameHeight](./props-system-video-frameheight.md)<br/>                     | Indica l'altezza del fotogramma per il flusso video.<br/>                                                                                |

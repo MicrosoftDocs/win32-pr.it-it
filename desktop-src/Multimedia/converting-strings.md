@@ -3,19 +3,19 @@ title: Conversione di stringhe
 description: Conversione di stringhe
 ms.assetid: 40621c71-4264-40bc-b6c3-6b639d2f28fa
 keywords:
-- mciSendString (funzione)
+- Funzione mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1db4cb4b3d02a93adecc82d6ce95de436fb2e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4efeb5801c46d89686ed3fe9fcf25b311d57d4d553c220902907ac0e70a5b7e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144794"
 ---
 # <a name="converting-strings"></a>Conversione di stringhe
 
-Quando si usa la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) , tutti i valori passati con il comando e tutti i valori restituiti sono stringhe di testo, quindi l'applicazione deve avere le routine di conversione per tradurre le variabili in stringhe o viceversa. Nell'esempio seguente viene recuperato il rettangolo di origine e la stringa restituita viene convertita in coordinate del rettangolo.
+Quando si usa la funzione [**mciSendString,**](/previous-versions//dd757161(v=vs.85)) tutti i valori passati con il comando e tutti i valori restituiti sono stringhe di testo, quindi l'applicazione necessita di routine di conversione per la conversione da variabili a stringhe o di nuovo. Nell'esempio seguente viene recuperato il rettangolo di origine e la stringa restituita viene convertita in coordinate di rettangolo.
 
 
 ```C++
@@ -85,10 +85,10 @@ BOOL GetSourceRect(LPTSTR lpstrAlias, LPRECT lprc)
 
 
 > [!Note]  
-> Le strutture **Rect** sono gestite in modo diverso in MCI rispetto ad altre parti di Windows; in MCI il membro **destro** contiene la larghezza del rettangolo e il membro **inferiore** ne contiene l'altezza. Nell'interfaccia di stringa, un rettangolo viene specificato come *X1*, *Y1*, *X2* e *Y2*. Le coordinate *X1* e *Y1* specificano l'angolo superiore sinistro del rettangolo e le coordinate *X2* e *Y2* specificano la larghezza e l'altezza.
+> **Le** strutture RECT vengono gestite in modo diverso in MCI rispetto ad altre parti del Windows; In MCI, il **membro destro** contiene la larghezza del rettangolo e il **membro** inferiore contiene l'altezza. Nell'interfaccia di stringa un rettangolo viene specificato *come X1*, *Y1*, *X2* e *Y2*. Le coordinate *X1* e *Y1* specificano l'angolo superiore sinistro del rettangolo e le coordinate *X2* *e Y2* specificano la larghezza e l'altezza.
 
- 
+ 
 
- 
+ 
 
- 
+ 

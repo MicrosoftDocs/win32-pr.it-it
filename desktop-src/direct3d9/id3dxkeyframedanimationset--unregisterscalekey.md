@@ -1,7 +1,7 @@
 ---
-description: Rimuove i dati della scala in corrispondenza del fotogramma chiave specificato.
+description: Rimuove i dati di scala in corrispondenza del fotogramma chiave specificato.
 ms.assetid: b0bf5665-ccfb-4b87-8e88-9a717ef57955
-title: 'Metodo ID3DXKeyframedAnimationSet:: UnregisterScaleKey (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::UnregisterScaleKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6d1ac3f500b80d8922646fddff9f05d8c91d9c48
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 178cd60fccd462ec75586dda5092f218fefe39b236e4ac577a7c2cc6914ecc76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121054"
 ---
-# <a name="id3dxkeyframedanimationsetunregisterscalekey-method"></a>Metodo ID3DXKeyframedAnimationSet:: UnregisterScaleKey
+# <a name="id3dxkeyframedanimationsetunregisterscalekey-method"></a>Metodo ID3DXKeyframedAnimationSet::UnregisterScaleKey
 
-Rimuove i dati della scala in corrispondenza del fotogramma chiave specificato.
+Rimuove i dati di scala in corrispondenza del fotogramma chiave specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ HRESULT UnregisterScaleKey(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificatore dell'animazione.
 
 </dd> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotogramma chiave.
 
@@ -63,11 +63,11 @@ Fotogramma chiave.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è lento e non deve essere usato dopo che è iniziata la riproduzione di un'animazione.
+Questo metodo è lento e non deve essere usato dopo l'inizio della riproduzione di un'animazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questo metodo è lento e non deve essere usato dopo che è iniziata la riproduzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

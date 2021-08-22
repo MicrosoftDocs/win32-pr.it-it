@@ -1,7 +1,7 @@
 ---
-description: La funzione GetDllVersion Recupera il numero di versione di Cabinet.dll.
+description: La funzione GetDllVersion recupera il numero di versione di Cabinet.dll.
 ms.assetid: b324d5cd-1ede-473e-a10f-249c95eda057
-title: GetDllVersion (funzione)
+title: Funzione GetDllVersion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 1b1142bd2ece965a3f2fc58b6bb2f90586a8b391
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14f2da8c6f8c786042c2abd5f41e02bdfab6f33d9b8aa42a5b5f90a6c4357103
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390711"
 ---
-# <a name="getdllversion-function"></a>GetDllVersion (funzione)
+# <a name="getdllversion-function"></a>Funzione GetDllVersion
 
-\[Questa funzione non è più supportata, pertanto non è possibile garantirne il comportamento. \]
+\[Questa funzione non è più supportata, pertanto il relativo comportamento non può essere garantito. \]
 
-La funzione **GetDllVersion** Recupera il numero di versione di Cabinet.dll.
+La **funzione GetDllVersion** recupera il numero di versione di Cabinet.dll.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,11 +41,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il numero di versione del file (vedere la [risorsa VERSIONINFO](../menurc/versioninfo-resource.md)).
+Numero di versione del file (vedere [risorsa VERSIONINFO).](../menurc/versioninfo-resource.md)
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

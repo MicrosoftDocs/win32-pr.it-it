@@ -3,7 +3,7 @@ title: DropDownGallery - elemento
 description: Rappresenta un Drop-Down raccolta con un menu basato su raccolta.
 ms.assetid: fee6b3ad-fc84-49da-97da-2d53ff4dd0d8
 keywords:
-- Barra multifunzione di Windows per l'elemento DropDownGallery
+- Elemento DropDownGallery Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: befe0624dfef5910625a0aa067f3ad8cd9882ca2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 6926346ef8158930c72a004edf6bb414b9f2d4f2574712f5dd99945d08961cff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119393101"
 ---
 # <a name="dropdowngallery-element"></a>DropDownGallery - elemento
 
 Rappresenta un [controllo Raccolta a discesa](windowsribbon-controls-dropdowngallery.md) con un menu basato su raccolta.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <DropDownGallery
@@ -64,7 +64,7 @@ Rappresenta un [controllo Raccolta a discesa](windowsribbon-controls-dropdowngal
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa contenente un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
@@ -123,7 +123,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 | Elemento                                                                                           | Descrizione                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                                         | Può verificarsi una o più volte<br/> <br/> |
-| [**Casella**](windowsribbon-element-checkbox.md)<br/>                                     | Può verificarsi una o più volte<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                     | Può verificarsi una o più volte<br/> <br/> |
 | [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md)<br/> | Deve verificarsi esattamente una volta<br/> <br/>     |
 | [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>      |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                               | Può verificarsi una o più volte<br/> <br/> |
@@ -152,7 +152,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Gruppo</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
