@@ -1,7 +1,7 @@
 ---
 description: Il metodo RemoveAll rimuove tutti i nodi dall'elenco.
 ms.assetid: f6a6ebfe-5f53-4acd-8bfa-93680f5d40fd
-title: Metodo CBaseList. RemoveAll (Wxlist. h)
+title: Metodo CBaseList.RemoveAll (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ef6984a871dc13b0f50d748f67ceaac79937d2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 697a2c4463194b5fdfa079857b91ec255071a4d0fbb14e2672301df2a72341f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793251"
 ---
-# <a name="cbaselistremoveall-method"></a>Metodo CBaseList. RemoveAll
+# <a name="cbaselistremoveall-method"></a>Metodo CBaseList.RemoveAll
 
 Il `RemoveAll` metodo rimuove tutti i nodi dall'elenco.
 
@@ -54,8 +54,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

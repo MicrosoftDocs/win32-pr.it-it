@@ -1,9 +1,9 @@
 ---
-title: Metodi DrawGdiMetafile di ID2D1DeviceContext
-description: Consente di creare un metafile nel contesto di dispositivo. | Metodi DrawGdiMetafile di ID2D1DeviceContext
+title: Metodi DrawGdiMetafile ID2D1DeviceContext
+description: Disegnare un metafile nel contesto di dispositivo. | Metodi DrawGdiMetafile ID2D1DeviceContext
 ms.assetid: 57A08FFE-7B2D-477F-AEAD-E6A315B5B932
 keywords:
-- Metodo DrawGdiMetafile Direct2D
+- Metodi DrawGdiMetafile Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 063643272134d209ea2267f6ba00c4a293d3af77
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ff3173a6e58545ec2fcfc943222cd5678892c1f708100b4dec285933618eef29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044161"
 ---
-# <a name="id2d1devicecontextdrawgdimetafile-methods"></a>ID2D1DeviceContext::D Metodi rawGdiMetafile
+# <a name="id2d1devicecontextdrawgdimetafile-methods"></a>Metodi ID2D1DeviceContext::D rawGdiMetafile
 
-Consente di creare un metafile nel contesto di dispositivo.
+Disegnare un metafile nel contesto di dispositivo.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Consente di creare un metafile nel contesto di dispositivo.
 
 | Metodo                                                                                                | Descrizione                                       |
 |:------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
-| [**DrawGdiMetafile (ID2D1GdiMetafile \* , d2d1 \_ Point \_ 2F)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_d2d1_point_2f))  | Consente di creare un metafile nel contesto di dispositivo.<br/> |
-| [**DrawGdiMetafile (ID2D1GdiMetafile \* , d2d1 \_ Point \_ 2F \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_constd2d1_point_2f)) | Consente di creare un metafile nel contesto di dispositivo.<br/> |
+| [**DrawGdiMetafile (ID2D1GdiMetafile \* , D2D1 \_ POINT \_ 2F)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_d2d1_point_2f))  | Disegnare un metafile nel contesto di dispositivo.<br/> |
+| [**DrawGdiMetafile (ID2D1GdiMetafile \* , D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_constd2d1_point_2f)) | Disegnare un metafile nel contesto di dispositivo.<br/> |
 
 
 

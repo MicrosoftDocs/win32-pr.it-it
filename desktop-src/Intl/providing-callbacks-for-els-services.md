@@ -4,21 +4,21 @@ ms.assetid: 48609c55-9e82-4407-ae28-41b07b1e1161
 title: Fornire callback per i servizi ELS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d22091f666649aab43c66f3d532f8e8f971d49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec6704bcf11d2619431aa1b855cd711f82e75e71fc4a762c0e8cf2cb35082341
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040491"
 ---
 # <a name="providing-callbacks-for-els-services"></a>Fornire callback per i servizi ELS
 
-Se l'applicazione usa operazioni asincrone per il riconoscimento del testo, deve fornire una funzione di callback per il servizio ELS da usare. La funzione di callback è basata sul prototipo [**MappingCallbackProc**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc) .
+Se l'applicazione usa operazioni asincrone per il riconoscimento del testo, deve fornire una funzione di callback per l'uso da parte del servizio ELS. La funzione di callback è basata sul [**prototipo MappingCallbackProc.**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc)
 
-L'argomento relativo al [riconoscimento del testo richiedente](requesting-text-recognition.md) descrive il modo in cui l'applicazione può richiedere il riconoscimento del testo asincrono da un servizio ELS. Nell'esempio seguente viene illustrata un'applicazione che effettua una chiamata asincrona a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). La funzione di callback per il riconoscimento del testo è denominata **RecognizeCallback**. Si noti che l'applicazione deve verificare che il contenitore delle proprietà, il testo di input, le opzioni e il servizio siano tutti validi fino al termine dell'esecuzione della funzione di callback. Inoltre, l'applicazione deve garantire che [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) venga chiamato immediatamente dopo che il contenitore viene utilizzato dalla funzione di callback.
+[L'argomento Requesting Text Recognition](requesting-text-recognition.md) (Richiesta di riconoscimento del testo) descrive in che modo l'applicazione può richiedere il riconoscimento del testo asincrono da un servizio ELS. L'esempio seguente illustra un'applicazione che effettua una chiamata asincrona [**a MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). La funzione di callback per il riconoscimento del testo è denominata **RecognizeCallback.** Si noti che l'applicazione deve assicurarsi che l'elenco delle proprietà, il testo di input, le opzioni e il servizio siano tutti validi fino al termine dell'esecuzione della funzione di callback. Inoltre, l'applicazione deve garantire che [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) sia chiamato immediatamente dopo che il contenitore viene utilizzato dalla funzione di callback.
 
 > [!Note]  
-> Potrebbe essere consigliabile che l'applicazione usi la funzione di callback per liberare le risorse dopo che è stata completata l'elaborazione o la copia.
+> Potrebbe essere consigliabile che l'applicazione usi la funzione di callback per liberare le risorse al termine dell'elaborazione o della copia.
 
  
 
@@ -149,10 +149,10 @@ void RecognizeCallback(PMAPPING_PROPERTY_BAG pBag, LPVOID data, DWORD dwDataSize
 
 <dl> <dt>
 
-[Uso di servizi linguistici estesi](using-extended-linguistic-services.md)
+[Uso di Servizi linguistici estesi](using-extended-linguistic-services.md)
 </dt> <dt>
 
-[Richiesta del riconoscimento del testo](requesting-text-recognition.md)
+[Richiesta di riconoscimento del testo](requesting-text-recognition.md)
 </dt> <dt>
 
 [**MappingCallbackProc**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc)

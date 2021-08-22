@@ -1,23 +1,23 @@
 ---
-description: Le tecniche forniscono il muscolo di rendering. Una tecnica incapsula lo stato dell'effetto che determina uno stile di rendering. Una tecnica è costituita da uno o più passaggi.
+description: Le tecniche forniscono il motore di rendering. Una tecnica incapsula lo stato dell'effetto che determina uno stile di rendering. Una tecnica è costituito da uno o più passaggi.
 ms.assetid: 0a4d8f44-c7c0-4355-ac7f-6bc3315eeff0
 title: Tecniche e passaggi (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f3a68ac40db16b3e6819adf6fcd1f8a6f790325
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9999927d96a914b80f870a2128b0eae12074616e4ae787b011551b6aab919220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044209"
 ---
 # <a name="techniques-and-passes-direct3d-9"></a>Tecniche e passaggi (Direct3D 9)
 
-Le tecniche forniscono il muscolo di rendering. Una tecnica incapsula lo stato dell'effetto che determina uno stile di rendering. Una tecnica è costituita da uno o più passaggi.
+Le tecniche forniscono il motore di rendering. Una tecnica incapsula lo stato dell'effetto che determina uno stile di rendering. Una tecnica è costituito da uno o più passaggi.
 
 ## <a name="techniques"></a>Tecniche
 
-La sintassi per la chiamata di una tecnica è la seguente:
+La sintassi per chiamare una tecnica è la seguente:
 
 
 ```
@@ -29,9 +29,9 @@ technique [ id ]  [< annotation(s) >]
 
 Dove:
 
--   ID è un nome univoco facoltativo.
--   l'annotazione è zero o più parti facoltative delle informazioni specifiche dell'utente. Vedere [aggiungere informazioni ai parametri di effetto con le \_ annotazioni](using-an-effect.md).
--   i pass (es) sono pari a zero o più sessioni. Ogni sessione contiene le assegnazioni di stato. Vedere qui di seguito.
+-   id è un nome univoco facoltativo.
+-   annotation è zero o più parti facoltative di informazioni specifiche dell'utente. Vedere [Aggiungere informazioni ai parametri degli effetti con \_ annotazioni](using-an-effect.md).
+-   pass(es) è zero o più passaggi. Ogni passaggio contiene assegnazioni di stato. Vedere qui di seguito.
 
 ## <a name="passes"></a>Passa
 
@@ -47,11 +47,11 @@ pass  [ id ]  [< annotation(s) >]
 
 Dove:
 
--   ID è un nome univoco facoltativo.
--   l'annotazione è una o più informazioni facoltative specifiche dell'utente. Vedere [aggiungere informazioni ai parametri di effetto con le \_ annotazioni](using-an-effect.md).
--   assegnazione/i assegna zero o più valori di stato oppure valuta una o più espressioni. Vedere [gli Stati degli effetti (Direct3D 9)](effect-states.md) ed [espressioni (Direct3D 9)](expressions.md).
+-   id è un nome univoco facoltativo.
+-   annotation è una o più informazioni facoltative specifiche dell'utente. Vedere [Aggiungere informazioni ai parametri degli effetti con \_ annotazioni](using-an-effect.md).
+-   assignment(s) assegna zero o più valori di stato o valuta una o più espressioni. Vedere [Stati degli effetti (Direct3D 9)](effect-states.md) ed Espressioni [(Direct3D 9).](expressions.md)
 
-Passa Ignora tutto tranne l'ultima assegnazione in un set di assegnazioni ripetute allo stesso stato.
+I passaggi ignorano tutti, ma l'ultima assegnazione in un set di assegnazioni ripetute allo stesso stato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

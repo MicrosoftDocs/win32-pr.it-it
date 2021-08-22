@@ -16,7 +16,7 @@ ms.locfileid: "119979591"
 La [**struttura XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) espone gli operatori seguenti.
 
 > [!Note]  
-> Gli operatori elencati qui sono disponibili solo in C++.
+> Gli operatori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -26,7 +26,7 @@ La [**struttura XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) 
 
 | Metodi                                             | Descrizione                                                                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMINT4` di all'istanza corrente di `XMINT4` .<br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMINT4` di all'istanza corrente di `XMINT4` .<br/> |
 
 
 

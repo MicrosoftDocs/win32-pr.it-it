@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_INDEX (mmsystem. h)
-description: Il \_ comando MCI index attiva o disattiva la visualizzazione sullo schermo. I dispositivi VCR riconoscono questo comando.
+title: MCI_INDEX comando (Mmsystem.h)
+description: Il comando MCI INDEX attiva o disattiva \_ la visualizzazione su schermo. I dispositivi vcr riconoscono questo comando.
 ms.assetid: c0f18f28-3578-4648-9b75-2d3ede68b3df
 keywords:
-- Comando MCI_INDEX Windows Multimedia
+- MCI_INDEX comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1e93890b8c3db1150bc7224b0fd8b6ee7475ced
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e8e867098438a9df0be03646d85ff33fe857b285d0fda2763a3cecd46075f8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039211"
 ---
-# <a name="mci_index-command"></a>\_Comando di indice MCI
+# <a name="mci_index-command"></a>Comando MCI \_ INDEX
 
-Il \_ comando MCI index attiva o disattiva la visualizzazione sullo schermo. I dispositivi VCR riconoscono questo comando.
+Il comando MCI INDEX attiva o disattiva \_ la visualizzazione su schermo. I dispositivi vcr riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
+Per inviare questo comando, chiamare [**la funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
 
 
 ```C++
@@ -50,43 +50,43 @@ Identificatore del dispositivo MCI che deve ricevere il messaggio di comando.
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Test MCI notifica, MCI \_ Wait o MCI \_ . Per informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Per informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpIndex"></span><span id="lpindex"></span><span id="LPINDEX"></span>*lpIndex*
 </dt> <dd>
 
-Puntatore a una [**struttura \_ \_ parametri generica MCI**](mci-generic-parms.md) . I dispositivi con set di comandi estesi possono sostituire questa struttura con una struttura specifica del dispositivo.
+Puntatore a una [**struttura MCI \_ GENERIC \_ PARMS.**](mci-generic-parms.md) I dispositivi con set di comandi estesi potrebbero sostituire questa struttura con una struttura specifica del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni visualizzate nella schermata sullo schermo sono controllate dal \_ flag MCI VCR \_ set \_ index nel comando [ \_ set di MCI](mci-set.md) .
+Le informazioni visualizzate sullo schermo sono controllate dal \_ flag MCI VCR \_ SET INDEX nel comando \_ [MCI \_ SET.](mci-set.md)
 
-I seguenti flag aggiuntivi si applicano ai dispositivi VCR:
+Ai dispositivi vcr si applicano i flag aggiuntivi seguenti:
 
 <dl> <dt>
 
-<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>\_set \_ disattivato
+<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>MCI \_ SET \_ OFF
 </dt> <dd>
 
-Attiva la visualizzazione sullo schermo.
+Disattiva la visualizzazione su schermo.
 
 </dd> <dt>
 
-<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ impostato \_ su
+<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ SET \_ ON
 </dt> <dd>
 
-Attiva la visualizzazione sullo schermo.
+Attiva la visualizzazione su schermo.
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ Attiva la visualizzazione sullo schermo.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Attiva la visualizzazione sullo schermo.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandi MCI](mci-commands.md)

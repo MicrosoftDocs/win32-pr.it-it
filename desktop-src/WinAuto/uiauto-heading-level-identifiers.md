@@ -1,6 +1,6 @@
 ---
-title: Identificatori a livello di intestazione (UIAutomationClient. h)
-description: Indica il livello di intestazione di un elemento di automazione interfaccia utente Microsoft.
+title: Identificatori del livello di intestazione (UIAutomationClient.h)
+description: Indica il livello di intestazione di un elemento Automazione interfaccia utente Microsoft.
 ms.assetid: D77D70DA-0EEE-438F-B467-159E0A8BF2B3
 topic_type:
 - apiref
@@ -21,18 +21,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b24c214e66e26bf957f8c0a8012246f86499d6f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6af1b4bd4d6e22e37303b7bb3eaa6e7d65b27598f25ae96b0977be9d7ee8227a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861261"
 ---
-# <a name="heading-level-identifiers"></a>Identificatori a livello di intestazione
+# <a name="heading-level-identifiers"></a>Identificatori del livello di intestazione
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Indica il livello di intestazione di un elemento di automazione interfaccia utente Microsoft.
+Indica il livello di intestazione di un elemento Automazione interfaccia utente Microsoft.
 
 <dl> <dt>
 
@@ -135,7 +135,7 @@ Livello di intestazione 6.
 
 
 
-Livello 7 di intestazione.
+Livello di intestazione 7.
 
 
 </dt> </dl> </dd> <dt>
@@ -172,9 +172,9 @@ Livello di intestazione 9.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DNS-DS-record-Algorithms
-description: Attributo utilizzato per definire gli algoritmi utilizzati durante la scrittura del file dsset durante la firma della zona.
+title: Attributo ms-DNS-DS-Record-Algorithms
+description: Attributo utilizzato per definire gli algoritmi usati durante la scrittura del file dsset durante la firma della zona.
 ms.assetid: 4cf1b1fc-d927-4219-9c78-c906acb49255
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DNS-DS-record-Algorithms
-- msDNs-schema AD dell'attributo DSRecordAlgorithms
+- Attributo ms-DNS-DS-Record-Algorithms schema AD
+- Schema AD dell'attributo msDNS-DSRecordAlgorithms
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b721a616b5b1967449965ef2c7dc9ad9889ca6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0a65ac7cde340cca7a07c5f4aedfd8f2e63babcc4c6f981a8efa6368b3b20968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924471"
 ---
-# <a name="ms-dns-ds-record-algorithms-attribute"></a>attributo ms-DNS-DS-record-Algorithms
+# <a name="ms-dns-ds-record-algorithms-attribute"></a>Attributo ms-DNS-DS-Record-Algorithms
 
-Attributo utilizzato per definire gli algoritmi utilizzati durante la scrittura del file dsset durante la firma della zona.
+Attributo utilizzato per definire gli algoritmi usati durante la scrittura del file dsset durante la firma della zona.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-DS-record-algoritmi          |
-| LDAP-Display-Name | msDNs-DSRecordAlgorithms             |
+| CN                | ms-DNS-DS-Record-Algorithms          |
+| Ldap-Display-Name | msDNS-DSRecordAlgorithms             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2134              |
-| System-ID-GUID    | 5c5b7ad2-20fa-44bb-beb3-34b9c0f65579 |
+| System-Id-Guid    | 5c5b7ad2-20fa-44bb-beb3-34b9c0f65579 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ Attributo utilizzato per definire gli algoritmi utilizzati durante la scrittura 
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

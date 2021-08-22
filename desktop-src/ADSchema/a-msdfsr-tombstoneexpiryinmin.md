@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-TombstoneExpiryInMin
-description: Contiene la durata del record contrassegnato per la rimozione definitiva, in minuti.
+title: Attributo ms-DFSR-TombstoneExpiryInMin
+description: Contiene la durata del record di rimozione definitiva, in minuti.
 ms.assetid: cc8ada8f-904d-4400-a61c-94c53bbe8f7b
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-DFSR-TombstoneExpiryInMin-schema AD
-- msDFSR-schema AD attributo TombstoneExpiryInMin
+- Schema AD dell'attributo ms-DFSR-TombstoneExpiryInMin
+- Schema AD dell'attributo msDFSR-TombstoneExpiryInMin
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51832cb4ecb4e8b70ef8dc96aaab673f995b315d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: db2c525b29e78ba9f0d9ffe0c7e47e3b4147d62b4ecb44f3d7c20bf149ff22be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298041"
 ---
-# <a name="ms-dfsr-tombstoneexpiryinmin-attribute"></a>attributo ms-DFSR-TombstoneExpiryInMin
+# <a name="ms-dfsr-tombstoneexpiryinmin-attribute"></a>Attributo ms-DFSR-TombstoneExpiryInMin
 
-Contiene la durata del record contrassegnato per la rimozione definitiva, in minuti.
+Contiene la durata del record di rimozione definitiva, in minuti.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-TombstoneExpiryInMin         |
-| LDAP-Display-Name | msDFSR-TombstoneExpiryInMin          |
+| CN                | ms-DFSR-TombstoneExpiryInMin         |
+| Ldap-Display-Name | msDFSR-TombstoneExpiryInMin          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.11           |
-| System-ID-GUID    | 23e35d4c-e324-4861-a22f-e199140dae00 |
+| System-Id-Guid    | 23e35d4c-e324-4861-a22f-e199140dae00 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -56,15 +56,15 @@ Contiene la durata del record contrassegnato per la rimozione definitiva, in min
 | ID collegamento                | \-                                                                       |
 | MAPI-Id                | \-                                                                       |
 | System-Only            | Falso                                                                    |
-| È a valore singolo       | Vero                                                                     |
+| Is-Single-Valued       | Vero                                                                     |
 | Indicizzato             | Falso                                                                    |
 | Nel catalogo globale      | Falso                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                             |
 | Range-Lower            | \-                                                                       |
 | Range-Upper            | \-                                                                       |
 | Search-Flags           | 0x00000000                                                               |
 | System-Flags           | 0x00000000                                                               |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene la durata del record contrassegnato per la rimozione definitiva, in min
 | ID collegamento                | \-                                                                       |
 | MAPI-Id                | \-                                                                       |
 | System-Only            | Falso                                                                    |
-| È a valore singolo       | Vero                                                                     |
+| Is-Single-Valued       | Vero                                                                     |
 | Indicizzato             | Falso                                                                    |
 | Nel catalogo globale      | Falso                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                             |
 | Range-Lower            | \-                                                                       |
 | Range-Upper            | \-                                                                       |
 | Search-Flags           | 0x00000000                                                               |
 | System-Flags           | 0x00000000                                                               |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene la durata del record contrassegnato per la rimozione definitiva, in min
 | ID collegamento                | \-                                                                       |
 | MAPI-Id                | \-                                                                       |
 | System-Only            | Falso                                                                    |
-| È a valore singolo       | Vero                                                                     |
+| Is-Single-Valued       | Vero                                                                     |
 | Indicizzato             | Falso                                                                    |
 | Nel catalogo globale      | Falso                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                             |
 | Range-Lower            | \-                                                                       |
 | Range-Upper            | \-                                                                       |
 | Search-Flags           | 0x00000000                                                               |
 | System-Flags           | 0x00000000                                                               |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
@@ -119,21 +119,21 @@ Contiene la durata del record contrassegnato per la rimozione definitiva, in min
 | ID collegamento                | \-                                                                       |
 | MAPI-Id                | \-                                                                       |
 | System-Only            | Falso                                                                    |
-| È a valore singolo       | Vero                                                                     |
+| Is-Single-Valued       | Vero                                                                     |
 | Indicizzato             | Falso                                                                    |
 | Nel catalogo globale      | Falso                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                             |
 | Range-Lower            | \-                                                                       |
 | Range-Upper            | \-                                                                       |
 | Search-Flags           | 0x00000000                                                               |
 | System-Flags           | 0x00000000                                                               |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **MS-DFSR-TombstoneExpiryInMin** fa parte del supporto del servizio di replica file System distribuito (DFS).
+**L'attributo ms-DFSR-TombstoneExpiryInMin** fa parte del supporto del servizio replica file system distribuito (DFS).
 
  
 

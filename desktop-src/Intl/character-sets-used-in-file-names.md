@@ -1,28 +1,28 @@
 ---
-description: NTFS archivia i nomi di file in formato Unicode. Al contrario, i file system FAT12, FAT16 e FAT32 precedenti utilizzano il set di caratteri OEM. Per altre informazioni, vedere Tabelle codici.
+description: NTFS archivia i nomi di file in Unicode. Al contrario, i file system FAT12, FAT16 e FAT32 meno recenti usano il set di caratteri OEM. Per altre informazioni, vedere Tabelle codici.
 ms.assetid: 4573dd3b-ad68-460c-bc0f-ff65d4b70860
-title: Set di caratteri utilizzati nei nomi file
+title: Set di caratteri usati nei nomi di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79394c92b2886f715299855aae27f15753dc86cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2dad9033b3ea723de757c59a73fc62c91a56da286ca74ca7444f31db42ff539f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107381"
 ---
-# <a name="character-sets-used-in-file-names"></a>Set di caratteri utilizzati nei nomi file
+# <a name="character-sets-used-in-file-names"></a>Set di caratteri usati nei nomi di file
 
-NTFS archivia i nomi di file in formato Unicode. Al contrario, i file system FAT12, FAT16 e FAT32 precedenti utilizzano il set di caratteri OEM. Per altre informazioni, vedere [Tabelle codici](code-pages.md).
+NTFS archivia i nomi di file in Unicode. Al contrario, i file system FAT12, FAT16 e FAT32 meno recenti usano il set di caratteri OEM. Per altre informazioni, vedere [Tabelle codici](code-pages.md).
 
-Le applicazioni non Unicode che creano file FAT talvolta devono usare le funzioni di conversione della libreria di runtime C standard per tradurre tra il set di caratteri della tabella codici di Windows e il set di caratteri della tabella codici OEM. Con le implementazioni Unicode delle funzioni file system, non è necessario eseguire tali traduzioni.
+Le applicazioni non Unicode che creano file FAT talvolta devono usare le funzioni di conversione standard della libreria di runtime C per eseguire la conversione tra il set di caratteri della tabella codici Windows e il set di caratteri della tabella codici OEM. Con le implementazioni Unicode delle file system, non è necessario eseguire tali traduzioni.
 
-L'applicazione può usare tipi stringa generici, come descritto in [tipi di dati di Windows per le stringhe](windows-data-types-for-strings.md). L'applicazione può anche usare i prototipi di funzione generici usando le tecniche descritte in [convenzioni per i prototipi di funzione](conventions-for-function-prototypes.md). Per i tipi di stringa generici o per i prototipi di funzione generica, l'applicazione può usare un unico file di origine per compilare una versione Unicode o non Unicode. Per consentire questa operazione, l'applicazione fornisce macro per le funzioni che non vengono richiamate durante la compilazione per Unicode.
+L'applicazione può usare tipi stringa generici, come descritto in Windows [tipi di dati per le stringhe](windows-data-types-for-strings.md). L'applicazione può anche usare prototipi di funzione generici usando le tecniche descritte in [Convenzioni per i prototipi di funzione](conventions-for-function-prototypes.md). Per i tipi di stringa generici o i prototipi di funzione generici, l'applicazione può usare un singolo file di origine per compilare una versione Unicode o non Unicode. A tale scopo, l'applicazione fornisce macro per le funzioni che non vengono richiamate durante la compilazione per Unicode.
 
-Nei file system NTFS e FAT, i caratteri speciali per il nome file sono:' \\ ','/',' .','?' è \* '. Nelle tabelle codici OEM questi caratteri speciali si trovano nell'intervallo di caratteri ASCII (da 0x00 a 0x7F). Gli equivalenti Unicode sono gli stessi valori in formato a 2 byte, 0x0000 tramite 0x007F.
+Nei file system NTFS e FAT, i caratteri speciali del nome file sono: \\ '', '/', '.', '?' e \* ''. Nelle code pages OEM questi caratteri speciali sono nell'intervallo di caratteri ASCII (da 0x00 a 0x7F). Gli equivalenti Unicode sono gli stessi valori in formato a 2 byte, 0x0000 a 0x007F.
 
 > [!Caution]  
-> I set di caratteri della tabella codici di Windows e della tabella codici OEM usati nei sistemi operativi in lingua giapponese contengono il simbolo Yen (¥) invece di una barra rovesciata ( \\ ). Il simbolo Yen è quindi un carattere non consentito per i file system NTFS e FAT. Quando si esegue il mapping di Unicode a una tabella codici in lingua giapponese, [**WideCharToMultiByte**](/windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte) e altre funzioni di conversione mappano sia la barra rovesciata (u + 005C) che il normale simbolo di yen Unicode (u + 00A5) a questo stesso carattere. Per motivi di sicurezza, le applicazioni non dovrebbero in genere consentire il carattere U + 00A5 in una stringa Unicode che potrebbe essere convertita per essere usata come nome file FAT. Per ulteriori informazioni, vedere [considerazioni sulla sicurezza: funzionalità internazionali](security-considerations--international-features.md).
+> Windows tabella codici e i set di caratteri della tabella codici OEM usati nei sistemi operativi in lingua giapponese contengono il simbolo Di dollaro (¥) anziché una barra rovesciata ( \\ ). Di conseguenza, il simbolo Dello yen è un carattere non consentito per i file system NTFS e FAT. Quando si esegue il mapping di Unicode a una tabella codici in lingua giapponese, [**WideCharToMultiByte**](/windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte) e altre funzioni di conversione eseguano il mapping di entrambe le barre rovesciate (U+005C) e del normale simbolo Unicode Unicode (U+00A5) allo stesso carattere. Per motivi di sicurezza, le applicazioni non devono in genere consentire il carattere U+00A5 in una stringa Unicode che potrebbe essere convertita per l'uso come nome di file FAT. Per altre informazioni, vedere [Considerazioni sulla sicurezza: funzionalità internazionali](security-considerations--international-features.md).
 
  
 

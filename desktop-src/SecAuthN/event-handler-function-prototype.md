@@ -1,7 +1,7 @@
 ---
-description: Le funzioni del prototipo del gestore eventi vengono usate per tutte le funzioni che gestiscono gli eventi di notifica Winlogon.
+description: Le funzioni prototipo del gestore eventi vengono usate per tutte le funzioni che gestiscono gli eventi di notifica Winlogon.
 ms.assetid: 99b91e80-5e4e-4119-89aa-c0a80fce69e3
-title: Funzione di callback del prototipo di funzione del gestore eventi
+title: Funzione di callback Del prototipo di funzione del gestore eventi
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 935ddac5660c814b898be17218d879678f2135ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df6670e852ccd12fd2bed1d0c188aa0252c9b3afbcb899cf9480b7011d08625d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008229"
 ---
-# <a name="event-handler-function-prototype-callback-function"></a>Funzione di callback del prototipo di funzione del gestore eventi
+# <a name="event-handler-function-prototype-callback-function"></a>Funzione di callback Del prototipo di funzione del gestore eventi
 
-\[Le funzioni del prototipo del gestore eventi non sono più disponibili per l'uso a partire da Windows Server 2008 e Windows Vista. \]
+\[Le funzioni prototipo del gestore eventi non sono più disponibili per l'uso a Windows Server 2008 e Windows Vista. \]
 
-Le funzioni del prototipo del gestore eventi vengono usate per tutte le funzioni che gestiscono gli eventi di notifica [*Winlogon*](/windows/desktop/SecGloss/w-gly) . Nome della funzione, rappresentato di seguito dal nome della funzione del *\_ gestore eventi \_ \_* del segnaposto, in genere riflette il nome dell'evento gestito dalla funzione. Ad esempio, la funzione che gestisce gli eventi di accesso potrebbe essere denominata: **WLEventLogon**.
+Le funzioni prototipo del gestore eventi vengono usate per tutte le funzioni che gestiscono [*gli eventi di notifica Winlogon.*](/windows/desktop/SecGloss/w-gly) Il nome della funzione, rappresentato di seguito dal segnaposto Nome funzione gestore eventi, riflette in genere il nome dell'evento gestito dalla funzione. *\_ \_ \_* Ad esempio, la funzione che gestisce gli eventi di accesso potrebbe essere denominata **WLEventLogon**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ void Event_Handler_Function_Name(
 
 <dl> <dt>
 
-*pInfo* \[ in\]
+*pInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ \_ informazioni di notifica di WLX**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_notification_info) che contiene i dettagli dell'evento.
+Puntatore a una [**struttura WLX \_ NOTIFICATION \_ INFO**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_notification_info) che contiene i dettagli dell'evento.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Questa funzione di callback non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Se il gestore eventi deve creare processi figlio, deve chiamare la funzione [**CreateProcessAsUser ha**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) . In caso contrario, il nuovo processo verrà creato sul desktop di Winlogon, non sul desktop dell'utente.
+Se il gestore eventi deve creare processi figlio, deve chiamare la [**funzione CreateProcessAsUser.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) In caso contrario, il nuovo processo verrà creato sul desktop Winlogon, non sul desktop dell'utente.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come implementare i gestori eventi per gli eventi Winlogon. Per semplicità, vengono visualizzate solo le implementazioni dei gestori degli eventi di accesso e di disconnessione. È possibile implementare i gestori per il resto degli eventi esattamente allo stesso modo.
+L'esempio seguente illustra come implementare i gestori eventi per gli eventi Winlogon. Per semplicità, vengono visualizzate solo le implementazioni dei gestori eventi Logon e Logoff. È possibile implementare gestori per il resto degli eventi esattamente nello stesso modo.
 
 
 ```C++
@@ -113,8 +113,8 @@ void WLEventLogoff (PWLX_NOTIFICATION_INFO pInfo)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

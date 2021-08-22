@@ -1,23 +1,23 @@
 ---
-title: Strutture-StoServe
-description: Il foglio di lavoro consente di impacchettare il colore, la larghezza e le coordinate della penna in strutture INKDATA e di archiviarle in una matrice allocata in modo dinamico che gestisce in memoria.
+title: Strutture - StoServe
+description: COPaper crea un pacchetto di colore, larghezza e coordinate della penna in strutture INKDATA e li archivia in una matrice allocata dinamicamente che gestisce in memoria.
 ms.assetid: 25e68c39-5306-4ad6-85dd-a8a5e256abf0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9868f38d7915185b8d3511bd1bf6faa9c7a1e1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f81b46f2f0a992f27ed405361734fe53db98cf9272697b88866451ef1d7d4b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796891"
 ---
-# <a name="structures---stoserve"></a>Strutture-StoServe
+# <a name="structures---stoserve"></a>Strutture - StoServe
 
-Il foglio di lavoro consente di impacchettare il colore, la larghezza e le coordinate della penna in strutture **INKDATA** e di archiviarle in una matrice allocata in modo dinamico che gestisce in memoria.
+COPaper crea un pacchetto di colore, larghezza e coordinate della penna in strutture **INKDATA** e li archivia in una matrice allocata dinamicamente che gestisce in memoria.
 
 ## <a name="inkdata-structure"></a>Struttura INKDATA
 
-Di seguito sono riportate le dichiarazioni per la struttura **INKDATA** da Paper. H.
+Di seguito sono riportate le dichiarazioni per la **struttura INKDATA** da PAPER.H.
 
 ``` syntax
 // The types of Ink Data.
@@ -37,17 +37,17 @@ Di seguito sono riportate le dichiarazioni per la struttura **INKDATA** da Paper
   } INKDATA;
 ```
 
-Alla matrice dinamica di questi pacchetti **INKDATA** viene fatto riferimento da m \_ paInkData, un membro della classe di implementazione [**iPaper**](ipaper-methods.md) . La matrice viene creata all'interno del metodo **iPaper:: InitPaper** con un'allocazione iniziale. Per informazioni dettagliate, vedere il metodo **InitPaper** e il metodo di utilità NextSlot privato dell'implementazione di CIMPIPAPER in paper. H. I metodi [**InkStart**](inkstart-method.md), [**InkDraw**](inkdraw-method.md)e [**InkStop**](cguipaper-methods.md) usano NextSlot per ottenere nuovi slot nella matrice. La matrice viene espansa in modo dinamico da NextSlot in base alla necessità.
+La matrice dinamica di questi **pacchetti INKDATA** è a cui punta m paInkData, un membro della classe di implementazione \_ [**IPaper.**](ipaper-methods.md) La matrice viene creata all'interno **del metodo IPaper::InitPaper** con un'allocazione iniziale. Per informazioni dettagliate, vedere **il metodo InitPaper** e il metodo di utilità NextSlot privato dell'implementazione di CImpIPaper in PAPER.H. I [**metodi InkStart**](inkstart-method.md), [**InkDraw**](inkdraw-method.md)e [**InkStop**](cguipaper-methods.md) usano NextSlot per ottenere nuovi slot nella matrice. La matrice viene espansa dinamicamente da NextSlot in base alle necessità.
 
-Il client chiama il metodo [**iPaper:: erase**](ipaper-methods.md) per cancellare il disegno corrente. Questo metodo non consente di riallocare la matrice. contrassegna semplicemente tutti i dati Ink correnti come INKTYPE \_ None e Reimposta l'indice di fine dei dati della matrice su zero.
+Il client chiama [**il metodo IPaper::Erase**](ipaper-methods.md) per cancellare il disegno corrente. Questo metodo non rialloca la matrice. contrassegna semplicemente tutti i dati dell'input penna correnti come INKTYPE NONE e reimposta l'indice di fine dati \_ della matrice su zero.
 
-Il client chiama i metodi [**iPaper:: Lock**](ipaper-methods.md) e **Unlock** per gestire la proprietà del documento per il disegno. Questi metodi vengono forniti per organizzare l'accesso tra più client al disegno contenuto in un documento condiviso.
+Il client chiama i [**metodi IPaper::Lock**](ipaper-methods.md) e **Unlock** per gestire la proprietà di COPaper per il disegno. Questi metodi vengono forniti per organizzare l'accesso tra più client al disegno contenuto in un COPaper condiviso.
 
-## <a name="paper_properties-structure"></a>\_Struttura della proprietà paper
+## <a name="paper_properties-structure"></a>Struttura \_ PAPER PROPERTIES
 
-Il client chiama il metodo [**iPaper:: Resize**](ipaper-methods.md) per indicare al documento che l'utente ha ridimensionato il rettangolo di disegno corrente. I dati delle coordinate vengono conservati in una struttura di **\_ proprietà della carta** , archiviata con i dati di input penna quando tutti i dati cartacei vengono archiviati in un file composto.
+Il client chiama il [**metodo IPaper::Resize**](ipaper-methods.md) per indicare a COPaper che l'utente ha ridimensionato il rettangolo della carta da disegno corrente. Questi dati delle coordinate vengono mantenuti in una struttura **PAPER \_ PROPERTIES,** che viene archiviata con i dati dell'input penna quando tutti i dati della carta vengono archiviati in un file composto.
 
-Di seguito è riportata la dichiarazione delle **\_ proprietà della carta** da Paper. H.
+Di seguito è riportata **la dichiarazione PAPER \_ PROPERTIES** di PAPER.H.
 
 ``` syntax
 #define PAPER_TITLE_SIZE 64
@@ -64,19 +64,19 @@ Di seguito è riportata la dichiarazione delle **\_ proprietà della carta** da 
   } PAPER_PROPERTIES;
 ```
 
-La struttura della **\_ Proprietà paper** è progettata in modo che i nuovi formati di dati Ink possano essere aggiunti in qualsiasi momento quando il componente DllPaper si evolve. L'interfaccia [**iPaper**](ipaper-methods.md) è sufficientemente generale da consentire a una versione successiva del componente DllPaper di archiviare un formato di dati Ink diverso durante l'implementazione della stessa interfaccia **iPaper** . Poiché i metodi di **iPaper** non dipendono da un formato di dati Ink specifico, una nuova versione del componente DllPaper che supporta un formato di dati Ink diverso può utilizzare la stessa interfaccia.
+La **struttura \_ PAPER PROPERTIES** è progettata in modo che sia possibile aggiungere nuovi formati di dati input penna in qualsiasi momento man mano che il componente DllPaper si evolve. [**L'interfaccia IPaper**](ipaper-methods.md) è sufficientemente generica che una versione successiva del componente DllPaper può archiviare un formato dati input penna diverso durante l'implementazione della **stessa interfaccia IPaper.** Poiché i metodi di **IPaper** non dipendono da un formato dati input penna specifico, una nuova versione del componente DllPaper che supporta un formato dati input penna diverso può usare questa stessa interfaccia.
 
-Le proprietà della carta archiviate in un file composto registrano la dimensione corrente della matrice di dati di input penna. È quindi possibile allocare le dimensioni corrette della matrice per contenere i dati dell'input penna letti dal file.
+Le proprietà della carta archiviate in un file composto registrano le dimensioni correnti della matrice di dati dell'input penna. È quindi possibile allocare le dimensioni di matrice appropriate per contenere i dati dell'input penna letti dal file.
 
-La struttura della **\_ Proprietà paper** archivia anche le dimensioni del rettangolo di disegno e del colore della finestra di sfondo della carta.
+La **struttura PAPER \_ PROPERTIES** archivia anche le dimensioni del rettangolo di disegno e il colore della finestra di sfondo della superficie della carta.
 
-Sebbene non venga usato negli  / esempi **StoClien** di StoServe, è possibile archiviare anche un titolo del disegno e un nome di autore.
+Anche se non viene usato negli **esempi StoServe** / **StoClien,** è possibile archiviare anche un titolo di disegno e un nome di autore.
 
-La data di creazione e le date dell'Ultima modifica non sono incluse nelle proprietà della carta, perché l'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) usata per accedere ai file composti gestisce queste informazioni.
+La data di creazione e le date dell'ultima modifica non sono incluse in queste proprietà del documento, perché [**l'interfaccia IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) usata per accedere ai file composti gestisce queste informazioni.
 
- 
+ 
 
- 
+ 
 
 
 

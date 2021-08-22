@@ -1,6 +1,6 @@
 ---
 title: Protocollo di routing
-description: Un protocollo di routing è un tipo di client che viene registrato con gestione tabelle di routing. I router usano i protocolli di routing per scambiare informazioni relative alle route verso una destinazione.
+description: Un protocollo di routing è un tipo di client che viene registrato con gestione tabelle di routing. I router usano i protocolli di routing per scambiare informazioni relative alle route a una destinazione.
 ms.assetid: 957ec896-94e3-4bdb-801a-12b861460fff
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,19 +13,19 @@ ms.locfileid: "119977844"
 ---
 # <a name="routing-protocol"></a>Protocollo di routing
 
-Un protocollo di routing è un tipo di client che viene registrato con gestione tabelle di routing. I router usano i protocolli di routing per scambiare informazioni relative alle route verso una destinazione.
+Un protocollo di routing è un tipo di client che viene registrato con gestione tabelle di routing. I router usano i protocolli di routing per scambiare informazioni relative alle route a una destinazione.
 
 I protocolli di routing sono unicast o multicast. I protocolli di routing annunciano le route a una destinazione.
 
-Una route unicast a una destinazione viene usata da un protocollo di routing unicast per inoltrare i dati unicast a tale destinazione. Esempi di protocolli di routing unicast includono: Routing Information Protocol (RIP), Open Shortest Path First (OSPF) e Border Gateway Protocol (BGP).
+Una route unicast a una destinazione viene utilizzata da un protocollo di routing unicast per inoltrare i dati unicast a tale destinazione. Esempi di protocolli di routing unicast includono: Routing Information Protocol (RIP), Open Shortest Path First (OSPF) e Border Gateway Protocol (BGP).
 
-Una route multicast a una destinazione viene usata da alcuni protocolli di routing multicast per creare le informazioni usate per inoltrare i dati multicast dagli host nella rete di destinazione della route (nota come inoltro del percorso inverso). Esempi di protocolli di routing multicast includono: Multicast Open Shortest Path First (MOSPF), Distance Vector Multicast Routing Protocol (DVMRP) e Protocol Independent Multicast (PIM).
+Una route multicast a una destinazione viene utilizzata da alcuni protocolli di routing multicast per creare le informazioni utilizzate per inoltrare i dati multicast dagli host nella rete di destinazione della route (noto come inoltro del percorso inverso). Esempi di protocolli di routing multicast includono: MULTICAST Open Shortest Path First (MOSPF), Distance Vector Multicast Routing Protocol (DVMRP) e Protocol Independent Multicast (PIM).
 
-Il gestore tabelle di routing supporta più istanze dello stesso protocollo ,ad esempio l'implementazione microsoft di OSPF e OSPF di terze parti, in esecuzione nel router. In questo modo i router possono usare le diverse funzionalità di ogni versione. Questi protocolli hanno identificatori di protocollo diversi.
+La gestione tabelle di routing supporta più istanze dello stesso protocollo ,ad esempio l'implementazione microsoft di OSPF e OSPF di terze parti, in esecuzione sul router. In questo modo i router possono usare le diverse funzionalità di ogni versione. Questi protocolli hanno identificatori di protocollo diversi.
 
-Gli identificatori di protocollo sono costituiti da un identificatore del fornitore e da un identificatore specifico del protocollo. L'identificatore specifico del protocollo è lo stesso per diverse implementazioni del protocollo, ad esempio l'implementazione microsoft di OSPF e un'implementazione di terze parti di OSPF. Solo quando vengono combinati gli identificatori specifici del fornitore e del protocollo, esiste un identificatore univoco per un protocollo di routing.
+Gli identificatori di protocollo sono costituiti da un identificatore del fornitore e da un identificatore specifico del protocollo. L'identificatore specifico del protocollo è lo stesso per le diverse implementazioni del protocollo, ad esempio l'implementazione Microsoft di OSPF e un'implementazione di terze parti di OSPF. Solo quando vengono combinati gli identificatori specifici del fornitore e del protocollo, esiste un identificatore univoco per un protocollo di routing.
 
-Un protocollo con lo stesso identificatore di protocollo, ovvero lo stesso identificatore fornitore e identificatore specifico del protocollo, può essere registrato più volte con il gestore tabelle di routing. Ogni volta, il protocollo viene registrato usando un identificatore di istanza del protocollo diverso. Ad esempio, un'implementazione di OSPF da un fornitore specifico può registrarsi come Vendor-OSPF-1 e Vendor-OSPF-2. Ciò consente a un'implementazione specifica del protocollo di partizionare le informazioni conservate nella tabella di routing.
+Un protocollo con lo stesso identificatore di protocollo , ovvero lo stesso identificatore del fornitore e l'identificatore specifico del protocollo, può essere registrato più volte con il gestore tabelle di routing. Ogni volta, il protocollo viene registrato usando un identificatore di istanza del protocollo diverso. Ad esempio, un'implementazione di OSPF da un fornitore specifico può registrarsi come Vendor-OSPF-1 e Vendor-OSPF-2. Ciò consente a un'implementazione specifica del protocollo di partizionare le informazioni contenute nella tabella di routing.
 
  
 

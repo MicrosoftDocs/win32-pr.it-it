@@ -1,33 +1,33 @@
 ---
-description: La maggior parte delle applicazioni di disegno e CAD fornisce funzionalità per la scalabilità dell'output creato dall'utente.
+description: La maggior parte delle applicazioni CAD e di disegno offre funzionalità che ridimensionano l'output creato dall'utente.
 ms.assetid: 819d2026-dd5c-48d3-8af1-e96364acae72
 title: Scalabilità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f3c1ba409abda6e9c6b471a4d0a143b28d4c08e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dbf8cb7293be4083c08de1d104bb8349b3cd5003a0abddf77d41922cfb294cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965241"
 ---
 # <a name="scaling"></a>Scalabilità
 
-La maggior parte delle applicazioni di disegno e CAD fornisce funzionalità per la scalabilità dell'output creato dall'utente. Le applicazioni che includono funzionalità di scalabilità (o zoom) chiamano la funzione [**SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) per impostare lo spazio globale appropriato sulla trasformazione dello spazio pagina. Questa funzione [**riceve un puntatore a una struttura che**](/windows/win32/api/wingdi/ns-wingdi-xform) contiene i valori appropriati. I membri eM11 e eM22 di l'oggetto di controllo di stato specificano rispettivamente i componenti di scalabilità orizzontale e verticale.
+La maggior parte delle applicazioni CAD e di disegno offre funzionalità che ridimensionano l'output creato dall'utente. Le applicazioni che includono funzionalità di ridimensionamento (o zoom) chiamano la [**funzione SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) per impostare lo spazio globale appropriato per la trasformazione dello spazio della pagina. Questa funzione riceve un puntatore a una [**struttura XFORM**](/windows/win32/api/wingdi/ns-wingdi-xform) contenente i valori appropriati. I membri eM11 ed eM22 di XFORM specificano rispettivamente i componenti di scalabilità orizzontale e verticale.
 
-Quando si verifica il *ridimensionamento* , le linee verticali e orizzontali (o vettori), che costituiscono un oggetto, sono allungate o compresse rispetto all'asse x o y. La figura seguente mostra un rettangolo di 20 unità, ridimensionato verticalmente, al doppio dell'altezza originale quando viene copiato dallo spazio delle coordinate internazionali allo spazio delle coordinate di pagina.
+Quando *si* verifica il ridimensionamento, le linee verticali e orizzontali (o vettori), che costituiscono un oggetto, vengono allungate o compresse rispetto all'asse x o y. La figura seguente mostra un rettangolo di 20 per 20 unità ridimensionato verticalmente fino al doppio dell'altezza originale quando viene copiato dallo spazio delle coordinate del mondo allo spazio delle coordinate di pagina.
 
-![illustrazione che mostra un piccolo rettangolo nello spazio globale e uno più alto nello spazio della pagina](images/cstrn-10.png)
+![illustrazione che mostra un piccolo rettangolo nello spazio del mondo e uno più alto nello spazio della pagina](images/cstrn-10.png)
 
-Nell'illustrazione precedente, le linee verticali che definiscono la misura laterale del rettangolo originale 20 unità, mentre le linee verticali che definiscono i lati del rettangolo ridimensionato misurano 40 unità.
+Nella figura precedente le linee verticali che definiscono il lato del rettangolo originale misurano 20 unità, mentre le linee verticali che definiscono i lati del rettangolo ridimensionato misurano 40 unità.
 
-La scalabilità verticale può essere rappresentata dall'algoritmo seguente.
+Il ridimensionamento verticale può essere rappresentato dall'algoritmo seguente.
 
 ``` syntax
 y' = y * Dy 
 ```
 
-Dove y è la nuova lunghezza, y è la lunghezza originale e dy è il fattore di scala verticale.
+Dove y' è la nuova lunghezza, y è la lunghezza originale e Dy è il fattore di scala verticale.
 
 La scalabilità orizzontale può essere rappresentata dall'algoritmo seguente.
 
@@ -35,9 +35,9 @@ La scalabilità orizzontale può essere rappresentata dall'algoritmo seguente.
 x' = x * Dx 
 ```
 
-Dove x ' è la nuova lunghezza, x è la lunghezza originale e DX è il fattore di scala orizzontale.
+Dove x' è la nuova lunghezza, x è la lunghezza originale e Dx è il fattore di scala orizzontale.
 
-Le trasformazioni di scala verticale e orizzontale possono essere combinate in una singola operazione usando una matrice 2 per 2.
+Le trasformazioni di scalabilità verticale e orizzontale possono essere combinate in un'unica operazione usando una matrice 2 per 2.
 
 ``` syntax
 |x' y'|  =  |Dx   0|  *  |x y| 

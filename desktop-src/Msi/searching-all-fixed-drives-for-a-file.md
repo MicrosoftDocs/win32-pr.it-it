@@ -1,21 +1,21 @@
 ---
-description: Durante un'installazione di Windows Installer, il programma di installazione può eseguire ricerche in tutte le unità fisse per un file.
+description: Durante un Windows installazione del programma di installazione, il programma di installazione può cercare un file in tutte le unità fisse.
 ms.assetid: c8aa84a8-5525-4a12-898f-63dc30113b13
-title: Ricerca in tutte le unità fisse per un file
+title: Ricerca di un file in tutte le unità fisse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83b79c7f2999d4ee7937790dc68470210f1d4b2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d460cd55fe54a98c6a02e23e49af9ea9838c7651262fa03f868bdb76acc2d506
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041251"
 ---
-# <a name="searching-all-fixed-drives-for-a-file"></a>Ricerca in tutte le unità fisse per un file
+# <a name="searching-all-fixed-drives-for-a-file"></a>Ricerca di un file in tutte le unità fisse
 
-**Per eseguire la ricerca in tutte le unità fisse di un file**
+**Per cercare un file in tutte le unità fisse**
 
-1.  Immettere la firma e il nome del file nella [tabella della firma](signature-table.md). I campi rimanenti di questo record possono essere null per cercare qualsiasi versione di MyApp.exe.
+1.  Immettere la firma e il nome del file nella [tabella delle firme.](signature-table.md) I campi rimanenti in questo record possono essere Null per cercare qualsiasi versione di MyApp.exe.
 
     [Tabella delle firme](signature-table.md) (parziale)
 
@@ -29,7 +29,7 @@ ms.locfileid: "106313793"
 
      
 
-2.  Immettere la proprietà che verrà impostata dal programma di installazione se MyApp.exe è installato.
+2.  Immettere la proprietà che il programma di installazione deve impostare se MyApp.exe installato.
 
     [Tabella AppSearch](appsearch-table.md)
 
@@ -37,13 +37,13 @@ ms.locfileid: "106313793"
 
     | Proprietà         | Firma          |
     |------------------|--------------------|
-    | MYAPP<br/> | AppFile<br/> |
+    | Myapp<br/> | AppFile<br/> |
 
     
 
      
 
-3.  Usare la [tabella DrLocator](drlocator-table.md). Lasciare vuoti i campi padre e percorso per eseguire la ricerca in tutte le unità fisse del sistema utente. Specificare nella colonna profondità il numero di livelli di sottodirectory in cui eseguire la ricerca. Se ad esempio si imposta depth su 0, viene rilevato c: \\MyApp.exe, ma il file non viene rilevato con una profondità di 2, ad esempio: c: \\ Program Files \\ app \\MyApp.exe.
+3.  Usare la [tabella DrLocator](drlocator-table.md). Lasciare vuoti i campi Padre e Percorso per cercare tutte le unità fisse del sistema utente. Specificare nella colonna Profondità il numero di livelli di sottodirectory in cui eseguire la ricerca. Ad esempio, l'impostazione di Depth su 0 rileva c:MyApp.exe, ma non rileva il file a una profondità \\ di 2, ad esempio: c: \\ Programmi \\ MyApps \\MyApp.exe.
 
     [Tabella DrLocator](drlocator-table.md)
 
@@ -57,7 +57,7 @@ ms.locfileid: "106313793"
 
      
 
-4.  Includere l'azione AppSearch nella sequenza di azione. Se MyApp.exe è installato, il programma di installazione imposta la proprietà MYAPP sul percorso del file. Se il file è installato, MYAPP restituisce true in un'espressione condizionale.
+4.  Includere l'azione AppSearch nella sequenza di azioni. Se MyApp.exe installato, il programma di installazione imposta la proprietà MYAPP sul percorso del file. Se il file è installato, MYAPP restituisce True in un'espressione condizionale.
 
  
 

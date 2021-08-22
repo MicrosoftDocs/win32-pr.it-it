@@ -5,7 +5,7 @@ ms.assetid: d692635f-f9f1-4d8e-a9c5-9d7fa84f41bd
 keywords:
 - Metodo getAttributeCountByType Windows Media Player
 - Metodo getAttributeCountByType Windows Media Player, interfaccia IWMPMedia3
-- Interfaccia IWMPMedia3 Windows Media Player metodo , getAttributeCountByType
+- Interfaccia IWMPMedia3 Windows Media Player, metodo getAttributeCountByType
 topic_type:
 - apiref
 api_name:
@@ -58,26 +58,26 @@ Implements IWMPMedia3.getAttributeCountByType
 *bstrType* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta il tipo di attributo.
+**System.String che** rappresenta il tipo di attributo.
 
 </dd> <dt>
 
 *bstrLanguage* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta la lingua. Se il valore è impostato su Null o su una stringa di lunghezza zero (""), viene usata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di lingua RFC 1766 valida, ad esempio "en-us".
+**System.String** che rappresenta la lingua. Se il valore è impostato su Null o su una stringa di lunghezza zero (""), viene usata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di lingua RFC 1766 valida, ad esempio "en-us".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Oggetto **System.Int32** che rappresenta il numero di attributi associati al tipo.
+**System.Int32** che rappresenta il conteggio degli attributi associati al tipo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene usato per individuare il numero di attributi corrispondenti a un nome di attributo specifico per un determinato elemento multimediale. I numeri di indice possono quindi essere passati al **metodo getItemInfoByType.** Ciò è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
+Questo metodo viene usato per individuare il numero di attributi corrispondenti a un nome di attributo specifico per un determinato elemento multimediale. I numeri di indice possono quindi essere passati **al metodo getItemInfoByType.** Ciò è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
 
-Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,12 +1,12 @@
 ---
-title: Metodo UninstallLicenseKeyPackWithId della classe Win32_TSLicenseKeyPack
-description: Disinstalla il Key Pack di Servizi Desktop remoto License con l'identificatore del Key Pack specificato.
+title: Metodo UninstallLicenseKeyPackWithId della Win32_TSLicenseKeyPack
+description: Disinstalla il key pack Servizi Desktop remoto licenza con l'identificatore del key pack specificato.
 ms.assetid: ECB622AB-FAB4-4C5D-A007-E3ABA8E1D3E7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo UninstallLicenseKeyPackWithId
-- Metodo UninstallLicenseKeyPackWithId Servizi Desktop remoto, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Servizi Desktop remoto, metodo UninstallLicenseKeyPackWithId
+- Metodo UninstallLicenseKeyPackWithId Servizi Desktop remoto
+- Metodo UninstallLicenseKeyPackWithId Servizi Desktop remoto , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Servizi Desktop remoto, metodo UninstallLicenseKeyPackWithId
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 583c7d56f5aacde57a1b683e988646e7e30b62d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1218ce51beac9e20dd04e2a56d9075b6732d65e17689afaba5ce4d8f6669b1ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008441"
 ---
-# <a name="uninstalllicensekeypackwithid-method-of-the-win32_tslicensekeypack-class"></a>Metodo UninstallLicenseKeyPackWithId della \_ classe TSLicenseKeyPack Win32
+# <a name="uninstalllicensekeypackwithid-method-of-the-win32_tslicensekeypack-class"></a>Metodo UninstallLicenseKeyPackWithId della classe \_ Win32 TSLicenseKeyPack
 
-Disinstalla il Key Pack di Servizi Desktop remoto License con l'identificatore del Key Pack specificato.
+Disinstalla il key pack Servizi Desktop remoto licenza con l'identificatore del key pack specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ uint32 UninstallLicenseKeyPackWithId(
 
 <dl> <dt>
 
-*KeyPackId* \[ in\]
+*KeyPackId* \[ Pollici\]
 </dt> <dd>
 
-Identificatore del Key Pack da disinstallare.
+Identificatore del key pack da disinstallare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Contiene i dati di input per un \_ comando D3DAUTHENTICATEDCONFIGURE Protection.
+description: Contiene i dati di input per un comando D3DAUTHENTICATEDCONFIGURE \_ PROTECTION.
 ms.assetid: 44f37e78-7218-42be-a07a-5ab911f2ba21
-title: Struttura D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b3fc1daee7bfd9320539a03974ab431c4ba588d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f7c202a29347d59bfaf79792806fcab56532637045985440c899eeae304a4e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828771"
 ---
-# <a name="d3dauthenticatedchannel_configureprotection-structure"></a>\_Struttura D3DAUTHENTICATEDCHANNEL CONFIGUREPROTECTION
+# <a name="d3dauthenticatedchannel_configureprotection-structure"></a>Struttura CONFIGUREPROTECTION D3DAUTHENTICATEDCHANNEL \_
 
-Contiene i dati di input per un comando [**D3DAUTHENTICATEDCONFIGURE \_ Protection**](d3dauthenticatedconfigure-protection.md) .
+Contiene i dati di input per [**un comando D3DAUTHENTICATEDCONFIGURE \_ PROTECTION.**](d3dauthenticatedconfigure-protection.md)
 
-Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9:: Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
+Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION {
 **Parametri**
 </dt> <dd>
 
-D3DAUTHENTICATEDCHANNEL configura la struttura di [**\_ \_ input**](d3dauthenticatedchannel-configure-input.md) che contiene il GUID del comando e altri dati.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT**](d3dauthenticatedchannel-configure-input.md) che contiene il GUID del comando e altri dati.
 
 </dd> <dt>
 
 **Protezioni**
 </dt> <dd>
 
-Struttura [**di \_ \_ flag di protezione D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-protection-flags.md) che specifica il livello di protezione.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ PROTECTION \_ FLAGS**](d3dauthenticatedchannel-protection-flags.md) che specifica il livello di protezione.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Struttura [**di \_ \_ flag di protezione D3DAUTHENTICATEDCHANNEL**](d3dauthentic
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Struttura [**di \_ \_ flag di protezione D3DAUTHENTICATEDCHANNEL**](d3dauthentic
 [Strutture video Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
+[**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
 </dt> </dl>
 
  

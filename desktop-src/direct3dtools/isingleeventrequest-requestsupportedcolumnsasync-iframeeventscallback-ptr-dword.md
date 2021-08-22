@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bcb6a20d797c3430ed6b354f47168bc5540396c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 910eaff70d16f76fd510a256e256d008821859fb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087889"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626097"
 ---
 # <a name="span-idvspixengineisingleeventrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dwordspanisingleeventrequestrequestsupportedcolumnsasync-method"></a><span id="vspixengine.isingleeventrequest_requestsupportedcolumnsasync_iframeeventscallback_ptr_dword"></span>Metodo ISingleEventRequest::RequestSupportedColumnsAsync
 
@@ -52,7 +52,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

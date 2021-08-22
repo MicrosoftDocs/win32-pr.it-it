@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_SAVE_PARMS (Mciapi. h)
-description: La \_ \_ struttura di salvataggio parametri MCI contiene le informazioni sul nome del file per il \_ comando di salvataggio MCI.
+title: MCI_SAVE_PARMS struttura (Mciapi.h)
+description: La struttura MCI \_ SAVE \_ PARMS contiene le informazioni sul nome file per il comando MCI \_ SAVE.
 ms.assetid: fbaff175-e521-4b93-853a-f444726932d3
 keywords:
-- Struttura MCI_SAVE_PARMS di Windows Multimedia
+- MCI_SAVE_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6252788b1ffc251d2fa6a3f993f074edc31aaac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d87f581e753265796259fbd33bfeeba3d4c2957e107c7edeb8d08c063e34e32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038331"
 ---
-# <a name="mci_save_parms-structure"></a>\_Struttura Salva \_ parametri di MCI
+# <a name="mci_save_parms-structure"></a>Struttura MCI \_ SAVE \_ PARMS
 
-La struttura di **\_ salvataggio \_ parametri MCI** contiene le informazioni sul nome del file per il comando di [**\_ salvataggio MCI**](mci-save.md) .
+La **struttura MCI \_ SAVE \_ PARMS** contiene le informazioni sul nome file per il [**comando MCI \_ SAVE.**](mci-save.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Nome del file da salvare.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**salvataggio di MCI \_**](mci-save.md)
+[**MCI \_ SAVE**](mci-save.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

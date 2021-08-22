@@ -1,17 +1,17 @@
 ---
 description: Se questo bit è impostato, la finestra di dialogo può essere ridotta a icona. Questo bit viene ignorato per le finestre di dialogo modali, che non possono essere ridotte a icona.
 ms.assetid: c8aa4688-52b3-4fbd-ab98-f1227ffbb5ee
-title: Ridurre il bit di stile della finestra di dialogo
+title: Riduci a icona bit stile finestra di dialogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a3538c2b5d7ebde20e502eb7288fc5cbd19c60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27c5b429befbb23cf73a2463bcc05b965efd0efd85ad299c08f7c670be76e849
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039935"
 ---
-# <a name="minimize-dialog-style-bit"></a>Ridurre il bit di stile della finestra di dialogo
+# <a name="minimize-dialog-style-bit"></a>Riduci a icona bit stile finestra di dialogo
 
 Se questo bit è impostato, la finestra di dialogo può essere ridotta a icona. Questo bit viene ignorato per le finestre di dialogo modali, che non possono essere ridotte a icona.
 

@@ -1,23 +1,23 @@
 ---
-description: L'azione SelfUnregModules Annulla la registrazione di tutti i moduli elencati nella tabella SelfReg che sono pianificati per la disinstallazione. Il programma di installazione non esegue la registrazione automatica. File EXE.
+description: L'azione SelfUnregModules annulla la registrazione di tutti i moduli elencati nella tabella SelfReg pianificati per la disinstallazione. Il programma di installazione non esegue la registrazione .EXE file.
 ms.assetid: fa5a5abb-ecd4-434c-b176-83cdca280a13
 title: Azione SelfUnregModules
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c3a0d98d8a8afe45b9b78f5c8af8ca2f84b2244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ba95a745716d512a72e9541064f56bdc663e2e6c9658a9c35744449217952f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040331"
 ---
 # <a name="selfunregmodules-action"></a>Azione SelfUnregModules
 
-L'azione SelfUnregModules Annulla la registrazione di tutti i moduli elencati nella [tabella SelfReg](selfreg-table.md) che sono pianificati per la disinstallazione. Il programma di installazione non esegue la registrazione automatica. File EXE.
+L'azione SelfUnregModules annulla la registrazione di tutti i moduli elencati nella [tabella SelfReg](selfreg-table.md) pianificati per la disinstallazione. Il programma di installazione non esegue la registrazione .EXE file.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
-L'azione [InstallValidate](installvalidate-action.md) deve essere presente prima dell'azione SelfUnregModules nella sequenza. Se viene utilizzata un'azione [SelfRegModules](selfregmodules-action.md) , deve comparire dopo l'azione SelfUnregModules nella sequenza. Se viene utilizzata un' [azione RemoveFiles](removefiles-action.md) , deve comparire dopo l'azione SelfUnregModules nella sequenza.
+[L'azione InstallValidate](installvalidate-action.md) deve essere visualizzata prima dell'azione SelfUnregModules nella sequenza. Se viene [usata un'azione SelfRegModules,](selfregmodules-action.md) deve essere visualizzata dopo l'azione SelfUnregModules nella sequenza. Se viene [usata un'azione RemoveFiles,](removefiles-action.md) deve essere visualizzata dopo l'azione SelfUnregModules nella sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
@@ -26,7 +26,7 @@ L'azione [InstallValidate](installvalidate-action.md) deve essere presente prima
 | Campo | Descrizione dei dati dell'azione                             |
 |-------|--------------------------------------------------------|
 | \[1\] | Identificatore del file di modulo non registrato.                |
-| \[2\] | Identificatore della cartella che contiene il file del modulo non registrato. |
+| \[2\] | Identificatore della cartella contenente il file di modulo non registrato. |
 
 
 
@@ -34,9 +34,9 @@ L'azione [InstallValidate](installvalidate-action.md) deve essere presente prima
 
 ## <a name="remarks"></a>Commenti
 
-L'azione SelfUnregModules tenta di chiamare la funzione [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) del modulo di cui deve essere annullata la registrazione. Questa azione viene eseguita con privilegi elevati quando l'installazione viene eseguita con privilegi elevati, ad esempio durante un'installazione per computer. Durante un'installazione per utente, il programma di installazione esegue questa azione con i privilegi utente.
+L'azione SelfUnregModules tenta di chiamare la funzione [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) del modulo di cui annullare la registrazione. Questa azione viene eseguita con privilegi elevati quando l'installazione viene eseguita con privilegi elevati, ad esempio durante un'installazione per computer. Durante un'installazione per utente, il programma di installazione esegue questa azione con privilegi utente.
 
-Si noti che non è possibile specificare l'ordine in cui il programma di installazione Annulla la registrazione automatica delle dll usando l'azione SelfUnRegModules.
+Si noti che non è possibile specificare l'ordine in cui il programma di installazione annulla la registrazione delle DLL con registrazione automatica usando l'azione SelfUnRegModules.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

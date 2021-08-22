@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayPassword di IMsRdpClientTransportSettings2
-description: Specifica la password fornita da un utente per la connessione al server Gateway Desktop remoto di Desktop remoto.
+title: Proprietà GatewayPassword IMsRdpClientTransportSettings2
+description: Specifica la password fornita da un utente per connettersi al server Desktop remoto Gateway Desktop remoto.
 ms.assetid: f29078e5-49ab-45a0-8d79-4b57d7c35e3a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayPassword
-- Servizi Desktop remoto proprietà GatewayPassword, interfaccia IMsRdpClientTransportSettings2
-- Interfaccia IMsRdpClientTransportSettings2 Servizi Desktop remoto, proprietà GatewayPassword
+- Proprietà GatewayPassword Servizi Desktop remoto
+- Proprietà GatewayPassword Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings2
+- Interfaccia IMsRdpClientTransportSettings2 Servizi Desktop remoto , proprietà GatewayPassword
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d532f28023b7ff0eb3b8571e3875d0b63606535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 977ac8114a8be4f4f5ef8aa21a4a00f48aead31ee18f7fe41f789ff2a3c9b478
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959351"
 ---
-# <a name="imsrdpclienttransportsettings2gatewaypassword-property"></a>Proprietà IMsRdpClientTransportSettings2:: GatewayPassword
+# <a name="imsrdpclienttransportsettings2gatewaypassword-property"></a>Proprietà IMsRdpClientTransportSettings2::GatewayPassword
 
-Specifica la password fornita da un utente per la connessione al server Gateway Desktop remoto di Desktop remoto.
+Specifica la password fornita da un utente per connettersi al server Desktop remoto Gateway Desktop remoto.
 
 Questa proprietà è di sola scrittura.
 
@@ -44,11 +44,11 @@ HRESULT put_GatewayPassword(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Password fornita da un utente per la connessione al server Gateway Desktop remoto.
+Password fornita da un utente per connettersi al server Gateway Desktop remoto.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Restituisce **\_ OK** se ha esito positivo.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>            |
-| IID<br/>                      | IID \_ IMsRdpClientTransportSettings2 è definito come 67341688-D606-4C73-A5D2-2E0489009319<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientTransportSettings2 è definito come 67341688-D606-4c73-A5D2-2E048909319<br/> |
 
 
 

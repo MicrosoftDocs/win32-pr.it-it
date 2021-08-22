@@ -1,7 +1,7 @@
 ---
 description: Avvia un processo per aggiungere risorse a un pool di risorse.
 ms.assetid: b163619a-19bd-43d7-ba35-ec4bd8192100
-title: Metodo AddResourcesToResourcePool della classe CIM_ResourcePoolConfigurationService
+title: Metodo AddResourcesToResourcePool della CIM_ResourcePoolConfigurationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119980931"
 ---
-# <a name="addresourcestoresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo AddResourcesToResourcePool della classe \_ CIM ResourcePoolConfigurationService
+# <a name="addresourcestoresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo AddResourcesToResourcePool della classe \_ CiM ResourcePoolConfigurationService
 
 Avvia un processo per aggiungere risorse a un pool di risorse.
 
@@ -41,10 +41,10 @@ uint32 AddResourcesToResourcePool(
 
 <dl> <dt>
 
-*HostResources* \[ Pollici\]
+*Risorse host* \[ Pollici\]
 </dt> <dd>
 
-Matrice di [**istanze \_ di CIM LogicalDevice**](cim-logicaldevice.md) da aggiungere al pool.
+Matrice di [**istanze \_ logicalDevice CIM**](cim-logicaldevice.md) da aggiungere al pool.
 
 </dd> <dt>
 
@@ -58,13 +58,13 @@ Pool [**di risorse CIM \_**](cim-resourcepool.md) che rappresenta il pool a cui 
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-[**Cim \_ ConcreteJob che**](cim-concretejob.md) fa riferimento al processo (può essere **Null** se il processo è stato completato).
+Oggetto [**\_ ConcreteJob CIM che**](cim-concretejob.md) fa riferimento al processo (può essere **Null** se il processo è stato completato).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -92,10 +92,10 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 **ResourceType non corretto per il pool** (7)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Dimensioni non supportate** (4097)

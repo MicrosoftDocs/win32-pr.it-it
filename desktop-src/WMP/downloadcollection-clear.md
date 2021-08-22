@@ -1,10 +1,10 @@
 ---
-title: Metodo DownloadCollection. Clear
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. Il metodo Clear rimuove tutti gli elementi da una raccolta di download.
+title: Metodo DownloadCollection.Clear
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo Clear rimuove tutti gli elementi da una raccolta di download.
 ms.assetid: 3947a99d-5853-432d-a47b-7b19adebc3a5
 keywords:
-- Cancella metodo Windows Media Player
-- Metodo Clear Windows Media Player, classe DownloadCollection
+- Clear method Windows Media Player
+- Metodo Clear Windows Media Player , classe DownloadCollection
 - Classe DownloadCollection Windows Media Player, metodo Clear
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570612206408e607b286317c308525345e990c3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 92722bd08ce761a705d1de144757d09afb0af74cfb8ba61570bca87069f33afd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863481"
 ---
-# <a name="downloadcollectionclear-method"></a>Metodo DownloadCollection. Clear
+# <a name="downloadcollectionclear-method"></a>Metodo DownloadCollection.Clear
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-Il metodo **Clear** rimuove tutti gli elementi da una raccolta di download.
+Il **metodo Clear** rimuove tutti gli elementi da una raccolta di download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**Download (oggetto)**](downloadcollection-object.md)
+[**Oggetto DownloadCollection**](downloadcollection-object.md)
 </dt> </dl>
 
  

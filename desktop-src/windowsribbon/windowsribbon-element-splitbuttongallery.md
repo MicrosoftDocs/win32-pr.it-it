@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c28c2f87a1d8fb165f02ad71c96b38bcbb381bb3590bd9bff98b3feb364044bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2f954d7b96d3ec2304cd63cd689241a46384fda
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117850818"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626737"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
@@ -45,10 +45,10 @@ Rappresenta un [controllo Split Button Gallery](windowsribbon-controls-splitbutt
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -137,8 +137,8 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -157,7 +157,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-element-menugroup.md"><strong>Menugroup</strong></a><br/></td>
-<td>Se contenuto in un <a href="windowsribbon-element-applicationmenu.md"><strong>oggetto ApplicationMenu</strong></a>. Questo elemento è supportato solo al primo livello e non deve avere elementi figlio.<br/> <br/></td>
+<td>Se contenuto in un <a href="windowsribbon-element-applicationmenu.md"><strong>oggetto ApplicationMenu</strong></a>. Questo elemento è supportato solo nel primo livello e non deve avere elementi figlio.<br/> <br/></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a><br/></td>
@@ -180,13 +180,13 @@ Windows 8 e più recente.
 
 facoltativo.
 
-Può verificarsi una o più volte per [**ogni elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup**](windowsribbon-element-menugroup.md) [**o SplitButton.**](windowsribbon-element-splitbutton.md)
+Può verificarsi una o più volte per [**ogni elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup**](windowsribbon-element-menugroup.md)o [**SplitButton.**](windowsribbon-element-splitbutton.md)
 
 **SplitButtonGallery supporta** le [modalità applicazione](ribbon-applicationmodes.md).
 
 [Interfaccia utente \_ PKEY \_ BooleanValue viene](windowsribbon-reference-properties-uipkey-booleanvalue.md) usato da un'applicazione per eseguire query sullo stato di attivazione/disattivazione per il controllo pulsante di un controllo **SplitButtonGallery.**
 
-La schermata seguente illustra il controllo [Raccolta](windowsribbon-controls-splitbuttongallery.md) pulsanti di divisione della barra multifunzione in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo Raccolta pulsanti di [divisione](windowsribbon-controls-splitbuttongallery.md) della barra multifunzione in Microsoft Paint per Windows 7.
 
 ![Screenshot di un controllo della raccolta di pulsanti di divisione in Microsoft Paint per Windows 7.](images/controls/splitbuttongallery.png)
 
@@ -211,7 +211,7 @@ Questa sezione di codice illustra le **dichiarazioni di comando SplitButtonGalle
 
 
 
-Questa sezione di codice illustra le dichiarazioni del controllo **SplitButtonGallery.**
+Questa sezione di codice illustra le **dichiarazioni del controllo SplitButtonGallery.**
 
 
 ```XML

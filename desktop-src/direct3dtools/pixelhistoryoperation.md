@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni sulla cronologia dei pixel.
+description: Rappresenta informazioni sulla cronologia pixel.
 MS-HAID: vspixengine.PixelHistoryOperation
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c02a6725f588aaa4c7d72c48d03d921503d4e6a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15cae4986b7dc109c08011d2cc23e1b6133de9e5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304046"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625187"
 ---
 # <a name="span-idvspixenginepixelhistoryoperationspanpixelhistoryoperation-structure"></a><span id="vspixengine.pixelhistoryoperation"></span>Struttura PixelHistoryOperation
 
-Rappresenta le informazioni sulla cronologia dei pixel.
+Rappresenta informazioni sulla cronologia pixel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,13 +38,13 @@ Rappresenta le informazioni sulla cronologia dei pixel.
 ## <a name="members"></a>Members
 
 **Eid**  
-ID dell'evento di grafica associato a questa operazione.
+ID dell'evento grafico associato a questa operazione.
 
 **PCP**  
-Chiamate compresse associate a questa operazione.
+Chiamate di tipo pack associate a questa operazione.
 
 **renderTargetPtr**  
-Destinazione di rendering originariamente associata (all'interno dell'applicazione acquisita) con questa operazione.
+Destinazione di rendering originariamente associata (all'interno dell'applicazione acquisita) a questa operazione.
 
 **iPrim**  
 Indice della primitiva effettiva associata all'operazione.
@@ -53,125 +53,125 @@ Indice della primitiva effettiva associata all'operazione.
 Numero totale di primitive associate a questa operazione.
 
 **numVertsPerPrim**  
-Numero di vertici per primitive.
+Numero di vertici per primitiva.
 
 **iInstance**  
-Quando si esegue il rendering di istanze, il numero di istanza dell'istanza effettiva associata a questa operazione.
+Quando si esegue il rendering delle istanze di , il numero di istanza dell'istanza effettiva associata a questa operazione.
 
 **iInstanceCount**  
-Quando si esegue il rendering di istanze, il numero totale di istanze associate a questa operazione.
+Quando si esegue il rendering delle istanze, il numero totale di istanze associate a questa operazione.
 
 **bAssemblerStageGeneratesInstanceID**  
-true se l'assembler di input genera gli ID istanza; in caso contrario, false.
+true se l'assembler di input genera ID istanza; in caso contrario, false.
 
 **flags**  
-Combinazione di valori PIXELHISTORYFLAGS. Per ulteriori informazioni, vedere l'enumerazione PIXELHISTORYFLAGS.
+Combinazione di valori PIXELHISTORYFLAGS. Per altre informazioni, vedere l'enumerazione PIXELHISTORYFLAGS.
 
 **pVSFile**  
-FILEPTR per il flusso di byte pixel shader. Questa operazione viene passata di nuovo per eseguire il debug.
+Oggetto FILEPTR per il flusso pixel shader byte specificato. Viene passato nuovamente per eseguire il debug.
 
 **pGSFile**  
-FILEPTR per il flusso di byte geometry shader. Questa operazione viene passata di nuovo per eseguire il debug.
+OGGETTO FILEPTR per il flusso di byte dello shader geometrico. Viene passato nuovamente per eseguire il debug.
 
 **pPSFile**  
-FILEPTR per il flusso di byte pixel shader. Questa operazione viene passata di nuovo per eseguire il debug.
+Oggetto FILEPTR per il flusso pixel shader byte specificato. Viene passato nuovamente per eseguire il debug.
 
 **pHSFile**  
-FILEPTR per il flusso di byte Hull shader. Questa operazione viene passata di nuovo per eseguire il debug.
+OGGETTO FILEPTR per il flusso di byte dello shader di tipo hull. Viene passato nuovamente per eseguire il debug.
 
 **pDSFile**  
-FILEPTR per il flusso di byte del dominio shader. Questa operazione viene passata di nuovo per eseguire il debug.
+Oggetto FILEPTR per il flusso di byte dello shader del dominio. Viene passato nuovamente per eseguire il debug.
 
 **pCSFile**  
-FILEPTR per il flusso di byte compute shader. Questa operazione viene passata di nuovo per eseguire il debug.
+Oggetto FILEPTR per il flusso di byte compute shader. Viene passato nuovamente per eseguire il debug.
 
 **VertexShaderFile**  
 Stringa COM contenente il percorso del file di origine del vertex shader.
 
 **PixelShaderFile**  
-Stringa COM contenente il percorso del file di origine del pixel shader.
+Stringa COM contenente il percorso del file di pixel shader di origine.
 
 **GeometryShaderFile**  
 Stringa COM contenente il percorso del file di origine geometry shader.
 
 **HullShaderFile**  
-Stringa COM contenente il percorso del file di origine Hull shader.
+Stringa COM contenente il percorso del file di origine dello shader di tipo hull.
 
 **DomainShaderFile**  
-Stringa COM contenente il percorso del file di origine del Domain shader.
+Stringa COM contenente il percorso del file di origine dello shader del dominio.
 
 **psRed**  
-Output pixel shader: valore del componente colore rosso.
+Output del pixel shader: valore del componente di colore rosso.
 
 **psGreen**  
-Output pixel shader: valore del componente colore verde.
+Output del pixel shader: valore del componente colore verde.
 
 **psBlue**  
-Output pixel shader: valore del componente colore blu
+Output del pixel shader: valore del componente colore blu
 
 **psAlpha**  
-Output pixel shader: valore del componente colore alfa
+Output del pixel shader: valore del componente colore alfa
 
 **LabelPSRed**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore rosso dell'output del pixel shader.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore rosso del pixel shader output.
 
 **LabelPSGreen**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore verde dell'output del pixel shader.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore verde del pixel shader output.
 
 **LabelPSBlue**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore blu dell'output del pixel shader.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore blu dell pixel shader output.
 
 **LabelPSAlpha**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore alfa dell'output del pixel shader.
+Stringa COM contenente il nome dell'etichetta associata al componente del colore alfa dell pixel shader output.
 
 **pixelKillReason**  
-Output pixel shader: motivo per cui l'output del pixel è stato terminato.
+Output del pixel shader: motivo per cui l'output del pixel è stato finale.
 
 **pixelOccluded**  
-true se il pixel è nascosto; in caso contrario, false.
+true se il pixel è occluded; in caso contrario, false.
 
 **fbRed**  
-Framebuffer: valore del componente colore rosso del framebuffer prima che venga eseguito il merge pixel shader output.
+Framebuffer: valore del componente di colore rosso di framebuffer prima pixel shader'output viene unito.
 
 **fbGreen**  
-Framebuffer: valore del componente colore verde del framebuffer prima che venga eseguito il merge pixel shader output.
+Framebuffer: valore del componente di colore verde di framebuffer prima pixel shader'output viene unito.
 
 **fbBlue**  
-Framebuffer: valore del componente colore blu del framebuffer prima che venga eseguito il merge pixel shader output.
+Framebuffer: valore del componente di colore blu di framebuffer prima pixel shader'output viene unito.
 
 **fbAlpha**  
-Framebuffer: valore del componente a colori alfa del framebuffer prima del merge pixel shader output.
+Framebuffer: valore del componente di colore alfa di framebuffer prima pixel shader'output viene unito.
 
 **LabelFBRed**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore rosso del framebuffer.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore rosso di framebuffer.
 
 **LabelFBGreen**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore verde del framebuffer.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore verde di framebuffer.
 
 **LabelFBBlue**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore blu del framebuffer.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore blu di framebuffer.
 
 **LabelFBAlpha**  
-Stringa COM contenente il nome dell'etichetta associata al componente colore alfa del framebuffer.
+Stringa COM contenente il nome dell'etichetta associata al componente di colore alfa di framebuffer.
 
-**topologia**  
-Topologia dei vertici delle chiamate di richiamo (elenco di triangolo, striscia del triangolo e così via).
+**Topologia**  
+Topologia dei vertici delle chiamate di disegno (elenco di triangoli, striscia di triangoli e così via).
 
-**vertici**  
+**Vertici**  
 Stringa COM contenente il buffer dei vertici a partire da questa primitiva. Il buffer dei vertici segue il formato di layout di input specificato nella fase della pipeline.
 
 **vertexSize**  
-Dimensioni in byte di un singolo vertice.
+Dimensione di un singolo vertice in byte.
 
 **InputLayout**  
-Stringa COM contenente una sequenza di strutture InputLayoutStruct associate alla chiamata di progetto.
+Stringa COM contenente una sequenza di strutture InputLayoutStruct associate alla chiamata di disegno.
 
-**HResult**  
-HRESULT DirectX. In caso di problemi, questo può essere usato per visualizzare l'errore.
+**Hresult**  
+Hresult DirectX. In caso di problemi, è possibile usare questa opzione per visualizzare l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixOrthoRH (D3dx9math.h): crea una matrice di proiezione ortografica con la mano destra.'
+description: 'Funzione D3DXMatrixOrthoRH (D3dx9math.h): crea una matrice di proiezione ortogonale con mano destra.'
 ms.assetid: 6b9b50d5-0307-4fc7-a28d-8f42d2a21bf0
 title: Funzione D3DXMatrixOrthoRH (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d34a8379851d80ae8734c7f32cc0dc5977af2088
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 060a195dfee7457f671177a756e67d1c3953a16aa7d59394f96eb05e43cfc93c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044849"
 ---
 # <a name="d3dxmatrixorthorh-function-d3dx9mathh"></a>Funzione D3DXMatrixOrthoRH (D3dx9math.h)
 
@@ -97,7 +97,7 @@ Puntatore all'oggetto [**D3DXMATRIX risultante.**](../direct3d10/d3d10-d3dxmatri
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri della **funzione D3DXMatrixOrthoRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della **funzione D3DXMatrixOrthoRH** sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixOrthoRH** può essere usata come parametro per un'altra funzione.
 
