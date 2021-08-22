@@ -1,42 +1,42 @@
 ---
-description: Una variabile Effect viene dichiarata con la sintassi seguente.
+description: Una variabile effect viene dichiarata con la sintassi seguente.
 ms.assetid: 53939c65-3725-44cc-bec6-775c3b921770
-title: Sintassi della variabile Effect (Direct3D 10)
+title: Sintassi delle variabili effect (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8068571ff393e83ba0ae11eb2f9cb62f0bbb49df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2422ba2cebf18c72a14d621ef13a98700aefd2858169c6e96566b455ec21d2ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497711"
 ---
-# <a name="effect-variable-syntax-direct3d-10"></a>Sintassi della variabile Effect (Direct3D 10)
+# <a name="effect-variable-syntax-direct3d-10"></a>Sintassi delle variabili effect (Direct3D 10)
 
-Una variabile Effect viene dichiarata con la sintassi seguente.
+Una variabile effect viene dichiarata con la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
-*DataType* *variablename* \[ : *semanticname* \]  <  *annotazioni* >;
+*DataType* *VariableName* \[ : *SemanticName* \]  <  *Annotations* >;
 
 
 
 | Nome         | Descrizione                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DataType     | Qualsiasi tipo di [trama](../direct3dhlsl/dx-graphics-hlsl-to-type.md) o di [base](../direct3dhlsl/dx-graphics-hlsl-variable-syntax.md) .                                                                        |
-| VariableName | Stringa ASCII che identifica in modo univoco il nome della variabile di effetto.                                                                                                                   |
-| Semanticname | Stringa ASCII che indica informazioni aggiuntive sulla modalità di utilizzo di una variabile. Una semantica è una stringa ASCII che può essere un valore di sistema predefinito o una stringa utente personalizzata. |
-| annotazioni  | Una o più parti di informazioni (metadati) fornite dall'utente ignorate dal sistema di effetti. Per la sintassi, vedere [sintassi delle annotazioni (Direct3D 10)](d3d10-effect-annotation-syntax.md).     |
+| DataType     | Qualsiasi [tipo di](../direct3dhlsl/dx-graphics-hlsl-variable-syntax.md) trama o [di](../direct3dhlsl/dx-graphics-hlsl-to-type.md) base.                                                                        |
+| VariableName | Stringa ASCII che identifica in modo univoco il nome della variabile dell'effetto.                                                                                                                   |
+| SemanticName | Stringa ASCII che indica informazioni aggiuntive sull'uso di una variabile. Una semantica è una stringa ASCII che può essere un valore di sistema predefinito o una stringa utente personalizzata. |
+| Annotazioni  | Una o più informazioni fornite dall'utente (metadati) che vengono ignorate dal sistema di effetti. Per la sintassi, vedere Sintassi delle [annotazioni (Direct3D 10).](d3d10-effect-annotation-syntax.md)     |
 
 
 
  
 
-Una variabile di effetto dichiarata al di fuori di tutte le funzioni è considerata globale nell'ambito. le variabili dichiarate all'interno di una funzione sono locali a tale funzione.
+Una variabile di effetto dichiarata all'esterno di tutte le funzioni è considerata globale nell'ambito. Le variabili dichiarate all'interno di una funzione sono locali per tale funzione.
 
 ## <a name="example"></a>Esempio
 
-L' [esempio BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx) usa variabili globali senza semantica per colori materiali, proprietà chiare e matrici di trasformazione.
+[L'esempio BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx) usa variabili globali senza semantica per i colori dei materiali, le proprietà della luce e le matrici di trasformazione.
 
 Questo esempio illustra le variabili di effetto globale.
 
@@ -50,7 +50,7 @@ float4x4 g_mWorld;                  // World matrix for object
 
 
 
-Questo esempio illustra le variabili di effetto locali a una funzione shader.
+Questo esempio illustra le variabili di effetto locali per una funzione shader.
 
 
 ```
@@ -65,7 +65,7 @@ VS_OUTPUT RenderSceneVS( ... )
 
 
 
-In questo esempio vengono illustrati i parametri della funzione con semantica.
+Questo esempio illustra i parametri di funzione con semantica.
 
 
 ```
@@ -82,7 +82,7 @@ VS_OUTPUT RenderSceneVS( float4 vPos : SV_POSITION,
 
 
 
-In questo esempio viene illustrata la dichiarazione di una variabile di trama.
+Questo esempio illustra la dichiarazione di una variabile di trama.
 
 
 ```
@@ -91,7 +91,7 @@ Texture2D g_MeshTexture;            // Color texture for mesh
 
 
 
-Campionamento di una trama viene eseguita con un campionatore di trame. Per configurare un campionatore in un effetto, vedere il [tipo di campionatore](../direct3dhlsl/dx-graphics-hlsl-sampler.md).
+Il campionamento di una trama viene eseguito con un campionatore di trame. Per configurare un campionatore in un effetto, vedere il [tipo di campionatore](../direct3dhlsl/dx-graphics-hlsl-sampler.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

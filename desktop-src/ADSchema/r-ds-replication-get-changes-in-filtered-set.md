@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Get-Changes-in-filtered-set esteso a destra
-description: DS-Replication-Get-Changes-in-filtered-set esteso a destra
+title: Diritto esteso DS-Replication-Get-Changes-In-Filtered-Set
+description: Diritto esteso DS-Replication-Get-Changes-In-Filtered-Set
 ms.assetid: 600552c3-6a3a-40ea-8702-3d6a763cfde3
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Get-Changes-in-filtered-imposta lo schema AD esteso a destra
+- Schema AD esteso DS-Replication-Get-Changes-In-Filtered-Set esteso
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d64e1e2d53e0a8f58e58235d8b92ecddfad0b68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3f059bb5203602b59dafc7fad25ac055d14fa037b6c14c623120b504a7aad9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532071"
 ---
-# <a name="ds-replication-get-changes-in-filtered-set-extended-right"></a>DS-Replication-Get-Changes-in-filtered-set esteso a destra
+# <a name="ds-replication-get-changes-in-filtered-set-extended-right"></a>Diritto esteso DS-Replication-Get-Changes-In-Filtered-Set
 
 
 
 | Voce | Valore |
 |--------------|-----------------------------------------------|
-| CN           | DS-Replication-Get-Changes-in-filtered-set    |
+| CN           | DS-Replication-Get-Changes-In-Filtered-Set    |
 | Display-Name | Replica delle modifiche della directory nel set filtrato |
 | Rights-GUID  | 89e95b76-444d-4c62-991a-0facbeda640c          |
 
@@ -44,8 +44,8 @@ ms.locfileid: "104480440"
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 77                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 
@@ -55,8 +55,8 @@ ms.locfileid: "104480440"
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 77                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 
@@ -66,8 +66,8 @@ ms.locfileid: "104480440"
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 77                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 

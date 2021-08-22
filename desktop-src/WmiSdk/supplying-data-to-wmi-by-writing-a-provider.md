@@ -1,32 +1,32 @@
 ---
-description: Un provider WMI crea un gruppo di classi, istanze ed eventi supportati per passare i dati a WMI. A sua volta, un'applicazione di gestione o uno script può chiamare metodi provider per modificare i dati forniti dal provider.
+description: Un provider WMI crea un gruppo di classi, istanze ed eventi supportati per passare dati a WMI. A sua volta, un'applicazione di gestione o uno script può chiamare i metodi del provider per modificare i dati forniti dal provider.
 ms.assetid: 919dfa7c-4a36-4e59-8377-72cf9735eaec
 ms.tgt_platform: multiple
 title: Fornire dati a WMI scrivendo un provider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8648eb2982dda3970cb87308ee92b6816297f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9410fd26a830df1846dd62434dc85ffc9cb033c524c7b4e76ff6db93d64dd95e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050144"
 ---
 # <a name="supplying-data-to-wmi-by-writing-a-provider"></a>Fornire dati a WMI scrivendo un provider
 
-Un provider WMI crea un gruppo di classi, istanze ed eventi supportati per passare i dati a WMI. A sua volta, un'applicazione di gestione o uno script può chiamare [*Metodi provider*](gloss-p.md) per modificare i dati forniti dal provider.
+Un provider WMI crea un gruppo di classi, istanze ed eventi supportati per passare dati a WMI. A sua volta, un'applicazione di gestione o uno script può chiamare [*i metodi del provider*](gloss-p.md) per modificare i dati forniti dal provider.
 
-Nel diagramma seguente viene illustrata la relazione tra un provider associato a WMI e l'applicazione.
+Il diagramma seguente illustra la relazione tra un provider abbinato a WMI e all'applicazione.
 
-![relazione tra WMI, il provider associato e l'applicazione](images/coupledprov.png)
+![relazione tra WMI, provider accoppiato e applicazione](images/coupledprov.png)
 
-Nella procedura seguente viene descritto come creare un provider semplice che supporta un set di istanze di. Il provider descritto qui è registrato per l'esecuzione all'interno del processo WMI. In alcuni casi, usare un [*provider separato*](gloss-d.md) che viene eseguito in un processo diverso. Per ulteriori informazioni sui modelli di hosting del provider, vedere [hosting e sicurezza del provider](provider-hosting-and-security.md). I passaggi 1 e 2 nella procedura seguente differiscono per i provider disaccoppiati, ma in altri aspetti utilizzano le stesse interfacce dei provider in-process. Per ulteriori informazioni, vedere [incorporamento di un provider in un'applicazione](incorporating-a-provider-in-an-application.md).
+Nella procedura seguente viene descritto come creare un provider semplice che supporta un set di istanze di . Il provider descritto qui è registrato per l'esecuzione all'interno del processo WMI. In alcuni casi, usare un [*provider disaccoccodato*](gloss-d.md) che viene eseguito in un processo diverso. Per altre informazioni sui modelli di hosting del provider, vedere [Provider Hosting and Security](provider-hosting-and-security.md). I passaggi 1 e 2 della procedura seguente differiscono per i provider disaccoccodati, ma per altri aspetti usano le stesse interfacce dei provider in-process. Per altre informazioni, vedere [Incorporamento di un provider in un'applicazione.](incorporating-a-provider-in-an-application.md)
 
 **Per creare un provider di istanze**
 
-1.  Creare un'istanza di una classe [**\_ \_ Win32Provider**](--win32provider.md) con il codice [Managed Object Format (MOF)](managed-object-format--mof-.md) , specificando il nome e il **CLSID** del provider. Per ulteriori informazioni, vedere [progettazione di classi Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
+1.  Creare un'istanza di [**\_ \_ una classe Win32Provider**](--win32provider.md) [con Managed Object Format (MOF),](managed-object-format--mof-.md) specificando il nome e **il CLSID** del provider. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](designing-managed-object-format--mof--classes.md)
 
-    Nell'esempio di codice seguente viene illustrato come creare un'istanza di una classe [**\_ \_ Win32Provider**](--win32provider.md) .
+    Nell'esempio di codice seguente viene illustrato come creare un'istanza di [**\_ \_ una classe Win32Provider.**](--win32provider.md)
 
     ``` syntax
     Instance of __Win32Provider as $P   // $P is an alias
@@ -38,15 +38,15 @@ Nella procedura seguente viene descritto come creare un provider semplice che su
     ```
 
     > [!Note]  
-    > Per assicurarsi che tutte le definizioni di classe WMI per gli oggetti gestiti vengano ripristinate nel [*repository WMI*](gloss-w.md) in caso di errore e riavvio di WMI, utilizzare l'istruzione per il preprocessore dell'istruzione [**\# pragma autocover**](pragma-autorecover.md) nel file MOF.
+    > Per assicurarsi che tutte le definizioni di classe WMI per gli oggetti gestiti siano ripristinate nel [*repository WMI*](gloss-w.md) se WMI presenta un errore e si riavvia, usare l'istruzione del preprocessore [**\# pragma autorecover**](pragma-autorecover.md) nel file MOF.
 
      
 
-    Per ulteriori informazioni, vedere [creazione di un'istanza](creating-an-instance.md) e [registrazione di un provider di istanze](registering-an-instance-provider.md).
+    Per altre informazioni, vedere [Creazione di un'istanza e](creating-an-instance.md) Registrazione di un provider di [istanze.](registering-an-instance-provider.md)
 
-2.  Creare un'istanza della classe [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) che descriva le funzionalità del provider di istanze.
+2.  Creare un'istanza della [**\_ \_ classe InstanceProviderRegistration**](--instanceproviderregistration.md) che descrive le funzionalità del provider di istanze.
 
-    Nell'esempio di codice seguente viene illustrato come creare un'istanza della classe [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) .
+    L'esempio di codice seguente illustra come creare un'istanza della [**\_ \_ classe InstanceProviderRegistration.**](--instanceproviderregistration.md)
 
     ``` syntax
     instance of __InstanceProviderRegistration
@@ -59,13 +59,13 @@ Nella procedura seguente viene descritto come creare un provider semplice che su
     };
     ```
 
-    Per ulteriori informazioni sulle proprietà in questa sezione del codice MOF, vedere [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) e [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md).
+    Per altre informazioni sulle proprietà in questa sezione del codice MOF, vedere [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) [**\_ \_ e ObjectProviderRegistration.**](--objectproviderregistration.md)
 
-    Per ulteriori informazioni, vedere la pagina relativa alla [registrazione di un provider di istanze](registering-an-instance-provider.md).
+    Per altre informazioni, vedere [Registrazione di un provider di istanze.](registering-an-instance-provider.md)
 
-3.  Usare il codice MOF per creare la classe dinamica per cui il provider fornisce le istanze.
+3.  Usare il codice MOF per creare la classe dinamica per la quale il provider fornisce istanze di .
 
-    Una classe dinamica è una classe le cui istanze ricevono gli aggiornamenti da un provider. Questi aggiornamenti possono essere regolari o collegati a modifiche sporadiche negli oggetti rappresentati dalle istanze. È possibile visualizzare le modifiche apportate alle istanze della classe dinamica tramite un'applicazione di gestione personalizzata o [WMI Visualizzatore oggetti](further-information.md).
+    Una classe dinamica è una classe le cui istanze ricevono aggiornamenti da un provider. Questi aggiornamenti possono essere regolari o collegati a modifiche sporadiche negli oggetti che le istanze rappresentano. È possibile visualizzare le modifiche apportate alle istanze di classe dinamica tramite la propria applicazione di gestione o il [Visualizzatore oggetti WMI.](further-information.md)
 
     Nell'esempio di codice seguente viene descritta una classe dinamica supportata dal provider "InstProvSamp".
 
@@ -87,37 +87,37 @@ Nella procedura seguente viene descritto come creare un provider semplice che su
 
 4.  Registrare le classi con WMI tramite il compilatore MOF.
 
-    Al prompt dei comandi nella directory del provider digitare quanto segue per registrare il codice MOF di esempio con WMI.
+    Dal prompt dei comandi nella directory del provider digitare quanto segue per registrare il codice MOF di esempio con WMI.
 
-    **mofcomp** *instprov. mof*
+    **mofcomp** *instprov.mof*
 
-    Per ulteriori informazioni, vedere [compilazione di file MOF](compiling-mof-files.md).
+    Per altre informazioni, vedere [Compilazione di file MOF.](compiling-mof-files.md)
 
-5.  Definire un oggetto COM che contenga il provider. Il codice di esempio per questo passaggio si trova in un esempio completo alla fine di questo argomento.
+5.  Definire un oggetto COM per contenere il provider. Il codice di esempio per questo passaggio è disponibile in un esempio completo alla fine di questo argomento.
 
-    1.  Come per qualsiasi oggetto COM, è necessario implementare un costruttore e un costruttore, nonché i metodi [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)e [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) .
+    1.  Come per qualsiasi oggetto COM, è necessario implementare un costruttore e un decostruttore, nonché i [**metodi QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) [**e Release.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)
 
-    2.  Implementare il metodo [**IWbemProviderInit:: Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) nell'oggetto com.
+    2.  Implementare [**il metodo IWbemProviderInit::Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) nell'oggetto COM.
 
-        Lo scopo principale di [**Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) in questo esempio consiste nell'impostare il **membro \_ pNamespace m** sullo spazio dei nomi corrente. Per ulteriori informazioni sugli spazi dei nomi, vedere [creazione di gerarchie all'interno di WMI](creating-hierarchies-within-wmi.md).
+        Lo scopo principale di [**Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) in questo esempio è impostare il membro **m \_ pNamespace** nello spazio dei nomi corrente. Per altre informazioni sugli spazi dei nomi, vedere [Creazione di gerarchie all'interno di WMI.](creating-hierarchies-within-wmi.md)
 
-        Un sink viene passato tramite il parametro *pInitSink* del metodo [**IWbemProviderInit:: Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) per indicare che il provider è stato inizializzato correttamente. Per ulteriori informazioni sui sink, vedere [**IWbemObjectSink**](iwbemobjectsink.md) e [chiamata a un metodo](calling-a-method.md).
+        Un sink viene passato tramite il *parametro pInitSink* nel metodo [**IWbemProviderInit::Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) per indica che il provider è stato inizializzato correttamente. Per altre informazioni sui sink, vedere [**IWbemObjectSink**](iwbemobjectsink.md) e [Chiamata di un metodo](calling-a-method.md).
 
-    3.  Implementare il metodo [**IWbemServices:: CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) all'interno dell'oggetto com (sebbene sia possibile implementare un'ampia gamma di interfacce [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) , l'esempio alla fine di questo argomento implementa solo **CreateInstanceEnumAsync**). In particolare, **CreateInstanceEnumAsync** restituisce istanze di oggetti specificati a WMI.
+    3.  Implementare il metodo [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) all'interno dell'oggetto COM (anche se è possibile implementare un'ampia gamma di interfacce [**IWbemServices,**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) l'esempio alla fine di questo argomento implementa solo **CreateInstanceEnumAsync).** In particolare, **CreateInstanceEnumAsync** restituisce istanze di oggetti specificati a WMI.
 
-    4.  Implementare il metodo [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) all'interno dell'oggetto com.
+    4.  Implementare il [**metodo GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) all'interno dell'oggetto COM.
 
-        Nell'esempio alla fine di questo argomento, [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) controlla i parametri nell'oggetto gestito, recupera l'oggetto specificato, esegue il controllo degli errori e restituisce i codici appropriati al sink.
+        Nell'esempio alla fine di questo argomento [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) controlla i parametri nell'oggetto gestito, recupera l'oggetto specificato, esegue il controllo degli errori e restituisce i codici appropriati al sink.
 
-6.  Registrare il provider come oggetto COM, usando RegSvr32.
+6.  Registrare il provider come oggetto COM usando RegSvr32.
 
-    Al prompt dei comandi nella directory del provider digitare quanto segue:
+    Dal prompt dei comandi nella directory del provider digitare quanto segue:
 
     **regsvr32** *InstProv.dll*
 
-Il provider è ora completo. A questo punto, è possibile accedere alle istanze della classe **InstProvSamp** dall'interno di WMI.
+Il provider è ora completo. A questo punto, dovrebbe essere possibile accedere alle istanze della **classe InstProvSamp** dall'interno di WMI.
 
-Nell'esempio di codice seguente viene creato un oggetto COM per contenere il provider, come descritto nel passaggio 5 precedente. L'esempio completo contiene il codice del file di intestazione denominato Sample. h e i file di origine denominati Instprov. cpp, utils. cpp, Classfac. cpp e maindll. cpp.
+Nell'esempio di codice seguente viene creato un oggetto COM per contenere il provider, come descritto nel passaggio 5 precedente. L'esempio completo contiene il codice del file di intestazione Sample.h e dei file di origine intitolati Instprov.cpp, Utils.cpp, Classfac.cpp e Maindll.cpp.
 
 
 ```C++
@@ -396,7 +396,7 @@ extern long glNumInst;
 
 
 
-Il file di origine Instpro. cpp contiene codice che implementa le funzioni per il provider dichiarate nel file di intestazione Sample. h.
+Il file di origine Instpro.cpp contiene il codice che implementa le funzioni per il provider dichiarato nel file di intestazione Sample.h.
 
 
 ```C++
@@ -731,7 +731,7 @@ SCODE CInstPro::GetByPath(BSTR ObjectPath,
 
 
 
-Il file di origine utils. cpp contiene codice che implementa le funzioni di utilità per il provider dichiarate nel file di intestazione Sample. h.
+Il file di origine Utils.cpp contiene il codice che implementa le funzioni di utilità per il provider dichiarato nel file di intestazione Sample.h.
 
 
 ```C++
@@ -891,7 +891,7 @@ DWORD GetCurrentImpersonationLevel ()
 
 
 
-Il file di origine Classfac. cpp contiene codice che crea oggetti quando vengono richieste le connessioni.
+Il file di origine Classfac.cpp contiene il codice che crea oggetti quando vengono richieste le connessioni.
 
 
 ```C++
@@ -1046,7 +1046,7 @@ STDMETHODIMP CProvFactory::LockServer(BOOL fLock)
 
 
 
-Il file di origine maindll. cpp contiene codice che controlla quando la DLL può essere scaricata tenendo traccia del numero di oggetti e blocchi, nonché delle routine che supportano la registrazione automatica.
+Il file di origine Maindll.cpp contiene codice che controlla quando la DLL può essere scaricata verificando il numero di oggetti e blocchi, nonché le routine che supportano la registrazione automatica.
 
 
 ```C++
@@ -1289,10 +1289,10 @@ STDAPI DllUnregisterServer(void)
 
 <dl> <dt>
 
-[Impostazione di descrittori di sicurezza spazio dei nomi](setting-namespace-security-descriptors.md)
+[Impostazione dei descrittori di sicurezza namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
-[Sicurezza del provider](securing-your-provider.md)
+[Protezione del provider](securing-your-provider.md)
 </dt> <dt>
 
 [Sviluppo di un provider WMI](developing-a-wmi-provider.md)

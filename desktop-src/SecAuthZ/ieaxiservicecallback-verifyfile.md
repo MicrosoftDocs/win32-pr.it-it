@@ -1,7 +1,7 @@
 ---
-description: Esegue i controlli di sicurezza sull'oggetto ActiveX specificato e restituisce il percorso in cui è stato scaricato il file con estensione CAB corrispondente.
+description: Esegue controlli di sicurezza sull'oggetto ActiveX specificato e restituisce il percorso in cui è stato scaricato il file .cab corrispondente.
 ms.assetid: ba8e4f9b-1569-43f9-b27c-a987044fff41
-title: 'Metodo IeAxiServiceCallback:: VerifyFile'
+title: Metodo IeAxiServiceCallback::VerifyFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6d590f5e0e7ecd881a51844737f8efddf34d6727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c8072680d42e214304cae1f0a6002b7a1fbc036fc075c5c6777dd7612733a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414711"
 ---
-# <a name="ieaxiservicecallbackverifyfile-method"></a>Metodo IeAxiServiceCallback:: VerifyFile
+# <a name="ieaxiservicecallbackverifyfile-method"></a>Metodo IeAxiServiceCallback::VerifyFile
 
-Il metodo **VerifyFile** esegue i controlli di sicurezza sull'oggetto ActiveX specificato e restituisce il percorso in cui è stato scaricato il file con estensione CAB corrispondente.
+Il **metodo VerifyFile** esegue controlli di sicurezza sull'oggetto ActiveX specificato e restituisce il percorso in cui è stato scaricato il file .cab corrispondente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,17 +39,17 @@ HRESULT VerifyFile(
 
 <dl> <dt>
 
-*bstrFileUrl* \[ in\]
+*bstrFileUrl* \[ Pollici\]
 </dt> <dd>
 
-URL dell'oggetto ActiveX da verificare.
+URL dell'oggetto ActiveX da controllare.
 
 </dd> <dt>
 
-*bstrApprovedFileName* \[ out\]
+*bstrApprovedFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file in cui è stato scaricato il file con estensione cab associato all'oggetto ActiveX.
+Nome del file in cui è stato scaricato .cab file associato all ActiveX o object.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Nome del file in cui è stato scaricato il file con estensione cab associato all
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](/windows/desktop/SecCrypto/common-hresult-values).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](/windows/desktop/SecCrypto/common-hresult-values)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'e
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo app desktop Vista Ultimate \[\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                 |
-| IID<br/>                      | IID \_ IeAxiServiceCallback è definito come 1823E7BA-EC36-447A-9B2E-B4912E15AFE7<br/>                   |
+| IID<br/>                      | IID \_ IeAxiServiceCallback è definito come 1823E7BA-EC36-447a-9B2E-B4912E15AFE7<br/>                   |
 
 
 

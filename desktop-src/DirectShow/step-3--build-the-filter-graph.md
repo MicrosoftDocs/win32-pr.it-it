@@ -1,19 +1,19 @@
 ---
-description: Questo argomento è il passaggio 3 della riproduzione audio/video dell'esercitazione in DirectShow.
+description: Questo argomento è il passaggio 3 dell'esercitazione Riproduzione audio/video in DirectShow.
 ms.assetid: 45679c14-2671-420d-9766-61f2b2bb713a
-title: 'Passaggio 3: creare il grafico del filtro'
+title: 'Passaggio 3: Compilare il filtro Graph'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a770ad823a2578fab88a09cc44a3c7f2be4a4ca8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad4903e08b19e15721c8b62f130261bb4d05fcd94d544380b2e501f56d60704d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072505"
 ---
-# <a name="step-3-build-the-filter-graph"></a>Passaggio 3: creare il grafico del filtro
+# <a name="step-3-build-the-filter-graph"></a>Passaggio 3: Compilare il filtro Graph
 
-Questo argomento è il passaggio 3 della [riproduzione audio/video dell'esercitazione in DirectShow](audio-video-playback-in-directshow.md). Il codice completo è illustrato nell'esempio relativo alla [riproduzione DirectShow](directshow-playback-example.md).
+Questo argomento è il passaggio 3 dell'esercitazione [Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md). Il codice completo è illustrato nell'argomento DirectShow [Esempio di riproduzione](directshow-playback-example.md).
 
 Il passaggio successivo consiste nel creare un grafico di filtro per riprodurre il file multimediale.
 
@@ -22,8 +22,8 @@ Il passaggio successivo consiste nel creare un grafico di filtro per riprodurre 
 Il `DShowPlayer::OpenFile` metodo apre un file multimediale per la riproduzione. Questo metodo esegue le operazioni seguenti:
 
 1.  Crea un nuovo grafico di filtro (vuoto).
-2.  Chiama [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) per aggiungere un filtro di origine per il file specificato.
-3.  Esegue il rendering dei flussi sul filtro di origine.
+2.  Chiama [**IGraphBuilder::AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) per aggiungere un filtro di origine per il file specificato.
+3.  Esegue il rendering dei flussi nel filtro di origine.
 
 
 ```C++
@@ -60,13 +60,13 @@ done:
 
 
 
-### <a name="creating-the-filter-graph-manager"></a>Creazione di Filter Graph Manager
+### <a name="creating-the-filter-graph-manager"></a>Creazione del filtro Graph Manager
 
 Il `DShowPlayer::InitializeGraph` metodo crea un nuovo grafico di filtro. Questo metodo esegue le operazioni seguenti:
 
-1.  Chiama [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) per creare una nuova istanza di [Filter Graph Manager](filter-graph-manager.md).
-2.  Esegue una query su Filter Graph Manager per le interfacce [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
-3.  Chiama [**IMediaEventEx:: SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) per impostare la notifica degli eventi. Per altre informazioni, vedere [notifica degli eventi in DirectShow](event-notification-in-directshow.md).
+1.  Chiama [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) per creare una nuova istanza di [Filter Graph Manager.](filter-graph-manager.md)
+2.  Esegue una query Graph Gestione filtri per [**le interfacce IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) [**e IMediaEventEx.**](/windows/desktop/api/Control/nn-control-imediaeventex)
+3.  Chiama [**IMediaEventEx::SetNotifyWindow per**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) configurare la notifica degli eventi. Per altre informazioni, vedere [Notifica degli eventi in DirectShow](event-notification-in-directshow.md).
 
 
 ```C++
@@ -110,19 +110,19 @@ done:
 
 
 
-### <a name="rendering-the-streams"></a>Rendering dei flussi
+### <a name="rendering-the-streams"></a>Rendering del Flussi
 
 Il passaggio successivo consiste nel connettere il filtro di origine a uno o più filtri renderer.
 
 Il `DShowPlayer::RenderStreams` metodo esegue i passaggi seguenti.
 
-1.  Esegue una query su Filter Graph Manager per l'interfaccia [**IFilterGraph2**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2) .
-2.  Aggiunge un filtro renderer video al grafico filtro.
-3.  Consente di aggiungere il [filtro renderer DirectSound](directsound-renderer-filter.md) al grafico di filtro per supportare la riproduzione audio. Per ulteriori informazioni sull'aggiunta di filtri al grafico di filtro, vedere [aggiungere un filtro in base a CLSID](add-a-filter-by-clsid.md).
-4.  Enumera i pin di output sul filtro di origine. Per ulteriori informazioni sull'enumerazione dei pin, vedere [enumerazione dei pin](enumerating-pins.md).
-5.  Per ogni pin, chiama il metodo [**IFilterGraph2:: RenderEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-renderex) . Questo metodo connette il pin di output a un filtro renderer, aggiungendo filtri intermedi se necessario, ad esempio i decodificatori.
+1.  Esegue una query su Filter Graph Manager per [**l'interfaccia IFilterGraph2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2)
+2.  Aggiunge un filtro del renderer video al grafico dei filtri.
+3.  Aggiunge il [filtro del renderer DirectSound](directsound-renderer-filter.md) al grafico dei filtri per supportare la riproduzione audio. Per altre informazioni sull'aggiunta di filtri al grafico dei filtri, vedere [Aggiungere un filtro in base a CLSID.](add-a-filter-by-clsid.md)
+4.  Enumera i segnaposto di output nel filtro di origine. Per altre informazioni sull'enumerazione dei pin, vedere [Enumerazione dei pin.](enumerating-pins.md)
+5.  Per ogni pin, chiama il [**metodo IFilterGraph2::RenderEx.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-renderex) Questo metodo connette il pin di output a un filtro renderer, aggiungendo filtri intermedi, se necessario(ad esempio decodificatori).
 6.  Chiama `CVideoRenderer::FinalizeGraph` per completare l'inizializzazione del renderer video.
-7.  Rimuove il filtro [renderer DirectSound](directsound-renderer-filter.md) se il filtro non è connesso a un altro filtro. Questo problema può verificarsi se il file di origine non contiene un flusso audio.
+7.  Rimuove il [filtro del renderer DirectSound](directsound-renderer-filter.md) se tale filtro non è connesso a un altro filtro. Ciò può verificarsi se il file di origine non contiene un flusso audio.
 
 
 ```C++
@@ -208,7 +208,7 @@ done:
 
 
 
-Ecco il codice per la `RemoveUnconnectedRenderer` funzione, che viene usato nell'esempio precedente.
+Di seguito è riportato il codice `RemoveUnconnectedRenderer` per la funzione , usato nell'esempio precedente.
 
 
 ```C++
@@ -239,9 +239,9 @@ HRESULT RemoveUnconnectedRenderer(IGraphBuilder *pGraph, IBaseFilter *pRenderer,
 
 
 
-### <a name="releasing-the-filter-graph"></a>Rilascio del grafico di filtro
+### <a name="releasing-the-filter-graph"></a>Rilascio del filtro Graph
 
-Quando l'applicazione viene chiusa, deve rilasciare il grafico di filtro, come illustrato nel codice seguente.
+Quando l'applicazione viene chiusa, deve rilasciare il grafico del filtro, come illustrato nel codice seguente.
 
 
 ```C++
@@ -266,7 +266,7 @@ void DShowPlayer::TearDownGraph()
 
 
 
-[Passaggio 4: aggiungere il renderer video](step-4--add-the-video-renderer.md).
+Passaggio [4: Aggiungere il renderer video](step-4--add-the-video-renderer.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -275,13 +275,13 @@ void DShowPlayer::TearDownGraph()
 [Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Esempio di riproduzione DirectShow](directshow-playback-example.md)
+[DirectShow Esempio di riproduzione](directshow-playback-example.md)
 </dt> <dt>
 
-[Creazione del grafico di filtro](building-the-filter-graph.md)
+[Compilazione del filtro Graph](building-the-filter-graph.md)
 </dt> <dt>
 
-[Tecniche di Graph-Building generali](general-graph-building-techniques.md)
+[Tecniche Graph-Building generali](general-graph-building-techniques.md)
 </dt> </dl>
 
  

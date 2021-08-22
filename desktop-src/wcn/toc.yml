@@ -1,12 +1,12 @@
 - name: Windows Connect Now
   href: portal.md
   items:
-    - name: Informazioni su Windows Connect Now
+    - name: Informazioni Windows Connect Now
       href: about-windows-connect-now.md
-    - name: Informazioni di riferimento su Windows Connect Now
+    - name: Windows Connect Now Riferimento
       href: windows-connect-now-reference.md
       items:
-        - name: Enumerazioni di Windows Connect Now
+        - name: Windows Connect Now Enumerazioni
           href: windows-connect-now-enumerations.md
           items:
             - name: WCN_ATTRIBUTE_TYPE
@@ -37,14 +37,14 @@
               href: /windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_version
             - name: WCN_VALUE_TYPE_WI_FI_PROTECTED_SETUP_STATE
               href: /windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_wi_fi_protected_setup_state
-        - name: Strutture di Windows Connect Now
+        - name: Windows Connect Now Strutture
           href: windows-connect-now-structures.md
           items:
             - name: WCN_VALUE_TYPE_PRIMARY_DEVICE_TYPE
               href: /windows/win32/api/wcntypes/ns-wcntypes-wcn_value_type_primary_device_type
             - name: WCN_VENDOR_EXTENSION_SPEC
               href: /windows/win32/api/Wcndevice/ns-wcndevice-wcn_vendor_extension_spec
-        - name: Interfacce di Windows Connect Now
+        - name: Windows Connect Now Interfacce
           href: windows-connect-now-interfaces.md
           items:
             - name: IWCNConnectNotify
@@ -57,7 +57,7 @@
             - name: IWCNDevice
               href: /windows/desktop/api/WcnDevice/nn-wcndevice-iwcndevice
               items:
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-connect
                 - name: Metodo GetAttribute
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-getattribute
@@ -71,9 +71,9 @@
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-getvendorextension
                 - name: Metodo SetNetworkProfile
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-setnetworkprofile
-                - name: Metodo sepassword
+                - name: Metodo SetPassword
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-setpassword
                 - name: Metodo SetVendorExtension
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-setvendorextension
-                - name: Unadvise (metodo)
+                - name: Metodo Unadvise
                   href: /windows/desktop/api/WcnDevice/nf-wcndevice-iwcndevice-unadvise

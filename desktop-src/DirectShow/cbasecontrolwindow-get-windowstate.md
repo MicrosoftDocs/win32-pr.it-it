@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo get WindowState recupera lo stato corrente della finestra.
+description: Il metodo get \_ WindowState recupera lo stato della finestra corrente.
 ms.assetid: 118b6710-b041-4a7d-8cdb-b96ae3dcbb09
-title: Metodo CBaseControlWindow.get_WindowState (Ctlutil. h)
+title: CBaseControlWindow.get_WindowState metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5391a118e2ae860a37905c7ff94822ad7c422135
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5603e846fcf3357f01f896e6a0d34e34da6c355e5d41ab5d8f7b0c344c1a16dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586423"
 ---
-# <a name="cbasecontrolwindowget_windowstate-method"></a>Metodo CBaseControlWindow. Get \_ WindowState
+# <a name="cbasecontrolwindowget_windowstate-method"></a>Metodo CBaseControlWindow.get \_ WindowState
 
-Il `get_WindowState` metodo recupera lo stato corrente della finestra.
+Il `get_WindowState` metodo recupera lo stato della finestra corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Puntatore allo stato della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro restituisce un subset dei parametri della funzione **ShowWindow** di Microsoft Win32. In particolare, restituisce SW \_ Show e SW \_ Hide, a seconda della visibilità corrente della finestra. Restituisce inoltre SW \_ Riduci a icona e SW \_ ingrandito, a seconda che la finestra sia un'icona o espansa.
+Questa funzione membro restituisce un subset dei parametri della funzione **ShowWindow** di Microsoft Win32. In particolare, restituisce SW \_ SHOW e SW \_ HIDE, a seconda della visibilità corrente della finestra. Restituisce anche SW MINIMIZE e SW MAXIMIZE, a seconda che la finestra \_ sia \_ un'icona o sia espansa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro restituisce un subset dei parametri della funzione **Show
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

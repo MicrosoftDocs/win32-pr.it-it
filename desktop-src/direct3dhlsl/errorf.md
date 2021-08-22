@@ -1,6 +1,6 @@
 ---
-title: errorf (funzione)
-description: Invia un messaggio di errore alla coda delle informazioni.
+title: Funzione errorf
+description: Invia un messaggio di errore alla coda di informazioni.
 ms.assetid: bf4dc6dc-b36e-4b71-ad61-b7a5ba332879
 keywords:
 - funzione errorf HLSL
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76c8fbcd9b6cb15dbbb735296a3aada8f5e568cb
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0651a27419a369721806e9aa4717a20088f8f5fbbaa0063628d2feb69648c7cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562681"
 ---
-# <a name="errorf-function"></a>errorf (funzione)
+# <a name="errorf-function"></a>Funzione errorf
 
-Invia un messaggio di errore alla coda delle informazioni.
+Invia un messaggio di errore alla coda di informazioni.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void errorf(
-   string format,
-    argument ...
+   string format,
+    argument ...
 );
 ```
 
@@ -44,7 +44,7 @@ Stringa di formato.
 
 </dd> <dt>
 
-*argomento...* 
+*discussione...* 
 </dt> <dd>
 
 Argomenti facoltativi.
@@ -57,11 +57,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione non esegue alcuna operazione nei dispositivi che non lo supportano.
+Questa operazione non esegue alcuna operazione nei dispositivi che non la supportano.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -71,7 +71,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -80,9 +80,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

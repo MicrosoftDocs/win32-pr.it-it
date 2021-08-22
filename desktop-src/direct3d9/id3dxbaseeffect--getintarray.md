@@ -1,7 +1,7 @@
 ---
 description: Ottiene una matrice di numeri interi.
 ms.assetid: c02b5343-db4f-4e8c-989c-6aba8c19c234
-title: 'Metodo ID3DXBaseEffect:: GetIntArray (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetIntArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f13c6b8717c2108920d7b914da20b99f0451f5d9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f9f360c51007d7bc51fe39dfeeb13a2c0a5f4de0b3da1582075c865a3ff1e21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279001"
 ---
-# <a name="id3dxbaseeffectgetintarray-method"></a>Metodo ID3DXBaseEffect:: GetIntArray
+# <a name="id3dxbaseeffectgetintarray-method"></a>Metodo ID3DXBaseEffect::GetIntArray
 
 Ottiene una matrice di numeri interi.
 
@@ -42,28 +42,28 @@ HRESULT GetIntArray(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*PN* \[ out\]
+*pn* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)\***
+Tipo: **[ **INT**](../winprog/windows-data-types.md)\***
 
 Restituisce una matrice di numeri interi.
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di numeri interi nella matrice.
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Grbits. Inoltr'
-title: Campo Windows7Grbits. inoltr (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Campo Windows7Grbits.Forward'
+title: Campo Windows7Grbits.Forward (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Forward field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.Forward
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits.forward(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ab7b7162e7246b9d0656b41363e6da54a92acc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01bf5a012919fc6de40683a6202b06f7d632f96a4a38f53c1a1b6fc6bee5cd79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119356021"
 ---
-# <a name="windows7grbitsforward-field"></a>Campo Windows7Grbits. Inoltr
+# <a name="windows7grbitsforward-field"></a>Campo Windows7Grbits.Forward
 
-Suggerimento che l'attraversamento sequenziale sarà nella direzione in avanti.
+Suggerimento che l'attraversamento sequenziale sarà in avanti.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const SetTableSequentialGrbit Forward
 
 [Membri di Windows7Grbits](./windows7grbits-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

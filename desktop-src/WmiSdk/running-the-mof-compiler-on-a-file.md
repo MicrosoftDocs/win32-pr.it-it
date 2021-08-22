@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Esecuzione del compilatore MOF in un file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77f62834944e995c3e7f3763c460d72f9f70aa66
-ms.sourcegitcommit: 7eadd92b1da5eb4eab7d516a5a768e7f7fc02d4c
+ms.openlocfilehash: b1a70c32e82b826f2ab02403e7e269e711704d826ad4b4f9465638df0b0745f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112230248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050329"
 ---
 # <a name="running-the-mof-compiler-on-a-file"></a>Esecuzione del compilatore MOF in un file
 

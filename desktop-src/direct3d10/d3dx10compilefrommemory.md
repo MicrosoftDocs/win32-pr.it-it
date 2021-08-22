@@ -1,5 +1,5 @@
 ---
-description: Nota invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe compilatore dalla riga di comando o l'API D3DCompile. Compilare uno shader o un effetto caricato in memoria.
+description: Nota Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il compilatore della riga di comando Fxc.exe o l'API D3DCompile. Compilare uno shader o un effetto caricato in memoria.
 ms.assetid: c6458d82-a649-402c-8180-5b7320f9fdb0
 title: Funzione D3DX10CompileFromMemory (D3DX10Async.h)
 ms.topic: reference
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: fbb4a716df4a893ea122e7badfd6faad536aacce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5cd6772079f872fe575a3a2f49fee536b89dab00f29a62dba151842dbc99b45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119281711"
 ---
-# <a name="d3dx10compilefrommemory-function"></a>D3DX10CompileFromMemory (funzione)
+# <a name="d3dx10compilefrommemory-function"></a>Funzione D3DX10CompileFromMemory
 
 > [!Note]  
-> Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe compilatore da riga di comando o l'API [**D3DCompile**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile) .
+> Invece di usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando il Fxc.exe della riga di comando o l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
@@ -56,7 +56,7 @@ HRESULT D3DX10CompileFromMemory(
 
 <dl> <dt>
 
-*pSrcData* \[ in\]
+*pSrcData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -65,16 +65,16 @@ Puntatore allo shader in memoria.
 
 </dd> <dt>
 
-*SrcDataLen* \[ in\]
+*SrcDataLen* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 Dimensioni dello shader in memoria.
 
 </dd> <dt>
 
-*pFileName* \[ in\]
+*pFileName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -83,93 +83,93 @@ Nome del file che contiene il codice dello shader.
 
 </dd> <dt>
 
-*pDefines* \[ in\]
+*pDefines* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**D3D \_ shader \_ macro**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
+Tipo: **const [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-facoltativo. Puntatore a una matrice di definizioni di macro (vedere la [**\_ \_ macro dello shader D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). L'ultima struttura della matrice funge da carattere di terminazione e deve avere tutti i membri impostati su 0. Se non viene usato, impostare *pDefines* su **null**.
+facoltativo. Puntatore a una matrice di definizioni di macro (vedere [**D3D \_ SHADER \_ MACRO).**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) L'ultima struttura nella matrice funge da carattere di terminazione e deve avere tutti i membri impostati su 0. Se non viene usato, *impostare pDefines* su **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ in\]
+*pInclude* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-facoltativo. Puntatore a un'interfaccia di [**interfaccia ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85)) per la gestione dei file di inclusione. Se si imposta su **null** , verrà generato un errore di compilazione se uno shader contiene un' \# inclusione.
+facoltativo. Puntatore a [**un'interfaccia ID3D10Include per**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85)) la gestione dei file di inclusione. L'impostazione di **questa proprietà su NULL** causerà un errore di compilazione se uno shader contiene \# un'inclusione.
 
 </dd> <dt>
 
-*pFunctionName* \[ in\]
+*pFunctionName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome della funzione del punto di ingresso dello shader in cui inizia l'esecuzione dello shader. Quando si compila un effetto, **D3DX10CompileFromMemory** ignora *pFunctionName*; si consiglia di impostare *pFunctionName* su **null** perché è consigliabile impostare un parametro puntatore su **null** se la funzione chiamata non lo utilizzerà.
+Nome della funzione del punto di ingresso dello shader in cui inizia l'esecuzione dello shader. Quando si compila un effetto, **D3DX10CompileFromMemory** ignora *pFunctionName*; È consigliabile impostare *pFunctionName* su **NULL** perché è consigliabile impostare un parametro del puntatore su **NULL** se la funzione chiamata non lo userà.
 
 </dd> <dt>
 
-*pProfile* \[ in\]
+*pProfile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Stringa che specifica il modello di shader; può essere qualsiasi profilo in [Shader Model 2](../direct3dhlsl/dx-graphics-hlsl-sm2.md), [Shader Model 3](../direct3dhlsl/dx-graphics-hlsl-sm3.md)o [Shader Model 4](../direct3dhlsl/dx-graphics-hlsl-sm4.md).
+Stringa che specifica il modello di shader. può essere qualsiasi profilo nel [modello shader 2,](../direct3dhlsl/dx-graphics-hlsl-sm2.md) [nel modello shader 3](../direct3dhlsl/dx-graphics-hlsl-sm3.md)o nel [modello shader 4.](../direct3dhlsl/dx-graphics-hlsl-sm4.md)
 
 </dd> <dt>
 
-*Flags1* \[ in\]
+*Flag1* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 [Flag di compilazione shader](d3d10-shader.md).
 
 </dd> <dt>
 
-*Flags2* \[ in\]
+*Flag2* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Flag di compilazione effetto](d3d10-graphics-reference-effect-constants.md). Quando si compila uno shader e non un file di effetto, **D3DX10CompileFromMemory** ignora *Flags2*; si consiglia di impostare *Flags2* su zero, perché è consigliabile impostare un parametro non di puntatore su zero se la funzione chiamata non lo utilizzerà.
+[Flag di compilazione dell'effetto](d3d10-graphics-reference-effect-constants.md). Quando si compila uno shader e non un file di effetto, **D3DX10CompileFromMemory** ignora *Flags2*; È consigliabile impostare *Flags2* su zero perché è consigliabile impostare un parametro nonpointer su zero se la funzione chiamata non lo userà.
 
 </dd> <dt>
 
-*pPump* \[ in\]
+*pPump* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Puntatore a un'interfaccia della pompa di thread (vedere [**interfaccia ID3DX10ThreadPump**](id3dx10threadpump.md)). Utilizzare **null** per specificare che questa funzione non deve essere restituita finché non viene completata.
+Puntatore a un'interfaccia pump di thread (vedere [**l'interfaccia ID3DX10ThreadPump).**](id3dx10threadpump.md) Usare **NULL** per specificare che questa funzione non deve restituire alcun valore finché non viene completata.
 
 </dd> <dt>
 
-*ppShader* \[ out\]
+*ppShader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntatore a un' [**interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) che contiene lo shader compilato, nonché tutte le informazioni di debug e tabella di simboli incorporate.
+Puntatore a [**un'interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) che contiene lo shader compilato, nonché eventuali informazioni incorporate sul debug e sulla tabella dei simboli.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ out\]
+*ppErrorMsgs* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntatore a un' [**interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) contenente un elenco di errori e avvisi che si sono verificati durante la compilazione. Questi errori e avvisi sono identici a quelli dell'output di debug di un debugger.
+Puntatore a [**un'interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) che contiene un elenco di errori e avvisi che si sono verificati durante la compilazione. Questi errori e avvisi sono identici all'output di debug di un debugger.
 
 </dd> <dt>
 
-*pHResult* \[ out\]
+*pHResult* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**, *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
+Puntatore al valore restituito. Può essere **NULL.** Se *pPump* non è **NULL,** *pHResult* deve essere una posizione di memoria valida fino al completamento dell'esecuzione asincrona.
 
 </dd> </dl>
 
@@ -177,7 +177,7 @@ Puntatore al valore restituito. Può essere **null**. Se *pPump* non è **null**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -185,7 +185,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -193,7 +193,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_GETSELCOUNT (winuser. h)
+title: LB_GETSELCOUNT messaggio (Winuser.h)
 description: Ottiene il numero totale di elementi selezionati in una casella di riepilogo a selezione multipla.
 ms.assetid: 1597f6d0-e8f2-4e10-8a0e-ef76192e6238
 keywords:
-- Controlli di Windows Message LB_GETSELCOUNT
+- LB_GETSELCOUNT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed73b387315d1b612241d41e47e6b613a3a75f12
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8cacbf266931daaeba4a98c95c7c428630708d833af7603b0be09cef3071212
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434111"
 ---
-# <a name="lb_getselcount-message"></a>\_Messaggio GETSELCOUNT lb
+# <a name="lb_getselcount-message"></a>Messaggio \_ LB GETSELCOUNT
 
 Ottiene il numero totale di elementi selezionati in una casella di riepilogo a selezione multipla.
 
@@ -32,20 +32,20 @@ Ottiene il numero totale di elementi selezionati in una casella di riepilogo a s
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è il numero di elementi selezionati nella casella di riepilogo. Se la casella di riepilogo è una casella di riepilogo a selezione singola, il valore restituito è LB \_ Err.
+Il valore restituito è il conteggio degli elementi selezionati nella casella di riepilogo. Se la casella di riepilogo è una casella di riepilogo a selezione singola, il valore restituito è LB \_ ERR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è il numero di elementi selezionati nella casella di riepi
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore restituito è il numero di elementi selezionati nella casella di riepi
 
 <dl> <dt>
 
-[**\_SETSEL lb**](lb-setsel.md)
+[**LB \_ SETSEL**](lb-setsel.md)
 </dt> </dl>
 
  

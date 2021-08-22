@@ -1,11 +1,11 @@
 ---
-title: Matrix5x4F Matrix5x4F (FLOAT, FLOAT, FLOAT, FLOAT, float, float, float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, float, FLOAT, float, FLOAT, float, FLOAT, float, FLOAT) Costruttore (D2d1 \_ Helper. h)
-description: Crea un'istanza di una nuova istanza di una classe Matrix5x4F inizializzata con tutti i valori della matrice a virgola mobile.
+title: Costruttore Matrix5x4F Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) \_ (helper D2d1.h)
+description: Crea una nuova istanza di una classe Matrix5x4F inizializzata con tutti i valori della matrice a virgola mobile.
 ms.assetid: 46C2741F-9E49-4ABD-9DA5-D4E6D3CA2B09
 keywords:
 - Costruttore Matrix5x4F Direct2D
 - Costruttore Matrix5x4F Direct2D, interfaccia Matrix5x4F
-- Interfaccia Direct2D di Matrix5x4F, Costruttore Matrix5x4F
+- Interfaccia Matrix5x4F Direct2D, costruttore Matrix5x4F
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2582e58f535ddf4f87d54e16dd2edaec2aa37e91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3626e4af5e51555779a2d14c731fbeb4a2ad30ce542ce2ca9447116332c9faea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430631"
 ---
-# <a name="matrix5x4fmatrix5x4ffloat-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Matrix5x4F:: Matrix5x4F (FLOAT, float, FLOAT, float, float, FLOAT, float, FLOAT, FLOAT, FLOAT, float, float, float, float, float, float, float, FLOAT, float, FLOAT) Costruttore
+# <a name="matrix5x4fmatrix5x4ffloat-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Costruttore Matrix5x4F::Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
 
-Crea un'istanza di una nuova istanza di una classe [**Matrix5x4F**](matrix5x4f.md) inizializzata con tutti i valori della matrice a virgola mobile.
+Crea una nuova istanza di una [**classe Matrix5x4F**](matrix5x4f.md) inizializzata con tutti i valori della matrice a virgola mobile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,154 +61,154 @@ inline Matrix5x4F(
 
 <dl> <dt>
 
-*M11* 
+*m11* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella prima riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M12* 
+*m12* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella prima riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M13* 
+*m13* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della prima riga e della terza colonna della matrice.
+Valore nella prima riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M14* 
+*m14* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella prima riga e nella quarta colonna della matrice.
 
 </dd> <dt>
 
-*M21* 
+*m21* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M22* 
+*m22* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M23* 
+*m23* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M24* 
+*m24* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella quarta colonna della matrice.
 
 </dd> <dt>
 
-*M31* 
+*m31* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella terza riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M32* 
+*m32* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella terza riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M33* 
+*m33* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della terza riga e della terza colonna della matrice.
+Valore nella terza riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M34* 
+*m34* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della terza riga e della quarta colonna della matrice.
+Valore nella terza riga e nella quarta colonna della matrice.
 
 </dd> <dt>
 
-*M41* 
+*m41* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quarta riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M42* 
+*m42* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quarta riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M43* 
+*m43* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della quarta riga e della terza colonna della matrice.
+Valore nella quarta riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M44* 
+*m44* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della quarta riga e della quarta colonna della matrice.
+Valore nella quarta riga e nella quarta colonna della matrice.
 
 </dd> <dt>
 
-*M51* 
+*m51* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quinta riga e nella prima colonna della matrice.
 
@@ -217,27 +217,27 @@ Valore nella quinta riga e nella prima colonna della matrice.
 *m52* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quinta riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M53* 
+*m53* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della quinta riga e della terza colonna della matrice.
+Valore nella quinta riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
 *M54* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della quinta riga e della quarta colonna della matrice.
+Valore nella quinta riga e nella quarta colonna della matrice.
 
 </dd> </dl>
 
@@ -247,12 +247,12 @@ Valore della quinta riga e della quarta colonna della matrice.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e aggiornamento della piattaforma solo per le applicazioni desktop di Windows Vista \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per le \[ app desktop Windows server 2008\]<br/> |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e l'aggiornamento della piattaforma solo per Windows app desktop di Vista \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per le app desktop Windows Server 2008 \[\]<br/> |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/>                                           |
 | Spazio dei nomi<br/>                | D2D1<br/>                                                                                                                   |
-| Intestazione<br/>                   | <dl> <dt>\_Helper D2d1. h</dt> </dl>                                         |
-| Libreria<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                               |
+| Intestazione<br/>                   | <dl> <dt>Helper.h D2d1 \_</dt> </dl>                                         |
+| Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                               |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 
 

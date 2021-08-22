@@ -1,5 +1,5 @@
 ---
-description: Identifica il nome del provider Home per la SIM/dispositivo specificato.
+description: Identifica il nome del provider Home per la SIM o il dispositivo specificato.
 ms.assetid: 05d65091-5a1d-427a-8f51-1e1b9d189571
 title: Elemento HomeProviderName (MBNProfile)
 ms.topic: reference
@@ -11,16 +11,16 @@ api_name:
 - HomeProviderName
 api_type:
 - Schema
-ms.openlocfilehash: 3d0af51e4873915838f2d55f683d07e9098aad3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1868be18dc7acf9d5146f987658feb006714fbcc3db35883007afd01c308609e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035829"
 ---
 # <a name="homeprovidername-mbnprofile-element"></a>Elemento HomeProviderName (MBNProfile)
 
-L'elemento **HomeProviderName (MBNProfile)** identifica il nome del provider Home per la SIM/dispositivo specificato.
+**L'elemento HomeProviderName (MBNProfile)** identifica il nome del provider Home per la SIM o il dispositivo specificato.
 
 Questo elemento è facoltativo e viene impostato dal servizio Mobile Broadband per uso interno. Un'applicazione non deve impostare questo campo durante la creazione o l'aggiornamento di un profilo.
 
@@ -30,7 +30,7 @@ Questo elemento è facoltativo e viene impostato dal servizio Mobile Broadband p
  />
 ```
 
-L'elemento **HomeProviderName** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento HomeProviderName** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,7 +38,7 @@ L'elemento **HomeProviderName** è definito dall'elemento [**MBNProfile**](schem
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

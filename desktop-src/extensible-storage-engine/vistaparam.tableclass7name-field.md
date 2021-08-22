@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo VistaParam. TableClass7Name'
-title: Campo VistaParam. TableClass7Name (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Campo VistaParam.TableClass7Name'
+title: Campo VistaParam.TableClass7Name (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: TableClass7Name field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.TableClass7Name
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.tableclass7name(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 11f2a0a58ba4c7941cfbb6d5ac355ef912b1e90a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49dcb27c1bf68662cb1b33b5c87ec218823f0f5cb1ab11219cd7081deb556310
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559201"
 ---
-# <a name="vistaparamtableclass7name-field"></a>Campo VistaParam. TableClass7Name
+# <a name="vistaparamtableclass7name-field"></a>Campo VistaParam.TableClass7Name
 
-Impostare il nome associato alla tabella Class 7.
+Impostare il nome associato alla classe di tabella 7.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param TableClass7Name
 
 [Membri di VistaParam](./vistaparam-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di ricezione del messaggio ALPC. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di ricezione dei messaggi ALPC. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 6aa98240-e559-47b6-ae55-5a6379e08077
-title: Classe ALPC_Receive_Message
+title: ALPC_Receive_Message classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 886d3595caa283d5b09939a506952633d2350d41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98a565ea445ddd803ce217abca3993c2561d464829635bbb1a546824f27c3b8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070361"
 ---
-# <a name="alpc_receive_message-class"></a>\_Classe ALPC Receive \_ Message
+# <a name="alpc_receive_message-class"></a>Classe Messaggio \_ di ricezione \_ ALPC
 
-Questa classe è la classe del tipo di evento per gli eventi di ricezione del messaggio ALPC.
+Questa classe è la classe del tipo di evento per gli eventi di ricezione dei messaggi ALPC.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -38,20 +38,20 @@ class ALPC_Receive_Message : ALPC
 
 ## <a name="members"></a>Members
 
-La classe **ALPC \_ Receive \_ Message** dispone di questi tipi di membri:
+La **classe ALPC \_ Receive \_ Message** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ALPC \_ Receive \_ Message** dispone di queste proprietà.
+La **classe ALPC \_ Receive \_ Message** ha queste proprietà.
 
 <dl> <dt>
 
 **MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -67,8 +67,8 @@ Identificatore del messaggio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

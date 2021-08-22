@@ -2,33 +2,33 @@
 description: Un controllo di accesso determina se un descrittore di sicurezza concede un set specificato di diritti di accesso al client o al thread identificato da un token di accesso.
 ms.assetid: d0259bb1-fd74-4440-ac2a-d6aa84a48d9b
 ms.tgt_platform: multiple
-title: Esecuzione di controlli di accesso
+title: Esecuzione dei controlli di accesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9af65605b6e96a5ad8b820de876d553f8d19202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e06f2bccab886b38b53ecc3592371555b8c93a0ed12cdad0a4f039b62d62752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050509"
 ---
-# <a name="performing-access-checks"></a>Esecuzione di controlli di accesso
+# <a name="performing-access-checks"></a>Esecuzione dei controlli di accesso
 
-Un controllo di accesso determina se un descrittore di sicurezza concede un set specificato di diritti di accesso al client o al thread identificato da un token di accesso. È possibile chiamare la funzione di sicurezza [**AccessCheck**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-accesscheck) da applicazioni client WMI o da provider scritti in C++ o C#. Gli script e le applicazioni Visual Basic non possono eseguire controlli di accesso usando il metodo descritto qui.
+Un controllo di accesso determina se un descrittore di sicurezza concede un set specificato di diritti di accesso al client o al thread identificato da un token di accesso. È possibile chiamare la funzione di sicurezza [**AccessCheck**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-accesscheck) da applicazioni client WMI o provider scritti in C++ o C#. Gli script e Visual Basic applicazioni non possono eseguire controlli di accesso usando il metodo descritto qui.
 
-Le applicazioni client devono eseguire un controllo di accesso per determinare l'identità del callback quando restituiscono risultati al sink fornito dalla chiamata asincrona del client.
+Le applicazioni client devono eseguire un controllo di accesso per determinare l'identità del callback quando restituiscono i risultati al sink fornito dalla chiamata asincrona del client.
 
-Quando i provider non possono rappresentare l'applicazione client o lo script che richiede i dati, devono eseguire verifiche di accesso per le situazioni seguenti:
+Quando i provider non possono rappresentare l'applicazione client o lo script che richiede i dati, devono eseguire controlli di accesso nelle situazioni seguenti:
 
 -   Quando si accede a risorse non protette da elenchi di controllo di accesso (ACL).
--   Quando il client si è connesso a **\_ livello C RPC, \_ \_ identificare** il livello di rappresentazione.
+-   Quando il client si è connesso al livello di rappresentazione **RPC \_ C LEVEL \_ \_ IDENTIFY.**
 
 > [!Note]  
-> Le applicazioni C++ e C# possono controllare se i controlli di accesso vengono eseguiti da un processo separato. Gli script e le applicazioni Visual Basic possono leggere o modificare una chiave del registro di sistema per garantire che WMI esegua i controlli di accesso. Per ulteriori informazioni, vedere [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+> Le applicazioni C++ e C# possono controllare se i controlli di accesso vengono eseguiti da un processo separato. Gli script e Visual Basic applicazioni possono leggere o modificare una chiave del Registro di sistema per assicurarsi che WMI esegua i controlli di accesso. Per altre informazioni, vedere [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
  
 
-Nell'esempio di codice in questo argomento sono necessari i riferimenti seguenti e le \# istruzioni di inclusione per la compilazione corretta.
+L'esempio di codice in questo argomento richiede i riferimenti seguenti e \# le istruzioni include per la compilazione corretta.
 
 
 ```C++
@@ -44,7 +44,7 @@ Nell'esempio di codice in questo argomento sono necessari i riferimenti seguenti
 
 
 
-Nell'esempio di codice riportato di seguito viene illustrato come verificare che il token di sicurezza di un thread dell'applicazione client contenga le autorizzazioni appropriate per un descrittore di sicurezza specificato. La funzione accetta la stringa "domain \\ User" e restituisce il SID. Se la chiamata ha esito negativo, la funzione restituisce **null**; in caso contrario, il chiamante deve liberare il puntatore restituito.
+Nell'esempio di codice seguente viene illustrato come verificare che il token di sicurezza di un thread dell'applicazione client contenga le autorizzazioni appropriate per un descrittore di sicurezza specificato. La funzione accetta la stringa "domain \\ user" e restituisce il SID. Se la chiamata ha esito negativo, la funzione restituisce **NULL,** in caso contrario il chiamante deve liberare il puntatore restituito.
 
 
 ```C++
@@ -210,7 +210,7 @@ BOOL IsAllowed(LPWSTR pwsExpectedDomain,
 [Gestione della sicurezza WMI](maintaining-wmi-security.md)
 </dt> <dt>
 
-[Sicurezza del provider](securing-your-provider.md)
+[Protezione del provider](securing-your-provider.md)
 </dt> <dt>
 
 [Accesso agli spazi dei nomi WMI](access-to-wmi-namespaces.md)

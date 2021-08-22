@@ -1,10 +1,10 @@
 ---
-title: DS-clone-domain-controller esteso a destra
+title: Diritto esteso DS-Clone-Domain-Controller
 description: Consente a un controller di dominio di creare un clone di se stesso.
 ms.assetid: dc41356b-9ad7-4e89-b5c8-945f3cc37cbc
 ms.tgt_platform: multiple
 keywords:
-- DS-clone-domain-controller-schema AD a destra esteso
+- Schema AD esteso DS-Clone-Domain-Controller
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9d7676ebd9309eddc7597f476e0e8796cc5bf5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 345bb6dcc3f6471bb4122c06dd3d3d53fc407625d662db3b2c1b54785b78f5ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532291"
 ---
-# <a name="ds-clone-domain-controller-extended-right"></a>DS-clone-domain-controller esteso a destra
+# <a name="ds-clone-domain-controller-extended-right"></a>Diritto esteso DS-Clone-Domain-Controller
 
 Consente a un controller di dominio di creare un clone di se stesso.
 
@@ -28,8 +28,8 @@ Consente a un controller di dominio di creare un clone di se stesso.
 
 | Voce | Valore |
 |--------------|----------------------------------------|
-| CN           | DS-clone-domain-controller             |
-| Display-Name | Consenti a un controller di dominio di creare un clone di se stesso |
+| CN           | DS-Clone-Domain-Controller             |
+| Display-Name | Consentire a un controller di dominio di creare un clone di se stesso |
 | Rights-GUID  | 3e0f7e18-2c7a-4c10-ba82-4d926db99a3e   |
 
 
@@ -44,8 +44,8 @@ Consente a un controller di dominio di creare un clone di se stesso.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 80                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 80                                           |
 
 
 

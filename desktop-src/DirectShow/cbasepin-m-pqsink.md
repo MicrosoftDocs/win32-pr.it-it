@@ -1,7 +1,7 @@
 ---
 description: Puntatore all'oggetto che gestisce i messaggi di qualità.
 ms.assetid: 86f29550-9ab0-48de-879d-afad0589a30c
-title: 'Membro CBasePin:: m_pQSink (Amfilter. h)'
+title: Membro CBasePin::m_pQSink (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 44e56eec6a05b98295d9d076fc9e2befb6502d87
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e74f0da8764a0eacf73d675a7e1e8e5960f642ecc9b0a014fcfebff423f5dc16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341351"
 ---
-# <a name="cbasepinm_pqsink-member"></a>Membro pQSink di CBasePin:: m \_
+# <a name="cbasepinm_pqsink-member"></a>Membro CBasePin::m \_ pQSink
 
 Puntatore all'oggetto che gestisce i messaggi di qualità.
 
@@ -42,8 +42,8 @@ IQualityControl *m_pQSink;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

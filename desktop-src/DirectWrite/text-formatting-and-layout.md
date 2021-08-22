@@ -3,24 +3,24 @@ title: Formattazione e layout del testo
 description: DirectWrite fornisce due interfacce per la formattazione del testo IDWriteTextFormat e IDWriteTextLayout.
 ms.assetid: a68963a6-e486-4881-8ad6-873173396fca
 keywords:
-- DirectWrite, formattazione del testo
-- DirectWrite, layout
-- Interfaccia DirectWrite,IDWriteTextFormat
-- Interfaccia DirectWrite,IDWriteTextLayout
+- DirectWrite,formattazione del testo
+- DirectWrite,layout
+- DirectWrite,INTERFACCIA IDWriteTextFormat
+- DirectWrite,INTERFACCIA IDWriteTextLayout
 - Interfaccia IDWriteTextFormat
 - Interfaccia IDWriteTextLayout
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e5790742a3d3caf7f962a6b5e2b3111c626f28
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: e67b4c59a7e8ba47a2811021b54ebe1e5b8867b30d07e143163c3d03ac3cdf22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329351"
 ---
 # <a name="text-formatting-and-layout"></a>Formattazione e layout del testo
 
-[DirectWrite](direct-write-portal.md) offre due interfacce per la formattazione del testo: [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) **IDWriteTextFormat** descrive solo il formato del testo e viene usato nei casi in cui un'intera stringa deve avere le stesse dimensioni del carattere, lo stesso stile, lo stesso spessore e così via. D'altra parte, **IDWriteTextLayout** incapsula sia una stringa di testo che la formattazione per gli intervalli specificati della stringa. Questo documento descrive ogni interfaccia e i relativi usi. Per altre informazioni sulla creazione e sui metodi di queste interfacce, vedere le pagine di riferimento [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+[DirectWrite](direct-write-portal.md) fornisce due interfacce per la formattazione del testo: [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout). **IDWriteTextFormat** descrive solo il formato per il testo e viene usato nei casi in cui un'intera stringa deve avere le stesse dimensioni, lo stesso stile, lo stesso spessore e così via. D'altra parte, **IDWriteTextLayout** incapsula sia una stringa di testo che la formattazione per gli intervalli specificati della stringa. Questo documento descrive ogni interfaccia e i relativi utilizzi. Per altre informazioni sulla creazione e sui metodi di queste interfacce, vedere le pagine di riferimento [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) e [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 Questo documento contiene le parti seguenti:
 
@@ -41,9 +41,9 @@ Per creare un [**oggetto IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwri
 
 ### <a name="modifying-an-idwritetextformat"></a>Modifica di un oggetto IDWriteTextFormat
 
-Dopo aver [**creato un'interfaccia IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) alcuni valori non possono essere modificati: la famiglia di caratteri, la raccolta, lo spessore e le dimensioni, nonché il nome delle impostazioni locali. Per modificare questi valori, è necessario creare un nuovo **oggetto IDWriteTextFormat.**
+Dopo aver [**creato un'interfaccia IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) alcuni valori non possono essere modificati: la famiglia di caratteri, la raccolta, il peso e le dimensioni, nonché il nome delle impostazioni locali. Per modificare questi valori, è necessario creare un nuovo **oggetto IDWriteTextFormat.**
 
-[**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) consente di modificare le proprietà precedenti senza ricreare alcun elemento. [**IDWriteTextFormat consente**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) di apportare modifiche al formato che si applicano all'intero testo, ad esempio l'allineamento del testo. Se si vuole applicare la formattazione a intervalli di caratteri specifici, è consigliabile usare **IDWriteTextLayout**.
+[**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) consente di modificare le proprietà precedenti senza ricreare alcun elemento. [**IDWriteTextFormat consente**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) di apportare modifiche al formato che si applicano all'intero testo, ad esempio l'allineamento del testo. Se si vuole applicare la formattazione a intervalli di caratteri specifici, è consigliabile usare **idWriteTextLayout**.
 
 [**IDWriteTextFormat fornisce**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) metodi per impostare l'allineamento del testo, la direzione del flusso, la tabulazione incrementale, l'interlinea, l'allineamento del paragrafo, il trimming e il ritorno a capo automatico. Queste proprietà possono essere modificate in qualsiasi momento dopo la creazione **dell'oggetto IDWriteTextFormat.**
 
@@ -77,7 +77,7 @@ if (SUCCEEDED(hr))
 
 Il testo in un [**oggetto IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) non può essere modificato dopo la creazione dell'oggetto. Per modificare il testo, è necessario eliminare l'oggetto esistente e creare un nuovo **oggetto IDWriteTextLayout.**
 
-È possibile usare [**idWriteTextLayout per**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) formattare intervalli di testo specificati. **IDWriteTextLayout fornisce** anche metodi per modificare lo stile e lo spessore del carattere e aggiungere funzionalità del tipo di carattere OpenType e hit testing. Per altre informazioni e un elenco completo dei metodi, vedere la pagina di riferimento [**di IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+È possibile usare [**idWriteTextLayout per**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) formattare intervalli di testo specificati. **IDWriteTextLayout fornisce anche** metodi per modificare lo stile e lo spessore del carattere e aggiungere funzionalità del tipo di carattere OpenType e hit testing. Per altre informazioni e un elenco completo dei metodi, vedere la pagina di riferimento [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 ### <a name="formatting-a-range-of-text"></a>Formattazione di un intervallo di testo
 

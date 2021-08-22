@@ -1,39 +1,39 @@
 ---
-description: Stride della superficie predefinita, per un tipo di supporto video non compresso. Stride indica il numero di byte necessari per passare da una riga di pixel a quella successiva.
+description: Stride della superficie predefinito per un tipo di supporto video non compresso. Stride è il numero di byte necessari per passare da una riga di pixel a quella successiva.
 ms.assetid: 71fda231-3497-49db-b82e-2fd79f6ade66
-title: Attributo MF_MT_DEFAULT_STRIDE (Mfapi. h)
+title: MF_MT_DEFAULT_STRIDE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7b2b9633e14c8d414355ca41be29a9c6c2f8886
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e130918f62d6ff986ced7dd6449dcc2d381a00fc0d7c0342eeb4afcc03833bef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035239"
 ---
-# <a name="mf_mt_default_stride-attribute"></a>\_ \_ Attributo stride predefinito MF mt \_
+# <a name="mf_mt_default_stride-attribute"></a>Attributo MF \_ MT \_ DEFAULT \_ STRIDE
 
-Stride della superficie predefinita, per un tipo di supporto video non compresso. Stride indica il numero di byte necessari per passare da una riga di pixel a quella successiva.
+Stride della superficie predefinito per un tipo di supporto video non compresso. Stride è il numero di byte necessari per passare da una riga di pixel a quella successiva.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT32**
 
-Considera come un valore **Int32** .
+Considerare come **valore INT32.**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dell'attributo viene archiviato come **UInt32**, ma deve essere eseguito il cast a un valore intero con segno a 32 bit. Stride può essere negativo.
+Il valore dell'attributo viene archiviato come **UINT32,** ma è necessario eseguire il cast a un valore intero con segno a 32 bit. Stride può essere negativo.
 
-Stride è un valore positivo per le immagini dall'alto verso il basso e negativo per le immagini dal basso verso l'alto.
+Stride è positivo per le immagini dall'alto verso il basso e negativo per le immagini dal basso verso l'alto.
 
-Questo attributo fornisce lo stride per una rappresentazione *contigua* dell'immagine in memoria; ovvero una rappresentazione senza ulteriori byte di riempimento dopo ogni riga. Se un buffer multimediale supporta l'interfaccia [**IMF2DBuffer**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer) , usare il metodo [**IMF2DBuffer:: Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d) per ottenere lo stride effettivo della superficie, che può includere byte di riempimento aggiuntivi.
+Questo attributo fornisce lo stride per una *rappresentazione contigua* dell'immagine in memoria. una rappresentazione senza byte di riempimento aggiuntivi dopo ogni riga. Se un buffer multimediale supporta [**l'interfaccia IMF2DBuffer,**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer) usare il metodo [**IMF2DBuffer::Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d) per ottenere lo stride effettivo della superficie, che potrebbe includere byte di riempimento aggiuntivi.
 
-Per altre informazioni sullo stride della superficie, vedere [immagine stride](image-stride.md).
+Per altre informazioni sullo stride della superficie, vedere [Stride dell'immagine.](image-stride.md)
 
-Per un esempio di come calcolare lo stride predefinito, vedere [buffer video non compressi](uncompressed-video-buffers.md).
+Per un esempio di come calcolare lo stride predefinito, vedere [Buffer video non compressi.](uncompressed-video-buffers.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,13 +51,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
@@ -66,7 +66,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 [Attributi del tipo di supporto](media-type-attributes.md)
 </dt> <dt>
 
-[Stride immagine](image-stride.md)
+[Stride dell'immagine](image-stride.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Specifica il profilo di codifica transcodifica comune.
 ms.assetid: 25315E05-2988-4E1A-8128-8420C8DBBB7C
-title: Proprietà CODECAPI_AVEncCommonTranscodeEncodingProfile (codecapit. h)
+title: CODECAPI_AVEncCommonTranscodeEncodingProfile proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a18ec4835b2b535e028caf51c9102e0f2f1bb8cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5a538451d72b28084feab4876858bf2c03babc5d1d98b89121b6085fc372391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346991"
 ---
-# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a>Proprietà AVEncCommonTranscodeEncodingProfile di codecapi \_
+# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a>PROPRIETÀ CODECAPI \_ AVEncCommonTranscodeEncodingProfile
 
 Specifica il profilo di codifica transcodifica comune.
 
@@ -21,7 +21,7 @@ Specifica il profilo di codifica transcodifica comune.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCommonTranscodeEncodingProfile**
+**CODECAPI \_ AVEncCommonTranscodeEncodingProfile**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Specifica il profilo di codifica transcodifica comune.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Specifica il profilo di codifica transcodifica comune.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

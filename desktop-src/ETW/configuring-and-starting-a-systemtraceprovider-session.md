@@ -4,22 +4,22 @@ ms.assetid: 6808EC45-C8C3-45D7-9E4C-337F6A4CF9C8
 title: Configurazione e avvio di una sessione SystemTraceProvider
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 66e9d672a7c8e6358c2a92e7661e0d4e2a5878ab
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 0e5d46ceb800479c56ef02d0bb03c3426f73d080e79356f2d7462e27db3a259a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070251"
 ---
 # <a name="configuring-and-starting-a-systemtraceprovider-session"></a>Configurazione e avvio di una sessione SystemTraceProvider
 
 SystemTraceProvider è un provider di kernel con un set predefinito di eventi del kernel supportati in Windows 7, Windows Server 2008 R2 e versioni successive. In Windows 7 e Windows Server 2008 R2, SystemTraceProvider può essere usato solo per la sessione del logger del kernel NT.
 
-In Windows 8, Windows Server 2012 e versioni successive, è possibile eseguire il multiplexing di SystemTraceProvider per un massimo di 8 sessioni di logger. I primi due slot per le sessioni del logger sono riservati al logger del kernel NT e al logger di contesto del kernel circolare .
+In Windows 8, Windows Server 2012 e versioni successive, è possibile eseguire il multiplexing di SystemTraceProvider per un massimo di 8 sessioni di logger. I primi due slot per le sessioni del logger sono riservati per il logger del kernel NT e il logger di contesto del kernel circolare.
 
 Per altre informazioni sull'uso della sessione del logger del kernel NT come provider di traccia, vedere [Configuring and Starting the NT Kernel Logger Session](configuring-and-starting-the-nt-kernel-logger-session.md).
 
-In Windows 10 SDK 20348 e versioni successive, SystemTraceProvider può essere configurato tramite provider di sistema separati, che possono essere controllati con [EnableTraceEx2](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) come i provider di eventi Event Tracing for Windows standard. Per un elenco completo dei provider di sistema, delle parole chiave e dei gruppi legacy corrispondenti, vedere [Provider di sistema](system-providers.md)
+In Windows 10 SDK build 20348 e versioni successive, SystemTraceProvider può essere configurato tramite provider di sistema separati, che possono essere controllati con [EnableTraceEx2](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) come event tracing standard per i provider di eventi Windows. Per un elenco completo dei provider di sistema, delle parole chiave e dei gruppi legacy corrispondenti, vedere [Provider di sistema](system-providers.md)
 
 ## <a name="enable-a-systemtraceprovider-session"></a>Abilitare una sessione SystemTraceProvider
 

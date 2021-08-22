@@ -1,7 +1,7 @@
 ---
-description: Inserisce il servizio nello stato avviato.
+description: Posiziona il servizio nello stato avviato.
 ms.assetid: 8977b806-150c-4ddc-a471-3fdafdcb4a55
-title: Metodo StartService della classe CIM_Service (gestione di Hyper-V)
+title: Metodo StartService della classe CIM_Service (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 73b89f7fc789639fb45acbde61da4c7962650177
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0e30adbece838cb913f215abedc4aa86a2762d00f046a54bf2717eaeecdb56e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561811"
 ---
-# <a name="startservice-method-of-the-cim_service-class-hyper-v-management"></a>Metodo StartService della classe CIM_Service (gestione di Hyper-V)
+# <a name="startservice-method-of-the-cim_service-class-hyper-v-management"></a>Metodo StartService della classe CIM_Service (gestione Hyper-V)
 
-Inserisce il servizio nello stato avviato.
+Posiziona il servizio nello stato avviato.
 
 > [!Note]
 >
-> La semantica di questo metodo si sovrappone al metodo **RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md). Questo metodo viene mantenuto perché è stato ampiamente implementato e la semplice semantica di "avvio" è comoda da usare.
+> La semantica di questo metodo si sovrappone al **metodo RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement.**](cim-enabledlogicalelement.md) Questo metodo viene mantenuto perché è stato ampiamente implementato e la semantica di avvio semplice è comoda da usare.
 
  
 
@@ -45,7 +45,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,9 +54,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -65,7 +65,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_Servizio CIM**](cim-service.md)
+[**Servizio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

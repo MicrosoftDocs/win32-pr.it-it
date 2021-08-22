@@ -1,19 +1,19 @@
 ---
 title: PageBlackGenerationProcessingUnderColorAdditionStart
-description: Esaminare il parametro PageBlackGenerationProcessingUnderColorAdditionStart. Questo argomento non è corrente. Per informazioni aggiornate, vedere Specifica dello schema di stampa.
+description: Esaminare il parametro PageBlackGenerationProcessingUnderColorAdditionStart. Questo argomento non è corrente. Per informazioni aggiornate, vedere Print Schema Specification.
 ms.assetid: 6c2a7bb5-436d-40ed-a855-242a6a04bc16
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bdbd970f30a7d573b7c803ea447e4ac3e94ca2
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: dd92834e85f4d95ea81eba7080632330e6951d6a99af29894d7f3adfcf3c18d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034099"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionstart"></a>PageBlackGenerationProcessingUnderColorAdditionStart
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive il livello di ombreggiatura al di sotto del quale verrà applicato l'uca.
 
@@ -77,8 +77,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | MaxValue<br/>     | numero intero<br/> | 100<br/>             |
 | Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Multipli<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | percent<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | percent<br/>         |
 
 
 

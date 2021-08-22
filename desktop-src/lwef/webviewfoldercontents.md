@@ -1,10 +1,10 @@
 ---
 title: Oggetto WebViewFolderContents (Shldisp.h)
-description: Implementato dalla Shell per l'utilizzo all'interno di una visualizzazione WebView.
+description: Implementato dalla shell per l'uso all'interno di un controllo WebView.
 ms.assetid: c9c46e21-2721-43c9-a6f4-38fafbda3798
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'oggetto WebViewFolderContents
-- Funzionalità dell'ambiente Windows legacy dell'oggetto WebViewFolderContents, descritte
+- Oggetto WebViewFolderContents Funzionalità dell'Windows legacy
+- Oggetto WebViewFolderContents Legacy Windows Environment Features , descritto
 topic_type:
 - apiref
 api_name:
@@ -15,22 +15,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9ea2020e2d9baaffbc026692faafc702db14781
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 179fe0146f49d0e5172410ca119953a7b3f245af20c0e4c2d83ff78fa23b93e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035959"
 ---
 # <a name="webviewfoldercontents-object"></a>Oggetto WebViewFolderContents
 
-Implementato dalla Shell per l'utilizzo all'interno di una *visualizzazione WebView*. **WebViewFolderContents** si inizializza automaticamente nella cartella corrente di WebView. Viene creata una visualizzazione di cartelle della shell che Visualizza il contenuto della cartella in uno dei cinque formati seguenti: icona piccola, icona grande, elenco, dettagli o anteprima. Non è valido all'esterno di una WebView.
+Implementato dalla shell per l'uso all'interno di *un controllo WebView.* **WebViewFolderContents** si inizializza automaticamente sulla cartella corrente di WebView. Crea una visualizzazione della cartella Shell che visualizza il contenuto della cartella in uno dei cinque formati seguenti: Icona piccola, Icona grande, Elenco, Dettagli o Anteprima. Non è valido all'esterno di un controllo WebView.
 
-I metodi e le proprietà esposte da **WebViewFolderContents** sono identici a quelli dell'oggetto [**ShellFolderView**](/windows/desktop/shell/shellfolderview) .
+I metodi e le proprietà esposti **da WebViewFolderContents** sono identici a quelli dell'oggetto [**ShellFolderView.**](/windows/desktop/shell/shellfolderview)
 
 ## <a name="members"></a>Membri
 
-L'oggetto **WebViewFolderContents** dispone di questi tipi di membri:
+**L'oggetto WebViewFolderContents** ha questi tipi di membri:
 
 -   [Eventi](#events)
 -   [Metodi](#methods)
@@ -38,13 +38,13 @@ L'oggetto **WebViewFolderContents** dispone di questi tipi di membri:
 
 ### <a name="events"></a>Eventi
 
-L'oggetto **WebViewFolderContents** presenta questi eventi.
+**L'oggetto WebViewFolderContents** include questi eventi.
 
 
 
 | Event                                                              | Descrizione                                                                              |
 |:-------------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [**SelectionChanged**](webviewfoldercontents-selectionchanged.md) | Si verifica quando viene modificato lo stato di selezione di un elemento o di elementi nella visualizzazione.<br/> |
+| [**SelectionChanged**](webviewfoldercontents-selectionchanged.md) | Si verifica quando lo stato di selezione di uno o più elementi nella visualizzazione viene modificato.<br/> |
 
 
 
@@ -52,14 +52,14 @@ L'oggetto **WebViewFolderContents** presenta questi eventi.
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **WebViewFolderContents** dispone di questi metodi.
+**L'oggetto WebViewFolderContents** dispone di questi metodi.
 
 
 
 | Metodo                                                       | Descrizione                                                                                                          |
 |:-------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
 | [**PopupItemMenu**](webviewfoldercontents-popupitemmenu.md) | Crea un menu di scelta rapida per l'elemento specificato e restituisce la stringa di comando selezionata.<br/>                   |
-| [**SelectedItems**](webviewfoldercontents-selecteditems.md) | Ottiene un oggetto [**FolderItems**](../shell/folderitems.md) che rappresenta tutti gli elementi selezionati nella visualizzazione.<br/> |
+| [**SelectedItems**](webviewfoldercontents-selecteditems.md) | Ottiene un [**oggetto FolderItems**](../shell/folderitems.md) che rappresenta tutti gli elementi selezionati nella visualizzazione.<br/> |
 | [**SelectItem**](webviewfoldercontents-selectitem.md)       | Imposta lo stato di selezione di un elemento nella visualizzazione.<br/>                                                          |
 
 
@@ -68,18 +68,18 @@ L'oggetto **WebViewFolderContents** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **WebViewFolderContents** dispone di queste proprietà.
+**L'oggetto WebViewFolderContents** ha queste proprietà.
 
 
 
 | Proprietà                                                            | Tipo di accesso          | Descrizione                                                                                                                              |
 |:--------------------------------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
 | [**Applicazione**](webviewfoldercontents-application.md)<br/> | Sola lettura<br/> | Non implementato.<br/>                                                                                                              |
-| [**FocusedItem**](webviewfoldercontents-focuseditem.md)<br/> | Sola lettura<br/> | Ottiene un oggetto [**FolderItem**](../shell/folderitem.md) che rappresenta l'elemento con lo stato attivo per l'input.<br/>                           |
-| [**Cartella**](webviewfoldercontents-folder.md)<br/>           | Sola lettura<br/> | Ottiene un oggetto [**cartella**](../shell/folder.md) che rappresenta la visualizzazione.<br/>                                                            |
+| [**FocusedItem**](webviewfoldercontents-focuseditem.md)<br/> | Sola lettura<br/> | Ottiene un [**oggetto FolderItem**](../shell/folderitem.md) che rappresenta l'elemento con lo stato attivo per l'input.<br/>                           |
+| [**Cartella**](webviewfoldercontents-folder.md)<br/>           | Sola lettura<br/> | Ottiene un [**oggetto Folder**](../shell/folder.md) che rappresenta la visualizzazione.<br/>                                                            |
 | [**Padre**](webviewfoldercontents-parent.md)<br/>           | Sola lettura<br/> | Non implementato.<br/>                                                                                                              |
 | [**Script**](webviewfoldercontents-script.md)<br/>           | Sola lettura<br/> | Ottiene l'oggetto di scripting per la visualizzazione.<br/>                                                                                       |
-| [**ViewOptions**](webviewfoldercontents-viewoptions.md)<br/> | Sola lettura<br/> | Ottiene un set di flag [**ShellFolderViewOptions**](/windows/desktop/api/shldisp/ne-shldisp-shellfolderviewoptions) che indicano le opzioni correnti della visualizzazione.<br/> |
+| [**ViewOptions**](webviewfoldercontents-viewoptions.md)<br/> | Sola lettura<br/> | Ottiene un set di [**flag ShellFolderViewOptions**](/windows/desktop/api/shldisp/ne-shldisp-shellfolderviewoptions) che indicano le opzioni correnti della visualizzazione.<br/> |
 
 
 
@@ -91,11 +91,11 @@ L'oggetto **WebViewFolderContents** dispone di queste proprietà.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

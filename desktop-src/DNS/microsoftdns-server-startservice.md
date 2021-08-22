@@ -4,8 +4,8 @@ description: Il metodo StartService avvia il server DNS.
 ms.assetid: f6343a34-9d1b-4f82-897e-289650af6be9
 keywords:
 - DNS del metodo StartService
-- DNS del metodo StartService, classe MicrosoftDNS_Server
-- Classe MicrosoftDNS_Server DNS, metodo StartService
+- Metodo StartService DNS , MicrosoftDNS_Server classe
+- MicrosoftDNS_Server classe DNS , metodo StartService
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e103b3d2648bf2c061eb047090cfdfeb907518
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5e74de96ad24ff16ea2c2effaef78003011f5d6bd5d421336084ac5c7701f79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432641"
 ---
-# <a name="startservice-method-of-the-microsoftdns_server-class"></a>Metodo StartService della \_ classe server MicrosoftDNS
+# <a name="startservice-method-of-the-microsoftdns_server-class"></a>Metodo StartService della classe Server \_ MicrosoftDNS
 
-Il metodo **StartService** avvia il server DNS.
+Il **metodo StartService** avvia il server DNS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-ERRORE \_ con esito positivo indica che il servizio è stato avviato correttamente. Qualsiasi altro valore è un codice di errore.
+ERROR \_ SUCCESS indica che il servizio è stato avviato correttamente. Qualsiasi altro valore è un codice di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ ERRORE \_ con esito positivo indica che il servizio è stato avviato correttamen
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,16 +61,16 @@ ERRORE \_ con esito positivo indica che il servizio è stato avviato correttamen
 
 <dl> <dt>
 
-[**\_Server MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Metodo StopService della \_ classe server MicrosoftDNS**](microsoftdns-server-stopservice.md)
+[**Metodo StopService della classe server \_ MicrosoftDNS**](microsoftdns-server-stopservice.md)
 </dt> <dt>
 
-[**Metodo StartScavenging della \_ classe server MicrosoftDNS**](microsoftdns-server-startscavenging.md)
+[**Metodo StartScavenging della classe server \_ MicrosoftDNS**](microsoftdns-server-startscavenging.md)
 </dt> <dt>
 
-[**Metodo getdistinguishname della \_ classe server MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Metodo GetDistinguishedName della classe server \_ MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

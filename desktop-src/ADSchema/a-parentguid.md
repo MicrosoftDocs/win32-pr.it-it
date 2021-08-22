@@ -1,10 +1,10 @@
 ---
-title: Attributo padre-GUID
-description: Si tratta di un attributo costruito, inventato per supportare il controllo DirSync. Questo attributo include il objectGuid dell'elemento padre di un oggetto durante la replica della creazione, della ridenominazione o dello spostamento di un oggetto.
+title: Attributo PARENT-GUID
+description: Si tratta di un attributo costruito, che ha lo scopo di supportare il controllo DirSync. Questo attributo contiene l'objectGuid dell'elemento padre di un oggetto quando si replica la creazione, la ridenominazione o lo spostamento di un oggetto.
 ms.assetid: caf2491b-c0bf-4ea1-80ec-d44cf9307551
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo padre-GUID
+- Schema AD dell'attributo PARENT-GUID
 - Schema AD dell'attributo parentGUID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38b01faf958f4add9c7788d630321d7c225f5026
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 39f42ba5aedc73f04d8967b84bcfbff39c54ce0dbcdf769e48a747ffa0d3e8c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325431"
 ---
-# <a name="parent-guid-attribute"></a>Attributo padre-GUID
+# <a name="parent-guid-attribute"></a>Attributo PARENT-GUID
 
-Si tratta di un attributo costruito, inventato per supportare il controllo DirSync. Questo attributo include il objectGuid dell'elemento padre di un oggetto durante la replica della creazione, della ridenominazione o dello spostamento di un oggetto.
+Si tratta di un attributo costruito, che ha lo scopo di supportare il controllo DirSync. Questo attributo contiene l'objectGuid dell'elemento padre di un oggetto quando si replica la creazione, la ridenominazione o lo spostamento di un oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Padre-GUID                                           |
-| LDAP-Display-Name | parentGUID                                            |
+| CN                | GUID padre                                           |
+| Ldap-Display-Name | parentGUID                                            |
 | Dimensione              | 16 byte                                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | Durante la replica                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1224                               |
-| System-ID-GUID    | 2df90d74-009f-11d2-aa4c-00c04fd7d83a                  |
+| System-Id-Guid    | 2df90d74-009f-11d2-aa4c-00c04fd7d83a                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -80,19 +80,19 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -122,15 +122,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -143,15 +143,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -164,15 +164,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -185,15 +185,15 @@ Si tratta di un attributo costruito, inventato per supportare il controllo DirSy
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x08000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

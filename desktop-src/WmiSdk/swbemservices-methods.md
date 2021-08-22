@@ -2,19 +2,19 @@
 description: L'oggetto SWbemServices espone i metodi seguenti.
 ms.assetid: B2F99840-702B-4C15-839E-5B038EACA1DC
 ms.tgt_platform: multiple
-title: Metodi SWbemServices
+title: Metodi di SWbemServices
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b069f6b4725e4cf6a17a663a5cf532c9677fc14b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a191c66131db0dd3bd13988d7c7ee53cc20cb9b0b44190add1cee46134ada37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119411491"
 ---
-# <a name="swbemservices-methods"></a>Metodi SWbemServices
+# <a name="swbemservices-methods"></a>Metodi di SWbemServices
 
-L'oggetto [**SWbemServices**](swbemservices.md) espone i metodi seguenti.
+[**L'oggetto SWbemServices**](swbemservices.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio STM_SETICON (winuser. h)
-description: Un'applicazione invia il \_ messaggio dell'icona STM per associare un'icona a un controllo icona.
+title: STM_SETICON messaggio (Winuser.h)
+description: Un'applicazione invia il messaggio \_ STM SETICON per associare un'icona a un controllo icona.
 ms.assetid: 105b0667-8e23-47ed-9fb1-0792a22d7100
 keywords:
-- Controlli di Windows Message STM_SETICON
+- STM_SETICON dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb9c7e2a007c1f866a1c73b3a1c1a55b157add47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55ff1cbaa6a1083751b3619392fbb0d3b60695e829907c2dfe27fdb41170e167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119281421"
 ---
-# <a name="stm_seticon-message"></a>\_Messaggio di icona STM
+# <a name="stm_seticon-message"></a>Messaggio STM \_ SETICON
 
-Un'applicazione invia il messaggio dell' **\_ icona STM** per associare un'icona a un controllo icona.
+Un'applicazione invia il **messaggio STM \_ SETICON** per associare un'icona a un controllo icona.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Un'applicazione invia il messaggio dell' **\_ icona STM** per associare un'icona
 *wParam* 
 </dt> <dd>
 
-Handle per l'icona da associare al controllo icona.
+Handle all'icona da associare al controllo icona.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Il valore restituito è un handle per l'icona associata in precedenza al control
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Il valore restituito è un handle per l'icona associata in precedenza al control
 **Riferimento**
 </dt> <dt>
 
-[**\_icona GetIcon STM**](stm-geticon.md)
+[**STM \_ GETICON**](stm-geticon.md)
 </dt> <dt>
 
 **Altre risorse**

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETITEMHEIGHT (winuser. h)
-description: Imposta l'altezza, in pixel, degli elementi in una casella di riepilogo. Se la casella di riepilogo ha lo \_ stile OwnerDrawVariable lbs, questo messaggio imposta l'altezza dell'elemento specificato dal parametro wParam. In caso contrario, in questo messaggio viene impostata l'altezza di tutti gli elementi nella casella di riepilogo.
+title: LB_SETITEMHEIGHT messaggio (Winuser.h)
+description: Imposta l'altezza, in pixel, degli elementi in una casella di riepilogo. Se la casella di riepilogo ha lo stile LBS OWNERDRAWVARIABLE, questo messaggio imposta l'altezza \_ dell'elemento specificato dal parametro wParam. In caso contrario, questo messaggio imposta l'altezza di tutti gli elementi nella casella di riepilogo.
 ms.assetid: 3ac8e935-6de8-465f-a525-1f493b06ee7c
 keywords:
-- Controlli di Windows Message LB_SETITEMHEIGHT
+- LB_SETITEMHEIGHT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9985c5131a9eb1c8f0c45b6ab399b9e270f962cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bcd661c9fb32d2cbe0763f8c138d133f8a32b46d17201b33033b832aeb8cb49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433871"
 ---
-# <a name="lb_setitemheight-message"></a>\_Messaggio SETITEMHEIGHT lb
+# <a name="lb_setitemheight-message"></a>Messaggio \_ LB SETITEMHEIGHT
 
-Imposta l'altezza, in pixel, degli elementi in una casella di riepilogo. Se la casella di riepilogo ha lo stile [**\_ OwnerDrawVariable lbs**](list-box-styles.md) , questo messaggio imposta l'altezza dell'elemento specificato dal parametro *wParam* . In caso contrario, in questo messaggio viene impostata l'altezza di tutti gli elementi nella casella di riepilogo.
+Imposta l'altezza, in pixel, degli elementi in una casella di riepilogo. Se la casella di riepilogo ha lo stile [**LBS \_ OWNERDRAWVARIABLE,**](list-box-styles.md) questo messaggio imposta l'altezza dell'elemento specificato dal *parametro wParam.* In caso contrario, questo messaggio imposta l'altezza di tutti gli elementi nella casella di riepilogo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,22 +32,22 @@ Imposta l'altezza, in pixel, degli elementi in una casella di riepilogo. Se la c
 *wParam* 
 </dt> <dd>
 
-Specifica l'indice in base zero dell'elemento nella casella di riepilogo. Usare questo parametro solo se la casella di riepilogo ha lo stile [**\_ OwnerDrawVariable lbs**](list-box-styles.md) . in caso contrario, impostarla su zero.
+Specifica l'indice in base zero dell'elemento nella casella di riepilogo. Utilizzare questo parametro solo se la casella di riepilogo ha lo stile [**LBS \_ OWNERDRAWVARIABLE;**](list-box-styles.md) in caso contrario, impostarlo su zero.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Sebbene il numero di elementi sia limitato, le dimensioni totali in byte degli elementi in una casella di riepilogo sono limitate solo dalla memoria disponibile.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Anche se il numero di elementi è limitato, la dimensione totale in byte degli elementi in una casella di riepilogo è limitata solo dalla memoria disponibile.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Specifica l'altezza, in pixel, dell'elemento. L'altezza massima è 255 pixel.
+Specifica l'altezza, in pixel, dell'elemento. L'altezza massima è di 255 pixel.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'indice o l'altezza non è valido, il valore restituito è LB \_ Err.
+Se l'indice o l'altezza non è valido, il valore restituito è LB \_ ERR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se l'indice o l'altezza non è valido, il valore restituito è LB \_ Err.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Se l'indice o l'altezza non è valido, il valore restituito è LB \_ Err.
 
 <dl> <dt>
 
-[**\_GETITEMHEIGHT lb**](lb-getitemheight.md)
+[**LB \_ GETITEMHEIGHT**](lb-getitemheight.md)
 </dt> </dl>
 
  

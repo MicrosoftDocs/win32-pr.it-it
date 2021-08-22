@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. backgroundImage
+title: PLAYLIST.backgroundImage
 description: L'attributo backgroundImage specifica o recupera l'immagine di sfondo.
 ms.assetid: d4efa774-d42e-4415-a487-1e858d984075
 keywords:
-- PLAYLIST. backgroundImage Media Player Windows
+- PLAYLIST.backgroundImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eca04f47f6e157d5ede529c47fb6ae65b4333cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b56ddcb42f118a5a672b6678079825b6cb3d6aba5fbdc54953fb566e4222f583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054249"
 ---
-# <a name="playlistbackgroundimage"></a>PLAYLIST. backgroundImage
+# <a name="playlistbackgroundimage"></a>PLAYLIST.backgroundImage
 
-L'attributo **BackgroundImage** specifica o recupera l'immagine di sfondo.
+**L'attributo backgroundImage** specifica o recupera l'immagine di sfondo.
 
 ``` syntax
         elementID.backgroundImage
@@ -29,13 +29,13 @@ L'attributo **BackgroundImage** specifica o recupera l'immagine di sfondo.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente il nome di un file di immagine. e non prevede alcun valore predefinito.
+Questo attributo è una stringa di **lettura/scrittura** contenente il nome di un file di immagine. e non prevede alcun valore predefinito.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'altezza e la larghezza dell'immagine sono inferiori all'altezza e alla larghezza dell'elemento della **playlist** , viene affiancata l'immagine. I formati supportati sono BMP, JPG, GIF e PNG.
+Se l'altezza e la larghezza dell'immagine sono inferiori all'altezza e alla larghezza dell'elemento **PLAYLIST,** l'immagine viene affiancata. I formati supportati sono BMP, JPG, GIF e PNG.
 
-Se si specifica il valore "gradiente" per l'immagine di sfondo, lo sfondo della playlist viene visualizzato come sfumatura di colore. Ciò significa che il colore di sfondo passa gradualmente tra i valori [playlist. BackgroundColor](playlist-backgroundcolor.md) (nella parte superiore dello sfondo) e [playlist. statusColor](playlist-statuscolor.md) .
+Se si specifica il valore "gradient" per l'immagine di sfondo, lo sfondo della playlist viene visualizzato come sfumatura di colore. Ciò significa che il colore di sfondo passa gradualmente tra i valori [PLAYLIST.backgroundColor](playlist-backgroundcolor.md) (nella parte superiore dello sfondo) e [PLAYLIST.statusColor.](playlist-statuscolor.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Se si specifica il valore "gradiente" per l'immagine di sfondo, lo sfondo della 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva, Windows Media Player 10 per la funzionalità gradiente<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva, Windows Media Player 10 per la funzionalità sfumatura<br/> |
 
 
 
@@ -51,7 +51,7 @@ Se si specifica il valore "gradiente" per l'immagine di sfondo, lo sfondo della 
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

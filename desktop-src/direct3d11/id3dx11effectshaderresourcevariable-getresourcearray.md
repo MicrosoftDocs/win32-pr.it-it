@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectShaderResourceVariable GetResourceArray (D3dx11effect. h)
-description: Ottenere una matrice di risorse dello shader.
+title: Metodo GetResourceArray ID3DX11EffectShaderResourceVariable (D3dx11effect.h)
+description: Ottiene una matrice di risorse shader.
 ms.assetid: 7540183d-dabb-46c2-8df1-6d4734b77f25
 keywords:
 - Metodo GetResourceArray Direct3D 11
 - Metodo GetResourceArray Direct3D 11, interfaccia ID3DX11EffectShaderResourceVariable
-- Interfaccia ID3DX11EffectShaderResourceVariable Direct3D 11, metodo GetResourceArray
+- ID3DX11EffectShaderResourceVariable interfaccia Direct3D 11, metodo GetResourceArray
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0091d81b7e157aecb8315e1def380800c8155c60
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0caa1ed7fabd6f5d570ceb646164c86b91d4687456ed1711f1cf5d81a42c733c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460841"
 ---
-# <a name="id3dx11effectshaderresourcevariablegetresourcearray-method"></a>Metodo ID3DX11EffectShaderResourceVariable:: GetResourceArray
+# <a name="id3dx11effectshaderresourcevariablegetresourcearray-method"></a>Metodo ID3DX11EffectShaderResourceVariable::GetResourceArray
 
-Ottenere una matrice di risorse dello shader.
+Ottiene una matrice di risorse shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,23 +50,23 @@ HRESULT GetResourceArray(
 
 Tipo: **[ **ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview)\*\***
 
-Indirizzo di una matrice di interfacce shader-Resource-View. Vedere [**ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview).
+Indirizzo di una matrice di interfacce shader-resource-view. Vedere [**ID3D11ShaderResourceView.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview)
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice della matrice in base zero per ottenere la prima interfaccia.
+Indice di matrice in base zero per ottenere la prima interfaccia.
 
 </dd> <dt>
 
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
@@ -76,12 +76,12 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
