@@ -1,10 +1,10 @@
 ---
-title: Attributo COM-ClassID
-description: Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'applicazione.
+title: COM-ClassID attributo
+description: Questo attributo archivia l'elenco di ClassID implementati nel pacchetto dell'applicazione.
 ms.assetid: ec05499d-cd55-459b-bdee-6806f195c96e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD COM-ClassID attribute
+- COM-ClassID schema AD dell'attributo
 - Schema AD dell'attributo cOMClassID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 606a3d1dd54496217c69f9fac412d1cb4460ddc8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a38532d970ef58bd23b6a7dcd760a08fec8e071e4dff24d4bffbb646c6d68254
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509691"
 ---
-# <a name="com-classid-attribute"></a>Attributo COM-ClassID
+# <a name="com-classid-attribute"></a>COM-ClassID attributo
 
-Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'applicazione.
+Questo attributo archivia l'elenco di ClassID implementati nel pacchetto dell'applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | COM-ClassID                                 |
-| LDAP-Display-Name | cOMClassID                                  |
+| Ldap-Display-Name | cOMClassID                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.19                       |
-| System-ID-GUID    | bf96793b-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf96793b-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| A valore singolo       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| A valore singolo       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| A valore singolo       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia l'elenco di ClassID implementate nel pacchetto dell'ap
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Vero                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 

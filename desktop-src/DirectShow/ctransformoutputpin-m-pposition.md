@@ -1,5 +1,5 @@
 ---
-description: 'CTransformOutputPin::m_pPosition: oggetto helper per passare i comandi di ricerca a monte.'
+description: 'Membro CTransformOutputPin::m_pPosition : oggetto helper per passare i comandi di ricerca a monte.'
 ms.assetid: 2ca9bae7-a133-4e09-8aa7-1c4601ec5db0
 title: Membro CTransformOutputPin::m_pPosition (Transfrm.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b9c5a1b5d5ced7a9f3985ceebdd2bdcb8e491d2e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bfa565d38fa982ea457da13ee9cf08a1d0f2fe8d5ba52ef3c5b86379fc02b509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538161"
 ---
 # <a name="ctransformoutputpinm_pposition-member"></a>Membro CTransformOutputPin::m \_ pPosition
 
-Oggetto helper per passare i comandi di ricerca a monte.
+Oggetto helper per passare i comandi seek upstream.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ IUnknown *m_pPosition;
 
 ## <a name="remarks"></a>Osservazioni
 
-Quando il pin viene sottoposto a query per la prima volta per [**l'interfaccia IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) o [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) crea e aggrega un oggetto helper [**CPosPassThru.**](cpospassthru.md)
+Quando viene eseguita la prima query sul segnaposto per [**l'interfaccia IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) o [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) viene creato e aggregato un oggetto helper [**CPosPassThru.**](cpospassthru.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Quando il pin viene sottoposto a query per la prima volta per [**l'interfaccia I
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

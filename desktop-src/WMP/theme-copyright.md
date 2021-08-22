@@ -1,9 +1,9 @@
 ---
-title: TEMA. Copyright
-description: L'attributo Copyright specifica o recupera la stringa del copyright per l'interfaccia.
+title: THEME.copyright
+description: L'attributo copyright specifica o recupera la stringa di copyright per l'interfaccia.
 ms.assetid: d27287dd-711c-4f50-97ab-f49edc926566
 keywords:
-- TEMA. Copyright Windows Media Player
+- THEME.copyright Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6a08f19195e487858d6adf31d4ad4b0d0199700
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee2aac6c601c2f81b64f6cdc4df4dccb69827953771ef7acebd916b33d01052b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507511"
 ---
-# <a name="themecopyright"></a>TEMA. Copyright
+# <a name="themecopyright"></a>THEME.copyright
 
-L'attributo **Copyright** specifica o recupera la stringa del copyright per l'interfaccia.
+**L'attributo copyright** specifica o recupera la stringa di copyright per l'interfaccia.
 
 ``` syntax
 theme.copyright
@@ -29,7 +29,7 @@ theme.copyright
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura senza valore predefinito.
+Questo attributo è una stringa di **lettura/scrittura** senza alcun valore predefinito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è una **stringa** di lettura/scrittura senza valore predefinit
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

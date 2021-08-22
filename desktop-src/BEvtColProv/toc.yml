@@ -1,4 +1,4 @@
-- name: Provider WMI raccolta eventi di avvio
+- name: Provider WMI dell'agente di raccolta eventi di avvio
   href: boot-event-collector-wmi-provider-portal.md
   items:
     - name: TargetForwarding
@@ -24,13 +24,13 @@
           href: control-isconfigurationequal.md
         - name: Metodo ListBackups
           href: control-listbackups.md
-        - name: Redo (metodo)
+        - name: Metodo Redo
           href: control-redo.md
         - name: Metodo RestoreFile
           href: control-restorefile.md
         - name: Metodo RestoreFromTime
           href: control-restorefromtime.md
-        - name: Metodo seconfiguration
+        - name: Metodo SetConfiguration
           href: control-setconfiguration.md
         - name: Shutdown (metodo)
           href: control-shutdown.md

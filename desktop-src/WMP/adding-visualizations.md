@@ -3,24 +3,24 @@ title: Aggiunta di visualizzazioni
 description: Aggiunta di visualizzazioni
 ms.assetid: adb5d10b-070c-426c-a74a-8d4881d9acbf
 keywords:
-- creazione di interfacce, visualizzazioni
-- Interfacce di Media Player Windows, visualizzazioni
-- interfacce, visualizzazioni
-- Visualizzazioni, interfacce
+- creazione di interfaccia, visualizzazioni
+- Windows Media Player, visualizzazioni
+- interfaccia, visualizzazioni
+- visualizzazioni, interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9750b114d99af8c59777ea28ff4dab85a56dd229
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d236990d3e29cf4e51dbb46e8e1269b0c8a50ccaf205940a6f34b97c89fa6e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619151"
 ---
 # <a name="adding-visualizations"></a>Aggiunta di visualizzazioni
 
-È possibile aggiungere una finestra di visualizzazione nello stesso modo in cui è stata aggiunta una finestra video. È possibile utilizzare la stessa interfaccia, ma viene utilizzato un elemento **Effects** .
+È possibile aggiungere una finestra di visualizzazione nello stesso modo in cui è stata aggiunta una finestra video. È possibile usare la stessa interfaccia, ma viene usato un **elemento EFFECTS.**
 
-Prima di tutto è necessario aggiungere l'elemento **Effects** e assegnargli un ID e una dimensione:
+Prima di tutto è necessario aggiungere **l'elemento EFFECTS** e assegnargli un ID e una dimensione:
 
 
 ```C++
@@ -35,7 +35,7 @@ Prima di tutto è necessario aggiungere l'elemento **Effects** e assegnargli un 
 
 
 
-È quindi possibile assegnare i due pulsanti a una stringa di codice di visualizzazione precedente e successiva:
+È quindi possibile assegnare ai due pulsanti una stringa di codice di visualizzazione precedente e successiva:
 
 
 ```C++
@@ -55,7 +55,7 @@ Prima di tutto è necessario aggiungere l'elemento **Effects** e assegnargli un 
 
 I livelli e le bitmap sono gli stessi usati nell'esempio video, ad eccezione del fatto che la freccia di riproduzione è stata copiata e capovolta orizzontalmente.
 
-Infine, è stato aggiunto un semplice elemento **Player** con l'attributo **URL** per scegliere un brano da riprodurre.
+Infine, è stato **aggiunto un** semplice elemento PLAYER con **l'attributo URL** per scegliere un brano da riprodurre.
 
 
 ```C++
@@ -67,7 +67,7 @@ Infine, è stato aggiunto un semplice elemento **Player** con l'attributo **URL*
 
 
 
-Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia di visualizzazione di lavoro simile.
+È possibile visualizzare un'interfaccia di visualizzazione funzionante simile nella sezione di esempio dell'SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -76,9 +76,9 @@ Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia di vi
 [**Guida alla creazione dell'interfaccia**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

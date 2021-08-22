@@ -1,7 +1,7 @@
 ---
 description: Il metodo SetSubtype specifica il sottotipo.
 ms.assetid: cf52e0dc-d75b-408e-a63c-481d55151d4a
-title: Metodo CMediaType. SetSubtype (mtype. h)
+title: Metodo CMediaType.SetSubtype (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6474777b1b2e91ce0b676fdc7dbd572d7c622f0b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96445074ce2f0cc5a27a4988087f2fd910444beca88e5dc89c84585a8a98b338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566371"
 ---
-# <a name="cmediatypesetsubtype-method"></a>CMediaType. SetSubtype, metodo
+# <a name="cmediatypesetsubtype-method"></a>Metodo CMediaType.SetSubtype
 
 Il `SetSubtype` metodo specifica il sottotipo.
 
@@ -45,7 +45,7 @@ void SetSubtype(
 *psubtype* 
 </dt> <dd>
 
-Puntatore a un **GUID** che specifica il sottotipo.
+Puntatore a **un GUID** che specifica il sottotipo.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

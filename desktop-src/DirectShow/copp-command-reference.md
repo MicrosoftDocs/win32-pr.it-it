@@ -1,26 +1,26 @@
 ---
-description: Riferimento al comando COPP
+description: Informazioni di riferimento sul comando COPP
 ms.assetid: b21db1cf-cac3-41d6-8189-6e01c8f91a7d
-title: Riferimento al comando COPP
+title: Informazioni di riferimento sul comando COPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50dfeebe42b877604ab880ef1855035242d6eca8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ef1a706863464b6f303e05cb88e28a075dffbfba7b6bf54f8289a2699e66a76f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565971"
 ---
-# <a name="copp-command-reference"></a>Riferimento al comando COPP
+# <a name="copp-command-reference"></a>Informazioni di riferimento sul comando COPP
 
-In questa sezione vengono descritti i comandi COPP (Certified Output Protocol). Vengono definiti i comandi seguenti.
+In questa sezione vengono descritti i comandi COPP (Certified Output Protection Protocol). Vengono definiti i comandi seguenti.
 
 
 
 | Comando              | GUID                             |
 |----------------------|----------------------------------|
-| Imposta il livello di protezione | **\_COPPSETPROTECTIONLEVEL DXVA** |
-| Imposta segnalazione        | **\_COPPSETSIGNALING DXVA**       |
+| Impostare il livello di protezione | **DXVA \_ COPPSetProtectionLevel** |
+| Impostare la segnalazione        | **DXVA \_ COPPSetSignaling**       |
 
 
 
@@ -28,29 +28,29 @@ In questa sezione vengono descritti i comandi COPP (Certified Output Protocol). 
 
 Comando Imposta livello di protezione
 
-Imposta il livello di protezione per un meccanismo di protezione dell'output specificato. A seconda del connettore, potrebbe essere possibile applicare più di un meccanismo di protezione sullo stesso connettore, con impostazioni diverse per ogni meccanismo.
+Imposta il livello di protezione per un meccanismo di protezione dell'output specificato. A seconda del connettore, potrebbe essere possibile applicare più meccanismi di protezione sullo stesso connettore, con impostazioni diverse per ogni meccanismo.
 
-**GUID**: DXVA \_ COPPSetProtectionLevel
+**GUID:** DXVA \_ COPPSetProtectionLevel
 
-**Dati di input**: [**struttura \_ COPPSetProtectionLevelCmdData di DXVA**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppsetprotectionlevelcmddata) .
+**Dati di input:** [**struttura \_ DXVA COPPSetProtectionLevelCmdData.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppsetprotectionlevelcmddata)
 
-Imposta comando di segnalazione
+Impostare il comando di segnalazione
 
 Specifica informazioni sul segnale video diverso dal livello di protezione.
 
-Per CGMS-A, determinati standard di protezione richiedono che il segnale Televsion contenga informazioni sulle proporzioni e altre informazioni all'interno degli stessi pacchetti di forme d'onda VBI dei bit CGMS-A. I televisori potrebbero non essere visualizzati correttamente se le informazioni sulle proporzioni non sono coerenti con il flusso video. L'applicazione può utilizzare questo comando per specificare le proporzioni in modo che il driver di grafica possa generare i pacchetti VBI corretti.
+Per CGMS-A, alcuni standard di protezione richiedono che il segnale di televsion contenga informazioni sulle proporzioni e altre informazioni all'interno degli stessi pacchetti di forma d'onda VBI dei bit CGMS-A. Se le informazioni sulle proporzioni non sono coerenti con il flusso video, è possibile che i programmi televisivi non siano visualizzati in modo non coerente. L'applicazione può usare questo comando per specificare le proporzioni in modo che il driver di grafica possa generare i pacchetti VBI corretti.
 
-Questo comando è anche progettato per essere estendibile se sono necessarie informazioni aggiuntive sul segnale negli standard futuri.
+Questo comando è progettato anche per essere estendibile se sono necessarie informazioni aggiuntive sui segnali negli standard futuri.
 
-**GUID**: DXVA \_ COPPSetSignaling
+**GUID:** DXVA \_ COPPSetSignaling
 
-**Dati di input**: [**struttura \_ COPPSetSignalingCmdData di DXVA**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppsetsignalingcmddata) .
+**Dati di input:** [**struttura \_ DXVA COPPSetSignalingCmdData.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppsetsignalingcmddata)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso di COPP (Certified Output Protocol)](using-certified-output-protection-protocol--copp.md)
+[Uso del protocollo COPP (Certified Output Protection Protocol)](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

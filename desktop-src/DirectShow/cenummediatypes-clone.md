@@ -1,7 +1,7 @@
 ---
-description: "Il metodo Clone crea una copia dell'enumeratore con lo stesso stato di enumerazione. Questo metodo implementa il metodo IEnumMediaTypes:: clone."
+description: Il metodo Clone crea una copia dell'enumeratore con lo stesso stato di enumerazione. Questo metodo implementa il metodo IEnumMediaTypes::Clone.
 ms.assetid: 3b4eb29e-48fc-4f00-a5f3-597b9aa94ce1
-title: Metodo CEnumMediaTypes. Clone (Amfilter. h)
+title: Metodo CEnumMediaTypes.Clone (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 43f051bf90afa231d3b677045468f26d06d55150
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c624ac933228c769248c2980a250a9f89e9ebdaf386aeff951e70ba966311586
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537306"
 ---
-# <a name="cenummediatypesclone-method"></a>Metodo CEnumMediaTypes. Clone
+# <a name="cenummediatypesclone-method"></a>Metodo CEnumMediaTypes.Clone
 
-Il `Clone` metodo crea una copia dell'enumeratore con lo stesso stato di enumerazione. Questo metodo implementa il metodo [**IEnumMediaTypes:: Clone**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-clone) .
+Il `Clone` metodo crea una copia dell'enumeratore con lo stesso stato di enumerazione. Questo metodo implementa il [**metodo IEnumMediaTypes::Clone.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-clone)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ HRESULT Clone(
 *ppEnum* 
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore all'interfaccia [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) del nuovo enumeratore.
+Indirizzo di una variabile che riceve un puntatore [**all'interfaccia IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) del nuovo enumeratore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                                                                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>              | Memoria insufficiente.<br/>                                                     |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                  | Argomento puntatore **null** .<br/>                                               |
-| <dl> <dt>**non \_ \_ \_ \_ sincronizzato con VFW E enum \_**</dt> </dl> | Lo stato del PIN è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                                                                 |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>              | Memoria insufficiente.<br/>                                                     |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>                  | Argomento del puntatore **NULL.**<br/>                                               |
+| <dl> <dt>**ENUMERAZIONE VFW \_ \_ NON \_ \_ \_ SINCRONIZZATA**</dt> </dl> | Lo stato del segnaposto è cambiato ed è ora incoerente con l'enumeratore.<br/> |
 
 
 
@@ -72,8 +72,8 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

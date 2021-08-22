@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentLogSequenceEndException'
+description: Altre informazioni sul costruttore EsentLogSequenceEndException
 title: Costruttore EsentLogSequenceEndException
 TOCTitle: 'EsentLogSequenceEndException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogSequenceEndException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2fddeea7b996a8599a8dfb7abf52fda387b43dfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb1a7c3eac4e357f72050b18f23e446e018e7f6021722acf423b27b8ee8b150a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620151"
 ---
 # <a name="esentlogsequenceendexception-constructor"></a>Costruttore EsentLogSequenceEndException
 
 Inizializza una nuova istanza della classe EsentLogSequenceEndException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentLogSequenceEndException()
 
 [Membri di EsentLogSequenceEndException](./esentlogsequenceendexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

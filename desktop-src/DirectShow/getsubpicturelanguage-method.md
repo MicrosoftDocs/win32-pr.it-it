@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetSubpictureLanguage recupera la lingua per il flusso di sottoimmagine specificato.
+description: Il metodo GetSubpictureLanguage recupera la lingua per il flusso di immagini secondarie specificato.
 ms.assetid: 2a2e6961-99c3-4200-b462-b381f9e37066
 title: Metodo GetSubpictureLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f87d1bf95ee13a1a15e631e2bc53477b62b789a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cdedc90789efb331b1438744a0f64a42782bf1d1e363170ce626ed023d2e542a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536931"
 ---
 # <a name="getsubpicturelanguage-method"></a>Metodo GetSubpictureLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "106303742"
 
  
 
-Il `GetSubpictureLanguage` metodo recupera la lingua per il flusso di sottoimmagine specificato.
+Il `GetSubpictureLanguage` metodo recupera la lingua per il flusso di immagini secondarie specificato.
 
 ``` syntax
 [ sLang = ] MSWebDVD.GetSubpictureLanguage(iStream)
@@ -28,10 +28,10 @@ Il `GetSubpictureLanguage` metodo recupera la lingua per il flusso di sottoimmag
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Specifica il numero del flusso dell'immagine di sottoimmagine di cui si desidera recuperare la lingua del testo come intero.
+Specifica il numero del flusso di immagini secondarie di cui si vuole recuperare la lingua di testo come integer.
 
 </dd> </dl>
 

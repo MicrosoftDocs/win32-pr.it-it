@@ -1,19 +1,19 @@
 ---
-description: Specifica se l'oggetto è autorizzato a eliminare i frame.
+description: Specifica se all'endoder è consentito eliminare frame.
 ms.assetid: ceb0cf92-2d5a-4f21-bf02-8999efd6d35a
-title: Proprietà MFPKEY_FULLFRAMERATE (Wmcodecdsp. h)
+title: MFPKEY_FULLFRAMERATE proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbc4078cd60e0de744ebdc5b2ca8fd0631ccf180
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 75e69d1f9db3b353d16d7c16fec950fe8e05b717ce354d920062005dde31c231
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663569"
 ---
-# <a name="mfpkey_fullframerate-property"></a>\_Proprietà FULLFRAMERATE di MFPKEY
+# <a name="mfpkey_fullframerate-property"></a>Proprietà MFPKEY \_ FULLFRAMERATE
 
-Specifica se l'oggetto è autorizzato a eliminare i frame.
+Specifica se all'endoder è consentito eliminare frame.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -25,7 +25,7 @@ Specifica se l'oggetto è autorizzato a eliminare i frame.
 
 ## <a name="remarks"></a>Commenti
 
-Se si imposta questa proprietà su 1, il codificatore non eliminerà i frame. Se si imposta questa proprietà su 0, il codificatore potrebbe rilasciare frame.
+Se si imposta questa proprietà su 1, il codificatore non elimina i fotogrammi. Se si imposta questa proprietà su 0, il codificatore potrebbe eliminare i fotogrammi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,7 +34,7 @@ Se si imposta questa proprietà su 1, il codificatore non eliminerà i frame. Se
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Se si imposta questa proprietà su 1, il codificatore non eliminerà i frame. Se
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Tipo complesso XmlTypeListType
 description: Definisce un elenco di tipi di output utilizzati dal servizio per determinare come eseguire il rendering di un tipo di dati di input.
 ms.assetid: d90b32cc-a0b5-44d1-8083-781aa5e10783
 keywords:
-- Log eventi di tipo complesso XmlTypeListType
+- EventLog di tipo complesso XmlTypeListType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 388161572ec9c84ed46d5b40987df5fb8d1ed077
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e30ca23a0e4ab0168ff7479a5246acfb4b34e3a43bc62886d988d5f54549672b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620321"
 ---
 # <a name="xmltypelisttype-complex-type"></a>Tipo complesso XmlTypeListType
 
@@ -74,13 +74,13 @@ Definisce un elenco di tipi di output utilizzati dal servizio per determinare co
 |--------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | **QName**                                                         | Nome del tipo di output.<br/>                                                                                                                                                                                                                    |
 | simbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Simbolo da utilizzare per fare riferimento al tipo di output nell'applicazione. Il [**compilatore di messaggi (MC.exe)**](message-compiler--mc-exe-.md) usa il simbolo per creare una costante per il tipo di output nel file di intestazione generato dal compilatore.<br/> |
-| Valore  | string                                                            | Valore intero che identifica in modo univoco il tipo di output nell'elenco dei tipi di output definiti.<br/>                                                                                                                                          |
+| Valore  | string                                                            | Valore integer che identifica in modo univoco il tipo di output nell'elenco dei tipi di output definiti.<br/>                                                                                                                                          |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il \\ \\ file di inclusioneWinmeta.xml, incluso nella Windows SDK, contiene un elenco di tipi di output predefiniti.
+Il \\ \\ file includeWinmeta.xml, incluso in Windows SDK, contiene un elenco di tipi di output predefiniti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ Il \\ \\ file di inclusioneWinmeta.xml, incluso nella Windows SDK, contiene un e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: IMAGEBUTTON
-description: Si tratta di un pulsante predefinito con il valore predefinito seguente.
+title: Imagebutton
+description: Si tratta di un elemento BUTTON predefinito con il valore predefinito seguente.
 ms.assetid: db5c1a95-d031-46d5-a210-883599236b8f
 keywords:
-- Media Player di Windows IMAGEBUTTON
+- IMAGEBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9c77445268ca0bcdd24efcde1bb3b08ff80e1317
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 565e375db9b6ac2c64e554a3b575cf961e7acdb9e5c378ec1f29c12e5ac4b335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509241"
 ---
-# <a name="imagebutton"></a>IMAGEBUTTON
+# <a name="imagebutton"></a>Imagebutton
 
-Si tratta di un **pulsante** predefinito con il valore predefinito seguente.
+Si tratta di un **elemento BUTTON predefinito** con il valore predefinito seguente.
 
 ``` syntax
 cursor="Hand"
@@ -30,9 +30,9 @@ cursor="Hand"
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i pulsanti possono contenere immagini. Questo elemento è utile a scopo di chiarificazione del codice per indicare un pulsante usato principalmente come contenitore di immagini.
+Tutti i pulsanti possono contenere immagini. Questo elemento è utile a scopo di chiarimento del codice per indicare un pulsante usato principalmente come contenitore di immagini.
 
-Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+È possibile eseguire l'override di tutte le proprietà di **questo** pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,7 +40,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

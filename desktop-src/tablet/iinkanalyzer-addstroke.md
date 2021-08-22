@@ -1,7 +1,7 @@
 ---
 description: Aggiunge i dati del tratto per un singolo tratto a IInkAnalyzer e assegna l'identificatore delle impostazioni cultura del thread di input attivo al tratto.
 ms.assetid: 0e603e5a-d722-4ab8-bc59-605e131c863b
-title: 'Metodo IInkAnalyzer:: AddStroke (IACom. h)'
+title: Metodo IInkAnalyzer::AddStroke (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fc946e7975772eb7be6fff54d01bb1a6dae8ebe7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7ba08e779e115c243918d94e5b41e8a7d77f54fab92b045274135ead2ae0264
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590591"
 ---
-# <a name="iinkanalyzeraddstroke-method"></a>Metodo IInkAnalyzer:: AddStroke
+# <a name="iinkanalyzeraddstroke-method"></a>Metodo IInkAnalyzer::AddStroke
 
 Aggiunge i dati del tratto per un singolo tratto a [**IInkAnalyzer**](iinkanalyzer.md) e assegna l'identificatore delle impostazioni cultura del thread di input attivo al tratto.
 
@@ -44,70 +44,70 @@ HRESULT AddStroke(
 
 <dl> <dt>
 
-*lStrokeId* \[ in\]
+*lStrokeId* \[ Pollici\]
 </dt> <dd>
 
 Identificatore del tratto da aggiungere.
 
 </dd> <dt>
 
-*ulStrokePacketDataCount* \[ in\]
+*ulStrokePacketDataCount* \[ Pollici\]
 </dt> <dd>
 
-Numero di pacchetti nell'oggetto Stroke.
+Numero di pacchetti nel tratto.
 
 </dd> <dt>
 
-*plStrokePacketData* \[ in\]
+*plStrokePacketData* \[ Pollici\]
 </dt> <dd>
 
 Matrice contenente i dati del pacchetto per il tratto.
 
 </dd> <dt>
 
-*ulStrokePacketDescriptionCount* \[ in\]
+*ulStrokePacketDescriptionCount* \[ Pollici\]
 </dt> <dd>
 
-Numero di proprietà dei pacchetti in ogni pacchetto.
+Numero di proprietà del pacchetto in ogni pacchetto.
 
 </dd> <dt>
 
-*pStrokePacketDescriptionGuids* \[ in\]
+*pStrokePacketDescriptionGuids* \[ Pollici\]
 </dt> <dd>
 
-Matrice contenente gli identificatori di proprietà del pacchetto.
+Matrice contenente gli identificatori delle proprietà del pacchetto.
 
 </dd> <dt>
 
-*ppContextNodeStrokeAddedTo* \[ out\]
+*ppContextNodeStrokeAddedTo* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a [**IContextNode**](icontextnode.md) a cui [**IInkAnalyzer**](iinkanalyzer.md) ha aggiunto il tratto.
+Puntatore a [**IContextNode a**](icontextnode.md) cui [**L'IInkAnalyzer ha**](iinkanalyzer.md) aggiunto il tratto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppContextNodeStrokeAddedTo* quando non è più necessario utilizzare l'oggetto.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppContextNodeStrokeAddedTo* quando non è più necessario usare l'oggetto .
 
  
 
-Quando *ppContextNodeStrokeAddedTo* è **null**, indica che il chiamante non è interessato al valore restituito dal metodo.
+Quando *ppContextNodeStrokeAddedTo* è **NULL,** indica che il chiamante non è interessato al valore restituito dal metodo.
 
-[**IInkAnalyzer**](iinkanalyzer.md) aggiunge il tratto a un [**IContextNode**](icontextnode.md) di tipo UnclassifiedInk (vedere tipi di [nodo di contesto](context-node-types.md)). Questo nodo si trova nella raccolta dei sottonodi del nodo radice (vedere [**IInkAnalyzer:: GetRootNode Method**](iinkanalyzer-getrootnode.md) e [**IContextNode:: GetSubNodes**](icontextnode-getsubnodes.md) Methods).
+[**IInkAnalyzer aggiunge**](iinkanalyzer.md) il tratto a un [**IContextNode**](icontextnode.md) di tipo UnclassifiedInk (vedere [Context Node Types](context-node-types.md)). Questo nodo si trova nella raccolta di sottonodi del nodo radice (vedere i metodi [**IInkAnalyzer::GetRootNode**](iinkanalyzer-getrootnode.md) e [**IContextNode::GetSubNodes).**](icontextnode-getsubnodes.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) assegna l'identificatore delle impostazioni cultura del thread di input attivo al tratto e aggiunge il tratto al primo nodo di contesto UnclassifiedInk nel nodo radice dell'analizzatore di input penna che contiene i tratti con lo stesso identificatore di impostazioni cultura. Se l'analizzatore di input penna non dispone di un nodo con lo stesso identificatore di impostazioni cultura, viene creato un nuovo nodo di contesto UnclassifiedInk nel nodo radice e il tratto viene aggiunto al nuovo nodo di contesto UnclassifiedInk.
+[**IInkAnalyzer**](iinkanalyzer.md) assegna l'identificatore delle impostazioni cultura del thread di input attivo al tratto e aggiunge il tratto al primo nodo di contesto UnclassifiedInk sotto il nodo radice dell'analizzatore input penna che contiene tratti con lo stesso identificatore di impostazioni cultura. Se l'analizzatore input penna non ha un nodo con lo stesso identificatore di impostazioni cultura, crea un nuovo nodo di contesto UnclassifiedInk sotto il relativo nodo radice e aggiunge il tratto al nuovo nodo di contesto UnclassifiedInk.
 
-*plStrokePacketData* contiene i dati dei pacchetti per tutti i punti del tratto. *pStrokePacketDescriptionGuids* contiene gli identificatori univoci globali (Guid) che descrivono i tipi di dati dei pacchetti inclusi per ogni punto del tratto. Per un elenco completo delle proprietà dei pacchetti disponibili, vedere [costanti PacketPropertyGuids](packetpropertyguids-constants.md).
+*plStrokePacketData contiene* i dati dei pacchetti per tutti i punti nel tratto. *pStrokePacketDescriptionGuids* contiene gli identificatori univoci globali (GUID) che descrivono i tipi di dati dei pacchetti inclusi per ogni punto del tratto. Per un elenco completo delle proprietà dei pacchetti disponibili, vedere [Costanti PacketPropertyGuids.](packetpropertyguids-constants.md)
 
-Questo metodo espande l'area dirty all'Unione del valore corrente dell'area e del rettangolo di delimitazione del tratto aggiunto.
+Questo metodo espande l'area dirty all'unione del valore corrente dell'area e del rettangolo di selezione del tratto aggiunto.
 
-Se [**IInkAnalyzer**](iinkanalyzer.md) contiene già un tratto con lo stesso identificatore del tratto, **IInkAnalyzer** restituisce un valore **HRESULT** di **E \_ INVALIDARG**.
+Se [**IInkAnalyzer**](iinkanalyzer.md) contiene già un tratto con lo stesso identificatore di tratto, **IInkAnalyzer** restituisce **un valore HRESULT** **di E \_ INVALIDARG.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,9 +115,9 @@ Se [**IInkAnalyzer**](iinkanalyzer.md) contiene già un tratto con lo stesso ide
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -126,25 +126,25 @@ Se [**IInkAnalyzer**](iinkanalyzer.md) contiene già un tratto con lo stesso ide
 
 <dl> <dt>
 
-[**InkAnalyzer**](iinkanalyzer.md)
+[**Inkanalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: AddStrokeForLanguage**](iinkanalyzer-addstrokeforlanguage.md)
+[**Metodo IInkAnalyzer::AddStrokeForLanguage**](iinkanalyzer-addstrokeforlanguage.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: AddStrokes**](iinkanalyzer-addstrokes.md)
+[**Metodo IInkAnalyzer::AddStrokes**](iinkanalyzer-addstrokes.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: AddStrokesForLanguage**](iinkanalyzer-addstrokesforlanguage.md)
+[**Metodo IInkAnalyzer::AddStrokesForLanguage**](iinkanalyzer-addstrokesforlanguage.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: RemoveStroke**](iinkanalyzer-removestroke.md)
+[**Metodo IInkAnalyzer::RemoveStroke**](iinkanalyzer-removestroke.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: RemoveStrokes**](iinkanalyzer-removestrokes.md)
+[**Metodo IInkAnalyzer::RemoveStrokes**](iinkanalyzer-removestrokes.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

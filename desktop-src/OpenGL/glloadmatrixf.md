@@ -1,9 +1,9 @@
 ---
-title: funzione glLoadMatrixf (GL. h)
-description: La funzione glLoadMatrixf sostituisce la matrice corrente con una matrice arbitraria. | funzione glLoadMatrixf (GL. h)
+title: Funzione glLoadMatrixf (Gl.h)
+description: La funzione glLoadMatrixf sostituisce la matrice corrente con una matrice arbitraria. | Funzione glLoadMatrixf (Gl.h)
 ms.assetid: 6e1337b0-d1e7-4002-a561-d959d7f70942
 keywords:
-- funzione glLoadMatrixf OpenGL
+- Funzione glLoadMatrixf OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a0c54f4f7f7255b2dde724cf018d57fab6cf3e7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c3d822d784d6e24b15296a29da1c77b37b55af4211d2d9b5ce40a3c6a43c7fdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492846"
 ---
-# <a name="glloadmatrixf-function"></a>glLoadMatrixf (funzione)
+# <a name="glloadmatrixf-function"></a>Funzione glLoadMatrixf
 
-Le funzioni [**glLoadMatrixd**](glloadmatrixd.md) e **glLoadMatrixf** sostituiscono la matrice corrente con una matrice arbitraria.
+Le [**funzioni glLoadMatrixd**](glloadmatrixd.md) **e glLoadMatrixf** sostituiscono la matrice corrente con una matrice arbitraria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI glLoadMatrixf(
 *m* 
 </dt> <dd>
 
-Puntatore a una matrice 4x4 archiviato nell'ordine colonna-Major come 16 valori consecutivi.
+Puntatore a una matrice 4x4 archiviata nell'ordine delle colonne principali come 16 valori consecutivi.
 
 </dd> </dl>
 
@@ -53,33 +53,33 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glLoadMatrix** sostituisce la matrice corrente con quella specificata in *m*. La matrice corrente è la matrice di proiezione, la matrice Modelview o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)).
+La **funzione glLoadMatrix** sostituisce la matrice corrente con quella specificata in *m*. La matrice corrente è la matrice di proiezione, la matrice della visualizzazione modello o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode).**](glmatrixmode.md)
 
-Il parametro *m* punta a una matrice 4x4 di valori a virgola mobile a precisione singola o a precisione doppia archiviati in ordine colonna-principale. Ovvero la matrice viene archiviata come illustrato nella figura seguente.
+Il *parametro m* punta a una matrice 4x4 di valori a virgola mobile a precisione singola o a precisione doppia archiviati nell'ordine delle colonne principali. In altri modi, la matrice viene archiviata come illustrato nell'immagine seguente.
 
 ![Diagramma che mostra la matrice 4x4 a cui punta il parametro m.](images/load02.png)
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glLoadMatrix**:
+Le funzioni seguenti recuperano informazioni correlate **a glLoadMatrix:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ modalità matrice GL \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MATRIX \_ MODE
 
-**glGet** con argomento GL \_ MODELVIEW \_ Matrix
+**glGet** con argomento GL \_ MODELVIEW \_ MATRIX
 
-**glGet** con matrice di \_ proiezione GL argomento \_
+**glGet con** argomento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con argomento della \_ matrice di trama GL \_
+**glGet** con argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glLoadM
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -102,7 +102,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glLoadM
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glLoadIdentity**](glloadidentity.md)

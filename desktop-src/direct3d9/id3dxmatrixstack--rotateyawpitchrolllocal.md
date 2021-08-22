@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3cd1355039a570f0ef0e3546150cb9d8ebed5900b88ba14b6640f3d8a1799150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493190"
 ---
 # <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
 

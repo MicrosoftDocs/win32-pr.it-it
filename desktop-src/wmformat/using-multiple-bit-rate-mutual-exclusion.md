@@ -1,28 +1,28 @@
 ---
-title: Uso dell'esclusione reciproca a più bit rate
-description: Uso dell'esclusione reciproca a più bit rate
+title: Uso dell'esclusione reciproca a velocità in bit multipla
+description: Uso dell'esclusione reciproca a velocità in bit multipla
 ms.assetid: 69898b4d-fe10-422e-9ed2-87b65aa7bdb3
 keywords:
 - velocità in bit multipla (MBR), esclusione reciproca
-- MBR (frequenza a più bit), esclusione reciproca
+- MBR (velocità in bit multipla), esclusione reciproca
 - esclusione reciproca, velocità in bit multipla (MBR)
-- profili, velocità in bit multipla (MBR)
+- profili,velocità in bit multipla (MBR)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be77c7615845d10d07982676dfdb4dc8c617cebe
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c31c7954f6aa5098f6cc221a7a761428ff15fd6a4c2c0a6e5c8cea2b6622a84b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104336258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446971"
 ---
-# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Uso dell'esclusione reciproca a più bit rate
+# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Uso dell'esclusione reciproca a velocità in bit multipla
 
-L'esclusione reciproca a più velocità in bit (MBR) è utile quando si desidera codificare il contenuto per diversi scenari di riproduzione. Un output video MBR è costituito da un singolo input codificato più volte, ognuno con diverse impostazioni della velocità in bit. Quando viene letto un file con codifica MBR, il lettore determinerà il flusso da usare in base alla larghezza di banda disponibile.
+L'esclusione reciproca a velocità in bit multipla (MBR) è utile quando si vuole codificare il contenuto per un'ampia gamma di scenari di riproduzione. Un output video MBR è costituito da un singolo input codificato più volte, ognuno con impostazioni di velocità in bit diverse. Quando viene letto un file con codifica MBR, il lettore determinerà quale flusso usare in base alla larghezza di banda disponibile.
 
-Windows Media Format SDK supporta la codifica MBR per i flussi video e audio. Inoltre, è possibile creare un tipo speciale di codifica MBR denominata codifica MBR a più video. Il video MBR a più dimensioni video è identico a quello dei video MBR normali, tranne per il fatto che è possibile specificare dimensioni di immagine diverse per i flussi video nell'esclusione reciproca.
+L Windows Media Format SDK supporta la codifica MBR per i flussi video e audio. È anche possibile creare un tipo speciale di codifica MBR denominata codifica MBR a più dimensioni video. Le funzioni video MBR di dimensioni multiple sono identiche a quelle del video MBR normale, con la differenza che è possibile specificare dimensioni di immagine diverse per i flussi video nell'esclusione reciproca.
 
-L'esempio seguente illustra come configurare un profilo per video MBR con più dimensioni del video. Viene creato un nuovo profilo con tre flussi video di dimensioni e velocità in bit variabili e inclusi in un oggetto di esclusione reciproca.
+L'esempio seguente illustra come configurare un profilo per il video MBR con più dimensioni video. Crea un nuovo profilo con tre flussi video di dimensioni e velocità in bit variabili e li include in un oggetto di esclusione reciproca.
 
 
 ```C++
@@ -161,12 +161,12 @@ pProfileMgr = NULL;
 [**Uso dell'esclusione reciproca**](using-mutual-exclusion.md)
 </dt> <dt>
 
-[**\_tipo di supporto WM \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
+[**TIPO \_ DI SUPPORTO \_ WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

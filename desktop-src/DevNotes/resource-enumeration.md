@@ -1,26 +1,26 @@
 ---
-description: "Gli sviluppatori possono utilizzare l'enumerazione delle risorse come parte della strumentazione che fornisce tipi specifici di informazioni sulle rispettive applicazioni. Microsoft compila strumentazione nel sistema operativo Windows, ma queste funzionalità sono strettamente vincolate al sistema operativo che possono essere limitate agli sviluppatori di applicazioni. Microsoft sta rendendo disponibile un'enumerazione delle risorse Application Programming Interface (API) che può essere usata con le risorse di strumentazione seguenti: allocazioni heap e gestire le informazioni di traccia. Gli argomenti seguenti descrivono come usare questa API nelle applicazioni: informazioni di riferimento sull'enumerazione EnumerationResource di risorse"
+description: "Gli sviluppatori possono usare l'enumerazione delle risorse come parte della strumentazione che fornisce tipi specifici di informazioni sulle applicazioni. Microsoft compila la strumentazione nel sistema operativo Windows, ma queste funzionalità sono strettamente collegate al sistema operativo che potrebbero essere di uso limitato per gli sviluppatori di applicazioni. Microsoft rende disponibile un'API (Application Programming Interface) di enumerazione delle risorse che può essere usata con le risorse di strumentazione seguenti: allocazioni di heap e gestione delle informazioni di traccia. Gli argomenti seguenti descrivono come usare questa API nelle applicazioni:Informazioni sull'enumerazione delle risorse Reference (Informazioni sull'enumerazione delle risorse)"
 ms.assetid: 99cb9005-9cfc-44fb-b09f-fed0541cda37
-title: Enumerazione Resource
+title: Enumerazione delle risorse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 022d27aee52e92b142d67736444c9d6497bf98cf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 701cdd3e738c59de9368ca556dafcac51c5f586c05facd22378a4d7a53d60de4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538361"
 ---
-# <a name="resource-enumeration"></a>Enumerazione Resource
+# <a name="resource-enumeration"></a>Enumerazione delle risorse
 
-Gli sviluppatori possono utilizzare l'enumerazione delle risorse come parte della strumentazione che fornisce tipi specifici di informazioni sulle rispettive applicazioni.
+Gli sviluppatori possono usare l'enumerazione delle risorse come parte della strumentazione che fornisce tipi specifici di informazioni sulle applicazioni.
 
-Microsoft compila strumentazione nel sistema operativo Windows, ma queste funzionalità sono strettamente vincolate al sistema operativo che possono essere limitate agli sviluppatori di applicazioni. Microsoft sta rendendo disponibile un'enumerazione delle risorse Application Programming Interface (API) che può essere usata con le risorse di strumentazione seguenti: allocazioni heap e gestire le informazioni di traccia.
+Microsoft compila la strumentazione nel sistema operativo Windows, ma queste funzionalità sono strettamente collegate al sistema operativo che potrebbero essere di uso limitato per gli sviluppatori di applicazioni. Microsoft rende disponibile un'API (Application Programming Interface) di enumerazione delle risorse che può essere usata con le risorse di strumentazione seguenti: allocazioni di heap e gestione delle informazioni di traccia.
 
-Negli argomenti seguenti viene descritto come usare questa API nelle applicazioni:
+Gli argomenti seguenti descrivono come usare questa API nelle applicazioni:
 
 -   [Informazioni sull'enumerazione delle risorse](about-resource-enumeration.md)
--   [Riferimento all'enumerazione di risorse](resource-enumeration-reference.md)
+-   [Informazioni di riferimento sull'enumerazione delle risorse](resource-enumeration-reference.md)
 
  
 

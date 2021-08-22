@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo successivo recupera un numero specificato di pin nella sequenza di enumerazione. Questo metodo implementa il metodo IEnumPins:: Next.'
+description: Il metodo Next recupera un numero specificato di pin nella sequenza di enumerazione. Questo metodo implementa il metodo IEnumPins::Next.
 ms.assetid: c38fbd32-7d83-43ec-a105-4a7cb515b471
-title: Metodo CEnumPins. Next (Amfilter. h)
+title: Metodo CEnumPins.Next (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 612dcd638939b34803b7296babf7445a07cdad22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 683b8eb5beb9946db7f37d4db53a84c96d5bff7fc91fa4864020fffde5554824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567081"
 ---
-# <a name="cenumpinsnext-method"></a>Metodo CEnumPins. Next
+# <a name="cenumpinsnext-method"></a>Metodo CEnumPins.Next
 
-Il metodo successivo recupera un numero specificato di pin nella sequenza di enumerazione. Questo metodo implementa il metodo [**IEnumPins:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-next) .
+Il metodo Next recupera un numero specificato di pin nella sequenza di enumerazione. Questo metodo implementa il [**metodo IEnumPins::Next.**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-next)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,30 +54,30 @@ Numero di pin da recuperare.
 *ppPins* 
 </dt> <dd>
 
-Matrice di dimensioni *cPins* riempite con puntatori [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) .
+Matrice di *oggetti cPin di* dimensioni riempiti con [**puntatori IPin.**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> <dt>
 
 *pcFetched* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero di pin recuperati. Può essere **null** se *cPins* è 1.
+Puntatore a una variabile che riceve il numero di pin recuperati. Può essere **NULL** se *cPins* è 1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                                            |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                    | Non è stato possibile recuperare tutti i pin richiesti.<br/>                                 |
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                                                                    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                    | Non è stato recuperato il numero di pin richiesto.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                                                                    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | Argomento non valido.<br/>                                                           |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                  | Argomento puntatore **null** .<br/>                                                  |
-| <dl> <dt>**non \_ \_ \_ \_ sincronizzato con VFW E enum \_**</dt> </dl> | Lo stato del filtro è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>                  | Argomento del puntatore **NULL.**<br/>                                                  |
+| <dl> <dt>**ENUMERAZIONE VFW \_ \_ NON \_ \_ \_ SINCRONIZZATA**</dt> </dl> | Lo stato del filtro è stato modificato ed è ora incoerente con l'enumeratore.<br/> |
 
 
 
@@ -85,11 +85,11 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo recupera i puntatori al numero di PIN specificato, a partire dalla posizione corrente nell'enumerazione e li inserisce nella matrice specificata.
+Questo metodo recupera i puntatori al numero specificato di pin, a partire dalla posizione corrente nell'enumerazione , e li inserisce nella matrice specificata.
 
-Questo metodo chiama il metodo [**CBaseFilter:: GetPin**](cbasefilter-getpin.md) del filtro per recuperare i pin.
+Questo metodo chiama il metodo [**CBaseFilter::GetPin**](cbasefilter-getpin.md) del filtro per recuperare i pin.
 
-Se il metodo ha esito positivo, i puntatori **Ipin** hanno tutti i conteggi dei riferimenti in attesa. Assicurarsi di rilasciarli al termine dell'operazione.
+Se il metodo ha esito positivo, tutti **i puntatori IPin** hanno conteggi dei riferimenti in sospeso. Assicurarsi di rilasciarli al termine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Se il metodo ha esito positivo, i puntatori **Ipin** hanno tutti i conteggi dei 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

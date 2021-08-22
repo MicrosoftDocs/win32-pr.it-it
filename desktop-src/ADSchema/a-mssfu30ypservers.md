@@ -1,10 +1,10 @@
 ---
-title: Attributo msSFU-30-attributo YP-Servers
+title: Attributo msSFU-30-Yp-Servers
 description: Contiene un elenco di server NIS in un dominio NIS.
 ms.assetid: 45547dc9-8fc2-4ab2-af3e-396fd04e7446
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo attributo msSFU-30-YP-Servers
+- Attributo msSFU-30-Yp-Servers schema AD
 - Schema AD dell'attributo msSFU30YpServers
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ad55a4e5b8230c7be67327a3cc4bd352a1d7787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 74b2bd019be56b8fd5f6cb508ee39908e45d60b092e9256a31f68a637184868f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508791"
 ---
-# <a name="mssfu-30-yp-servers-attribute"></a>Attributo msSFU-30-attributo YP-Servers
+# <a name="mssfu-30-yp-servers-attribute"></a>Attributo msSFU-30-Yp-Servers
 
 Contiene un elenco di server NIS in un dominio NIS.
 
@@ -29,13 +29,13 @@ Contiene un elenco di server NIS in un dominio NIS.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Attributo msSFU-30-YP-Servers                  |
-| LDAP-Display-Name | msSFU30YpServers                     |
+| CN                | msSFU-30-Yp-Servers                  |
+| Ldap-Display-Name | msSFU30YpServers                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.341          |
-| System-ID-GUID    | 084a944b-e150-4bfe-9345-40e1aedaebba |
+| System-Id-Guid    | 084a944b-e150-4bfe-9345-40e1aedaebba |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -56,15 +56,15 @@ Contiene un elenco di server NIS in un dominio NIS.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene un elenco di server NIS in un dominio NIS.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene un elenco di server NIS in un dominio NIS.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene un elenco di server NIS in un dominio NIS.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

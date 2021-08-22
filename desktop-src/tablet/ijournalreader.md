@@ -1,7 +1,7 @@
 ---
-description: Fornisce l'accesso in lettura a un file journal di Windows, restituendo un flusso contenente una versione XML del contenuto del file.
+description: Fornisce l'accesso in lettura a Windows file Journal, che restituisce un flusso contenente una versione XML del contenuto del file.
 ms.assetid: e4e19f69-6377-4f06-856d-7f9b453e7656
-title: Interfaccia IJournalReader (Journal. h)
+title: Interfaccia IJournalReader (Journal.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,37 +13,37 @@ api_type:
 - COM
 api_location:
 - Journal.dll
-ms.openlocfilehash: 7576996d341f13518879310f08c0a48996e1293f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff0151432e38a3e611e09efe2d5192eefb8c1d3e6cb0e79296e992b728c5a16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590315"
 ---
 # <a name="ijournalreader-interface"></a>Interfaccia IJournalReader
 
-Fornisce l'accesso in lettura a un file journal di Windows, restituendo un flusso contenente una versione XML del contenuto del file.
+Fornisce l'accesso in lettura a Windows file Journal, che restituisce un flusso contenente una versione XML del contenuto del file.
 
 > [!Note]  
-> Il componente Reader Journal non è in grado di leggere i file journal di Windows creati da computer che eseguono Windows 7 o versioni successive. L'interfaccia IJournalReader deve essere considerata deprecata o obsoleta e non deve essere utilizzata.
+> Il componente Lettore journal non è in grado Windows i file Journal creati da computer che eseguono Windows 7 o versioni successive. L'interfaccia IJournalReader deve essere considerata deprecata o obsoleta e non deve essere usata.
 
  
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IJournalReader** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IJournalReader** dispone anche di questi tipi di membri:
+**L'interfaccia IJournalReader** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IJournalReader** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IJournalReader** dispone di questi metodi.
+**L'interfaccia IJournalReader** include questi metodi.
 
 
 
 | Metodo                                                  | Descrizione                                                                                                           |
 |:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [**ReadFromStream**](ijournalreader-readfromstream.md) | Accetta un flusso in un file di nota Journal e restituisce un flusso XML che rappresenta il contenuto del documento.<br/> |
+| [**ReadFromStream**](ijournalreader-readfromstream.md) | Accetta un flusso in un file Journal Note e restituisce un flusso XML che rappresenta il contenuto del documento.<br/> |
 
 
 
@@ -51,14 +51,14 @@ L'interfaccia **IJournalReader** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-La classe **JournalReader** consente di caricare un flusso di documenti Journal e di ricevere un flusso XML che rappresenta il contenuto. È possibile ricostituire, visualizzare e modificare l'input penna.
+La **classe JournalReader** consente di caricare un flusso di documenti Journal e di ricevere un flusso XML che rappresenta il contenuto. È possibile ricostituire, visualizzare e modificare l'input penna.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente di un gestore per l'evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) di un pulsante Crea un'istanza della classe **JournalReader** e la usa per leggere un file journal esistente.
+L'esempio seguente di un gestore per l'evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) di un pulsante crea un'istanza della **classe JournalReader** e la usa per leggere un file Journal esistente.
 
 > [!Note]  
-> Il metodo **DisplayXml** chiamato da questo esempio non viene visualizzato. L'implementazione specifica di questo metodo dipende dalle esigenze dell'applicazione.
+> Il **metodo DisplayXml** chiamato da questo esempio non viene visualizzato. L'implementazione specifica di tale metodo dipende dalle esigenze dell'applicazione.
 
  
 
@@ -157,9 +157,9 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                         |
-| Intestazione<br/>                   | <dl> <dt>Journal. h (richiede anche journal \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Journal.h (richiede anche journal \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Journal.dll</dt> </dl>                            |
 
 
@@ -168,7 +168,7 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 <dl> <dt>
 
-[GUID proprietà personalizzati](custom-property-guids.md)
+[GUID delle proprietà personalizzate](custom-property-guids.md)
 </dt> <dt>
 
 [**Metodo ReadFromStream**](ijournalreader-readfromstream.md)

@@ -1,7 +1,7 @@
 ---
 description: La funzione GetInterface recupera un puntatore a interfaccia.
 ms.assetid: 75fe8849-c779-4d47-a5ff-5a23308c8a21
-title: Funzione GetInterface (ComBase. h)
+title: Funzione GetInterface (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 317f08af2a4ff0e9410c61da8b19d14735a14f6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 289c6e56d4b5387fe9224e476c69865107102141b687825cdfd9a717f482632c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537031"
 ---
 # <a name="getinterface-function"></a>Funzione GetInterface
 
@@ -43,14 +43,14 @@ HRESULT GetInterface(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** .
+Puntatore **all'interfaccia IUnknown.**
 
 </dd> <dt>
 
-*PPV* 
+*Ppv* 
 </dt> <dd>
 
 Indirizzo di un puntatore all'interfaccia recuperata.
@@ -59,11 +59,11 @@ Indirizzo di un puntatore all'interfaccia recuperata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro esegue un incremento thread-safe del conteggio dei riferimenti. Per recuperare l'interfaccia e aggiungere un riferimento, chiamare questa funzione dall'implementazione di override del metodo **INonDelegatingUnknown:: NonDelegatingQueryInterface** .
+Questa funzione membro esegue un incremento thread-safe del conteggio dei riferimenti. Per recuperare l'interfaccia e aggiungere un riferimento, chiamare questa funzione dall'implementazione di override del metodo **INonDelegatingUnknown::NonDelegatingQueryInterface.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questa funzione membro esegue un incremento thread-safe del conteggio dei riferi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Dichiarazione della classe CGuiPaper
-description: Dichiarazione della classe CGuiPaper
+title: Dichiarazione di classe CGuiPaper
+description: Dichiarazione di classe CGuiPaper
 ms.assetid: b772d056-bf89-46a8-9462-21772cf96dfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 269694b83804f3e85cd8654cd2a1be843396a2ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d684618eea78247b94ed03223cfce45d2cc713f5507b1e290731d3451212b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663521"
 ---
-# <a name="cguipaper-class-declaration"></a>Dichiarazione della classe CGuiPaper
+# <a name="cguipaper-class-declaration"></a>Dichiarazione di classe CGuiPaper
 
-Di seguito è riportata la dichiarazione della classe **CGuiPaper** da GUIPAPER. H.
+Di seguito è riportata la dichiarazione della classe **CGuiPaper** da GUIPAPER.H.
 
 
 ```C++
@@ -75,21 +75,21 @@ class CGuiPaper
 
 
 
-**CGuiPaper** gestisce le proprietà dell'interfaccia utente grafica corrente per il disegno. I membri **m \_ crInkColor**, **m \_ crInkWidth** e **m \_ WinRect** contengono valori per il colore, la larghezza e il rettangolo di disegno correnti. Il **membro \_ HWND m** archivia l'handle per la finestra in cui viene eseguito il disegno.
+**CGuiPaper** mantiene le proprietà gui correnti per la carta di disegno. I **membri m \_ crInkColor**, **m \_ crInkWidth** e **m \_ WinRect** contengono valori per il colore, la larghezza dell'input penna e il rettangolo di disegno correnti. Il **membro \_ m hWnd** archivia l'handle per la finestra in cui viene eseguito il disegno.
 
-Il disegno effettivo delle immagini viene eseguito usando un handle per un contesto di dispositivo contenuto nel membro **m \_ HDC**. Un handle per la penna di disegno corrente viene mantenuto nel membro **m \_ hPen**. La penna viene distrutta e ricreata quando il colore o la larghezza viene modificato dall'utente.
+Il disegno effettivo delle immagini viene eseguito usando un handle per un contesto di dispositivo contenuto nel **membro m \_ hDC**. Un handle per la penna di disegno corrente viene mantenuto nel membro **m \_ hPen**. La penna viene distrutta e ricreata quando il colore o la larghezza viene modificata dall'utente.
 
-I membri **m \_ pCOPaperSink** e **m \_ dwPaperSink** contengono i valori necessari per la connessione a un documento per ricevere le notifiche in ingresso tramite l'interfaccia [**IPaperSink**](ipapersink-methods.md) . Member **m \_ bDirty** contiene un flag che indica che l'utente ha modificato il disegno e che non riflette più i dati archiviati nel file.
+I **membri m \_ pCOPaperSink** e **m \_ dwPaperSink** contengono i valori necessari per la connessione con COPaper per ricevere notifiche in ingresso tramite [**l'interfaccia IPaperSink.**](ipapersink-methods.md) Il **membro m \_ bDirty** contiene un flag che indica che l'utente ha modificato il disegno e che non riflette più i dati archiviati nel file.
 
-Il membro **m \_ pIPaper** include il puntatore di interfaccia principale all'oggetto Copaper. È possibile accedere a tutte le funzionalità della cocarta tramite questo puntatore.
+Il **membro m \_ pIPaper** contiene il puntatore a interfaccia principale all'oggetto COPaper. Tutte le funzionalità COPaper sono accessibili tramite questo puntatore.
 
-Il **membro \_ nLockKey m** viene usato per supportare uno schema di blocco client usato con più client per consentire a un client di accedere in modo esclusivo a un oggetto Copaper condiviso. Il Copaper assegna **m \_ nLockKey** durante una chiamata [**iPaper**](ipaper-methods.md)::**Lock** e viene passato come parametro dal client nelle chiamate successive a Copaper. Il Copaper eseguirà il lavoro in queste chiamate solo se la chiave di blocco che viene passata corrisponde alla chiave passata a un client da un documento.
+Il **membro m \_ nLockKey** viene usato per supportare uno schema di blocco client usato con più client per consentire a un client l'accesso esclusivo a un oggetto COPaper condiviso. COPaper assegna **m \_ nLockKey** durante una chiamata di blocco [**IPaper**](ipaper-methods.md)**::** e viene passato come parametro dal client nelle chiamate successive a COPaper. COPaper eseguirà il lavoro in queste chiamate solo se la chiave di blocco passata corrisponde all'ultima chiave consegnata a un client da COPaper.
 
-Il membro **m \_ pPapFile** include un puntatore a un oggetto [**CPapFile**](cpapfile-class-and-methods.md) . Si tratta di un oggetto C++ che incapsula le operazioni di caricamento e salvataggio in un file composto di archiviazione strutturata. **CPapFile** funziona con l'oggetto Copaper basato su server sottostante per caricare e salvare i dati di disegno del documento.
+Il **membro m \_ pPapFile** contiene un puntatore a un [**oggetto CPapFile.**](cpapfile-class-and-methods.md) Si tratta di un oggetto C++ che incapsula le operazioni di caricamento e salvataggio in un file composto di archiviazione strutturata. **CPapFile funziona** con l'oggetto COPaper basato su server sottostante per caricare e salvare i dati di disegno di COPaper.
 
- 
+ 
 
- 
+ 
 
 
 

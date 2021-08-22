@@ -1,10 +1,10 @@
 ---
-title: Attributo default-nascondiglio-value
+title: Attributo Default-Hiding-Value
 description: Valore booleano che specifica l'impostazione predefinita della proprietà showInAdvancedViewOnly delle nuove istanze di questa classe.
 ms.assetid: aed0030c-7366-440e-b840-75782cb939d1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo default-nascondiglio-valore
+- Schema AD dell'attributo Default-Hiding-Value
 - Schema AD dell'attributo defaultHidingValue
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 181487fdada61b092bd5014e0fda777e9ca7da90
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d66ae5157d82c09a8a8d9655bca58c96f5c4efc8cc8c12865ae40f6b9f8eade4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509161"
 ---
-# <a name="default-hiding-value-attribute"></a>Attributo default-nascondiglio-value
+# <a name="default-hiding-value-attribute"></a>Attributo Default-Hiding-Value
 
 Valore booleano che specifica l'impostazione predefinita della proprietà showInAdvancedViewOnly delle nuove istanze di questa classe.
 
@@ -29,13 +29,13 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Valore predefinito-nascondiglio                 |
-| LDAP-Display-Name | defaultHidingValue                   |
+| CN                | Default-Hiding-Value                 |
+| Ldap-Display-Name | defaultHidingValue                   |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.518               |
-| System-ID-GUID    | b7b13116-b82e-11d0-afee-0000f80367c1 |
+| System-Id-Guid    | b7b13116-b82e-11d0-afee-0000f80367c1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -44,7 +44,7 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Valore booleano che specifica l'impostazione predefinita della proprietà showIn
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

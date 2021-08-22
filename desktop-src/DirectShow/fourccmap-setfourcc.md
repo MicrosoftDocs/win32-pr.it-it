@@ -1,7 +1,7 @@
 ---
 description: Imposta la parte FOURCC dell'oggetto FOURCCMap.
 ms.assetid: cc821e39-e565-4255-a289-2c9507d43433
-title: 'Metodo FOURCCMap:: SetFOURCC (fourcc. h)'
+title: Metodo FOURCCMap::SetFOURCC (Fourcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 435eb209e39ffad29f041e2e117a45d735abffed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03ac14c7174fde7184bfdbfbb5d82d3fc1288d46ff37158bbbab146c34db5ed9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536831"
 ---
-# <a name="fourccmapsetfourcc-method"></a>Metodo FOURCCMap:: SetFOURCC
+# <a name="fourccmapsetfourcc-method"></a>Metodo FOURCCMap::SetFOURCC
 
-Imposta la parte **fourcc** dell'oggetto [**FOURCCMap**](fourccmap.md) .
+Imposta la **parte FOURCC** dell'oggetto [**FOURCCMap.**](fourccmap.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void SetFOURCC(
 *pguid* 
 </dt> <dd>
 
-Puntatore alla parte dell'identificatore univoco globale (**GUID**) restituita dell'oggetto **FOURCCMap** .
+Puntatore alla parte dell'identificatore univoco globale **(GUID)** restituita **dell'oggetto FOURCCMap.**
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>FourCC. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Fourcc.h (include Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

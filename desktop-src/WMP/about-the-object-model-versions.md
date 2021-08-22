@@ -3,84 +3,84 @@ title: Informazioni sulle versioni del modello a oggetti
 description: Informazioni sulle versioni del modello a oggetti
 ms.assetid: 20bb1681-9079-4f8c-bb5e-5c98e3bdc76a
 keywords:
-- Windows Media Player, versioni
-- Modello a oggetti di Windows Media Player, versioni
-- modello a oggetti, versioni
-- Controllo ActiveX di Windows Media Player, versioni per il modello a oggetti
-- Controllo ActiveX, versioni per il modello a oggetti
-- Controllo ActiveX Windows Media Player Mobile, versioni per il modello a oggetti
+- Windows Media Player,versioni
+- Windows Media Player a oggetti, versioni
+- modello a oggetti,versioni
+- Windows Media Player ActiveX, versioni per il modello a oggetti
+- ActiveX, versioni per il modello a oggetti
+- Windows Media Player Controllo ActiveX per dispositivi mobili, versioni per il modello a oggetti
 - Windows Media Player Mobile, versioni per il modello a oggetti
-- versioni di Windows Media Player, modello a oggetti
+- versioni di Windows Media Player,modello a oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59886f5750b6fc42112f73d6bb6e05e8d013ffdc
-ms.sourcegitcommit: b04e152a7f51618fc174ffa872654623fe088db2
+ms.openlocfilehash: ce90455d93d71f6fde62b97d3b4d38e34963307e60b831c8110a914cc535cffd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "104398751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510061"
 ---
 # <a name="about-the-object-model-versions"></a>Informazioni sulle versioni del modello a oggetti
 
-In Windows Media Player 7,0 è stato introdotto un nuovo modello a oggetti. Questo modello a oggetti è stato esteso con Windows Media Player 7,1, Windows Media Player per Windows XP, Windows Media Player 9 Series, Windows Media Player 10, Windows Media Player 11 e Windows Media Player 12. Ogni argomento del riferimento del modello a oggetti include una sezione requisiti che descrive in dettaglio il requisito minimo per la singola proprietà, metodo o evento. Negli elenchi seguenti vengono illustrati in dettaglio i nuovi oggetti, i metodi, le proprietà e gli eventi aggiunti per ogni versione a partire dalla versione 7,0. Questi elenchi includono inoltre nuove interfacce, metodi ed eventi di C++.
+Windows Media Player 7.0 ha introdotto un nuovo modello a oggetti. Questo modello a oggetti è stato esteso con Windows Media Player 7.1, Windows Media Player per Windows XP, Windows Media Player serie 9, Windows Media Player 10, Windows Media Player 11 e Windows Media Player 12. Ogni argomento in Riferimento al modello a oggetti include una sezione Requisiti che illustra in dettaglio il requisito minimo per la singola proprietà, metodo o evento. Di seguito sono elencati in dettaglio i nuovi oggetti, metodi, proprietà ed eventi aggiunti per ogni versione a partire dalla versione 7.0. Questi elenchi includono anche nuove interfacce, metodi ed eventi C++.
 
-Quando viene esposta anche un'interfaccia nuova o aggiornata come oggetto, viene elencato solo l'oggetto. Per individuare l'interfaccia, fare riferimento al [riferimento del modello a oggetti per C++](object-model-reference-for-c.md). In genere, sarà sufficiente aggiungere il prefisso IWMP al nome dell'oggetto. Se una nuova interfaccia ne estende una esistente, potrebbe essere necessario cercare il numero di versione più recente. Ad esempio, nella serie Windows Media Player 9 sono stati introdotti nuovi metodi e proprietà disponibili dall'oggetto [**Settings**](settings-object.md) . In C++ sono disponibili tramite l'interfaccia [**IWMPSettings2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsettings2) , che estende [**IWMPSettings**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsettings).
+Se un'interfaccia nuova o aggiornata viene esposta anche come oggetto , viene elencato solo l'oggetto . Per individuare l'interfaccia, fare riferimento alle informazioni [di riferimento sul modello a oggetti per C++.](object-model-reference-for-c.md) In genere, è sufficiente aggiungere il prefisso IWMP al nome dell'oggetto. Se una nuova interfaccia estende una esistente, potrebbe essere necessario cercare il numero di versione più recente. Ad esempio, Windows Media Player serie 9 ha introdotto nuove proprietà e metodi disponibili [**dall'oggetto Impostazioni.**](settings-object.md) In C++ sono disponibili tramite [**l'interfaccia IWMPSettings2,**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsettings2) che estende [**IWMPSettings**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsettings).
 
-## <a name="added-for-windows-media-player-71"></a>Aggiunta per Windows Media Player 7,1
+## <a name="added-for-windows-media-player-71"></a>Aggiunta per Windows Media Player 7.1
 
--   [**Proprietà Player. stretchToFit**](player-stretchtofit.md)
+-   [**Proprietà Player.stretchToFit**](player-stretchtofit.md)
 
 ## <a name="added-for-windows-media-player-for-windows-xp"></a>Aggiunta per Windows Media Player per Windows XP
 
--   [**Metodo Controls. Step**](controls-step.md)
+-   [**Metodo Controls.step**](controls-step.md)
 -   [**Oggetto DVD**](dvd-object.md)
--   [**Proprietà media. Error**](media-error.md)
--   [**Evento Player. DomainChange**](player-player-domainchange.md)
--   [**Evento Player. errore MediaError**](player-player-mediaerror.md)
--   [**Evento Player. OpenPlaylistSwitch**](player-player-openplaylistswitch.md)
--   [**Proprietà Player. windowlessVideo**](player-windowlessvideo.md)
+-   [**Proprietà Media.error**](media-error.md)
+-   [**Evento Player.DomainChange**](player-player-domainchange.md)
+-   [**Evento Player.MediaError**](player-player-mediaerror.md)
+-   [**Evento Player.OpenPlaylistSwitch**](player-player-openplaylistswitch.md)
+-   [**Proprietà Player.windowlessVideo**](player-windowlessvideo.md)
 
-## <a name="added-for-windows-media-player-9-series"></a>Aggiunta per la serie Windows Media Player 9
+## <a name="added-for-windows-media-player-9-series"></a>Aggiunta per Windows Media Player serie 9
 
--   [**ClosedCaption. getSAMILangID, metodo**](closedcaption-getsamilangid.md)
--   [**ClosedCaption. getSAMILangName, metodo**](closedcaption-getsamilangname.md)
--   [**ClosedCaption. getSAMIStyleName, metodo**](closedcaption-getsamistylename.md)
--   [**Proprietà ClosedCaption. SAMILangCount**](closedcaption-samilangcount.md)
--   [**Proprietà ClosedCaption. SAMIStyleCount**](closedcaption-samistylecount.md)
--   [**Proprietà Controls. audioLanguageCount**](controls-audiolanguagecount.md)
--   [**Proprietà Controls. currentAudioLanguage**](controls-currentaudiolanguage.md)
--   [**Proprietà Controls. currentAudioLanguageIndex**](controls-currentaudiolanguageindex.md)
--   [**Proprietà Controls. currentPositionTimecode**](controls-currentpositiontimecode.md)
--   [**Controls. getAudioLanguageDescription, metodo**](controls-getaudiolanguagedescription.md)
--   [**Controls. getAudioLanguageID, metodo**](controls-getaudiolanguageid.md)
--   [**Controls. getLanguageName, metodo**](controls-getlanguagename.md)
--   [**Proprietà ErrorItem. Condition**](erroritem-condition.md)
--   [**Proprietà External. appColorLight**](external-appcolorlight.md)
--   [**Evento External. OnColorChange**](external-oncolorchange-event.md)
--   [**Proprietà External. Version**](external-version.md)
--   [**IWMPEvents::P evento layerDockedStateChange**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-playerdockedstatechange)
--   [**IWMPEvents::P evento layerReconnect**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-playerreconnect)
--   [**Evento IWMPEvents:: SwitchedToControl**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-switchedtocontrol)
--   [**Evento IWMPEvents:: SwitchedToPlayerApplication**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-switchedtoplayerapplication)
+-   [**Metodo ClosedCaption.getSAMILangID**](closedcaption-getsamilangid.md)
+-   [**Metodo ClosedCaption.getSAMILangName**](closedcaption-getsamilangname.md)
+-   [**Metodo ClosedCaption.getSAMIStyleName**](closedcaption-getsamistylename.md)
+-   [**Proprietà ClosedCaption.SAMILangCount**](closedcaption-samilangcount.md)
+-   [**Proprietà ClosedCaption.SAMIStyleCount**](closedcaption-samistylecount.md)
+-   [**Proprietà Controls.audioLanguageCount**](controls-audiolanguagecount.md)
+-   [**Proprietà Controls.currentAudioLanguage**](controls-currentaudiolanguage.md)
+-   [**Proprietà Controls.currentAudioLanguageIndex**](controls-currentaudiolanguageindex.md)
+-   [**Proprietà Controls.currentPositionTimecode**](controls-currentpositiontimecode.md)
+-   [**Metodo Controls.getAudioLanguageDescription**](controls-getaudiolanguagedescription.md)
+-   [**Metodo Controls.getAudioLanguageID**](controls-getaudiolanguageid.md)
+-   [**Metodo Controls.getLanguageName**](controls-getlanguagename.md)
+-   [**Proprietà ErrorItem.condition**](erroritem-condition.md)
+-   [**Proprietà External.appColorLight**](external-appcolorlight.md)
+-   [**Evento External.OnColorChange**](external-oncolorchange-event.md)
+-   [**Proprietà External.version**](external-version.md)
+-   [**Evento IWMPEvents::P layerDockedStateChange**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-playerdockedstatechange)
+-   [**Evento IWMPEvents::P layerReconnect**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-playerreconnect)
+-   [**Evento IWMPEvents::SwitchedToControl**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-switchedtocontrol)
+-   [**Evento IWMPEvents::SwitchedToPlayerApplication**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-switchedtoplayerapplication)
 -   [**Interfaccia IWMPPlayerServices**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplayerservices)
 -   [**Interfaccia IWMPRemoteMediaServices**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpremotemediaservices)
 -   [**Interfaccia IWMPSkinManager**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpskinmanager)
--   [**Media. getAttributeCountByType, metodo**](media-getattributecountbytype.md)
--   [**Media. getItemInfoByType, metodo**](media-getiteminfobytype.md)
+-   [**Metodo Media.getAttributeCountByType**](media-getattributecountbytype.md)
+-   [**Metodo Media.getItemInfoByType**](media-getiteminfobytype.md)
 -   [**Oggetto MetadataPicture**](metadatapicture-object.md)
 -   [**Oggetto MetadataText**](metadatatext-object.md)
--   [**Evento Player. AudioLanguageChange**](player-player-audiolanguagechange.md)
--   [**Proprietà Player. Remote**](player-isremote.md)
--   [**Evento Player. MediaCollectionAttributeStringChanged**](player-player-mediacollectionattributestringchanged.md)
--   [**Player. newMedia, metodo**](player-newmedia.md)
--   [**Player. nuova playlist, metodo**](player-newplaylist.md)
--   [**Player. openPlayer, metodo**](player-openplayer.md)
--   [**Proprietà Player. playerApplication**](player-playerapplication.md)
--   [**Evento Player. StatusChange**](player-player-statuschange.md)
+-   [**Evento Player.AudioLanguageChange**](player-player-audiolanguagechange.md)
+-   [**Proprietà Player.isRemote**](player-isremote.md)
+-   [**Evento Player.MediaCollectionAttributeStringChanged**](player-player-mediacollectionattributestringchanged.md)
+-   [**Metodo Player.newMedia**](player-newmedia.md)
+-   [**Metodo Player.newPlaylist**](player-newplaylist.md)
+-   [**Metodo Player.openPlayer**](player-openplayer.md)
+-   [**Proprietà Player.playerApplication**](player-playerapplication.md)
+-   [**Evento Player.StatusChange**](player-player-statuschange.md)
 -   [**Oggetto PlayerApplication**](playerapplication-object.md)
--   [**Proprietà Settings. defaultAudioLanguage**](settings-defaultaudiolanguage.md)
--   [**Proprietà Settings. mediaAccessRights**](settings-mediaaccessrights.md)
--   [**Settings. requestMediaAccessRights, metodo**](settings-requestmediaaccessrights.md)
+-   [**Impostazioni.defaultAudioLanguage**](settings-defaultaudiolanguage.md)
+-   [**Proprietà Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
+-   [**Metodo Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 
 ## <a name="added-for-windows-media-player-10"></a>Aggiunta per Windows Media Player 10
 
@@ -113,9 +113,9 @@ Quando viene esposta anche un'interfaccia nuova o aggiornata come oggetto, viene
 -   [**Interfaccia IWMPStringCollection2 (VB e C#)**](iwmpstringcollection2--vb-and-c.md)
 -   [**Interfaccia IWMPSyncDevice2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice2)
 -   [**Interfaccia IWMPVideoRenderConfig**](/previous-versions/windows/desktop/api/wmprealestate/nn-wmprealestate-iwmpvideorenderconfig)
--   [**Oggetto query**](query-object.md)
--   [**Enumerazione WMPBurnFormat**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)
--   [**Enumerazione WMPBurnState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
+-   [**Oggetto Query**](query-object.md)
+-   [**Enumerazione WMPKindFormat**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)
+-   [**Enumerazione WMPKindState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
 -   [**Enumerazione WMPLibraryType**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmplibrarytype)
 -   [**Enumerazione WMPRipState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate)
 
@@ -133,12 +133,12 @@ Quando viene esposta anche un'interfaccia nuova o aggiornata come oggetto, viene
 [**Informazioni sul modello a oggetti del lettore**](about-the-player-object-model.md)
 </dt> <dt>
 
-[**Riferimento del modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
+[**Informazioni di riferimento sul modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

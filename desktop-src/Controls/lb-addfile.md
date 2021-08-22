@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_ADDFILE (winuser. h)
-description: Aggiunge il nome file specificato a una casella di riepilogo contenente un elenco di directory.
+title: LB_ADDFILE messaggio (Winuser.h)
+description: Aggiunge il nome file specificato a una casella di riepilogo che contiene un elenco di directory.
 ms.assetid: 60426293-779b-4a4b-95a2-4901b5f6a13b
 keywords:
-- Controlli di Windows Message LB_ADDFILE
+- LB_ADDFILE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18b3d66c6a6c8495c67df2078370911ca9cd31df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8077bda3015fef36d6383f37f272ddaf25469fcb6930bb38bd0fa8122efc5b55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434481"
 ---
-# <a name="lb_addfile-message"></a>\_Messaggio AddFile lb
+# <a name="lb_addfile-message"></a>Messaggio \_ ADDFILE di LB
 
-Aggiunge il nome file specificato a una casella di riepilogo contenente un elenco di directory.
+Aggiunge il nome file specificato a una casella di riepilogo che contiene un elenco di directory.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,15 +45,15 @@ Puntatore a un buffer che specifica il nome del file da aggiungere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice in base zero del file che è stato aggiunto oppure LB \_ Err se si verifica un errore.
+Il valore restituito è l'indice in base zero del file aggiunto o LB \_ ERR se si verifica un errore.
 
 ## <a name="remarks"></a>Commenti
 
-La casella di riepilogo a cui viene aggiunto *lParam* deve essere stata compilata dalla funzione [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) .
+La casella di riepilogo a *cui viene aggiunto lParam* deve essere stata compilata dalla [**funzione DlgDirList.**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista)
 
-Il messaggio [**lb \_ INITSTORAGE**](lb-initstorage.md) consente di velocizzare l'inizializzazione di caselle di riepilogo con un numero elevato di elementi (più di 100). Si riserva la quantità di memoria specificata in modo che i messaggi **lb \_ AddFile** il tempo più breve possibile. È possibile utilizzare le stime per i parametri *wParam* e *lParam* . Se si esegue la sovrastima, viene allocata la memoria aggiuntiva. Se si sottovaluta, l'allocazione normale viene utilizzata per gli elementi che superano la quantità richiesta.
+Il [**messaggio \_ LB INITSTORAGE**](lb-initstorage.md) consente di velocizzare l'inizializzazione delle caselle di riepilogo con un numero elevato di elementi (più di 100). Riserva la quantità di memoria specificata in modo che i messaggi **\_ ADDFILE LB** successivi prendano il tempo più breve possibile. È possibile usare stime per i *parametri wParam* *e lParam.* Se si sovrastima, viene allocata memoria aggiuntiva. Se si sottovaluta, l'allocazione normale viene usata per gli elementi che superano la quantità richiesta.
 
-Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilogo in formato Unicode usando CP \_ ACP. Ciò può causare problemi. Ad esempio, i caratteri romani accentati in una casella di riepilogo non Unicode nelle finestre giapponesi verranno disattivati. Per risolvere questo problema, compilare l'applicazione come Unicode o utilizzare una casella di riepilogo creata dal proprietario.
+Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilogo in Unicode usando CP \_ ACP. Ciò può causare problemi. Ad esempio, i caratteri romani accentati in una casella di riepilogo non Unicode in giapponese Windows verranno visualizzati in gran parte. Per risolvere questo problema, compilare l'applicazione come Unicode o usare una casella di riepilogo disegnata dal proprietario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilo
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilo
 [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista)
 </dt> <dt>
 
-[**\_ADDSTRING lb**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> </dl>
 
  

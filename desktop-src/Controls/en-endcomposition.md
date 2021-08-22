@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_ENDCOMPOSITION (RichEdit. h)
-description: Notifica a una finestra padre del controllo Rich Edit che l'utente ha immesso nuovi dati o ha terminato l'immissione dei dati durante l'uso di IME o del Framework dei servizi di testo.
+title: EN_ENDCOMPOSITION di notifica (Richedit.h)
+description: Notifica a una finestra padre del controllo Rich Edit che l'utente ha immesso nuovi dati o ha completato l'immissione dei dati durante l'uso di IME o Framework servizi di testo.
 ms.assetid: 3956313F-F82F-41A2-AEDA-52E63218977C
 keywords:
-- Controlli di Windows per il codice di notifica EN_ENDCOMPOSITION
+- EN_ENDCOMPOSITION codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df1c2b5d08b2da73c67edeb6fe7ca4ac639000c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d9fe75910ea018cf9d72dd14696067eb0b2bc00dabd4456cca63e41a099a75d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436850"
 ---
-# <a name="en_endcomposition-notification-code"></a>\_Codice di notifica en ENDCOMPOSITION
+# <a name="en_endcomposition-notification-code"></a>Codice di notifica EN \_ ENDCOMPOSITION
 
-Notifica a una finestra padre del controllo Rich Edit che l'utente ha immesso nuovi dati o ha terminato l'immissione dei dati durante l'uso di IME o del [Framework dei servizi di testo](/windows/desktop/TSF/text-services-framework).
+Notifica a una finestra padre del controllo Rich Edit che l'utente ha immesso nuovi dati o ha completato l'immissione dei dati durante l'uso di IME [o Framework servizi di testo](/windows/desktop/TSF/text-services-framework).
 
 
 ```C++
@@ -51,9 +51,9 @@ Struttura [**ENDCOMPOSITIONNOTIFY**](/windows/win32/api/richedit/ns-richedit-end
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

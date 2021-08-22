@@ -1,9 +1,9 @@
 ---
-title: funzione glIsTexture (GL. h)
+title: Funzione glIsTexture (Gl.h)
 description: La funzione glIsTexture determina se un nome corrisponde a una trama.
 ms.assetid: 89d06642-ff28-4a67-ac7f-ca58150f301e
 keywords:
-- funzione glIsTexture OpenGL
+- Funzione glIsTexture OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8897cc0eb004da701f28b410f2ca28b6194c9d26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7db28b6892d5aa0e9eaf98aec50b02ad102db8ba549474c673c6c0d918d799d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493351"
 ---
-# <a name="glistexture-function"></a>glIsTexture (funzione)
+# <a name="glistexture-function"></a>Funzione glIsTexture
 
-La funzione **glIsTexture** determina se un nome corrisponde a una trama.
+La **funzione glIsTexture** determina se un nome corrisponde a una trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ GLboolean WINAPI glIsTexture(
 
 <dl> <dt>
 
-*trama* 
+*Texture* 
 </dt> <dd>
 
 Valore che rappresenta il nome di una trama.
@@ -49,24 +49,24 @@ Valore che rappresenta il nome di una trama.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Se il parametro *texture* è attualmente il nome di una trama, la funzione **glIsTexture** restituisce GL \_ true. La funzione **glIsTexture** restituisce GL \_ false se *texture* è zero. Restituisce anche GL \_ false se è un valore diverso da zero che non è attualmente il nome di una trama o se si verifica un errore.
+Se il *parametro texture* è attualmente il nome di una trama, la **funzione glIsTexture** restituisce GL \_ TRUE. La **funzione glIsTexture** restituisce GL \_ FALSE se *texture* è zero. Restituisce anche GL FALSE se è un valore diverso da zero che non è attualmente il nome di una trama o \_ se si verifica un errore.
 
-Non è possibile includere chiamate a **glIsTexture** negli elenchi di visualizzazione.
+Non è possibile includere chiamate **a glIsTexture** negli elenchi di visualizzazione.
 
 > [!Note]  
-> La funzione **glIsTexture** è disponibile solo in OpenGL versione 1,1 o successiva.
+> La **funzione glIsTexture** è disponibile solo in OpenGL versione 1.1 o successiva.
 
  
 
@@ -78,8 +78,8 @@ Non è possibile includere chiamate a **glIsTexture** negli elenchi di visualizz
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -94,7 +94,7 @@ Non è possibile includere chiamate a **glIsTexture** negli elenchi di visualizz
 [**glBindTexture**](glbindtexture.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGenTextures**](glgentextures.md)

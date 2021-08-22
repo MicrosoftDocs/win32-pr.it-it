@@ -1,8 +1,8 @@
 ---
-description: Imposta la nuova configurazione attiva dell'agente di raccolta.
+description: Impostare la nuova configurazione attiva dell'agente di raccolta.
 ms.assetid: 1979e657-a8f3-4eab-991c-a884bde10724
 ms.tgt_platform: multiple
-title: Metodo di configurazione della classe Control
+title: Metodo SetConfiguration della classe Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 4f482de9c4cd8f410371da51e605762a1f92e104
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 41ff2c97eaa4b3e2080493c640b716ae4a822762b0f598c94e141a8cc4b4ac6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589071"
 ---
-# <a name="setconfiguration-method-of-the-control-class"></a>Metodo di configurazione della classe Control
+# <a name="setconfiguration-method-of-the-control-class"></a>Metodo SetConfiguration della classe Control
 
-Imposta la nuova configurazione attiva dell'agente di raccolta.
+Impostare la nuova configurazione attiva dell'agente di raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,66 +48,66 @@ Uint32 SetConfiguration(
 
 <dl> <dt>
 
-*Configurazione* \[ di in\]
+*Configurazione* \[ Pollici\]
 </dt> <dd>
 
 Configurazione da attivare.
 
 </dd> <dt>
 
-*OldTimestampLow* \[ in\]
+*OldTimestampLow* \[ Pollici\]
 </dt> <dd>
 
-Bit di ordine inferiore di un timestamp che indica quando è stata impostata la configurazione attiva corrente. Il controllo di atomicità è abilitato se questa proprietà non è impostata su 0.
+Bit di ordine basso di un timestamp che indica quando è stata impostata la configurazione attiva corrente. Il controllo dell'atomicità è abilitato se questa proprietà non è impostata su 0.
 
 </dd> <dt>
 
-*OldTimestampHigh* \[ in\]
+*OldTimestampHigh* \[ Pollici\]
 </dt> <dd>
 
-Bit di ordine superiore di un timestamp che indica quando è stata impostata la configurazione attiva corrente. Il controllo di atomicità è abilitato se questa proprietà non è impostata su 0.
+Bit più elevati di un timestamp che indica quando è stata impostata la configurazione attiva corrente. Il controllo dell'atomicità è abilitato se questa proprietà non è impostata su 0.
 
 </dd> <dt>
 
-*NewTimestampLow* \[ out\]
+*NewTimestampLow* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo restituisce un risultato, questo parametro contiene i bit di ordine inferiore di un timestamp che indica quando è stata impostata la nuova configurazione. Il controllo di atomicità è abilitato se questa proprietà non è impostata su 0.
+Quando questo metodo viene restituito, questo parametro contiene i bit di ordine più basso di un timestamp che indica quando è stata impostata la nuova configurazione. Il controllo dell'atomicità è abilitato se questa proprietà non è impostata su 0.
 
 </dd> <dt>
 
-*NewTimestampHigh* \[ out\]
+*NewTimestampHigh* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo viene restituito, questo parametro contiene i bit più significativi del timestamp che indica quando è stata impostata la nuova configurazione. Il controllo di atomicità è abilitato se questa proprietà non è impostata su 0.
+Quando questo metodo viene restituito, questo parametro contiene i bit più elevati del timestamp che indica quando è stata impostata la nuova configurazione. Il controllo dell'atomicità è abilitato se questa proprietà non è impostata su 0.
 
 </dd> <dt>
 
-*ErrorString* \[ out\]
+*ErrorString* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo restituisce, se si è verificato un errore, questo parametro contiene la descrizione dell'errore.
+Quando questo metodo viene restituito, se si è verificato un errore, questo parametro contiene la descrizione dell'errore.
 
 </dd> <dt>
 
-*WarningString* \[ out\]
+*WarningString* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo termina, questo parametro contiene tutti i messaggi di avviso per l'operazione.
+Quando questo metodo viene restituito, questo parametro contiene tutti i messaggi di avviso per l'operazione.
 
 </dd> <dt>
 
-*InfoString* \[ out\]
+*InfoString* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo restituisce un risultato, questo parametro contiene informazioni per la nuova configurazione attiva.
+Quando questo metodo viene restituito, questo parametro contiene informazioni per la nuova configurazione attiva.
 
 </dd> <dt>
 
-*ErrorType* \[ out\]
+*ErrorType* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo restituisce, se si è verificato un errore, questo parametro indica il tipo di errore.
+Quando questo metodo viene restituito, se si è verificato un errore, questo parametro indica il tipo di errore.
 
 <dt>
 
@@ -181,10 +181,10 @@ Operazione completata
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                       |
-| Spazio dei nomi<br/>                | Radice \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Consente di eseguire il commit degli indici appena creati nel database specificato.
+description: Esegue il commit degli indici appena creati nel database specificato.
 ms.assetid: 92f05e5f-599a-4870-8175-61b83c943514
-title: SdbCommitIndexes (funzione)
+title: Funzione SdbCommitIndexes
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 0709a913dc78cefdf405a0a3bd29030801941c37
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1c133b55456dec402e54c3bcd24b7e84c81752d467be5cf7872896deaafdf424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571341"
 ---
-# <a name="sdbcommitindexes-function"></a>SdbCommitIndexes (funzione)
+# <a name="sdbcommitindexes-function"></a>Funzione SdbCommitIndexes
 
-Consente di eseguire il commit degli indici appena creati nel database specificato.
+Esegue il commit degli indici appena creati nel database specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ BOOL WINAPI SdbCommitIndexes(
 
 <dl> <dt>
 
-*PDB* \[ in uscita\]
+*pdb* \[ in, out\]
 </dt> <dd>
 
 Handle per il database shim.
@@ -48,7 +48,7 @@ Handle per il database shim.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

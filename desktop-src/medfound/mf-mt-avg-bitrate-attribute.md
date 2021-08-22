@@ -1,19 +1,19 @@
 ---
-description: Frequenza approssimativa dei dati del flusso video, in bit al secondo, per un tipo di supporto video.
+description: Velocità approssimativa dei dati del flusso video, in bit al secondo, per un tipo di supporto video.
 ms.assetid: cf9374a7-3688-4a6c-8339-d68c267c9bed
-title: Attributo MF_MT_AVG_BITRATE (Mfapi. h)
+title: MF_MT_AVG_BITRATE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e4497c58abf8587e72dea47d4f8ac222a1b0692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b88ae74eafa9542e42a6def6f25c8bb0fbf3675c320b3e0760c17a40388885ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104401773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664271"
 ---
-# <a name="mf_mt_avg_bitrate-attribute"></a>\_ \_ \_ Attributo media bitrate MF mt
+# <a name="mf_mt_avg_bitrate-attribute"></a>Attributo \_ MF MT \_ AVG \_ BITRATE
 
-Frequenza approssimativa dei dati del flusso video, in bit al secondo, per un tipo di supporto video.
+Velocità approssimativa dei dati del flusso video, in bit al secondo, per un tipo di supporto video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Frequenza approssimativa dei dati del flusso video, in bit al secondo, per un ti
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **dwBitRate** delle strutture [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) e [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) .
+Questo attributo corrisponde al **membro dwBitRate** delle strutture [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) e [**VIDEOINFOHEADER2.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

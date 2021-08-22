@@ -1,7 +1,7 @@
 ---
-description: Invia messaggi in ingresso inviati, controlla la coda di messaggi del thread per un messaggio inviato e recupera il messaggio (se presente).
+description: Invia i messaggi inviati in ingresso, verifica la presenza di un messaggio inviato nella coda dei messaggi del thread e recupera il messaggio (se presente).
 ms.assetid: 6b20f354-413d-4197-8b49-e6f965121865
-title: Funzione _PeekMessage
+title: _PeekMessage funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: d37e43078e429013d2c7efebf38dfcfa75a12236
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a2fbfcf1903fcafba77227a6b2b9f51b9c6a45ef2e8a20f7482db1f3ec2a7e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538891"
 ---
-# <a name="_peekmessage-function"></a>\_PeekMessage (funzione)
+# <a name="_peekmessage-function"></a>\_Funzione PeekMessage
 
-\[Questa funzione è un wrapper per la funzione **PeekMessage** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **PeekMessage** .\]
+\[Questa funzione è un wrapper sulla **funzione PeekMessage.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono **chiamare direttamente PeekMessage.**\]
 
-Invia messaggi in ingresso inviati, controlla la coda di messaggi del thread per un messaggio inviato e recupera il messaggio (se presente). Vedere [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea).
+Invia i messaggi inviati in ingresso, verifica la presenza di un messaggio inviato nella coda dei messaggi del thread e recupera il messaggio (se presente). Vedere [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea).
 
 ## <a name="syntax"></a>Sintassi
 

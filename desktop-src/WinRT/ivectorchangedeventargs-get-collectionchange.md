@@ -1,7 +1,7 @@
 ---
 description: Ottiene il tipo di modifica che si è verificata nel vettore.
 ms.assetid: 213f4794-b972-44e3-a400-8a24b1583ddd
-title: 'Metodo IVectorChangedEventArgs:: get_CollectionChange (IVectorChangedEventArgs. h)'
+title: Metodo IVectorChangedEventArgs::get_CollectionChange (IVectorChangedEventArgs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IVectorChangedEventArgs.h
-ms.openlocfilehash: a843574bcaf93ec524173ba76800cc15012c89fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2476f9563b4e2a0cabf9babbcfc265ee4f3549416c2fdfda0dbb0f204b7ca9bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504811"
 ---
-# <a name="ivectorchangedeventargsget_collectionchange-method"></a>Metodo IVectorChangedEventArgs:: Get \_ CollectionChange
+# <a name="ivectorchangedeventargsget_collectionchange-method"></a>Metodo IVectorChangedEventArgs::get \_ CollectionChange
 
 Ottiene il tipo di modifica che si è verificata nel vettore.
 
@@ -39,12 +39,12 @@ HRESULT get_CollectionChange(
 
 <dl> <dt>
 
-*valore* \[ di out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **CollectionChange \** _
+Tipo: **CollectionChange \***
 
-Valore dell'enumerazione [_ *CollectionChange* *](/uwp/api/Windows.Foundation.Collections.CollectionChange?view=winrt-19041) che descrive la modifica.
+Valore [**dell'enumerazione CollectionChange**](/uwp/api/Windows.Foundation.Collections.CollectionChange?view=winrt-19041) che descrive la modifica.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Valore dell'enumerazione [_ *CollectionChange* *](/uwp/api/Windows.Foundation.Co
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                 |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                       |
-| Intestazione<br/>                   | <dl> <dt>IVectorChangedEventArgs. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IVectorChangedEventArgs.h</dt> </dl> |
 
 
 

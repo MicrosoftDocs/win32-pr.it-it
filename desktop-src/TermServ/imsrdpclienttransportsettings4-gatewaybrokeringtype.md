@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayBrokeringType di IMsRdpClientTransportSettings4
+title: Proprietà IMsRdpClientTransportSettings4 GatewayBrokeringType
 description: Ottiene e imposta il tipo di broker del gateway.
 ms.assetid: be98538e-e875-48cd-9c8b-5e588f5e1c46
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayBrokeringType
-- Servizi Desktop remoto proprietà GatewayBrokeringType, interfaccia IMsRdpClientTransportSettings4
-- Interfaccia IMsRdpClientTransportSettings4 Servizi Desktop remoto, proprietà GatewayBrokeringType
+- Proprietà GatewayBrokeringType Servizi Desktop remoto
+- Proprietà GatewayBrokeringType Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings4
+- Interfaccia IMsRdpClientTransportSettings4 Servizi Desktop remoto , proprietà GatewayBrokeringType
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98d0a8588331d775cecb667375e0db6d873f59e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aab168b185a20f0a6371e9d3182b1e120ec5b52d27331a412bb3c71564b8edd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620771"
 ---
-# <a name="imsrdpclienttransportsettings4gatewaybrokeringtype-property"></a>Proprietà IMsRdpClientTransportSettings4:: GatewayBrokeringType
+# <a name="imsrdpclienttransportsettings4gatewaybrokeringtype-property"></a>Proprietà IMsRdpClientTransportSettings4::GatewayBrokeringType
 
 Ottiene e imposta il tipo di broker del gateway.
 
@@ -53,7 +53,7 @@ Tipo.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                            |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                 |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                 |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | IID<br/>                      | IID \_ IMsRdpClientTransportSettings4 è definito come 011C3236-4D81-4515-9143-067AB630D299<br/> |

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica HDN_DROPDOWN (COMmctrl. h)
-description: Inviato da un controllo intestazione al relativo elemento padre quando si fa clic sulla freccia a discesa del controllo intestazione. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: HDN_DROPDOWN di notifica (Commctrl.h)
+description: Inviato da un controllo intestazione al relativo elemento padre quando si fa clic sulla freccia a discesa sul controllo intestazione. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: cacf5cb9-0593-42ff-868d-b098481f565f
 keywords:
-- Controlli di Windows per il codice di notifica HDN_DROPDOWN
+- HDN_DROPDOWN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0ae7f2e2ee31feab1d8a2293913ac875a03718
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a5a7e423c40fa655a9eca0e5b97c20a2d61add1e6c0b7f66b65a69afdc32a55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435571"
 ---
-# <a name="hdn_dropdown-notification-code"></a>\_Codice di notifica a discesa HDN
+# <a name="hdn_dropdown-notification-code"></a>Codice di notifica a discesa HDN \_
 
-Inviato da un controllo intestazione al relativo elemento padre quando si fa clic sulla freccia a discesa del controllo intestazione. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo intestazione al relativo elemento padre quando si fa clic sulla freccia a discesa sul controllo intestazione. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ HDN_DROPDOWN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) che contiene informazioni sul controllo intestazione.
+Puntatore a una [**struttura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) che contiene informazioni sul controllo intestazione.
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio nella sezione Syntax viene illustrato come il ricevitore di notifiche esegue il cast di **lParam** per recuperare la struttura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) . **WParam** contiene l'ID del controllo che invia questo messaggio.
+L'esempio nella sezione Sintassi mostra come il ricevitore della notifica esegue il cast **di LPARAM** per recuperare la [**struttura NMHEADER.**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) **WPARAM** contiene l'ID del controllo che invia il messaggio.
 
-Questo messaggio viene inviato solo se lo stile HDF \_ SPLITBUTTON è impostato sull'elemento dell'intestazione.
+Questo messaggio viene inviato solo se lo stile HDF \_ SPLITBUTTON è impostato sull'elemento di intestazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Questo messaggio viene inviato solo se lo stile HDF \_ SPLITBUTTON è impostato 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

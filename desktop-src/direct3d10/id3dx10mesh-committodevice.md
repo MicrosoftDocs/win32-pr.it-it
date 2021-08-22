@@ -1,7 +1,7 @@
 ---
-description: Eseguire il commit di tutte le modifiche apportate a una mesh al dispositivo, in modo che sia possibile eseguire il rendering delle modifiche. Questa operazione deve essere chiamata dopo che i dati di una mesh vengono modificati e prima che ne venga eseguito il rendering. Non è possibile eseguire il rendering di una mesh a meno che non ne venga eseguito il commit nel dispositivo. Vedere la sezione Osservazioni.
+description: Eseguire il commit delle modifiche apportate a una mesh nel dispositivo in modo che sia possibile eseguire il rendering delle modifiche. Questa operazione deve essere chiamata dopo che i dati di una mesh sono stati modificati e prima che ne venga eseguito il rendering. Non è possibile eseguire il rendering di una mesh a meno che non ne venga eseguito il commit nel dispositivo. Vedere la sezione Osservazioni.
 ms.assetid: 26927553-d1d8-4745-85ad-a8a6fe949306
-title: 'Metodo ID3DX10Mesh:: CommitToDevice (D3DX10. h)'
+title: Metodo ID3DX10Mesh::CommitToDevice (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 160f97a3a00ddc7bbf69989991b2794ab3d6e5e8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 50dde79e57ca7edf838f05b1fa1b4d10f5da5cc936b3cbf563c7838703650806
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567031"
 ---
-# <a name="id3dx10meshcommittodevice-method"></a>Metodo ID3DX10Mesh:: CommitToDevice
+# <a name="id3dx10meshcommittodevice-method"></a>Metodo ID3DX10Mesh::CommitToDevice
 
-Eseguire il commit di tutte le modifiche apportate a una mesh al dispositivo, in modo che sia possibile eseguire il rendering delle modifiche. Questa operazione deve essere chiamata dopo che i dati di una mesh vengono modificati e prima che ne venga eseguito il rendering. Non è possibile eseguire il rendering di una mesh a meno che non ne venga eseguito il commit nel dispositivo. Vedere la sezione Osservazioni.
+Eseguire il commit delle modifiche apportate a una mesh nel dispositivo in modo che sia possibile eseguire il rendering delle modifiche. Questa operazione deve essere chiamata dopo che i dati di una mesh sono stati modificati e prima che ne venga eseguito il rendering. Non è possibile eseguire il rendering di una mesh a meno che non ne venga eseguito il commit nel dispositivo. Vedere la sezione Osservazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene caricata una mesh, i dati vengono caricati nelle risorse di staging, ovvero i dati possono essere modificati ma non sottoposti a rendering. Quando viene chiamato CommitToDevice, i dati delle risorse di gestione temporanea vengono copiati nelle risorse del dispositivo in modo che possano essere sottoposti a rendering. Sebbene i dati vengano sottoposte a commit nel dispositivo, le risorse di gestione temporanea rimangono e possono essere modificate. Se vengono apportate modifiche alle risorse di gestione temporanea, è necessario eseguire di nuovo il commit delle risorse di gestione temporanea sul dispositivo per poter eseguire il rendering delle modifiche sullo schermo.
+Quando una mesh viene caricata, i dati vengono caricati nelle risorse di staging, vale a dire che i dati possono essere modificati ma non sottoposti a rendering. Quando viene chiamato CommitToDevice, i dati delle risorse di staging vengono copiati nelle risorse del dispositivo in modo da poter essere sottoposti a rendering. Anche se viene eseguito il commit dei dati nel dispositivo, le risorse di staging rimangono e possono essere modificate. Se vengono apportate modifiche alle risorse di staging, è necessario eseguire nuovamente il commit delle risorse di staging nel dispositivo per poterne eseguire il rendering sullo schermo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Quando viene caricata una mesh, i dati vengono caricati nelle risorse di staging
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

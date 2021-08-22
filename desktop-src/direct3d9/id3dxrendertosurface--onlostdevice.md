@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 772b678dc4260954c2e03c13d7259565cd896bdc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9073cfbc4c51b04049f39d5788b7538f768cebc82ac1036a5fdf1901f2418412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492411"
 ---
 # <a name="id3dxrendertosurfaceonlostdevice-method"></a>Metodo ID3DXRenderToSurface::OnLostDevice
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset) Anche se il dispositivo non è stato effettivamente perso, ID3DXRenderToSurface::OnLostDevice è responsabile del rilascio degli blocchi di stato e di altre risorse che potrebbero dover essere rilasciate prima della reimpostazione del dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e quindi ID3DXRenderToSurface::OnResetDevice.
+Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset) Anche se il dispositivo non è stato effettivamente perso, ID3DXRenderToSurface::OnLostDevice è responsabile del rilascio di blocchi di stato e di altre risorse che potrebbero essere necessarie prima di reimpostare il dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e quindi ID3DXRenderToSurface::OnResetDevice.
 
 ## <a name="requirements"></a>Requisiti
 

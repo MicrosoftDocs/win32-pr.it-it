@@ -1,9 +1,9 @@
 ---
 title: Media.name
-description: La proprietà Name specifica o Recupera il nome dell'elemento multimediale.
+description: La proprietà name specifica o recupera il nome dell'elemento multimediale.
 ms.assetid: 68aba78a-86fd-4411-9ac4-58f38d915e2c
 keywords:
-- Media Player Windows Media.name
+- Media.name Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9de8095d88c3ddec9049e0b43461adcf5553ec74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3abe6df00b5674cfbd443a5838b208814e30c5ecf75875586907314fc3a39d9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616857"
 ---
 # <a name="medianame"></a>Media.name
 
-La proprietà **Name** specifica o Recupera il nome dell'elemento multimediale.
+La **proprietà name** specifica o recupera il nome dell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *currentMedia*. **nome**
+*lettore*. *currentMedia*. **name**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di lettura/scrittura contenente il nome dell'elemento multimediale.
+Questa proprietà è una stringa di **lettura/scrittura** contenente il nome dell'elemento multimediale.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per specificare il valore di questa proprietà, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per specificare il valore di questa proprietà, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Prima di utilizzare questo metodo per specificare il nome di un elemento multimediale, utilizzare **isReadOnlyItem** per determinare se è possibile impostare il nome.
+Prima di usare questo metodo per specificare il nome di un elemento multimediale, usare **isReadOnlyItem** per determinare se è possibile impostare il nome.
 
 **Windows Media Player 10 Mobile:** Questa proprietà è di sola lettura.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato il *supporto*. **nome** per modificare il nome dell'elemento multimediale corrente. Un elemento input di testo HTML denominato NameText consente all'utente di immettere una stringa di testo per il nuovo nome. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *Media*. **name** per modificare il nome dell'elemento multimediale corrente. Un elemento di input HTML TEXT denominato NameText consente all'utente di immettere una stringa di testo per il nuovo nome. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -68,7 +68,7 @@ Nell'esempio JScript seguente viene usato il *supporto*. **nome** per modificare
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -80,10 +80,10 @@ Nell'esempio JScript seguente viene usato il *supporto*. **nome** per modificare
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

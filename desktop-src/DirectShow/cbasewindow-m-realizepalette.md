@@ -1,7 +1,7 @@
 ---
 description: Messaggio privato che realizza la tavolozza.
 ms.assetid: 1a8c9b31-031f-48c4-8f97-58b824d38e06
-title: 'Membro CBaseWindow:: m_RealizePalette (Winutil. h)'
+title: Membro CBaseWindow::m_RealizePalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ad05b499432747bde52651bcabe576fe9f356b28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd1e51a48b4e359f8000b3be5e40b3bbfa725507bdb956d637ea8ded98eaad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567431"
 ---
-# <a name="cbasewindowm_realizepalette-member"></a>Membro RealizePalette di CBaseWindow:: m \_
+# <a name="cbasewindowm_realizepalette-member"></a>Membro CBaseWindow::m \_ RealizePalette
 
 Messaggio privato che realizza la tavolozza.
 
@@ -38,7 +38,7 @@ UINT m_RealizePalette;
 
 ## <a name="remarks"></a>Osservazioni
 
-Il metodo [**CBaseWindow:: Setavolozza**](cbasewindow-setpalette.md) Invia questo messaggio.
+Il [**metodo CBaseWindow::SetPalette**](cbasewindow-setpalette.md) invia questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il metodo [**CBaseWindow:: Setavolozza**](cbasewindow-setpalette.md) Invia quest
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

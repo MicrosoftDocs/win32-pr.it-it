@@ -1,7 +1,7 @@
 ---
-description: Rappresenta la funzionalità di riassociazione cronologia file che consente a un utente di ristabilire una relazione con una destinazione di backup utilizzata dallo stesso utente in passato. La riassociazione viene eseguita chiamando i metodi dell'interfaccia IFhReassociation.
+description: Rappresenta la Cronologia file di riassociazione, che consente a un utente di ristabilire una relazione con una destinazione di backup usata in passato dallo stesso utente. La riassociazione viene eseguita chiamando i metodi dell'interfaccia IFhReassociation.
 ms.assetid: BB81F8ED-4DFB-4FA5-B3ED-ACBAB32BBE3D
-title: Classe FhReassociation (Fhcfg. h)
+title: Classe FhReassociation (Fhcfg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Fhcfg.idl
-ms.openlocfilehash: 1e303799a792e788fcb948ad6d3c6e2fd732e26e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f4b8cb55ce4b374f7f17f16044811a930623fc777a028ee98b5d8726bf714cce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538511"
 ---
 # <a name="fhreassociation-class"></a>Classe FhReassociation
 
-Rappresenta la funzionalità di riassociazione cronologia file che consente a un utente di ristabilire una relazione con una destinazione di backup utilizzata dallo stesso utente in passato. La riassociazione viene eseguita chiamando i metodi dell'interfaccia [**IFhReassociation**](/windows/desktop/api/Fhcfg/nn-fhcfg-ifhreassociation) .
+Rappresenta la Cronologia file di riassociazione, che consente a un utente di ristabilire una relazione con una destinazione di backup usata in passato dallo stesso utente. La riassociazione viene eseguita chiamando i metodi [**dell'interfaccia IFhReassociation.**](/windows/desktop/api/Fhcfg/nn-fhcfg-ifhreassociation)
 
 ## <a name="when-to-implement"></a>Quando implementare
 
-L'API cronologia file implementa questa classe. Per creare un'istanza di questa classe, utilizzare la funzione [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) .
+L'API Cronologia file implementa questa classe. Per creare un'istanza di questa classe, usare la [**funzione CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,10 +34,10 @@ L'API cronologia file implementa questa classe. Per creare un'istanza di questa 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Fhcfg. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Fhcfg. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Fhcfg.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Fhcfg.idl</dt> </dl> |
 
 
 

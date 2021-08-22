@@ -4,12 +4,12 @@ description: Questa sezione illustra come elaborare le notifiche di selezione da
 ms.assetid: DBF624F0-89E0-435B-BE96-60B7A4CEDA61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa1214ebd671b4ae222990bde4b44586e6d7b11
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 81846d22f3c946d1bfdf661823429fd092b78647cf0ebcb0d683d2600ddcaf17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540480"
 ---
 # <a name="how-to-process-date-and-time-picker-notifications"></a>Come elaborare le notifiche di selezione data e ora
 
@@ -19,19 +19,19 @@ Questa sezione illustra come elaborare le notifiche di selezione data e ora.
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione Interfaccia utente Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
 Un controllo di selezione data e ora (DTP) invia messaggi di notifica alla finestra padre quando si verificano eventi, in genere attivati dall'input dell'utente, nel controllo. L'applicazione deve includere codice per determinare il tipo di messaggio di notifica e rispondere in modo appropriato.
 
-Se si prevede di usare i campi di callback con i controlli DTP nell'applicazione, è necessario essere pronti per gestire i codici di notifica [DTN \_ FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)e [DTN \_ WMKEYDOWN.](dtn-wmkeydown.md) Per altre informazioni sui campi di callback, vedere [Campi di callback](date-and-time-picker-controls.md).
+Se si prevede di usare i campi di callback con i controlli DTP nell'applicazione, è necessario essere pronti a gestire i codici di notifica [DTN \_ FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)e [DTN \_ WMKEYDOWN.](dtn-wmkeydown.md) Per altre informazioni sui campi di callback, vedere [Campi di callback.](date-and-time-picker-controls.md)
 
 L'esempio di codice C++ seguente identifica il messaggio di notifica inviato da un controllo DTP e chiama la funzione appropriata definita dall'applicazione. Fare riferimento agli argomenti seguenti per esempi di codice che illustrano come elaborare le notifiche visualizzate in questo esempio.
 

@@ -5,12 +5,12 @@ ms.assetid: 984e21cf-3671-4aca-9e8e-bcad1fa2f02c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4630bfc41ecbc0cc9372ae6bb99ce6d3184e4b6e
-ms.sourcegitcommit: 2e9db3c7d9a3dbea15196b03c883846fad6f32be
+ms.openlocfilehash: 0a39042997fd61b3e8bb96eb7fb8030d0fbe1c91d7aa84b9c1482319355db411
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "103719240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620691"
 ---
 # <a name="display-event-collector-subscription-properties"></a>Visualizzare le proprietà della sottoscrizione dell'agente di raccolta eventi
 
@@ -18,25 +18,25 @@ ms.locfileid: "103719240"
 
 > [!Note]
 >
-> È possibile usare questo esempio per visualizzare i valori delle proprietà di una sottoscrizione oppure è possibile digitare il comando seguente al prompt dei comandi:
+> È possibile usare questo esempio per visualizzare i valori delle proprietà di una sottoscrizione oppure digitare il comando seguente al prompt dei comandi:
 >
-> *sottoscrizione* **wecutil gs**
+> **wecutil gs** *SubscriptionName*
 
- 
+ 
 
-Per visualizzarne le proprietà, specificare il nome di una sottoscrizione. Per ulteriori informazioni e un esempio di codice C++ su come elencare i nomi delle sottoscrizioni correnti in un computer locale, vedere [elenco delle sottoscrizioni](listing-event-collector-subscriptions.md)degli agenti di raccolta eventi oppure digitare il comando seguente al prompt dei comandi:
+Per visualizzare le proprietà, specificare il nome di una sottoscrizione. Per altre informazioni e un esempio di codice C++ su come elencare i nomi delle sottoscrizioni correnti in un computer locale, vedere [Elenco](listing-event-collector-subscriptions.md)delle sottoscrizioni dell'agente di raccolta eventi oppure è possibile digitare il comando seguente al prompt dei comandi:
 
 **wecutil es**
 
-Nell'esempio di codice seguente viene seguita una procedura per visualizzare le proprietà di una sottoscrizione dell'agente di raccolta eventi e delle origini eventi associate.
+L'esempio di codice seguente segue una procedura per visualizzare le proprietà di una sottoscrizione dell'agente di raccolta eventi e le origini eventi associate.
 
-**Per visualizzare le proprietà di una sottoscrizione dell'agente di raccolta eventi e delle origini eventi**
+**Per visualizzare le proprietà di una sottoscrizione dell'agente di raccolta eventi e le relative origini eventi**
 
-1.  Aprire la sottoscrizione fornendo il nome della sottoscrizione e i diritti di accesso come parametri della funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Per ulteriori informazioni sui diritti di accesso, vedere [**costanti dell'agente di raccolta eventi di Windows**](windows-event-collector-constants.md).
-2.  Ottenere e visualizzare le proprietà della sottoscrizione e delle origini evento chiamando la funzione [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) e la funzione [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . Per ulteriori informazioni sulle proprietà delle sottoscrizioni e delle origini eventi che possono essere visualizzate, vedere l'enumerazione dell' [**\_ ID della \_ proprietà \_ della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Chiudere la sottoscrizione chiamando la funzione [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Aprire la sottoscrizione specificando il nome della sottoscrizione e i diritti di accesso come parametri per la [**funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**Costanti dell'agente Windows eventi**](windows-event-collector-constants.md).
+2.  Ottenere e visualizzare le proprietà della sottoscrizione e delle origini eventi chiamando la [**funzione EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) e [**la funzione EcGetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) Per altre informazioni sulle proprietà della sottoscrizione e dell'origine evento che è possibile visualizzare, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come visualizzare le proprietà di una sottoscrizione di raccolta eventi.
+Nell'esempio di codice C++ seguente viene illustrato come visualizzare le proprietà di una sottoscrizione dell'agente di raccolta eventi.
 
 
 ```C++
@@ -774,15 +774,15 @@ std::wstring ConvertEcSubscriptionType(DWORD code)
 
 <dl> <dt>
 
-[Elenco delle sottoscrizioni degli agenti di raccolta eventi](listing-event-collector-subscriptions.md)
+[Elenco delle sottoscrizioni dell'agente di raccolta eventi](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
