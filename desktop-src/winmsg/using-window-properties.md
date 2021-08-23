@@ -1,28 +1,28 @@
 ---
-description: In questa sezione viene illustrato come eseguire le attività seguenti associate alle proprietà della finestra.
+description: Questa sezione illustra come eseguire le attività seguenti associate alle proprietà della finestra.
 ms.assetid: cdf196ec-300c-4c7b-8a4f-68088c4a2507
 title: Uso delle proprietà della finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 736682eb34191a061aa9753ef9d5e8c7e366fbe3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b59fcb4cb0346554ee2df5c1b2fc92df7675cd61d11799b891156b13f26fb213
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028269"
 ---
 # <a name="using-window-properties"></a>Uso delle proprietà della finestra
 
-In questa sezione viene illustrato come eseguire le attività seguenti associate alle proprietà della finestra.
+Questa sezione illustra come eseguire le attività seguenti associate alle proprietà della finestra.
 
 -   [Aggiunta di una proprietà della finestra](#adding-a-window-property)
 -   [Recupero di una proprietà della finestra](#retrieving-a-window-property)
 -   [Elenco delle proprietà della finestra per una determinata finestra](#listing-window-properties-for-a-given-window)
--   [Eliminazione di una proprietà di finestra](#deleting-a-window-property)
+-   [Eliminazione di una proprietà della finestra](#deleting-a-window-property)
 
 ## <a name="adding-a-window-property"></a>Aggiunta di una proprietà della finestra
 
-Nell'esempio seguente vengono caricati un'icona e quindi un cursore e viene allocata memoria per un buffer. Nell'esempio viene quindi utilizzata la funzione [**seprop**](/windows/win32/api/winuser/nf-winuser-setpropa) per assegnare l'icona, il cursore e gli handle di memoria risultanti come proprietà della finestra identificata dalla variabile hwndSubclass definita dall'applicazione. Le proprietà sono identificate dall'icona della PROP delle stringhe \_ , dal \_ cursore prop e dal buffer Prop \_ .
+Nell'esempio seguente viene caricata un'icona e quindi un cursore e viene allocata memoria per un buffer. Nell'esempio viene quindi utilizzata la funzione [**SetProp**](/windows/win32/api/winuser/nf-winuser-setpropa) per assegnare l'icona, il cursore e gli handle di memoria risultanti come proprietà della finestra identificata dalla variabile hwndSubclass definita dall'applicazione. Le proprietà sono identificate dalle stringhe PROP \_ ICON, PROP \_ CURSOR e PROP \_ BUFFER.
 
 
 ```
@@ -67,7 +67,7 @@ SetProp(hwndSubclass, "PROP_BUFFER", hMem);
 
 ## <a name="retrieving-a-window-property"></a>Recupero di una proprietà della finestra
 
-Una finestra può creare handle per i dati della proprietà della finestra e utilizzare i dati per qualsiasi scopo. Nell'esempio seguente viene usato [**GetProp**](/windows/win32/api/winuser/nf-winuser-getpropa) per ottenere handle per le proprietà della finestra identificate dall' \_ icona prop, dal cursore prop e dal \_ \_ buffer prop. Nell'esempio viene quindi visualizzato il contenuto del buffer di memoria, del cursore e dell'icona appena ottenuti nell'area client della finestra.
+Una finestra può creare handle per i dati delle proprietà della finestra e usare i dati per qualsiasi scopo. L'esempio seguente usa [**GetProp**](/windows/win32/api/winuser/nf-winuser-getpropa) per ottenere gli handle per le proprietà della finestra identificate da PROP \_ ICON, PROP \_ CURSOR e PROP \_ BUFFER. Nell'esempio vengono quindi visualizzati il contenuto del buffer di memoria, del cursore e dell'icona appena ottenuti nell'area client della finestra.
 
 
 ```
@@ -112,7 +112,7 @@ TextOut(hdc, 10, 10, tchBuffer, *nSize);
 
 ## <a name="listing-window-properties-for-a-given-window"></a>Elenco delle proprietà della finestra per una determinata finestra
 
-Nell'esempio seguente, la funzione [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) elenca gli identificatori di stringa delle proprietà della finestra per la finestra identificata dalla variabile hwndSubclass definita dall'applicazione. Questa funzione si basa sulla funzione di callback definita dall'applicazione WinPropProc per visualizzare le stringhe nell'area client della finestra.
+Nell'esempio seguente la [**funzione EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) elenca gli identificatori di stringa delle proprietà della finestra identificate dalla variabile hwndSubclass definita dall'applicazione. Questa funzione si basa sulla funzione di callback winPropProc definita dall'applicazione per visualizzare le stringhe nell'area client della finestra.
 
 
 ```
@@ -155,9 +155,9 @@ BOOL CALLBACK WinPropProc(
 
 
 
-## <a name="deleting-a-window-property"></a>Eliminazione di una proprietà di finestra
+## <a name="deleting-a-window-property"></a>Eliminazione di una proprietà della finestra
 
-Quando una finestra viene distrutta, deve eliminare tutte le proprietà della finestra impostate. L'esempio seguente usa la funzione [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) e la funzione di callback definita dall'applicazione DelPropProc per eliminare definitivamente le proprietà associate alla finestra identificata dalla variabile hwndSubclass definita dall'applicazione. Viene visualizzata anche la funzione di callback, che usa la funzione [**RemoveProp**](/windows/win32/api/winuser/nf-winuser-removepropa) .
+Quando una finestra viene distrutta, deve eliminare tutte le proprietà della finestra impostate. L'esempio seguente usa la funzione [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) e la funzione di callback definita dall'applicazione DelPropProc per eliminare le proprietà associate alla finestra identificata dalla variabile hwndSubclass definita dall'applicazione. Viene visualizzata anche la funzione di callback, che usa la [**funzione RemoveProp.**](/windows/win32/api/winuser/nf-winuser-removepropa)
 
 
 ```

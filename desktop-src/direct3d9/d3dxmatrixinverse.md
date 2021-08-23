@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0109481beaea282a785564c081e498fe4c7571b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6cacb0c8ccff72506c82f0145955cb2a95d4c1084f3e9e6c508682d2761189e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044889"
 ---
 # <a name="d3dxmatrixinverse-function-d3dx9mathh"></a>Funzione D3DXMatrixInverse (D3dx9math.h)
 
@@ -47,7 +47,7 @@ D3DXMATRIX* D3DXMatrixInverse(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Puntatore alla struttura [**D3DXMATRIX di**](d3dxmatrix.md) origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta l'inverso della matrice. Se l'inversione della matrice ha esito negativo, **viene restituito** NULL.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta l'inverso della matrice. Se l'inversione della matrice ha esito negativo, **viene restituito NULL.**
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixInverse** può essere usata come parametro per un'altra funzione.
 

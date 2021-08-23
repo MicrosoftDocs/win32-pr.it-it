@@ -4,44 +4,44 @@ description: Gestione delle playlist di sincronizzazione
 ms.assetid: 5891ada0-37a6-4256-9885-8aa9dbe98b7c
 keywords:
 - Windows Media Player, dispositivi portatili
-- Modello a oggetti di Windows Media Player, dispositivi portatili
+- Windows Media Player a oggetti, dispositivi portatili
 - modello a oggetti, dispositivi portatili
-- Controllo ActiveX Windows Media Player, dispositivi portatili
-- Controllo ActiveX, dispositivi portatili
-- Controllo ActiveX Windows Media Player Mobile, dispositivi portatili
-- Dispositivi portatili Windows Media Player Mobile
+- Windows Media Player ActiveX, dispositivi portatili
+- ActiveX, dispositivi portatili
+- Windows Media Player Controllo ActiveX per dispositivi mobili, dispositivi portatili
+- Windows Media Player Dispositivi mobili, portatili
 - dispositivi portatili, gestione delle playlist di sincronizzazione
-- sincronizzazione dei dispositivi, playlist
+- Sincronizzazione dei dispositivi, playlist
 - sincronizzazione di dispositivi, playlist
-- Media Player di Windows, playlist di sincronizzazione
-- Modello a oggetti di Windows Media Player, playlist di sincronizzazione
+- Windows Media Player, playlist di sincronizzazione
+- Windows Media Player a oggetti, playlist di sincronizzazione
 - modello a oggetti, playlist di sincronizzazione
-- Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX di Windows Media Player, playlist di sincronizzazione
-- Controllo ActiveX Windows Media Player Mobile, playlist di sincronizzazione
-- Controllo ActiveX, playlist di sincronizzazione
+- Windows Media Player Dispositivi mobili, playlist di sincronizzazione
+- Windows Media Player ActiveX, playlist di sincronizzazione
+- Windows Media Player Controllo ActiveX per dispositivi mobili, playlist di sincronizzazione
+- ActiveX, playlist di sincronizzazione
 - playlist, sincronizzazione
 - playlist di metafile, sincronizzazione
-- Playlist di Windows Media Metafile, sincronizzazione
+- Windows playlist metafile multimediali,sincronizzazione
 - playlist di sincronizzazione, gestione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be0fe084918c0b69b827dbb941388246cbd177ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 10253d7f08c618d62079ccc1767fdaf85560861eae68d39cd897e7959eaffcad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996371"
 ---
 # <a name="managing-synchronization-playlists"></a>Gestione delle playlist di sincronizzazione
 
-Windows Media Player 10 o versioni successive usa le playlist per sincronizzare i file multimediali digitali con i dispositivi portatili. Questa sezione illustra come usare le playlist di sincronizzazione.
+Windows Media Player 10 o versioni successive usa playlist per sincronizzare i file multimediali digitali con dispositivi portatili. Questa sezione illustra come usare le playlist di sincronizzazione.
 
-Il codice di esempio in questa sezione usa due controlli ListView per visualizzare le informazioni. Il primo controllo ListView (IDC \_ PLVIEW) Visualizza tutte le playlist nella libreria Media Player di Windows, con le playlist di sincronizzazione visualizzate per prime. Le playlist di sincronizzazione per il dispositivo attualmente selezionato sono contrassegnate con un segno di spunta e sono ordinate in ordine di priorità di sincronizzazione. Tutte le altre playlist sono deselezionate. Il controllo ListView è stato configurato per la selezione singola. L'ordine delle playlist nel controllo ListView determina la relativa priorità di sincronizzazione. Lo stato di selezione di una singola playlist determina se si tratta di una playlist di sincronizzazione per il dispositivo attualmente selezionato.
+Il codice di esempio in questa sezione usa due controlli ListView per visualizzare le informazioni. Il primo controllo ListView (IDC PLVIEW) visualizza tutte le playlist nella libreria Windows Media Player, con le playlist di \_ sincronizzazione visualizzate per prime. Le playlist di sincronizzazione per il dispositivo attualmente selezionato sono contrassegnate con un segno di spunta e sono ordinate in ordine di priorità di sincronizzazione. Tutte le altre playlist sono deselezionate. Il controllo ListView è stato configurato per la selezione singola. L'ordine delle playlist nel controllo ListView determina la priorità di sincronizzazione. Lo stato selezionato di una singola playlist determina se si tratta di una playlist di sincronizzazione per il dispositivo attualmente selezionato.
 
-Il secondo controllo ListView (IDC \_ MEDIAVIEW) Visualizza gli elementi multimediali nella playlist selezionata. Due colonne aggiuntive visualizzano il testo che indica se il file multimediale digitale è stato copiato nel dispositivo e, in caso di errore, se la copia non è riuscita perché il file multimediale digitale non è adatto.
+Il secondo controllo ListView (IDC \_ MEDIAVIEW) visualizza gli elementi multimediali nella playlist selezionata. Due colonne aggiuntive visualizzano il testo che indica se il file multimediale digitale è stato copiato nel dispositivo e, in caso di errore, se la copia non è riuscita perché il file multimediale digitale non è adatto.
 
-Il codice di esempio seguente mostra come vengono inizializzati i controlli ListView:
+Il codice di esempio seguente illustra come vengono inizializzati i controlli ListView:
 
 
 ```C++
@@ -102,7 +102,7 @@ STDMETHODIMP CSyncSettings::InitListView()
 
 
 
-La matrice di stringhe seguente contiene i nomi degli attributi di sincronizzazione utilizzati negli esempi:
+La matrice di stringhe seguente contiene i nomi degli attributi di sincronizzazione usati negli esempi:
 
 
 ```C++
@@ -128,7 +128,7 @@ static const TCHAR *g_szSyncAttributeNames[17] = {
 
 
 
-La variabile membro seguente contiene una playlist contenente tutte le playlist nella libreria Media Player di Windows. Ogni playlist è rappresentata come un elemento multimediale.
+La variabile membro seguente contiene una playlist contenente tutte le playlist nella Windows Media Player libreria. Ogni playlist è rappresentata come elemento multimediale.
 
 
 ```C++
@@ -137,10 +137,10 @@ CComPtr<IWMPPlaylist> m_spPlaylist;
 
 
 
-Nelle sezioni seguenti viene fornito codice di esempio:
+Le sezioni seguenti forniscono codice di esempio:
 
 -   [Enumerazione delle playlist di sincronizzazione](enumerating-synchronization-playlists.md)
--   [Ordinamento delle playlist per priorità di sincronizzazione](sorting-playlists-by-synchronization-priority.md)
+-   [Ordinamento delle playlist in base alla priorità di sincronizzazione](sorting-playlists-by-synchronization-priority.md)
 -   [Enumerazione degli elementi multimediali](enumerating-the-media-items.md)
 -   [Determinazione dello stato di sincronizzazione della playlist](determining-playlist-synchronization-state.md)
 -   [Modifica della priorità di sincronizzazione](changing-synchronization-priority.md)
@@ -149,12 +149,12 @@ Nelle sezioni seguenti viene fornito codice di esempio:
 
 <dl> <dt>
 
-[**Uso dei dispositivi portatili**](working-with-portable-devices.md)
+[**Uso di dispositivi portatili**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

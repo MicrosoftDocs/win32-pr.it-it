@@ -1,9 +1,9 @@
 ---
-title: Funzione D2DGetInput (D2d1effecthelpers. h)
-description: Restituisce il colore dell'input N nella coordinata di input. Disponibile solo per gli input semplici.
+title: Funzione D2DGetInput (D2d1effecthelpers.h)
+description: Restituisce il colore dell'input N in corrispondenza della coordinata di input. Disponibile solo per input semplici.
 ms.assetid: 74B6F814-53C7-4C8C-B45C-3CB23B9D8BED
 keywords:
-- Direct2D funzione D2DGetInput
+- Funzione D2DGetInput Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6ec0fe858149ee53da1f8ca8a02c12756d6a90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37de536eb6ac36af3e8aa1ffca61c3840cf6c84e585466a56a447522c4d628d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075315"
 ---
-# <a name="d2dgetinput-function"></a>D2DGetInput (funzione)
+# <a name="d2dgetinput-function"></a>Funzione D2DGetInput
 
-Restituisce il colore dell'input N nella coordinata di input. Disponibile solo per gli input semplici.
+Restituisce il colore dell'input N in corrispondenza della coordinata di input. Disponibile solo per input semplici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Numero di input.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un **float4** contenente il colore RGBA nel formato inputn.
+La funzione restituisce un **valore float4** contenente il colore RGBA nel formato INPUTN.
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio seguente viene illustrata la funzione utilizzata come parte di un effetto composito aritmetico.
+L'esempio seguente illustra la funzione usata come parte di un effetto composito aritmetico.
 
 ``` syntax
   
@@ -65,7 +65,7 @@ D2D_PS_ENTRY(PS_NAME)
 }  
 ```
 
-Per un altro esempio dell'uso di questa funzione, vedere anche la sezione Osservazioni per la [ \_ \_ voce D2D PS](d2d-ps-entry.md) .
+Per un altro esempio dell'uso di questa funzione, vedere anche le osservazioni relative a [D2D \_ PS \_ ENTRY.](d2d-ps-entry.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per un altro esempio dell'uso di questa funzione, vedere anche la sezione Osserv
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. hlsli</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.hlsli</dt> </dl> |
 | DLL<br/>    | <dl> <dt>D2d1.dll</dt> </dl>                |
 
 
@@ -82,7 +82,7 @@ Per un altro esempio dell'uso di questa funzione, vedere anche la sezione Osserv
 
 <dl> <dt>
 
-[Collegamento Effect shader](effect-shader-linking.md)
+[Collegamento degli effetti shader](effect-shader-linking.md)
 </dt> <dt>
 
 [Helper HLSL](hlsl-helpers.md)

@@ -1,9 +1,9 @@
 ---
-title: Player. playerApplication
-description: La proprietà playerApplication recupera l'oggetto PlayerApplication quando viene eseguito un controllo Media Player Windows remoto.
+title: Player.playerApplication
+description: La proprietà playerApplication recupera l'oggetto PlayerApplication quando è in esecuzione un controllo Windows Media Player remoto.
 ms.assetid: 09a8a63f-455f-4f81-8fdb-7de337139dea
 keywords:
-- Player. playerApplication Windows Media Player
+- Player.playerApplication Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 401ebaae52efb746e7119419774d87d72c642fc4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c47400fcba1cb1cd1679e747d4fdd49b155df921ec33a721f74df2ec25259600
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995851"
 ---
-# <a name="playerplayerapplication"></a>Player. playerApplication
+# <a name="playerplayerapplication"></a>Player.playerApplication
 
-La proprietà **playerApplication** recupera l'oggetto **playerApplication** quando viene eseguito un controllo Media Player Windows remoto.
+La **proprietà playerApplication** recupera l'oggetto **PlayerApplication** quando un controllo Windows Media Player remoto è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,13 +31,13 @@ La proprietà **playerApplication** recupera l'oggetto **playerApplication** qua
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un oggetto **PlayerApplication** di sola lettura o il valore null.
+Questa proprietà è un oggetto **PlayerApplication** di sola lettura o il valore Null.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene utilizzata solo quando si esegue la comunicazione remota di Windows Media playercontrol. Se il valore è null, Windows Media playercontrol non è incorporato in modalità remota.
+Questa proprietà viene usata solo quando si esegue la comunicazione remota Windows Media Playercontrol. Se il valore è Null, il Windows Media Playercontrol non è incorporato in modalità remota.
 
-Questa proprietà è accessibile solo nel codice C++ o nel codice di script nelle interfacce tramite la variabile globale playerApplication.
+Questa proprietà è accessibile solo nel codice C++ o nel codice script nelle skin tramite la variabile globale playerApplication.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Questa proprietà è accessibile solo nel codice C++ o nel codice di script nell
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

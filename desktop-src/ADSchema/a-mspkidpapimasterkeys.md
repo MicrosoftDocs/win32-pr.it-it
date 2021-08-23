@@ -1,10 +1,10 @@
 ---
-title: attributo ms-PKI-DPAPIMasterKeys
-description: Archiviazione delle chiavi master DPAPI crittografate per l'utente.
+title: Attributo ms-PKI-DPAPIMasterKeys
+description: Archiviazione chiavi master DPAPI crittografate per l'utente.
 ms.assetid: 91e29a4b-0ff4-49a3-ba7f-18531188b9c0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-PKI-DPAPIMasterKeys
+- Attributo ms-PKI-DPAPIMasterKeys Schema DI AD
 - Schema AD dell'attributo msPKIDPAPIMasterKeys
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c79d9c801243e0ed099b88268e801c633b676679
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 376a4fbd54928ccf4ab20e67b118d91cd0e3712fc24230b5dde654df9c278c6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960330"
 ---
-# <a name="ms-pki-dpapimasterkeys-attribute"></a>attributo ms-PKI-DPAPIMasterKeys
+# <a name="ms-pki-dpapimasterkeys-attribute"></a>Attributo ms-PKI-DPAPIMasterKeys
 
-Archiviazione delle chiavi master DPAPI crittografate per l'utente.
+Archiviazione chiavi master DPAPI crittografate per l'utente.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------|
 | CN                | ms-PKI-DPAPIMasterKeys                          |
-| LDAP-Display-Name | msPKIDPAPIMasterKeys                            |
+| Ldap-Display-Name | msPKIDPAPIMasterKeys                            |
 | Dimensione              | \-                                              |
-| Privilegio aggiornamento  | \-                                              |
+| Aggiorna privilegio  | \-                                              |
 | Frequenza di aggiornamento  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1893                         |
-| System-ID-GUID    | b3f93023-9239-4f7c-b99c-6745d87adbc2            |
+| System-Id-Guid    | b3f93023-9239-4f7c-b99c-6745d87adbc2            |
 | Sintassi            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
@@ -55,15 +55,15 @@ Archiviazione delle chiavi master DPAPI crittografate per l'utente.
 | ID collegamento                | 2046                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Archiviazione delle chiavi master DPAPI crittografate per l'utente.
 | ID collegamento                | 2046                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Archiviazione delle chiavi master DPAPI crittografate per l'utente.
 | ID collegamento                | 2046                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

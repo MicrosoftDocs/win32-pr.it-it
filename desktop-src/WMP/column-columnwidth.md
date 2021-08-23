@@ -1,9 +1,9 @@
 ---
-title: COLUMN. columnWidth
-description: L'attributo columnWidth specifica o Recupera una larghezza di colonna nel controllo PLAYLIST.
+title: COLUMN.columnWidth
+description: L'attributo columnWidth specifica o recupera la larghezza di una colonna nel controllo PLAYLIST.
 ms.assetid: 4c6fabf9-fca0-433a-87bd-17f5d74a0a74
 keywords:
-- Media Player di Windows COLUMN. columnWidth
+- COLUMN.columnWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c12a9037c47fb051dbd0eff909b861390b38794f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6dd9278cd495007825d109ccb13857f3c4e258d373c1830a4b7545f5bf718f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997671"
 ---
-# <a name="columncolumnwidth"></a>COLUMN. columnWidth
+# <a name="columncolumnwidth"></a>COLUMN.columnWidth
 
-L'attributo **ColumnWidth** specifica o Recupera una larghezza di colonna nel controllo **playlist** .
+**L'attributo columnWidth** specifica o recupera la larghezza di una colonna nel **controllo PLAYLIST.**
 
 ``` syntax
         elementID.columnWidth
@@ -29,11 +29,11 @@ L'attributo **ColumnWidth** specifica o Recupera una larghezza di colonna nel co
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresenta la larghezza della colonna in pixel.
+Questo attributo è un numero **di** lettura/scrittura (**long**) che rappresenta la larghezza della colonna in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-Per il funzionamento di questa proprietà, la proprietà **columnResizeMode** deve essere impostata su "Fixed".
+Per il corretto funzionamento di questa proprietà, la proprietà **columnResizeMode** deve essere impostata su "fixed".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per il funzionamento di questa proprietà, la proprietà **columnResizeMode** de
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per il funzionamento di questa proprietà, la proprietà **columnResizeMode** de
 
 <dl> <dt>
 
-[**COLUMN-elemento**](column-element.md)
+[**Elemento COLUMN**](column-element.md)
 </dt> </dl>
 
  

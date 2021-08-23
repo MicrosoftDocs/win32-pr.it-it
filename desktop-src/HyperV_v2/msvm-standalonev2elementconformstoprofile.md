@@ -1,7 +1,7 @@
 ---
 description: Definisce i profili registrati a cui è conforme il sistema autonomo a cui si fa riferimento.
 ms.assetid: d9ede8d0-c6f3-48bd-84a9-7f2c31637819
-title: Classe Msvm_StandaloneV2ElementConformsToProfile
+title: Msvm_StandaloneV2ElementConformsToProfile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c492ad5bdd0e50bbbe86fd220000099269501ef3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5506119f0e8938a29b94b298460a1f164dab97359d13d956bfa5ca74e97a081b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950240"
 ---
-# <a name="msvm_standalonev2elementconformstoprofile-class"></a>\_Classe MSVM StandaloneV2ElementConformsToProfile
+# <a name="msvm_standalonev2elementconformstoprofile-class"></a>Classe Msvm \_ StandaloneV2ElementConformsToProfile
 
 Definisce i profili registrati a cui è conforme il sistema autonomo a cui si fa riferimento.
 
@@ -40,20 +40,20 @@ class Msvm_StandaloneV2ElementConformsToProfile : Msvm_ElementConformsToProfile
 
 ## <a name="members"></a>Members
 
-La **classe \_ StandaloneV2ElementConformsToProfile di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ StandaloneV2ElementConformsToProfile** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ StandaloneV2ElementConformsToProfile di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ StandaloneV2ElementConformsToProfile** ha queste proprietà.
 
 <dl> <dt>
 
-**ConformantStandard**
+**Standard conforme**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ RegisteredProfile**
+Tipo di dati: **Msvm \_ RegisteredProfile**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -69,13 +69,13 @@ Profilo registrato a cui è conforme il sistema autonomo.
 **ManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ ComputerSystem**
+Tipo di dati: **Msvm \_ ComputerSystem**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers), **MSFT \_ targetNamespace** ("root \\ \\ Virtualization \\ \\ v2")
+Qualificatori: [**esegue l'override**](/windows/desktop/WmiSdk/standard-qualifiers)di **, MSFT \_ TargetNamespace** ("root \\ \\ virtualization \\ \\ v2")
 </dt> </dl>
 
 Sistema autonomo conforme al profilo registrato.
@@ -88,10 +88,10 @@ Sistema autonomo conforme al profilo registrato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Interoperabilità radice<br/>                                                                                |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Interoperabilità \\ radice<br/>                                                                                |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -100,7 +100,7 @@ Sistema autonomo conforme al profilo registrato.
 
 <dl> <dt>
 
-[**\_ElementConformsToProfile MSVM**](msvm-elementconformstoprofile.md)
+[**Elemento \_ MsvmConformsToProfile**](msvm-elementconformstoprofile.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Frequenza segmento.
+description: Frequenza dei segmenti.
 ms.assetid: 4deef230-7c7e-4acb-a582-c4836a878b74
-title: 'Membro CBasePin:: m_dRate (Amfilter. h)'
+title: Membro CBasePin::m_dRate (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 751fc6e53e61a4e548b24f641b381d2d68475549
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ffc53785513eca05280852099af0766a887bf704ed14526ca0bf915e855f521
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955150"
 ---
-# <a name="cbasepinm_drate-member"></a>Membro drate di CBasePin:: m \_
+# <a name="cbasepinm_drate-member"></a>Membro CBasePin::m \_ dRate
 
-Frequenza segmento.
+Frequenza dei segmenti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ double m_dRate;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

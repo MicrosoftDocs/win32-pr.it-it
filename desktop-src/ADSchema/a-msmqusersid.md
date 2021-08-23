@@ -1,10 +1,10 @@
 ---
-title: MSMQ-User-SID-attributo
+title: Attributo MSMQ-User-Sid
 description: SID dell'utente migrato.
 ms.assetid: 2bc658b7-987e-464e-9bf9-d4c7fd8a0df8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSMQ-User-SID
+- Schema AD dell'attributo MSMQ-User-Sid
 - Schema AD dell'attributo mSMQUserSid
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dce18d3ad7c153b7484c2f5a815f73005baf2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d521a1f5cdfe49f4e6c030af0d70ef00a326b3382d1f80dd9b71eda977bc417b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960363"
 ---
-# <a name="msmq-user-sid-attribute"></a>MSMQ-User-SID-attributo
+# <a name="msmq-user-sid-attribute"></a>Attributo MSMQ-User-Sid
 
 SID dell'utente migrato.
 
@@ -29,13 +29,13 @@ SID dell'utente migrato.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-utente-SID                                         |
-| LDAP-Display-Name | mSMQUserSid                                           |
+| CN                | MSMQ-User-Sid                                         |
+| Ldap-Display-Name | mSMQUserSid                                           |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1337                               |
-| System-ID-GUID    | c58aae32-56f9-11d2-90d0-00c04fd91ab1                  |
+| System-Id-Guid    | c58aae32-56f9-11d2-90d0-00c04fd91ab1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ SID dell'utente migrato.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Vero                                                        |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Vero                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: SLIDER. backgroundHoverImage
-description: L'attributo backgroundHoverImage specifica o recupera l'immagine di sfondo del dispositivo di scorrimento visualizzato quando si posiziona il puntatore del mouse su di esso.
+title: SLIDER.backgroundHoverImage
+description: L'attributo backgroundHoverImage specifica o recupera l'immagine di sfondo del dispositivo di scorrimento visualizzato al passaggio del mouse.
 ms.assetid: 292af0c4-d720-4f29-9778-6ae83539da70
 keywords:
-- Media Player Windows SLIDER. backgroundHoverImage
+- Slider.backgroundHoverImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f557051ada177275a3d2103b2e9de3ebe00143
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee008583d465f31d4efcd43e6c6970730b4c1c7d7c79b3c4e3db4c79f4f54980
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995221"
 ---
-# <a name="sliderbackgroundhoverimage"></a>SLIDER. backgroundHoverImage
+# <a name="sliderbackgroundhoverimage"></a>SLIDER.backgroundHoverImage
 
-L'attributo **backgroundHoverImage** specifica o recupera l'immagine di sfondo del dispositivo di scorrimento visualizzato quando si posiziona il puntatore del mouse su di esso.
+**L'attributo backgroundHoverImage** specifica o recupera l'immagine di sfondo del dispositivo di scorrimento visualizzato al passaggio del mouse.
 
 ``` syntax
         elementID.backgroundHoverImage
@@ -29,13 +29,13 @@ L'attributo **backgroundHoverImage** specifica o recupera l'immagine di sfondo d
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente il nome di un file di immagine.
+Questo attributo è una stringa di **lettura/scrittura** contenente il nome di un file di immagine.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è facoltativo. Se non viene specificato, verrà utilizzato il **BackgroundImage** .
+Questo attributo è facoltativo. Se non viene specificato, verrà usato **backgroundImage.**
 
-I formati supportati sono BMP, JPG, PNG e GIF (escluse le gif animate).
+I formati supportati sono BMP, JPG, PNG e GIF (senza GIF animate).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ I formati supportati sono BMP, JPG, PNG e GIF (escluse le gif animate).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

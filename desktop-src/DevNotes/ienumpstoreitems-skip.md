@@ -1,7 +1,7 @@
 ---
-description: Ignora il numero specificato successivo di elementi nella sequenza di enumerazione specificata.
+description: Ignora il successivo numero specificato di elementi nella sequenza di enumerazione specificata.
 ms.assetid: 1459c18a-ccff-451f-8904-32858cc72b78
-title: 'Metodo IEnumPStoreItems:: Skip (PStore. h)'
+title: Metodo IEnumPStoreItems::Skip (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 912dea836ec5ac04ddaf54de9f7f7b609e4e23ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f40ac58b6801022d62d536e8f2ad5e2a27a6d5e71f05d5e0ced3656d5d3cf32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955970"
 ---
-# <a name="ienumpstoreitemsskip-method"></a>Metodo IEnumPStoreItems:: Skip
+# <a name="ienumpstoreitemsskip-method"></a>Metodo IEnumPStoreItems::Skip
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
-Ignora il numero specificato successivo di elementi nella sequenza di enumerazione specificata.
+Ignora il successivo numero specificato di elementi nella sequenza di enumerazione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*celt* \[ in\]
+*celt* \[ Pollici\]
 </dt> <dd>
 
 Numero di elementi di dati da ignorare.
@@ -50,7 +50,7 @@ Numero di elementi di dati da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT** .
+Il valore restituito è un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Il valore restituito è un valore **HRESULT** .
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl>    |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

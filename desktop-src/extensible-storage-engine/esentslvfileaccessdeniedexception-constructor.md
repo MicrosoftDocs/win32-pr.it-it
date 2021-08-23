@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSLVFileAccessDeniedException'
+description: Altre informazioni sul costruttore EsentSLVFileAccessDeniedException
 title: Costruttore EsentSLVFileAccessDeniedException
 TOCTitle: 'EsentSLVFileAccessDeniedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVFileAccessDeniedException.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 76ff9cadd936277b6fafc9cc27427c7cd0fb0889
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35d4b40a4fa285ee5516573290374f97636308d0622bc5ed5a27a1a6e6e1e954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981411"
 ---
 # <a name="esentslvfileaccessdeniedexception-constructor"></a>Costruttore EsentSLVFileAccessDeniedException
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public EsentSLVFileAccessDeniedException()
 
 [Membri di EsentSLVFileAccessDeniedException](./esentslvfileaccessdeniedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

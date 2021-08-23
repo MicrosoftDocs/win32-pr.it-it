@@ -3,30 +3,30 @@ title: Visualizzazione della Guida
 description: Visualizzazione della Guida
 ms.assetid: 9fc1b7a8-dde7-474c-931d-066714ba3410
 keywords:
-- Windows Media Player Online Stores, visualizzazione della Guida
-- negozi online, visualizzazione della Guida
-- digitare 1 negozi online, visualizzare la guida
-- Windows Media Player Online Stores, guida
-- negozi online, guida
-- digitare 1 Store online, guida
-- Windows Media Player Online Stores, catcomp.exe
-- archivi online, catcomp.exe
-- digitare 1 Store online, catcomp.exe
+- Windows Media Player online, visualizzazione della Guida
+- online store, visualizzazione della Guida
+- digitare 1 store online, visualizzando la Guida
+- Windows Media Player online store, Guida
+- online stores,Help
+- digitare 1 punti vendita online, Guida
+- Windows Media Player online store,catcomp.exe
+- online store, catcomp.exe
+- digitare 1 online stores,catcomp.exe
 - catcomp.exe
-- Guida per i punti vendita online di tipo 1
+- Guida per i negozi online di tipo 1
 - visualizzazione della Guida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf3458518fbdd199af5fba5d9a62bb1702c6a170
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c7c7a2305f53b29b3cd23067cef7073b4a8c745b9ed5cd68147d59c4fd45bd2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997251"
 ---
 # <a name="displaying-help"></a>Visualizzazione della Guida
 
-Per visualizzare la guida del catalogo, eseguire catcomp.exe senza argomenti:
+Per visualizzare la Guida del catalogo, catcomp.exe senza argomenti:
 
 
 ```C++
@@ -36,9 +36,9 @@ catcomp
 
 
 
- 
+ 
 
- 
+ 
 
 
 

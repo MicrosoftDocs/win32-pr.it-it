@@ -1,11 +1,11 @@
 ---
-title: Proprietà IVMTask complete (VPCCOMInterfaces. h)
+title: Proprietà IVMTask IsComplete (VPCCOMInterfaces.h)
 description: Determina se l'attività è stata completata.
 ms.assetid: 181fa220-4de2-4ab3-950b-fffc4fe4de64
 keywords:
-- Proprietà complete Virtual PC
-- Proprietà complete Virtual PC, interfaccia IVMTask
-- Interfaccia IVMTask Virtual PC, proprietà complete
+- Proprietà IsComplete Virtual PC
+- Proprietà IsComplete Virtual PC, interfaccia IVMTask
+- Interfaccia IVMTask Virtual PC, proprietà IsComplete
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bbf046b4a16ef4e907f1fec0126d08815ca2955
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60c4c347abf9f1cee52990fe779593083b5cbcaadede8c663175e677c8c1f793
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998731"
 ---
-# <a name="ivmtaskiscomplete-property"></a>Proprietà IVMTask:: uncomplete
+# <a name="ivmtaskiscomplete-property"></a>Proprietà IVMTask::IsComplete
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Determina se l'attività è stata completata.
 
@@ -45,7 +45,7 @@ HRESULT get_IsComplete(
 
 ## <a name="property-value"></a>Valore proprietà
 
-**True** se l'attività è stata completata e **false** in caso contrario.
+**TRUE** se l'attività è stata completata e **FALSE in caso contrario.**
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,8 +54,8 @@ HRESULT get_IsComplete(
 | Nome/valore                                                                                                                                                    | Significato                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il valore del parametro è **null**.<br/>  |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il valore del parametro è **NULL.**<br/>  |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -65,11 +65,11 @@ HRESULT get_IsComplete(
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMTask è definito come ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
 
 
@@ -78,7 +78,7 @@ HRESULT get_IsComplete(
 
 <dl> <dt>
 
-[**IVMTask**](ivmtask.md)
+[**Attività IVM**](ivmtask.md)
 </dt> </dl>
 
  

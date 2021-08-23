@@ -1,7 +1,7 @@
 - name: API Magnification
   href: ./entry-magapi-sdk.md
   items:
-    - name: Panoramica dell'API di ingrandimento
+    - name: Panoramica dell'API Ingrandimentotion
       href: ./magapi-intro.md
     - name: Riferimento
       href: ./entry-magapi-ref.md
@@ -9,7 +9,7 @@
         - name: Costanti
           href: ./entry-magapi-constants.md
           items:
-            - name: Stili di ingrandimento
+            - name: Stili di Lente di ingrandimento
               href: ./magapi-magnifier-styles.md
         - name: Funzioni
           href: ./entry-magapi-functions.md

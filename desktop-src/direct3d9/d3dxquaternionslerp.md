@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fb9110da7fae4ebbf4609d361124dbbcdedfe59b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 842ccd74ef7236af7a943a43c0c2701140eb897dff535023a78311dd049f06b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044679"
 ---
 # <a name="d3dxquaternionslerp-function-d3dx9mathh"></a>Funzione D3DXQuaternionSlerp (D3dx9math.h)
 
@@ -48,7 +48,7 @@ D3DXQUATERNION* D3DXQuaternionSlerp(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che indica la distanza da interpolare tra i quaternioni.
+Parametro che indica la distanza di interpolazione tra i quaternioni.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Parametro che indica la distanza da interpolare tra i quaternioni.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'interpolazione.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'interpolazione.
 
 ## <a name="remarks"></a>Commenti
 

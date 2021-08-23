@@ -1,7 +1,7 @@
 ---
 description: Identifica i dati di memoria.
 ms.assetid: 0ec0597f-d83a-4c1e-b993-30f0bbd64e6b
-title: Struttura D3DXF_FILELOADMEMORY (D3dx9xof. h)
+title: D3DXF_FILELOADMEMORY struttura (D3dx9xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: a7ad988d9906101db57af6f8f5042766c3e32ccc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b3709e6eeb99026b76d066edfccbae578b5c851d6e73936ffe06d10fbf69dcb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045059"
 ---
-# <a name="d3dxf_fileloadmemory-structure"></a>\_Struttura D3DXF FILELOADMEMORY
+# <a name="d3dxf_fileloadmemory-structure"></a>Struttura D3DXF \_ FILELOADMEMORY
 
 Identifica i dati di memoria.
 
@@ -54,17 +54,17 @@ Puntatore a un blocco di memoria da caricare.
 **dSize**
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensione del blocco di memoria da caricare, in byte.
+Dimensioni del blocco di memoria da caricare, in byte.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura identifica i dati da caricare dalla memoria quando un'applicazione usa il metodo [**CreateEnumObject**](id3dxfile--createenumobject.md) e specifica il \_ flag D3DXF fileload \_ FROMMEMORY.
+Questa struttura identifica i dati da caricare dalla memoria quando un'applicazione usa il metodo [**CreateEnumObject**](id3dxfile--createenumobject.md) e specifica il flag D3DXF \_ FILELOAD \_ FROMMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Questa struttura identifica i dati da caricare dalla memoria quando un'applicazi
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9xof. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9xof.h</dt> </dl> |
 
 
 

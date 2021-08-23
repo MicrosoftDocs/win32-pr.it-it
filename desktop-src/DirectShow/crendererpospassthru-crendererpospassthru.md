@@ -1,5 +1,5 @@
 ---
-description: Costruttore CRendererPosPassThru.CRendererPosPassThru - Metodo costruttore.
+description: 'Costruttore CRendererPosPassThru.CRendererPosPassThru : metodo costruttore.'
 ms.assetid: 9d6f40ee-31bf-4334-bee5-4be834f1f269
 title: Costruttore CRendererPosPassThru.CRendererPosPassThru (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 59972f12f0f746ef68c267e3fbd0d071d54193c3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5fc61250f75cc8a49d699a5f3bee97b707c59e134864a23eac9887dfb34618f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953800"
 ---
 # <a name="crendererpospassthrucrendererpospassthru-constructor"></a>Costruttore CRendererPosPassThru.CRendererPosPassThru
 
@@ -55,7 +55,7 @@ Puntatore al nome dell'oggetto, a scopo di debug. Allocare questo parametro nell
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

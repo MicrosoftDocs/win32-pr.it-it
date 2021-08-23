@@ -4,8 +4,8 @@ description: Informa il server di una richiesta del debugger in ingresso dal cli
 ms.assetid: 6c868b9e-f25b-4d27-80ff-697d0c005b8d
 keywords:
 - Metodo ServerNotify COM
-- Metodo ServerNotify COM, interfaccia IOrpcDebugNotify
-- Interfaccia IOrpcDebugNotify COM, metodo ServerNotify
+- Metodo ServerNotify COM , interfaccia IOrpcDebugNotify
+- Interfaccia IOrpcDebugNotify COM , metodo ServerNotify
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d6dab7cf68b305e83212045851a88e1cdecdde9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cff0faac4ee4e5fa691088afa9de8871a8bf9382ce3da629b3fc14dd9d932ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048099"
 ---
-# <a name="iorpcdebugnotifyservernotify-method"></a>Metodo IOrpcDebugNotify:: ServerNotify
+# <a name="iorpcdebugnotifyservernotify-method"></a>Metodo IOrpcDebugNotify::ServerNotify
 
 Informa il server di una richiesta del debugger in ingresso dal client.
 
 > [!Note]  
-> Una libreria di importazione contenente la funzione **ServerNotify** non è inclusa in Microsoft Windows Software Development Kit (SDK). Un'applicazione può usare le funzioni [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) per recuperare un puntatore a funzione a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) da oleaut.dll e fornire questa funzione tramite l'interfaccia [**IOrpcDebugNotify**](iorpcdebugnotify.md) .
+> Una libreria di importazione contenente **la funzione ServerNotify** non è inclusa in Microsoft Windows Software Development Kit (SDK). Un'applicazione può usare le funzioni [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) per recuperare un puntatore a funzione a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) da oleaut.dll e fornire questa funzione tramite l'interfaccia [**IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
  
 
@@ -50,7 +50,7 @@ void ServerNotify(
 *lpOrpcDebugAll* 
 </dt> <dd>
 
-Puntatore a una struttura [**ORPC \_ dbg \_ All**](orpc-dbg-all.md) che contiene informazioni specifiche della notifica che il sistema RPC com passa al debugger.
+Puntatore a una [**struttura ORPC \_ DBG \_ ALL**](orpc-dbg-all.md) che contiene informazioni specifiche della notifica passate dal sistema RPC COM al debugger.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                     |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>N/D</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>N/D</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>N/D</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_argomenti init \_ ORPC**](orpc-init-args.md)
+[**ARGOMENTI \_ ORPC INIT \_**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

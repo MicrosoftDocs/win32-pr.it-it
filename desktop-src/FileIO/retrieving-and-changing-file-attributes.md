@@ -4,24 +4,24 @@ ms.assetid: f6eaea8a-0cc2-4fb6-bec5-7fb12b20c075
 title: Recupero e modifica degli attributi di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c980ddd6390f016b2057392f42f6bf645859307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d2609030d1657b78c266ed6b10841159e0df4d40a2e3b07b0fce42e98b45d54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015139"
 ---
 # <a name="retrieving-and-changing-file-attributes"></a>Recupero e modifica degli attributi di file
 
-Un'applicazione può recuperare gli attributi del file tramite la funzione [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) o [**GetFileAttributesEx**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa) . Le funzioni [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) possono impostare molti degli attributi. Tuttavia, le applicazioni non possono impostare tutti gli attributi.
+Un'applicazione può recuperare gli attributi del file usando [**la funzione GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) [**o GetFileAttributesEx.**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa) Le [**funzioni CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) [**e SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) possono impostare molti attributi. Tuttavia, le applicazioni non possono impostare tutti gli attributi.
 
-Nell'esempio di codice in questo argomento viene utilizzata la funzione [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) per copiare tutti i file di testo (con estensione txt) nella directory corrente in una nuova directory di file di sola lettura. I file nella nuova directory vengono modificati in sola lettura, se necessario.
+L'esempio di codice in questo argomento usa la funzione [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) per copiare tutti i file di testo (.txt) nella directory corrente in una nuova directory di file di sola lettura. I file nella nuova directory vengono modificati in sola lettura, se necessario.
 
-L'applicazione crea la directory specificata come parametro tramite la funzione [**CreateDirectory**](/windows/desktop/api/FileAPI/nf-fileapi-createdirectorya) . La directory non deve esistere già.
+L'applicazione crea la directory specificata come parametro usando la [**funzione CreateDirectory.**](/windows/desktop/api/FileAPI/nf-fileapi-createdirectorya) La directory non deve esistere già.
 
-L'applicazione Cerca tutti i file di testo nella directory corrente usando le funzioni [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) e [**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea) . Ogni file di testo viene copiato nella \\ directory TextRO Dopo la copia di un file, la funzione [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) determina se un file è di sola lettura o meno. Se il file non è di sola lettura, l'applicazione modifica le directory in \\ TextRO e converte il file copiato in sola lettura tramite la funzione [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) .
+L'applicazione cerca tutti i file di testo nella directory corrente usando le [**funzioni FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) [**e FindNextFile.**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea) Ogni file di testo viene copiato nella \\ directory TextRO. Dopo la copia di un file, [**la funzione GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) determina se un file è di sola lettura o meno. Se il file non è di sola lettura, l'applicazione cambia directory in TextRO e converte il file copiato in sola lettura usando \\ la [**funzione SetFileAttributes.**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
 
-Dopo la copia di tutti i file di testo nella directory corrente, l'applicazione chiude l'handle di ricerca usando la funzione [**FindClose**](/windows/desktop/api/FileAPI/nf-fileapi-findclose) .
+Dopo aver copiato tutti i file di testo nella directory corrente, l'applicazione chiude l'handle di ricerca usando la [**funzione FindClose.**](/windows/desktop/api/FileAPI/nf-fileapi-findclose)
 
 
 ```C++
@@ -116,7 +116,7 @@ void _tmain(int argc, TCHAR* argv[])
 [**Costanti di attributi file**](file-attribute-constants.md)
 </dt> <dt>
 
-[Nomi file, percorsi e spazi dei nomi](naming-a-file.md)
+[Nomi di file, percorsi e spazi dei nomi](naming-a-file.md)
 </dt> </dl>
 
  

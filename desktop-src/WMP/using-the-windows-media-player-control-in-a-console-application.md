@@ -1,38 +1,38 @@
 ---
-title: Uso del controllo Media Player Windows in un'applicazione console
-description: Uso del controllo Media Player Windows in un'applicazione console
+title: Uso del controllo Windows Media Player in un'applicazione console
+description: Uso del controllo Windows Media Player in un'applicazione console
 ms.assetid: e5162aad-69d5-4253-83d1-46735336e6da
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Windows Media Player, applicazioni console
-- Modello a oggetti di Windows Media Player, applicazioni console
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Mobile, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player Controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player,applicazioni console
+- Windows Media Player a oggetti, applicazioni console
 - modello a oggetti, applicazioni console
-- Windows Media Player Mobile, applicazioni console
-- Controllo ActiveX Windows Media Player, applicazioni console
-- Controllo ActiveX Windows Media Player Mobile, applicazioni console
-- Controllo ActiveX, applicazioni console
+- Windows Media Player Applicazioni per dispositivi mobili e console
+- Windows Media Player ActiveX, applicazioni console
+- Windows Media Player Controllo ActiveX per dispositivi mobili, applicazioni console
+- ActiveX, applicazioni console
 - incorporamento di applicazioni console
 - incorporamento, applicazioni console
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53cc7701fc10848ca246d9cf100d0716e1955b5e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0eef4bab6457314546f8953980678c672dad82984a4badc548a5c9d868da2839
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830470"
 ---
-# <a name="using-the-windows-media-player-control-in-a-console-application"></a>Uso del controllo Media Player Windows in un'applicazione console
+# <a name="using-the-windows-media-player-control-in-a-console-application"></a>Uso del controllo Windows Media Player in un'applicazione console
 
-È possibile creare un'istanza dell'oggetto COM Media Player Windows direttamente tramite **CoCreateInstance**. Quando si esegue questa operazione, l'oggetto **Player** non visualizza alcuna interfaccia utente. Tuttavia, l'oggetto è ancora utile per le attività che non richiedono l'interfaccia utente, ad esempio l'uso della libreria, la riproduzione di file audio digitali o l'accesso alle proprietà del lettore.
+È possibile creare un'istanza dell'Windows Media Player COM direttamente usando **CoCreateInstance**. In questo caso, **l'oggetto Player** non visualizza alcuna interfaccia utente. Tuttavia, l'oggetto è ancora utile per le attività che non richiedono l'interfaccia utente, ad esempio l'uso della libreria, la riproduzione di file audio digitali o l'accesso alle proprietà del lettore.
 
-Nell'esempio di codice seguente viene illustrato un semplice programma console che visualizza la versione di Windows Media Player in una finestra di messaggio. Il codice di esempio USA ATL per sfruttare i puntatori intelligenti e la classe String **CComBSTR** .
+Il codice di esempio seguente illustra un semplice programma console che visualizza la Windows Media Player in una finestra di messaggio. Il codice di esempio usa ATL per sfruttare i puntatori intelligenti e la **classe stringa CComBSTR.**
 
 
 ```C++
@@ -77,12 +77,12 @@ int _tmain(int argc, _TCHAR* argv[])
 
 <dl> <dt>
 
-[**Uso del controllo Media Player di Windows in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Uso del Windows Media Player controllo in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

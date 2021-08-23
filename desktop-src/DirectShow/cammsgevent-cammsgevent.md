@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CAMMsgEvent.CAMMsgEvent : metodo del costruttore.'
+description: Costruttore CAMMsgEvent.CAMMsgEvent - Metodo costruttore.
 ms.assetid: 7871a624-70c0-4f21-b62a-2c4c2eaa762b
 title: Costruttore CAMMsgEvent.CAMMsgEvent (Wxutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dac72ecb97a1ea1fd2594af9c11b8a03078cf2cb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0fc2eeaab10134022388e6a57628d1c3c5a87fc0e0a443efab19f016a1e5c27b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955500"
 ---
 # <a name="cammsgeventcammsgevent-constructor"></a>Costruttore CAMMsgEvent.CAMMsgEvent
 
@@ -45,9 +45,9 @@ CAMMsgEvent(
 *Phr* 
 </dt> <dd>
 
-Puntatore a **un valore HRESULT.** Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In questo caso, l'oggetto non è in uno stato valido.
+Puntatore a un **valore HRESULT.** Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In questo caso, l'oggetto non è in uno stato valido.
 
-Per compatibilità con le versioni precedenti di strmbase.lib, il valore predefinito di questo parametro è **NULL.** È tuttavia preferibile passare un valore non **NULL,** in modo che il chiamante possa controllare lo stato dell'oggetto.
+Per la compatibilità con le versioni precedenti di strmbase.lib, il valore predefinito di questo parametro è **NULL.** Tuttavia, è preferibile passare un valore non **NULL,** in modo che il chiamante possa controllare lo stato dell'oggetto.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Per compatibilità con le versioni precedenti di strmbase.lib, il valore predefi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

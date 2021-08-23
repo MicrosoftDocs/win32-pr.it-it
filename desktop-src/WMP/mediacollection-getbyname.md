@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getByName (metodo)
+title: Metodo MediaCollection.getByName
 description: Il metodo getByName recupera una playlist degli elementi multimediali con il nome specificato.
 ms.assetid: f9395a4f-06d6-438b-b7c5-7a063abdf59f
 keywords:
-- metodo getByName Media Player Windows
-- metodo getByName Media Player Windows, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getByName
+- Metodo getByName Windows Media Player
+- Metodo getByName Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player , metodo getByName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01a3fc6e34b508fa094f79d2fbbd1d44ab712789
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15063a9d544f6ebe55e66513b79aeead7c94e8aeffed7571ccb2ac574e1cb876
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996291"
 ---
-# <a name="mediacollectiongetbyname-method"></a>Mediacollection. getByName (metodo)
+# <a name="mediacollectiongetbyname-method"></a>Metodo MediaCollection.getByName
 
-Il metodo **GetByName** recupera una playlist degli elementi multimediali con il nome specificato.
+Il **metodo getByName** recupera una playlist degli elementi multimediali con il nome specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ retVal = MediaCollection.getByName(
 
 <dl> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che contiene il nome.
+**Stringa** contenente il nome.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *mediacollection*. **GetByName** per recuperare tre elementi dalla libreria. Ogni elemento viene quindi aggiunto alla playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *MediaCollection*. **getByName** per recuperare tre elementi dalla libreria. Ogni elemento viene quindi aggiunto alla playlist corrente. **L'oggetto Player** è stato creato con ID="Player".
 
 
 ```JScript
@@ -94,7 +94,7 @@ Player.currentPlaylist.appendItem(Three.item(0));
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -103,16 +103,16 @@ Player.currentPlaylist.appendItem(Three.item(0));
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

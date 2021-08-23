@@ -1,11 +1,11 @@
 ---
-title: Attributo MS-DS-machine-account-quota
-description: Il numero di account computer che possono essere creati da un utente in un dominio.
+title: Attributo MS-DS-Machine-Account-Quota
+description: Numero di account computer che un utente può creare in un dominio.
 ms.assetid: bcfc6a9c-b891-48c2-9c42-8154345caf08
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-DS-machine-account-quota
-- Schema AD dell'attributo ms-DS-MachineAccountQuota
+- Schema DI AD dell'attributo MS-DS-Machine-Account-Quota
+- Attributo MS-DS-MachineAccountQuota Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b86de012aa876e5a0d52ac866048801872a365f1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 56790f601e9784ddeb55c47450cab9b1f3bce468d8d15c7c44e0e57344525839
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961170"
 ---
-# <a name="ms-ds-machine-account-quota-attribute"></a>Attributo MS-DS-machine-account-quota
+# <a name="ms-ds-machine-account-quota-attribute"></a>Attributo MS-DS-Machine-Account-Quota
 
-Il numero di account computer che possono essere creati da un utente in un dominio.
+Numero di account computer che un utente può creare in un dominio.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------|
-| CN                | MS-DS-machine-account-quota                      |
-| LDAP-Display-Name | ms-DS-MachineAccountQuota                        |
+| CN                | MS-DS-Machine-Account-Quota                      |
+| Ldap-Display-Name | ms-DS-MachineAccountQuota                        |
 | Dimensione              | 4 byte                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                             |
-| Frequenza di aggiornamento  | Ogni volta che è necessario modificare la quota di un dominio. |
+| Aggiorna privilegio  | Amministratore di dominio                             |
+| Frequenza di aggiornamento  | Ogni volta che è necessario modificare la quota per un dominio. |
 | Attribute-Id      | 1.2.840.113556.1.4.1411                          |
-| System-ID-GUID    | d064fb68-1480-11d3-91c1-0000f87a57d4             |
+| System-Id-Guid    | d064fb68-1480-11d3-91c1-0000f87a57d4             |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)             |
 
 
@@ -58,15 +58,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il numero di account computer che possono essere creati da un utente in un domin
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione llMulDiv implementa la formula ((a \* b) + Rnd)/c, dove ogni termine è un valore a 64 bit.
+description: La funzione llMulDiv implementa la formula ((a \* b)+rnd)/c in cui ogni termine è un valore a 64 bit.
 ms.assetid: cd5073b9-27c7-42ee-8487-2d4ea29f77d4
-title: funzione llMulDiv (Wxutil. h)
+title: Funzione llMulDiv (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e45d22eec1536517bd2b57d875dd596e4a1e28db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df58175955106906027a6d2d10c465b82ad6313cd493e3ef9ef3ba279cd0115f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952350"
 ---
-# <a name="llmuldiv-function"></a>llMulDiv (funzione)
+# <a name="llmuldiv-function"></a>Funzione llMulDiv
 
-La `llMulDiv` funzione implementa la formula in `((a*b)+rnd)/c` cui ogni termine è un valore a 64 bit.
+La `llMulDiv` funzione implementa la formula in cui ogni termine è un valore a `((a*b)+rnd)/c` 64 bit.
 
-I timestamp e i tempi di ricerca sono valori a 64 bit, pertanto questa funzione è utile per l'esecuzione di conversioni su sistemi a 32 bit. Ad esempio, la formula per byte al secondo è
+I timestamp e gli orari di ricerca sono valori a 64 bit, quindi questa funzione è utile per eseguire conversioni in sistemi a 32 bit. Ad esempio, la formula per byte al secondo è
 
 
 ```C++
@@ -36,7 +36,7 @@ I timestamp e i tempi di ricerca sono valori a 64 bit, pertanto questa funzione 
 
 
 
-che può essere calcolato come `llMulDiv(nBytes, rtTime, 10000000, 0)` . Usare il parametro *Rnd* come fattore di arrotondamento.
+che può essere calcolato come `llMulDiv(nBytes, rtTime, 10000000, 0)` . Usare il *parametro rnd* come fattore di arrotondamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,10 +56,10 @@ LONGLONG WINAPI Int64x32Div32(
 
 <dl> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
-Multiplicand.
+Moltiplicato.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Restituisce il `(a * b + rnd)/c` calcolo o uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-L'arrotondamento alla divisione è verso lo zero. La divisione per zero viene conteggiata come condizione di overflow.
+L'arrotondamento sulla divisione è verso zero. La divisione per zero viene conteggiata come condizione di overflow.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ L'arrotondamento alla divisione è verso lo zero. La divisione per zero viene co
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

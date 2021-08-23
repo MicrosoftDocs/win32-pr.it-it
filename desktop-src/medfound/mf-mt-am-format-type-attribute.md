@@ -1,19 +1,19 @@
 ---
-description: Contiene un GUID del formato DirectShow per un tipo di supporto.
+description: Contiene un GUID DirectShow formato per un tipo di supporto.
 ms.assetid: dc532791-39e1-4acb-9e62-21d8f25be870
-title: Attributo MF_MT_AM_FORMAT_TYPE (Mfapi. h)
+title: MF_MT_AM_FORMAT_TYPE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a8faf88128075e5c5b51c1b5ace39329d4e1fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eff59e148f7532cc07e47acf033de91b5eaeb8969f0c39376850738fd54e758e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973630"
 ---
-# <a name="mf_mt_am_format_type-attribute"></a>\_ \_ \_ Attributo tipo di formato MF mt \_
+# <a name="mf_mt_am_format_type-attribute"></a>Attributo \_ MF MT \_ AM \_ FORMAT \_ TYPE
 
-Contiene un GUID del formato DirectShow per un tipo di supporto.
+Contiene un GUID DirectShow formato per un tipo di supporto.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,13 +21,13 @@ Contiene un GUID del formato DirectShow per un tipo di supporto.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo può essere impostato quando un tipo di supporto DirectShow viene convertito in un tipo di supporto Media Foundation. L'attributo indica il tipo di formato DirectShow originale. Il valore corrisponde al membro formatType della struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Questo attributo può essere impostato quando un DirectShow tipo di supporto viene convertito in un Media Foundation tipo di supporto. L'attributo indica il tipo di DirectShow originale. Il valore corrisponde al membro formattype della struttura [**AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
-Per un formato audio, l' [**attributo \_ \_ \_ dati utente MF mt**](mf-mt-user-data-attribute.md) può contenere il blocco di formato originale, se il tipo di formato DirectShow non è stato riconosciuto.
+Per un formato audio, [**l'attributo \_ MF MT \_ USER \_ DATA**](mf-mt-user-data-attribute.md) potrebbe contenere il blocco di formato originale, se il DirectShow non è stato riconosciuto.
 
-Non impostare questo attributo su un tipo di supporto a meno che non si converta una struttura del formato DirectShow.
+Non impostare questo attributo su un tipo di supporto a meno che non si converta una struttura DirectShow formato.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,22 +45,22 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)
 </dt> <dt>
 
-[Conversioni di tipi di supporto](media-type-conversions.md)
+[Conversioni di tipi di supporti](media-type-conversions.md)
 </dt> <dt>
 
-[Tipi di supporto](media-types.md)
+[Tipi di supporti](media-types.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: Seguid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

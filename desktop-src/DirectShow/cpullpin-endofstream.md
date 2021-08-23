@@ -1,7 +1,7 @@
 ---
-description: Il metodo EndOfStream viene chiamato dopo che l'oggetto recapita l'ultimo campione. La classe derivata deve implementare questo metodo.
+description: Il metodo EndOfStream viene chiamato dopo che l'oggetto ha fornito l'ultimo esempio. La classe derivata deve implementare questo metodo.
 ms.assetid: 55a32c17-9993-4ad7-8829-6aa5c1407622
-title: Metodo CPullPin. EndOfStream (Pullpin. h)
+title: Metodo CPullPin.EndOfStream (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a1df28430cdb71edd2ef9791e6c26092bbb21d0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9544a5f35c42fcf65bff58ad63d6f22bdd4dd817ae91951b01ffe122bce50c5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954020"
 ---
-# <a name="cpullpinendofstream-method"></a>CPullPin. EndOfStream, metodo
+# <a name="cpullpinendofstream-method"></a>Metodo CPullPin.EndOfStream
 
-Il `EndOfStream` metodo viene chiamato dopo che l'oggetto recapita l'ultimo campione. La classe derivata deve implementare questo metodo.
+Il `EndOfStream` metodo viene chiamato dopo che l'oggetto ha fornito l'ultimo esempio. La classe derivata deve implementare questo metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo per chiamare [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) in ogni pin di input downstream che riceve i dati da questo oggetto. Se i pin di output del filtro derivano da [**CBaseOutputPin**](cbaseoutputpin.md), chiamare il metodo [**CBaseOutputPin::D eliverendofstream**](cbaseoutputpin-deliverendofstream.md) .
+Usare questo metodo per chiamare [**IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) su ogni pin di input downstream che riceve i dati da questo oggetto. Se i pin di output del filtro derivano da [**CBaseOutputPin,**](cbaseoutputpin.md)chiamare il metodo [**CBaseOutputPin::D eliverEndOfStream.**](cbaseoutputpin-deliverendofstream.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Utilizzare questo metodo per chiamare [**Ipin:: EndOfStream**](/windows/desktop/
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

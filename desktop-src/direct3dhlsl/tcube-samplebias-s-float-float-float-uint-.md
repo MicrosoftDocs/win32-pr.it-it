@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleBias:: SampleBias (S, float, float, float, uint) per TextureCube'
-description: "La funzione SampleBias:: SampleBias (S, float, float, float, uint) per TextureCube campiona una trama dopo l'applicazione del valore di distorsione al livello mipmap."
+title: Funzione SampleBias::SampleBias(S,float,float,float,uint) per TextureCube
+description: La funzione SampleBias::SampleBias(S,float,float,float,uint) per TextureCube consente di eseguire il campionamento di una trama dopo l'applicazione del valore di distorsione al livello mipmap.
 ms.assetid: A2F10B9B-5DF2-4389-83A9-F6A29781BF0A
 keywords:
 - Funzione SampleBias HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 116749acdc23bb8ac2fd057139bf8ef7c8f5ddcc
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 45640d01b744ea6d2f930a67362e323a61fc1e2f1a87417f707289d7a337090d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043319"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloatuint-function-for-texturecube"></a>Funzione SampleBias:: SampleBias (S, float, float, float, uint) per TextureCube
+# <a name="samplebiassamplebiassfloatfloatfloatuint-function-for-texturecube"></a>Funzione SampleBias::SampleBias(S,float,float,float,uint) per TextureCube
 
-Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a. Restituisce lo stato dell'operazione.
+Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,20 +48,20 @@ DXGI_FORMAT SampleBias(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
+Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| Texture-Object tipo                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -74,44 +74,44 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*Distorsione* \[ in\]
+*Distorsione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Il valore di distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusivo, viene applicato a un livello MIP prima del campionamento.
+Il valore di distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi, viene applicato a un livello mip prima del campionamento.
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si passa 2.0f per il valore di chiusura, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Metodi SampleBias](texturecube-samplebias.md)
+[Metodi di SampleBias](texturecube-samplebias.md)
 </dt> <dt>
 
 [**TextureCube**](texturecube.md)

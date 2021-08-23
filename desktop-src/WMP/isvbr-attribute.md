@@ -1,6 +1,6 @@
 ---
 title: Attributo IsVBR
-description: L'attributo IsVBR indica se il contenuto è stato codificato tramite la codifica con velocità in bit variabile (VBR).
+description: L'attributo IsVBR indica se il contenuto è stato codificato usando la codifica VBR (Variable Bit Rate).
 ms.assetid: faec0940-ef53-40a1-be54-a990884e907d
 keywords:
 - Attributo IsVBR Windows Media Player
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaec9f740e7b251c73ed12f5897ff9d95b023886
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6b5b190e67c07978207823cef9992243be772d430e2f03f40695ae6510c39a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054819"
 ---
 # <a name="isvbr-attribute"></a>Attributo IsVBR
 
-L'attributo **IsVBR** indica se il contenuto è stato codificato tramite la codifica con velocità in bit variabile (VBR).
+**L'attributo IsVBR** indica se il contenuto è stato codificato usando la codifica VBR (Variable Bit Rate).
 
 ## <a name="applies-to"></a>Si applica a
 
--   [File di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [File multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Elementi video](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
 Questo attributo viene archiviato solo nel file multimediale digitale.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMIsVBR.
+La Windows media format SDK costante per questo attributo è \_ g wszWMIsVBR.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -50,7 +50,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

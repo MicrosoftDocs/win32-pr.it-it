@@ -1,11 +1,11 @@
 ---
-title: Proprietà porta IVMUSBDevice (VPCCOMInterfaces. h)
+title: Proprietà IvMUSBDevice Port (VPCCOMInterfaces.h)
 description: Recupera l'identificatore della porta a cui è connesso il dispositivo.
 ms.assetid: 612c0eba-aa80-4539-a883-f05d32d13b41
 keywords:
-- Proprietà porta PC virtuale
-- Proprietà porta Virtual PC, interfaccia IVMUSBDevice
-- Interfaccia IVMUSBDevice Virtual PC, proprietà porta
+- Proprietà Port Virtual PC
+- Proprietà Porta Virtual PC, interfaccia IVMUSBDevice
+- Interfaccia IVMUSBDevice Virtual PC, proprietà Port
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb821921d10b23fdb17256372708650d060e253b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5b564f1e8c75ecbf5bb140d17218df83bc5b23f5de219c819dc5c4f31f7be14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998711"
 ---
-# <a name="ivmusbdeviceport-property"></a>IVMUSBDevice::P proprietà Ort
+# <a name="ivmusbdeviceport-property"></a>IVMUSBDevice::P ort
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera l'identificatore della porta a cui è connesso il dispositivo.
 
@@ -54,7 +54,7 @@ Identificatore di porta. Questo valore viene assegnato dal driver del connettore
 | Nome/valore                                                                                                                                            | Significato                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>               | Metodo completato correttamente.<br/> |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl> | Il parametro è **null**.<br/>         |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl> | Il parametro è **NULL.**<br/>         |
 
 
 
@@ -64,12 +64,12 @@ Identificatore di porta. Questo valore viene assegnato dal driver del connettore
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMUSBDevice è definito come 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMUSBDevice è definito come \_ 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
 
 
 

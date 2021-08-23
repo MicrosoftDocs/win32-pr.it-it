@@ -1,19 +1,19 @@
 ---
-description: Indirizzi degli tutti i partecipanti richiesti.
+description: Indirizzi di tutti i partecipanti necessari.
 ms.assetid: 2fbed651-2fa0-441b-b174-6be6d49430bf
-title: System. Calendar. RequiredAttendeeAddresses
+title: System.Calendar.RequiredAttendeeAddresses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e20df36eb8e7a473afb8cff9c0cbc7087b0b787e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b54cdba67a86b18f5c8656870e78167ccf02b9f866ce229bfaf6cdfce6efcbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098528"
 ---
-# <a name="systemcalendarrequiredattendeeaddresses"></a>System. Calendar. RequiredAttendeeAddresses
+# <a name="systemcalendarrequiredattendeeaddresses"></a>System.Calendar.RequiredAttendeeAddresses
 
-Indirizzi degli tutti i partecipanti richiesti.
+Indirizzi di tutti i partecipanti necessari.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

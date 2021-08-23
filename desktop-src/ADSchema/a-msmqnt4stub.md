@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-NT4-Stub
-description: L'attributo MSMQ-NT4-Stub contiene informazioni in modalità mista MSMQ.
+title: Attributo MSMQ-Nt4-Stub
+description: L'attributo MSMQ-Nt4-Stub contiene informazioni in modalità mista MSMQ.
 ms.assetid: cdc3c811-c1e3-4501-bf59-39870bfb57e8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSMQ-NT4-Stub
+- Schema AD dell'attributo MSMQ-Nt4-Stub
 - Schema AD dell'attributo mSMQNt4Stub
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6844d560ef677841c8c142cac8c57a5a8dc4bea
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 82d0fc7e9064c26a70a8a29230882c8e0444eb94406fb268ba9261ab8e4d0cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960450"
 ---
-# <a name="msmq-nt4-stub-attribute"></a>Attributo MSMQ-NT4-Stub
+# <a name="msmq-nt4-stub-attribute"></a>Attributo MSMQ-Nt4-Stub
 
-L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
+**L'attributo MSMQ-Nt4-Stub** contiene informazioni in modalità mista MSMQ.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-NT4-Stub                        |
-| LDAP-Display-Name | mSMQNt4Stub                          |
+| CN                | MSMQ-Nt4-Stub                        |
+| Ldap-Display-Name | mSMQNt4Stub                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.960               |
-| System-ID-GUID    | 6f914be6-d57e-11d1-90a2-00c04fd91ab1 |
+| System-Id-Guid    | 6f914be6-d57e-11d1-90a2-00c04fd91ab1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MSMQ-NT4-Stub** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 

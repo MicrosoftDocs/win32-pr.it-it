@@ -1,6 +1,6 @@
 ---
 title: Attributo RecordingTimeYearMonthDay
-description: L'attributo RecordingTimeYearMonthDay è la data della registrazione originale (senza l'ora del giorno), per gli elementi in cui la data è diversa dalla data di rilascio.
+description: L'attributo RecordingTimeYearMonthDay è la data della registrazione originale (senza l'ora del giorno), per gli elementi in cui questa data è diversa dalla data di rilascio.
 ms.assetid: 191fffd9-557f-4da7-827d-15ed8f56ece7
 keywords:
 - Attributo RecordingTimeYearMonthDay Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1681dd273178d2f5c6fcb229e4d89cede516c22e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60e6d243b62f1518052cc154154d28355d3d8c3e2d4c405cc0c8aca0eb445d44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995620"
 ---
 # <a name="recordingtimeyearmonthday-attribute"></a>Attributo RecordingTimeYearMonthDay
 
-L'attributo **RecordingTimeYearMonthDay** è la data della registrazione originale (senza l'ora del giorno), per gli elementi in cui la data è diversa dalla data di rilascio.
+**L'attributo RecordingTimeYearMonthDay** è la data della registrazione originale (senza l'ora del giorno), per gli elementi in cui questa data è diversa dalla data di rilascio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ L'attributo **RecordingTimeYearMonthDay** è la data della registrazione origina
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

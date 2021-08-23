@@ -1,7 +1,7 @@
 ---
-description: Causa un'eccezione del punto di interruzione e registra la stringa specificata utilizzando la macro DbgLog. Ignorato nelle compilazioni al dettaglio.
+description: Genera un'eccezione del punto di interruzione e registra la stringa specificata usando la macro DbgLog. Ignorato nelle build di vendita al dettaglio.
 ms.assetid: 475810db-692b-4727-9ef1-ece74e9618d0
-title: Macro KDbgBreak (Wxdebug. h)
+title: Macro KDbgBreak (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 9631dc8d956652137810b25ae5923cc1c6927bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3339e69bb10876fe326f5960e6012849664fdbfcb4fe06fffd4029e6170af8b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952360"
 ---
-# <a name="kdbgbreak-macro"></a>KDbgBreak (macro)
+# <a name="kdbgbreak-macro"></a>Macro KDbgBreak
 
-Causa un'eccezione del punto di interruzione e registra la stringa specificata utilizzando la macro [**DbgLog**](dbglog.md) . Ignorato nelle compilazioni al dettaglio.
+Genera un'eccezione del punto di interruzione e registra la stringa specificata usando la macro [**DbgLog.**](dbglog.md) Ignorato nelle build di vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ Questa macro non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-A differenza della macro [**DbgBreak**](dbgbreak.md) , questa macro non visualizza una finestra di messaggio che richiede all'utente. Nelle compilazioni di debug, causa automaticamente un'eccezione del punto di interruzione.
+A differenza della macro [**DbgBreak,**](dbgbreak.md) questa macro non visualizza una finestra di messaggio che richiede all'utente. Nelle compilazioni di debug viene generata automaticamente un'eccezione del punto di interruzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ A differenza della macro [**DbgBreak**](dbgbreak.md) , questa macro non visualiz
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ A differenza della macro [**DbgBreak**](dbgbreak.md) , questa macro non visualiz
 
 <dl> <dt>
 
-[Macro di asserzione e punti di interruzione](assert-and-breakpoint-macros.md)
+[Macro di asserzione e punto di interruzione](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

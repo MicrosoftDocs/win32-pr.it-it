@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectPass GetVertexShaderDesc (D3dx11effect. h)
-description: Ottenere una descrizione del vertex shader.
+title: Metodo ID3DX11EffectPass GetVertexShaderDesc (D3dx11effect.h)
+description: Ottenere una descrizione di vertex shader.
 ms.assetid: 7e02a438-2ff4-4e32-bc16-d112aafa57cb
 keywords:
 - Metodo GetVertexShaderDesc Direct3D 11
 - Metodo GetVertexShaderDesc Direct3D 11, interfaccia ID3DX11EffectPass
-- Interfaccia ID3DX11EffectPass Direct3D 11, metodo GetVertexShaderDesc
+- Id3DX11EffectPass interface Direct3D 11 , GetVertexShaderDesc method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef8c69bab360fa3d12ccfc1a701926183dad7bbe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7942fc1f8202065ac904223693c70b4dc8ea70bf3421158a08bad253acc67567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045969"
 ---
-# <a name="id3dx11effectpassgetvertexshaderdesc-method"></a>Metodo ID3DX11EffectPass:: GetVertexShaderDesc
+# <a name="id3dx11effectpassgetvertexshaderdesc-method"></a>Metodo ID3DX11EffectPass::GetVertexShaderDesc
 
-Ottenere una descrizione del vertex shader.
+Ottenere una descrizione di vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ HRESULT GetVertexShaderDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ pass \_ shader \_ desc**](d3dx11-pass-shader-desc.md)\***
+Tipo: **[ **D3DX11 \_ PASS \_ SHADER \_ DESC**](d3dx11-pass-shader-desc.md)\***
 
-Puntatore a una descrizione del vertex shader (vedere [**D3DX11 \_ pass \_ shader \_ desc**](d3dx11-pass-shader-desc.md)).
+Puntatore a una descrizione di vertex shader (vedere [**D3DX11 \_ PASS \_ SHADER \_ DESC).**](d3dx11-pass-shader-desc.md)
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Puntatore a una descrizione del vertex shader (vedere [**D3DX11 \_ pass \_ shade
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Un passaggio di effetto può contenere le assegnazioni dello stato di rendering e le assegnazioni degli oggetti shader.
+Un passaggio di effetto può contenere assegnazioni dello stato di rendering e assegnazioni di oggetti shader.
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Un passaggio di effetto può contenere le assegnazioni dello stato di rendering 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

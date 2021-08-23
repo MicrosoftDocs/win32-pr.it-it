@@ -1,15 +1,15 @@
 ---
-description: La proprietà CurrentDomain Recupera il dominio DVD in cui si trova l'oggetto MSWebDVD.
+description: La proprietà CurrentDomain recupera il dominio DVD in cui si trova l'oggetto MSWebDVD.
 ms.assetid: 9d545438-9a3d-4c57-a3df-5e75af2e4d1b
 title: Proprietà CurrentDomain
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ead6d61cd622fceac2a4d133a0297892992e763a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bf022d44cc3580a4d5208c5bc96413dfa445b0f2fcbf74eeb938ee77fa0677bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953390"
 ---
 # <a name="currentdomain-property"></a>Proprietà CurrentDomain
 
@@ -18,7 +18,7 @@ ms.locfileid: "104481861"
 
  
 
-La `CurrentDomain` proprietà recupera il dominio DVD in cui si trova l'oggetto mswebdvd.
+La `CurrentDomain` proprietà recupera il dominio DVD in cui si trova l'oggetto MSWebDVD.
 
 ``` syntax
 [ iDomain = ] MSWebDVD.CurrentDomain
@@ -30,15 +30,15 @@ Restituisce un valore intero che rappresenta il dominio corrente.
 
 ## <a name="remarks"></a>Commenti
 
-I valori possibili della proprietà sono i seguenti:
+I valori possibili della proprietà sono:
 
 
 
 | Valore | Descrizione          |
 |-------|----------------------|
 | 1     | Prima riproduzione           |
-| 2     | Menu di gestione video   |
-| 3     | Menu set del titolo del video |
+| 2     | Menu Gestione video   |
+| 3     | Menu Del set di titoli video |
 | 4     | Titolo                |
 | 5     | Interrompere                 |
 
@@ -46,7 +46,7 @@ I valori possibili della proprietà sono i seguenti:
 
  
 
-Chiamare questo metodo per assicurarsi che il navigatore DVD si trovi in un dominio valido per il metodo che si sta per chiamare. Ad esempio, prima di chiamare [**PlayTitle**](playtitle-method.md), controllare la `CurrentDomain` proprietà per verificare che il navigatore DVD non sia presente nel dominio stop o First Play.
+Chiamare questo metodo per assicurarsi che dvd Navigator si trova in un dominio valido per il metodo che si sta per chiamare. Ad esempio, prima di chiamare [**PlayTitle**](playtitle-method.md), controllare la proprietà per assicurarsi che lo strumento di navigazione DVD non sia `CurrentDomain` nel dominio Stop o First Play.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 2d3e548f-8559-4a36-b814-6d598bead1d0
 title: D3DVTXPCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b544f3e4a69de23607366832aca110e42c61d6d
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: a230b7eeba5f10ec24e4a33f9fe85b90b67e6b55502250ec1df18af0e5fff15f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988851"
 ---
 # <a name="d3dvtxpcaps"></a>D3DVTXPCAPS
 
@@ -19,11 +19,11 @@ Combinazione di uno o più flag che controllano il comportamento di creazione de
 
 | \#Definire                                | Descrizione                                                                                                                                                                                        |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | Il dispositivo può fare luci direzionali.                                                                                                                                                                  |
+| D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | Il dispositivo può eseguire luci direzionali.                                                                                                                                                                  |
 | D3DVTXPCAPS \_ LOCALVIEWER                | Il dispositivo può eseguire il visualizzatore locale.                                                                                                                                                                        |
-| D3DVTXPCAPS \_ MATERIALSOURCE7            | Quando questo limite è impostato, il dispositivo supporta gli stati del materiale a colori: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DIFFUSEMATERIALSOURCE, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |
+| D3DVTXPCAPS \_ MATERIALSOURCE7            | Quando questo limite è impostato, il dispositivo supporta gli stati dei materiali di colore: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DIFFUSEMATERIALSOURCE, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |
 | D3DVTXPCAPS \_ NO \_ TEXGEN \_ NONLOCALVIEWER | Il dispositivo non supporta la generazione di trame in modalità visualizzatore non locale.                                                                                                                               |
-| D3DVTXPCAPS \_ POSITIONALLIGHTS           | Il dispositivo può eseguire luci posizionali (include punto e punto).                                                                                                                                         |
+| D3DVTXPCAPS \_ POSITIONALLIGHTS           | Il dispositivo può eseguire luci posizionali (include punti e punti).                                                                                                                                         |
 | D3DVTXPCAPS \_ TEXGEN                     | Il dispositivo può eseguire texgen.                                                                                                                                                                              |
 | D3DVTXPCAPS \_ TEXGEN \_ SPHEREMAP          | Il dispositivo supporta D3DTSS \_ TCI \_ SPHEREMAP.                                                                                                                                                            |
 | D3DVTXPCAPS \_ TWEENING                   | Il dispositivo può eseguire l'interpolazione dei vertici.                                                                                                                                                                     |
@@ -32,7 +32,7 @@ Combinazione di uno o più flag che controllano il comportamento di creazione de
 
  
 
-## <a name="constant-information"></a>Informazioni costanti
+## <a name="constant-information"></a>Informazioni sulle costanti
 
 
 

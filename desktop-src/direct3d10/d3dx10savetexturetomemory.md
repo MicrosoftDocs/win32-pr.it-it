@@ -1,7 +1,7 @@
 ---
-description: Salva una trama in memoria.
+description: Salvare una trama in memoria.
 ms.assetid: be541b99-6d07-480e-8f28-b7fc44566e7d
-title: Funzione D3DX10SaveTextureToMemory (D3DX10Tex. h)
+title: Funzione D3DX10SaveTextureToMemory (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f20278f9fc590e72f93051d5fdd4cfbd918098df
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3736b2de21df3e77f5b06d34f2b0b64a7592f2212a71ffd4a37b70454667427a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047059"
 ---
-# <a name="d3dx10savetexturetomemory-function"></a>D3DX10SaveTextureToMemory (funzione)
+# <a name="d3dx10savetexturetomemory-function"></a>Funzione D3DX10SaveTextureToMemory
 
-Salva una trama in memoria.
+Salvare una trama in memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT D3DX10SaveTextureToMemory(
 
 <dl> <dt>
 
-*pSrcTexture* \[ in\]
+*pSrcTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)\***
 
-Puntatore alla trama da salvare. Vedere [**interfaccia ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
+Puntatore alla trama da salvare. Vedere [**ID3D10Resource Interface**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
 
 </dd> <dt>
 
-*DestFormat* \[ in\]
+*DestFormat* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ Image \_ file \_ Format**](d3dx10-image-file-format.md)**
+Tipo: **[ **D3DX10 \_ IMAGE \_ FILE \_ FORMAT**](d3dx10-image-file-format.md)**
 
-Il formato in cui verrà salvata la trama. Vedere [**d3dx10 \_ Image \_ file \_ Format**](d3dx10-image-file-format.md).
+Formato con cui verrà salvata la trama. Vedere [**D3DX10 \_ IMAGE FILE \_ \_ FORMAT**](d3dx10-image-file-format.md).
 
 </dd> <dt>
 
-*ppDestBuf* \[ out\]
+*ppDestBuf* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10BLOB**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\***
 
-Indirizzo di un puntatore alla memoria contenente la trama salvata. Vedere [**interfaccia ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob).
+Indirizzo di un puntatore alla memoria contenente la trama salvata. Vedere [**ID3D10 Interface (Interfaccia ID3D10Blob).**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 facoltativo.
 
@@ -83,7 +83,7 @@ facoltativo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 
@@ -103,7 +103,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 [Funzioni di trama in D3DX 10](d3d10-graphics-reference-d3dx10-functions-texturing.md)
 </dt> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

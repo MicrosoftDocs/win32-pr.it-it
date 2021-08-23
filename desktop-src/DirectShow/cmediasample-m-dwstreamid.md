@@ -1,7 +1,7 @@
 ---
-description: Identificatore di flusso. Per altre informazioni, vedere \_ Proprietà SAMPLE2 \_ .
+description: Identificatore di flusso. Per altre informazioni, vedere AM \_ SAMPLE2 \_ PROPERTIES.
 ms.assetid: 3e890c2b-0bc5-45b3-84d1-f9535ba15334
-title: 'Membro CMediaSample:: m_dwStreamId (Amfilter. h)'
+title: Membro CMediaSample::m_dwStreamId (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c7fef304481672514ce1eb30aa865b5967b6a9e4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e8f0d33fbd56ab8da6ea986a019c2631089de70f43a3736d16cdb9c896bee4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954540"
 ---
-# <a name="cmediasamplem_dwstreamid-member"></a>Membro dwStreamId di CMediaSample:: m \_
+# <a name="cmediasamplem_dwstreamid-member"></a>Membro CMediaSample::m \_ dwStreamId
 
-Identificatore di flusso. Per altre informazioni, vedere [**\_ \_ Proprietà SAMPLE2**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).
+Identificatore di flusso. Per altre informazioni, vedere [**AM \_ SAMPLE2 \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ DWORD m_dwStreamId;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8979864151e029abf2731f6f0b4663e078a2c061
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eca3c422083954554db76657a0bb9cc10062fd878a9ebf4b31f4dc88734ac1d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996241"
 ---
 # <a name="mediacontenttypes-attribute"></a>Attributo MediaContentTypes
 
-L'attributo **MediaContentTypes** specifica il tipo di contenuto nell'elemento.
+**L'attributo MediaContentTypes** specifica il tipo di contenuto nell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -36,17 +36,17 @@ Questo attributo può essere uno dei valori seguenti:
 | Valore | Significato                                |
 |-------|----------------------------------------|
 | 1     | La playlist contiene contenuto audio.   |
-| 2     | Da fornire.                        |
+| 2     | Oggetto da ottenere.                        |
 | 3     | La playlist contiene contenuto audio.   |
 | 4     | La playlist contiene contenuto video.   |
-| 5     | La playlist contiene contenuto immagine. |
+| 5     | La playlist contiene il contenuto dell'immagine. |
 | 6     | La playlist contiene contenuto TV.      |
 
 
 
  
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -62,7 +62,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

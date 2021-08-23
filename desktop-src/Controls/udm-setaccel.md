@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_SETACCEL (COMmctrl. h)
-description: Imposta l'accelerazione per un controllo di scorrimento.
+title: UDM_SETACCEL messaggio (Commctrl.h)
+description: Imposta l'accelerazione per un controllo verso l'alto.
 ms.assetid: af1d0a34-13ba-4bda-82f5-d7afab6bb1ed
 keywords:
-- Controlli di Windows Message UDM_SETACCEL
+- UDM_SETACCEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b43ed290ce1668ffcaa9fb086a99ad52e5129ad6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc746e33c14de0dd177ecc31fc237be7cb8be36280bb2a5ceadff31d2b286ec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957740"
 ---
-# <a name="udm_setaccel-message"></a>\_Messaggio UDM SETACCEL
+# <a name="udm_setaccel-message"></a>Messaggio UDM \_ SETACCEL
 
-Imposta l'accelerazione per un controllo di scorrimento.
+Imposta l'accelerazione per un controllo verso l'alto.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Imposta l'accelerazione per un controllo di scorrimento.
 *wParam* 
 </dt> <dd>
 
-Numero di strutture [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) specificate da *aAccels*.
+Numero di [**strutture UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) specificate da *aAccels*.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) che contengono informazioni sull'accelerazione. Gli elementi devono essere ordinati in ordine crescente in base al membro **nsec** .
+Puntatore a una matrice di [**strutture UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) che contengono informazioni sull'accelerazione. Gli elementi devono essere ordinati in ordine crescente in base al **membro nSec.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 <dl> <dt>
 
-[**\_GETACCEL UDM**](udm-getaccel.md)
+[**UDM \_ GETACCEL**](udm-getaccel.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Windows GDI+ fornisce la funzione GetImageDecoders in modo che sia possibile determinare i decodificatori di immagini disponibili nel computer.
+description: Windows GDI+ la funzione GetImageDecoders per determinare quali decodificatori di immagini sono disponibili nel computer.
 ms.assetid: 793e23de-d959-4feb-8bf6-647a455c85ae
-title: Elenco di decodificatori installati
+title: Elenco dei decodificatori installati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a20a4e8ac88fa884483ebeaf6592b8085fde807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d54548971ff4f4346d32884ff7abc687b901044022ab886f7191d5700b9db98d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977391"
 ---
-# <a name="listing-installed-decoders"></a>Elenco di decodificatori installati
+# <a name="listing-installed-decoders"></a>Elenco dei decodificatori installati
 
-Windows GDI+ fornisce la funzione [**GetImageDecoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders) in modo che sia possibile determinare i decodificatori di immagini disponibili nel computer. **GetImageDecoders** restituisce una matrice di oggetti [**ImageCodecInfo**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) . Prima di chiamare **GetImageDecoders**, è necessario allocare un buffer sufficientemente grande da ricevere tale matrice. È possibile chiamare [**GetImageDecodersSize**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize) per determinare le dimensioni del buffer richiesto.
+Windows GDI+ fornisce la [**funzione GetImageDecoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders) per determinare quali decodificatori di immagini sono disponibili nel computer. **GetImageDecoders restituisce** una matrice di [**oggetti ImageCodecInfo.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) Prima di chiamare **GetImageDecoders,** è necessario allocare un buffer sufficientemente grande per ricevere tale matrice. È possibile chiamare [**GetImageDecodersSize**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize) per determinare le dimensioni del buffer richiesto.
 
-Nell'applicazione console seguente sono elencati i decodificatori di immagini disponibili:
+L'applicazione console seguente elenca i decodificatori di immagini disponibili:
 
 
 ```

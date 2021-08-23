@@ -1,28 +1,28 @@
 ---
-title: Una playlist di esempio di Radio Station
-description: Una playlist di esempio di Radio Station
+title: Esempio di playlist di stazione radio
+description: Esempio di playlist di stazione radio
 ms.assetid: 99b33036-6391-446c-816c-8d5d76107d37
 keywords:
-- Playlist Windows Media Metafile, esempi di playlist
+- Windows playlist di metafile multimediali, esempi di playlist
 - playlist, esempi di playlist
 - playlist di metafile, esempi di playlist
-- Playlist Windows Media Metafile, playlist di esempio
+- Windows playlist di metafile multimediali, playlist di esempio
 - playlist, playlist di esempio
 - playlist di metafile, playlist di esempio
-- Playlist Windows Media Metafile, playlist di esempio
+- Windows playlist di metafile multimediali, playlist di esempio
 - playlist, playlist di esempio
 - playlist di metafile, playlist di esempio
-- Playlist Windows Media Metafile, esempio di codice
+- Windows Playlist di metafile multimediali, esempio di codice
 - playlist, esempio di codice
 - playlist di metafile, esempio di codice
-- Playlist Windows Media Metafile, esempio di playlist della stazione radio
-- playlist, esempio di playlist della stazione radio
-- playlist di metafile, esempio di playlist della stazione radio
+- Windows Playlist di metafile multimediali, esempio di playlist di stazione radio
+- playlist, esempio di playlist di stazione radio
+- playlist di metafile, esempio di playlist di stazione radio
 - Windows Media Player, esempi di playlist
-- Media Player di Windows, playlist di esempio
+- Windows Media Player,playlist di esempio
 - Windows Media Player, playlist di esempio
-- Esempio di playlist di Windows Media Player, Radio Station
-- esempi di playlist
+- Windows Media Player,radio station playlist example
+- Esempi di playlist
 - playlist di esempio
 - playlist di esempio
 ms.topic: article
@@ -32,20 +32,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: da797937ee461ccb3afbfb000e7704486d6896e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6db52d8eb9f109df870e65f79906761cfadee4a7871f4776fae3122dd93c8605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055029"
 ---
-# <a name="an-example-radio-station-playlist"></a>Una playlist di esempio di Radio Station
+# <a name="an-example-radio-station-playlist"></a>Esempio di playlist di stazione radio
 
-Il codice di esempio seguente illustra come creare una playlist per analizzare tre stazioni radio rock. Il marchio di radio Adventure Works fittizio si trova nella playlist e in tutti i singoli flussi all'interno della playlist. Quando si scrive il codice, modificare tutti gli URL e i nomi di file in nomi di file validi accessibili al Media Player di Windows.
+Il codice di esempio seguente illustra come creare una playlist per analizzare tre stazioni radio di roccia. Il marchio fittizio Adventure Works Radio è nella playlist e in tutti i singoli flussi all'interno della playlist. Quando si scrive il codice, modificare tutti gli URL e i nomi di file in nomi di file validi accessibili al Windows Media Player.
 
-Viene creata una playlist per ogni stazione. Una quarta playlist analizza i primi tre. Le playlist vengono create per fare riferimento a inserzioni generate in modo dinamico e hanno la personalizzazione di Adventure Works radio.
+Viene creata una playlist per ognuna delle stazioni. Una quarta playlist analizza i primi tre. Le playlist vengono create per fare riferimento agli annunci generati dinamicamente e hanno il marchio Adventure Works Radio.
 
-Una delle playlist che rappresenta una stazione radio potrebbe essere simile alla seguente.
+Una delle playlist che rappresentano una stazione radio potrebbe essere simile alla seguente.
 
 
 ```XML
@@ -95,7 +95,7 @@ Codice di esempio
 
 
 
-In questo esempio viene riprodotto un annuncio seguito da 30 secondi di ognuna delle tre stazioni a cui viene fatto riferimento, una dopo l'altra. Questo ciclo si ripete per un periodo illimitato perché l'attributo **count** dell'elemento **Repeat** non è definito.
+In questo esempio viene riprodotto un annuncio seguito da 30 secondi di ognuna delle tre stazioni a cui si fa riferimento, una dopo l'altra. Questo ciclo verrà ripetuto per un periodo illimitato perché **l'attributo COUNT** dell'elemento **REPEAT** non è definito.
 
 -   Ogni riferimento a società, organizzazioni, prodotti, persone ed eventi utilizzati negli esempi è puramente casuale e ha il solo scopo di illustrare l'uso del prodotto Microsoft.
 
@@ -112,15 +112,15 @@ In questo esempio viene riprodotto un annuncio seguito da 30 secondi di ognuna d
 [**Playlist di metafile**](metafile-playlists.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guida ai metafile di Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guida ai metafile multimediali**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

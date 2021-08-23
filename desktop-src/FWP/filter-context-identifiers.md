@@ -1,6 +1,6 @@
 ---
-title: Identificatori di contesto di filtro (Fwpmu. h)
-description: Identificatori per i contesti di filtro incorporati nella piattaforma filtro Windows.
+title: Identificatori di contesto di filtro (Fwpmu.h)
+description: Identificatori per i contesti di filtro incorporati in Windows Filtering Platform.
 ms.assetid: bcfae832-5386-43c5-b916-89577765ee5d
 topic_type:
 - apiref
@@ -17,20 +17,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c09968f1ab68016405f22460409e83cfd826b716
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdc7d9914a9b6089ace87e7e9b942499d8e65dc7705bf524f74cddf96ee419d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951270"
 ---
-# <a name="filter-context-identifiers"></a>Identificatori di contesto di filtro
+# <a name="filter-context-identifiers"></a>Filtrare gli identificatori di contesto
 
-Gli identificatori per i contesti di filtro incorporati nella piattaforma filtro Windows sono definiti nel modo seguente.
+Gli identificatori per i contesti di filtro incorporati nella Windows di filtro sono definiti come segue.
 
 <dl> <dt>
 
-<span id="FWPM_CONTEXT_IPSEC_INBOUND_PASSTHRU__FWPM_CONTEXT_IPSEC_INBOUND_PERSIST_CONNECTION_SECURITY___FWPM_CONTEXT_IPSEC_INBOUND_RESERVED"></span><span id="fwpm_context_ipsec_inbound_passthru__fwpm_context_ipsec_inbound_persist_connection_security___fwpm_context_ipsec_inbound_reserved"></span>**contesto FWPM in \_ \_ ingresso IPSec in ingresso \_ \_ , FWPM \_ contesto IPSec in \_ \_ ingresso \_ Mantieni \_ \_ sicurezza connessione, FWPM \_ contesto IPSec in \_ \_ ingresso \_ riservato**
+<span id="FWPM_CONTEXT_IPSEC_INBOUND_PASSTHRU__FWPM_CONTEXT_IPSEC_INBOUND_PERSIST_CONNECTION_SECURITY___FWPM_CONTEXT_IPSEC_INBOUND_RESERVED"></span><span id="fwpm_context_ipsec_inbound_passthru__fwpm_context_ipsec_inbound_persist_connection_security___fwpm_context_ipsec_inbound_reserved"></span>**FWPM \_ CONTEXT \_ IPSEC \_ INBOUND \_ PASSTHRU, FWPM \_ CONTEXT \_ IPSEC \_ INBOUND \_ PERSIST \_ CONNECTION \_ SECURITY, FWPM \_ CONTEXT \_ IPSEC \_ INBOUND \_ RESERVED**
 </dt> <dd> <dl> <dt>
 
 
@@ -40,7 +40,7 @@ Contesti di filtro del trasporto IPsec nel livello in ingresso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_CONTEXT_IPSEC_OUTBOUND_NEGOTIATE_DISCOVER__FWPM_CONTEXT_IPSEC_OUTBOUND_SUPPRESS_NEGOTIATION"></span><span id="fwpm_context_ipsec_outbound_negotiate_discover__fwpm_context_ipsec_outbound_suppress_negotiation"></span>**FWPM \_ contesto \_ IPSec in \_ uscita \_ Negotiate \_ di negoziazione, FWPM \_ contesto \_ IPSec in \_ uscita \_ \_**
+<span id="FWPM_CONTEXT_IPSEC_OUTBOUND_NEGOTIATE_DISCOVER__FWPM_CONTEXT_IPSEC_OUTBOUND_SUPPRESS_NEGOTIATION"></span><span id="fwpm_context_ipsec_outbound_negotiate_discover__fwpm_context_ipsec_outbound_suppress_negotiation"></span>**INDIVIDUAZIONE NEGOZIAZIONE IN USCITA IPSEC CONTESTO FWPM, INDIVIDUAZIONE DELLA NEGOZIAZIONE IN USCITA DEL CONTESTO \_ \_ \_ \_ \_ FWPM \_ \_ IPSEC \_ ELIMINAZIONE \_ \_ NEGOZIAZIONE IN USCITA**
 </dt> <dd> <dl> <dt>
 
 
@@ -48,54 +48,54 @@ Contesti di filtro del trasporto IPsec nel livello in ingresso.
 Contesti di filtro del trasporto IPsec nel livello in uscita.
 
 > [!Note]  
-> Per Windows 7, utilizzare **la \_ \_ negoziazione in \_ uscita IPSec \_ in \_ uscita del contesto FWPM**.
+> Per Windows 7, usare **FWPM \_ CONTEXT \_ IPSEC OUTBOUND SUPPRESS \_ \_ \_ NEGOTIATION**.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_CONTEXT_ALE_SET_CONNECTION_REQUIRE_IPSEC_SECURITY__FWPM_CONTEXT_ALE_SET_CONNECTION_LAZY_SD_EVALUATION"></span><span id="fwpm_context_ale_set_connection_require_ipsec_security__fwpm_context_ale_set_connection_lazy_sd_evaluation"></span>**FWPM \_ contesto \_ ale \_ set \_ Connection \_ richiede \_ la \_ sicurezza IPSec, FWPM \_ Context \_ ale \_ set \_ Connection \_ Lazy \_ SD \_ Evaluation**
+<span id="FWPM_CONTEXT_ALE_SET_CONNECTION_REQUIRE_IPSEC_SECURITY__FWPM_CONTEXT_ALE_SET_CONNECTION_LAZY_SD_EVALUATION"></span><span id="fwpm_context_ale_set_connection_require_ipsec_security__fwpm_context_ale_set_connection_lazy_sd_evaluation"></span>**FWPM \_ CONTEXT \_ ALE \_ SET \_ CONNECTION \_ REQUIRE \_ IPSEC \_ SECURITY, FWPM \_ CONTEXT \_ ALE \_ SET \_ CONNECTION \_ LAZY \_ SD \_ EVALUATION**
 </dt> <dd> <dl> <dt>
 
 
 
-Contesti di filtro usati nel livello ALE Connect.
+Filtrare i contesti usati nel livello di connessione ALE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_CONTEXT_ALE_SET_CONNECTION_REQUIRE_IPSEC_ENCRYPTION__FWPM_CONTEXT_ALE_SET_CONNECTION_ALLOW_FIRST_INBOUND_PKT_UNENCRYPTED__FWPM_CONTEXT_ALE_ALLOW_AUTH_FW"></span><span id="fwpm_context_ale_set_connection_require_ipsec_encryption__fwpm_context_ale_set_connection_allow_first_inbound_pkt_unencrypted__fwpm_context_ale_allow_auth_fw"></span>**FWPM \_ contesto \_ ale \_ set \_ Connection \_ richiede \_ la \_ crittografia IPSec, FWPM \_ Context \_ ale \_ set \_ Connection \_ Consenti First in \_ \_ ingresso \_ PKT \_ decrittografato, FWPM \_ Context \_ ale \_ Consenti \_ autorizzazione \_ FW**
+<span id="FWPM_CONTEXT_ALE_SET_CONNECTION_REQUIRE_IPSEC_ENCRYPTION__FWPM_CONTEXT_ALE_SET_CONNECTION_ALLOW_FIRST_INBOUND_PKT_UNENCRYPTED__FWPM_CONTEXT_ALE_ALLOW_AUTH_FW"></span><span id="fwpm_context_ale_set_connection_require_ipsec_encryption__fwpm_context_ale_set_connection_allow_first_inbound_pkt_unencrypted__fwpm_context_ale_allow_auth_fw"></span>**FWPM \_ CONTEXT \_ ALE \_ SET \_ CONNECTION \_ REQUIRE \_ IPSEC \_ ENCRYPTION, FWPM \_ CONTEXT \_ ALE \_ SET \_ CONNECTION \_ ALLOW \_ FIRST \_ INBOUND \_ PKT \_ UNENCRYPTED, FWPM \_ CONTEXT \_ ALE \_ ALLOW \_ AUTH \_ FW**
 </dt> <dd> <dl> <dt>
 
 
 
-Contesti di filtro usati nel livello di ALE Connect o Accept.
+Filtrare i contesti usati nel livello ale connect o accept.
 
 > [!Note]  
-> Per Windows 7, usare **FWPM \_ Context \_ ale \_ set \_ Connection \_ Consenti \_ First in \_ ingresso \_ PKT \_ unencrypted** o **FWPM \_ Context \_ ale \_ allow \_ auth \_ FW**.
+> Per Windows 7, usare **FWPM \_ CONTEXT \_ ALE \_ SET CONNECTION ALLOW \_ FIRST \_ \_ \_ INBOUND \_ PKT \_ UNENCRYPTED** o **FWPM \_ CONTEXT \_ ALE ALLOW \_ \_ AUTH \_ FW**.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_CONTEXT_TCP_CHIMNEY_OFFLOAD_ENABLE__FWPM_CONTEXT_TCP_CHIMNEY_OFFLOAD_DISABLE"></span><span id="fwpm_context_tcp_chimney_offload_enable__fwpm_context_tcp_chimney_offload_disable"></span>**\_contesto FWPM \_ TCP \_ Chimney \_ offload \_ abilitata, \_ contesto FWPM \_ TCP \_ Chimney \_ offload \_ disabilitato**
+<span id="FWPM_CONTEXT_TCP_CHIMNEY_OFFLOAD_ENABLE__FWPM_CONTEXT_TCP_CHIMNEY_OFFLOAD_DISABLE"></span><span id="fwpm_context_tcp_chimney_offload_enable__fwpm_context_tcp_chimney_offload_disable"></span>**FWPM \_ CONTEXT \_ TCP \_ CHIMNEY \_ OFFLOAD \_ ENABLE, FWPM \_ CONTEXT \_ TCP \_ CHIMNEY \_ OFFLOAD \_ DISABLE**
 </dt> <dd> <dl> <dt>
 
 
 
-Contesti utilizzati dai callout del TCP Chimney Offload.
+Contesti usati dai TCP Chimney Offload callout.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_CONTEXT_RPC_AUDIT_ENABLED"></span><span id="fwpm_context_rpc_audit_enabled"></span>**\_controllo RPC del contesto FWPM \_ \_ \_ abilitato**
+<span id="FWPM_CONTEXT_RPC_AUDIT_ENABLED"></span><span id="fwpm_context_rpc_audit_enabled"></span>**CONTROLLO RPC DEL CONTESTO FWPM \_ \_ \_ \_ ABILITATO**
 </dt> <dd> <dl> <dt>
 
 
 
-Contesti utilizzati nel sottolivello di controllo RPC.
+Contesti usati nel sottolivente di controllo RPC.
 
 
 </dt> </dl> </dd> </dl>
@@ -106,9 +106,9 @@ Contesti utilizzati nel sottolivello di controllo RPC.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 
