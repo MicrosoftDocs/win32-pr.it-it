@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. SmallHighContrastImages
-description: Rappresenta un contenitore di immagini; in questo caso, immagini di piccole dimensioni da usare con impostazioni di sistema a contrasto elevato.
+title: Proprietà Command.SmallHighContrastImages
+description: Rappresenta un contenitore di immagini. in questo caso, immagini di piccole dimensioni da usare con le impostazioni di sistema a contrasto elevato.
 ms.assetid: d1c441eb-885a-4dc1-b98d-5a36cab2f837
 keywords:
-- Barra multifunzione di Windows Command. SmallHighContrastImages
+- Proprietà Command.SmallHighContrastImages Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56291ad4e56e5f941fe4cb2790ac6afab27ad67b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ddee0ccadc966b89d381e02cca5ac1ae336c98671c82a3e4f39f8ebdd6cbeb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329291"
 ---
-# <a name="commandsmallhighcontrastimages-property"></a>Proprietà Command. SmallHighContrastImages
+# <a name="commandsmallhighcontrastimages-property"></a>Proprietà Command.SmallHighContrastImages
 
-Rappresenta un contenitore di immagini; in questo caso, immagini di piccole dimensioni da usare con impostazioni di sistema a contrasto elevato.
+Rappresenta un contenitore di immagini. in questo caso, immagini di piccole dimensioni da usare con le impostazioni di sistema a contrasto elevato.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                 | Descrizione                                        |
 |---------------------------------------------------------|----------------------------------------------------|
-| [**Immagine**](windowsribbon-element-image.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**Immagine**](windowsribbon-element-image.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -61,13 +61,13 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-Le risorse di immagine devono essere conformi al formato grafico bitmap standard (BMP) usato in Windows.
+Le risorse immagine devono essere conformi al formato grafico BMP (Standard Bitmap) usato Windows.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [**SplitButton**](windowsribbon-element-splitbutton.md) con un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) .
+L'esempio seguente illustra il markup di base per [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-In questa sezione del codice vengono illustrate le dichiarazioni di comando [**SplitButton**](windowsribbon-element-splitbutton.md) e [**MenuGroup**](windowsribbon-element-menugroup.md) con risorse di immagine a contrasto elevato grandi e piccole. Viene anche dichiarato un [**gruppo**](windowsribbon-element-group.md) associato che funge da contenitore padre per l'elemento **SplitButton** .
+Questa sezione di codice illustra le dichiarazioni [**di comando SplitButton**](windowsribbon-element-splitbutton.md) e [**MenuGroup**](windowsribbon-element-menugroup.md) con risorse immagine a contrasto elevato di grandi e piccole dimensioni. Viene dichiarato [**anche un**](windowsribbon-element-group.md) gruppo associato che funge da contenitore padre per **l'elemento SplitButton.**
 
 
 ```XML
@@ -117,8 +117,8 @@ In questa sezione del codice vengono illustrate le dichiarazioni di comando [**S
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -126,10 +126,10 @@ In questa sezione del codice vengono illustrate le dichiarazioni di comando [**S
 
 <dl> <dt>
 
-[Specifica delle risorse dell'immagine della barra multifunzione](windowsribbon-imageformats.md)
+[Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)
 </dt> <dt>
 
-[Interfaccia utente \_ pkey \_ SmallHighContrastImage](windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md)
+[UI \_ PKEY \_ SmallHighContrastImage](windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md)
 </dt> </dl>
 
  

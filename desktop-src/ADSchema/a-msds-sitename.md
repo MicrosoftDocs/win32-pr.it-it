@@ -1,11 +1,11 @@
 ---
-title: ms-DS-SiteName (attributo)
+title: Attributo ms-DS-SiteName
 description: Elenca il nome del sito che corrisponde al controller di dominio.
 ms.assetid: c2ffd15b-c6e2-442e-9650-bf23058c8941
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-SiteName
-- attributo msDS-SiteName-schema AD
+- Schema AD dell'attributo msDS-SiteName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd45f876a8ae3c740d81a28f3ee7ad7983a69b38
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 466516f28676aeeb3795fd3d6fe021f32c52db61ec86305d0929f24c2799b026
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544481"
 ---
-# <a name="ms-ds-sitename-attribute"></a>ms-DS-SiteName (attributo)
+# <a name="ms-ds-sitename-attribute"></a>Attributo ms-DS-SiteName
 
 Elenca il nome del sito che corrisponde al controller di dominio.
 
@@ -30,12 +30,12 @@ Elenca il nome del sito che corrisponde al controller di dominio.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-SiteName                              |
-| LDAP-Display-Name | msDS-SiteName                               |
+| Ldap-Display-Name | msDS-SiteName                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1961                     |
-| System-ID-GUID    | 98a7f36d-3595-448a-9e6f-6b8965baed9c        |
+| System-Id-Guid    | 98a7f36d-3595-448a-9e6f-6b8965baed9c        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Elenca il nome del sito che corrisponde al controller di dominio.
 | ID collegamento                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                     |
+| A valore singolo       | Vero                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Elenca il nome del sito che corrisponde al controller di dominio.
 | ID collegamento                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                     |
+| A valore singolo       | Vero                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Elenca il nome del sito che corrisponde al controller di dominio.
 | ID collegamento                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                     |
+| A valore singolo       | Vero                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                    |
 | Nel catalogo globale      | Falso                                                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 

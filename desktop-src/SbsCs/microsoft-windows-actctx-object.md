@@ -1,7 +1,7 @@
 ---
-description: L'oggetto Microsoft. Windows. ActCtx fa riferimento a manifesti e fornisce un modo per eseguire lo scripting dei motori per accedere agli assembly side-by-side. L'oggetto Microsoft. Windows. ActCtx può essere utilizzato per creare un'istanza di un assembly affiancato con componenti COM.
+description: The Microsoft. Windows. L'oggetto ActCtx fa riferimento ai manifesti e consente ai motori di scripting di accedere ad assembly side-by-side. The Microsoft. Windows. L'oggetto ActCtx può essere usato per creare un'istanza di un assembly side-by-side con componenti COM.
 ms.assetid: 818e175e-2c58-4c44-87ce-4e97352fc3f3
-title: Oggetto Microsoft. Windows. ActCtx
+title: Microsoft. Windows. Oggetto ActCtx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,36 +12,36 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 58290ec9d36d8e8428000422d0e1014335870149
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e84eadbc7489ddd91c34c0c9494515e89205849829625e850ad31dce3e92fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142004"
 ---
-# <a name="microsoftwindowsactctx-object"></a>Oggetto Microsoft. Windows. ActCtx
+# <a name="microsoftwindowsactctx-object"></a>Microsoft. Windows. Oggetto ActCtx
 
-L'oggetto **Microsoft. Windows. ACTCTX** fa riferimento a manifesti e fornisce un modo per eseguire lo scripting dei motori per accedere agli assembly side-by-side. L'oggetto **Microsoft. Windows. ACTCTX** può essere utilizzato per creare un'istanza di un assembly affiancato con componenti com.
+**Microsoft.Windows. L'oggetto ActCtx** fa riferimento ai manifesti e consente ai motori di scripting di accedere ad assembly side-by-side. **Microsoft.Windows. L'oggetto ActCtx** può essere usato per creare un'istanza di un assembly side-by-side con componenti COM.
 
-L'oggetto **Microsoft. Windows. ACTCTX** viene visualizzato come assembly in Windows Server 2003. Può anche essere installato da applicazioni che usano la Windows Installer per il programma di installazione e lo includono come modulo merge nel pacchetto di installazione.
+**Microsoft.Windows. L'oggetto ActCtx** viene fornito come assembly in Windows Server 2003. Può anche essere installato dalle applicazioni che usano il Windows installer per l'installazione e lo includono come modulo unione nel pacchetto di installazione.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **Microsoft. Windows. ACTCTX** dispone di questi tipi di membri:
+**Microsoft.Windows. L'oggetto ActCtx** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **Microsoft. Windows. ACTCTX** dispone di questi metodi.
+**Microsoft.Windows. L'oggetto ActCtx** ha questi metodi.
 
 
 
 | Metodo                               | Descrizione                                                                     |
 |:-------------------------------------|:--------------------------------------------------------------------------------|
 | [**CreateObject**](createobject.md) | Crea un oggetto nel contesto del manifesto corrente.<br/>            |
-| [**GetObject**](getobject.md)       | Ottiene un'istanza di un oggetto **Microsoft. Windows. ACTCTX** esistente.<br/> |
+| [**Getobject**](getobject.md)       | Ottiene un'istanza di un **oggetto Microsoft.Windows esistente. Oggetto ActCtx.**<br/> |
 
 
 
@@ -49,13 +49,13 @@ L'oggetto **Microsoft. Windows. ACTCTX** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **Microsoft. Windows. ACTCTX** dispone di queste proprietà.
+**Microsoft.Windows. L'oggetto ActCtx** ha queste proprietà.
 
 
 
 | Proprietà                                | Tipo di accesso          | Descrizione                                    |
 |:----------------------------------------|:---------------------|:-----------------------------------------------|
-| [**Manifesto**](manifest.md)<br/> | Sola lettura<br/> | Ottiene il contesto di attivazione attiva.<br/> |
+| [**Manifesto**](manifest.md)<br/> | Sola lettura<br/> | Ottiene il contesto di attivazione attivo.<br/> |
 
 
 
@@ -67,8 +67,8 @@ L'oggetto **Microsoft. Windows. ACTCTX** dispone di queste proprietà.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

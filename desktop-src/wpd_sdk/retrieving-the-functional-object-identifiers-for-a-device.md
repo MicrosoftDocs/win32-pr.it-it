@@ -1,21 +1,21 @@
 ---
-description: Recupero degli identificatori di oggetti funzionali per un dispositivo
+description: Recupero degli identificatori di oggetto funzionale per un dispositivo
 ms.assetid: 9a13071a-95a1-4330-92d5-11fa72a8f211
-title: Recupero degli identificatori di oggetti funzionali per un dispositivo
+title: Recupero degli identificatori di oggetto funzionale per un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6a753324e24a6b78625a78b4128380288b6672f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93d0cc686a6997c10e26e3d83190503bba09fe15afc7f4e0cf75e297f0d905f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119263001"
 ---
-# <a name="retrieving-the-functional-object-identifiers-for-a-device"></a>Recupero degli identificatori di oggetti funzionali per un dispositivo
+# <a name="retrieving-the-functional-object-identifiers-for-a-device"></a>Recupero degli identificatori di oggetto funzionale per un dispositivo
 
-Come indicato nell'argomento [recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md) , i dispositivi portatili Windows possono supportare una o più categorie funzionali. Una determinata categoria funzionale può supportare uno o più oggetti funzionali. Ad esempio, la categoria archiviazione può supportare tre oggetti di archiviazione funzionale, ciascuno dei quali è identificato da una stringa identificatore univoco. Il primo oggetto di archiviazione può quindi essere identificato dalla stringa "storage1", la seconda dalla stringa "Storage2" e la terza dalla stringa "Storage3".
+Come illustrato nell'argomento [Recupero](retrieving-the-functional-categories-supported-by-a-device.md) delle categorie funzionali supportate da un dispositivo, Windows dispositivi portatili possono supportare una o più categorie funzionali. Qualsiasi categoria funzionale specifica può supportare uno o più oggetti funzionali. Ad esempio, la categoria di archiviazione può supportare tre oggetti di archiviazione funzionali, ognuno dei quali è identificato da una stringa identificatore univoca. Il primo oggetto di archiviazione può quindi essere identificato dalla stringa "Storage1", il secondo dalla stringa "Storage2" e il terzo dalla stringa "Storage3".
 
-La funzione ListFunctionalObjects nel modulo DeviceCapabilities. cpp illustra il recupero dei tipi di contenuto per le categorie funzionali supportate da un dispositivo selezionato.
+La funzione ListFunctionalObjects nel modulo DeviceCapabilities.cpp illustra il recupero dei tipi di contenuto per le categorie funzionali supportate da un dispositivo selezionato.
 
 L'applicazione può recuperare le categorie funzionali supportate da un dispositivo usando le interfacce descritte nella tabella seguente.
 
@@ -24,13 +24,13 @@ L'applicazione può recuperare le categorie funzionali supportate da un disposit
 | Interfaccia                                                                                      | Descrizione                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Fornisce l'accesso ai metodi di recupero della categoria funzionale. |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per enumerare e archiviare i dati della categoria funzionale.         |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usato per enumerare e archiviare i dati della categoria funzionale.         |
 
 
 
  
 
-Il codice trovato nella funzione ListFunctionalObjects è quasi identico al codice trovato nella funzione ListFunctionalCategories. Vedere l'argomento [recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md) . L'unica differenza è rappresentata dalla chiamata al metodo [**IPortableDeviceCapabilities:: GetFunctionalObjects**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) , che viene visualizzato all'interno del ciclo che scorre le categorie funzionali.
+Il codice trovato nella funzione ListFunctionalObjects è quasi identico al codice trovato nella funzione ListFunctionalCategories. Vedere [l'argomento Recupero di categorie funzionali supportate da un](retrieving-the-functional-categories-supported-by-a-device.md) dispositivo. L'unica differenza è la chiamata al metodo [**IPortableDeviceCapabilities::GetFunctionalObjects,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) che viene visualizzato all'interno del ciclo che scorre le categorie funzionali.
 
 
 ```C++

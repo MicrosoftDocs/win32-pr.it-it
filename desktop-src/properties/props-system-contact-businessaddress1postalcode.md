@@ -4,12 +4,12 @@ ms.assetid: 92699da2-5cb3-45cd-b440-56d8202c17b3
 title: System.Contact.BusinessAddress1PostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bf23dbb23353adf56fa358b1de43b25e54c66b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1c4b8a6a73012c0b69fc68b78a673130a68ba8360929a173d807a9a5569c35f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119267041"
 ---
 # <a name="systemcontactbusinessaddress1postalcode"></a>System.Contact.BusinessAddress1PostalCode
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo LM-pwd-History
-description: La cronologia delle password dell'utente nel formato unidirezionale di LAN Manager (LM) (OWF). La OWF LM viene utilizzata per la compatibilità con i client LAN Manager 2. x, Windows 95 e Windows 98.
+title: Attributo Lm-Pwd-History
+description: Cronologia delle password dell'utente in formato unidiredato (OWF) di LAN Manager (LM). L'OWF LM viene usato per la compatibilità con i client DIN Manager 2.x, Windows 95 e Windows 98.
 ms.assetid: c4cb2e74-b37d-4c76-8d21-d71bc9c19a4a
 ms.tgt_platform: multiple
 keywords:
-- LM-pwd-schema AD dell'attributo della cronologia
+- Schema AD dell'attributo Lm-Pwd-History
 - Schema AD dell'attributo lmPwdHistory
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f5c73b35bb0ea2cae9d01324d82e1568485541
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 365c5989f7118408ef31b7a3f0c6b3d91f98502127ef2c5161a9f276296732b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301921"
 ---
-# <a name="lm-pwd-history-attribute"></a>Attributo LM-pwd-History
+# <a name="lm-pwd-history-attribute"></a>Attributo Lm-Pwd-History
 
-La cronologia delle password dell'utente nel formato unidirezionale di LAN Manager (LM) (OWF). La OWF LM viene utilizzata per la compatibilità con LAN Manager 2. client *x* , Windows 95 e Windows 98.
+Cronologia delle password dell'utente in formato unidiredato (OWF) di LAN Manager (LM). L'OWF LM viene usato per la compatibilità con LAN Manager 2. *x* client, Windows 95 e Windows 98.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | LM-pwd-cronologia                                        |
-| LDAP-Display-Name | lmPwdHistory                                          |
+| CN                | Lm-Pwd-History                                        |
+| Ldap-Display-Name | lmPwdHistory                                          |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Amministratore di dominio                                  |
+| Aggiorna privilegio  | Amministratore di dominio                                  |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.160                                |
-| System-ID-GUID    | bf96799d-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf96799d-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ La cronologia delle password dell'utente nel formato unidirezionale di LAN Manag
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

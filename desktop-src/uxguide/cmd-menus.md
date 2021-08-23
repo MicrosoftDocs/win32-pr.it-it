@@ -4,17 +4,17 @@ description: I menu sono elenchi gerarchici di comandi o opzioni disponibili per
 ms.assetid: 3772ff8e-8057-476d-b62b-efbd5e07907f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 7d5c52e56c88f4066e8f1dc068ac89070c7d4974
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: e9b2c3559163ff77e8e3f08354b017c1b7cb53c95fd51802ae2565efdf71abcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350174"
 ---
 # <a name="menus-design-basics"></a>Menu (nozioni di base sulla progettazione)
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
 I menu sono elenchi gerarchici di comandi o opzioni disponibili per gli utenti nel contesto corrente.
 
@@ -37,14 +37,14 @@ I menu hanno diversi modelli di utilizzo:
 
 
 
-| Utilizzo                                                                                                                                                |    Esempio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Uso                                                                                                                                                |    Esempio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barre dei menu**<br/> una barra dei menu visualizza comandi e opzioni nei menu a discesa. <br/>                                               | le barre dei menu sono molto comuni e facili da trovare, nonché un uso efficiente dello spazio. <br/> ![Screenshot della barra dei menu con menu a discesa ](images/cmd-menus-image2.png)<br/> Barra dei menu di Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Menu della barra degli strumenti**<br/> una barra dei menu implementata come barra degli strumenti. <br/>                                                                   | i menu della barra degli strumenti sono costituiti principalmente da comandi nei pulsanti di [menu](ctrl-command-buttons.md) e nei pulsanti di menu suddivisi, con solo alcuni comandi diretti, se presenti. <br/> ![Screenshot del menu della barra degli strumenti con menu a discesa ](images/cmd-menus-image3.png)<br/> Un menu della barra degli strumenti in Windows Raccolta foto.<br/> Per linee guida su questo modello, vedere [Barre degli strumenti.](cmd-toolbars.md)<br/>                                                                                                                                                                                                             |
-| **Menu delle schede**<br/> pulsanti all'interno di schede che visualizzano un piccolo set di comandi e opzioni correlati a una scheda in un menu a discesa. <br/> | Le schede con menu sono simili a schede normali, ad eccezione della parte inferiore con un pulsante con freccia a discesa. Facendo clic sul pulsante viene visualizzato un menu a discesa anziché selezionare la scheda. <br/> ![Screenshot del menu della scheda con menu a discesa ](images/cmd-menus-image4.png)<br/> I menu delle schede vengono usati in Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
+| **Barre dei menu**<br/> una barra dei menu visualizza comandi e opzioni nei menu a discesa. <br/>                                               | le barre dei menu sono molto comuni e facili da trovare, nonché un uso efficiente dello spazio. <br/> ![Screenshot della barra dei menu con menu a discesa ](images/cmd-menus-image2.png)<br/> Una barra dei menu Windows Posta elettronica.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Menu della barra degli strumenti**<br/> una barra dei menu implementata come barra degli strumenti. <br/>                                                                   | i menu della barra degli strumenti sono costituiti principalmente da comandi nei pulsanti di [menu](ctrl-command-buttons.md) e nei pulsanti di menu suddivisi, con solo alcuni comandi diretti, se presenti. <br/> ![Screenshot del menu della barra degli strumenti con menu a discesa ](images/cmd-menus-image3.png)<br/> Un menu della barra degli strumenti Windows Raccolta foto.<br/> Per linee guida su questo modello, vedere [Barre degli strumenti.](cmd-toolbars.md)<br/>                                                                                                                                                                                                             |
+| **Menu delle schede**<br/> pulsanti all'interno di schede che visualizzano un piccolo set di comandi e opzioni correlati a una scheda in un menu a discesa. <br/> | Le schede con menu sono simili a schede normali, ad eccezione della parte inferiore con un pulsante con freccia a discesa. Facendo clic sul pulsante viene visualizzato un menu a discesa anziché selezionare la scheda. <br/> ![Screenshot del menu della scheda con menu a discesa ](images/cmd-menus-image4.png)<br/> I menu delle schede vengono usati Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
 | **Pulsanti di menu**<br/> pulsanti di comando che visualizzano un piccolo set di comandi correlati in un menu a discesa. <br/>                       | [I pulsanti di](ctrl-command-buttons.md) menu sono simili ai normali pulsanti di comando, ad eccezione del fatto che al loro interno è visualizzata una freccia a discesa. Facendo clic sul pulsante viene visualizzato un menu a discesa anziché eseguire un comando.<br/> [I pulsanti di](ctrl-command-buttons.md) menu sono simili ai pulsanti di menu, ad eccezione del fatto che sono varianti di un comando e facendo clic sulla parte sinistra del pulsante viene eseguita direttamente l'azione sull'etichetta.<br/> ![Screenshot del pulsante di menu con comandi a discesa ](images/cmd-menus-image5.png)<br/> Pulsante di menu con un piccolo set di comandi correlati.<br/> |
 | **Menu di scelta rapida**<br/> menu a discesa che visualizzano un piccolo set di comandi e opzioni correlati al contesto corrente. <br/>       | menu di scelta rapida quando gli utenti fa clic con il pulsante destro del mouse su un oggetto o un'area della finestra che supporta un menu di scelta rapida. <br/> ![Screenshot del menu di scelta rapida che visualizza i comandi ](images/cmd-menus-image6.png)<br/> un menu di scelta rapida da Esplora risorse.<br/> Se i menu di scelta rapida sono la scelta migliore ma è necessaria una soluzione adatta a tutti gli utenti, è possibile usare un pulsante freccia a discesa del menu. <br/> ![Screenshot della foto con il pulsante del menu a discesa ](images/cmd-menus-image7.png)<br/> Menu di scelta rapida reso visibile con un pulsante a discesa di menu.<br/>                                                   |
-| **Menu del riquadro attività**<br/> un piccolo set di comandi correlati all'oggetto o alla modalità programma selezionata. <br/>                              | A differenza dei menu di scelta rapida, vengono visualizzati automaticamente all'interno di un riquadro della finestra anziché su richiesta. <br/> ![Screenshot della foto con il menu del riquadro attività a destra ](images/cmd-menus-image8.png)<br/> Menu del riquadro attività dal visualizzatore Raccolta foto Windows.<br/>                                                                                                                                                                                                                                                                                                                                                         |
+| **Menu del riquadro attività**<br/> un piccolo set di comandi correlati all'oggetto o alla modalità programma selezionata. <br/>                              | A differenza dei menu di scelta rapida, vengono visualizzati automaticamente all'interno di un riquadro della finestra anziché su richiesta. <br/> ![Screenshot della foto con il menu del riquadro attività a destra ](images/cmd-menus-image8.png)<br/> Menu del riquadro attività dal visualizzatore Windows Raccolta foto attività.<br/>                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
@@ -123,7 +123,7 @@ Menu efficaci che promuovono un'esperienza utente ottimale:
 
 **Se si fa una sola cosa...**
 
-Scegliere una presentazione dei comandi che corrisponda al tipo di programma, ai tipi di finestra, all'utilizzo dei comandi e agli utenti di destinazione.
+Scegliere una presentazione di comandi che corrisponda al tipo di programma, ai tipi di finestra, all'utilizzo dei comandi e agli utenti di destinazione.
 
 ## <a name="guidelines"></a>Indicazioni
 
@@ -151,15 +151,15 @@ In genere, le barre degli strumenti funzionano bene insieme alle barre dei menu 
 
 -   Nascondere la barra dei menu per impostazione predefinita se la progettazione della barra degli strumenti rende ridondante una barra dei menu.
 -   Nascondere la barra dei menu invece di rimuoverla completamente, perché le barre dei menu sono più accessibili per gli utenti della tastiera.
--   Per ripristinare la barra dei menu, specificare un'opzione di segno di spunta barra dei menu nella categoria di menu Visualizza (per le barre degli strumenti primari) o Strumenti (per le barre degli strumenti secondarie). Per altre informazioni, vedere [Menu Standard e pulsanti di divisione.](cmd-toolbars.md)
+-   Per ripristinare la barra dei menu, specificare un'opzione segno di spunta barra dei menu nella categoria di menu Visualizza (per le barre degli strumenti primari) o Strumenti (per le barre degli strumenti secondarie). Per altre informazioni, vedere [Menu Standard e pulsanti di divisione.](cmd-toolbars.md)
 
 ### <a name="menu-categories"></a>Categorie di menu
 
 -   **Scegliere nomi di singole parole per le categorie di menu.** L'uso di più parole crea confusione nella separazione tra categorie.
 -   **Per i programmi che creano o visualizzano documenti, usare le categorie di menu standard,** ad esempio File, Modifica, Visualizza, Strumenti e Guida. In questo modo, le voci di menu comuni sono prevedibili e più facili da trovare.
--   **Per altri tipi di programmi,** è consigliabile organizzare i comandi e le opzioni in categorie naturali più utili in base allo scopo del programma e al modo in cui gli utenti considerano le attività e gli obiettivi. Non è obbligatorio usare l'organizzazione di menu standard se non è adatta al programma.
--   **Se si sceglie di usare categorie di menu non standard, è necessario scegliere nomi di categoria validi.** Per altre informazioni, vedere la [sezione](#labels) Etichette.
--   **Preferisce le categorie di menu orientate alle attività rispetto alle categorie generiche.** Le categorie orientate alle attività semplificano l'individuazione delle voci di menu.
+-   **Per altri tipi di programmi,** è consigliabile organizzare i comandi e le opzioni in categorie naturali più utili in base allo scopo del programma e al modo in cui gli utenti considerano le attività e gli obiettivi. Non essere obbligati a usare l'organizzazione di menu standard se non è adatta al programma.
+-   **Se si sceglie di usare categorie di menu non standard, è necessario scegliere nomi di categoria validi.** Per altre informazioni, vedere la [sezione Etichette.](#labels)
+-   **Preferire le categorie di menu orientate alle attività rispetto alle categorie generiche.** Le categorie orientate alle attività semplificano l'individuazione delle voci di menu.
 
 ![Screenshot della barra dei menu con rip, masterizzazione e sincronizzazione ](images/cmd-menus-image10.png)
 
@@ -190,7 +190,7 @@ In questo esempio, Windows Media Player le voci di menu Opzioni e Guida in ogni 
 -   **Evitare di usare i sottomenu inutilmente.** I sottomenu richiedono un maggiore impegno fisico da usare e in genere rendono le voci di menu più difficili da individuare.
 -   **Non inserire voci di menu usate di frequente in un sottomenu.** In questo modo l'uso di questi comandi non sarebbe efficiente. Tuttavia, è possibile inserire i comandi usati di frequente in un sottomenu se si accede in genere più direttamente, ad esempio con una barra degli strumenti.
 -   **È consigliabile usare un sottomenu se:**
-    -   In questo modo il menu padre viene semplificato perché contiene molte voci (20 o più) o il sottomenu fa parte di un gruppo di più di sette elementi.
+    -   Questa operazione semplifica il menu padre perché contiene molte voci (20 o più) o il sottomenu fa parte di un gruppo di più di sette elementi.
     -   Le voci del sottomenu vengono usate meno frequentemente rispetto a quelle del menu padre.
     -   Il sottomenu contiene tre o più elementi.
     -   Esistono tre o più comandi che iniziano con la stessa parola. In questo caso, usare tale parola come etichetta del sottomenu.
@@ -209,14 +209,14 @@ In questo esempio, il sottomenu Nuovo sostituisce i comandi separati per Nuovo m
 
 ### <a name="tab-menus"></a>Menu a schede
 
--   **Ogni menu della scheda può avere voci di menu Opzioni e Guida specifiche del contesto.** Questo comportamento è in contrasto con tutti gli altri modelli di menu. Ogni scheda viene usata per un set dedicato di attività, quindi qualsiasi ridondanza tra i menu delle schede non crea confusione.
+-   **Ogni menu della scheda può avere voci di menu Opzioni e Guida specifiche del contesto.** Ciò è in contrasto con tutti gli altri modelli di menu. Ogni scheda viene usata per un set dedicato di attività, quindi qualsiasi ridondanza tra i menu delle schede non crea confusione.
 
 ### <a name="context-menus"></a>Menu di scelta rapida
 
 -   **Usare i menu di scelta rapida solo per i comandi e le opzioni contestuali.** Le voci di menu devono essere applicate solo all'area dell'oggetto o della finestra selezionata (o su cui si è fatto clic), non all'intero programma.
 -   **Non rendere i comandi disponibili solo tramite i menu di scelta rapida.** Come i tasti di scelta rapida, i menu di scelta rapida sono strumenti alternativi per eseguire comandi e scegliere le opzioni. Ad esempio, un comando Proprietà è disponibile anche tramite la barra dei menu o il tasto di scelta ALT+INVIO.
 -   **Fornire menu di scelta rapida per tutti gli oggetti e le aree della finestra** che traggono vantaggio da un piccolo set di comandi e opzioni contestuali. Molti utenti possono fare clic con il pulsante destro del mouse regolarmente e si aspettano di trovare menu di scelta rapida ovunque.
--   **È consigliabile usare un pulsante freccia a discesa per i menu di scelta rapida destinati a tutti gli utenti.** In genere i menu di scelta rapida sono adatti per i comandi e le opzioni destinati agli utenti avanzati. È tuttavia possibile usare un pulsante a discesa di menu nei casi in cui i menu di scelta rapida sono la scelta migliore ed è necessario scegliere come destinazione tutti gli utenti.
+-   **È consigliabile usare un pulsante freccia a discesa per i menu di scelta rapida destinati a tutti gli utenti.** In genere i menu di scelta rapida sono adatti per i comandi e le opzioni destinati agli utenti avanzati. Tuttavia, è possibile usare un pulsante a discesa di menu nei casi in cui i menu di scelta rapida sono la scelta migliore ed è necessario scegliere come destinazione tutti gli utenti.
 
 ![Screenshot della foto con il pulsante del menu a discesa ](images/cmd-menus-image7.png)
 
@@ -226,7 +226,7 @@ In questo esempio viene usato un pulsante a discesa di menu per rendere visibile
 
 -   **Organizzare le voci di menu in gruppi di sette o meno elementi strettamente correlati.**
 -   **Evitare di usare i sottomenu** per mantenere i menu di scelta rapida semplici, diretti ed efficienti.
--   **Non inserire più di 15 elementi in un menu di scelta rapida.**
+-   **Non inserire più di 15 elementi all'interno di un menu di scelta rapida.**
 -   **Inserire separatori tra i gruppi all'interno di un menu.** Un separatore è una singola riga che si estende sulla larghezza del menu.
 -   **Presentare le voci di menu usando l'ordine seguente:**
 
@@ -246,7 +246,7 @@ Proprietà
 
 **Presentazione**
 
--   **Visualizzare il comando predefinito in grassetto.** Quando possibile, impostare anche questa opzione come prima voce di menu. Il comando predefinito viene richiamato quando gli utenti fare doppio clic o selezionare un oggetto e premere INVIO.
+-   **Visualizzare il comando predefinito in grassetto.** Quando possibile, impostare anche questa opzione come prima voce di menu. Il comando predefinito viene richiamato quando l'utente fa doppio clic o seleziona un oggetto e preme INVIO.
 -   **Rimuovere invece di disabilitare le voci del menu di scelta rapida che non si applicano al contesto corrente.** In questo modo i menu di scelta rapida sono contestuali ed efficienti.
     -   **Eccezione:** Disabilitare le voci di menu che non si applicano se è ragionevole aspettarsi che siano disponibili:
         -   Disporre sempre dei comandi del menu di scelta rapida standard pertinenti, ad esempio Taglia, Copia, Incolla, Elimina e Rinomina.
@@ -284,7 +284,7 @@ Per altre informazioni ed esempi, vedere [Icone.](vis-icons.md)
 
 ![Screenshot delle voci di menu con tasti di scelta numerici ](images/cmd-menus-image14.png)
 
-In questo esempio, il programma Paint in Windows assegna tasti di scelta numerici ai file usati di recente.
+In questo esempio il programma Paint in Windows assegna chiavi di accesso numeriche ai file usati di recente.
 
 -   **Assegnare chiavi di accesso univoche all'interno di un livello di menu.** È possibile riutilizzare le chiavi di accesso in diversi livelli di menu.
 -   **Semplificare la ricerca delle chiavi di accesso:**
@@ -304,27 +304,27 @@ Per altre linee guida ed esempi, vedere [Tastiera.](inter-keyboard.md)
 -   **Assegnare i tasti di scelta rapida alle voci di menu usate più di frequente.** Le voci di menu usate raramente non necessitano di tasti di scelta rapida perché gli utenti possono usare i tasti di scelta.
 -   **Non creare un tasto di scelta rapida come unico modo per eseguire un'attività.** Gli utenti devono anche essere in grado di usare il mouse o la tastiera con TAB, freccia e tasti di scelta.
 -   **Per i tasti di scelta rapida noti, usare le assegnazioni standard.**
--   **Non assegnare significati diversi a tasti di scelta rapida noti.** Poiché sono memorizzati, significati incoerenti per le scelte rapide note sono frustranti e erre. Vedere Tasti di scelta rapida di Windows per i tasti di scelta rapida ben noto usati dai programmi Windows.
+-   **Non assegnare significati diversi a tasti di scelta rapida noti.** Poiché sono memorizzati, significati incoerenti per le scelte rapide note sono frustranti e erre. Vedere Windows tasti di scelta rapida per i tasti di scelta rapida ben Windows programmi.
 -   **Non provare ad assegnare tasti di scelta rapida del programma a livello di sistema.** I tasti di scelta rapida del programma avranno effetto solo quando il programma ha lo stato attivo per l'input.
 -   **Documentare tutti i tasti di scelta rapida.** In questo modo, gli utenti possono apprendere le assegnazioni dei tasti di scelta rapida.
     -   **Eccezione:** Non visualizzare le assegnazioni dei tasti di scelta rapida all'interno dei menu di scelta rapida. I menu di scelta rapida non visualizzano le assegnazioni dei tasti di scelta rapida perché sono ottimizzati per l'efficienza.
--   **Per le assegnazioni di chiavi non standard:**
+-   **Per le assegnazioni di chiave non standard:**
     -   **Scegliere i tasti di scelta rapida che non hanno assegnazioni standard.** Non riassegnare mai i tasti di scelta rapida standard.
-    -   **Usare le assegnazioni di chiavi non standard in modo coerente in tutto il programma.** Non assegnare significati diversi in finestre diverse.
-    -   **Se possibile, scegliere assegnazioni di tasti di scelta rapida, soprattutto** per i comandi usati di frequente.
+    -   **Usare le assegnazioni di chiave non standard in modo coerente in tutto il programma.** Non assegnare significati diversi in finestre diverse.
+    -   **Se possibile, scegliere le assegnazioni di tasti mnemoiche,** in particolare per i comandi usati di frequente.
     -   **Usare i tasti funzione per i comandi che hanno un** effetto su scala ridotta, ad esempio i comandi che si applicano all'oggetto selezionato. Ad esempio, F2 rinomina l'elemento selezionato.
-    -   **Usare le combinazioni di tasti CTRL per i** comandi che hanno un effetto su larga scala, ad esempio i comandi che si applicano a un intero documento. Ad esempio, CTRL+S salva il documento corrente.
-    -   **Usare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard.** Ad esempio, il tasto di scelta rapida ALT+TAB scorre le finestre primarie aperte, mentre ALT+MAIUSC+TAB scorre in ordine inverso. Analogamente, F1 visualizza la Guida, mentre MAIUSC+F1 visualizza la Guida sensibile al contesto.
-    -   **Non usare i caratteri seguenti per i tasti di scelta rapida:** @ $ {} \[ \] \\  ~  \| ^ ' < >. Questi caratteri richiedono combinazioni di tasti diverse tra le lingue o sono specifici delle impostazioni locali.
+    -   **Usare combinazioni di tasti CTRL per i comandi che** hanno un effetto su larga scala, ad esempio i comandi che si applicano a un intero documento. Ad esempio, CTRL+S salva il documento corrente.
+    -   **Usare combinazioni di tasti MAIUSC per i comandi che estendono o completano le azioni del tasto di scelta rapida standard.** Ad esempio, il tasto di scelta rapida ALT+TAB scorre le finestre primarie aperte, mentre ALT+MAIUSC+TAB scorre in ordine inverso. Analogamente, F1 visualizza la Guida, mentre MAIUSC+F1 visualizza la Guida sensibile al contesto.
+    -   **Non usare i caratteri seguenti per i tasti di scelta rapida:** @ $ {} \[ \] \\  ~  \| ^ ' < >. Questi caratteri richiedono combinazioni di tasti diverse tra lingue o sono specifiche delle impostazioni locali.
     -   **Non usare combinazioni CTRL+ALT,** perché Windows interpreta questa combinazione in alcune versioni del linguaggio come tasto ALTGR, che genera caratteri alfanumerici.
--   **Se il programma assegna molti tasti di scelta rapida, è possibile personalizzare le assegnazioni.** In questo modo gli utenti possono riassegnare i tasti di scelta rapida in conflitto ed eseguire la migrazione da altri prodotti. La maggior parte dei programmi non assegna tasti di scelta rapida sufficienti per questa funzionalità.
+-   **Se il programma assegna molti tasti di scelta rapida, fornire la possibilità di personalizzare le assegnazioni.** In questo modo, gli utenti possono riassegnare i tasti di scelta rapida in conflitto ed eseguire la migrazione da altri prodotti. La maggior parte dei programmi non assegna un numero sufficiente di tasti di scelta rapida per questa funzionalità.
 
-Per altre linee guida e assegnazioni standard dei tasti di scelta rapida, vedere [Tastiera.](inter-keyboard.md)
+Per altre linee guida e assegnazioni standard dei tasti di scelta rapida, vedere [Tastiera](inter-keyboard.md).
 
 ### <a name="standard-menus"></a>Menu standard
 
 -   **Usare l'organizzazione di menu standard per i programmi che creano o visualizzano documenti.** L'organizzazione di menu standard rende le voci di menu comuni prevedibili e più facili da trovare.
--   **Per altri tipi di programmi, usare l'organizzazione di menu standard solo quando è opportuno.** È consigliabile organizzare i comandi e le opzioni in categorie più utili e naturali in base allo scopo del programma e al modo in cui gli utenti considerano le attività e gli obiettivi.
+-   **Per altri tipi di programmi, usare l'organizzazione di menu standard solo quando è opportuno.** È consigliabile organizzare i comandi e le opzioni in categorie naturali più utili in base allo scopo del programma e al modo in cui gli utenti considerano le attività e gli obiettivi.
 
 **Barre dei menu standard**
 
@@ -340,36 +340,36 @@ Stampare... CTRL+P
 Anteprima di stampa  
 Configurazione della pagina <separator>  
 1 <filename> 2 <filename> 3 <filename> ... <separator>  
-Esci da ALT+F4 (scelta rapida in genere non specificata)
+Esci da ALT+F4 (collegamento in genere non specificato)
 </dl> </dd> Edit<dl> Annulla CTRL+Z  
 Ripeti CTRL+Y <separator>  
 Taglia CTRL+X  
 Copiare CTRL+C  
-Incollare CTRL+V <separator>  
-Selezionare tutto CTRL+A <separator>  
-Elimina canc (collegamento in genere non specificato) <separator>  
+Incolla CTRL+V <separator>  
+Seleziona tutto CTRL+A <separator>  
+Elimina Del (collegamento in genere non specificato) <separator>  
 Trovare... CTRL+F  
-Trova il successivo F3 (comando in genere non specificato)  
+Trova F3 successivo (comando in genere non specificato)  
 Sostituire... CTRL+H  
 Vai a... CTRL+G
 </dl> </dd> View<dl> Barre degli strumenti  
 Barra di stato <separator>  
 </dl> </dd> Zoom<dl> Zoom avanti CTRL++  
 Zoom indietro CTRL+- <separator>  
-F11 a schermo intero  
-Aggiorna F5
+Schermo intero F11  
+Aggiornare F5
 </dl> </dd> <dd>Strumenti<dl> ... <separator>  
 Opzioni
-</dl> </dd> Help<dl> <program name> guida F1 <separator>  
+</dl> </dd> Help<dl> <program name> Guida F1 <separator>  
 Circa <program name>  
 </dl> </dd> </dl>
 
 **Pulsanti di menu standard della barra degli strumenti**
 
-I pulsanti standard del menu della barra degli strumenti sono i seguenti. Questo elenco mostra la categoria di menu e le etichette degli elementi, il relativo ordine con separatori, i tasti di scelta rapida e i relativi puntini di sospensione.
+I pulsanti di menu standard della barra degli strumenti sono i seguenti. Questo elenco mostra la categoria di menu e le etichette degli elementi, il relativo ordine con separatori, i tasti di scelta rapida e i relativi puntini di sospensione.
 
 <dl> Strumenti<dl> Schermo interoF11(Riassegna chiave di accesso se viene usato anche Trova).  
-Barre degli strumenti(si noti che il comando Barra dei menu viene visualizzato qui. <separator>  
+Barre degli strumenti (si noti che il comando Barra dei menu è visualizzato qui). <separator>  
 Stampa...  
 Trovare... <separator>  
 Zoom  
@@ -390,7 +390,7 @@ Dimensione del testo
 
 **Menu di scelta rapida standard**
 
-Il contenuto del menu di scelta rapida standard è il seguente. Questo elenco mostra le etichette delle voci di menu, l'ordine con separatori, i tasti di scelta e i puntini di sospensione. I menu di scelta rapida non mostrano i tasti di scelta rapida.
+Il contenuto del menu di scelta rapida standard è il seguente. Questo elenco mostra le etichette delle voci di menu, il relativo ordine con separatori, i tasti di scelta e i relativi puntini di sospensione. I menu di scelta rapida non mostrano i tasti di scelta rapida.
 
 <dl> Apri  
 Esegui  
@@ -402,7 +402,7 @@ Copia
 Incollare <separator>  
 Delete  
 Rinominare <separator>  
-Blocca <object name> (segno di spunta)  
+Bloccare <object name> (segno di spunta)  
 Proprietà
 </dl>
 
@@ -416,7 +416,7 @@ In questo esempio, print... visualizza una finestra di dialogo Stampa per raccog
 
 **L'uso corretto dei puntini di sospensione è importante per indicare che gli utenti possono effettuare altre scelte prima di eseguire l'azione o persino annullare completamente l'azione.** Il segnale visivo offerto da un puntoni di sospensione consente agli utenti di esplorare il software senza timori.
 
-**Questo non significa che è necessario** usare i puntini di sospensione ogni volta che un'azione visualizza un'altra finestra solo quando sono necessarie informazioni aggiuntive per eseguire l'azione. Ad esempio, i comandi Informazioni su, Avanzate, Guida, Opzioni, Proprietà e Impostazioni devono visualizzare un'altra finestra quando si fa clic, ma non richiedono informazioni aggiuntive dall'utente. Non sono quindi necessari puntini di sospensione.
+Questo non significa che è necessario usare i puntini di sospensione ogni volta che un'azione visualizza **un'altra** finestra solo quando sono necessarie informazioni aggiuntive per eseguire l'azione. Ad esempio, i comandi About, Advanced, Help, Options, Properties e Impostazioni devono visualizzare un'altra finestra quando si fa clic, ma non richiedono informazioni aggiuntive da parte dell'utente. Non sono quindi necessari puntini di sospensione.
 
 **In caso di ambiguità (ad esempio, l'etichetta del comando non dispone di un verbo), decidere in base all'azione dell'utente più probabile.** Se la semplice visualizzazione della finestra è un'azione comune, non usare i puntini di sospensione.
 
@@ -426,10 +426,10 @@ Altri colori...
 
 Informazioni sulla versione
 
-Nel primo esempio, gli utenti probabilmente sceglieranno un colore, quindi l'uso di un ellisse è corretto. Nel secondo esempio, gli utenti probabilmente visualizzano le informazioni sulla versione, rendendo i puntini di sospensione superflui.
+Nel primo esempio, è molto probabile che gli utenti sceglino un colore, quindi l'uso di un ellisse è corretto. Nel secondo esempio, gli utenti probabilmente visualizzano le informazioni sulla versione, rendendo i puntini di sospensione superflui.
 
 > [!Note]  
-> Quando si determina se un comando di menu necessita di puntini di sospensione, non usare la necessità di elevare i [privilegi](winenv-uac.md) come fattore.
+> Quando si determina se un comando di menu necessita di puntini di sospensione, non usare la necessità di elevare i privilegi come fattore. [](winenv-uac.md)
 
  
 
@@ -447,7 +447,7 @@ L'elevazione dei privilegi non è necessaria per eseguire un comando (piuttosto 
     -   Tabella
     -   Strumenti
     -   Finestra
--   Per i nomi di categoria non standard, usare una singola parola specifica che descriva in modo chiaro e accurato **il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi del menu, dovrebbero essere sufficientemente prevedibili in modo che gli utenti non siano sorprese da ciò che trovano nel menu.
+-   Per i nomi di categoria non standard, usare una singola parola specifica che descriva in modo chiaro e accurato **il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi nel menu, dovrebbero essere sufficientemente prevedibili in modo che gli utenti non siano sorprese da ciò che trovano nel menu.
 
 ### <a name="menu-item-names"></a>Nomi delle voci di menu
 
@@ -457,7 +457,7 @@ L'elevazione dei privilegi non è necessaria per eseguire un comando (piuttosto 
         -   Informazioni
         -   Avanzato
         -   Schermo intero
-        -   Nuova
+        -   Nuovo
         -   Opzioni
         -   Proprietà
     -   **Il verbo corrisponde al nome della categoria di menu per evitare ripetizioni.** Ad esempio, nella categoria di menu Inserisci usare Testo, Tabella e Immagine invece di Inserisci testo, Inserisci tabella e Inserisci immagine.
@@ -493,7 +493,7 @@ Nell'esempio non corretto, la voce di menu è basata sulla relativa tecnologia.
 
 ![Screenshot della nuova voce di menu con puntini di sospensione ](images/cmd-menus-image18.png)
 
-In questo esempio, la voce di menu New ha erroneamente i puntini di sospensione.
+In questo esempio la voce di menu Nuovo presenta erroneamente i puntini di sospensione.
 
 ## <a name="documentation"></a>Documentazione
 

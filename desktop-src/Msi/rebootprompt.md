@@ -1,19 +1,19 @@
 ---
-description: Se la proprietà REBOOTPROMPT è impostata su Elimina (o solo S) il riavvio eseguito dal Windows Installer avviene automaticamente senza interazione da parte dell'utente.
+description: Se la proprietà REBOOTPROMPT è impostata su Elimina (o solo S) qualsiasi riavvio eseguito dal programma di installazione di Windows viene eseguito automaticamente senza interazione da parte dell'utente.
 ms.assetid: 2aa78d77-835f-40bd-a973-799063059f4d
-title: Proprietà REBOOTPROMPT
+title: PROPRIETÀ REBOOTPROMPT
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb7679f4e8361a21a96c7cbf52a3af5a6d70419
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70e3d04149c15b8ea076b08b184fbe1891bd809a640b2baa8b1784900ab647b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119258871"
 ---
-# <a name="rebootprompt-property"></a>Proprietà REBOOTPROMPT
+# <a name="rebootprompt-property"></a>PROPRIETÀ REBOOTPROMPT
 
-Se la proprietà **REBOOTPROMPT** è impostata su Elimina (o solo S) il riavvio eseguito dal Windows Installer avviene automaticamente senza interazione da parte dell'utente. L'impostazione di questa proprietà non comporta l'avvio di un riavvio se non è necessario, ma viene eliminata solo la visualizzazione di qualsiasi richiesta di riavvio per l'utente.
+Se la **proprietà REBOOTPROMPT** è impostata su Elimina (o solo S) qualsiasi riavvio eseguito dal programma di installazione di Windows viene eseguito automaticamente senza interazione da parte dell'utente. L'impostazione di questa proprietà non avvia un riavvio se non è necessario, ma elimina solo la visualizzazione di eventuali richieste di riavvii all'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ Se la proprietà **REBOOTPROMPT** è impostata su Elimina (o solo S) il riavvio 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni Windows service pack minimo richiesto da una versione Windows Windows [Installer,](windows-installer-portal.md) vedere l'Windows installer Run-Time requisiti minimi.<br/> |
 
 
 
@@ -32,10 +32,10 @@ Se la proprietà **REBOOTPROMPT** è impostata su Elimina (o solo S) il riavvio 
 [Proprietà](properties.md)
 </dt> <dt>
 
-[Riavvio del sistema](system-reboots.md)
+[Riavvii del sistema](system-reboots.md)
 </dt> <dt>
 
-[**Riavvia proprietà**](reboot.md)
+[**Proprietà REBOOT**](reboot.md)
 </dt> </dl>
 
  

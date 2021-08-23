@@ -1,9 +1,9 @@
 ---
-title: Messaggio DRV_POWER (mmsystem. h)
-description: Notifica al driver che la potenza del dispositivo viene attivata o disattivata.
+title: DRV_POWER messaggio (Mmsystem.h)
+description: Notifica al driver che l'alimentazione al dispositivo è attivata o disattivata.
 ms.assetid: b3bbd16a-5b90-4127-a1dd-f2ddfd918f0a
 keywords:
-- DRV_POWER messaggi multimediali di Windows
+- DRV_POWER messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8113b7fe544bf36a35b6e516c7a98ae71082577d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a6b9f3ddb2c0184337d2f53d73cdda8451a8d8df19229e505b08fedf685f40d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496451"
 ---
-# <a name="drv_power-message"></a>\_Messaggio di alimentazione DRV
+# <a name="drv_power-message"></a>Messaggio POWER \_ DRV
 
-Notifica al driver che la potenza del dispositivo viene attivata o disattivata.
+Notifica al driver che l'alimentazione al dispositivo è attivata o disattivata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Notifica al driver che la potenza del dispositivo viene attivata o disattivata.
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal messaggio [**\_ aperto DRV**](drv-open.md) .
+Identificatore del driver installabile. Si tratta dello stesso valore restituito in precedenza dal driver dal [**messaggio DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Handle dell'istanza del driver installabile.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero in caso di esito positivo o zero.
+Restituisce un valore diverso da zero in caso di esito positivo o zero in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-I parametri *lParam1* e *lParam2* non vengono usati.
+I *parametri lParam1* *e lParam2* non vengono usati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ I parametri *lParam1* e *lParam2* non vengono usati.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

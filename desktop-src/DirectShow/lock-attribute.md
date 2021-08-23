@@ -1,32 +1,32 @@
 ---
-description: L'attributo Lock specifica se un oggetto deve essere modificato. Se il valore è TRUE, l'applicazione deve considerare l'oggetto come bloccato e non consentire le modifiche apportate a tale oggetto o ai relativi elementi figlio. Il valore predefinito è FALSE.
+description: L'attributo lock specifica se un oggetto deve essere modificato. Se il valore è TRUE, l'applicazione deve considerare l'oggetto come bloccato e non consentire le modifiche a tale oggetto o ai relativi elementi figlio. Il valore predefinito è FALSE.
 ms.assetid: 1aa92665-ab3b-4f04-9e6b-905942c197ef
-title: Blocca attributo
+title: Attributo lock
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7716f047e0df47ffb5e84cb2de0e9fe345836b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8fdd1718c25aab136219af436543df064bd8f68bb53ea15b00e09e6a18188c5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502321"
 ---
-# <a name="lock-attribute"></a>Blocca attributo
+# <a name="lock-attribute"></a>Attributo lock
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `lock` attributo specifica se un oggetto deve essere modificato. Se il valore è **true**, l'applicazione deve considerare l'oggetto come bloccato e non consentire le modifiche apportate a tale oggetto o ai relativi elementi figlio. Il valore predefinito è **false**.
+`lock`L'attributo specifica se un oggetto deve essere modificato. Se il valore è **TRUE,** l'applicazione deve considerare l'oggetto come bloccato e non consentire le modifiche a tale oggetto o ai relativi elementi figlio. Il valore predefinito è **FALSE.**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Valori possibili i valori seguenti sono definiti come TRUE: y, Y, t, T, 1. I valori seguenti sono definiti come FALSE: n, N, f, F, 0 (zero).
+Valori possibili I valori seguenti sono definiti come TRUE: y, Y, t, T, 1. I valori seguenti sono definiti come FALSE: n, N, f, F, 0 (zero).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**clip**](clip-element.md), [**composito**](composite-element.md), [**effetto**](effect-element.md), [**gruppo**](group-element.md), [**sequenza temporale**](timeline-element.md), [**transizione**](transition-element.md)
+[**clip,**](clip-element.md) [**composite,**](composite-element.md) [**effect,**](effect-element.md) [**group,**](group-element.md) [**timeline,**](timeline-element.md) [**transition**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -35,7 +35,7 @@ Valori possibili i valori seguenti sono definiti come TRUE: y, Y, t, T, 1. I val
 [Attributi XTL](xtl-attributes.md)
 </dt> <dt>
 
-[**IAMTimelineObj:: selocked**](iamtimelineobj-setlocked.md)
+[**IAMTimelineObj::SetLocked**](iamtimelineobj-setlocked.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 7bf91269-a298-4444-bdd3-709d66039787
 title: Funzioni file X
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5db709c5d86710f306a225aa6cfe840ef4c1a62f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5d49c8b795885c8529b538822e8625ea7a597e16a920c37d88005a9180b1c58b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564301"
 ---
 # <a name="x-file-functions"></a>Funzioni file X
 
@@ -23,7 +23,7 @@ Viene implementata la funzione seguente:
 
 <dl> <dt>
 
-[Riferimento file X (legacy)](dx9-graphics-reference-x-file.md)
+[Riferimento al file X (legacy)](dx9-graphics-reference-x-file.md)
 </dt> </dl>
 
  

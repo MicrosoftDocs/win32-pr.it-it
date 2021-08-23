@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-SPN-suffissi
-description: Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server della foresta. Questi suffissi DNS verranno condivisi con altre foreste con trust tra foreste e questa foresta.
+title: Attributo ms-DS-SPN-Suffixes
+description: Questo attributo descrive i suffissi dei nomi host DNS usati dai server nella foresta. Questi suffissi DNS verranno condivisi con altre foreste con trust tra foreste con questa foresta.
 ms.assetid: 56153832-1228-419f-99d4-eb1ce3edc867
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-SPN-suffissi attributo AD schema
-- attributo msDS-SPNSuffixes-schema AD
+- Attributo ms-DS-SPN-Suffixes Schema DI AD
+- Schema AD dell'attributo msDS-SPNSuffixes
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c91f7ce8c92e8a81437d90bb0d80383b9ad334ee
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 17c51a0805fefe9dbb8ddbeca3da89e3f5b3e66714b562af57cebc7975875cda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544421"
 ---
-# <a name="ms-ds-spn-suffixes-attribute"></a>attributo ms-DS-SPN-suffissi
+# <a name="ms-ds-spn-suffixes-attribute"></a>Attributo ms-DS-SPN-Suffixes
 
-Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server della foresta. Questi suffissi DNS verranno condivisi con altre foreste con trust tra foreste e questa foresta.
+Questo attributo descrive i suffissi dei nomi host DNS usati dai server nella foresta. Questi suffissi DNS verranno condivisi con altre foreste con trust tra foreste con questa foresta.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------|
-| CN                | ms-DS-SPN-suffissi                           |
-| LDAP-Display-Name | msDS-SPNSuffixes                             |
+| CN                | ms-DS-SPN-Suffixes                           |
+| Ldap-Display-Name | msDS-SPNSuffixes                             |
 | Dimensione              | 255 byte                                    |
-| Privilegio aggiornamento  | Amministratore di dominio                         |
+| Aggiorna privilegio  | Amministratore di dominio                         |
 | Frequenza di aggiornamento  | Quando i server nella foresta ottengono un nuovo suffisso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1715                      |
-| System-ID-GUID    | 789ee1eb-8c8e-4e4c-8cec-79b31b7617b5         |
+| System-Id-Guid    | 789ee1eb-8c8e-4e4c-8cec-79b31b7617b5         |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)  |
 
 
@@ -57,15 +57,15 @@ Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server del
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| A valore singolo       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server del
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| A valore singolo       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server del
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| A valore singolo       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server del
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo descrive i suffissi dei nomi host DNS utilizzati dai server del
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 

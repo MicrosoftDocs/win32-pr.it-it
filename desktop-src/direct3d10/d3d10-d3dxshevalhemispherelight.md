@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 355dae7b843d5acfbb842b7bd08c329bdaed4306
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e32221167e2a736e46b847c88300221c3bd8b1675973604703600bb8e36549a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497911"
 ---
 # <a name="d3dxshevalhemispherelight-function-d3dx10h"></a>Funzione D3DXSHEvalHemisphereLight (D3DX10.h)
 
@@ -113,17 +113,17 @@ Puntatore al vettore SH di output per il componente blu.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-L'interpolazione viene eseguita in modo lineare tra i due punti, non sulla superficie della sfera ,ovvero se l'asse è (0,0,1) è lineare in Z, non nell'angolo azimuthal. La funzione di illuminazione sferica risultante viene normalizzata in modo che un punto su una superficie perfettamente diffusa senza ombreggiatura e un normale puntato nella direzione pDir comporterebbe una luminosità di uscita con valore 1 (se il colore superiore era bianco e il colore inferiore era nero). Si tratta di un modello molto semplice in cui Top rappresenta l'intensità del "cielo" e Bottom rappresenta l'intensità del "terreno".
+L'interpolazione viene eseguita in modo lineare tra i due punti, non sulla superficie della sfera (ovvero, se l'asse è (0,0,1) è lineare in Z, non nell'angolo azimutabile. La funzione di illuminazione sferica risultante viene normalizzata in modo che un punto su una superficie perfettamente diffusa senza ombreggiatura e un normale puntato nella direzione pDir comporterebbe la luminosità di uscita con un valore pari a 1 (se il colore superiore era bianco e il colore inferiore era nero). Si tratta di un modello molto semplice in cui Top rappresenta l'intensità del "cielo" e Bottom rappresenta l'intensità del "terreno".
 
-Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo circa l'asse z nella direzione destra e phi, l'angolo da z.
+Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo sull'asse z nella direzione a destra e phi, l'angolo da z.
 
 ![illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
-Le equazioni seguenti mostrano la relazione tra coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
+Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 
 ![equazioni della relazione tra coordinate cartesiane e sferiche](images/spherical-coordinates-equations.png)
 

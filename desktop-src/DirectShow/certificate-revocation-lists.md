@@ -4,34 +4,34 @@ ms.assetid: 146e7e4a-4281-4f5c-8346-d6c0d5f5442f
 title: Elenchi di revoche dei certificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b51ddee9f77b147d69b8895b3335d41e041da7f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 703bb8813e95ebfe07783fa07284b2ae7dad0df2ff8a9205234ee9a4514192d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537307"
 ---
 # <a name="certificate-revocation-lists"></a>Elenchi di revoche dei certificati
 
-In questo argomento viene descritto come esaminare l'elenco di revoche di certificati (CRL) per i driver revocati quando si utilizza Certified Output Protocol (COPP).
+Questo argomento descrive come esaminare l'elenco di revoche di certificati (CRL) per i driver revocati quando si usa il protocollo COPP (Certified Output Protection Protocol).
 
-Il CRL contiene i digest dei certificati revocati e può essere fornito e firmato da Microsoft. Il CRL viene distribuito tramite le licenze Digital Rights Management (DRM). Il CRL può revocare qualsiasi certificato nella catena di certificati del driver. Se viene revocato un certificato nella catena, viene revocato anche il certificato e tutti i certificati sottostanti nella catena.
+Il CRL contiene digest dei certificati revocati e può essere fornito e firmato solo da Microsoft. Il CRL viene distribuito tramite licenze DRM (Digital Rights Management). Il CRL può revocare qualsiasi certificato nella catena di certificati del driver. Se un certificato nella catena viene revocato, viene revocato anche tale certificato e tutti i certificati sottostanti nella catena.
 
-Per ottenere il CRL, l'applicazione deve utilizzare Windows Media Format SDK, versione 9 o successiva, e seguire questa procedura:
+Per ottenere il CRL, l'applicazione deve usare Windows Media Format SDK, versione 9 o successiva, ed eseguire la procedura seguente:
 
-1.  Chiamare **WMCreateReader** per creare l'oggetto Reader di Windows Media Format SDK.
-2.  Eseguire una query sull'oggetto Reader per l'interfaccia **IWMDRMReader** .
-3.  Chiamare **IWMDRMReader:: GetDRMProperty** con il valore g \_ wszWMDRMNet \_ revoca per ottenere l'elenco CRL. È necessario chiamare questo metodo due volte: una volta per ottenere la dimensione del buffer da allocare e una volta per riempire il buffer. La seconda chiamata restituisce una stringa che contiene l'elenco CRL. L'intera stringa è codificata in base 64.
-4.  Decodificare la stringa con codifica base 64. Per eseguire questa operazione, è possibile usare la funzione **CryptStringToBinary** . Questa funzione fa parte di CryptoAPI.
+1.  Chiamare **WMCreateReader per** creare l'Windows lettore di Media Format SDK.
+2.  Eseguire una query sull'oggetto lettore per **l'interfaccia IWMDRMReader.**
+3.  Chiamare **IWMDRMReader::GetDRMProperty** con il valore g \_ wszWMDRMNet \_ Revocation per ottenere il CRL. È necessario chiamare questo metodo due volte: una volta per ottenere le dimensioni del buffer da allocare e una volta per riempire il buffer. La seconda chiamata restituisce una stringa che contiene il CRL. L'intera stringa è codificata in base 64.
+4.  Decodificare la stringa codificata in base 64. A tale scopo, è possibile usare la funzione **CryptStringToBinary.** Questa funzione fa parte di CryptoAPI.
 
 > [!Note]  
-> Per usare l'interfaccia **IWMDRMReader** , è necessario ottenere una libreria DRM statica da Microsoft e collegare l'applicazione a questo file di libreria. Per ulteriori informazioni, vedere l'argomento "ottenere la libreria DRM necessaria" nella documentazione relativa a Windows Media Format SDK.
+> Per usare **l'interfaccia IWMDRMReader,** è necessario ottenere una libreria DRM statica da Microsoft e collegare l'applicazione a questo file di libreria. Per altre informazioni, vedere l'argomento "Ottenere la libreria DRM necessaria" nella documentazione di Windows Media Format SDK.
 
  
 
-Se il CRL non è presente nel computer dell'utente, il metodo **GetDRMProperty** restituisce la proprietà non supportata da NS \_ E \_ DRM \_ \_ . Attualmente, l'unico modo per ottenere l'elenco CRL consiste nell'acquisire una licenza DRM.
+Se il CRL non è presente nel computer dell'utente, il **metodo GetDRMProperty** restituisce NS \_ E \_ DRM \_ UNSUPPORTED \_ PROPERTY. Attualmente, l'unico modo per ottenere l'elenco CRL è acquisire una licenza DRM.
 
-Nel codice seguente viene illustrata una funzione che restituisce il CRL:
+Il codice seguente illustra una funzione che restituisce il CRL:
 
 
 ```C++
@@ -165,31 +165,31 @@ HRESULT GetCRL(BYTE **ppBuffer, DWORD *pcbBuffer)
 
 
 
-Successivamente, l'applicazione deve verificare che il CRL sia valido. A tale scopo, verificare che il certificato CRL, che fa parte del CRL, sia firmato direttamente dal certificato radice Microsoft e che il valore dell'elemento SignCRL sia impostato su 1. Verificare inoltre la firma del CRL.
+Successivamente, l'applicazione deve verificare che il CRL sia valido. A tale scopo, verificare che il certificato CRL, che fa parte del CRL, sia firmato direttamente dal certificato radice Microsoft e che il valore dell'elemento SignCRL sia impostato su 1. Verificare anche la firma del CRL.
 
-Una volta verificata l'elenco CRL, l'applicazione può archiviarla. Il numero di versione CRL deve anche essere verificato prima dell'archiviazione in modo che l'applicazione archivi sempre la versione più recente.
+Dopo la verifica dell'elenco CRL, l'applicazione può archiviarlo. È necessario controllare anche il numero di versione CRL prima dell'archiviazione in modo che l'applicazione archivi sempre la versione più recente.
 
-Il CRL ha il formato seguente.
+Il formato dell'elenco CRL è il seguente.
 
 
 
 | Sezione            | Contenuto                                                             |
 |--------------------|----------------------------------------------------------------------|
-| Intestazione             | numero di voci version32 CRL a 32 bit                           |
+| Intestazione             | Numero di voci CRL a 32 bit versione32 bit                           |
 | Voci di revoca | Più voci di revoca a 160 bit                                  |
-| Certificato        | certificato di lunghezza lengthVariable certificato a 32 bit                 |
-| Firma          | firma a 8 bit type16-bit firma lengthVariable-lunghezza |
+| Certificato        | Lunghezza del certificato a 32 bit Certificato di lunghezza variabile                 |
+| Firma          | Tipo di firma a 8 bit Lunghezza della firma a 16 bitVariable-length signature |
 
 
 
  
 
 > [!Note]  
-> Tutti i valori interi sono senza segno e sono rappresentati nella notazione Big endian (ordine dei byte di rete).
+> Tutti i valori integer sono senza segno e sono rappresentati in notazione big-endian (ordine dei byte di rete).
 
  
 
-Descrizioni delle sezioni CRL
+Descrizioni della sezione CRL
 
 <dl> <dt>
 
@@ -210,10 +210,10 @@ Ogni voce di revoca è il digest a 160 bit di un certificato revocato. Confronta
 <span id="Certificate"></span><span id="certificate"></span><span id="CERTIFICATE"></span>Certificato
 </dt> <dd>
 
-La sezione certificate contiene un valore a 32 bit che indica la lunghezza (in byte) del certificato XML e la relativa catena di certificati, insieme a una matrice di byte che contiene sia il certificato XML dell'autorità di certificazione (CA) che la catena di certificati con Microsoft come radice. Il certificato deve essere firmato da un'autorità di certificazione che dispone dell'autorità per emettere CRL.
+La sezione del certificato contiene un valore a 32 bit che indica la lunghezza (in byte) del certificato XML e della relativa catena di certificati, insieme a una matrice di byte che contiene sia il certificato XML dell'autorità di certificazione (CA) che la catena di certificati con Microsoft come radice. Il certificato deve essere firmato da una CA con l'autorità di certificazione per il rilascio di CRL.
 
 > [!Note]  
-> Il certificato non deve essere con terminazione null.
+> Il certificato non deve essere con terminazione Null.
 
  
 
@@ -222,9 +222,9 @@ La sezione certificate contiene un valore a 32 bit che indica la lunghezza (in b
 <span id="Signature"></span><span id="signature"></span><span id="SIGNATURE"></span>Firma
 </dt> <dd>
 
-La sezione Signature contiene il tipo e la lunghezza della firma e la firma digitale. Il tipo a 8 bit è impostato su 2 per indicare che usa SHA-1 con la crittografia RSA a 1024 bit. La lunghezza è un valore a 16 bit contenente la lunghezza della firma digitale in byte. La firma digitale viene calcolata su tutte le sezioni precedenti del CRL.
+La sezione signature contiene il tipo e la lunghezza della firma e la firma digitale stessa. Il tipo a 8 bit è impostato su 2 per indicare che usa SHA-1 con crittografia RSA a 1024 bit. La lunghezza è un valore a 16 bit contenente la lunghezza della firma digitale in byte. La firma digitale viene calcolata in tutte le sezioni precedenti del CRL.
 
-La firma viene calcolata usando lo schema di firma digitale RSASSA-PSS definito in PKCS \# 1 (versione 2,1). La funzione hash è SHA-1, definita in Federal Information Processing Standard (FIPS) 180-2 e la funzione di generazione della maschera è maschera MGF1, definita nella sezione B. 2.1 in PKCS \# 1 (versione 2,1). Le operazioni RSASP1 e RSAVP1 usano RSA con un modulo a 1024 bit con un esponente di verifica 65537.
+La firma viene calcolata usando lo schema di firma digitale RSASSA-PSS definito in PKCS \# 1 (versione 2.1). La funzione hash è SHA-1, definita in Federal Information Processing Standard (FIPS) 180-2, e la funzione di generazione della maschera è MGF1, definita nella sezione B.2.1 in PKCS \# 1 (versione 2.1). Le operazioni RSASP1 e RSAVP1 usano RSA con un modulo a 1024 bit con un esponente di verifica 65537.
 
 </dd> </dl>
 
@@ -232,7 +232,7 @@ La firma viene calcolata usando lo schema di firma digitale RSASSA-PSS definito 
 
 <dl> <dt>
 
-[Uso di COPP (Certified Output Protocol)](using-certified-output-protection-protocol--copp.md)
+[Uso del protocollo COPP (Certified Output Protection Protocol)](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

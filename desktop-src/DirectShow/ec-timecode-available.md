@@ -4,12 +4,12 @@ ms.assetid: 90b205f4-0fe3-4a19-bb8a-198d8f3d445c
 title: EC_TIMECODE_AVAILABLE (Evcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da7a84f6ca1300af8dce423b2214d473e3cf221
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1bd464a978d296199fc0c0c4d1e96d1c41092aedf3204166a510b73ab380aec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536961"
 ---
 # <a name="ec_timecode_available"></a>CODICE \_ TEMPORALE EC \_ DISPONIBILE
 

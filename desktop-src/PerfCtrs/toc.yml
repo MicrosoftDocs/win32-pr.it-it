@@ -8,17 +8,17 @@
       items:
         - name: Supporto a 64 bit
           href: 64-bit-support.md
-        - name: Supporto per l'accesso utente limitato
+        - name: Supporto dell'accesso utente limitato
           href: limited-user-access-support.md
-        - name: Accesso ai dati del contatore remoto
+        - name: Accesso ai dati dei contatori remoti
           href: accessing-remote-counter-data.md
     - name: Utilizzo dei contatori delle prestazioni
       href: using-performance-counters.md
       items:
-        - name: Utilizzo dei dati del contatore
+        - name: Utilizzo dei dati dei contatori
           href: consuming-counter-data.md
           items:
-            - name: Utilizzo delle funzioni PDH per utilizzare i dati del contatore
+            - name: Uso delle funzioni PDH per l'utilizzo dei dati dei contatori
               href: using-the-pdh-functions-to-consume-counter-data.md
               items:
                 - name: Creazione di una query
@@ -36,16 +36,16 @@
                   href: collecting-performance-data.md
                 - name: Visualizzazione dei dati sulle prestazioni
                   href: displaying-performance-data.md
-                - name: Utilizzo dei file di log
+                - name: Uso dei file di log
                   href: working-with-log-files.md
                   items:
                     - name: Impostazione di un intervallo di tempo per una query
                       href: setting-a-time-range-for-a-query.md
                     - name: Recupero delle dimensioni di un file di log
                       href: getting-the-size-of-a-log-file.md
-                - name: Verifica dei valori restituiti dell'interfaccia PDH
+                - name: Controllo dei valori restituiti dell'interfaccia PDH
                   href: checking-pdh-interface-return-values.md
-                - name: Recupero delle informazioni sui contatori
+                - name: Recupero di informazioni sui contatori
                   href: getting-counter-information.md
                 - name: Esempi di PDH
                   href: examples.md
@@ -54,18 +54,18 @@
                       href: enumerating-process-objects.md
                     - name: Esplorazione dei contatori delle prestazioni
                       href: browsing-performance-counters.md
-                    - name: Scrittura dei dati sulle prestazioni in un file di log
+                    - name: Scrittura di dati sulle prestazioni in un file di log
                       href: writing-performance-data-to-a-log-file.md
                     - name: Lettura dei dati sulle prestazioni da un file di log
                       href: reading-performance-data-from-a-log-file.md
                     - name: Conversione di dati da un file di log in formato binario a un file di log in formato CSV
                       href: transferring-data-from-a-perfmon-format-log-file-to-a-csv-format-log-file.md
-            - name: Utilizzo delle funzioni del registro di sistema per utilizzare i dati del contatore
+            - name: Uso delle funzioni del Registro di sistema per utilizzare i dati dei contatori
               href: using-the-registry-functions-to-consume-counter-data.md
               items:
-                - name: Recupero di nomi di contatori e testo della Guida
+                - name: Recupero dei nomi dei contatori e del testo della Guida
                   href: retrieving-counter-names-and-help-text.md
-                - name: 'Visualizzazione di nomi di oggetti, istanze e contatori'
+                - name: 'Visualizzazione dei nomi di oggetti, istanze e contatori'
                   href: displaying-object-instance-and-counter-names.md
                 - name: Recupero dei dati del contatore
                   href: retrieving-counter-data.md
@@ -73,16 +73,16 @@
                   href: calculating-counter-values.md
                 - name: Gestione dei nomi di istanza duplicati
                   href: handling-duplicate-instance-names.md
-                - name: Formato dati prestazioni
+                - name: Formato dei dati sulle prestazioni
                   href: performance-data-format.md
             - name: Uso delle funzioni PerfLib per utilizzare i dati dei contatore
               href: using-the-perflib-functions-to-consume-counter-data.md
-        - name: Fornire dati del contatore
+        - name: Fornire i dati dei contatori
           href: providing-counter-data.md
           items:
-            - name: 'Fornire dati del contatore usando la versione 2,0'
+            - name: Fornire i dati dei contatori usando la versione 2.0
               href: providing-counter-data-using-version-2-0.md
-            - name: Fornire dati del contatore mediante una DLL di prestazioni
+            - name: Fornire dati dei contatori usando una DLL delle prestazioni
               href: providing-counter-data-using-a-performance-dll.md
               items:
                 - name: Aggiunta di contatori delle prestazioni
@@ -94,14 +94,14 @@
                       href: adding-counter-names-and-descriptions-to-the-registry.md
                     - name: Creazione della chiave delle prestazioni dell'applicazione
                       href: creating-the-applications-performance-key.md
-                    - name: Creazione di altre voci del registro di sistema
+                    - name: Creazione di altre voci del Registro di sistema
                       href: creating-other-registry-entries.md
                 - name: Eliminazione dei contatori delle prestazioni
                   href: deleting-performance-counters.md
                   items:
-                    - name: Rimozione di nomi e descrizioni di contatori dal registro di sistema
+                    - name: Rimozione di nomi e descrizioni dei contatori dal Registro di sistema
                       href: removing-counter-names-and-descriptions-from-the-registry.md
-                - name: Creazione di una DLL di estensione prestazioni
+                - name: Creazione di una DLL dell'estensione per le prestazioni
                   href: creating-a-performance-extension-dll.md
                   items:
                     - name: Implementazione di OpenPerformanceData
@@ -112,11 +112,11 @@
                       href: communicating-with-your-application.md
                     - name: Gestione degli errori nella DLL
                       href: error-handling-in-the-dll.md
-                    - name: Limitazione dell'accesso alle DLL dell'estensione per le prestazioni
+                    - name: Limitazione dell'accesso alle DLL delle estensioni delle prestazioni
                       href: restricting-access-to-performance-extension--dlls.md
-                    - name: Esempi di DLL di prestazioni
+                    - name: Esempi di DLL delle prestazioni
                       href: performance-dll-samples.md
-    - name: Riferimento ai contatori delle prestazioni
+    - name: Informazioni di riferimento per i contatori delle prestazioni
       href: performance-counters-reference.md
       items:
         - name: Funzioni dei contatori delle prestazioni per Visual Basic
@@ -150,23 +150,23 @@
             - name: Elementi dei contatori delle prestazioni
               href: performance-counters-elements.md
               items:
-                - name: Elemento Counter (Countert)
+                - name: Elemento counter (counterSet)
                   href: performance-counters-counter--counterset--element.md
                 - name: Elemento counterAttribute (counterAttributes)
                   href: performance-counters-counterattribute--counterattributes--element.md
-                - name: Elemento counterAttributes (Counter)
+                - name: Elemento counterAttributes (counter)
                   href: performance-counters-counterattributes--counter--element.md
-                - name: Elemento Counters
+                - name: Elemento counters
                   href: performance-counters-counters-element.md
-                - name: Elemento del contatore (provider)
+                - name: Elemento counterSet (provider)
                   href: performance-counters-counterset--provider--element.md
-                - name: Elemento provider (contatori)
+                - name: Elemento provider (counters)
                   href: performance-counters-provider--counters--element.md
-                - name: Elemento struct (Structs)
+                - name: Elemento struct (structs)
                   href: performance-counters-struct--structs--element.md
-                - name: Elemento Structs (Countert)
+                - name: Elemento structs (counterSet)
                   href: performance-counters-structs--counterset--element.md
-            - name: Contatori delle prestazioni tipi semplici
+            - name: Tipi semplici dei contatori delle prestazioni
               href: performance-counters-simple-types.md
               items:
                 - name: Tipo semplice CSymbolType
@@ -177,26 +177,26 @@
                   href: performance-counters-hexint32type-simple-type.md
                 - name: Tipo semplice UInt32Type
                   href: performance-counters-uint32type-simple-type.md
-            - name: Contatori delle prestazioni tipi complessi
+            - name: Tipi complessi dei contatori delle prestazioni
               href: performance-counters-complex-types.md
               items:
-                - name: Tipo complesso contatore
+                - name: Counter Complex Type
                   href: performance-counters-counter-complex-type.md
                 - name: Tipo complesso counterAttribute
                   href: performance-counters-counterattribute-complex-type.md
                 - name: Tipo complesso counterAttributes
                   href: performance-counters-counterattributes-complex-type.md
-                - name: Tipi complessi di contatori
+                - name: Tipo complesso counters
                   href: performance-counters-counters-complex-type.md
-                - name: Tipo complesso del contatore
+                - name: Tipo complesso counterSet
                   href: performance-counters-counterset-complex-type.md
                 - name: Tipo complesso provider
                   href: performance-counters-provider-complex-type.md
                 - name: Tipo complesso struct
                   href: performance-counters-struct-complex-type.md
-                - name: Tipo complesso struct
+                - name: Tipo complesso structs
                   href: performance-counters-structs-complex-type.md
-        - name: Enumerazioni del contatore delle prestazioni
+        - name: Enumerazioni dei contatori delle prestazioni
           href: performance-counter-enumerations.md
           items:
             - name: PerfCounterDataType
@@ -281,10 +281,10 @@
           href: performance-counters-types.md
         - name: Codici di errore dell'helper Dati di prestazione
           href: pdh-error-codes.md
-        - name: Schema del file di log SQL
+        - name: SQL Log File Schema
           href: sql-log-file-schema.md
           items:
-            - name: CounterData
+            - name: Counterdata
               href: counterdata.md
             - name: CounterDetails
               href: counterdetails.md
@@ -313,7 +313,7 @@
               href: /windows/desktop/api/Loadperf/nf-loadperf-loadperfcountertextstringsa
             - name: PM_OPEN_PROC
               href: /previous-versions/windows/desktop/legacy/aa372200(v=vs.85)
-            - name: Chiamata PdhAddCounter
+            - name: PdhAddCounter
               href: /windows/desktop/api/Pdh/nf-pdh-pdhaddcountera
             - name: PdhAddEnglishCounter
               href: /windows/desktop/api/Pdh/nf-pdh-pdhaddenglishcountera

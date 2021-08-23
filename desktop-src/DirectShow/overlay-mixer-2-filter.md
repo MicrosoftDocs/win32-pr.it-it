@@ -1,26 +1,26 @@
 ---
-description: Filtro Overlay Mixer 2
+description: Filtro overlay Mixer 2
 ms.assetid: 3d3871ac-518c-45a1-9e64-031f344f4527
-title: Filtro Overlay Mixer 2
+title: Filtro overlay Mixer 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f22976a58b272cf04c098c102d32d154e361b8b9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc521af700b7cbf80624483ff6820efda0704485fdcd9587c87733e6db6f3a7c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501911"
 ---
-# <a name="overlay-mixer-2-filter"></a>Filtro Overlay Mixer 2
+# <a name="overlay-mixer-2-filter"></a>Filtro overlay Mixer 2
 
-Il filtro Overlay Mixer 2 è identico al filtro per il [mixer sovrapposto](overlay-mixer-filter.md) , ad eccezione di:
+Il filtro Overlay Mixer 2 è identico al filtro [overlay Mixer, ad](overlay-mixer-filter.md) eccezione di:
 
--   Supporta solo i tipi di supporto con formati [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) .
--   Ha un merito più elevato, che consente di aggiungerlo a un grafico di filtro automaticamente.
+-   Supporta solo tipi di supporti con [**formati VIDEOINFOHEADER2.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
+-   Ha un maggior merito, che ne consente l'aggiunta automatica a un grafico di filtro.
 
-Il mixer sovrapposto 2 viene fornito in modo che il gestore del grafico del filtro lo aggiunga al grafico durante il rendering del video MPEG-2 non DVD. La scelta di usare il mixer di sovrimpressione o il mixer sovrapposto 2 viene gestita dal componente che compila il grafo, ovvero il gestore del grafico del filtro, il generatore di grafici di acquisizione o il generatore di grafici DVD. Dal punto di vista dell'applicazione, si tratta dello stesso filtro, con le stesse interfacce e funzionalità.
+L'Mixer 2 viene fornito in modo che Filter Graph Manager lo aggiungerà al grafo quando esegue il rendering di video MPEG-2 non DVD. La scelta di usare l'Mixer di sovrimpressione o la sovrimpressione Mixer 2 viene gestita dal componente che compila il grafo, da Filter Graph Manager, da Capture Graph Builder o da DVD Graph Builder. Dal punto di vista dell'applicazione, si tratta dello stesso filtro, con le stesse interfacce e funzionalità.
 
-La tabella seguente contiene informazioni specifiche per il mixer sovrapposto 2. Per tutti gli altri dati del filtro, fare riferimento alla documentazione per il mixer overlay.
+La tabella seguente contiene informazioni specifiche per la sovrimpressione Mixer 2. Per tutti gli altri dati di filtro, vedere la documentazione relativa alla sovrapposizione Mixer.
 
 
 
@@ -32,10 +32,10 @@ La tabella seguente contiene informazioni specifiche per il mixer sovrapposto 2.
 <tbody>
 <tr class="odd">
 <td>Tipi di supporti pin di input</td>
-<td>Tipo formato: Format_VIDEOINFO2</td>
+<td>Tipo di formato: Format_VIDEOINFO2</td>
 </tr>
 <tr class="even">
-<td>CLSID filtro</td>
+<td>CLSID del filtro</td>
 <td>CLSID_OverlayMixer2</td>
 </tr>
 <tr class="odd">
@@ -52,13 +52,13 @@ La tabella seguente contiene informazioni specifiche per il mixer sovrapposto 2.
 
  
 
-In Windows Vista o versioni successive, il merito del filtro Overlay Mixer 2 è MERIT \_ non \_ \_ usare, perché i renderer video più recenti (VMR-7, VMR-9 e EVR) supportano tutti i formati **VIDEOINFOHEADER2** e pertanto non è necessario usare il mixer overlay.
+In Windows Vista o versioni successive, il merito del filtro Overlay Mixer 2 è LA NON USARE, perché i renderer video più nuovi \_ \_ \_ (VMR-7, VMR-9 ed EVR) supportano tutti i formati **VIDEOINFOHEADER2** e pertanto non è necessario usare i formati overlay Mixer.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 
  

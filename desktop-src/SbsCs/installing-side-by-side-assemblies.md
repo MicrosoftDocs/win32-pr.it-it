@@ -1,24 +1,24 @@
 ---
-description: È possibile installare assembly side-by-side come assembly condivisi o come assembly privati. Per ulteriori informazioni, vedere installazione di assembly side-by-side come assembly privati e installazione affiancata di assembly come assembly condivisi.
+description: È possibile installare assembly side-by-side come assembly condivisi o come assembly privati. Per altre informazioni, vedere Installazione di assembly side-by-side come assembly privati e Installazione di assembly side-by-side come assembly condivisi.
 ms.assetid: 36f271ff-be0c-4162-8e1c-86088ebddbcc
-title: Installazione di assembly affiancati
+title: Installazione di assembly side-by-side
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be68580c7f0e3890c2e53b148daec92fbad18ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2124b490d64427e80b5beee53d1221cba4d5e59a23dc2d72c2da6833e14a98cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142134"
 ---
-# <a name="installing-side-by-side-assemblies"></a>Installazione di assembly affiancati
+# <a name="installing-side-by-side-assemblies"></a>Installazione di assembly side-by-side
 
-È possibile installare assembly side-by-side come [assembly condivisi](/windows/desktop/Msi/shared-assemblies) o come [assembly privati](/windows/desktop/Msi/private-assemblies). Per ulteriori informazioni, vedere [installazione di assembly side-by-side come assembly privati](installing-side-by-side-assemblies-as-private-assemblies.md) e [installazione affiancata di assembly come assembly condivisi](installing-side-by-side-assemblies-as-shared-assemblies.md).
+È possibile installare assembly side-by-side come [assembly condivisi](/windows/desktop/Msi/shared-assemblies) o [come assembly privati.](/windows/desktop/Msi/private-assemblies) Per altre informazioni, vedere Installazione di assembly [side-by-side](installing-side-by-side-assemblies-as-private-assemblies.md) come assembly privati e Installazione di assembly [side-by-side](installing-side-by-side-assemblies-as-shared-assemblies.md)come assembly condivisi.
 
 Tenere presente quanto segue:
 
--   Gli assembly installati nel Global Assembly Cache da un'installazione di che utilizza il [contesto di installazione](/windows/desktop/Msi/installation-context) per utente non sono protetti da protezione file di Windows.
--   Gli assembly installati nel Global Assembly Cache da un'installazione di tramite il [contesto di installazione](/windows/desktop/Msi/installation-context) per computer sono protetti da protezione file di Windows.
+-   Gli assembly installati nella Global Assembly Cache da [](/windows/desktop/Msi/installation-context) un'installazione che usa il contesto di installazione per utente non sono protetti Windows Protezione file.
+-   Gli assembly installati nella Global Assembly Cache da un'installazione che usa il contesto di installazione per computer sono protetti Windows Protezione file. [](/windows/desktop/Msi/installation-context)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Uso delle playlist di metafile
-description: Uso delle playlist di metafile
+title: Uso di playlist metafile
+description: Uso di playlist metafile
 ms.assetid: f5711a7f-7674-4b92-8262-cee8bac4aa77
 keywords:
-- Playlist Windows Media Metafile, informazioni
+- Windows playlist di metafile multimediali, informazioni
 - playlist, informazioni
 - playlist di metafile, informazioni
 ms.topic: article
@@ -13,53 +13,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 71f245d1fc1610174f842347a15dfcfaa13286e0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ec4cd47584aaba961d9faa3ba2058ab45145839787f702755ccb7a00fffbe827
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465861"
 ---
-# <a name="using-metafile-playlists"></a>Uso delle playlist di metafile
+# <a name="using-metafile-playlists"></a>Uso di playlist metafile
 
-Le playlist specificano il modo in cui verranno riprodotti i supporti di streaming o i file multimediali e i metadati che verranno visualizzati da Windows Media Player.
+Le playlist specificano la modalità di riproduzione dei file multimediali o multimediali in streaming e i Windows Media Player visualizzati.
 
-In questa sezione vengono illustrati i diversi modi in cui è possibile utilizzare le playlist. La sezione è divisa negli argomenti seguenti.
+Questa sezione illustra diversi modi in cui è possibile usare le playlist. La sezione è suddivisa negli argomenti seguenti.
 
 
 
 | Argomento                                                                                              | Descrizione                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Modifica della visualizzazione](modifying-the-display.md)                                                 | Aggiunta di testo, collegamenti e immagini.                                                                                                                                |
-| [Reindirizzamento](redirection.md)                                                                     | Uso delle playlist per reindirizzare il browser a Windows Media Player e specificare l'URL di un flusso o di un file multimediale da riprodurre.                                      |
-| [Accesso ai supporti](accessing-media.md)                                                             | Uso di elementi metafile e dei rispettivi elementi figlio per specificare il contenuto a cui accedere e l'ordine e la durata della riproduzione.                               |
-| [Uso del cambio di flusso di eventi Live](using-live-event-stream-switching.md)                         | Uso dell'elemento **Event** per specificare un flusso multimediale a cui accedere e quindi riprendere la riproduzione del flusso originale. Utilizzato per l'inserimento di annunci.                            |
-| [Uso dei metafile per un cambio di flusso trasparente](using-metafiles-for-seamless-stream-switching.md) | Uso dell'elemento **Event** per precaricare il successivo flusso multimediale a cui accedere per evitare gap nella presentazione.                                                      |
-| [Uso degli annunci](using-announcements.md)                                                     | Utilizzo di un metafile per fornire informazioni sull'URL per un flusso multimediale, inclusi l'indirizzo IP multicast, la porta, il formato del flusso e altre impostazioni della stazione. |
-| [Uso dell'URL e del rollover del server](using-url-and-server-rollover.md)                                 | Uso delle playlist di metafile per fornire un metodo per il rollover automatico a origini di contenuto alternative quando non è possibile accedere o riprodurre un flusso.             |
-| [Uso di parametri e comandi personalizzati](using-custom-parameters-and-commands.md)                   | Utilizzo dell'elemento **param** per definire elementi personalizzati per fornire metadati aggiuntivi.                                                                          |
-| [Personalizzazione del recapito multimediale](personalizing-media-delivery.md)                                   | Uso delle preferenze utente per determinare il contenuto broadcast.                                                                                                         |
+| [Reindirizzamento](redirection.md)                                                                     | Uso delle playlist per reindirizzare il browser Windows Media Player e specificare l'URL di un flusso o di un file multimediale da riprodurre.                                      |
+| [Accesso ai supporti](accessing-media.md)                                                             | Uso degli elementi metafile e dei relativi elementi figlio per specificare il contenuto a cui accedere e l'ordine e la durata della riproduzione.                               |
+| [Uso del cambio di flusso di eventi live](using-live-event-stream-switching.md)                         | Uso **dell'elemento EVENT** per specificare un flusso multimediale a cui accedere e quindi riprendere la riproduzione del flusso originale. Usato per l'inserimento di annunci.                            |
+| [Uso di metafile per il cambio di flusso facile](using-metafiles-for-seamless-stream-switching.md) | Uso **dell'elemento EVENT** per precaricare il flusso multimediale successivo per accedere per evitare lacune nella presentazione.                                                      |
+| [Uso degli annunci](using-announcements.md)                                                     | Uso di un metafile per fornire informazioni sull'URL di un flusso multimediale, inclusi l'indirizzo IP multicast, la porta, il formato del flusso e altre impostazioni della stazione. |
+| [Uso di URL e rollover del server](using-url-and-server-rollover.md)                                 | Uso di playlist di metafile per fornire un modo per eseguire automaticamente il roll over a origini di contenuto alternative quando non è possibile accedere o riprodurre un flusso.             |
+| [Uso di parametri e comandi personalizzati](using-custom-parameters-and-commands.md)                   | Uso **dell'elemento PARAM** per definire elementi personalizzati per fornire metadati aggiuntivi.                                                                          |
+| [Personalizzazione del recapito multimediale](personalizing-media-delivery.md)                                   | Uso delle preferenze dell'utente per determinare il contenuto trasmesso.                                                                                                         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Playlist di metafile**](metafile-playlists.md)
+[**Playlist metafile**](metafile-playlists.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guida ai metafile di Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guida ai metafile multimediali**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

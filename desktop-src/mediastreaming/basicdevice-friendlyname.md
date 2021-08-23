@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. FriendlyName
+title: BasicDevice.FriendlyName - proprietà
 description: Ottiene il nome descrittivo del dispositivo.
 ms.assetid: C17143AD-845B-4665-B765-A1FB0D135F84
 keywords:
-- API di streaming multimediale della proprietà FriendlyName
-- API di streaming multimediale della proprietà FriendlyName, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà FriendlyName
+- Proprietà FriendlyName API Streaming multimediale
+- Proprietà FriendlyName API Streaming multimediale, interfaccia BasicDevice
+- BasicDevice interface Media Streaming API , proprietà FriendlyName
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 79406e67b6152c9240c5967b223f6b54fb2cd86d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f9842265039c9565b33ef1eb73c6aecb14cbc61f6b9cd0c95324da83ed40066c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462121"
 ---
-# <a name="basicdevicefriendlyname-property"></a>Proprietà BasicDevice. FriendlyName
+# <a name="basicdevicefriendlyname-property"></a>BasicDevice.FriendlyName - proprietà
 
 Ottiene il nome descrittivo del dispositivo.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_FriendlyName(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -50,6 +50,6 @@ Puntatore al nome descrittivo del dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

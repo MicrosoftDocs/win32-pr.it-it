@@ -1,26 +1,26 @@
 ---
-title: Effetto trasferimento discreto
-description: Usare l'effetto di trasferimento discreto per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento dei passaggi creata da un elenco di valori forniti.
+title: Effetto di trasferimento discreto
+description: Usare l'effetto di trasferimento discreto per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento passaggio creata da un elenco di valori specificati.
 ms.assetid: 5A612002-2B1D-4FC3-B364-AACD9FD44BEC
 keywords:
-- effetto trasferimento discreto
+- effetto di trasferimento discreto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c05ef08f9ddf053eaa686cb0f88d4183194d9e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8c977e6d2b03a3496bfa9be84209a32f57094c8514f6760746f9ec967c2ff8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104570432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431415"
 ---
-# <a name="discrete-transfer-effect"></a>Effetto trasferimento discreto
+# <a name="discrete-transfer-effect"></a>Effetto di trasferimento discreto
 
-Usare l'effetto di trasferimento discreto per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento dei passaggi creata da un elenco di valori forniti.
+Usare l'effetto di trasferimento discreto per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento passaggio creata da un elenco di valori specificati.
 
 Il CLSID per questo effetto è CLSID \_ D2D1DiscreteTransfer.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
@@ -32,9 +32,9 @@ L'immagine mostra l'input e l'output dell'effetto di trasferimento discreto.
 
 | Prima                                                            |
 |-------------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)        |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)        |
 | After                                                             |
-| ![immagine dopo la trasformazione.](images/12-discretetransfer.png) |
+| ![l'immagine dopo la trasformazione.](images/12-discretetransfer.png) |
 
 
 
@@ -59,42 +59,42 @@ m_d2dContext->EndDraw();
 
 
 
-La funzione Transfer è basata sull'elenco di input: V = (V0, V1, V2, V3, V? , V<sub>n</sub>), dove N è il numero di elementi-1.
+La funzione di trasferimento è basata sull'elenco di input: V=(V0,V1,V2,V3,V? ,V<sub>N</sub>) dove N è il numero di elementi - 1.
 
-L'intensità dei pixel di input viene rappresentata come C. L'intensità del pixel di output, C viene calcolata con l'equazione:
+L'intensità in pixel di input è rappresentata come C. L'intensità in pixel di output, C, viene calcolata con l'equazione:
 
-Per un valore C, scegliere un valore k, in modo che:
+Per un valore C, selezionare un valore k, in modo che:
 
 ![formula per il processo.](images/discrete-transfer1.png)
 
-L'output C può essere calcolato usando l'equazione: C'= V?
+L'output C può essere calcolato usando l'equazione: C' = V?
 
-Questo effetto funziona su immagini alfa diritte e premoltiplicate. L'effetto restituisce bitmap alfa premoltiplicate.
+Questo effetto funziona su immagini alfa rette e premoltiliate. L'effetto restituisce bitmap alfa premoltiliate.
 
-Di seguito è riportato il grafico della funzione di trasferimento discreto come se gli input fossero `[0.25, 0.5, 0.75, 1.0]` .
+Ecco l'aspetto del grafico della funzione di trasferimento discreta se gli input sono `[0.25, 0.5, 0.75, 1.0]` .
 
-![grafico dell'intensità dei pixel per la funzione di trasferimento discreto.](images/discrete-transfer-graph.png)
+![grafico di intensità pixel per la funzione di trasferimento discreto.](images/discrete-transfer-graph.png)
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 > [!Note]  
-> I valori di tutti i canali delle proprietà di trasferimento discreto sono privi di unità e hanno un minimo di 0,0 e un massimo di 1,0.
+> I valori di tutti i canali delle proprietà di trasferimento discrete sono senza unità e hanno un minimo di 0,0 e un massimo di 1,0.
 
  
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                              | Tipo e valore predefinito                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Enumerazione del nome visualizzato e dell'indice                                              | Tipo e valore predefinito                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RedTable<br/> D2D1 \_ DISCRETETRANSFER \_ - \_ \_ tabella rossa<br/>         | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale rosso.                                                                                                                                                                                                                                                                                                                                                                                 |
-| RedDisable<br/> D2D1 \_ DISCRETETRANSFER \_ prop \_ Red \_ Disable<br/>     | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale rosso. Se si imposta questa opzione su FALSE, l'effetto applica la funzione RedDiscreteTransfer al canale rosso.                                                                                                                                                                                                                                                                 |
-| GreenTable<br/> \_ \_ \_ Tabella verde prop d2d1 \_ DISCRETETRANSFER<br/>     | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                  |
-| GreenDisable<br/> D2D1 \_ DISCRETETRANSFER \_ prop \_ Green \_ Disable<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa opzione su FALSE, l'effetto applica la funzione GreenDiscreteTransfer al canale verde.                                                                                                                                                                                                                                                           |
-| BlueTable<br/> D2D1 \_ DISCRETETRANSFER \_ - \_ tabella blu Prop \_<br/>       | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale blu.                                                                                                                                                                                                                                                                                                                                                                                   |
-| BlueDisable<br/> D2D1 \_ DISCRETETRANSFER \_ prop \_ Blue \_ Disable<br/>   | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale blu. Se si imposta questa opzione su FALSE, l'effetto applica la funzione BlueDiscreteTransfer al canale blu.                                                                                                                                                                                                                                                              |
-| AlphaTable<br/> \_Tabella d2d1 DISCRETETRANSFER \_ prop \_ Alpha \_<br/>     | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale alfa.                                                                                                                                                                                                                                                                                                                                                                                  |
-| AlphaDisable<br/> D2D1 \_ DISCRETETRANSFER \_ prop \_ Alpha \_ Disable<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale alfa. Se si imposta questa opzione su FALSE, l'effetto applica la funzione AlphaDiscreteTransfer al canale alfa.                                                                                                                                                                                                                                                           |
-| ClampOutput<br/> D2D1 \_ DISCRETETRANSFER \_ prop \_ \_ output Clamp<br/>   | BOOL<br/> FALSE<br/>             | Indica se l'effetto fissa i valori dei colori a un valore compreso tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto blocca i valori prima di premoltiplicare l'alfa.<br/> Se si imposta questa impostazione su TRUE, i valori vengono bloccati dall'effetto. Se si imposta questa proprietà su FALSE, l'effetto non blocca i valori dei colori, mentre altri effetti e la superficie di output possono bloccare i valori se non hanno una precisione sufficientemente elevata.<br/> |
+| RedTable<br/> TABELLA ROSSA DELLA PROPRIETÀ \_ DISCRETETRANSFER D2D1 \_ \_ \_<br/>         | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale Rosso.                                                                                                                                                                                                                                                                                                                                                                                 |
+| RedDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ RED \_ DISABLE<br/>     | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Rosso. Se si imposta questa proprietà su FALSE, l'effetto applica la funzione RedDiscreteTransfer al canale Red.                                                                                                                                                                                                                                                                 |
+| Tabella verde<br/> TABELLA VERDE PROPRIETÀ \_ DISCRETETRANSFER D2D1 \_ \_ \_<br/>     | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                  |
+| GreenDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ GREEN \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa proprietà su FALSE, l'effetto applica la funzione GreenDiscreteTransfer al canale Verde.                                                                                                                                                                                                                                                           |
+| BlueTable<br/> TABELLA BLU DELLA PROPRIETÀ \_ DISCRETETRANSFER D2D1 \_ \_ \_<br/>       | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale Blu.                                                                                                                                                                                                                                                                                                                                                                                   |
+| BlueDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ BLUE \_ DISABLE<br/>   | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Blu. Se si imposta questa proprietà su FALSE, l'effetto applica la funzione BlueDiscreteTransfer al canale Blue.                                                                                                                                                                                                                                                              |
+| Tabella alfa<br/> TABELLA ALFA DELLA PROPRIETÀ \_ DISCRETETRANSFER D2D1 \_ \_ \_<br/>     | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori che definiscono la funzione di trasferimento per il canale Alfa.                                                                                                                                                                                                                                                                                                                                                                                  |
+| AlphaDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ ALPHA \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Alfa. Se si imposta questa opzione su FALSE, l'effetto applica la funzione AlphaDiscreteTransfer al canale Alfa.                                                                                                                                                                                                                                                           |
+| ClampOutput<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ CLAMP \_ OUTPUT<br/>   | BOOL<br/> FALSE<br/>             | Indica se l'effetto stringe i valori di colore tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto stringe i valori prima di premultiplare il valore alfa.<br/> Se si imposta questa opzione su TRUE, l'effetto stringerà i valori. Se si imposta questa proprietà su FALSE, l'effetto non stringerà i valori di colore, ma altri effetti e la superficie di output potrebbero stringere i valori se non hanno una precisione sufficientemente elevata.<br/> |
 
 
 
@@ -106,10 +106,10 @@ Di seguito è riportato il grafico della funzione di trasferimento discreto come
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

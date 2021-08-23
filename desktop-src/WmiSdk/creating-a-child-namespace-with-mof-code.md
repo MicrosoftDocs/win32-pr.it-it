@@ -1,26 +1,26 @@
 ---
-description: Il modo più semplice per creare uno spazio dei nomi consiste nell'usare il codice Managed Object Format (MOF) per creare lo spazio dei nomi all'interno della directory corrente. La directory corrente viene definita al momento dell'accesso.
+description: Il modo più semplice per creare uno spazio dei nomi è usare Managed Object Format (MOF) per creare lo spazio dei nomi all'interno della directory corrente. La directory corrente viene definita quando si esegue l'accesso.
 ms.assetid: 2b83cd96-079f-4178-9e5a-68ede3a92066
 ms.tgt_platform: multiple
 title: Creazione di uno spazio dei nomi figlio con codice MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f80aa04e2ef4f5c7bbfc43d9020727b3b2a6e0d
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: 9d29edf493cb94c92715214dd2d7e7622ae12e831e71322afa8ad590272c6dc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104058476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244641"
 ---
 # <a name="creating-a-child-namespace-with-mof-code"></a>Creazione di uno spazio dei nomi figlio con codice MOF
 
-Il modo più semplice per creare uno spazio dei nomi consiste nell'usare il codice Managed Object Format (MOF) per creare lo spazio dei nomi all'interno della directory corrente. La directory corrente viene definita al momento dell'accesso.
+Il modo più semplice per creare uno spazio dei nomi è usare Managed Object Format (MOF) per creare lo spazio dei nomi all'interno della directory corrente. La directory corrente viene definita quando si esegue l'accesso.
 
-Nella procedura riportata di seguito viene descritto come creare uno spazio dei nomi figlio utilizzando il codice MOF.
+La procedura seguente descrive come creare uno spazio dei nomi figlio usando il codice MOF.
 
-**Per creare uno spazio dei nomi figlio utilizzando il codice MOF**
+**Per creare uno spazio dei nomi figlio usando il codice MOF**
 
-1.  Creare un'istanza della classe dello [**\_ \_ spazio dei nomi**](--namespace.md) .
+1.  Creare un'istanza della [**\_ \_ classe Namespace.**](--namespace.md)
 
     Nell'esempio di codice seguente viene illustrato come creare uno spazio dei nomi figlio.
 
@@ -31,7 +31,7 @@ Nella procedura riportata di seguito viene descritto come creare uno spazio dei 
     };
     ```
 
-2.  Se si desidera richiedere all'utente di effettuare una connessione crittografata allo spazio dei nomi, utilizzare il qualificatore **RequiresEncryption** . Per ulteriori informazioni, vedere la pagina relativa [alla richiesta di una connessione crittografata a uno spazio dei nomi](requiring-an-encrypted-connection-to-a-namespace.md).
+2.  Se si vuole richiedere all'utente di stabilire una connessione crittografata allo spazio dei nomi, usare il qualificatore **RequiresEncryption.** Per altre informazioni, vedere [Richiesta di una connessione crittografata a uno spazio dei nomi.](requiring-an-encrypted-connection-to-a-namespace.md)
 
     Nell'esempio di codice seguente viene illustrato come richiedere una connessione crittografata.
 
@@ -44,9 +44,9 @@ Nella procedura riportata di seguito viene descritto come creare uno spazio dei 
     };
     ```
 
-3.  Se si desidera impostare un descrittore di sicurezza nello spazio dei nomi anziché utilizzare la sicurezza predefinita dello spazio dei nomi, utilizzare il qualificatore **NamespaceSecuritySDDL** . Per ulteriori informazioni, vedere [impostazione della sicurezza dello spazio dei nomi quando viene creato lo spazio dei nomi](setting-namespace-security-when-the-namespace-is-created.md).
+3.  Se si vuole impostare un descrittore di sicurezza nello spazio dei nomi anziché usare la sicurezza dello spazio dei nomi predefinita, usare il qualificatore **NamespaceSecuritySDDL.** Per altre informazioni, vedere [Impostazione della sicurezza dello spazio dei nomi quando viene creato lo spazio dei nomi.](setting-namespace-security-when-the-namespace-is-created.md)
 
-    Nell'esempio di codice riportato di seguito viene illustrato come impostare un descrittore di sicurezza nello spazio dei nomi.
+    Nell'esempio di codice seguente viene illustrato come impostare un descrittore di sicurezza nello spazio dei nomi .
 
     ``` syntax
     #pragma namespace("\\\\.\\root\\MyNamespace")
@@ -58,7 +58,7 @@ Nella procedura riportata di seguito viene descritto come creare uno spazio dei 
     };
     ```
 
-4.  Compilare e caricare l'istanza [**\_ \_ dello spazio dei nomi**](--namespace.md) utilizzando l'utilità [mofcomp](mofcomp.md) o l'interfaccia [**IMOFCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) . Sia mofcomp che l'interfaccia **IMOFCompiler** caricano automaticamente lo spazio dei nomi nella directory corrente. Per ulteriori informazioni, vedere [compilazione di file MOF](compiling-mof-files.md).
+4.  Compilare e caricare [**\_ \_ l'istanza dello**](--namespace.md) spazio dei nomi [usando l'utilità mofcomp](mofcomp.md) o [**l'interfaccia IMofCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) Mofcomp e **l'interfaccia IMofCompiler** caricano automaticamente lo spazio dei nomi nella directory corrente. Per altre informazioni, vedere [Compilazione di file MOF.](compiling-mof-files.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

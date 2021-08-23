@@ -1,9 +1,9 @@
 ---
-title: funzione gluTessVertex (Glu. h)
+title: Funzione gluTessVertex (Glu.h)
 description: La funzione gluTessVertex specifica un vertice in un poligono.
 ms.assetid: 9c555b32-5257-4eeb-9323-ccad59591097
 keywords:
-- funzione gluTessVertex OpenGL
+- Funzione gluTessVertex OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 546bbad2be1205f62c7889fbb18f23d5b0e38b8a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51b3b1dd666fd965e7b6536a20a794481c534ed3e42594017093ee161a067e15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488421"
 ---
-# <a name="glutessvertex-function"></a>gluTessVertex (funzione)
+# <a name="glutessvertex-function"></a>Funzione gluTessVertex
 
-La funzione **gluTessVertex** specifica un vertice in un poligono.
+La **funzione gluTessVertex** specifica un vertice in un poligono.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,11 +45,11 @@ void WINAPI gluTessVertex(
 *Tess* 
 </dt> <dd>
 
-Oggetto a mosaico creato con [**gluNewTess**](glunewtess.md).
+Oggetto a tessellazione (creato con [**gluNewTess).**](glunewtess.md)
 
 </dd> <dt>
 
-*CoOrds* 
+*Coords* 
 </dt> <dd>
 
 Posizione del vertice.
@@ -59,7 +59,7 @@ Posizione del vertice.
 *data* 
 </dt> <dd>
 
-Puntatore passato al programma con il callback del vertice (come specificato da [*gluTessCallback*](glutess.md)).
+Puntatore passato di nuovo al programma con il callback del vertice (come specificato da [*gluTessCallback).*](glutess.md)
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluTessVertex** descrive un vertice in un poligono che l'utente sta definendo. Le chiamate **gluTessVertex** successive descrivono un contorno chiuso. Per descrivere un quadrilatero, ad esempio, chiamare **gluTessVertex** quattro volte. È possibile chiamare **gluTessVertex** solo tra [**gluTessBeginContour**](glutessbegincontour.md) e [**gluTessEndContour**](glutessendcontour.md).
+La **funzione gluTessVertex** descrive un vertice in un poligono definito dall'utente. Le **chiamate gluTessVertex** successive descrivono un contorno chiuso. Ad esempio, per descrivere un quadrilatero, chiamare **gluTessVertex** quattro volte. È possibile chiamare **gluTessVertex** solo tra [**gluTessBeginContour**](glutessbegincontour.md) e [**gluTessEndContour.**](glutessendcontour.md)
 
-Il parametro *Data* in genere punta a una struttura che contiene la posizione del vertice, oltre ad altri attributi per vertice, ad esempio colore e normale. Questo puntatore viene passato di nuovo al programma tramite il \_ callback del vertice Glu dopo la suddivisione a mosaico (vedere [*gluTessCallback*](glutess.md)).
+Il *parametro* di dati in genere punta a una struttura contenente la posizione del vertice, nonché ad altri attributi per vertice, ad esempio colore e normale. Questo puntatore viene passato di nuovo al programma tramite il callback GLU VERTEX dopo la \_ sfalsatura (vedere [*gluTessCallback).*](glutess.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Il parametro *Data* in genere punta a una struttura che contiene la posizione de
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -109,7 +109,7 @@ Il parametro *Data* in genere punta a una struttura che contiene la posizione de
 [**gluTessNormal**](glutessnormal.md)
 </dt> <dt>
 
-[**gluTessProperty**](glutessproperty.md)
+[**GluTessProperty**](glutessproperty.md)
 </dt> </dl>
 
  

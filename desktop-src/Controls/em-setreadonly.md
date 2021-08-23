@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SETREADONLY (winuser. h)
-description: Imposta o rimuove lo stile di sola lettura \_ di un controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_SETREADONLY messaggio (Winuser.h)
+description: Imposta o rimuove lo stile di sola lettura (ES \_ READONLY) di un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: a10b3f57-0e67-4a0f-89f3-9c8ebd1514f8
 keywords:
-- Controlli di Windows Message EM_SETREADONLY
+- EM_SETREADONLY di Windows di messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0b224e11212077703ab62ab6a180875672c879e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d46726c1247f7ef93c00e495ca77ad3d337253705bd3018a0480fc9588c22f8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437511"
 ---
-# <a name="em_setreadonly-message"></a>Messaggio di sola \_ lettura em
+# <a name="em_setreadonly-message"></a>Messaggio EM \_ SETREADONLY
 
-Imposta o rimuove lo stile di sola lettura di [**un \_**](edit-control-styles.md)controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Imposta o rimuove lo stile di sola lettura ([**ES \_ READONLY**](edit-control-styles.md)) di un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta o rimuove lo stile di sola lettura di [**un \_**](edit-control-styles.md
 *wParam* 
 </dt> <dd>
 
-Specifica se impostare o rimuovere lo stile di sola [**\_ lettura di es**](edit-control-styles.md) . Il valore **true** imposta lo stile di sola **\_ lettura di es** . il valore **false** rimuove lo stile di sola **\_ lettura** .
+Specifica se impostare o rimuovere lo [**stile ES \_ READONLY.**](edit-control-styles.md) Il valore **TRUE imposta** lo stile **ES \_ READONLY.** Il valore **FALSE** rimuove lo **stile ES \_ READONLY.**
 
 </dd> <dt>
 
@@ -47,15 +47,15 @@ Questo parametro non viene usato.
 
 Se l'operazione ha esito positivo, il valore restituito è diverso da zero.
 
-Se l'operazione ha esito negativo, il valore restituito è zero.
+Se l'operazione non riesce, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un controllo di modifica ha lo stile di sola [**\_ lettura**](edit-control-styles.md) , l'utente non può modificare il testo nel controllo di modifica.
+Quando un controllo di modifica ha lo [**stile ES \_ READONLY,**](edit-control-styles.md) l'utente non può modificare il testo all'interno del controllo di modifica.
 
-Per determinare se un controllo di modifica ha lo stile di sola [**\_ lettura di es**](edit-control-styles.md) , usare la funzione [**GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con il \_ flag di stile GWL.
+Per determinare se un controllo di modifica ha lo stile [**ES \_ READONLY,**](edit-control-styles.md) usare la [**funzione GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con il flag GWL \_ STYLE.
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le diverse versioni del sistema, vedere [Informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Per determinare se un controllo di modifica ha lo stile di sola [**\_ lettura di
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

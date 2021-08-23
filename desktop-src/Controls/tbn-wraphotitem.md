@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_WRAPHOTITEM (COMmctrl. h)
-description: Notifica a un'applicazione due o più barre degli strumenti che l'elemento critico sta per cambiare. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_WRAPHOTITEM codice di notifica (Commctrl.h)
+description: Notifica a un'applicazione con due o più barre degli strumenti che l'elemento a caldo sta per cambiare. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 169309ec-68dd-4cbb-8963-f842cf75b4fc
 keywords:
-- Controlli di Windows per il codice di notifica TBN_WRAPHOTITEM
+- TBN_WRAPHOTITEM del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58eb513780da464ead40f8a4fb1264f6268d4370
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33c6bd1f2e750a2fd71dc053d31ca452fa581891037db73d356e5405476b28de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119293363"
 ---
-# <a name="tbn_wraphotitem-notification-code"></a>\_Codice di notifica WRAPHOTITEM di TBN
+# <a name="tbn_wraphotitem-notification-code"></a>Codice di \_ notifica WRAPHOTITEM TBN
 
-Notifica a un'applicazione due o più barre degli strumenti che l'elemento critico sta per cambiare. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica a un'applicazione con due o più barre degli strumenti che l'elemento a caldo sta per cambiare. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ TBN_WRAPHOTITEM
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura che contiene il vecchio elemento attivo (**Tart**) e se il nuovo elemento attivo è precedente (**Idir** =-1) o dopo di esso (**Idir** = 1), nonché un motivo per cui l'elemento critico sta cambiando.
+Puntatore a una struttura che contiene l'elemento di accesso rapido precedente (**iStart**) e indica se il nuovo elemento a caldo si trova prima di esso (**iDir** = -1) o dopo di esso (**iDir** = 1), nonché un motivo per cui l'elemento a caldo viene modificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se l'applicazione sta gestendo la modifica dell'elemento critico; in caso contrario, **false**.
+**TRUE** se l'applicazione gestisce la modifica dell'elemento a caldo; in caso **contrario, FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-La struttura **NMTBWRAPHOTITEM** deve essere definita dall'applicazione come segue:
+La **struttura NMTBWRAPHOTITEM** deve essere definita dall'applicazione nel modo seguente:
 
 ``` syntax
 typedef struct tagNMTBWRAPHOTITEM {
@@ -68,9 +68,9 @@ typedef struct tagNMTBWRAPHOTITEM {
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

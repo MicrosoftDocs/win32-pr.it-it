@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Param. MinDataForXpress'
-title: Campo Windows8Param. MinDataForXpress (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: Campo Windows8Param.MinDataForXpress'
+title: Campo Windows8Param.MinDataForXpress (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: MinDataForXpress field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.MinDataForXpress
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.mindataforxpress(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d694f09f117682c19d9e7bdf3244a7d1593cfdf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 727a99c5254375910a059b005bf2d89c5d429891b031acf913f6174bcff20858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470631"
 ---
-# <a name="windows8parammindataforxpress-field"></a>Campo Windows8Param. MinDataForXpress
+# <a name="windows8parammindataforxpress-field"></a>Campo Windows8Param.MinDataForXpress
 
-Quantità minima di dati che devono essere compressi con la compressione Xpress.
+Quantità minima di dati da comprimere con compressione xpress.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param MinDataForXpress
 
 [Membri di Windows8Param](./windows8param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

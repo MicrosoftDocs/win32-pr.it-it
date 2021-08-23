@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_GETIMAGELIST (COMmctrl. h)
-description: Ottiene l'handle per l'elenco di immagini che è stato impostato per un controllo intestazione esistente. È possibile inviare questo messaggio in modo esplicito o usare l'intestazione \_ GetStateImageList o la macro header GetImages \_ .
+title: HDM_GETIMAGELIST messaggio (Commctrl.h)
+description: Ottiene l'handle per l'elenco di immagini impostato per un controllo intestazione esistente. È possibile inviare questo messaggio in modo esplicito o usare la macro Header \_ GetImageList o Header \_ GetStateImageList.
 ms.assetid: 3e1a979c-60c5-4538-bd4d-16238829062e
 keywords:
-- Controlli di Windows Message HDM_GETIMAGELIST
+- HDM_GETIMAGELIST controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e199d603af873f1957d33855ccf5c59a90a4002
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8149dd4914ceb1835e9e04442492855e9c25340604ed4e4eeb2619c62b88e69f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540911"
 ---
-# <a name="hdm_getimagelist-message"></a>HDM \_ messaggio GETimagine
+# <a name="hdm_getimagelist-message"></a>Messaggio \_ HDM GETIMAGELIST
 
-Ottiene l'handle per l'elenco di immagini che è stato impostato per un controllo intestazione esistente. È possibile inviare questo messaggio in modo esplicito o usare l'intestazione [**\_ GetStateImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist) o la macro header [**\_ GetImages**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist) .
+Ottiene l'handle per l'elenco di immagini impostato per un controllo intestazione esistente. È possibile inviare questo messaggio in modo esplicito o usare la macro [**Header \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist) [**o Header \_ GetStateImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist)
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,8 +31,8 @@ Ottiene l'handle per l'elenco di immagini che è stato impostato per un controll
 
 | Valore                                                                                                                                                      | Significato                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <span id="HDSIL_NORMAL"></span><span id="hdsil_normal"></span><dl> <dt>**HDSIL \_ normale**</dt> </dl> | Indica che si tratta di un elenco di immagini normale.<br/> |
-| <span id="HDSIL_STATE"></span><span id="hdsil_state"></span><dl> <dt>**\_stato HDSIL**</dt> </dl>    | Indica che si tratta di un elenco di immagini di stato.<br/>  |
+| <span id="HDSIL_NORMAL"></span><span id="hdsil_normal"></span><dl> <dt>**HDSIL \_ NORMAL**</dt> </dl> | Indica che si tratta di un normale elenco di immagini.<br/> |
+| <span id="HDSIL_STATE"></span><span id="hdsil_state"></span><dl> <dt>**STATO \_ HDSIL**</dt> </dl>    | Indica che si tratta di un elenco di immagini di stato.<br/>  |
 
 
 
@@ -45,7 +45,7 @@ Ottiene l'handle per l'elenco di immagini che è stato impostato per un controll
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un handle per il set di elenchi di immagini per il controllo intestazione.
+Restituisce un handle al set di elenchi di immagini per il controllo intestazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce un handle per il set di elenchi di immagini per il controllo intesta
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

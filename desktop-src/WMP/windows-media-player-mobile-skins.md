@@ -1,48 +1,48 @@
 ---
-title: Interfacce di Windows Media Player Mobile
-description: Interfacce di Windows Media Player Mobile
+title: Windows Media Player Interfaccia per dispositivi mobili
+description: Windows Media Player Interfaccia per dispositivi mobili
 ms.assetid: bcab41ed-db48-4070-b462-879f56bb6606
 keywords:
-- Windows Media Player Mobile, interfacce
-- Windows Media Player Mobile Skins, informazioni
-- interfacce, Windows Media Player Mobile
+- Windows Media Player Dispositivi mobili, interfaccia
+- Windows Media Player interfaccia per dispositivi mobili, informazioni
+- skins,Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 920a672000e7e7c3a5f470cac9e05ecb38985311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87196eb39fdbe0977f4d5baf5d298f339bb84f77d22f9e2e5579549c779a6b5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246881"
 ---
-# <a name="windows-media-player-mobile-skins"></a>Interfacce di Windows Media Player Mobile
+# <a name="windows-media-player-mobile-skins"></a>Windows Media Player Interfaccia per dispositivi mobili
 
-Il software Windows Media Player Mobile include un'interfaccia predefinita costituita da diversi pulsanti e dispositivi di scorrimento che è possibile usare per riprodurre, riavvolgere o arrestare i supporti digitali. Un'interfaccia personalizzata è un'interfaccia utente personalizzabile che fornisce un aspetto e una funzionalità univoche per Windows Media Player mobile.
+Windows Media Player Il software per dispositivi mobili include un'interfaccia predefinita costituita da vari pulsanti e dispositivi di scorrimento che è possibile usare per riprodurre, riavvolgere o arrestare file multimediali digitali. Un'interfaccia è un'interfaccia utente personalizzabile che offre un aspetto e funzionalità univoci per Windows Media Player Mobile.
 
-Le sezioni seguenti descrivono come creare interfacce per Windows Media Player mobile.
+Le sezioni seguenti descrivono come creare le interfaccia per Windows Media Player Mobile.
 
 
 
 | Sezione                               | Descrizione                                                                                                   |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Informazioni sulle interfacce](about-skins-mobile.md) | Vengono illustrati i concetti necessari per comprendere l'architettura della pelle e le regole che è necessario seguire per creare un'interfaccia personalizzata. |
-| [Guida all'interfaccia](skin-guide.md)          | Viene illustrato come creare un'interfaccia semplice.                                                                            |
-| [Riferimento all'interfaccia](skin-reference.md)  | Contiene riferimenti dettagliati per tutte le parti di un'interfaccia.                                                     |
+| [Informazioni sulle interfaccia](about-skins-mobile.md) | Illustra i concetti necessari per comprendere l'architettura dell'interfaccia e le regole da seguire per creare un'interfaccia. |
+| [Guida all'interfaccia](skin-guide.md)          | Illustra come creare un'interfaccia semplice.                                                                            |
+| [Informazioni di riferimento per l'interfaccia](skin-reference.md)  | Contiene riferimenti dettagliati per tutte le parti di un'interfaccia.                                                     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Interfacce di Media Player Windows**](windows-media-player-skins.md)
+[**Windows Media Player Pelli**](windows-media-player-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

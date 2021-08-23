@@ -4,65 +4,65 @@ ms.assetid: 0751bb76-611a-41c4-aab2-aa6f68b61b0e
 title: Luci e materiali (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f44a12c1be1e7a14f7bfe176d7f391901d2dac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9a5ace2a80bb79d192fadc5376256eedf9229be9a36fa1d200341ccf28e961fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119277521"
 ---
 # <a name="lights-and-materials-direct3d-9"></a>Luci e materiali (Direct3D 9)
 
 Le luci vengono usate per illuminare gli oggetti in una scena. Quando l'illuminazione è abilitata, Direct3D calcola il colore di ogni vertice dell'oggetto in base a una combinazione di:
 
 > [!Note]  
-> Questa sezione è destinata solo alla pipeline a funzione fissa. Gli shader programmabili eseguono tutte le operazioni di illuminazione in modo esplicito.
+> Questa sezione è solo per la pipeline a funzione fissa. Gli shader programmabili eseguono tutte le operazioni di illuminazione in modo esplicito.
 
  
 
--   Il colore del materiale corrente e i Texel in una mappa di trama associata.
--   Colori con riflessione diffusa e speculare nel vertice, se specificato.
--   Il colore e l'intensità della luce prodotta dalle fonti di luce nella scena o dal livello di luce ambientale della scena.
+-   Colore del materiale corrente e texel in una mappa di trama associata.
+-   Colori diffusi e speculari in corrispondenza del vertice, se specificato.
+-   Colore e intensità della luce prodotta dalle sorgenti di luce nella scena o nel livello di luce ambientale della scena.
 
-Quando si usa l'illuminazione e i materiali Direct3D, si consente a Direct3D di gestire i dettagli dell'illuminazione. Se necessario, gli utenti avanzati possono eseguire l'illuminazione autonomamente.
+Quando si usano l'illuminazione e i materiali Direct3D, si consente a Direct3D di gestire automaticamente i dettagli dell'illuminazione. Gli utenti avanzati possono eseguire l'illuminazione da soli, se lo si desidera.
 
-La modalità di utilizzo di illuminazione e materiali fa una grande differenza nell'aspetto della scena di cui è stato eseguito il rendering. I materiali definiscono il modo in cui la luce riflette una superficie. I livelli di luce diretta e ambientale definiscono la luce che viene riflessa. Se l'illuminazione è abilitata, è necessario utilizzare i materiali per eseguire il rendering di una scena. Non sono necessarie luci per eseguire il rendering di una scena, ma i dettagli in una scena sottoposta a rendering senza luce non sono visibili. Al meglio, il rendering di una scena spenta genera una silhouette degli oggetti nella scena. Questo non è un dettaglio sufficiente per la maggior parte degli scopi.
+Il modo in cui si lavora con l'illuminazione e i materiali fa una grande differenza nell'aspetto della scena sottoposta a rendering. I materiali definiscono il modo in cui la luce si riflette su una superficie. I livelli di luce diretta e di luce ambientale definiscono la luce riflessa. È necessario usare i materiali per eseguire il rendering di una scena se l'illuminazione è abilitata. Le luci non sono necessarie per eseguire il rendering di una scena, ma i dettagli in una scena di cui viene eseguito il rendering senza luce non sono visibili. Nel migliore dei modi, il rendering di una scena non illuminata comporta un gruppo di oggetti nella scena. Questo non è un dettaglio sufficiente per la maggior parte degli scopi.
 
-## <a name="direct-light-vs-ambient-light"></a>Luce diretta e luce ambiente
+## <a name="direct-light-vs-ambient-light"></a>Confronto tra luce diretta e luce ambientale
 
-Sebbene sia la luce diretta che quella di ambiente illuminano gli oggetti in una scena, sono indipendenti l'uno dall'altro, hanno effetti molto diversi e richiedono l'uso in modi completamente diversi.
+Anche se la luce diretta e la luce ambientale illuminano gli oggetti in una scena, sono indipendenti l'uno dall'altro, hanno effetti molto diversi e richiedono di lavorare con essi in modi completamente diversi.
 
-La luce diretta è semplicemente: diretto. La luce diretta ha sempre la direzione e il colore ed è un fattore per gli algoritmi di ombreggiatura, ad esempio l'ombreggiatura Gouraud. Tipi diversi di luci emettono luce diretta in modi diversi, creando effetti speciali di attenuazione. Per creare un set di parametri luce per la luce diretta, chiamare il metodo [**IDirect3DDevice9:: selight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight) .
+La luce diretta è esattamente questo: diretto. La luce diretta ha sempre la direzione e il colore ed è un fattore per gli algoritmi di ombreggiatura, ad esempio l'ombreggiatura Gouraud. Diversi tipi di luci emettono luce diretta in modi diversi, creando effetti di attenuazione speciali. È possibile creare un set di parametri di luce per la luce diretta chiamando il [**metodo IDirect3DDevice9::SetLight.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight)
 
-Ambiente chiaro è in realtà ovunque in una scena. È possibile considerarlo come un livello generale di luce che riempie un'intera scena, indipendentemente dagli oggetti e dalle rispettive posizioni nella scena. La luce di ambiente non ha posizione o direzione, ma solo il colore e l'intensità. Ogni luce si aggiunge alla luce di ambiente complessiva in una scena. Impostare il livello di luce di ambiente con una chiamata al metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) , specificando D3DRS \_ ambiente come parametro di *stato* e il colore RGBA desiderato come parametro del valore.
+La luce ambientale è in effetti ovunque in una scena. È possibile considerarlo come un livello generale di luce che riempie un'intera scena, indipendentemente dall'oggetto e dalle relative posizioni in tale scena. La luce ambientale non ha posizione o direzione, ma solo colore e intensità. Ogni luce aggiunge alla luce ambientale complessiva in una scena. Impostare il livello di luce ambientale con una chiamata al metodo [**IDirect3DDevice9::SetRenderState,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) specificando D3DRS AMBIENT come parametro State e il colore RGBA desiderato come parametro \_ Value. 
 
-Il colore della luce ambientale assume il formato di un valore RGBA, in cui ogni componente è un valore intero compreso tra 0 e 255. Questo è diverso dalla maggior parte dei valori di colore in Direct3D.
+Il colore della luce ambientale assume la forma di un valore RGBA, dove ogni componente è un valore intero compreso tra 0 e 255. Questo è diverso dalla maggior parte dei valori di colore in Direct3D.
 
-È possibile usare la macro [**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md) per generare valori RGBA. I componenti rosso, verde e blu si combinano per rendere il colore finale della luce dell'ambiente. Il componente alfa controlla la trasparenza del colore. Quando si usa l'accelerazione hardware o l'emulazione RGB, il componente alfa viene ignorato.
+È possibile usare la macro [**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md) per generare valori RGBA. I componenti rosso, verde e blu si combinano per ottenere il colore finale della luce ambientale. Il componente alfa controlla la trasparenza del colore. Quando si usa l'accelerazione hardware o l'emulazione RGB, il componente alfa viene ignorato.
 
-## <a name="direct3d-light-model-vs-nature"></a>Confronto tra modello leggero Direct3D e natura
+## <a name="direct3d-light-model-vs-nature"></a>Confronto tra modello di luce Direct3D e natura
 
-Per natura, quando la luce viene emessa da un'origine, viene riflessa da centinaia, se non da migliaia o milioni di oggetti prima di raggiungere l'occhio dell'utente. Ogni volta che viene riflessa, una luce viene assorbita da una superficie, altre è suddivisa in direzioni casuali e il resto passa a un'altra superficie o all'occhio dell'utente. Questo processo continua fino a quando la luce non viene ridotta a niente o un utente percepisce la luce.
+In natura, quando la luce viene emessa da una sorgente, viene riflessa da centinaia, se non migliaia o milioni di oggetti prima di raggiungere l'occhio dell'utente. Ogni volta che viene riflessa, una luce è invasa da una superficie, altre sono sparse in direzioni casuali e il resto passa a un'altra superficie o all'occhio dell'utente. Questo processo continua fino a quando la luce non viene ridotta a nulla o non viene percepita da un utente.
 
-Ovviamente, i calcoli necessari per simulare perfettamente il comportamento naturale della luce sono troppo lunghi da usare per la grafica Direct3D in tempo reale. Pertanto, con la massima rapidità, il modello Direct3D Light si avvicina al modo in cui Light funziona nel mondo naturale. Direct3D descrive la luce in termini di componenti rosso, verde e blu che si combinano per creare un colore finale.
+Ovviamente, i calcoli necessari per simulare perfettamente il comportamento naturale della luce sono troppo lunghi da usare per la grafica Direct3D in tempo reale. Di conseguenza, con la velocità, il modello di luce Direct3D approssima il funzionamento della luce nel mondo naturale. Direct3D descrive la luce in termini di componenti rosso, verde e blu che si combinano per creare un colore finale.
 
-In Direct3D, quando la luce riflette una superficie, il colore chiaro interagisce matematicamente con la superficie stessa per creare il colore visualizzato sullo schermo. Per informazioni specifiche sugli algoritmi usati da Direct3D, vedere [matematica dell'illuminazione (Direct3D 9)](mathematics-of-lighting.md).
+In Direct3D, quando la luce si riflette su una superficie, il colore chiaro interagisce matematicamente con la superficie stessa per creare il colore visualizzato sullo schermo. Per informazioni specifiche sugli algoritmi utilizzati da Direct3D, vedere [Matematica dell'illuminazione (Direct3D 9).](mathematics-of-lighting.md)
 
-Il modello della luce Direct3D generalizza la luce in due tipi: luce ambientale e luce diretta. Ognuno ha attributi diversi e ognuno interagisce con il materiale di una superficie in modi diversi. L'ambiente chiaro è chiaro che è stato sparso così tanto che la direzione e l'origine sono indeterminate: mantiene un basso livello di intensità ovunque. L'illuminazione indiretta usata dai fotografi è un valido esempio di luce ambientale. La luce ambientale in Direct3D, come per natura, non ha alcuna direzione o origine reale, bensì solo un colore e un'intensità. Infatti, il livello di luce di ambiente è completamente indipendente dagli oggetti in una scena che generano luce. Ambiente chiaro non contribuisce alla reflection speculare.
+Il modello di luce Direct3D generalizza la luce in due tipi: luce ambientale e luce diretta. Ognuno ha attributi diversi e ognuno interagisce con il materiale di una superficie in modi diversi. La luce ambientale è una luce che è stata dispersa a tal punto che la direzione e la sorgente sono indeterminate: mantiene ovunque un basso livello di intensità. L'illuminazione indiretta usata dalle lucentine è un buon esempio di luce ambientale. La luce ambientale in Direct3D, come in natura, non ha alcuna direzione o sorgente reale, ma solo un colore e un'intensità. In realtà, il livello di luce ambientale è completamente indipendente da qualsiasi oggetto in una scena che genera luce. La luce ambientale non contribuisce alla reflection speculare.
 
-La luce diretta è la luce generata da un'origine all'interno di una scena; ha sempre il colore e l'intensità e viaggia in una direzione specificata. La luce diretta interagisce con il materiale di una superficie per creare evidenziazioni speculari e la direzione viene utilizzata come fattore per gli algoritmi di ombreggiatura, inclusa l'ombreggiatura Gouraud. Quando la luce diretta viene riflessa, non contribuisce al livello di luce di ambiente in una scena. Le origini in una scena che generano luce diretta hanno caratteristiche diverse che influiscono sul modo in cui illuminano una scena.
+La luce diretta è la luce generata da una sorgente all'interno di una scena; ha sempre colore e intensità e si sposta in una direzione specificata. La luce diretta interagisce con il materiale di una superficie per creare evidenziazioni speculari e la sua direzione viene usata come fattore negli algoritmi di ombreggiatura, inclusa l'ombreggiatura Gouraud. Quando la luce diretta viene riflessa, non contribuisce al livello di luce ambientale in una scena. Le origini in una scena che generano luce diretta hanno caratteristiche diverse che influiscono sul modo in cui illuminano una scena.
 
-Inoltre, il materiale di un poligono ha proprietà che influiscono sulla modalità con cui il poligono riflette la luce che riceve. Si imposta un tratto di Reflection singolo che descrive il modo in cui il materiale riflette la luce ambientale e si impostano i singoli tratti per determinare la reflection speculare e diffusa del materiale. Per ulteriori informazioni, vedere [Materials (Direct3D 9)](materials.md).
+Inoltre, il materiale di un poligono ha proprietà che influiscono sul modo in cui tale poligono riflette la luce che riceve. Si imposta un singolo tratto di riflettenza che descrive il modo in cui il materiale riflette la luce ambientale e si impostano singoli tratti per determinare la riflettenza speculare e diffusa del materiale. Per altre informazioni, vedere [Materials (Direct3D 9)](materials.md).
 
 ## <a name="color-values-for-lights-and-materials"></a>Valori di colore per luci e materiali
 
-Direct3D descrive il colore in termini di quattro componenti: rosso, verde, blu e alfa, combinati per creare un colore finale. La struttura C++ [**D3DCOLORVALUE**](d3dcolorvalue.md) è definita per contenere valori per ogni componente. Ogni membro è un valore a virgola mobile che in genere è compreso tra 0,0 e 1,0 inclusi. Sebbene sia le luci che i materiali usino la stessa struttura per descrivere il colore, i valori della struttura vengono usati in modo leggermente diverso da ciascuno.
+Direct3D descrive il colore in termini di quattro componenti, rosso, verde, blu e alfa, che si combinano per creare un colore finale. La [**struttura C++ D3DCOLORVALUE**](d3dcolorvalue.md) è definita in modo da contenere valori per ogni componente. Ogni membro è un valore a virgola mobile che in genere è compreso tra 0,0 e 1,0 inclusi. Anche se le luci e i materiali usano la stessa struttura per descrivere il colore, i valori nella struttura vengono usati in modo leggermente diverso da ognuno.
 
-I valori dei colori per le origini chiare rappresentano la quantità di un particolare componente chiaro emesso. Poiché le luci non usano un componente alfa, sono rilevanti solo i componenti rosso, verde e blu del colore. È possibile visualizzare i tre componenti come le lenti rosse, verdi e blu in un televisore di proiezione. Ogni lente può essere disattivata (un valore 0,0 nel membro appropriato), potrebbe essere il più chiaro possibile (un valore 1,0) o un certo livello di tempo compreso tra. I colori che passano attraverso le lenti si uniscono per rendere il colore finale della luce. Una combinazione come R (1.0), G (1.0), B (1.0) crea una luce bianca, dove R (0,0), G (0,0), B (0,0) non emette la luce. È possibile creare una luce che emette solo un componente, ottenendo una luce pura, verde o blu; in alternativa, la luce potrebbe usare combinazioni per emettere colori come giallo o viola. È anche possibile impostare valori negativi per i componenti di colore per creare una "luce scura" che rimuove effettivamente la luce da una scena. In alternativa, è possibile impostare i componenti su un valore maggiore di 1,0 per creare una luce estremamente luminosa.
+I valori di colore per le sorgenti di luce rappresentano la quantità di un particolare componente chiaro che emette. Poiché le luci non usano un componente alfa, sono rilevanti solo i componenti rosso, verde e blu del colore. È possibile visualizzare i tre componenti come lenti rosse, verdi e blu su una proiezione tv. Ogni lente potrebbe essere disattivata (un valore 0,0 nel membro appropriato), potrebbe essere il più chiaro possibile (un valore 1,0) o potrebbe essere un livello compreso tra un membro e l'altro. I colori che passano attraverso le lenti si combinano per rendere il colore finale della luce. Una combinazione come R(1.0), G(1.0), B(1.0) crea una luce bianca, in cui R(0.0), G(0.0), B(0.0) non emette luce. È possibile creare una luce che emette un solo componente, generando una luce rossa, verde o blu pura; oppure la luce può usare combinazioni per emettere colori come il giallo o il viola. È anche possibile impostare valori negativi del componente colore per creare una "luce scura" che rimuove effettivamente la luce da una scena. In caso contrario, è possibile impostare i componenti su un valore maggiore di 1,0 per creare una luce estremamente luce.
 
-Con i materiali, d'altra parte, i valori dei colori rappresentano la quantità di un componente leggero riflesso da una superficie di cui viene eseguito il rendering con tale materiale. Un materiale i cui componenti di colore sono R (1.0), G (1.0), B (1.0), A (1.0) riflette tutta la luce che è in arrivo. Analogamente, un materiale con R (0,0), G (1.0), B (0,0), A (1.0) riflette tutta la luce verde che viene indirizzata. I materiali hanno più valori di reflection per creare vari tipi di effetti.
+Con i materiali, d'altra parte, i valori di colore rappresentano la quantità di un componente chiaro riflessa da una superficie di cui viene eseguito il rendering con tale materiale. Un materiale i cui componenti di colore sono R(1.0), G(1.0), B(1.0), A(1.0) riflette tutta la luce che si presenta. Analogamente, un materiale con R(0.0), G(1.0), B(0.0), A(1.0) riflette tutta la luce verde verso di esso. I materiali hanno più valori di riflettenza per creare vari tipi di effetti.
 
-Informazioni aggiuntive sono contenute in: [tipi leggeri (Direct3D 9)](light-types.md)e [Proprietà Light (Direct3D 9)](light-properties.md).
+Altre informazioni sono contenute in: Tipi di luce [(Direct3D 9)](light-types.md)e [Proprietà luce (Direct3D 9).](light-properties.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

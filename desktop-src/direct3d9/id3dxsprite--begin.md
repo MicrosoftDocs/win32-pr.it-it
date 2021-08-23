@@ -1,7 +1,7 @@
 ---
-description: Prepara un dispositivo per il disegno degli sprite.
+description: Prepara un dispositivo per il disegno di sprite.
 ms.assetid: ec9eb069-0a41-4dd5-bbd5-5a31133550b6
-title: 'Metodo ID3DXSprite:: begin (D3dx9core. h)'
+title: Metodo ID3DXSprite::Begin (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7670c3c516627283a466b3adbb369dc76bbe0d45
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94d3ee659937508f52e38513006701494a01ed4ff95fe6c75c56bd9638137160
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119277831"
 ---
-# <a name="id3dxspritebegin-method"></a>Metodo ID3DXSprite:: Begin
+# <a name="id3dxspritebegin-method"></a>Metodo ID3DXSprite::Begin
 
-Prepara un dispositivo per il disegno degli sprite.
+Prepara un dispositivo per il disegno di sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ HRESULT Begin(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di zero o più flag che descrivono le opzioni di rendering sprite. Per questo metodo, i flag validi sono:
+Combinazione di zero o più flag che descrivono le opzioni di rendering dello sprite. Per questo metodo, i flag validi sono:
 
--   \_AlphaBlend D3DXSPRITE
--   \_ \_ TABELLONe D3DXSPRITE
+-   D3DXSPRITE \_ ALPHABLEND
+-   D3DXSPRITE \_ \_ BILLBOARD
 -   D3DXSPRITE \_ DONOTMODIFY \_ RENDERSTATE
--   \_DONOTSAVESTATE D3DXSPRITE
--   \_OBJECTSPACE D3DXSPRITE
--   \_ \_ Profondità di ordinamento D3DXSPRITE \_ \_ BACKTOFRONT
--   \_ \_ Profondità di ordinamento D3DXSPRITE \_ \_ FRONTTOBACK
--   \_ \_ Trama di ordinamento D3DXSPRITE \_
+-   D3DXSPRITE \_ DONOTSAVESTATE
+-   SPAZIO OGGETTI D3DXSPRITE \_
+-   D3DXSPRITE \_ \_ SORT \_ DEPTH \_ BACKTOFRONT
+-   D3DXSPRITE \_ \_ SORT \_ DEPTH \_ FRONTTOBACK
+-   TRAMA DI ORDINAMENTO D3DXSPRITE \_ \_ \_
 
-Per una descrizione dei flag e per informazioni su come controllare le trasformazioni di acquisizione dello stato del dispositivo e visualizzazione dispositivi, vedere [D3DXSPRITE](d3dxsprite.md).
+Per una descrizione dei flag e per informazioni su come controllare l'acquisizione dello stato del dispositivo e le trasformazioni della visualizzazione del dispositivo, vedere [D3DXSPRITE](d3dxsprite.md).
 
 </dd> </dl>
 
@@ -64,13 +64,13 @@ Per una descrizione dei flag e per informazioni su come controllare le trasforma
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato dall'interno di [**IDirect3DDevice9:: BeginScene**](/windows/desktop/api) . . . Sequenza [**IDirect3DDevice9:: EndScene**](/windows/desktop/api) . Impossibile utilizzare **ID3DXSprite:: Begin** come sostituto di **IDirect3DDevice9:: BeginScene** o [**ID3DXRenderToSurface:: BeginScene**](id3dxrendertosurface--beginscene.md).
+Questo metodo deve essere chiamato dall'interno di [**un oggetto IDirect3DDevice9::BeginScene**](/windows/desktop/api) . . . [**Sequenza IDirect3DDevice9::EndScene.**](/windows/desktop/api) **ID3DXSprite::Begin** non può essere usato come sostituto di **IDirect3DDevice9::BeginScene** o [**ID3DXRenderToSurface::BeginScene**](id3dxrendertosurface--beginscene.md).
 
-Questo metodo consente di impostare gli Stati seguenti nel dispositivo.
+Questo metodo imposta gli stati seguenti nel dispositivo.
 
 Stati di rendering:
 
@@ -78,79 +78,79 @@ Stati di rendering:
 
 | Tipo ([**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)) | Valore                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| \_ALPHABLENDENABLE D3DRS                                       | true                                                                                                              |
-| \_ALPHAFUNC D3DRS                                              | D3DCMP \_ maggiore                                                                                                   |
-| \_ALPHAREF D3DRS                                               | 0x00                                                                                                              |
-| \_ALPHATESTENABLE D3DRS                                        | AlphaCmpCaps                                                                                                      |
-| \_BLENDOP D3DRS                                                | D3DBLENDOP \_ aggiungere                                                                                                   |
-| Ritaglio D3DRS \_                                               | true                                                                                                              |
-| \_CLIPPLANEENABLE D3DRS                                        | FALSE                                                                                                             |
-| \_COLORWRITEENABLE D3DRS                                       | D3DCOLORWRITEENABLE \_ alfa \| D3DCOLORWRITEENABLE \_ blu \| D3DCOLORWRITEENABLE \_ verde \| D3DCOLORWRITEENABLE \_ rosso |
-| \_CULLMODE D3DRS                                               | D3DCULL \_ None                                                                                                     |
-| \_DESTBLEND D3DRS                                              | \_INVSRCALPHA D3DBLEND                                                                                             |
-| \_DIFFUSEMATERIALSOURCE D3DRS                                  | \_COLOR1 D3DMCS                                                                                                    |
-| \_ENABLEADAPTIVETESSELLATION D3DRS                             | FALSE                                                                                                             |
-| \_FillMode D3DRS                                               | D3DFILL \_ Solid                                                                                                    |
-| \_FOGENABLE D3DRS                                              | FALSE                                                                                                             |
-| \_INDEXEDVERTEXBLENDENABLE D3DRS                               | FALSE                                                                                                             |
-| \_Illuminazione D3DRS                                               | FALSE                                                                                                             |
-| \_RANGEFOGENABLE D3DRS                                         | FALSE                                                                                                             |
-| \_SEPARATEALPHABLENDENABLE D3DRS                               | FALSE                                                                                                             |
-| \_MODOOMBRA D3DRS                                              | \_Gouraud D3DSHADE                                                                                                 |
-| \_SPECULARENABLE D3DRS                                         | FALSE                                                                                                             |
-| \_SRCBLEND D3DRS                                               | \_SRCALPHA D3DBLEND                                                                                                |
-| \_SRGBWRITEENABLE D3DRS                                        | FALSE                                                                                                             |
-| \_STENCILENABLE D3DRS                                          | FALSE                                                                                                             |
-| \_VERTEXBLEND D3DRS                                            | FALSE                                                                                                             |
-| \_WRAP0 D3DRS                                                  | 0                                                                                                                 |
+| D3DRS \_ ALPHABLENDENABLE                                       | true                                                                                                              |
+| D3DRS \_ ALPHAFUNC                                              | D3DCMP \_ GREATER                                                                                                   |
+| D3DRS \_ ALPHAREF                                               | 0x00                                                                                                              |
+| D3DRS \_ ALPHATESTENABLE                                        | AlphaCmpCaps                                                                                                      |
+| D3DRS \_ BLENDOP                                                | D3DBLENDOP \_ ADD                                                                                                   |
+| RITAGLIO \_ D3DRS                                               | true                                                                                                              |
+| D3DRS \_ CLIPPLANEENABLE                                        | FALSE                                                                                                             |
+| D3DRS \_ COLORWRITEENABLE                                       | D3DCOLORWRITEENABLE \_ ALPHA \| D3DCOLORWRITEENABLE \_ BLUE \| D3DCOLORWRITEENABLE \_ GREEN \| D3DCOLORWRITEENABLE \_ RED |
+| D3DRS \_ CULLMODE                                               | D3DCULL \_ NONE                                                                                                     |
+| D3DRS \_ DESTBLEND                                              | D3DBLEND \_ INVSRCALPHA                                                                                             |
+| D3DRS \_ DIFFUSEMATERIALSOURCE                                  | D3DMCS \_ COLOR1                                                                                                    |
+| D3DRS \_ ENABLEADAPTIVETESSELLATION                             | FALSE                                                                                                             |
+| D3DRS \_ FILLMODE                                               | D3DFILL \_ SOLID                                                                                                    |
+| D3DRS \_ FOGENABLE                                              | FALSE                                                                                                             |
+| D3DRS \_ INDEXEDVERTEXBLENDENABLE                               | FALSE                                                                                                             |
+| ILLUMINAZIONE \_ D3DRS                                               | FALSE                                                                                                             |
+| D3DRS \_ RANGEFOGENABLE                                         | FALSE                                                                                                             |
+| D3DRS \_ SEPARATEALPHABLENDENABLE                               | FALSE                                                                                                             |
+| D3DRS \_ SHADEMODE                                              | D3DSHADE \_ GOURAUD                                                                                                 |
+| D3DRS \_ SPECULARENABLE                                         | FALSE                                                                                                             |
+| D3DRS \_ SRCBLEND                                               | D3DBLEND \_ SRCALPHA                                                                                                |
+| D3DRS \_ SRGBWRITEENABLE                                        | FALSE                                                                                                             |
+| D3DRS \_ STENCILENABLE                                          | FALSE                                                                                                             |
+| D3DRS \_ VERTEXBLEND                                            | FALSE                                                                                                             |
+| D3DRS \_ WRAP0                                                  | 0                                                                                                                 |
 
 
 
  
 
-Stati della fase trama:
+Stati della fase di trama:
 
 
 
-| Identificatore fase | Tipo ([**D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md)) | Valore            |
+| Identificatore di fase | Tipo ([**D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md)) | Valore            |
 |------------------|---------------------------------------------------------------------------|------------------|
-| 0                | \_ALPHAARG1 D3DTSS                                                         | \_Trama D3DTA   |
-| 0                | \_ALPHAARG2 D3DTSS                                                         | D3DTA \_ diffuse   |
-| 0                | \_ALPHAOP D3DTSS                                                           | \_Modulazione D3DTOP |
-| 0                | \_COLORARG1 D3DTSS                                                         | \_Trama D3DTA   |
-| 0                | \_COLORARG2 D3DTSS                                                         | D3DTA \_ diffuse   |
-| 0                | \_COLOROP D3DTSS                                                           | \_Modulazione D3DTOP |
-| 0                | \_TEXCOORDINDEX D3DTSS                                                     | 0                |
-| 0                | \_TEXTURETRANSFORMFLAGS D3DTSS                                             | \_Disabilitazione D3DTTFF |
-| 1                | \_ALPHAOP D3DTSS                                                           | \_Disabilitazione D3DTOP  |
-| 1                | \_COLOROP D3DTSS                                                           | \_Disabilitazione D3DTOP  |
+| 0                | D3DTSS \_ ALPHAARG1                                                         | TRAMA D3DTA \_   |
+| 0                | D3DTSS \_ ALPHAARG2                                                         | D3DTA \_ DIFFUSE   |
+| 0                | D3DTSS \_ ALPHAOP                                                           | MODULAZIONE \_ D3DTOP |
+| 0                | D3DTSS \_ COLORARG1                                                         | TRAMA D3DTA \_   |
+| 0                | D3DTSS \_ COLORARG2                                                         | D3DTA \_ DIFFUSE   |
+| 0                | D3DTSS \_ COLOROP                                                           | MODULAZIONE \_ D3DTOP |
+| 0                | D3DTSS \_ TEXCOORDINDEX                                                     | 0                |
+| 0                | D3DTSS \_ TEXTURETRANSFORMFLAGS                                             | D3DTTFF \_ DISABLE |
+| 1                | D3DTSS \_ ALPHAOP                                                           | D3DTOP \_ DISABLE  |
+| 1                | D3DTSS \_ COLOROP                                                           | D3DTOP \_ DISABLE  |
 
 
 
  
 
-Stati campionatore:
+Stati del campionatore:
 
 
 
-| Indice fase campionatore | Tipo ([**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)) | Valore                                                                                                          |
+| Indice della fase di campionamento | Tipo ([**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)) | Valore                                                                                                          |
 |---------------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| 0                   | \_Indirizzo D3DSAMP                                               | \_Clamp D3DTADDRESS                                                                                             |
-| 0                   | \_ADDRESSV D3DSAMP                                               | \_Clamp D3DTADDRESS                                                                                             |
-| 0                   | \_MAGFILTER D3DSAMP                                              | D3DTEXF \_ anisotropico se TextureFilterCaps include D3DPTFILTERCAPS \_ MAGFANISOTROPIC; in caso contrario, D3DTEXF \_ lineare |
-| 0                   | \_MAXMIPLEVEL D3DSAMP                                            | 0                                                                                                              |
-| 0                   | \_MAXANISOTROPY D3DSAMP                                          | MaxAnisotropy                                                                                                  |
-| 0                   | \_MINFILTER D3DSAMP                                              | D3DTEXF \_ anisotropico se TextureFilterCaps include D3DPTFILTERCAPS \_ MINFANISOTROPIC; in caso contrario, D3DTEXF \_ lineare |
-| 0                   | \_MIPFILTER D3DSAMP                                              | D3DTEXF \_ lineare se TextureFilterCaps include D3DPTFILTERCAPS \_ MIPFLINEAR; in caso contrario, punto di D3DTEXF \_            |
-| 0                   | \_MIPMAPLODBIAS D3DSAMP                                          | 0                                                                                                              |
-| 0                   | \_SRGBTEXTURE D3DSAMP                                            | 0                                                                                                              |
+| 0                   | D3DSAMP \_ ADDRESSU                                               | D3DTADDRESS \_ CLAMP                                                                                             |
+| 0                   | D3DSAMP \_ ADDRESSV                                               | D3DTADDRESS \_ CLAMP                                                                                             |
+| 0                   | D3DSAMP \_ MAGFILTER                                              | D3DTEXF \_ ANISOTROP se TextureFilterCaps include D3DPTFILTERCAPS \_ MAGFANISOTROP; in caso contrario D3DTEXF \_ LINEAR |
+| 0                   | D3DSAMP \_ MAXMIPLEVEL                                            | 0                                                                                                              |
+| 0                   | D3DSAMP \_ MAXANISOTROPY                                          | MaxAnisotropy                                                                                                  |
+| 0                   | D3DSAMP \_ MINFILTER                                              | D3DTEXF \_ ANISOTROP se TextureFilterCaps include D3DPTFILTERCAPS \_ MINFANISOTROP; in caso contrario D3DTEXF \_ LINEAR |
+| 0                   | D3DSAMP \_ MIPFILTER                                              | D3DTEXF \_ LINEAR se TextureFilterCaps include D3DPTFILTERCAPS \_ MIPFLINEAR; in caso contrario D3DTEXF \_ POINT            |
+| 0                   | D3DSAMP \_ MIPMAPLODBIAS                                          | 0                                                                                                              |
+| 0                   | D3DSAMP \_ SRGBTEXTURE                                            | 0                                                                                                              |
 
 
 
  
 
 > [!Note]  
-> Questo metodo Disabilita le N-patch.
+> Questo metodo disabilita N patch.
 
  
 
@@ -160,8 +160,8 @@ Stati campionatore:
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

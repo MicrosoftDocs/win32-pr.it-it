@@ -1,9 +1,9 @@
 ---
-title: onmouseover
-description: Il gestore eventi onmouseover gestisce un evento che si verifica quando l'utente posiziona il puntatore del mouse sull'elemento.
+title: Onmouseover
+description: Il gestore eventi onmouseover gestisce un evento che si verifica quando l'utente posiziona per la prima volta il puntatore sull'elemento.
 ms.assetid: b62da27e-0bdf-46b5-b956-cb20c29df1c2
 keywords:
-- Media Player di Windows onmouseover
+- onmouseover Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 82163d74f060d9f57be2decb78c517844c1f5b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d59809a7b0d1a5530359f6e8d288e21d0c13e67ac7ee9dc9b2537eb43183a7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468031"
 ---
-# <a name="onmouseover"></a>onmouseover
+# <a name="onmouseover"></a>Onmouseover
 
-Il gestore eventi **onmouseover** gestisce un evento che si verifica quando l'utente posiziona il puntatore del mouse sull'elemento.
+Il **gestore eventi onmouseover** gestisce un evento che si verifica quando l'utente posiziona per la prima volta il puntatore sull'elemento.
 
 ``` syntax
 onmouseover
@@ -30,7 +30,7 @@ onmouseover
 
 ## <a name="remarks"></a>Commenti
 
-Questo gestore eventi non è applicabile all'elemento **playlist** .
+Questo gestore eventi non è applicabile **all'elemento PLAYLIST.**
 
 ## <a name="requirements"></a>Requisiti
 

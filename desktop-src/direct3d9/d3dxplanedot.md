@@ -1,7 +1,7 @@
 ---
-description: Calcola il prodotto a punti di un piano e di un vettore 4D.
+description: Calcola il prodotto del punto di un piano e di un vettore 4D.
 ms.assetid: e6232ca8-52cc-472d-8bdb-4f8dfc520d4f
-title: Funzione D3DXPlaneDot (D3dx9math. h)
+title: Funzione D3DXPlaneDot (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b6f33e591df364151a7090e5b4a9dd0773f5788a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4895a94ad50171682a8bd5247694c3b35a56d174b5477f5bbb2a621c1e74fa96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564631"
 ---
-# <a name="d3dxplanedot-function"></a>D3DXPlaneDot (funzione)
+# <a name="d3dxplanedot-function"></a>Funzione D3DXPlaneDot
 
-Calcola il prodotto a punti di un piano e di un vettore 4D.
+Calcola il prodotto del punto di un piano e di un vettore 4D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,33 +41,33 @@ FLOAT D3DXPlaneDot(
 
 <dl> <dt>
 
-*PP* \[ in\]
+*pP* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntatore a una struttura [**D3DXPLANE**](d3dxplane.md) di origine.
+Puntatore a una [**struttura D3DXPLANE di**](d3dxplane.md) origine.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) .
+Puntatore a [**una struttura D3DXVECTOR4.**](d3dxvector4.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Prodotto a virgola del piano e del vettore 4D.
+Prodotto del punto del piano e vettore 4D.
 
 ## <a name="remarks"></a>Commenti
 
-Dato un piano (a, b, c, d) e un vettore 4D (x, y, z, w), il valore restituito di questa funzione è \* x + b \* y + c \* z + d \* . La funzione **D3DXPlaneDot** è utile per determinare la relazione del piano con una coordinata omogenea. Questa funzione, ad esempio, può essere utilizzata per determinare se una coordinata specifica si trova su un particolare piano o su quale lato di un particolare piano si trova una coordinata particolare.
+Dato un piano (a, b, c, d) e un vettore 4D (x, y, z, w) il valore restituito di questa funzione è \* x + b y + c z + d \* \* \* w. La **funzione D3DXPlaneDot** è utile per determinare la relazione del piano con una coordinata omogenea. Ad esempio, questa funzione può essere usata per determinare se una determinata coordinata si trova su un piano specifico o su quale lato di un particolare piano si trova una coordinata specifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Dato un piano (a, b, c, d) e un vettore 4D (x, y, z, w), il valore restituito di
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

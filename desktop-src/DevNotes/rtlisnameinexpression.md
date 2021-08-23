@@ -1,7 +1,7 @@
 ---
 description: Determina se una stringa Unicode corrisponde al modello specificato.
 ms.assetid: 9b220cb8-4402-4094-8209-59a9af004b4a
-title: RtlIsNameInExpression (funzione)
+title: Funzione RtlIsNameInExpression
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: ac6142b364a135b62505841963fa799ce6603dbe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8d59968bd32a7ab60d5a739f6c4be2d99d5a9ed63e13069fe1824e9b41e029ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541491"
 ---
-# <a name="rtlisnameinexpression-function"></a>RtlIsNameInExpression (funzione)
+# <a name="rtlisnameinexpression-function"></a>Funzione RtlIsNameInExpression
 
 Determina se una stringa Unicode corrisponde al modello specificato.
 
@@ -42,41 +42,41 @@ Determina se una stringa Unicode corrisponde al modello specificato.
 
 <dl> <dt>
 
-*Espressione* \[ in\]
+*Espressione* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla stringa del modello. Questa stringa può contenere caratteri jolly. Se il parametro *IgnoreCase* è true, la stringa deve contenere solo caratteri maiuscoli.
+Puntatore alla stringa del modello. Questa stringa può contenere caratteri jolly. Se il *parametro IgnoreCase* è TRUE, la stringa deve contenere solo caratteri maiuscoli.
 
 </dd> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
 Puntatore alla stringa da confrontare con il modello. Questa stringa non può contenere caratteri jolly.
 
 </dd> <dt>
 
-*IgnoreCase* \[ in\]
+*IgnoreCase* \[ Pollici\]
 </dt> <dd>
 
-**True** per la corrispondenza senza distinzione tra maiuscole e minuscole o **false** per corrispondenza con distinzione tra maiuscole e minuscole
+**TRUE per** la corrispondenza senza distinzione tra maiuscole e minuscole o **FALSE** per la corrispondenza con distinzione tra maiuscole e minuscole.
 
 </dd> <dt>
 
 *UpcaseTable* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore facoltativo a una tabella caratteri maiuscola da usare per la corrispondenza senza distinzione tra maiuscole e minuscole. Se questo parametro è NULL, viene utilizzata la tabella dei caratteri maiuscoli di sistema predefinita.
+Puntatore facoltativo a una tabella di caratteri maiuscoli da utilizzare per la corrispondenza senza distinzione tra maiuscole e minuscole. Se questo parametro è NULL, viene usata la tabella dei caratteri maiuscoli di sistema predefinita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la stringa corrisponde al modello. Se la stringa non corrisponde al modello, la funzione restituisce **false**.
+Restituisce **TRUE** se la stringa corrisponde al criterio. Se la stringa non corrisponde al modello, questa funzione restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll. lib, è disponibile in Microsoft Windows Driver Kit (WDK). È anche possibile chiamare questa funzione usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Ntdll.dll.
+A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll.lib, è disponibile in Microsoft Windows Driver Kit (WDK). È anche possibile chiamare questa funzione usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente Ntdll.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ A questa funzione non è associato alcun file di intestazione. La libreria di im
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                           |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                              |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                              |
 | DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 
 
