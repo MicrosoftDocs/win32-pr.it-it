@@ -1,21 +1,21 @@
 ---
-description: L'illuminazione emissivo è descritta da un singolo termine.
+description: L'illuminazione emissiva è descritta da un singolo termine.
 ms.assetid: b6ccf274-a6c5-4b26-8c43-c857c2c24e0f
-title: Illuminazione emissivo (Direct3D 9)
+title: Illuminazione emissiva (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19cb0566d2409fb68e5fbbdca1cc609c31120e95
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: da3200486118e6b44efc3be31f01b3a10e62c876d673c687619a4e6c8445f0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802933"
 ---
-# <a name="emissive-lighting-direct3d-9"></a>Illuminazione emissivo (Direct3D 9)
+# <a name="emissive-lighting-direct3d-9"></a>Illuminazione emissiva (Direct3D 9)
 
-L'illuminazione emissivo è descritta da un singolo termine.
+L'illuminazione emissiva è descritta da un singolo termine.
 
-Illuminazione emissivo = C ₑ
+Illuminazione emissiva = Cₑ
 
 Dove:
 
@@ -23,26 +23,26 @@ Dove:
 
 | Parametro | Valore predefinito | Tipo          | Descrizione     |
 |-----------|---------------|---------------|-----------------|
-| C ₑ        | (0, 0, 0, 0)     | D3DCOLORVALUE | Colore emissivo. |
+| Cₑ        | (0,0,0,0)     | D3DCOLORVALUE | Colore emissivo. |
 
 
 
  
 
-Il valore per C ₑ è:
+Il valore per Cₑ è uno dei seguenti:
 
--   Vertex color1, se EMISSIVEMATERIALSOURCE = D3DMCS \_ color1 e il primo colore del vertice viene specificato nella dichiarazione del vertice.
--   Vertex color2, se EMISSIVEMATERIALSOURCE = D3DMCS \_ color2, e il secondo colore del vertice viene specificato nella dichiarazione del vertice.
+-   vertex color1, se EMISSIVEMATERIALSOURCE = D3DMCS COLOR1 e il primo colore del vertice viene \_ fornito nella dichiarazione del vertice.
+-   vertex color2, se EMISSIVEMATERIALSOURCE = D3DMCS COLOR2 e il secondo colore del vertice viene \_ specificato nella dichiarazione del vertice.
 -   colore emissivo materiale
 
 > [!Note]  
-> Se viene usata l'opzione EMISSIVEMATERIALSOURCE e il colore del vertice non viene specificato, viene usato il colore emissivo del materiale.
+> Se si usa l'opzione EMISSIVEMATERIALSOURCE e non viene specificato il colore del vertice, viene usato il colore emissivo del materiale.
 
  
 
 ## <a name="example"></a>Esempio
 
-In questo esempio, l'oggetto è colorato usando la luce ambientale della scena e un colore di ambiente di materiale. Il codice è illustrato di seguito.
+In questo esempio l'oggetto viene colorato usando la luce ambientale della scena e un colore di ambiente materiale. Il codice è illustrato di seguito.
 
 
 ```
@@ -61,13 +61,13 @@ m_pd3dDevice->SetRenderState(D3DRS_EMISSIVEMATERIALSOURCE, D3DMCS_MATERIAL);
 
 In base all'equazione, il colore risultante per i vertici dell'oggetto è il colore del materiale.
 
-Nella figura seguente viene illustrato il colore del materiale, che è verde. Emissivo illumina tutti i vertici degli oggetti con lo stesso colore. Non dipende dal vertice normale o dalla direzione della luce. Di conseguenza, la sfera appare come un cerchio 2D perché non esiste alcuna differenza nell'ombreggiatura intorno alla superficie dell'oggetto.
+La figura seguente mostra il colore del materiale, che è verde. Luci emissive di tutti i vertici degli oggetti con lo stesso colore. Non dipende dalla normale del vertice o dalla direzione della luce. Di conseguenza, la sfera è simile a un cerchio 2D perché non esiste alcuna differenza nell'ombreggiatura intorno alla superficie dell'oggetto.
 
 ![illustrazione di una sfera verde](images/lighte.jpg)
 
-Nell'illustrazione seguente viene illustrato il modo in cui emissivo Light si integra con gli altri tre tipi di luci, dagli esempi precedenti. Sul lato destro della sfera è presente una Blend della emissivo verde e della luce di ambiente rossa. Sul lato sinistro della sfera, il verde emissivo chiaro si fonde con l'ambiente rosso e la luce diffusa che produce una sfumatura rossa. L'evidenziazione speculare è bianca al centro e crea un anello giallo, perché il valore della luce speculare cade in modo nitido lasciando inalterati i valori dell'ambiente, della diffusione e della luce emissivo che si fondono per essere gialli.
+Nella figura seguente viene illustrato come la luce emissiva si integra con gli altri tre tipi di luci degli esempi precedenti. Sul lato destro della sfera è presente una combinazione dell'emissivo verde e della luce ambientale rossa. Sul lato sinistro della sfera, la luce verde emissiva si combina con una luce ambientale rossa e una luce diffusa che produce una sfumatura rossa. L'evidenziazione speculare è bianca al centro e crea un anello giallo quando il valore della luce speculare cade in modo nitido lasciando i valori di luce ambientale, diffusa ed emissiva che si fondono per ottenere il giallo.
 
-![illustrazione di una sfera verde con emissivo Light](images/lightadse.jpg)
+![illustrazione di una sfera verde con luce emissiva](images/lightadse.jpg)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

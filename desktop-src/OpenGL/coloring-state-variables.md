@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 2fafcd3400df351ac9dd8f50a1b4c4fb31f5a1ef14924f55588d3b9b1866c65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063291"
 ---
 # <a name="coloring-state-variables"></a>Variabili di stato di colorazione
 
@@ -51,20 +51,20 @@ ms.locfileid: "107909289"
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Densità esponenziale di densità                                                        |
+| Descrizione:     | Densità esponenziale della nebbia                                                        |
 | Gruppo di attributi: | Nebbia                                                                            |
-| Valore iniziale:   | 1,0                                                                            |
+| Valore iniziale:   | 1.0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL \_ \_ ALL'INIZIO</dt> <dd> 
+</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL \_ \_ OSA INIZIO</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Inizio lineare                                                               |
+| Descrizione:     | Inizio lineare della nebbia                                                               |
 | Gruppo di attributi: | Nebbia                                                                            |
 | Valore iniziale:   | 0,0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -73,13 +73,13 @@ ms.locfileid: "107909289"
 
  
 
-</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ FOG \_ END</dt> <dd> 
+</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>FINE \_ DELLA NEBBIA \_ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Fine lineare                                                                 |
+| Descrizione:     | Fine lineare della nebbia                                                                 |
 | Gruppo di attributi: | Nebbia                                                                            |
-| Valore iniziale:   | 1,0                                                                            |
+| Valore iniziale:   | 1.0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 

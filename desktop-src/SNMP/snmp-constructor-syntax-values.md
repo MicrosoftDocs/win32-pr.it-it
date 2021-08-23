@@ -1,6 +1,6 @@
 ---
-title: Valori di sintassi del costruttore SNMP (SNMP. h)
-description: I valori di sintassi del costruttore SNMP descrivono i tipi conformi allo standard di codifica ASN. 1 (Abstract Syntax Notation One).
+title: Valori della sintassi del costruttore SNMP (Snmp.h)
+description: I valori della sintassi del costruttore SNMP descrivono i tipi conformi allo standard di codifica ASN.1 (Abstract Syntax Notation One).
 ms.assetid: 8e3b6e00-51cf-4e39-a68e-dcf8fbe8ab3b
 topic_type:
 - apiref
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a484e58d7a92a3c75408db3160362d84e7891b76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2409fc45c74cfecc5167da53f3ca81e501ea5aa1d279ddfe591b6c589990e187
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008979"
 ---
-# <a name="snmp-constructor-syntax-values"></a>Valori di sintassi del costruttore SNMP
+# <a name="snmp-constructor-syntax-values"></a>Valori della sintassi del costruttore SNMP
 
-\[SNMP è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece [gestione remota Windows](/windows/desktop/WinRM/portal), ovvero l'implementazione Microsoft di WS-Man.\]
+\[SNMP è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece Windows [gestione remota](/windows/desktop/WinRM/portal), ovvero l'implementazione Microsoft di WS-Man.\]
 
-I valori di sintassi del costruttore SNMP descrivono i tipi conformi allo standard di codifica ASN. 1 (Abstract Syntax Notation One).
+I valori della sintassi del costruttore SNMP descrivono i tipi conformi allo standard di codifica ASN.1 (Abstract Syntax Notation One).
 
 
 
 | Costante                                                                                                                                                         | Descrizione                                               |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|
-| <span id="ASN_SEQUENCE"></span><span id="asn_sequence"></span><dl> <dt>**\_sequenza ASN**</dt> </dl>       | Indica che il messaggio è una sequenza ASN.<br/> |
-| <span id="ASN_SEQUENCEOF"></span><span id="asn_sequenceof"></span><dl> <dt>**\_SEQUENCEOF ASN**</dt> </dl> | Vedere \_ sequenza ASN.<br/>                             |
+| <span id="ASN_SEQUENCE"></span><span id="asn_sequence"></span><dl> <dt>**SEQUENZA \_ ASN**</dt> </dl>       | Indica che il messaggio è una sequenza ASN.<br/> |
+| <span id="ASN_SEQUENCEOF"></span><span id="asn_sequenceof"></span><dl> <dt>**ASN \_ SEQUENCEOF**</dt> </dl> | Vedere SEQUENZA \_ ASN.<br/>                             |
 
 
 
@@ -43,7 +43,7 @@ I valori di sintassi del costruttore SNMP descrivono i tipi conformi allo standa
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                        |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>SNMP. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Snmp.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ I valori di sintassi del costruttore SNMP descrivono i tipi conformi allo standa
 [Panoramica del protocollo Simple Network Management Protocol (SNMP)](simple-network-management-protocol-snmp-.md)
 </dt> <dt>
 
-[Riferimento SNMP](snmp-reference.md)
+[Informazioni di riferimento su SNMP](snmp-reference.md)
 </dt> <dt>
 
 [Costanti SNMP](snmp-constants.md)

@@ -15,21 +15,21 @@ ms.locfileid: "118549488"
 
 La conversione automatica avviene in due passaggi, come indicato di seguito:
 
-1.  Durante Windows configurazione. La conversione viene gestita dal processo di Windows tramite l'utilità MTSTOCOM.
+1.  Durante Windows configurazione. La conversione viene gestita dal processo di Windows di installazione tramite l'utilità MTSTOCOM.
     > [!Note]  
-    > Se il passaggio 1 ha esito negativo, alcuni o tutti i pacchetti MTS potrebbero essere stati effettivamente convertiti, ma potrebbero mancare determinate proprietà. In questo caso, usare lo strumento di amministrazione Servizi componenti per verificare tutti gli attributi. Gli attributi MTS saranno ancora presenti nel computer (nel Registro di sistema in HKEY LOCAL MACHINE Microsoft Transaction Server), ma saranno accessibili solo tramite \_ \_ \\ l'utilità \\ regedit.exe.
+    > Se il passaggio 1 non riesce, alcuni o tutti i pacchetti MTS potrebbero essere stati effettivamente convertiti, ma potrebbero mancare determinate proprietà. In questo caso, usare lo strumento amministrativo Servizi componenti per verificare tutti gli attributi. Gli attributi MTS saranno ancora presenti nel computer (nel Registro di sistema in HKEY LOCAL MACHINE Microsoft Transaction Server), ma saranno accessibili solo tramite \_ \_ \\ l'utilità \\ regedit.exe.
 
      
 
-2.  Dopo l'ultimo riavvio prima della Windows viene visualizzata la finestra di dialogo di accesso. Il passaggio 2 gestisce le azioni di conversione che richiedono l'accesso alla rete (principalmente la creazione di membri del ruolo).
+2.  Dopo l'ultimo riavvio prima Windows viene visualizzata la finestra di dialogo di accesso. Il passaggio 2 gestisce le azioni di conversione che richiedono l'accesso alla rete (principalmente la creazione di membri del ruolo).
     > [!Note]  
-    > Se il passaggio 2 non riesce (a causa di errori temporanei della rete o del controller di dominio), è possibile eseguire di nuovo l'utilità di conversione MTSTOCOM un numero qualsiasi di volte. A tale scopo, al prompt  dei comandi o dopo aver selezionato Esegui dal menu **Start** digitare quanto segue: **%windir% \\ system32 \\mtstocom.exe**.
+    > Se il passaggio 2 non riesce (a causa di errori temporanei della rete o del controller di dominio), è possibile eseguire di nuovo l'utilità di conversione MTSTOCOM per un numero qualsiasi di volte. A tale scopo, al prompt  dei comandi o dopo aver selezionato Esegui dal menu **Start** digitare quanto segue: **%windir% \\ system32 \\mtstocom.exe**.
 
      
 
 ## <a name="mtstocom-log-file"></a>MTSTOCOM Log File
 
-L'utilità MTSTOCOM genera un file di log (Mtstocom.log) nella directory Windows. Questo file di log mantiene un record della conversione da pacchetti MTS ad applicazioni COM+. Se si sono verificati errori durante il processo di conversione, è sempre una buona idea controllare il file di log per altre informazioni. Il file di log rileva problemi comuni, ad esempio un utente o una password non valida.
+L'utilità MTSTOCOM genera un file di log (Mtstocom.log) nella directory Windows. Questo file di log mantiene un record della conversione dai pacchetti MTS alle applicazioni COM+. Se si sono verificati errori durante il processo di conversione, è sempre buona idea controllare il file di log per altre informazioni. Il file di log rileva i problemi comuni, ad esempio utente o password non validi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

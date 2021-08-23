@@ -1,31 +1,31 @@
 ---
 title: Unioni non incapsulate
-description: Un'Unione non incapsulata è un'Unione che non è contenuta in una struttura con il relativo discriminante. L'Unione non incapsulata è indicata dalla presenza dell'attributo Type \ Switch \_ Type \ e l'attributo field \ Switch \_ è \.
+description: Un'unione non incapsulata è un'unione che non è contenuta in una struttura con la relativa discriminante. L'unione non incapsulata è indicata dalla presenza dell'attributo di tipo \ switch type\ e dall'attributo \_ di campo \ switch \_ is\ .
 ms.assetid: d883b0ed-ceab-49f0-bbe5-b96a503c431d
 keywords:
 - tipi di dati MIDL, unioni non incapsulate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c69cc4fc06a217fc3dc5dff405bf87268de91c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dab3daee6a4115ebdf53b3ff0133f8d05bc2a6f0325dcc6a04d324f48eeceb17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066901"
 ---
 # <a name="nonencapsulated-unions"></a>Unioni non incapsulate
 
-Un'Unione non incapsulata è un'Unione che non è contenuta in una struttura con il relativo discriminante. L'Unione non incapsulata è indicata dalla presenza del tipo di **\[ opzione \_ \]** dell'attributo del tipo e l' **\[ opzione \_ \]** dell'attributo field è.
+Un'unione non incapsulata è un'unione che non è contenuta in una struttura con la relativa discriminante. L'unione non incapsulata è indicata dalla presenza **\[ \_ \]** del tipo di opzione dell'attributo di tipo e l'opzione dell'attributo **\[ di campo \_ è \]**.
 
-Per una descrizione del formato di un'Unione non incapsulata, vedere [**Union**](union.md).
+Per una descrizione del formato di un'unione non incapsulata, vedere [**union**](union.md).
 
-La forma delle unioni deve essere identica tra le varie piattaforme per garantire l'interconnettività.
+La forma delle unioni deve essere la stessa tra le piattaforme per garantire l'interconnettività.
 
-Per ulteriori informazioni, vedere [incapsulated Unions](encapsulated-unions.md), [**Union**](union.md), **\[** [**Switch \_ is**](switch-is.md) **\]** e **\[** [**Switch \_ Type**](switch-type.md) **\]** .
+Per altre informazioni, vedere [Encapsulated Unions](encapsulated-unions.md), [**union**](union.md), **\[** [**switch \_ is**](switch-is.md) **\]** e switch **\[** [**\_ type**](switch-type.md) **\]** .
 
- 
+ 
 
- 
+ 
 
 
 

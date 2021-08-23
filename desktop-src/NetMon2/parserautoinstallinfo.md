@@ -1,7 +1,7 @@
 ---
-description: La funzione di esportazione ParserAutoInstallInfo identifica il parser o i parser che si trovano in una DLL. ParserAutoInstallInfo deve essere implementato in tutte le dll del parser.
+description: La funzione di esportazione ParserAutoInstallInfo identifica il parser o i parser che si trovano in una DLL. ParserAutoInstallInfo deve essere implementato in tutte le DLL del parser.
 ms.assetid: 7af3bf3c-d415-4af9-8f5c-c9a76535bd1a
-title: Funzione di callback ParserAutoInstallInfo (Netmon. h)
+title: Funzione di callback ParserAutoInstallInfo (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 7702ae8aad5ae24acf3835451b7b8eff3a26ceb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c6c69b66f3ff92905333a28c5dadfd79290033f0abb68cb2a790f07c6e34412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063752"
 ---
 # <a name="parserautoinstallinfo-callback-function"></a>Funzione di callback ParserAutoInstallInfo
 
-La funzione di esportazione **ParserAutoInstallInfo** identifica il parser o i parser che si trovano in una dll. **ParserAutoInstallInfo** deve essere implementato in tutte le dll del parser.
+La **funzione di esportazione ParserAutoInstallInfo** identifica il parser o i parser che si trovano in una DLL. **ParserAutoInstallInfo** deve essere implementato in tutte le DLL del parser.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,31 +39,31 @@ Questa funzione di callback non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è una struttura [PF \_ PARSERDLLINFO](pf-parserdllinfo.md) che descrive i parser nella dll.
+Se la funzione ha esito positivo, il valore restituito è una [struttura PF \_ PARSERDLLINFO](pf-parserdllinfo.md) che descrive i parser nella DLL.
 
-Se la funzione ha esito negativo, il valore restituito è **false**.
+Se la funzione ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Quando Network Monitor viene caricato per la prima volta, viene chiamato **ParserAutoInstallInfo** (se esiste) per installare automaticamente ogni parser e quindi vengono enumerate tutte le dll del parser nella sottodirectory del parser.
+Quando Network Monitor carica per la prima volta, chiama **ParserAutoInstallInfo** (se esistente) per installare automaticamente ogni parser e quindi enumerare tutte le DLL del parser nella sottodirectory del parser.
 
-Le informazioni restituite nella struttura **PF \_ PARSERDLLINFO** includono quanto segue:
+Le informazioni restituite nella **struttura PF \_ PARSERDLLINFO** includono quanto segue:
 
 -   Numero di parser nella DLL (in genere uno).
 -   Nome e breve descrizione del protocollo rilevato da ogni parser.
--   File della guida facoltativo per ogni protocollo.
+-   Un file della Guida facoltativo per ogni protocollo.
 -   Protocolli che precedono ogni protocollo.
 -   Protocolli che seguono ogni protocollo.
 
-Ogni DLL del parser deve contenere un parser. Tuttavia, Network Monitor consente di creare una DLL che contiene più di un parser. Ad esempio, tcpip.dll è un Network Monitor DLL con più di un parser.
+Ogni DLL del parser deve contenere un parser. Tuttavia, Network Monitor consente di creare una DLL che contiene più parser. Ad esempio, tcpip.dll è una DLL Network Monitor con più parser.
 
 
 
 | Per informazioni su                                               | Vedere                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Quali sono i parser e come funzionano con Network Monitor.        | [Parser](parsers.md)                                                       |
-| I punti di ingresso inclusi nella DLL del parser.               | [Architettura DLL parser](parser-dll-architecture.md)                       |
-| L'implementazione di **ParserAutoInstallInfo**  include un esempio. | [Implementazione di ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
+| Che cosa sono i parser e come funzionano con Network Monitor.        | [Parser](parsers.md)                                                       |
+| Punti di ingresso inclusi nella DLL del parser.               | [Architettura della DLL del parser](parser-dll-architecture.md)                       |
+| Come implementare **ParserAutoInstallInfo**  include un esempio. | [Implementazione di ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
 
 
 
@@ -77,7 +77,7 @@ Ogni DLL del parser deve contenere un parser. Tuttavia, Network Monitor consente
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

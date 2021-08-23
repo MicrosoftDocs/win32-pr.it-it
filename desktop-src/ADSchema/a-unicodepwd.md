@@ -1,6 +1,6 @@
 ---
 title: Unicode-Pwd attributo
-description: Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal formato OWF della password.
+description: Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile ricavare la password non crittografata dal formato OWF della password.
 ms.assetid: 07b29a0c-aff2-4abd-8ca8-95f1ce5b566b
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118681088"
 ---
 # <a name="unicode-pwd-attribute"></a>Unicode-Pwd attributo
 
-Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile derivare la password non crittografata dal formato OWF della password.
+Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questa proprietà viene utilizzata solo dal sistema operativo. Si noti che non è possibile ricavare la password non crittografata dal formato OWF della password.
 
 
 
@@ -32,8 +32,8 @@ Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windo
 | CN                | Unicode-Pwd                                                                  |
 | Ldap-Display-Name | unicodePwd                                                                   |
 | Dimensione              | \-                                                                           |
-| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                       |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che è necessario modificare la password. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                       |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che la password deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.4.90                                                        |
 | System-Id-Guid    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                        |
@@ -59,7 +59,7 @@ Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windo
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -80,7 +80,7 @@ Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windo
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -101,7 +101,7 @@ Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windo
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| A valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |

@@ -23,7 +23,7 @@ ms.locfileid: "118734658"
 
 Definisce la classe della finestra di dialogo.
 
-**L'istruzione CLASS** viene visualizzata nella sezione facoltativa prima del [**main**](dialog-resource.md) di un'istruzione DIALOG. Se non viene specificata alcuna classe, viene usata la classe di dialogo standard.
+**L'istruzione CLASS** viene visualizzata nella sezione facoltativa prima del [**main**](dialog-resource.md) di un'istruzione DIALOG. Se non viene specificata alcuna classe, viene usata la classe di finestra di dialogo standard.
 
 ``` syntax
 CLASS class
@@ -40,7 +40,7 @@ Intero senza segno a 16 bit o stringa, racchiuso tra virgolette doppie ("), che 
 
 ## <a name="remarks"></a>Commenti
 
-**L'istruzione CLASS** deve essere usata solo con casi speciali, perché esegue l'override della normale elaborazione di una finestra di dialogo. **L'istruzione CLASS** converte una finestra di dialogo in una finestra della classe specificata. a seconda della classe, ciò potrebbe dare risultati indesiderati. Non usare i nomi delle classi di controllo ridefinito con questa istruzione.
+**L'istruzione CLASS** deve essere usata solo con casi speciali, perché esegue l'override della normale elaborazione di una finestra di dialogo. **L'istruzione CLASS** converte una finestra di dialogo in una finestra della classe specificata. a seconda della classe, ciò potrebbe dare risultati indesiderati. Non usare i nomi ridefiniti delle classi di controllo con questa istruzione.
 
 ## <a name="examples"></a>Esempio
 

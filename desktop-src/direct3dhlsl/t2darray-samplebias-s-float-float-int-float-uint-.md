@@ -1,6 +1,6 @@
 ---
 title: Funzione SampleBias::SampleBias(S,float,float,int,float,uint) per Texture2DArray
-description: La funzione SampleBias::SampleBias(S,float,float,int,float,uint) per Texture2DArray consente di eseguire il campionamento di una trama dopo l'applicazione del valore di distorsione al livello mipmap.
+description: La funzione SampleBias::SampleBias(S,float,float,int,float,uint) per Texture2DArray campione una trama dopo aver applicato il valore di distorsione al livello mipmap.
 ms.assetid: 38DC341D-477A-4709-AC97-EB796A40C4B2
 keywords:
 - Funzione SampleBias HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118507344"
 ---
 # <a name="samplebiassamplebiassfloatfloatintfloatuint-function-for-texture2darray"></a>Funzione SampleBias::SampleBias(S,float,float,int,float,uint) per Texture2DArray
 
-Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.
+Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori del livello di dettaglio del campione. Restituisce lo stato dell'operazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ DXGI_FORMAT SampleBias(
 
 Tipo: **SamplerState**
 
-Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
@@ -58,11 +58,11 @@ Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto d
 
 Tipo: **float**
 
-Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
+Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Texture-Object tipo                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -80,7 +80,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
 
 Tipo: **float**
 
-Il valore di distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi, viene applicato a un livello mip prima del campionamento.
+Il valore della distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1,0 inclusi, viene applicato a un livello mip prima del campionamento.
 
 </dd> <dt>
 
@@ -89,11 +89,11 @@ Il valore di distorsione, ovvero un numero a virgola mobile compreso tra 0,0 e 1
 
 Tipo: **int**
 
-Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel. In caso contrario, è possibile ottenere risultati che non si traducono bene in hardware. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
+Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Texture-Object tipo           | Tipo di parametro |
+| tipo Texture-Object           | Tipo di parametro |
 |-------------------------------|----------------|
 | Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
@@ -111,7 +111,7 @@ Offset facoltativo delle coordinate della trama, che può essere usato per quals
 
 Tipo: **float**
 
-Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si passa 2.0f per il valore di chiusura, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
+Valore facoltativo a cui stringere i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si p
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
@@ -128,13 +128,13 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato. passar
 
 Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Metodi di SampleBias](texture2darray-samplebias.md)
+[Metodi SampleBias](texture2darray-samplebias.md)
 </dt> </dl>
 
  

@@ -28,7 +28,7 @@ Trova il primo bit impostato in un numero, da LSB o MSB.
 
 | Elemento                                                            | Descrizione                                                                                                                           |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Posizione integer del primo bit impostato in *src0* a partire dall'LSB per firstbit lo o \_ MSB per firstbit \_ hi.<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Posizione integer del primo bit impostato in *src0 a* partire dall'LSB per firstbit lo o \_ MSB per firstbit \_ hi.<br/> |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Numero intero di input.<br/>                                                                                                  |
 
 
@@ -37,15 +37,15 @@ Trova il primo bit impostato in un numero, da LSB o MSB.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione restituisce la posizione integer del primo bit impostato nell'input a 32 bit a partire dall'LSB per firstbit lo o MSB per \_ firstbit \_ hi. Ad esempio, firstbit \_ lo 0x00000001 restituisce 0. firstbit \_ hi on 0x10000000 restituisce 3.
+Questa operazione restituisce la posizione integer del primo bit impostato nell'input a 32 bit a partire dall'LSB per firstbit lo o MSB per \_ firstbit \_ hi. Ad esempio, firstbit \_ lo in 0x00000001 restituisce 0. firstbit \_ hi on 0x10000000 restituisce 3.
 
-firstbit shi (s per signed) restituisce il primo 0 da MSB se il numero è negativo; in caso contrario, restituisce il \_ primo 1 da MSB.
+firstbit shi (s per signed) restituisce il primo 0 da MSB se il numero è negativo; in caso contrario, restituisce il primo \_ 1 da MSB.
 
 Tutte le varianti dell'istruzione restituiscono ~0 (0xffffffff nel registro a 32 bit) se non viene trovata alcuna corrispondenza.
 
-Usare questa istruzione per enumerare rapidamente i bit impostati in un campo di bit o trovare la potenza massima di 2 in un numero.
+Usare questa istruzione per enumerare rapidamente i bit impostati in un campo di bit o trovare la potenza più grande di 2 in un numero.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -57,9 +57,9 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="mimimum-shader-model"></a>Modello shader Mimimum
+## <a name="mimimum-shader-model"></a>Modello di shader Mimimum
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
@@ -68,9 +68,9 @@ Questa istruzione è supportata nei modelli shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -80,7 +80,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

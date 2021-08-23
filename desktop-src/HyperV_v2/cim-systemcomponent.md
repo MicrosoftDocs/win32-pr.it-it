@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un sistema e uno degli elementi che lo compongono.
 ms.assetid: 728f25bf-3d52-4b1c-bf72-51e8ed0a4e72
-title: CIM_SystemComponent classe (gestione Hyper-V)
+title: CIM_SystemComponent (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646719"
 ---
-# <a name="cim_systemcomponent-class-hyper-v-management"></a>CIM_SystemComponent classe (gestione Hyper-V)
+# <a name="cim_systemcomponent-class-hyper-v-management"></a>CIM_SystemComponent (gestione di Hyper-V)
 
 Rappresenta un'associazione tra un sistema e uno degli elementi che lo compongono.
 
@@ -39,26 +39,26 @@ class CIM_SystemComponent : CIM_Component
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM SystemComponent** ha questi tipi di membri:
+La **classe \_ SystemComponent CIM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe CiM \_ SystemComponent** ha queste proprietà.
+La **classe \_ SystemComponent CIM** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **SISTEMA CIM \_**
+Tipo di dati: **sistema \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificatori: [**Aggregate,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
 Sistema [**CIM \_ che**](cim-system.md) contiene **PartComponent.**
@@ -77,7 +77,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Elemento [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) figlio che è un componente del sistema.
+[**\_ ManagedSystemElement CIM figlio**](cim-managedsystemelement.md) che è un componente del sistema.
 
 </dd> </dl>
 

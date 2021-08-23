@@ -1,38 +1,38 @@
 ---
-title: Supporto legacy per la panoramica con le barre di scorrimento
-description: In questa sezione viene descritto il supporto per la panoramica con le barre di scorrimento nelle applicazioni basate su Windows.
+title: Supporto legacy per la panoramica con barre di scorrimento
+description: Questa sezione descrive il supporto per la panoramica tramite barre di scorrimento nelle Windows basate su applicazioni basate su .
 ms.assetid: a8906b48-b804-4f3a-bb9b-dc94b632e2f7
 keywords:
-- Windows Touch, supporto legacy
-- Panoramica con barre di scorrimento
-- Windows Touch, panoramica con barre di scorrimento
-- Windows Touch, barre di scorrimento
+- Windows Tocco, supporto legacy
+- panoramica con barre di scorrimento
+- Windows Tocco, panoramica con barre di scorrimento
+- Windows Tocco, barre di scorrimento
 - barre di scorrimento, panoramica
 - barre di scorrimento, supporto legacy
-- Windows Touch, movimenti
+- Windows Tocco, movimenti
 - movimenti, panoramica con barre di scorrimento
-- Windows Touch, gesti rapidi
+- Windows Tocco, gesti rapidi
 - gesti rapidi, panoramica con barre di scorrimento
 - gesti rapidi, disabilitazione
-- Windows Touch, messaggi della rotellina del mouse
-- messaggi rotellina del mouse
-- Windows Touch, personalizzazione della panoramica
-- Panoramica, barre di scorrimento
-- Panoramica, supporto legacy
+- Windows Tocco, messaggi con rotellina del mouse
+- messaggi relativi alla rotellina del mouse
+- Windows Tocco, personalizzazione della panoramica
+- panoramica, barre di scorrimento
+- panoramica, supporto legacy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57f6b9dd47821205a6aa5b6f07e5053e31597358
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 97190d637cae5cc6936ecd78dca31e1e6c0f9ef1037b292b6080f973fc4e8701
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104562624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086321"
 ---
-# <a name="legacy-support-for-panning-with-scroll-bars"></a>Supporto legacy per la panoramica con le barre di scorrimento
+# <a name="legacy-support-for-panning-with-scroll-bars"></a>Supporto legacy per la panoramica con barre di scorrimento
 
-In questa sezione viene descritto il supporto per la panoramica con le barre di scorrimento nelle applicazioni basate su Windows.
+Questa sezione descrive il supporto per la panoramica tramite barre di scorrimento nelle Windows basate su applicazioni basate su .
 
-In Windows 7 i movimenti di panning generano \_ \* messaggi di scorrimento WM per abilitare il supporto legacy per la panoramica. Poiché è possibile che le applicazioni non supportino tutti i \_ \* messaggi di scorrimento WM, il panning potrebbe non funzionare correttamente. In questo argomento vengono descritti i passaggi da eseguire per assicurarsi che l'esperienza di panoramica legacy nelle applicazioni funzioni come previsto dagli utenti.
+In Windows 7 i movimenti di panoramica generano messaggi WM SCROLL per abilitare il supporto legacy per \_ \* la panoramica. Poiché le applicazioni potrebbero non supportare tutti i messaggi WM \_ \* SCROLL, la panoramica potrebbe non funzionare correttamente. Questo argomento descrive i passaggi da eseguire per garantire che l'esperienza di panoramica legacy nelle applicazioni funzioni come previsto dagli utenti.
 
 ## <a name="overview"></a>Panoramica
 
@@ -44,11 +44,11 @@ Le sezioni seguenti illustrano come abilitare l'esperienza di panoramica legacy:
 
 ## <a name="create-an-application-with-scroll-bars"></a>Creare un'applicazione con barre di scorrimento
 
-Avviare un nuovo progetto Win32 utilizzando la procedura guidata Microsoft Visual Studio. Verificare che il tipo di applicazione sia impostato sull'applicazione Windows. Non è necessario abilitare il supporto per il Active Template Library (ATL). La figura seguente mostra l'aspetto del progetto dopo l'avvio.
+Avviare un nuovo progetto Win32 usando la Microsoft Visual Studio guidata. Assicurarsi che il tipo di applicazione sia impostato sull'Windows applicazione. Non è necessario abilitare il supporto per Active Template Library (ATL). L'immagine seguente mostra l'aspetto del progetto dopo l'avvio.
 
-![screenshot che mostra una finestra senza barre di scorrimento](images/gpd-1.png)
+![Screenshot che mostra una finestra senza barre di scorrimento](images/gpd-1.png)
 
-Abilitare quindi le barre di scorrimento nell'immagine. Modificare il codice di creazione della finestra in **InitInstance** in modo che la chiamata di funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) crei una finestra con barre di scorrimento. A tal fine, osservare il codice indicato di seguito.
+Abilitare quindi le barre di scorrimento nell'immagine. Modificare il codice di creazione della finestra in **InitInstance** in modo che la chiamata alla funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) crei una finestra con barre di scorrimento. A tal fine, osservare il codice indicato di seguito.
 
 
 ```C++
@@ -69,11 +69,11 @@ Abilitare quindi le barre di scorrimento nell'immagine. Modificare il codice di 
 
 
 
-Dopo aver modificato il codice di creazione della finestra, l'applicazione avrà una barra di scorrimento. Nell'immagine seguente viene illustrato il modo in cui l'applicazione può essere esaminata in questo punto.
+Dopo aver modificato il codice di creazione della finestra, l'applicazione avrà una barra di scorrimento. L'immagine seguente illustra l'aspetto dell'applicazione a questo punto.
 
-![screenshot che mostra una finestra con una barra di scorrimento verticale ma senza testo](images/gpd-2.png)
+![Screenshot che mostra una finestra con una barra di scorrimento verticale ma senza testo](images/gpd-2.png)
 
-Dopo aver modificato il codice di creazione della finestra, aggiungere un oggetto barra di scorrimento all'applicazione e il testo da scorrere. Inserire il codice seguente nella parte superiore del metodo **WndProc** .
+Dopo aver modificato il codice di creazione della finestra, aggiungere un oggetto barra di scorrimento all'applicazione e del testo da scorrere. Inserire il codice seguente all'inizio del **metodo WndProc.**
 
 
 ```C++
@@ -121,7 +121,7 @@ Dopo aver modificato il codice di creazione della finestra, aggiungere un oggett
 
 
 
-Implementare quindi la logica dell'applicazione per la configurazione dei calcoli di testo per le metriche del testo. Il codice seguente deve sostituire il case **di \_ creazione di WM** esistente nella funzione **WndProc** .
+Implementare quindi la logica dell'applicazione per configurare i calcoli del testo per le metriche del testo. Il codice seguente deve sostituire il case **WM \_ CREATE** esistente nella **funzione WndProc.**
 
 
 ```C++
@@ -148,7 +148,7 @@ Implementare quindi la logica dell'applicazione per la configurazione dei calcol
 
 
 
-Implementare quindi la logica dell'applicazione per il ricalcolo del blocco di testo quando la finestra viene ridimensionata. Il codice seguente deve essere inserito nello switch del messaggio in **WndProc**.
+Implementare quindi la logica dell'applicazione per il ricalcolo del blocco di testo quando la finestra viene ridimensionata. Il codice seguente deve essere inserito nell'opzione message in **WndProc**.
 
 
 ```C++
@@ -178,7 +178,7 @@ Implementare quindi la logica dell'applicazione per il ricalcolo del blocco di t
 
 
 
-Implementare quindi la logica dell'applicazione per i messaggi di scorrimento verticali. Il codice seguente deve essere inserito nello switch del messaggio in **WndProc**.
+Implementare quindi la logica dell'applicazione per i messaggi di scorrimento verticale. Il codice seguente deve essere inserito nell'opzione message in **WndProc**.
 
 
 ```C++
@@ -251,7 +251,7 @@ Implementare quindi la logica dell'applicazione per i messaggi di scorrimento ve
 
 
 
-Aggiornare quindi il codice per ricreare la finestra. Il codice seguente deve sostituire il caso **di \_ disegno WM** predefinito in **WndProc**.
+Aggiornare quindi il codice per ridisegnare la finestra. Il codice seguente deve sostituire il case **WM \_ PAINT** predefinito in **WndProc.**
 
 
 ```C++
@@ -297,18 +297,18 @@ Aggiornare quindi il codice per ricreare la finestra. Il codice seguente deve so
 
 
 
-A questo punto, quando si compila e si esegue l'applicazione, dovrebbe essere presente il testo standard e una barra di scorrimento verticale. Nell'immagine seguente viene illustrato il modo in cui l'applicazione potrebbe sembrare.
+A questo punto, quando si compila ed esegue l'applicazione, l'applicazione deve contenere il testo boilerplate e una barra di scorrimento verticale. L'immagine seguente mostra l'aspetto dell'applicazione.
 
-![screenshot che mostra una finestra con una barra di scorrimento verticale e un testo](images/gpd-3.png)
+![Screenshot che mostra una finestra con una barra di scorrimento verticale e testo](images/gpd-3.png)
 
-## <a name="disable-flicks"></a>Disabilitare i gesti rapidi
+## <a name="disable-flicks"></a>Disabilita gesti rapidi
 
-Per migliorare l'esperienza di panoramica nell'applicazione, è necessario disattivare i gesti rapidi. A tale scopo, impostare le proprietà della finestra sul valore *HWND* quando viene inizializzato. I valori usati per i gesti rapidi vengono archiviati nell'intestazione tpcshrd. h, che deve anche essere inclusa. Il codice seguente deve essere inserito nelle direttive include e nella funzione **InitInstance** dopo che è stato creato *HWND*.
+Per migliorare l'esperienza di panoramica nell'applicazione, è consigliabile disattivare i gesti rapidi. A tale scopo, impostare le proprietà della finestra sul valore *hWnd* quando viene inizializzato. I valori usati per i gesti rapidi vengono archiviati nell'intestazione tpcshrd.h, che deve anche essere inclusa. Il codice seguente deve essere inserito nelle direttive include e nella **funzione InitInstance** dopo aver creato *hWnd*.
 
 > [!Note]  
-> Questa operazione è utile per le applicazioni che richiedono un feedback immediato su un evento Touch o Pen Down anziché eseguire il test di una soglia di tempo o di distanza.
+> Ciò è utile per le applicazioni che richiedono un feedback immediato su un evento tocco o penna giù invece di eseguire il test per una soglia di tempo o distanza.
 
- 
+ 
 
 
 ```C++
@@ -342,15 +342,15 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow){
 
 ## <a name="customize-the-panning-experience"></a>Personalizzare l'esperienza di panoramica
 
-Per impostazione predefinita, è possibile che si desideri un'esperienza di panoramica diversa da quella offerta da Windows 7. Per migliorare l'esperienza di panoramica, è necessario aggiungere il gestore per il messaggio di [**\_ movimento WM**](wm-gesture.md) . Per ulteriori informazioni, vedere [migliorare l'esperienza di panoramica del Single-Finger](improving-the-single-finger-panning-experience.md).
+Potrebbe essere necessario un'esperienza di panoramica diversa rispetto Windows 7 offerte per impostazione predefinita. Per migliorare l'esperienza di panoramica, è necessario aggiungere il gestore per il [**messaggio WM \_ GESTURE.**](wm-gesture.md) Per altre informazioni, vedere [Improving the Single-Finger Panning Experience](improving-the-single-finger-panning-experience.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Movimenti tocco di Windows](guide-multi-touch-gestures.md)
+[Windows Movimenti tocco](guide-multi-touch-gestures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

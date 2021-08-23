@@ -49,7 +49,7 @@ Specifica l'enumerazione specifica.
 
 </dd> <dt>
 
-*integer-value* 
+*valore intero* 
 </dt> <dd>
 
 Specifica un valore intero costante.
@@ -58,15 +58,15 @@ Specifica un valore intero costante.
 
 ## <a name="remarks"></a>Commenti
 
-**I tipi enum** possono essere visualizzati come identificatori di tipo nelle dichiarazioni [**typedef,**](typedef.md) nelle dichiarazioni generali e nei dichiaratori di funzione (come function-return-type o come identificatore di tipo parametro). Per il contesto in cui vengono visualizzati gli identificatori di tipo, vedere [File di definizione dell'interfaccia (IDL).](interface-definition-idl-file.md)
+**I tipi enum** possono essere visualizzati come identificatori di tipo in dichiarazioni [**typedef,**](typedef.md) dichiarazioni generali e dichiaratori di funzione (come function-return-type o come identificatore di tipo parametro). Per il contesto in cui vengono visualizzati gli identificatori di tipo, vedere [File di definizione dell'interfaccia (IDL).](interface-definition-idl-file.md)
 
-Nella modalità predefinita del compilatore MIDL è possibile assegnare valori integer agli enumeratori. Questa funzionalità non è disponibile quando si esegue la compilazione con [**l'opzione /osf.**](-osf.md) Come per gli enumeratori del linguaggio C, i nomi degli enumeratori devono essere univoci, ma i valori dell'enumeratore non devono essere .
+Nella modalità predefinita del compilatore MIDL è possibile assegnare valori interi agli enumeratori. Questa funzionalità non è disponibile quando si esegue la compilazione con [**l'opzione /osf.**](-osf.md) Come per gli enumeratori in linguaggio C, i nomi degli enumeratori devono essere univoci, ma non è necessario che i valori dell'enumeratore lo siano.
 
-Quando gli operatori di assegnazione non vengono specificati, viene eseguito il mapping degli identificatori a numeri interi consecutivi da sinistra a destra, a partire da zero. Quando vengono forniti operatori di assegnazione, i valori assegnati iniziano dal valore assegnato più di recente.
+Quando gli operatori di assegnazione non vengono specificati, viene eseguito il mapping degli identificatori a numeri interi consecutivi da sinistra a destra, a partire da zero. Quando vengono specificati gli operatori di assegnazione, i valori assegnati iniziano dal valore assegnato più di recente.
 
 Il numero massimo di identificatori è 65.535.
 
-Gli oggetti di tipo **enum** [**sono tipi int**](int.md) e le relative dimensioni dipendono dal sistema. Per impostazione predefinita, gli oggetti di tipi **enum** vengono considerati come oggetti a 16 bit di tipo [**unsigned**](unsigned.md) [**short**](short.md) quando vengono trasmessi in rete. I valori non compreso nell'intervallo 0 -32.767 causano l'eccezione di run-time RPC \_ X \_ ENUM \_ VALUE OUT \_ \_ OF \_ RANGE. Per trasmettere oggetti come entità a 32 bit, applicare l'attributo **\[** [**\_ enum v1**](v1-enum.md) **\]** al typedef **enum.**
+Gli oggetti di **tipo enum** [**sono tipi int**](int.md) e le relative dimensioni dipendono dal sistema. Per impostazione predefinita, gli oggetti **dei tipi enum** vengono considerati come oggetti a 16 bit di tipo [**unsigned**](unsigned.md) [**short**](short.md) quando vengono trasmessi in rete. I valori non compreso nell'intervallo compreso tra 0 e 32.767 causano l'eccezione di run-time RPC \_ X \_ ENUM \_ VALUE OUT \_ \_ OF \_ RANGE. Per trasmettere oggetti come entità a 32 bit, applicare l'attributo **\[** [**\_ enum v1**](v1-enum.md) **\]** al typedef **enum.**
 
 ## <a name="examples"></a>Esempi
 

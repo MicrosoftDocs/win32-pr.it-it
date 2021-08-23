@@ -1,28 +1,28 @@
 ---
-description: In questo argomento viene descritto come verificare che un certificato supporti un metodo di firma specifico.
+description: Questo argomento descrive come verificare che un certificato supporti un metodo di firma specifico.
 ms.assetid: c7a23ace-4e9c-4de2-994e-2aa9c70a30b6
 title: Verificare che un certificato supporti un metodo di firma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27da9ae31c3cf0c4e453a5507d93d1505606e859
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 177859dd78d30ee9f9147cee7ca01311ed95c0733115cd939dde8aa6ec70f5b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098713"
 ---
 # <a name="verify-that-a-certificate-supports-a-signature-method"></a>Verificare che un certificato supporti un metodo di firma
 
-In questo argomento viene descritto come verificare che un certificato supporti un metodo di firma specifico.
+Questo argomento descrive come verificare che un certificato supporti un metodo di firma specifico.
 
-**CryptXmlEnumAlgorithmInfo** nell'API Microsoft Crypto enumera le proprietà di un certificato e viene usato in questo esempio di codice per enumerare i metodi di firma supportati dal certificato. Per usare **CryptXmlEnumAlgorithmInfo** per enumerare i metodi di firma supportati dal certificato, il chiamante deve fornire un metodo di callback e una struttura di dati nella chiamata a **CryptXmlEnumAlgorithmInfo**, consentendo il passaggio di dati al metodo di callback.
+**CryptXmlEnumAlgorithmInfo** nell'API Microsoft Crypto enumera le proprietà di un certificato e viene usato in questo esempio di codice per enumerare i metodi di firma supportati dal certificato. Per usare **CryptXmlEnumAlgorithmInfo** per enumerare i metodi di firma supportati dal certificato, il chiamante deve fornire un metodo di callback e una struttura di dati nella chiamata a **CryptXmlEnumAlgorithmInfo**, consentendo al chiamante di passare dati al metodo di callback.
 
-La struttura dei dati usata nell'esempio di codice successivo presenta i campi seguenti:
+La struttura dei dati usata nell'esempio di codice successivo include i campi seguenti:
 
 | Campo                               | Descrizione                                                                                                                               |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **userSignatureAlgorithmToCheck**   | Campo **LPWSTR** che punta alla stringa che contiene l'URI dell'algoritmo di firma da verificare.                             |
-| **certificateAlgorithmInfo**        | Puntatore a una struttura **di \_ \_ Informazioni OID della Crypt** che contiene informazioni su un algoritmo di firma supportato dal certificato. |
+| **userSignatureAlgorithmToCheck**   | Campo **LPWSTR** che punta alla stringa contenente l'URI dell'algoritmo di firma da controllare.                             |
+| **certificateAlgorithmInfo**        | Puntatore a una **struttura CRYPT \_ OID \_ INFO** che contiene informazioni su un algoritmo di firma supportato dal certificato. |
 | **userSignatureAlgorithmSupported** | Valore **booleano** che indica se l'algoritmo di firma è supportato dal certificato.                                       |
 
 
@@ -41,9 +41,9 @@ struct SignatureMethodData
 
 
 
-Il metodo dell'API Crypto che controlla il certificato usa un metodo di callback per restituire i dati al chiamante. **CryptXmlEnumAlgorithmInfo** enumera i metodi di firma supportati dal certificato e chiama il metodo di callback per ogni metodo di firma finché il metodo di callback non restituisce **false** o finché non vengono enumerati tutti i metodi di firma del certificato.
+Il metodo api Crypto che controlla il certificato usa un metodo di callback per restituire dati al chiamante. **CryptXmlEnumAlgorithmInfo** enumera i metodi di firma supportati dal certificato e chiama il metodo di callback per ogni metodo di firma finché il metodo di callback non restituisce **FALSE** o finché non vengono enumerati tutti i metodi di firma nel certificato.
 
-Il metodo di callback nell'esempio di codice successivo Cerca un metodo di firma passato da **CryptXmlEnumAlgorithmInfo** che corrisponde al metodo di firma fornito dal metodo chiamante. Quando viene trovata una corrispondenza, il metodo di callback controlla se il metodo di firma è supportato anche dal sistema. Se i metodi di firma corrispondono e sono supportati dal sistema, il metodo di firma è contrassegnato come supportato dal sistema e il metodo di callback restituisce **false**.
+Il metodo di callback nell'esempio di codice successivo cerca un metodo di firma passato da **CryptXmlEnumAlgorithmInfo** che corrisponde al metodo di firma fornito dal metodo chiamante. Quando viene trovata una corrispondenza, il metodo di callback verifica se anche il metodo di firma è supportato dal sistema. Se i metodi di firma corrispondono e sono supportati dal sistema, il metodo di firma viene contrassegnato come supportato dal sistema e il metodo di callback restituisce **FALSE.**
 
 
 ```C++
@@ -108,7 +108,7 @@ EnumSignatureMethodCallback (
 
 
 
-Nell'esempio di codice seguente viene eseguito il wrapping della funzionalità di convalida in un singolo metodo. Questo metodo restituisce un valore **booleano** che indica se il certificato supporta il metodo di firma e se il metodo di firma è supportato dal sistema.
+L'esempio di codice seguente esegue il wrapping della funzionalità di convalida in un unico metodo. Questo metodo restituisce un **valore booleano** che indica se il certificato supporta il metodo di firma e se il metodo di firma è supportato dal sistema.
 
 
 ```C++
@@ -184,13 +184,13 @@ SupportsSignatureAlgorithm (
 [**CryptFindOIDInfo**](/windows/desktop/api/wincrypt/nf-wincrypt-cryptfindoidinfo)
 </dt> <dt>
 
-[**\_informazioni Oid \_ crypt**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
+[**INFORMAZIONI \_ SULL'OID CRYPT \_**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
 </dt> <dt>
 
 **CryptXmlEnumAlgorithmInfo**
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
 [API di crittografia](/windows/desktop/SecCrypto/cryptography-portal)
@@ -202,7 +202,7 @@ SupportsSignatureAlgorithm (
 [Errori dell'API firma digitale XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errori del documento XPS](xps-document-errors.md)
+[Errori dei documenti XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

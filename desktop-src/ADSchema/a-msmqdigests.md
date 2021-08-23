@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Digests
-description: Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certificates. Vengono usati per il mapping di un digest in un certificato.
+title: MSMQ-Digests attributo
+description: Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certificates. Vengono usati per eseguire il mapping di un digest in un certificato.
 ms.assetid: a9b03edd-1506-4f2d-afe1-7d953977f6fa
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Digests attribute
+- MSMQ-Digests schema AD dell'attributo
 - Schema AD dell'attributo mSMQDigests
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d51c607b1d99af0aed46f259513f4bcf790844
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dff810ec6cbb8b9d461cec7d349cfb7abd08f1d6e8e330e9b0e1b23e7caefff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081885"
 ---
-# <a name="msmq-digests-attribute"></a>Attributo MSMQ-Digests
+# <a name="msmq-digests-attribute"></a>MSMQ-Digests attributo
 
-Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certificates. Vengono usati per il mapping di un digest in un certificato.
+Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certificates. Vengono usati per eseguire il mapping di un digest in un certificato.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Digests                                          |
-| LDAP-Display-Name | mSMQDigests                                           |
-| Dimensione              | Ogni digest è pari a 16 byte.                              |
-| Privilegio aggiornamento  | \-                                                    |
+| Ldap-Display-Name | mSMQDigests                                           |
+| Dimensione              | Ogni digest è di 16 byte.                              |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.948                                |
-| System-ID-GUID    | 9a0dc33c-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc33c-c100-11d1-bbc5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Matrice di digest dei certificati corrispondenti nell'attributo mSMQ-Sign-Certif
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Falso                                                                                         |
+| Is-Single-Valued       | Falso                                                                                         |
 | Indicizzato             | Vero                                                                                          |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

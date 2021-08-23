@@ -150,7 +150,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Identificatore per la sottoscrizione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Identificatore della sottoscrizione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                        |
 | Type           | string                                                                                                                                                           |
 | Predefinito        | <Generated>                                                                                                                                                |
@@ -182,7 +182,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|---------------------------------------------------------------------------------|
-| Descrizione    | Nome di computer remoto per le sottoscrizioni alle classi di eventi in un computer remoto. |
+| Descrizione    | Nome del computer remoto per le sottoscrizioni alle classi di evento in un computer remoto. |
 | Access         | ReadWrite                                                                       |
 | Type           | string                                                                          |
 | Predefinito        | ""                                                                              |
@@ -198,7 +198,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|----------------------------------------------|
-| Descrizione    | Metodo nell'interfaccia a cui viene effettuata la sottoscrizione. |
+| Descrizione    | Metodo sull'interfaccia da sottoscrivere. |
 | Access         | ReadWrite                                    |
 | Type           | string                                       |
 | Predefinito        | N/A                                          |
@@ -214,7 +214,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome per la sottoscrizione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono privati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome della sottoscrizione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono spogliati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadWrite                                                                                                                                                                                                                          |
 | Type           | string                                                                                                                                                                                                                             |
 | Predefinito        | "Nuova sottoscrizione"                                                                                                                                                                                                                 |
@@ -240,13 +240,13 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
  
 
-### <a name="publisherid"></a>PublisherID
+### <a name="publisherid"></a>PUBLISHERID
 
 
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------|
-| Descrizione    | ID per il server di pubblicazione. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
+| Descrizione    | ID del server di pubblicazione. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
 | Access         | WriteOnce                                                                               |
 | Type           | string                                                                                  |
 | Predefinito        | ""                                                                                      |

@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnRenderStart viene chiamato quando il rendering sta per iniziare.
 ms.assetid: 46af24cf-9075-4ebc-a49b-85f8f0c3da6f
-title: Metodo CBaseRenderer. OnRenderStart (Renbase. h)
+title: Metodo CBaseRenderer.OnRenderStart (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a7838b0ba43c1e570b745541882a2f2f815dd948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 626dc1dbcb82aeec94ebe514e686d197cb17bbdd7807ac38057412617182bf55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157654"
 ---
-# <a name="cbaserendereronrenderstart-method"></a>CBaseRenderer. OnRenderStart, metodo
+# <a name="cbaserendereronrenderstart-method"></a>Metodo CBaseRenderer.OnRenderStart
 
 Il `OnRenderStart` metodo viene chiamato quando il rendering sta per iniziare.
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBaseRenderer:: Render**](cbaserenderer-render.md) chiama questo metodo. Non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override. ad esempio, per raccogliere dati di controllo della qualità.
+Il [**metodo CBaseRenderer::Render**](cbaserenderer-render.md) chiama questo metodo. Non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override; ad esempio per raccogliere dati di controllo qualità.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Il metodo [**CBaseRenderer:: Render**](cbaserenderer-render.md) chiama questo me
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La proprietà ComponentQualifiers è una proprietà di sola lettura che restituisce un oggetto String enumerando il set di qualificatori registrati per il componente specificato.
+description: La proprietà ComponentQualifiers è una proprietà di sola lettura che restituisce un oggetto StringList che enumera il set di qualificatori registrati per il componente specificato.
 ms.assetid: 49b16c9a-ce84-42ff-af1d-f4ecf7dbe23a
-title: Proprietà Installer. ComponentQualifiers
+title: Installer.ComponentQualifiers - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 0e6f58850974eaa2021578f0d56015ea0ef6d9e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff11302b87c144d59129b7041ab75129477e7925b3dd98ce7c740f0c4eda62e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632605"
 ---
-# <a name="installercomponentqualifiers-property"></a>Proprietà Installer. ComponentQualifiers
+# <a name="installercomponentqualifiers-property"></a>Installer.ComponentQualifiers - proprietà
 
-La proprietà **ComponentQualifiers** è una proprietà di sola lettura che restituisce un oggetto [**String**](stringlist-object.md) enumerando il set di qualificatori registrati per il componente specificato.
+La **proprietà ComponentQualifiers** è una proprietà di sola lettura che restituisce un oggetto [**StringList**](stringlist-object.md) che enumera il set di qualificatori registrati per il componente specificato.
 
 Questa proprietà è di sola lettura.
 
@@ -37,11 +37,11 @@ propVal = Installer.ComponentQualifiers
 
 ## <a name="property-value"></a>Valore proprietà
 
-GUID di stringa che rappresenta la categoria di [componenti](publishcomponent-table.md).
+GUID stringa che rappresenta la categoria del [componente](publishcomponent-table.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per enumerare i qualificatori, l'applicazione esegue l'iterazione dell'oggetto [**String**](stringlist-object.md) con un oggetto per ogni costrutto. Poiché i qualificatori non sono ordinati, qualsiasi nuovo qualificatore dispone di un indice arbitrario, ovvero la funzione può restituire qualificatori in qualsiasi ordine.
+Per enumerare i qualificatori, l'applicazione scorre [**l'oggetto StringList**](stringlist-object.md) usando un costrutto For Each. Poiché i qualificatori non sono ordinati, qualsiasi nuovo qualificatore ha un indice arbitrario, ovvero la funzione può restituire qualificatori in qualsiasi ordine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per enumerare i qualificatori, l'applicazione esegue l'iterazione dell'oggetto [
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

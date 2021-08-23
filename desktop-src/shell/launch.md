@@ -56,7 +56,7 @@ I verbi disponibili comunemente includono:
 
 
 
-Ogni verbo corrisponde al comando che verrebbe usato per avviare l'applicazione da una finestra della console. Il **verbo** aperto è un buon esempio, in quanto è comunemente supportato. Per .exe file, **aprire semplicemente** avvia l'applicazione. Tuttavia, viene usato più comunemente per avviare un'applicazione che opera su un determinato file. Ad esempio, .txt file possono essere aperti da Microsoft WordPad. Il **verbo** aperto per un file .txt corrisponderebbe quindi a un elemento simile al comando seguente:
+Ogni verbo corrisponde al comando che verrebbe usato per avviare l'applicazione da una finestra della console. Il **verbo** aperto è un buon esempio, in quanto è comunemente supportato. Per .exe file, **aprire semplicemente** avvia l'applicazione. Tuttavia, viene usato più comunemente per avviare un'applicazione che opera su un determinato file. Ad esempio, .txt file possono essere aperti da Microsoft WordPad. Il **verbo** aperto per un .txt file corrisponderebbe quindi a un elemento simile al comando seguente:
 
 
 ```C++
@@ -158,9 +158,9 @@ main()
 
 
 
-L'applicazione recupera innanzitutto il file PIDL della directory Windows ed enumera il relativo contenuto finché non trova il primo file .bmp. A differenza dell'esempio precedente, [**IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) viene usato per recuperare il nome di analisi del file anziché il nome visualizzato. Poiché si tratta di file system, il nome dell'analisi è un percorso completo, necessario per [**ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)
+L'applicazione recupera innanzitutto il file PIDL della directory Windows ed enumera il relativo contenuto fino a quando non trova il primo file .bmp. A differenza dell'esempio precedente, [**IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) viene usato per recuperare il nome di analisi del file anziché il nome visualizzato. Poiché si tratta di file system, il nome di analisi è un percorso completo, necessario per [**ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)
 
-Dopo aver individuato il .bmp file, i valori appropriati vengono assegnati ai membri di una [**struttura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) Il **membro lpFile** è impostato sul nome di analisi del file e il membro **lpVerb** su **NULL** per iniziare l'operazione predefinita. In questo caso, l'operazione predefinita è "open". La struttura viene quindi passata [**a ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)che avvia il gestore predefinito per i file bitmap, in genere MSPaint.exe, per aprire il file. Al termine della funzione, gli PID vengono liberati e Windows'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) della cartella.
+Dopo aver individuato .bmp file di dati, i valori appropriati vengono assegnati ai membri di una [**struttura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) Il **membro lpFile** è impostato sul nome di analisi del file e il membro **lpVerb** su **NULL** per iniziare l'operazione predefinita. In questo caso, l'operazione predefinita è "open". La struttura viene quindi passata [**a ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa)che avvia il gestore predefinito per i file bitmap, in genere MSPaint.exe, per aprire il file. Al termine della funzione, gli PID vengono liberati e Windows'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) della cartella.
 
  
 

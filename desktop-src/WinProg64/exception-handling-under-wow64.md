@@ -19,7 +19,7 @@ In un'applicazione in esecuzione in una versione a 32 bit di Windows, le eccezio
 
 **Windows Vista, Windows Server 2003 e Windows XP:** Nella stessa applicazione a 32 bit in esecuzione in WOW64, il sistema chiama i filtri delle eccezioni, ma può eliminare le eccezioni non rilevate senza richiamare i gestori associati. Questo comportamento è cambiato a partire da Windows Vista con Service Pack 1 (SP1).
 
-Per altre informazioni sulle eccezioni non rilevate nelle procedure di finestra, vedere la [funzione WindowProc.](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Per altre informazioni sulle eccezioni non rilevate nelle routine della finestra, vedere la [funzione WindowProc.](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
  
 

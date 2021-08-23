@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 8ed659efe388f4eb9c9ac8afd6aa2c74fd0af7d3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c2b5187ab0afb432e845c74d29144c02edf94cdb62f291ae69e88ea5a5fdf198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063871"
 ---
 # <a name="irtcgettotalstatistics-method"></a>Metodo IRTC::GetTotalStatistics
 
@@ -65,8 +65,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere il NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | Il NPP è connesso alla rete, ma non con il [metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IRTC::Connessione](irtc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>  | Il NPP è connesso alla rete, ma non con il [metodo IRTC::Connessione.](irtc-connect.md)<br/>                     |
 | <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl> | Il NPP non acquisisce dati. Chiamare [IRTC::Start per](irtc-start.md) avviare l'acquisizione dei dati.<br/>                         |
 
 
@@ -77,7 +77,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 Questo metodo restituisce i dati solo mentre è in corso un'acquisizione, incluso mentre l'acquisizione è sospesa.
 
-Network Monitor archivia anche le [*statistiche della conversazione.*](c.md) Per recuperare le statistiche della conversazione, chiamare il [metodo IRTC::GetConversationStatistics.](irtc-getconversationstatistics.md)
+Network Monitor archivia anche le [*statistiche di conversazione*](c.md). Per recuperare le statistiche della conversazione, chiamare [il metodo IRTC::GetConversationStatistics.](irtc-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,7 +99,7 @@ Network Monitor archivia anche le [*statistiche della conversazione.*](c.md) Per
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC::Connect](irtc-connect.md)
+[IRTC::Connessione](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::GetConversationStatistics](irtc-getconversationstatistics.md)

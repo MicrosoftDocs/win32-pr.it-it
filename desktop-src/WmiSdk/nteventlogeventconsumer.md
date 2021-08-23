@@ -177,7 +177,7 @@ Evento di informazioni
 
 </dt> <dd>
 
-Tipo di controllo dell'esito positivo
+Tipo di controllo operazione riuscita
 
 </dd> <dt>
 
@@ -331,7 +331,7 @@ La **classe NTEventLogEventConsumer** deriva dalla [**\_ \_ classe astratta Even
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di utilizzo di **NTEventLogEventConsumer** per creare un consumer, vedere Registrazione nel registro eventi [NT in base a un evento](logging-to-nt-event-log-based-on-an-event.md).
+Per un esempio dell'uso **di NTEventLogEventConsumer** per creare un consumer, vedere Registrazione nel registro eventi [NT in base a un evento](logging-to-nt-event-log-based-on-an-event.md).
 
 ## <a name="requirements"></a>Requisiti
 

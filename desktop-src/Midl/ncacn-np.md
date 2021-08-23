@@ -1,9 +1,9 @@
 ---
-title: attributo ncacn_np
-description: La \_ parola chiave ncacn NP identifica le named pipe come famiglia di protocolli per l'endpoint.
+title: ncacn_np attributo
+description: La parola chiave np ncacn \_ identifica le named pipe come famiglia di protocolli per l'endpoint.
 ms.assetid: 02961bb8-faf0-42e5-b134-dd2983e6d146
 keywords:
-- attributo ncacn_np MIDL
+- ncacn_np attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84634e6bb5d2b634439be767ad44749291cffe11
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a7acf294241c1d38b2067ba54e315fc3240e5bb6eca81a6b12012f8dec457a8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103726735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013759"
 ---
-# <a name="ncacn_np-attribute"></a>\_attributo NP ncacn
+# <a name="ncacn_np-attribute"></a>Attributo \_ np ncacn
 
-La parola chiave **ncacn \_ NP** identifica le named pipe come famiglia di protocolli per l'endpoint.
+La **parola chiave \_ np ncacn** identifica le named pipe come famiglia di protocolli per l'endpoint.
 
 ``` syntax
 endpoint("ncacn_np:server-name[\\pipe\\pipe-name]")
@@ -31,25 +31,25 @@ endpoint("ncacn_np:server-name[\\pipe\\pipe-name]")
 
 <dl> <dt>
 
-*nome server* 
+*server-name* 
 </dt> <dd>
 
 facoltativo. Specifica il nome del server. I caratteri barra rovesciata sono facoltativi.
 
 </dd> <dt>
 
-*Nome pipe* 
+*pipe-name* 
 </dt> <dd>
 
-Specifica un nome di pipe valido. Un nome di pipe valido è una stringa contenente gli identificatori separati da una barra rovesciata. Il primo identificatore deve essere [**pipe**](pipe.md). Ogni identificatore deve essere separato da due caratteri di barra rovesciata.
+Specifica un nome di pipe valido. Un nome di pipe valido è una stringa contenente identificatori separati da caratteri barra rovesciata. Il primo identificatore deve essere [**pipe**](pipe.md). Ogni identificatore deve essere separato da due barre rovesciate.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Un server crea un'istanza di un named pipe che è quindi disponibile per tutti i client. Quando un client tenta di connettersi, l'istanza esistente è associata a tale client. Prima che un altro client possa connettersi, il server deve creare un'altra istanza del named pipe. Se un client tenta di eseguire l'associazione al server prima della creazione della nuova istanza, la chiamata di binding, [**errore in RpcBindingFromStringBinding**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcbindingfromstringbinding), potrebbe non riuscire e il server RPC del messaggio di errore è \_ \_ \_ troppo \_ occupato. Pertanto, è necessario assicurarsi che l'applicazione client gestisca il caso in cui il server è troppo occupato per accettare una connessione. Il client deve riprovare automaticamente, richiedere all'utente una linea di condotta o non riuscire normalmente.
+Un server crea un'istanza di un named pipe che è quindi disponibile per qualsiasi client. Quando un client tenta di connettersi, l'istanza esistente viene associata a tale client. Prima che un altro client possa connettersi, il server deve creare un'altra istanza del named pipe. Se un client tenta di eseguire l'associazione al server prima della creazione della nuova istanza, la chiamata di associazione [**RpcBindingFromStringBinding**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcbindingfromstringbinding)potrebbe non riuscire con il messaggio di errore RPC \_ S SERVER TOO \_ \_ \_ BUSY. È quindi necessario assicurarsi che l'applicazione client gestisca il caso in cui il server è troppo occupato per accettare una connessione. Il client deve riprovare automaticamente, richiedere all'utente un corso di azione o non riuscire correttamente.
 
-La sintassi della stringa della porta named pipe, come tutte le stringhe di porta, viene definita dall'implementazione del trasporto ed è indipendente dalla specifica IDL. Il compilatore MIDL esegue un controllo della sintassi limitato, ma non garantisce che la specifica dell'endpoint sia corretta. Alcune classi di errori possono essere segnalate in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa di porta named pipe, come tutte le stringhe di porta, è definita dall'implementazione del trasporto ed è indipendente dalla specifica IDL. Il compilatore MIDL esegue un controllo della sintassi limitato, ma non garantisce che la specifica dell'endpoint sia corretta. Alcune classi di errori possono essere segnalate in fase di esecuzione anziché in fase di compilazione.
 
 ## <a name="examples"></a>Esempi
 
@@ -79,48 +79,48 @@ interface iface2
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ in \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ in \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ DNET \_ NSP**](ncacn-dnet-nsp.md)
+[**ncacn \_ dnet \_ nsp**](ncacn-dnet-nsp.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ IPX**](ncacn-nb-ipx.md)
+[**ncacn \_ nb \_ ipx**](ncacn-nb-ipx.md)
 </dt> <dt>
 
-[**\_SPX ncacn**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ NB**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ le reti virtuali \_ spp**](ncacn-vns-spp.md)
+[**ncacn \_ vns \_ spp**](ncacn-vns-spp.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
-[**\_UDP IP \_ ncadg**](ncadg-ip-udp.md)
+[**ncadg \_ ip \_ udp**](ncadg-ip-udp.md)
 </dt> <dt>
 
-[**Associazione stringa**](/windows/desktop/Rpc/string-binding)
+[**associazione di stringhe**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

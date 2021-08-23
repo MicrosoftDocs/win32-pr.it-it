@@ -74,12 +74,12 @@ Nella tabella seguente sono elencati i messaggi di errore LDAP per ADSI.
 | 0x8007203cL      | **ERRORE \_ DI CODIFICA \_ LDAP**              | **ERRORE \_ DI CODIFICA DS \_ \_**              | Si è verificato un errore di codifica.                         |
 | 0x8007203dL      | **ERRORE \_ DI DECODIFICA \_ LDAP**              | **ERRORE \_ DI DECODIFICA DS \_ \_**              | Si è verificato un errore di decodifica.                         |
 | 0x8007203eL      | **ERRORE \_ DEL FILTRO \_ LDAP**                | **ERRORE \_ DS \_ FILTER \_ UNKNOWN**              | Il filtro di ricerca non è stato applicato.                        |
-| 0x8007203fL      | **ERRORE \_ DEL PARAMETRO \_ LDAP**                 | **ERRORE \_ DS \_ PARAM \_ ERROR**                 | A una funzione è stato passato un parametro non valido.        |
+| 0x8007203fL      | **ERRORE \_ DEL PARAMETRO \_ LDAP**                 | **ERRORE \_ DS \_ PARAM \_ ERROR**                 | È stato passato un parametro non valido a una funzione.        |
 | 0x80072040L      | **LDAP \_ NON \_ SUPPORTATO**               | **ERRORE \_ DS \_ NON \_ SUPPORTATO**               | Funzionalità non supportata.                           |
 | 0x80072041L      | **LDAP \_ NON \_ HA \_ RESTITUITO RISULTATI**        | **ERRORE \_ DS \_ NESSUN RISULTATO \_ \_ RESTITUITO**        | I risultati non vengono restituiti.                        |
 | 0x80072042L      | **CONTROLLO \_ LDAP \_ NON \_ TROVATO**          | **ERRORE \_ DEL CONTROLLO DS NON \_ \_ \_ TROVATO**          | Controllo non trovato.                           |
 | 0x80072043L      | **CICLO \_ CLIENT \_ LDAP**                 | **CICLO \_ CLIENT DS \_ \_ ERRORE**                 | È stato rilevato un ciclo client.                        |
-| 0x80072044L      | **LIMITE \_ DI \_ \_ SEGNALAZIONI LDAP SUPERATO**    | **LIMITE \_ DI SEGNALAZIONE DS \_ DI ERRORE \_ \_ SUPERATO**    | Superato il limite di segnalazioni.                         |
+| 0x80072044L      | **LIMITE \_ DI \_ \_ SEGNALAZIONI LDAP SUPERATO**    | **LIMITE \_ SEGNALAZIONE DS \_ DI ERRORE \_ \_ SUPERATO**    | Superato il limite di segnalazioni.                         |
 
 
 

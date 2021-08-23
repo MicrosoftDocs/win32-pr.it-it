@@ -3,7 +3,7 @@ title: LVM_GETORIGIN messaggio (Commctrl.h)
 description: Recupera l'origine della visualizzazione corrente per un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetOrigin.
 ms.assetid: 913c8339-fbe4-43c8-a997-5a972920dc3b
 keywords:
-- LVM_GETORIGIN dei messaggi Windows controlli
+- LVM_GETORIGIN di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:

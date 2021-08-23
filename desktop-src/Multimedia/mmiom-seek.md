@@ -1,9 +1,9 @@
 ---
-title: Messaggio MMIOM_SEEK (mmsystem. h)
-description: Il \_ messaggio MMIOM Seek viene inviato a una routine di i/O dalla funzione mmioSeek per richiedere che la posizione corrente del file venga spostata.
+title: MMIOM_SEEK messaggio (Mmsystem.h)
+description: Il messaggio MMIOM SEEK viene inviato a una procedura di I/O dalla funzione mmioSeek per richiedere lo spostamento della posizione \_ corrente del file.
 ms.assetid: 428b231a-6e00-4458-9ba2-e9b0b028843a
 keywords:
-- MMIOM_SEEK messaggi multimediali di Windows
+- MMIOM_SEEK di messaggi Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4855ec4e610f1456e1bf26ee05800e31933f05fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ea33db15de3a4617561c437f2d5086afbf4bff2155e657677b171b1413b1c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065301"
 ---
-# <a name="mmiom_seek-message"></a>\_Messaggio MMIOM seek
+# <a name="mmiom_seek-message"></a>Messaggio MMIOM \_ SEEK
 
-Il messaggio **MMIOM \_ Seek** viene inviato a una routine di i/O dalla funzione [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) per richiedere che la posizione corrente del file venga spostata.
+Il **messaggio MMIOM \_ SEEK** viene inviato a una procedura di I/O dalla funzione [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) per richiedere lo spostamento della posizione corrente del file.
 
 
 ```C++
@@ -54,9 +54,9 @@ Flag che specifica la modalità di modifica della posizione del file. Vengono de
 
 | Requisito | Valore |
 |-----------|------------------------------------------------------------------------------------------------------------------------|
-| Cerca \_ cur | Spostare la posizione del file in *lNewFilePos* byte dalla posizione corrente. *lNewFilePos* può essere positivo o negativo. |
-| \_fine ricerca | Spostare la posizione del file in *lNewFilePos* byte dalla fine del file.                                             |
-| SET di ricerca \_ | Spostare la posizione del file in *lNewFilePos* i byte dall'inizio del file.                                       |
+| SEEK \_ CUR | Spostare la posizione del file in *byte lNewFilePos* dalla posizione corrente. *lNewFilePos* può essere positivo o negativo. |
+| SEEK \_ END | Spostare la posizione del file in *byte lNewFilePos* dalla fine del file.                                             |
+| SEEK \_ SET | Spostare la posizione del file in *byte lNewFilePos* dall'inizio del file.                                       |
 
 
 
@@ -70,7 +70,7 @@ Restituisce la nuova posizione del file. Se si verifica un errore, il valore res
 
 ## <a name="remarks"></a>Commenti
 
-La procedura di I/O è responsabile della gestione della posizione corrente del file nel membro **lDiskOffset** della struttura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) .
+La procedura di I/O è responsabile della gestione della posizione del file corrente nel membro **lDiskOffset** della [**struttura MMIOINFO.**](/previous-versions//dd757322(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ La procedura di I/O è responsabile della gestione della posizione corrente del 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

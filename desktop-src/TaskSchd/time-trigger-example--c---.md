@@ -1,48 +1,48 @@
 ---
-title: Esempio di trigger time (C++)
-description: In questo esempio di C++ viene illustrato come creare un'attività pianificata per l'esecuzione del blocco note a un'ora specificata.
+title: Esempio di trigger temporale (C++)
+description: In questo esempio C++ viene illustrato come creare un'attività pianificata per l'Blocco note all'ora specificata.
 ms.assetid: e45b18b0-5a7f-4283-b42f-15e9ffcfaff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f7f8d3c8bd1f179b0def9be069d710a2e126a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 227d6fe24aa63b430376a7ce50d23b4b8ecd282f807315384b42175b9903d1b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059651"
 ---
-# <a name="time-trigger-example-c"></a>Esempio di trigger time (C++)
+# <a name="time-trigger-example-c"></a>Esempio di trigger temporale (C++)
 
-In questo esempio di C++ viene illustrato come creare un'attività pianificata per l'esecuzione del blocco note a un'ora specificata. L'attività contiene un trigger basato sul tempo che specifica un limite iniziale e un limite finale per l'attività. L'attività contiene anche un'azione che specifica l'attività per l'esecuzione del blocco note. L'attività viene registrata utilizzando un tipo di accesso interattivo, ovvero l'attività viene eseguita nel contesto di sicurezza dell'utente che esegue l'applicazione. L'attività contiene anche impostazioni inattive, che specificano il modo in cui Utilità di pianificazione esegue le attività quando il computer si trova in una condizione di inattività.
+In questo esempio C++ viene illustrato come creare un'attività pianificata per l'Blocco note all'ora specificata. L'attività contiene un trigger basato sul tempo che specifica un limite di inizio e un limite finale per l'attività. L'attività contiene anche un'azione che specifica l'attività da eseguire Blocco note. L'attività viene registrata usando un tipo di accesso interattivo, ovvero l'attività viene eseguita nel contesto di sicurezza dell'utente che esegue l'applicazione. L'attività contiene anche le impostazioni di inattività, che specificano Utilità di pianificazione attività quando il computer è in una condizione di inattività.
 
 Nella procedura seguente viene descritto come pianificare un'attività per avviare un eseguibile in un determinato momento.
 
-**Per pianificare l'avvio del blocco note a un'ora specifica**
+**Per pianificare Blocco note l'avvio a un'ora specifica**
 
-1.  Inizializzare COM e impostare la sicurezza generale COM.
-2.  Creare l'oggetto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inizializzare COM e impostare la sicurezza COM generale.
+2.  Creare [**l'oggetto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Questo oggetto consente di creare attività in una cartella specificata.
 
-3.  Ottenere una cartella attività per la creazione di un'attività in.
+3.  Ottiene una cartella di attività in cui creare un'attività.
 
-    Usare il metodo [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService:: newTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Usare il [**metodo ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) per ottenere la cartella e il metodo [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) per creare [**l'oggetto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Definire le informazioni sull'attività usando l'oggetto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , ad esempio le informazioni di registrazione per l'attività.
+4.  Definire le informazioni sull'attività usando [**l'oggetto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) ad esempio le informazioni di registrazione per l'attività.
 
-    Utilizzare la [**Proprietà RegistrationInfo di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
+    Usare la [**proprietà RegistrationInfo di ITaskDefinition e**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) altre proprietà dell'interfaccia [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) per definire le informazioni sull'attività.
 
-5.  Creare un trigger basato sul tempo usando la [**Proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) per l'attività.
+5.  Creare un trigger basato sul tempo usando la [**proprietà Triggers di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) per accedere a [**ITriggerCollection per**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) l'attività.
 
-    Usare il metodo [**ITriggerCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (specificando il tipo di trigger che si vuole creare) per creare un trigger basato sul tempo. Questo consente di impostare il limite iniziale e il limite finale per il trigger in modo che le azioni dell'attività verranno pianificate per l'esecuzione a un'ora specificata.
+    Usare il [**metodo ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (che specifica il tipo di trigger da creare) per creare un trigger basato sul tempo. In questo modo è possibile impostare il limite iniziale e il limite finale per il trigger in modo che le azioni dell'attività verranno pianificate per l'esecuzione a un'ora specificata.
 
-6.  Creare un'azione per l'attività da eseguire usando la [**Proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere all'interfaccia [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
+6.  Creare un'azione per l'attività da eseguire usando la [**proprietà Actions di ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) per accedere [**all'interfaccia IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) per l'attività.
 
-    Usare il metodo [**IActionCollection:: create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. In questo esempio viene utilizzato un oggetto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , che rappresenta un'azione che esegue un'operazione della riga di comando.
+    Usare il [**metodo IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) per specificare il tipo di azione che si vuole creare. Questo esempio usa un [**oggetto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) che rappresenta un'azione che esegue un'operazione della riga di comando.
 
-7.  Registrare l'attività usando il metodo [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registrare l'attività [**usando il metodo ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-Nell'esempio C++ riportato di seguito viene illustrato come pianificare un'attività per eseguire il blocco note un minuto dopo la registrazione dell'attività.
+Nell'esempio C++ seguente viene illustrato come pianificare un'attività da eseguire Blocco note minuto dopo la registrazione dell'attività.
 
 
 ```C++
@@ -415,12 +415,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Utilizzo del lettore
-description: Utilizzo del lettore
+title: Uso del lettore
+description: Uso del lettore
 ms.assetid: 27aff735-2142-4506-b9d0-2c0fbe60fd6b
 keywords:
-- Windows Media Player Skin, attributo Player in JScript
-- interfacce, attributo Player in JScript
+- Windows Media Player, attributo player in JScript
+- skins,player attribute in JScript
 - attributi, lettore
-- attributo Player
-- File JScript per interfacce, attributo Player
+- Attributo player
+- JScript per le interfaccia, attributo player
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d47ea74b4c91f92ef33106e40e9896b98de6a34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77098f161244488d5097d2d022f105628a43ba50a40218da01295d99f2de0cd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566983"
 ---
-# <a name="working-with-the-player"></a>Utilizzo del lettore
+# <a name="working-with-the-player"></a>Uso del lettore
 
-Quando si utilizza Microsoft JScript per accedere ai metodi e alle proprietà di Media Player di Windows, è necessario utilizzare il nome "Player" per il nome del controllo. Per fare riferimento al metodo Stop, ad esempio, è necessario digitare quanto segue:
+Quando si usa Microsoft JScript per accedere ai metodi e alle proprietà di Windows Media Player, è necessario usare il nome "player" come nome del controllo. Ad esempio, per fare riferimento al metodo Stop, è necessario digitare:
 
 
 ```C++
@@ -29,18 +29,18 @@ player.Controls.Stop()
 
 
 
-L'attributo globale **Player** è la chiave per accedere al controllo Media Player Windows tramite lo script dell'interfaccia. Tramite questo attributo, tutti gli oggetti del controllo Media Player di Windows diventano accessibili per la modifica in fase di esecuzione tramite le proprietà e i metodi. Inoltre, l'elemento **Player** è disponibile, in modo che sia possibile specificare i gestori eventi e l'attributo **URL** in fase di progettazione.
+**L'attributo globale** del lettore è la chiave per accedere al controllo Windows Media Player tramite script dell'interfaccia. Tramite questo attributo, tutti gli oggetti del controllo Windows Media Player diventano accessibili per la modifica in fase di esecuzione tramite le relative proprietà e metodi. Inoltre, **l'elemento PLAYER** è disponibile in modo che sia possibile specificare i gestori eventi e l'attributo **url** in fase di progettazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Utilizzo di JScript**](using-jscript.md)
+[**Uso di JScript**](using-jscript.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

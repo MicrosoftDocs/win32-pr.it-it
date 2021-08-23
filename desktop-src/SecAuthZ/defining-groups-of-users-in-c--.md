@@ -1,30 +1,30 @@
 ---
-description: In Gestione autorizzazioni, un oggetto IAzApplicationGroup rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati a questo gruppo di utenti collettivamente.
+description: In Gestione autorizzazioni un oggetto IAzApplicationGroup rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati collettivamente a questo gruppo di utenti.
 ms.assetid: 13950da1-b04f-4346-b216-9713cbdcd5b5
 title: Definizione di gruppi di utenti in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e1b4931d3b35658539284305e98096d7ecfc891
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fde349dcf5a877490d85917247cf7fba3480143d87d92afb1b8eb2017030e71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118914037"
 ---
 # <a name="defining-groups-of-users-in-c"></a>Definizione di gruppi di utenti in C++
 
-In Gestione autorizzazioni, un oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati a questo gruppo di utenti collettivamente. Un oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) può includere anche altri oggetti **IAzApplicationGroup** come membri. Per ulteriori informazioni sui gruppi di applicazioni, vedere [utenti e gruppi](users-and-groups.md).
+In Gestione autorizzazioni un [**oggetto IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati collettivamente a questo gruppo di utenti. Un [**oggetto IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) può includere anche altri **oggetti IAzApplicationGroup** come membri. Per altre informazioni sui gruppi di applicazioni, vedere [Utenti e gruppi.](users-and-groups.md)
 
-Un gruppo può essere definito da elenchi espliciti di membri e non membri oppure da una query LDAP ( [*Lightweight Directory Access Protocol*](/windows/desktop/SecGloss/l-gly) ). Negli esempi seguenti viene illustrato come creare ogni tipo di gruppo di applicazioni:
+Un gruppo può essere definito da elenchi espliciti di membri e non membri o da una query [*Lightweight Directory Access Protocol*](/windows/desktop/SecGloss/l-gly) (LDAP). Gli esempi seguenti illustrano come creare ogni tipo di gruppo di applicazioni:
 
 -   [Creazione di un gruppo di base](#creating-a-basic-group)
 -   [Creazione di un gruppo di query LDAP](#creating-an-ldap-query-group)
 
 ## <a name="creating-a-basic-group"></a>Creazione di un gruppo di base
 
-Un gruppo di applicazioni di base viene definito dai membri inclusi nelle proprietà [**membri**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members) e non [**membri**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers) dell'oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) che rappresenta il gruppo. Gli utenti e i gruppi elencati nella proprietà **membri** sono inclusi nel gruppo di applicazioni e gli utenti e i gruppi elencati nella proprietà non **membri** vengono esclusi dal gruppo di applicazioni. L'elenco nella proprietà non **Members** sostituisce l'elenco nella proprietà **Members** .
+Un gruppo di applicazioni di base viene definito dai membri inclusi nelle proprietà [**Members**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members) e [**NonMembers**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers) dell'oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) che rappresenta il gruppo. Gli utenti e  i gruppi elencati nella proprietà Membri sono inclusi nel gruppo di applicazioni e gli utenti e i gruppi elencati nella proprietà **NonMembers** vengono esclusi dal gruppo di applicazioni. L'elenco nella **proprietà NonMembers** sostituisce l'elenco nella **proprietà Members.**
 
-Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni di base e come aggiungere tutti gli utenti locali come membri del gruppo. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni di base e aggiungere tutti gli utenti locali come membri di tale gruppo. Nell'esempio si presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```C++
@@ -119,9 +119,9 @@ void MyHandleError(char *s)
 
 ## <a name="creating-an-ldap-query-group"></a>Creazione di un gruppo di query LDAP
 
-Un gruppo di query LDAP ha un'appartenenza definita dalla query contenuta nel valore della relativa proprietà [**LdapQuery**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery) .
+Un gruppo di query LDAP ha un'appartenenza definita dalla query contenuta nel valore della [**relativa proprietà LdapQuery.**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)
 
-Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni di query LDAP e come aggiungere tutti gli utenti come membri di tale gruppo. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+L'esempio seguente illustra come creare un gruppo di applicazioni di query LDAP e aggiungere tutti gli utenti come membri di tale gruppo. Nell'esempio si presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```C++

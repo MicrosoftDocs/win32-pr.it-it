@@ -99,16 +99,16 @@ Il diagramma seguente illustra questo processo. Il tempo è espresso in modo lin
 
 ![processo per la riconcilezione delle modifiche dello stato del documento durante l'operazione di analisi](images/6323e0b5-b6b3-4adc-8c73-da3fad5b4bc2.jpg)
 
-1.  All'ora 1 (t1), l'applicazione sta raccogliendo input penna dall'utente finale, inclusa qualsiasi modifica dell'input penna, ad esempio aggiunta, rimozione o modifica.
-2.  A t2, l'applicazione richiama l'operazione di analisi in background. [**InkAnalyzer determina**](inkanalyzer.md) quale input penna non ha risultati e quale input penna deve essere controllato di nuovo. Copia i dati di input penna necessari per consentire l'esecuzione indipendente del thread in background.
-3.  A t3, [**InkAnalyzer restituisce**](inkanalyzer.md) l'esecuzione del thread dell'interfaccia utente all'applicazione. **InkAnalyzer crea** un secondo thread, il thread di analisi in background e i motori di analisi e riconoscimento dell'input penna analizzano i dati dell'input penna copiati.
+1.  Al momento 1 (t1), l'applicazione sta raccogliendo input penna dall'utente finale, inclusa qualsiasi modifica dell'input penna, ad esempio aggiunta, rimozione o modifica.
+2.  In t2, l'applicazione richiama l'operazione di analisi in background. [**InkAnalyzer**](inkanalyzer.md) determina quale input penna non ha risultati e quale input penna deve essere controllato due volte. Copia i dati dell'input penna necessari per consentire l'esecuzione indipendente del thread in background.
+3.  In corrispondenza di t3, [**InkAnalyzer**](inkanalyzer.md) restituisce l'esecuzione del thread dell'interfaccia utente all'applicazione. **InkAnalyzer** crea un secondo thread, il thread di analisi in background e i motori di analisi e riconoscimento dell'input penna analizzano i dati dell'input penna copiati.
 4.  Mentre l'operazione di analisi viene eseguita nel secondo thread in background, l'utente finale continua a modificare il documento, aggiungendo e rimuovendo i dati del tratto, in corrispondenza di t4 e t5. Queste modifiche possono essere in conflitto con il lavoro in corso di elaborazione in background.
 5.  A t6, il thread in background ha completato l'operazione di analisi e i risultati sono pronti. Prima che [**InkAnalyzer**](inkanalyzer.md) comunichi i risultati all'applicazione, esegue un algoritmo di riconciliazione per determinare se le modifiche apportate dall'utente durante il calcolo dell'operazione di analisi (t4 e t5) sono in conflitto con i risultati. Se vengono rilevate collisioni, i tratti in conflitto vengono contrassegnati per la nuova analisi, che si verifica alla successiva chiamata dell'operazione di analisi in background da parte dell'applicazione.
 6.  Infine, a t7, con tutte le collisioni rilevate, [**InkAnalyzer**](inkanalyzer.md) presenta i risultati all'applicazione.
 
 ### <a name="extensibility"></a>Estendibilità
 
-Le API InkAnalysis consentono l'uso di nuovi tipi di motori di analisi da parte delle applicazioni, in modo da impedire all'applicazione di dover riscrivere tutti i vantaggi dell'API InkAnalysis, tra cui riconciliazione, proxy dei dati, persistenza e analisi incrementale.
+Le API InkAnalysis consentono l'uso di nuovi tipi di motori di analisi da parte delle applicazioni, in modo da impedire all'applicazione di dover riscrivere tutti i vantaggi dell'API InkAnalysis, tra cui riconciliazione, proxy di dati, persistenza e analisi incrementale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -117,7 +117,7 @@ Le API InkAnalysis consentono l'uso di nuovi tipi di motori di analisi da parte 
 [Microsoft.Ink](/previous-versions/dotnet/netframework-3.5/ms581553(v=vs.90))
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

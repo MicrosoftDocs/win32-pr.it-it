@@ -25,7 +25,7 @@ ms.locfileid: "118720917"
 Estende [**l'oggetto IShellDispatch2.**](ishelldispatch2-object.md) **IShellDispatch3** supporta un nuovo metodo oltre alle proprietà e ai metodi supportati da **IShellDispatch2.**
 
 > [!Note]  
-> **IShellDispatch3 viene implementato** e accessibile tramite l'oggetto [**Shell.**](shell.md)
+> **IShellDispatch3 viene** implementato e accessibile tramite [**l'oggetto Shell.**](shell.md)
 
  
 
@@ -37,13 +37,13 @@ Estende [**l'oggetto IShellDispatch2.**](ishelldispatch2-object.md) **IShellDisp
 
 ### <a name="methods"></a>Metodi
 
-**L'oggetto IShellDispatch3** dispone di questi metodi.
+Questi metodi sono disponibili nell'oggetto **IShellDispatch3.**
 
 
 
 | Metodo                                             | Descrizione                                                  |
 |:---------------------------------------------------|:-------------------------------------------------------------|
-| [**AddToRecent**](ishelldispatch3-addtorecent.md) | Aggiunge un file all'elenco degli elementi usati più di recente.<br/> |
+| [**AddToRecent**](ishelldispatch3-addtorecent.md) | Aggiunge un file all'elenco MRU (Most Recently Used).<br/> |
 
 
 
@@ -60,7 +60,7 @@ Per una descrizione dei Windows, vedere la documentazione [relativa ai](../servi
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |
@@ -74,7 +74,7 @@ Per una descrizione dei Windows, vedere la documentazione [relativa ai](../servi
 [**Idispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Oggetto shell**](shell.md)
+[**Oggetto Shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

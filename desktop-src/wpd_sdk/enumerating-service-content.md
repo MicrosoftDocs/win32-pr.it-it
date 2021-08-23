@@ -4,12 +4,12 @@ ms.assetid: 4af4201c-d3f6-4630-91ec-6509c51871a5
 title: Enumerazione del contenuto del servizio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b701bdab867e96bc9658e2624ea18aa65dfc33
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: bd9846565b7cdc4b0a4475cb99806b671452dcbe134e40d4b1e3d70df249c510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083565"
 ---
 # <a name="enumerating-service-content"></a>Enumerazione del contenuto del servizio
 
@@ -70,7 +70,7 @@ void EnumerateAllContent(
 
 
 
-Il codice seguente corrisponde al **metodo RecursiveEnumerate.** Il metodo RecursiveEnumerate crea un'istanza di un'interfaccia **IEnumPortableDeviceObjectIDs** per l'oggetto padre fornito e chiama **IEnumPortableDeviceObjectIDs::Next**, recuperando un batch di oggetti figlio immediati. Per ogni oggetto figlio, RecursiveEnumerate viene chiamato di nuovo per restituire i relativi oggetti figlio discendenti e così via.
+Il codice seguente corrisponde al **metodo RecursiveEnumerate.** Il metodo RecursiveEnumerate crea un'istanza di un'interfaccia **IEnumPortableDeviceObjectIDs** per l'oggetto padre fornito e chiama **IEnumPortableDeviceObjectIDs::Next**, recuperando un batch di oggetti figlio immediati. Per ogni oggetto figlio, recursiveEnumerate viene chiamato nuovamente per restituire i relativi oggetti figlio discendenti e così via.
 
 
 ```C++

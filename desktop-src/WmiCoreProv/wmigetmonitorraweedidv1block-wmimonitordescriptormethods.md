@@ -60,7 +60,7 @@ Tipo di blocco di dati. Nella tabella seguente sono elencati i valori restituiti
 | <dl> <dt>0 (0x0)</dt> </dl>    | Inizializzazione annullata<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Blocco di base EDID<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>    | Mappa a blocchi EDID<br/>  |
-| <dl> <dt>255 (0xFF)</dt> </dl> | Altri<br/>           |
+| <dl> <dt>255 (0xFF)</dt> </dl> | Altro<br/>           |
 
 
 

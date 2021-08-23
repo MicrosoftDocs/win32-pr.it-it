@@ -1,7 +1,7 @@
 ---
 description: Recupera il corpo dell'entità di risposta come testo.
 ms.assetid: 87caf64f-be11-45c9-af1e-997a55c5e76e
-title: 'Proprietà IWinHttpRequest:: ResponseText'
+title: Proprietà IWinHttpRequest::ResponseText
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 93e0a9b17ba356f9ce6b038be114f5f2c9804eab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e43169ee789a067b75444e5f19e5bb7985ce402efd4b89c08f049dbcad9a7049
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563189"
 ---
-# <a name="iwinhttprequestresponsetext-property"></a>Proprietà IWinHttpRequest:: ResponseText
+# <a name="iwinhttprequestresponsetext-property"></a>Proprietà IWinHttpRequest::ResponseText
 
-La proprietà **ResponseText** Recupera il corpo dell'entità della risposta come testo.
+La **proprietà ResponseText** recupera il corpo dell'entità della risposta come testo.
 
 Questa proprietà è di sola lettura.
 
@@ -53,22 +53,22 @@ strResponseText = WinHttpRequest.ResponseText
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà può essere richiamata solo dopo la chiamata del metodo [**Send**](iwinhttprequest-send.md) .
+Questa proprietà può essere richiamata solo dopo la [**chiamata del**](iwinhttprequest-send.md) metodo Send.
 
-Quando si usa questa proprietà in modalità sincrona, il limite al numero di caratteri restituito è approssimativamente 2.169.895.
+Quando si usa questa proprietà in modalità sincrona, il limite al numero di caratteri restituiti è di circa 2.169.895.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la [sezione Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
+L'esempio seguente illustra come aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Questo esempio deve essere eseguito da un prompt dei comandi.
 
 
 ```C++
@@ -156,7 +156,7 @@ int main()
 
 
 
-Nell'esempio di script seguente viene illustrato come aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta.
+L'esempio di scripting seguente illustra come aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta.
 
 
 ```JScript
@@ -181,11 +181,11 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -203,10 +203,10 @@ WScript.Echo( WinHttpReq.ResponseText);
 [**ResponseBody**](iwinhttprequest-responsebody.md)
 </dt> <dt>
 
-[**ResponseStream**](iwinhttprequest-responsestream.md)
+[**Responsestream**](iwinhttprequest-responsestream.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

@@ -340,7 +340,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** il pacchetto è progettato per essere prelevato e estratto dal contenitore fisico in cui viene normalmente trovato, senza compromettere la funzione del pacchetto complessivo. Un pacchetto viene considerato rimovibile anche se l'alimentazione deve essere spenta per eseguire la rimozione. Se l'alimentazione può essere accensione e il pacchetto è stato rimosso, l'elemento è rimovibile e può essere scambiato a caldo. Ad esempio, un chip del processore aggiornabile è rimovibile.
+Se **TRUE,** il pacchetto è progettato per essere prelevato e estratto dal contenitore fisico in cui si trova normalmente, senza compromettere la funzione del pacchetto complessivo. Un pacchetto viene considerato rimovibile anche se l'alimentazione deve essere spenta per eseguire la rimozione. Se l'alimentazione può essere accensione e il pacchetto è stato rimosso, l'elemento è rimovibile e può essere scambiato a caldo. Ad esempio, un chip del processore aggiornabile è rimovibile.
 
 </dd> <dt>
 
@@ -353,14 +353,14 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** è possibile sostituire l'elemento con un elemento fisicamente diverso. Ad esempio, alcuni sistemi di computer consentono l'aggiornamento del chip del processore principale a una classificazione di clock superiore. In questo caso, il processore è detto sostituibile. Tutti i componenti rimovibili sono intrinsecamente sostituibili.
+Se **TRUE,** è possibile sostituire l'elemento con uno fisicamente diverso. Ad esempio, alcuni sistemi di computer consentono l'aggiornamento del chip del processore principale a una classificazione di clock superiore. In questo caso, il processore è detto sostituibile. Tutti i componenti rimovibili sono intrinsecamente sostituibili.
 
 </dd> <dt>
 
 **Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -378,7 +378,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicale
 **SKU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -396,7 +396,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicale
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -422,14 +422,14 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("Error")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degraded** ("Degraded")
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -450,7 +450,7 @@ Sono inclusi i valori seguenti:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
@@ -502,7 +502,7 @@ Sono inclusi i valori seguenti:
 **Tag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -511,7 +511,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Stringa arbitraria che identifica in modo univoco l'elemento fisico e funge da chiave dell'elemento. Questa proprietà può contenere informazioni, ad esempio il tag asset o i dati del numero di serie. La chiave per [**CIM \_ PhysicalElement**](cim-physicalelement.md) è posizionata molto in alto nella gerarchia di oggetti per identificare in modo indipendente l'hardware o l'entità, indipendentemente dal posizionamento fisico in (o in) archivi, schede e così via. Ad esempio, un componente rimovibile che può essere scambiato a caldo può essere prelevato dal pacchetto contenitore (ambito) e temporaneamente inutilizzato. L'oggetto continua a esistere e può anche essere inserito in un contenitore di ambito diverso. La chiave per un elemento fisico è una stringa arbitraria definita indipendentemente dalla gerarchia di posizionamento o orientata alla posizione.
+Stringa arbitraria che identifica in modo univoco l'elemento fisico e funge da chiave dell'elemento. Questa proprietà può contenere informazioni, ad esempio i dati relativi al tag di asset o al numero di serie. La chiave [**per CIM \_ PhysicalElement**](cim-physicalelement.md) è posizionata molto in alto nella gerarchia di oggetti per identificare in modo indipendente l'hardware o l'entità, indipendentemente dal posizionamento fisico in (o in) archivi, adattatori e così via. Ad esempio, un componente rimovibile che può essere scambiato a caldo può essere prelevato dal pacchetto contenitore (ambito) e temporaneamente inutilizzato. L'oggetto continua a esistere e può anche essere inserito in un contenitore di ambito diverso. La chiave per un elemento fisico è una stringa arbitraria definita indipendentemente dalla gerarchia di posizionamento o orientata alla posizione.
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -520,7 +520,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicale
 **Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -563,17 +563,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("pollici")
 </dt> </dl>
 
-Larghezza del pacchetto fisico, in pollici.
+Larghezza del pacchetto fisico, espressa in pollici.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ CiM PhysicalPackage** è derivata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+La **classe CIM \_ PhysicalPackage** è derivata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
-WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ PhysicalPackage,** vedere [Classi Win32.](win32-provider.md)
+WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ PhysicalPackage,** vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

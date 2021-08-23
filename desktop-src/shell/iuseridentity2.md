@@ -1,5 +1,5 @@
 ---
-description: IUserIdentity2 non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.
+description: IUserIdentity2 non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: 85238574-f6bf-43d7-a41b-3ea086c45e07
 title: Interfaccia IUserIdentity2 (Msident.h)
 ms.topic: reference
@@ -22,19 +22,19 @@ ms.locfileid: "118720587"
 ---
 # <a name="iuseridentity2-interface"></a>Interfaccia IUserIdentity2
 
-\[**IUserIdentity2** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e Desktop remoto](fastuserswitching.md).\]
+\[**IUserIdentity2** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio utente rapido e Desktop remoto](fastuserswitching.md).\]
 
 Espone metodi che forniscono la denominazione, la password e il controllo ordinale per un'identità utente specifica.
 
 ## <a name="members"></a>Membri
 
-**L'interfaccia IUserIdentity2** eredita da [**IUserIdentity**](iuseridentity.md). **IUserIdentity2** include anche questi tipi di membri:
+**L'interfaccia IUserIdentity2** eredita da [**IUserIdentity.**](iuseridentity.md) **IUserIdentity2** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **IUserIdentity2.**
+**L'interfaccia IUserIdentity2** include questi metodi.
 
 
 

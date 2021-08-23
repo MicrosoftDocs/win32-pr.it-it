@@ -16,17 +16,17 @@ ms.locfileid: "118691950"
 
 Il componente provider di esempio usa una progettazione di directory relativamente semplice per chiarire la relazione tra i componenti e per mostrare i requisiti minimi necessari per essere un provider ADSI.
 
-La "directory" per il componente provider di esempio è costituita da due nodi radice: "Seattle" e "Toronto". Seattle contiene altri due sottolivelli, "Bellevue" e "Redmond". Ognuna di queste voci contiene diversi account utente. La voce "Toronto" non ha altri sottolivelli, ma contiene direttamente diversi account utente. La figura seguente mostra questi due nodi radice connessi a una rete.
+La "directory" per il componente provider di esempio è costituita da due nodi radice: "Seattle" e "Toronto". Seattle contiene altri due sottolivelli, "Bellevue" e "Redmond". Ognuna di queste voci contiene diversi account utente. La voce "Toronto" non ha altri sottolivelli, ma contiene direttamente diversi account utente. La figura seguente illustra questi due nodi radice connessi a una rete.
 
 ![definizione di directory](images/dssmdo.png)
 
-In termini gerarchici, il nodo Spazio dei nomi contiene "Seattle" e "Toronto". "Seattle" contiene "Bellevue" e "Redmond". "Bellevue" e "Redmond" contengono ognuno un set di account utente. "Toronto" contiene direttamente gli account utente senza nodi dell'organizzazione intermedi.
+In termini gerarchici, il nodo Spazio dei nomi contiene "Seattle" e "Toronto". "Seattle" contiene "Bellevue" e "Redmond". "Bellevue" e "Redmond" contengono ognuno un set di account utente. "Toronto" contiene direttamente gli account utente senza nodi organizzativi intermedi.
 
 Il componente provider di esempio rappresenta questa struttura con solo due tipi di oggetto Active Directory: un oggetto contenitore e un oggetto foglia. "Seattle", "Toronto", "Bellevue" e "Redmond" sono oggetti contenitore e ogni account utente è un oggetto foglia.
 
-Il componente provider di esempio crea una classe di schema denominata "Unità organizzativa" per un tipo di oggetto contenitore e una classe di schema denominata "User" per un account utente.
+Il componente provider di esempio crea una classe di schema denominata "Organizational Unit" per un tipo di oggetto contenitore e una classe di schema denominata "User" per un account utente.
 
-Le proprietà per ogni classe dello schema, i relativi metodi e le regole che regolano le relazioni di contenimento per questi oggetti sono tutte definite in [Gestione schemi.](schema-management.md)
+Le proprietà per ogni classe dello schema, i relativi metodi e le regole che regolano le relazioni di contenimento per questi oggetti sono tutte definite in [Gestione schemi](schema-management.md).
 
  
 

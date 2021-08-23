@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo getsolution.
+description: Funzione proxy per il metodo GetResolution.
 ms.assetid: 5e261c2b-534a-4875-a84f-7251d54f15c6
-title: Funzione IWICBitmapSource_GetResolution_Proxy
+title: IWICBitmapSource_GetResolution_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0bcd63c01bf99e426cdbf5044223a40308fb5e9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f226e1fddc1d780e24796d342736082c2f7f11e7d03369245f2222eee1074713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088353"
 ---
-# <a name="iwicbitmapsource_getresolution_proxy-function"></a>\_Funzione proxy Getsolution IWICBitmapSource \_
+# <a name="iwicbitmapsource_getresolution_proxy-function"></a>Funzione proxy IWICBitmapSource \_ GetResolution \_
 
-Funzione proxy per il metodo [**getsolution**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution) .
+Funzione proxy per il [**metodo GetResolution.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapSource_GetResolution_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapSource* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
+Puntatore a [**questo oggetto IWICBitmapSource.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
 
 </dd> <dt>
 
-*pDpiX* \[ out\]
+*pDpiX* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **Double \** _
+Tipo: **\* double**
 
 Puntatore che riceve la risoluzione dpi dell'asse x.
 
 </dd> <dt>
 
-_pDpiY * \[ out\]
+*pDpiY* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **Double \** _
+Tipo: **\* double**
 
 Puntatore che riceve la risoluzione dpi dell'asse y.
 
@@ -71,9 +71,9 @@ Puntatore che riceve la risoluzione dpi dell'asse y.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -83,9 +83,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

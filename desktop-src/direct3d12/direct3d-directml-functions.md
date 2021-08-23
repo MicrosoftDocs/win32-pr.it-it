@@ -1,6 +1,6 @@
 ---
 title: Funzioni DirectML
-description: Le funzioni seguenti vengono dichiarate in DirectML.h.
+description: Le funzioni seguenti sono dichiarate in DirectML.h.
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
@@ -14,7 +14,7 @@ ms.locfileid: "118529610"
 ---
 # <a name="directml-functions"></a>Funzioni DirectML
 
-Le funzioni seguenti vengono dichiarate in DirectML.h.
+Le funzioni seguenti sono dichiarate in DirectML.h.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

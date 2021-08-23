@@ -1,9 +1,9 @@
 ---
-title: Funzione InterlockedExchange (riferimento HLSL)
-description: Assegna il valore a dest e restituisce il valore originale.
+title: Funzione InterlockedExchange (informazioni di riferimento su HLSL)
+description: Assegna value a dest e restituisce il valore originale.
 ms.assetid: 1e7ce7ff-9e23-47fa-8e76-713f6bf57abf
 keywords:
-- Funzione InterlockedExchange HLSL
+- HLSL della funzione InterlockedExchange
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7c39dc4f68429fa3f070d446f998fd528a99af01
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: 3880a85af5658d0d50eb079c2dd1fc300e6a4de4b7f606688ab9d7a317cf321c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104976583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511321"
 ---
-# <a name="interlockedexchange-function-hlsl-reference"></a>Funzione InterlockedExchange (riferimento HLSL)
+# <a name="interlockedexchange-function-hlsl-reference"></a>Funzione InterlockedExchange (informazioni di riferimento su HLSL)
 
-Assegna il valore a dest e restituisce il valore originale.
+Assegna value a dest e restituisce il valore originale.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void InterlockedExchange(
-  in  R dest,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedExchange(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ Indirizzo di destinazione.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ Valore di input.
 
 </dd> <dt>
 
-*\_ valore originale* in \[ uscita\]
+*valore \_ originale* \[ out\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,9 +71,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse con tipizzazione scalare e variabili di memoria condivisa. Esistono due possibili usi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul Registro di memoria condiviso a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Questa operazione è disponibile solo se R è leggibile e scrivibile.
+Questa operazione può essere eseguita solo su risorse di tipo scalare e variabili di memoria condivisa. Questa funzione può essere utilizzata in due modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Questa operazione è disponibile solo quando R è leggibile e scrivibile.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -81,23 +81,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   | x      |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -106,12 +106,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

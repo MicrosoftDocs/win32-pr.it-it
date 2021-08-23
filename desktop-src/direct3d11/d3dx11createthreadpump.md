@@ -1,6 +1,6 @@
 ---
 title: Funzione D3DX11CreateThreadPump (D3DX11core.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Vedere la sezione Osservazioni. Creare una pompa di thread.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Vedere la sezione Osservazioni. Creare una pompa di thread.
 ms.assetid: 8983a2e2-185f-43c0-baf0-a4c883d91220
 keywords:
 - Funzione D3DX11CreateThreadPump Direct3D 11

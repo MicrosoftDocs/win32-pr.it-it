@@ -1,17 +1,17 @@
 ---
 description: Archivia lo stato delle risposte di un utente alle riunioni nel calendario.
 ms.assetid: 5cbc0306-20c7-4f12-bb8b-3889b93dfd69
-title: System. Calendar. ResponseStatus
+title: System.Calendar.ResponseStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7af8f69d177dba751ead02a0ee71f5ea4a42ae4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3900e95e6cd0a9d9becc9e86b44c391e06ad02bf1f592d75e8ea6d2896b1316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098548"
 ---
-# <a name="systemcalendarresponsestatus"></a>System. Calendar. ResponseStatus
+# <a name="systemcalendarresponsestatus"></a>System.Calendar.ResponseStatus
 
 Archivia lo stato delle risposte di un utente alle riunioni nel calendario.
 
@@ -105,13 +105,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -120,13 +120,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -135,13 +135,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

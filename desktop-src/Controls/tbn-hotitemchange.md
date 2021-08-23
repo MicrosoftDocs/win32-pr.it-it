@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_HOTITEMCHANGE (COMmctrl. h)
-description: Inviato da un controllo Toolbar quando viene modificato l'elemento attivo (evidenziato). Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_HOTITEMCHANGE codice di notifica (Commctrl.h)
+description: Inviato da un controllo della barra degli strumenti quando cambia l'elemento di accesso rapido (evidenziato). Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 49e68e2a-d9c0-463d-954d-34c9adfad62b
 keywords:
-- Controlli di Windows per il codice di notifica TBN_HOTITEMCHANGE
+- TBN_HOTITEMCHANGE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d314a7250128a0f3e6b3fed54e5765487619d8e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b51765a3c0590b4584b817772cec73df626363dfce6a5ef472ceec6c3ea023f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167039"
 ---
-# <a name="tbn_hotitemchange-notification-code"></a>\_Codice di notifica HOTITEMCHANGE di TBN
+# <a name="tbn_hotitemchange-notification-code"></a>Codice di notifica \_ TBN HOTITEMCHANGE
 
-Inviato da un controllo Toolbar quando viene modificato l'elemento attivo (evidenziato). Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo della barra degli strumenti quando cambia l'elemento di accesso rapido (evidenziato). Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ TBN_HOTITEMCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) che contiene informazioni su questo codice di notifica.
+Puntatore a [**una struttura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) che contiene informazioni su questo codice di notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero per consentire l'evidenziazione dell'elemento o un valore diverso da zero per impedire che l'elemento venga evidenziato.
+Restituisce zero per consentire all'elemento di essere evidenziato o diverso da zero per impedire che l'elemento venga evidenziato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce zero per consentire l'evidenziazione dell'elemento o un valore diver
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

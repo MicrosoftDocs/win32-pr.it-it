@@ -16,7 +16,7 @@ ms.locfileid: "118694544"
 ---
 # <a name="example-code-for-changing-the-scope-of-a-group"></a>Codice di esempio per la modifica dell'ambito di un gruppo
 
-Nell'esempio di codice C++ seguente viene modificato l'ambito di un gruppo.
+L'esempio di codice C++ seguente modifica l'ambito di un gruppo.
 
 
 ```C++
@@ -54,7 +54,7 @@ Nell'esempio di codice C++ seguente viene modificato l'ambito di un gruppo.
 
 
 
-Nell'esempio Visual Basic codice seguente viene modificato l'ambito di un gruppo.
+Nell'esempio Visual Basic di codice seguente viene modificato l'ambito di un gruppo.
 
 
 ```VB

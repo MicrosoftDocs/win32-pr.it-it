@@ -3,7 +3,7 @@ title: round (Corecrt \_ math.h)
 description: Arrotonda il valore specificato all'intero più vicino.
 ms.assetid: 258ce717-dca1-4ed2-ad98-1ecfdb58f939
 keywords:
-- round HLSL
+- HLSL round
 topic_type:
 - apiref
 api_name:
@@ -40,7 +40,7 @@ Arrotonda il valore specificato all'intero più vicino. I case a metà vengono a
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Il valore specificato.<br/> |
 
 
 
@@ -63,16 +63,16 @@ Parametro *x,* arrotondato all'intero più vicino all'interno di un tipo a virgo
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
-Questa funzione è supportata nei modelli di shader seguenti.
+Questa funzione è supportata nei modelli shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | sì (solo \_ vs 1 \_ 1) |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
 
 
 

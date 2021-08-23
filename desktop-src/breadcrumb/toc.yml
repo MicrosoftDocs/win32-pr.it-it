@@ -16,22 +16,22 @@
                 - name: Introduzione a Win32 e C++
                   tocHref: /windows/win32/learnwin32/
                   topicHref: /windows/win32/learnwin32/learn-to-program-for-windows
-                - name: Creare la prima app di Windows con DirectX
+                - name: Creare la prima app Windows con DirectX
                   tocHref: /windows/win32/direct3dgetstarted/
                   topicHref: /windows/win32/direct3dgetstarted/building-your-first-directx-app
-                - name: Uso delle intestazioni di Windows
+                - name: Uso delle intestazioni Windows personalizzate
                   tocHref: /windows/win32/winprog/
                   topicHref: /windows/win32/winprog/using-the-windows-headers
                 - name: Guida alla programmazione per Windows a 64 bit
                   tocHref: /windows/win32/winprog64/
                   topicHref: /windows/win32/winprog64/programming-guide-for-64-bit-windows
-                - name: Cookbook per la compatibilità per Windows
+                - name: Guida di base sulla compatibilità per Windows
                   tocHref: /windows/win32/w8cookbook/
                   topicHref: /windows/win32/w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal
-                - name: Cookbook per la qualità delle applicazioni di Windows 7 e Windows Server 2008 R2
+                - name: Windows 7 e Windows cookbook sulla qualità delle applicazioni di Server 2008 R2
                   tocHref: /windows/win32/win7appqual/
                   topicHref: /windows/win32/win7appqual/windows-7-application-quality-cookbook
-                - name: Guida per gli sviluppatori di Windows 7
+                - name: Windows 7 Developer Guide (Guida per sviluppatori di Windows 7)
                   tocHref: /windows/win32/win7devguide/
                   topicHref: /windows/win32/win7devguide/windows-7-developer-guide
                 - name: Aggiornamento della piattaforma per Windows Vista
@@ -50,7 +50,7 @@
                     - name: Funzionalità di accessibilità di Windows
                       tocHref: /windows/win32/winauto/
                       topicHref: /windows/win32/winauto/about-windows-accessibility-features
-                - name: Interfaccia utente dell'app desktop
+                - name: App desktop Interfaccia utente
                   topicHref: /windows/win32/windows-application-ui-development
                   items:
                     - name: Introduzione
@@ -68,10 +68,10 @@
                         - name: Input input penna
                           tocHref: /windows/win32/input_ink/
                           topicHref: /windows/win32/input_ink/input-ink-portal
-                        - name: Configurazione feedback input
+                        - name: Configurazione dei commenti e suggerimenti di input
                           tocHref: /windows/win32/input_feedback/
                           topicHref: /windows/win32/input_feedback/input-feedback-configuration-portal
-                        - name: Identificazione origine input
+                        - name: Identificazione dell'origine di input
                           tocHref: /windows/win32/input_sourceid/
                           topicHref: /windows/win32/input_sourceid/input-source-identification-portal
                         - name: Contesto di interazione
@@ -80,7 +80,7 @@
                         - name: Stack di input del dispositivo puntatore
                           tocHref: /windows/win32/input_pointerdevice/
                           topicHref: /windows/win32/input_pointerdevice/pointer-device-stack-portal
-                        - name: Notifiche e messaggi di input del puntatore
+                        - name: Messaggi e notifiche di input del puntatore
                           tocHref: /windows/win32/inputmsg/
                           topicHref: /windows/win32/inputmsg/messages-and-notifications-portal
                         - name: Input del controller radiale
@@ -92,7 +92,7 @@
                         - name: Hit testing tocco
                           tocHref: /windows/win32/input_touchhittest/
                           topicHref: /windows/win32/input_touchhittest/touch-hit-testing-portal
-                        - name: Touch Injection
+                        - name: Inserimento tocco
                           tocHref: /windows/win32/input_touchinjection/
                           topicHref: /windows/win32/input_touchinjection/touch-injection-portal
                         - name: Funzionalità legacy
@@ -125,40 +125,40 @@
                     - name: Valori DPI alti
                       tocHref: /windows/win32/hidpi/
                       topicHref: /windows/win32/hidpi/high-dpi-desktop-application-development-on-windows
-                    - name: Gestione animazioni Windows
+                    - name: Windows Gestione animazioni
                       tocHref: /windows/win32/uianimation/
                       topicHref: /windows/win32/uianimation/-main-portal
-                    - name: Controlli Windows
+                    - name: Windows Controlli
                       tocHref: /windows/win32/controls/
                       topicHref: /windows/win32/controls/window-controls
-                    - name: Framework della barra multifunzione di Windows
+                    - name: Windows Framework della barra multifunzione
                       tocHref: /windows/win32/windowsribbon/
                       topicHref: /windows/win32/windowsribbon/-uiplat-windowsribbon-entry
                 - name: Ambiente desktop
                   topicHref: /windows/win32/user-interface
                   items:
-                    - name: Shell di Windows
+                    - name: Windows Guscio
                       tocHref: /windows/win32/shell/
                       topicHref: /windows/win32/shell/shell-entry
-                    - name: Sistema di proprietà di Windows
+                    - name: Windows Sistema di proprietà
                       tocHref: /windows/win32/properties/
                       topicHref: /windows/win32/properties/windows-properties-system
                     - name: Windows Search
                       tocHref: /windows/win32/search/
                       topicHref: /windows/win32/search/windows-search
-                    - name: Stazioni e desktop della finestra
+                    - name: Stazioni finestra e desktop
                       tocHref: /windows/win32/winstation/
                       topicHref: /windows/win32/winstation/window-stations-and-desktops
-                    - name: Funzionalità legacy di ambiente Windows
+                    - name: Funzionalità dell'Windows legacy
                       tocHref: /windows/win32/lwef/
                       topicHref: /windows/win32/lwef/legacy-windows-environment
-                - name: Installazione e manutenzione di applicazioni
+                - name: Installazione e manutenzione delle applicazioni
                   topicHref: /windows/win32/application-installing-and-servicing
                   items:
                     - name: Applicazioni isolate e assembly affiancati
                       tocHref: /windows/win32/sbscs/
                       topicHref: /windows/win32/sbscs/isolated-applications-and-side-by-side-assemblies-portal
-                    - name: 'Creazione di pacchetti, distribuzione e query delle app di Windows'
+                    - name: 'Creazione di pacchetti, distribuzione ed esecuzione di query Windows app'
                       tocHref: /windows/win32/appxpkg/
                       topicHref: /windows/win32/appxpkg/appx-portal
                     - name: Licenze per sviluppatori
@@ -173,7 +173,7 @@
                 - name: Audio e video
                   topicHref: /windows/win32/audio-and-video
                   items:
-                    - name: API audio Core
+                    - name: API audio di base
                       tocHref: /windows/win32/coreaudio/
                       topicHref: /windows/win32/coreaudio/core-audio-apis-in-windows-vista
                     - name: DirectShow
@@ -182,19 +182,19 @@
                     - name: Microsoft Media Foundation
                       tocHref: /windows/win32/medfound/
                       topicHref: /windows/win32/medfound/microsoft-media-foundation-sdk
-                    - name: SDK di Windows Media Format 11
+                    - name: Windows Media Format 11 SDK
                       tocHref: /windows/win32/wmformat/
                       topicHref: /windows/win32/wmformat/windows-media-format-11-sdk
-                    - name: Windows Media Player SDK
+                    - name: Windows Media Player Sdk
                       tocHref: /windows/win32/wmp/
                       topicHref: /windows/win32/wmp/windows-media-player-sdk
-                    - name: API Windows Media streaming
+                    - name: Windows API Streaming multimediale
                       tocHref: /windows/win32/mediastreaming/
                       topicHref: /windows/win32/mediastreaming/media-streaming-api-portal
-                    - name: Multimedia di Windows
+                    - name: Windows Multimediale
                       tocHref: /windows/win32/multimedia/
                       topicHref: /windows/win32/multimedia/windows-multimedia-start-page
-                - name: Accesso ai dati e archiviazione
+                - name: Accesso ai dati e Archiviazione
                   topicHref: /windows/win32/data-access-and-storage
                   items:
                     - name: Servizio trasferimento intelligente in background
@@ -209,19 +209,19 @@
                     - name: file system distribuito
                       tocHref: /windows/win32/dfs/
                       topicHref: /windows/win32/dfs/distributed-file-system
-                    - name: Motore di archiviazione estendibile
+                    - name: Motore Archiviazione estendibile
                       tocHref: /windows/win32/extensible-storage-engine/
                       topicHref: /windows/win32/extensible-storage-engine/extensible-storage-engine
-                    - name: API per la creazione di immagini master
+                    - name: API Di mastering delle immagini
                       tocHref: /windows/win32/imapi/
                       topicHref: /windows/win32/imapi/portal
                     - name: File system locali
                       tocHref: /windows/win32/fileio/
                       topicHref: /windows/win32/fileio/file-systems
-                    - name: File System proiettato di Windows
+                    - name: Windows File system proiettato
                       tocHref: /windows/win32/projfs/
                       topicHref: /windows/win32/projfs/projected-file-system
-                    - name: Archiviazione virtuale
+                    - name: Archiviazione
                       tocHref: /windows/win32vstor/
                       topicHref: /windows/win32/vstor/virtual-storage
                     - name: Servizio dischi virtuali
@@ -233,13 +233,13 @@
                 - name: Dispositivi
                   topicHref: /windows/win32/devices
                   items:
-                    - name: Risorse di comunicazione
+                    - name: Risorse per le comunicazioni
                       tocHref: /windows/win32/devio/
                       topicHref: /windows/win32/devio/communications-resources
-                    - name: API di accesso ai dispositivi
+                    - name: API di accesso al dispositivo
                       tocHref: /windows/win32/deviceaccess/
                       topicHref: /windows/win32/deviceaccess/device-access-broker-api-portal
-                    - name: API location
+                    - name: API di posizione
                       tocHref: /windows/win32/locationapi/
                       topicHref: /windows/win32/locationapi/windows-location-api-portal
                     - name: API Sensor
@@ -254,13 +254,13 @@
                     - name: Acquisizione di immagini di Windows (WIA)
                       tocHref: /windows/win32/wia/
                       topicHref: /windows/win32/wia/-wia-startpage
-                - name: Windows Media Gestione dispositivi 11 SDK
+                - name: Windows Media Device Manager 11 SDK
                   tocHref: /windows/win32/wmdm/
                   topicHref: /windows/win32/wmdm/windows-media-device-manager-11-sdk
-                - name: Dispositivi portatili Windows
+                - name: Windows Dispositivi portatili
                   topicHref: /windows/win32/windows-portable-devices
                   items:
-                    - name: Interfaccia di programmazione dell'applicazione WPD
+                    - name: Interfaccia di programmazione delle applicazioni WPD
                       tocHref: /windows/win32/wpd_sdk/
                       topicHref: /windows/win32/wpd_sdk/wpd-application-programming-interface
                 - name: Diagnostica
@@ -284,7 +284,7 @@
                     - name: Contatori delle prestazioni
                       tocHref: /windows/win32/perfctrs/
                       topicHref: /windows/win32/perfctrs/performance-counters-portal
-                    - name: API stato processo
+                    - name: API Stato processo
                       tocHref: /windows/win32/psapi/
                       topicHref: /windows/win32/psapi/process-status-helper
                     - name: Servizio di notifica eventi di sistema
@@ -293,7 +293,7 @@
                     - name: Monitor di sistema
                       tocHref: /windows/win32/sysmon/
                       topicHref: /windows/win32/sysmon/system-monitor-portal
-                    - name: Libreria della guida dello strumento
+                    - name: Libreria della Guida degli strumenti
                       tocHref: /windows/win32/toolhelp/
                       topicHref: /windows/win32/toolhelp/tool-help-library
                     - name: Segnalazione errori Windows
@@ -363,7 +363,7 @@
                         - name: DirectXMath
                           tocHref: /windows/win32/dxmath/
                           topicHref: /windows/win32/dxmath/directxmath-portal
-                        - name: API windowsnumerics. h
+                        - name: API windowsnumerics.h
                           tocHref: /windows/win32/numerics_h/
                           topicHref: /windows/win32/numerics_h/windowsnumerics-h-apis-portal
                         - name: Grafica DirectX classica
@@ -375,7 +375,7 @@
                             - name: Grafica Direct3D 9
                               tocHref: /windows/win32/direct3d9/
                               topicHref: /windows/win32/direct3d9/dx9-graphics
-                            - name: DirectDraw
+                            - name: Directdraw
                               tocHref: /windows/win32/directdraw/
                               topicHref: /windows/win32/directdraw/directdraw
                             - name: Articoli tecnici su DirectX
@@ -392,7 +392,7 @@
                         - name: API XAudio2
                           tocHref: /windows/win32/xaudio2/
                           topicHref: /windows/win32/xaudio2/xaudio2-apis-portal
-                        - name: API di XInput Game controller
+                        - name: API di XInput Game Controller
                           tocHref: /windows/win32/xinput/
                           topicHref: /windows/win32/xinput/xinput-game-controller-apis-portal
                     - name: DirectComposition
@@ -407,7 +407,7 @@
                     - name: Monitora configurazione
                       tocHref: /windows/win32/monitor/
                       topicHref: /windows/win32/monitor/monitor-configuration
-                    - name: OpenGL
+                    - name: Opengl
                       tocHref: /windows/win32/opengl/
                       topicHref: /windows/win32/opengl/opengl
                     - name: Componente Windows Imaging
@@ -419,7 +419,7 @@
                 - name: Rete e Internet
                   topicHref: /windows/win32/networking
                   items:
-                    - name: Ottimizzazione recapito
+                    - name: Ottimizzazione recapito (DO)
                       tocHref: /windows/win32delivery_optimization/
                       topicHref: /windows/win32/delivery_optimization/delivery-optimization-portal
                     - name: Domain Name System
@@ -433,13 +433,13 @@
                       topicHref: /windows/win32/iphlp/ip-helper-start-page
                     - name: Interfacce di rete
                       topicHref: /windows/win32/network-interfaces
-                    - name: Gestione elenco reti
+                    - name: Network List Manager
                       tocHref: /windows/win32/nla/
                       topicHref: /windows/win32/nla/portal
                     - name: Gestione della rete
                       tocHref: /windows/win32/netmgmt/
                       topicHref: /windows/win32/netmgmt/network-management
-                    - name: Gestione delle condivisioni di rete
+                    - name: Gestione condivisione di rete
                       tocHref: /windows/win32/netshare/
                       topicHref: /windows/win32/netshare/network-share-management
                     - name: Peer-to-peer
@@ -454,7 +454,7 @@
                     - name: Servizio SNMP
                       tocHref: /windows/win32/snmp/
                       topicHref: /windows/win32/snmp/snmp-start-page
-                    - name: TAPI
+                    - name: Tapi
                       tocHref: /windows/win32/tapi/
                       topicHref: /windows/win32/tapi/telephony-application-programming-interfaces
                     - name: Teredo
@@ -466,10 +466,10 @@
                     - name: Piattaforma filtro Windows
                       tocHref: /windows/win32/fwp/
                       topicHref: /windows/win32/fwp/windows-filtering-platform-start-page
-                    - name: Rete di Windows
+                    - name: Windows Networking
                       tocHref: /windows/win32/wnet/
                       topicHref: /windows/win32/wnet/windows-networking-wnet-
-                    - name: Windows Sockets 2
+                    - name: Windows Socket 2
                       tocHref: /windows/win32/winsock/
                       topicHref: /windows/win32/winsock/windows-sockets-start-page-2
                     - name: WirelessNetworking
@@ -481,7 +481,7 @@
                         - name: Mobile Broadband
                           tocHref: /windows/win32/mbn/
                           topicHref: /windows/win32/mbn/mobile-broadband-networks-portal
-                        - name: WiFi nativo
+                        - name: Wi-Fi nativo
                           tocHref: /windows/win32/nativewifi/
                           topicHref: /windows/win32/nativewifi/portal
                         - name: Windows Connect Now
@@ -493,13 +493,13 @@
                     - name: WebDAV
                       tocHref: /windows/win32/webdav/
                       topicHref: /windows/win32/webdav/webdav-portal
-                    - name: Servizi HTTP di Windows
+                    - name: Windows Servizi HTTP
                       tocHref: /windows/win32/winhttp/
                       topicHref: /windows/win32/winhttp/winhttp-start-page
                     - name: Windows Internet
                       tocHref: /windows/win32/wininet/
                       topicHref: /windows/win32/wininet/portal
-                    - name: Servizi Web Windows
+                    - name: Windows Servizi Web
                       tocHref: /windows/win32/wsw/
                       topicHref: /windows/win32/wsw/portal
                 - name: Sicurezza e Identity
@@ -508,7 +508,7 @@
                     - name: Antimalware Scan Interface (AMSI)
                       tocHref: /windows/win32/amsi/
                       topicHref: /windows/win32/amsi/antimalware-scan-interface-portal
-                    - name: Authentication
+                    - name: Autenticazione
                       tocHref: /windows/win32/secauthn/
                       topicHref: /windows/win32/secauthn/authentication-portal
                     - name: Autorizzazione
@@ -523,7 +523,7 @@
                     - name: Crittografia
                       tocHref: /windows/win32/seccrypto/
                       topicHref: /windows/win32/seccrypto/cryptography-portal
-                    - name: 'API di crittografia: prossima generazione'
+                    - name: 'API di crittografia: next generation'
                       tocHref: /windows/win32/seccng/
                       topicHref: /windows/win32/seccng/cng-portal
                     - name: Active Directory Domain Services
@@ -540,7 +540,7 @@
                     - name: Extensible Authentication Protocol
                       tocHref: /windows/win32/eap/
                       topicHref: /windows/win32/eap/eap-start-page
-                    - name: Host del protocollo di autenticazione estendibile
+                    - name: Extensible Authentication Protocol Host
                       tocHref: /windows/win32/eaphost/
                       topicHref: /windows/win32/eaphost/portal
                     - name: Protezione accesso alla rete
@@ -551,9 +551,9 @@
                       topicHref: /windows/win32/nps/portal
                     - name: Rights Management
                       topicHref: /windows/win32/srvnodes/rights-management
-                    - name: 'Scenari, codice e strumenti di RMS'
+                    - name: 'Scenari, codice e strumenti rms'
                       topicHref: /windows/win32/srvnodes/rms-code-samples-and-tools
-                    - name: Controlli padre
+                    - name: Controllo genitori
                       tocHref: /windows/win32/parcon/
                       topicHref: /windows/win32/parcon/parental-controls-portal
                     - name: Gestione della sicurezza
@@ -577,7 +577,7 @@
                     - name: MIDL
                       tocHref: /windows/win32/midl/
                       topicHref: /windows/win32/midl/midl-start-page
-                    - name: Archiviazione strutturata
+                    - name: Struttura Archiviazione
                       tocHref: /windows/win32/stg/
                       topicHref: /windows/win32/stg/structured-storage-start-page
                     - name: COM+
@@ -589,7 +589,7 @@
                     - name: Librerie a collegamento dinamico
                       tocHref: /windows/win32/dlls/
                       topicHref: /windows/win32/dlls/dynamic-link-libraries
-                    - name: Comunicazione interprocesso
+                    - name: Comunicazioni interprocesso
                       tocHref: /windows/win32/ipc/
                       topicHref: /windows/win32/ipc/interprocess-communications
                     - name: Gestione transazioni kernel
@@ -616,19 +616,16 @@
                     - name: Sincronizzazione
                       tocHref: /windows/win32/sync/
                       topicHref: /windows/win32/sync/synchronization
-                    - name: Informazioni sul sistema Windows
+                    - name: Windows System Information
                       tocHref: /windows/win32/sysinfo/
                       topicHref: /windows/win32/sysinfo/windows-system-information
-                - name: Windows Machine Learning
-                  tocHref: /windows/win32/machinelearning/
-                  topicHref: /windows/win32/machinelearning/machine-learning-portal
                 - name: Note per gli sviluppatori
                   tocHref: /windows/win32/devnotes/
                   topicHref: /windows/win32/devnotes/developer-notes
             - name: Tecnologie server
               topicHref: /windows/win32/server-and-system-technologies
               items:
-                - name: 'Servizi di directory, identità e accesso'
+                - name: 'Directory, identità e Access Services'
                   topicHref: /windows/win32/srvnodes/directory--identity--and-access-services
                   items:
                     - name: Servizi directory
@@ -641,9 +638,9 @@
                     - name: Servizi di gestione delle identità
                       topicHref: /windows/win32/srvnodes/identity-services
                       items:
-                        - name: Gestione identità del ciclo di vita 2007
+                        - name: Identity Lifecycle Manager 2007
                           topicHref: /windows/win32/srvnodes/identity-lifecycle-manager-2007
-                    - name: Servizi di gestione accessi
+                    - name: Access Management Services
                       topicHref: /windows/win32/srvnodes/access-management-services
                       items:
                         - name: Active Directory Federation Services
@@ -651,7 +648,7 @@
                 - name: Rights Management
                   topicHref: /windows/win32/srvnodes/rights-management
                   items:
-                    - name: Esempi di codice e strumenti di RMS
+                    - name: Strumenti e esempi di codice RMS
                       topicHref: /windows/win32/srvnodes/rms-code-samples-and-tools
                 - name: Amministrazione sistema
                   topicHref: /windows/win32/srvnodes/system-administration
@@ -666,7 +663,7 @@
                     - name: Windows Server Update Services
                       topicHref: /windows/win32/srvnodes/windows-server-update-services
                       items:
-                        - name: 'Libreria di classi Windows Server Update Services 2,0'
+                        - name: Windows Server Update Services 2.0 Class Library
                           topicHref: /windows/win32/srvnodes/windows-server-update-services-2-0-class-library
                 - name: Virtualizzazione
                   topicHref: /windows/win32/srvnodes/virtualization
@@ -675,7 +672,7 @@
                 - name: Windows Server
                   topicHref: /windows/win32/srvnodes/windows-server
                   items:
-                    - name: Registrazione della gestione dei dispositivi mobili
+                    - name: Registrazione di Gestione dispositivi mobili
                       tocHref: /windows/win32/mdmreg/
                       topicHref: /windows/win32/mdmreg/mobile-device-management-registration-portal
                     - name: Ripristino configurazione di sistema
@@ -697,16 +694,16 @@
                         - name: Provider WMI CIMWin32
                           tocHref: /windows/win32/cimwin32prov/
                           topicHref: /windows/win32/cimwin32prov/cimwin32-wmi-providers
-                    - name: Provider WMI raccolta eventi di avvio
+                    - name: Provider WMI dell'agente di raccolta eventi di avvio
                       tocHref: /windows/win32/bevtcolprov/
                       topicHref: /windows/win32/bevtcolprov/boot-event-collector-wmi-provider-portal
                     - name: Gestione di Hyper-V
                       tocHref: /windows/win32/hyperv_v2/
                       topicHref: /windows/win32/hyperv_v2/hyper-v-management
-                    - name: Provider WMI Bridge MDM
+                    - name: MDM Bridge WMI Provider
                       tocHref: /windows/win32/dmwmibridgeprov/
                       topicHref: /windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal
-                    - name: Strumento valutazione sistema Windows
+                    - name: Windows Strumento di valutazione del sistema
                       tocHref: /windows/win32/winsat/
                       topicHref: /windows/win32/winsat/windows-system-assessment-tool-portal
                     - name: Provider di base WMI
@@ -715,7 +712,7 @@
                     - name: Gestione remota Windows
                       tocHref: /windows/win32/winrm/
                       topicHref: /windows/win32/winrm/portal
-                    - name: Protezione risorse di Windows
+                    - name: Windows Protezione delle risorse
                       tocHref: /windows/win32/wfp/
                       topicHref: /windows/win32/wfp/windows-resource-protection-portal
                 - name: "Windows Virtual\_PC"
@@ -724,9 +721,9 @@
             - name: Indice API
               tocHref: /windows/win32/apiindex/
               topicHref: /windows/win32/apiindex/api-index-portal
-            - name: Riferimento Windows Runtime C++
+            - name: Windows Informazioni di riferimento su C++ di runtime
               tocHref: /windows/win32/winrt/
               topicHref: /windows/win32/winrt/reference
-            - name: Certificazione Windows
+            - name: Windows Certificazione
               tocHref: /windows/win32/win_cert/
               topicHref: /windows/win32/win_cert/windows-certification-portal

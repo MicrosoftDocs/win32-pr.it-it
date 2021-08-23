@@ -1,5 +1,5 @@
 ---
-title: Uso di funzioni ADSI per l'associazione diretta a un oggetto
+title: Uso delle funzioni ADSI per l'associazione diretta a un oggetto
 description: L'associazione diretta a un oggetto directory con ADSI può essere eseguita in diversi modi.
 ms.assetid: 265f1346-b309-4fe3-9601-744e8a23bea9
 ms.tgt_platform: multiple
@@ -12,12 +12,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118690140"
 ---
-# <a name="using-adsi-functions-to-bind-directly-to-an-object"></a>Uso di funzioni ADSI per l'associazione diretta a un oggetto
+# <a name="using-adsi-functions-to-bind-directly-to-an-object"></a>Uso delle funzioni ADSI per l'associazione diretta a un oggetto
 
 L'associazione diretta a un oggetto directory con ADSI può essere eseguita in diversi modi. Negli argomenti seguenti vengono illustrati i metodi di associazione supportati da ADSI:
 
--   [Associazione con GetObject e ADsGetObject](binding-with-getobject-and-adsgetobject.md)
--   [Associazione con ADsOpenObject e IADsOpenDSObject::OpenDSObject](binding-with-adsopenobject-and-iadsopendsobject-opendsobject.md)
+-   [Binding con GetObject e ADsGetObject](binding-with-getobject-and-adsgetobject.md)
+-   [Binding con ADsOpenObject e IADsOpenDSObject::OpenDSObject](binding-with-adsopenobject-and-iadsopendsobject-opendsobject.md)
 -   [Binding con crittografia](binding-with-encryption.md)
 
  

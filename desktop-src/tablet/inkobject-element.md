@@ -1,5 +1,5 @@
 ---
-description: Contiene i dati binari codificati Base64 dell'oggetto Ink per un oggetto InkWord o Drawing.
+description: Contiene i dati binari con codifica Base64 dell'oggetto Ink per un oggetto InkWord o Drawing.
 ms.assetid: 7ee9ecd3-9dd6-4c6b-80bc-23f9a8e6b352
 title: Elemento InkObject
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118717749"
 ---
 # <a name="inkobject-element"></a>Elemento InkObject
 
-Contiene i dati binari codificati Base64 dell'oggetto Ink per [**un oggetto InkWord**](inkword-element.md) o [**Drawing.**](drawing-element.md)
+Contiene i dati binari con codifica Base64 dell'oggetto Ink per [**un oggetto InkWord**](inkword-element.md) o [**Drawing.**](drawing-element.md)
 
 ## <a name="definition"></a>Definizione
 
@@ -43,7 +43,7 @@ Nessuno.
 |--------------|--------------------------------------------|
 | Tipo di elemento | **xs:base64Binary**                        |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink |
-| Nome schema  | Lettore di journal                             |
+| Nome schema  | Lettore journal                             |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Codice di esempio per il controllo di un diritto di accesso di controllo in una ACE
-description: Nell'esempio di codice C++ seguente viene verificato un diritto di accesso al controllo specificato in una ACE nell'ACL dell'oggetto specificato.
+description: Nell'esempio di codice C++ seguente viene verificato un diritto di accesso di controllo specificato in una ACE nell'ACL dell'oggetto specificato.
 ms.assetid: 03a96c99-eefb-4de5-a4ab-526eca7875cc
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118694554"
 ---
 # <a name="example-code-for-checking-for-a-control-access-right-in-an-ace"></a>Codice di esempio per il controllo di un diritto di accesso di controllo in una ACE
 
-Nell'esempio di codice C++ seguente viene verificato un diritto di accesso al controllo specificato in una ACE nell'ACL dell'oggetto specificato.
+Nell'esempio di codice C++ seguente viene verificato un diritto di accesso di controllo specificato in una ACE nell'ACL dell'oggetto specificato.
 
 
 ```C++

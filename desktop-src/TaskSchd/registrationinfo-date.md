@@ -1,11 +1,11 @@
 ---
-title: Proprietà RegistrationInfo. date
-description: Per gli script, ottiene o imposta la data e l'ora di registrazione dell'attività.
+title: RegistrationInfo.Date - proprietà
+description: Per lo scripting, ottiene o imposta la data e l'ora di registrazione dell'attività.
 ms.assetid: ecff01b6-a1de-458a-9728-34169f17d42b
 keywords:
-- Utilità di pianificazione proprietà date
-- Utilità di pianificazione proprietà date, oggetto RegistrationInfo
-- Oggetto RegistrationInfo Utilità di pianificazione, proprietà date
+- Proprietà Date Utilità di pianificazione
+- Proprietà Date Utilità di pianificazione , oggetto RegistrationInfo
+- Oggetto RegistrationInfo Utilità di pianificazione proprietà , Date
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adfdfa8b2dd3f8dcaa3b2fd5778b1e50dabfab51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc0982eeba16d5760af5ba4a7334ed3e5050b3b730d727f7a10cb4b4a260d956
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106300939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059999"
 ---
-# <a name="registrationinfodate-property"></a>Proprietà RegistrationInfo. date
+# <a name="registrationinfodate-property"></a>RegistrationInfo.Date - proprietà
 
-Per gli script, ottiene o imposta la data e l'ora di registrazione dell'attività.
+Per lo scripting, ottiene o imposta la data e l'ora di registrazione dell'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Data di registrazione dell'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, la data di registrazione viene specificata utilizzando l'elemento [**date**](taskschedulerschema-date-registrationinfotype-element.md) dello schema utilità di pianificazione.
+Durante la lettura o la scrittura di codice XML per un'attività, la data di registrazione viene specificata usando [**l'elemento Date**](taskschedulerschema-date-registrationinfotype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, la data di reg
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

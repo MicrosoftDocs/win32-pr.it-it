@@ -1,5 +1,5 @@
 ---
-description: L'uso di Microsoft Visual Basic ide (Integrated Development Environment) per il debug consente agli sviluppatori Visual Basic l'accesso a strumenti familiari e facilità d'uso.
+description: L'uso di Microsoft Visual Basic ide (Integrated Development Environment) per il debug consente Visual Basic agli sviluppatori di accedere a strumenti familiari e facilità d'uso.
 ms.assetid: d31efc97-c286-434d-93f5-77b34ec16205
 title: Debug nell'IDE Visual Basic
 ms.topic: article
@@ -13,18 +13,18 @@ ms.locfileid: "118548010"
 ---
 # <a name="debugging-in-the-visual-basic-ide"></a>Debug nell'IDE Visual Basic
 
-L'uso di Microsoft Visual Basic ide (Integrated Development Environment) per il debug consente agli sviluppatori Visual Basic l'accesso a strumenti familiari e facilità d'uso. Anche se sarà necessario eseguire il debug completo di molti componenti usando l'ambiente Microsoft Visual C++, una strategia potrebbe consistere nel eseguire prima il debug del maggior numero possibile di funzionalità con Visual Basic. Ad esempio, è possibile usare l'IDE di Visual Basic per il debug all'interno di COM+ quando non si esegue ancora il debug di multithreading, rilevamento dei componenti, chiamate remote o isolamento del processo.
+L'uso di Microsoft Visual Basic ide (Integrated Development Environment) per il debug consente Visual Basic agli sviluppatori di accedere a strumenti familiari e facilità d'uso. Anche se sarà necessario eseguire il debug completo di molti componenti usando l'ambiente Microsoft Visual C++, una strategia potrebbe consistere nel eseguire prima il debug del maggior numero possibile di funzionalità con Visual Basic. Ad esempio, è possibile usare l'IDE di Visual Basic per il debug all'interno di COM+ quando non si esegue ancora il debug di multithreading, rilevamento dei componenti, chiamate remote o isolamento del processo.
 
-In generale, quando si usa l'Visual Basic per il debug, è necessario innanzitutto compilare il progetto e aggiungere la DLL a un'applicazione COM+. Si imposta quindi la compatibilità binaria per il progetto, si fa riferimento alla DLL effettuata e si avvia il progetto per avviare il debug.
+In generale, quando si usa l'ambiente Visual Basic per il debug, è innanzitutto necessario compilare il progetto e aggiungere la DLL a un'applicazione COM+. Si imposta quindi la compatibilità binaria per il progetto, si fa riferimento alla DLL effettuata e si avvia il progetto per avviare il debug.
 
-## <a name="general-guidelines-for-debugging-in-the-visual-basic-environment"></a>Linee guida generali per il debug nell'ambiente Visual Basic
+## <a name="general-guidelines-for-debugging-in-the-visual-basic-environment"></a>Linee guida generali per il debug nell Visual Basic ambiente
 
 -   Durante il debug con Visual Basic, COM+ considera i componenti Visual Basic come se appartengano a un'applicazione di libreria, anche se i componenti sono registrati come appartenenti a un'applicazione server. Poiché viene eseguito come applicazione di libreria, le icone dei componenti nello strumento di amministrazione Servizi componenti non ruotano durante il debug dei componenti.
 -   Se si modificano gli attributi della transazione in un componente durante il debug o si apporta una modifica al codice sorgente che richiede Visual Basic per generare un nuovo CLSID o ProgID, assicurarsi di eliminare e reinstallare l'applicazione COM+ contenente il componente. Se è stata impostata la compatibilità binaria per il componente, verrà visualizzato un avviso che indica che sono state apportate modifiche.
 
 ## <a name="notes-on-debugging-within-a-com-application"></a>Note sul debug all'interno di un'applicazione COM+
 
--   Se si apportano modifiche nell'IDE di Visual Basic nelle interfacce del componente, nei nomi delle classi, nei nomi dei progetti, nel supporto transazionale o in altre impostazioni, è possibile che non vi siano corrispondenze tra i dati di configurazione nell'explorer Servizi componenti e la configurazione effettiva in esecuzione nel debugger di Visual Basic.
+-   Se si apportano modifiche nell'IDE di Visual Basic nelle interfacce, nei nomi di classe, nei nomi di progetto, nel supporto transazionale o in altre impostazioni del componente, è possibile che non vi siano corrispondenze tra i dati di configurazione nell'explorer Servizi componenti e la configurazione effettiva in esecuzione nel debugger di Visual Basic.
 -   Non esportare un'applicazione COM+ durante il debug di un componente nell'applicazione. COM+ considera l'Visual Basic di sviluppo come componente.
 -   Se si esegue un componente all'esterno del debugger e quindi si decide di avviare il debug, è possibile che un'istanza del componente sia ancora in esecuzione in COM+ quando viene avviata nel debugger. COM+ rileverà questa condizione e tenterà di arrestare automaticamente l'istanza che controlla. Per evitare questo problema, rimuovere il componente dallo strumento di amministrazione Servizi componenti prima di iniziare il debug.
 

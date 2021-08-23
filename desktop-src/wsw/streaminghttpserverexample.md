@@ -1,29 +1,29 @@
 ---
 title: StreamingHttpServerExample
-description: Questo esempio mostra un server HTTP che accetta un canale ed esegue l'elaborazione Request/Reply in modalità flusso.
+description: In questo esempio viene illustrato un server HTTP che accetta un canale ed esegue l'elaborazione di richieste/risposte in modalità di streaming.
 ms.assetid: c108a5b3-923c-439c-8d86-7003a76ff45d
 keywords:
-- StreamingHttpServerExample native-servizi Web
+- StreamingHttpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81cca95558aac000104feabdba00dd2817ee06de
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 906f6aba42096c7ef0e99c3401e20b7cbabdad072657976ca402efc5800f13a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103857038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083135"
 ---
 # <a name="streaminghttpserverexample"></a>StreamingHttpServerExample
 
-Questo esempio mostra un server HTTP che accetta un canale ed esegue l'elaborazione Request/Reply in modalità flusso.
+In questo esempio viene illustrato un server HTTP che accetta un canale ed esegue l'elaborazione di richieste/risposte in modalità di streaming.
 
--   [StreamingHttpServer. cpp](#streaminghttpservercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [StreamingHttpServer.cpp](#streaminghttpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="streaminghttpservercpp"></a>StreamingHttpServer. cpp
+## <a name="streaminghttpservercpp"></a>StreamingHttpServer.cpp
 
 
 ```C++
@@ -472,7 +472,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -616,9 +616,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

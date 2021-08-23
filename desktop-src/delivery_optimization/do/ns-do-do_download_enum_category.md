@@ -1,6 +1,6 @@
 ---
 title: DO_DOWNLOAD_ENUM_CATEGORY struttura
-description: Usato da **IDOManager::EnumDownloads** per filtrare l'enumerazione dei download in base al valore della proprietà specifica.
+description: Usato da **IDOManager::EnumDownloads** per filtrare l'enumerazione downloads in base al valore della proprietà specifica.
 keywords:
 - DO_DOWNLOAD_ENUM_CATEGORY struttura
 topic_type:
@@ -54,5 +54,5 @@ Valore della proprietà.
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
-| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
 | **Intestazione** | Do.h |

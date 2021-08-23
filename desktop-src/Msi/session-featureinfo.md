@@ -1,7 +1,7 @@
 ---
-description: Il metodo FeatureInfo dell'oggetto Session restituisce un oggetto FeatureInfo che contiene informazioni descrittive per la funzionalità specificata.
+description: Il metodo FeatureInfo dell'oggetto Session restituisce un oggetto FeatureInfo contenente informazioni descrittive per la funzionalità specificata.
 ms.assetid: f5391fd4-984e-44cc-8b6c-fd97834e0674
-title: Session. FeatureInfo, metodo
+title: Metodo Session.FeatureInfo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 6cb2acd17dd7d07024e0b490beb6d13ad2bafd6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4d6e44a16305d4a46525cfed631068ff0137c642b09b8dc6a9eca169a104548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625199"
 ---
-# <a name="sessionfeatureinfo-method"></a>Session. FeatureInfo, metodo
+# <a name="sessionfeatureinfo-method"></a>Metodo Session.FeatureInfo
 
-Il metodo **FeatureInfo** dell'oggetto [**Session**](session-object.md) restituisce un oggetto **FeatureInfo** che contiene informazioni descrittive per la funzionalità specificata.
+Il **metodo FeatureInfo** dell'oggetto [**Session**](session-object.md) restituisce un **oggetto FeatureInfo** contenente informazioni descrittive per la funzionalità specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,9 +56,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISession è definito come 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession è definito \_ come 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
 
 
 

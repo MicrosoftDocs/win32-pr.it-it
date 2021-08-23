@@ -42,7 +42,7 @@ BOOL __cdecl FRGBIMEColorStyle(
 *pcolorstyle* \[ Pollici\]
 </dt> <dd>
 
-Struttura **IMECOLORSTY** restituita da una [**funzione PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) [**o PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
+Struttura **IMECOLORSTY** restituita da una [**funzione PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 

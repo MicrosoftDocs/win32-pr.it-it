@@ -1,28 +1,28 @@
 ---
-description: Il modo migliore per configurare le preferenze di lingua dell'applicazione per l'applicazione MUI è supportare lo stesso set di lingue dell'interfaccia utente del sistema operativo di destinazione.
+description: Il modo preferito per l'applicazione MUI per impostare le preferenze di lingua dell'applicazione è supportare lo stesso set di lingue dell'interfaccia utente del sistema operativo di destinazione.
 ms.assetid: 6f5f4782-6e9b-4b30-8728-2bff66c3e1b3
-title: Supporto delle impostazioni della lingua di sistema
+title: Supporto del linguaggio di sistema Impostazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e428a2db855ebfa4e15c8249ea85be7d24f034d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 897da3026ee10820e2c0bc44834d276da3573e5aa0b99060b3580130c01ef9ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389995"
 ---
-# <a name="supporting-system-language-settings"></a>Supporto delle impostazioni della lingua di sistema
+# <a name="supporting-system-language-settings"></a>Supporto del linguaggio di sistema Impostazioni
 
-Il modo migliore per configurare le preferenze di lingua dell'applicazione per l'applicazione MUI è supportare lo stesso set di lingue dell'interfaccia utente del sistema operativo di destinazione. L'applicazione dipende semplicemente dal sistema operativo per selezionare la lingua dell'interfaccia utente corretta per la visualizzazione. Un esempio associato è disponibile nell' [esempio di applicazione MUI: System Settings](mui-system-settings-application-sample.md).
+Il modo preferito per l'applicazione MUI per impostare le preferenze di lingua dell'applicazione è supportare lo stesso set di lingue dell'interfaccia utente del sistema operativo di destinazione. L'applicazione dipende semplicemente dal sistema operativo per selezionare la lingua dell'interfaccia utente corretta per la visualizzazione. Un esempio associato è disponibile in [MUI: System Impostazioni Application Sample](mui-system-settings-application-sample.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Impostazione delle preferenze di lingua dell'applicazione](setting-application-language-preferences.md)
+[Impostazione delle preferenze della lingua dell'applicazione](setting-application-language-preferences.md)
 </dt> <dt>
 
-[Esempio di applicazione delle impostazioni di sistema MUI:](mui-system-settings-application-sample.md)
+[MUI: Esempio di applicazione Impostazioni sistema](mui-system-settings-application-sample.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Commenti (msfeeds. h)
-description: Aggiungere commenti ai metafile seguendo la sintassi Extensible Markup Language (XML). I commenti iniziano con \ 0034; --\ 0034; e terminano con \ 0034;--\ 0034;.
+title: Commenti (Msfeeds.h)
+description: Aggiungere commenti ai metafile seguendo la sintassi Extensible Markup Language (XML). I commenti iniziano con \ 0034; -- \ 0034; e terminano con \ 0034;-- \ 0034;.
 ms.assetid: 3d8dbf13-bd48-4405-804f-57e0f5eff642
 keywords:
-- Commenti Media Player Windows
+- Commenti Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 701f456cae9f1432ed42235a3a6e13af555b2b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fe5aaf9dde3d804bb91a1e2551636c86aa54ff2bec599bf06100ee2622b592a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135784"
 ---
-# <a name="comments-msfeedsh"></a>Commenti (msfeeds. h)
+# <a name="comments-msfeedsh"></a>Commenti (Msfeeds.h)
 
-Aggiungere commenti ai metafile seguendo la sintassi Extensible Markup Language (XML). I commenti iniziano con " &lt; !--" e terminano con "-- &gt; ".
+Aggiungere commenti ai metafile seguendo la sintassi Extensible Markup Language (XML). I commenti iniziano con &lt; "!--" e terminano con "-- &gt; ".
 
 ``` syntax
 
@@ -32,7 +32,7 @@ Aggiungere commenti ai metafile seguendo la sintassi Extensible Markup Language 
 
 ## <a name="remarks"></a>Commenti
 
-I commenti possono trovarsi ovunque tranne che nel contenuto dell'elemento (tra tag di apertura e chiusura dell'elemento,  < >). Non fanno parte dei dati di tipo carattere del documento e vengono ignorati durante l'analisi del metafile.
+I commenti possono essere visualizzati ovunque tranne all'interno del contenuto dell'elemento (tra i tag di apertura e chiusura degli elementi,  < >). Non fanno parte dei dati di tipo carattere del documento e vengono ignorati quando il metafile viene analizzato.
 
 ## <a name="examples"></a>Esempio
 
@@ -62,7 +62,7 @@ I commenti possono trovarsi ovunque tranne che nel contenuto dell'elemento (tra 
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ I commenti possono trovarsi ovunque tranne che nel contenuto dell'elemento (tra 
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> </dl>
 
  

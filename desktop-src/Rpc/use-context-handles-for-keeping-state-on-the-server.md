@@ -1,25 +1,25 @@
 ---
-title: Usare gli handle di contesto per mantenere lo stato nel server
-description: Usare gli handle di contesto per mantenere lo stato nel server
+title: Usare handle di contesto per mantenere lo stato nel server
+description: Usare handle di contesto per mantenere lo stato nel server
 ms.assetid: ee511745-04cf-445d-a02b-41734aabc193
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b90bf14632ed1821a1a097a64951f6ca9aef751d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0cc9360d4edf95c06cef30a0e07f0e541a89823e89b163d5bbb61e0fb686a4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010959"
 ---
-# <a name="use-context-handles-for-keeping-state-on-the-server"></a>Usare gli handle di contesto per mantenere lo stato nel server
+# <a name="use-context-handles-for-keeping-state-on-the-server"></a>Usare handle di contesto per mantenere lo stato nel server
 
-**Procedura consigliata:** Ogni volta che lo stato viene mantenuto nel server tra le chiamate, utilizzare gli handle del contesto.
+**Procedura consigliata:** Ogni volta che lo stato viene mantenuto nel server tra le chiamate, usare handle di contesto.
 
-Gli handle di contesto sono spesso intimidatori per i nuovi programmatori RPC e l'overhead degli handle del contesto di apprendimento potrebbe non essere inizialmente degno di sforzo. Vale la pena perché gli handle di contesto hanno soluzioni predefinite per molti problemi comuni riscontrati nella programmazione di rete che altrimenti sarebbe necessario implementare da zero. Informazioni sugli handle di contesto pagano i dividendi in un secondo momento.
+Gli handle di contesto sono spesso in difficoltà per i nuovi programmatori RPC e il sovraccarico degli handle di contesto di apprendimento potrebbe inizialmente non risultare utile. Ne vale la pena perché gli handle di contesto hanno soluzioni incorporate per molti problemi comuni riscontrati nella programmazione di rete che altrimenti sarebbe necessario eseguire da zero. La comprensione degli handle di contesto paga i dividendi in un secondo momento.
 
- 
+ 
 
- 
+ 
 
 
 

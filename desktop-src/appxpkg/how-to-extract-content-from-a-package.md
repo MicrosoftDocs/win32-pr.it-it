@@ -1,25 +1,25 @@
 ---
 title: Estrarre il contenuto del pacchetto dell'app (C++)
-description: Informazioni su come estrarre i file dal pacchetto dell'app per un'app di Windows usando l'API per la creazione di pacchetti.
+description: Informazioni su come estrarre file dal pacchetto dell'app per un'app Windows usando l'API di creazione pacchetti.
 ms.assetid: 72C368F9-2EBA-4930-81CF-9B85717CC0AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8830ba7bc21553a9f8145bc97a6b98b3e32729af
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 4960a2b30ad7946f1f68e11df5170ae5246f3c36564a7e5e9bc27595be0b7903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104398837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049049"
 ---
 # <a name="extract-app-package-contents-c"></a>Estrarre il contenuto del pacchetto dell'app (C++)
 
-Informazioni su come estrarre i file dal pacchetto dell'app per un'app di Windows usando l'API per la creazione di [pacchetti](interfaces.md).
+Informazioni su come estrarre file dal pacchetto dell'app per un'app Windows usando [l'API di creazione pacchetti](interfaces.md).
 
-È anche possibile usare lo strumento MakeAppx.exe per estrarre i file da un pacchetto o un bundle dell'app. Per ulteriori informazioni, vedere [estrarre file da un pacchetto o un bundle](/windows/msix/package/create-app-package-with-makeappx-tool#extract-files-from-a-package-or-bundle) .
+È anche possibile usare lo strumento MakeAppx.exe per estrarre file da un pacchetto o un bundle dell'app. Per [altre informazioni, vedere Estrarre file](/windows/msix/package/create-app-package-with-makeappx-tool#extract-files-from-a-package-or-bundle) da un pacchetto o un bundle.
 
-### <a name="create-a-package-reader"></a>Creazione di un lettore di pacchetti
+### <a name="create-a-package-reader"></a>Creare un lettore di pacchetti
 
-Per creare un lettore di pacchetti, chiamare il metodo [**IAppxFactory:: CreatePackageReader**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) . Il primo parametro è un flusso di input per il pacchetto (file con estensione appx). Il secondo parametro è un parametro di output che riceve un puntatore a un puntatore [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader) .
+Per creare un lettore di pacchetti, chiamare il [**metodo IAppxFactory::CreatePackageReader.**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) Il primo parametro è un flusso di input per il pacchetto (file con estensione appx). Il secondo parametro è un parametro di output che riceve un puntatore a un [**puntatore IAppxPackageReader.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader)
 
 
 ```C++
@@ -127,9 +127,9 @@ HRESULT GetPackageReader(
 
 
 
-### <a name="extract-footprint-files"></a>Estrai file footprint
+### <a name="extract-footprint-files"></a>Estrarre i file di footprint
 
-Chiamare il metodo [**IAppxPackageReader:: GetFootprintFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile) per ottenere ogni file footprint. Ogni file di footprint è rappresentato da un'interfaccia [**IAppxFile**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) . La `ExtractFile` funzione in questo esempio usa i metodi [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)e [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) di **IAppxFile** per visualizzare le informazioni di base sul file footprint.
+Chiamare il [**metodo IAppxPackageReader::GetFootprintFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile) per ottenere ogni file di footprint. Ogni file di footprint è rappresentato da [**un'interfaccia IAppxFile.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) La `ExtractFile` funzione in questo esempio usa i metodi [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)e [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) di **IAppxFile** per visualizzare informazioni di base sul file di footprint.
 
 
 ```C++
@@ -267,7 +267,7 @@ HRESULT ExtractFile(
 
 
 
-Il codice precedente usa le definizioni delle variabili e la `GetOutputStream` funzione di supporto.
+Il codice precedente usa queste definizioni di variabili e la `GetOutputStream` funzione helper.
 
 
 ```C++
@@ -354,9 +354,9 @@ HRESULT GetOutputStream(
 
 
 
-### <a name="extract-payload-files"></a>Estrai file di payload
+### <a name="extract-payload-files"></a>Estrarre i file di payload
 
-Chiamare il metodo [**IAppxPackageReader:: GetPayloadFiles**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles) per enumerare i file di payload. Ogni file di payload è rappresentato da un'interfaccia [**IAppxFile**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) . La `ExtractFile` funzione in questo esempio usa i metodi [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)e [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) di **IAppxFile** per visualizzare le informazioni di base sul file di payload.
+Chiamare il [**metodo IAppxPackageReader::GetPayloadFiles**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles) per enumerare i file di payload. Ogni file di payload è rappresentato da [**un'interfaccia IAppxFile.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) La `ExtractFile` funzione in questo esempio usa i metodi [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)e [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) di **IAppxFile** per visualizzare informazioni di base sul file di payload.
 
 Questo codice usa la `ExtractFile` funzione helper illustrata nel passaggio precedente per creare il flusso per il manifesto del pacchetto.
 
@@ -424,7 +424,7 @@ HRESULT ExtractPayloadFiles(
 
 ### <a name="clean-up-the-package-reader"></a>Pulire il lettore di pacchetti
 
-Prima di restituire dalla `wmain` funzione, chiamare il metodo [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) per pulire il reader del pacchetto e chiamare la funzione [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) .
+Prima di restituire dalla funzione, chiamare il metodo Release per pulire il lettore `wmain` di pacchetti e chiamare la funzione [**CoUninitialize.**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
 
 ```C++
@@ -447,7 +447,7 @@ CoUninitialize();
 **Esempi**
 </dt> <dt>
 
-[Esempio di estrazione del contenuto del pacchetto dell'app](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingExtractAppx)
+[Esempio di estrarre il contenuto del pacchetto dell'app](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingExtractAppx)
 </dt> <dt>
 
 **Riferimento**
@@ -456,6 +456,6 @@ CoUninitialize();
 [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

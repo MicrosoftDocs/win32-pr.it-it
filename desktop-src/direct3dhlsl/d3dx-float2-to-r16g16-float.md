@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_FLOAT2_to_R16G16_FLOAT
-description: Comprime di nuovo il XMFLOAT2 specificato in un \_ formato DXGI \_ R16G16 \_ float.
+title: D3DX_FLOAT2_to_R16G16_FLOAT funzione
+description: Racchiude l'oggetto XMFLOAT2 specificato in un float DXGI \_ FORMAT \_ R16G16. \_
 ms.assetid: 8d03fac3-68f0-4c85-afaa-ff2cb76f1b73
 keywords:
-- Funzione D3DX_FLOAT2_to_R16G16_FLOAT HLSL
+- D3DX_FLOAT2_to_R16G16_FLOAT funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 849eb4dde5ab11e98675a1581519aabbeeb1e8da
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f96d9c2652966ef4b35f4c07ec13d1ea5b6f92af641c2e86a1bf4e0b12ca4487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516607"
 ---
-# <a name="d3dx_float2_to_r16g16_float-function"></a>D3DX \_ FLOAT2 \_ to \_ R16G16 \_ float Function
+# <a name="d3dx_float2_to_r16g16_float-function"></a>Funzione FLOAT da D3DX \_ FLOAT2 \_ a \_ R16G16 \_ FLOAT
 
-Comprime di nuovo il XMFLOAT2 specificato in un \_ formato DXGI \_ R16G16 \_ float.
+Racchiude l'oggetto XMFLOAT2 specificato in un float DXGI \_ FORMAT \_ R16G16. \_
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Dati dello shader decompressi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Dati dello shader compressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader compressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

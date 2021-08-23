@@ -1,9 +1,9 @@
 ---
-title: funzione gluCylinder (Glu. h)
+title: Funzione gluCylinder (Glu.h)
 description: La funzione gluCylinder disegna un cilindro.
 ms.assetid: 43329d2f-50bb-46ea-85cb-22956d0df375
 keywords:
-- funzione gluCylinder OpenGL
+- Funzione gluCylinder OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26fd201d1ddd720501715d1ead08d94bab72f7b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a09ff92aec17a13f03ecb1cbaaf118398b2b88dea76936454d527bb9c37032f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061609"
 ---
-# <a name="glucylinder-function"></a>gluCylinder (funzione)
+# <a name="glucylinder-function"></a>Funzione gluCylinder
 
-La funzione **gluCylinder** disegna un cilindro.
+La **funzione gluCylinder** disegna un cilindro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ void WINAPI gluCylinder(
 *qobj* 
 </dt> <dd>
 
-Oggetto quadrica (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
 *baseRadius* 
 </dt> <dd>
 
-Raggio del cilindro a *z* = 0.
+Raggio del cilindro in *z* = 0.
 
 </dd> <dt>
 
-*Raggio* 
+*topRadius* 
 </dt> <dd>
 
-Raggio del cilindro a   =  *altezza* z.
+Raggio del cilindro *all'altezza z.*  =  
 
 </dd> <dt>
 
@@ -73,14 +73,14 @@ Altezza del cilindro.
 
 </dd> <dt>
 
-*fette* 
+*Fette* 
 </dt> <dd>
 
 Numero di suddivisioni intorno all'asse z.
 
 </dd> <dt>
 
-*pile* 
+*Pile* 
 </dt> <dd>
 
 Numero di suddivisioni lungo l'asse z.
@@ -93,13 +93,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluCylinder** disegna un cilindro orientato lungo l'asse z. La base del cilindro viene posizionata in corrispondenza della *z* = 0 e della parte superiore all'  =  *altezza* z. Analogamente a una sfera, un cilindro viene suddiviso in sezioni intorno all'asse z e lungo l'asse z negli stack.
+La **funzione gluCylinder** disegna un cilindro orientato lungo l'asse z. La base del cilindro viene posizionata in *corrispondenza di z* = 0 e la parte superiore all'altezza *z*  =  . Come una sfera, un cilindro viene suddiviso intorno all'asse z in sezioni e lungo l'asse z in stack.
 
-*Si noti che se è* impostato su zero, questa routine genererà un cono.
+Si noti che se *topRadius* è impostato su zero, questa routine genererà un cono.
 
-Se l'orientamento è impostato su GLU \_ all'esterno (con [**gluQuadricOrientation**](gluquadricorientation.md)), eventuali normali generati si allontanano dall'asse z. In caso contrario, puntano verso l'asse z.
+Se l'orientamento è impostato su GLU \_ OUTSIDE (con [**gluQuadricOrientation),**](gluquadricorientation.md)tutte le normali generate puntano all'asse z. In caso contrario, puntano verso l'asse z.
 
-Se la texturing è attivata (con [**gluQuadricTexture**](gluquadrictexture.md)): le coordinate di trama vengono generate in modo che *t* sia lineare da 0,0 a *z* = 0 a 1,0 all'   =  *altezza* z; e *s* intervalli da 0,0 sull'asse y positivo, a 0,25 sull'asse x positivo, fino a 0,5 sull'asse y negativo, fino a 0,75 sull'asse x negativo e viceversa a 1,0 sull'asse y positivo.
+Se la texturing è attivata (con [**gluQuadricTexture):**](gluquadrictexture.md)le coordinate della trama vengono generate in modo che *t* intervalli linearmente da 0,0 a *z* = 0 a 1,0 all'altezza *z*; e s intervalli da  =  0,0 all'asse y positivo, a 0,25 in corrispondenza dell'asse x positivo, a 0,5 in corrispondenza dell'asse y negativo, a 0,75 in corrispondenza dell'asse x negativo e di nuovo a 1,0 in corrispondenza dell'asse y  positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ Se la texturing è attivata (con [**gluQuadricTexture**](gluquadrictexture.md)):
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

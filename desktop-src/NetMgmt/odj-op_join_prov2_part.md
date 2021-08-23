@@ -1,20 +1,20 @@
 ---
 title: OP_JOINPROV2_PART
-description: Definizione di OP_JOINPROV2_PART IDL
+description: OP_JOINPROV2_PART definizione IDL
 ms.assetid: c220627e-49bd-49f2-a03c-9cdef4b973ca
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f8537b6ca9627a15470115a20f99082dae80e040
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: fa6853846695c02aabf85d0be865254608b9d4c00f39a372e99f1332e6eb4003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104118631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012459"
 ---
-# <a name="op_joinprov2_part-structure"></a>Struttura OP_JOINPROV2_PART
+# <a name="op_joinprov2_part-structure"></a>OP_JOINPROV2_PART struttura
 
-Contiene informazioni aggiuntive utilizzate per la configurazione di un client aggiunto a un dominio.
+Contiene informazioni aggiuntive usate per la configurazione di un client aggiunto a un dominio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,28 +38,28 @@ Deve essere impostato su zero o su uno dei valori seguenti:
 
 |Valore|Significato|
 | --- | --- |
-|OP_JP2_FLAG_PERSISTENTSITE (0x00000001)|Il sito specificato in lpSiteName deve essere considerato il sito permanente per il client.|
+|OP_JP2_FLAG_PERSISTENTSITE (0x00000001)|Il sito specificato in lpSiteName DEVE essere considerato il sito permanente per il client.|
 
 ### <a name="lpnetbiosname"></a>lpNetbiosName
 
-Contiene il nome NetBIOS dell'account del computer in formato Unicode.
+Contiene il nome Netbios dell'account computer in formato Unicode.
 
 ### <a name="lpsitename"></a>lpSiteName
 
-Contiene il nome del sito Active Directory che il client deve utilizzare.
+Contiene il nome del sito di Active Directory che deve essere utilizzato dal client.
 
 ### <a name="lpprimarydnsdomain"></a>lpPrimaryDNSDomain
 
-Contiene il nome di dominio DNS primario che il client deve utilizzare.
+Contiene il nome di dominio DNS primario che deve essere utilizzato dal client.
 
 ### <a name="dwreserved"></a>dwReserved
 
-Riservato per un utilizzo futuro e deve essere impostato su 0.
+Riservato per un uso futuro e deve essere impostato su 0.
 
 ### <a name="lpreserved"></a>lpReserved
 
-Riservato per utilizzi futuri e deve essere impostato su NULL.
+Riservato per un uso futuro e deve essere impostato su NULL.
 
 ## <a name="see-also"></a>Vedi anche
 
-[**Definizioni IDL di aggiunta al dominio offline**](odj-idl.md)
+[**Definizioni IDL di aggiunta a un dominio offline**](odj-idl.md)
