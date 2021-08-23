@@ -1,7 +1,7 @@
 ---
 description: Consente al driver di specificare il numero di superfici provvisorie necessarie per supportare il GUID specificato e le dimensioni, la posizione e il formato di ognuna di queste superfici.
 ms.assetid: 1f3207a8-aa6a-47a3-a1d0-19166592eeca
-title: Funzione NtGdiDdGetMoCompBuffInfo (Ntgdi. h)
+title: Funzione NtGdiDdGetMoCompBuffInfo (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 03d471e62edd061ce167e0baf2051836e9634fae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e2d324cf1b0b986845a7fab95c24abb9f44eb4c6024bbba9be101d25e1318a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956330"
 ---
-# <a name="ntgdiddgetmocompbuffinfo-function"></a>NtGdiDdGetMoCompBuffInfo (funzione)
+# <a name="ntgdiddgetmocompbuffinfo-function"></a>Funzione NtGdiDdGetMoCompBuffInfo
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Consente al driver di specificare il numero di superfici provvisorie necessarie per supportare il GUID specificato e le dimensioni, la posizione e il formato di ognuna di queste superfici.
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdGetMoCompBuffInfo(
 
 <dl> <dt>
 
-*hDirectDraw* \[ in\]
+*hDirectDraw* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'oggetto DirectDraw in modalità kernel creato in precedenza.
 
 </dd> <dt>
 
-*puGetBuffData* \[ in uscita\]
+*puGetBuffData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**DD \_ GETMOCOMPCOMPBUFFDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getmocompcompbuffdata) che contiene le informazioni sul buffer compresso.
+Puntatore a [**una struttura \_ DD GETMOCOMPCOMPBUFFDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getmocompcompbuffdata) che contiene le informazioni sul buffer compresso.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntatore a una struttura [**DD \_ GETMOCOMPCOMPBUFFDATA**](/windows/win32/api/d
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Puntatore a una struttura [**DD \_ GETMOCOMPCOMPBUFFDATA**](/windows/win32/api/d
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni, vedere Microsoft DirectX Video Acceleration Driver Development Kit (DDK).
+Per altre informazioni, vedere Microsoft DirectX Video Acceleration Driver Development Kit (DDK).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,7 +86,7 @@ Per ulteriori informazioni, vedere Microsoft DirectX Video Acceleration Driver D
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Per ulteriori informazioni, vedere Microsoft DirectX Video Acceleration Driver D
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

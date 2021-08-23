@@ -1,11 +1,11 @@
 ---
-title: Proprietà RunningTask.Name
-description: Per gli script, ottiene il nome dell'attività.
+title: RunningTask.Name proprietà
+description: Per lo scripting, ottiene il nome dell'attività.
 ms.assetid: 6c21f845-a33f-4625-97e0-d6fc739527a3
 keywords:
-- Utilità di pianificazione proprietà nome
-- Nome proprietà Utilità di pianificazione, oggetto RunningTask
-- Oggetto RunningTask Utilità di pianificazione, proprietà Name
+- Nome proprietà Utilità di pianificazione
+- Proprietà Name Utilità di pianificazione, oggetto RunningTask
+- Oggetto RunningTask Utilità di pianificazione proprietà , Name
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 039c8f5f1b2ac39cf331050a9e2cc0cd186e4537
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56d0a1a9be1c0572ef7fd7e39e26d2a091ad398719d8f8b7cff0430403ff3ffb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002329"
 ---
-# <a name="runningtaskname-property"></a>Proprietà RunningTask.Name
+# <a name="runningtaskname-property"></a>RunningTask.Name proprietà
 
-Per gli script, ottiene il nome dell'attività.
+Per lo scripting, ottiene il nome dell'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Nome dell'attività.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

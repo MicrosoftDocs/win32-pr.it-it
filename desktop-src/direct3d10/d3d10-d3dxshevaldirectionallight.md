@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 551dad8081af2b0138be4758682d5a660f621141
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7fb50ac274455c67da00d73f91319c0fa17ae85c46f74f4ef605af33e0085ddd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990891"
 ---
 # <a name="d3dxshevaldirectionallight-function-d3dx10h"></a>Funzione D3DXSHEvalDirectionalLight (D3DX10.h)
 
@@ -127,13 +127,13 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Il vettore di output viene calcolato in modo che se il rapporto di intensità R/G/B è uguale a 1, la luminosità di uscita risultante di un punto direttamente sotto la luce su un oggetto diffuso con un albedo pari a 1 sarebbe 1,0. Verranno calcolati tre esempi spettrale. Verrà restituito pROut, mentre pGOut e pBOut possono essere restituiti.
+Il vettore di output viene calcolato in modo che se il rapporto di intensità R/G/B è uguale a 1, la sorgente di uscita risultante di un punto direttamente sotto la luce su un oggetto diffuso con un albedo pari a 1 sarà 1,0. Verranno calcolati tre esempi spettrali. Verrà restituito pROut, mentre pGOut e pBOut possono essere restituiti.
 
-Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo circa l'asse z nella direzione destra e phi, l'angolo da z.
+Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente con theta, l'angolo sull'asse z nella direzione a destra e phi, l'angolo da z.
 
 ![illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
-Le equazioni seguenti mostrano la relazione tra coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
+Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 
 ![equazioni della relazione tra coordinate cartesiane e sferiche](images/spherical-coordinates-equations.png)
 

@@ -1,22 +1,22 @@
 ---
-title: Uso di IADs per ottenere un descrittore di sicurezza
-description: Negli esempi di codice seguenti viene usato il metodo IADs Get per recuperare un puntatore IADsSecurityDescriptor alla proprietà nTSecurityDescriptor di un oggetto in Active Directory Domain Services.
+title: Uso di IAD per ottenere un descrittore di sicurezza
+description: Negli esempi di codice seguenti viene utilizzato il metodo Get IADs per recuperare un puntatore IADsSecurityDescriptor alla proprietà nTSecurityDescriptor di un oggetto in Active Directory Domain Services.
 ms.assetid: ce8948ac-0644-42a0-8b77-5a06d3fcf042
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, uso di IADs per ottenere un descrittore di sicurezza
+- Esempi di Active Directory Active Directory, uso di IAD per ottenere un descrittore di sicurezza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef6fa2a4137f39bc31251f3b327b9dfc29a91318
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 24ecf0d8921e797a4d226d472f34b3172a01d9fb67d96ca61e9f0b491a7f7851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024519"
 ---
-# <a name="using-iads-to-get-a-security-descriptor"></a>Uso di IADs per ottenere un descrittore di sicurezza
+# <a name="using-iads-to-get-a-security-descriptor"></a>Uso di IAD per ottenere un descrittore di sicurezza
 
-Gli esempi di codice seguenti usano il metodo [**IADs:: Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare un puntatore [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) alla proprietà **nTSecurityDescriptor** di un oggetto in Active Directory Domain Services.
+Negli esempi di codice seguenti viene utilizzato il metodo [**IADs::Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare un puntatore [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) alla proprietà **nTSecurityDescriptor** di un oggetto in Active Directory Domain Services.
 
 
 ```VB
@@ -90,6 +90,6 @@ HRESULT GetSDFromIADs(
 
 
 
- 
+ 
 
- 
+ 

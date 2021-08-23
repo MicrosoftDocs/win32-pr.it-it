@@ -1,7 +1,7 @@
 ---
-description: Ottiene l'handle di un oggetto pass cercandone il nome.
+description: Ottiene l'handle di un passaggio cercandone il nome.
 ms.assetid: 24d043a2-5c87-4a59-80d4-0c81bd7a0b3e
-title: 'Metodo ID3DXBaseEffect:: GetPassByName (D3DX9Effect. h)'
+title: Metodo ID3DXBaseEffect::GetPassByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 2cd96a9d91f0e822b3e869bd8f0c965f0f951f44
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5837d2b69c793f788c4c89f648402e7924bc2f3af9a92bbbe596c133efe10d1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987761"
 ---
-# <a name="id3dxbaseeffectgetpassbyname-method"></a>Metodo ID3DXBaseEffect:: GetPassByName
+# <a name="id3dxbaseeffectgetpassbyname-method"></a>Metodo ID3DXBaseEffect::GetPassByName
 
-Ottiene l'handle di un oggetto pass cercandone il nome.
+Ottiene l'handle di un passaggio cercandone il nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetPassByName(
 
 <dl> <dt>
 
-*hTechnique* \[ in\]
+*hTechnique* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle della tecnica padre. Vedere [handle (Direct3D 9)](handles.md).
+Handle della tecnica padre. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Stringa contenente il nome del passaggio.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce l'handle del primo passaggio all'interno della tecnica specificata con il nome specificato o **null** se il nome non è stato trovato. Vedere [handle (Direct3D 9)](handles.md).
+Restituisce l'handle del primo passaggio all'interno della tecnica specificata con il nome specificato oppure **NULL** se il nome non è stato trovato. Vedere [Handle (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Restituisce l'handle del primo passaggio all'interno della tecnica specificata c
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

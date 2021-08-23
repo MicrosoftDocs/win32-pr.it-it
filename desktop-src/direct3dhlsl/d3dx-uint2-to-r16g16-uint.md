@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_UINT2_to_R16G16_UINT
-description: Comprime di nuovo il XMUINT2 specificato in un \_ formato DXGI \_ R16G16 \_ uint.
+title: D3DX_UINT2_to_R16G16_UINT funzione
+description: Racchiude L'oggetto XMUINT2 specificato in un UINT DXGI \_ FORMAT \_ R16G16. \_
 ms.assetid: 1f8aef92-7f34-4020-8a7e-6204922fc6d4
 keywords:
-- Funzione D3DX_UINT2_to_R16G16_UINT HLSL
+- D3DX_UINT2_to_R16G16_UINT funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59a20b62fc5d8078152ed483ae49afceeeda4f6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 31d938f74874748715a0e90e4eace54f222699b61fbb4655238b2ebca8ace7ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986795"
 ---
-# <a name="d3dx_uint2_to_r16g16_uint-function"></a>D3DX \_ UINT2 \_ a \_ R16G16 \_ uint Function
+# <a name="d3dx_uint2_to_r16g16_uint-function"></a>Funzione UINT da D3DX \_ a \_ \_ R16G16 \_
 
-Comprime di nuovo il XMUINT2 specificato in un \_ formato DXGI \_ R16G16 \_ uint.
+Racchiude L'oggetto XMUINT2 specificato in un UINT DXGI \_ FORMAT \_ R16G16. \_
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ UINT D3DX_UINT2_to_R16G16_UINT(
 *unpackedInput* 
 </dt> <dd>
 
-Dati dello shader da comprimere.
+Dati shader da imballare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Dati dello shader compressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader compressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e impacchettamento del formato DXGI \_ per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

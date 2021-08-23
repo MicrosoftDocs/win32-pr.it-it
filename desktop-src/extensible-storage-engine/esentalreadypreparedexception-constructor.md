@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentAlreadyPreparedException'
+description: Altre informazioni sul costruttore EsentAlreadyPreparedException
 title: Costruttore EsentAlreadyPreparedException
 TOCTitle: 'EsentAlreadyPreparedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentAlreadyPreparedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a96448ccd3abdaed7b789b463f08c5d5c8e6f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9927a8f75868c40f93aab84f79e1f03e86ca1b88f1a1a4c6d99d8ed174199c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117390"
 ---
 # <a name="esentalreadypreparedexception-constructor"></a>Costruttore EsentAlreadyPreparedException
 
 Inizializza una nuova istanza della classe EsentAlreadyPreparedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentAlreadyPreparedException()
 
 [Membri di EsentAlreadyPreparedException](./esentalreadypreparedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

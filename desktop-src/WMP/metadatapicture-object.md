@@ -1,9 +1,9 @@
 ---
 title: Oggetto MetadataPicture
-description: L'oggetto MetadataPicture fornisce un modo per recuperare i valori dell'attributo di metadati WM/Picture. Questo attributo corrisponde agli album Art contenuti in un file multimediale digitale, non all'Art album scaricato tramite Internet.
+description: L'oggetto MetadataPicture consente di recuperare i valori dell'attributo dei metadati WM/Picture. Questo attributo corrisponde alla grafica degli album contenuta in un file multimediale digitale, non alla grafica degli album scaricata su Internet.
 ms.assetid: c0d6f43d-1a88-4ac2-a7b3-c502f4d57afb
 keywords:
-- Media Player di Windows oggetto MetadataPicture
+- Oggetto MetadataPicture Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,33 +13,33 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 892b162ba05ab43740565c849b00bc4e3c52aad6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 261ed17a156e1b5563b52744490e2ed014803eb9f1e75c182f44d5bd228b11c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996211"
 ---
 # <a name="metadatapicture-object"></a>Oggetto MetadataPicture
 
-L'oggetto **MetadataPicture** fornisce un modo per recuperare i valori dell'attributo di metadati [**WM/Picture**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_picture) . Questo attributo corrisponde agli album Art contenuti in un file multimediale digitale, non all'Art album scaricato tramite Internet.
+**L'oggetto MetadataPicture** consente di recuperare i valori dell'attributo dei metadati [**WM/Picture.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_picture) Questo attributo corrisponde alla grafica degli album contenuta in un file multimediale digitale, non alla grafica degli album scaricata su Internet.
 
-L'oggetto **MetadataPicture** supporta le proprietà seguenti.
+**L'oggetto MetadataPicture** supporta le proprietà seguenti.
 
 
 
 | Proprietà                                           | Descrizione                                       |
 |----------------------------------------------------|---------------------------------------------------|
-| [**Descrizione**](metadatapicture-description.md) | Recupera una descrizione dell'immagine dei metadati.    |
-| [**mimeType**](metadatapicture-mimetype.md)       | Recupera il tipo MIME dell'immagine dei metadati.    |
-| [**pictureType**](metadatapicture-picturetype.md) | Recupera il tipo di immagine dell'immagine dei metadati. |
+| [**description**](metadatapicture-description.md) | Recupera una descrizione dell'immagine dei metadati.    |
+| [**Mimetype**](metadatapicture-mimetype.md)       | Recupera il tipo MIME dell'immagine dei metadati.    |
+| [**tipo di immagine**](metadatapicture-picturetype.md) | Recupera il tipo di immagine dell'immagine dei metadati. |
 | [**URL**](metadatapicture-url.md)                 | Solo per uso interno.                                |
 
 
 
- 
+ 
 
-È possibile accedere all'oggetto **MetadataPicture** tramite il metodo seguente.
+È **possibile accedere all'oggetto MetadataPicture** tramite il metodo seguente.
 
 
 
@@ -49,17 +49,17 @@ L'oggetto **MetadataPicture** supporta le proprietà seguenti.
 
 
 
- 
+ 
 
-Ai fini dell'illustrazione, `player.currentMedia.getItemInfoByType(name, language, index)` viene usato nelle sezioni della sintassi di riferimento.
+A scopo illustrativo, `player.currentMedia.getItemInfoByType(name, language, index)` viene usato nelle sezioni relative alla sintassi di riferimento.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**Riferimento del modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
+[**Informazioni di riferimento sul modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

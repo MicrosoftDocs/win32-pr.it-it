@@ -4,20 +4,20 @@ description: Gestione degli errori sconosciuti
 ms.assetid: d6a4cc60-8320-4b67-9f2e-7c4bea6c37fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8c3d9e70b89a9a78be62d2940ad8a69ac34c8f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 38fb0e8aaaef8fc3ff4ae9bb76f76a845c325c4b5a5dc4d409dbd0ab35734ce4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048259"
 ---
 # <a name="handling-unknown-errors"></a>Gestione degli errori sconosciuti
 
-È lecito restituire un codice di stato solo dall'implementazione di un metodo di interfaccia approvato come legalmente restituibile. La mancata osservanza di questa regola consente di verificare la possibilità di conflitto tra i valori restituiti del codice di errore e quelli approvati dall'applicazione. Prestare particolare attenzione a questo potenziale problema durante la propagazione dei codici di errore dalle funzioni chiamate internamente.
+È legale restituire un codice di stato solo dall'implementazione di un metodo di interfaccia sancito come legalmente restituibile. La mancata osservazione di questa regola consente di creare un conflitto tra i valori del codice di errore restituiti e quelli sanzionati dall'applicazione. Prestare particolare attenzione a questo potenziale problema quando si propagano codici di errore da funzioni chiamate internamente.
 
-Le applicazioni che chiamano interfacce devono considerare qualsiasi codice di errore restituito sconosciuto (in contrapposizione a un codice di esito positivo) come sinonimo di E \_ imprevisto. Questa pratica di gestione dei codici di errore sconosciuti è richiesta dai client delle funzioni e delle interfacce definite da COM. Poiché la procedura di programmazione tipica consiste nel gestire alcuni codici di errore specifici e trattare il resto in modo generico, è facile soddisfare questo requisito per la gestione di codici di errore imprevisti o sconosciuti.
+Le applicazioni che chiamano le interfacce devono considerare qualsiasi codice di errore restituito sconosciuto (anziché un codice di esito positivo) come sinonimo di E \_ UNEXPECTED. Questa pratica di gestione dei codici di errore sconosciuti è richiesta dai client delle funzioni e delle interfacce definite da COM. Poiché la tipica procedura di programmazione consiste nel gestire alcuni codici di errore specifici in modo dettagliato e nel trattare il resto in modo generico, questo requisito di gestione dei codici di errore imprevisti o sconosciuti è facilmente soddisfatto.
 
-È importante gestire tutti i possibili errori quando si chiama un metodo di interfaccia. In caso contrario, potrebbe causare l'arresto anomalo dell'applicazione, il danneggiamento dei dati o il rischio di essere vulnerabile agli exploit di sicurezza. Nell'esempio di codice seguente viene illustrata la modalità consigliata per la gestione degli errori sconosciuti:
+È importante gestire tutti gli errori possibili quando si chiama un metodo di interfaccia. In caso contrario, l'applicazione potrebbe bloccarsi, danneggiare i dati o diventare vulnerabile agli exploit di sicurezza. L'esempio di codice seguente illustra il modo consigliato per gestire gli errori sconosciuti:
 
 
 ```C++
@@ -48,7 +48,7 @@ switch (GetScode(hr))
 
 
 
-Il controllo degli errori seguente viene spesso usato con le routine che non restituiscono alcun valore speciale (ad eccezione di S \_ OK o di un errore imprevisto):
+Il controllo degli errori seguente viene spesso usato con le routine che non restituiscono alcun elemento speciale ,ad eccezione di S \_ OK o di un errore imprevisto:
 
 
 ```C++
@@ -71,9 +71,9 @@ else
 [Gestione degli errori in COM](error-handling-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

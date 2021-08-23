@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_VPNv2_NativeProfile02
-description: La \_ classe MDM VPNv2 \_ NativeProfile2 definisce le informazioni sul profilo quando si usa un protocollo VPN della posta in arrivo di Windows (IKEV2, PPTP, L2TP).
+title: MDM_VPNv2_NativeProfile02 classe
+description: La classe Mdm VPNv2 NativeProfile2 definisce le informazioni sul profilo quando si usa un protocollo VPN di posta in arrivo \_ \_ di Windows (IKEv2, PPTP, L2TP).
 ms.assetid: 50c4adc6-baef-437c-8223-9aeaaec813af
 keywords:
-- Classe MDM_VPNv2_NativeProfile02
-- Classe MDM_VPNv2_NativeProfile02, descritta
+- MDM_VPNv2_NativeProfile02 classe
+- MDM_VPNv2_NativeProfile02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8573975c488df6e5c759e719d5c687f6a71c505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b09152d705e7746aded2487d06c5668c766e37940a620a19ff15733ac6522459
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076955"
 ---
-# <a name="mdm_vpnv2_nativeprofile02-class"></a>\_Classe MDM VPNv2 \_ NativeProfile02
+# <a name="mdm_vpnv2_nativeprofile02-class"></a>Classe \_ Mdm VPNv2 \_ NativeProfile02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ VPNv2 \_ NativeProfile2** definisce le informazioni sul profilo quando si usa un protocollo VPN della posta in arrivo di Windows (IKEV2, PPTP, L2TP).
+La **classe MDM \_ VPNv2 \_ NativeProfile2** definisce le informazioni sul profilo quando si usa un protocollo VPN di posta in arrivo di Windows (IKEv2, PPTP, L2TP).
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -49,26 +49,26 @@ class MDM_VPNv2_NativeProfile02
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ VPNv2 \_ NativeProfile02** presenta questi tipi di membri:
+La **classe MDM \_ VPNv2 \_ NativeProfile02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ VPNv2 \_ NativeProfile02** dispone di queste proprietà.
+La **classe Mdm \_ VPNv2 \_ NativeProfile02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica il nome del nodo padre.
@@ -78,10 +78,10 @@ Identifica il nome del nodo padre.
 [L2tpPsk](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-l2tppsk)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -89,37 +89,37 @@ Tipo di accesso: lettura/scrittura
 [NativeProtocolType](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-nativeprotocoltype)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/VPNv2/*ProfileName*"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/VPNv2/*ProfileName*"
 
 </dd> <dt>
 
 [RoutingPolicyType](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-trafficfilterlist-trafficfilterid-routingpolicytype)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -127,10 +127,10 @@ Tipo di accesso: lettura/scrittura
 [Server](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-servers)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -141,10 +141,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -153,7 +153,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

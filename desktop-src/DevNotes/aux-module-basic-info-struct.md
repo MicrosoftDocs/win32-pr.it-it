@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni di base sul modulo.
 ms.assetid: 5cdb0b11-8bd3-46d2-b214-85cdb2f274a7
-title: Struttura AUX_MODULE_BASIC_INFO (aux \_ klib. h)
+title: AUX_MODULE_BASIC_INFO struttura (Aux \_ klib.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Aux_klib.h
-ms.openlocfilehash: 1ee7300ec2c2d84e1ddadc4149135dab53d2336b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1a25af780016c226acf46348573def8505669e16f1f645fcfce1c9324bb086d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956150"
 ---
-# <a name="aux_module_basic_info-structure"></a>\_Struttura delle \_ informazioni di base del modulo aux \_
+# <a name="aux_module_basic_info-structure"></a>Struttura DELLE INFORMAZIONI \_ \_ DI BASE DEL \_ MODULO AUX
 
 Contiene informazioni di base sul modulo.
 
@@ -39,16 +39,16 @@ typedef struct _AUX_MODULE_BASIC_INFO {
 
 <dl> <dt>
 
-**ImageBase sul**
+**ImageBase**
 </dt> <dd>
 
-Indirizzo di base del modulo nello spazio degli indirizzi del kernel.
+Indirizzo di base del modulo all'interno dello spazio indirizzi del kernel.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La libreria di oggetti che implementa questa API può essere scaricata da [qui](https://www.microsoft.com/?ref=go).
+La libreria di oggetti che implementa questa API può essere scaricata da [qui.](https://www.microsoft.com/?ref=go)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ La libreria di oggetti che implementa questa API può essere scaricata da [qui](
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | Libreria API ausiliaria Windows versione 1,0 o successiva<br/>                          |
-| Intestazione<br/>          | <dl> <dt>Aux \_ klib. h</dt> </dl> |
+| Componente ridistribuibile<br/> | Windows Libreria API ausiliaria versione 1.0 o successiva<br/>                          |
+| Intestazione<br/>          | <dl> <dt>Aux \_ klib.h</dt> </dl> |
 
 
 

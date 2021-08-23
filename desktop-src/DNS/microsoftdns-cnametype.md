@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_CNAMEType
-description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record di nome canonico (CNAME).
+title: MicrosoftDNS_CNAMEType classe
+description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record CNAME (Canonical Name).
 ms.assetid: 93a972e3-abb1-425f-beb7-32abe7d0b485
 keywords:
-- DNS della classe MicrosoftDNS_CNAMEType
-- MicrosoftDNS_CNAMEType della classe DNS, descritta
+- MicrosoftDNS_CNAMEType DNS della classe
+- MicrosoftDNS_CNAMEType classe DNS , descritto
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dca8729c2c750e1cef774b5f0f3eadc3e2f6fbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e819380726fb311d3e892ff3ae1610890f87330cc3d15ac7e9459985aa775354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076845"
 ---
-# <a name="microsoftdns_cnametype-class"></a>\_Classe MicrosoftDNS CNAMEType
+# <a name="microsoftdns_cnametype-class"></a>Classe \_ CNAMEType MicrosoftDNS
 
-Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record di nome canonico (CNAME).
+Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record CNAME (Canonical Name).
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_CNAMEType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Members
 
-La **classe \_ CNAMEType di MicrosoftDNS** dispone di questi tipi di membri:
+La **classe \_ CNAMEType MicrosoftDNS** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ CNAMEType di MicrosoftDNS** dispone di questi metodi.
+La **classe \_ CNAMEType MicrosoftDNS** include questi metodi.
 
 
 
 | Metodo                             | Descrizione                                                                                                                                                                                                                                                                                                                                                    |
 |:-----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea un'istanza di un record di risorse CNAME basato sui dati nei parametri di input del metodo: il nome del server DNS del record, il nome del contenitore, il nome del proprietario, la classe (impostazione predefinita = IN), il valore di durata (TTL) e il nome primario del record CNAME. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementata, statica<br/> |
-| **Modifica**                         | Aggiorna il nome TTL e il nome primario ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementato<br/>                        |
+| **CreateInstanceFromPropertyData** | Crea un'istanza di un record di risorse CNAME in base ai dati nei parametri di input del metodo: nome del server DNS del record, nome del contenitore, nome del proprietario, classe (impostazione predefinita = IN), valore di time-to-live e nome primario del record CNAME. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementati, statici<br/> |
+| **Modifica**                         | Aggiorna la durata (TTL) e il nome primario ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementati<br/>                        |
 
 
 
@@ -64,14 +64,14 @@ La **classe \_ CNAMEType di MicrosoftDNS** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CNAMEType di MicrosoftDNS** dispone di queste proprietà.
+La **classe MicrosoftDNS \_ CNAMEType** dispone di queste proprietà.
 
 <dl> <dt>
 
 **PrimaryName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,7 +90,7 @@ Nome canonico o primario per il proprietario del record CNAME.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ Nome canonico o primario per il proprietario del record CNAME.
 
 <dl> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ CNAMEType**](microsoftdns-cnametype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe CNAMEType MicrosoftDNS \_**](microsoftdns-cnametype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe CNAMEType di MicrosoftDNS**](microsoftdns-cnametype-modify.md)
+[**Metodo Modify della classe CNAMEType MicrosoftDNS \_**](microsoftdns-cnametype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

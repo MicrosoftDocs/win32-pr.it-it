@@ -1,27 +1,27 @@
 ---
-title: Uso delle intestazioni di richiesta/risposta per le notifiche BITS
-description: BITS può inviare il percorso del file di caricamento (per riferimento) all'applicazione server oppure inviare il file di caricamento nel corpo della richiesta (per valore).
+title: Uso delle intestazioni di richiesta/risposta di notifica BITS
+description: BITS può inviare il percorso del file di caricamento (per riferimento) all'applicazione server oppure può inviare il file di caricamento nel corpo della richiesta (per valore).
 ms.assetid: b80f9077-54e7-4d10-909a-dee7d8822627
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 5dcbee8b82d96a4f13db0ae4de6441e9df40ce83
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3db568f483468cbc92474f24f830da5bf1be94a2165cbb69a2d1751cc58965dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021069"
 ---
-# <a name="using-bits-notification-requestresponse-headers"></a>Uso delle intestazioni di richiesta/risposta per le notifiche BITS
+# <a name="using-bits-notification-requestresponse-headers"></a>Uso delle intestazioni di richiesta/risposta di notifica BITS
 
-BITS può inviare il percorso del file di caricamento (per riferimento) all'applicazione server oppure inviare il file di caricamento nel corpo della richiesta (per valore). Per specificare il modo in cui BITS invia il file di caricamento all'applicazione server, impostare la proprietà della metabase IIS [**BITSServerNotificationType**](bits-iis-extension-properties.md). Se si specifica per riferimento, BITS passa il percorso del file nell'intestazione BITS-request-DataFile-Name. Per inviare una risposta, creare e scrivere la risposta al file specificato nell'intestazione BITS-Response-DataFile-Name.
+BITS può inviare il percorso del file di caricamento (per riferimento) all'applicazione server oppure può inviare il file di caricamento nel corpo della richiesta (per valore). Per specificare il modo in cui BITS invia il file di caricamento all'applicazione server, impostare la proprietà della metabase IIS [**BITSServerNotificationType**](bits-iis-extension-properties.md). Se si specifica per riferimento, BITS passa il percorso del file nell'intestazione BITS-Request-DataFile-Name. Per inviare una risposta, creare e scrivere la risposta nel file specificato nell'intestazione BITS-Response-DataFile-Name.
 
-Le applicazioni server che inviano la stessa risposta a molti client devono usare per riferimento, quindi è presente una sola copia della risposta sul server. Ad esempio, in un'applicazione di aggiornamento software, il client caricherà la configurazione software nell'applicazione server. L'applicazione server determina il pacchetto necessario per il client e invia l'URL del pacchetto a BITS. BITS scarica quindi il pacchetto come risposta.
+Le applicazioni server che inviano la stessa risposta a molti client devono usare per riferimento, pertanto nel server è presente una sola copia della risposta. Ad esempio, in un'applicazione di aggiornamento software, il client carica la configurazione software nell'applicazione server. L'applicazione server determina il pacchetto necessario al client e invia l'URL del pacchetto a BITS. BITS scarica quindi il pacchetto come risposta.
 
-Le applicazioni server che generano risposte univoche per ogni client devono utilizzare per valore. Ad esempio, un'applicazione server che supporta l'acquisto di file musicali deve inviare un file musicale firmato al client. Poiché il file Music firmato è univoco per il client, l'applicazione server non lo archivia nel server. Per valore è utile anche per un'applicazione che è già stata scritta per accettare direttamente i dati del client Web.
+Le applicazioni server che generano risposte univoche per ogni client devono usare per valore. Ad esempio, un'applicazione server che supporta l'acquisto di file musicali dovrà inviare un file musicale firmato al client. Poiché il file musicale firmato è univoco per il client, l'applicazione server non lo archivierebbe nel server. Per valore è utile anche per un'applicazione già scritta per accettare direttamente i dati del client Web.
 
-Per informazioni dettagliate sulle intestazioni di richiesta e risposta usate tra BITS e l'applicazione server, vedere [protocollo di notifica per le applicazioni server](notification-protocol-for-server-applications.md).
+Per informazioni dettagliate sulle intestazioni di richiesta e risposta usate tra BITS e l'applicazione server, vedere [Protocollo di notifica per applicazioni server.](notification-protocol-for-server-applications.md)
 
-Nell'esempio JavaScript seguente viene illustrato come accedere ai file di richiesta e risposta in un'applicazione server che utilizza la notifica di riferimento (BITS passa il percorso dei file nelle intestazioni).
+L'esempio JavaScript seguente illustra come accedere ai file di richiesta e risposta in un'applicazione server che usa per notifica di riferimento (BITS passa il percorso dei file nelle intestazioni).
 
 
 ```JavaScript
@@ -53,15 +53,15 @@ Nell'esempio JavaScript seguente viene illustrato come accedere ai file di richi
 
 
 
-Se si vuole usare un file di risposta diverso da quello specificato in BITS-Response-DataFile-Name, chiamare il metodo **Response. AddHeader** per aggiungere bits-static-Response-URL, come illustrato nell'esempio seguente. Se si specifica un file di risposta diverso, non creare il file di risposta specificato in BITS-Response-DataFile-Name.
+Se si vuole usare un file di risposta diverso da quello specificato in BITS-Response-DataFile-Name, chiamare il metodo **Response.AddHeader** per aggiungere BITS-Static-Response-URL, come illustrato nell'esempio seguente. Se si specifica un file di risposta diverso, non creare il file di risposta specificato in BITS-Response-DataFile-Name.
 
 
 ```JavaScript
   Response.AddHeader "BITS-Static-Response-URL" "https://myserver/mypath/myfile"
 ```
- 
+ 
 
- 
+ 
 
 
 

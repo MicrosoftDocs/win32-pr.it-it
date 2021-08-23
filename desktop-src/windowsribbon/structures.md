@@ -1,19 +1,19 @@
 ---
 title: Strutture (Framework della barra multifunzione)
-description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le strutture del Framework della barra multifunzione di Windows.
+description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per Windows framework della barra multifunzione.
 ms.assetid: 8A109C67-BF05-4BA4-8F12-473F2C773B90
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 928b1c0dcf404c054072dc57c1064dca3b39b096
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: adae6c190acb59ca0916d958266eff0d678fe75554a94aa5bdab14f2724afb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964400"
 ---
 # <a name="structures-ribbon-framework"></a>Strutture (Framework della barra multifunzione)
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le strutture del [Framework della barra multifunzione di Windows](-uiplat-windowsribbon-entry.md) .
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per Windows [framework](-uiplat-windowsribbon-entry.md) della barra multifunzione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,8 +21,8 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 | Argomento                                                                  | Descrizione                                                                                                       |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [**interfaccia utente \_ EVENTPARAMS**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams)<br/>                   | Contiene informazioni su un evento della [**barra multifunzione**](windowsribbon-element-ribbon.md) .<br/>                     |
-| [**\_comando EVENTPARAMS dell'interfaccia utente \_**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams_command)<br/> | Contiene informazioni su un [**comando**](windowsribbon-element-command.md) associato a un evento.<br/> |
+| [**\_EVENTPARAMS DELL'INTERFACCIA UTENTE**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams)<br/>                   | Contiene informazioni su un [**evento della barra**](windowsribbon-element-ribbon.md) multifunzione.<br/>                     |
+| [**COMANDO \_ EVENTPARAMS \_ DELL'INTERFACCIA UTENTE**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams_command)<br/> | Contiene informazioni su un [**oggetto Command**](windowsribbon-element-command.md) associato a un evento.<br/> |
 
 
 
@@ -32,7 +32,7 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 <dl> <dt>
 
-[Guida di riferimento a Windows Ribbon Framework](windowsribbon-reference-entry.md)
+[Windows Informazioni di riferimento sul framework della barra multifunzione](windowsribbon-reference-entry.md)
 </dt> </dl>
 
  

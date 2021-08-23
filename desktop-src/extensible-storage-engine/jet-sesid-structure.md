@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_SESID'
-title: Struttura JET_SESID
+description: 'Altre informazioni su: JET_SESID struttura'
+title: JET_SESID struttura
 TOCTitle: JET_SESID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SESID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_sesid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f547425f40b4336213ef69abe4bba07ee1baa513
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 704d4dc763bb886d2c09e0aa6e6c942f0c171dcf03041e3b35db5ac781863d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979421"
 ---
-# <a name="jet_sesid-structure"></a>Struttura JET_SESID
+# <a name="jet_sesid-structure"></a>JET_SESID struttura
 
-Un JET_SESID contiene un handle per la sessione da usare per le chiamate a JET APIr-.
+Un JET_SESID contiene un handle per la sessione da usare per le chiamate all'APIr JET.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,6 +61,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_SESID](./jet-sesid-members.md)
+[JET_SESID membri](./jet-sesid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

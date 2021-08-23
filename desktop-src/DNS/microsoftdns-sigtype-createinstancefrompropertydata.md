@@ -1,11 +1,11 @@
 ---
 title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_SIGType
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse di firma (SIG).
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse Signature (SIG).
 ms.assetid: 8e83e56f-d2b3-4b71-be70-7d2640d49845
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_SIGType
-- Classe MicrosoftDNS_SIGType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_SIGType classe
+- MicrosoftDNS_SIGType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c21660572d9557e6425b459c5694a7eeee4722cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90501af2f6e492e56d17f88fb6bc74cc72522503760688457832a2374918100e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076725"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_sigtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ SIGType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_sigtype-class"></a>Metodo CreateInstanceFromPropertyData della classe SIGType MicrosoftDNS \_
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse di firma (SIG).
+Il **metodo CreateInstanceFromPropertyData** crea un'istanza di un record di risorse Signature (SIG).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,31 +56,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zona, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per il RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe dell'oggetto RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -89,7 +89,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -97,24 +97,24 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*TypeCovered* \[ in\]
+*TypeCovered* \[ Pollici\]
 </dt> <dd>
 
 Tipo di RR coperto da questo SIG.
 
 </dd> <dt>
 
-*Algoritmo* \[ di in\]
+*Algoritmo* \[ Pollici\]
 </dt> <dd>
 
-Algoritmo utilizzato con la chiave specificata nel record di risorse. I valori assegnati sono riportati nella tabella seguente.
+Algoritmo usato con la chiave specificata nel record di risorse. I valori assegnati sono indicati nella tabella seguente.
 
 
 
@@ -131,56 +131,56 @@ Algoritmo utilizzato con la chiave specificata nel record di risorse. I valori a
 
 </dd> <dt>
 
-*Etichette* \[ in\]
+*Etichette* \[ Pollici\]
 </dt> <dd>
 
-Conteggio senza segno delle etichette nel nome originale del proprietario del record di firma. Il conteggio non include l'etichetta NULL per la radice, né i caratteri jolly iniziali.
+Conteggio senza segno delle etichette nel nome del proprietario RR SIG originale. Il conteggio non include l'etichetta NULL per la radice, né i caratteri jolly iniziali.
 
 </dd> <dt>
 
-*OriginalTTL* \[ in\]
+*OriginalTTL* \[ Pollici\]
 </dt> <dd>
 
 TTL del set di RR firmato dal SIG.
 
 </dd> <dt>
 
-*SignatureExpiration* \[ in\]
+*SignatureExpiration* \[ Pollici\]
 </dt> <dd>
 
-Data di scadenza della firma, espressa in secondi dall'inizio del 1 gennaio 1970, ora di Greenwich (GMT), esclusi i secondi intercalari.
+Data di scadenza della firma, espressa in secondi dall'inizio del 1° gennaio 1970, ora media di Greenwich (GMT), esclusi i secondi intercalare.
 
 </dd> <dt>
 
-*SignatureInception* \[ in\]
+*SignatureInception* \[ Pollici\]
 </dt> <dd>
 
-Data e ora in cui la firma diventa valida, espressa in secondi a partire dall'inizio del 1 ° gennaio 1970, ora di Greenwich (GMT), esclusi i secondi intercalari.
+Data e ora in cui la firma diventa valida, espressa in secondi dall'inizio del 1° gennaio 1970, ora media di Greenwich (GMT), esclusi i secondi intercalare.
 
 </dd> <dt>
 
-*KeyTag* \[ in\]
+*KeyTag* \[ Pollici\]
 </dt> <dd>
 
 Metodo usato per scegliere una chiave che verifica un SIG. Vedere RFC 2535, Appendice C per il metodo usato per calcolare un KeyTag.
 
 </dd> <dt>
 
-*SignerName* \[ in\]
+*SignerName* \[ Pollici\]
 </dt> <dd>
 
-Nome di dominio del firmatario che ha generato il record SIG.
+Nome di dominio del firmatario che ha generato l'errore SIG RR.
 
 </dd> <dt>
 
-*Firma* \[ di in\]
+*Firma* \[ Pollici\]
 </dt> <dd>
 
-Firma, rappresentata in base 64, formattata come definito nella RFC 2535, Appendice A.
+Firma, rappresentata in base 64, formattata come definito in RFC 2535, Appendice A.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -200,7 +200,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -208,13 +208,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_SIGType MicrosoftDNS**](microsoftdns-sigtype.md)
+[**MicrosoftDNS \_ SIGType**](microsoftdns-sigtype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe SIGType di MicrosoftDNS**](microsoftdns-sigtype-modify.md)
+[**Metodo Modify della classe SIGType MicrosoftDNS \_**](microsoftdns-sigtype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

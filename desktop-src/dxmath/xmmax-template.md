@@ -1,19 +1,19 @@
 ---
-description: Confronta due istanze di tipi di dati numerici o due istanze di un oggetto che supporta un overload di < e restituisce il più grande tra le due istanze. Il tipo di dati degli argomenti e il valore restituito sono gli stessi.
+description: Confronta due istanze del tipo di dati numerico o due istanze di un oggetto che supporta un overload di < e restituisce la più grande delle due istanze. Il tipo di dati degli argomenti e il valore restituito sono uguali.
 ms.assetid: m:microsoft.directx_sdk.reference.xmmax(t,t)
-title: Modello XMMax (DirectXMath. h)
+title: Modello XMMax (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f8de32a32004289249cea269400d711831d640
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 362f486861400223024da5442c5103722bf35dcf8cba715da1397ad4b54c19b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117971"
 ---
 # <a name="xmmax-template"></a>Modello XMMax
 
-Confronta due istanze di tipi di dati numerici o due istanze di un oggetto che supporta un overload di < e restituisce il più grande tra le due istanze. Il tipo di dati degli argomenti e il valore restituito sono gli stessi.
+Confronta due istanze del tipo di dati numerico o due istanze di un oggetto che supporta un overload di < e restituisce la più grande delle due istanze. Il tipo di dati degli argomenti e il valore restituito sono uguali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,43 +28,43 @@ template<class T> T XMMax(
 
 <dl> <dt>
 
-<span id="a"></span><span id="A"></span>*un*
+<span id="a"></span><span id="A"></span>*Un*
 </dt> <dd>
 
-\[in \] specifica il primo di due oggetti.
+\[in \] specifica il primo dei due oggetti.
 
 </dd> <dt>
 
-<span id="b"></span><span id="B"></span>*b*
+<span id="b"></span><span id="B"></span>*B*
 </dt> <dd>
 
-\[in \] specifica i due di due oggetti.
+\[in \] specifica i due di due oggetti .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il più grande tra i due oggetti di input.
+Restituisce il valore più grande dei due oggetti di input.
 
 ## <a name="remarks"></a>Commenti
 
 `XMMax` è un modello e il tipo T viene specificato quando viene creata un'istanza del modello.
 
 > [!Note]  
-> Il `XMMax` modello è una novità di DirectXMath e non è disponibile per XNAMath 2. x. `XMMax` è disponibile come macro in XNAMath 2. x.
+> Il `XMMax` modello è nuovo per DirectXMath e non è disponibile per XNAMath 2.x. `XMMax` è disponibile come macro in XNAMath 2.x.
 
  
 
 > [!Note]  
-> Utilizzare idealmente std:: max anziché `XMMax` . Per evitare conflitti con le intestazioni di Windows con std:: Max, è necessario \# definire NOMINMAX prima di includere le intestazioni di Windows.
+> Usare idealmente std::max anziché `XMMax` . Per evitare conflitti con Windows intestazioni con std::max, è necessario definire NOMINMAX prima di includere Windows \# intestazioni.
 
  
 
-**Spazio dei nomi**: usare DirectX
+**Spazio dei** nomi: usare DirectX
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e Windows Phone 8 app.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 <dl> <dt>
 
-[Funzioni del modello di libreria DirectXMath](ovw-xnamath-templates.md)
+[Funzioni del modello della libreria DirectXMath](ovw-xnamath-templates.md)
 </dt> <dt>
 
 [**XMMin**](xmmin-template.md)

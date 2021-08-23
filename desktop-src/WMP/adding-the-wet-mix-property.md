@@ -3,28 +3,28 @@ title: Aggiunta della proprietà Wet Mix
 description: Aggiunta della proprietà Wet Mix
 ms.assetid: 4605d893-8ac0-42fd-a1ac-51430561f174
 keywords:
-- Plug-in di Windows Media Player, proprietà di esempio Echo
+- Windows Media Player plug-in, proprietà di esempio Echo
 - plug-in, proprietà di esempio Echo
-- plug-in di elaborazione dei segnali digitali, proprietà di esempio Echo
+- plug-in di elaborazione del segnale digitale, proprietà dell'esempio Echo
 - Plug-in DSP, proprietà di esempio Echo
 - Esempio di plug-in Echo DSP, proprietà
-- Esempio di plug-in Echo DSP, proprietà Wet Mix
+- Esempio di plug-in Echo DSP, proprietà della combinazione wet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6af8e7b4857ccbf6b725044575d1b8524aaf50
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f743cc25ce25aed1e7ff5695c022d65e30c1680eee4121eb3952698d6f0da94f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055419"
 ---
 # <a name="adding-the-wet-mix-property"></a>Aggiunta della proprietà Wet Mix
 
 È necessario aggiungere il codice per fornire la proprietà aggiuntiva per il livello di effetto.
 
-Nella sezione [aggiunta di proprietà al plug-in audio DSP di esempio](adding-properties-to-the-sample-audio-dsp-plug-in.md) vengono fornite informazioni dettagliate su come aggiungere una nuova proprietà utilizzando Visual C++. Questa sezione illustra come aggiungere il codice manualmente. Questa operazione comporta l'aggiunta di codice nelle stesse tre posizioni in cui è stato modificato il codice per la proprietà tempo di ritardo.
+La sezione [Aggiunta di proprietà al plug-in DSP audio](adding-properties-to-the-sample-audio-dsp-plug-in.md) di esempio fornisce informazioni dettagliate su come aggiungere una nuova proprietà usando Visual C++. Questa sezione illustra come aggiungere manualmente il codice. Ciò comporta l'aggiunta di codice nelle stesse tre posizioni in cui è stato modificato il codice per la proprietà delay time.
 
-Aggiungere i prototipi per i \_ metodi Get WETMIX e put \_ WETMIX immediatamente dopo gli altri prototipi di metodo di proprietà in Echo. h. Usare la sintassi seguente:
+Aggiungere i prototipi per i metodi get wetmix e inserire i metodi wetmix immediatamente dopo gli altri prototipi di metodo di \_ \_ proprietà in Echo.h. Usare la sintassi seguente:
 
 
 ```C++
@@ -35,7 +35,7 @@ STDMETHOD(put_wetmix)(double newVal);
 
 
 
-A questo punto, aggiungere l'implementazione per ogni metodo immediatamente dopo le altre implementazioni di proprietà in Echo. cpp. Nell'esempio seguente viene illustrato il codice per entrambi i metodi:
+Aggiungere ora l'implementazione per ogni metodo immediatamente dopo le altre implementazioni di proprietà in Echo.cpp. L'esempio seguente illustra il codice per entrambi i metodi:
 
 
 ```C++
@@ -67,9 +67,9 @@ STDMETHODIMP CEcho::put_wetmix(double newVal)
 
 
 
-Si noti che l'implementazione di put \_ WETMIX include il codice per calcolare il valore corretto per m \_ fDryMix. Ogni volta che viene specificato un nuovo valore per m \_ fWetMix, questo calcolo è obbligatorio.
+Si noti che l'implementazione di put \_ wetmix include il codice per calcolare il valore corretto per m \_ fDryMix. Ogni volta che viene specificato un nuovo valore per m \_ fWetMix, questo calcolo è obbligatorio.
 
-Aggiungere il codice seguente nella definizione dell'interfaccia subito dopo il codice per i metodi Delay in Echo. idl:
+Aggiungere il codice seguente nella definizione dell'interfaccia subito dopo il codice per i metodi delay in Echo.idl:
 
 
 ```C++
@@ -84,12 +84,12 @@ HRESULT put_wetmix([in] double newVal);
 
 <dl> <dt>
 
-[**Proprietà di esempio Echo**](echo-sample-properties.md)
+[**Proprietà dell'esempio Echo**](echo-sample-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

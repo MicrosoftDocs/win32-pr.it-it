@@ -1,6 +1,6 @@
 ---
-title: Enumerazioni di configurazione feedback input
-description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni di configurazione del feedback di input.
+title: Enumerazioni di configurazione dei commenti e suggerimenti sull'input
+description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni input feedback configuration.
 ms.assetid: FB0B8837-EE4A-48EF-8DAE-B84D7FC3BB15
 keywords:
 - interazione dell'utente
@@ -12,16 +12,16 @@ keywords:
 - stilo
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: a4f1c7d7018507685e6514892d14f6aa7f647fb6
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: fcbf5898cccb7212a92256f0c4e865a55153f66d3c18b68c085d3e421c1d36fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977071"
 ---
-# <a name="input-feedback-configuration-enumerations"></a>Enumerazioni di configurazione feedback input
+# <a name="input-feedback-configuration-enumerations"></a>Enumerazioni di configurazione dei commenti e suggerimenti sull'input
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni di [configurazione del feedback di input](input-feedback-configuration-portal.md) .
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [enumerazioni input feedback configuration.](input-feedback-configuration-portal.md)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,4 +31,4 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Riferimento alla configurazione del feedback di input](input-feedback-configuration-reference.md)
+[Informazioni di riferimento sulla configurazione dei commenti e suggerimenti sull'input](input-feedback-configuration-reference.md)

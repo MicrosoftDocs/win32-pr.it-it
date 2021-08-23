@@ -1,6 +1,6 @@
 ---
-title: Funzione Sample (S, float, int, float) (riferimento HLSL)
-description: Esegue il campionamento di un Texture2D con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+title: Funzione Sample(S,float,int,float) (riferimento HLSL)
+description: Campionare un oggetto Texture2D con un valore facoltativo a cui impostare i valori di livello di dettaglio del campione.
 ms.assetid: 899FACB6-40BB-471B-82A7-BDBBC63B206E
 keywords:
 - Funzione di esempio HLSL
@@ -13,19 +13,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e5c151c3d93f5e2fe374f0f60fd06798cf1ce52a
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: d22cf5fa8a8fe03a62b554def7caf28b4c4e8ab9065446bab9281e4e791e5d3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104118694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986221"
 ---
-# <a name="samplesfloatintfloat-function-hlsl-reference"></a>Funzione Sample (S, float, int, float) (riferimento HLSL)
+# <a name="samplesfloatintfloat-function-hlsl-reference"></a>Funzione Sample(S,float,int,float) (riferimento HLSL)
 
-Esegue il campionamento di un [**Texture2D**](sm5-object-texture2d.md) con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+Campionare [**un oggetto Texture2D**](sm5-object-texture2d.md) con un valore facoltativo a cui impostare i valori di livello di dettaglio del campione.
 
 > [!Note]  
-> Richiede il [modello di shader 5](d3d11-graphics-reference-sm5.md) o versione successiva.
+> Richiede [il modello shader 5 o](d3d11-graphics-reference-sm5.md) versione successiva.
 
  
 
@@ -47,18 +47,18 @@ DXGI_FORMAT Sample(
 *S* \[ in\]
 </dt> <dd>
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -71,16 +71,16 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
-Offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Gli offset della trama devono essere statici. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [applicazione degli offset delle coordinate di trama](dx-graphics-hlsl-to-sample.md).
+Offset delle coordinate della trama facoltativo, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Gli offset di trama devono essere statici. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applicazione degli offset delle coordinate di trama.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Tipo di Texture-Object           | Tipo di parametro |
+| tipo Texture-Object           | Tipo di parametro |
 |-------------------------------|----------------|
-| Texture1D, Texture1DArray     | INT            |
+| Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
 | Texture3D                     | int3           |
 | TextureCube, TextureCubeArray | non supportato  |
@@ -91,36 +91,36 @@ Offset della coordinata di trama facoltativo che può essere usato per qualsiasi
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo a cui impostare i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="remarks"></a>Commenti
 
-Il campionamento della trama usa la posizione di Texel per cercare un valore di Texel. Un offset può essere applicato alla posizione prima della ricerca. Lo stato del campionatore contiene le opzioni di campionamento e filtro. Questo metodo può essere richiamato all'interno di una pixel shader, ma non è supportato in un vertex shader o in un geometry shader.
+Il campionamento trame usa la posizione del texel per cercare un valore texel. È possibile applicare un offset alla posizione prima della ricerca. Lo stato del campionatore contiene le opzioni di campionamento e filtro. Questo metodo può essere richiamato all'interno di pixel shader, ma non è supportato in un vertex shader o geometry shader.
 
-Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
+Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
 
 ### <a name="calculating-texel-positions"></a>Calcolo delle posizioni di Texel
 
-Le coordinate di trama sono valori a virgola mobile che fanno riferimento a dati di trama, noti anche come spazio di trama normalizzato. Le modalità di wrapping degli indirizzi vengono applicate in questo ordine (coordinate di trama + offset + modalità a capo) per modificare le coordinate di trama al di fuori dell' \[ intervallo 0... 1 \] .
+Le coordinate della trama sono valori a virgola mobile che fanno riferimento ai dati della trama, noto anche come spazio di trama normalizzato. Le modalità di ritorno a capo degli indirizzi vengono applicate in questo ordine (coordinate della trama + offset + modalità di ritorno a capo) per modificare le coordinate della trama al di fuori \[ dell'intervallo 0...1. \]
 
-Per le matrici di trama, un valore aggiuntivo nel parametro location specifica un indice in una matrice di trame. Questo indice viene considerato come valore float scalato, invece dello spazio normalizzato per le coordinate di trama standard. La conversione in un indice Integer viene eseguita nell'ordine seguente (float + round-to-more-even integer + Clamp nell'intervallo di matrici).
+Per le matrici di trame, un valore aggiuntivo nel parametro location specifica un indice in una matrice di trame. Questo indice viene considerato come un valore float ridimensionato (anziché come spazio normalizzato per le coordinate di trama standard). La conversione in un indice integer viene eseguita nell'ordine seguente (float + round-to-nearest-even integer + clamp nell'intervallo di matrici).
 
 ### <a name="applying-texture-coordinate-offsets"></a>Applicazione degli offset delle coordinate di trama
 
-Il parametro offset modifica le coordinate di trama, nello spazio Texel. Anche se le coordinate di trama sono numeri a virgola mobile normalizzati, l'offset applica un offset intero. Si noti inoltre che gli offset della trama devono essere statici.
+Il parametro offset modifica le coordinate della trama, nello spazio texel. Anche se le coordinate della trama sono numeri a virgola mobile normalizzati, l'offset applica un offset intero. Si noti anche che gli offset di trama devono essere statici.
 
-Il formato di dati restituito è determinato dal formato di trama. Se, ad esempio, la risorsa di trama è stata definita con il formato DXGI \_ \_ A8B8G8R8 \_ UNORM \_ sRGB format, l'operazione di campionamento converte i Texel campionati da gamma 2,0 a 1,0, filtra e scrive il risultato come valore a virgola mobile nell'intervallo \[ 0.. 1 \] .
+Il formato dei dati restituito è determinato dal formato della trama. Ad esempio, se la risorsa trama è stata definita con il formato DXGI \_ FORMAT A8B8G8R8 UNORM SRGB, l'operazione di campionamento converte i texel campionati da \_ \_ gamma 2.0 a 1.0, filtra e scrive il risultato come valore a virgola mobile nell'intervallo \_ \[ 0..1. \]
 
-Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati che non si traducono correttamente nell'hardware.
+Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -129,7 +129,7 @@ Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ott
 [Metodi di esempio](texture-sample-overload.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

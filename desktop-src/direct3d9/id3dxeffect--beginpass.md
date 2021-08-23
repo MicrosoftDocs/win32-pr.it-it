@@ -1,7 +1,7 @@
 ---
-description: Inizia un passaggio, all'interno della tecnica attiva.
+description: Avvia un passaggio, all'interno della tecnica attiva.
 ms.assetid: fbb2bf1c-e37a-4117-8c3c-5f5b6a267301
-title: 'Metodo ID3DXEffect:: BeginPass (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::BeginPass (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 56a2648f65c3747f8a98fc0cdbd3ed06cea560b9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9013a67c2d4e0e9760167bc979ac05edd4879c5414ce5c9b9c55528baf3f6a18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987547"
 ---
-# <a name="id3dxeffectbeginpass-method"></a>Metodo ID3DXEffect:: BeginPass
+# <a name="id3dxeffectbeginpass-method"></a>Metodo ID3DXEffect::BeginPass
 
-Inizia un passaggio, all'interno della tecnica attiva.
+Avvia un passaggio, all'interno della tecnica attiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT BeginPass(
 
 <dl> <dt>
 
-*Passa* \[ in\]
+*Passaggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Indice integer in base zero nella tecnica.
 
@@ -57,9 +57,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione imposta un passaggio attivo (all'interno di una tecnica attiva) nel sistema di effetti chiamando **ID3DXEffect:: BeginPass**. Un'applicazione segnala la fine del passaggio attivo chiamando [**ID3DXEffect:: EndPass**](id3dxeffect--endpass.md). **ID3DXEffect:: BeginPass** e **ID3DXEffect:: EndPass** devono essere presenti in una coppia corrispondente, all'interno di una coppia corrispondente di chiamate a [**ID3DXEffect:: Begin**](id3dxeffect--begin.md) e [**ID3DXEffect:: end**](id3dxeffect--end.md) .
+Un'applicazione imposta un passaggio attivo (all'interno di una tecnica attiva) nel sistema degli effetti chiamando **ID3DXEffect::BeginPass**. Un'applicazione segnala la fine del passaggio attivo chiamando [**ID3DXEffect::EndPass**](id3dxeffect--endpass.md). **ID3DXEffect::BeginPass** e **ID3DXEffect::EndPass** devono essere presenti in una coppia corrispondente, all'interno di una coppia corrispondente di [**chiamate ID3DXEffect::Begin**](id3dxeffect--begin.md) e [**ID3DXEffect::End.**](id3dxeffect--end.md)
 
-Se l'applicazione modifica uno stato di effetto usando uno dei metodi [**Effect:: SETX**](id3dxeffect.md) all'interno di una coppia **ID3DXEffect:: BeginPass** / [**ID3DXEffect:: EndPass**](id3dxeffect--endpass.md) matching, l'applicazione deve chiamare [**ID3DXEffect:: CommitChanges**](id3dxeffect--commitchanges.md) per impostare l'aggiornamento del dispositivo con le modifiche dello stato. Se non vengono apportate modifiche allo stato all'interno di una coppia di **ID3DXEffect:: BeginPass** e **ID3DXEffect:: EndPass** , non è necessario chiamare **ID3DXEffect:: CommitChanges**.
+Se l'applicazione modifica uno stato di effetto usando uno dei metodi [**Effect::Setx**](id3dxeffect.md) all'interno di una coppia **id3DXEffect::BeginPass** / [**ID3DXEffect::EndPass**](id3dxeffect--endpass.md) corrispondente, l'applicazione deve chiamare [**ID3DXEffect::CommitChanges**](id3dxeffect--commitchanges.md) per impostare l'aggiornamento del dispositivo con le modifiche dello stato. Se non si verificano modifiche di stato all'interno di una coppia **id3DXEffect::BeginPass** e **ID3DXEffect::EndPass** corrispondente, non è necessario chiamare **ID3DXEffect::CommitChanges**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Se l'applicazione modifica uno stato di effetto usando uno dei metodi [**Effect:
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETELLIPSISMODE (RichEdit. h)
-description: Questo messaggio consente di impostare la modalità corrente dei puntini di sospensione.
+title: EM_SETELLIPSISMODE messaggio (Richedit.h)
+description: Questo messaggio imposta la modalità dei puntini di sospensione corrente.
 ms.assetid: C77263E8-424B-4EDE-ACBF-BA85248FC31F
 keywords:
-- Controlli di Windows Message EM_SETELLIPSISMODE
+- EM_SETELLIPSISMODE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81ae3b51dc80ed11d71f4af9c292657b2cf16728
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3445172ea0a4ed4ef49e9a131db8d4357faaa5f7fef553169b7a8e1e795fd01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019479"
 ---
-# <a name="em_setellipsismode-message"></a>\_Messaggio SETELLIPSISMODE em
+# <a name="em_setellipsismode-message"></a>Messaggio EM \_ SETELLIPSISMODE
 
-Questo messaggio consente di impostare la modalità corrente dei puntini di sospensione. Quando è abilitata, viene visualizzato un pulsante con i puntini di sospensione () per il testo che non rientra nella finestra di visualizzazione. I puntini di sospensione vengono utilizzati solo quando il controllo non è attivo. Quando è attiva, le barre di scorrimento vengono usate per rivelare il testo che non rientra nella finestra di visualizzazione.
+Questo messaggio imposta la modalità dei puntini di sospensione corrente. Se abilitata, vengono visualizzati i puntini di sospensione ( ) per il testo che non rientra nella finestra di visualizzazione. I puntini di sospensione vengono usati solo quando il controllo non è attivo. Se attive, le barre di scorrimento vengono usate per visualizzare il testo che non rientra nella finestra di visualizzazione.
 
 
 ```C++
@@ -39,7 +39,7 @@ Questo messaggio consente di impostare la modalità corrente dei puntini di sosp
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
@@ -52,21 +52,21 @@ Valore DWORD che riceve uno dei valori seguenti.
 
 | Valore                                                                                                                                                         | Significato                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**PUNTIni di sospensione \_ nessuno**</dt> </dl> | Non viene utilizzato alcun puntini di sospensione.<br/>                |
-| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**PUNTIni di sospensione \_**</dt> </dl>    | Puntini di sospensione alla fine (interruzioni forzate).<br/> |
-| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**parola con i PUNTIni di sospensione \_**</dt> </dl> | Puntini di sospensione alla fine (Word Break).<br/>   |
+| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**PUNTINI DI SOSPENSIONE \_ NESSUNO**</dt> </dl> | Non vengono usati i puntini di sospensione.<br/>                |
+| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**FINE PUNTINI DI \_ SOSPENSIONE**</dt> </dl>    | Puntini di sospensione alla fine (interruzione forzata).<br/> |
+| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**PAROLA CON I PUNTINI DI \_ SOSPENSIONE**</dt> </dl> | Puntini di sospensione alla fine (interruzione di parola).<br/>   |
 
 
 
  
 
-Tutti i bit per questi valori si adattano **alla \_ maschera dei puntini** di sospensione.
+I bit per questi valori rientrano tutti in **ELLIPSIS \_ MASK.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se wParam è 0 e lParam è uno dei valori nella tabella precedente, il valore restituito è uguale a TRUE; in caso contrario, il valore restituito è uguale a FALSE.
+Se wparam è 0 e lparam è uno dei valori nella tabella precedente, il valore restituito è uguale a TRUE; In caso contrario, il valore restituito è uguale a FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,9 +74,9 @@ Se wParam è 0 e lParam è uno dei valori nella tabella precedente, il valore re
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -84,10 +84,10 @@ Se wParam è 0 e lParam è uno dei valori nella tabella precedente, il valore re
 
 <dl> <dt>
 
-[**\_GETELLIPSISMODE em**](em-getellipsismode.md)
+[**EM \_ GETELLIPSISMODE**](em-getellipsismode.md)
 </dt> <dt>
 
-[**\_GETELLIPSISSTATE em**](em-getellipsisstate.md)
+[**EM \_ GETELLIPSISSTATE**](em-getellipsisstate.md)
 </dt> </dl>
 
  

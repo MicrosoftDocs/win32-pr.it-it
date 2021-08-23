@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: costanti del motore di archiviazione estendibile'
-title: Costanti del motore di archiviazione estendibile
+description: 'Altre informazioni su: Costanti extensible Archiviazione Engine'
+title: Costanti del motore Archiviazione estendibile
 TOCTitle: Extensible Storage Engine Constants
 ms:assetid: 9a361b83-491d-442d-971d-6696f88ad42e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269351(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab478b7972206f462cd0bd0031f74865d850dbee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 563efe09c011830ef17001c13a6f3d4564b26567940245aee3fcb272f562aa69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980811"
 ---
-# <a name="extensible-storage-engine-constants"></a>Costanti del motore di archiviazione estendibile
+# <a name="extensible-storage-engine-constants"></a>Costanti del motore Archiviazione estendibile
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="extensible-storage-engine-constants"></a>Costanti del motore di archiviazione estendibile
+## <a name="extensible-storage-engine-constants"></a>Costanti del motore Archiviazione estendibile
 
-La sezione costanti del motore di archiviazione estendibile contiene le sezioni seguenti:
+La sezione Extensible Archiviazione Engine Constants contiene le sezioni seguenti:
 
   - [JET_CBTYP](./jet-cbtyp.md)
 
@@ -45,10 +45,10 @@ La sezione costanti del motore di archiviazione estendibile contiene le sezioni 
 
   - [Costanti di registrazione eventi](./event-logging-constants.md)
 
-  - [Parametri di sistema Extensible Storage Engine](./extensible-storage-engine-system-parameters.md)
+  - [Extensible Archiviazione Engine System Parameters](./extensible-storage-engine-system-parameters.md)
 
   - [Costanti handle non valide](./invalid-handle-constants.md)
 
-  - [Costanti di impostazioni massime](./maximum-settings-constants.md)
+  - [Numero massimo Impostazioni costanti](./maximum-settings-constants.md)
 
   - [Costanti obsolete](./obsolete-constants.md)

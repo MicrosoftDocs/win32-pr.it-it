@@ -1,7 +1,7 @@
 ---
-description: Flag che specifica se la finestra Invia o invia il messaggio di distruzione.
+description: Flag che specifica se la finestra invia o invia il messaggio di distruzione.
 ms.assetid: 553a372e-1abe-4661-bfa5-b8a63be63c72
-title: 'Membro CBaseWindow:: m_bDoPostToDestroy (Winutil. h)'
+title: Membro CBaseWindow::m_bDoPostToDestroy (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 804d0910760ddac5ea4d74979293f43e5b189225
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 070b94cc75fa3fb2d9b5983901abc2406b2e601ec3370323854905708ee681f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954610"
 ---
-# <a name="cbasewindowm_bdoposttodestroy-member"></a>Membro bDoPostToDestroy di CBaseWindow:: m \_
+# <a name="cbasewindowm_bdoposttodestroy-member"></a>Membro CBaseWindow::m \_ bDoPostToDestroy
 
-Flag che specifica se la finestra Invia o invia il messaggio di distruzione. Se **true**, il metodo [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) usa la funzione **PostMessage** per inviare a se stesso un messaggio di distruzione privata. Se **false**, **DoneWithWindow** utilizza la funzione **SendMessage** per inviare il messaggio. Per impostazione predefinita, il valore è **false**.
+Flag che specifica se la finestra invia o invia il messaggio di distruzione. Se **TRUE,** il [**metodo CBaseWindow::D oneWithWindow**](cbasewindow-donewithwindow.md) usa la **funzione PostMessage** per inviare a se stesso un messaggio di distruzione privato. Se **FALSE,** **DoneWithWindow** usa la **funzione SendMessage** per inviare il messaggio. Per impostazione predefinita, il valore è **FALSE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bDoPostToDestroy;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

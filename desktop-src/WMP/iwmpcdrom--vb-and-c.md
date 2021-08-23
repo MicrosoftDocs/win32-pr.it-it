@@ -1,10 +1,10 @@
 ---
-title: Interfaccia IWMPCdrom (VB e C) (WMP. h)
-description: Fornisce un modo per accedere a un CD o DVD nell'unità. L'interfaccia IWMPCdrom espone le proprietà seguenti.
+title: Interfaccia IWMPCdrom (VB e C) (Wmp.h)
+description: Consente di accedere a un CD o DVD nell'unità. L'interfaccia IWMPCdrom espone le proprietà seguenti.
 ms.assetid: 2748e64b-b9b7-489a-a6b5-21154aabd312
 keywords:
 - Interfaccia IWMPCdrom (VB e C) Windows Media Player
-- Interfaccia IWMPCdrom (VB e C) Windows Media Player, descritta
+- Interfaccia IWMPCdrom (VB e C) Windows Media Player , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,35 +15,35 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 036411c96b278023d87c37ad48f81e986b9dadcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60fa6b0226cb110008d12f2e78bfcea4e938dc5da9e33449e10c7bc1be927e5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996501"
 ---
 # <a name="iwmpcdrom-vb-and-c-interface"></a>Interfaccia IWMPCdrom (VB e C#)
 
-Fornisce un modo per accedere a un CD o DVD nell'unità.
+Consente di accedere a un CD o DVD nell'unità.
 
-L'interfaccia **IWMPCdrom** espone le proprietà seguenti.
+**L'interfaccia IWMPCdrom** espone le proprietà seguenti.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMPCdrom (VB e C#)** presenta questi tipi di membri:
+**L'interfaccia IWMPCdrom (VB e C#)** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMPCdrom (VB e C#)** presenta questi metodi.
+**L'interfaccia IWMPCdrom (VB e C#)** ha questi metodi.
 
 
 
 | Metodo                                                     | Descrizione                                     |
 |:-----------------------------------------------------------|:------------------------------------------------|
-| [**Eject**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md) | Espelle il CD o il DVD dall'unità.<br/> |
+| [**Espellere**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md) | Espulse il CD o DVD dall'unità.<br/> |
 
 
 
@@ -51,14 +51,14 @@ L'interfaccia **IWMPCdrom (VB e C#)** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IWMPCdrom (VB e C#)** presenta queste proprietà.
+**L'interfaccia IWMPCdrom (VB e C#)** ha queste proprietà.
 
 
 
 | Proprietà                                                                                | Tipo di accesso          | Descrizione                                                                                                                                  |
 |:----------------------------------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**driveSpecifier**](wmplibiwmpcdrom-iwmpcdrom-drivespecifier--vb-and-c.md)<br/> | Sola lettura<br/> | Ottiene la lettera dell'unità CD o DVD.<br/>                                                                                                  |
-| [**Playlist**](wmplibiwmpcdrom-iwmpcdrom-playlist--vb-and-c.md)<br/>             | Sola lettura<br/> | Ottiene un'interfaccia [**IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist) che rappresenta le tracce su un CD o le voci del titolo a livello di radice per un DVD.<br/> |
+| [**driveSpecifier**](wmplibiwmpcdrom-iwmpcdrom-drivespecifier--vb-and-c.md)<br/> | Sola lettura<br/> | Ottiene la lettera di unità CD o DVD.<br/>                                                                                                  |
+| [**Playlist**](wmplibiwmpcdrom-iwmpcdrom-playlist--vb-and-c.md)<br/>             | Sola lettura<br/> | Ottiene [**un'interfaccia IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist) che rappresenta le tracce in un CD o le voci del titolo di livello radice per un DVD.<br/> |
 
 
 
@@ -70,7 +70,7 @@ L'interfaccia **IWMPCdrom (VB e C#)** presenta queste proprietà.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

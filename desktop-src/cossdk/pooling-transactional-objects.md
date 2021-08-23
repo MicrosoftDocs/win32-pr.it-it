@@ -1,45 +1,45 @@
 ---
-description: I componenti transazionali che devono essere raggruppati hanno requisiti particolari.
+description: I componenti transazionali che devono essere in pool hanno requisiti speciali.
 ms.assetid: 32e2f830-c30a-4dbc-8e69-dd2038851998
-title: Raggruppamento di oggetti transazionali
+title: Pooling di oggetti transazionali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 006ba32ad2ac550be4fa4418dde322ded26c64c7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4c60180011305d0a03fee10fe1a4838f847306393709dc1bfef39f0ea8f69e18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047309"
 ---
-# <a name="pooling-transactional-objects"></a>Raggruppamento di oggetti transazionali
+# <a name="pooling-transactional-objects"></a>Pooling di oggetti transazionali
 
-I componenti transazionali che devono essere raggruppati hanno requisiti particolari.
+I componenti transazionali che devono essere in pool hanno requisiti speciali.
 
 ## <a name="manually-enlisting-resources"></a>Integrazione manuale delle risorse
 
-Gli oggetti pool che fanno parte delle transazioni devono integrare manualmente le risorse gestite. Se un oggetto contiene risorse gestite tra client, non sarà possibile eseguire automaticamente l'integrazione di Resource Manager in una transazione quando l'oggetto viene attivato in un determinato contesto.
+Gli oggetti in pool che partecipano alle transazioni devono integrare manualmente le risorse gestite. Se un oggetto contiene risorse gestite tra i client, il gestore delle risorse non sarà in grado di integrarsi automaticamente in una transazione quando l'oggetto viene attivato in un determinato contesto.
 
-L'oggetto stesso deve gestire la logica di rilevamento della transazione, la disattivazione dell'integrazione automatica di Resource Manager e l'integrazione manuale di tutte le risorse che possiede. I passaggi per eseguire questa operazione sono specifici del gestore di risorse in uso. Se è necessario eseguire l'integrazione manuale, consultare la documentazione relativa a Resource Manager.
+L'oggetto stesso deve gestire la logica di rilevamento della transazione, la disattivazione dell'integrazione automatica del gestore risorse e l'integrazione manuale di tutte le risorse che contiene. I passaggi per questa operazione sono specifici del gestore delle risorse in uso. Se è necessario eseguire l'integrazione manuale, consultare la documentazione per resource manager.
 
-Come descritto di seguito, gli oggetti possono essere raggruppati con affinità di transazione mentre una transazione è attiva e può essere attivata con affinità di transazione se viene chiamata da un client associato a tale transazione. Prima di eseguire l'integrazione delle risorse, è innanzitutto necessario controllare l'affinità di transazione. Se l'oggetto è stato ricavato dal pool specifico di tale transazione, è già stato eseguito il lavoro in tale transazione ed è stata integrata la relativa risorsa.
+Come descritto di seguito, gli oggetti possono essere in pool con affinità di transazione mentre una transazione è attiva e può essere attivata con affinità di transazione se viene chiamata da un client associato a tale transazione. Prima di integrare le risorse, è necessario verificare l'affinità delle transazioni. Se l'oggetto è stato prelevato dal pool specifico di tale transazione, ha già eseguito operazioni nella transazione e ne ha integrata le risorse.
 
 ## <a name="turning-off-automatic-enlistment"></a>Disattivazione dell'integrazione automatica
 
-L'integrazione automatica deve essere disattivata dopo l'acquisizione della risorsa, in genere nel costruttore dell'oggetto. Ovvero si disabilita l'integrazione automatica e quindi si effettua la connessione.
+L'integrazione automatica deve essere disattivata dopo l'acquisizione della risorsa, in genere nel costruttore dell'oggetto. Ciò significa che si disabilita l'integrazione automatica e quindi si esegue la connessione.
 
-La disabilitazione dell'integrazione automatica può talvolta essere una procedura delicata, in particolare nel caso di provider di accesso ai dati a più livelli. L'integrazione automatica viene talvolta abbinata al pool di connessioni, come con ODBC e talvolta non come con OLE DB. Potrebbe essere necessario assicurarsi che l'inserimento automatico sia disattivato a diversi livelli di provider.
+La disabilitazione dell'integrazione automatica può talvolta essere una procedura sottile, in particolare nel caso di provider di accesso ai dati a più livelli. L'integrazione automatica viene talvolta abbinata al pool di connessioni, come con ODBC e talvolta no, come con OLE DB. Potrebbe essere necessario assicurarsi che l'integrazione automatica sia disattivata a diversi livelli di provider.
 
 ## <a name="implementing-iobjectcontrol"></a>Implementazione di IObjectControl
 
-Gli oggetti che fanno parte di un pool che partecipano alle transazioni devono monitorare lo stato corrente delle risorse che contengono. Se l'oggetto rileva che si trova in uno stato non riutilizzabile, ad esempio se una connessione non è valida, deve restituire false per [**IObjectControl:: CanBePooled**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontrol-canbepooled). Questo avrà l'effetto di rimuovere l'istanza dell'oggetto e di destinarla alla transazione corrente.
+Gli oggetti in pool che partecipano alle transazioni devono monitorare lo stato corrente delle risorse che sono in possesso. Se l'oggetto rileva che si trova in uno stato non riutilizzabile, ad esempio se una connessione non è consentita, deve restituire False per [**IObjectControl::CanBePooled**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontrol-canbepooled). Ciò avrà l'effetto di eliminare l'istanza dell'oggetto e di eliminare la transazione corrente.
 
-## <a name="transaction-specific-pools"></a>Pool di Transaction-Specific
+## <a name="transaction-specific-pools"></a>Transaction-Specific pool
 
-Un pool di oggetti è in genere omogeneo e qualsiasi oggetto in pool non attualmente in uso è utile per tornare a qualsiasi client. L'unica eccezione a questa regola è nel caso degli oggetti transazionali, per cui è ottimizzato il pool di oggetti. Quando il client che richiede un oggetto ha una transazione associata, COM+ analizzerà il pool per un oggetto disponibile già associato a tale transazione. Se viene trovato un oggetto con affinità di transazione, quest'operazione viene restituita al client. in caso contrario, viene restituito un oggetto dal pool generale.
+Un pool di oggetti è in genere omogeneo e qualsiasi oggetto in pool non attualmente in uso è valido per tornare a qualsiasi client. L'unica eccezione a questa regola è nel caso di oggetti transazionali, per i quali è ottimizzato il pool di oggetti. Quando al client che richiede un oggetto è associata una transazione, COM+ analizza il pool per cercare un oggetto disponibile già associato a tale transazione. Se viene trovato un oggetto con affinità di transazione, viene restituito al client. In caso contrario, viene restituito un oggetto del pool generale.
 
-In questo modo, i pool speciali vengono mantenuti contenenti oggetti con affinità per una determinata transazione. Quando viene eseguito il commit o l'interruzione della transazione, questi oggetti vengono restituiti al pool generale senza affinità di transazione, pronti per l'utilizzo da parte di qualsiasi client.
+In questo modo, vengono mantenuti pool secondari speciali contenenti oggetti con affinità per una determinata transazione. Quando la transazione esegue il commit o l'interruzione, questi oggetti vengono restituiti al pool generale senza affinità di transazione, pronti per essere usati da qualsiasi client.
 
-Per questo motivo, quando il componente integra manualmente le risorse gestite in una transazione, deve prima verificare se sono già integrate. In tal caso, non è necessario eseguire l'integrazione.
+Per questo motivo, quando il componente integra manualmente le risorse gestite in una transazione, deve prima verificare se sono già state integrate. In tal caso, non è necessario eseguire l'integrazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -57,7 +57,7 @@ Per questo motivo, quando il componente integra manualmente le risorse gestite i
 [Miglioramento delle prestazioni con il pool di oggetti](improving-performance-with-object-pooling.md)
 </dt> <dt>
 
-[Requisiti per gli oggetti pool](requirements-for-poolable-objects.md)
+[Requisiti per gli oggetti in pool](requirements-for-poolable-objects.md)
 </dt> </dl>
 
  

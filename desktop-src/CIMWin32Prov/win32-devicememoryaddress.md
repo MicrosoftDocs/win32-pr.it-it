@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI DeviceMemoryAddress Win32 rappresenta un indirizzo di memoria del dispositivo in un sistema di computer che esegue Windows.
+description: La classe WMI Win32 DeviceMemoryAddress rappresenta un indirizzo di memoria del dispositivo \_ in un computer che esegue Windows.
 ms.assetid: f0a70724-5ced-47fe-b17e-e153e65b80df
 ms.tgt_platform: multiple
-title: Classe Win32_DeviceMemoryAddress
+title: Win32_DeviceMemoryAddress classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4aa7472e3c20808ff52f6f45b0dca57fd19f9dd6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 31d49baca4e11ce1908ba1d057819f216153f49353415c8b5465e70e3a607e00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020249"
 ---
-# <a name="win32_devicememoryaddress-class"></a>Win32 \_ DeviceMemoryAddress (classe)
+# <a name="win32_devicememoryaddress-class"></a>Classe \_ DeviceMemoryAddress Win32
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DeviceMemoryAddress Win32** rappresenta un indirizzo di memoria del dispositivo in un sistema di computer che esegue Windows.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Win32 DeviceMemoryAddress** rappresenta un indirizzo di memoria del dispositivo in un computer che esegue Windows.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,92 +45,92 @@ class Win32_DeviceMemoryAddress : Win32_SystemMemoryResource
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ DeviceMemoryAddress** presenta questi tipi di membri:
+La **classe \_ DeviceMemoryAddress Win32** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ DeviceMemoryAddress** dispone di queste proprietà.
+La **classe \_ DeviceMemoryAddress Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione dell'oggetto stringa a una riga.
+Breve descrizione dell'oggetto, una stringa di una riga.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**chiave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della prima classe concreta visualizzata nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, la proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta visualizzata nella catena di ereditarietà utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave della classe , la proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md).
+Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO.**](cim-memorymappedio.md)
 
 </dd> <dt>
 
 **CSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe di creazione dell'ambito del sistema del computer.
+Nome della classe di creazione del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md).
+Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO.**](cim-memorymappedio.md)
 
 </dd> <dt>
 
 **CSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome del sistema di ambito del computer.
+Nome del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md).
+Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO.**](cim-memorymappedio.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -141,61 +141,61 @@ Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|I/O con mapping della memoria DMTF \| 001,2 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Mapped I/O \| 001.2")
 </dt> </dl>
 
 Indirizzo finale dell'I/O mappato alla memoria.
 
-Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md).
+Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO.**](cim-memorymappedio.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| flag di \| \_ descrittore di risorse parziali Win32API SystemStructures cm \_ \_ \| ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| SystemStructures \| CM PARTIAL RESOURCE \_ \_ \_ DESCRIPTOR \| Flags")
 </dt> </dl>
 
-Caratteristiche della risorsa di memoria nel computer in cui è in esecuzione Windows. I valori sono i seguenti.
+Caratteristiche della risorsa di memoria nel computer che esegue Windows. I valori sono i seguenti.
 
 <dt>
 
@@ -206,7 +206,7 @@ Caratteristiche della risorsa di memoria nel computer in cui è in esecuzione Wi
 
 </dt> <dd>
 
-La memoria può essere letta e scritta.
+La memoria può essere sia letta che scritta.
 
 </dd> <dt>
 
@@ -234,12 +234,12 @@ La memoria può essere scritta solo.
 
 <span id="Prefetchable"></span><span id="prefetchable"></span><span id="PREFETCHABLE"></span>
 
-<span id="Prefetchable"></span><span id="prefetchable"></span><span id="PREFETCHABLE"></span>**Prerecuperabile** ("Prefetchable")
+<span id="Prefetchable"></span><span id="prefetchable"></span><span id="PREFETCHABLE"></span>**Preletturabile** ("Preletturabile")
 
 
 </dt> <dd>
 
-Un blocco di memoria viene copiato dalla memoria principale in un buffer di piccole dimensioni gestito dal chipset di memoria. Le operazioni di lettura ripetute dalla stessa parte della memoria sono più veloci con la memoria prerecuperabile.
+Un blocco di memoria viene copiato dalla memoria principale in un piccolo buffer gestito dal chipset di memoria. Le operazioni di lettura ripetute dalla stessa parte della memoria sono più veloci con la memoria prelettura.
 
 </dd> <dt>
 
@@ -250,7 +250,7 @@ Un blocco di memoria viene copiato dalla memoria principale in un buffer di picc
 
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> <dt>
 
@@ -261,18 +261,18 @@ TBD
 
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> <dt>
 
 <span id="Cacheable"></span><span id="cacheable"></span><span id="CACHEABLE"></span>
 
-<span id="Cacheable"></span><span id="cacheable"></span><span id="CACHEABLE"></span>**Memorizzabile nella cache** ("memorizzabile nella cache")
+<span id="Cacheable"></span><span id="cacheable"></span><span id="CACHEABLE"></span>**Memorizzabile nella** cache ("memorizzabile nella cache")
 
 
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> <dt>
 
@@ -283,18 +283,18 @@ TBD
 
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> <dt>
 
 <span id="Bar"></span><span id="bar"></span><span id="BAR"></span>
 
-<span id="Bar"></span><span id="bar"></span><span id="BAR"></span>**Barra** ("barra")
+<span id="Bar"></span><span id="bar"></span><span id="BAR"></span>**Bar** ("Bar")
 
 
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> </dl>
 
@@ -303,7 +303,7 @@ TBD
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -312,47 +312,47 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override della proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. In caso di sottoclasse, è possibile eseguire l'override della proprietà come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**Indirizzo iniziale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("IndirizzoIniziale"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|I/O con mapping della memoria DMTF \| 001,1 ")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("StartingAddress"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Mapped I/O \| 001.1")
 </dt> </dl>
 
-Indirizzo iniziale dell'I/O mappato alla memoria. La proprietà dell'identificatore di risorsa hardware deve essere impostata su questo valore per costruire la chiave di risorsa I/O mappata.
+Indirizzo iniziale dell'I/O mappato alla memoria. La proprietà dell'identificatore di risorsa hardware deve essere impostata su questo valore per costruire la chiave della risorsa di I/O mappata.
 
-Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md).
+Questa proprietà viene ereditata da [**CIM \_ MemoryMappedIO.**](cim-memorymappedio.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -367,77 +367,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -446,7 +446,7 @@ Ridotto **("danneggiato"** )
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ DeviceMemoryAddress** è derivata da [**Win32 \_ SystemMemoryResource**](win32-systemmemoryresource.md).
+La **classe \_ DeviceMemoryAddress Win32** è derivata da [**\_ SystemMemoryResource Win32.**](win32-systemmemoryresource.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -457,7 +457,7 @@ La classe **Win32 \_ DeviceMemoryAddress** è derivata da [**Win32 \_ SystemMemo
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -466,10 +466,10 @@ La classe **Win32 \_ DeviceMemoryAddress** è derivata da [**Win32 \_ SystemMemo
 
 <dl> <dt>
 
-[**\_SystemMemoryResource Win32**](win32-systemmemoryresource.md)
+[**Win32 \_ SystemMemoryResource**](win32-systemmemoryresource.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

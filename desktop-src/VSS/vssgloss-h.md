@@ -5,23 +5,23 @@ ms.assetid: e99de576-ed73-4b91-a58c-4fae739d6709
 title: H (Servizio Copia Shadow del volume)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b285e503b8105481cbafa49ef25d8085f72250d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 235776eed621d744054be5cee9dc31b34af59a563def4f5eb2481b04a0c3ebf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056175"
 ---
 # <a name="h-volume-shadow-copy-service"></a>H (Servizio Copia Shadow del volume)
 
-[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [d](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) H [i](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) [T](vssgloss-t.md) U [V](vssgloss-v.md) [W](vssgloss-w.md) X Y Z
+[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [D](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) H [I](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) [T U](vssgloss-t.md) [V](vssgloss-v.md) [W](vssgloss-w.md) X Y Z
 
 <dl> <dt>
 
-<span id="base.vssgloss_hardware_based_provider"></span><span id="BASE.VSSGLOSS_HARDWARE_BASED_PROVIDER"></span>**provider hardware**
+<span id="base.vssgloss_hardware_based_provider"></span><span id="BASE.VSSGLOSS_HARDWARE_BASED_PROVIDER"></span>**provider di hardware**
 </dt> <dd>
 
-Provider che gestisce le copie shadow a livello hardware lavorando insieme a un adattatore o a un controller di archiviazione hardware. Vedere anche [*provider*](vssgloss-p.md)di [*software*](vssgloss-s.md).
+Provider che gestisce le copie shadow a livello hardware lavorando in combinazione con un controller o una scheda di archiviazione hardware. Vedere anche [*provider*](vssgloss-p.md), [*provider software*](vssgloss-s.md).
 
 </dd> <dt>
 

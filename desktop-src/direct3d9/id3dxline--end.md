@@ -1,7 +1,7 @@
 ---
-description: 'Ripristina lo stato del dispositivo nel modo in cui si trovava quando è stato chiamato ID3DXLine:: Begin.'
+description: Ripristina lo stato del dispositivo al momento della chiamata a ID3DXLine::Begin.
 ms.assetid: 06243c30-2d1d-4101-a373-46fd9a0d88d3
-title: 'Metodo ID3DXLine:: end (D3dx9core. h)'
+title: Metodo ID3DXLine::End (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 69d8324ab54f37af3f45a5475f08894e278c32e0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 371463bfc24cbdba63ac51c9b729c267b9d020dd260d6d1b6c6a378bb38c3524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987231"
 ---
-# <a name="id3dxlineend-method"></a>Metodo ID3DXLine:: end
+# <a name="id3dxlineend-method"></a>Metodo ID3DXLine::End
 
-Ripristina lo stato del dispositivo nel modo in cui si trovava quando è stato chiamato [**ID3DXLine:: Begin**](id3dxline--begin.md) .
+Ripristina lo stato del dispositivo al momento della [**chiamata a ID3DXLine::Begin.**](id3dxline--begin.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile usare **ID3DXLine:: end** come sostituto di [**IDirect3DDevice9:: EndScene**](/windows/desktop/api) o [**ID3DXRenderToSurface:: EndScene**](id3dxrendertosurface--endscene.md).
+**ID3DXLine::End** non può essere usato come sostituzione di [**IDirect3DDevice9::EndScene**](/windows/desktop/api) o [**ID3DXRenderToSurface::EndScene**](id3dxrendertosurface--endscene.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Non è possibile usare **ID3DXLine:: end** come sostituto di [**IDirect3DDevice9
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -66,7 +66,7 @@ Non è possibile usare **ID3DXLine:: end** come sostituto di [**IDirect3DDevice9
 [ID3DXLine](id3dxline.md)
 </dt> <dt>
 
-[**ID3DXLine:: Begin**](id3dxline--begin.md)
+[**ID3DXLine::Begin**](id3dxline--begin.md)
 </dt> </dl>
 
  
