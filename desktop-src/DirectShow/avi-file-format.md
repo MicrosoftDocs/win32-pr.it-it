@@ -1,21 +1,21 @@
 ---
-description: Formato file AVI
+description: Formato di file AVI
 ms.assetid: 986de213-4d25-4768-a6bc-37891cd38353
-title: Formato file AVI
+title: Formato di file AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e70c474caac3edf316238c3fe87dcf042737a975
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 24c51f07436797ad8b8762be623349032d03da00c99ea5d39e3e90a54ec43af9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689411"
 ---
-# <a name="avi-file-format"></a>Formato file AVI
+# <a name="avi-file-format"></a>Formato di file AVI
 
-In questa sezione viene descritto il formato di file AVI.
+Questa sezione descrive il formato di file AVI.
 
--   [Guida di riferimento al file con estensione AVI](avi-riff-file-reference.md)
+-   [Informazioni di riferimento sul file RIFF AVI](avi-riff-file-reference.md)
 -   [Dati DV nel formato di file AVI](dv-data-in-the-avi-file-format.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

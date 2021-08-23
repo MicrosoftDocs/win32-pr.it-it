@@ -1,10 +1,10 @@
 ---
-title: Attributo min-pwd-Age
-description: La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password è valida.
+title: Attributo Min-Pwd-Age
+description: Quantità minima di tempo, in intervalli di 100 nanosecondi, per cui una password è valida.
 ms.assetid: c1ddd8a3-8481-4b6e-95ac-1cdc81a4cf78
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo min-pwd-Age
+- Schema AD dell'attributo Min-Pwd-Age
 - Schema AD dell'attributo minPwdAge
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c733f1a6f6803b10f04d6b0f9e367a9933cd9330
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c98d7d8e48c1579b0a226cad848fd2b94b5f8cd9dba63d6f0cb3609bbd85f053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705431"
 ---
-# <a name="min-pwd-age-attribute"></a>Attributo min-pwd-Age
+# <a name="min-pwd-age-attribute"></a>Attributo Min-Pwd-Age
 
-La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password è valida.
+Quantità minima di tempo, in intervalli di 100 nanosecondi, per cui una password è valida.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Min-pwd-Age                          |
-| LDAP-Display-Name | minPwdAge                            |
+| CN                | Min-Pwd-Age                          |
+| Ldap-Display-Name | minPwdAge                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Aggiorna privilegio  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.78                |
-| System-ID-GUID    | bf9679c2-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679c2-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| A valore singolo       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ La quantità minima di tempo, in intervalli di 100 nanosecondi, che una password
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

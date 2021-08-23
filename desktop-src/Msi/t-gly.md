@@ -1,17 +1,17 @@
 ---
-description: Informazioni su Windows Installer concetti che iniziano con la lettera T, ad esempio l'elaborazione e la trasformazione delle transazioni.
+description: Informazioni sui Windows installer che iniziano con la lettera T, ad esempio l'elaborazione e la trasformazione delle transazioni.
 ms.assetid: 06fd0284-5af9-409a-8748-c0b40e0fa317
-title: T (Windows Installer)
+title: T (programma Windows di installazione)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e9489455f880ba558e5a9f8584be19718823035
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 7148ff7ca92a55698baa8f21e28ee6c4a54d69fd498adaea29c924bc23bc9fda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626711"
 ---
-# <a name="t-windows-installer"></a>T (Windows Installer)
+# <a name="t-windows-installer"></a>T (programma Windows di installazione)
 
 [A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L [M](m-gly.md) N [O](o-gly.md) [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) T [U](u-gly.md) [V](v-gly.md) W X Y Z
 
@@ -41,7 +41,7 @@ Set di proprietà utilizzate per contrassegnare le condizioni di errore di una [
 <span id="_msi_transform_validation_flags_gly"></span><span id="_MSI_TRANSFORM_VALIDATION_FLAGS_GLY"></span>**flag di convalida delle trasformazioni**
 </dt> <dd>
 
-Set di proprietà utilizzate per verificare che [*la trasformazione*](/windows) possa essere applicata al database. Per un elenco di queste proprietà, vedere [**MsiCreateTransformSummaryInfo.**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa)
+Set di proprietà utilizzato per verificare che [*la trasformazione*](/windows) possa essere applicata al database. Per un elenco di queste proprietà, vedere [**MsiCreateTransformSummaryInfo.**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa)
 
 </dd> </dl>
 

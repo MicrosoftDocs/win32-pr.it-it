@@ -4,12 +4,12 @@ ms.assetid: fde5c85f-e620-4557-89f0-7dbbbea74f8c
 title: Calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51056df2e412add722b10b896ac082fcb437b73e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2ac312c6e85eabb7ab1d85e1213bcb785a3e684a50410e172a0316c473ebf078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600181"
 ---
 # <a name="calendar"></a>Calendario
 
@@ -30,9 +30,9 @@ ms.locfileid: "108105119"
 | [System.Calendar.ReminderTime](./props-system-calendar-remindertime.md)<br/>                           | Archivia l'ora in cui l'utente sceglie di ricordare l'evento.<br/>                                                                                             |
 | [System.Calendar.RequiredAttendeeAddresses](./props-system-calendar-requiredattendeeaddresses.md)<br/> | Indirizzi di tutti i partecipanti necessari.<br/>                                                                                                              |
 | [System.Calendar.RequiredAttendeeNames](./props-system-calendar-requiredattendeenames.md)<br/>         | Nomi di tutti i partecipanti necessari.<br/>                                                                                                                      |
-| [System.Calendar.Resources](./props-system-calendar-resources.md)<br/>                                 | Indica le risorse utilizzate per questo evento.<br/>                                                                                                              |
+| [System.Calendar.Resources](./props-system-calendar-resources.md)<br/>                                 | Indica le risorse usate per questo evento.<br/>                                                                                                              |
 | [System.Calendar.ResponseStatus](./props-system-calendar-responsestatus.md)<br/>                       | Archivia lo stato delle risposte di un utente alle riunioni nel calendario.<br/>                                                                                      |
-| [System.Calendar.ShowTimeAs](./props-system-calendar-showtimeas.md)<br/>                               | Indica lo stato del partecipante durante l'evento. L'utente può scegliere di impostare lo stato come gratuito, occupato, provvisorio o fuori sede. <br/>                      |
+| [System.Calendar.ShowTimeAs](./props-system-calendar-showtimeas.md)<br/>                               | Indica lo stato del partecipante durante l'evento. L'utente può scegliere di impostare lo stato come libero, occupato, provvisorio o fuori sede. <br/>                      |
 | [System.Calendar.ShowTimeAsText](./props-system-calendar-showtimeastext.md)<br/>                       | Formato descrittivo di [System.Calendar.ShowTimeAs](./props-system-calendar-showtimeas.md). Questo valore non deve essere analizzato a livello di codice.<br/> |
 
 

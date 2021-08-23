@@ -1,29 +1,29 @@
 ---
-description: Uso di codec MFTs
+description: Uso dei codec MFT
 ms.assetid: 61567043-e76e-4166-9344-c57661e5752a
-title: Uso di codec MFTs
+title: Uso dei codec MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 008610dbf6bf17205de15b89440d1bdacee3c489
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf39b4a413059542ff05dd0fb2e82c3a89117018ba68f489a968c85423e82866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602211"
 ---
-# <a name="working-with-codec-mfts"></a>Uso di codec MFTs
+# <a name="working-with-codec-mfts"></a>Uso dei codec MFT
 
-In questa sezione viene fornita una panoramica delle nozioni di base sull'utilizzo dei codec come trasformazioni Media Foundation (MFTs). Sono inclusi gli argomenti seguenti.
+Questa sezione offre una panoramica delle nozioni di base sull'uso di codec come Media Foundation MFT (Transforms). Include gli argomenti seguenti.
 
 
 
 | Sezione                                                                                | Descrizione                                                                        |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Creazione di un'istanza di codec MFTs](instantiatingcodecmfts.md)                                 | Viene illustrato come creare istanze del codec DirectX Media Objects (MFTs).        |
-| [Uso dei tipi di supporto MFT](workingwithmftmediatypes.md)                           | Illustra le strutture usate dal codec MFTs per descrivere i tipi di supporto.  |
-| [Uso di buffer e esempi di supporti MFT](workingwithmftmediabuffersandsamples.md) | Vengono illustrati i buffer che è necessario creare per elaborare gli esempi con il codec MFTs. |
-| [Configurazione del codec MFTs](configuringcodecmfts.md)                                     | Viene descritta la sequenza per la configurazione del codec MFTs.                             |
-| [Elaborazione dell'input e dell'output del codec MFT](processingcodecmftinputandoutput.md)          | Viene descritto come elaborare input e output usando il codec MFTs.               |
+| [Creazione di istanze di codec MFT](instantiatingcodecmfts.md)                                 | Illustra come creare istanze del codec DirectX Media Objects (MFT).        |
+| [Uso dei tipi di supporti MFT](workingwithmftmediatypes.md)                           | Vengono illustrate le strutture usate dai codec MFT per descrivere i tipi di supporti.  |
+| [Uso di buffer multimediali ed esempi MFT](workingwithmftmediabuffersandsamples.md) | Vengono illustrati i buffer che è necessario creare per elaborare gli esempi con i codec MFT. |
+| [Configurazione dei codec MFT](configuringcodecmfts.md)                                     | Descrive la sequenza per la configurazione dei codec MFT.                             |
+| [Input e output MFT del codec di elaborazione](processingcodecmftinputandoutput.md)          | Descrive come elaborare gli input e gli output usando i codec MFT.               |
 
 
 

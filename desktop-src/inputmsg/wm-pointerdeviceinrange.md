@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_POINTERDEVICEINRANGE
+title: WM_POINTERDEVICEINRANGE messaggio
 description: Inviato a una finestra quando viene rilevato un dispositivo puntatore nell'intervallo di un digitalizzatore di input. Questo messaggio contiene informazioni relative al dispositivo e alla relativa prossimità.
 ms.assetid: 04244758-E662-4FB2-850E-20B4B3D1294A
 keywords:
-- Messaggi e notifiche di input del messaggio WM_POINTERDEVICEINRANGE
+- WM_POINTERDEVICEINRANGE messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 76ab6ac4f96d1df4e4e29afbcefe86d34b8b602d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 854640d63225945eb19dd56bd092d5b2eb66c2a3cf30c735f3dc64d7594e7502
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602333"
 ---
-# <a name="wm_pointerdeviceinrange-message"></a>Messaggio WM_POINTERDEVICEINRANGE
+# <a name="wm_pointerdeviceinrange-message"></a>WM_POINTERDEVICEINRANGE messaggio
 
 Inviato a una finestra quando viene rilevato un dispositivo puntatore nell'intervallo di un digitalizzatore di input. Questo messaggio contiene informazioni relative al dispositivo e alla relativa prossimità.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi del puntatore e nelle strutture correlate potrebbero apparire inesatte a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto automatico del ridimensionamento per le applicazioni che non supportano DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -57,7 +57,7 @@ Ulteriori informazioni specifiche del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'applicazione elabora il messaggio, deve restituire zero.
+Se l'applicazione elabora questo messaggio, deve restituire zero.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
@@ -67,9 +67,9 @@ Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

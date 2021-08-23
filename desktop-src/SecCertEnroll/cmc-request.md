@@ -1,19 +1,19 @@
 ---
-description: L'esempio seguente contiene una richiesta di certificato CMC. L'esempio è stato generato utilizzando gli strumenti Certreq.exe e Certutil.exe. Il file con estensione inf utilizzato come input per Certreq.exe contiene la configurazione seguente.
+description: L'esempio seguente contiene una richiesta di certificato CMC. L'esempio è stato generato usando Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 ms.assetid: 54c9c447-5c97-462f-b9cb-2df7d4126d80
 title: Richiesta CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39097ab92065aa902b23e7388b406a7c17e88944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 074602a9afb87562502e622dbdf0e6ceb95b979dc95820f015d2ae3edef88031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670341"
 ---
 # <a name="cmc-request"></a>Richiesta CMC
 
-L'esempio seguente contiene una richiesta di certificato CMC. L'esempio è stato generato utilizzando gli strumenti Certreq.exe e Certutil.exe. Il file con estensione inf utilizzato come input per Certreq.exe contiene la configurazione seguente.
+L'esempio seguente contiene una richiesta di certificato CMC. L'esempio è stato generato usando Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 
 ``` syntax
 [NewRequest]
@@ -24,13 +24,13 @@ RequestType=cmc
 CertificateTemplate=User
 ```
 
-Questa configurazione genera l'output di esempio seguente. La configurazione specifica l'oggetto, il tipo di richiesta (CMC) e il modello di certificato (utente). Il modello utente specifica che:
+Questa configurazione genera l'output di esempio seguente. La configurazione specifica il soggetto, il tipo di richiesta (CMC) e il modello di certificato (Utente). Il modello User specifica che:
 
--   La richiesta deve usare il provider di crittografia di base Microsoft 1,0 o Microsoft Enhanced Cryptographic Provider 1,0.
+-   La richiesta deve usare Microsoft Base Cryptographic Provider 1.0 o Microsoft Enhanced Cryptographic Provider 1.0.
 -   Il nome del soggetto deve essere compilato da Active Directory.
--   La richiesta include il nome del modello di certificato, l'utilizzo chiavi avanzato (EKU) e le estensioni per l'utilizzo delle chiavi. L'estensione EKU specifica che il certificato emesso può essere usato per Encrypting File System (EFS), per la posta elettronica sicura e per l'autenticazione client.
+-   La richiesta include le estensioni Nome modello di certificato, Utilizzo chiavi avanzato (EKU) e Utilizzo chiavi. L'estensione EKU specifica che il certificato emesso può essere usato per Encrypting File System (EFS), la posta elettronica sicura e l'autenticazione client.
 
-Una richiesta di certificato CMC è rappresentata dall'interfaccia [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) .
+Una richiesta di certificato CMC è rappresentata [**dall'interfaccia IX509CertificateRequestCmc.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc)
 
 ``` syntax
 PKCS7/CMS Message:

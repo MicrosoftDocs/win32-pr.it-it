@@ -1,10 +1,10 @@
 ---
-title: Struttura MPTHREAT_INFOEX_UNUSED (MpClient. h)
-description: Struttura fittizia per le minacce del tipo di modifica non del comportamento.
+title: MPTHREAT_INFOEX_UNUSED (MpClient.h)
+description: Struttura fittizia per le minacce al tipo di modifica non di comportamento.
 ms.assetid: 3C5305CD-D533-47B5-ADD3-BD8DA05F2046
 keywords:
-- Struttura MPTHREAT_INFOEX_UNUSED le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPTHREAT_INFOEX_UNUSED
+- MPTHREAT_INFOEX_UNUSED funzionalità dell'ambiente Windows legacy
+- PMPTHREAT_INFOEX_UNUSED puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fed78d904bd03fee17676dced7c828aaea8d319d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8def13a6f6aff010b9854055abd4636d19f77ef1f0e9867ec5e4d7562baff4f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601101"
 ---
-# <a name="mpthreat_infoex_unused-structure"></a>\_Struttura MPTHREAT INFOEX \_ inutilizzata
+# <a name="mpthreat_infoex_unused-structure"></a>Struttura MPTHREAT \_ INFOEX \_ NON UTILIZZATA
 
-Struttura fittizia per le minacce del tipo di modifica non del comportamento.
+Struttura fittizia per le minacce al tipo di modifica non di comportamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,9 +54,9 @@ Tipo: **DWORD**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

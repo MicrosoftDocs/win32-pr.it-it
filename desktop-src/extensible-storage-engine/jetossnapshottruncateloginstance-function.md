@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetOSSnapshotTruncateLogInstance'
-title: JetOSSnapshotTruncateLogInstance (funzione)
+description: Altre informazioni sulla funzione JetOSSnapshotTruncateLogInstance
+title: Funzione JetOSSnapshotTruncateLogInstance
 TOCTitle: JetOSSnapshotTruncateLogInstance Function
 ms:assetid: ddc51957-5b89-4abf-9193-c34ef626a63e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294115(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cef30d012c28c809bb35d59a82fd596ba69bd175
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35b76b8b5aa46d107129f5b5033bf958a59488abd402bfb68c8a1d4d3b555a6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728131"
 ---
-# <a name="jetossnapshottruncateloginstance-function"></a>JetOSSnapshotTruncateLogInstance (funzione)
+# <a name="jetossnapshottruncateloginstance-function"></a>Funzione JetOSSnapshotTruncateLogInstance
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetossnapshottruncateloginstance-function"></a>JetOSSnapshotTruncateLogInstance (funzione)
+## <a name="jetossnapshottruncateloginstance-function"></a>Funzione JetOSSnapshotTruncateLogInstance
 
-La funzione **JetOSSnapshotTruncateLogInstance** tronca il log per un'istanza specificata durante una sessione snapshot.
+La **funzione JetOSSnapshotTruncateLogInstance** tronca il log per un'istanza specificata durante una sessione di snapshot.
 
-**Windows Vista:**  **JetOSSnapshotTruncateLogInstance** è stato introdotto in Windows Vista.
+**Windows Vista:****JetOSSnapshotTruncateLogInstance** è stato introdotto in Windows Vista.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotTruncateLogInstance(
@@ -50,9 +50,9 @@ La funzione **JetOSSnapshotTruncateLogInstance** tronca il log per un'istanza sp
 
 Identificatore della sessione snapshot.
 
-*istanza*
+*Istanza*
 
-Istanza di che verrà utilizzata per la chiamata.
+Istanza di che verrà utilizzata per questa chiamata.
 
 *grbit*
 
@@ -74,7 +74,7 @@ Opzioni per questa chiamata. Questo parametro può avere una combinazione dei va
 <tbody>
 <tr class="odd">
 <td><p>JET_bitAllDatabasesSnapshot</p></td>
-<td><p>Tutti i database sono collegati, quindi il motore di archiviazione può calcolare ed eseguire il troncamento del log.</p></td>
+<td><p>Tutti i database sono collegati in modo che il motore di archiviazione possa calcolare ed eseguire il troncamento del log.</p></td>
 </tr>
 <tr class="even">
 <td><p>0 (zero)</p></td>
@@ -86,7 +86,7 @@ Opzioni per questa chiamata. Questo parametro può avere una combinazione dei va
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di](./extensible-storage-engine-errors.md) Archiviazione estendibile e Parametri di gestione [degli errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -106,7 +106,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidGrbit</p></td>
-<td><p>Il parametro <em>grbit</em> non è valido.</p></td>
+<td><p>Il <em>parametro grbit</em> non è valido.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errOSSnapshotInvalidSequence</p></td>
@@ -124,7 +124,7 @@ Se questa funzione ha esito positivo, i file di log per una o tutte le istanze c
 
 #### <a name="remarks"></a>Commenti
 
-Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'opzione JET_bitContinueAfterThaw. In caso contrario, la sessione snapshot termina dopo la chiamata a [JetOSSnapshotThaw](./jetossnapshotthaw-function.md).
+Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'JET_bitContinueAfterThaw predefinita. In caso contrario, la sessione snapshot termina dopo la chiamata a [JetOSSnapshotThaw.](./jetossnapshotthaw-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
@@ -144,11 +144,11 @@ Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'o
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
@@ -161,7 +161,7 @@ Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'o
 #### <a name="see-also"></a>Vedere anche
 
 [Parametri di gestione degli errori](./error-handling-parameters.md)  
-[Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)  
+[Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  
 [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)  

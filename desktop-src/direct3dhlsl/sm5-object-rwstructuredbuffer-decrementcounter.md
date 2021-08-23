@@ -1,5 +1,5 @@
 ---
-title: RWStructuredBuffer::D funzione ecrementCounter (Httpserv. h)
+title: Funzione RWStructuredBuffer::D ecrementCounter (Httpserv.h)
 description: Decrementa il contatore nascosto dell'oggetto.
 ms.assetid: 24bc0b63-a482-4fa5-9898-2d43bca20cf4
 keywords:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a56641054bb4e9ed4b1865d00c662b0de2afa1a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8302f31cd07b81f4f78abe6a0a1fbcb2e6a1028f6153da69e55e0fb34977b585
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671391"
 ---
-# <a name="decrementcounter-function"></a>DecrementCounter (funzione)
+# <a name="decrementcounter-function"></a>Funzione DecrementCounter
 
 Decrementa il contatore nascosto dell'oggetto.
 
@@ -39,17 +39,17 @@ Questa funzione non ha parametri.
 
 Tipo: **uint**
 
-Valore del contatore dopo il decremento.
+Valore del contatore dopo la decrementazione.
 
 ## <a name="remarks"></a>Commenti
 
-Per il funzionamento della visualizzazione di accesso non ordinato associato è necessario impostare il [**\_ \_ \_ \_ contatore del flag UAV del buffer D3D11**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) durante creationfor.
+La vista di accesso non ordinata associata deve avere [**D3D11 \_ BUFFER \_ UAV \_ FLAG \_ COUNTER**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) impostato durante la creazioneper il funzionamento di questo metodo.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -63,7 +63,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Httpserv. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Httpserv.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

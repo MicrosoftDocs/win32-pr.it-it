@@ -4,18 +4,18 @@ ms.assetid: ab26850e-554a-4a1b-9250-edb0b4e17fe2
 title: PageDeviceColorSpaceProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21420dec2e3057de903b1e04c55a7c6d234343b0
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: a979ed2bdabd9d31be44942de2a8fbe47119f2e27c77041b2410413d9e43ece6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554611"
 ---
 # <a name="pagedevicecolorspaceprofileuri"></a>PageDeviceColorSpaceProfileURI
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica un URI relativo alla radice del pacchetto a un profilo ICC contenuto in un documento XPS. L'elaborazione di questa opzione dipende dall'impostazione della funzionalità PageDeviceColorSpaceUsage. Si presuppone che tutti gli elementi che usano tale profilo siano già nello spazio colori del dispositivo appropriato e non saranno gestiti a colori nel driver o nel dispositivo.
+Specifica un URI relativo alla radice del pacchetto per un profilo ICC contenuto in un documento XPS. L'elaborazione di questa opzione dipende dall'impostazione della funzionalità PageDeviceColorSpaceUsage. Si presuppone che tutti gli elementi che usano tale profilo siano già nello spazio colore del dispositivo appropriato e non saranno gestiti a colori nel driver o nel dispositivo.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)

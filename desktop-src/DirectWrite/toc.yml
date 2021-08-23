@@ -38,33 +38,33 @@
           items:
             - name: Come allineare il testo
               href: how-to-align-text.md
-            - name: Come aggiungere il supporto per più monitor
+            - name: Come aggiungere il supporto per più monitoraggi
               href: how-to-add-support-for-multiple-monitors.md
-            - name: Come assicurarsi che l'applicazione venga visualizzata correttamente su schermi con valori DPI alti
+            - name: Come assicurarsi che l'applicazione venga visualizzata correttamente su schermi con valori DPI elevati
               href: how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays.md
-            - name: Verificare che il testo sia visualizzato con la direzione di lettura corretta
+            - name: Assicurarsi che il testo sia visualizzato con la direzione di lettura corretta
               href: how-to-ensure-text-is-displayed-with-the-correct-reading-direction.md
             - name: Come enumerare i tipi di carattere
               href: font-enumeration.md
-            - name: Come eseguire l'hit testing su un layout di testo
+            - name: Come eseguire l'hit testing in un layout di testo
               href: how-to-perform-hit-testing-on-a-text-layout.md
             - name: Come aggiungere oggetti inline a un layout di testo
               href: how-to-add-inline-objects-to-a-text-layout.md
             - name: Come aggiungere effetti di disegno client a un layout di testo
               href: how-to-add-custom-drawing-efffects-to-a-text-layout.md
-        - name: Glyphs e Glyph Runs
+        - name: Glifi e esecuzioni di glifi
           href: glyphs-and-glyph-runs.md
         - name: Set di caratteri personalizzati
           href: custom-font-sets-win10.md
-        - name: Raccolte di tipi di carattere personalizzati (Windows 7/8)
+        - name: Raccolte di caratteri personalizzate (Windows 7/8)
           href: custom-font-collections.md
         - name: Tipi di carattere di variabili OpenType
           href: opentype-variable-fonts.md
-        - name: Confronto tra API Di testo Win32
+        - name: Confronto tra API di testo Win32
           href: appendix--win32-migration.md
         - name: Interoperabilità con GDI
           href: interoperating-with-gdi.md
-        - name: Glossario di DirectWrite
+        - name: DirectWrite Glossario
           href: directwrite-glossary.md
     - name: Informazioni di riferimento sulle API
       href: reference.md
@@ -76,7 +76,7 @@
               href: /windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory
             - name: DWriteCoreCreateFactory (DWriteCore)
               href: /windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory
-        - name: Enumerazioni DirectWrite
+        - name: DirectWrite di dati
           href: enumerations.md
           items:
             - name: DWRITE_AUTOMATIC_FONT_AXES
@@ -361,7 +361,7 @@
             - name: IDWriteFactory4
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory4
               items:
-                - name: Metodi computeGlyphOrigins
+                - name: Metodi ComputeGlyphOrigins
                   href: idwritefactory4-computeglyphorigins-overload.md
                   items:
                     - name: 'Metodo ComputeGlyphOrigins(DWRITE_GLYPH_RUN, DWRITE_MEASURING_MODE, D2D1_POINT_2F, DWRITE_MATRIX, D2D1_POINT_2F*)'
@@ -929,9 +929,9 @@
                 - name: Metodi GetFontSignature
                   href: idwritegdiinterop1-getfontsignature-overload.md
                   items:
-                    - name: 'GetFontSignature(IDWriteFont,*FONTSIGNATURE*)'
+                    - name: 'GetFontSignature(IDWriteFont *, FONTSIGNATURE*)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)
-                    - name: 'GetFontSignature(IDWriteFontFace,*FONTSIGNATURE*)'
+                    - name: 'GetFontSignature(IDWriteFontFace *, FONTSIGNATURE*)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)
             - name: IDWriteGeometrySink
               href: idwritegeometrysink.md
@@ -1386,14 +1386,14 @@
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritetypography-getfontfeature
                 - name: GetFontFeatureCount
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritetypography-getfontfeaturecount
-        - name: Macro DirectWrite
+        - name: DirectWrite macro
           href: macros.md
           items:
             - name: DWRITE_MAKE_FONT_AXIS_TAG
               href: /windows/win32/api/dwrite_3/nf-dwrite_3-dwrite_make_font_axis_tag
             - name: DWRITE_MAKE_OPENTYPE_TAG
               href: /windows/win32/api/dwrite/nf-dwrite-dwrite_make_opentype_tag
-        - name: Strutture DirectWrite
+        - name: DirectWrite strutture
           href: structures.md
           items:
             - name: DWRITE_BITMAP_DATA_BGRA32 (DWriteCore)

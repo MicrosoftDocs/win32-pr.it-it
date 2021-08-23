@@ -1,9 +1,9 @@
 ---
-title: Messaggio DRV_FREE (mmsystem. h)
-description: Notifica al driver che è stata rimossa dalla memoria. Il driver deve liberare memoria e altre risorse di sistema allocate.
+title: DRV_FREE messaggio (Mmsystem.h)
+description: Notifica al driver che è in corso la rimozione dalla memoria. Il driver deve liberare qualsiasi memoria e altre risorse di sistema allocate.
 ms.assetid: 0447f8e9-4c4d-4be5-ab1f-ecd3e8cd2e67
 keywords:
-- DRV_FREE messaggi multimediali di Windows
+- DRV_FREE di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abb9d70d269cb84e0d6ef0881618b67cfef11068
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21a558dc7a2c3ece040790b2351ff39dc3054d660eb9368567ed7ce79d40c8a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526211"
 ---
-# <a name="drv_free-message"></a>\_Messaggio privo di DRV
+# <a name="drv_free-message"></a>Messaggio DRV \_ FREE
 
-Notifica al driver che è stata rimossa dalla memoria. Il driver deve liberare memoria e altre risorse di sistema allocate.
+Notifica al driver che è in corso la rimozione dalla memoria. Il driver deve liberare qualsiasi memoria e altre risorse di sistema allocate.
 
 ## <a name="parameters"></a>Parametri
 
@@ -42,9 +42,9 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-I parametri *dwDriverId*, *lParam1* e *lParam2* non vengono usati.
+I *parametri dwDriverId*, *lParam1* e *lParam2* non vengono usati.
 
-Il messaggio **drv \_ Free** è sempre l'ultimo messaggio ricevuto da un driver di dispositivo.
+Il **messaggio DRV \_ FREE** è sempre l'ultimo messaggio ricevuto da un driver di dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Il messaggio **drv \_ Free** è sempre l'ultimo messaggio ricevuto da un driver 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e9b4e257c2ebc0584a8291461439f75238599d35
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a80dfcb5ab260b4d60b6370bb34698efb201401f0c6d4924b143e8b9041258a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525051"
 ---
 # <a name="msvm_elementconformstoprofile-class"></a>Classe Msvm \_ ElementConformsToProfile
 
@@ -88,9 +88,9 @@ Riferimento a un'istanza della [**classe Msvm \_ ComputerSystem**](msvm-computer
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 solo \[ app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

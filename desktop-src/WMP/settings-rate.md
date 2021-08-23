@@ -1,9 +1,9 @@
 ---
-title: Settings. rate
-description: La proprietà rate specifica o recupera la frequenza di riproduzione corrente dei supporti video.
+title: Impostazioni.rate
+description: La proprietà rate specifica o recupera la frequenza di riproduzione corrente dei contenuti multimediali video.
 ms.assetid: 0f95f7ac-1bb6-4c80-89eb-eb300a03a0f1
 keywords:
-- Impostazioni. Frequenza Media Player di Windows
+- Impostazioni.rate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,45 +14,45 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e61287789487fddbe7e77fba5fc033d3103aecb8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01936462593b8b27a8d45f2e3e4090b9cf242d79e1d9b1c2cda00c152bd41182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646401"
 ---
-# <a name="settingsrate"></a>Settings. rate
+# <a name="settingsrate"></a>Impostazioni.rate
 
-La proprietà **rate** specifica o recupera la frequenza di riproduzione corrente dei supporti video.
+La **proprietà rate** specifica o recupera la frequenza di riproduzione corrente dei contenuti multimediali video.
 
 ## <a name="syntax"></a>Sintassi
 
-Player. Settings. rate
+player.settings.rate
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di lettura/scrittura (**Double**) il cui valore predefinito è 1,0.
+Questa proprietà è un numero **di** lettura/scrittura (**double**) con valore predefinito 1.0.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà funge da valore moltiplicatore che consente di riprodurre una clip a una velocità più veloce o più lenta. Il valore predefinito 1,0 indica la velocità creata. Si noti che una traccia audio diventa difficile da comprendere a una velocità inferiore a 0,5 o superiore a 1,5. Una velocità di riproduzione pari a 2 corrisponde al doppio della velocità di riproduzione normale.
+Questa proprietà funge da valore moltiplicatore che consente di riprodurre un clip a una velocità più veloce o più lenta. Il valore predefinito 1.0 indica la velocità di creazione. Si noti che una traccia audio diventa difficile da comprendere a velocità inferiori a 0,5 o superiori a 1,5. Una velocità di riproduzione di 2 equivale al doppio della velocità di riproduzione normale.
 
-Windows Media Player tenterà di utilizzare il più efficace di quattro diverse modalità di riproduzione. Queste modalità sono la riproduzione video uniforme con il pitch audio mantenuto e la riproduzione video uniforme con il pitch audio non mantenuto, la riproduzione video uniforme senza audio e la riproduzione di video con fotogrammi chiave senza audio. La modalità scelta dal lettore dipende da numerosi fattori, tra cui il tipo di file e la posizione, il sistema operativo, la rete e il server.
+Windows Media Player tenterà di usare il più efficace di quattro diverse modalità di riproduzione. Queste modalità sono la riproduzione video uniforme con audio intonazione mantenuta, la riproduzione video uniforme con il tono audio non mantenuto, la riproduzione video uniforme senza audio e la riproduzione video con fotogrammi chiave senza audio. La modalità scelta dal Lettore dipende da numerosi fattori, tra cui il tipo di file e la posizione, il sistema operativo, la rete e il server.
 
 Si applicano anche altre considerazioni, a seconda del tipo di supporto:
 
--   File Windows Media Format (WMV) e ASF: i valori ottimali per questa proprietà sono compresi tra 1 e 10 o da 1 a 10 per la riproduzione inversa. I valori compresi tra 0,5 e 1,0 o da-0,5 a-1,0 possono anche funzionare correttamente nei casi in cui è possibile mantenere il pitch audio, ad esempio quando si giocano i file che si trovano nel computer locale. I valori con una grandezza assoluta maggiore di 10 sono consentiti, ma non sono molto significativi.
--   Altri tipi di supporti video: questa proprietà può variare da 0 a 9. I valori negativi non sono consentiti. I valori minori di 1 rappresentano un movimento lento. I valori superiori a 9 sono consentiti, ma non sono molto significativi.
+-   Windows File WMV (Media Format) e ASF: i valori ottimali per questa proprietà sono da 1 a 10 o da 1 a 10 per la riproduzione inversa. Anche i valori da 0.5 a 1.0 o da -0.5 a -1.0 possono funzionare correttamente nei casi in cui è possibile mantenere l'audio pitch, ad esempio durante la riproduzione di file che si trovano nel computer locale. I valori con una grandezza assoluta maggiore di 10 sono consentiti, ma non sono molto significativi.
+-   Altri tipi di supporti video: questa proprietà può variare da 0 a 9. I valori negativi non sono consentiti. I valori minori di 1 rappresentano il movimento lento. I valori superiori a 9 sono consentiti, ma non sono molto significativi.
 
-*Controlli*. il metodo **fastForward** imposta il valore di **rate** su 5,0, mentre i *controlli*. la **frequenza** delle modifiche al metodo **fastReverse** è 5,0.
+Controlli . **Il metodo fastForward** modifica il valore **della frequenza** in 5,0, mentre *il controllo .* **Il metodo fastReverse** cambia **la frequenza** a 5.0.
 
-Non è possibile modificare la velocità di riproduzione di alcuni tipi di supporto. Usare le *Impostazioni*. **Metodo IsValid** per determinare se questa proprietà può essere specificata per un particolare elemento multimediale.
+Non è possibile modificare la velocità di riproduzione di alcuni tipi di supporti. Usare il *Impostazioni*. **Metodo isAvailable** per determinare se questa proprietà può essere specificata per un particolare elemento multimediale.
 
-**Windows Media Player 10 Mobile**: questa proprietà accetta o restituisce solo i valori-5,0, 1,0 o 5,0.
+**Windows Media Player 10 Mobile:** questa proprietà accetta o restituisce solo valori -5.0, 1.0 o 5.0.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento HTML SELECT che consente all'utente di modificare la velocità di riproduzione del supporto corrente. Le opzioni di selezione offrono velocità di riproduzione normali, a metà velocità e a velocità doppia. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio seguente viene creato un elemento HTML SELECT che consente all'utente di modificare la velocità di riproduzione del supporto corrente. Le opzioni SELECT offrono velocità normale, velocità media e velocità di riproduzione a doppia velocità. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```
@@ -83,7 +83,7 @@ Nell'esempio seguente viene creato un elemento HTML SELECT che consente all'uten
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -92,16 +92,16 @@ Nell'esempio seguente viene creato un elemento HTML SELECT che consente all'uten
 
 <dl> <dt>
 
-[**Controls. fastForward**](controls-fastforward.md)
+[**Controls.fastForward**](controls-fastforward.md)
 </dt> <dt>
 
-[**Controls. fastReverse**](controls-fastreverse.md)
+[**Controls.fastReverse**](controls-fastreverse.md)
 </dt> <dt>
 
-[**Oggetto Settings**](settings-object.md)
+[**Impostazioni Oggetto**](settings-object.md)
 </dt> <dt>
 
-[**Settings. available**](settings-isavailable.md)
+[**Impostazioni.isAvailable**](settings-isavailable.md)
 </dt> </dl>
 
  

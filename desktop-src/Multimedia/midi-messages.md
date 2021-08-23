@@ -5,46 +5,46 @@ ms.assetid: 7c352eaf-61a5-4e56-8480-97245c08963f
 keywords:
 - audio multimediale, messaggi MIDI
 - audio, messaggi MIDI
-- MIDI (Musical Instrument Digital Interface), messaggi
-- MIDI (Musical Instrument Digital Interface), messaggi
-- informazioni di riferimento per i messaggi MIDI,
-- Riferimento MIDI, messaggi
+- Instrument Digital Interface (MIDI), messages
+- MIDI (Instrument Digital Interface), messaggi
+- informazioni di riferimento per MIDI, messaggi
+- RIFERIMENTO MIDI, messaggi
 - Messaggi MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63a49e918a4f06efbafd5d8f61848111d3331153
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c45c7c9f101c931591857d3957df0f0cfd00a4ecaff61c31f6f69ef24b36deff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525131"
 ---
 # <a name="midi-messages"></a>Messaggi MIDI
 
 I messaggi seguenti vengono usati con MIDI.
 
--   [**\_chiusura MIM**](mim-close.md)
--   [**\_dati MIM**](mim-data.md)
--   [**\_errore MIM**](mim-error.md)
--   [**\_LONGDATA MIM**](mim-longdata.md)
--   [**\_LONGERROR MIM**](mim-longerror.md)
--   [**\_MOREDATA MIM**](mim-moredata.md)
--   [**MIM \_ aperto**](mim-open.md)
--   [**MM \_ di \_ chiusura MIM**](mm-mim-close.md)
--   [**\_dati MIM \_ mm**](mm-mim-data.md)
--   [**\_errore MIM \_ mm**](mm-mim-error.md)
--   [**\_LONGDATA MIM \_ mm**](mm-mim-longdata.md)
--   [**\_LONGERROR MIM \_ mm**](mm-mim-longerror.md)
--   [**\_MOREDATA MIM \_ mm**](mm-mim-moredata.md)
--   [**\_apertura MIM \_ mm**](mm-mim-open.md)
--   [**MM \_ \_ chiusura MOM**](mm-mom-close.md)
--   [**MM \_ MOM \_ completato**](mm-mom-done.md)
--   [**MM- \_ MOM \_ aperto**](mm-mom-open.md)
--   [**MM \_ \_ POSITIONCB MOM**](mm-mom-positioncb.md)
--   [**\_chiusura MOM**](mom-close.md)
--   [**MOM \_ completato**](mom-done.md)
--   [**MOM \_ aperto**](mom-open.md)
--   [**\_POSITIONCB MOM**](mom-positioncb.md)
+-   [**\_MIM Vicino**](mim-close.md)
+-   [**\_MIM Dati**](mim-data.md)
+-   [**\_MIM Errore**](mim-error.md)
+-   [**\_MIM LONGDATA**](mim-longdata.md)
+-   [**\_MIM LONGERROR**](mim-longerror.md)
+-   [**\_MIM MOREDATA**](mim-moredata.md)
+-   [**\_MIM Aperto**](mim-open.md)
+-   [**MM \_ MIM \_ CLOSE**](mm-mim-close.md)
+-   [**DATI \_ MIM \_ MM**](mm-mim-data.md)
+-   [**ERRORE \_ MIM \_ MM**](mm-mim-error.md)
+-   [**MM \_ MIM \_ LONGDATA**](mm-mim-longdata.md)
+-   [**MM \_ MIM \_ LONGERROR**](mm-mim-longerror.md)
+-   [**MM \_ MIM \_ MOREDATA**](mm-mim-moredata.md)
+-   [**MM \_ MIM \_ OPEN**](mm-mim-open.md)
+-   [**MM \_ MOM \_ CLOSE**](mm-mom-close.md)
+-   [**MM \_ MOM \_ DONE**](mm-mom-done.md)
+-   [**MM \_ MOM \_ OPEN**](mm-mom-open.md)
+-   [**MM \_ MOM \_ POSITIONCB**](mm-mom-positioncb.md)
+-   [**MOM \_ CLOSE**](mom-close.md)
+-   [**MOM \_ DONE**](mom-done.md)
+-   [**MOM \_ OPEN**](mom-open.md)
+-   [**MOM \_ POSITIONCB**](mom-positioncb.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -53,9 +53,9 @@ I messaggi seguenti vengono usati con MIDI.
 [Riferimento MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

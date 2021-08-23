@@ -1,10 +1,10 @@
 ---
-title: Attributo Netboot-Initialization
-description: Percorso di avvio predefinito per l'avvio senza dischi.
+title: Netboot-Initialization attributo
+description: Percorso di avvio predefinito per l'avvio senza disco.
 ms.assetid: 359f9fff-1630-4c47-9221-1a2cc6249567
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Netboot-Initialization attribute
+- Netboot-Initialization schema AD dell'attributo
 - Schema AD dell'attributo netbootInitialization
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db4232d57b38e87386b340810f5edea47f2e409c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9e8fbb11ae06efe9adb6b530670d88cc7c7e466922d3d8cbc6162cc6701ed3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648691"
 ---
-# <a name="netboot-initialization-attribute"></a>Attributo Netboot-Initialization
+# <a name="netboot-initialization-attribute"></a>Netboot-Initialization attributo
 
-Percorso di avvio predefinito per l'avvio senza dischi.
+Percorso di avvio predefinito per l'avvio senza disco.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Netboot-Initialization                      |
-| LDAP-Display-Name | netbootInitialization                       |
+| Ldap-Display-Name | netbootInitialization                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.358                      |
-| System-ID-GUID    | 3e978920-8c01-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 3e978920-8c01-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Percorso di avvio predefinito per l'avvio senza dischi.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

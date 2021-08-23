@@ -1,19 +1,19 @@
 ---
-description: Viene creata un'istanza di questo modello in base alla rete.
+description: Viene creata un'istanza di questo modello per ogni mesh.
 ms.assetid: ac5289c6-989c-43b4-9190-ac8f831a05f0
 title: SkinWeights
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 759239a3a7ec8ebb608cf9ede6624105cee321b4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0bb76b1c0860e64f2e1e8b42cb7ed4d2af984cc043425b97e03cf997714d0e63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627911"
 ---
 # <a name="skinweights"></a>SkinWeights
 
-Viene creata un'istanza di questo modello in base alla rete. All'interno di una mesh, viene visualizzata una sequenza di n istanze di questo modello, dove n è il numero di ossa (X file frame) che influenzano i vertici nella rete. Ogni istanza del modello definisce fondamentalmente l'influenza di un particolare osso sulla rete. È presente un elenco di indici dei vertici e un elenco corrispondente di pesi.
+Viene creata un'istanza di questo modello per ogni mesh. All'interno di una mesh verrà visualizzata una sequenza di n istanze di questo modello, dove n è il numero di elementi (frame di file X) che influenzano i vertici nella mesh. Ogni istanza del modello definisce fondamentalmente l'influenza di un particolare elemento nella mesh. È disponibile un elenco di indici dei vertici e un elenco corrispondente di pesi.
 
 ``` syntax
 template SkinWeights 
@@ -29,9 +29,9 @@ template SkinWeights
 
 Dove:
 
--   Il nome dell'osso la cui influenza viene definita è transformNodeName e nWeights è il numero di vertici interessati da questo osso.
--   I vertici influenzati da questo osso sono contenuti in vertexIndices e i pesi per ogni vertice influenzato da questo osso sono contenuti in pesi.
--   La matrice matrixOffset trasforma i vertici della mesh nello spazio dell'osso. Una volta concatenato alla trasformazione dell'osso, fornisce le coordinate dello spazio globale della mesh interessate dall'osso. Vedere [**Matrix4x4**](matrix4x4.md).
+-   Il nome dell'ente di cui viene definita l'influenza è transformNodeName e nWeights è il numero di vertici interessati da questo gruppo.
+-   I vertici influenzati da questo vertice sono contenuti in vertexIndices e i pesi per ognuno dei vertici influenzati da questo vertice sono contenuti in pesi.
+-   La matrice matrixOffset trasforma i vertici della mesh nello spazio dell'oggetto . In caso di concatenazione alla trasformazione del campione, questo fornisce le coordinate dello spazio del mondo della mesh interessate dall'affondo. Vedere [**Matrix4x4.**](matrix4x4.md)
 
 ## <a name="see-also"></a>Vedi anche
 

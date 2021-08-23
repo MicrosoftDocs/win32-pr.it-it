@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e51a86ec9b12992d49364d3a7c614751dacafac3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14b138ae4c1b61b70147726d1a320e8dca1c0a57ffb11dd742419a46f9d131b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630871"
 ---
 # <a name="d3dxshprtcompsplitmeshsc-function"></a>Funzione D3DXSHPRTCompSplitMeshSC
 
-Usato con i risultati compressi della versione dei vertici del simulatore di trasferimento di raggi pre-ricalcolo (PRT). Dopo [**aver chiamato D3DXSHPRTCompSuperCluster,**](d3dxshprtcompsupercluster.md) questa funzione può essere usata per dividere la mesh in un gruppo di visi/vertici per ogni super cluster. Ogni super cluster contiene tutti i visi che contengono tutti i vertici classificati in uno dei relativi cluster. Tutti i vertici connessi a questo set di visi sono inclusi anche nella matrice restituita ppVertStatus che indica se il vertice appartiene o meno al cluster super.
+Usato con i risultati compressi della versione vertice del simulatore PRT (Pre-computed Radiance Transfer). Dopo la chiamata di [**D3DXSHPRTCompSuperCluster,**](d3dxshprtcompsupercluster.md) questa funzione può essere usata per suddividere la mesh in un gruppo di visi/vertici per ogni supercluster. Ogni super cluster contiene tutti i visi che contengono qualsiasi vertice classificato in uno dei cluster. Tutti i vertici connessi a questo set di visi sono inclusi anche nella matrice restituita ppVertStatus che indica se il vertice appartiene o meno al super cluster.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -87,16 +87,16 @@ Numero di cluster (parametro di input per la compressione).
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matrice di *numC di dimensioni* che conterranno ID cluster super.
+Matrice di *numC di dimensioni* che conterranno ID super cluster.
 
 </dd> <dt>
 
-*NumSCS* \[ Pollici\]
+*NumSCs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di cluster super allocati in [**D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md).
+Numero di super cluster allocati in [**D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md).
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Numero di cluster super allocati in [**D3DXSHPRTCompSuperCluster**](d3dxshprtcom
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Dati index buffer non elaborati per la mesh. Il formato dipende da *InputIBIs32Bit.*
+Non index buffer per mesh. Il formato dipende da *InputIBIs32Bit.*
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Dati index buffer non elaborati per la mesh. Il formato dipende da *InputIBIs32B
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se **TRUE,** la index buffer è impostata su 32 bit. in caso contrario, 16 bit.
+Se **TRUE,** la index buffer è impostata su 32 bit; in caso contrario, 16 bit.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Se **TRUE,** la index buffer è impostata su 32 bit. in caso contrario, 16 bit.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di visi nella mesh originale *(pInputIB* è 3 volte la lunghezza).
+Numero di visi nella mesh originale (*pInputIB* è pari a 3 volte questa lunghezza).
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Numero di visi nella mesh originale *(pInputIB* è 3 volte la lunghezza).
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Oggetto index buffer che conterrà i visi divisi risultanti. Formato determinato da *InputIBIs32Bit*. Allocato dalla funzione.
+Non index buffer che conterrà i visi divisi risultanti. Formato determinato da *InputIBIs32Bit.* Allocato dalla funzione.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ Oggetto index buffer che conterrà i visi divisi risultanti. Formato determinato
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Lunghezza di *ppIBData*, assegnata nella funzione.
+Lunghezza di *ppIBData,* assegnata nella funzione.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Numero di nuovi vertici nella mesh suddivisa. Assegnato nella funzione .
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matrice di *numCs* di lunghezza in cui *pSCData* indicizza (campi *pClusterIDs)* per ogni supercluster, contiene cluster ordinati per \* supercluster.
+Matrice di *numCs* di lunghezza in cui *pSCData* indicizza (campi *pClusterIDs)* per ogni supercluster, che contiene i cluster ordinati per \* supercluster.
 
 </dd> <dt>
 
@@ -195,7 +195,7 @@ Matrice di *numCs* di lunghezza in cui *pSCData* indicizza (campi *pClusterIDs)*
 
 Tipo: **[ **D3DXSHPRTSPLITMESHCLUSTERDATA**](d3dxshprtsplitmeshclusterdata.md)\***
 
-Struttura per cluster super. Contiene indici in *ppIBData*, *pSCClusterList* e *ppVertData*.
+Struttura per ogni super cluster. Contiene indici in *ppIBData,* *pSCClusterList* e *ppVertData.*
 
 </dd> </dl>
 
@@ -220,7 +220,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 <dl> <dt>
 
-[Funzioni di trasferimento della radiance pre-ricalcolate](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funzioni di trasferimento di radiance pre-ricalcolate](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

@@ -1,24 +1,24 @@
 ---
-title: Attributo RotationAngle di la
-description: Attributo RotationAngle di la
+title: Attributo RotationAngle vml
+description: Attributo RotationAngle vml
 ms.assetid: d5432512-1ac2-497b-a415-cec3c1217120
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e8af10704c74138192453894427f74003543510
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d78fa8414c0fd30adab9b5c1e21a11102c3b9ea6ad8a0d31cb25c0e88040c93d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573991"
 ---
-# <a name="vml-rotationangle-attribute"></a>Attributo RotationAngle di la
+# <a name="vml-rotationangle-attribute"></a>Attributo RotationAngle vml
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Specifica la rotazione dell'oggetto sugli assi x e y. Proprietà di lettura/scrittura. **VgVector2D**.
 
@@ -26,22 +26,22 @@ Specifica la rotazione dell'oggetto sugli assi x e y. Proprietà di lettura/scri
 
 [Estrusione](msdn-online-vml-extrusion-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* RotationAngle = " *Expression* " >
+<o: rotationangle=" *expression* "> 
 
 **Sintassi dello script**
 
-*element* . RotationAngle = "*Expression*"
+*element* .rotationangle="*expression*"
 
-*espressione* = *elemento*. RotationAngle
+*expression* = *elemento*.rotationangle
 
 **Osservazioni:**
 
-La rotazione dell'oggetto è definita da un angolo di rotazione sull'asse y seguito dall'angolo di rotazione sull'asse x. L'angolo dell'asse z è controllato dal valore dell'attributo di **rotazione** dello stile HTML standard della forma. Il valore predefinito è 0,0.
+La rotazione dell'oggetto è definita da un angolo di rotazione intorno all'asse y seguito dall'angolo di rotazione intorno all'asse x. L'angolo dell'asse z è controllato dal valore dell'attributo di rotazione dello stile HTML standard **della** forma. Il valore predefinito è 0,0.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

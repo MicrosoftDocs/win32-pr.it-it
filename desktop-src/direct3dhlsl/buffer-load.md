@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di caricamento buffer:: buffer'
+title: Metodi Buffer::Buffer Load
 description: Legge i dati del buffer.
 ms.assetid: 53FD566F-2017-43B9-8E36-134958B74108
 keywords:
-- Metodi Load HLSL
+- Metodi di caricamento HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 02fc0e3ebffdd686b87330f33ef5e5c36f570cf3
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 59ed76101dcd6efdd0968f51e5211769c92db29ca52e5123fb9c55605f1a8cd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104398104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626361"
 ---
-# <a name="bufferload-methods"></a>Metodi buffer:: Load
+# <a name="bufferload-methods"></a>Metodi Buffer::Load
 
-Legge i dati del [**buffer**](sm5-object-buffer.md) .
+Legge i [**dati del**](sm5-object-buffer.md) buffer.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Legge i dati del [**buffer**](sm5-object-buffer.md) .
 
 | Metodo                                            | Descrizione                                                       |
 |:--------------------------------------------------|:------------------------------------------------------------------|
-| [**Load (int, uint)**](sm5-object-buffer-load.md) | Legge i dati del buffer e restituisce lo stato dell'operazione.<br/> |
-| [**Caricamento (int)**](dx-graphics-hlsl-to-load.md)     | Legge i dati del buffer.<br/>                                     |
+| [**Load(int, uint)**](sm5-object-buffer-load.md) | Legge i dati del buffer e restituisce lo stato dell'operazione.<br/> |
+| [**Load(int)**](dx-graphics-hlsl-to-load.md)     | Legge i dati del buffer.<br/>                                     |
 
 
 

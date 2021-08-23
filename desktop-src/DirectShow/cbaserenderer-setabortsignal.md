@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetAbortSignal imposta un flag che indica se arrestare il rendering e rifiutare ulteriori esempi.
+description: Il metodo SetAbortSignal imposta un flag che indica se arrestare il rendering e rifiutare altri esempi.
 ms.assetid: 2dbf3b4d-e285-4d17-a77c-01a16c09d148
-title: Metodo CBaseRenderer. SetAbortSignal (Renbase. h)
+title: Metodo CBaseRenderer.SetAbortSignal (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 70527d5e43ccab4df7b2110a33df8d813bd16d28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 819f279d20192ff82d9021e03780713f714682abf47aaf854b4568312572e8d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526535"
 ---
-# <a name="cbaserenderersetabortsignal-method"></a>CBaseRenderer. SetAbortSignal, metodo
+# <a name="cbaserenderersetabortsignal-method"></a>Metodo CBaseRenderer.SetAbortSignal
 
-Il `SetAbortSignal` metodo imposta un flag che indica se arrestare il rendering e rifiutare ulteriori esempi.
+Il `SetAbortSignal` metodo imposta un flag che indica se arrestare il rendering e rifiutare altri esempi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void SetAbortSignal(
 *bAbort* 
 </dt> <dd>
 
-Valore booleano che indica se arrestare il rendering. Se **true**, il filtro non eseguirà il rendering di altri esempi.
+Valore booleano che indica se arrestare il rendering. Se **TRUE,** il filtro non eseguirà il rendering di altri esempi.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il flag [**CBaseRenderer:: m \_ bAbort**](cbaserenderer-m-babort.md) .
+Questo metodo imposta il flag [**\_ BAbort CBaseRenderer::m.**](cbaserenderer-m-babort.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo imposta il flag [**CBaseRenderer:: m \_ bAbort**](cbaserenderer-m-
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

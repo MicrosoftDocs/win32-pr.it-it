@@ -1,10 +1,10 @@
 ---
-title: Attributo RID-Set-references
-description: Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identificatori relativi (RID).
+title: Attributo RID-Set-References
+description: Elenco di riferimenti a RID-Set che gestiscono l'allocazione di identificatori relativi (RID).
 ms.assetid: 9bd02a20-97a3-455f-ab77-f84add844974
 ms.tgt_platform: multiple
 keywords:
-- RID-Set-references (attributo AD schema)
+- Schema AD dell'attributo RID-Set-References
 - Schema AD dell'attributo rIDSetReferences
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4115d013a19e7dc8f100f35b57ee3658855e3b6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08f5a6f7a885f161a60a1e184a691deb163e6a8a3198c36e776d3b793d109615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646641"
 ---
-# <a name="rid-set-references-attribute"></a>Attributo RID-Set-references
+# <a name="rid-set-references-attribute"></a>Attributo RID-Set-References
 
-Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identificatori relativi (RID).
+Elenco di riferimenti a RID-Set che gestiscono l'allocazione di identificatori relativi (RID).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | RID-Set-references                      |
-| LDAP-Display-Name | rIDSetReferences                        |
+| CN                | Rid-Set-References                      |
+| Ldap-Display-Name | rIDSetReferences                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.669                  |
-| System-ID-GUID    | 7bfdcb7b-4807-11d1-a9c3-0000f80367c1    |
+| System-Id-Guid    | 7bfdcb7b-4807-11d1-a9c3-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di riferimenti a oggetti RID-Set che gestiscono l'allocazione di identifi
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

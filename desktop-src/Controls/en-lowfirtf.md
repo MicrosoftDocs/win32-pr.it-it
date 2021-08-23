@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_LOWFIRTF (RichEdit. h)
-description: Notifica alla finestra padre di un controllo Microsoft Rich Edit che è stata ricevuta una parola chiave RTF (Rich Text Format) non supportata. Un controllo Rich Edit invia questo codice di notifica sotto forma di un \_ messaggio di notifica WM.
+title: EN_LOWFIRTF di notifica (Richedit.h)
+description: Notifica alla finestra padre di un controllo Microsoft Rich Edit che è stata ricevuta una parola chiave RTF (Rich Text Format) non supportata. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 3b18320b-ebc3-44f2-a93c-e967a028c522
 keywords:
-- Controlli di Windows per il codice di notifica EN_LOWFIRTF
+- EN_LOWFIRTF codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e74a6e5dada471fdd8364b34bf2ed1b4da7f2314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffafccf7fc52506ce72c6591ae9d4b5e3f5ee8855788267fbfae98497165e4ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576321"
 ---
-# <a name="en_lowfirtf-notification-code"></a>\_Codice di notifica en LOWFIRTF
+# <a name="en_lowfirtf-notification-code"></a>Codice \_ di notifica EN LOWFIRTF
 
-Notifica alla finestra padre di un controllo Microsoft Rich Edit che è stata ricevuta una parola chiave RTF (Rich Text Format) non supportata. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo Microsoft Rich Edit che è stata ricevuta una parola chiave RTF (Rich Text Format) non supportata. Un controllo Rich Edit invia questo codice di notifica sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ EN_LOWFIRTF
 *lParam* 
 </dt> <dd>
 
-Struttura [**ENLOWFIRTF**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf) .
+Struttura [**ENLOWFIRTF.**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo codice di notifica non restituisce alcun valore.
+Questo codice di notifica non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Per ricevere una \_ notifica en LOWFIRTF, specificare il \_ flag ENM LOWFIRTF nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere una notifica EN LOWFIRTF, specificare il flag ENM LOWFIRTF nella maschera inviata con il messaggio \_ \_ EM [**\_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Per ricevere una \_ notifica en LOWFIRTF, specificare il \_ flag ENM LOWFIRTF ne
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP1 \[\]<br/>                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP1 \[\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Per ricevere una \_ notifica en LOWFIRTF, specificare il \_ flag ENM LOWFIRTF ne
 [**ENLOWFIRTF**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf)
 </dt> <dt>
 
-[**\_notifica WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

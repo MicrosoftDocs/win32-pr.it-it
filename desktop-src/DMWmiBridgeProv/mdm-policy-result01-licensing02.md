@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_Licensing02
-description: La \_ \_ classe Result01 Licensing02 dei criteri MDM \_ rappresenta i criteri di licenza disponibili.
+title: MDM_Policy_Result01_Licensing02 classe
+description: La classe MDM \_ Policy \_ Result01 \_ Licensing02 rappresenta i criteri di licenza disponibili.
 ms.assetid: 0f3faa78-c9ed-4166-a860-b5096b33772a
 keywords:
-- Classe MDM_Policy_Result01_Licensing02
-- Classe MDM_Policy_Result01_Licensing02, descritta
+- MDM_Policy_Result01_Licensing02 classe
+- MDM_Policy_Result01_Licensing02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa40b1aa0ff64ddd360a304f5366f961fc2c993c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9aaadcc34d744c6e4c94ee287e4d18c8303f85d90fb11c800c19d9944372e535
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574781"
 ---
-# <a name="mdm_policy_result01_licensing02-class"></a>\_ \_ Classe Result01 Licensing02 di criteri \_ MDM
+# <a name="mdm_policy_result01_licensing02-class"></a>Classe \_ Mdm Policy \_ Result01 \_ Licensing02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Result01 \_ Licensing02 dei criteri MDM** rappresenta i criteri di licenza disponibili.
+La **classe MDM Policy \_ \_ Result01 \_ Licensing02** rappresenta i criteri di licenza disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Result01_Licensing02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ Licensing02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ Licensing02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Licensing02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ Licensing02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **classe \_ \_ \_ Licensing02 dei criteri MDM Result01** ha queste proprietà
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -74,7 +74,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -82,32 +82,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Licensing".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Licensing".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> </dl>
 
@@ -117,11 +117,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>File mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

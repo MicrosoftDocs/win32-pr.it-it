@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsSpecialSample determina se i dati in coda sono un messaggio di controllo.
+description: Il metodo IsSpecialSample determina se i dati in coda sono messaggi di controllo.
 ms.assetid: 33d9c7a2-3046-45a5-a9f5-8f33a03bbcdd
-title: Metodo COutputQueue. IsSpecialSample (Outputq. h)
+title: Metodo COutputQueue.IsSpecialSample (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc57847d6a977c740bbf50bae220a89b0ed6fab1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c192196869f86e8d78da2f6b38a661373e115753d99e554f4b7a868eb0b484fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688221"
 ---
-# <a name="coutputqueueisspecialsample-method"></a>COutputQueue. IsSpecialSample, metodo
+# <a name="coutputqueueisspecialsample-method"></a>Metodo COutputQueue.IsSpecialSample
 
-Il `IsSpecialSample` metodo determina se i dati in coda sono un messaggio di controllo.
+Il `IsSpecialSample` metodo determina se i dati in coda sono messaggi di controllo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ BOOL IsSpecialSample(
 *pSample* 
 </dt> <dd>
 
-Puntatore a un elemento della coda.
+Puntatore a un elemento nella coda.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se *pSample* è un messaggio di controllo. in caso contrario, **false** .
+Restituisce **TRUE se** *pSample è* un messaggio di controllo oppure FALSE in caso **contrario.**
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**COutputQueue:: QueueSample**](coutputqueue-queuesample.md) può ricevere i messaggi di controllo oltre agli esempi di supporti. Un messaggio di controllo è una costante definita (di cui viene eseguito il cast a un \_ tipo Long PTR) che indica al thread di eseguire un'azione. I messaggi di controllo non contengono dati multimediali. Per ulteriori informazioni, vedere **COutputQueue:: QueueSample**.
+Il [**metodo COutputQueue::QueueSample**](coutputqueue-queuesample.md) può ricevere messaggi di controllo oltre agli esempi multimediali. Un messaggio di controllo è una costante definita (cast a un tipo LONG PTR) che indica al \_ thread di eseguire un'azione. I messaggi di controllo non contengono dati multimediali. Per altre informazioni, vedere **COutputQueue::QueueSample**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Il metodo [**COutputQueue:: QueueSample**](coutputqueue-queuesample.md) può ric
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

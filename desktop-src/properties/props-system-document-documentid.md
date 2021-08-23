@@ -4,12 +4,12 @@ ms.assetid: 1aa50e38-fa21-4aa1-8ac1-ca8625641423
 title: System.Document.DocumentID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b326f949ca39cc26400df54c6fb9289d3799e73f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26f8b13dbc4150e5d0e82ac46655a1657b5ce723fa7c33c384da79da50dd9991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598201"
 ---
 # <a name="systemdocumentdocumentid"></a>System.Document.DocumentID
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

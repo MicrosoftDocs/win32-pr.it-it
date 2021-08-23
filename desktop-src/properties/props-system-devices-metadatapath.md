@@ -1,17 +1,17 @@
 ---
 description: Percorso dei metadati per il dispositivo.
 ms.assetid: 6499128d-d26d-47f2-b050-927159980307
-title: System. Devices. MetadataPath
+title: System.Devices.MetadataPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e2b7f5f505dffb70f8e2a50ac2cb1564deb70c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 973c5fd007d35c8c5d60e067da94c7d875d64e7db305c455ac3e6eec2363f8b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598561"
 ---
-# <a name="systemdevicesmetadatapath"></a>System. Devices. MetadataPath
+# <a name="systemdevicesmetadatapath"></a>System.Devices.MetadataPath
 
 Percorso dei metadati per il dispositivo.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,27 +1,27 @@
 ---
-description: In questo argomento viene descritto come verificare che il sistema supporti un metodo digest.
+description: Questo argomento descrive come verificare che il sistema supporti un metodo digest.
 ms.assetid: dd1b53cd-66b9-46b3-89ad-ee84b4690e1e
 title: Verificare che il sistema supporti un metodo digest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9acf3e0c2c7f4927fc6047c88039e443e2db3e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 272db3f7169ba66fdaa67c2943030d53e7c75927c2024750d405aa9a8246949e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600301"
 ---
 # <a name="verify-the-system-supports-a-digest-method"></a>Verificare che il sistema supporti un metodo digest
 
-In questo argomento viene descritto come verificare che il sistema supporti un metodo digest.
+Questo argomento descrive come verificare che il sistema supporti un metodo digest.
 
-Le firme digitali XPS usano l'API Crypto, che fornisce i metodi per verificare che il sistema supporti un metodo digest specifico. Per usare la funzione **CryptXmlEnumAlgorithmInfo** dell'API Crypto per enumerare i metodi digest supportati dal sistema, il chiamante deve fornire un metodo di callback e una struttura di dati. La funzione **CryptXmlEnumAlgorithmInfo** passa nuovamente i dati di enumerazione al chiamante tramite il metodo di callback.
+Le firme digitali XPS usano l'API Crypto, che fornisce metodi per verificare che il sistema supporti un metodo digest specifico. Per usare la funzione **CryptXmlEnumAlgorithmInfo** dell'API Crypto per enumerare i metodi digest supportati dal sistema, il chiamante deve fornire un metodo di callback e una struttura di dati. La **funzione CryptXmlEnumAlgorithmInfo** passa i dati di enumerazione al chiamante tramite il metodo di callback.
 
 La struttura dei dati usata in questo esempio è illustrata nell'esempio di codice seguente e contiene i campi seguenti:
 
 | Campo                            | Descrizione                                                                                                |
 |----------------------------------|------------------------------------------------------------------------------------------------------------|
-| **userDigestAlgorithm**          | Campo **LPWSTR** che punta alla stringa che contiene l'URI dell'algoritmo digest da verificare. |
+| **userDigestAlgorithm**          | Campo **LPWSTR** che punta alla stringa contenente l'URI dell'algoritmo digest da controllare. |
 | **userDigestAlgorithmSupported** | Valore **booleano** che indica se l'algoritmo digest è supportato dal certificato.           |
 
 
@@ -39,7 +39,7 @@ struct DigestMethodData
 
 
 
-Il metodo dell'API Crypto che enumera i metodi digest usa un metodo di callback per restituire dati al chiamante. **CryptXmlEnumAlgorithmInfo** enumera i metodi digest supportati dal sistema e chiama il metodo di callback per ogni metodo digest enumerato, finché il metodo di callback non restituisce **false** o finché non vengono enumerati tutti i metodi digest supportati dal sistema. Il metodo di callback in questo esempio confronta il metodo digest passato da **CryptXmlEnumAlgorithmInfo** con il metodo digest fornito dal metodo chiamante.
+Il metodo API Crypto che enumera i metodi digest usa un metodo di callback per restituire dati al chiamante. **CryptXmlEnumAlgorithmInfo** enumera i metodi digest supportati dal sistema e chiama il metodo di callback per ogni metodo digest enumerato, fino a quando il metodo di callback non restituisce **FALSE** o finché non vengono enumerati tutti i metodi digest supportati dal sistema. Il metodo di callback in questo esempio confronta il metodo digest passato da **CryptXmlEnumAlgorithmInfo** con il metodo digest fornito dal metodo chiamante.
 
 
 ```C++
@@ -96,7 +96,7 @@ EnumDigestMethodCallback (
 
 
 
-Nell'esempio di codice seguente viene eseguito il wrapping della funzionalità di convalida in un singolo metodo, che restituisce un valore **booleano** che indica se il sistema supporta il metodo digest.
+L'esempio di codice seguente esegue il wrapping della funzionalità di convalida in un singolo metodo, che restituisce un valore **booleano** che indica se il sistema supporta il metodo digest.
 
 
 ```C++
@@ -156,7 +156,7 @@ SupportsDigestAlgorithm (
 **CryptXmlEnumAlgorithmInfo**
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
 [API di crittografia](/windows/desktop/SecCrypto/cryptography-portal)
@@ -168,7 +168,7 @@ SupportsDigestAlgorithm (
 [Errori dell'API firma digitale XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errori del documento XPS](xps-document-errors.md)
+[Errori dei documenti XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

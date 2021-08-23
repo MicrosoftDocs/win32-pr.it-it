@@ -1,41 +1,41 @@
 ---
-description: Codice di esempio che illustra come creare un file temporaneo per scopi di manipolazione dei dati tramite le funzioni GetTempFileName e GetTempPath.
+description: Codice di esempio che illustra come creare un file temporaneo a scopo di manipolazione dei dati usando le funzioni GetTempFileName e GetTempPath.
 ms.assetid: 6254c67d-5d34-499d-b1a4-8cac526dd294
 title: Creazione e utilizzo di un file temporaneo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca18b7b72aab7c53bea95c38147af66f2b7fef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f242b9b021744c42e7e1b8745c7eec2b6388249246872192ecfd6308bdab55af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650421"
 ---
 # <a name="creating-and-using-a-temporary-file"></a>Creazione e utilizzo di un file temporaneo
 
-Le applicazioni possono ottenere nomi di file e percorsi univoci per i file temporanei usando le funzioni [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) e [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) . La funzione **GetTempFileName** genera un nome file univoco e la funzione **GetTempPath** Recupera il percorso di una directory in cui devono essere creati i file temporanei.
+Le applicazioni possono ottenere nomi di file e percorsi univoci per i file temporanei usando [**le funzioni GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) [**e GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) La **funzione GetTempFileName** genera un nome file univoco e la **funzione GetTempPath** recupera il percorso di una directory in cui devono essere creati i file temporanei.
 
-Nella procedura seguente viene descritto il modo in cui un'applicazione crea un file temporaneo per scopi di manipolazione dei dati.
+La procedura seguente descrive come un'applicazione crea un file temporaneo a scopo di manipolazione dei dati.
 
 **Per creare e usare un file temporaneo**
 
-1.  L'applicazione apre il file di testo di origine fornito dall'utente tramite [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).
-2.  L'applicazione recupera un percorso e un nome file temporanei utilizzando le funzioni [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) e [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) , quindi utilizza [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) per creare il file temporaneo.
-3.  L'applicazione legge i blocchi di dati di testo in un buffer, converte il contenuto del buffer in maiuscolo usando la funzione [CharUpperBuffA](/windows/win32/api/winuser/nf-winuser-charupperbuffa) e scrive il buffer convertito nel file temporaneo.
-4.  Quando tutti i file di origine vengono scritti nel file temporaneo, l'applicazione chiude entrambi i file e Rinomina il file temporaneo in "allcaps.txt" utilizzando la funzione [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) .
+1.  L'applicazione apre il file di testo di origine fornito dall'utente usando [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).
+2.  L'applicazione recupera un percorso e un nome file temporanei usando le funzioni [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) e [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) e quindi usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) per creare il file temporaneo.
+3.  L'applicazione legge blocchi di dati di testo in un buffer, converte il contenuto del buffer in caratteri maiuscoli usando la [funzione CharUpperBuffA](/windows/win32/api/winuser/nf-winuser-charupperbuffa) e scrive il buffer convertito nel file temporaneo.
+4.  Quando tutto il file di origine viene scritto nel file temporaneo, l'applicazione chiude entrambi i file e rinomina il file temporaneo in "allcaps.txt" usando la funzione [**MoveFileEx.**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)
 
-Prima di procedere al passaggio successivo, viene verificata l'esito positivo di ognuno dei passaggi precedenti e viene visualizzata una descrizione dell'errore se si verifica un errore. L'applicazione verrà terminata immediatamente dopo la visualizzazione del messaggio di errore.
+Prima di passare al passaggio successivo, viene verificata l'esito positivo di ognuno dei passaggi precedenti. Se si verifica un errore, viene visualizzata una descrizione dell'errore. L'applicazione verrà terminata immediatamente dopo la visualizzazione del messaggio di errore.
 
-Si noti che la manipolazione dei file di testo è stata scelta solo per semplicità di dimostrazione e può essere sostituita con qualsiasi procedura di manipolazione dei dati desiderata. Il file di dati può essere di qualsiasi tipo di dati, non solo di testo.
+Si noti che la modifica del file di testo è stata scelta solo per semplificare la dimostrazione e può essere sostituita con qualsiasi procedura di manipolazione dei dati desiderata. Il file di dati può essere di qualsiasi tipo, non solo di testo.
 
-La funzione [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera una stringa di percorso completa da una variabile di ambiente, ma non verifica in anticipo l'esistenza del percorso o diritti di accesso appropriati a tale percorso, che è responsabilità dello sviluppatore dell'applicazione. Per ulteriori informazioni, vedere [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha). Nell'esempio seguente un errore viene considerato una condizione terminale e l'applicazione viene chiusa dopo l'invio di un messaggio descrittivo all'output standard. Tuttavia, esistono molte altre opzioni, ad esempio richiedere all'utente una directory temporanea o semplicemente provare a utilizzare la directory corrente.
+La [**funzione GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera una stringa di percorso completa da una variabile di ambiente, ma non verifica in anticipo l'esistenza del percorso o i diritti di accesso adeguati a tale percorso, responsabilità dello sviluppatore dell'applicazione. Per altre informazioni, vedere [**GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) Nell'esempio seguente un errore viene considerato una condizione terminale e l'applicazione viene chiusa dopo l'invio di un messaggio descrittivo all'output standard. Esistono tuttavia molte altre opzioni, ad esempio la richiesta all'utente di una directory temporanea o semplicemente il tentativo di usare la directory corrente.
 
 > [!Note]  
-> La funzione [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) non richiede l'uso della funzione [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) .
+> La [**funzione GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) non richiede l'uso della funzione [**GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha)
 
  
 
-Nell'esempio C++ riportato di seguito viene illustrato come creare un file temporaneo per scopi di manipolazione dei dati.
+Nell'esempio C++ seguente viene illustrato come creare un file temporaneo a scopo di manipolazione dei dati.
 
 
 ```C++

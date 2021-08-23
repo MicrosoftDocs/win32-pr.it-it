@@ -1,9 +1,9 @@
 ---
-title: opzione/PARTIAL
-description: L'opzione/PARTIAL specifica che i tipi non risolti vengono risolti in base ai file di metadati elencati dall' \_ opzione dir di/Metadata.
+title: Opzione /partial
+description: L'opzione /partial specifica che i tipi non risolti vengono risolti in base ai file di metadati elencati dall'opzione /metadata \_ dir.
 ms.assetid: 2A8ED420-84DE-46AE-9FA6-8CB6ECDA4835
 keywords:
-- /Partial switch MIDL
+- Opzione /partial MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66113791c242e88485dcb160917191ff4789af03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d0feea96e2a510211bbe7dd3ead8f9570750609a30c860751e6073472c9aa772
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650281"
 ---
-# <a name="partial-switch"></a>opzione/PARTIAL
+# <a name="partial-switch"></a>Opzione /partial
 
-L'opzione **/partial** specifica che i tipi non risolti vengono risolti in base ai file di metadati elencati dall'opzione [**\_ dir di/Metadata**](-mdmerge-metadata-dir.md) .
+**L'opzione /partial** specifica che i tipi non risolti vengono risolti in base ai file di metadati elencati dall'opzione [**/metadata \_ dir.**](-mdmerge-metadata-dir.md)
 
 ``` syntax
 mdmerge /partial 
@@ -52,7 +52,7 @@ Questa opzione non ha parametri.
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

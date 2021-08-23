@@ -1,9 +1,9 @@
 ---
-title: funzione gluGetTessProperty (Glu. h)
-description: La funzione gluGetTessProperty ottiene una proprietà dell'oggetto mosaico.
+title: Funzione gluGetTessProperty (Glu.h)
+description: La funzione gluGetTessProperty ottiene una proprietà dell'oggetto a tessellazione.
 ms.assetid: 6aa565d8-2257-4259-a959-b7d806a7ed96
 keywords:
-- funzione gluGetTessProperty OpenGL
+- Funzione gluGetTessProperty OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 482f32b227dbcf0c2a62405e344aa719bb4b9e17
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d12e7ca8099197b663893b1edcf04dd8fa98348fe4f6d3d324b54f33904e026a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554241"
 ---
-# <a name="glugettessproperty-function"></a>gluGetTessProperty (funzione)
+# <a name="glugettessproperty-function"></a>Funzione gluGetTessProperty
 
-La funzione **gluGetTessProperty** ottiene una proprietà dell'oggetto mosaico.
+La **funzione gluGetTessProperty** ottiene una proprietà dell'oggetto a tessellazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ void WINAPI gluGetTessProperty(
 *Tess* 
 </dt> <dd>
 
-Oggetto a mosaico creato con [**gluNewTess**](glunewtess.md).
+Oggetto a tessellazione (creato con [**gluNewTess).**](glunewtess.md)
 
 </dd> <dt>
 
-*che* 
+*Che* 
 </dt> <dd>
 
-Proprietà di cui è necessario recuperare il valore. Sono validi i valori seguenti: \_ regola di Winding di Glu Tess \_ \_ , Glu \_ Tess \_ \_ solo limite e Glu \_ Tess \_ tolerance.
+Proprietà il cui valore deve essere recuperato. Sono validi i valori seguenti: GLU \_ TESS \_ WINDING \_ RULE, GLU \_ TESS BOUNDARY ONLY e GLU TESS \_ \_ \_ \_ TOLERANCE.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare **gluGetTessProperty** per recuperare le proprietà archiviate in un oggetto a mosaico. Queste proprietà influiscono sulla modalità di interpretazione e rendering degli oggetti a mosaico. Per informazioni sulle proprietà e sulle operazioni eseguite, vedere [**gluTessProperty**](glutessproperty.md).
+Usare **gluGetTessProperty per** recuperare le proprietà archiviate in un oggetto a tessellazione. Queste proprietà influiscono sul modo in cui vengono interpretati e sottoposti a rendering gli oggetti a tessellazione. Per informazioni sulle proprietà e sulle relative proprietà, vedere [**gluTessProperty.**](glutessproperty.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Utilizzare **gluGetTessProperty** per recuperare le proprietà archiviate in un 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -92,7 +92,7 @@ Utilizzare **gluGetTessProperty** per recuperare le proprietà archiviate in un 
 [**gluNewTess**](glunewtess.md)
 </dt> <dt>
 
-[**gluTessProperty**](glutessproperty.md)
+[**GluTessProperty**](glutessproperty.md)
 </dt> </dl>
 
  

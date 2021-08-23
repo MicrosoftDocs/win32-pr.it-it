@@ -1,17 +1,17 @@
 ---
 description: Indica se il dispositivo supporta le comunicazioni NFC (NDEF).
 ms.assetid: ce9c7b96-f2a3-4a64-8b5e-df46c479b619
-title: System. DeviceInterface. prossimità. SupportsNfc
+title: System.DeviceInterface.Proximity.SupportsNfc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b49a09b7d8c1cd26b6edb3daeb644d283a97b257
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c88c76dfca5ecfce98675404199635777e23aba03c34a0958c0898ded6dc4a97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599321"
 ---
-# <a name="systemdeviceinterfaceproximitysupportsnfc"></a>System. DeviceInterface. prossimità. SupportsNfc
+# <a name="systemdeviceinterfaceproximitysupportsnfc"></a>System.DeviceInterface.Proximity.SupportsNfc
 
 Indica se il dispositivo supporta le comunicazioni NFC (NDEF).
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

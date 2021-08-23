@@ -1,21 +1,21 @@
-- name: Gestione animazioni Windows
+- name: Windows Gestione animazione
   href: '-main-portal.md'
   items:
-    - name: Guida allo sviluppo di animazioni Windows
+    - name: Windows Guida allo sviluppo di animazioni
       href: windows-animation-developer-guide.md
       items:
-        - name: Cenni preliminari sull'animazione Windows
+        - name: Windows Cenni preliminari sull'animazione
           href: scenic-animation-api-overview.md
-        - name: Panoramica dello storyboard
+        - name: Cenni preliminari su Storyboard
           href: storyboard-construction.md
-        - name: Attività di animazione Windows
+        - name: Windows Attività di animazione
           href: using-windows-animation.md
           items:
-            - name: Creare gli oggetti animazione principali
+            - name: Creare gli oggetti di animazione principali
               href: adding-animation-to-an-application.md
             - name: Creare variabili di animazione
               href: create-animation-variables.md
-            - name: Aggiornare gestione animazioni e creare frame
+            - name: Aggiornare Gestione animazione e disegnare fotogrammi
               href: introducing-windows-animation-manager.md
             - name: Leggere i valori delle variabili di animazione
               href: updating---application-driven-animation.md
@@ -23,7 +23,7 @@
               href: updating---timer-driven-animation.md
             - name: Pianificare uno storyboard
               href: scheduling-a-storyboard.md
-    - name: Informazioni di riferimento sull'animazione Windows
+    - name: Windows Informazioni di riferimento sulle animazioni
       href: windows-animation-reference.md
       items:
         - name: Costanti
@@ -82,7 +82,7 @@
         - name: Interfacce
           href: '-interfaces-main.md'
           items:
-            - name: Interfacce di gestione animazioni
+            - name: Interfacce di gestione delle animazioni
               href: animation-management-interfaces.md
               items:
                 - name: IUIAnimationManager
@@ -102,9 +102,9 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-getstoryboardfromtag
                     - name: Metodo GetVariableFromTag
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-getvariablefromtag
-                    - name: Pause (metodo)
+                    - name: Metodo Pause
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-pause
-                    - name: Resume (metodo)
+                    - name: Metodo Resume
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-resume
                     - name: Metodo ScheduleTransition
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-scheduletransition
@@ -147,9 +147,9 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-getstoryboardfromtag
                     - name: Metodo GetVariableFromTag
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-getvariablefromtag
-                    - name: Pause (metodo)
+                    - name: Metodo Pause
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-pause
-                    - name: Resume (metodo)
+                    - name: Metodo Resume
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-resume
                     - name: Metodo ScheduleTransition
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-scheduletransition
@@ -199,9 +199,9 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransitionatkeyframe
                     - name: Metodo AddTransitionBetweenKeyframes
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransitionbetweenkeyframes
-                    - name: Metodo Terminate
+                    - name: Metodo Conclude
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude
-                    - name: Finish (metodo)
+                    - name: Metodo Finish
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-finish
                     - name: Metodo GetElapsedTime
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-getelapsedtime
@@ -236,9 +236,9 @@
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addtransitionatkeyframe
                     - name: Metodo AddTransitionBetweenKeyframes
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addtransitionbetweenkeyframes
-                    - name: Metodo Terminate
+                    - name: Metodo Conclude
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-conclude
-                    - name: Finish (metodo)
+                    - name: Metodo Finish
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-finish
                     - name: Metodo GetElapsedTime
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-getelapsedtime
@@ -295,9 +295,9 @@
                 - name: IUIAnimationInterpolator
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator
                   items:
-                    - name: Metodo getdipendetions
+                    - name: Metodo GetDependencies
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getdependencies
-                    - name: GetDuration (metodo)
+                    - name: Metodo GetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getduration
                     - name: Metodo GetFinalValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getfinalvalue
@@ -305,18 +305,18 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-interpolatevalue
                     - name: Metodo InterpolateVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-interpolatevelocity
-                    - name: Metodo seduration
+                    - name: Metodo SetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-setduration
                     - name: Metodo SetInitialValueAndVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-setinitialvalueandvelocity
                 - name: IUIAnimationInterpolator2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator2
                   items:
-                    - name: Metodo getdipendetions
+                    - name: Metodo GetDependencies
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getdependencies
                     - name: Metodo GetDimension
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getdimension
-                    - name: GetDuration (metodo)
+                    - name: Metodo GetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getduration
                     - name: Metodo GetFinalValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getfinalvalue
@@ -326,7 +326,7 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-interpolatevalue
                     - name: Metodo InterpolateVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-interpolatevelocity
-                    - name: Metodo seduration
+                    - name: Metodo SetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-setduration
                     - name: Metodo SetInitialValueAndVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-setinitialvalueandvelocity
@@ -340,7 +340,7 @@
                 - name: IUIAnimationTransition
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransition
                   items:
-                    - name: GetDuration (metodo)
+                    - name: Metodo GetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-getduration
                     - name: Metodo IsDurationKnown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-isdurationknown
@@ -357,7 +357,7 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-setinitialvectorvelocity
                     - name: Metodo IsDurationKnown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-isdurationknown
-                    - name: GetDuration (metodo)
+                    - name: Metodo GetDuration
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-getduration
                     - name: Metodo GetDimension
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-getdimension
@@ -479,7 +479,7 @@
                   items:
                     - name: Metodo GetCurrentStoryboard
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getcurrentstoryboard
-                    - name: Getcurve (metodo)
+                    - name: Metodo GetCurve
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getcurve
                     - name: Metodo GetDimension
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getdimension
@@ -554,19 +554,19 @@
                   items:
                     - name: Metodo OnCurveChanged
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariablecurvechangehandler2-oncurvechanged
-            - name: Interfacce del timer di animazione
+            - name: Interfacce timer di animazione
               href: animation-timer-interfaces.md
               items:
                 - name: IUIAnimationTimer
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtimer
                   items:
-                    - name: Disable (metodo)
+                    - name: Metodo Disable
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-disable
-                    - name: Enable (metodo)
+                    - name: Metodo Enable
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-enable
-                    - name: GetTime (metodo)
+                    - name: Metodo GetTime
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-gettime
-                    - name: IsEnabled (metodo)
+                    - name: Metodo IsEnabled
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-isenabled
                     - name: Metodo SetFrameRateThreshold
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-setframeratethreshold
@@ -593,7 +593,7 @@
                   items:
                     - name: Metodo ClearTimerClientEventHandler
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-cleartimerclienteventhandler
-                    - name: OnUpdate (metodo)
+                    - name: Metodo OnUpdate
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-onupdate
                     - name: Metodo SetTimerClientEventHandler
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-settimerclienteventhandler
@@ -614,20 +614,20 @@
               href: /previous-versions/windows/desktop/legacy/dd317028(v=vs.85)
             - name: UIAnimationTransitionLibrary2
               href: /previous-versions/windows/desktop/legacy/hh448668(v=vs.85)
-        - name: Codici di errore dell'animazione Windows
+        - name: Windows Codici di errore di animazione
           href: uianimation-error-codes.md
-    - name: Esempi di animazioni Windows
+    - name: Windows Esempi di animazione
       href: windows-animation-samples.md
       items:
-        - name: Esempio di animazione Application-Driven
+        - name: Application-Driven di animazione
           href: application-driven-animation-sample.md
-        - name: Esempio di animazione Timer-Driven
+        - name: Timer-Driven di animazione
           href: timer-driven-animation-sample.md
-        - name: Esempio di interpolazione personalizzata
+        - name: Esempio di interpolatore personalizzato
           href: custom-interpolator-sample.md
-        - name: Esempio di layout di griglia
+        - name: Esempio di layout griglia
           href: grid-layout-sample.md
-        - name: Esempio di confronto prioritario
+        - name: Esempio di confronto delle priorità
           href: priority-comparison-sample.md
-    - name: Glossario animazione Windows
+    - name: Windows Glossario dell'animazione
       href: '-ui-animation-glossary.md'

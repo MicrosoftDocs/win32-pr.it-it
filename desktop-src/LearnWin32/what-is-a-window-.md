@@ -4,41 +4,41 @@ description: Che cos'è una finestra?
 ms.assetid: eef5e139-91f9-4d8b-9153-e178d7416d7e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8494738e3985f78930549f313cb2868b79b34f3b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0af5d845d1a7eac6474dec9da08dcfde8df9f9fd67bf16d6f59cad94c5af0fe2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631441"
 ---
 # <a name="what-is-a-window"></a>Che cos'è una finestra?
 
 ## <a name="what-is-a-window"></a>Che cos'è una finestra?
 
-Ovviamente, le finestre sono centrali per Windows. Sono così importanti che hanno denominato il sistema operativo dopo di essi. Ma che cos'è una finestra? Quando si pensa a una finestra, è probabile che si pensi a una finestra simile alla seguente:
+Ovviamente, le finestre sono centrali per Windows. Sono così importanti che hanno denominato il sistema operativo dopo di essi. Che cos'è una finestra? Quando si pensa a una finestra, probabilmente si pensa a qualcosa di simile al seguente:
 
 ![Screenshot di una finestra dell'applicazione](images/window01.png)
 
-Questo tipo di finestra è denominato finestra *dell'applicazione o* *finestra principale.* In genere ha un frame con una barra del titolo, **pulsanti Riduci** a icona e **Ingrandisci** e altri elementi standard dell'interfaccia utente. Il frame è denominato *area non client* della finestra, così chiamata perché il sistema operativo gestisce tale parte della finestra. L'area all'interno del frame è *l'area client*. Questa è la parte della finestra che il programma gestisce.
+Questo tipo di finestra è detto finestra *dell'applicazione o* *finestra principale.* In genere ha un frame con una barra del titolo, **pulsanti Riduci** a icona e **Ingrandisci** e altri elementi standard dell'interfaccia utente. Il frame è detto *area non client* della finestra, così chiamata perché il sistema operativo gestisce tale parte della finestra. L'area all'interno del frame è *l'area client*. Questa è la parte della finestra che il programma gestisce.
 
 Ecco un altro tipo di finestra:
 
 ![Screenshot di una finestra di controllo](images/window02.png)
 
-Se non si ha esperienza con la programmazione di Windows, può essere sorprendente che i controlli dell'interfaccia utente, ad esempio pulsanti e caselle di modifica, siano finestre. La differenza principale tra un controllo dell'interfaccia utente e una finestra dell'applicazione è che un controllo non esiste da solo. Al contrario, il controllo viene posizionato rispetto alla finestra dell'applicazione. Quando si trascina la finestra dell'applicazione, il controllo si sposta con essa, come previsto. Inoltre, il controllo e la finestra dell'applicazione possono comunicare tra loro. Ad esempio, la finestra dell'applicazione riceve le notifiche click da un pulsante.
+Se non si ha esperienza Windows programmazione, è possibile che i controlli dell'interfaccia utente, ad esempio pulsanti e caselle di modifica, siano finestre stesse. La differenza principale tra un controllo dell'interfaccia utente e una finestra dell'applicazione è che un controllo non esiste da solo. Il controllo viene invece posizionato rispetto alla finestra dell'applicazione. Quando si trascina la finestra dell'applicazione, il controllo si sposta con essa, come previsto. Inoltre, il controllo e la finestra dell'applicazione possono comunicare tra loro. Ad esempio, la finestra dell'applicazione riceve notifiche di clic da un pulsante.
 
-Pertanto, quando si pensa alla *finestra*, non si pensa semplicemente alla *finestra dell'applicazione*. Si pensi invece a una finestra come a un costrutto di programmazione che:
+Pertanto, quando si pensa *a window*, non si pensa semplicemente alla *finestra dell'applicazione*. Si pensi invece a una finestra come a un costrutto di programmazione che:
 
 -   Occupa una determinata parte dello schermo.
 -   Può o meno essere visibile in un determinato momento.
 -   Sa come disegnare se stesso.
 -   Risponde agli eventi dell'utente o del sistema operativo.
 
-## <a name="parent-windows-and-owner-windows"></a>Finestre padre e finestre proprietarie
+## <a name="parent-windows-and-owner-windows"></a>Proprietà Windows e proprietario Windows
 
-Nel caso di un controllo dell'interfaccia utente, la finestra del controllo è *l'elemento figlio* della finestra dell'applicazione. La finestra dell'applicazione *è l'elemento* padre della finestra di controllo. La finestra padre fornisce il sistema di coordinate utilizzato per il posizionamento di una finestra figlio. La presenza di una finestra padre influisce sugli aspetti dell'aspetto di una finestra; Ad esempio, una finestra figlio viene ritagliata in modo che nessuna parte della finestra figlio possa essere visualizzata all'esterno dei bordi della finestra padre.
+Nel caso di un controllo dell'interfaccia utente, la finestra del controllo viene detto figlio *della* finestra dell'applicazione. La finestra dell'applicazione *è l'elemento* padre della finestra di controllo. La finestra padre fornisce il sistema di coordinate utilizzato per il posizionamento di una finestra figlio. La presenza di una finestra padre influisce sugli aspetti dell'aspetto di una finestra; Ad esempio, una finestra figlio viene ritagliata in modo che nessuna parte della finestra figlio possa essere visualizzata all'esterno dei bordi della finestra padre.
 
-Un'altra relazione è la relazione tra una finestra dell'applicazione e una finestra di dialogo modale. Quando un'applicazione visualizza una finestra di dialogo modale, la finestra dell'applicazione è *la* finestra proprietaria e la finestra è una *finestra di* proprietà. Una finestra di proprietà viene sempre visualizzata davanti alla finestra proprietaria. Viene nascosta quando il proprietario è ridotto a icona e viene eliminato contemporaneamente al proprietario.
+Un'altra relazione è la relazione tra una finestra dell'applicazione e una finestra di dialogo modale. Quando un'applicazione visualizza una finestra di dialogo modale, la finestra dell'applicazione è *la* finestra proprietaria e la finestra è una *finestra di* proprietà. Una finestra di proprietà viene sempre visualizzata davanti alla finestra proprietaria. Viene nascosto quando il proprietario è ridotto a icona e viene eliminato contemporaneamente al proprietario.
 
 L'immagine seguente mostra un'applicazione che visualizza una finestra di dialogo con due pulsanti:
 
@@ -50,7 +50,7 @@ La finestra dell'applicazione è proprietaria della finestra di dialogo e la fin
 
 ## <a name="window-handles"></a>Handle di finestra
 
-Windows è un oggetto, hanno sia codice che dati, ma non sono classi C++. Un programma fa invece riferimento a una finestra usando un valore denominato *handle*. Un handle è un tipo opaco. In sostanza, è solo un numero che il sistema operativo usa per identificare un oggetto. È possibile creare un'immagine di Windows con una grande tabella di tutte le finestre create. Usa questa tabella per cercare le finestre in base ai relativi handle. Non è importante sapere se funziona esattamente come funziona internamente. Il tipo di dati per gli handle di finestra **è HWND,** che in genere è pronunciato come "aitch-wind". Gli handle di finestra vengono restituiti dalle funzioni che creano finestre: [**CreateWindow**](/windows/desktop/DirectShow/cbasewindow-docreatewindow) e [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
+Windows sono oggetti, che hanno sia codice che dati, ma non sono classi C++. Un programma fa invece riferimento a una finestra usando un valore denominato *handle*. Un handle è un tipo opaco. In sostanza, è solo un numero che il sistema operativo usa per identificare un oggetto. È possibile Windows una grande tabella di tutte le finestre create. Usa questa tabella per cercare le finestre in base ai relativi handle. Non è importante sapere se funziona esattamente come funziona internamente. Il tipo di dati per gli handle di finestra **è HWND,** che in genere è pronunciato come "aitch-wind". Gli handle di finestra vengono restituiti dalle funzioni che creano finestre: [**CreateWindow**](/windows/desktop/DirectShow/cbasewindow-docreatewindow) e [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
 
 Per eseguire un'operazione su una finestra, in genere si chiamerà una funzione che accetta un **valore HWND** come parametro. Ad esempio, per riposizionare una finestra sullo schermo, chiamare la [**funzione MoveWindow:**](/windows/desktop/api/winuser/nf-winuser-movewindow)
 
@@ -71,7 +71,7 @@ Le coordinate vengono misurate in pixel indipendenti dal dispositivo. Per inform
 
 A seconda dell'attività, è possibile misurare le coordinate relative alla schermata, rispetto a una finestra (inclusa la cornice) o all'area client di una finestra. Ad esempio, si posiziona una finestra sullo schermo usando le coordinate dello schermo, ma si disegna all'interno di una finestra usando le coordinate client. In ogni caso, l'origine (0, 0) è sempre l'angolo superiore sinistro dell'area.
 
-![illustrazione che mostra le coordinate di schermata, finestra e client](images/coordinates01.png)
+![Illustrazione che mostra le coordinate dello schermo, della finestra e del client](images/coordinates01.png)
 
 ## <a name="next"></a>Prossima
 

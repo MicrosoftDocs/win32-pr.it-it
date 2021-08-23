@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetStretchMode calcola se l'immagine video deve essere allungata.
+description: Il metodo SetStretchMode calcola se l'immagine video deve essere estesa.
 ms.assetid: ffdcaf9c-e157-4557-9193-8430c1c451bf
-title: Metodo CDrawImage. SetStretchMode (Winutil. h)
+title: Metodo CDrawImage.SetStretchMode (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33a4b3a6b104b9e2888776cc59183835f412fdcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3886910bce57aca728f64ffbe9d660c1073d1281864a7721faa7e757c7c7d81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526491"
 ---
-# <a name="cdrawimagesetstretchmode-method"></a>CDrawImage. SetStretchMode, metodo
+# <a name="cdrawimagesetstretchmode-method"></a>Metodo CDrawImage.SetStretchMode
 
-Il `SetStretchMode` metodo calcola se l'immagine video deve essere allungata.
+Il `SetStretchMode` metodo calcola se l'immagine video deve essere estesa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CDrawImage** chiama automaticamente questo metodo ogni volta che viene modificato il rettangolo di origine o di destinazione.
+La **classe CDrawImage** chiama automaticamente questo metodo ogni volta che il rettangolo di origine o di destinazione cambia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La classe **CDrawImage** chiama automaticamente questo metodo ogni volta che vie
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

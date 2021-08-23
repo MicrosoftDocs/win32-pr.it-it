@@ -4,12 +4,12 @@ description: Questa sezione contiene informazioni su come stampare il contenuto 
 ms.assetid: d61e2e11-d848-43fc-9622-b3b2032bda48
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a304e5c09b5f8ea934c90873c3d915179295964e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e00c7a7287fc86e47e085cfacd7757a7e24b4a91a3a513e75dc4610b51606b36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575551"
 ---
 # <a name="how-to-print-the-contents-of-rich-edit-controls"></a>Come stampare il contenuto dei controlli Rich Edit
 
@@ -19,32 +19,32 @@ Questa sezione contiene informazioni su come stampare il contenuto dei controlli
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="use-print-preview"></a>USA anteprima di stampa
+### <a name="use-print-preview"></a>Usare l'anteprima di stampa
 
-Per formattare il testo in un controllo Rich Edit come verrà visualizzato in un dispositivo di destinazione (in genere la pagina stampata), inviare il messaggio [**em \_ SETTARGETDEVICE**](em-settargetdevice.md) , passando l'handle a un contesto di dispositivo (HDC) del dispositivo di destinazione e alla lunghezza di riga desiderata. In genere si otterrà la lunghezza della linea chiamando [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) per l'HDC di destinazione.
+Per formattare il testo in un controllo Rich Edit così come verrà visualizzato in un dispositivo di destinazione (in genere la pagina stampata), inviare il messaggio [**EM \_ SETTARGETDEVICE,**](em-settargetdevice.md) passando l'handle a un contesto di dispositivo (HDC) del dispositivo di destinazione e alla larghezza della riga desiderata. In genere si ottiene lo spessore della linea chiamando [**GetDeviceCaps per**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) l'HDC di destinazione.
 
 ### <a name="format-print-for-a-specific-device"></a>Formattare la stampa per un dispositivo specifico
 
-Per formattare parte del contenuto di un controllo Rich Edit per un dispositivo specifico, inviare il [**messaggio \_ FormatRange em**](em-formatrange.md) . La struttura [**FormatRange**](/windows/desktop/api/Richedit/ns-richedit-formatrange) usata con questo messaggio specifica l'intervallo di testo da formattare e l'HDC per il dispositivo di destinazione. Facoltativamente, questo messaggio invia anche il testo alla stampante.
+Per formattare parte del contenuto di un controllo Rich Edit per un dispositivo specifico, inviare il [**messaggio EM \_ FORMATRANGE.**](em-formatrange.md) La [**struttura FORMATRANGE**](/windows/desktop/api/Richedit/ns-richedit-formatrange) usata con questo messaggio specifica l'intervallo di testo da formattare, nonché l'HDC per il dispositivo di destinazione. Facoltativamente, questo messaggio invia anche il testo alla stampante.
 
-### <a name="use-banding"></a>USA bande
+### <a name="use-banding"></a>Usare l'uso di bande
 
-La banda è il processo mediante il quale viene generata una singola pagina di output utilizzando uno o più rettangoli o bande separate. Quando tutte le bande vengono posizionate nella pagina, viene generato un risultato di un'immagine completa. Questo approccio viene spesso usato dalle stampanti raster che non dispongono di memoria sufficiente o della possibilità di creare un'immagine di una pagina intera in una sola volta.
+L'applicazione di bande è il processo tramite il quale viene generata una singola pagina di output usando uno o più rettangoli separati o bande. Quando tutte le bande vengono posizionate nella pagina, viene restituita un'immagine completa. Questo approccio viene spesso usato dalle stampanti raster che non hanno memoria sufficiente o non hanno la possibilità di creare un'immagine di una pagina intera contemporaneamente.
 
-Per implementare il banding, usare il messaggio [**\_ DISPLAYBAND em**](em-displayband.md) per inviare al dispositivo parti successive del contenuto del controllo Rich Edit. Questo messaggio viene stampato sul dispositivo specificato in una precedente chiamata a [**em \_ FormatRange**](em-formatrange.md). Naturalmente, il parametro *wParam* del messaggio **\_ FormatRange em** deve essere zero, in modo che la stampa non venga avviata dal messaggio.
+Per implementare il banding, usare il messaggio [**EM \_ DISPLAYBAND**](em-displayband.md) per inviare parti successive del contenuto del controllo Rich Edit al dispositivo. Questo messaggio viene stampato sul dispositivo specificato in una chiamata precedente a [**EM \_ FORMATRANGE**](em-formatrange.md). Naturalmente, il *parametro wParam* del messaggio **EM \_ FORMATRANGE** deve essere zero, in modo che la stampa non sia avviata da tale messaggio.
 
 ## <a name="printrtf-code-example"></a>Esempio di codice PrintRTF
 
-Nell'esempio di codice seguente viene stampato il contenuto di un controllo Rich Edit sulla stampante specificata.
+Il codice di esempio seguente stampa il contenuto di un controllo Rich Edit nella stampante specificata.
 
 
 ```C++
@@ -144,12 +144,12 @@ BOOL PrintRTF(HWND hwnd, HDC hdc)
 
 <dl> <dt>
 
-[Uso di controlli Rich Edit](using-rich-edit-controls.md)
+[Uso dei controlli Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

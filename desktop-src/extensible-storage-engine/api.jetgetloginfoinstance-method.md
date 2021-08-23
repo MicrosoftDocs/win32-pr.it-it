@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetLogInfoInstance'
-title: API. JetGetLogInfoInstance, metodo
+description: 'Altre informazioni su: Metodo Api.JetGetLogInfoInstance'
+title: Metodo Api.JetGetLogInfoInstance
 TOCTitle: 'JetGetLogInfoInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetLogInfoInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String@,System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetloginfoinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85e252b74c47d3274fc83af59e3fb571906219fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 044e3a214a520ecb331956108eb83449b689decbd995f4b5b9330fdef6729a53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670371"
 ---
-# <a name="apijetgetloginfoinstance-method"></a>API. JetGetLogInfoInstance, metodo
+# <a name="apijetgetloginfoinstance-method"></a>Metodo Api.JetGetLogInfoInstance
 
-Usato durante un backup avviato da [JetBeginExternalBackupInstance (JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) per eseguire una query su un'istanza per i nomi dei file di patch del database e i file di log che devono diventare parte del set di file di backup. Questi file possono essere successivamente aperti usando [JetOpenFileInstance (JET_INSTANCE, String, JET_HANDLE, Int64, Int64)](./api.jetopenfileinstance-method.md) e read using [JetReadFileInstance (JET_INSTANCE, JET_HANDLE, \[ \] , Int32, Int32)](./api.jetreadfileinstance-method.md).
+Usato durante un backup avviato da [JetBeginExternalBackupInstance(JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) per eseguire una query su un'istanza per i nomi dei file di patch del database e dei file di log che devono diventare parte del set di file di backup. Questi file possono essere successivamente aperti usando [JetOpenFileInstance(JET_INSTANCE, String, JET_HANDLE, Int64, Int64)](./api.jetopenfileinstance-method.md) e letti [usando JetReadFileInstance(JET_INSTANCE, JET_HANDLE, \[ \] , Int32, Int32).](./api.jetreadfileinstance-method.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,30 +68,30 @@ public static void JetGetLogInfoInstance(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Istanza per cui ottenere le informazioni.
+    Istanza di per cui ottenere le informazioni.
 
 <!-- end list -->
 
   - files  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Restituisce un elenco di stringhe con terminazione null che descrivono il set di file di patch del database e file di log che devono far parte del set di file di backup. L'elenco di stringhe restituite in questo buffer è nello stesso formato di un multistringhe utilizzato dal registro di sistema. Ogni stringa con terminazione null viene restituita in sequenza seguita da un terminatore null finale.
+    Restituisce un elenco di stringhe con terminazione Null che descrivono il set di file di patch del database e di file di log che devono far parte del set di file di backup. L'elenco di stringhe restituito in questo buffer è nello stesso formato di una stringa multipla usata dal Registro di sistema. Ogni stringa con terminazione Null viene restituita in sequenza seguita da un terminatore Null finale.
 
 <!-- end list -->
 
   - maxChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Numero massimo di caratteri da recuperare.
 
 <!-- end list -->
 
   - actualChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensioni effettive dell'elenco dei file. Se è maggiore di maxChars, l'elenco è stato troncato.
+    Dimensioni effettive dell'elenco di file. Se è maggiore di maxChars, l'elenco è stato troncato.
 
 ## <a name="remarks"></a>Commenti
 
@@ -103,6 +103,6 @@ public static void JetGetLogInfoInstance(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

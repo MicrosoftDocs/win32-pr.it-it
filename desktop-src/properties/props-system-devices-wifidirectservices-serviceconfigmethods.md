@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi metodi di configurazione dei servizi diretti.
+description: Wi-Fi metodi di configurazione di Direct Services.
 ms.assetid: 8c1589c9-55ca-449a-81ab-53be38f0e9f6
-title: System. Devices. WiFiDirectServices. ServiceConfigMethods
+title: System.Devices.WiFiDirectServices.ServiceConfigMethods
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 892a3196f586f72e7feb6f83a052305ec491b002
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9f74eea49b1a2b86c701d6c7b1d95fd76df0fe47608f4895c521f59bf7fe877
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598911"
 ---
-# <a name="systemdeviceswifidirectservicesserviceconfigmethods"></a>System. Devices. WiFiDirectServices. ServiceConfigMethods
+# <a name="systemdeviceswifidirectservicesserviceconfigmethods"></a>System.Devices.WiFiDirectServices.ServiceConfigMethods
 
-Metodi di configurazione di Wi-Fi Direct Services
+Wi-Fi metodi di configurazione di Direct Services
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
