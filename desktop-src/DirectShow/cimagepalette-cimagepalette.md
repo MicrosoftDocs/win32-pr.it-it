@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5021b165a8fa47bedc7961657d7cdbfa07af301d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 437055ee9e1d33d4b551faf1ca999d432a99d17919dcd67f6a701bc4f9780543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428921"
 ---
 # <a name="cimagepalettecimagepalette-constructor"></a>Costruttore CImagePalette.CImagePalette
 
@@ -54,7 +54,7 @@ Puntatore al filtro proprietario.
 *pBaseWindow* 
 </dt> <dd>
 
-Puntatore a un **oggetto CBaseWindow,** che gestisce la finestra in cui viene realizzata la tavolozza. Questo parametro può essere **NULL**.
+Puntatore a un **oggetto CBaseWindow,** che gestisce la finestra in cui viene realizzato il riquadro. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Puntatore a un **oggetto CDrawImage,** che disegna l'immagine video. Questo para
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

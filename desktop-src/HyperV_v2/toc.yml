@@ -8,7 +8,7 @@
           href: backing-up-and-restoring-virtual-machines.md
         - name: Identificatore di generazione macchina virtuale
           href: virtual-machine-generation-identifier.md
-    - name: Guida di riferimento alla gestione di Hyper-V
+    - name: Informazioni di riferimento sulla gestione di Hyper-V
       href: hyper-v-management-reference.md
       items:
         - name: Codici di controllo della gestione di Hyper-V
@@ -16,20 +16,20 @@
           items:
             - name: IOCTL_VMGENCOUNTER_READ
               href: /windows/desktop/api/Vmgenerationcounter/ni-vmgenerationcounter-ioctl_vmgencounter_read
-        - name: Strutture di gestione Hyper-V
+        - name: Strutture di gestione di Hyper-V
           href: hyper-v-management-structures.md
           items:
             - name: VM_GENCOUNTER
               href: /windows/win32/api/Vmgenerationcounter/ns-vmgenerationcounter-vm_gencounter
-- name: Provider WMI Hyper-V (v2)
+- name: Provider WMI Hyper-V (V2)
   href: windows-virtualization-portal.md
   items:
     - name: Informazioni sul provider WMI Hyper-V
       href: about-the-virtualization-wmi-provider.md
       items:
-        - name: Servizio di gestione del sistema virtuale
+        - name: Servizio di gestione dei sistemi virtuali
           href: virtual-system-management-service.md
-        - name: Servizio Gestione risorse
+        - name: Servizio di gestione delle risorse
           href: resource-management-service.md
         - name: Novità del provider WMI Hyper-V
           href: what-s-new-in-hyper-v.md
@@ -46,9 +46,9 @@
           href: importing-virtual-machines.md
         - name: Esecuzione di query sugli oggetti di rete
           href: querying-networking-objects.md
-        - name: Utilità comuni per gli esempi di virtualizzazione (v2)
+        - name: Utilità comuni per gli esempi di virtualizzazione (V2)
           href: common-utilities-for-the-virtualization-samples-v2.md
-    - name: Classi WMI di Hyper-V
+    - name: Classi WMI Hyper-V
       href: hyper-v-wmi-classes.md
       items:
         - name: Classi CIM
@@ -180,7 +180,7 @@
               href: cim-lanendpoint.md
             - name: CIM_LastAppliedSnapshot
               href: cim-lastappliedsnapshot.md
-            - name: CIM_LogicalDevice
+            - name: Cim_logicaldevice
               href: cim-logicaldevice.md
               items:
                 - name: Metodo SetPowerState
@@ -437,9 +437,9 @@
             - name: Msvm_Keyboard
               href: msvm-keyboard.md
               items:
-                - name: Metodo KeyPressed
+                - name: Metodo IsKeyPressed
                   href: iskeypressed-msvm-keyboard.md
-                - name: Metodo pulsanteper
+                - name: Metodo PressKey
                   href: presskey-msvm-keyboard.md
                 - name: Metodo ReleaseKey
                   href: releasekey-msvm-keyboard.md
@@ -626,7 +626,7 @@
               href: msvm-virtualsystemresourcecomponent.md
             - name: Msvm_VirtualSystemResourceRegistration
               href: msvm-virtualsystemresourceregistration.md
-        - name: Classi Desktop remoto
+        - name: Desktop remoto classi
           href: remotefx-classes.md
           items:
             - name: Msvm_InteractiveSessionACE
@@ -912,7 +912,7 @@
                   href: msvm-videohead-reset.md
             - name: Msvm_VideoHeadOnController
               href: msvm-videoheadoncontroller.md
-        - name: Classi di sistema virtuali
+        - name: Classi di sistema virtuale
           href: virtual-system-classes.md
           items:
             - name: Msvm_BootSourceComponent
@@ -1109,10 +1109,10 @@
                   href: msvm-virtualsystemsnapshotservice-requeststatechange.md
                 - name: Metodo ConvertToReferencePoint
                   href: msvm-virtualsystemsnapshotservice-converttoreferencepoint.md
-    - name: API di monitoraggio dell'integrità dell'applicazione Hyper-V
+    - name: API di monitoraggio dell'integrità delle applicazioni Hyper-V
       href: hyper-v-application-health-monitoring-api.md
       items:
-        - name: Informazioni di riferimento sull'API di monitoraggio dell'integrità dell'applicazione Hyper-V
+        - name: Informazioni di riferimento sulle API di monitoraggio dell'integrità delle applicazioni Hyper-V
           href: hyper-v-application-health-monitoring-api-reference.md
           items:
             - name: Enumerazioni di monitoraggio dell'integrità delle applicazioni Hyper-V
@@ -1130,7 +1130,7 @@
                       href: ivmapplicationhealthmonitor-resetallapplicationstate.md
                     - name: Metodo SetApplicationState
                       href: ivmapplicationhealthmonitor-setapplicationstate.md
-            - name: Classi WMI di monitoraggio dello stato dell'applicazione Hyper-V
+            - name: Classi WMI di monitoraggio dell'integrità delle applicazioni Hyper-V
               href: hyper-v-application-health-monitoring-wmi-classes.md
               items:
                 - name: Msvm_HeartbeatComponent
@@ -1199,7 +1199,7 @@
                   href: resetreplicationstatistics-msvm-replicationservice.md
                 - name: Metodo ResetReplicationStatisticsEx
                   href: resetreplicationstatisticsex-msvm-replicationservice.md
-                - name: Metodo di risincronizzazione
+                - name: Metodo Resynchronize
                   href: resynchronize-msvm-replicationservice.md
                 - name: Metodo ReverseReplicationRelationship
                   href: reversereplicationrelationship-msvm-replicationservice.md
@@ -1227,10 +1227,10 @@
               href: msvm-replicationstatistics.md
             - name: Msvm_SystemReplicationRelationship
               href: msvm-systemreplicationrelationship.md
-    - name: API metriche Hyper-V
+    - name: API delle metriche di Hyper-V
       href: hyper-v-metrics-api.md
       items:
-        - name: Informazioni di riferimento sull'API per le metriche Hyper-V
+        - name: Informazioni di riferimento sulle API delle metriche di Hyper-V
           href: hyper-v-metrics-api-reference.md
           items:
             - name: Msvm_AggregationMetricDefinition
@@ -1467,10 +1467,10 @@
               href: msvm-wifiendpoint.md
             - name: Msvm_WiFiPort
               href: msvm-wifiport.md
-    - name: API di migrazione Hyper-V
+    - name: API di migrazione di Hyper-V
       href: hyper-v-storage-migration-api.md
       items:
-        - name: Informazioni di riferimento sull'API di migrazione Hyper-V
+        - name: Informazioni di riferimento sulle API di migrazione di Hyper-V
           href: hyper-v-storage-migration-classes.md
           items:
             - name: Msvm_MigrationJob
@@ -1525,10 +1525,10 @@
               href: msvm-virtualsystemmigrationservicesettingdatacomponent.md
             - name: Msvm_VirtualSystemMigrationSettingData
               href: msvm-virtualsystemmigrationsettingdata.md
-    - name: API Fibre Channel virtuale Hyper-V
+    - name: API di distribuzione virtuale Hyper-V Fibre Channel
       href: hyper-v-virtual-fiber-channels-api.md
       items:
-        - name: Informazioni di riferimento sull'API Fibre Channel virtuale Hyper-V
+        - name: Informazioni di riferimento sulle API di Fibre Channel Hyper-V
           href: hyper-v-virtual-fiber-channels-api-reference.md
           items:
             - name: Msvm_ExternalFcPort
@@ -1572,12 +1572,12 @@
                   href: msvm-virtualfcswitch-requeststatechange.md
             - name: Msvm_VirtualFcSwitchSettingData
               href: msvm-virtualfcswitchsettingdata.md
-    - name: API selezione host VM Hyper-V
+    - name: API di posizionamento delle macchine virtuali Hyper-V
       href: hyper-v-vm-placement-api.md
       items:
         - name: Msvm_CompatibilityVector
           href: msvm-compatibilityvector.md
-    - name: Classi soglia
+    - name: Classi di soglia
       href: threshold-classes.md
       items:
         - name: Msvm_CollectedCollections
@@ -1591,11 +1591,11 @@
         - name: Msvm_CollectionManagementService
           href: msvm-collectionmanagementservice.md
           items:
-            - name: Metodo definicollection
+            - name: Metodo DefineCollection
               href: msvm-collectionmanagementservice-definecollection.md
-            - name: Metodo destroycollection
+            - name: Metodo DestroyCollection
               href: msvm-collectionmanagementservice-destroycollection.md
-            - name: Metodo renamecollection
+            - name: Metodo RenameCollection
               href: msvm-collectionmanagementservice-renamecollection.md
             - name: Metodo AddMember
               href: msvm-collectionmanagementservice-addmember.md

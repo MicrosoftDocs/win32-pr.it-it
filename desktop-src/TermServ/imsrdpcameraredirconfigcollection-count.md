@@ -1,11 +1,11 @@
 ---
-title: IMsRdpCameraRedirConfigCollection-proprietà conteggio
-description: Restituisce il numero di oggetti IMsRdpCameraRedirConfig nell'insieme.
+title: Proprietà Count di IMsRdpCameraRedirConfigCollection
+description: Restituisce il numero di oggetti IMsRdpCameraRedirConfig nella raccolta.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto della proprietà Count
-- Servizi Desktop remoto di proprietà Count, interfaccia IMsRdpCameraRedirConfigCollection
-- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto, proprietà Count
+- Proprietà Count Servizi Desktop remoto
+- Proprietà Count Servizi Desktop remoto, interfaccia IMsRdpCameraRedirConfigCollection
+- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto proprietà , Count
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 31927428b709136de87f436ad92cc6a78fa9795a
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 8966bcd47793646b678c70eeaf4a263086fb9ced6eb2c56eb7b3821ac3d0f1df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104480548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475971"
 ---
-# <a name="imsrdpcameraredirconfigcollectioncount-property"></a>Proprietà IMsRdpCameraRedirConfigCollection:: count
+# <a name="imsrdpcameraredirconfigcollectioncount-property"></a>Proprietà IMsRdpCameraRedirConfigCollection::Count
 
-Restituisce il numero di oggetti [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) nell'insieme.
+Restituisce il numero [di oggetti IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) nella raccolta.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ HRESULT get_Count(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Numero di oggetti [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) nell'insieme.
+Numero di [oggetti IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) nella raccolta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Numero di oggetti [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) nell'ins
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-aaab-4504-B681-649D6073A37A          |
+| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-AAAB-4504-B681-649D6073A37A          |
 
 ## <a name="see-also"></a>Vedi anche
 

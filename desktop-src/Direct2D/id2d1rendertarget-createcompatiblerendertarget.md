@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateCompatibleRenderTarget di ID2D1RenderTarget (D2d1. h)
-description: Crea una nuova destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente.
+title: Metodi ID2D1RenderTarget CreateCompatibleRenderTarget (D2d1.h)
+description: Crea una nuova destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente.
 ms.assetid: 4a799a7c-0d2f-460f-99f9-24c6cf7c4537
 keywords:
-- Metodo CreateCompatibleRenderTarget Direct2D
+- Metodi CreateCompatibleRenderTarget Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0f0de8478d2ab3ee2e7142bd0e197053dc58ac2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9015586109ff5015743874d18b604de919a9464a655383cf4d47aabb7b7acf35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432781"
 ---
-# <a name="id2d1rendertargetcreatecompatiblerendertarget-methods"></a>Metodi ID2D1RenderTarget:: CreateCompatibleRenderTarget
+# <a name="id2d1rendertargetcreatecompatiblerendertarget-methods"></a>Metodi ID2D1RenderTarget::CreateCompatibleRenderTarget
 
-Crea una nuova destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente.
+Crea una nuova destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,18 +29,18 @@ Crea una nuova destinazione di rendering bitmap da utilizzare durante il disegno
 
 | Metodo                                                                                                                                                                                                                        | Descrizione                                                                                                                                                                                                                                            |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateCompatibleRenderTarget (D2D1 \_ dimensioni \_ F, d2d1 \_ dimensione \_ U, \_ formato pixel d2d1 \_ , \_ \_ \_ Opzioni di destinazione di rendering compatibili con d2d1 \_ , ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget))       | Crea una destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente.<br/>                                                                                                             |
-| [**CreateCompatibleRenderTarget (D2D1 \_ dimensioni \_ F \* , d2d1 \_ dimensione \_ U \* , \_ formato pixel \_ d2d1 \* , \_ \_ \_ Opzioni di destinazione di rendering compatibili con d2d1 \_ , ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)) | Crea una destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente. <br/>                                                                                                            |
-| [**CreateCompatibleRenderTarget (ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget))                                                                                                 | Crea una nuova destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio che è compatibile con la destinazione di rendering corrente e ha la stessa dimensione, DPI e formato pixel (ma non la modalità alfa) come destinazione di rendering corrente. <br/>         |
-| [**CreateCompatibleRenderTarget (D2D1 \_ size \_ F, ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_id2d1bitmaprendertarget))                                                                                   | Crea una nuova destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente e ha lo stesso formato pixel (ma non la modalità Alpha) della destinazione di rendering corrente. <br/>                        |
-| [**CreateCompatibleRenderTarget (D2D1 \_ size \_ F, d2d1 \_ size \_ U, ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_id2d1bitmaprendertarget))                                                                     | Crea una destinazione di rendering bitmap da utilizzare durante il disegno esterno dello schermo intermedio compatibile con la destinazione di rendering corrente. La nuova destinazione di rendering bitmap ha lo stesso formato pixel, ma non la modalità Alpha, della destinazione di rendering corrente. <br/> |
-| [**CreateCompatibleRenderTarget (D2D1 \_ size \_ F, d2d1 \_ size \_ U, d2d1 \_ pixel \_ format, ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_id2d1bitmaprendertarget))                                                 | Crea una destinazione di rendering bitmap da utilizzare durante il disegno Offscreen intermedio compatibile con la destinazione di rendering corrente. <br/>                                                                                                            |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget))       | Crea una destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente.<br/>                                                                                                             |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F \* ,D2D1 \_ SIZE U \_ \* ,D2D1 \_ PIXEL FORMAT \_ \* ,D2D1 \_ COMPATIBLE RENDER TARGET \_ \_ \_ OPTIONS,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)) | Crea una destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente. <br/>                                                                                                            |
+| [**CreateCompatibleRenderTarget(ID2D1BitmapRenderTarget) \* \***](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget))                                                                                                 | Crea una nuova destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente e con le stesse dimensioni, DPI e formato pixel (ma non la modalità alfa) della destinazione di rendering corrente. <br/>         |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_id2d1bitmaprendertarget))                                                                                   | Crea una nuova destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente e con lo stesso formato pixel (ma non la modalità alfa) della destinazione di rendering corrente. <br/>                        |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_id2d1bitmaprendertarget))                                                                     | Crea una destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente. La nuova destinazione di rendering bitmap ha lo stesso formato pixel (ma non la modalità alfa) della destinazione di rendering corrente. <br/> |
+| [**CreateCompatibleRenderTarget(D2D1 \_ SIZE \_ F,D2D1 \_ SIZE \_ U,D2D1 \_ PIXEL \_ FORMAT,ID2D1BitmapRenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_id2d1bitmaprendertarget))                                                 | Crea una destinazione di rendering bitmap da usare durante il disegno intermedio fuori schermo compatibile con la destinazione di rendering corrente. <br/>                                                                                                            |
 
 
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente usa il metodo **CreateCompatibleRenderTarget** per creare un [**ID2D1BitmapRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget) e lo usa per tracciare un modello di griglia. Il modello Grid viene usato come origine di un [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush).
+L'esempio seguente usa il **metodo CreateCompatibleRenderTarget** per creare un oggetto [**ID2D1BitmapRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget) e lo usa per disegnare un modello di griglia. Il motivo griglia viene usato come origine di un [**oggetto ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
 
 
 ```C++
@@ -97,7 +97,7 @@ HRESULT DemoApp::CreateGridPatternBrush(
 
 
 
-Nell'esempio di codice seguente viene usato il pennello per disegnare un modello.
+Nell'esempio di codice seguente viene utilizzato il pennello per disegnare un motivo.
 
 
 ```C++
@@ -118,8 +118,8 @@ Il codice è stato omesso da questo esempio.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

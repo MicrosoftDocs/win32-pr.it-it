@@ -1,9 +1,9 @@
 ---
-title: funzione glVertex2dv (GL. h)
-description: Specifica un vertice. | funzione glVertex2dv (GL. h)
+title: Funzione glVertex2dv (Gl.h)
+description: Specifica un vertice. | Funzione glVertex2dv (Gl.h)
 ms.assetid: b685d0aa-2874-4ad9-a20c-86823e9ad00b
 keywords:
-- funzione glVertex2dv OpenGL
+- Funzione glVertex2dv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4839fa650302a67c98a0aef3d227dfafa8ddb688
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2cbaf49ed5e1b53da7c0c4968acbab48880e6193b5f61f0179a47b40972f8236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488321"
 ---
-# <a name="glvertex2dv-function"></a>glVertex2dv (funzione)
+# <a name="glvertex2dv-function"></a>Funzione glVertex2dv
 
 Specifica un vertice.
 
@@ -59,8 +59,8 @@ Questa funzione non restituisce un valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Questa funzione non restituisce un valore.
 [**glEdgeFlag**](gledgeflag-functions.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glEvalCoord**](glevalcoord-functions.md)

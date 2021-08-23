@@ -4,7 +4,7 @@ description: Set di proprietà MS-TS-GatewayAccess
 ms.assetid: 9d0faf11-6ae8-47a2-913c-1f1aee52c791
 ms.tgt_platform: multiple
 keywords:
-- Proprietà MS-TS-GatewayAccess set di AD schema
+- Set di proprietà MS-TS-GatewayAccess Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b3b9ac561d502e63ed2628c5c4a86c43c852a61
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ae083bc3741825dcd6739c17f8f308b529bd867d338213f46e73a681e1b0538
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531651"
 ---
 # <a name="ms-ts-gatewayaccess-property-set"></a>Set di proprietà MS-TS-GatewayAccess
 
@@ -45,7 +45,7 @@ ms.locfileid: "104048854"
 | Voce | Valore |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 74                                        |
+| Localization-Display-ID | 74                                        |
 | Membri del set di proprietà    | \-                                        |
 
 
@@ -56,8 +56,8 @@ ms.locfileid: "104048854"
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> |
-| Localization-display-ID | 74                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 74                                                                                                                         |
 | Membri del set di proprietà    | \-                                                                                                                         |
 
 
@@ -68,8 +68,8 @@ ms.locfileid: "104048854"
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> |
-| Localization-display-ID | 74                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 74                                                                                                                         |
 | Membri del set di proprietà    | \-                                                                                                                         |
 
 

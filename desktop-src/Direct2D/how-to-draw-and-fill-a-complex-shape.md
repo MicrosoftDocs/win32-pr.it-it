@@ -1,23 +1,23 @@
 ---
 title: Come disegnare e riempire una forma complessa
-description: Direct2D fornisce l'interfaccia ID2D1PathGeometry per la descrizione di forme complesse che possono contenere curve, archi e linee. In questo argomento viene descritto come definire ed eseguire il rendering di una geometria del percorso.
+description: Direct2D fornisce l'interfaccia ID2D1PathGeometry per descrivere forme complesse che possono contenere curve, archi e linee. Questo argomento descrive come definire ed eseguire il rendering di una geometria di percorso.
 ms.assetid: d7aad487-04e0-448d-bedf-b8dfadc7bbe9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68a163e85d76a65f6b807ad1e4a9c9f740a32bf1
-ms.sourcegitcommit: 4859402a45b9928c3e1354ded06b1d6a682a0be9
+ms.openlocfilehash: e222d3d94eb1f9e944a1c5113baf938a7c3da6e86751a7be748798ace12a9611
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "106334291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569207"
 ---
 # <a name="how-to-draw-and-fill-a-complex-shape"></a>Come disegnare e riempire una forma complessa
 
-Direct2D fornisce l'interfaccia [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) per la descrizione di forme complesse che possono contenere curve, archi e linee. In questo argomento viene descritto come definire ed eseguire il rendering di una geometria del percorso.
+Direct2D fornisce [**l'interfaccia ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) per descrivere forme complesse che possono contenere curve, archi e linee. Questo argomento descrive come definire ed eseguire il rendering di una geometria di percorso.
 
-Per definire una geometria del percorso, usare prima il metodo [**ID2D1Factory:: CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) per creare la geometria del percorso, quindi usare il metodo [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) della geometria del percorso per recuperare un [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink). È quindi possibile aggiungere linee, curve e archi chiamando i vari metodi di aggiunta del sink.
+Per definire una geometria del percorso, usare innanzitutto il metodo [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) per creare la geometria del percorso, quindi usare il metodo [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) della geometria del percorso per recuperare un [**ID2D1GeometrySink.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) È quindi possibile aggiungere linee, curve e archi chiamando i vari metodi Add del sink.
 
-Nell'esempio seguente viene creato un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), viene recuperato un sink e utilizzato per definire una forma di clessidra.
+L'esempio seguente crea [**un id2D1PathGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)recupera un sink e lo usa per definire una forma a forma di clessidra.
 
 
 ```C++
@@ -67,9 +67,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
-Si noti che un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) è una risorsa indipendente dal dispositivo e può, pertanto, essere creata una volta e conservata per la durata dell'applicazione. Per ulteriori informazioni sui diversi tipi di risorse, vedere [Cenni preliminari sulle risorse](resources-and-resource-domains.md).
+Si noti che [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) è una risorsa indipendente dal dispositivo e può quindi essere creata una sola volta e conservata per tutta la durata dell'applicazione. Per altre informazioni sui diversi tipi di risorse, vedere Panoramica [delle risorse.](resources-and-resource-domains.md)
 
-Nell'esempio seguente vengono creati due pennelli che verranno usati per disegnare il contorno e il riempimento della geometria del percorso.
+L'esempio successivo crea due pennelli che verranno usati per disegnare il contorno e il riempimento della geometria del tracciato.
 
 
 ```C++
@@ -115,9 +115,9 @@ if (SUCCEEDED(hr))
 
 
 
-L'esempio finale usa i metodi [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) per disegnare il contorno e l'interno della geometria. Questo esempio produce l'output illustrato nella figura seguente.
+L'esempio finale usa [**i metodi DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) per disegnare il contorno e l'interno della geometria. Questo esempio produce l'output illustrato nella figura seguente.
 
-![illustrazione di una geometria a forma di clessidra](images/transformgeometryexample-1.png)
+![Illustrazione di una geometria a forma di clessidra](images/transformgeometryexample-1.png)
 
 
 ```C++

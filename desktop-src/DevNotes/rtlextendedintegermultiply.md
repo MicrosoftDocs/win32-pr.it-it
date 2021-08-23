@@ -1,7 +1,7 @@
 ---
-description: Moltiplica gli Integer estesi.
+description: Moltiplica numeri interi estesi.
 ms.assetid: 6a59d211-4baf-4c7c-af2a-ffb0c5773445
-title: RtlExtendedIntegerMultiply (funzione)
+title: Funzione RtlExtendedIntegerMultiply
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 8b824080c28da3265be6dc0333f236b8c9a4cbaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0048da80026029274a89d089f5c232311a481a6010c0aad32d8b1a6ae6cc6786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571471"
 ---
-# <a name="rtlextendedintegermultiply-function"></a>RtlExtendedIntegerMultiply (funzione)
+# <a name="rtlextendedintegermultiply-function"></a>Funzione RtlExtendedIntegerMultiply
 
-\[La funzione **RtlExtendedIntegerMultiply** viene esportata per supportare i binari dei driver esistenti ed è obsoleta. Per ottenere prestazioni migliori, usare il supporto del compilatore per le operazioni integer a 64 bit.\]
+\[La **funzione RtlExtendedIntegerMultiply** viene esportata per supportare i file binari del driver esistenti ed è obsoleta. Per prestazioni migliori, usare il supporto del compilatore per le operazioni integer a 64 bit.\]
 
-Moltiplica gli Integer estesi.
+Moltiplica numeri interi estesi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ LARGE_INTEGER RtlExtendedIntegerMultiply(
 
 <dl> <dt>
 
-*Multiplicand* \[ in\]
+*Moltiplicazione* \[ Pollici\]
 </dt> <dd>
 
-Multiplicand.
+Moltiplicato.
 
 </dd> <dt>
 
-*Moltiplicatore* \[ in\]
+*Moltiplicatore* \[ Pollici\]
 </dt> <dd>
 
 Moltiplicatore.
@@ -62,7 +62,7 @@ Restituisce il risultato della moltiplicazione.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

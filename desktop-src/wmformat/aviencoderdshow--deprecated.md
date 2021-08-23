@@ -1,9 +1,9 @@
 ---
 title: AVIEncoderDShow
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | AVIEncoderDShow
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | AVIEncoderDShow
 ms.assetid: 0e76b042-ee5f-40b0-9cde-735f0e79367e
 keywords:
-- AVIEncoderDShow Windows Media Format
+- AVIEncoderDMostra formato multimediale Windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e40897990e4e4d1ac64c4fcd307ce994698e438
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5fed675fb146e93b41e8d11670527831886a5d3339e780d944a7af513a50a8aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592021"
 ---
 # <a name="aviencoderdshow"></a>AVIEncoderDShow
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
  
 

@@ -1,40 +1,40 @@
 ---
-description: Alcune applicazioni ridimensionano le immagini; ovvero, visualizzano le visualizzazioni ingrandite o ridotte di un'immagine. Ad esempio, un'applicazione di disegno può fornire una funzionalità di zoom che consente all'utente di visualizzare e modificare un disegno su base pixel.
+description: Alcune applicazioni ridimensionano le immagini; in altre informazioni, visualizzano visualizzazioni ingrandite o ridotte di un'immagine. Ad esempio, un'applicazione di disegno può fornire una funzionalità di zoom che consente all'utente di visualizzare e modificare un disegno pixel per pixel.
 ms.assetid: ab7d5224-62de-40a8-909f-564f61c45d01
 title: Ridimensionamento di un'immagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ce5d1584c905bbf46f10e29e512af95ddbc55c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7445c64bcf7ca4332612de0689e9ebeb55850372a5be2b4fb19c1593bbf339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119613741"
 ---
 # <a name="scaling-an-image"></a>Ridimensionamento di un'immagine
 
-Alcune applicazioni ridimensionano le immagini; ovvero, visualizzano le visualizzazioni ingrandite o ridotte di un'immagine. Ad esempio, un'applicazione di disegno può fornire una funzionalità di zoom che consente all'utente di visualizzare e modificare un disegno su base pixel.
+Alcune applicazioni ridimensionano le immagini; in altre informazioni, visualizzano visualizzazioni ingrandite o ridotte di un'immagine. Ad esempio, un'applicazione di disegno può fornire una funzionalità di zoom che consente all'utente di visualizzare e modificare un disegno pixel per pixel.
 
-Le applicazioni scalano le immagini chiamando la funzione [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) . Analogamente alla funzione [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) , **StretchBlt** copia i dati bitmap da una bitmap in un contesto di dispositivo di origine ([**DC**](/windows/desktop/api/Winuser/nf-winuser-getdcex)) in una bitmap in un controller di dominio di destinazione. Tuttavia, a differenza della funzione **BitBlt** , **StretchBlt** ridimensiona l'immagine in base alle dimensioni specificate dei rettangoli di origine e di destinazione. Se il rettangolo di origine è più grande del rettangolo di destinazione, l'immagine risultante risulterà compatta; Se il rettangolo di origine è inferiore al rettangolo di destinazione, l'immagine risultante sarà espansa.
+Le applicazioni ridimensionano le immagini chiamando [**la funzione StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) Analogamente alla [**funzione BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) **StretchBlt** copia i dati bitmap da una bitmap in un contesto di dispositivo di origine [**(DC)**](/windows/desktop/api/Winuser/nf-winuser-getdcex)in una bitmap in un controller di dominio di destinazione. Tuttavia, a differenza **della funzione BitBlt,** **StretchBlt** ridimensiona l'immagine in base alle dimensioni specificate dei rettangoli di origine e di destinazione. Se il rettangolo di origine è più grande del rettangolo di destinazione, l'immagine risultante apparirà ridotta; Se il rettangolo di origine è più piccolo del rettangolo di destinazione, l'immagine risultante apparirà espansa.
 
-Se il rettangolo di destinazione è inferiore al rettangolo di origine, [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) rimuove i dati di colore dall'immagine in base a una modalità di estensione specificata, come illustrato nella tabella seguente.
+Se il rettangolo di destinazione è più piccolo del rettangolo di origine, [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) rimuove i dati di colore dall'immagine in base a una modalità di estensione specificata, come illustrato nella tabella seguente.
 
 
 
-| Modalità Stretch | Metodo                                                                                                                    |
+| Modalità stretch | Metodo                                                                                                                    |
 |--------------|---------------------------------------------------------------------------------------------------------------------------|
-| BLACKONWHITE | Esegue un'operazione con AND logico sui dati del colore per i pixel eliminati e i dati relativi al colore per i pixel rimanenti. |
-| WHITEONBLACK | Esegue un'operazione OR logica sui dati del colore per i pixel eliminati e i dati relativi al colore per i pixel rimanenti.  |
-| COLORONCOLOR | Elimina completamente i dati relativi ai colori dei pixel eliminati.                                                               |
-| MEZZITONI     | Approssima i dati del colore originale (origine) nella destinazione.                                                         |
+| BLACKONWHITE | Esegue un'operazione AND logica sui dati relativi al colore per i pixel eliminati e sui dati di colore per i pixel rimanenti. |
+| WHITEONBLACK | Esegue un'operazione OR logica sui dati relativi al colore per i pixel eliminati e sui dati di colore per i pixel rimanenti.  |
+| COLORE COLORONCOLOR | Elimina completamente i dati relativi al colore dei pixel eliminati.                                                               |
+| Semitono     | Approssima i dati di colore originali (di origine) nella destinazione.                                                         |
 
 
 
  
 
-Per impostare la modalità di estensione, chiamare la funzione [**SetStretchBltMode**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode) .
+Per impostare la modalità di estensione, chiamare la [**funzione SetStretchBltMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode)
 
-Il codice di esempio seguente viene tratto da un'applicazione che illustra tutte e quattro le modalità di estensione disponibili con la funzione [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) .
+Il codice di esempio seguente è tratto da un'applicazione che illustra tutte e quattro le modalità di estensione disponibili con la [**funzione StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
 
 
 ```C++

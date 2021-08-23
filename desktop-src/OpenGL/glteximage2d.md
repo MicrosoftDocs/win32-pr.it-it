@@ -1,9 +1,9 @@
 ---
-title: funzione glTexImage2D (GL. h)
+title: Funzione glTexImage2D (Gl.h)
 description: La funzione glTexImage2D specifica un'immagine di trama bidimensionale.
 ms.assetid: e8b9c692-5239-47de-86eb-80c247c60e1d
 keywords:
-- funzione glTexImage2D OpenGL
+- Funzione glTexImage2D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ba2d5bc6f966d9b10c0dadccb221086e64de827
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9c7f345c33b7f6049da19d64a8cb5b2247ae5045ba7e979f9880d34d32b19fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490241"
 ---
-# <a name="glteximage2d-function"></a>glTexImage2D (funzione)
+# <a name="glteximage2d-function"></a>Funzione glTexImage2D
 
-La funzione **glTexImage2D** specifica un'immagine di trama bidimensionale.
+La **funzione glTexImage2D** specifica un'immagine di trama bidimensionale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,39 +51,39 @@ void WINAPI glTexImage2D(
 *target* 
 </dt> <dd>
 
-Trama di destinazione. Deve essere di \_ trama GL \_ 2D.
+Trama di destinazione. Deve essere GL \_ TEXTURE \_ 2D.
 
 </dd> <dt>
 
 *level* 
 </dt> <dd>
 
-Numero del livello di dettaglio. Il livello 0 è il livello dell'immagine di base. Il livello *n* è l'immagine di riduzione del mipmap *n* .
+Numero di livello di dettaglio. Il livello 0 è il livello dell'immagine di base. Il *livello n* è *l'esima* immagine di riduzione mipmap.
 
 </dd> <dt>
 
 *internalformat* 
 </dt> <dd>
 
-Numero di componenti di colore nella trama. Deve essere 1, 2, 3 o 4 o una delle costanti simboliche seguenti: GL \_ Alpha, GL \_ ALPHA4, GL \_ ALPHA8, GL ALPHA12, GL ALPHA16, GL Luminance, GL LUMINANCE4, GL LUMINANCE8, GL LUMINANCE12, GL LUMINANCE16, GL \_ \_ \_ \_ \_ \_ \_ \_ Luminance \_ Alpha, GL \_ LUMINANCE4 \_ ALPHA4, GL \_ LUMINANCE6 \_ alfa2, GL LUMINANCE8 \_ \_ ALPHA8, GL \_ LUMINANCE12 ALPHA4, \_ GL \_ LUMINANCE12 \_ ALPHA12, GL LUMINANCE16 ALPHA16, GL Intensity, GL INTENSITY4, GL INTENSITY8, GL INTENSITY12, GL INTENSITY16, GL \_ \_ \_ \_ \_ \_ \_ \_ R3 \_ G3 \_ B2, GL \_ RGB, GL RGB4, \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ GL RGB5, GL RGB8, GL RGB10, GL RGB12, GL RGB16, GL RGBA, GL RGBA2, GL RGBA4, GL RGB5, GL Rgba8, GL RGB10, GL RGBA12, GL RGBA16, GL e GL.
+Numero di componenti di colore nella trama. Deve essere 1, 2, 3 o 4 oppure una delle costanti simboliche seguenti: GL \_ ALPHA, GL \_ ALPHA4, GL \_ ALPHA8, GL \_ ALPHA12, GL \_ ALPHA16, GL \_ LUMINANCE, GL \_ LUMINANCE4, GL \_ LUMINANCE8, GL \_ LUMINANCE12, \_ GL LUMINANCE16, \_ GL LUMINANCE \_ ALPHA, GL \_ LUMINANCE4 \_ \_ ALPHA4, GL \_ LUMINANCE6 ALPHA2, GL \_ LUMINANCE8 \_ ALPHA8, GL \_ LUMINANCE12 \_ ALPHA4, GL \_ LUMINANCE12 \_ ALPHA12, GL \_ LUMINANCE16 \_ ALPHA16, GL \_ INTENSITY, GL INTENSITY, GL INTENSITY GL \_ INTENSITY4, GL \_ INTENSITY8, GL \_ INTENSITY12, GL \_ INTENSITY16, \_ GL \_ R3 G3 \_ B2, GL \_ RGB, GL \_ RGB4, GL \_ RGB5, GL \_ RGB8, GL \_ RGB10, GL \_ RGB12, GL \_ RGB16, GL \_ RGBA, GL \_ RGBA2, GL \_ RGBA4, GL \_ RGB5 \_ A1, GL \_ RGBA8, GL \_ RGB10 \_ A2, GL \_ RGBA12 o GL \_ RGBA16.
 
 </dd> <dt>
 
 *width* 
 </dt> <dd>
 
-Larghezza dell'immagine della trama. Deve essere 2 *n* + 2 (*bordo*) per alcuni numeri interi *n*.
+Larghezza dell'immagine della trama. Deve essere 2 *n* + 2(*border*) per un numero intero *n*.
 
 </dd> <dt>
 
 *height* 
 </dt> <dd>
 
-Altezza dell'immagine della trama. Deve essere 2 *<sup>m</sup>* + 2 (*bordo*) per alcuni valori integer *m*.
+Altezza dell'immagine della trama. Deve essere 2 *<sup>m</sup>* + 2(*border*) per un numero intero *m*.
 
 </dd> <dt>
 
-*bordo* 
+*confine* 
 </dt> <dd>
 
 Larghezza del bordo. Deve essere 0 o 1.
@@ -93,23 +93,23 @@ Larghezza del bordo. Deve essere 0 o 1.
 *format* 
 </dt> <dd>
 
-Formato dei dati pixel. Può assumere uno dei nove valori simbolici.
+Formato dei dati pixel. Può presupporre uno dei nove valori simbolici.
 
 
 
 | Valore                                                                                                                                                                         | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl> <dt>**\_indice colori \_ GL**</dt> </dl>             | Ogni elemento è un singolo valore, ovvero un indice colori. Viene convertito in un punto fisso (con un numero non specificato di 0 bit a destra del punto binario), spostato verso sinistra o verso destra a seconda del valore e del segno dello spostamento di \_ indice GL \_ e aggiunto all'offset dell' \_ indice GL \_ (vedere [**glPixelTransfer**](glpixeltransfer.md)). L'indice risultante viene convertito in un set di componenti colore usando il \_ mapping GL pixel i \_ \_ \_ a \_ R, GL \_ pixel \_ Map \_ i \_ a \_ G, GL \_ pixel \_ Map \_ i \_ a \_ B e GL \_ pixel \_ mappa \_ i \_ a \_ una tabella e l'intervallo viene premuto nell'intervallo \[ 0, 1 \] .<br/> |
-| <span id="GL_RED"></span><span id="gl_red"></span><dl> <dt>**\_rosso GL**</dt> </dl>                                      | Ogni elemento è un singolo componente rosso. Viene convertita in virgola mobile e assemblata in un elemento RGBA collegando 0,0 per verde e blu e 1,0 per alfa. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                               |
-| <span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt>**\_verde GL**</dt> </dl>                                | Ogni elemento è un singolo componente verde. Viene convertita in virgola mobile e assemblata in un elemento RGBA collegando 0,0 per Red e Blue e 1,0 per Alpha. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                        |
-| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt>**\_blu GL**</dt> </dl>                                   | Ogni elemento è un singolo componente blu. Viene convertita in virgola mobile e assemblata in un elemento RGBA collegando 0,0 per Red e Green e 1,0 per Alpha. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                               |
-| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt>**\_alfa GL**</dt> </dl>                                | Ogni elemento è un singolo componente rosso. Viene convertita in virgola mobile e assemblata in un elemento RGBA collegando 0,0 per rosso, verde e blu. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                     |
-| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt>**GL \_ RGB**</dt> </dl>                                      | Ogni elemento è una tripla RGB. Viene convertita in virgola mobile e assemblata in un elemento RGBA collegando 1,0 per Alpha. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                                                                    |
-| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt>**\_RGBA GL**</dt> </dl>                                   | Ogni elemento è un elemento RGBA completo. Viene convertito in virgola mobile. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                                                                                                 |
-| <span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl> <dt>**GL \_ BGR \_ ext**</dt> </dl>                         | Ogni pixel è un gruppo di tre componenti in questo ordine: blu, verde, rosso.<br/> GL \_ BGR \_ ext fornisce un formato corrispondente al layout di memoria delle bitmap indipendenti dal dispositivo (DIB) Windows. In questo modo, le applicazioni possono usare gli stessi dati con le chiamate di funzione di Windows e le chiamate di funzione pixel OpenGL.<br/>                                                                                                                                                                                                                                     |
-| <span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl> <dt>**GL \_ BGRA \_ ext**</dt> </dl>                      | Ogni pixel è un gruppo di quattro componenti in questo ordine: blu, verde, rosso, alfa. GL \_ BGRA \_ ext fornisce un formato corrispondente al layout di memoria delle bitmap indipendenti dal dispositivo (DIB) Windows. In questo modo, le applicazioni possono usare gli stessi dati con le chiamate di funzione di Windows e le chiamate di funzione pixel OpenGL.<br/>                                                                                                                                                                                                                                         |
-| <span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt>**\_luminanza GL**</dt> </dl>                    | Ogni elemento è un singolo valore di luminosità. Viene convertita in virgola mobile e quindi assemblata in un elemento RGBA replicando il valore di luminanza tre volte per rosso, verde e blu e collegando 1,0 per alfa. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                         |
-| <span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt>**\_alfa luminanza GL \_**</dt> </dl> | Ogni elemento è una coppia di luminanza/alfa. Viene convertita in virgola mobile e quindi assemblata in un elemento RGBA replicando il valore di luminanza tre volte per rosso, verde e blu. Ogni componente viene quindi moltiplicato per la scala con segno di scala GL \_ c \_ , aggiunta alla distorsione GL c della distorsione firmata \_ \_ e fissata all'intervallo \[ 0, 1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                 |
+| <span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl> <dt>**INDICE COLORI \_ GL \_**</dt> </dl>             | Ogni elemento è un singolo valore, un indice di colore. Viene convertito in punto fisso (con un numero non specificato di 0 bit a destra del punto binario), spostato a sinistra o a destra a seconda del valore e del segno di GL INDEX SHIFT e aggiunto a \_ \_ GL INDEX OFFSET \_ \_ (vedere [**glPixelTransfer**](glpixeltransfer.md)). L'indice risultante viene convertito in un set di componenti di colore usando le tabelle GL PIXEL MAP I TO R, GL PIXEL MAP I TO G, GL PIXEL MAP I TO B e GL PIXEL MAP I TO A e con un intervallo \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ di \_ \_ \_ \_ \_ \_ \_ \_ \[ 0,1. \]<br/> |
+| <span id="GL_RED"></span><span id="gl_red"></span><dl> <dt>**GL \_ RED**</dt> </dl>                                      | Ogni elemento è un singolo componente rosso. Viene convertito in virgola mobile e assemblato in un elemento RGBA associando 0,0 per verde e blu e 1,0 per alfa. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                               |
+| <span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt>**GL \_ VERDE**</dt> </dl>                                | Ogni elemento è un singolo componente verde. Viene convertito in virgola mobile e assemblato in un elemento RGBA associando 0,0 per il rosso e il blu e 1,0 per alfa. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                        |
+| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt>**GL \_ BLU**</dt> </dl>                                   | Ogni elemento è un singolo componente blu. Viene convertito in virgola mobile e assemblato in un elemento RGBA associando 0,0 per il rosso e il verde e 1,0 per alfa. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                               |
+| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt>**GL \_ ALPHA**</dt> </dl>                                | Ogni elemento è un singolo componente rosso. Viene convertito in virgola mobile e assemblato in un elemento RGBA associando 0,0 per rosso, verde e blu. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                     |
+| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt>**GL \_ RGB**</dt> </dl>                                      | Ogni elemento è una tripla RGB. Viene convertito in virgola mobile e assemblato in un elemento RGBA associando 1.0 per alpha. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                                                                                                                    |
+| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt>**GL \_ RGBA**</dt> </dl>                                   | Ogni elemento è un elemento RGBA completo. Viene convertito in virgola mobile. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                                                                                                 |
+| <span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl> <dt>**GL \_ BGR \_ EXT**</dt> </dl>                         | Ogni pixel è un gruppo di tre componenti nell'ordine seguente: blu, verde, rosso.<br/> GL BGR EXT offre un formato che corrisponde al layout di memoria Windows bitmap indipendenti \_ \_ dal dispositivo (DIB). Le applicazioni possono quindi usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/>                                                                                                                                                                                                                                     |
+| <span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl> <dt>**GL \_ BGRA \_ EXT**</dt> </dl>                      | Ogni pixel è un gruppo di quattro componenti nell'ordine seguente: blu, verde, rosso, alfa. GL BGRA EXT offre un formato che corrisponde al layout di memoria \_ Windows bitmap indipendenti dal dispositivo \_ (DIB). Le applicazioni possono quindi usare gli stessi dati con Windows di funzione e chiamate di funzione pixel OpenGL.<br/>                                                                                                                                                                                                                                         |
+| <span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt>**GL \_ LUMINANCE**</dt> </dl>                    | Ogni elemento è un singolo valore di luminance. Viene convertito in virgola mobile e quindi assemblato in un elemento RGBA replicando il valore di luminance tre volte per il rosso, il verde e il blu e collegando 1,0 per alpha. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere **glPixelTransfer**).<br/>                                                                                                                                         |
+| <span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt>**GL \_ LUMINANCE \_ ALPHA**</dt> </dl> | Ogni elemento è una coppia luminance/alpha. Viene convertito in virgola mobile e quindi assemblato in un elemento RGBA replicando il valore di luminance tre volte per rosso, verde e blu. Ogni componente viene quindi moltiplicato per il fattore di scala con segno GL c SCALE, aggiunto alla distorsione con segno GL c BIAS e viene aggiunto all'intervallo \_ \_ \_ \_ \[ 0,1 \] (vedere [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                 |
 
 
 
@@ -120,11 +120,11 @@ Formato dei dati pixel. Può assumere uno dei nove valori simbolici.
 *type* 
 </dt> <dd>
 
-Tipo di dati dei dati pixel. Sono accettati i valori simbolici seguenti: GL \_ UNsigned \_ byte, GL \_ byte, GL \_ bitmap, GL \_ unsigned \_ short, GL \_ short, GL \_ unsigned \_ int, GL \_ int e GL \_ float.
+Tipo di dati dei dati pixel. Vengono accettati i valori simbolici seguenti: GL \_ UNSIGNED \_ BYTE, GL \_ BYTE, GL \_ BITMAP, GL \_ UNSIGNED \_ SHORT, GL \_ SHORT, GL \_ UNSIGNED \_ INT, GL \_ INT e GL \_ FLOAT.
 
 </dd> <dt>
 
-*pixel* 
+*Pixel* 
 </dt> <dd>
 
 Puntatore ai dati dell'immagine in memoria.
@@ -137,45 +137,45 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | la *destinazione* non è un valore \_ 2D di trama GL \_ .<br/>                                                                                                                                                                                |
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Format* non è una costante di *formato* accettata. Vengono accettate solo le costanti di formato diverse da GL \_ stencil \_ index e GL \_ Depth \_ Component. Vedere la descrizione del parametro *Format* per un elenco di valori possibili.<br/> |
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | il *tipo* non è una costante di *tipo* .<br/>                                                                                                                                                                                   |
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | il *tipo* è una \_ bitmap GL e *Format* non è un indice di \_ colore GL \_ .<br/>                                                                                                                                                        |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | il *livello* è minore di zero o maggiore di log2 *Max*, dove *Max* è il valore restituito della \_ dimensione della trama GL Max \_ \_ .<br/>                                                                                                |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | *internalformat* è diverso da 1, 2, 3 o 4.<br/>                                                                                                                                                                         |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | la *larghezza* o l'altezza è minore di zero o maggiore di 2 + GL \_ dimensione massima della \_ trama \_ oppure non può essere rappresentata come 2 *n* + 2 (bordo) per un valore integer pari a *n*.<br/>                                                  |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | il *bordo* non è 0 o 1.<br/>                                                                                                                                                                                            |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/>                                                                                          |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *la destinazione* non è un GL \_ TEXTURE \_ 2D.<br/>                                                                                                                                                                                |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *format* non è una costante di *formato accettata.* Vengono accettate solo costanti di formato diverse da GL \_ STENCIL INDEX e GL DEPTH \_ \_ \_ COMPONENT. Per un elenco dei valori *possibili, vedere* la descrizione del parametro format.<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *type* non è una *costante di* tipo.<br/>                                                                                                                                                                                   |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *il tipo* era GL \_ BITMAP e il *formato* non era GL \_ COLOR \_ INDEX.<br/>                                                                                                                                                        |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *level* è minore di zero o maggiore di log2 *max*, dove *max* è il valore restituito di GL \_ MAX TEXTURE \_ \_ SIZE.<br/>                                                                                                |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *internalformat* non era 1, 2, 3 o 4.<br/>                                                                                                                                                                         |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *width* o height è minore di zero o maggiore di 2 + GL MAX TEXTURE SIZE oppure non può essere rappresentato come \_ \_ \_ 2 *n* + 2(border) per un valore intero di n .<br/>                                                  |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *border* non è 0 o 1.<br/>                                                                                                                                                                                            |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/>                                                                                          |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glTexImage2D** specifica un'immagine di trama bidimensionale. Il texturing esegue il mapping di una parte di un' *immagine di trama* specificata a ogni primitiva grafica per cui è abilitata la funzionalità di texturing. Il texturing bidimensionale viene abilitato e disabilitato usando [**glEnable**](glenable.md) e **GLDISABLE** con argument GL \_ texture \_ 2D.
+La **funzione glTexImage2D** specifica un'immagine di trama bidimensionale. La funzione Texturing esegue il mapping di una parte di un'immagine *di trama* specificata a ogni primitiva grafica per cui è abilitata la texturing. La texturing bidimensionale è abilitata e disabilitata usando [**glEnable**](glenable.md) **e glDisable con** l'argomento GL \_ TEXTURE \_ 2D.
 
-Le immagini di trama sono definite con **glTexImage2D**. Gli argomenti descrivono i parametri dell'immagine di trama, ad esempio altezza, larghezza, larghezza del bordo, numero del livello di dettaglio (vedere [**glTexParameter**](gltexparameter-functions.md)) e numero di componenti colore specificati. Gli ultimi tre argomenti descrivono il modo in cui l'immagine viene rappresentata in memoria. Questi argomenti sono identici ai formati pixel utilizzati per [**glDrawPixels**](gldrawpixels.md).
+Le immagini di trama sono definite **con glTexImage2D.** Gli argomenti descrivono i parametri dell'immagine di trama, ad esempio altezza, larghezza, larghezza del bordo, numero di livello di dettaglio (vedere [**glTexParameter**](gltexparameter-functions.md)) e numero di componenti di colore forniti. Gli ultimi tre argomenti descrivono il modo in cui l'immagine viene rappresentata in memoria. Questi argomenti sono identici ai formati pixel usati per [**glDrawPixels**](gldrawpixels.md).
 
-I dati vengono letti da *pixel* come una sequenza di byte firmati o non firmati, Shorts o Long o valori a virgola mobile a precisione singola, a seconda del *tipo*. Questi valori sono raggruppati in set di uno, due, tre o quattro valori, a seconda del *formato*, per formare elementi. Se *Type* è \_ una bitmap GL, i dati vengono considerati come una stringa di byte senza segno (e *Format* deve essere un \_ Indice dei colori GL \_ ). Ogni byte di dati viene considerato come elementi a 8 1 bit, con l'ordinamento dei bit determinato da GL \_ depack \_ LSB \_ First (vedere [**glPixelStore**](glpixelstore-functions.md)). Per una descrizione dei valori accettabili per il parametro di *tipo* , vedere [**glDrawPixels**](gldrawpixels.md) .
+I dati  vengono letti dai pixel come sequenza di byte con o senza segno, short o long o valori a virgola mobile e precisione singola, a seconda del *tipo*. Questi valori sono raggruppati in set di uno, due, tre o quattro valori, a seconda del *formato*, per formare gli elementi. Se *type* è GL BITMAP, i dati vengono considerati come una stringa di byte senza segno \_ e il *formato* deve essere GL \_ COLOR \_ INDEX. Ogni byte di dati viene considerato come otto elementi a 1 bit, con l'ordinamento dei bit determinato da GL \_ UNPACK \_ LSB \_ FIRST (vedere [**glPixelStore**](glpixelstore-functions.md)). Per una descrizione dei valori accettabili per il parametro *di* tipo, vedere [**glDrawPixels.**](gldrawpixels.md)
 
-Un'immagine di trama può avere fino a quattro componenti per ogni elemento di trama, a seconda dei *componenti*. Un'immagine di trama a un componente usa solo il componente rosso del colore RGBA Estratto da *pixel*. Un'immagine a due componenti usa i valori R e. Un'immagine A tre componenti usa i valori R, G e B. Un'immagine a quattro componenti utilizza tutti i componenti di RGBA.
+Un'immagine di trama può avere fino a quattro componenti per ogni elemento di trama, a seconda dei *componenti*. Un'immagine di trama a un componente usa solo il componente rosso del colore RGBA estratto dai *pixel*. Un'immagine a due componenti usa i valori R e A. Un'immagine a tre componenti usa i valori R, G e B. Un'immagine a quattro componenti usa tutti i componenti RGBA.
 
-La texturing non ha alcun effetto sulla modalità di indicizzazione del colore.
+La colorazione non ha alcun effetto in modalità color-index.
 
-L'immagine di trama può essere rappresentata dagli stessi formati di dati dei pixel in un comando **glDrawPixels** , ad eccezione del fatto che \_ \_ \_ \_ non è possibile usare l'indice degli stencil GL e il componente di profondità GL. Le modalità [**glPixelStore**](glpixelstore-functions.md) e [**glPixelTransfer**](glpixeltransfer.md) influiscono sulle immagini della trama esattamente come influiscono su **glDrawPixels**.
+L'immagine di trama può essere rappresentata dagli stessi formati di dati dei pixel in un comando **glDrawPixels,** ad eccezione del fatto che non è possibile usare GL STENCIL INDEX e \_ GL DEPTH \_ \_ \_ COMPONENT. Le [**modalità glPixelStore**](glpixelstore-functions.md) e [**glPixelTransfer**](glpixeltransfer.md) influiscono sulle immagini di trama esattamente nel modo in cui influiscono **su glDrawPixels.**
 
-Un'immagine di trama con altezza o larghezza zero indica la trama null. Se la trama null è specificata per il livello di dettaglio 0, è come se la texturing fosse disabilitata.
+Un'immagine di trama con altezza o larghezza pari a zero indica la trama Null. Se la trama Null viene specificata per il livello di dettaglio 0, è come se la trama fosse disabilitata.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glTexImage2D**:
+Le funzioni seguenti recuperano informazioni correlate a **glTexImage2D:**
 
 [**glGetTexImage**](glgetteximage.md)
 
-[**glIsEnabled**](glisenabled.md) con argomento di \_ trama GL \_ 2D
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ TEXTURE \_ 2D
 
 ## <a name="requirements"></a>Requisiti
 
@@ -185,8 +185,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glTexIm
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -201,7 +201,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glTexIm
 [**glDrawPixels**](gldrawpixels.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glFog**](glfog.md)

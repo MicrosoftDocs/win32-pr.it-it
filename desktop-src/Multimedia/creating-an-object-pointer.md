@@ -1,19 +1,19 @@
 ---
-title: Creazione di un puntatore a un oggetto
-description: Creazione di un puntatore a un oggetto
+title: Creazione di un puntatore a oggetto
+description: Creazione di un puntatore a oggetto
 ms.assetid: b66a2725-6ba1-4aea-b165-fe3f4da00375
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f57451e2781a94642e61365d3a6c694758f4056
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 586ba0b8c9ee261e29f21ed58c84193f4cc89d1399c62d75d82a2c0a49075dcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144684"
 ---
-# <a name="creating-an-object-pointer"></a>Creazione di un puntatore a un oggetto
+# <a name="creating-an-object-pointer"></a>Creazione di un puntatore a oggetto
 
-AVIBall usa la struttura seguente come puntatore all'oggetto. Il primo membro di questa struttura punta alla tabella delle funzioni virtuali utilizzata da AVIBall per accedere alle relative funzioni. Le applicazioni possono eseguire il cast di questa struttura al tipo di dati PAVISTREAM. I metodi che utilizzano il tipo di dati PAVISTREAM utilizzano solo il puntatore alla tabella della funzione virtuale. I membri che seguono il puntatore alla tabella di funzioni virtuali vengono usati internamente da AVIBall.
+AVIBall usa la struttura seguente come puntatore a oggetto. Il primo membro di questa struttura punta alla tabella della funzione virtuale utilizzata da AVIBall per accedere alle relative funzioni. Le applicazioni possono eseguire il cast di questa struttura al tipo di dati PAVISTREAM. I metodi che usano il tipo di dati PAVISTREAM usano solo il puntatore alla tabella della funzione virtuale. I membri che segue il puntatore alla tabella della funzione virtuale vengono usati internamente da AVIBall.
 
 
 ```C++
@@ -35,9 +35,9 @@ typedef struct
 
 
 
- 
+ 
 
- 
+ 
 
 
 

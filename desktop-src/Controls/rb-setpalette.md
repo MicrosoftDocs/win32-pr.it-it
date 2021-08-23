@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_SETPALETTE (COMmctrl. h)
-description: Imposta la tavolozza corrente del controllo Rebar.
+title: RB_SETPALETTE messaggio (Commctrl.h)
+description: Imposta il riquadro corrente del controllo rebar.
 ms.assetid: 85f0726a-21fd-41b3-aa52-6a0a0c1947fa
 keywords:
-- Controlli di Windows Message RB_SETPALETTE
+- RB_SETPALETTE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ee47985c05bcd8a857620e7fe501bddf53bdec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85cd2968fa5fa74915e37f40f30dd47751e2316e8d91d0f51f9d3c7145b893fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434941"
 ---
-# <a name="rb_setpalette-message"></a>\_Messaggio della tavolozza RB
+# <a name="rb_setpalette-message"></a>Messaggio \_ RB SETPALETTE
 
-Imposta la tavolozza corrente del controllo Rebar.
+Imposta il riquadro corrente del controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,17 +35,17 @@ Imposta la tavolozza corrente del controllo Rebar.
 *lParam* 
 </dt> <dd>
 
-Oggetto **HPALETTE** che specifica la nuova tavolozza che il controllo Rebar utilizzerà.
+Oggetto **HPALETTE** che specifica il nuovo riquadro che verrà utilizzato dal controllo rebar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **HPALETTE** che specifica la tavolozza precedente del controllo Rebar.
+Restituisce un **oggetto HPALETTE** che specifica il riquadro precedente del controllo rebar.
 
 ## <a name="remarks"></a>Commenti
 
-È responsabilità dell'applicazione che invia questo messaggio per eliminare il **HPALETTE** passato in questo messaggio (vedere [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). Il controllo Rebar non eliminerà un set di **HPALETTE** con questo messaggio.
+È responsabilità dell'applicazione che invia questo messaggio eliminare **l'HPALETTE** passato in questo messaggio (vedere [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). Il controllo rebar non eliminerà un set **HPALETTE** con questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce un **HPALETTE** che specifica la tavolozza precedente del controllo 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Restituisce un **HPALETTE** che specifica la tavolozza precedente del controllo 
 
 <dl> <dt>
 
-[**\_tavolozza RB**](rb-getpalette.md)
+[**RB \_ GETPALETTE**](rb-getpalette.md)
 </dt> </dl>
 
  

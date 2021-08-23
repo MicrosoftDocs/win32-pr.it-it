@@ -4,70 +4,70 @@ description: Uso di HTML con Windows Media Player
 ms.assetid: 321d4396-511b-4f0d-9ee9-8bdddceedc0e
 keywords:
 - Windows Media Player, HTML
-- Modello a oggetti di Windows Media Player, HTML
+- Windows Media Player a oggetti, HTML
 - modello a oggetti, HTML
-- Controllo ActiveX di Windows Media Player, HTML per il modello a oggetti
-- Controllo ActiveX, HTML per il modello a oggetti
-- Controllo ActiveX Windows Media Player Mobile, HTML per il modello a oggetti
+- Windows Media Player ActiveX, HTML per il modello a oggetti
+- ActiveX, HTML per il modello a oggetti
+- Windows Media Player Controllo mobile ActiveX,HTML per il modello a oggetti
 - Windows Media Player Mobile, HTML per il modello a oggetti
 - HTML con Windows Media Player
-- Incorporamento di pagine Web, HTML
+- incorporamento di pagine Web, HTML
 - incorporamento, pagine Web
 - comandi script
-- Capovolgimento URL
-- streaming multimediale avanzato
+- CAPOVOLGIMENTO DELL'URL
+- rich media streaming
 - supporto browser
 - visualizzazione di pagine Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7cd96932573802d0a75f95a437b2c7284b3de44
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d72185dec8ae9a2119d8c3218478e7ebb5a2df4d7740b25c9f4ecc016aa392e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465921"
 ---
 # <a name="using-html-with-windows-media-player"></a>Uso di HTML con Windows Media Player
 
 ## <a name="overview"></a>Panoramica
 
-Usare HTML con Windows Media Player è un ottimo modo per combinare audio e video con testo e grafica. È possibile incorporare il controllo Windows Media Player in una pagina Web quando si desidera integrare il contenuto statico o creare applicazioni Web con supporti digitali. Quando si desidera integrare i supporti digitali con HTML, d'altra parte, è possibile visualizzare le pagine Web nella modalità completa del lettore facendovi riferimento nelle playlist di Windows Media Metafile.
+L'uso di HTML Windows Media Player è un ottimo modo per combinare audio e video con testo e grafica. È possibile incorporare il Windows Media Player in una pagina Web quando si vuole integrare il contenuto statico o creare applicazioni Web con supporti digitali. Quando invece si vuole integrare i file multimediali digitali con HTML, è possibile visualizzare le pagine Web in modalità completa del lettore facendovi riferimento in playlist di metafile Windows Media.
 
-Se si scrivono programmi personalizzati che incorporano il controllo Windows Media Player in modalità remota, è anche possibile controllare le pagine Web visualizzate nei vari riquadri della modalità completa del lettore quando gli utenti disancorano il controllo. Ciò consente di mantenere la continuità tra gli stati ancorati e non ancorati.
+Se si scrivono programmi personalizzati che incorporano il controllo Windows Media Player in modalità remota, è anche possibile controllare le pagine Web visualizzate nei vari riquadri della modalità completa del lettore quando gli utenti disancano il controllo. In questo modo è possibile mantenere la continuità tra gli stati ancorati e non ancorati.
 
 ## <a name="web-embedding"></a>Incorporamento Web
 
-È possibile utilizzare il controllo Media Player Windows come parte di una pagina Web creata. Vedere [incorporare il controllo Windows Media Player in una pagina Web](embedding-the-windows-media-player-control-in-a-web-page.md).
+È possibile usare il controllo Windows Media Player come parte di una pagina Web creata. Vedere [Incorporamento del controllo Windows Media Player in una pagina Web.](embedding-the-windows-media-player-control-in-a-web-page.md)
 
-## <a name="script-commands-and-url-flipping"></a>Comandi script e capovolgimento URL
+## <a name="script-commands-and-url-flipping"></a>Comandi script e capovolgimento url
 
-I comandi script sono coppie di testo/valore che è possibile incorporare nei file multimediali digitali o nei flussi. È possibile utilizzare i comandi di script personalizzati esclusivamente per attivare il codice dello script, consentendo a Windows Media Player di gestire automaticamente altri comandi di script.
+I comandi script sono coppie testo/valore che è possibile incorporare nei file multimediali digitali o nei flussi. È possibile usare i comandi script personalizzati esclusivamente per attivare il codice di script, consentendo Windows Media Player gestire automaticamente altri comandi script.
 
-Quando sono presenti diverse pagine Web che accompagnano una presentazione multimediale digitale, i comandi script URL possono modificare automaticamente la pagina in un frame mentre il controllo Media Player Windows continua a riprodurre file multimediali digitali in un altro frame. Questa operazione è denominata capovolgimento degli URL ed è un ottimo modo per creare una presentazione multimediale. Altri comandi script gestiti automaticamente consentono di passare dalla riproduzione a un altro file multimediale o flusso, visualizzare il testo della didascalia o generare eventi, ad esempio inserimenti ad, definiti in una playlist Windows Media Metafile.
+Quando sono presenti diverse pagine Web che accompagnano una presentazione multimediale digitale, i comandi di script URL possono modificare automaticamente la pagina in un frame mentre il controllo Windows Media Player continua la riproduzione di file multimediali digitali in un altro frame. Questa operazione è detta capovolgimento dell'URL ed è un ottimo modo per creare una presentazione multimediale. Altri comandi script gestiti automaticamente consentono di passare alla riproduzione in un file multimediale o un flusso diverso, visualizzare il testo dei sottotitoli in lingua originale o attivare eventi come gli inserimenti di annunci definiti in una playlist di metafile di Windows Media.
 
-Per ulteriori informazioni sul capovolgimento degli URL, vedere la pagina relativa alla [creazione di presentazioni Web-Based](creating-web-based-presentations.md).
+Per altre informazioni sul capovolgimento dell'URL, vedere [Creazione di Web-Based presentazioni.](creating-web-based-presentations.md)
 
-## <a name="rich-media-streaming"></a>Streaming multimediale avanzato
+## <a name="rich-media-streaming"></a>Rich Media Streaming
 
-Il capovolgimento degli URL funziona meglio con pagine semplici che si caricano rapidamente. Con pagine più complesse, più componenti vengono trasferiti singolarmente, rendendo difficile la sincronizzazione della visualizzazione delle pagine con supporti digitali. Per consentire presentazioni multimediali complesse complesse, le pagine Web possono essere aggiunte a un flusso multimediale e distribuite al lettore in modo analogo a audio e video. In questo modo è possibile sincronizzare i componenti della presentazione in modo molto più semplice, soprattutto su connessioni a bassa velocità.
+Il capovolgimento dell'URL funziona meglio con pagine semplici che vengono caricate rapidamente. Con le pagine più complesse, più componenti vengono trasferiti singolarmente, rendendo difficile sincronizzare la visualizzazione della pagina con i supporti digitali. Per consentire presentazioni multimediali complesse, le pagine Web possono essere aggiunte a un flusso multimediale e recapitate al lettore allo stesso modo di audio e video. In questo modo è possibile sincronizzare molto più facilmente i componenti della presentazione, soprattutto tramite connessioni a bassa velocità.
 
-Per ulteriori informazioni sui flussi multimediali avanzati, vedere la pagina relativa alla [creazione di presentazioni Web-Based](creating-web-based-presentations.md).
+Per altre informazioni sul flusso multimediale, vedere [Creating Web-Based Presentations](creating-web-based-presentations.md).
 
 ## <a name="browser-support"></a>Supporto browser
 
-È possibile incorporare il controllo Windows Media Player in Microsoft Internet Explorer, Firefox e Netscape Navigator, sebbene il processo sia leggermente diverso per ognuno di essi. È anche possibile creare pagine Web progettate per funzionare con tutti e tre i browser.
+È possibile incorporare il Windows Media Player in Microsoft Internet Explorer, Firefox e Netscape Navigator, anche se il processo è leggermente diverso per ognuno. È anche possibile creare pagine Web progettate per funzionare con tutti e tre i browser.
 
-Con Internet Explorer e Firefox, il controllo viene incorporato usando l'elemento oggetto HTML. Il navigatore richiede un approccio diverso, tuttavia, perché non supporta direttamente i controlli ActiveX. Con Navigator si usa l'elemento APPLET per incorporare una speciale applet Java nella pagina. Questa applet gestisce la comunicazione con il controllo ActiveX del lettore.
+Con Internet Explorer e Firefox, si incorpora il controllo usando l'elemento OBJECT HTML. Lo strumento di navigazione richiede tuttavia un approccio diverso, perché non supporta direttamente i ActiveX personalizzati. Con Lo strumento di navigazione si usa l'elemento APPLET per incorporare una speciale applet Java nella pagina. Questa applet gestisce la comunicazione con il ActiveX lettore.
 
-Per ulteriori informazioni sul supporto di Firefox, vedere [utilizzo del controllo Windows Media Player con Firefox](using-the-windows-media-player-control-with-firefox.md).
+Per altre informazioni sul supporto di Firefox, vedere [Uso del controllo Windows Media Player con Firefox.](using-the-windows-media-player-control-with-firefox.md)
 
-Per altre informazioni sul supporto di Netscape Navigator, vedere [uso di Windows Media Player con netscape 7,1](using-windows-media-player-with-netscape-7-1.md).
+Per altre informazioni sul Netscape Navigator, vedere [Using Windows Media Player with Netscape 7.1 (Uso di Windows Media Player con Netscape 7.1).](using-windows-media-player-with-netscape-7-1.md)
 
 ## <a name="displaying-web-pages-in-the-full-mode-of-the-player"></a>Visualizzazione di pagine Web in modalità completa del lettore
 
-È possibile estendere le funzionalità di Windows Media Player o fornire una visualizzazione personalizzata delle informazioni che accompagnano i supporti digitali visualizzando le pagine Web in modalità completa del lettore. Si tratta della funzionalità HTMLView di metafile di Windows Media. I metafile offrono un ottimo controllo sul contenuto della playlist, consentendo di eseguire facilmente la transizione tra clip, inserire annunci e visualizzare immagini ancora in Windows Media Player. Per visualizzare le pagine Web nella modalità completa del lettore, usare l'elemento PARAM per aggiungere riferimenti URL alle voci della playlist o a intere playlist.
+È possibile estendere la funzionalità di Windows Media Player o fornire una visualizzazione personalizzata delle informazioni che accompagnano i file multimediali digitali visualizzando le pagine Web in modalità completa del lettore. Questa è la funzionalità HTMLView dei Windows multimediali. I metafile offrono un ottimo controllo sul contenuto della playlist, consentendo di eseguire facilmente la transizione tra clip, inserire annunci e visualizzare immagini fisse in Windows Media Player. Per visualizzare le pagine Web in modalità completa del lettore, usare l'elemento PARAM per aggiungere riferimenti URL alle voci della playlist o a intere playlist.
 
-Per ulteriori informazioni sull'utilizzo di pagine Web in metafile, vedere [visualizzazione di pagine Web in Windows Media Player](displaying-web-pages-in-windows-media-player.md).
+Per altre informazioni sull'uso delle pagine Web nei metafile, vedere [Visualizzazione di pagine Web in Windows Media Player](displaying-web-pages-in-windows-media-player.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -76,9 +76,9 @@ Per ulteriori informazioni sull'utilizzo di pagine Web in metafile, vedere [visu
 [**Informazioni sul modello a oggetti del lettore**](about-the-player-object-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

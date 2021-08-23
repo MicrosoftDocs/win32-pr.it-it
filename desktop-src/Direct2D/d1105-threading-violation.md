@@ -1,9 +1,9 @@
 ---
-title: Violazione Threading D1105
+title: Violazione del threading D1105
 ms.assetid: 2c6cf90b-ce9e-4ea9-849d-22170f65ffb0
-description: Un'interfaccia a thread di noleggio è stata accessibile simultaneamente da più thread.
+description: È stato eseguito l'accesso simultaneo a un'interfaccia con thread a noleggio da più thread.
 keywords:
-- Direct2D violazione Threading D1105
+- D1105 Violazione del threading Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: fe83baa32be8ae18948ae5a80e3e0b218cd4fa4a
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 12e7321fd40437bc262439c6ddb319a0aa6dba145d05d3feebba2813c904bbce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "106334280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537971"
 ---
-# <a name="d1105-threading-violation"></a>D1105: violazione Threading
+# <a name="d1105-threading-violation"></a>D1105: Violazione del threading
 
-Un'interfaccia di interfaccia a thread \[  \] di noleggio è stata accessibile simultaneamente da più thread.
+È stato eseguito l'accesso \[ *simultaneo a* \] un'interfaccia a thread di noleggio da più thread.
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaccia*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaccia*
 </dt> <dd>
 
-Indirizzo dell'interfaccia accessibile da più thread.
+Indirizzo dell'interfaccia a cui hanno avuto accesso più thread.
 
 </dd> </dl> 
 
@@ -42,7 +42,7 @@ Indirizzo dell'interfaccia accessibile da più thread.
 
 ## <a name="possible-causes"></a>Possibili cause
 
-Uso di un'istanza di oggetto dalla stessa Factory a thread singolo da due thread diversi.
+Uso di un'istanza dell'oggetto dalla stessa factory a thread singolo da due thread diversi.
 
  
 

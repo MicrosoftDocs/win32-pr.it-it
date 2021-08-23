@@ -1,5 +1,5 @@
 ---
-description: Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca).
+description: Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca).
 title: FM_GETSELCOUNT messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0d43bf37-863c-45cc-94ea-5b2aedba5353
-ms.openlocfilehash: 727e098a98ecfe4a4349ebcf9c6f931a8579b70d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e309b274567ba8d7732e8db0a80bea3a001da34bd076d80c307736c4355672f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094166"
 ---
-# <a name="fm_getselcount-message"></a>Messaggio DI FM \_ GETSELCOUNT
+# <a name="fm_getselcount-message"></a>Messaggio \_ FM GETSELCOUNT
 
-Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (la finestra della directory o la finestra Risultati ricerca).
+Inviato da un'estensione di File Manager per recuperare un conteggio dei file selezionati nella finestra di Gestione file attiva (nella finestra della directory o nella finestra Risultati ricerca).
 
 ## <a name="parameters"></a>Parametri
 

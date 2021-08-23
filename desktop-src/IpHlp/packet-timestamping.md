@@ -3,12 +3,12 @@ title: Timestamp dei pacchetti
 description: Le API di timestamp dei pacchetti dell'helper IP consentono di determinare la funzionalità di timestamp di una scheda di rete e di eseguire query dei timestamp dalla scheda di rete sotto forma di timestamp incrociati.
 ms.topic: article
 ms.date: 01/19/2021
-ms.openlocfilehash: 07743473bcb606ccdb86c55f14a3413adf10d73a
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 12da7189dbae5f38085cdf4ad5f8e9ac1214cff7ddd0b683ecd97b70b2786c51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146634"
 ---
 # <a name="packet-timestamping"></a>Timestamp dei pacchetti
 
@@ -18,39 +18,39 @@ Molte schede di interfaccia di rete (NIC o schede di rete) possono generare un t
 
 I timestamp possono, ad esempio, essere usati per calcolare il tempo impiegato da un pacchetto all'interno dello stack di rete del computer prima di essere inviati o ricevuti dalla rete. Questi calcoli possono quindi essere usati da PTP per migliorare l'accuratezza della sincronizzazione dell'ora. Il supporto del timestamp dei pacchetti delle schede di rete è talvolta specifico per il protocollo PTP. In altri casi, viene fornito un supporto più generale.
 
-Le API di timestamp offrono a Windows la possibilità di supportare la funzionalità di timestamp hardware delle schede di rete per il protocollo PTP versione 2. In generale, le funzionalità includono la possibilità ai driver delle schede di rete di supportare i timestamp e per le applicazioni in modalità utente di utilizzare i timestamp associati ai pacchetti tramite [Windows Sockets](/windows/win32/winsock/windows-sockets-start-page-2) (vedere [Timestamping winsock](/windows/win32/winsock/winsock-timestamping)). È inoltre disponibile la possibilità di generare timestamp software, che consente a un driver di rete di generare timestamp nel software. Questi timestamp software vengono generati dai driver nic usando l'equivalente in modalità kernel di [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC). Tuttavia, la presenza di *timestamp* hardware e software abilitati insieme non è supportata.
+Le API di timestamp offrono Windows la possibilità di supportare la funzionalità di timestamp hardware delle schede di rete per il protocollo PTP versione 2. In generale, le funzionalità includono la possibilità ai driver delle schede di rete di supportare i timestamp e per le applicazioni in modalità utente di utilizzare i timestamp associati ai pacchetti [tramite Windows Sockets](/windows/win32/winsock/windows-sockets-start-page-2) (vedere [Timestamping winsock](/windows/win32/winsock/winsock-timestamping)). È inoltre disponibile la possibilità di generare timestamp software, che consente a un driver di rete di generare timestamp nel software. Questi timestamp software vengono generati dai driver nic usando l'equivalente in modalità kernel di [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC). Tuttavia, la presenza di *timestamp* hardware e software abilitati insieme non è supportata.
 
-In particolare, le API di timestamp dei pacchetti dell'helper IP (Internet Protocol Helper) descritte in questo argomento consentono alle applicazioni in modalità utente di determinare la funzionalità di timestamp di una scheda di rete e di eseguire query dei timestamp dalla scheda di rete sotto forma di timestamp incrociati (descritti di seguito).
+In particolare, le API di timestamp dei pacchetti helper protocollo Internet (helper IP) descritte in questo argomento offrono la possibilità per le applicazioni in modalità utente di determinare la funzionalità di timestamp di una scheda di rete e di eseguire query timestamp dalla scheda di rete sotto forma di timestamp incrociati (descritto di seguito).
 
 ## <a name="supporting-precision-time-protocol-version-2"></a>Supporto di Precision Time Protocol versione 2
 
-Come accennato, l'obiettivo principale del supporto del timestamp in Windows è supportare il protocollo Precision Time Protocol versione 2 (PTPv2). All'interno di PTPv2, non tutti i messaggi necessitano di un timestamp. In particolare, i messaggi di evento PTP usano timestamp. Attualmente, l'ambito del supporto è PTPv2 su UDP (User Datagram Protocol). PTP su ethernet non elaborata non è supportato.
+Come accennato, l'obiettivo principale del supporto del timestamp in Windows è supportare il protocollo Precision Time Protocol versione 2 (PTPv2). In PTPv2 non tutti i messaggi necessitano di un timestamp. In particolare, i messaggi di evento PTP usano timestamp. Attualmente, l'ambito del supporto è PTPv2 su UDP (User Datagram Protocol). Il protocollo PTP su ethernet non elaborato non è supportato.
 
-Il timestamp è supportato per il funzionamento di PTPv2 in *modalità a 2* passaggi. *2* step fa riferimento alla modalità in cui i timestamp effettivi nei pacchetti PTP non vengono generati in tempo reale nell'hardware, ma vengono invece recuperati dall'hardware e trasmessi come messaggi separati (ad esempio, usando un messaggio di follow-up).
+Il timestamping è supportato per PTPv2 in modalità *a 2* passaggi. *2* passaggio si riferisce alla modalità in cui i timestamp effettivi nei pacchetti PTP non vengono generati in tempo reale nell'hardware, ma vengono invece recuperati dall'hardware e trasmessi come messaggi separati (ad esempio, usando un messaggio di follow-up).
 
-In breve, è possibile usare le API di timestamp dei pacchetti dell'helper IP (Internet Protocol Helper), insieme al supporto di timestamp di Winsock, in un'applicazione PTPv2 per migliorare l'accuratezza della sincronizzazione dell'ora.
+In breve, in un'applicazione PTPv2 è possibile usare le API di timestamp dei pacchetti dell'helper protocollo Internet (HELPER IP), insieme al supporto del timestamp di Winsock, in un'applicazione PTPv2 per migliorarne l'accuratezza della sincronizzazione dell'ora.
 
 ## <a name="retrieving-the-timestamping-capabilities-of-a-network-adapter"></a>Recupero delle funzionalità di timestamp di una scheda di rete
 
 Un'applicazione, ad esempio un servizio di sincronizzazione dell'ora PTP, deve determinare la funzionalità di timestamp di una scheda di rete. Usando le funzionalità recuperate, l'applicazione può quindi decidere se usare o meno i timestamp.
 
-Anche se una scheda *di rete* supporta i timestamp, è necessario mantenere disattivata la funzionalità per impostazione predefinita. Un adattatore attiva il timestamp quando viene richiesto di farlo. Windows fornisce api per un'applicazione per recuperare le funzionalità dell'hardware, nonché le funzionalità attivate.
+Anche se una scheda di *rete* supporta i timestamp, è necessario mantenere la funzionalità disattivata per impostazione predefinita. Un adattatore attiva il timestamp quando viene richiesto di eseguire questa operazione. Windows api per un'applicazione per recuperare le funzionalità dell'hardware, nonché le funzionalità attivate.
 
 Per recuperare le funzionalità di timestamp supportate di una scheda di rete, chiamare la funzione [**GetInterfaceSupportedTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities) fornendo l'identificatore univoco locale (LUID) della scheda di rete e recuperando le funzionalità di timestamp supportate sotto forma di oggetto [**INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
-Il codice restituito da **GetInterfaceSupportedTimestampCapabilities** indica se la chiamata è  riuscita o meno e se è stato recuperato un valore INTERFACE_TIMESTAMP_CAPABILITIES popolato.
+Il codice restituito da **GetInterfaceSupportedTimestampCapabilities** indica se la chiamata è riuscita o meno e se è stato recuperato un valore INTERFACE_TIMESTAMP_CAPABILITIES **stato** popolato.
 
 Per recuperare le funzionalità timestamp attualmente abilitate di una scheda di rete, chiamare la funzione [**GetInterfaceActiveTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) fornendo l'identificatore univoco locale (LUID) della scheda di rete e recuperando le funzionalità di timestamp abilitate sotto forma di oggetto [**INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
 Anche in questo caso, il codice restituito da **GetInterfaceActiveTimestampCapabilities** indica l'esito positivo o negativo e indica se è stato recuperato un valore INTERFACE_TIMESTAMP_CAPABILITIES **valido.**
 
-Le schede di rete possono supportare un'ampia gamma di funzionalità di timestamping. Alcuni adapter, ad esempio, possono impostare come timestamp ogni pacchetto durante l'invio e la ricezione, mentre altri supportano solo pacchetti PTPv2. La [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) struttura descrive esattamente le funzionalità supportate da una scheda di rete.
+Le schede di rete possono supportare un'ampia gamma di funzionalità di timestamping. Ad esempio, alcune schede possono impostare come timestamp ogni pacchetto durante l'invio e la ricezione, mentre altri supportano solo pacchetti PTPv2. La [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) struttura descrive esattamente le funzionalità supportate da una scheda di rete.
 
 ## <a name="retrieving-cross-timestamps-from-a-network-adapter"></a>Recupero di timestamp incrociati da una scheda di rete
 
 Quando si usano timestamp hardware, un'applicazione PTP deve stabilire una relazione (ad esempio, usando tecniche matematiche appropriate) tra l'orologio hardware della scheda di rete e un orologio di sistema. Questa operazione è necessaria in modo che un valore che rappresenta un'ora nell'unità di un orologio possa essere convertito in un'altra unità di clock. A questo scopo vengono forniti timestamp incrociati e l'applicazione può campionare periodicamente i timestamp incrociati per stabilire una relazione di questo tipo.
 
-A tale scopo, chiamare la funzione [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) fornendo l'identificatore univoco locale (LUID) della scheda di rete e recuperando il timestamp dalla scheda di rete sotto forma di oggetto [**INTERFACE_HARDWARE_CROSSTIMESTAMP.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
+A tale scopo, chiamare la funzione [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) fornendo l'identificatore [**univoco**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp) locale (LUID) della scheda di rete e recuperando il timestamp dalla scheda di rete sotto forma di oggetto INTERFACE_HARDWARE_CROSSTIMESTAMP.
 
 ## <a name="timestamp-capability-change-notifications"></a>Notifiche di modifica della funzionalità timestamp
 
@@ -58,7 +58,7 @@ Per ricevere una notifica in caso di modifica delle funzionalità di timestamp p
 
 **RegisterInterfaceTimestampConfigChange** restituisce un handle che è possibile passare successivamente a [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-unregisterinterfacetimestampconfigchange) per annullare la registrazione della funzione di callback.
 
-## <a name="code-example-1mdashretrieving-timestamp-capabilities-and-cross-timestamps"></a>Esempio di codice &mdash; 1: recupero delle funzionalità di timestamp e timestamp incrociati
+## <a name="code-example-1mdashretrieving-timestamp-capabilities-and-cross-timestamps"></a>Esempio di codice 1 &mdash; recupero di funzionalità di timestamp e timestamp incrociati
 
 ```c
 // main.cpp in a Console App project.
@@ -188,7 +188,7 @@ int main()
 
 ## <a name="code-example-2mdashregistering-for-timestamp-capability-change-notifications"></a>Esempio di codice &mdash; 2: registrazione per le notifiche di modifica della funzionalità timestamp
 
-Questo esempio illustra come l'applicazione può usare i timestamp end-to-end.
+Questo esempio illustra come l'applicazione potrebbe usare i timestamp end-to-end.
 
 ```c
 // main.cpp in a Console App project.

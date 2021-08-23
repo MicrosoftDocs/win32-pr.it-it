@@ -1,7 +1,7 @@
 ---
 description: Ottiene o imposta il tasto di scelta rapida per il collegamento.
 ms.assetid: edc65fe8-c7f3-46d0-86ca-1c0c93e7ca64
-title: Proprietà ShellLinkObject. Hotkey (shldisp. h)
+title: Proprietà ShellLinkObject.Hotkey (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 23ab8615421eee7289e5f0bb58582bf8e0d48f17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 5b741b40d0947119109d3496a214ccdd75c59272fd7c5f4d0eac569a5b24c3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591901"
 ---
-# <a name="shelllinkobjecthotkey-property"></a>Proprietà ShellLinkObject. Hotkey
+# <a name="shelllinkobjecthotkey-property"></a>ShellLinkObject.Hotkey - proprietà
 
 Ottiene o imposta il tasto di scelta rapida per il collegamento.
 
@@ -38,7 +38,7 @@ ShellLinkObject.Hotkey(iHotkey) = iHotkey
 
 ## <a name="property-value"></a>Valore proprietà
 
-tasto di scelta rapida del collegamento. Il tasto di scelta rapida virtuale si trova nel byte di ordine inferiore e i flag del modificatore sono nel byte di ordine superiore. I flag di modifica possono essere una combinazione dei valori seguenti.
+tasto di scelta rapida del collegamento. Il tasto di scelta rapida virtuale si trova nel byte di ordine più basso e i flag di modifica si trova nel byte più significativo. I flag di modifica possono essere una combinazione dei valori seguenti.
 
 <dt>
 
@@ -49,7 +49,7 @@ tasto di scelta rapida del collegamento. Il tasto di scelta rapida virtuale si t
 
 </dt> <dd>
 
-Tasto MAIUSC
+MAIUSC
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Tasto MAIUSC
 
 </dt> <dd>
 
-Tasto CTRL
+TASTO CTRL
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Chiave estesa
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -131,7 +131,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -220,11 +220,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

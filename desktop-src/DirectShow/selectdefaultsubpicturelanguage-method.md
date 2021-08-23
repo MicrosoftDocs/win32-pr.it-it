@@ -1,15 +1,15 @@
 ---
-description: Il metodo SelectDefaultSubpictureLanguage imposta la lingua dell'immagine predefinita corrente nell'oggetto MSWebDVD.
+description: Il metodo SelectDefaultSubpictureLanguage imposta la lingua dell'immagine secondaria predefinita corrente nell'oggetto MSWebDVD.
 ms.assetid: e83980d1-c7cd-4755-9a27-3b0c2548009e
 title: Metodo SelectDefaultSubpictureLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9d7dd4d66ae9d0580bf863ede9fff1e51d373e2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3aaa6b927d33626299258ac54136e1a67b0dedb40427a35d9c79465be3e9a15d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072585"
 ---
 # <a name="selectdefaultsubpicturelanguage-method"></a>Metodo SelectDefaultSubpictureLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "103746247"
 
  
 
-Il `SelectDefaultSubpictureLanguage` metodo imposta la lingua di immagine predefinita corrente nell'oggetto **mswebdvd** .
+Il `SelectDefaultSubpictureLanguage` metodo imposta la lingua dell'immagine secondaria predefinita corrente nell'oggetto **MSWebDVD.**
 
 ``` syntax
 MSWebDVD.SelectDefaultSubpictureLanguage(iLang,iExt)
@@ -28,17 +28,17 @@ MSWebDVD.SelectDefaultSubpictureLanguage(iLang,iExt)
 
 <dl> <dt>
 
-<span id="iLang"></span><span id="ilang"></span><span id="ILANG"></span>*iLang*
+<span id="iLang"></span><span id="ilang"></span><span id="ILANG"></span>*Ilang*
 </dt> <dd>
 
-Specifica il linguaggio come intero.
+Specifica la lingua come integer.
 
 </dd> <dt>
 
 <span id="iExt"></span><span id="iext"></span><span id="IEXT"></span>*iExt*
 </dt> <dd>
 
-Specifica l'estensione del linguaggio di sottoimmagine come intero.
+Specifica l'estensione del linguaggio dell'immagine secondaria come integer.
 
 
 
@@ -46,15 +46,15 @@ Specifica l'estensione del linguaggio di sottoimmagine come intero.
 |-------|--------------------------------|
 | 0     | Estensione non specificata        |
 | 1     | Didascalie normali                |
-| 2     | Didascalie grandi                   |
-| 3     | Didascalie degli elementi figlio            |
-| 5     | Didascalie normali chiuse         |
-| 6     | Didascalie grandi chiuse            |
-| 7     | Didascalie chiuse degli elementi figlio     |
+| 2     | Big Caption                   |
+| 3     | Didascalie per bambini            |
+| 5     | Sottotitoli codificati normali         |
+| 6     | Sottotitoli codificati grandi            |
+| 7     | Sottotitoli codificati per bambini     |
 | 9     | Forced                         |
-| 13    | Commenti del normale Director     |
+| 13    | Commenti del direttore normale     |
 | 14    | Commenti di Big Director        |
-| 15    | Commenti del direttore per gli elementi figlio |
+| 15    | Commenti del direttore dei bambini |
 
 
 
@@ -68,7 +68,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'estensione del linguaggio di sottoimmagine fornisce ulteriori informazioni sulla sottoimmagine.
+L'estensione del linguaggio delle immagini secondarie fornisce altre informazioni sull'immagine secondaria.
 
  
 

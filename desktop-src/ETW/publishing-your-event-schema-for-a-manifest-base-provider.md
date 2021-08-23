@@ -1,21 +1,21 @@
 ---
-description: I provider basati su manifesto utilizzano un manifesto per pubblicare lo schema per i relativi eventi.
+description: I provider basati su manifesto usano un manifesto per pubblicare lo schema per i relativi eventi.
 ms.assetid: 37d1a504-ecc7-4df3-bf31-546debb62123
 title: Pubblicazione dello schema di eventi per un provider basato su manifesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b4c100dd041d5bd454d8ec64d40fcc9a953d8fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70d2ffd6d991e90ea19d20e78d3d18faff3d24c158d285834b23838b10e78239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069831"
 ---
 # <a name="publishing-your-event-schema-for-a-manifest-based-provider"></a>Pubblicazione dello schema di eventi per un provider basato su manifesto
 
-I provider [basati su manifesto](about-event-tracing.md) utilizzano un manifesto per pubblicare lo schema per i relativi eventi. Il manifesto è incorporato nel file binario del provider, il che significa che il provider deve essere disponibile nel computer per l'utilizzo degli eventi da parte del consumer. Per informazioni dettagliate sulla scrittura di un manifesto, vedere [scrittura di un manifesto di strumentazione](../wes/writing-an-instrumentation-manifest.md).
+[I provider basati su](about-event-tracing.md) manifesto usano un manifesto per pubblicare lo schema per i relativi eventi. Il manifesto è incorporato nel file binario del provider, il che significa che il provider deve essere disponibile nel computer per l'utilizzo degli eventi da parte del consumer. Per informazioni dettagliate complete sulla scrittura di un manifesto, vedere [Scrittura di un manifesto di strumentazione](../wes/writing-an-instrumentation-manifest.md).
 
-Nel manifesto seguente vengono definiti gli eventi utilizzati negli esempi della sezione [fornitura](providing-events.md) di eventi e di [eventi di utilizzo](consuming-events.md) del documento.
+Il manifesto seguente definisce gli eventi usati negli esempi nella sezione Fornire eventi [ed](providing-events.md) eventi [di](consuming-events.md) utilizzo del documento.
 
 ``` syntax
 <!-- <?xml version="1.0" encoding="UTF-16"?> -->

@@ -1,177 +1,177 @@
 ---
-title: Usabilità nella progettazione del software
-description: In questo argomento viene introdotto il concetto di usabilità e il motivo per cui deve essere una parte importante di qualsiasi progetto di progettazione software.
+title: Usabilità nella progettazione software
+description: Questo argomento introduce il concetto di usabilità e il motivo per cui deve essere una parte importante di qualsiasi progetto di progettazione software.
 ms.assetid: 912b3224-e36d-44d6-98fa-a7f28e68a2d0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b302e63a475d060748e896440b28915816d910e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 482fd749a797c58656d987e1bde9e995ac58b8fdf98a6c056cd327e846665749
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589131"
 ---
-# <a name="usability-in-software-design"></a>Usabilità nella progettazione del software
+# <a name="usability-in-software-design"></a>Usabilità nella progettazione software
 
-In questo argomento viene introdotto il concetto di usabilità e il motivo per cui deve essere una parte importante di qualsiasi progetto di progettazione software.
+Questo argomento introduce il concetto di usabilità e il motivo per cui deve essere una parte importante di qualsiasi progetto di progettazione software.
 
 -   [Introduzione](#introduction)
 -   [Definizione dell'usabilità](#defining-usability)
-    -   [Semplicità d'uso](#ease-of-use)
+    -   [Facilità d'uso](#ease-of-use)
     -   [Usabilità e utilità](#usability-vs-utility)
-    -   [Gradimento rispetto al suo utilizzo](#liking-it-vs-using-it)
-    -   [Confronto tra individuazione e apprendimento e efficienza](#discovery-vs-learning-vs-efficiency)
-    -   [Gli sloganti non funzionano](#slogans-do-not-work)
+    -   [Gradimento rispetto all'uso](#liking-it-vs-using-it)
+    -   [Confronto tra individuazione e Learning'efficienza](#discovery-vs-learning-vs-efficiency)
+    -   [Gli slogan non funzionano](#slogans-do-not-work)
 -   [Perché l'usabilità è importante?](#why-is-usability-important)
-    -   [Perché è necessario prestare attenzione?](#why-should-you-care)
+    -   [Perché è opportuno?](#why-should-you-care)
     -   [Qual è il costo?](#what-does-it-cost)
-    -   [Come è possibile aumentare l'usabilità?](#how-do-i-increase-usability)
-    -   [Perché è necessario coinvolgere gli utenti?](#why-should-i-involve-users)
+    -   [Come si aumenta l'usabilità?](#how-do-i-increase-usability)
+    -   [Perché è consigliabile coinvolgere gli utenti?](#why-should-i-involve-users)
     -   [Non è possibile seguire solo le linee guida?](#cant-i-just-follow-guidelines)
-    -   [È necessario creare un Lab di usabilità?](#do-i-need-to-build-a-usability-lab)
-    -   [Come iniziare?](#how-do-i-get-started)
+    -   [È necessario creare un lab di usabilità?](#do-i-need-to-build-a-usability-lab)
+    -   [Come si Informazioni di base?](#how-do-i-get-started)
 
 ## <a name="introduction"></a>Introduzione
 
-Il termine "usabilità" nel contesto della creazione di software rappresenta un approccio che inserisce l'utente, invece del sistema, al centro del processo. Questa filosofia, nota come progettazione incentrata sull'utente, incorpora le preoccupazioni degli utenti e il patrocinio fin dall'inizio del processo di progettazione e impone che le esigenze dell'utente siano quelle più importanti di tutte le decisioni di progettazione.
+Il termine "usabilità" nel contesto della creazione di software rappresenta un approccio che pone l'utente, anziché il sistema, al centro del processo. Questa filosofia, nota come progettazione centrata sull'utente, incorpora le preoccupazioni degli utenti e la difesa fin dall'inizio del processo di progettazione e impone che le esigenze dell'utente siano le più importanti di qualsiasi decisione di progettazione.
 
-L'aspetto più visibile di questo approccio è il test di usabilità, in cui gli utenti lavorano e interagiscono con l'interfaccia del prodotto e condividono le proprie opinioni e le proprie preoccupazioni con i progettisti e gli sviluppatori.
+L'aspetto più visibile di questo approccio è il test di usabilità, in cui gli utenti lavorano e interagiscono con l'interfaccia del prodotto e condividono le proprie opinioni e preoccupazioni con i progettisti e gli sviluppatori.
 
 ## <a name="defining-usability"></a>Definizione dell'usabilità
 
-La sezione definisce il significato dell'usabilità nel contesto dello sviluppo del software e il modo in cui si riferisce ad altri aspetti del processo di sviluppo.
+La sezione definisce il significato dell'usabilità nel contesto dello sviluppo software e la relativa relazione con altri aspetti del processo di sviluppo.
 
-### <a name="ease-of-use"></a>Semplicità d'uso
+### <a name="ease-of-use"></a>Facilità d'uso
 
-L'usabilità è una misura della semplicità con cui è possibile utilizzare un prodotto per eseguire le attività prescritte. Si tratta di un'operazione distinta rispetto ai concetti correlati di utilità e affinità.
+L'usabilità è una misura di quanto sia semplice usare un prodotto per eseguire attività prescritte. Questo è diverso dai concetti correlati di utilità e likeability.
 
 ### <a name="usability-vs-utility"></a>Usabilità e utilità
 
-Un attributo centrale che determina la qualità di un prodotto è utile. Questo consente di determinare se gli utilizzi effettivi di un prodotto possono raggiungere gli obiettivi che i progettisti desiderano ottenere. Il concetto di utilità si ramifica ulteriormente nell'utilità e nell'usabilità. Sebbene questi termini siano correlati, non sono intercambiabili.
+Un attributo centrale che determina la qualità di un prodotto è l'utilità. Questo misura se gli usi effettivi di un prodotto possono raggiungere gli obiettivi che i progettisti intendono raggiungere. Il concetto di utilità si ramifica ulteriormente nell'utilità e nell'usabilità. Anche se questi termini sono correlati, non sono intercambiabili.
 
-L'utilità si riferisce alla capacità del prodotto di eseguire un'attività o un'attività. Maggiore è il numero di attività che il prodotto è progettato per eseguire, maggiore è l'utilità.
+L'utilità si riferisce alla capacità del prodotto di eseguire una o più attività. Maggiore è il numero di attività progettate per l'esecuzione del prodotto, maggiore è l'utilità.
 
-Prendere in considerazione i tipici processori Microsoft MS-DOS a partire dal tardo 1980. Tali programmi forniscono molte potenti funzionalità di modifica e manipolazione del testo, ma gli utenti devono apprendere e ricordare decine di sequenze di tasti Arcane per eseguirle. Per le applicazioni come queste si può affermare che l'utilità è elevata (forniscono agli utenti la funzionalità necessaria) ma con una bassa usabilità (gli utenti devono dedicare molto tempo e lavoro per apprendere e usare). Al contrario, un'applicazione semplice e ben progettata, ad esempio una calcolatrice, può essere molto facile da utilizzare, ma non offre molta utilità.
+Si considerino i tipici elaboratori di testo Microsoft MS-DOS della fine degli anni '80. Tali programmi hanno fornito molte potenti funzionalità di modifica e manipolazione del testo, ma richiedevano agli utenti di apprendere e ricordare decine di sequenze di tasti di carattere in grado di eseguirle. Applicazioni come queste possono essere usate con un'utilità elevata (offrono agli utenti la funzionalità necessaria) ma una usabilità bassa (gli utenti devono dedicare molto tempo e impegno per apprendere e usarle). Al contrario, un'applicazione semplice e ben progettata, ad esempio una calcolatrice, può essere molto semplice da usare, ma non offrire molta utilità.
 
-Entrambe le qualità sono necessarie per l'accettazione del mercato ed entrambe fanno parte del concetto generale di utilità. Ovviamente, se un programma è altamente utilizzabile ma non esegue alcuna operazione di valore, nessuno lo utilizzerà. E gli utenti che presentano un potente programma che è difficile da usare probabilmente resisteranno o cercheranno alternative.
+Entrambe le qualità sono necessarie per l'accettazione del mercato ed entrambe fanno parte del concetto generale di utilità. Ovviamente, se un programma è altamente utilizzabile ma non ha alcun valore, nessuno lo userà. E gli utenti che hanno presentato un potente programma difficile da usare probabilmente resistono o cercano alternative.
 
-Il test di usabilità consente di determinare la semplicità con cui gli utenti possono eseguire determinate attività. Tuttavia, non consente di determinare direttamente se il prodotto stesso ha valore o utilità. (Gli utenti possono fare volontariamente commenti relativi all'utilità durante i test di usabilità, ma i commenti devono essere verificati con altri metodi di ricerca più affidabili).
+I test di usabilità consentono di determinare quanto sia semplice per gli utenti eseguire determinate attività. Tuttavia, non consente direttamente di determinare se il prodotto stesso ha valore o utilità. Gli utenti possono aggiungere commenti correlati all'utilità durante i test di usabilità, ma qualsiasi commento deve essere verificato con altri metodi di ricerca più affidabili.
 
-### <a name="liking-it-vs-using-it"></a>Gradimento rispetto al suo utilizzo
+### <a name="liking-it-vs-using-it"></a>Gradimento rispetto all'uso
 
-La somiglianza è sempre un tratto auspicabile in un prodotto. Se persone come il prodotto, è più probabile utilizzarlo e consigliarlo ad altri utenti. Tuttavia, come per l'utilità, è necessario prestare attenzione a non confondere la somiglianza con l'usabilità.
+La likeability è sempre un tratto auspicabile in un prodotto. Se gli utenti come il prodotto, è più probabile che lo usino e lo consiglino ad altri utenti. Come per l'utilità, è tuttavia consigliabile prestare attenzione a non confondere la likeability con l'usabilità.
 
-Spesso, come un prodotto, per i motivi non correlati all'utilità e all'usabilità. Possono essere attratti dallo stile o dallo stato in cui ritengono che il prodotto conferisca loro. Si tratta in genere di prodotti altamente utilizzabili, ma è preferibile non presupporre che un prodotto ben apprezzato sia utilizzabile.
+Agli utenti piace spesso un prodotto per motivi non correlati all'utilità e all'usabilità. Possono essere attratti dal suo stile o allo stato che ritiene che il prodotto conferirà loro. Gli utenti in genere desiderano prodotti altamente utilizzabili, ma non è consigliabile presupporre che un prodotto ben apprezzato sia utilizzabile.
 
-L'usabilità indica se un utente può utilizzare il prodotto per eseguire le attività che devono eseguire. Il test di usabilità misura principalmente le prestazioni, non le preferenze. Tuttavia, i questionari standardizzati possono essere usati per misurare le preferenze tra i prodotti.
+L'usabilità indica se una persona può usare il prodotto per eseguire le attività che devono eseguire. I test di usabilità misurano principalmente le prestazioni, non le preferenze. È tuttavia possibile usare questionari standardizzati per misurare le preferenze tra i prodotti.
 
-### <a name="discovery-vs-learning-vs-efficiency"></a>Confronto tra individuazione e apprendimento e efficienza
+### <a name="discovery-vs-learning-vs-efficiency"></a>Confronto tra individuazione e Learning'efficienza
 
 Esistono molti aspetti dell'usabilità, ma tradizionalmente il termine si riferisce in modo specifico agli attributi di individuazione, apprendimento ed efficienza.
 
--   L'individuazione implica la ricerca e la ricerca della funzionalità di un prodotto in risposta a una particolare esigenza. I test di usabilità possono determinare il tempo impiegato da un utente per trovare una funzionalità e il numero di errori (scelte errate relative al percorso) che l'utente esegue lungo il percorso.
--   L'apprendimento si riferisce al processo in base al quale l'utente comprende come utilizzare una funzionalità individuata per completare un'attività. I test di usabilità possono determinare il tempo impiegato da questo processo e anche il numero di errori che l'utente effettua durante l'apprendimento della funzionalità.
--   L'efficienza indica il punto in cui l'utente ha "padroneggiato" la funzionalità e la utilizza senza richiedere ulteriore apprendimento. I test di usabilità possono determinare il tempo impiegato dall'utente esperto per eseguire i passaggi necessari per l'uso della funzionalità.
+-   L'individuazione comporta la ricerca e la ricerca della funzionalità di un prodotto in risposta a una particolare esigenza. I test di usabilità possono determinare il tempo necessario a un utente per trovare una funzionalità e il numero di errori (scelte erre sulla posizione) che l'utente effettua lungo la strada.
+-   Learning si riferisce al processo tramite il quale l'utente comprende come usare una funzionalità individuata per completare un'attività. I test di usabilità possono determinare il tempo necessario per questo processo e anche il numero di errori commersi dall'utente durante l'apprendimento della funzionalità.
+-   L'efficienza si riferisce al punto in cui l'utente ha "masterato" la funzionalità e la usa senza richiedere altre informazioni. I test di usabilità possono determinare il tempo necessario all'utente esperto per eseguire i passaggi necessari per usare la funzionalità.
 
-Questi tre aspetti di base dell'usabilità sono fortemente influenzati dalla natura dell'attività e dalla frequenza con cui l'utente lo esegue. Alcune funzionalità vengono usate raramente o sono così complesse che l'utente li riapprende ogni volta; per queste funzionalità, Microsoft sviluppa spesso procedure guidate per guidare l'utente durante il processo.
+Questi tre aspetti di base dell'usabilità sono fortemente influenzati dalla natura dell'attività in fase di esecuzione e dalla frequenza con cui l'utente la esegue. Alcune funzionalità vengono usate raramente o sono così complesse che l'utente essenzialmente le rileva ogni volta; Per queste funzionalità, Microsoft sviluppa spesso procedure guidate per guidare l'utente nel processo.
 
-### <a name="slogans-do-not-work"></a>Gli sloganti non funzionano
+### <a name="slogans-do-not-work"></a>Gli slogan non funzionano
 
-Gli sviluppatori di software a volte pensano che semplici sloganti come "rendere più usabile il prodotto" contribuiscano a risolvere i problemi di usabilità. Anche se un atteggiamento positivo verso l'usabilità è importante, solo i test di usabilità appropriati con utenti normali, nel contesto del prodotto specifico creato, possono fornire agli sviluppatori le informazioni necessarie per creare un prodotto che soddisfi le esigenze degli utenti. "Rendere il prodotto più utilizzabile" deve essere lo slogante di ogni sviluppatore di software, ma ha senso solo se lo sviluppatore conosce il significato dell'usabilità. Il test con utenti normali è il modo più affidabile per scoprirlo.
+Gli sviluppatori di software a volte pensano che semplici parole d'ordine come "rendere il prodotto più utilizzabile" possano aiutare a risolvere i problemi di usabilità. Anche se è importante un atteggiamento positivo verso l'usabilità, solo i test di usabilità adeguati con gli utenti comuni, nel contesto del prodotto specifico in fase di creazione, possono fornire agli sviluppatori le informazioni necessarie per creare un prodotto in grado di soddisfare le esigenze degli utenti. "Rendere il prodotto più utilizzabile" dovrebbe essere lo strumento di ogni sviluppatore di software, ma ha senso solo se lo sviluppatore sa cosa significa usabilità. Il test con gli utenti comuni è il modo più affidabile per scoprirlo.
 
 ## <a name="why-is-usability-important"></a>Perché l'usabilità è importante?
 
-La sezione risponde ad alcune domande comuni sul motivo per cui l'usabilità è importante e su come incorporare i principi di progettazione centrati sull'utente nel processo di sviluppo.
+La sezione risponde ad alcune domande comuni sull'importanza dell'usabilità e su come incorporare principi di progettazione centrati sull'utente nel processo di sviluppo.
 
-### <a name="why-should-you-care"></a>Perché è necessario prestare attenzione?
+### <a name="why-should-you-care"></a>Perché è opportuno?
 
-Se le considerazioni sull'usabilità non sono già state incorporate nel processo di progettazione del prodotto, è possibile chiedersi perché sia necessario o auspicabile. Dopo tutto, è certamente possibile rilasciare un prodotto funzionante, privo di bug senza eseguire alcuna operazione di usabilità. Tuttavia, l'integrazione di principi di progettazione centrati sugli utenti può causare un prodotto molto migliorato in diverse aree.
+Se le considerazioni sull'usabilità non sono già state incorporate nel processo di progettazione del prodotto, ci si potrebbe chiedere perché è necessario o auspicabile. Dopo tutto, è certamente possibile rilasciare un prodotto funzionante senza bug senza eseguire alcuna operazione di usabilità. Tuttavia, l'incorporamento di principi di progettazione centrati dall'utente può portare a un prodotto molto migliorato in diverse aree.
 
-Il motivo migliore per eseguire i test di usabilità consiste nel ridurre il numero di chiamate di supporto da parte degli utenti. Una cattiva usabilità è il motivo principale per cui gli utenti chiamano le linee di supporto tecnico software e ogni responsabile aziendale e Information Services Manager sa quanto può essere il supporto del prodotto costoso. Inoltre, l'addebito degli utenti per il supporto aumenta la potenziale insoddisfazione del prodotto. Se gli utenti trovano un prodotto facile da usare, non dovranno chiamare il supporto tecnico come spesso.
+Il motivo migliore per eseguire test di usabilità è ridurre il numero di chiamate di supporto degli utenti. La scarsa usabilità è un motivo principale per cui gli utenti chiamano linee di supporto tecnico software e ogni responsabile della società di software e di Information Services sa quanto può essere costoso il supporto dei prodotti. Inoltre, l'addebito degli utenti per il supporto aumenta la potenziale insoddisfazione per il prodotto. Se gli utenti trovano facile usare il prodotto, non dovranno chiamare il supporto tecnico con la frequenza necessaria.
 
-Per il software prodotto per uso interno, il prossimo motivo migliore per rendere l'usabilità una parte importante del processo di sviluppo consiste nel ridurre i costi di training. Un prodotto altamente utilizzabile è molto più semplice per gli utenti che ne apprendano una per cui l'usabilità non è una priorità elevata. Gli utenti apprenderanno più rapidamente le funzionalità e manterranno più a lungo le proprie conoscenze, correlate direttamente a costi e tempi di formazione ridotti.
+Per il software prodotto per uso interno, il motivo migliore per rendere l'usabilità una parte importante del processo di sviluppo è ridurre i costi di training. Un prodotto altamente utilizzabile è molto più facile da apprendere per gli utenti rispetto a un prodotto per cui l'usabilità non era una priorità elevata. Gli utenti apprendono le funzionalità più rapidamente e mantengono le proprie conoscenze più a lungo, il che è direttamente correlato alla riduzione dei costi di training e del tempo.
 
-Il test di usabilità aiuta a migliorare l'accettazione dell'utente. Risultati dell'accettazione da diversi fattori, tra cui usabilità, utilità e somiglianza. Per i prodotti per la vendita al dettaglio, l'accettazione da parte degli utenti spesso è direttamente correlata all'acquisto ripetuto o alla fedeltà, il che significa che l'utente può consigliare il prodotto ad altri utenti. Per le applicazioni interne, l'accettazione dell'utente è correlata alla volontà di utilizzare il software per eseguire le attività per le quali è stato progettato, consentendo di aumentare la produttività. L'aumento dell'usabilità è uno dei fattori che possono contribuire a una maggiore accettazione dell'utente.
+I test di usabilità consentono di migliorare l'accettazione dell'utente. L'accettazione deriva da diversi fattori, tra cui usabilità, utilità e likeability. Per i prodotti al dettaglio, l'accettazione dell'utente spesso correla direttamente l'acquisto ripetuto o la fedeltà, il che significa che è probabile che l'utente consigli il prodotto ad altri utenti. Per le applicazioni interne, l'accettazione da parte dell'utente è correlata alla disponibilità a usare il software per eseguire le attività per le quali è stato progettato, in modo da aumentare la produttività. L'aumento dell'usabilità è uno dei fattori che possono contribuire a una maggiore accettazione da parte degli utenti.
 
-L'usabilità può contribuire a distinguere i prodotti da quelli dei concorrenti. Se due prodotti sono sostanzialmente uguali in utilità, il prodotto con una migliore usabilità sarà probabilmente considerato superiore. Inoltre, le linee guida per la programmazione e l'aspetto di Windows hanno livellato il campo di gioco per l'interfaccia utente di base, in modo che molti programmi che svolgono funzioni simili abbiano un aspetto analogo. Queste analogie significano che le piccole differenze nell'usabilità possono avere un effetto significativo sulle preferenze dell'utente.
+L'usabilità può aiutare a distinguere i prodotti da quelli dei concorrenti. Se due prodotti sono sostanzialmente uguali nell'utilità, il prodotto con usabilità migliore sarà probabilmente considerato superiore. Inoltre, le Windows di programmazione di base hanno livellato il campo di gioco per l'interfaccia utente di base, in modo che molti programmi che servono funzioni simili hanno un aspetto e un'azione simili. Queste analogie significano che piccole differenze nell'usabilità possono avere un grande effetto sulle preferenze dell'utente.
 
-Infine, ogni prodotto viene testato per la loro usabilità alla fine. Gli utenti eseguono test di usabilità sul prodotto ogni volta che lo usano e rendono il loro verdetto attraverso l'uso continuato o la loro mancanza. Testare il prodotto prima di rilasciarlo sul mercato può contribuire a garantire che le esperienze degli utenti con il prodotto siano positive.
+Infine, ogni prodotto viene testato per l'usabilità alla fine. Gli utenti eseguono test di usabilità sul prodotto ogni volta che lo usano e eseguono il loro verdetto attraverso il loro uso continuo o la loro mancanza. Testare il prodotto prima di rilasciarlo sul mercato può contribuire a garantire che le esperienze degli utenti con il prodotto siano positive.
 
 ### <a name="what-does-it-cost"></a>Qual è il costo?
 
-Gli sviluppatori di software e i Project Manager temono spesso che l'avvio di un processo di progettazione centrato dall'utente e l'esecuzione di test di usabilità appropriati richiedano quantità inaccettabili di tempo e denaro. La realtà è che il costo nel tempo e il denaro impiegato per concentrarsi sull'utente sono spesso relativamente ridotti e, di conseguenza, rispetto al costo di non farlo.
+Gli sviluppatori di software e i project manager spesso si preoccupano che l'avvio di un processo di progettazione centrato su utenti e l'esecuzione di test di usabilità adeguati richiedano quantità inaccettabili di tempo e denaro. La realtà è che il costo in tempo e denaro speso per concentrarsi sull'utente è spesso relativamente ridotto, e certamente lo è rispetto al costo di non farlo.
 
-Si consideri, ad esempio, il costo nel tempo e il denaro necessario per apportare le revisioni di progettazione in ritardo nel ciclo di sviluppo rispetto a quello precedente, quando il prodotto si trova ancora nella lavagna. L'attesa fino al periodo beta per esporre gli utenti al prodotto per scopi di test di usabilità può comportare lo smantellamento di parti del programma che hanno richiesto molto tempo per lo sviluppo. E in attesa fino a quando il prodotto non viene rilasciata e quindi apportando modifiche in base a commenti negativi o al supporto di un progetto di scarsa qualità potrebbe rendere il costo incommensurabilmente più elevato a causa di costi elevati di supporto del prodotto o di una ricezione scadente
+Si consideri, ad esempio, il costo in tempo e denaro necessario per eseguire revisioni di progettazione in ritardo nel ciclo di sviluppo anziché in precedenza, quando il prodotto è ancora in tavola. L'attesa del periodo beta per esporre gli utenti al prodotto ai fini dei test di usabilità può comportare lo smontaggio di parti del programma che hanno richiesto molto tempo per lo sviluppo. E attendere che il prodotto sia effettivamente rilasciato e quindi apportare modifiche basate su feedback negativi o sul supporto di una progettazione scadente potrebbe rendere il costo notevolmente superiore a causa di costi elevati per il supporto del prodotto o di scarsa ricezione da parte degli utenti.
 
-Uno studio di usabilità ragionevole può essere in genere eseguito in circa due settimane o meno e può ridurre notevolmente il tempo e il costo di apportare modifiche in ritardo nel ciclo di sviluppo. Il costo dell'esecuzione dei test varia a seconda della natura del prodotto e delle parti dell'interfaccia sottoposte a test.
+Uno studio di usabilità ragionevole può in genere essere eseguito in circa due settimane o meno e può ridurre notevolmente il tempo e il costo delle modifiche in ritardo nel ciclo di sviluppo. Il costo dell'esecuzione dei test varia a seconda della natura del prodotto e delle parti dell'interfaccia testate.
 
-Il test di usabilità può essere considerato analogo al test del codice. Account Project Manager riusciti per il test del codice durante la pianificazione di un progetto di sviluppo. Non vengono visualizzati come elementi aggiuntivi che devono essere apportati alla pianificazione del progetto e al budget. I Project Manager accettano i test di codice come costo per l'attività aziendale perché l'alternativa è molto più costosa. Lo stesso vale per i test di usabilità.
+I test di usabilità sono simili ai test del codice. I project manager hanno esito positivo per il test del codice durante la pianificazione di un progetto di sviluppo. Non lo vedono come qualcosa in più che deve essere intasato nella pianificazione del progetto e nel budget. I project manager accettano invece il test del codice come costo dell'attività aziendale perché l'alternativa è molto più costosa. Lo stesso vale per i test di usabilità.
 
-### <a name="how-do-i-increase-usability"></a>Come è possibile aumentare l'usabilità?
+### <a name="how-do-i-increase-usability"></a>Come si aumenta l'usabilità?
 
-Durante la lettura e la comprensione dell'importanza dell'usabilità, gli sviluppatori di software sono talvolta tentati di aggiungere usabilità, come se si trattasse di un ingrediente che può essere semplicemente aggiunto a un prodotto per renderlo più utilizzabile. L'usabilità, invece, deve far parte del processo di progettazione, anziché di una "cosa" aggiunta al processo qui o. Il motivo per cui gli esperti di usabilità fanno riferimento a "Focus utente" e "progettazione centrata sull'utente" è che l'usabilità dipende dal modo in cui le esigenze degli utenti sono fondamentali per il processo di progettazione. La progettazione incentrata sull'utente per necessità comporta più di quanto segue un set di regole che controllano la posizione di pulsanti e menu in un'interfaccia. Il test di usabilità è un'opportunità per verificare il lavoro di progettazione. Non è possibile aggiungere l'usabilità a un prodotto.
+Quando si legge e si comprende l'importanza dell'usabilità, gli sviluppatori di software talvolta sono tentati di aggiungere l'usabilità, come se fosse un ingrediente che può essere semplicemente aggiunto a un prodotto per renderlo più utilizzabile. Al contrario, l'usabilità deve far parte del processo di progettazione stesso, anziché una "cosa" che viene aggiunta al processo qui o in quel punto. Il motivo per cui gli esperti di usabilità si riferiscono a "attenzione dell'utente" e "progettazione incentrata sull'utente" è che l'usabilità dipende dal mantenimento delle esigenze degli utenti centrali per il processo di progettazione. La progettazione centrata sull'utente per necessità non implica solo la semplice esecuzione di un set di regole che regolano il posizionamento di pulsanti e menu in un'interfaccia. I test di usabilità sono un'opportunità per controllare il lavoro di progettazione. Non è un modo per "aggiungere" l'usabilità a un prodotto.
 
-Gould, Boies e Lewis (1991) identificano quattro principi importanti della progettazione centrata sull'utente:
+Gould, Boies e Lewis (1991) identificano quattro importanti set di progettazione centrati su utenti:
 
--   Primo interesse per gli utenti.
+-   Concentrarsi in anticipo sugli utenti.
 
-    Gli sviluppatori devono concentrarsi sulla comprensione delle esigenze degli utenti nelle fasi iniziali del processo di progettazione.
+    Gli sviluppatori devono concentrarsi sulla comprensione delle esigenze degli utenti nelle prime fasi del processo di progettazione.
 
 -   Progettazione integrata.
 
-    Tutti gli aspetti della progettazione dovrebbero evolversi in parallelo, anziché in sequenza. Mantiene la struttura interna del prodotto coerente con le esigenze dell'interfaccia utente.
+    Tutti gli aspetti della progettazione devono evolversi in parallelo, anziché in sequenza. Mantenere la progettazione interna del prodotto coerente con le esigenze dell'interfaccia utente.
 
--   Test tempestivi e continui.
+-   Test anticipati e continui.
 
-    L'unico approccio attualmente praticabile alla progettazione del software è uno empirico: il progetto funziona se gli utenti reali decidono che funziona. L'incorporamento dei test di usabilità durante il processo di sviluppo offre agli utenti la possibilità di fornire commenti e suggerimenti sulla progettazione prima del rilascio del prodotto.
+    L'unico approccio attualmente fattibile alla progettazione software è empirico: la progettazione funziona se gli utenti reali ne decidono il funzionamento. L'incorporamento dei test di usabilità durante il processo di sviluppo offre agli utenti la possibilità di fornire feedback sulla progettazione prima del rilascio del prodotto.
 
 -   Progettazione iterativa.
 
-    I problemi principali spesso mascherano piccoli problemi. I progettisti e gli sviluppatori devono modificare il progetto in modo iterativo tramite cicli di test.
+    I problemi di grandi dimensioni spesso mascherano i problemi di piccole dimensioni. I progettisti e gli sviluppatori devono rivedere la progettazione in modo iterativo tramite round di test.
 
-### <a name="why-should-i-involve-users"></a>Perché è necessario coinvolgere gli utenti?
+### <a name="why-should-i-involve-users"></a>Perché è consigliabile coinvolgere gli utenti?
 
-Gli sviluppatori dovrebbero riconoscere che non sono utenti tipici. Hanno una conoscenza più approfondita e una migliore comprensione del sistema che stanno sviluppando rispetto alla media dell'utente. Gli aspetti dell'interfaccia che risultano poco chiari o confusi per la maggior parte degli utenti possono quindi essere perfettamente chiari per qualcuno che ha lavorato al progetto. Alcuni sviluppatori di software sono in grado di entrare in empatia con l'utente medio a un certo livello, ma non vi è alcun sostituto per le interazioni reali degli utenti effettivi con il prodotto.
+Gli sviluppatori devono riconoscere che non sono utenti tipici. Hanno una conoscenza e una comprensione più approfondita del sistema che stanno sviluppando rispetto all'utente medio. Gli aspetti dell'interfaccia poco chiari o confusi per la maggior parte degli utenti potrebbero quindi essere perfettamente chiari per qualcuno che ha lavorato al progetto. Alcuni sviluppatori di software sono in grado di empatizzare con l'utente medio fino a un certo punto, ma non esiste alcun sostituto per le interazioni reali degli utenti effettivi con il prodotto.
 
-Di conseguenza, concentrandosi sulle esigenze tipiche degli utenti in modo tempestivo e rivedendo la progettazione in base ai test degli utenti, gli sviluppatori di software incentrati sugli utenti producono soluzioni migliori e, di conseguenza, migliori prodotti.
+Di conseguenza, concentrandosi sulle esigenze degli utenti tipiche in anticipo e rivedendo la progettazione basata spesso sui test degli utenti, gli sviluppatori software incentrati sugli utenti producono progettazioni migliori e, di conseguenza, prodotti migliori.
 
-Con una progettazione migliore, l'accettazione degli utenti è migliore. Il vantaggio del software per la vendita al dettaglio è evidente: aumento delle vendite. L'accettazione è importante anche per quanto riguarda il software sviluppato per l'uso interno: il miglioramento della progettazione centrata sugli utenti comporta un aumento della produttività e una riduzione della necessità di supporto. Il coinvolgimento evidente degli utenti dall'inizio dello sviluppo Mostra anche un interesse per le proprie esigenze e le loro esigenze, che aumentano la loro volontà di aiutare nel lavoro di sviluppo.
+Con una progettazione migliore viene fornita una migliore accettazione da parte degli utenti. Il vantaggio del software per la vendita al dettaglio è ovvio: aumento delle vendite. L'accettazione è importante anche con il software sviluppato per l'uso interno: una maggiore attenzione alla progettazione incentrata sull'utente comporta una maggiore produttività e una minore necessità di supporto. Coinvolgere visibilmente gli utenti fin dall'inizio dello sviluppo dimostra anche un interesse per le proprie esigenze e preoccupazioni, il che aumenta la disponibilità a contribuire allo sviluppo.
 
-### <a name="cant-i-just-follow-guidelines"></a>Non è possibile seguire solo le linee guida?
+### <a name="cant-i-just-follow-guidelines"></a>Non è possibile seguire semplicemente le linee guida?
 
-Microsoft ha sviluppato un set di linee guida per l'interfaccia per la piattaforma Windows computing per garantire che i programmi Windows abbiano un aspetto coerente. Altre aziende hanno sviluppato linee guida simili per altre piattaforme di elaborazione e gli esperti di usabilità come Jakob Nielsen hanno scritto ampiamente sulla progettazione di pagine Web utilizzabili. Con la grande quantità di informazioni disponibili in questi argomenti, i progettisti a volte ritengono che la rigorosa aderenza a linee guida e standard sia sufficiente per produrre prodotti utilizzabili.
+Microsoft ha sviluppato un set di linee guida di interfaccia per la piattaforma Windows computing per garantire che i programmi Windows hanno un aspetto coerente. Altre aziende hanno sviluppato linee guida simili per altre piattaforme informatiche ed esperti di usabilità come Jakob Nielsen hanno scritto ampiamente sulla progettazione di pagine Web utilizzabili. Con la grande quantità di informazioni disponibili su questi argomenti, i progettisti a volte ritengono che la rigorosa aderenza alle linee guida e agli standard sia tutto ciò che è necessario per produrre prodotti utilizzabili.
 
-Il problema di questo approccio è che le linee guida sono intrinsecamente generali. Le linee guida devono essere valide per un'ampia gamma di casi e pertanto non sempre prevedono la migliore linea di azione per la particolare applicazione in fase di sviluppo. L'adesione a un set di linee guida ben scritto può risultare utile nella progettazione di un'interfaccia coerente, ma non può garantire la usablility, a meno che non venga testato con utenti reali. Quando si usano le linee guida, non usarle come un Cookbook, in cui le linee guida indicano il modo migliore di tutti i risultati. Due sviluppatori possono implementare le stesse linee guida in due modi diversi ed entrambe le implementazioni potrebbero non essere ugualmente appropriate per la situazione. Occasionalmente, una rigorosa aderenza alle linee guida può causare scarsi risultati o conflitti tra le linee guida. Solo la progettazione centrata sull'utente può contribuire a scaricare questi problemi prima che diventino problemi.
+Il problema di questo approccio è che le linee guida sono intrinsecamente generali. Le linee guida devono essere applicabili a un'ampia gamma di casi e pertanto non sempre prescrivere il miglior corso di azione per la particolare applicazione in fase di sviluppo. L'aderenza a un set ben scritto di linee guida può essere utile nella progettazione di un'interfaccia coerente, ma non può garantire la sua usablility a meno che non venga testata con utenti reali. Quando si usano le linee guida, non usarle come un libro di riferimento in cui le linee guida puntano verso il meglio di tutti i risultati. Due sviluppatori possono implementare la stessa linea guida in due modi diversi ed entrambe le implementazioni potrebbero non essere ugualmente appropriate per la situazione. In alcuni casi, una rigorosa aderenza alle linee guida può portare a risultati scarsi o a conflitti tra le linee guida. Solo la progettazione basata su utenti può contribuire a risolvere questi problemi prima che diventino problemi.
 
-Un altro modo per considerare questo problema è: lasciare che la progettazione incentrata sull'utente sia l'arbitro delle decisioni di progettazione, non le linee guida dell'interfaccia utente.
+Un altro modo di pensare a questo è: consentire alla progettazione centrata sull'utente di essere l'arbitraggio delle decisioni di progettazione, non delle linee guida dell'interfaccia utente.
 
-### <a name="do-i-need-to-build-a-usability-lab"></a>È necessario creare un Lab di usabilità?
+### <a name="do-i-need-to-build-a-usability-lab"></a>È necessario creare un lab di usabilità?
 
-Non presupporre che i test di usabilità significhino eseguire il commit in un Lab costoso, con fotocamere montate a soffitto, Mirror unidirezionali e altre intercettazioni di gruppi di interesse. Per essere certi, le aziende che eseguono molti test spesso risultano utili per creare laboratori dedicati e i consulenti di usabilità spesso hanno un'ampia gamma di strutture e attrezzature per offrire i loro clienti. Tuttavia, un test di usabilità valido può essere eseguito in un'ampia gamma di impostazioni e circostanze.
+Non presupporre che il test di usabilità significhi eseguire il commit in un costoso lab, con fotocamere montate su un controsoffitto, mirror unidirevi e altri strumenti di gruppo di messa a fuoco. Per essere certi che le aziende che esercitino molti test spesso trovino comodo creare lab dedicati e i consulenti per l'usabilità hanno spesso un'ampia gamma di strutture e apparecchiature per offrire ai propri clienti. È tuttavia possibile eseguire test di usabilità validi e utili in un'ampia gamma di impostazioni e circostanze.
 
-Un approccio consiste nel disporre semplicemente di un tester? un utente che ha effettuato ricerche e la raccolta di dati da parte di un utente, si trova dietro un utente mentre lavora e osserva le attività eseguite dall'utente. Questa operazione può essere eseguita facilmente in una sala riunioni o in un ufficio. Per altre informazioni sui test per osservazione, vedere la voce relativa a Dumas e redish in [altre risorse](other-resources.md).
+Un approccio consiste nell'avere semplicemente un tester?qualcuno esperto nell'esecuzione di studi sui partecipanti umani e nella raccolta di dati?siede dietro un utente mentre lavora e osserva l'utente che esegue le attività. Questa operazione può essere eseguita facilmente in una sala riunioni o in un ufficio. Per altre informazioni sui test tramite osservazione, vedere la voce Dumas e Redish in [Altre risorse](other-resources.md).
 
-Poiché i test di usabilità si sviluppano e diventano più necessari, è possibile aggiungere apparecchiature quali una videocamera, un mirror unidirezionale o strumenti che consentono di visualizzare e registrare il monitoraggio di un utente in tempo reale.
+Quando i test di usabilità si sviluppano e diventano più coinvolti, è possibile aggiungere apparecchiature come una videocamera, un mirror unidiredireale o strumenti che consentono di visualizzare e registrare il monitoraggio di un utente in tempo reale.
 
-In alternativa, è possibile esternalizzare i test ai consulenti di usabilità. La sezione seguente contiene suggerimenti su come trovare i consulenti appropriati.
+In alternativa, i test possono essere affidati a consulenti per l'usabilità. La sezione seguente contiene suggerimenti per trovare i consulenti più esperti.
 
-### <a name="how-do-i-get-started"></a>Come iniziare?
+### <a name="how-do-i-get-started"></a>Come si Informazioni di base?
 
-Una volta deciso di incorporare i principi di progettazione centrati sull'utente nel processo di sviluppo, sarà necessario decidere se assumere i professionisti dell'usabilità o esternalizzare i test di usabilità a un fornitore.
+Dopo aver deciso di incorporare i principi di progettazione centrati sull'utente nel processo di sviluppo, è necessario decidere se assumere professionisti dell'usabilità o esternalizzare i test di usabilità a un fornitore.
 
-L'associazione di usabilità Professionals (UPA) offre una guida per i fornitori che può aiutare a trovare i consulenti di usabilità.
+Usability Professionals Association (UPA) include una guida ai fornitori che consente di trovare consulenti per l'usabilità.
 
-Alcuni gruppi di consulenza possono anche configurare i laboratori di usabilità o sviluppare un programma di usabilità interna per incorporare i principi di usabilità nel processo di progettazione.
+Alcuni gruppi di consulenza possono anche aiutare a configurare lab di usabilità o sviluppare un programma di usabilità interno per incorporare i principi di usabilità nel processo di progettazione.
 
-Se assumono i professionisti dell'usabilità, i fattori umani e la società ergonomica hanno un servizio di posizionamento che può aiutare a trovare i potenziali dipendenti. Molti professionisti dell'usabilità appartengono anche al gruppo di interesse speciale ACM per l'interazione Computer-Human (SIGCHI) e UPA. Inserire annunci per l'occupazione nelle pubblicazioni o nelle conferenze.
+Se si assumono professionisti dell'usabilità, Human Factors and Ergonomics Society ha un servizio di posizionamento che può aiutare a trovare potenziali dipendenti. Molti professionisti dell'usabilità appartengono anche a ACM Special Interest Group on Computer-Human Interaction (SIGCHI) e UPA. Inserire annunci di impiego nelle pubblicazioni o nelle conferenze.
 
-Indipendentemente dalla Route, tenere presente che si tratta di servizi di test. Il principio che i progettisti non sono utenti tipici è anche vero per i professionisti dell'usabilità.
+Indipendentemente dalla route, tenere presente che si tratta di servizi di test. Il principio secondo cui i progettisti non sono utenti tipici è vero anche per i professionisti dell'usabilità.
 
-Per ulteriori informazioni su queste società e organizzazioni e per altre informazioni sui test di usabilità e sulla progettazione centrata sull'utente, vedere [altre risorse](other-resources.md).
+Per altre informazioni su queste aziende e organizzazioni e per altre informazioni sui test di usabilità e sulla progettazione centrata [sull'utente,](other-resources.md)vedere Altre risorse .
 
- 
+ 
 
- 
+ 
 
 
 

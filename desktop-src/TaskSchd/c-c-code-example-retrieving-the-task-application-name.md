@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero del nome dell'applicazione dell'attività
-description: In questo esempio viene recuperato il nome dell'applicazione associata a una determinata attività e viene visualizzato tale nome sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ recupero del nome dell'applicazione dell'attività
+description: Questo esempio recupera il nome dell'applicazione associata a una determinata attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 7cf20a14-fee3-4507-83a9-4a081a9783fc
 keywords:
 - recupero dei nomi delle applicazioni Utilità di pianificazione
-- recupero delle proprietà dell'attività Utilità di pianificazione, nome applicazione
+- recupero delle proprietà dell'attività Utilità di pianificazione , nome dell'applicazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb590900cf7b4c6d8821560e91e2f05c21c0f73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dde0d00910ab590e8668e66da3380744a85228e86dafba4d1db7349b24bb80a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139634"
 ---
 # <a name="cc-code-example-retrieving-the-task-application-name"></a>Esempio di codice C/C++: recupero del nome dell'applicazione dell'attività
 
-In questo esempio viene recuperato il nome dell'applicazione associata a una determinata attività e viene visualizzato tale nome sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio recupera il nome dell'applicazione associata a una determinata attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -119,12 +119,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

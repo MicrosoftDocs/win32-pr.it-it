@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidOnSortException'
+description: Altre informazioni sul costruttore EsentInvalidOnSortException
 title: Costruttore EsentInvalidOnSortException
 TOCTitle: 'EsentInvalidOnSortException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidOnSortException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2d98dd135348bf990e725cfc94920ada740f81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8267deaa4d13b3768690a73f24bd13b0b2b9ccb7c2152039ec1493f1511829de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041039"
 ---
 # <a name="esentinvalidonsortexception-constructor"></a>Costruttore EsentInvalidOnSortException
 
 Inizializza una nuova istanza della classe EsentInvalidOnSortException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidOnSortException()
 
 [Membri di EsentInvalidOnSortException](./esentinvalidonsortexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

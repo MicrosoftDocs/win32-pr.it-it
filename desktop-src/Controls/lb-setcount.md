@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETCOUNT (winuser. h)
-description: Imposta il numero di elementi in una casella di riepilogo creata con lo \_ stile NODATA lbs e non viene creato con lo \_ stile HASSTRINGS lbs.
+title: LB_SETCOUNT messaggio (Winuser.h)
+description: Imposta il numero di elementi in una casella di riepilogo creata con lo stile LBS NODATA e non creata con lo stile \_ \_ HASSTRINGS di LBS.
 ms.assetid: 3ebc4237-24d3-443f-86d5-bdcd66a31baf
 keywords:
-- Controlli di Windows Message LB_SETCOUNT
+- LB_SETCOUNT dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2042bcf0e0cbe7f5daacfcf7f493a070860ac9a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e1b3f68a67de2b7caa77cfd7c9e6f2a5b164e20af42100882fef1aad04eca14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433943"
 ---
-# <a name="lb_setcount-message"></a>\_Messaggi di conteggio lb
+# <a name="lb_setcount-message"></a>Messaggio \_ LB SETCOUNT
 
-Imposta il numero di elementi in una casella di riepilogo creata con lo stile [**\_ NoData lbs**](list-box-styles.md) e non viene creato con lo stile [**\_ HASSTRINGS lbs**](list-box-styles.md) .
+Imposta il numero di elementi in una casella di riepilogo creata con lo stile [**\_ LBS NODATA**](list-box-styles.md) e non creata con lo stile [**\_ HASSTRINGS di LBS.**](list-box-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,9 +32,9 @@ Imposta il numero di elementi in una casella di riepilogo creata con lo stile [*
 *wParam* 
 </dt> <dd>
 
-Specifica il nuovo conteggio degli elementi nella casella di riepilogo.
+Specifica il nuovo numero di elementi nella casella di riepilogo.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Sebbene il numero di elementi sia limitato, le dimensioni totali in byte degli elementi in una casella di riepilogo sono limitate solo dalla memoria disponibile.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Anche se il numero di elementi è limitato, la dimensione totale in byte degli elementi in una casella di riepilogo è limitata solo dalla memoria disponibile.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si verifica un errore, il valore restituito è LB \_ Err. Se la memoria disponibile non è sufficiente per archiviare gli elementi, il valore restituito è LB \_ ERRSPACE.
+Se si verifica un errore, il valore restituito è LB \_ ERR. Se la memoria non è sufficiente per archiviare gli elementi, il valore restituito è LB \_ ERRSPACE.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **lb \_ secount** è supportato solo dalle caselle di riepilogo create con lo stile [**\_ NoData di lbs**](list-box-styles.md) e non create con lo stile [**\_ HASSTRINGS lbs**](list-box-styles.md) . Tutte le altre caselle di riepilogo restituiscono LB \_ Err.
+Il **messaggio \_ LB SETCOUNT** è supportato solo dalle caselle di riepilogo create con lo stile [**\_ LBS NODATA**](list-box-styles.md) e non con lo stile [**\_ LBS HASSTRINGS.**](list-box-styles.md) Tutte le altre caselle di riepilogo restituiscono LB \_ ERR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Il messaggio **lb \_ secount** è supportato solo dalle caselle di riepilogo cre
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Il messaggio **lb \_ secount** è supportato solo dalle caselle di riepilogo cre
 
 <dl> <dt>
 
-[**CONTEGGIO di LB \_**](lb-getcount.md)
+[**LB \_ GETCOUNT**](lb-getcount.md)
 </dt> </dl>
 
  

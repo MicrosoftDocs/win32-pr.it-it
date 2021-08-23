@@ -1,9 +1,9 @@
 ---
-title: funzione gluDisk (Glu. h)
+title: Funzione gluDisk (Glu.h)
 description: La funzione gluDisk disegna un disco.
 ms.assetid: c9260621-930d-47dd-a046-30895779473b
 keywords:
-- funzione gluDisk OpenGL
+- Funzione gluDisk OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9a9e8b547790049c93360f060e944aafcea4511
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83abb24f665cbcbf978a6423868751794371606cf412f609876a8f17d42c115a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119489531"
 ---
-# <a name="gludisk-function"></a>gluDisk (funzione)
+# <a name="gludisk-function"></a>Funzione gluDisk
 
-La funzione **gluDisk** disegna un disco.
+La **funzione gluDisk** disegna un disco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ void WINAPI gluDisk(
 *qobj* 
 </dt> <dd>
 
-Oggetto quadrica (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
@@ -65,17 +65,17 @@ Raggio esterno del disco.
 
 </dd> <dt>
 
-*fette* 
+*Fette* 
 </dt> <dd>
 
 Numero di suddivisioni intorno all'asse z.
 
 </dd> <dt>
 
-*cicli* 
+*Loop* 
 </dt> <dd>
 
-Numero di anelli concentrici sull'origine in cui è suddiviso il disco.
+Numero di anelli concentrici relativi all'origine in cui il disco è suddiviso.
 
 </dd> </dl>
 
@@ -85,11 +85,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluDisk** esegue il rendering di un disco sul piano *z* = 0. Il disco ha un raggio di *OuterRadius* e contiene un foro circolare concentrico con un raggio di *InnerRadius*. Se *InnerRadius* è 0, non viene generato alcun Hole. Il disco viene suddiviso in sezioni intorno all'asse z in sezioni, ad esempio le sezioni della pizza, e anche sull'asse z negli anelli, come specificato dalle *sezioni* e dai *cicli*, rispettivamente.
+La **funzione gluDisk** esegue il rendering di un disco *sul piano z* = 0. Il disco ha un raggio di *outerRadius* e contiene un foro circolare concentrico con un raggio *di innerRadius.* Se *innerRadius è* 0, non viene generato alcun foro. Il disco è suddiviso intorno all'asse z in sezioni (come le fette di pizza) e  anche intorno all'asse z in anelli (come specificato rispettivamente da sezioni e cicli ).
 
-Per quanto riguarda l'orientamento, il lato *z* positivo del disco è considerato *esterno* (vedere [**gluQuadricOrientation**](gluquadricorientation.md)). Ciò significa che se l'orientamento è impostato su GLU \_ all'esterno, eventuali normali generano un punto lungo l'asse z positivo.
+Per quanto riguarda l'orientamento, il lato *z* positivo del disco viene considerato esterno *(vedere* [**gluQuadricOrientation).**](gluquadricorientation.md) Ciò significa che se l'orientamento è impostato su GLU OUTSIDE, qualsiasi punto generato dalle normali \_ lungo l'asse z positivo.
 
-Se la texturing è attivata (con [**gluQuadricTexture**](gluquadrictexture.md)), le coordinate di trama vengono generate linearmente in modo tale che, dove *r*  =  *OuterRadius*, il valore in (*r*, 0, 0) è (1, 0,5); at (0, *r*, 0) it is (0,5,1); at (-*r*, 0, 0) è (0, 0,5) e at (0,-*r*, 0) è (0,5, 0).
+Se la texturing è attivata (con [**gluQuadricTexture**](gluquadrictexture.md)), le coordinate della trama vengono generate in modo lineare in modo che, dove *r* outerRadius , il valore in  =  (*r*, 0, 0) è (1, 0,5); in (0, *r*, 0) è (0,5, 1), in (-*r*, 0, 0) è (0, 0,5) e in (0, -*r*, 0) è (0,5, 0).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,8 +99,8 @@ Se la texturing è attivata (con [**gluQuadricTexture**](gluquadrictexture.md)),
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

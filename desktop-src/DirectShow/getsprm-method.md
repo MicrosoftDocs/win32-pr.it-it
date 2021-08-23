@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetSPRM Recupera il registro dei parametri di sistema specificato.
+description: Il metodo GetSPRM recupera il registro dei parametri di sistema specificato.
 ms.assetid: c6177f43-2809-4ef2-bc94-ac9a28f94621
 title: Metodo GetSPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc8b6898902eda55e0e877878343a25d82d03660
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e254d23f0d70890516bc5655f6c4ea38133a8a3733360955cabf9040207f3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536991"
 ---
 # <a name="getsprm-method"></a>Metodo GetSPRM
 
@@ -28,10 +28,10 @@ Il `GetSPRM` metodo recupera il registro dei parametri di sistema specificato.
 
 <dl> <dt>
 
-<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
+<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*Iindex*
 </dt> <dd>
 
-Specifica il registro di cui si desidera recuperare il valore come Integer. Il valore integer deve essere compreso tra 0 e 23.
+Specifica il registro di cui si vuole recuperare il valore come integer. Il valore Integer deve essere compreso tra 0 e 23.
 
 </dd> </dl>
 
@@ -41,33 +41,33 @@ Restituisce un valore intero che rappresenta il contenuto del registro specifica
 
 ## <a name="remarks"></a>Commenti
 
-Il disco controlla i registri dei parametri di sistema (SPRMs). Un'applicazione del lettore non deve accedere a questi registri per le funzionalità di navigazione standard. SPRMs rappresenta lo stato del lettore. Ognuno ha un significato, impostato in base alle preferenze dell'utente, ai comandi del disco e ad altre occorrenze che un'applicazione non ha controllo diretto. Un'applicazione può leggere questi registri ma non scriverli. Per utilizzare i registri in modo efficace, probabilmente sarà necessaria una conoscenza più approfondita dei comandi di spostamento del DVD rispetto a quanto specificato in questa documentazione. Nella tabella seguente viene illustrato il contenuto di ogni registro. Per informazioni più dettagliate sul contenuto del registro, vedere [ **IDvdInfo2:: GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
+Il disco controlla i registri dei parametri di sistema (SPPM). Un'applicazione lettore non deve accedere a questi registri per qualsiasi funzionalità di navigazione standard. I SPN rappresentano lo stato del lettore. Ognuno ha un significato, impostato in base alle preferenze dell'utente, ai comandi del disco e ad altre occorrenze su cui un'applicazione non ha alcun controllo diretto. Un'applicazione può leggere questi registri, ma non può scrivervi. Per usare questi registri in modo efficace, sarà probabilmente necessaria una conoscenza più dettagliata dei comandi di navigazione dei DVD rispetto a quanto fornito in questa documentazione. La tabella seguente illustra il contenuto di ogni registro. Per informazioni più dettagliate sul contenuto del registro, vedere [ **IDvdInfo2::GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
 
 
 
 | Registrazione | Contenuto                        |
 |----------|---------------------------------|
 | 0        | Codice lingua menu              |
-| 1        | Numero flusso audio             |
-| 2        | Numero di flusso di immagini subimmagine        |
+| 1        | Numero di flusso audio             |
+| 2        | Numero di flusso dell'immagine secondaria        |
 | 3        | Numero angolo corrente            |
-| 4        | Numero del titolo corrente            |
+| 4        | Numero titolo corrente            |
 | 5        | Numero titolo                    |
 | 6        | Numero PGC                      |
-| 7        | Numero del capitolo corrente (PTT)    |
-| 8        | Numero pulsante evidenziato       |
-| 9        | Timer di spostamento                |
-| 10       | Salto PGC per NAV. timer         |
-| 11       | Modalità presentazione audio karaoke |
-| 12       | Codice di paese/area geografica PML         |
-| 13       | PML                             |
+| 7        | Numero di capitolo corrente (PTT)    |
+| 8        | Numero del pulsante evidenziato       |
+| 9        | Timer di navigazione                |
+| 10       | Passaggio PGC per lo spostamento. timer         |
+| 11       | Modalità presentazione audio audio in formato audio audio |
+| 12       | Codice paese/area geografica PML         |
+| 13       | Pml                             |
 | 14       | Impostazione video                   |
 | 15       | Funzionalità audio                |
 | 16       | Lingua audio                  |
 | 17       | Estensione del linguaggio audio        |
-| 18       | Lingua di immagine             |
-| 19       | Estensione della lingua di immagine   |
-| 20       | Codice area del lettore              |
+| 18       | Lingua delle immagini secondarie             |
+| 19       | Estensione del linguaggio delle immagini secondarie   |
+| 20       | Codice dell'area del lettore              |
 | 21       | Riservato                        |
 | 22       | Riservato                        |
 | 23       | Riservato                        |

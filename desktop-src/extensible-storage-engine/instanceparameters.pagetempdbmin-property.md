@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. PageTempDBMin'
-title: Proprietà InstanceParameters. PageTempDBMin
+description: Altre informazioni sulla proprietà InstanceParameters.PageTempDBMin
+title: InstanceParameters.PageTempDBMin - proprietà
 TOCTitle: 'PageTempDBMin property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.PageTempDBMin
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.pagetempdbmin(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 06825762485ad52743d585ce0fed86bd1739cd21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a2b8ceddaa6aa333c7d55f1fc68a525f2190ef36be6372df85c3c4fa4648960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618031"
 ---
-# <a name="instanceparameterspagetempdbmin-property"></a>Proprietà InstanceParameters. PageTempDBMin
+# <a name="instanceparameterspagetempdbmin-property"></a>InstanceParameters.PageTempDBMin - proprietà
 
-Ottiene o imposta le dimensioni iniziali del database temporaneo. Le dimensioni sono le pagine del database. Una dimensione pari a zero indica che devono essere utilizzate le dimensioni predefinite di un database normale. È spesso consigliabile che le piccole applicazioni configurino il database temporaneo in modo che sia il più piccolo possibile. L'impostazione di questo parametro su [PageTempDBSmallest](./systemparameters.pagetempdbsmallest-field.md) consente di ottenere il database temporaneo più piccolo possibile.
+Ottiene o imposta le dimensioni iniziali del database temporaneo. Le dimensioni sono in pagine di database. Una dimensione pari a zero indica che devono essere usate le dimensioni predefinite di un database comune. È spesso consigliabile per le applicazioni di piccole dimensioni configurare il database temporaneo in modo che sia il più piccolo possibile. L'impostazione di questo [parametro su PageTempDBSmallest](./systemparameters.pagetempdbsmallest-field.md) consente di ottenere il database temporaneo più piccolo possibile.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int PageTempDBMin { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -72,4 +72,4 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Membri di InstanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

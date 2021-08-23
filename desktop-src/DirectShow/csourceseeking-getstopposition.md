@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetStopPosition recupera l'ora in cui si interrompe la riproduzione rispetto alla durata del flusso. Questo metodo implementa il metodo IMediaSeeking:: GetStopPosition."
+description: Il metodo GetStopPosition recupera l'ora di arresto della riproduzione, in relazione alla durata del flusso. Questo metodo implementa il metodo IMediaSeeking::GetStopPosition.
 ms.assetid: 83928f62-7acc-43b9-9537-49131ed0b0d4
-title: Metodo CSourceSeeking. GetStopPosition (Ctlutil. h)
+title: Metodo CSourceSeeking.GetStopPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9f61ad26c32cfeec285874edfcc26038d57b117
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 870ddbf77d1a29a34703d4b43ee21d02b676e8fafac9ee688384246339465732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073325"
 ---
-# <a name="csourceseekinggetstopposition-method"></a>CSourceSeeking. GetStopPosition, metodo
+# <a name="csourceseekinggetstopposition-method"></a>Metodo CSourceSeeking.GetStopPosition
 
-Il `GetStopPosition` metodo recupera l'ora in cui si interrompe la riproduzione rispetto alla durata del flusso. Questo metodo implementa il metodo [**IMediaSeeking:: GetStopPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getstopposition) .
+Il `GetStopPosition` metodo recupera l'ora di arresto della riproduzione, in relazione alla durata del flusso. Questo metodo implementa il [**metodo IMediaSeeking::GetStopPosition.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getstopposition)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT GetStopPosition(
 *pStop* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve l'ora di arresto, in unità del formato dell'ora corrente.
+Puntatore a una variabile che riceve l'ora di arresto, in unità del formato di ora corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Operazione riuscita<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Valore del puntatore **null**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione riuscita<br/>                |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | **Valore del** puntatore NULL<br/> |
 
 
 
@@ -66,7 +66,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-L'ora di arresto è specificata dalla variabile membro [**CSourceSeeking:: m \_ rtStop**](csourceseeking-m-rtstop.md) .
+L'ora di arresto viene specificata dalla [**variabile membro CSourceSeeking::m \_ rtStop.**](csourceseeking-m-rtstop.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ L'ora di arresto è specificata dalla variabile membro [**CSourceSeeking:: m \_ 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

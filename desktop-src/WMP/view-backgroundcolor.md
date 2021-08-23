@@ -1,9 +1,9 @@
 ---
-title: Visualizza. backgroundColor
-description: L'attributo backgroundColor specifica o Recupera il colore di sfondo della vista o della Sottovisualizzazione.
+title: VIEW.backgroundColor
+description: L'attributo backgroundColor specifica o recupera il colore di sfondo di VIEW o SUBVIEW.
 ms.assetid: 02804e03-3518-4825-8ad0-bf91f74b5f74
 keywords:
-- Visualizza Media Player Windows. backgroundColor
+- View.backgroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73bbee10c6f442c9c03f46baa26251a7f6f85c22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5081b8bf6a0f9790c7d9bc1baf3cf32e924029716241f4d38c87f1cc3e7d8fbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615481"
 ---
-# <a name="viewbackgroundcolor"></a>Visualizza. backgroundColor
+# <a name="viewbackgroundcolor"></a>VIEW.backgroundColor
 
-L'attributo **BackgroundColor** specifica o Recupera il colore di sfondo della **vista** o della **Sottovisualizzazione**.
+**L'attributo backgroundColor** specifica o recupera il colore di sfondo dell'oggetto **VIEW** **o SUBVIEW.**
 
 ``` syntax
         elementID.backgroundColor
@@ -29,9 +29,9 @@ L'attributo **BackgroundColor** specifica o Recupera il colore di sfondo della *
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi valore di colore di Microsoft Internet Explorer oppure il valore "None". Il valore predefinito è "white" per gli elementi di **visualizzazione** o "None" per gli elementi di **visualizzazione** .
+Questo attributo è una  stringa di lettura/scrittura contenente qualsiasi valore di Internet Explorer o il valore "none" di Microsoft. Ha un valore predefinito "white" per gli **elementi VIEW** o "none" per gli **elementi SUBVIEW.**
 
-In un pacchetto di download di Windows Media, se si specifica l'attributo backgroundImage per un elemento di **visualizzazione** , è necessario specificare anche l'attributo **BackgroundColor** per quell'elemento.
+In un pacchetto Windows Media Download, se si specifica l'attributo backgroundImage per un elemento **VIEW,** è necessario specificare anche l'attributo **backgroundColor** per tale elemento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ In un pacchetto di download di Windows Media, se si specifica l'attributo backgr
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -47,7 +47,7 @@ In un pacchetto di download di Windows Media, se si specifica l'attributo backgr
 
 <dl> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> <dt>
 
 [**Elemento VIEW**](view-element.md)

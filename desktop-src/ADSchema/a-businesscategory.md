@@ -1,10 +1,10 @@
 ---
-title: Attributo Business-Category
+title: Business-Category attributo
 description: Testo descrittivo in un'unità organizzativa.
 ms.assetid: 8af9ee4a-0bc6-49f5-809c-234d1913db86
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Business-Category attribute
+- Business-Category schema AD dell'attributo
 - Schema AD dell'attributo businessCategory
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24a1469475b5ed290863ebfbad3035e576aa8bad
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: edcbd38feba1364291685ecd68d8afc060fcc5f09e1144b8ecc73af9aaaf5b28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119307291"
 ---
-# <a name="business-category-attribute"></a>Attributo Business-Category
+# <a name="business-category-attribute"></a>Business-Category attributo
 
 Testo descrittivo in un'unità organizzativa.
 
@@ -30,12 +30,12 @@ Testo descrittivo in un'unità organizzativa.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Business-Category                           |
-| LDAP-Display-Name | businessCategory                            |
+| Ldap-Display-Name | businessCategory                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.5.4.15                                    |
-| System-ID-GUID    | bf967931-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967931-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Testo descrittivo in un'unità organizzativa.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                                                                                                             |
-| È a valore singolo       | Falso                                                                                                                                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                           |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                               |
 | MAPI-Id                | 0x8057                                                                                                           |
 | System-Only            | Falso                                                                                                            |
-| È a valore singolo       | Falso                                                                                                            |
+| Is-Single-Valued       | Falso                                                                                                            |
 | Indicizzato             | Falso                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                     |
 | Range-Lower            | 1                                                                                                                |
 | Range-Upper            | 128                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                       |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                           |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                           |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                           |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Testo descrittivo in un'unità organizzativa.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8057                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                           |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Gruppo di nomi**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> |
 
 
 

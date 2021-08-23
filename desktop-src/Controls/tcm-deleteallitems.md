@@ -1,9 +1,9 @@
 ---
-title: Messaggio TCM_DELETEALLITEMS (COMmctrl. h)
-description: Rimuove tutti gli elementi da un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro TabCtrl DeleteAllItems.
+title: TCM_DELETEALLITEMS messaggio (Commctrl.h)
+description: Rimuove tutti gli elementi da un controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro TabCtrl \_ DeleteAllItems.
 ms.assetid: 733494c4-38f4-44ba-98d2-c33a8d63c3b7
 keywords:
-- Controlli di Windows Message TCM_DELETEALLITEMS
+- TCM_DELETEALLITEMS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b73a91cd6ec3b5472b6e7da2127f8224062cfbbc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a67a8e2fdf1137b51a1baf0097be3a555f404d13851a0e58fe301d3eafd5c64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434151"
 ---
-# <a name="tcm_deleteallitems-message"></a>\_Messaggio TCM DELETEALLITEMS
+# <a name="tcm_deleteallitems-message"></a>Messaggio TCM \_ DELETEALLITEMS
 
-Rimuove tutti gli elementi da un controllo struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**TabCtrl \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteallitems) .
+Rimuove tutti gli elementi da un controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**TabCtrl \_ DeleteAllItems.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteallitems)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Rimuove tutti gli elementi da un controllo struttura a schede. È possibile invi
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

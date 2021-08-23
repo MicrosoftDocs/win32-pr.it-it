@@ -1,6 +1,6 @@
 ---
-title: D3D11_RECT (D3D11. h)
-description: D3D11 \_ Rect è dichiarato come indicato di seguito
+title: D3D11_RECT (D3D11.h)
+description: D3D11 \_ RECT viene dichiarato come segue
 ms.assetid: d1cbbbd7-1221-4706-b805-8422c5ebdadc
 keywords:
 - D3D11_RECT Direct3D 11
@@ -15,26 +15,26 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7fac5627c74123c977aac379826d5264d767ba6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec65cc8c14cd1c659a9ed9634c124ea0d5355c35e4eb56221e28112f5ac1b1ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119378361"
 ---
-# <a name="d3d11_rect"></a>D3D11 \_ Rect
+# <a name="d3d11_rect"></a>D3D11 \_ RECT
 
-D3D11 \_ Rect è dichiarato come segue:
+D3D11 \_ RECT viene dichiarato come segue:
 
 ``` syntax
 typedef RECT D3D11_RECT;
 ```
 
-Per ulteriori informazioni su questa struttura del rettangolo GDI, vedere [**Rect**](/previous-versions//dd162897(v=vs.85)).
+Per altre informazioni su questa struttura rettangolare GDI, vedere [**RECT.**](/previous-versions//dd162897(v=vs.85))
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata per i rettangoli a forbice da [**sul ID3D11DeviceContext:: RSGetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rsgetscissorrects) e [**sul ID3D11DeviceContext:: RSSetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects).
+Questa struttura viene usata per i rettangoli di forbici da [**ID3D11DeviceContext::RSGetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rsgetscissorrects) e [**ID3D11DeviceContext::RSSetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,8 +42,8 @@ Questa struttura viene utilizzata per i rettangoli a forbice da [**sul ID3D11Dev
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3D11. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3D11. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3D11.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3D11.lib</dt> </dl> |
 
 
 

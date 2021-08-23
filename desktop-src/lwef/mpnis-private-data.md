@@ -1,10 +1,10 @@
 ---
-title: Struttura MPNIS_PRIVATE_DATA (MpClient. h)
+title: MPNIS_PRIVATE_DATA (MpClient.h)
 description: Notifiche NIS private.
 ms.assetid: 19B4928F-BC78-4DEA-A563-1516B6454465
 keywords:
-- Struttura MPNIS_PRIVATE_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPNIS_PRIVATE_DATA
+- MPNIS_PRIVATE_DATA funzionalità dell'ambiente Windows legacy
+- PMPNIS_PRIVATE_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21340665a32b619c42d7909e8cd1b72ca6d09fb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a50719e4ecc0beff848467023a1c5f941ff06ceb891b05674e199d47a38b8659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556141"
 ---
-# <a name="mpnis_private_data-structure"></a>\_Struttura di \_ dati privati MPNIS
+# <a name="mpnis_private_data-structure"></a>Struttura DEI DATI PRIVATI MPNIS \_ \_
 
 Notifiche NIS private.
 
@@ -61,14 +61,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensioni in byte dei dati riservati.
+Dimensioni dei dati riservati, in byte.
 
 </dd> <dt>
 
 **pbData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
@@ -82,9 +82,9 @@ Puntatore ai dati riservati.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

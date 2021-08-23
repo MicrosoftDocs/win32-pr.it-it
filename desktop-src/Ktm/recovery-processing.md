@@ -1,41 +1,41 @@
 ---
-description: Dopo qualsiasi tipo di errore che interrompe la normale elaborazione delle transazioni, KTM e ogni Resource Manager devono eseguire operazioni di ripristino. Il ripristino è il processo mediante il quale i partecipanti alle transazioni arrivano a una visualizzazione coerente di ogni stato delle transazioni.
+description: Dopo qualsiasi tipo di errore che interrompe la normale elaborazione delle transazioni, KTM e ogni gestore delle risorse devono eseguire operazioni di ripristino. Il ripristino è il processo in base al quale i partecipanti alla transazione arrivano a una visualizzazione coerente dello stato di ogni transazione.
 ms.assetid: 5bc9a155-6ba4-41f8-8e12-e87f48d83940
 title: Elaborazione del ripristino
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a8e74d4f8bff3e56af03b017522212e7a02e232
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec99ad63d18c95da3ebb3ad5db6c204301d75336cc1842dd21e1edf79f5f9a38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146494"
 ---
 # <a name="recovery-processing"></a>Elaborazione del ripristino
 
-Dopo qualsiasi tipo di errore che interrompe la normale elaborazione delle transazioni, KTM e ogni Resource Manager devono eseguire operazioni di *ripristino* . Il ripristino è il processo mediante il quale i partecipanti alle transazioni arrivano a una visualizzazione coerente dello stato di ogni transazione.
+Dopo qualsiasi tipo di errore che interrompe la normale elaborazione delle transazioni, KTM e ogni gestore delle risorse devono eseguire *operazioni di* ripristino. Il ripristino è il processo in base al quale i partecipanti alla transazione arrivano a una visualizzazione coerente dello stato di ogni transazione.
 
-I gestori di risorse potrebbero non essere *in dubbio* sul risultato di una transazione, vale a dire che, al momento dell'errore, hanno ricevuto una \_ \_ notifica di preparazione alla transazione per la notifica, si è preparata per l'archiviazione durevole, ma non ha ricevuto (o ricevuto ma non registrato) un risultato finale per la transazione. Analogamente, è possibile che KTM sia in dubbio su una transazione se è stata preparata, ma non ha ricevuto (o ricevuto ma non registrato) un risultato. Al momento del ripristino, è necessario inviare nuovamente tutti i risultati inviati ma non riconosciuti. Se, ad esempio, un gestore di risorse ha ricevuto una \_ notifica di commit Transaction Notify \_ e ha chiamato la funzione [**COMMITCOMPLETE**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) , il RM potrebbe ancora ricevere una notifica di commit delle transazioni duplicata \_ \_ al momento del ripristino.
+I gestori delle risorse possono essere *in* dubbio sul risultato di una transazione, vale a dire che al momento dell'errore avevano ricevuto una notifica TRANSACTION NOTIFY PREPARE, si erano preparati per l'archiviazione durevole, ma non avevano ricevuto (o ricevuto ma non registrato) un risultato finale per la \_ transazione. \_ Analogamente, KTM può essere in dubbio su una transazione se è stata preparata ma non ha ricevuto (o ricevuto ma non registrato) un risultato. In fase di ripristino, tutti i risultati inviati ma non riconosciuti devono essere inviati nuovamente. Ad esempio, se un gestore delle risorse ha ricevuto una notifica TRANSACTION NOTIFY COMMIT e ha chiamato la funzione \_ \_ [**CommitComplete,**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) l'RM potrebbe comunque ricevere una notifica TRANSACTION NOTIFY COMMIT duplicata in fase \_ \_ di ripristino.
 
-Per eseguire correttamente il ripristino di una transazione dopo un errore di sistema o di Resource Manager, ogni gestore di risorse deve eseguire le operazioni seguenti ogni volta che viene avviato:
+Per il corretto ripristino di una transazione dopo un errore di sistema o di gestione delle risorse, ogni gestore delle risorse deve eseguire le operazioni seguenti ogni volta che viene avviata:
 
-1.  Chiamare la funzione [**OpenResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-openresourcemanager) per riaprire l'handle di Resource Manager usando il nome univoco e permanente. In questo modo, si informa che Gestione risorse è in esecuzione nuovamente ed è disponibile per eseguire il ripristino. Se non è presente alcun elenco per il ripristino, la chiamata a **OpenResourceManager** può avere esito negativo. Chiamare [**CreateResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-createresourcemanager) per ricreare l'oggetto RM.
-2.  Chiamare [**RecoverResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-recoverresourcemanager). Resource Manager riceverà un evento di notifica della notifica di transazione per ogni integrazione per cui è necessario eseguire operazioni di ripristino, seguito da un ultimo ripristino della notifica della transazione [**\_ \_**](notification-mask.md) \_ \_ \_ . L'evento di notifica include un identificatore univoco globale sia per la transazione che per l'integrazione.
-3.  Chiamare la funzione [**OpenEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-openenlistment) per riaprire ogni handle di integrazione per il quale il gestore di risorse ha ricevuto una notifica di recupero della notifica di transazione \_ \_ .
-4.  Per ogni integrazione aperta da [**OpenEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-openenlistment), chiamare [**RecoverEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-recoverenlistment). \_ \_ \_ In questo \_ modo verrà recapitata la notifica del commit della notifica della transazione o della notifica della transazione.
-5.  Se il RM ha ricevuto una \_ notifica \_ di transazione, il RM può completare la transazione chiamando [**CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete).
+1.  Chiamare la [**funzione OpenResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-openresourcemanager) per aprire nuovamente l'handle di gestione risorse usando il nome univoco e permanente. In questo modo KTM informa che gestione risorse è di nuovo in esecuzione ed è disponibile per eseguire il ripristino. Se non sono presenti integrazioni da recuperare, la chiamata a **OpenResourceManager** può avere esito negativo. Chiamare [**CreateResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-createresourcemanager) per creare nuovamente l'oggetto RM.
+2.  Chiamare [**RecoverResourceManager**](/windows/desktop/api/Ktmw32/nf-ktmw32-recoverresourcemanager). Il gestore delle risorse riceverà un evento di notifica [**TRANSACTION \_ NOTIFY \_ RECOVER**](notification-mask.md) per ogni integrazione per cui deve eseguire operazioni di ripristino, seguita da TRANSACTION \_ NOTIFY LAST \_ \_ RECOVER. L'evento di notifica include un identificatore univoco globale sia per la transazione che per l'integrazione.
+3.  Chiamare la [**funzione OpenEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-openenlistment) per aprire nuovamente ogni handle di integrazione per cui il gestore delle risorse ha ricevuto una notifica TRANSACTION \_ NOTIFY \_ RECOVER.
+4.  Per ogni integrazione aperta da [**OpenEnlistment,**](/windows/desktop/api/Ktmw32/nf-ktmw32-openenlistment)chiamare [**RecoverEnlistment**](/windows/desktop/api/Ktmw32/nf-ktmw32-recoverenlistment). In questo modo la notifica TRANSACTION NOTIFY COMMIT o \_ \_ TRANSACTION NOTIFY \_ \_ INDOUBT viene rieliverata.
+5.  Se l'RM ha ricevuto TRANSACTION \_ NOTIFY COMMIT, l'RM può completare \_ la transazione chiamando [**CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete).
 
-    Se il RM ha ricevuto una \_ notifica \_ di transazione indubbia, il RM deve attendere l'arrivo della notifica di risultato.
+    Se l'RM ha ricevuto TRANSACTION \_ NOTIFY \_ INDOUBT, l'RM deve attendere l'arrivo della notifica del risultato.
 
-6.  Per tutte le transazioni che RM non riceve una notifica di \_ ripristino della transazione \_ , ma che in precedenza ha ricevuto una \_ \_ notifica di preparazione della transazione per, il RM deve elaborare la transazione come se fosse stato eseguito il rollback.
+6.  Per tutte le transazioni per cui l'RM non riceve una notifica TRANSACTION NOTIFY RECOVER, ma per cui in precedenza ha ricevuto una notifica \_ \_ TRANSACTION NOTIFY \_ PREPARE, l'RM deve elaborare la transazione come se ne fosse eseguito il \_ rollback.
 
 > [!Note]
 >
-> I gestori di risorse possono eseguire l'integrazione o creare nuove transazioni durante il processo di recupero.
+> I responsabili delle risorse possono integrare o creare nuove transazioni durante il processo di esecuzione del ripristino.
 
  
 
-KTM utilizza un modello *presunto* di transazione di interruzione. Questo comportamento viene illustrato nello scenario seguente. Si supponga che KTM e uno strumento di gestione delle risorse esistano nello stesso computer. Si supponga che KTM verifichi una notifica di preparazione per una transazione, ma il sistema si arresta in modo anomalo prima che KTM registri la notifica di preparazione. Si supponga inoltre che Resource Manager riceva e registri la notifica di preparazione immediatamente prima che il sistema si arresti in modo anomalo. Una volta ripristinato il sistema, KTM non conosce la transazione, perché non ha mai registrato la fase di preparazione. Resource Manager conosce la transazione, perché ha ricevuto, elaborato e registrato la notifica di preparazione. Quando KTM rilascia le notifiche di ripristino, Resource Manager non include una notifica di ripristino per la transazione in questione. Con il modello di interruzione presunto, gestione risorse in questo caso considererà la transazione preparata come interrotta quando non riceve le notifiche per eseguire il ripristino su tale transazione.
+KTM usa un modello *di transazione di interruzione* presunto. Lo scenario seguente illustra questo comportamento. Si supponga che KTM e un gestore delle risorse esistano nello stesso computer. Si supponga che KTM eserciti una notifica di preparazione per una transazione, ma che il sistema si arresti in modo anomalo prima che KTM registri la notifica di preparazione. Si supponga inoltre che gestione risorse riceva e registri la notifica di preparazione subito prima che il sistema si arresti in modo anomalo. Dopo il ripristino del sistema, KTM non è a conoscenza della transazione, perché non ha mai registrato la fase di preparazione. Il gestore delle risorse è a conoscenza della transazione, perché ha ricevuto, elaborato e registrato la notifica di preparazione. Quando KTM invia le notifiche di ripristino, il gestore delle risorse non include una notifica di ripristino per la transazione in questione. Con il modello di interruzione presunto, il gestore delle risorse in questo caso tratterà la transazione preparata come interrotta quando non riceve notifiche per eseguire il ripristino su tale transazione.
 
  
 

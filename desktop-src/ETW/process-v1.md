@@ -1,5 +1,5 @@
 ---
-description: 'Process_V1 classe: questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_V1 classe : questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: e517cd2d-5870-4666-93e9-6870b2f4a447
 title: Process_V1 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cc0b72c476890cc81d083208a8ff3489e5609fda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77369179f0210e00157ffad28c00d5f8a8710556131d482e692027c89c0d6282
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069981"
 ---
 # <a name="process_v1-class"></a>Classe \_ Process V1
 
@@ -44,8 +44,8 @@ La **classe \_ Process V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -62,7 +62,7 @@ La **classe \_ Process V1** non definisce membri.
 [**Processo \_ V0**](process-v0.md)
 </dt> <dt>
 
-[**Elaborazione \_ V1 \_ TypeGroup1**](process-v1-typegroup1.md)
+[**Process \_ V1 \_ TypeGroup1**](process-v1-typegroup1.md)
 </dt> </dl>
 
  

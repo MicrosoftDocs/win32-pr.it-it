@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentColumnTooBigException'
+description: Altre informazioni sul costruttore EsentColumnTooBigException
 title: Costruttore EsentColumnTooBigException
 TOCTitle: 'EsentColumnTooBigException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnTooBigException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 248b6811b0260914550399bb979a02b2b6133a22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d1e148ab60221ac50f8966045137ff806b10daa6473eb66c82129b80605a220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041689"
 ---
 # <a name="esentcolumntoobigexception-constructor"></a>Costruttore EsentColumnTooBigException
 
 Inizializza una nuova istanza della classe EsentColumnTooBigException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentColumnTooBigException()
 
 [Membri di EsentColumnTooBigException](./esentcolumntoobigexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: "Notifica all'oggetto di callback che l'utente ha fatto clic su un'intestazione di colonna per ordinare l'elenco di oggetti nella visualizzazione cartelle. Usato da IShellFolderViewCB:: MessageSFVCB."
-title: Messaggio SFVM_COLUMNCLICK (Shlobj. h)
+description: Notifica all'oggetto callback che l'utente ha fatto clic su un'intestazione di colonna per ordinare l'elenco di oggetti nella visualizzazione cartella. Usato da IShellFolderViewCB::MessageSFVCB.
+title: SFVM_COLUMNCLICK messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 351be842-6ea5-4223-8162-0e6c4e6a5afb
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bca80554e25378af1c078a36a02222390b771874
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5ebd98ebc887d26bcee4799ffa3412df803fd0dfa099ac41bc69e1c25d83f06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592701"
 ---
-# <a name="sfvm_columnclick-message"></a>\_Messaggio SFVM COLUMNCLICK
+# <a name="sfvm_columnclick-message"></a>Messaggio SFVM \_ COLUMNCLICK
 
-Notifica all'oggetto di callback che l'utente ha fatto clic su un'intestazione di colonna per ordinare l'elenco di oggetti nella visualizzazione cartelle. Usato da [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica all'oggetto callback che l'utente ha fatto clic su un'intestazione di colonna per ordinare l'elenco di oggetti nella visualizzazione cartella. Usato da [**IShellFolderViewCB::MessageSFVCB.**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb)
 
 
 ```C++
@@ -39,7 +39,7 @@ SFVM_COLUMNCLICK
 
 <dl> <dt>
 
-*IColumn* \[ in\]
+*iColumn* \[ Pollici\]
 </dt> <dd>
 
 Indice della colonna su cui è stato fatto clic.
@@ -48,7 +48,7 @@ Indice della colonna su cui è stato fatto clic.
 
 ## <a name="remarks"></a>Commenti
 
-In risposta a questa notifica, è necessario restituire S \_ OK per ridisporre l'elenco. Per fare in modo che l'oggetto visualizzazione cartella di sistema ridisponga l'elenco, restituire S \_ false.
+In risposta a questa notifica, è necessario restituire S \_ OK per ridisporre manualmente l'elenco. Per fare in modo che l'oggetto visualizzazione cartella di sistema riorganizza l'elenco, restituire S \_ FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ In risposta a questa notifica, è necessario restituire S \_ OK per ridisporre l
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

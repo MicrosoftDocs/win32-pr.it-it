@@ -1,7 +1,7 @@
 ---
-description: La \_ classe CPU HWConfig è la classe del tipo di evento per gli eventi di configurazione della CPU. La sintassi seguente è semplificata dal codice MOF.
+description: La classe CPU HWConfig \_ è la classe del tipo di evento per gli eventi di configurazione della CPU. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: a94714c6-009c-4300-a0a0-b7b3ce94f91e
-title: Classe HWConfig_CPU
+title: HWConfig_CPU classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 493952e25080d4a64e018477ca1b45033c8747af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9987095c8c2a1e9b9abbb54eb66816277428e2296c98395d36340297cc541bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070191"
 ---
-# <a name="hwconfig_cpu-class"></a>\_Classe CPU HWConfig
+# <a name="hwconfig_cpu-class"></a>Classe CPU HWConfig \_
 
 La **classe \_ CPU HWConfig** è la classe del tipo di evento per gli eventi di configurazione della CPU.
 
@@ -61,13 +61,13 @@ La **classe \_ CPU HWConfig** ha queste proprietà.
 AllocationGranularity
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5)
+Qualificatori: WmiDataId(5)
 </dt> </dl>
 
 Granularità con cui viene allocata la memoria virtuale.
@@ -77,13 +77,13 @@ Granularità con cui viene allocata la memoria virtuale.
 NomeComputer
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome del computer.
@@ -93,29 +93,29 @@ Nome del computer.
 MemSize
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 Quantità totale di memoria fisica disponibile per il sistema operativo.
 
 </dd> <dt>
 
-MHz
+Mhz
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Velocità massima del processore, in megahertz.
@@ -125,13 +125,13 @@ Velocità massima del processore, in megahertz.
 NumberOfProcessors
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Numero di processori nel computer.
@@ -141,16 +141,16 @@ Numero di processori nel computer.
 PageSize
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Dimensioni di una pagina di scambio, in byte.
+Dimensioni in byte di una pagina di scambio.
 
 </dd> </dl>
 
@@ -160,7 +160,7 @@ Dimensioni di una pagina di scambio, in byte.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

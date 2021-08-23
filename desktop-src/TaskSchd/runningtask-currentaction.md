@@ -1,10 +1,10 @@
 ---
-title: Proprietà RunningTask. CurrentAction
-description: Per gli script, ottiene il nome dell'azione corrente eseguita dall'attività in esecuzione.
+title: RunningTask.CurrentAction - proprietà
+description: Per lo scripting, ottiene il nome dell'azione corrente eseguita dall'attività in esecuzione.
 ms.assetid: bd6459af-4d91-496e-91f9-9c35cae5df22
 keywords:
-- Utilità di pianificazione proprietà CurrentAction
-- Utilità di pianificazione proprietà CurrentAction, oggetto RunningTask
+- Proprietà CurrentAction Utilità di pianificazione
+- Proprietà CurrentAction Utilità di pianificazione, oggetto RunningTask
 - Oggetto RunningTask Utilità di pianificazione, proprietà CurrentAction
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2eb5265acc2f7f059a577c237f010aa836691c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 685f079f24ae9cb9d51be5111a948a23a25c254a415dee97006884db7dfcae09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119402871"
 ---
-# <a name="runningtaskcurrentaction-property"></a>Proprietà RunningTask. CurrentAction
+# <a name="runningtaskcurrentaction-property"></a>RunningTask.CurrentAction - proprietà
 
-Per gli script, ottiene il nome dell'azione corrente eseguita dall'attività in esecuzione.
+Per lo scripting, ottiene il nome dell'azione corrente eseguita dall'attività in esecuzione.
 
 Questa proprietà è di sola lettura.
 
@@ -48,9 +48,9 @@ Nome dell'azione corrente eseguita dall'attività in esecuzione.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

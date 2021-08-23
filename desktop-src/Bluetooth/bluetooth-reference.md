@@ -1,40 +1,40 @@
 ---
-title: Informazioni di riferimento su Bluetooth
-description: Questa sezione fornisce informazioni di riferimento per gli elementi di programmazione usati nell'API Bluetooth.
+title: Bluetooth Riferimento
+description: In questa sezione vengono fornite informazioni di riferimento per gli elementi di programmazione usati nell'API Bluetooth.
 ms.assetid: fd09c38b-0654-4681-8fff-e27c4d5f2743
 keywords:
 - Bluetooth, informazioni di riferimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c149381f6f67cf35b6bd4aa87cf7b596d43c10e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1eaf1af0c91f44e44970e61adc53abaa6a65efb289603d72c9de7356a7ff9ba6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588301"
 ---
-# <a name="bluetooth-reference"></a>Informazioni di riferimento su Bluetooth
+# <a name="bluetooth-reference"></a>Bluetooth Riferimento
 
-Questa sezione fornisce informazioni di riferimento per gli elementi di programmazione usati nell'API Bluetooth.
+In questa sezione vengono fornite informazioni di riferimento per gli elementi di programmazione usati nell'API Bluetooth.
 
-Bluetooth è supportato anche tramite l'interfaccia di programmazione Windows Sockets. Per ulteriori informazioni sulla programmazione di Bluetooth utilizzando l'interfaccia Windows Sockets, vedere [supporto di Windows Sockets per Bluetooth](windows-sockets-support-for-bluetooth.md).
+Bluetooth è supportato anche tramite l'Windows di programmazione Windows Sockets. Per altre informazioni sulla programmazione Bluetooth tramite l'interfaccia Windows Sockets, vedere Windows [Sockets Support for Bluetooth](windows-sockets-support-for-bluetooth.md).
 
 
 
 | Sezione                                              | Content                                                                |
 |------------------------------------------------------|------------------------------------------------------------------------|
-| [Callback Bluetooth](bluetooth-callbacks.md)       | Descrive le funzioni di callback usate con l'API Bluetooth. |
-| [Enumerazioni Bluetooth](bluetooth-enumerations.md) | Descrive le enumerazioni usate con l'API Bluetooth.       |
-| [Funzioni Bluetooth](bluetooth-functions.md)       | Descrive le funzioni usate con l'API Bluetooth.          |
-| [Strutture Bluetooth](bluetooth-structures.md)     | Descrive le strutture usate con l'API Bluetooth.         |
+| [Bluetooth Callback](bluetooth-callbacks.md)       | Vengono descritte le funzioni di callback usate con l Bluetooth API. |
+| [Bluetooth Enumerazioni](bluetooth-enumerations.md) | Descrive le enumerazioni usate con l'API Bluetooth.       |
+| [Bluetooth Funzioni](bluetooth-functions.md)       | Vengono descritte le funzioni usate con l Bluetooth API.          |
+| [Bluetooth Strutture](bluetooth-structures.md)     | Descrive le strutture usate con l'API Bluetooth.         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

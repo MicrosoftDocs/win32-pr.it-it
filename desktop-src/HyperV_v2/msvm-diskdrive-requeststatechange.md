@@ -1,5 +1,5 @@
 ---
-description: 'Metodo RequestStateChange della classe Msvm_DiskDrive: richiede una modifica dello stato.'
+description: 'Metodo RequestStateChange della classe Msvm_DiskDrive : richiede una modifica dello stato.'
 ms.assetid: 9dfa96b1-19d4-42ea-b927-80b0d63a9be1
 title: Metodo RequestStateChange della classe Msvm_DiskDrive
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca2f9263d29a4412ab505e94268d0d18d28a60b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b6702fefd72a51f1e593f4b775bc4de5e93aed368468557b1f9f9b8edac7fdab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431051"
 ---
 # <a name="requeststatechange-method-of-the-msvm_diskdrive-class"></a>Metodo RequestStateChange della classe Msvm \_ DiskDrive
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà RequestedState dell'istanza se il codice restituito del metodo RequestStateChange è 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Fare riferimento alla descrizione delle proprietà EnabledState e RequestedState per le spiegazioni dettagliate dei valori RequestedState.
+Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà RequestedState dell'istanza se il codice restituito del metodo RequestStateChange è 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Fare riferimento alla descrizione delle proprietà EnabledState e RequestedState per le spiegazioni dettagliate dei valori requestedState.
 
 <dt>
 
@@ -64,7 +64,7 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -85,7 +85,7 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvio** (8)
+**Rinvia** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -106,21 +106,21 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768..65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -137,7 +137,7 @@ Può contenere un riferimento all'oggetto ConcreteJob creato per tenere traccia 
 
 Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare TimeoutPeriod. Il valore 0 o un parametro Null indica che il client non ha requisiti di tempo per la transizione.
 
-Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
+Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito il codice restituito 'Utilizzo del parametro di timeout non supportato'.
 
 </dd> </dl>
 
@@ -160,7 +160,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

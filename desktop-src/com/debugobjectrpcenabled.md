@@ -1,23 +1,23 @@
 ---
 title: DebugObjectRPCEnabled
-description: DebugObjectRPCEnabled consente il debug COM remoto su RPC. Se questa chiave non è definita nel server, il debug remoto è disabilitato.
+description: DebugObjectRPCEnabled abilita il debug COM remoto su RPC. Se questa chiave non è definita nel server, il debug remoto è disabilitato.
 ms.assetid: 26c9ed13-f7cb-476f-b51e-510448334f92
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b07d8dc6f704b42847ca3041ed46e69d8b0dc05
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2291b83a37f795ce74afcff2a2872ca7aedd52fdf473cb69067f73938b0fb6b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501277"
 ---
 # <a name="debugobjectrpcenabled"></a>DebugObjectRPCEnabled
 
-**DebugObjectRPCEnabled** consente il debug COM remoto su RPC. Se questa chiave non è definita nel server, il debug remoto è disabilitato.
+**DebugObjectRPCEnabled abilita** il debug COM remoto su RPC. Se questa chiave non è definita nel server, il debug remoto è disabilitato.
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ DebugObjectRPCEnabled**
+**HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion \\ DebugObjectRPCEnabled**
 
 
 
@@ -27,7 +27,7 @@ ms.locfileid: "104044148"
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -39,12 +39,12 @@ ms.locfileid: "104044148"
 [**IOrpcDebugNotify**](iorpcdebugnotify.md)
 </dt> <dt>
 
-[**ORPC \_ dbg \_ All**](orpc-dbg-all.md)
+[**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

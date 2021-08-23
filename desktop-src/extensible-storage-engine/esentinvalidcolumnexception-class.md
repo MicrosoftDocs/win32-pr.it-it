@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentInvalidColumnException'
+description: Altre informazioni sulla classe EsentInvalidColumnException
 title: Classe EsentInvalidColumnException
 TOCTitle: EsentInvalidColumnException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9768a479ebb1257b349e28eb7a352f0034ca7317
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e30b03b7bbe5d4e0eb5243dd00a478ec950a1901fecf1f77da2f5d3d4226cac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620901"
 ---
 # <a name="esentinvalidcolumnexception-class"></a>Classe EsentInvalidColumnException
 
-Eccezione generata quando una conversione di colonna non riesce.
+Eccezione generata quando la conversione di una colonna non riesce.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      Microsoft. ISAM. esent. Interop. EsentInvalidColumnException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      Microsoft.Isam.Esent.Interop.EsentInvalidColumnException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,4 +71,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentInvalidColumnException](./esentinvalidcolumnexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

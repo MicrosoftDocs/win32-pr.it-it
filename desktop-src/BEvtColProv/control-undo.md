@@ -1,5 +1,5 @@
 ---
-description: Ripristinare la configurazione attiva dell'agente di raccolta dal file di backup precedente, in base al ritorno dal timestamp originale corrente.
+description: Ripristinare la configurazione attiva dell'agente di raccolta dal file di backup precedente (determinato dal timestamp originale corrente).
 ms.assetid: 150fa554-9efd-483e-a177-5fc7766a6a6c
 ms.tgt_platform: multiple
 title: Metodo Undo della classe Control
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 285f1ec39ea52f6c388e324f72745d72f65207e6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e46649473da31fac09c65fcecaf44e91eba049c7ddce089d7f3c5ba9de2f8e19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589041"
 ---
 # <a name="undo-method-of-the-control-class"></a>Metodo Undo della classe Control
 
-Ripristinare la configurazione attiva dell'agente di raccolta dal file di backup precedente, in base al ritorno dal timestamp originale corrente. Se la configurazione è stata appena impostata, ciò significa che la modifica è stata annullata. Le chiamate consecutive vengono annullate alle configurazioni precedenti e precedenti. Restituisce 1 in seguito all'esito positivo, 0 in seguito a un errore.
+Ripristinare la configurazione attiva dell'agente di raccolta dal file di backup precedente (determinato dal timestamp originale corrente). Se la configurazione è stata appena impostata, significa annullare la modifica. Le chiamate consecutive verranno annullate nelle configurazioni precedenti e precedenti. Restituisce 1 in caso di esito positivo, 0 in caso di errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,73 +49,73 @@ Uint32 Undo(
 
 <dl> <dt>
 
-*OldTimestampLow* \[ in\]
+*OldTimestampLow* \[ Pollici\]
 </dt> <dd>
 
-Timestamp del momento in cui è stata impostata la configurazione precedente. Se non è 0, Abilita il controllo di atomicità: la nuova configurazione verrà applicata solo se il timestamp della configurazione precedente corrisponde a (ovvero la configurazione non è stata modificata in un intervallo compreso tra). Questa è la parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp di quando è stata impostata la configurazione precedente. Se non è 0, abilita il controllo dell'atomicità: la nuova configurazione verrà applicata solo se il timestamp della configurazione precedente corrisponde (ad esempio, la configurazione non è stata modificata tra). Si tratta della parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*OldTimestampHigh* \[ in\]
+*OldTimestampHigh* \[ Pollici\]
 </dt> <dd>
 
-Timestamp del momento in cui è stata impostata la configurazione precedente. Se non è 0, Abilita il controllo di atomicità: la nuova configurazione verrà applicata solo se il timestamp della configurazione precedente corrisponde a (ovvero la configurazione non è stata modificata in un intervallo compreso tra). Si tratta della parte superiore di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp di quando è stata impostata la configurazione precedente. Se non è 0, abilita il controllo dell'atomicità: la nuova configurazione verrà applicata solo se il timestamp della configurazione precedente corrisponde (ad esempio, la configurazione non è stata modificata tra). Questa è la parte più elevata di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*NewTimestampLow* \[ out\]
+*NewTimestampLow* \[ Cambio\]
 </dt> <dd>
 
-Timestamp di quando è stata impostata la nuova configurazione, se la chiamata ha esito positivo. Questa è la parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp di quando è stata impostata la nuova configurazione, se la chiamata ha esito positivo. Si tratta della parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*NewTimestampHigh* \[ out\]
+*NewTimestampHigh* \[ Cambio\]
 </dt> <dd>
 
-Timestamp di quando è stata impostata la nuova configurazione, se la chiamata ha esito positivo. Si tratta della parte superiore di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp di quando è stata impostata la nuova configurazione, se la chiamata ha esito positivo. Questa è la parte più elevata di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*OriginalTimestampLow* \[ out\]
+*OriginalTimestampLow* \[ Cambio\]
 </dt> <dd>
 
-Timestamp originale del momento in cui la configurazione ripristinata è stata impostata per la prima volta. Questa è la parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp originale di quando la configurazione ripristinata è stata impostata per la prima volta. Si tratta della parte bassa di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*OriginalTimestampHigh* \[ out\]
+*OriginalTimestampHigh* \[ Cambio\]
 </dt> <dd>
 
-Timestamp originale del momento in cui la configurazione ripristinata è stata impostata per la prima volta. Si tratta della parte superiore di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Timestamp originale di quando la configurazione ripristinata è stata impostata per la prima volta. Questa è la parte più elevata di [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 </dd> <dt>
 
-*ErrorString* \[ out\]
+*ErrorString* \[ Cambio\]
 </dt> <dd>
 
 Stringa di testo con la spiegazione dell'errore.
 
 </dd> <dt>
 
-*WarningString* \[ out\]
+*WarningString* \[ Cambio\]
 </dt> <dd>
 
 Stringa di testo con avvisi.
 
 </dd> <dt>
 
-*InfoString* \[ out\]
+*InfoString* \[ Cambio\]
 </dt> <dd>
 
-Stringa di testo con le informazioni sulla configurazione.
+Stringa di testo con informazioni sulla configurazione.
 
 </dd> <dt>
 
-*ErrorType* \[ out\]
+*ErrorType* \[ Cambio\]
 </dt> <dd>
 
-Tipo di errore: si noti che 0 o assente indica l'esito positivo.
+Tipo di errore: si noti che 0 o absent indica l'esito positivo.
 
 <dt>
 
@@ -129,35 +129,35 @@ Esito positivo.
 1
 </dt> <dd>
 
-formato di argomento non valido
+formato dell'argomento non valido
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-valore argomento non valido
+Valore dell'argomento non valido
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-errore di apertura della risorsa (socket)
+Errore di apertura della risorsa (socket)
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-errore di persistenza (scrittura file)
+Errore di persistenza (scrittura file)
 
 </dd> <dt>
 
 5
 </dt> <dd>
 
-errore di atomicità (il timestamp precedente non corrisponde)
+Errore di atomicità (il timestamp precedente non corrisponde)
 
 </dd> </dl> </dd> </dl>
 
@@ -189,10 +189,10 @@ Operazione completata
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                       |
-| Spazio dei nomi<br/>                | Radice \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

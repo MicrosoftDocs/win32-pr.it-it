@@ -1,26 +1,26 @@
 ---
-title: Proprietà HotKeyCtrlAltDel di IMsRdpClientAdvancedSettings
-description: Specifica il codice della chiave virtuale da aggiungere a CTRL + ALT per determinare la sostituzione del tasto di scelta rapida per CTRL + ALT + CANC, detto anche firma di sicurezza sicura (SAS).
+title: Proprietà IMsRdpClientAdvancedSettings HotKeyCtrlAltDel
+description: Specifica il codice del tasto virtuale da aggiungere a CTRL+ALT per determinare la sostituzione del tasto di scelta rapida per CTRL+ALT+CANC, detta anche sequenza di attenzione sicura.
 ms.assetid: bce55cdb-4444-4291-b443-9bc1b3743e23
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
-- Servizi Desktop remoto proprietà HotKeyCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
+- Proprietà HotKeyCtrlAltDel Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà HotKeyCtrlAltDel
 topic_type:
 - apiref
 api_name:
@@ -54,19 +54,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00fa4c1f963841d0c1ea0375cdf11913b28d0286
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47975b2c4586728fc4727044b7340d87c275c5a5f47aac1c68ab3d9fdafbda6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424411"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyctrlaltdel-property"></a>Proprietà IMsRdpClientAdvancedSettings:: HotKeyCtrlAltDel
+# <a name="imsrdpclientadvancedsettingshotkeyctrlaltdel-property"></a>Proprietà IMsRdpClientAdvancedSettings::HotKeyCtrlAltDel
 
-Specifica il codice della chiave virtuale da aggiungere a CTRL + ALT per determinare la sostituzione del tasto di scelta rapida per CTRL + ALT + CANC, detto anche firma di sicurezza sicura (SAS).
+Specifica il codice del tasto virtuale da aggiungere a CTRL+ALT per determinare la sostituzione del tasto di scelta rapida per CTRL+ALT+CANC, detta anche sequenza di attenzione sicura.
 
 > [!Note]  
-> CTRL + ALT + CANC non viene mai reindirizzato al server remoto, anche quando la proprietà [KeyboardHookMode](imsrdpclientsecuredsettings-keyboardhookmode.md) è abilitata; CTRL + ALT + CANC è la sequenza di firma di accesso condiviso locale.
+> CTRL+ALT+CANC non viene mai reindirizzato al server remoto, anche quando la [proprietà KeyboardHookMode](imsrdpclientsecuredsettings-keyboardhookmode.md) è abilitata. CTRL+ALT+CANC è la sequenza di firma di accesso condiviso locale.
 
  
 
@@ -89,15 +89,15 @@ HRESULT get_HotKeyCtrlAltDel(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovo codice della chiave virtuale. **VK \_ END** è il valore predefinito.
+Nuovo codice della chiave virtuale. **VK \_ END** è l'impostazione predefinita.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

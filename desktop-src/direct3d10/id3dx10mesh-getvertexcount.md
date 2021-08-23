@@ -1,7 +1,7 @@
 ---
-description: Ottenere il numero di vertici nella rete.
+description: Ottiene il numero di vertici nella mesh.
 ms.assetid: fea8a3b5-ca10-4066-b2ca-6579829d31b6
-title: 'Metodo ID3DX10Mesh:: GetVertexCount (D3DX10. h)'
+title: Metodo ID3DX10Mesh::GetVertexCount (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 189be6ff6872cfb85c2f336c29dedef2e435382e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00fd0cd84aedb32e2da567a92ffc421f41394a991872f9216b06a4f28f895183
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566891"
 ---
-# <a name="id3dx10meshgetvertexcount-method"></a>Metodo ID3DX10Mesh:: GetVertexCount
+# <a name="id3dx10meshgetvertexcount-method"></a>Metodo ID3DX10Mesh::GetVertexCount
 
-Ottenere il numero di vertici nella rete. Una mesh può contenere più buffer di vertice (ad esempio, un buffer di vertice può contenere tutti i dati di posizione, un altro può contenere tutti i dati delle coordinate di trama e così via), tuttavia ogni buffer di vertici conterrà lo stesso numero di elementi.
+Ottiene il numero di vertici nella mesh. Una mesh può contenere più vertex buffer(ad esempio, un buffer vertice può contenere tutti i dati di posizione, un altro può contenere tutti i dati delle coordinate di trama e così via), tuttavia ogni buffer dei vertici conterrà lo stesso numero di elementi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di vertici nella rete.
+Numero di vertici nella mesh.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Numero di vertici nella rete.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

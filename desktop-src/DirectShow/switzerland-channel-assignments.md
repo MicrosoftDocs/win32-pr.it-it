@@ -1,23 +1,23 @@
 ---
-description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Svizzera.
+description: In questo argomento vengono elencate le tabelle di frequenza utilizzate per l'ottimizzazione della TV analoga per la Svizzera.
 ms.assetid: 67f7b6f0-9dd5-49de-b29c-e2a7343aaf73
-title: Assegnazioni canale Svizzera
+title: Assegnazioni di canali svizzeri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 103a43c8e2ddf0e084f31dbfac1bb126988317ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5005d1194e835882abe82d2024d28b60f134f2061bd8210b15362274dffe4c6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072345"
 ---
-# <a name="switzerland-channel-assignments"></a>Assegnazioni canale Svizzera
+# <a name="switzerland-channel-assignments"></a>Assegnazioni di canali svizzeri
 
-Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Svizzera.
+In questo argomento vengono elencate le tabelle di frequenza utilizzate per l'ottimizzazione della TV analoga per la Svizzera.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era usata la tabella di frequenza](unicable-frequency-table.md) unicable.
 
 ## <a name="cable-assignments"></a>Assegnazioni di cavi
 
@@ -177,7 +177,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  
