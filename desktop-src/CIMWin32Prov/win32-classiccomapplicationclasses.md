@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione ClassicCOMApplicationClasses Win32 mette in correlazione un'applicazione com e un componente com raggruppati sotto di esso.
+description: La classe WMI di associazione Win32 ClassicCOMApplicationClasses mette in relazione un'applicazione COM e un \_ componente COM raggruppati al di sotto di essa.
 ms.assetid: 77f24461-9ca0-4fc3-8728-4a4b9a1edbc3
 ms.tgt_platform: multiple
-title: Classe Win32_ClassicCOMApplicationClasses
+title: Win32_ClassicCOMApplicationClasses classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dfd451c1c5d4819f1ec1d21f890b207a06d6fb82
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 24bc2871afa5916644a3bcdb3ddb4ad2f653e7aa1cd0522c52782ef17bb2352c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751391"
 ---
-# <a name="win32_classiccomapplicationclasses-class"></a>Win32 \_ ClassicCOMApplicationClasses (classe)
+# <a name="win32_classiccomapplicationclasses-class"></a>Classe Win32 \_ ClassicCOMApplicationClasses
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ ClassicCOMApplicationClasses Win32** mette in correlazione un'applicazione com e un componente com raggruppati sotto di esso.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **di associazione \_ Win32 ClassicCOMApplicationClasses** mette in relazione un'applicazione COM e un componente COM raggruppati al di sotto di essa.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_ClassicCOMApplicationClasses : Win32_COMApplicationClasses
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ ClassicCOMApplicationClasses** presenta questi tipi di membri:
+La **classe Win32 \_ ClassicCOMApplicationClasses** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ ClassicCOMApplicationClasses** dispone di queste proprietà.
+La **classe Win32 \_ ClassicCOMApplicationClasses** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo di dati: **Win32 \_ DCOMApplication**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-[**\_ DCOMApplication Win32**](win32-dcomapplication.md) che rappresenta un'applicazione DCOM che contiene o usa il componente com.
+Oggetto [**\_ DCOMApplication Win32 che**](win32-dcomapplication.md) rappresenta un'applicazione DCOM che contiene o usa il componente COM.
 
 </dd> <dt>
 
@@ -80,13 +80,13 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-[**\_ ClassicCOMClass Win32**](win32-classiccomclass.md) che rappresenta il componente COM esistente o utilizzato dall'applicazione DCOM.
+Classe [**Win32 \_ ClassicCOMClass**](win32-classiccomclass.md) che rappresenta il componente COM esistente in o usato dall'applicazione DCOM.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ ClassicCOMApplicationClasses** è derivata da [**Win32 \_ COMApplicationClasses**](win32-comapplicationclasses.md).
+La **classe Win32 \_ ClassicCOMApplicationClasses** è derivata da [**\_ WIN32 COMApplicationClasses.**](win32-comapplicationclasses.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ ClassicCOMApplicationClasses** è derivata da [**Win32 \_ C
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ ClassicCOMApplicationClasses** è derivata da [**Win32 \_ C
 
 <dl> <dt>
 
-[**\_COMApplicationClasses Win32**](win32-comapplicationclasses.md)
+[**Classi \_ COMApplicationClasses Win32**](win32-comapplicationclasses.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -1,19 +1,19 @@
 ---
-description: La \_ notifica SPFILENOTIFY STARTRENAME viene inviata alla funzione di callback quando la coda avvia un'operazione di ridenominazione del file.
+description: La notifica SPFILENOTIFY STARTRENAME viene inviata alla funzione di callback quando la coda \_ avvia un'operazione di ridenominazione di file.
 ms.assetid: 005c1840-6aa9-4e94-bfe7-6a9d53735fd9
-title: Messaggio SPFILENOTIFY_STARTRENAME (Setupapi. h)
+title: SPFILENOTIFY_STARTRENAME messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36c17d0c70b49ba00b3b16956e7ede5eda43b35b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ec75c84841adf5cb8a187e8d8431f031af74b31f33af7a87e46225b1e9a3464
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739421"
 ---
-# <a name="spfilenotify_startrename-message"></a>\_Messaggio SPFILENOTIFY STARTRENAME
+# <a name="spfilenotify_startrename-message"></a>SPFILENOTIFY \_ STARTRENAME message
 
-La notifica **SPFILENOTIFY \_ STARTRENAME** viene inviata alla funzione di callback quando la coda avvia un'operazione di ridenominazione del file.
+La **notifica SPFILENOTIFY \_ STARTRENAME viene** inviata alla funzione di callback quando la coda avvia un'operazione di ridenominazione di file.
 
 
 ```C++
@@ -32,14 +32,14 @@ SPFILENOTIFY_STARTRENAME
 *Param1* 
 </dt> <dd>
 
-Puntatore a una struttura [**FILEpaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) .
+Puntatore a una [**struttura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Il valore di FILEOP è sempre \_ Rename.
+Ha sempre il valore FILEOP \_ RENAME.
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ La routine di callback deve restituire uno dei valori seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_interruzione FILEOP**</dt> </dl> | Interrompere il commit della coda. La routine di callback deve chiamare [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per indicare il motivo della terminazione. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) restituisce **false** e una chiamata successiva a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce il codice di errore impostato dalla routine di callback durante la chiamata a **SetLastError**.<br/> |
-| <dl> <dt>**\_doit FILEOP**</dt> </dl>  | Eseguire l'operazione di copia del file.<br/>                                                                                                                                                                                                                                                                                                                                     |
-| <dl> <dt>**\_Ignora FILEOP**</dt> </dl>  | Ignora l'operazione di copia corrente.<br/>                                                                                                                                                                                                                                                                                                                                     |
+| <dl> <dt>**INTERRUZIONE \_ FILEOP**</dt> </dl> | Interrompere il commit della coda. La routine di callback deve [**chiamare SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per indicare il motivo della terminazione. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) restituisce **FALSE** e una chiamata successiva a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce il codice di errore impostato dalla routine di callback durante la chiamata a **SetLastError.**<br/> |
+| <dl> <dt>**FILEOP \_ DOIT**</dt> </dl>  | Eseguire l'operazione di copia del file.<br/>                                                                                                                                                                                                                                                                                                                                     |
+| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>  | Ignorare l'operazione di copia corrente.<br/>                                                                                                                                                                                                                                                                                                                                     |
 
 
 
@@ -65,9 +65,9 @@ La routine di callback deve restituire uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ La routine di callback deve restituire uno dei valori seguenti.
 [Notifications](notifications.md)
 </dt> <dt>
 
-[**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
+[**Filepaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 </dt> <dt>
 
 [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea)

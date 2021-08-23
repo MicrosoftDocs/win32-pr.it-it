@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETUNDOLIMIT (RichEdit. h)
+title: EM_SETUNDOLIMIT messaggio (Richedit.h)
 description: Imposta il numero massimo di azioni che possono essere archiviate nella coda di annullamento di un controllo Rich Edit.
 ms.assetid: 485dbcda-89f4-40de-ad55-cd524958e910
 keywords:
-- Controlli di Windows Message EM_SETUNDOLIMIT
+- EM_SETUNDOLIMIT del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5b668d047f1de6d8720f09af5baf23e7cfc9cc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 771e339e38437ea0299e5da6120fa555fd26148f72ff7da4e0287ed46cc4ad22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697521"
 ---
-# <a name="em_setundolimit-message"></a>\_Messaggio SETUNDOLIMIT em
+# <a name="em_setundolimit-message"></a>MESSAGGIO EM \_ SETUNDOLIMIT
 
 Imposta il numero massimo di azioni che possono essere archiviate nella coda di annullamento di un controllo Rich Edit.
 
@@ -39,19 +39,19 @@ Specifica il numero massimo di azioni che possono essere archiviate nella coda d
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è il nuovo numero massimo di azioni di annullamento per il controllo Rich Edit. Se la memoria è limitata, questo valore può essere inferiore a *wParam* .
+Il valore restituito è il nuovo numero massimo di azioni di annullamento per il controllo Rich Edit. Questo valore può essere minore di *wParam* se la memoria è limitata.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il numero massimo di azioni nella coda di annullamento è 100. Se si aumenta questo numero, è necessario che la memoria disponibile sia sufficiente per contenere il nuovo numero. Per ottenere prestazioni migliori, impostare il limite sul valore più piccolo possibile.
+Per impostazione predefinita, il numero massimo di azioni nella coda di annullamento è 100. Se si aumenta questo numero, deve essere disponibile memoria sufficiente per contenere il nuovo numero. Per ottenere prestazioni migliori, impostare il limite sul valore più piccolo possibile.
 
-Se si imposta il limite su zero, la funzionalità di **annullamento** viene disabilitata.
+Se si imposta il limite su zero, la funzionalità **Annulla viene disabilitata.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Se si imposta il limite su zero, la funzionalità di **annullamento** viene disa
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,19 +72,19 @@ Se si imposta il limite su zero, la funzionalità di **annullamento** viene disa
 **Riferimento**
 </dt> <dt>
 
-[**\_CANREDO em**](em-canredo.md)
+[**EM \_ CANREDO**](em-canredo.md)
 </dt> <dt>
 
-[**\_GETredoname em**](em-getredoname.md)
+[**EM \_ GETREDONAME**](em-getredoname.md)
 </dt> <dt>
 
-[**EM \_ GETundoname**](em-getundoname.md)
+[**EM \_ GETUNDONAME**](em-getundoname.md)
 </dt> <dt>
 
-[**\_ripetizione em**](em-redo.md)
+[**EM \_ REDO**](em-redo.md)
 </dt> <dt>
 
-[**\_Annulla**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> </dl>
 
  

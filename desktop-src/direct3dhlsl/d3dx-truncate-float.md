@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_Truncate_FLOAT
+title: D3DX_Truncate_FLOAT funzione
 description: Tronca un valore FLOAT.
 ms.assetid: 47d59c96-1f2d-4878-9fe5-7817107cc837
 keywords:
-- Funzione D3DX_Truncate_FLOAT HLSL
+- D3DX_Truncate_FLOAT funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8768a38fbcf2ef8058c2652e177d317e5b055e90
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 296c4297b10cca14c3413dc71f1a85251fb65a83bbd1cfa0373de48dc2f5da49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673991"
 ---
-# <a name="d3dx_truncate_float-function"></a>D3DX \_ Truncate- \_ funzione float
+# <a name="d3dx_truncate_float-function"></a>Funzione D3DX \_ Truncate \_ FLOAT
 
 Tronca un valore FLOAT.
 
@@ -37,7 +37,7 @@ FLOAT D3DX_Truncate_FLOAT(
 
 <dl> <dt>
 
-*\_V* 
+*\_Presso* 
 </dt> <dd>
 
 Valore da troncare.
@@ -54,7 +54,7 @@ Valore troncato.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Valore troncato.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e impacchettamento del formato DXGI \_ per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

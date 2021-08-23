@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetNumberOfChapters Recupera il numero di capitoli nel titolo specificato.
+description: Il metodo GetNumberOfChapters recupera il numero di capitoli nel titolo specificato.
 ms.assetid: d1291f6d-9296-486f-adad-d8819a4e54d6
 title: Metodo GetNumberOfChapters
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed328e2da3e28627083f7021ee999b79fae2e98
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 73c8774271cc66171b3f518d422ae2c3b46f1e278f2be29b481f0d2d683aa93f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756821"
 ---
 # <a name="getnumberofchapters-method"></a>Metodo GetNumberOfChapters
 
@@ -31,7 +31,7 @@ Il `GetNumberOfChapters` metodo recupera il numero di capitoli nel titolo specif
 <span id="iTitle"></span><span id="ititle"></span><span id="ITITLE"></span>*iTitle*
 </dt> <dd>
 
-Specifica il titolo come intero.
+Specifica il titolo come integer.
 
 </dd> </dl>
 

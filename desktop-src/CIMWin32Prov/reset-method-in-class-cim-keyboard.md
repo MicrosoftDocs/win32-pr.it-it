@@ -1,8 +1,8 @@
 ---
-description: Il metodo Reset della classe CIM \_ Keyboard richiede la reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe \_ CiM Keyboard richiede una reimpostazione del dispositivo logico.
 ms.assetid: 737bd50c-8e40-4f60-9deb-587b6f37c151
 ms.tgt_platform: multiple
-title: Reimposta il metodo della classe CIM_Keyboard
+title: Metodo Reset della classe CIM_Keyboard
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8e5296953e157182c97e113539b1b47625a0de44
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6ce98be2a78f207c3f997bf2ad1d645773ce74dba8d57d714fcba578ed469392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800981"
 ---
-# <a name="reset-method-of-the-cim_keyboard-class"></a>Reimposta il metodo della \_ classe CIM Keyboard
+# <a name="reset-method-of-the-cim_keyboard-class"></a>Metodo Reset della classe \_ CiM Keyboard
 
-Il metodo **Reset** della classe CIM \_ Keyboard richiede la reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo Reset** della classe \_ CiM Keyboard richiede una reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_Tastiera CIM](reset-method-in-class-cim-keyboard.md)
+[Tastiera \_ CIM](reset-method-in-class-cim-keyboard.md)
 </dt> <dt>
 
-[**\_Tastiera CIM**](cim-keyboard.md)
+[**Tastiera \_ CIM**](cim-keyboard.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_Messaging02
-description: La \_ classe Messaging02 dei criteri MDM \_ Config01 \_ consente di eseguire il backup e il ripristino di messaggi di testo e la messaggistica ovunque. Questo criterio consente a un'organizzazione di disabilitare queste funzionalità per evitare che le informazioni vengano archiviate nei server all'esterno del controllo.
+title: MDM_Policy_Config01_Messaging02 classe
+description: La classe Mdm \_ Policy Config01 Messaging02 consente il backup e il ripristino di SMS \_ e la \_ messaggistica ovunque. Questo criterio consente a un'organizzazione di disabilitare queste funzionalità per evitare che le informazioni vengano archiviate nei server al di fuori del proprio controllo.
 ms.assetid: 179ece8a-d3f4-449c-8392-ca8a35e44a31
 keywords:
-- Classe MDM_Policy_Config01_Messaging02
-- Classe MDM_Policy_Config01_Messaging02, descritta
+- MDM_Policy_Config01_Messaging02 classe
+- MDM_Policy_Config01_Messaging02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 137d9c36a822cd93d6cfd0c7cd83197204fb8f97
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d5bd1b3d32ae63ffbcc1b4410fec853293f6c8794604d6e2859420025a84b56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825641"
 ---
-# <a name="mdm_policy_config01_messaging02-class"></a>\_ \_ Classe Config01 Messaging02 di criteri \_ MDM
+# <a name="mdm_policy_config01_messaging02-class"></a>Classe Messaging02 di Mdm \_ Policy \_ \_ Config01 Messaging02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe Messaging02 dei criteri MDM \_ Config01 \_ consente di eseguire il backup e il ripristino di messaggi di testo e la messaggistica ovunque. Questo criterio consente a un'organizzazione di disabilitare queste funzionalità per evitare che le informazioni vengano archiviate nei server all'esterno del controllo.
+La classe Mdm \_ Policy Config01 Messaging02 consente il backup e il ripristino di SMS \_ e la \_ messaggistica ovunque. Questo criterio consente a un'organizzazione di disabilitare queste funzionalità per evitare che le informazioni vengano archiviate nei server al di fuori del proprio controllo.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_Messaging02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ Messaging02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ Messaging02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Messaging02 dei criteri MDM Config01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Config01 \_ Messaging02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La **classe \_ \_ \_ Messaging02 dei criteri MDM Config01** ha queste proprietà
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,7 +70,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,10 +81,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -101,10 +101,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

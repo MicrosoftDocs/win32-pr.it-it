@@ -1,7 +1,7 @@
 ---
 description: La funzione CreateBlob crea un BLOB vuoto.
 ms.assetid: fa31855b-af85-4ab5-b434-e54111731d8f
-title: Funzione CreateBlob (Netmon. h)
+title: Funzione CreateBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: f2abb32afd68dd321a520c1d56c217e801fa9101
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c5a74a2008993aba40b97e6fce779398132dbeae0428d4c7ae2054640a4159a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103756887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744711"
 ---
-# <a name="createblob-function"></a>CreateBlob (funzione)
+# <a name="createblob-function"></a>Funzione CreateBlob
 
-La funzione **CreateBlob** crea un BLOB vuoto.
+La **funzione CreateBlob** crea un BLOB vuoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ DWORD CreateBlob(
 
 <dl> <dt>
 
-*phBlob* \[ out\]
+*phBlob* \[ Cambio\]
 </dt> <dd>
 
 Puntatore alla variabile in cui viene restituito il puntatore al nuovo BLOB.
@@ -48,7 +48,7 @@ Puntatore alla variabile in cui viene restituito il puntatore al nuovo BLOB.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che descrive l'errore.
 
@@ -60,8 +60,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

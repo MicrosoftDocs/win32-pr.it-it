@@ -1,27 +1,27 @@
 ---
-description: Il IPConf TSP (ipconf. tsp), quando abbinato a IPConf MSP (Confmsp.dll), fornisce l'accesso per la conferenza alle reti protocollo Internet, ad esempio Internet e molte Intranet aziendali.
+description: Il provider di servizi di configurazione IPConf (Ipconf.tsp), se associato a IPConf MSP (Confmsp.dll), fornisce l'accesso tramite conferenza alle reti del protocollo Internet, ad esempio Internet e molte intranet aziendali.
 ms.assetid: 8dc19e4a-08ec-473e-a1d0-aec4e4b76ff5
-title: IPConf TSP
+title: Provider di servizi di configurazione IPConf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb23c69c0e3f548e2d547fecd7f9a3af013b1c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88d2efca8d1061d41791db378f68106521b108c0ebdb47d10f175f68252ff1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775061"
 ---
-# <a name="ipconf-tsp"></a>IPConf TSP
+# <a name="ipconf-tsp"></a>Provider di servizi di configurazione IPConf
 
-\[IPConf TSP non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Il provider di servizi di configurazione IPConf non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il IPConf TSP (ipconf. tsp), quando abbinato a [IPConf msp](./ipconf-msp.md) (Confmsp.dll), fornisce l'accesso per la conferenza alle reti protocollo Internet, ad esempio Internet e molte Intranet aziendali.
+Il provider di servizi di configurazione IPConf (Ipconf.tsp), se associato a [IPConf MSP](./ipconf-msp.md) (Confmsp.dll), fornisce l'accesso tramite conferenza alle reti del protocollo Internet, ad esempio Internet e molte intranet aziendali.
 
-Questo TSP supporta un valore del [**tipo di indirizzo**](./lineaddresstype--constants.md) LINEADDRESSTYPE \_ SDP.
+Questo provider di servizi di distribuzione supporta un [**valore del tipo**](./lineaddresstype--constants.md) di indirizzo LINEADDRESSTYPE \_ SDP.
 
-Il IPConf MSP è stato migliorato in Windows 2000 SP1 per consentire la comunicazione tra i client H323 e SDP.
+IpConf MSP è stato migliorato in Windows 2000 SP1 per abilitare la comunicazione tra client H323 e SDP.
 
-Il IPConf TSP viene installato con Windows 2000 e versioni successive.
+Il provider di servizi di configurazione IPConf viene installato con Windows 2000 e versioni successive.
 
  
 

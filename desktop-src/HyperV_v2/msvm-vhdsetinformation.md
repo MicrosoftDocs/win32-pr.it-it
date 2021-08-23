@@ -1,7 +1,7 @@
 ---
-description: Fornisce informazioni su un file di set VHD.
+description: Fornisce informazioni su un file di set di dischi rigidi virtuali.
 ms.assetid: a975c131-d3f3-4be3-bc69-e277e3ce4d28
-title: Classe Msvm_VHDSetInformation
+title: Msvm_VHDSetInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 51f1371baea902627160c2c7a1fb31d156be8951
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8cef737c02629ac0a1a026a459adf6eb7060e0dbdf8c0f9ecb20c66fce1259e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789431"
 ---
-# <a name="msvm_vhdsetinformation-class"></a>\_Classe MSVM VHDSetInformation
+# <a name="msvm_vhdsetinformation-class"></a>Classe Msvm \_ VHDSetInformation
 
-Fornisce informazioni su un file di set VHD.
+Fornisce informazioni su un file di set di dischi rigidi virtuali.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -43,52 +43,52 @@ class Msvm_VHDSetInformation
 
 ## <a name="members"></a>Members
 
-La **classe \_ VHDSetInformation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VHDSetInformation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VHDSetInformation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VHDSetInformation** ha queste proprietà.
 
 <dl> <dt>
 
 **AllPaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di tutti i file inclusi nel file di set VHD, inclusi tutti i file senza riferimenti e gli eventuali elementi padre del disco rigido virtuale radice. Tutti i file elencati dopo il disco rigido virtuale radice non sono gestiti da questo file di set VHD. Questo campo può essere vuoto se queste informazioni non sono state richieste in modo specifico.
+Elenco di tutti i file inclusi nel file del set di dischi rigidi virtuali, inclusi tutti i file senza riferimenti e tutti gli elementi padre del disco rigido virtuale radice. Tutti i file elencati dopo il disco rigido virtuale radice non vengono gestiti da questo file del set di dischi rigidi virtuali. Questo campo può essere vuoto se queste informazioni non sono richieste in modo specifico.
 
 </dd> <dt>
 
 **Percorso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso del file di set VHD.
+Percorso del file del set di dischi rigidi virtuali.
 
 </dd> <dt>
 
 **SnapshotIdList**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di GUID che rappresentano tutti gli snapshot contenuti in questo file di set VHD.
+Elenco di GUID che rappresentano tutti gli snapshot contenuti in questo file di set di dischi rigidi virtuali.
 
 </dd> </dl>
 
@@ -98,10 +98,10 @@ Elenco di GUID che rappresentano tutti gli snapshot contenuti in questo file di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

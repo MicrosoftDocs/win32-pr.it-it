@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8bf2f35ab431ee03034269367c1ba31a9e94b7c4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ce0aaa8834bc28d67706dfa4e48bd5147ef9a1571f800f41efe1ec6ccc16485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747781"
 ---
 # <a name="id3dxprtcompbuffergetnumsamples-method"></a>Metodo ID3DXPRTCompBuffer::GetNumSamples
 

@@ -1,6 +1,6 @@
 ---
-title: Registro di nebbia
-description: Questo registro di output del vertex shader contiene un colore per la nebbia per vertice.
+title: Register Disas
+description: Questo registro di output del vertex shader contiene un colore per vertice.
 ms.assetid: b2b06aa9-ad75-48df-857d-fd8719176713
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3c3f0e39c0670176b6233f61f0ba50596c92ca4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6aeaea0e51960f8f4bf768b855ac31236b2bb330cfda3390fd9e61dab4ec1f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104976103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854581"
 ---
-# <a name="fog-register"></a>Registro di nebbia
+# <a name="fog-register"></a>Register Disas
 
-Questo registro di output del vertex shader contiene un colore per la nebbia per vertice.
+Questo registro di output del vertex shader contiene un colore per vertice.
 
 Un registro è costituito da proprietà che determinano il comportamento di ogni registro.
 
@@ -27,14 +27,14 @@ Un registro è costituito da proprietà che determinano il comportamento di ogni
 | Proprietà        | Descrizione                                                                                     |
 |-----------------|-------------------------------------------------------------------------------------------------|
 | Nome            | oFog                                                                                            |
-| Conteggio           | Un vettore, di cui è possibile usare un solo componente e che deve essere specificato dalla maschera dei componenti |
+| Conteggio           | Un vettore, di cui può essere usato un solo componente e deve essere specificato dalla maschera del componente |
 | Autorizzazioni di I/O | Sola scrittura.                                                                                     |
 
 
 
- 
+ 
 
-Il valore di nebbia di output viene registrato. Il valore è il fattore di nebbia da interpolare e quindi indirizzato alla tabella Fog. Viene utilizzato solo il componente x scalare della nebbia.
+Il valore di output viene registrato. Il valore è il fattore di interpolazione da interpolare e quindi instradare alla tabella delle stabilimenti. Viene usato solo il componente x scalare dell'oggetto .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -43,9 +43,9 @@ Il valore di nebbia di output viene registrato. Il valore è il fattore di nebbi
 [Registri vertex shader](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

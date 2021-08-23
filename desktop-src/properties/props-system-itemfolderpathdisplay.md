@@ -4,12 +4,12 @@ ms.assetid: 16f67edc-ca8a-4c2e-9d9b-be8600446e51
 title: System.ItemFolderPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c12909b29790ea2c016154cea9fccf7c53e45630
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e8fd2288f12073fe8e36707bf49aca2bc5e000d0bbe25d95fba0736b4e77af44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822341"
 ---
 # <a name="systemitemfolderpathdisplay"></a>System.ItemFolderPathDisplay
 
@@ -45,9 +45,9 @@ Valori di esempio
 |----------------------------------------|--------------------------|
 | c: \\ file \\ personali \\hello.txt         | c: \\ file \\ personali      |
 | \\\\condivisione \\ server \\ mydir \\goodnews.doc | \\\\condivisione \\ server \\ mydir |
-| \\\\condivisione \\ server \\numbers.xls         | \\\\condivisione \\ server        |
+| \\\\condivisione \\ \\ servernumbers.xls         | \\\\condivisione \\ server        |
 | c: \\ food \\ MyFolder                     | c: \\ food                 |
-| /Mailbox Account/Inbox/'Re: Hello!'    | /Mailbox Account/Inbox   |
+| /Mailbox Account/Inbox/'Re: Hello!'    | /Account cassetta postale/Posta in arrivo   |
 
 
 
@@ -57,7 +57,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -87,7 +87,7 @@ Valori di esempio
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

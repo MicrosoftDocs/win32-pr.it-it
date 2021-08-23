@@ -4,112 +4,112 @@ description: Il layout è il ridimensionamento, la spaziatura e la posizione del
 ms.assetid: 39cd896f-d3cc-4768-a20c-a7f598da7136
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8577843f3e54744cabe970e3b9132df1d9fb45df
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2bd705346f979a44cc2a8c7917f81b9e918ce5277893b5a377ab1ede4b945bb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817083"
 ---
 # <a name="layout"></a>Layout
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida alla progettazione è stata creata Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-Il layout è il ridimensionamento, la spaziatura e la posizione del contenuto all'interno di una finestra o di una pagina. Un layout efficace è fondamentale per aiutare gli utenti a trovare rapidamente ciò che cercano, oltre a rendere visivamente accattivante l'aspetto. Un layout efficace può fare la differenza tra le progettazioni immediatamente comprensibili dagli utenti e quelle che lasciano gli utenti invasi e sovraccaricati.
+Il layout è il ridimensionamento, la spaziatura e la posizione del contenuto all'interno di una finestra o di una pagina. Un layout efficace è fondamentale per aiutare gli utenti a trovare rapidamente ciò che cercano, oltre a rendere l'aspetto visivamente accattivante. Un layout efficace può fare la differenza tra le progettazioni immediatamente comprensibili dagli utenti e quelle che lasciano gli utenti perplessi e sopraffatti.
 
-**Nota:** Le linee guida relative [alla gestione delle](win-window-mgt.md) finestre sono presentate in un articolo separato. Il ridimensionamento e la spaziatura dei controlli specifici consigliati sono presentati nei rispettivi articoli di linee guida.
+**Nota:** Le linee guida relative [alla gestione delle](win-window-mgt.md) finestre sono presentate in un articolo separato. Il ridimensionamento e la spaziatura dei controlli specifici consigliati sono presentati nei rispettivi articoli sulle linee guida.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
 ### <a name="visual-hierarchy"></a>Gerarchia visiva
 
-Una finestra o una pagina ha una gerarchia visiva chiara quando il relativo aspetto indica la relazione e la priorità degli elementi. Senza una gerarchia visiva, gli utenti devono capire queste relazioni e priorità.
+Una finestra o una pagina ha una gerarchia visiva chiara quando il relativo aspetto indica la relazione e la priorità dei relativi elementi. Senza una gerarchia visiva, gli utenti devono capire queste relazioni e le priorità stesse.
 
 La gerarchia visiva si ottiene combinando sapientemente gli attributi seguenti:
 
 -   **Concentrarsi.** Il layout indica dove gli utenti devono cercare per primi.
--   **Flusso.** L'occhio scorre in modo uniforme e naturale attraverso la superficie, trovando gli elementi dell'interfaccia utente nell'ordine appropriato per l'uso.
--   **Raggruppamento.** Gli elementi dell'interfaccia utente correlati logicamente hanno una relazione visiva chiara. Gli elementi correlati sono raggruppati; gli elementi non correlati sono separati.
+-   **Flow.** L'occhio scorre uniformemente e naturalmente da un percorso chiaro attraverso la superficie, trovando gli elementi dell'interfaccia utente nell'ordine appropriato per l'uso.
+-   **Raggruppamento.** Gli elementi dell'interfaccia utente correlati logicamente hanno una relazione visiva chiara. Gli elementi correlati vengono raggruppati tra loro. Gli elementi non correlati sono separati.
 -   **Enfasi.** Gli elementi dell'interfaccia utente vengono evidenziati in base alla relativa importanza.
 -   **Allineamento.** Gli elementi dell'interfaccia utente hanno una posizione coordinata, quindi sono facili da analizzare e appaiono in ordine.
 
-Inoltre, il layout efficace ha questi attributi:
+Inoltre, il layout effettivo ha questi attributi:
 
--   **Indipendenza dei dispositivi.** Il layout viene visualizzato come previsto indipendentemente dal carattere tipografico o dalle dimensioni del carattere, punti per pollice (dpi), schermo o adattatore grafico.
--   **Facilità di analisi.** Gli utenti possono trovare il contenuto che stanno cercando a colpo d'occhio.
--   **Efficienza.** Gli elementi dell'interfaccia utente di grandi dimensioni devono essere di grandi dimensioni e gli elementi di piccole dimensioni funzionano bene.
+-   **Indipendenza del dispositivo.** Il layout viene visualizzato come previsto indipendentemente dal tipo di carattere o dalle dimensioni, punti per pollice (dpi), schermo o adattatore grafico.
+-   **Facile da analizzare.** Gli utenti possono trovare il contenuto che stanno cercando a colpo d'occhio.
+-   **Efficienza.** Gli elementi dell'interfaccia utente di grandi dimensioni devono essere di grandi dimensioni e gli elementi di piccole dimensioni funzionano in modo molto piccolo.
 -   **Ridimensionabilità.** Se utile, una finestra è ridimensionabile e il relativo layout del contenuto è efficace indipendentemente dalla superficie grande o piccola.
--   **Equilibrio.** Il contenuto viene visualizzato uniformemente distribuito sulla superficie.
--   **Semplicità visiva.** La percezione che un layout non sia più complicato di quanto sia necessario. Gli utenti non si sentgono sovraccaricati dall'aspetto del layout.
--   **Coerenza.** Finestre o pagine simili usano un layout simile, in modo che gli utenti si senta sempre orientati.
+-   **Equilibrio.** Il contenuto viene distribuito uniformemente sulla superficie.
+-   **Semplicità visiva.** La percezione che un layout non sia più complesso del necessario. Gli utenti non si sentono sovraccaricati dall'aspetto del layout.
+-   **Coerenza.** Finestre o pagine simili usano un layout simile, in modo che gli utenti si sentano sempre orientati.
 
-Anche se il ridimensionamento, la spaziatura e il posizionamento sono concetti semplici, la sfida con il layout consiste nell'ottenere la combinazione giusta di questi attributi.
+Anche se il ridimensionamento, la spaziatura e il posizionamento sono concetti semplici, la sfida con il layout consiste nel ottenere la giusta combinazione di questi attributi.
 
-In Windows il layout viene comunicato usando metriche indipendenti dal dispositivo, ad esempio unità di dialogo (DLU) e pixel relativi.
+In Windows, il layout viene comunicato usando metriche indipendenti dal dispositivo, ad esempio unità di dialogo (DKU) e pixel relativi.
 
 ### <a name="a-design-model-for-reading"></a>Un modello di progettazione per la lettura
 
-**Gli utenti scelgono ciò che leggono in base all'aspetto e all'organizzazione del contenuto.** Per creare un layout efficace, è necessario comprendere cosa gli utenti tendono a leggere e perché.
+**Gli utenti scelgono ciò che leggono in base all'aspetto e all'organizzazione del contenuto.** Per creare un layout efficace, è necessario comprendere quali utenti tendono a leggere e perché.
 
-È possibile prendere decisioni relative al layout usando questo modello di progettazione per la lettura:
+È possibile prendere decisioni di layout usando questo modello di progettazione per la lettura:
 
--   Le persone leggono da sinistra a destra, dall'alto verso il basso (nelle impostazioni cultura occidentali).
--   Esistono due modalità di lettura: lettura immersiva e analisi. L'obiettivo della lettura immersiva è la comprensione.
+-   Le persone leggono da sinistra a destra, dall'alto verso il basso (nelle culture occidentali).
+-   Esistono due modalità di lettura: lettura immersiva e scansione. L'obiettivo della lettura immersiva è la comprensione.
 
-    ![figura della freccia rossa nel modello di lettura a zigzag ](images/vis-layout-image1.png)
+    ![Figura della freccia rossa nel modello di lettura a zigzag ](images/vis-layout-image1.png)
 
     Questo diagramma modella la lettura immersiva.
 
-    Al contrario, l'obiettivo dell'analisi è individuare gli elementi. Il percorso di analisi generale è simile al seguente:
+    Al contrario, l'obiettivo della scansione è individuare gli elementi. Il percorso di analisi complessivo è simile al seguente:
 
-    ![figura della freccia rossa in un modello di lettura diagonale ](images/vis-layout-image2.png)
+    ![Figura della freccia rossa in un modello di lettura diagonale ](images/vis-layout-image2.png)
 
     Questo diagramma modella l'analisi.
 
-    ![figura della freccia rossa in un motivo freccia verso il basso e arco ](images/vis-layout-image3.png)
+    ![figura della freccia rossa in un motivo verso il basso e un arco ](images/vis-layout-image3.png)
 
-    Se è presente testo lungo il bordo sinistro di una pagina, gli utenti analizzano prima il bordo sinistro.
+    Se il testo è in esecuzione lungo il bordo sinistro di una pagina, gli utenti analizzano prima il bordo sinistro.
 
--   Quando si usa il software, gli utenti non sono immersi nell'interfaccia utente stessa, ma nel proprio lavoro. Di conseguenza, gli utenti in genere non leggono il testo dell'interfaccia utente che analizzano. Leggono quindi i bit di testo in modo completo solo quando ritiene di dover eseguire questa operazione.
+-   Quando si usa il software, gli utenti non sono immersi nell'interfaccia utente stessa, ma nel proprio lavoro. Di conseguenza, gli utenti in genere non leggono il testo dell'interfaccia utente che analizzano. Legge quindi i bit di testo in modo completo solo quando ritiene di doversi servono.
 -   Gli utenti tendono a ignorare i riquadri di spostamento sul lato sinistro o destro di una pagina. Gli utenti riconoscono di essere presenti, ma guardano i riquadri di spostamento solo quando vogliono spostarsi.
--   Gli utenti tendono a ignorare blocchi di testo non formattato di grandi dimensioni senza leggerli affatto.
+-   Gli utenti tendono a ignorare blocchi di testo non formattato di grandi dimensioni senza leggerli.
 
-    ![figura di testo con frecce che mostrano la scansione del testo ](images/vis-layout-image4.png)
+    ![Figura di testo con frecce che mostrano il testo di scansione ](images/vis-layout-image4.png)
 
     Gli utenti tendono a ignorare blocchi di testo e riquadri di spostamento di grandi dimensioni durante l'analisi.
 
--   Tutti gli elementi sono uguali, gli utenti esaminano prima nell'angolo superiore sinistro di una finestra, analizzano la pagina e terminano l'analisi nell'angolo in basso a destra. Tendono a ignorare l'angolo inferiore sinistro.
+-   Tutti gli elementi sono uguali, gli utenti guardano prima nell'angolo superiore sinistro di una finestra, analizzano la pagina e terminano l'analisi nell'angolo inferiore destro. Tendono a ignorare l'angolo inferiore sinistro.
 
-    ![figura della pagina e freccia dall'alto a sinistra verso il basso a destra ](images/vis-layout-image5.png)
+    ![figura della pagina e freccia da sinistra a basso a destra ](images/vis-layout-image5.png)
 
     Tutti gli elementi uguali, gli utenti leggeranno questi numeri nell'ordine seguente: 1, 2, 4 e 3.
 
--   Tuttavia, nell'interfaccia utente interattiva non tutti gli elementi sono uguali, quindi elementi dell'interfaccia utente diversi ricevono livelli di attenzione diversi. Gli utenti tendono a esaminare i controlli interattivi, in particolare i controlli in alto a sinistra e al centro della finestra e il testo in primo piano.
+-   Tuttavia, nell'interfaccia utente interattiva non tutti gli elementi sono uguali, quindi elementi dell'interfaccia utente diversi ricevono diversi livelli di attenzione. Gli utenti tendono a esaminare i controlli interattivi, in particolare i controlli in alto a sinistra e al centro della finestra e il testo in primo piano.
 
-![figura dello schermo con testo nitido e sfocato ](images/vis-layout-image6.png)
+![Figura dello schermo con testo acuto e sfocato ](images/vis-layout-image6.png)
 
-Gli utenti si concentrano sui principali controlli interattivi e sull'istruzione principale principale e guardano altri elementi solo quando è necessario.
+Gli utenti si concentrano sui principali controlli interattivi e sull'istruzione principale di primo piano e guardano altre cose solo quando necessario.
 
--   Gli utenti tendono a leggere le etichette dei controlli interattivi, in particolare quelle che sembrano rilevanti per il completamento dell'attività in corso. Al contrario, gli utenti tendono a leggere il testo statico solo quando ne hanno l'esigenza.
--   Gli elementi che appaiono diversi attraggono l'attenzione. Il testo in grassetto e il testo di grandi dimensioni si distingue dal testo normale. Gli elementi dell'interfaccia utente con colore o su uno sfondo colorato si distinguono. Gli elementi con icone si distinguono dagli elementi senza icone.
--   Gli utenti non scorrono a meno che non ne abbia un motivo. Se il [contenuto sopra la parte precedente](glossary.md) non fornisce un motivo per scorrere, non lo sarà.
--   Dopo che gli utenti hanno deciso cosa fare, interrompino immediatamente l'analisi e la esercitino.
--   Poiché gli utenti interrompino l'analisi quando si pensa di aver finito, tendono a ignorare qualsiasi elemento oltre a quello che sembra essere il punto di completamento.
+-   Gli utenti tendono a leggere le etichette di controllo interattive, in particolare quelle che sembrano rilevanti per completare l'attività a portata di mano. Al contrario, gli utenti tendono a leggere testo statico solo quando ne hanno bisogno.
+-   Gli elementi che appaiono diversi attirano l'attenzione. Il testo in grassetto e il testo di grandi dimensioni si distingue dal testo normale. Gli elementi dell'interfaccia utente con colore o su uno sfondo colorato si distinguono. Gli elementi con icone si distinguono dagli elementi senza icone.
+-   Gli utenti non scorrono a meno che non ne abbia un motivo. Se il contenuto [sopra la visualizzazione](glossary.md) non fornisce un motivo per scorrere, non lo sarà.
+-   Dopo aver deciso cosa fare, gli utenti interrompino immediatamente la scansione e lo eserciteranno.
+-   Poiché gli utenti interrompino l'analisi quando si pensa di aver completato l'operazione, tendono a ignorare qualsiasi elemento oltre a quello che sembra essere il punto di completamento.
 
 ![Screenshot delle opzioni della tastiera ](images/vis-layout-image7.png)
 
 Gli utenti interrompino l'analisi quando si pensa di aver finito.
 
-Naturalmente, ci saranno eccezioni a questo modello generale. I dispositivi di tracciamento oculare indicano che il comportamento degli utenti reali è piuttosto erratico. L'obiettivo di questo modello è aiutare a prendere decisioni e compromessi efficaci, non a modellare in modo accurato il comportamento degli utenti. Tuttavia, dopo aver letto questo elenco, si dovrebbe aver riconosciuto anche molti dei propri modelli di lettura.
+Naturalmente, ci saranno eccezioni a questo modello generale. I dispositivi di tracciamento oculare indicano che il comportamento degli utenti reali è piuttosto irregolare. L'obiettivo di questo modello è aiutare a prendere decisioni e compromessi efficaci, non a modellare in modo accurato il comportamento dell'utente. Tuttavia, dopo aver letto questo elenco, si spera di aver riconosciuto anche molti dei propri modelli di lettura.
 
 ### <a name="designing-for-scanning"></a>Progettazione per l'analisi
 
-**Gli utenti non leggono, analizzano, quindi è consigliabile progettare le superfici dell'interfaccia utente per l'analisi.** Non presupporre che gli utenti leggono il testo come scritto in un ordine da sinistra a destra, dall'alto verso il basso, ma piuttosto che guarderanno gli elementi dell'interfaccia utente che attraggono la loro attenzione.
+**Gli utenti non leggono e analizzano, quindi è consigliabile progettare le superfici dell'interfaccia utente per l'analisi.** Non presupporre che gli utenti leggono il testo come scritto in un ordine da sinistra a destra e dall'alto verso il basso, ma piuttosto che guardino gli elementi dell'interfaccia utente che attraggono la loro attenzione.
 
 Per progettare per l'analisi:
 
--   Si supponga che gli utenti inizino eseguendo rapidamente la scansione dell'intera finestra e quindi leggendo gli elementi dell'interfaccia utente approssimativamente nell'ordine seguente:
+-   Si supponga che gli utenti inizino eseguendo rapidamente la scansione dell'intera finestra e quindi leggendo gli elementi dell'interfaccia utente nell'ordine seguente:
     -   Controlli interattivi al centro
     -   Pulsanti di commit
     -   Controlli interattivi trovati altrove
@@ -135,7 +135,7 @@ Per evidenziare gli elementi principali dell'interfaccia utente:
 -   Inserire i pulsanti di commit nell'angolo inferiore destro.
 -   Posizionare al centro l'interfaccia utente primaria rimanente.
 -   Usare controlli che attraggono l'attenzione, ad esempio pulsanti di comando, collegamenti di comando e icone.
--   Usare testo importante, tra cui testo di grandi dimensioni e testo in grassetto.
+-   Usare testo di primo piano, tra cui testo di grandi dimensioni e testo in grassetto.
 -   Inserire testo che gli utenti devono leggere nei controlli interattivi, con icone o [su banner](vis-graphic.md).
 -   Usare testo scuro su uno sfondo chiaro.
 -   Racchiudere gli elementi con spazio libero.
@@ -149,7 +149,7 @@ Per de-evidenziare gli elementi secondari dell'interfaccia utente:
 
 -   Inserire gli elementi secondari dell'interfaccia utente all'esterno del percorso di analisi.
 -   Inserire tutto ciò che gli utenti in genere non devono visualizzare nell'angolo inferiore sinistro o nella parte inferiore della finestra.
--   Usare controlli che non attraggono l'attenzione, ad esempio i collegamenti alle attività anziché i pulsanti di comando.
+-   Usare i controlli che non attraggono l'attenzione, ad esempio i collegamenti alle attività anziché i pulsanti di comando.
 -   Usare testo normale o grigio.
 -   Usare testo chiaro su uno sfondo scuro. Il testo bianco su sfondo grigio scuro o blu funziona correttamente.
 -   Racchiudere gli elementi con spazio minimo.
@@ -181,7 +181,7 @@ Anche se l'interfaccia utente critica deve rientrare nella risoluzione effettiva
 
 Si sa che un layout usa in modo efficace lo spazio dello schermo quando:
 
--   Non è necessario ridimensionare finestre, riquadri finestra e controlli per essere utilizzabili. Se la prima cosa che fanno gli utenti è ridimensionare una finestra, un riquadro o un controllo, le dimensioni non sono erre.
+-   Windows, i riquadri delle finestre e i controlli non devono essere ridimensionati per essere utilizzabili. Se la prima cosa che fanno gli utenti è ridimensionare una finestra, un riquadro o un controllo, le dimensioni non sono erre.
 -   I dati non vengono troncati. La maggior parte dei dati nelle visualizzazioni elenco e nelle visualizzazioni albero non ha puntini di sospensione e i dati in altri controlli non vengono ritagliati a meno che la lunghezza dei dati non sia insolitamente grande. I dati che devono essere letti per eseguire un'attività non devono essere troncati.
 -   Le finestre e i controlli vengono ridimensionati in modo appropriato per eliminare lo scorrimento non necessario. Esistono poche barre di scorrimento orizzontali e nessuna barra di scorrimento verticale non necessaria.
 -   I controlli usano principalmente le dimensioni standard. Cercare di ridurre il numero di dimensioni dei controlli, ad esempio usando solo una o due larghezze dei pulsanti di comando su una superficie.
@@ -191,15 +191,15 @@ Scegliere dimensioni della finestra sufficientemente grandi da soddisfare le pro
 
 ### <a name="control-sizing"></a>Ridimensionamento dei controlli
 
-In genere il primo passaggio per usare in modo efficace lo spazio dello schermo consiste nel determinare le dimensioni giuste per i vari elementi dell'interfaccia utente. Fare riferimento alla [tabella Ridimensionamento del](#recommended-sizing-and-spacing) controllo e al ridimensionamento consigliato negli articoli specifici sulle linee guida per il controllo.
+In genere il primo passaggio per usare in modo efficace lo spazio dello schermo consiste nel determinare le dimensioni giuste per i vari elementi dell'interfaccia utente. Fare riferimento alla [tabella Ridimensionamento controllo](#recommended-sizing-and-spacing) e al ridimensionamento consigliato negli articoli specifici sulle linee guida per il controllo.
 
-La legge di Fitts indica che più piccola è la destinazione, maggiore è il tempo necessario per acquisirla con il mouse. Inoltre, per i computer che usano Tablet WINDOWS e Touch Technology, il "mouse" potrebbe essere effettivamente una penna o un dito dell'utente, pertanto è consigliabile prendere in considerazione dispositivi di input alternativi per determinare le dimensioni per i controlli di piccole dimensioni. **Una dimensione di controllo di 16x16 pixel relativi è una dimensione minima buona per qualsiasi dispositivo di input.** Al contrario, i pulsanti di controllo di selezione pixel relativi standard 15x9 sono troppo piccoli per essere usati in modo efficace dalle penne.
+La legge di Fitts indica che più piccola è la destinazione, più tempo è necessario per acquisirla con il mouse. Inoltre, per i computer che usano Tecnologia Windows per Tablet PC, il "mouse" potrebbe essere effettivamente una penna o un dito dell'utente, pertanto è consigliabile prendere in considerazione dispositivi di input alternativi quando si determinano le dimensioni per i controlli di piccole dimensioni. **Una dimensione di controllo di 16x16 pixel relativi è una buona dimensione minima per qualsiasi dispositivo di input.** Al contrario, i pulsanti di controllo di selezione pixel relativi standard 15x9 sono troppo piccoli per essere usati in modo efficace dalle penna.
 
 ### <a name="spacing"></a>Spaziatura
 
-Fornire spazio eccessivo (ma non eccessivo) rende il layout più comodo e più facile da analizzare. Lo spazio effettivo non è lo spazio inutilizzato, ma svolge un ruolo importante nel migliorare la capacità di analisi degli utenti e aggiunge anche un'immagine accattivante della progettazione. Per le linee guida, vedere la [tabella Spaziatura](#recommended-sizing-and-spacing).
+Fornire spazio eccessivo (ma non eccessivo) rende il layout più comodo e più facile da analizzare. Lo spazio effettivo non è lo spazio inutilizzato, ma svolge un ruolo importante nel migliorare la capacità di analisi degli utenti e aggiunge anche un aspetto visivo della progettazione. Per le linee guida, vedere la [tabella Spaziatura](#recommended-sizing-and-spacing).
 
-Per i computer che usano Tablet WINDOWS e Touch Technology, anche in questo caso il "mouse" potrebbe essere effettivamente una penna o un dito dell'utente. La destinazione è più difficile quando si usa una penna o un dito come dispositivo di puntamento e gli utenti toccano all'esterno della destinazione prevista. Quando i controlli interattivi vengono posizionati molto vicini ma non sono effettivamente toccati, gli utenti possono fare clic sullo spazio inattivo tra i controlli. Poiché fare clic su spazio inattivo non ha alcun risultato o feedback visivo, gli utenti sono spesso incerti su cosa sia successo. Se i controlli di piccole dimensioni sono troppo spaziati, l'utente deve toccare con precisione per evitare di toccare l'oggetto errato. **Per risolvere questi problemi, le aree di destinazione dei controlli interattivi devono essere toccate o avere almeno 3 DLU (5 pixel relativi) di spazio tra di essi.**
+Per i computer Tecnologia Windows per Tablet PC, anche in questo caso il "mouse" potrebbe essere effettivamente una penna o un dito dell'utente. La destinazione è più difficile quando si usa una penna o un dito come dispositivo di puntamento e gli utenti toccano all'esterno della destinazione prevista. Quando i controlli interattivi vengono posizionati molto vicini ma non sono effettivamente toccati, gli utenti possono fare clic sullo spazio inattivo tra i controlli. Poiché fare clic su spazio inattivo non ha alcun risultato o feedback visivo, gli utenti sono spesso incerti su cosa sia successo. Se i controlli di piccole dimensioni sono troppo spaziati, l'utente deve toccare con precisione per evitare di toccare l'oggetto errato. **Per risolvere questi problemi, le aree di destinazione dei controlli interattivi devono toccare o avere almeno 3 DLU (5 pixel relativi) di spazio tra di essi.**
 
 Si sa che un layout ha una spaziatura buona quando:
 
@@ -210,7 +210,7 @@ Si sa che un layout ha una spaziatura buona quando:
 
 ### <a name="resizable-windows"></a>Finestre ridimensionabili
 
-Anche le finestre ridimensionabili sono un fattore che consente di usare in modo efficace lo spazio dello schermo. Alcune finestre sono costituite da contenuto fisso e non traggono vantaggio dall'essere ridimensionabili, ma le finestre con contenuto ridimensionabile devono essere ridimensionabili. Naturalmente, il motivo per cui gli utenti ridimensionano una finestra è quello di assumere un'avanzata dello spazio aggiuntivo dello schermo, quindi il contenuto deve espandersi di conseguenza offrendo più spazio agli elementi dell'interfaccia utente che ne hanno bisogno. Le finestre con contenuto dinamico, documenti, immagini, elenchi ed alberi traggono il massimo vantaggio dalle finestre ridimensionabili.
+Anche le finestre ridimensionabili sono un fattore che consente di usare in modo efficace lo spazio dello schermo. Alcune finestre sono costituite da contenuto fisso e non traggono vantaggio dall'essere ridimensionabili, ma le finestre con contenuto ridimensionabile devono essere ridimensionabili. Naturalmente, il motivo per cui gli utenti ridimensionano una finestra è quello di assumere un'avanzata dello spazio aggiuntivo dello schermo, quindi il contenuto deve espandersi di conseguenza offrendo più spazio agli elementi dell'interfaccia utente che ne hanno bisogno. Windows con contenuto dinamico, documenti, immagini, elenchi e alberi traggono il massimo vantaggio dalle finestre ridimensionabili.
 
 ![Screenshot del controllo ridimensionato che riceve la barra di scorrimento ](images/vis-layout-image12.png)
 
@@ -242,7 +242,7 @@ In questo esempio, Windows Media Player modifica il formato quando la finestra d
 
 ### <a name="focus"></a>Focus
 
-Un layout ha lo stato attivo quando c'è un'unica posizione ovvia in cui guardare per primo. Lo stato attivo è importante per mostrare agli utenti dove iniziare a analizzare la finestra o la pagina. Senza una chiara messa a fuoco, l'occhio dell'utente si aggira senza mira. Il punto focale deve essere un elemento importante che gli utenti devono trovare e comprendere rapidamente e devono avere la massima enfasi visiva. L'angolo superiore sinistro è il punto focale naturale per la maggior parte delle finestre.
+Un layout ha lo stato attivo quando c'è un punto ovvio in cui guardare per primo. Lo stato attivo è importante per mostrare agli utenti dove iniziare a analizzare la finestra o la pagina. Senza una chiara messa a fuoco, l'occhio dell'utente si aggira senza mira. Il punto focale deve essere qualcosa di importante che gli utenti devono trovare e comprendere rapidamente e deve avere la massima enfasi visiva. L'angolo superiore sinistro è il punto focale naturale per la maggior parte delle finestre.
 
 Deve essere presente un solo punto focale. Proprio come nella vita reale, l'occhio può concentrarsi su una sola cosa alla volta, gli utenti non possono concentrarsi su più posizioni contemporaneamente.
 
@@ -252,9 +252,9 @@ Per impostare un elemento dell'interfaccia utente come punto focale, è possibil
 -   Uso di controlli interattivi importanti e facilmente comprensibili.
 -   Uso di testo prominente, ad esempio un'istruzione principale.
 -   Fornire ai controlli la selezione predefinita e lo stato attivo per l'input iniziale.
--   Posizionamento dei controlli su uno sfondo di colore diverso.
+-   Posizionamento dei controlli su uno sfondo colorato diverso.
 
-Prendere in Windows Search. Il punto focale per Windows Search deve essere la casella Cerca perché è il punto di partenza per l'attività. Tuttavia, si trova nell'angolo superiore destro per essere coerente con il posizionamento standard della casella di ricerca. La casella Di ricerca ha lo stato attivo per l'input, ma data la posizione nel percorso di analisi, l'indicazione da sola non è sufficiente.
+Provare Windows ricerca. Il punto focale per Windows ricerca deve essere la casella Cerca perché è il punto di partenza per l'attività. Tuttavia, si trova nell'angolo superiore destro per essere coerente con il posizionamento standard della casella di ricerca. La casella Di ricerca ha lo stato attivo per l'input, ma data la posizione nel percorso di analisi, l'indicazione da sola non è sufficiente.
 
 Per risolvere questo problema, nella parte superiore centrale della finestra sono presenti istruzioni importanti per indirizzare gli utenti alla posizione corretta.
 
@@ -272,7 +272,7 @@ Senza le istruzioni, la finestra non avrebbe un punto focale ovvio.
 
 Questo esempio non presenta alcun punto focale ovvio. Gli utenti non sanno dove cercare.
 
-Se si assegna un'enfasi visiva agli elementi dell'interfaccia utente, assicurarsi che l'attenzione sia garantita. Nell'esempio precedente Windows Search corretto, il pulsante Tutti evidenziato si trova nell'angolo superiore sinistro e ha maggiore enfasi visiva, ma non è il punto focale previsto. Gli utenti potrebbero rimanere bloccati a guardare questo pulsante cercando di capire cosa fare con esso.
+Se si assegna un'enfasi visiva agli elementi dell'interfaccia utente, assicurarsi che l'attenzione sia garantita. Nell'esempio precedente Windows Ricerca, il pulsante Tutti evidenziato si trova nell'angolo superiore sinistro e ha maggiore enfasi visiva, ma non è il punto focale previsto. Gli utenti potrebbero rimanere bloccati a guardare questo pulsante per capire come procedere.
 
 **Non corretto:**
 
@@ -343,7 +343,7 @@ Un layout ha un raggruppamento quando gli elementi dell'interfaccia utente corre
 
     In questo esempio il riquadro attività del Pannello di controllo viene usato per raggruppare le attività correlate e gli elementi del Pannello di controllo.
 
-    Per evitare confusione visiva, la scelta migliore è il raggruppamento del peso più leggero che consente di eseguire il lavoro in modo ottimale. Per altre informazioni, vedere [Caselle di gruppo,](ctrl-group-boxes.md) [schede,](ctrl-tabs.md) [separatori e sfondi.](vis-graphic.md)
+    Per evitare confusione visiva, il raggruppamento del peso più leggero che esegue il processo è la scelta migliore. Per altre informazioni, vedere [Caselle di gruppo,](ctrl-group-boxes.md) [schede,](ctrl-tabs.md) [separatori e sfondi.](vis-graphic.md)
 
 Indipendentemente dal tipo di raggruppamento, è possibile usare il rientro per visualizzare la relazione dei controlli all'interno di un gruppo. I controlli che sono peer tra loro devono essere allineati a sinistra e i controlli dipendenti devono essere rientrati di 12 DLO o 18 pixel relativi.
 
@@ -366,7 +366,7 @@ Quando si determina l'allineamento, è necessario prendere in considerazione div
 
 -   **Facilità di analisi orizzontale.** Gli utenti possono leggere orizzontalmente e trovare gli elementi correlati uno accanto all'altro, senza lacune difficili.
 -   **Facilità di analisi verticale.** Gli utenti possono analizzare colonne di elementi correlati e trovare immediatamente ciò che cercano, con un minimo movimento orizzontale degli occhi.
--   **Complessità visiva minima.** Gli utenti percepiranno un layout visivamente complesso se ha linee della griglia di allineamento verticale non necessarie.
+-   **Complessità visiva minima.** Gli utenti percepiranno un layout visivamente complesso se ha linee griglia di allineamento verticale non necessarie.
 
 ### <a name="horizontal-alignment"></a>Allineamento orizzontale
 
@@ -384,11 +384,11 @@ In questo esempio, il controllo di divulgazione progressiva ricerca avanzata è 
 
 **Allineamento al centro**
 
-L'allineamento al centro è ideale per le situazioni in cui l'allineamento a sinistra o a destra non è appropriato o risulta sbilanciato.
+L'allineamento al centro è ideale per le situazioni in cui l'allineamento a sinistra o a destra non è appropriato o risulta non bilanciato.
 
 ![Screenshot dei controlli del lettore multimediale centrato ](images/vis-layout-image29.png)
 
-In questo esempio, il controllo lettore multimediale è centrato per ottenere un aspetto bilanciato.
+In questo esempio il controllo lettore multimediale è centrato per ottenere un aspetto bilanciato.
 
 Non centrare il contenuto della finestra solo per riempire lo spazio.
 
@@ -400,7 +400,7 @@ In questo esempio il contenuto viene centrato in modo errato in una finestra rid
 
 ### <a name="vertical-alignment"></a>Allineamento verticale
 
-**Elementi principali**
+**Elementi all'inizio**
 
 A causa dell'ordine di lettura dall'alto verso il basso, l'allineamento superiore funziona bene per la maggior parte del contenuto. L'allineamento superiore semplifica l'analisi orizzontale degli elementi dell'interfaccia utente.
 
@@ -420,7 +420,7 @@ Nell'esempio corretto, il controllo e la relativa etichetta sono allineati verti
 
 Si sa che un layout ha un buon allineamento quando:
 
--   È facile analizzare orizzontalmente e verticalmente.
+-   È facile analizzare sia orizzontalmente che verticalmente.
 -   Ha un aspetto visivo semplice.
 
 ### <a name="label-alignment"></a>Allineamento delle etichette
@@ -433,7 +433,7 @@ Le regole di allineamento generali si applicano alle etichette di controllo, ma 
 -   Funziona bene con una combinazione di diverse lunghezze di etichetta.
 -   Consente un uso efficiente dello spazio disponibile evitando il testo troncato.
 
-L'obiettivo generale è ridurre la quantità di movimento oculare necessaria per trovare ciò che gli utenti cercano probabilmente, ma la natura dei controlli e ciò che gli utenti cercano dipende dal contesto.
+L'obiettivo generale è ridurre la quantità di movimento oculare necessaria per trovare ciò che probabilmente gli utenti cercano, ma la natura dei controlli e ciò che gli utenti stanno cercando dipende dal contesto.
 
 Esistono quattro stili comuni di posizionamento e allineamento delle etichette, ognuno con i relativi vantaggi:
 
@@ -448,7 +448,7 @@ Questo stile è il più semplice da localizzare perché il layout non dipende da
 
 ![elenco con due colonne di etichette sopra i controlli ](images/vis-layout-image33.png)
 
-Questo stile accetta lo spazio più verticale, ma è più semplice da localizzare. È una scelta migliore per l'etichettatura dei controlli principalmente interattivi.
+Questo stile occupa lo spazio più verticale, ma è più semplice da localizzare. È una scelta migliore per l'etichettatura dei controlli principalmente interattivi.
 
 È la soluzione più adatta quando:
 
@@ -465,7 +465,7 @@ Questo stile è il più semplice da analizzare in verticale e funziona anche qua
 
 ![elenco con quattro colonne di etichette a sinistra dei controlli ](images/vis-layout-image34.png)
 
-Questo stile funziona correttamente. Esistono tuttavia due colonne, ma visivamente sembra che siano presenti quattro colonne che rende i dati più complessi.
+Questo stile funziona correttamente. Tuttavia, sono presenti due colonne, ma visivamente sembra che siano presenti quattro colonne per rendere i dati più complessi.
 
 È la soluzione più adatta quando:
 
@@ -486,13 +486,13 @@ Questo stile è compatto e facile da leggere, ma è difficile analizzare i contr
 
 È la soluzione più adatta quando:
 
--   L'interfaccia utente usa una tecnologia di layout variabile,ad esempio Windows Presentation Foundation.
+-   L'interfaccia utente usa una tecnologia di layout variabile (ad esempio Windows Presentation Foundation).
 -   È probabile che gli utenti eseereranno la scansione in verticale per trovare etichette specifiche.
 -   È probabile che gli utenti leggono le etichette e i controlli da sinistra a destra, dall'alto verso il basso.
 -   Gli utenti probabilmente non analizzano i controlli verticalmente.
 -   Il testo del controllo varia di lunghezza e potrebbe essere troncato se fosse stato usato un altro stile.
 -   I controlli sono di sola lettura, ad esempio caselle di testo di sola lettura. Per gli altri controlli, questo allineamento avrà un aspetto sloppy. Tuttavia, i controlli possono diventare modificabili quando si fa clic.
--   In una colonna sono presenti molte colonne, ma pochi controlli.
+-   Sono presenti molte colonne, ma alcuni controlli in una colonna.
 
 **Etichette giustificate a destra a sinistra dei controlli**
 
@@ -500,132 +500,132 @@ Questo stile è il più semplice da leggere orizzontalmente per associare le eti
 
 ![elenco con etichette e controlli rientrati ](images/vis-layout-image36.png)
 
-Questo stile consente una semplice analisi verticale dei controlli, ma rende difficile analizzare le etichette verticalmente.
+Questo stile consente di analizzare facilmente i controlli verticalmente, ma rende difficile l'analisi verticale delle etichette.
 
-È la soluzione più adatta quando:
+L'uso ottimale è quando:
 
--   È probabile che gli utenti leggono le etichette e i controlli da sinistra a destra, dall'alto verso il basso.
--   Non è probabile che gli utenti eseereranno la scansione in verticale per trovare etichette specifiche, probabilmente perché:
-    -   I controlli sono pochi.
+-   È probabile che gli utenti leggono le etichette e i controlli in modo da sinistra a destra, dall'alto verso il basso.
+-   È probabile che gli utenti non esereranno la scansione in verticale per trovare etichette specifiche, probabilmente perché:
+    -   Sono disponibili pochi controlli.
     -   Le etichette sono note.
     -   I controlli sono per lo più auto-esplicativi e raramente sono vuoti (possibilmente con valori predefiniti per evitare controlli vuoti).
--   Lo spazio orizzontale è sufficiente per contenere le etichette.
+-   Lo spazio orizzontale disponibile è sufficiente per contenere le etichette.
 -   La lunghezza delle etichette non varia in modo significativo.
 -   Sono presenti molte colonne. Visivamente le etichette e i controlli vengono visualizzati come una singola colonna.
 
 Prima di adottare uno di questi stili, tuttavia, considerare altri due fattori:
 
--   Preferire uno stile che è possibile usare in modo coerente nel programma.
+-   Preferire uno stile che è possibile usare in modo coerente in tutto il programma.
 -   Le etichette giustificate a sinistra sopra i controlli a sinistra dei controlli sono gli stili più comuni, pertanto è consigliabile scegliere tra loro.
 
 ### <a name="balance"></a>Balance
 
-Una finestra o una pagina ha un equilibrio quando il relativo contenuto viene distribuito uniformemente sulla relativa superficie. Se la superficie fisicamente ha lo stesso peso che ha visivamente, un layout bilanciato non si dilata su un lato.
+Una finestra o una pagina ha un bilanciamento quando il contenuto viene visualizzato uniformemente distribuito sulla superficie. Se la superficie fisicamente ha la stessa ponderazione che ha visivamente, un layout bilanciato non si distolerebbe su un lato.
 
-Il problema di bilanciamento più comune è la presenza di un contenuto troppo grande sul lato sinistro di una finestra o di una pagina. È possibile creare un equilibrio nei modi seguenti:
+Il problema di bilanciamento più comune è la presenza di una quantità di contenuto troppo grande sul lato sinistro di una finestra o di una pagina. È possibile creare un saldo nei modi seguenti:
 
 -   Uso di margini maggiori sul lato sinistro rispetto a destra.
 -   Posizionamento degli elementi dell'interfaccia utente usati per completare un'attività a destra.
--   Posizionamento degli elementi dell'interfaccia utente usati in tutta l'attività al centro.
--   Estensione dei controlli ridimensionabili o multilinea.
+-   Posizionare al centro gli elementi dell'interfaccia utente usati in tutta l'attività.
+-   Estensione dei controlli ridimensionabili o su più righe.
 -   Uso strategico dell'allineamento al centro.
 
-![Screenshot della stampante a sinistra e testo a destra ](images/vis-layout-image37.png)
+![screenshot della stampante a sinistra e del testo a destra ](images/vis-layout-image37.png)
 
 Questo layout di pagina della procedura guidata ben bilanciato mostra un margine sinistro maggiore rispetto a destra per migliorare il bilanciamento.
 
-Se queste tecniche non hanno un equilibrio, è consigliabile ridurre la larghezza della finestra o della pagina in modo che corrisponda meglio al contenuto.
+Se queste tecniche non hanno un equilibrio, provare a ridurre la larghezza della finestra o della pagina in modo che corrisponda meglio al relativo contenuto.
 
-Per le superfici ridimensionabili, non centrare il contenuto solo per ottenere un equilibrio. Mantenere invece un'origine fissa in alto a sinistra, definire una superficie di attacco massima e bilanciare il contenuto all'interno dello spazio usato.
+Per le superfici ridimensionabili, non centrare il contenuto solo per ottenere l'equilibrio. Mantenere invece un'origine fissa in alto a sinistra, definire una superficie di attacco massima e bilanciare il contenuto all'interno dello spazio usato.
 
 ### <a name="grids"></a>Griglie
 
-Una griglia è un sistema di allineamento sottostante invisibile. Le griglie possono essere simmetriche, ma anche le griglie asimmetriche funzionano. Se usate da una singola finestra o pagina, le griglie consentono di organizzare il contenuto all'interno di una superficie. Quando vengono riutilizzate, le griglie creano un layout coerente tra le superfici.
+Una griglia è un sistema di allineamento sottostante invisibile. Le griglie possono essere simmetriche, ma funzionano anche le griglie asimmetriche. Se usate da una singola finestra o pagina, le griglie consentono di organizzare il contenuto all'interno di una superficie. Quando vengono riutilizzate, le griglie creano un layout coerente tra le superfici.
 
-Il numero di linee della griglia influisce sulla percezione della complessità visiva. Un layout con un numero inferiore di linee griglia risulta più semplice rispetto a un layout con più linee della griglia.
+Il numero di linee della griglia influisce sulla percezione della complessità visiva. Un layout con meno linee della griglia risulta più semplice di un layout con più linee griglia.
 
 **Visivamente complesso:**
 
-![Screenshot della finestra di dialogo disordinata ](images/vis-layout-image38.png)
+![Screenshot della finestra di dialogo ingombrata ](images/vis-layout-image38.png)
 
 **Visivamente semplice:**
 
 ![Screenshot della finestra di dialogo organizzata ](images/vis-layout-image39.png)
 
-Le linee della griglia non necessarie creano complessità visiva.
+Le linee griglia non necessarie creano complessità visiva.
 
 Si sa che un layout usa le griglie in modo efficace quando:
 
--   Le finestre o le pagine con contenuto o funzione simili hanno un layout simile.
+-   Windows o le pagine con contenuto o funzione simili hanno un layout simile.
 -   Gli elementi di progettazione ripetuti vengono visualizzati in posizioni simili nelle finestre e nelle pagine.
 -   Non sono presenti linee griglia di allineamento orizzontale e verticale non necessarie.
 
 ### <a name="visual-simplicity"></a>Semplicità visiva
 
-La semplicità visiva è la percezione che un layout non sia più complesso del necessario.
+La semplicità visiva è la percezione che un layout non sia più complicato di quanto sia necessario.
 
-Si sa che un layout ha semplicità visiva quando:
+Si sa che un layout ha una semplicità visiva quando:
 
 -   Elimina i livelli non necessari del colore della finestra.
 -   Presenta il contenuto usando al massimo sette gruppi facilmente identificabili.
 -   Usa il raggruppamento leggero, ad esempio layout e separatori anziché caselle di gruppo.
 -   Usa controlli leggeri, ad esempio collegamenti anziché pulsanti di comando per i comandi secondari, ed elenchi a discesa anziché elenchi per le scelte.
--   Riduce il numero di linee della griglia di allineamento verticale e orizzontale.
--   Riduce il numero di dimensioni dei controlli, ad esempio usando solo una o due larghezze dei pulsanti di comando su una superficie.
--   Usa la diffusione progressiva per nascondere gli elementi dell'interfaccia utente fino a quando non sono necessari.
+-   Riduce il numero di linee griglia di allineamento verticale e orizzontale.
+-   Riduce il numero di dimensioni dei controlli, ad esempio usando una o due larghezze di uno o due pulsanti di comando su una superficie.
+-   Usa la divulgazione progressiva per nascondere gli elementi dell'interfaccia utente fino a quando non sono necessari.
 -   Usa spazio sufficiente in modo che la finestra o la pagina non si senta invasa.
 -   Ridimensiona le finestre e i controlli in modo appropriato per eliminare lo scorrimento non necessario.
 -   Usa un singolo tipo di carattere con un numero ridotto di dimensioni e colori del testo.
 
-Come regola generale, se un elemento di layout può essere eliminato senza danneggiare l'efficacia dell'interfaccia utente, probabilmente dovrebbe essere .
+Come regola generale, se un elemento di layout può essere eliminato senza danneggiare l'efficacia dell'interfaccia utente, probabilmente dovrebbe farlo.
 
 ## <a name="guidelines"></a>Indicazioni
 
 ### <a name="screen-resolution-and-dpi"></a>Risoluzione dello schermo e dpi
 
--   **Supporta la risoluzione effettiva minima di Windows di 800 x 600 pixel.** Per le api critiche che devono funzionare in modalità sicura, supportare una risoluzione effettiva di 640 x 480 pixel. Assicurarsi di usare lo spazio usato dalla barra delle applicazioni [](glossary.md) riservando 48 pixel verticali relativi per le finestre visualizzate con la barra delle applicazioni.
--   **Ottimizzare i layout delle finestre ridimensionabili per una risoluzione effettiva di 1024 x 768 pixel.** Ridimensionare automaticamente queste finestre per le risoluzioni dello schermo inferiori in modo che sia ancora funzionante.
--   **Assicurarsi di testare le finestre in modalità 96 punti per pollice (dpi) (a 800 x 600 pixel), 120 dpi (a 1024 x 768 pixel) e 144 dpi (a 1200 x 900 pixel).** Verificare la presenza di problemi di layout, ad esempio il ritaglio di controlli, testo e finestre e l'estensione di icone e bitmap.
--   **Per i programmi con scenari di uso touch e mobile, ottimizzare per 120 dpi.** Gli schermi ad alta risoluzione sono attualmente prevalenti nei PC touch e per dispositivi mobili.
+-   **Supporta la risoluzione effettiva Windows minima di 800x600 pixel.** Per le ui critiche che devono funzionare in modalità sicura, supportare una risoluzione effettiva di 640x480 pixel. Assicurarsi di fare attenzione allo spazio usato dalla barra delle [](glossary.md) applicazioni riservando 48 pixel relativi verticali per le finestre visualizzate con la barra delle applicazioni.
+-   **Ottimizzare i layout delle finestre ridimensionabili per una risoluzione effettiva di 1024x768 pixel.** Ridimensionare automaticamente queste finestre per le risoluzioni dello schermo inferiori in modo che sia ancora funzionante.
+-   **Assicurarsi di testare le finestre in modalità 96 punti per pollice (dpi) (a 800x600 pixel), 120 dpi (a 1024 x 768 pixel) e 144 dpi (a 1200x900 pixel).** Verificare la presenza di problemi di layout, ad esempio il ritaglio di controlli, testo e finestre e l'estensione di icone e bitmap.
+-   **Per i programmi con scenari di uso tocco e per dispositivi mobili, ottimizzare per 120 dpi.** Gli schermi con valori dpi alti sono attualmente prevalenti nei PC a tocco e per dispositivi mobili.
 
 ### <a name="window-size"></a>Dimensioni finestra
 
--   **Scegliere le dimensioni predefinite della finestra appropriate per il contenuto.** Se è possibile usare lo spazio in modo efficace, non è necessario usare dimensioni di finestra iniziali maggiori.
--   **Usare un rapporto tra altezza e larghezza bilanciato.** È preferibile usare proporzioni tra 3:5 e 5:3, anche se è possibile usare proporzioni di 1:3 per le finestre di dialogo dei messaggi, ad esempio errori e avvisi.
--   **Usare le finestre ridimensionabili ogni volta che è pratico per evitare barre di scorrimento e dati troncati.** Le finestre con contenuto dinamico, documenti, immagini, elenchi ed alberi traggono il massimo vantaggio dalle finestre ridimensionabili.
+-   **Scegliere le dimensioni predefinite della finestra appropriate per il relativo contenuto.** Se è possibile usare lo spazio in modo efficace, non è necessario usare dimensioni di finestra iniziali maggiori.
+-   **Usare proporzioni bilanciate tra altezza e larghezza.** È preferibile usare proporzioni tra 3:5 e 5:3, anche se è possibile usare proporzioni di 1:3 per le finestre di dialogo dei messaggi, ad esempio errori e avvisi.
+-   **Usare finestre ridimensionabili quando possibile per evitare barre di scorrimento e dati troncati.** Windows con contenuto dinamico, documenti, immagini, elenchi e alberi traggono il massimo vantaggio dalle finestre ridimensionabili.
 -   **Per i documenti di testo, prendere in** considerazione una lunghezza massima di riga di 80 caratteri per semplificare la lettura del testo. I caratteri includono lettere, punteggiatura e spazi.
--   Finestre di dimensioni fisse:
-    -   **Le finestre a dimensione fissa devono essere completamente visibili e ridimensionate per adattarsi all'interno dell'area di lavoro.**
+-   Finestre a dimensione fissa:
+    -   **Le finestre a dimensione fissa devono essere completamente visibili e ridimensionate per adattarsi all'area di lavoro.**
 -   Finestre ridimensionabili:
     -   **Le finestre ridimensionabili possono essere ottimizzate per risoluzioni più elevate, ma ridimensionate in base alle esigenze in fase di visualizzazione fino alla risoluzione effettiva dello schermo.**
-    -   **Le dimensioni delle finestre sempre più grandi devono mostrare progressivamente più informazioni.** Assicurarsi che almeno una parte della finestra o un controllo abbia contenuto ridimensionabile.
-    -   **Mantenere fissa l'origine superiore sinistra del contenuto durante il ridimensionamento della finestra.** Non spostare l'origine per bilanciare il contenuto quando cambiano le dimensioni della finestra.
-    -   **Impostare una dimensione massima del contenuto se il contenuto può essere troppo ampio.** Se il contenuto diventa ingombrante, non ridimensionare l'area del contenuto oltre la larghezza massima o modificare l'origine del contenuto quando la finestra viene ridimensionata ingrandita. Mantenere invece una larghezza massima e un'origine fissa in alto a sinistra.
+    -   **Le dimensioni delle finestre progressivamente più grandi devono mostrare informazioni sempre più dettagliate.** Assicurarsi che almeno una parte della finestra o un controllo abbia contenuto ridimensionabile.
+    -   **Mantenere fissa l'origine superiore sinistra del contenuto quando la finestra viene ridimensionata.** Non spostare l'origine per bilanciare il contenuto quando cambiano le dimensioni della finestra.
+    -   **Impostare le dimensioni massime del contenuto se il contenuto può essere troppo grande.** Se il contenuto diventa ingombrante, non ridimensionare l'area del contenuto oltre la larghezza massima o modificare l'origine del contenuto quando la finestra viene ridimensionata ingrandita. Mantenere invece una larghezza massima e un'origine fissa in alto a sinistra.
     -   **Impostare una dimensione minima della finestra se è presente una dimensione inferiore alla quale il contenuto non è più utilizzabile.** Per i controlli ridimensionabili, impostare le dimensioni minime degli elementi ridimensionabili sulle dimensioni funzionali più piccole, ad esempio la larghezza minima delle colonne funzionali nelle visualizzazioni elenco. Gli elementi facoltativi dell'interfaccia utente devono essere rimossi completamente.
     -   **Valutare la possibilità di modificare la presentazione per rendere il contenuto utilizzabile in dimensioni più piccole.**
 
-        ![Screenshot dei controlli del lettore multimediale ](images/vis-layout-image16.png)
+        ![Screenshot dei controlli lettore multimediale ](images/vis-layout-image16.png)
 
-        In questo esempio, Windows Media Player modifica il formato quando la finestra diventa troppo piccola per il formato standard.
+        In questo esempio, Windows Media Player il formato quando la finestra diventa troppo piccola per il formato standard.
 
 ### <a name="control-size"></a>Dimensioni del controllo
 
--   **Impostare tutti i controlli interattivi almeno su 16x16 pixel relativi.** Questa operazione funziona bene per tutti i dispositivi di input, tra cui tablet Windows e tecnologia touch.
--   **Ridimensionare i controlli per evitare il troncamento dei dati.** Non troncare i dati che devono essere letti per eseguire un'attività. Ridimensionare le colonne della visualizzazione elenco per evitare il troncamento dei dati.
--   **Ridimensionare i controlli per eliminare lo scorrimento non necessario.** Se si fa in modo che i controlli si ingrandino leggermente, si elimina una barra di scorrimento. Dovrebbero essere presenti poche barre di scorrimento verticali e nessuna barra di scorrimento orizzontale non necessaria.
+-   **Impostare tutti i controlli interattivi almeno su 16 x 16 pixel relativi.** Questa operazione funziona bene per tutti i dispositivi di input, incluso Tecnologia Windows per Tablet PC.
+-   **Ridimensiona i controlli per evitare dati troncati.** Non troncare i dati che devono essere letti per eseguire un'attività. Ridimensionare le colonne della visualizzazione elenco per evitare dati troncati.
+-   **Ridimensionare i controlli per eliminare lo scorrimento non necessario.** Se si rende leggermente più grandi i controlli, questa operazione elimina una barra di scorrimento. Dovrebbero essere presenti poche barre di scorrimento verticali e nessuna barra di scorrimento orizzontale non necessaria.
 
     ![Screenshot dell'elenco ridimensionato per evitare una barra di scorrimento ](images/vis-layout-image40.png)
 
     In questo esempio l'elenco a discesa viene ridimensionato per eliminare la barra di scorrimento.
 
--   **Ridurre il numero di dimensioni di controllo su una superficie.** Preferire l'uso [delle dimensioni dei controlli standard](#recommended-sizing-and-spacing) consigliate e, quando necessario, usare alcuni controlli più grandi o più piccoli di dimensioni coerenti. Provare a usare una sola larghezza per le caselle di riepilogo e le visualizzazioni albero e non più di tre larghezze per i pulsanti di comando e gli elenchi a discesa. Tuttavia, la larghezza della casella di testo e della casella combinata dovrebbe suggerire la lunghezza dell'input più lungo o previsto.
+-   **Ridurre il numero di dimensioni di controllo su una superficie.** Preferire l'uso [delle dimensioni di controllo consigliate standard](#recommended-sizing-and-spacing) e, se necessario, usare alcuni controlli più grandi o più piccoli di dimensioni coerenti. Provare a usare una singola larghezza per le caselle di riepilogo e le visualizzazioni albero e non più di tre larghezze per i pulsanti di comando e gli elenchi a discesa. Tuttavia, la larghezza della casella di testo e della casella combinata dovrebbe suggerire la lunghezza dell'input più lungo o previsto.
 
     ![Screenshot della finestra di dialogo con elenchi e pulsanti ](images/vis-layout-image41.png)
 
-    In questo esempio, le dimensioni di una casella di riepilogo e del pulsante di comando vengono usate in modo coerente.
+    In questo esempio vengono usate in modo coerente una casella di riepilogo e le dimensioni del pulsante di comando.
 
 -   **Per i controlli ridimensionati in base al testo, includere un ulteriore 30% (fino al 200% per il testo più breve) per qualsiasi testo che verrà localizzato.** Questa linea guida presuppone che il layout sia progettato usando testo in inglese. Si noti anche che questa linea guida si riferisce al testo localizzato, non ai numeri.
--   **Estendere i controlli di testo statico, le caselle di controllo e i pulsanti di opzione fino alla larghezza massima che verrà adattata al layout.** In questo modo si evita il troncamento dal testo a lunghezza variabile e dalla localizzazione.
+-   **Estendere i controlli di testo statici, le caselle di controllo e i pulsanti di opzione fino alla larghezza massima che verrà adattata al layout.** In questo modo si evita il troncamento dal testo a lunghezza variabile e dalla localizzazione.
 
     **Non corretto:**
 
@@ -633,25 +633,25 @@ Come regola generale, se un elemento di layout può essere eliminato senza danne
 
     In questo esempio il testo del controllo viene troncato inutilmente.
 
-### <a name="control-spacing"></a>Spaziatura di controllo
+### <a name="control-spacing"></a>Spaziatura dei controlli
 
--   **Se i controlli non vengono toccati, disporre di almeno 3 DLU (5 pixel relativi) di spazio tra di essi.** In caso contrario, gli utenti possono fare clic sullo spazio inattivo tra i controlli. Poiché fare clic su spazio inattivo non ha alcun risultato o feedback visivo, gli utenti sono spesso incerti sulla causa dell'errore.
+-   **Se i controlli non vengono toccati, hanno almeno 3 DLU (5 pixel relativi) di spazio tra di essi.** In caso contrario, gli utenti possono fare clic sullo spazio inattivo tra i controlli. Poiché fare clic su spazio inattivo non ha alcun risultato o feedback visivo, gli utenti sono spesso incerti su cosa sia andato storto.
 
 ### <a name="placement"></a>Selezione host
 
--   **Disporre gli elementi dell'interfaccia utente all'interno di una superficie in modo che scorrono naturalmente in ordine da sinistra a destra, dall'alto verso il basso (nelle impostazioni cultura occidentali).** La posizione degli elementi dell'interfaccia utente indica la relazione e deve rispecchiare i passaggi per eseguire l'attività.
--   **Posizionare gli elementi dell'interfaccia utente che avviano un'attività nell'angolo superiore sinistro o in alto al centro.** Assegnare all'elemento dell'interfaccia utente la massima enfasi visiva che gli utenti devono esaminare.
+-   **Disporre gli elementi dell'interfaccia utente all'interno di una superficie in modo che scorrono naturalmente in ordine da sinistra a destra, dall'alto verso il basso (nelle impostazioni cultura occidentali).** La posizione degli elementi dell'interfaccia utente comunica la relazione e deve rispecchiare i passaggi per eseguire l'attività.
+-   **Posizionare gli elementi dell'interfaccia utente che avviano un'attività nell'angolo superiore sinistro o in alto al centro.** Assegnare all'elemento dell'interfaccia utente che gli utenti devono esaminare prima di tutto la massima enfasi visiva.
 -   **Posizionare gli elementi dell'interfaccia utente che completano un'attività nell'angolo inferiore destro.**
--   **Riunire gli elementi correlati dell'interfaccia utente e separare gli elementi non correlati.**
+-   **Inserire gli elementi correlati dell'interfaccia utente e separare gli elementi non correlati.**
 -   **Inserire i passaggi necessari nel flusso principale.**
--   **Posizionare i passaggi facoltativi all'esterno del flusso principale,** possibilmente de-evidenziati usando un background appropriato o una divulgazione progressiva.
+-   **Posizionare i passaggi facoltativi all'esterno** del flusso principale, possibilmente de-sottolineati usando uno sfondo appropriato o una diffusione progressiva.
 -   **Posizionare gli elementi usati di frequente prima degli** elementi usati raramente nel percorso di analisi.
 
 ### <a name="focus"></a>Focus
 
--   **Scegliere un singolo elemento dell'interfaccia utente che gli utenti devono prima di tutto esaminare come punto focale.** Il punto focale deve essere qualcosa di importante che gli utenti devono trovare e comprendere rapidamente.
+-   **Scegliere un singolo elemento dell'interfaccia utente che gli utenti devono prima esaminare come punto focale.** Il punto focale deve essere qualcosa di importante che gli utenti devono trovare e comprendere rapidamente.
 -   **Posizionare il punto focale nell'angolo superiore sinistro o in alto al centro.**
--   **Assegnare al punto focale la massima enfasi visiva, ad** esempio testo in primo piano, selezione predefinita o stato attivo di input iniziale.
+-   **Assegnare al punto focale la massima enfasi visiva,** ad esempio testo prominente, selezione predefinita o stato attivo di input iniziale.
 
 ### <a name="alignment"></a>Allineamento
 
@@ -660,28 +660,28 @@ Come regola generale, se un elemento di layout può essere eliminato senza danne
 -   Usare l'allineamento a destra per i pulsanti di commit, nonché i controlli allineati al bordo destro della finestra.
 -   Usare l'allineamento al centro quando l'allineamento a sinistra o a destra non è appropriato o risulta non bilanciato.
 -   Quando si allineano verticalmente i controlli al testo, allineare le linee di base del testo per ottenere un flusso di lettura orizzontale uniforme.
--   Per l'allineamento delle etichette, vedere la [sezione Allineamento delle](#label-alignment) etichette in Concetti di progettazione.
+-   Per l'allineamento delle etichette, vedere la [sezione Allineamento etichetta](#label-alignment) in Concetti di progettazione.
 
 ### <a name="accessibility"></a>Accessibilità
 
 -   **Non usare il layout come unico mezzo per trasmettere informazioni importanti su un'interfaccia utente.** Gli utenti con problemi visivi potrebbero non essere in grado di interpretare questa presentazione. Ad esempio, assicurarsi che le etichette dei controlli comunichino la relazione con altri elementi.
--   **Non incorporare controlli subordinati nelle etichette dei controlli per creare una frase o una frase.** Queste associazioni si basano esclusivamente sul layout e non sono gestite correttamente dalla navigazione tramite tastiera o da assistive technology per l'accessibilità. Inoltre, questa tecnica non è localizzabile perché la struttura delle frasi varia in base alla lingua.
+-   **Non incorporare controlli subordinati all'interno delle etichette di controllo per creare una frase o una frase.** Queste associazioni si basano esclusivamente sul layout e non vengono gestite correttamente dalla navigazione tramite tastiera o dalle tecnologie di accessibilità assistive. Inoltre, questa tecnica non è localizzabile perché la struttura delle frasi varia in base alla lingua.
 
     **Non corretto:**
 
-    ![screenshot di una casella di testo al centro di una frase ](images/vis-layout-image43.png)
+    ![Screenshot di una casella di testo al centro di una frase ](images/vis-layout-image43.png)
 
-    In questo esempio la casella di testo viene inserita erroneamente all'interno dell'etichetta della casella di controllo.
+    In questo esempio la casella di testo viene inserita in modo non corretto all'interno dell'etichetta della casella di controllo.
 
     **Corretto:**
 
-    ![screenshot di una casella di testo alla fine di una frase ](images/vis-layout-image44.png)
+    ![Screenshot di una casella di testo alla fine di una frase ](images/vis-layout-image44.png)
 
     In questo caso, la casella di testo viene posizionata dopo l'etichetta della casella di controllo.
 
 -   **Rendere accessibile il raggruppamento.** I gruppi definiti da riquadri finestra, caselle di gruppo, separatori, etichette di testo e aggregatori vengono gestiti automaticamente dagli strumenti di accessibilità. Tuttavia, i gruppi definiti solo dal posizionamento e dagli sfondi non lo sono e devono essere definiti a livello di codice per l'accessibilità.
 
-Per altre linee guida, vedere [Accessibilità.](inter-accessibility.md)
+Per altre linee guida, vedere [Accessibilità](inter-accessibility.md).
 
 ## <a name="recommended-sizing-and-spacing"></a>Dimensioni e spaziatura consigliate
 
@@ -696,7 +696,7 @@ La tabella seguente elenca le dimensioni consigliate (larghezza x altezza o alte
 | ![Screenshot delle caselle di controllo e delle relative etichette ](images/vis-layout-image45.png)<br/>       | Caselle di controllo<br/>     | 10<br/>                                                                                     | 17<br/>                                                                                              |
 | ![Screenshot della casella combinata ](images/vis-layout-image46.png)<br/>                          | Caselle combinate<br/>     | larghezza dell'elemento più lungo + 30% x 14<br/>                                                       | larghezza dell'elemento più lungo + 30% x 23<br/>                                                                |
 | ![Screenshot di un pulsante di comando ](images/vis-layout-image47.png)<br/>                   | Pulsanti di comando<br/> | 50 x 14<br/>                                                                                | 75 x 23<br/>                                                                                         |
-| ![Screenshot di uno dei due collegamenti di comando selezionati ](images/vis-layout-image48.png)<br/>  | Collegamenti di comando<br/>   | 25 (una riga) o 35 (due righe)<br/>                                                        | 41 (una riga) o 58 (due righe)<br/>                                                                 |
+| ![Screenshot di uno dei due collegamenti di comando selezionati ](images/vis-layout-image48.png)<br/>  | Collegamenti ai comandi<br/>   | 25 (una riga) o 35 (due righe)<br/>                                                        | 41 (una riga) o 58 (due righe)<br/>                                                                 |
 | ![Screenshot di un elenco a discesa ](images/vis-layout-image49.png)<br/>                   | Elenchi a discesa<br/> | larghezza dei dati validi più lunghi + 30% x 14<br/>                                                 | larghezza dell'elemento più lungo + 30% x 23<br/>                                                                |
 | ![Screenshot di una casella di riepilogo ](images/vis-layout-image50.png)<br/>                         | Caselle di riepilogo<br/>      | larghezza dell'elemento più lungo + 30% x un numero integrale di elementi (minimo 3 elementi)<br/>            |                                                                                                            |
 | ![Screenshot di un elenco di file di immagine ](images/vis-layout-image51.png)<br/>            | Visualizzazioni elenco<br/>      | larghezze delle colonne che evitano i dati troncati x un numero integrale di elementi<br/>                 |                                                                                                            |

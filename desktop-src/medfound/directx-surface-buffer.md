@@ -1,40 +1,40 @@
 ---
-description: Buffer della superficie DirectX
+description: DirectX Surface Buffer
 ms.assetid: 2c82c023-4436-4f8a-b896-7f4765f989b3
-title: Buffer della superficie DirectX
+title: DirectX Surface Buffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02211d268e23bd7185cd480bee4e4dff297293b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 746cff1489a644fd5c4144c8c0d923f11e5ca4555886e8defbce3b9b26a16a35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828271"
 ---
-# <a name="directx-surface-buffer"></a>Buffer della superficie DirectX
+# <a name="directx-surface-buffer"></a>DirectX Surface Buffer
 
-L'oggetto buffer della superficie DirectX è un buffer multimediale che gestisce una superficie Direct3D. Per creare un'istanza di questo oggetto, chiamare [**MFCreateDXSurfaceBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatedxsurfacebuffer) e passare un puntatore alla superficie DirectX. Il buffer di superficie DirectX espone le interfacce seguenti:
+L'oggetto surface buffer DirectX è un buffer multimediale che gestisce una superficie Direct3D. Per creare un'istanza di questo oggetto, chiamare [**MFCreateDXSurfaceBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatedxsurfacebuffer) e passare un puntatore alla superficie DirectX. Il surface buffer DirectX espone le interfacce seguenti:
 
 -   [**IMFMediaBuffer**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediabuffer)
 -   [**IMF2DBuffer**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer)
 -   [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
 
-Sono disponibili diversi modi per accedere alla memoria della superficie dall'oggetto buffer:
+Esistono diversi modi per accedere alla memoria di superficie dall'oggetto buffer:
 
--   Consigliato: chiamare [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) nel buffer. Usare il **\_ \_ servizio buffer** di identificazione del servizio. Il metodo restituisce un puntatore alla superficie Direct3D sottostante.
--   Chiamare [**IMF2DBuffer:: Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d). Questo metodo chiama **IDirect3DSurface9:: LockRect** direttamente sulla superficie. Il metodo [**IMF2DBuffer:: Unlock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-unlock2d) chiama **UnlockRect** sulla superficie.
--   Chiamare [**IMFMediaBuffer:: Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock). In genere questa operazione non è consigliata, perché impone all'oggetto di copiare la memoria dall'area Direct3D e quindi di nuovo. Il metodo [**Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d) è più efficiente.
+-   Consigliato: chiamare [**IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) nel buffer. Usare l'identificatore di **servizio MR \_ BUFFER \_ SERVICE**. Il metodo restituisce un puntatore alla superficie Direct3D sottostante.
+-   Chiamare [**IMF2DBuffer::Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d). Questo metodo chiama **IDirect3DSurface9::LockRect** direttamente sulla superficie. Il [**metodo IMF2DBuffer::Unlock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-unlock2d) chiama **UnlockRect** sulla superficie.
+-   Chiamare [**IMFMediaBuffer::Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock). In genere questa operazione non è consigliata, perché impone all'oggetto di copiare la memoria dalla superficie Direct3D e quindi di nuovo. Il [**metodo Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d) è più efficiente.
 
 Sia [**Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) che [**Lock2D**](/windows/desktop/api/mfobjects/nf-mfobjects-imf2dbuffer-lock2d) possono avere esito negativo se la superficie sottostante non è bloccabile. Il buffer di superficie DirectX implementa questi due metodi principalmente per i componenti che non sono progettati per funzionare con le superfici Direct3D.
 
-Il renderer video avanzato (EVR) crea buffer della superficie DirectX quando il decodificatore non è configurato per l'accelerazione video DirectX (DXVA). Per ulteriori informazioni, vedere [**IMFVideoSampleAllocator**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocator).
+Il renderer video avanzato (EVR) crea buffer di superficie DirectX quando il decodificatore non è configurato per l'accelerazione video DirectX (DXVA). Per altre informazioni, vedere [**IMFVideoSampleAllocator.**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocator)
 
 ### <a name="obtaining-the-direct3d-surface"></a>Recupero della superficie Direct3D
 
-Per ottenere una superficie Direct3D da un esempio video, eseguire le operazioni seguenti:
+Per ottenere una superficie Direct3D da un esempio video, seguire questa procedura:
 
-1.  Chiamare [**IMFSample:: GetBufferByIndex**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbufferbyindex) con un valore di indice pari a zero.
-2.  Chiamare [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) e specificare l'identificatore del servizio del **\_ \_ servizio di buffer** .
+1.  Chiamare [**IMFSample::GetBufferByIndex**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbufferbyindex) con un valore di indice pari a zero.
+2.  Chiamare [**MFGetService e**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) specificare l'identificatore **del servizio BUFFER \_ \_ SERVICE MR.**
 
 Il codice seguente illustra questi passaggi:
 

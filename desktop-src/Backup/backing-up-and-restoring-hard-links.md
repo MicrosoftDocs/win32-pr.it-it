@@ -1,23 +1,23 @@
 ---
-title: Backup e ripristino di collegamenti reali
-description: Per eseguire il backup e il ripristino dei collegamenti reali, utilizzare le funzioni CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle e BackupWrite, come illustrato negli esempi di pseudocodice seguenti.
+title: Backup e ripristino di collegamenti rigidi
+description: Per eseguire il backup e il ripristino dei collegamenti rigidi, usare le funzioni CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle e BackupWrite, come illustrato negli esempi di pseudocodice seguenti.
 ms.assetid: 129e9cf4-8ab1-45d2-8e1a-4bc85b9de668
 keywords:
-- Backup dei collegamenti reali
+- collegamenti rigidi Backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c72155231295a1eb07b6b565c018b765693c8f46
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25e5cf5a114160456e83e39cb06f441554f998df65bed2ea8f0e63b036c33c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702221"
 ---
-# <a name="backing-up-and-restoring-hard-links"></a>Backup e ripristino di collegamenti reali
+# <a name="backing-up-and-restoring-hard-links"></a>Backup e ripristino di collegamenti rigidi
 
-Per eseguire il backup e il ripristino dei collegamenti reali, utilizzare le funzioni [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew), [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread), [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)e [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) , come illustrato negli esempi di pseudocodice seguenti.
+Per eseguire il backup e il ripristino dei collegamenti rigidi, usare le funzioni [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew), [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread), [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)e [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) , come illustrato negli esempi di pseudocodice seguenti.
 
-## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocodice per il backup dei collegamenti reali
+## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocodice per il backup di collegamenti rigidi
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -49,7 +49,7 @@ Per eseguire il backup e il ripristino dei collegamenti reali, utilizzare le fun
 22. EndWhile
 ```
 
-## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo pseudocodice per il ripristino di collegamenti reali
+## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo pseudocodice per il ripristino dei collegamenti rigidi
 
 ``` syntax
 1.  While there are more files to restore 
@@ -60,9 +60,9 @@ Per eseguire il backup e il ripristino dei collegamenti reali, utilizzare le fun
 6.  EndWhile
 ```
 
-**Windows Server 2003 e Windows XP:** Le funzioni [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) non sono supportate. È invece possibile utilizzare la procedura illustrata nell'esempio di pseudocodice seguente.
+**Windows Server 2003 e Windows XP:** Le [**funzioni FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) non sono supportate. È invece possibile usare la procedura descritta nell'esempio di pseudocodice seguente.
 
-## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocodice alternativo per il backup dei collegamenti reali
+## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocodice alternativo per il backup di collegamenti rigidi
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -91,6 +91,6 @@ Per eseguire il backup e il ripristino dei collegamenti reali, utilizzare le fun
 18. EndWhile
 ```
 
- 
+ 
 
- 
+ 

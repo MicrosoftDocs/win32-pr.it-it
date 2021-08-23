@@ -1,7 +1,7 @@
 ---
-description: Segnala che è stata avviata una modifica della frequenza nella riproduzione DVD.
+description: Segnala che è stata avviata una modifica della frequenza nella riproduzione di DVD.
 ms.assetid: 2a1e3c21-1623-4e43-8c7b-1a34514442c9
-title: EC_DVD_PLAYBACK_RATE_CHANGE (Dvdevcode. h)
+title: EC_DVD_PLAYBACK_RATE_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 20ddc41fd70906fabc522daa4dcb7714b71e4251
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8de40dc8fd7f70dda522f4d1faf34f8c05059c6928f80a141d7ac9ae1889ecec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823681"
 ---
-# <a name="ec_dvd_playback_rate_change"></a>\_modifica della \_ frequenza di riproduzione DVD \_ EC \_
+# <a name="ec_dvd_playback_rate_change"></a>MODIFICA DELLA \_ VELOCITÀ DI RIPRODUZIONE DEI DVD \_ \_ \_ EC
 
-Segnala che è stata avviata una modifica della frequenza nella riproduzione DVD.
+Segnala che è stata avviata una modifica della frequenza nella riproduzione di DVD.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Segnala che è stata avviata una modifica della frequenza nella riproduzione DVD
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore LONG che indica la nuova velocità di riproduzione. Il valore è la velocità effettiva di riproduzione moltiplicata per 10.000, quindi la velocità di riproduzione è uguale a 10000,0/ *lParam1*. I valori minori di zero indicano la modalità di riproduzione inversa e i valori maggiori di zero indicano la modalità di riproduzione in modalità diretta.
+LONG che indica la nuova velocità di riproduzione. Il valore è la velocità di riproduzione effettiva moltiplicata per 10.000, quindi la velocità di riproduzione è uguale a 10000,0 */lParam1.* I valori minori di zero indicano la modalità di riproduzione inversa e i valori maggiori di zero indicano la modalità di riproduzione in avanti.
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ Zero.
 
 Questo evento viene generato nel dominio del titolo.
 
-La *frequenza* di riproduzione è l'inverso della *velocità* di riproduzione. Se ad esempio la velocità di riproduzione è 2x, la frequenza è 0,5.
+La *velocità di* riproduzione è l'inverso della velocità di *riproduzione.* Ad esempio, se la velocità di riproduzione è 2x, la velocità è 0,5.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ La *frequenza* di riproduzione è l'inverso della *velocità* di riproduzione. S
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

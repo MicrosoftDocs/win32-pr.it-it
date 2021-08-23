@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_COLUMNLIST Class'
-title: Classe JET_COLUMNLIST
+description: 'Altre informazioni su: JET_COLUMNLIST classe'
+title: JET_COLUMNLIST classe
 TOCTitle: JET_COLUMNLIST class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_COLUMNLIST
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnlist(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 22e50992d6a0d37637fc1080f547b398a5f3b31b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53414240caf0020e092d31408f39fc4e4debb861f492b0f92f99d46a7baa85d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720761"
 ---
-# <a name="jet_columnlist-class"></a>Classe JET_COLUMNLIST
+# <a name="jet_columnlist-class"></a>JET_COLUMNLIST classe
 
-Informazioni su una tabella temporanea che contiene informazioni su tutte le colonne di una tabella specificata.
+Informazioni su una tabella temporanea contenente informazioni su tutte le colonne per una determinata tabella.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_COLUMNLIST  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_COLUMNLIST](./jet-columnlist-members.md)
+[JET_COLUMNLIST membri](./jet-columnlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: Attributo USN-Created
-description: Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione dell'oggetto. Vedere anche USN-changed.
+title: USN-Created attributo
+description: Numero di sequenza di aggiornamento (USN) assegnato durante la creazione dell'oggetto. Vedere anche, USN-Changed.
 ms.assetid: c38456b8-fc8f-4ea0-8f3d-e2bb3b44ff50
 ms.tgt_platform: multiple
 keywords:
-- Schema AD USN-Created attribute
+- USN-Created schema AD dell'attributo
 - Schema AD dell'attributo uSNCreated
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b950ddfe261de5d46980e51b236da0f775fcb01b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af6cd8e2483e7a5e73fbc68dd123a358f098a729a2f2a0159ccd4e8b3e03d894
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702861"
 ---
-# <a name="usn-created-attribute"></a>Attributo USN-Created
+# <a name="usn-created-attribute"></a>USN-Created attributo
 
-Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione dell'oggetto. Vedere anche [**USN-changed**](a-usnchanged.md).
+Numero di sequenza di aggiornamento (USN) assegnato durante la creazione dell'oggetto. Vedere anche, [**USN-Changed**](a-usnchanged.md).
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | USN-Created                          |
-| LDAP-Display-Name | uSNCreated                           |
+| Ldap-Display-Name | uSNCreated                           |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
-| Frequenza di aggiornamento  | Quando viene creato l'oggetto.          |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Frequenza di aggiornamento  | Quando viene creato l'oggetto .          |
 | Attribute-Id      | 1.2.840.113556.1.2.19                |
-| System-ID-GUID    | bf967a70-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967a70-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -44,7 +44,7 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Numero di sequenza di aggiornamento (USN) assegnato al momento della creazione d
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8154                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

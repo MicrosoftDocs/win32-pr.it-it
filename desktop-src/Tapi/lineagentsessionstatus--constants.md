@@ -1,33 +1,33 @@
 ---
-description: Le \_ costanti LINEAGENTSESSIONSTATUS descrivono diversi Stati della sessione di Agent.
+description: Le costanti LINEAGENTSESSIONSTATUS \_ descrivono vari stati della sessione dell'agente.
 ms.assetid: a9101c51-2288-4055-9381-4c68564361f8
-title: Costanti LINEAGENTSESSIONSTATUS_ (TAPI. h)
+title: LINEAGENTSESSIONSTATUS_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 535981b61260c10e9386e413e9af4f7a0b1d469a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 75cbcfb6c590df20248f3eb0135a52f5eda47e9c4a4de8c9de7afc6b9927eeb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682171"
 ---
-# <a name="lineagentsessionstatus_-constants"></a>\_Costanti LINEAGENTSESSIONSTATUS
+# <a name="lineagentsessionstatus_-constants"></a>Costanti LINEAGENTSESSIONSTATUS \_
 
-Le **\_ costanti LINEAGENTSESSIONSTATUS** descrivono diversi Stati della sessione di Agent.
+Le **costanti LINEAGENTSESSIONSTATUS \_ descrivono** vari stati della sessione dell'agente.
 
 <dl> <dt>
 
-<span id="LINEAGENTSESSIONSTATUS_NEWSESSION"></span><span id="lineagentsessionstatus_newsession"></span>**\_NEWSESSION LINEAGENTSESSIONSTATUS**
+<span id="LINEAGENTSESSIONSTATUS_NEWSESSION"></span><span id="lineagentsessionstatus_newsession"></span>**LINEAGENTSESSIONSTATUS \_ NEWSESSION**
 </dt> <dd> <dl> <dt>
 
 
 
-È stata creata una nuova sessione di Agent.
+È stata creata una nuova sessione dell'agente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATUS_STATE"></span><span id="lineagentsessionstatus_state"></span>**\_stato LINEAGENTSESSIONSTATUS**
+<span id="LINEAGENTSESSIONSTATUS_STATE"></span><span id="lineagentsessionstatus_state"></span>**STATO \_ LINEAGENTSESSIONSTATUS**
 </dt> <dd> <dl> <dt>
 
 
@@ -37,7 +37,7 @@ Stato della sessione dell'agente corrente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATUS_UPDATEINFO"></span><span id="lineagentsessionstatus_updateinfo"></span>**\_UpdateInfo LINEAGENTSESSIONSTATUS**
+<span id="LINEAGENTSESSIONSTATUS_UPDATEINFO"></span><span id="lineagentsessionstatus_updateinfo"></span>**LINEAGENTSESSIONSTATUS \_ UPDATEINFO**
 </dt> <dd> <dl> <dt>
 
 
@@ -53,8 +53,8 @@ Aggiornamento delle statistiche della sessione dell'agente corrente
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

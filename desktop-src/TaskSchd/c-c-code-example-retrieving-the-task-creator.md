@@ -1,18 +1,18 @@
 ---
-title: Esempio di codice C/C++ durante il recupero dell'autore dell'attività
+title: Esempio di codice C/C++ Recupero dell'autore dell'attività
 description: Questo esempio recupera il nome dell'autore dell'attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 02554ce1-2d52-48e9-95f1-d5d480519035
 keywords:
-- recupero Utilità di pianificazione dell'autore di attività
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, creatore attività
+- recupero dell'autore dell'attività Utilità di pianificazione
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione, creatore di attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3546d676a5f1ac4b99595e47f2514b84e38f4c08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: baa756fbb10e2d0cd68cce8953dd38cf2d31ab0242d74faea07423292908665b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872497"
 ---
 # <a name="cc-code-example-retrieving-the-task-creator"></a>Esempio di codice C/C++: recupero dell'autore dell'attività
 
@@ -118,12 +118,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

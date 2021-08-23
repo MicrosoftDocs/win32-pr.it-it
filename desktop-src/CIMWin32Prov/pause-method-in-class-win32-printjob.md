@@ -1,8 +1,8 @@
 ---
-description: Il metodo Sospendi classe WMI sospende un processo di stampa.
+description: Il metodo della classe WMI Pause sospende un processo di stampa.
 ms.assetid: f1e3906f-1ca2-45c0-9863-5762e4e2119a
 ms.tgt_platform: multiple
-title: Metodo pause della classe Win32_PrintJob
+title: Metodo Pause della classe Win32_PrintJob
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 785ba54b56c65fd298b6ef763ec2d7eca0d8f61a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1448e993a88f2f5ce800de041779fb66f383c8973143b90200622758511ef337
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752821"
 ---
-# <a name="pause-method-of-the-win32_printjob-class"></a>Metodo pause della classe Win32 \_ PrintJob
+# <a name="pause-method-of-the-win32_printjob-class"></a>Metodo Pause della classe PrintJob Win32 \_
 
-Il metodo **Sospendi** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) sospende un processo di stampa.
+Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Pause** sospende un processo di stampa.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,9 +62,9 @@ Accesso negato
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Sospendi tutte le stampanti con code di stampa vuote di](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) codice VBScript sospende tutte le stampanti che non dispongono di processi di stampa in sospeso.
+L'esempio di codice VBScript [Pause All Printers with Empty Print Queues](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) (Sospendi tutte le stampanti con code di stampa vuote) sospende tutte le stampanti che non hanno processi di stampa in sospeso.
 
-Nell'esempio di codice VBScript seguente vengono sospesi tutti i processi di stampa in un server di stampa.
+L'esempio di codice VBScript seguente sospende tutti i processi di stampa in un server di stampa.
 
 
 ```VB
@@ -91,7 +91,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -100,10 +100,10 @@ Next
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PrintJob Win32**](win32-printjob.md)
+[**Processo di stampa \_ Win32**](win32-printjob.md)
 </dt> </dl>
 
  

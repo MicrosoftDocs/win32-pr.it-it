@@ -1,23 +1,23 @@
 ---
-title: RETC (SM4-ASM)
-description: Risultato condizionale.
+title: retc (sm4 - asm)
+description: Restituzione condizionale.
 ms.assetid: D936099D-4A75-4AE2-9FE3-70ED213DF4D9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e394bc6b947d91fafb09dbfdc075b0c60be2cf8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 2d68d65cf64c3c1fb7945f93053f280be3eb3bd9d5fe76e34f30102316b1f1e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104976442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853741"
 ---
-# <a name="retc-sm4---asm"></a>RETC (SM4-ASM)
+# <a name="retc-sm4---asm"></a>retc (sm4 - asm)
 
-Risultato condizionale.
+Restituzione condizionale.
 
 
 
-| RETC { \_ z \|\_NZ} src0. Select ( \_ componente) |
+| retc{ \_ z\|\_nz} src0.select \_ component |
 |----------------------------------------|
 
 
@@ -28,7 +28,7 @@ Risultato condizionale.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] registro in cui verificare la condizione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] registro in cui testare la condizione.<br/> |
 
 
 
@@ -36,9 +36,9 @@ Risultato condizionale.
 
 ## <a name="remarks"></a>Commenti
 
-Se all'interno di una subroutine, questa istruzione restituisce in modo condizionale l'istruzione dopo la chiamata. Se non si trova all'interno di una subroutine, questa istruzione termina l'esecuzione del programma.
+Se all'interno di una subroutine, questa istruzione torna in modo condizionale all'istruzione dopo la chiamata. Se non si trova all'interno di una subroutine, questa istruzione termina l'esecuzione del programma.
 
-Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
+L'esempio seguente illustra come usare questa istruzione.
 
 ``` syntax
            ...
@@ -55,9 +55,9 @@ Nell'esempio seguente viene illustrato come utilizzare questa istruzione.
 
 ### <a name="restrictions"></a>Restrizioni
 
--   **RETC** possono essere presenti in qualsiasi punto di un programma, un numero qualsiasi di volte.
--   L'ultima istruzione in un programma principale o in una subroutine non può essere **RETC \_ z** o **RETC \_ NZ**. Al contrario, è possibile utilizzare il [ret](ret--sm4---asm-.md) non condizionale.
--   Il registro a 32 bit fornito da *src0* viene testato a livello di bit. Se un bit è diverso da zero, **ret \_ NZ** restituirà. Se tutti i bit sono zero, **RETC \_ z** restituirà.
+-   **retc** può essere visualizzato in qualsiasi punto di un programma, in qualsiasi numero di volte.
+-   L'ultima istruzione in un programma principale o in una subroutine non può essere **retc \_ z** o **retc \_ nz**. È invece possibile usare il [ret non](ret--sm4---asm-.md) condizionale.
+-   Il registro a 32 bit fornito da *src0* viene testato a livello di bit. Se un bit qualsiasi è diverso da zero, **ret \_ nz** restituirà . Se tutti i bit sono pari a zero, **retc \_ z** restituirà .
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -71,7 +71,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -79,12 +79,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -94,7 +94,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

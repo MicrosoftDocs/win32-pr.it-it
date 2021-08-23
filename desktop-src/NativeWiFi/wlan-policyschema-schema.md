@@ -1,7 +1,7 @@
 ---
-description: Definisce un profilo dei criteri WLAN utilizzato dal servizio di configurazione automatica WiFi nativo.
+description: Definisce un profilo di criteri WLAN usato dal servizio AutoConfig Wifi nativo.
 ms.assetid: b983df2e-95cf-41ce-929e-2bc560854f21
-title: Schema WLAN_policy
+title: WLAN_policy Schema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 02814762b687d93d46ed06332c3675f4e2465a16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c8e14c24ab7457c82faaebade127585208641ebac0379b71b990a15abd4efbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799951"
 ---
-# <a name="wlan_policy-schema"></a>\_Schema dei criteri WLAN
+# <a name="wlan_policy-schema"></a>Schema dei criteri WLAN \_
 
-Lo \_ schema dei criteri WLAN definisce un profilo dei criteri WLAN usato dal servizio di configurazione automatica WiFi nativo.
+Lo schema dei criteri WLAN \_ definisce un profilo di criteri WLAN usato dal servizio AutoConfig WiFi nativo.
 
-L'elemento radice di un profilo del criterio WLAN è l'elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) . Ogni profilo avrà esattamente un elemento radice. Tutti \_ gli elementi del criterio WLAN si trovano nello spazio dei nomi `https://www.microsoft.com/networking/WLAN/policy/v1` .
+L'elemento radice di un profilo di criteri WLAN è [**l'elemento WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md) Ogni profilo avrà esattamente un elemento radice. Tutti gli elementi dei criteri WLAN \_ sono nello spazio dei nomi `https://www.microsoft.com/networking/WLAN/policy/v1` .
 
--   [\_Elementi policySchema di WLAN](wlan-policyschema-elements.md)
--   [\_Tipi semplici di WLAN policySchema](wlan-policyschema-simple-types.md)
--   [\_Tipi complessi policySchema di WLAN](wlan-policyschema-complex-types.md)
+-   [Elementi \_ policySchema WLAN](wlan-policyschema-elements.md)
+-   [WLAN \_ policySchema Simple Types](wlan-policyschema-simple-types.md)
+-   [Criteri WLAN \_ Tipi complessi schema](wlan-policyschema-complex-types.md)
 
  
 

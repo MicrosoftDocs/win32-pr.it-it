@@ -1,49 +1,49 @@
 ---
 title: Lettore XML
-description: Il lettore XML è un cursore su un'origine di input di XML. Al suo nucleo, un lettore XML legge un nodo XML alla volta, ma sono disponibili API helper aggiuntive per semplificare la lettura di una sequenza di nodi.
+description: Lettore XML è un cursore su un'origine di input xml. Alla base, un lettore XML legge un nodo XML alla volta, ma sono disponibili API helper aggiuntive per semplificare la lettura di una sequenza di nodi.
 ms.assetid: 1f99e45c-64ba-42fb-9bf0-35e27f1c5ef2
 keywords:
-- Servizi Web Reader XML per Windows
+- Servizi Web di lettura XML per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9d9c91b6594ec569536751751a3efca4c32e08
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6a03ef961cd49c481564b6bad1ad86603c9cb576f0c8aeda1a7cd2d6d18aaeef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104474657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770871"
 ---
 # <a name="xml-reader"></a>Lettore XML
 
-Il lettore XML è un cursore su un'origine di input di XML. Al suo nucleo, un lettore XML legge un [nodo XML](xml-node.md) alla volta, ma sono disponibili API helper aggiuntive per semplificare la lettura di una sequenza di nodi.
+Lettore XML è un cursore su un'origine di input xml. Alla base, un lettore XML legge un nodo [XML](xml-node.md) alla volta, ma sono disponibili API helper aggiuntive per semplificare la lettura di una sequenza di nodi.
 
 
-Sono supportati i tipi di input Reader seguenti:
+Sono supportati i tipi di input dei lettori seguenti:
 
--   [**Un buffer in memoria di byte codificati**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_buffer_input)
--   [**Un flusso**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_stream_input)
--   Un [buffer XML](xml-buffer.md)
+-   [**Buffer in memoria di byte codificati**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_buffer_input)
+-   [**Flusso**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_stream_input)
+-   Buffer [XML](xml-buffer.md)
 
 ### <a name="security"></a>Sicurezza
 
-Il lettore verificherà che gli attributi presenti in un elemento siano univoci. Il tempo necessario per eseguire questa convalida è una funzione del numero di attributi sull'elemento che può essere pari a quello degli [**\_ \_ \_ \_ \_ attributi max della proprietà Reader di WS XML**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id). Di conseguenza, l'elaborazione di documenti di grandi dimensioni quando la **\_ \_ \_ proprietà \_ Max \_ del lettore XML WS** è impostata su un valore elevato può presentare un'opportunità di attacco Denial of Service.
+Il lettore verificherà che gli attributi presenti in un elemento siano univoci. Il tempo necessario per eseguire questa convalida è una funzione del numero di attributi nell'elemento che può essere grande quanto [**WS \_ XML READER PROPERTY MAX \_ \_ \_ \_ ATTRIBUTES**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id). Pertanto, l'elaborazione di documenti di grandi dimensioni quando **WS \_ XML READER PROPERTY MAX \_ \_ \_ \_ ATTRIBUTES** è impostato su un valore elevato può presentare un'opportunità per un attacco Denial of Service.
 
-Il lettore eseguirà il mapping dei prefissi agli spazi dei nomi per ogni elemento e attributo. Il tempo necessario per eseguire questo mapping è una funzione del numero di attributi xmlns nell'ambito, che può avere dimensioni pari alla [**\_ \_ \_ proprietà \_ Max \_ del lettore XML WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id). Pertanto, l'elaborazione di documenti di grandi dimensioni quando questa proprietà è impostata su un valore elevato può presentare un'opportunità per un attacco Denial of Service.
+Il lettore esegue il mapping dei prefissi agli spazi dei nomi per ogni elemento e attributo. Il tempo necessario per eseguire questo mapping è una funzione del numero di attributi xmlns nell'ambito che possono essere grandi quanto [**WS \_ XML READER PROPERTY MAX \_ \_ \_ \_ NAMESPACES**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id). Pertanto, l'elaborazione di documenti di grandi dimensioni quando questa proprietà è impostata su un valore elevato può presentare un'opportunità per un attacco Denial of Service.
 
-Sebbene il lettore garantisca che il documento segua la specifica grammaticale del codice XML e che i relativi aspetti siano all'interno delle quote specificate, il contenuto del documento deve essere considerato non attendibile quando provengono da un'origine non attendibile. Gli utenti del lettore dovrebbero controllare tutti i nomi di elementi e attributi e gli spazi dei nomi usando [**WsReadToStartElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadtostartelement), [**WsFindAttribute**](/windows/desktop/api/WebServices/nf-webservices-wsfindattribute)o ispezionando manualmente i [**nodi**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node).
+Anche se il lettore garantisce che il documento segua la specifica grammaticale di xml e che i relativi aspetti siano entro le quote specificate, il contenuto del documento deve comunque essere considerato non attendibile quando proviene da un'origine non attendibile. Gli utenti del lettore devono controllare tutti i nomi di elementi e attributi e gli spazi dei nomi [**usando WsReadToStartElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadtostartelement), [**WsFindAttribute**](/windows/desktop/api/WebServices/nf-webservices-wsfindattribute)o controllando manualmente [**i nodi**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node).
 
-Di seguito sono riportate alcune altre situazioni da considerare:
+Alcune altre situazioni da considerare includono, ma non sono limitate a:
 
--   È possibile che gli elementi previsti siano mancanti
--   È possibile che vengano visualizzati elementi imprevisti
--   È possibile che gli attributi previsti siano mancanti
--   È possibile che vengano visualizzati attributi imprevisti
--   Gli elementi possono apparire come elementi vuoti
--   Gli spazi vuoti possono essere visualizzati in posizioni non previste
+-   Gli elementi previsti potrebbero non essere presenti
+-   Potrebbero essere visualizzati elementi imprevisti
+-   Gli attributi previsti potrebbero non essere presenti
+-   Potrebbero essere visualizzati attributi imprevisti
+-   Gli elementi possono essere visualizzati come elementi vuoti
+-   È possibile che gli spazi vuoti vengano visualizzati in posizioni impreviste
 
-Gli utenti del lettore non devono allocare memoria basata semplicemente sui valori letti dal documento. Si consideri, ad esempio, il documento XML seguente:
+Gli utenti del lettore non devono allocare memoria in base ai valori letti dal documento. Si consideri ad esempio il documento XML seguente:
 
 ``` syntax
 <array count='1000000'>
@@ -51,21 +51,21 @@ Gli utenti del lettore non devono allocare memoria basata semplicemente sui valo
 </array>
 ```
 
-L'allocazione di una matrice basata esclusivamente sul presupposto che un certo numero di elementi seguirebbe un potenziale vettore di attacco. In questo caso, l'utente del lettore deve allocare in modo incrementale la memoria mentre gli elementi vengono visualizzati.
+L'allocazione di una matrice basata esclusivamente sul presupposto che un certo numero di elementi seguirà sarebbe un potenziale vettore di attacco. L'utente del lettore in questo caso deve invece allocare in modo incrementale la memoria quando vengono visualizzati gli elementi.
 
-Il lettore XML non supporta la definizione DTD. Non è necessario che l'utente del lettore si occupi della verifica della DTD.
+Il lettore XML non supporta la DTD. L'utente del lettore non deve riguardare la verifica DTD.
 
-Il callback seguente viene utilizzato con i reader XML:
+Con i lettori XML viene usato il callback seguente:
 
--   [**\_callback di lettura WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_read_callback)
+-   [**CALLBACK \_ DI LETTURA WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_read_callback)
 
-Con i reader XML vengono utilizzate le enumerazioni seguenti:
+Con i lettori XML vengono usate le enumerazioni seguenti:
 
--   [**\_tipo di \_ codifica del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_encoding_type)
--   [**\_tipo di \_ input del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_input_type)
--   [**\_ \_ \_ ID proprietà lettore XML \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id)
+-   [**TIPO DI \_ CODIFICA LETTORE XML \_ \_ \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_encoding_type)
+-   [**TIPO DI \_ \_ INPUT LETTORE XML \_ WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_input_type)
+-   [**ID PROPRIETÀ \_ LETTORE XML WS \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_reader_property_id)
 
-Con i reader XML vengono utilizzate le funzioni seguenti:
+Con i lettori XML vengono usate le funzioni seguenti:
 
 -   [**WsCreateReader**](/windows/desktop/api/WebServices/nf-webservices-wscreatereader)
 -   [**WsFillReader**](/windows/desktop/api/WebServices/nf-webservices-wsfillreader)
@@ -94,21 +94,21 @@ Con i reader XML vengono utilizzate le funzioni seguenti:
 -   [**WsSetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wssetreaderposition)
 -   [**WsSkipNode**](/windows/desktop/api/WebServices/nf-webservices-wsskipnode)
 
-Con i reader XML viene utilizzato l'handle seguente:
+Con i lettori XML viene usato l'handle seguente:
 
--   [\_lettore XML \_ WS](ws-xml-reader.md)
+-   [LETTORE \_ XML WS \_](ws-xml-reader.md)
 
-Con i reader XML vengono utilizzate le strutture seguenti:
+Con i lettori XML vengono usate le strutture seguenti:
 
--   [**\_ \_ \_ codifica binaria del lettore XML WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_binary_encoding)
--   [**\_ \_ input buffer del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_buffer_input)
--   [**\_codifica del \_ lettore \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_encoding)
--   [**\_ \_ input lettore XML \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_input)
--   [**\_ \_ codifica MTOM del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_mtom_encoding)
--   [**\_proprietà del \_ lettore \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_properties)
--   [**\_proprietà del \_ lettore \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_property)
--   [**\_ \_ input flusso del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_stream_input)
--   [**\_codifica del \_ testo del lettore XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_text_encoding)
+-   [**CODIFICA \_ BINARIA LETTORE XML WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_binary_encoding)
+-   [**INPUT DEL \_ BUFFER DEL \_ \_ LETTORE XML WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_buffer_input)
+-   [**CODIFICA DEL \_ \_ LETTORE XML WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_encoding)
+-   [**INPUT \_ LETTORE XML WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_input)
+-   [**CODIFICA \_ MTOM DEL LETTORE XML \_ \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_mtom_encoding)
+-   [**PROPRIETÀ \_ LETTORE XML WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_properties)
+-   [**PROPRIETÀ \_ LETTORE XML WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_property)
+-   [**INPUT DEL \_ FLUSSO DEL \_ LETTORE XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_stream_input)
+-   [**CODIFICA DEL \_ TESTO DEL \_ LETTORE XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_reader_text_encoding)
 
  
 

@@ -1,10 +1,10 @@
-- name: Informazioni di riferimento sull'installazione del dispositivo e del driver
+- name: Informazioni di riferimento sull'installazione di dispositivi e driver
   href: device-and-driver-installation-reference.md
   items:
-    - name: Informazioni di riferimento sull'installazione del dispositivo e del driver nei file di intestazione SDK
+    - name: Informazioni di riferimento sull'installazione di dispositivi e driver nei file di intestazione dell'SDK
       href: device-installation-for-applications.md
       items:
-        - name: Cfg. h
+        - name: Cfg.h
           href: cfg-h.md
           items:
             - name: PNP_VETO_TYPE
@@ -313,11 +313,11 @@
               href: /previous-versions/windows/hardware/difxapi/driverpackagepreinstall
             - name: DriverPackageUninstall
               href: /previous-versions/windows/hardware/difxapi/driverpackageuninstall
-            - name: INSTALLERINFO
+            - name: INFORMAZIONI SUL PROGRAMMA DI INSTALLAZIONE
               href: /previous-versions/windows/hardware/difxapi/installerinfo
             - name: SetDifxLogCallback
               href: /previous-versions/windows/hardware/difxapi/setdifxlogcallback
-        - name: Newdev. h
+        - name: Newdev.h
           href: newdev-h.md
           items:
             - name: DiInstallDevice
@@ -332,7 +332,7 @@
               href: /windows/desktop/api/Newdev/nf-newdev-diuninstalldevice
             - name: UpdateDriverForPlugAndPlayDevices
               href: /windows/desktop/api/Newdev/nf-newdev-updatedriverforplugandplaydevicesa
-        - name: Setupapi. h
+        - name: Setupapi.h
           href: setupapi-h.md
           items:
             - name: SetupDiAskForOEMDisk
@@ -431,7 +431,7 @@
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetclassregistrypropertya
             - name: SetupDiGetCustomDeviceProperty
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetcustomdevicepropertya
-            - name: SetupDiGetDeviceInfoListClass
+            - name: Classe SetupDiGetDeviceInfoList
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetdeviceinfolistclass
             - name: SetupDiGetDeviceInfoListDetail
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetdeviceinfolistdetaila
@@ -465,13 +465,13 @@
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigethwprofilelist
             - name: SetupDiGetHwProfileListEx
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigethwprofilelistexa
-            - name: SetupDiGetINFClass
+            - name: Classe SetupDiGetINF
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetinfclassa
             - name: SetupDiGetSelectedDevice
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetselecteddevice
             - name: SetupDiGetSelectedDriver
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdigetselecteddrivera
-            - name: SetupDiInstallClass
+            - name: Classe SetupDiInstallClass
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdiinstallclassa
             - name: SetupDiInstallClassEx
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdiinstallclassexa

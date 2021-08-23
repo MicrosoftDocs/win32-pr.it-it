@@ -1,7 +1,7 @@
 ---
 description: Recupera il valore che indica se un oggetto IContextNode è parzialmente popolato o completamente popolato.
 ms.assetid: 13ac3fb2-7baa-48d7-bf8e-f36b4031fbc4
-title: 'Metodo IContextNode:: GetPartiallyPopulated (IACom. h)'
+title: Metodo IContextNode::GetPartiallyPopulated (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 4b05cb8aae681a7302ae7da40a7412cf828fc159
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fab5b5fce4d87c32fb3435fdad2cfc6b126069b40c7e5c7c2fb302ee468e480
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773801"
 ---
-# <a name="icontextnodegetpartiallypopulated-method"></a>Metodo IContextNode:: GetPartiallyPopulated
+# <a name="icontextnodegetpartiallypopulated-method"></a>Metodo IContextNode::GetPartiallyPopulated
 
 Recupera il valore che indica se un oggetto [**IContextNode**](icontextnode.md) è parzialmente popolato o completamente popolato.
 
@@ -39,20 +39,20 @@ HRESULT GetPartiallyPopulated(
 
 <dl> <dt>
 
-*pfPartiallyPopulated* \[ out\]
+*pfPartiallyPopulated* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se l'oggetto [**IContextNode**](icontextnode.md) non contiene dati completi. in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se questo [**oggetto IContextNode**](icontextnode.md) non contiene dati completi. in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo quando l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer**](iinkanalyzer.md). Per altre informazioni, vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Usare questo metodo quando l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer.**](iinkanalyzer.md) Per altre informazioni, vedere [Proxy dati con analisi input penna.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Utilizzare questo metodo quando l'applicazione mantiene la propria struttura di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -77,13 +77,13 @@ Utilizzare questo metodo quando l'applicazione mantiene la propria struttura di 
 [**IContextNode::SetPartiallyPopulated**](icontextnode-setpartiallypopulated.md)
 </dt> <dt>
 
-[**IContextNode:: CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md)
+[**IContextNode::CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md)
 </dt> <dt>
 
 [**\_IAnalysisProxyEvents::P opulateContextNode**](-ianalysisproxyevents-populatecontextnode.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

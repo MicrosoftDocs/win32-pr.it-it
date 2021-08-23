@@ -1,10 +1,10 @@
 ---
-title: Attributo msSFU-30-is-valid-container-attributo
-description: Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice di ricerca corrente è valida.
+title: Attributo msSFU-30-Is-Valid-Container
+description: Contiene i dati interni utilizzati dal server per NIS, che archiviano se la radice di ricerca corrente è valida.
 ms.assetid: 70ff1155-f8ab-48c2-900d-86664b30c59c
 ms.tgt_platform: multiple
 keywords:
-- Attributo msSFU-30-is-valid-schema AD dell'attributo contenitore
+- Schema AD dell'attributo msSFU-30-Is-Valid-Container
 - Schema AD dell'attributo msSFU30IsValidContainer
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22155223beca6167f3f380be6ea71ac0f3e5ef31
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b6c131d06be86cc71ebe40e63237df9bdea6caca13e9d24a69cfc80fe25b325a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761331"
 ---
-# <a name="mssfu-30-is-valid-container-attribute"></a>Attributo msSFU-30-is-valid-container-attributo
+# <a name="mssfu-30-is-valid-container-attribute"></a>Attributo msSFU-30-Is-Valid-Container
 
-Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice di ricerca corrente è valida.
+Contiene i dati interni utilizzati dal server per NIS, che archiviano se la radice di ricerca corrente è valida.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Attributo msSFU-30-is-valid-container          |
-| LDAP-Display-Name | msSFU30IsValidContainer              |
+| CN                | msSFU-30-Is-Valid-Container          |
+| Ldap-Display-Name | msSFU30IsValidContainer              |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.350          |
-| System-ID-GUID    | 0dea42f5-278d-4157-B4A7-49b59664915b |
+| System-Id-Guid    | 0dea42f5-278d-4157-b4a7-49b59664915b |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -56,15 +56,15 @@ Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene i dati interni utilizzati dal server per NIS, che archivia se la radice
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: etichetta-PS
-description: Contrassegnare l'istruzione successiva in modo che disponga di un indice di etichetta. | etichetta-PS
+title: label - ps
+description: Contrassegnare l'istruzione successiva come con un indice di etichetta. | label - ps
 ms.assetid: 21afa062-c536-4891-ba69-ca5284b0539c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f3fb266b649642c82293e8310b6302c6763ddc27
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 921abbc0518182eaef17326082a395e5c5729d8ab550610fe71c8dfabe46dd4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854201"
 ---
-# <a name="label---ps"></a>etichetta-PS
+# <a name="label---ps"></a>label - ps
 
-Contrassegnare l'istruzione successiva in modo che disponga di un indice di etichetta.
+Contrassegnare l'istruzione successiva come con un indice di etichetta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,17 +31,17 @@ Contrassegnare l'istruzione successiva in modo che disponga di un indice di etic
 
  
 
-dove \# identifica il numero di etichetta.
+dove \# identifica il numero dell'etichetta.
 
-Per PS \_ 2 \_ x, il numero di etichetta deve essere compreso tra 0 e 15.
+Per ps \_ 2 \_ x, il numero di etichetta deve essere compreso tra 0 e 15.
 
-Per PS \_ 2 \_ SW, PS \_ 3 \_ 0 e PS \_ 3 \_ SW, il numero di etichetta deve essere compreso tra 0 e 2047.
+Per ps 2 sw, ps 3 0 e ps 3 sw, il numero di etichetta deve essere compreso tra \_ \_ \_ \_ \_ \_ 0 e 2047.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | label                 |      |      |      |      |      | x    | x     | x    | x     |
 
@@ -49,13 +49,13 @@ Per PS \_ 2 \_ SW, PS \_ 3 \_ 0 e PS \_ 3 \_ SW, il numero di etichetta deve ess
 
  
 
-Questa istruzione definisce un'etichetta che si trova nella successiva istruzione dello shader. L'istruzione label può essere presente solo subito dopo un'istruzione [ret](ret---ps.md) (che definisce la fine della subroutine o del programma principale precedente).
+Questa istruzione definisce un'etichetta che si trova in corrispondenza dell'istruzione shader successiva. L'istruzione label può essere presente solo dopo un'istruzione [ret](ret---ps.md) (che definisce la fine della subroutine o del programma principale precedente).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Attributo Trust-Attributes
+title: Trust-Attributes attributo
 description: Questo attributo archivia gli attributi di trust per un dominio trusted.
 ms.assetid: c85b98a6-4d09-4eb2-821b-58ef558b3460
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Trust-Attributes attribute
+- Trust-Attributes schema AD dell'attributo
 - Schema AD dell'attributo trustAttributes
 topic_type:
 - apiref
@@ -14,33 +14,33 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d81dc06f73fbda5dab7ce8d2a07bfc90323d2b29
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2d09104d0f32c770ba1fe3fbdde6cf56d56989a801856ba970284b2d06c96a5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704041"
 ---
-# <a name="trust-attributes-attribute"></a>Attributo Trust-Attributes
+# <a name="trust-attributes-attribute"></a>Trust-Attributes attributo
 
-Questo attributo archivia gli attributi di trust per un dominio trusted. I valori di attributo possibili sono i seguenti:
+Questo attributo archivia gli attributi di trust per un dominio trusted. I valori possibili dell'attributo sono i seguenti:
 
--   \_ \_ \_ Transitività non transitiva dell'attributo trust.
--   \_ \_ \_ L'attendibilità padre dell'albero degli attributi di attendibilità è impostata sul padre dell'albero dell'organizzazione.
--   Trust \_ \_ radice dell'albero degli attributi di attendibilità \_ impostato su un'altra radice dell'albero nell'insieme di strutture.
--   \_Attributo trust \_ di livello superiore \_ solo collegamento attendibile valido solo per client di livello superiore.
+-   TRUST \_ ATTRIBUTE \_ NON \_ TRANSITIVE Disabilita la transitività.
+-   TRUST \_ ATTRIBUTE TREE PARENT Trust è impostato \_ \_ sull'elemento padre dell'albero dell'organizzazione.
+-   TRUST \_ ATTRIBUTE TREE ROOT Trust impostato su \_ \_ un'altra radice dell'albero nella foresta.
+-   TRUST \_ ATTRIBUTE \_ UPLEVEL ONLY Collegamento \_ attendibile valido solo per il client di livello superiore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Trust-Attributes                     |
-| LDAP-Display-Name | trustAttributes                      |
+| Ldap-Display-Name | trustAttributes                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.470               |
-| System-ID-GUID    | 80a67e5a-9f22-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | 80a67e5a-9f22-11d0-afdd-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -63,15 +63,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -84,15 +84,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -105,15 +105,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -126,15 +126,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -147,15 +147,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -168,15 +168,15 @@ Questo attributo archivia gli attributi di trust per un dominio trusted. I valor
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

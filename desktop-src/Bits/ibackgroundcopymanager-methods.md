@@ -4,16 +4,16 @@ description: L'interfaccia IBackgroundCopyManager espone i metodi seguenti. | Me
 ms.assetid: 2A91E7B0-BA4F-4EDF-8A75-CB95601E8083
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0b0a79868285f064a96f35f927f73811e2c7d29
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2c280b04826f1731c6981e5fba98fc3eec8b3c5e6ec467db79c7f112187d4aae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104401872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701801"
 ---
 # <a name="ibackgroundcopymanager-methods-bits"></a>Metodi IBackgroundCopyManager (BITS)
 
-L'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) espone i metodi seguenti.
+[**L'interfaccia IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

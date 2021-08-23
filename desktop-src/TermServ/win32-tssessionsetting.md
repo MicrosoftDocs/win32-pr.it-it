@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSSessionSetting
-description: Definisce le impostazioni di configurazione per la \_ classe terminale Win32, ad esempio i limiti di tempo e le azioni di disconnessione e riconnessione.
+title: Win32_TSSessionSetting classe
+description: Definisce le impostazioni di configurazione per la classe terminale Win32, ad esempio i limiti di tempo \_ e le azioni di disconnessione e riconnessione.
 ms.assetid: e115f370-270c-404f-b6c6-7781c1ff376f
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSSessionSetting Servizi Desktop remoto
-- Classe Win32_TSSessionSetting Servizi Desktop remoto, descritta
+- Win32_TSSessionSetting classe Servizi Desktop remoto
+- Win32_TSSessionSetting classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e780cdedee0fe447499bed5013dadc2ba9b448b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5139b53917f3d54b95fd153ac39fab176f047ba4bb9ec6df5d1c7c9b6e2d2f49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769151"
 ---
-# <a name="win32_tssessionsetting-class"></a>Win32 \_ TSSessionSetting (classe)
+# <a name="win32_tssessionsetting-class"></a>Classe \_ TSSessionSetting Win32
 
-La classe WMI **Win32 \_ TSSessionSetting** definisce le impostazioni di configurazione per la classe [**\_ terminale Win32**](win32-terminal.md) , ad esempio i limiti di tempo e le azioni di disconnessione e riconnessione.
+La **classe WMI Win32 \_ TSSessionSetting** definisce le impostazioni di configurazione per la classe [**\_ terminale Win32,**](win32-terminal.md) ad esempio i limiti di tempo e le azioni di disconnessione e riconnessione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi più avanti in questo argomento.
 
@@ -78,21 +78,21 @@ class Win32_TSSessionSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSSessionSetting** presenta questi tipi di membri:
+La **classe Win32 \_ TSSessionSetting** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSSessionSetting** presenta questi metodi.
+La **classe Win32 \_ TSSessionSetting** include questi metodi.
 
 
 
 | Metodo                                                              | Descrizione                                                              |
 |:--------------------------------------------------------------------|:-------------------------------------------------------------------------|
 | [**BrokenConnection**](win32-tssessionsetting-brokenconnection.md) | Imposta le proprietà di connessione interrotte incluse in questa classe.<br/> |
-| [**Limite**](win32-tssessionsetting-timelimit.md)               | Imposta le proprietà del limite di tempo incluse in questa classe.<br/>        |
+| [**Scadenza**](win32-tssessionsetting-timelimit.md)               | Imposta le proprietà del limite di tempo incluse in questa classe.<br/>        |
 
 
 
@@ -100,33 +100,33 @@ La classe **Win32 \_ TSSessionSetting** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSSessionSetting** dispone di queste proprietà.
+La **classe Win32 \_ TSSessionSetting** ha queste proprietà.
 
 <dl> <dt>
 
 **ActiveSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità massima di tempo, in millisecondi, allocata a una sessione attiva. Il valore 0 specifica un periodo di tempo infinito.
+Quantità massima di tempo, in millisecondi, allocata a una sessione attiva. Il valore 0 specifica una quantità infinita di tempo.
 
 </dd> <dt>
 
 **BrokenConnectionAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Azione eseguita dal server in caso di interruzione di una connessione a causa della perdita di rete o del superamento dei limiti di tempo.
+Azione eseguita dal server nella sessione quando una connessione è stata interrotta a causa di una perdita di rete o di limiti di tempo superati.
 
 <dt>
 
@@ -157,19 +157,19 @@ La sessione viene eliminata definitivamente dal server.
 **BrokenConnectionPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il criterio utilizzato dal server per determinare quando interrompere una connessione a causa di una perdita di rete o di limiti di tempo superati.
+Criteri utilizzati dal server per determinare quando interrompere una connessione a causa di una perdita di rete o di limiti di tempo superati.
 
 <dt>
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Server-override** (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Override del server** (1)
 
 
 </dt> <dd>
@@ -185,7 +185,7 @@ Le impostazioni dei criteri di disconnessione dell'utente vengono sostituite dal
 
 </dt> <dd>
 
-Le impostazioni dei criteri di disconnessione dell'utente sono attive.
+Le impostazioni dei criteri di disconnessione dell'utente sono effettive.
 
 </dd> </dl>
 
@@ -194,25 +194,25 @@ Le impostazioni dei criteri di disconnessione dell'utente sono attive.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -220,73 +220,73 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DisconnectedSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intervallo di tempo, in millisecondi, dopo il quale una sessione disconnessa viene terminata. Il valore 0 specifica un periodo di tempo infinito.
+Intervallo di tempo, in millisecondi, dopo il quale viene terminata una sessione disconnessa. Il valore 0 specifica una quantità infinita di tempo.
 
 </dd> <dt>
 
 **EnableTimeoutWarning**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Consente di abilitare l'avviso di timeout.
+Abilita l'avviso di timeout.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Questa proprietà non è disponibile.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Questa proprietà non è disponibile.
 
 </dd> <dt>
 
 **IdleSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intervallo di tempo, in millisecondi, dopo il quale una sessione inattiva viene terminata. Il valore 0 specifica un periodo di tempo infinito.
+Intervallo di tempo, in millisecondi, dopo il quale viene terminata una sessione inattiva. Il valore 0 specifica una quantità infinita di tempo.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -294,20 +294,20 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PolicySourceActiveSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **ActiveSessionLimit** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ActiveSessionLimit** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -337,13 +337,13 @@ Predefinito
 **PolicySourceBrokenConnectionAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **BrokenConnectionAction** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà BrokenConnectionAction** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -373,13 +373,13 @@ Predefinito
 **PolicySourceDisconnectedSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **DisconnectedSessionLimit** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà DisconnectedSessionLimit** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -409,13 +409,13 @@ Predefinito
 **PolicySourceIdleSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **IdleSessionLimit** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la proprietà **IdleSessionLimit** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -445,13 +445,13 @@ Predefinito
 **PolicySourceReconnectionPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **ReconnectPolicy** è configurata dal server, da criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ReconnectPolicy** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -481,13 +481,13 @@ Predefinito
 **ReconnectionPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Specifica se un utente deve utilizzare il client precedente per riconnettersi a una sessione disconnessa.
+Specifica se un utente deve usare il client precedente per riconnettersi a una sessione disconnessa.
 
 <dt>
 
@@ -498,7 +498,7 @@ Specifica se un utente deve utilizzare il client precedente per riconnettersi a 
 
 </dt> <dd>
 
-Qualsiasi client verrà usato per la riconnessione.
+Qualsiasi client verrà usato per riconnettersi.
 
 </dd> <dt>
 
@@ -509,7 +509,7 @@ Qualsiasi client verrà usato per la riconnessione.
 
 </dt> <dd>
 
-Il client precedente utilizzato in una connessione verrà utilizzato per la riconnessione.
+Il client precedente usato in una connessione verrà usato per riconnettersi.
 
 </dd> </dl>
 
@@ -518,18 +518,18 @@ Il client precedente utilizzato in una connessione verrà utilizzato per la rico
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -542,14 +542,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Danneggiato")
+ ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -563,7 +563,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -591,10 +591,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 </dd> <dt>
 
-**Terminale**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -602,20 +602,20 @@ Tipo di accesso: sola lettura
 
 Nome del terminale.
 
-Questa proprietà viene ereditata da [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Questa proprietà viene ereditata da [**\_ TerminalSetting Win32.**](win32-terminalsetting.md)
 
 </dd> <dt>
 
 **TimeLimitPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il criterio utilizzato dal server per determinare i limiti di tempo per le sessioni utente.
+Criteri utilizzati dal server per determinare i limiti di tempo per le sessioni utente.
 
 <dt>
 
@@ -626,18 +626,18 @@ Il criterio utilizzato dal server per determinare i limiti di tempo per le sessi
 
 </dt> <dd>
 
-Sono attive le impostazioni dei criteri per i limiti di tempo dell'utente.
+Le impostazioni dei criteri relativi ai limiti di tempo dell'utente sono effettive.
 
 </dd> <dt>
 
 <span id="Server_Override"></span><span id="server_override"></span><span id="SERVER_OVERRIDE"></span>
 
-<span id="Server_Override"></span><span id="server_override"></span><span id="SERVER_OVERRIDE"></span>**Sostituzione server** (1)
+<span id="Server_Override"></span><span id="server_override"></span><span id="SERVER_OVERRIDE"></span>**Override del server** (1)
 
 
 </dt> <dd>
 
-Le impostazioni dei criteri per i limiti di tempo dell'utente vengono sostituite dal server.
+Le impostazioni dei criteri relativi ai limiti di tempo dell'utente vengono sostituite dal server.
 
 </dd> </dl>
 
@@ -645,9 +645,9 @@ Le impostazioni dei criteri per i limiti di tempo dell'utente vengono sostituite
 
 ## <a name="remarks"></a>Commenti
 
-Tenere presente che WinStations associato alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se viene effettuato un tentativo di eseguire questa operazione specificando "console" come valore della proprietà TerminalName, i metodi di questo oggetto restituiranno **WBEM \_ E \_ non \_ supportati**. Questo codice di errore viene restituito anche se una stazione della finestra tenta di chiamare i metodi di questo oggetto allo scopo di aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
+Tenere presente che Winstations associato alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se si tenta di eseguire questa operazione specificando "Console" come valore della proprietà TerminalName, i metodi di questo oggetto restituiranno **WBEM \_ E \_ NOT \_ SUPPORTED**. Questo codice di errore verrà restituito anche se una stazione finestra tenta di chiamare i metodi di questo oggetto allo scopo di aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
 
-Per connettersi allo \\ \\ spazio dei nomi "root cimv2 TerminalServices", il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_ privacy**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6. Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Per connettersi allo spazio dei \\ nomi "TerminalServices CIMV2 radice", il livello di autenticazione \\ deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione **di RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore 6. Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -658,7 +658,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -668,8 +668,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -678,10 +678,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalSetting Win32**](win32-terminalsetting.md)
+[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
 </dt> <dt>
 
-[**\_Impostazione CIM**](/windows/desktop/CIMWin32Prov/cim-setting)
+[**Impostazione \_ CIM**](/windows/desktop/CIMWin32Prov/cim-setting)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: Estensione della classe helper NDF con la consegna
-description: Questa classe helper presenta una dipendenza di basso livello di integrità in SimpleFileHelperClass codificata nel primo esempio.
+title: Estensione della classe helper NDF con Handoff
+description: Questa classe helper ha una dipendenza a basso livello di integrità da SimpleFileHelperClass codificata nel primo esempio.
 ms.assetid: b59cd855-c68a-4f5c-b145-ceac395ddcc4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b799b795fcf23cbddf268056e23db433566c8a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1dab07fb29b8ccebad0263cd3c71cccd83c98ba6d28b8ceb05e4334d61d1059c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802181"
 ---
-# <a name="ndf-helper-class-extension-with-handoff"></a>Estensione della classe helper NDF con la consegna
+# <a name="ndf-helper-class-extension-with-handoff"></a>Estensione della classe helper NDF con Handoff
 
-Questa classe helper presenta una dipendenza di basso livello di integrità in SimpleFileHelperClass codificata nel primo esempio.
+Questa classe helper ha una dipendenza a basso livello di integrità da SimpleFileHelperClass codificata nel primo esempio.
 
-La seconda classe helper di continuità è una semplice classe helper pass-through che non esegue alcuna diagnosi. Ma genera sempre una ipotesi di integrità più bassa per la SimpleFileHelperClass. Questo è utile per fungere da segnaposto per l'aggiunta futura della funzionalità di diagnostica in questa classe helper. La classe helper uniforme implementa due metodi.
+La seconda classe helper handoff è una semplice classe helper pass-through che non esegue alcuna diagnosi. Al contrario, genera sempre un'ipotesi di integrità inferiore per SimpleFileHelperClass. Ciò è utile per fungere da segnaposto per l'aggiunta futura della funzionalità di diagnostica in questa classe helper. La classe helper handoff implementa due metodi.
 
-Il metodo LowHealth viene usato per impostare lo stato di diagnosi su DS \_ indeterminato. Questo fa in modo che NDF chiami GetLowerHypotheses.
+Il metodo LowHealth viene usato per impostare lo stato di diagnosi su \_ DS INDETERMINATE. In questo modo, NDF chiama GetLowerHypotheses.
 
 
 ```C++
@@ -38,7 +38,7 @@ HRESULT HandOffTestHelperClass::LowHealth(
 
 
 
-Successivamente, GetLowerHypotheses viene implementato per indicare a NDF la classe helper da diagnosticare.
+Successivamente, GetLowerHypotheses viene implementato per indicare a NDF quale classe helper diagnosticare.
 
 
 ```C++
@@ -124,9 +124,9 @@ Error:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

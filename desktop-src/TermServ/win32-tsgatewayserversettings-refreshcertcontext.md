@@ -1,12 +1,12 @@
 ---
-title: Metodo RefreshCertContext della classe Win32_TSGatewayServerSettings
-description: Aggiorna il certificato utilizzato dal server Gateway Desktop remoto (Gateway Desktop remoto).
+title: Metodo RefreshCertContext della Win32_TSGatewayServerSettings classe
+description: Aggiorna il certificato usato dal server Desktop remoto Gateway Desktop remoto.
 ms.assetid: caefeb85-1c7a-4868-9ee8-10ab09354595
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo RefreshCertContext
-- Metodo RefreshCertContext Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo RefreshCertContext
+- Metodo RefreshCertContext Servizi Desktop remoto
+- Il metodo RefreshCertContext Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto , metodo RefreshCertContext
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b03d77fff9574b0aff577d8ff45b54f57758f5d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b81d25944e77a2c80c3f7823283cf0bef813ab51600a1a0a5f3b8aaf9dfb8eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769671"
 ---
-# <a name="refreshcertcontext-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo RefreshCertContext della \_ classe TSGatewayServerSettings Win32
+# <a name="refreshcertcontext-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo RefreshCertContext della classe \_ Win32 TSGatewayServerSettings
 
-Aggiorna il certificato utilizzato dal server Gateway Desktop remoto (Gateway Desktop remoto).
+Aggiorna il certificato usato dal server Desktop remoto Gateway Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ uint32 RefreshCertContext(
 
 <dl> <dt>
 
-*Certhash* \[ in\]
+*CertHash* \[ Pollici\]
 </dt> <dd>
 
-Hash del certificato utilizzato dal server Gateway Desktop remoto.
+Hash del certificato usato dal server Gateway Desktop remoto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -78,7 +78,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

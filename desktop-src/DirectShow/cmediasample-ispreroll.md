@@ -1,7 +1,7 @@
 ---
-description: "Il metodo IsPreroll determina se l'esempio è un esempio di preroll. Non è necessario visualizzare un campione di preroll. Questo metodo implementa il metodo IMediaSample:: IsPreroll."
+description: Il metodo IsPreroll determina se questo esempio è un esempio di preroll. Non dovrebbe essere visualizzato un esempio di preroll. Questo metodo implementa il metodo IMediaSample::IsPreroll.
 ms.assetid: fbcf7aab-473c-49c1-9a8f-4a619f4e28f4
-title: Metodo CMediaSample. IsPreroll (Amfilter. h)
+title: Metodo CMediaSample.IsPreroll (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b40cf8fd6a1adb5186309f47da0f0ae3dc30412a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f4c4b192d72c5edcfdb9c318f7420ca6ae5797446ec4f99cb6871aad2abd241
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634641"
 ---
-# <a name="cmediasampleispreroll-method"></a>CMediaSample. IsPreroll, metodo
+# <a name="cmediasampleispreroll-method"></a>Metodo CMediaSample.IsPreroll
 
-Il `IsPreroll` metodo determina se l'esempio è un esempio di preroll. Non è necessario visualizzare un campione di preroll. Questo metodo implementa il metodo [**IMediaSample:: IsPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediasample-ispreroll) .
+Il `IsPreroll` metodo determina se questo esempio è un esempio di preroll. Non dovrebbe essere visualizzato un esempio di preroll. Questo metodo implementa il [**metodo IMediaSample::IsPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-ispreroll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se l'esempio è un campione di preroll e \_ in caso contrario è false.
+Restituisce S \_ OK se l'esempio è un esempio di preroll e S \_ FALSE in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) specifica questa proprietà.
+La [**variabile membro CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) specifica questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

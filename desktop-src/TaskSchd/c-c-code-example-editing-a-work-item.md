@@ -1,19 +1,19 @@
 ---
-title: Esempio di codice C/C++ modifica di un elemento di lavoro
-description: Questo esempio mostra le pagine delle proprietà per un'attività nota e consente a un utente di modificare le proprietà dell'elemento di lavoro. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ per la modifica di un elemento di lavoro
+description: Questo esempio visualizza le pagine delle proprietà per un'attività nota e consente a un utente di modificare le proprietà dell'elemento di lavoro. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 526bc354-3585-43aa-a727-03c04e607a64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: deec02a7b7b12f350e7ed61220c9bdeebe920fec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72b5b31a98acfbc9c3f9f86ddda2b425462327a532b20960175899a73bd52a79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738961"
 ---
 # <a name="cc-code-example-editing-a-work-item"></a>Esempio di codice C/C++: modifica di un elemento di lavoro
 
-Questo esempio mostra le pagine delle proprietà per un'attività nota e consente a un utente di modificare le proprietà dell'elemento di lavoro. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio visualizza le pagine delle proprietà per un'attività nota e consente a un utente di modificare le proprietà dell'elemento di lavoro. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -107,12 +107,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

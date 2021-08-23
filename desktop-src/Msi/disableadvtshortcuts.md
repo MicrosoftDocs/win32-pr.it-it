@@ -1,29 +1,29 @@
 ---
-description: L'impostazione della proprietà DISABLEADVTSHORTCUTS Disabilita la generazione di collegamenti che supportano l'installazione su richiesta e l'annuncio. L'impostazione di questa proprietà specifica che questi tasti di scelta rapida devono essere sostituiti da collegamenti regolari.
+description: L'impostazione della proprietà DISABLEADVTSHORTCUTS disabilita la generazione di collegamenti che supportano l'installazione su richiesta e l'annuncio. L'impostazione di questa proprietà specifica che questi tasti di scelta rapida devono essere sostituiti da collegamenti normali.
 ms.assetid: 1b55ecbe-932f-4f08-98b1-8c5e7a57d2e8
-title: Proprietà DISABLEADVTSHORTCUTS
+title: DISABLEADVTSHORTCUTS - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3f7d2cf800745691dde6011e6ab62232b94117
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86fd8465620abab56ebfe18f68254bf6d29b6e752a7550157231a0b1abe95ecd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119745561"
 ---
-# <a name="disableadvtshortcuts-property"></a>Proprietà DISABLEADVTSHORTCUTS
+# <a name="disableadvtshortcuts-property"></a>DISABLEADVTSHORTCUTS - proprietà
 
-L'impostazione della proprietà **DISABLEADVTSHORTCUTS** Disabilita la generazione di collegamenti che supportano l' [installazione su richiesta](installation-on-demand.md) e l' [annuncio](advertisement.md). L'impostazione di questa proprietà specifica che questi tasti di scelta rapida devono essere sostituiti da collegamenti regolari.
+**L'impostazione della proprietà DISABLEADVTSHORTCUTS** disabilita la generazione di collegamenti che supportano [l'installazione su richiesta](installation-on-demand.md) e l'annuncio. [](advertisement.md) L'impostazione di questa proprietà specifica che questi tasti di scelta rapida devono essere sostituiti da collegamenti normali.
 
 ## <a name="default-value"></a>Valore predefinito
 
-Per impostazione predefinita, la generazione del collegamento di installazione su richiesta è abilitata.
+Per impostazione predefinita, la generazione di collegamenti su richiesta per l'installazione è abilitata.
 
 ## <a name="remarks"></a>Commenti
 
-I tasti di scelta rapida che supportano l'annuncio hanno il nome di una funzionalità, anziché un percorso di file formattato nel formato \[ \# FileKey \] , immessi nella colonna di destinazione della [tabella dei collegamenti](shortcut-table.md). Se questa proprietà è impostata e la funzionalità è installata, il programma di installazione genera un collegamento normale alla funzionalità.
+I collegamenti che supportano l'annuncio hanno il nome di una funzionalità, anziché un percorso di file formattato nel formato \[ \# filekey, immesso nella colonna Destinazione della tabella \] [Collegamento](shortcut-table.md). Se questa proprietà è impostata e la funzionalità è installata, il programma di installazione genera un collegamento regolare alla funzionalità.
 
-Questa proprietà viene comunemente utilizzata dagli amministratori per gli utenti che eseguono il roaming tra ambienti che non supportano la pubblicità. Questa proprietà può essere impostata da una trasformazione, nel flusso amministrativo o nella [tabella delle proprietà](property-table.md). Se viene impostata tramite la riga di comando o tramite una chiamata a [**MsiSetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msisetpropertya), è necessario reimpostarla di nuovo durante ogni successiva installazione.
+Questa proprietà viene in genere usata dagli amministratori per gli utenti che si trovano in roaming tra ambienti che supportano e non supportano la pubblicità. Questa proprietà può essere impostata da una trasformazione, nel flusso amministrativo o nella [tabella Property](property-table.md). Se viene impostata tramite la riga di comando o tramite una chiamata a [**MsiSetProperty,**](/windows/desktop/api/Msiquery/nf-msiquery-msisetpropertya)è necessario reimpostarla nuovamente durante ogni installazione successiva.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Questa proprietà viene comunemente utilizzata dagli amministratori per gli uten
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

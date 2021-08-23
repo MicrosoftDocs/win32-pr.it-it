@@ -1,9 +1,9 @@
 ---
-title: BUTTONelement. Down
-description: L'attributo Down specifica o recupera un valore che indica se l'elemento Button si trova nella posizione verso l'alto o verso il basso.
+title: BUTTONELEMENT.down
+description: L'attributo down specifica o recupera un valore che indica se l'elemento pulsante si trova nella posizione verso l'alto o verso il basso.
 ms.assetid: 6b3633c5-84c1-48a0-bd2f-94660890d9a6
 keywords:
-- BUTTONelement. Down Media Player di Windows
+- BUTTONELEMENT.down Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23f48b0e2ac0f4bf02f87d90bb0bd504478beb52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff20aebda01b24dc14eb7d5298ee0d663d903bedcb7ef6ef8b05b6211af8b567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764471"
 ---
-# <a name="buttonelementdown"></a>BUTTONelement. Down
+# <a name="buttonelementdown"></a>BUTTONELEMENT.down
 
-L'attributo **Down** specifica o recupera un valore che indica se l'elemento Button si trova nella posizione verso l'alto o verso il basso.
+**L'attributo** down specifica o recupera un valore che indica se l'elemento pulsante si trova nella posizione verso l'alto o verso il basso.
 
 ``` syntax
         elementID.down
@@ -29,14 +29,14 @@ L'attributo **Down** specifica o recupera un valore che indica se l'elemento But
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                                     |
 |-------|-----------------------------------------------------------------|
-| true  | Indica che il **pulsante** è nella posizione in giù.        |
-| false | Valore predefinito. Indica che il **pulsante** è nella posizione verso l'alto. |
+| true  | Indica che **BUTTONELEMENT** si trova nella posizione verso il basso.        |
+| false | Valore predefinito. Indica che **BUTTONELEMENT** si trova nella posizione verso l'alto. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Affinché un elemento Button rimanga nella posizione in giù, **Sticky** deve essere impostato su true. Per impostazione predefinita, **Sticky** è false e qualsiasi tentativo **di impostare il valore su** true verrà ignorato.
+Per mantenere un elemento pulsante nella posizione verso il basso, **sticky** deve essere impostato su true. Per impostazione predefinita, **sticky** è false e qualsiasi tentativo di impostare **su** true verrà ignorato.
 
 Se viene specificato un valore non valido, viene mantenuto lo stato precedente.
 
@@ -54,7 +54,7 @@ Se viene specificato un valore non valido, viene mantenuto lo stato precedente.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -62,10 +62,10 @@ Se viene specificato un valore non valido, viene mantenuto lo stato precedente.
 
 <dl> <dt>
 
-[**BUTTONelement (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> <dt>
 
-[**BUTTONelement. downToolTip**](buttonelement-downtooltip.md)
+[**BUTTONELEMENT.downToolTip**](buttonelement-downtooltip.md)
 </dt> </dl>
 
  

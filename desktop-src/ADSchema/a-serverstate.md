@@ -1,10 +1,10 @@
 ---
-title: Attributo Server-State
+title: Server-State attributo
 description: Indica se il server è abilitato o disabilitato.
 ms.assetid: e062cbcf-c845-4dfd-9e9b-e21079276a3c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Server-State attribute
+- Server-State schema AD dell'attributo
 - Schema AD dell'attributo serverState
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be4e236254486cd512eed480b380058048061fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 186f6c3da7371c82f7771261adbf09814ad16481a97050753b23ea8b3b5226cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836730"
 ---
-# <a name="server-state-attribute"></a>Attributo Server-State
+# <a name="server-state-attribute"></a>Server-State attributo
 
 Indica se il server è abilitato o disabilitato. Il valore 1 indica che il server è abilitato. Il valore 2 indica che il server è disabilitato. Tutti gli altri valori non sono validi.
 
@@ -30,12 +30,12 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Server-State                         |
-| LDAP-Display-Name | serverState                          |
+| Ldap-Display-Name | serverState                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
-| Frequenza di aggiornamento  | Quando vengono modificati i criteri di un utente.  |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Frequenza di aggiornamento  | Quando i criteri per un utente cambiano.  |
 | Attribute-Id      | 1.2.840.113556.1.4.154               |
-| System-ID-GUID    | bf967a34-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a34-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se il server è abilitato o disabilitato. Il valore 1 indica che il serve
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

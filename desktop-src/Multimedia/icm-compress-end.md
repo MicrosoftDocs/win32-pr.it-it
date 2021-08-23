@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_COMPRESS_END (VFW. h)
-description: Il \_ \_ messaggio di fine compressione ICM notifica a un driver di compressione video di terminare la compressione e liberare le risorse allocate per la compressione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro ICCompressEnd.
+title: ICM_COMPRESS_END messaggio (Vfw.h)
+description: Il ICM COMPRESS END invia una notifica a un driver di compressione video per terminare la compressione e \_ liberare le risorse allocate per la \_ compressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICCompressEnd.
 ms.assetid: 5d4b5962-c4f0-44eb-a3a9-36026f167a5a
 keywords:
-- ICM_COMPRESS_END messaggi multimediali di Windows
+- ICM_COMPRESS_END messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 320cc99ed4223b7919b85d2b39e15d4d9b76aa90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c320190da37d286db1c20329a849ea09ac6d915087e9d3bdbb2333d31cec3e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785041"
 ---
-# <a name="icm_compress_end-message"></a>\_ \_ Messaggio finale compresso ICM
+# <a name="icm_compress_end-message"></a>\_ICM MESSAGGIO COMPRESS \_ END
 
-Il messaggio di **\_ \_ fine compressione ICM** notifica a un driver di compressione video di terminare la compressione e liberare le risorse allocate per la compressione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICCompressEnd**](/windows/desktop/api/Vfw/nf-vfw-iccompressend) .
+Il **ICM \_ COMPRESS \_ END** invia una notifica a un driver di compressione video per terminare la compressione e liberare le risorse allocate per la compressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICCompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-iccompressend)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce ICERR \_ OK se ha esito positivo o un errore in caso contrario.
+Restituisce ICERR \_ OK in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-VCM Salva le impostazioni del messaggio di [**inizio della \_ compressione \_ ICM**](icm-compress-begin.md) più recente. **ICM \_ COMPRESS \_ Begin** e **MCI \_ compress \_ end** non nidificano. Se il driver riceve **l' \_ \_ inizio** della compressione ICM prima che la compressione venga arrestata con la **\_ \_ fine** della compressione MCI, dovrebbe riavviare la compressione con i nuovi parametri.
+VCM salva le impostazioni del messaggio COMPRESS [**\_ \_ BEGIN ICM più**](icm-compress-begin.md) recente. **ICM \_ COMPRESS \_ BEGIN** e **ICM COMPRESS \_ \_ END** non vengono annidato. Se il driver riceve ICM **\_ COMPRESS \_ BEGIN** prima che la compressione venga arrestata ICM **COMPRESS \_ \_ END**, deve riavviare la compressione con nuovi parametri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ VCM Salva le impostazioni del messaggio di [**inizio della \_ compressione \_ IC
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

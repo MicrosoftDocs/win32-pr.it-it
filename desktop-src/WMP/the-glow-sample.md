@@ -1,43 +1,43 @@
 ---
-title: Esempio Glow
-description: Esempio Glow
+title: Esempio di alone
+description: Esempio di alone
 ms.assetid: 59e1b90c-1649-4233-8b2f-f3a876045771
 keywords:
-- Visualizzazioni, esempio Glow
-- Visualizzazioni personalizzate, esempio Glow
-- Guida per programmatori, visualizzazioni
-- esempi, visualizzazione bagliore
-- Esempio di visualizzazione bagliore
+- visualizzazioni,esempio di bagliore
+- visualizzazioni personalizzate,esempio di bagliore
+- guida per programmatori,visualizzazioni
+- esempi,visualizzazione Bagliore
+- Esempio di visualizzazione alone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d553334e2cc145f291c61bf8dd79c430601947e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7551caabcb5b4cf9f52353156609857a66ccde004513f8beaf05079b6b0a3f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762781"
 ---
-# <a name="the-glow-sample"></a>Esempio Glow
+# <a name="the-glow-sample"></a>Esempio di alone
 
-Questa sezione descrive come creare una semplice visualizzazione denominata Glow. Vengono utilizzati tre set di impostazioni: rosso, verde e blu. È stata eseguita la procedura guidata di visualizzazione personalizzata e è stato scelto il nome bagliore.
+Questa sezione descrive come creare una semplice visualizzazione denominata Glow. Vengono usati tre set di impostazioni: Rosso, Verde e Blu. È stata eseguita la procedura guidata Visualizzazione personalizzata ed è stato scelto il nome Glow.
 
-Bagliore modifica semplicemente il colore nel tempo per la musica. Il bagliore del bagliore perché la potenza audio della forma d'onda a volte interseca zero al momento dello snapshot. Questo esempio viene scelto perché è uno degli esempi più semplici possibili.
+Glow cambia semplicemente colore nel tempo per la musica. Il bagliore lampeggia perché la potenza audio della forma d'onda talvolta supera lo zero al momento dello snapshot. Questo esempio viene scelto perché è uno degli esempi più semplici possibili.
 
-Le sezioni seguenti guideranno l'utente:
+Le sezioni seguenti guidano l'utente:
 
--   [Implementazione di rendering](implementing-render-sample.md)
--   [Modifica di set di impostazioni](changing-presets.md)
+-   [Implementazione del rendering](implementing-render-sample.md)
+-   [Modifica dei set di impostazioni](changing-presets.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Guida per programmatori di visualizzazione personalizzati**](custom-visualization-programming-guide.md)
+[**Guida alla programmazione della visualizzazione personalizzata**](custom-visualization-programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

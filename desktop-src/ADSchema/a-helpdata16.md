@@ -1,11 +1,11 @@
 ---
-title: Attributo Help-Data16
-description: Questo attributo è stato usato per il formato di file della Guida Win16 per Exchange 4,0. Non viene usato per altre versioni di Exchange.
+title: Help-Data16 attributo
+description: Questo attributo è stato usato per il formato di file della Guida Win16 Exchange 4.0. Non viene usato per altre versioni di Exchange.
 ms.assetid: cdddb064-72b1-43bb-9d91-8d723b9131f8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Help-Data16 attribute
-- Schema AD dell'attributo helpData16
+- Help-Data16 schema AD dell'attributo
+- Attributo helpData16 - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76ce3dbf6d2f64b3f87d5344bbbd6bed2dac43e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3aeeda7634e0e01e6628ef7df8bd65230f24910f8dfac5431d4914047a36f820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804411"
 ---
-# <a name="help-data16-attribute"></a>Attributo Help-Data16
+# <a name="help-data16-attribute"></a>Help-Data16 attributo
 
-Questo attributo è stato usato per il formato di file della Guida Win16 per Exchange 4,0. Non viene usato per altre versioni di Exchange.
+Questo attributo è stato usato per il formato di file della Guida Win16 Exchange 4.0. Non viene usato per altre versioni di Exchange.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Help-Data16                                           |
-| LDAP-Display-Name | helpData16                                            |
+| Ldap-Display-Name | helpData16                                            |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Viene utilizzato dal sistema.                           |
+| Aggiorna privilegio  | Viene utilizzato dal sistema.                           |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.402                                |
-| System-ID-GUID    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo è stato usato per il formato di file della Guida Win16 per Exc
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Visualizzazione-modello**](c-displaytemplate.md)<br/> |
+| Classi usate in        | [**Modello di visualizzazione**](c-displaytemplate.md)<br/> |
 
 
 

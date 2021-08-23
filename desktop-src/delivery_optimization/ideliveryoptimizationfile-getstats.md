@@ -1,11 +1,11 @@
 ---
-title: Metodo GetStats di IDeliveryOptimizationFile (Deliveryoptimization. h)
+title: Metodo GetStats IDeliveryOptimizationFile (Deliveryoptimization.h)
 description: Restituisce le statistiche di download e caricamento per un file specifico.
 ms.assetid: 8A3AD658-F1AD-4EA5-B010-AB7B88126FD6
 keywords:
 - GetStats (metodo)
 - Metodo GetStats, interfaccia IDeliveryOptimizationFile
-- Interfaccia IDeliveryOptimizationFile, Metodo GetStats
+- Interfaccia IDeliveryOptimizationFile, metodo GetStats
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 08c5cff0672130049c325a00cb63c8dbc5c2e8ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4e2f0a3b680e682944740cb570bfb4889b22ba8e7ec56d3aefc9e34fcdd6a37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635761"
 ---
-# <a name="ideliveryoptimizationfilegetstats-method"></a>Metodo IDeliveryOptimizationFile:: GetStats
+# <a name="ideliveryoptimizationfilegetstats-method"></a>Metodo IDeliveryOptimizationFile::GetStats
 
 Restituisce le statistiche di download e caricamento per un file specifico.
 
@@ -43,10 +43,10 @@ HRESULT GetStats(
 
 <dl> <dt>
 
-*swarmStats* \[ out\]
+*swarmStats* \[ Cambio\]
 </dt> <dd>
 
-Restituisce le statistiche di download e caricamento per un file specifico. Per informazioni dettagliate, vedere la struttura [**DOSwarmStats**](doswarmstats.md) .
+Restituisce le statistiche di download e caricamento per un file specifico. Per informazioni [**dettagliate, vedere la struttura DOSwarmStats.**](doswarmstats.md)
 
 </dd> </dl>
 
@@ -60,13 +60,13 @@ Questo metodo deve restituire **S_OK**.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IDeliveryOptimizationFile viene definito come B76B9699-E99E-4101-803F-A20E325D93E2<br/>        |
+| IID<br/>                      | IID_IDeliveryOptimizationFile è definito come B76B9699-E99E-4101-803F-A20E325D93E2<br/>        |
 
 
 

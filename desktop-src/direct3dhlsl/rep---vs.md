@@ -1,6 +1,6 @@
 ---
-title: Rep-vs
-description: Avvia una Rep... blocco endrep.
+title: rep - vs
+description: Avviare un rappresentante... blocco endrep.
 ms.assetid: vs|directx_sdk|~\rep___vs.htm
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5441d5d134ee2d60e14db9f273ec374323f93902
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 6e800f2ef313cd5c9a4fc90d7205502db5532ae24f51ec0f1255d05cc9a589bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853791"
 ---
-# <a name="rep---vs"></a>Rep-vs
+# <a name="rep---vs"></a>rep - vs
 
-Avvia una Rep... blocco [endrep](endrep---vs.md) .
+Avviare un rappresentante... [blocco endrep.](endrep---vs.md)
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| Rep i\# |
+| rep i\# |
 |---------|
 
 
 
- 
+ 
 
-dove i \# è un registro di tipo integer che specifica il numero di ripetizioni nel componente. x. Vedere [registro integer costanti](dx9-graphics-reference-asm-vs-registers-constant-integer.md).
+dove i \# è un registro integer che specifica il conteggio delle ripetizioni nel componente .x. Vedere [Constant Integer Register](dx9-graphics-reference-asm-vs-registers-constant-integer.md).
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| Rep                    |      | x    | x    | x     | x    | x     |
+| Rappresentante                    |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
--   i \# . x specifica il numero di iterazioni. L'intervallo valido è \[ 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# . x.
--   i \# . yzw non vengono utilizzati dal blocco REPEAT.
--   I blocchi di ripetizione possono essere annidati. Vedere [limiti di nidificazione del controllo di flusso](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
--   I blocchi di ripetizione possono trovarsi completamente all'interno di un \* blocco if o circondarli completamente. Nessun a cavallo consentito.
--   L'uso della stessa i \# per le istruzioni di rep diverse o nidificate è corretto. ogni ciclo viene iterato in base al numero specificato.
+-   i \# .x specifica il conteggio delle iterazioni. L'intervallo valido \[ è 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# .x.
+-   i \# .yzw non vengono usati dal blocco repeat.
+-   I blocchi di ripetizione possono essere annidati. Vedere [Flow limiti di annidamento del controllo](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
+-   I blocchi di ripetizione possono essere completamente all'interno di un blocco if \* o che lo circondano completamente. Non è consentito alcun intervallo.
+-   L'uso della stessa i per istruzioni di ripetizione diverse o annidate è un'ottima cosa: ogni ciclo esegue \# l'iterazione in base al conteggio specificato.
 
 ## <a name="example"></a>Esempio
 
@@ -66,12 +66,12 @@ endrep
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

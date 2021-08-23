@@ -1,21 +1,21 @@
 ---
-description: Enumerazioni API di stampa XPS
+description: Enumerazioni dell'API di stampa XPS
 ms.assetid: 1cb26594-6a15-4f36-b83a-f1c4418619d3
-title: Enumerazioni API di stampa XPS
+title: Enumerazioni dell'API di stampa XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c141f1f5d0ec6f452e2119e1d41691b6126f46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 473204be02ed8b59669562ea5db65fa3bffe2a1fa7676183764fe2c9a69fad65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718281"
 ---
-# <a name="xps-print-api-enumerations"></a>Enumerazioni API di stampa XPS
+# <a name="xps-print-api-enumerations"></a>Enumerazioni dell'API di stampa XPS
 
-\[Le enumerazioni descritte in questa sezione sono deprecate. Le applicazioni client devono invece usare l' [API del pacchetto di stampa del documento](./tailored-app-printing-api.md) .\]
+\[Le enumerazioni descritte in questa sezione sono deprecate. Le applicazioni client devono usare invece [l'API Stampa pacchetto](./tailored-app-printing-api.md) documento.\]
 
-\[**XPS \_ Il \_ completamento del processo** non è supportato e può essere modificato o non disponibile in futuro. \]
+\[**XPS \_ JOB \_ COMPLETION** non è supportato e potrebbe essere modificato o non disponibile in futuro. \]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ ms.locfileid: "104049791"
 
 | Enumerazione                                                   | Descrizione                                                |
 |---------------------------------------------------------------|------------------------------------------------------------|
-| [**\_completamento processo \_ XPS**](/windows/win32/api/xpsprint/ne-xpsprint-xps_job_completion)<br/> | Indica lo stato di completamento di un processo di stampa.<br/> |
+| [**COMPLETAMENTO \_ PROCESSO XPS \_**](/windows/win32/api/xpsprint/ne-xpsprint-xps_job_completion)<br/> | Indica lo stato di completamento di un processo di stampa.<br/> |
 
 
 

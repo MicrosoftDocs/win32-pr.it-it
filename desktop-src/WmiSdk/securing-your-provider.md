@@ -1,32 +1,32 @@
 ---
-description: Per la scrittura di un provider sicuro è necessario considerare la modalità di hosting del provider, il modo in cui il provider gestisce la rappresentazione e verificare che gli utenti vengano controllati per i diritti di accesso ai dati.
+description: La scrittura di un provider sicuro richiede la considerazione della modalità di hosting del provider, della modalità di gestione della rappresentazione e della verifica dei diritti di accesso ai dati da parte degli utenti.
 ms.assetid: 9a8b7730-cbb8-48fa-8a8f-8e551f00d20b
 ms.tgt_platform: multiple
-title: Sicurezza del provider
+title: Protezione del provider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6b8fef1e90f09bc09488c058240b7fd1a88ebd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dec112c7e207a23d36700d8fb5de3b3964590b514f9cf5a6aa5fbc03243cf40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732841"
 ---
-# <a name="securing-your-provider"></a>Sicurezza del provider
+# <a name="securing-your-provider"></a>Protezione del provider
 
-Per la scrittura di un provider sicuro è necessario considerare la modalità di hosting del provider, il modo in cui il provider gestisce la rappresentazione e verificare che gli utenti vengano controllati per i diritti di accesso ai dati. È possibile proteggere i dati nello spazio dei nomi del provider richiedendo che i dati vengano crittografati prima di inviarli in una rete. Per ulteriori informazioni, vedere la pagina relativa [alla richiesta di una connessione crittografata a uno spazio dei nomi](requiring-an-encrypted-connection-to-a-namespace.md).
+La scrittura di un provider sicuro richiede la considerazione della modalità di hosting del provider, della modalità di gestione della rappresentazione e della verifica dei diritti di accesso ai dati da parte degli utenti. È possibile proteggere i dati nello spazio dei nomi del provider richiedendo che i dati siano crittografati prima di inviarli in rete. Per altre informazioni, vedere [Richiesta di una connessione crittografata a uno spazio dei nomi.](requiring-an-encrypted-connection-to-a-namespace.md)
 
-Se un utente dispone di accesso in **\_ scrittura completo** in qualsiasi spazio dei nomi, l'utente può creare sottoscrizioni tra gli spazi dei nomi per i dati in uno spazio dei nomi in cui l'utente è limitato. Poiché un provider può essere caricato in qualsiasi spazio dei nomi ed eseguito in qualsiasi contesto di sicurezza, il provider deve eseguire i propri controlli di accesso per garantire che solo gli utenti autorizzati possano accedere ai dati o eseguire metodi. Per ulteriori informazioni, vedere [esecuzione dei controlli di accesso](performing-access-checks.md).
+Se un utente ha accesso **FULL \_ WRITE** in qualsiasi spazio dei nomi, può creare sottoscrizioni tra spazi dei nomi per i dati in uno spazio dei nomi in cui l'utente è limitato. Poiché un provider può essere caricato in qualsiasi spazio dei nomi ed eseguito in qualsiasi contesto di sicurezza, il provider deve eseguire i propri controlli di accesso per garantire che solo gli utenti autorizzati siano autorizzati ad accedere ai dati o a eseguire metodi. Per altre informazioni, vedere Esecuzione [dei controlli di accesso.](performing-access-checks.md)
 
 Negli argomenti seguenti viene illustrata la sicurezza del provider:
 
--   [Hosting e sicurezza del provider](provider-hosting-and-security.md)
+-   [Hosting e sicurezza dei provider](provider-hosting-and-security.md)
 -   [Esecuzione di controlli di accesso](performing-access-checks.md)
--   [Chiavi del registro di sistema per il controllo della sicurezza del provider](registry-keys-for-controlling-provider-security-.md)
+-   [Chiavi del Registro di sistema per il controllo della sicurezza del provider](registry-keys-for-controlling-provider-security-.md)
 -   [Accesso agli spazi dei nomi WMI](access-to-wmi-namespaces.md)
 -   [Rappresentazione di un client](impersonating-a-client.md)
 
-Negli argomenti seguenti viene illustrato come i client e gli script interagiscono con la sicurezza del provider:
+Gli argomenti seguenti illustrano l'interazione tra client e script con la sicurezza del provider:
 
 -   [Impostazione dell'autenticazione in WMI](setting-authentication-in-wmi.md)
 -   [Connessione tra sistemi operativi diversi](/windows/desktop/WmiSdk/troubleshooting-a-remote-wmi-connection)
@@ -40,7 +40,7 @@ Negli argomenti seguenti viene illustrato come i client e gli script interagisco
 [Gestione della sicurezza WMI](maintaining-wmi-security.md)
 </dt> <dt>
 
-[Utilizzo di WMI](using-wmi.md)
+[Uso di WMI](using-wmi.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: External. libraryLocationType
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. libraryLocationType
+title: External.libraryLocationType
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | External.libraryLocationType
 ms.assetid: aaf20147-8331-40bd-a5cd-5ee9b8e2d022
 keywords:
-- Media Player di Windows External. libraryLocationType
+- External.libraryLocationType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2c2f14940a2ad41bed24493396e2bacfba2f0a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54e254ce6258cf667884e2815508b413ed1455b1b6924bfebb4edc900da048c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736201"
 ---
-# <a name="externallibrarylocationtype"></a>External. libraryLocationType
+# <a name="externallibrarylocationtype"></a>External.libraryLocationType
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **libraryLocationType** recupera una [costante del percorso della libreria](library-location-constants.md) che indica il tipo della visualizzazione corrente in Windows Media Player.
+La **proprietà libraryLocationType** recupera una costante [di posizione](library-location-constants.md) della libreria che indica il tipo della vista corrente in Windows Media Player.
 
 ``` syntax
 window.external.libraryLocationType
@@ -37,11 +37,11 @@ window.external.libraryLocationType
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura che contiene una delle costanti del percorso della libreria.
+Questa proprietà è una stringa di sola **lettura** che contiene una delle costanti di percorso della libreria.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà funziona in combinazione con la proprietà [External. libraryLocationID](external-librarylocationid.md) . Si supponga, ad esempio, che **libraryLocationType** sia uguale a CPAlbumID e che **libraryLocationID** sia uguale a 3. Ciò significa che nella visualizzazione corrente di Windows Media Player viene visualizzato l'album con ID 3. Per ulteriori informazioni sul modo in cui Windows Media Player caratterizza le visualizzazioni del contenuto di un negozio online, vedere [posizione e elemento selezionato](location-and-selected-item.md).
+Questa proprietà funziona in combinazione con [la proprietà External.libraryLocationID.](external-librarylocationid.md) Si supponga, ad esempio, **che libraryLocationType** sia uguale a CPAlbumID e **libraryLocationID** sia uguale a 3. Ciò significa che la visualizzazione corrente Windows Media Player mostra l'album con ID 3. Per altre informazioni su come Windows Media Player caratterizza le visualizzazioni del contenuto dello store online, vedere [Posizione e elemento selezionato.](location-and-selected-item.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,13 +58,13 @@ Questa proprietà funziona in combinazione con la proprietà [External. libraryL
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. libraryLocationID**](external-librarylocationid.md)
+[**External.libraryLocationID**](external-librarylocationid.md)
 </dt> <dt>
 
-[**Posizione e elemento selezionato**](location-and-selected-item.md)
+[**Posizione ed elemento selezionato**](location-and-selected-item.md)
 </dt> </dl>
 
  

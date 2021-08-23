@@ -1,19 +1,19 @@
 ---
-description: TAPI invia il \_ messaggio di stato del telefono a un'applicazione ogni volta che lo stato di un dispositivo telefonico viene modificato.
+description: TAPI invia il messaggio PHONE STATE a un'applicazione ogni volta che cambia lo stato \_ di un dispositivo telefonico.
 ms.assetid: 74e74b62-8387-4056-83e6-2350b3da4077
-title: Messaggio di PHONE_STATE (TAPI. h)
+title: PHONE_STATE messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5db52f16d6c377087fd6ccadc5e70b5bb2865da2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90003eaa67cb3384b123c62827fcf52bae524b1e20f9f14c2391c46dc89a367c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796761"
 ---
-# <a name="phone_state-message"></a>\_Messaggio di stato telefono
+# <a name="phone_state-message"></a>MESSAGGIO \_ DI STATO DEL TELEFONO
 
-TAPI invia il messaggio di **\_ stato del telefono** a un'applicazione ogni volta che lo stato di un dispositivo telefonico viene modificato.
+TAPI invia il **messaggio PHONE \_ STATE** a un'applicazione ogni volta che cambia lo stato di un dispositivo telefonico.
 
 
 ```C++
@@ -43,24 +43,24 @@ Istanza di callback dell'applicazione fornita all'apertura del dispositivo telef
 *dwParam1* 
 </dt> <dd>
 
-Stato del telefono che è stato modificato. Questo parametro usa una delle [**\_ costanti PHONESTATE**](phonestate--constants.md).
+Stato del telefono modificato. Questo parametro usa una delle [**costanti PHONESTATE \_**](phonestate--constants.md).
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Informazioni dipendenti dallo stato del telefono che descrivono in dettaglio la modifica dello stato. Questo parametro non viene utilizzato se più flag sono impostati in *dwParam1*, perché sono stati modificati più elementi di stato. L'applicazione deve richiamare [**phoneGetStatus**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatus) per ottenere un set completo di informazioni.
+Telefono informazioni dipendenti dallo stato che dettaglino la modifica dello stato. Questo parametro non viene usato se in *dwParam1* sono impostati più flag, perché sono stati modificati più elementi di stato. L'applicazione deve [**richiamare phoneGetStatus**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatus) per ottenere un set completo di informazioni.
 
-Se *dwParam1* è PHONESTATE \_ Owner, *dwParam2* contiene il nuovo numero di proprietari.
+Se *dwParam1* è PHONESTATE \_ OWNER, *dwParam2* contiene il nuovo numero di proprietari.
 
-Se *dwParam1* è PHONESTATE \_ monitoraggi, *dwParam2* contiene il nuovo numero di monitoraggi.
+Se *dwParam1* è PHONESTATE \_ MONITORS, *dwParam2* contiene il nuovo numero di monitoraggi.
 
-Se *dwParam1* è PHONESTATE \_ Lamp, *dwParam2* contiene l'identificatore del pulsante o della lampada della lampada che è stata modificata.
+Se *dwParam1* è PHONESTATE \_ LAMP, *dwParam2* contiene l'identificatore pulsante/lamp della lampadina modificata.
 
-Se *dwParam1* è PHONESTATE \_ RINGMODE, *dwParam2* contiene la nuova modalità ring.
+Se *dwParam1* è PHONESTATE \_ RINGMODE, *dwParam2 contiene* la nuova modalità anello.
 
-Se *dwParam1* è PHONESTATE \_ handset, speaker o headset, *dwParam2* contiene la nuova modalità hookswitch del dispositivo hookswitch. Questo parametro usa una delle [**\_ costanti PHONEHOOKSWITCHMODE**](phonehookswitchmode--constants.md).
+Se *dwParam1 è* PHONESTATE \_ HANDSET, SPEAKER o HEADSET, *dwParam2* contiene la nuova modalità hookswitch del dispositivo hookswitch. Questo parametro usa una delle [**costanti \_ PHONEHOOKSWITCHMODE**](phonehookswitchmode--constants.md).
 
 </dd> <dt>
 
@@ -77,9 +77,9 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'invio del messaggio di **\_ stato telefonico** all'applicazione può essere controllato e sottoposto a query usando [**phoneSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonesetstatusmessages) e [**phoneGetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatusmessages). Per impostazione predefinita, questo messaggio è disabilitato per tutte le modifiche di stato ad eccezione di PHONESTATE \_ reinit, che non può essere disabilitato. Questo messaggio viene inviato a tutte le applicazioni che dispongono di un handle per il telefono, incluse quelle che hanno chiamato [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) con il parametro *DWPRIVILEGES* impostato su PHONEPRIVILEGE \_ owner o PHONEPRIVILEGE \_ monitor.
+**L'invio del messaggio PHONE \_ STATE** all'applicazione può essere controllato e sottoposto a query usando [**phoneSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonesetstatusmessages) [**e phoneGetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatusmessages). Per impostazione predefinita, questo messaggio è disabilitato per tutte le modifiche di stato ad eccezione di PHONESTATE \_ REINIT, che non può essere disabilitato. Questo messaggio viene inviato a tutte le applicazioni che hanno un handle al telefono, incluse quelle che hanno chiamato [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) con il *parametro dwPrivileges* impostato su PHONEPRIVILEGE OWNER o \_ PHONEPRIVILEGE \_ MONITOR.
 
-Un messaggio di **\_ stato del telefono** con un proprietario e/o un'indicazione relativa ai monitoraggi viene inviato alle applicazioni che dispongono già di un handle per il telefono. Questo può essere il risultato di un'altra applicazione che modifica la proprietà o il monitoraggio del dispositivo telefonico con [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen), [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose) o [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown).
+Un **messaggio DI STATO \_ DEL** TELEFONO con un'indicazione Proprietari e/o Monitoraggi viene inviato alle applicazioni che hanno già un handle per il telefono. Ciò può essere il risultato di un'altra applicazione che modifica la proprietà o il monitoraggio del dispositivo telefonico con [**phoneOpen,**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose) o [**phoneShutdown.**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Un messaggio di **\_ stato del telefono** con un proprietario e/o un'indicazione
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Un messaggio di **\_ stato del telefono** con un proprietario e/o un'indicazione
 
 <dl> <dt>
 
-[**\_chiusura telefono**](phone-close.md)
+[**CHIUSURA \_ TELEFONO**](phone-close.md)
 </dt> <dt>
 
 [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps)

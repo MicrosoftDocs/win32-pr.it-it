@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put width imposta la larghezza della finestra.
+description: Il metodo put \_ Width imposta la larghezza della finestra.
 ms.assetid: eb5ad1c2-ba39-4c06-84d2-6708dc8796d8
-title: Metodo CBaseControlWindow.put_Width (Ctlutil. h)
+title: CBaseControlWindow.put_Width metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5235e2b842b26f3f05c31c9f19a16c7630c80c13
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f32175fe2b86f3b05105f5627cf1e02b2509e25ee12cc415cd88ea2baba5536
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635711"
 ---
-# <a name="cbasecontrolwindowput_width-method"></a>CBaseControlWindow. Put, \_ Metodo Width
+# <a name="cbasecontrolwindowput_width-method"></a>Metodo CBaseControlWindow.put \_ Width
 
 Il `put_Width` metodo imposta la larghezza della finestra.
 
@@ -51,13 +51,13 @@ Nuova larghezza della finestra, in pixel.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-La finestra è posizionata sul desktop. Questo è espresso in pixel da quattro coordinate, a sinistra, in alto, a destra e in basso. Le interfacce automatizzate da OLE generalmente esprimono questa posizione attraverso Left, top, Width e Height. si tratta della convenzione usata in DirectShow. Tutte le coordinate sono espresse in pixel e la modifica di tutte le coordinate aggiornerà immediatamente la finestra.
+La finestra ha una posizione sul desktop. Questo valore è espresso in pixel da quattro coordinate (sinistra, superiore, destra e inferiore). Le interfacce automatizzate da OLE in genere esprimono questa posizione a sinistra, in alto, in larghezza e in altezza; questa è la convenzione usata in DirectShow. Tutte le coordinate sono espresse in pixel e la modifica di qualsiasi coordinata aggiornerà immediatamente la finestra.
 
-L'impostazione delle coordinate di sinistra o superiore sposta la finestra rispettivamente verso sinistra o verso l'alto. Queste coordinate non hanno alcun effetto sulla larghezza e sull'altezza della finestra. Analogamente, l'impostazione della larghezza e dell'altezza non influisce sulle coordinate di sinistra e di primo livello.
+Se si impostano le coordinate sinistra o superiore, la finestra viene spostata rispettivamente verso sinistra o verso l'alto. queste coordinate non hanno alcun effetto sulla larghezza e sull'altezza della finestra. Analogamente, l'impostazione della larghezza e dell'altezza non influisce sulle coordinate sinistra e superiore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ L'impostazione delle coordinate di sinistra o superiore sposta la finestra rispe
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

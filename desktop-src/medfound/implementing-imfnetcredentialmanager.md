@@ -4,46 +4,46 @@ ms.assetid: 3eb2afec-195c-4d8d-8e08-7e6ec7c572f8
 title: Implementazione di IMFNetCredentialManager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55c026f2c12b2ff248032a56d9c48a0e0e1576c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9877a1782a9703a8f43ed385f21f572576858955253cea5e38fa2d3143383e24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827841"
 ---
 # <a name="implementing-imfnetcredentialmanager"></a>Implementazione di IMFNetCredentialManager
 
-Nel metodo [**IMFNetCredentialManager:: BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) eseguire le operazioni seguenti.
+Nel metodo [**IMFNetCredentialManager::BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) eseguire le operazioni seguenti.
 
-1.  Se non si dispone già di un puntatore [**IMFNetCredentialCache**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache) , chiamare [**MFCreateCredentialCache**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatecredentialcache) per creare l'oggetto cache delle credenziali. Archiviare questo puntatore.
-2.  Chiamare [**IMFNetCredentialCache:: GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential). Impostare i flag nel parametro *dwAuthenticationFlags* come segue:
-    -   Se il membro **hrOp** della struttura [**MFNetCredentialManagerGetParam**](/windows/desktop/api/mfidl/ns-mfidl-mfnetcredentialmanagergetparam) è uguale a **NS \_ E \_ proxy \_ AccessDenied**, impostare il flag del **\_ \_ proxy di autenticazione MFNET** .
-    -   Se **fClearTextPackage** è **true**, impostare il flag di **\_ \_ \_ testo non crittografato di autenticazione di MFNET** .
-    -   Se **fAllowLoggedOnUser** è **true**, impostare il flag dell' **\_ \_ \_ \_ utente connesso per l'autenticazione di MFNET** .
-3.  Il metodo [**GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) restituisce un puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) ed eventualmente il flag require \_ prompt. Archiviare il puntatore **IMFNetCredential** .
-4.  Se [**GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) non restituisce il flag **Richiedi \_ richiesta** , l'operazione è stata eseguita. Andare al passaggio 9.
-5.  In caso contrario, se [**GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) restituisce il flag **Richiedi \_ richiesta** , è necessario richiedere all'utente il nome utente e la password.
-6.  Se **fClearTextPackage** è **false**, crittografare le credenziali.
-7.  Chiamare [**IMFNetCredential:: seuser**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setuser) e [**IMFNetCredential:: sepassword**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setpassword) per impostare il nome e la password dell'utente nell'oggetto credentials.
-8.  Facoltativamente, chiamare [**IMFNetCredentialCache:: SetUserOptions**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setuseroptions) per aggiornare l'oggetto cache delle credenziali con le preferenze dell'utente per l'archiviazione e l'invio delle credenziali.
-9.  Richiamare il callback [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) chiamando [**MFInvokeCallback**](/windows/desktop/api/mfapi/nf-mfapi-mfinvokecallback).
+1.  Se non si dispone già di un [**puntatore IMFNetCredentialCache,**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache) chiamare [**MFCreateCredentialCache**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatecredentialcache) per creare l'oggetto cache delle credenziali. Archiviare questo puntatore.
+2.  Chiamare [**IMFNetCredentialCache::GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential). Impostare i flag nel *parametro dwAuthenticationFlags come* indicato di seguito:
+    -   Se il **membro hrOp** della struttura [**MFNetCredentialManagerGetParam**](/windows/desktop/api/mfidl/ns-mfidl-mfnetcredentialmanagergetparam) è uguale a **NS \_ E PROXY \_ \_ ACCESSDENIED,** impostare il flag **MFNET \_ AUTHENTICATION \_ PROXY.**
+    -   Se **fClearTextPackage è** **TRUE,** impostare il flag **MFNET \_ AUTHENTICATION CLEAR \_ \_ TEXT.**
+    -   Se **fAllowLoggedOnUser** è **TRUE,** impostare il flag **MFNET \_ AUTHENTICATION LOGGED ON \_ \_ \_ USER.**
+3.  Il [**metodo GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) restituisce un [**puntatore IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) ed eventualmente il flag REQUIRE \_ PROMPT. Archiviare **il puntatore IMFNetCredential.**
+4.  Se [**GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) non restituisce il flag **REQUIRE \_ PROMPT,** l'operazione è stata completata. Andare al passaggio 9.
+5.  In caso contrario, [**se GetCredential**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential) restituisce il flag **REQUIRE \_ PROMPT,** è necessario richiedere all'utente il nome utente e la password.
+6.  Se **fClearTextPackage è** **FALSE,** crittografare le credenziali.
+7.  Chiamare [**IMFNetCredential::SetUser**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setuser) e [**IMFNetCredential::SetPassword**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setpassword) per impostare il nome e la password dell'utente nell'oggetto credenziali.
+8.  Facoltativamente, chiamare [**IMFNetCredentialCache::SetUserOptions**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setuseroptions) per aggiornare l'oggetto cache delle credenziali con le preferenze dell'utente per l'archiviazione e l'invio delle credenziali.
+9.  Richiamare il callback [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) chiamando [**MFInvokeCallback.**](/windows/desktop/api/mfapi/nf-mfapi-mfinvokecallback)
 
-Nel metodo [**IMFNetCredentialManager:: EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) restituire il puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) ottenuto nel metodo [**BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) .
+Nel metodo [**IMFNetCredentialManager::EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) restituire il puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) ottenuto nel [**metodo BeginGetCredentials.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials)
 
-Nel metodo [**IMFNetCredentialManager:: Sebuonissimo**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-setgood) passare i parametri di input direttamente al metodo [**IMFNetCredentialCache::**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setgood) SetValue. Viene inviata una notifica alla cache delle credenziali se le credenziali sono state accettate dal server.
+Nel metodo [**IMFNetCredentialManager::SetGood**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-setgood) passare i parametri di input direttamente al [**metodo IMFNetCredentialCache::SetGood.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setgood) In questo modo viene notificato alla cache delle credenziali se le credenziali sono state accettate dal server.
 
-Se è necessario richiedere all'utente (passaggio 5) o crittografare le credenziali (passaggio 6), è necessario eseguire questa operazione in un thread della coda di lavoro, in modo da non bloccare la pipeline Microsoft Media Foundation. Chiamare [**MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) , quindi eseguire i passaggi rimanenti all'interno del callback della coda di lavoro.
+Se è necessario richiedere all'utente (passaggio 5) o crittografare le credenziali (passaggio 6), è necessario farlo in un thread della coda di lavoro, in modo da non bloccare la pipeline Microsoft Media Foundation. Chiamare [**MFPutWorkItem e**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) quindi eseguire i passaggi rimanenti all'interno del callback della coda di lavoro.
 
 > [!Note]  
-> Tenere presente che [**BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) potrebbe essere richiamato durante la creazione dell'origine di rete. Se pertanto si crea l'origine di rete chiamando il metodo [**IMFSourceResolver:: CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) sincrono, il thread chiamante potrebbe bloccarsi mentre le credenziali vengono acquisite. È quindi consigliabile usare invece il metodo asincrono [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl) .
+> Tenere presente che [**è possibile richiamare BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) durante la creazione dell'origine di rete. Pertanto, se si crea l'origine di rete chiamando il metodo [**sincrono IMFSourceResolver::CreateObjectFromURL,**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) il thread chiamante potrebbe bloccarsi mentre vengono acquisite le credenziali. È quindi consigliabile usare invece il metodo [**asincrono IMFSourceResolver::BeginCreateObjectFromURL.**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl)
 
  
 
 ## <a name="example"></a>Esempio
 
-In questo esempio viene illustrato un tipo di comportamento che può essere fornito da un gestore di credenziali.
+Questo esempio illustra un tipo di comportamento che può essere fornito da un gestore di credenziali.
 
-Ecco una dichiarazione della classe che implementa [**IMFNetCredentialManager**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager).
+Ecco una dichiarazione della classe che implementa [**IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager)
 
 
 ```C++
@@ -119,7 +119,7 @@ public:
 
 
 
-Per tenere traccia dello stato dell'operazione [**BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) , la classe usa l'oggetto helper seguente:
+Per tenere traccia dello stato [**dell'operazione BeginGetCredentials,**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) la classe usa l'oggetto helper seguente:
 
 
 ```C++
@@ -172,7 +172,7 @@ struct CredentialOp : public IUnknown
 
 
 
-Il metodo [**BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) crea la cache delle credenziali e ottiene un puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) . Se l'utente deve essere richiesto, indicato dal flag **Richiedi \_ richiesta** , il metodo chiama [**MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) per accodare un nuovo elemento di lavoro:
+Il [**metodo BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) crea la cache delle credenziali e ottiene un [**puntatore IMFNetCredential.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) Se all'utente deve essere richiesto (indicato dal flag **REQUIRE \_ PROMPT),** il metodo chiama [**MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) per accodare un nuovo elemento di lavoro:
 
 
 ```C++
@@ -287,7 +287,7 @@ done:
 
 
 
-Il thread della coda di lavoro chiama [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke), che richiede all'utente e quindi chiama [**MFInvokeCallback**](/windows/desktop/api/mfapi/nf-mfapi-mfinvokecallback) per richiamare il puntatore di callback fornito in [**BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials).
+Il thread della coda di lavoro chiama [**Invoke,**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke)che richiede all'utente e quindi chiama [**MFInvokeCallback**](/windows/desktop/api/mfapi/nf-mfapi-mfinvokecallback) per richiamare il puntatore di callback fornito in [**BeginGetCredentials.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials)
 
 
 ```C++
@@ -343,7 +343,7 @@ STDMETHODIMP CCredentialManager::Invoke(IMFAsyncResult* pResult)
 
 
 
-Il metodo [**EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) completa l'operazione restituendo il puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) al chiamante.
+Il [**metodo EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) completa l'operazione restituisce il puntatore [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) al chiamante.
 
 
 ```C++
@@ -393,7 +393,7 @@ done:
 
 <dl> <dt>
 
-[Autenticazione origine rete](network-source-authentication.md)
+[Autenticazione dell'origine di rete](network-source-authentication.md)
 </dt> </dl>
 
  

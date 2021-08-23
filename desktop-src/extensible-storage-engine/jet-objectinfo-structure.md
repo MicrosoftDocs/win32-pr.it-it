@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_OBJECTINFO'
+description: 'Altre informazioni su: JET_OBJECTINFO Structure'
 title: Struttura JET_OBJECTINFO
 TOCTitle: JET_OBJECTINFO Structure
 ms:assetid: 9d348ab3-d453-4316-9233-681f165e8ef1
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd1f8a876153b5b457cfb153cbf35fa2d388b0f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af21d3f885a979ac81fef502a64281ea5445046983f652033566c689991a70ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720311"
 ---
 # <a name="jet_objectinfo-structure"></a>Struttura JET_OBJECTINFO
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_objectinfo-structure"></a>Struttura JET_OBJECTINFO
 
-La struttura **JET_OBJECTINFO** include informazioni su un oggetto. Le tabelle sono gli unici tipi di oggetto attualmente supportati.
+La **JET_OBJECTINFO** contiene informazioni su un oggetto. Le tabelle sono gli unici tipi di oggetto attualmente supportati.
 
 ```cpp
     typedef struct {
@@ -48,11 +48,11 @@ La struttura **JET_OBJECTINFO** include informazioni su un oggetto. Le tabelle s
 
 **cbStruct**
 
-Dimensione, in byte, della struttura **JET_OBJECTINFO** .
+Dimensioni, in byte, della **JET_OBJECTINFO** struttura .
 
 **objtyp**
 
-Include il [JET_OBJTYP](./jet-objtyp.md) della struttura. Attualmente verranno restituite solo le tabelle, ovvero JET_objtypTable.
+Contiene il [JET_OBJTYP](./jet-objtyp.md) della struttura . Attualmente verranno restituite solo le tabelle, ovvero JET_objtypTable.
 
 **dtCreate**
 
@@ -64,7 +64,7 @@ Obsoleta. Non usare.
 
 **grbit**
 
-Gruppo di bit che contiene le opzioni disponibili per la chiamata, che includono zero o più degli elementi seguenti.
+Gruppo di bit che contengono le opzioni disponibili per questa chiamata, che includono zero o più delle opzioni seguenti.
 
 <table>
 <colgroup>
@@ -80,7 +80,7 @@ Gruppo di bit che contiene le opzioni disponibili per la chiamata, che includono
 <tbody>
 <tr class="odd">
 <td><p>JET_bitTableInfoBookmark</p></td>
-<td><p>La tabella può includere segnalibri.</p></td>
+<td><p>La tabella può contenere segnalibri.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitTableInfoRollback</p></td>
@@ -88,7 +88,7 @@ Gruppo di bit che contiene le opzioni disponibili per la chiamata, che includono
 </tr>
 <tr class="odd">
 <td><p>JET_bitTableInfoUpdatable</p></td>
-<td><p>È possibile aggiornare la tabella.</p></td>
+<td><p>La tabella può essere aggiornata.</p></td>
 </tr>
 </tbody>
 </table>
@@ -116,7 +116,7 @@ Campo di bit che contiene zero o più dei flag seguenti.
 </tr>
 <tr class="even">
 <td><p>JET_bitObjectTableDerived</p></td>
-<td><p>Tabella DDL ereditata da una tabella del modello.</p></td>
+<td><p>La tabella ha ereditato DDL da una tabella modello.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitObjectTableFixedDDL</p></td>
@@ -124,8 +124,8 @@ Campo di bit che contiene zero o più dei flag seguenti.
 </tr>
 <tr class="even">
 <td><p>JET_bitObjectTableNoFixedVarColumnsInDerivedTables</p></td>
-<td><p>Utilizzato in combinazione con JET_bitObjectTableTemplate per non consentire colonne fisse o variabili nelle tabelle derivate, in modo che le colonne fisse o variabili possano essere aggiunte al modello in futuro.</p>
-<p><strong>Windows XP:  </strong> Questo valore è stato introdotto in Windows XP.</p></td>
+<td><p>Usato in combinazione con JET_bitObjectTableTemplate per non consentire colonne fisse o variabili nelle tabelle derivate (in modo che le colonne fisse o variabili possano essere aggiunte al modello in futuro).</p>
+<p><strong>Windows XP:</strong> Questo valore è stato introdotto in Windows XP.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitObjectTableTemplate</p></td>
@@ -139,19 +139,19 @@ Campo di bit che contiene zero o più dei flag seguenti.
 
 Numero di record nella tabella.
 
-Questo valore viene recuperato solo se **JET_OBJECTINFO** è stato passato a [JetGetObjectInfo](./jetgetobjectinfo-function.md).
+Questo valore viene recuperato solo se **JET_OBJECTINFO** passato a [JetGetObjectInfo.](./jetgetobjectinfo-function.md)
 
 **cPage**
 
 Numero di pagine utilizzate dalla tabella.
 
-Questo valore viene recuperato solo se **JET_OBJECTINFO** è stato passato a [JetGetObjectInfo](./jetgetobjectinfo-function.md).
+Questo valore viene recuperato solo se **JET_OBJECTINFO** passato a [JetGetObjectInfo.](./jetgetobjectinfo-function.md)
 
 ### <a name="remarks"></a>Commenti
 
-Una struttura **JET_OBJECTINFO** viene popolata da una chiamata a [JetGetObjectInfo](./jetgetobjectinfo-function.md) o [JetGetTableInfo](./jetgettableinfo-function.md). Se la chiamata API ha esito negativo, il contenuto della struttura non è definito.
+Una **JET_OBJECTINFO** viene popolata da una chiamata a [JetGetObjectInfo](./jetgetobjectinfo-function.md) o [JetGetTableInfo](./jetgettableinfo-function.md). Se la chiamata API non riesce, il contenuto della struttura non è definito.
 
-Se applicabile, le statistiche della tabella includono il numero di record e il numero di pagine presenti nell'indice cluster, ovvero l'indice contenente i dati del record. È possibile accedere alle statistiche dell'indice separatamente in base al nome, utilizzando [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+Se applicabile, le statistiche della tabella includono il numero di record e il numero di pagine presenti nell'indice cluster, ovvero l'indice contenente i dati del record. Le statistiche dell'indice sono accessibili separatamente in base al nome, usando [JetGetIndexInfo](./jetgetindexinfo-function.md) [o JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ### <a name="requirements"></a>Requisiti
 
@@ -171,7 +171,7 @@ Se applicabile, le statistiche della tabella includono il numero di record e il 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

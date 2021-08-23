@@ -1,6 +1,6 @@
 ---
-title: attributo x500uniqueIdentifier
-description: Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutilizzato. Si tratta di un tipo di attributo diverso da entrambi i tipi UID e uniqueIdentifier.
+title: Attributo x500uniqueIdentifier
+description: Utilizzato per distinguere tra oggetti quando un nome distinto è stato riutilizzato. Si tratta di un tipo di attributo diverso dai tipi uid e uniqueIdentifier.
 ms.assetid: 72975f85-2e0a-4b4e-8fc2-8eeb2d744563
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b6be2dd1beca51dbc3ad2de2caa8ef6afb11a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a1a25a9bf61ddfe489492a6e6ff6a960ecfc172d01469f7bb844bc5248e9b466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702381"
 ---
-# <a name="x500uniqueidentifier-attribute"></a>attributo x500uniqueIdentifier
+# <a name="x500uniqueidentifier-attribute"></a>Attributo x500uniqueIdentifier
 
-Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutilizzato. Si tratta di un tipo di attributo diverso da entrambi i tipi UID e uniqueIdentifier.
+Utilizzato per distinguere tra oggetti quando un nome distinto è stato riutilizzato. Si tratta di un tipo di attributo diverso dai tipi uid e uniqueIdentifier.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | x500uniqueIdentifier                                  |
-| LDAP-Display-Name | x500uniqueIdentifier                                  |
+| Ldap-Display-Name | x500uniqueIdentifier                                  |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.45                                              |
-| System-ID-GUID    | d07da11f-8a3d-42b6-b0aa-76c962be719a                  |
+| System-Id-Guid    | d07da11f-8a3d-42b6-b0aa-76c962be719a                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -56,15 +56,15 @@ Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutiliz
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutiliz
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutiliz
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutiliz
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Utilizzato per distinguere gli oggetti quando un nome distinto è stato riutiliz
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Crea un thread.
 ms.assetid: 40785522-dc6e-41af-8b27-9e8875a0dd84
-title: Metodo CMsgThread. CreateThread (Msgthrd. h)
+title: Metodo CMsgThread.CreateThread (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8951995de18158fe4d1e5f84b1d98da701067ab6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3681716af79d0c47ae08371caa2d03d236b9748d98b08098d7a6834a93ed9b2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831871"
 ---
-# <a name="cmsgthreadcreatethread-method"></a>CMsgThread. CreateThread, metodo
+# <a name="cmsgthreadcreatethread-method"></a>Metodo CMsgThread.CreateThread
 
 Crea un thread.
 
@@ -48,8 +48,8 @@ Restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                              | Descrizione                                     |
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>TRUE * * * *</dt> </dl>  | Creazione thread completata.<br/>     |
-| <dl> <dt>FALSE * * * *</dt> </dl> | Creazione del thread non riuscita.<br/> |
+| <dl> <dt>TRUE****</dt> </dl>  | Il thread è stato creato correttamente.<br/>     |
+| <dl> <dt>FALSE****</dt> </dl> | Il thread non è stato creato correttamente.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Restituisce uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il thread effettuerà il ciclo, bloccando la coda di una richiesta (tramite la funzione membro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) ) e quindi chiamando la funzione membro [**CMsgThread:: ThreadMessageProc**](cmsgthread-threadmessageproc.md) con ogni messaggio.
+Il thread verrà ciclico, bloccando fino a quando una richiesta non viene accodata (tramite la funzione membro [**CMsgThread::P utThreadMsg)**](cmsgthread-putthreadmsg.md) e quindi chiamando la funzione membro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) con ogni messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Il thread effettuerà il ciclo, bloccando la coda di una richiesta (tramite la f
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

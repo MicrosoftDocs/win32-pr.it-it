@@ -1,7 +1,7 @@
 ---
-description: Imposta le informazioni sul parametro specificato.
+description: Imposta le informazioni sui parametri specificati.
 ms.assetid: fe3fe5cf-e8b8-40ca-9e12-9d92489982a7
-title: 'Metodo IPStore:: SetProvParam (PStore. h)'
+title: Metodo IPStore::SetProvParam (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: edbbb7bd2f5d889568623390d805659e1cf840f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ec106cd4558ddab7fd8bc430088f1bd7d721d7122f77166dfe0da7de35f1787
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749721"
 ---
-# <a name="ipstoresetprovparam-method"></a>Metodo IPStore:: SetProvParam
+# <a name="ipstoresetprovparam-method"></a>Metodo IPStore::SetProvParam
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
-Imposta le informazioni sul parametro specificato.
+Imposta le informazioni sui parametri specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ HRESULT SetProvParam(
 
 <dl> <dt>
 
-*dwParam* \[ in\]
+*dwParam* \[ Pollici\]
 </dt> <dd>
 
-Contiene **la \_ \_ \_ \_ cache di scaricamento PW di PST PP** per scaricare la cache della password utente.
+Contiene **PST PP FLUSH \_ \_ \_ PW CACHE \_ per** scaricare la cache delle password utente.
 
 </dd> <dt>
 
-*cbData* \[ in\]
+*cbData* \[ Pollici\]
 </dt> <dd>
 
 Lunghezza della password nel buffer.
@@ -61,7 +61,7 @@ Lunghezza della password nel buffer.
 *pbData* 
 </dt> <dd>
 
-Puntatore a un buffer che contiene la password dell'utente. Deve essere impostato su **null**.
+Puntatore a un buffer che contiene la password dell'utente. Deve essere impostato su **NULL.**
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Riservato: deve essere impostato su zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** indica che la funzione ha avuto esito positivo.
+Il valore restituito è un **valore HRESULT.** Il valore **PST \_ E \_ OK** indica che la funzione ha avuto esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** ind
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl>    |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** ind
 
 <dl> <dt>
 
-[**IPStore**](ipstore.md)
+[**Archivio IP**](ipstore.md)
 </dt> </dl>
 
  
