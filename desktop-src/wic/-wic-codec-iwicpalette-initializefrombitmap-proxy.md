@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo InitializeFromBitmap.
 ms.assetid: 9559a56d-7201-4b39-a3cd-9c0e4eac611a
-title: Funzione IWICPalette_InitializeFromBitmap_Proxy
+title: IWICPalette_InitializeFromBitmap_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cf5e119acf1efca948281a02f61d8954f4e08818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c807e95b980a564096216727315f4a1534e8cd011cc78aa7322f670fff0876c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088183"
 ---
-# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>IWICPalette \_ InitializeFromBitmap- \_ funzione proxy
+# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>Funzione proxy IWICPalette \_ InitializeFromBitmap \_
 
-Funzione proxy per il metodo [**InitializeFromBitmap**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap) .
+Funzione proxy per il [**metodo InitializeFromBitmap.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT IWICPalette_InitializeFromBitmap_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Puntatore a questo oggetto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Puntatore a [**questo oggetto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*pISurface* \[ in\]
+*pISurface* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 Puntatore alla bitmap di origine.
 
 </dd> <dt>
 
-_colorCount * \[ in\]
+*colorCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Il numero di colori con cui inizializzare la tavolozza.
+Numero di colori con cui inizializzare la tavolozza.
 
 </dd> <dt>
 
-*fAddTransparentColor* \[ in\]
+*fAddTransparentColor* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 Valore che indica se aggiungere un colore trasparente.
 
@@ -83,7 +83,7 @@ Valore che indica se aggiungere un colore trasparente.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -93,9 +93,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop di Vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

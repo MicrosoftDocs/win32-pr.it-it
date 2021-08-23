@@ -17,9 +17,9 @@ Per avviare RC, usare il comando seguente.
 
 **RC** \[ *opzioni* \] *file di script*
 
-Il *parametro script-file* specifica il nome del file di definizione delle risorse che contiene i nomi, i tipi, i nomi dei file e le descrizioni delle risorse da compilare.
+Il *parametro script-file* specifica il nome del file di definizione delle risorse che contiene i nomi, i tipi, i nomi file e le descrizioni delle risorse da compilare.
 
-RC può generare file di risorse separati per le applicazioni con risorse indipendenti dalla lingua e specifiche della lingua. Gli sviluppatori possono usare un [file](/windows/desktop/Intl/preparing-resources) di configurazione delle risorse o impostare opzioni della riga di comando per selezionare quali tipi di risorse ed elementi sono risorse non localizzabili del file indipendente dalla lingua [(LN)](/windows/desktop/Intl/mui-resource-management) e quali sono risorse localizzabili di file MUI specifici del linguaggio. Per altre informazioni, vedere [l'interfaccia utente multilingue](/windows/desktop/Intl/multilingual-user-interface).
+RC può generare file di risorse separati per le applicazioni con risorse indipendenti dalla lingua e specifiche della lingua. Gli sviluppatori possono usare un [file](/windows/desktop/Intl/preparing-resources) di configurazione delle risorse o impostare opzioni della riga di comando per selezionare quali tipi di risorse ed elementi sono risorse non localizzabili del file indipendente dalla lingua [(LN)](/windows/desktop/Intl/mui-resource-management) e quali sono risorse localizzabili di file MUI specifici della lingua. Per altre informazioni, vedere [l'interfaccia utente multilingue](/windows/desktop/Intl/multilingual-user-interface).
 
 Il *parametro options* può essere una o più delle opzioni della riga di comando seguenti.
 
@@ -51,7 +51,7 @@ Definisce un simbolo per il preprocessore che è possibile testare con la [**\# 
 <span id="_fm_mresname"></span><span id="_FM_MRESNAME"></span>**/fm** *mresname*
 </dt> <dd>
 
-RC crea un solo oggetto indipendente dalla lingua. FILE RES e un file MUI (Language-Dependent Language). FILE RES con *file di script*. Questa opzione deve essere usata insieme **all'opzione /fo** *resname.* Il nome RC è indipendente dalla lingua. *Resname.res* del file RES e il nome muI (Language-Dependent Language-Dependent). File RES *mresname.res*.
+RC crea un oggetto indipendente dalla lingua. File RES e muI (Language-Dependent). File RES con *file di script*. Questa opzione deve essere usata insieme **all'opzione /fo** *resname.* RC specifica il nome indipendente dalla lingua. *Resname.res* del file RES e il nome del file dipendente dalla lingua (MUI). File RES *mresname.res*.
 
 **Windows Server 2003 e Windows XP/2000:** Questa opzione non è disponibile senza usare anche le [**funzioni LoadMUILibrary**](/windows/desktop/api/muiload/nf-muiload-loadmuilibrarya) e [**FreeMUILibrary**](/windows/desktop/api/muiload/nf-muiload-freemuilibrary) in un sistema aggiornato.
 
@@ -60,9 +60,9 @@ RC crea un solo oggetto indipendente dalla lingua. FILE RES e un file MUI (Langu
 <span id="_fo_resname"></span><span id="_FO_RESNAME"></span>**/fo** *resname*
 </dt> <dd>
 
-RC crea un oggetto . File RES denominato *resname usando* *script-file*.
+RC crea un oggetto . File RES denominato *resname usando* il *file di script*.
 
-Se è **impostata anche l'opzione /fm** *mresname,* RC crea un oggetto indipendente dalla lingua. FILE RES e un file MUI (Language-Dependent Language). FILE RES.
+Se è **impostata anche l'opzione /fm** *mresname,* RC crea un'istanza indipendente dalla lingua. File RES e muI (Language-Dependent). File RES.
 
 **Windows Server 2003 e Windows XP/2000:** Questa opzione non è disponibile senza usare anche le [**funzioni LoadMUILibrary**](/windows/desktop/api/muiload/nf-muiload-loadmuilibrarya) e [**FreeMUILibrary**](/windows/desktop/api/muiload/nf-muiload-freemuilibrary) in un sistema aggiornato.
 
@@ -71,7 +71,7 @@ Se è **impostata anche l'opzione /fm** *mresname,* RC crea un oggetto indipende
 <span id="_g1"></span><span id="_G1"></span>**/g1**
 </dt> <dd>
 
-Se /g1, è impostato, RC genera un file MUI se l'unica risorsa localizzabile inclusa nel file MUI è una risorsa di versione. Se /g1 non è impostato, RC non genererà un file MUI se l'unica risorsa localizzabile inclusa nel file MUI è una risorsa di versione.
+Se /g1 è impostato, RC genera un file MUI se l'unica risorsa localizzabile inclusa nel file MUI è una risorsa di versione. Se /g1 non è impostato, RC non genererà un file MUI se l'unica risorsa localizzabile inclusa nel file MUI è una risorsa di versione.
 
 </dd> <dt>
 
@@ -85,23 +85,23 @@ Visualizza l'elenco delle opzioni della riga di comando.
 <span id="_I"></span><span id="_i"></span>**/i**
 </dt> <dd>
 
-Cerca nella directory specificata prima di cercare le directory specificate dalla variabile di ambiente INCLUDE.
+Cerca nella directory specificata prima di eseguire la ricerca nelle directory specificate dalla variabile di ambiente INCLUDE.
 
 </dd> <dt>
 
 <span id="_j__loctype"></span><span id="_J__LOCTYPE"></span>**/j** *loctype*
 </dt> <dd>
 
-I tipi di risorse localizzabili RC inserisce in MUI (Language-Dependent Language-Dependent). FILE RES. Se è **impostata anche l'opzione /q,** questa opzione viene ignorata e le informazioni nel file di configurazione RC hanno la precedenza.
+I tipi di risorse localizzabili RC si inserisce nell'interfaccia MUI (Language-Dependent). File RES. Se viene **impostata anche l'opzione /q** , questa opzione viene ignorata e le informazioni nel file di configurazione RC hanno la precedenza.
 
 **Windows Server 2003 e Windows XP/2000:** Questa opzione non è disponibile senza usare anche le [**funzioni LoadMUILibrary**](/windows/desktop/api/muiload/nf-muiload-loadmuilibrarya) e [**FreeMUILibrary**](/windows/desktop/api/muiload/nf-muiload-freemuilibrary) in un sistema aggiornato.
 
 </dd> <dt>
 
-<span id="_k_overtype"></span><span id="_K_OVERTYPE"></span>**/k** *overtype*
+<span id="_k_overtype"></span><span id="_K_OVERTYPE"></span>**Overtype /k** 
 </dt> <dd>
 
-Tipi di risorse sovrapposti che RC inserisce in entrambi i tipi indipendenti dal linguaggio. RES e MUI (Language-Dependent). File RES. I tipi di risorsa specificati **dall'opzione /k** devono essere un subset di quelli specificati dall'opzione **/j.** Per esempio? J2 ? J3 ? K3 specifica che RC inserisce il tipo di risorsa 3 nei file muI (Language Neutral Language Neutral) e Language-Dependent (MUI). Se è **impostata anche l'opzione /q,** questa opzione viene ignorata e le informazioni nel file di configurazione RC hanno la precedenza.
+Tipi di risorse sovrapposti che RC inserisce in entrambi i linguaggi indipendenti dal linguaggio. RES e muI (Language-Dependent). File RES. I tipi di risorse specificati **dall'opzione /k** devono essere un subset di quelli specificati dall'opzione **/j** . Per esempio? J2 ? J3 ? K3 specifica che RC inserisce il tipo di risorsa 3 nei file indipendenti dalla lingua e dipendenti dalla lingua (MUI). Se viene **impostata anche l'opzione /q** , questa opzione viene ignorata e le informazioni nel file di configurazione RC hanno la precedenza.
 
 **Windows Server 2003 e Windows XP/2000:** Questa opzione non è disponibile senza usare anche le [**funzioni LoadMUILibrary**](/windows/desktop/api/muiload/nf-muiload-loadmuilibrarya) e [**FreeMUILibrary**](/windows/desktop/api/muiload/nf-muiload-freemuilibrary) in un sistema aggiornato.
 
@@ -110,23 +110,23 @@ Tipi di risorse sovrapposti che RC inserisce in entrambi i tipi indipendenti dal
 <span id="_l_langid"></span><span id="_L_LANGID"></span>**/l** *langid*
 </dt> <dd>
 
-Specifica il linguaggio predefinito per la compilazione. Ad esempio, -l409 equivale a includere l'istruzione seguente all'inizio del file di script di risorsa: `LANGUAGE LANG_ENGLISH,SUBLANG_ENGLISH_US`
+Specifica il linguaggio predefinito per la compilazione. Ad esempio, -l409 equivale a includere l'istruzione seguente all'inizio del file script di risorsa: `LANGUAGE LANG_ENGLISH,SUBLANG_ENGLISH_US`
 
-Per altre informazioni, vedere [Identificatori di lingua](/windows/desktop/Intl/language-identifiers).
+Per altre informazioni, vedere [Identificatori di lingua.](/windows/desktop/Intl/language-identifiers)
 
 </dd> <dt>
 
 <span id="_n"></span><span id="_N"></span>**/n**
 </dt> <dd>
 
-Null termina tutte le stringhe nella tabella delle stringhe.
+Null termina tutte le stringhe nella tabella di stringhe.
 
 </dd> <dt>
 
 <span id="_q_Mui.RCConfig"></span><span id="_q_mui.rcconfig"></span><span id="_Q_MUI.RCCONFIG"></span>**/q** *Mui.RCConfig*
 </dt> <dd>
 
-Un file di configurazione RC che segue il formato del file di configurazione RC. Il formato del file di configurazione RC consente ai componenti di descrivere autonomamente le informazioni sulle risorse, ad esempio il controllo delle versioni delle risorse, il percorso del file MUI, i tipi di risorse e gli elementi. Questo file specifica le risorse che passano all'oggetto indipendente dalla lingua. RES e le risorse che passano al file MUI (Language-Dependent Language- Dependent Language). FILE RES. Questa opzione e le informazioni fornite nel file di configurazione RC eseguono l'override delle opzioni della riga di comando **/j** e **/k**.
+Un file di configurazione RC che segue il formato del file di configurazione RC. Il formato del file di configurazione RC consente ai componenti di descrivere autonomamente le informazioni sulle risorse, ad esempio il controllo delle versioni delle risorse, il percorso del file MUI, i tipi di risorse e gli elementi. Questo file specifica le risorse da passare all'oggetto indipendente dalla lingua. File RES e le risorse che passano al file dipendente dalla lingua (MUI). File RES. Questa opzione e le informazioni fornite nel file di configurazione RC sostituiscono le opzioni della riga di comando **/j** **e /k**.
 
 **Windows Server 2003 e Windows XP/2000:** Questa opzione non è disponibile senza usare anche le [**funzioni LoadMUILibrary**](/windows/desktop/api/muiload/nf-muiload-loadmuilibrarya) e [**FreeMUILibrary**](/windows/desktop/api/muiload/nf-muiload-freemuilibrary) in un sistema aggiornato.
 
@@ -149,7 +149,7 @@ Annulla la ridefinizione di un simbolo per il preprocessore.
 <span id="_v"></span><span id="_V"></span>**/v**
 </dt> <dd>
 
-Visualizza i messaggi che segnalano lo stato del compilatore.
+Visualizza i messaggi che segnalano lo stato di avanzamento del compilatore.
 
 </dd> <dt>
 
@@ -162,13 +162,13 @@ Impedisce a RC di controllare la variabile di ambiente INCLUDE durante la ricerc
 
 ## <a name="remarks"></a>Commenti
 
-Le opzioni non supportano la distinzione tra maiuscole e minuscole e è possibile usare un trattino (-) al posto di una barra (/). È possibile combinare le opzioni di una sola lettera se non richiedono parametri aggiuntivi.
+Le opzioni non supportano la distinzione tra maiuscole e minuscole ed è possibile usare un trattino (-) al posto di una barra (/). È possibile combinare opzioni di una sola lettera se non richiedono parametri aggiuntivi.
 
 RC non genererà un file MUI nei casi seguenti.
 
 -   Nel file RC non sono presenti risorse localizzabili.
 -   L'unico ID lingua della risorsa specificato nel file RC è neutro (0x0).
--   Il file RC contiene risorse specificate in più lingue. L'eccezione è se il file RC contiene due lingue e una lingua è neutra (0x0), RC genera un file MUI.
+-   Il file RC contiene risorse specificate in più di una lingua. L'eccezione si verifica se il file RC contiene due lingue e una lingua è neutra (0x0), RC genera un file MUI.
 
 Per altre informazioni, vedere i seguenti argomenti:
 

@@ -1,10 +1,10 @@
 ---
-title: Enumerazione CB_ADDRESS_TYPE (Cbclient. h)
+title: CB_ADDRESS_TYPE enumerazione (Cbclient.h)
 description: Specifica il tipo di indirizzo.
 ms.assetid: 1F6ECFA6-8876-4C9B-A883-BD630D54B8E2
 ms.tgt_platform: multiple
 keywords:
-- Enumerazione CB_ADDRESS_TYPE Servizi Desktop remoto
+- CB_ADDRESS_TYPE di enumerazione Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecf17cea6ffc19743868b266236738839f9f917
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50903baa9fe85685ef3390ee3d545dd7defff5288d0960d6a2d7ec6ebe2276ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001699"
 ---
-# <a name="cb_address_type-enumeration"></a>Enumerazione del tipo di \_ Indirizzo CB \_
+# <a name="cb_address_type-enumeration"></a>Enumerazione \_ CB ADDRESS \_ TYPE
 
 Specifica il tipo di indirizzo.
 
@@ -43,21 +43,21 @@ typedef enum _CB_ADDRESS_TYPE {
 
 <dl> <dt>
 
-<span id="CB_ADDR_UNDEFINED"></span><span id="cb_addr_undefined"></span>**Indirizzo CB non \_ \_ definito**
+<span id="CB_ADDR_UNDEFINED"></span><span id="cb_addr_undefined"></span>**CB \_ ADDR \_ UNDEFINED**
 </dt> <dd>
 
 Il tipo di indirizzo non è definito.
 
 </dd> <dt>
 
-<span id="CB_ADDR_IPv4"></span><span id="cb_addr_ipv4"></span><span id="CB_ADDR_IPV4"></span>**\_IPv4 indirizzi \_ CB**
+<span id="CB_ADDR_IPv4"></span><span id="cb_addr_ipv4"></span><span id="CB_ADDR_IPV4"></span>**CB \_ ADDR \_ IPv4**
 </dt> <dd>
 
 L'indirizzo è un indirizzo IPv4.
 
 </dd> <dt>
 
-<span id="CB_ADDR_IPv6"></span><span id="cb_addr_ipv6"></span><span id="CB_ADDR_IPV6"></span>**\_IPv6 indirizzo \_ CB**
+<span id="CB_ADDR_IPv6"></span><span id="cb_addr_ipv6"></span><span id="CB_ADDR_IPV6"></span>**CB \_ ADDR \_ IPv6**
 </dt> <dd>
 
 L'indirizzo è un indirizzo IPv6.
@@ -72,7 +72,7 @@ L'indirizzo è un indirizzo IPv6.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 

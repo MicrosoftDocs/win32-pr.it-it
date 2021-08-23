@@ -17,16 +17,16 @@ Illustra come creare un'origine multimediale personalizzata in Microsoft Media F
 
 Questo esempio è un esempio relativamente semplice di un'origine multimediale:
 
--   Esiste un solo flusso, quindi non è presente codice per implementare la selezione del flusso.
--   L'origine multimediale non implementa il controllo della frequenza, ovvero la riproduzione rapida in avanti o inversa.
+-   È presente un solo flusso, quindi non è disponibile codice per implementare la selezione del flusso.
+-   L'origine multimediale non implementa il controllo della frequenza, ovvero la riproduzione veloce in avanti o inversa.
 -   Tutti i metodi di origine e flusso vengono implementati come metodi sincroni.
--   Poiché la parte di dati di un file wav è un singolo blocco di audio PCM non compresso, l'origine multimediale non deve leggere le intestazioni dei pacchetti o analizzare in altro modo il flusso durante la riproduzione, oltre alla lettura dell'intestazione [**WAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-waveformat) iniziale.
+-   Poiché la parte di dati di un file wav è un singolo blocco di audio PCM non compresso, l'origine multimediale non deve leggere le intestazioni dei pacchetti o analizzare in altro modo il flusso durante la riproduzione, a parte la lettura dell'intestazione [**WAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-waveformat) iniziale.
 
-Per un esempio più avanzato di un'origine multimediale, vedere [l'esempio MPEG1Source](mpeg1source-sample.md).
+Per un esempio più avanzato di un'origine multimediale, vedere [MPEG1Source Sample (Esempio MPEG1Source).](mpeg1source-sample.md)
 
-## <a name="apis-demonstrated"></a>API illustrate
+## <a name="apis-demonstrated"></a>DIMOSTRAZIONE DELLE API
 
-Questo esempio illustra le interfacce Media Foundation seguenti:
+In questo esempio vengono illustrate le Media Foundation seguenti:
 
 -   [**IMFByteStreamHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler)
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
@@ -34,11 +34,11 @@ Questo esempio illustra le interfacce Media Foundation seguenti:
 
 ## <a name="usage"></a>Utilizzo
 
-L'esempio WavSource compila una DLL che è un server COM sia per l'origine multimediale che per il gestore del flusso di byte dell'origine multimediale. Prima di usare l'origine multimediale, è necessario registrare la DLL.
+L'esempio WavSource compila una DLL che è un server COM sia per l'origine multimediale che per il gestore del flusso di byte dell'origine multimediale. Prima di utilizzare l'origine supporto, è necessario registrare la DLL.
 
-Per usare l'origine multimediale, è possibile eseguire [BasicPlayback.](/previous-versions//bb970475(v=vs.85)) Il sistema di risoluzione di origine carica automaticamente l'origine multimediale se si seleziona un file wav per la riproduzione. Se si verifica un errore, assicurarsi di aver registrato correttamente la DLL WavSource.
+Per usare l'origine multimediale, è possibile eseguire [BasicPlayback.](/previous-versions//bb970475(v=vs.85)) Il resolver di origine carica automaticamente l'origine multimediale se si seleziona un file wav per la riproduzione. Se si verifica un errore, assicurarsi di aver registrato correttamente la DLL WavSource.
 
-È anche possibile usare lo strumento TopoEdit per creare una topologia di riproduzione che contiene l'origine multimediale. Per altre informazioni su TopoEdit, vedere [TopoEdit](topoedit.md).
+È anche possibile usare lo strumento TopoEdit per creare una topologia di riproduzione contenente l'origine multimediale. Per altre informazioni su TopoEdit, vedere [TopoEdit.](topoedit.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Per usare l'origine multimediale, è possibile eseguire [BasicPlayback.](/previo
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/wavsource).
+Questo esempio è disponibile nel [repository github Windows esempi classici.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/wavsource)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -66,10 +66,10 @@ Questo esempio è disponibile nel [repository github Windows esempi classici](ht
 [Origini multimediali](media-sources.md)
 </dt> <dt>
 
-[Esempio di MPEG1Source](mpeg1source-sample.md)
+[Esempio MPEG1Source](mpeg1source-sample.md)
 </dt> <dt>
 
-[Gestori di schemi e gestori Byte-Stream schema](scheme-handlers-and-byte-stream-handlers.md)
+[Gestori di schemi e Byte-Stream di schema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> <dt>
 
 [Scrittura di un'origine multimediale personalizzata](writing-a-custom-media-source.md)

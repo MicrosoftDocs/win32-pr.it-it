@@ -1,7 +1,7 @@
 ---
-description: Il metodo PossiblyEatMessage trasmette i messaggi della tastiera e del mouse alla finestra di svuotamento del messaggio.
+description: Il metodo PossiblyEatMessage inoltra i messaggi della tastiera e del mouse alla finestra di svuotamento dei messaggi.
 ms.assetid: 8e344c5d-2f94-454f-89b7-45c539b6e833
-title: Metodo CBaseControlWindow. PossiblyEatMessage (Ctlutil. h)
+title: Metodo CBaseControlWindow.PossiblyEatMessage (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9bfadcfbbd6833d8f3e9b65bd39d0cdbef4a006e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 403fb4d170f9c3cf0b7d68d3ac6ce1fdcc9c81a14b1c76d74e67bb64d4d9cc8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017339"
 ---
-# <a name="cbasecontrolwindowpossiblyeatmessage-method"></a>CBaseControlWindow. PossiblyEatMessage, metodo
+# <a name="cbasecontrolwindowpossiblyeatmessage-method"></a>Metodo CBaseControlWindow.PossiblyEatMessage
 
-Il `PossiblyEatMessage` metodo trasmette i messaggi della tastiera e del mouse alla finestra di svuotamento del messaggio.
+Il `PossiblyEatMessage` metodo inoltra i messaggi della tastiera e del mouse alla finestra di svuotamento dei messaggi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ BOOL PossiblyEatMessage(
 
 <dl> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Messaggio finestra.
+Messaggio della finestra.
 
 </dd> <dt>
 
@@ -67,45 +67,45 @@ Secondo parametro del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il messaggio è stato inviato alla finestra; in caso contrario, **false** .
+Restituisce **TRUE** se il messaggio è stato inoltrato alla finestra oppure **FALSE in caso** contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La finestra di svuotamento dei messaggi è una finestra progettata per ricevere determinati messaggi di mouse e tastiera. Inizialmente la finestra è **null**; può essere impostata chiamando [**CBaseControlWindow::p UT \_ MessageDrain**](cbasecontrolwindow-put-messagedrain.md).
+La finestra di svuotamento dei messaggi è una finestra designata per ricevere determinati messaggi del mouse e della tastiera. Inizialmente la finestra è **NULL.** Può essere impostato chiamando [**CBaseControlWindow::p ut \_ MessageDrain**](cbasecontrolwindow-put-messagedrain.md).
 
-Se la finestra di svuotamento dei messaggi è non **null**, `PossiblyEatMessage` inserisce i messaggi seguenti in tale finestra:
+Se la finestra di svuotamento dei messaggi è non **NULL,** `PossiblyEatMessage` invia i messaggi seguenti a tale finestra:
 
--   \_carattere WM
--   \_DEADCHAR WM
--   KeyDown di WM \_
--   KEYUP di WM \_
--   \_LBUTTONDBLCLK WM
--   \_LBUTTONDOWN WM
--   \_LBUTTONUP WM
--   \_MBUTTONDBLCLK WM
--   \_MBUTTONDOWN WM
--   \_MBUTTONUP WM
--   \_MOUSEACTIVATE WM
--   MOUSEMOVE di WM \_
--   \_NCLBUTTONDBLCLK WM
--   \_NCLBUTTONDOWN WM
--   \_NCLBUTTONUP WM
--   \_NCMBUTTONDBLCLK WM
--   \_NCMBUTTONDOWN WM
--   \_NCMBUTTONUP WM
--   \_NCMOUSEMOVE WM
--   \_NCRBUTTONDBLCLK WM
--   \_NCRBUTTONDOWN WM
--   \_NCRBUTTONUP WM
--   \_RBUTTONDBLCLK WM
--   \_RBUTTONDOWN WM
--   \_RBUTTONUP WM
--   \_SYSCHAR WM
--   \_SYSDEADCHAR WM
--   \_SYSKEYDOWN WM
--   \_SYSKEYUP WM
+-   WM \_ CHAR
+-   WM \_ DEADCHAR
+-   WM \_ KEYDOWN
+-   WM \_ KEYUP
+-   WM \_ LBUTTONDBLCLK
+-   WM \_ LBUTTONDOWN
+-   WM \_ LBUTTONUP
+-   WM \_ MBUTTONDBLCLK
+-   WM \_ MBUTTONDOWN
+-   WM \_ MBUTTONUP
+-   WM \_ MOUSEACTIVATE
+-   WM \_ MOUSEMOVE
+-   WM \_ NCLBUTTONDBLCLK
+-   WM \_ NCLBUTTONDOWN
+-   WM \_ NCLBUTTONUP
+-   WM \_ NCMBUTTONDBLCLK
+-   WM \_ NCMBUTTONDOWN
+-   WM \_ NCMBUTTONUP
+-   WM \_ NCMOUSEMOVE
+-   WM \_ NCRBUTTONDBLCLK
+-   WM \_ NCRBUTTONDOWN
+-   WM \_ NCRBUTTONUP
+-   WM \_ RBUTTONDBLCLK
+-   WM \_ RBUTTONDOWN
+-   WM \_ RBUTTONUP
+-   WM \_ SYSCHAR
+-   WM \_ SYSDEADCHAR
+-   WM \_ SYSKEYDOWN
+-   WM \_ SYSKEYUP
 
-Ignora gli altri messaggi. Se la finestra di svuotamento dei messaggi è **null**, il metodo ignorerà tutti i messaggi della finestra. Il metodo restituisce **true** se inserisce il messaggio o **false** in caso contrario. La classe **CBaseWindow** chiama questo metodo quando riceve un messaggio di finestra.
+Ignora gli altri messaggi. Se la finestra di svuotamento dei messaggi **è NULL,** il metodo ignora tutti i messaggi della finestra. Il metodo restituisce **TRUE se** invia il messaggio oppure FALSE **in caso** contrario. La **classe CBaseWindow** chiama questo metodo quando riceve un messaggio di finestra.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,8 +113,8 @@ Ignora gli altri messaggi. Se la finestra di svuotamento dei messaggi è **null*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -6,12 +6,12 @@ keywords:
 - tipi di dati MIDL, con segno e senza segno
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2a3ed3c9f7022123f162fe0240ae190cdb4c8f8
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4e9f65931720e80de6575d8b7125e6b5082a32e510e1be07e620e6592d30e485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066751"
 ---
 # <a name="signed-and-unsigned-types-midl"></a>Tipi con e senza segno (MIDL)
 

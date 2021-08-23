@@ -1,7 +1,7 @@
 ---
-description: Indica se l'elemento è un tasto di scelta rapida.
+description: Indica se l'elemento è un collegamento.
 ms.assetid: f3400f0b-5c7f-4d41-a162-1c35014082ac
-title: Proprietà FolderItem. unlink (shldisp. h)
+title: Proprietà FolderItem.IsLink (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: bd4357485dce3f3d236f31797d8b2df7028f3d65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb12c2273bb22af2df9f76c6606cad69223fa04292e0d556a65d4898bc968c75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093125"
 ---
-# <a name="folderitemislink-property"></a>FolderItem. unlink (proprietà)
+# <a name="folderitemislink-property"></a>FolderItem.IsLink - proprietà
 
-Indica se l'elemento è un tasto di scelta rapida.
+Indica se l'elemento è un collegamento.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ bIsLink = FolderItem.IsLink
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Valore booleano** che riceve **true** se l'elemento è un collegamento o **false** in caso contrario.
+Valore **booleano** che riceve **true se** l'elemento è un collegamento o false **in** caso contrario.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzato il **collegamento** per determinare se un particolare oggetto è un collegamento. In questo caso, l'oggetto è un collegamento a Internet Explorer, quindi deve restituire **true**. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato IsLink** per determinare se un particolare oggetto è un collegamento. In questo caso, l'oggetto è un collegamento Internet Explorer e quindi deve restituire **true.** Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

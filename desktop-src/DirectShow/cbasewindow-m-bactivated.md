@@ -1,7 +1,7 @@
 ---
 description: Flag che specifica se la finestra è stata attivata. Se TRUE, la finestra è stata attivata.
 ms.assetid: 6444c581-53a9-48eb-ba9b-fdb8f09aab5d
-title: 'Membro CBaseWindow:: m_bActivated (Winutil. h)'
+title: Membro CBaseWindow::m_bActivated (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 344fe429cd6895ad0c900ef4976216a673e035e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2346a1343e13e9007c1efde62cb18689714245b9d492c5193182915fe7d15ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016589"
 ---
-# <a name="cbasewindowm_bactivated-member"></a>Membro bActivated di CBaseWindow:: m \_
+# <a name="cbasewindowm_bactivated-member"></a>Membro CBaseWindow::m \_ bActivated
 
-Flag che specifica se la finestra è stata attivata. Se **true**, la finestra è stata attivata.
+Flag che specifica se la finestra è stata attivata. Se **TRUE,** la finestra è stata attivata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bActivated;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Definisce i valori validi per l'attributo di stile dell'elemento LineLayout.
+description: Definisce i valori validi per l'attributo Style dell'elemento LineLayout.
 ms.assetid: b257f0da-1bee-4d1b-9829-70f91cdcabe0
 title: Tipo semplice LineLayoutStyleType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 67b07d9de51e16148905768d7a6f268038bb1afa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2aa0a42ca2f295cdcccad05931ba651d4018ba377d8d10f09f85b82dcaaea8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031839"
 ---
 # <a name="linelayoutstyletype-simple-type"></a>Tipo semplice LineLayoutStyleType
 
-Definisce i valori validi per l'attributo di **stile** dell' [elemento LineLayout](linelayout-element.md).
+Definisce i valori validi per **l'attributo Style** dell'elemento [LineLayout.](linelayout-element.md)
 
 ``` syntax
 <xs:simpleType name="LineLayoutStyleType">
@@ -37,15 +37,15 @@ Definisce i valori validi per l'attributo di **stile** dell' [elemento LineLayou
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **LineLayoutStyleType** è una stringa limitata dal modello seguente:
+Il **tipo semplice LineLayoutStyleType** è una stringa limitata dal modello seguente:
 
 -   `None|Solid|Dash|Dot|DashDot|DashDotDot|Double`
 
 ## <a name="remarks"></a>Commenti
 
-I valori validi per l'attributo di **stile** dell' [elemento LineLayout](linelayout-element.md) sono i seguenti:
+I valori validi per **l'attributo Style** [dell'elemento LineLayout](linelayout-element.md) sono:
 
--   nessuno
+-   Nessuno
 -   Tinta unita
 -   Trattino
 -   Punto
@@ -59,7 +59,7 @@ I valori validi per l'attributo di **stile** dell' [elemento LineLayout](linelay
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

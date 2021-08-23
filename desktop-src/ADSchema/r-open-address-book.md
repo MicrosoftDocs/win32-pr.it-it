@@ -1,10 +1,10 @@
 ---
-title: Open-Address-Book esteso a destra
-description: Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visualizzazioni Rubrica.
+title: Diritto esteso Open-Address-Book
+description: Controllo a destra esteso all'apertura dell'oggetto rubrica per le visualizzazioni della rubrica.
 ms.assetid: b5b30fc2-6bf1-4ba8-81c1-86db9413ef24
 ms.tgt_platform: multiple
 keywords:
-- Open-Address-Book Extended right AD schema
+- Open-Address-Book extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb628760997484051eb219c0b4bcec90a6be7117
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af918007992a9debe2bdef1d02fd559be4b0cdc6cd65d2900293cafdb5fc5382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021609"
 ---
-# <a name="open-address-book-extended-right"></a>Open-Address-Book esteso a destra
+# <a name="open-address-book-extended-right"></a>Diritto esteso Open-Address-Book
 
-Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visualizzazioni Rubrica.
+Controllo a destra esteso all'apertura dell'oggetto rubrica per le visualizzazioni della rubrica.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
 | CN           | Open-Address-Book                    |
-| Display-Name | Apri elenco indirizzi                    |
+| Display-Name | Aprire l'elenco indirizzi                    |
 | Rights-GUID  | a1990816-4298-11d1-ade2-00c04fd8d5cd |
 
 
@@ -49,8 +49,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -60,8 +60,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -71,8 +71,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -82,8 +82,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -93,8 +93,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -104,8 +104,8 @@ Controllo esteso a destra durante l'apertura dell'oggetto Rubrica per le visuali
 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Address-Book-container**](c-addressbookcontainer.md)<br/> |
-| Localization-display-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 

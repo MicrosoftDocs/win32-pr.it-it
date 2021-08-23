@@ -1,25 +1,25 @@
 ---
 title: Chiave interfaccia
-description: Registra le nuove interfacce associando il nome di un'interfaccia a un ID di interfaccia (IID). Deve essere presente una sottochiave IID per ogni nuova interfaccia.
+description: Registra le nuove interfacce associando un nome di interfaccia a un ID interfaccia (IID). Deve essere presente una sottochiave IID per ogni nuova interfaccia.
 ms.assetid: 2b2b7506-ac42-4bc4-bad5-17be57d6b4f5
 keywords:
-- Chiave del registro di sistema Interface COM
+- Chiave del Registro di sistema dell'interfaccia COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae31de7af534a58b4973629f2b889f3332047f6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cda0cc29331521025a9274dca7b85080be2ddd5a9b631d2660eadaa13fe4941a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048149"
 ---
 # <a name="interface-key"></a>Chiave interfaccia
 
-Registra le nuove interfacce associando il nome di un'interfaccia a un ID di interfaccia (IID). Deve essere presente una sottochiave IID per ogni nuova interfaccia.
+Registra le nuove interfacce associando un nome di interfaccia a un ID interfaccia (IID). Deve essere presente una sottochiave IID per ogni nuova interfaccia.
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ \_Interfaccia delle \\ \\ classi software \\ del computer locale** \\ *{* IID *}*
+**HKEY \_ Interfaccia \_ delle classi SOFTWARE \\ \\ \\ LOCAL MACHINE** \\ *{* IID *}*
 
 
 
@@ -27,16 +27,16 @@ Registra le nuove interfacce associando il nome di un'interfaccia a un ID di int
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**BaseInterface**](baseinterface.md)       | Identifica l'interfaccia da cui deriva l'interfaccia corrente.                                  |
 | [**NumMethods**](nummethods.md)             | Contiene il numero di metodi nell'interfaccia associata, inclusi i metodi delle interfacce derivate. |
-| [**ProxyStubClsid**](proxystubclsid.md)     | Esegue il mapping di un IID a un CLSID nelle DLL proxy a 16 bit.                                                           |
-| [**ProxyStubClsid32**](proxystubclsid32.md) | Esegue il mapping di un IID a un CLSID in DLL proxy a 32 bit.                                                           |
+| [**ProxyStubClsid**](proxystubclsid.md)     | Mappe un IID a un CLSID nelle DLL proxy a 16 bit.                                                           |
+| [**ProxyStubClsid32**](proxystubclsid32.md) | Mappe un IID a un CLSID nelle DLL proxy a 32 bit.                                                           |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-La chiave delle **\_ \_ \\ \\ classi software del computer locale HKEY** corrisponde alla chiave **\_ \_ radice delle classi HKEY** , che è stata mantenuta per la compatibilità con le versioni precedenti di com.
+La **chiave HKEY \_ LOCAL MACHINE \_ SOFTWARE \\ \\ Classes** corrisponde alla chiave **HKEY CLASSES \_ \_ ROOT,** che è stata mantenuta per garantire la compatibilità con le versioni precedenti di COM.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -45,9 +45,9 @@ La chiave delle **\_ \_ \\ \\ classi software del computer locale HKEY** corrisp
 [**Interfaccia**](interface.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

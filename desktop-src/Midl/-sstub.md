@@ -1,9 +1,9 @@
 ---
-title: opzione/sstub
-description: L'opzione/sstub specifica il nome del file stub del server per un'interfaccia RPC.
+title: Opzione /sstub
+description: L'opzione /sstub specifica il nome del file stub del server per un'interfaccia RPC.
 ms.assetid: 8e695e81-7c1b-40c0-aeaa-5390512fa099
 keywords:
-- /sstub switch MIDL
+- Opzione /sstub MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 131be3dd1890967f7107bea64c3dc2634833653d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: cdd83776939e9746103b2f12598a53832d767cebb93767142649a09b804339a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014069"
 ---
-# <a name="sstub-switch"></a>opzione/sstub
+# <a name="sstub-switch"></a>Opzione /sstub
 
-L'opzione **/sstub** specifica il nome del file stub del server per un'interfaccia RPC.
+**L'opzione /sstub** specifica il nome del file stub del server per un'interfaccia RPC.
 
 ``` syntax
 midl /sstub stub_file_name
@@ -31,7 +31,7 @@ midl /sstub stub_file_name
 
 <dl> <dt>
 
-*\_nome file \_ Stub* 
+*nome \_ file \_ stub* 
 </dt> <dd>
 
 Specifica un nome file che esegue l'override del nome del file stub del server predefinito. I nomi di file possono essere racchiusi tra virgolette doppie (") per impedire alla shell di interpretare i caratteri speciali.
@@ -40,23 +40,23 @@ Specifica un nome file che esegue l'override del nome del file stub del server p
 
 ## <a name="remarks"></a>Commenti
 
-Il nome file specificato sostituisce il nome file predefinito. Per impostazione predefinita, il nome del file viene ottenuto aggiungendo \_ S. C al nome del file IDL. Questa opzione non influisce sulle interfacce OLE.
+Il nome file specificato sostituisce il nome file predefinito. Per impostazione predefinita, il nome del file viene ottenuto aggiungendo \_ S.C al nome del file IDL. Questa opzione non influisce sulle interfacce OLE.
 
 Quando si importano file, il nome file specificato si applica a un solo file stub, ovvero il file stub che corrisponde al file IDL specificato nella riga di comando.
 
-Se *il \_ \_ nome del file stub* non include un percorso esplicito, il file viene scritto nella directory corrente o nella directory specificata dall'opzione [**/out**](-out.md) . Un percorso esplicito *nel \_ \_ nome del file stub* esegue l'override della specifica del comcambio **/out** .
+Se *il nome del \_ file \_ stub* non include un percorso esplicito, il file viene scritto nella directory corrente o nella directory specificata [**dall'opzione /out.**](-out.md) Un percorso esplicito nel *nome file stub \_ \_* esegue l'override della **specifica dell'opzione /out.**
 
-L'opzione **/Server** None ha la precedenza sull'opzione **/sstub**
+**L'opzione /server** none ha la precedenza **sull'opzione /sstub.**
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/sstub My \_ sstub. c filename. idl**
+**midl /sstub my \_ sstub.c filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/cstub**](-cstub.md)
@@ -68,9 +68,9 @@ L'opzione **/Server** None ha la precedenza sull'opzione **/sstub**
 [**/out**](-out.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

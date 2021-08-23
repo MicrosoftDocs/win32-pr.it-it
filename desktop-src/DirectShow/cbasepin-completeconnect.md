@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fee207d7a17f12cc81036fbd4f82ec49a99f4a31
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e31829829a99dc613cfeeeda7ad8a9871c1a3ec4fee99220b804b171bbdcdc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074785"
 ---
 # <a name="cbasepincompleteconnect-method"></a>Metodo CBasePin.CompleteConnect
 
@@ -45,7 +45,7 @@ virtual HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) dell'altro pin.
+Puntatore all'interfaccia [**IPin dell'altro**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato su entrambi i pin alla fine del processo di connessione. Il pin di connessione lo chiama dall'interno del metodo [**CBasePin::Connect**](cbasepin-connect.md) e il pin ricevente lo chiama dall'interno del metodo [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
+Questo metodo viene chiamato su entrambi i pin alla fine del processo di connessione. Il pin di connessione lo chiama dall'interno del metodo [**CBasePin::Connessione**](cbasepin-connect.md) e il pin ricevente lo chiama dall'interno del [**metodo CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
-Nella classe di base questo metodo restituisce semplicemente S \_ OK. Se una classe derivata ha requisiti per il completamento di una connessione, deve eseguire l'override di questo metodo. Ad esempio, la [**classe CBaseOutputPin**](cbaseoutputpin.md) usa questo metodo per decidere l'allocatore di memoria.
+Nella classe di base questo metodo restituisce semplicemente S \_ OK. Se una classe derivata ha requisiti per il completamento di una connessione, deve eseguire l'override di questo metodo. Ad esempio, la [**classe CBaseOutputPin usa**](cbaseoutputpin.md) questo metodo per decidere l'allocatore di memoria.
 
 Se questo metodo ha esito negativo, anche il tentativo di connessione complessivo ha esito negativo e il pin si disconnette dal pin ricevente.
 
@@ -67,7 +67,7 @@ Se questo metodo ha esito negativo, anche il tentativo di connessione complessiv
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

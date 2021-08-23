@@ -1,7 +1,7 @@
 ---
-description: Enumera il nome delle autorità di certificazione (CAs) per un determinato nome del modello di certificato.
+description: Enumera il nome delle autorità di certificazione (CA) per un nome di modello di certificato specificato.
 ms.assetid: 82cc3346-a8b9-4abd-933a-c212a37a373e
-title: 'Metodo ISCrdEnr:: enumCAName'
+title: Metodo ISCrdEnr::enumCAName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: c23df2f74cdf3791f1280e38cbff8ddd48f924b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11742525d616aecc8d83871ae2a59025d1034513ae99d8a7253d16d9e0f64dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005219"
 ---
-# <a name="iscrdenrenumcaname-method"></a>Metodo ISCrdEnr:: enumCAName
+# <a name="iscrdenrenumcaname-method"></a>Metodo ISCrdEnr::enumCAName
 
-Il metodo **enumCAName** enumera il nome dell'autorità di [*certificazione*](../secgloss/c-gly.md) (CAS) per un determinato nome del modello di certificato.
+Il **metodo enumCAName** enumera il nome delle autorità [*di*](../secgloss/c-gly.md) certificazione (CA) per un nome di modello di certificato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,31 +56,31 @@ SCrdEnr.enumCAName( _
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
 Indice in base zero per la sequenza di enumerazione.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore che determina se il nome fa riferimento al nome della CA o al nome del computer della CA. Se questo valore viene spaventato \_ , registrare il \_ nome del computer della CA \_ \_ (definito come 0x01), il nome si riferisce al nome del computer della CA. In caso contrario, il nome si riferisce al nome della CA.
+Valore che determina se il nome fa riferimento al nome della CA o al nome del computer della CA. Se questo valore è SCARD ENROLL CA MACHINE NAME (definito come 0x01), il nome fa riferimento al nome \_ \_ del computer della \_ \_ CA. In caso contrario, il nome fa riferimento al nome della CA.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ in\]
+*bstrCertTemplateName* \[ Pollici\]
 </dt> <dd>
 
 Nome del modello di certificato.
 
 </dd> <dt>
 
-*pbstrCAName* \[ out\]
+*pbstrCAName* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una stringa che restituisce il nome dell'autorità di certificazione.
+Puntatore a una stringa che restituisce il nome della CA.
 
 </dd> </dl>
 
@@ -90,11 +90,11 @@ Puntatore a una stringa che restituisce il nome dell'autorità di certificazione
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](common-hresult-values.md)
 
 ### <a name="vb"></a>VB
 
-Stringa che rappresenta il nome dell'autorità di certificazione.
+Stringa che rappresenta il nome della CA.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,9 +103,9 @@ Stringa che rappresenta il nome dell'autorità di certificazione.
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

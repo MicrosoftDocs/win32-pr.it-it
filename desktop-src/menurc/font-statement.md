@@ -66,7 +66,7 @@ Set di caratteri. Per un elenco di valori, vedere il **membro lfCharSet** della 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'uso **dell'istruzione FONT:**
+Nell'esempio seguente viene illustrato l'utilizzo **dell'istruzione FONT:**
 
 ``` syntax
 FONT 12, "MS Shell Dlg"

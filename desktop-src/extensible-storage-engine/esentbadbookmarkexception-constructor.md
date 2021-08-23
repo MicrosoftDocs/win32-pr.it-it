@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadBookmarkException'
+description: Altre informazioni sul costruttore EsentBadBookmarkException
 title: Costruttore EsentBadBookmarkException
 TOCTitle: 'EsentBadBookmarkException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadBookmarkException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c5e3a12ab7254b504d1634a8ed5fa4903a1d16f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fac575903118e5fa67af1559daf57d07f811b2e592d7f03d4eea0ab62b596338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117361"
 ---
 # <a name="esentbadbookmarkexception-constructor"></a>Costruttore EsentBadBookmarkException
 
 Inizializza una nuova istanza della classe EsentBadBookmarkException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentBadBookmarkException()
 
 [Membri di EsentBadBookmarkException](./esentbadbookmarkexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

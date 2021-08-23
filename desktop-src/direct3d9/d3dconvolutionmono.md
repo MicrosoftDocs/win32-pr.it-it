@@ -4,12 +4,12 @@ ms.assetid: bc7c36fd-b905-47e7-a38f-1139a8337121
 title: D3DCONVOLUTIONMONO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a5cb3b5f7d8f43ebf38a3c4ea2a53dc683ced5
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 80e6dafcbe0d5cbe2f449430fd90ae94c1d7de62e20ef6e07f11edba6955ef05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989081"
 ---
 # <a name="d3dconvolutionmono"></a>D3DCONVOLUTIONMONO
 

@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo Connect connette il pin a un altro pin. Questo metodo implementa il metodo IPin:: Connect.'
+description: Il Connessione metodo connette il pin a un altro pin. Questo metodo implementa il metodo IPin::Connessione.
 ms.assetid: 8ea99d2f-09da-4b15-a3b0-04ceb7888bc1
-title: Metodo CBasePin. Connect (Amfilter. h)
+title: CBasePin. Connessione metodo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ed8bcdab7e0909e59e7d9ec00645786f8ce48c02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a134b87e9c7c4d0f665ae37df7ec9cd0ecb3a37c0d0548f27835ead7b8ecca21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074795"
 ---
-# <a name="cbasepinconnect-method"></a>Metodo CBasePin. Connect
+# <a name="cbasepinconnect-method"></a>CBasePin. Connessione metodo
 
-Il `Connect` metodo connette il pin a un altro pin. Questo metodo implementa il metodo [**Ipin:: Connect**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect) .
+Il `Connect` metodo connette il pin a un altro pin. Questo metodo implementa il [**metodo IPin::Connessione.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,30 +46,30 @@ HRESULT Connect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN di ricezione.
+Puntatore all'interfaccia [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin ricevente.
 
 </dd> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) che specifica il tipo di supporto per la connessione.
+Puntatore a [**una struttura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) che specifica il tipo di supporto per la connessione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                  | Descrizione                                                                        |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                         | Esito positivo.<br/>                                                                |
-| <dl> <dt>**VFW \_ E \_ già \_ connesso**</dt> </dl>    | Il PIN è già connesso.<br/>                                           |
-| <dl> <dt>**VFW \_ E \_ nessun \_ \_ tipo accettabile**</dt> </dl> | Impossibile trovare un tipo di supporto accettabile.<br/>                                |
-| <dl> <dt>**VFW \_ E \_ non \_ arrestato**</dt> </dl>          | Il filtro è attivo e il PIN non supporta la riconnessione dinamica.<br/> |
-| <dl> <dt>**\_tipo VFW \_ E \_ non \_ accettato**</dt> </dl>   | Il tipo di supporto specificato non è accettabile.<br/>                             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                         | Operazione completata.<br/>                                                                |
+| <dl> <dt>**VFW \_ E \_ GIÀ \_ CONNESSO**</dt> </dl>    | Il pin è già connesso.<br/>                                           |
+| <dl> <dt>**VFW \_ E NESSUN TIPO \_ \_ \_ ACCETTABILE**</dt> </dl> | Impossibile trovare un tipo di supporto accettabile.<br/>                                |
+| <dl> <dt>**VFW \_ E \_ NON \_ ARRESTATO**</dt> </dl>          | Il filtro è attivo e il pin non supporta la riconnessione dinamica.<br/> |
+| <dl> <dt>**TIPO E VFW \_ \_ NON \_ \_ ACCETTATO**</dt> </dl>   | Il tipo di supporto specificato non è accettabile.<br/>                             |
 
 
 
@@ -77,9 +77,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Il parametro *PMT* può essere **null**. Può inoltre specificare un tipo di supporto parziale, con un valore GUID \_ null per il tipo principale, il sottotipo o il formato.
+Il *parametro pmt* può essere **NULL.** Può anche specificare un tipo di supporto parziale, con valore GUID NULL per il tipo principale, il \_ sottotipo o il formato.
 
-Nella classe di base, questo metodo verifica se il PIN è già connesso e se il filtro è stato arrestato. Delega il resto del processo di connessione al metodo [**CBasePin:: AgreeMediaType**](cbasepin-agreemediatype.md) .
+Nella classe di base questo metodo verifica se il pin è già connesso e se il filtro viene arrestato. Delega il resto del processo di connessione al [**metodo CBasePin::AgreeMediaType.**](cbasepin-agreemediatype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Nella classe di base, questo metodo verifica se il PIN è già connesso e se il 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

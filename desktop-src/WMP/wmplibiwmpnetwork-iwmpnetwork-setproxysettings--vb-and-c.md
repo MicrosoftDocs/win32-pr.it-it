@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7fc36c12335cf97ad7bff34924850155f2fd747
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 258c25fb962acdac2f682ba20b3280b8baa489496046c79d7edd03b519a67b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053469"
 ---
-# <a name="iwmpnetworksetproxysettings-method"></a>Metodo IWMPNetwork:: setProxySettings
+# <a name="iwmpnetworksetproxysettings-method"></a>Metodo IWMPNetwork::setProxySettings
 
-Il metodo **setProxySettings** specifica le impostazioni proxy per un protocollo.
+Il **metodo setProxySettings** specifica le impostazioni proxy per un protocollo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,24 +55,24 @@ Implements IWMPNetwork.setProxySettings
 
 <dl> <dt>
 
-*bstrProtocol* \[ in\]
+*bstrProtocol* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**System.String che** rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*lProxySetting* \[ in\]
+*lProxySetting* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che corrisponde a uno dei valori seguenti.
+**System.Int32** che è uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                                                          |
 |-------|----------------------------------------------------------------------|
 | 0     | Non usare un server proxy.                                           |
-| 1     | Utilizzare le impostazioni proxy del browser corrente (valido solo per HTTP). |
+| 1     | Usare le impostazioni proxy del browser corrente (valide solo per HTTP). |
 | 2     | Usare le impostazioni proxy specificate manualmente.                           |
 | 3     | Rilevare automaticamente le impostazioni del proxy.                                      |
 
@@ -92,7 +92,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene utilizzata una casella di riepilogo per consentire all'utente di impostare l'impostazione del proxy di Windows Media Player per il protocollo HTTP. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio di codice seguente viene utilizzata una casella di riepilogo per consentire all'utente di impostare Windows Media Player proxy per il protocollo HTTP. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -147,7 +147,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -160,7 +160,7 @@ End Sub
 [**Interfaccia IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

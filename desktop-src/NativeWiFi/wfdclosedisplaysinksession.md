@@ -1,7 +1,7 @@
 ---
 description: Pulisce lo stato della sessione aperta o della sessione attualmente aperta.
 ms.assetid: 8247AFA9-F471-4CCD-972D-D0C827E86880
-title: Funzione WFDDisplaySinkCloseSession (Wfdsink. h)
+title: Funzione WFDDisplaySinkCloseSession (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: 7697bc7ff1aa42569cf954b3f0b037f66ec67ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8169c541535eb2c5adfd0959da47cee4951750687f7d926798534ddc7cbf88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064901"
 ---
-# <a name="wfddisplaysinkclosesession-function"></a>WFDDisplaySinkCloseSession (funzione)
+# <a name="wfddisplaysinkclosesession-function"></a>Funzione WFDDisplaySinkCloseSession
 
 Pulisce lo stato della sessione aperta o della sessione attualmente aperta.
 
@@ -39,20 +39,20 @@ DWORD WINAPI WFDCloseDisplaySinkSession(
 
 <dl> <dt>
 
-*hSessionHandle* \[ in\]
+*hSessionHandle* \[ Pollici\]
 </dt> <dd>
 
-Il punto di controllo ricevuto tramite la [**\_ \_ \_ \_ richiamata del callback della notifica del sink di visualizzazione**](wfd-display-sink-notification-callback.md) più recente che ne include uno.
+Handle ricevuto tramite la chiamata [**WFD \_ DISPLAY SINK NOTIFICATION \_ \_ \_ CALLBACK**](wfd-display-sink-notification-callback.md) più recente che ne include una.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 ## <a name="remarks"></a>Commenti
 
-L'app può chiamare questa funzione per terminare la sessione Miracast per qualsiasi motivo. Non è necessario che l'app lo chiami quando riceve il tipo **DisconnectedNotification** nel callback.
+L'app può chiamare questa funzione per terminare Miracast sessione per qualsiasi motivo. L'app non deve chiamarla quando riceve il **tipo DisconnectedNotification** nel callback.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,12 +60,12 @@ L'app può chiamare questa funzione per terminare la sessione Miracast per quals
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                    |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows 10<br/>                                                                      |
 | Fine del supporto server<br/>    | Windows Server 2016<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
-| Libreria<br/>                  | <dl> <dt>Wifidisplay. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Libreria<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ L'app può chiamare questa funzione per terminare la sessione Miracast per quals
 
 <dl> <dt>
 
-[**richiamata della notifica del sink di \_ visualizzazione della direttiva. \_ \_ \_**](wfd-display-sink-notification-callback.md)
+[**CALLBACK DI NOTIFICA SINK DI VISUALIZZAZIONE WFD \_ \_ \_ \_**](wfd-display-sink-notification-callback.md)
 </dt> </dl>
 
  

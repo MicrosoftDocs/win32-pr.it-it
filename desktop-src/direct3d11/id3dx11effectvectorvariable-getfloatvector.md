@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVectorVariable GetFloatVector (D3dx11effect. h)
-description: Ottenere un vettore a quattro componenti che contiene dati a virgola mobile.
+title: Metodo GetFloatVector ID3DX11EffectVectorVariable (D3dx11effect.h)
+description: Ottiene un vettore a quattro componenti che contiene dati a virgola mobile.
 ms.assetid: 980c85db-0d40-49e0-99d0-5049fdf62540
 keywords:
 - Metodo GetFloatVector Direct3D 11
 - Metodo GetFloatVector Direct3D 11, interfaccia ID3DX11EffectVectorVariable
-- Interfaccia ID3DX11EffectVectorVariable Direct3D 11, metodo GetFloatVector
+- ID3DX11EffectVectorVariable interface Direct3D 11 , Metodo GetFloatVector
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0ce1ea07a2cbbb2826101e80d013b7f6bd02ed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 861121c89bbeda277610c0c3e42d4d6e41795b5cd82b48ae8ba42a1783ee5eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989671"
 ---
-# <a name="id3dx11effectvectorvariablegetfloatvector-method"></a>Metodo ID3DX11EffectVectorVariable:: GetFloatVector
+# <a name="id3dx11effectvectorvariablegetfloatvector-method"></a>Metodo ID3DX11EffectVectorVariable::GetFloatVector
 
-Ottenere un vettore a quattro componenti che contiene dati a virgola mobile.
+Ottiene un vettore a quattro componenti che contiene dati a virgola mobile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT GetFloatVector(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntatore al primo componente.
 
@@ -56,12 +56,12 @@ Puntatore al primo componente.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

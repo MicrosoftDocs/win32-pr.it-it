@@ -1,21 +1,21 @@
 ---
-description: Il riconoscimento del file System è la possibilità di riconoscere i supporti di archiviazione che contengono un layout file system/volume valido che non è ancora stato definito, ma il supporto è in grado di identificarsi con la presenza della struttura di riconoscimento definita internamente da Windows.
+description: Il riconoscimento del file system è la possibilità di riconoscere i supporti di archiviazione che contengono un layout file system/volume valido che non è stato ancora definito, ma il supporto è in grado di identificarsi tramite la presenza della struttura di riconoscimento definita internamente da Windows.
 ms.assetid: 23ed6de0-25ff-4841-91f6-94b487dee613
-title: Recupero delle informazioni di riconoscimento del file System
+title: Recupero di informazioni di riconoscimento del file system
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18cafa9f1c7cf6cbbe11d434aff3db424a1cd0a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c10b538f9e98ecab3f8f8f72784ef658c068f780388dc7b600be68b76380757
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148507"
 ---
-# <a name="obtaining-file-system-recognition-information"></a>Recupero delle informazioni di riconoscimento del file System
+# <a name="obtaining-file-system-recognition-information"></a>Recupero di informazioni di riconoscimento del file system
 
-Il [riconoscimento del file System](file-system-recognition.md) è la possibilità di riconoscere i supporti di archiviazione che contengono un layout file System/volume valido che non è ancora stato definito, ma il supporto è in grado di identificarsi con la presenza della struttura di riconoscimento definita internamente da Windows.
+Il riconoscimento del file [system](file-system-recognition.md) è la possibilità di riconoscere i supporti di archiviazione che contengono un layout di file system/volume valido che non è stato ancora definito, ma il supporto è in grado di identificarsi tramite la presenza della struttura di riconoscimento definita internamente da Windows.
 
-Poiché nessun file system esistente riconoscerà un nuovo layout del disco, il file system "RAW" installerà il volume e fornirà l'accesso diretto a livello di blocco. La file system "RAW", incorporata in *NtosKrnl*, potrà leggere la struttura di riconoscimento file System e fornire alle applicazioni l'accesso a tali strutture tramite la richiesta di controllo file System il [**\_ \_ \_ \_ riconoscimento del file System di query FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition), illustrato nell'esempio seguente.
+Poiché nessun file system riconoscerà un nuovo layout del disco, il file system "RAW" monta il volume e fornisce l'accesso diretto a livello di blocco. Il file system "RAW", incorporato in *NtosKrnl,* sarà in grado di leggere la struttura di riconoscimento file system e fornire alle applicazioni l'accesso a tali strutture tramite la richiesta di controllo [**file system FSCTL \_ QUERY FILE SYSTEM \_ \_ \_ RECOGNITION,**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition)come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -92,13 +92,13 @@ exit:
 
 <dl> <dt>
 
-[Riconoscimento del file System](file-system-recognition.md)
+[Riconoscimento del file system](file-system-recognition.md)
 </dt> <dt>
 
-[**struttura di riconoscimento del FILE \_ System \_ \_**](file-system-recognition-structure.md)
+[**STRUTTURA DI RICONOSCIMENTO DEL FILE \_ \_ \_ SYSTEM**](file-system-recognition-structure.md)
 </dt> <dt>
 
-[**\_riconoscimento del \_ file \_ System di query \_ FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition)
+[**RICONOSCIMENTO DEL \_ FILE SYSTEM DI QUERY \_ \_ \_ FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il \_ \_ \_ codice di controllo degli attributi da ottenere NFS esegue una query su informazioni aggiuntive su una condivisione NFS.
+description: Il codice \_ di controllo DA GET \_ \_ NFS ATTRIBUTES esegue query su informazioni aggiuntive su una condivisione NFS.
 ms.assetid: BC9E0E19-7D78-4AE7-A3E6-9FD9212B2B83
-title: Codice di controllo DA_GET_NFS_ATTRIBUTES
+title: DA_GET_NFS_ATTRIBUTES di controllo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4427dd48190bd12f7837c4841a98e15f7ddaff5f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e3e2b974d58888c35c24e18f16e1e75da46a180bb8123e9745170e074cd448de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956110"
 ---
-# <a name="da_get_nfs_attributes-control-code"></a>DA \_ ottenere \_ il \_ codice di controllo degli attributi NFS
+# <a name="da_get_nfs_attributes-control-code"></a>Codice \_ di controllo DA GET \_ \_ NFS ATTRIBUTES
 
-Il codice di controllo degli **\_ \_ \_ attributi da ottenere NFS** esegue una query su informazioni aggiuntive su una condivisione NFS.
+Il **codice di controllo DA GET \_ \_ \_ NFS ATTRIBUTES** esegue query su informazioni aggiuntive su una condivisione NFS.
 
-Per eseguire questa operazione, chiamare la funzione [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
+Per eseguire questa operazione, chiamare la [**funzione DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
 
 
 ```C++
@@ -45,71 +45,71 @@ BOOL
 
 <dl> <dt>
 
-*hDevice* \[ in\]
+*hDevice* \[ Pollici\]
 </dt> <dd>
 
-Handle per un file nella condivisione NFS. Per ottenere questo handle, chiamare la funzione [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) .
+Handle per un file nella condivisione NFS. Per ottenere questo handle, chiamare [**la funzione CreateFile.**](/windows/win32/api/fileapi/nf-fileapi-createfilea)
 
 </dd> <dt>
 
-*dwIoControlCode* \[ in\]
+*dwIoControlCode* \[ Pollici\]
 </dt> <dd>
 
-Codice di controllo per l'operazione. Usare **\_ \_ \_ gli attributi da Get NFS** per questa operazione.
+Codice di controllo per l'operazione. Usare **DA \_ GET \_ \_ NFS ATTRIBUTES** per questa operazione.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-Non utilizzato con questa operazione. impostare su **null**.
+Non utilizzato con questa operazione. impostato su **NULL.**
 
 </dd> <dt>
 
-*nInBufferSize* \[ in\]
+*nInBufferSize* \[ Pollici\]
 </dt> <dd>
 
-Non utilizzato con questa operazione. impostare su zero.
+Non utilizzato con questa operazione. impostato su zero.
 
 </dd> <dt>
 
-*lpOutBuffer* \[ out\]
+*lpOutBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al buffer di output, che contiene una struttura **di \_ \_ attributi di file NFS** . Per altre informazioni, vedere la sezione Osservazioni.
+Puntatore al buffer di output che contiene una **struttura NFS \_ FILE \_ ATTRIBUTES.** Per altre informazioni, vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*nOutBufferSize* \[ in\]
+*nOutBufferSize* \[ Pollici\]
 </dt> <dd>
 
 Dimensioni in byte del buffer di output.
 
 </dd> <dt>
 
-*lpBytesReturned* \[ out\]
+*lpBytesReturned* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve le dimensioni in byte dei dati archiviati nel buffer di output.
+Puntatore a una variabile che riceve le dimensioni dei dati archiviati nel buffer di output, in byte.
 
-Se il buffer di output è troppo piccolo, la chiamata ha esito negativo, [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce un **errore di \_ \_ buffer insufficiente** e *lpBytesReturned* è zero.
+Se il buffer di output è troppo piccolo, la chiamata non riesce, [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce **ERROR INSUFFICIENT \_ \_ BUFFER** e *lpBytesReturned* è zero.
 
-Se *lpOverlapped* è **null**, *lpBytesReturned* non può essere **null**. Anche quando un'operazione non restituisce dati di output e *lpOutBuffer* è **null**, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) USA *lpBytesReturned*. Dopo tale operazione, il valore di *lpBytesReturned* non è significativo.
+Se *lpOverlapped* è **NULL,** *lpBytesReturned non* può essere **NULL.** Anche quando un'operazione non restituisce dati di output e *lpOutBuffer* è **NULL,** [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) usa *lpBytesReturned.* Dopo tale operazione, il valore di *lpBytesReturned* non ha significato.
 
-Se *lpOverlapped* non è **null**, *lpBytesReturned* può essere **null**. Se questo parametro non è **null** e l'operazione restituisce dati, *lpBytesReturned* non ha significato fino al completamento dell'operazione di sovrapposizione. Per recuperare il numero di byte restituiti, chiamare [**GetOverlappedResult**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult). Se il parametro *hDevice* è associato a una porta di completamento di I/O, è possibile recuperare il numero di byte restituiti chiamando [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus).
+Se *lpOverlapped* non è **NULL,** *lpBytesReturned* può essere **NULL.** Se questo parametro non è **NULL e l'operazione** restituisce dati, *lpBytesReturned* non ha significato fino al completamento dell'operazione sovrapposta. Per recuperare il numero di byte restituiti, chiamare [**GetOverlappedResult.**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) Se il *parametro hDevice* è associato a una porta di completamento I/O, è possibile recuperare il numero di byte restituiti chiamando [**GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
-*lpOverlapped* \[ in\]
+*lpOverlapped* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**sovrapposta**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) .
+Puntatore a una [**struttura OVERLAPPED.**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped)
 
-Se *hDevice* è stato aperto senza specificare il **flag di file \_ \_ sovrapposto**, *lpOverlapped* viene ignorato.
+Se *hDevice è* stato aperto senza specificare **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* viene ignorato.
 
-Se *hDevice* è stato aperto con il flag **file \_ \_ sovrapposto** , l'operazione viene eseguita come operazione sovrapposta (asincrona). In questo caso, *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) valida che contiene un handle per un oggetto evento. In caso contrario, la funzione avrà esito negativo in modi imprevedibili.
+Se *hDevice è* stato aperto con il flag **FILE FLAG \_ \_ OVERLAPPED,** l'operazione viene eseguita come operazione sovrapposta (asincrona). In questo caso, *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) valida che contiene un handle per un oggetto evento. In caso contrario, la funzione ha esito negativo in modi imprevedibili.
 
-Per le operazioni sovrapposte, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce immediatamente un risultato e l'oggetto evento viene segnalato al completamento dell'operazione. In caso contrario, la funzione non restituisce alcun risultato fino a quando l'operazione non viene completata o si verifica un errore.
+Per le operazioni [**sovrapposte, DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce immediatamente un risultato e l'oggetto evento viene segnalato quando l'operazione è stata completata. In caso contrario, la funzione non restituisce un valore finché l'operazione non viene completata o non si verifica un errore.
 
 </dd> </dl>
 
@@ -117,11 +117,11 @@ Per le operazioni sovrapposte, [**DeviceIoControl**](/windows/win32/api/ioapiset
 
 Se l'operazione viene completata correttamente, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce un valore diverso da zero.
 
-Se l'operazione ha esito negativo o è in sospeso, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce zero. Per informazioni dettagliate sull'errore, chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Se l'operazione non riesce o è in sospeso, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce zero. Per informazioni dettagliate sull'errore, chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="remarks"></a>Osservazioni
 
-A questo codice di controllo non è associato alcun file di intestazione. È necessario definire il codice di controllo e le strutture di dati come indicato di seguito.
+Al codice del controllo non è associato alcun file di intestazione. È necessario definire il codice del controllo e le strutture di dati come indicato di seguito.
 
 ``` syntax
 #define DEVICE_DA_RDR 0x80000  
@@ -175,32 +175,32 @@ I membri della struttura possono essere descritti come segue.
 <span id="SpecData1"></span><span id="specdata1"></span><span id="SPECDATA1"></span>**SpecData1**
 </dt> <dd>
 
-Valore opaco utilizzato per i tipi di file speciali, ad esempio file di blocco, speciali e FIFO.
+Valore opaco usato per i tipi di file speciali, ad esempio i file block-special, character-special e FIFO.
 
 </dd> <dt>
 
 <span id="SpecData2"></span><span id="specdata2"></span><span id="SPECDATA2"></span>**SpecData2**
 </dt> <dd>
 
-Valore opaco utilizzato per i tipi di file speciali, ad esempio file di blocco, speciali e FIFO.
+Valore opaco usato per i tipi di file speciali, ad esempio i file block-special, character-special e FIFO.
 
 </dd> <dt>
 
 <span id="Seconds"></span><span id="seconds"></span><span id="SECONDS"></span>**Secondi**
 </dt> <dd>
 
-Valore a 64 bit che rappresenta i secondi a partire dal 1 ° gennaio 1970 (UTC).
+Valore a 64 bit che rappresenta i secondi dall'1 gennaio 1970 (UTC).
 
 </dd> <dt>
 
 <span id="nSeconds"></span><span id="nseconds"></span><span id="NSECONDS"></span>**nSeconds**
 </dt> <dd>
 
-Numero di nanosecondi da aggiungere al membro dei **secondi** .
+Numero di nanosecondi da aggiungere al **membro Seconds.**
 
 </dd> <dt>
 
-<span id="FileType"></span><span id="filetype"></span><span id="FILETYPE"></span>**FileType**
+<span id="FileType"></span><span id="filetype"></span><span id="FILETYPE"></span>**Filetype**
 </dt> <dd>
 
 Tipo di file NFS della condivisione.
@@ -209,13 +209,13 @@ Tipo di file NFS della condivisione.
 
 | Tipo di file NFS                                                                              | Descrizione                          |
 |--------------------------------------------------------------------------------------------|--------------------------------------|
-| <span id="NFS_TYPE_REG"></span><span id="nfs_type_reg"></span>tipo di NFS \_ \_ reg<br/>    | Un file normale.<br/>           |
-| <span id="NFS_TYPE_DIR"></span><span id="nfs_type_dir"></span>\_dir tipo \_ NFS<br/>    | Una directory.<br/>              |
-| <span id="NFS_TYPE_BLK"></span><span id="nfs_type_blk"></span>tipo di NFS \_ \_ BLK<br/>    | File speciale di blocco.<br/>     |
-| <span id="NFS_TYPE_CHR"></span><span id="nfs_type_chr"></span>tipo di NFS \_ \_ Chr<br/>    | File speciale di caratteri.<br/> |
-| <span id="NFS_TYPE_LNK"></span><span id="nfs_type_lnk"></span>tipo di NFS \_ \_ lnk<br/>    | Collegamento simbolico.<br/>          |
-| <span id="NFS_TYPE_SOCK"></span><span id="nfs_type_sock"></span>tipo di NFS \_ \_ Sock<br/> | Un socket di Windows.<br/>         |
-| <span id="NFS_TYPE_FIFO"></span><span id="nfs_type_fifo"></span>tipo di NFS \_ \_ FIFO<br/> | Un file FIFO.<br/>              |
+| <span id="NFS_TYPE_REG"></span><span id="nfs_type_reg"></span>NFS \_ TYPE \_ REG<br/>    | Un file normale.<br/>           |
+| <span id="NFS_TYPE_DIR"></span><span id="nfs_type_dir"></span>DIR \_ TIPO \_ NFS<br/>    | Una directory.<br/>              |
+| <span id="NFS_TYPE_BLK"></span><span id="nfs_type_blk"></span>TIPO NFS \_ \_ BLK<br/>    | File speciale di blocco.<br/>     |
+| <span id="NFS_TYPE_CHR"></span><span id="nfs_type_chr"></span>NFS \_ TYPE \_ CHR<br/>    | File con caratteri speciali.<br/> |
+| <span id="NFS_TYPE_LNK"></span><span id="nfs_type_lnk"></span>TIPO NFS \_ \_ LNK<br/>    | Collegamento simbolico.<br/>          |
+| <span id="NFS_TYPE_SOCK"></span><span id="nfs_type_sock"></span>SOCK \_ DI \_ TIPO NFS<br/> | Socket Windows corrente.<br/>         |
+| <span id="NFS_TYPE_FIFO"></span><span id="nfs_type_fifo"></span>TIPO NFS \_ \_ FIFO<br/> | Un file FIFO.<br/>              |
 
 
 
@@ -237,21 +237,21 @@ Numero di collegamenti alla condivisione.
 
 </dd> <dt>
 
-<span id="Uid"></span><span id="uid"></span><span id="UID"></span>**UID**
+<span id="Uid"></span><span id="uid"></span><span id="UID"></span>**Uid**
 </dt> <dd>
 
-Identificatore utente (UID) UNIX.
+Identificatore UNIX utente (UID).
 
 </dd> <dt>
 
-<span id="Gid"></span><span id="gid"></span><span id="GID"></span>**GID**
+<span id="Gid"></span><span id="gid"></span><span id="GID"></span>**Gid**
 </dt> <dd>
 
-Identificatore del gruppo UNIX (GID).
+Identificatore UNIX gruppo di dati (GID, UNIX Group Identifier).
 
 </dd> <dt>
 
-<span id="Size"></span><span id="size"></span><span id="SIZE"></span>**Dimensioni**
+<span id="Size"></span><span id="size"></span><span id="SIZE"></span>**Dimensione**
 </dt> <dd>
 
 Dimensioni del file, in byte.
@@ -261,7 +261,7 @@ Dimensioni del file, in byte.
 <span id="Used"></span><span id="used"></span><span id="USED"></span>**Utilizzato**
 </dt> <dd>
 
-Dimensioni del file utilizzate, in byte. Corrisponde alla dimensione del file.
+Dimensioni del file utilizzate, in byte. Corrisponde alle dimensioni del file.
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Identificatore del dispositivo.
 <span id="Fsid"></span><span id="fsid"></span><span id="FSID"></span>**Fsid**
 </dt> <dd>
 
-Identificatore file system.
+Identificatore file system specificato.
 
 </dd> <dt>
 
@@ -296,24 +296,24 @@ Ora dell'ultimo accesso.
 <span id="ModifyTime"></span><span id="modifytime"></span><span id="MODIFYTIME"></span>**ModifyTime**
 </dt> <dd>
 
-Ora dell'Ultima modifica.
+Ora dell'ultima modifica.
 
 </dd> <dt>
 
 <span id="ChangeTime"></span><span id="changetime"></span><span id="CHANGETIME"></span>**ChangeTime**
 </dt> <dd>
 
-Ora dell'Ultima modifica.
+Ora dell'ultima modifica.
 
 </dd> <dt>
 
-<span id="FileAttributes"></span><span id="fileattributes"></span><span id="FILEATTRIBUTES"></span>**FileAttributes**
+<span id="FileAttributes"></span><span id="fileattributes"></span><span id="FILEATTRIBUTES"></span>**Attributi file**
 </dt> <dd>
 
-Struttura **di \_ \_ attributi di file NFS** .
+Struttura **NFS \_ FILE \_ ATTRIBUTES.**
 
 > [!Note]  
-> Per descrizioni più dettagliate dei membri di questa struttura, vedere la struttura **fattr3** nella specifica del protocollo NFS versione 3 (come definito nella [RFC 1813](https://www.ietf.org/rfc/rfc1813.txt)).
+> Per descrizioni più dettagliate dei membri di questa struttura, vedere la struttura **fattr3** nella specifica del protocollo NFS versione 3 (come definito in [RFC 1813).](https://www.ietf.org/rfc/rfc1813.txt)
 
  
 
@@ -354,7 +354,7 @@ Specifica se la connessione in cui è stato creato l'handle per la condivisione 
 
 <dl> <dt>
 
-[**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)
+[**Deviceiocontrol**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)
 </dt> </dl>
 
  

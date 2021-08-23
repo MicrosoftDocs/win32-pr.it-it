@@ -1,7 +1,7 @@
 ---
-description: Questa funzione accetta l'attributo Origin se presente dal token Origin e li imposta su un duplicato del token che eredita e restituisce il token duplicato.
+description: Questa funzione accetta l'attributo di origine, se presente, dal token di origine e li imposta su un duplicato del token che eredita e restituisce il token duplicato.
 ms.assetid: ED1FAEA1-0665-49FA-BD8B-232254B4C883
-title: srpInheritOriginClaim (funzione)
+title: Funzione srpInheritOriginClaim
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - srpapi.dll
-ms.openlocfilehash: 3edf274622bc1a2611bc49d710a809bd80bd501a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64436c699f5cb24b2a12675342078242a340fb2e53de3a6a8f3224d8b88beac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004888"
 ---
-# <a name="srpinheritoriginclaim-function"></a>srpInheritOriginClaim (funzione)
+# <a name="srpinheritoriginclaim-function"></a>Funzione srpInheritOriginClaim
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Questa funzione accetta l'attributo Origin se presente dal token Origin e li imposta su un duplicato del token che eredita e restituisce il token duplicato. Il chiamante può quindi rappresentare il token restituito. A questa funzione non è associata alcuna libreria di importazione. È necessario utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a srpapi.dll.
+Questa funzione accetta l'attributo di origine, se presente, dal token di origine e li imposta su un duplicato del token che eredita e restituisce il token duplicato. Il chiamante può quindi rappresentare il token restituito. A questa funzione non è associata alcuna libreria di importazione. È necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico srpapi.dll.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,30 +43,30 @@ HRESULT WINAPI srpInheritOriginClaim(
 
 <dl> <dt>
 
-*OriginToken* \[ in\]
+*OriginToken* \[ Pollici\]
 </dt> <dd>
 
-Handle per il token duplicato e che riceve l'attributo Origin ereditato. Questo handle deve essere aperto con il \_ diritto di accesso duplicato del token.
+Handle per il token duplicato che riceve l'attributo di origine ereditato. Questo handle deve essere aperto con il diritto di accesso TOKEN \_ DUPLICATE.
 
 </dd> <dt>
 
-*InheritingToken* \[ in\]
+*InheritingToken* \[ Pollici\]
 </dt> <dd>
 
-Handle per il token duplicato e che riceve l'attributo Origin ereditato. Questo handle deve essere aperto con il \_ diritto di accesso duplicato del token. 
+Handle per il token duplicato che riceve l'attributo di origine ereditato. Questo handle deve essere aperto con il diritto di accesso TOKEN \_ DUPLICATE. 
 
 </dd> <dt>
 
 *ResultToken* 
 </dt> <dd>
 
-Se l'operazione riesce, riceve il token duplicato. Il chiamante può rappresentarlo per eseguire operazioni con l'attributo Origin ereditato. Il chiamante acquisisce la proprietà di questo handle e deve chiuderlo. 
+In caso di esito positivo, riceve il token duplicato. Il chiamante può rappresentarlo per eseguire operazioni con l'attributo di origine ereditato. Il chiamante assume la proprietà di questo handle e deve chiuderlo. 
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                  |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Srpapi.dll</dt> </dl> |
 
 

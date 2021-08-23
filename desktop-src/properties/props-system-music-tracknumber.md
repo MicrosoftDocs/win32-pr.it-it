@@ -1,17 +1,17 @@
 ---
-description: System.Music.TrackNumber
+description: Sistema. Musica. TrackNumber
 ms.assetid: 0007f7e0-4b62-453a-adc5-cccf1e916f12
-title: System.Music.TrackNumber
+title: Sistema. Musica. TrackNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be90fd5144334771f2bdfa2a571dd650e2b85a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec42c34eb365070e1d3b327379ab08c4a3934e8fb9ebab78d4959e27ec5984a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096800"
 ---
-# <a name="systemmusictracknumber"></a>System.Music.TrackNumber
+# <a name="systemmusictracknumber"></a>Sistema. Musica. TrackNumber
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 

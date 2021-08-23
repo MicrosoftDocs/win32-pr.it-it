@@ -1,6 +1,6 @@
 ---
-title: Se bool-vs
-description: Avvia un'if... altrimenti... il blocco endif-vs.
+title: if bool - vs
+description: Avvia un'operazione if... Altro... endif - e blocco .
 ms.assetid: d77e2f81-400c-4997-9c34-426b6e6f47be
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 261ff572cbaf519cc0099f3ab68d1a0becca706f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: b113c806342d786d258713128bc2cadcbb000235c2639f49e5b57ce3fa3bd2e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986531"
 ---
-# <a name="if-bool---vs"></a>Se bool-vs
+# <a name="if-bool---vs"></a>if bool - vs
 
-Avvia un'if... [altrimenti](else---vs.md)... il blocco [endif-vs](endif---vs.md) .
+Avvia un'operazione if... [else](else---vs.md)... [endif - rispetto al](endif---vs.md) blocco .
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| Se bool |
+| if bool |
 |---------|
 
 
 
- 
+ 
 
-dove bool è un numero di registro bool. Vedere [Registro booleano costante](dx9-graphics-reference-asm-vs-registers-constant-boolean.md).
+dove bool è un numero di registro bool. Vedere [Registro booleano costante.](dx9-graphics-reference-asm-vs-registers-constant-boolean.md)
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| Se bool                |      | x    | x    | x     | x    | x     |
+| if bool                |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Se il registro booleano di origine nell'istruzione If è true, viene eseguito il codice racchiuso dall'istruzione if e l'altro corrispondente. In caso contrario, il codice racchiuso da [else](else---vs.md)... vengono eseguite le istruzioni [endif-vs](endif---vs.md) . Questa istruzione usa uno slot di istruzione.
+Se il registro booleano di origine nell'istruzione if è true, viene eseguito il codice racchiuso tra l'istruzione if e il parametro else corrispondente. In caso contrario, il codice racchiuso tra [...](else---vs.md) [endif : vengono eseguite](endif---vs.md) le istruzioni e . Questa istruzione utilizza uno slot di istruzioni.
 
-Se i blocchi possono essere annidati.
+se i blocchi possono essere annidati.
 
-Un blocco If non può risiedere in un blocco di ciclo.
+Un blocco if non può essere in un blocco di ciclo.
 
 ## <a name="example"></a>Esempio
 
@@ -76,18 +76,18 @@ endif
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> <dt>
 
-[else-vs](else---vs.md)
+[else - vs](else---vs.md)
 </dt> <dt>
 
-[endif-vs](endif---vs.md)
+[endif - vs](endif---vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

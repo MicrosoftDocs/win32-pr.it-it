@@ -1,29 +1,29 @@
 ---
-title: Configurazione della funzionalità Depth-Stencil
-description: In questa sezione vengono illustrati i passaggi per configurare il buffer di stencil Depth e lo stato depth-stencil per la fase di Unione dell'output.
+title: Configurazione Depth-Stencil funzionalità
+description: Questa sezione illustra i passaggi per configurare il buffer depth-stencil e lo stato depth-stencil per la fase di unione dell'output.
 ms.assetid: e8f52d5f-266f-4e2c-b38d-d7fd9e27fe1f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65bf48b0ba9a782be25568ac3fc0569314dae76e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e994c5a11215d245d8101edff410a91ffb788583b07f651fdfbd1f2771d7deab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990191"
 ---
-# <a name="configuring-depth-stencil-functionality"></a>Configurazione della funzionalità Depth-Stencil
+# <a name="configuring-depth-stencil-functionality"></a>Configurazione Depth-Stencil funzionalità
 
-In questa sezione vengono illustrati i passaggi per configurare il buffer di stencil Depth e lo stato depth-stencil per la fase di Unione dell'output.
+Questa sezione illustra i passaggi per configurare il buffer depth-stencil e lo stato depth-stencil per la fase di unione dell'output.
 
--   [Creare una risorsa Depth-Stencil](#create-a-depth-stencil-resource)
--   [Crea stato Depth-Stencil](#create-depth-stencil-state)
--   [Associare i dati Depth-Stencil alla fase OM](#bind-depth-stencil-data-to-the-om-stage)
+-   [Creare una Depth-Stencil risorsa](#create-a-depth-stencil-resource)
+-   [Creare Depth-Stencil stato](#create-depth-stencil-state)
+-   [Associare Depth-Stencil dati alla fase OM](#bind-depth-stencil-data-to-the-om-stage)
 
-Quando si è a conoscenza di come utilizzare il buffer di stencil Depth e lo stato di stencil Depth corrispondente, fare riferimento alle [tecniche di stencil avanzati](#advanced-stencil-techniques).
+Dopo aver spiegato come usare il buffer depth-stencil e lo stato depth-stencil corrispondente, fare riferimento [alle tecniche di stencil avanzato.](#advanced-stencil-techniques)
 
-## <a name="create-a-depth-stencil-resource"></a>Creare una risorsa Depth-Stencil
+## <a name="create-a-depth-stencil-resource"></a>Creare una Depth-Stencil risorsa
 
-Creare il buffer di stencil Depth usando una risorsa di trama.
+Creare il buffer depth-stencil usando una risorsa trama.
 
 
 ```
@@ -45,9 +45,9 @@ hr = pd3dDevice->CreateTexture2D( &descDepth, NULL, &pDepthStencil );
 
 
 
-## <a name="create-depth-stencil-state"></a>Crea stato Depth-Stencil
+## <a name="create-depth-stencil-state"></a>Creare Depth-Stencil stato
 
-Lo stato depth-stencil indica alla fase di Unione dell'output come eseguire il [test di stencil di profondità](d3d10-graphics-programming-guide-output-merger-stage.md). Il test di stencil Depth determina se deve essere disegnato o meno un pixel specificato.
+Lo stato depth-stencil indica alla fase di unione dell'output come eseguire il [test di profondità-stencil](d3d10-graphics-programming-guide-output-merger-stage.md). Il test di profondità-stencil determina se deve essere disegnato o meno un determinato pixel.
 
 
 ```
@@ -82,13 +82,13 @@ pd3dDevice->CreateDepthStencilState(&dsDesc, &pDSState);
 
 
 
-DepthEnable e StencilEnable abilitano (e disabilitano) la profondità e il test di stencil. Impostare DepthEnable su **false** per disabilitare il test di profondità e impedire la scrittura nel buffer di profondità. Impostare StencilEnable su **false** per disabilitare il test dello stencil e impedire la scrittura nel buffer dello stencil. quando DepthEnable è **false** e StencilEnable è **true**, il test di profondità passa sempre nell'operazione dello stencil.
+DepthEnable e StencilAbilita abilitano (e disabilitano) i test di profondità e stencil. Impostare DepthEnable su **FALSE per disabilitare** il test di profondità e impedire la scrittura nel buffer di profondità. Impostare StencilEnable su **FALSE** per disabilitare il test degli stencil e impedire la scrittura nel buffer degli stencil (quando DepthEnable **è FALSE** e StencilEnable è **TRUE,** il test di profondità passa sempre nell'operazione stencil).
 
-DepthEnable influisce solo sulla fase di Unione dell'output. non influisce sul ritaglio, sulla distorsione della profondità o sul fissaggio dei valori prima che i dati vengano inseriti in un pixel shader.
+DepthEnable influisce solo sulla fase di unione dell'output: non influisce sul ritaglio, sulla distorsione della profondità o sulla chiusura dei valori prima che i dati vengono immessi in un pixel shader.
 
-## <a name="bind-depth-stencil-data-to-the-om-stage"></a>Associare i dati Depth-Stencil alla fase OM
+## <a name="bind-depth-stencil-data-to-the-om-stage"></a>Associare Depth-Stencil dati alla fase OM
 
-Associare lo stato di stencil Depth.
+Associare lo stato depth-stencil.
 
 
 ```
@@ -98,7 +98,7 @@ pDevice->OMSetDepthStencilState(pDSState, 1);
 
 
 
-Associare la risorsa stencil Depth utilizzando una visualizzazione.
+Associare la risorsa depth-stencil usando una visualizzazione.
 
 
 ```
@@ -121,97 +121,97 @@ pd3dDeviceContext->OMSetRenderTargets( 1,          // One rendertarget view
 
 
 
-Una matrice di visualizzazioni di destinazione di rendering può essere passata in [**sul ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets), tuttavia tutte le visualizzazioni di destinazione di rendering corrisponderanno a una singola vista depth stencil. La matrice di destinazione di rendering in Direct3D 11 è una funzionalità che consente a un'applicazione di eseguire il rendering simultaneamente su più destinazioni di rendering a livello primitivo. Le matrici di destinazione di rendering offrono prestazioni migliori rispetto all'impostazione individuale di destinazioni di rendering con più chiamate a **sul ID3D11DeviceContext:: OMSetRenderTargets** (essenzialmente il metodo utilizzato in Direct3D 9).
+Una matrice di visualizzazioni di destinazione di rendering può essere passata in [**ID3D11DeviceContext::OMSetRenderTargets,**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets)tuttavia tutte le visualizzazioni di destinazione di rendering corrisponderanno a una singola visualizzazione depth stencil rendering. La matrice di destinazione di rendering in Direct3D 11 è una funzionalità che consente a un'applicazione di eseguire il rendering su più destinazioni di rendering contemporaneamente a livello primitivo. Le matrici di destinazione di rendering offrono prestazioni migliori rispetto all'impostazione singola delle destinazioni di rendering con più chiamate a **ID3D11DeviceContext::OMSetRenderTargets** (essenzialmente il metodo utilizzato in Direct3D 9).
 
-Le destinazioni di rendering devono essere tutte dello stesso tipo di risorsa. Se viene usato l'anti-aliasing di multicampionamento, tutti gli obiettivi di rendering associati e i buffer di profondità devono avere gli stessi conteggi di esempio.
+Le destinazioni di rendering devono essere tutte dello stesso tipo di risorsa. Se si usa l'anti-aliasing multicampionamento, tutte le destinazioni di rendering associate e i buffer di profondità devono avere gli stessi conteggi dei campioni.
 
-Quando un buffer viene usato come destinazione di rendering, i test di stencil Depth e più destinazioni di rendering non sono supportati.
+Quando un buffer viene usato come destinazione di rendering, i test di profondità-stencil e più destinazioni di rendering non sono supportati.
 
--   Fino a 8 destinazioni di rendering possono essere associati simultaneamente.
--   Tutte le destinazioni di rendering devono avere le stesse dimensioni in tutte le dimensioni (larghezza e altezza e profondità per la dimensione 3D o della matrice per i \* tipi di matrice).
+-   Fino a 8 destinazioni di rendering possono essere associate contemporaneamente.
+-   Tutte le destinazioni di rendering devono avere le stesse dimensioni in tutte le dimensioni (larghezza e altezza e profondità per le dimensioni 3D o matrice per i \* tipi array).
 -   Ogni destinazione di rendering può avere un formato dati diverso.
--   Write Masks consente di controllare quali dati vengono scritti in una destinazione di rendering. Il controllo Write mask di output in una destinazione per rendering, a livello di componente, i dati vengono scritti nelle destinazioni di rendering.
+-   Le maschere di scrittura controllano quali dati vengono scritti in una destinazione di rendering. Il controllo delle maschere di scrittura di output in una destinazione di rendering, a livello di singolo componente, indica quali dati vengono scritti nelle destinazione o nelle destinazione di rendering.
 
-## <a name="advanced-stencil-techniques"></a>Tecniche avanzate degli stencil
+## <a name="advanced-stencil-techniques"></a>Tecniche di stencil avanzate
 
-La parte stencil del buffer di stencil depth può essere usata per creare effetti di rendering, ad esempio composizione, derivazione e struttura.
+La parte stencil del buffer depth-stencil può essere usata per creare effetti di rendering, ad esempio composizione, decalcomania e struttura.
 
--   [Composizione](#compositing)
--   [Decaing](#decaling)
--   [Strutture e sagome](#outlines-and-silhouettes)
+-   [Compositing](#compositing)
+-   [Decalcommentazione](#decaling)
+-   [Contorni e recinti](#outlines-and-silhouettes)
 -   [Stencil a due lati](#two-sided-stencil)
 -   [Lettura del buffer Depth-Stencil come trama](#reading-the-depth-stencil-buffer-as-a-texture)
 
-### <a name="compositing"></a>Composizione
+### <a name="compositing"></a>Compositing
 
-L'applicazione può usare il buffer dello stencil per le immagini 2D o 3D composite su una scena 3D. Una maschera nel buffer dello stencil viene utilizzata per occludere un'area della superficie di destinazione del rendering. Le informazioni 2D archiviate, ad esempio testo o bitmap, possono quindi essere scritte nell'area. In alternativa, l'applicazione è in grado di eseguire il rendering di primitive 3D nell'area mascherata dallo stencil della superficie di destinazione per il rendering. È anche possibile eseguire il rendering di un'intera scena.
+L'applicazione può usare il buffer degli stencil per creare immagini 2D o 3D composite in una scena 3D. Una maschera nel buffer degli stencil viene usata per occludere un'area della superficie di destinazione di rendering. Le informazioni 2D archiviate, ad esempio testo o bitmap, possono quindi essere scritte nell'area occluded. In alternativa, l'applicazione può eseguire il rendering di primitive 3D aggiuntive nell'area con maschera stencil della superficie di destinazione del rendering. Può anche eseguire il rendering di un'intera scena.
 
-I giochi spesso compostano contemporaneamente più scene 3D. Ad esempio, per la guida dei giochi viene in genere visualizzato un mirror di visualizzazione posteriore. Il mirror contiene la visualizzazione della scena 3D dietro il driver. Si tratta essenzialmente di una seconda scena 3D composita con la visualizzazione in diretta del driver.
+I giochi spesso si uniscono più scene 3D. Ad esempio, i giochi di guida in genere visualizzano un mirror retrovisore. Il mirror contiene la vista della scena 3D dietro il driver. Si tratta essenzialmente di una seconda scena 3D composita con la visualizzazione in avanti del driver.
 
-### <a name="decaling"></a>Decaing
+### <a name="decaling"></a>Decalcommentazione
 
-Le applicazioni Direct3D usano il decaing per controllare quali pixel di una determinata immagine primitiva vengono disegnati nell'area di destinazione del rendering. Le applicazioni applicano le decalcomanie alle immagini delle primitive per consentire il rendering corretto dei poligoni complanari.
+Le applicazioni Direct3D usano la decalcommentazione per controllare quali pixel di una particolare immagine primitiva vengono disegnati sulla superficie di destinazione del rendering. Le applicazioni applicano decalcomanie alle immagini di primitive per consentire il rendering corretto dei poligoni coplanari.
 
-Ad esempio, quando si applicano segni di pneumatico e linee gialle a una carreggiata, i contrassegni devono essere visualizzati direttamente sopra la strada. Tuttavia, i valori z dei contrassegni e della strada sono gli stessi. Il buffer di profondità potrebbe pertanto non produrre una netta separazione tra i due. È possibile che venga eseguito il rendering di alcuni pixel della primitiva in primo piano sulla primitiva e viceversa. L'immagine risultante sembra riflessi da frame a frame. Questo effetto è detto z-Fighting o flimmering.
+Ad esempio, quando si applicano i segni di gomme e le linee gialle a una strada, i contrassegni devono essere visualizzati direttamente sopra la strada. Tuttavia, i valori z dei contrassegni e della strada sono gli stessi. Pertanto, il buffer di profondità potrebbe non produrre una netta separazione tra i due. È possibile eseguire il rendering di alcuni pixel nella primitiva posteriore sopra la primitiva anteriore e viceversa. L'immagine risultante viene visualizzata come s shi shi shi sempre da un frame all'altro. Questo effetto è denominato z-fighting o fliluming.
 
-Per risolvere questo problema, usare uno stencil per mascherare la sezione della primitiva di sfondo in cui verrà visualizzata la decalcomania. Disattivare la memorizzazione nel buffer z ed eseguire il rendering dell'immagine della primitiva di primo piano nell'area nascosta della superficie di destinazione di rendering.
+Per risolvere questo problema, usare uno stencil per mascherare la sezione della primitiva back in cui verrà visualizzata la decalcomania. Disattivare z-buffering ed eseguire il rendering dell'immagine della primitiva anteriore nell'area mascherata della superficie di destinazione di rendering.
 
-Per risolvere questo problema, è possibile usare più miscele di trame.
+Per risolvere questo problema, è possibile usare la fusione di più trame.
 
-### <a name="outlines-and-silhouettes"></a>Strutture e sagome
+### <a name="outlines-and-silhouettes"></a>Contorni e recinti
 
-È possibile utilizzare il buffer dello stencil per gli effetti più astratti, ad esempio la struttura e silhouetting.
+È possibile usare il buffer degli stencil per effetti più astratti, ad esempio struttura e silhouetting.
 
-Se l'applicazione esegue due passaggi di rendering, uno per generare la maschera dello stencil e il secondo per applicare la maschera dello stencil all'immagine, ma con le primitive leggermente più piccole alla seconda sessione, l'immagine risultante conterrà solo il contorno della primitiva. L'applicazione può quindi riempire l'area con maschera di stencil dell'immagine con un colore a tinta unita, assegnando alla primitiva un aspetto in rilievo.
+Se l'applicazione esegue due passaggi di rendering, uno per generare la maschera di stencil e il secondo per applicare la maschera di stencil all'immagine, ma con le primitive leggermente più piccole nel secondo passaggio, l'immagine risultante conterrà solo il contorno della primitiva. L'applicazione può quindi riempire l'area con maschera stencil dell'immagine con un colore a tinta unita, dando alla primitiva un aspetto in rilievo.
 
-Se la maschera dello stencil ha le stesse dimensioni e la stessa forma della primitiva di cui si sta eseguendo il rendering, l'immagine risultante contiene un foro in cui la primitiva deve essere. L'applicazione può quindi riempire il foro con il nero per produrre una silhouette della primitiva.
+Se la maschera di stencil ha le stesse dimensioni e la stessa forma della primitiva di cui si esegue il rendering, l'immagine risultante contiene un foro in cui deve essere la primitiva. L'applicazione può quindi riempire il foro di nero per produrre una parte della primitiva.
 
-### <a name="two-sided-stencil"></a>Stencil Two-Sided
+### <a name="two-sided-stencil"></a>Two-Sided stencil
 
-I volumi shadow vengono utilizzati per disegnare le ombre con il buffer dello stencil. Tramite l'applicazione vengono calcolati i volumi shadow di cui viene eseguito il cast dalla geometria occlusione, calcolando i bordi della siluetta e estrattando i bordi dalla luce in un set di volumi 3D. Questi volumi vengono quindi sottoposti a rendering due volte nel buffer dello stencil.
+I volumi ombreggiati vengono usati per disegnare ombreggiature con il buffer degli stencil. L'applicazione calcola i volumi ombreggiati espressi dalla geometria occluding, calcolando i bordi della superficie ed estrudendoli dalla luce in un set di volumi 3D. Il rendering di questi volumi viene quindi eseguito due volte nel buffer degli stencil.
 
-Il primo rendering disegna i poligoni rivolte verso il futuro e incrementa i valori del buffer dello stencil. Il secondo oggetto render disegna i poligoni sul retro del volume shadow e decrementa i valori del buffer dello stencil. In genere, tutti i valori incrementati e decrementati vengono annullati. Tuttavia, la scena è già stata sottoposta a rendering con la geometria normale causando la mancata riuscita del test del buffer z durante il rendering del volume shadow. I valori rimanenti nel buffer dello stencil corrispondono ai pixel presenti nell'ombreggiatura. Questi rimanenti contenuti del buffer dello stencil vengono usati come maschera, per alfa-blend di un quadrato nero di grandi dimensioni, che include tutto il doppio nella scena. Con il buffer dello stencil che funge da maschera, il risultato è quello di scurire i pixel presenti nelle ombreggiature.
+Il primo rendering disegna poligoni rivolti in avanti e incrementa i valori stencil-buffer. Il secondo rendering disegna i poligoni rivolti all'indietro del volume dell'ombreggiatura e decrementa i valori del buffer degli stencil. In genere, tutti i valori incrementati e decrementati si annullano a vicenda. Tuttavia, il rendering della scena è già stato eseguito con una geometria normale, causando l'esito negativo del test z-buffer di alcuni pixel durante il rendering del volume dell'ombreggiatura. I valori lasciati nel buffer degli stencil corrispondono ai pixel nell'ombreggiatura. Questi contenuti rimanenti dello stencil-buffer vengono usati come maschera, per eseguire la fusione alfa di un quad nero ampio e incomprenso nella scena. Con il buffer degli stencil che funge da maschera, il risultato è l'ombreggiatura dei pixel che si trova nelle ombreggiature.
 
-Ciò significa che la geometria dell'ombreggiatura viene disegnata due volte per ogni sorgente di luce, di conseguenza la pressione sulla velocità effettiva del vertice della GPU. La funzionalità stencil a due lati è stata progettata per attenuare questa situazione. In questo approccio sono disponibili due set di stato dello stencil, denominati di seguito, uno per i triangoli in primo piano e l'altro per i triangoli rivolti verso il retro. In questo modo viene disegnato un solo passaggio per ogni volume ombreggiato, per luce.
+Ciò significa che la geometria dell'ombreggiatura viene disegnata due volte per ogni sorgente di luce, di conseguenza la pressione sulla velocità effettiva dei vertici della GPU. La funzionalità stencil a due lati è stata progettata per attenuare questa situazione. In questo approccio sono presenti due set di stato degli stencil (denominati di seguito), uno impostato per i triangoli rivolti anteriore e l'altro per i triangoli rivolti all'indietro. In questo modo, viene disegnato un solo passaggio per volume di ombreggiatura, per ogni luce.
 
-Un esempio di implementazione di stencil a due lati è disponibile nell' [esempio ShadowVolume10](https://msdn.microsoft.com/library/Ee416427(v=VS.85).aspx).
+Un esempio di implementazione dello stencil a due lati è disponibile nell'esempio [ShadowVolume10.](https://msdn.microsoft.com/library/Ee416427(v=VS.85).aspx)
 
 ### <a name="reading-the-depth-stencil-buffer-as-a-texture"></a>Lettura del buffer Depth-Stencil come trama
 
-Un buffer di stencil profondità inattivo può essere letto da uno shader come trama. Un'applicazione che legge un buffer di stencil Depth come trama esegue il rendering in due passaggi, il primo passaggio scrive nel buffer di stencil Depth e il secondo passaggio legge dal buffer. Ciò consente a uno shader di confrontare i valori di profondità o stencil scritti in precedenza nel buffer rispetto al valore per il Currrently di pixel di cui viene eseguito il rendering. Il risultato del confronto può essere utilizzato per creare effetti quali il mapping delle ombreggiature o le particelle morbide in un sistema particellare.
+Un buffer depth-stencil inattivo può essere letto da uno shader come trama. Un'applicazione che legge un buffer depth-stencil durante il rendering di una trama in due passaggi, il primo passaggio scrive nel buffer depth-stencil e il secondo passa le operazioni di lettura dal buffer. Ciò consente a uno shader di confrontare i valori di profondità o stencil scritti in precedenza nel buffer con il valore del pixel sottoposto a rendering. Il risultato del confronto può essere usato per creare effetti come il mapping delle ombreggiatura o le particelle soft in un sistema di particelle.
 
-Per creare un buffer di stencil depth che può essere usato come una risorsa di stencil di profondità e una risorsa shader, è necessario apportare alcune modifiche al codice di esempio nella sezione [creare una risorsa Depth-Stencil](#create-a-depth-stencil-resource) .
+Per creare un buffer depth-stencil che può essere usato sia come risorsa depth-stencil che come risorsa shader, è necessario apportare [alcune](#create-a-depth-stencil-resource) modifiche al codice di esempio nella sezione Creare una risorsa di Depth-Stencil profondità.
 
--   La risorsa di stencil Depth deve avere un formato privo di tipo, ad esempio DXGI \_ Format \_ R32 \_ tipo.
+-   La risorsa depth-stencil deve avere un formato senza tipo, ad esempio DXGI \_ FORMAT \_ R32 \_ TYPELESS.
     ```
     descDepth.Format = DXGI_FORMAT_R32_TYPELESS;
     ```
 
     
 
--   La risorsa di stencil Depth deve usare sia i flag di profondità di binding D3D10 \_ \_ \_ che D3D10 \_ binding \_ shader \_ .
+-   La risorsa depth-stencil deve usare i flag di associazione D3D10 BIND DEPTH STENCIL e \_ \_ \_ D3D10 \_ BIND \_ SHADER \_ RESOURCE.
     ```
     descDepth.BindFlags = D3D10_BIND_DEPTH_STENCIL | D3D10_BIND_SHADER_RESOURCE;
     ```
 
     
 
-Inoltre, è necessario creare una visualizzazione delle risorse dello shader per il buffer di profondità usando una struttura [**desc di d3d11 \_ shader \_ Resource \_ View \_**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_shader_resource_view_desc) e [**ID3D11Device:: CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview). La visualizzazione risorse dello shader utilizzerà un formato tipizzato, ad esempio **DXGI \_ Format \_ R32 \_ float** equivalente al formato non tipizzato specificato quando è stata creata la risorsa di stencil Depth.
+È anche necessario creare una visualizzazione delle risorse shader per il buffer di profondità usando una struttura [**\_ \_ \_ \_ DESC D3D11 SHADER RESOURCE VIEW**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_shader_resource_view_desc) e [**ID3D11Device::CreateShaderResourceView.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview) La visualizzazione delle risorse shader userà un formato tipiato, ad esempio **DXGI \_ FORMAT \_ R32 \_ FLOAT,** equivalente al formato senza tipi specificato al momento della creazione della risorsa depth-stencil.
 
-Nel primo passaggio di rendering il buffer di profondità viene associato come descritto nella sezione [associare dati Depth-Stencil alla fase om](#bind-depth-stencil-data-to-the-om-stage) . Si noti che il formato passato a [**d3d11 \_ Depth \_ stencil \_ View \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_view_desc). Format utilizzerà un formato tipizzato, ad esempio **DXGI \_ Format \_ D32 \_ float**. Dopo il primo passaggio di rendering, il buffer di profondità conterrà i valori di profondità per la scena.
+Nel primo passaggio di rendering il buffer di profondità viene associato come descritto nella sezione [Associare Depth-Stencil dati alla fase OM.](#bind-depth-stencil-data-to-the-om-stage) Si noti che il formato passato [**a D3D11 \_ DEPTH STENCIL VIEW \_ \_ \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_view_desc). Il formato userà un formato tipiato, ad esempio **DXGI \_ FORMAT \_ D32 \_ FLOAT.** Dopo il primo passaggio di rendering, il buffer di profondità conterrà i valori di profondità per la scena.
 
-Nel secondo passaggio di rendering viene usata la funzione [**sul ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets) per impostare la visualizzazione depth-stencil su **null** o una risorsa di stencil Depth diversa e la visualizzazione delle risorse dello shader viene passata allo shader usando [**ID3D11EffectShaderResourceVariable:: seresource**](id3dx11effectshaderresourcevariable-setresource.md). Questo consente allo shader di cercare i valori di profondità calcolati nel primo passaggio di rendering. Si noti che è necessario applicare una trasformazione per recuperare i valori di profondità se il punto di visualizzazione del primo passaggio di rendering è diverso dal secondo passaggio di rendering. Se, ad esempio, viene usata una tecnica di mapping Shadow, il primo passaggio di rendering sarà dalla prospettiva di una sorgente di luce mentre il secondo passaggio di rendering verrà dal punto di vista del visualizzatore.
+Nel secondo passaggio di rendering viene usata la funzione [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets) per impostare la visualizzazione dello stencil di profondità su **NULL** o su una risorsa stencil di profondità diversa e la visualizzazione delle risorse shader viene passata allo shader [**usando ID3D11EffectShaderResourceVariable::SetResource**](id3dx11effectshaderresourcevariable-setresource.md). In questo modo lo shader può cercare i valori di profondità calcolati nel primo passaggio di rendering. Si noti che sarà necessario applicare una trasformazione per recuperare i valori di profondità se il punto di vista del primo passaggio di rendering è diverso dal secondo passaggio di rendering. Ad esempio, se viene usata una tecnica di mapping delle ombreggiatura, il primo passaggio di rendering sarà dal punto di vista di una sorgente di luce, mentre il secondo passaggio di rendering sarà dal punto di vista del visualizzatore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Output-fase di Unione](d3d10-graphics-programming-guide-output-merger-stage.md)
+[Fase di unione dell'output](d3d10-graphics-programming-guide-output-merger-stage.md)
 </dt> <dt>
 
 [Fasi della pipeline (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

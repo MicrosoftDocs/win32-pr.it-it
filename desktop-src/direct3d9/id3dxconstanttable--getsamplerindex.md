@@ -1,7 +1,7 @@
 ---
 description: Restituisce l'indice del campionatore.
 ms.assetid: vs|directx_sdk|~\id3dxconstanttable__getsamplerindex.htm
-title: 'Metodo ID3DXConstantTable:: GetSamplerIndex (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetSamplerIndex (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f803b6e129ac20b8a22ed2393ab941698c02d3d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 65dac22cc15e93198e7d494986b2279ae7e1d11fdb3c8cb65b3caddf9b905595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987571"
 ---
-# <a name="id3dxconstanttablegetsamplerindex-method"></a>Metodo ID3DXConstantTable:: GetSamplerIndex
+# <a name="id3dxconstanttablegetsamplerindex-method"></a>Metodo ID3DXConstantTable::GetSamplerIndex
 
 Restituisce l'indice del campionatore.
 
@@ -40,7 +40,7 @@ UINT GetSamplerIndex(
 
 <dl> <dt>
 
-*hConstant* \[ out\]
+*hConstant* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -51,7 +51,7 @@ Handle del campionatore.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Restituisce il numero di indice del campionatore dalla tabella delle costanti.
 
@@ -61,8 +61,8 @@ Restituisce il numero di indice del campionatore dalla tabella delle costanti.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

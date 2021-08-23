@@ -1,21 +1,21 @@
 ---
-description: Il metodo set imposta il valore di una determinata proprietà del controllo di qualità della chiamata.
+description: Il metodo Set imposta il valore di una determinata proprietà del controllo qualità delle chiamate.
 ms.assetid: e83ed9d7-0a53-4555-ae44-737ab3dfb749
-title: 'Metodo ITCallQualityControl:: set (Ipmsp. h)'
+title: Metodo ITCallQualityControl::Set (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0c0a83702ba0dd4d04eb129eeed95c46d2a79a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5506e4c318440c2b611a2404590bdf638d34a7da2353a5598d09aecf2990668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003389"
 ---
-# <a name="itcallqualitycontrolset-method"></a>Metodo ITCallQualityControl:: set
+# <a name="itcallqualitycontrolset-method"></a>Metodo ITCallQualityControl::Set
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **set** imposta il valore di una determinata [proprietà del controllo di qualità della chiamata](callqualityproperty.md).
+Il **metodo Set** imposta il valore di una determinata proprietà del controllo qualità delle [chiamate.](callqualityproperty.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,24 +34,24 @@ HRESULT Set(
 
 <dl> <dt>
 
-*Proprietà* \[ di in\]
+*Proprietà* \[ Pollici\]
 </dt> <dd>
 
-Membro dell'enumerazione [**CallQualityProperty**](callqualityproperty.md) .
+Membro [**dell'enumerazione CallQualityProperty.**](callqualityproperty.md)
 
 </dd> <dt>
 
-*lvalue* \[ in\]
+*lValue* \[ Pollici\]
 </dt> <dd>
 
 Valore desiderato per la proprietà.
 
 </dd> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore dell'enumerazione [**TAPIControlFlags**](tapicontrolflags.md) che indica la modalità di controllo del valore della *Proprietà* .
+Valore [**dell'enumerazione TAPIControlFlags**](tapicontrolflags.md) che indica come *deve* essere controllato il valore della proprietà.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -76,9 +76,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

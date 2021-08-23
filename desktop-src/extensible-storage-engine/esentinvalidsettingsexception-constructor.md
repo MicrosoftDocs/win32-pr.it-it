@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidSettingsException'
+description: Altre informazioni sul costruttore EsentInvalidSettingsException
 title: Costruttore EsentInvalidSettingsException
 TOCTitle: 'EsentInvalidSettingsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidSettingsException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 12d0ca57605fc64a6087465f6866d67d478e1ae4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87d9ab78d15910c1d48dbcfd47aa6defce7efc9bb72c2ea4eb3d65f513487351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040979"
 ---
 # <a name="esentinvalidsettingsexception-constructor"></a>Costruttore EsentInvalidSettingsException
 
 Inizializza una nuova istanza della classe EsentInvalidSettingsException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidSettingsException()
 
 [Membri di EsentInvalidSettingsException](./esentinvalidsettingsexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

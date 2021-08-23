@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine5\_LoadHistogramAsync\_UINT\_PixEngineTextureSlic
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine5:: LoadHistogramAsync'
+title: Metodo IPixEngine5::LoadHistogramAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: A23CB3E0-B299-40FD-899E-9FE6E9177551
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7c7128743c2086c0ddc2875c493dac98617986a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5eab7942f62f67d9023ced3cfde82974c3ee824eb83d2570023bde02fbc1cbab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986081"
 ---
-# <a name="span-idvspixengineipixengine5_loadhistogramasync_uint_pixenginetexturesliceindex_int_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5loadhistogramasync-method"></a><span id="vspixengine.ipixengine5_loadhistogramasync_uint_pixenginetexturesliceindex_int_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5:: LoadHistogramAsync
+# <a name="span-idvspixengineipixengine5_loadhistogramasync_uint_pixenginetexturesliceindex_int_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5loadhistogramasync-method"></a><span id="vspixengine.ipixengine5_loadhistogramasync_uint_pixenginetexturesliceindex_int_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5::LoadHistogramAsync
 
 Richiesta asincrona di caricamento dei dati dell'istogramma.
 
@@ -57,22 +57,22 @@ Specifica l'override del formato.
 *histogramDataFileName*   
 Stringa COM contenente il nome del file di dati dell'istogramma.
 
-*callback*   
+*Callback*   
 Indirizzo di un oggetto che fornisce l'interfaccia di callback IPixEngine5.
 
 *requestCookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

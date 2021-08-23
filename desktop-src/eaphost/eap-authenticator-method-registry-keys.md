@@ -1,55 +1,55 @@
 ---
-title: Valori del registro di sistema del metodo di autenticazione EAP
-description: Informazioni sui valori del registro di sistema del metodo EAP Authenticator. Questi valori specifici del registro di sistema sono necessari per i metodi di autenticazione EAP.
+title: Valori del Registro Authenticator metodo EAP
+description: Informazioni sui valori del Registro Authenticator metodo EAP. Questi valori del Registro di sistema specifici sono necessari per i metodi dell'autenticatore EAP.
 ms.assetid: 9374f9f7-b088-4e3a-ac96-8ccbeda87bb7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a710ca6f09914c8d111c42a8323a9c39c51f898
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: c1db88a910a40519533ffddae40c1e1cc04d36b62f3d3ad6543ddd4a2999373e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103963469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984311"
 ---
-# <a name="eap-authenticator-method-registry-values"></a>Valori del registro di sistema del metodo di autenticazione EAP
+# <a name="eap-authenticator-method-registry-values"></a>Valori del Registro Authenticator metodo EAP
 
-Per i metodi di autenticazione EAP sono necessari valori specifici del registro di sistema.
+Per i metodi dell'autenticatore EAP sono necessari valori del Registro di sistema specifici.
 
-## <a name="eap-authenticator-method-dll-paths"></a>Percorsi DLL del metodo di autenticazione EAP
+## <a name="eap-authenticator-method-dll-paths"></a>Percorsi DLL Authenticator metodo EAP
 
-Il percorso seguente specifica il percorso del registro di sistema per le dll normali del metodo di autenticazione EAP.
+Il percorso seguente specifica il percorso del Registro di sistema per le NORMALI DLL del metodo di autenticazione EAP.
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ metodi \\ *&lt; autorizzati &gt;* \\ * &lt; EapTypeId&gt;***
+**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Ad esempio, un percorso di registrazione per l'installazione di un metodo di autenticazione EAP, dato un **autorizzazione** di "311" (che indica che "Microsoft" è l'autore) e un **EapTypeId** di "40", viene visualizzato come segue.
+Ad esempio, un percorso di registrazione di installazione del metodo di autenticazione EAP dato un **AuthorId** "311" (che indica che "Microsoft" è l'autore) e un **EapTypeId** di "40", viene visualizzato come segue.
 
-**HKLM \\ System \\ CCS \\ Services \\ ( \\ metodi EAPHost) \\ 311 \\ 40**
+**Metodi Eaphost dei servizi CCS del sistema HKLM \\ \\ \\ \\ \\ \\ 311 \\ 40**
 
-Il percorso seguente specifica il percorso del registro di sistema per le DLL dei metodi di autenticazione EAP estese.
+Il percorso seguente specifica il percorso del Registro di sistema per le DLL estese del metodo di autenticazione EAP.
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ Methods \\ *&lt; autorizzato &gt;* \\ 254 \\ *&lt; VendorID &gt;* \\ * &lt; VendorType&gt;***
+**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; VendorId &gt;* \\ * &lt; VendorType&gt;***
 
-Ad esempio, un percorso di registrazione per l'installazione di un metodo di autenticazione EAP, dato un **autorizzazione** di "311" (che indica che "Microsoft" è l'autore), un **VendorId** di "311" e un **EapTypeId** di "40", viene visualizzato come segue.
+Ad esempio, un percorso di registrazione di installazione del metodo di autenticazione EAP dato un **AuthorId** "311" (che indica che "Microsoft" è l'autore), un **VendorId** di "311" e un **EapTypeId** "40", viene visualizzato come segue.
 
-**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ methods \\ 311 \\ 254 \\ 311 \\ 40**
+**Metodi Eaphost dei servizi CCS del sistema HKLM \\ \\ \\ \\ \\ \\ 311 \\ 254 \\ 311 \\ 40**
 
 > [!Note]  
-> Per ulteriori informazioni sull'allocazione dei tipi di metodo EAP, vedere la sezione 6,2 della [specifica RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
+> Per altre informazioni sull'allocazione dei tipi di metodo EAP, vedere la sezione 6.2 di [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
 
- 
+ 
 
-## <a name="registry-values"></a>Valori del registro di sistema
+## <a name="registry-values"></a>Valori del Registro di sistema
 
-Sono necessari i seguenti valori del registro di sistema del metodo Authenticator.
+Sono necessari i valori del Registro di sistema del metodo di autenticazione seguenti.
 
 -   [AuthenticatorDllPath](#authenticatordllpath)
 -   [AuthenticatorFriendlyName](#authenticatorfriendlyname)
 
-Oltre ai valori del registro di sistema indicati di seguito, è consigliato il seguente valore del registro di sistema del metodo Authenticator.
+Oltre ai valori del Registro di sistema precedenti, è consigliabile il valore del Registro di sistema del metodo di autenticazione seguente.
 
 -   [Proprietà](#properties)
 
-I valori del registro di sistema del metodo Authenticator rimanenti sono facoltativi.
+I restanti valori del Registro di sistema del metodo di autenticazione sono facoltativi.
 
 -   [ConfigCLSID](#configclsid)
 -   [StandaloneSupported](#standalonesupported)
@@ -60,12 +60,12 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 
 | Constant Value | AuthenticatorDllPath                                                                                          |
 |----------------|---------------------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ Espandi \_ SZ                                                                                               |
-| Descrizione    | Percorso della DLL del metodo di autenticazione EAP. Ad esempio,% SystemRoot% \\ system32 \\ &lt; nome \_ di \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                               |
+| Descrizione    | Percorso della DLL del metodo di autenticazione EAP. Ad esempio, %SystemRoot% \\ system32 nome della \\ &lt; DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ## <a name="authenticatorfriendlyname"></a>AuthenticatorFriendlyName
 
@@ -74,11 +74,11 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 | Constant Value | AuthenticatorFriendlyName                                                          |
 |----------------|------------------------------------------------------------------------------------|
 | Tipo           | REG \_ SZ                                                                            |
-| Descrizione    | Stringa che contiene il nome descrittivo (visualizzazione) per il metodo di autenticazione EAP. |
+| Descrizione    | Stringa contenente il nome descrittivo (visualizzato) per il metodo di autenticazione EAP. |
 
 
 
- 
+ 
 
 ## <a name="configclsid"></a>ConfigCLSID
 
@@ -91,7 +91,7 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 
 
 
- 
+ 
 
 ## <a name="properties"></a>Proprietà
 
@@ -100,11 +100,11 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 | Constant Value | Proprietà                                                                                                                                                  |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                                                                                                                  |
-| Descrizione    | I bit in DWORD sono impostati per indicare il supporto per la proprietà. Per un elenco dei valori supportati, vedere [**proprietà del metodo EAP**](eap-method-properties.md). |
+| Descrizione    | I bit nella DWORD vengono impostati per indicare il supporto per la proprietà . Per un elenco dei valori supportati, vedere [**Proprietà del metodo EAP**](eap-method-properties.md). |
 
 
 
- 
+ 
 
 ## <a name="standalonesupported"></a>StandaloneSupported
 
@@ -113,20 +113,20 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 | Constant Value | StandaloneSupported                                             |
 |----------------|-----------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                      |
-| Descrizione    | 0 se si tratta di un metodo di autenticazione autonomo; 1 in caso contrario. |
+| Descrizione    | 0 se si tratta di un metodo di autenticazione autonomo; 1 in caso non lo sia. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Chiavi del registro di sistema del peer EAP](eap-peer-method-registry-keys.md)
+[Chiavi del Registro di sistema dei metodi peer EAP](eap-peer-method-registry-keys.md)
 </dt> <dt>
 
-[Configurazione del registro di sistema per i tipi EAP espansi](registry-keys-for-eap-methods.md)
+[Configurazione del Registro di sistema per i tipi EAP espansi](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
 [Uso di EAPHost](using-eap-host.md)
@@ -135,9 +135,9 @@ I valori del registro di sistema del metodo Authenticator rimanenti sono facolta
 [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

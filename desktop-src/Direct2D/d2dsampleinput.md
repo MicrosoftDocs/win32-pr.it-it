@@ -1,9 +1,9 @@
 ---
-title: Funzione D2DSampleInput (D2d1effecthelpers. h)
-description: Input di esempio N alla posizione UV. Disponibile solo per gli input complessi.
+title: Funzione D2DSampleInput (D2d1effecthelpers.h)
+description: Campion di input N nella posizione uv. Disponibile solo per input complessi.
 ms.assetid: 8C1E3B23-D05B-4FCC-B32F-A5870A7C3FEF
 keywords:
-- Direct2D funzione D2DSampleInput
+- Funzione D2DSampleInput Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5929e9c113e5fa9a7c8a72003357b280a810e49e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c887221ade413b63456ecb3c4a91c7a5b480858b04e1f34e89506fdcf071dfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075275"
 ---
-# <a name="d2dsampleinput-function"></a>D2DSampleInput (funzione)
+# <a name="d2dsampleinput-function"></a>Funzione D2DSampleInput
 
-Input di esempio N alla posizione UV. Disponibile solo per gli input complessi.
+Campion di input N nella posizione uv. Disponibile solo per input complessi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ Numero di input.
 
 </dd> <dt>
 
-*UV* \[ in\]
+*uv* \[ Pollici\]
 </dt> <dd>
 
-Posizione UV.
+Posizione uv.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un **float4** nel formato TEXCOORDN.
+La funzione restituisce **float4** nel formato TEXCOORDN.
 
 ## <a name="remarks"></a>Commenti
 
@@ -86,7 +86,7 @@ float3 CalculateSurfaceNormal(TAPARGS)
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. hlsli</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.hlsli</dt> </dl> |
 | DLL<br/>    | <dl> <dt>D2d1.dll</dt> </dl>                |
 
 
@@ -95,7 +95,7 @@ float3 CalculateSurfaceNormal(TAPARGS)
 
 <dl> <dt>
 
-[Collegamento Effect shader](effect-shader-linking.md)
+[Collegamento degli shader degli effetti](effect-shader-linking.md)
 </dt> <dt>
 
 [Helper HLSL](hlsl-helpers.md)

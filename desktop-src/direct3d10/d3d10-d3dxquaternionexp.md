@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7c022b9df4302683a184b4fc8329561b22d341d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 61035976610cac4bb428687d9742b3a493e0ba458c8a050f4ad77891f01c26b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991131"
 ---
 # <a name="d3dxquaternionexp-function-d3dx10mathh"></a>Funzione D3DXQuaternionExp (D3DX10Math.h)
 
@@ -67,7 +67,7 @@ Puntatore a una struttura D3DXQUATERNION che rappresenta l'esponenziale.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo converte un quaternione puro in un quaternione di unità. D3DXQuaternionExp prevede un quaternione puro, dove w viene ignorato nel calcolo (w == 0).
+Questo metodo converte un quaternione puro in un quaternione unità. D3DXQuaternionExp prevede un quaternione puro, dove w viene ignorato nel calcolo (w == 0).
 
 
 ```
@@ -80,11 +80,11 @@ exp(Q) = (cos(theta), sin(theta) * v)
 
 
 
-dove v è la parte vettoriale di un quaternione.
+dove v è la parte vettore di un quaternione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXQuaternionExp può essere usata come parametro per un'altra funzione.
 
-Il [**metodo D3DXQuaternionSquadSetup**](d3d10-d3dxquaternionsquadsetup.md) può essere usato anche per impostare i punti di controllo di un quaternione.
+Il [**metodo D3DXQuaternionSquadSetup**](d3d10-d3dxquaternionsquadsetup.md) può essere usato anche per configurare i punti di controllo di un quaternione.
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 

@@ -1,21 +1,21 @@
 ---
-description: Formato di file GraphEdit
+description: GraphModifica formato file
 ms.assetid: 84c2de05-6c8f-45f1-b789-04a24cfa3ea1
-title: Formato di file GraphEdit
+title: GraphModifica formato file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a75421ff75c9bb26901eddf423448bbd9e4f478
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dbce90247e710772b75ad31593ce72a1fd4c8f9bd9fabf1be786b1e7bdc5e74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015599"
 ---
-# <a name="graphedit-file-format"></a>Formato di file GraphEdit
+# <a name="graphedit-file-format"></a>GraphModifica formato file
 
-Quando l'utilità GraphEdit salva un grafo di filtro DirectShow, viene creato un file di archiviazione con estensione. GRF. Il file di archiviazione contiene un singolo flusso denominato ActiveMovieGraph. Questo flusso contiene informazioni su tutti i filtri, i nomi dei filtri, i nomi file, le connessioni e così via.
+Quando l'utilità GraphEdit salva un DirectShow di filtro, crea un file di archiviazione con estensione grf. Il file di archiviazione contiene un singolo flusso denominato ActiveMovieGraph. Questo flusso contiene informazioni su tutti i filtri, i nomi dei filtri, i nomi di file, le connessioni e così via.
 
-La grammatica seguente descrive la sintassi del grafico all'interno del flusso, usando una sintassi BNF (Backus-Naur Form) modificata:
+La grammatica seguente descrive la sintassi del grafo all'interno del flusso, usando una sintassi BNF (Backus-Naur Form) modificata:
 
 
 ```C++
@@ -87,9 +87,9 @@ CLOCK <b><required><b><clockid>
 
 
 
-Nell'output sarà presente una nuova riga (" \\ r \\ n") per filtro, una per connessione e una per ciascuna delle parole chiave filtri e connessioni. Tutti gli altri casi di saranno costituiti da <b> uno spazio singolo. Le parole chiave FILTERs, CONNECTIONs e END non sono localizzabili. Si noti inoltre che i dati del filtro e i dati di formato sono binari, quindi potrebbero contenere interruzioni di riga, valori null e così via. Il flusso usa caratteri wide.
+Nell'output sarà presente una nuova riga (" r n") per ogni filtro, una per ogni connessione e una per ognuna delle parole \\ \\ chiave FILTERS e CONNECTIONS. L'altro caso <b> di sarà uno spazio singolo. Le parole chiave FILTERS, CONNECTIONS ed END non sono localizzabili. Si noti anche che i dati di filtro e i dati di formato sono binari, pertanto potrebbero contenere interruzioni di riga non corrette, valori Null e così via. Il flusso usa caratteri wide.
 
-Di seguito viene illustrato un grafico tipico. (Le linee di connessione sono state interrotte per maggiore chiarezza e i dati binari sono stati omessi).
+Di seguito è illustrato un grafico tipico. Le linee di connessione sono state interrotte per maggiore chiarezza e i dati binari sono stati omessi.
 
 
 ```C++
@@ -122,7 +122,7 @@ END
 
 <dl> <dt>
 
-[Simulazione della creazione di grafici con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulazione Graph compilazione con GraphModifica](simulating-graph-building-with-graphedit.md)
 </dt> </dl>
 
  

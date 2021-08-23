@@ -1,5 +1,5 @@
 ---
-description: Funzione D3DXSHAdd (D3DX10.h) - Aggiunge due vettori armonici armonici (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .
+description: Funzione D3DXSHAdd (D3DX10.h) - Aggiunge due vettori armonici sferici (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .
 ms.assetid: dbfea12b-c110-42a7-84b6-0dff3d958032
 title: Funzione D3DXSHAdd (D3DX10.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8d39940fef4ad611ea530d95efea29c74266d22a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f59d0d83424039af6d2ca5d4ea6ca25702d6fc50039502fb0af0eae3ab782ec3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990931"
 ---
 # <a name="d3dxshadd-function-d3dx10h"></a>Funzione D3DXSHAdd (D3DX10.h)
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l I + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

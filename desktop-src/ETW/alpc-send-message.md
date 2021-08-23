@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di invio del messaggio ALPC. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di invio di messaggi ALPC. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 7f12259b-f737-4bef-9dea-2ffe3517e0da
-title: Classe ALPC_Send_Message
+title: ALPC_Send_Message classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c9437626341f0ac57136645d40a8389436e8af1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a3e53e514f80f89f1b1e97c1edde9b86add0db7a29de9443c5a1b48085a40fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070331"
 ---
-# <a name="alpc_send_message-class"></a>\_Classe ALPC Send \_ Message
+# <a name="alpc_send_message-class"></a>Classe Send Message di \_ \_ ALPC
 
-Questa classe è la classe del tipo di evento per gli eventi di invio del messaggio ALPC.
+Questa classe è la classe del tipo di evento per gli eventi di invio di messaggi ALPC.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -38,20 +38,20 @@ class ALPC_Send_Message : ALPC
 
 ## <a name="members"></a>Members
 
-La classe **ALPC \_ Send \_ Message** presenta questi tipi di membri:
+La **classe ALPC \_ Send \_ Message** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ invio del \_ messaggio ALPC** dispone di queste proprietà.
+La **classe ALPC \_ Send \_ Message** ha queste proprietà.
 
 <dl> <dt>
 
 **MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -67,8 +67,8 @@ Identificatore del messaggio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

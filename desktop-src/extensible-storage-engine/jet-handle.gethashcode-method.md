@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_HANDLE. GetHashCode (metodo)'
-title: JET_HANDLE. GetHashCode (metodo)
+description: 'Altre informazioni su: JET_HANDLE. Metodo GetHashCode'
+title: JET_HANDLE. Metodo GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_HANDLE.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_handle.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5989edabe80b742d44ed1c2cde18dbf9e2c763b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82898e7feb51e1adce26d24851fb2077999487cdc6c6503756f866e57d778060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039269"
 ---
-# <a name="jet_handlegethashcode-method"></a>JET_HANDLE. GetHashCode (metodo)
+# <a name="jet_handlegethashcode-method"></a>JET_HANDLE. Metodo GetHashCode
 
 Restituisce il codice hash per l'istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Codice hash per l'istanza.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE struttura](./jet-handle-structure.md)
 
-[Membri JET_HANDLE](./jet-handle-members.md)
+[JET_HANDLE membri](./jet-handle-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

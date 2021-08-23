@@ -1,7 +1,7 @@
 ---
 description: Ottiene il tempo di animazione globale.
 ms.assetid: a46e2a57-a76a-4d79-a3b6-30b242321ed2
-title: 'Metodo ID3DXAnimationController:: getTime (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::GetTime (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2bfc3c2c1d5bb0bbbb3c364b47f22f0790f8d102
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b6241bbd8c447889a4718369feabf8f26dacc73c58b8e6826c1797d0639422fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987831"
 ---
-# <a name="id3dxanimationcontrollergettime-method"></a>Metodo ID3DXAnimationController:: getTime
+# <a name="id3dxanimationcontrollergettime-method"></a>Metodo ID3DXAnimationController::GetTime
 
 Ottiene il tempo di animazione globale.
 
@@ -40,13 +40,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Restituisce il tempo di animazione globale.
 
 ## <a name="remarks"></a>Commenti
 
-Le animazioni sono progettate usando un'ora di animazione locale e vengono combinate in tempi globali con [**AdvanceTime**](id3dxanimationcontroller--advancetime.md).
+Le animazioni sono progettate usando un'ora di animazione locale e miste all'ora globale con [**AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Le animazioni sono progettate usando un'ora di animazione locale e vengono combi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

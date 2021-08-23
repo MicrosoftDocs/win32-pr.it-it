@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec2TransformCoord (D3DX10Math.h): trasforma un vettore 2D in base a una determinata matrice, proiettando di nuovo il risultato in w = 1.'
+description: 'Funzione D3DXVec2TransformCoord (D3DX10Math.h): trasforma un vettore 2D da una determinata matrice, proiettando il risultato in w = 1.'
 ms.assetid: bb24204f-0c8e-4dc5-bcae-12e3033d1a39
 title: Funzione D3DXVec2TransformCoord (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 95321d377ad5af29075764e2c2d9386abf5b1441
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67cdde2ba057f41d8a1929e6f641b22d05919b698fee61fd8351deb64b27f5ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990681"
 ---
 # <a name="d3dxvec2transformcoord-function-d3dx10mathh"></a>Funzione D3DXVec2TransformCoord (D3DX10Math.h)
 
-Trasforma un vettore 2D in base a una determinata matrice, proiettando il risultato in w = 1.
+Trasforma un vettore 2D da una determinata matrice, proiettando il risultato in w = 1.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ Puntatore a una struttura D3DXVECTOR2 che rappresenta il vettore trasformato.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione trasforma il vettore, pV (x, y, 0, 1), dalla matrice, pM, proiettando di nuovo il risultato in w=1.
+Questa funzione trasforma il vettore, pV (x, y, 0, 1), dalla matrice, pM, proiettando il risultato in w=1.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXVec2TransformCoord può essere usata come parametro per un'altra funzione.
 

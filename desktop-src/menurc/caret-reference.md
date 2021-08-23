@@ -4,12 +4,12 @@ description: Informazioni di riferimento sul punto di riferimento
 ms.assetid: 2e1cea91-7ddb-426b-b9f7-c11e154f56a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f38d9c447a1201d8da09c106b011416441b6367c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f96de2283d4f1ec1286b34a5d17833ec967355eeec8edc8d0859beca83377d62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034359"
 ---
 # <a name="caret-reference"></a>Informazioni di riferimento sul punto di riferimento
 

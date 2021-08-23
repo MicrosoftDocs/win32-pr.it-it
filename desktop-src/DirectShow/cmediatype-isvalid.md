@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsValid determina se un tipo principale è stato assegnato a questo oggetto.
+description: Il metodo IsValid determina se a questo oggetto è stato assegnato un tipo principale.
 ms.assetid: 22d28019-f360-4b93-972c-d1dfe83938f0
-title: Metodo CMediaType. IsValid (mtype. h)
+title: Metodo CMediaType.IsValid (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7d8e1731060021b61eb5037e1baeeda95021e8f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3611d36cfe19623840f102b820b2b312138b1e116d32fc399927da57e7f47300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016265"
 ---
-# <a name="cmediatypeisvalid-method"></a>Metodo CMediaType. IsValid
+# <a name="cmediatypeisvalid-method"></a>Metodo CMediaType.IsValid
 
-Il `IsValid` metodo determina se un tipo principale è stato assegnato a questo oggetto.
+Il `IsValid` metodo determina se a questo oggetto è stato assegnato un tipo principale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se è stato assegnato un tipo principale a questo oggetto. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se a questo oggetto è stato assegnato un tipo principale. In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, gli oggetti [**CMediaType**](cmediatype.md) vengono inizializzati con un tipo principale di GUID \_ null. Chiamare questo metodo per determinare se l'oggetto è stato inizializzato correttamente.
+Per impostazione predefinita, [**gli oggetti CMediaType**](cmediatype.md) vengono inizializzati con un tipo principale di GUID \_ NULL. Chiamare questo metodo per determinare se l'oggetto è stato inizializzato correttamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per impostazione predefinita, gli oggetti [**CMediaType**](cmediatype.md) vengon
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Ottiene una matrice trasposta.
 ms.assetid: 255c1e20-0a60-49eb-abaa-66a67322ce73
-title: 'Metodo ID3DXBaseEffect:: GetMatrixTranspose (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetMatrixTranspose (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f52a7b528a7853278f5e1b902c3907e8d48fa40f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 59a23e8cde059446dea33d65f90dca9fb7cb2aaf41ab00949e02e34189420b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987781"
 ---
-# <a name="id3dxbaseeffectgetmatrixtranspose-method"></a>Metodo ID3DXBaseEffect:: GetMatrixTranspose
+# <a name="id3dxbaseeffectgetmatrixtranspose-method"></a>Metodo ID3DXBaseEffect::GetMatrixTranspose
 
 Ottiene una matrice trasposta.
 
@@ -41,16 +41,16 @@ HRESULT GetMatrixTranspose(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pmatrix* \[ out\]
+*pMatrix* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
@@ -67,9 +67,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice trasposta contiene dati di colonne principali; ovvero ogni vettore è contenuto in una colonna.
+Una matrice trasposta contiene dati principali della colonna. ciò significa che ogni vettore è contenuto in una colonna.
 
-Se la matrice di destinazione è più grande della matrice di origine, verranno riempiti solo gli elementi in alto a sinistra della matrice di destinazione e i componenti della matrice di destinazione rimanenti verranno impostati su zero.
+Se la matrice di destinazione è più grande della matrice di origine, verranno riempiti solo gli elementi in alto a sinistra della matrice di destinazione e i componenti rimanenti della matrice di destinazione verranno impostati su zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Se la matrice di destinazione è più grande della matrice di origine, verranno 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

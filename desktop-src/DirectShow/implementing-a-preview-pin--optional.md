@@ -1,25 +1,25 @@
 ---
-description: In questo argomento viene descritto come implementare un pin di anteprima in un filtro di acquisizione DirectShow.
+description: Questo argomento descrive come implementare un pin di anteprima in un filtro DirectShow capture.
 ms.assetid: 60306702-97d4-4627-8fbe-e7c8750f3902
 title: Implementazione di un pin di anteprima (facoltativo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d1e09d070be2aa154428cb8684ff1c405fac959
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7de47b86df70500c83c794fe1074dc927622d571e78ef6175b944702277da492
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015559"
 ---
 # <a name="implementing-a-preview-pin-optional"></a>Implementazione di un pin di anteprima (facoltativo)
 
-In questo argomento viene descritto come implementare un pin di anteprima in un filtro di acquisizione DirectShow.
+Questo argomento descrive come implementare un pin di anteprima in un filtro DirectShow capture.
 
-Se il filtro ha un pin di anteprima, il pin di anteprima deve inviare una copia dei dati recapitati dal pin di acquisizione. Inviare i dati dal pin di anteprima solo quando si esegue questa operazione non determina l'eliminazione dei frame dal pin di acquisizione. Il pin di acquisizione ha sempre la priorità sul pin di anteprima.
+Se il filtro ha un pin di anteprima, il pin di anteprima deve inviare una copia dei dati recapitati dal pin di acquisizione. Solo l'invio di dati dal pin di anteprima quando si esegue questa operazione non causerà l'eliminazione dei frame da parte del pin di acquisizione. Il pin di acquisizione ha sempre la priorità rispetto al pin di anteprima.
 
-Il pin di acquisizione e il pin di anteprima devono inviare dati con lo stesso formato. Pertanto, devono connettersi utilizzando tipi di supporti identici. Se il pin di acquisizione si connette per primo, il pin di anteprima dovrebbe offrire lo stesso tipo di supporto e rifiutare altri tipi. Se il pin di anteprima si connette per primo e il pin di acquisizione si connette con un tipo di supporto diverso, il pin di anteprima dovrebbe riconnettersi usando il nuovo tipo di supporto. Se il filtro downstream dal pin di anteprima rifiuta il nuovo tipo, il pin di acquisizione deve rifiutare anche il tipo. Usare il metodo [**Ipin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) per eseguire una query sul filtro a valle dal pin di anteprima e usare il metodo [**IFilterGraph:: Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) per riconnettere il PIN. Queste regole si applicano anche se il gestore del grafico dei filtri riconnette il pin di acquisizione.
+Il pin di acquisizione e il pin di anteprima devono inviare dati con lo stesso formato. Pertanto, devono connettersi usando tipi di supporti identici. Se il pin di acquisizione si connette per primo, il pin di anteprima deve offrire lo stesso tipo di supporto e rifiutare qualsiasi altro tipo. Se il pin di anteprima si connette per primo e il pin di acquisizione si connette con un tipo di supporto diverso, il pin di anteprima deve riconnettersi usando il nuovo tipo di supporto. Se il filtro a valle dal pin di anteprima rifiuta il nuovo tipo, anche il pin di acquisizione deve rifiutare il tipo. Usare il [**metodo IPin::QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) per eseguire una query sul filtro a valle dal pin di anteprima e usare il metodo [**IFilterGraph::Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) per riconnettere il pin. Queste regole si applicano anche se Il Graph Manager riconnette il pin di acquisizione.
 
-Nell'esempio seguente viene illustrata una struttura di questo processo:
+L'esempio seguente illustra una struttura di questo processo:
 
 
 ```C++
@@ -88,10 +88,10 @@ CPreviewPin::CheckMediaType(CMediaType *pmt)
 
 <dl> <dt>
 
-[Modalità di connessione dei filtri](how-filters-connect.md)
+[Modalità di Connessione](how-filters-connect.md)
 </dt> <dt>
 
-[Scrittura dei filtri di acquisizione](writing-capture-filters.md)
+[Scrittura di filtri di acquisizione](writing-capture-filters.md)
 </dt> </dl>
 
  

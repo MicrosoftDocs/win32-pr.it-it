@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 22f52e3f-875e-4dde-8875-3228639bc7f1
-ms.openlocfilehash: 167fe7b48d68622b108aeb0caf0302c0cabce9f6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4f6eb78486516448c65ecbd67b88249251c4d215b65df6f1c6af2e8af003c7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032579"
 ---
 # <a name="folderitemverb-object"></a>Oggetto FolderItemVerb
 
@@ -39,7 +39,7 @@ Rappresenta un singolo verbo disponibile per un elemento. Questo oggetto contien
 
 | Metodo                              | Descrizione                                                                                  |
 |:------------------------------------|:---------------------------------------------------------------------------------------------|
-| [**Doit**](folderitemverb-doit.md) | Esegue un verbo [**sull'elemento FolderItem**](folderitem.md) associato al verbo.<br/> |
+| [**Doit**](folderitemverb-doit.md) | Esegue un verbo [**sull'oggetto FolderItem**](folderitem.md) associato al verbo.<br/> |
 
 
 
@@ -67,7 +67,7 @@ Rappresenta un singolo verbo disponibile per un elemento. Questo oggetto contien
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
