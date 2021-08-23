@@ -18,7 +18,7 @@ ms.locfileid: "118794459"
 ---
 # <a name="break_comp---ps"></a>break \_ comp - ps
 
-Uscire dal ciclo corrente [all'endloop più](endloop---ps.md) vicino - ps [o endrep - ps](endrep---ps.md), in base a un confronto per componente.
+Uscire dal ciclo corrente [all'endloop più](endloop---ps.md) vicino - ps o [endrep - ps](endrep---ps.md), in base a un confronto per componente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,8 +48,8 @@ Dove:
 
      
 
--   src0 è un registro di origine. Replicare lo swizzle è necessario se si seleziona un singolo componente.
--   src1 è un registro di origine. Replicare lo swizzle è necessario se si seleziona un singolo componente.
+-   src0 è un registro di origine. Replicare lo swizzle è obbligatorio se si seleziona un singolo componente.
+-   src1 è un registro di origine. Replicare lo swizzle è obbligatorio se si seleziona un singolo componente.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ Questa istruzione è supportata nelle versioni seguenti.
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| break \_ comp           |      |      |      |      |      | x    | x     | x    | x     |
+| interrompere \_ la compilazione           |      |      |      |      |      | x    | x     | x    | x     |
 
 
 

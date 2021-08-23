@@ -1,19 +1,19 @@
 ---
-description: In Windows 2000 e nei sistemi operativi successivi il programma di installazione imposta la proprietà MsiNTSuiteEnterprise su 1 se è installato Windows 2000 Advanced Server.
+description: In Windows 2000 e versioni successive, il programma di installazione imposta la proprietà MsiNTSuiteEnterprise su 1 se Windows 2000 Advanced Server è installato.
 ms.assetid: f5384467-3791-4b0b-a70e-b5343c70db46
-title: Proprietà MsiNTSuiteEnterprise
+title: MsiNTSuiteEnterprise - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 137b4ece4dbaecdd83b78fd2ce7cfd57820e029d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 242bf1c95db7d4101362a7b72b4cfa99009a93cc2fa399d1b4b81d93aabbd16c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118944654"
 ---
-# <a name="msintsuiteenterprise-property"></a>Proprietà MsiNTSuiteEnterprise
+# <a name="msintsuiteenterprise-property"></a>MsiNTSuiteEnterprise - proprietà
 
-In Windows 2000 e nei sistemi operativi successivi il programma di installazione imposta la proprietà **MsiNTSuiteEnterprise** su 1 se è installato Windows 2000 Advanced Server. Il programma di installazione imposta questa proprietà su 1 solo se \_ il \_ flag Enterprise di ver Suite è impostato nella struttura [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) . In caso contrario, il programma di installazione non imposta questa proprietà.
+Nei Windows 2000 e versioni successive il programma di installazione imposta la proprietà **MsiNTSuiteEnterprise** su 1 se Windows 2000 Advanced Server è installato. Il programma di installazione imposta questa proprietà su 1 solo se il flag VER \_ SUITE ENTERPRISE è impostato nella struttura \_ [**OSVERSIONINFOEX.**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) In caso contrario, il programma di installazione non imposta questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ In Windows 2000 e nei sistemi operativi successivi il programma di installazione
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

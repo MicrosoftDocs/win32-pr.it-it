@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSubObject recupera l'oggetto SubObject associato a questo oggetto.
+description: Il metodo GetSubObject recupera il sottooggetto associato a questo oggetto.
 ms.assetid: 478597d6-ae13-4fa9-a928-19893f378f1a
-title: 'Metodo IAMTimelineObj:: GetSubObject (qedit. h)'
+title: Metodo IAMTimelineObj::GetSubObject (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 74f14658db5ffbaf100925f26573a08b592f6510
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba3bc12e3b123768c88ce7f43955be419a0dfe84b6437701f9609e03a3fa0bdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155372"
 ---
-# <a name="iamtimelineobjgetsubobject-method"></a>Metodo IAMTimelineObj:: GetSubObject
+# <a name="iamtimelineobjgetsubobject-method"></a>Metodo IAMTimelineObj::GetSubObject
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetSubObject` metodo recupera l'oggetto SubObject associato a questo oggetto.
+Il `GetSubObject` metodo recupera il sottooggetto associato a questo oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,30 +45,30 @@ HRESULT GetSubObject(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia **IUnknown** dell'oggetto. Se l'oggetto non dispone di un oggetto SubObject, il valore viene impostato su **null**.
+Riceve un puntatore all'interfaccia **IUnknown del** sottooggetto. Se l'oggetto non dispone di un oggetto secondario, il valore viene impostato su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Ogni oggetto sequenza temporale può avere un puntatore a un oggetto SubObject associato.
+Ogni oggetto sequenza temporale può contenere un puntatore a un sottooggetto associato.
 
-Se il valore restituito in *pval* non è **null**, l'interfaccia **IUnknown** presenta un conteggio dei riferimenti in attesa. Assicurarsi di rilasciare l'interfaccia al termine dell'utilizzo.
+Se il valore restituito in *pVal* non è **NULL,** **l'interfaccia IUnknown** ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ Se il valore restituito in *pval* non è **null**, l'interfaccia **IUnknown** pr
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: La libreria dei servizi di incorporamento dei tipi di carattere fornisce un meccanismo per aggregare i tipi di carattere TrueType e Microsoft OpenType in un documento o file.
+description: La libreria dei servizi di incorporamento dei tipi di carattere fornisce un meccanismo per aggregare i tipi di carattere TrueType e Microsoft OpenType in un documento o in un file.
 ms.assetid: 1ba019c7-9ba6-429d-bbdc-7e182d93ab75
-title: Riferimento all'incorporamento dei tipi di carattere
+title: Informazioni di riferimento per l'incorporamento dei tipi di carattere
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90f6420bc37130d441fe1e46a1bd97f66fe55951
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb170f6d6eabb0602aa62741526f3b80efbc4c98a89f212534f0ee229cff7d02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761139"
 ---
-# <a name="font-embedding-reference"></a>Riferimento all'incorporamento dei tipi di carattere
+# <a name="font-embedding-reference"></a>Informazioni di riferimento per l'incorporamento dei tipi di carattere
 
-La libreria dei servizi di incorporamento dei tipi di carattere fornisce un meccanismo per aggregare i tipi di carattere TrueType e Microsoft OpenType in un documento o file. Per il rendering del documento in un altro computer, in genere è necessario un documento contenente tipi di carattere incorporati. Incorporando un tipo di carattere si garantisce che un tipo di carattere specificato in un file sia presente nel computer che riceve il file. Alcuni tipi di carattere, tuttavia, non possono essere spostati in altri computer a causa di problemi di copyright che limitano la distribuzione.
+La libreria dei servizi di incorporamento dei tipi di carattere fornisce un meccanismo per aggregare i tipi di carattere TrueType e Microsoft OpenType in un documento o in un file. In genere, un documento contenente tipi di carattere incorporati richiede tali tipi di carattere per il rendering del documento in un altro computer. L'incorporamento di un tipo di carattere garantisce che un tipo di carattere specificato in un file sia presente nel computer che riceve il file. Alcuni tipi di carattere, tuttavia, non possono essere spostati in altri computer a causa di problemi di copyright che limitano la distribuzione.
 
-I seguenti elementi vengono utilizzati con i servizi di incorporamento dei tipi di carattere.
+Gli elementi seguenti vengono usati con i servizi di incorporamento dei tipi di carattere.
 
 -   [Funzioni di incorporamento dei tipi di carattere](font-embedding-functions.md)
 -   [Strutture di incorporamento dei tipi di carattere](font-embedding-services-structures.md)
--   [Tipi di carattere di incorporamento dei messaggi di errore](font-embedding-function-error-messages.md)
+-   [Messaggi di errore di incorporamento dei tipi di carattere](font-embedding-function-error-messages.md)
 
  
 

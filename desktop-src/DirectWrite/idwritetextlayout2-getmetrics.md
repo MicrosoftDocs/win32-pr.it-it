@@ -1,11 +1,11 @@
 ---
-title: Metodo GetMetrics IDWriteTextLayout2
-description: Recupera la metrica complessiva per la stringa formattata.
+title: Metodo IdWriteTextLayout2 GetMetrics
+description: Recupera le metriche complessive per la stringa formattata.
 ms.assetid: EADCD83A-9FF5-44AB-8AB5-35FCB3A84889
 keywords:
-- Scrittura diretta metodo GetMetrics
-- Metodo GetMetrics scrittura diretta, interfaccia IDWriteTextLayout2
-- IDWriteTextLayout2 Interface Direct Write, metodo GetMetrics
+- Metodo GetMetrics Direct Write
+- Metodo GetMetrics Direct Write, interfaccia IDWriteTextLayout2
+- Interfaccia IDWriteTextLayout2 Scrittura diretta, metodo GetMetrics
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e393dfabb632641125d915e85f275977b20f0326
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7f08a0b1e47003bb818f0b80ebc3b13f639f8ded8334137d8b8812e7f0154a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070741"
 ---
-# <a name="idwritetextlayout2getmetrics-method"></a>Metodo IDWriteTextLayout2:: GetMetrics
+# <a name="idwritetextlayout2getmetrics-method"></a>Metodo IDWriteTextLayout2::GetMetrics
 
-Recupera la metrica complessiva per la stringa formattata.
+Recupera le metriche complessive per la stringa formattata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +42,20 @@ virtual HRESULT GetMetrics(
 
 <dl> <dt>
 
- *textMetrics* \[ out\]
+ *textMetrics* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[**DWrite \_ testo \_ METRICS1**](/windows/win32/api/dwrite_2/ns-dwrite_2-dwrite_text_metrics1) \** _
+Tipo: **[ **DWRITE \_ TEXT \_ METRICS1**](/windows/win32/api/dwrite_2/ns-dwrite_2-dwrite_text_metrics1)\***
 
-Quando termina, questo metodo contiene le distanze misurate del testo e il contenuto associato dopo la formattazione.
+Quando questo metodo viene restituito, contiene le distanze misurate del testo e del contenuto associato dopo la formattazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,10 +63,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                          |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/> |
-| Libreria<br/>                  | <dl> <dt>DWrite. lib</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                          |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/> |
+| Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

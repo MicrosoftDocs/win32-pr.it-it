@@ -1,7 +1,7 @@
 ---
-description: "Metodo ProtectKeyWithCertificateThumbprint della classe Win32_EncryptableVolume: convalida l'identificatore di oggetto (OID) di utilizzo chiavi avanzato (EKU) del certificato fornito."
+description: "Metodo ProtectKeyWithCertificateThumbprint della classe Win32_EncryptableVolume: convalida l'identificatore di oggetto EKU (Enhanced Key Usage) del certificato fornito."
 ms.assetid: 7096cead-c44a-404c-b1e1-3e0ab27070f8
-title: Metodo ProtectKeyWithCertificateThumbprint della Win32_EncryptableVolume classe
+title: Metodo ProtectKeyWithCertificateThumbprint della classe Win32_EncryptableVolume
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 8c71684bf66d8d14df60c9ff09083f507b114024
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 900138c611198114397caa94894a3802475e2bebe5138629c0f2b9bd2c58c220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891527"
 ---
 # <a name="protectkeywithcertificatethumbprint-method-of-the-win32_encryptablevolume-class"></a>Metodo ProtectKeyWithCertificateThumbprint della classe \_ EncryptableVolume Win32
 
-Il **metodo ProtectKeyWithCertificateThumbprint** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) convalida l'identificatore di oggetto (OID) [](../secgloss/o-gly.md) di Utilizzo chiavi avanzato (EKU) del certificato fornito.
+Il **metodo ProtectKeyWithCertificateThumbprint** della classe [**\_ EncryptableVolume Win32**](win32-encryptablevolume.md) convalida l'identificatore di oggetto EKU [*(Enhanced*](../secgloss/o-gly.md) Key Usage) del certificato fornito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +44,16 @@ uint32 ProtectKeyWithCertificateThumbprint(
 *FriendlyName* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **string**
+Tipo: **stringa**
 
-Stringa che specifica un identificatore di stringa assegnato dall'utente per questa protezione con chiave. Se questo parametro non viene specificato, il *parametro FriendlyName* viene creato usando il nome soggetto nel certificato.
+Stringa che specifica un identificatore di stringa assegnato dall'utente per questa protezione della chiave. Se questo parametro non viene specificato, il *parametro FriendlyName* viene creato usando il nome soggetto nel certificato.
 
 </dd> <dt>
 
 *CertThumbprint* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **string**
+Tipo: **stringa**
 
 Stringa che specifica l'identificazione personale del certificato.
 
@@ -62,11 +62,11 @@ Stringa che specifica l'identificazione personale del certificato.
 *VolumeKeyProtectorID* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **string**
+Tipo: **stringa**
 
-Stringa che identifica in modo univoco la protezione con chiave creata che può essere usata per gestire la protezione con chiave.
+Stringa che identifica in modo univoco la protezione delle chiavi creata che può essere usata per gestire la protezione delle chiavi.
 
-Se l'unità supporta la crittografia hardware e BitLocker non ha assunto la proprietà della banda, la stringa ID viene impostata su "BitLocker" e la protezione con chiave viene scritta per metadati di banda.
+Se l'unità supporta la crittografia hardware e BitLocker non ha assunto la proprietà della banda, la stringa ID viene impostata su "BitLocker" e la protezione della chiave viene scritta in per ogni metadati della banda.
 
 </dd> </dl>
 
@@ -83,8 +83,8 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                                           | Il metodo è stato eseguito correttamente.<br/>                                                                                                                                                                                                                                                          |
 | <dl> <dt>**ERRORE \_ DATI \_ NON**</dt> <dt>VALIDI 13 (0xD)</dt> </dl>                                           | I dati non sono validi.<br/>                                                                                                                                                                                                                                                              |
 | <dl> <dt>**FVE \_ E \_ NON \_ BITLOCKER \_ OID**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | L'attributo EKU del certificato specificato non ne consente l'uso per Crittografia unità BitLocker. BitLocker non richiede che un certificato abbia un attributo EKU, ma se ne è configurato uno, deve essere impostato su un OID corrispondente all'OID configurato per BitLocker.<br/> |
-| <dl> <dt>**FVE \_ E \_ CERTIFICATO UTENTE CRITERI NON \_ \_ \_ \_ CONSENTITO**</dt> <dt>2150695026 (0x80310072)</dt> </dl> | Criteri di gruppo non consente l'uso di certificati utente, ad esempio smart card, con BitLocker.<br/>                                                                                                                                                                                     |
-| <dl> <dt>**FVE \_ E \_ POLICY \_ USER \_ CERT DEVE ESSERE \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | Criteri di gruppo è necessario specificare un smart card usare BitLocker.<br/>                                                                                                                                                                                                                |
+| <dl> <dt>**FVE \_ E \_ CERTIFICATO UTENTE CRITERI \_ \_ \_ NON \_**</dt> CONSENTITO 2150695026 <dt>(0x80310072)</dt> </dl> | Criteri di gruppo non consente l'uso di certificati utente, ad esempio smart card, con BitLocker.<br/>                                                                                                                                                                                     |
+| <dl> <dt>**FVE \_ E \_ POLICY \_ USER \_ CERT MUST BE \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | Criteri di gruppo è necessario specificare un smart card usare BitLocker.<br/>                                                                                                                                                                                                                |
 | <dl> <dt>**FVE \_ E \_ POLICY \_ PROHIBITS \_ SELFSIGNED**</dt> <dt>2150695046 (0x80310086)</dt> </dl>           | Criteri di gruppo non consente l'uso di certificati autofirmati.<br/>                                                                                                                                                                                                                   |
 
 
@@ -101,8 +101,8 @@ Se l'OID non corrisponde a quello associato al controller del servizio nel Regis
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows 7 Enterprise, Windows 7 app desktop Ultimate \[\]<br/>                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
 | Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 

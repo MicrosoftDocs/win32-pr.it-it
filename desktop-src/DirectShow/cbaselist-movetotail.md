@@ -1,7 +1,7 @@
 ---
-description: Il metodo MoveToTail suddivide l'elenco e aggiunge la parte Head alla parte finale di un altro elenco.
+description: Il metodo MoveToTail suddivide l'elenco e aggiunge la parte head alla fine di un altro elenco.
 ms.assetid: f5cefe7c-075c-433b-9ece-aa10217344fa
-title: Metodo CBaseList. MoveToTail (Wxlist. h)
+title: Metodo CBaseList.MoveToTail (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1c28e1051c08884e70e56b25b0fb2707ccd55ed1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ae7ab918c8c4ef707b2754f8b1ba1f8f3e76265a6b8ac0b252e765de2aff1b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016919"
 ---
-# <a name="cbaselistmovetotail-method"></a>CBaseList. MoveToTail, metodo
+# <a name="cbaselistmovetotail-method"></a>Metodo CBaseList.MoveToTail
 
-Il `MoveToTail` metodo suddivide l'elenco e aggiunge la parte Head alla parte finale di un altro elenco.
+Il `MoveToTail` metodo suddivide l'elenco e aggiunge la parte head alla parte finale di un altro elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ BOOL MoveToTail(
 *pos* 
 </dt> <dd>
 
-Indicatore di posizione che contrassegna la suddivisione nell'elenco.
+Indicatore di posizione che contrassegna la divisione nell'elenco.
 
 </dd> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
 Puntatore a un altro elenco.
@@ -59,11 +59,11 @@ Puntatore a un altro elenco.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo suddivide l'elenco dopo la posizione specificata dal parametro *pos* . La parte finale rimane nell'elenco. La parte Head viene aggiunta alla parte finale dell'altro elenco.
+Questo metodo suddivide l'elenco dopo la posizione specificata dal *parametro pos.* La parte finale rimane nell'elenco. La parte head viene aggiunta alla parte finale dell'altro elenco.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questo metodo suddivide l'elenco dopo la posizione specificata dal parametro *po
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

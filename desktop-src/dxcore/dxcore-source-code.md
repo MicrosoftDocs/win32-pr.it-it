@@ -1,26 +1,26 @@
 ---
 title: Applicazione DXCore minima
-description: Listato di codice sorgente completo per un'applicazione DXCore minima.
+description: Elenco completo del codice sorgente per un'applicazione DXCore minima.
 ms.custom: 19H1
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 06/21/2019
-ms.openlocfilehash: 6a1094f3fcc450fc8e5af471d79be3e3c3064fbf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9f9d8687fa9871152504f80a917a083ce9acbd14b9bf9159bc7559865b6a7a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985211"
 ---
 # <a name="minimal-dxcore-application"></a>Applicazione DXCore minima
 
-In questo argomento viene presentato il listato di codice sorgente completo per un'applicazione DXCore minima (scritta in [C++/WinRT](/windows/uwp/cpp-and-winrt-apis)). La maggior parte del codice illustrato di seguito è illustrata nell'argomento [utilizzo di DXCore per enumerare gli adapter](dxcore-enum-adapters.md).
+Questo argomento presenta l'elenco completo del codice sorgente per un'applicazione DXCore minima (scritta in [C++/WinRT).](/windows/uwp/cpp-and-winrt-apis) La maggior parte del codice illustrato di seguito è illustrata nell'argomento [Uso di DXCore per enumerare gli adattatori](dxcore-enum-adapters.md).
 
-## <a name="full-source-code-listing-of-a-minimal-dxcore-application"></a>Listato di codice sorgente completo di un'applicazione DXCore minima
+## <a name="full-source-code-listing-of-a-minimal-dxcore-application"></a>Elenco completo del codice sorgente di un'applicazione DXCore minima
 
-Se si vuole compilare ed eseguire questo esempio di codice sorgente, in Visual Studio creare un nuovo progetto di **applicazione console Windows (C++/WinRT)** . Modificare quindi `pch.h` e `main.cpp` per apparire come gli elenchi riportati di seguito.
+Se si vuole compilare ed eseguire questo esempio di codice sorgente, in Visual Studio creare un nuovo progetto applicazione **console Windows (C++/WinRT).** Modificare quindi `pch.h` e per avere un aspetto simile alle inserzioni `main.cpp` seguenti.
 
-Nell'esempio di codice riportato di seguito viene utilizzato [C++/WinRT](/windows/uwp/cpp-and-winrt-apis). Tuttavia, per evitare che l'uso delle API sia trasparente, non viene usata la [funzione WinRT:: com_ptr:: Capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
+Nell'esempio di codice seguente [viene utilizzato C++/WinRT](/windows/uwp/cpp-and-winrt-apis). Tuttavia, per mantenere trasparente l'uso delle API, non usa la funzione [winrt::com_ptr::capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
 
 ```cppwinrt
 // pch.h
@@ -279,5 +279,5 @@ int main()
 ## <a name="related-topics"></a>Argomenti correlati
 
 * [Uso di DXCore per enumerare gli adapter](dxcore-enum-adapters.md)
-* [Riferimento a DXCore](./dxcore-reference.md)
+* [Informazioni di riferimento su DXCore](./dxcore-reference.md)
 * [Grafica Direct3D 12](../direct3d12/direct3d-12-graphics.md)

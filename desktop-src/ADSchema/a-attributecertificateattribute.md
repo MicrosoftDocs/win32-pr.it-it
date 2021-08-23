@@ -56,7 +56,7 @@ Un'identità con firma digitale o certificata e un set di attributi. Usato per a
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -77,7 +77,7 @@ Un'identità con firma digitale o certificata e un set di attributi. Usato per a
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -98,7 +98,7 @@ Un'identità con firma digitale o certificata e un set di attributi. Usato per a
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -119,7 +119,7 @@ Un'identità con firma digitale o certificata e un set di attributi. Usato per a
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -140,7 +140,7 @@ Un'identità con firma digitale o certificata e un set di attributi. Usato per a
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |

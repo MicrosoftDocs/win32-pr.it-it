@@ -1,6 +1,6 @@
 ---
 title: WM/PeakBitrate
-description: L'attributo WM/PeakBitrate contiene la velocità in bit massima di un flusso vbr (Variable Bit Rate) in bit al secondo.
+description: L'attributo WM/PeakBitrate contiene la velocità in bit massima di un flusso VBR (Variable Bit Rate) in bit al secondo.
 ms.assetid: be10879b-3078-46e9-94de-88f2d4974710
 keywords:
 - WM/PeakBitrate windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118698517"
 ---
 # <a name="wmpeakbitrate"></a>WM/PeakBitrate
 
-**L'attributo WM/PeakBitrate** contiene la velocità in bit massima di un flusso vbr (Variable Bit Rate) in bit al secondo.
+**L'attributo WM/PeakBitrate** contiene la velocità in bit massima di un flusso VBR (Variable Bit Rate) in bit al secondo.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMPeakBitrate
 
 ## <a name="data-type"></a>Tipo di dati
 
-**DWORD \_ DI TIPO \_ WMT**
+**DWORD \_ DI \_ TIPO WMT**
 
 ## <a name="see-also"></a>Vedi anche
 

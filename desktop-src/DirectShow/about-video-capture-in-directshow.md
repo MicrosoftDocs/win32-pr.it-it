@@ -1,25 +1,25 @@
 ---
-description: Informazioni su acquisizione video in DirectShow
+description: Informazioni sull'acquisizione video in DirectShow
 ms.assetid: 84d722aa-f178-4a1e-8102-c7fc3cb2efb0
-title: Informazioni su acquisizione video in DirectShow
+title: Informazioni sull'acquisizione video in DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1db6c5d90dc0215711331bb8e706a47192c974c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4618373d30cd4906284fb68a3afb93e565c46defd9004cd9bd599a8a19772b01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074835"
 ---
-# <a name="about-video-capture-in-directshow"></a>Informazioni su acquisizione video in DirectShow
+# <a name="about-video-capture-in-directshow"></a>Informazioni sull'acquisizione video in DirectShow
 
-Il termine *acquisizione video*, come usato in questa documentazione, descrive le applicazioni in cui il video viene ricevuto da un dispositivo hardware. I dispositivi di acquisizione video includono non solo le fotocamere, ma anche le schede tuner TV, i registratori di nastri video (VTR) e così via. Il video acquisito può essere salvato su disco o in anteprima in tempo reale.
+Il termine *acquisizione video,* usato in questa documentazione, descrive qualsiasi applicazione in cui il video viene ricevuto da un dispositivo hardware. I dispositivi di acquisizione video includono non solo fotocamere, ma anche schede di siner TV, videoregistratori (VTO) e così via. Il video acquisito può essere salvato su disco o visualizzato in anteprima live.
 
-Questa sezione descrive alcuni dei concetti che è necessario comprendere per usare DirectShow per l'acquisizione video:
+Questa sezione descrive alcuni dei concetti che è necessario comprendere per usare i DirectShow per l'acquisizione video:
 
--   [Informazioni sul generatore di grafici di acquisizione](about-the-capture-graph-builder.md)
+-   [Informazioni su Capture Graph Builder](about-the-capture-graph-builder.md)
 -   [Informazioni sui dispositivi di acquisizione video](about-video-capture-devices.md)
--   [Filtri di acquisizione video DirectShow](directshow-video-capture-filters.md)
+-   [DirectShow Filtri di acquisizione video](directshow-video-capture-filters.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

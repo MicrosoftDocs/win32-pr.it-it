@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_IRIS (tipi WinBio \_ . h)
-description: Specificare i tipi per il riconoscimento Iris.
+title: WINBIO_IRIS costanti (Winbio \_ types.h)
+description: Specificare i tipi per il riconoscimento dell'iris.
 ms.assetid: B1A594E3-6DEA-4071-B40F-569B8094E801
 topic_type:
 - apiref
@@ -18,28 +18,28 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61e65505b8ef55b0fdc2dc9d8f5312e24856602
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd528bc9a902379591fb6d9587fa66bda9df50ad74cb5e5723f8646a53609a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909960"
 ---
-# <a name="winbio_iris-constants"></a>\_Costanti Iris WINBIO
+# <a name="winbio_iris-constants"></a>Costanti di WINBIO \_ IRIS
 
-Le costanti seguenti sono valori **dei \_ \_ SOTTOtipi biometrici WINBIO** che possono essere usati per specificare i tipi per il riconoscimento Iris oltre ANSI gli inci 379-2004: "formato di interscambio immagini Iris", che non definisce alcun valore di occhio sinistro/destro:
+Le costanti seguenti sono valori **\_ \_ SUBTYPE BIOMETRICI WINBIO** che possono essere usati per specificare i tipi per il riconoscimento dell'iris oltre ANSI INCITS 379-2004: "Iris Image Interchange Format", che non definisce alcun valore dell'occhio sinistro/destro:
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                   | Descrizione                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_IRIS_TYPE_UNKNOWN_"></span><span id="winbio_iris_type_unknown_"></span><dl> <dt> **\_ Tipo Iris \_ WINBIO \_ sconosciuto**</dt> <dt>0</dt> </dl>                       | Il tipo di Iris è sconosciuto. <br/>                                                                                                                                 |
-| <span id="WINBIO_IRIS_LEFT_EYE_"></span><span id="winbio_iris_left_eye_"></span><dl> <dt> **WINBIO \_ Iris \_ Left- \_ Eye**</dt> <dt>0xf5</dt> </dl>                               | Il tipo Iris è l'occhio sinistro. <br/>                                                                                                                            |
-| <span id="WINBIO_IRIS_RIGHT_EYE_"></span><span id="winbio_iris_right_eye_"></span><dl> <dt> **WINBIO \_ Iris \_ a \_ destra**</dt> <dt>0XF6</dt> </dl>                            | Il tipo Iris è l'occhio destro. <br/>                                                                                                                           |
-| <span id="WINBIO_IRIS_UNSPECIFIED_POS_01"></span><span id="winbio_iris_unspecified_pos_01"></span><dl> <dt>**WINBIO \_ IRIS non \_ specificato \_ POS \_ 01**</dt> <dt>0xf7</dt> </dl>    | Sottotipo associato a un primo modello utente quando solo un occhio è la cornice della fotocamera e non può essere determinato se è l'occhio sinistro o destro dell'utente.<br/>  |
-| <span id="WINBIO_IRIS_UNSPECIFIED_POS_02_"></span><span id="winbio_iris_unspecified_pos_02_"></span><dl> <dt> **WINBIO \_ Iris non \_ specificato \_ POS \_ 02**</dt> <dt>0xF8</dt> </dl> | Sottotipo associato a un secondo modello utente quando solo un occhio è il fotogramma della fotocamera e non può essere determinato se è l'occhio sinistro o destro dell'utente.<br/> |
-| <span id="WINBIO_IRIS_BOTH_EYES_"></span><span id="winbio_iris_both_eyes_"></span><dl> <dt> **WINBIO \_ Iris \_ entrambi \_ gli occhi**</dt> <dt>0xF9</dt> </dl>                             | Il tipo Iris è entrambi gli occhi. <br/>                                                                                                                               |
-| <span id="WINBIO_IRIS_EITHER_EYE_"></span><span id="winbio_iris_either_eye_"></span><dl> <dt> **WINBIO \_ Iris \_ \_ occhio**</dt> <dt>0xFA</dt> </dl>                          | Il tipo di Iris è Eye. <br/>                                                                                                                              |
+| <span id="WINBIO_IRIS_TYPE_UNKNOWN_"></span><span id="winbio_iris_type_unknown_"></span><dl> <dt> **TIPO \_ DI WINBIO IRIS \_ \_ SCONOSCIUTO**</dt> <dt>0</dt> </dl>                       | Il tipo di iris è sconosciuto. <br/>                                                                                                                                 |
+| <span id="WINBIO_IRIS_LEFT_EYE_"></span><span id="winbio_iris_left_eye_"></span><dl> <dt> **WINBIO \_ IRIS \_ LEFT \_ EYE**</dt> <dt>0xF5</dt> </dl>                               | Il tipo di iris è l'occhio sinistro. <br/>                                                                                                                            |
+| <span id="WINBIO_IRIS_RIGHT_EYE_"></span><span id="winbio_iris_right_eye_"></span><dl> <dt> **WINBIO \_ IRIS \_ RIGHT \_ EYE**</dt> <dt>0xF6</dt> </dl>                            | Il tipo di iris è l'occhio destro. <br/>                                                                                                                           |
+| <span id="WINBIO_IRIS_UNSPECIFIED_POS_01"></span><span id="winbio_iris_unspecified_pos_01"></span><dl> <dt>**WINBIO \_ IRIS \_ UNSPECIFIED \_ POS \_ 01**</dt> <dt>0xF7</dt> </dl>    | Sottotipo associato al primo modello dell'utente quando un solo occhio è fotogramma della fotocamera e non può essere determinato se si tratta dell'occhio sinistro o destro dell'utente.<br/>  |
+| <span id="WINBIO_IRIS_UNSPECIFIED_POS_02_"></span><span id="winbio_iris_unspecified_pos_02_"></span><dl> <dt> **WINBIO \_ IRIS \_ NON SPECIFICATO POS \_ \_ 02**</dt> <dt>0xF8</dt> </dl> | Sottotipo associato al secondo modello dell'utente quando un solo occhio è fotogramma della fotocamera e non può essere determinato se si tratta dell'occhio sinistro o destro dell'utente.<br/> |
+| <span id="WINBIO_IRIS_BOTH_EYES_"></span><span id="winbio_iris_both_eyes_"></span><dl> <dt> **WINBIO \_ IRIS \_ BOTH \_ EYES**</dt> <dt>0xF9</dt> </dl>                             | Il tipo di iris è entrambi gli occhi. <br/>                                                                                                                               |
+| <span id="WINBIO_IRIS_EITHER_EYE_"></span><span id="winbio_iris_either_eye_"></span><dl> <dt> **WINBIO \_ IRIS \_ 0XFA \_**</dt> <dt></dt> </dl>                          | Il tipo di iris è eye. <br/>                                                                                                                              |
 
 
 
@@ -49,9 +49,9 @@ Le costanti seguenti sono valori **dei \_ \_ SOTTOtipi biometrici WINBIO** che p
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                   |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

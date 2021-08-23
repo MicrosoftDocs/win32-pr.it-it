@@ -1,19 +1,19 @@
 ---
-title: Uso di controlli tasto di scelta
-description: In questa sezione sono contenuti esempi di codice e informazioni sull'utilizzo dei controlli chiave a caldo.
+title: Uso dei controlli tasto di scelta rapida
+description: Questa sezione contiene codice di esempio e informazioni su come usare i controlli tasto di scelta rapida.
 ms.assetid: B241D032-FDC6-4410-9AB1-9D50AE96F1D0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7f739ca0a03afa4fc94cff111e66e518e5ed09
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 69b1de221c510ac7a9d500db472652c9324703349b04b8bbe496cc54a205bc0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018579"
 ---
-# <a name="using-hot-key-controls"></a>Uso di controlli tasto di scelta
+# <a name="using-hot-key-controls"></a>Uso dei controlli tasto di scelta rapida
 
-In questa sezione sono contenuti esempi di codice e informazioni sull'utilizzo dei controlli chiave a caldo.
+Questa sezione contiene codice di esempio e informazioni su come usare i controlli tasto di scelta rapida.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,8 +21,8 @@ In questa sezione sono contenuti esempi di codice e informazioni sull'utilizzo d
 
 | Argomento                                                                           | Descrizione                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Come creare un controllo tasto di scelta](create-a-hot-key-control.md)<br/>      | In questo argomento viene illustrato come creare un controllo tasto di scelta. Per creare un controllo del tasto di scelta rapida, utilizzare la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , specificando la classe della finestra di scelta rapida \_ .<br/> |
-| [Come recuperare e impostare un tasto di scelta](-retrieve-and-set-a-hot-key.md)<br/> | In questo argomento viene illustrato come recuperare o impostare la combinazione di tasti per un controllo tasto di scelta. <br/>                                                                                                          |
+| [Come creare un controllo tasto di scelta rapida](create-a-hot-key-control.md)<br/>      | Questo argomento illustra come creare un controllo tasto di scelta rapida. Per creare un controllo tasto di scelta rapida, usare [**la funzione CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) specificando la classe finestra HOTKEY \_ CLASS.<br/> |
+| [Come recuperare e impostare un tasto di scelta rapida](-retrieve-and-set-a-hot-key.md)<br/> | Questo argomento illustra come recuperare o impostare la combinazione di tasti per un controllo tasto di scelta rapida. <br/>                                                                                                          |
 
 
 

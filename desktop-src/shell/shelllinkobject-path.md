@@ -1,7 +1,7 @@
 ---
 description: Ottiene o imposta il percorso dell'oggetto collegamento.
 ms.assetid: ddb5be91-7c21-46c8-949e-bdd973e11b6c
-title: Proprietà ShellLinkObject. Path (shldisp. h)
+title: Proprietà ShellLinkObject.Path (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ac6b6f1168724f3808462088dc7e5907ec0cec58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3eb2418478445dbae9b3f9a0f9e5ba3dde7013854ab3bef8b8f41188d4000e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968390"
 ---
-# <a name="shelllinkobjectpath-property"></a>Proprietà ShellLinkObject. Path
+# <a name="shelllinkobjectpath-property"></a>ShellLinkObject.Path - proprietà
 
 Ottiene o imposta il percorso dell'oggetto collegamento.
 
@@ -38,13 +38,13 @@ ShellLinkObject.Path(sPath) = strPath
 
 ## <a name="property-value"></a>Valore proprietà
 
-percorso completo dell'oggetto collegamento.
+Percorso completo dell'oggetto collegamento.
 
 ## <a name="examples"></a>Esempio
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -174,11 +174,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

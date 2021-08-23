@@ -4,7 +4,7 @@ description: Testo dello script che implementa la regola business.
 ms.assetid: 884513ae-9600-49b0-a371-6f77b84b54f9
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-DS-Az-Biz-Rule Schema di ACTIVE Directory
+- Attributo ms-DS-Az-Biz-Rule SCHEMA DI AD
 - Schema AD dell'attributo msDS-AzBizRule
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Testo dello script che implementa la regola business.
 | CN                | ms-DS-Az-Biz-Rule                           |
 | Ldap-Display-Name | msDS-AzBizRule                              |
 | Dimensione              | 128 caratteri                              |
-| Aggiorna privilegio  | AzRoles admin                               |
+| Privilegio di aggiornamento  | Amministratore di AzRoles                               |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1801                     |
 | System-Id-Guid    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
@@ -57,7 +57,7 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| A valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
@@ -78,7 +78,7 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| A valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
@@ -99,7 +99,7 @@ Testo dello script che implementa la regola business.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |

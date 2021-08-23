@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118793857"
 ---
-# <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3-function"></a>Funzione DA D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB \_ a \_ FLOAT3
+# <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3-function"></a>Da D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB \_ alla funzione \_ FLOAT3
 
 Decomprime i dati dello shader DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM \_ SRGB in XMFLOAT3.
 
@@ -46,7 +46,7 @@ Dati dello shader di cui è stato effettuato il pacchetto.
 
 ## <a name="return-value"></a>Valore restituito
 
-Dati dello shader decompressi.
+Dati shader decompressi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Dati dello shader decompressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e impacchettamento del formato DXGI \_ per In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

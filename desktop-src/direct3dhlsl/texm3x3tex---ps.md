@@ -104,7 +104,7 @@ mov r0, t3            // stage 3 output result
 
 Questo esempio richiede la configurazione della fase di trama seguente.
 
--   Alla fase 0 viene assegnata una mappa trame con dati normali. Questa mappa viene spesso definita mappa di rilievo. I dati sono normali (XYZ) per ogni texel. Il set di coordinate di trama 0 definisce come campionare questa mappa normale.
+-   Alla fase 0 viene assegnata una mappa trame con dati normali. Questa mappa viene spesso definita mappa a rilievo. I dati sono normali (XYZ) per ogni texel. Il set di coordinate di trama 0 definisce come campionare questa mappa normale.
 -   Il set di coordinate di trama 1 viene assegnato alla riga 1 della matrice 3x3. Qualsiasi trama assegnata alla fase 1 viene ignorata.
 -   Il set di coordinate di trama 2 viene assegnato alla riga 2 della matrice 3x3. Qualsiasi trama assegnata alla fase 2 viene ignorata.
 -   Il set di coordinate di trama 3 viene assegnato alla riga 3 della matrice 3x3. Una trama di volume o cubo deve essere impostata sulla fase 3 per la ricerca da parte del vettore 3D trasformato.

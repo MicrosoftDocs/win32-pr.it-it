@@ -1,13 +1,13 @@
 - name: Valori DPI alti
   href: high-dpi-desktop-application-development-on-windows.md
   items:
-    - name: Impostazione della consapevolezza DPI predefinita per un processo
+    - name: Impostazione del riconoscimento DPI predefinito per un processo
       href: setting-the-default-dpi-awareness-for-a-process.md
-    - name: Ridimensionamento di Mixed-Mode DPI e API compatibili con DPI
+    - name: Mixed-Mode ridimensionamento DPI e API che sono in grado di riconoscere DPI
       href: high-dpi-improvements-for-desktop-applications.md
     - name: Sviluppo di un'applicazione WPF sensibile ai valori DPI del monitor
       href: declaring-managed-apps-dpi-aware.md
-    - name: Riferimento DPI alto
+    - name: Informazioni di riferimento su valori DPI elevati
       href: high-dpi-reference.md
       items:
         - name: AdjustWindowRectExForDpi

@@ -1,7 +1,7 @@
 ---
-description: Reimposta il numero interno di interfacce recuperate nell'enumerazione.
+description: Reimposta il conteggio interno delle interfacce recuperate nell'enumerazione .
 ms.assetid: fd79b4be-cc0c-49b3-9874-384858e21ecf
-title: 'Metodo IEnumUserIdentity:: Reset (Msident. h)'
+title: Metodo IEnumUserIdentity::Reset (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 05b3c5d38575fa1b2957c28070d642ad15f846ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df70048760af47b380308eddab4ef5c044c8f6881374c83002944d6d76836ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969420"
 ---
-# <a name="ienumuseridentityreset-method"></a>Metodo IEnumUserIdentity:: Reset
+# <a name="ienumuseridentityreset-method"></a>Metodo IEnumUserIdentity::Reset
 
-\[**IEnumUserIdentity:: Reset** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**IEnumUserIdentity::Reset** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e](fastuserswitching.md)Desktop remoto .\]
 
-Reimposta il numero interno di interfacce recuperate nell'enumerazione.
+Reimposta il conteggio interno delle interfacce recuperate nell'enumerazione .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,11 +43,11 @@ Questo metodo non presenta parametri.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-[**IEnumUserIdentity**](ienumuseridentity.md) mantiene un conteggio interno che specifica l'interfaccia successiva da recuperare. Se si chiama questo metodo, verrà reimpostato il valore di questo conteggio.
+[**IEnumUserIdentity**](ienumuseridentity.md) mantiene un conteggio interno che specifica quale interfaccia deve essere recuperata. La chiamata a questo metodo reimposta il valore di questo conteggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,12 +55,12 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                  |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md)
+[**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: GetCount**](ienumuseridentity-getcount.md)
+[**IEnumUserIdentity::GetCount**](ienumuseridentity-getcount.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Next**](ienumuseridentity-next.md)
+[**IEnumUserIdentity::Next**](ienumuseridentity-next.md)
 </dt> </dl>
 
  

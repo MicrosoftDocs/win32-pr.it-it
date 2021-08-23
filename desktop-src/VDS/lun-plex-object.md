@@ -1,25 +1,25 @@
 ---
-description: Oggetto PLEX LUN
+description: Oggetto LUN Plex
 ms.assetid: db6eabaa-1b84-4613-ab2a-8d5904305e08
-title: Oggetto PLEX LUN
+title: Oggetto LUN Plex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f1b51657ccbfc0f1bd3d73e54128cac3f0b507c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df52b60bcbd23269d766435749b40b8c636361390359182a38a695ab6252a27f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999442"
 ---
-# <a name="lun-plex-object"></a>Oggetto PLEX LUN
+# <a name="lun-plex-object"></a>Oggetto LUN Plex
 
-\[A partire da Windows 8 e Windows Server 2012, l'interfaccia com del [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituita dall' [API di gestione archiviazione di Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partire Windows 8 e Windows Server 2012, l'interfaccia [COM](virtual-disk-service-portal.md) del servizio disco virtuale viene sostituita dal Windows Archiviazione API Gestione [.](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)\]
 
-Un oggetto PLEX LUN modella un PLEX LUN contenuto in un LUN. Solo un LUN con mirroring può avere più Plex; tutti gli altri tipi LUN hanno un plex. Ogni plex contiene una copia dei dati nel LUN. È possibile aggiungere nuovi Plex a un LUN e, ad eccezione del Plex originale, i plex esistenti possono essere rimossi. VDS supporta quattro tipi di PLEX LUN: semplici, con spanning, con striping e con striping con parità. Per una descrizione di ognuno di questi tipi LUN, vedere l' [oggetto lun](lun-object.md).
+Un oggetto lun plex modella un plex LUN contenuto in un LUN. Solo un LUN con mirroring può avere più plex. tutti gli altri tipi di LUN hanno un plex. Ogni plex contiene una copia dei dati nel LUN. È possibile aggiungere nuovi plex a un LUN e, ad eccezione del plex originale, è possibile rimuovere iplex esistenti. VDS supporta quattro tipi di lun plex: semplice, con spanning, con striped e strip con parità. Per una descrizione di ognuno di questi tipi di LUN, vedere l'oggetto [LUN](lun-object.md).
 
-Usare il metodo [**IVdsLun:: AddPlex**](/windows/desktop/api/Vds/nf-vds-ivdslun-addplex) per aggiungere un plex a un LUN e il metodo [**IVdsLun:: RemovePlex**](/windows/desktop/api/Vds/nf-vds-ivdslun-removeplex) per eliminare il plex. È possibile eseguire una query per i PLEX LUN richiamando il metodo [**IVdsLun:: QueryPlexes**](/windows/desktop/api/Vds/nf-vds-ivdslun-queryplexes) . È possibile ottenere un puntatore a un PLEX LUN specifico selezionando l'oggetto Plex desiderato dall'enumerazione restituita dal metodo **QueryPlexes** . Con un oggetto Plex è possibile eseguire una query per gli extent delle unità e i suggerimenti di automagic e applicare nuovi hint.
+Usare il [**metodo IVdsLun::AddPlex**](/windows/desktop/api/Vds/nf-vds-ivdslun-addplex) per aggiungere un plex a un LUN e il metodo [**IVdsLun::RemovePlex**](/windows/desktop/api/Vds/nf-vds-ivdslun-removeplex) per eliminare il plex. È possibile eseguire una query per i plex LUN richiamando il [**metodo IVdsLun::QueryPlexes.**](/windows/desktop/api/Vds/nf-vds-ivdslun-queryplexes) È possibile ottenere un puntatore a un plex LUN specifico selezionando l'oggetto plex desiderato dall'enumerazione restituita dal **metodo QueryPlexes.** Con un oggetto plex, è possibile eseguire una query per gli extent di unità e gli hint automagic e applicare nuovi hint.
 
-Oltre a un identificatore di oggetto, un nome e un numero di serie, le proprietà dell'oggetto LUN Plex includono il tipo di Plex, le dimensioni, lo stato, l'integrità, lo stato di transizione e i flag. elenco e dimensioni di striping senza maschera; e un'impostazione della priorità di ricompilazione.
+Oltre a un identificatore di oggetto, un nome e un numero di serie, le proprietà dell'oggetto plex LUN includono il tipo plex, le dimensioni, lo stato, l'integrità, lo stato di transizione e i flag. un elenco di annullamento del mascheramento e le dimensioni di striping; e un'impostazione di priorità di ricompilazione.
 
 Nella tabella seguente sono elencate le interfacce, le enumerazioni e le strutture correlate.
 
@@ -28,8 +28,8 @@ Nella tabella seguente sono elencate le interfacce, le enumerazioni e le struttu
 | Tipo                                              | Elemento                                                                                                                                                          |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfacce sempre esposte da questo oggetto | [**IVdsLunPlex**](/windows/desktop/api/Vds/nn-vds-ivdslunplex).                                                                                                                              |
-| Enumerazioni associate                           | [**VDS \_ LUN \_ Plex \_ flag**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_flag), [**VDS \_ lun \_ Plex \_ status**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_status)e [**VDS \_ lun \_ Plex \_ Type**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_type). |
-| Strutture associate                             | [**VDS \_ \_ \_ prop Plex di lun**](/windows/desktop/api/Vds/ns-vds-vds_lun_plex_prop).                                                                                                               |
+| Enumerazioni associate                           | [**VDS \_ LUN \_ PLEX \_ FLAG,**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_flag) [**VDS \_ LUN \_ PLEX \_ STATUS**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_status)E [**VDS LUN \_ \_ PLEX \_ TYPE**](/windows/desktop/api/Vds/ne-vds-vds_lun_plex_type). |
+| Strutture associate                             | [**VDS \_ LUN \_ PLEX \_ PROP**](/windows/desktop/api/Vds/ns-vds-vds_lun_plex_prop).                                                                                                               |
 
 
 
@@ -42,7 +42,7 @@ Nella tabella seguente sono elencate le interfacce, le enumerazioni e le struttu
 [Oggetti provider hardware](hardware-provider-objects.md)
 </dt> <dt>
 
-[LUN (oggetto)](lun-object.md)
+[Oggetto LUN](lun-object.md)
 </dt> </dl>
 
  

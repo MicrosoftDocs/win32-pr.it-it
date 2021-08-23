@@ -31,14 +31,14 @@ dcl \[ \_ pp \] dest \[ .mask\]
 Dove:
 
 -   \[\_pp \] è una precisione parziale facoltativa. Vedere [Precisione parziale.](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md)
--   dest è un registro di destinazione. Deve essere un registro colori [di input](dx9-graphics-reference-asm-ps-registers-input-color.md) (vn) o un registro delle coordinate di [trama](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn).
--   \[.mask è una maschera di scrittura facoltativa che controlla i componenti del registro di \] destinazione in cui è possibile scrivere. Vedere [Maschera di scrittura del registro di destinazione](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md).
+-   dest è un registro di destinazione. Deve essere un registro colori [di input](dx9-graphics-reference-asm-ps-registers-input-color.md) (vn) o un registro delle coordinate [di trama](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn).
+-   \[.mask \] è una maschera di scrittura facoltativa che controlla i componenti del registro di destinazione in cui è possibile scrivere. Vedere [Destination Register Write Mask](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md).
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | Dcl                   |      |      |      |      | x    | x    | x     | x    | x     |
 

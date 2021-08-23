@@ -17,7 +17,7 @@ ms.locfileid: "118783564"
 # <a name="esentcannotbetaggedexception-properties"></a>Proprietà di EsentCannotBeTaggedException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentCannotBeTaggedException](./esentcannotbetaggedexception-class.md) espone i membri seguenti.
 

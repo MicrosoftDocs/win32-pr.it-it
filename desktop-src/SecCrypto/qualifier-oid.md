@@ -22,9 +22,9 @@ ms.locfileid: "118901051"
 ---
 # <a name="qualifieroid-property"></a>Qualifier.OID - proprietà
 
-\[La **proprietà OID** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la classe [**X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chiamando il costruttore che accetta un OID come parametro e quindi usare l'OID per i criteri certificato per elaborare i qualificatori che fanno parte delle informazioni sui criteri nell'estensione Criteri certificato.\]
+\[La **proprietà OID** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chiamando il costruttore che accetta un OID come parametro e quindi usare L'OID per i criteri certificato per elaborare i qualificatori che fanno parte delle informazioni sui criteri nell'estensione Criteri di certificato.\]
 
-La **proprietà OID** recupera l'ID oggetto del qualificatore. Si tratta della proprietà predefinita.
+La **proprietà OID** recupera l'ID oggetto del qualificatore. Questa è la proprietà predefinita.
 
 ## <a name="syntax"></a>Sintassi
 

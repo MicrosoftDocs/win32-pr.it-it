@@ -1,7 +1,7 @@
 ---
 description: Specifica un file da firmare.
 ms.assetid: 5b45d855-ede8-43eb-9253-e3fe1716686b
-title: Struttura SIGNER_FILE_INFO
+title: SIGNER_FILE_INFO struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 71e7c360d0034d9435386cf31579299c6d047131
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0bb1bce810d87d70e05284e3d13942c5e2e49d07bd2d829c3839f793ae6a061
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898827"
 ---
-# <a name="signer_file_info-structure"></a>Struttura di \_ informazioni sul file del firmatario \_
+# <a name="signer_file_info-structure"></a>Struttura SIGNER \_ FILE \_ INFO
 
-La struttura di **\_ \_ informazioni sul file del firmatario** specifica un file da firmare.
+La **struttura SIGNER \_ FILE \_ INFO** specifica un file da firmare.
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -48,21 +48,21 @@ typedef struct _SIGNER_FILE_INFO {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **pwszFileName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che contiene il nome del file da firmare.
+Puntatore a una stringa con terminazione Null che contiene il nome del file da firmare.
 
 </dd> <dt>
 
 **hFile**
 </dt> <dd>
 
-Handle aperto per il file specificato dal membro **pwszFileName** . Se questo membro contiene un handle valido, questo handle viene utilizzato per accedere al file. Questo membro può essere impostato su **null**.
+Handle aperto per il file specificato dal **membro pwszFileName.** Se questo membro contiene un handle valido, questo handle viene usato per accedere al file. Questo membro può essere impostato su **NULL.**
 
 </dd> </dl>
 
@@ -72,8 +72,8 @@ Handle aperto per il file specificato dal membro **pwszFileName** . Se questo me
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ Handle aperto per il file specificato dal membro **pwszFileName** . Se questo me
 
 <dl> <dt>
 
-[**informazioni sul soggetto del FIRMATARIo \_ \_**](signer-subject-info.md)
+[**INFORMAZIONI SUL SOGGETTO \_ DEL \_ FIRMATARIO**](signer-subject-info.md)
 </dt> </dl>
 
  

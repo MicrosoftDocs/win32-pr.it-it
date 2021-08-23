@@ -1,30 +1,30 @@
 ---
 title: Enumerazione delle risorse di rete
-description: Nell'esempio seguente viene illustrata una funzione definita dall'applicazione (EnumerateFunc) che enumera tutte le risorse in una rete.
+description: L'esempio seguente illustra una funzione definita dall'applicazione (EnumerateFunc) che enumera tutte le risorse in una rete.
 ms.assetid: f5872ee7-483d-406a-b7d8-4ce93613fd29
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2313e679746b09603d2514b418abf281fefa9bc5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 633a8b03dd538853a0b339ee727c18fb05b2231b7690d89dea0a83264f7faf8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053330"
 ---
 # <a name="enumerating-network-resources"></a>Enumerazione delle risorse di rete
 
-Nell'esempio seguente viene illustrata una funzione definita dall'applicazione (EnumerateFunc) che enumera tutte le risorse in una rete. Nell'esempio viene specificato **null** per il puntatore alla struttura [**netresource**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) perché quando [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) riceve un puntatore **null** , viene recuperato un handle alla radice della rete.
+L'esempio seguente illustra una funzione definita dall'applicazione (EnumerateFunc) che enumera tutte le risorse in una rete. L'esempio specifica **NULL** per il puntatore alla struttura [**NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) perché quando [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) riceve un **puntatore NULL,** recupera un handle per la radice della rete.
 
-Per iniziare l'enumerazione di una risorsa del contenitore di rete, l'applicazione deve eseguire i passaggi seguenti:
+Per iniziare l'enumerazione di una risorsa contenitore di rete, l'applicazione deve seguire questa procedura:
 
-1.  Passare l'indirizzo di una struttura [**netresource**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) che rappresenta la risorsa alla funzione [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) .
-2.  Allocare un buffer sufficientemente grande da mantenere la matrice di strutture [**netresource**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) restituite dalla funzione [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) , più le stringhe a cui puntano i membri.
-3.  Passare l'handle di risorsa restituito da [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) alla funzione [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) .
-4.  Chiudere l'handle di risorsa quando non è più necessario chiamando la funzione [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum) .
+1.  Passare l'indirizzo di [**una struttura NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) che rappresenta la risorsa alla [**funzione WNetOpenEnum.**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma)
+2.  Allocare un buffer sufficientemente grande da contenere la matrice di strutture [**NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) restituita dalla [**funzione WNetEnumResource,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) oltre alle stringhe a cui puntano i membri.
+3.  Passare l'handle di risorsa [**restituito da WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) alla [**funzione WNetEnumResource.**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea)
+4.  Chiudere l'handle di risorsa quando non è più necessario chiamando la [**funzione WNetCloseEnum.**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum)
 
-È possibile continuare a enumerare una risorsa contenitore descritta nella matrice di strutture [**netresource**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) recuperate da [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea). Se il membro **dwUsage** della struttura **netresource** è uguale al contenitore RESOURCEUSAGE \_ , passare l'indirizzo della struttura alla funzione [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) per aprire il contenitore e continuare l'enumerazione. Se **dwUsage** è uguale a RESOURCEUSAGE \_ connettibile, l'applicazione può passare l'indirizzo della struttura alla funzione [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) o alla funzione [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a) per connettersi alla risorsa.
+È possibile continuare a enumerare una risorsa contenitore descritta nella matrice di strutture [**NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) recuperate [**da WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea). Se il membro **dwUsage** della struttura **NETRESOURCE** è uguale a RESOURCEUSAGE CONTAINER, passare l'indirizzo della struttura alla funzione \_ [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) per aprire il contenitore e continuare l'enumerazione. Se **dwUsage** è uguale a RESOURCEUSAGE CONNECTABLE, l'applicazione può passare l'indirizzo della struttura alla funzione \_ [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) o alla funzione [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a) per connettersi alla risorsa.
 
-Il primo esempio chiama la funzione [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) per iniziare l'enumerazione. Nell'esempio viene chiamata la funzione [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) per allocare il buffer richiesto, quindi viene chiamata la funzione [**ZeroMemory**](/previous-versions/windows/desktop/legacy/aa366920(v=vs.85)) per impostare il contenuto del buffer su zero. Quindi, l'esempio chiama la funzione [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) per continuare l'enumerazione. Ogni volta che il membro **dwUsage** di una struttura [**netresource**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) recuperata da **WNETENUMRESOURCE** è uguale al \_ contenitore RESOURCEUSAGE, la funzione EnumerateFunc chiama se stessa in modo ricorsivo e usa un puntatore a tale struttura nella chiamata a **WNetOpenEnum**. Infine, l'esempio chiama la funzione [**GlobalFree**](/windows/desktop/api/winbase/nf-winbase-globalfree) per liberare la memoria allocata e [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum) per terminare l'enumerazione.
+Prima di tutto, [**l'esempio chiama la funzione WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma) per iniziare l'enumerazione. L'esempio chiama la [**funzione GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) per allocare il buffer richiesto e quindi chiama la [**funzione ZeroMemory**](/previous-versions/windows/desktop/legacy/aa366920(v=vs.85)) per impostare il contenuto del buffer su zero. L'esempio chiama quindi la [**funzione WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) per continuare l'enumerazione. Ogni volta che il membro **dwUsage** di una struttura [**NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) recuperata da **WNetEnumResource** è uguale a RESOURCEUSAGE CONTAINER, la funzione EnumerateFunc chiama se stessa in modo ricorsivo e usa un puntatore a tale struttura nella chiamata \_ a **WNetOpenEnum**. Infine, l'esempio chiama [**la funzione GlobalFree**](/windows/desktop/api/winbase/nf-winbase-globalfree) per liberare la memoria allocata e [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum) per terminare l'enumerazione.
 
 
 ```C++
@@ -232,8 +232,8 @@ void DisplayStruct(int i, LPNETRESOURCE lpnrLocal)
 
 
 
-Per ulteriori informazioni sull'utilizzo di un gestore degli errori definito dall'applicazione, vedere [recupero degli errori di rete](retrieving-network-errors.md).
+Per altre informazioni sull'uso di un gestore degli errori definito dall'applicazione, vedere [Recupero di errori di rete](retrieving-network-errors.md).
 
- 
+ 
 
- 
+ 

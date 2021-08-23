@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come creare una Jump List personalizzata per un'applicazione, tra cui l'aggiunta di una categoria e attività personalizzate.
+description: Illustra come creare una categoria personalizzata Jump List un'applicazione, inclusa l'aggiunta di una categoria e di attività personalizzate.
 title: Esempio di jump list personalizzata
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c20592e508a24985e0f8283993482c7bd61af232
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3eb6f5db0b9576f360abcbaacb8a8a5a291d3dbe07754281954ea585d3ebe965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968830"
 ---
 # <a name="custom-jump-list-sample"></a>Esempio di jump list personalizzata
 
-Viene illustrato come creare una Jump List personalizzata per un'applicazione, tra cui l'aggiunta di una categoria e attività personalizzate.
+Illustra come creare una categoria personalizzata Jump List un'applicazione, inclusa l'aggiunta di una categoria e di attività personalizzate.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -43,35 +43,35 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio CustomJumpList](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/CustomJumpList) |
+| GitHub  | [Esempio di CustomJumpList](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/CustomJumpList) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 Per compilare l'esempio dal prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **CustomJumpList** .
+1.  Aprire la finestra del prompt dei comandi e passare alla directory **del progetto CustomJumpList.**
 2.  Immettere `msbuild CustomJumpListSample.sln`.
 
-Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
+Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Esplora risorse e passare alla directory del progetto **CustomJumpList** .
-2.  Fare doppio clic sull'icona per il file CustomJumpListSample. sln per aprire il progetto in Visual Studio.
-3.  Scegliere **Compila soluzione** dal menu **Compila** .
+1.  Aprire Windows Explorer e passare alla directory **del progetto CustomJumpList.**
+2.  Fare doppio clic sull'icona per il file CustomJumpListSample.sln per aprire il progetto in Visual Studio.
+3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Passare alla directory contenente il nuovo eseguibile, utilizzando il prompt dei comandi o Esplora risorse.
-2.  Nella riga di comando, immettere `CustomJumpListSample.exe` . In alternativa, in Esplora risorse fare doppio clic sull'icona per CustomJumpListSample.exe.
-3.  Questo esempio deve essere eseguito come amministratore alla prima esecuzione, in modo da poter installare le registrazioni dei tipi di file necessarie. Dopo la registrazione dei tipi di file, l'esempio può essere eseguito come utente standard.
-4.  Scegliere Opzioni dal menu nell'applicazione di esempio per vedere come influiscono sulla Jump List dell'applicazione nella barra delle applicazioni.
+1.  Passare alla directory che contiene il nuovo eseguibile, usando il prompt dei comandi o Windows Explorer.
+2.  Nella riga di comando immettere `CustomJumpListSample.exe` . In alternativa, in Windows Explorer fare doppio clic sull'icona per CustomJumpListSample.exe.
+3.  Questo esempio deve essere eseguito come amministratore la prima volta che viene eseguito in modo da poter installare le registrazioni dei tipi di file necessarie. Dopo aver registrato i tipi di file, l'esempio può essere eseguito come utente standard.
+4.  Selezionare le opzioni dal menu nell'applicazione di esempio per vedere in che modo influiscono sul Jump List dell'applicazione nella barra delle applicazioni.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[ID modello utente applicazione (AppUserModelIDs)](appids.md)
+[ID modello utente applicazione (AppUserModelID)](appids.md)
 </dt> </dl>
 
  

@@ -1,24 +1,24 @@
 ---
-title: Attributo ID (percorso) (la)
-description: Attributo ID (percorso) (la)
+title: Attributo ID (Path)(VML)
+description: Attributo ID (Path)(VML)
 ms.assetid: f0f3a526-d0e1-46f8-a85c-b99d27c3fdeb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfbd5d8d9acdcafaf015354dc4c99f3703034e89
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d29fe87845616b0e93e47458cd5c96f25733edd3aea7b09af6088b057d8ce0a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104117775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118845919"
 ---
-# <a name="id-attribute-pathvml"></a>Attributo ID (percorso) (la)
+# <a name="id-attribute-pathvml"></a>Attributo ID (Path)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Nome che fornisce un identificatore univoco per un percorso. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,25 +26,25 @@ Nome che fornisce un identificatore univoco per un percorso. Proprietà di lettu
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* ID = " *Expression* " >
+<v: *element* id=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . ID = "*Expression*"
+*element* .id="*expression*"
 
-*espressione* = *elemento*. ID
+*expression* = *id dell'elemento*
 
 **Osservazioni:**
 
-Usare **ID** per fare riferimento a un percorso specifico. Una volta creato un percorso e dato un ID, è possibile utilizzare il nome dell'ID quando si desidera modificare il percorso.
+Usare **l'ID** per fare riferimento a un percorso specifico. Dopo aver creato un percorso e aver assegnato un ID, è possibile usare il nome ID quando si vuole modificare il percorso.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La forma ha un ID di percorso denominato "percorso".
+La forma ha un ID tracciato denominato "myPath".
 
 
 ```HTML
@@ -58,6 +58,6 @@ La forma ha un ID di percorso denominato "percorso".
 
 
 
- 
+ 
 
- 
+ 

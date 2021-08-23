@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDiskReadVerificationFailureException'
+description: Altre informazioni sul costruttore EsentDiskReadVerificationFailureException
 title: Costruttore EsentDiskReadVerificationFailureException
 TOCTitle: 'EsentDiskReadVerificationFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDiskReadVerificationFailureException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118779408"
 
 Inizializza una nuova istanza della classe EsentDiskReadVerificationFailureException.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

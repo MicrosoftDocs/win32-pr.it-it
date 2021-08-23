@@ -1,5 +1,5 @@
 ---
-title: Metodo Stop (funzionalità dell Windows legacy)
+title: Metodo Stop (funzionalità dell'Windows legacy)
 description: Metodo Stop
 ms.assetid: 68372f72-db9c-447c-a3e4-488940c730d7
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118745963"
 ---
-# <a name="stop-method-legacy-windows-environment-features"></a>Metodo Stop (funzionalità dell Windows legacy)
+# <a name="stop-method-legacy-windows-environment-features"></a>Metodo Stop (funzionalità dell'Windows legacy)
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 

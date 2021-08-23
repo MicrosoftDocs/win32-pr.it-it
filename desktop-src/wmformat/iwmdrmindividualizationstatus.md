@@ -25,7 +25,7 @@ ms.locfileid: "118701470"
 
 **L'interfaccia IWMDRMIndividualizationStatus** consente il recupero di informazioni di stato avanzate sullo stato di avanzamento della individualizzazione.
 
-Questa interfaccia viene recapitata con gli eventi MEWMDRMIndividualizationProgress. Molti eventi di questo tipo vengono generati tra una chiamata [**a IWMDRMSecurity::P erformSecurityUpdate**](iwmdrmsecurity-performsecurityupdate.md) e il completamento del processo di individualizzazione, segnalato dalla generazione di un evento **MEWMDRMIndividualizationCompleted.**
+Questa interfaccia viene recapitata con gli eventi MEWMDRMIndividualizationProgress. Molti eventi di questo tipo vengono generati tra una chiamata a [**IWMDRMSecurity::P erformSecurityUpdate**](iwmdrmsecurity-performsecurityupdate.md) e il completamento del processo di individualizzazione, segnalato dalla generazione di un evento **MEWMDRMIndividualizationCompleted.**
 
 Per recuperare un puntatore a un'istanza **dell'interfaccia IWMDRMIndividualizationStatus,** è innanzitutto necessario chiamare il metodo **IMFMediaEvent::GetValue** dell'evento di stato. Il valore recuperato dall'evento è un puntatore all'interfaccia **IUnknown** dell'oggetto che implementa **l'interfaccia IWMDRMIndividualizationStatus.**
 

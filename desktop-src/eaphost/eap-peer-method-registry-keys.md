@@ -1,62 +1,62 @@
 ---
-title: Valori del registro di sistema del metodo peer EAP
-description: Informazioni sui valori specifici del registro di sistema necessari per i metodi peer EAP. Vedere un elenco di valori del registro di sistema e visualizzare altre risorse disponibili.
+title: Valori del Registro di sistema del metodo peer EAP
+description: Informazioni sui valori del Registro di sistema specifici necessari per i metodi peer EAP. Visualizzare un elenco di valori del Registro di sistema e visualizzare altre risorse disponibili.
 ms.assetid: 16bdd6bf-9eab-40a8-a2d3-8942d2f5f37a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 796260a25f824ffe52ada7cdfadfb7a25f05d491
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b2a1092b743ae0568093a563e318c3a3d24761bb634fdcfb2780c6c681fe7322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104339286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984251"
 ---
-# <a name="eap-peer-method-registry-values"></a>Valori del registro di sistema del metodo peer EAP
+# <a name="eap-peer-method-registry-values"></a>Valori del Registro di sistema del metodo peer EAP
 
-Per i metodi peer EAP sono necessari valori specifici del registro di sistema.
+Per i metodi peer EAP sono necessari valori specifici del Registro di sistema.
 
-## <a name="eap-peer-method-dll-paths"></a>Percorsi DLL del metodo peer EAP
+## <a name="eap-peer-method-dll-paths"></a>Percorsi DLL dei metodi peer EAP
 
-Il percorso seguente specifica il percorso del registro di sistema per le DLL regolari del metodo peer EAP.
+Il percorso seguente specifica il percorso del Registro di sistema per le NORMALI DLL dei metodi peer EAP.
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ metodi \\ *&lt; autorizzati &gt;* \\ * &lt; EapTypeId&gt;***
+**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Un percorso di registrazione per l'installazione di un metodo EAP, ad esempio, dato un **autorizzazione** di "311" (che indica che "Microsoft" è l'autore) e un **EapTypeId** di "40", viene visualizzato come segue.
+Ad esempio, un percorso di registrazione dell'installazione del metodo EAP dato un **AuthorId** "311" (che indica che "Microsoft" è l'autore) e un **EapTypeId** di "40", viene visualizzato come segue.
 
-**HKLM \\ System \\ CCS \\ Services \\ ( \\ metodi EAPHost) \\ 311 \\ 40**
+**HKLM \\ System \\ CCS Services \\ \\ Eaphost \\ Methods \\ 311 \\ 40**
 
-Il percorso seguente specifica il percorso del registro di sistema per le dll del metodo EAP estese.
+Il percorso seguente specifica il percorso del Registro di sistema per le DLL estese dei metodi EAP.
 
 > [!Note]  
 > Le DLL dei metodi EAP estesi sono supportate in Windows Vista con Service Pack 1 (SP1) o versioni successive.
 
- 
+ 
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ Methods \\ *&lt; autorizzato &gt;* \\ 254 \\ *&lt; VendorID &gt;* \\ * &lt; EapTypeId&gt;***
+**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; VendorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Un percorso di registrazione per l'installazione di un metodo EAP, ad esempio, dato un oggetto **autorizzato** di "311" (che indica che "Microsoft" è l'autore), un **VendorId** di "311" e un **EapTypeId** di "40" viene visualizzato come segue.
+Ad esempio, un percorso di registrazione di installazione del metodo EAP dato un **AuthorId** di "311" (che indica che "Microsoft" è l'autore), un **VendorId** di "311" e un **EapTypeId** di "40", viene visualizzato come segue.
 
-**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ methods \\ 311 \\ 254 \\ 311 \\ 40**
+**HKLM \\ System \\ CCS Services \\ \\ Eaphost \\ Methods \\ 311 \\ 254 \\ 311 \\ 40**
 
 > [!Note]  
-> Per ulteriori informazioni sull'allocazione dei tipi di metodo EAP, vedere la sezione 6,2 della [specifica RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
+> Per altre informazioni sull'allocazione dei tipi di metodo EAP, vedere la sezione 6.2 di [RFC 3748.](https://go.microsoft.com/fwlink/p/?linkid=84016)
 
- 
+ 
 
-## <a name="registry-values"></a>Valori del registro di sistema
+## <a name="registry-values"></a>Valori del Registro di sistema
 
-Sono necessari i seguenti valori del registro di sistema del peer EAPHost.
+I valori del Registro di sistema del metodo peer EAPHost seguenti sono obbligatori.
 
 -   [PeerDllPath](#peerdllpath)
 -   [PeerFriendlyName](#peerfriendlyname)
 -   [PeerInvokePasswordDialog](#peerinvokepassworddialog)
 -   [PeerInvokeUsernameDialog](#peerinvokeusernamedialog)
 
-Sono consigliati i seguenti valori del registro di sistema del peer di AP.
+Sono consigliati i valori del Registro di sistema del metodo peer AP seguenti.
 
 -   [Proprietà](#properties)
 
-I valori del registro di sistema del peer AP seguenti sono facoltativi.
+I valori del Registro di sistema del metodo peer AP seguenti sono facoltativi.
 
 -   [PeerConfigUIPath](#peerconfiguipath)
 -   [PeerIdentityPath](#peeridentitypath)
@@ -69,12 +69,12 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 
 | Constant Value | PeerConfigUIPath                                                                                                                                       |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ Espandi \_ SZ                                                                                                                                        |
-| Descrizione    | Percorso della DLL che contiene l'implementazione della finestra di dialogo di configurazione dell'utente. Ad esempio,% SystemRoot% \\ system32 \\ &lt; nome \_ di \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                                                                        |
+| Descrizione    | Percorso della DLL che contiene l'implementazione della finestra di dialogo di configurazione utente. Ad esempio, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ### <a name="peerdllpath"></a>PeerDllPath
 
@@ -82,12 +82,12 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 
 | Constant Value | PeerDllPath                                                                                     |
 |----------------|-------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ Espandi \_ SZ                                                                                 |
-| Descrizione    | Percorso della DLL del metodo EAP. Ad esempio,% SystemRoot% \\ system32 \\ &lt; nome \_ di \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                 |
+| Descrizione    | Percorso della DLL del metodo EAP. Ad esempio, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ### <a name="peerfriendlyname"></a>PeerFriendlyName
 
@@ -96,11 +96,11 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 | Constant Value | PeerFriendlyName                                                     |
 |----------------|----------------------------------------------------------------------|
 | Tipo           | REG \_ SZ                                                              |
-| Descrizione    | Stringa che contiene il nome descrittivo (visualizzazione) per il metodo EAP. |
+| Descrizione    | Stringa contenente il nome descrittivo (visualizzato) per il metodo EAP. |
 
 
 
- 
+ 
 
 ### <a name="peeridentitypath"></a>PeerIdentityPath
 
@@ -108,12 +108,12 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 
 | Constant Value | PeerIdentityPath                                                                                                                                     |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ Espandi \_ SZ                                                                                                                                      |
-| Descrizione    | Percorso della DLL che contiene l'implementazione delle funzioni di identità utente. Ad esempio,% SystemRoot% \\ system32 \\ &lt; nome \_ di \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                                                                      |
+| Descrizione    | Percorso della DLL che contiene l'implementazione delle funzioni di identità utente. Ad esempio, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ### <a name="peerinteractiveuipath"></a>PeerInteractiveUIPath
 
@@ -121,12 +121,12 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 
 | Constant Value | PeerInteractiveUIPath                                                                                                                                                                                                      |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ Espandi \_ SZ                                                                                                                                                                                                            |
-| Descrizione    | Percorso della DLL che contiene l'implementazione dell'interfaccia utente interattiva utilizzata per ottenere informazioni sull'utente durante l'esecuzione del metodo EAP. Ad esempio,% SystemRoot% \\ system32 \\ &lt; nome \_ di \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                                                                                                                                            |
+| Descrizione    | Percorso della DLL che contiene l'implementazione dell'interfaccia utente interattiva utilizzata per ottenere informazioni utente durante l'esecuzione del metodo EAP. Ad esempio, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ### <a name="peerinvokepassworddialog"></a>PeerInvokePasswordDialog
 
@@ -135,11 +135,11 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 | Constant Value | PeerInvokePasswordDialog                                                                                                                                                                                                                         |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                                                                                                                                                                                                       |
-| Descrizione    | 1-per ottenere le credenziali tramite la finestra di dialogo Generic EAPHost password and Domain. 0: per utilizzare una finestra di dialogo personalizzata. Se viene utilizzata la finestra di dialogo generica, le credenziali vengono impostate dal metodo [**EapPeerSetCredentials**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) . |
+| Descrizione    | 1- per ottenere le credenziali usando la finestra di dialogo generica password e dominio EAPHost. 0 : per usare una finestra di dialogo personalizzata. Se viene usata la finestra di dialogo generica, le credenziali vengono impostate dal [**metodo EapPeerSetCredentials.**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) |
 
 
 
- 
+ 
 
 ### <a name="peerinvokeusernamedialog"></a>PeerInvokeUsernameDialog
 
@@ -164,17 +164,17 @@ I valori del registro di sistema del peer AP seguenti sono facoltativi.
 <tr class="even">
 <td>Descrizione</td>
 <td><ul>
-<li>1-per ottenere le credenziali utilizzando la finestra di dialogo nome utente generico EAPHost.</li>
-<li>0: per utilizzare una finestra di dialogo personalizzata.</li>
+<li>1 : per ottenere le credenziali usando la finestra di dialogo generica nome utente EAPHost.</li>
+<li>0- per usare una finestra di dialogo personalizzata.</li>
 </ul>
-Se viene utilizzata la finestra di dialogo generica, le credenziali vengono impostate dal metodo [<strong>EapPeerSetCredentials</strong>] (/Previous-Versions/Windows/Desktop/API/eapmethodpeerapis/NF-eapmethodpeerapis-eappeersetcredentials).</td>
+Se viene usata la finestra di dialogo generica, le credenziali vengono impostate dal metodo [<strong>EapPeerSetCredentials</strong>](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials).</td>
 </tr>
 </tbody>
 </table>
 
 
 
- 
+ 
 
 ### <a name="peerrequireconfigui"></a>PeerRequireConfigUI
 
@@ -183,11 +183,11 @@ Se viene utilizzata la finestra di dialogo generica, le credenziali vengono impo
 | Constant Value | PeerRequireConfigUI                                                                        |
 |----------------|--------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                                                 |
-| Descrizione    | 0 se viene implementata una finestra di dialogo dell'interfaccia utente di configurazione per questo metodo; 1 in caso contrario. |
+| Descrizione    | 0 se viene implementata una finestra di dialogo dell'interfaccia utente di configurazione per questo metodo. 1 in caso non lo sia. |
 
 
 
- 
+ 
 
 ### <a name="properties"></a>Proprietà
 
@@ -196,20 +196,20 @@ Se viene utilizzata la finestra di dialogo generica, le credenziali vengono impo
 | Constant Value | Proprietà                                                                                                                                                  |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                                                                                                                  |
-| Descrizione    | I bit in DWORD sono impostati per indicare il supporto per la proprietà. Per un elenco dei valori supportati, vedere [**proprietà del metodo EAP**](eap-method-properties.md). |
+| Descrizione    | I bit nel valore DWORD vengono impostati per indicare il supporto per la proprietà . Per un elenco dei valori supportati, vedere [**Proprietà del metodo EAP**](eap-method-properties.md). |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Chiavi del registro di sistema EAP Authenticator](eap-authenticator-method-registry-keys.md)
+[Chiavi del Registro Authenticator metodo EAP](eap-authenticator-method-registry-keys.md)
 </dt> <dt>
 
-[Configurazione del registro di sistema per i tipi EAP espansi](registry-keys-for-eap-methods.md)
+[Configurazione del Registro di sistema per i tipi EAP espansi](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
 [Uso di EAPHost](using-eap-host.md)
@@ -218,6 +218,6 @@ Se viene utilizzata la finestra di dialogo generica, le credenziali vengono impo
 [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

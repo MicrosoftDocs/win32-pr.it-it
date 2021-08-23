@@ -1,7 +1,7 @@
 ---
-description: Recupera un valore che indica se l'oggetto ConfirmationType passato a questo metodo è stato impostato su questo IContextNode.
+description: Recupera un valore che indica se l'elemento ConfirmationType passato a questo metodo è stato impostato su questo IContextNode.
 ms.assetid: 4a96bc46-b627-4784-ad1d-1079f49592e5
-title: 'Metodo IContextNode:: IsValid (IACom. h)'
+title: Metodo IContextNode::IsConfirmed (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 300e0126b4a1ff55d372ff31deebde0eab686645
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e378aaf344e177514115c82b1179f8d1ebe25faefa0d5d840d5a0af62ff1c07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967360"
 ---
-# <a name="icontextnodeisconfirmed-method"></a>Metodo IContextNode:: IsValid
+# <a name="icontextnodeisconfirmed-method"></a>Metodo IContextNode::IsConfirmed
 
-Recupera un valore che indica se l'oggetto ConfirmationType passato a questo metodo è stato impostato su questo IContextNode.
+Recupera un valore che indica se l'elemento ConfirmationType passato a questo metodo è stato impostato su questo IContextNode.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,27 +40,27 @@ HRESULT IsConfirmed(
 
 <dl> <dt>
 
-*confirmedType* \[ in\]
+*confirmedType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di conferma sottoposto a test.
+Tipo di conferma di cui eseguire il test.
 
 </dd> <dt>
 
-*pfTypeConfirmed* \[ out\]
+*pfTypeConfirmed* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se il tipo passato in confirmedType è stato impostato su questo oggetto [**IContextNode**](icontextnode.md) ; in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se il tipo passato in confirmedType è stato impostato su questo [**oggetto IContextNode;**](icontextnode.md) in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore viene impostato dal metodo [**IContextNode:: Confirm**](icontextnode-confirm.md) .
+Questo valore viene impostato dal [**metodo IContextNode::Confirm.**](icontextnode-confirm.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,9 +68,9 @@ Questo valore viene impostato dal metodo [**IContextNode:: Confirm**](icontextno
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,10 +82,10 @@ Questo valore viene impostato dal metodo [**IContextNode:: Confirm**](icontextno
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: Confirm**](icontextnode-confirm.md)
+[**IContextNode::Confirm**](icontextnode-confirm.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

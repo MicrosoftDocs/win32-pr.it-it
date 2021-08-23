@@ -4,18 +4,18 @@ description: Mixed-Mode ridimensionamento DPI e API che sono in grado di riconos
 ms.assetid: 44AC0B29-3283-4801-90F5-3E78CCD87B9F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f5b16e4c438cfe1f0d04e61524899e213b25ea
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: fb32de01390f2794b5714bdca5465a5997121c270ded9c170e0b0171fd972542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036224"
 ---
 # <a name="mixed-mode-dpi-scaling-and-dpi-aware-apis"></a>Mixed-Mode ridimensionamento DPI e API che sono in grado di riconoscere DPI
 
 ## <a name="sub-process-dpi-awareness-support"></a>Sub-Process supporto per la consapevolezza DPI
 
-[**SetThreadDpiAwarenessContext consente**](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext) l'uso di diverse modalità di ridimensionamento DPI all'interno di un singolo processo. Prima dell'Aggiornamento dell'anniversario di Windows 10, il riconoscimento DPI di una finestra era associato alla modalità di riconoscimento DPI a livello di processo (riconoscimento DPI non noto, riconoscimento DPI di sistema o riconoscimento DPI Per-Monitor). Ma ora, con **SetThreadDpiAwarenessContext,** le finestre di primo livello possono avere una modalità di riconoscimento DPI diversa da quella della modalità di riconoscimento DPI a livello di processo. Ciò ha effetto anche sulle finestre figlio, in quanto avranno sempre la stessa modalità di riconoscimento DPI della finestra padre.
+[**SetThreadDpiAwarenessContext consente**](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext) l'uso di diverse modalità di ridimensionamento DPI all'interno di un singolo processo. Prima dell'aggiornamento dell'anniversario di Windows 10, la consapevolezza DPI di una finestra era associata alla modalità di riconoscimento DPI a livello di processo (riconoscimento DPI non noto, riconoscimento DPI di sistema o riconoscimento DPI Per-Monitor). Ma ora, con **SetThreadDpiAwarenessContext,** le finestre di primo livello possono avere una modalità di riconoscimento DPI diversa da quella della modalità di riconoscimento DPI a livello di processo. Ciò ha effetto anche sulle finestre figlio, in quanto avranno sempre la stessa modalità di riconoscimento DPI della finestra padre.
 
 L'uso **di SetThreadDpiAwarenessContext** consente agli sviluppatori di decidere dove concentrare le attività di sviluppo quando definiscono il comportamento specifico di DPI per le applicazioni desktop. Ad esempio, la finestra principale principale di un'applicazione può essere ridimensionata in base al monitoraggio, mentre le finestre secondarie di primo livello possono essere ridimensionate tramite il ridimensionamento delle bitmap da parte del sistema operativo.
 

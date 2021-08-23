@@ -1,38 +1,38 @@
 ---
-title: Panoramica dell'API di automazione di Windows
-description: Questa sezione fornisce una panoramica di alto livello dell'API di automazione di Microsoft Windows 3,0, che include il Active Accessibility Microsoft legacy e l'implementazione di Windows della specifica di automazione interfaccia utente Microsoft.
+title: Windows Panoramica dell'API di Automazione
+description: Questa sezione offre una panoramica generale dell'API di Automazione di Microsoft Windows 3.0, che include il Microsoft Active Accessibility legacy e l'implementazione Windows della specifica Microsoft Automazione interfaccia utente.
 ms.assetid: 11c99444-eb5a-4656-ae9d-e4d4bdbcabfc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67282c8b0287fa02f89e0ad1b46045a8bbdaa865
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 45f39c1a9169d7d7a9358eaf0b947c885159adc0103eb8f6a76b39b029649cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823398"
 ---
-# <a name="windows-automation-api-overview"></a>Panoramica dell'API di automazione di Windows
+# <a name="windows-automation-api-overview"></a>Windows Panoramica dell'API di Automazione
 
-Questa sezione fornisce una panoramica di alto livello dell'API di automazione di Microsoft Windows 3,0, che include il Active Accessibility Microsoft legacy e l'implementazione di Windows della specifica di automazione interfaccia utente Microsoft. La panoramica evidenzia le analogie e le differenze tra Active Accessibility Microsoft e l'automazione dell'interfaccia utente, descrive i componenti e le funzionalità che consentono alle due tecnologie di interagire e fornisce linee guida per la scelta della tecnologia da implementare.
+Questa sezione offre una panoramica generale dell'API di Automazione di Microsoft Windows 3.0, che include il Microsoft Active Accessibility legacy e l'implementazione Windows della specifica Microsoft Automazione interfaccia utente. La panoramica evidenzia le analogie e le differenze tra Microsoft Active Accessibility e Automazione interfaccia utente, descrive i componenti e le funzionalità che consentono l'interazione tra le due tecnologie e fornisce linee guida per la scelta della tecnologia da implementare.
 
 Questa sezione include gli argomenti seguenti:
 
--   [Confronto tra Active Accessibility Microsoft e automazione interfaccia utente](microsoft-active-accessibility-and-ui-automation-compared.md)
+-   [Microsoft Active Accessibility e Automazione interfaccia utente confronto](microsoft-active-accessibility-and-ui-automation-compared.md)
 -   [Architettura e interoperabilità](architecture-and-interoperability.md)
--   [Specifica di automazione interfaccia utente](ui-automation-specification.md)
--   [interoperabilità a 32 bit e a 64 bit](32-bit-and-64-bit-interoperability.md)
+-   [Automazione interfaccia utente specifica](ui-automation-specification.md)
+-   [Interoperabilità a 32 bit e a 64 bit](32-bit-and-64-bit-interoperability.md)
 -   [Procedure consigliate per l'accessibilità](accessibility-best-practices.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Specifica di automazione interfaccia utente](./ui-automation-specification.md)
+[Automazione interfaccia utente specifica](./ui-automation-specification.md)
 </dt> <dt>
 
-[Promessa community di automazione interfaccia utente](./uiauto-specandcommunitypromise.md)
+[Automazione interfaccia utente Community Promise](./uiauto-specandcommunitypromise.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

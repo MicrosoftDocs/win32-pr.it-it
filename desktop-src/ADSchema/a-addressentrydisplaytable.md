@@ -32,7 +32,7 @@ Tabella di visualizzazione per una voce di indirizzo.
 | CN                | Address-Entry-Display-Table                           |
 | Ldap-Display-Name | addressEntryDisplayTable                              |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.324                                |
 | System-Id-Guid    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
@@ -58,7 +58,7 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -79,7 +79,7 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -100,7 +100,7 @@ Tabella di visualizzazione per una voce di indirizzo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| A valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |

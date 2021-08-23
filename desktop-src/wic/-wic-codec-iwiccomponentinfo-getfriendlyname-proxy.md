@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetFriendlyName.
 ms.assetid: 8ac8f954-c2b9-47a2-88fe-b56710b5630c
-title: Funzione IWICComponentInfo_GetFriendlyName_Proxy
+title: IWICComponentInfo_GetFriendlyName_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 667571169818169cb7c7ea5a1f4d3d7eb6e1635e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5af41c00945550fc9e833b9324e22f522aa7a5e73dacd109d76159d5dd0173db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965250"
 ---
-# <a name="iwiccomponentinfo_getfriendlyname_proxy-function"></a>IWICComponentInfo \_ funzione proxy GetFriendlyName \_
+# <a name="iwiccomponentinfo_getfriendlyname_proxy-function"></a>Funzione proxy IWICComponentInfo \_ GetFriendlyName \_
 
-Funzione proxy per il metodo [**GetFriendlyName**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getfriendlyname) .
+Funzione proxy per il [**metodo GetFriendlyName.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getfriendlyname)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ HRESULT IWICComponentInfo_GetFriendlyName_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Puntatore a questo oggetto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Puntatore a [**questo oggetto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchFriendlyName* \[ in\]
+*cchFriendlyName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni del buffer *wzFriendlyName* .
+Dimensioni del buffer *wzFriendlyName.*
 
 </dd> <dt>
 
-*wzFriendlyName* \[ in uscita\]
+*wzFriendlyName* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntatore che riceve il nome descrittivo del componente.
 
@@ -72,10 +72,10 @@ La stringa restituita è specifica delle impostazioni locali, 1033 per impostazi
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntatore che riceve la lunghezza effettiva del nome descrittivo del componente.
 
@@ -83,9 +83,9 @@ Puntatore che riceve la lunghezza effettiva del nome descrittivo del componente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -95,9 +95,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

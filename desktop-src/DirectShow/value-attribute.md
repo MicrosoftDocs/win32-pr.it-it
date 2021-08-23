@@ -4,29 +4,29 @@ ms.assetid: 0fa4de60-5da5-42dd-b841-0cb9e3ba2c8f
 title: Attributo value
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40372c67a4907680053f7d1eaad7e54b4a7a760d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0b1a5ae5f6cff1ad291af5c88f1f503bc7c68e77ad1e1db642a3a8aa51434d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072101"
 ---
 # <a name="value-attribute"></a>Attributo value
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `value` attributo specifica il valore di un parametro.
+`value`L'attributo specifica il valore di un parametro.
 
 ## <a name="possible-values"></a>Valori possibili
 
-I valori possibili dipendono dal parametro.
+I valori possibili dipendono dal parametro .
 
 ## <a name="applies-to"></a>Si applica a
 
-[**at**](at-element.md), [**Linear**](linear-element.md), [**param**](param-element.md)
+[**at**](at-element.md), [**linear**](linear-element.md), [**param**](param-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

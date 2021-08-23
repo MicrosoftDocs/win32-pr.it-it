@@ -4,29 +4,29 @@ ms.assetid: 4a5f6938-7b33-4350-b8fa-cf78c5c44bcd
 title: Visualizzazione delle pagine delle proprietà di un filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0845a12b73363dc6ed93654439fd31826bf9cfc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0f0e29654983ee51b98666411a11f7130eb896c380ec754b5576862c313dcbc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016138"
 ---
 # <a name="displaying-a-filters-property-pages"></a>Visualizzazione delle pagine delle proprietà di un filtro
 
-Una pagina delle proprietà è un modo per un filtro per supportare le proprietà che possono essere impostate dall'utente. Questo articolo descrive come visualizzare le pagine delle proprietà di un filtro in un'applicazione. Per ulteriori informazioni sulle pagine delle proprietà, vedere la documentazione di Platform SDK.
+Una pagina delle proprietà è un modo per un filtro per supportare le proprietà che l'utente può impostare. Questo articolo descrive come visualizzare le pagine delle proprietà di un filtro in un'applicazione. Per altre informazioni sulle pagine delle proprietà, vedere la documentazione di Platform SDK.
 
 > [!Note]  
-> Anche se molti dei filtri forniti con le pagine delle proprietà supportano DirectShow, sono destinati a scopi di debug e non sono consigliati per l'uso da parte dell'applicazione. Nella maggior parte dei casi, la funzionalità equivalente viene fornita tramite un'interfaccia personalizzata sul filtro. Un'applicazione deve controllare questi filtri a livello di codice, anziché esporre le pagine delle proprietà agli utenti.
+> Sebbene molti dei filtri forniti con le pagine DirectShow supportino le pagine delle proprietà, sono destinati al debug e non sono consigliati per l'uso dell'applicazione. Nella maggior parte dei casi la funzionalità equivalente viene fornita tramite un'interfaccia personalizzata nel filtro. Un'applicazione deve controllare questi filtri a livello di codice, anziché esporre le pagine delle proprietà agli utenti.
 
  
 
-I filtri con le pagine delle proprietà espongono l'interfaccia **ISpecifyPropertyPages** . Per determinare se un filtro definisce una pagina delle proprietà, eseguire una query sul filtro per questa interfaccia utilizzando **QueryInterface**.
+I filtri con pagine delle proprietà **espongono l'interfaccia ISpecifyPropertyPages.** Per determinare se un filtro definisce una pagina delle proprietà, eseguire una query sul filtro per questa interfaccia usando **QueryInterface**.
 
-Se è stata creata direttamente un'istanza di un filtro (chiamando **CoCreateInstance**), si dispone già di un puntatore al filtro. In caso contrario, è possibile enumerare i filtri nel grafico usando il metodo [**IFilterGraph:: EnumFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) . Per informazioni dettagliate, vedere [enumerazione di oggetti in un grafico a filtro](enumerating-objects-in-a-filter-graph.md).
+Se è stata creata direttamente un'istanza di un filtro (chiamando **CoCreateInstance**), è già presente un puntatore al filtro. In caso contrario, è possibile enumerare i filtri nel grafico usando il [**metodo IFilterGraph::EnumFilters.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) Per informazioni dettagliate, vedere [Enumerazione di oggetti in un filtro Graph](enumerating-objects-in-a-filter-graph.md).
 
-Una volta ottenuto il puntatore all'interfaccia **ISpecifyPropertyPages** , recuperare le pagine delle proprietà del filtro chiamando il metodo **ISpecifyPropertyPages:: GetPages** . Questo metodo compila una matrice conteggiata di identificatori univoci globali (GUID) con l'identificatore di classe (CLSID) di ogni pagina delle proprietà. Una matrice conteggiata è definita da una struttura **CAUUID** , che è necessario allocare ma che non è necessario inizializzare. Il metodo **GetPages** alloca la matrice, che è contenuta nel membro **pElems** della struttura **CAUUID** . Al termine, liberare la matrice chiamando la funzione **CoTaskMemFree** .
+Dopo aver creato il puntatore a interfaccia **ISpecifyPropertyPages,** recuperare le pagine delle proprietà del filtro chiamando il metodo **ISpecifyPropertyPages::GetPages.** Questo metodo riempie una matrice conteggiata di identificatori univoci globali (GUID) con l'identificatore di classe (CLSID) di ogni pagina delle proprietà. Una matrice conteggiata viene definita da una **struttura CAUUID,** che è necessario allocare ma non è necessario inizializzare. Il **metodo GetPages** alloca la matrice, contenuta nel membro **pElems** della **struttura CAUUID.** Al termine, liberare la matrice chiamando la **funzione CoTaskMemFree.**
 
-La funzione **OleCreatePropertyFrame** fornisce un modo semplice per visualizzare le pagine delle proprietà all'interno di una finestra di dialogo modale.
+La **funzione OleCreatePropertyFrame** consente di visualizzare in modo semplice le pagine delle proprietà all'interno di una finestra di dialogo modale.
 
 
 ```C++

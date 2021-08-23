@@ -1,11 +1,11 @@
 ---
-title: Metodo Network. getProxyBypassForLocal
+title: Metodo Network.getProxyBypassForLocal
 description: Il metodo getProxyBypassForLocal recupera un valore che indica se il server proxy viene ignorato se il server di origine si trova in una rete locale.
 ms.assetid: e5217d56-da22-4424-94b0-400369410b47
 keywords:
 - Metodo getProxyBypassForLocal Windows Media Player
-- Metodo getProxyBypassForLocal Media Player Windows, classe di rete
-- Classe di rete Media Player Windows, metodo getProxyBypassForLocal
+- Metodo getProxyBypassForLocal Windows Media Player , classe Network
+- Classe di Windows Media Player, metodo getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60b9248cd5a893496c2de88c5a5370dfb7bf82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51f22eb6187938318d95b9dd7a473b58e216315210d4af41c29b352b2654cbf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054559"
 ---
-# <a name="networkgetproxybypassforlocal-method"></a>Metodo Network. getProxyBypassForLocal
+# <a name="networkgetproxybypassforlocal-method"></a>Metodo Network.getProxyBypassForLocal
 
-Il metodo **getProxyBypassForLocal** recupera un valore che indica se il server proxy viene ignorato se il server di origine si trova in una rete locale.
+Il **metodo getProxyBypassForLocal** recupera un valore che indica se il server proxy viene ignorato se il server di origine si trova in una rete locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ bRetVal = Network.getProxyBypassForLocal(
 
 <dl> <dt>
 
-*protocollo* \[ di in\]
+*protocollo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **valore booleano** che indica se il server proxy viene ignorato. Il valore restituito è significativo solo quando **getProxySettings** restituisce un valore pari a due (usare impostazioni manuali).
+Questo metodo restituisce un **valore booleano** che indica se il server proxy viene ignorato. Il valore restituito è significativo solo quando **getProxySettings** restituisce un valore di due (usare le impostazioni manuali).
 
 ## <a name="remarks"></a>Commenti
 
@@ -61,7 +61,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **getProxyBypassForLocal** per visualizzare se Windows Media Player è impostato in modo da ignorare il server proxy per gli indirizzi locali. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **getProxyBypassForLocal per visualizzare** se Windows Media Player è impostato in modo da ignorare il server proxy per gli indirizzi locali. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -93,7 +93,7 @@ document.write("The current MMS proxy bypass for local value: " + proxyBypassFor
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -102,10 +102,10 @@ document.write("The current MMS proxy bypass for local value: " + proxyBypassFor
 
 <dl> <dt>
 
-[**Oggetto di rete**](network-object.md)
+[**Oggetto Di rete**](network-object.md)
 </dt> <dt>
 
-[**Rete. getProxySettings**](network-getproxysettings.md)
+[**Network.getProxySettings**](network-getproxysettings.md)
 </dt> </dl>
 
  

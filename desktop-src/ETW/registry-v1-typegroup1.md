@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab0326f92d1b084f471f3dc1b57322f69aa645fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80b6bfbac1afbe3797bd76dfa49dee6666a339eb46c336d3e6c68f6b236c0848
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069771"
 ---
 # <a name="registry_v1_typegroup1-class"></a>Classe TypeGroup1 del Registro di \_ \_ sistema V1
 
@@ -46,7 +46,7 @@ class Registry_V1_TypeGroup1 : Registry
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ TypeGroup1 Registry V1** ha questi tipi di membri:
+La **classe \_ \_ TypeGroup1 Registry V1** include i tipi di membri seguenti:
 
 -   [Proprietà](#properties)
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo MatchesPartial determina se il tipo di supporto corrisponde a un tipo di supporto parzialmente specificato.
+description: Il metodo MatchesPartial determina se questo tipo di supporto corrisponde a un tipo di supporto parzialmente specificato.
 ms.assetid: 62d531f3-5aa2-4af2-b951-584a49a849fc
-title: Metodo CMediaType. MatchesPartial (mtype. h)
+title: Metodo CMediaType.MatchesPartial (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f4d2d4232b64857ca209e6b43cd7081a42495fee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6049ad4526d8776b25e81fe4d75b727196f8fa1251a1959662cca71b161fbc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073975"
 ---
-# <a name="cmediatypematchespartial-method"></a>CMediaType. MatchesPartial, metodo
+# <a name="cmediatypematchespartial-method"></a>Metodo CMediaType.MatchesPartial
 
-Il `MatchesPartial` metodo determina se il tipo di supporto corrisponde a un tipo di supporto parzialmente specificato.
+Il metodo determina se questo tipo di supporto corrisponde a un tipo di supporto `MatchesPartial` parzialmente specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ BOOL MatchesPartial(
 *ppartial* 
 </dt> <dd>
 
-Puntatore al tipo di supporto da confrontare.
+Puntatore al tipo di supporto di cui trovare la corrispondenza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se i tipi di supporto corrispondono. In caso contrario, restituisce **false**.
+Restituisce **TRUE se** i tipi di supporti corrispondono. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di supporto specificato da *ppartial* può avere un valore GUID \_ null per il tipo principale, il sottotipo o il tipo di formato. I membri con \_ valori null GUID non vengono sottoposti a test. (In effetti, GUID \_ NULL funge da carattere jolly). I membri con valori diversi da GUID \_ null devono corrispondere per il tipo di supporto di cui trovare la corrispondenza.
+Il tipo di supporto specificato *da ppartial* può avere un valore GUID NULL per il tipo principale, il \_ sottotipo o il tipo di formato. I membri con valori \_ NULL GUID non vengono testati. (In effetti, GUID \_ NULL funge da carattere jolly. I membri con valori diversi da GUID \_ NULL devono corrispondere perché il tipo di supporto corrisponda.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Il tipo di supporto specificato da *ppartial* può avere un valore GUID \_ null 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

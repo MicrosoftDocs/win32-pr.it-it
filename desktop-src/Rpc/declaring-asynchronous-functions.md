@@ -1,21 +1,21 @@
 ---
 title: Dichiarazione di funzioni asincrone
-description: Per dichiarare una funzione RPC come asincrona, dichiarare prima la funzione come parte di una definizione di interfaccia in un file IDL (Interface Definition Language).
+description: Per dichiarare una funzione RPC come asincrona, dichiarare prima di tutto la funzione come parte di una definizione di interfaccia in un file IDL (Interface Definition Language).
 ms.assetid: 8fc627ce-ccf1-40d9-a540-14461c7fc5e1
 keywords:
-- RPC (Remote Procedure Call), attività, dichiarazione di funzioni asincrone
+- Chiamata di procedura remota RPC, attività, dichiarazione di funzioni asincrone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fafc1208d53763835d72f527723d00816f38db9
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 1fc0978156fe91291b91937082690258550b7f02f1d7b6e5334dd0741a9f0211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103963531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931049"
 ---
 # <a name="declaring-asynchronous-functions"></a>Dichiarazione di funzioni asincrone
 
-Per dichiarare una funzione RPC come asincrona, dichiarare prima la funzione come parte di una definizione di interfaccia in un file IDL (Interface Definition Language). L'utilizzo di funzioni RPC asincrone non richiede alcuna modifica speciale al file IDL. Nell'esempio seguente viene illustrato un file IDL per un'applicazione che utilizza una funzione asincrona.
+Per dichiarare una funzione RPC come asincrona, dichiarare prima di tutto la funzione come parte di una definizione di interfaccia in un file IDL (Interface Definition Language). L'uso di funzioni RPC asincrone non richiede modifiche speciali al file IDL. L'esempio seguente illustra un file IDL per un'applicazione che usa una funzione asincrona.
 
 ``` syntax
 [ 
@@ -40,7 +40,7 @@ interface AsyncRPC
 }
 ```
 
-Per tutte le funzioni RPC asincrone utilizzate dall'applicazione, sarà necessario modificare la dichiarazione delle funzioni asincrone all'interno del file ACF dell'applicazione. Applicare l'attributo [**\[ Async \]**](../midl/async.md) a ogni nome di funzione asincrona, come illustrato nell'esempio seguente:
+Per tutte le funzioni RPC asincrone utilizzate dall'applicazione, è necessario modificare la dichiarazione delle funzioni asincrone all'interno del file ACF dell'applicazione. Applicare [**\[ l'attributo async \]**](../midl/async.md) a ogni nome di funzione asincrona, come illustrato nell'esempio seguente:
 
 ``` syntax
 interface AsyncRPC
@@ -49,8 +49,8 @@ interface AsyncRPC
 }
 ```
 
-Quando si applica l'attributo **\[ Async \]** nel file ACF, il compilatore MIDL genera automaticamente un parametro di handle asincrono aggiuntivo nel codice stub.
+Quando si applica **\[ l'attributo \] asincrono** nel file ACF, il compilatore MIDL genera automaticamente un parametro handle asincrono aggiuntivo nel codice stub.
 
- 
+ 
 
- 
+ 

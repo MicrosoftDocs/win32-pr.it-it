@@ -1,7 +1,7 @@
 ---
-description: Annulla la registrazione di una classe di finestra registrata da LinkWindow \_ registerClass.
+description: Annulla la registrazione di una classe finestra registrata da LinkWindow \_ RegisterClass.
 ms.assetid: 9e5c4326-efd1-43ca-a087-a436fe3f9bbd
-title: Funzione LinkWindow_UnregisterClass
+title: LinkWindow_UnregisterClass funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 604cea299156444a1fedf34a46c50b5b397a65da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05a50d5f3af72c31ee04a1a9e8264acb22327c38f79f765ce2ad7a740086747e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968940"
 ---
-# <a name="linkwindow_unregisterclass-function"></a>LinkWindow \_ UnregisterClass-funzione
+# <a name="linkwindow_unregisterclass-function"></a>Funzione LinkWindow \_ UnregisterClass
 
 \[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows.\]
 
-Annulla la registrazione di una classe di finestra registrata da [**LinkWindow \_ registerClass**](linkwindow-registerclass.md).
+Annulla la registrazione di una classe finestra registrata da [**LinkWindow \_ RegisterClass**](linkwindow-registerclass.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Restituisce **true** se l'operazione è stata eseguita correttamente. In caso contrario, **false** .
+Restituisce **TRUE se** l'operazione ha avuto esito positivo. **FALSE in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione non dispone di un file di intestazione o di libreria associato, quindi deve essere chiamata in base al valore ordinale. Chiamare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome della dll Shell32.dll per ottenere un handle del modulo. Chiamare quindi [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con tale handle di modulo e il numero ordinale 259 per usare questa funzione.
+Questa funzione non ha un file di intestazione o di libreria associato, quindi deve essere chiamata dal valore ordinale. Chiamare [**LoadLibrary con**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) il nome della DLL Shell32.dll per ottenere un handle del modulo. Chiamare quindi [**GetProcAddress con**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) l'handle del modulo e il numero ordinale 259 per usare questa funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Questa funzione non dispone di un file di intestazione o di libreria associato, 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

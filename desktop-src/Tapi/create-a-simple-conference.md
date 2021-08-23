@@ -1,24 +1,24 @@
 ---
-description: Nell'esempio di codice riportato di seguito viene illustrata la creazione di una semplice chiamata di conferenza. Per informazioni sulle videoconferenze multimediali IP multicast, vedere About Rendezvous Telephony conference.
+description: L'esempio di codice seguente illustra la creazione di una semplice conferenza telefonica. Per informazioni sulle videoconferenze multimediali multicast IP, vedere Informazioni su Rendezvous IP Telephony Conferencing.
 ms.assetid: fb55853d-b882-41c8-99e6-bfa897b2dabf
 title: Creare una conferenza semplice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa0bfd8fede9fa61aedb6b630a2451803e2257d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61ca284e0629fa4318765b3ae12a63a9319beb585baf41a8dd636b1023c16329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118867513"
 ---
 # <a name="create-a-simple-conference"></a>Creare una conferenza semplice
 
-Nell'esempio di codice riportato di seguito viene illustrata la creazione di una semplice chiamata di conferenza. Per informazioni sulle videoconferenze multimediali IP multicast, vedere [About Rendezvous Telephony conference](about-rendezvous-ip-telephony-conferencing.md).
+L'esempio di codice seguente illustra la creazione di una semplice conferenza telefonica. Per informazioni sulle videoconferenze multimediali multicast IP, vedere [Informazioni su Rendezvous IP Telephony Conferencing](about-rendezvous-ip-telephony-conferencing.md).
 
-Prima di usare questo esempio di codice, è necessario che sia in corso una chiamata ed è necessario eseguire le operazioni in [effettuare una](make-a-call.md) chiamata o [ricevere una chiamata](receive-a-call.md) .
+Prima di usare questo esempio di codice, è necessario che sia [in](make-a-call.md) corso una chiamata ed è necessario eseguire le operazioni in Effettuare una chiamata o Ricevere una chiamata. [](receive-a-call.md)
 
 > [!Note]  
-> Questo esempio non include il controllo degli errori e le versioni appropriate per il codice di produzione.
+> In questo esempio non sono disponibili il controllo degli errori e le versioni appropriate per il codice di produzione.
 
  
 

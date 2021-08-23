@@ -1,19 +1,19 @@
 ---
-description: La tabella ODBCAttribute contiene informazioni sugli attributi di driver e convertitori Open Database Connectivity (ODBC).
+description: La tabella ODBCAttribute contiene informazioni sugli attributi dei driver Open Database Connectivity (ODBC) e dei traduttori.
 ms.assetid: 82fd83d4-22dd-4641-807b-d2b263918e4c
 title: Tabella ODBCAttribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7e76a52dd63bdc8eb969324f7891e7359be7caf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e31e67cde1625812d1c5b8af7dc3bd24347891d3a769e24deeb02db7cc44396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943179"
 ---
 # <a name="odbcattribute-table"></a>Tabella ODBCAttribute
 
-La tabella ODBCAttribute contiene informazioni sugli attributi di driver e convertitori Open Database Connectivity (ODBC).
+La tabella ODBCAttribute contiene informazioni sugli attributi dei driver Open Database Connectivity (ODBC) e dei traduttori.
 
 La tabella ODBCAttribute include le colonne seguenti.
 
@@ -33,7 +33,7 @@ La tabella ODBCAttribute include le colonne seguenti.
 
 <dl> <dt>
 
-<span id="Driver_"></span><span id="driver_"></span><span id="DRIVER_"></span>Driver\_
+<span id="Driver_"></span><span id="driver_"></span><span id="DRIVER_"></span>autista\_
 </dt> <dd>
 
 Nome del token interno per un driver. Chiave primaria per la tabella. Chiave esterna nella [tabella ODBCDriver](odbcdriver-table.md).
@@ -56,7 +56,7 @@ Valore stringa localizzabile per l'attributo.
 
 ## <a name="remarks"></a>Commenti
 
-Le azioni [InstallODBC](installodbc-action.md) e [RemoveODBC](removeodbc-action.md) nelle [*tabelle di sequenza*](s-gly.md) elaborano le informazioni contenute in questa tabella. Per informazioni sull'utilizzo di *tabelle di sequenza*, vedere [utilizzo di una tabella di sequenza](using-a-sequence-table.md).
+Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Uso di una tabella di sequenza](using-a-sequence-table.md).
 
 ## <a name="validation"></a>Convalida
 

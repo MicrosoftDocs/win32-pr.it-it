@@ -1,11 +1,11 @@
 ---
 title: Product-Code attributo
-description: Questo attributo contiene un identificatore univoco per un'applicazione per una determinata versione del prodotto, rappresentato come GUID stringa, ad esempio \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
+description: Questo attributo contiene un identificatore univoco per un'applicazione per una particolare versione del prodotto, rappresentato come GUID di stringa, ad esempio \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
 ms.assetid: 1fb50a4c-1a6a-4231-a6b2-92f6bc4a1ead
 ms.tgt_platform: multiple
 keywords:
 - Product-Code schema AD dell'attributo
-- Schema AD dell'attributo productCode
+- Attributo productCode Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118681749"
 ---
 # <a name="product-code-attribute"></a>Product-Code attributo
 
-Questo attributo contiene un identificatore univoco per un'applicazione per una determinata versione del prodotto, rappresentato come GUID di stringa, ad esempio " {12345678-1234-1234-1234-123456789012} ". Le lettere usate in questo GUID devono essere maiuscole. Questo ID deve variare per versioni e lingue diverse.
+Questo attributo contiene un identificatore univoco per un'applicazione per una particolare versione del prodotto, rappresentato come GUID di stringa, ad esempio " {12345678-1234-1234-1234-123456789012} ". Le lettere usate in questo GUID devono essere maiuscole. Questo ID deve variare per le diverse versioni e lingue.
 
 
 
@@ -32,7 +32,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | CN                | Product-Code                                          |
 | Ldap-Display-Name | productCode                                           |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.818                                |
 | System-Id-Guid    | d9e18317-8939-11d1-aebc-0000f80367c1                  |
@@ -66,7 +66,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi usate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi usate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| A valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
@@ -142,7 +142,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| A valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
@@ -163,7 +163,7 @@ Questo attributo contiene un identificatore univoco per un'applicazione per una 
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| A valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |

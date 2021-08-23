@@ -1,11 +1,11 @@
 ---
-title: Metodo Network. getProxyExceptionList
-description: Il metodo getProxyExceptionList recupera l'elenco di eccezioni del proxy.
+title: Metodo Network.getProxyExceptionList
+description: Il metodo getProxyExceptionList recupera l'elenco di eccezioni proxy.
 ms.assetid: f81d8c0f-cc75-470c-9c24-ceaf8a4b6f97
 keywords:
 - Metodo getProxyExceptionList Windows Media Player
-- Metodo getProxyExceptionList Media Player Windows, classe di rete
-- Classe di rete Media Player Windows, metodo getProxyExceptionList
+- Metodo getProxyExceptionList Windows Media Player , classe Network
+- Classe di rete Windows Media Player, metodo getProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34ace9bd569c1cc53a8f3d522703aee6154e68a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2becc6c74a5ada575f1bfa85473bd3204bf53a4a739640149cffdd57e3facf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054574"
 ---
-# <a name="networkgetproxyexceptionlist-method"></a>Metodo Network. getProxyExceptionList
+# <a name="networkgetproxyexceptionlist-method"></a>Metodo Network.getProxyExceptionList
 
-Il metodo **getProxyExceptionList** recupera l'elenco di eccezioni del proxy.
+Il **metodo getProxyExceptionList** recupera l'elenco di eccezioni proxy.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,22 +42,22 @@ strRetVal = Network.getProxyExceptionList(
 
 <dl> <dt>
 
-*protocollo* \[ di in\]
+*protocollo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce una **stringa** che specifica un elenco delimitato da punti e virgola di host per i quali il server proxy viene ignorato. Il valore restituito è significativo solo quando **getProxySettings** restituisce un valore pari a due (usare impostazioni manuali).
+Questo metodo restituisce un **valore String** che specifica un elenco delimitato da punto e virgola degli host per i quali il server proxy viene ignorato. Il valore restituito è significativo solo quando **getProxySettings** restituisce un valore di due (usare le impostazioni manuali).
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco di computer, domini e/o indirizzi che ignoreranno il server proxy quando la parte host dell'URL di destinazione corrisponde a una voce nell'elenco.
+Si tratta di un elenco di computer, domini e/o indirizzi che ignorano il server proxy quando la parte host dell'URL di destinazione corrisponde a una voce dell'elenco.
 
-Il \* carattere può essere usato come carattere jolly per elencare le voci. Ad esempio, \* . com corrisponde a tutti gli host nel dominio com mentre 67. \* corrisponderebbe a tutti gli host della classe 67 una subnet.
+Il \* carattere può essere usato come carattere jolly per elencare le voci. Ad esempio, .com corrisponderebbe a tutti gli host nel dominio com, mentre 67. corrisponderebbe a tutti gli host nella \* subnet A di classe \* 67.
 
 Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in esecuzione nel computer locale o nella Intranet.
 
@@ -65,7 +65,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **getProxyExceptionList** per visualizzare gli elenchi di proxy bypassati per i protocolli MMS e http. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **getProxyExceptionList** per visualizzare gli elenchi di proxy ignorati per i protocolli MMS e HTTP. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -97,7 +97,7 @@ document.write("The current MMS proxy exception list: " + proxyExceptionListMMS)
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -106,10 +106,10 @@ document.write("The current MMS proxy exception list: " + proxyExceptionListMMS)
 
 <dl> <dt>
 
-[**Oggetto di rete**](network-object.md)
+[**Oggetto Di rete**](network-object.md)
 </dt> <dt>
 
-[**Rete. getProxySettings**](network-getproxysettings.md)
+[**Network.getProxySettings**](network-getproxysettings.md)
 </dt> </dl>
 
  

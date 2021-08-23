@@ -1,38 +1,38 @@
 ---
-description: Viene illustrato come utilizzare Microsoft Media Foundation per decodificare l'audio da un file multimediale.
+description: Illustra come usare le Microsoft Media Foundation decodificare l'audio da un file multimediale.
 ms.assetid: 29822e6b-8598-4133-b181-7fb0854553b7
 title: Esempio di clip audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0e4a3e515d08e2cafd2ab2ba451a528f3d5677
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f180dfb7c4b0e456f45169d36fdfb1f77701b0e82250690706208a715fdd3ce5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035489"
 ---
 # <a name="audio-clip-sample"></a>Esempio di clip audio
 
-Viene illustrato come utilizzare Microsoft Media Foundation per decodificare l'audio da un file multimediale.
+Illustra come usare le Microsoft Media Foundation decodificare l'audio da un file multimediale.
 
-L'applicazione di esempio clip audio legge i dati audio da un file multimediale e scrive l'audio non compresso in un file WAVE.
+L'applicazione di esempio Audio Clip legge i dati audio da un file multimediale e scrive l'audio non compresso in un file WAVE.
 
-## <a name="apis-demonstrated"></a>API illustrate
+## <a name="apis-demonstrated"></a>DIMOSTRAZIONE DELLE API
 
-In questo esempio vengono illustrate le interfacce Media Foundation seguenti:
+In questo esempio vengono illustrate le Media Foundation seguenti:
 
 -   [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)
 
 ## <a name="usage"></a>Utilizzo
 
-Questo esempio è un'applicazione della riga di comando. USA gli argomenti della riga di comando seguenti:
+Questo esempio è un'applicazione della riga di comando. Usa gli argomenti della riga di comando seguenti:
 
 ``` syntax
 audioclip.exe inputfile outputfile.wav
 ```
 
--   InputFile: nome di un file che contiene un flusso audio.
--   outputfile. wav: nome del file WAVE da scrivere.
+-   inputfile: nome di un file che contiene un flusso audio.
+-   outputfile.wav: nome del file WAVE da scrivere.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +48,7 @@ audioclip.exe inputfile outputfile.wav
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/AudioClip).
+Questo esempio è disponibile nel [repository github Windows esempi classici.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/AudioClip)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -60,7 +60,7 @@ Questo esempio è disponibile nel [repository GitHub degli esempi classici di Wi
 [Lettore di origine](source-reader.md)
 </dt> <dt>
 
-[Esercitazione: decodifica audio](tutorial--decoding-audio.md)
+[Esercitazione: Decodifica dell'audio](tutorial--decoding-audio.md)
 </dt> </dl>
 
  

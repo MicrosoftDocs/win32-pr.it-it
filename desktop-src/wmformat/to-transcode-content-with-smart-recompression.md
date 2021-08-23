@@ -6,14 +6,14 @@ keywords:
 - Windows Media Format SDK, transcoding del contenuto
 - Windows Media Format SDK, ricompressione intelligente
 - Windows MEDIA Format SDK, recompression
-- Windows Media Format SDK, Windows codec Audio multimediale
+- Windows Media Format SDK,Windows Codec Audio multimediali
 - Advanced Systems Format (ASF), transcodificare il contenuto
 - ASF (Advanced Systems Format), transcodificare il contenuto
 - Advanced Systems Format (ASF), ricompressione intelligente
 - ASF (Advanced Systems Format), ricompressione intelligente
 - Advanced Systems Format (ASF), recompression
 - ASF (Advanced Systems Format), recompression
-- Advanced Systems Format (ASF), Windows codec Audio multimediale
+- Advanced Systems Format (ASF), Windows codec audio multimediali
 - ASF (Advanced Systems Format), Windows codec audio multimediali
 - transcoding di contenuto
 - ricompressione intelligente
@@ -31,7 +31,7 @@ ms.locfileid: "118699092"
 ---
 # <a name="to-transcode-content-with-smart-recompression"></a>Per transcodificare il contenuto con la ricompressione intelligente
 
-È possibile transcodificare il contenuto da una velocità in bit a un'altra usando Windows Media Format SDK. In genere, ciò comporta semplicemente la decodifica del contenuto e la codifica alla velocità in bit desiderata. Il Windows Media Audio 9 supporta la ricompressione intelligente, che consente la transcoduttura che ottiene una qualità migliore del normale.
+È possibile transcodificare il contenuto da una velocità in bit a un'altra usando Windows Media Format SDK. In genere, ciò comporta semplicemente la decodifica del contenuto e la codifica alla velocità in bit desiderata. Il codec Windows Media Audio 9 supporta la ricompressione intelligente, che consente la transcoduttura che ottiene una qualità migliore del normale.
 
 Per la ricompressione intelligente, il flusso audio originale deve essere codificato con il codec Windows Audio multimediale. Tutte le versioni del codec sono supportate, ma i codec audio specializzati (Windows Media Audio 9 Professional e Windows Media Audio 9 Voice) non lo sono. Se l'audio originale è stato codificato con il codec Windows Media Audio 9 Lossless, non è necessario usare la ricompressione intelligente, perché nessuna informazione è stata persa nella codifica originale.
 
@@ -39,7 +39,7 @@ Per usare la ricompressione intelligente, seguire questa procedura.
 
 1.  Configurare un oggetto lettore con il file di origine per la lettura. Per altre informazioni, vedere [Lettura di file ASF.](reading-asf-files.md)
 2.  Configurare un oggetto writer da usare per la transcoding del file. Impostare il nome del file per il nuovo file. Selezionare un profilo da usare per il nuovo file. Impostare il profilo selezionato nell'oggetto writer. Per altre informazioni, vedere [Scrittura di file ASF.](writing-asf-files.md)
-3.  Ottenere un puntatore [**all'interfaccia IWMProfile**](iwmprofile.md) dell'oggetto lettore chiamando **IWMReader::QueryInterface**.
+3.  Ottenere un puntatore [**all'interfaccia IWMProfile**](iwmprofile.md) dell'oggetto reader chiamando **IWMReader::QueryInterface**.
 4.  Recuperare [**l'interfaccia IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig) per il flusso audio da transcodificare chiamando [**IWMProfile::GetStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-getstream).
 5.  Ottenere [**l'interfaccia IWMMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops) per l'oggetto di configurazione del flusso chiamando **IWMStreamConfig::QueryInterface**.
 6.  Recuperare la [**struttura WM \_ MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) per il flusso effettuando due chiamate a [**IWMMediaProps::GetMediaType**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmmediaprops-getmediatype). Ottenere le dimensioni della struttura alla prima chiamata e allocare memoria per un buffer da passare alla seconda chiamata.

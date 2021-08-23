@@ -57,7 +57,7 @@ Questo attributo ha lo stesso scopo dell'attributo Non-Security-Member, ma con l
 | ID collegamento                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -78,7 +78,7 @@ Questo attributo ha lo stesso scopo dell'attributo Non-Security-Member, ma con l
 | ID collegamento                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -99,7 +99,7 @@ Questo attributo ha lo stesso scopo dell'attributo Non-Security-Member, ma con l
 | ID collegamento                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -120,7 +120,7 @@ Questo attributo ha lo stesso scopo dell'attributo Non-Security-Member, ma con l
 | ID collegamento                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
@@ -141,7 +141,7 @@ Questo attributo ha lo stesso scopo dell'attributo Non-Security-Member, ma con l
 | ID collegamento                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| A valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |

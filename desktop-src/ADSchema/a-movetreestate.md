@@ -29,10 +29,10 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Move-Tree-State                                       |
+| CN                | Stato dell'albero di spostamento                                       |
 | Ldap-Display-Name | moveTreeState                                         |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1305                               |
 | System-Id-Guid    | 1f2ac2c8-3b71-11d2-90cc-00c04fd91ab1                  |
@@ -67,7 +67,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -88,7 +88,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -109,7 +109,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -122,7 +122,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| A valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
@@ -130,7 +130,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| A valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
@@ -151,7 +151,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| A valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
@@ -172,7 +172,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| A valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
@@ -193,7 +193,7 @@ Questo attributo contiene informazioni sullo stato per un albero di directory da
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi usate in        | [**Oggetti persi e trovati**](c-lostandfound.md)<br/> |
+| Classi usate in        | [**Persi e trovati**](c-lostandfound.md)<br/> |
 
 
 

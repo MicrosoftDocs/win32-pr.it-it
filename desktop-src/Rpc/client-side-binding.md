@@ -1,23 +1,23 @@
 ---
-title: Binding lato client
+title: Associazione lato client
 description: Gli handle di associazione sono costituiti da una sequenza di protocollo, dal nome o dall'indirizzo di un computer host del programma server e da un endpoint del programma server. Pertanto, il programma client deve ottenere o fornire queste informazioni per creare un'associazione.
 ms.assetid: 0a3bed37-95c7-4f4a-9ed3-9d57f69db523
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f42ed5d2af21eff1091e0ba48718426bf17501e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fc566d408b27884cacefe07a181f26971352e1f29f9f47dfd41b3d56a8276515
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931724"
 ---
-# <a name="client-side-binding"></a>Binding lato client
+# <a name="client-side-binding"></a>Associazione lato client
 
 Gli handle di associazione sono costituiti da una sequenza di protocollo, dal nome o dall'indirizzo di un computer host del programma server e da un endpoint del programma server. Pertanto, il programma client deve ottenere o fornire queste informazioni per creare un'associazione.
 
-Se il programma client utilizza handle di associazione automatici, non è necessario scrivere codice sorgente speciale per creare o gestire l'associazione. Lo stub client chiama le funzioni RPC necessarie per stabilire e gestire l'associazione. È sufficiente specificare che il client usa handle di associazione automatici nel file di configurazione dell'applicazione (ACF) e progettare l'interfaccia di conseguenza. Per informazioni dettagliate, vedere [handle di binding automatici](automatic-binding-handles.md).
+Se il programma client usa handle di associazione automatici, non è necessario scrivere codice sorgente speciale per creare o gestire l'associazione. Lo stub client chiama le funzioni RPC necessarie per stabilire e gestire l'associazione. È necessario solo specificare che il client usa handle di associazione automatici nel file di configurazione dell'applicazione (ACF) e progettare l'interfaccia di conseguenza. Per informazioni dettagliate, vedere [Handle di associazione automatici.](automatic-binding-handles.md)
 
-Si supponga, ad esempio, di sviluppare un programma client che ha chiamato funzioni remote timestamp. In questo caso, gli stub eseguono tutto il lavoro e il client deve solo includere il file di intestazione generato auto. h per ottenere i prototipi di funzione per le procedure remote. Le chiamate dell'applicazione client alle procedure remote vengono visualizzate esattamente come se fossero chiamate a procedure locali, come illustrato nell'esempio seguente:
+Si supponga, ad esempio, di sviluppare un programma client che chiama funzioni remote di timestamp. In questo caso, gli stub eseranno tutto il lavoro e il client deve includere solo il file di intestazione generato Auto.h per ottenere i prototipi di funzione per le procedure remote. Le chiamate dell'applicazione client alle procedure remote vengono visualizzate come se fossero chiamate a procedure locali, come illustrato nell'esempio seguente:
 
 
 ```C++
@@ -51,23 +51,23 @@ void main(int argc, char **argv)
 
 
 
-Come si può notare nell'esempio precedente, l'applicazione client non deve effettuare chiamate esplicite alle funzioni della libreria run-time RPC. Lo stub client li gestisce.
+Come si può vedere nell'esempio precedente, l'applicazione client non deve eseguire chiamate esplicite alle funzioni della libreria di runtime RPC. Lo stub client li gestisce.
 
-Se l'applicazione utilizza handle di binding impliciti o espliciti, il client deve ottenere le informazioni di associazione e chiamare le funzioni RPC per creare gli handle. La posizione in cui il client ottiene le informazioni di binding dipende dai requisiti dell'applicazione. Il programma di installazione che installa l'applicazione client può archiviare le informazioni di binding nelle variabili di ambiente create. Consente inoltre di salvare le informazioni di binding in un file di configurazione specifico dell'applicazione. Poiché le informazioni di binding nelle variabili di ambiente o nei file di configurazione vengono in genere archiviate come stringhe, l'applicazione client dovrà convertire la stringa in un'associazione. Negli ambienti Windows XP/2000 è possibile recuperare le informazioni di binding da Active Directory. Per ulteriori informazioni, vedere [utilizzo delle associazioni di stringa](finding-server-host-systems.md).
+Se l'applicazione usa handle di associazione impliciti o espliciti, il client deve ottenere le informazioni di associazione e chiamare le funzioni RPC per creare gli handle. La posizione da cui il client ottiene le informazioni di associazione dipende dai requisiti dell'applicazione. Il programma di installazione che installa l'applicazione client può archiviare le informazioni di associazione nelle variabili di ambiente create. Può anche salvare le informazioni di associazione in un file di configurazione specifico dell'applicazione. Poiché le informazioni di associazione nelle variabili di ambiente o nei file di configurazione vengono in genere archiviate come stringhe, l'applicazione client dovrà convertire la stringa in un'associazione. In Windows ambienti XP/2000, le informazioni di associazione possono essere recuperate da Active Directory. Per altre informazioni, vedere [Uso delle associazioni di stringhe](finding-server-host-systems.md).
 
-La maggior parte delle reti ha un nome servizio. I programmi server possono annunciarsi nel database del servizio nome. Quando un client avvia l'esecuzione, può ottenere le informazioni di binding dal database del servizio dei nomi. Per informazioni dettagliate, vedere [importazione da nomi di database del servizio](finding-server-host-systems.md).
+La maggior parte delle reti dispone di un servizio dei nomi. I programmi server possono annunciarsi nel database del servizio nomi. Quando un client inizia l'esecuzione, può ottenere le informazioni di associazione dal database del servizio dei nomi. Per informazioni dettagliate, vedere [Importazione da database del servizio nomi](finding-server-host-systems.md).
 
-I passaggi necessari per l'associazione con handle impliciti ed espliciti vengono descritti negli argomenti seguenti:
+I passaggi necessari per l'associazione con handle impliciti ed espliciti sono illustrati negli argomenti seguenti:
 
 -   [Selezione di una sequenza di protocollo](selecting-a-protocol-sequence.md)
 -   [Ricerca di sistemi host server](finding-server-host-systems.md)
 -   [Ricerca di endpoint](finding-endpoints.md)
 
-Per una breve panoramica di questi argomenti, vedere [Connecting the client and the server](connecting-the-client-and-the-server.md).
+Per una breve panoramica di questi argomenti, vedere [Connessione del client e del server](connecting-the-client-and-the-server.md).
 
- 
+ 
 
- 
+ 
 
 
 

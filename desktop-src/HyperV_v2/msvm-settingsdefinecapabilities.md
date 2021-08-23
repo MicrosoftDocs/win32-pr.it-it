@@ -1,7 +1,7 @@
 ---
-description: Fornisce un collegamento tra l'istanza di funzionalità e le impostazioni minime, massime, incrementali e predefinite per una risorsa.
+description: Fornisce un collegamento tra l'istanza delle funzionalità e le impostazioni minime, massime, incrementali e predefinite per una risorsa.
 ms.assetid: 3B09ED8A-D4D0-41E2-B807-96AD8E990773
-title: Classe Msvm_SettingsDefineCapabilities
+title: Msvm_SettingsDefineCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7a312d3453b783c3d72f909ec6cb0b37d83feb9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7194632af7bc1154e6a9bbca1dd5ef0bcca0fb46ab13693d20160ea404068adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950465"
 ---
-# <a name="msvm_settingsdefinecapabilities-class"></a>\_Classe MSVM SettingsDefineCapabilities
+# <a name="msvm_settingsdefinecapabilities-class"></a>Classe Msvm \_ SettingsDefineCapabilities
 
-Fornisce un collegamento tra l'istanza di funzionalità e le impostazioni minime, massime, incrementali e predefinite per una risorsa.
+Fornisce un collegamento tra l'istanza delle funzionalità e le impostazioni minime, massime, incrementali e predefinite per una risorsa.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,26 +49,26 @@ class Msvm_SettingsDefineCapabilities : CIM_SettingsDefineCapabilities
 
 ## <a name="members"></a>Members
 
-La **classe \_ SettingsDefineCapabilities di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SettingsDefineCapabilities** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SettingsDefineCapabilities di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SettingsDefineCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **\_ funzionalità CIM**](/previous-versions//cc136806(v=vs.85))**
+Tipo di dati: **[ **funzionalità \_ CIM**](/previous-versions//cc136806(v=vs.85))**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Istanza delle funzionalità. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)).
+Istanza delle funzionalità. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities.**](/previous-versions//cc136913(v=vs.85))
 
 </dd> <dt>
 
@@ -81,27 +81,27 @@ Tipo di dati: **[ **CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Impostazione utilizzata per definire l'istanza delle funzionalità associate. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)).
+Impostazione utilizzata per definire l'istanza di funzionalità associata. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities.**](/previous-versions//cc136913(v=vs.85))
 
 </dd> <dt>
 
 **PropertyPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se le proprietà non null e non chiave dell'istanza dei dati di impostazione associata vengono gestite in modo indipendente o come set correlato. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)) ed è sempre impostata su 0 (Independent).
+Indica se le proprietà non null non chiave dell'istanza dei dati dell'impostazione associata vengono considerate in modo indipendente o come set correlato. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)) ed è sempre impostata su 0 (indipendente).
 
 </dd> <dt>
 
 **SupportStatement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -110,7 +110,7 @@ Tipo di accesso: sola lettura
 Identifica l'istruzione di supporto.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta Windows 10 versione 1703.
 
  
 
@@ -131,7 +131,7 @@ Identifica l'istruzione di supporto.
 </dt> <dd>
 
 > [!Note]  
-> Non è **prodotto** in Windows 10, versione 1703.
+> Was **NonProduction** in Windows 10, version 1703.
 
  
 
@@ -149,45 +149,45 @@ Identifica l'istruzione di supporto.
 **ValueRange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Qualsiasi altra semantica sull'interpretazione di tutte le proprietà non null e non chiave dei dati dell'impostazione. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)).
+Qualsiasi ulteriore semantica sull'interpretazione di tutte le proprietà non null e non chiave dei dati dell'impostazione. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities.**](/previous-versions//cc136913(v=vs.85))
 
 </dd> <dt>
 
-**ValueRole**
+**Ruolo valore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Qualsiasi altra semantica sull'interpretazione delle proprietà non null e non chiave dei dati dell'impostazione. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities**](/previous-versions//cc136913(v=vs.85)).
+Qualsiasi ulteriore semantica sull'interpretazione delle proprietà non null e non chiave dei dati dell'impostazione. Questa proprietà viene ereditata da [**CIM \_ SettingsDefineCapabilities.**](/previous-versions//cc136913(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori per le proprietà **ValueRole** e **ValueRange** vengono usati nelle coppie seguenti:
+I valori per le **proprietà ValueRole** **e ValueRange** vengono usati nelle coppie seguenti:
 
--   Punto/predefinito (0/0)
--   Minima/supportata (1/3)
--   Massimo/supportato (2/3)
+-   Point/Default (0/0)
+-   Valori minimi/supportati (1/3)
+-   Valori massimi/supportati (2/3)
 -   Incrementi/supportati (3/3).
 
-"Point" indica che ognuna delle proprietà dell'oggetto **PartComponent** rappresenta l'impostazione predefinita della piattaforma.
+"Punto" indica che ognuna delle proprietà nell'oggetto **PartComponent** rappresenta l'impostazione predefinita della piattaforma.
 
-"Minimums" e "Maximers" indicano che ognuna delle proprietà nell'oggetto **PartComponent** rappresenta i valori più piccoli e massimi possibili per queste proprietà supportate dalla piattaforma in base alla configurazione del computer corrente.
+"Minimums" e "Maximums" significano che ognuna delle proprietà nell'oggetto **PartComponent** rappresenta i valori più piccoli e più grandi possibili per queste proprietà supportate dalla piattaforma in base alla configurazione corrente del computer.
 
-"Incrementi" indica la granularità in cui è possibile aumentare o diminuire le impostazioni.
+"Incrementi" indica la granularità con cui è possibile aumentare o ridurre le impostazioni.
 
-L'accesso alla **classe \_ SettingsDefineCapabilities di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ SettingsDefineCapabilities** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -195,10 +195,10 @@ L'accesso alla **classe \_ SettingsDefineCapabilities di MSVM** potrebbe essere 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -207,13 +207,13 @@ L'accesso alla **classe \_ SettingsDefineCapabilities di MSVM** potrebbe essere 
 
 <dl> <dt>
 
-[**\_SETTINGSDEFINECAPABILITIES CIM**](cim-settingsdefinecapabilities.md)
+[**Impostazioni \_ CIMDefineCapabilities**](cim-settingsdefinecapabilities.md)
 </dt> <dt>
 
-[**\_SETTINGSDEFINECAPABILITIES CIM**](/previous-versions//cc136913(v=vs.85))
+[**Impostazioni \_ CIMDefineCapabilities**](/previous-versions//cc136913(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ SettingsDefineCapabilities (V1)**](/previous-versions/windows/desktop/virtual/msvm-settingsdefinecapabilities)
+[**Impostazioni \_ msvmDefineCapabilities (V1)**](/previous-versions/windows/desktop/virtual/msvm-settingsdefinecapabilities)
 </dt> <dt>
 
 [Classi di gestione delle risorse](resource-management-classes.md)

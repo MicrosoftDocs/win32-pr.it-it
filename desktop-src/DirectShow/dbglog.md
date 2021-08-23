@@ -1,7 +1,7 @@
 ---
-description: La macro DbgLog invia una stringa al percorso di output di debug, se la registrazione è abilitata per il tipo e il livello specificati. Questa macro viene ignorata nelle compilazioni al dettaglio.
+description: La macro DbgLog invia una stringa al percorso di output di debug, se la registrazione è abilitata per il tipo e il livello specificati. Questa macro viene ignorata nelle build di vendita al dettaglio.
 ms.assetid: 10e95d63-14f2-4fdb-a1b8-c5bf654f9819
-title: Macro DbgLog (Wxdebug. h)
+title: Macro DbgLog (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 1cd3f4e53c61fef1f030f654bbb0363cd7c97381
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 619a3cd277425b555bc64139c3e59c959cc6abd19d6da22c2129830c38496a24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953340"
 ---
-# <a name="dbglog-macro"></a>DbgLog (macro)
+# <a name="dbglog-macro"></a>Macro DbgLog
 
-La macro **DbgLog** invia una stringa al percorso di output di debug, se la registrazione è abilitata per il tipo e il livello specificati. Questa macro viene ignorata nelle compilazioni al dettaglio.
+La macro **DbgLog** invia una stringa al percorso di output di debug, se la registrazione è abilitata per il tipo e il livello specificati. Questa macro viene ignorata nelle build di vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Livello di registrazione per questo messaggio.
 *pFormat* 
 </dt> <dd>
 
-Stringa di formato in stile **printf** .
+Stringa di formato di tipo **printf.**
 
 </dd> <dt>
 
@@ -76,12 +76,12 @@ Questa macro non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Se la registrazione del debug per uno dei tipi di messaggio è impostata sul livello specificato o su un valore superiore, questa macro invia la stringa formattata al percorso di output di debug.
+Se la registrazione di debug per uno dei tipi di messaggio è impostata sul livello specificato o su un livello superiore, questa macro invia la stringa formattata al percorso di output del debug.
 
 La macro aggiunge automaticamente un carattere di nuova riga alla stringa di output.
 
 > [!Note]  
-> Un set aggiuntivo di parentesi deve racchiudere i parametri della macro:
+> Un set aggiuntivo di parentesi deve includere i parametri della macro:
 
  
 
@@ -98,7 +98,7 @@ DbgLog((LOG_TRACE, 3, TEXT("Connected input pin %d"), nPinNumber));
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl> |
 
 
 

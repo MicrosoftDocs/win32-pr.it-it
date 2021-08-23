@@ -1,4 +1,4 @@
-- name: Provider di base WMI
+- name: WMI Core Provider
   href: wmi-core-provider-.md
   items:
     - name: MSMonitorClass
@@ -59,7 +59,7 @@
     - name: WmiMonitorBrightnessMethods
       href: wmimonitorbrightnessmethods.md
       items:
-        - name: Metodi WmiMonitorBrightnessMethods
+        - name: Metodi di WmiMonitorBrightnessMethods
           href: wmimonitorbrightnessmethods-methods.md
           items:
             - name: Metodo WmiRevertToPolicyBrightness
@@ -77,7 +77,7 @@
     - name: WmiMonitorDescriptorMethods
       href: wmimonitordescriptormethods.md
       items:
-        - name: Metodi WmiMonitorDescriptorMethods
+        - name: Metodi di WmiMonitorDescriptorMethods
           href: wmimonitordescriptormethods-methods.md
           items:
             - name: Metodo WmiGetMonitorRawEEdidV1Block
@@ -92,9 +92,9 @@
       href: wmimonitorlistedsupportedsourcemodes.md
     - name: WmiMonitorRawEEdidV1Block
       href: wmimonitorraweedidv1block.md
-    - name: XYZinCIE
+    - name: XYCipie
       href: xyzincie.md
-- name: Provider WDM
+- name: WDM Provider
   href: wdm-provider.md
   items:
     - name: WMIBinaryMofResource
