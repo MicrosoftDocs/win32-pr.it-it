@@ -3,7 +3,7 @@ title: Tipo semplice UInt8Type
 description: Definisce un tipo di byte senza segno.
 ms.assetid: bda12d06-683f-4183-a84b-2bc3159c4eff
 keywords:
-- Log eventi di tipo semplice UInt8Type
+- EventLog di tipo semplice UInt8Type
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3236d7416cbb199037813a8ae870d4f87718081
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81a48c21e34edecbf4dfb4f9c2e87c85a77e3f500ec42b8607f1de004e7679ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511311"
 ---
 # <a name="uint8type-simple-type"></a>Tipo semplice UInt8Type
 
-Definisce un tipo di byte senza segno. Il valore può essere specificato come valore integer a 1 byte o esadecimale compreso nell'intervallo compreso tra 0 e 255.
+Definisce un tipo di byte senza segno. Il valore può essere specificato come intero a 1 byte o valore esadecimale compreso nell'intervallo compreso tra 0 e 255.
 
 ``` syntax
 <xs:simpleType name="UInt8Type">
@@ -38,8 +38,8 @@ Definisce un tipo di byte senza segno. Il valore può essere specificato come va
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

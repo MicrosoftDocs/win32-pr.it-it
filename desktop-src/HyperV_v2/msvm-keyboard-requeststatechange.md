@@ -1,7 +1,7 @@
 ---
-description: Richiede che lo stato dell'elemento venga modificato.
+description: Richiede che lo stato dell'elemento sia modificato.
 ms.assetid: D1742588-D932-4FE1-8D2A-E410BEE371FF
-title: Metodo RequestStateChange della classe Msvm_Keyboard
+title: Metodo RequestStateChange della Msvm_Keyboard classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c3358c6c9907717e536466466dd074faf3a038a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 457ed1e98714a2a20169fd1139b7f42475e5d893756591930b6a25147f756897
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522241"
 ---
-# <a name="requeststatechange-method-of-the-msvm_keyboard-class"></a>Metodo RequestStateChange della classe della \_ tastiera MSVM
+# <a name="requeststatechange-method-of-the-msvm_keyboard-class"></a>Metodo RequestStateChange della classe Msvm \_ Keyboard
 
-Richiede che lo stato dell'elemento venga modificato.
+Richiede che lo stato dell'elemento sia modificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Nuovo stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà **RequestedState** dell'istanza se il codice restituito è 0 (' completato senza errori '), 3 (' timeout ') o 4096 (0x1000) (' processo avviato '). Per una spiegazione dettagliata dei valori *RequestedState* , vedere la descrizione delle proprietà **EnabledState** e **RequestedState** .
+Nuovo stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà **RequestedState** dell'istanza se il codice restituito è 0 ('Completed with No Error'), 3 ('Timeout') o 4096 (0x1000) ('Job Started'). Per una spiegazione dettagliata dei valori *requestedState,* vedere la descrizione delle **proprietà EnabledState** **e RequestedState.**
 
 <dt>
 
@@ -64,7 +64,7 @@ Nuovo stato richiesto per l'elemento. Queste informazioni verranno inserite nell
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -92,7 +92,7 @@ Nuovo stato richiesto per l'elemento. Queste informazioni verranno inserite nell
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,36 +106,36 @@ Nuovo stato richiesto per l'elemento. Queste informazioni verranno inserite nell
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento al processo. Questo parametro può essere **null** se l'attività è stata completata.
+Riferimento al processo. Questo parametro può essere **Null se** l'attività è stata completata.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare questo periodo di timeout, è necessario utilizzare il formato intervallo. Il valore 0 o **null** indica che il client non dispone di requisiti temporali per la transizione. Se questa proprietà non contiene 0 o **null** e l'implementazione non supporta questo parametro, viene restituito un codice restituito di 4098 ("utilizzo del parametro timeout non supportato").
+Quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare questo periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, viene restituito un codice restituito 4098 ("Utilizzo del parametro di timeout non supportato").
 
 </dd> </dl>
 
@@ -143,7 +143,7 @@ Quantità massima di tempo per cui il client prevede che la transizione al nuovo
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -152,10 +152,10 @@ Quantità massima di tempo per cui il client prevede che la transizione al nuovo
 **Errore sconosciuto o non specificato** (2)
 </dt> <dt>
 
-**Non può essere completato entro il periodo di timeout** (3)
+**Impossibile completare entro il periodo di timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
 **Parametro non valido** (5)
@@ -164,25 +164,25 @@ Quantità massima di tempo per cui il client prevede che la transizione al nuovo
 **In uso** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Transizione di stato non valida** (4097)
+**Transizione di stato non** valida (4097)
 </dt> <dt>
 
-**Utilizzo del parametro timeout non supportato** (4098)
+**Uso del parametro di timeout non supportato** (4098)
 </dt> <dt>
 
 **Occupato** (4099)
 </dt> <dt>
 
-**Metodo riservato** (4100.. 32767)
+**Metodo riservato** (4100..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -191,10 +191,10 @@ Quantità massima di tempo per cui il client prevede che la transizione al nuovo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -203,7 +203,7 @@ Quantità massima di tempo per cui il client prevede che la transizione al nuovo
 
 <dl> <dt>
 
-[**\_Tastiera MSVM**](msvm-keyboard.md)
+[**Tastiera \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

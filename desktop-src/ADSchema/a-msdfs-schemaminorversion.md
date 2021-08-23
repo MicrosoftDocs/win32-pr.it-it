@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-schema-Minor-version
+title: Attributo ms-DFS-Schema-Minor-Version
 description: Contiene la versione secondaria dello schema dei metadati DFS.
 ms.assetid: 4f5a317d-e22a-4940-9f92-ce8bf52c92dd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-schema-Minor-version
-- msDFS-schema AD attributo SchemaMinorVersion
+- Attributo ms-DFS-Schema-Minor-Version schema AD
+- Schema AD dell'attributo msDFS-SchemaMinorVersion
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953604f6dc8ff171745ddc4e95e6fc9a2f2756c3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ca96f86ac6cef1c4eda346ea7463f7a51a7116d706ae09c4d4c2974312f698f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583051"
 ---
-# <a name="ms-dfs-schema-minor-version-attribute"></a>attributo ms-DFS-schema-Minor-version
+# <a name="ms-dfs-schema-minor-version-attribute"></a>Attributo ms-DFS-Schema-Minor-Version
 
 Contiene la versione secondaria dello schema dei metadati DFS.
 
@@ -29,13 +29,13 @@ Contiene la versione secondaria dello schema dei metadati DFS.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DFS-schema-versione secondaria          |
-| LDAP-Display-Name | msDFS-SchemaMinorVersion             |
+| CN                | ms-DFS-Schema-Minor-Version          |
+| Ldap-Display-Name | msDFS-SchemaMinorVersion             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2031              |
-| System-ID-GUID    | fef9a725-e8f1-43ab-bd86-6a0115ce9e38 |
+| System-Id-Guid    | fef9a725-e8f1-43ab-bd86-6a0115ce9e38 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene la versione secondaria dello schema dei metadati DFS.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 0                                                             |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene la versione secondaria dello schema dei metadati DFS.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 0                                                             |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene la versione secondaria dello schema dei metadati DFS.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 0                                                             |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

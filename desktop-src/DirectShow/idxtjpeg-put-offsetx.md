@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put OffsetX specifica l'offset orizzontale dell'origine della cancellazione.
+description: Il metodo put \_ OffsetX specifica l'offset orizzontale dell'origine di cancellazione.
 ms.assetid: 7bc721fd-7e72-49d4-90ae-a193df46326c
-title: 'IDxtJpeg: metodo:p ut_OffsetX (qedit. h)'
+title: Metodo IDxtJpeg::p ut_OffsetX (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 70bb908be3f2e2173ebae12f45e24600b38a0441
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d0e80a847b69d0dd7f0c29eedb751b07baedab2154bb237d2c3e7f816891e9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639281"
 ---
-# <a name="idxtjpegput_offsetx-method"></a>IDxtJpeg::p UT \_ offsetX metodo
+# <a name="idxtjpegput_offsetx-method"></a>Metodo IDxtJpeg::p ut \_ OffsetX
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `put_OffsetX` metodo specifica l'offset orizzontale dell'origine della cancellazione.
+Il `put_OffsetX` metodo specifica l'offset orizzontale dell'origine di cancellazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,26 +45,26 @@ HRESULT put_OffsetX(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
-Offset orizzontale dell'origine della cancellazione, espresso in pixel. Il centro della cancellazione viene sottoposta a offset in base a questa quantità.
+Offset orizzontale dell'origine della cancellazione, in pixel. Il centro della cancellazione viene compensato da questa quantità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Invia un processo a un sistema operativo per l'esecuzione a una data e ora specificate in futuro.
+description: Invia un processo a un sistema operativo per l'esecuzione in un'ora e in una data specificate in futuro.
 ms.assetid: 9d582fbb-24cb-401d-8b77-af7671a24e6d
 ms.tgt_platform: multiple
 title: Metodo Create della classe Win32_ScheduledJob
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9f1acae94ea29d2d57b2952c0b0adc267ad3066c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7788c894646b3ebb07fc9d3d98aeeda54b9172b5dde01e7eb65975bb2d95d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547411"
 ---
-# <a name="create-method-of-the-win32_scheduledjob-class"></a>Metodo Create della classe Win32 \_ ScheduledJob
+# <a name="create-method-of-the-win32_scheduledjob-class"></a>Metodo Create della classe ScheduledJob Win32 \_
 
-Il metodo **Crea** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Invia un processo a un sistema operativo per l'esecuzione a una data e ora specificate in futuro. Questo metodo richiede che il servizio Schedule venga avviato nel computer a cui viene inviato il processo.
+Il **metodo** [Crea classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) invia un processo a un sistema operativo per l'esecuzione a un'ora e a una data specificate in futuro. Questo metodo richiede che il servizio di pianificazione sia avviato nel computer a cui viene inviato il processo.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,35 +48,35 @@ uint32 Create(
 
 <dl> <dt>
 
-*Comando* \[ in\]
+*Comando* \[ Pollici\]
 </dt> <dd>
 
-Nome del comando, del programma batch o dei parametri del file binario e della riga di comando utilizzati dal servizio Schedule per richiamare il processo.
+Nome del comando, del programma batch o del file binario e dei parametri della riga di comando utilizzati dal servizio di pianificazione per richiamare il processo.
 
-Esempio: "Defrag/q/f".
+Esempio: "defrag /q /f".
 
 </dd> <dt>
 
-*StartTime* \[ in\]
+*StartTime* \[ Pollici\]
 </dt> <dd>
 
-Ora UTC (Coordinated Universal Time) per l'esecuzione di un processo. Il formato deve essere: "ad aaaammgghhmmss. MMMMMM (+-) OOO ", dove" AAAAMMGG "deve essere sostituito da" \* \* \* \* \* \* \* \* ". Ad esempio: " \* \* \* \* \* \* \* \* 143000.000000-420" specifica 14,30 (2:30) PST con ora legale in vigore.
+Coordinated Universal Time (UTC) per l'esecuzione di un processo. Il formato deve essere: "AAAAMMGGHHMMSS. MMMMMM(+-)OOO", dove "AAAAMMGG" deve essere sostituito da " \* \* \* \* \* \* \* \* ". Ad esempio: " \* \* \* \* \* \* \* \* 143000.000000-420" specifica 14.30 (2:30 P.M.) PST con ora legale in vigore.
 
-La sezione "(+-) OOO" del valore della proprietà StartTime è la distorsione corrente per la conversione dell'ora locale. La distorsione è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore per cui il fuso orario è in anticipo o dietro la ora di Greenwich (GMT) di 60 (usare un numero positivo per il numero di ore se il fuso orario è preceduto da GMT e un numero negativo se il fuso orario è dietro GMT). Aggiungere un ulteriore 60 al calcolo se il fuso orario USA l'ora legale. Ad esempio, il fuso orario Pacifico standard è di otto ore dietro GMT, quindi la distorsione è uguale a-420 (-8 \* 60 + 60) quando l'ora legale è in uso e-480 (-8 \* 60) quando l'ora legale non è in uso. È anche possibile determinare il valore della distorsione eseguendo una query sulla proprietà bias della classe [**del \_ fuso orario Win32**](win32-timezone.md) .
+La sezione "(+-)OOO" del valore della proprietà StartTime è la distorsione corrente per la conversione dell'ora locale. La differenza è la differenza tra l'ora UTC e l'ora locale. Per calcolare la distorsione per il fuso orario, moltiplicare il numero di ore in cui il fuso orario è avanti o indietro rispetto all'ora di Greenwich (GMT) per 60 (usare un numero positivo per il numero di ore se il fuso orario è superiore a GMT e un numero negativo se il fuso orario è indietro rispetto a GMT). Aggiungere altri 60 al calcolo se il fuso orario usa l'ora legale. Ad esempio, il fuso orario standard del Pacifico è otto ore indietro rispetto a GMT, pertanto la deviazione è uguale a -420 (-8 60 + 60) quando è in uso l'ora legale e \* -480 (-8 60) quando l'ora legale non è \* in uso. È anche possibile determinare il valore della distorsione tramite una query sulla proprietà bias della [**classe \_ TimeZone Win32.**](win32-timezone.md)
 
 </dd> <dt>
 
 *RunRepeatedly* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, un processo pianificato viene eseguito ripetutamente in giorni specifici. Il valore predefinito è **False**.
+Se **True,** un processo pianificato viene eseguito ripetutamente in giorni specifici. Il valore predefinito è **False**.
 
 </dd> <dt>
 
 *DaysOfWeek* \[ in, facoltativo\]
 </dt> <dd>
 
-Giorni della settimana in cui è pianificata l'esecuzione di un processo; utilizzato solo quando il parametro *RunRepeatedly* è **true**. Per pianificare un processo per più di un giorno della settimana, unire i valori appropriati in un operatore OR logico. Per pianificare un processo per martedì e venerdì, ad esempio, il valore di *DaysOfWeek* è 2 o 16.
+Giorni della settimana in cui è pianificata l'esecuzione di un processo; usato solo quando il *parametro RunRepeatedly* è **True.** Per pianificare un processo per più di un giorno della settimana, unire i valori appropriati in un OR logico. Ad esempio, per pianificare un processo per martedì e venerdì, il valore di *DaysOfWeek* è 2 O 16.
 
 <dt>
 
@@ -103,7 +103,7 @@ Giorni della settimana in cui è pianificata l'esecuzione di un processo; utiliz
 
 <span id="Thursday"></span><span id="thursday"></span><span id="THURSDAY"></span>
 
-**Giovedi** (8)
+**Giovedì** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -132,7 +132,7 @@ Giorni della settimana in cui è pianificata l'esecuzione di un processo; utiliz
 *DaysOfMonth* \[ in, facoltativo\]
 </dt> <dd>
 
-Giorni del mese in cui è pianificata l'esecuzione di un processo; utilizzato solo quando il parametro *RunRepeatedly* è **true**.
+Giorni del mese in cui è pianificata l'esecuzione di un processo; usato solo quando il *parametro RunRepeatedly* è **True.**
 
 <dt>
 
@@ -143,7 +143,7 @@ Giorni del mese in cui è pianificata l'esecuzione di un processo; utilizzato so
 
 </dt> <dd>
 
-Primo giorno del mese
+Giorno 1 di un mese
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Giorno 10 di un mese
 
 </dt> <dd>
 
-Giorno 11 del mese
+Giorno 11 di un mese
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Giorno 12 di un mese
 
 </dt> <dd>
 
-Giorno 13 del mese
+Giorno 13 di un mese
 
 </dd> <dt>
 
@@ -297,7 +297,7 @@ Giorno 14 di un mese
 
 </dt> <dd>
 
-Giorno 15 del mese
+Giorno 15 di un mese
 
 </dd> <dt>
 
@@ -319,7 +319,7 @@ Giorno 16 di un mese
 
 </dt> <dd>
 
-Giorno 17 del mese
+Giorno 17 di un mese
 
 </dd> <dt>
 
@@ -407,7 +407,7 @@ Giorno 24 di un mese
 
 </dt> <dd>
 
-Giorno 25 del mese
+Giorno 25 di un mese
 
 </dd> <dt>
 
@@ -429,7 +429,7 @@ Giorno 26 di un mese
 
 </dt> <dd>
 
-Giorno 27 del mese
+Giorno 27 di un mese
 
 </dd> <dt>
 
@@ -440,7 +440,7 @@ Giorno 27 del mese
 
 </dt> <dd>
 
-Giorno 28 del mese
+Giorno 28 di un mese
 
 </dd> <dt>
 
@@ -451,7 +451,7 @@ Giorno 28 del mese
 
 </dt> <dd>
 
-29 giorni di un mese
+Giorno 29 di un mese
 
 </dd> <dt>
 
@@ -480,20 +480,20 @@ Giorno 31 di un mese
 *InteractWithDesktop* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, il processo specificato deve essere interattivo, il che significa che un utente può fornire l'input a un processo pianificato mentre il processo è in esecuzione. Il valore predefinito è **False**.
+Se **True,** il processo specificato deve essere interattivo, ovvero un utente può fornire input a un processo pianificato durante l'esecuzione del processo. Il valore predefinito è **False**.
 
 </dd> <dt>
 
-*JobID* \[ out\]
+*JobId* \[ Cambio\]
 </dt> <dd>
 
-Identificatore del numero di un processo. Questo parametro è un handle per un processo pianificato in un computer.
+Numero di identificatore di un processo. Questo parametro è un handle per un processo pianificato in un computer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) quando ha esito positivo e un numero diverso per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) in caso di esito positivo e un numero diverso per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -502,7 +502,7 @@ Restituisce un valore pari a 0 (zero) quando ha esito positivo e un numero diver
 
 0
 
-La richiesta è stata accettata.
+La richiesta viene accettata.
 
 </dd> <dt>
 
@@ -538,7 +538,7 @@ Processo interattivo.
 
 9
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -547,7 +547,7 @@ Impossibile trovare il percorso di directory del file eseguibile del servizio.
 
 21
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
@@ -556,7 +556,7 @@ Sono stati passati parametri non validi al servizio.
 
 22
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -569,7 +569,7 @@ L'account con cui viene eseguito il servizio non è valido o non dispone delle a
 
 ## <a name="remarks"></a>Commenti
 
-Se il processo pianificato avvia un programma interattivo, ad esempio Blocco note, la proprietà **InteractWithDeskto** deve essere impostata su **true** o la schermata del programma non è visibile. Il processo viene comunque visualizzato in **Gestione attività** anche se non viene visualizzato sullo schermo.
+Se il processo pianificato avvia un programma interattivo, ad esempio Blocco note, la proprietà **InteractWithDeskto** deve essere impostata su **True** o la schermata del programma non è visibile. Il processo viene comunque visualizzato **Gestione attività** anche se non viene visualizzato sullo schermo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -580,7 +580,7 @@ Se il processo pianificato avvia un programma interattivo, ad esempio Blocco not
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -592,7 +592,7 @@ Se il processo pianificato avvia un programma interattivo, ad esempio Blocco not
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ScheduledJob Win32**](win32-scheduledjob.md)
+[**Processo pianificato \_ Win32**](win32-scheduledjob.md)
 </dt> </dl>
 
  

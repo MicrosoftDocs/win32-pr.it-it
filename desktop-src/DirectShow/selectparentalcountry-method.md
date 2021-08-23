@@ -1,15 +1,15 @@
 ---
-description: Il metodo SelectParentalCountry imposta il paese/area padre specificato per la riproduzione successiva.
+description: Il metodo SelectParentalCountry imposta il paese/area geografica dei genitori specificato per la riproduzione successiva.
 ms.assetid: 70368351-c7b9-4640-a4f7-7d972b8e4628
 title: Metodo SelectParentalCountry
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2216d2b2ed72436aca003b42cbf811c8a01bd8fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d148145f2c38cdb01da209e02f6400301da851e1d2b41e5adaf84b2338ad21c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684061"
 ---
 # <a name="selectparentalcountry-method"></a>Metodo SelectParentalCountry
 
@@ -18,7 +18,7 @@ ms.locfileid: "104522178"
 
  
 
-Il `SelectParentalCountry` metodo imposta il paese/area padre specificato per la riproduzione successiva.
+Il `SelectParentalCountry` metodo imposta il paese/area genitori specificato per la riproduzione successiva.
 
 ``` syntax
 MSWebDVD.SelectParentalCountry(iCountry, sUserName, sPassword)
@@ -31,14 +31,14 @@ MSWebDVD.SelectParentalCountry(iCountry, sUserName, sPassword)
 <span id="iCountry"></span><span id="icountry"></span><span id="ICOUNTRY"></span>*iCountry*
 </dt> <dd>
 
-Specifica il paese/area geografica come intero.
+Specifica il paese come numero intero.
 
 </dd> <dt>
 
 <span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
 </dt> <dd>
 
-Specifica l'utente correntemente connesso sotto forma di stringa. (Attualmente ignorata).
+Specifica l'utente connesso corrente come stringa. (Attualmente ignorato).
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il paese/area padre determina come vengono interpretati i livelli padre.
+Il paese/area geografica dei genitori determina come vengono interpretati i livelli dei genitori.
 
 ## <a name="see-also"></a>Vedi anche
 

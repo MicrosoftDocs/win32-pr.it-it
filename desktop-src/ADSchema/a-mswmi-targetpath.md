@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-TargetPath
+title: Attributo ms-WMI-TargetPath
 description: Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 ms.assetid: b5d6c718-86f6-40a5-8fb1-e3ed4821ac62
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-TargetPath
-- msWMI-schema AD attributo TargetPath
+- Schema AD dell'attributo msWMI-TargetPath
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9818125d757716970cff538167d5d737a8354555
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0d077cc04ea4670341ad14c9817354150bbebc4952cee03fb994c324d4880645
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119550939"
 ---
-# <a name="ms-wmi-targetpath-attribute"></a>attributo ms-WMI-TargetPath
+# <a name="ms-wmi-targetpath-attribute"></a>Attributo ms-WMI-TargetPath
 
 Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 
@@ -29,13 +29,13 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetPath                           |
-| LDAP-Display-Name | msWMI-TargetPath                            |
+| CN                | ms-WMI-TargetPath                           |
+| Ldap-Display-Name | msWMI-TargetPath                            |
 | Dimensione              | Meno di 100 caratteri.                   |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1648                     |
-| System-ID-GUID    | 5006a79a-6bfe-4561-9f52-13cf4dd3e560        |
+| System-Id-Guid    | 5006a79a-6bfe-4561-9f52-13cf4dd3e560        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Elenco di coppie chiave/valore per l'identificazione univoca di un oggetto WMI.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 

@@ -1,15 +1,15 @@
 ---
 description: Il metodo SelectLowerButton seleziona il pulsante direzionale inferiore dal menu visualizzato.
 ms.assetid: d815f7f1-9e11-40a5-99e5-23eb478c33a1
-title: Metodo SelectLowerButton (Segment. h)
+title: Metodo SelectLowerButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd254438436641cc0367e4d85f8f17e77e3bb96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89d932cfd4ca87c17674e9bf27799989c5a8d2ee64b106d32fcd25dba0973a4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684091"
 ---
 # <a name="selectlowerbutton-method"></a>Metodo SelectLowerButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "106325908"
 
  
 
-Il `SelectLowerButton` metodo consente di selezionare il pulsante direzionale inferiore dal menu visualizzato.
+Il `SelectLowerButton` metodo seleziona il pulsante direzionale inferiore dal menu visualizzato.
 
 ``` syntax
 MSWebDVD.SelectLowerButton()
@@ -34,7 +34,7 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo StartService della classe Msvm_TransparentBridgingService: avvia il servizio.'
+description: 'Metodo StartService della classe Msvm_TransparentBridgingService : avvia il servizio.'
 ms.assetid: f31f66ee-c4da-4dc2-94f2-eca0f780b053
 title: Metodo StartService della classe Msvm_TransparentBridgingService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ef88168836d1e4a5f81efae81533036dc2b29045
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0214c3572553d948c4cec2cf4cc55936e2030dd8da3912ffbcf5b22f8f1dd2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582211"
 ---
 # <a name="startservice-method-of-the-msvm_transparentbridgingservice-class"></a>Metodo StartService della classe Msvm \_ TransparentBridgingService
 
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

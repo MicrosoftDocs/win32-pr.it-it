@@ -4,12 +4,12 @@ ms.assetid: f762a571-83ea-4999-ad49-a51044bc790d
 title: Scrittura delle proprietà dell'oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 726501c986e73033437de3bee0c11b3beb66150d
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 7e140563c6cf17235d3709e0d53cbfda9ab602076c3e72c010570b004429c96e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657331"
 ---
 # <a name="writing-object-properties"></a>Scrittura delle proprietà dell'oggetto
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo MS-SQL-database
-description: Nome del database SQL Server necessario per la replica.
+title: Attributo MS-SQL-Database
+description: Nome del database SQL Server coinvolto nella replica.
 ms.assetid: 624705d9-df3f-458e-98f4-fb8da073efd6
 ms.tgt_platform: multiple
 keywords:
-- MS-SQL-schema di AD dell'attributo del database
-- mS-SQL-schema di AD dell'attributo del database
+- Schema AD dell'attributo MS-SQL-Database
+- Schema AD dell'attributo mS-SQL-Database
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6c448213bee18fede3cc8a77cabf607c3b2ee3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e7820e9ea165922fa2b77606ee160469a8866870346208ed199350df7a5e238b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583401"
 ---
-# <a name="ms-sql-database-attribute"></a>Attributo MS-SQL-database
+# <a name="ms-sql-database-attribute"></a>Attributo MS-SQL-Database
 
-Nome del database SQL Server necessario per la replica.
+Nome del database SQL Server coinvolto nella replica.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-database                             |
-| LDAP-Display-Name | mS-SQL-database                             |
+| CN                | MS-SQL-Database                             |
+| Ldap-Display-Name | mS-SQL-Database                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | Quando la replica è impostata.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1393                     |
-| System-ID-GUID    | d5a0dbdc-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | d5a0dbdc-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome del database SQL Server necessario per la replica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Vero                                                                |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

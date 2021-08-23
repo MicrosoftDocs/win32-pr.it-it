@@ -1,19 +1,19 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. RelatedSoundFile.
+description: Criteri dei metadati della foto per la proprietà System.Photo.RelatedSoundFile.
 ms.assetid: 3b212d90-7ae2-4b7c-b77a-2017490aca40
-title: Criteri per i metadati delle foto di System. Photo. RelatedSoundFile
+title: Criteri dei metadati della foto System.Photo.RelatedSoundFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07a29adb71f572868f21b1b8427e71b09616b24c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aae80ad39b8d3dab271aacf4815836e8b386c150ec80be63a83a4ab5937635e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549431"
 ---
-# <a name="systemphotorelatedsoundfile-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. RelatedSoundFile
+# <a name="systemphotorelatedsoundfile-photo-metadata-policy"></a>Criteri dei metadati della foto System.Photo.RelatedSoundFile
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md) .
+Criteri dei metadati della foto [per la proprietà System.Photo.RelatedSoundFile.](../properties/props-system-photo-relatedsoundfile.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ Stringa.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40964} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=40964} | ascii       |
 | 2     | /xmp/exif:RelatedSoundFile    | unicode     |
 
 
@@ -60,20 +60,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40964} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=40964} | ascii       |
 | 2     | /xmp/exif:RelatedSoundFile    | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40964} |
+| 1     | /app1/ifd/exif/{ushort=40964} |
 | 2     | /xmp/exif:RelatedSoundFile    |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policy"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 40964}       | ascii       |
+| 1     | /ifd/exif/{ushort=40964}       | ascii       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile | unicode     |
 
 
@@ -101,20 +101,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 40964}       | ascii       |
+| 1     | /ifd/exif/{ushort=40964}       | ascii       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                           |
 |-------|--------------------------------|
-| 1     | /IFD/EXIF/{ushort = 40964}       |
+| 1     | /ifd/exif/{ushort=40964}       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md)
+[System.Photo.RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md)
 </dt> </dl>
 
  

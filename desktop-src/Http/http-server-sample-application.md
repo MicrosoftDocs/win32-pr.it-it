@@ -1,19 +1,19 @@
 ---
-title: Applicazione di esempio server HTTP
-description: Questo argomento contiene un'applicazione di esempio che illustra come usare l'API del server HTTP per eseguire attività lato server.
+title: Applicazione di esempio del server HTTP
+description: Questo argomento contiene un'applicazione di esempio che illustra come usare l'API del server HTTP per eseguire attività sul lato server.
 ms.assetid: 49952ff5-ac8b-4192-a446-5a117f9a8e52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42c659d007d6e9325c89b6cef40e8b56f22d376b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2e6db90d82f723614f6a49f83c4a0b2a63c6bde0159d72720bd2176a98b245b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682911"
 ---
-# <a name="http-server-sample-application"></a>Applicazione di esempio server HTTP
+# <a name="http-server-sample-application"></a>Applicazione di esempio del server HTTP
 
-Nell'applicazione di esempio seguente viene illustrato come utilizzare l'API del server HTTP per eseguire attività lato server. Il file "PRECOMP. h" incluso nel primo esempio include tutte le intestazioni necessarie per eseguire gli esempi, ad esempio:
+L'applicazione di esempio seguente illustra come usare l'API del server HTTP per eseguire attività sul lato server. Il file "precomp.h" incluso nel primo esempio include tutte le intestazioni necessarie per eseguire gli esempi, ad esempio:
 
 
 ```C++
@@ -38,7 +38,7 @@ Nell'applicazione di esempio seguente viene illustrato come utilizzare l'API del
 
 
 
-## <a name="main-and-preliminaries"></a>Principale e preliminare
+## <a name="main-and-preliminaries"></a>Main e Preliminari
 
 
 ```C++
@@ -158,7 +158,7 @@ int __cdecl wmain(
 
 
 
-## <a name="register-the-urls-to-listen-on"></a>Registrare gli URL per l'ascolto
+## <a name="register-the-urls-to-listen-on"></a>Registrare gli URL su cui restare in ascolto
 
 
 ```C++
@@ -206,7 +206,7 @@ int __cdecl wmain(
 
 
 
-## <a name="cleanup-the-http-server-api"></a>Pulire l'API del server HTTP
+## <a name="cleanup-the-http-server-api"></a>Eseguire la pulizia dell'API del server HTTP
 
 
 ```C++
@@ -813,9 +813,9 @@ Done:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

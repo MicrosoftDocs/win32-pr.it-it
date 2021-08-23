@@ -1,28 +1,28 @@
 ---
-title: Impostazione del pool privato
-description: Contiene il progetto della console di installazione.
+title: Configurazione del pool privato
+description: Contiene il progetto console di installazione.
 ms.assetid: 0B00690C-9B13-4D8B-8AB6-F8BD2E35858C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a661e65610e6cefb03ee9d47f70d7dc8d6d92a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf2f2eb309e054ef41d9b1f2842367d595ea83a2feb61880b2ea7ba606cdbe1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683381"
 ---
-# <a name="private-pool-setup"></a>Impostazione del pool privato
+# <a name="private-pool-setup"></a>Configurazione del pool privato
 
-Le sezioni seguenti contengono il codice necessario per configurare un pool di sensori privati.
+Le sezioni seguenti contengono il codice necessario per configurare un pool di sensori privato.
 
--   [Targetver. h](#targetverh)
--   [Stdafx. h](#stdafxh)
--   [PrivatePoolCommonDefs. h](#privatepoolcommondefsh)
--   [PrivatePoolSetup. cpp](#privatepoolsetupcpp)
+-   [File Targetver.h](#targetverh)
+-   [Stdafx.h](#stdafxh)
+-   [PrivatePoolCommonDefs.h](#privatepoolcommondefsh)
+-   [PrivatePoolSetup.cpp](#privatepoolsetupcpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>File Targetver.h
 
-Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni successive.
+Questo esempio è stato creato per Windows 7 e versioni successive.
 
 
 ```C++
@@ -65,7 +65,7 @@ Questo esempio è stato creato per i sistemi operativi Windows 7 e versioni succ
 
 
 
-## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs. h
+## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs.h
 
 Includere l'intestazione seguente. Si noti che è necessario generare un ID database univoco. Non usare il GUID specificato in un'applicazione rilasciata.
 
@@ -99,9 +99,9 @@ static const GUID PRIVATE_POOL_DATABASE_ID =
 
 
 
-## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup. cpp
+## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup.cpp
 
-Nel codice sorgente seguente viene visualizzato il punto di ingresso per un'applicazione del pool di sensori privati.
+Il codice sorgente seguente visualizza il punto di ingresso per un'applicazione del pool di sensori privato.
 
 
 ```C++
@@ -530,9 +530,9 @@ static bool isDatabaseInstalled(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

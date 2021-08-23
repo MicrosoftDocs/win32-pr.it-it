@@ -1,23 +1,23 @@
 ---
-description: 'Altre informazioni su: costanti API per la distribuzione peer'
+description: "Altre informazioni su: Costanti dell'API di distribuzione peer"
 ms.assetid: 61444677-2fd5-4599-a96e-be19fb019f34
-title: Costanti API per la distribuzione di peer (Peerdist. h)
+title: Costanti dell'API di distribuzione peer (Peerdist.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da13692eee7c7b18597dc46b5b7339697b660da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bfc858fd40582c3dec308c655694e0c39bc1537fa5fac2f924043b8646a1fc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519321"
 ---
-# <a name="peer-distribution-api-constants"></a>Costanti API per la distribuzione peer
+# <a name="peer-distribution-api-constants"></a>Costanti dell'API di distribuzione peer
 
-L'API di distribuzione peer definisce le costanti seguenti:
+L'API Distribuzione peer definisce le costanti seguenti:
 
 <dl> <dt>
 
-<span id="PEERDIST_VERSION"></span><span id="peerdist_version"></span>**versione di PEERDIST \_**
+<span id="PEERDIST_VERSION"></span><span id="peerdist_version"></span>**VERSIONE \_ PEERDIST**
 </dt> <dd> <dl> <dt>
 
 WORD
@@ -25,7 +25,7 @@ WORD
 
 
 
-Informazioni sulla versione dell'API di distribuzione peer corrente.
+Informazioni sulla versione corrente dell'API Distribuzione peer.
 
 
 </dt> </dl> </dd> </dl>
@@ -36,9 +36,9 @@ Informazioni sulla versione dell'API di distribuzione peer corrente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 7 Professional\]<br/>                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Peerdist. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 Professional \[ solo app desktop\]<br/>                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Peerdist.h</dt> </dl> |
 
 
 

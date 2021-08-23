@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: fddce9505ca2f8692044239d294904eb17c95ffa
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0cabf80b7e55513fc5fc31b744db8cbc973ccd15bcda170804c754850d65dbfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524981"
 ---
 # <a name="msvm_ethernetdevicesapimplementation-class"></a>Classe Msvm \_ EthernetDeviceSAPImplementation
 
@@ -79,7 +79,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Riferimento a un'istanza della [**classe Msvm \_ LANEndpoint**](msvm-lanendpoint.md) che rappresenta il sap che usa **antecedente**.
+Riferimento a un'istanza della [**classe MSvm \_ LANEndpoint**](msvm-lanendpoint.md) che rappresenta il sap che usa **l'attività precedente.**
 
 </dd> </dl>
 
@@ -89,9 +89,9 @@ Riferimento a un'istanza della [**classe Msvm \_ LANEndpoint**](msvm-lanendpoint
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

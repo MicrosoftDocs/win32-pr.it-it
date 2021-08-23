@@ -1,7 +1,7 @@
 ---
-description: Rappresenta lo stato della risorsa per la larghezza di banda
+description: Rappresenta lo stato della risorsa della larghezza di banda del commutatore.
 ms.assetid: 9aa3e57e-9452-4c60-a052-83ae35b3607c
-title: Classe Msvm_EthernetSwitchBandwidthData
+title: Msvm_EthernetSwitchBandwidthData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d238b8ddc40506a3eae8a6c7c089de2ebd87db5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 422efc93de56c520f0929ca9d7f0b53a5911bcc553f529e2efeb8fbc70d8cf3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524651"
 ---
-# <a name="msvm_ethernetswitchbandwidthdata-class"></a>\_Classe MSVM EthernetSwitchBandwidthData
+# <a name="msvm_ethernetswitchbandwidthdata-class"></a>Classe Msvm \_ EthernetSwitchBandwidthData
 
-Rappresenta lo stato della risorsa per la larghezza di banda
+Rappresenta lo stato della risorsa della larghezza di banda del commutatore.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,20 +63,20 @@ class Msvm_EthernetSwitchBandwidthData : Msvm_EthernetSwitchData
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchBandwidthData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchBandwidthData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchBandwidthData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchBandwidthData** ha queste proprietà.
 
 <dl> <dt>
 
 **Capacity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -85,43 +85,43 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Larghezza di banda massima disponibile sul Commuter.
+Larghezza di banda massima disponibile nel commutatore.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di questa istanza.
+Nome della classe o della sottoclasse utilizzata nella creazione di questa istanza.
 
 </dd> <dt>
 
 **DefaultFlowReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -130,14 +130,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Larghezza di banda assoluta corrente riservata nell'opzione per il flusso predefinito.
+Larghezza di banda assoluta corrente riservata al commutatore per il flusso predefinito.
 
 </dd> <dt>
 
 **DefaultFlowReservationPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -146,14 +146,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Percentuale corrente della larghezza di banda riservata nell'opzione per il flusso predefinito.
+Percentuale corrente di larghezza di banda riservata nel commutatore per il flusso predefinito.
 
 </dd> <dt>
 
 **DefaultFlowWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -162,40 +162,40 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Spessore corrente del flusso predefinito dell'opzione.
+Peso corrente per il flusso predefinito dell'interruttore.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -204,20 +204,20 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**, **override**, **maxlen** (256)
+Qualificatori: **Key,** **Override,** **MaxLen** (256)
 </dt> </dl>
 
 Nome univoco della risorsa.
@@ -227,7 +227,7 @@ Nome univoco della risorsa.
 **Prenotazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -236,39 +236,39 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Larghezza di banda corrente riservata sull'opzione.
+Larghezza di banda corrente riservata nel commutatore.
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome della classe di creazione del sistema di hosting. Questa proprietà viene ereditata [**dal \_ servizio CIM**](/windows/desktop/CIMWin32Prov/cim-service).
+Nome della classe di creazione del sistema host. Questa proprietà viene ereditata dal [**servizio CIM. \_**](/windows/desktop/CIMWin32Prov/cim-service)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome del commutire virtuale a cui è associata l'istanza della risorsa associata.
+Nome del commutatore virtuale a cui è associata l'istanza della risorsa associata.
 
 </dd> </dl>
 
@@ -278,10 +278,10 @@ Nome del commutire virtuale a cui è associata l'istanza della risorsa associata
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

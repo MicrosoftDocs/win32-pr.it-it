@@ -1,21 +1,21 @@
 ---
-description: Le modifiche alla versione 2,2 di TSPI sono costituite principalmente da una serie di strutture di dati che hanno elementi aggiuntivi.
+description: Le modifiche di TSPI versione 2.2 sono costituite principalmente da una serie di strutture di dati con elementi aggiuntivi.
 ms.assetid: ea3c669f-cb44-4201-974a-2bc1ff56b462
-title: Novità della versione 2,2 di TSPI
+title: Novità di TSPI versione 2.2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0518a86722c452eccb9ddd382fa5380bf66da5f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c826b7eab023d1851f7031d2b632b25fde36aeb5dd1bf04706012ffb779b01bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659800"
 ---
-# <a name="whats-new-for-tspi-version-22"></a>Novità della versione 2,2 di TSPI
+# <a name="whats-new-for-tspi-version-22"></a>Novità di TSPI versione 2.2
 
-Le modifiche alla versione 2,2 di TSPI sono costituite principalmente da una serie di strutture di dati che hanno elementi aggiuntivi. La maggior parte di queste strutture è definita in TAPI. h e vengono usate sia dalle applicazioni TAPI che dai provider di servizi come mezzo per passare le informazioni.
+Le modifiche di TSPI versione 2.2 sono costituite principalmente da una serie di strutture di dati con elementi aggiuntivi. La maggior parte di queste strutture è definita in tapi.h e viene usata sia dalle applicazioni TAPI che dai provider di servizi come mezzo per passare informazioni.
 
-Le funzioni e i messaggi nuovi o modificati per TSPI versione 2,2 sono i seguenti:
+Le funzioni e i messaggi nuovi o modificati per TSPI versione 2.2 sono i seguenti:
 
 -   [**LINE_AGENTSESSIONSTATUS**](./line-agentsessionstatus.md)
 -   [**LINE_QUEUESTATUS**](./line-queuestatus.md)
@@ -23,18 +23,18 @@ Le funzioni e i messaggi nuovi o modificati per TSPI versione 2,2 sono i seguent
 -   [**LINE_GROUPSTATUS**](./line-groupstatus.md)
 -   [**LINE_PROXYSTATUS**](./line-proxystatus.md)
 
-Membro **LINEADDRCAPFLAGS_ACDGROUP** di [costanti LINEADDRCAPFLAGS_](./lineaddrcapflags--constants.md)
+**LINEADDRCAPFLAGS_ACDGROUP** membro di [LINEADDRCAPFLAGS_ Costanti](./lineaddrcapflags--constants.md)
 
 **LINEERR_INVALAGENTSESSIONSTATE** e **LINEERR_DISCONNECTED** membri di [LINEERR_ costanti](./lineerr--constants.md).
 
--   [Costanti LINEAGENTSTATEEX_](./lineagentstateex--constants.md)
--   [Costanti LINEAGENTSTATUSEX_](./lineagentstatusex--constants.md)
--   [Costanti LINEAGENTSESSIONSTATE_](./lineagentsessionstate--constants.md)
--   [Costanti LINEAGENTSESSIONSTATUS_](./lineagentsessionstatus--constants.md)
--   [Costanti LINEQUEUESTATUS_](./linequeuestatus--constants.md)
--   [Costanti LINEGROUPSTATUS_](./linegroupstatus--constants.md)
--   [Costanti LINEPROXYSTATUS_](./lineproxystatus--constants.md)
--   [Costanti LINEPROXYREQUEST_](./lineproxyrequest--constants.md)
+-   [LINEAGENTSTATEEX_ costanti](./lineagentstateex--constants.md)
+-   [LINEAGENTSTATUSEX_ costanti](./lineagentstatusex--constants.md)
+-   [LINEAGENTSESSIONSTATE_ costanti](./lineagentsessionstate--constants.md)
+-   [LINEAGENTSESSIONSTATUS_ costanti](./lineagentsessionstatus--constants.md)
+-   [LINEQUEUESTATUS_ costanti](./linequeuestatus--constants.md)
+-   [LINEGROUPSTATUS_ costanti](./linegroupstatus--constants.md)
+-   [LINEPROXYSTATUS_ costanti](./lineproxystatus--constants.md)
+-   [LINEPROXYREQUEST_ costanti](./lineproxyrequest--constants.md)
 
  
 

@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 62069f8a462499dfbfd9cfa368b9f5985d4775e0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c9a2488bb8f225df94e530e1964f0721c064c256423fe3218feb54adece7d0a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582401"
 ---
 # <a name="fileio_v1_name-class"></a>Classe FileIo \_ V1 \_ Name
 
@@ -84,7 +84,7 @@ Trovare la corrispondenza tra il valore di questo puntatore e il valore del punt
 
 ## <a name="remarks"></a>Commenti
 
-**Windows Server 2003:** Per recuperare la lettera di unità per il percorso del nome file, usare il valore della proprietà **FileObject** per eseguire il mapping all'evento [ \_ DiskIo TypeGroup1](diskio-typegroup1.md) corrispondente. Dall'evento DiskIo TypeGroup1 usare i valori delle proprietà DiskNumber e ByteOffset per eseguire il mapping all'evento \_ [SystemConfig \_ LogDisk](systemconfig-logdisk.md)  corrispondente (**ByteOffset** esegue il mapping **a StartOffset**).  La **proprietà DriveLetterString** contiene la lettera di unità.
+**Windows Server 2003:** Per recuperare la lettera di unità per il percorso del nome file, usare il valore della proprietà **FileObject** per eseguire il mapping all'evento [ \_ DiskIo TypeGroup1](diskio-typegroup1.md) corrispondente. Dall'evento DiskIo TypeGroup1 usare i valori delle proprietà DiskNumber e ByteOffset per eseguire il mapping all'evento \_ [SystemConfig \_ LogDisk](systemconfig-logdisk.md) corrispondente (**ByteOffset** esegue il mapping **a StartOffset**).   La **proprietà DriveLetterString** contiene la lettera di unità.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,8 +92,8 @@ Trovare la corrispondenza tra il valore di questo puntatore e il valore del punt
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

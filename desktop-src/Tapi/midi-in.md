@@ -1,29 +1,29 @@
 ---
-description: La classe del dispositivo MIDI/in è costituita da sequencer MIDI usati per l'input. Per accedere a questi dispositivi, è possibile usare le funzioni MIDI descritte nel Software Development Kit (SDK) della piattaforma.
+description: La classe di dispositivo midi/in è costituita da sequencer MIDI usati per l'input. È possibile accedere a questi dispositivi usando le funzioni MIDI, descritte in Platform Software Development Kit (SDK).
 ms.assetid: 8997a391-bf61-4ec9-8ffc-fe3e6b92d63a
-title: MIDI/in
+title: midi/in
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d8119990af37cb030211b7dcc3a75d5261411f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d309fe510b08a1e86ef6a00b34a9e3d3282c993babe78eb45aeb6ebb0dab1eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659951"
 ---
-# <a name="midiin"></a>MIDI/in
+# <a name="midiin"></a>midi/in
 
-La classe del dispositivo MIDI/in è costituita da sequencer MIDI usati per l'input. Per accedere a questi dispositivi, è possibile usare le funzioni MIDI descritte nel Software Development Kit (SDK) della piattaforma.
+La classe di dispositivo midi/in è costituita da sequencer MIDI usati per l'input. È possibile accedere a questi dispositivi usando le funzioni MIDI, descritte in Platform Software Development Kit (SDK).
 
-Le funzioni [**lineGetID**](/windows/desktop/api/Tapi/nf-tapi-linegetid) e [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid) compilano una struttura [**VARSTRING**](/windows/desktop/api/Tapi/ns-tapi-varstring) , impostando il membro **dwStringFormat** sul \_ valore binario STRINGFORMAT e aggiungendo il membro aggiuntivo seguente:
+Le [**funzioni lineGetID**](/windows/desktop/api/Tapi/nf-tapi-linegetid) e [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid) riempiono una struttura [**VARSTRING,**](/windows/desktop/api/Tapi/ns-tapi-varstring) impostando il membro **dwStringFormat** sul valore STRINGFORMAT BINARY e aggiungendo \_ questo membro aggiuntivo:
 
 ``` syntax
 DWORD DeviceId;  // identifier of MIDI device
 ```
 
-Il membro **DeviceID** è l'identificatore di un dispositivo MIDI chiuso. Questo identificatore viene usato in una chiamata alla funzione [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) per aprire il dispositivo per l'input. È possibile usare l'handle del dispositivo risultante per registrare i dati MIDI dalla linea o dal dispositivo telefonico.
+Il **membro DeviceId** è l'identificatore di un dispositivo MIDI chiuso. Questo identificatore viene utilizzato in una chiamata alla [**funzione midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen) per aprire il dispositivo per l'input. È possibile usare l'handle del dispositivo risultante per registrare i dati MIDI dal dispositivo linea o telefono.
 
-Per altre informazioni sulle funzioni MIDI, vedere [**funzioni multimediali**](../multimedia/multimedia-functions.md).
+Per altre informazioni sulle funzioni MIDI, vedere [**Funzioni multimediali**](../multimedia/multimedia-functions.md).
 
  
 

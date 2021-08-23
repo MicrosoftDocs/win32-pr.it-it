@@ -1,11 +1,11 @@
 ---
-title: attributo ms-KDS-RootKeyData
+title: Attributo ms-Kds-RootKeyData
 description: Chiave radice.
 ms.assetid: 93557ba5-c1d9-4af6-91aa-c9c360aae265
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-KDS-RootKeyData-schema AD
-- msKds-schema AD attributo RootKeyData
+- Schema AD dell'attributo ms-Kds-RootKeyData
+- Schema AD dell'attributo msKds-RootKeyData
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13b097a948d6e31709a270da836a6aa525fcc0ca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd40220dd5fbeb3af73737f0192de60ec84a13d8d19c201ef2f09ebdf5ef85b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582851"
 ---
-# <a name="ms-kds-rootkeydata-attribute"></a>attributo ms-KDS-RootKeyData
+# <a name="ms-kds-rootkeydata-attribute"></a>Attributo ms-Kds-RootKeyData
 
 Chiave radice.
 
@@ -29,13 +29,13 @@ Chiave radice.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-KDS-RootKeyData                                    |
-| LDAP-Display-Name | msKds-RootKeyData                                     |
+| CN                | ms-Kds-RootKeyData                                    |
+| Ldap-Display-Name | msKds-RootKeyData                                     |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2175                               |
-| System-ID-GUID    | 26627c27-08a2-0a40-a1b1-8dce85b42993                  |
+| System-Id-Guid    | 26627c27-08a2-0a40-a1b1-8dce85b42993                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -53,15 +53,15 @@ Chiave radice.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000280                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-KDS-prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Classi usate in        | [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

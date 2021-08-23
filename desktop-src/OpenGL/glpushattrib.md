@@ -1,9 +1,9 @@
 ---
-title: funzione glPushAttrib (GL. h)
-description: Inserisce lo stack dell'attributo.
+title: Funzione glPushAttrib (Gl.h)
+description: Inserisce lo stack di attributi.
 ms.assetid: 3c7b93cc-2112-4771-b422-a244821447e5
 keywords:
-- funzione glPushAttrib OpenGL
+- Funzione glPushAttrib OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0bc15b85ddca3bdbe5f6774b5368c6f0cde8dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 252859065ddae0439441acb6afd797d26bbed44a246b628b4f0350d7f3b1e2d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519991"
 ---
-# <a name="glpushattrib-function"></a>glPushAttrib (funzione)
+# <a name="glpushattrib-function"></a>Funzione glPushAttrib
 
-Inserisce lo stack dell'attributo.
+Inserisce lo stack di attributi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,46 +40,46 @@ void WINAPI glPushAttrib(
 
 <dl> <dt>
 
-*maschera* 
+*Maschera* 
 </dt> <dd>
 
-Maschera che indica gli attributi da salvare. Le costanti di maschera simbolica e il relativo stato OpenGL associato sono le seguenti, ovvero l'elenco dei paragrafi rientrati in cui vengono salvati gli attributi:
+Maschera che indica gli attributi da salvare. Le costanti della maschera simbolica e il relativo stato OpenGL associato sono i seguenti (i paragrafi con rientro elencano gli attributi salvati):
 
 <dl> <dt>
 
-<span id="GL_ACCUM_BUFFER_BIT_"></span><span id="gl_accum_buffer_bit_"></span>\_bit del buffer di accut GL \_ \_ 
+<span id="GL_ACCUM_BUFFER_BIT_"></span><span id="gl_accum_buffer_bit_"></span>BIT \_ DEL BUFFER ACCUM \_ GL \_ 
 </dt> <dd>
 
-Valore Clear buffer accumulo
+Valore di cancellazione del buffer di accumulo
 
 </dd> <dt>
 
-<span id="GL_COLOR_BUFFER_BIT"></span><span id="gl_color_buffer_bit"></span>\_bit del \_ buffer dei colori GL \_
+<span id="GL_COLOR_BUFFER_BIT"></span><span id="gl_color_buffer_bit"></span>BIT DEL \_ \_ BUFFER DEI COLORI GL \_
 </dt> <dd>
 
-\_Bit di \_ Abilitazione test GL Alpha
+Bit \_ di abilitazione GL ALPHA \_ TEST
 
-Funzione di test Alpha e valore di riferimento
+Funzione di test alfa e valore di riferimento
 
-\_Bit di abilitazione di Blend GL
+Bit di abilitazione di GL \_ BLEND
 
-Fusione di funzioni di origine e destinazione
+Fusione di funzioni di origine e di destinazione
 
-\_Bit di abilitazione dithering GL
+Bit \_ di abilitazione di GL DITHER
 
-Impostazione del buffer di \_ estrazione GL \_
+Impostazione \_ di GL DRAW \_ BUFFER
 
-\_Bit di \_ Abilitazione della logica GL
+Bit \_ di abilitazione di GL LOGIC \_ OP
 
-Funzione logica op
+Funzione logic op
 
-Valori cancellati in modalità colore e indice
+Valori non crittografati in modalità colore e in modalità indice
 
-Writemasks modalità colore e indice
+Maschera di scrittura in modalità colore e in modalità indice
 
 </dd> <dt>
 
-<span id="GL_CURRENT_BIT"></span><span id="gl_current_bit"></span>\_bit corrente \_ GL
+<span id="GL_CURRENT_BIT"></span><span id="gl_current_bit"></span>GL \_ CURRENT \_ BIT
 </dt> <dd>
 
 Colore RGBA corrente
@@ -88,9 +88,9 @@ Indice colori corrente
 
 Vettore normale corrente
 
-Coordinate di trama correnti
+Coordinate correnti della trama
 
-Flag di posizione corrente della posizione raster corrente GL \_ \_ \_ \_
+Posizione raster corrente GL \_ CURRENT \_ RASTER \_ POSITION FLAG \_ VALIDO
 
 Colore RGBA associato alla posizione raster corrente
 
@@ -98,322 +98,322 @@ Indice dei colori associato alla posizione raster corrente
 
 Coordinate di trama associate alla posizione raster corrente
 
-\_Flag di \_ flag Edge GL
+Flag FLAG EDGE GL \_ \_
 
 </dd> <dt>
 
-<span id="GL_DEPTH_BUFFER_BIT"></span><span id="gl_depth_buffer_bit"></span>\_ \_ bit buffer di profondità GL \_
+<span id="GL_DEPTH_BUFFER_BIT"></span><span id="gl_depth_buffer_bit"></span>BIT DEL \_ \_ BUFFER DI PROFONDITÀ GL \_
 </dt> <dd>
 
-\_Bit di \_ Abilitazione test di profondità GL
+Bit di abilitazione di GL \_ DEPTH \_ TEST
 
 Funzione di test del buffer di profondità
 
-Valore Clear buffer Depth
+Valore di cancellazione del buffer di profondità
 
-\_Bit di \_ Abilitazione WRITEMASK Depth
-
-</dd> <dt>
-
-<span id="GL_ENABLE_BIT"></span><span id="gl_enable_bit"></span>\_bit di abilitazione GL \_
-</dt> <dd>
-
-\_Flag di \_ test GL Alpha
-
-\_Flag di \_ normalizzazione automatica GL
-
-\_Flag di Blend GL
-
-Abilita BITS per i piani di ritaglio definibili dall'utente
-
-\_materiale colore \_ GL
-
-\_Flag della faccia di abbattimento GL \_
-
-\_Flag di \_ test profondità GL
-
-\_Flag di dithering GL
-
-\_Flag di nebbia GL
-
-GL \_ Light *i* where 0 <= *i* < GL \_ Max \_ Lights
-
-\_Flag di illuminazione GL
-
-\_ \_ Flag uniforme linea GL
-
-\_ \_ Flag stipple linea GL
-
-\_ \_ Flag op della logica colori GL \_
-
-\_ \_ Flag op logica indice GL \_
-
-GL \_ Mappa1 \_ x dove x è un tipo di mappa
-
-GL \_ map2 \_ x dove x è un tipo di mappa
-
-\_Flag di normalizzazione GL
-
-\_Flag uniforme del punto GL \_
-
-\_Flag di \_ linea offset POLIGONo GL \_
-
-\_Flag di \_ riempimento offset POLIGONo GL \_
-
-\_Flag del \_ punto di offset del POLIGONo GL \_
-
-\_Flag uniforme poligono GL \_
-
-\_Flag GL poligono \_ stipple
-
-\_Flag di test della forbice GL \_
-
-\_Flag di \_ test stencil GL
-
-\_Flag di trama GL \_ 1D
-
-\_ \_ Flag 2D trama GL
-
-Flag GL \_ trama \_ gen \_ x dove x è S, T, R o Q
+Bit \_ di abilitazione di GL DEPTH \_ WRITEMASK
 
 </dd> <dt>
 
-<span id="GL_EVAL_BIT"></span><span id="gl_eval_bit"></span>BIT valutazione GL \_ \_
+<span id="GL_ENABLE_BIT"></span><span id="gl_enable_bit"></span>BIT \_ DI ABILITAZIONE GL \_
 </dt> <dd>
 
-GL \_ Mappa1 \_ x Abilita BITS, dove x è un tipo di mappa
+Flag \_ GL ALPHA \_ TEST
 
-GL \_ map2 \_ x Abilita BITS, dove x è un tipo di mappa
+Flag GL \_ AUTO \_ NORMAL
 
-endpoint e divisioni della griglia da 1 a D
+Flag \_ GL BLEND
 
-endpoint e divisioni della griglia 2D
+Abilitare i bit per i piani di ritaglio definibili dall'utente
 
-\_Bit di \_ attivazione normale automatica GL
+MATERIALE A COLORI GL \_ \_
+
+Flag \_ GL CULL \_ FACE
+
+\_Flag GL DEPTH \_ TEST
+
+Flag \_ DITHER GL
+
+Flag \_ GL FOG
+
+GL \_ LIGHT *i* dove 0 <= *i <* GL MAX \_ \_ LIGHTS
+
+Flag \_ GL LIGHTING
+
+Flag GL \_ LINE \_ SMOOTH
+
+\_Flag GL LINE \_ STIPPLE
+
+\_Flag GL COLOR LOGIC \_ \_ OP
+
+\_Flag OP PER LA LOGICA \_ \_ DELL'INDICE GL
+
+GL \_ MAP1 \_ x dove x è un tipo di mappa
+
+GL \_ MAP2 \_ x dove x è un tipo di mappa
+
+Flag \_ GL NORMALIZE
+
+Flag SMOOTH di GL \_ POINT \_
+
+Flag LINE \_ \_ OFFSET \_ POLIGONO GL
+
+FLAG DI \_ \_ RIEMPIMENTO OFFSET \_ POLIGONO GL
+
+Flag \_ PUNTO DI OFFSET \_ \_ POLIGONO GL
+
+FLAG SMOOTH \_ \_ POLIGONO GL
+
+Flag \_ \_ STIPPLE POLIGONO GL
+
+\_Flag TEST DI GL SCISSOR \_
+
+Flag \_ GL STENCIL \_ TEST
+
+Flag \_ GL TEXTURE \_ 1D
+
+Flag \_ GL TEXTURE \_ 2D
+
+Flag GL \_ TEXTURE GEN x dove x è \_ \_ S, T, R o Q
 
 </dd> <dt>
 
-<span id="GL_FOG_BIT"></span><span id="gl_fog_bit"></span>\_bit di nebbia GL \_
+<span id="GL_EVAL_BIT"></span><span id="gl_eval_bit"></span>GL \_ EVAL \_ BIT
 </dt> <dd>
 
-\_Flag di abilitazione della nebbia GL
+GL \_ MAP1 \_ x abilitare i bit, dove x è un tipo di mappa
 
-Colore nebbia
+GL \_ MAP2 \_ x abilitare i bit, dove x è un tipo di mappa
 
-Densità di nebbia
+Endpoint e divisioni della griglia 1D
 
-Inizio nebbia lineare
+Endpoint e divisioni della griglia 2D
 
-Fine nebbia lineare
-
-Indice nebbia
-
-Valore della modalità di \_ nebbia GL \_
+Bit \_ di abilitazione GL AUTO \_ NORMAL
 
 </dd> <dt>
 
-<span id="GL_HINT_BIT"></span><span id="gl_hint_bit"></span>\_bit suggerimento \_ GL
+<span id="GL_FOG_BIT"></span><span id="gl_fog_bit"></span>GL \_ BIT DI \_ OSANNA
 </dt> <dd>
 
-\_Impostazione dell' \_ hint di correzione prospettiva GL \_
+Flag \_ di abilitazione GL FOG
 
-\_Impostazione del \_ Suggerimento smussato del punto GL \_
+Colore osanna
 
-\_Impostazione dell' \_ hint uniforme linea \_ GL
+Densità della nebbia
 
-\_Impostazione dell' \_ hint Smooth POLIGONo GL \_
+Inizio lineare della nebbia
 
-Impostazione del suggerimento di \_ nebbia GL \_
+Fine lineare della nebbia
+
+Indice delle nebbie
+
+Valore \_ GL FOG \_ MODE
 
 </dd> <dt>
 
-<span id="GL_LIGHTING_BIT"></span><span id="gl_lighting_bit"></span>\_bit di illuminazione GL \_
+<span id="GL_HINT_BIT"></span><span id="gl_hint_bit"></span>GL \_ HINT \_ BIT
 </dt> <dd>
 
-\_Bit di \_ Abilitazione materiale colore GL
+IMPOSTAZIONE \_ \_ DELL'HINT DI \_ CORREZIONE DELLA PROSPETTIVA GL
 
-\_ \_ Valore viso materiale colore GL \_
+Impostazione \_ \_ DELL'HINT SMOOTH DI GL POINT \_
 
-Parametri del materiale colori che verificano il colore corrente
+Impostazione DI GL \_ LINE \_ SMOOTH \_ HINT
 
-Colore della scena ambiente
+IMPOSTAZIONE \_ \_ DELL'HINT SMOOTH \_ POLIGONO GL
 
-\_ \_ \_ Valore del visualizzatore locale per GL Light Model \_
+Impostazione \_ HINT GL FOG \_
 
-\_ \_ \_ Impostazione lato due del modello GL Light \_
+</dd> <dt>
 
-\_Bit di abilitazione dell'illuminazione GL
+<span id="GL_LIGHTING_BIT"></span><span id="gl_lighting_bit"></span>BIT DI \_ ILLUMINAZIONE GL \_
+</dt> <dd>
 
-Abilita bit per ogni luce
+Bit \_ di abilitazione di GL COLOR \_ MATERIAL
 
-Intensità di ambiente, diffusa e speculare per ogni luce
+Gl \_ COLOR MATERIAL FACE \_ \_ value
+
+Parametri del materiale di colore che tracciano il colore corrente
+
+Colore della scena di ambiente
+
+Valore \_ GL LIGHT MODEL LOCAL \_ \_ \_ VIEWER
+
+Impostazione \_ GL LIGHT MODEL TWO \_ \_ \_ SIDE
+
+Bit di abilitazione di GL \_ LIGHTING
+
+Abilitare il bit per ogni luce
+
+Intensità ambientale, diffusa e speculare per ogni luce
 
 Direzione, posizione, esponente e angolo di taglio per ogni luce
 
 Fattori di attenuazione costanti, lineari e quadratici per ogni luce
 
-Colore di ambiente, diffuso, speculare e emissivo per ogni materiale
+Colore ambientale, diffuso, speculare ed emissivo per ogni materiale
 
-Indici di colore ambient, Diffusion e speculare per ogni materiale
+Indici di colore ambientale, diffuso e speculare per ogni materiale
 
-Esponente speculare per ogni impostazione del modello GL \_ Shade del materiale \_
+Esponente speculare per ogni impostazione GL SHADE MODEL del \_ \_ materiale
 
 </dd> <dt>
 
-<span id="GL_LINE_BIT_"></span><span id="gl_line_bit_"></span>\_bit linea \_ GL 
+<span id="GL_LINE_BIT_"></span><span id="gl_line_bit_"></span>GL \_ LINE \_ BIT 
 </dt> <dd>
 
-\_ \_ Flag uniforme linea GL
+Flag GL \_ LINE \_ SMOOTH
 
-\_Bit di \_ Abilitazione della riga GL stipple
+Bit di abilitazione di GL \_ LINE \_ STIPPLE
 
-Modello stipple linea e Ripeti contatore
+Modello di punta della linea e contatore di ripetizione
 
 Spessore linea
 
 </dd> <dt>
 
-<span id="GL_LIST_BIT"></span><span id="gl_list_bit"></span>\_bit elenco \_ GL
+<span id="GL_LIST_BIT"></span><span id="gl_list_bit"></span>BIT \_ DELL'ELENCO \_ DI CONTABILITÀ GENERALE
 </dt> <dd>
 
-\_ \_ Impostazione base elenco GL
+Impostazione \_ DI BASE DI GL LIST \_
 
 </dd> <dt>
 
-<span id="GL_PIXEL_MODE_BIT"></span><span id="gl_pixel_mode_bit"></span>\_bit in \_ modalità GL pixel \_
+<span id="GL_PIXEL_MODE_BIT"></span><span id="gl_pixel_mode_bit"></span>BIT DELLA MODALITÀ PIXEL GL \_ \_ \_
 </dt> <dd>
 
-\_Impostazioni della \_ \_ scala rossa e della distorsione GL rosse \_
+Impostazioni \_ GL RED BIAS e GL RED \_ \_ \_ SCALE
 
-Valori della scala verde GL \_ \_ e della distorsione GL \_ \_
+GL \_ GREEN BIAS e GL GREEN \_ \_ \_ SCALE
 
-\_Bias blu GL \_ e \_ scala GL blu \_
+GL \_ BLUE BIAS e GL BLUE \_ \_ \_ SCALE
 
-\_ \_ Polarizzazione GL Alpha e \_ scala GL Alpha \_
+GL \_ ALPHA BIAS e GL ALPHA \_ \_ \_ SCALE
 
-\_ \_ Distorsione di profondità GL e \_ scala di profondità GL \_
+GL \_ DEPTH BIAS e GL DEPTH \_ \_ \_ SCALE
 
-\_Offset indice GL \_ e \_ \_ valori MAIUSC di indice GL
+Valori GL \_ INDEX OFFSET e GL INDEX \_ \_ \_ SHIFT
 
-\_Colori della mappa GL \_ e \_ flag di stencil della mappa GL \_
+Flag GL \_ MAP COLOR e GL MAP \_ \_ \_ STENCIL
 
-\_Fattori zoom \_ X e GL \_ Zoom \_ Y
+Fattori GL \_ ZOOM X e GL ZOOM \_ \_ \_ Y
 
-Impostazione del buffer di \_ lettura GL \_
+Impostazione \_ GL READ \_ BUFFER
 
 </dd> <dt>
 
-<span id="GL_POINT_BIT"></span><span id="gl_point_bit"></span>\_bit punto \_ GL
+<span id="GL_POINT_BIT"></span><span id="gl_point_bit"></span>BIT \_ DEL PUNTO GL \_
 </dt> <dd>
 
-\_Flag uniforme del punto GL \_
+Flag SMOOTH di GL \_ POINT \_
 
 Dimensioni dei punti
 
 </dd> <dt>
 
-<span id="GL_POLYGON_BIT"></span><span id="gl_polygon_bit"></span>\_bit poligono GL \_
+<span id="GL_POLYGON_BIT"></span><span id="gl_polygon_bit"></span>BIT \_ POLIGONO GL \_
 </dt> <dd>
 
-\_Bit di \_ Abilitazione della faccia di selezione GL
+Bit \_ di abilitazione DI GL CULL \_ FACE
 
-\_ \_ Valore modalità della faccia di selezione GL \_
+Valore \_ GL CULL \_ FACE \_ MODE
 
-\_ \_ Indicatore viso anteriore GL
+Indicatore \_ FRONT FACE GL \_
 
-\_Impostazione della modalità poligono GL \_
+Impostazione \_ MODALITÀ \_ POLIGONO GL
 
-\_Flag uniforme poligono GL \_
+FLAG SMOOTH \_ \_ POLIGONO GL
 
-\_Bit di \_ Abilitazione stipple POLIGONo GL
+Bit di abilitazione di GL \_ POLYGON \_ STIPPLE
 
-\_Flag di \_ riempimento offset POLIGONo GL \_
+FLAG \_ DI RIEMPIMENTO OFFSET \_ \_ POLIGONO GL
 
-\_Flag di \_ linea offset POLIGONo GL \_
+Flag LINE \_ \_ OFFSET \_ POLIGONO GL
 
-\_Flag del \_ punto di offset del POLIGONo GL \_
+Flag \_ PUNTO DI OFFSET \_ \_ POLIGONO GL
 
-\_fattore di \_ offset POLIGONo GL \_
+FATTORE DI \_ \_ OFFSET POLIGONO GL \_
 
-\_unità offset poligono GL \_ \_
+UNITÀ DI \_ \_ OFFSET POLIGONO GL \_
 
 </dd> <dt>
 
-<span id="GL_POLYGON_STIPPLE_BIT"></span><span id="gl_polygon_stipple_bit"></span>\_bit stipple poligono GL \_ \_
+<span id="GL_POLYGON_STIPPLE_BIT"></span><span id="gl_polygon_stipple_bit"></span>BIT \_ \_ STIPPLE POLIGONO GL \_
 </dt> <dd>
 
-Immagine stipple poligono
+Immagine della punta del poligono
 
 </dd> <dt>
 
-<span id="GL_SCISSOR_BIT"></span><span id="gl_scissor_bit"></span>\_bit a forbice GL \_
+<span id="GL_SCISSOR_BIT"></span><span id="gl_scissor_bit"></span>GL \_ SCISSOR \_ BIT
 </dt> <dd>
 
-\_Flag di test della forbice GL \_
+\_Flag TEST DI GL SCISSOR \_
 
-Casella Scissor
+Casella di forbice
 
 </dd> <dt>
 
-<span id="GL_STENCIL_BUFFER_BIT"></span><span id="gl_stencil_buffer_bit"></span>\_ \_ bit buffer dello stencil GL \_
+<span id="GL_STENCIL_BUFFER_BIT"></span><span id="gl_stencil_buffer_bit"></span>BIT \_ DEL BUFFER DELLO \_ STENCIL \_ GL
 </dt> <dd>
 
-\_Bit di \_ Abilitazione test stencil GL
+BIT \_ DI ABILITAZIONE DI GL STENCIL \_ TEST
 
-Funzione stencil e valore di riferimento
+Funzione Stencil e valore di riferimento
 
-Maschera valore stencil
+Maschera del valore dello stencil
 
-Azioni di passaggio del buffer di errore, passaggio e profondità dello stencil
+Azioni di passaggio del buffer di profondità, passaggio e esito negativo dello stencil
 
-Valore cancellazione buffer dello stencil
+Valore di cancellazione del buffer di stencil
 
-Writemask buffer dello stencil
+Maschera di scrittura del buffer di stencil
 
 </dd> <dt>
 
-<span id="GL_TEXTURE_BIT"></span><span id="gl_texture_bit"></span>\_bit trama \_ GL
+<span id="GL_TEXTURE_BIT"></span><span id="gl_texture_bit"></span>BIT DI TRAMA GL \_ \_
 </dt> <dd>
 
-Abilita BITS per le quattro coordinate di trama
+Abilitare i bit per le quattro coordinate di trama
 
-Colore del bordo per ogni immagine di trama
+Colore del bordo per ogni immagine della trama
 
 Funzione minification per ogni immagine di trama
 
 Funzione di ingrandimento per ogni immagine di trama
 
-Coordinate di trama e modalità a capo per ogni immagine di trama
+Coordinate di trama e modalità di ritorno a capo per ogni immagine di trama
 
 Colore e modalità per ogni ambiente di trama
 
-Abilita BITS GL \_ texture \_ gen \_ *x*; *x* è S, T, R e Q
+Abilitare i bit GL \_ TEXTURE \_ GEN \_ *x*; *x* è S, T, R e Q
 
-\_ \_ \_ Impostazione della modalità di generazione della trama GL per S, T, R e Q
+Impostazione \_ GL TEXTURE GEN MODE per \_ \_ S, T, R e Q
 
-equazioni del piano glTexGen per S, T, R e Q
+Equazioni del piano glTexGen per S, T, R e Q
 
 </dd> <dt>
 
-<span id="GL_TRANSFORM_BIT"></span><span id="gl_transform_bit"></span>\_bit di trasformazione GL \_
+<span id="GL_TRANSFORM_BIT"></span><span id="gl_transform_bit"></span>BIT \_ DI TRASFORMAZIONE GL \_
 </dt> <dd>
 
 Coefficienti dei sei piani di ritaglio
 
-Abilita BITS per i piani di ritaglio definibili dall'utente
+Abilitare i bit per i piani di ritaglio definibili dall'utente
 
-\_Valore della \_ modalità matrice GL
+Valore \_ GL MATRIX \_ MODE
 
-\_Flag di normalizzazione GL
+Flag \_ GL NORMALIZE
 
 </dd> <dt>
 
-<span id="GL_VIEWPORT_BIT"></span><span id="gl_viewport_bit"></span>\_bit del viewport GL \_
+<span id="GL_VIEWPORT_BIT"></span><span id="gl_viewport_bit"></span>BIT \_ DEL VIEWPORT \_ GL
 </dt> <dd>
 
-Intervallo di profondità (quasi e lontano)
+Intervallo di profondità (vicino e lontano)
 
-Origine e extent del viewport
+Origine ed extent del viewport
 
 </dd> </dl> </dd> </dl>
 
@@ -423,36 +423,36 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_overflow dello stack GL \_**</dt> </dl>    | La funzione è stata chiamata mentre lo stack dell'attributo era pieno.<br/>                                                                |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OVERFLOW DELLO STACK GL \_ \_**</dt> </dl>    | La funzione è stata chiamata mentre lo stack di attributi era pieno.<br/>                                                                |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glPushAttrib** accetta un argomento, una maschera che indica i gruppi di variabili di stato da salvare nello stack di attributi. Le costanti simboliche vengono utilizzate per impostare i bit nella maschera. Il parametro mask viene in genere costruito applicando l' **operazione or** logica a diverse di queste costanti. È possibile utilizzare la speciale maschera GL \_ tutti \_ i \_ bit attrib per salvare tutti gli Stati impilabili.
+La **funzione glPushAttrib** accetta un argomento, una maschera che indica i gruppi di variabili di stato da salvare nello stack di attributi. Le costanti simboliche vengono usate per impostare i bit nella maschera. Il parametro mask viene in genere costruito applicando **l'operazione OR** logica a diverse di queste costanti. È possibile usare la maschera speciale GL \_ ALL \_ ATTRIB \_ BITS per salvare tutti gli stati impilabili.
 
-La funzione [**glPopAttrib**](glpopattrib.md) Ripristina i valori delle variabili di stato salvate con l'ultimo comando **glPushAttrib** . Quelli non salvati vengono lasciati invariati.
+La [**funzione glPopAttrib**](glpopattrib.md) ripristina i valori delle variabili di stato salvate con l'ultimo **comando glPushAttrib.** Quelli non salvati vengono lasciati invariati.
 
-Non è possibile eseguire il push degli attributi in uno stack completo oppure per estrarre gli attributi da uno stack vuoto. In entrambi i casi, viene impostato il flag di errore e non viene apportata alcuna modifica allo stato OpenGL.
+È un errore eseguire il push degli attributi in uno stack completo o rimuovere gli attributi da uno stack vuoto. In entrambi i casi, il flag di errore è impostato e non vengono apportate altre modifiche allo stato OpenGL.
 
-Inizialmente, lo stack dell'attributo è vuoto.
+Inizialmente, lo stack di attributi è vuoto.
 
-Non tutti i valori per lo stato OpenGL possono essere salvati nello stack di attributi. Ad esempio, non è possibile salvare il pacchetto di pixel e decomprimere lo stato, la modalità di rendering e lo stato di selezione e di feedback.
+Non tutti i valori per lo stato OpenGL possono essere salvati nello stack di attributi. Ad esempio, non è possibile salvare il pacchetto pixel e decomprimere lo stato, lo stato della modalità di rendering e selezionare e lo stato del feedback.
 
 La profondità dello stack di attributi dipende dall'implementazione, ma deve essere almeno 16.
 
-Le funzioni seguenti recuperano informazioni relative a **glPushAttrib** e [**glPopAttrib**](glpopattrib.md):
+Le funzioni seguenti recuperano informazioni correlate **a glPushAttrib** e [**glPopAttrib**](glpopattrib.md):
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento \_ \_ profondità dello stack \_ attrib
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ ATTRIB \_ STACK \_ DEPTH
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento \_ profondità massima \_ \_ dello stack \_ attrib
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MAX \_ ATTRIB STACK \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisiti
 
@@ -462,8 +462,8 @@ Le funzioni seguenti recuperano informazioni relative a **glPushAttrib** e [**gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -475,7 +475,7 @@ Le funzioni seguenti recuperano informazioni relative a **glPushAttrib** e [**gl
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)

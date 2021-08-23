@@ -1,28 +1,28 @@
 ---
-title: Proprietà allowBackgroundInput di IMsTscAdvancedSettings
+title: IMsTscAdvancedSettings - proprietà allowBackgroundInput
 description: Specifica se la modalità di input in background è abilitata.
 ms.assetid: 2b57ebe9-3aad-400c-bcfb-d01c759b453d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsTscAdvancedSettings
-- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà allowBackgroundInput
-- Servizi Desktop remoto proprietà allowBackgroundInput, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsTscAdvancedSettings
+- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà allowBackgroundInput
+- Proprietà allowBackgroundInput Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà allowBackgroundInput
 topic_type:
 - apiref
 api_name:
@@ -59,14 +59,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 938725ea1aa3d774d5993be695ac8568963897fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b79df16c3bcd1120344bc6189ace324e434ad4cbd7a831757e455e26f6d10902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657431"
 ---
-# <a name="imstscadvancedsettingsallowbackgroundinput-property"></a>Proprietà IMsTscAdvancedSettings:: allowBackgroundInput
+# <a name="imstscadvancedsettingsallowbackgroundinput-property"></a>Proprietà IMsTscAdvancedSettings::allowBackgroundInput
 
 Specifica se la modalità di input in background è abilitata. Quando l'input in background è abilitato, il client può accettare l'input quando il client non ha lo stato attivo.
 
@@ -89,15 +89,15 @@ HRESULT get_allowBackgroundInput(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la modalità di input in background o un valore diverso da zero per abilitare la modalità di input in background.
+Impostare questo parametro su 0 per disabilitare la modalità di input in background o su un valore diverso da zero per abilitare la modalità di input in background.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4A92-a6b0-dbf9b5f2ef2d<br/> |
+| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4a92-a6b0-dbf9b5f2ef2d<br/> |
 
 
 

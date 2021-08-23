@@ -4,7 +4,7 @@ description: URL per la connessione HTTP a un'autorità di certificazione.
 ms.assetid: 148bab57-25ae-467a-86a2-dbf83e69979e
 ms.tgt_platform: multiple
 keywords:
-- CA-WEB-URL attributo AD schema
+- Schema AD dell'attributo CA-WEB-URL
 - Schema AD dell'attributo cAWEBURL
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42b49efb851b0720499f5b641770279c12cb9563
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dc64643627e4e0205bab5c419f5a12ae804898f504b9e86d18c044d6dec55f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583751"
 ---
 # <a name="ca-web-url-attribute"></a>Attributo CA-WEB-URL
 
@@ -29,13 +29,13 @@ URL per la connessione HTTP a un'autorità di certificazione.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | CA-WEB-URL                                  |
-| LDAP-Display-Name | cAWEBURL                                    |
+| CN                | URL CA-WEB                                  |
+| Ldap-Display-Name | cAWEBURL                                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.688                      |
-| System-ID-GUID    | 963d2736-48be-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 963d2736-48be-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ URL per la connessione HTTP a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

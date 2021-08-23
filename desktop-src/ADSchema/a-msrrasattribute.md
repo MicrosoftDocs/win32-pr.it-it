@@ -1,10 +1,10 @@
 ---
-title: attributo ms-RRAS-attribute
-description: Stringa che contiene il numero vendorID installato in un router. VendorID è il fornitore SMI e il numero è MS-RRAS-attributo Number definito nell'oggetto del dizionario delle identità del router.
+title: Attributo ms-RRAS-Attribute
+description: Stringa che contiene il numero vendorID installato in un router. VendorID è SMI del fornitore e il numero è ms-RRAS-Attribute Number definito nell'oggetto dizionario di identità del router.
 ms.assetid: 72b32814-b2a2-4369-af01-ba8c893aa393
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-RRAS-attribute
+- Schema AD dell'attributo ms-RRAS-Attribute
 - Schema AD dell'attributo msRRASAttribute
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67e98a93f31fc45aca37e173ac6490bd1ca95840
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e28c24e01d0d37259c624bc6a1fda13f65e4ade4c2166cec2ae6adfce53dca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582091"
 ---
-# <a name="ms-rras-attribute-attribute"></a>attributo ms-RRAS-attribute
+# <a name="ms-rras-attribute-attribute"></a>Attributo ms-RRAS-Attribute
 
-Stringa che contiene il numero vendorID: installato in un router. VendorID è il fornitore SMI e il numero è MS-RRAS-attributo Number definito nell'oggetto del dizionario delle identità del router.
+Stringa contenente il valore vendorID:Number installato in un router. VendorID è SMI del fornitore e il numero è ms-RRAS-Attribute Number definito nell'oggetto dizionario di identità del router.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-RRAS-attribute                           |
-| LDAP-Display-Name | msRRASAttribute                             |
+| CN                | ms-RRAS-Attribute                           |
+| Ldap-Display-Name | MsRRASAttribute                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.884                      |
-| System-ID-GUID    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
+| System-Id-Guid    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa che contiene il numero vendorID: installato in un router. VendorID è il
 | ID collegamento                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| È a valore singolo       | Falso                                                                                          |
+| Is-Single-Valued       | Falso                                                                                          |
 | Indicizzato             | Falso                                                                                          |
 | Nel catalogo globale      | Vero                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classi utilizzate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 

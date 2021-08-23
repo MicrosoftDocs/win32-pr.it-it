@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnFocusReleased
-description: Chiamato quando viene premuta la combinazione di tasti di attivazione della versione. Questo evento, ad esempio, viene chiamato quando l'utente preme CTRL + ALT + freccia sinistra o la combinazione di tasti CTRL + ALT + freccia destra.
+description: Chiamato quando viene premuta la combinazione di tasti rilascia lo stato attivo. Ad esempio, questo evento viene chiamato quando l'utente preme CTRL+ALT+FRECCIA SINISTRA o la combinazione di tasti CTRL+ALT+FRECCIA DESTRA.
 ms.assetid: f5d755b0-4b8f-4d62-8dc4-f6b63e3819e5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnFocusReleased
+- Metodo OnFocusReleased Servizi Desktop remoto
 - Metodo OnFocusReleased Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnFocusReleased
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnFocusReleased
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eff03f95d4ebbb068bccbfd9f68a930c00f0b00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 673916c3a538f21ceea5b0b7578bb9e8f225ec2a349e38015eab0b50d73935aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512341"
 ---
-# <a name="imstscaxeventsonfocusreleased-method"></a>Metodo IMsTscAxEvents:: OnFocusReleased
+# <a name="imstscaxeventsonfocusreleased-method"></a>Metodo IMsTscAxEvents::OnFocusReleased
 
-Chiamato quando viene premuta la combinazione di tasti di attivazione della versione. Questo evento, ad esempio, viene chiamato quando l'utente preme CTRL + ALT + freccia sinistra o la combinazione di tasti CTRL + ALT + freccia destra.
+Chiamato quando viene premuta la combinazione di tasti rilascia lo stato attivo. Ad esempio, questo evento viene chiamato quando l'utente preme CTRL+ALT+FRECCIA SINISTRA o la combinazione di tasti CTRL+ALT+FRECCIA DESTRA.
 
-Questo evento consente al contenitore di controlli ActiveX di prendere il controllo dal controllo ActiveX. Questo, ad esempio, è utile in uno scenario in cui non è presente un mouse e le combinazioni di tasti speciali, ad esempio ALT + TAB, vengono reindirizzate al server. In questo caso, non è possibile riportare lo stato attivo alla tastiera sul desktop locale. Tuttavia, con la combinazione di tasti CTRL + ALT + freccia sinistra o CTRL + ALT + freccia destra, il contenitore ActiveX può restare in ascolto di questo evento e rispondere spostando lo stato attivo dal controllo ActiveX.
+Questo evento consente al ActiveX contenitore di controlli di portare via il controllo dal ActiveX controllo. Ad esempio, ciò è utile in uno scenario in cui non si dispone di un mouse e le combinazioni di tasti speciali, ad esempio ALT+TAB, vengono reindirizzate al server. In questo caso, non è possibile ripristinare lo stato attivo della tastiera sul desktop locale. Tuttavia, con la combinazione di tasti CTRL+ALT+FRECCIA SINISTRA o CTRL+ALT+FRECCIA DESTRA, il contenitore ActiveX può restare in ascolto di questo evento e rispondere allontanando lo stato attivo dal controllo ActiveX.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ void OnFocusReleased(
 
 <dl> <dt>
 
-*iDirection* \[ in\]
+*iDirection* \[ Pollici\]
 </dt> <dd>
 
-Il parametro direction di 1 (CTRL + ALT + freccia destra) o 1 (CTRL + ALT + freccia sinistra).
+Il parametro direction di 1 (CTRL+ALT+FRECCIA DESTRA) o 1 (CTRL+ALT+FRECCIA SINISTRA).
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è disponibile quando nel client viene usato Connessione Desktop remoto 6,0.
+Questo evento è disponibile quando Connessione Desktop remoto 6.0 viene usato nel client.
 
 ## <a name="requirements"></a>Requisiti
 

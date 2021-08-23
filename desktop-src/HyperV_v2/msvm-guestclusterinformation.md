@@ -1,7 +1,7 @@
 ---
-description: Usato nel metodo QueryGuestClusterInformation nella \_ classe MSVM VssService per recuperare informazioni sul cluster guest di cui fa parte la macchina virtuale.
+description: Usato nel metodo QueryGuestClusterInformation nella classe Msvm VssService per recuperare informazioni sul cluster guest di cui \_ fa parte la macchina virtuale.
 ms.assetid: c484b38d-9137-44da-a368-a2a673b94ef8
-title: Classe Msvm_GuestClusterInformation
+title: Msvm_GuestClusterInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee7fa33f142e47b9493e53aa5bc4779623d6ef40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed353e0d9c4d3049e120b00a11bc3d1bf85e3a0b42e52deb4ed277b9bde9b96b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523296"
 ---
-# <a name="msvm_guestclusterinformation-class"></a>\_Classe MSVM GuestClusterInformation
+# <a name="msvm_guestclusterinformation-class"></a>Classe Msvm \_ GuestClusterInformation
 
-Usato nel metodo [**QueryGuestClusterInformation**](msvm-vssservice-queryguestclusterinformation.md) nella classe [**MSVM \_ VssService**](msvm-vssservice.md) per recuperare informazioni sul cluster guest di cui fa parte la macchina virtuale.
+Usato nel [**metodo QueryGuestClusterInformation**](msvm-vssservice-queryguestclusterinformation.md) nella [**classe Msvm \_ VssService**](msvm-vssservice.md) per recuperare informazioni sul cluster guest di cui fa parte la macchina virtuale.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -55,68 +55,68 @@ class Msvm_GuestClusterInformation
 
 ## <a name="members"></a>Members
 
-La **classe \_ GuestClusterInformation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ GuestClusterInformation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ GuestClusterInformation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ GuestClusterInformation** ha queste proprietà.
 
 <dl> <dt>
 
 **ClusterId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore del cluster di failover di cui fa parte il sistema operativo guest della macchina virtuale.
+L'identificatore del cluster di failover di cui fa parte il sistema operativo guest della macchina virtuale.
 
 </dd> <dt>
 
 **ClusterSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di nodi del cluster di cui fa parte il sistema operativo guest della macchina virtuale.
+Il numero di nodi nel cluster di cui fa parte il sistema operativo guest della macchina virtuale.
 
 </dd> <dt>
 
 **IsActiveActive**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **booleana**
+Tipo di dati: **matrice booleana**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se la risorsa disco corrispondente nel cluster guest è condivisa tra le macchine virtuali in modalità attiva/attiva.
+Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se la risorsa disco corrispondente nel cluster guest è condivisa tra macchine virtuali in modalità attiva/attiva.
 
 </dd> <dt>
 
 **IsClustered**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **booleana**
+Tipo di dati: **matrice booleana**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se il disco corrispondente è una risorsa cluster nel cluster guest.
@@ -126,45 +126,45 @@ Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso
 **IsOnline**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **booleana**
+Tipo di dati: **matrice booleana**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se la risorsa disco corrispondente nel cluster guest è online.
 
 </dd> <dt>
 
-**Proprietario**
+**IsOwned**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **booleana**
+Tipo di dati: **matrice booleana**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se la risorsa disco corrispondente nel cluster guest è attualmente di proprietà di questa macchina virtuale.
+Matrice di valori booleani corrispondenti a ogni disco rigido virtuale condiviso che indica se la risorsa disco corrispondente nel cluster guest è di proprietà di questa macchina virtuale.
 
 </dd> <dt>
 
 **LastResourceMoveTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di tick dell'orologio quando una delle risorse disco condivise è stata spostata più di recente.
+Conteggio dei tick dell'orologio quando una delle risorse disco condiviso è stata spostata per l'ultima volta.
 
 > [!Note]  
 > Questa proprietà è stata aggiunta in Windows 10, versione 1703 e Windows Server 2016.
@@ -176,32 +176,32 @@ Il numero di tick dell'orologio quando una delle risorse disco condivise è stat
 **SharedVirtualHardDiskPaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Una matrice di percorsi di dischi rigidi virtuali condivisi connessi alla macchina virtuale.
+Matrice di percorsi di dischi rigidi virtuali condivisi connessi alla macchina virtuale.
 
 </dd> <dt>
 
 **SharedVirtualHardDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Una matrice di dati di impostazione di allocazione risorse (RASD) che rappresentano i dischi rigidi virtuali condivisi connessi alla macchina virtuale.
+Matrice di dati di impostazione di allocazione risorse (RASD, Resource Allocation Setting Data) che rappresentano i dischi rigidi virtuali condivisi connessi alla macchina virtuale.
 
 </dd> </dl>
 
@@ -211,10 +211,10 @@ Una matrice di dati di impostazione di allocazione risorse (RASD) che rappresent
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ee6202c7029e2c27684e15d96dd6c38680cb0678
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e70fd50d4b08787326f93cddf7ec55a0eaacb25fa815cc2b4c8246c1934494a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551831"
 ---
 # <a name="ishelldispatchbrowseforfolder-method"></a>Metodo IShellDispatch.BrowseForFolder
 
-Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**Folder della cartella**](folder.md) selezionata.
+Crea una finestra di dialogo che consente all'utente di selezionare una cartella e quindi restituisce l'oggetto [**Cartella della**](folder.md) cartella selezionata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -87,7 +87,7 @@ Valore **integer** che contiene le opzioni per il metodo. Può essere zero o una
 
 Tipo: **Variante**
 
-Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice usata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei [**valori shellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
+Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spostarsi più in alto nell'albero rispetto a questa cartella. Se questo valore non viene specificato, la cartella radice usata nella finestra di dialogo è il desktop. Questo valore può essere una stringa che specifica il percorso della cartella o uno dei valori [**ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -95,15 +95,15 @@ Cartella radice da utilizzare nella finestra di dialogo. L'utente non può spost
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **\* \* FOLDER**
+Tipo: **\* \* CARTELLA**
 
-Riferimento all'oggetto Folder [**della cartella**](folder.md) selezionata.
+Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
 
 ### <a name="vb"></a>VB
 
-Tipo: **\* \* FOLDER**
+Tipo: **\* \* CARTELLA**
 
-Riferimento all'oggetto Folder [**della cartella**](folder.md) selezionata.
+Riferimento a un oggetto all'oggetto [**Folder della cartella**](folder.md) selezionata.
 
 ## <a name="remarks"></a>Commenti
 
@@ -111,9 +111,9 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.Browse
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti usano **BrowseForFolder** per visualizzare una finestra di esplorazione denominata "Example" radice nella cartella Windows. L'utilizzo è illustrato per JScript, VBScript e Visual Basic.
+Gli esempi seguenti usano **BrowseForFolder** per visualizzare una finestra di esplorazione denominata "Example" radice nella Windows cartella. L'utilizzo viene visualizzato JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -187,7 +187,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

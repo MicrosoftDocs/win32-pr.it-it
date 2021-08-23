@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnConfirmClose
-description: Chiamato quando il client chiama il Metodo RequestClose di IMsRdpClient.
+description: Chiamato quando il client chiama il metodo IMsRdpClient RequestClose.
 ms.assetid: fb149fbc-9415-4c4c-8d4b-e22214ac38cb
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnConfirmClose
+- Metodo OnConfirmClose Servizi Desktop remoto
 - Metodo OnConfirmClose Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnConfirmClose
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnConfirmClose
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 623196033e23a964857a6a604c7eca3904f32c60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2effd50552ab227e8e065844b8b19da0e022f6b8e36d1d86701ad0614b821126
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512471"
 ---
-# <a name="imstscaxeventsonconfirmclose-method"></a>Metodo IMsTscAxEvents:: OnConfirmClose
+# <a name="imstscaxeventsonconfirmclose-method"></a>Metodo IMsTscAxEvents::OnConfirmClose
 
-Chiamato quando il client chiama il metodo [**IMsRdpClient:: RequestClose**](imsrdpclient-requestclose.md) . In risposta a questo evento, all'utente viene richiesto di confermare la chiusura della connessione. Per ulteriori informazioni, vedere la sezione Osservazioni successiva.
+Chiamato quando il client chiama il [**metodo IMsRdpClient::RequestClose.**](imsrdpclient-requestclose.md) In risposta a questo evento, all'utente deve essere richiesto di confermare la chiusura della connessione. Per ulteriori informazioni, vedere la sezione Osservazioni successiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ void OnConfirmClose(
 
 <dl> <dt>
 
-*pfAllowClose* \[ out\]
+*pfAllowClose* \[ Cambio\]
 </dt> <dd>
 
-Se **Variant \_ true**, il valore predefinito indica che l'utente desidera chiudere la connessione. Se **Variant \_ false** indica che l'utente non desidera chiudere la connessione. Per ulteriori informazioni, vedere la sezione Osservazioni successiva.
+Se **VARIANT \_ TRUE**, il valore predefinito indica che l'utente vuole chiudere la connessione. Se **VARIANT \_ FALSE,** indica che l'utente non vuole chiudere la connessione. Per ulteriori informazioni, vedere la sezione Osservazioni successiva.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un'applicazione contenitore chiama il metodo [**IMsRdpClient:: RequestClose**](imsrdpclient-requestclose.md) , il metodo restituisce un valore che indica se il contenitore deve attendere che si verifichi un evento **OnConfirmClose** prima di chiudere la connessione al controllo. Se **RequestClose** restituisce **controlCloseWaitForEvents** e l'utente è connesso e connesso alla sessione di Servizi Desktop remoto, viene generato l'evento **OnConfirmClose** . A questo punto l'applicazione contenitore può richiedere conferma all'utente, chiedendo se l'utente desidera chiudere la connessione. Se l'utente desidera chiudere la connessione, l'applicazione deve impostare il parametro *pfAllowClose* su **Variant \_ true** e procedere alla chiusura della connessione. Se l'utente non desidera chiudere, l'applicazione deve impostare *pfAllowClose* su **Variant \_ false** e lasciare aperta la connessione.
+Quando un'applicazione contenitore chiama il metodo [**IMsRdpClient::RequestClose,**](imsrdpclient-requestclose.md) tale metodo restituisce un valore che indica se il contenitore deve attendere che si verifichi un evento **OnConfirmClose** prima di chiudere la connessione del controllo. Se **RequestClose** restituisce **controlCloseWaitForEvents** e l'utente è connesso e connesso alla sessione Servizi Desktop remoto, viene generato l'evento **OnConfirmClose.** A questo punto l'applicazione contenitore può chiedere all'utente se vuole chiudere la connessione. Se l'utente vuole chiudere la connessione, l'applicazione deve impostare il *parametro pfAllowClose* su **VARIANT \_ TRUE** e procedere con la chiusura della connessione. Se l'utente non vuole chiudere, l'applicazione deve impostare *pfAllowClose* su **VARIANT \_ FALSE** e lasciare aperta la connessione.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo di tipo MS-SQL
-description: Tipo di replica utilizzato da SQL Server.
+title: Attributo MS-SQL-Type
+description: Tipo di replica usato da questo SQL server.
 ms.assetid: 8e7fa9ab-9a25-4ee3-9134-68af698a5fb8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di tipo MS-SQL
-- Schema AD dell'attributo di tipo mS-SQL
+- Schema AD dell'attributo MS-SQL-Type
+- Schema AD dell'SQL mS-SQL-Type
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 057b85b0c522a891cc31cde699fd062897c54818
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 15850884b8071fc103abf2c8d3f12ad68d4f5ed946ef2b491b4907b87b1cb524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583291"
 ---
-# <a name="ms-sql-type-attribute"></a>Attributo di tipo MS-SQL
+# <a name="ms-sql-type-attribute"></a>Attributo MS-SQL-Type
 
-Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori possibili per questo attributo.
+Tipo di replica usato da questo SQL server. I valori seguenti sono i valori possibili per questo attributo.
 
 
 
@@ -41,13 +41,13 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Tipo MS-SQL                                 |
-| LDAP-Display-Name | Tipo mS-SQL                                 |
+| CN                | MS-SQL-Type                                 |
+| Ldap-Display-Name | mS-SQL-Type                                 |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
-| Frequenza di aggiornamento  | Quando la replica è configurata.                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                        |
+| Frequenza di aggiornamento  | Quando la replica è impostata.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1391                     |
-| System-ID-GUID    | ca48eba8-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | ca48eba8-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -70,15 +70,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 
@@ -91,15 +91,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 
@@ -112,15 +112,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 
@@ -133,15 +133,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 
@@ -154,15 +154,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 
@@ -175,15 +175,15 @@ Tipo di replica utilizzato da SQL Server. Di seguito sono riportati i valori pos
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> |
 
 
 

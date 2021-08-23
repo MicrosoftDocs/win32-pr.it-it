@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Cost
+title: MSMQ-Cost attributo
 description: Costo del routing tra due siti.
 ms.assetid: 956de448-05d0-4fc0-8f11-a15ede120e47
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Cost attribute
+- MSMQ-Cost schema AD dell'attributo
 - Schema AD dell'attributo mSMQCost
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba17af8eef5e00cb30207e1fd1302194f6ce6c73
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 95271dcd70a8a081d6c65ac291c8e7e5561f42613e84bf2cbc5a4ba8d9521cd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582541"
 ---
-# <a name="msmq-cost-attribute"></a>Attributo MSMQ-Cost
+# <a name="msmq-cost-attribute"></a>MSMQ-Cost attributo
 
 Costo del routing tra due siti.
 
@@ -30,12 +30,12 @@ Costo del routing tra due siti.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Cost                            |
-| LDAP-Display-Name | mSMQCost                             |
+| Ldap-Display-Name | mSMQCost                             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.946               |
-| System-ID-GUID    | 9a0dc33a-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc33a-c100-11d1-nette5-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Costo del routing tra due siti.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Authenticate
+title: MSMQ-Authenticate attributo
 description: Indica se la coda accetta solo messaggi autenticati.
 ms.assetid: f03316e3-daae-4d1e-b135-8b4c3c2765b2
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Authenticate attribute
+- MSMQ-Authenticate schema AD dell'attributo
 - Schema AD dell'attributo mSMQAuthenticate
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5a2d3744a01834cde181f5cfcf3804a0c765415
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5e568d0ce3ef2a043c6fcfb655a11aa453a7ff704f39e26c088e8cfc40e06c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582591"
 ---
-# <a name="msmq-authenticate-attribute"></a>Attributo MSMQ-Authenticate
+# <a name="msmq-authenticate-attribute"></a>MSMQ-Authenticate attributo
 
 Indica se la coda accetta solo messaggi autenticati.
 
@@ -30,12 +30,12 @@ Indica se la coda accetta solo messaggi autenticati.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Authenticate                    |
-| LDAP-Display-Name | mSMQAuthenticate                     |
+| Ldap-Display-Name | mSMQAuthenticate                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.923               |
-| System-ID-GUID    | 9a0dc326-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc326-c100-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se la coda accetta solo messaggi autenticati.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 

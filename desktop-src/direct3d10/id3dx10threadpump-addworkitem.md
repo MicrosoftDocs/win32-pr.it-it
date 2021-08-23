@@ -1,7 +1,7 @@
 ---
-description: Aggiungere un elemento di lavoro alla pompa di thread.
+description: Aggiungere un elemento di lavoro al thread pump.
 ms.assetid: f07789dc-a3d5-4bad-9768-527e701271b8
-title: 'Metodo ID3DX10ThreadPump:: AddWorkItem (D3DX10. h)'
+title: Metodo ID3DX10ThreadPump::AddWorkItem (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: aaf5286ca6cf7b61b0027b176d9a9261bd0beaa8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 43602019018a9751453eb93f4ffb9b1c29eada6caf120a6721522982c3355dfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609321"
 ---
-# <a name="id3dx10threadpumpaddworkitem-method"></a>Metodo ID3DX10ThreadPump:: AddWorkItem
+# <a name="id3dx10threadpumpaddworkitem-method"></a>Metodo ID3DX10ThreadPump::AddWorkItem
 
-Aggiungere un elemento di lavoro alla pompa di thread.
+Aggiungere un elemento di lavoro al thread pump.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT AddWorkItem(
 
 <dl> <dt>
 
-*pDataLoader* \[ in\]
+*pDataLoader* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\***
 
-Caricatore che verrà utilizzato dal thread Pump quando un elemento di lavoro richiede il caricamento dei dati.
+Caricatore che verrà utilizzato dal thread pump quando un elemento di lavoro richiede il caricamento dei dati.
 
 </dd> <dt>
 
-*pDataProcessor* \[ in\]
+*pDataProcessor* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataProcessor**](id3dx10dataprocessor.md)\***
 
-Processore che verrà utilizzato dal thread Pump quando un elemento di lavoro richiede l'elaborazione dei dati.
+Processore che verrà utilizzato dal thread pump quando un elemento di lavoro richiede l'elaborazione dei dati.
 
 </dd> <dt>
 
-*pHResult* \[ in\]
+*pHResult* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntatore al valore restituito. Può essere **null**.
+Puntatore al valore restituito. Può essere **NULL.**
 
 </dd> <dt>
 
-*ppDeviceObject* \[ out\]
+*ppDeviceObject* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-Dispositivo che usa l'oggetto.
+Dispositivo che usa l'oggetto .
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Dispositivo che usa l'oggetto.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

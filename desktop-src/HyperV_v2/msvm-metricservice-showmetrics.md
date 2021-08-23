@@ -1,5 +1,5 @@
 ---
-description: Mostra la metrica specificata.
+description: Visualizza le metriche specificate.
 ms.assetid: 3716b5e6-b360-4719-a0f3-60b8d39deb31
 title: Metodo ShowMetrics della classe Msvm_MetricService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9823ea61864b0d87245ebe8b171195a2fd3c411a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 052f708f07a8e1074eeaa6c8089ccd410bb63af478072545d5db92af7933fc49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521471"
 ---
-# <a name="showmetrics-method-of-the-msvm_metricservice-class"></a>Metodo ShowMetrics della classe MSVM \_ MetricService
+# <a name="showmetrics-method-of-the-msvm_metricservice-class"></a>Metodo ShowMetrics della classe Msvm \_ MetricService
 
-Mostra la metrica specificata.
+Visualizza le metriche specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,45 +44,45 @@ uint32 ShowMetrics(
 
 <dl> <dt>
 
-*Oggetto* \[ in\]
+*Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Il parametro Subject identifica un'istanza di [**CIM \_ Managed**](cim-managedelement.md) per la quale il metodo restituisce riferimenti a istanze di [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) che definiscono le metriche acquisite per **CIM \_ managementelement**.
+Il parametro Subject identifica un'istanza di [**CIM \_ ManagedElement**](cim-managedelement.md) per cui il metodo restituisce riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche acquisite per **CIM \_ ManagedElement.**
 
 </dd> <dt>
 
-*Definizione* \[ di in\]
+*Definizione* \[ Pollici\]
 </dt> <dd>
 
-Il parametro Definition identifica un'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md). Il metodo restituisce riferimenti a istanze di [**CIM \_ Managed**](cim-managedelement.md) per le quali è possibile raccogliere le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** .
+Il parametro Definition identifica un'istanza di [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) Il metodo restituisce riferimenti a istanze [**di CIM \_ ManagedElement**](cim-managedelement.md) per le quali le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** sono disponibili per la raccolta.
 
 </dd> <dt>
 
-*ManagedElements* \[ out\]
+*ManagedElements* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, il parametro *ManagedElements* \[ \] può contenere riferimenti a [**CIM \_ Managed**](cim-managedelement.md) per il quale la metrica identificata dal parametro *Definition* è disponibile per la raccolta.
+Al termine del metodo, il *parametro ManagedElements* può contenere riferimenti a \[ \] [**CIM \_ ManagedElement**](cim-managedelement.md) per cui la metrica identificata dal parametro *Definition* è disponibile per la raccolta.
 
 </dd> <dt>
 
-*Definizione* \[ out\]
+*DefinitionList* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, il parametro *definitionName* può contenere riferimenti a istanze di [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per l'oggetto [**\_ gestito CIM**](cim-managedelement.md) identificato dal parametro *Subject* .
+Al termine del metodo, il *parametro DefinitionList* può contenere riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per [**CIM \_ ManagedElement**](cim-managedelement.md) identificate dal *parametro Subject.*
 
 </dd> <dt>
 
-*MetricNames* \[ out\]
+*MetricNames* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, ogni indice della matrice del parametro *MetricNames* deve contenere il valore della proprietà Name per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice della matrice corrispondente del parametro *Definition* .
+Al termine del metodo, ogni indice di matrice del parametro *MetricNames* deve contenere il valore della proprietà Name per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice di matrice corrispondente del *parametro DefinitionList.*
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ out\]
+*MetricCollectionEnabled* \[ Cambio\]
 </dt> <dd>
 
-Il parametro *MetricCollectionEnabled* indica se viene raccolta una metrica per un elemento gestito.
+Il *parametro MetricCollectionEnabled* indica se viene raccolta una metrica per un elemento gestito.
 
 <dt>
 
@@ -116,7 +116,7 @@ Il parametro *MetricCollectionEnabled* indica se viene raccolta una metrica per 
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -127,19 +127,19 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Metodo riservato** (..)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -149,9 +149,9 @@ Questo metodo restituisce uno dei valori seguenti.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -160,7 +160,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_MetricService MSVM**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

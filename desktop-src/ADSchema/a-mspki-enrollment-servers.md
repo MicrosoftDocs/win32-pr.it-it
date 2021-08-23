@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-iscrizione-Servers
+title: Attributo ms-PKI-Enrollment-Servers
 description: Priorità, tipo di autenticazione e URI di ogni servizio Web di registrazione certificati.
 ms.assetid: 7125f6da-d7ca-457f-8f90-ca7f74a363ad
 ms.tgt_platform: multiple
 keywords:
-- ms-PKI-iscrizione-schema di AD attributo Server
-- msPKI-iscrizione-schema di AD attributo Server
+- Schema AD dell'attributo ms-PKI-Enrollment-Servers
+- Schema AD dell'attributo msPKI-Enrollment-Servers
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10a05f040dbe4f32df824d8f6596b515c3e1f792
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c25e11ee7b18f02dc8df79124d217f2acfea21f538f8caacb378d11b948e1fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582241"
 ---
-# <a name="ms-pki-enrollment-servers-attribute"></a>attributo ms-PKI-iscrizione-Servers
+# <a name="ms-pki-enrollment-servers-attribute"></a>Attributo ms-PKI-Enrollment-Servers
 
 Priorità, tipo di autenticazione e URI di ogni servizio Web di registrazione certificati.
 
@@ -29,13 +29,13 @@ Priorità, tipo di autenticazione e URI di ogni servizio Web di registrazione ce
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-PKI-registrazione-server                   |
-| LDAP-Display-Name | msPKI-registrazione-server                    |
+| CN                | ms-PKI-Enrollment-Servers                   |
+| Ldap-Display-Name | msPKI-Enrollment-Servers                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2076                     |
-| System-ID-GUID    | f22bd38f-a1d0-4832-8b28-0331438886a6        |
+| System-Id-Guid    | f22bd38f-a1d0-4832-8b28-0331438886a6        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,15 +54,15 @@ Priorità, tipo di autenticazione e URI di ogni servizio Web di registrazione ce
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Priorità, tipo di autenticazione e URI di ogni servizio Web di registrazione ce
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

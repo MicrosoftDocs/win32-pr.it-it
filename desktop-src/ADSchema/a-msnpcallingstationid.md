@@ -1,6 +1,6 @@
 ---
-title: attributo msNPCallingStationID
-description: L'attributo msNPCallingStationID viene utilizzato internamente.
+title: Attributo msNPCallingStationID
+description: L'attributo msNPCallingStationID viene usato internamente.
 ms.assetid: b80abee1-3c0d-409e-ada7-e7ffd5bdfc8e
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6cdf8aa3c75d3fb33ca82c43f85e0edc14e1335
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b0c4379356c47560afe233b62fdc7ef9af7ab3ad3a0513a7f4095626dde1fbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582311"
 ---
-# <a name="msnpcallingstationid-attribute"></a>attributo msNPCallingStationID
+# <a name="msnpcallingstationid-attribute"></a>Attributo msNPCallingStationID
 
-L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modificare direttamente questo valore.
+**L'attributo msNPCallingStationID** viene usato internamente. Non modificare direttamente questo valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | msNPCallingStationID                 |
-| LDAP-Display-Name | msNPCallingStationID                 |
+| Ldap-Display-Name | msNPCallingStationID                 |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1124              |
-| System-ID-GUID    | db0c908a-c1f2-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | db0c908a-c1f2-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -57,15 +57,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ L'attributo **msNPCallingStationID** viene utilizzato internamente. Non modifica
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

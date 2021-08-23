@@ -1,7 +1,7 @@
 ---
-description: Il metodo set imposta una proprietà identificata da un GUID del set di proprietà e da un ID di proprietà.
+description: Il metodo Set imposta una proprietà identificata da un GUID del set di proprietà e da un ID di proprietà.
 ms.assetid: 78f506dc-7fb4-446d-863e-cffee9da5280
-title: 'Metodo IKsPropertySet:: set (ksproxy. h)'
+title: Metodo IKsPropertySet::Set (Ksproxy.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: b233cea7e131919d94b00afeb5a6e2ea3703c738
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f3669acb7f2d3049b909a4dc2c24363bf478c9b44ad0a91528e1e8ea466399fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639191"
 ---
-# <a name="ikspropertysetset-method"></a>Metodo IKsPropertySet:: set
+# <a name="ikspropertysetset-method"></a>Metodo IKsPropertySet::Set
 
-Il `Set` metodo imposta una proprietà identificata da un GUID del set di proprietà e da un ID di proprietà.
+Il `Set` metodo imposta una proprietà identificata da un GUID del set di proprietà e da un ID proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,59 +45,59 @@ HRESULT Set(
 
 <dl> <dt>
 
-*guidPropSet* \[ in\]
+*guidPropSet* \[ Pollici\]
 </dt> <dd>
 
 GUID del set di proprietà.
 
 </dd> <dt>
 
-*dwPropID* \[ in\]
+*dwPropID* \[ Pollici\]
 </dt> <dd>
 
 Identificatore della proprietà all'interno del set di proprietà.
 
 </dd> <dt>
 
-*pInstanceData* \[ in\]
+*pInstanceData* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a un buffer che contiene i dati dell'istanza per la proprietà.
 
 </dd> <dt>
 
-*cbInstanceData* \[ in\]
+*cbInstanceData* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni del buffer *pInstanceData* in byte.
+Dimensioni del buffer *pInstanceData,* in byte.
 
 </dd> <dt>
 
-*pPropData* \[ in\]
+*pPropData* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a un buffer che contiene il valore della proprietà.
 
 </dd> <dt>
 
-*cbPropData* \[ in\]
+*cbPropData* \[ Pollici\]
 </dt> <dd>
 
-Sise del buffer *pPropData* , in byte.
+Sise del buffer *pPropData,* in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                              | Descrizione                                                                 |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                     | Esito positivo.<br/>                                                         |
-| <dl> <dt>**\_Set Prop \_ non \_ supportato**</dt> </dl> | Il set di proprietà non è supportato.<br/>                               |
-| <dl> <dt>**\_ID Prop \_ non \_ supportato**</dt> </dl>  | ID di proprietà non supportato per il set di proprietà specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Operazione completata.<br/>                                                         |
+| <dl> <dt>**E \_ PROP \_ SET \_ UNSUPPORTED**</dt> </dl> | Il set di proprietà non è supportato.<br/>                               |
+| <dl> <dt>**E \_ PROP \_ ID \_ UNSUPPORTED**</dt> </dl>  | L'ID della proprietà non è supportato per il set di proprietà specificato.<br/> |
 
 
 
@@ -106,11 +106,11 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Nel file di intestazione DSOUND. h esiste un'altra interfaccia con questo nome. Le due interfacce non sono compatibili. L'interfaccia **IKsControl** , documentata in DirectShow DDK, è ora l'interfaccia consigliata per passare i set di proprietà tra i driver WDM e i componenti in modalità utente.
+> Un'altra interfaccia con questo nome esiste nel file di intestazione dsound.h. Le due interfacce non sono compatibili. **L'interfaccia IKsControl,** documentata in DirectShow DDK, è ora l'interfaccia consigliata per il passaggio di set di proprietà tra i driver WDM e i componenti in modalità utente.
 
  
 
-Prima di ksproxy. h, è necessario includere KS. h.
+È necessario includere Ks.h prima di Ksproxy.h.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,8 +120,8 @@ Prima di ksproxy. h, è necessario includere KS. h.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Ksproxy. h</dt> </dl>    |
-| Libreria<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ksproxy.h</dt> </dl>    |
+| Libreria<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

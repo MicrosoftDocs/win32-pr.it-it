@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-SQL-ThirdParty
-description: Questo attributo indica se i dati della pubblicazione provengano da un'origine dati diversa da SQL Server. Se si tratta di un'altra origine, viene impostata su TRUE.
+description: Questo attributo indica se i dati della pubblicazione derivano da un'origine dati diversa da SQL Server. Se è di un'altra origine, viene impostato su TRUE.
 ms.assetid: 84d93b9f-0acc-47da-9f1b-44d8468ad53e
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cc2b60f9589990f6357ee3c4cd24215e8af21df
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4f39ff1ba6d4c6ff20e73aef4af5c9c20fae295632127fb0ad0ea809dc0702c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583301"
 ---
 # <a name="ms-sql-thirdparty-attribute"></a>Attributo MS-SQL-ThirdParty
 
-Questo attributo indica se i dati della pubblicazione provengano da un'origine dati diversa da SQL Server. Se si tratta di un'altra origine, viene impostata su **true**.
+Questo attributo indica se i dati della pubblicazione derivano da un'origine dati diversa da SQL Server. Se è di un'altra origine, viene impostato su **TRUE.**
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-ThirdParty                    |
-| LDAP-Display-Name | mS-SQL-ThirdParty                    |
+| Ldap-Display-Name | mS-SQL-ThirdParty                    |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | Quando la replica è impostata.           |
 | Attribute-Id      | 1.2.840.113556.1.4.1407              |
-| System-ID-GUID    | c4e311fc-d34b-11d2-999a-0000f87a57d4 |
+| System-Id-Guid    | c4e311fc-d34b-11d2-999a-0000f87a57d4 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo indica se i dati della pubblicazione provengano da un'origine d
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

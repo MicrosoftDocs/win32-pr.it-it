@@ -1,28 +1,28 @@
 ---
 title: Proprietà ContainerHandledFullScreen di IMsTscAdvancedSettings
-description: Specifica se la modalità a schermo intero gestita dal contenitore è abilitata.
+description: Specifica se la modalità schermo intero gestita dal contenitore è abilitata.
 ms.assetid: 67679323-4a74-4d91-abd0-607415295f3d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsTscAdvancedSettings
-- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
-- Servizi Desktop remoto proprietà ContainerHandledFullScreen, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsTscAdvancedSettings
+- Interfaccia IMsTscAdvancedSettings Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Interfaccia containerHandledFullScreen Servizi Desktop remoto , IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Interfaccia ContainerHandledFullScreen Servizi Desktop remoto , IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
+- Proprietà ContainerHandledFullScreen Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ContainerHandledFullScreen
 topic_type:
 - apiref
 api_name:
@@ -59,19 +59,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7442ce16e2ff30ca2d9b3bd529d37382d1df41
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 975581aaca4aad2511396e8ec426a7bf2a4720ff54202d42fbe932c0c2e9464d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513121"
 ---
-# <a name="imstscadvancedsettingscontainerhandledfullscreen-property"></a>Proprietà IMsTscAdvancedSettings:: ContainerHandledFullScreen
+# <a name="imstscadvancedsettingscontainerhandledfullscreen-property"></a>Proprietà IMsTscAdvancedSettings::ContainerHandledFullScreen
 
-Specifica se la modalità a schermo intero gestita dal contenitore è abilitata.
+Specifica se la modalità schermo intero gestita dal contenitore è abilitata.
 
 > [!Note]  
-> Il valore della proprietà **ContainerHandledFullScreen** non ha alcun effetto quando il controllo ActiveX Desktop remoto è sicuro per lo scripting e restituisce **\_ false** quando viene effettuato un tentativo di modificare il valore.
+> Il valore della proprietà **ContainerHandledFullScreen** non ha alcun effetto quando il controllo Desktop remoto ActiveX è sicuro per lo scripting e restituisce **S \_ FALSE** quando viene effettuato un tentativo di modifica del valore.
 
  
 
@@ -94,19 +94,19 @@ HRESULT get_ContainerHandledFullScreen(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **true** per abilitare la modalità o un altro valore per disabilitare la modalità.
+Impostare questo parametro su **TRUE** per abilitare la modalità o un altro valore per disabilitare la modalità.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo. Restituisce **\_ false** se non è supportato.
+Restituisce **S \_ OK in** caso di esito positivo. Restituisce **S \_ FALSE se** non è supportato.
 
 ## <a name="remarks"></a>Commenti
 
-Quando questa modalità è abilitata, il contenitore corrente elabora il passaggio in e fuori dalla modalità schermo intero. Questo metodo deve essere utilizzato solo se il contenitore corrente necessita di un controllo esteso sul comportamento della modalità a schermo intero. Quando questa proprietà è impostata, il controllo non entra o esce dalla modalità a schermo intero in risposta alla combinazione di tasti di scelta rapida della modalità schermo intero (CTRL + ALT + INTERr); vengono invece chiamati gli eventi [**IMsTscAxEvents:: OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md) e [**IMsTscAxEvents:: OnRequestLeaveFullScreen**](imstscaxevents-onrequestleavefullscreen.md) . Per ulteriori informazioni su questi eventi, vedere [**IMsTscAxEvents**](imstscaxevents-interface.md) .
+Quando questa modalità è abilitata, il contenitore corrente elabora l'attivazione e la uscita dalla modalità schermo intero. Questo metodo deve essere usato solo se il contenitore corrente richiede un controllo completo sul comportamento della modalità schermo intero. Quando questa proprietà è impostata, il controllo non entra o esce dalla modalità schermo intero in risposta alla combinazione di tasti di scelta rapida per la modalità schermo intero (CTRL+ALT+INTERR); Vengono invece chiamati gli eventi [**IMsTscAxEvents::OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md) e [**IMsTscAxEvents::OnRequestLeaveFullScreen.**](imstscaxevents-onrequestleavefullscreen.md) Per altre informazioni su questi eventi, vedere [**IMsTscAxEvents.**](imstscaxevents-interface.md)
 
-La maggior parte delle applicazioni contenitore non dovrà usare la modalità a schermo intero gestita dal contenitore.
+La maggior parte delle applicazioni contenitore non dovrà usare la modalità schermo intero gestita dal contenitore.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,7 +118,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsTscAdvancedSettings è definito come 809945cc-4b3b-4A92-a6b0-dbf9b5f2ef2d<br/> |
+| IID<br/>                      | IMsTscAdvancedSettings IID è definito come \_ 809945cc-4b3b-4a92-a6b0-dbf9b5f2ef2d<br/> |
 
 
 

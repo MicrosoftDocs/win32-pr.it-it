@@ -1,6 +1,6 @@
 ---
-title: attributo ms-PKI-RoamingTimeStamp
-description: Timestamp relativo all'Ultima modifica apportata ai token di roaming.
+title: Attributo ms-PKI-RoamingTimeStamp
+description: Timestamp per l'ultima modifica ai token mobili.
 ms.assetid: 43af0a4d-e9a3-4116-ba08-f76bd6cd3c6f
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70d2f3747eeea79624ee6f7f72ac73b67c6f8f13
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e20d9dbb7f1902a7fd13eb2b3d8705ae29e975bb39e01d5abffceeaeb9ab1ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582141"
 ---
-# <a name="ms-pki-roamingtimestamp-attribute"></a>attributo ms-PKI-RoamingTimeStamp
+# <a name="ms-pki-roamingtimestamp-attribute"></a>Attributo ms-PKI-RoamingTimeStamp
 
-Timestamp relativo all'Ultima modifica apportata ai token di roaming.
+Timestamp per l'ultima modifica ai token mobili.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-PKI-RoamingTimeStamp                               |
-| LDAP-Display-Name | msPKIRoamingTimeStamp                                 |
+| Ldap-Display-Name | msPKIRoamingTimeStamp                                 |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1892                               |
-| System-ID-GUID    | 6617e4ac-a2f1-43ab-b60c-11fbd1facf05                  |
+| System-Id-Guid    | 6617e4ac-a2f1-43ab-b60c-11fbd1facf05                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,15 +55,15 @@ Timestamp relativo all'Ultima modifica apportata ai token di roaming.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Timestamp relativo all'Ultima modifica apportata ai token di roaming.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Timestamp relativo all'Ultima modifica apportata ai token di roaming.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

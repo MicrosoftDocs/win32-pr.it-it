@@ -3,72 +3,72 @@ title: Sottotipi di supporti compressi
 description: Sottotipi di supporti compressi
 ms.assetid: 0ed6b4e8-6450-4484-90d6-efa2f9101782
 keywords:
-- Windows Media Format SDK, tipi di supporto
-- Formati di sistemi avanzati (ASF), tipi di supporto
-- ASF (formato di sistemi avanzati), tipi di supporto
+- Windows MEDIA Format SDK, tipi di supporti
+- Advanced Systems Format (ASF), tipi di supporti
+- ASF (Advanced Systems Format), tipi di supporti
 - Windows Media Format SDK, sottotipi di supporti compressi
-- Formati di sistemi avanzati (ASF), sottotipi di supporti compressi
+- Advanced Systems Format (ASF), sottotipi di supporti compressi
 - ASF (Advanced Systems Format), sottotipi di supporti compressi
 - tipi di supporti, sottotipi di supporti compressi
 - sottotipi di supporti compressi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d92d192d04257f0375a618dda05aa97fd3f344b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f231c9c8ff666c11d3fb3bf101dc3b43c1cd2ff90ca3a28ca1af0113fe8fccd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548091"
 ---
 # <a name="compressed-media-subtypes"></a>Sottotipi di supporti compressi
 
-Nella tabella seguente sono elencati i sottotipi di supporti compressi. Questi tipi vengono usati per identificare i flussi compressi in un file. Quando si configura un flusso video o audio, questi tipi vengono in genere utilizzati.
+Nella tabella seguente sono elencati i sottotipi dei supporti compressi. Questi tipi vengono usati per identificare i flussi compressi in un file. Quando si configura un flusso video o audio, questi tipi vengono in genere utilizzati.
 
 
 
-| Sottotipo di supporti compressi          | Descrizione                                                                                                                                                                                                                                                                                 |
+| Sottotipo di supporto compresso          | Descrizione                                                                                                                                                                                                                                                                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_ACELPNET WMMEDIASUBTYPE          | Codifica audio con il codec ACELP di SIPRO Labs. Si tratta in genere di dati vocali. Non è più supportato per la codifica.                                                                                                                                                                       |
-| \_Mp43 WMMEDIASUBTYPE              | Video codificato da Microsoft MPEG 4 codec versione 3. Questo codec non è più supportato da Windows Media Format SDK. Se questo codec è già installato in un computer, l'installazione di Windows Media Format SDK o del pacchetto di ridistribuzione in un computer non comporterà la rimozione di questo codec. |
-| \_Mp4s WMMEDIASUBTYPE              | Codifica video con il codec ISO MPEG 4 versione 1.                                                                                                                                                                                                                                         |
-| VIDEO di WMMEDIASUBTYPE \_ MPEG2 \_      | Video codificato in specifiche MPEG 2.                                                                                                                                                                                                                                                     |
-| \_MSS1 WMMEDIASUBTYPE              | Video codificato con Windows Media Screen codec versione 1.                                                                                                                                                                                                                                |
-| \_Mss2 WMMEDIASUBTYPE              | Video codificato con il codec della schermata Windows Media Video 9.                                                                                                                                                                                                                                  |
-| \_WMVP WMMEDIASUBTYPE              | Codifica video con il codec di immagine Windows Media Video 9 per trasformare le bitmap e i dati di deformazione in un flusso video.                                                                                                                                                                     |
-| \_WVP2 WMMEDIASUBTYPE              | Codifica video con il codec Windows Media Video 9 image V2.                                                                                                                                                                                                                                |
-| WMMEDIASUBTYPE \_ WMAudio \_ Lossless | Codifica audio con il codec Windows Media Audio 9 Lossless o il codec Windows Media Audio 9,1.                                                                                                                                                                                           |
-| \_WMAUDIOV2 WMMEDIASUBTYPE         | Codifica audio con il codec Windows Media Audio versione 2. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV7 e WMMEDIASUBTYPE \_ WMAudioV8, perché i bitstream per queste versioni di codec sono compatibili.                                                                             |
-| \_WMAUDIOV7 WMMEDIASUBTYPE         | Codifica audio con il codec Windows Media Audio versione 7. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV2 e WMMEDIASUBTYPE \_ WMAudioV8, perché i bitstream per queste versioni di codec sono compatibili.                                                                             |
-| \_WMAUDIOV8 WMMEDIASUBTYPE         | Codifica audio con il codec Windows Media Audio 8, il codec Windows Media Audio 9 o il codec Windows Media Audio 9,1. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV2 e WMMEDIASUBTYPE \_ WMAudioV7, perché i bitstream per queste versioni di codec sono compatibili.              |
-| \_WMAUDIOV9 WMMEDIASUBTYPE         | Codifica audio con il codec Windows Media Audio 9 Professional o il codec Windows Media Audio 9,1 Professional.                                                                                                                                                                          |
-| \_M4S2 WMMEDIASUBTYPE              | Video codificato con il codec ISO MPEG4 v 1.1.                                                                                                                                                                                                                                                |
-| \_WMSP1 WMMEDIASUBTYPE             | Codifica audio con il codec Windows Media Audio 9 Voice.                                                                                                                                                                                                                                   |
-| \_WMV1 WMMEDIASUBTYPE              | Codifica video con il codec Windows Media Video versione 7.                                                                                                                                                                                                                                |
-| \_WMV2 WMMEDIASUBTYPE              | Codifica video con il codec Windows Media Video 8.                                                                                                                                                                                                                                        |
-| \_WMV3 WMMEDIASUBTYPE              | Codifica video con il codec Windows Media Video 9.                                                                                                                                                                                                                                        |
-| \_WMVA WMMEDIASUBTYPE              | Codifica video con la versione del codec di profilo avanzato Windows Media Video 9 rilasciato con Windows Media Format 9 Series SDK.                                                                                                                                           |
-| \_WVC1 WMMEDIASUBTYPE              | Codifica video con la versione del codec del profilo avanzato Windows Media Video 9 rilasciato con Windows Media Format 11 SDK. Questo sottotipo identifica un flusso di bit conforme allo standard SMPTE VC-1.                                                            |
+| WMMEDIASUBTYPE \_ ACELPnet          | Audio codificato con il codec Sipro Labs ACELP. Questo audio è in genere dati vocali. (Non più supportato per la codifica).                                                                                                                                                                       |
+| WMMEDIASUBTYPE \_ MP43              | Video codificato dal codec Microsoft MPEG 4 versione 3. Questo codec non è più supportato da Windows Media Format SDK. Se questo codec è già installato in un computer, l'installazione di Windows Media Format SDK o del pacchetto di ridistribuzione in un computer non rimuoverà questo codec. |
+| WMMEDIASUBTYPE \_ MP4S              | Video codificato con il codec ISO MPEG 4 versione 1.                                                                                                                                                                                                                                         |
+| WMMEDIASUBTYPE \_ MPEG2 \_ VIDEO      | Video codificato in specifiche MPEG 2.                                                                                                                                                                                                                                                     |
+| WMMEDIASUBTYPE \_ MSS1              | Video codificato con il codec Windows Media Screen versione 1.                                                                                                                                                                                                                                |
+| WMMEDIASUBTYPE \_ MSS2              | Video codificato con il codec Windows Media Video 9 Screen.                                                                                                                                                                                                                                  |
+| WMMEDIASUBTYPE \_ WMVP              | Video codificato con il codec Windows Media Video 9 Image per trasformare bitmap e dati di deformazioni in un flusso video.                                                                                                                                                                     |
+| WMMEDIASUBTYPE \_ WVP2              | Video codificato con il codec Windows Media Video 9 Image v2.                                                                                                                                                                                                                                |
+| WMMEDIASUBTYPE \_ WMAudio \_ Lossless | Audio codificato con il codec Windows Media Audio 9 Lossless o il codec Windows Media Audio 9.1.                                                                                                                                                                                           |
+| WMMEDIASUBTYPE \_ WMAudioV2         | Audio codificato con il codec Windows Media Audio versione 2. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV7 e WMMEDIASUBTYPE WMAudioV8, perché i bitstream per queste versioni \_ del codec sono compatibili.                                                                             |
+| WMMEDIASUBTYPE \_ WMAudioV7         | Audio codificato con il codec Windows Media Audio versione 7. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV2 e WMMEDIASUBTYPE WMAudioV8, perché i bitstream per queste versioni \_ del codec sono compatibili.                                                                             |
+| WMMEDIASUBTYPE \_ WMAudioV8         | Audio codificato con il codec Windows Media Audio 8, Windows Media Audio 9 o Windows Media Audio 9.1. Questo valore è identico a WMMEDIASUBTYPE \_ WMAudioV2 e WMMEDIASUBTYPE WMAudioV7, perché i bitstream per queste versioni \_ del codec sono compatibili.              |
+| WMMEDIASUBTYPE \_ WMAudioV9         | Audio codificato con il codec Windows Media Audio 9 Professional o Windows Media Audio 9.1 Professional codec.                                                                                                                                                                          |
+| WMMEDIASUBTYPE \_ M4S2              | Video codificato con il codec ISO MPEG4 v1.1.                                                                                                                                                                                                                                                |
+| WMMEDIASUBTYPE \_ WMSP1             | Audio codificato con il codec Windows Media Audio 9 Voice.                                                                                                                                                                                                                                   |
+| WMMEDIASUBTYPE \_ WMV1              | Video codificato usando il codec Windows Media Video versione 7.                                                                                                                                                                                                                                |
+| WMMEDIASUBTYPE \_ WMV2              | Video codificato usando il codec Windows Media Video 8.                                                                                                                                                                                                                                        |
+| WMMEDIASUBTYPE \_ WMV3              | Video codificato usando il codec Windows Media Video 9.                                                                                                                                                                                                                                        |
+| WMMEDIASUBTYPE \_ WMVA              | Video codificato usando la versione del codec Windows Media Video 9 Advanced Profile rilasciato con Windows Media Format 9 Series SDK.                                                                                                                                           |
+| WMMEDIASUBTYPE \_ WVC1              | Video codificato usando la versione del codec Windows Media Video 9 Advanced Profile rilasciato con Windows Media Format 11 SDK. Questo sottotipo identifica un flusso di bit conforme allo standard SMPTE VC-1.                                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Identificatori del tipo di supporto**](media-type-identifiers.md)
+[**Identificatori dei tipi di supporti**](media-type-identifiers.md)
 </dt> <dt>
 
-[**Tipi di supporto**](media-types.md)
+[**Tipi di supporti**](media-types.md)
 </dt> <dt>
 
 [**Sottotipi di supporti non compressi**](uncompressed-media-subtypes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta una raccolta di altre raccolte.
 ms.assetid: 1f7f5517-55d9-44a3-b0ca-444a9d7d5941
-title: Classe Msvm_ManagementCollection
+title: Msvm_ManagementCollection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2d3499bb161495152b6de4b8aebd7c64d041d069
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d4f349e6c250c05a0eb1690ae091f7c787d2d100bc5dca0a1250292fab3d5a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521731"
 ---
-# <a name="msvm_managementcollection-class"></a>MSVM \_ managementcollection (classe)
+# <a name="msvm_managementcollection-class"></a>Classe Msvm \_ ManagementCollection
 
 Rappresenta una raccolta di altre raccolte.
 
@@ -41,26 +41,26 @@ class Msvm_ManagementCollection : CIM_CollectionOfMSEs
 
 ## <a name="members"></a>Members
 
-La classe **MSVM \_ managementcollection** presenta questi tipi di membri:
+La **classe Msvm \_ ManagementCollection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MSVM \_ managementcollection** dispone di queste proprietà.
+La **classe Msvm \_ ManagementCollection** ha queste proprietà.
 
 <dl> <dt>
 
 **CollectionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionId"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificazione univoca dell'oggetto raccolta.
@@ -70,7 +70,7 @@ Identificazione univoca dell'oggetto raccolta.
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -89,10 +89,10 @@ Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia 
 
 <dl> <dt>
 
-[**\_COLLECTIONOFMSES CIM**](cim-collectionofmses.md)
+[**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md)
 </dt> </dl>
 
  

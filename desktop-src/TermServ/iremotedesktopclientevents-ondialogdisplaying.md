@@ -4,7 +4,7 @@ description: Chiamato prima che il controllo visualizzi una finestra di dialogo.
 ms.assetid: 931CA49C-713C-4C90-A806-D0E88F60567A
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnDialogDisplaying
+- Metodo OnDialogDisplaying Servizi Desktop remoto
 - Metodo OnDialogDisplaying Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
 - Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnDialogDisplaying
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaf3d69657147845dcd2114cd4a1f3b4f68a962f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4eb2351a62432118424ce3b434c3beed305dc50af8b956ff081df15f3a146f27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511671"
 ---
-# <a name="iremotedesktopclienteventsondialogdisplaying-method"></a>Metodo IRemoteDesktopClientEvents:: OnDialogDisplaying
+# <a name="iremotedesktopclienteventsondialogdisplaying-method"></a>Metodo IRemoteDesktopClientEvents::OnDialogDisplaying
 
 Chiamato prima che il controllo visualizzi una finestra di dialogo.
 

@@ -1,25 +1,25 @@
 ---
-description: Una volta eseguito correttamente il commit della coda, sarà necessario aggiornare le informazioni del registro di sistema per il prodotto che si sta installando.
+description: Al termine del commit della coda, sarà necessario aggiornare le informazioni del Registro di sistema per il prodotto che si sta installando.
 ms.assetid: 32161538-c1bd-41a0-bb4f-a32883fe8285
-title: Aggiornamento delle informazioni del registro di sistema
+title: Aggiornamento delle informazioni del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4aa6a77f231f3a4fe754b589e3f20ed67e78e548
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 579ef64739bbe063d6fed19234a74b89b86b8b257793a1a26e83fd651256d189
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683051"
 ---
-# <a name="updating-registry-information"></a>Aggiornamento delle informazioni del registro di sistema
+# <a name="updating-registry-information"></a>Aggiornamento delle informazioni del Registro di sistema
 
-Una volta eseguito correttamente il commit della coda, sarà necessario aggiornare le informazioni del registro di sistema per il prodotto che si sta installando. Prima di modificare le informazioni del registro di sistema, si consiglia di attendere il completamento di tutte le operazioni di copia del file necessarie.
+Al termine del commit della coda, sarà necessario aggiornare le informazioni del Registro di sistema per il prodotto che si sta installando. È consigliabile attendere il completamento di tutte le operazioni di copia file necessarie prima di modificare le informazioni del Registro di sistema.
 
-Un modo per aggiornare il registro di sistema consiste nel chiamare [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) con il INIFILES spinoso, il registro di sistema di rotazione \_ o i \_ \_ flag INI2REG spinti specificati. Questi flag possono essere combinati in una sola chiamata a **SetupInstallFromInfSection**.
+Un modo per aggiornare il Registro di sistema è chiamare [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) con i flag SPINST \_ INIFILES, SPINST REGISTRY o \_ SPINST \_ INI2REG specificati. Questi flag possono essere combinati in una sola chiamata a **SetupInstallFromInfSection**.
 
-Nell'esempio seguente vengono utilizzati \_ tutti i ^ file rotanti \_ per indicare che la funzione deve elaborare tutte le operazioni elencate ad eccezione delle operazioni sui file. Poiché nella sezione **Install** sono elencate solo le operazioni ini, registro di sistema e file, si tratta di un metodo a sintassi abbreviata per specificare che la funzione deve elaborare tutte le operazioni ini e del registro di sistema.
+L'esempio seguente usa SPINST ALL^SPINST FILES per indicare che la funzione deve elaborare tutte le operazioni \_ elencate, ad eccezione delle operazioni sui \_ file. Poiché nella sezione Install sono elencate solo  le operazioni INI, registry e file, si tratta di un metodo abbreviato per specificare che la funzione deve elaborare tutte le operazioni INI e del Registro di sistema.
 
-Nell'esempio seguente viene illustrato come installare le informazioni del registro di sistema tramite la funzione **SetupInstallFromINFSection** .
+L'esempio seguente illustra come installare le informazioni del Registro di sistema usando la **funzione SetupInstallFromINFSection.**
 
 ``` syntax
 Test = SetupInstallFromINFSection (
@@ -39,9 +39,9 @@ Test = SetupInstallFromINFSection (
 );
 ```
 
-Nell'esempio *OwnerWindow* è **null** perché solo le operazioni sui file generano finestre di dialogo e pertanto non è necessaria una finestra padre. "MyInf" è il file INF contenente la sezione da elaborare. Il parametro "sezione" specifica la sezione da installare. I flag combinati, RUOTAndo \_ tutti i ^ \_ file spinti, specificano le operazioni di installazione da elaborare, in questo caso tutte le operazioni ad eccezione dei file. Il percorso radice di origine viene specificato come "A: \\ ".
+Nell'esempio *OwnerWindow* è **NULL** perché solo le operazioni sui file generano finestre di dialogo e pertanto non è necessaria una finestra padre. "MyInf" è il file INF contenente la sezione da elaborare. Il parametro "MySection" specifica la sezione da installare. I flag combinati, SPINST ALL ^ SPINST FILES, specificano le operazioni di installazione da elaborare, in questo caso tutte le operazioni \_ tranne le operazioni sui \_ file. Il percorso radice di origine viene specificato come "A: \\ ".
 
-Poiché non viene elaborata alcuna operazione di copia, non vengono specificati i parametri *CopyFlags*, *MsgHandler*, *context*, *DeviceInfoSet* e *DeviceInfoData* .
+Poiché non viene elaborata alcuna operazione di copia, i parametri *CopyFlags*, *MsgHandler*, *Context*, *DeviceInfoSet* e *DeviceInfoData* non sono specificati.
 
  
 

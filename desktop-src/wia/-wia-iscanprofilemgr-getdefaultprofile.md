@@ -1,7 +1,7 @@
 ---
 description: Ottiene il profilo di analisi predefinito.
 ms.assetid: 0e5ca06a-78ca-4d24-8dda-26babc3124b5
-title: 'Metodo IScanProfileMgr:: GetDefaultProfile (Scanprofilemgr. h)'
+title: Metodo IScanProfileMgr::GetDefaultProfile (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: e058094fc29510d6e073abc0b05374403a2b5cd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a496a2e606e389f8b2e1dfd7808d56e4360108a27ef66fbc0937ef1040514e44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549761"
 ---
-# <a name="iscanprofilemgrgetdefaultprofile-method"></a>Metodo IScanProfileMgr:: GetDefaultProfile
+# <a name="iscanprofilemgrgetdefaultprofile-method"></a>Metodo IScanProfileMgr::GetDefaultProfile
 
 Ottiene il profilo di analisi predefinito.
 
@@ -40,7 +40,7 @@ HRESULT GetDefaultProfile(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ in\]
+*bstrDeviceID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -49,7 +49,7 @@ ID del dispositivo.
 
 </dd> <dt>
 
-*ppScanProfile* \[ out\]
+*ppScanProfile* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -62,11 +62,11 @@ Indirizzo di un puntatore al profilo predefinito del dispositivo.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il profilo predefinito contiene un `<Default>` elemento.
+Il profilo predefinito include un `<Default>` elemento .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,10 +74,10 @@ Il profilo predefinito contiene un `<Default>` elemento.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

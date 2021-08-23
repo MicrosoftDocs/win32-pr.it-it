@@ -1,10 +1,10 @@
 ---
 title: Metodo IMsTscAxEvents OnEnterFullScreenMode
-description: Chiamato quando il client entra in modalità schermo intero. Questo evento, ad esempio, viene chiamato quando l'utente preme la combinazione di tasti di scelta rapida per la modalità schermo intero (CTRL + ALT + INTERr).
+description: Chiamato quando il client entra in modalità schermo intero. Ad esempio, questo evento viene chiamato quando l'utente preme la combinazione di tasti di scelta rapida per la modalità schermo intero (CTRL+ALT+INTERR).
 ms.assetid: dc772492-59a2-4403-8b9a-0aff1801aa6f
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnEnterFullScreenMode
+- Metodo OnEnterFullScreenMode Servizi Desktop remoto
 - Metodo OnEnterFullScreenMode Servizi Desktop remoto, interfaccia IMsTscAxEvents
 - Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnEnterFullScreenMode
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 226054fc7b1371bb088deb70ec9e87ea5a340b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31e40da93f0e29fb183cea540b0f195d61c4969d65c2b7829bf86d8e3c8eba81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512401"
 ---
-# <a name="imstscaxeventsonenterfullscreenmode-method"></a>Metodo IMsTscAxEvents:: OnEnterFullScreenMode
+# <a name="imstscaxeventsonenterfullscreenmode-method"></a>Metodo IMsTscAxEvents::OnEnterFullScreenMode
 
-Chiamato quando il client entra in modalità schermo intero. Questo evento, ad esempio, viene chiamato quando l'utente preme la combinazione di tasti di [scelta rapida](terminal-services-shortcut-keys.md) per la modalità schermo intero (CTRL + ALT + INTERR).
+Chiamato quando il client entra in modalità schermo intero. Ad esempio, questo evento viene chiamato quando l'utente preme la combinazione di tasti di scelta rapida per la modalità schermo intero (CTRL+ALT+INTERR). [](terminal-services-shortcut-keys.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

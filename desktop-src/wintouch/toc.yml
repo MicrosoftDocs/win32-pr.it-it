@@ -1,34 +1,34 @@
 - name: Input tocco
   href: windows-touch-portal.md
   items:
-    - name: Informazioni su Windows Touch
+    - name: Informazioni Windows Touch
       href: about-the-multi-touch-sdk.md
     - name: Guida per programmatori
       href: programming-guide.md
       items:
         - name: Panoramica dell'architettura
           href: architectural-overview.md
-        - name: Scelta dell'approccio giusto per Windows Touch
+        - name: Scelta dell'approccio giusto per Windows tocco
           href: choosing-the-right-approach-to-windows-touch.md
         - name: Risoluzione dei problemi relativi alle applicazioni
           href: troubleshooting-applications.md
-        - name: Input Windows Touch
+        - name: Windows Input tocco
           href: guide-multi-touch-input.md
           items:
-            - name: Introduzione con i messaggi di Windows Touch
+            - name: Attività iniziali con i Windows touch
               href: getting-started-with-multi-touch-messages.md
             - name: Rilevamento e rilevamento di più punti di tocco
               href: detecting-and-tracking-multiple-touch-points.md
-        - name: Movimenti tocco di Windows
+        - name: Windows Movimenti tocco
           href: guide-multi-touch-gestures.md
           items:
-            - name: Cenni preliminari sui movimenti tocco di Windows
+            - name: Windows Panoramica dei movimenti tocco
               href: windows-touch-gestures-overview.md
-            - name: Introduzione con i movimenti tocco di Windows
+            - name: Attività iniziali con Windows movimenti tocco
               href: getting-started-with-multi-touch-gestures.md
             - name: Supporto legacy per la panoramica con le barre di scorrimento
               href: legacy-support-for-panning-with-scrollbars.md
-            - name: Miglioramento dell'esperienza di panning a singolo dito
+            - name: Miglioramento dell'esperienza di panoramica con un singolo dito
               href: improving-the-single-finger-panning-experience.md
         - name: Modifiche e inerzia
           href: manipulation-and-inertia.md
@@ -36,12 +36,12 @@
             - name: Modifiche
               href: getting-started-with-manipulations.md
               items:
-                - name: Aggiunta del supporto per la manipolazione a codice non gestito
+                - name: Aggiunta del supporto di manipolazione al codice non gestito
                   href: adding-manipulation-support-in-unmanaged-code.md
-                - name: Manipolazioni avanzate
+                - name: Modifiche avanzate
                   href: advanced-manipulations.md
                   items:
-                    - name: Cenni preliminari sulle manipolazioni avanzate
+                    - name: Panoramica delle modifiche avanzate
                       href: advanced-manipulations-overview.md
                     - name: Espansione avanzata
                       href: advanced-expansion.md
@@ -49,7 +49,7 @@
                       href: advanced-rotation.md
                     - name: Traduzione avanzata
                       href: advanced-translation.md
-                - name: Rotazione di un singolo dito
+                - name: Rotazione di un dito singolo
                   href: single-finger-rotation.md
             - name: Inerzia
               href: getting-started-with-inertia.md
@@ -58,29 +58,29 @@
                   href: inertia-mechanics.md
                 - name: Gestione dell'inerzia nel codice non gestito
                   href: handling-inertia-in-unmanaged-code.md
-    - name: Esempi di Windows Touch
+    - name: Windows Esempi di tocco
       href: windows-touch-samples.md
       items:
         - name: Esempio di manipolazione e inerzia
           href: manipulation-and-inertia-sample.md
-        - name: Esempio di movimento tocco di Windows (MTGestures)
+        - name: Windows Esempio di movimento tocco (MTGestures)
           href: windows-touch-gesture-sample--mtgestures-.md
-        - name: Movimenti tocco di Windows nell'esempio C# (MTGesturesCS)
+        - name: Windows Esempio di movimenti tocco in C# (MTGesturesCS)
           href: windows-touch-gestures-in-c--sample--mtgesturescs-.md
-        - name: Esempio di manipolazione tocco di Windows (MTManipulation)
+        - name: Windows Esempio di manipolazione del tocco (MTManipulation)
           href: windows-touch-manipulation-sample--mtmanipulation-.md
-        - name: Esempio di Windows Touch temporanei (C++)
+        - name: Windows Esempio di Touch Scratchpad (C++)
           href: windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md
-        - name: Esempio di Windows Touch temporanei (C#)
+        - name: Windows Esempio di Touch Scratchpad (C#)
           href: windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md
-        - name: Windows Touch temporanei usando l'esempio di stilo in tempo reale (C++)
+        - name: Windows Touch Scratchpad con l'esempio di stilo in tempo reale (C++)
           href: windows-touch-scratchpad-using-the-real-time-stylus-sample--mtscratchpadrtstylus-.md
-        - name: Windows Touch temporanei usando l'esempio Real-Time stilo (C#)
+        - name: Windows Toccare Scratchpad usando l'esempio Real-Time stilo (C#)
           href: windows-touch-scratchpad-using-the-real-time-stylus-in-c--sample--mtscratchpadrtstyluscs-.md
-    - name: Informazioni di riferimento sulla programmazione per Windows Touch
+    - name: Windows Informazioni di riferimento sulla programmazione con tocco
       href: windows-touch-programming-reference.md
       items:
-        - name: Commenti sui limiti
+        - name: Feedback sui limiti
           href: boundary-feedback.md
           items:
             - name: Funzioni
@@ -110,7 +110,7 @@
                           href: /windows/desktop/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta
                         - name: Metodo ManipulationCompleted
                           href: /windows/desktop/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted
-                - name: IInertiaProcessor
+                - name: Iinertiaprocessor
                   href: /windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor
                   items:
                     - name: Metodi
@@ -118,11 +118,11 @@
                       items:
                         - name: Metodo Reset
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-reset
-                        - name: Process (metodo)
+                        - name: Metodo Process
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process
                         - name: Metodo ProcessTime
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-processtime
-                        - name: Metodo complete
+                        - name: Metodo Complete
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-complete
                         - name: Metodo CompleteTime
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-completetime
@@ -151,13 +151,13 @@
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundaryright
                         - name: Proprietà BoundaryBottom
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundarybottom
-                        - name: Proprietà ElasticMarginLeft
+                        - name: ElasticMarginLeft Proprietà
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginleft
-                        - name: Proprietà ElasticMarginTop
+                        - name: ElasticMarginTop - proprietà
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmargintop
-                        - name: Proprietà ElasticMarginRight
+                        - name: ElasticMarginRight - proprietà
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginright
-                        - name: Proprietà ElasticMarginBottom
+                        - name: ElasticMarginBottom - proprietà
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginbottom
                         - name: Proprietà DesiredAngularDeceleration
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desiredangulardeceleration
@@ -187,7 +187,7 @@
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getexpansionvelocity
                         - name: Metodo GetVelocityX
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityx
-                        - name: Getvelocityy (metodo)
+                        - name: Metodo GetVelocityY
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityy
                         - name: Metodo ProcessDown
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdown
@@ -221,13 +221,13 @@
               items:
                 - name: MANIPULATION_PROCESSOR_MANIPULATIONS
                   href: /windows/desktop/api/manipulations/ne-manipulations-manipulation_processor_manipulations
-        - name: Movimenti tocco di Windows
+        - name: Windows Movimenti tocco
           href: multi-touch-gestures.md
           items:
             - name: Costanti
               href: constants.md
               items:
-                - name: Movimenti tocco di Windows
+                - name: Windows Movimenti tocco
                   href: windows-touch-gestures-constants.md
             - name: Funzioni
               href: mtgfunctions.md
@@ -265,7 +265,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-gestureinfo
                 - name: GESTURENOTIFYSTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-gesturenotifystruct
-        - name: Input Windows Touch
+        - name: Windows Input tocco
           href: multi-touch-input.md
           items:
             - name: Macro
@@ -298,5 +298,5 @@
               items:
                 - name: TOUCHINPUT
                   href: /windows/win32/api/winuser/ns-winuser-touchinput
-    - name: Glossario di Windows Touch
+    - name: Windows Glossario del tocco
       href: glossary.md

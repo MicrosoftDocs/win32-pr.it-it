@@ -1,9 +1,9 @@
 ---
-title: funzione glTexGeni (GL. h)
-description: Controlla la generazione delle coordinate di trama. | funzione glTexGeni (GL. h)
+title: Funzione glTexGeni (Gl.h)
+description: Controlla la generazione delle coordinate della trama. | Funzione glTexGeni (Gl.h)
 ms.assetid: beffcb24-c99b-4b2a-a9c3-2c2cc1afe5e5
 keywords:
-- funzione glTexGeni OpenGL
+- Funzione glTexGeni OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20bb1121a8f125f06bf8e6e18f56c96fbeeb692d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: efaca73e4d9c7f4637f00f74e9cf58b8291fc3d266ef93d288acfe989f8a45c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104562569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519771"
 ---
-# <a name="gltexgeni-function"></a>glTexGeni (funzione)
+# <a name="gltexgeni-function"></a>Funzione glTexGeni
 
-Controlla la generazione delle coordinate di trama.
+Controlla la generazione delle coordinate della trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,17 +49,17 @@ Coordinata di trama. Deve essere uno dei seguenti: GL \_ S, GL \_ T, GL \_ R o G
 
 </dd> <dt>
 
-**pname** 
+**Pname** 
 </dt> <dd>
 
-Nome simbolico della funzione di generazione delle coordinate di trama.
+Nome simbolico della funzione di generazione delle coordinate della trama.
 
 </dd> <dt>
 
 *param* 
 </dt> <dd>
 
-Un parametro di generazione della trama a valore singolo, uno tra GL \_ Object \_ Linear, GL \_ Eye \_ Linear o GL \_ Sphere \_ map.
+Un singolo parametro di generazione di trame con valore, uno di GL \_ OBJECT \_ LINEAR, GL \_ EYE LINEAR o GL SPHERE \_ \_ \_ MAP.
 
 </dd> </dl>
 
@@ -69,63 +69,63 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Coord* o *pname* non è un valore definito accettato oppure *pname* è la \_ \_ modalità di generazione della trama GL \_ e *params* non è un valore definito accettato.<br/> |
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *pname* è la \_ modalità di generazione della trama GL \_ \_ , *params* è la \_ mappa GL sphere \_ e *Coord* è stato GL \_ R o GL \_ Q<br/>                                     |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). <br/>                 |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *coord* o *pname* non è un valore definito accettato oppure *pname* è GL TEXTURE GEN MODE e params non è \_ un valore definito \_ \_ accettato. <br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *pname* era GL \_ TEXTURE \_ GEN \_ MODE, *params* era GL \_ SPHERE MAP e \_ *coord* era GL \_ R o GL \_ Q<br/>                                     |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). <br/>                 |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glTexGen** seleziona una funzione di generazione della coordinata di trama o fornisce coefficienti per una delle funzioni. Il parametro *Coord* denomina una delle coordinate di trama (s, t, r, q) e deve essere uno dei simboli seguenti: GL \_ s, GL \_ t, GL \_ r o GL \_ q. Il parametro *pname* deve essere una delle tre costanti simboliche, ovvero la \_ modalità gen della trama GL, il piano dell' \_ \_ oggetto GL o il \_ \_ piano GL \_ Eye \_ . Se *pname* è \_ la modalità di generazione della trama GL \_ \_ , *param* specifica una modalità, una della \_ mappa GL Object \_ Linear, GL \_ Eye \_ Linear o GL \_ Sphere \_ . Se *pname* è un piano \_ di oggetti GL \_ o \_ \_ un piano con occhio GL, *param* contiene coefficienti per la funzione di generazione della trama corrispondente.
+La **funzione glTexGen** seleziona una funzione di generazione delle coordinate di trama o fornisce coefficienti per una delle funzioni. Il *parametro coord* fa nome a una delle coordinate di trama (s,t,r,q) e deve essere uno di questi simboli: GL \_ S, GL T, GL R o GL \_ \_ \_ Q. Il *parametro pname* deve essere una delle tre costanti simboliche: GL \_ TEXTURE GEN \_ \_ MODE, GL OBJECT PLANE o GL \_ EYE \_ \_ \_ PLANE. Se *pname* è GL TEXTURE GEN MODE, param specifica una modalità, una di \_ GL OBJECT \_ \_  \_ \_ LINEAR, GL EYE LINEAR o GL \_ SPHERE \_ \_ \_ MAP. Se *pname è* GL OBJECT PLANE o GL EYE PLANE, il parametro contiene \_ \_ \_ \_ coefficienti per la funzione di generazione della trama corrispondente. 
 
-Se la funzione di generazione della trama è un \_ oggetto GL \_ lineare, la funzione
+Se la funzione di generazione della trama è GL \_ OBJECT \_ LINEAR, la funzione
 
-! [Equazione che mostra la funzione glTexGen quando la funzione di generazione della trama è GL_OBJECT_LINEAR.]
+! [Equazione che mostra la funzione glTexGen quando la funzione di generazione della trama GL_OBJECT_LINEAR.]
 
-viene usato, dove g è il valore calcolato per la coordinata denominata in Coord; P1, P2, P3 e P4 sono i quattro valori specificati nei parametri; e x?, y?, z? e w? sono le coordinate dell'oggetto del vertice. È possibile usare questa funzione per mappare il terreno usando il livello Sea come piano di riferimento (definito da P1, P2, P3 e P4). La \_ \_ funzione di generazione delle coordinate lineari dell'oggetto GL calcola l'altitudine di un vertice del terreno come distanza dal livello Sea. tale altitudine viene utilizzata per indicizzare l'immagine della trama per eseguire il mapping della neve bianca ai picchi e all'erba verde sui piedi, ad esempio.
+viene usato, dove g è il valore calcolato per la coordinata denominata in coord; p1, p2, p3 e p4 sono i quattro valori forniti in params. e x?, y?, z?e w? sono le coordinate dell'oggetto del vertice. È possibile usare questa funzione per mappare il terreno usando il livello del mare come piano di riferimento (definito da p1, p2, p3 e p4). La funzione gl OBJECT LINEAR coordinate generation calcola l'altitudine di un vertice del terreno come distanza dal livello del mare. Tale altitudine viene usata per indicizzare l'immagine della trama per mappare la neve bianca sulle cime e l'erboso verde sui pedoni, \_ \_ ad esempio.
 
-Se la funzione di generazione della trama è GL \_ Eye \_ lineare, la funzione
+Se la funzione di generazione della trama è GL \_ EYE \_ LINEAR, la funzione
 
-! [Equazione che mostra la funzione glTexGen quando la funzione di generazione della trama è GL_EYE_LINEAR.]
+! [Equazione che mostra la funzione glTexGen quando la funzione di generazione della trama GL_EYE_LINEAR.]
 
 viene usato, dove
 
-![Equazione che mostra le coordinate oculari del vertice.](images/tex03.png)
+![Equazione che mostra le coordinate oculare del vertice.](images/tex03.png)
 
-e x?, y?, z? e w? sono le coordinate oculari dei vertici, P1, P2, P3 e P4 sono i valori specificati in *param* e M è la matrice Modelview quando si chiama **glTexGen**. Se M è scarsamente condizionato o singolare, le coordinate di trama generate dalla funzione risultante possono non essere accurate o indefinite.
+e x?, y?, z?e w? sono le coordinate oculare del vertice, p1, p2, p3 e p4 sono i valori forniti in *param* e M è la matrice modelview quando si chiama **glTexGen**. Se M è scarsamente condizionato o singolare, le coordinate di trama generate dalla funzione risultante possono essere imprecise o non definite.
 
-Si noti che i valori in *param* definiscono un piano di riferimento in coordinate oculari. La matrice Modelview applicata a esse potrebbe non essere la stessa in vigore quando i vertici del poligono sono trasformati. Questa funzione stabilisce un campo di coordinate di trama che può produrre linee di contorno dinamiche sullo stato degli oggetti.
+Si noti che i valori in *param* definiscono un piano di riferimento in coordinate oculare. La matrice modelview applicata potrebbe non essere la stessa in vigore quando i vertici del poligono vengono trasformati. Questa funzione stabilisce un campo di coordinate di trama in grado di produrre linee di contorno dinamiche sugli oggetti in movimento.
 
-Se *pname* è \_ \_ una mappa GL Sphere e *Coord* è GL \_ S o GL \_ T, le coordinate di trama S e T vengono generate come indicato di seguito. Consentire a u il vettore di unità che punta dall'origine al vertice del poligono (in coordinate oculari). Let n è il normale corrente, dopo la trasformazione in coordinate oculari. Let f = (FX () FY () FZ) T è il vettore di reflection in modo che
+Se *pname* è GL SPHERE MAP e \_ \_ *coord* è GL S o GL T, le coordinate di trama s e \_ t vengono generate come indicato di \_ seguito. Che u sia il vettore unità che punta dall'origine al vertice del poligono (in coordinate oculari). Lasciare che n sia la normale corrente, dopo la trasformazione in coordinate oculare. Let f = (fx ( ) fy ( ) fz)T essere il vettore di reflection in modo che
 
-![Equazione che mostra il vettore di reflection come funzione del vettore di unità e della normale corrente.](images/tex05.png)
+![Equazione che mostra il vettore di reflection come funzione del vettore unità e della normale corrente.](images/tex05.png)
 
-Infine, Let
+Infine, lasciare
 
-![Equazione che Mostra m come funzione del vettore di Reflection.](images/tex07.png)
+![Equazione che mostra m come funzione del vettore di reflection.](images/tex07.png)
 
-Quindi i valori assegnati alle coordinate di trama i e t sono
+I valori assegnati alle coordinate delle trame i e t sono quindi
 
-![Equazione che mostra i valori assegnati alle coordinate di trama i e t.](images/tex06.png)
+![Equazione che mostra i valori assegnati alle coordinate delle trame i e t.](images/tex06.png)
 
-È possibile abilitare o disabilitare una funzione di generazione della coordinata di trama usando [**glEnable**](glenable.md) o [**glDisable**](gldisable.md) con uno dei nomi di coordinati di trama simbolici (GL texture gen \_ \_ \_ S, GL \_ texture \_ gen \_ T, GL \_ texture \_ gen \_ R o GL \_ texture \_ gen \_ Q) come argomento. Quando questa funzione è abilitata, la coordinata di trama specificata viene calcolata in base alla funzione di generazione associata a tale coordinata. Quando questa funzione è disabilitata, i vertici successivi accettano la coordinata di trama specificata dal set corrente di coordinate di trama. Inizialmente, tutte le funzioni di generazione di trama sono impostate su GL \_ Eye \_ Linear e sono disabilitate. Entrambe le equazioni del piano s sono (1, 0, 0, 0); entrambe le equazioni del piano t sono (0, 1, 0, 0); e tutte le equazioni del piano r e q sono (0, 0, 0, 0).
+È possibile abilitare o disabilitare una funzione di generazione delle coordinate di trama usando [**glEnable**](glenable.md) o [**glDisable**](gldisable.md) con uno dei nomi simbolici delle coordinate di trama (GL \_ TEXTURE GEN \_ \_ S, GL TEXTURE GEN T, GL TEXTURE GEN R o GL TEXTURE GEN Q) come \_ \_ \_ \_ \_ \_ \_ \_ \_ argomento. Quando questa funzione è abilitata, la coordinata di trama specificata viene calcolata in base alla funzione di generazione associata a tale coordinata. Quando questa funzione è disabilitata, i vertici successivi prendono la coordinata di trama specificata dal set corrente di coordinate della trama. Inizialmente, tutte le funzioni di generazione delle trame sono impostate su GL \_ EYE LINEAR e sono \_ disabilitate. Entrambe le equazioni del piano sono (1,0,0,0); entrambe le equazioni del piano t sono (0,1,0,0); e tutte le equazioni del piano r e q sono (0,0,0,0).
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a glTexGen:
+Le funzioni seguenti recuperano informazioni correlate a glTexGen:
 
 <dl>
 
 [**glGetTexGen**](glgettexgen.md)  
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ texture \_ gen \_ S  
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ texture \_ gen \_ T  
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ texture \_ gen \_ R  
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ texture \_ gen \_ Q  
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ TEXTURE GEN \_ \_ S  
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ TEXTURE GEN \_ \_ T  
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ TEXTURE GEN \_ \_ R  
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ TEXTURE GEN \_ \_ Q  
 </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -136,8 +136,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a glTexGen:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -149,7 +149,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a glTexGen:
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glCopyTexImage2D**](glcopyteximage2d.md)

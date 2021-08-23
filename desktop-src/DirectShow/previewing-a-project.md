@@ -1,29 +1,29 @@
 ---
-description: Visualizzazione in anteprima di un progetto
+description: Anteprima di un Project
 ms.assetid: 2efa3f25-a93f-4362-b461-b67475e5d78c
-title: Visualizzazione in anteprima di un progetto
+title: Anteprima di un Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd9d299a99a0a7315cec986fbc044d427385647
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 159303c175c459b4d5d93ba4c7b4b2622caddac2a35d3474a3059ac703d62645
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583560"
 ---
-# <a name="previewing-a-project"></a>Visualizzazione in anteprima di un progetto
+# <a name="previewing-a-project"></a>Anteprima di un Project
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Per visualizzare in anteprima un progetto, chiamare prima **CoCreateInstance** per creare un'istanza del motore di rendering di base. L'identificatore di classe è CLSID \_ RenderEngine. Chiamare quindi il metodo [**IRenderEngine:: SetTimelineObject**](irenderengine-settimelineobject.md) per specificare la sequenza temporale di cui si sta eseguendo il rendering.
+Per visualizzare in anteprima un progetto, chiamare **prima CoCreateInstance** per creare un'istanza del motore di rendering di base. L'identificatore di classe è CLSID \_ RenderEngine. Chiamare quindi il [**metodo IRenderEngine::SetTimelineObject**](irenderengine-settimelineobject.md) per specificare la sequenza temporale di cui si esegue il rendering.
 
 La prima volta che si visualizza in anteprima la sequenza temporale, eseguire le chiamate seguenti nell'ordine elencato:
 
-1.  Chiamare [**IRenderEngine:: SetRenderRange**](irenderengine-setrenderrange.md) per specificare la parte della sequenza temporale da visualizzare in anteprima. Facoltativa
-2.  Chiamare [**IRenderEngine:: ConnectFrontEnd**](irenderengine-connectfrontend.md) per compilare il front-end del grafo.
-3.  Chiamare [**IRenderEngine:: RenderOutputPins**](irenderengine-renderoutputpins.md). Questo metodo connette ogni pin di output a un renderer video o a un renderer audio, completando il grafico.
+1.  Chiamare [**IRenderEngine::SetRenderRange**](irenderengine-setrenderrange.md) per specificare quale parte della sequenza temporale visualizzare in anteprima. Facoltativa
+2.  Chiamare [**IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) per compilare il front-end del grafo.
+3.  Chiamare [**IRenderEngine::RenderOutputPins**](irenderengine-renderoutputpins.md). Questo metodo connette ogni segnaposto di output a un renderer video o a un renderer audio, completando il grafico.
 
-Nell'esempio di codice seguente vengono illustrati questi passaggi:
+L'esempio di codice seguente illustra questi passaggi:
 
 
 ```C++
@@ -38,7 +38,7 @@ hr = pRender->RenderOutputPins();
 
 
 
-A questo punto, eseguire il grafico del filtro. Chiamare innanzitutto il metodo [**IRenderEngine:: GetFilterGraph**](irenderengine-getfiltergraph.md) per recuperare un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del gestore del grafico dei filtri. Eseguire quindi una query su Filter Graph Manager per l'interfaccia [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e chiamare [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), come illustrato nel codice seguente:
+Eseguire ora il grafico dei filtri. Chiamare prima il [**metodo IRenderEngine::GetFilterGraph**](irenderengine-getfiltergraph.md) per recuperare un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) di Filter Graph Manager. Eseguire quindi una query su Filter Graph Manager per [**l'interfaccia IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e chiamare [**IMediaControl::Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), come illustrato nel codice seguente:
 
 
 ```C++
@@ -51,17 +51,17 @@ hr = pControl->Run();
 
 
 
-Utilizzare l'interfaccia [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) di Filter Graph Manager per attendere il completamento dell'anteprima. È anche possibile cercare il grafo usando l'interfaccia [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) di Filter Graph Manager, esattamente come si farebbe con un grafico di riproduzione di file.
+Usare l'interfaccia [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) di Filter Graph Manager per attendere il completamento dell'anteprima. È anche possibile cercare il grafo usando l'interfaccia [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) di Filter Graph Manager, esattamente come si farebbe con un grafico di riproduzione di file.
 
-Per visualizzare nuovamente l'anteprima del progetto, cercare di nuovo il grafico all'ora zero e chiamare di nuovo l' **esecuzione** . Se si modifica il contenuto della sequenza temporale, procedere come segue:
+Per visualizzare nuovamente in anteprima il progetto, tornare al tempo zero per il grafo e chiamare **di nuovo Esegui.** Se si modifica il contenuto della sequenza temporale, eseguire le operazioni seguenti:
 
 1.  Chiamare **SetRenderRange**. Facoltativa
 2.  Chiamare **ConnectFrontEnd**.
-3.  Se il metodo **ConnectFrontEnd** restituisce un \_ avviso \_ OUTPUTRESET, chiamare **RenderOutputPins**. (Se **ConnectFrontEnd** restituisce S \_ OK, è possibile ignorare questo passaggio.
-4.  Ritentare il grafico fino all'ora zero.
+3.  Se il **metodo ConnectFrontEnd** restituisce S \_ WARN \_ OUTPUTRESET, chiamare **RenderOutputPins**. (Se **ConnectFrontEnd** restituisce S \_ È possibile ignorare questo passaggio.
+4.  Cercare il grafo indietro al tempo zero.
 5.  Eseguire il grafo.
 
-Nell'esempio seguente vengono illustrati i passaggi seguenti:
+L'esempio seguente illustra questi passaggi:
 
 
 ```C++
@@ -77,7 +77,7 @@ hr = pControl->Run();
 
 
 
-Per un esempio completo in cui viene caricato e visualizzato in anteprima un file di progetto, vedere [caricamento e visualizzazione in anteprima di un progetto](loading-and-previewing-a-project.md).
+Per un esempio completo che carica e visualizza in anteprima un file di progetto, vedere Caricamento e anteprima di [un Project](loading-and-previewing-a-project.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -86,7 +86,7 @@ Per un esempio completo in cui viene caricato e visualizzato in anteprima un fil
 [Gestione dei progetti di modifica video](managing-video-editing-projects.md)
 </dt> <dt>
 
-[Rendering di un progetto](rendering-a-project.md)
+[Rendering di un Project](rendering-a-project.md)
 </dt> </dl>
 
  

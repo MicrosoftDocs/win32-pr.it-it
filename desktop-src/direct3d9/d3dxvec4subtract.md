@@ -1,7 +1,7 @@
 ---
 description: Sottrae due vettori 4D.
 ms.assetid: 3bc55b38-818e-40eb-859e-495ee28fc4ae
-title: Funzione D3DXVec4Subtract (D3dx9math. h)
+title: Funzione D3DXVec4Subtract (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1110930d8e37cf04f7de5129c2a72db4ecc4ac8d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f49299eab666f92b401bb3fee5ac0c828d607a38893f6bfe4a58e826f84b7493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607571"
 ---
-# <a name="d3dxvec4subtract-function"></a>D3DXVec4Subtract (funzione)
+# <a name="d3dxvec4subtract-function"></a>Funzione D3DXVec4Subtract
 
 Sottrae due vettori 4D.
 
@@ -42,30 +42,30 @@ D3DXVECTOR4* D3DXVec4Subtract(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta la differenza di due vettori.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta la differenza tra due vettori.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec4Subtract** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec4Subtract** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

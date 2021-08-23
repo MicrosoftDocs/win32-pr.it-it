@@ -1,24 +1,24 @@
 ---
-title: Attributo Type (Shadow) (la)
-description: Attributo Type (Shadow) (la)
+title: Attributo type (Shadow)(VML)
+description: Attributo type (Shadow)(VML)
 ms.assetid: 569957c6-508a-4323-804d-25f9a3e58c38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fea4fb54c04847a8ed5c4446cfb999f74161aa97
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d90a264cbaf77890e39f10d56103c8acdc84727de21d7f2de9946911b6df41dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513161"
 ---
-# <a name="type-attribute-shadowvml"></a>Attributo Type (Shadow) (la)
+# <a name="type-attribute-shadowvml"></a>Attributo type (Shadow)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Specifica il tipo di ombreggiatura. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,15 +26,15 @@ Specifica il tipo di ombreggiatura. Proprietà di lettura/scrittura. **Stringa**
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: tipo di *elemento* = " *Expression* " >
+<v: *element* type=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Type = "*Expression*"
+*element* .type="*expression*"
 
-*espressione* = *element*. Type
+*expression* = *elemento*.type
 
 **Osservazioni:**
 
@@ -44,22 +44,22 @@ I possibili valori sono:
 
 | Valore           | Descrizione                                                                                                                                                                                          |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| single          | Singola ombreggiatura. Valore predefinito.                                                                                                                                                                              |
-| double          | Un'ombreggiatura doppia. [Color2](color2-attribute--shadow--vml.md) viene usato per il colore della seconda ombreggiatura e [Offset2](msdn-online-vml-offset2-attribute.md) viene usato per l'offset della seconda ombreggiatura. |
-| prospettiva     | Ombreggiatura della prospettiva.                                                                                                                                                                                |
+| single          | Ombreggiatura singola. Valore predefinito.                                                                                                                                                                              |
+| double          | Doppia ombreggiatura. [Color2](color2-attribute--shadow--vml.md) viene usato per il colore della seconda ombreggiatura e [Offset2](msdn-online-vml-offset2-attribute.md) viene usato per l'offset della seconda ombreggiatura. |
+| prospettiva     | Ombreggiatura prospettica.                                                                                                                                                                                |
 | shapeRelative   | L'ombreggiatura viene creata in relazione alla forma.                                                                                                                                                         |
-| drawingRelative | L'ombreggiatura viene creata in relazione al disegno.                                                                                                                                                       |
-| rilievo          | L'ombreggiatura presenta un aspetto in rilievo.                                                                                                                                                                     |
+| drawingRelative | L'ombreggiatura viene creata rispetto al disegno.                                                                                                                                                       |
+| Rilievo          | L'ombreggiatura ha un aspetto in rilievo.                                                                                                                                                                     |
 
 
 
- 
+ 
 
-**Attributo standard la**
+**Attributo standard VML**
 
 **Esempio**
 
-Viene creata una doppia ombreggiatura con la seconda ombreggiatura verde e l'offset 5 punta verso il basso e verso destra.
+Viene creata un'ombreggiatura doppia con la seconda ombreggiatura verde e l'offset di 5 punti verso il basso e a destra.
 
 
 ```HTML
@@ -74,6 +74,6 @@ Viene creata una doppia ombreggiatura con la seconda ombreggiatura verde e l'off
 
 
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione di oggetti valore della metrica con le rispettive definizioni di metrica.
+description: Rappresenta un'associazione di oggetti valore della metrica con le relative definizioni di metrica.
 ms.assetid: 98ad9390-78b4-4c18-b068-d05efa2f1866
-title: Classe Msvm_MetricInstance
+title: Msvm_MetricInstance classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ab17dce339e866fb22654a0bd75c6f3945d320a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18a15ff6479caa690a8645e89d9b68f4a15f523bd7cee56fedb6957e20373214
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521541"
 ---
-# <a name="msvm_metricinstance-class"></a>\_Classe MSVM MetricInstance
+# <a name="msvm_metricinstance-class"></a>Classe \_ Msvm MetricInstance
 
-Rappresenta un'associazione di oggetti valore della metrica con le rispettive definizioni di metrica. Questa associazione associa un'istanza di [**MSVM \_ BaseMetricValue**](msvm-basemetricvalue.md) al relativo [**MSVM \_ BaseMetricDefinition**](msvm-basemetricdefinition.md).
+Rappresenta un'associazione di oggetti valore della metrica con le relative definizioni di metrica. Questa associazione consente di aggiungere un'istanza di [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) al relativo [**oggetto \_ BaseMetricDefinition msvm.**](msvm-basemetricdefinition.md)
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,45 +41,45 @@ class Msvm_MetricInstance : CIM_MetricInstance
 
 ## <a name="members"></a>Members
 
-La **classe \_ MetricInstance di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ MetricInstance** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MetricInstance di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ MetricInstance** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: * * * * CIM \_ Managed * * * *
+Tipo di dati: ****CIM \_ ManagedElement****
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) che rappresenta le definizioni di metrica.
+Riferimento a un'istanza della classe [**Msvm \_ BaseMetricDefinition**](msvm-basemetricdefinition.md) che rappresenta le definizioni delle metriche.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: * * * * CIM \_ Managed * * * *
+Tipo di dati: ****CIM \_ ManagedElement****
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ BaseMetricValue**](msvm-basemetricvalue.md) che rappresenta le metriche che dipendono dall'attività **precedente**.
+Riferimento a un'istanza della [**classe \_ BaseMetricValue msvm**](msvm-basemetricvalue.md) che rappresenta le metriche dipendenti dall'oggetto **precedente.**
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento a un'istanza della classe [**MSVM \_ BaseMetricValue**](msvm-basemet
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

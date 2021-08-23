@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni QOS VFP.
 ms.assetid: e58a7a8d-0301-43ea-9338-18bc8c458e2d
-title: Classe Msvm_EthernetSwitchPortMigrationQosSettingData
+title: Msvm_EthernetSwitchPortMigrationQosSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e279b24178c33c760477995ff744a0699cea1aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fef4ef759b406facb5fbbb12d37eceb55a914d46c63a2485982f60fa151ccdaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524041"
 ---
-# <a name="msvm_ethernetswitchportmigrationqossettingdata-class"></a>\_Classe MSVM EthernetSwitchPortMigrationQosSettingData
+# <a name="msvm_ethernetswitchportmigrationqossettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortMigrationQosSettingData
 
 Rappresenta le impostazioni QOS VFP.
 
@@ -57,87 +57,87 @@ class Msvm_EthernetSwitchPortMigrationQosSettingData : Msvm_EthernetSwitchPortFe
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortMigrationQosSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortMigrationQosSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortMigrationQosSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortMigrationQosSettingData** dispone di queste proprietà.
 
 <dl> <dt>
 
 **InboundMaximumMbps**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore del limite della larghezza di banda per il traffico in ingresso.
+Valore limite di larghezza di banda per il traffico in ingresso.
 
 </dd> <dt>
 
 **OutboundMaximumMbps**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore del limite della larghezza di banda per il traffico in uscita.
+Valore del limite di larghezza di banda per il traffico in uscita.
 
 </dd> <dt>
 
 **OutboundReservedValue**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore di prenotazione della larghezza di banda.
+Valore della prenotazione della larghezza di banda.
 
 </dd> <dt>
 
 **QueueId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 ID della coda QOS.
 
 </dd> <dt>
 
-**Cambia \_ DefaultReservation**
+**Impostare \_ DefaultReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -147,61 +147,61 @@ Valore di prenotazione predefinito.
 
 </dd> <dt>
 
-**Cambia \_ EnableHardwareLimits**
+**Opzione \_ EnableHardwareLimits**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (5), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (5), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Indica se vengono tentati gli offload hardware per i limiti, se disponibili.
+Indica se vengono tentati offload hardware per i limiti, se disponibili.
 
 </dd> <dt>
 
-**Cambia \_ EnableHardwareReservations**
+**Opzione \_ EnableHardwareReservations**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (6), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (6), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Indica se vengono tentati gli offload hardware per le prenotazioni se disponibili.
+Indica se viene effettuato un tentativo di offload hardware per le prenotazioni, se disponibile.
 
 </dd> <dt>
 
-**Cambia \_ EnableSoftwareReservations**
+**Opzione \_ EnableSoftwareReservations**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se è disponibile la prenotazione basata su software.
+Indica se la prenotazione basata su software è disponibile.
 
 </dd> <dt>
 
-**Cambia \_ LinkSpeedPercentage**
+**Cambia \_ collegamentoSpeedPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -214,22 +214,22 @@ Percentuale di velocità del collegamento da usare per la prenotazione.
 **Cambia \_ ReservationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modalità di prenotazione QOS sull'opzione.
+Modalità di prenotazione QOS nel commutatore.
 
 <dt>
 
 <span id="Absolute"></span><span id="absolute"></span><span id="ABSOLUTE"></span>
 
-**Absolute** (0)
+**Assoluto** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -249,10 +249,10 @@ Modalità di prenotazione QOS sull'opzione.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -261,7 +261,7 @@ Modalità di prenotazione QOS sull'opzione.
 
 <dl> <dt>
 
-[**\_EthernetSwitchPortFeatureSettingData MSVM**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

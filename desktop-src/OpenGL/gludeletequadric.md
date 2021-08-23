@@ -1,9 +1,9 @@
 ---
-title: funzione gluDeleteQuadric (Glu. h)
-description: La funzione gluDeleteQuadric Elimina un oggetto quadrica.
+title: Funzione gluDeleteQuadric (Glu.h)
+description: La funzione gluDeleteQuadric elimina un oggetto quadric.
 ms.assetid: 09efd887-0fe8-4a56-bc6f-2177a4930035
 keywords:
-- funzione gluDeleteQuadric OpenGL
+- Funzione gluDeleteQuadric OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5ee85e943cd958e394efb191932393d228d948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad0c12bd77d3d8b7f7de641671916bb8a901d29d812dfa4e9af6ef116984a128
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519621"
 ---
-# <a name="gludeletequadric-function"></a>gluDeleteQuadric (funzione)
+# <a name="gludeletequadric-function"></a>Funzione gluDeleteQuadric
 
-La funzione **gluDeleteQuadric** Elimina un oggetto quadrica.
+La **funzione gluDeleteQuadric** elimina un oggetto quadric.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI gluDeleteQuadric(
 *state* 
 </dt> <dd>
 
-Oggetto quadrica da eliminare definitivamente (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric da eliminare (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluDeleteQuadric** Elimina l'oggetto quadrica e libera la memoria usata. Dopo aver chiamato **gluDeleteQuadric**, non è possibile usare di nuovo *lo stato* .
+La **funzione gluDeleteQuadric** elimina l'oggetto quadric e libera la memoria usata. Dopo aver chiamato **gluDeleteQuadric**, non è possibile usare *nuovamente lo* stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ La funzione **gluDeleteQuadric** Elimina l'oggetto quadrica e libera la memoria 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

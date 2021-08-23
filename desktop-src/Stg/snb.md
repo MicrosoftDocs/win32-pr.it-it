@@ -1,21 +1,21 @@
 ---
-title: BNS (objidl. h)
-description: Un blocco di nome stringa (BNS) è un puntatore a una matrice di puntatori alle stringhe che termina con un puntatore NULL.
+title: SNB (Objidl.h)
+description: Un blocco di nomi di stringa (SNB) è un puntatore a una matrice di puntatori a stringhe, che termina con un puntatore NULL.
 ms.assetid: 8428a820-3d8a-41e0-9955-d355440e2ebc
 keywords:
-- BNS
+- Bns
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69d6860204d9f232c2ffafa4f1f16a1187fee8de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e49a7868912b9d7d1e3d9f3b1f82805e6e285d815eacbc559c887febd23e9e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682781"
 ---
-# <a name="snb"></a>BNS
+# <a name="snb"></a>Bns
 
-Un blocco di nome stringa (**BNS**) è un puntatore a una matrice di puntatori alle stringhe che termina con un puntatore **null** . I blocchi dei nomi di stringa vengono usati dall'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e dalle chiamate di funzione che aprono gli oggetti di archiviazione. Le stringhe puntano a oggetti o flussi di archiviazione contenuti che devono essere esclusi nelle chiamate aperte.
+Un blocco di nomi di stringa (**SNB**) è un puntatore a una matrice di puntatori a stringhe, che termina con un **puntatore NULL.** I blocchi di nomi di stringa vengono usati [**dall'interfaccia IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e dalle chiamate di funzione che aprono oggetti di archiviazione. Le stringhe puntano a flussi o oggetti di archiviazione contenuti che devono essere esclusi nelle chiamate aperte.
 
 
 ```C++
@@ -26,18 +26,18 @@ typedef OLESTR** SNB;
 
 <dl> <dt>
 
-**BNS**
+**Bns**
 </dt> <dd>
 
-\[\_marshalling Wire (wireSNB)\]
+\[wire \_ marshal(wireSNB)\]
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È necessario creare la **BNS** allocando un blocco di memoria contiguo in cui i puntatori alle stringhe sono seguiti da un puntatore **null** , seguito dalle stringhe effettive.
+**L'SNB** deve essere creato allocando un blocco contiguo di memoria in cui i puntatori alle stringhe sono seguiti da un puntatore **NULL,** seguito quindi dalle stringhe effettive.
 
-Il marshalling di un **BNS** si basa sul presupposto che la **BNS** passata è stata creata in questo modo. Sebbene possa essere archiviato in altri modi, il **BNS** creato in questo modo presenta il vantaggio di richiedere solo un'operazione di allocazione e una libera memoria per tutte le stringhe.
+Il marshalling di **un SNB** si basa sul presupposto che il **servizio SNB** passato sia stato creato in questo modo. Sebbene possa essere archiviato in altri modi, il **servizio SNB** creato in questo modo ha il vantaggio di richiedere una sola operazione di allocazione e una di liberare memoria per tutte le stringhe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,10 +45,10 @@ Il marshalling di un **BNS** si basa sul presupposto che la **BNS** passata è s
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Objidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Objidl. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows app desktop di Windows 2000 Server \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Objidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Objidl.idl</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ Il marshalling di un **BNS** si basa sul presupposto che la **BNS** passata è s
 
 <dl> <dt>
 
-[**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
+[**Istorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
 </dt> </dl>
 
  

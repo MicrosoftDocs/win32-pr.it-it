@@ -1,43 +1,43 @@
 ---
-description: Le \_ costanti del flag di bit LINECALLPRIVILEGE descrivono i tipi di diritti di accesso o i privilegi che un'applicazione con un handle di chiamata potrebbe avere per la chiamata corrispondente.
+description: Le costanti del flag di bit LINECALLPRIVILEGE descrivono i tipi di diritti di accesso o privilegi che un'applicazione con un handle di chiamata può \_ avere per la chiamata corrispondente.
 ms.assetid: a58b7e9e-696e-4421-9b31-1ba8afe6e03b
-title: Costanti LINECALLPRIVILEGE_ (TAPI. h)
+title: LINECALLPRIVILEGE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac2569ec255d2da3ad384292eb87afaa285f54b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c00dd43442345c545bb5e0b1718131b6815fd236f9c7d770c0f3b47b10b47a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660051"
 ---
-# <a name="linecallprivilege_-constants"></a>\_Costanti LINECALLPRIVILEGE
+# <a name="linecallprivilege_-constants"></a>Costanti LINECALLPRIVILEGE \_
 
-Le costanti del flag di bit **LINECALLPRIVILEGE \_** descrivono i tipi di diritti di accesso o i privilegi che un'applicazione con un handle di chiamata potrebbe avere per la chiamata corrispondente.
+Le costanti del flag di bit **LINECALLPRIVILEGE \_** descrivono i tipi di diritti o privilegi di accesso che un'applicazione con un handle di chiamata può avere per la chiamata corrispondente.
 
 <dl> <dt>
 
-<span id="LINECALLPRIVILEGE_MONITOR"></span><span id="linecallprivilege_monitor"></span>**\_monitoraggio LINECALLPRIVILEGE**
+<span id="LINECALLPRIVILEGE_MONITOR"></span><span id="linecallprivilege_monitor"></span>**MONITORAGGIO LINECALLPRIVILEGE \_**
 </dt> <dd> <dl> <dt>
 
 
 
-L'applicazione dispone di privilegi di monitoraggio per la chiamata. Questi privilegi consentono all'applicazione di monitorare le modifiche di stato e le informazioni di query e lo stato della chiamata.
+L'applicazione ha privilegi di monitoraggio per la chiamata. Questi privilegi consentono all'applicazione di monitorare le modifiche dello stato e di eseguire query sulle informazioni e sullo stato della chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLPRIVILEGE_NONE"></span><span id="linecallprivilege_none"></span>**LINECALLPRIVILEGE \_ None**
+<span id="LINECALLPRIVILEGE_NONE"></span><span id="linecallprivilege_none"></span>**LINECALLPRIVILEGE \_ NONE**
 </dt> <dd> <dl> <dt>
 
 
 
-L'applicazione non dispone di privilegi per la chiamata. L'handle dell'applicazione non è valido e non deve essere usato.
+L'applicazione non ha privilegi per la chiamata. L'handle dell'applicazione è void e non deve essere usato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLPRIVILEGE_OWNER"></span><span id="linecallprivilege_owner"></span>**\_proprietario LINECALLPRIVILEGE**
+<span id="LINECALLPRIVILEGE_OWNER"></span><span id="linecallprivilege_owner"></span>**LINECALLPRIVILEGE \_ OWNER**
 </dt> <dd> <dl> <dt>
 
 
@@ -49,9 +49,9 @@ L'applicazione dispone dei privilegi di proprietario per la chiamata. Questi pri
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
-Quando un handle di chiamata viene fornito per la prima volta a un'applicazione o ogni volta che vengono modificati i privilegi di chiamata di tale applicazione, il messaggio di [**riga \_ CALLSTATE**](line-callstate.md) viene inviato all'applicazione. Quando un'applicazione passa una chiamata e se l'applicazione ricevente non dispone già di un handle con privilegi di proprietario, questo messaggio informa l'applicazione sui nuovi privilegi della chiamata.
+Quando un handle di chiamata viene fornito per la prima volta a un'applicazione o ogni volta che vengono modificati i privilegi di chiamata dell'applicazione, il [**messaggio LINE \_ CALLSTATE**](line-callstate.md) viene inviato all'applicazione. Quando un'applicazione esegue una chiamata e se l'applicazione ricevente non dispone già di un handle con privilegi di proprietario, questo messaggio informa l'applicazione dei nuovi privilegi per la chiamata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Quando un handle di chiamata viene fornito per la prima volta a un'applicazione 
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

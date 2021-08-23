@@ -1,12 +1,12 @@
 ---
-title: Metodo OnWarning IMsTscAxEvents
+title: Metodo IMsTscAxEvents OnWarning
 description: Chiamato quando il controllo client rileva una condizione di errore non irreversibile.
 ms.assetid: af43d3aa-0ae8-4721-b85d-bb043b20dc40
 ms.tgt_platform: multiple
 keywords:
 - Metodo OnWarning Servizi Desktop remoto
 - Metodo OnWarning Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, Metodo OnWarning
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnWarning
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aadc7013f34c93406f93841896a9041bbb1b7cfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbcebe5c86bb50913ba11d4485f30757f399467aa30730f8cd27de50e360c0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657141"
 ---
-# <a name="imstscaxeventsonwarning-method"></a>Metodo IMsTscAxEvents:: OnWarning
+# <a name="imstscaxeventsonwarning-method"></a>Metodo IMsTscAxEvents::OnWarning
 
 Chiamato quando il controllo client rileva una condizione di errore non irreversibile.
 
@@ -43,7 +43,7 @@ void OnWarning(
 
 <dl> <dt>
 
-*WarningCode* \[ in\]
+*warningCode* \[ Pollici\]
 </dt> <dd>
 
 Codice di errore.
@@ -57,7 +57,7 @@ Codice di errore.
 
 </dt> <dd>
 
-Cache bitmap danneggiata.
+La cache bitmap è danneggiata.
 
 </dd> </dl> </dd> </dl>
 
@@ -67,7 +67,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
