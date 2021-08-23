@@ -1,27 +1,27 @@
 ---
-description: Il buffering di profondità è un metodo per rimuovere le linee e le superfici nascoste. Per impostazione predefinita, Direct3D non usa la memorizzazione nel buffer di profondità.
+description: Il buffering della profondità è un metodo per rimuovere le linee e le superfici nascoste. Per impostazione predefinita, Direct3D non usa il buffering di profondità.
 ms.assetid: 03795e4e-1daa-48e3-8724-8dd4b5187edc
-title: Stato buffering profondità (Direct3D 9)
+title: Stato buffer di profondità (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e632d3dfe6eebd54970c59ef6a666cfcb0950fcb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 54d6d0494511c7fc0434d97988152426eb888d6c3044de4e2359ac2cb41110ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988312"
 ---
-# <a name="depth-buffering-state-direct3d-9"></a>Stato buffering profondità (Direct3D 9)
+# <a name="depth-buffering-state-direct3d-9"></a>Stato buffer di profondità (Direct3D 9)
 
-Il buffering di profondità è un metodo per rimuovere le linee e le superfici nascoste. Per impostazione predefinita, Direct3D non usa la memorizzazione nel buffer di profondità.
+Il buffering della profondità è un metodo per rimuovere le linee e le superfici nascoste. Per impostazione predefinita, Direct3D non usa il buffering di profondità.
 
-Per una panoramica concettuale dei buffer di profondità, vedere [buffer di profondità (Direct3D 9)](depth-buffers.md).
+Per una panoramica concettuale dei buffer di profondità, vedere [Buffer di profondità (Direct3D 9).](depth-buffers.md)
 
-Le applicazioni C++ aggiornano lo stato di buffering di profondità con lo \_ stato di rendering ZENABLE di D3DRS, usando un membro dell'enumerazione [**D3DZBUFFERTYPE**](./d3dzbuffertype.md) per specificare il nuovo valore di stato.
+Le applicazioni C++ aggiornano lo stato di buffering di profondità con lo stato di rendering ZENABLE D3DRS, usando un membro dell'enumerazione \_ [**D3DZBUFFERTYPE**](./d3dzbuffertype.md) per specificare il nuovo valore dello stato.
 
-Se l'applicazione deve impedire a Direct3D di scrivere nel buffer di profondità, può usare il \_ valore enumerato D3DRS ZWRITEENABLE, specificando D3DZB \_ false come secondo parametro per la chiamata a [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate).
+Se l'applicazione deve impedire a Direct3D di scrivere nel buffer di profondità, può usare il valore enumerato D3DRS ZWRITEENABLE, specificando D3DZB FALSE come secondo parametro per la chiamata a \_ \_ [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate).
 
-Nell'esempio di codice seguente viene illustrato come impostare lo stato del buffer di profondità per abilitare il buffer z.
+Nell'esempio di codice seguente viene illustrato come lo stato del buffer di profondità è impostato per abilitare il buffer z.
 
 
 ```
@@ -33,9 +33,9 @@ d3dDevice->SetRenderState(D3DRS_ZENABLE, D3DZB_TRUE);
 
 
 
-L'applicazione può anche usare lo \_ stato di rendering ZFUNC di D3DRS per controllare la funzione di confronto utilizzata da Direct3D durante l'esecuzione del buffer di profondità.
+L'applicazione può anche usare lo stato di rendering ZFUNC D3DRS per controllare la funzione di confronto utilizzata da \_ Direct3D durante l'esecuzione del buffering di profondità.
 
-La distorsione Z è un metodo di visualizzazione di una superficie davanti a un'altra, anche se i valori di profondità sono uguali. È possibile utilizzare questa tecnica per diversi effetti. Un esempio comune è il rendering di ombre sulle pareti. Sia l'ombreggiatura che la parete hanno lo stesso valore di profondità. Tuttavia, si desidera che l'applicazione mostri l'ombreggiatura sulla parete. Se si assegna una polarizzazione z all'ombreggiatura, Direct3D li visualizza correttamente (vedere D3DRS \_ DEPTHBIAS).
+La distorsione Z è un metodo per visualizzare una superficie davanti a un'altra, anche se i relativi valori di profondità sono gli stessi. È possibile usare questa tecnica per un'ampia gamma di effetti. Un esempio comune è il rendering delle ombreggiature sulle pareti. Sia l'ombreggiatura che la parete hanno lo stesso valore di profondità. Tuttavia, si vuole che l'applicazione mostri l'ombreggiatura sulla parete. Se si specifica una distorsione z per l'ombreggiatura, Direct3D le visualizza correttamente (vedere D3DRS \_ DEPTHBIAS).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

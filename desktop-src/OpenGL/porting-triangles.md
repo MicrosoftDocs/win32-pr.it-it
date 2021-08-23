@@ -1,48 +1,48 @@
 ---
-title: Triangoli di porting
-description: È possibile creare tre tipi di triangoli in triangoli separati di OpenGL, strisce triangolari e ventole a triangolo.
+title: Portabilità di triangoli
+description: È possibile disegnare tre tipi di triangoli in triangoli separati OpenGL, strisce di triangoli e ventole di triangolo.
 ms.assetid: 48617892-c9a0-4c67-b42e-afa4243023e7
 keywords:
-- Porting di IRIS GL, triangoli
+- Portabilità IRIS GL, triangoli
 - porting da IRIS GL, triangoli
-- porting in OpenGL da IRIS GL, triangoli
-- Porting OpenGL da IRIS GL, triangoli
+- porting to OpenGL from IRIS GL,triangles
+- Portabilità OpenGL da IRIS GL, triangoli
 - funzioni di disegno, triangoli
 - triangoli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad0c7a0af4b538bb951cf0d1c5f2e12b2e1badda
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 85acc650a709650495b93cdd00176400f00168cc8fe6445a23505f12b332abf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011999"
 ---
-# <a name="porting-triangles"></a>Triangoli di porting
+# <a name="porting-triangles"></a>Portabilità di triangoli
 
-È possibile creare tre tipi di triangoli in OpenGL: triangoli separati, strisce triangolari e ventole di triangolo.
+È possibile disegnare tre tipi di triangoli in OpenGL: triangoli separati, strisce di triangoli e ventole di triangolo.
 
-OpenGL non ha un equivalente per la funzione **swaptmesh** di Iris GL. È possibile ottenere lo stesso effetto usando una combinazione di triangoli, strisce triangolari e ventole di triangolo.
+OpenGL non ha un equivalente per la funzione **swaptmesh** IRIS GL. È possibile ottenere lo stesso effetto usando una combinazione di triangoli, strisce di triangoli e ventole di triangolo.
 
-La tabella seguente elenca le funzioni di IRIS GL per il disegno di triangoli e le relative funzioni OpenGL equivalenti.
+La tabella seguente elenca le funzioni IRIS GL per disegnare triangoli e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL           | Parametro glBegin equivalente | Significato                                       |
+| Funzione GL IRIS           | Parametro glBegin equivalente | Significato                                       |
 |----------------------------|------------------------------|-----------------------------------------------|
-|                            | triangoli GL \_                | Triple di vertici interpretati come triangoli. |
-| **bgntmesh**, **endtmesh** | \_striscia del triangolo GL \_          | Strisce collegate di triangoli.                   |
-|                            | \_ventola del triangolo GL \_            | Fan collegati di triangoli.                     |
+|                            | TRIANGOLI GL \_                | Triple di vertici interpretati come triangoli. |
+| **bgntmesh**, **endtmesh** | GL \_ TRIANGLE \_ STRIP          | Strisce collegate di triangoli.                   |
+|                            | VENTOLA \_ TRIANGOLO GL \_            | Ventole collegate di triangoli.                     |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

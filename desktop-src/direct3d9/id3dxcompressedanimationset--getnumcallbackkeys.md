@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: da9add6b52ae79632f6fa4bb67e9a2d524d1dace
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32916e7d673e427ec3f753ee5e7ce0ea282efa3c0274de592c1e13835239f0fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987587"
 ---
 # <a name="id3dxcompressedanimationsetgetnumcallbackkeys-method"></a>Metodo ID3DXCompressedAnimationSet::GetNumCallbackKeys
 

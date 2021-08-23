@@ -1,11 +1,11 @@
 ---
-title: Metodo Decrypt IWMDRMDecrypt (wmdrmsdk. h)
+title: Metodo IWMDRMDecrypt Decrypt (Wmdrmsdk.h)
 description: Il metodo Decrypt decrittografa un buffer di dati sul posto.
 ms.assetid: ca0a5b2f-d25f-423e-8956-fca264399083
 keywords:
-- Metodo Decrypt Windows Media Format
-- Metodo di decrittografia Windows Media Format, interfaccia IWMDRMDecrypt
-- Interfaccia IWMDRMDecrypt-formato Windows Media, metodo Decrypt
+- Metodo di decrittografia windows Media Format
+- Metodo decrypt windows Media Format , interfaccia IWMDRMDecrypt
+- Interfaccia IWMDRMDecrypt windows Media Format , metodo Decrypt
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb3c1437bc4b4d2f442c61e54f238f176adf66b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7be82ec976da39103698b93a09b3d5235c8c8ee712783ca8284dc7b18c6a8a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027748"
 ---
-# <a name="iwmdrmdecryptdecrypt-method"></a>IWMDRMDecrypt::D Metodo ecrypt
+# <a name="iwmdrmdecryptdecrypt-method"></a>Metodo IWMDRMDecrypt::D ecrypt
 
-Il metodo **Decrypt** decrittografa un buffer di dati sul posto.
+Il **metodo Decrypt** decrittografa un buffer di dati sul posto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,36 +44,36 @@ HRESULT Decrypt(
 
 <dl> <dt>
 
-*pbData* \[ in uscita\]
+*pbData* \[ in, out\]
 </dt> <dd>
 
 Dati da decrittografare. Se il metodo ha esito positivo, questi dati vengono decrittografati al ritorno.
 
 </dd> <dt>
 
-*cbData* \[ in\]
+*cbData* \[ Pollici\]
 </dt> <dd>
 
 Dimensioni dei dati in byte.
 
 </dd> <dt>
 
-*pWMCryptoData* \[ in\]
+*pWMCryptoData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**WMDRMCryptoData**](wmdrmcryptodata.md) che contiene parametri aggiuntivi. Può essere **null** se il contenuto è stato crittografato usando i parametri predefiniti.
+Puntatore a [**una struttura WMDRMCryptoData**](wmdrmcryptodata.md) contenente parametri aggiuntivi. Può essere **NULL** se il contenuto è stato crittografato usando i parametri predefiniti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -81,7 +81,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,7 +89,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

@@ -1,41 +1,41 @@
 ---
-title: Attributo TipoForma di la
-description: Attributo TipoForma di la
+title: Attributo ShapeType VML
+description: Attributo ShapeType VML
 ms.assetid: 9e9f22c2-ed2e-4ada-9203-9753a3ed99a1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 821aabf06bcd8c0073279d9009f70bcc2e422e2e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b4f2fec1d7fc6bb5f8f6243a4173d6183dd5e7997b407a49e7624120dc405a66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104223926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057719"
 ---
-# <a name="vml-shapetype-attribute"></a>Attributo TipoForma di la
+# <a name="vml-shapetype-attribute"></a>Attributo ShapeType VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se il tipo di forma può essere modificato da un editor. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se il tipo di forma automatica può essere modificato da un editor. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [Locks](msdn-online-vml-locks-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* TipoForma = " *Expression* " >
+<o: *elemento* shapetype=" *espressione* ">
 
 **Osservazioni:**
 
-Se **true**, il tipo di una forma non può essere modificato in un editor grafico. Il valore predefinito è **False**.
+Se **True**, il tipo di una forma non può essere modificato in un editor grafico. Il valore predefinito è **False**.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: 'Funzione InputPatch:: operator'
-description: "Restituisce l'ennesimo punto di controllo nella patch. | Funzione InputPatch:: operator"
+title: Funzione InputPatch::Operator
+description: Restituisce l'eesimo punto di controllo nella patch. | Funzione InputPatch::Operator
 ms.assetid: 2c1eda6b-a9c1-40d3-be91-7a2e8f1da9fc
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5d95cb8adae6e7a91629614e0ae10b4161dbac3f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 81c768d138f6ee1853f9930a56f1a1864b468e8be9ff421f4dba1698b790053c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986031"
 ---
-# <a name="inputpatchoperator--function"></a>Funzione InputPatch:: operator
+# <a name="inputpatchoperator--function"></a>Funzione InputPatch::Operator
 
-Restituisce il punto <sup>di controllo</sup> *n* nella patch.
+Restituisce <sup>l'eesimo</sup> punto di controllo nella patch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Indice di input.
 
 Tipo: **T**
 
-Il punto <sup>di controllo</sup> *n*.
+Punto di <sup>controllo</sup> *n.*
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [InputPatch](sm5-object-inputpatch.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

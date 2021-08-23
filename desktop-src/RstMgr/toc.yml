@@ -4,7 +4,7 @@
     - name: Informazioni su Gestione riavvio
       href: about-restart-manager.md
       items:
-        - name: Linee guida per le applicazioni e i servizi
+        - name: Linee guida per applicazioni e servizi
           href: guidelines-for-applications-and-services.md
           items:
             - name: Linee guida per le applicazioni
@@ -13,26 +13,26 @@
               href: guidelines-for-services.md
             - name: Servizi di sistema critici
               href: critical-system-services.md
-    - name: Utilizzo di gestione riavvio
+    - name: Uso di Gestione riavvio
       href: using-restart-manager.md
       items:
-        - name: Uso di gestione riavvio con un programma di installazione primario
+        - name: Uso di Gestione riavvio con un programma di installazione primario
           href: using-restart-manager-with-a-primary-installer.md
-        - name: Uso di gestione riavvio con un programma di installazione secondario
+        - name: Uso di Gestione riavvio con un programma di installazione secondario
           href: using-restart-manager-with-a-secondary-installer.md
-        - name: Recupero dello stato di un'operazione di gestione riavvio
+        - name: Recupero dello stato di un'operazione di Gestione riavvio
           href: getting-the-status-of-a-restart-manager-operation.md
-        - name: Annullamento dell'operazione corrente di gestione riavvio
+        - name: Annullamento dell'operazione corrente di Gestione riavvio
           href: canceling-the-current-restart-manager-operation.md
-    - name: Riferimento a gestione riavvio
+    - name: Informazioni di riferimento su Gestione riavvio
       href: restart-manager-reference.md
       items:
-        - name: Funzioni di callback di gestione riavvio
+        - name: Funzioni di callback di Gestione riavvio
           href: callback-functions.md
           items:
             - name: RM_WRITE_STATUS_CALLBACK
               href: /windows/desktop/api/restartmanager/nc-restartmanager-rm_write_status_callback
-        - name: Enumerazioni Gestione riavvio
+        - name: Enumerazioni di Gestione riavvio
           href: enumerations.md
           items:
             - name: RM_APP_STATUS
@@ -47,7 +47,7 @@
               href: /windows/win32/api/RestartManager/ne-restartmanager-rm_reboot_reason
             - name: RM_SHUTDOWN_TYPE
               href: /windows/win32/api/RestartManager/ne-restartmanager-rm_shutdown_type
-        - name: Funzioni di gestione riavvio
+        - name: Funzioni di Gestione riavvio
           href: functions.md
           items:
             - name: RmAddFilter
@@ -72,7 +72,7 @@
               href: /windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown
             - name: RmStartSession
               href: /windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession
-        - name: Strutture di gestione riavvio
+        - name: Strutture di Gestione riavvio
           href: structures.md
           items:
             - name: RM_FILTER_INFO

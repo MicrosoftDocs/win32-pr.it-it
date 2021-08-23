@@ -1,16 +1,16 @@
 ---
-title: Proprietà AuthenticationServiceClass di IMsRdpClientAdvancedSettings6
+title: Proprietà AuthenticationServiceClass IMsRdpClientAdvancedSettings6
 description: Specifica il nome dell'entità servizio (SPN) da utilizzare per l'autenticazione al server.
 ms.assetid: 65d10b1f-295a-44b8-a790-306ae4e3e5e2
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AuthenticationServiceClass
-- Servizi Desktop remoto proprietà AuthenticationServiceClass, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà AuthenticationServiceClass
-- Servizi Desktop remoto proprietà AuthenticationServiceClass, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà AuthenticationServiceClass
-- Servizi Desktop remoto proprietà AuthenticationServiceClass, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà AuthenticationServiceClass
+- Proprietà AuthenticationServiceClass Servizi Desktop remoto
+- Proprietà AuthenticationServiceClass Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà AuthenticationServiceClass
+- Proprietà AuthenticationServiceClass Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà AuthenticationServiceClass
+- Proprietà AuthenticationServiceClass Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà AuthenticationServiceClass
 topic_type:
 - apiref
 api_name:
@@ -29,14 +29,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 618b55d1489f46e0e1119186bd5003fb68dbfebb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8453c0aef1548303e653f1ba57c9f05550975d93706eae1b9d3f05ea0b611a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001369"
 ---
-# <a name="imsrdpclientadvancedsettings6authenticationserviceclass-property"></a>Proprietà IMsRdpClientAdvancedSettings6:: AuthenticationServiceClass
+# <a name="imsrdpclientadvancedsettings6authenticationserviceclass-property"></a>Proprietà IMsRdpClientAdvancedSettings6::AuthenticationServiceClass
 
 Specifica il nome dell'entità servizio (SPN) da utilizzare per l'autenticazione al server.
 
@@ -59,13 +59,13 @@ HRESULT get_AuthenticationServiceClass(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Specifica il nome dell'entità servizio da usare.
+Specifica il nome dell'entità servizio da utilizzare.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è supportata solo dai client Connessione Desktop remoto 6,1 e 7,0.
+Questa proprietà è supportata solo dai client Connessione Desktop remoto 6.1 e 7.0.
 
-I nomi dell'entità servizio (SPN) sono associati all'entità di sicurezza (utente o gruppi) in cui viene eseguito il servizio. I nomi SPN vengono utilizzati per supportare l'autenticazione reciproca tra un'applicazione client e un servizio.
+I nomi dell'entità servizio (SPN) sono associati all'entità di sicurezza (utente o gruppi) nel cui contesto di sicurezza viene eseguito il servizio. I nomi SPN vengono usati per supportare l'autenticazione reciproca tra un'applicazione client e un servizio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ I nomi dell'entità servizio (SPN) sono associati all'entità di sicurezza (uten
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                   |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 è definito come 222c4b5d-45D9-4DF0-a7c6-60cf9089d285<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 è definito come 222c4b5d-45d9-4df0-a7c6-60cf9089d285<br/> |
 
 
 

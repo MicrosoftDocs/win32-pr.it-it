@@ -1,5 +1,5 @@
 ---
-description: Archivia le informazioni sul contesto della tavoletta.
+description: Archivia le informazioni sul contesto del tablet.
 ms.assetid: a9eadc83-c3dc-42ba-bd4c-24a4a95563ff
 title: Interfaccia ITabletContext
 ms.topic: reference
@@ -14,24 +14,24 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 14c1b34058ebda76f5fd21c6a5d686aa25ae41f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3642100b0b974d952dbf9c01d7362ee19f85d48923233e3356ed6e1ec7b58064
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031899"
 ---
 # <a name="itabletcontext-interface"></a>Interfaccia ITabletContext
 
-Archivia le informazioni sul contesto della tavoletta.
+Archivia le informazioni sul contesto del tablet.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITabletContext** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+**L'interfaccia ITabletContext** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="remarks"></a>Commenti
 
-Il codice seguente definisce l'interfaccia **ITabletContext** .
+Il codice seguente definisce **l'interfaccia ITabletContext.**
 
 ``` syntax
 [
@@ -159,7 +159,7 @@ interface ITabletContext : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

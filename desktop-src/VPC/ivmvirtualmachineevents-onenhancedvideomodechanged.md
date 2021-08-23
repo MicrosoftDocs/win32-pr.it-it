@@ -4,8 +4,8 @@ description: Riceve una notifica che indica che il supporto di una macchina virt
 ms.assetid: be22a859-4687-4647-9f53-f79ae8ad52a5
 keywords:
 - Metodo OnEnhancedVideoModeChanged Virtual PC
-- Metodo OnEnhancedVideoModeChanged Virtual PC, interfaccia IVMVirtualMachineEvents
-- Metodo OnEnhancedVideoModeChanged dell'interfaccia IVMVirtualMachineEvents
+- Metodo OnEnhancedVideoModeChanged Virtual PC , interfaccia IVMVirtualMachineEvents
+- Interfaccia IVMVirtualMachineEvents Virtual PC, metodo OnEnhancedVideoModeChanged
 topic_type:
 - apiref
 api_name:

@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentRunningInOneInstanceModeException
+description: 'Altre informazioni su: Costruttore EsentRunningInOneInstanceModeException'
 title: Costruttore EsentRunningInOneInstanceModeException
 TOCTitle: 'EsentRunningInOneInstanceModeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRunningInOneInstanceModeException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118981811"
 
 Inizializza una nuova istanza della classe EsentRunningInOneInstanceModeException.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

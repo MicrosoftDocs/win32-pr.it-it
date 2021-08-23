@@ -1,7 +1,7 @@
 ---
-description: Ottenere il numero di Bones in ID3DX10SkinInfo.
+description: Ottenere il numero di esche in ID3DX10SkinInfo.
 ms.assetid: 373c8b42-a745-4c68-a93e-381602ca6e0d
-title: 'Metodo ID3DX10SkinInfo:: GetNumBones (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::GetNumBones (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1cbc39dd0f1a99ff65935c66e22a79a3d1836a7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d1e4c761652bff649e9cf1ab8950202430e54d940cec96b7dc62eb8a060b4534
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990321"
 ---
-# <a name="id3dx10skininfogetnumbones-method"></a>Metodo ID3DX10SkinInfo:: GetNumBones
+# <a name="id3dx10skininfogetnumbones-method"></a>Metodo ID3DX10SkinInfo::GetNumBones
 
-Ottenere il numero di Bones in ID3DX10SkinInfo.
+Ottenere il numero di esche in ID3DX10SkinInfo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di ossa in ID3DX10SkinInfo.
+Numero di esche in ID3DX10SkinInfo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Numero di ossa in ID3DX10SkinInfo.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

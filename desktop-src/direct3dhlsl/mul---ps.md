@@ -1,6 +1,6 @@
 ---
-title: Mul-PS
-description: Moltiplica le origini nella destinazione. | Mul-PS
+title: mul - ps
+description: Moltiplica le origini nella destinazione. | mul - ps
 ms.assetid: 03823c10-9631-4468-8488-4bd17224d16c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fefe89d4fdbe5f75965f2707a5ceb2c1673e1326
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74ff42065f7b41c1d775a0b1924d732110c31bd3121d2464b33eb8b20ae31e21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986301"
 ---
-# <a name="mul---ps"></a>Mul-PS
+# <a name="mul---ps"></a>mul - ps
 
 Moltiplica le origini nella destinazione.
 
@@ -24,7 +24,7 @@ Moltiplica le origini nella destinazione.
 
 
 
-| Mul DST, src0, src1 |
+| mul dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Moltiplica le origini nella destinazione.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | mul                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Il frammento di codice seguente mostra le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -65,7 +65,7 @@ dest.w = src0.w * src1.w;
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

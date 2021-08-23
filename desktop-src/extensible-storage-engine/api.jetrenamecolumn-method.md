@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo Api.JetRenameColumn'
+description: Altre informazioni sul metodo Api.JetRenameColumn
 title: Metodo Api.JetRenameColumn
 TOCTitle: 'JetRenameColumn method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRenameColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,System.String,Microsoft.Isam.Esent.Interop.RenameColumnGrbit)
@@ -35,7 +35,7 @@ ms.locfileid: "118983231"
 
 Modifica il nome di una colonna esistente.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -73,7 +73,7 @@ public static void JetRenameColumn(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
@@ -101,7 +101,7 @@ public static void JetRenameColumn(
   - grbit  
     Tipo: [Microsoft.Isam.Esent.Interop.RenameColumnGrbit](./renamecolumngrbit-enumeration.md)  
     
-    Opzioni di ridenominazione delle colonne.
+    Opzioni di ridenominazione della colonna.
 
 ## <a name="see-also"></a>Vedi anche
 

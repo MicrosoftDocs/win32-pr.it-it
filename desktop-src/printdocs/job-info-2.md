@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura di informazioni sul processo \_ 2 descrive un set completo di valori associati a un processo.
+description: La struttura \_ JOB INFO \_ 2 descrive un set completo di valori associati a un processo.
 ms.assetid: 0cc61e35-4ac9-47bd-bb0d-ff43854bdee5
-title: Struttura JOB_INFO_2 (winspool. h)
+title: JOB_INFO_2 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d6b582267afceb01fd7ced7d6d46144664bb9d2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c41ea46f9226990fc28b5c629f3b36785d4bf4b0ee6ecd6e39477251f765b3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971320"
 ---
-# <a name="job_info_2-structure"></a>Struttura di informazioni sul processo \_ \_ 2
+# <a name="job_info_2-structure"></a>Struttura JOB \_ INFO \_ 2
 
-La struttura di **informazioni sul processo \_ \_ 2** descrive un set completo di valori associati a un processo.
+La **struttura JOB INFO \_ \_ 2** descrive un set completo di valori associati a un processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,127 +63,127 @@ typedef struct _JOB_INFO_2 {
 
 <dl> <dt>
 
-**JobId**
+**Jobid**
 </dt> <dd>
 
-Valore dell'identificatore di processo.
+Valore dell'identificatore del processo.
 
 </dd> <dt>
 
 **pPrinterName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome della stampante per cui viene eseguito lo spooling del processo.
+Puntatore a una stringa con terminazione Null che specifica il nome della stampante per cui viene spooling il processo.
 
 </dd> <dt>
 
 **pMachineName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del computer in cui è stato creato il processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il nome del computer che ha creato il processo di stampa.
 
 </dd> <dt>
 
 **pUserName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome dell'utente proprietario del processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il nome dell'utente proprietario del processo di stampa.
 
 </dd> <dt>
 
 **pDocument**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del processo di stampa, ad esempio "MS-WORD: Review.doc".
+Puntatore a una stringa con terminazione Null che specifica il nome del processo di stampa, ad esempio "MS-WORD: Review.doc".
 
 </dd> <dt>
 
 **pNotifyName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome dell'utente che deve ricevere una notifica quando il processo è stato stampato o quando si verifica un errore durante la stampa del processo.
+Puntatore a una stringa con terminazione Null che specifica il nome dell'utente che deve ricevere una notifica quando il processo è stato stampato o quando si verifica un errore durante la stampa del processo.
 
 </dd> <dt>
 
 **pDatatype**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il tipo di dati utilizzati per registrare il processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il tipo di dati utilizzato per registrare il processo di stampa.
 
 </dd> <dt>
 
 **pPrintProcessor**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del processore di stampa da utilizzare per stampare il processo.
+Puntatore a una stringa con terminazione Null che specifica il nome del processore di stampa da utilizzare per stampare il processo.
 
 </dd> <dt>
 
 **pParameters**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica i parametri del processore di stampa.
+Puntatore a una stringa con terminazione Null che specifica i parametri del processore di stampa.
 
 </dd> <dt>
 
 **pDriverName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del driver della stampante da utilizzare per elaborare il processo di stampa.
+Puntatore a una stringa con terminazione Null che specifica il nome del driver della stampante da utilizzare per elaborare il processo di stampa.
 
 </dd> <dt>
 
 **pDevMode**
 </dt> <dd>
 
-Puntatore a una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che contiene i dati dell'ambiente e dell'inizializzazione del dispositivo per il driver della stampante.
+Puntatore a una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che contiene i dati di inizializzazione del dispositivo e dell'ambiente per il driver della stampante.
 
 </dd> <dt>
 
 **pStatus**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica lo stato del processo di stampa. Questo membro deve essere controllato prima **dello stato** e, se **pStatus** è **null**, lo stato viene definito dal contenuto del membro di stato.
+Puntatore a una stringa con terminazione Null che specifica lo stato del processo di stampa. Questo membro deve essere controllato prima di **Status** e, se **pStatus** è **NULL,** lo stato è definito dal contenuto del membro Status.
 
 </dd> <dt>
 
 **pSecurityDescriptor**
 </dt> <dd>
 
-Il valore di questo membro è **null**. Il recupero e l'impostazione dei descrittori di sicurezza del documento non sono supportati in questa versione.
+Il valore di questo membro è **NULL.** Il recupero e l'impostazione dei descrittori di sicurezza dei documenti non sono supportati in questa versione.
 
 </dd> <dt>
 
 **Status**
 </dt> <dd>
 
-Stato del processo. Il membro può essere costituito da uno o più dei valori seguenti.
+Stato del processo. Questo membro può essere uno o più dei valori seguenti.
 
 | Valore                           | Significato                                                      |
 |---------------------------------|--------------------------------------------------------------|
-| \_stato processo \_ bloccato \_ DEVQ      | Il driver non è in grado di stampare il processo.                             |
-| \_stato processo \_ eliminato            | Il processo è stato eliminato.                                        |
-| \_eliminazione dello stato del processo \_           | È in corso l'eliminazione del processo.                                        |
-| \_errore di stato del processo \_              | Un errore è associato al processo.                         |
-| stato del processo \_ \_ offline            | La stampante è offline.                                          |
-| \_carta dello stato del processo \_           | Stampante esaurita.                                     |
-| \_stato processo \_ sospeso             | Il processo è stato sospeso.                                               |
-| stato del processo \_ \_ stampato            | Il processo è stato stampato.                                             |
-| \_stampa dello stato del processo \_           | Il processo viene stampato.                                             |
-| \_riavvio stato \_ processo            | Il processo è stato riavviato.                                      |
-| \_spooling dello stato del processo \_           | Il processo sta effettuando lo spooling.                                             |
-| \_ \_ intervento dell'utente sullo stato del processo \_ | La stampante presenta un errore che richiede all'utente di eseguire un'operazione. |
+| STATO \_ PROCESSO \_ BLOCCATO \_ DEVQ      | Il driver non può stampare il processo.                             |
+| STATO \_ PROCESSO \_ ELIMINATO            | Il processo è stato eliminato.                                        |
+| ELIMINAZIONE DELLO \_ STATO DEL \_ PROCESSO           | È in corso l'eliminazione del processo.                                        |
+| ERRORE \_ DI STATO DEL \_ PROCESSO              | Al processo è associato un errore.                         |
+| STATO \_ DEL PROCESSO \_ OFFLINE            | La stampante è offline.                                          |
+| DOCUMENTO \_ SULLO STATO DEL \_ PROCESSO           | La stampante è senza carta.                                     |
+| STATO \_ DEL PROCESSO \_ SOSPESO             | Il processo è in pausa.                                               |
+| STATO \_ DEL \_ PROCESSO STAMPATO            | Il processo è stato stampato.                                             |
+| STAMPA \_ DELLO STATO DEL \_ PROCESSO           | Il processo è in corso di stampa.                                             |
+| RIAVVIO \_ STATO \_ PROCESSO            | Il processo è stato riavviato.                                      |
+| \_ \_ SPOOLING DELLO STATO DEL PROCESSO           | È in esecuzione lo spooling del processo.                                             |
+| INTERVENTO \_ \_ DELL'UTENTE SULLO STATO DEL \_ PROCESSO | La stampante presenta un errore che richiede all'utente di eseguire un'operazione. |
 
 
 
  
 
-In Windows XP e nelle versioni successive di Windows è possibile utilizzare anche i valori seguenti:
+In Windows XP e versioni successive di Windows, è anche possibile usare i valori seguenti:
 
 | Valore                 | Significato                                                                                       |
 |-----------------------|-----------------------------------------------------------------------------------------------|
-| \_stato processo \_ completato | Il processo viene inviato alla stampante, ma potrebbe non essere ancora stampato. Per ulteriori informazioni, vedere la sezione Osservazioni. |
-| stato del processo \_ \_ mantenuto | Il processo è stato mantenuto nella coda di stampa che segue la stampa.                              |
+| STATO \_ PROCESSO \_ COMPLETATO | Il processo viene inviato alla stampante, ma potrebbe non essere ancora stampato. Per ulteriori informazioni, vedere la sezione Osservazioni. |
+| STATO \_ DEL \_ PROCESSO MANTENUTO | Il processo è stato mantenuto nella coda di stampa dopo la stampa.                              |
 
 
 
@@ -194,15 +194,15 @@ In Windows XP e nelle versioni successive di Windows è possibile utilizzare anc
 **Priorità**
 </dt> <dd>
 
-Priorità del processo. Questo membro può essere uno dei valori seguenti o compreso tra 1 e 99 ( \_ priorità minima tramite \_ priorità massima).
+Priorità del processo. Questo membro può essere uno dei valori seguenti o compreso nell'intervallo compreso tra 1 e 99 (da MIN \_ PRIORITY a MAX \_ PRIORITY).
 
 
 
 | Valore         | Significato           |
 |---------------|-------------------|
-| \_priorità minima | Priorità minima. |
-| \_priorità massima | Priorità massima. |
-| \_priorità def | Priorità predefinita. |
+| MIN \_ PRIORITY | Priorità minima. |
+| MAX \_ PRIORITY | Priorità massima. |
+| DEF \_ PRIORITY | Priorità predefinita. |
 
 
 
@@ -220,21 +220,21 @@ Posizione del processo nella coda di stampa.
 **StartTime**
 </dt> <dd>
 
-La prima volta che il processo può essere stampato.
+La prima volta in cui è possibile stampare il processo.
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd>
 
-Ora più recente in cui è possibile stampare il processo.
+Ora dell'ultima stampa del processo.
 
 </dd> <dt>
 
 **TotalPages**
 </dt> <dd>
 
-Numero di pagine necessarie per il processo. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione di pagina.
+Numero di pagine necessarie per il processo. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione della pagina.
 
 </dd> <dt>
 
@@ -248,9 +248,9 @@ Dimensione, in byte, del processo.
 **Inviata**
 </dt> <dd>
 
-Struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che specifica l'ora in cui il processo è stato inviato.
+Struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che specifica l'ora di invio del processo.
 
-Questo valore di ora è in formato UTC (Universal Time Coordinate). È necessario convertirlo in un valore di ora locale prima di visualizzarlo. Per eseguire la conversione, è possibile usare la funzione [**FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) .
+Questo valore di ora è in formato UTC (Universal Time Coordinate). È consigliabile convertirlo in un valore di ora locale prima di visualizzarlo. È possibile usare la [**funzione FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) per eseguire la conversione.
 
 </dd> <dt>
 
@@ -261,16 +261,16 @@ Tempo totale, in millisecondi, trascorso dall'inizio della stampa del processo.
 
 </dd> <dt>
 
-**PagesPrinted**
+**Pagine stampate**
 </dt> <dd>
 
-Numero di pagine stampate. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione di pagina.
+Numero di pagine stampate. Questo valore può essere zero se il processo di stampa non contiene informazioni di delimitazione della pagina.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in modo che lo stato del processo \_ \_ venga stampato subito dopo l'invio del processo alla stampante.
+I monitoraggi delle porte che non supportano TrueEndOfJob impostano il processo come JOB STATUS PRINTED subito dopo l'invio \_ \_ del processo alla stampante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -280,8 +280,8 @@ I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ \_ Info processo \_ 2W** (Unicode) e **\_ informazioni sul processo \_ \_ 2a** (ANSI)<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ JOB \_ INFO \_ 2W** (Unicode) e **\_ JOB INFO \_ \_ 2A** (ANSI)<br/>                                   |
 
 
 
@@ -292,10 +292,10 @@ I monitoraggi porta che non supportano TrueEndOfJob imposteranno il processo in 
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> <dt>
 
 [**EnumJobs**](enumjobs.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione Texture2DArray:: GetDimensions'
+title: Funzione Texture2DArray::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione Texture2DArray::GetDimensions
 ms.assetid: 0f6d88b3-195d-4f8c-ac31-ac90129a233e
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b3a78bd12f6924c85d4d395c3cdf73443ae51478
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: c655313147a568e5eb33ddf30a2acd2be3549ca4d57bc8510ef974199ea3740d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985871"
 ---
-# <a name="texture2darraygetdimensions-function"></a>Funzione Texture2DArray:: GetDimensions
+# <a name="texture2darraygetdimensions-function"></a>Funzione Texture2DArray::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -40,48 +40,48 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ in\]
+*MipLevel* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-facoltativo. Il livello mipmap (deve essere specificato se si usa *NumberOfLevels* ).
+facoltativo. Livello mipmap (deve essere specificato se *si usa NumberOfLevels).*
 
 </dd> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Altezza* \[ out\]
+*Altezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Altezza della risorsa, in Texel.
+Altezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Elementi* \[ di out\]
+*Elementi* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ out\]
+*NumberOfLevels* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Il numero di livelli di mipmap (richiede anche *MipLevel* ).
+Numero di livelli mipmap (richiede *anche MipLevel).*
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ Nothing
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -122,7 +122,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -137,7 +137,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DArray](sm5-object-texture2darray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

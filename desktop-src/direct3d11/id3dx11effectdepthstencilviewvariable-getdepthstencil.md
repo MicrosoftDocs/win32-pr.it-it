@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectDepthStencilViewVariable GetDepthStencil (D3dx11effect. h)
-description: Ottenere una risorsa di visualizzazione stencil profondità.
+title: Metodo ID3DX11EffectDepthStencilViewVariable GetDepthStencil (D3dx11effect.h)
+description: Ottenere una risorsa depth-stencil-view.
 ms.assetid: 7d94d98b-7070-41ee-9a9d-fe848f8914f2
 keywords:
 - Metodo GetDepthStencil Direct3D 11
-- Metodo GetDepthStencil Direct3D 11, interfaccia ID3DX11EffectDepthStencilViewVariable
-- Interfaccia ID3DX11EffectDepthStencilViewVariable Direct3D 11, metodo GetDepthStencil
+- Metodo GetDepthStencil Direct3D 11, ID3DX11EffectDepthStencilViewVariable interface
+- ID3DX11EffectDepthStencilViewVariable interface Direct3D 11 , GetDepthStencil method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49206f051922982ac77265e68fa3d7b7397d1348
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d31b5a947afc9a1b92349b20bc5d075599a16d12abae0ac7d375e8bc0a0de89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989741"
 ---
-# <a name="id3dx11effectdepthstencilviewvariablegetdepthstencil-method"></a>Metodo ID3DX11EffectDepthStencilViewVariable:: GetDepthStencil
+# <a name="id3dx11effectdepthstencilviewvariablegetdepthstencil-method"></a>Metodo ID3DX11EffectDepthStencilViewVariable::GetDepthStencil
 
-Ottenere una risorsa di visualizzazione stencil profondità.
+Ottenere una risorsa depth-stencil-view.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT GetDepthStencil(
 
 Tipo: **[ **ID3D11DepthStencilView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview)\*\***
 
-Indirizzo di un puntatore a un'interfaccia di visualizzazione stencil profondità. Vedere [**ID3D11DepthStencilView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview).
+Indirizzo di un puntatore a un'interfaccia depth-stencil-view. Vedere [**ID3D11DepthStencilView.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview)
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Indirizzo di un puntatore a un'interfaccia di visualizzazione stencil profondit�
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Modello legacy utilizzato per assegnare un valore in un file di effetti. Questo modello è stato sostituito dal modello EffectParamString.
+description: Modello legacy usato per assegnare un valore in un file degli effetti. Questo modello è stato sostituito dal modello EffectParamString.
 ms.assetid: a9cebdfe-c70e-4e3f-8fde-41947bd9a1fa
 title: EffectString
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0278d2bc19bbfbc77d7df57185f031a80a60b52
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8bc863f9ac5ad53db6c9fd825db3cb462897bc9d7683b37faf455b69be0cf3ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988011"
 ---
 # <a name="effectstring"></a>EffectString
 
-Modello legacy utilizzato per assegnare un valore in un file di effetti. Questo modello è stato sostituito dal modello [**EffectParamString**](effectparamstring.md) .
+Modello legacy usato per assegnare un valore in un file degli effetti. Questo modello è stato sostituito [**dal modello EffectParamString.**](effectparamstring.md)
 
 ``` syntax
 template EffectString

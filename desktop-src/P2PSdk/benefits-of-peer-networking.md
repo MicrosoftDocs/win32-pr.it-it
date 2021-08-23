@@ -4,16 +4,16 @@ ms.assetid: 3aed8c13-4dc0-4242-b3de-8817ff2f4018
 title: Vantaggi della rete peer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f836d8e60cb249b5a0e603f0a295a55686bc5ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84c9e6ab5eedd130735f4c352712e0445d29e6333b033113dfa2f90130b28c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011769"
 ---
 # <a name="benefits-of-peer-networking"></a>Vantaggi della rete peer
 
-L'infrastruttura peer-to-peer offre una soluzione completa per la creazione di applicazioni di rete peer-to-peer. È possibile utilizzare le API di peer-to-Peer Graphing, GROUPING, Identity Manager e provider dello spazio dei nomi PNRP per creare applicazioni peer-to-peer nuove, straordinarie e affidabili. L'infrastruttura peer-to-peer offre un'infrastruttura di rete solida, che consente di concentrarsi sullo **sviluppo** di applicazioni, poiché l'infrastruttura è stata sviluppata.
+L'infrastruttura peer-to-peer offre una soluzione completa per la creazione di applicazioni di rete peer-to-peer. È possibile usare le API Peer-to-Peer Graphing, Grouping, Identity Manager e provider dello spazio dei nomi PNRP per creare nuove applicazioni peer-to-peer, interessanti e affidabili. L'infrastruttura peer-to-peer offre un'infrastruttura di  rete solida che consente di concentrarsi sullo sviluppo di applicazioni, perché l'infrastruttura viene sviluppata per l'utente.
 
 ## <a name="design-features"></a>Funzionalità di progettazione
 
@@ -21,28 +21,28 @@ L'infrastruttura peer-to-peer offre le funzionalità seguenti:
 
 | Funzionalità            | Descrizione                                          |
 |--------------------|------------------------------------------------------|
-| **Sicuro**         | Affidabilità se si verificano errori o attacchi diretti |
-| **Scalabile**       | Scalabilità dalle semplici reti LAN all'intera rete Internet  |
-| **Senza server**     | Nessun punto centrale di errore                          |
-| **Ottimizzazione automatica**    | Adatta alle modifiche all'interno dell'infrastruttura          |
-| **Riparazione automatica** | Corregge e corregge automaticamente            |
-| **Condivisione**        | Abilita la condivisione dagli endpoint perimetrali della rete       |
+| **Sicuro**         | Affidabilità in caso di errori o attacchi diretti |
+| **Scalabile**       | Scalabilità da reti LAN semplici a Internet  |
+| **Senza server**     | Nessun punto centrale di guasto                          |
+| **Ottimizzazione automatica**    | Si adatta alle modifiche all'interno dell'infrastruttura          |
+| **Riparazione autonoma** | Ripristina e corregge automaticamente se stesso            |
+| **Condivisione**        | Abilita la condivisione da endpoint perimetrali di rete       |
 
 
 
  
 
-Utilizzando l'infrastruttura peer-to-peer, è possibile creare i seguenti tipi di applicazioni:
+Usando l'infrastruttura peer-to-peer, è possibile creare i tipi di applicazioni seguenti:
 
--   Comunicazione e rete in tempo reale
+-   Rete e comunicazione in tempo reale
 -   Collaborazione
 -   Distribuzione di contenuti
 -   Coordinamento dell'elaborazione distribuita
--   Tecnologie e protocolli Internet
+-   Protocolli e tecnologie Internet
 
 ## <a name="alternative-to-dns"></a>Alternativa a DNS
 
-Poiché le entità peer-to-peer partecipano e comunicano su base ad hoc, l'infrastruttura peer-to-peer rappresenta un'alternativa efficace a DNS per la risoluzione dei nomi. L'infrastruttura peer-to-peer utilizza l'API del provider dello spazio dei nomi PNRP per fornire un meccanismo senza server per la risoluzione dei nomi peer-to-peer.
+Poiché le entità peer-to-peer partecipano e comunicano ad hoc, l'infrastruttura peer-to-peer è un'alternativa efficace al DNS per la risoluzione dei nomi. L'infrastruttura peer-to-peer usa l'API del provider dello spazio dei nomi PNRP per fornire un meccanismo serverless per la risoluzione dei nomi peer-to-peer.
 
  
 

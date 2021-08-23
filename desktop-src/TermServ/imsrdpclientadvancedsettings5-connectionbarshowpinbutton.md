@@ -1,18 +1,18 @@
 ---
-title: Proprietà ConnectionBarShowPinButton di IMsRdpClientAdvancedSettings5
-description: Imposta o recupera la configurazione per il pulsante Aggiungi nella barra delle connessioni.
+title: Proprietà ConnectionBarShowPinButton IMsRdpClientAdvancedSettings5
+description: Imposta o recupera la configurazione per il pulsante aggiungi nella barra delle connessioni.
 ms.assetid: fbb2c19b-88a7-435b-86ef-4856e194b383
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectionBarShowPinButton
-- Servizi Desktop remoto proprietà ConnectionBarShowPinButton, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà ConnectionBarShowPinButton
-- Servizi Desktop remoto proprietà ConnectionBarShowPinButton, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà ConnectionBarShowPinButton
-- Servizi Desktop remoto proprietà ConnectionBarShowPinButton, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà ConnectionBarShowPinButton
-- Servizi Desktop remoto proprietà ConnectionBarShowPinButton, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà ConnectionBarShowPinButton
+- Proprietà ConnectionBarShowPinButton Servizi Desktop remoto
+- Proprietà ConnectionBarShowPinButton Servizi Desktop remoto interfaccia , IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ConnectionBarShowPinButton
+- Proprietà ConnectionBarShowPinButton Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ConnectionBarShowPinButton
+- Proprietà ConnectionBarShowPinButton Servizi Desktop remoto interfaccia , IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ConnectionBarShowPinButton
+- Proprietà ConnectionBarShowPinButton Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ConnectionBarShowPinButton
 topic_type:
 - apiref
 api_name:
@@ -34,16 +34,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a766bc01bc5bf773fa03e788c3089441e6c3f6f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a978f6d1b6a26fe84f5ad590cfc41ab384d6ba49f1e265eecc0ea408b67b59c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001389"
 ---
-# <a name="imsrdpclientadvancedsettings5connectionbarshowpinbutton-property"></a>Proprietà IMsRdpClientAdvancedSettings5:: ConnectionBarShowPinButton
+# <a name="imsrdpclientadvancedsettings5connectionbarshowpinbutton-property"></a>Proprietà IMsRdpClientAdvancedSettings5::ConnectionBarShowPinButton
 
-Imposta o recupera la configurazione per il pulsante Aggiungi nella barra delle connessioni.
+Imposta o recupera la configurazione per il pulsante aggiungi nella barra delle connessioni.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -64,7 +64,7 @@ HRESULT get_ConnectionBarShowPinButton(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore booleano **true** o **false**. Il valore **true** indica il pulsante Aggiungi nella barra delle connessioni. Il valore **false** nasconde il pulsante Aggiungi nella barra delle connessioni.
+Valore booleano **TRUE** o **FALSE.** Il valore **TRUE indica** il pulsante aggiungi nella barra delle connessioni. Il valore **FALSE nasconde** il pulsante aggiungi nella barra di connessione.
 
 ## <a name="requirements"></a>Requisiti
 

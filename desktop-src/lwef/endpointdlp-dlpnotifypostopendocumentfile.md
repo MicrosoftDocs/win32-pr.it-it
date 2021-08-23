@@ -1,5 +1,5 @@
 ---
-description: Fornisce al sistema informazioni su un file di documento al termine dell'operazione di apertura.
+description: Fornisce al sistema informazioni su un file di documento dopo il completamento dell'operazione di apertura.
 title: Funzione DlpNotifyPostOpenDocumentFile (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 0aed30cc0eca066b569ad1299392430c4d1adeff
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 2957b09282fe64e41805f09a1761ca75aa3551ca70e9d4aa5b52517374fd9ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976601"
 ---
 # <a name="dlpnotifypostopendocumentfile-function"></a>Funzione DlpNotifyPostOpenDocumentFile
 
@@ -37,7 +37,7 @@ void WINAPI DlpNotifyPostOpenDocumentFile(_In_ const PDLP_DOCUMENT_INFO Document
 *DocumentInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) contenente informazioni sul documento aperto.
+Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) struttura contenente informazioni sul documento aperto.
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 2ebd3092-39aa-469c-a8c9-23f373ba0e66
 title: Elemento thisModelMetadata
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 872bcdfcf3f93bfc8fe307684c31cdebb2000b05
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 01d074e7e9c8d43e078ebc477366d88608e7c4f3fade6c0be3dbc6fda23f006b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991551"
 ---
 # <a name="thismodelmetadata-element"></a>Elemento thisModelMetadata
 
@@ -33,7 +33,7 @@ Non ci sono attributi.
 
 | Elemento                                                     | Descrizione                                                                                                                                                                        |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Produttore**](manufacturer.md)<br/>             | Nome del produttore. Almeno uno dei [](manufacturerls.md) [**produttori deve**](manufacturer.md) essere presente nei metadati.<br/> <br/> |
+| [**Produttore**](manufacturer.md)<br/>             | Nome del produttore. Nei metadati [**deve**](manufacturer.md) essere presente almeno un produttore o un [**produttoreLS.**](manufacturerls.md)<br/> <br/> |
 | [**manufacturerLS**](manufacturerls.md)<br/>         | Versione localizzata del nome del produttore.<br/> <br/>                                                                                                                 |
 | [**manufacturerURL**](manufacturerurl.md)<br/>       | Indirizzo URL del produttore.<br/> <br/>                                                                                                                                   |
 | [**Modelname**](modelname.md)<br/>                   | Nome del dispositivo. Nei metadati deve essere presente almeno uno di [**modelName**](modelname.md) o [**modelNameLS.**](modelnamels.md)<br/> <br/>                   |
@@ -83,7 +83,7 @@ Se è presente un elemento [**PnPXDeviceCategory,**](pnpxdevicecategory.md) alme
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | No            |

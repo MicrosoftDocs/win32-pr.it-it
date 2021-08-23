@@ -1,7 +1,7 @@
 ---
-description: "Verifica se un'estensione specificata è disponibile nel computer e può essere usata dal metodo IWiaItem2:: GetExtension."
+description: Controlla se un'estensione specificata è disponibile nel computer e può essere usata dal metodo IWiaItem2::GetExtension.
 ms.assetid: 672f6418-4ce3-4570-a412-fe639c9f5eb8
-title: 'Metodo IWiaItem2:: CheckExtension (WIA. h)'
+title: Metodo IWiaItem2::CheckExtension (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 65b0b5b3ace1634a20dfa63382d82099fef0686e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50240fbf10155fae555c6cd2e30bf8c86c571b8d52b86e02eab9f5bb11ac17ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965580"
 ---
-# <a name="iwiaitem2checkextension-method"></a>Metodo IWiaItem2:: CheckExtension
+# <a name="iwiaitem2checkextension-method"></a>Metodo IWiaItem2::CheckExtension
 
-Verifica se un'estensione specificata è disponibile nel computer e può essere usata dal metodo [**IWiaItem2:: GetExtension**](-wia-iwiaitem2-getextension.md) .
+Controlla se un'estensione specificata è disponibile nel computer e può essere usata dal metodo [**IWiaItem2::GetExtension.**](-wia-iwiaitem2-getextension.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT CheckExtension(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Attualmente non usato. Deve essere impostato su zero.
+Attualmente inutilizzato. Deve essere impostato su zero.
 
 </dd> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -60,27 +60,27 @@ Specifica il nome dell'estensione.
 
 </dd> <dt>
 
-*riidExtensionInterface* \[ in\]
+*riidExtensionInterface* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **REFIID**
 
-Attualmente non usato.
+Attualmente inutilizzato.
 
 </dd> <dt>
 
-*pbExtensionExists* \[ out\]
+*pbExtensionExists* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **bool \** _
+Tipo: **BOOL \***
 
-Riceve un puntatore a _ * BOOL * *.
+Riceve un puntatore a un **oggetto BOOL.**
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**FALSE**
+<span id="FALSE"></span><span id="false"></span>**False**
 
 
 </dt> <dd>
@@ -91,7 +91,7 @@ L'estensione specificata non è disponibile.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**TRUE**
+<span id="TRUE"></span><span id="true"></span>**Vero**
 
 
 </dt> <dd>
@@ -104,15 +104,15 @@ L'estensione specificata è disponibile.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzando questo metodo, le applicazioni possono verificare se un'estensione è disponibile prima di chiamare il metodo [**IWiaItem2:: GetExtension**](-wia-iwiaitem2-getextension.md) . Inoltre, l'applicazione può verificare quali estensioni sono disponibili senza co-creazione di ognuna di esse, quindi decidere quale usare.
+Usando questo metodo, le applicazioni possono verificare se un'estensione è disponibile prima di chiamare il [**metodo IWiaItem2::GetExtension.**](-wia-iwiaitem2-getextension.md) Inoltre, l'applicazione può controllare quali estensioni sono disponibili senza creare ognuna di esse e quindi decidere quale usare.
 
 ## <a name="examples"></a>Esempio
 
-CheckImgFilter controlla se il driver ha un filtro di elaborazione delle immagini. Prima di chiamare il componente di anteprima, un'applicazione deve verificare che il driver disponga di un filtro di elaborazione delle immagini.
+CheckImgFilter controlla se il driver dispone di un filtro di elaborazione delle immagini. Prima di chiamare il componente di anteprima, un'applicazione deve assicurarsi che il driver abbia un filtro di elaborazione delle immagini.
 
 
 ```C++
@@ -166,10 +166,10 @@ CheckImgFilter(
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

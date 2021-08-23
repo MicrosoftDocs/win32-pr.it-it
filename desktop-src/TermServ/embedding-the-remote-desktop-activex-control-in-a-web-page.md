@@ -1,20 +1,20 @@
 ---
-title: Incorporamento del controllo ActiveX Desktop remoto in una pagina Web
-description: Esempio che illustra l'uso delle interfacce di scripting.
+title: Incorporamento del controllo Desktop remoto ActiveX in una pagina Web
+description: Esempio che illustra l'uso delle interfacce gestibili da script.
 ms.assetid: fad0f81f-bb04-4900-aeb8-0be503efa591
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d180c6ed95bc0f75f2f10305f00dc1d63be25e80
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: c8cb5fffe6bed04d99fcfac7d48f28300c3714affa3ea1df25bda27334988752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103723854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001569"
 ---
-# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Incorporamento del controllo ActiveX Desktop remoto in una pagina Web
+# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Incorporamento del controllo Desktop remoto ActiveX in una pagina Web
 
-È possibile incorporare il controllo ActiveX Desktop remoto in una pagina Web utilizzando codice simile al seguente.
+È possibile incorporare Desktop remoto ActiveX controllo in una pagina Web usando codice simile al seguente.
 
 
 ```HTML
@@ -466,18 +466,18 @@ end sub
 
 
 
-Il CLSID è per il controllo ActiveX ospitato da Connessione Desktop remoto (RDP) 6,0. Questo controllo ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
+Il CLSID è per ActiveX controllo ospitato da Connessione Desktop remoto (RDP) 6.0. Questo ActiveX implementa [**IMsRdpClient.**](imsrdpclient-interface.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso del controllo ActiveX Desktop remoto](using-remote-desktop-web-connection.md)
+[Uso del Desktop remoto ActiveX controllo](using-remote-desktop-web-connection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

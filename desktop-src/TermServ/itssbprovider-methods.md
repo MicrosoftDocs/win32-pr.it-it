@@ -5,16 +5,16 @@ ms.assetid: C9498ABC-620D-4313-A1C7-9CB8819C4A08
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61257d068b1425b03d119fee0318d9cdc1c6bb0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c58822f7f3ebd335ce88195318ee0f859ecced2caa67335ea76cfd43756ddcfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058829"
 ---
 # <a name="itssbprovider-methods"></a>Metodi ITsSbProvider
 
-L'interfaccia [**ITsSbProvider**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbprovider) espone i metodi seguenti.
+[**L'interfaccia ITsSbProvider**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbprovider) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,9 +31,9 @@ L'interfaccia [**ITsSbProvider**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbprovi
 -   [**Metodo RegisterForNotification**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbprovider-registerfornotification)
 -   [**Metodo UnRegisterForNotification**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbprovider-unregisterfornotification)
 
- 
+ 
 
- 
+ 
 
 
 

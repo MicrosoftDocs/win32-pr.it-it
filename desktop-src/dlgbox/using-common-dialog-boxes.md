@@ -7,33 +7,33 @@ keywords:
 - finestre di dialogo comuni, uso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 773382a34b048e812a3fb093da0492b0c628fb14
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 5da09fcc99cdde617c3fbdaf34e4465d9a768b0073c5dbd6d461a19060ca92bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985301"
 ---
 # <a name="using-common-dialog-boxes"></a>Uso di finestre di dialogo comuni
 
-Questa sezione illustra le attività che richiamano finestre di dialogo comuni:
+Questa sezione illustra le attività che richiamano le finestre di dialogo comuni:
 
 -   [Scelta di un colore](#choosing-a-color)
 -   [Scelta di un tipo di carattere](#choosing-a-font)
 -   [Apertura di un file](#opening-a-file)
 -   [Visualizzazione della finestra di dialogo Stampa](#displaying-the-print-dialog-box)
--   [Utilizzo della finestra delle proprietà Stampa](#using-the-print-property-sheet)
+-   [Uso della finestra delle proprietà Stampa](#using-the-print-property-sheet)
 -   [Configurazione della pagina stampata](#setting-up-the-printed-page)
 -   [Ricerca di testo](#finding-text)
 
 ## <a name="choosing-a-color"></a>Scelta di un colore
 
-Questo argomento descrive il codice di esempio che visualizza una **finestra di** dialogo Colore in modo che un utente possa selezionare un colore. Il codice di esempio inizializza prima una [**struttura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) e quindi chiama la [**funzione ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) per visualizzare la finestra di dialogo. Se la funzione restituisce **TRUE,** a indicare che l'utente ha selezionato un colore, il codice di esempio usa il colore selezionato per creare un nuovo pennello a tinta unita.
+Questo argomento descrive il codice di esempio che visualizza una **finestra di** dialogo Colore in modo che un utente possa selezionare un colore. Il codice di esempio inizializza prima [**una struttura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) e quindi chiama la [**funzione ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) per visualizzare la finestra di dialogo. Se la funzione restituisce **TRUE,** a indicare che l'utente ha selezionato un colore, il codice di esempio usa il colore selezionato per creare un nuovo pennello a tinta unita.
 
-In questo esempio viene utilizzata [**la struttura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) per inizializzare la finestra di dialogo come indicato di seguito:
+In questo esempio viene utilizzata la [**struttura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) per inizializzare la finestra di dialogo come indicato di seguito:
 
--   Inizializza il membro **lpCustColors** con un puntatore a una matrice statica di valori. I colori nella matrice sono inizialmente neri, ma la matrice statica mantiene i colori personalizzati creati dall'utente per le chiamate [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) successive.
--   Imposta il flag **\_ CC RGBINIT** e inizializza il membro **rgbResult** per specificare il colore selezionato inizialmente all'apertura della finestra di dialogo. Se non specificato, la selezione iniziale è nera. L'esempio usa la variabile statica *rgbCurrent* per mantenere il valore selezionato tra le chiamate a [**ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
+-   Inizializza il membro **lpCustColors** con un puntatore a una matrice statica di valori. I colori nella matrice sono inizialmente di colore nero, ma la matrice statica mantiene i colori personalizzati creati dall'utente per le chiamate [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) successive.
+-   Imposta il flag **\_ CC RGBINIT** e inizializza il membro **rgbResult** per specificare il colore selezionato inizialmente all'apertura della finestra di dialogo. Se non viene specificato, la selezione iniziale è nera. Nell'esempio viene utilizzata la *variabile statica rgbCurrent* per mantenere il valore selezionato tra le chiamate a [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)).
 -   Imposta il flag **CC \_ FULLOPEN** in modo che l'estensione dei colori personalizzati della finestra di dialogo sia sempre visualizzata.
 
 
@@ -105,22 +105,22 @@ if (ChooseFont(&cf)==TRUE)
 ## <a name="opening-a-file"></a>Apertura di un file
 
 > [!Note]  
-> A partire da Windows Vista, la finestra di dialogo file comune è stata sostituita dalla finestra di dialogo elemento comune quando viene usata per aprire un file. È consigliabile usare l'API Common Item Dialog anziché l'API Common File Dialog. Per altre informazioni, vedere [Finestra di dialogo elemento comune](/windows/win32/shell/common-file-dialog).
+> A partire da Windows Vista, la finestra di dialogo file comune è stata sostituita dal dialogo elemento comune quando viene usato per aprire un file. È consigliabile usare l'API Common Item Dialog anziché l'API Common File Dialog. Per altre informazioni, vedere [Finestra di dialogo elemento comune](/windows/win32/shell/common-file-dialog).
 
  
 
 Questo argomento descrive il codice  di esempio che visualizza una finestra di dialogo Apri in modo che un utente possa specificare l'unità, la directory e il nome di un file da aprire. Il codice di esempio inizializza prima una [**struttura OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) e quindi chiama la [**funzione GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) per visualizzare la finestra di dialogo.
 
-In questo esempio il membro **lpstrFilter** è un puntatore a un buffer che specifica due filtri di nome file che l'utente può selezionare per limitare i nomi di file visualizzati. Il buffer contiene una matrice di stringhe con terminazione Double-Null in cui ogni coppia di stringhe specifica un filtro. Il **membro nFilterIndex** specifica che il primo criterio viene usato quando viene creata la finestra di dialogo.
+In questo esempio il membro **lpstrFilter** è un puntatore a un buffer che specifica due filtri di nome file che l'utente può selezionare per limitare i nomi di file visualizzati. Il buffer contiene una matrice di stringhe con terminazione double-null in cui ogni coppia di stringhe specifica un filtro. Il **membro nFilterIndex** specifica che il primo criterio viene usato quando viene creata la finestra di dialogo.
 
-In questo esempio vengono impostati i flag **OFN \_ PATHMUSTEXIST** e **OFN \_ FILEMUSTEXIST** nel **membro Flags.** Questi flag determinano che la finestra di dialogo verifichi, prima di restituire , che il percorso e il nome file specificati dall'utente esistano effettivamente.
+In questo esempio vengono **impostati i flag OFN \_ PATHMUSTEXIST** **e OFN \_ FILEMUSTEXIST** nel **membro Flags.** Questi flag determinano che la finestra di dialogo verifichi, prima della restituzione, che il percorso e il nome file specificati dall'utente esistano effettivamente.
 
-La [**funzione GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) restituisce **TRUE** se l'utente fa clic sul pulsante **OK** e il percorso e il nome file specificati esistono. In questo caso, il buffer a cui punta il **membro lpstrFile** contiene il percorso e il nome del file. Il codice di esempio usa queste informazioni in una chiamata alla funzione per aprire il file.
+La [**funzione GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) restituisce **TRUE** se l'utente fa clic sul **pulsante OK** e il percorso e il nome file specificati esistono. In questo caso, il buffer a cui punta il **membro lpstrFile** contiene il percorso e il nome del file. Il codice di esempio usa queste informazioni in una chiamata alla funzione per aprire il file.
 
-Anche se in questo esempio non viene impostato il flag  **OFN \_ EXPLORER,** viene comunque visualizzata la finestra di dialogo Apri in stile Esplora risorse predefinita. Tuttavia, se si desidera fornire una routine hook o un modello personalizzato e si vuole l'interfaccia utente di Explorer, è necessario impostare il flag **OFN \_ EXPLORER.**
+Anche se in questo esempio non viene impostato il flag **OFN \_ EXPLORER,** viene comunque visualizzata la finestra di dialogo Apri in **stile** Esplora risorse predefinita. Tuttavia, se si vuole fornire una routine hook o un modello personalizzato e si vuole usare l'interfaccia utente di Explorer, è necessario impostare il flag **OFN \_ EXPLORER.**
 
 > [!Note]  
-> Nel linguaggio di programmazione C una stringa racchiusa tra virgolette ha terminazione Null.
+> Nel linguaggio di programmazione C una stringa racchiusa tra virgolette è con terminazione Null.
 
  
 
@@ -163,11 +163,11 @@ if (GetOpenFileName(&ofn)==TRUE)
 
 ## <a name="displaying-the-print-dialog-box"></a>Visualizzazione della finestra di dialogo Stampa
 
-In questo argomento viene descritto il codice di esempio che visualizza una **finestra** di dialogo Stampa in modo che un utente possa selezionare le opzioni per la stampa di un documento. Il codice di esempio inizializza prima una [**struttura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e quindi chiama la [**funzione PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per visualizzare la finestra di dialogo.
+Questo argomento descrive il codice di esempio che visualizza una **finestra di** dialogo Stampa in modo che un utente possa selezionare le opzioni per la stampa di un documento. Il codice di esempio inizializza prima una [**struttura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e quindi chiama la [**funzione PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per visualizzare la finestra di dialogo.
 
-In questo esempio viene impostato il flag **\_ RETURNDC PD** nel **membro Flags** della [**struttura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) In questo modo [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) restituisce un handle di contesto di dispositivo alla stampante selezionata nel **membro hDC.** È possibile usare l'handle per eseguire il rendering dell'output sulla stampante.
+In questo esempio viene impostato il flag **PD \_ RETURNDC** nel **membro Flags** della [**struttura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) In questo [**modo PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) restituirà un handle di contesto di dispositivo alla stampante selezionata nel **membro hDC.** È possibile usare l'handle per eseguire il rendering dell'output sulla stampante.
 
-Nell'input, il codice di esempio imposta **i membri hDevMode** e **hDevNames** su **NULL.** Se la funzione restituisce **TRUE,** questi membri restituiscono handle alle [**strutture DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) che contengono l'input dell'utente e le informazioni sulla stampante. È possibile utilizzare queste informazioni per preparare l'output da inviare alla stampante selezionata.
+Nell'input, il codice di esempio imposta i **membri hDevMode** e **hDevNames** su **NULL.** Se la funzione restituisce **TRUE,** questi membri restituiscono handle alle [**strutture DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) che contengono l'input utente e le informazioni sulla stampante. È possibile usare queste informazioni per preparare l'output da inviare alla stampante selezionata.
 
 
 ```
@@ -198,13 +198,13 @@ if (PrintDlg(&pd)==TRUE)
 
 
 
-## <a name="using-the-print-property-sheet"></a>Utilizzo della finestra delle proprietà Stampa
+## <a name="using-the-print-property-sheet"></a>Uso della finestra delle proprietà Stampa
 
-Questo argomento descrive il codice di esempio che visualizza una **finestra** delle proprietà Stampa in modo che un utente possa selezionare le opzioni per la stampa di un documento. Il codice di esempio inizializza prima una [**struttura PRINTDLGEX,**](/windows/win32/api/commdlg/ns-commdlg-printdlgexa) quindi chiama la [**funzione PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per visualizzare la finestra delle proprietà.
+Questo argomento descrive il codice di esempio che visualizza una **finestra delle** proprietà Stampa in modo che un utente possa selezionare le opzioni per la stampa di un documento. Il codice di esempio inizializza prima [**una struttura PRINTDLGEX,**](/windows/win32/api/commdlg/ns-commdlg-printdlgexa) quindi chiama la [**funzione PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per visualizzare la finestra delle proprietà.
 
-Il codice di esempio imposta il flag **\_ RETURNDC PD** nel **membro Flags** della [**struttura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) In questo modo [**la funzione PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) restituisce un handle di contesto di dispositivo alla stampante selezionata nel **membro hDC.**
+Il codice di esempio imposta il flag **PD \_ RETURNDC** nel **membro Flags** della [**struttura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) In questo modo la [**funzione PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) restituisce un handle di contesto di dispositivo alla stampante selezionata nel **membro hDC.**
 
-Nell'input, il codice di esempio imposta i **membri hDevMode** e **hDevNames** su **NULL.** Se la funzione restituisce **S \_ OK**, questi membri restituiscono handle alle [**strutture DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) contenenti l'input dell'utente e le informazioni sulla stampante. È possibile utilizzare queste informazioni per preparare l'output da inviare alla stampante selezionata.
+Nell'input, il codice di esempio imposta i **membri hDevMode** e **hDevNames** su **NULL.** Se la funzione restituisce **S \_ OK,** questi membri restituiscono handle alle [**strutture DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) contenenti l'input dell'utente e le informazioni sulla stampante. È possibile usare queste informazioni per preparare l'output da inviare alla stampante selezionata.
 
 Al termine dell'operazione di stampa, il codice di esempio libera i buffer [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea), [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames)e [**PRINTPAGERANGE**](/windows/win32/api/commdlg/ns-commdlg-printpagerange) e chiama la [**funzione DeleteDC**](/windows/desktop/api/wingdi/nf-wingdi-deletedc) per eliminare il contesto di dispositivo.
 
@@ -273,9 +273,9 @@ HRESULT DisplayPrintPropertySheet(HWND hWnd)
 
 ## <a name="setting-up-the-printed-page"></a>Configurazione della pagina stampata
 
-In questo argomento viene descritto  il codice di esempio che visualizza una finestra di dialogo Imposta pagina in modo che un utente possa selezionare gli attributi della pagina stampata, ad esempio il tipo di carta, l'origine della carta, l'orientamento della pagina e i margini della pagina. Il codice di esempio inizializza prima di tutto una [**struttura PAGESETUPDLG**](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlga) e quindi chiama la [**funzione PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) per visualizzare la finestra di dialogo.
+Questo argomento descrive il codice  di esempio che visualizza una finestra di dialogo Imposta pagina in modo che un utente possa selezionare gli attributi della pagina stampata, ad esempio il tipo di carta, l'origine della carta, l'orientamento della pagina e i margini della pagina. Il codice di esempio inizializza prima una [**struttura PAGESETUPDLG**](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlga) e quindi chiama la [**funzione PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) per visualizzare la finestra di dialogo.
 
-In questo esempio viene impostato il flag **\_ MARGINS PSD** nel **membro Flags** e viene utilizzato il membro **rtMargin** per specificare i valori iniziali del margine. Imposta il flag **\_ PSD INTHOUSANDTHSOFINCHES** per garantire che la finestra di dialogo esprima le dimensioni del margine in migliaia di pollici.
+In questo esempio viene impostato il flag **\_ PSD MARGINS** nel **membro Flags** e viene utilizzato il membro **rtMargin** per specificare i valori iniziali del margine. Imposta il flag **\_ PSD INTHOUSANDTHSOFINCHES** per garantire che la finestra di dialogo esprima le dimensioni del margine in migliaia di pollici.
 
 Nell'input, il codice di esempio imposta i **membri hDevMode** e **hDevNames** su **NULL.** Se la funzione restituisce **TRUE,** la funzione usa questi membri per restituire handle alle [**strutture DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) contenenti l'input dell'utente e le informazioni sulla stampante. È possibile usare queste informazioni per preparare l'output da inviare alla stampante selezionata.
 
@@ -371,7 +371,7 @@ uFindReplaceMsg = RegisterWindowMessage(FINDMSGSTRING);
 
 
 
-Per visualizzare una **finestra di** dialogo Trova, inizializzare prima una [**struttura FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) e quindi chiamare la [**funzione FindText.**](/windows/desktop/api/Commdlg/nf-commdlg-findtexta) Si noti che la struttura **FINDREPLACE** e il buffer per la stringa di ricerca devono essere una variabile globale o statica in modo che non ese termini dall'ambito prima della chiusura della finestra di dialogo. È necessario impostare il **membro hwndOwner** per specificare la finestra che riceve i messaggi registrati. Dopo aver creato la finestra di dialogo, è possibile spostarla o modificarla usando l'handle restituito.
+Per visualizzare una **finestra di** dialogo Trova, inizializzare prima una [**struttura FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) e quindi chiamare la [**funzione FindText.**](/windows/desktop/api/Commdlg/nf-commdlg-findtexta) Si noti che la **struttura FINDREPLACE** e il buffer per la stringa di ricerca devono essere una variabile globale o statica in modo che non esezioni dall'ambito prima della chiusura della finestra di dialogo. È necessario impostare il **membro hwndOwner** per specificare la finestra che riceve i messaggi registrati. Dopo aver creato la finestra di dialogo, è possibile spostarla o modificarla usando l'handle restituito.
 
 
 ```
