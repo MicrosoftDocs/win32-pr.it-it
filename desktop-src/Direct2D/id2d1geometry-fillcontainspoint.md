@@ -1,9 +1,9 @@
 ---
-title: Metodi FillContainsPoint di ID2D1Geometry
-description: Indica se l'area riempita dalla geometria deve contenere il punto specificato.
+title: Metodi id2D1Geometry FillContainsPoint
+description: Indica se l'area riempita dalla geometria conterrà il punto specificato.
 ms.assetid: 533a4423-8494-425f-af8b-674a2abc897c
 keywords:
-- Metodo FillContainsPoint Direct2D
+- Metodi FillContainsPoint Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: b1c71fedbaf7a0e4f5e7b6ee83547a67f1dcf04e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8cdb61627f63debd6c23712ff41e6a64703b9445f9df8b6ce76d8fbd8ccf9299
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503201"
 ---
-# <a name="id2d1geometryfillcontainspoint-methods"></a>Metodi ID2D1Geometry:: FillContainsPoint
+# <a name="id2d1geometryfillcontainspoint-methods"></a>Metodi ID2D1Geometry::FillContainsPoint
 
-Indica se l'area riempita dalla geometria deve contenere il punto specificato.
+Indica se l'area riempita dalla geometria conterrà il punto specificato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,10 +30,10 @@ Indica se l'area riempita dalla geometria deve contenere il punto specificato.
 
 | Metodo                                                                                                                                                             | Descrizione                                                                                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-| [**FillContainsPoint (D2D1 \_ Point \_ 2F, d2d1 \_ MATRIX \_ 3x2 \_ F&, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__bool))              | Indica se l'area riempita dalla geometria deve contenere il punto specificato. <br/>                                          |
-| [**FillContainsPoint (D2D1 \_ Point \_ 2F, d2d1 \_ Matrix \_ 3x2 \_ F \* , bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool))             | Indica se l'area riempita da questa geometria conterrebbe il punto specificato.<br/>                                          |
-| [**FillContainsPoint (D2D1 \_ Point \_ 2F, d2d1 \_ MATRIX \_ 3x2 \_ F&, float, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__float_bool))  | Indica se l'area riempita dalla geometria deve contenere il punto specificato in base alla tolleranza di Flat specificata.<br/>  |
-| [**FillContainsPoint (D2D1 \_ Point \_ 2F, d2d1 \_ Matrix \_ 3x2 \_ F \* , float, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_float_bool)) | Indica se l'area riempita dalla geometria deve contenere il punto specificato in base alla tolleranza di Flat specificata. <br/> |
+| [**FillContainsPoint(D2D1 \_ POINT \_ 2F,D2D1 \_ MATRIX \_ 3X2 \_ F&,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__bool))              | Indica se l'area riempita dalla geometria conterrà il punto specificato. <br/>                                          |
+| [**FillContainsPoint(D2D1 \_ POINT \_ 2F,D2D1 \_ MATRIX \_ 3X2 \_ F \* ,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool))             | Indica se l'area riempita da questa geometria conterrà il punto specificato.<br/>                                          |
+| [**FillContainsPoint(D2D1 \_ POINT \_ 2F,D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__float_bool))  | Indica se l'area riempita dalla geometria conterrà il punto specificato in base alla tolleranza di appiattimento specificata.<br/>  |
+| [**FillContainsPoint(D2D1 \_ POINT \_ 2F,D2D1 \_ MATRIX \_ 3X2 \_ \* F,FLOAT,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_float_bool)) | Indica se l'area riempita dalla geometria conterrà il punto specificato in base alla tolleranza di appiattimento specificata. <br/> |
 
 
 
@@ -43,7 +43,7 @@ Indica se l'area riempita dalla geometria deve contenere il punto specificato.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Supportato-attributo di contesto dell'applicazione
-description: Specifica gli identificatori di oggetto dei contesti di applicazione supportati da un'applicazione OSI.
+title: Attributo Supported-Application-Context
+description: Specifica gli identificatori di oggetto dei contesti dell'applicazione supportati da un'applicazione OSI.
 ms.assetid: 803d68bc-4537-4a45-bd86-b0558076e4df
 ms.tgt_platform: multiple
 keywords:
-- Supportato-schema AD dell'attributo di contesto dell'applicazione
+- Schema AD dell'attributo Supported-Application-Context
 - Schema AD dell'attributo supportedApplicationContext
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29512a4d9588a8097ca531acd477c08b0e316876
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abeb9f3a7b7a0956798fb20a3fcbbe77040efa8dcd6b6909a0115bf68957ebc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645482"
 ---
-# <a name="supported-application-context-attribute"></a>Supportato-attributo di contesto dell'applicazione
+# <a name="supported-application-context-attribute"></a>Attributo Supported-Application-Context
 
-Specifica gli identificatori di oggetto dei contesti di applicazione supportati da un'applicazione OSI.
+Specifica gli identificatori di oggetto dei contesti dell'applicazione supportati da un'applicazione OSI.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Supportato-contesto applicazione                         |
-| LDAP-Display-Name | supportedApplicationContext                           |
+| CN                | Supported-Application-Context                         |
+| Ldap-Display-Name | supportedApplicationContext                           |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.30                                              |
-| System-ID-GUID    | 1677588f-47f3-11d1-a9c3-0000f80367c1                  |
+| System-Id-Guid    | 1677588f-47f3-11d1-a9c3-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica gli identificatori di oggetto dei contesti di applicazione supportati 
 | ID collegamento                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
 | System-Only            | Falso                                                                                                                               |
-| È a valore singolo       | Falso                                                                                                                               |
+| Is-Single-Valued       | Falso                                                                                                                               |
 | Indicizzato             | Falso                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
 | System-Flags           | 0x00000000                                                                                                                          |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

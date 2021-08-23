@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_GETLOCALE (winuser. h)
-description: Ottiene le impostazioni locali correnti della casella di riepilogo. È possibile utilizzare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo \_ stile di ordinamento lbs) e del testo aggiunto dal \_ messaggio ADDSTRING lb.
+title: LB_GETLOCALE messaggio (Winuser.h)
+description: Ottiene le impostazioni locali correnti della casella di riepilogo. È possibile usare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile LBS SORT) e del testo aggiunto dal messaggio \_ \_ LB ADDSTRING.
 ms.assetid: ec814b03-5ce2-4b81-a36c-ab4c115f88be
 keywords:
-- Controlli di Windows Message LB_GETLOCALE
+- LB_GETLOCALE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57620b62011dba234710caf1b5d1c429da37ace9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 732bfac72502c38265f7c1651667dc235c440293c8435f16088eaee775a874f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544521"
 ---
-# <a name="lb_getlocale-message"></a>LB \_ GetLocale messaggio
+# <a name="lb_getlocale-message"></a>Messaggio \_ LB GETLOCALE
 
-Ottiene le impostazioni locali correnti della casella di riepilogo. È possibile utilizzare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile di [**\_ ordinamento lbs**](list-box-styles.md) ) e del testo aggiunto dal [**messaggio \_ ADDSTRING lb**](lb-addstring.md) .
+Ottiene le impostazioni locali correnti della casella di riepilogo. È possibile usare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile [**\_ LBS SORT)**](list-box-styles.md) e del testo aggiunto dal messaggio [**\_ LB ADDSTRING.**](lb-addstring.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,24 +32,24 @@ Ottiene le impostazioni locali correnti della casella di riepilogo. È possibile
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito specifica le impostazioni locali correnti della casella di riepilogo. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene il codice paese/area geografica e il [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore della lingua.
+Il valore restituito specifica le impostazioni locali correnti della casella di riepilogo. La [**parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene il codice paese/area geografica e [**il valore LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore della lingua.
 
 ## <a name="remarks"></a>Commenti
 
-L'identificatore della lingua è costituito da un identificatore di lingua e da un identificatore di lingua primaria. Utilizzare la macro [**PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) per estrarre l'identificatore di lingua principale da [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) del valore restituito e la macro [**SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) per estrarre l'identificatore del linguaggio di sottolinguaggio.
+L'identificatore di lingua è costituito da un identificatore di sottolingua e da un identificatore di lingua principale. Usare la macro [**PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) per estrarre l'identificatore di lingua principale dalla [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) del valore restituito e la macro [**SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) per estrarre l'identificatore della sottolingua.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ L'identificatore della lingua è costituito da un identificatore di lingua e da 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ L'identificatore della lingua è costituito da un identificatore di lingua e da 
 **Riferimento**
 </dt> <dt>
 
-[**\_ADDSTRING lb**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**\_impostazioni locali lb**](lb-setlocale.md)
+[**LB \_ SETLOCALE**](lb-setlocale.md)
 </dt> <dt>
 
 **Altre risorse**

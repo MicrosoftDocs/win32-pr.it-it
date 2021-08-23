@@ -1,11 +1,11 @@
 ---
-title: attributi ms-DS-supported-Encryption-Types
-description: Algoritmi di crittografia supportati da account utente, computer o attendibilit√†. Si noti che il KDC usa queste informazioni durante la generazione di un ticket di servizio per l'account.
+title: Attributo ms-DS-Supported-Encryption-Types
+description: Algoritmi di crittografia supportati da account utente, computer o attendibilit√†. Nota Il KDC usa queste informazioni durante la generazione di un ticket di servizio per questo account.
 ms.assetid: 6f9055a9-531e-4f4b-8703-aca5531a3bcb
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di tipo crittografia-supportato da MS-DS
-- attributo msDS-SupportedEncryptionTypes-schema AD
+- Attributo ms-DS-Supported-Encryption-Types schema DI AD
+- Schema AD dell'attributo msDS-SupportedEncryptionTypes
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ab16959d1f1cd4405cb661a6026f3734a134f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c1d092061dfebcea8e9a0e4f4a060010e16102108d1e2e74f05e6df2db706141
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544341"
 ---
-# <a name="ms-ds-supported-encryption-types-attribute"></a>attributi ms-DS-supported-Encryption-Types
+# <a name="ms-ds-supported-encryption-types-attribute"></a>Attributo ms-DS-Supported-Encryption-Types
 
 Algoritmi di crittografia supportati da account utente, computer o attendibilit√†.
 
 > [!Note]  
-> Il KDC usa queste informazioni durante la generazione di un ticket di servizio per l'account. I servizi e i computer possono aggiornare automaticamente questo attributo sui rispettivi account in Active Directory e pertanto necessitano dell'accesso in scrittura a questo attributo.
+> Il KDC usa queste informazioni durante la generazione di un ticket di servizio per questo account. Servizi e computer possono aggiornare automaticamente questo attributo nei rispettivi account in Active Directory e pertanto devono accedere in scrittura a questo attributo.
 
  
 
@@ -34,13 +34,13 @@ Algoritmi di crittografia supportati da account utente, computer o attendibilit√
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Tipi di crittografia supportati da MS-DS     |
-| LDAP-Display-Name | msDS-SupportedEncryptionTypes        |
+| CN                | ms-DS-Supported-Encryption-Types     |
+| Ldap-Display-Name | msDS-SupportedEncryptionTypes        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1963              |
-| System-ID-GUID    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
+| System-Id-Guid    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -60,15 +60,15 @@ Algoritmi di crittografia supportati da account utente, computer o attendibilit√
 | ID collegamento                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| √à a valore singolo       | Vero                                                                                   |
+| Is-Single-Valued       | Vero                                                                                   |
 | Indicizzato             | Falso                                                                                  |
 | Nel catalogo globale      | Falso                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -81,15 +81,15 @@ Algoritmi di crittografia supportati da account utente, computer o attendibilit√
 | ID collegamento                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| √à a valore singolo       | Vero                                                                                   |
+| Is-Single-Valued       | Vero                                                                                   |
 | Indicizzato             | Falso                                                                                  |
 | Nel catalogo globale      | Falso                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -102,15 +102,15 @@ Algoritmi di crittografia supportati da account utente, computer o attendibilit√
 | ID collegamento                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| √à a valore singolo       | Vero                                                                                   |
+| Is-Single-Valued       | Vero                                                                                   |
 | Indicizzato             | Falso                                                                                  |
 | Nel catalogo globale      | Falso                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

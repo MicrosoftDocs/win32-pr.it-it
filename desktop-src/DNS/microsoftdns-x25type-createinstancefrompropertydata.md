@@ -1,11 +1,11 @@
 ---
 title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_X25Type
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse X. 25 (x25).
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse X.25 (X25).
 ms.assetid: fe89f829-79b9-457e-b455-899b2706ef04
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_X25Type
-- Classe MicrosoftDNS_X25Type DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_X25Type classe
+- MicrosoftDNS_X25Type classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f198bf7b843b5633acd0b1515e9e3573f5ebb55d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f619bd2291d420a6feab6bb1869510d899e79d6171e164c821685999ad93bae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573596"
 ---
 # <a name="createinstancefrompropertydata-method-of-the-microsoftdns_x25type-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ X25Type
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse X. 25 (x25).
+Il **metodo CreateInstanceFromPropertyData** crea un'istanza di un record di risorse X.25 (X25).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,31 +48,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zona, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per il RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe dell'oggetto RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -81,7 +81,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -89,21 +89,21 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*PSDNAddress* \[ in\]
+*PSDNAddress* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo PSDN del proprietario dell'RR.
+Indirizzo PSDN del proprietario del RR.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -123,7 +123,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -131,13 +131,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_X25Type MicrosoftDNS**](microsoftdns-x25type.md)
+[**MicrosoftDNS \_ X25Type**](microsoftdns-x25type.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe X25Type di MicrosoftDNS**](microsoftdns-x25type-modify.md)
+[**Metodo Modify della classe MicrosoftDNS \_ X25Type**](microsoftdns-x25type-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

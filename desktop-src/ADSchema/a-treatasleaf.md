@@ -1,10 +1,10 @@
 ---
 title: Attributo Treat-As-Leaf
-description: Gli identificatori di visualizzazione con questo flag impostati su TRUE forzano la visualizzazione della classe correlata come classe foglia anche se dispone di elementi figlio.
+description: Gli identificatori di visualizzazione con questo flag impostato su TRUE forzano la visualizzazione della classe correlata come classe foglia anche se ha elementi figlio.
 ms.assetid: 7b19fc04-69ac-4e4b-8b9b-bd1ec74fcea7
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Treat-As-foglia
+- Schema AD dell'attributo Treat-As-Leaf
 - Schema AD dell'attributo treatAsLeaf
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60d357fa368818a9b216fe18a394b806e390b46b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4f141e690f859ad40e61ead0e6f9b6fb503733f837257b2bd06c96045ac3a6dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644941"
 ---
 # <a name="treat-as-leaf-attribute"></a>Attributo Treat-As-Leaf
 
-Gli identificatori di visualizzazione con questo flag impostati su **true** forzano la visualizzazione della classe correlata come classe foglia anche se dispone di elementi figlio.
+Gli identificatori di visualizzazione con questo flag impostato su **TRUE** forzano la visualizzazione della classe correlata come classe foglia anche se ha elementi figlio.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Considera come foglia                        |
-| LDAP-Display-Name | treatAsLeaf                          |
+| Ldap-Display-Name | treatAsLeaf                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.806               |
-| System-ID-GUID    | 8fd044e3-771f-11d1-aeae-0000f80367c1 |
+| System-Id-Guid    | 8fd044e3-771f-11d1-aeae-0000f80367c1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Gli identificatori di visualizzazione con questo flag impostati su **true** forz
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 

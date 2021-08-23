@@ -1,11 +1,11 @@
 ---
-title: MS-SPP-CSVLK-partial-Product-Key-attributo
-description: Ultimi 5 caratteri del codice Product Key di CSVLK usato per creare l'oggetto attivazione
+title: Attributo ms-SPP-CSVLK-Partial-Product-Key
+description: Ultimi 5 caratteri del codice Product Key CSVLK usato per creare l'oggetto di attivazione
 ms.assetid: 6209326f-1b95-43c6-824a-43eb893ef1e1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-SPP-CSVLK-partial-Key
-- msSPP-schema AD attributo CSVLKPartialProductKey
+- Schema AD dell'attributo ms-SPP-CSVLK-Partial-Product-Key
+- Schema AD dell'attributo msSPP-CSVLKPartialProductKey
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f53d09a51137054923c8f9e108419dd2494595
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53d946eb812f2194f9c8c995d0f90a6715317e4c6d5bce52e8a4a632ef98a76c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119542221"
 ---
-# <a name="ms-spp-csvlk-partial-product-key-attribute"></a>MS-SPP-CSVLK-partial-Product-Key-attributo
+# <a name="ms-spp-csvlk-partial-product-key-attribute"></a>Attributo ms-SPP-CSVLK-Partial-Product-Key
 
-Ultimi 5 caratteri del codice Product Key di CSVLK usato per creare l'oggetto attivazione
+Ultimi 5 caratteri del codice Product Key CSVLK usato per creare l'oggetto di attivazione
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SPP-CSVLK-partial-Product-Key            |
-| LDAP-Display-Name | msSPP-CSVLKPartialProductKey                |
+| CN                | ms-SPP-CSVLK-Partial-Product-Key            |
+| Ldap-Display-Name | msSPP-CSVLKPartialProductKey                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2106                     |
-| System-ID-GUID    | a601b091-8652-453a-b386-87ad239b7c08        |
+| System-Id-Guid    | a601b091-8652-453a-b386-87ad239b7c08        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,15 +53,15 @@ Ultimi 5 caratteri del codice Product Key di CSVLK usato per creare l'oggetto at
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 5                                                                       |
 | Range-Upper            | 5                                                                       |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classi usate in        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

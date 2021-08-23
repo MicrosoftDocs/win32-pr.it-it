@@ -1,7 +1,7 @@
 ---
-description: Puntatore all'oggetto che riceve i messaggi di controllo qualità.
+description: Puntatore all'oggetto che riceve messaggi di controllo qualità.
 ms.assetid: bf4fd84c-9522-4686-9fb1-17a2ce3e5a16
-title: 'Membro CBaseRenderer:: m_pQSink (Renbase. h)'
+title: Membro CBaseRenderer::m_pQSink (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 331504ffaeb74d84382b65d1332f6dbe7c9556dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb365c0af23868f05c624144de239828ce7c1d6cabacd3bf774c59d566348ff5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502721"
 ---
-# <a name="cbaserendererm_pqsink-member"></a>Membro pQSink di CBaseRenderer:: m \_
+# <a name="cbaserendererm_pqsink-member"></a>Membro CBaseRenderer::m \_ pQSink
 
-Puntatore all'oggetto che riceve i messaggi di controllo qualità.
+Puntatore all'oggetto che riceve messaggi di controllo qualità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ IQualityControl *m_pQSink;
 
 ## <a name="remarks"></a>Osservazioni
 
-La classe base non implementa il controllo qualità. Per impostazione predefinita, questa variabile membro è **null**.
+La classe base non implementa il controllo di qualità. Il valore predefinito di questa variabile membro è **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ La classe base non implementa il controllo qualità. Per impostazione predefinit
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -11,9 +11,9 @@
         - name: Supporto Unicode per controlli comuni
           href: unicode-support.md
         - name: Supporto della localizzazione per i controlli comuni
-          href: cc-faq-localization.yml
+          href: cc-faq-localization.md
         - name: Domande frequenti sui controlli comuni
-          href: cc-faq.yml
+          href: cc-faq.md
     - name: Messaggi di controllo
       href: control-messages.md
     - name: Controlli personalizzati
@@ -234,7 +234,7 @@
                       href: bm-setstate.md
                     - name: BM_SETSTYLE
                       href: bm-setstyle.md
-                - name: Notifiche dei controlli Pulsante
+                - name: Notifiche del controllo Button
                   href: bumper-button-control-reference-notifications.md
                   items:
                     - name: BCN_DROPDOWN
@@ -293,14 +293,14 @@
                   href: about-combo-boxes.md
                 - name: Funzionalità della casella combinata
                   href: combo-box-features.md
-                - name: Uso di caselle combinate
+                - name: Uso delle caselle combinate
                   href: using-combo-boxes.md
                   items:
                     - name: Come creare una casella combinata semplice
                       href: create-a-simple-combo-box.md
                     - name: Come creare una Owner-Drawn casella combinata
                       href: create-an-owner-drawn-combo-box.md
-                    - name: Come sottoclassare una casella combinata
+                    - name: Come creare una sottoclasse di una casella combinata
                       href: subclass-a-combo-box.md
             - name: Informazioni di riferimento sul controllo ComboBox
               href: bumper-combobox-combobox-control-reference.md
@@ -715,9 +715,9 @@
                       href: dtn-userstring.md
                     - name: DTN_WMKEYDOWN
                       href: dtn-wmkeydown.md
-                    - name: NM_KILLFOCUS (data/ora)
+                    - name: NM_KILLFOCUS (data e ora)
                       href: nm-killfocus-date-time.md
-                    - name: NM_SETFOCUS (data/ora)
+                    - name: NM_SETFOCUS (data e ora)
                       href: nm-setfocus-date-time-.md
                 - name: Strutture di selezione data e ora
                   href: bumper-date-and-time-picker-control-reference-structures.md
@@ -739,7 +739,7 @@
                   items:
                     - name: Stili del controllo Selezione data e ora
                       href: date-and-time-picker-control-styles.md
-        - name: Controllo Di modifica
+        - name: Controllo Edit
           href: edit-controls.md
           items:
             - name: Cenni preliminari sul controllo Edit
@@ -851,7 +851,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-edit_takefocus
                     - name: Edit_Undo
                       href: /windows/desktop/api/Windowsx/nf-windowsx-edit_undo
-                - name: Modificare i messaggi di controllo
+                - name: Messaggi di controllo di modifica
                   href: bumper-edit-control-reference-messages.md
                   items:
                     - name: EM_CANUNDO
@@ -1031,9 +1031,9 @@
             - name: Cenni preliminari sul controllo Header
               href: bumper-header-control-header-control-overviews.md
               items:
-                - name: Informazioni sui controlli Header
+                - name: Informazioni sui controlli intestazione
                   href: header-controls.md
-                - name: Uso dei controlli Header
+                - name: Uso dei controlli intestazione
                   href: using-header-controls.md
                   items:
                     - name: Come creare un controllo Header
@@ -1452,7 +1452,7 @@
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-setcallback
                         - name: Metodo SetOriginalSize
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-setoriginalsize
-                - name: Macro dell'elenco immagini
+                - name: Macro dell'elenco di immagini
                   href: bumper-image-lists-reference-macros.md
                   items:
                     - name: ImageList_AddIcon
@@ -1474,7 +1474,7 @@
                       href: /windows/desktop/api/commoncontrols/ns-commoncontrols-imagelistdrawparams
                     - name: IMAGELISTSTATS
                       href: /windows/win32/api/Commoncontrols/ns-commoncontrols-imageliststats
-                - name: Costanti dell'elenco di immagini
+                - name: Costanti dell'elenco immagini
                   href: image-list-constants.md
                   items:
                     - name: Flag di creazione dell'elenco immagini
@@ -1482,7 +1482,7 @@
         - name: Controllo indirizzo IP
           href: ip-address-control-reference.md
           items:
-            - name: Panoramica del controllo degli indirizzi IP
+            - name: Cenni preliminari sul controllo degli indirizzi IP
               href: bumper-ip-address-control-ip-address-control-overviews.md
               items:
                 - name: Informazioni sui controlli degli indirizzi IP
@@ -1490,7 +1490,7 @@
                 - name: Uso dei controlli indirizzo IP
                   href: using-ip-address-controls.md
                   items:
-                    - name: Come creare un controllo di indirizzo IP
+                    - name: Come creare un controllo degli indirizzi IP
                       href: create-an-ip-address-control.md
             - name: Informazioni di riferimento sul controllo degli indirizzi IP
               href: bumper-ip-address-control-ip-address-control-reference.md
@@ -1548,7 +1548,7 @@
                   items:
                     - name: Come creare una casella di riepilogo semplice
                       href: create-a-simple-list-box.md
-                    - name: Come creare un elenco di directory in una casella di riepilogo Single-Selection directory
+                    - name: Come creare un elenco di directory in una Single-Selection elenco
                       href: create-directory-listing-in-a-single-selection-list-box.md
                     - name: Come creare una Multiple-Selection di riepilogo
                       href: create-a-multiple-selection-list-box.md
@@ -2479,19 +2479,19 @@
                   items:
                     - name: Stili List-View estesi
                       href: extended-list-view-styles.md
-                    - name: List-View stati dell'elemento
+                    - name: List-View stati degli elementi
                       href: list-view-item-states.md
-                    - name: List-View di finestra
+                    - name: List-View stili delle finestre
                       href: list-view-window-styles.md
             - name: List-View di controllo
               href: bumper-list-view-list-view-control-sample.md
               items:
-                - name: Esempio di VListVW
+                - name: Esempio VListVW
                   href: vlistvw-sample.md
         - name: Month Calendar
           href: month-calendar-control-reference.md
           items:
-            - name: Cenni preliminari sul controllo Calendario mensile
+            - name: Cenni preliminari sul controllo Month Calendar
               href: bumper-month-calendar-month-calendar-control-overviews.md
               items:
                 - name: Informazioni sui controlli calendario mensile
@@ -2501,7 +2501,7 @@
                   items:
                     - name: Come creare un controllo calendario mensile
                       href: create-a-month-calendar-control.md
-                    - name: Come impostare gli stati del giorno
+                    - name: Come impostare gli stati dei giorni
                       href: set-day-states.md
             - name: Informazioni di riferimento sul controllo Calendario mensile
               href: bumper-month-calendar-month-calendar-control-reference.md
@@ -2666,12 +2666,12 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmselchange
                     - name: NMVIEWCHANGE
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmviewchange
-                - name: Costanti del calendario mensile
+                - name: Costanti calendario mensile
                   href: bumper-month-calendar-control-reference-constants.md
                   items:
                     - name: Stili del controllo Calendario mensile
                       href: month-calendar-control-styles.md
-                - name: Tipi di dati calendario mensile
+                - name: Tipi di dati del calendario mensile
                   href: bumper-month-calendar-control-reference-data-types.md
                   items:
                     - name: MONTHDAYSTATE
@@ -2723,7 +2723,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-pager_setpos
                     - name: Pager_SetScrollInfo
                       href: /windows/desktop/api/Commctrl/nf-commctrl-pager_setscrollinfo
-                - name: Messaggi del controllo Pager
+                - name: Messaggi di controllo pager
                   href: bumper-pager-control-reference-messages.md
                   items:
                     - name: PGM_FORWARDMOUSE
@@ -3254,7 +3254,7 @@
                       href: use-word-and-line-break-information.md
                     - name: Come usare le operazioni degli Appunti Rich Edit
                       href: use-rich-edit-clipboard-operations.md
-                    - name: Come usare Flussi
+                    - name: Come usare le Flussi
                       href: use-streams.md
                     - name: Come ridimensionare automaticamente i controlli Rich Edit
                       href: automatically-resize-rich-edit-controls.md
@@ -3562,10 +3562,10 @@
                       href: em-streamin.md
                     - name: EM_STREAMOUT
                       href: em-streamout.md
-                - name: Notifiche Rich Edit
+                - name: Notifiche rich edit
                   href: bumper-rich-edit-control-reference-notifications.md
                   items:
-                    - name: EN_CHANGE (Rich Edit)
+                    - name: EN_CHANGE (rich edit)
                       href: en-change--rich-edit-control-.md
                     - name: EN_ALIGNLTR
                       href: en-alignltr.md
@@ -3960,7 +3960,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setsize
                             - name: SetSmallCaps
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setsmallcaps
-                            - name: SetSpacing
+                            - name: Impostazione della proprietàSpacing
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setspacing
                             - name: SetStrikeThrough
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setstrikethrough
@@ -4892,14 +4892,14 @@
                 - name: Strutture della barra di scorrimento
                   href: bumper-scroll-bars-reference-structures.md
                   items:
-                    - name: SCROLLBARINFO
+                    - name: INFORMAZIONI SULLA BARRA DI SCORRIMENTO
                       href: /windows/win32/api/Winuser/ns-winuser-scrollbarinfo
-                    - name: SCROLLINFO
+                    - name: INFORMAZIONI DI SCORRIMENTO
                       href: /windows/win32/api/Winuser/ns-winuser-scrollinfo
                 - name: Costanti della barra di scorrimento
                   href: bumper-scroll-bars-reference-constants.md
                   items:
-                    - name: Stili dei controlli Barra di scorrimento
+                    - name: Stili del controllo Barra di scorrimento
                       href: scroll-bar-control-styles.md
         - name: Controllo statico
           href: static-controls.md
@@ -4917,7 +4917,7 @@
             - name: Informazioni di riferimento sul controllo statico
               href: bumper-static-control-static-control-reference.md
               items:
-                - name: Macro di controllo statico
+                - name: Macro di controlli statici
                   href: bumper-static-control-reference-macros.md
                   items:
                     - name: Static_Enable
@@ -5390,10 +5390,10 @@
                       href: embed-nonbutton-controls-in-toolbars.md
                     - name: Come usare il rilevamento a caldo con le barre degli strumenti
                       href: use-hot-tracking-with-toolbars.md
-                    - name: Come creare una barra degli strumenti Internet Explorer stile
-                      href: cc-faq-ietoolbar.yml
+                    - name: Come creare una barra degli strumenti Internet Explorer di stile
+                      href: cc-faq-ietoolbar.md
                     - name: Come creare una barra dei Internet Explorer di stile
-                      href: cc-faq-iemenubar.yml
+                      href: cc-faq-iemenubar.md
             - name: Informazioni di riferimento sul controllo Barra degli strumenti
               href: bumper-toolbar-toolbar-control-reference.md
               items:
@@ -5668,7 +5668,7 @@
                       href: tbn-wrapaccelerator.md
                     - name: TBN_WRAPHOTITEM
                       href: tbn-wraphotitem.md
-                - name: Strutture dei controlli Barra degli strumenti
+                - name: Strutture dei controlli Toolbar
                   href: bumper-toolbar-control-reference-structures.md
                   items:
                     - name: COLORMAP
@@ -5701,12 +5701,12 @@
                       href: /windows/desktop/api/Commctrl/ns-commctrl-tbreplacebitmap
                     - name: TBSAVEPARAMS
                       href: /windows/win32/api/Commctrl/ns-commctrl-tbsaveparamsa
-                - name: Costanti del controllo Barra degli strumenti
+                - name: Costanti del controllo Toolbar
                   href: bumper-toolbar-control-reference-constants.md
                   items:
                     - name: Stati dei pulsanti della barra degli strumenti
                       href: toolbar-button-states.md
-                    - name: Stili dei controlli e dei pulsanti della barra degli strumenti
+                    - name: Stili dei pulsanti e dei controlli Barra degli strumenti
                       href: toolbar-control-and-button-styles.md
                     - name: Stili estesi della barra degli strumenti
                       href: toolbar-extended-styles.md
@@ -5731,16 +5731,16 @@
                       href: implement-tracking-tooltips.md
                     - name: Come implementare descrizioni comando su più righe
                       href: implement-multiline-tooltips.md
-                    - name: Come implementare descrizioni comando del fumetto
+                    - name: Come implementare descrizioni comando a fumetto
                       href: implement-balloon-tooltips.md
-                    - name: Come implementare descrizioni comando per le icone della barra di stato
+                    - name: Come implementare le descrizioni comando per le icone della barra di stato
                       href: implement-tooltips-for-status-bar-icons.md
-                    - name: Come implementare In-Place descrizioni comando
+                    - name: Come implementare le descrizioni In-Place comando
                       href: implement-in-place-tooltips.md
             - name: Informazioni di riferimento sul controllo Tooltip
               href: bumper-tooltip-tooltip-control-reference.md
               items:
-                - name: Messaggi di controllo della descrizione comando
+                - name: Messaggi di controllo descrizione comando
                   href: bumper-tooltip-control-reference-messages.md
                   items:
                     - name: TTM_ACTIVATE
@@ -5811,7 +5811,7 @@
                       href: ttm-updatetiptext.md
                     - name: TTM_WINDOWFROMPOINT
                       href: ttm-windowfrompoint.md
-                - name: Notifiche di controllo della descrizione comando
+                - name: Notifiche del controllo Tooltip
                   href: bumper-tooltip-control-reference-notifications.md
                   items:
                     - name: NM_CUSTOMDRAW (descrizione comando)
@@ -5861,7 +5861,7 @@
                       href: process-trackbar-notification-messages.md
                     - name: Come limitare lo spostamento del dispositivo di scorrimento
                       href: limit-slider-movement.md
-                    - name: Come usare l'Windows
+                    - name: Come usare Windows
                       href: use-buddy-windows.md
             - name: Informazioni di riferimento sul controllo Trackbar
               href: bumper-trackbar-trackbar-control-reference.md
@@ -5952,7 +5952,7 @@
                       href: trbn-thumbposchanging.md
                     - name: WM_HSCROLL di notifica (Trackbar)
                       href: wm-hscroll--trackbar-.md
-                    - name: WM_VSCROLL (Trackbar) Codice di notifica
+                    - name: WM_VSCROLL (Trackbar) Notification Code
                       href: wm-vscroll--trackbar-.md
                 - name: Strutture di controllo Trackbar
                   href: trackbar-control-structures.md
@@ -5977,7 +5977,7 @@
                 - name: Uso dei Tree-View personalizzati
                   href: using-treeview.md
                   items:
-                    - name: Come creare un controllo Tree-View
+                    - name: Come creare un controllo Tree-View controllo
                       href: create-a-tree-view-control.md
                     - name: Come inizializzare l'elenco di immagini
                       href: initialize-the-image-list.md
@@ -6668,7 +6668,7 @@
           href: visual-styles-overview.md
         - name: Abilitazione degli stili di visualizzazione
           href: cookbook-overview.md
-        - name: Uso degli stili di visualizzazione con controlli Owner-Drawn personalizzati
+        - name: Uso degli stili di visualizzazione con controlli personalizzati e Owner-Drawn personalizzati
           href: using-visual-styles.md
         - name: Supporto di Contrasto elevato temi
           href: supporting-high-contrast-themes.md
@@ -6864,7 +6864,7 @@
                   href: tm-props.md
                 - name: WINDOWTHEMEATTRIBUTETYPE
                   href: /windows/desktop/api/Uxtheme/ne-uxtheme-windowthemeattributetype
-            - name: Formatta valori
+            - name: Formattare i valori
               href: theme-format-values.md
             - name: Opzioni di hit test
               href: theme-hit-test-options.md
@@ -6872,7 +6872,7 @@
               href: theme-hit-test-retval.md
             - name: Parti e stati
               href: parts-and-states.md
-            - name: 'Classi, parti e stati in stile Aereo'
+            - name: 'Classi, parti e stati in stile Aero'
               href: aero-style-classes-parts-and-states.md
             - name: Identificatori di proprietà
               href: property-typedefs.md
@@ -6880,5 +6880,5 @@
               href: theme-subclasses.md
             - name: Valori WTNCA
               href: wtnca.md
-    - name: Formato del file del tema
+    - name: Formato di file del tema
       href: themesfileformat-overview.md

@@ -1,5 +1,5 @@
 ---
-title: attributo uidNumber
+title: Attributo uidNumber
 description: Contiene un numero intero che identifica in modo univoco un utente in un dominio amministrativo.
 ms.assetid: 17d7837a-f66e-4357-96d7-13fb47ce8bb6
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce03d0f674560646943dd590c8d2990ca0a51b78
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 372e4a9f9a6edb2765b43b843a05a79bcce2cb2fa08e06fdb9db916f140c83ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644881"
 ---
-# <a name="uidnumber-attribute"></a>attributo uidNumber
+# <a name="uidnumber-attribute"></a>Attributo uidNumber
 
 Contiene un numero intero che identifica in modo univoco un utente in un dominio amministrativo.
 
@@ -29,12 +29,12 @@ Contiene un numero intero che identifica in modo univoco un utente in un dominio
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | uidNumber                            |
-| LDAP-Display-Name | uidNumber                            |
+| Ldap-Display-Name | uidNumber                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.0                      |
-| System-ID-GUID    | 850fcc8f-9c6b-47e1-b671-7c654be4d5b3 |
+| System-Id-Guid    | 850fcc8f-9c6b-47e1-b671-7c654be4d5b3 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene un numero intero che identifica in modo univoco un utente in un dominio
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Vero                                              |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000001                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene un numero intero che identifica in modo univoco un utente in un dominio
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Vero                                              |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000001                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene un numero intero che identifica in modo univoco un utente in un dominio
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Vero                                              |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000001                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene un numero intero che identifica in modo univoco un utente in un dominio
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Vero                                              |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000001                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 

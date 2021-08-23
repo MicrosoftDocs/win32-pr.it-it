@@ -1,25 +1,25 @@
 ---
-title: Esposizione di un'interfaccia del modello a oggetti nativa
-description: Se un elemento dell'interfaccia utente supporta un modello a oggetti nativo diverso da Microsoft Active Accessibility o automazione interfaccia utente, può esporre l'interfaccia personalizzata rispondendo a \_ messaggi WM GetObject che includono l' \_ identificatore di oggetto NATIVEOM di ObjID.
+title: Esposizione di un'interfaccia del modello a oggetti nativo
+description: Se un elemento dell'interfaccia utente supporta un modello a oggetti nativo diverso da Microsoft Active Accessibility o Automazione interfaccia utente, può esporre l'interfaccia personalizzata rispondendo ai messaggi WM GETOBJECT che includono l'identificatore di oggetto \_ OBJID \_ NATIVEOM.
 ms.assetid: 430abeaf-e5ca-48c4-aa35-8d52a8cee2f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e52543908e89a1cea57c981d60bf7cb2b9fbd1fb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 701ed721e8259aa3b707fa1d7a6f2e80b9da13a3760b9850edef22b169d772e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644921"
 ---
-# <a name="exposing-a-native-object-model-interface"></a>Esposizione di un'interfaccia del modello a oggetti nativa
+# <a name="exposing-a-native-object-model-interface"></a>Esposizione di un'interfaccia del modello a oggetti nativo
 
-Se un elemento dell'interfaccia utente supporta un modello a oggetti nativo diverso da Microsoft Active Accessibility o automazione interfaccia utente, può esporre l'interfaccia personalizzata rispondendo a messaggi [**WM \_ GetObject**](wm-getobject.md) che includono l'identificatore di oggetto [**\_ NATIVEOM di ObjID**](object-identifiers.md) . Per rispondere, l'elemento dell'interfaccia utente deve restituire il valore recuperato da una chiamata alla funzione [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject) .
+Se un elemento dell'interfaccia utente supporta un modello a oggetti nativo diverso da Microsoft Active Accessibility o Automazione interfaccia utente, può esporre l'interfaccia personalizzata rispondendo ai messaggi [**WM \_ GETOBJECT**](wm-getobject.md) che includono l'identificatore di oggetto [**OBJID \_ NATIVEOM.**](object-identifiers.md) Per rispondere, l'elemento dell'interfaccia utente deve restituire il valore recuperato da una chiamata alla [**funzione LresultFromObject.**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject)
 
-Un client può recuperare un'interfaccia da un elemento dell'interfaccia utente che supporta un modello a oggetti nativo chiamando la funzione [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) e specificando [**objid \_ NATIVEOM**](object-identifiers.md) come secondo parametro.
+Un client può recuperare un'interfaccia da un elemento dell'interfaccia utente che supporta un modello a oggetti nativo chiamando la funzione [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow) e specificando [**OBJID \_ NATIVEOM**](object-identifiers.md) come secondo parametro.
 
- 
+ 
 
- 
+ 
 
 
 

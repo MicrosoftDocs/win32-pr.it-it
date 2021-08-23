@@ -1,6 +1,6 @@
 ---
-description: A partire da Windows XP, il pannello di controllo supporta la categorizzazione degli elementi del pannello di controllo. Gli elementi sono registrati per essere visualizzati in una o più categorie. Non è possibile creare nuove categorie.
-title: Assegnazione delle categorie del pannello di controllo
+description: A Windows XP, Pannello di controllo supporta la categorizzazione Pannello di controllo elementi. Gli elementi vengono registrati per essere visualizzati in una o più categorie. Non è possibile creare nuove categorie.
+title: Assegnazione di Pannello di controllo categorie
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: e189b57d-c066-4f28-b1d5-3e05d6c6eeb2
@@ -9,18 +9,18 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: bade62cda23c2d2f66ffdfd70f3f555a243f3efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d70854177baecf6261d550bc5ad37cf5319eed323ae9b17f5fd281118acd8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593631"
 ---
-# <a name="assigning-control-panel-categories"></a>Assegnazione delle categorie del pannello di controllo
+# <a name="assigning-control-panel-categories"></a>Assegnazione di Pannello di controllo categorie
 
-A partire da Windows XP, il pannello di controllo supporta la categorizzazione degli elementi del pannello di controllo. Gli elementi sono registrati per essere visualizzati in una o più categorie. Non è possibile creare nuove categorie.
+A Windows XP, Pannello di controllo supporta la categorizzazione Pannello di controllo elementi. Gli elementi vengono registrati per essere visualizzati in una o più categorie. Non è possibile creare nuove categorie.
 
-Per registrare un elemento del pannello di controllo in una o più categorie, aggiungere i valori come illustrato nella sezione registrazione elemento del pannello di controllo [eseguibile](registering-control-panel-items.md) o [registrazione elemento](registering-control-panel-items.md) del pannello di controllo di registrazione degli [elementi del pannello di controllo](registering-control-panel-items.md), a seconda dei casi.
+Per registrare un elemento Pannello di controllo in una o più categorie, aggiungere i valori come illustrato nella sezione Registrazione elemento eseguibile [Pannello di controllo](registering-control-panel-items.md) o REGISTRAZIONE ELEMENTO DLL Pannello di controllo di Registrazione elementi Pannello di controllo [,](registering-control-panel-items.md)in base [alle](registering-control-panel-items.md) esigenze.
 
 
 
@@ -42,17 +42,17 @@ Per registrare un elemento del pannello di controllo in una o più categorie, ag
 <tbody>
 <tr class="odd">
 <td>0</td>
-<td>&quot;Tutti gli elementi del pannello di controllo&quot;</td>
+<td>&quot;Tutti Pannello di controllo elementi&quot;</td>
 <td>&quot;Opzioni aggiuntive&quot;
 <blockquote>
 [!Note]<br />
-In questa categoria vengono visualizzati tutti gli elementi del pannello di controllo che non specificano un ID categoria.
+Qualsiasi Pannello di controllo elemento che non specifica un ID categoria viene visualizzato in questa categoria.
 </blockquote>
 <br/></td>
-<td>&quot;Altre opzioni del pannello di controllo&quot;
+<td>&quot;Altre Pannello di controllo opzioni&quot;
 <blockquote>
 [!Note]<br />
-In questa categoria vengono visualizzati tutti gli elementi del pannello di controllo che non specificano un ID categoria.
+Qualsiasi Pannello di controllo elemento che non specifica un ID categoria viene visualizzato in questa categoria.
 </blockquote>
 <br/></td>
 </tr>
@@ -76,9 +76,9 @@ In questa categoria vengono visualizzati tutti gli elementi del pannello di cont
 </tr>
 <tr class="odd">
 <td>4</td>
-<td>Non più utilizzata. Tutti gli elementi che si aggiungono solo alla categoria 4 vengono visualizzati nella categoria 2 (hardware e suono).</td>
-<td>Non più utilizzata. Tutti gli elementi che si aggiungono solo alla categoria 4 vengono visualizzati nella categoria 2 (hardware e suono).</td>
-<td>&quot;Suoni, sintesi vocale e dispositivi audio&quot;</td>
+<td>Non più utilizzata. Qualsiasi elemento che si aggiunge solo alla categoria 4 viene visualizzato nella categoria 2 (Hardware e suono).</td>
+<td>Non più utilizzata. Qualsiasi elemento che si aggiunge solo alla categoria 4 viene visualizzato nella categoria 2 (Hardware e suono).</td>
+<td>&quot;Suoni, voce e dispositivi audio&quot;</td>
 </tr>
 <tr class="even">
 <td>5</td>
@@ -88,9 +88,9 @@ In questa categoria vengono visualizzati tutti gli elementi del pannello di cont
 </tr>
 <tr class="odd">
 <td>6</td>
-<td>&quot;Clock, lingua e area&quot;</td>
-<td>&quot;Clock, lingua e area&quot;</td>
-<td>&quot;Data, ora, lingua e opzioni internazionali&quot;</td>
+<td>&quot;Orologio, lingua e area geografica&quot;</td>
+<td>&quot;Orologio, lingua e area geografica&quot;</td>
+<td>&quot;Opzioni relative a data, ora, lingua e impostazioni internazionali&quot;</td>
 </tr>
 <tr class="even">
 <td>7</td>
@@ -109,35 +109,35 @@ In questa categoria vengono visualizzati tutti gli elementi del pannello di cont
 <td>&quot;Account utente&quot;
 <blockquote>
 [!Note]<br />
-Quando non si è connessi a un dominio, questo è denominato &quot; account utente e sicurezza della famiglia &quot; .
+Quando non si è connessi a un dominio, si tratta di account &quot; utente e Family Safety &quot; .
 </blockquote>
 <br/></td>
 <td>&quot;Account utente&quot;
 <blockquote>
 [!Note]<br />
-Quando non si è connessi a un dominio, questo è denominato &quot; account utente e sicurezza della famiglia &quot; .
+Quando non si è connessi a un dominio, si tratta di account &quot; utente e Family Safety &quot; .
 </blockquote>
 <br/></td>
 <td>&quot;Account utente&quot;</td>
 </tr>
 <tr class="odd">
 <td>10</td>
-<td>Non più utilizzata. Gli elementi registrati in questa categoria vengono visualizzati nella categoria 5 (sistema e sicurezza).</td>
+<td>Non più utilizzata. Gli elementi registrati in questa categoria vengono visualizzati nella categoria 5 (Sistema e sicurezza).</td>
 <td>&quot;Sicurezza&quot;</td>
 <td>&quot;Centro sicurezza&quot;
 <blockquote>
 [!Note]<br />
-Disponibile solo in Windows XP Service Pack 2 (SP2) o versioni successive.
+Disponibile solo in Windows XP Service Pack 2 (SP2) o versione successiva.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>11</td>
-<td>Non più utilizzata. Gli elementi registrati in questa categoria vengono visualizzati nella categoria 0 (tutti gli elementi del pannello di controllo).</td>
-<td>&quot;PC portatile&quot;
+<td>Non più utilizzata. Gli elementi registrati in questa categoria vengono visualizzati nella categoria 0 (Tutti Pannello di controllo elementi).</td>
+<td>&quot;PC per dispositivi mobili&quot;
 <blockquote>
 [!Note]<br />
-Questa categoria è visibile solo nei PC portatili.
+Questa categoria è visibile solo nei PC mobili.
 </blockquote>
 <br/></td>
 <td>Non usato.</td>
@@ -149,39 +149,39 @@ Questa categoria è visibile solo nei PC portatili.
 
  
 
-In Windows XP le categorie **aggiungere o rimuovere programmi** e **account utente** funzionano in modo diverso rispetto ad altre categorie nel pannello di controllo. Quando uno o più elementi vengono aggiunti a una di queste due categorie, il collegamento associato nel pannello di controllo apre una pagina di categoria. Gli elementi registrati vengono visualizzati nella parte inferiore della pagina sotto l'intestazione "oppure selezionare un'icona del pannello di controllo". Quando non viene registrato alcun elemento per una di queste categorie, il collegamento associato nel pannello di controllo richiama direttamente l'elemento Windows standard per quella categoria. In Windows Vista e versioni successive, la categoria **programmi** e la categoria **account utente** non dispongono di questa proprietà.
+In Windows XP, le  categorie Installazione  applicazioni e Account utente funzionano in modo leggermente diverso rispetto ad altre categorie in Pannello di controllo. Quando uno o più elementi vengono aggiunti a una di queste due categorie, il collegamento associato in Pannello di controllo apre una pagina di categoria. Gli elementi registrati vengono visualizzati nella parte inferiore della pagina sotto l'intestazione "o Selezionare un'Pannello di controllo icona". Quando non viene registrato alcun elemento per una di queste categorie, il collegamento associato in Pannello di controllo richiama direttamente l'elemento Windows standard per tale categoria. In Windows Vista e versioni successive, la **categoria** Programmi e la **categoria Account** utente non hanno questa proprietà.
 
-La categoria **Centro sicurezza** , disponibile solo in Windows XP SP2, è anche in qualche modo non standard. Se si fa clic su questa categoria, viene visualizzata la pagina **Centro sicurezza** in una nuova finestra. Gli elementi registrati per il **Centro sicurezza** vengono visualizzati nella parte inferiore della pagina sotto l'intestazione **Gestisci impostazioni di sicurezza per:**. Fare clic su un'icona per aprire l'elemento del pannello di controllo.
+Anche **la categoria Del** Centro sicurezza, disponibile solo in Windows XP SP2, è in qualche modo non standard. Facendo clic su questa categoria si apre **la pagina Centro** sicurezza in una nuova finestra. Gli elementi registrati **per il Centro sicurezza** vengono visualizzati nella parte inferiore della pagina sotto l'intestazione Gestisci impostazioni di sicurezza **per:**. Facendo clic su un'icona si apre Pannello di controllo elemento.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Elementi del pannello di controllo](control-panel-applications.md)
+[Pannello di controllo elementi](control-panel-applications.md)
 </dt> <dt>
 
 [Linee guida sull'esperienza utente](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrazione degli elementi del pannello di controllo](registering-control-panel-items.md)
+[Registrazione di Pannello di controllo elementi](registering-control-panel-items.md)
 </dt> <dt>
 
 [Uso di CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Elaborazione del messaggio del pannello di controllo](message-processing.md)
+[Pannello di controllo di messaggi](message-processing.md)
 </dt> <dt>
 
-[Esecuzione degli elementi del pannello di controllo](executing-control-panel-items.md)
+[Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estensione degli elementi del pannello di controllo di sistema](extending-system-control-panel-items.md)
+[Estensione degli elementi Pannello di controllo sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Creazione di collegamenti alle attività ricercabili per un elemento del pannello di controllo](creating-searchable-task-links.md)
+[Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Accesso al pannello di controllo in modalità provvisoria in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Accesso al Pannello di controllo in Cassaforte in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

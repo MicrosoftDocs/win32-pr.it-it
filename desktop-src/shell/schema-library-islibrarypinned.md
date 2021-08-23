@@ -1,5 +1,5 @@
 ---
-description: L' <isLibraryPinned> elemento specifica se questa libreria è bloccata nel riquadro di spostamento in Esplora risorse. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
+description: <isLibraryPinned>L'elemento specifica se questa libreria è bloccata nel riquadro di spostamento in Windows Explorer. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
 title: Elemento isLibraryPinned (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 743ddc6df6b4a1a0df44e19bf063e417fc052e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b5fe37b2a9b31708c1b6a49bd22745b37af8fa8ec21b0b424b7c6da3baaae53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592861"
 ---
 # <a name="islibrarypinned-element-library-schema"></a>Elemento isLibraryPinned (schema della libreria)
 
-L' <isLibraryPinned> elemento specifica se questa libreria è bloccata nel riquadro di spostamento in Esplora risorse. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
+<isLibraryPinned>L'elemento specifica se questa libreria è bloccata nel riquadro di spostamento in Windows Explorer. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ L' <isLibraryPinned> elemento specifica se questa libreria è bloccata nel riqua
 
 ## <a name="remarks"></a>Commenti
 
-Se true, la libreria è bloccata nel riquadro di spostamento di Esplora risorse.
+Se true, la libreria viene aggiunta al riquadro di Windows Explorer.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

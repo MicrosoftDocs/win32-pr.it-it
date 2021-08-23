@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Tasks-for-AZ-Role-BL
-description: Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
+title: Attributo ms-DS-Tasks-For-Az-Role-BL
+description: Collegamento all'indietro Az-Task a Az-Role oggetti che si collegano a esso.
 ms.assetid: 6cce9461-3515-4098-9c05-7b39a067aa40
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Tasks-for-AZ-Role-BL
-- attributo msDS-TasksForAzRoleBL-schema AD
+- Schema AD dell'attributo ms-DS-Tasks-For-Az-Role-BL
+- Schema AD dell'attributo msDS-TasksForAzRoleBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dcdb496702e80a432ebe25872f8ccf6a13b3f284
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28f14029804a027aff7c60a8b8749dace0815b813c20739e58bb8dd878afd45a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544311"
 ---
-# <a name="ms-ds-tasks-for-az-role-bl-attribute"></a>attributo ms-DS-Tasks-for-AZ-Role-BL
+# <a name="ms-ds-tasks-for-az-role-bl-attribute"></a>Attributo ms-DS-Tasks-For-Az-Role-BL
 
-Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
+Collegamento all'indietro Az-Task a Az-Role oggetti che si collegano a esso.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Tasks-for-AZ-Role-BL              |
-| LDAP-Display-Name | msDS-TasksForAzRoleBL                   |
+| CN                | ms-DS-Tasks-For-Az-Role-BL              |
+| Ldap-Display-Name | msDS-TasksForAzRoleBL                   |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1815                 |
-| System-ID-GUID    | a0dcd536-5158-42fe-8c40-c00a7ad37959    |
+| System-Id-Guid    | a0dcd536-5158-42fe-8c40-c00a7ad37959    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
 | ID collegamento                | 2025                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
 | ID collegamento                | 2025                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
 | ID collegamento                | 2025                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
 | ID collegamento                | 2025                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Collegamento a ritroso da Az-Task a oggetti Az-Role a cui viene collegato.
 | ID collegamento                | 2025                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
