@@ -8,24 +8,24 @@ keywords:
 - dialetti ADSI, dialetto LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15f7d1f65a41655596d0a14cf6e2a3595916c2cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c231d3c4d619775cca2ed9542733bff51219d92ff31d922f6d38ea7b1bcd2e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509981"
 ---
 # <a name="ldap-dialect"></a>Dialetto LDAP
 
-Il dialetto LDAP è un formato per le istruzioni di query che usano la [sintassi del filtro di ricerca LDAP](search-filter-syntax.md). Usare un'istruzione di query LDAP con le interfacce di ricerca ADSI seguenti:
+Il dialetto LDAP è un formato per le istruzioni di query che usano la [sintassi](search-filter-syntax.md)del filtro di ricerca LDAP . Usare un'istruzione di query LDAP con le interfacce di ricerca ADSI seguenti:
 
--   Le interfacce [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , ovvero interfacce di automazione che utilizzano OLE DB.
--   [OLE DB](searching-with-ole-db.md), ovvero un set di interfacce C/C++ per l'esecuzione di query sui database.
+-   Le [ActiveX data object (ADO),](searching-with-activex-data-objects-ado.md) ovvero le interfacce di Automazione che usano OLE DB.
+-   [OLE DB](searching-with-ole-db.md), che è un set di interfacce C/C++ per l'esecuzione di query su database.
 -   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), ovvero l'interfaccia C/C++ per Active Directory.
 
 Una stringa di dialetto LDAP è costituita da quattro parti separate da punti e virgola (;).
 
--   Nome distinto di base. Ad esempio:
+-   Nome distinto di base. Esempio:
 
     ```VB
     <LDAP://DC=Fabrikam,DC=COM>
@@ -33,9 +33,9 @@ Una stringa di dialetto LDAP è costituita da quattro parti separate da punti e 
 
     
 
--   Filtri di ricerca LDAP. Per altre informazioni sui filtri di ricerca, vedere [sintassi del filtro di ricerca](search-filter-syntax.md).
+-   Filtri di ricerca LDAP. Per altre informazioni sui filtri di ricerca, vedere [Sintassi del filtro di ricerca](search-filter-syntax.md).
 -   Nome visualizzato LDAP degli attributi da recuperare. Più attributi sono separati da una virgola.
--   Specifica l'ambito della ricerca. I valori validi sono "base", "unlivello" e "sottoalbero". L'ambito specificato in una stringa di query LDAP sostituisce qualsiasi ambito di ricerca specificato con la proprietà "SearchScope" dell'oggetto comando ADO.
+-   Specifica l'ambito della ricerca. I valori validi sono "base", "onelevel" e "subtree". L'ambito specificato in una stringa di query LDAP esegue l'override di qualsiasi ambito di ricerca specificato con la proprietà "SearchScope" dell'oggetto COMMAND ADO.
 
 Di seguito è riportato un esempio di codice del dialetto LDAP in ADSI che cerca tutti gli oggetti nel sottoalbero.
 
@@ -46,11 +46,11 @@ Di seguito è riportato un esempio di codice del dialetto LDAP in ADSI che cerca
 
 
 
-Non tutte le opzioni di ricerca (ad esempio, le dimensioni della pagina di ricerca) possono essere espresse nel dialetto LDAP, quindi è necessario impostare le opzioni prima che l'esecuzione effettiva della query venga avviata.
+Non tutte le opzioni di ricerca ,ad esempio le dimensioni della pagina di ricerca, possono essere espresse nel dialetto LDAP, pertanto è necessario impostare le opzioni prima dell'avvio dell'esecuzione effettiva della query.
 
 ## <a name="example-code-for-performing-an-ldap-query"></a>Codice di esempio per l'esecuzione di una query LDAP
 
-Nell'esempio di codice seguente viene illustrato come utilizzare una query LDAP
+L'esempio di codice seguente illustra come usare una query LDAP
 
 
 ```VB
@@ -106,7 +106,7 @@ Debug.Print "No. of rows = ", rs.RecordCount
 
 
 
-Per informazioni dettagliate sulla sintassi di query, vedere [sintassi del filtro di ricerca](search-filter-syntax.md).
+Per informazioni dettagliate sulla sintassi della query, vedere [Sintassi del filtro di ricerca](search-filter-syntax.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -115,21 +115,21 @@ Per informazioni dettagliate sulla sintassi di query, vedere [sintassi del filtr
 [Sintassi del filtro di ricerca](search-filter-syntax.md)
 </dt> <dt>
 
-[Sottolinguaggio SQL](sql-dialect.md)
+[SQL dialetto](sql-dialect.md)
 </dt> <dt>
 
 [Ricerca con l'interfaccia IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Ricerca con ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+[Ricerca con oggetti ActiveX dati](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
 [Ricerca con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

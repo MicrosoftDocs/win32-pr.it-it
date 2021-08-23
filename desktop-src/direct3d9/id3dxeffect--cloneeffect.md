@@ -1,7 +1,7 @@
 ---
 description: Crea una copia di un effetto.
 ms.assetid: 6272bce0-b712-4a61-afe2-8f572993b03e
-title: 'Metodo ID3DXEffect:: CloneEffect (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::CloneEffect (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: eba2f6248bd1373ebf0aae55cf94103e2c269be7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ab5ebe2898c1525d3a539121d1e57708c4713df3a06b43bfa41572f0e7b23b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494261"
 ---
-# <a name="id3dxeffectcloneeffect-method"></a>Metodo ID3DXEffect:: CloneEffect
+# <a name="id3dxeffectcloneeffect-method"></a>Metodo ID3DXEffect::CloneEffect
 
 Crea una copia di un effetto.
 
@@ -41,21 +41,21 @@ HRESULT CloneEffect(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta il dispositivo associato all'effetto.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato all'effetto.
 
 </dd> <dt>
 
-*ppEffect* \[ out\]
+*ppEffect* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECT**](id3dxeffect.md)\***
 
-Puntatore a un'interfaccia [**ID3DXEffect**](id3dxeffect.md) contenente l'effetto clonato.
+Puntatore a [**un'interfaccia ID3DXEffect**](id3dxeffect.md) contenente l'effetto clonato.
 
 </dd> </dl>
 
@@ -63,16 +63,16 @@ Puntatore a un'interfaccia [**ID3DXEffect**](id3dxeffect.md) contenente l'effett
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Questa funzione non consente di clonare un effetto se l'utente specifica [D3DXFX \_ non \_ clonabile](d3dxfx.md) durante la creazione dell'effetto.
+> Questa funzione non clona un effetto se l'utente specifica [D3DXFX \_ NOT \_ CLONEABLE](d3dxfx.md) durante la creazione dell'effetto.
 
  
 
-Per aggiornare i parametri condivisi e non condivisi in una tecnica attiva di un effetto clonato, vedere [**ID3DXEffect:: CommitChanges**](id3dxeffect--commitchanges.md).
+Per aggiornare i parametri condivisi e non condivisi in una tecnica attiva di un effetto clonato, vedere [**ID3DXEffect::CommitChanges**](id3dxeffect--commitchanges.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ Per aggiornare i parametri condivisi e non condivisi in una tecnica attiva di un
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Pertinenza del rango della riga, con un intervallo compreso tra 0-1000.
+description: Classificazione di pertinenza della riga, con un intervallo compreso tra 0 e 1000.
 ms.assetid: e0c03f6f-4539-4a6b-b58d-161bd985ee0f
-title: System. search. Rank
+title: System.Search.Rank
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d23d1c78e5c3807c529fd68b04cc71b6f03300c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b4607cf37136c8d1bb9d6d739afb2e5733cfaefe4b7b207637f930210cc30b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119595031"
 ---
-# <a name="systemsearchrank"></a>System. search. Rank
+# <a name="systemsearchrank"></a>System.Search.Rank
 
-Pertinenza del rango della riga, con un intervallo compreso tra 0-1000. I numeri maggiori indicano corrispondenze migliori. Solo in fase di query; non definito nello schema di ricerca. Questa proprietà è recuperabile ma non ricercabile.
+Classificazione di pertinenza della riga, con un intervallo compreso tra 0 e 1000. Numeri più grandi significano corrispondenze migliori. Solo in fase di query. non definito nello schema di ricerca. Questa proprietà è recuperabile ma non ricercabile.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

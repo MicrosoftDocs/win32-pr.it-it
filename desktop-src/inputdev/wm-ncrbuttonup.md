@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_NCRBUTTONUP (winuser. h)
-description: Inviato quando l'utente rilascia il pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inserito nella finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene inviato.
+title: WM_NCRBUTTONUP messaggio (Winuser.h)
+description: Inviato quando l'utente rilascia il pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 ms.assetid: dc77c235-9e57-4051-b197-bd7ee7535a6f
 keywords:
-- Input della tastiera e del mouse WM_NCRBUTTONUP messaggio
+- WM_NCRBUTTONUP messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5fb977e442b2af312f9267576c622ddd35022fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b17d21429193c84ae71121c1841d54e19d5f12793a6916f1ed14c4c3b34d3d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611421"
 ---
-# <a name="wm_ncrbuttonup-message"></a>\_Messaggio NCRBUTTONUP WM
+# <a name="wm_ncrbuttonup-message"></a>Messaggio \_ NCRBUTTONUP WM
 
-Inviato quando l'utente rilascia il pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inserito nella finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene inviato.
+Inviato quando l'utente rilascia il pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,24 +41,24 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Valore di hit test restituito dalla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) come risultato dell'elaborazione del messaggio [**WM \_ NCHITTEST**](wm-nchittest.md) . Per un elenco dei valori di hit test, vedere **WM \_ NCHITTEST**.
+Valore dell'hit test restituito [**dalla funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) in seguito all'elaborazione del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco di valori di hit test, vedere **WM \_ NCHITTEST.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Struttura [**Points**](/previous-versions//dd162808(v=vs.85)) che contiene le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
+Struttura [**POINTS**](/previous-versions//dd162808(v=vs.85)) contenente le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-È anche possibile usare le macro [**get \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) per estrarre i valori delle coordinate X e Y da *lParam*.
+È anche possibile usare le macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) per estrarre i valori delle coordinate x e y da *lParam*.
 
 
 ```
@@ -69,7 +69,7 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 > [!IMPORTANT]
-> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitoraggi. I sistemi con più monitoraggi possono avere coordinate x e y negative e **LOWORD** e **HIWORD** considerano le coordinate come quantità senza segno.
+> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitor. I sistemi con più monitor possono avere coordinate x e y negative e **LOWORD** e **HIWORD** trattano le coordinate come quantità senza segno.
 
  
 
@@ -83,7 +83,7 @@ Se è appropriato, il sistema invia il messaggio [**\_ SYSCOMMAND WM**](/windows
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include WINDOWSX. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windowsx.h)</dt> </dl> |
 
 
 
@@ -97,37 +97,37 @@ Se è appropriato, il sistema invia il messaggio [**\_ SYSCOMMAND WM**](/windows
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**Ottieni \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OTTENERE \_ il \_ lParam Y**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
-[**\_NCHITTEST WM**](wm-nchittest.md)
+[**WM \_ NCHITTEST**](wm-nchittest.md)
 </dt> <dt>
 
-[**\_NCRBUTTONDBLCLK WM**](wm-ncrbuttondblclk.md)
+[**WM \_ NCRBUTTONDBLCLK**](wm-ncrbuttondblclk.md)
 </dt> <dt>
 
-[**\_NCRBUTTONDOWN WM**](wm-ncrbuttondown.md)
+[**WM \_ NCRBUTTONDOWN**](wm-ncrbuttondown.md)
 </dt> <dt>
 
-[**\_SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Input del mouse](mouse-input.md)
+[Mouse Input](mouse-input.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
+[**PUNTI DI APPLICAZIONE**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**PUNTI**](/previous-versions//dd162808(v=vs.85))
+[**Punti**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

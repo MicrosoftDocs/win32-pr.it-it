@@ -1,7 +1,7 @@
 ---
-description: Calcola gli esempi di trasferimento di radianza (PRT) pre-calcolati per un punto arbitrario (e il vettore normale).
+description: Calcola gli esempi di trasferimento di raggi pre-calcolati (PRT) per un punto arbitrario (e un vettore normale).
 ms.assetid: 862a9067-5c5e-4428-86f4-ebef653411b9
-title: 'Metodo ID3DXPRTEngine:: ComputeSurfSamplesBounce (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeSurfSamplesBounce (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 55cea3e87850273b6ea8d190422bd77afeb831f4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 925b5da620ae665e0fa863527c196b65a5dfcb17dd81de1c25a23b907cb88ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492711"
 ---
-# <a name="id3dxprtenginecomputesurfsamplesbounce-method"></a>Metodo ID3DXPRTEngine:: ComputeSurfSamplesBounce
+# <a name="id3dxprtenginecomputesurfsamplesbounce-method"></a>Metodo ID3DXPRTEngine::ComputeSurfSamplesBounce
 
-Calcola gli esempi di trasferimento di radianza (PRT) pre-calcolati per un punto arbitrario (e il vettore normale).
+Calcola gli esempi di trasferimento di raggi pre-calcolati (PRT) per un punto arbitrario (e un vettore normale).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ HRESULT ComputeSurfSamplesBounce(
 
 <dl> <dt>
 
-*pSurfDataIn* \[ in\]
+*pSurfDataIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input che rappresenta il Radiance di origine dell'oggetto 3D. Questo buffer di input deve avere il numero appropriato di canali di colore allocati per la simulazione.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) di input che rappresenta la luminosità di origine dell'oggetto 3D. Questo buffer di input deve avere il numero corretto di canali di colore allocati per la simulazione.
 
 </dd> <dt>
 
-*NumSamples valore* \[ in\]
+*NumSamples* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> <dt>
 
-*pSampleLocs* \[ in\]
+*pSampleLocs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posizione per ogni esempio.
+Posizione per ogni campione.
 
 </dd> <dt>
 
-*pSampleNorms* \[ in\]
+*pSampleNorms* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Vettore normale per ogni posizione di esempio.
+Vettore normale per ogni posizione del campione.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella il contributo di illuminazione diretta al punto, usando l'approssimazione dell'armonica sferica (SH).
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella il contributo di illuminazione diretta al punto, usando l'approssimazione armonica sferica (SH).
 
 </dd> <dt>
 
-*pDataTotal* \[ in uscita\]
+*pDataTotal* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che corrisponde alla somma in corso di tutti gli output pDataOut precedenti. Può essere **null**.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che rappresenta la somma in esecuzione di tutti gli output pDataOut precedenti. Può essere **NULL.**
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -111,8 +111,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

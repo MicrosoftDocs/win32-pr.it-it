@@ -1,19 +1,19 @@
 ---
-description: Specifica la dimensione del blocco di byte crittografato per la crittografia del modello basata su campione.
+description: Specifica le dimensioni del blocco di byte crittografato per la crittografia basata su modelli basati su campioni.
 ms.assetid: 1F370DEC-20B5-456D-BB68-C94E183410F3
-title: Attributo MFSampleExtension_Encryption_CryptByteBlock (Mfidl. h)
+title: MFSampleExtension_Encryption_CryptByteBlock attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 927e08d81cc8066f73b579c8abf419d754fc1713
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85da01a8b69fa22604cc10df54aa474ec117256ebee0630e490e25d9888484d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603201"
 ---
-# <a name="mfsampleextension_encryption_cryptbyteblock-attribute"></a>\_Attributo CryptByteBlock di crittografia MFSampleExtension \_
+# <a name="mfsampleextension_encryption_cryptbyteblock-attribute"></a>Attributo \_ \_ CryptByteBlock di crittografia MFSampleExtension
 
-Specifica la dimensione del blocco di byte crittografato per la crittografia del modello basata su campione.
+Specifica le dimensioni del blocco di byte crittografato per la crittografia basata su modelli basati su campioni.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica la dimensione del blocco di byte crittografato per la crittografia del
 
 ## <a name="remarks"></a>Commenti
 
-Il numero di byte cancellati (non crittografati) nel blocco di mapping di sottocampionamento viene specificato nell'attributo [ \_ \_ SkipByteBlock Encryption MFSampleExtension](mfsampleextension-encryption-skipbyteblock.md) . Se uno di questi attributi non è presente o ha un valore pari a 0, significa che i dati di esempio non sono crittografati. Uno di questi valori deve essere diverso da zero, valori positivi oppure entrambi devono avere un valore pari a zero.
+Il numero di byte non crittografati non crittografati nel blocco di mapping di sottocampionamento viene specificato nell'attributo [ \_ \_ SkipByteBlock della crittografia MFSampleExtension.](mfsampleextension-encryption-skipbyteblock.md) Se uno di questi attributi non è presente o ha un valore pari a 0, significa che i dati di esempio non sono crittografati. Entrambi questi valori devono essere diversi da zero, positivi o entrambi devono avere un valore pari a zero.
 
-Nei casi in cui l'origine è basata su MP4, il valore viene impostato in base ai valori del \_ blocco default Crypt \_ byte nella \_ casella Track Encryption (' Tenc ') nell'intestazione MP4. Per altre informazioni, vedere [MFSampleExtension \_ Encryption \_ ProtectionScheme](mfsampleextension-encryption-protectionscheme.md).
+Nei casi in cui l'origine è basata su MP4, il valore viene impostato in base ai valori del blocco di byte di crittografia predefinito all'interno della casella di crittografia della traccia \_ \_ \_ ('tenc') nell'intestazione MP4. Per altre informazioni, vedere [MFSampleExtension \_ Encryption \_ ProtectionScheme.](mfsampleextension-encryption-protectionscheme.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Nei casi in cui l'origine è basata su MP4, il valore viene impostato in base ai
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

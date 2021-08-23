@@ -1,11 +1,11 @@
 ---
-title: Initializes (attributo)
-description: Contiene le iniziali per parti del nome completo dell'utente. Questa operazione può essere utilizzata come iniziale intermedia nella Rubrica di Windows.
+title: Attributo Initials
+description: Contiene le iniziali per le parti del nome completo dell'utente. Può essere usato come iniziale intermedia nel Windows Rubrica.
 ms.assetid: 220b4448-5276-4c3f-8a1b-217cec06135a
 ms.tgt_platform: multiple
 keywords:
-- Attributo iniziale-schema AD
-- attributo iniziale-schema AD
+- Schema AD dell'attributo Initials
+- Attributo initials Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 946f6c9633c1126a30ae4898274096a54db9a402
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4c9aa6020dc5f442547582c71be475c7dc8e6e3efcd3e1588095c536f22e2347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322911"
 ---
-# <a name="initials-attribute"></a>Initializes (attributo)
+# <a name="initials-attribute"></a>Attributo Initials
 
-Contiene le iniziali per parti del nome completo dell'utente. Questa operazione può essere utilizzata come iniziale intermedia nella Rubrica di Windows.
+Contiene le iniziali per le parti del nome completo dell'utente. Può essere usato come iniziale intermedia nel Windows Rubrica.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Iniziali                                    |
-| LDAP-Display-Name | Initials                                    |
+| Ldap-Display-Name | Initials                                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.      |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.      |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.5.4.43                                    |
-| System-ID-GUID    | f0f8ff90-1191-11d0-a060-00aa006c33ed        |
+| System-Id-Guid    | f0f8ff90-1191-11d0-a060-00aa006c33ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A0A                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 6                                                                  |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene le iniziali per parti del nome completo dell'utente. Questa operazione 
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

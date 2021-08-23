@@ -1,11 +1,11 @@
 ---
-title: attributo ms-TAPI-IP-Address
-description: Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attributo può essere utilizzato come attributo generico per contenere gli indirizzi IP del computer.
+title: Attributo ms-TAPI-Ip-Address
+description: Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attributo può essere usato come attributo generico per contenere gli indirizzi IP del computer.
 ms.assetid: 4ea850ad-d54a-4b5f-a37d-68817432d874
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TAPI-IP-Address
-- msTAPI-schema AD dell'attributo IpAddress
+- Attributo ms-TAPI-Ip-Address Schema DI AD
+- Schema AD dell'attributo msTAPI-IpAddress
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 078afde8200468df7e996e096deeef4bfd1b7ec0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 633c941320c0e2a43e9328b409338c5d87e0086249f2ee18948bb6db7ad79c25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508511"
 ---
-# <a name="ms-tapi-ip-address-attribute"></a>attributo ms-TAPI-IP-Address
+# <a name="ms-tapi-ip-address-attribute"></a>Attributo ms-TAPI-Ip-Address
 
-Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attributo può essere utilizzato come attributo generico per contenere gli indirizzi IP del computer.
+Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attributo può essere usato come attributo generico per contenere gli indirizzi IP del computer.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------|
-| CN                | MS-TAPI-IP-Address                                         |
-| LDAP-Display-Name | msTAPI-IpAddress                                           |
-| Dimensione              | Ogni indirizzo IP viene archiviato come stringa in una notazione. B. C. D. |
-| Privilegio aggiornamento  | Non sono richiesti privilegi speciali.                            |
+| CN                | ms-TAPI-Ip-Address                                         |
+| Ldap-Display-Name | msTAPI-IpAddress                                           |
+| Dimensione              | Ogni indirizzo IP viene archiviato come stringa nella notazione A.B.C.D. |
+| Aggiorna privilegio  | Non sono necessari privilegi speciali.                            |
 | Frequenza di aggiornamento  | In genere molto bassa.                                        |
 | Attribute-Id      | 1.2.840.113556.1.4.1701                                    |
-| System-ID-GUID    | efd7d7f7-178e-4767-87fa-f8a16b840544                       |
+| System-Id-Guid    | efd7d7f7-178e-4767-87fa-f8a16b840544                       |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                |
 
 
@@ -57,15 +57,15 @@ Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attr
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Falso                                                     |
+| Is-Single-Valued       | Falso                                                     |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-TAPI-RT-person**](c-mstapi-rtperson.md)<br/> |
+| Classi usate in        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attr
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Falso                                                     |
+| Is-Single-Valued       | Falso                                                     |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-TAPI-RT-person**](c-mstapi-rtperson.md)<br/> |
+| Classi usate in        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attr
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Falso                                                     |
+| Is-Single-Valued       | Falso                                                     |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-TAPI-RT-person**](c-mstapi-rtperson.md)<br/> |
+| Classi usate in        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attr
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Falso                                                     |
+| Is-Single-Valued       | Falso                                                     |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-TAPI-RT-person**](c-mstapi-rtperson.md)<br/> |
+| Classi usate in        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Indirizzi IP di un computer client TAPI a cui è connesso un utente. Questo attr
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Falso                                                     |
+| Is-Single-Valued       | Falso                                                     |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-TAPI-RT-person**](c-mstapi-rtperson.md)<br/> |
+| Classi usate in        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 

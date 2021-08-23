@@ -1,19 +1,19 @@
 ---
-description: Specifica il modo in cui le informazioni sui colori vengono usate nelle operazioni di ricerca di movimento.
+description: Specifica la modalità di utilizzo delle informazioni sui colori nelle operazioni di ricerca del movimento.
 ms.assetid: a625b103-0a55-4268-a01a-6a464a56fec2
-title: Proprietà MFPKEY_MOTIONSEARCHLEVEL (Wmcodecdsp. h)
+title: MFPKEY_MOTIONSEARCHLEVEL proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 231c2c0ae70466d41f4bf348ec47ee0a74cb135b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b53c6bf8f94b2b9817249d96cffbfa0da251dbbcb0545c141230de90f80485af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555411"
 ---
-# <a name="mfpkey_motionsearchlevel-property"></a>\_Proprietà MOTIONSEARCHLEVEL di MFPKEY
+# <a name="mfpkey_motionsearchlevel-property"></a>Proprietà MFPKEY \_ MOTIONSEARCHLEVEL
 
-Specifica il modo in cui le informazioni sui colori vengono usate nelle operazioni di ricerca di movimento.
+Specifica la modalità di utilizzo delle informazioni sui colori nelle operazioni di ricerca del movimento.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -33,19 +33,19 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 
 
-| Valore | Informazioni video utilizzate                           |
+| Valore | Informazioni video usate                           |
 |-------|--------------------------------------------------|
 | 0     | Solo luminanza.                                       |
-| 1     | Luma con Chroma integer più vicino.                |
+| 1     | Luma con chroma integer più vicino.                |
 | 2     | Luminanza con crominanza vera.                           |
-| -1    | Macroblocco-Adaptive con Chroma true.            |
-| -2    | Macroblocco-Adaptive con Chroma integer più vicino. |
+| -1    | Macroblock-adaptive con croma vera.            |
+| -2    | Macroblock-adaptive con la croma dell'intero più vicino. |
 
 
 
  
 
-Per impostazione predefinita, il codec esegue la ricerca di movimento solo nel canale luma. Includere le informazioni sulla crominanza nella stima del movimento può migliorare significativamente la qualità del video codificato. La ricerca di movimento con luma e la Croma vera produrrà la migliore qualità del video, ma con il costo massimo delle prestazioni. Le due modalità dinamiche (-1 e-2) e la Luma con la modalità Chroma con valori integer più vicino forniranno compromessi ragionevoli tra qualità e prestazioni.
+Per impostazione predefinita, il codec esegue la ricerca del movimento solo nel canale luma. L'inclusione di informazioni sulla croma nella stima del movimento può migliorare significativamente la qualità del video codificato. La ricerca del movimento con luma e la vera chroma offre la migliore qualità video, ma al costo delle prestazioni più elevato. Le due modalità dinamiche (-1 e -2) e la modalità luma con la modalità chroma integer più vicina offriranno compromessi ragionevoli tra qualità e prestazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Per impostazione predefinita, il codec esegue la ricerca di movimento solo nel c
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Per impostazione predefinita, il codec esegue la ricerca di movimento solo nel c
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

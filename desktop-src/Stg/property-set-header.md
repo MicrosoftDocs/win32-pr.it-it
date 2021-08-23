@@ -1,23 +1,23 @@
 ---
-title: Intestazione set di proprietà
-description: All'inizio del flusso di set di proprietà è presente un'intestazione. È costituito da un indicatore dell'ordine dei byte, una versione del formato, la versione del sistema operativo di origine, l'identificatore di classe (CLSID) e un campo riservato.
+title: Intestazione del set di proprietà
+description: All'inizio del flusso del set di proprietà è un'intestazione. È costituito da un indicatore dell'ordine dei byte, una versione del formato, la versione del sistema operativo di origine, l'identificatore di classe (CLSID) e un campo riservato.
 ms.assetid: 6f4531d5-99d8-43ff-b6c1-5975b7527fc0
 keywords:
-- Archiviazione strutturata intestazione set di proprietà
+- Intestazione del set di proprietà strutturata Archiviazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8d66eeec6525414ba3c6f0a0bb4f4fa34431c6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 506249ae917c6fbf00853a2547188a08ce14ebb29bc24d7e6daaa1aaa830cb3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662221"
 ---
-# <a name="property-set-header"></a>Intestazione set di proprietà
+# <a name="property-set-header"></a>Intestazione del set di proprietà
 
-All'inizio del flusso di set di proprietà è presente un'intestazione. È costituito da un indicatore dell'ordine dei byte, una versione del formato, la versione del sistema operativo di origine, l'identificatore di classe (CLSID) e un campo riservato.
+All'inizio del flusso del set di proprietà è un'intestazione. È costituito da un indicatore dell'ordine dei byte, una versione del formato, la versione del sistema operativo di origine, l'identificatore di classe (CLSID) e un campo riservato.
 
-Nella pseudo-struttura seguente viene illustrata l'intestazione.
+La pseudo-struttura seguente illustra l'intestazione.
 
 ``` syntax
 typedef struct tagPROPERTYSETHEADER 
@@ -31,9 +31,9 @@ typedef struct tagPROPERTYSETHEADER
 } PROPERTYSETHEADER;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

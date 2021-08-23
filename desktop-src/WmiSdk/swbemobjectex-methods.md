@@ -2,24 +2,24 @@
 description: L'oggetto SWbemObjectEx espone i metodi seguenti.
 ms.assetid: 7F2F7F4A-8A83-4F6F-BDA4-A1B5BCB01F5E
 ms.tgt_platform: multiple
-title: Metodi SWbemObjectEx
+title: Metodi di SWbemObjectEx
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46e08bf4612372fe5f58dca84e8a79711e1ba38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80247a3e040c5457c91c8a67a6b56bc0158f0971936aa622525187006cc694bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611901"
 ---
-# <a name="swbemobjectex-methods"></a>Metodi SWbemObjectEx
+# <a name="swbemobjectex-methods"></a>Metodi di SWbemObjectEx
 
-L'oggetto [**SWbemObjectEx**](swbemobjectex.md) espone i metodi seguenti.
+[**L'oggetto SWbemObjectEx**](swbemobjectex.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Metodo GetText \_**](swbemobjectex-gettext-.md)
--   [**Refresh ( \_ metodo)**](swbemobjectex-refresh-.md)
+-   [**Metodo \_ GetText**](swbemobjectex-gettext-.md)
+-   [**Metodo \_ Refresh**](swbemobjectex-refresh-.md)
 
  
 

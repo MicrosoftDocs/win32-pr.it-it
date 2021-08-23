@@ -1,8 +1,8 @@
 ---
-description: Valore booleano che indica se il componente UTC (Universal Coordinated Time) nel valore DateTime CIM contiene un intervallo o un valore jolly.
+description: Valore booleano che indica se il componente UTC (Universal Coordinated Time) nel valore datetime CIM contiene un intervallo o un valore con caratteri jolly.
 ms.assetid: 9cb04351-294b-48ba-8d1c-2f28cb9ce463
 ms.tgt_platform: multiple
-title: Proprietà SWbemDateTime. UTCSpecified (wbemdisp. h)
+title: Proprietà SWbemDateTime.UTCSpecified (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: e2ada5bbbfa68e6cb63c0e060d6c3a12c0f771a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80c8ab92d07c2ef75ea57a66f6bae26c428780e15beeae31c9e5bd883407f03f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640371"
 ---
-# <a name="swbemdatetimeutcspecified-property"></a>Proprietà SWbemDateTime. UTCSpecified
+# <a name="swbemdatetimeutcspecified-property"></a>SWbemDateTime.UTCSpecified - proprietà
 
-La proprietà **UTCSpecified** dell'oggetto [**SWbemDateTime**](swbemdatetime.md) è un valore booleano che indica se il componente UTC (Universal Coordinated Time) nel valore DateTime CIM contiene un intervallo o un valore jolly. Se **UTCSpecified** è **true** e l' [**intervallo**](swbemdatetime-isinterval.md) è **false**, [**SWbemDateTime. UTC**](swbemdatetime-utc.md) contiene un valore [**DateTime**](datetime.md) . Un valore **DateTime** che contiene un intervallo non può essere convertito nel formato **di \_ Data VT** o nel formato **FILETIME** . Se **UTCSpecified** è **false** e l' **intervallo** è **true**, **SWbemDateTime. UTC** contiene un intervallo.
+La proprietà **UTCSpecified** dell'oggetto [**SWbemDateTime**](swbemdatetime.md) è un valore booleano che indica se il componente UTC (Universal Coordinated Time) nel valore datetime CIM contiene un intervallo o un valore con caratteri jolly. Se **UTCSpecified** è **TRUE** e [**IsInterval**](swbemdatetime-isinterval.md) è **FALSE,** [**SWbemDateTime.UTC**](swbemdatetime-utc.md) contiene un [**valore DATETIME.**](datetime.md) Un **valore DATETIME** che contiene un intervallo non può essere convertito nel formato **\_ VT DATE** o **FILETIME.** Se **UTCSpecified** è **FALSE** e **IsInterval** è **TRUE,** **SWbemDateTime.UTC** contiene un intervallo.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -45,7 +45,7 @@ SWbemDateTime.UTCSpecified As Boolean
 
 ## <a name="examples"></a>Esempio
 
-Per esempi relativi all'uso dell'oggetto [**SWbemDateTime**](swbemdatetime.md) per convertire valori [**DateTime**](datetime.md) CIM in e dal formato **FILETIME** o dal formato **\_ Data VT** , vedere [attività WMI: date e ore](wmi-tasks--dates-and-times.md). Per una descrizione del formato DateTime CIM, vedere [formato di data e ora](date-and-time-format.md).
+Per esempi d'uso dell'oggetto [**SWbemDateTime**](swbemdatetime.md) per convertire i valori [**CIM DATETIME**](datetime.md) nel e dal formato **FILETIME** o **VT \_ DATE,** vedere [Attività WMI:](wmi-tasks--dates-and-times.md)date e ore. Per una descrizione del formato datetime CIM, vedere [Formato di data e ora.](date-and-time-format.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,11 +55,11 @@ Per esempi relativi all'uso dell'oggetto [**SWbemDateTime**](swbemdatetime.md) p
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |
-| IID<br/>                      | \_ISWBEMDATETIME IID<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -67,13 +67,13 @@ Per esempi relativi all'uso dell'oggetto [**SWbemDateTime**](swbemdatetime.md) p
 
 <dl> <dt>
 
-[**SWbemDateTime. UTC**](swbemdatetime-utc.md)
+[**SWbemDateTime.UTC**](swbemdatetime-utc.md)
 </dt> <dt>
 
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[DATETIME](datetime.md)
+[Datetime](datetime.md)
 </dt> </dl>
 
  

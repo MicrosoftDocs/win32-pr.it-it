@@ -1,20 +1,20 @@
 ---
-description: WMI fornisce diversi qualificatori aggiuntivi per perfezionare ulteriormente il provisioning delle istanze e delle operazioni di classe.
+description: WMI fornisce una serie di qualificatori aggiuntivi per perfezionare ulteriormente il provisioning delle istanze e delle operazioni della classe.
 ms.assetid: 8e3f82b0-f05d-481a-8be1-648a91da5463
 ms.tgt_platform: multiple
-title: Qualificatori di WMI-Specific
+title: WMI-Specific qualificatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13848f8ca9a5e889c73890439e2cdcd33381c539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b90a32d5bd13f9dbda9125a6752891752505215e156d65e999ca7cf372a109d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639511"
 ---
-# <a name="wmi-specific-qualifiers"></a>Qualificatori di WMI-Specific
+# <a name="wmi-specific-qualifiers"></a>WMI-Specific qualificatori
 
-Oltre ai qualificatori CIM, WMI fornisce diversi qualificatori aggiuntivi per perfezionare ulteriormente il provisioning delle istanze e delle operazioni di classe.
+Oltre ai qualificatori CIM, WMI fornisce una serie di qualificatori aggiuntivi per perfezionare ulteriormente il provisioning di istanze e operazioni della classe.
 
 Di seguito è riportato un elenco di qualificatori aggiuntivi forniti da WMI:
 
@@ -24,7 +24,7 @@ Di seguito è riportato un elenco di qualificatori aggiuntivi forniti da WMI:
 -   [Qualificatori specifici del provider WDM](qualifiers-specific-to-the-wdm-provider.md)
 -   [Qualificatori specifici delle classi di prestazioni WMI](qualifiers-specific-to-wmi-performance-classes.md)
 
-Oltre ai qualificatori, i gusti che descrivono il comportamento dei qualificatori possono essere applicati ai vari qualificatori. Per altre informazioni, vedere [tipi di qualificatori](qualifier-flavors.md).
+Oltre ai qualificatori, i tipi che descrivono il comportamento dei qualificatori possono essere applicati ai vari qualificatori. Per altre informazioni, vedere [Qualifier Flavors](qualifier-flavors.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

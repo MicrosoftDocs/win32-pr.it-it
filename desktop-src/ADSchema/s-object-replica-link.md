@@ -1,10 +1,10 @@
 ---
-title: Sintassi dell'oggetto (collegamento di replica)
-description: Sintassi dell'oggetto (collegamento di replica).
+title: Sintassi di Object(Replica-Link)
+description: Sintassi Object(Replica-Link).
 ms.assetid: 772dee62-1e87-44dd-aa8a-91762a87d9bc
 ms.tgt_platform: multiple
 keywords:
-- Sintassi dell'oggetto (collegamento di replica)
+- Schema AD della sintassi Object(Replica-Link)
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56c3eb396f0475b4f6f0924cce823c290005818a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0376fb8dd180f475f0b42441ac054054ff7ed463eca092bbeab6c6b42a147c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702541"
 ---
-# <a name="objectreplica-link-syntax"></a>Sintassi dell'oggetto (collegamento di replica)
+# <a name="objectreplica-link-syntax"></a>Sintassi di Object(Replica-Link)
 
-Sintassi dell'oggetto (collegamento di replica). Questa sintassi viene utilizzata solo dal sistema.
+Sintassi Object(Replica-Link). Questa sintassi viene usata solo dal sistema.
 
 
 
@@ -30,10 +30,10 @@ Sintassi dell'oggetto (collegamento di replica). Questa sintassi viene utilizzat
 |--------------|-------------------------------------------------------------------|
 | Nome         | Object(Replica-Link)                                              |
 | ID sintassi    | 2.5.5.10                                                          |
-| ID OM        | 127                                                               |
+| OM ID        | 127                                                               |
 | Tipo MAPI    | BINARY                                                            |
-| Tipo di annunci     | \_stringa ottetto \_ ADSTYPE                                            |
-| Tipo Variant | \_variante VT                                                       |
+| Tipo di ADS     | STRINGA DELL'OTTETTO ADSTYPE \_ \_                                            |
+| Tipo variant | VARIANTE \_ VT                                                       |
 | Tipo SDS     | [System.Byte\[\]](/dotnet/api/system.byte) |
 
 

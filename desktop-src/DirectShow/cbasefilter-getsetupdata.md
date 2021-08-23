@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetSetupData recupera i dati di registrazione per il filtro.
 ms.assetid: 93582c75-4f40-492c-919c-c8a06dce7715
-title: Metodo CBaseFilter. GetSetupData (Amfilter. h)
+title: Metodo CBaseFilter.GetSetupData (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40223a22f4de4a078ce84f8ebe49bddd5ab13575
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f86bc35688ab0ec1c19053a95cbfd2025cf45ad666ef419fdb8440c6a844cb61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640471"
 ---
-# <a name="cbasefiltergetsetupdata-method"></a>CBaseFilter. GetSetupData, metodo
+# <a name="cbasefiltergetsetupdata-method"></a>Metodo CBaseFilter.GetSetupData
 
 Il `GetSetupData` metodo recupera i dati di registrazione per il filtro.
 
 > [!Note]  
-> Questo metodo è obsoleto. Viene chiamato dai metodi [**CBaseFilter:: Register**](cbasefilter-register.md) e [**CBaseFilter:: Unregister**](cbasefilter-unregister.md) .
+> Questo metodo è obsoleto. Viene chiamato dai metodi [**CBaseFilter::Register**](cbasefilter-register.md) e [**CBaseFilter::Unregister.**](cbasefilter-unregister.md)
 
  
 
@@ -47,11 +47,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a una struttura di [**\_ filtro AMOVIESETUP**](amoviesetup-filter.md) contenente le informazioni di registrazione per il filtro.
+Restituisce un puntatore a una [**struttura AMOVIESETUP \_ FILTER**](amoviesetup-filter.md) contenente le informazioni di registrazione per il filtro.
 
 ## <a name="remarks"></a>Commenti
 
-La classe base restituisce **null**.
+La classe base restituisce **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ La classe base restituisce **null**.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

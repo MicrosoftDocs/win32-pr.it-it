@@ -1,19 +1,19 @@
 ---
-title: GUID (proprietà)
-description: GUID (proprietà)
+title: Proprietà GUID
+description: Proprietà GUID
 ms.assetid: d57e1d7c-df65-40ff-9068-64b3506835c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bdf36ce888b9526b6bbe2c11d8567d292dcdbc6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f4502cb1806dd8e1923201cecd8350438532099da939d745c79ca88b268f3ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610161"
 ---
-# <a name="guid-property"></a>GUID (proprietà)
+# <a name="guid-property"></a>Proprietà GUID
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,17 +27,17 @@ Restituisce l'identificatore univoco per il carattere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente. ***Caratteri ("*** CharacterID * * *"). GUID**
+*agent.***Characters("**_CharacterID_*_"). GUID_*
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà restituisce una stringa che rappresenta l'identificatore interno utilizzato dal server per fare riferimento all'identificazione univoca del carattere. Quando viene compilato con l'editor dei caratteri di Microsoft Agent, viene impostato un identificatore di caratteri. la proprietà è di sola lettura.
+Questa proprietà restituisce una stringa che rappresenta l'identificatore interno utilizzato dal server per fare riferimento a per identificare in modo univoco il carattere. Un identificatore di carattere viene impostato quando viene compilato con l'editor di caratteri di Microsoft Agent. la proprietà è di sola lettura.
 
- 
+ 
 
- 
+ 
 
 
 

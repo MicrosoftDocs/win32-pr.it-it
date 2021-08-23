@@ -3,30 +3,30 @@ title: Funzioni glRasterPos
 description: Queste funzioni specificano la posizione raster per le operazioni sui pixel.
 ms.assetid: 2a661893-0818-441d-9399-0103560737c3
 keywords:
-- OpenGL, funzioni glRasterPos
-- Riferimento OpenGL, funzioni glRasterPos
-- informazioni di riferimento per le funzioni OpenGL, glRasterPos
-- OpenGL, funzioni raster
-- Guida di riferimento a OpenGL, funzioni raster
-- informazioni di riferimento per OpenGL, funzioni raster
-- funzioni glRasterPos
+- Funzioni OpenGL,glRasterPos
+- Informazioni di riferimento su OpenGL, funzioni glRasterPos
+- informazioni di riferimento per le funzioni OpenGL,glRasterPos
+- Funzioni OpenGL,raster
+- Informazioni di riferimento su OpenGL, funzioni raster
+- informazioni di riferimento per le funzioni OpenGL,raster
+- Funzioni glRasterPos
 - funzioni vettoriali raster
-- OpenGL, funzioni pixel
-- Riferimento OpenGL, funzioni pixel
-- informazioni di riferimento per le funzioni OpenGL, pixel
+- Funzioni OpenGL,pixel
+- Informazioni di riferimento su OpenGL, funzioni pixel
+- informazioni di riferimento per funzioni OpenGL,pixel
 - pixel, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8f2ce2f387e70b3ea7a378b5463a03a88a4d5d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 134db3f2186b6026fb88a23cbbe9cff9a0e84e784164b27a3cf464beeea370bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492561"
 ---
 # <a name="glrasterpos-functions"></a>Funzioni glRasterPos
 
-Queste funzioni specificano la posizione raster per le operazioni in pixel:
+Queste funzioni specificano la posizione raster per le operazioni sui pixel:
 
 -   [**glRasterPos2d**](glrasterpos2d.md)
 -   [**glRasterPos2f**](glrasterpos2f.md)
@@ -53,9 +53,9 @@ Queste funzioni specificano la posizione raster per le operazioni in pixel:
 -   [**glRasterPos4iv**](glrasterpos4iv.md)
 -   [**glRasterPos4sv**](glrasterpos4sv.md)
 
- 
+ 
 
- 
+ 
 
 
 

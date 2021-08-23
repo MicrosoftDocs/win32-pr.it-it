@@ -1,10 +1,10 @@
 ---
-title: Attributo Class-Store predefinito
-description: Archivio di classi predefinito per un determinato utente.
+title: Attributo Default-Class-Store
+description: Archivio classi predefinito per un determinato utente.
 ms.assetid: 9aaeb401-4c2c-4c3b-83d2-0c6044be7643
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo dell'archivio classi predefinito
+- Schema AD dell'attributo Default-Class-Store
 - Schema AD dell'attributo defaultClassStore
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5aa4e9bddcc1e9dcb0aa7de962b9c6816555482
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 73ad55b7a8498940f94ab824712d387e50b9d4fa0768bcd8c71dfafe86d4a66f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509171"
 ---
-# <a name="default-class-store-attribute"></a>Attributo Class-Store predefinito
+# <a name="default-class-store-attribute"></a>Attributo Default-Class-Store
 
-Archivio di classi predefinito per un determinato utente.
+Archivio classi predefinito per un determinato utente.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Archivio classi predefinito                     |
-| LDAP-Display-Name | defaultClassStore                       |
+| CN                | Default-Class-Store                     |
+| Ldap-Display-Name | defaultClassStore                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.213                  |
-| System-ID-GUID    | bf967948-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf967948-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Archivio di classi predefinito per un determinato utente.
 | ID collegamento                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
 | System-Only            | Falso                                                                         |
-| È a valore singolo       | Falso                                                                         |
+| Is-Single-Valued       | Falso                                                                         |
 | Indicizzato             | Falso                                                                         |
 | Nel catalogo globale      | Falso                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Classi utilizzate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Contenitore**](c-container.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

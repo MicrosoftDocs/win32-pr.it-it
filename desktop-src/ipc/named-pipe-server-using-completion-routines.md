@@ -1,23 +1,23 @@
 ---
-description: Esempio di codice è un server pipe a thread singolo che crea una pipe del tipo di messaggio e USA operazioni sovrapposte.
+description: L'esempio di codice è un server pipe a thread singolo che crea una pipe di tipo messaggio e usa operazioni sovrapposte.
 ms.assetid: 8b73485c-c6f7-44df-9e53-308df2c752e7
 title: Server named pipe con routine di completamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efa3ac238680de5cee701488bc4cd60f6543d991
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61ddd1a5213de8593a5697341ef3aed4988b7a700c02db9eba83440f40634627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611201"
 ---
 # <a name="named-pipe-server-using-completion-routines"></a>Server named pipe con routine di completamento
 
-L'esempio seguente è un server pipe a thread singolo che crea una pipe di tipo messaggio e USA operazioni sovrapposte. Usa le funzioni estese [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) e [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) per eseguire operazioni di I/O sovrapposte usando una routine di completamento, che viene accodata per l'esecuzione al termine dell'operazione. Il server pipe usa la funzione [**WaitForSingleObjectEx**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex) , che esegue un'operazione di attesa di avviso che restituisce quando una routine di completamento è pronta per essere eseguita. La funzione wait restituisce anche quando viene segnalato un oggetto evento, che in questo esempio indica che l'operazione [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) sovrapposta è stata completata (un nuovo client si è connesso). Questo server pipe può essere utilizzato con il client pipe descritto nel [client named pipe](named-pipe-client.md).
+L'esempio seguente è un server pipe a thread singolo che crea una pipe di tipo messaggio e usa operazioni sovrapposte. Usa le funzioni estese [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) e [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) per eseguire operazioni di I/O sovrapposte usando una routine di completamento, che viene accodata per l'esecuzione al termine dell'operazione. Il server pipe usa la [**funzione WaitForSingleObjectEx,**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex) che esegue un'operazione di attesa avvisabile che restituisce quando una routine di completamento è pronta per l'esecuzione. La funzione wait restituisce anche quando viene segnalato un oggetto evento, che in questo esempio indica che [**l'operazione ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) sovrapposta è stata completata (un nuovo client è connesso). Questo server pipe può essere usato con il client pipe descritto in [Client named pipe](named-pipe-client.md).
 
-Inizialmente, il server pipe crea una singola istanza della pipe e avvia un'operazione [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) sovrapposta. Quando un client si connette, il server alloca una struttura per fornire spazio di archiviazione per l'istanza della pipe e quindi chiama la funzione [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) per avviare una sequenza di operazioni di I/O per gestire le comunicazioni con il client. Ogni operazione specifica una routine di completamento che esegue l'operazione successiva nella sequenza. La sequenza termina quando il client viene disconnesso e l'istanza della pipe viene chiusa. Dopo l'avvio della sequenza di operazioni per il nuovo client, il server crea un'altra istanza di pipe e attende la connessione del client successivo.
+Inizialmente, il server pipe crea una singola istanza della pipe e avvia [**un'operazione ConnectNamedPipe sovrapposta.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) Quando un client si connette, il server alloca una struttura per fornire spazio di archiviazione per l'istanza della pipe e quindi chiama la [**funzione ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) per avviare una sequenza di operazioni di I/O per gestire le comunicazioni con il client. Ogni operazione specifica una routine di completamento che esegue l'operazione successiva nella sequenza. La sequenza termina quando il client viene disconnesso e l'istanza della pipe viene chiusa. Dopo aver avviato la sequenza di operazioni per il nuovo client, il server crea un'altra istanza della pipe e attende la connessione del client successivo.
 
-I parametri delle funzioni [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) e [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) specificano una routine di completamento e un puntatore a una struttura [**sovrapposta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) . Questo puntatore viene passato alla routine di completamento nel relativo parametro *lpOverLap* . Poiché la struttura **sovrapposta** punta al primo membro della struttura allocata per ogni istanza di pipe, la routine di completamento può utilizzare il relativo parametro *lpOverLap* per accedere alla struttura per l'istanza della pipe.
+I parametri delle [**funzioni ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) [**e WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) specificano una routine di completamento e un puntatore a una [**struttura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) Questo puntatore viene passato alla routine di completamento nel *parametro lpOverLap.* Poiché la **struttura OVERLAPPED** punta al primo membro della struttura allocata per ogni istanza di pipe, la routine di completamento può usare il relativo *parametro lpOverLap* per accedere alla struttura per l'istanza della pipe.
 
 
 ```C++
@@ -329,7 +329,7 @@ VOID GetAnswerToRequest(LPPIPEINST pipe)
 
 <dl> <dt>
 
-[Client named pipe](named-pipe-client.md)
+[Named Pipe Client](named-pipe-client.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: "Consente all'oggetto callback di specificare una stringa di testo della Guida per le voci di menu o i pulsanti della barra degli strumenti. Usato da IShellFolderViewCB:: MessageSFVCB."
-title: Messaggio SFVM_GETHELPTEXT (Shlobj. h)
+description: Consente all'oggetto callback di specificare una stringa di testo della Guida per le voci di menu o i pulsanti della barra degli strumenti. Usato da IShellFolderViewCB::MessageSFVCB.
+title: SFVM_GETHELPTEXT messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 9bd6d632-308c-4ba5-8ac6-2d0f65853947
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5b33bd99c2dd1e6d1013da9015a5ff70bc111c79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c015c1999cbd60174da1994d92766b4f334630294767ee390be21340aef97cc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661021"
 ---
-# <a name="sfvm_gethelptext-message"></a>\_Messaggio SFVM GETHELPTEXT
+# <a name="sfvm_gethelptext-message"></a>Messaggio SFVM \_ GETHELPTEXT
 
-Consente all'oggetto callback di specificare una stringa di testo della Guida per le voci di menu o i pulsanti della barra degli strumenti. Usato da [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Consente all'oggetto callback di specificare una stringa di testo della Guida per le voci di menu o i pulsanti della barra degli strumenti. Usato da [**IShellFolderViewCB::MessageSFVCB.**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb)
 
 
 ```C++
@@ -41,17 +41,17 @@ SFVM_GETHELPTEXT
 
 <dl> <dt>
 
-*idCmd \_ cchMax* \[\]
+*idCmd \_ cchMax* \[ in\]
 </dt> <dd>
 
-La parola di basso livello di questo parametro include l'ID del comando. La parola più ordinata include il numero di caratteri nel buffer di *pszText* .
+La parola più bassa di questo parametro contiene l'ID del comando. La parola più alta contiene il numero di caratteri nel buffer *pszText.*
 
 </dd> <dt>
 
-*pszText* \[ out\]
+*pszText* \[ Cambio\]
 </dt> <dd>
 
-Stringa con terminazione null contenente il testo della guida.
+Stringa con terminazione Null contenente il testo della Guida.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Stringa con terminazione null contenente il testo della guida.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

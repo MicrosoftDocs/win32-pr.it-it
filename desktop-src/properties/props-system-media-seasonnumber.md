@@ -1,19 +1,19 @@
 ---
-description: Numero a incremento progressivo costante basato su 1 che corrisponde alla stagione in cui è stata presentata la visualizzazione iniziale.
+description: Numero monotonamente incrementato in base 1 che corrisponde alla stagione in cui lo show è stato presentato per la prima volta.
 ms.assetid: 4c6a6f46-c1c3-4b33-94e7-d6b9a51fe6a9
-title: System. Media. SeasonNumber
+title: System.Media.SeasonNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 039ff9c3d304b66ec1d16ad8f109b377b890f923
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 8ec0b3c190ddfc9e14e9393c73a95856bc093973e69fe54214816a623c92c9c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597561"
 ---
-# <a name="systemmediaseasonnumber"></a>System. Media. SeasonNumber
+# <a name="systemmediaseasonnumber"></a>System.Media.SeasonNumber
 
-Numero a incremento progressivo costante basato su 1 che corrisponde alla stagione in cui è stata presentata la prima presentazione
+Numero monotonamente incrementato in base 1 che corrisponde alla stagione in cui lo show è stato presentato per la prima volta
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

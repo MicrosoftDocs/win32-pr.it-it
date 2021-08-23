@@ -1,7 +1,7 @@
 ---
-description: Determina se una stringa di applicazione e argomento (&\# 0034; AppName \| topicname&\# 0034;) Usa la sintassi corretta.
+description: Determina se un'applicazione e una stringa di argomento (&\# 0034; AppName \| TopicName&\# 0034;) usa la sintassi corretta.
 ms.assetid: bcf5442b-452e-4b42-95e9-f09bf885be40
-title: Funzione NDdeIsValidAppTopicList (nddeapi. h)
+title: Funzione NDdeIsValidAppTopicList (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: fb990830583f6684502438f132c1c98f5741a0ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7b70d3e33f67c8c0a457f85df91e83e374a3ef4d0f0b1a0af1c5c41ea81c2ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611131"
 ---
-# <a name="nddeisvalidapptopiclist-function"></a>NDdeIsValidAppTopicList (funzione)
+# <a name="nddeisvalidapptopiclist-function"></a>Funzione NDdeIsValidAppTopicList
 
-\[Il DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ non \_ implementate.\]
+\[DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Determina se un'applicazione e una stringa di argomento ("*appname* \| *topicName*") utilizzano la sintassi corretta.
+Determina se un'applicazione e una stringa di argomento ("*AppName* \| *TopicName*") utilizzano la sintassi corretta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ BOOL NDdeIsValidAppTopicList(
 
 <dl> <dt>
 
-*targetTopic* \[ in\]
+*targetTopic* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla stringa dell'applicazione e dell'argomento da convalidare. Questo parametro non può essere **null**.
+Puntatore all'applicazione e alla stringa dell'argomento da convalidare. Questo parametro non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il parametro *targetTopic* ha una sintassi valida, il valore restituito è diverso da zero.
+Se il *parametro targetTopic* ha una sintassi valida, il valore restituito è diverso da zero.
 
 Se la funzione ha esito negativo, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quando crea la condivisione DDE.
+Questa funzione viene chiamata anche da [**NDdeShareAdd**](nddeshareadd.md) quando crea la condivisione DDE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quan
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                      |
-| Intestazione<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>      |
-| Libreria<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl>    |
+| Intestazione<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>      |
+| Libreria<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl>    |
 | Nomi Unicode e ANSI<br/>   | **NDdeIsValidAppTopicListW** (Unicode) e **NDdeIsValidAppTopicListA** (ANSI)<br/> |
 
@@ -79,7 +79,7 @@ Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quan
 
 <dl> <dt>
 
-[Panoramica di Dynamic Data Exchange di rete](network-dynamic-data-exchange.md)
+[Panoramica delle Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funzioni DDE di rete](network-dde-functions.md)

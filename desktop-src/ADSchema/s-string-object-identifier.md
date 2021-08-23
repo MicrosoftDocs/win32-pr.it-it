@@ -1,10 +1,10 @@
 ---
-title: Sintassi di stringa (identificatore di oggetto)
-description: Una stringa OID, che è una stringa che contiene cifre (0-9) e separatori decimali (.).
+title: Sintassi String(Object-Identifier)
+description: Stringa OID, ovvero una stringa che contiene cifre (0-9) e separatori decimali (.).
 ms.assetid: e1349a59-5fec-4cad-bd71-0fed99517ee2
 ms.tgt_platform: multiple
 keywords:
-- Sintassi di AD schema di stringa (identificatore di oggetto)
+- Sintassi String(Object-Identifier) Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1cca4212d0bfeb4af95d186aa6dd1351b69ba5b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bbff05bd970fd89fc34f751359b9f0048b92c8694733ab25e0e3c5e842b123ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702461"
 ---
-# <a name="stringobject-identifier-syntax"></a>Sintassi di stringa (identificatore di oggetto)
+# <a name="stringobject-identifier-syntax"></a>Sintassi String(Object-Identifier)
 
-Una stringa OID, che è una stringa che contiene cifre (0-9) e separatori decimali (.).
+Stringa OID, ovvero una stringa che contiene cifre (0-9) e separatori decimali (.).
 
 
 
@@ -30,10 +30,10 @@ Una stringa OID, che è una stringa che contiene cifre (0-9) e separatori decima
 |--------------|------------------------------------------------------------------------|
 | Nome         | String(Object-Identifier)                                              |
 | ID sintassi    | 2.5.5.2                                                                |
-| ID OM        | 6                                                                      |
+| OM ID        | 6                                                                      |
 | Tipo MAPI    | \-                                                                     |
-| Tipo di annunci     | ADSTYPE \_ case \_ Ignora \_ stringa                                          |
-| Tipo Variant | \_BSTR VT                                                               |
+| Tipo ADS     | ADSTYPE \_ CASE \_ IGNORE \_ STRING                                          |
+| Tipo variant | VT \_ BSTR                                                               |
 | Tipo SDS     | [System.String](/dotnet/api/system.string) |
 
 

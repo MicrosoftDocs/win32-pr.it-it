@@ -4,12 +4,12 @@ ms.assetid: 4ea1cb84-0558-4c4a-9483-1b0f2a8f76f8
 title: Tipi di supporti MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e44db1f4423365efb7814d61b35c1985142aa14
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 64f6486b455fc2045ceb0256f6b6344f06a8923ef767c397068022acec052627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684931"
 ---
 # <a name="mpeg-1-media-types"></a>Tipi di supporti MPEG-1
 
@@ -19,7 +19,7 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|-------------------------------------------------|
 | Tipo principale            | Flusso \_ MEDIATYPE                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1System                       |
@@ -35,12 +35,12 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|----------------------------|
 | Tipo principale            | Flusso \_ MEDIATYPE          |
 | Subtype               | MEDIASUBTYPE \_ MPEG1VideoCD |
 | Tipo di formato           | GUID \_ NULL                 |
-| Struttura del formato      | nessuno                       |
+| Struttura del formato      | Nessuno                       |
 | Contenuto dell'esempio multimediale | Flusso di byte; nessun allineamento. |
 
 
@@ -51,7 +51,7 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|------------------------------------------------|
 | Tipo principale            | MEDIATYPE \_ Audio                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
@@ -67,7 +67,7 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|--------------------------------------------|
 | Tipo principale            | MEDIATYPE \_ Audio                           |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload                 |
@@ -83,7 +83,7 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|------------------------------------------------|
 | Tipo principale            | MEDIATYPE \_ Video                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
@@ -99,7 +99,7 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|------------------------------------------|
 | Tipo principale            | MEDIATYPE \_ Video                         |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload               |
@@ -115,12 +115,12 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|------------------------------------------------|
 | Tipo principale            | Flusso \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Video                      |
 | Tipo di formato           | GUID \_ NULL                                     |
-| Struttura del formato      | nessuno                                           |
+| Struttura del formato      | Nessuno                                           |
 | Contenuto dell'esempio multimediale | Matrice di byte del flusso video (nessun livello di sistema). |
 
 
@@ -131,12 +131,12 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-----------------------|------------------------------------------------|
 | Tipo principale            | Flusso \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Audio                      |
 | Tipo di formato           | GUID \_ NULL                                     |
-| Struttura del formato      | nessuno                                           |
+| Struttura del formato      | Nessuno                                           |
 | Contenuto dell'esempio multimediale | Matrice di byte del flusso audio (nessun livello di sistema). |
 
 
@@ -145,16 +145,16 @@ Questa sezione elenca i tipi di supporti usati per i dati MPEG-1.
 
 ## <a name="remarks"></a>Commenti
 
-I filtri DirectShow MPEG-1 supportano questi tipi come indicato di seguito.
+I DirectShow mpeg-1 supportano questi tipi come indicato di seguito.
 
 
 
 | Filtra               | Direzione | Tipi di supporti supportati                                                                                             |
 |----------------------|-----------|-------------------------------------------------------------------------------------------------------------------|
-| Separatore MPEG-1      | Input     | Flusso di sistema MPEG-1 flusso di sistemaMPEG-1 da Video CD<br/>                                                 |
-| Separatore MPEG-1      | Output    | Pacchetto audio MPEG-1 PAYLOAD audioMPEG-1<br/> Pacchetto video MPEG-1<br/> Payload video MPEG-1<br/> |
-| Software Audio Codec | Input     | Pacchetto audio MPEG-1 PAYLOAD audioMPEG-1<br/>                                                                |
-| Software Video Codec | Input     | Payload video MPEG-1 pacchetto videoMPEG-1<br/>                                                                |
+| MPEG-1 Splitter      | Input     | Flusso di sistema MPEG-1 Stream di sistema MPEG-1 da Video CD<br/>                                                 |
+| MPEG-1 Splitter      | Output    | Pacchetto audio MPEG-1 Payload audio MPEG-1<br/> Pacchetto video MPEG-1<br/> Payload video MPEG-1<br/> |
+| Software Audio Codec | Input     | Pacchetto audio MPEG-1 Payload audio MPEG-1<br/>                                                                |
+| Software Video Codec | Input     | Payload mpeg-1 video packetMPEG-1 Video<br/>                                                                |
 | Software Audio Codec | Output    | Audio PCM                                                                                                         |
 | Software Video Codec | Output    | Video non compresso (Y41P, YUY2, UYVY, RGB-24, RGB-32, RGB-565, RGB-555, RGB-8)                                    |
 
@@ -162,9 +162,9 @@ I filtri DirectShow MPEG-1 supportano questi tipi come indicato di seguito.
 
  
 
-I tipi di supporti di payload e pacchetto video MPEG-1 contengono un'intestazione di sequenza completa in modo che i dati possano essere riprodotti dal centro di un file senza la necessità di un'intestazione di sequenza per inizializzare la riproduzione video.
+I tipi di file multimediali di payload e pacchetto MPEG-1 Video contengono un'intestazione di sequenza completa in modo che i dati possano essere riprodotti dal centro di un file senza la necessità di un'intestazione di sequenza per inizializzare la riproduzione video.
 
-L'intestazione della sequenza video viene aggiunta al tipo di dati video per il video MPEG in modo che la riproduzione possa iniziare dal centro di un flusso. La lunghezza di questo campo è fino a 140 byte. include il codice di inizio dell'intestazione di sequenza (0x000001B3) all'inizio, insieme alle matrici di quantizzazione trovate nella prima intestazione di sequenza rilevata.
+L'intestazione della sequenza video viene aggiunta al tipo di dati video per il video MPEG in modo che la riproduzione possa iniziare dal centro di un flusso. La lunghezza di questo campo è fino a 140 byte. include il codice di inizio dell'intestazione di sequenza (0x000001B3) all'inizio, insieme a tutte le matrici di quantizzazione trovate nella prima intestazione di sequenza rilevata.
 
  
 

@@ -4,9 +4,9 @@ description: Chiamato quando il controllo client riceve un messaggio amministrat
 ms.assetid: CD580207-CEC1-493B-989E-7C1D4FA71228
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnAdminMessageReceived
+- Metodo OnAdminMessageReceived Servizi Desktop remoto
 - Metodo OnAdminMessageReceived Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnAdminMessageReceived
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnAdminMessageReceived
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 201dd3111dbac0b6395654ef8dfad21318419de3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6c50b4b3f26564cc93f1e41653e856f2984559234de92dd2ed2ab02bee20cd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511891"
 ---
-# <a name="iremotedesktopclienteventsonadminmessagereceived-method"></a>Metodo IRemoteDesktopClientEvents:: OnAdminMessageReceived
+# <a name="iremotedesktopclienteventsonadminmessagereceived-method"></a>Metodo IRemoteDesktopClientEvents::OnAdminMessageReceived
 
 Chiamato quando il controllo client riceve un messaggio amministrativo.
 
@@ -43,7 +43,7 @@ void OnAdminMessageReceived(
 
 <dl> <dt>
 
-*adminMessage* \[ in\]
+*adminMessage* \[ Pollici\]
 </dt> <dd>
 
 Messaggio.

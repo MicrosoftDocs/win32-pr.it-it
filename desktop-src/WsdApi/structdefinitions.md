@@ -1,19 +1,19 @@
 ---
-description: Genera definizioni della struttura C per i tipi noti.
+description: Genera definizioni di struttura C per tipi noti.
 ms.assetid: 38ba2e8a-d5b1-47b2-b410-ae161f5039bf
-title: Elemento structDefinitions
+title: structDefinitions - elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26f680db18b06253362f932cc7d34d5b85f7c1b5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1c4c8ad894a42bbafd183031849e458ad5f3bf155a9ccba4e704321e875163c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611561"
 ---
-# <a name="structdefinitions-element"></a>Elemento structDefinitions
+# <a name="structdefinitions-element"></a>structDefinitions - elemento
 
-Genera definizioni della struttura C per i tipi noti.
+Genera definizioni di struttura C per tipi noti.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**File**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -47,7 +47,7 @@ Gran parte del codice generato e del codice dell'applicazione fa riferimento all
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

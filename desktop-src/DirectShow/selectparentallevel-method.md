@@ -1,15 +1,15 @@
 ---
-description: Il metodo SelectParentalLevel imposta il livello padre specificato per la riproduzione successiva.
+description: Il metodo SelectParentalLevel imposta il livello di genitori specificato per la riproduzione successiva.
 ms.assetid: ffd1e204-6ed2-4190-8635-9f3866d38099
 title: Metodo SelectParentalLevel
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb00172b8e61f353c45981af628eb396bca7a7df
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 95de7e8cbf1fb6fa284eddefa1ba07ebb9268825116fdac9c97fbd5d42bac84e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684041"
 ---
 # <a name="selectparentallevel-method"></a>Metodo SelectParentalLevel
 
@@ -31,21 +31,21 @@ MSWebDVD.SelectParentalLevel(iLevel, sUserName, sPassword)
 <span id="iLevel"></span><span id="ilevel"></span><span id="ILEVEL"></span>*iLevel*
 </dt> <dd>
 
-Specifica il livello di gestione padre come intero. Per abilitare la gestione padre, il parametro *iLevel* deve essere compreso tra 1 e 8. Per disabilitare la gestione padre, impostare *iLevel* su-1.
+Specifica il livello di gestione dei genitori come integer. Per abilitare la gestione dei genitori, il *parametro iLevel* deve essere compreso tra 1 e 8. Per disabilitare la gestione dei genitori, impostare *iLevel* su -1.
 
 </dd> <dt>
 
 <span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
 </dt> <dd>
 
-Specifica l'utente corrente sotto forma di stringa. (Attualmente ignorata).
+Specifica l'utente corrente come stringa. (Attualmente ignorato).
 
 </dd> <dt>
 
 <span id="sPassword"></span><span id="spassword"></span><span id="SPASSWORD"></span>*sPassword*
 </dt> <dd>
 
-Specifica la password attualmente archiviata nel registro di sistema sotto forma di stringa.
+Specifica la password attualmente archiviata nel Registro di sistema come stringa.
 
 </dd> </dl>
 
@@ -55,13 +55,13 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il livello di accesso nell'oggetto MSWebDVD, che determina il contenuto di cui l'utente può eseguire la riproduzione. I livelli superiori possono riprodurre contenuto di livello inferiore, ma i livelli inferiori non possono riprodurre contenuto di livello superiore. Il significato esatto dei livelli di gestione padre di otto DVD varia a seconda del paese. In Stati Uniti e in Canada, viene eseguito il mapping dei livelli alle categorie di classificazione di Motion Picture Association of America (MPAA). Per impostazione predefinita, la gestione padre in DVD Navigator è disabilitata.
+Questo metodo imposta il livello di accesso nell'oggetto MSWebDVD, che determina il contenuto che l'utente può riprodurre. I livelli superiori possono riprodurre contenuto di livello inferiore, ma i livelli inferiori non possono riprodurre contenuto di livello superiore. Il significato esatto degli otto livelli di gestione dei genitori dvd varia a seconda del paese o dell'area geografica. Nel Stati Uniti e in Canada, i livelli vengono mappati alle categorie di classificazione MPAA (Motion Picture Association of America). La gestione dei genitori nello strumento di navigazione DVD è disabilitata per impostazione predefinita.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**SelectParentalCountry**](selectparentalcountry-method.md)
+[**SelezionareParentalCountry**](selectparentalcountry-method.md)
 </dt> <dt>
 
 [**NotifyParentalLevelChange**](notifyparentallevelchange-method.md)

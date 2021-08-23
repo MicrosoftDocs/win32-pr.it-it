@@ -1,42 +1,42 @@
 ---
-description: Nell'esempio di analisi dell'input penna di base viene illustrato come la classe InkAnalyzer divide l'input penna in diversi segmenti di Word e di disegno. Questo esempio è una versione aggiornata dell'esempio di divisore input penna.
+description: L'esempio di analisi dell'input penna di base mostra come la classe InkAnalyzer divide l'input penna in vari segmenti di parola e di disegno. Questo esempio è una versione aggiornata di Ink Divider Sample.
 ms.assetid: cb9a28d9-f8c6-478e-ae43-2d30106edc7b
 title: Esempio di analisi dell'input penna di base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94ac73ca9049169c6e406059665a66e8eaa6f3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ab307deac8ac58a741b0c7f332986b09074f4f5c6a8afa53f0156a94916bf16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660831"
 ---
 # <a name="basic-ink-analysis-sample"></a>Esempio di analisi dell'input penna di base
 
-Nell'esempio di analisi dell'input penna di base viene illustrato come la classe [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide l'input penna in diversi segmenti di Word e di disegno.
+L'esempio di analisi dell'input penna di base mostra come la [classe InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide l'input penna in vari segmenti di parola e di disegno.
 
-Questo esempio è una versione aggiornata dell' [esempio di divisore input penna](ink-divider-sample.md). Mentre l'esempio di divisore di input penna usa la classe [divisore](/previous-versions/ms839398(v=msdn.10)) , in questo esempio viene usata l'API InkAnalysis più recente e preferita. L'API InkAnalysis combina l'oggetto [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e il divisore in un'unica API ed espande le funzionalità di entrambi.
+Questo esempio è una versione aggiornata di [Ink Divider Sample.](ink-divider-sample.md) Mentre l'esempio ink divider usa la [classe Divider,](/previous-versions/ms839398(v=msdn.10)) questo esempio usa l'API InkAnalysis più recente e preferita. L'API InkAnalysis combina [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e Divider in un'unica API ed espande le funzionalità di entrambe.
 
-Quando si aggiorna il modulo, l'esempio disegna un rettangolo intorno a ogni unità analizzata: parole, linee, paragrafi, aree di scrittura, disegni e punti elenco. Il modulo usa colori diversi per le diverse unità. I rettangoli vengono inoltre ingranditi in base a importi diversi per garantire che nessun rettangolo sia nascosto da altri.
+Quando si aggiorna il modulo, l'esempio disegna un rettangolo intorno a ogni unità analizzata: parole, righe, paragrafi, aree di scrittura, disegni e punti elenco. Il modulo usa colori diversi per le diverse unità. I rettangoli vengono anche ingranditi di quantità diverse per garantire che nessun rettangolo sia nascosto da altri.
 
-Nella tabella seguente vengono specificati il colore e l'ingrandimento per ogni unità analizzata.
+La tabella seguente specifica il colore e l'ingrandimento per ogni unità analizzata.
 
 
 
-| Unità analizzata             | Colore del rettangolo | Ingrandimento rettangolo (pixel) |
+| Unità analizzata             | Colore del rettangolo | Rettangolo ingrandito (pixel) |
 |---------------------------|--------------------|--------------------------------|
 | Word<br/>           | Green<br/>   | 1<br/>                   |
-| Linea<br/>           | Fucsia<br/> | 3<br/>                   |
+| A linee<br/>           | Fucsia<br/> | 3<br/>                   |
 | Paragraph<br/>      | Blu<br/>    | 5<br/>                   |
 | Area di scrittura<br/> | Giallo<br/>  | 7<br/>                   |
 | Disegno<br/>        | Red<br/>     | 1<br/>                   |
-| Punto elenco<br/>         | Orange<br/>  | 1<br/>                   |
+| Proiettile<br/>         | Orange<br/>  | 1<br/>                   |
 
 
 
  
 
-È possibile cancellare i tratti nel form. Nell'applicazione di esempio, è possibile passare dall'input penna alla modalità di cancellazione e viceversa per modificare la funzione della penna.
+È possibile cancellare i tratti nel formato. Nell'applicazione di esempio è possibile alternare la modalità Input penna e Cancella per modificare la funzione della penna.
 
 
 ```C++
@@ -69,7 +69,7 @@ Nella tabella seguente vengono specificati il colore e l'ingrandimento per ogni 
 
 
 
-Quando si aggiungono o eliminano tratti, gli esempi aggiornano l' [oggetto InkAnalyzer](/previous-versions/ms583671(v=vs.100)).
+Quando si aggiungono o eliminano tratti, gli esempi [aggiornano InkAnalyzer](/previous-versions/ms583671(v=vs.100)).
 
 
 ```C++
@@ -106,16 +106,16 @@ Quando si aggiungono o eliminano tratti, gli esempi aggiornano l' [oggetto InkAn
 
 
 
-Si noti che nel menu modalità l'analisi automatica del layout è attiva per impostazione predefinita. Se questa opzione è selezionata, i gestori eventi [Stroke](/previous-versions/ms835344(v=msdn.10)) e [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) dell'oggetto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) chiamano il metodo [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) ogni volta che viene creato o eliminato un tratto.
+Si noti che nel menu Modalità l'analisi automatica del layout è attivata per impostazione predefinita. Con questa opzione selezionata, i gestori dell'evento [Stroke](/previous-versions/ms835344(v=msdn.10)) e [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) dell'oggetto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) chiamano il metodo [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) ogni volta che viene creato o eliminato un tratto.
 
 > [!Note]  
-> La chiamata al metodo [Analyze](/previous-versions/ms568971(v=vs.100)) dell'oggetto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con più di pochi tratti presenti crea un ritardo notevole in un'applicazione. Questo perché Analyze è un'operazione di analisi dell'input penna sincrona. In pratica, chiamare il metodo Analyze solo quando è necessario il risultato. In caso contrario, utilizzare il metodo [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) asincrono, come illustrato nell'esempio.
+> La chiamata al metodo [Analyze](/previous-versions/ms568971(v=vs.100)) dell'oggetto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con più di pochi tratti presenti crea un notevole ritardo in un'applicazione. Questo perché Analizza è un'operazione di analisi dell'input penna sincrona. In pratica, chiamare il metodo Analyze solo quando è necessario il risultato. In caso contrario, usare il [metodo asincrono BackgroundAnalyze,](/previous-versions/ms568972(v=vs.100)) come illustrato nell'esempio.
 
  
 
 ## <a name="handling-the-analysis-results"></a>Gestione dei risultati dell'analisi
 
-Nell'esempio vengono create due matrici per mantenere i vari rettangoli, orizzontali o ruotati. Utilizzare un rettangolo di delimitazione ruotato per ottenere l'angolo in cui viene scritta una riga di parole. Nell'esempio vengono illustrate le proprietà restituite dall' [oggetto InkAnalyzer](/previous-versions/ms583671(v=vs.100)) e viene visualizzato il rettangolo di selezione o il rettangolo di selezione ruotato (a seconda della selezione di menu).
+L'esempio crea due matrici per contenere i vari rettangoli, orizzontali o ruotati. Usare un rettangolo di selezione ruotato per ottenere l'angolo su cui viene scritta una riga di parole. L'esempio mostra le proprietà restituite da [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) e visualizza il rettangolo di selezione o il rettangolo di selezione ruotato (a seconda della selezione del menu).
 
 
 ```C++
@@ -274,11 +274,11 @@ Nell'esempio vengono create due matrici per mantenere i vari rettangoli, orizzon
 
 
 
-Il parser calcola [GetRotatedBoundingBox](/previous-versions/ms569544(v=vs.100)) durante l'analisi. È possibile accedere alle informazioni dai rettangoli di delimitazione ruotati nell'applicazione per diversi motivi utili:
+Il parser calcola [GetRotatedBoundingBox durante](/previous-versions/ms569544(v=vs.100)) l'analisi. È possibile accedere alle informazioni dai relimiti ruotati nell'applicazione per diversi motivi utili:
 
--   Rilevare o creare i limiti di una singola riga, un paragrafo o un'altra unità.
--   Determinare l'angolo in corrispondenza del quale viene scritta una riga o un paragrafo.
--   Implementare funzionalità come la selezione di una riga, un paragrafo o un'altra unità.
+-   Rilevare o disegnare i limiti di una singola riga, paragrafo o altra unità.
+-   Determinare l'angolo in base al quale viene scritta una riga o un paragrafo.
+-   Implementare funzionalità come la selezione per una riga, un paragrafo o un'altra unità.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -287,10 +287,10 @@ Il parser calcola [GetRotatedBoundingBox](/previous-versions/ms569544(v=vs.100))
 [Riconoscimento di base e analisi dell'input penna](basic-recognition-and-ink-analysis.md)
 </dt> <dt>
 
-[Esempio di modulo cartaceo analizzato](scanned-paper-form-sample.md)
+[Esempio di modulo di carta digitalizzato](scanned-paper-form-sample.md)
 </dt> <dt>
 
-[Esempio di divisore input penna](ink-divider-sample.md)
+[Esempio di divisore di input penna](ink-divider-sample.md)
 </dt> </dl>
 
  

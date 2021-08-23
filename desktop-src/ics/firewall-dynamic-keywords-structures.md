@@ -6,12 +6,12 @@ keywords:
 ms.topic: article
 ms.date: 05/13/2021
 ms.localizationpriority: low
-ms.openlocfilehash: b5ac4db0afd138261c211e21c9a20fe1a55d830c
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 6b6c79e4609fe71be4a883ded9bf6dbab0f4750642fd7324d6e88f3d2cd23f51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112681195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727081"
 ---
 # <a name="firewall-dynamic-keywords-structures"></a>Strutture di parole chiave dinamiche del firewall
 
@@ -21,8 +21,8 @@ Le parole chiave dinamiche del firewall contengono le strutture seguenti.
 
 | Argomento | Descrizione |
 |-|-|
-| [**FW_DYNAMIC_KEYWORD_ADDRESS_DATA0**](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address_data0) | Contiene i dati restituiti al client quando **vengono** chiamate le API di enumerazione. |
-| [**FW_DYNAMIC_KEYWORD_ADDRESS0**](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0) | Consente al client di creare un indirizzo di parola chiave dinamico, che contiene un elenco di indirizzi IP. |
+| [**FW_DYNAMIC_KEYWORD_ADDRESS_DATA0**](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address_data0) | Contiene i dati restituiti al client **quando** vengono chiamate le API di enumerazione. |
+| [**FW_DYNAMIC_KEYWORD_ADDRESS0**](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0) | Consente al client di creare un indirizzo di parola chiave dinamico che contiene un elenco di indirizzi IP. |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,10 +1,10 @@
 ---
-title: Classe Win32_WinSAT
+title: Win32_WinSAT classe
 description: Definisce le informazioni di valutazione di riepilogo per la valutazione formale più recente.
 ms.assetid: adf4de42-9dfd-46a7-ae75-3bbcfd15dd68
 keywords:
-- Classe Win32_WinSAT WinSAT
-- Classe Win32_WinSAT WinSAT, descrizione
+- Win32_WinSAT classe WinSAT
+- Win32_WinSAT classe WinSAT , descritta
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829e5e1b3658771728aab9ef30634d90a8bc6450
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0a9e863bd22cebc6609e32521b85de4bca29ae048d9673e3b09cfff2b95408f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504531"
 ---
-# <a name="win32_winsat-class"></a>Win32 \_ WinSAT (classe)
+# <a name="win32_winsat-class"></a>Classe \_ WinSAT Win32
 
-\[**Win32 \_ WinSAT** può essere modificato o non disponibile per le versioni dopo Windows 8.1.\]
+\[**Win32 \_ WinSAT può** essere modificato o non disponibile per le versioni dopo Windows 8.1.\]
 
 Definisce le informazioni di valutazione di riepilogo per la valutazione formale più recente.
 
@@ -56,13 +56,13 @@ class Win32_WinSAT
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ WinSAT** presenta questi tipi di membri:
+La **classe Win32 \_ WinSAT** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ WinSAT** dispone di queste proprietà.
+La **classe \_ WinSAT Win32** ha queste proprietà.
 
 <dl> <dt>
 
@@ -75,7 +75,7 @@ Tipo di dati: **real32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Punteggio per i processori del computer.
+Punteggio per i processori nel computer.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Tipo di dati: **real32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dopo Windows 8.1, WinSAT non valuterà più le funzionalità di grafica tridimensionale (gioco) del computer e la capacità del driver grafico di eseguire il rendering degli oggetti e di eseguire shader mediante questa valutazione. Per compatibilità, WinSAT segnala i valori sentinella per le metriche e i punteggi, tuttavia questi non vengono calcolati in tempo reale.
+Dopo Windows 8.1, WinSAT non valuta più le funzionalità di grafica tridimensionale (giochi) del computer e la capacità del driver di grafica di eseguire il rendering di oggetti ed eseguire shader usando questa valutazione. Per motivi di compatibilità, WinSAT segnala i valori sentinel per le metriche e i punteggi, ma non vengono calcolati in tempo reale.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Tipo di dati: **real32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Punteggio per la velocità effettiva di lettura sequenziale sul disco rigido primario nel computer.
+Punteggio per la velocità effettiva di lettura sequenziale nel disco rigido primario del computer.
 
 </dd> <dt>
 
@@ -127,14 +127,14 @@ Tipo di dati: **real32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Punteggio per la velocità effettiva e la capacità della memoria del computer.
+Punteggio per la velocità effettiva della memoria e la capacità del computer.
 
 </dd> <dt>
 
 **TimeTaken**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -150,13 +150,13 @@ Questa proprietà deve essere impostata su "MostRecentAssessment" nella clausola
 **WinSATAssessmentState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato della valutazione. Per una descrizione dei valori possibili, vedere l'enumerazione [**\_ \_ dello stato di valutazione di WinSAT**](/windows/win32/api/winsatcominterfacei/ne-winsatcominterfacei-winsat_assessment_state) .
+Stato della valutazione. Per una descrizione dei valori possibili, vedere [**l'enumerazione WINSAT \_ ASSESSMENT \_ STATE.**](/windows/win32/api/winsatcominterfacei/ne-winsatcominterfacei-winsat_assessment_state)
 
 <dl> <dt>
 
@@ -186,17 +186,17 @@ Tipo di dati: **real32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Punteggio di base per il computer. Per informazioni dettagliate sul valore score, vedere la proprietà [**IProvideWinSATResultsInfo:: SystemRating**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_systemrating) .
+Punteggio di base per il computer. Per informazioni dettagliate sul valore del punteggio, vedere [**la proprietà IProvideWinSATResultsInfo::SystemRating.**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatresultsinfo-get_systemrating)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sui punteggi dei sottocomponenti, ad esempio **MemoryScore**, vedere la proprietà [**IProvideWinSATAssessmentInfo:: Score**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_score) .
+Per informazioni sui punteggi del sottocomponente, ad esempio **MemoryScore,** vedere la [**proprietà IProvideWinSATAssessmentInfo::Score.**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_score)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio in cui viene illustrato come utilizzare WMI per recuperare dati da questa classe, vedere il metodo [**IProvideWinSATVisuals:: Get \_ bitmap**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatvisuals-get_bitmap) .
+Per un esempio che illustra come usare WMI per recuperare dati da questa classe, vedere il metodo [**IProvideWinSATVisuals::get \_ Bitmap.**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatvisuals-get_bitmap)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -204,10 +204,10 @@ Per un esempio in cui viene illustrato come utilizzare WMI per recuperare dati d
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WinSAT. mof</dt> </dl>    |
+| MOF<br/>                      | <dl> <dt>WinSAT.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>WinSATAPI.dll</dt> </dl> |
 
 

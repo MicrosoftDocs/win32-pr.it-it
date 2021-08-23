@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2bd052679f207cd0778f212a73663d4dfd8ce165
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 8f66021f61536e8c8f09663e9ec2513b11d1ec87829f5c100b48cbf15d98cdd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685061"
 ---
 # <a name="security-msm-element-lan_policy"></a>Elemento Security (MSM) (LAN_policy)
 
-L'elemento Security (MSM) contiene le impostazioni di sicurezza per le reti cablate. Questo elemento è facoltativo.
+L'elemento security (MSM) contiene le impostazioni di sicurezza per le reti cablate. Questo elemento è facoltativo.
 
 ``` syntax
 <xs:element name="security">
@@ -44,7 +44,7 @@ L'elemento Security (MSM) contiene le impostazioni di sicurezza per le reti cabl
 </xs:element>
 ```
 
-L'elemento di **sicurezza** è definito dall'elemento [**MSM**](lan-profileschema-msm-lanprofile-element.md) .
+**L'elemento** di sicurezza è definito dall'elemento [**MSM.**](lan-profileschema-msm-lanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -52,8 +52,8 @@ L'elemento di **sicurezza** è definito dall'elemento [**MSM**](lan-profileschem
 
 | Elemento                                                                 | Tipo    | Descrizione                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Specifica se il servizio di configurazione automatica per reti cablate tenterà l'autenticazione della porta tramite 802.1 X. <br/>      |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Specifica se il servizio di configurazione automatica per reti cablate richiede l'utilizzo di 802.1 X per l'autenticazione della porta. <br/> |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Specifica se il servizio di configurazione automatica per le reti cablate tenterà l'autenticazione delle porte usando 802.1X. <br/>      |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Specifica se il servizio di configurazione automatica per le reti cablate richiede l'uso di 802.1X per l'autenticazione delle porte. <br/> |
 
 
 
@@ -63,8 +63,8 @@ L'elemento di **sicurezza** è definito dall'elemento [**MSM**](lan-profileschem
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ L'elemento di **sicurezza** è definito dall'elemento [**MSM**](lan-profileschem
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**CSM (LANProfile)**](lan-profileschema-msm-lanprofile-element.md)
+[**MSM (LANProfile)**](lan-profileschema-msm-lanprofile-element.md)
 </dt> </dl>
 
  

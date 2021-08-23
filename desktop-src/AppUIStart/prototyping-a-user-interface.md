@@ -1,129 +1,129 @@
 ---
-title: Prototipazione di un'interfaccia utente
-description: In questo argomento viene illustrata la creazione di un prototipo di un'interfaccia utente che consente di ridurre al minimo i difetti di progettazione e garantire un'esperienza utente corretta.
+title: Prototipo di un Interfaccia utente
+description: Questo argomento illustra in che modo la creazione di prototipi di un'interfaccia utente consente di ridurre al minimo i difetti di progettazione e garantire un'esperienza utente ottimale.
 ms.assetid: 16e3fabb-9cd1-4517-8f19-b1d80c956ee0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 148c01d31c3bee34b555ab2ce10565229a7d1fb8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce42ad4240c3a06716f0db851e98b31e713b1ce0e23d1d485bc3e154375d9e50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507437"
 ---
-# <a name="prototyping-a-user-interface"></a>Prototipazione di un'interfaccia utente
+# <a name="prototyping-a-user-interface"></a>Prototipo di un Interfaccia utente
 
-In questo argomento viene illustrata la creazione di un prototipo di un'interfaccia utente che consente di ridurre al minimo i difetti di progettazione e garantire un'esperienza utente corretta.
+Questo argomento illustra in che modo la creazione di prototipi di un'interfaccia utente consente di ridurre al minimo i difetti di progettazione e garantire un'esperienza utente ottimale.
 
 ## <a name="introduction"></a>Introduzione
 
-In alcuni casi, quando un progetto si sposta in futuro, presupposti ridotti e decisioni ben intenzionate ma insufficienti si accumulano, trasformando ore di lavoro in un'esperienza utente scadente. Gli smart team eliminano gli errori prima della spedizione usando una tecnica denominata prototipazione interfaccia utente. Combinati con gli studi di usabilità, i prototipi mantengono i team diretti nella direzione giusta.
+A volte, mentre un progetto va avanti, si accumulano piccoli presupposti e decisioni ben intente ma insoddgette, trasformando ore di lavoro in un'esperienza utente noiosa. I team intelligenti eliminano gli errori prima della spedizione usando una tecnica denominata prototipo dell'interfaccia utente. In combinazione con gli studi sull'usabilità, i prototipi tengono i team nella direzione giusta.
 
-## <a name="why-prototype"></a>Vantaggi del prototipo
+## <a name="why-prototype"></a>Perché creare un prototipo?
 
-Il prototipo è un mezzo per esplorare le idee prima di investirle. Tutti i tecnici e gli artigiani esperti creano prototipi del proprio lavoro prima di compilare qualsiasi elemento, ovvero architetti che creano modelli fuori carta o cartone o con strumenti di realtà virtuale. I tecnici aeronautici usano i tunnel del vento. I generatori di Bridge creano modelli di stress. Il software e i progettisti Web creano le simulazioni del modo in cui gli utenti interagiranno con i loro progetti.
+La prototipazione è un modo per esplorare le idee prima di investire in esse. Tutti gli ingegneri e gli ingegneri esperti creano prototipi del proprio lavoro prima di creare qualsiasi cosa: gli architetti creano modelli su carta o cardboard o con strumenti di realtà virtuale. I tecnici Disagi usano tunnel del vento. I generatori di bridge creano modelli di stress. I progettisti di software e Web creano simulazioni del modo in cui gli utenti interagiranno con le proprie progettazioni.
 
-Il prototipo è il modo migliore per risparmiare tempo e risorse. Il valore di un prototipo è che si tratta di una facciata, ad esempio un set di Hollywood, in cui viene costruita solo la parte iniziale della compilazione. Rispetto al prodotto reale, i prototipi sono semplici ed economici da creare. Pertanto, per un investimento minimo, è possibile trovare problemi di usabilità e progettazione e l'interfaccia utente modificata prima di sostanziali investimenti nel progetto e nelle tecnologie finali.
+Il motivo migliore per creare un prototipo è risparmiare tempo e risorse. Il valore di un prototipo è che si tratta di un'interfaccia, ad esempio un set Disa, in cui viene costruita solo la parte anteriore dell'edificio. Rispetto al prodotto reale, i prototipi sono semplici ed economici da creare. Pertanto, per un investimento minimo, è possibile trovare problemi di usabilità e progettazione e adattare l'interfaccia utente prima che venga effettuato un investimento sostanziale nella progettazione e nelle tecnologie finali.
 
-Quando si esaminano le esigenze di un progetto specifico, è possibile che vengano rilevati i motivi per la creazione di un prototipo diverso dal risparmio di denaro. L'obiettivo è esplorare un nuovo modello di interfaccia? Apportare modifiche a una parte della progettazione esistente? Esaminare una nuova tecnologia? Prima di iniziare, è importante chiarire il motivo per cui si sta creando ciò che si sta creando. A partire da Clear Goals consente di rendere il lavoro diretto ed efficace. I motivi per la creazione di prototipi rientrano in tre categorie di base:
+Quando si esaminano le esigenze di un progetto specifico, è possibile trovare motivi per la creazione di un prototipo diverso dal risparmio di denaro. L'obiettivo è esplorare un nuovo modello di interfaccia? Apportare modifiche a una parte della progettazione esistente? Analizzare una nuova tecnologia? Prima di iniziare, è importante essere chiari sul motivo per cui si sta creando ciò che si sta creando. Iniziare con obiettivi chiari consente di rendere il lavoro richiesto diretto ed efficace. I motivi per la creazione di prototipi rientrano in tre categorie di base:
 
--   Modello di prova.
+-   Modello di verifica.
 
-    Tra alcuni team ci sono disaccordi sulla direzione futura di un progetto. Un prototipo può essere usato per dimostrare che un'idea o un nuovo approccio ha un merito o un valore. Un prototipo può essere utile per illustrare il funzionamento di un'idea, esprimere le proprie qualità in modo visivo e interattivo e/o motivare i membri del team a pensare al problema da un'altra prospettiva.
+    Tra alcuni team ci sono problemi relativi alla direzione futura di un progetto. Un prototipo può essere usato per dimostrare che un'idea o un nuovo approccio ha valore o valore. Un prototipo può essere utile per illustrare il funzionamento di un'idea, esprimere le qualità in modo visivo e interattivo e/o motivare i membri del team a pensare al problema da un'altra prospettiva.
 
 -   Esplorazione della progettazione.
 
-    Se si progetta un software interattivo, l'unico modo per esplorare la modalità di utilizzo di un elemento consiste nel creare una simulazione e interagire con esso. Talvolta la simulazione è legata a uno studio di usabilità, in cui le parti del prototipo possono essere valutate in modo strutturato. In alcuni casi è semplicemente un modo per esprimere chiaramente a uno sviluppatore il modo in cui un elemento dovrebbe funzionare. In molti casi, è possibile che una finestra di progettazione stia semplicemente sperimentando, nel tentativo di ottenere un senso per l'approccio che potrebbe funzionare. Chiunque nel team può utilizzare i prototipi per esplorare i problemi di progettazione, anche se i progettisti sono in genere i più qualificati. Le esplorazioni di progettazione devono essere indirizzate al tentativo di risolvere problemi specifici riconosciuti nel prodotto.
+    Se si progetta software interattivo, l'unico modo per esplorare come verrà usato qualcosa è creare un mock-up e interagire con esso. A volte il mock-up è associato a uno studio di usabilità, in cui parti del prototipo possono essere valutate in modo strutturato. A volte è solo un modo per esprimere chiaramente a uno sviluppatore il funzionamento o l'aspetto di un elemento. In molti casi, un progettista potrebbe semplicemente sperimentare, per avere un'idea dell'approccio che potrebbe funzionare. Chiunque nel team può usare prototipi per esplorare i problemi di progettazione, anche se i progettisti sono in genere i più esperti. Le esplorazioni della progettazione devono essere indirizzate al tentativo di risolvere problemi specifici riconosciuti nel prodotto.
 
 -   Esplorazione tecnica.
 
-    Gli sviluppatori che analizzano gli approcci di implementazione a un problema spesso provano diverse tecniche di codifica per verificare se funzionano correttamente. L'uso di COM+, DHTML (Dynamic HTML), Microsoft Win32 o approcci di codifica specifici all'interno di ogni tecnologia presenta compromessi diversi. In alcuni casi un prototipo rappresenta un'esplorazione della tecnologia che funzionerà correttamente per supportare una determinata funzionalità dell'interfaccia utente.
+    Gli sviluppatori che analizzano gli approcci di implementazione a un problema spesso provano diverse tecniche di scrittura del codice per verificare se funzionano correttamente. L'uso di COM+, HTML dinamico (DHTML), Microsoft Win32 o approcci specifici alla scrittura di codice all'interno di ogni tecnologia ha compromessi diversi. A volte un prototipo rappresenta un'esplorazione della tecnologia che funzionerà bene per supportare una determinata funzionalità dell'interfaccia utente.
 
-A volte vengono creati prototipi per una combinazione di questi motivi. Se un team è sufficientemente pianificato, può allocare tempo per uno sviluppatore e una finestra di progettazione o project manager per interagire con un prototipo. In questi casi, è estremamente importante definire chiaramente gli obiettivi e i contributi che ciascun membro del team deve prendere. Chiunque debba essere chiaro sugli obiettivi, su cosa è in gioco e su quale sarà il potenziale risultato.
+Talvolta i prototipi vengono creati per una combinazione di questi motivi. Se un team pianifica in modo sufficiente, può ottenere tempo per uno sviluppatore e un progettista o project manager lavorare insieme su un prototipo. In questi casi, è estremamente importante definire chiaramente gli obiettivi e i contributi che ogni membro del team deve realizzare. Tutti devono essere chiari su quali sono gli obiettivi, quali sono gli obiettivi in gioco e quale sarà il potenziale risultato.
 
-## <a name="who-is-involved"></a>Chi è impegnato?
+## <a name="who-is-involved"></a>Who È coinvolto?
 
-Il prototipo può essere eseguito in modo informale da chiunque, indipendentemente dal loro background o ruolo nel progetto. È facile creare un prototipo semplice ma efficace acquisendo una bitmap da Adobe Photoshop, inserendolo nello strumento per la creazione e la gestione di siti Web di Microsoft FrontPage e aggiungendo pulsanti o collegamenti attivi. Questi prototipi leggeri sono solo fino a questo punto e possono diventare difficili da usare per interazioni complesse.
+La prototipazione può essere eseguita in modo informale da chiunque, indipendentemente dal loro background o ruolo nel progetto. È facile creare un prototipo semplice ma efficace prendendo una bitmap da Adobe Adobe, inserendola nello strumento di creazione e gestione del sito Web Microsoft FrontPage e aggiungendo pulsanti o collegamenti attivi. Questi prototipi leggeri sono solo fino a questo punto e possono diventare complessi per le interazioni complesse.
 
-Per i prototipi più formali di team più grandi, uno sviluppatore o un project manager collaborerà spesso con una finestra di progettazione e un tecnico di usabilità. Insieme generano idee, compilano un prototipo che rappresenta le idee ottimali e poi entrano nel Lab per vedere quanto è efficace per la risoluzione dei problemi degli utenti. Gli sviluppatori potrebbero essere impegnati se possono risparmiare tempo o se sono necessarie competenze tecniche. Spesso la finestra di progettazione o la project manager eseguiranno la maggior parte degli script o della codifica per compilare il prototipo.
+Per prototipi più formali di team più grandi, uno sviluppatore o project manager spesso collabora con un progettista e un tecnico dell'usabilità. Insieme generano idee, compilano un prototipo che rappresenta le idee migliori e quindi passano al lab per verificare quanto sia efficace nella risoluzione dei problemi degli utenti. Gli sviluppatori potrebbero essere coinvolti se possono risparmiare tempo o se sono necessarie competenze tecniche. Spesso la finestra di progettazione project manager la maggior parte degli script o del codice per compilare il prototipo.
 
 ## <a name="when-should-a-prototype-be-built"></a>Quando deve essere compilato un prototipo?
 
-A seconda dell'ambito del prototipo e del livello di dettaglio richiesto, i prototipi possono essere creati in qualsiasi momento durante il progetto. Spesso vengono creati all'inizio del progetto, durante la fase di pianificazione e specifica, prima che gli sviluppatori scrivano il codice di produzione. Questo è il momento in cui la necessità di eseguire l'esplorazione è maggiore e quando il tempo necessario per l'investimento è la maggior parte possibile. Se gli sviluppatori anziché i responsabili del programma o i progettisti eseguono la creazione di prototipi, il tempo di pianificazione diventa ancora più importante a causa della necessità di assicurarsi che il lavoro investito nel prototipo venga considerato nella pianificazione dello sviluppo. La pianificazione di qualsiasi versione dell'interfaccia utente deve includere un certo livello di prototipazione.
+A seconda dell'ambito del prototipo e del livello di dettaglio richiesto, i prototipi possono essere compilati in qualsiasi momento durante il progetto. Spesso vengono creati nelle prime fasi del progetto, durante la fase di pianificazione e specifica, prima che gli sviluppatori scrivono codice di produzione. Questo è il momento in cui la necessità di esplorazione è maggiore e quando è più fattibile il tempo necessario. Se gli sviluppatori anziché i responsabili di programma o i progettisti stanno effettuando la creazione di prototipi, il tempo di pianificazione diventa ancora più importante a causa della necessità di assicurarsi che il lavoro investito nel prototipo sia in considerazione nella pianificazione dello sviluppo. La pianificazione di qualsiasi versione dell'interfaccia utente deve includere un certo livello di prototipazione.
 
-In ritardo in un progetto, i prototipi più piccoli possono contribuire alla risoluzione di problemi tecnici e di progettazione difficili. Una rapida simulazione HTML del comportamento di una finestra di dialogo o di una pagina Web può contribuire a rispondere a una domanda dello sviluppatore o a un altro compagno di squadra per conoscere l'esperienza desiderata. In alcuni casi, un gestore di programmi o un progettista forte può implementare il comportamento nel software di sviluppo Microsoft JScript e approssimarsi alla maggior parte della logica di programmazione che gli sviluppatori dovranno considerare.
+Più tardi in un progetto, prototipi più piccoli possono aiutare a risolvere problemi tecnici e di progettazione difficili. Un rapido mock-up HTML del comportamento di una finestra di dialogo o di una pagina Web può aiutare a rispondere alla domanda di uno sviluppatore o offrire ad altri colleghi un'immagine dell'esperienza desiderata. In alcuni casi, un responsabile di programma o un progettista sicuro può implementare il comportamento nel software di sviluppo Microsoft JScript e approssimativamente gran parte della logica di programmazione che gli sviluppatori dovranno riflettere.
 
-Il tempo necessario per creare un prototipo può variare notevolmente, a seconda dell'ambito e della precisione dell'aspetto del risultato finale. Un prototipo informale potrebbe indicare alcune ore di lavoro di una sola persona; un lavoro più organizzato può coinvolgere settimane di lavoro da un intero team.
+Il tempo necessario per creare un prototipo può variare notevolmente, a seconda dell'ambito e della precisione del risultato finale. Un prototipo informale può significare poche ore di lavoro da parte di una sola persona. Un impegno più organizzato può comportare settimane di lavoro da parte di un intero team.
 
-## <a name="where-should-the-focus-be"></a>Dove si trova lo stato attivo?
+## <a name="where-should-the-focus-be"></a>Dove deve essere lo stato attivo?
 
-In un prototipo, compilare solo la maggior parte della progettazione necessaria. È possibile fare in modo che i pulsanti non funzionino o che il testo non venga mai aggiornato. Fino a quando le interazioni richieste possono essere rilevate, è bene usare Smoke e Mirrors per il resto. Di seguito sono riportati alcuni motivi per cui è necessario concentrarsi attentamente sulle attività:
+In un prototipo compilare solo la maggior parte della progettazione necessaria. È possibile avere pulsanti che non funzionano o testo che non viene mai aggiornato. Fino a quando possono essere riscontrate le interazioni necessarie, è possibile usare lo smoke e i mirror per il resto. Ecco alcuni motivi per cui è necessario concentrarsi con attenzione:
 
 -   Costo della compilazione del prototipo.
 
-    Il costo necessario per la creazione del prototipo dovrebbe essere ridotto al minimo. La sfida per la creazione di prototipi consiste nel riconoscere l'investimento minimo necessario per rispondere in modo efficace alle domande sul progetto. Questo è il punto in cui gli studi di usabilità sono essenziali, perché identificano chiaramente le parti dell'interfaccia utente che richiedono la maggior parte del lavoro. Anche senza gli studi sull'usabilità, definire chiaramente quali problemi degli utenti vengono risolti o quali attività sono state migliorate con la progettazione nel prototipo.
+    Il costo necessario per la creazione del prototipo deve essere ridotto al minimo. La sfida con la creazione di prototipi consiste nel riconoscere l'investimento minimo necessario per rispondere in modo efficace alle domande sulla progettazione. Questo è il punto in cui gli studi sull'usabilità sono fondamentali, perché identificano chiaramente le parti dell'interfaccia utente che necessitano della maggior parte del lavoro. Anche senza studi sull'usabilità, definire chiaramente quali problemi degli utenti vengono risolti o quali attività vengono migliorate, con la progettazione nel prototipo.
 
 -   Durata limitata.
--   I prototipi dovrebbero avere durate chiaramente definite. L'obiettivo finale è una presentazione in una riunione del team? Una riunione di revisione esecutiva? Una verifica delle specifiche? Uno studio sull'usabilità? Identificazione della soluzione che risolve un problema utente Una volta soddisfatte le esigenze di questi obiettivi specifici, è consigliabile riservare il prototipo. Il concetto di base è che il codice o le bitmap generate in un prototipo rimarranno indietro. Potrebbero esserci eccezioni in cui il codice o gli oggetti visivi risiedono nel prodotto, ma l'aspettativa dovrebbe essere che questo non sia il caso.
--   Rischio di sovraccaricare il team.
+-   I prototipi devono avere durate chiaramente definite. L'obiettivo finale è una presentazione in una riunione del team? Una riunione di revisione dei dirigenti? Una revisione delle specifiche? Uno studio di usabilità? Identificare che la progettazione risolve un problema dell'utente? Una volta soddisfatte le esigenze per questi obiettivi specifici, il prototipo deve essere accantonato. La mentalità di base è che il codice o le bitmap generate in un prototipo verranno lasciati indietro. Potrebbero esserci eccezioni in cui il codice o gli oggetti visivi si trova nel prodotto, ma l'aspettativa dovrebbe essere che questo non sia il caso.
+-   Rischio di sorvolare il team.
 
-    La visualizzazione di prototipi per sviluppatori e colleghi può risultare complessa. Un prototipo troppo complesso o elaborato, che sfoggia oggetti visivi straordinari e animazioni, può sopraffare gli utenti. È necessario avere sempre un senso per quanto riguarda la velocità e la quantità di prototipi che devono essere presi in considerazione.
+    La visualizzazione di prototipi per sviluppatori e colleghi può essere difficile. Un prototipo troppo complesso o elaborato, oggetti visivi straordinari e animazioni straordinari, può sovraccaricare le persone. Avere sempre un'idea della distanza da fare e della quantità del prototipo da prendere in considerazione.
 
-## <a name="what-is-the-scope"></a>Qual è l'ambito?
+## <a name="what-is-the-scope"></a>Che cos'è l'ambito?
 
-Poiché viene determinato lo stato attivo per il prototipo, tenere presente quanto segue:
+Poiché l'obiettivo principale dell'attività di prototipazione è determinato, considerare quanto segue:
 
--   Esigenze del cliente.
+-   Esigenze dei clienti.
 
-    Partendo da una comprensione dei problemi principali o delle esigenze degli utenti (ad esempio, un ingegnere di usabilità fornito) fornisce un'idea di quali parti della progettazione dell'interfaccia utente garantiscano la maggior parte dell'esplorazione.
+    A partire dalla comprensione dei problemi o delle esigenze principali degli utenti (ad esempio, un elemento fornito da un tecnico dell'usabilità), è possibile capire quali parti della progettazione dell'interfaccia utente sono più importanti per l'esplorazione.
 
--   Attività di studio sull'usabilità.
+-   Attività di studio dell'usabilità.
 
-    Se si crea il prototipo per uno studio di usabilità, discutere con il progettista dell'usabilità le attività specifiche che faranno parte dello studio e la progettazione intorno a tali elementi.
+    Se si crea il prototipo per uno studio sull'usabilità, discutere con il tecnico dell'usabilità quali attività specifiche saranno parte dello studio e progettare in base a tali elementi.
 
 -   Input del team.
 
-    Comunica con gli sviluppatori principali del team come le idee nel prototipo sono disponibili insieme. Ottenere un senso di base per quanto ragionevole, cosa è possibile e cosa non è più considerato per la prossima versione. In alcuni casi, si consiglia di andare oltre quello che dicono è possibile per un aspetto della progettazione se è un punto chiave e il team deve essere sottoposto a test. Tuttavia, non eseguire questa operazione con tutti gli aspetti del prototipo perché esiste una linea sottile tra il push dei limiti e il sovraccarico del team. Se il desiderio è quello di ispirare il team mostrando loro una visione per diverse versioni, è possibile procedere. Tuttavia, se il requisito prevede la definizione di modifiche specifiche per la versione successiva, concentrare gli sforzi su tali modifiche. Assicurarsi di richiamare le modifiche specifiche in modo modulare e mostrare agli sviluppatori un percorso per la compilazione delle progettazioni.
+    Parlare con gli sviluppatori principali del team quando le idee del prototipo si riuniranno. Ottenere un'idea di base di ciò che è ragionevole, ciò che è possibile e ciò che non è in considerazione per la prossima versione. In alcuni casi, valutare la possibilità di andare oltre quanto affermato per un aspetto della progettazione se si tratta di un punto chiave e il team deve essere sfidato. Tuttavia, non eseguire questa operazione con tutti gli aspetti del prototipo, perché esiste una linea fine tra il push dei limiti e il sorvolare il team. Se si vuole ispirare il team mostrando una visione per diverse versioni, è possibile farlo. Tuttavia, se il requisito è definire modifiche specifiche per la versione successiva, concentrarsi su tali modifiche. Assicurarsi di chiamare le modifiche specifiche in modo modulare e mostrare agli sviluppatori un percorso per la compilazione delle progettazioni.
 
--   Larghezza rispetto a profondità.
+-   Ampiezza e profondità.
 
-    Per i prototipi di dimensioni maggiori, c'è la considerazione aggiuntiva della larghezza e della profondità. Ogni funzionalità della progettazione può funzionare solo un po' o deve essere scelta una funzionalità per il prototipo con quasi tutte le parti e le opzioni? Provare a non eseguire entrambe le operazioni perché il risultato potrebbe essere un prototipo grande e ingombrante che è difficile da modificare e di cui è difficile eliminarlo.
+    Per i prototipi più grandi, è necessario considerare l'ampiezza e la profondità. Ogni funzionalità nella progettazione deve funzionare solo un po', o deve essere scelta una funzionalità per creare un prototipo con quasi tutti i componenti e le opzioni? Provare a non eseguire entrambe le operazioni perché il risultato potrebbe essere un prototipo grande e ingombrante difficile da modificare e difficile da buttare via.
 
 ## <a name="flexible-prototypes"></a>Prototipi flessibili
 
-Un modo per concentrare le risorse di creazione di prototipi consiste nel concentrarsi sulla progettazione intelligente. È possibile creare prototipi più efficaci consentendo a una parte del codice del prototipo di esercitare diverse idee. Anziché avere cinque prototipi diversi, provare a creare un prototipo con le opzioni per cambiare i diversi attributi del prototipo.
+Un modo per concentrare le risorse di prototipazione è concentrarsi sulla progettazione intelligente. È possibile creare prototipi più efficaci consentendo a un frammento di codice prototipo di esercitare molte idee diverse. Invece di avere cinque prototipi diversi, è consigliabile creare un prototipo con le opzioni per cambiare i diversi attributi del prototipo.
 
-La barra degli strumenti è posizionata a sinistra o in alto? È necessario visualizzare 10 elementi nell'home page o 20? Un prototipo valido dispone di un pannello Opzioni incorporato che consente di modificare i parametri dell'aspetto o del funzionamento del prototipo. Mantenendo i pannelli delle opzioni nascosti nel prototipo, provare a evitare che un partecipante all'usabilità li ritrovi accidentalmente durante un test.
+La barra degli strumenti deve trovarsi a sinistra o in alto? È consigliabile visualizzare 10 elementi home page o 20? Un buon prototipo ha una sorta di pannello di opzioni incorporato che consente di modificare i parametri dell'aspetto o del funzionamento del prototipo. Mantenere questi pannelli di opzioni nascosti nel prototipo. Provare a evitare che un partecipante di usabilità li trovi accidentalmente durante un test.
 
-Il problema consiste nel mantenere il prototipo semplice, ma ancora utile per poter essere visualizzato a un compagno di squadra, è possibile dimostrare diverse opzioni ed è possibile ottenere commenti e suggerimenti.
+La sfida consiste nel mantenere il prototipo semplice, ma comunque sufficientemente utile da poterlo mostrare a un membro del team, è possibile dimostrare opzioni diverse e ottenere commenti e suggerimenti.
 
-## <a name="beta-vs-prototype"></a>Beta rispetto a Prototype
+## <a name="beta-vs-prototype"></a>Confronto tra beta e prototipo
 
-Le versioni beta non sono qualificate come prototipi, perché si tratta di attività di progettazione complete. Se viene rilevato un errore critico in una funzionalità di una versione beta, è improbabile che venga ignorato, anche se potrebbe essere il migliore interesse del prodotto. Gli sviluppatori, i tester e i progettisti hanno già investito molto tempo e la pressione per vivere con decisioni negative è molto elevata. Le versioni beta sono certamente utili per individuare bug e difetti, ma sono raramente utili per eseguire studi controllati sul valore di specifiche direzioni di progettazione.
+Le versioni beta non sono qualificate come prototipi, perché sono attività di progettazione complete. Se viene rilevato un errore critico in una funzionalità di una versione beta, è improbabile che venga eliminato, anche se potrebbe essere nell'interesse del prodotto. Gli sviluppatori, i tester e i progettisti hanno già investito molto tempo e la pressione per convivere con decisioni non corrette è molto elevata. Le versioni beta sono sicuramente utili per trovare bug e difetti, ma raramente sono utili per eseguire studi controllati del valore di specifiche direzioni di progettazione.
 
 ## <a name="tools-and-technologies"></a>Tools and Technologies
 
-Sono disponibili diversi strumenti e tecnologie che è possibile utilizzare per la creazione di prototipi, ciascuno dei quali presenta vantaggi e svantaggi. Prendere in considerazione il tipo di lavoro di progettazione sottoposto a prototipo e gli obiettivi del tentativo di creazione di prototipi prima di decidere quale strumento o tecnologia è quello più adatto.
+Esistono diversi strumenti e tecnologie che possono essere usati per creare prototipi, ognuno dei quali presenta vantaggi e svantaggi. Prendere in considerazione il tipo di lavoro di progettazione che viene prototipato e gli obiettivi della creazione di prototipi prima di decidere quale strumento o tecnologia è quello giusto.
 
 -   Microsoft Visual Basic o C#.
 
-    Si tratta della tecnologia più veloce per la creazione di prototipi di interfaccia utente in stile Windows. L'oggetto Web browser facilita l'integrazione di HTMLUI con componenti di tipo Windows standard. Sebbene sia vero che uno sviluppatore che ha sperimentato Microsoft Visual Studio potrebbe essere in grado di generare l'interfaccia utente più velocemente in C/C++, questo crea la tentazione di riutilizzare il codice dal prototipo dell'interfaccia utente nel codice di produzione. Il reparto IT accetta la disciplina per riconoscere che gli obiettivi di un prototipo di interfaccia utente rapido e Dirty sono fortemente divergenti rispetto alla progettazione di alta qualità. Verificare che il tipo di codice da scrivere sia chiaro e che il team o il Manager conosca cosa verrà rimosso.
+    Si tratta della tecnologia più veloce per la creazione di prototipi Windows di interfaccia utente in stile. L Web browser o object semplifica l'integrazione di HTMLUI con componenti Windows standard. Anche se è vero che uno sviluppatore esperto di Microsoft Visual Studio potrebbe essere in grado di generare l'interfaccia utente più velocemente in C/C++, ciò crea la tentazione di riutilizzare il codice dal prototipo dell'interfaccia utente nel codice di produzione. È importante riconoscere che gli obiettivi di un prototipo di interfaccia utente rapido e dirty sono altamente divergenti dalla progettazione di alta qualità. Assicurarsi che sia chiaro quale tipo di codice viene scritto e che il team o il responsabile capisca cosa verrà eliminato.
 
 -   Microsoft Expression Blend + SketchFlow.
 
-    SketchFlow è uno strumento visivo per la progettazione, la creazione di prototipi e la creazione di interfacce utente sofisticate per le applicazioni desktop e Web di Windows Presentation Foundation (WPF) e Microsoft Silverlight. Le applicazioni vengono compilate disegnando forme, disegnando controlli quali pulsanti e caselle di riepilogo, facendo in modo che le parti di un'applicazione rispondano ai clic del mouse e ad altri input utente e applicando lo stile a tutti gli elementi.
+    SketchFlow è uno strumento visivo per la progettazione, la creazione di prototipi e la creazione di interfacce utente sofisticate per applicazioni desktop e Web Windows Presentation Foundation (WPF) e Microsoft Silverlight. Le applicazioni vengono create disegnando forme, disegnando controlli come pulsanti e caselle di riepilogo, rendendo le parti di un'applicazione che rispondono ai clic del mouse e ad altri input dell'utente e stilizzano tutti gli elementi in modo che siano univoci.
 
 -   Adobe Director o Adobe Flash.
 
-    Director è un diffuso strumento di prototipazione dell'interfaccia utente tra le finestre di progettazione. È particolarmente utile per le progettazioni GUI multimediali o non standard o per i prototipi che richiedono animazioni significative. Si tratta di una flessibilità elevata che rende più complessa l'interfaccia utente in stile interfaccia utente rispetto a Visual Basic. Tuttavia, un utente esperto del Director può generare Windows o un'interfaccia utente Web senza difficoltà.
+    Director è un diffuso strumento di prototipazione dell'interfaccia utente tra le finestre di progettazione. È particolarmente utile per le progettazioni gui multimediali o non standard o per i prototipi che richiedono un'animazione significativa. La flessibilità elevata lo rende complicato per l'interfaccia utente di tipo interfaccia utente rispetto a Visual Basic. Tuttavia, un utente esperto di Director può generare Windows'interfaccia utente Web senza difficoltà.
 
 -   HTML.
 
-    FrontPage e altri editor HTML consentono la creazione rapida di prototipi semplici. Per esprimere un'idea, spesso è possibile creare bitmap che illustrino una sequenza di interazione dell'utente e inserirle in FrontPage. Queste immagini possono essere usate per simulare la modalità di interazione con la progettazione. JScript e DHTML si riportano a un altro livello, consentendo una logica e un'interazione molto sofisticate. Se si usa HTML per creare un prototipo di un sito Web, l'avviso appena descritto per C/C++ si applica anche in questo caso, non rientrare nella trappola del codice prototipo rapido con la progettazione della qualità di produzione.
+    FrontPage e altri editor HTML consentono la creazione rapida di prototipi semplici. Per esprimere un'idea, è spesso possibile creare bitmap che illustrano una sequenza di interazione dell'utente e posizionarle in FrontPage. Queste immagini possono essere usate per simulare come interagire con la progettazione. JScript e DHTML prendono le cose a un altro livello, consentendo una logica e un'interazione molto sofisticate. Se si usa HTML per creare un prototipo di un sito Web, l'avviso appena descritto per C/C++ si applica anche in questo caso, senza lasciarsi invasi dalla confusione del codice rapido del prototipo con la progettazione di qualità della produzione.
 
- 
+ 
 
- 
+ 
 
 
 

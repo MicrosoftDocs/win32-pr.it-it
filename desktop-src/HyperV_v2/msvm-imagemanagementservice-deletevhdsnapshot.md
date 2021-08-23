@@ -1,7 +1,7 @@
 ---
-description: Elimina una voce di snapshot VHD all'interno di un file di set VHD.
+description: Elimina una voce snapshot del disco rigido virtuale all'interno di un file di set di dischi rigidi virtuali.
 ms.assetid: 37d55a5f-209d-42ce-8f69-8b494055e263
-title: Metodo DeleteVHDSnapshot della classe Msvm_ImageManagementService
+title: Metodo DeleteVHDSnapshot della Msvm_ImageManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5c7f3f115825aedb3a21a8f33326a712c52e0780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45a15b03b3ca26375ef0a563981cb9405c4397f355735c173e105029959d8282
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522661"
 ---
-# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Metodo DeleteVHDSnapshot della classe MSVM \_ servizio
+# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Metodo DeleteVHDSnapshot della classe Msvm \_ ImageManagementService
 
-Elimina una voce di snapshot VHD all'interno di un file di set VHD.
+Elimina una voce snapshot del disco rigido virtuale all'interno di un file di set di dischi rigidi virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ uint32 DeleteVHDSnapshot(
 
 <dl> <dt>
 
-*VHDSetPath* \[ in\]
+*VHDSetPath* \[ Pollici\]
 </dt> <dd>
 
-Stringa contenente il percorso del file di set VHD contenente lo snapshot in questione.
+Stringa contenente il percorso del file del set di dischi rigidi virtuali contenente lo snapshot in questione.
 
 </dd> <dt>
 
-*SnapshotID* \[ in\]
+*SnapshotId* \[ Pollici\]
 </dt> <dd>
 
-GUID che rappresenta l'ID dello snapshot per la voce dello snapshot del disco rigido virtuale da eliminare.
+GUID che rappresenta l'ID snapshot per la voce dello snapshot del disco rigido virtuale da eliminare.
 
 </dd> <dt>
 
-*PersistReferenceSnapshot* \[ in\]
+*PersistReferenceSnapshot* \[ Pollici\]
 </dt> <dd>
 
-Indica se un record di snapshot di solo riferimento deve essere reso permanente dopo l'eliminazione dello snapshot.
+Indica se un record di snapshot di solo riferimento deve essere reso persistente dopo l'eliminazione dello snapshot.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento al processo (può essere null se l'attività è stata completata).
+Riferimento al processo (può essere Null se l'attività viene completata).
 
 </dd> </dl>
 
@@ -76,10 +76,10 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -91,25 +91,25 @@ Questo metodo restituisce uno dei valori seguenti:
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -124,10 +124,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

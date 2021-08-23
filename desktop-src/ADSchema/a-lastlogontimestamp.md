@@ -1,10 +1,10 @@
 ---
-title: Attributo Last-Logon-timestamp
-description: Indica l'ora dell'ultimo accesso dell'utente al dominio.
+title: Attributo Last-Logon-Timestamp
+description: Ora dell'ultimo accesso dell'utente al dominio.
 ms.assetid: 6c94bccb-1e0a-421c-a00c-5f6e6389690f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Last-Logon-timestamp
+- Schema AD dell'attributo Last-Logon-Timestamp
 - Schema AD dell'attributo lastLogonTimestamp
 topic_type:
 - apiref
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6d7668891d008e1b16b7dc148462498e9210b4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fbaea56a7456a46b7583633992f77e6fd836276151e6c9f6b792ba1abdd36b4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322151"
 ---
-# <a name="last-logon-timestamp-attribute"></a>Attributo Last-Logon-timestamp
+# <a name="last-logon-timestamp-attribute"></a>Attributo Last-Logon-Timestamp
 
-Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene archiviato come intero grande che rappresenta il numero di intervalli di 100-nanosecondi a partire dal 1 ° gennaio 1601 (UTC). Ogni volta che un utente esegue l'accesso, il valore di questo attributo viene letto dal controller di dominio. Se il valore è precedente \[ `current_time - msDS-LogonTimeSyncInterval` \] , il valore viene aggiornato. L'aggiornamento iniziale dopo la generazione del livello di funzionalità del dominio viene calcolato come 14 giorni meno la percentuale casuale di 5 giorni.
+Ora dell'ultimo accesso dell'utente al dominio. Questo valore viene archiviato come intero grande che rappresenta il numero di intervalli di 100 nanosecondi dal 1° gennaio 1601 (UTC). Ogni volta che un utente accede, il valore di questo attributo viene letto dal controller di dominio. Se il valore è \[ `current_time - msDS-LogonTimeSyncInterval` \] precedente, il valore viene aggiornato. L'aggiornamento iniziale dopo l'aumento del livello di funzionalità del dominio viene calcolato come 14 giorni meno la percentuale casuale di 5 giorni.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------------------------------------------------------|
-| CN                | Ultimo accesso-timestamp                                                                                                   |
-| LDAP-Display-Name | lastLogonTimestamp                                                                                                     |
+| CN                | Last-Logon-Timestamp                                                                                                   |
+| Ldap-Display-Name | lastLogonTimestamp                                                                                                     |
 | Dimensione              | \-                                                                                                                     |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                                                                       |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                                                                                       |
 | Frequenza di aggiornamento  | Quando l'utente esegue l'accesso e se questo valore è precedente all'ora corrente meno il valore di msDS-LogonTimeSyncInterval. |
 | Attribute-Id      | 1.2.840.113556.1.4.1696                                                                                                |
-| System-ID-GUID    | c0e20a04-0e5a-4ff3-9482-5efeaecd7060                                                                                   |
-| Sintassi            | [**Interval**](s-interval.md)                                                                                         |
+| System-Id-Guid    | c0e20a04-0e5a-4ff3-9482-5efeaecd7060                                                                                   |
+| Sintassi            | [**Intervallo**](s-interval.md)                                                                                         |
 
 
 
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Vero                                                              |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-associabile-oggetto**](c-msds-bindableobject.md)<br/> |
+| Classi usate in        | [**Ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica l'ora dell'ultimo accesso dell'utente al dominio. Questo valore viene arc
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

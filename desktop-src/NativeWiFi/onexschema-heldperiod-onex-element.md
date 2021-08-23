@@ -1,5 +1,5 @@
 ---
-description: Specifica l'intervallo di tempo, in secondi, in cui un client non tenterà di nuovo l'autenticazione dopo un tentativo di autenticazione non riuscito.
+description: Specifica il periodo di tempo, in secondi, durante il quale un client non tenterà nuovamente l'autenticazione dopo un tentativo di autenticazione non riuscito.
 ms.assetid: a6b32e88-da36-4aea-a01d-f5f7bc37d171
 title: Elemento heldPeriod (OneX)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f8664543a9ea5b0f3b290168129e589e9ccd68ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a2009ac8518d114353e3323b97c4ea57c54fc801447c375641b8f6bbd1b2bea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684852"
 ---
 # <a name="heldperiod-onex-element"></a>Elemento heldPeriod (OneX)
 
-L'elemento heldPeriod (OneX) specifica il periodo di tempo, in secondi, in cui un client non tenterà di nuovo l'autenticazione dopo un tentativo di autenticazione non riuscito.
+L'elemento heldPeriod (OneX) specifica l'intervallo di tempo, in secondi, durante il quale un client non tenterà nuovamente l'autenticazione dopo un tentativo di autenticazione non riuscito.
 
-Questo elemento è facoltativo. Quando heldPeriod non viene specificato in un profilo, viene utilizzato un valore di 1 secondo.
+Questo elemento è facoltativo. Se heldPeriod non è specificato in un profilo, viene usato un valore di 1 secondo.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -44,7 +44,7 @@ Questo elemento è facoltativo. Quando heldPeriod non viene specificato in un pr
 </xs:element>
 ```
 
-L'elemento **heldPeriod** è definito dall'elemento [**Onex**](onexschema-onex-element.md) .
+**L'elemento heldPeriod** è definito dall'elemento [**OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ L'elemento **heldPeriod** è definito dall'elemento [**Onex**](onexschema-onex-e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ L'elemento **heldPeriod** è definito dall'elemento [**Onex**](onexschema-onex-e
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

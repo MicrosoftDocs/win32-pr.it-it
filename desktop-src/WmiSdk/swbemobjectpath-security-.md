@@ -1,8 +1,8 @@
 ---
-description: La proprietà di sicurezza dell'oggetto SWbemObjectPath viene utilizzata per ottenere o impostare i componenti di sicurezza di un percorso dell'oggetto.
+description: La proprietà Security dell'oggetto SWbemObjectPath viene usata per ottenere o impostare i componenti di sicurezza di un percorso oggetto.
 ms.assetid: 26e5e990-3b78-41b6-83c4-ba0d8b0d2f00
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectPath.Security_ (wbemdisp. h)
+title: SWbemObjectPath.Security_ proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 000f3f5e334ef0eba3dbd687d7bdc4b594442305
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed473049de6973da077b1ccfabdd3fe752ff4e5edd13f4a49a7c5589309ae81e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639971"
 ---
-# <a name="swbemobjectpathsecurity_-property"></a>Proprietà SWbemObjectPath. Security \_
+# <a name="swbemobjectpathsecurity_-property"></a>Proprietà SWbemObjectPath.Security \_
 
-La proprietà di **sicurezza** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) viene utilizzata per ottenere o impostare i componenti di sicurezza di un percorso dell'oggetto. Si noti che non viene usato per impostare gli attributi di sicurezza dell'oggetto **SWbemObjectPath** . Viene utilizzato solo per rappresentare i componenti di sicurezza del percorso di un oggetto [**SWbemLocator**](swbemlocator.md) . Questa proprietà è un oggetto [**SWbemSecurity**](swbemsecurity.md) .
+La **proprietà Security** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) viene usata per ottenere o impostare i componenti di sicurezza di un percorso oggetto. Si noti che non viene usato per impostare gli attributi di sicurezza **dell'oggetto SWbemObjectPath** stesso. Viene usato solo per rappresentare i componenti di sicurezza del percorso per un [**oggetto SWbemLocator.**](swbemlocator.md) Questa proprietà è un [**oggetto SWbemSecurity.**](swbemsecurity.md)
 
 > [!Note]  
-> Impostando la proprietà di [**\_ sicurezza**](swbemobject-security-.md) di un oggetto [**SWbemObjectPath**](swbemobjectset.md) su **null** , viene concesso l'accesso illimitato a tutti gli utenti in qualsiasi momento. Per ulteriori informazioni, vedere [**SWbemSecurity**](swbemsecurity.md).
+> [**L'impostazione \_ della**](swbemobject-security-.md) proprietà Security di [**un oggetto SWbemObjectPath**](swbemobjectset.md) su **NULL** concede sempre l'accesso illimitato a tutti gli utenti. Per altre informazioni, vedere [**SWbemSecurity**](swbemsecurity.md).
 
  
 
-Per altre informazioni, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per altre informazioni, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -55,11 +55,11 @@ SWbemObjectPath.Security_ As Object
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 
@@ -73,7 +73,7 @@ SWbemObjectPath.Security_ As Object
 [Creazione di un'applicazione o di uno script WMI](creating-a-wmi-application-or-script.md)
 </dt> <dt>
 
-[Impostazione della \_ sicurezza del processo dell'applicazione client \_](setting-client-application-process-security.md)
+[Impostazione della sicurezza \_ del processo \_ dell'applicazione client](setting-client-application-process-security.md)
 </dt> </dl>
 
  

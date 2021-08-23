@@ -1,10 +1,10 @@
 ---
-title: Attributo COM-InterfaceID
-description: Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell'applicazione.
+title: COM-InterfaceID attributo
+description: Questo attributo archivia l'elenco di interfacce implementate in questo pacchetto dell'applicazione.
 ms.assetid: 56bdab1e-620b-4677-8307-14a7b24aa49e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD COM-InterfaceID attribute
+- COM-InterfaceID schema AD dell'attributo
 - Schema AD dell'attributo cOMInterfaceID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7639011aaa0c6a03c2ef9efbc774fe6bff1d9db1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c599ae6e5e8cc969d69f28b53d0ad855928970c2a5de031209e860c9b1aad602
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509611"
 ---
-# <a name="com-interfaceid-attribute"></a>Attributo COM-InterfaceID
+# <a name="com-interfaceid-attribute"></a>COM-InterfaceID attributo
 
-Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell'applicazione.
+Questo attributo archivia l'elenco di interfacce implementate in questo pacchetto dell'applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | COM-InterfaceID                                                                  |
-| LDAP-Display-Name | cOMInterfaceID                                                                   |
+| Ldap-Display-Name | cOMInterfaceID                                                                   |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Aggiorna privilegio  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.20                                                            |
-| System-ID-GUID    | bf96793c-0de6-11d0-a285-00aa003049e2                                             |
+| System-Id-Guid    | bf96793c-0de6-11d0-a285-00aa003049e2                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia l'elenco di interfacce implementate nel pacchetto dell
 | ID collegamento                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                          |
-| È a valore singolo       | Falso                                                                                                                                                                          |
+| Is-Single-Valued       | Falso                                                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> [**Libreria di tipi**](c-typelibrary.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> [**Libreria dei tipi**](c-typelibrary.md)<br/> |
 
 
 

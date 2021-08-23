@@ -4,16 +4,16 @@ ms.assetid: 036fb0ee-8165-41a3-b41a-2e9bf035a6a6
 title: Decodificatore AAC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7554d6bc4a13fe1e4af4c51e75f1fe8a0bd38286
-ms.sourcegitcommit: 3a0a8a8fdce560a81a27789a1c04172ed96147b1
+ms.openlocfilehash: 0bdde0611a3c567f446a2d42560e083cd2f5ade4f166d98a54096241ee990960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112436585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606881"
 ---
 # <a name="aac-decoder"></a>Decodificatore AAC
 
-Il Microsoft Media Foundation decodificatore AAC è una [trasformazione Media Foundation](media-foundation-transforms.md) che decodifica i profili AAC (Advanced Audio Coding) e HE-AAC (High Efficiency AAC) seguenti:
+Il Microsoft Media Foundation decodificatore AAC è una trasformazione [Media Foundation](media-foundation-transforms.md) che decodifica i profili AAC (Advanced Audio Coding) e HE-AAC (High Efficiency AAC) seguenti:
 
 -   Profilo MPEG-2 AAC Low Complexity (LC) (multicanale).
 -   MPEG-4 HE-AAC v1 (multicanale) con core AAC-LC.
@@ -39,14 +39,14 @@ Il decodificatore AAC supporta i sottotipi audio seguenti:
 
 | Subtype                     | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Intestazione       |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| **MFAudioFormat_AAC**      | AAC non elaborato o AAC ADTS.<br/> Per questo sottotipo, il tipo di supporto fornisce la frequenza di campionamento e il numero di canali prima dell'applicazione di strumenti SBR (Spectral Band Replication) e stereo parametrico (PS), se presenti. L'effetto dello strumento SBR è raddoppiare la frequenza di campionamento decodificata rispetto alla frequenza di campionamento AAC-LC principale. L'effetto dello strumento PS è decodificare stereo da un flusso AAC-LC core monocanale.<br/> Questo sottotipo equivale **a MEDIASUBTYPE_MPEG_HEAAC**, definito in wmcodecdsp.h. Vedere [GUID sottotipo audio](audio-subtype-guids.md). <br/> [L'origine file MPEG-4 e](mpeg-4-file-source.md) il parser ADTS generano questo sottotipo. <br/> | mfapi.h      |
-| **MEDIASUBTYPE_RAW_AAC1** | AAC non elaborato. <br/> Questo sottotipo viene usato per AAC contenuto in un file AVI con il tag di formato audio uguale a WAVE_FORMAT_RAW_AAC1 (0x00FF). <br/> Per questo sottotipo, il tipo di supporto fornisce la frequenza di campionamento e il numero di canali dopo l'applicazione degli strumenti SBR e PS, se presenti.<br/>                                                                                                                                                                                                                                                                                                                                                                                      | wmcodecdsp.h |
+| **MFAudioFormat_AAC**      | AAC non elaborato o AAC ADTS.<br/> Per questo sottotipo, il tipo di supporto fornisce la frequenza di campionamento e il numero di canali prima dell'applicazione degli strumenti SBR (Spectral Band Replication) e Parametric Stereo (PS), se presenti. L'effetto dello strumento SBR è il doppio della frequenza di campionamento decodificata rispetto alla frequenza di campionamento AAC-LC principale. L'effetto dello strumento PS è decodificare stereo da un flusso AAC-LC core monocanale.<br/> Questo sottotipo equivale **MEDIASUBTYPE_MPEG_HEAAC**, definito in wmcodecdsp.h. Vedere [GUID del sottotipo audio](audio-subtype-guids.md). <br/> [L'origine file MPEG-4 e](mpeg-4-file-source.md) il parser ADTS generano questo sottotipo. <br/> | mfapi.h      |
+| **MEDIASUBTYPE_RAW_AAC1** | AAC non elaborato. <br/> Questo sottotipo viene usato per AAC contenuto in un file AVI con il tag del formato audio uguale a WAVE_FORMAT_RAW_AAC1 (0x00FF). <br/> Per questo sottotipo, il tipo di supporto fornisce la frequenza di campionamento e il numero di canali dopo l'applicazione degli strumenti SBR e PS, se presenti.<br/>                                                                                                                                                                                                                                                                                                                                                                                      | wmcodecdsp.h |
 
 
 
  
 
-Per configurare il decodificatore AAC, impostare gli attributi seguenti sul tipo di supporto di input.
+Per configurare il decodificatore AAC, impostare gli attributi seguenti nel tipo di supporto di input.
 
 
 
@@ -77,7 +77,7 @@ Per configurare il decodificatore AAC, impostare gli attributi seguenti sul tipo
 <tr class="odd">
 <td><a href="mf-mt-aac-audio-profile-level-indication.md">MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION</a></td>
 <td>Profilo e livello audio. <br/></td>
-<td>facoltativo. Si applica solo <strong>a MFAudioFormat_AAC</strong>. <br/> Il valore di questo attributo è il campo <strong>audioProfileLevelIndication,</strong> come definito da ISO/IEC 14496-3. <br/> Se sconosciuto, impostare su zero o 0xFE ( &quot; nessun profilo audio specificato &quot; ).<br/></td>
+<td>facoltativo. Si applica solo <strong>a MFAudioFormat_AAC</strong>. <br/> Il valore di questo attributo è il campo <strong>audioProfileLevelIndication,</strong> come definito da ISO/IEC 14496-3. <br/> Se sconosciuto, impostare su zero o 0xFE ( &quot; nessun profilo audio &quot; specificato).<br/></td>
 </tr>
 <tr class="even">
 <td><a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a></td>
@@ -85,10 +85,10 @@ Per configurare il decodificatore AAC, impostare gli attributi seguenti sul tipo
 <td>Si applica solo <strong>a MFAudioFormat_AAC</strong>. Il decodificatore supporta i tipi di payload seguenti: <br/>
 <ul>
 <li>0: AAC non elaborato. Il flusso contiene raw_data_block() solo elementi, come definito da MPEG-2.</li>
-<li>1: ADTS. Il flusso contiene un adts_sequence(), come definito da MPEG-2. È consentito raw_data_block() per adts_frame().</li>
+<li>1: ADTS. Il flusso contiene un adts_sequence(), come definito da MPEG-2. È consentita una sola raw_data_block() per adts_frame().</li>
 <li>3: flusso di trasporto audio con un livello di sincronizzazione (LOAS) e un livello multiplex (LATM). Dei tre tipi di LOAS, è supportato <strong>solo AudioSyncStream.</strong> Il livello multiplex è <strong>AudioMuxElement,</strong>limitato a un programma audio e a un livello.</li>
 </ul>
-<a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a> facoltativo. Se questo attributo non viene specificato, viene usato il valore predefinito 0, che specifica che il flusso contiene solo raw_data_block elementi.<br/></td>
+<a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a> facoltativo. Se questo attributo non viene specificato, viene usato il valore predefinito 0, che specifica che il flusso contiene raw_data_block elementi.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a></td>
@@ -115,7 +115,7 @@ Per configurare il decodificatore AAC, impostare gli attributi seguenti sul tipo
 <td>Informazioni aggiuntive sul formato.</td>
 <td>Il valore di questo attributo dipende dal sottotipo.<br/>
 <ul>
-<li><strong>MFAudioFormat_AAC</strong>: contiene la parte della struttura <a href="/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo"><strong>HEAACWAVEINFO</strong></a> visualizzata dopo la struttura <strong>WAVEFORMATEX,</strong> ovvero dopo il <strong>membro wfx.</strong> Questi dati sono seguiti dai dati AudioSpecificConfig(), come definito da ISO/IEC 14496-3.</li>
+<li><strong>MFAudioFormat_AAC</strong>: contiene la parte della struttura <a href="/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo"><strong>HEAACWAVEINFO</strong></a> visualizzata dopo la struttura <strong>WAVEFORMATEX,</strong> ovvero dopo il <strong>membro wfx.</strong> Questo è seguito dai dati AudioSpecificConfig(), come definito da ISO/IEC 14496-3.</li>
 <li><strong>MEDIASUBTYPE_RAW_AAC1</strong>: contiene i dati AudioSpecificConfig(). Questi dati devono essere visualizzati. In caso contrario, il decodificatore rifiuterà il tipo di supporto.</li>
 </ul>
 La lunghezza dei dati AudioSpecificConfig() è di 2 byte per AAC-LC o HE-AAC con segnalazione implicita di SBR/PS. Si tratta di più di 2 byte per HE-AAC con segnalazione esplicita di SBR/PS.<br/> Il valore di <strong>audioObjectType</strong> definito in AudioSpecificConfig() deve essere 2, che indica AAC-LC. Il valore di <strong>extensionAudioObjectType</strong> deve essere 5 per SBR o 29 per PS. <br/></td>
@@ -172,11 +172,11 @@ Il decodificatore non registra <strong>MFAudioFormat_AAC</strong> come tipo di o
 Se il flusso di input contiene più di due canali, il decodificatore AAC offre due opzioni per il formato di output:
 
 -   Stessa configurazione del canale del tipo di input.
--   Ripiegato stereo.
+-   Stereo fold-down.
 
 ## <a name="format-constraints"></a>Vincoli di formato
 
-La frequenza di campionamento dell'audio decodificato deve essere una delle seguenti, dopo l'applicazione di SBR (se presente):
+La frequenza di campionamento audio decodificata deve essere una delle seguenti, dopo l'applicazione di SBR (se presente):
 
 -   8 kHz
 -   11,025 kHz
@@ -190,13 +190,13 @@ La frequenza di campionamento dell'audio decodificato deve essere una delle segu
 
 Le frequenze di campionamento superiori a 48 kHz non sono supportate.
 
-Il decodificatore supporta fino a 6 canali audio. Per ogni configurazione del parlante, il decodificatore prevede che gli elementi sintattici AAC vengano visualizzati in un determinato ordine. Nella tabella seguente sono elencate le configurazioni del parlante supportate. La terza colonna della tabella elenca gli elementi sintattici previsti e il relativo ordine, usando la notazione seguente:
+Il decodificatore supporta fino a 6 canali audio. Per ogni configurazione del parlante, il decodificatore prevede che gli elementi sintattici AAC vengano visualizzati in un determinato ordine. Nella tabella seguente sono elencate le configurazioni di voce supportate. La terza colonna della tabella elenca gli elementi sintattici previsti e il relativo ordine, usando la notazione seguente:
 
--   <SCE1>: la single_channel_element (SCE) associata al front center speaker.
--   <SCE2>: SCE associato al parlante centrale posteriore.
--   <CPE1>: channel_pair_element (CPE) associato ai front speaker.
+-   <SCE1>: la single_channel_element (SCE) associata all'altoparlante front center.
+-   <SCE2>: SCE associato all'altoparlante back center.
+-   <CPE1>: la channel_pair_element (CPE) associata ai front speaker.
 -   <CPE2>: CPE associato agli altoparlanti posteriore (o laterale)
--   <LFE>: lfe_channel_element (LFE).
+-   <LFE>: il lfe_channel_element (LFE).
 
 Per altre informazioni su questi elementi sintattici, vedere ISO/IEC 13818-7.
 
@@ -217,17 +217,17 @@ Per altre informazioni su questi elementi sintattici, vedere ISO/IEC 13818-7.
 
  
 
-Per l'AAC non elaborato, ogni esempio di input deve contenere esattamente un frame compresso AAC completo.
+Per il controllo di accesso non elaborato, ogni esempio di input deve contenere esattamente un frame compresso AAC completo.
 
-Per ADTS, ogni campione di input può contenere più fotogrammi audio, nonché fotogrammi parziali, che possono estendersi su limiti di campionamento. Ogni intestazione ADTS deve essere seguita da un frame AAC.
+Per ADTS, ogni esempio di input può contenere più fotogrammi audio, nonché fotogrammi parziali, che possono estendersi oltre i limiti del campione. Ogni intestazione ADTS deve essere seguita da un frame AAC.
 
-Il decodificatore AAC non supporta gli elementi seguenti:
+Il decodificatore AAC non supporta i seguenti elementi:
 
--   Profilo principale, Sample-Rate profilo scalabile (SRS) o Profilo di stima a lungo termine (LTP).
--   Formato di interscambio dati audio (ADIF).
+-   Profilo principale, Sample-Rate profilo scalabile (SRS) o long term prediction (LTP).
+-   Formato di interscambio di dati audio (ADIF).
 -   Flussi di trasporto LATM/LAOS.
 -   Elementi del canale di accoppiamento (CCE). Il decodificatore ignora i fotogrammi audio con CCE.
--   AAC-LC con dimensioni del frame di 960 campioni. Sono supportati solo 1024 frame di esempio.
+-   AAC-LC con una dimensione del fotogramma di 960 campioni. Sono supportati solo 1024 fotogrammi di esempio.
 
 ## <a name="transform-attributes"></a>Attributi di trasformazione
 
@@ -253,16 +253,16 @@ Il decodificatore AAC implementa il [**metodo IMFTransform::GetAttributes.**](/w
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/DirectShow/avdecaudiodualmonorepromode-property"><strong>CODECAPI_AVDecAudioDualMonoReproMode</strong></a></td>
-<td>Specifica la modalità di riproduzione dell'audio doppio mono da parte del decodificatore. Il valore predefinito è <strong>eAVDecAudioDualMonoReproMode_LEFT_MONO</strong>: Output Ch1 per gli altoparlanti sinistro e destro. <br/> Le applicazioni possono impostare questa proprietà per modificare il comportamento predefinito.<br/></td>
+<td>Specifica il modo in cui il decodificatore riproduce l'audio mono doppio. Il valore predefinito è <strong>eAVDecAudioDualMonoReproMode_LEFT_MONO</strong>: Output Ch1 per i parlanti sinistro e destro. <br/> Le applicazioni possono impostare questa proprietà per modificare il comportamento predefinito.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="mft-support-dynamic-format-change-attribute.md"><strong>MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE</strong></a></td>
-<td>Il decodificatore AAC non gestisce le modifiche di formato dinamico e deve essere scaricato o svuotato prima che venga impostato un nuovo tipo di supporto di input. Considerare questo attributo come di sola lettura. <br/>
+<td>Il decodificatore AAC non gestisce le modifiche del formato dinamico e deve essere scaricato o svuotato prima di impostare un nuovo tipo di supporto di input. Considerare questo attributo come di sola lettura. <br/>
 <blockquote>
 [!Note]<br />
 Il decodificatore AAC segnala erroneamente il valore <strong>TRUE</strong> per questo attributo.
 </blockquote>
-<br/> <br/> In Windows 7 il decodificatore segnala erroneamente il valore <strong>TRUE</strong> per questo attributo. In Windows 8, il decodificatore segnala <strong>FALSE,</strong>che è il valore corretto<br/></td>
+<br/> <br/> Nella Windows 7 il decodificatore segnala erroneamente il valore <strong>TRUE</strong> per questo attributo. In Windows 8 il decodificatore restituisce <strong>FALSE,</strong>che è il valore corretto<br/></td>
 </tr>
 </tbody>
 </table>
@@ -273,7 +273,7 @@ Il decodificatore AAC segnala erroneamente il valore <strong>TRUE</strong> per q
 
 ## <a name="example-media-types"></a>Tipi di supporti di esempio
 
-Ecco un esempio del tipo di supporto di input necessario per un flusso AAC-LC a 6 canali a 48 kHz, usando un payload AAC non elaborato:
+Di seguito è riportato un esempio del tipo di supporto di input necessario per un flusso AAC-LC a 6 canali a 6 canali a 48 kHz, usando un payload AAC non elaborato:
 
 
 
@@ -291,7 +291,7 @@ Ecco un esempio del tipo di supporto di input necessario per un flusso AAC-LC a 
 
  
 
-I primi 12 byte di [**MF_MT_USER_DATA**](mf-mt-user-data-attribute.md) corrispondono ai membri della struttura [**HEAACWAVEINFO**](/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo) seguenti:
+I primi 12 byte [**di MF_MT_USER_DATA**](mf-mt-user-data-attribute.md) corrispondono ai membri della struttura [**HEAACWAVEINFO**](/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo) seguenti:
 
 -   **wPayloadType** = 0 (AAC non elaborato)
 -   **wAudioProfileLevelIndication** = 0x2a (profilo AAC, livello 4)
@@ -306,7 +306,7 @@ Gli ultimi due byte [**MF_MT_USER_DATA**](mf-mt-user-data-attribute.md) contengo
 -   GASpecificConfig.dependsOnCoreCoder = 0 (1 bit)
 -   GASpecificConfig.extensionFlag = 0 (1 bit)
 
-Dato questo tipo di input, usare il tipo di supporto di output seguente per ottenere l'audio PCM a virgola mobile a 6 canali a 32 bit dal decodificatore:
+Dato questo tipo di input, usare il tipo di supporto di output seguente per ottenere audio PCM a virgola mobile a 6 canali a 32 bit dal decodificatore:
 
 
 
@@ -325,7 +325,7 @@ Dato questo tipo di input, usare il tipo di supporto di output seguente per otte
 
  
 
-Se è installato Il supplemento per l'aggiornamento della piattaforma per Windows Vista, il decodificatore audio AAC è disponibile in Windows Vista, ma è accessibile solo in Windows Vista usando il lettore [di origine](source-reader.md).
+Se è installato platform update supplement for Windows Vista, il decodificatore audio AAC è disponibile in Windows Vista, ma è accessibile in Windows Vista solo tramite il lettore di origine [.](source-reader.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -333,9 +333,9 @@ Se è installato Il supplemento per l'aggiornamento della piattaforma per Window
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>                                                                                                                                                  |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/>                                                                                                                                     |
-| DLL<br/>                      | <dl> <dt>Msmpeg2adec.dll in Windows 7; </dt> <dt>MSAudDecMFT.dll in Windows 8</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                                                                                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                                                                                                     |
+| DLL<br/>                      | <dl> <dt>Msmpeg2adec.dll in Windows 7;</dt> <dt>MSAudDecMFT.dll su Windows 8</dt> </dl> |
 
 
 
@@ -352,10 +352,10 @@ Se è installato Il supplemento per l'aggiornamento della piattaforma per Window
 [Tipi di supporti audio](audio-media-types.md)
 </dt> <dt>
 
-[**Decodificatore audio MPEG-1/DD/AAC Microsoft**](/windows/desktop/DirectShow/microsoft-mpeg-1-dd-audio-decoder)
+[**Decodificatore audio Microsoft MPEG-1/DD/AAC**](/windows/desktop/DirectShow/microsoft-mpeg-1-dd-audio-decoder)
 </dt> <dt>
 
-[Supporto mpeg-4 in Media Foundation](mpeg-4-support-in-media-foundation.md)
+[Supporto MPEG-4 in Media Foundation](mpeg-4-support-in-media-foundation.md)
 </dt> <dt>
 
 [Formati multimediali supportati in Media Foundation](supported-media-formats-in-media-foundation.md)

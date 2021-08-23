@@ -1,10 +1,10 @@
 ---
-title: Sintassi Integer
-description: Rappresenta un valore intero con segno a 32 bit.
+title: Sintassi integer
+description: Rappresenta un intero con segno a 32 bit.
 ms.assetid: 5a1dc31b-42ee-44db-b9c7-ce80044bbbec
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD con sintassi Integer
+- Schema AD con sintassi integer
 topic_type:
 - apiref
 api_name:
@@ -13,27 +13,27 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3b3745de426a1b5d4d416575cfdfe579e579b23
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ec475f342266976784a1dfd108444f4dc5cf1eb07084cdd47be0376037c89052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580301"
 ---
-# <a name="integer-syntax"></a>Sintassi Integer
+# <a name="integer-syntax"></a>Sintassi integer
 
-Rappresenta un valore intero con segno a 32 bit.
+Rappresenta un intero con segno a 32 bit.
 
 
 
 | Voce | Valore |
 |--------------|---------------------------------------------------------------------------|
-| Nome         | Integer                                                                   |
+| Nome         | Intero                                                                   |
 | ID sintassi    | 2.5.5.9                                                                   |
-| ID OM        | 2                                                                         |
+| OM ID        | 2                                                                         |
 | Tipo MAPI    | LONG                                                                      |
-| Tipo di annunci     | ADSTYPE \_ Integer                                                          |
-| Tipo Variant | VT \_ I4                                                                    |
+| Tipo ADS     | ADSTYPE \_ INTEGER                                                          |
+| Tipo variant | VT \_ I4                                                                    |
 | Tipo SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 

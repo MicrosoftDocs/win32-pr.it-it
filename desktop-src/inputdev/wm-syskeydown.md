@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_SYSKEYDOWN (winuser. h)
-description: Inserito nella finestra con lo stato attivo quando l'utente preme il tasto F10 (che attiva la barra dei menu) o tiene premuto il tasto ALT, quindi preme un altro tasto.
+title: WM_SYSKEYDOWN messaggio (Winuser.h)
+description: Inviato alla finestra con lo stato attivo quando l'utente preme F10 (che attiva la barra dei menu) o tiene premuto ALT e quindi preme un altro tasto.
 ms.assetid: a3c03dbf-1be7-49ff-b931-1981786b74ce
 keywords:
-- Input della tastiera e del mouse WM_SYSKEYDOWN messaggio
+- WM_SYSKEYDOWN messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3053c5933a0388e3c8522b0d7201b491aaa4fa2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 30b1398d843711e868a6b5b96cf6a66893bf74fef1e50bfdd61fa36f81f05c13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611321"
 ---
-# <a name="wm_syskeydown-message"></a>\_Messaggio SYSKEYDOWN WM
+# <a name="wm_syskeydown-message"></a>Messaggio \_ SYSKEYDOWN WM
 
-Inserito nella finestra con lo stato attivo quando l'utente preme il tasto F10 (che attiva la barra dei menu) o tiene premuto il tasto ALT, quindi preme un altro tasto. Si verifica anche quando nessuna finestra dispone attualmente dello stato attivo della tastiera; in questo caso, il messaggio **WM \_ SYSKEYDOWN** viene inviato alla finestra attiva. La finestra che riceve il messaggio può distinguere tra questi due contesti controllando il codice del contesto nel parametro *lParam* .
+Inviato alla finestra con lo stato attivo quando l'utente preme F10 (che attiva la barra dei menu) o tiene premuto ALT e quindi preme un altro tasto. Si verifica anche quando nessuna finestra ha attualmente lo stato attivo della tastiera. In questo caso, **il \_ messaggio WM SYSKEYDOWN** viene inviato alla finestra attiva. La finestra che riceve il messaggio può distinguere tra questi due contesti controllando il codice del contesto nel *parametro lParam.*
 
 
 ```C++
@@ -39,28 +39,28 @@ Inserito nella finestra con lo stato attivo quando l'utente preme il tasto F10 (
 *wParam* 
 </dt> <dd>
 
-Codice della chiave virtuale del tasto premuto. Vedere [**codici chiave virtuale**](virtual-key-codes.md).
+Codice del tasto virtuale del tasto premuto. Vedere [**Codici di chiave virtuale.**](virtual-key-codes.md)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Il numero di ripetizioni, il codice di analisi, il flag di chiave estesa, il codice del contesto, il flag di stato precedente e il flag di stato di transizione, come illustrato nella tabella seguente.
+Il conteggio delle ripetizioni, il codice di analisi, il flag di chiave estesa, il codice di contesto, il flag di stato della chiave precedente e il flag dello stato di transizione, come illustrato nella tabella seguente.
 
 
 
 | BITS  | Significato                                                                                                                                                                                                                                                               |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | Numero di ripetizioni per il messaggio corrente. Il valore è il numero di volte in cui la sequenza di tasti viene ripetuta in modo ripetitivo a causa dell'arresto della chiave da parte dell'utente. Se la sequenza di tasti viene mantenuta abbastanza a lungo, vengono inviati più messaggi. Tuttavia, il numero di ripetizioni non è cumulativo. |
+| 0-15  | Numero di ripetizioni per il messaggio corrente. Il valore è il numero di volte in cui la sequenza di tasti viene ripetuta in modo automatico in seguito al fatto che l'utente tiene premuto il tasto. Se la pressione del tasto è sufficientemente lunga, vengono inviati più messaggi. Tuttavia, il conteggio delle ripetizioni non è cumulativo. |
 | 16-23 | Codice di analisi. Il valore dipende dall'OEM.                                                                                                                                                                                                                          |
-| 24    | Indica se la chiave è una chiave estesa, ad esempio i tasti ALT e CTRL a destra che vengono visualizzati in una tastiera migliorata 101 o 102. Il valore è 1 se è una chiave estesa; in caso contrario, è 0.                                                              |
-| 25-28 | Riservati Non usare.                                                                                                                                                                                                                                                 |
-| 29    | Codice del contesto. Il valore è 1 se il tasto ALT è premuto mentre il tasto è premuto; è 0 se il messaggio **WM \_ SYSKEYDOWN** viene inserito nella finestra attiva perché nessuna finestra dispone dello stato attivo della tastiera.                                                                  |
-| 30    | Stato precedente della chiave. Il valore è 1 se la chiave è inattiva prima dell'invio del messaggio oppure è 0 se la chiave è attiva.                                                                                                                                                    |
-| 31    | Stato di transizione. Il valore è sempre 0 per un messaggio **WM \_ SYSKEYDOWN** .                                                                                                                                                                                         |
+| 24    | Indica se il tasto è un tasto esteso, ad esempio i tasti ALT e CTRL di destra visualizzati su una tastiera avanzata di 101 o 102 tasti. Il valore è 1 se si tratta di una chiave estesa. in caso contrario, è 0.                                                              |
+| 25-28 | Riservato; non utilizzare .                                                                                                                                                                                                                                                 |
+| 29    | Codice di contesto. Il valore è 1 se il tasto ALT è premuto; è 0 se il messaggio **WM \_ SYSKEYDOWN** viene inviato alla finestra attiva perché nessuna finestra ha lo stato attivo.                                                                  |
+| 30    | Stato precedente della chiave. Il valore è 1 se la chiave non è disponibile prima dell'invio del messaggio oppure è 0 se la chiave è in alto.                                                                                                                                                    |
+| 31    | Stato della transizione. Il valore è sempre 0 per un **messaggio \_ SYSKEYDOWN WM.**                                                                                                                                                                                         |
 
-Per informazioni dettagliate, vedere [flag dei messaggi di sequenza di tasti](about-keyboard-input.md#keystroke-message-flags).
+Per altri dettagli, vedere [Flag di messaggi di sequenza di tasti.](about-keyboard-input.md#keystroke-message-flags)
 
 </dd> </dl>
 
@@ -70,15 +70,15 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) esamina la chiave specificata e genera un messaggio [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) se la chiave è Tab o ENTER.
+La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) esamina il tasto specificato e genera un messaggio [**\_ SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand) se il tasto è TAB o INVIO.
 
-Quando il codice del contesto è zero, il messaggio può essere passato alla funzione [**TranslateAccelerator**](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) , che lo gestirà come se fosse un normale messaggio chiave invece di un messaggio chiave-carattere. In questo modo è possibile utilizzare i tasti di scelta rapida con la finestra attiva anche se la finestra attiva non dispone dello stato attivo della tastiera.
+Quando il codice di contesto è zero, il messaggio può essere passato alla funzione [**TranslateAccelerator,**](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) che lo gestirà come se fosse un normale messaggio chiave anziché un messaggio di tipo carattere. In questo modo è possibile usare i tasti di scelta rapida con la finestra attiva anche se la finestra attiva non ha lo stato attivo della tastiera.
 
-A causa della ripetizione automatica, possono verificarsi più di un messaggio **WM \_ SYSKEYDOWN** prima dell'invio di un messaggio [**WM \_ SYSKEYUP**](wm-syskeyup.md) . Lo stato precedente della chiave (bit 30) può essere usato per determinare se il messaggio **WM \_ SYSKEYDOWN** indica la prima transizione verso il basso o una transizione ripetuta verso il basso.
+A causa della ripetizione automatica, possono verificarsi più messaggi **\_ SYSKEYDOWN WM** prima dell'invio di un messaggio [**\_ SYSKEYUP WM.**](wm-syskeyup.md) Lo stato precedente della chiave (bit 30) può essere usato per determinare se il messaggio **\_ WM SYSKEYDOWN** indica la prima transizione verso il basso o una transizione ripetuta verso il basso.
 
-Per le tastiere ottimizzate 101 e 102, le chiavi avanzate sono i tasti ALT e CTRL corretti nella sezione principale della tastiera; i tasti INS, CANC, HOME, END, PGSU, PGGIÙ e frecce nei cluster a sinistra del tastierino numerico; e la divisione (/) e immettere le chiavi nel tastierino numerico. Altre tastiere possono supportare il bit della chiave estesa nel parametro *lParam* .
+Per le tastiere a 101 e 102 tasti avanzate, i tasti migliorati sono i tasti ALT e CTRL di destra nella sezione principale della tastiera; i tasti INS, DEL, HOME, END, PGGIER, PGGI GIÙ e i tasti di direzione nei cluster a sinistra del tastierino numerico; e i tasti di divisione (/) e INVIO nel tastierino numerico. Altre tastiere possono supportare il bit del tasto esteso nel *parametro lParam.*
 
-Questo messaggio viene inviato anche ogni volta che l'utente preme il tasto F10 senza il tasto ALT.
+Questo messaggio viene inviato anche ogni volta che l'utente preme F10 senza il tasto ALT.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,7 +88,7 @@ Questo messaggio viene inviato anche ogni volta che l'utente preme il tasto F10 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -105,10 +105,10 @@ Questo messaggio viene inviato anche ogni volta che l'utente preme il tasto F10 
 [**TranslateAccelerator**](/windows/desktop/api/winuser/nf-winuser-translateacceleratora)
 </dt> <dt>
 
-[**\_SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
-[**\_SYSKEYUP WM**](wm-syskeyup.md)
+[**WM \_ SYSKEYUP**](wm-syskeyup.md)
 </dt> <dt>
 
 **Informazioni concettuali**

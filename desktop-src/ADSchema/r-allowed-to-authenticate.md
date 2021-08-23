@@ -1,10 +1,10 @@
 ---
-title: Consentito-autenticazione estesa a destra
-description: Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a un particolare computer o servizio.
+title: Diritto esteso Allowed-To-Authenticate
+description: Il diritto di accesso di controllo controlla chi può eseguire l'autenticazione in un determinato computer o servizio.
 ms.assetid: 265e6240-0fb5-4037-8c66-05fadc646100
 ms.tgt_platform: multiple
 keywords:
-- Consentito per autenticare lo schema AD esteso a destra
+- Schema AD con diritto esteso Allowed-To-Authenticate
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c2fca1b6f4670fd340170ed5cfd1f0160d61945
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 446a63d63751105500986c27c7a851d60146a72281ee8415bc01c5ec8c5dfa3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548831"
 ---
-# <a name="allowed-to-authenticate-extended-right"></a>Consentito-autenticazione estesa a destra
+# <a name="allowed-to-authenticate-extended-right"></a>Diritto esteso Allowed-To-Authenticate
 
-Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a un particolare computer o servizio. Sostanzialmente si trova negli oggetti computer, utente e InetOrgPerson. È applicabile anche all'oggetto dominio se l'accesso è consentito per l'intero dominio. Può essere applicato alle unità organizzative per consentire agli utenti di impostare ACE ereditabili nelle unità organizzative che contengono un set di oggetti utente o computer.
+Il diritto di accesso di controllo controlla chi può eseguire l'autenticazione in un determinato computer o servizio. Si tratta essenzialmente di oggetti computer, utente e InetOrgPerson. È applicabile anche all'oggetto dominio se l'accesso è consentito per l'intero dominio. Può essere applicato alle unità organizzative per consentire agli utenti di impostare ACE ereditabili in unità organizzative contenenti un set di oggetti utente o computer.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Consentito per l'autenticazione              |
+| CN           | Autenticazione consentita              |
 | Display-Name | Autenticazione consentita              |
 | Rights-GUID  | 68b1d179-0d15-4d4f-ab71-46152e79a7bc |
 
@@ -49,7 +49,7 @@ Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 65                                                                                                                              |
+| Localization-Display-ID | 65                                                                                                                              |
 
 
 
@@ -60,7 +60,7 @@ Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 65                                                                                                                              |
+| Localization-Display-ID | 65                                                                                                                              |
 
 
 
@@ -71,7 +71,7 @@ Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 65                                                                                                                              |
+| Localization-Display-ID | 65                                                                                                                              |
 
 
 
@@ -81,8 +81,8 @@ Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a 
 
 | Voce | Valore |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 65                                                                                                                                                                                                               |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 65                                                                                                                                                                                                               |
 
 
 
@@ -92,8 +92,8 @@ Il controllo di accesso a destra controlla chi può eseguire l'autenticazione a 
 
 | Voce | Valore |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 65                                                                                                                                                                                                               |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 65                                                                                                                                                                                                               |
 
 
 

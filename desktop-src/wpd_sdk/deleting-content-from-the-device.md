@@ -1,21 +1,21 @@
 ---
-description: Eliminazione del contenuto dal dispositivo
+description: Eliminazione di contenuto dal dispositivo
 ms.assetid: 195f68d5-f139-456e-b000-86c91732a292
-title: Eliminazione del contenuto dal dispositivo
+title: Eliminazione di contenuto dal dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1c7b8d266517933caaf770236e96110a3ef334c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d22400c5812c4996fe38836c1f05e264c9bff66ada5124969139c0f8f037b6b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657931"
 ---
-# <a name="deleting-content-from-the-device"></a>Eliminazione del contenuto dal dispositivo
+# <a name="deleting-content-from-the-device"></a>Eliminazione di contenuto dal dispositivo
 
-Un'altra operazione comune eseguita da un'applicazione WPD è l'eliminazione del contenuto da una posizione nel dispositivo.
+Un'altra operazione comune eseguita da un'applicazione WPD è l'eliminazione di contenuto da una posizione nel dispositivo.
 
-Le operazioni di eliminazione del contenuto vengono eseguite utilizzando le interfacce descritte nella tabella seguente.
+Le operazioni di eliminazione del contenuto vengono eseguite usando le interfacce descritte nella tabella seguente.
 
 
 
@@ -28,7 +28,7 @@ Le operazioni di eliminazione del contenuto vengono eseguite utilizzando le inte
 
  
 
-La funzione DeleteContentFromDevice nel modulo ContentTransfer. cpp dell'applicazione di esempio illustra come un'applicazione potrebbe eliminare il contenuto nel dispositivo. Le operazioni di eliminazione del contenuto sono molto simili alle operazioni di trasferimento del contenuto. L'unica differenza consiste nel fatto che durante un'operazione di eliminazione, l'applicazione chiama [**IPortableDeviceContent::D Elimina**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-delete) anziché [**IPortableDeviceContent:: Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move). Per una descrizione delle attività iniziali della chiamata al metodo Delete, vedere l'argomento relativo al [trasferimento del contenuto nel dispositivo](moving-content-on-the-device.md) .
+La funzione DeleteContentFromDevice nel modulo ContentTransfer.cpp dell'applicazione di esempio illustra come un'applicazione potrebbe eliminare contenuto nel dispositivo. Le operazioni di eliminazione del contenuto sono molto simili alle operazioni di trasferimento del contenuto. L'unica differenza è che durante un'eliminazione, l'applicazione chiama [**IPortableDeviceContent::D elete**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-delete) anziché [**IPortableDeviceContent::Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move). Vedere [l'argomento Spostamento del contenuto nel](moving-content-on-the-device.md) dispositivo per una descrizione delle attività che hanno come origine la chiamata al metodo Delete.
 
 
 ```C++

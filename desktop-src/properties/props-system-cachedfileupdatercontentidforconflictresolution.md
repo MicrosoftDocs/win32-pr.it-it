@@ -4,12 +4,12 @@ ms.assetid: ced9a614-7f00-47bc-a6e1-d0f8e4a60863
 title: System.CachedFileUpdaterContentIdForConflictResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f5e1cfa176ad1b6af9fa3b9bb36150f589ec752
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d8405efa825e7daf27282a0b82e025a47ffc5e3316903465caf3d21968671599
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554401"
 ---
 # <a name="systemcachedfileupdatercontentidforconflictresolution"></a>System.CachedFileUpdaterContentIdForConflictResolution
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo ObjectsActive recupera un numero di oggetti attivi a livello di processo.
+description: Il metodo ObjectsActive recupera un conteggio a livello di processo di oggetti attivi.
 ms.assetid: adbc023a-22b7-44e9-b078-a26831f961cc
-title: Metodo CBaseObject. ObjectsActive (ComBase. h)
+title: Metodo CBaseObject.ObjectsActive (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a3aee21fd9835b28bdcc23eabe30c1d2b5217b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea1b85303751531662123662c1af0e1a35799a780842e8b0bcbc912916c94976
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640201"
 ---
-# <a name="cbaseobjectobjectsactive-method"></a>CBaseObject. ObjectsActive, metodo
+# <a name="cbaseobjectobjectsactive-method"></a>Metodo CBaseObject.ObjectsActive
 
-Il `ObjectsActive` metodo recupera un conteggio a livello di processo degli oggetti attivi.
+Il `ObjectsActive` metodo recupera un conteggio a livello di processo di oggetti attivi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Restituisce il numero di oggetti attivi.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

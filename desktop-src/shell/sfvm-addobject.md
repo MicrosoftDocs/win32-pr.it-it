@@ -1,6 +1,6 @@
 ---
-description: Aggiunge un oggetto alla visualizzazione Shell. Utilizzato dal \_ messaggio SHShellFolderView.
-title: Messaggio SFVM_ADDOBJECT (Shlobj. h)
+description: Aggiunge un oggetto alla visualizzazione Shell. Usato dal messaggio \_ SHShellFolderView.
+title: SFVM_ADDOBJECT messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 90394af6-3809-457c-b2f2-5f35187ed45b
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 0e5b3f0a5b1aed634ab8929b0501d2e23ba40352
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 441ddac74e1640b2f836686c171d6fc896cbccee2dd6325c31041903ba610b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661061"
 ---
-# <a name="sfvm_addobject-message"></a>\_Messaggio SFVM AddObject
+# <a name="sfvm_addobject-message"></a>Messaggio SFVM \_ ADDOBJECT
 
-Aggiunge un oggetto alla visualizzazione Shell. Utilizzato dal [**\_ messaggio SHShellFolderView**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
+Aggiunge un oggetto alla visualizzazione Shell. Usato da [**SHShellFolderView \_ Message**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
 
 
 ```C++
@@ -39,12 +39,12 @@ SFVM_ADDOBJECT
 
 <dl> <dt>
 
-*PIDL* \[ in\]
+*pidl* \[ Pollici\]
 </dt> <dd>Puntatore all'oggetto di interesse da aggiungere.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il nuovo ID dell'elemento ListView dell'oggetto aggiunto se il processo ha avuto esito positivo; in caso contrario, restituisce-1.
+Restituisce il nuovo ID dell'elemento listview dell'oggetto aggiunto se il processo ha avuto esito positivo; In caso contrario, restituisce -1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Restituisce il nuovo ID dell'elemento ListView dell'oggetto aggiunto se il proce
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

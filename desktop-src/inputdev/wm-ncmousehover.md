@@ -1,9 +1,9 @@
 ---
 title: WM_NCMOUSEHOVER messaggio (Winuser.h)
-description: Inviato a una finestra quando il cursore si posiziona sull'area non client della finestra per il periodo di tempo specificato in una chiamata precedente a TrackMouseEvent.
+description: Inviato a una finestra quando il cursore passa il puntatore del mouse sull'area non client della finestra per il periodo di tempo specificato in una chiamata precedente a TrackMouseEvent.
 ms.assetid: ca1afdc2-7884-445e-b9b7-4d7dd5dcea38
 keywords:
-- WM_NCMOUSEHOVER messaggio Input da tastiera e mouse
+- WM_NCMOUSEHOVER messaggio Input tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.locfileid: "119611461"
 ---
 # <a name="wm_ncmousehover-message"></a>Messaggio \_ WM NCMOUSEHOVER
 
-Inviato a una finestra quando il cursore si posiziona sull'area non client della finestra per il periodo di tempo specificato in una chiamata precedente a [**TrackMouseEvent.**](/windows/win32/api/winuser/nf-winuser-trackmouseevent)
+Inviato a una finestra quando il cursore passa il puntatore del mouse sull'area non client della finestra per il periodo di tempo specificato in una chiamata precedente a [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
-Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,14 +41,14 @@ Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.
 *wParam* 
 </dt> <dd>
 
-Valore dell'hit test restituito [**dalla funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) in seguito all'elaborazione del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco di valori di hit test, vedere **WM \_ NCHITTEST.**
+Valore dell'hit test restituito dalla [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) come risultato dell'elaborazione del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco dei valori di hit test, vedere **WM \_ NCHITTEST**.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Struttura [**POINTS**](/previous-versions//dd162808(v=vs.85)) contenente le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
+Struttura [**POINTS**](/previous-versions//dd162808(v=vs.85)) che contiene le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il rilevamento al passaggio del mouse si interrompe quando viene generato questo messaggio. L'applicazione deve chiamare [**nuovamente TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) se richiede un ulteriore rilevamento del comportamento del passaggio del mouse.
+Il rilevamento del passaggio del mouse si arresta quando viene generato questo messaggio. L'applicazione deve chiamare [**nuovamente TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) se richiede un ulteriore rilevamento del comportamento del passaggio del mouse.
 
 È anche possibile usare le macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) per estrarre i valori delle coordinate x e y da *lParam*.
 
@@ -124,7 +124,7 @@ yPos = GET_Y_LPARAM(lParam);
 **Altre risorse**
 </dt> <dt>
 
-[**PUNTI DI APPLICAZIONE**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
+[**MAKEPOINT**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
 [**Punti**](/previous-versions//dd162808(v=vs.85))

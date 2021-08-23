@@ -1,31 +1,31 @@
 ---
-description: Nelle tabelle seguenti sono elencati i CLSID per le categorie di filtro DirectShow.
+description: Nelle tabelle seguenti sono elencati i CLSID per le DirectShow filtro.
 ms.assetid: cab4e2c9-eab9-4836-adfc-870490ca5b6b
-title: Filtra categorie
+title: Filtrare le categorie
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0c4ccb9443c405abcbd0b9afbd406d6faf2558a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bf3fec6c2d05e1ac82dc116dbcf2d2b1d51437747bbbd45c63f7b56440d003ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639521"
 ---
-# <a name="filter-categories"></a>Filtra categorie
+# <a name="filter-categories"></a>Filtrare le categorie
 
-Nelle tabelle seguenti sono elencati i CLSID per le categorie di filtro DirectShow.
+Nelle tabelle seguenti sono elencati i CLSID per le DirectShow filtro.
 
--   [Categorie filtro DirectShow](#directshow-filter-categories)
--   [Altre categorie di filtro](#other-filter-categories)
--   [Meta-categoria del filtro DirectShow](#directshow-filter-meta-category)
--   [Categorie DMO](#dmo-categories)
+-   [DirectShow Filtrare le categorie](#directshow-filter-categories)
+-   [Altre categorie di filtri](#other-filter-categories)
+-   [DirectShow Filtra metacate categorie](#directshow-filter-meta-category)
+-   [DMO Categorie](#dmo-categories)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="directshow-filter-categories"></a>Categorie filtro DirectShow
+## <a name="directshow-filter-categories"></a>DirectShow Filtrare le categorie
 
-Le categorie elencate di seguito vengono enumerate dal [mapper dei filtri](filter-mapper.md). Per impostazione predefinita, tuttavia, il mapper dei filtri ignora le categorie con meriti di \_ merito \_ non \_ usare o meno. Per ulteriori informazioni, vedere [**IFilterMapper2:: EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters). Tutte le categorie elencate di seguito possono essere enumerate anche con l' [enumeratore di dispositivo di sistema](system-device-enumerator.md).
+Le categorie elencate di seguito vengono enumerate da [Filter Mapper.](filter-mapper.md) Per impostazione predefinita, tuttavia, il filtro mapper ignora le categorie con meriti di MERITO \_ NON \_ USARE o \_ meno. Per altre informazioni, vedere [**IFilterMapper2::EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-enummatchingfilters). Tutte le categorie elencate qui possono essere enumerate anche con [l'enumeratore dispositivo di sistema](system-device-enumerator.md).
 
-Le categorie seguenti sono dichiarate in UUIDs. h. Includere il file di intestazione dshow. h.
+Le categorie seguenti sono dichiarate in Uuids.h. Includere il file di intestazione Dshow.h.
 
 
 
@@ -49,7 +49,7 @@ Le categorie seguenti sono dichiarate in UUIDs. h. Includere il file di intestaz
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="even">
-<td>Commediatori audio</td>
+<td>Compresse audio</td>
 <td><strong>CLSID_AudioCompressorCategory</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
@@ -59,12 +59,12 @@ Le categorie seguenti sono dichiarate in UUIDs. h. Includere il file di intestaz
 <td><strong>MERIT_NORMAL</strong></td>
 </tr>
 <tr class="even">
-<td>Filtri di controllo del dispositivo</td>
+<td>Filtri di controllo dispositivo</td>
 <td><strong>CLSID_DeviceControlCategory</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="odd">
-<td>Filtri DirectShow</td>
+<td>DirectShow Filtri</td>
 <td><strong>CLSID_LegacyAmFilterCategory</strong></td>
 <td><strong>MERIT_NORMAL</strong></td>
 </tr>
@@ -74,17 +74,17 @@ Le categorie seguenti sono dichiarate in UUIDs. h. Includere il file di intestaz
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="odd">
-<td>Renderer MIDI</td>
+<td>Renderer Midi</td>
 <td><strong>CLSID_MidiRendererCategory</strong></td>
 <td><strong>MERIT_NORMAL</strong></td>
 </tr>
 <tr class="even">
-<td>Origini acquisizione video</td>
+<td>Origini di acquisizione video</td>
 <td><strong>CLSID_VideoInputDeviceCategory</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="odd">
-<td>Compressione video</td>
+<td>Compresse video</td>
 <td><strong>CLSID_VideoCompressorCategory</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
@@ -104,7 +104,7 @@ Questa categoria contiene decodificatori DVD hardware.
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="even">
-<td>Dispositivi traversa di streaming WDM</td>
+<td>Dispositivi crossbar di streaming WDM</td>
 <td><strong>AM_KSCATEGORY_CROSSBAR</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
@@ -114,7 +114,7 @@ Questa categoria contiene decodificatori DVD hardware.
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="even">
-<td>Dispositivi t/Splitter streaming WDM</td>
+<td>Dispositivi WDM Streaming Tee/Splitter</td>
 <td><strong>AM_KSCATEGORY_SPLITTER</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
@@ -124,12 +124,12 @@ Questa categoria contiene decodificatori DVD hardware.
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="even">
-<td>Dispositivi sintonizzatore streaming TV WDM</td>
+<td>Dispositivi di siner TV di streaming WDM</td>
 <td><strong>AM_KSCATEGORY_TVTUNER</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
 <tr class="odd">
-<td>Codec VBI per flussi WDM</td>
+<td>Codec VBI di streaming WDM</td>
 <td><strong>AM_KSCATEGORY_VBICODEC</strong></td>
 <td><strong>MERIT_DO_NOT_USE</strong></td>
 </tr>
@@ -140,129 +140,129 @@ Questa categoria contiene decodificatori DVD hardware.
 
  
 
-Le seguenti categorie sono dichiarate nel file di intestazione KS. h.
+Le categorie seguenti sono dichiarate nel file di intestazione Ks.h.
 
 
 
 | Nome descrittivo                          | CLSID                                   | Merito                   |
 |----------------------------------------|-----------------------------------------|-------------------------|
-| Trasformazioni di comunicazione WDM Streaming | **\_COMMUNICATIONSTRANSFORM KSCATEGORY** | **il merito non viene \_ \_ \_ utilizzato** |
-| Trasformazioni di dati di streaming WDM          | **KSCATEGORY \_ DATAtransform**           | **il merito non viene \_ \_ \_ utilizzato** |
-| Trasformazioni dell'interfaccia di streaming WDM     | **\_INTERFACETRANSFORM KSCATEGORY**      | **il merito non viene \_ \_ \_ utilizzato** |
-| Dispositivi mixer di streaming WDM            | **\_mixer KSCATEGORY**                   | **il merito non viene \_ \_ \_ utilizzato** |
+| Trasformazioni di comunicazione in streaming WDM | **KSCATEGORY \_ COMMUNICATIONSTRANSFORM** | **MERITO \_ NON \_ \_ USARE** |
+| Trasformazioni dei dati di streaming WDM          | **KSCATEGORY \_ DATATRANSFORM**           | **MERITO \_ NON \_ \_ USARE** |
+| Trasformazioni dell'interfaccia di streaming WDM     | **KSCATEGORY \_ INTERFACETRANSFORM**      | **MERITO \_ NON \_ \_ USARE** |
+| Dispositivi di streaming WDM Mixer dispositivi            | **KSCATEGORY \_ MIXER**                   | **MERITO \_ NON \_ \_ USARE** |
 
 
 
  
 
-Le seguenti categorie sono dichiarate nel file di intestazione Bdamedia. h. Includere i file di intestazione seguenti: KS. h, ksmedia. h e bdamedia. h.
+Le categorie seguenti sono dichiarate nel file di intestazione Bdamedia.h. Includere i file di intestazione seguenti: ks.h, ksmedia.h e bdamedia.h.
 
 
 
 | Nome descrittivo                       | CLSID                                       | Merito                   |
 |-------------------------------------|---------------------------------------------|-------------------------|
-| Provider di rete BDA               | **\_provider di \_ rete \_ BDA KSCATEGORY**      | **VALORE \_ normale**       |
-| Componenti ricevitore BDA             | **\_ \_ componente ricevitore BDA \_ KSCATEGORY**    | **il merito non viene \_ \_ \_ utilizzato** |
-| Filtri per il rendering BDA               | **\_sink IP \_ KSCATEGORY**                    | **il merito non viene \_ \_ \_ utilizzato** |
-| Filtri origine BDA                  | **\_Tuner di \_ rete \_ BDA KSCATEGORY**         | **il merito non viene \_ \_ \_ utilizzato** |
-| Renderer delle informazioni di trasporto BDA | **\_ \_ informazioni sul trasporto BDA KSCATEGORY \_** | **VALORE \_ normale**       |
+| Provider di rete BDA               | **PROVIDER DI RETE \_ KSCATEGORY BDA \_ \_**      | **MERITO \_ NORMALE**       |
+| Componenti ricevitore BDA             | **COMPONENTE \_ RICEVITORE KSCATEGORY BDA \_ \_**    | **MERITO \_ NON \_ \_ USARE** |
+| Filtri di rendering BDA               | **KSCATEGORY \_ IP \_ SINK**                    | **MERITO \_ NON \_ \_ USARE** |
+| Filtri di origine BDA                  | **SINER DI RETE \_ KSCATEGORY BDA \_ \_**         | **MERITO \_ NON \_ \_ USARE** |
+| Renderer di informazioni sul trasporto BDA | **INFORMAZIONI SUL TRASPORTO DI KSCATEGORY \_ BDA \_ \_** | **MERITO \_ NORMALE**       |
 
 
 
  
 
 > [!Note]  
-> I decodificatori sono registrati nella categoria "filtri DirectShow" (CLSID \_ LegacyAmFilterCategory).
+> I decodificatori vengono registrati nella categoria "filtri DirectShow" (CLSID \_ LegacyAmFilterCategory).
 
  
 
-## <a name="other-filter-categories"></a>Altre categorie di filtro
+## <a name="other-filter-categories"></a>Altre categorie di filtri
 
-Le categorie elencate di seguito possono essere enumerate con l'enumeratore del dispositivo di sistema, ma non sono visibili al mapper dei filtri e non vengono usate da [Intelligent Connect](intelligent-connect.md).
+Le categorie elencate di seguito possono essere enumerate con l'enumeratore dispositivo di sistema, ma non sono visibili a Filter Mapper e non vengono usate da [Intelligent Connessione](intelligent-connect.md).
 
-Le seguenti categorie sono dichiarate nel file di intestazione qedit. h.
+Le categorie seguenti vengono dichiarate nel file di intestazione Qedit.h.
 
 
 
-| Nome descrittivo            | CLID                             | Merito                   |
+| Nome descrittivo            | Interfaccia della riga di comando                             | Merito                   |
 |--------------------------|----------------------------------|-------------------------|
-| Effetti video (1 input)  | **\_VIDEOEFFECTS1CATEGORY CLSID** | **il merito non viene \_ \_ \_ utilizzato** |
-| Effetti video (2 input) | **\_VIDEOEFFECTS2CATEGORY CLSID** | **il merito non viene \_ \_ \_ utilizzato** |
+| Effetti video (1 input)  | **CLSID \_ VideoEffects1Category** | **MERITO \_ NON \_ \_ USARE** |
+| Effetti video (2 input) | **CLSID \_ VideoEffects2Category** | **MERITO \_ NON \_ \_ USARE** |
 
 
 
  
 
-Queste categorie contengono effetti video e transizioni per i [servizi di modifica DirectShow](directshow-editing-services.md):
+Queste categorie contengono effetti video e transizioni per [i DirectShow di modifica:](directshow-editing-services.md)
 
 -   "Effetti video (1 input)" contiene effetti video.
--   "Video Effects (2 input)" contiene transizioni video.
+-   "Effetti video (2 input)" contiene transizioni video.
 
-Per ulteriori informazioni, vedere [enumerazione degli effetti e delle transizioni](enumerating-effects-and-transitions.md).
+Per altre informazioni, vedere [Enumerazione di effetti e transizioni](enumerating-effects-and-transitions.md).
 
-Le seguenti categorie sono dichiarate nel file di intestazione UUIDs. h. Includere il file di intestazione dshow. h.
+Le categorie seguenti sono dichiarate nel file di intestazione Uuids.h. Includere il file di intestazione Dshow.h.
 
 
 
-| Nome descrittivo       | CLID                                | Merito                   |
+| Nome descrittivo       | Interfaccia della riga di comando                                | Merito                   |
 |---------------------|-------------------------------------|-------------------------|
-| Codificatori     | **\_MEDIAENCODERCATEGORY CLSID**     | **il merito non viene \_ \_ \_ utilizzato** |
-| Multiplexer | **\_MEDIAMULTIPLEXERCATEGORY CLSID** | **il merito non viene \_ \_ \_ utilizzato** |
+| Codificatori EncAPI     | **CLSID \_ MediaEncoderCategory**     | **MERITO \_ NON \_ \_ USARE** |
+| Multiplexer EncAPI | **CLSID \_ MediaMultiplexerCategory** | **MERITO \_ NON \_ \_ USARE** |
 
 
 
  
 
-## <a name="directshow-filter-meta-category"></a>Meta-Category filtro DirectShow
+## <a name="directshow-filter-meta-category"></a>DirectShow Filtrare Meta-Category
 
 
 
 | Nome descrittivo                 | CLSID                            | Merito          |
 |-------------------------------|----------------------------------|----------------|
-| Categorie filtro ActiveMovie | **\_ACTIVEMOVIECATEGORIES CLSID** | Non applicabile |
+| Categorie di filtri ActiveMovie | **CLSID \_ ActiveMovieCategories** | Non applicabile |
 
 
 
  
 
-Questa meta-categoria contiene un elenco di categorie di filtro. Se una categoria di filtri non viene visualizzata in questo elenco, il [mapper dei filtri](filter-mapper.md) ignora la categoria, il che significa che il filtro non è disponibile per la [connessione intelligente](intelligent-connect.md).
+Questa metacatema contiene un elenco di categorie di filtri. Se all'interno di questo elenco non viene visualizzata una categoria di [filtri,](intelligent-connect.md)il [mapper](filter-mapper.md) dei filtri ignora la categoria, ovvero il filtro non è disponibile per Intelligent Connessione .
 
-Per enumerare l'elenco di categorie di filtro, chiamare [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il valore CLSID \_ ActiveMovieCategories. I moniker restituiti da questo metodo supportano le seguenti proprietà.
+Per enumerare l'elenco di categorie di filtri, chiamare [**ICreateDevEnum::CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con il valore CLSID \_ ActiveMovieCategories. I moniker restituiti da questo metodo supportano le proprietà seguenti.
 
 
 
 | Nome proprietà  | Descrizione                                                                            |
 |----------------|----------------------------------------------------------------------------------------|
-| FriendlyName | Nome della categoria (VT \_ BSTR).                                                              |
-| Merito        | Merit categoria (VT \_ I4). Se questa proprietà è assente, considerare come **Merit non \_ \_ \_ usare**. |
-| CLSID        | Categoria CLSID (VT \_ BSTR).                                                             |
+| "FriendlyName" | Nome categoria (VT \_ BSTR).                                                              |
+| "Merito"        | Merito della categoria (VT \_ I4). Se questa proprietà è assente, considerare come **MERIT \_ DO NOT \_ \_ USE**. |
+| "CLSID"        | CLSID di categoria (VT \_ BSTR).                                                             |
 
 
 
  
 
-Per aggiungere una nuova categoria di filtri all'elenco, chiamare [**IFilterMapper2:: CreateCategory**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-createcategory).
+Per aggiungere una nuova categoria di filtro a questo elenco, chiamare [**IFilterMapper2::CreateCategory**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-createcategory).
 
-## <a name="dmo-categories"></a>Categorie DMO
+## <a name="dmo-categories"></a>DMO Categorie
 
-Gli oggetti multimediali DirectX (DMOs) utilizzano un meccanismo di enumerazione diverso dai filtri DirectShow. Per ulteriori informazioni, vedere la pagina relativa alla [registrazione di un DMO](registering-a-dmo.md). Tuttavia, è possibile usare l'enumeratore System Device per enumerare le categorie DMO. I moniker vengono associati al [filtro del wrapper DMO](dmo-wrapper-filter.md) e inizializzano automaticamente il filtro con DMO.
+DirectX Media Objects (DMO) usa un meccanismo di enumerazione diverso da DirectShow filtri. Per altre informazioni, vedere [Registrazione di un DMO](registering-a-dmo.md). Tuttavia, è possibile usare l'enumeratore del dispositivo di sistema per enumerare DMO categorie. I moniker vengono associati al filtro [wrapper DMO](dmo-wrapper-filter.md) e inizializzano automaticamente il filtro con il DMO.
 
-Inoltre, alcune categorie DMO sono mappate alle categorie di filtri DirectShow ai fini della connessione intelligente:
+Inoltre, alcune delle categorie DMO vengono mappate DirectShow categorie di filtro ai fini della connessione intelligente:
 
 
 
-| Categoria DMO                    | Equivalente DirectShow              |
+| DMO Categoria                    | DirectShow Equivalente              |
 |---------------------------------|------------------------------------|
-| **\_ \_ codificatore audio DMOCATEGORY** | **\_AUDIOCOMPRESSORCATEGORY CLSID** |
-| **\_decodificatore audio DMOCATEGORY \_** | **\_LEGACYAMFILTERCATEGORY CLSID**  |
-| **\_ \_ codificatore video DMOCATEGORY** | **\_VIDEOCOMPRESSORCATEGORY CLSID** |
-| **\_decodificatore video DMOCATEGORY \_** | **\_LEGACYAMFILTERCATEGORY CLSID**  |
+| **CODIFICATORE AUDIO DMOCATEGORY \_ \_** | **CLSID \_ AudioCompressorCategory** |
+| **DECODIFICATORE AUDIO DMOCATEGORY \_ \_** | **CLSID \_ LegacyAmFilterCategory**  |
+| **CODIFICATORE VIDEO DMOCATEGORY \_ \_** | **CLSID \_ VideoCompressorCategory** |
+| **DECODIFICATORE VIDEO DMOCATEGORY \_ \_** | **CLSID \_ LegacyAmFilterCategory**  |
 
 
 
  
 
-Si noti che le categorie effetto video e effetto audio non sono mappate ad alcuna categoria DirectShow.
+Si noti che l'effetto video e le categorie di effetti audio non vengono mappati ad alcuna DirectShow categorie.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -271,19 +271,19 @@ Si noti che le categorie effetto video e effetto audio non sono mappate ad alcun
 [Costanti e GUID](constants-and-guids.md)
 </dt> <dt>
 
-[Enumerazione dei dispositivi e dei filtri](enumerating-devices-and-filters.md)
+[Enumerazione di dispositivi e filtri](enumerating-devices-and-filters.md)
 </dt> <dt>
 
-[Connessione intelligente](intelligent-connect.md)
+[Gestione Connessione](intelligent-connect.md)
 </dt> <dt>
 
-[Layout delle chiavi del registro di sistema](layout-of-the-registry-keys.md)
+[Layout delle chiavi del Registro di sistema](layout-of-the-registry-keys.md)
 </dt> <dt>
 
-[Uso del mapper dei filtri](using-the-filter-mapper.md)
+[Uso di Filter Mapper](using-the-filter-mapper.md)
 </dt> <dt>
 
-[Uso di System Device Enumerator](using-the-system-device-enumerator.md)
+[Uso dell'enumeratore del dispositivo di sistema](using-the-system-device-enumerator.md)
 </dt> </dl>
 
  

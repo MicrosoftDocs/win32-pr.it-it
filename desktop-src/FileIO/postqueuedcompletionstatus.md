@@ -1,7 +1,7 @@
 ---
-description: Invia un pacchetto di completamento di I/O a una porta di completamento di I/O.
+description: Invia un pacchetto di completamento I/O a una porta di completamento I/O.
 ms.assetid: 69a9b1e5-2d40-42de-a14a-f7b6f29bf571
-title: Funzione PostQueuedCompletionStatus ha provocato (IoAPI. h)
+title: Funzione PostQueuedCompletionStatus (IoAPI.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_location:
 - MinKernelBase.dll
 - API-MS-Win-Core-io-l1-1-1.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: f12de10032df7fec32dd9a577353dd20c0f4eaa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e56bad8b9de85f22836f9446b67340d22e71fe83552da6796e7864d3baddae4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683361"
 ---
-# <a name="postqueuedcompletionstatus-function"></a>PostQueuedCompletionStatus ha provocato (funzione)
+# <a name="postqueuedcompletionstatus-function"></a>Funzione PostQueuedCompletionStatus
 
-Invia un pacchetto di completamento di I/O a una porta di completamento di I/O.
+Invia un pacchetto di completamento I/O a una porta di completamento I/O.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,31 +47,31 @@ BOOL WINAPI PostQueuedCompletionStatus(
 
 <dl> <dt>
 
-*Tentato* \[ in\]
+*CompletionPort* \[ Pollici\]
 </dt> <dd>
 
-Handle per una porta di completamento di I/O a cui deve essere inviato il pacchetto di completamento di I/O.
+Handle di una porta di completamento I/O in cui deve essere inviato il pacchetto di completamento di I/O.
 
 </dd> <dt>
 
-*dwNumberOfBytesTransferred* \[ in\]
+*dwNumberOfBytesTransferred* \[ Pollici\]
 </dt> <dd>
 
-Valore da restituire tramite il parametro *lpNumberOfBytesTransferred* della funzione [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valore da restituire tramite il parametro *lpNumberOfBytesTransferred* della [**funzione GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
-*dwCompletionKey* \[ in\]
+*dwCompletionKey* \[ Pollici\]
 </dt> <dd>
 
-Valore da restituire tramite il parametro *lpCompletionKey* della funzione [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valore da restituire tramite il *parametro lpCompletionKey* della [**funzione GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
 *lpOverlapped* \[ in, facoltativo\]
 </dt> <dd>
 
-Valore da restituire tramite il parametro *lpOverlapped* della funzione [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valore da restituire tramite il *parametro lpOverlapped* della [**funzione GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ Valore da restituire tramite il parametro *lpOverlapped* della funzione [**GetQu
 
 Se la funzione ha esito positivo, il valore restituito è diverso da zero.
 
-Se la funzione ha esito negativo, il valore restituito è zero. Per ottenere informazioni estese sull'errore, chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Se la funzione ha esito negativo, il valore restituito è zero. Per ottenere informazioni estese sugli errori, chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
 
 ## <a name="remarks"></a>Commenti
 
-Il pacchetto di completamento I/O soddisferà una chiamata in attesa alla funzione [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) . Questa funzione restituisce con i tre valori passati come secondo, terzo e quarto parametro della chiamata a **PostQueuedCompletionStatus ha provocato**. Il sistema non utilizza né convalida questi valori. In particolare, il parametro *lpOverlapped* non deve puntare a una struttura [**sovrapposta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Il pacchetto di completamento I/O soddisferà una chiamata in sospeso alla [**funzione GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) Questa funzione restituisce con i tre valori passati come secondo, terzo e quarto parametro della chiamata a **PostQueuedCompletionStatus**. Il sistema non usa né convalida questi valori. In particolare, il *parametro lpOverlapped* non deve puntare a una [**struttura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
 In Windows 8 e Windows Server 2012 questa funzione è supportata dalle tecnologie seguenti.
 
@@ -91,17 +91,17 @@ In Windows 8 e Windows Server 2012 questa funzione è supportata dalle tecnologi
 
 | Tecnologia                                           | Supportato      |
 |------------------------------------------------------|----------------|
-| Protocollo SMB (Server Message Block) 3,0<br/>   | Sì<br/> |
-| Failover trasparente SMB 3,0 (failover)<br/>        | Sì<br/> |
-| SMB 3,0 con condivisioni file di scalabilità orizzontale (quindi)<br/>   | Sì<br/> |
-| File System Volume condiviso cluster (CsvFS)<br/> | Sì<br/> |
-| Resilient file System (ReFS)<br/>              | Sì<br/> |
+| Server Message Block (SMB) 3.0<br/>   | Sì<br/> |
+| Failover trasparente SMB 3.0 (TFO)<br/>        | Sì<br/> |
+| SMB 3.0 con condivisioni file con scalabilità orizzontale<br/>   | Sì<br/> |
+| Volume condiviso cluster File System (CsvFS)<br/> | Sì<br/> |
+| File system resiliente (ReFS)<br/>              | Sì<br/> |
 
 
 
  
 
-CsvFs eseguirà l'i/o reindirizzato per i file compressi.
+CsvFs esegue operazioni di I/O reindirizzate per i file compressi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,9 +109,9 @@ CsvFs eseguirà l'i/o reindirizzato per i file compressi.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows XP \[ \| UWP\]<br/>                                                                                                                                                                                                                                                       |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2003 \|\]<br/>                                                                                                                                                                                                                                              |
-| Intestazione<br/>                   | <dl> <dt>IoAPI. h (include Windows. h); </dt> <dt>Winbase. h in Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows server 2003 e Windows XP (incluso Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows App \[ UWP per le app desktop \| XP\]<br/>                                                                                                                                                                                                                                                       |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2003 \[ \|\]<br/>                                                                                                                                                                                                                                              |
+| Intestazione<br/>                   | <dl> <dt>IoAPI.h (includere Windows.h);</dt> <dt>WinBase.h in Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP (includere Windows.h)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                                                  |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                                                  |
 
@@ -130,7 +130,7 @@ CsvFs eseguirà l'i/o reindirizzato per i file compressi.
 [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 </dt> <dt>
 
-[**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
+[**Sovrapposta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 </dt> </dl>
 
  

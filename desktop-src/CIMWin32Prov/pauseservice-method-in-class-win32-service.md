@@ -1,5 +1,5 @@
 ---
-description: 'Metodo PauseService della classe Win32_Service (provider WMI CIMWin32): tenta di posizionare il servizio nello stato sospeso.'
+description: 'Metodo PauseService della classe Win32_Service (provider WMI CIMWin32): tenta di mettere il servizio nello stato sospeso.'
 ms.assetid: 5382457e-7f9c-48a5-9262-b815a1a4a605
 ms.tgt_platform: multiple
 title: Metodo PauseService della classe Win32_Service (provider WMI CIMWin32)
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7654feea410564137e98861c4c0b5de2b5e7192e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d5546ef4c67a6c9fa23f723f45725b19999770e11771608e197d6b759ca61de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504541"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo PauseService della classe Win32_Service (provider WMI CIMWin32)
 
-Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta di posizionare il servizio nello stato sospeso.
+Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta di mettere il servizio nello stato sospeso.
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State)** è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -175,14 +175,14 @@ Il servizio non ha thread di esecuzione.
 **18**
 </dt> <dd>
 
-Il servizio ha dipendenze circolari all'avvio.
+Il servizio presenta dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio è in esecuzione con lo stesso nome.
+Un servizio viene eseguito con lo stesso nome.
 
 </dd> <dt>
 

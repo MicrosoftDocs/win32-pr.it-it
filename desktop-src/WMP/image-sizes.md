@@ -3,25 +3,25 @@ title: Dimensioni delle immagini
 description: Dimensioni delle immagini
 ms.assetid: f639ac34-f173-4b84-95ac-360d7fc40d1b
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di grafica per interfacce, dimensioni di immagini
-- Interfacce di Windows Media Player Mobile, dimensioni delle immagini
-- interfacce, dimensioni delle immagini
-- dimensioni delle immagini nelle interfacce
+- Windows Media Player Skin per dispositivi mobili, file di grafica
+- skins, file di grafica
+- file per skin, art
+- file di grafica per skin, dimensioni delle immagini
+- Windows Media Player Skin per dispositivi mobili, dimensioni delle immagini
+- skin, dimensioni delle immagini
+- dimensioni delle immagini nelle skin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d672532be9830c58a580d37161b3d9a0adf04ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a0e2fbed1e1343369d5b01d883ff57073ad6e4a4864e97005e82c6083593f32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509271"
 ---
 # <a name="image-sizes"></a>Dimensioni delle immagini
 
-Quando si crea un'immagine per le interfacce, è necessario tenere in considerazione le dimensioni dell'area di visualizzazione. Nella tabella seguente vengono illustrate le dimensioni dell'area di visualizzazione per diverse configurazioni dello schermo.
+È necessario prendere in considerazione le dimensioni dell'area di visualizzazione quando si crea un disegno per le skin. La tabella seguente illustra le dimensioni dell'area di visualizzazione per diverse configurazioni dello schermo.
 
 
 
@@ -33,28 +33,28 @@ Quando si crea un'immagine per le interfacce, è necessario tenere in consideraz
 | 192 (orizzontale)               | 640             | 220              |
 | 96 (quadrato)                   | 240             | 240              |
 | 192 (quadrato)                  | 480             | 480              |
-| 96 (verticale per smartphone)  | 176             | 220              |
-| 131 (verticale per smartphone) | 240             | 320              |
+| 96 (verticale per Smartphone)  | 176             | 220              |
+| 131 (verticale per Smartphone) | 240             | 320              |
 
 
 
- 
+ 
 
 > [!Note]  
-> Le versioni precedenti alla serie Windows Media Player 9 per Windows Mobile 2003 supportano solo le interfacce in modalità verticale 96 DPI. Windows Media Player 10 mobile o versioni successive supporta le interfacce in modalità verticale a 131 DPI nei dispositivi smartphone e questo supporto dovrebbe continuare nelle versioni future di Windows Media Player mobile.
+> Le versioni precedenti Windows Media Player serie 9 per Windows Mobile 2003 supportano solo 96 skin in modalità verticale DPI. Windows Media Player 10 Mobile o versioni successive supporta 131 skin in modalità verticale DPI nei dispositivi Smartphone e questo supporto dovrebbe continuare nelle versioni future di Windows Media Player Mobile.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**File di immagine**](art-files-mobile.md)
+[**File di grafica**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

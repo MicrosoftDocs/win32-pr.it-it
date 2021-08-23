@@ -1,21 +1,21 @@
 ---
-description: TSPI 3,0 aggiunge funzioni e messaggi per supportare la comunicazione con un provider di servizi multimediali (MSP). Sono state inoltre aggiunte funzioni che migliorano la facilità di rilevamento delle conferenze tramite il concetto di hub di chiamata.
+description: TSPI 3.0 aggiunge funzioni e messaggi per supportare la comunicazione con un provider di servizi multimediali (MSP). Sono state aggiunte anche funzioni che migliorano la facilità di tenere traccia delle conferenze usando il concetto di hub di chiamata.
 ms.assetid: 61c35478-859a-4bf3-9d40-77a3f4180f22
-title: Novità della versione 3,0 di TSPI
+title: Novità di TSPI versione 3.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc3c0e1805c1ef144a09618b640c122ab54ba6b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2160cd4ae7be818124f2f1cfe3526099df36c4ac6304352cb62c39fd3ba5d99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659791"
 ---
-# <a name="whats-new-for-tspi-version-30"></a>Novità della versione 3,0 di TSPI
+# <a name="whats-new-for-tspi-version-30"></a>Novità di TSPI versione 3.0
 
-TSPI 3,0 aggiunge funzioni e messaggi per supportare la comunicazione con un [provider di servizi multimediali (msp)](./about-the-media-service-provider-msp-.md). Sono state inoltre aggiunte funzioni che migliorano la facilità di rilevamento delle conferenze tramite il concetto di hub di chiamata.
+TSPI 3.0 aggiunge funzioni e messaggi per supportare la comunicazione con un provider di [servizi multimediali (MSP).](./about-the-media-service-provider-msp-.md) Sono state aggiunte anche funzioni che migliorano la facilità di tenere traccia delle conferenze usando il concetto di hub di chiamata.
 
-Le funzioni e i messaggi nuovi o modificati per TSPI versione 3,0 sono i seguenti:
+Le funzioni e i messaggi nuovi o modificati per TSPI versione 3.0 sono i seguenti:
 
 -   [**TSPI_lineCloseMSPInstance**](/windows/win32/api/tspi/nf-tspi-tspi_lineclosemspinstance)
 -   [**TSPI_lineCreateMSPInstance**](/windows/win32/api/tspi/nf-tspi-tspi_linecreatemspinstance)
@@ -27,8 +27,8 @@ Le funzioni e i messaggi nuovi o modificati per TSPI versione 3,0 sono i seguent
 -   [**LINE_QOSINFO**](line-qosinfo.md)
 -   [**LINE_SENDMSPDATA**](line-sendmspdata.md)
 -   [**LINE_DEVSPECIFICEX**](/previous-versions/windows/desktop/legacy/ms725226(v=vs.85))
--   Flag di **LINEADDRCAPFLAGS_NOPSTNADDRESSTRANSLATION**
--   Flag di **LINEERR_INVALADDRESSTYPE**
+-   **LINEADDRCAPFLAGS_NOPSTNADDRESSTRANSLATION** flag
+-   **LINEERR_INVALADDRESSTYPE** flag
 
  
 

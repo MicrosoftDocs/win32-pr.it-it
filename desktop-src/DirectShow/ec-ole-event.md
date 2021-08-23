@@ -1,17 +1,17 @@
 ---
 description: Un filtro passa una stringa di testo all'applicazione.
 ms.assetid: 477c6456-c96c-4d3d-b877-2a426510de29
-title: EC_OLE_EVENT (dshow. h)
+title: EC_OLE_EVENT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af10f606187dae5fa4d361a1d86deea29fa093f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0753b5b5235be370a29416d9845d3b531640617c9607bd911187f94e013483e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639651"
 ---
-# <a name="ec_ole_event"></a>\_evento OLE \_ EC
+# <a name="ec_ole_event"></a>EVENTO \_ OLE \_ EC
 
 Un filtro passa una stringa di testo all'applicazione.
 
@@ -22,14 +22,14 @@ Un filtro passa una stringa di testo all'applicazione.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**BSTR**) Stringa di tipo **BSTR**.
+(**BSTR**) Stringa di tipo **BSTR.**
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-(**BSTR**) Stringa di tipo **BSTR**.
+(**BSTR**) Stringa di tipo **BSTR.**
 
 </dd> </dl>
 
@@ -47,7 +47,7 @@ Per convenzione, il primo parametro contiene informazioni sul tipo (ad esempio, 
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

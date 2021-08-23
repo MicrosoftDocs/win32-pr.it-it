@@ -1,10 +1,10 @@
 ---
-title: IPSec-attributo di riferimento al filtro
-description: L'attributo IPSec-Filter-Reference è solo per uso interno.
+title: Attributo Ipsec-Filter-Reference
+description: L'attributo Ipsec-Filter-Reference è solo per uso interno.
 ms.assetid: 00706503-ba92-42bb-86ae-94b79f7f7eff
 ms.tgt_platform: multiple
 keywords:
-- IPSec-filtro-attributo riferimento AD schema AD
+- Schema AD dell'attributo Ipsec-Filter-Reference
 - Schema AD dell'attributo ipsecFilterReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9810fa5b480cb77d0ea26b7cc1b1aa4802fa164
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 77fc6bbe6d617706f3ab556e4f7d240a37de45d73112c06663f13f102087173d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322586"
 ---
-# <a name="ipsec-filter-reference-attribute"></a>IPSec-attributo di riferimento al filtro
+# <a name="ipsec-filter-reference-attribute"></a>Attributo Ipsec-Filter-Reference
 
-L'attributo **IPSec-Filter-Reference** è solo per uso interno.
+**L'attributo Ipsec-Filter-Reference** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-filtro-riferimento                  |
-| LDAP-Display-Name | ipsecFilterReference                    |
+| CN                | Riferimento a Ipsec-Filter-Reference                  |
+| Ldap-Display-Name | ipsecFilterReference                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.629                  |
-| System-ID-GUID    | b40ff823-427a-11d1-a9c2-0000f80367c1    |
+| System-Id-Guid    | b40ff823-427a-11d1-a9c2-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPSec-Filter-Reference** è solo per uso interno.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**IPSec-NFA**](c-ipsecnfa.md)<br/> |
+| Classi usate in        | [**Ipsec-NFA**](c-ipsecnfa.md)<br/> |
 
 
 

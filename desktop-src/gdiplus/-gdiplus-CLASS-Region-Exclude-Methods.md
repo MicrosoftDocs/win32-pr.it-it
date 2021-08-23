@@ -1,19 +1,19 @@
 ---
-description: Questo argomento elenca i metodi Exclude della classe Region. Per un elenco completo dei metodi per la classe Region, vedere Metodi Region.
+description: Questo argomento elenca i metodi Exclude della classe Region. Per un elenco completo dei metodi per la classe Region, vedere Metodi di area.
 ms.assetid: 1a8b639d-c12f-4130-a107-acf008ea1408
-title: Metodi Region. Exclude
+title: Metodi Region.Exclude
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e5bd762122e304ca2eff3877ac0fb55a15aa6070
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8d9d8fba6fcd1aa84edc5565cc3729c1c4001cbd83bf4264d1dd5da0ef7f69b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602611"
 ---
-# <a name="regionexclude-methods"></a>Metodi Region. Exclude
+# <a name="regionexclude-methods"></a>Metodi Region.Exclude
 
-Questo argomento elenca i metodi Exclude della classe [**Region**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-region) . Per un elenco completo dei metodi per la classe **Region** , vedere [Metodi Region](-gdiplus-class-region-methods.md).
+Questo argomento elenca i metodi Exclude della [**classe Region.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-region) Per un elenco completo dei metodi per la **classe Region,** vedere [Metodi di area](-gdiplus-class-region-methods.md).
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,10 +21,10 @@ Questo argomento elenca i metodi Exclude della classe [**Region**](/windows/win3
 
 | Metodo                                                                 | Descrizione                                                                                                                                                                                         |
 |:-----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Escludi (Rect&)**](/previous-versions//ms534825(v=vs.85))     | Il metodo [**Region:: Exclude**](/previous-versions//ms534825(v=vs.85)) Aggiorna questa area alla parte di se stessa che non interseca l'interno del rettangolo specificato.<br/>  |
-| [**Escludi (RectF&)**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstrectf_))   | Il metodo [**Region:: Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstrectf_)) Aggiorna questa area alla parte di se stessa che non interseca l'interno del rettangolo specificato.<br/> |
-| [**Escludi (regione \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion))     | Il metodo [**Region:: Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion)) Aggiorna questa area alla parte di se stessa che non interseca un'altra area.<br/>                         |
-| [**Escludi (GraphicsPath \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstgraphicspath)) | Il metodo [**Region:: Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstgraphicspath)) Aggiorna questa area alla parte di se stessa che non interseca l'interno del percorso specificato.<br/>            |
+| [**Exclude(Rect&)**](/previous-versions//ms534825(v=vs.85))     | Il [**metodo Region::Exclude**](/previous-versions//ms534825(v=vs.85)) aggiorna questa area alla parte di se stessa che non interseca l'interno del rettangolo specificato.<br/>  |
+| [**Exclude(RectF&)**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstrectf_))   | Il [**metodo Region::Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstrectf_)) aggiorna questa area alla parte di se stessa che non interseca l'interno del rettangolo specificato.<br/> |
+| [**Exclude(Region \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion))     | Il [**metodo Region::Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion)) aggiorna questa area alla parte di se stessa che non interseca un'altra area.<br/>                         |
+| [**Exclude(GraphicsPath \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstgraphicspath)) | Il [**metodo Region::Exclude**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstgraphicspath)) aggiorna questa area alla parte di se stessa che non interseca l'interno del percorso specificato.<br/>            |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: È possibile utilizzare gli oggetti Active Directory per individuare le risorse in un dominio di rete del computer, ad esempio utenti, criteri di sicurezza, stampanti, componenti distribuiti e altre risorse.
+description: Gli oggetti Active Directory possono essere usati per individuare le risorse in un dominio di rete del computer, ad esempio utenti, criteri di sicurezza, stampanti, componenti distribuiti e altre risorse.
 ms.assetid: 96f89537-9419-495e-819c-fd07ba546620
 ms.tgt_platform: multiple
 title: Creazione e aggiornamento di oggetti Active Directory
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0b36a12860ea2c2dc9085b784fdaf85cd95ab87f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e2b1cee8010a5eff143fc7ff073eeea5e83b3b46cb41177e5ddbde5e931e056
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374831"
 ---
 # <a name="creating-and-updating-active-directory-objects"></a>Creazione e aggiornamento di oggetti Active Directory
 
-È possibile utilizzare gli oggetti Active Directory per individuare le risorse in un dominio di rete del computer, ad esempio utenti, criteri di sicurezza, stampanti, componenti distribuiti e altre risorse. Active Directory gli oggetti possono essere creati e aggiornati tramite WMI. È possibile aggiornare un oggetto Active Directory quando le nuove informazioni sull'oggetto diventano disponibili tramite la notifica degli eventi WMI. Ad esempio, dopo aver creato un Active Directory oggetto utente, è possibile rilevare la relativa creazione con una query di eventi in WMI e quando viene ricevuto l'evento, è possibile aggiornare l'oggetto con nuove informazioni.
+Gli oggetti Active Directory possono essere usati per individuare le risorse in un dominio di rete del computer, ad esempio utenti, criteri di sicurezza, stampanti, componenti distribuiti e altre risorse. Gli oggetti Active Directory possono essere creati e aggiornati tramite WMI. È possibile aggiornare un oggetto di Active Directory quando diventano disponibili nuove informazioni sull'oggetto usando la notifica degli eventi WMI. Ad esempio, dopo aver creato un oggetto utente di Active Directory, è possibile rilevarne la creazione con una query di eventi in WMI e, quando viene ricevuto l'evento, è possibile aggiornare l'oggetto con nuove informazioni.
 
-Nell'esempio di codice seguente viene creata una nuova istanza WMI della classe che rappresenta l'oggetto Active Directory utente. Nell'esempio viene illustrato come assegnare valori a diverse proprietà necessarie per creare la nuova istanza di Active Directory utente.
+Nell'esempio di codice seguente viene creata una nuova istanza WMI della classe che rappresenta l'oggetto utente di Active Directory. Nell'esempio viene illustrato come assegnare valori a varie proprietà necessarie per creare la nuova istanza utente di Active Directory.
 
 
 ```VB
@@ -56,7 +56,7 @@ WScript.Echo "Active Directory user created."
 
 
 
-Nell'esempio di codice seguente viene aggiornata un'istanza WMI di un oggetto Active Directory. In questo esempio, l'attributo DisplayName viene aggiornato.
+Nell'esempio di codice seguente viene aggiornata un'istanza WMI di un oggetto Active Directory. In questo esempio l'attributo displayname viene aggiornato.
 
 
 ```VB
