@@ -1,8 +1,8 @@
 ---
-description: Il metodo Remove dell'oggetto SWbemPrivilegeSet Elimina un privilegio dalla raccolta.
+description: Il metodo Remove dell'oggetto SWbemPrivilegeSet elimina un privilegio dalla raccolta.
 ms.assetid: 4c0b6d49-262c-4840-955b-35b16b68f29f
 ms.tgt_platform: multiple
-title: Metodo SWbemPrivilegeSet. Remove (wbemdisp. h)
+title: Metodo SWbemPrivilegeSet.Remove (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: f277e291a4296253d7c0b1b11c694952ddc17ddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 825fbdc18537fa73561f8a662ecc0388ab18be0b9bf26ca2cbfeadd7bfb9b469
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732291"
 ---
-# <a name="swbemprivilegesetremove-method"></a>Metodo SWbemPrivilegeSet. Remove
+# <a name="swbemprivilegesetremove-method"></a>Metodo SWbemPrivilegeSet.Remove
 
-Il metodo **Remove** dell'oggetto [**SWbemPrivilegeSet**](swbemprivilegeset.md) Elimina un privilegio dalla raccolta.
+Il **metodo Remove** dell'oggetto [**SWbemPrivilegeSet**](swbemprivilegeset.md) elimina un privilegio dalla raccolta.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ SWbemPrivilegeSet.Remove( _
 *iPrivilege* 
 </dt> <dd>
 
-Obbligatorio. Si tratta di una delle costanti WMI del gruppo [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) . Queste costanti sono essenzialmente numeri interi che rappresentano privilegi specifici. Ad esempio, per rimuovere il privilegio che consente di arrestare un sistema Windows, usare la costante **wbemPrivilegeShutdown** o l'equivalente numerico di 0x17.
+Obbligatorio. Si tratta di una delle costanti WMI del [**gruppo WbemPrivilegeEnum.**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Queste costanti sono essenzialmente numeri interi che rappresentano privilegi specifici. Ad esempio, per rimuovere il privilegio che consente di arrestare un sistema Windows, usare la costante **wbemPrivilegeShutdown** o l'equivalente numerico di 0x17.
 
 </dd> </dl>
 
@@ -57,18 +57,18 @@ Questo metodo non restituisce valori.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Al termine del metodo **Remove** , l'oggetto **Err** può contenere uno dei codici di errore elencati di seguito.
+Al termine del metodo **Remove,** **l'oggetto Err** può contenere uno dei codici di errore nell'elenco seguente.
 
 <dl> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed** - 2147749889 (0x80041001)
 </dt> <dd>
 
 Errore non specificato.
 
 </dd> <dt>
 
-**wbemErrNotFound** -2147749890 (0x80041002)
+**wbemErrNotFound** - 2147749890 (0x80041002)
 </dt> <dd>
 
 Il privilegio specificato non esiste.
@@ -83,11 +83,11 @@ Il privilegio specificato non esiste.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMPRIVILEGESET CLSID<br/>                                                     |
-| IID<br/>                      | \_ISWBEMPRIVILEGESET IID<br/>                                                      |
+| CLSID<br/>                    | CLSID \_ SWbemPrivilegeSet<br/>                                                     |
+| IID<br/>                      | IID \_ ISWbemPrivilegeSet<br/>                                                      |
 
 
 
@@ -98,7 +98,7 @@ Il privilegio specificato non esiste.
 [**SWbemPrivilegeSet**](swbemprivilegeset.md)
 </dt> <dt>
 
-[**SWbemPrivilegeSet. Add**](swbemprivilegeset-add.md)
+[**SWbemPrivilegeSet.Add**](swbemprivilegeset-add.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni su un evento di sistema tablet.
 ms.assetid: 725f4b43-0bcb-4452-a87f-b24a85de0049
-title: Struttura SYSTEM_EVENT_DATA
+title: SYSTEM_EVENT_DATA struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5d77c78a78a6cecae0368e8d9192a0dc0efc10e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58e153da2695990f74d1268aa3e861bb9011b108ebdd1ea2d5128ff6f8e40a20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708211"
 ---
-# <a name="system_event_data-structure"></a>\_ \_ Struttura dei dati degli eventi di sistema
+# <a name="system_event_data-structure"></a>Struttura SYSTEM \_ EVENT \_ DATA
 
 Contiene informazioni su un evento di sistema tablet.
 
@@ -46,14 +46,14 @@ typedef struct tagSYSTEM_EVENT_DATA {
 **bModifier**
 </dt> <dd>
 
-Valori di bit per i modificatori. Per ulteriori informazioni, vedere la sezione Osservazioni.
+Valori di bit per i modificatori. Per altre informazioni, vedere la sezione osservazioni.
 
 </dd> <dt>
 
-**Tasto wsul**
+**wKey**
 </dt> <dd>
 
-Analizza il codice per il carattere della tastiera.
+Analizzare il codice per il carattere della tastiera.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Posizione Y dell'evento.
 **bCursorMode**
 </dt> <dd>
 
-Tipo di cursore che ha causato l'evento. Per ulteriori informazioni, vedere la sezione Osservazioni.
+Tipo di cursore che ha causato l'evento. Per altre informazioni, vedere la sezione osservazioni.
 
 </dd> <dt>
 
@@ -87,28 +87,28 @@ Stato dei pulsanti al momento dell'evento di sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Gli eventi di sistema seguenti vengono definiti per l'utilizzo nel membro **bModifier** .
+Gli eventi di sistema seguenti sono definiti per l'uso nel **membro bModifier.**
 
 
 
 | Valore               | Descrizione                  |
 |---------------------|------------------------------|
-| \_modificatore se \_ CTRL  | È stato premuto il tasto CTRL. |
-| \_ALT modificatore se \_   | È stato premuto il tasto ALT.     |
-| \_MAIUSC se modificatore \_ | Il tasto MAIUSC è stato premuto.   |
+| \_edizione Standard MODIFICATORE \_ CTRL  | Il tasto CTRL è stato premuto. |
+| \_edizione Standard MODIFICATORE \_ ALT   | È stato premuto ALT.     |
+| \_edizione Standard SPOSTAMENTO DEI \_ MODIFICATORI | È stato premuto MAIUSC.   |
 
 
 
  
 
-Gli eventi di sistema seguenti vengono definiti per l'utilizzo nel membro **bCursorMode** .
+Gli eventi di sistema seguenti sono definiti per l'uso nel **membro bCursorMode.**
 
 
 
 | Valore              | Descrizione               |
 |--------------------|---------------------------|
-| \_cursore normale \_ se | Indica il suggerimento della penna.    |
-| \_cursore gomma se \_ | Indica la gomma della penna. |
+| \_edizione Standard CURSORE \_ NORMALE | Indica la punta della penna.    |
+| \_edizione Standard CURSORE \_ ERASER | Indica la gomma della penna. |
 
 
 
@@ -120,7 +120,7 @@ Gli eventi di sistema seguenti vengono definiti per l'utilizzo nel membro **bCur
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 
@@ -129,10 +129,10 @@ Gli eventi di sistema seguenti vengono definiti per l'utilizzo nel membro **bCur
 
 <dl> <dt>
 
-[**Metodo IStylusPlugin:: SystemEvent**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-systemevent)
+[**Metodo IStylusPlugin::SystemEvent**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-systemevent)
 </dt> <dt>
 
-[**Metodo ITabletEventSink:: SystemEvent**](itableteventsink-systemevent.md)
+[**Metodo ITabletEventSink::SystemEvent**](itableteventsink-systemevent.md)
 </dt> </dl>
 
  

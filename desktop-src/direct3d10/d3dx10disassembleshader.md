@@ -1,7 +1,7 @@
 ---
-description: Nota invece di usare questa funzione legacy, è consigliabile usare l'API D3DDisassemble. Questa funzione, che disassembla uno shader compilato in una stringa di testo che contiene istruzioni di assembly e assegnazioni di registro, non esiste più.
+description: Nota Invece di usare questa funzione legacy, è consigliabile usare l'API D3DDisassemble. Questa funzione, che disassembla uno shader compilato in una stringa di testo che contiene istruzioni di assembly e assegnazioni di registro, non esiste più.
 ms.assetid: f94264f8-121a-4bb7-bf1f-cc5d2cac6cd2
-title: Funzione D3DX10DisassembleShader (D3DX10Core. h)
+title: Funzione D3DX10DisassembleShader (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: 13716fd5d25e2e8602379ea3864c516fa5388475
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bd69b6dc2cede96e6ca07983195d202cfd248633f44a13fe1967393c446ca329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753221"
 ---
-# <a name="d3dx10disassembleshader-function"></a>D3DX10DisassembleShader (funzione)
+# <a name="d3dx10disassembleshader-function"></a>Funzione D3DX10DisassembleShader
 
 > [!Note]  
-> Invece di usare questa funzione legacy, è consigliabile usare l'API [**D3DDisassemble**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble) .
+> Anziché usare questa funzione legacy, è consigliabile usare l'API [**D3DDisassemble.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble)
 
  
 
@@ -48,34 +48,34 @@ HRESULT D3DX10DisassembleShader(
 
 <dl> <dt>
 
-*pShader* \[ in\]
+*pShader* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* void**
 
-Puntatore allo [**shader compilato**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout).
+Puntatore allo [**shader compilato.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout)
 
 </dd> <dt>
 
-*BytecodeLength* \[ in\]
+*BytecodeLength* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 Dimensioni di pShader.
 
 </dd> <dt>
 
-*EnableColorCode* \[ in\]
+*EnableColorCode* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Includere i tag HTML nell'output per codificare il risultato.
+Includere tag HTML nell'output per colorare il risultato.
 
 </dd> <dt>
 
-*pComments* \[ in\]
+*pComments* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -84,12 +84,12 @@ Stringa di commento nella parte superiore dello shader che identifica le costant
 
 </dd> <dt>
 
-*ppDisassembly* \[ out\]
+*ppDisassembly* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Indirizzo di un buffer (vedere [**interfaccia ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)) che contiene lo shader disassemblato.
+Indirizzo di un buffer (vedere [**ID3D10Blob Interface**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)) che contiene lo shader disassemblato.
 
 </dd> </dl>
 
@@ -97,13 +97,13 @@ Indirizzo di un buffer (vedere [**interfaccia ID3D10Blob**](/windows/desktop/api
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 10 seguenti.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo testo restituito include un'intestazione con la versione del compilatore HLSL usata per generare questo oggetto, i commenti che descrivono il layout della memoria dei buffer costanti usati dallo shader, le firme di input e output e i punti di associazione delle risorse.
+Questo testo restituito include un'intestazione con la versione del compilatore HLSL usata per generare questo oggetto, i commenti che descrivono il layout di memoria dei buffer costanti usati dallo shader, le firme di input e output e i punti di associazione delle risorse.
 
-Di seguito è riportato un esempio di disassemblaggio di uno shader compilato. Nell'esempio si presuppone che si inizi con uno shader compilato (visualizzato come *pVSBuf* , che è possibile vedere nell' [esempio HLSLWithoutFX10](https://msdn.microsoft.com/library/Ee416414(v=VS.85).aspx)).
+Di seguito è riportato un esempio di disassembling di uno shader compilato. L'esempio presuppone che si inizi con uno shader compilato (illustrato come *pVSBuf,* che è possibile vedere in [HLSLWithoutFX10 Sample](https://msdn.microsoft.com/library/Ee416414(v=VS.85).aspx)).
 
 
 ```
@@ -134,7 +134,7 @@ if( pVSBuf )
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -142,7 +142,7 @@ if( pVSBuf )
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

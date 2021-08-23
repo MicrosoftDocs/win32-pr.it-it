@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro bAtEndOfStream m è un flag booleano che indica se è stata raggiunta la fine del flusso.
+description: La variabile membro m bAtEndOfStream è un flag booleano che indica se è stata \_ raggiunta la fine del flusso.
 ms.assetid: 96cad18e-6a3e-409a-9949-5e050683e384
-title: 'Membro CRenderedInputPin:: m_bAtEndOfStream (Amextra. h)'
+title: Membro CRenderedInputPin::m_bAtEndOfStream (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfd0f3a02865f7945cbe875ca2dab7df339cf8ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1f4d5ccf336daaa62c4df8f73086dc61d30e8b981813790f195234a41eb2aab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652057"
 ---
-# <a name="crenderedinputpinm_batendofstream-member"></a>Membro bAtEndOfStream di CRenderedInputPin:: m \_
+# <a name="crenderedinputpinm_batendofstream-member"></a>Membro CRenderedInputPin::m \_ bAtEndOfStream
 
-La \_ variabile membro bAtEndOfStream m è un flag booleano che indica se è stata raggiunta la fine del flusso.
+La variabile membro m bAtEndOfStream è un flag booleano che indica se è stata \_ raggiunta la fine del flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bAtEndOfStream;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amextra. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amextra.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

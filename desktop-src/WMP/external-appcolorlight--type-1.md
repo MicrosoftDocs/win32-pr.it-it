@@ -1,9 +1,9 @@
 ---
-title: External. appColorLight (tipo 1)
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. appColorLight (tipo 1)
+title: External.appColorLight (tipo 1)
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | External.appColorLight (tipo 1)
 ms.assetid: b00547d5-8b15-49ac-a67b-79c245f51b14
 keywords:
-- External. appColorLight (tipo 1) Windows Media Player
+- External.appColorLight (tipo 1) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b885008a472c6b26249c2951754b7ac5e7ba58d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbf412969f10b144dd6c07b6e1f9e8e43800a770565aaefe11a14d3041628fd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649691"
 ---
-# <a name="externalappcolorlight-type-1"></a>External. appColorLight (tipo 1)
+# <a name="externalappcolorlight-type-1"></a>External.appColorLight (tipo 1)
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **appColorLight** Recupera il colore ombreggiato chiaro corrente dell'interfaccia utente di Windows Media Player.
+La **proprietà appColorLight** recupera il colore ombreggiato chiaro corrente dell'Windows Media Player utente.
 
 ``` syntax
 window.external.appColorLight
@@ -37,11 +37,11 @@ window.external.appColorLight
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media Player. È possibile usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
+Gli utenti possono modificare il colore dell'Windows Media Player utente. Puoi usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Frequenza di errore dei dati, in bit di errori al secondo, per un tipo di supporto video.
+description: Frequenza degli errori di dati, in bit al secondo, per un tipo di supporto video.
 ms.assetid: 90433ff4-a563-4751-86d9-caac0cc58194
-title: Attributo MF_MT_AVG_BIT_ERROR_RATE (Mfapi. h)
+title: MF_MT_AVG_BIT_ERROR_RATE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21eb33d1bc1636dd047dbd56ce6b7ad3a683f356
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4828485dce2b8aca7a3b55c55acd39c22df6b05a71aa34cf9853270d1ac29dde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664281"
 ---
-# <a name="mf_mt_avg_bit_error_rate-attribute"></a>\_ \_ \_ \_ Attributo frequenza media errori bit \_ MF mt
+# <a name="mf_mt_avg_bit_error_rate-attribute"></a>Attributo MF \_ MT \_ AVG \_ BIT ERROR \_ \_ RATE
 
-Frequenza di errore dei dati, in bit di errori al secondo, per un tipo di supporto video.
+Frequenza degli errori di dati, in bit al secondo, per un tipo di supporto video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Frequenza di errore dei dati, in bit di errori al secondo, per un tipo di suppor
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **dwBitErrorRate** delle strutture [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) e [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) .
+Questo attributo corrisponde al **membro dwBitErrorRate** delle strutture [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) e [**VIDEOINFOHEADER2.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

@@ -3,7 +3,7 @@ title: onblur
 description: Il gestore eventi onblur gestisce un evento che si verifica quando l'elemento perde lo stato attivo della tastiera.
 ms.assetid: 38bbf373-3050-4247-b2c9-3215bc63c6eb
 keywords:
-- Media Player Windows onblur
+- onblur Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 490dc249a042487f348937b5ee00804578293381
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9db8cd6755d0fe2e1199cca16350451273c2bd7618f35b597687b5fbc35c70fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647221"
 ---
 # <a name="onblur"></a>onblur
 
-Il gestore eventi **onblur** gestisce un evento che si verifica quando l'elemento perde lo stato attivo della tastiera.
+Il **gestore eventi onblur** gestisce un evento che si verifica quando l'elemento perde lo stato attivo della tastiera.
 
 ``` syntax
 onblur
@@ -30,7 +30,7 @@ onblur
 
 ## <a name="remarks"></a>Commenti
 
-Il gestore eventi **onblur** non è applicabile all'elemento **Effects** o all'elemento **popup** .
+Il **gestore eventi onblur** non è applicabile all'elemento **EFFECTS** o **all'elemento POPUP.**
 
 ## <a name="requirements"></a>Requisiti
 

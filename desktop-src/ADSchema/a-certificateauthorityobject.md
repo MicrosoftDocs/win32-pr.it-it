@@ -4,7 +4,7 @@ description: Riferimento all'autorità di certificazione associata a un punto di
 ms.assetid: 8dfd4441-6b45-4dc4-aed8-e33aa7fd099f
 ms.tgt_platform: multiple
 keywords:
-- Attributo Certificate-Authority-Object-schema AD
+- Schema AD dell'attributo Certificate-Authority-Object
 - Schema AD dell'attributo certificateAuthorityObject
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65ffceb810cd6a4ef3033834dbf0f3c489f1506e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e6196e7d40f18ff60bab78ee8580a609bbbd96fe00ed69b4b07d82ca9c695b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706871"
 ---
 # <a name="certificate-authority-object-attribute"></a>Attributo Certificate-Authority-Object
 
@@ -29,13 +29,13 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Certificate-Authority-Object            |
-| LDAP-Display-Name | certificateAuthorityObject              |
+| CN                | Oggetto Certificate-Authority            |
+| Ldap-Display-Name | certificateAuthorityObject              |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.684                  |
-| System-ID-GUID    | 963d2732-48be-11d1-a9c3-0000f80367c1    |
+| System-Id-Guid    | 963d2732-48be-11d1-a9c3-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento all'autorità di certificazione associata a un punto di distribuzion
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 

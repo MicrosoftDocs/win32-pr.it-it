@@ -1,31 +1,31 @@
 ---
-description: Specifica se un Media Foundation Transform (MFT) copia gli attributi dagli esempi di input agli esempi di output.
+description: Specifica se una trasformazione Media Foundation copia gli attributi dagli esempi di input agli esempi di output.
 ms.assetid: 039ecb35-9aa9-4e8a-bbbc-042b9c4c874c
-title: Proprietà MFPKEY_EXATTRIBUTE_SUPPORTED (Mftransform. h)
+title: MFPKEY_EXATTRIBUTE_SUPPORTED proprietà (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33017111eba95f54e88671cbcf026b3f40812a08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248609828df3ef977112058ffe0d169104e68c181fa455ef27f2adcea0220aaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663510"
 ---
-# <a name="mfpkey_exattribute_supported-property"></a>\_ \_ Proprietà supportata MFPKEY EXATTRIBUTE
+# <a name="mfpkey_exattribute_supported-property"></a>MFPKEY \_ EXATTRIBUTE \_ SUPPORTED - proprietà
 
-Specifica se un Media Foundation Transform (MFT) copia gli attributi dagli esempi di input agli esempi di output.
+Specifica se una trasformazione Media Foundation copia gli attributi dagli esempi di input agli esempi di output.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**\_bool Variant**
+**VARIANT \_ BOOL**
 
-\_bool VT
+VT \_ BOOL
 
 **boolVal**
 
@@ -39,25 +39,25 @@ Questo attributo può avere i valori seguenti.
 
 | Valore              | Descrizione                                                                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **VARIANT \_ true**  | Il MFT copia gli attributi dagli esempi di input negli esempi di output.                                                                                 |
-| **VARIANTE \_ false** | La sessione multimediale copia gli attributi dagli esempi di input agli esempi di output. Non sovrascrive gli attributi impostati da MFT sugli esempi di output. |
+| **VARIANT \_ TRUE**  | MFT copia gli attributi dagli esempi di input agli esempi di output.                                                                                 |
+| **VARIANT \_ FALSE** | La sessione multimediale copia gli attributi dagli esempi di input agli esempi di output. Non sovrascrive gli attributi che il MFT imposta sugli esempi di output. |
 
 
 
  
 
-Per ottenere questo attributo, chiamare **QueryInterface** sulla MFT per l'interfaccia **IPropertyStore** .
+Per ottenere questo attributo, chiamare **QueryInterface** in MFT per **l'interfaccia IPropertyStore.**
 
-Il valore predefinito è **Variant \_ false**. Se MFT non espone l'interfaccia **IPropertyStore** o se questa proprietà non è impostata, trattare il valore come **Variant \_ false**.
+Il valore predefinito è **VARIANT \_ FALSE.** Se MFT non espone **l'interfaccia IPropertyStore** o se questa proprietà non è impostata, considerare il valore **come VARIANT \_ FALSE.**
 
 Questa proprietà è di sola lettura.
 
 > [!NOTE] 
-> Questo attributo non è applicabile a MFTs asincrono. Gli attributi non verranno copiati dagli esempi di input agli esempi di output per MFTs asincroni, indipendentemente dal valore di questo attributo.
+> Questo attributo non si applica ai MFT asincroni. Gli attributi non verranno copiati dagli esempi di input agli esempi di output per MFT asincroni, indipendentemente dal valore di questo attributo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene restituito VARIANT \_ true se una MFT copia gli attributi di esempio.
+L'esempio seguente restituisce VARIANT \_ TRUE se un MFT copia gli attributi di esempio.
 
 
 ```C++
@@ -95,9 +95,9 @@ BOOL TransformCopiesSampleAttributes(IMFTransform *pMFT)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ BOOL TransformCopiesSampleAttributes(IMFTransform *pMFT)
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Attributi di esempio](sample-attributes.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2D:: GatherCmpBlue (S, float, float, int, uint)'
-description: "Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente blu e un valore di confronto. | Funzione Texture2D:: GatherCmpBlue (S, float, float, int, uint)"
+title: Funzione Texture2D::GatherCmpBlue(S,float,float,int,uint)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente blu e un valore di confronto. | Funzione Texture2D::GatherCmpBlue(S,float,float,int,uint)
 ms.assetid: 05033555-32A8-4023-BDAB-00D5F7725CA9
 keywords:
 - Funzione GatherCmpBlue HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 18c5e73157994148d943ccc07d52320f1929bc8e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: e4f1a8e24ad969f32216a63dccad42275d555ee7b5deffcd00505ecb6961b4b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671171"
 ---
-# <a name="texture2dgathercmpbluesfloatfloatintuint-function"></a>Funzione Texture2D:: GatherCmpBlue (S, float, float, int, uint)
+# <a name="texture2dgathercmpbluesfloatfloatintuint-function"></a>Funzione Texture2D::GatherCmpBlue(S,float,float,int,uint)
 
-Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente blu e un valore di confronto.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente blu e un valore di confronto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,16 +52,16 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -70,21 +70,21 @@ Valore da confrontare con ogni valore campionato.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Offset applicato alle coordinate di trama prima del campionamento.
+Offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato; passar
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -102,7 +102,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

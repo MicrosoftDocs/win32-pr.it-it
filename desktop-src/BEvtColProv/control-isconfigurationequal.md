@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: fb471f144a39519f1f724db458b57b624db2846d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6facd4f885eb1eb992f95bf4432e32704f7472d8125cb1022f7a6baf5cf591d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579671"
 ---
 # <a name="isconfigurationequal-method-of-the-control-class"></a>Metodo IsConfigurationEqual della classe Control
 
@@ -40,7 +40,7 @@ Uint32 IsConfigurationEqual(
 
 <dl> <dt>
 
-*Configurazione* \[ di in\]
+*Configurazione* \[ Pollici\]
 </dt> <dd>
 
 Configurazione da confrontare con la configurazione attiva.
@@ -75,10 +75,10 @@ Operazione completata
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                       |
 | Spazio dei nomi<br/>                | Radice \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

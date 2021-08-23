@@ -1,19 +1,19 @@
 ---
-description: Specifica se gli esempi hanno dimensioni fisse per un tipo di supporto.
+description: Specifica per un tipo di supporto se le dimensioni dei campioni sono fisse.
 ms.assetid: 2d67864a-fd2f-400d-8a1e-e71dc1920593
-title: Attributo MF_MT_FIXED_SIZE_SAMPLES (Mfapi. h)
+title: MF_MT_FIXED_SIZE_SAMPLES attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d1bb5bdd4e1330e4744902ed1b37cc55b7a67a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3662532d1e10857945a828ec3f46beef991fb438dfea0f33dc7d73832aeca7e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605631"
 ---
-# <a name="mf_mt_fixed_size_samples-attribute"></a>\_Attributo degli \_ \_ esempi di dimensioni fisse MF mt \_
+# <a name="mf_mt_fixed_size_samples-attribute"></a>Attributo MF \_ MT \_ FIXED SIZE \_ \_ SAMPLES
 
-Specifica se gli esempi hanno dimensioni fisse per un tipo di supporto.
+Specifica per un tipo di supporto se le dimensioni dei campioni sono fisse.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,9 +23,9 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è **true**, ogni campione nel flusso ha le stesse dimensioni (in byte). In caso contrario, la dimensione degli esempi potrebbe variare.
+Se questo attributo è **TRUE,** ogni campione nel flusso ha le stesse dimensioni (in byte). In caso contrario, le dimensioni dei campioni potrebbero variare.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

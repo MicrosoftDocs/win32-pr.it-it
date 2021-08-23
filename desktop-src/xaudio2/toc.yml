@@ -6,12 +6,12 @@
       items:
         - name: Introduzione a XAudio2
           href: xaudio2-introduction.md
-        - name: Concetti audio comuni
+        - name: Concetti comuni relativi all'audio
           href: common-audio-concepts.md
           items:
             - name: Coordinate dello spazio 3D
               href: coordinates-of-3d-space.md
-            - name: Percezione delle posizioni audio
+            - name: Percezione delle posizioni del suono
               href: perception-of-sound-positions.md
             - name: Coni audio
               href: sound-cones.md
@@ -23,7 +23,7 @@
             - name: Versioni di XAudio2
               href: xaudio2-versions.md
               items:
-                - name: 'Guida per gli sviluppatori per la versione ridistribuibile di XAudio 2,9'
+                - name: Guida per gli sviluppatori per la versione ridistribuibile di XAudio 2.9
                   href: xaudio2-redistributable.md
             - name: 'Procedura: Inizializzare XAudio2'
               href: how-to--initialize-xaudio2.md
@@ -40,20 +40,20 @@
               href: xaudio2-voices.md
             - name: 'Procedura: Usare voci di missaggio secondario'
               href: how-to--use-submix-voices.md
-            - name: Conversioni di frequenza di campionamento XAudio2
+            - name: Conversioni della frequenza di campionamento XAudio2
               href: xaudio2-sample-rate-conversions.md
-            - name: Mapping del canale predefinito XAudio2
+            - name: Mapping dei canali predefinito XAudio2
               href: xaudio2-default-channel-mapping.md
-            - name: Controllo volume e pitch
+            - name: Controllo volume e passo
               href: volume-and-pitch-control.md
               items:
-                - name: Controllo volume e pitch XAudio2
+                - name: Controllo del volume e del passo XAudio2
                   href: xaudio2-volume-and-pitch-control.md
-                - name: 'Procedura: modificare il pitch vocale'
+                - name: 'Procedura: Modificare il tono della voce'
                   href: how-to--change-voice-pitch.md
-                - name: 'Procedura: modificare il volume vocale'
+                - name: 'Procedura: Modificare il volume vocale'
                   href: how-to--change-voice-volume.md
-                - name: 'Procedura: eseguire il panning di un suono'
+                - name: 'Procedura: Eseguire una panoramica di un suono'
                   href: how-to--pan-a-sound.md
         - name: Callback
           href: callbacks.md
@@ -67,7 +67,7 @@
         - name: Grafici audio
           href: audio-graphs.md
           items:
-            - name: Grafico audio XAudio2
+            - name: XAudio2 Audio Graph
               href: xaudio2-audio-graph.md
             - name: 'Procedura: Creare un grafico di elaborazione audio di base'
               href: how-to--build-a-basic-audio-processing-graph.md
@@ -116,7 +116,7 @@
         - name: Funzionalità di debug
           href: debugging-facilities.md
           items:
-            - name: Funzionalità di debug XAudio2
+            - name: Funzionalità di debug di XAudio2
               href: xaudio2-debugging-facilities.md
             - name: Debug di glitch audio in XAudio2
               href: debugging-audio-glitches-in-xaudio2.md
@@ -171,7 +171,7 @@
               href: fxmasteringlimit-constants.md
             - name: Costanti FXREVERB
               href: fxreverb-constants.md
-            - name: Flag e valori limite XAudio2
+            - name: Valori limite e flag XAudio2
               href: xaudio2-boundary-values-and-flags.md
             - name: Codici di errore XAudio2
               href: xaudio2-error-codes.md
@@ -213,7 +213,7 @@
               href: /windows/desktop/api/x3daudio/nf-x3daudio-x3daudioinitialize
             - name: XAudio2AmplitudeRatioToDecibels
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2amplituderatiotodecibels
-            - name: XAudio2Create
+            - name: XAudio2Crea
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create
             - name: XAudio2CreateReverb
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createreverb
@@ -221,13 +221,13 @@
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createvolumemeter
             - name: XAudio2CutoffFrequencyToOnePoleCoefficient
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoonepolecoefficient
-            - name: XAudio2CutoffFrequencyToRadians
+            - name: XAudio2CutoffFrequencyToRadian
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoradians
             - name: XAudio2DecibelsToAmplitudeRatio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2decibelstoamplituderatio
             - name: XAudio2FrequencyRatioToSemitones
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2frequencyratiotosemitones
-            - name: XAudio2RadiansToCutoffFrequency
+            - name: XAudio2RadianToCutoffFrequency
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2radianstocutofffrequency
             - name: XAudio2SemitonesToFrequencyRatio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2semitonestofrequencyratio
@@ -257,7 +257,7 @@
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-release
                 - name: Metodo SetDebugConfiguration
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-setdebugconfiguration
-                - name: Metodo avvio
+                - name: Metodo StartEngine
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-startengine
                 - name: Metodo StopEngine
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-stopengine
@@ -302,12 +302,12 @@
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix
                 - name: Metodo SetOutputVoices
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputvoices
-                - name: Metodo sevolume
+                - name: Metodo SetVolume
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setvolume
             - name: IXAudio2SourceVoice
               href: /windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice
               items:
-                - name: Metodo di discontinuità
+                - name: Metodo Discontinuity
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-discontinuity
                 - name: Metodo ExitLoop
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-exitloop
@@ -377,7 +377,7 @@
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-isoutputformatsupported
                 - name: Metodo LockForProcess
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-lockforprocess
-                - name: Process (metodo)
+                - name: Metodo Process
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-process
                 - name: Reset (metodo)
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-reset
@@ -388,12 +388,12 @@
               items:
                 - name: Metodo GetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-getparameters
-                - name: Metodo separameters
+                - name: Metodo SetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-setparameters
             - name: IXAPOHrtfParameters
               href: /windows/desktop/api/hrtfapoapi/nn-hrtfapoapi-ixapohrtfparameters
               items:
-                - name: Metodo seenvironment
+                - name: Metodo SetEnvironment
                   href: /windows/desktop/api/hrtfapoapi/nf-hrtfapoapi-ixapohrtfparameters-setenvironment
                 - name: Metodo SetSourceGain
                   href: /windows/desktop/api/hrtfapoapi/nf-hrtfapoapi-ixapohrtfparameters-setsourcegain

@@ -1,11 +1,11 @@
 ---
-title: Metodo Network. setProxyExceptionList
-description: Il metodo setProxyExceptionList specifica l'elenco di eccezioni del proxy. | Metodo Network. setProxyExceptionList
+title: Metodo Network.setProxyExceptionList
+description: Il metodo setProxyExceptionList specifica l'elenco di eccezioni proxy. | Metodo Network.setProxyExceptionList
 ms.assetid: c9eeb058-5ffb-4405-9bf2-776f120e2db4
 keywords:
 - Metodo setProxyExceptionList Windows Media Player
-- Metodo setProxyExceptionList Media Player Windows, classe di rete
-- Classe di rete Media Player Windows, metodo setProxyExceptionList
+- Metodo setProxyExceptionList Windows Media Player , classe Network
+- Classe di rete Windows Media Player, metodo setProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1e48aa91ec4857181de5c607a586da42d6f2cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf72d9c35778e965021ec31671e4e345ec2d8e281d18f9fcb16c8f2ff04d4722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647301"
 ---
-# <a name="networksetproxyexceptionlist-method"></a>Metodo Network. setProxyExceptionList
+# <a name="networksetproxyexceptionlist-method"></a>Metodo Network.setProxyExceptionList
 
-Il metodo **setProxyExceptionList** specifica l'elenco di eccezioni del proxy.
+Il **metodo setProxyExceptionList** specifica l'elenco di eccezioni proxy.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ Network.setProxyExceptionList(
 
 <dl> <dt>
 
-*protocollo* \[ di in\]
+*protocollo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
 
 </dd> <dt>
 
-*elenco* \[ di in\]
+*elenco* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica un elenco delimitato da punti e virgola di host per i quali il server proxy viene ignorato.
+**Stringa** che specifica un elenco delimitato da punti e virgola di host per cui il server proxy viene ignorato.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco di computer, domini e/o indirizzi che ignoreranno il server proxy quando la parte host dell'URL di destinazione corrisponde a una voce nell'elenco.
+Si tratta di un elenco di computer, domini e/o indirizzi che ignorano il server proxy quando la parte host dell'URL di destinazione corrisponde a una voce nell'elenco.
 
-Il \* carattere può essere usato come carattere jolly per elencare le voci. Ad esempio, \* . com corrisponde a tutti gli host nel dominio com, mentre 67. \* corrisponderebbe a tutti gli host della classe 67 una subnet.
+Il \* carattere può essere usato come carattere jolly per elencare le voci. Ad esempio, .com corrisponderebbe a tutti gli host nel dominio com, mentre 67. corrisponderebbe a tutti gli host nella \* subnet A di classe \* 67.
 
-Questo metodo non ha alcun effetto a meno che **getProxySettings** non restituisca un valore pari a 2 (usare impostazioni manuali).
+Questo metodo non ha alcun effetto a meno **che getProxySettings non** restituisca il valore 2 (usare le impostazioni manuali).
 
 Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in esecuzione nel computer locale o nella Intranet.
 
@@ -75,7 +75,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **setProxyExceptionList** per specificare un elenco di host per cui il server proxy viene ignorato quando si utilizza il protocollo MMS. Il nuovo elenco viene recuperato da un elemento di testo HTML con ID = "XLIST". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **setProxyExceptionList** per specificare un elenco di host per cui il server proxy viene ignorato quando si usa il protocollo MMS. Il nuovo elenco viene recuperato da un elemento HTML TEXT con ID = "XLIST". **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -104,7 +104,7 @@ alert("Proxy settings must be manual!");
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: attributo loginShell
+title: Attributo loginShell
 description: Contiene il percorso della shell di accesso.
 ms.assetid: 3052a028-3565-4af6-b8d4-4c0f4f5f4781
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo loginShell
+- Attributo loginShell - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f26353159648d0f8b738e6b28383f1d38ecb05e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bf6771592e7e77b37108673913a4f56bf2e6a8145371c02d856078a2a9113917
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705751"
 ---
-# <a name="loginshell-attribute"></a>attributo loginShell
+# <a name="loginshell-attribute"></a>Attributo loginShell
 
 Contiene il percorso della shell di accesso.
 
@@ -29,12 +29,12 @@ Contiene il percorso della shell di accesso.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | loginShell                           |
-| LDAP-Display-Name | loginShell                           |
+| Ldap-Display-Name | loginShell                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.4                      |
-| System-ID-GUID    | a553d12c-3231-4c5e-8adf-8d189697721e |
+| System-Id-Guid    | a553d12c-3231-4c5e-8adf-8d189697721e |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene il percorso della shell di accesso.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il percorso della shell di accesso.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il percorso della shell di accesso.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene il percorso della shell di accesso.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Vero                                              |
+| Is-Single-Valued       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000000                                        |
-| Classi utilizzate in        | [**posixAccount**](c-posixaccount.md)<br/> |
+| Classi usate in        | [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETBIDIOPTIONS (RichEdit. h)
-description: Il \_ messaggio SETBIDIOPTIONS em imposta lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
+title: EM_SETBIDIOPTIONS messaggio (Richedit.h)
+description: Il messaggio EM \_ SETBIDIOPTIONS imposta lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
 ms.assetid: b518e423-317a-4654-9d9f-c501028e2a0a
 keywords:
-- Controlli di Windows Message EM_SETBIDIOPTIONS
+- EM_SETBIDIOPTIONS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84dc4b92f7a989ab5ef283b36708094a143475de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f22d03e1738fc688d34f55a6823f7ae95c2dfc41724e827cd31a184ac7cbdfce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545021"
 ---
-# <a name="em_setbidioptions-message"></a>\_Messaggio SETBIDIOPTIONS em
+# <a name="em_setbidioptions-message"></a>Messaggio EM \_ SETBIDIOPTIONS
 
-Il **messaggio \_ SETBIDIOPTIONS em** imposta lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
+Il **messaggio EM \_ SETBIDIOPTIONS** imposta lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,28 +32,28 @@ Il **messaggio \_ SETBIDIOPTIONS em** imposta lo stato corrente delle opzioni bi
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions) che indica come impostare lo stato delle opzioni bidirezionali nel controllo Rich Edit.
+Puntatore a [**una struttura BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions) che indica come impostare lo stato delle opzioni bidirezionali nel controllo Rich Edit.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo Rich Edit deve essere in modalità testo normale o **em \_ SETBIDIOPTIONS** non eseguirà alcuna operazione.
+Il controllo Rich Edit deve essere in modalità testo normale oppure **EM \_ SETBIDIOPTIONS** non farà nulla.
 
-Nei controlli testo normale, **em \_ SETBIDIOPTIONS** determina automaticamente la direzione e/o l'allineamento del paragrafo in base alle regole di contesto. Queste regole affermano che la direzione e/o l'allineamento derivano dal primo carattere sicuro nel controllo. Un carattere sicuro è uno dei quali è possibile determinare la direzione del testo (vedere Unicode Standard Version 2,0). La direzione e/o l'allineamento del paragrafo viene applicato al formato predefinito.
+Nei controlli di testo **normale, EM \_ SETBIDIOPTIONS** determina automaticamente la direzione del paragrafo e/o l'allineamento in base alle regole di contesto. Queste regole specificano che la direzione e/o l'allineamento derivano dal primo carattere sicuro nel controllo. Un carattere sicuro è un carattere da cui è possibile determinare la direzione del testo (vedere Unicode Standard versione 2.0). La direzione e/o l'allineamento del paragrafo vengono applicati al formato predefinito.
 
-**Em \_ SETBIDIOPTIONS** passa il formato di paragrafo predefinito a RTL (da destra a sinistra) se trova un carattere RTL,
+**EM \_ SETBIDIOPTIONS imposta** il formato di paragrafo predefinito su RTL (da destra a sinistra) solo se trova un carattere RTL,
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,10 +61,10 @@ Nei controlli testo normale, **em \_ SETBIDIOPTIONS** determina automaticamente 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ Nei controlli testo normale, **em \_ SETBIDIOPTIONS** determina automaticamente 
 **Riferimento**
 </dt> <dt>
 
-[**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions)
+[**OPZIONI DI OFFERTA**](/windows/desktop/api/Richedit/ns-richedit-bidioptions)
 </dt> <dt>
 
-[**\_GETBIDIOPTIONS em**](em-getbidioptions.md)
+[**EM \_ GETBIDIOPTIONS**](em-getbidioptions.md)
 </dt> </dl>
 
  

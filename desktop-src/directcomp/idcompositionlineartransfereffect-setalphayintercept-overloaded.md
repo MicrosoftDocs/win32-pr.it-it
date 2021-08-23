@@ -1,6 +1,6 @@
 ---
-title: Metodi SetAlphaYIntercept di IDCompositionLinearTransferEffect (Dcomp. h)
-description: Imposta l'intercettazione Y della funzione lineare per il canale alfa.
+title: Metodi IDCompositionLinearTransferEffect SetAlphaYIntercept (Dcomp.h)
+description: Imposta l'intercetta Y della funzione lineare per il canale alfa.
 ms.assetid: 7d0fa3a9-367b-4cb7-b6d2-db2f603f38bd
 keywords:
 - Metodi SetAlphaYIntercept DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 34f6f0db5dbbed154f33a3eeca891048315cfbb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3e53d2b3d85a9a8dcf828f13206feb71f72ad0ab9e53f9356aede157936eb26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670861"
 ---
-# <a name="idcompositionlineartransfereffectsetalphayintercept-methods"></a>Metodi IDCompositionLinearTransferEffect:: SetAlphaYIntercept
+# <a name="idcompositionlineartransfereffectsetalphayintercept-methods"></a>Metodi IDCompositionLinearTransferEffect::SetAlphaYIntercept
 
-Imposta l'intercettazione Y della funzione lineare per il canale alfa.
+Imposta l'intercetta Y della funzione lineare per il canale alfa.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta l'intercettazione Y della funzione lineare per il canale alfa.
 
 | Metodo                                                                                                           | Descrizione                                                                   |
 |:-----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
-| [**SetAlphaYIntercept**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphayintercept(float))                               | Imposta l'intercettazione Y della funzione lineare per il canale alfa.<br/> |
-| [**SetAlphaYIntercept (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphayintercept(idcompositionanimation)) | Imposta l'intercettazione Y della funzione lineare per il canale alfa.<br/> |
+| [**SetAlphaYIntercept**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphayintercept(float))                               | Imposta l'intercetta Y della funzione lineare per il canale alfa.<br/> |
+| [**SetAlphaYIntercept (IDCompositionAnimation) \***](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setalphayintercept(idcompositionanimation)) | Imposta l'intercetta Y della funzione lineare per il canale alfa.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Imposta l'intercettazione Y della funzione lineare per il canale alfa.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

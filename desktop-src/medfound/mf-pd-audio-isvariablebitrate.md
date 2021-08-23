@@ -1,19 +1,19 @@
 ---
-description: Specifica se i flussi audio in una presentazione presentano una velocità in bit variabile.
+description: Specifica se i flussi audio in una presentazione hanno una velocità in bit variabile.
 ms.assetid: 2bd7eee1-5a93-4bde-8b58-80b6395a094e
-title: Attributo MF_PD_AUDIO_ISVARIABLEBITRATE (Mfidl. h)
+title: MF_PD_AUDIO_ISVARIABLEBITRATE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a34d3dd64f9100050dc9aae37e811d00c9d58af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb5c8c15c12bcd867342fb11f5e753c196f9954aea0393b2a461e1804f411339
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664191"
 ---
-# <a name="mf_pd_audio_isvariablebitrate-attribute"></a>\_ \_ Attributo ISVARIABLEBITRATE MF PD audio \_
+# <a name="mf_pd_audio_isvariablebitrate-attribute"></a>Attributo MF \_ PD \_ AUDIO \_ ISVARIABLEBITRATE
 
-Specifica se i flussi audio in una presentazione presentano una velocità in bit variabile.
+Specifica se i flussi audio in una presentazione hanno una velocità in bit variabile.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica se i flussi audio in una presentazione presentano una velocità in bit
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un attributo facoltativo per i descrittori di presentazione. Se l'attributo è **true** (diverso da zero), la presentazione contiene almeno un flusso audio con velocità in bit (VBR) variabile. Se l'attributo è **false**, tutti i flussi audio hanno una velocità in bit costante.
+Si tratta di un attributo facoltativo per i descrittori di presentazione. Se l'attributo **è TRUE** (diverso da zero), la presentazione contiene almeno un flusso audio VBR (Variable-Bit-Rate). Se l'attributo è **FALSE,** tutti i flussi audio hanno una velocità in bit costante.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> </dl>
 
  

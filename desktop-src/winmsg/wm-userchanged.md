@@ -1,6 +1,6 @@
 ---
-description: Inviato a tutte le finestre dopo che l'utente ha effettuato l'accesso o la disconnessione. Quando l'utente effettua l'accesso o la disattivazione, il sistema aggiorna le impostazioni specifiche dell'utente. Il sistema invia questo messaggio immediatamente dopo l'aggiornamento delle impostazioni.
-title: Messaggio WM_USERCHANGED (winuser. h)
+description: Inviato a tutte le finestre dopo che l'utente ha eseguito l'accesso o la disconnessione. Quando l'utente accede o si disconnette, il sistema aggiorna le impostazioni specifiche dell'utente. Il sistema invia questo messaggio immediatamente dopo l'aggiornamento delle impostazioni.
+title: WM_USERCHANGED messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: VS|winui|~\winui\windowsuserinterface\windowing\windows\windowreference\windowmessages\wm_userchanged.htm
@@ -13,21 +13,21 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 14458bdafa0bbf4421c67db8102491db4e1fe6b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bb466e80070fe1be5cd7af7889fc5727c81f8caad89ad60c48c7a105b688fb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705701"
 ---
-# <a name="wm_userchanged-message"></a>\_Messaggio USERCHANGED WM
+# <a name="wm_userchanged-message"></a>Messaggio WM \_ USERCHANGED
 
-Inviato a tutte le finestre dopo che l'utente ha effettuato l'accesso o la disconnessione. Quando l'utente effettua l'accesso o la disattivazione, il sistema aggiorna le impostazioni specifiche dell'utente. Il sistema invia questo messaggio immediatamente dopo l'aggiornamento delle impostazioni.
+Inviato a tutte le finestre dopo che l'utente ha eseguito l'accesso o la disconnessione. Quando l'utente accede o si disconnette, il sistema aggiorna le impostazioni specifiche dell'utente. Il sistema invia questo messaggio immediatamente dopo l'aggiornamento delle impostazioni.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 > [!Note]  
-> Questo messaggio non è supportato in Windows Vista.
+> Questo messaggio non è supportato a Windows Vista.
 
  
 
@@ -68,9 +68,9 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                              |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                              |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 <dl> <dt>
 
-[Panoramica di Windows](windows.md)
+[Windows Panoramica](windows.md)
 </dt> </dl>
 
  

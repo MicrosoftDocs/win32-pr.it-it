@@ -3,7 +3,7 @@ title: Errore interno D1107
 description: Errore interno D1107
 ms.assetid: 8faafff5-246d-401d-9a28-6d1a26fce73f
 keywords:
-- Errore interno Direct2D D1107
+- Errore interno D1107 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a518968da713416729e8b4d70b4cda5356514e0
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 396dff22b54cc788386bd6c76f8c0dd4a1b777a5368460ec969d4493f902df22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "106334278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641921"
 ---
-# <a name="d1107-internal-error"></a>D1107: errore interno
+# <a name="d1107-internal-error"></a>D1107: Errore interno
 
-Si è verificato un errore interno del livello di debug. Codice \[ *codice* \] . \[ *\_ Numero di errore* \] .
+Si è verificato un errore interno del livello di debug. Codice \[ *.* \] Numero \[ *di errore \_ .* \]
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="code"></span><span id="CODE"></span>*codice*
+<span id="code"></span><span id="CODE"></span>*Codice*
 </dt> <dd>
 
 Codice di errore.
 
 </dd> <dt>
 
-<span id="error_number"></span><span id="ERROR_NUMBER"></span>*\_numero errore*
+<span id="error_number"></span><span id="ERROR_NUMBER"></span>*numero di \_ errore*
 </dt> <dd>
 
 Numero di errore.

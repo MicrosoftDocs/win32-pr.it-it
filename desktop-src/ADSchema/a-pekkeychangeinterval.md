@@ -1,10 +1,10 @@
 ---
-title: Attributo PEK-Key-Change-Interval
+title: Attributo Pek-Key-Change-Interval
 description: Intervallo di modifica della chiave di crittografia della password.
 ms.assetid: 2031feda-3f5d-4c76-bb45-42157fd5cb84
 ms.tgt_platform: multiple
 keywords:
-- Attributo PEK-Key-Change-Interval
+- Schema AD dell'attributo Pek-Key-Change-Interval
 - Schema AD dell'attributo pekKeyChangeInterval
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2259bdd4dfee24bbccfeafa6d5bb06490c24c25c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 242e794db2fd9ae35c785cca0c3268981c7330373462aaec22f82653121cba2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647831"
 ---
-# <a name="pek-key-change-interval-attribute"></a>Attributo PEK-Key-Change-Interval
+# <a name="pek-key-change-interval-attribute"></a>Attributo Pek-Key-Change-Interval
 
 Intervallo di modifica della chiave di crittografia della password.
 
@@ -29,14 +29,14 @@ Intervallo di modifica della chiave di crittografia della password.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | PEK-Key-Change-Interval              |
-| LDAP-Display-Name | pekKeyChangeInterval                 |
+| CN                | Pek-Key-Change-Interval              |
+| Ldap-Display-Name | pekKeyChangeInterval                 |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.866               |
-| System-ID-GUID    | 07383084-91df-11d1-aebc-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 07383084-91df-11d1-aebc-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Intervallo di modifica della chiave di crittografia della password.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

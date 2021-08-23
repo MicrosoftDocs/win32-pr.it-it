@@ -1,7 +1,7 @@
 ---
-description: Il metodo NotifyEvent invia una notifica degli eventi al gestore del grafico dei filtri.
+description: Il metodo NotifyEvent invia una notifica degli eventi al gestore del grafico del filtro.
 ms.assetid: 79587b72-4152-4443-9fde-c2746bf06191
-title: Metodo CBaseFilter. NotifyEvent (Amfilter. h)
+title: Metodo CBaseFilter.NotifyEvent (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 49fa689262d8f9b584c93a4b0485bbeaaacbf9a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e21ab1275aba05331055b7a38631f8c98ae65476aacf8f17073ed1dc45c90bf4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640311"
 ---
-# <a name="cbasefilternotifyevent-method"></a>CBaseFilter. NotifyEvent, metodo
+# <a name="cbasefilternotifyevent-method"></a>Metodo CBaseFilter.NotifyEvent
 
 Il `NotifyEvent` metodo invia una notifica degli eventi al gestore del grafico dei filtri.
 
@@ -67,15 +67,15 @@ Secondo parametro dell'evento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                                                                                            |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | Il gestore del grafico del filtro non accetta le notifiche degli eventi.<br/>                              |
-| <dl> <dt>**\_OK**</dt> </dl>      | Esito positivo.<br/>                                                                                    |
-| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Il filtro non dispone di un puntatore all'interfaccia [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) .<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | Il gestore del grafico del filtro non accetta notifiche degli eventi.<br/>                              |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione completata.<br/>                                                                                    |
+| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Il filtro non ha un puntatore [**all'interfaccia IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink)<br/> |
 
 
 
@@ -83,9 +83,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di codici di notifica e valori di parametri, vedere [codici di notifica degli eventi](event-notification-codes.md).
+Per un elenco dei codici di notifica e dei valori dei parametri, vedere [Codici di notifica degli eventi.](event-notification-codes.md)
 
-Nella classe di base, se il codice dell'evento è EC \_ completo, il metodo imposta il parametro *EventParam2* su un puntatore all'interfaccia [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro.
+Nella classe di base, se il codice evento è EC COMPLETE, il metodo imposta il parametro \_ *EventParam2* su un puntatore all'interfaccia [**IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,8 +93,8 @@ Nella classe di base, se il codice dell'evento è EC \_ completo, il metodo impo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

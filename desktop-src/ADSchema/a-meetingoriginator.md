@@ -1,5 +1,5 @@
 ---
-title: attributo meetingOriginator
+title: Attributo meetingOriginator
 description: Persona che ha pianificato la riunione.
 ms.assetid: ff83cbd1-d32a-4878-a56d-cb9ad70521ab
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01cbab0798e1d590ef4284ea9011351ca62d9d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7461ce93b4068d75b642dd496e42fe356446e2fb489eb8fb15802a81c2b60343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705561"
 ---
-# <a name="meetingoriginator-attribute"></a>attributo meetingOriginator
+# <a name="meetingoriginator-attribute"></a>Attributo meetingOriginator
 
 Persona che ha pianificato la riunione.
 
@@ -29,12 +29,12 @@ Persona che ha pianificato la riunione.
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingOriginator                                                                |
-| LDAP-Display-Name | meetingOriginator                                                                |
+| Ldap-Display-Name | meetingOriginator                                                                |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Privilegio di aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.577                                                           |
-| System-ID-GUID    | 11b6cc86-48c4-11d1-a9c3-0000f80367c1                                             |
+| System-Id-Guid    | 11b6cc86-48c4-11d1-a9c3-0000f80367c1                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -57,15 +57,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Persona che ha pianificato la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

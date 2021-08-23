@@ -1,7 +1,7 @@
 ---
-description: Recupera l'handle dell'evento. Questo operatore non è supportato come L-value.
+description: Recupera l'handle dell'evento. Questo operatore non è supportato come valore L.
 ms.assetid: 9000d6d1-bbca-44ac-8808-0b3b827086c5
-title: Metodo CAMEvent. operator HANDLE (Wxutil. h)
+title: Metodo CAMEvent.operator HANDLE (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72193e89f415aabebfea4288fcdb986ccf8d73bd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afc3bcc1044d3d14b7ebf77ce12027fb3b772185f62b917fce7b74fbb3fa7e87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689331"
 ---
-# <a name="cameventoperator-handle-method"></a>Metodo CAMEvent. operator HANDLE
+# <a name="cameventoperator-handle-method"></a>Metodo CAMEvent.operator HANDLE
 
-Recupera l'handle dell'evento. Questo operatore non è supportato come L-value.
+Recupera l'handle dell'evento. Questo operatore non è supportato come valore L.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la variabile membro [**CAMEvent:: m \_ hEvent**](camevent-m-hevent.md) .
+Restituisce la [**variabile membro CAMEvent::m \_ hEvent.**](camevent-m-hevent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la variabile membro [**CAMEvent:: m \_ hEvent**](camevent-m-hevent.m
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

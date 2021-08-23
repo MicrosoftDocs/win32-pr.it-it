@@ -1,6 +1,6 @@
 ---
 title: CDM_HIDECONTROL messaggio (Commdlg.h)
-description: Nasconde il controllo specificato in una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse.
+description: Nasconde il controllo specificato in una finestra di dialogo Apri o Salva con nome in stile Esplora risorse.
 ms.assetid: 5bf7f861-d38c-491a-89f0-5b3dfce8abfc
 keywords:
 - CDM_HIDECONTROL finestre di dialogo del messaggio
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21f1a5a7a1830ceeb2c3671b0dfb538ad89e0a58
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 0a69bbbf284631e83b607b6709dfec052e80ca0250e058fa68ca2d2c2a2dc0ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606361"
 ---
 # <a name="cdm_hidecontrol-message"></a>Messaggio HIDECONTROL di CDM \_
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, **le**  finestre di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo Elemento [comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Nasconde il controllo specificato in  una finestra di dialogo Apri o **Salva con nome** di tipo Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
+Nasconde il controllo specificato in  una finestra di dialogo Apri o **Salva con** nome in stile Esplora risorse. La finestra di dialogo deve essere stata creata con il flag **OFN \_ EXPLORER;** in caso contrario, il messaggio ha esito negativo.
 
 
 ```C++
@@ -97,6 +97,6 @@ void CommDlg_OpenSave_HideControl(hwnd, wparam);
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 

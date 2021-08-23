@@ -1,6 +1,6 @@
 ---
 title: 'Funzione WavePrefixSum '
-description: Restituisce la somma di tutti i valori nelle corsie attive con indici più piccoli rispetto a questo.
+description: Restituisce la somma di tutti i valori nelle corsie attive con indici più piccoli rispetto a questa.
 ms.assetid: F51B90AB-3E85-4521-8A2C-7C16A4ECB1F9
 keywords:
 - Funzione WavePrefixSum HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b133aa37b522156df73914eef66c4d3695a70ed7
-ms.sourcegitcommit: 41c742c88f7d9ce05e107008f186b6e872ff9288
+ms.openlocfilehash: bbb9ced3fbf7e150cbe3b9bca7eb176e61cf6c8881def22a977ae37a2dbf4b1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2021
-ms.locfileid: "104980983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671091"
 ---
 # <a name="waveprefixsum-function"></a>Funzione WavePrefixSum 
 
-Restituisce la somma di tutti i valori nelle corsie attive con indici più piccoli rispetto a questo.
+Restituisce la somma di tutti i valori nelle corsie attive con indici più piccoli rispetto a questa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,13 +44,13 @@ Somma dei valori.
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile garantire l'ordine delle operazioni su questa routine. Quindi, il \[ \] flag esatto viene ignorato al suo interno.
+L'ordine delle operazioni su questa routine non può essere garantito. Pertanto, in effetti, il \[ \] flag preciso viene ignorato al suo interno.
 
-Una somma suffissa può essere calcolata aggiungendo il prefisso Sum al valore della corsia corrente.
+È possibile calcolare una somma suffissa aggiungendo la somma del prefisso al valore della corsia corrente.
 
-Si noti che la corsia attiva con l'indice più basso riceve sempre un valore 0 per la somma del prefisso.
+Si noti che la corsia attiva con l'indice più basso riceverà sempre 0 per la somma del prefisso.
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 ## <a name="examples"></a>Esempio
 
@@ -59,21 +59,21 @@ uint numToSum = 2;
 uint prefixSum = WavePrefixSum( numToSum );
 ```
 
-In un computer con una dimensione di onda pari a 8 e tutte le corsie attive eccetto le corsie 0 e 4, i valori seguenti verrebbero restituiti da WavePrefixSum.
+In un computer con una dimensione dell'onda di 8 e tutte le corsie attive tranne le corsie 0 e 4, i valori seguenti verrebbero restituiti da WavePrefixSum.
 
-| Indice della corsia | status   | prefixSum     | 
+| lane index | status   | prefixSum     | 
 |------------|----------|---------------|
 | 0          | inactive | n/d           |
 | 1          | active   | = 0           |
-| 2          | active   | = 0 + 2         |
-| 3          | active   | = 0 + 2 + 2       |
+| 2          | active   | = 0+2         |
+| 3          | active   | = 0+2+2       |
 | 4          | inactive | n/d           |
-| 5          | active   | = 0 + 2 + 2 + 2     |
-| 6          | active   | = 0 + 2 + 2 + 2 + 2   |
-| 7          | active   | = 0 + 2 + 2 + 2 + 2 + 2 |
+| 5          | active   | = 0+2+2+2+2     |
+| 6          | active   | = 0+2+2+2+2+2   |
+| 7          | active   | = 0+2+2+2+2+2+2 |
 
 ## <a name="see-also"></a>Vedi anche
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 
 [Modello shader 6](shader-model-6-0.md)

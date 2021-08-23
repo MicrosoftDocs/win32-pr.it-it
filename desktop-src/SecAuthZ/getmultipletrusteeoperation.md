@@ -1,7 +1,7 @@
 ---
 description: La funzione GetMultipleTrusteeOperation non è supportata.
 ms.assetid: A4498891-28D7-4FA6-B755-67156C6583A5
-title: GetMultipleTrusteeOperation (funzione)
+title: Funzione GetMultipleTrusteeOperation
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcb8113f098dff1c27720d118d01cd0f37f6a77f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72f7ccb2edeb069a183cc066d245f1f658d8f460650a141cdffb8545b9275021
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672101"
 ---
-# <a name="getmultipletrusteeoperation-function"></a>GetMultipleTrusteeOperation (funzione)
+# <a name="getmultipletrusteeoperation-function"></a>Funzione GetMultipleTrusteeOperation
 
 Questa funzione non è supportata.
 

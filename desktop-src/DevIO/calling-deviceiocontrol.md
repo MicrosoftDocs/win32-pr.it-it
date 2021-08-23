@@ -4,18 +4,18 @@ ms.assetid: b4dbda89-effb-43f7-b3cc-774db57862a9
 title: Chiamata di DeviceIoControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf032182b4c461f13ebc046d30bc445abbfc9a1b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1372adc551d7816c047823b70a7541fa50318632ff7ea593f70896ceffc4f80c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642091"
 ---
 # <a name="calling-deviceiocontrol"></a>Chiamata di DeviceIoControl
 
-Un'applicazione può utilizzare la funzione [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) per eseguire operazioni di input e output dirette su, oppure recuperare informazioni su un'unità disco floppy, un'unità disco rigido, un'unità nastro o un'unità CD-ROM. Per un elenco dei codici di controllo standard inclusi nella documentazione di SDK, vedere la sezione Osservazioni di **DeviceIoControl**.
+Un'applicazione può usare la funzione [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) per eseguire operazioni di input e output dirette su un'unità disco floppy, un'unità disco rigido, un'unità nastro o un'unità CD-ROM. Per un elenco dei codici di controllo standard inclusi nella documentazione dell'SDK, vedere la sezione Osservazioni di **DeviceIoControl.**
 
-Nell'esempio seguente viene illustrato come recuperare informazioni sulla prima unità fisica nel sistema. Usa la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) per recuperare l'handle del dispositivo alla prima unità fisica, quindi usa [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con il [disco IOCTL ottenere il codice di controllo della \_ \_ \_ \_ geometria](/windows/desktop/api/winioctl/ni-winioctl-ioctl_disk_get_drive_geometry) dell'unità per riempire una struttura di [**\_ geometria del disco**](/windows/desktop/api/winioctl/ns-winioctl-disk_geometry) con informazioni sull'unità.
+Nell'esempio seguente viene illustrato come recuperare informazioni sulla prima unità fisica nel sistema. Usa la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) per recuperare l'handle del dispositivo per la prima unità fisica e quindi usa [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con il codice di controllo [IOCTL \_ DISK GET DRIVE \_ \_ \_ GEOMETRY](/windows/desktop/api/winioctl/ni-winioctl-ioctl_disk_get_drive_geometry) per riempire una struttura [**DISK \_ GEOMETRY**](/windows/desktop/api/winioctl/ns-winioctl-disk_geometry) con informazioni sull'unità.
 
 
 ```C++

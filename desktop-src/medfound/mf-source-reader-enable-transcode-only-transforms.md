@@ -1,33 +1,33 @@
 ---
-description: Consente al lettore di origine di utilizzare le trasformazioni di Media Foundation (MFTs) ottimizzate per la transcodifica.
+description: Consente al lettore di origine Media Foundation trasformazioni di destinazione (MFT) ottimizzate per la transcodificare.
 ms.assetid: 9463EB8C-2CA3-4F8F-8A2A-B1292879DD1B
-title: Attributo MF_SOURCE_READER_ENABLE_TRANSCODE_ONLY_TRANSFORMS (Mfreadwrite. h)
+title: MF_SOURCE_READER_ENABLE_TRANSCODE_ONLY_TRANSFORMS attributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04a9559254216a102613d97824601c004c71bfd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bc5362c93138ef301ac65ace799ad64d59ac9110af349822e0efa98d410686e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605018"
 ---
-# <a name="mf_source_reader_enable_transcode_only_transforms-attribute"></a>MF \_ source \_ Reader \_ Abilita l' \_ attributo TRANScode \_ only \_ Transformations
+# <a name="mf_source_reader_enable_transcode_only_transforms-attribute"></a>MF \_ SOURCE READER ENABLE \_ \_ \_ TRANSCODE ONLY \_ \_ TRANSFORMS attribute
 
-Consente al [lettore di origine](source-reader.md) di utilizzare le trasformazioni di Media Foundation (MFTS) ottimizzate per la transcodifica.
+Consente al [lettore di](source-reader.md) origine Media Foundation trasformazioni di destinazione (MFT) ottimizzate per la transcodificare.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT32**
 
-Considera come valore booleano.
+Considera come booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Alcuni MFTs, in particolare i decodificatori, sono ottimizzati per la transcodifica anziché per la riproduzione. Per impostazione predefinita, il lettore di origine non caricherà tali trasformazioni. Impostare questo attributo su **true** se si desidera utilizzare la transcodifica di MFTS con il lettore di origine.
+Alcuni MFT, in particolare i decodificatori, sono ottimizzati per la transcodificare anziché per la riproduzione. Per impostazione predefinita, il lettore di origine non carica tali trasformazioni. Impostare questo attributo su **TRUE se** si vuole usare la transcodificare MFT con il lettore di origine.
 
-Un'applicazione potrebbe impostare questo attributo se non elabora i dati in tempo reale (per la transcodifica o scenari simili). In caso contrario, per la riproduzione in tempo reale, utilizzare il comportamento predefinito.
+Un'applicazione potrebbe impostare questo attributo se non elabora i dati in tempo reale (per la transcodizzazione o scenari simili). In caso contrario, per la riproduzione in tempo reale, usare il comportamento predefinito.
 
-Internamente, questo attributo fa in modo che il lettore di origine includa il flag del **\_ flag enum di enumerazione MFT \_ \_ \_ solo** quando chiama [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex).
+Internamente, questo attributo fa sì che il lettore di origine includa il flag **MFT \_ ENUM \_ FLAG \_ TRANSCODE \_ ONLY** quando chiama [**MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Internamente, questo attributo fa in modo che il lettore di origine includa il f
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                        |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Internamente, questo attributo fa in modo che il lettore di origine includa il f
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Lettore di origine](source-reader.md)

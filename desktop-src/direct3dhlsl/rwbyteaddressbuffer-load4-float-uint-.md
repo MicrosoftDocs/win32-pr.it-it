@@ -1,5 +1,5 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: Load4 (uint, uint)'
+title: Funzione RWByteAddressBuffer::Load4(uint,uint)
 description: Ottiene quattro valori e restituisce lo stato dell'operazione.
 ms.assetid: 10C21836-3CE4-4AE9-82F4-C8BBDE19CA69
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14cb5354c21935c22833ea6f4b54b20fedc696f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0f64fe84f17ee4cc1fed25b870b2142b474e753fa41e82cd0d385c9ef185ee9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672111"
 ---
-# <a name="load4uintuint-function"></a>Funzione Load4 (uint, uint)
+# <a name="load4uintuint-function"></a>Funzione Load4(uint,uint)
 
 Ottiene quattro valori e restituisce lo stato dell'operazione.
 
@@ -29,8 +29,8 @@ Ottiene quattro valori e restituisce lo stato dell'operazione.
 
 ``` syntax
 uint4 Load4(
-  in  uint Location,
-  out uint Status
+  in  uint Location,
+  out uint Status
 );
 ```
 
@@ -40,7 +40,7 @@ uint4 Load4(
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,12 +49,12 @@ Posizione del buffer.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -85,6 +85,6 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi Load4](rwbyteaddressbuffer-load4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

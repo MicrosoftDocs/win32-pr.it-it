@@ -4,16 +4,16 @@ ms.assetid: 5347cd55-a27e-40b9-857c-09e3665a1817
 title: Controllo di un dispositivo esterno
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84cb82de59877f2527c92da9123d8a9d5a59d41e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92f530bb48f35a6e35a0ab75d0559cc3c6770c4d0d1dfb2948f871982f70eb0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652131"
 ---
 # <a name="controlling-an-external-device"></a>Controllo di un dispositivo esterno
 
-Per controllare un dispositivo VTR (video tape recorder), usare il metodo [**IAMExtTransport::p UT \_ mode**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-put_mode) . Specificare il nuovo stato usando una delle costanti elencate nello stato del trasporto del [dispositivo](device-transport-state.md). Per arrestare il dispositivo, ad esempio, usare quanto segue:
+Per controllare un dispositivo VTR (Video Tape Recorder), usare il metodo [**IAMExtTransport::p ut \_ Mode.**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-put_mode) Specificare il nuovo stato usando una delle costanti elencate in [Stato del trasporto del dispositivo](device-transport-state.md). Ad esempio, per arrestare il dispositivo, usare quanto segue:
 
 
 ```C++
@@ -22,15 +22,15 @@ pTransport->put_Mode(ED_MODE_STOP);
 
 
 
-Poiché il VTR è un dispositivo fisico, in genere si verifica un ritardo tra l'invio del comando e il completamento del comando. L'applicazione deve creare un secondo thread di lavoro che attende il completamento del comando. Al termine del comando, il thread può aggiornare l'interfaccia utente. Usare una sezione critica per serializzare la modifica dello stato.
+Poiché la VTR è un dispositivo fisico, in genere si verifica un ritardo tra l'esecuzione del comando e il completamento del comando. L'applicazione deve creare un secondo thread di lavoro che attende il completamento del comando. Al termine del comando, il thread può aggiornare l'interfaccia utente. Usare una sezione critica per serializzare la modifica dello stato.
 
-Alcuni VTR possono notificare all'applicazione quando lo stato di trasporto del dispositivo è cambiato. Se il dispositivo supporta questa funzionalità, il thread di lavoro può attendere la notifica. Secondo la specifica "unità di registrazione/lettore nastri AV/C" dell'associazione commerciale 1394, tuttavia, il comando notifica stato trasporto è facoltativo, ovvero i dispositivi non sono necessari per supportarla. Se un dispositivo non supporta la notifica, è consigliabile eseguire il polling del dispositivo a intervalli periodici per lo stato corrente.
+Alcuni VTR possono notificare all'applicazione quando lo stato di trasporto del dispositivo è cambiato. Se il dispositivo supporta questa funzionalità, il thread di lavoro può attendere la notifica. In base alla specifica "AV/C Tape Recorder/Player Subunit Specification" della 1394 Trade Association, tuttavia, il comando di notifica dello stato del trasporto è facoltativo, vale a dire che non è necessario che i dispositivi lo supportino. Se un dispositivo non supporta la notifica, è necessario eseguire il polling del dispositivo a intervalli periodici per lo stato corrente.
 
-In questa sezione viene innanzitutto descritto il meccanismo di notifica, quindi viene descritto il polling del dispositivo.
+Questa sezione descrive innanzitutto il meccanismo di notifica e quindi il polling dei dispositivi.
 
-Uso della notifica sullo stato del trasporto
+Utilizzo della notifica dello stato del trasporto
 
-La notifica sullo stato del trasporto funziona facendo in modo che il driver segnali un evento quando il trasporto passa a un nuovo stato. Nell'applicazione dichiarare una sezione critica, un evento e un handle di thread. La sezione critica viene usata per sincronizzare lo stato del dispositivo. L'evento viene usato per arrestare il thread di lavoro quando l'applicazione viene chiusa:
+La notifica dello stato del trasporto funziona facendo in modo che il driver segnali un evento quando il trasporto passa a un nuovo stato. Nell'applicazione dichiarare una sezione critica, un evento e un handle di thread. La sezione critica viene usata per sincronizzare lo stato del dispositivo. L'evento viene usato per arrestare il thread di lavoro quando l'applicazione viene chiusa:
 
 
 ```C++
@@ -56,7 +56,7 @@ hThread = CreateThread(NULL, 0, ThreadProc, 0, 0, &ThreadId);
 
 
 
-Nel thread di lavoro, iniziare chiamando il metodo [**IAMExtTransport:: GetStatus**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-getstatus) con il valore ed \_ inviare \_ HEVENT \_ Get. Questa chiamata restituisce un handle a un evento che verrà segnalato al completamento di un'operazione:
+Nel thread di lavoro iniziare chiamando il metodo [**IAMExtTransport::GetStatus**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-getstatus) con il valore ED \_ NOTIFY \_ HEVENT \_ GET. Questa chiamata restituisce un handle a un evento che verrà segnalato al completamento di un'operazione:
 
 
 ```C++
@@ -67,7 +67,7 @@ hr = pTransport->GetStatus(ED_NOTIFY_HEVENT_GET, (long*)&hNotify);
 
 
 
-Successivamente, chiamare di nuovo **GetState** e passare il valore \_ \_ Notify Change Mode \_ :
+Chiamare quindi di nuovo **GetState** e passare il valore ED \_ MODE CHANGE \_ \_ NOTIFY:
 
 
 ```C++
@@ -77,9 +77,9 @@ hr = pTransport->GetStatus(ED_MODE_CHANGE_NOTIFY, &State);
 
 
 
-Se il dispositivo supporta la notifica, il metodo restituisce il valore E \_ in sospeso. In caso contrario, è necessario eseguire il polling del dispositivo, come descritto nella sezione successiva. Supponendo che il dispositivo supporti la notifica, l'evento viene segnalato ogni volta che viene modificato lo stato del trasporto VTR. A questo punto, è possibile aggiornare l'interfaccia utente in modo da riflettere il nuovo stato. Per ottenere la notifica successiva, reimpostare l'handle di evento e chiamare di nuovo **GetStatus** con la \_ modalità di notifica di \_ modifica \_ .
+Se il dispositivo supporta la notifica, il metodo restituisce il valore E \_ PENDING. In caso contrario, è necessario eseguire il polling del dispositivo, come descritto nella sezione successiva. Supponendo che il dispositivo supporti la notifica, l'evento verrà segnalato ogni volta che lo stato del trasporto VTR cambia. A questo punto, è possibile aggiornare l'interfaccia utente per riflettere il nuovo stato. Per ottenere la notifica successiva, reimpostare l'handle dell'evento e chiamare di nuovo **GetStatus** con ED \_ MODE CHANGE \_ \_ NOTIFY.
 
-Prima di uscire dal thread di lavoro, rilasciare l'handle di evento chiamando **GetStatus** con il flag ed \_ inviare Notify \_ HEVENT \_ e l'indirizzo dell'handle:
+Prima della chiusura del thread di lavoro, rilasciare l'handle di evento chiamando **GetStatus** con il flag ED \_ NOTIFY \_ HEVENT \_ RELEASE e l'indirizzo dell'handle:
 
 
 ```C++
@@ -88,7 +88,7 @@ hr = pTransport->GetStatus(ED_NOTIFY_HEVENT_RELEASE, (long*)&hNotify)
 
 
 
-Nel codice seguente viene illustrata la procedura completa del thread. Si presuppone che la funzione UpdateTransportState sia una funzione dell'applicazione che aggiorna l'interfaccia utente. Si noti che il thread è in attesa di due eventi: l'evento di notifica (*hNotify*) e l'evento di terminazione del thread (*hThreadEnd*). Si noti anche che la sezione critica viene usata per proteggere la variabile di stato del dispositivo.
+Nel codice seguente viene illustrata la procedura di thread completa. Si presuppone che la funzione UpdateTransportState sia una funzione dell'applicazione che aggiorna l'interfaccia utente. Si noti che il thread attende due eventi: l'evento di notifica (*hNotify*) e l'evento di terminazione del thread (*hThreadEnd*). Si noti anche dove viene usata la sezione critica per proteggere la variabile di stato del dispositivo.
 
 
 ```C++
@@ -144,7 +144,7 @@ DWORD WINAPI ThreadProc(void *pParam)
 
 
 
-Usare anche la sezione Critical quando si inviano comandi al dispositivo, come indicato di seguito:
+Usare anche la sezione critica quando si emettere comandi per il dispositivo, come indicato di seguito:
 
 
 ```C++
@@ -159,7 +159,7 @@ LeaveCriticalSection(&csIssueCmd);
 
 
 
-Prima di uscire dall'applicazione, arrestare il thread secondario impostando l'evento thread-end:
+Prima della chiusura dell'applicazione, arrestare il thread secondario impostando l'evento di fine thread:
 
 
 ```C++
@@ -180,7 +180,7 @@ CloseHandle(hThread);
 
 Polling dello stato del trasporto
 
-Se si chiama **IAMExtTransport:: GetStatus** con il \_ flag di notifica della modifica della modalità ed \_ \_ , il valore restituito non è e \_ in sospeso, significa che il dispositivo non supporta la notifica. In tal caso, è necessario eseguire il polling del dispositivo per determinarne lo stato. Il *polling* indica semplicemente la chiamata della **\_ modalità Get** a intervalli regolari per verificare lo stato del trasporto. È comunque necessario usare un thread secondario e una sezione critica, come descritto in precedenza. Il thread esegue una query sul dispositivo per lo stato a intervalli regolari. Nell'esempio seguente viene illustrato un modo per implementare il thread:
+Se si chiama **IAMExtTransport::GetStatus** con il flag ED MODE CHANGE NOTIFY e il valore restituito non è E PENDING, significa che il dispositivo non \_ supporta la \_ \_ \_ notifica. In tal caso, è necessario eseguire il polling del dispositivo per determinarne lo stato. *Il polling* significa semplicemente chiamare **get \_ Mode** a intervalli regolari per controllare lo stato del trasporto. È comunque consigliabile usare un thread secondario e una sezione critica, come descritto in precedenza. Il thread esegue una query sul dispositivo per il relativo stato a intervalli regolari. L'esempio seguente illustra un modo per implementare il thread:
 
 
 ```C++
@@ -216,7 +216,7 @@ DWORD WINAPI ThreadProc(void *pParam)
 
 <dl> <dt>
 
-[Controllo di una videocamera DV](controlling-a-dv-camcorder.md)
+[Controllo di un videocamere DV](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

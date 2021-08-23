@@ -1,7 +1,7 @@
 ---
-description: Il metodo di inattività determina se l'oggetto è in attesa di dati.
+description: Il metodo IsIdle determina se l'oggetto è in attesa di dati.
 ms.assetid: be1b5633-f9e9-497e-8b6f-5634eae91273
-title: Metodo COutputQueue. IsValid (Outputq. h)
+title: Metodo COutputQueue.IsIdle (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9bf8b42189e356659e74398eaa3eefeb5f771a8a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c231e6e9dac3e05be6c01a2f3ebd87b5cdd69b8822a5ce26f930277c457206c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652121"
 ---
-# <a name="coutputqueueisidle-method"></a>Metodo COutputQueue. IsValid
+# <a name="coutputqueueisidle-method"></a>Metodo COutputQueue.IsIdle
 
 Il `IsIdle` metodo determina se l'oggetto è in attesa di dati.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il thread è in attesa e la matrice di esempio è vuota. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se il thread è in attesa e la matrice di esempio è vuota. In caso contrario, **restituisce FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il thread è in attesa e la matrice di esempio è vuota.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

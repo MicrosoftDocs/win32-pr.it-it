@@ -1,5 +1,5 @@
 ---
-description: 'D3DX10_ERR enumerazione: gli errori sono rappresentati da valori negativi e non possono essere combinati.'
+description: 'D3DX10_ERR enumerazione : gli errori sono rappresentati da valori negativi e non possono essere combinati.'
 ms.assetid: 4149ce6d-e87a-4003-b123-5555c6b3b086
 title: D3DX10_ERR enumerazione (D3DX10.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b2611bb343801bbe2bd6572f250a7f0eb6d9df7b9980445f1045ee89bee23203
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753571"
 ---
-# <a name="d3dx10_err-enumeration"></a>Enumerazione ERR D3DX10 \_
+# <a name="d3dx10_err-enumeration"></a>Enumerazione D3DX10 \_ ERR
 
-Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria di utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che possono essere restituiti da ognuno di essi. Questi elenchi non sono necessariamente completi.
+Gli errori sono rappresentati da valori negativi e non possono essere combinati. Di seguito è riportato un elenco di valori che possono essere restituiti dai metodi inclusi nella libreria di utilità D3DX. Vedere le descrizioni dei singoli metodi per gli elenchi dei valori che ognuno può restituire. Questi elenchi non sono necessariamente completi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,31 +54,31 @@ Il index buffer non può essere modificato.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**MESH NON VALIDA D3DX10 \_ ERR \_ \_**
+<span id="D3DX10_ERR_INVALID_MESH"></span><span id="d3dx10_err_invalid_mesh"></span>**MESH D3DX10 \_ ERR \_ NON \_ VALIDA**
 </dt> <dd>
 
 La mesh non è valida.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**D3DX10 \_ ERR \_ NON PUÒ \_ ATTR \_ SORT**
+<span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**D3DX10 \_ ERR \_ NON PUÒ \_ ORDINARE \_ ATTR**
 </dt> <dd>
 
 L'ordinamento degli attributi (D3DXMESHOPT \_ ATTRSORT) non è supportato come tecnica di ottimizzazione.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**INTERFACCIA ERR D3DX10 \_ \_ NON \_ \_ SUPPORTATA**
+<span id="D3DX10_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx10_err_skinning_not_supported"></span>**INTERFACCIA D3DX10 \_ ERR \_ NON \_ \_ SUPPORTATA**
 </dt> <dd>
 
-La skinning non è supportata.
+L'interfaccia non è supportata.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 \_ ERR \_ TROPPE \_ \_ INFLUENZE**
+<span id="D3DX10_ERR_TOO_MANY_INFLUENCES"></span><span id="d3dx10_err_too_many_influences"></span>**D3DX10 ERR TOO MANY INFLUENCES (D3DX10 \_ ERR \_ TROPPI FATTORI \_ DI \_ INFLUENZA)**
 </dt> <dd>
 
-Troppi fattori di influenza specificati.
+Troppi fattori specificati.
 
 </dd> <dt>
 

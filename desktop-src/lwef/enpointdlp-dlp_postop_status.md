@@ -1,5 +1,5 @@
 ---
-description: Specifica le informazioni sullo stato di un'operazione DLP dell'endpoint.
+description: Specifica informazioni sullo stato di un'operazione DLP dell'endpoint.
 title: DLP_POSTOP_STATUS struttura (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: c0221926700fc8960de5ef4d25c36136c3fc9737
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 6b8922bee5fb93ee4412833418a63c19dd311c8809cf64132a0f28fbe91d11bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610231"
 ---
 # <a name="dlp_postop_status-structure"></a>DLP_POSTOP_STATUS struttura
 
-Specifica le informazioni sullo stato di un'operazione DLP dell'endpoint.
+Specifica informazioni sullo stato di un'operazione DLP dell'endpoint.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ typedef struct _DLP_POSTOP_STATUS {
 *Versione* \[ Pollici\]
 </dt> <dd>
 
-Valore DWORD che specifica la versione dell'API. Questo valore deve essere sempre **DLP_POSTOP_STATUS_V_LATEST**. Questa costante è definita nel file di intestazione di esempio endpointdlp.h nell'articolo [Prevenzione della perdita dei dati degli endpoint](endpointdlp-endpoint-data-loss-prevention.md)
+Valore DWORD che specifica la versione dell'API. Questo valore deve essere sempre **DLP_POSTOP_STATUS_V_LATEST**. Questa costante è definita nel file di intestazione di esempio endpointdlp.h nell'articolo [Prevenzione della perdita di dati dell'endpoint](endpointdlp-endpoint-data-loss-prevention.md)
 
 </dd> </dl>
 
 <dl> <dt>
 
-*OperazioneSuccess* \[ Pollici\]
+*OperationSuccess* \[ Pollici\]
 </dt> <dd>
 
-Valore BOOL che indica se l'operazione di apertura è riuscita.
+VALORE BOOL che indica se l'operazione di apertura è stata completata correttamente.
 
 </dd> </dl>
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo AlignDown tronca un valore in un limite di allineamento specificato.
+description: Il metodo AlignDown tronca un valore a un limite di allineamento specificato.
 ms.assetid: f0efdedb-67ec-49d6-92a8-54485aa04e15
-title: Metodo CPullPin. AlignDown (Pullpin. h)
+title: Metodo CPullPin.AlignDown (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1383517f4931fa153fd141878475cc8775a61045
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7cdf16f3759bb7637fa243ce98bc4886b65e31d25bf62f5e9f581064d3741ea1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585351"
 ---
-# <a name="cpullpinaligndown-method"></a>CPullPin. AlignDown, metodo
+# <a name="cpullpinaligndown-method"></a>Metodo CPullPin.AlignDown
 
-Il `AlignDown` Metodo tronca un valore in un limite di allineamento specificato.
+Il `AlignDown` metodo tronca un valore a un limite di allineamento specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,8 +67,8 @@ Restituisce il risultato allineato.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

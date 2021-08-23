@@ -1,9 +1,9 @@
 ---
-title: Evento External. OnChangeViewOnlineListError
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | Evento External. OnChangeViewOnlineListError
+title: Evento External.OnChangeViewOnlineListError
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | Evento External.OnChangeViewOnlineListError
 ms.assetid: f53dfc80-a7d7-42b1-b390-e90aa108145f
 keywords:
-- Media Player di Windows dell'evento External. OnChangeViewOnlineListError
+- Evento External.OnChangeViewOnlineListError Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09e9ff854893268a00cb7b5f2fb35409be2e70e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ed6191de129bffea0e11abb24f1e271fc0b2873d2b306430a4e7eafe39b214d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648801"
 ---
-# <a name="externalonchangeviewonlinelisterror-event"></a>Evento External. OnChangeViewOnlineListError
+# <a name="externalonchangeviewonlinelisterror-event"></a>Evento External.OnChangeViewOnlineListError
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-L'evento **OnChangeViewOnlineListError** si verifica quando una chiamata al metodo [External. changeViewOnlineList](external-changeviewonlinelist.md) genera un errore.
+**L'evento OnChangeViewOnlineListError** si verifica quando una chiamata al [metodo External.changeViewOnlineList](external-changeviewonlinelist.md) restituisce un errore.
 
 ``` syntax
 window.external.OnChangeViewOnlineListError = functionname
@@ -40,56 +40,56 @@ Si tratta di una proprietà di sola scrittura che specifica il nome della funzio
 
 ## <a name="parameters"></a>Parametri
 
-La funzione che gestisce questo errore presenta i parametri seguenti.
+La funzione che gestisce questo errore ha i parametri seguenti.
 
 <dl> <dt>
 
-<span id="hr"></span><span id="HR"></span>*HR*
+<span id="hr"></span><span id="HR"></span>*Hr*
 </dt> <dd>
 
-Codice di errore **HRESULT** che indica il motivo dell'errore.
+Codice **di errore HRESULT** che indica il motivo dell'errore.
 
 </dd> <dt>
 
 <span id="LibraryLocationType"></span><span id="librarylocationtype"></span><span id="LIBRARYLOCATIONTYPE"></span>*LibraryLocationType*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **LibraryLocationType** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **LibraryLocationType** di **changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="LibraryLocationID"></span><span id="librarylocationid"></span><span id="LIBRARYLOCATIONID"></span>*LibraryLocationID*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **LibraryLocationID** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **LibraryLocationID** di **changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="Params"></span><span id="params"></span><span id="PARAMS"></span>*Params*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **params** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **Params** di **changeViewOnlineList.**
 
 </dd> <dt>
 
-<span id="FriendlyName"></span><span id="friendlyname"></span><span id="FRIENDLYNAME"></span>*FriendlyName*
+<span id="FriendlyName"></span><span id="friendlyname"></span><span id="FRIENDLYNAME"></span>*Friendlyname*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **FriendlyName** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **FriendlyName** di **changeViewOnlineList.**
 
 </dd> <dt>
 
 <span id="ListType"></span><span id="listtype"></span><span id="LISTTYPE"></span>*ListType*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **ListType** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **ListType** di **changeViewOnlineList.**
 
 </dd> <dt>
 
-<span id="ViewMode"></span><span id="viewmode"></span><span id="VIEWMODE"></span>*ViewMode*
+<span id="ViewMode"></span><span id="viewmode"></span><span id="VIEWMODE"></span>*Viewmode*
 </dt> <dd>
 
-La stessa stringa passata nel parametro **ViewMode** di **changeViewOnlineList**.
+Stessa stringa passata nel parametro **ViewMode** di **changeViewOnlineList.**
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ La stessa stringa passata nel parametro **ViewMode** di **changeViewOnlineList**
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> </dl>
 
  

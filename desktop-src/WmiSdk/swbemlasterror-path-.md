@@ -1,8 +1,8 @@
 ---
-description: La \_ proprietà Path dell'oggetto SWbemLastError restituisce un oggetto SWbemObjectPath che rappresenta il percorso dell'oggetto della classe o dell'istanza corrente. Questa proprietà può essere passata come parametro ai metodi che richiedono un percorso dell'oggetto.
+description: La proprietà Path \_ dell'oggetto SWbemLastError restituisce un oggetto SWbemObjectPath che rappresenta il percorso dell'oggetto della classe o dell'istanza corrente. Questa proprietà può essere passata come parametro ai metodi che richiedono un percorso di oggetto.
 ms.assetid: 5472e463-54cb-4ba2-8c00-08b70013e38d
 ms.tgt_platform: multiple
-title: Proprietà SWbemLastError.Path_ (wbemdisp. h)
+title: SWbemLastError.Path_ proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: c979fd76ffb4ee97f62362d53fac4151de17bae6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5503d11d5c73f2bf955b25da9b5dbccbc18d41b9bc9b84bc3235993562938b5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612201"
 ---
-# <a name="swbemlasterrorpath_-property"></a>Proprietà SWbemLastError. Path \_
+# <a name="swbemlasterrorpath_-property"></a>Proprietà SWbemLastError.Path \_
 
-La **proprietà \_ path** dell'oggetto [**SWbemLastError**](swbemlasterror.md) restituisce un oggetto [**SWbemObjectPath**](swbemobjectpath.md) che rappresenta il percorso dell'oggetto della classe o dell'istanza corrente. Questa proprietà può essere passata come parametro ai metodi che richiedono un percorso dell'oggetto.
+La **\_ proprietà Path** dell'oggetto [**SWbemLastError**](swbemlasterror.md) restituisce un [**oggetto SWbemObjectPath**](swbemobjectpath.md) che rappresenta il percorso dell'oggetto della classe o dell'istanza corrente. Questa proprietà può essere passata come parametro ai metodi che richiedono un percorso di oggetto.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,11 +44,11 @@ SWbemLastError.Path_ As Object
 
 ## <a name="remarks"></a>Commenti
 
-È possibile modificare solo la proprietà [**Class**](swbemobjectpath-class.md) dell'istanza [**SWbemObjectPath**](swbemobjectpath.md) restituita. Se si tenta di modificare qualsiasi altra proprietà o si tenta di chiamare i metodi [**SetAsClass**](swbemobjectpath-setasclass.md) o [**SetAsSingleton**](swbemobjectpath-setassingleton.md) , si ottiene un errore di **wbemErrReadOnly**.
+È possibile [**modificare**](swbemobjectpath-class.md) solo la proprietà Class dell'istanza [**di SWbemObjectPath**](swbemobjectpath.md) restituita. Se si tenta di modificare qualsiasi altra proprietà o di chiamare i metodi [**SetAsClass**](swbemobjectpath-setasclass.md) o [**SetAsSingleton,**](swbemobjectpath-setassingleton.md) viene visualizzato un errore **wbemErrReadOnly**.
 
-Per questo motivo, non è possibile modificare l'oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che corrisponde al valore della proprietà [**Keys**](swbemobjectpath-keys.md) dell'istanza di [**SWbemObjectPath**](swbemobjectpath.md) restituita. Se si tenta di chiamare i metodi [**Add**](swbemnamedvalueset-add.md), [**Remove**](swbemnamedvalueset-remove.md)o [**DeleteAll**](swbemnamedvalueset-deleteall.md) su questo valore, si ottiene un errore **wbemErrReadOnly** . Non è inoltre possibile modificare i [**SWbemNamedValue**](swbemnamedvalue.md) ottenuti da questa raccolta. I tentativi di modificare la proprietà [**value**](swbemnamedvalue-value.md) restituiscono lo stesso codice di errore.
+Per questo scopo, non è possibile modificare [**l'oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) che è il valore della [**proprietà Keys**](swbemobjectpath-keys.md) dell'istanza [**di SWbemObjectPath**](swbemobjectpath.md) restituita. Se si tenta di chiamare i [**metodi Add**](swbemnamedvalueset-add.md), [**Remove**](swbemnamedvalueset-remove.md)o [**DeleteAll**](swbemnamedvalueset-deleteall.md) su questo valore, viene visualizzato un errore **wbemErrReadOnly.** Inoltre, non è possibile modificare [**SWbemNamedValue ottenuto**](swbemnamedvalue.md) da questa raccolta. I tentativi di modificare [**la proprietà Value**](swbemnamedvalue-value.md) restituiscono lo stesso codice di errore.
 
-Tuttavia, se si chiama [**SWbemObject. Clone \_**](swbemobject-clone-.md) per creare una copia, la [**proprietà \_ path**](swbemobject-path-.md) della copia è completamente modificabile.
+Tuttavia, se si chiama [**\_ SWbemObject.Clone**](swbemobject-clone-.md) per creare una copia, la [**proprietà Path \_**](swbemobject-path-.md) della copia è completamente modificabile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,11 +58,11 @@ Tuttavia, se si chiama [**SWbemObject. Clone \_**](swbemobject-clone-.md) per cr
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMLASTERROR CLSID<br/>                                                        |
-| IID<br/>                      | \_ISWBEMLASTERROR IID<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemLastError<br/>                                                         |
 
 
 

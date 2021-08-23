@@ -1,10 +1,10 @@
 ---
-title: attributo per la nuova-macchina-OU
-description: Indica la posizione in cui verrà creato il nuovo account computer client.
+title: Attributo netboot-New-Machine-OU
+description: Indica dove verrà creato il nuovo account del computer client.
 ms.assetid: 0e1a9145-65cc-499f-a264-c56f9028341b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo "New-Machine-OU"
+- Netboot-New-Machine-OU attribute AD Schema
 - Schema AD dell'attributo netbootNewMachineOU
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a3f4a8169d91dc206f6b57cba96374903077b7f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2878f775f524b5eb67563ae60d5039aeb4f0603cf2b9103e96409d89280e637e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648531"
 ---
-# <a name="netboot-new-machine-ou-attribute"></a>attributo per la nuova-macchina-OU
+# <a name="netboot-new-machine-ou-attribute"></a>Attributo netboot-New-Machine-OU
 
-Indica la posizione in cui verrà creato il nuovo account computer client.
+Indica dove verrà creato il nuovo account del computer client.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | -Nuovo-computer-OU                  |
-| LDAP-Display-Name | netbootNewMachineOU                     |
+| CN                | netboot-New-Machine-OU                  |
+| Ldap-Display-Name | netbootNewMachineOU                     |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.856                  |
-| System-ID-GUID    | 0738307d-91df-11d1-aebc-0000f80367c1    |
+| System-Id-Guid    | 0738307d-91df-11d1-aebc-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica la posizione in cui verrà creato il nuovo account computer client.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

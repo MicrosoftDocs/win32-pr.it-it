@@ -13,10 +13,10 @@ ms.locfileid: "119690141"
 ---
 # <a name="mci-implementations-for-specific-devices"></a>Implementazioni MCI per dispositivi specifici
 
-Negli argomenti seguenti viene illustrato l'uso dei comandi MCI con dispositivi MCI specifici:
+Gli argomenti seguenti illustrano l'uso dei comandi MCI con dispositivi MCI specifici:
 
 -   [MCIAVI](mciavi.md)
--   [Servizi vcr](vcr-services.md)
+-   [Servizi VCR](vcr-services.md)
 
  
 

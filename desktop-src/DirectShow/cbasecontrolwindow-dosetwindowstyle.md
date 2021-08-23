@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db88c5818d31d65f361ae1a805bd50c285d4a5c2
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d3b1f72ace792f13f88fbf0ce1e0edaf7b08789ecba88aede0b4094e9e75ae52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640882"
 ---
 # <a name="cbasecontrolwindowdosetwindowstyle-method"></a>Metodo CBaseControlWindow.DoSetWindowStyle
 
-Il metodo modifica gli stili di finestra tipici `DoSetWindowStyle` o estesi.
+Il `DoSetWindowStyle` metodo modifica gli stili di finestra tipici o estesi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ Valore che specifica gli stili da impostare. I possibili valori sono i seguenti:
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |--------------|--------------------------------------|
 | STILE \_ GWL   | Recuperare gli stili della finestra.          |
 | GWL \_ EXSTYLE | Recuperare gli stili di finestra estesi. |
@@ -82,7 +82,7 @@ Questa funzione membro chiama la funzione **Win32 SetWindowLong** per impostare 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

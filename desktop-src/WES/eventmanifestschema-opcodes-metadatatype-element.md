@@ -1,9 +1,9 @@
 ---
-title: OpCodes (MetadataType)-elemento
-description: Definisce un elenco di codici operativi che è possibile usare per raggruppare gli eventi all'interno di un'attività. | OpCodes (MetadataType)-elemento
+title: Elemento opcodes (MetadataType)
+description: Definisce un elenco di codici operativo che è possibile usare per raggruppare gli eventi all'interno di un'attività. | Elemento opcodes (MetadataType)
 ms.assetid: 2dd4719b-8f02-4f0b-91b5-ee892a425a00
 keywords:
-- Log eventi dell'elemento OpCodes
+- Elemento opcodes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d21f7bafc10b7669ee446247871e110a1ca99336
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2c0adab32e9b514ac9c90f1f54bde4b7dc3f1f8f12fbc590f16a6f48d766a167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652071"
 ---
-# <a name="opcodes-metadatatype-element"></a>OpCodes (MetadataType)-elemento
+# <a name="opcodes-metadatatype-element"></a>Elemento opcodes (MetadataType)
 
-Definisce un elenco di codici operativi che è possibile usare per raggruppare gli eventi all'interno di un'attività.
+Definisce un elenco di codici operativo che è possibile usare per raggruppare gli eventi all'interno di un'attività.
 
 ``` syntax
 <xs:element name="opcodes"
@@ -30,7 +30,7 @@ Definisce un elenco di codici operativi che è possibile usare per raggruppare g
  />
 ```
 
-L'elemento **OpCodes** viene definito dal tipo complesso [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+**L'elemento opcodes** è definito dal [**tipo complesso MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **OpCodes** viene definito dal tipo complesso [**MetadataType**](even
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

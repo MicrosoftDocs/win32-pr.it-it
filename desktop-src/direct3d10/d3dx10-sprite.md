@@ -1,7 +1,7 @@
 ---
-description: Definisce le informazioni sulla posizione, sulla trama e sul colore di uno sprite.
+description: Definisce le informazioni su posizione, trama e colore relative a uno sprite.
 ms.assetid: 4b8d1ed1-75d5-418c-b809-410c6a44d425
-title: Struttura D3DX10_SPRITE (D3DX10. h)
+title: D3DX10_SPRITE struttura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: b896b8158e84caa841addbac7abae8c972c06acd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec8b220d55d3ac55d2a8b68fa3b95398a395611da150235d03314114055214e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753511"
 ---
-# <a name="d3dx10_sprite-structure"></a>\_Struttura d3dx10 sprite
+# <a name="d3dx10_sprite-structure"></a>Struttura SPRITE D3DX10 \_
 
-Definisce le informazioni sulla posizione, sulla trama e sul colore di uno sprite.
+Definisce le informazioni su posizione, trama e colore relative a uno sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)**
 
 </dd> <dd>
 
-Trasformazione del mondo del modello dello sprite. Definisce la posizione e l'orientamento dello sprite nello spazio globale.
+Trasformazione del modello-mondo dello sprite. Definisce la posizione e l'orientamento dello sprite nello spazio del mondo.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)**
 
 </dd> <dd>
 
-Offset dall'angolo superiore sinistro della trama che indica dove deve essere avviata l'immagine sprite nella trama. **TexCoord** è nelle coordinate di trama.
+Offset dall'angolo superiore sinistro della trama che indica dove deve iniziare l'immagine sprite nella trama. **TexCoord** è in coordinate di trama.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)**
 
 </dd> <dd>
 
-Vettore che contiene la larghezza e l'altezza dello sprite nelle coordinate di trama.
+Vettore contenente la larghezza e l'altezza dello sprite nelle coordinate della trama.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)**
 
 </dd> <dd>
 
-Colore che verrà moltiplicato con il colore del pixel prima del rendering.
+Colore che verrà moltiplicato con il colore in pixel prima del rendering.
 
 </dd> <dt>
 
@@ -95,18 +95,18 @@ Tipo: **[ **ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d
 
 </dd> <dd>
 
-Puntatore a una visualizzazione risorse dello shader che rappresenta la trama dello sprite. Vedere [**interfaccia ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview).
+Puntatore a una visualizzazione di risorse shader che rappresenta la trama dello sprite. Vedere [**ID3D10ShaderResourceView Interface (Interfaccia ID3D10ShaderResourceView).**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview)
 
 </dd> <dt>
 
 **TextureIndex**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indice della trama. Se pTexture non rappresenta una matrice di trama, deve essere 0.
+Indice della trama. Se pTexture non rappresenta una matrice di trame, deve essere 0.
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Indice della trama. Se pTexture non rappresenta una matrice di trama, deve esser
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 

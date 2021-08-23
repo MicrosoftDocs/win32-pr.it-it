@@ -1,7 +1,7 @@
 ---
-description: Questo operatore aggiunge due tempi di riferimento e imposta questo oggetto sul risultato.
+description: Questo operatore aggiunge due volte di riferimento e imposta questo oggetto sul risultato.
 ms.assetid: 6d29014b-0e31-497e-8326-e3fefc022227
-title: Metodo COARefTime. Operator + = (Ctlutil. h)
+title: Metodo COARefTime.operator+= (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6a03d9e98c3c2f2ca09c3f90f2cb0867d976e02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcb635e3026cec18aa5bea199b6712c15c6472d81e9b6707267d15d7afcfa6ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585561"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator + = (metodo)
+# <a name="coareftimeoperator-method"></a>Metodo COARefTime.operator+=
 
-Questo operatore aggiunge due tempi di riferimento e imposta questo oggetto sul risultato.
+Questo operatore aggiunge due volte di riferimento e imposta questo oggetto sul risultato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ COARefTime& operator+=(
 
 <dl> <dt>
 
-*RT* \[ Ref\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Riferimento all'oggetto **COARefTime** da aggiungere.
+Riferimento **all'oggetto COARefTime** da aggiungere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un riferimento all'oggetto.
+Restituisce un riferimento all'oggetto .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un riferimento all'oggetto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

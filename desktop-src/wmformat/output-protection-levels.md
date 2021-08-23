@@ -3,41 +3,41 @@ title: Livelli di protezione dell'output
 description: Livelli di protezione dell'output
 ms.assetid: 89a9fc13-5ade-4a33-8304-05a2ec999fc1
 keywords:
-- Windows Media Format SDK, livelli di protezione dell'output (OPL)
+- Windows Media Format SDK, livelli di protezione di output (OPL)
 - Digital Rights Management (DRM), livelli di protezione dell'output (OPL)
-- DRM (Digital Rights Management), livelli di protezione dell'output (OPL)
+- DRM (Digital Rights Management),livelli di protezione di output (OPL)
 - livelli di protezione dell'output (OPL)
-- OPL (livelli di protezione dell'output)
+- OPL (livelli di protezione di output)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5e5c1e08615b55aa1fb63e6d0c4e7bb82887c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f76804b70df5db085484cb769e4c60f046aedadd9cd177480de90b8a3eb5ad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707461"
 ---
 # <a name="output-protection-levels"></a>Livelli di protezione dell'output
 
-I livelli di protezione dell'output (OPLs) sono classificazioni numeriche associate a diverse tecnologie che ricevono contenuto multimediale digitale. Il livello supportato da una tecnologia dipende dalla loro sicurezza. Il sistema OPL, introdotto in Windows Media DRM 10, consente la creazione di licenze con una maggiore flessibilità rispetto alle versioni precedenti. È possibile specificare OPLs minime necessarie per la riproduzione e per la copia. Inoltre, è possibile specificare eccezioni al valore minimo di OPL, per consentire a una tecnologia non nominale sufficientemente elevata o di impedire una tecnologia con un OPL che supera il minimo.
+I livelli di protezione dell'output sono classificazioni numeriche associate a varie tecnologie che ricevono contenuto multimediale digitale. Il livello che una tecnologia supporta dipende dalla sua sicurezza. Il sistema OPL, introdotto in Windows Media DRM 10, consente di creare licenze con maggiore flessibilità rispetto alle versioni precedenti. È possibile specificare i valori OPL minimi necessari per la riproduzione e la copia. Inoltre, è possibile specificare eccezioni per il valore OPL minimo, per consentire una tecnologia non sufficientemente elevata o per non consentire una tecnologia con un OPL che supera il minimo.
 
-Specificando le restrizioni per le licenze che usano OPLs, un proprietario del contenuto deve usare solo due azioni (copia e riproduzione), in cui nelle versioni precedenti sono state definite azioni separate per i vari tipi di dispositivi supportati per la copia (SDMI, non SDMI e il CD audio del libro rosso).
+Se si specificano restrizioni per le licenze tramite opls, un proprietario del contenuto deve usare solo due azioni (Copia e Riproduci), in cui le versioni precedenti avevano azioni separate definite per i vari tipi di dispositivi supportati per la copia (SDMI, non SDMI e CD audio Red Book).
 
-**Nota** Il DRM non è supportato dalla versione basata su x64 di questo SDK.
+**Nota** DRM non è supportato dalla versione basata su x64 di questo SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità di Rights Management digitali**](digital-rights-management-features.md)
+[**Funzionalità Rights Management digital**](digital-rights-management-features.md)
 </dt> <dt>
 
-[**Utilizzo dei livelli di protezione dell'output**](working-with-output-protection-levels.md)
+[**Uso dei livelli di protezione dell'output**](working-with-output-protection-levels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

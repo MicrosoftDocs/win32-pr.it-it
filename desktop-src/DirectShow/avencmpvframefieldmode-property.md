@@ -1,33 +1,33 @@
 ---
-description: Specifica se il codificatore produce campi codificati o frame codificati. Questa proprietà si applica ai codificatori video MPEG.
+description: Specifica se il codificatore produce campi codificati o fotogrammi codificati. Questa proprietà si applica ai codificatori video MPEG.
 ms.assetid: bf21ea55-662f-4a69-8528-67592b8b8645
-title: Proprietà AVEncMPVFrameFieldMode (codecapis. h)
+title: Proprietà AVEncMPVFrameFieldMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bac16a4002cc7bdc074c78d5c3452438f7c3ad91
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8ab8098ee905f2d47c2ff2704e2d2d2c9733f868b90ac92e2afed9ba1fdf9d67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641241"
 ---
-# <a name="avencmpvframefieldmode-property"></a>Proprietà AVEncMPVFrameFieldMode
+# <a name="avencmpvframefieldmode-property"></a>AVEncMPVFrameFieldMode - proprietà
 
-Specifica se il codificatore produce campi codificati o frame codificati. Questa proprietà si applica ai codificatori video MPEG.
+Specifica se il codificatore produce campi codificati o fotogrammi codificati. Questa proprietà si applica ai codificatori video MPEG.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMPVFrameFieldMode**
+**CODECAPI \_ AVEncMPVFrameFieldMode**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncMPVFrameFieldMode**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvframefieldmode) .
+Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncMPVFrameFieldMode.**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvframefieldmode)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncMPVFrameF
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncMPVFrameF
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

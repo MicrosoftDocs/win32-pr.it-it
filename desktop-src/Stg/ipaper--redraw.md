@@ -1,21 +1,21 @@
 ---
-title: IPaper ridisegnato
-description: Il metodo di riestrazione IPaper si basa sulla tecnologia del punto di connessione.
+title: IPaper Redraw
+description: Il metodo IPaper Redraw si basa sulla tecnologia del punto di connessione.
 ms.assetid: d0126a47-d616-4cc0-b270-75779a51c843
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 968d2cf545296f8413d613410d9cbb759cb2b897
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4343cc836216706bfe029dfe80c02978240a76317c64cb7de35c9d1acc5220c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662711"
 ---
-# <a name="ipaperredraw"></a>IPaper:: redisegnato
+# <a name="ipaperredraw"></a>IPaper::Redraw
 
-Il metodo **iPaper:: redisegnato** si basa sulla tecnologia del punto di connessione.
+Il **metodo IPaper::Redraw** si basa sulla tecnologia del punto di connessione.
 
-Il codice di esempio seguente è il metodo di **riestrazione** da Paper. cpp.
+Il codice di esempio seguente è il **metodo Redraw** di Paper.cpp.
 
 
 ```C++
@@ -106,11 +106,11 @@ STDMETHODIMP COPaper::CImpIPaper::Redraw(
 
 
 
-Per ulteriori informazioni, vedere metodo [**IPaperSink**](ipapersink-methods.md) .
+Per altre informazioni, vedere [**Metodo IPaperSink.**](ipapersink-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

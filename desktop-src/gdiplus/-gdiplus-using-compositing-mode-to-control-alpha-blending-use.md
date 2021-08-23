@@ -1,29 +1,29 @@
 ---
-description: 'A volte può essere necessario creare una bitmap fuori schermo con le caratteristiche seguenti:'
+description: 'In alcuni casi può essere necessario creare una bitmap fuori schermo con le caratteristiche seguenti:'
 ms.assetid: 2a7590ce-daf4-4892-a838-603e3f89b1bb
 title: Uso della modalità di composizione per controllare la fusione alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db54c71ac9687a1ddf28db09b922b7799d0ebaa3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ea2fc9d5be10e3a73bacf7f5a6dc5cbecb8c2992ac8cd961701f55fc2cb524d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611987"
 ---
 # <a name="using-compositing-mode-to-control-alpha-blending"></a>Uso della modalità di composizione per controllare la fusione alfa
 
-A volte può essere necessario creare una bitmap fuori schermo con le caratteristiche seguenti:
+In alcuni casi può essere necessario creare una bitmap fuori schermo con le caratteristiche seguenti:
 
 -   I colori hanno valori alfa minori di 255.
--   Quando si crea la bitmap, i colori non vengono combinati con l'alfa.
--   Quando si visualizza la bitmap completata, i colori nella bitmap sono alpha blended con i colori di sfondo sul dispositivo di visualizzazione.
+-   I colori non vengono sfusi tra loro durante la creazione della bitmap.
+-   Quando si visualizza la bitmap completata, i colori nella bitmap vengono sfusi con i colori di sfondo sul dispositivo di visualizzazione.
 
-Per creare una bitmap di questo tipo, costruire un oggetto [**bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) vuoto e quindi costruire un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su tale bitmap. Impostare la modalità di composizione dell'oggetto **Graphics** su CompositingModeSourceCopy.
+Per creare tale bitmap, costruire un oggetto [**Bitmap vuoto**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) e quindi costruire un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su tale bitmap. Impostare la modalità di composizione **dell'oggetto Graphics** su CompositingModeSourceCopy.
 
-Nell'esempio seguente viene creato un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un oggetto [**bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) . Il codice usa l'oggetto **Graphics** insieme a due pennelli semitrasparenti (alpha = 160) per disegnare sulla bitmap. Il codice riempie un'ellisse rossa e un'ellisse verde usando i pennelli semitrasparenti. L'ellisse verde si sovrappone all'ellisse rossa, ma il verde non viene mescolato con il rosso perché la modalità di composizione dell'oggetto **Graphics** è impostata su CompositingModeSourceCopy.
+L'esempio seguente crea [**un oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un oggetto [**Bitmap.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) Il codice usa **l'oggetto Graphics** insieme a due pennelli semitrasparenti (alfa = 160) per disegnare sulla bitmap. Il codice riempie un'ellisse rossa e un'ellisse verde usando i pennelli semitrasparenti. L'ellisse verde si sovrappone all'ellisse rossa, ma il verde non viene misto con il rosso perché la modalità di composizione dell'oggetto **Graphics** è impostata su CompositingModeSourceCopy.
 
-Successivamente, il codice viene preparato per l'estrazione sullo schermo chiamando [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) e creando un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un contesto di dispositivo. Il codice disegna la bitmap sullo schermo due volte: una volta su uno sfondo bianco e una volta su uno sfondo a più colori. I pixel nella bitmap che fanno parte dei due ellissi hanno un componente alfa di 160, quindi i puntini di sospensione vengono combinati con i colori di sfondo sullo schermo.
+Il codice si prepara quindi a disegnare sullo schermo chiamando [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) e creando un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un contesto di dispositivo. Il codice disegna la bitmap sullo schermo due volte: una su uno sfondo bianco e una volta su uno sfondo multicolore. I pixel nella bitmap che fanno parte delle due ellissi hanno un componente alfa di 160, quindi le ellissi vengono combinate con i colori di sfondo sullo schermo.
 
 
 ```
@@ -65,11 +65,11 @@ EndPaint(hWnd, &ps);
 
 
 
-Nella figura seguente viene illustrato l'output del codice precedente. Si noti che i puntini di sospensione vengono combinati con lo sfondo, ma non sono combinati tra loro.
+La figura seguente mostra l'output del codice precedente. Si noti che i puntini di sospensione vengono sfusi con lo sfondo, ma non vengono sfusi tra loro.
 
-![illustrazione che mostra due ellissi colorate in modo diverso, ciascuna delle quali si fonde con lo sfondo multicolore](images/sourcecopy.png)
+![illustrazione che mostra due ellissi di colore diverso, ognuna delle quali si integra con il relativo sfondo multicolore](images/sourcecopy.png)
 
-Nell'esempio di codice precedente è presente l'istruzione seguente:
+L'esempio di codice precedente include l'istruzione seguente:
 
 
 ```
@@ -78,7 +78,7 @@ bitmapGraphics.SetCompositingMode(CompositingModeSourceCopy);
 
 
 
-Se si desidera che i puntini di sospensione vengano combinati tra loro e con lo sfondo, modificare l'istruzione seguente:
+Se si vuole che i puntini di sospensione siano sfusi tra loro e con lo sfondo, modificare l'istruzione come segue:
 
 
 ```
@@ -87,7 +87,7 @@ bitmapGraphics.SetCompositingMode(CompositingModeSourceOver);
 
 
 
-Nella figura seguente viene illustrato l'output del codice modificato.
+La figura seguente mostra l'output del codice modificato.
 
 ![uso della modalità di composizione per controllare l'illustrazione della fusione alfa](images/sourceover.png)
 

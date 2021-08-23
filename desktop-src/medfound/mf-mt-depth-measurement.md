@@ -1,21 +1,21 @@
 ---
-description: Valore che definisce il sistema di misurazione per un valore di profondità in un frame video.
+description: Valore che definisce il sistema di misurazione per un valore di profondità in un fotogramma video.
 ms.assetid: 7BFA846B-E614-4117-A196-298E065CB7F8
-title: Attributo MF_MT_DEPTH_MEASUREMENT (Mfapi. h)
+title: MF_MT_DEPTH_MEASUREMENT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8be6c06ea09f4017ae65935081eaa81d1ad00cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a292e5a96cec7490917ef0bb897a9a7a67dd303d29692bf6db5ff58e1d4388c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605802"
 ---
-# <a name="mf_mt_depth_measurement-attribute"></a>\_Attributo di \_ misurazione della profondità MF mt \_
+# <a name="mf_mt_depth_measurement-attribute"></a>Attributo MF \_ MT \_ DEPTH \_ MEASUREMENT
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Valore che definisce il sistema di misurazione per un valore di profondità in un frame video.
+Valore che definisce il sistema di misurazione per un valore di profondità in un fotogramma video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,21 +23,21 @@ Valore che definisce il sistema di misurazione per un valore di profondità in u
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore è un membro dell'enumerazione [**\_ MFDepthMeasurement**](/windows/win32/api/mfapi/ne-mfapi-mfdepthmeasurement)
+Questo valore è un membro [**\_ dell'enumerazione MFDepthMeasurement**](/windows/win32/api/mfapi/ne-mfapi-mfdepthmeasurement)
 
-Se questo attributo non è presente, si presuppone che sia **DistanceToFocalPlane**. La distanza dal piano focale è in genere più facile da utilizzare in un sistema di coordinate euclideo 3D.
+Se questo attributo non è presente, si presuppone che sia **DistanceToFocalPlane**. La distanza dal piano focale è in genere più facile da usare in un sistema di coordinate Euclidian 3D.
 
-![illustrazione di distancetofocalplane](images/distance-to-focal-plane.png)
+![Illustrazione di distancetofocalplane](images/distance-to-focal-plane.png)
 
-Il formato distanza dal centro focale è in genere costituito da dati non elaborati provenienti dal sensore, ad esempio il tempo delle fotocamere.
+La distanza dal formato del centro focale è in genere dati non elaborati dal sensore, ad esempio l'ora delle fotocamere di volo.
 
-![illustrazione di distancetoopticalcenter](images/distance-to-optical-center.png)
+![Illustrazione di distancetoopticalcenter](images/distance-to-optical-center.png)
 
-Le fotocamere con profondità non possono comprendere la profondità di tutti i pixel. Quando la confidenza di un pixel è bassa, a causa di materiale, occlusione o non compreso nell'intervallo e così via, il valore di profondità su tale pixel può non essere valido.
+Le fotocamere di profondità non possono percepire la profondità di tutti i pixel. Quando l'attendibilità di un pixel è bassa, a causa di materiale, occlusione o non compreso nell'intervallo, il valore di profondità su tale pixel può non essere valido.
 
-Quando un valore di pixel di profondità è 0, il pixel non è valido.
+Quando il valore di un pixel di profondità è 0, il pixel non è valido.
 
-Alcune fotocamere di profondità allineano i metadati della maschera di maschera per ogni pixel oltre al valore di profondità per rappresentare il motivo per cui la profondità del pixel non è valida, a causa del materiale, dell'occlusione o dell'intervallo e così via. Si consiglia di evitare di alleghiare tali metadati come valori di profondità, perché in genere si verificano difficoltà quando si utilizzano tali valori in pixel shader. Invece. si consiglia di usare un buffer di immagini a 8 bit separato con la stessa risoluzione e di associarlo come attributo di [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample). Tali metadati variano a seconda del fornitore della fotocamera e non sono standardizzati dalla piattaforma. È consigliabile usare 16 bit completi per il valore di profondità per semplificare l'elaborazione a valle e usare un valore fisso, ad esempio 0, per l'invalidamento.
+Alcune fotocamere di profondità collegano metadati maschera di bit per ogni pixel oltre al valore di profondità per rappresentare il motivo per cui la profondità del pixel non è valida, a causa di materiale, occlusione o non compreso nell'intervallo e così via. È consigliabile evitare di associare metadati di questo tipo come valori di profondità dei bit, perché in genere causano difficoltà quando si usano tali valori in pixel shader. Invece. È consigliabile usare un buffer immagine a 8 bit separato con la stessa risoluzione e associarlo come attributo di [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample). Questi metadati variano per ogni fornitore di fotocamera e non sono standardizzati dalla piattaforma. È consigliabile usare 16 bit completi per il valore di profondità per semplificare l'elaborazione a valle e usare un valore fisso, ad esempio 0 per l'invalidazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Alcune fotocamere di profondità allineano i metadati della maschera di maschera
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                      |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                      |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

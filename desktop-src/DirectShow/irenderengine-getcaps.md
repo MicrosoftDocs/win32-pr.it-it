@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IRenderEngine::GetCaps : non implementato.'
+description: 'Metodo IRenderEngine::GetCaps: non implementato.'
 ms.assetid: ad48a817-a69a-419c-9186-25f45b02d8f5
 title: Metodo IRenderEngine::GetCaps
 ms.topic: reference
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 16dee2c5c81eda1d957490aafcfc1d9984d2d232
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 97ca11f37c525199653e2c544fbd2e48ca6bfdb4bd3118e414b0100909893eaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651241"
 ---
 # <a name="irenderenginegetcaps-method"></a>Metodo IRenderEngine::GetCaps
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -70,7 +70,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

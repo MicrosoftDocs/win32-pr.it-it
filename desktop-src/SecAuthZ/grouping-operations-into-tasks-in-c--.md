@@ -1,21 +1,21 @@
 ---
-description: In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituite da operazioni, ovvero funzioni di basso livello e metodi dell'applicazione.
+description: In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituito da operazioni, ovvero funzioni e metodi di basso livello dell'applicazione.
 ms.assetid: a9a0202e-44c9-4192-8ff8-e22bddf26cfe
 title: Raggruppamento di operazioni in attività in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c869db5dc5acbd4a7e7f9401ebbf97dea481c40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adfcfee2368a04fcd1b97faa6c27184371e047d0753080894c87d93c69957c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672081"
 ---
 # <a name="grouping-operations-into-tasks-in-c"></a>Raggruppamento di operazioni in attività in C++
 
-In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituite da operazioni, ovvero funzioni di basso livello e metodi dell'applicazione. Viene quindi assegnata un'attività ai ruoli che devono eseguire tale attività. Un'attività è rappresentata da un oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) . Per ulteriori informazioni sulle operazioni e sulle attività, vedere [operazioni e attività](operations-and-tasks.md).
+In Gestione autorizzazioni un'attività è un'azione di alto livello che gli utenti di un'applicazione devono completare. Le attività sono costituito da operazioni, ovvero funzioni e metodi di basso livello dell'applicazione. Un'attività viene quindi assegnata ai ruoli che devono eseguire tale attività. Un'attività è rappresentata da un [**oggetto IAzTask.**](/windows/desktop/api/Azroles/nn-azroles-iaztask) Per altre informazioni su operazioni e attività, vedere [Operazioni e attività](operations-and-tasks.md).
 
-Nell'esempio seguente viene illustrato come raggruppare le operazioni per creare un'attività. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contiene un'applicazione denominata Expense e che l'applicazione contenga operazioni definite nell'argomento [definizione di operazioni in C++](defining-operations-in-c--.md).
+Nell'esempio seguente viene illustrato come raggruppare le operazioni per creare un'attività. Nell'esempio si presuppone che sia presente un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che l'archivio contenga un'applicazione denominata Expense e che questa applicazione contenga operazioni definite nell'argomento Definizione delle operazioni [in C++.](defining-operations-in-c--.md)
 
 
 ```C++

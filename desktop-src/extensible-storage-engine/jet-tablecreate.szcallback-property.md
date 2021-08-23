@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_TABLECREATE. szCallback'
-title: Proprietà JET_TABLECREATE. szCallback
+description: 'Altre informazioni su: JET_TABLECREATE.szCallback'
+title: JET_TABLECREATE.szCallback
 TOCTitle: 'szCallback property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.szCallback
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.szcallback(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a987f274cf82ebdc3c2113fd1636174c51382f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 414abc99547a07f46902a355efcb42ce01cd6bde24c84d3a0ca309b008ef02c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729061"
 ---
-# <a name="jet_tablecreateszcallback-property"></a>Proprietà JET_TABLECREATE. szCallback
+# <a name="jet_tablecreateszcallback-property"></a>JET_TABLECREATE.szCallback
 
-Ottiene o imposta una funzione di callback da utilizzare per la tabella. Il formato è "module \! FunctionName" e presuppone il codice non gestito. Per un'alternativa, vedere **JetRegisterCallback (JET_SESID, JET_TABLEID, JET_cbtyp, JET_CALLBACK, IntPtr, JET_HANDLE)** .
+Ottiene o imposta una funzione di callback da utilizzare per la tabella. Il formato è "module \! functionName" e presuppone codice non gestito. Vedere **JetRegisterCallback(JET_SESID, JET_TABLEID, JET_cbtyp, JET_CALLBACK, IntPtr, JET_HANDLE)** per un'alternativa.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public string szCallback { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membri JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membri](./jet-tablecreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

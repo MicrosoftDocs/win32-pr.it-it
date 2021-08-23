@@ -1,19 +1,19 @@
 ---
-description: Un codificatore specificato supporta determinate categorie di parametri e, per ognuna di queste categorie, il codificatore consente determinati valori.
+description: Un codificatore specificato supporta determinate categorie di parametri e per ognuna di queste categorie il codificatore consente determinati valori.
 ms.assetid: cb9552e9-e807-4b07-b315-4550762e7026
-title: Utilizzo dell'enumerazione EncoderValue
+title: Uso dell'enumerazione EncoderValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d755248150e81f963ea1c5c597ab04649c342944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 488d465d27f7884ecc5999d38fea10afdac06b74b77d29338c8d0944a1261b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666321"
 ---
-# <a name="using-the-encodervalue-enumeration"></a>Utilizzo dell'enumerazione EncoderValue
+# <a name="using-the-encodervalue-enumeration"></a>Uso dell'enumerazione EncoderValue
 
-Un codificatore specificato supporta determinate categorie di parametri e, per ognuna di queste categorie, il codificatore consente determinati valori. Ad esempio, il codificatore JPEG supporta la categoria di parametri EncoderValueQuality e i valori di parametro consentiti sono numeri interi da 0 a 100. Alcuni dei valori di parametro consentiti sono gli stessi tra più codificatori. Questi valori standard sono definiti nell'enumerazione [**EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) in Gdiplusenums. h:
+Un codificatore specificato supporta determinate categorie di parametri e per ognuna di queste categorie il codificatore consente determinati valori. Ad esempio, il codificatore JPEG supporta la categoria di parametri EncoderValueQuality e i valori dei parametri consentiti sono i numeri interi da 0 a 100. Alcuni dei valori dei parametri consentiti sono gli stessi in diversi codificatori. Questi valori standard sono definiti nell'enumerazione [**EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) in Gdiplusenums.h:
 
 
 ```
@@ -48,7 +48,7 @@ enum EncoderValue
 
 
 
-Una delle categorie di parametri supportate dal codificatore JPEG è la categoria EncoderTransformation. Esaminando l'enumerazione [**EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) , è possibile ipotizzare che la categoria EncoderTransformation consenta i cinque valori seguenti:
+Una delle categorie di parametri supportate dal codificatore JPEG è la categoria EncoderTransformation. Esaminando [**l'enumerazione EncoderValue,**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) è possibile speculare (e sarebbe corretto) che la categoria EncoderTransformation consenta i cinque valori seguenti:
 
 
 ```
@@ -61,7 +61,7 @@ EncoderValueTransformFlipVertical,      // 17
 
 
 
-La seguente applicazione console verifica che il codificatore JPEG supporti la categoria di parametri EncoderTransformation e che siano disponibili cinque valori consentiti per questo parametro. La funzione Main si basa sulla funzione helper GetEncoderClsid, che viene mostrata durante il [recupero dell'identificatore di classe per un codificatore](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
+L'applicazione console seguente verifica che il codificatore JPEG supporti la categoria di parametri EncoderTransformation e che siano disponibili cinque valori consentiti per tale parametro. La funzione main si basa sulla funzione helper GetEncoderClsid, illustrata in Recupero dell'identificatore di classe [per un codificatore.](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)
 
 
 ```
@@ -115,7 +115,7 @@ INT main()
 
 
 
-Quando si esegue l'applicazione console precedente, si otterrà un output simile al seguente:
+Quando si esegue l'applicazione console precedente, si ottiene un output simile al seguente:
 
 
 ```
@@ -129,9 +129,9 @@ Parameter[0]
 
 
 
-È possibile cercare il GUID in Gdiplusimaging. h e scoprire che la categoria di questo oggetto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) è EncoderTransformation. In Gdiplusenums. h, l'enumerazione [**EncoderParameterValueType**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encoderparametervaluetype) indica che il tipo di dati 4 è ValueLong (32 bit unsigned integer). Il numero di valori è cinque, quindi è noto che il membro del **valore** dell'oggetto **EncoderParameter** è un puntatore a una matrice di cinque valori **ULONG** .
+È possibile cercare il GUID in Gdiplusimaging.h e scoprire che la categoria di questo oggetto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) è EncoderTransformation. In Gdiplusenums.h l'enumerazione [**EncoderParameterValueType**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encoderparametervaluetype) indica che il tipo di dati 4 è ValueLong (intero senza segno a 32 bit). Il numero di valori è cinque, quindi è possibile sapere che il membro **Value** dell'oggetto **EncoderParameter** è un puntatore a una matrice di cinque **valori ULONG.**
 
-Il codice seguente è una continuazione dell'applicazione console mostrata nell'esempio precedente. Il codice elenca i valori consentiti per un parametro EncoderTransformation:
+Il codice seguente è una continuazione dell'applicazione console illustrata nell'esempio precedente. Il codice elenca i valori consentiti per un parametro EncoderTransformation:
 
 
 ```
@@ -155,7 +155,7 @@ The allowable values are  13  14  15  16  17
 
 
 
-I valori consentiti (13, 14, 15, 16 e 17) corrispondono ai seguenti membri dell'enumerazione [**EncoderValue**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue) :
+I valori consentiti (13, 14, 15, 16 e 17) corrispondono ai membri seguenti dell'enumerazione [**EncoderValue:**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-encodervalue)
 
 
 ```
