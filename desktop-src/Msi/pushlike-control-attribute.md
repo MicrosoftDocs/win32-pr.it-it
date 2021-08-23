@@ -1,23 +1,23 @@
 ---
-description: Se questo bit è impostato su una casella di controllo o un gruppo di pulsanti di opzione, il pulsante viene disegnato con l'aspetto di un pulsante di comando, ma la logica rimane invariata. Se il bit non è impostato, i controlli vengono disegnati nello stile usuale.
+description: Se questo bit è impostato su una casella di controllo o un gruppo di pulsanti di opzione, il pulsante viene disegnato con l'aspetto di un pulsante di pressione, ma la relativa logica rimane la stessa. Se il bit non è impostato, i controlli vengono disegnati nello stile consueto.
 ms.assetid: c30b383a-7fae-413a-a6e6-8e958009f10c
-title: Attributo di controllo PushLike
+title: Attributo del controllo PushLike
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 839adfceb0484bc908b8c8c6d14616cfd03acdb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ab516038538849ac97d273d5fb3ede2be5be17417c48cf9a5624af98789867c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692480"
 ---
-# <a name="pushlike-control-attribute"></a>Attributo di controllo PushLike
+# <a name="pushlike-control-attribute"></a>Attributo del controllo PushLike
 
-Se questo bit è impostato su una casella di controllo o un gruppo di pulsanti di opzione, il pulsante viene disegnato con l'aspetto di un pulsante di comando, ma la logica rimane invariata. Se il bit non è impostato, i controlli vengono disegnati nello stile usuale.
+Se questo bit è impostato su una casella di controllo o un gruppo di pulsanti di opzione, il pulsante viene disegnato con l'aspetto di un pulsante di pressione, ma la relativa logica rimane la stessa. Se il bit non è impostato, i controlli vengono disegnati nello stile consueto.
 
 ## <a name="valid-controls"></a>Controlli validi
 
-[Casella](checkbox-control.md)di controllo[RadioButtonGroup](radiobuttongroup-control.md)
+[CheckBox](checkbox-control.md)[RadioButtonGroup](radiobuttongroup-control.md)
 
 ## <a name="value"></a>Valore
 
@@ -33,9 +33,9 @@ Se questo bit è impostato su una casella di controllo o un gruppo di pulsanti d
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit PushLike nella colonna Attributes del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo su un controllo, includere il bit PushLike nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [attributi](control-attributes.md) e [controlli](controls.md)del controllo.
+Vedere [Attributi e controlli](control-attributes.md) del [controllo](controls.md).
 
  
 

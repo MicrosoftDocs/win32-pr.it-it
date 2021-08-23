@@ -1,11 +1,11 @@
 ---
-title: Attributo COM-ProgID
-description: Questo attributo archivia l'elenco di ID di programma di oggetti COM implementati nel pacchetto dell'applicazione.
+title: COM-ProgID attributo
+description: Questo attributo archivia l'elenco di ID programma di oggetti COM implementati in questo pacchetto dell'applicazione.
 ms.assetid: 9d2945e4-f236-48f6-bed3-145d445ff653
 ms.tgt_platform: multiple
 keywords:
-- Schema AD COM-ProgID attribute
-- Schema AD dell'attributo comprogid
+- COM-ProgID schema AD dell'attributo
+- Schema AD dell'attributo cOMProgID
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 686976732bedf2c4ba486186634720568d3b6c3c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ca9d952719483f30448045221d1a366c37c0718770f5d6db88d21d5f5bbd994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509561"
 ---
-# <a name="com-progid-attribute"></a>Attributo COM-ProgID
+# <a name="com-progid-attribute"></a>COM-ProgID attributo
 
-Questo attributo archivia l'elenco di ID di programma di oggetti COM implementati nel pacchetto dell'applicazione.
+Questo attributo archivia l'elenco di ID programma di oggetti COM implementati in questo pacchetto dell'applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | COM-ProgID                                                                       |
-| LDAP-Display-Name | comprogid                                                                        |
+| Ldap-Display-Name | cOMProgID                                                                        |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Aggiorna privilegio  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.21                                                            |
-| System-ID-GUID    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
+| System-Id-Guid    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| A valore singolo       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| A valore singolo       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| A valore singolo       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia l'elenco di ID di programma di oggetti COM implementat
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

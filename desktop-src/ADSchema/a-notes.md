@@ -1,11 +1,11 @@
 ---
-title: Attributo Additional-Information
+title: Additional-Information attributo
 description: Testo libero per le note sull'oggetto.
 ms.assetid: 5a6db370-ad58-4c00-bbb0-96607f267f7c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Additional-Information attribute
-- Schema AD dell'attributo Notes
+- Additional-Information schema AD dell'attributo
+- Attributo notes Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c918a304a65efbce5a2d664466a76dbae1d41f54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48b9ae50cb5f23bb85ef5f7c1da4ca4b3bdab8c253cbf8e78af4eae4e9d7f08a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648301"
 ---
-# <a name="additional-information-attribute"></a>Attributo Additional-Information
+# <a name="additional-information-attribute"></a>Additional-Information attributo
 
 Testo libero per le note sull'oggetto.
 
@@ -30,12 +30,12 @@ Testo libero per le note sull'oggetto.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Additional-Information                      |
-| LDAP-Display-Name | di HDInsight                                       |
+| Ldap-Display-Name | di HDInsight                                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.265                      |
-| System-ID-GUID    | 6d05fb41-246b-11d0-a9c8-00aa006c33ed        |
+| System-Id-Guid    | 6d05fb41-246b-11d0-a9c8-00aa006c33ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contact**](c-contact.md)<br/> |
+| Classi usate in        | [**Contatto**](c-contact.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contact**](c-contact.md)<br/> |
+| Classi usate in        | [**Contatto**](c-contact.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contact**](c-contact.md)<br/> |
+| Classi usate in        | [**Contatto**](c-contact.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contact**](c-contact.md)<br/> |
+| Classi usate in        | [**Contatto**](c-contact.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contact**](c-contact.md)<br/> |
+| Classi usate in        | [**Contatto**](c-contact.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Testo libero per le note sull'oggetto.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Contattare**](c-contact.md)<br/> |
+| Classi usate in        | [**Contattare**](c-contact.md)<br/> |
 
 
 

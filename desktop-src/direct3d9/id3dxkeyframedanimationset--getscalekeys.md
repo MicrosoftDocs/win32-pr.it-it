@@ -1,7 +1,7 @@
 ---
-description: Compila una matrice con i dati della chiave della scala usati per l'animazione del fotogramma chiave.
+description: Riempie una matrice con i dati della chiave di scala usati per l'animazione del fotogramma chiave.
 ms.assetid: 0d595510-6d8c-4bc9-b5ca-0d6f73be3439
-title: 'Metodo ID3DXKeyframedAnimationSet:: GetScaleKeys (D3dx9anim. h)'
+title: Metodo ID3DXKeyframedAnimationSet::GetScaleKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 88c907bc9b45b1203917b092f565096be3ed1fb6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1158195ae84f8215869571fc400950a6dfd475fc37050572ffb5e3e77f96d719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493511"
 ---
-# <a name="id3dxkeyframedanimationsetgetscalekeys-method"></a>Metodo ID3DXKeyframedAnimationSet:: GetScaleKeys
+# <a name="id3dxkeyframedanimationsetgetscalekeys-method"></a>Metodo ID3DXKeyframedAnimationSet::GetScaleKeys
 
-Compila una matrice con i dati della chiave della scala usati per l'animazione del fotogramma chiave.
+Riempie una matrice con i dati della chiave di scala usati per l'animazione del fotogramma chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT GetScaleKeys(
 
 <dl> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*pScaleKeys* \[ in\]
+*pScaleKeys* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntatore a una matrice allocata dall'utente di vettori [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) che il metodo deve compilare con i dati della scala dell'animazione.
+Puntatore a una matrice allocata dall'utente di vettori [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) che il metodo deve riempire con dati di scala dell'animazione.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore a una matrice allocata dall'utente di vettori [**D3DXKEY \_ VECTOR3**]
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

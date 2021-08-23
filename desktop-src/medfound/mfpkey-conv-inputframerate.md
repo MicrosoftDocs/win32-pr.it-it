@@ -1,19 +1,19 @@
 ---
-description: Specifica la frequenza dei fotogrammi di input sotto forma di rapporto.
+description: Specifica la frequenza dei fotogrammi di input come rapporto.
 ms.assetid: 8988fc7e-02bd-43ea-8934-e3af44a38bc5
-title: Proprietà MFPKEY_CONV_INPUTFRAMERATE (Wmcodecdsp. h)
+title: MFPKEY_CONV_INPUTFRAMERATE proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5db89db9fe9f762d0298d1cb1e59fae963fa8d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32e16dd367b5ca5f2c2c4356bf330af2c6e96112e9ec5ad74da0d15ecc5cb093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604231"
 ---
-# <a name="mfpkey_conv_inputframerate-property"></a>\_Proprietà MFPKEY CONV \_ INPUTFRAMERATE
+# <a name="mfpkey_conv_inputframerate-property"></a>Proprietà MFPKEY \_ CONV \_ INPUTFRAMERATE
 
-Specifica la frequenza dei fotogrammi di input sotto forma di rapporto.
+Specifica la frequenza dei fotogrammi di input come rapporto.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -21,11 +21,11 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Convertitore frequenza frame](framerateconverter.md)
+-   [Convertitore di frequenza fotogrammi](framerateconverter.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,9 +37,9 @@ Archiviare il numeratore nei 4 byte superiori e il denominatore nei 4 byte infer
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Archiviare il numeratore nei 4 byte superiori e il denominatore nei 4 byte infer
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

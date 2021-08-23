@@ -1,10 +1,10 @@
 ---
-title: Attributo GP-Link
-description: Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un valore DWORD. L'uso della stringa UNICODE è una praticità.
+title: GP-Link attributo
+description: Elenco ordinato di opzioni Criteri di gruppo predefinite. Ogni opzione è un valore DWORD. L'uso della stringa UNICODE è una comodità.
 ms.assetid: 7ddb1ee9-195c-47e5-83ce-6cc0d2e86e42
 ms.tgt_platform: multiple
 keywords:
-- Schema AD GP-Link attribute
+- GP-Link schema AD dell'attributo
 - Schema AD dell'attributo gPLink
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 487feeadcf1db97dc28695ba9dfcd497c2656a9a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9bdf975322ee1391abd4825326a2db05016ea0276a16c50cce92a4c53a4ccf6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705991"
 ---
-# <a name="gp-link-attribute"></a>Attributo GP-Link
+# <a name="gp-link-attribute"></a>GP-Link attributo
 
-Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWORD**. L'uso della stringa UNICODE è una praticità.
+Elenco ordinato di opzioni Criteri di gruppo predefinite. Ogni opzione è un **valore DWORD**. L'uso della stringa UNICODE è una comodità.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | GP-Link                                     |
-| LDAP-Display-Name | gPLink                                      |
+| Ldap-Display-Name | gPLink                                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.891                      |
-| System-ID-GUID    | f30e3bbe-9ff0-11d1-b603-0000f80367c1        |
+| System-Id-Guid    | f30e3bbe-9ff0-11d1-b603-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                         |
 | Nel catalogo globale      | Vero                                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                    |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco ordinato di opzioni di Criteri di gruppo. Ogni opzione è un **valore DWO
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 

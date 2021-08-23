@@ -1,7 +1,7 @@
 ---
 description: Termina il monitoraggio dell'inattività.
 ms.assetid: 26e52341-77cd-46cd-8b32-e786dfac870e
-title: EndIdleDetection (funzione)
+title: Funzione EndIdleDetection
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msidle.dll
-ms.openlocfilehash: e50679c53123ad140324f7d159ef938367c02af0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2ba6732b9221d4d4d43e670d0d42d39363d50dffc0d2d4b0daf378b10dd292e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691411"
 ---
-# <a name="endidledetection-function"></a>EndIdleDetection (funzione)
+# <a name="endidledetection-function"></a>Funzione EndIdleDetection
 
-\[Questa funzione non è supportata e può essere modificata o non disponibile in futuro. Usare invece la funzione **GetLastInputInfo** .\]
+\[Questa funzione non è supportata e potrebbe essere modificata o non disponibile in futuro. Usare invece la **funzione GetLastInputInfo.**\]
 
 Termina il monitoraggio dell'inattività.
 
@@ -50,11 +50,11 @@ Questo parametro deve essere impostato su zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo; in caso contrario, restituisce **false**.
+Restituisce **TRUE se** la funzione ha esito positivo. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) . Questa funzione non viene esportata per nome; specificare il numero ordinale 4 quando si chiama **GetProcAddress**.
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Questa funzione non viene esportata in base al nome. Specificare il numero ordinale 4 quando si **chiama GetProcAddress**.
 
 ## <a name="requirements"></a>Requisiti
 

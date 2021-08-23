@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getByAttributeAndMediaType, metodo
-description: Il metodo getByAttributeAndMediaType recupera un oggetto playlist contenente gli oggetti multimediali con l'attributo e il tipo di supporto specificati.
+title: Metodo MediaCollection.getByAttributeAndMediaType
+description: Il metodo getByAttributeAndMediaType recupera un oggetto Playlist contenente oggetti Media con l'attributo e il tipo di supporto specificati.
 ms.assetid: 75241b38-ae0e-4216-b405-af9a9c71f5ec
 keywords:
 - Metodo getByAttributeAndMediaType Windows Media Player
-- Metodo getByAttributeAndMediaType Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getByAttributeAndMediaType
+- Metodo getByAttributeAndMediaType Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player metodo , getByAttributeAndMediaType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e26abbf2f19d50ec6a10ebbafe12afae8576f34
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46dab1bdcb511e4c96374b17bc6a98be95e48fd64d005eb856c9ec247af48f2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647881"
 ---
-# <a name="mediacollectiongetbyattributeandmediatype-method"></a>Mediacollection. getByAttributeAndMediaType, metodo
+# <a name="mediacollectiongetbyattributeandmediatype-method"></a>Metodo MediaCollection.getByAttributeAndMediaType
 
-Il metodo **getByAttributeAndMediaType** recupera un oggetto **playlist** contenente gli oggetti **multimediali** con l'attributo e il tipo di supporto specificati.
+Il **metodo getByAttributeAndMediaType** recupera un oggetto **Playlist** contenente oggetti **Media** con l'attributo e il tipo di supporto specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,30 +44,30 @@ retVal = MediaCollection.getByAttributeAndMediaType(
 
 <dl> <dt>
 
-*attributo* \[ in\]
+*attributo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente l'attributo.
+**Stringa contenente** l'attributo.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che contiene il valore.
+**Stringa** contenente il valore.
 
 </dd> <dt>
 
-*mediaType* \[ in\]
+*mediaType* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che contiene il tipo di supporto. Deve contenere uno dei valori seguenti: "audio", "video", "Photo", "playlist" o "other".
+**Stringa** contenente il tipo di supporto. Deve contenere uno dei valori seguenti: "audio", "video", "photo", "playlist" o "other".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist**
+Questo metodo restituisce un oggetto **Playlist**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,13 +84,13 @@ Questo metodo restituisce un oggetto **playlist**
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> </dl>
 
  

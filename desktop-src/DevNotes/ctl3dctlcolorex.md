@@ -1,7 +1,7 @@
 ---
-description: Gestisce il \_ messaggio WM CTLCOLOR per le applicazioni che usano CTL3D.
+description: Gestisce il messaggio \_ WM CTLCOLOR per le applicazioni che usano CTL3D.
 ms.assetid: 8626a559-4856-4e7d-bf9c-edc48613b8f4
-title: Ctl3dCtlColorEx (funzione)
+title: Funzione Ctl3dCtlColorEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 57df7ed5e439d75b2edbf71e743cac069f0ed75b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46fe35fd507f20e41e0a9b563ded5c9cf46e9c557893bc9287d65cbdf651b24f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691641"
 ---
-# <a name="ctl3dctlcolorex-function"></a>Ctl3dCtlColorEx (funzione)
+# <a name="ctl3dctlcolorex-function"></a>Funzione Ctl3dCtlColorEx
 
-Gestisce il messaggio **WM \_ CTLCOLOR** per le applicazioni che usano CTL3D.
+Gestisce il **messaggio \_ WM CTLCOLOR** per le applicazioni che usano CTL3D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,24 +51,24 @@ Messaggio **WM \_ CTLCOLOR** per l'applicazione.
 *wParam* 
 </dt> <dd>
 
-Handle per il contesto di visualizzazione (DC).
+Handle per il contesto di visualizzazione.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Handle per una finestra figlio (controllo).
+Handle per una finestra figlio (controllo ).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un handle al pennello appropriato se la funzione ha esito positivo; in caso contrario, restituisce `(HBRUSH)(0)` un valore che indica che si è verificato un errore.
+Restituisce un handle al pennello appropriato se la funzione ha esito positivo; In caso contrario, restituisce `(HBRUSH)(0)` che indica che si è verificato un errore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

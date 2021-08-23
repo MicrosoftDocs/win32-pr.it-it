@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore univoco globale (GUID) del riconoscimento.
 ms.assetid: 9b98993b-eaf3-4207-9d56-33efeceb75cf
-title: 'Metodo IInkAnalysisRecognizer:: GetGuid (IACom. h)'
+title: Metodo IInkAnalysisRecognizer::GetGuid (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 9a027a405829e6d1237a8ec90dd59fcc8905006d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5fbf2b07b2a63f2fdb088c38a5e03e4182c4e38528208c039f927b282755344
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596741"
 ---
-# <a name="iinkanalysisrecognizergetguid-method"></a>Metodo IInkAnalysisRecognizer:: GetGuid
+# <a name="iinkanalysisrecognizergetguid-method"></a>Metodo IInkAnalysisRecognizer::GetGuid
 
 Recupera l'identificatore univoco globale (GUID) del riconoscimento.
 
@@ -39,16 +39,16 @@ HRESULT GetGuid(
 
 <dl> <dt>
 
-*PID* \[ out\]
+*pId* \[ Cambio\]
 </dt> <dd>
 
-GUID che identifica questo [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+GUID che identifica [**l'oggetto IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -70,7 +70,7 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

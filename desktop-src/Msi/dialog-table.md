@@ -1,21 +1,21 @@
 ---
-description: La tabella della finestra di dialogo contiene tutte le finestre di dialogo visualizzate nell'interfaccia utente in modalità completa e ridotta.
+description: La tabella delle finestre di dialogo contiene tutte le finestre di dialogo visualizzate nell'interfaccia utente in modalità completa e ridotta.
 ms.assetid: 981386dd-4fee-4003-8c62-16933cc5bd14
-title: Tabella finestra di dialogo
+title: Tabella delle finestre di dialogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09a210ad051eec950dcff8f8f940a1df11bf74c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 554bc551b41a7ebeaa8b63b2a0d1b74a0f55cfb1d7a087936a394a060286caba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692841"
 ---
-# <a name="dialog-table"></a>Tabella finestra di dialogo
+# <a name="dialog-table"></a>Tabella delle finestre di dialogo
 
-La tabella della finestra di dialogo contiene tutte le finestre di dialogo visualizzate nell'interfaccia utente in modalità completa e ridotta.
+La tabella delle finestre di dialogo contiene tutte le finestre di dialogo visualizzate nell'interfaccia utente in modalità completa e ridotta.
 
-Nella tabella della finestra di dialogo sono presenti le colonne seguenti.
+La tabella delle finestre di dialogo include le colonne seguenti.
 
 
 
@@ -23,14 +23,14 @@ Nella tabella della finestra di dialogo sono presenti le colonne seguenti.
 |------------------|------------------------------------|-----|----------|
 | Finestra di dialogo           | [Identificatore](identifier.md)       | S   | N        |
 | HCentering       | [Integer](integer.md)             | N   | N        |
-| VCenter       | [Integer](integer.md)             | N   | N        |
+| VCentering       | [Integer](integer.md)             | N   | N        |
 | Larghezza            | [Integer](integer.md)             | N   | N        |
 | Altezza           | [Integer](integer.md)             | N   | N        |
 | Attributi       | [DoubleInteger](doubleinteger.md) | N   | S        |
 | Titolo            | [Formattato](formatted.md)         | N   | S        |
-| \_Primo controllo   | [Identificatore](identifier.md)       | N   | N        |
-| Controllo \_ predefinito | [Identificatore](identifier.md)       | N   | S        |
-| \_Annulla controllo  | [Identificatore](identifier.md)       | N   | S        |
+| Control \_ First   | [Identificatore](identifier.md)       | N   | N        |
+| Impostazione \_ predefinita del controllo | [Identificatore](identifier.md)       | N   | S        |
+| Annullamento \_ del controllo  | [Identificatore](identifier.md)       | N   | S        |
 
 
 
@@ -56,12 +56,12 @@ L'intervallo è compreso tra 0 e 100, con 0 sul bordo sinistro dello schermo e 1
 
 </dd> <dt>
 
-<span id="VCentering"></span><span id="vcentering"></span><span id="VCENTERING"></span>VCenter
+<span id="VCentering"></span><span id="vcentering"></span><span id="VCENTERING"></span>VCentering
 </dt> <dd>
 
 Posizione verticale della finestra di dialogo.
 
-L'intervallo è compreso tra 0 e 100, con 0 sul bordo superiore dello schermo e 100 sul bordo inferiore.
+L'intervallo è compreso tra 0 e 100, con 0 nel bordo superiore dello schermo e 100 nel bordo inferiore.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Questo numero deve essere non negativo.
 
 Parola a 32 bit che specifica i flag di attributo da applicare a questa finestra di dialogo.
 
-Questo numero deve essere non negativo. Per altre informazioni, vedere [bit di stile della finestra di dialogo](dialog-style-bits.md).
+Questo numero deve essere non negativo. Per altre informazioni, vedere [Bit di stile della finestra di dialogo.](dialog-style-bits.md)
 
 </dd> <dt>
 
@@ -99,44 +99,44 @@ Stringa di testo localizzabile che specifica il titolo da visualizzare nella bar
 
 </dd> <dt>
 
-<span id="Control_First"></span><span id="control_first"></span><span id="CONTROL_FIRST"></span>\_Primo controllo
+<span id="Control_First"></span><span id="control_first"></span><span id="CONTROL_FIRST"></span>Control \_ First
 </dt> <dd>
 
-Chiave esterna per la seconda colonna della tabella dei [controlli](control-table.md).
+Chiave esterna alla seconda colonna della tabella [di controllo](control-table.md).
 
-Combinando questo campo con il campo della finestra di dialogo viene specificato un controllo univoco nella [tabella dei controlli](control-table.md) che attiva quando viene aperta la finestra di dialogo. In genere, può trattarsi di un controllo di [modifica](edit-control.md), di un [controllo SelectionTree](selectiontree-control.md)o di qualsiasi altro controllo che può assumere lo stato attivo. Se il controllo [pulsante](pushbutton-control.md) è l'unico presente nella finestra di dialogo che può assumere lo stato attivo, è necessario immettere anche il pulsante immesso nel campo ControlDefault nel primo campo del controllo. Questa colonna viene ignorata in una finestra di [dialogo di errore](error-dialog.md) .
+Combinando questo campo con il campo Dialog [](control-table.md) viene specificato un controllo univoco nella tabella di controllo che assume lo stato attivo all'apertura della finestra di dialogo. In genere, può trattarsi di un [controllo Edit,](edit-control.md) [selectionTree Control](selectiontree-control.md)o qualsiasi altro controllo che può spostare lo stato attivo. Se il [controllo PushButton](pushbutton-control.md) è l'unico controllo presente nella finestra di dialogo che può spostare lo stato attivo, anche il controllo PushButton immesso nel campo ControlDefault deve essere immesso nel campo Control First. Questa colonna viene ignorata in una [finestra di dialogo di](error-dialog.md) errore.
 
-Poiché il testo statico non può avere lo stato attivo, un [controllo di testo](text-control.md) che descrive un controllo di [modifica](edit-control.md), un controllo [PathEdit](pathedit-control.md), un [controllo ListView](listview-control.md), un [controllo ComboBox](combobox-control.md) o un [controllo VolumeSelectCombo](volumeselectcombo-control.md) deve essere reso il primo controllo nella finestra di dialogo per garantire la compatibilità con le utilità per la lettura dello schermo.
+Poiché il testo statico non [](text-control.md) può assumere lo stato attivo, un controllo Di testo che descrive un controllo [Edit,](edit-control.md) [pathEdit Control,](pathedit-control.md) [ListView Control,](listview-control.md) [ComboBox Control](combobox-control.md) o [VolumeSelectCombo Control](volumeselectcombo-control.md) deve essere il primo controllo nella finestra di dialogo per garantire la compatibilità con le utilità per la lettura dello schermo.
 
 </dd> <dt>
 
-<span id="Control_Default"></span><span id="control_default"></span><span id="CONTROL_DEFAULT"></span>Controllo \_ predefinito
+<span id="Control_Default"></span><span id="control_default"></span><span id="CONTROL_DEFAULT"></span>Impostazione \_ predefinita del controllo
 </dt> <dd>
 
-Chiave esterna per la seconda colonna della tabella dei [controlli](control-table.md).
+Chiave esterna alla seconda colonna della tabella [di controllo](control-table.md).
 
-Combinando questo campo con il campo finestra di dialogo viene specificato il controllo predefinito che assume lo stato attivo quando viene aperta la finestra di dialogo. In genere, può trattarsi di un [controllo pulsante](pushbutton-control.md). Se nella finestra di dialogo non sono presenti controlli pulsante con lo stato attivo, la chiave restituita è equivalente a fare clic sul controllo predefinito. Se questa colonna viene lasciata vuota, non esiste alcun controllo predefinito. Questa colonna viene ignorata in una finestra di [dialogo di errore](error-dialog.md) .
+La combinazione di questo campo con il campo Finestra di dialogo specifica il controllo predefinito che assume lo stato attivo all'apertura della finestra di dialogo. In genere, può trattarsi di [un controllo PushButton.](pushbutton-control.md) Se nessun controllo PushButton nella finestra di dialogo ha lo stato attivo, il tasto INVIO equivale a fare clic sul controllo predefinito. Se questa colonna viene lasciata vuota, non è presente alcun controllo predefinito. Questa colonna viene ignorata in una [finestra di dialogo di](error-dialog.md) errore.
 
 </dd> <dt>
 
-<span id="Control_Cancel"></span><span id="control_cancel"></span><span id="CONTROL_CANCEL"></span>\_Annulla controllo
+<span id="Control_Cancel"></span><span id="control_cancel"></span><span id="CONTROL_CANCEL"></span>Annullamento \_ del controllo
 </dt> <dd>
 
-Chiave esterna per la seconda colonna della tabella dei [controlli](control-table.md).
+Chiave esterna alla seconda colonna della tabella [di controllo](control-table.md).
 
-Combinando questo campo con il campo finestra di dialogo viene specificato un controllo che annulla l'installazione. Questo controllo è associato agli eventi nella [tabella ControlEvent](controlevent-table.md) utilizzata per annullare l'installazione. Quando si preme il tasto ESC o si fa clic sul pulsante Chiudi è equivalente a fare clic sul controllo Cancel (Annulla). Questa colonna viene ignorata in una [finestra di dialogo di errore](error-dialog.md)
+Combinando questo campo con il campo Dialog viene specificato un controllo che annulla l'installazione. Questo controllo è associato agli eventi nella tabella [ControlEvent usata](controlevent-table.md) per annullare l'installazione. Premere ESC o fare clic sul pulsante Chiudi equivale a fare clic sul controllo Annulla. Questa colonna viene ignorata in una finestra [di dialogo di errore](error-dialog.md)
 
 .
 
-Il controllo Annulla è nascosto durante il rollback o la rimozione dei file di cui è stato eseguito il backup. Il gestore interno dell'interfaccia utente nasconde il controllo alla ricezione di un \_ messaggio INSTALLMESSAGE COMMONDATA.
+Il controllo di annullamento viene nascosto durante il rollback o la rimozione dei file di cui è stato eseguito il backup. Il gestore dell'interfaccia utente interno nasconde il controllo alla ricezione di un messaggio INSTALLMESSAGE \_ COMMONDATA.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori integer per larghezza e altezza si trovano nelle [unità del programma di installazione](installer-units.md), non nelle unità di dialogo.
+I valori interi per larghezza e altezza si trova nelle unità del programma [di installazione,](installer-units.md)non nelle unità di finestra di dialogo.
 
-I due valori di centramento vengono ignorati per le finestre di dialogo successive in una sequenza della procedura guidata. Le posizioni della finestra di dialogo vengono impostate dall'utente o come per la finestra di dialogo precedente. Queste sequenze della finestra di dialogo vengono create da un [ControlEvent NewDialog](newdialog-controlevent.md).
+I due valori di centratura vengono ignorati per le finestre di dialogo successive in una sequenza della procedura guidata. Le posizioni delle finestre di dialogo vengono impostate dall'utente o come per la finestra di dialogo precedente. Queste sequenze di finestre di dialogo vengono create da [un oggetto NewDialog ControlEvent.](newdialog-controlevent.md)
 
 ## <a name="validation"></a>Convalida
 

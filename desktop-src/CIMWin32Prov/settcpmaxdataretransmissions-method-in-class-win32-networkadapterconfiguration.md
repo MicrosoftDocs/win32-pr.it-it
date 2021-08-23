@@ -2,7 +2,7 @@
 description: Il metodo statico della classe WMI SetTcpMaxDataRetransmissions viene usato per impostare il numero di volte in cui TCP ritrasmette un singolo segmento di dati prima di interrompere la connessione.
 ms.assetid: 1b5407ee-8e2b-4aed-a17a-58d960f976f2
 ms.tgt_platform: multiple
-title: Metodo SetTcpMaxDataRetransmissions della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetTcpMaxDataRetransmissions della Win32_NetworkAdapterConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 59998888eb2aed170b626fb4cb61780cbe0cb6e4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 07484f07ab5c4a53da5b044f409a59c4ac37f07717875cd80f44eb625bdf2041
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439271"
 ---
-# <a name="settcpmaxdataretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpMaxDataRetransmissions della \_ classe NetworkAdapterConfiguration Win32
+# <a name="settcpmaxdataretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetTcpMaxDataRetransmissions della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpMaxDataRetransmissions** viene usato per impostare il numero di volte in cui TCP ritrasmette un singolo segmento di dati prima di interrompere la connessione.
+Il metodo statico della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpMaxDataRetransmissions** viene usato per impostare il numero di volte in cui TCP ritrasmette un singolo segmento di dati prima di interrompere la connessione.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,34 +42,34 @@ uint32 SetTcpMaxDataRetransmissions(
 
 <dl> <dt>
 
-*TcpMaxDataRetransmissions* \[ in\]
+*TcpMaxDataRetransmissions* \[ Pollici\]
 </dt> <dd>
 
-Numero di volte in cui TCP ritrasmette un singolo segmento di dati prima di interrompere la connessione. Intervallo valido: 0-0xFFFFFFFF.
+Numero di volte in cui TCP ritrasmette un singolo segmento di dati prima di interrompere la connessione. Intervallo valido: 0 - 0xFFFFFFFF.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso in caso di errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -136,7 +136,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -199,12 +199,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -235,16 +235,16 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -262,7 +262,7 @@ IP non abilitato sulla scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -271,12 +271,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del frame o del numero di rete.
 
 </dd> <dt>
 
@@ -307,12 +307,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -348,20 +348,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -388,7 +388,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -406,11 +406,11 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="remarks"></a>Commenti
 
-Il timeout di ritrasmissione raddoppia con ogni ritrasmissione successiva in una connessione.
+Il timeout di ritrasmissione raddoppia a ogni successiva ritrasmissione in una connessione.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio relativo alla [modifica del numero massimo consentito di ritrasmissioni dati TCP](https://Gallery.TechNet.Microsoft.Com/8a581692-7950-412e-bd28-74f223b27827) consente di configurare il numero di tentativi di ritrasmissione di un singolo segmento di dati da parte di TCP prima di abbandonare il lavoro richiesto.
+L'esempio VBScript Modify [the Maximum Allowed TCP Data Retransmissions](https://Gallery.TechNet.Microsoft.Com/8a581692-7950-412e-bd28-74f223b27827) (Modifica numero massimo di ritrasmissioni dati TCP consentite) configura il numero di tentativi di ritrasmissione di un singolo segmento di dati da parte di TCP prima di abbandonare il lavoro richiesto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -421,7 +421,7 @@ L'esempio relativo alla [modifica del numero massimo consentito di ritrasmission
 | Client minimo supportato<br/> | Windows Vista, Windows Vista<br/>                                                 |
 | Server minimo supportato<br/> | Windows Server 2008, Windows Server 2008<br/>                                     |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -430,16 +430,16 @@ L'esempio relativo alla [modifica del numero massimo consentito di ritrasmission
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

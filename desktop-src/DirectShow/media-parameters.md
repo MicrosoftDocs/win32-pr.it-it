@@ -4,29 +4,29 @@ ms.assetid: 48b2bc2e-897d-4aa9-8a50-c2855a17dca5
 title: Parametri dei supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce9276a3d38b9176458299bfd1a47057cac6236e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 37cf7229cac3deb5b31a6c6879fd3b5896e5f4098a4cce64ac42d19970f5c569
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103885964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584341"
 ---
 # <a name="media-parameters"></a>Parametri dei supporti
 
-I parametri multimediali consentono a un'applicazione di configurare le proprietà di un oggetto in modo che cambino nel tempo in modo matematico.
+I parametri multimediali consentono a un'applicazione di configurare le proprietà di un oggetto in modo che cambino nel tempo in modo matematicamente deterministico.
 
-Si supponga, ad esempio, che un ingegnere del suono stia combinando un nastro master digitale e voglia applicare un lieve ritardo a una sezione vocale per compilare il suono. L'effetto sarà stridente se il ritardo si interrompe bruscamente. Al contrario, l'effetto dovrebbe iniziare il 100% a secco (nessun ritardo) e la combinazione Wet/Dry dovrebbe aumentare gradualmente fino a raggiungere il livello desiderato. Questa transizione dovrebbe inoltre seguire una curva uniforme o una progressione lineare. Per supportare questo scenario, un DMO può esporre le interfacce seguenti:
+Si supponga, ad esempio, che un tecnico del suono voglia combinare un nastro master digitale e voglia applicare un leggero ritardo a una sezione vocale, per compilare il suono. L'effetto sarà stridente se il ritardo si riduce improvvisamente. L'effetto dovrebbe invece iniziare a secco al 100% (nessun ritardo) e la combinazione umida/asciutta dovrebbe aumentare gradualmente fino a raggiungere il livello desiderato. Inoltre, questa transizione deve seguire una curva smussato o una progressione lineare. Per supportare questo scenario, un DMO può esporre le interfacce seguenti:
 
--   [**IMediaParamInfo**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparaminfo) contiene metodi per l'individuazione delle informazioni sulle proprietà supportate. In genere, il client chiamerà questi metodi prima di iniziare a trasmettere i dati.
--   [**IMediaParams**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparams) contengono metodi per l'impostazione delle curve che seguiranno un parametro durante il flusso.
+-   [**IMediaParamInfo contiene**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparaminfo) metodi per l'individuazione di informazioni sulle proprietà supportate. In genere, il client chiamerà questi metodi prima di iniziare a trasmettere i dati.
+-   [**IMediaParams contengono**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparams) metodi per impostare le curve che un parametro seguirà durante lo streaming.
 
-Queste interfacce sono progettate principalmente per DMOs, ma qualsiasi oggetto può supportarle. In questa sezione il termine *parametro* si riferisce a qualsiasi proprietà che supporta queste due interfacce.
+Queste interfacce sono progettate principalmente per le DMO, ma qualsiasi oggetto può supportarle. All'interno di questa sezione, il termine *parametro* fa riferimento a qualsiasi proprietà che supporta queste due interfacce.
 
 Questa sezione contiene i seguenti argomenti:
 
--   [Curve parametro](parameter-curves.md)
+-   [Curve dei parametri](parameter-curves.md)
 -   [Informazioni sui parametri](parameter-information.md)
--   [Segmenti busta](envelope-segments.md)
+-   [Segmenti di busta](envelope-segments.md)
 -   [Calcolo dei valori dei parametri](calculating-parameter-values.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

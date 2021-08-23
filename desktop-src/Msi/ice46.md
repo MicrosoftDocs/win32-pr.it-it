@@ -1,23 +1,23 @@
 ---
-description: ICE46 verifica la presenza di proprietà personalizzate in condizioni, testo formattato e altri percorsi diversi da una proprietà definita dal sistema solo in caso di uno o più caratteri.
+description: ICE46 verifica la presenza di proprietà personalizzate in condizioni, testo formattato e altre posizioni che differiscono da una proprietà definita dal sistema solo in base alla distinzione tra maiuscole e minuscole di uno o più caratteri.
 ms.assetid: 892d7462-0222-4fa0-b14c-17742a266c0a
 title: ICE46
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e24a76560b02a3a0ce3afa681c7ba74fcc7a2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbe334f973449ffe8bdbba1eb51347576c0b39c6b8eacfb8103970726dbc1ec6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580991"
 ---
 # <a name="ice46"></a>ICE46
 
-ICE46 verifica la presenza di proprietà personalizzate in condizioni, testo formattato e altri percorsi diversi da una proprietà definita dal sistema solo in caso di uno o più caratteri.
+ICE46 verifica la presenza di proprietà personalizzate in condizioni, testo formattato e altre posizioni che differiscono da una proprietà definita dal sistema solo in base alla distinzione tra maiuscole e minuscole di uno o più caratteri.
 
 ## <a name="result"></a>Risultato
 
-ICE46 Invia un messaggio informativo se è presente una proprietà personalizzata in una condizione, in un testo formattato e in un'altra posizione diversa da una proprietà definita dal sistema solo nel caso di uno o più caratteri.
+ICE46 invia un messaggio informativo se in una condizione è presente una proprietà personalizzata, un testo formattato e un'altra posizione che differisce da una proprietà definita dal sistema solo nel caso di uno o più caratteri.
 
 ## <a name="example"></a>Esempio
 
@@ -27,8 +27,8 @@ ICE46 segnala gli errori seguenti per l'esempio illustrato.
 
 | Errore ICE46                                                                                                                                            | Descrizione                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| La proprietà ReinstallMode definita nella tabella delle proprietà differisce da un'altra proprietà definita solo per caso.                                                   | Il nome di proprietà definito dal sistema **REINSTALLMODE** differisce dalla proprietà personalizzata solo per caso. Le proprietà fanno distinzione tra maiuscole e minuscole, pertanto la proprietà personalizzata non corrisponde alla proprietà di sistema. Si tratta di una delle cause comuni degli errori. |
-| Proprietà' setProperty ' a cui viene fatto riferimento nella colonna ' InstallExecuteSequence '. La condizione ' della riga ' InstallFinalize ' differisce da una proprietà definita solo per caso. | La tabella delle proprietà definisce la proprietà della tabella, ma la proprietà a cui si fa riferimento è SetProperty. Le proprietà fanno distinzione tra maiuscole e minuscole, pertanto le due proprietà non sono uguali. Si tratta di una delle cause comuni degli errori.                          |
+| Property ReinstallMode definito nella tabella delle proprietà differisce da un'altra proprietà definita solo per maiuscole e minuscole.                                                   | Il nome della proprietà definita dal sistema **REINSTALLMODE** differisce dalla proprietà personalizzata solo in base alla distinzione tra maiuscole e minuscole. Per le proprietà viene fatto distinzione tra maiuscole e minuscole, pertanto la proprietà personalizzata non corrisponde alla proprietà di sistema. Si tratta di una causa comune di errori. |
+| Proprietà 'Myproperty' a cui viene fatto riferimento nella colonna 'InstallExecuteSequence'. Condition' della riga 'InstallFinalize' differisce da una proprietà definita solo in base alla distinzione tra maiuscole e minuscole. | La tabella delle proprietà definisce la tabella MyProperty, ma la proprietà a cui si fa riferimento è Myproperty. Per le proprietà viene fatto distinzione tra maiuscole e minuscole, quindi le due proprietà NON sono uguali. Si tratta di una causa comune di errori.                          |
 
 
 
@@ -40,8 +40,8 @@ ICE46 segnala gli errori seguenti per l'esempio illustrato.
 
 | Proprietà      | Valore   |
 |---------------|---------|
-| ReinstallMode | omus    |
-| MyProperty    | valore |
+| ReinstallazioneMode | omus    |
+| Myproperty    | un valore |
 
 
 
@@ -51,9 +51,9 @@ ICE46 segnala gli errori seguenti per l'esempio illustrato.
 
 
 
-| Azione          | Condizione  |
+| Azione          | Condition  |
 |-----------------|------------|
-| InstallFinalize | MyProperty |
+| InstallFinalize | Myproperty |
 
 
 
@@ -63,7 +63,7 @@ ICE46 segnala gli errori seguenti per l'esempio illustrato.
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

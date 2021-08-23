@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: connessione a un dispositivo'
+description: 'Altre informazioni su: Connessione a un dispositivo'
 ms.assetid: 16ff280d-818b-4a4e-b5a6-16e81f5b35c6
 title: Connessione a un dispositivo
 ms.topic: article
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fc7d8c78f77854a9adbedad7c0870721b3b037ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf98c11b285d4c7aa4705095af99f35c129e27311dbe19ff42e4b0d288c45efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451221"
 ---
 # <a name="connecting-to-a-device"></a>Connessione a un dispositivo
 
 > [!Note]  
-> Questo sistema di scripting è stato sostituito con il livello di automazione Windows Image Acquisition (WIA). Vedere [livello di automazione acquisizione immagini Windows](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
+> Questo sistema di scripting è stato sostituito con Windows di automazione wia (Image Acquisition). Vedere [Windows Image Acquisition Automation Layer](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
 
  
 
-Il primo passaggio in qualsiasi applicazione o script che utilizza il modello di scripting Windows Image Acquisition (WIA) consiste nel creare l'oggetto [**WIA**](-wia-wia.md) . Questo oggetto fornisce i metodi per ottenere una raccolta di oggetti [**deviceInfo**](-wia-deviceinfo.md) e connettere questi oggetti ai dispositivi. Offre inoltre la possibilità di restare in ascolto degli eventi hardware WIA.
+Il primo passaggio in qualsiasi applicazione o script che usa il modello di scripting Windows Image Acquisition (WIA) consiste nella creazione [**dell'oggetto Wia.**](-wia-wia.md) Questo oggetto fornisce metodi per ottenere una raccolta di [**oggetti DeviceInfo**](-wia-deviceinfo.md) e connettere tali oggetti ai dispositivi. Offre anche la possibilità di restare in ascolto di eventi hardware WIA.
 
-La seguente riga di codice Microsoft Visual Basic Scripting Edition (VBScript) crea l'oggetto [**WIA**](-wia-wia.md) :
+La riga di codice Microsoft Visual Basic Scripting Edition (VBScript) seguente crea [**l'oggetto Wia:**](-wia-wia.md)
 
 
 ```
@@ -34,9 +34,9 @@ objWia = CreateObject("Wia.Script")
 
 
 
-Dopo aver creato l'oggetto [**WIA**](-wia-wia.md) , utilizzare il relativo metodo [**create**](-wia-iwia-create.md) per connettersi a un dispositivo hardware WIA.
+Dopo aver creato [**l'oggetto Wia,**](-wia-wia.md) usare [**il metodo Create**](-wia-iwia-create.md) per connettersi a un dispositivo hardware WIA.
 
-È anche possibile usare la proprietà [**Devices**](-wia-iwia-devices.md) dell'oggetto [**WIA**](-wia-wia.md) per ottenere una raccolta di oggetti [**deviceInfo**](-wia-deviceinfo.md) . Enumerare questa raccolta e usare il metodo [**create**](-wia-iwiadeviceinfo-create.md) per connettersi a un dispositivo.
+È anche possibile usare la proprietà [**Devices**](-wia-iwia-devices.md) dell'oggetto [**Wia**](-wia-wia.md) per ottenere una raccolta di [**oggetti DeviceInfo.**](-wia-deviceinfo.md) Enumerare questa raccolta e usare [**il metodo Create**](-wia-iwiadeviceinfo-create.md) per connettersi a un dispositivo.
 
  
 

@@ -1,23 +1,23 @@
 ---
-description: Questo attributo viene usato per specificare un linguaggio SDDL (Security Descriptor Definition Language) nel flusso per specificare i diritti di accesso con granularità fine per un determinato sensore.
+description: Questo attributo viene usato per specificare un SDDL (Security Descriptor Definition Language) nel flusso per specificare diritti di accesso con granularità fine per un determinato sensore.
 ms.assetid: 56C30A5B-3C26-4370-8A6B-35564F13AD53
-title: Attributo MF_SENSORSTREAM_REQUIRED_SDDL (Mfidl. h)
+title: MF_SENSORSTREAM_REQUIRED_SDDL attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce4b8a2d8c23d4d03522d0052aef0d4216c5587
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03a939c9407cef56fbf4ae6086574d0a8427268c019d7eae90edf4ffeb57b469
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119448861"
 ---
-# <a name="mf_sensorstream_required_sddl-attribute"></a>\_ \_ Attributo SDDL obbligatorio MF SENSORSTREAM \_
+# <a name="mf_sensorstream_required_sddl-attribute"></a>Attributo \_ SDDL MF SENSORSTREAM \_ \_ REQUIRED
 
-Questo attributo viene usato per specificare un linguaggio SDDL (Security Descriptor Definition Language) nel flusso per specificare i diritti di accesso con granularità fine per un determinato sensore.
+Questo attributo viene usato per specificare un SDDL (Security Descriptor Definition Language) nel flusso per specificare diritti di accesso con granularità fine per un determinato sensore.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WCHAR\***
+**Wchar\***
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,9 +25,9 @@ Questo attributo viene usato per specificare un linguaggio SDDL (Security Descri
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

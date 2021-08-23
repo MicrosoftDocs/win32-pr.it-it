@@ -1,17 +1,17 @@
 ---
 description: Specifica se il sink multimediale associato a questo nodo della topologia è senza frequenza.
 ms.assetid: 81ef7005-a9ab-4f26-bc39-68b27c4f92aa
-title: Attributo MF_TOPONODE_RATELESS (Mfidl. h)
+title: MF_TOPONODE_RATELESS attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d5c5ded4d8d09e8d45f766b03737954329c9202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56d4de6b132bf2b49e327be45588a497374043794ec73925eb61f2dab16fd1bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119448871"
 ---
-# <a name="mf_toponode_rateless-attribute"></a>\_ \_ Attributo senza valore MF TOPONODE
+# <a name="mf_toponode_rateless-attribute"></a>Attributo MF \_ TOPONODE \_ RATELESS
 
 Specifica se il sink multimediale associato a questo nodo della topologia è senza frequenza.
 
@@ -23,11 +23,11 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di output (**\_ nodo di \_ output \_ della topologia MF**).
+Questo attributo si applica ai nodi di output (**MF \_ TOPOLOGY \_ OUTPUT \_ NODE**).
 
-Se il valore di questo attributo è diverso da zero, la sessione multimediale considera il sink multimediale come un sink senza frequenza, indipendentemente dal fatto che il sink multimediale restituisca la caratteristica **MEDIASINK \_ senza frequenza** . Se questo attributo non è impostato, si presuppone che il sink multimediale non sia senza frequenza.
+Se il valore di questo attributo è diverso da zero, media Session considera il sink multimediale come un sink senza frequenza, indipendentemente dal fatto che il sink multimediale restituisca la caratteristica **MEDIASINK \_ RATELESS.** Se questo attributo non è impostato, si presuppone che il sink multimediale non sia senza frequenza.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFMediaSink:: getcaratteristiche**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getcharacteristics)
+[**IMFMediaSink::GetCharacteristics**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getcharacteristics)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

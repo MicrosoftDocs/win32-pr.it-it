@@ -1,7 +1,7 @@
 ---
-description: 'Arresta il filtro. Questo metodo implementa il metodo IMediaFilter:: stop.'
+description: Arresta il filtro. Questo metodo implementa il metodo IMediaFilter::Stop.
 ms.assetid: e95537d6-b3ec-49a4-aa28-333d69eff3bb
-title: Metodo CTransformFilter. Stop (Transfrm. h)
+title: Metodo CTransformFilter.Stop (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a7f7ea0f80095cd63f9708f12a42146260f2f8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8be126441ccbc672b54a8a9df7c296ef5f74b5a711f75617e962e5d85b11c3b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584881"
 ---
-# <a name="ctransformfilterstop-method"></a>Metodo CTransformFilter. Stop
+# <a name="ctransformfilterstop-method"></a>Metodo CTransformFilter.Stop
 
-Arresta il filtro. Questo metodo implementa il metodo [**IMediaFilter:: Stop**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop) .
+Arresta il filtro. Questo metodo implementa il [**metodo IMediaFilter::Stop.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o un altro valore **HRESULT** .
+Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Una volta che questo metodo esegue il commit di entrambi gli allocatori, chiama il metodo [**StopStreaming**](ctransformfilter-stopstreaming.md) . Il metodo **StopStreaming** non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override.
+Dopo che questo metodo ha decommiso entrambi gli allocatori, chiama il [**metodo StopStreaming.**](ctransformfilter-stopstreaming.md) Il **metodo StopStreaming** non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Una volta che questo metodo esegue il commit di entrambi gli allocatori, chiama 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

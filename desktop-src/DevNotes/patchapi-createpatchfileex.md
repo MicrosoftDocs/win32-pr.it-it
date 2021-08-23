@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - mspatchc.dll
-ms.openlocfilehash: c84be2d859a780e46e7e940aa4a7e7da5296f0e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d73b6f4d10c52e9eca147227fdbfece31cba157af84fdf56dbef5cacda516b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690871"
 ---
 # <a name="createpatchfileexaw-function"></a>Funzione CreatePatchFileExA/W
 
-Le funzioni **CreatePatchFileExA** e **CreatePatchFileExW** creano un delta tra il file di origine specificato e il file di destinazione specificato. I file di origine e di destinazione vengono forniti come percorsi. Anche il Delta di output viene scritto in un percorso specificato. Queste funzioni forniscono report sullo stato di avanzamento durante il processo di creazione.
+Le **funzioni CreatePatchFileExA** e **CreatePatchFileExW** creano un delta tra il file di origine specificato e il file di destinazione specificato. Sia i file di origine che i file di destinazione vengono forniti come percorsi. Anche il delta di output viene scritto in un percorso specificato. Queste funzioni forniscono report sullo stato di avanzamento durante il processo di creazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,21 +56,21 @@ BOOL  PATCHAPI  CreatePatchFileExW(
 
 *OldFileCount*
 
-Numero totale di file di origine. Utilizzato per creare Delta rispetto a più file di origine (massimo 255).
+Numero totale di file di origine. Usato per creare delta su più file di origine (massimo 255).
 
 *OldFileInfoArray*
 
 Puntatore alla matrice di informazioni sul file di origine.
 
-*Nomenuovofile*
+*NewFileName*
 
 Nome del file di destinazione.
 
 *PatchFileName*
 
-Nome del Delta creato.
+Nome del delta creato.
 
-*OptionFlags*
+*Flag di opzione*
 
 Flag di creazione.
 
@@ -84,13 +84,13 @@ Puntatore al contesto definito dall'applicazione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **true** se ha esito positivo; in caso contrario, restituisce **false**.
+Questa funzione restituisce **TRUE** se ha esito positivo; In caso contrario, restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |----------------|---------------------------------------------------------------------------------------|
-| Intestazione | PatchAPI. h |
+| Intestazione | patchapi.h |
 | DLL | mspatchc.dll |
 | Unicode | Implementato come CreatePatchFileExW (Unicode) e CreatePatchFileExA (ANSI) |
 

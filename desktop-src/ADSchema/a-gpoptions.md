@@ -1,10 +1,10 @@
 ---
-title: Attributo GP-Options
-description: Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospita questa proprietà.
+title: GP-Options attributo
+description: Opzioni che influiscono su tutti i criteri di gruppo associati all'oggetto che ospita questa proprietà.
 ms.assetid: 180ada21-7185-4589-a5a2-2cd1bbe64d0c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD GP-Options attribute
+- GP-Options schema AD dell'attributo
 - Schema AD dell'attributo gPOptions
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 289537abf29601caf2921b670428defbc494c9f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c82aa5eb16aff76fbae8030e8995b6a7d5592777b11d11602eac3030f3aac84c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705961"
 ---
-# <a name="gp-options-attribute"></a>Attributo GP-Options
+# <a name="gp-options-attribute"></a>GP-Options attributo
 
-Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospita questa proprietà.
+Opzioni che influiscono su tutti i criteri di gruppo associati all'oggetto che ospita questa proprietà.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | GP-Options                           |
-| LDAP-Display-Name | gPOptions                            |
+| Ldap-Display-Name | gPOptions                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.892               |
-| System-ID-GUID    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
+| System-Id-Guid    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                    |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Opzioni che interessano tutti i criteri di gruppo associati all'oggetto che ospi
 | ID collegamento                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classi utilizzate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Configurazione**](c-configuration.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 

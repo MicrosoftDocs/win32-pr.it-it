@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11ThreadPump WaitForAllItems (D3DX11core. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Attende il completamento di tutti gli elementi di lavoro nella pompa di thread.
+title: Metodo ID3DX11ThreadPump WaitForAllItems (D3DX11core.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Attende il completamento di tutti gli elementi di lavoro nel thread pump.
 ms.assetid: 6dfdaee8-e563-4c37-a2c1-4b115e29c434
 keywords:
 - Metodo WaitForAllItems Direct3D 11
 - Metodo WaitForAllItems Direct3D 11, interfaccia ID3DX11ThreadPump
-- Interfaccia ID3DX11ThreadPump Direct3D 11, metodo WaitForAllItems
+- ID3DX11ThreadPump interface Direct3D 11 , WaitForAllItems method
 topic_type:
 - apiref
 api_name:
@@ -17,21 +17,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40abbab67d6743be2190d5e81c733f63b52b32f5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b3dcb5be664e81a479c0459808456fc1417bec78043ae0376f125c62c65a208
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729102"
 ---
-# <a name="id3dx11threadpumpwaitforallitems-method"></a>Metodo ID3DX11ThreadPump:: WaitForAllItems
+# <a name="id3dx11threadpumpwaitforallitems-method"></a>Metodo ID3DX11ThreadPump::WaitForAllItems
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
 
  
 
-Attende il completamento di tutti gli elementi di lavoro nella pompa di thread.
+Attende il completamento di tutti gli elementi di lavoro nel thread pump.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati nei [codici restituiti di Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Il valore restituito è uno dei valori elencati nei [codici restituiti di Direct
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 

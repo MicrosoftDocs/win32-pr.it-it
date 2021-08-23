@@ -1,9 +1,9 @@
 ---
-title: OnKeyDown
-description: Il gestore eventi OnKeyDown gestisce un evento che si verifica quando viene premuto un tasto.
+title: Onkeydown
+description: Il gestore dell'evento onkeydown gestisce un evento che si verifica quando viene premuto un tasto.
 ms.assetid: a93b1394-461a-447c-a712-0bf736a98865
 keywords:
-- Media Player Windows OnKeyDown
+- Onkeydown Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 418c89d92fbec4fd7df04e23cc18c09679362134
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4b658bd3b2abf9e2a8319e2edee33abe461fd7e701c2918952e86bc49ff84a6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647101"
 ---
-# <a name="onkeydown"></a>OnKeyDown
+# <a name="onkeydown"></a>Onkeydown
 
-Il gestore eventi **OnKeyDown** gestisce un evento che si verifica quando viene premuto un tasto.
+Il **gestore dell'evento onkeydown** gestisce un evento che si verifica quando viene premuto un tasto.
 
 ``` syntax
 onkeydown
@@ -30,7 +30,7 @@ onkeydown
 
 ## <a name="remarks"></a>Commenti
 
-Questo gestore eventi non è applicabile all'elemento **playlist** , all'elemento **Effects** o all'elemento **video** quando il *video*. senza **finestra** è false.
+Questo gestore eventi non è applicabile all'elemento **PLAYLIST,** **all'elemento EFFECTS** o all'elemento **VIDEO** quando *VIDEO*. **windowless** è false.
 
 ## <a name="requirements"></a>Requisiti
 

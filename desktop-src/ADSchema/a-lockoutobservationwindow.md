@@ -1,10 +1,10 @@
 ---
-title: Lock-out-osservazione-attributo finestra
-description: Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema incrementa il numero di accessi non corretti.
+title: Attributo Lock-Out-Observation-Window
+description: Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema incrementa il numero di accessi non corretto.
 ms.assetid: a1929c32-cd05-43ca-9d4a-554683991696
 ms.tgt_platform: multiple
 keywords:
-- Lock-out-osservazione-schema AD attributo finestra
+- Schema AD dell'attributo Lock-Out-Observation-Window
 - Schema AD dell'attributo lockOutObservationWindow
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa00a71ba504ff4aa772cc43838f95c326db04c5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0850c966b9a6a200779b2c567cecbfd4c68f38af1f45c6196a2f913c9e9e13fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705761"
 ---
-# <a name="lock-out-observation-window-attribute"></a>Lock-out-osservazione-attributo finestra
+# <a name="lock-out-observation-window-attribute"></a>Attributo Lock-Out-Observation-Window
 
-Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema incrementa il numero di accessi non corretti.
+Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema incrementa il numero di accessi non corretto.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Lock-out-osservazione-finestra          |
-| LDAP-Display-Name | lockOutObservationWindow             |
+| CN                | Lock-Out-Observation-Window          |
+| Ldap-Display-Name | lockOutObservationWindow             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.61                |
-| System-ID-GUID    | bf9679a4-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679a4-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Intervallo di tempo, in intervalli di 100 nanosecondi, in cui il sistema increme
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

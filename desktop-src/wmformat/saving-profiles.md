@@ -6,27 +6,27 @@ keywords:
 - Windows Media Format SDK, salvataggio di profili
 - Windows Media Format SDK, salvataggio del profilo
 - profili, salvataggio
-- profili, interfaccia IWMProfileManager
+- profili,interfaccia IWMProfileManager
 - IWMProfileManager, salvataggio di profili
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 276b002f0b7f98de2e84f2c27a4f52bde25726bb
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 6befb09d7e0d628462bdd22e1e905c351be58dc077959089883ce3707dc493d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547041"
 ---
 # <a name="saving-profiles"></a>Salvataggio di profili
 
-È possibile usare il metodo [**IWMProfileManager:: SaveProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-saveprofile) per salvare il contenuto di un oggetto profilo in una stringa formattata con XML. Nessun metodo fornito per archiviare la stringa del profilo in un file; è possibile usare le routine di I/O dei file di propria scelta.
+È possibile usare il [**metodo IWMProfileManager::SaveProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-saveprofile) per salvare il contenuto di un oggetto profilo in una stringa formattata con XML. Non vengono forniti metodi per archiviare la stringa del profilo in un file. è possibile usare le routine di I/O di file di propria scelta.
 
 > [!Note]  
-> Non modificare mai la stringa del profilo scritta in un file. Tutte le modifiche da apportare a un profilo devono essere apportate a livello di codice. La modifica dei valori in un file con estensione prx può causare risultati imprevedibili.
+> Non modificare mai la stringa del profilo scritta in un file. Le modifiche da apportare a un profilo devono essere apportate a livello di codice. La modifica dei valori in un file con estensione prx può causare risultati imprevedibili.
 
- 
+ 
 
-L'esempio seguente è una funzione per salvare un profilo in un file usando l'I/O di file di tipo C standard. Per compilare un'applicazione che usa questo esempio, è necessario includere STDIO. h nel progetto.
+L'esempio seguente è una funzione per salvare un profilo in un file usando I/O standard di file di tipo C. Per compilare un'applicazione che usa questo esempio, è necessario includere stdio.h nel progetto.
 
 
 ```C++
@@ -91,12 +91,12 @@ HRESULT ProfileToFile(IWMProfileManager* pProfileMgr,
 
 <dl> <dt>
 
-[**Utilizzo dei profili**](working-with-profiles.md)
+[**Uso dei profili**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

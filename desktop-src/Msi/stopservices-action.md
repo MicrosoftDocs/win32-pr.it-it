@@ -1,21 +1,21 @@
 ---
-description: L'azione StopServices interrompe i servizi di sistema. Questa azione esegue una query sulla tabella ServiceControl.
+description: L'azione StopServices arresta i servizi di sistema. Questa azione esegue una query sulla tabella ServiceControl.
 ms.assetid: 1ad01205-f8b6-400f-be1d-c00a5b71ccfd
 title: Azione StopServices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31cb271b99c434a1ac54ab9744697b991e9e1fcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fee0082d1588c3a1486b51bd4f06869374e1f6babfa71d309d65512e1ff1b0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627381"
 ---
 # <a name="stopservices-action"></a>Azione StopServices
 
-L'azione StopServices interrompe i servizi di sistema. Questa azione esegue una query sulla [tabella ServiceControl](servicecontrol-table.md).
+L'azione StopServices arresta i servizi di sistema. Questa azione esegue una query [sulla tabella ServiceControl](servicecontrol-table.md).
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
 Le azioni dei servizi devono essere usate nella sequenza seguente:
 
@@ -48,7 +48,7 @@ Una delle azioni seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Per questa azione è necessario che l'utente sia un amministratore o disponga di privilegi elevati con l'autorizzazione per controllare i servizi o che l'applicazione faccia parte di un'installazione gestita.
+Questa azione richiede che l'utente sia un amministratore o abbia privilegi elevati con l'autorizzazione per controllare i servizi o che l'applicazione sia parte di un'installazione gestita.
 
  
 

@@ -1,21 +1,21 @@
 ---
-title: Condivisione tra processi e dispositivi affiancati per le risorse
-description: I pool di sezioni possono essere condivisi con altri processi proprio come le risorse tradizionali.
+title: Condivisione tra processi e dispositivi di risorse affiancate
+description: I pool di riquadri possono essere condivisi con altri processi esattamente come le risorse tradizionali.
 ms.assetid: CADE009E-A71E-4ACA-A549-EFCE81F8EAD1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f69c88ec7e56a0ad3f67ca7d219352261af9d60
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1a0526561569d924c656b3a879e87fb6a99472e56823c177a50e09f19454457
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631971"
 ---
-# <a name="tiled-resource-cross-process-and-device-sharing"></a>Condivisione tra processi e dispositivi affiancati per le risorse
+# <a name="tiled-resource-cross-process-and-device-sharing"></a>Condivisione tra processi e dispositivi di risorse affiancate
 
-I pool di sezioni possono essere condivisi con altri processi proprio come le risorse tradizionali. Le risorse affiancate che fanno riferimento a pool di sezioni non possono essere condivise tra dispositivi e processi. Tuttavia, i processi distinti possono creare le proprie risorse affiancate che eseguono il mapping ai pool di sezioni condivisi tra le risorse affiancate.
+I pool di riquadri possono essere condivisi con altri processi esattamente come le risorse tradizionali. Le risorse affiancate che fanno riferimento a pool di riquadri non possono essere condivise tra dispositivi e processi. Tuttavia, processi separati possono creare le proprie risorse affiancate mappate a pool di riquadri condivisi tra tali risorse affiancate.
 
-Non è possibile ridimensionare i pool di riquadri condivisi.
+I pool di riquadri condivisi non possono essere ridimensionati.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ Non è possibile ridimensionare i pool di riquadri condivisi.
 
 | Argomento                                                                                                                   | Descrizione                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Formati stencil non supportati con le risorse affiancate](stencil-formats-not-supported-with-tiled-resources.md)<br/> | I formati che contengono stencil non sono supportati con le risorse affiancate. <br/> |
+| [Formati degli stencil non supportati con le risorse affiancate](stencil-formats-not-supported-with-tiled-resources.md)<br/> | I formati che contengono stencil non sono supportati con le risorse affiancate. <br/> |
 
 
 

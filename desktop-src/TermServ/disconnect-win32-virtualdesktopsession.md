@@ -4,9 +4,9 @@ description: Disconnette la sessione desktop virtuale.
 ms.assetid: 9dbb256c-c416-4749-87be-05a906070560
 ms.tgt_platform: multiple
 keywords:
-- Disconnetti metodo Servizi Desktop remoto
-- Metodo Disconnect Servizi Desktop remoto, classe Win32_VirtualDesktopSession
-- Classe Win32_VirtualDesktopSession Servizi Desktop remoto, metodo Disconnect
+- Metodo Disconnect Servizi Desktop remoto
+- Metodo Disconnect Servizi Desktop remoto , Win32_VirtualDesktopSession classe
+- Win32_VirtualDesktopSession classe Servizi Desktop remoto metodo , Disconnect
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d473286dec0d286b0e5e9e310c146bd46a2f95b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0998e6dad97c1dcf6e55a999f02eac34a9881efa27c6cb6636f729cbb75befad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515661"
 ---
-# <a name="disconnect-method-of-the-win32_virtualdesktopsession-class"></a>Metodo Disconnect della \_ classe VirtualDesktopSession di Win32
+# <a name="disconnect-method-of-the-win32_virtualdesktopsession-class"></a>Metodo Disconnect della classe \_ VirtualDesktopSession Win32
 
 Disconnette la sessione desktop virtuale.
 
@@ -53,8 +53,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_VirtualDesktopSession Win32**](win32-virtualdesktopsession.md)
+[**Win32 \_ VirtualDesktopSession**](win32-virtualdesktopsession.md)
 </dt> </dl>
 
  

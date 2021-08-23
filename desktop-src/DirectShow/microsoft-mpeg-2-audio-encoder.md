@@ -1,21 +1,21 @@
 ---
 description: Il filtro Microsoft MPEG-2 Audio Encoder codifica i livelli audio MPEG-1 I e II, incluso il supporto per le estensioni MPEG-2 Low Sampling Frequency (LSF).
 ms.assetid: a36e838b-8b11-4851-9dd2-efd9fe070770
-title: Codificatore audio Microsoft MPEG-2 (Wmcodecdsp. h)
+title: Microsoft MPEG-2 Audio Encoder (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d055acd379d9e966f43eac284e38a10c05a86c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 030821905862a9698ee24c3227f2846cd8c892e20c501d2776cdf2f9bb88f3e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584121"
 ---
-# <a name="microsoft-mpeg-2-audio-encoder"></a>Codificatore audio Microsoft MPEG-2
+# <a name="microsoft-mpeg-2-audio-encoder"></a>Codificatore audio MPEG-2 Microsoft
 
 Il filtro Microsoft MPEG-2 Audio Encoder codifica i livelli audio MPEG-1 I e II, incluso il supporto per le estensioni MPEG-2 Low Sampling Frequency (LSF).
 
-Per codificare i flussi audio/video multiplex, usare il filtro [**Microsoft MPEG-2 Encoder**](microsoft-mpeg-2-encoder.md) , che incapsula le funzioni di questo filtro e del filtro [**codificatore video Microsoft MPEG-2**](microsoft-mpeg-2-video-encoder.md) .
+Per codificare e codificare flussi audio/video multiplex, usare il filtro [**Microsoft MPEG-2 Encoder,**](microsoft-mpeg-2-encoder.md) che incapsula le funzioni di questo filtro e del filtro [**Microsoft MPEG-2 Video Encoder.**](microsoft-mpeg-2-video-encoder.md)
 
 > [!Note]  
 > Questo filtro non è supportato nelle piattaforme basate su IA-64.
@@ -24,7 +24,7 @@ Per codificare i flussi audio/video multiplex, usare il filtro [**Microsoft MPEG
 
 
 
-Informazioni sul filtro
+Filtrare le informazioni
 
 Interfacce di filtro
 
@@ -32,7 +32,7 @@ Interfacce di filtro
 
 Tipi di supporti pin di input
 
-**MEDIATYPE \_ Audio**, **\_ PCM MEDIASUBTYPE**
+**MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ PCM**
 
 Interfacce pin di input
 
@@ -40,15 +40,15 @@ Interfacce pin di input
 
 Tipi di supporti pin di output
 
-**MEDIATYPE \_ Audio**, **\_ \_ audio MPEG2 MEDIASUBTYPE**<br/> **MEDIATYPE \_ Flusso**, **MEDIASUBTYPE \_ \_ audio MPEG2**<br/> **MEDIATYPE \_ Flusso**, **\_ \_ programma MEDIASUBTYPE MPEG2**<br/> **MEDIATYPE \_ Flusso**, **\_ \_ trasporto MPEG2 MEDIASUBTYPE**<br/>
+**MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**<br/> **MEDIATYPE \_ Stream,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**<br/> **MEDIATYPE \_ Stream,** **MEDIASUBTYPE \_ MPEG2 \_ PROGRAM**<br/> **MEDIATYPE \_ Flusso,** **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**<br/>
 
-Interfacce del PIN di output
+Interfacce pin di output
 
 [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-CLSID filtro
+Filtro CLSID
 
-**CLSID \_ CMPEG2EncoderAudioDS** (dichiarata in wmcodecdsp. h)
+**CLSID \_ CMPEG2EncoderAudioDS** (dichiarato in wmcodecdsp.h)
 
 File eseguibile
 
@@ -56,11 +56,11 @@ msmpeg2enc.dll
 
 [Merito](merit.md)
 
-**il merito non viene \_ \_ \_ utilizzato**
+**MERITO \_ NON \_ \_ USARE**
 
 [Categoria filtro](filter-categories.md)
 
-**\_LEGACYAMFILTERCATEGORY CLSID**
+**CLSID \_ LegacyAmFilterCategory**
 
 
 
@@ -68,15 +68,15 @@ msmpeg2enc.dll
 
 ## <a name="remarks"></a>Commenti
 
-Il codificatore audio MPEG-2 può produrre i tipi di output seguenti:
+MpEG-2 Audio Encoder può produrre i tipi di output seguenti:
 
--   Flusso audio elementare
+-   Flusso elementare audio
 -   Audio in un flusso di programma MPEG-2
 -   Audio in un flusso di trasporto MPEG-2
 
-Supporta le estensioni MPEG-1 Layer I e II e MPEG-2 Low Sampling Frequency (LSF)
+Supporta le estensioni mpeg-1 livelli I e II e MPEG-2 a bassa frequenza di campionamento (LSF)
 
-Gli esempi di input devono essere a 16 bit per campione, con una frequenza di campionamento audio di 48, 44,1, 32, 22,05 o 16 KHz. Il codificatore non può ricampionare il flusso audio; l'audio codificato ha la stessa frequenza di campionamento dell'input.
+I campioni di input devono avere 16 bit per campione, con una frequenza di campionamento audio di 48, 44,1, 32, 22,05 o 16 KHz. Il codificatore non può ricampionare il flusso audio. l'audio codificato ha la stessa frequenza di campionamento dell'input.
 
 Gli esempi di input devono essere mono o stereo. L'audio codificato ha il numero di canali come input.
 
@@ -84,16 +84,16 @@ Gli esempi di input devono essere mono o stereo. L'audio codificato ha il numero
 
 Il codificatore non supporta quanto segue:
 
--   Bitstream audio MPEG Layer III.
+-   Flusso di bit audio MPEG livello III.
 -   Bitstream di estensione multicanale MPEG-2.
--   Bitstream MPEG-4 AAC.
--   Bitstream MPEG-2 non compatibili con le versioni precedenti (NBC).
--   Generazione di pacchetti di flusso elementare (PES) in pacchetto.
--   Codifica Dolby Digital.
+-   Flusso di bit MPEG-4 AAC.
+-   Flusso di bit MPEG-2 non compatibile con le versioni precedenti (NBC).
+-   Generazione di pacchetti PES (Packetized Elementary Stream).
+-   Codifica digitale Dolby.
 
 ### <a name="codec-properties"></a>Proprietà codec
 
-Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi):
+Il filtro supporta le proprietà seguenti tramite [**ICodecAPI:**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 
 -   [**AVAudioChannelCount**](avaudiochannelcount-property.md)
 -   [**AVAudioSampleRate**](avaudiosamplerate-property.md)
@@ -109,17 +109,17 @@ Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/deskt
 -   [**AVEncMPAPrivateUserBit**](avencmpaprivateuserbit-property.md)
 
 > [!Note]  
-> Una versione precedente della documentazione elenca erroneamente alcune proprietà aggiuntive che non sono supportate.
+> In una versione precedente della documentazione sono elencate erroneamente alcune proprietà aggiuntive non supportate.
 
  
 
-Per compatibilità con le versioni precedenti, il filtro supporta la seguente proprietà tramite l'interfaccia **IEncoderAPI** :
+Per compatibilità con le versioni precedenti, il filtro supporta la proprietà seguente tramite **l'interfaccia IEncoderAPI:**
 
 
 
 | Proprietà                 | Descrizione                                                                      |
 |--------------------------|----------------------------------------------------------------------------------|
-| **\_velocità in bit ENCAPIPARAM** | Equivalente a [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md). |
+| **VELOCITÀ IN BIT ENCAPIPARAM \_** | Equivale a [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md). |
 
 
 
@@ -140,9 +140,9 @@ Impostare le proprietà rimanenti in qualsiasi ordine.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ desktop apps only\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 
 
 
@@ -150,10 +150,10 @@ Impostare le proprietà rimanenti in qualsiasi ordine.
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> <dt>
 
-[**Tipi di supporti di Demultiplexer MPEG-2**](mpeg-2-demultiplexer-media-types.md)
+[**Tipi di supporti demultiplexer MPEG-2**](mpeg-2-demultiplexer-media-types.md)
 </dt> </dl>
 
  

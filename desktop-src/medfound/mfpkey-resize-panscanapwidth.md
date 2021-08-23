@@ -1,23 +1,23 @@
 ---
-description: Specifica la larghezza, in pixel, dell'area di Pan/Scan.
+description: Specifica la larghezza, in pixel, dell'area di panoramica/digitalizzazione.
 ms.assetid: c0dcf305-ec81-45df-891c-8aaacd95f620
-title: Proprietà MFPKEY_RESIZE_PANSCANAPWIDTH (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_PANSCANAPWIDTH proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65040307901bf01fee6c095f32dd4e579b6caad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f912541eb0ce5f0dab304c83bb90e7f7b0eef36f7d62685801ac5d11be01cf73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603757"
 ---
-# <a name="mfpkey_resize_panscanapwidth-property"></a>MFPKEY \_ Resize- \_ Proprietà PANSCANAPWIDTH
+# <a name="mfpkey_resize_panscanapwidth-property"></a>Proprietà MFPKEY \_ RESIZE \_ PANSCANAPWIDTH
 
-Specifica la larghezza, in pixel, dell'area di Pan/Scan.
+Specifica la larghezza, in pixel, dell'area di panoramica/digitalizzazione.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Ridimensionamento video DSP](videoresizer.md)
+-   [DSP di Ridimensionamento video](videoresizer.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

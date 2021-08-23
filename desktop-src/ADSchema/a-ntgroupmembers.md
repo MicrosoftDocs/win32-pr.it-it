@@ -14,30 +14,30 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f212da06992c367a4221cc49eb7217a309886745
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 11a2b4f3e7927b07bcee4a17116da41aea9e3db0d7114e71bb1c3774b692819d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648261"
 ---
 # <a name="nt-group-members-attribute"></a>Attributo NT-Group-Members
 
 Questo attributo non viene utilizzato.
 
-L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di un gruppo.
+[**L'attributo**](a-member.md) member viene usato per contenere i membri di un gruppo.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | NT-gruppo-membri                                      |
-| LDAP-Display-Name | nTGroupMembers                                        |
+| CN                | Nt-Group-Members                                      |
+| Ldap-Display-Name | nTGroupMembers                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.89                                 |
-| System-ID-GUID    | bf9679df-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf9679df-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -60,15 +60,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -81,15 +81,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -102,15 +102,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -123,15 +123,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -144,15 +144,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -165,15 +165,15 @@ L'attributo [**member**](a-member.md) viene utilizzato per contenere i membri di
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Falso                               |
+| Is-Single-Valued       | Falso                               |
 | Indicizzato             | Falso                               |
 | Nel catalogo globale      | Falso                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica i colori dei vertici per una mesh, anziché applicare un materiale per volto o per mesh.
+description: Specifica i colori dei vertici per una mesh, anziché applicare un materiale per ogni viso o per mesh.
 ms.assetid: 9ffd365f-11a5-420b-af5e-6a8be79a304c
 title: MeshVertexColors
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba55d601b29e0962c5d56e86ae052c454bf3adc7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 035f8d51ae692b0edd20f7b06b5ab8e756ff73d9cd8265d64700ce5374f9a15b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628331"
 ---
 # <a name="meshvertexcolors"></a>MeshVertexColors
 
-Specifica i colori dei vertici per una mesh, anziché applicare un materiale per volto o per mesh.
+Specifica i colori dei vertici per una mesh, anziché applicare un materiale per ogni viso o per mesh.
 
 ``` syntax
 template MeshVertexColors
@@ -26,8 +26,8 @@ template MeshVertexColors
 
 Dove:
 
--   nVertexColors: numero di colori. Corrisponde al numero di vertici nella rete.
--   Array IndexColor vertexColors \[ nVertexColors \] -matrice di colori indicizzati. Vedere [**IndexedColor**](indexedcolor.md).
+-   nVertexColors : numero di colori. Corrisponde al numero di vertici nella mesh.
+-   array IndexColor vertexColors \[ nVertexColors \] : matrice di colori indicizzati. Vedere [**IndexedColor**](indexedcolor.md).
 
 ## <a name="see-also"></a>Vedi anche
 

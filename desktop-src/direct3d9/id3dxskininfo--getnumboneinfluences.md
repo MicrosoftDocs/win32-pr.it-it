@@ -1,7 +1,7 @@
 ---
 description: Ottiene il numero di influenze per un osso.
 ms.assetid: 6383f990-2989-46b3-a634-b3bb7bd1d65b
-title: 'Metodo ID3DXSkinInfo:: GetNumBoneInfluences (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::GetNumBoneInfluences (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 712f54b0459bc3e62c61b59d001a5d27dd5a8837
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: abacdaab2feccda81e321f1c73bbb93d15711ba3b3a492f0ca99d33df77d5a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492211"
 ---
-# <a name="id3dxskininfogetnumboneinfluences-method"></a>Metodo ID3DXSkinInfo:: GetNumBoneInfluences
+# <a name="id3dxskininfogetnumboneinfluences-method"></a>Metodo ID3DXSkinInfo::GetNumBoneInfluences
 
 Ottiene il numero di influenze per un osso.
 
@@ -40,12 +40,12 @@ DWORD GetNumBoneInfluences(
 
 <dl> <dt>
 
-*osso* \[ in\]
+*osso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero osso.
+Numero di osso.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Restituisce il numero di influenze per un osso.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: External. appColorButtonShadow (tipo 1)
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. appColorButtonShadow (tipo 1)
+title: External.appColorButtonShadow (tipo 1)
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | External.appColorButtonShadow (tipo 1)
 ms.assetid: 82eb6814-9b63-465a-ad40-95760f0ca762
 keywords:
-- External. appColorButtonShadow (tipo 1) Windows Media Player
+- External.appColorButtonShadow (tipo 1) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e623e9594f1289c6eb69059c2a273a488e03313
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd497c5d016d9069c02fa5da9dd3874620e4d1cc245976e4fff0b8cb3640f361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649901"
 ---
-# <a name="externalappcolorbuttonshadow-type-1"></a>External. appColorButtonShadow (tipo 1)
+# <a name="externalappcolorbuttonshadow-type-1"></a>External.appColorButtonShadow (tipo 1)
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **appColorButtonShadow** Recupera il colore dell'ombreggiatura del pulsante corrente per l'interfaccia utente di Windows Media Player.
+La **proprietà appColorButtonShadow** recupera il colore di ombreggiatura del pulsante corrente per l'Windows Media Player utente.
 
 ``` syntax
 window.external.appColorButtonShadow
@@ -37,11 +37,11 @@ window.external.appColorButtonShadow
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media Player. È possibile usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
+Gli utenti possono modificare il colore dell'Windows Media Player utente. Puoi usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Gli utenti possono modificare il colore dell'interfaccia utente di Windows Media
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 1 online**](external-object-for-type-1-online-stores.md)
+[**Oggetto esterno per i negozi online di tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> </dl>
 
  

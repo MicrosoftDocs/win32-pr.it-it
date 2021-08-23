@@ -1,49 +1,49 @@
 ---
-title: Porting delle curve di taglio
-description: Le curve di trimming OpenGL sono molto simili alle curve di taglio GL di IRIS. La tabella seguente elenca le funzioni di IRIS GL per la definizione delle curve di taglio e delle funzioni OpenGL equivalenti.
+title: Porting di curve di taglio
+description: Le curve di taglio OpenGL sono molto simili alle curve di taglio IRIS GL. Nella tabella seguente sono elencate le funzioni IRIS GL per definire le curve di taglio e le funzioni OpenGL equivalenti.
 ms.assetid: 9aeea9ca-5ecd-4be1-853d-45b1566b263b
 keywords:
-- Porting di IRIS GL, curve di taglio
-- porting da IRIS GL, curve di taglio
-- porting in OpenGL da IRIS GL, taglio delle curve
+- Porting IRIS GL, curve di taglio
+- porting da IRIS GL, taglio di curve
+- porting a OpenGL da IRIS GL, taglio delle curve
 - Porting OpenGL da IRIS GL, curve di taglio
 - taglio di curve
 - curve
-- Porting di IRIS GL, curve
+- Porting IRIS GL, curve
 - porting da IRIS GL, curve
 - porting in OpenGL da IRIS GL, curve
 - Porting OpenGL da IRIS GL, curve
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cc82822b2e0b9e66729f0cb1a0e939d2775999c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ad544431adaa7f0b049341ec7314e3e53ae60752d633a48c760ca09334f79d33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553861"
 ---
-# <a name="porting-trimming-curves"></a>Porting delle curve di taglio
+# <a name="porting-trimming-curves"></a>Porting di curve di taglio
 
-Le curve di trimming OpenGL sono molto simili alle curve di taglio GL di IRIS. La tabella seguente elenca le funzioni di IRIS GL per la definizione delle curve di taglio e delle funzioni OpenGL equivalenti.
+Le curve di taglio OpenGL sono molto simili alle curve di taglio IRIS GL. Nella tabella seguente sono elencate le funzioni IRIS GL per definire le curve di taglio e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL | OpenGL (funzione)                        | Significato                              |
+| Funzione GL IRIS | Funzione OpenGL                        | Significato                              |
 |------------------|----------------------------------------|--------------------------------------|
 | **bgntrim**      | [**gluBeginTrim**](glubegintrim.md)   | Inizia la definizione della curva di taglio.    |
-| **pwlcurve**     | [**gluPwlCurve**](glupwlcurve.md)     | Definisce una curva lineare a tratti.    |
-| **NurbsCurve**   | [**gluNurbsCurve**](glunurbscurve.md) | Specifica gli attributi della curva di taglio. |
+| **pwlcurve**     | [**gluPwlCurve**](glupwlcurve.md)     | Definisce una curva lineare a punti.    |
+| **nurbscurve**   | [**gluNurbsCurve**](glunurbscurve.md) | Specifica gli attributi trimming-curve. |
 | **endtrim**      | [**gluEndTrim**](gluendtrim.md)       | Termina la definizione della curva di taglio.      |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

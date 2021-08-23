@@ -1,10 +1,10 @@
 ---
-title: Attributo DNS-Allow-Dynamic
-description: L'attributo DNS-Allow-Dynamic non è attualmente in uso.
+title: Attributo Dns-Allow-Dynamic
+description: L'attributo Dns-Allow-Dynamic non è attualmente usato.
 ms.assetid: a81383dd-0e5b-4423-b140-33071cf80159
 ms.tgt_platform: multiple
 keywords:
-- DNS-Consenti-schema AD dell'attributo dinamico
+- Schema AD dell'attributo Dns-Allow-Dynamic
 - Schema AD dell'attributo dnsAllowDynamic
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a805f997f9dc87de1748718fe7099c42b03f56a7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 86ff03bff6cf61ae9d2737b4c8332337d1db3cc2255e6d7bb1ad34370d0a68c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706291"
 ---
-# <a name="dns-allow-dynamic-attribute"></a>Attributo DNS-Allow-Dynamic
+# <a name="dns-allow-dynamic-attribute"></a>Attributo Dns-Allow-Dynamic
 
-L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
+**L'attributo Dns-Allow-Dynamic** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | DNS-Consenti-dinamico                    |
-| LDAP-Display-Name | dnsAllowDynamic                      |
+| CN                | Dns-Allow-Dynamic                    |
+| Ldap-Display-Name | dnsAllowDynamic                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.378               |
-| System-ID-GUID    | e0fa1e65-9b45-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | e0fa1e65-9b45-11d0-afdd-00c04fd930c9 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **DNS-Allow-Dynamic** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

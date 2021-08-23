@@ -1,7 +1,7 @@
 ---
-description: Le applicazioni utilizzano i metodi dell'interfaccia IDirectXFileEnumObject per scorrere gli oggetti dati nel file e per recuperare un oggetto dati in base al relativo identificatore univoco globale (GUID) o in base al nome. Deprecato.
+description: Le applicazioni usano i metodi dell'interfaccia IDirectXFileEnumObject per scorrere gli oggetti dati nel file e recuperare un oggetto dati in base al relativo identificatore univoco globale (GUID) o al relativo nome. Deprecato.
 ms.assetid: 9eefda2a-5b17-4330-8245-63a38c1b1469
-title: Interfaccia IDirectXFileEnumObject (DXFile. h)
+title: Interfaccia IDirectXFileEnumObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,26 +14,26 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: f9220f6e0a406cb4143798787276d7aa6cb5f5d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 448751cf7160dd9f5bd44f8f7460f30acc731ddf783c840654c3634e80f66540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491751"
 ---
 # <a name="idirectxfileenumobject-interface"></a>Interfaccia IDirectXFileEnumObject
 
-Le applicazioni utilizzano i metodi dell'interfaccia IDirectXFileEnumObject per scorrere gli oggetti dati nel file e per recuperare un oggetto dati in base al relativo identificatore univoco globale (GUID) o in base al nome. Deprecato.
+Le applicazioni usano i metodi dell'interfaccia IDirectXFileEnumObject per scorrere gli oggetti dati nel file e recuperare un oggetto dati in base al relativo identificatore univoco globale (GUID) o al relativo nome. Deprecato.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDirectXFileEnumObject** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IDirectXFileEnumObject** dispone anche di questi tipi di membri:
+**L'interfaccia IDirectXFileEnumObject** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IDirectXFileEnumObject** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDirectXFileEnumObject** dispone di questi metodi.
+Questi metodi sono disponibili **nell'interfaccia IDirectXFileEnumObject.**
 
 
 
@@ -66,8 +66,8 @@ typedef interface IDirectXFileEnumObject *LPDIRECTXFILEENUMOBJECT;
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ typedef interface IDirectXFileEnumObject *LPDIRECTXFILEENUMOBJECT;
 
 <dl> <dt>
 
-[Interfacce di file X](dx9-graphics-reference-x-file-interfaces.md)
+[X Interfacce di file](dx9-graphics-reference-x-file-interfaces.md)
 </dt> </dl>
 
  

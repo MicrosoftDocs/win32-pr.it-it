@@ -1,41 +1,41 @@
 ---
-title: Temporizzazione (Windows Multimedia)
+title: Intervallo (Windows Multimediali)
 description: Intervallo
 ms.assetid: 9ab284c7-eebc-4b44-b9e1-cc95efde22c1
 keywords:
-- DrawDib, temporizzazione
-- DrawDibTime (funzione)
+- DrawDib, intervallo
+- Funzione DrawDibTime
 - DrawDib, debug
 - debug di DrawDib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adddd43ff5067d08334a40f2e52e79109c8a8bb7
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1bc4324de5336a00b246ad644794ce8d0b3491bb644f34e8fc22dc8a7e460ba1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104474861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688081"
 ---
-# <a name="timing-windows-multimedia"></a>Temporizzazione (Windows Multimedia)
+# <a name="timing-windows-multimedia"></a>Intervallo (Windows Multimediali)
 
-Come parte del debug di un'applicazione, è possibile ottenere informazioni sul tempo necessario per completare le operazioni DrawDib ripetitive. La funzione [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) restituisce informazioni sulla temporizzazione per le operazioni seguenti:
+Come parte del debug di un'applicazione, è possibile ottenere informazioni sulla quantità di tempo necessaria per completare operazioni DrawDib ripetitive. La [**funzione DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) restituisce informazioni sull'intervallo per le operazioni seguenti:
 
 -   Disegno di una bitmap
 -   Decompressione di una bitmap
--   Retinatura di una bitmap
+-   Dithering di una bitmap
 -   Estensione di una bitmap
--   Trasferimento di una bitmap tramite la funzione [**BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt)
--   Trasferimento di una bitmap tramite la funzione [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits)
+-   Trasferimento di una bitmap tramite la [**funzione BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt)
+-   Trasferimento di una bitmap tramite la [**funzione StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits)
 
-Dopo il recupero di un set di valori, [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) Reimposta il conteggio e il valore per ogni operazione.
+Dopo il recupero di un set di valori, [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) reimposta il conteggio e il valore per ogni operazione.
 
-La funzione [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) è disponibile solo nella versione di debug delle funzioni DrawDib.
+La [**funzione DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) è disponibile solo nella versione di debug delle funzioni DrawDib.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Rendering di immagini](image-rendering.md)
+[Rendering delle immagini](image-rendering.md)
 </dt> </dl>
 
  

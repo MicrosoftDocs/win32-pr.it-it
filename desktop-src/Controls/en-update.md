@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_UPDATE (winuser. h)
+title: EN_UPDATE codice di notifica (Winuser.h)
 description: Inviato quando un controllo di modifica sta per essere ridisegnato.
 ms.assetid: 59138736-6cc9-4a3f-95f3-ada9cbf253cb
 keywords:
-- Controlli di Windows per il codice di notifica EN_UPDATE
+- EN_UPDATE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df0b045efcfb5d50cb2a85c9ae230e215263aa2e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c126122336fd878dda633620c395cb86c112de1f5dc89e8e25d2c4e08bd93ebd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436430"
 ---
-# <a name="en_update-notification-code"></a>\_Codice di notifica dell'aggiornamento en
+# <a name="en_update-notification-code"></a>Codice di notifica EN \_ UPDATE
 
-Inviato quando un controllo di modifica sta per essere ridisegnato. Questo codice di notifica viene inviato dopo che il controllo ha formattato il testo, ma prima di visualizzare il testo. In questo modo è possibile ridimensionare la finestra di controllo di modifica, se necessario. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando un controllo di modifica sta per essere ridisegnato. Questo codice di notifica viene inviato dopo che il controllo ha formattato il testo, ma prima di visualizzare il testo. In questo modo è possibile ridimensionare la finestra del controllo di modifica, se necessario. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_UPDATE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo di modifica. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,11 +55,11 @@ Handle per il controllo di modifica.
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica dettagliata 1,0:** Per ricevere \_ i codici di notifica degli aggiornamenti, specificare l' [**\_ aggiornamento di ENM**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+**Rich Edit 1.0:** Per ricevere i \_ codici di notifica EN UPDATE, specificare [**ENM \_ UPDATE**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
-**Rich Edit 2,0 e versioni successive:** Il flag di [**\_ aggiornamento ENM**](rich-edit-control-event-mask-flags.md) viene ignorato. Il \_ codice di notifica dell'aggiornamento it viene sempre ricevuto. Tuttavia, quando Microsoft Rich Edit 3,0 emula Microsoft Rich Edit 1,0, per ricevere \_ i codici di notifica di aggiornamento en, è necessario specificare l' **\_ aggiornamento di ENM** nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+**Rich Edit 2.0 e versioni successive:** Il flag [**ENM \_ UPDATE**](rich-edit-control-event-mask-flags.md) viene ignorato. Il codice di notifica EN \_ UPDATE viene sempre ricevuto. Tuttavia, quando Microsoft Rich Edit 3.0 emula Microsoft Rich Edit 1.0, per ricevere i codici di notifica EN UPDATE è necessario specificare ENM UPDATE nella maschera inviata con il messaggio \_ [**EM \_ SETEVENTMASK.**](em-seteventmask.md) **\_**
 
-Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+Per informazioni sulla compatibilità delle versioni rich edit con le diverse versioni del sistema, vedere [Informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Per informazioni sulla compatibilità delle versioni Rich Edit con le varie vers
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -80,13 +80,13 @@ Per informazioni sulla compatibilità delle versioni Rich Edit con le varie vers
 **Riferimento**
 </dt> <dt>
 
-[\_modifica en](en-change.md)
+[MODIFICA \_ EN](en-change.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

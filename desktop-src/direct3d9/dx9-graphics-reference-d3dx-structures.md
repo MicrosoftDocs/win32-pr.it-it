@@ -1,15 +1,15 @@
 ---
-description: Questa sezione contiene informazioni sulle strutture incluse nella libreria di utilità D3DX in Direct3D 9 Graphics.
+description: Questa sezione contiene informazioni sulle strutture incluse nella libreria di utilità D3DX nella grafica Direct3D 9.
 ms.assetid: eee684f1-2d79-444b-86cd-322bf53ab756
 title: Strutture D3DX (grafica Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 616797f20a75ed7bd9a49e5bf811fff451d69078
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 75d96eae38a8d07d4b89192c255b58fd0f41db0d8c13a3f8d8f0c87c6e477501
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728211"
 ---
 # <a name="d3dx-structures-direct3d-9-graphics"></a>Strutture D3DX (grafica Direct3D 9)
 
@@ -26,11 +26,11 @@ Questa sezione contiene informazioni sulle strutture incluse nella libreria di u
 -   [**Estensioni D3DXFLOAT16**](d3dxfloat16-extensions.md)
 -   [**D3DXFONT \_ DESC**](d3dxfont-desc.md)
 -   [**D3DXFRAME**](d3dxframe.md)
--   [**D3DXIMAGE \_ INFO**](d3dximage-info.md)
+-   [**INFORMAZIONI D3DXIMAGE \_**](d3dximage-info.md)
 -   [**D3DXINTERSECTINFO**](d3dxintersectinfo.md)
 -   [**D3DXKEY \_ CALLBACK**](d3dxkey-callback.md)
 -   [**D3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)
--   [**VETTORE D3DXKEY3 \_**](d3dxkey-vector3.md)
+-   [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)
 -   [**D3DXMATERIAL**](d3dxmaterial.md)
 -   [**D3DXMATRIX**](d3dxmatrix.md)
 -   [Estensioni D3DXMATRIX](d3dxmatrix-extensions.md)

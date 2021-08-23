@@ -1,9 +1,9 @@
 ---
-title: attributo force_allocate
-description: L'attributo ACF \ Force \_ allocate \ forza l'allocazione di un parametro del puntatore usando l' \_ utente MIDL \_ allocate anziché ottimizzare l'allocazione.
+title: force_allocate attributo
+description: L'attributo ACF \ force allocate\ forza l'allocazione di un parametro puntatore usando midl user allocate invece di \_ \_ \_ ottimizzare l'allocazione.
 ms.assetid: 40e3a7d9-7e4f-4e3d-8c82-fb6ef567f293
 keywords:
-- attributo force_allocate MIDL
+- force_allocate attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f73d0386d786e4d3004c78b1acccda7e9be8fc16
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c9c82e1665e4c49461c3c7bd1c315b31f4f72c7e3f0e5331d9f0326347d36105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582161"
 ---
-# <a name="force_allocate-attribute"></a>Force \_ alloca attributo
+# <a name="force_allocate-attribute"></a>Attributo force \_ allocate
 
-L'attributo di allocazione forzata degli attributi di ACF impone l'allocazione di \[ **\_** \] un parametro del puntatore usando l' [**\_ utente MIDL \_ allocato**](midl-user-allocate-1.md) anziché ottimizzare l'allocazione.
+L'attributo ACF force allocate forza l'allocazione di un parametro puntatore usando midl user allocate invece di \[ **\_** \] ottimizzare [**\_ \_**](midl-user-allocate-1.md) l'allocazione.
 
 ``` syntax
 [ [function-attribute-list <>] ] type-specifier <> [pointer- <>declarator <>] function-name <>( [ force_allocate [ , parameter-attribute-list <> ] ] type-specifier <> [declarator <>] , ...);
@@ -33,9 +33,9 @@ Questo attributo non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-RPC tenta di ridurre al minimo le allocazioni di memoria nel server fornendo puntatori ai buffer di memoria interni. Questo approccio può causare problemi per le applicazioni che tentano di chiamare direttamente l' [**\_ utente MIDL \_ senza**](midl-user-free-1.md) i puntatori forniti da RPC, perché un puntatore ottimizzato non può essere liberato. Contrassegnando un parametro con **\[ Force \_ allocate \]** si eviterà questa ottimizzazione per tutti i puntatori che lo derivano.
+RPC tenta di ridurre al minimo le allocazioni di memoria nel server fornendo puntatori ai buffer di memoria interni. Questo approccio può causare problemi per le applicazioni che tentano di chiamare direttamente [**midl \_ user \_ free**](midl-user-free-1.md) sui puntatori forniti da RPC, perché non è possibile liberare un puntatore ottimizzato. Contrassegnare un parametro con **\[ force \_ allocate \]** impedirà questa ottimizzazione per tutti i puntatori che lo derivano.
 
-Un altro uso comune di **\[ Force \_ allocate \]** consiste nel garantire l'allineamento della memoria a cui si fa riferimento se un'applicazione richiede un allineamento maggiore di quello della memoria a cui punta. Ad esempio, le applicazioni passano spesso dati in una matrice generica di byte anziché utilizzare il tipo effettivo, ma un byte è garantito solo per essere allineato a 1, che può causare problemi per le applicazioni che presuppongono un allineamento più grande. Contrassegnando il parametro con **\[ Force \_ allocate \]**, l'applicazione può garantire che tutte le memoria a cui puntano avranno un allineamento uguale a quello garantito dall' [**\_ utente MIDL \_ allocate**](midl-user-allocate-1.md).
+Un altro uso comune di **\[ force \_ allocate \]** è garantire l'allineamento della memoria a cui punta se un'applicazione richiede un allineamento maggiore di quello della memoria a cui punta. Ad esempio, le applicazioni passano spesso i dati in una matrice generica di byte anziché usare il tipo effettivo, ma è garantito che un byte sia allineato solo a 1, il che può causare problemi per le applicazioni che presuppongono un allineamento maggiore. Contrassegnando il parametro con **\[ force \_ \] allocate,** l'applicazione può garantire che tutta la memoria a cui punta abbia un allineamento uguale a quello garantito da [**midl user \_ \_ allocate.**](midl-user-allocate-1.md)
 
 ## <a name="examples"></a>Esempi
 
@@ -57,21 +57,21 @@ Func2([force_allocate] pData);
 
 <dl> <dt>
 
-[Evitare le informazioni nascoste](/windows/desktop/WinProg64/avoiding-information-hiding)
+[Evitare di nascondere le informazioni](/windows/desktop/WinProg64/avoiding-information-hiding)
 </dt> <dt>
 
-[Progettazione di interfacce compatibili con 64 bit](/windows/desktop/WinProg64/designing-64-bit-compatible-interfaces)
+[Progettazione di interfacce compatibili a 64 bit](/windows/desktop/WinProg64/designing-64-bit-compatible-interfaces)
 </dt> <dt>
 
-[**\_alloca utente \_ MIDL**](midl-user-allocate-1.md)
+[**midl \_ user \_ allocate**](midl-user-allocate-1.md)
 </dt> <dt>
 
-[**\_utente MIDL \_ gratuito**](midl-user-free-1.md)
+[**midl \_ user \_ free**](midl-user-free-1.md)
 </dt> <dt>
 
-[**allocare**](allocate.md)
+[**Allocare**](allocate.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
 description: Aggiunge un oggetto dati come oggetto figlio. Deprecato.
 ms.assetid: 43771dd6-c17f-4376-9b0a-459ba61ff4c5
-title: 'Metodo IDirectXFileData:: AddDataObject (DXFile. h)'
+title: Metodo IDirectXFileData::AddDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 393526bb249b0337964bee0af5be1b55b8dd513e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db11f5f3c0d9078663c87db8948bc483ab05d229cd4d7fd0950efaf5143e1408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491831"
 ---
-# <a name="idirectxfiledataadddataobject-method"></a>Metodo IDirectXFileData:: AddDataObject
+# <a name="idirectxfiledataadddataobject-method"></a>Metodo IDirectXFileData::AddDataObject
 
 Aggiunge un oggetto dati come oggetto figlio. Deprecato.
 
@@ -40,12 +40,12 @@ HRESULT AddDataObject(
 
 <dl> <dt>
 
-*pDataObj* \[ in\]
+*pDataObj* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)**
 
-Puntatore a un'interfaccia [**IDirectXFileData**](idirectxfiledata.md) , che rappresenta l'oggetto dati del file da aggiungere come oggetto figlio.
+Puntatore a [**un'interfaccia IDirectXFileData,**](idirectxfiledata.md) che rappresenta l'oggetto dati file da aggiungere come oggetto figlio.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 ## <a name="remarks"></a>Commenti
 
-Usare il metodo [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveobject--createdataobject.md) per creare l'oggetto [**IDirectXFileData**](idirectxfiledata.md) prima di chiamare questo metodo.
+Usare il [**metodo IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) per creare l'oggetto [**IDirectXFileData**](idirectxfiledata.md) prima di chiamare questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Usare il metodo [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesave
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

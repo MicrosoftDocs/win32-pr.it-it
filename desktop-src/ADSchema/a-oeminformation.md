@@ -1,10 +1,10 @@
 ---
-title: Attributo OEM-Information
-description: Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità con le versioni precedenti.
+title: OEM-Information attributo
+description: Per contenere le informazioni OEM. Non più utilizzata. Qui per la compatibilità con le versioni precedenti.
 ms.assetid: d456f9e0-da88-4f3a-897a-1a9f42f4b7b9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD OEM-Information attribute
+- OEM-Information schema AD dell'attributo
 - Schema AD dell'attributo oEMInformation
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 700baa4453d0ce88c2c6a316cef88244c6a96687
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28a9440f2ef5dbb6ed4c1899b8439a442767ab1692acda2c38d280d56eb62be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442341"
 ---
-# <a name="oem-information-attribute"></a>Attributo OEM-Information
+# <a name="oem-information-attribute"></a>OEM-Information attributo
 
-Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità con le versioni precedenti.
+Per contenere le informazioni OEM. Non più utilizzata. Qui per la compatibilità con le versioni precedenti.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | OEM-Information                             |
-| LDAP-Display-Name | oEMInformation                              |
+| Ldap-Display-Name | oEMInformation                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.151                      |
-| System-ID-GUID    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Per contenere informazioni OEM. Non più utilizzata. Qui per la compatibilità c
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| A valore singolo       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

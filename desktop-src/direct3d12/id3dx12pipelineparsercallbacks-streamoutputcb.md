@@ -1,6 +1,6 @@
 ---
-title: Metodo ID3DX12PipelineParserCallbacks StreamOutputCb (D3DX12. h)
-description: Chiama il callback del sottooggetto della descrizione di output del flusso di un oggetto che implementa questa interfaccia.
+title: Metodo ID3DX12PipelineParserCallbacks StreamOutputCb (D3DX12.h)
+description: Chiama il callback del sottooggetto della descrizione dell'output del flusso di un oggetto che implementa questa interfaccia.
 ms.assetid: 93447ABE-A942-4562-A532-600EC63072DA
 keywords:
 - Metodo StreamOutputCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae32f084edd2b6af374aa9b1cac4e563ef8a2eb6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1e484d044bc4de2be3d40c6080e77b62aa57b59f0161c2021b8696316970542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632351"
 ---
-# <a name="id3dx12pipelineparsercallbacksstreamoutputcb-method"></a>Metodo ID3DX12PipelineParserCallbacks:: StreamOutputCb
+# <a name="id3dx12pipelineparsercallbacksstreamoutputcb-method"></a>Metodo ID3DX12PipelineParserCallbacks::StreamOutputCb
 
-Chiama il callback del sottooggetto della descrizione di output del flusso di un oggetto che implementa questa interfaccia.
+Chiama il callback del sottooggetto della descrizione dell'output del flusso di un oggetto che implementa questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,15 +46,15 @@ void StreamOutputCb(
 *StreamOutput* \[ Ref\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ Stream \_ output \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)**
+Tipo: **const [**D3D12 \_ STREAM OUTPUT \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)**
 
-Dettagli del sottooggetto della descrizione di output del flusso analizzato da un flusso di stato della pipeline.
+Dettagli dell'oggetto secondario della descrizione dell'output del flusso analizzato da un flusso di stato della pipeline.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Non restituisce alcun elemento.
+Non restituisce alcun valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Non restituisce alcun elemento.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Non restituisce alcun elemento.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Desc di \_ output \_ flusso D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
+[**D3D12 \_ STREAM \_ OUTPUT \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
 </dt> </dl>
 
  

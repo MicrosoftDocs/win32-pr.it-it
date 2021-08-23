@@ -1,25 +1,25 @@
 ---
 title: Panoramica dello storyboard
-description: Questa panoramica è incentrata sul modo in cui le transizioni e gli storyboard vengono usati nell'animazione di Windows.
+description: Questa panoramica è incentrata sul modo in cui le transizioni e gli storyboard vengono usati Windows Animation.
 ms.assetid: d37718ac-0256-4a24-a26c-d29173593be0
 keywords:
-- Animazione di Windows Animation , panoramica dello storyboard
-- storyboard Animazione di Windows , descritto
-- transizioni animazione di Windows, descritto
-- transizioni animazione di Windows, personalizzata
-- interpolatori Windows Animation ,descritto
+- Windows Panoramica Windows animazione , storyboard
+- storyboard Windows Animation , descritto
+- transizioni Windows Animation , descritto
+- transizioni Windows Animation , custom
+- interpolatori Windows Animation , descritto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58210ae98f6d3a96c554276466ad72b3364d72a1
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: ca78e4638ad7c3930be25b9ff826e5fa533d2af62cc4907b7a17d4c5b636f239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119514189"
 ---
 # <a name="storyboard-overview"></a>Panoramica dello storyboard
 
-Questa panoramica è incentrata sul modo in cui le transizioni e gli storyboard vengono usati nell'animazione di Windows. Per una panoramica dei componenti dell'animazione di Windows, vedere [Cenni preliminari sull'animazione di Windows](scenic-animation-api-overview.md).
+Questa panoramica è incentrata sul modo in cui le transizioni e gli storyboard vengono usati Windows Animation. Per una panoramica dei componenti di Windows Animation, vedere Windows [Animation Overview](scenic-animation-api-overview.md).
 
 In questo argomento sono incluse le sezioni seguenti:
 
@@ -37,7 +37,7 @@ In questo argomento sono incluse le sezioni seguenti:
 
 ## <a name="transitions"></a>Transizioni
 
-Una transizione definisce il modo in cui una singola variabile di animazione cambia in un intervallo di tempo specifico. Windows Animation include una libreria di transizioni comuni che gli sviluppatori possono applicare a una o più variabili di animazione. Diversi tipi di transizioni hanno set diversi di parametri, che possono includere il valore della variabile al termine della transizione, la durata della transizione o quantità univoche per la funzione matematica sottostante, ad esempio accelerazione o intervallo di oscillazione.
+Una transizione definisce il modo in cui una singola variabile di animazione cambia in un intervallo di tempo specifico. Windows L'animazione include una libreria di transizioni comuni che gli sviluppatori possono applicare a una o più variabili di animazione. Diversi tipi di transizioni hanno set diversi di parametri, che possono includere il valore della variabile al termine della transizione, la durata della transizione o quantità univoche per la funzione matematica sottostante, ad esempio accelerazione o intervallo di oscillazione.
 
 Tutte le transizioni condividono due parametri impliciti: il valore iniziale e la velocità iniziale (pendenza) della funzione matematica. Possono essere specificati in modo esplicito dall'applicazione, ma in genere vengono impostati dal gestore dell'animazione sul valore e sulla velocità della variabile di animazione all'inizio della transizione.
 
@@ -60,10 +60,10 @@ Le transizioni seguenti sono attualmente fornite dalla libreria di transizione. 
 | linear<br/>                      | La variabile di animazione esegue la transizione lineare dal valore iniziale a un valore finale specificato per una determinata durata.<br/>                                                                      |
 | lineare dalla velocità<br/>           | La variabile di animazione esegue la transizione lineare dal valore iniziale a un valore finale specificato con una velocità specificata.<br/>                                                                     |
 | parabolico dall'accelerazione<br/> | La variabile di animazione passa dal valore iniziale a un valore finale specificato, con una velocità finale specificata, modificandone la velocità con un'accelerazione specificata.<br/>               |
-| Inversione<br/>                    | La variabile cambia direzione per una determinata durata. Il valore finale sarà uguale al valore iniziale e la velocità finale sarà negativa della velocità iniziale.<br/>          |
+| Inversione<br/>                    | La variabile cambia direzione per una determinata durata. Il valore finale sarà lo stesso del valore iniziale e la velocità finale sarà negativa della velocità iniziale.<br/>          |
 | sinusoidale dall'intervallo<br/>       | La variabile oscilla all'interno di un determinato intervallo di valori, con un periodo di oscillazione specificato, per una determinata durata.<br/>                                                                     |
 | sinusoidale dalla velocità<br/>    | La variabile oscilla con un periodo di oscillazione specificato, per una determinata durata. L'ampiezza dell'oscillazione è determinata dalla velocità iniziale della variabile.<br/>                      |
-| arresto uniforme<br/>                 | La variabile di animazione viene interrotta gradualmente in corrispondenza di un valore finale specificato, entro un periodo di tempo massimo.<br/>                                                                              |
+| arresto uniforme<br/>                 | La variabile di animazione viene interrotta in corrispondenza di un valore finale specificato, entro un periodo di tempo massimo.<br/>                                                                              |
 
 
 
@@ -76,7 +76,7 @@ La tabella seguente contiene illustrazioni per ognuna di queste transizioni.
 |    Illustrazioni                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Illustrazione di una transizione istantanea](images/instantaneoustransition.png)  ![Illustrazione di una transizione costante](images/constanttransition.png)  ![illustrazione di una transizione lineare](images/lineartransition.png)  ![Illustrazione di una transizione lineare dalla velocità](images/lineartransitionfromspeed.png)  ![Illustrazione di una transizione discreta](images/discretetransition.png) |
-| ![Illustrazione di una transizione parabolica dall'accelerazione](images/parabolictransitionfromacceleration.png)  ![illustrazione di una transizione cubica](images/cubictransition.png)  ![Illustrazione di una transizione di arresto uniforme](images/smoothstoptransition.png)                                                                                                                                       |
+| ![Illustrazione di una transizione parabolica dall'accelerazione](images/parabolictransitionfromacceleration.png)  ![Illustrazione di una transizione cubica](images/cubictransition.png)  ![Illustrazione di una transizione di arresto uniforme](images/smoothstoptransition.png)                                                                                                                                       |
 | ![Illustrazione di una transizione inversa](images/reversaltransition.png)  ![illustrazione di una transizione sinusoidale dalla velocità](images/sinusolidaltransitionfromvelocity.png)  ![Illustrazione di una transizione sinusoidale dall'intervallo](images/sinusolidaltransitionfromrange.png)                                                                                                                  |
 | ![Illustrazione delle transizioni di accellerate e decelerate](images/acceleratedeceleratetransition.png)                                                                                                                                                                                                                                                                                               |
 
@@ -92,7 +92,7 @@ Si noti che la maggior parte delle applicazioni avrà tutte le transizioni neces
 
 ## <a name="storyboards"></a>Storyboard
 
-Uno storyboard è una raccolta di transizioni applicate a una o più variabili di animazione nel tempo. È garantito che le transizioni in uno storyboard rimangano sincronizzate l'una rispetto all'altra e lo storyboard viene pianificato o annullato come unità. Dopo aver creato le transizioni desiderate, un'applicazione crea uno storyboard usando gestione animazione, aggiunge le transizioni allo storyboard, configura lo storyboard in modo appropriato e lo pianifica per la riproduzione il prima possibile. Il gestore dell'animazione determina l'ora di inizio effettiva dello storyboard, perché potrebbero verificarsi problemi con altri storyboard che animano attualmente le stesse variabili.
+Uno storyboard è una raccolta di transizioni applicate a una o più variabili di animazione nel tempo. È garantito che le transizioni in uno storyboard rimangano sincronizzate l'una rispetto all'altra e lo storyboard viene pianificato o annullato come unità. Dopo aver creato le transizioni desiderate, un'applicazione crea uno storyboard usando gestione animazione, aggiunge le transizioni allo storyboard, configura lo storyboard in modo appropriato e lo pianifica per la riproduzione il prima possibile. Il gestore dell'animazione determina l'ora di inizio effettiva dello storyboard, perché potrebbero esserci problemi con altri storyboard che animano attualmente le stesse variabili.
 
 La durata complessiva di uno storyboard dipende dalle durate delle transizioni all'interno dello storyboard. La durata di una transizione non deve essere fissata. può essere determinato dal valore e dalla velocità delle variabili animate all'inizio della transizione. La durata di uno storyboard può quindi dipendere anche dallo stato delle variabili a cui viene animata.
 
@@ -117,7 +117,7 @@ Si noti che per uno scenario così semplice, un'opzione alternativa consiste nel
 
 ### <a name="using-a-context-sensitive-duration"></a>Uso di una durata Context-Sensitive predefinita
 
-Anche se alcune transizioni hanno una durata fissa, la durata di altre dipende dal valore iniziale o dalla velocità della variabile animata all'inizio della transizione. Ad esempio, il metodo [**IUIAnimationTransitionLibrary::CreateLinearTransitionFromSpeed**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createlineartransitionfromspeed) crea una transizione con una durata proporzionale alla differenza tra il valore iniziale della variabile di animazione e il valore finale specificato. In questa illustrazione, e nelle illustrazioni rimanenti, tali transizioni con durate arbitrarie vengono visualizzate con un punto interrogativo (?) e le relative durate effettive vengono determinate quando viene riprodotto lo storyboard.
+Anche se alcune transizioni hanno una durata fissa, la durata di altre dipende dal valore iniziale o dalla velocità della variabile animata all'inizio della transizione. Ad esempio, il metodo [**IUIAnimationTransitionLibrary::CreateLinearTransitionFromSpeed**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createlineartransitionfromspeed) crea una transizione con una durata proporzionale alla differenza tra il valore iniziale della variabile di animazione e il valore finale specificato. In questa illustrazione e nelle illustrazioni rimanenti, tali transizioni con durate arbitrarie vengono visualizzate con un punto interrogativo (?) e le relative durate effettive vengono determinate quando viene riprodotto lo storyboard.
 
 ![Illustrazione che mostra uno storyboard semplice con una durata sconosciuta](images/simplestoryboardunknownduration.png)
 
@@ -131,7 +131,7 @@ Supponendo che la transizione T2 abbia una durata sensibile al contesto, lo stor
 
 Chiamando [**nuovamente AddTransition**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransition) con la variabile Y e la transizione T3 viene aggiunta una terza transizione all'inizio dello storyboard. A seconda dei valori di X e Y quando viene riprodotto lo storyboard, T3 può terminare dopo T1 o anche dopo T2.
 
-![Illustrazione che mostra uno storyboard contenente transizioni tra più variabili](images/multivariablestoryboard.png)
+![Figura che mostra uno storyboard contenente transizioni tra più variabili](images/multivariablestoryboard.png)
 
 ### <a name="using-keyframes"></a>Uso dei fotogrammi chiave
 
@@ -153,7 +153,7 @@ Sia l'inizio che la fine di una transizione possono essere allineati ai fotogram
 
 ### <a name="holding-variables"></a>Contenere variabili
 
-Se T4 termina dopo T2 e T5, lo storyboard interrompe l'animazione delle variabili X e Y, rendendole disponibili per l'animazione degli altri storyboard. Tuttavia, l'applicazione può chiamare il metodo [**IUIAnimationStoryboard::HoldVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-holdvariable) per richiedere che lo storyboard manteni alcune o tutte le variabili a cui aggiunge un'animazione ai valori finali fino al completamento dello storyboard. Il diagramma seguente mostra il risultato di mantenere X e Z quando T4 termina per ultimo. Si noti che lo storyboard mantiene X al valore finale fino al completamento dello storyboard. Il blocco non ha alcun effetto su Z perché lo storyboard termina al termine di T4.
+Se T4 termina dopo T2 e T5, lo storyboard interrompe l'animazione delle variabili X e Y, rendendole disponibili per l'animazione degli altri storyboard. Tuttavia, l'applicazione può chiamare il metodo [**IUIAnimationStoryboard::HoldVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-holdvariable) per richiedere allo storyboard di contenere alcune o tutte le variabili a cui viene animata in corrispondenza dei valori finali fino al completamento dello storyboard. Il diagramma seguente mostra il risultato di mantenere X e Z quando T4 termina per ultimo. Si noti che lo storyboard mantiene X al valore finale fino al completamento dello storyboard. Il blocco non ha alcun effetto su Z perché lo storyboard termina al termine di T4.
 
 ![Illustrazione che mostra il controllo delle variabili ai valori finali fino al completamento dello storyboard](images/holdvariable.png)
 
@@ -173,11 +173,11 @@ La figura seguente illustra la struttura di uno storyboard con cinque transizion
 
 ![Figura che mostra uno storyboard con cinque transizioni che animano tre variabili](images/storyboardwithoutline.png)
 
-Un elemento fondamentale della piattaforma Windows Animation è il supporto per consentire il completamento di un'animazione prima dell'inizio di un'altra, se necessario. Questa operazione elimina molti problemi logici, ma introduce anche una latenza arbitraria nell'interfaccia utente. Per risolvere questo problema,  le applicazioni possono specificare il ritardo accettabile più lungo per l'avvio di uno storyboard, usando il metodo [**IUIAnimationStoryboard::SetLongestAcceptableDelay**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay) e il gestore dell'animazione usa queste informazioni per pianificare lo storyboard prima che sia trascorso il periodo di latenza specificato. Quando viene pianificato uno storyboard, il gestore dell'animazione determina se gli altri storyboard devono prima essere annullati, tagliati, conclusi e/o compressi.
+Un elemento fondamentale della piattaforma Windows Animation è il supporto per consentire il completamento di un'animazione prima dell'inizio di un'altra, quando necessario. Questa operazione elimina molti problemi logici, ma introduce anche una latenza arbitraria nell'interfaccia utente. Per risolvere questo problema,  le applicazioni possono specificare il ritardo accettabile più lungo per l'avvio di uno storyboard, usando il metodo [**IUIAnimationStoryboard::SetLongestAcceptableDelay**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay) e il gestore dell'animazione usa queste informazioni per pianificare lo storyboard prima che sia trascorso il periodo di latenza specificato. Quando viene pianificato uno storyboard, il gestore dell'animazione determina se altri storyboard devono prima essere annullati, tagliati, completati e/o compressi.
 
 Un'applicazione può registrare un gestore che verrà chiamato quando cambia lo stato di uno storyboard. In questo modo l'applicazione può rispondere quando lo storyboard inizia a essere riprodotto, viene eseguito fino al completamento, viene rimosso completamente dalla pianificazione o viene impedito il completamento a causa di un'interruzione di uno storyboard con priorità più alta. Per identificare gli storyboard passati ai gestori eventi dello storyboard (o confronti di priorità), un'applicazione può usare il metodo [**IUIAnimationStoryboard::SetTag**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-settag) per applicare tag agli storyboard, in modo analogo a quelli che possono essere usati per identificare le variabili. Come per il ri-uso dello storyboard, gli sviluppatori devono prestare attenzione quando usano i tag per identificare gli storyboard e assicurarsi che le ambiguità non si verificano quando le azioni dell'utente comportano l'accodamento di molti storyboard.
 
-Negli esempi seguenti vengono mostrate due varianti di un tentativo di pianificazione dello storyboard compilato nelle sezioni precedenti di questo argomento.
+Gli esempi seguenti illustrano due varianti di un tentativo di pianificazione dello storyboard compilato nelle sezioni precedenti di questo argomento.
 
 In questo scenario sono già stati pianificati sei storyboard, da A a F, per animare le variabili W, X, Y e Z, ma solo A e B hanno iniziato a riprodurre. Il nuovo storyboard, con etichetta G, ha il ritardo accettabile più lungo impostato sulla durata illustrata nella figura seguente.
 
@@ -223,7 +223,7 @@ Inoltre, il gestore dell'animazione deve comprimere D in base alla quantità ind
 
 ![Figura che mostra dove deve essere compresso d per consentire a g di iniziare con il ritardo accettabile più lungo](images/trimmedandcancelledwithlines.png)
 
-Per mantenere la relativa tempistica, vengono compressi anche A, B e F.
+Per mantenere la tempistica relativa, vengono compressi anche A, B e F.
 
 ![Illustrazione che mostra a, b, d e f compressi](images/schedule2withgwithlines.png)
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetDeleteColumn'
-title: JetDeleteColumn (funzione)
+description: 'Altre informazioni su: Funzione JetDeleteColumn'
+title: Funzione JetDeleteColumn
 TOCTitle: JetDeleteColumn Function
 ms:assetid: b2f4be8c-7ea9-4f66-925b-4e9c14d9d475
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294062(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7d577447942e36cd49763727473d3f6ddc659b4
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: e46d4440846c09b8c735369f4a7b8b21c169eb28bcb9ed096f478b4e273c615a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103969529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667401"
 ---
-# <a name="jetdeletecolumn-function"></a>JetDeleteColumn (funzione)
+# <a name="jetdeletecolumn-function"></a>Funzione JetDeleteColumn
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetdeletecolumn-function"></a>JetDeleteColumn (funzione)
+## <a name="jetdeletecolumn-function"></a>Funzione JetDeleteColumn
 
-La funzione **JetDeleteColumn** Elimina una colonna da una tabella di database ESE.
+La **funzione JetDeleteColumn** elimina una colonna da una tabella di database ESE.
 
 ```cpp
 JET_ERR JET_API JetDeleteColumn(
@@ -50,7 +50,7 @@ JET_ERR JET_API JetDeleteColumn(
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*TableID*
+*tableid*
 
 Tabella da cui eliminare la colonna.
 
@@ -60,7 +60,7 @@ Nome della colonna da eliminare.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -80,23 +80,23 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errColumnInUse</p></td>
-<td><p>La colonna è attualmente in uso. Può essere usato attualmente da un indice.</p></td>
+<td><p>La colonna è attualmente in uso. Può essere attualmente utilizzato da un indice.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errFixedDDL</p></td>
-<td><p>È stato effettuato un tentativo di modificare il DDL fisso.</p></td>
+<td><p>Si è tentato di modificare il DDL fisso.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errFixedInheritedDDL</p></td>
-<td><p>La colonna denominata in <em>szColumnName</em> esiste nella tabella del modello e non è possibile modificare il DDL di una tabella modello.</p></td>
+<td><p>La colonna denominata in <em>szColumnName</em> esiste nella tabella modello e non è possibile modificare il DDL di una tabella modello.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidName</p></td>
-<td><p>Questo può essere restituito se è stato specificato un nome non valido per <em>szColumnName</em> .</p></td>
+<td><p>Può essere restituito se è stato specificato un nome non valido <em>per szColumnName.</em></p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errPermissionDenied</p></td>
-<td><p>La tabella non è accessibile in scrittura. Questa operazione può essere restituita se il database è stato aperto in modalità di sola lettura.</p></td>
+<td><p>La tabella non è scrivibile. Può essere restituito se il database è stato aperto in modalità di sola lettura.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTransReadOnly</p></td>
@@ -108,7 +108,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 
 #### <a name="remarks"></a>Commenti
 
-La chiamata di **JetDeleteColumn** è identica alla chiamata di [JetDeleteColumn2](./jetdeletecolumn2-function.md) con *grbit* impostato su zero (0).
+La **chiamata a JetDeleteColumn** è identica alla chiamata [di JetDeleteColumn2](./jetdeletecolumn2-function.md) con *grbit* impostato su zero (0).
 
 #### <a name="requirements"></a>Requisiti
 
@@ -128,11 +128,11 @@ La chiamata di **JetDeleteColumn** è identica alla chiamata di [JetDeleteColumn
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

@@ -1,11 +1,11 @@
 ---
-title: Metodo GetObjectByTextRepresentation della classe MicrosoftDNS_ResourceRecord
-description: Il metodo GetObjectByTextRepresentation recupera un'istanza esistente della \_ classe ResourceRecord di MicrosoftDNS.
+title: Metodo GetObjectByTextRepresentation della MicrosoftDNS_ResourceRecord classe
+description: Il metodo GetObjectByTextRepresentation recupera un'istanza esistente della classe \_ ResourceRecord MicrosoftDNS.
 ms.assetid: d25e10de-81fa-4220-b2b8-d9a65298b629
 keywords:
 - DNS del metodo GetObjectByTextRepresentation
-- DNS del metodo GetObjectByTextRepresentation, classe MicrosoftDNS_ResourceRecord
-- Classe MicrosoftDNS_ResourceRecord DNS, metodo GetObjectByTextRepresentation
+- Metodo GetObjectByTextRepresentation DNS, MicrosoftDNS_ResourceRecord classe
+- MicrosoftDNS_ResourceRecord classe DNS, metodo GetObjectByTextRepresentation
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2aea2588a70ff4bdab89eae58b65715152d6c7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08e3b824ccabe86e842d4ef6f61799b33110b5d28a58658a6d4cbedc824c134b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692421"
 ---
-# <a name="getobjectbytextrepresentation-method-of-the-microsoftdns_resourcerecord-class"></a>Metodo GetObjectByTextRepresentation della classe MicrosoftDNS \_ ResourceRecord
+# <a name="getobjectbytextrepresentation-method-of-the-microsoftdns_resourcerecord-class"></a>Metodo GetObjectByTextRepresentation della classe ResourceRecord MicrosoftDNS \_
 
-Il metodo **GetObjectByTextRepresentation** recupera un'istanza esistente della classe [**\_ ResourceRecord di MicrosoftDNS**](microsoftdns-resourcerecord.md) .
+Il **metodo GetObjectByTextRepresentation** recupera un'istanza esistente della [**classe \_ ResourceRecord MicrosoftDNS.**](microsoftdns-resourcerecord.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,31 +45,31 @@ void GetObjectByTextRepresentation(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del server DNS da cui recuperare l'RR.
+Nome del server DNS da cui recuperare RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore da cui ottenere l'RR.
+Nome del contenitore da cui deve essere ottenuto RR.
 
 </dd> <dt>
 
-*TextRepresentation* \[ in\]
+*Rappresentazione di testo* \[ Pollici\]
 </dt> <dd>
 
 Rappresentazione testuale dell'RR da recuperare.
 
 </dd> <dt>
 
-*RR* \[ out\]
+*RR* \[ Cambio\]
 </dt> <dd>
 
-Riferimento all'RR di cui è stata creata un'istanza.
+Riferimento al RR di cui è stata creata un'istanza.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -94,10 +94,10 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromTextRepresentation della classe MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord-createinstancefromtextrepresentation.md)
+[**Metodo CreateInstanceFromTextRepresentation della classe \_ ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord-createinstancefromtextrepresentation.md)
 </dt> </dl>
 
  

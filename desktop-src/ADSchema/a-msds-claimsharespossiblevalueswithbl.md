@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Claim-shares-possible-values-with-BL
-description: Per un oggetto tipo di attestazione, questo attributo indica che è possibile fare riferimento ai valori possibili descritti in ms-DS-Claim-possible-values da altri oggetti tipo di attestazione.
+title: Attributo ms-DS-Claim-Shares-Possible-Values-With-BL
+description: Per un oggetto tipo di attestazione, questo attributo indica che altri oggetti tipo di attestazione fanno riferimento ai valori possibili descritti in ms-DS-Claim-Possible-Values.
 ms.assetid: 2013ada9-ba80-4133-ad56-ba23be6eb36b
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Claim-shares-possible-values-with-BL attributo AD schema
-- attributo msDS-ClaimSharesPossibleValuesWithBL-schema AD
+- Schema AD dell'attributo ms-DS-Claim-Shares-Possible-Values-With-BL
+- Schema AD dell'attributo msDS-ClaimSharesPossibleValuesWithBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d51e4316f4c87a1b8055df7256f586b3cc13f02e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a90ca04d9dfcfbc17eb8ff0e33b459503e8b7a5bae281cfd1101f14f529a4fff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552671"
 ---
-# <a name="ms-ds-claim-shares-possible-values-with-bl-attribute"></a>attributo ms-DS-Claim-shares-possible-values-with-BL
+# <a name="ms-ds-claim-shares-possible-values-with-bl-attribute"></a>Attributo ms-DS-Claim-Shares-Possible-Values-With-BL
 
-Per un oggetto tipo di attestazione, questo attributo indica che è possibile fare riferimento ai valori possibili descritti in ms-DS-Claim-possible-values da altri oggetti tipo di attestazione.
+Per un oggetto tipo di attestazione, questo attributo indica che altri oggetti tipo di attestazione fanno riferimento ai valori possibili descritti in ms-DS-Claim-Possible-Values.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------|
-| CN                | ms-DS-Claim-shares-possible-values-with-BL |
-| LDAP-Display-Name | msDS-ClaimSharesPossibleValuesWithBL       |
+| CN                | ms-DS-Claim-Shares-Possible-Values-With-BL |
+| Ldap-Display-Name | msDS-ClaimSharesPossibleValuesWithBL       |
 | Dimensione              | \-                                         |
-| Privilegio aggiornamento  | \-                                         |
+| Aggiorna privilegio  | \-                                         |
 | Frequenza di aggiornamento  | \-                                         |
 | Attribute-Id      | 1.2.840.113556.1.4.2102                    |
-| System-ID-GUID    | 54d522db-ec95-48f5-9bbd-1880ebbb2180       |
+| System-Id-Guid    | 54d522db-ec95-48f5-9bbd-1880ebbb2180       |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)    |
 
 
@@ -53,15 +53,15 @@ Per un oggetto tipo di attestazione, questo attributo indica che è possibile fa
 | ID collegamento                | 2179                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

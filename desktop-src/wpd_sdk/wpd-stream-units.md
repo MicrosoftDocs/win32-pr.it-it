@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione WPD Stream \_ Units specifica i tipi di unità da usare per le operazioni di IPortableDeviceUnitsStream.
+description: L'enumerazione WPD STREAM UNITS specifica i tipi di \_ unità da usare per le operazioni \_ IPortableDeviceUnitsStream.
 ms.assetid: BE668696-7AF3-44AA-891A-9BFF67FB5544
-title: Enumerazione WPD_STREAM_UNITS (PortableDeviceTypes. h)
+title: WPD_STREAM_UNITS enumerazione (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDeviceTypes.h
-ms.openlocfilehash: 8e70455402a49673b574a0c696b6dda30cc6a884
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2419453beac6b493ddd1bbbe1281b1596ce00456599074b3872fecb003550c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440761"
 ---
-# <a name="wpd_stream_units-enumeration"></a>\_Enumerazione unità di flusso WPD \_
+# <a name="wpd_stream_units-enumeration"></a>Enumerazione WPD \_ STREAM \_ UNITS
 
-L'enumerazione **WPD \_ Stream \_ Units** specifica i tipi di unità da usare per le operazioni di [**IPortableDeviceUnitsStream**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceunitsstream) .
+**L'enumerazione WPD \_ STREAM \_ UNITS** specifica i tipi di unità da usare per [**le operazioni IPortableDeviceUnitsStream.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceunitsstream)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,38 +43,38 @@ typedef enum _WPD_STREAM_UNITS {
 
 <dl> <dt>
 
-<span id="WPD_STREAM_UNITS_BYTES"></span><span id="wpd_stream_units_bytes"></span>**\_ \_ byte unità di flusso WPD \_**
+<span id="WPD_STREAM_UNITS_BYTES"></span><span id="wpd_stream_units_bytes"></span>**BYTE DELLE UNITÀ \_ DI \_ FLUSSO WPD \_**
 </dt> <dd>
 
-Le unità di flusso vengono specificate in byte.
+Le unità di flusso sono specificate in byte.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_FRAMES"></span><span id="wpd_stream_units_frames"></span>**\_ \_ frame unità di flusso WPD \_**
+<span id="WPD_STREAM_UNITS_FRAMES"></span><span id="wpd_stream_units_frames"></span>**FOTOGRAMMI DI \_ UNITÀ \_ DI FLUSSO WPD \_**
 </dt> <dd>
 
-Le unità di flusso vengono specificate in frame.
+Le unità di flusso sono specificate in fotogrammi.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_ROWS"></span><span id="wpd_stream_units_rows"></span>**\_ \_ righe unità flusso \_ WPD**
+<span id="WPD_STREAM_UNITS_ROWS"></span><span id="wpd_stream_units_rows"></span>**RIGHE DI \_ UNITÀ DI FLUSSO \_ WPD \_**
 </dt> <dd>
 
-Le unità di flusso vengono specificate in righe.
+Le unità di flusso sono specificate in righe.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_MILLISECONDS"></span><span id="wpd_stream_units_milliseconds"></span>**WPD \_ unità di flusso in \_ \_ millisecondi**
+<span id="WPD_STREAM_UNITS_MILLISECONDS"></span><span id="wpd_stream_units_milliseconds"></span>**UNITÀ DI FLUSSO WPD \_ \_ \_ MILLISECONDI**
 </dt> <dd>
 
 Le unità di flusso sono specificate in millisecondi.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_MICROSECONDS"></span><span id="wpd_stream_units_microseconds"></span>**\_microsecondi unità di flusso WPD \_ \_**
+<span id="WPD_STREAM_UNITS_MICROSECONDS"></span><span id="wpd_stream_units_microseconds"></span>**\_MICROSECONDI DELLE UNITÀ DI FLUSSO \_ \_ WPD**
 </dt> <dd>
 
-Le unità di flusso vengono specificate in microsecondi.
+Le unità di flusso sono specificate in microsecondi.
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ Le unità di flusso vengono specificate in microsecondi.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                       |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                        |
-| Intestazione<br/>                   | <dl> <dt>PortableDeviceTypes. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>PortableDeviceTypes.h</dt> </dl> |
 
 
 
