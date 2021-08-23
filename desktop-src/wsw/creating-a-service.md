@@ -13,11 +13,11 @@ ms.locfileid: "119805741"
 ---
 # <a name="creating-a-service"></a>Creazione di un servizio
 
-La creazione di un servizio Web è notevolmente semplificata in WWSAPI dall'API [del](service-model-layer-overview.md) modello di servizio e dallo [WsUtil.exe](wsutil-compiler-tool.md) web. Il modello di servizio fornisce un'API che consente al servizio e al client di inviare e ricevere [messaggi](message.md) tramite un [canale](channel.md) come chiamate al metodo C. Lo strumento WsUtil genera stub e intestazioni per l'implementazione del servizio.
+La creazione di un servizio Web è notevolmente semplificata in WWSAPI dall'API [del](service-model-layer-overview.md) modello di servizio e dallo [WsUtil.exe](wsutil-compiler-tool.md) web. Il modello di servizio fornisce un'API che [](message.md) consente al servizio e al client di inviare e ricevere messaggi su un [canale](channel.md) durante le chiamate al metodo C. Lo strumento WsUtil genera stub e intestazioni per l'implementazione del servizio.
 
 ## <a name="implementing-a-calculator-service-using-wwsapi"></a>Implementazione di un servizio Calcolatrice con WWSAPI
 
-Usando le origini generate dallo [ strumentoWsutil.exe, ](wsutil-compiler-tool.md) implementare il servizio seguendo questa procedura.
+Usando le origini generate dallo strumento [Wsutil.exe, ](wsutil-compiler-tool.md) implementare il servizio seguendo questa procedura.
 
 Includere le intestazioni nell'origine dell'applicazione.
 
@@ -61,7 +61,7 @@ static const WS_SERVICE_CONTRACT calculatorContract =
 };
 ```
 
-A questo punto, creare un host del servizio e aprirlo per la comunicazione.
+Creare ora un host del servizio e aprirlo per la comunicazione.
 
 ``` syntax
 WS_SERVICE_ENDPOINT serviceEndpoint = {0};

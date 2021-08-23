@@ -1,9 +1,9 @@
 ---
-title: Metodi Secolor ID2D1SolidColorBrush
+title: Metodi SetColor id2D1SolidColorBrush
 description: Specifica il colore di questo pennello a tinta unita.
 ms.assetid: 2900bf72-9641-419c-b0d7-334f14f8a474
 keywords:
-- Metodo Secolor Direct2D
+- Metodi SetColor Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 580778135e840a69342ff34ffd8e415883317517
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb281265a9567db5da6252944fa1da1a6beb1bd4a0fb2a6a4d80ef1177455fc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873951"
 ---
-# <a name="id2d1solidcolorbrushsetcolor-methods"></a>Metodi ID2D1SolidColorBrush:: Secolor
+# <a name="id2d1solidcolorbrushsetcolor-methods"></a>Metodi ID2D1SolidColorBrush::SetColor
 
 Specifica il colore di questo pennello a tinta unita.
 
@@ -30,18 +30,18 @@ Specifica il colore di questo pennello a tinta unita.
 
 | Metodo                                                                          | Descrizione                                                |
 |:--------------------------------------------------------------------------------|:-----------------------------------------------------------|
-| [**Secolor (D2D1 \_ Color \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f_))  | Specifica il colore di questo pennello a tinta unita. <br/> |
-| [**Secolor (D2D1 \_ Color \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f)) | Specifica il colore di questo pennello a tinta unita. <br/> |
+| [**SetColor(D2D1 \_ COLOR \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f_))  | Specifica il colore di questo pennello a tinta unita. <br/> |
+| [**SetColor(D2D1 \_ COLOR \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f)) | Specifica il colore di questo pennello a tinta unita. <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per semplificare la creazione dei colori, Direct2D fornisce la classe [**ColorF**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf) . Offre diversi metodi helper per la creazione di colori e fornisce un set o colori predefiniti.
+Per facilitare la creazione dei colori, Direct2D fornisce la [**classe ColorF.**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf) Offre diversi metodi helper per la creazione di colori e fornisce un set o colori predefiniti.
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente illustra come usare questo metodo.
+Nel codice seguente viene illustrato come utilizzare questo metodo.
 
 
 ```C++
@@ -69,7 +69,7 @@ Il codice seguente illustra come usare questo metodo.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

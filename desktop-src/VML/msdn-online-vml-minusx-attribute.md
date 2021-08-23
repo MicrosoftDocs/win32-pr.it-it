@@ -20,7 +20,7 @@ Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Ex
 
  
 
-Determina se il callout verrà capovolto lungo l'asse x. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se il callout verrà capovolto lungo l'assex. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 

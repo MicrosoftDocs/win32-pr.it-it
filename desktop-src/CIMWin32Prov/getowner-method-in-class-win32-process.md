@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 007acbe997f555e9a439ed27740a447d3bf7fe4d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2fe91ef581490ab15869fa45c299c9e172c01df9d689a4fcd1546cbbf84621ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760441"
 ---
-# <a name="getowner-method-of-the-win32_process-class"></a>Metodo GetOwner della classe di \_ processo Win32
+# <a name="getowner-method-of-the-win32_process-class"></a>Metodo GetOwner della classe Win32 \_ Process
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **GetOwner** Recupera il nome utente e il nome di dominio in cui è in esecuzione il processo.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **GetOwner** recupera il nome utente e il nome di dominio con cui è in esecuzione il processo.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ uint32 GetOwner(
 
 <dl> <dt>
 
-*Utente* \[ di out\]
+*Utente* \[ Cambio\]
 </dt> <dd>
 
 Restituisce il nome utente del proprietario del processo.
 
 </dd> <dt>
 
-*Dominio* \[ out\]
+*Dominio* \[ Cambio\]
 </dt> <dd>
 
 Restituisce il nome di dominio in cui è in esecuzione il processo.
@@ -59,17 +59,17 @@ Restituisce il nome di dominio in cui è in esecuzione il processo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Completamento** completato (0)
+**Completamento riuscito** (0)
 </dt> <dt>
 
 **Accesso negato** (2)
 </dt> <dt>
 
-**Privilegio insufficiente** (3)
+**Privilegi insufficienti** (3)
 </dt> <dt>
 
 **Errore sconosciuto** (8)
@@ -78,7 +78,7 @@ Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indic
 **Percorso non trovato** (9)
 </dt> <dt>
 
-**Parametro non valido** (21)
+**Parametro non** valido (21)
 </dt> <dt>
 
 **Altro** (22 4294967295)
@@ -86,9 +86,9 @@ Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indic
 
 ## <a name="examples"></a>Esempio
 
-[Il monitoraggio elaborazione CPU PCT per nome con proprietario](https://Gallery.TechNet.Microsoft.Com/Monitor-Process-CPU-Pct-by-0f3a5a1c) L'esempio VBScript raccoglie la percentuale di utilizzo della CPU o del processore e cerca il proprietario del processo.
+[Monitor Process CPU Pct by Name with Owner (Monitor Process CPU Pct by Name with Owner)](https://Gallery.TechNet.Microsoft.Com/Monitor-Process-CPU-Pct-by-0f3a5a1c) L'esempio VBScript raccoglie la percentuale di utilizzo della CPU o del processore e cerca il proprietario del processo.
 
-L' [elenco di tutti i server in cui viene eseguito l'accesso a un elenco di utenti](https://Gallery.TechNet.Microsoft.Com/Get-all-servers-that-a-aecc07ef) in PowerShell esegue query su WMI per il proprietario di tutti i processi explorer.exe.
+Get [all servers that a list of users is logged onto](https://Gallery.TechNet.Microsoft.Com/Get-all-servers-that-a-aecc07ef) PowerShell sample querys WMI for the owner of all explorer.exe processes.
 
 Nell'esempio di codice VBScript seguente viene ottenuto il proprietario per ogni processo in esecuzione.
 
@@ -125,7 +125,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -137,7 +137,7 @@ Next
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Processo Win32**](win32-process.md)
+[**Processo \_ Win32**](win32-process.md)
 </dt> </dl>
 
  

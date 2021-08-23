@@ -1,7 +1,7 @@
 - name: Internazionalizzazione per le applicazioni di Windows
   href: international-support.md
   items:
-    - name: Attività iniziali con international Windows Development
+    - name: Attività iniziali con lo sviluppo Windows internazionale
       href: getting-started-with-international-development.md
       items:
         - name: Informazioni sull'internazionalizzazione
@@ -10,18 +10,18 @@
           href: internationalization-checklist.md
         - name: Aggiunta interfaccia utente multilingue a un'applicazione
           href: creating-a-multilingual-user-interface-application.md
-    - name: Servizi di globalizzazione
+    - name: Globalization Services
       href: globalization-services.md
       items:
         - name: Servizi linguistici estesi
           href: extended-linguistic-services.md
           items:
-            - name: Informazioni sui servizi linguistici estesi
+            - name: Informazioni su Servizi linguistici estesi
               href: about-extended-linguistic-services.md
               items:
                 - name: Microsoft Rilevamento lingua
                   href: microsoft-language-detection.md
-                - name: Rilevamento script Microsoft
+                - name: Rilevamento di Microsoft Script
                   href: microsoft-script-detection.md
                 - name: Servizi di traslitterazione
                   href: transliteration-services.md
@@ -101,9 +101,9 @@
             - name: Uso del supporto linguistico nazionale
               href: using-national-language-support.md
               items:
-                - name: Chiamata delle &quot; funzioni dei nomi delle impostazioni &quot; locali
+                - name: Chiamata delle funzioni &quot; dei nomi delle impostazioni &quot; locali
                   href: calling-the--locale-name--functions.md
-                - name: Gestione dei nomi di dominio internazionalizzati (IDN)
+                - name: Gestione dei nomi IDN (Internationalized Domain Names)
                   href: handling-internationalized-domain-names--idns.md
                 - name: Gestione dell'ordinamento nelle applicazioni
                   href: handling-sorting-in-your-applications.md
@@ -115,17 +115,17 @@
                   href: retrieving-time-and-date-information.md
                 - name: Gestione delle ere per il calendario giapponese
                   href: era-handling-for-the-japanese-calendar.md
-                - name: Uso di dati delle impostazioni locali permanenti
+                - name: Uso di dati delle impostazioni locali persistenti
                   href: using-persistent-locale-data.md
                 - name: Uso di pseudo-impostazioni locali per i test di localizzabilità
                   href: using-pseudo-locales-for-localization-testing.md
-                - name: Uso della normalizzazione Unicode per rappresentare stringhe
+                - name: Uso della normalizzazione Unicode per rappresentare le stringhe
                   href: using-unicode-normalization-to-represent-strings.md
                 - name: Uso delle impostazioni locali personalizzate
                   href: working-with-custom-locales.md
-                - name: NLS - Esempio di conversione dei nomi di dominio internazionalizzati
+                - name: NLS - Esempio di conversione di nomi di dominio internazionali
                   href: nls--internationalized-domain-name--idn--conversion-sample.md
-                - name: Esempio di mitigazione dei nomi di dominio internazionalizzati
+                - name: NLS - Esempio di mitigazione dei nomi di dominio internazionali
                   href: nls--internationalized-domain-name--idn--mitigation-sample.md
                 - name: NLS - Esempio di API basate sui nomi
                   href: nls--name-based-apis-sample.md
@@ -134,7 +134,7 @@
             - name: Informazioni di riferimento sul supporto linguistico nazionale
               href: national-language-support-reference.md
               items:
-                - name: Funzioni di supporto linguistico nazionale
+                - name: Funzioni di supporto per il linguaggio nazionale
                   href: national-language-support-functions.md
                   items:
                     - name: AdjustCalendarDate
@@ -337,7 +337,7 @@
                       href: updatecalendardayofweek.md
                     - name: VerifyScripts
                       href: /windows/desktop/api/Winnls/nf-winnls-verifyscripts
-                - name: Macro di supporto del linguaggio nazionale
+                - name: Macro di supporto per il linguaggio nazionale
                   href: national-language-support-macros.md
                   items:
                     - name: IS_HIGH_SURROGATE
@@ -367,7 +367,7 @@
                   items:
                     - name: CALDATETIME
                       href: caldatetime.md
-                    - name: CPINFO
+                    - name: INFORMAZIONI SULLA FUNZIONE CPINFO
                       href: /windows/win32/api/Winnls/ns-winnls-cpinfo
                     - name: CPINFOEX
                       href: /windows/win32/api/Winnls/ns-winnls-cpinfoexa
@@ -379,7 +379,7 @@
                       href: /windows/win32/api/Winnls/ns-winnls-nlsversioninfoex
                     - name: NUMBERFMT
                       href: /windows/win32/api/Winnls/ns-winnls-numberfmta
-                - name: Tipi di enumerazione del supporto del linguaggio nazionale
+                - name: Tipi di enumerazione per il supporto del linguaggio nazionale
                   href: national-language-support-enumeration-types.md
                   items:
                     - name: CALDATETIME_DATEUNIT
@@ -392,7 +392,7 @@
                       href: /windows/desktop/api/Winnls/ne-winnls-sysgeotype
                     - name: SYSNLS_FUNCTION
                       href: /windows/desktop/api/Winnls/ne-winnls-sysnls_function
-                - name: Costanti di supporto per il linguaggio nazionale
+                - name: Costanti per il supporto del linguaggio nazionale
                   href: national-language-support-constants.md
                   items:
                     - name: Identificatori di calendario
@@ -403,9 +403,9 @@
                       href: day--month--year--and-era-format-pictures.md
                     - name: 'Immagini in formato ora, minuto e secondo formato'
                       href: hour--minute--and-second-format-pictures.md
-                    - name: Costanti e stringhe dell'identificatore di lingua
+                    - name: Costanti e stringhe degli identificatori di lingua
                       href: language-identifier-constants-and-strings.md
-                    - name: Costanti di informazioni sulle impostazioni locali
+                    - name: Costanti relative alle informazioni sulle impostazioni locali
                       href: locale-information-constants.md
                       items:
                         - name: LOCALE_ALL
@@ -416,7 +416,7 @@
                           href: locale-allow-neutral-names.md
                         - name: LOCALE_ALTERNATE_SORTS
                           href: locale-alternate-sorts.md
-                        - name: LOCALE_CUSTOM* Costanti
+                        - name: Costanti LOCALE_CUSTOM*
                           href: locale-custom-constants.md
                         - name: LOCALE_FONTSIGNATURE
                           href: locale-fontsignature.md
@@ -649,7 +649,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-add
                         - name: add_SpellCheckerChanged metodo
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-add_spellcheckerchanged
-                        - name: Metodo di correzione automatica
+                        - name: Metodo AutoCorrect
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-autocorrect
                         - name: Metodo Check
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-check
@@ -659,7 +659,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-getoptiondescription
                         - name: Metodo GetOptionValue
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-getoptionvalue
-                        - name: Metodo Ignore
+                        - name: Ignora metodo
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-ignore
                         - name: remove_SpellCheckerChanged metodo
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-remove_spellcheckerchanged
@@ -669,9 +669,9 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_id
                         - name: LanguageTag - proprietà
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_languagetag
-                        - name: Proprietà LocalizedName
+                        - name: LocalizedName - proprietà
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_localizedname
-                        - name: Proprietà OptionIds
+                        - name: OptionIds - proprietà
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_optionids
                     - name: ISpellChecker2
                       href: /windows/desktop/api/Spellcheck/nn-spellcheck-ispellchecker2
@@ -711,9 +711,9 @@
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_id
                         - name: LanguageTag - proprietà
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_languagetag
-                        - name: Proprietà LocalizedName
+                        - name: LocalizedName - proprietà
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_localizedname
-                        - name: Proprietà OptionIds
+                        - name: OptionIds - proprietà
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_optionids
                     - name: ISpellCheckProviderFactory
                       href: /windows/desktop/api/Spellcheckprovider/nn-spellcheckprovider-ispellcheckproviderfactory
@@ -724,14 +724,14 @@
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckproviderfactory-issupported
                         - name: SupportedLanguages - proprietà
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckproviderfactory-get_supportedlanguages
-                    - name: ISpellingError
+                    - name: Errore di ortografia
                       href: /windows/desktop/api/Spellcheck/nn-spellcheck-ispellingerror
                       items:
                         - name: Proprietà CorrectiveAction
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_correctiveaction
                         - name: Proprietà Length
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_length
-                        - name: Proprietà replacement
+                        - name: Proprietà di sostituzione
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_replacement
                         - name: StartIndex - proprietà
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_startindex
@@ -755,7 +755,7 @@
         - name: Informazioni su Gestione metodi di input
           href: about-input-method-manager.md
           items:
-            - name: Elenchi candidati
+            - name: Elenchi di candidati
               href: candidate-lists.md
             - name: Stringa di composizione
               href: composition-string.md
@@ -765,20 +765,20 @@
               href: hot-keys.md
             - name: Messaggi IME
               href: ime-messages.md
-            - name: Classe finestra IME
+            - name: Classe Window IME
               href: ime-window-class.md
             - name: Contesto di input
               href: input-context.md
-            - name: 'Stato, composizione e Windows'
+            - name: 'Stato, Composizione e Candidati Windows'
               href: status--composition--and-candidates-windows.md
         - name: Uso di Gestione metodi di input
           href: using-input-method-manager.md
           items:
             - name: Sviluppo IME-Aware applicazioni a thread multipli
               href: developing-ime-aware-multiple-thread-applications.md
-            - name: Gestione di Unicode in un'applicazione IME-Aware unicode
+            - name: Gestione di Unicode in un'IME-Aware predefinita
               href: handling-unicode-in-an-ime-aware-application.md
-            - name: Elaborazione del WM_IME_COMPOSITION messaggio
+            - name: Elaborazione del messaggio WM_IME_COMPOSITION
               href: processing-the-wm-ime-composition-message.md
             - name: Uso della riconversione con un IME
               href: using-reconversion-with-an-ime.md
@@ -862,11 +862,11 @@
                   href: ime-conversion-mode-values.md
                 - name: Escape IME
                   href: ime-escapes.md
-                - name: Identificatori di tasti di scelta rapida IME
+                - name: Identificatori dei tasti di scelta rapida IME
                   href: ime-hot-key-identifiers.md
                 - name: Valori della modalità frase IME
                   href: ime-sentence-mode-values.md
-            - name: Funzioni di gestione del metodo di input
+            - name: Funzioni di Gestione metodi di input
               href: input-method-manager-functions.md
               items:
                 - name: CreateIFECommonInstance
@@ -1010,7 +1010,7 @@
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-registerword
                     - name: Metodo SetHeader
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-setheader
-                - name: LINGUA IFE
+                - name: IFELanguage
                   href: /windows/desktop/api/Msime/nn-msime-ifelanguage
                   items:
                     - name: Metodo Close
@@ -1345,7 +1345,7 @@
               items:
                 - name: Supporto di System Language Impostazioni
                   href: supporting-system-language-settings.md
-                - name: Supporto di Application-Specific language Impostazioni
+                - name: Supporto per Application-Specific linguaggio Impostazioni
                   href: supporting-application-specific-language-settings.md
                 - name: Filtro delle lingue in un'applicazione console MUI
                   href: filtering-languages-in-a-mui-console-application.md

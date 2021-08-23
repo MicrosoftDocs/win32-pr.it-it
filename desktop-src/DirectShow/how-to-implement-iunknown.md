@@ -4,20 +4,20 @@ ms.assetid: 4e363ccb-9725-4be6-bb31-283bf1d658f5
 title: Come implementare IUnknown
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e27c12e25d56adab1841a375ac6c1ce0857a73b5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d1f905ac7e31be955a7b24f8504fc6b52ca8031e4a7deef86ef8bccd537b5ca6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748701"
 ---
 # <a name="how-to-implement-iunknown"></a>Come implementare IUnknown
 
-Microsoft DirectShow si basa sul Component Object Model (COM). Se si scrive un filtro personalizzato, è necessario implementarlo come oggetto COM. Le classi base di DirectShow forniscono un Framework dal quale eseguire questa operazione. L'uso delle classi base non è obbligatorio, ma può semplificare il processo di sviluppo. Questo articolo descrive alcuni dei dettagli interni degli oggetti COM e la relativa implementazione nelle classi base di DirectShow.
+Microsoft DirectShow è basato sul Component Object Model (COM). Se si scrive un filtro personalizzato, è necessario implementarlo come oggetto COM. Le DirectShow di base forniscono un framework da cui eseguire questa operazione. L'uso delle classi di base non è obbligatorio, ma può semplificare il processo di sviluppo. Questo articolo descrive alcuni dettagli interni degli oggetti COM e la relativa implementazione nelle classi DirectShow di base.
 
-In questo articolo si presuppone che l'utente sia in grado di programmare le applicazioni client COM, in altre parole, di comprendere i metodi in **IUnknown**, ma non presuppone alcuna esperienza precedente nello sviluppo di oggetti com. DirectShow gestisce molti dei dettagli sullo sviluppo di un oggetto COM. Se si ha esperienza nello sviluppo di oggetti COM, è consigliabile leggere la sezione [uso di CUnknown](using-cunknown.md), che descrive la classe di base [**CUnknown**](cunknown.md) .
+Questo articolo presuppone che si sappia programmare applicazioni client COM, ovvero che si comprendino i metodi in **IUnknown,** ma che non si presupponga alcuna esperienza precedente di sviluppo di oggetti COM. DirectShow gestisce molti dei dettagli dello sviluppo di un oggetto COM. Se si ha esperienza nello sviluppo di oggetti COM, leggere la sezione [Using CUnknown](using-cunknown.md)( Uso di CUnknown ), che descrive la classe di base [**CUnknown.**](cunknown.md)
 
-COM è una specifica, non un'implementazione. Definisce le regole che un componente deve seguire. l'inserimento di tali regole viene applicato allo sviluppatore. In DirectShow tutti gli oggetti derivano da un set di classi base C++. I costruttori e i metodi della classe base eseguono la maggior parte delle operazioni di "contabilità" COM, ad esempio mantenendo un conteggio dei riferimenti coerente. Derivando il filtro da una classe di base, si eredita la funzionalità della classe. Per utilizzare in modo efficace le classi di base, è necessario conoscere in modo generale il modo in cui implementano la specifica COM.
+COM è una specifica, non un'implementazione. Definisce le regole che un componente deve seguire; L'applicazione di queste regole viene lasciata allo sviluppatore. In DirectShow, tutti gli oggetti derivano da un set di classi di base C++. I costruttori e i metodi della classe di base esegano la maggior parte delle operazioni di "bookkeeping" COM, ad esempio mantenendo un conteggio dei riferimenti coerente. Derivando il filtro da una classe di base, si eredita la funzionalità della classe . Per usare in modo efficace le classi di base, è necessaria una conoscenza generale del modo in cui implementano la specifica COM.
 
 Questo articolo contiene gli argomenti seguenti.
 

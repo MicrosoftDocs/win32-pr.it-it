@@ -3,23 +3,23 @@ title: Decompressione dei dati
 description: Decompressione dei dati
 ms.assetid: 1faf0238-7bef-4363-9bbc-44737600c946
 keywords:
-- Gestione compressione video (VCM), decompressione dei dati
-- VCM (Gestione compressione video), decompressione dei dati
-- ICDecompressBegin (macro)
-- ICDecompress (funzione)
-- ICDecompressEnd (macro)
+- gestione compressione video(VCM), decompressione dei dati
+- VCM (gestione compressione video), decompressione dei dati
+- Macro ICDecompressBegin
+- Funzione ICDecompress
+- Macro ICDecompressEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03b44ea375bb1f2b5c41a361ca7f31387439b610
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a213a4d4762f782da817773aac6e8838155561ae47129dd998dad7a82ac5a4f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785431"
 ---
 # <a name="decompressing-data"></a>Decompressione dei dati
 
-Nell'esempio seguente viene illustrato come un'applicazione può inizializzare un decompressore utilizzando la macro [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) , decomprimere una sequenza di frame utilizzando la funzione [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e terminare la decompressione utilizzando la macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .
+L'esempio seguente illustra come un'applicazione può inizializzare un decompressore usando la macro [**ICDecompressBegin,**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) decomprimere una sequenza di fotogrammi usando la [**funzione ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e terminare la decompressione usando la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -54,9 +54,9 @@ else
 
 
 
- 
+ 
 
- 
+ 
 
 
 

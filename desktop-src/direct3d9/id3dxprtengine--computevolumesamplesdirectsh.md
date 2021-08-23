@@ -1,7 +1,7 @@
 ---
-description: Calcola una proiezione di illuminazione distante in vettori di base armonica sferica (SH) che rappresentano la luminosità dell'evento imprevisto in posizioni specificate.
+description: Calcola una proiezione di illuminazione distante in vettori di base sferici aricali (SH) che rappresentano la luminosità degli eventi imprevisti in posizioni specificate.
 ms.assetid: 4d07b288-aec1-48eb-8d27-f3d7d8cfb69e
-title: 'Metodo ID3DXPRTEngine:: ComputeVolumeSamplesDirectSH (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeVolumeSamplesDirectSH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 757e227907eab73848f43b2b8e2f40f9b4b1071b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3aaa8f9332a80e35ffde43d145be1ed885caeaca6d61e4eb9190baba09b73ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747761"
 ---
-# <a name="id3dxprtenginecomputevolumesamplesdirectsh-method"></a>Metodo ID3DXPRTEngine:: ComputeVolumeSamplesDirectSH
+# <a name="id3dxprtenginecomputevolumesamplesdirectsh-method"></a>Metodo ID3DXPRTEngine::ComputeVolumeSamplesDirectSH
 
-Calcola una proiezione di illuminazione distante in vettori di base armonica sferica (SH) che rappresentano la luminosità dell'evento imprevisto in posizioni specificate.
+Calcola una proiezione di illuminazione distante in vettori di base sferici aricali (SH) che rappresentano la luminosità degli eventi imprevisti in posizioni specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT ComputeVolumeSamplesDirectSH(
 
 <dl> <dt>
 
-*Ordinamento* \[ in\]
+*OrderIn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della rappresentazione SH dell'illuminazione distante. Deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. Il grado della valutazione è orderin-1.
+Ordine della rappresentazione SH dell'illuminazione distante. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. Il grado di valutazione è OrderIn - 1.
 
 </dd> <dt>
 
-*Ordinamento* \[ in\]
+*OrderOut* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della rappresentazione SH dell'illuminazione locale. Deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. Il grado della valutazione è Order out-1.
+Ordine della rappresentazione SH dell'illuminazione locale. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. Il grado di valutazione è OrderOut - 1.
 
 </dd> <dt>
 
-*NumVolSamples.xml* \[ in\]
+*NumVolSamples.xml* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> <dt>
 
-*pSampleLocs* \[ in\]
+*pSampleLocs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posizione per ogni esempio.
+Posizione per ogni campione.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che proietta l'illuminazione distante in vettori di base sh. Questo buffer deve avere il numero appropriato di canali di colore allocati per la simulazione. Questo metodo genera un \* ordine in base al secondo per ogni canale in ogni posizione di esempio.
+Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che proietta l'illuminazione distante in vettori di base SH. Questo buffer deve avere il numero corretto di canali di colore allocati per la simulazione. Questo metodo genera valori \* scalari OrderIn più ordinabili per canale in ogni posizione di esempio.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che pro
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo calcola il modo in cui la luce da un'origine distante arriva in ogni punto nello spazio specificato da pSampleLocs. I coefficienti SH rappresentano il mapping, a ogni punto di pSampleLocs, della luminosità del codice sorgente per l'evento imprevisto trasferito.
+Questo metodo calcola il modo in cui la luce da un'origine distante arriva in ogni punto dello spazio specificato da pSampleLocs. I coefficienti SH rappresentano il mapping, in ogni punto pSampleLocs, della radice di origine alla radice degli eventi imprevisti trasferiti.
 
-Per usare correttamente questo metodo, è necessario impostare il campionamento su una sfera con UseSphere = **true** e UseCosine = **false** in [**ID3DXPRTEngine:: SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md); in caso contrario, questo metodo restituirà un errore con D3DERR \_ INVALIDCALL.
+Per usare correttamente questo metodo, è necessario impostare il campionamento su una sfera con UseSphere = **TRUE** e UseCosine = **FALSE** in [**ID3DXPRTEngine::SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md); In caso contrario, questo metodo restituirà un errore con D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -107,8 +107,8 @@ Per usare correttamente questo metodo, è necessario impostare il campionamento 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

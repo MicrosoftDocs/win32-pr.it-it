@@ -1,9 +1,9 @@
 ---
-title: Effetto di origine bitmap
-description: Usare l'effetto di origine bitmap per generare un oggetto ID2D1Image da un oggetto IWICBitmapSource da usare come input in un grafico degli effetti.
+title: Effetto origine bitmap
+description: Usare l'effetto origine bitmap per generare un id2D1Image da un oggetto IWICBitmapSource da usare come input in un grafico degli effetti.
 ms.assetid: 86646111-208A-4E6D-A28C-7B23A1742D24
 keywords:
-- Effetto di origine bitmap
+- Effetto origine bitmap
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 19889372c7ebd4268f1b6fd8b77c360f290cc416631e9fb5e1cd3a0b0320844c
@@ -13,9 +13,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119833322"
 ---
-# <a name="bitmap-source-effect"></a>Effetto di origine bitmap
+# <a name="bitmap-source-effect"></a>Effetto origine bitmap
 
-Usare l'effetto di origine bitmap per generare un [**oggetto ID2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) da [**un oggetto IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) da usare come input in un grafico degli effetti. Questo effetto esegue il ridimensionamento e la rotazione della CPU. Può anche generare facoltativamente un mipmap di memoria di sistema, che può essere un'ottimizzazione delle prestazioni per il ridimensionamento attivo di immagini di dimensioni molto grandi a diverse risoluzioni ridotte.
+Usare l'effetto origine bitmap per generare un [**id2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) da [**un oggetto IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) da usare come input in un grafico degli effetti. Questo effetto esegue il ridimensionamento e la rotazione sulla CPU. Può anche generare facoltativamente un mipmap di memoria di sistema, che può essere un'ottimizzazione delle prestazioni per ridimensionare attivamente immagini molto grandi a varie risoluzioni ridotte.
 
 > [!Note]  
 > L'effetto di origine bitmap accetta l'input come proprietà, non come input di immagine. È necessario usare il [**metodo SetValue,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)) non il [**metodo SetInput.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1effect-setinput) La *proprietà WicBitmapSource* consente di specificare i dati di input dell'immagine.
@@ -36,14 +36,14 @@ Il CLSID per questo effetto è CLSID \_ D2D1BitmapSource.
 
 
 
-| Enumerazione del nome visualizzato e dell'indice                                                          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Nome visualizzato ed enumerazione dell'indice                                                          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WicBitmapSource<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ WIC \_ BITMAP \_ SOURCE<br/>         | Oggetto [IWICBitmapSource](/windows/desktop/wic/-wic-imp-iwicbitmapsource) contenente i dati dell'immagine da caricare.<br/> Il tipo è [IWICBitmapSource.](/windows/desktop/wic/-wic-imp-iwicbitmapsource)<br/> Il valore predefinito è NULL.<br/>                                                                                                                                                                                                                   |
-| Scalabilità<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ SCALE<br/>                                 | Quantità di scala nella direzione X e Y. L'effetto moltiplica la larghezza per il valore X e l'altezza per il valore Y. Questa proprietà è un vector \_ \_ 2F D2D1 definito come: (scala X, scala Y). Gli importi della scala sono FLOAT, senza unità e devono essere positivi o 0.<br/> Il tipo è D2D1 \_ VECTOR \_ 2F.<br/> Il valore predefinito è {1.0f, 1.0f}.<br/>                                                                           |
-| InterpolationMode.<br/> MODALITÀ DI \_ \_ INTERPOLAZIONE DELLA PROPRIETÀ BITMAPSOURCE D2D1 \_ \_<br/>      | Modalità di interpolazione usata per ridimensionare l'immagine. Per [altre informazioni, vedi Modalità di interpolazione.](#interpolation-modes)<br/> Se la modalità disabilita il mipmap, BitmapSouce memorizza l'immagine nella cache alla risoluzione determinata dalle proprietà Scale e EnableDPICorrection.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ LINEAR.<br/> |
-| EnableDPICorrection<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ ENABLE \_ DPI \_ CORRECTION<br/> | Se si imposta questa proprietà su TRUE, l'effetto ridimensiona l'immagine di input per convertire il valore DPI segnalato da [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) nel valore DPI del contesto di dispositivo. L'effetto usa la modalità di interpolazione impostata con la proprietà InterpolationMode. Se si imposta questa proprietà su FALSE, l'effetto usa un valore DPI di 96,0 per l'immagine di output.<br/> Il tipo è BOOL.<br/> Il valore predefinito è FALSE.<br/>   |
-| AlphaMode<br/> MODALITÀ ALFA PROPRIETÀ \_ \_ BITMAPSOURCE \_ \_ D2D1<br/>                       | Modalità alfa dell'output. Può essere premoltipilied o straight. Per [altre informazioni, vedi](#alpha-modes) Modalità alfa.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ ALPHA \_ MODE.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ ALPHA MODE \_ \_ PREMULTIPLIED.<br/>                                                                                                                                                              |
-| Orientamento<br/> ORIENTAMENTO DELLA PROPRIETÀ \_ BITMAPSOURCE D2D1 \_ \_<br/>                     | Operazione di capovolgimento e/o rotazione da eseguire sull'immagine. Per [altre informazioni,](#orientation) vedi Orientamento.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ ORIENTATION.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ DEFAULT.<br/>                                                                                                                                                                                 |
+| WicBitmapSource<br/> ORIGINE BITMAP D2D1 \_ BITMAPSOURCE \_ PROP \_ WIC \_ \_<br/>         | Oggetto [IWICBitmapSource](/windows/desktop/wic/-wic-imp-iwicbitmapsource) contenente i dati dell'immagine da caricare.<br/> Il tipo è [IWICBitmapSource.](/windows/desktop/wic/-wic-imp-iwicbitmapsource)<br/> Il valore predefinito è NULL.<br/>                                                                                                                                                                                                                   |
+| Scalabilità<br/> SCALA DELLE PROPRIETÀ \_ BITMAPSOURCE D2D1 \_ \_<br/>                                 | Quantità di scala nella direzione X e Y. L'effetto moltiplica la larghezza per il valore X e l'altezza per il valore Y. Questa proprietà è un vettore D2D1 \_ \_ 2F definito come: (scala X, scala Y). Gli importi della scala sono FLOAT, senza unità e devono essere positivi o 0.<br/> Il tipo è D2D1 \_ VECTOR \_ 2F.<br/> Il valore predefinito è {1.0f, 1.0f}.<br/>                                                                           |
+| InterpolazioneMode.<br/> MODALITÀ DI \_ \_ INTERPOLAZIONE DELLA PROPRIETÀ BITMAPSOURCE D2D1 \_ \_<br/>      | Modalità di interpolazione usata per ridimensionare l'immagine. Per [altre informazioni, vedere Modalità di interpolazione.](#interpolation-modes)<br/> Se la modalità disabilita il mipmap, BitmapSouce memorizza nella cache l'immagine alla risoluzione determinata dalle proprietà Scale e EnableDPICorrection.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ LINEAR.<br/> |
+| EnableDPICorrection<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ ENABLE \_ DPI \_ CORRECTION<br/> | Se si imposta questa proprietà su TRUE, l'effetto ridimensiona l'immagine di input per convertire il valore DPI segnalato da [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) nel valore DPI del contesto di dispositivo. L'effetto usa la modalità di interpolazione impostata con la proprietà InterpolationMode. Se si imposta questa opzione su FALSE, l'effetto usa un valore DPI di 96.0 per l'immagine di output.<br/> Il tipo è BOOL.<br/> Il valore predefinito è FALSE.<br/>   |
+| AlphaMode<br/> MODALITÀ ALFA DELLA \_ \_ PROPRIETÀ BITMAPSOURCE \_ \_ D2D1<br/>                       | Modalità alfa dell'output. Può essere premoltimulliato o diritto. Per [altre informazioni, vedere](#alpha-modes) Modalità alfa.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ ALPHA \_ MODE.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ ALPHA MODE \_ \_ PREMULTIPLIED.<br/>                                                                                                                                                              |
+| Orientamento<br/> ORIENTAMENTO DELLA PROPRIETÀ \_ BITMAPSOURCE D2D1 \_ \_<br/>                     | Operazione di capovolgimento e/o rotazione da eseguire sull'immagine. Per [altre informazioni,](#orientation) vedere Orientamento.<br/> Il tipo è D2D1 \_ BITMAPSOURCE \_ ORIENTATION.<br/> Il valore predefinito è D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ DEFAULT.<br/>                                                                                                                                                                                 |
 
 
 
@@ -51,17 +51,17 @@ Il CLSID per questo effetto è CLSID \_ D2D1BitmapSource.
 
 ## <a name="interpolation-modes"></a>Modalità di interpolazione
 
-L'effetto esegue l'interpolazione usando questa modalità quando ridimensiona un'immagine o quando corregge il valore DPI. Le modalità di interpolazione utilizzate da questo effetto vengono calcolate dalla CPU, non dalla GPU.
+L'effetto interpola usando questa modalità quando ridimensiona un'immagine o quando corregge il valore DPI. Le modalità di interpolazione utilizzate da questo effetto vengono calcolate dalla CPU, non dalla GPU.
 
 
 
 | Nome                                                       | Descrizione                                                                                                                                                                                                                          |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLAZIONE \_ MODALITÀ VICINO PIÙ \_ \_ VICINO | Campiono il singolo punto più vicino e lo usa. Non genera un mipmap.                                                                                                                                                           |
-| MODALITÀ DI \_ INTERPOLAZIONE D2D1 BITMAPSOURCE \_ \_ \_ LINEARE            | Usa un campione di quattro punti e l'interpolazione lineare. Non genera un mipmap.                                                                                                                                                        |
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLAZIONE \_ \_ CUBICA             | Usa un kernel cubico di 16 campioni per l'interpolazione. Non genera un mipmap.                                                                                                                                                          |
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLAZIONE \_ MODE \_ FANT              | Usa l'interpolazione fant wic, uguale [**all'interfaccia IWICBitmapScaler.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapscaler) Non genera un mipmap.                                                                                       |
-| MODALITÀ DI INTERPOLAZIONE D2D1 \_ BITMAPSOURCE \_ \_ \_ MIPMAP \_ LINEARE    | Genera la catena mipmap nella memoria di sistema usando l'interpolazione bilineare. Per ogni mipmap l'effetto viene ridimensionato al multiplo più vicino di 0,5 usando l'interpolazione bilineare e quindi ridimensiona la quantità rimanente usando l'interpolazione lineare. |
+| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR | Campiota il singolo punto più vicino e lo usa. Non genera un mipmap.                                                                                                                                                           |
+| MODALITÀ DI INTERPOLAZIONE D2D1 \_ BITMAPSOURCE \_ \_ \_ LINEARE            | Usa un campione di quattro punti e un'interpolazione lineare. Non genera un mipmap.                                                                                                                                                        |
+| MODALITÀ DI INTERPOLAZIONE D2D1 \_ BITMAPSOURCE \_ \_ \_ CUBIC             | Usa un kernel cubo di 16 campioni per l'interpolazione. Non genera un mipmap.                                                                                                                                                          |
+| MODALITÀ DI \_ \_ INTERPOLAZIONE \_ D2D1 BITMAPSOURCE \_              | Usa l'interpolazione fant wic, la stessa [**dell'interfaccia IWICBitmapScaler.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapscaler) Non genera un mipmap.                                                                                       |
+| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ MIPMAP \_ LINEAR    | Genera la catena mipmap nella memoria di sistema usando l'interpolazione bilineare. Per ogni mipmap l'effetto viene ridimensionato al multiplo più vicino di 0,5 usando l'interpolazione bilineare e quindi ridimensiona la quantità rimanente usando l'interpolazione lineare. |
 
 
 
@@ -76,12 +76,12 @@ La proprietà Orientation può essere usata per applicare un flag di orientament
 | Nome                                                                    | Descrizione                                                        |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------|
 | D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ DEFAULT                                | Valore predefinito. L'effetto non modifica l'orientamento dell'input.   |
-| ORIENTAMENTO BITMAP D2D1 \_ \_ CAPOVOLGIMENTO \_ ORIZZONTALE DELL'ORIGINE \_                       | Capovolge orizzontalmente l'immagine.                                      |
-| ORIENTAMENTO BITMAPSOURCE D2D1 \_ \_ RUOTA IN SENSO \_ \_ ORARIO180                   | Ruota l'immagine di 180 gradi in senso orario.                           |
-| D2D1 \_ BITMAP ORIENTATION ROTATE \_ \_ \_ CLOCKWISE180 \_ FLIP \_ HORIZONTAL | Ruota l'immagine di 180 gradi in senso orario e la capovolge orizzontalmente. |
-| D2D1 \_ BITMAP ORIENTATION ROTATE \_ \_ \_ CLOCKWISE270 \_ FLIP \_ HORIZONTAL | Ruota l'immagine di 270 gradi in senso orario e la capovolge orizzontalmente. |
-| ORIENTAMENTO BITMAPSOURCE D2D1 \_ \_ RUOTA IN SENSO \_ \_ ORARIO90                    | Ruota l'immagine di 90 gradi in senso orario.                            |
-| D2D1 \_ BITMAP ORIENTATION ROTATE \_ \_ \_ CLOCKWISE90 \_ FLIP \_ HORIZONTAL  | Ruota l'immagine di 90 gradi in senso orario e la capovolge orizzontalmente.  |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ FLIP \_ HORIZONTAL                       | Capovolge orizzontalmente l'immagine.                                      |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180                   | Ruota l'immagine di 180 gradi in senso orario.                           |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180 \_ FLIP \_ HORIZONTAL | Ruota l'immagine di 180 gradi in senso orario e la capovolge orizzontalmente. |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE270 \_ FLIP \_ HORIZONTAL | Ruota l'immagine di 270 gradi in senso orario e la capovolge orizzontalmente. |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90                    | Ruota l'immagine di 90 gradi in senso orario.                            |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90 \_ FLIP \_ HORIZONTAL  | Ruota l'immagine di 90 gradi in senso orario e la capovolge orizzontalmente.  |
 | D2D1 \_ BITMAP ORIENTATION ROTATE \_ \_ \_ CLOCKWISE270                   | Ruota l'immagine di 270 gradi in senso orario.                           |
 
 

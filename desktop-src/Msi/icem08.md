@@ -21,7 +21,7 @@ ICEM08 invia un errore quando un modulo esclude un altro modulo da cui dipende.
 
 ## <a name="example"></a>Esempio
 
-ICEM08 pubblica il messaggio di errore seguente per un modulo contenente le voci di database mostrate nell'esempio.
+ICEM08 invia il messaggio di errore seguente per un modulo contenente le voci di database illustrate nell'esempio.
 
 ``` syntax
 Error: This module requires module ModuleB.<GUID> (1033v1.0) but also 
@@ -32,9 +32,9 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | Id obbligatorio           | RequiredLanguage | RequiredVersion |
+| ModuleID             | ModuleLanguage | RequiredID           | RequiredLanguage | RequiredVersion |
 |----------------------|----------------|----------------------|------------------|-----------------|
-| Modulo A.<GUID> | 1033           | ModuloB.<GUID> | 1033             | 1.0             |
+| ModuleA.<GUID> | 1033           | ModuleB.<GUID> | 1033             | 1.0             |
 
 
 
@@ -44,9 +44,9 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | ExcludedID           | Lingua esclusa | ExcludedMinVersion | ExcludedMaxVersion |
+| ModuleID             | ModuleLanguage | ExcludedID           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
 |----------------------|----------------|----------------------|------------------|--------------------|--------------------|
-| Modulo A.<GUID> | 1033           | ModuloB.<GUID> | 1033             |                    | 1.0                |
+| ModuleA.<GUID> | 1033           | ModuleB.<GUID> | 1033             |                    | 1.0                |
 
 
 
@@ -58,7 +58,7 @@ Per correggere l'errore, rimuovere la dipendenza o l'esclusione. Se ModuleB è u
 
 <dl> <dt>
 
-[Informazioni di riferimento su ICE del modulo merge](merge-module-ice-reference.md)
+[Informazioni di riferimento sul modulo di unione ICE](merge-module-ice-reference.md)
 </dt> </dl>
 
  

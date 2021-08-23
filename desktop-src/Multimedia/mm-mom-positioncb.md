@@ -1,6 +1,6 @@
 ---
 title: MM_MOM_POSITIONCB messaggio (Mmsystem.h)
-description: Il messaggio MM MOM POSITIONCB viene inviato a una finestra quando viene raggiunto un evento \_ \_ CALLBACK F MEVT \_ nel flusso di output \_ MIDI.
+description: Il messaggio MM MOM POSITIONCB viene inviato a una finestra quando viene raggiunto un evento \_ \_ CALLBACK F MEVT nel flusso di output \_ \_ MIDI.
 ms.assetid: afd2ba4c-ff6a-4e47-a7e8-a0da62650963
 keywords:
 - MM_MOM_POSITIONCB messaggio Windows Multimediali
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119807161"
 ---
-# <a name="mm_mom_positioncb-message"></a>Messaggio \_ MM MOM \_ POSITIONCB
+# <a name="mm_mom_positioncb-message"></a>MESSAGGIO \_ MM MOM \_ POSITIONCB
 
-Il **messaggio MM MOM \_ \_ POSITIONCB** viene inviato a una finestra quando viene raggiunto un evento CALLBACK F MEVT \_ nel flusso di output \_ MIDI.
+Il **messaggio MM MOM \_ \_ POSITIONCB** viene inviato a una finestra quando viene raggiunto un evento CALLBACK F MEVT nel flusso di \_ output \_ MIDI.
 
 
 ```C++
@@ -58,7 +58,7 @@ Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La riproduzione del buffer del flusso continua anche durante l'esecuzione della funzione di callback. Tutti gli eventi dopo l'evento MEVT F CALLBACK nel buffer verranno pianificati e inviati in tempo indipendentemente dal tempo impiegato nella \_ \_ funzione di callback.
+La riproduzione del buffer del flusso continua anche durante l'esecuzione della funzione di callback. Tutti gli eventi dopo l'evento CALLBACK F MEVT nel buffer verranno pianificati e inviati in tempo, indipendentemente dal tempo impiegato \_ \_ nella funzione di callback.
 
 Se i callback di posizione vengono generati più rapidamente di quanto l'applicazione possa elaborarli, il membro **dwOffset** della struttura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) potrebbe fare riferimento a un evento che l'applicazione non ha ancora elaborato.
 

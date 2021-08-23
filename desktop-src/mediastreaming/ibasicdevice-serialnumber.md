@@ -50,7 +50,7 @@ Riceve un puntatore al numero di serie del dispositivo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

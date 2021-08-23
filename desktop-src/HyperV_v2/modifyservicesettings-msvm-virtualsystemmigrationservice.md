@@ -1,5 +1,5 @@
 ---
-description: Modifica i dati dell'impostazione per il servizio di migrazione.
+description: Modifica i dati delle impostazioni per il servizio di migrazione.
 ms.assetid: 5162fe88-dd39-4fe0-b8e9-e9b70c2b6a5c
 title: Metodo ModifyServiceSettings della classe Msvm_VirtualSystemMigrationService
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119693871"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo ModifyServiceSettings della classe Msvm \_ VirtualSystemMigrationService
 
-Modifica i dati dell'impostazione per il servizio di migrazione.
+Modifica i dati delle impostazioni per il servizio di migrazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,13 +60,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -84,7 +84,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Il sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)
@@ -107,7 +107,7 @@ Questo metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

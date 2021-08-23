@@ -1,6 +1,6 @@
 ---
-description: Tipo di dati utilizzato per specificare gli attributi di accesso di sicurezza nel registro di sistema.
-title: REGSAM (Winnt. h)
+description: Tipo di dati utilizzato per specificare gli attributi di accesso di sicurezza nel Registro di sistema.
+title: REGSAM (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 003f6be9-e4ba-4d23-b486-a167063c630e
@@ -22,37 +22,37 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2700e278f86db046d532b91b64bf5a2d00582e14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e202e615561ce0c51f44fc39726d8ab864afc2b5e1bcbbe5612edbb74c476c29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104983086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820421"
 ---
 # <a name="regsam"></a>REGSAM
 
-Tipo di dati utilizzato per specificare gli attributi di accesso di sicurezza nel registro di sistema.
+Tipo di dati utilizzato per specificare gli attributi di accesso di sicurezza nel Registro di sistema.
 
 
 
 | Costante                                                                                                                                                                                   | Descrizione                                                                                                                                                                                                |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="KEY_ALL_ACCESS"></span><span id="key_all_access"></span><dl> <dt>**CHIAVE \_ tutti gli \_ accessi**</dt> </dl>                          | Combinazione di * * * * \_ valore query chiave \_ * * * *, * * * * chiave \_ enumerazione \_ \_ sottochiavi * * * *, * * * * notifica chiave * * * * \_ , * * * * chiave \_ creazione della chiave \_ secondaria * * * * \_ , * * * * chiave \_ creazione \_ collegamento * * * * e * \_ \_ * * * * * * * * * * * * * *<br/> |
-| <span id="KEY_CREATE_LINK"></span><span id="key_create_link"></span><dl> <dt>**\_collegamento creazione \_ chiave**</dt> </dl>                       | Autorizzazione per creare un collegamento simbolico.<br/>                                                                                                                                                           |
-| <span id="KEY_CREATE_SUB_KEY"></span><span id="key_create_sub_key"></span><dl> <dt>**CHIAVE \_ creazione chiave \_ secondaria \_**</dt> </dl>             | Autorizzazione per la creazione di sottochiavi.<br/>                                                                                                                                                                   |
-| <span id="KEY_ENUMERATE_SUB_KEYS"></span><span id="key_enumerate_sub_keys"></span><dl> <dt>**CHIAVE \_ enumerazione \_ \_ sottochiavi**</dt> </dl> | Autorizzazione per enumerare le sottochiavi.<br/>                                                                                                                                                                |
-| <span id="KEY_EXECUTE"></span><span id="key_execute"></span><dl> <dt>**esecuzione della chiave \_**</dt> </dl>                                    | Autorizzazione per l'accesso in lettura.<br/>                                                                                                                                                                     |
-| <span id="KEY_NOTIFY"></span><span id="key_notify"></span><dl> <dt>**\_notifica chiave**</dt> </dl>                                       | Autorizzazione per la notifica di modifica.<br/>                                                                                                                                                             |
-| <span id="KEY_QUERY_VALUE"></span><span id="key_query_value"></span><dl> <dt>**\_valore query \_ chiave**</dt> </dl>                       | Autorizzazione per eseguire query sui dati della sottochiave.<br/>                                                                                                                                                                |
-| <span id="KEY_READ"></span><span id="key_read"></span><dl> <dt>**\_lettura chiave**</dt> </dl>                                             | Combinazione di * * * * \_ valore di query chiave \_ * * * *, * * * * \_ enumerazione \_ chiavi \_ sottochiavi * * * * e * * * * * * * * \_ notifica chiave * * * * accesso.<br/>                                                                                    |
-| <span id="KEY_SET_VALUE"></span><span id="key_set_value"></span><dl> <dt>**\_valore del set di chiavi \_**</dt> </dl>                             | Autorizzazione per impostare i dati della sottochiave.<br/>                                                                                                                                                                  |
-| <span id="KEY_WRITE"></span><span id="key_write"></span><dl> <dt>**\_scrittura chiave**</dt> </dl>                                          | Combinazione di * * * * valore del set di chiavi \_ \_ * * * * e * * * * chiave \_ creazione della \_ \_ sottochiave * * * * accesso.<br/>                                                                                                                |
+| <span id="KEY_ALL_ACCESS"></span><span id="key_all_access"></span><dl> <dt>**CHIAVE \_ ALL \_ ACCESS**</dt> </dl>                          | Combinazione di ****KEY \_ QUERY \_ VALUE***, ****KEY \_ ENUMERATE SUB \_ \_ KEYS***, ****KEY \_ NOTIFY***, ***KEY \_ CREATE SUB \_ \_ KEY***, ***KEY \_ CREATE \_ LINK**** e ***KEY \_ SET \_ VALUE****.<br/> |
+| <span id="KEY_CREATE_LINK"></span><span id="key_create_link"></span><dl> <dt>**COLLEGAMENTO DI \_ CREAZIONE \_ CHIAVE**</dt> </dl>                       | Autorizzazione per creare un collegamento simbolico.<br/>                                                                                                                                                           |
+| <span id="KEY_CREATE_SUB_KEY"></span><span id="key_create_sub_key"></span><dl> <dt>**CHIAVE \_ CREATE \_ SUB \_ KEY**</dt> </dl>             | Autorizzazione per la creazione di sottochiavi.<br/>                                                                                                                                                                   |
+| <span id="KEY_ENUMERATE_SUB_KEYS"></span><span id="key_enumerate_sub_keys"></span><dl> <dt>**CHIAVI \_ ENUMERATE \_ SUB \_ KEYS**</dt> </dl> | Autorizzazione per enumerare le sottochiavi.<br/>                                                                                                                                                                |
+| <span id="KEY_EXECUTE"></span><span id="key_execute"></span><dl> <dt>**KEY \_ EXECUTE**</dt> </dl>                                    | Autorizzazione per l'accesso in lettura.<br/>                                                                                                                                                                     |
+| <span id="KEY_NOTIFY"></span><span id="key_notify"></span><dl> <dt>**NOTIFICA \_ DELLA CHIAVE**</dt> </dl>                                       | Autorizzazione per la notifica delle modifiche.<br/>                                                                                                                                                             |
+| <span id="KEY_QUERY_VALUE"></span><span id="key_query_value"></span><dl> <dt>**VALORE \_ DI QUERY \_ CHIAVE**</dt> </dl>                       | Autorizzazione per eseguire query sui dati delle sottochiavi.<br/>                                                                                                                                                                |
+| <span id="KEY_READ"></span><span id="key_read"></span><dl> <dt>**LETTURA \_ DELLA CHIAVE**</dt> </dl>                                             | Combinazione dell'accesso ****KEY \_ QUERY \_ VALUE***, ***KEY \_ ENUMERATE SUB \_ \_ KEYS*** e ***KEY \_ NOTIFY****.<br/>                                                                                    |
+| <span id="KEY_SET_VALUE"></span><span id="key_set_value"></span><dl> <dt>**VALORE \_ DEL SET DI \_ CHIAVI**</dt> </dl>                             | Autorizzazione per impostare i dati delle sottochiavi.<br/>                                                                                                                                                                  |
+| <span id="KEY_WRITE"></span><span id="key_write"></span><dl> <dt>**KEY \_ WRITE**</dt> </dl>                                          | Combinazione di accesso ****KEY \_ SET \_ VALUE**** e ***KEY \_ CREATE SUB \_ \_ KEY****.<br/>                                                                                                                |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Un valore **REGSAM** può essere costituito da uno o più valori elencati.
+Un **valore REGSAM** può essere uno o più dei valori elencati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Un valore **REGSAM** può essere costituito da uno o più valori elencati.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Winnt. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 

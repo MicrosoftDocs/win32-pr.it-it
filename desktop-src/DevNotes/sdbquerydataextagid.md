@@ -1,7 +1,7 @@
 ---
 description: Recupera i dati dalle voci specificate appartenenti a una voce EXE.
 ms.assetid: 355eecd6-a0c9-4448-9aed-a9c3eb3b2071
-title: SdbQueryDataExTagID (funzione)
+title: Funzione SdbQueryDataExTagID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 8db16463d2923ce3c888de4f202e1ebc36584e99
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 19477385fb70f65c560d1a13d479fc4c2ce1853220aff6ac32a75f3634a40d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815381"
 ---
-# <a name="sdbquerydataextagid-function"></a>SdbQueryDataExTagID (funzione)
+# <a name="sdbquerydataextagid-function"></a>Funzione SdbQueryDataExTagID
 
 Recupera i dati dalle voci specificate appartenenti a una voce EXE.
 
@@ -45,24 +45,24 @@ DWORD WINAPI SdbQueryDataExTagID(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiExe* \[ in\]
+*tiExe* \[ Pollici\]
 </dt> <dd>
 
-[**TagId**](tagid.md) della voce exe.
+[**TAGID della**](tagid.md) voce EXE.
 
 </dd> <dt>
 
 *lpszDataName* \[ in, facoltativo\]
 </dt> <dd>
 
-Nome della voce di dati da recuperare. Per specificare più voci, separare i nomi con il carattere barra rovesciata (" \\ "). Se questo parametro è **null**, la funzione tenta di restituire tutte le voci di dati.
+Nome della voce di dati da recuperare. Per specificare più voci, separare i nomi con il carattere barra rovesciata (" \\ "). Se questo parametro è **NULL,** la funzione tenta di restituire tutte le voci di dati.
 
 </dd> <dt>
 
@@ -73,16 +73,16 @@ Tipo di dati delle voci restituite. Questo parametro può essere uno dei valori 
 
 <dl><span id="REG_BINARY"></span><span id="reg_binary"></span><dt>
 
-**REG \_ binario**
+**REG \_ BINARY**
 </dt><span id="REG_DWORD"></span><span id="reg_dword"></span><dt>
 
 **REG \_ DWORD**
 </dt><span id="REG_MULTI_SZ"></span><span id="reg_multi_sz"></span><dt>
 
-**REG \_ - \_ SZ**
+**REG \_ MULTI \_ SZ**
 </dt><span id="REG_NONE"></span><span id="reg_none"></span><dt>
 
-**REG \_ None**
+**REG \_ NONE**
 </dt><span id="REG_QWORD"></span><span id="reg_qword"></span><dt>
 
 **REG \_ QWORD**
@@ -91,24 +91,24 @@ Tipo di dati delle voci restituite. Questo parametro può essere uno dei valori 
 **REG \_ SZ**
 </dt> </dl> </dd> <dt>
 
-*lpBuffer* \[ out\]
+*lpBuffer* \[ Cambio\]
 </dt> <dd>
 
-Buffer che riceve i dati. Se il buffer non è sufficientemente grande da contenere i dati, la funzione ha esito negativo e restituisce l' **errore \_ \_ buffer insufficiente**.
+Buffer che riceve i dati. Se le dimensioni del buffer non sono sufficienti per contenere i dati, la funzione ha esito negativo e restituisce **ERROR \_ INSUFFICIENT \_ BUFFER**.
 
 </dd> <dt>
 
 *lpcbBufferSize* \[ in, out, facoltativo\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *lpBuffer* .
+Dimensioni del buffer *lpBuffer,* in byte.
 
 </dd> <dt>
 
-*ptiData* \[ out\]
+*ptiData* \[ Cambio\]
 </dt> <dd>
 
-[**TagId**](tagid.md) della voce di dati.
+[**TAGID della**](tagid.md) voce di dati.
 
 </dd> </dl>
 
@@ -120,12 +120,12 @@ Questa funzione restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                                                    | Descrizione                                                            |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**ERRORE \_ parametro non valido \_**</dt> </dl>       | Uno o più parametri di input non sono corretti.<br/>                  |
-| <dl> <dt>**ERRORE \_ di \_ danneggiamento interno del database \_**</dt> </dl> | Non sono state trovate voci di dati per la voce EXE.<br/>               |
-| <dl> <dt>**ERRORE \_ buffer insufficiente \_**</dt> </dl>     | Il buffer non è sufficientemente grande da contenere le voci di dati.<br/> |
-| <dl> <dt>**ERRORE \_ di \_ memoria insufficiente \_**</dt> </dl>      | Allocazione di memoria non riuscita.<br/>                               |
-| <dl> <dt>**ERRORE \_ non \_ trovato**</dt> </dl>               | Impossibile trovare una voce di dati con il nome *lpszDataName* .<br/>    |
-| <dl> <dt>**ERRORE \_ riuscito**</dt> </dl>                  | La funzione è stata completata correttamente.<br/>                        |
+| <dl> <dt>**ERRORE \_ PARAMETRO NON \_ VALIDO**</dt> </dl>       | Uno o più parametri di input non sono corretti.<br/>                  |
+| <dl> <dt>**ERRORE \_ INTERNO \_ DEL \_ DATABASE**</dt> </dl> | Non sono state trovate voci di dati per la voce EXE.<br/>               |
+| <dl> <dt>**ERRORE \_ BUFFER \_ INSUFFICIENTE**</dt> </dl>     | Le dimensioni del buffer non sono sufficienti per contenere le voci di dati.<br/> |
+| <dl> <dt>**ERRORE \_ MEMORIA \_ \_ INSUFFICIENTE**</dt> </dl>      | Allocazione di memoria non riuscita.<br/>                               |
+| <dl> <dt>**ERRORE \_ NON \_ TROVATO**</dt> </dl>               | Non è stata trovata una voce di dati con il nome *lpszDataName.*<br/>    |
+| <dl> <dt>**ERRORE \_ RIUSCITO**</dt> </dl>                  | La funzione è stata completata correttamente.<br/>                        |
 
 
 
@@ -137,8 +137,8 @@ Questa funzione restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

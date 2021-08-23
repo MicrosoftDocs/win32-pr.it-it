@@ -1,21 +1,21 @@
 ---
 description: Mostra l'uso di CryptEncodeObjectEx e CryptDecodeObjectEx.
 ms.assetid: 78108cd5-531e-4d0c-96cf-6f6264b7716c
-title: 'Programma C di esempio: codifica e decodifica ASN. 1'
+title: 'Programma C di esempio: codifica e decodifica ASN.1'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c3d15601c35db7a32805e3d5ef20f71f18538ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98ee176995de5f150e6818290b1dcf1fda83b320a1fbcf40bf3a27ebab149447
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874011"
 ---
-# <a name="example-c-program-asn1-encoding-and-decoding"></a>Programma C di esempio: codifica e decodifica ASN. 1
+# <a name="example-c-program-asn1-encoding-and-decoding"></a>Programma C di esempio: codifica e decodifica ASN.1
 
-Nell'esempio seguente viene illustrato l'utilizzo di [**CryptEncodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobjectex) e [**CryptDecodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobjectex). Questo esempio può essere modificato facilmente per l'uso di [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject) e [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject).
+L'esempio seguente illustra [**l'uso di CryptEncodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobjectex) e [**CryptDecodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobjectex). Questo esempio può essere modificato facilmente per usare [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject) e [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject).
 
-Questo esempio usa anche una versione modificata della funzione [**ByteToStr**](bytetostr.md) per stampare una serie di ottetti con codifica ASN. 1 ( [*Abstract Syntax Notation One*](../secgloss/a-gly.md) ). USA anche [**MyHandleError**](myhandleerror.md). Il codice per queste funzioni è incluso nell'esempio.
+Questo esempio usa anche una versione modificata della funzione [**ByteToStr**](bytetostr.md) per stampare una serie di ottetti con codifica ASN.1 [*(Abstract Syntax Notation One).*](../secgloss/a-gly.md) Usa anche [**MyHandleError**](myhandleerror.md). Il codice per queste funzioni è incluso nell'esempio.
 
 
 ```C++

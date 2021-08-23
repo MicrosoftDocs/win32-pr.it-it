@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_PhyDisk: questa classe è la classe del tipo di evento per gli eventi di configurazione del disco fisico.'
+description: 'SystemConfig_PhyDisk classe: questa classe è la classe del tipo di evento per gli eventi di configurazione del disco fisico.'
 ms.assetid: 850a6b2c-69e6-47ae-95ff-585fcc70c1c8
 title: SystemConfig_PhyDisk classe
 ms.topic: reference
@@ -66,13 +66,13 @@ class SystemConfig_PhyDisk : SystemConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ SystemConfig PhyDisk** include questi tipi di membri:
+La **classe SystemConfig \_ PhyDisk** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe SystemConfig \_ PhyDisk** dispone di queste proprietà.
+La **classe SystemConfig \_ PhyDisk** ha queste proprietà.
 
 <dl> <dt>
 
@@ -104,7 +104,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2)
 </dt> </dl>
 
-Numero di byte in ogni settore per l'unità disco fisica.
+Numero di byte in ogni settore per l'unità disco fisico.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (5)
 </dt> </dl>
 
-Numero totale di cilindri nell'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
+Numero totale di cilindri nell'unità disco fisico. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13 ore. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, consultare il produttore.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (1)
 </dt> </dl>
 
-Numero di indice del disco contenente la partizione.
+Numero di indice del disco contenente questa partizione.
 
 </dd> <dt>
 
@@ -184,7 +184,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (11)
 </dt> </dl>
 
-Numero di partizioni in questa unità disco fisica riconosciute dal sistema operativo.
+Numero di partizioni in questa unità disco fisico riconosciute dal sistema operativo.
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Contiene il numero del dispositivo di destinazione.
 
 </dd> <dt>
 
-**SettoriPerTraccia**
+**SectorsPerTrack**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
@@ -264,7 +264,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (3)
 </dt> </dl>
 
-Numero di settori in ogni traccia per questa unità disco fisica.
+Numero di settori in ogni traccia per questa unità disco fisico.
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4)
 </dt> </dl>
 
-Numero di tracce in ogni cilindro nell'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
+Numero di tracce in ogni cilindro nell'unità disco fisico. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13 ore. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, consultare il produttore.
 
 </dd> <dt>
 
@@ -322,8 +322,8 @@ True se la cache di scrittura è abilitata.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

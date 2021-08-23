@@ -1,8 +1,8 @@
 ---
-description: Restituisce un oggetto SWbemPropertySet che contiene la raccolta di proprietà di sistema WMI che si applicano all'oggetto.
+description: Restituisce un oggetto SWbemPropertySet che contiene la raccolta di proprietà di sistema WMI applicabili all'oggetto.
 ms.assetid: e95c325a-8851-4f55-a99d-4346d064e308
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectEx.SystemProperties_ (wbemdisp. h)
+title: SWbemObjectEx.SystemProperties_ proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: cf8b7e15536c0d4e3116f0583662b3cd0b7d0887
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23de364e4616b7b7c2ac6b7de6daaf42edfd73e2e7b3920f7ac3b84b7a59bde5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857331"
 ---
-# <a name="swbemobjectexsystemproperties_-property"></a>SWbemObjectEx.Sys\_ Proprietà temProperties
+# <a name="swbemobjectexsystemproperties_-property"></a>SWbemObjectEx.Sys\_ temProperties
 
-La **proprietà \_ SystemProperties** dell'oggetto [**SWbemObjectEx**](swbemobjectex.md) restituisce un oggetto [**SWbemPropertySet**](swbempropertyset.md) che contiene la raccolta di [proprietà di sistema WMI](wmi-system-properties.md) che si applicano all'oggetto.
+La **proprietà \_ SystemProperties** dell'oggetto [**SWbemObjectEx**](swbemobjectex.md) restituisce un [**oggetto SWbemPropertySet**](swbempropertyset.md) che contiene la raccolta di proprietà di sistema [WMI](wmi-system-properties.md) applicabili all'oggetto.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -45,7 +45,7 @@ SWbemObjectEx.SystemProperties_ As Object
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente vengono recuperati i valori delle proprietà per la \_ classe del processo Win32.
+L'esempio di codice seguente recupera i valori delle proprietà per la classe Win32 \_ Process.
 
 
 ```VB
@@ -84,11 +84,11 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTEX CLSID<br/>                                                         |
-| IID<br/>                      | \_ISWBEMOBJECTEX IID<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemObjectEx<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemObjectEx<br/>                                                          |
 
 
 

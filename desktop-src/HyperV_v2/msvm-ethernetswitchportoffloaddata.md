@@ -1,5 +1,5 @@
 ---
-description: Rappresenta i dati sullo stato della funzionalità di offload delle porte.
+description: Rappresenta i dati sullo stato della funzionalità di offload della porta.
 ms.assetid: 1117b9e4-cff7-4c9e-bf5e-74499297e84e
 title: Msvm_EthernetSwitchPortOffloadData classe
 ms.topic: reference
@@ -47,7 +47,7 @@ ms.locfileid: "119681481"
 ---
 # <a name="msvm_ethernetswitchportoffloaddata-class"></a>Classe Msvm \_ EthernetSwitchPortOffloadData
 
-Rappresenta i dati sullo stato della funzionalità di offload delle porte.
+Rappresenta i dati sullo stato della funzionalità di offload della porta.
 
 La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
@@ -87,7 +87,7 @@ class Msvm_EthernetSwitchPortOffloadData : Msvm_EthernetPortData
 
 ## <a name="members"></a>Members
 
-La **classe Msvm \_ EthernetSwitchPortOffloadData** include questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortOffloadData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -100,7 +100,7 @@ La **classe Msvm \_ EthernetSwitchPortOffloadData** ha queste proprietà.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -113,7 +113,7 @@ Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ M
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -122,27 +122,27 @@ Tipo di accesso: sola lettura
 Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome della sottoclasse utilizzata nella creazione di questa istanza di dati della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "Msvm \_ EthernetSwitchPortOffloadData".
+Nome della sottoclasse usata nella creazione di questa istanza di dati della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "Msvm \_ EthernetSwitchPortOffloadData".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta i dati sullo stato della funzionalità di offload delle porte".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta i dati di stato della funzionalità di offload della porta".
 
 </dd> <dt>
 
 **DeviceCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -158,7 +158,7 @@ Nome della classe di creazione del sistema di ambito. Questa proprietà viene er
 **Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -174,26 +174,26 @@ ID dispositivo della porta che ha come ambito questa istanza di dati della porta
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Offload Feature Status".
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Offload Feature Status".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Chiave**
+Qualificatori: **chiave**
 </dt> </dl>
 
 Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
@@ -206,13 +206,13 @@ Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene 
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Utilizzo corrente dell'offload I/O Virtualization (IOV).
+Utilizzo corrente dell'offload di I/O Virtualization (IOV).
 
 </dd> <dt>
 
@@ -222,13 +222,13 @@ Utilizzo corrente dell'offload I/O Virtualization (IOV).
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Numero corrente di coppie di code utilizzate dalla porta.
+Numero corrente di coppie di code usate dalla porta.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Numero corrente di coppie di code utilizzate dalla porta.
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -254,13 +254,13 @@ Indica se il percorso dati VF IOV è attivo.
 Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificatore VF IOV corrente assegnato alla porta. Questo valore è valido **se IovOffloadUsage** è diverso da zero.
+Identificatore VF IOV corrente assegnato alla porta. Questo valore è valido se **IovOffloadUsage** è diverso da zero.
 
 </dd> <dt>
 
@@ -270,20 +270,20 @@ Identificatore VF IOV corrente assegnato alla porta. Questo valore è valido **s
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Numero corrente di slot di offload dell'associazione di sicurezza (SA) in uso sulla porta.
+Numero corrente di slot di offload sa (Security Association) in uso sulla porta.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -299,7 +299,7 @@ Stringa che identifica in modo univoco questa istanza di dati della porta nell'a
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -315,7 +315,7 @@ Nome della classe di creazione del sistema di ambito. Questa proprietà viene er
 **Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -376,13 +376,13 @@ Indica il numero di code usate per VRSS/VMMQ.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificatore della coda della macchina virtuale corrente assegnato alla porta. Questo valore è valido se **VMQOffloadUsage** è diverso da zero.
+Identificatore della coda della macchina virtuale corrente assegnato alla porta. Questo valore è valido **se VMQOffloadUsage** è diverso da zero.
 
 </dd> <dt>
 
@@ -392,13 +392,13 @@ Identificatore della coda della macchina virtuale corrente assegnato alla porta.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Utilizzo corrente dell'offload della coda di macchine virtuali (VMQ).
+Utilizzo dell'offload della coda di macchine virtuali corrente.
 
 </dd> <dt>
 
@@ -417,7 +417,7 @@ Qualificatori: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision*
 Indica se vRSS è attivo.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
+> Questa proprietà è stata aggiunta Windows 10 versione 1703.
 
  
 
@@ -498,7 +498,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica come le code VRSS/VMMQ vengono orientate a processori host diversi.
+Indica il modo in cui le code VRSS/VMMQ vengono orientate a processori host diversi.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -519,7 +519,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (15), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica il modo in cui i canali Vmbus vengono affinizzati ai processori host.
+Indica la modalità di affinità dei canali Vmbus ai processori host.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -536,7 +536,7 @@ Indica il modo in cui i canali Vmbus vengono affinizzati ai processori host.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

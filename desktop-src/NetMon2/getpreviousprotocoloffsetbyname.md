@@ -1,7 +1,7 @@
 ---
 description: La funzione GetPreviousProtocolOffsetByName restituisce l'istanza precedente di un protocollo specificato.
 ms.assetid: 94f80776-564f-4089-9e3a-fdf38d9dfe8a
-title: Funzione GetPreviousProtocolOffsetByName (Netmon. h)
+title: Funzione GetPreviousProtocolOffsetByName (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 2720d309224def5f368babf4f9ace85955907347
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17b472bbdead74612ccc6d76f1059443ce6f62dd122f7933ae31c99fb82900a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743761"
 ---
-# <a name="getpreviousprotocoloffsetbyname-function"></a>GetPreviousProtocolOffsetByName (funzione)
+# <a name="getpreviousprotocoloffsetbyname-function"></a>Funzione GetPreviousProtocolOffsetByName
 
-La funzione **GetPreviousProtocolOffsetByName** restituisce l'istanza precedente di un protocollo specificato.
+La **funzione GetPreviousProtocolOffsetByName** restituisce l'istanza precedente di un protocollo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,43 +42,43 @@ DWORD WINAPI GetPreviousProtocolOffsetByName(
 
 <dl> <dt>
 
-*hFrame* \[ in\]
+*hFrame* \[ Pollici\]
 </dt> <dd>
 
 Handle per il frame.
 
 </dd> <dt>
 
-*dwStartOffset* \[ in\]
+*dwStartOffset* \[ Pollici\]
 </dt> <dd>
 
 Offset nel frame.
 
 </dd> <dt>
 
-*szProtocolName* \[ in\]
+*szProtocolName* \[ Pollici\]
 </dt> <dd>
 
-Nome del protocollo che si desidera cercare.
+Nome del protocollo da cercare.
 
 </dd> <dt>
 
-*pdwPreviousOffset* \[ out\]
+*pdwPreviousOffset* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** che contiene l'offset al protocollo precedente (se la funzione ha esito positivo).
+Puntatore a **un valore DWORD** che contiene l'offset al protocollo precedente (se la funzione ha esito positivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
-Se la funzione ha esito negativo, il valore restituito è il \_ protocollo NMERR \_ non \_ trovato.
+Se la funzione ha esito negativo, il valore restituito è NMERR \_ PROTOCOL \_ NOT \_ FOUND.
 
 ## <a name="remarks"></a>Commenti
 
-Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare **GetPreviousProtocolOffsetByName**.
+[*Esperti*](e.md) e [*parser*](p.md) possono chiamare **GetPreviousProtocolOffsetByName.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare **GetPreviousProtoco
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

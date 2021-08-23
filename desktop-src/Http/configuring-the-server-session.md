@@ -4,12 +4,12 @@ description: Configurazione della sessione del server
 ms.assetid: 1e4e9440-8d70-44df-90a7-2d5e25b2f680
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d41c1606cce397c49a15c62dae10531edfde93f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 321d2710a0d9a0f7f3c70ad6de84336d382ae161b938ee2e22f20ddde5012604
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746591"
 ---
 # <a name="configuring-the-server-session"></a>Configurazione della sessione del server
 

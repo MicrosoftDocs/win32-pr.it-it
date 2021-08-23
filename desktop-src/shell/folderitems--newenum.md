@@ -22,7 +22,7 @@ ms.locfileid: "119715361"
 ---
 # <a name="folderitems_newenum-method"></a>FolderItems. \_ Metodo NewEnum
 
-Crea e restituisce un [**nuovo oggetto FolderItems**](folderitems.md) che è una copia di questo oggetto FolderItemss.
+Crea e restituisce un nuovo [**oggetto FolderItems**](folderitems.md) che è una copia di questo oggetto FolderItemss.
 
 ## <a name="syntax"></a>Sintassi
 

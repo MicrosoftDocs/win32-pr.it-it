@@ -1,10 +1,10 @@
 ---
-title: Print-Share-Name (attributo)
+title: Attributo Print-Share-Name
 description: Nome della condivisione della stampante.
 ms.assetid: eecfcf34-fc3f-4f54-a9f2-7dea5252885c
 ms.tgt_platform: multiple
 keywords:
-- Print-Share-Name attributo AD schema
+- Schema AD dell'attributo Print-Share-Name
 - Schema AD dell'attributo printShareName
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fa7eeff99e88cfa48c2c2e8f35c849cec988ee4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f56e9dbfe3950ed61ccd2d8143d279a7e36ef9152ace41b3c9090ee26dfea834
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837831"
 ---
-# <a name="print-share-name-attribute"></a>Print-Share-Name (attributo)
+# <a name="print-share-name-attribute"></a>Attributo Print-Share-Name
 
 Nome della condivisione della stampante.
 
@@ -30,12 +30,12 @@ Nome della condivisione della stampante.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Print-Share-Name                            |
-| LDAP-Display-Name | printShareName                              |
+| Ldap-Display-Name | printShareName                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.270                      |
-| System-ID-GUID    | ba305f68-47e3-11d0-a1a6-00c04fd930c9        |
+| System-Id-Guid    | ba305f68-47e3-11d0-a1a6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome della condivisione della stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 96cb9e17-588c-4a1a-a7ba-7f8439d5b79a
 title: Proprietà AVDecAudioDualMono (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adc84e19d41840b358e3e79576152dbc8527e2bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7a26bd6685cb9c9f326babbc01120019c93760fd7e1f9bf33f2a540d488300ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873391"
 ---
 # <a name="avdecaudiodualmono-property"></a>AVDecAudioDualMono - proprietà
 
@@ -39,8 +39,8 @@ Questa proprietà si applica solo quando il flusso di bit di input del decodific
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop UWP di Windows 2000 Professional \|\]<br/>                     |
-| Server minimo supportato<br/> | App UWP per app desktop di Windows 2000 Server \[ \|\]<br/>                           |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 

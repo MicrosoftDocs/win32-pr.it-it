@@ -1,5 +1,5 @@
 ---
-description: Specifica se il decodificatore deve eseguire la Lt-Rt ripiega.
+description: Specifica se il decodificatore deve eseguire la Lt-Rt in basso.
 ms.assetid: ce1dc4ea-4326-40ab-bb30-ff1a34f06d79
 title: MFPKEY_WMADEC_LTRTOUTPUT proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "119713811"
 ---
 # <a name="mfpkey_wmadec_ltrtoutput-property"></a>Proprietà MFPKEY \_ WMADEC \_ LTRTOUTPUT
 
-Specifica se il decodificatore deve eseguire la Lt-Rt ripiega.
+Specifica se il decodificatore deve eseguire la Lt-Rt in basso.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -29,11 +29,11 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore di questa proprietà è VARIANT FALSE e l'output è stereo, il \_ decodificatore audio usa una semplice ripiega del canale. Se il valore di questa proprietà è VARIANT TRUE, il decodificatore audio esegue una Lt-Rt (a matrice) ripiegata in stereo e quindi qualsiasi decodificatore Dolby Surround può essere usato per decodificare il surround a \_ matrice. Ad esempio, il decodificatore audio può Lt-Rt in basso sul contenuto 5.1 o 7.1.
+Se il valore di questa proprietà è VARIANT FALSE e l'output è stereo, il decodificatore audio usa la semplice riproduzione \_ del canale verso il basso. Se il valore di questa proprietà è VARIANT TRUE, il decodificatore audio esegue una Lt-Rt (con matrice) di ripiegazione in stereo e quindi qualsiasi decodificatore Dolby Surround può essere usato per decodificare il surround a \_ matrice. Ad esempio, il decodificatore audio può eseguire Lt-Rt in basso sul contenuto 5.1 o 7.1.
 
-Questa proprietà è supportata solo quando il decodificatore funge da oggetto multimediale DirectX (DMO). Non è supportato alcun tipo di fold down quando il decodificatore funge da Media Foundation Transform (MFT).
+Questa proprietà è supportata solo quando il decodificatore funge da oggetto multimediale DirectX (DMO). Quando il decodificatore funge da Media Foundation transform (MFT), non è supportata alcuna Media Foundation di alcun tipo.
 
-In Windows Vista, se si ottiene **un'interfaccia IPropertyStore** in un decodificatore audio, il decodificatore funge da MFT. Di conseguenza, questa proprietà non può essere usata Windows Vista. Per informazioni su quando un decodificatore funge da DMO o MFT, vedere le singole pagine di riferimento del codec in [Oggetti codec](codecobjects.md).
+In Windows Vista, se si ottiene **un'interfaccia IPropertyStore** in un decodificatore audio, il decodificatore funge da MFT. Di conseguenza, questa proprietà non può essere usata in Windows Vista. Per informazioni su quando un decodificatore funge da DMO o MFT, vedere le singole pagine di riferimento del codec in [Codec Objects (Oggetti codec).](codecobjects.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ In Windows Vista, se si ottiene **un'interfaccia IPropertyStore** in un decodifi
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 

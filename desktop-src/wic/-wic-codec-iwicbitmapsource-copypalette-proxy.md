@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119812291"
 ---
-# <a name="iwicbitmapsource_copypalette_proxy-function"></a>Funzione proxy IWICBitmapSource \_ CopyPalette \_
+# <a name="iwicbitmapsource_copypalette_proxy-function"></a>Funzione proxy CopyPalette IWICBitmapSource \_ \_
 
 Funzione proxy per il [**metodo CopyPalette.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypalette)
 
@@ -55,7 +55,7 @@ Puntatore a [**questo oggetto IWICBitmapSource.**](/windows/desktop/api/Wincodec
 
 Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Tavolozza.
+Riquadro.
 
 </dd> </dl>
 
@@ -73,8 +73,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop di Vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

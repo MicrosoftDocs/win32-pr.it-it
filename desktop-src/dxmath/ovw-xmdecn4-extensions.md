@@ -1,19 +1,19 @@
 ---
-description: XMDECN4 descrive un vettore 4D per l'archiviazione di valori con segno normalizzato come componenti x-, y-e z-con segno a 10 bit e un w-Component con segno a 2 bit.
+description: XMDECN4 descrive un vettore 4D per l'archiviazione di valori con segno e normalizzati come componenti x-, y-e z- con segno a 10 bit e un componente w con segno a 2 bit.
 ms.assetid: 7144ae8f-8c9d-41e6-8f75-6d388c3f297c
 title: Estensioni XMDECN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b42df02919512c0ae881681d89493b262eeecc56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02296802a3e00d86205fb6a5e74479a7687558dbaa0bd4a8b7f96224704b6f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841650"
 ---
 # <a name="xmdecn4-extensions"></a>Estensioni XMDECN4
 
-[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) descrive un vettore 4D per l'archiviazione di valori con segno normalizzato come componenti x-, y-e z-con segno a 10 bit e un w-Component con segno a 2 bit.
+[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) descrive un vettore 4D per l'archiviazione di valori con segno e normalizzati come componenti x-, y-e z- con segno a 10 bit e un componente w con segno a 2 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

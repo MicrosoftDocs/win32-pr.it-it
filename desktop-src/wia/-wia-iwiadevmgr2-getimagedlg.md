@@ -1,7 +1,7 @@
 ---
-description: "Il metodo IWiaDevMgr2:: GetImageDlg Visualizza una o più finestre di dialogo che consentono a un utente di acquisire un'immagine da un dispositivo Windows Image Acquisition (WIA) 2,0 e di scrivere l'immagine in un file specificato."
+description: Il metodo IWiaDevMgr2::GetImageDlg visualizza una o più finestre di dialogo che consentono a un utente di acquisire un'immagine da un dispositivo WIA (Windows Image Acquisition) 2.0 e scrivere l'immagine in un file specificato.
 ms.assetid: 30a63426-150e-44cf-a03e-7b6da14450f7
-title: 'Metodo IWiaDevMgr2:: GetImageDlg (WIA. h)'
+title: Metodo IWiaDevMgr2::GetImageDlg (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 6777b839beeb809383e524960e8882392be4bd24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b03356e40f1c708c852917c890e4c1bf96b98cd18ccf82b75ebcaaccaa69597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814041"
 ---
-# <a name="iwiadevmgr2getimagedlg-method"></a>Metodo IWiaDevMgr2:: GetImageDlg
+# <a name="iwiadevmgr2getimagedlg-method"></a>Metodo IWiaDevMgr2::GetImageDlg
 
-Il metodo **IWiaDevMgr2:: GetImageDlg** Visualizza una o più finestre di dialogo che consentono a un utente di acquisire un'immagine da un dispositivo Windows Image Acquisition (WIA) 2,0 e di scrivere l'immagine in un file specificato. Questo metodo estende la funzionalità di [**IWiaDevMgr2:: SelectDeviceDlg**](-wia-iwiadevmgr2-selectdevicedlg.md) per incapsulare l'acquisizione di immagini in una singola chiamata API.
+Il metodo **IWiaDevMgr2::GetImageDlg** visualizza una o più finestre di dialogo che consentono a un utente di acquisire un'immagine da un dispositivo WIA (Windows Image Acquisition) 2.0 e scrivere l'immagine in un file specificato. Questo metodo estende la funzionalità di [**IWiaDevMgr2::SelectDeviceDlg**](-wia-iwiadevmgr2-selectdevicedlg.md) per incapsulare l'acquisizione di immagini all'interno di una singola chiamata API.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ HRESULT GetImageDlg(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Specifica il comportamento della finestra di dialogo. Può essere impostato sui valori seguenti:
+Specifica il comportamento della finestra di dialogo. È possibile impostare i valori seguenti:
 
 
 
 | Contrassegno                                 | Significato                                                                                                                                                                     |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamento predefinito.                                                                                                                                                           |
-| \_finestra di dialogo del dispositivo WIA usare l' \_ \_ \_ \_ interfaccia utente comune | Utilizzare l'interfaccia utente del sistema anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene utilizzata l'interfaccia utente del fornitore. Se nessuna delle due interfacce è disponibile, la funzione restituisce E \_ NOTIMPL. |
+| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ USA \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente del sistema anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
 
 
 
@@ -66,7 +66,7 @@ Specifica il comportamento della finestra di dialogo. Può essere impostato sui 
 
 </dd> <dt>
 
-*bstrDeviceID* \[ in\]
+*bstrDeviceID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -75,25 +75,25 @@ Specifica lo scanner da usare.
 
 </dd> <dt>
 
-*hwndParent* \[ in\]
+*hwndParent* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HWND**
 
-Handle della finestra che possiede la finestra di dialogo **Ottieni immagine** .
+Handle della finestra proprietaria della finestra **di** dialogo Ottieni immagine.
 
 </dd> <dt>
 
-*bstrFolderName* \[ in\]
+*bstrFolderName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Specifica il nome della cartella in cui sono archiviati i file analizzati.
+Specifica il nome della cartella in cui vengono archiviati i file analizzati.
 
 </dd> <dt>
 
-*bstrFilename* \[ in\]
+*bstrFilename* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -102,25 +102,25 @@ Specifica il nome del file in cui scrivere i dati dell'immagine.
 
 </dd> <dt>
 
-*plNumFiles* \[ in\]
+*plNumFiles* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long \** _
+Tipo: **\* LONG**
 
 Puntatore al numero di file da analizzare.
 
 </dd> <dt>
 
-_ppbstrFilePaths * \[ in\]
+*ppbstrFilePaths* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR \* \***
 
-Indirizzo di un puntatore a una matrice di percorsi per i file analizzati. Inizializzare il puntatore in modo che punti a una matrice di dimensioni zero (0) prima di chiamare **IWiaDevMgr2:: GetImageDlg** . Vedere la **sezione Osservazioni**.
+Indirizzo di un puntatore a una matrice di percorsi per i file analizzati. Inizializzare il puntatore in modo che punti a una matrice di dimensioni zero (0) prima che venga chiamato **IWiaDevMgr2::GetImageDlg.** Vedere **Note**.
 
 </dd> <dt>
 
-*ppItem* \[ in uscita\]
+*ppItem* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\*\***
@@ -133,22 +133,22 @@ Indirizzo di un puntatore a [**IWiaItem2**](-wia-iwiaitem2.md) da cui sono state
 
 Tipo: **HRESULT**
 
-**IWiaDevMgr2:: GetImageDlg** restituisce \_ OK se i dati vengono trasferiti correttamente, restituisce \_ false se l'utente annulla la finestra di dialogo o restituisce un errore com standard.
+**IWiaDevMgr2::GetImageDlg** restituisce S OK se i dati vengono trasferiti correttamente, restituisce S FALSE se l'utente annulla la finestra di dialogo o restituisce un errore \_ \_ COM standard.
 
 > [!Note]  
-> Il parametro *ppbstrFilePaths* non è necessariamente vuoto, se la funzione restituisce \_ false. Se l'utente Annulla, le pagine che hanno completato l'analisi vengono elaborate e restituite in *ppbstrFilePaths*. Anche se non vengono usati, è necessario liberare la matrice. Vedere la **sezione Osservazioni**.
+> Il *parametro ppbstrFilePaths* non è necessariamente vuoto, se la funzione restituisce S \_ FALSE. Se l'utente annulla, le pagine che hanno completato l'analisi vengono elaborate e restituite in *ppbstrFilePaths*. Anche se non vengono usati, è necessario liberare la matrice. Vedere **Note**.
 
  
 
 ## <a name="remarks"></a>Commenti
 
-Se l'applicazione passa **null** come valore del parametro *bstrDeviceID* , **IWiaDevMgr2:: GetImageDlg** Visualizza la finestra di dialogo **Seleziona dispositivo** in modo che l'utente possa selezionare il dispositivo di input WIA 2,0.
+Se l'applicazione passa **NULL** per il valore del parametro *bstrDeviceID,* **IWiaDevMgr2::GetImageDlg** visualizza la finestra di dialogo Seleziona dispositivo in modo che l'utente possa selezionare il dispositivo di input WIA 2.0. 
 
-Usare una voce di menu denominata **da scanner** nel menu **file** per fare in modo che le selezioni del dispositivo e dell'immagine siano disponibili nell'applicazione.
+Usare una voce di menu denominata **Da scanner** nel menu **File** in modo che le selezioni di dispositivi e immagini siano disponibili nell'applicazione.
 
-Chiamare [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring) per ogni BSTR nella matrice a cui  \[ punta ppbstrFilePaths \] e chiamare [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) sulla matrice stessa per liberare la memoria associata. Se \_ viene restituito S false, verificare se il valore a cui punta *plNumFiles* è diverso da zero. Se il valore è diverso da zero, liberare le risorse *ppbstrFilePaths* \[ i \] nell'applicazione, in quanto l'utente può annullare l'operazione dopo aver analizzato una o più pagine. Inizializzare *plNumFiles* su zero prima di chiamare **IWiaDevMgr2:: GetImageDlg**. Se *plNumFiles* non è inizializzato su zero e un errore nell'infrastruttura com fa in modo che la funzione restituisca S \_ false prima di **IWiaDevMgr2:: GetImageDlg** viene chiamato, *plNumFiles* avrà un valore di Garbage Collection fuorviante.
+Chiamare [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring) su ogni BSTR nella matrice a cui *punta ppbstrFilePaths* \[ i e chiamare \] [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) sulla matrice stessa per liberare la memoria associata. Se viene restituito S FALSE, verificare se il valore a cui \_ *punta plNumFiles* è diverso da zero. Se il valore è diverso da zero, liberare le risorse *ppbstrFilePaths* i nell'applicazione, perché l'utente potrebbe annullare l'operazione dopo l'analisi di una \[ o più \] pagine. Inizializzare *plNumFiles* su zero prima di chiamare **IWiaDevMgr2::GetImageDlg**. Se *plNumFiles* non viene inizializzato su zero e un errore nell'infrastruttura COM fa sì che la funzione restituirà S FALSE prima che venga chiamato \_ **IWiaDevMgr2::GetImageDlg,** *plNumFiles* avrà un valore fuorviante di Garbage Collection.
 
-La finestra di dialogo deve disporre di diritti sufficienti per *bstrFolderName* , in modo che sia possibile salvare i file con nomi file univoci. Proteggere la cartella con un elenco di controllo di accesso (ACL) perché contiene dati utente.
+La finestra di dialogo deve avere diritti sufficienti per *bstrFolderName* in modo da poter salvare i file con nomi di file univoci. Proteggere la cartella con un elenco di controllo di accesso (ACL) perché contiene dati utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -156,9 +156,9 @@ La finestra di dialogo deve disporre di diritti sufficienti per *bstrFolderName*
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                             |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl> |
 
 
 

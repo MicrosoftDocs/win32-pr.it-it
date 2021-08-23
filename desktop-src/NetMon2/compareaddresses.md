@@ -1,7 +1,7 @@
 ---
-description: La funzione CompareAddresses Confronta due indirizzi, a indicare che uno degli indirizzi è maggiore di, minore o uguale all'altro indirizzo.
+description: La funzione CompareAddresses confronta due indirizzi, a indicare che uno degli indirizzi è maggiore, minore o uguale all'altro indirizzo.
 ms.assetid: 76ff37d2-714f-4bac-adcc-eab78c8f25d3
-title: Funzione CompareAddresses (Netmon. h)
+title: Funzione CompareAddresses (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: fd72ef0281615c0b56176e86ee9bb3659b498a0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 323afb66d251d58bf13670fd335da2bd26ad2193ce03d5aa799ddb0f28e875fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744721"
 ---
-# <a name="compareaddresses-function"></a>CompareAddresses (funzione)
+# <a name="compareaddresses-function"></a>Funzione CompareAddresses
 
-La funzione **CompareAddresses** Confronta due indirizzi, a indicare che uno degli indirizzi è maggiore di, minore o uguale all'altro indirizzo.
+La **funzione CompareAddresses** confronta due indirizzi, a indicare che uno degli indirizzi è maggiore, minore o uguale all'altro indirizzo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ int WINAPI CompareAddresses(
 
 <dl> <dt>
 
-*lpAddress1* \[ in\]
+*lpAddress1* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al primo indirizzo.
 
 </dd> <dt>
 
-*lpAddress2* \[ in\]
+*lpAddress2* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al secondo indirizzo.
@@ -58,15 +58,15 @@ Puntatore al secondo indirizzo.
 
 Se gli indirizzi sono uguali, la funzione restituisce zero.
 
-Se il parametro *lpAddress1* specifica un indirizzo minore dell'indirizzo specificato dal parametro *lpAddress2* , il valore restituito è un numero negativo.
+Se il *parametro lpAddress1* specifica un indirizzo minore dell'indirizzo specificato dal parametro *lpAddress2,* il valore restituito è un numero negativo.
 
-Se il parametro *lpAddress1* specifica un indirizzo maggiore dell'indirizzo specificato dal parametro *lpAddress2* , il valore restituito è un numero positivo.
+Se il *parametro lpAddress1* specifica un indirizzo maggiore dell'indirizzo specificato dal parametro *lpAddress2,* il valore restituito è un numero positivo.
 
 ## <a name="remarks"></a>Commenti
 
 Un indirizzo minore di un altro indirizzo indica un frame precedente. Un indirizzo maggiore di un altro indirizzo indica un frame successivo.
 
-In Network Monitor sono disponibili altre due funzioni, [CompareFrameDestAddress](compareframedestaddress.md) e [CompareFrameSourceAddress](compareframesourceaddress.md), che è possibile utilizzare per confrontare gli indirizzi. La funzione **CompareFrameDestAddress** confronta un determinato indirizzo con l'indirizzo di destinazione del frame e la funzione **CompareFrameSourceAddress** confronta un determinato indirizzo con l'indirizzo di origine del frame.
+Network Monitor fornisce altre due funzioni, [CompareFrameDestAddress](compareframedestaddress.md) e [CompareFrameSourceAddress](compareframesourceaddress.md), che è possibile usare per confrontare gli indirizzi. La **funzione CompareFrameDestAddress** confronta un determinato indirizzo con l'indirizzo di destinazione del frame e la **funzione CompareFrameSourceAddress** confronta un determinato indirizzo con l'indirizzo di origine del frame.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ In Network Monitor sono disponibili altre due funzioni, [CompareFrameDestAddress
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

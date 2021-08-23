@@ -1,38 +1,38 @@
 ---
-description: Trasferimento del contenuto dal dispositivo a un PC
+description: Trasferimento di contenuto dal dispositivo a un PC
 ms.assetid: 76069097-a513-42f7-bdcc-a65714e95f0a
-title: Trasferimento del contenuto dal dispositivo a un PC
+title: Trasferimento di contenuto dal dispositivo a un PC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de06861ba74b4b7883c8d96e25cebe3fbb64e21c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a8695f8158040e75a4aae40f95386ed70af45df56a137dabc944ab6d1771e69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806521"
 ---
-# <a name="transferring-content-from-the-device-to-a-pc"></a>Trasferimento del contenuto dal dispositivo a un PC
+# <a name="transferring-content-from-the-device-to-a-pc"></a>Trasferimento di contenuto dal dispositivo a un PC
 
-Un'operazione comune eseguita da un'applicazione WPD è il trasferimento di contenuto da un dispositivo connesso al computer.
+Un'operazione comune eseguita da un'applicazione WPD è il trasferimento del contenuto da un dispositivo connesso al PC.
 
-I trasferimenti di contenuto vengono eseguiti usando le interfacce descritte nella tabella seguente.
+I trasferimenti di contenuto vengono evasi usando le interfacce descritte nella tabella seguente.
 
 
 
 | Interfaccia                                                                | Descrizione                                                     |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Consente di accedere all'interfaccia **IPortableDeviceProperties** . |
+| [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Fornisce l'accesso **all'interfaccia IPortableDeviceProperties.** |
 | [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Fornisce l'accesso ai metodi specifici della proprietà.                   |
-| [**Interfaccia IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources)   | Utilizzato per archiviare le chiavi di proprietà del profilo specificato.          |
-| Interfaccia IStream                                                        | Utilizzato per leggere e scrivere i dati.                                |
+| [**Interfaccia IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources)   | Usato per archiviare le chiavi delle proprietà per il profilo specificato.          |
+| Interfaccia IStream                                                        | Usato per leggere e scrivere i dati.                                |
 
 
 
  
 
-La `TransferContentFromDevice` funzione nel modulo ContentTransfer. cpp dell'applicazione di esempio illustra come un'applicazione può trasferire le informazioni di contatto da un dispositivo connesso a un PC.
+La `TransferContentFromDevice` funzione nel modulo ContentTransfer.cpp dell'applicazione di esempio illustra come un'applicazione potrebbe trasferire le informazioni di contatto da un dispositivo connesso a un PC.
 
-La prima attività eseguita dalla `TransferContentFromDevice` funzione consiste nel richiedere all'utente di immettere un identificatore di oggetto per l'oggetto padre sul dispositivo (in cui verrà trasferito il contenuto).
+La prima attività eseguita dalla funzione è richiedere all'utente di immettere un identificatore di oggetto per l'oggetto padre nel dispositivo (in cui verrà trasferito `TransferContentFromDevice` il contenuto).
 
 
 ```C++
@@ -64,7 +64,7 @@ if (FAILED(hr))
 
 
 
-Il passaggio successivo consiste nel recupero di un oggetto **IPortableDeviceContent** usato dall'esempio per accedere ai metodi specifici del contenuto.
+Il passaggio successivo consiste nel recupero di **un oggetto IPortableDeviceContent** utilizzato dall'esempio per accedere ai metodi specifici del contenuto.
 
 
 ```C++
@@ -80,7 +80,7 @@ if (SUCCEEDED(hr))
 
 
 
-Il passaggio successivo consiste nel recupero di un oggetto **IPortableDeviceResources** usato dall'esempio per accedere ai metodi specifici della risorsa.
+Il passaggio successivo consiste nel recupero di **un oggetto IPortableDeviceResources** utilizzato dall'esempio per accedere ai metodi specifici della risorsa.
 
 
 ```C++
@@ -96,7 +96,7 @@ if (SUCCEEDED(hr))
 
 
 
-Il passaggio successivo consiste nel recupero di un oggetto IStream usato dall'esempio per leggere i dati da trasferire dal dispositivo.
+Il passaggio successivo è il recupero di un oggetto IStream utilizzato dall'esempio per leggere i dati trasferiti dal dispositivo.
 
 
 ```C++
@@ -116,7 +116,7 @@ if (SUCCEEDED(hr))
 
 
 
-Il passaggio successivo è il recupero del nome file dell'oggetto nel dispositivo. Questa stringa viene utilizzata per creare il nome file corrispondente nel computer. Se l'oggetto non ha un nome file nel dispositivo, l'identificatore dell'oggetto viene convertito in una stringa e usato per creare il nome del file di destinazione.
+Il passaggio successivo consiste nel recupero del nome file dell'oggetto nel dispositivo. Questa stringa viene usata per creare il nome file corrispondente nel PC. Se l'oggetto non ha un nome file nel dispositivo, l'identificatore dell'oggetto viene convertito in una stringa e usato per creare il nome del file di destinazione.
 
 
 ```C++
@@ -164,7 +164,7 @@ if (SUCCEEDED(hr))
 
 
 
-Infine, l'oggetto IStream di origine viene copiato nella destinazione nel computer.
+Infine, l'oggetto IStream di origine viene copiato nella destinazione nel PC.
 
 
 ```C++

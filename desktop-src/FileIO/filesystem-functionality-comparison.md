@@ -13,12 +13,12 @@ ms.locfileid: "119790691"
 ---
 # <a name="file-system-functionality-comparison"></a>Confronto delle funzionalità del file system
 
-Le tabelle seguenti elencano funzionalità e funzionalità che supportano i confronti per i quattro file system Windows, NTFS, exFAT, UDF e FAT32:
+Nelle tabelle seguenti sono elencati i confronti tra funzionalità e supporto delle funzionalità per i quattro file system Windows principali, NTFS, exFAT, UDF e FAT32:
 
 -   [Funzionalità](#file-system-functionality-comparison)
 -   [Limiti](#limits)
 -   [Inserimento nel journal e log delle modifiche](#journaling-and-change-log)
--   [Funzionalità di allocazione dei blocchi](#block-allocation-features)
+-   [Funzionalità di allocazione blocchi](#block-allocation-features)
 -   [Sicurezza](#security)
 -   [Compressione](#compression)
 -   [Quote](#quotas)
@@ -36,7 +36,7 @@ Le tabelle seguenti elencano funzionalità e funzionalità che supportano i conf
 | Timestamp dell'ultima modifica<br/>  | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
 | Timestamp dell'ultimo archivio<br/> | No<br/>                  | No<br/>  | No<br/>                 | No<br/>              |
 | Con distinzione tra maiuscole e minuscole<br/>           | Sì (opzione)<br/>        | No<br/>  | Sì<br/>                | No<br/>              |
-| Conservazione delle maiuscole e minuscole<br/>          | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
+| Mantenimento delle maiuscole/minuscole<br/>          | Sì<br/>                 | Sì<br/> | Sì<br/>                | Sì<br/>             |
 | Collegamenti reali<br/>               | Sì<br/>                 | No<br/>  | Sì<br/>                | No<br/>              |
 | Soft link<br/>               | Sì<br/>                 | No<br/>  | No<br/>                 | No<br/>              |
 | File sparse<br/>             | Sì<br/>                 | No<br/>  | Sì<br/>                | No<br/>              |

@@ -1,5 +1,5 @@
 ---
-title: Metodi IVMHardDiskConnection
+title: Metodi di IVMHardDiskConnection
 description: L'interfaccia IVMHardDiskConnection espone i metodi seguenti.
 ms.assetid: CFC91E7E-0701-4AC7-B491-0204B1C3C326
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119768131"
 ---
-# <a name="ivmharddiskconnection-methods"></a>Metodi IVMHardDiskConnection
+# <a name="ivmharddiskconnection-methods"></a>Metodi di IVMHardDiskConnection
 
 \[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDerivedColumnCorruptionException'
+description: Altre informazioni sul costruttore EsentDerivedColumnCorruptionException
 title: Costruttore EsentDerivedColumnCorruptionException
 TOCTitle: 'EsentDerivedColumnCorruptionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDerivedColumnCorruptionException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ed577f2091a98b982313971f92f29930d715c4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bb6a25452bd9c37460db52e88263991a87d7f2d9d0b31f86097371e9e4ab6f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784691"
 ---
 # <a name="esentderivedcolumncorruptionexception-constructor"></a>Costruttore EsentDerivedColumnCorruptionException
 
 Inizializza una nuova istanza della classe EsentDerivedColumnCorruptionException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDerivedColumnCorruptionException()
 
 [Membri di EsentDerivedColumnCorruptionException](./esentderivedcolumncorruptionexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

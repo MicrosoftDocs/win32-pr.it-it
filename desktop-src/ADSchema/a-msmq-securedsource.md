@@ -1,11 +1,11 @@
 ---
-title: MSMQ-protetto-attributo di origine
-description: Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQueue o MQSetProperties. Controlla se MSMQ accetta messaggi solo da un'origine protetta (ad esempio, HTTPS) per questa coda.
+title: Attributo MSMQ-Secured-Source
+description: Fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQueue o MQSetProperties. Controlla se MSMQ accetta messaggi solo da un'origine protetta (ad esempio https) per questa coda.
 ms.assetid: 780d164f-c7fa-4c65-b46e-3a67ead92163
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di origine protetto MSMQ
-- Schema AD MSMQ-SecuredSource attribute
+- Schema AD dell'attributo MSMQ-Secured-Source
+- MSMQ-SecuredSource schema AD dell'attributo
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5dd005cedcd650aa0604a85e78a46d10f1e01b0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23785fd626debe61981185561b3b1ea243d93ff870fc2e025777488e1d898c16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762751"
 ---
-# <a name="msmq-secured-source-attribute"></a>MSMQ-protetto-attributo di origine
+# <a name="msmq-secured-source-attribute"></a>Attributo MSMQ-Secured-Source
 
-Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQueue o MQSetProperties. Controlla se MSMQ accetta messaggi solo da un'origine protetta (ad esempio, HTTPS) per questa coda.
+Fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQueue o MQSetProperties. Controlla se MSMQ accetta messaggi solo da un'origine protetta (ad esempio https) per questa coda.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-protetto-origine                  |
-| LDAP-Display-Name | MSMQ-SecuredSource                   |
+| CN                | MSMQ-Secured-Source                  |
+| Ldap-Display-Name | MSMQ-SecuredSource                   |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Proprietario della coda.                     |
+| Aggiorna privilegio  | Proprietario della coda.                     |
 | Frequenza di aggiornamento  | Quando viene creata una coda.             |
 | Attribute-Id      | 1.2.840.113556.1.4.1713              |
-| System-ID-GUID    | 8bf0221b-7a06-4d63-91f0-1499941813d3 |
+| System-Id-Guid    | 8bf0221b-7a06-4d63-91f0-1499941813d3 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -57,15 +57,15 @@ Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQ
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQ
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQ
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQ
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo fa parte di un oggetto MSMQ, viene impostato chiamando l'API su MQCreateQ
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 

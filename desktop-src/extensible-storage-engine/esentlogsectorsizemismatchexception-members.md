@@ -17,7 +17,7 @@ ms.locfileid: "119782871"
 # <a name="esentlogsectorsizemismatchexception-members"></a>Membri di EsentLogSectorSizeMismatchException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Classe di base per JET_err. Eccezioni LogSectorSizeMismatch.
 
@@ -125,7 +125,7 @@ Inizio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -141,7 +141,7 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
+<td>In caso di override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo con</a> informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>

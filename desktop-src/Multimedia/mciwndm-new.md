@@ -3,7 +3,7 @@ title: MCIWNDM_NEW messaggio (Vfw.h)
 description: Il messaggio MCIWNDM \_ NEW crea un nuovo file per il dispositivo MCI corrente. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndNew.
 ms.assetid: 18b2340d-8303-415a-867f-bd346034db2a
 keywords:
-- MCIWNDM_NEW messaggio Windows Multimedia
+- MCIWNDM_NEW messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119783081"
 ---
-# <a name="mciwndm_new-message"></a>MCIWNDM \_ NUOVO messaggio
+# <a name="mciwndm_new-message"></a>MESSAGGIO NUOVO MCIWNDM \_
 
 Il **messaggio MCIWNDM \_ NEW** crea un nuovo file per il dispositivo MCI corrente. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndNew.**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew)
 

@@ -3,7 +3,7 @@ title: MCM_SETCALENDARBORDER messaggio (Commctrl.h)
 description: Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro MonthCal SetCalendarBorder.
 ms.assetid: 2a64a08f-a1fb-47a8-8f09-725807e87a03
 keywords:
-- MCM_SETCALENDARBORDER di controllo Windows messaggio
+- MCM_SETCALENDARBORDER dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:

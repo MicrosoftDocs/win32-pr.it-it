@@ -1,10 +1,10 @@
 ---
 title: MDM_Firewall_Action04 classe
-description: La classe MDM \_ Firewall \_ Action04 viene usata per configurare le impostazioni Windows Defender firewall mdm.
+description: La classe MDM \_ Firewall \_ Action04 viene usata per configurare le impostazioni Windows Defender firewall MDM.
 ms.assetid: d0704662-ac2b-4ff5-a2c1-8f2bc7835488
 keywords:
 - MDM_Firewall_Action04 classe
-- MDM_Firewall_Action04 classe , descritta
+- MDM_Firewall_Action04 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -27,9 +27,9 @@ ms.locfileid: "119694865"
 ---
 # <a name="mdm_firewall_action04-class"></a>Classe \_ \_ Action04 del firewall MDM
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe MDM \_ Firewall \_ Action04 viene usata per configurare le impostazioni Windows Defender firewall mdm.
+La classe MDM \_ Firewall \_ Action04 viene usata per configurare le impostazioni Windows Defender firewall MDM.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,26 +47,26 @@ class MDM_Firewall_Action04
 
 ## <a name="members"></a>Members
 
-La **classe MDM Firewall \_ \_ Action04** include questi tipi di membri:
+La **classe MDM Firewall \_ \_ Action04** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Mdm Firewall \_ \_ Action04** ha queste proprietà.
+La **classe MDM Firewall \_ \_ Action04** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -74,13 +74,13 @@ Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>

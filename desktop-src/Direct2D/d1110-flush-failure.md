@@ -1,7 +1,7 @@
 ---
 title: Errore di scaricamento D1110
 ms.assetid: 44f122b0-08e3-4f63-a575-0f3619144823
-description: Una chiamata flush da una destinazione di rendering non è riuscita
+description: Una chiamata Flush da una destinazione di rendering non è riuscita
 keywords:
 - Errore di scaricamento D1110 Direct2D
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "119758151"
 ---
 # <a name="d1110-flush-failure"></a>D1110: Errore di scaricamento
 
-Una chiamata Flush da parte di una risorsa di destinazione di rendering non \[ *è riuscita.* \] Tag \[ *tag1,* *tag2* \] .
+Una chiamata Flush da parte di una risorsa di destinazione di rendering non \[ *è riuscita.* \] Tag1 \[ , *tag2* \] .
 
 ## <a name="placeholders"></a>Segnaposto
 
@@ -59,7 +59,7 @@ Secondo valore del tag. Per [**altre informazioni, vedere SetTags.**](/windows/w
 
 ## <a name="examples"></a>Esempio
 
-**Esempio 1:** Il codice seguente mostra che una chiamata di disegno è in uno stato non valido. Per evitare il messaggio di avviso, usare [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) per impostare D2D1 \_ \_ ANTIALIAS MODE \_ ANTIALIASED prima di [**una chiamata a FillOpacityMask.**](id2d1rendertarget-fillopacitymask.md)
+**Esempio 1:** Il codice seguente mostra che una chiamata di disegno è in uno stato non valido. Per evitare il messaggio di avviso, usare [**SetAntialiasMode**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode) per impostare D2D1 \_ ANTIALIAS \_ MODE \_ ANTIALIASED prima di una chiamata a [**FillOpacityMask.**](id2d1rendertarget-fillopacitymask.md)
 
 
 ```C++
@@ -95,13 +95,13 @@ Secondo valore del tag. Per [**altre informazioni, vedere SetTags.**](/windows/w
 
 
 
-In questo esempio viene generato il messaggio di debug seguente:
+Questo esempio genera il messaggio di debug seguente:
 
 ``` syntax
 D2D DEBUG WARNING - Flush call on render target failed [88990001]. Tags [0, 0].
 ```
 
-**Esempio 2:** Il codice seguente mostra che [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la [**chiamata EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
+**Esempio 2:** Il codice seguente mostra che [**flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la [**chiamata a EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
 
 ```C++
@@ -114,7 +114,7 @@ D2D DEBUG WARNING - Flush call on render target failed [88990001]. Tags [0, 0].
 
 
 
-In questo esempio viene generato il messaggio di debug seguente:
+Questo esempio genera il messaggio di debug seguente:
 
 ``` syntax
 DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
@@ -122,7 +122,7 @@ DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
 
 ## <a name="possible-causes"></a>Possibili cause
 
-La [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può non riuscire per uno dei due motivi seguenti. Potrebbe non riuscire perché il metodo [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)è stato chiamato all'esterno della chiamata / [**BeginDraw EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) oppure potrebbe non riuscire perché si è verificato un errore generato da una delle operazioni di destinazione di rendering elaborate dopo l'ultima chiamata **Flush** o **EndDraw.** Per risolvere il problema, l'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
+La [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può avere esito negativo per uno dei due motivi seguenti. L'operazione potrebbe non riuscire perché [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)il metodo è stato chiamato all'esterno della chiamata / [**BeginDraw EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) oppure perché si è verificato un errore generato da una delle operazioni di destinazione di rendering elaborate dopo l'ultima chiamata **Flush** o **EndDraw.** Per risolvere il problema, l'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
 
 ## <a name="fixes"></a>Correzioni
 

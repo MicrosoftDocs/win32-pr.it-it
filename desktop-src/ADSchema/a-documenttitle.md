@@ -1,5 +1,5 @@
 ---
-title: attributo documentTitle
+title: Attributo documentTitle
 description: Il tipo di attributo documentTitle specifica il titolo di un documento.
 ms.assetid: 41c50484-cde5-4c0f-95c9-bba5f4e99c75
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20b9574cd973b07f44cbed41af04fda0308ae440
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e945599d40450cc3130d717881098773bb331d46c163aa4d25d874b2247d5075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804871"
 ---
-# <a name="documenttitle-attribute"></a>attributo documentTitle
+# <a name="documenttitle-attribute"></a>Attributo documentTitle
 
 Il tipo di attributo documentTitle specifica il titolo di un documento.
 
@@ -29,12 +29,12 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | documentTitle                               |
-| LDAP-Display-Name | documentTitle                               |
+| Ldap-Display-Name | documentTitle                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.12                  |
-| System-ID-GUID    | de265a9c-ff2c-47b9-91dc-6e6fe2c43062        |
+| System-Id-Guid    | de265a9c-ff2c-47b9-91dc-6e6fe2c43062        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| A valore singolo       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Il tipo di attributo documentTitle specifica il titolo di un documento.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 

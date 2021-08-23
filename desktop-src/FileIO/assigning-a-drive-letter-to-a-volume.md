@@ -1,25 +1,25 @@
 ---
-description: 'È possibile assegnare una lettera di unità (ad esempio, X: \) a un volume locale usando la funzione SetVolumeMountPoint, a condizione che non sia già stato assegnato un volume a tale lettera di unità.'
+description: 'È possibile assegnare una lettera di unità ,ad esempio X: a un volume locale usando la funzione SetVolumeMountPoint, a condizione che non sia già stato assegnato alcun volume a tale lettera \) di unità.'
 ms.assetid: 8c78b2e8-199a-4934-a9c4-6f3913f44efe
 title: Assegnazione di una lettera di unità a un volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f31b9446cc41ad26f14a34874c59e153e1db8ce5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6cc2e894580a394e73896291f05a2f54c615949bfeb63ea3e574deef1353d91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766224"
 ---
 # <a name="assigning-a-drive-letter-to-a-volume"></a>Assegnazione di una lettera di unità a un volume
 
-È possibile assegnare una lettera di unità (ad esempio, X: \) a un volume locale usando la funzione [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) , a condizione che non sia già stato assegnato un volume a tale lettera di unità. Se il volume locale dispone già di una lettera di unità. quindi [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) avrà esito negativo. Per gestire questa operazione, eliminare innanzitutto la lettera di unità utilizzando la funzione [**DeleteVolumeMountPoint**](/windows/desktop/api/FileAPI/nf-fileapi-deletevolumemountpointw) . Per un esempio di codice, vedere [modifica delle assegnazioni di lettere di unità](editing-drive-letter-assignments.md).
+È possibile assegnare una lettera di unità ,ad esempio X: a un volume locale usando la \) [**funzione SetVolumeMountPoint,**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) a condizione che non sia già stato assegnato alcun volume a tale lettera di unità. Se il volume locale ha già una lettera di unità. Quindi [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) avrà esito negativo. Per gestire questo problema, eliminare prima di tutto la lettera di unità usando [**la funzione DeleteVolumeMountPoint.**](/windows/desktop/api/FileAPI/nf-fileapi-deletevolumemountpointw) Per un esempio di codice, vedere [Modifica delle assegnazioni delle lettere di unità.](editing-drive-letter-assignments.md)
 
-Il sistema supporta al massimo una lettera di unità per ogni volume. Pertanto, non è possibile avere C: \\ e F: \\ rappresentano lo stesso volume.
+Il sistema supporta al massimo una lettera di unità per volume. Pertanto, non è possibile fare in \\ modo che C: e F: \\ rappresentino lo stesso volume.
 
 > [!Caution]
 >
-> Per eliminare una lettera di unità esistente e assegnarne una nuova, è possibile che si verifichino interruzioni dei percorsi esistenti, ad esempio quelli nei collegamenti desktop. Potrebbe inoltre interrompere il percorso del programma che rende la lettera di unità modificata. Con la gestione della memoria virtuale di Windows, questa operazione potrebbe interrompere l'applicazione, lasciando il sistema in uno stato instabile ed eventualmente inutilizzabile. È responsabilità del progettista del programma evitare tali catastrofi potenziali.
+> L'eliminazione di una lettera di unità esistente e l'assegnazione di una nuova lettera potrebbero interrompere i percorsi esistenti, ad esempio quelli nei collegamenti del desktop. Può anche interrompere il percorso del programma che apporta modifiche alla lettera di unità. Con Windows della memoria virtuale, questa operazione potrebbe causare l'interruzione dell'applicazione, lasciando il sistema in uno stato instabile e possibilmente inutilizzabile. È responsabilità del progettista del programma evitare tali potenziali catastrofi.
 
  
 

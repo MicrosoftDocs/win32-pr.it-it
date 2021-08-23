@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: ColumnValueOfStruct <T> Properties'
-title: Proprietà di ColumnValueOfStruct (T)
+description: Altre informazioni sulle proprietà <T> ColumnValueOfStruct
+title: Proprietà ColumnValueOfStruct(T)
 TOCTitle: ColumnValueOfStruct(T) properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.ColumnValueOfStruct`1
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn334179(v=EXCHG.10)
 ms:contentKeyID: 55100966
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 323a2c37be576033fe5e06c0e33b14a29be29277
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63bf1c832879e439a38f5ee8313d063d5cca77e9105c36e6d1aeafa21aabe05a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104571506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786367"
 ---
-# <a name="columnvalueofstructt-properties"></a>Proprietà di ColumnValueOfStruct \<T\>
+# <a name="columnvalueofstructt-properties"></a>Proprietà \<T\> ColumnValueOfStruct
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il [tipo \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md) espone i membri seguenti.
+Il [tipo ColumnValueOfStruct \<T\> ](./columnvalueofstruct-t-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -34,38 +34,38 @@ Il [tipo \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md) espone i m
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334166(v=exchg.10).md">ColumnID</a></td>
-<td>Ottiene o imposta ColumnID da impostare o recuperare. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td><a href="dn334166(v=exchg.10).md">Id colonna</a></td>
+<td>Ottiene o imposta l'elemento columnid da impostare o recuperare. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334212(v=exchg.10).md">Error (Errore) (Error (Errore)e)</a></td>
-<td>Ottiene l'avviso generato tramite il recupero o l'impostazione della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td>Ottiene l'avviso generato dal recupero o dall'impostazione di questa colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334165(v=exchg.10).md">ItagSequence</a></td>
-<td>Ottiene o imposta la sequenza ITag della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td>Ottiene o imposta la sequenza itag della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Length</a></td>
-<td>Ottiene la lunghezza in byte di un valore di colonna, che è zero se la colonna è null; in caso contrario, corrisponde alla dimensione della colonna a dimensione fissa. Esegue l'override di <a href="dn334213(v=exchg.10).md">columnValue. length</a>.</td>
+<td>Ottiene la lunghezza in byte di un valore di colonna, che è zero se column è Null, in caso contrario corrisponde a Size per questa colonna a dimensione fissa. Esegue l'override <a href="dn334213(v=exchg.10).md">di ColumnValue.Length.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Ottiene o imposta le opzioni di recupero della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td>Ottiene o imposta le opzioni di recupero delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Ottiene o imposta le opzioni di aggiornamento della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td>Ottiene o imposta le opzioni di aggiornamento delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
 <td><a href="dn334172(v=exchg.10).md">Dimensioni</a></td>
-<td>Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa. Ereditato da <a href="dn334206(v=exchg.10).md">columnValue</a>.</td>
+<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -75,7 +75,7 @@ Il [tipo \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md) espone i m
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334226(v=exchg.10).md">ValueAsObject</a></td>
-<td>Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico. Esegue l'override di <a href="dn334214(v=exchg.10).md">columnValue. ValueAsObject</a>.</td>
+<td>Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico. Esegue l'override <a href="dn334214(v=exchg.10).md">di ColumnValue.ValueAsObject.</a></td>
 </tr>
 </tbody>
 </table>
@@ -87,6 +87,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Classe ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
+[Classe \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,36 +1,36 @@
 ---
-description: Nell'esempio seguente viene illustrato il concetto di archivio della raccolta, un archivio certificati temporaneo che include effettivamente il contenuto di diversi archivi certificati.
+description: Nell'esempio seguente viene illustrato il concetto di archivio raccolta, un archivio certificati temporaneo che include effettivamente il contenuto di diversi archivi certificati.
 ms.assetid: 5349222f-ad68-477c-8712-fde16e68f600
-title: "Esempio di programma C: raccolta e operazioni dell'archivio certificati di pari livello"
+title: 'Programma C di esempio: operazioni di raccolta e archivio certificati di pari livello'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ad1957f37e1aabeabbda0be8c14662c14c3ecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52074b58cb96b37b17808cfa8de17e2cd4af3082cf58c7c4312b46eb8eca0e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873871"
 ---
-# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Esempio di programma C: raccolta e operazioni dell'archivio certificati di pari livello
+# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Programma C di esempio: operazioni di raccolta e archivio certificati di pari livello
 
-Nell'esempio seguente viene illustrato il concetto di archivio della raccolta, un [*archivio certificati*](../secgloss/c-gly.md) temporaneo che include effettivamente il contenuto di diversi archivi certificati. È possibile aggiungere uno o più archivi a una raccolta in grado di accedere al contenuto di uno dei negozi della raccolta con una singola chiamata di funzione.
+Nell'esempio seguente viene illustrato il concetto [](../secgloss/c-gly.md) di archivio raccolta, un archivio certificati temporaneo che include effettivamente il contenuto di diversi archivi certificati. È possibile aggiungere uno o più archivi a una raccolta che può accedere al contenuto di uno degli archivi nella raccolta con una singola chiamata di funzione.
 
-In questo esempio vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le attività e le [*funzioni CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Apertura e chiusura di un archivio di raccolta, un archivio di memoria e un archivio di sistema utilizzando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Aggiunta di un archivio di pari livello a un archivio di raccolta utilizzando [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection).
--   Trovare i certificati e i collegamenti ai certificati negli archivi che soddisfano alcuni criteri usando [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Aggiunta di un certificato recuperato a un archivio in memoria utilizzando [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
--   Aggiunta di un collegamento a un certificato a un archivio usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
+-   Apertura e chiusura di un archivio di raccolta, di un archivio di memoria e di un archivio di sistema [**tramite CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) [**e CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   Aggiunta di un archivio di pari livello a un archivio di raccolta [**tramite CertAddStoreToCollection.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection)
+-   Ricerca di certificati e collegamenti a certificati negli archivi che soddisfano alcuni criteri [**tramite CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
+-   Aggiunta di un certificato recuperato a un archivio in memoria [**tramite CertAddCertificateContextToStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore)
+-   Aggiunta di un collegamento a un certificato a un archivio [**tramite CertAddCertificateLinkToStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore)
 -   Salvataggio dell'archivio in memoria in un file su disco.
 -   Apertura e chiusura di un archivio certificati basato su file.
--   Rimozione di un archivio di pari livello da una raccolta con [**CertRemoveStoreFromCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremovestorefromcollection).
+-   Rimozione di un archivio di pari livello da una raccolta [**tramite CertRemoveStoreFromCollection.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremovestorefromcollection)
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
-In questo esempio viene utilizzata la funzione **CreateMyDACL** , definita nell'argomento [Creating a DACL](../secbp/creating-a-dacl.md) , per garantire che il file aperto venga creato con un elenco DACL appropriato.
+In questo esempio viene utilizzata la funzione **CreateMyDACL,** definita nell'argomento Creazione di un [elenco DACL,](../secbp/creating-a-dacl.md) per assicurarsi che il file aperto sia stato creato con un DACL appropriato.
 
-Nell'esempio seguente viene aperto un archivio di raccolta, viene creato un nuovo archivio certificati in memoria e viene aggiunto il nuovo archivio come archivio di pari livello all'archivio della raccolta. Il programma apre quindi un'archiviazione di sistema e recupera un certificato. Il certificato viene aggiunto all'archivio di memoria. Un secondo certificato viene recuperato dall'archivio di sistema e viene aggiunto un collegamento al certificato all'archivio di memoria. Il certificato e il collegamento vengono quindi recuperati dall'archivio di raccolta che mostra che i certificati e i collegamenti in un archivio di pari livello possono essere recuperati dall'archivio di raccolta. La memoria viene salvata su disco. L'archivio di memoria viene quindi rimosso dalla raccolta. Il collegamento aggiunto all'archivio di memoria è ancora disponibile nell'archivio di memoria, ma non può più essere trovato nell'archivio della raccolta. Tutti gli archivi e i file vengono chiusi, quindi l'archivio file viene riaperto e viene eseguita una ricerca per il collegamento al certificato. Il successo di questo programma dipende da un archivio personale disponibile. Tale archivio deve includere un certificato con l'oggetto "Insert \_ CERT \_ Subject \_ name1" e un secondo certificato con l'oggetto "Insert \_ CERT \_ Subject \_ name2". I nomi degli oggetti devono essere modificati con i nomi degli oggetti certificato noti come presenti nell'archivio personale.
+L'esempio seguente apre un archivio raccolta, crea un nuovo archivio certificati in memoria e aggiunge il nuovo archivio come archivio di pari livello all'archivio di raccolta. Il programma apre quindi un archivio di sistema e recupera un certificato. Tale certificato viene aggiunto all'archivio di memoria. Un secondo certificato viene recuperato dall'archivio di sistema e viene aggiunto un collegamento a tale certificato all'archivio di memoria. Il certificato e il collegamento vengono quindi recuperati dall'archivio di raccolta che mostra che i certificati e i collegamenti in un archivio di pari livello possono essere recuperati dall'archivio di raccolta. La memoria viene salvata su disco. L'archivio di memoria viene quindi rimosso dalla raccolta. Il collegamento aggiunto all'archivio di memoria è ancora disponibile nell'archivio di memoria, ma non è più disponibile nell'archivio di raccolta. Tutti gli archivi e i file vengono chiusi, quindi l'archivio file viene riaperto e viene eseguita una ricerca per il collegamento al certificato. Il successo di questo programma dipende dalla disponibilità di un archivio my. Tale archivio deve includere un certificato con il soggetto "Inserisci nome soggetto certificato1" e un secondo certificato con oggetto \_ \_ \_ "Inserisci \_ nome soggetto \_ \_ certificato2". I nomi degli oggetti devono essere modificati in nomi di soggetti certificato che si possono trovare nell'archivio.
 
 
 ```C++

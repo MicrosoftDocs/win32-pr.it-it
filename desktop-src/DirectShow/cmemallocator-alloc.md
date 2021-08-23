@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7d7de755aa3b8007a122e43529d16f5e39ca0cb8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 93d3f367b0aa69fd2b5782e7cf3c830c30f140389d8611caadc7b70372762625
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813791"
 ---
 # <a name="cmemallocatoralloc-method"></a>Metodo CMemAllocator.Alloc
 
@@ -58,7 +58,7 @@ Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato dal [**metodo CBaseAllocator::Commit.**](cbaseallocator-commit.md) Alloca un blocco contiguo di memoria sufficiente per i requisiti del buffer specificato nel [**metodo CMemAllocator::SetProperties.**](cmemallocator-setproperties.md)
+Questo metodo viene chiamato dal [**metodo CBaseAllocator::Commit.**](cbaseallocator-commit.md) Alloca un blocco contiguo di memoria sufficiente per i requisiti del buffer dati nel [**metodo CMemAllocator::SetProperties.**](cmemallocator-setproperties.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Questo metodo viene chiamato dal [**metodo CBaseAllocator::Commit.**](cbasealloc
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo DNS-Secure-Secondaries
-description: L'attributo DNS-Secure-Secondaries non è attualmente in uso.
+title: Attributo Dns-Secure-Secondaries
+description: L'attributo Dns-Secure-Secondaries non è attualmente usato.
 ms.assetid: ba5110f1-e451-4f85-897e-e4223649dc10
 ms.tgt_platform: multiple
 keywords:
-- DNS-Secure-Secondaries attributo AD schema
+- Schema AD dell'attributo Dns-Secure-Secondaries
 - Schema AD dell'attributo dnsSecureSecondaries
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4d6d45c642ec9045d5eb8593492e385245bc635
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f72ca21992256df6b2fbe92b34400b9e2b6e368101fc158ea513381ed0445acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804891"
 ---
-# <a name="dns-secure-secondaries-attribute"></a>Attributo DNS-Secure-Secondaries
+# <a name="dns-secure-secondaries-attribute"></a>Attributo Dns-Secure-Secondaries
 
-L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
+**L'attributo Dns-Secure-Secondaries** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | DNS-protezione-database secondari               |
-| LDAP-Display-Name | dnsSecureSecondaries                 |
+| CN                | Dns-Secure-Secondaries               |
+| Ldap-Display-Name | dnsSecureSecondaries                 |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.380               |
-| System-ID-GUID    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **DNS-Secure-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

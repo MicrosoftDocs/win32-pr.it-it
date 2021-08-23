@@ -1,5 +1,5 @@
 ---
-description: 'Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob : recupera informazioni aggiuntive su un errore.'
+description: 'Metodo GetErrorEx della Msvm_CollectionReferencePointExportJob: recupera informazioni aggiuntive su un errore.'
 ms.assetid: 64a90f18-3ae7-4021-857f-64adf8c40430
 title: Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119681961"
 ---
 # <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Metodo GetErrorEx della classe Msvm \_ CollectionReferencePointExportJob
 
-Recupera informazioni aggiuntive su un errore. Quando il processo è in esecuzione o è terminato senza errori, **GetErrorEx** non restituisce alcuna [**istanza di Msvm \_ Error.**](msvm-error.md) Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, **GetErrorEx** restituisce una o più **istanze di Msvm \_ Error.**
+Recupera informazioni aggiuntive su un errore. Quando il processo è in esecuzione o è terminato senza errori, **GetErrorEx** non restituisce alcuna [**istanza di Errore \_ Msvm.**](msvm-error.md) Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, **GetErrorEx** restituisce una o più **istanze di Msvm \_ Error.**
 
 ## <a name="syntax"></a>Sintassi
 

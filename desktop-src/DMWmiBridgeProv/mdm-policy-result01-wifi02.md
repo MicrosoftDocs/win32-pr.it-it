@@ -1,10 +1,10 @@
 ---
 title: MDM_Policy_Result01_WiFi02 classe
-description: La classe Mdm \_ \_ Policy Result01 \_ WiFi02 rappresenta i Wi-Fi disponibili.
+description: La classe MDM \_ Policy \_ Result01 \_ WiFi02 rappresenta i Wi-Fi disponibili.
 ms.assetid: 074C4428-401D-4564-B7AC-45C2221EEC3A
 keywords:
 - MDM_Policy_Result01_WiFi02 classe
-- MDM_Policy_Result01_WiFi02 classe, descritta
+- MDM_Policy_Result01_WiFi02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -26,9 +26,9 @@ ms.locfileid: "119694511"
 ---
 # <a name="mdm_policy_result01_wifi02-class"></a>Classe \_ Mdm Policy \_ Result01 \_ WiFi02
 
-\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** rappresenta i Wi-Fi disponibili. Questi criteri determinano Wi-Fi le configurazioni consentite.
+La **classe MDM Policy \_ \_ Result01 \_ WiFi02** rappresenta i Wi-Fi disponibili. Questi criteri determinano Wi-Fi configurazioni consentite.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -51,13 +51,13 @@ class MDM_Policy_Result01_WiFi02
 
 ## <a name="members"></a>Members
 
-La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ WiFi02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ WiFi02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** ha queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -78,7 +78,7 @@ Tipo di accesso: Lettura/Scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -89,7 +89,7 @@ Tipo di accesso: Lettura/Scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -100,7 +100,7 @@ Tipo di accesso: Lettura/Scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,7 +111,7 @@ Tipo di accesso: Lettura/Scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -119,13 +119,13 @@ Tipo di accesso: Lettura/Scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica il nome del nodo padre. Per questa classe, la stringa è "WiFi".
@@ -135,26 +135,26 @@ Identifica il nome del nodo padre. Per questa classe, la stringa è "WiFi".
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> <dt>
 
-[WLANScanMode](/windows/client-management/mdm/policy-csp-wifi#wifi-wlanscanmode)
+[Modalità WLANScanMode](/windows/client-management/mdm/policy-csp-wifi#wifi-wlanscanmode)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -177,7 +177,7 @@ Tipo di accesso: Lettura/Scrittura
 
 <dl> <dt>
 
-[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_Education02
-description: La \_ \_ classe Config01 Education02 utente dei criteri MDM \_ \_ Configura i criteri di formazione.
+title: MDM_Policy_User_Config01_Education02 classe
+description: La classe MDM \_ Policy \_ User \_ Config01 \_ Education02 configura i criteri di formazione.
 ms.assetid: d9a263c7-ee9c-4857-b9a6-f0efdb373e13
 keywords:
-- Classe MDM_Policy_User_Config01_Education02
-- Classe MDM_Policy_User_Config01_Education02, descritta
+- MDM_Policy_User_Config01_Education02 classe
+- MDM_Policy_User_Config01_Education02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42ae8508668b95edce1d4c4a2d0e99cbba2bc6d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d004ca4dc440f21204d1eb6fdc6ba42169b623efa6b15ea823e1c7cadedcac0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694121"
 ---
-# <a name="mdm_policy_user_config01_education02-class"></a>\_Utente criteri \_ MDM \_ Config01 \_ classe Education02
+# <a name="mdm_policy_user_config01_education02-class"></a>Classe MDM \_ Policy \_ User \_ Config01 \_ Education02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ classe Config01 Education02 utente dei criteri MDM \_ \_ Configura i criteri di formazione.
+La classe MDM \_ Policy \_ User \_ Config01 \_ Education02 configura i criteri di formazione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,23 +48,23 @@ class MDM_Policy_User_Config01_Education02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Config01 \_ Education02 dell'utente dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy User \_ \_ \_ Config01 \_ Education02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Config01 \_ Education02 dell'utente dei criteri MDM** ha queste proprietà.
+La **classe MDM Policy User \_ \_ \_ Config01 \_ Education02** ha queste proprietà.
 
 <dl> <dt>
 
 [DefaultPrinterName](/windows/client-management/mdm/policy-csp-education#education-defaultprintername)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -72,27 +72,27 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -103,7 +103,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,10 +111,10 @@ Tipo di accesso: lettura/scrittura
 [PrinterNames](/windows/client-management/mdm/policy-csp-education#education-printernames)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -125,10 +125,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
