@@ -1,7 +1,7 @@
 ---
-description: La struttura Datatypes \_ info \_ 1 contiene informazioni sul tipo di dati utilizzato per registrare un processo di stampa.
+description: La struttura DATATYPES \_ INFO \_ 1 contiene informazioni sul tipo di dati usato per registrare un processo di stampa.
 ms.assetid: 6169006c-12d4-4608-865c-732f04107f9f
-title: Struttura DATATYPES_INFO_1 (winspool. h)
+title: DATATYPES_INFO_1 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: e7259f6559220697538774fef8d2460318df84c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05defe3d8cc6cd66b15b2cacdd3d3d1d56c348e4946a43700278f100ea17da5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719671"
 ---
-# <a name="datatypes_info_1-structure"></a>Struttura di informazioni sui tipi di \_ dati \_ 1
+# <a name="datatypes_info_1-structure"></a>Struttura DATATYPES \_ INFO \_ 1
 
-La struttura **DATAtypes \_ info \_ 1** contiene informazioni sul tipo di dati utilizzato per registrare un processo di stampa.
+La **struttura DATATYPES \_ INFO \_ 1** contiene informazioni sul tipo di dati usato per registrare un processo di stampa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ typedef struct _DATATYPES_INFO_1 {
 
 <dl> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che identifica il tipo di dati utilizzato per registrare un processo di stampa.
+Puntatore a una stringa con terminazione Null che identifica il tipo di dati utilizzato per registrare un processo di stampa.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Puntatore a una stringa con terminazione null che identifica il tipo di dati uti
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ Tipi di \_ dati info \_ 1W** (Unicode) e **\_ DataTypes \_ info \_ 1a** (ANSI)<br/>                       |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ DATATYPES \_ INFO \_ 1W** (Unicode) e **\_ DATATYPES \_ INFO \_ 1A** (ANSI)<br/>                       |
 
 
 
@@ -68,7 +68,7 @@ Puntatore a una stringa con terminazione null che identifica il tipo di dati uti
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrintProcessorDatatypes**](enumprintprocessordatatypes.md)

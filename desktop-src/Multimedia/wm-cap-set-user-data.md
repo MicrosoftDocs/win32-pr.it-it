@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_USER_DATA (VFW. h)
-description: Il \_ messaggio WM Cap \_ set \_ User \_ Data associa un \_ valore di dati ptr lungo a una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capSetUserData.
+title: WM_CAP_SET_USER_DATA messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP SET USER DATA associa un valore di dati LONG \_ \_ \_ \_ PTR a una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o tramite la macro capSetUserData.
 ms.assetid: 067502e3-f009-4cf2-b612-4a0b64624416
 keywords:
-- WM_CAP_SET_USER_DATA messaggi multimediali di Windows
+- WM_CAP_SET_USER_DATA messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 542b8e49f740bfc265824947237841dede1f6065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea5b4a192b774572ea374b08d4a4128389281e44ee00614806841b0b007d978b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803551"
 ---
-# <a name="wm_cap_set_user_data-message"></a>\_Messaggio di \_ \_ dati utente \_ per l'impostazione di WM Cap
+# <a name="wm_cap_set_user_data-message"></a>Messaggio \_ WM CAP SET USER \_ \_ \_ DATA
 
-Il messaggio **WM \_ Cap \_ set \_ User \_ Data** associa un valore di dati **\_ ptr lungo** a una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capSetUserData**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata) .
+Il **messaggio WM CAP SET USER \_ \_ \_ \_ DATA** associa un **valore di dati LONG \_ PTR** a una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**capSetUserData.**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata)
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam = (LPARAM)lUser;
 <span id="lUser"></span><span id="luser"></span><span id="LUSER"></span>*lUser*
 </dt> <dd>
 
-Valore di dati da associare a una finestra di acquisizione.
+Valore dei dati da associare a una finestra di acquisizione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** se è in corso l'acquisizione di flussi.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se è in corso l'acquisizione del flusso.
 
 ## <a name="remarks"></a>Commenti
 
@@ -61,7 +61,7 @@ In genere questo messaggio viene usato per puntare a un blocco di dati associato
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

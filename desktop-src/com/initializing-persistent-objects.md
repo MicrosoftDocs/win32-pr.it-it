@@ -4,12 +4,12 @@ description: Inizializzazione di oggetti persistenti
 ms.assetid: 790cf133-ce86-4d02-b177-a538b4ee3f8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e29bcb32bc049b5e0d5c2dab13e5ded6a743957e
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ee98b01c6c9eab28f8f96f98ea1a2980c9eb5d10988c2efbe495a920c98c51e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756181"
 ---
 # <a name="initializing-persistent-objects"></a>Inizializzazione di oggetti persistenti
 

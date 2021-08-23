@@ -1,10 +1,10 @@
 ---
-title: Attributo Scope-Flags
-description: L'attributo Scope-Flags non è attualmente in uso.
+title: Scope-Flags attributo
+description: LScope-Flags attribuito non è attualmente utilizzato.
 ms.assetid: c68af2f5-066c-4d15-a116-73f5c7d51d59
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Scope-Flags attribute
+- Scope-Flags schema AD dell'attributo
 - Schema AD dell'attributo scopeFlags
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d4c7b9d173dd53920878f51dacb5dfdc26e66ae
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aae1dcddbbd37dbec281750a17e6ced15b29df32ff7e3cd08569d097a0ce8689
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836991"
 ---
-# <a name="scope-flags-attribute"></a>Attributo Scope-Flags
+# <a name="scope-flags-attribute"></a>Scope-Flags attributo
 
-L'attributo **scope-Flags** non è attualmente in uso.
+**L'attributo Scope-Flags** non è attualmente utilizzato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Scope-Flags                          |
-| LDAP-Display-Name | scopeFlags                           |
+| Ldap-Display-Name | scopeFlags                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1354              |
-| System-ID-GUID    | 16f3a4c2-7e79-11d2-9921-0000f87a57d4 |
+| System-Id-Guid    | 16f3a4c2-7e79-11d2-9921-0000f87a57d4 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| A valore singolo       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **scope-Flags** non è attualmente in uso.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 

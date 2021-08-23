@@ -1,8 +1,8 @@
 ---
-description: Rappresenta un servizio in un sistema di computer che esegue Windows.
+description: Rappresenta un servizio in un computer che esegue Windows.
 ms.assetid: 713402d3-ee73-4a6c-afb9-ad8033a4c580
 ms.tgt_platform: multiple
-title: Classe Win32_Service
+title: Win32_Service classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,18 +40,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b342282bfa3b49fe72e62cf79377a0ead11276eb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a33265b3dfc3b114d55b381a229b717e291bbd258716e8305d9995282d29b3f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759261"
 ---
-# <a name="win32_service-class"></a>\_Classe del servizio Win32
+# <a name="win32_service-class"></a>Classe del servizio Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) del **\_ servizio Win32** rappresenta un servizio in un computer in cui è in esecuzione Windows.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **\_ del servizio Win32** rappresenta un servizio in un computer che esegue Windows.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -90,30 +90,30 @@ class Win32_Service : Win32_BaseService
 
 ## <a name="members"></a>Members
 
-La classe del **\_ servizio Win32** presenta questi tipi di membri:
+La **classe \_ del servizio Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe del **\_ servizio Win32** presenta questi metodi.
+La **classe \_ del servizio Win32** include questi metodi.
 
 
 
 | Metodo                                                                               | Descrizione                                                                                          |
 |:-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| [**Modificare**](change-method-in-class-win32-service.md)                               | Modifica un servizio.<br/>                                                                       |
+| [**Cambiare**](change-method-in-class-win32-service.md)                               | Modifica un servizio.<br/>                                                                       |
 | [**ChangeStartMode**](changestartmode-method-in-class-win32-service.md)             | Modifica la modalità di avvio di un servizio.<br/>                                                     |
-| [**Creare**](create-method-in-class-win32-service.md)                               | Crea un nuovo servizio.<br/>                                                                    |
-| [**Delete**](delete-method-in-class-win32-service.md)                               | Elimina un servizio esistente.<br/>                                                              |
+| [**Crea**](create-method-in-class-win32-service.md)                               | Crea un nuovo servizio.<br/>                                                                    |
+| [**Elimina**](delete-method-in-class-win32-service.md)                               | Elimina un servizio esistente.<br/>                                                              |
 | [**GetSecurityDescriptor**](getsecuritydescriptor-method-in-class-win32-service.md) | Restituisce il descrittore di sicurezza che controlla l'accesso al servizio.<br/>                      |
-| [**InterrogateService**](interrogateservice-method-in-class-win32-service.md)       | Richiede che un servizio aggiorni lo stato a Service Manager.<br/>                          |
-| [**PauseService**](pauseservice-method-in-class-win32-service.md)                   | Tenta di collocare un servizio in stato di sospensione.<br/>                                          |
-| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Tenta di inserire un servizio nello stato ripresa.<br/>                                         |
+| [**InterrogaeService**](interrogateservice-method-in-class-win32-service.md)       | Richiede che un servizio aggiornerne lo stato a Service Manager.<br/>                          |
+| [**PauseService**](pauseservice-method-in-class-win32-service.md)                   | Tenta di mettere un servizio nello stato sospeso.<br/>                                          |
+| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Tenta di impostare un servizio nello stato ripreso.<br/>                                         |
 | [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class-win32-service.md) | Scrive una versione aggiornata del descrittore di sicurezza che controlla l'accesso al servizio.<br/> |
-| [**StartService**](startservice-method-in-class-win32-service.md)                   | Tenta di inserire un servizio nello stato di avvio.<br/>                                       |
-| [**StopService**](stopservice-method-in-class-win32-service.md)                     | Inserisce un servizio nello stato interrotto.<br/>                                                    |
+| [**Startservice**](startservice-method-in-class-win32-service.md)                   | Tenta di impostare un servizio sullo stato di avvio.<br/>                                       |
+| [**StopService**](stopservice-method-in-class-win32-service.md)                     | Inserisce un servizio nello stato arrestato.<br/>                                                    |
 | [**UserControlService**](usercontrolservice-method-in-class-win32-service.md)       | Tenta di inviare un codice di controllo definito dall'utente a un servizio.<br/>                                |
 
 
@@ -122,120 +122,120 @@ La classe del **\_ servizio Win32** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe del **\_ servizio Win32** dispone di queste proprietà.
+La **classe \_ del servizio Win32** dispone di queste proprietà.
 
 <dl> <dt>
 
 **AcceptPause**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Service \| Structures Service \| [**\_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| DwControlsAccepted servizio \| \_ accettazione \_ pausa \_ continua"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("servizio accetta pausa")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted \| SERVICE ACCEPT PAUSE \_ \_ \_ CONTINUE"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service Accepts Pause")
 </dt> </dl>
 
 Indica se il servizio può essere sospeso.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **AcceptStop**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures Service \| [**\_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted servizio \| \_ Accept \_ Stop"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service accepts stop")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted \| SERVICE ACCEPT \_ \_ STOP"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service Accepts Stop")
 </dt> </dl>
 
 Indica se il servizio può essere arrestato.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descrizione del servizio, ovvero una stringa a una riga.
+Breve descrizione del servizio, ovvero una stringa di una riga.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**CheckPoint**
+**Checkpoint**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| DwCheckPoint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Check Point count")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCheckPoint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Check Point Count")
 </dt> </dl>
 
-Valore che il servizio incrementa periodicamente per segnalare lo stato di avanzamento durante un'operazione di avvio, arresto, sospensione o continuazione Prolong. Il servizio, ad esempio, incrementa questo valore poiché completa ogni passaggio dell'inizializzazione all'avvio. Il programma dell'interfaccia utente che richiama l'operazione sul servizio utilizza questo valore per tenere traccia dello stato di avanzamento del servizio durante un'operazione di lunga durata. Questo valore non è valido e deve essere zero quando il servizio non dispone di un'operazione di avvio, arresto, pausa o continuazione in sospeso.
+Valore incrementato periodicamente dal servizio per segnalare lo stato di avanzamento durante un'operazione di avvio, arresto, sospensione o continuazione di lunga durata. Ad esempio, il servizio incrementa questo valore durante il completamento di ogni passaggio dell'inizializzazione all'avvio. Il programma dell'interfaccia utente che richiama l'operazione sul servizio utilizza questo valore per tenere traccia dello stato di avanzamento del servizio durante un'operazione di lunga durata. Questo valore non è valido e deve essere zero quando il servizio non ha un'operazione di avvio, arresto, sospensione o continuazione in sospeso.
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome classe")
+Qualificatori: [**CIM \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Class Name")
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, questa proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
 
 </dd> <dt>
 
 **DelayedAutoStart**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ Retarded \_ auto \_ Start \_ info**](/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info) \| fDelayedAutostart"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("avvio automatico ritardato")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ DELAYED AUTO START \_ \_ \_ INFO**](/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info) \| fDelayedAutostart"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Avvio automatico ritardato")
 </dt> </dl>
 
-Se **true**, il servizio viene avviato dopo l'avvio di altri servizi di avvio automatico più un breve ritardo.
+Se **True,** il servizio viene avviato dopo l'avvio di altri servizi di avvio automatico più un breve ritardo.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Questa proprietà non è supportata prima di Windows Server 2016 e Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Questa proprietà non è supportata prima di Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -246,60 +246,60 @@ Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DesktopInteract**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Services \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType \| Service \_ Interactive \_ processo"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("interagisce con il desktop")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType \| SERVICE INTERACTIVE \_ \_ PROCESS"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Interagisce con desktop")
 </dt> </dl>
 
-Indica se il servizio è in grado di creare o comunicare con Windows sul desktop e quindi interagire in qualche modo con un utente. I servizi interattivi devono essere eseguiti con l'account di sistema locale. La maggior parte dei servizi non è interattiva; ovvero non comunicano con l'utente in alcun modo.
+Indica se il servizio può creare o comunicare con le finestre sul desktop e quindi interagire in qualche modo con un utente. I servizi interattivi devono essere eseguiti con l'account di sistema locale. La maggior parte dei servizi non è interattiva. ciò significa che non comunicano in alcun modo con l'utente.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **DisplayName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ Configuration**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Display Name")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome visualizzato")
 </dt> </dl>
 
-Nome del servizio visualizzato nello snap-in servizi. La lunghezza massima della stringa è di 256 caratteri. Si noti che il nome visualizzato e il nome del servizio (archiviati nel registro di sistema) non sono sempre gli stessi. Il servizio client DHCP, ad esempio, ha il nome del servizio DHCP ma il nome visualizzato client DHCP. Il nome viene mantenuto con la distinzione tra maiuscole e minuscole in Gestione controllo servizi. Tuttavia, i confronti **DisplayName** sono sempre senza distinzione tra maiuscole e minuscole.
+Nome del servizio visualizzato nello snap-in Servizi. La lunghezza massima della stringa è di 256 caratteri. Si noti che il nome visualizzato e il nome del servizio (archiviato nel Registro di sistema) non sono sempre gli stessi. Ad esempio, il servizio Client DHCP ha il nome del servizio Dhcp, ma il nome visualizzato Client DHCP. Il nome viene mantenuto senza distinzione tra maiuscole e minuscole in Gestione controllo servizi. Tuttavia, per **i confronti displayName** non viene sempre fatto distinzione tra maiuscole e minuscole.
 
-Constraint: accetta lo stesso valore della proprietà **Name** .
+Vincolo: accetta lo stesso valore della **proprietà** Name.
 
-Esempio: "ATDISK"
+Esempio: "Atdisk"
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **ErrorControl**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| DwErrorControl"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("gravità dell'avvio non riuscito")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwErrorControl"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Gravità dell'errore di avvio")
 </dt> </dl>
 
 Gravità dell'errore se il servizio non viene avviato durante l'avvio. Il valore indica l'azione eseguita dal programma di avvio in caso di errore. Tutti gli errori vengono registrati dal computer.
@@ -319,7 +319,7 @@ L'utente non viene notificato.
 
 <span id="Normal"></span><span id="normal"></span><span id="NORMAL"></span>
 
-<span id="Normal"></span><span id="normal"></span><span id="NORMAL"></span>**Normale** ("normale")
+<span id="Normal"></span><span id="normal"></span><span id="NORMAL"></span>**Normal** ("Normal")
 
 
 </dt> <dd>
@@ -330,7 +330,7 @@ L'utente viene notificato. In genere si tratta di una finestra di messaggio che 
 
 <span id="Severe"></span><span id="severe"></span><span id="SEVERE"></span>
 
-<span id="Severe"></span><span id="severe"></span><span id="SEVERE"></span>**Grave** ("grave")
+<span id="Severe"></span><span id="severe"></span><span id="SEVERE"></span>**Grave** ("Grave")
 
 
 </dt> <dd>
@@ -341,18 +341,18 @@ Il sistema viene riavviato con l'ultima configurazione valida nota.
 
 <span id="Critical"></span><span id="critical"></span><span id="CRITICAL"></span>
 
-<span id="Critical"></span><span id="critical"></span><span id="CRITICAL"></span>**Critico** ("critico")
+<span id="Critical"></span><span id="critical"></span><span id="CRITICAL"></span>**Critico** ("Critico")
 
 
 </dt> <dd>
 
-Il sistema tenta un riavvio con una configurazione valida. Se il servizio non viene avviato una seconda volta, l'avvio ha esito negativo.
+Il sistema tenta un riavvio con una configurazione valida. Se il servizio non viene avviato una seconda volta, l'avvio non riesce.
 
 </dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Sconosciuto** ("sconosciuto")
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd>
@@ -361,94 +361,94 @@ La gravità dell'errore è sconosciuta.
 
 </dd> </dl>
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
-**ExitCode**
+**Codice di uscita**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("codice di uscita")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Exit Code")
 </dt> </dl>
 
-Codice di errore di Windows che definisce gli errori riscontrati durante l'avvio o l'arresto del servizio. Questa proprietà è impostata sull' **\_ \_ \_ errore specifico del servizio di errore** (1066) quando l'errore è univoco per il servizio rappresentato da questa classe e le informazioni sull'errore sono disponibili nella proprietà **ServiceSpecificExitCode** . Il servizio imposta questo valore su **nessun \_ errore** durante l'esecuzione e di nuovo alla chiusura normale.
+Windows codice di errore che definisce gli errori rilevati durante l'avvio o l'arresto del servizio. Questa proprietà è impostata su **ERROR \_ SERVICE SPECIFIC \_ \_ ERROR** (1066) quando l'errore è univoco per il servizio rappresentato da questa classe e le informazioni sull'errore sono disponibili nella **proprietà ServiceSpecificExitCode.** Il servizio imposta questo valore su **NO \_ ERROR durante** l'esecuzione e di nuovo al termine normale.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
-L'oggetto data è installato. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
+L'oggetto Data è installato. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](../wmisdk/key-qualifier.md)
+Qualificatori: [ **Chiave**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
-Identificatore univoco del servizio che fornisce un'indicazione della funzionalità gestita. Questa funzionalità è descritta nella proprietà **Description** dell'oggetto.
+Identificatore univoco del servizio che fornisce un'indicazione della funzionalità gestita. Questa funzionalità è descritta nella **proprietà Description** dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PathName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| LpBinaryPathName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome percorso file")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpBinaryPathName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome percorso file")
 </dt> </dl>
 
 Percorso completo del file binario del servizio che implementa il servizio.
 
-Esempio: " \\ systemroot \\ system32 \\ drivers \\afd.sys"
+Esempio: \\ "SystemRoot \\ System32 \\ drivers \\afd.sys"
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
-**ProcessId**
+**Processid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status \_ Process**](/windows/win32/api/winsvc/ns-winsvc-service_status_process) \| dwProcessId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("ID processo")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE STATUS \| [**\_ \_ PROCESS**](/windows/win32/api/winsvc/ns-winsvc-service_status_process) \| dwProcessId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Process Id")
 </dt> </dl>
 
 Identificatore del processo del servizio.
@@ -460,31 +460,31 @@ Esempio: 324
 **ServiceSpecificExitCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwServiceSpecificExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("codice di uscita specifico del server")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwServiceSpecificExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Codice di uscita specifico del server")
 </dt> </dl>
 
-Codice di errore specifico del servizio per gli errori che si verificano durante l'avvio o l'arresto del servizio. I codici di uscita sono definiti dal servizio rappresentato da questa classe. Questo valore viene impostato solo quando il valore della proprietà **ExitCode** è **\_ \_ \_ errore specifico del servizio di errore** (1066).
+Codice di errore specifico del servizio per gli errori che si verificano durante l'avvio o l'arresto del servizio. I codici di uscita sono definiti dal servizio rappresentato da questa classe. Questo valore viene impostato solo quando il **valore della proprietà ExitCode** è **ERROR SERVICE SPECIFIC \_ \_ \_ ERROR** (1066).
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **ServiceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| DwServiceType"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("tipo di servizio")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tipo di servizio")
 </dt> </dl>
 
 Tipo di servizio fornito ai processi chiamanti.
@@ -495,21 +495,21 @@ I valori possibili sono:
 
 <span id="Kernel_Driver"></span><span id="kernel_driver"></span><span id="KERNEL_DRIVER"></span>
 
-**Driver del kernel** ("driver del kernel")
+**Driver kernel** ("Driver kernel")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>
 
-**Driver del file System** ("driver del file System")
+**Driver del file system** ("Driver del file system")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Adapter"></span><span id="adapter"></span><span id="ADAPTER"></span>
 
-**Adapter** ("adapter")
+**Adapter** ("Adapter")
 
 
 </dt> <dd></dd> <dt>
@@ -523,33 +523,33 @@ I valori possibili sono:
 
 <span id="Own_Process"></span><span id="own_process"></span><span id="OWN_PROCESS"></span>
 
-**Processo personale** ("processo personalizzato")
+**Own Process** ("Own Process")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Share_Process"></span><span id="share_process"></span><span id="SHARE_PROCESS"></span>
 
-**Processo di condivisione** ("processo di condivisione")
+**Processo di condivisione** ("Processo di condivisione")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interactive_Process"></span><span id="interactive_process"></span><span id="INTERACTIVE_PROCESS"></span>
 
-**Processo interattivo** ("processo interattivo")
+**Processo interattivo** ("Processo interattivo")
 
 
 </dt> <dd></dd> </dl>
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **Avviato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -560,29 +560,29 @@ Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Started")
 
 Indica se il servizio è stato avviato o meno.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
 
 </dd> <dt>
 
 **Modalità avvio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("modalità di avvio")
+Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Modalità di avvio")
 </dt> </dl>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
 <span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>
 
-<span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>**Avvio** ("avvio")
+<span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>**Avvio** ("Avvio")
 
 
 </dt> <dd>
@@ -593,7 +593,7 @@ Driver di dispositivo avviato dal caricatore del sistema operativo (valido solo 
 
 <span id="System"></span><span id="system"></span><span id="SYSTEM"></span>
 
-<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("sistema")
+<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("Sistema")
 
 
 </dt> <dd>
@@ -604,7 +604,7 @@ Driver di dispositivo avviato dal processo di inizializzazione del sistema opera
 
 <span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>
 
-<span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>**Automatico** ("auto")
+<span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>**Auto** ("Auto")
 
 
 </dt> <dd>
@@ -615,60 +615,60 @@ Servizio da avviare automaticamente da Gestione controllo servizi durante l'avvi
 
 <span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>
 
-<span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>**Manuale** ("manuale")
+<span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>**Manuale** ("Manuale")
 
 
 </dt> <dd>
 
-Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il metodo [**StartService**](startservice-method-in-class-win32-service.md) . Questi servizi non vengono avviati, a meno che un utente non esegua l'accesso e li avvii.
+Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il [**metodo StartService.**](startservice-method-in-class-win32-service.md) Questi servizi non vengono avviati a meno che un utente non eserviti l'accesso e li avvia.
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("disabilitato")
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabled** ("Disabled")
 
 
 </dt> <dd>
 
-Servizio che non può essere avviato finché il relativo StartMode non viene modificato in auto o manuale.
+Servizio che non può essere avviato fino a quando startMode non viene modificato in Auto o Manual.
 
 </dd> </dl>
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
 
 </dd> <dt>
 
 **StartName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| LpServiceStartName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome account iniziale")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpServiceStartName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome account iniziale")
 </dt> </dl>
 
-Nome dell'account con cui viene eseguito un servizio. A seconda del tipo di servizio, il nome dell'account può avere la forma di "DomainName \\ username" o del formato UPN (" *Username@DomainName* "). Il processo del servizio viene registrato utilizzando una di queste due forme durante l'esecuzione. Se l'account appartiene al dominio predefinito, ". \\ Nome utente "può essere specificato. Per i driver a livello di sistema o del kernel, **StartName** contiene il nome dell'oggetto driver, ovvero " \\ filesystem \\ RDR" o " \\ driver \\ XNS", utilizzato dal sistema i/O per caricare il driver di dispositivo. Inoltre, se si specifica **null** , il driver viene eseguito con un nome di oggetto predefinito creato dal sistema i/O in base al nome del servizio.
+Nome dell'account con cui viene eseguito un servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato "NomeDominioNomeUtente" o \\ nel formato UPN (" *Username@DomainName* "). Il processo del servizio viene registrato usando uno di questi due formati durante l'esecuzione. Se l'account appartiene al dominio predefinito, ". \\ Username" può essere specificato. Per i driver a livello di kernel o di sistema, **StartName** contiene il nome dell'oggetto driver ,ovvero \\ "FileSystem \\ Rdr" o \\ "Driver Xns", che il sistema di I/O usa per caricare il driver di \\ dispositivo. Inoltre, se viene **specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio.
 
-Esempio: "DWDOM \\ admin"
+Esempio: "Amministratore \\ DWDOM"
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **State**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCurrentState"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("state")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCurrentState "), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("State")
 </dt> </dl>
 
 Stato corrente del servizio di base.
@@ -679,81 +679,81 @@ I valori possibili sono:
 
 <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>
 
-**Arrestato** ("arrestato")
+**Arrestato** ("Arrestato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Start_Pending"></span><span id="start_pending"></span><span id="START_PENDING"></span>
 
-**Avvio in sospeso** ("avvio in sospeso")
+**Avvio in sospeso** ("Avvio in sospeso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stop_Pending"></span><span id="stop_pending"></span><span id="STOP_PENDING"></span>
 
-**Arresta in sospeso** ("arresta in sospeso")
+**Arresta in sospeso** ("Arresta in sospeso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**In esecuzione** ("Running")
+**In** esecuzione ("In esecuzione")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Continue_Pending"></span><span id="continue_pending"></span><span id="CONTINUE_PENDING"></span>
 
-**Continua in sospeso** ("continua in sospeso")
+**Continua in sospeso** ("Continua in sospeso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pause_Pending"></span><span id="pause_pending"></span><span id="PAUSE_PENDING"></span>
 
-**Sospensione in sospeso** ("pausa in sospeso")
+**Sospendi in** sospeso ("Sospendi in sospeso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-**Sospesa** ("sospesa")
+**Paused** ("Paused")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> </dl>
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà è di sola lettura prima di Windows 7 e Windows Server 2008 R2.
+**Windows Server 2008 e Windows Vista:** Questa proprietà è di sola lettura prima Windows 7 e Windows Server 2008 R2.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 I valori possibili sono:
 
@@ -768,77 +768,77 @@ I valori possibili sono:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -848,96 +848,96 @@ Ridotto **("danneggiato"** )
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome classe di sistema ")
-</dt> </dl>
-
-Nome del tipo di sistema che ospita il servizio.
-
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
-
-</dd> <dt>
-
-**SystemName**
-</dt> <dd> <dl> <dt>
-
-Tipo di dati: **String**
-</dt> <dt>
-
-Tipo di accesso: sola lettura
-</dt> <dt>
-
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**Nome**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome sistema ")
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
 </dt> </dl>
 
 Nome del sistema che ospita il servizio.
 
-Questa proprietà viene ereditata [**dal \_ servizio CIM**](cim-service.md).
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
+
+</dd> <dt>
+
+**Systemname**
+</dt> <dd> <dl> <dt>
+
+Tipo di dati: **string**
+</dt> <dt>
+
+Tipo di accesso: sola lettura
+</dt> <dt>
+
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
+</dt> </dl>
+
+Nome del sistema che ospita il servizio.
+
+Questa proprietà viene ereditata dal [**servizio CIM \_**](cim-service.md).
 
 </dd> <dt>
 
 **TagId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**query \_ Service \_ config**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("ID tag")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tag Id")
 </dt> </dl>
 
-Valore di tag univoco per il servizio nel gruppo. Il valore 0 (zero) indica che il servizio non dispone di un tag. Un tag può essere usato per ordinare l'avvio del servizio all'interno di un gruppo di ordini di caricamento specificando un vettore di ordine dei tag nel registro di sistema che si trova in:
+Valore di tag univoco per questo servizio nel gruppo. Il valore 0 (zero) indica che il servizio non dispone di un tag . È possibile usare un tag per ordinare l'avvio del servizio all'interno di un gruppo di ordini di caricamento specificando un vettore di ordine dei tag nel registro che si trova in:
 
-**HKEY \_ Controllo CurrentControlSet del sistema del \_ computer locale** \\  \\  \\  \\ **GroupOrderList**    
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **GroupOrderList**    
 
-I tag vengono valutati solo per i servizi del tipo di avvio del driver del kernel e del driver del file System con modalità avvio o sistema.
+I tag vengono valutati solo per i servizi del tipo di avvio del driver del kernel e del driver del file system con modalità di avvio o di avvio del sistema.
 
-Questa proprietà viene ereditata da [**Win32 \_ BaseService**](win32-baseservice.md).
+Questa proprietà viene ereditata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **WaitHint**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWaitHint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("tempo di attesa stimato")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture del servizio Win32API \| SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWaitHint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tempo di attesa stimato")
 </dt> </dl>
 
-Tempo stimato necessario, in millisecondi, per un'operazione di avvio, arresto, sospensione o continuazione in sospeso. Dopo che è trascorso il tempo specificato, il servizio effettua la chiamata successiva al metodo **SetServiceStatus** con un valore di **Checkpoint** incrementato o una modifica in **CurrentState**. Se la quantità di tempo specificata da **WaitHint** passa e il **Checkpoint** non è stato incrementato oppure **CurrentState** non è stato modificato, gestione controllo servizi o il programma di controllo del servizio presuppone che si sia verificato un errore.
+Tempo stimato necessario, in millisecondi, per un'operazione di avvio, arresto, sospensione o continuazione in sospeso. Dopo che è trascorso il tempo specificato, il servizio effettua la chiamata successiva al metodo **SetServiceStatus** con un valore **CheckPoint** incrementato o una modifica in **CurrentState.** Se il tempo specificato da **WaitHint** passa e **CheckPoint** non è stato incrementato o **CurrentState** non è stato modificato, gestione controllo servizi o programma di controllo del servizio presuppone che si sia verificato un errore.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe del **\_ servizio Win32** è derivata da [**Win32 \_ BaseService**](win32-baseservice.md).
+La **classe \_ del servizio Win32** è derivata da [**Win32 \_ BaseService.**](win32-baseservice.md)
 
-La modalità di gestione di un computer specifico dipende in larga misura dal ruolo svolto dal computer. Ad esempio, in genere si monitorano diversi aspetti di un server DNS rispetto a un server DHCP. Sebbene nessuna singola proprietà possa indicare se un determinato computer è un server di database, un server di posta elettronica o un server multimediale, è spesso possibile identificare il ruolo riprodotto da un computer identificando i servizi installati.
+Il modo in cui si gestisce un computer specifico dipende notevolmente dal ruolo del computer. Ad esempio, in genere si monitorano aspetti diversi di un server DNS rispetto a un server DHCP. Anche se nessuna singola proprietà può indicare se un computer specifico è un server di database, un server di posta elettronica o un server multimediale, è spesso possibile identificare il ruolo di un computer identificando i servizi installati.
 
-Nelle organizzazioni di grandi dimensioni è probabile che sia installato solo uno dei principali servizi, ad esempio la posta elettronica, in un singolo computer. Sarebbe insolito che un server di posta venga eseguito anche come server per i file di Microsoft® Windows Media® Technologies Player. Per questo motivo, l'identificazione di un servizio installato in un computer può consentire di identificare il ruolo del computer nella rete. Se il servizio Microsoft® Exchange Server è installato e in esecuzione in un computer, è in genere preferibile che questo computer funzioni come server di posta elettronica.
+Nelle organizzazioni di grandi dimensioni è probabile che in un singolo computer sia installato solo uno dei servizi principali, ad esempio la posta elettronica. Sarebbe insolito che un server di posta elettronica funzioni anche come server per i file del lettore microsoft® Windows Media® Technologies. Per questo scopo, l'identificazione di un servizio installato in un computer consente di identificare il ruolo del computer nella rete. Se il servizio Microsoft® Exchange Server è installato e in esecuzione in un computer, è in genere possibile presupporre che il computer funzioni come server di posta elettronica.
 
-È possibile utilizzare la classe **del \_ servizio WMI Win32** per enumerare i servizi installati in un computer. Inoltre, è possibile usare questa classe per determinare se i servizi sono attualmente in esecuzione e per restituire qualsiasi altra informazione necessaria su tale servizio e su come è stato configurato.
+È possibile utilizzare la classe **Wmi Win32 \_ Service** per enumerare i servizi installati in un computer. Inoltre, è possibile utilizzare questa classe per determinare se tali servizi sono attualmente in esecuzione e per restituire eventuali altre informazioni necessarie su tale servizio e su come è stato configurato.
 
-Un'applicazione di servizio è conforme alle regole di interfaccia di gestione controllo servizi e può essere avviata automaticamente da un utente all'avvio del sistema tramite l'utilità pannello di controllo dei servizi o da un'applicazione che usa le funzioni del servizio incluse nell'API Windows. I servizi possono essere avviati quando nessun utente è connesso al computer.
+Un'applicazione di servizio è conforme alle regole di interfaccia di Gestione controllo servizi e può essere avviata automaticamente da un utente all'avvio del sistema tramite l'utilità del Pannello di controllo Servizi o da un'applicazione che usa le funzioni del servizio incluse nell'API Windows. I servizi possono essere avviati quando non sono presenti utenti connessi al computer.
 
-Per poter enumerare questa classe, è necessario che un utente che si connette da un computer remoto disponga del privilegio **\_ \_ Gestione SC** . Per ulteriori informazioni, vedere [sicurezza del servizio e diritti di accesso](../services/service-security-and-access-rights.md).
+Per poter enumerare questa classe, un utente che si connette da un computer remoto deve avere il privilegio **SC \_ MANAGER \_ CONNECT** abilitato. Per altre informazioni, vedere Sicurezza [del servizio e diritti di accesso.](../services/service-security-and-access-rights.md)
 
 ## <a name="examples"></a>Esempio
 
-La [query PS-WMI che restituisce il servizio "stato" in un gruppo di dispositivi esempio di](https://Gallery.TechNet.Microsoft.Com/0f1ab629-d463-4406-be54-ec2c4c23bc1f) PowerShell nella raccolta TechNet usa il **\_ servizio Win32** per creare un elenco di dispositivi da Active Directory, quindi esegue una query su ogni dispositivo che risponde con pingfor a un servizio specifico in esecuzione.
+La query [WMI ps-che](https://Gallery.TechNet.Microsoft.Com/0f1ab629-d463-4406-be54-ec2c4c23bc1f) restituisce il servizio 'State' in un gruppo di dispositivi di esempio di PowerShell nella raccolta TechNet usa il servizio **\_ Win32** per creare un elenco di dispositivi da Active Directory e quindi eseguire una query su ogni dispositivo che risponde con ping per un servizio specifico in esecuzione.
 
-L'esempio di PowerShell per il [report del server](https://Gallery.TechNet.Microsoft.Com/Server-Report-7b4ac2fb) nella raccolta TechNet usa il **\_ servizio Win32** per raccogliere le informazioni sul server e pubblicarle nel documento di Word.
+[L'esempio di](https://Gallery.TechNet.Microsoft.Com/Server-Report-7b4ac2fb) PowerShell server report nella raccolta TechNet usa il servizio **Win32 \_** per raccogliere informazioni sul server e pubblicare nel documento di Word.
 
 Nell'esempio di codice VBScript seguente vengono visualizzati tutti i servizi attualmente installati.
 
@@ -968,7 +968,7 @@ next
 
 
 
-Nell'esempio di codice VBScript seguente vengono descritti i servizi sospesi, in esecuzione e interrotti nel computer specificato.
+Nell'esempio di codice VBScript seguente vengono descritti i servizi sospesi, in esecuzione e arrestati nel computer specificato.
 
 
 ```VB
@@ -992,7 +992,7 @@ Next
 
 
 
-Nello script Perl seguente viene illustrato come recuperare un elenco di servizi in esecuzione da istanze **del \_ servizio Win32**.
+Lo script Perl seguente illustra come recuperare un elenco di servizi in esecuzione dalle istanze del **servizio Win32. \_**
 
 
 ```
@@ -1030,7 +1030,7 @@ else
 
 
 
-Nell'esempio c seguente \# viene usato [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) per recuperare tutti i servizi in esecuzione nel computer locale.
+L'esempio c \# seguente [usa Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) per recuperare tutti i servizi in esecuzione nel computer locale.
 
 
 ```CSharp
@@ -1058,10 +1058,10 @@ static void QueryInstanceFunc()
 
 
 
-Nell' \# esempio di codice C seguente viene usato lo spazio dei nomi [System. Management](/dotnet/api/system.management) per recuperare tutti i servizi in esecuzione nel computer locale.
+Nell'esempio di codice C \# seguente viene utilizzato lo spazio dei nomi [System.Management](/dotnet/api/system.management) per recuperare tutti i servizi in esecuzione nel computer locale.
 
 > [!Note]  
-> [System. Management](/dotnet/api/system.management) contiene le classi originali utilizzate per accedere a WMI. Tuttavia, sono considerate più lente e in genere non vengono ridimensionate, nonché le controparti [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) .
+> [System.Management contiene](/dotnet/api/system.management) le classi originali usate per accedere a WMI. Tuttavia, sono considerati più lenti e in genere non vengono ridimensionati come le controparti [di Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85))
 
  
 
@@ -1102,7 +1102,7 @@ using System.Management;
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1111,7 +1111,7 @@ using System.Management;
 
 <dl> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

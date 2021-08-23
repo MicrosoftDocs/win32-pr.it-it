@@ -1,23 +1,23 @@
 ---
 description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Norvegia.
 ms.assetid: 5c274035-79aa-4967-9c1a-79f888fed71e
-title: Assegnazioni canale Norvegia
+title: Assegnazioni di canali per la Norvegia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1911f4212b49784354f36377832af58bf4c46121
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc95f6531e02bf1c4eec3e736c78d81f0aafabdada32256ab3e22c50072a9619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684581"
 ---
-# <a name="norway-channel-assignments"></a>Assegnazioni canale Norvegia
+# <a name="norway-channel-assignments"></a>Assegnazioni di canali per la Norvegia
 
 Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Norvegia.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era stata usata la tabella di frequenza unicable.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Assegnazioni di cavi
 
@@ -138,7 +138,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analoga internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

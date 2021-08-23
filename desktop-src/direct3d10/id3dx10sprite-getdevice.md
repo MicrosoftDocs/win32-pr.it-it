@@ -1,7 +1,7 @@
 ---
-description: Recuperare il dispositivo associato all'oggetto Sprite.
+description: Recuperare il dispositivo associato all'oggetto sprite.
 ms.assetid: 9119b232-22c8-4b05-b584-ce176370ca97
-title: 'Metodo ID3DX10Sprite:: GetDevice (D3DX10. h)'
+title: Metodo ID3DX10Sprite::GetDevice (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d4e7a3c6ebfcbcb83aaaed6273ea321b33a44ce1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 13513b6fcd2bdb952eda17f10cc81406ff484a20dce3f690d43dd3b5c28eb08f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634251"
 ---
-# <a name="id3dx10spritegetdevice-method"></a>Metodo ID3DX10Sprite:: GetDevice
+# <a name="id3dx10spritegetdevice-method"></a>Metodo ID3DX10Sprite::GetDevice
 
-Recuperare il dispositivo associato all'oggetto Sprite.
+Recuperare il dispositivo associato all'oggetto sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetDevice(
 
 <dl> <dt>
 
-*ppDevice* \[ out\]
+*ppDevice* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\*\***
 
-Indirizzo di un puntatore a un'interfaccia ID3D10Device, che rappresenta l'oggetto dispositivo Direct3D associato all'oggetto Sprite.
+Indirizzo di un puntatore a un'interfaccia ID3D10Device, che rappresenta l'oggetto dispositivo Direct3D associato all'oggetto sprite.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Indirizzo di un puntatore a un'interfaccia ID3D10Device, che rappresenta l'ogget
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
@@ -65,8 +65,8 @@ La chiamata a questo metodo aumenterà il conteggio dei riferimenti interni nell
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

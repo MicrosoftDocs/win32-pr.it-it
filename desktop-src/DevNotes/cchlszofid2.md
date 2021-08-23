@@ -1,7 +1,7 @@
 ---
 description: Decodifica e archivia una stringa.
 ms.assetid: 6ababd6e-57b7-49eb-98c9-a4bcb558a377
-title: CchLszOfId2 (funzione)
+title: Funzione CchLszOfId2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Msjint40.dll
-ms.openlocfilehash: cba2d09f9865c43a5b64a34783c621c783c7aac3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0377b8507507b40c5b17c3d9bb6861e5077f8c7bb763b51c66289ab1819f9cc7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815471"
 ---
-# <a name="cchlszofid2-function"></a>CchLszOfId2 (funzione)
+# <a name="cchlszofid2-function"></a>Funzione CchLszOfId2
 
 Decodifica e archivia una stringa.
 
@@ -48,17 +48,17 @@ Identificatore della stringa nel file di risorse da decodificare e archiviare. L
 
 </dd> <dt>
 
-*LSZ* 
+*Lsz* 
 </dt> <dd>
 
-Puntatore a un buffer con una lunghezza di *cbmax*. Le stringhe più lunghe di *cbmax* vengono troncate.
+Puntatore a un buffer con lunghezza *cbmax*. Le stringhe più lunghe di *cbmax* vengono troncate.
 
 </dd> <dt>
 
 *cbmax* 
 </dt> <dd>
 
-Lunghezza massima della stringa da archiviare nel parametro *LSZ* .
+Lunghezza massima della stringa da archiviare nel *parametro lsz.*
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Questa funzione restituisce la stringa decodificata.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

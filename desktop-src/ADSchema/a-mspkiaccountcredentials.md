@@ -1,6 +1,6 @@
 ---
-title: attributo ms-PKI-AccountCredentials
-description: Archiviazione di BLOB di token di credenziali utente crittografati per il roaming. | attributo ms-PKI-AccountCredentials
+title: Attributo ms-PKI-AccountCredentials
+description: Archiviazione blob di token delle credenziali utente crittografati per il roaming. | Attributo ms-PKI-AccountCredentials
 ms.assetid: 08df5c7d-3aae-4cff-97df-25da6995c72e
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76fb96e598b156ba5940bfb75bbfdb628f777353
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: dbba37bf220cb35bfc1aa26d4a59948539ccaec117240387ca6481bbd6388818
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802878"
 ---
-# <a name="ms-pki-accountcredentials-attribute"></a>attributo ms-PKI-AccountCredentials
+# <a name="ms-pki-accountcredentials-attribute"></a>Attributo ms-PKI-AccountCredentials
 
-Archiviazione di BLOB di token di credenziali utente crittografati per il roaming.
+Archiviazione blob di token delle credenziali utente crittografati per il roaming.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------|
 | CN                | ms-PKI-AccountCredentials                       |
-| LDAP-Display-Name | msPKIAccountCredentials                         |
+| Ldap-Display-Name | msPKIAccountCredentials                         |
 | Dimensione              | \-                                              |
-| Privilegio aggiornamento  | \-                                              |
+| Aggiorna privilegio  | \-                                              |
 | Frequenza di aggiornamento  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1894                         |
-| System-ID-GUID    | b8dfa744-31dc-4ef1-ac7c-84baf7ef9da7            |
+| System-Id-Guid    | b8dfa744-31dc-4ef1-ac7c-84baf7ef9da7            |
 | Sintassi            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
@@ -55,15 +55,15 @@ Archiviazione di BLOB di token di credenziali utente crittografati per il roamin
 | ID collegamento                | 2048                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Archiviazione di BLOB di token di credenziali utente crittografati per il roamin
 | ID collegamento                | 2048                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Archiviazione di BLOB di token di credenziali utente crittografati per il roamin
 | ID collegamento                | 2048                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

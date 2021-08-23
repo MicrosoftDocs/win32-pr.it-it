@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Queue-type-attributo
+title: Attributo MSMQ-Queue-Type
 description: GUID che descrive il tipo di servizio fornito dalla coda.
 ms.assetid: 97804ba5-f42a-44d4-806a-f5974c292528
 ms.tgt_platform: multiple
 keywords:
-- Schema AD di attributo MSMQ-Queue-Type
+- Schema AD dell'attributo MSMQ-Queue-Type
 - Schema AD dell'attributo mSMQQueueType
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c56db29261be81cae388a089d0768840bb15e28
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5071b78069fd210a4141a27195aaf248f262cf2034d1c97ffe141a8aceaf2fdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762131"
 ---
-# <a name="msmq-queue-type-attribute"></a>MSMQ-Queue-type-attributo
+# <a name="msmq-queue-type-attribute"></a>Attributo MSMQ-Queue-Type
 
 GUID che descrive il tipo di servizio fornito dalla coda.
 
@@ -30,12 +30,12 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Queue-Type                                       |
-| LDAP-Display-Name | mSMQQueueType                                         |
+| Ldap-Display-Name | mSMQQueueType                                         |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.917                                |
-| System-ID-GUID    | 9a0dc320-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc320-c100-11d1-nette5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ GUID che descrive il tipo di servizio fornito dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Vero                                         |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 

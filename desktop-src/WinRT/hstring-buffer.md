@@ -1,19 +1,19 @@
 ---
-description: Handle per un buffer di stringa modificabile che è possibile utilizzare per creare un HSTRING.
+description: Handle per un buffer di stringa modificabile che è possibile usare per creare un oggetto HSTRING.
 ms.assetid: D173CE70-ABF3-4703-A229-0753F2AF6F70
-title: HSTRING_BUFFER (HSTRING. h)
+title: HSTRING_BUFFER (Hstring.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d70b961d442739e084e3b17d5666653c103cc35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f115ca18b4bf5b81bbd7004259aa525517c05a3adc0f6376f7d16df3e3ce679
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733821"
 ---
-# <a name="hstring_buffer"></a>\_buffer HString
+# <a name="hstring_buffer"></a>HSTRING \_ BUFFER
 
-Handle per un buffer di stringa modificabile che è possibile utilizzare per creare un [**HString**](hstring.md).
+Handle per un buffer di stringa modificabile che è possibile usare per creare un [**oggetto HSTRING.**](hstring.md)
 
 
 ```C++
@@ -24,9 +24,9 @@ typedef HANDLE HSTRING_BUFFER;
 
 ## <a name="remarks"></a>Commenti
 
-**HString \_ Il BUFFER** rappresenta un buffer di stringa che è possibile modificare prima di convertirlo in un [**HString**](hstring.md)non modificabile.
+**HSTRING \_ BUFFER** rappresenta un buffer di stringa che è possibile modificare prima di convertirlo in una [**HSTRING non modificabile.**](hstring.md)
 
-Chiamare la funzione [**WindowsPreallocateStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspreallocatestringbuffer) per creare un **\_ buffer HString**. Chiamare [**WindowsPromoteStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspromotestringbuffer) per convertire un **\_ buffer HString** in un [**HString**](hstring.md)non modificabile.
+Chiamare la [**funzione WindowsPreallocateStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspreallocatestringbuffer) per creare **un buffer HSTRING \_**. Chiamare [**WindowsPromoteStringBuffer per**](/windows/win32/api/winstring/nf-winstring-windowspromotestringbuffer) convertire **un buffer HSTRING \_** in un [**HSTRING non modificabile.**](hstring.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,7 +36,7 @@ Chiamare la funzione [**WindowsPreallocateStringBuffer**](/windows/win32/api/win
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>HSTRING. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Hstring.h</dt> </dl> |
 
 
 

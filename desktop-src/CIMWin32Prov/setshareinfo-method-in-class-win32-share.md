@@ -2,7 +2,7 @@
 description: SetShareInfo&\# 8194; Il metodo della classe WMI imposta i parametri di una risorsa condivisa.
 ms.assetid: f6379261-9325-4b7f-92df-438c5029569f
 ms.tgt_platform: multiple
-title: Metodo SetShareInfo della classe Win32_Share
+title: Metodo SetShareInfo della Win32_Share classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 54b599ed3124c0d06468bd15589d6aa8a93fb7c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fb9ee76a0b8336ccdca90a04ee3c2a223b7269a30a00276418d6c46a8bb3abc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800901"
 ---
-# <a name="setshareinfo-method-of-the-win32_share-class"></a>Metodo SetShareInfo della classe di \_ condivisione Win32
+# <a name="setshareinfo-method-of-the-win32_share-class"></a>Metodo SetShareInfo della classe Win32 \_ Share
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetShareInfo** imposta i parametri di una risorsa condivisa.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetShareInfo** imposta i parametri di una risorsa condivisa.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ uint32 SetShareInfo(
 *MaximumAllowed* \[ in, facoltativo\]
 </dt> <dd>
 
-Limite per il numero massimo di utenti che possono usare questa risorsa contemporaneamente.
+Limite al numero massimo di utenti autorizzati a usare questa risorsa contemporaneamente.
 
 Esempio: 10. Questo parametro è facoltativo.
 
 </dd> <dt>
 
-*Descrizione* \[ di in, facoltativo\]
+*Descrizione* \[ in, facoltativo\]
 </dt> <dd>
 
 Commento facoltativo per descrivere la risorsa condivisa.
 
 </dd> <dt>
 
-*Accesso* \[ a in, facoltativo\]
+*Accesso* \[ in, facoltativo\]
 </dt> <dd>
 
-Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descrittore di sicurezza contiene informazioni sulle funzionalità di autorizzazione, proprietario e accesso della risorsa. Per ulteriori informazioni, vedere [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+Descrittore di sicurezza per le autorizzazioni a livello di utente. Un descrittore di sicurezza contiene informazioni sulle funzionalità di autorizzazione, proprietario e accesso della risorsa. Per altre informazioni, vedere [**Win32 \_ SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Accesso negato** (2)
@@ -88,7 +88,7 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Livello non valido** (10)
 </dt> <dt>
 
-**Parametro non valido** (21)
+**Parametro non** valido (21)
 </dt> <dt>
 
 **Condivisione duplicata** (22)
@@ -97,10 +97,10 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Percorso reindirizzato** (23)
 </dt> <dt>
 
-**Dispositivo o directory sconosciuta** (24)
+**Dispositivo o directory sconosciuto** (24)
 </dt> <dt>
 
-**Nome NET non trovato** (25)
+**Nome di rete non trovato** (25)
 </dt> <dt>
 
 **Altro** (26 4294967295)
@@ -108,13 +108,13 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo **SetShareInfo** è un metodo di oggetto dinamico e viene usato su un'occorrenza di questa classe.
+**Il metodo SetShareInfo** è un metodo oggetto dinamico e viene usato in un'occorrenza di questa classe.
 
-Solo i membri del gruppo locale Administrators o account Operators o quelli con appartenenza a gruppi di operatori di comunicazione, stampa o server possono eseguire correttamente **SetShareInfo**. L'operatore Print può impostare solo le code della stampante. L'operatore di comunicazione può impostare solo le code del dispositivo di comunicazione.
+Solo i membri del gruppo locale Administrators o Account Operators o quelli con appartenenza al gruppo operatore Communication, Print o Server possono eseguire **correttamente SetShareInfo**. L'operatore print può impostare solo code di stampa. L'operatore Communication può impostare solo le code dei dispositivi di comunicazione.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di PowerShell seguente aggiorna il nome della condivisione **newShare** .
+L'esempio di PowerShell seguente aggiorna il nome della **condivisione newShare.**
 
 
 ```PowerShell
@@ -133,7 +133,7 @@ $newShare = Get-WmiObject win32_share | Where-Object {$_.name -eq "newShare"}
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -145,7 +145,7 @@ $newShare = Get-WmiObject win32_share | Where-Object {$_.name -eq "newShare"}
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Condivisione Win32**](win32-share.md)
+[**Condivisione \_ Win32**](win32-share.md)
 </dt> </dl>
 
  

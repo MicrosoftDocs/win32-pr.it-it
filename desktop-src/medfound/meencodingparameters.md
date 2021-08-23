@@ -1,29 +1,29 @@
 ---
-description: Inviato dalla pipeline al codificatore MFTs seriale con esempi di supporti tramite IMFTransform::P rocessEvent.
+description: Inviato dalla pipeline al codificatore MFT in modo seriale con esempi multimediali tramite IMFTransform::P rocessEvent.
 ms.assetid: D5D4544B-CD8D-4C94-B050-7BA1944800CC
-title: Evento MEEncodingParameters (Mfobjects. h)
+title: Evento MEEncodingParameters (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e193044b25eb1d333182a2593fcf2248fba2366
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2230640adf1f92111569a39558f2959271a23ea2b5dbe5d0d915b6a2b989d371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723831"
 ---
-# <a name="meencodingparameters-event"></a>Evento MEEncodingParameters
+# <a name="meencodingparameters-event"></a>EVENTO MEEncodingParameters
 
-Inviato dalla pipeline al codificatore MFTs seriale con esempi di supporti tramite [**IMFTransform::P rocessevent**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent).
+Inviato dalla pipeline al codificatore MFT in modo seriale con esempi multimediali tramite [**IMFTransform::P rocessEvent**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent).
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -35,13 +35,13 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                         | Descrizione                                                                                                                    |
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)<br/> | Contiene le nuove impostazioni basate su ICodecAPI che il codificatore deve applicare ai successivi esempi in arrivo.<br/> <br/> |
+| [**Attributi IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)<br/> | Contiene le nuove impostazioni basate su ICodecAPI che il codificatore deve applicare agli esempi in ingresso successivi.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il payload dell'evento è un archivio di attributi (puntatore IMFAttributes) che contiene le nuove impostazioni basate su ICodecAPI///che il codificatore deve applicare ai successivi esempi in arrivo.
+Il payload dell'evento è un archivio attributi (puntatore IMFAttributes) che contiene le nuove impostazioni /// basate su ICodecAPI che il codificatore deve applicare agli esempi in ingresso successivi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Il payload dell'evento è un archivio di attributi (puntatore IMFAttributes) che
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                  |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                             |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                  |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Il payload dell'evento è un archivio di attributi (puntatore IMFAttributes) che
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

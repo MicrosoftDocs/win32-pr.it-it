@@ -1,6 +1,6 @@
 ---
-title: Metodo SetProperty IBackgroundCopyFile5 (Deliveryoptimization. h)
-description: Imposta una proprietà generica di un trasferimento di file di ottimizzazione recapito.
+title: Metodo SetProperty IBackgroundCopyFile5 (Deliveryoptimization.h)
+description: Imposta una proprietà generica di un Ottimizzazione recapito trasferimento di file di tipo do.
 ms.assetid: 63B6806E-47D6-49B0-9867-628C110540D0
 keywords:
 - Metodo SetProperty
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f519ee77af0ae6e0c3d1d036aeeb6a8ad712870
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 10da7fff9066ccefe7c356e3577ffffe7b0fc2e89d5fdb3f74611f5621d5b757
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755601"
 ---
-# <a name="ibackgroundcopyfile5setproperty-method"></a>Metodo IBackgroundCopyFile5:: SetProperty
+# <a name="ibackgroundcopyfile5setproperty-method"></a>Metodo IBackgroundCopyFile5::SetProperty
 
-Imposta una proprietà generica di un trasferimento di file di ottimizzazione recapito.
+Imposta una proprietà generica di un Ottimizzazione recapito trasferimento di file di tipo do.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,23 +44,23 @@ HRESULT SetProperty(
 
 <dl> <dt>
 
-*PropertyId* \[ in\]
+*PropertyId* \[ Pollici\]
 </dt> <dd>
 
 Specifica la proprietà da impostare.
 
 </dd> <dt>
 
-*ProertyValue* \[ out\]
+*ProertyValue* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un'Unione che specifica il valore da impostare. Viene usato il membro dell'Unione appropriato per l'ID di proprietà.
+Puntatore a un'unione che specifica il valore da impostare. Viene utilizzato il membro di unione appropriato per l'ID proprietà.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,13 +68,13 @@ Se questo metodo ha esito positivo, restituisce **S_OK**. In caso contrario, res
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyFile5 viene definito come 85C1657F-DAFC-40E8-8834-DF18EA25717E<br/>             |
+| IID<br/>                      | IID_IBackgroundCopyFile5 è definito come 85C1657F-DAFC-40E8-8834-DF18EA25717E<br/>             |
 
 
 
@@ -85,7 +85,7 @@ Se questo metodo ha esito positivo, restituisce **S_OK**. In caso contrario, res
 [**IBackgroundCopyFile5**](ibackgroundcopyfile5.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile5. GetProperty**](ibackgroundcopyfile5-getproperty.md)
+[**IBackgroundCopyFile5.GetProperty**](ibackgroundcopyfile5-getproperty.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Inviato a un'applicazione quando la finestra IME non trova alcuno spazio per estendere l'area per la finestra di composizione. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+description: Inviato a un'applicazione quando la finestra IME non trova spazio per estendere l'area per la finestra di composizione. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: d81d6438-c470-4ae5-8016-8d816bcba9b8
-title: Messaggio WM_IME_COMPOSITIONFULL (winuser. h)
+title: WM_IME_COMPOSITIONFULL messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f33051ac3e4e893eb803d4b13d7bfbf53751258b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 954a5f91283ca5c4944c274d422508ef0b91b55b8acc34f790cf446f93a598ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811491"
 ---
-# <a name="wm_ime_compositionfull-message"></a>\_ \_ Messaggio COMPOSITIONFULL di WM IME
+# <a name="wm_ime_compositionfull-message"></a>Messaggio WM \_ IME \_ COMPOSITIONFULL
 
-Inviato a un'applicazione quando la finestra IME non trova alcuno spazio per estendere l'area per la finestra di composizione. Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Inviato a un'applicazione quando la finestra IME non trova spazio per estendere l'area per la finestra di composizione. Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -29,19 +29,19 @@ LRESULT CALLBACK WindowProc(
 
 ## <a name="parameters"></a>Parametri
 
-Questo messaggio non contiene parametri.
+Questo messaggio non ha parametri.
 
 <dl></dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare il comando [IMC \_ SETCOMPOSITIONWINDOW](imc-setcompositionwindow.md) per specificare la modalità di visualizzazione della finestra.
+L'applicazione deve usare [il comando \_ IMC SETCOMPOSITIONWINDOW](imc-setcompositionwindow.md) per specificare la modalità di visualizzazione della finestra.
 
-La finestra IME, anziché l'IME, invia questo messaggio di notifica tramite la funzione [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) .
+La finestra IME, anziché l'IME, invia questo messaggio di notifica dalla [**funzione SendMessage.**](/windows/win32/api/winuser/nf-winuser-sendmessage)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ La finestra IME, anziché l'IME, invia questo messaggio di notifica tramite la f
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ La finestra IME, anziché l'IME, invia questo messaggio di notifica tramite la f
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Messaggi di gestione metodo di input](input-method-manager-messages.md)
+[Messaggi di Gestione metodo di input](input-method-manager-messages.md)
 </dt> <dt>
 
-[\_SETCOMPOSITIONWINDOW IMC](imc-setcompositionwindow.md)
+[IMC \_ SETCOMPOSITIONWINDOW](imc-setcompositionwindow.md)
 </dt> </dl>
 
  

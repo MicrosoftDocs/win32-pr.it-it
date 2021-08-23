@@ -1,11 +1,11 @@
 ---
-title: attributo MS-RADIUS-FramedInterfaceId
-description: Indica l'identificatore di interfaccia IPv6 da configurare per l'utente. | attributo MS-RADIUS-FramedInterfaceId
+title: Attributo ms-RADIUS-FramedInterfaceId
+description: Indica l'identificatore di interfaccia IPv6 da configurare per l'utente. | Attributo ms-RADIUS-FramedInterfaceId
 ms.assetid: a686f5d6-762b-4477-9fea-0b14288e8c6a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-RADIUS-FramedInterfaceId
-- msRADIUS-schema AD attributo FramedInterfaceId
+- Schema AD dell'attributo ms-RADIUS-FramedInterfaceId
+- Schema AD dell'attributo msRADIUS-FramedInterfaceId
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3ece0fc360e39bc82cd3f6059e04d2cc2e0cee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c5e80c16ce79dd54f75920b1b079793b5143546cda0445cd2f3cc0ea05b8972d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761661"
 ---
-# <a name="ms-radius-framedinterfaceid-attribute"></a>attributo MS-RADIUS-FramedInterfaceId
+# <a name="ms-radius-framedinterfaceid-attribute"></a>Attributo ms-RADIUS-FramedInterfaceId
 
 Indica l'identificatore di interfaccia IPv6 da configurare per l'utente.
 
@@ -29,13 +29,13 @@ Indica l'identificatore di interfaccia IPv6 da configurare per l'utente.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-RADIUS-FramedInterfaceId          |
-| LDAP-Display-Name | msRADIUS-FramedInterfaceId           |
+| CN                | ms-RADIUS-FramedInterfaceId          |
+| Ldap-Display-Name | msRADIUS-FramedInterfaceId           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1913              |
-| System-ID-GUID    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
+| System-Id-Guid    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Indica l'identificatore di interfaccia IPv6 da configurare per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Indica l'identificatore di interfaccia IPv6 da configurare per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Indica l'identificatore di interfaccia IPv6 da configurare per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

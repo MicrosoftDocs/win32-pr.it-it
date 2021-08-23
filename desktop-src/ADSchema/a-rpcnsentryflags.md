@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-entry-Flags
-description: Flag che indica che la voce RPC NS è stata creata in modo esplicito.
+title: Attributo rpc-Ns-Entry-Flags
+description: Flag per indicare che la voce NS RPC è stata creata in modo esplicito.
 ms.assetid: a8339920-778a-4539-b65d-c575eb047d18
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-entry-Flags
+- Schema AD dell'attributo rpc-Ns-Entry-Flags
 - Schema AD dell'attributo rpcNsEntryFlags
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c5cfd4f6879126337c18c8af300db91d3b774f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e95d00a75dddd0eb0dc3cd57b38751a960e332ec30244bf5b0216c32c17f63e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837081"
 ---
-# <a name="rpc-ns-entry-flags-attribute"></a>attributo RPC-NS-entry-Flags
+# <a name="rpc-ns-entry-flags-attribute"></a>Attributo rpc-Ns-Entry-Flags
 
-Flag che indica che la voce RPC NS è stata creata in modo esplicito.
+Flag per indicare che la voce NS RPC è stata creata in modo esplicito.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | RPC-NS-entry-Flags                   |
-| LDAP-Display-Name | rpcNsEntryFlags                      |
+| CN                | rpc-Ns-Entry-Flags                   |
+| Ldap-Display-Name | rpcNsEntryFlags                      |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.754               |
-| System-ID-GUID    | 80212841-4bdc-11d1-a9c4-0000f80367c1 |
+| System-Id-Guid    | 80212841-4bdc-11d1-a9c4-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Flag che indica che la voce RPC NS è stata creata in modo esplicito.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Server RPC**](c-rpcserver.md)<br/> |
+| Classi usate in        | [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 

@@ -4,23 +4,23 @@ description: Specifica un set di funzionalità che è possibile impostare nel se
 ms.assetid: dbbc7c13-ad8a-461d-9d2e-c454bf4b9dea
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà PerformanceFlags
-- Servizi Desktop remoto proprietà PerformanceFlags, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà PerformanceFlags
+- Proprietà PerformanceFlags Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà PerformanceFlags
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1731afc6d58cede5da055da8cacaf11c8712d3c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18fcbdb3acd6dab33ab6adbaa6a4f94030e394252f30ebed171e4f37d7fbd2ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796341"
 ---
-# <a name="imsrdpclientadvancedsettingsperformanceflags-property"></a>IMsRdpClientAdvancedSettings::P proprietà erformanceFlags
+# <a name="imsrdpclientadvancedsettingsperformanceflags-property"></a>Proprietà IMsRdpClientAdvancedSettings::P erformanceFlags
 
 Specifica un set di funzionalità che è possibile impostare nel server per migliorare le prestazioni.
 
@@ -84,13 +84,13 @@ HRESULT get_PerformanceFlags(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovi flag. Il valore predefinito è 0 (le **prestazioni di Servizi terminal \_ \_ \_ non sono valide**).
+Nuovi flag. Il valore predefinito è 0 (**TS \_ PERF \_ DISABLE \_ NOTHING**).
 
 <dt>
 
 <span id="TS_PERF_DISABLE_NOTHING"></span><span id="ts_perf_disable_nothing"></span>
 
-<span id="TS_PERF_DISABLE_NOTHING"></span><span id="ts_perf_disable_nothing"></span>**Servizi terminal \_ \_ \_ Non disabilitare le prestazioni** (0x00000000)
+<span id="TS_PERF_DISABLE_NOTHING"></span><span id="ts_perf_disable_nothing"></span>**TS \_ PERF \_ DISABLE \_ NOTHING** (0x00000000)
 
 
 </dt> <dd>
@@ -101,7 +101,7 @@ Nessuna funzionalità è disabilitata.
 
 <span id="TS_PERF_DISABLE_WALLPAPER"></span><span id="ts_perf_disable_wallpaper"></span>
 
-<span id="TS_PERF_DISABLE_WALLPAPER"></span><span id="ts_perf_disable_wallpaper"></span>**Servizi terminal \_ \_ \_ Sfondo prestazioni disabilitato** (0x00000001)
+<span id="TS_PERF_DISABLE_WALLPAPER"></span><span id="ts_perf_disable_wallpaper"></span>**TS \_ PERF \_ DISABLE \_ WALLPAPER** (0X00000001)
 
 
 </dt> <dd>
@@ -112,29 +112,29 @@ Lo sfondo sul desktop non viene visualizzato.
 
 <span id="TS_PERF_DISABLE_FULLWINDOWDRAG"></span><span id="ts_perf_disable_fullwindowdrag"></span>
 
-<span id="TS_PERF_DISABLE_FULLWINDOWDRAG"></span><span id="ts_perf_disable_fullwindowdrag"></span>**Servizi terminal \_ PERF \_ Disable \_ FULLWINDOWDRAG** (0x00000002)
+<span id="TS_PERF_DISABLE_FULLWINDOWDRAG"></span><span id="ts_perf_disable_fullwindowdrag"></span>**TS \_ PERF \_ DISABLE \_ FULLWINDOWDRAG** (0x00000002)
 
 
 </dt> <dd>
 
-Il trascinamento della finestra completa è disabilitato; Quando la finestra viene spostata, viene visualizzata solo la struttura della finestra.
+Il trascinamento della finestra intera è disabilitato. quando la finestra viene spostata, viene visualizzata solo la struttura della finestra.
 
 </dd> <dt>
 
 <span id="TS_PERF_DISABLE_MENUANIMATIONS"></span><span id="ts_perf_disable_menuanimations"></span>
 
-<span id="TS_PERF_DISABLE_MENUANIMATIONS"></span><span id="ts_perf_disable_menuanimations"></span>**Servizi terminal \_ PERF \_ Disable \_ MENUANIMATIONS** (0x00000004)
+<span id="TS_PERF_DISABLE_MENUANIMATIONS"></span><span id="ts_perf_disable_menuanimations"></span>**TS \_ PERF \_ DISABLE \_ MENUANIMATIONS** (0x00000004)
 
 
 </dt> <dd>
 
-Le animazioni dei menu sono disabilitate.
+Le animazioni di menu sono disabilitate.
 
 </dd> <dt>
 
 <span id="TS_PERF_DISABLE_THEMING"></span><span id="ts_perf_disable_theming"></span>
 
-<span id="TS_PERF_DISABLE_THEMING"></span><span id="ts_perf_disable_theming"></span>**Servizi terminal \_ PERF \_ Disable \_** (0x00000008)
+<span id="TS_PERF_DISABLE_THEMING"></span><span id="ts_perf_disable_theming"></span>**TS \_ PERF \_ DISABLE \_ THEMING** (0x00000008)
 
 
 </dt> <dd>
@@ -145,73 +145,73 @@ I temi sono disabilitati.
 
 <span id="TS_PERF_ENABLE_ENHANCED_GRAPHICS"></span><span id="ts_perf_enable_enhanced_graphics"></span>
 
-<span id="TS_PERF_ENABLE_ENHANCED_GRAPHICS"></span><span id="ts_perf_enable_enhanced_graphics"></span>**Servizi terminal \_ \_Abilitazione della \_ funzionalità grafica migliorata** (0x00000010)
+<span id="TS_PERF_ENABLE_ENHANCED_GRAPHICS"></span><span id="ts_perf_enable_enhanced_graphics"></span>**TS \_ PERF \_ ENABLE \_ ENHANCED GRAPHICS** (0X00000010)
 
 
 </dt> <dd>
 
-Abilita la grafica migliorata.
+Abilitare la grafica avanzata.
 
 </dd> <dt>
 
 <span id="TS_PERF_DISABLE_CURSOR_SHADOW"></span><span id="ts_perf_disable_cursor_shadow"></span>
 
-<span id="TS_PERF_DISABLE_CURSOR_SHADOW"></span><span id="ts_perf_disable_cursor_shadow"></span>**Servizi terminal \_ \_Disattiva \_ \_ ombreggiatura cursore** (0x00000020)
+<span id="TS_PERF_DISABLE_CURSOR_SHADOW"></span><span id="ts_perf_disable_cursor_shadow"></span>**TS \_ PERF \_ DISABLE \_ CURSOR \_ SHADOW** (0x00000020)
 
 
 </dt> <dd>
 
-Per il cursore non viene visualizzata alcuna ombreggiatura.
+Non viene visualizzata alcuna ombreggiatura per il cursore.
 
 </dd> <dt>
 
 <span id="TS_PERF_DISABLE_CURSORSETTINGS"></span><span id="ts_perf_disable_cursorsettings"></span>
 
-<span id="TS_PERF_DISABLE_CURSORSETTINGS"></span><span id="ts_perf_disable_cursorsettings"></span>**Servizi terminal \_ PERF \_ Disable \_ CURSORSETTINGS** (0x00000040)
+<span id="TS_PERF_DISABLE_CURSORSETTINGS"></span><span id="ts_perf_disable_cursorsettings"></span>**TS \_ PERF \_ DISABLE \_ CURSORSETTINGS** (0x00000040)
 
 
 </dt> <dd>
 
-Il cursore lampeggiante è disabilitato.
+L'intermittenza del cursore è disabilitata.
 
 </dd> <dt>
 
 <span id="TS_PERF_ENABLE_FONT_SMOOTHING"></span><span id="ts_perf_enable_font_smoothing"></span>
 
-<span id="TS_PERF_ENABLE_FONT_SMOOTHING"></span><span id="ts_perf_enable_font_smoothing"></span>**Servizi terminal \_ PRESTAZIONI \_ Abilita \_ \_ smussatura carattere** (0x00000080)
+<span id="TS_PERF_ENABLE_FONT_SMOOTHING"></span><span id="ts_perf_enable_font_smoothing"></span>**TS \_ PERF \_ ENABLE \_ FONT \_ SMOOTHING** (0X00000080)
 
 
 </dt> <dd>
 
-Abilitare la smussatura dei caratteri.
+Abilitare l'arrotondamento dei caratteri.
 
 </dd> <dt>
 
 <span id="TS_PERF_ENABLE_DESKTOP_COMPOSITION"></span><span id="ts_perf_enable_desktop_composition"></span>
 
-<span id="TS_PERF_ENABLE_DESKTOP_COMPOSITION"></span><span id="ts_perf_enable_desktop_composition"></span>**Servizi terminal \_ PERF \_ enable \_ Desktop \_ Composition** (0x00000100)
+<span id="TS_PERF_ENABLE_DESKTOP_COMPOSITION"></span><span id="ts_perf_enable_desktop_composition"></span>**TS \_ PERF \_ ENABLE \_ DESKTOP \_ COMPOSITION** (0X00000100)
 
 
 </dt> <dd>
 
-Abilitare composizione desktop.
+Abilitare la composizione del desktop.
 
 </dd> <dt>
 
 <span id="TS_PERF_DEFAULT_NONPERFCLIENT_SETTING"></span><span id="ts_perf_default_nonperfclient_setting"></span>
 
-<span id="TS_PERF_DEFAULT_NONPERFCLIENT_SETTING"></span><span id="ts_perf_default_nonperfclient_setting"></span>**Servizi terminal \_ \_Impostazione di \_ NONPERFCLIENT \_ default Perf** (0x40000000)
+<span id="TS_PERF_DEFAULT_NONPERFCLIENT_SETTING"></span><span id="ts_perf_default_nonperfclient_setting"></span>**TS \_ IMPOSTAZIONE \_ PERF DEFAULT \_ NONPERFCLIENT \_** (0x40000000)
 
 
 </dt> <dd>
 
-Impostare internamente per i client che non sono in grado di riconoscere questa impostazione.
+Impostare internamente per i client che non sono a conoscenza di questa impostazione.
 
 </dd> <dt>
 
 <span id="TS_PERF_RESERVED1"></span><span id="ts_perf_reserved1"></span>
 
-<span id="TS_PERF_RESERVED1"></span><span id="ts_perf_reserved1"></span>**Servizi terminal \_ PRESTAZIONI \_ RESERVED1** (0x80000000)
+<span id="TS_PERF_RESERVED1"></span><span id="ts_perf_reserved1"></span>**TS \_ PERF \_ RESERVED1** (0x80000000)
 
 
 </dt> <dd>
@@ -222,11 +222,11 @@ Riservato e usato internamente dal client.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -238,7 +238,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

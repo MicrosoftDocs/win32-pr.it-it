@@ -1,11 +1,11 @@
 ---
-title: Attributo Profile-Path
-description: Specifica il percorso del profilo utente. Questo valore può essere una stringa null, un percorso assoluto locale o un percorso UNC.
+title: Profile-Path attributo
+description: Specifica un percorso al profilo dell'utente. Questo valore può essere una stringa Null, un percorso assoluto locale o un percorso UNC.
 ms.assetid: 03891152-52c6-4799-ae79-3be284204391
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Profile-Path attribute
-- Schema AD dell'attributo propath
+- Profile-Path schema AD dell'attributo
+- Schema AD dell'attributo profilePath
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89d1c255843cf578301ce330b79f3ca983030952
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89f1033822399a466861df96792d992c569cf017ce1d7d08523691a2650bd4c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837721"
 ---
-# <a name="profile-path-attribute"></a>Attributo Profile-Path
+# <a name="profile-path-attribute"></a>Profile-Path attributo
 
-Specifica il percorso del profilo utente. Questo valore può essere una stringa null, un percorso assoluto locale o un percorso UNC.
+Specifica un percorso al profilo dell'utente. Questo valore può essere una stringa Null, un percorso assoluto locale o un percorso UNC.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------------|
 | CN                | Profile-Path                                                             |
-| LDAP-Display-Name | PercorsoProfilo                                                              |
+| Ldap-Display-Name | profilePath                                                              |
 | Dimensione              | \-                                                                       |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                   |
-| Frequenza di aggiornamento  | Quando il record dell'utente viene creato e ogni volta che è necessario modificare il percorso. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                   |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il percorso deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.4.139                                                   |
-| System-ID-GUID    | bf967a05-0de6-11d0-a285-00aa003049e2                                     |
+| System-Id-Guid    | bf967a05-0de6-11d0-a285-00aa003049e2                                     |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                              |
 
 
@@ -58,15 +58,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica il percorso del profilo utente. Questo valore può essere una stringa 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

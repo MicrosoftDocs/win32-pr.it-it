@@ -1,8 +1,8 @@
 ---
-description: Decomprime il file di codec logico (o directory) specificato nel percorso dell'oggetto.
+description: Decomprime il file codec logico (o directory) specificato nel percorso dell'oggetto.
 ms.assetid: abe74267-1274-4b20-82ac-51ca94d7af33
 ms.tgt_platform: multiple
-title: Metodo Decompress della classe Win32_CodecFile
+title: Decomprimere il metodo della Win32_CodecFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7d1ffcf99877781c7070b42dac5ffe9ef83af2d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b87a1cf186eeee3af227e84aad3553386d5a1d8bd33f73f664aeffab4bc1af59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800661"
 ---
-# <a name="uncompress-method-of-the-win32_codecfile-class"></a>Metodo Decompress della \_ classe Sqlcfile Win32
+# <a name="uncompress-method-of-the-win32_codecfile-class"></a>Metodo Uncompress della classe CodecFile Win32 \_
 
-Il metodo di **decompressione** [WMI della classe](/windows/desktop/WmiSdk/retrieving-a-class) decomprime il file di codec logico (o directory) specificato nel percorso dell'oggetto.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Uncompress** decomprime il file codec logico (o directory) specificato nel percorso dell'oggetto.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -119,7 +119,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Codecfile Win32 \_**](win32-codecfile.md)
+[**Win32 \_ CodecFile**](win32-codecfile.md)
 </dt> </dl>
 
  

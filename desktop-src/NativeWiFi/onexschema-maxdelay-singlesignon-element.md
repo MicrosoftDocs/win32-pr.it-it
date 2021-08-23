@@ -1,5 +1,5 @@
 ---
-description: Specifica, in secondi, il ritardo massimo prima che il tentativo di connessione Single Sign-on abbia esito negativo.
+description: Specifica, in secondi, il ritardo massimo prima che il tentativo di connessione Single Sign-On non riesca.
 ms.assetid: ba8c137e-dd05-4ebc-9a83-cd612f65d4dc
 title: Elemento maxDelay (singleSignOn)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 8efd069687a2db4b06b90aa594ec31132ce6fc9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd4e82e8031f57e9672dd11a066a9a1fb2e8f3540c93dc4e1898afa4f1cf6302
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684841"
 ---
 # <a name="maxdelay-singlesignon-element"></a>Elemento maxDelay (singleSignOn)
 
-L'elemento maxDelay (singleSignOn) specifica, in secondi, il ritardo massimo prima che il tentativo di connessione Single Sign-on abbia esito negativo.
+L'elemento maxDelay (singleSignOn) specifica, in secondi, il ritardo massimo prima che il tentativo di connessione Single Sign-On non riesca.
 
-Questo elemento è facoltativo. Quando maxDelay non viene specificato in un profilo, viene utilizzato un valore di 10 secondi.
+Questo elemento è facoltativo. Quando maxDelay non è specificato in un profilo, viene usato un valore di 10 secondi.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -44,11 +44,11 @@ Questo elemento è facoltativo. Quando maxDelay non viene specificato in un prof
 </xs:element>
 ```
 
-L'elemento **maxDelay** è definito dall'elemento [**singleSignOn**](onexschema-singlesignon-onex-element.md) .
+**L'elemento maxDelay** è definito dall'elemento [**singleSignOn.**](onexschema-singlesignon-onex-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo parametro può essere impostato dalla riga di comando tramite il comando **netsh wlan set profileparameter** . Per ulteriori informazioni, vedere [comandi Netsh per WLAN (wireless local area network)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10)).
+Questo parametro può essere impostato dalla riga di comando usando il **comando netsh wlan set profileparameter.** Per altre informazioni, vedere [Comandi Netsh per la rete locale wireless (wlan).](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Questo parametro può essere impostato dalla riga di comando tramite il comando 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

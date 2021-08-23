@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d970ee52203c5c8dfe8a897c5612604becc2b2e1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 0fe158e4a17b898110a2555f87b469ee934aa791b6f0379f9054642810673389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793761"
 ---
 # <a name="cbasecontrolwindowdogetwindowstyle-method"></a>Metodo CBaseControlWindow.DoGetWindowStyle
 
@@ -57,7 +57,7 @@ Valore che specifica gli stili da recuperare. I possibili valori sono i seguenti
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |--------------|--------------------------------------|
 | STILE \_ GWL   | Recuperare gli stili della finestra.          |
 | GWL \_ EXSTYLE | Recuperare gli stili di finestra estesi. |
@@ -74,7 +74,7 @@ Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro chiama la funzione Win32 **GetWindowLong** per recuperare lo stile della finestra. Viene chiamato dalle funzioni membro [**CBaseControlWindow::get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md) e [**CBaseControlWindow::get \_ WindowStyleEx.**](cbasecontrolwindow-get-windowstyleex.md)
+Questa funzione membro chiama la funzione **Win32 GetWindowLong** per recuperare lo stile della finestra. Viene chiamato dalle funzioni membro [**CBaseControlWindow::get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md) e [**CBaseControlWindow::get \_ WindowStyleEx.**](cbasecontrolwindow-get-windowstyleex.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Questa funzione membro chiama la funzione Win32 **GetWindowLong** per recuperare
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Struttura WM_INDIVIDUALIZE_STATUS (wmdrmsdk. h)
-description: La \_ \_ struttura dello stato di personalizzazione di WM include informazioni su un processo di individualizzazione in sospeso.
+title: WM_INDIVIDUALIZE_STATUS struttura (Wmdrmsdk.h)
+description: La struttura WM \_ INDIVIDUALIZE \_ STATUS contiene informazioni su un processo di individualizzazione in sospeso.
 ms.assetid: af7e8758-489b-461f-b241-d7e40c8d61da
 keywords:
-- Formato di Windows Media per la struttura WM_INDIVIDUALIZE_STATUS
+- WM_INDIVIDUALIZE_STATUS struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ef7617fe6dcddf3397ab1a123132e843f0b1461
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c139631fe737e07d011e43920ab63c7394f03c3319abb2f7936153ae06c596ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708301"
 ---
-# <a name="wm_individualize_status-structure-wmdrmsdkh"></a>Struttura WM_INDIVIDUALIZE_STATUS (wmdrmsdk. h)
+# <a name="wm_individualize_status-structure-wmdrmsdkh"></a>WM_INDIVIDUALIZE_STATUS struttura (Wmdrmsdk.h)
 
-La **struttura \_ \_ dello stato di personalizzazione di WM** include informazioni su un processo di individualizzazione in sospeso.
+La **struttura WM \_ INDIVIDUALIZE \_ STATUS** contiene informazioni su un processo di individualizzazione in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,35 +49,35 @@ typedef struct _WMIndividualizeStatus {
 **h**
 </dt> <dd>
 
-Codice restituito **HRESULT** .
+**Codice restituito HRESULT.**
 
 </dd> <dt>
 
 **enIndiStatus**
 </dt> <dd>
 
-Valore del tipo di enumerazione [**\_ \_ dello stato di individualizzazione DRM**](drmdrm-individualization-status.md) che indica lo stato corrente del processo di individualizzazione.
+Valore del tipo [**di enumerazione DRM \_ INDIVIDUALIZATION \_ STATUS**](drmdrm-individualization-status.md) che indica lo stato corrente del processo di individualizzazione.
 
 </dd> <dt>
 
 **pszIndiRespUrl**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che contiene l'URL di risposta di individualizzazione.
+Puntatore a una stringa con terminazione Null contenente l'URL della risposta di individualizzazione.
 
 </dd> <dt>
 
 **dwHTTPRequest**
 </dt> <dd>
 
-Numero di round trip HTTP al servizio di individualizzazione che sono stati completati.
+Numero di round trip HTTP al servizio di individualizzazione completati.
 
 </dd> <dt>
 
 **enHTTPStatus**
 </dt> <dd>
 
-Valore del tipo di enumerazione [**\_ \_ dello stato http DRM**](drmdrm-http-status.md) .
+Valore del tipo [**di enumerazione \_ DRM HTTP \_ STATUS.**](drmdrm-http-status.md)
 
 </dd> <dt>
 
@@ -91,13 +91,13 @@ Numero di byte scaricati.
 **dwHTTPReadTotal**
 </dt> <dd>
 
-Numero totale di byte da scaricare. È possibile utilizzare questo valore e **dwHTTPReadProgress** per visualizzare un'interfaccia utente che indica la quantità di download completata e la quantità di operazioni da eseguire.
+Numero totale di byte da scaricare. È possibile usare questo valore e **dwHTTPReadProgress** per visualizzare un'interfaccia utente che indica la quantità di download completata e il numero di operazioni da eseguire.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene ricevuta quando si chiama il metodo [**IWMDRMIndividualizationStatus:: GetStatus**](iwmdrmindividualizationstatus-getstatus.md) . Contiene lo stato del processo di individualizzazione in sospeso al momento della chiamata.
+Questa struttura viene ricevuta quando si chiama il [**metodo IWMDRMIndividualizationStatus::GetStatus.**](iwmdrmindividualizationstatus-getstatus.md) Contiene lo stato del processo di individualizzazione in sospeso al momento della chiamata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,7 +105,7 @@ Questa struttura viene ricevuta quando si chiama il metodo [**IWMDRMIndividualiz
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

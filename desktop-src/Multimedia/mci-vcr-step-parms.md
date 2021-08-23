@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VCR_STEP_PARMS (VCR. h)
-description: La \_ struttura parametri del passaggio del VCR MCI \_ \_ contiene i parametri per il \_ comando del passaggio MCI per i registratori di nastri video.
+title: MCI_VCR_STEP_PARMS struttura (Vcr.h)
+description: La struttura MCI VCR STEP PARMS contiene i parametri per \_ \_ il comando \_ MCI STEP per i \_ registratori di videocassette.
 ms.assetid: 57751de6-d174-418f-8167-402d3ead4e24
 keywords:
-- Struttura MCI_VCR_STEP_PARMS di Windows Multimedia
+- MCI_VCR_STEP_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a616b31500a2c814edb3dd443586131ed0ffae7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f25e79903a694b6537e88d1c58994d1f39ccf958ea95f40f571a267239a055e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783831"
 ---
-# <a name="mci_vcr_step_parms-structure"></a>\_ \_ Struttura parametri del passaggio VCR MCI \_
+# <a name="mci_vcr_step_parms-structure"></a>Struttura MCI \_ VCR \_ STEP \_ PARMS
 
-La **struttura \_ \_ \_ parametri del passaggio del VCR MCI** contiene i parametri per il comando del [**\_ passaggio MCI**](mci-step.md) per i registratori di nastri video.
+La **struttura MCI \_ VCR STEP \_ \_ PARMS** contiene i parametri per il [**comando MCI \_ STEP**](mci-step.md) per i registratori di videocassette.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ typedef struct tagMCI_VCR_STEP_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwFrames**
 </dt> <dd>
 
-Il numero di fotogrammi da saltare (la lunghezza di un singolo passaggio) [**come \_ passaggio**](mci-step.md) del comando MCI, avanti o indietro nel contenuto.
+Numero di fotogrammi da saltare (lunghezza di un singolo passaggio) quando il [**comando MCI \_ STEP**](mci-step.md) avanza o indietro nel contenuto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* di [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* [**di mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_passaggio MCI**](mci-step.md)
+[**PASSAGGIO \_ MCI**](mci-step.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

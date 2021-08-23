@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 9bfa8e87736412822c1a70f75b129aeec30af20e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 040bcc6bcc5e4e8a7126c5ef7d0a72dbb688a6e5605512ff67527c21bfaa3026
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813861"
 ---
 # <a name="iwiauiextensiongetdeviceicon-method"></a>Metodo IWiaUIExtension::GetDeviceIcon
 
@@ -80,8 +80,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 

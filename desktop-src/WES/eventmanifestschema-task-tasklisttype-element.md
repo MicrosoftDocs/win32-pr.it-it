@@ -1,9 +1,9 @@
 ---
-title: Elemento Task (TaskListType)
-description: Definisce un componente o un sottocomponente di un'applicazione. | Elemento Task (TaskListType)
+title: Elemento task (TaskListType)
+description: Definisce un componente o un sottocomponente di un'applicazione. | Elemento task (TaskListType)
 ms.assetid: 890f11cc-a379-41a5-a35b-08ad5615e18b
 keywords:
-- EventLog elemento attività
+- Elemento task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b828f7b38942927c527ce6e72b143400196b75f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 90b7abd0d116637b6aa1ad197a6479c86e4745259af4d65c0ed318a009054e68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767266"
 ---
-# <a name="task-tasklisttype-element"></a>Elemento Task (TaskListType)
+# <a name="task-tasklisttype-element"></a>Elemento task (TaskListType)
 
 Definisce un componente o un sottocomponente di un'applicazione.
 
@@ -30,7 +30,7 @@ Definisce un componente o un sottocomponente di un'applicazione.
  />
 ```
 
-L'elemento **Task** è definito dal tipo complesso [**TaskListType**](eventmanifestschema-tasklisttype-complextype.md) .
+**L'elemento** task è definito dal [**tipo complesso TaskListType.**](eventmanifestschema-tasklisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Task** è definito dal tipo complesso [**TaskListType**](eventmanif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Task** è definito dal tipo complesso [**TaskListType**](eventmanif
 **Elemento padre**
 </dt> <dt>
 
-[**attività (ProviderType)**](eventmanifestschema-tasks-providertype-element.md)
+[**tasks (ProviderType)**](eventmanifestschema-tasks-providertype-element.md)
 </dt> </dl>
 
  

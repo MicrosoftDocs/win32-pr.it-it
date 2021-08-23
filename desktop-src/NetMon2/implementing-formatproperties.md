@@ -1,48 +1,48 @@
 ---
-description: Network Monitor chiama la funzione FormatProperties per formattare i dati visualizzati nel riquadro dei dettagli dell'interfaccia utente di Network Monitor.
+description: Network Monitor chiama la funzione FormatProperties per formattare i dati visualizzati nel riquadro dei dettagli dell'interfaccia Network Monitor interfaccia utente.
 ms.assetid: d0a58e1d-c867-4277-916e-f408627b5269
 title: Implementazione di FormatProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 660b581bf29fd8e5d40af65f5ff90e1e9223ad2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50e7b927f15ccb2c216e345b37bc87593e33339671f906e28d33759ca9db0abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778976"
 ---
 # <a name="implementing-formatproperties"></a>Implementazione di FormatProperties
 
-Network Monitor chiama la funzione [**FormatProperties**](formatproperties.md) per formattare i dati visualizzati nel riquadro dei dettagli dell'interfaccia utente di Network Monitor. In genere, **FormatProperties** viene chiamato per formattare la riga di riepilogo per un protocollo e quindi per formattare tutte le istanze di proprietà del protocollo all'interno di un frame. Tuttavia, Network Monitor non identifica il numero di volte in cui viene chiamato **FormatProperties** per un parser specifico.
+Network Monitor chiama la [**funzione FormatProperties**](formatproperties.md) per formattare i dati visualizzati nel riquadro dei dettagli dell'interfaccia Network Monitor interfaccia utente. In genere, **FormatProperties** viene chiamato per formattare la riga di riepilogo per un protocollo e quindi per formattare tutte le istanze di proprietà del protocollo all'interno di un frame. Tuttavia, Network Monitor non identifica il numero di volte in cui **FormatProperties** viene chiamato per un parser specifico.
 
-Quando si chiama [**FormatProperties**](formatproperties.md), Network Monitor fornisce una struttura [**PROPERTYINST**](propertyinst.md) per ogni proprietà visualizzata. La struttura **PROPERTYINST** fornisce informazioni sui dati da visualizzare, incluso un puntatore alla struttura [**PROPERTYINFO**](propertyinfo.md) che specifica la funzione da utilizzare per formattare la proprietà dei dati visualizzati.
+Quando si [**chiama FormatProperties,**](formatproperties.md)Network Monitor una [**struttura PROPERTYINST**](propertyinst.md) per ogni proprietà visualizzata. La **struttura PROPERTYINST** fornisce informazioni sui dati da visualizzare, incluso un puntatore alla struttura [**PROPERTYINFO**](propertyinfo.md) che specifica la funzione da utilizzare per formattare la proprietà dei dati visualizzata.
 
 > [!Note]  
-> Quando si aggiunge una proprietà al [*database della proprietà*](p.md) del parser, viene specificata una struttura [**PROPERTYINFO**](propertyinfo.md) .
+> Una [**struttura PROPERTYINFO**](propertyinfo.md) viene specificata quando si aggiunge una proprietà al [*database delle proprietà*](p.md) del parser.
 
  
 
-Network Monitor identifica la funzione Format da chiamare per ogni istanza della proprietà. Il membro **InstanceData** della struttura [**PROPERTYINFO**](propertyinfo.md) può specificare gli elementi seguenti:
+Network Monitor identifica la funzione di formato da chiamare per ogni istanza della proprietà. Il **membro InstanceData** della [**struttura PROPERTYINFO**](propertyinfo.md) può specificare quanto segue:
 
--   Funzione [**FormatPropertyInstance**](formatpropertyinstance.md) per utilizzare il [*formattatore generico*](g.md) fornito da Network Monitor.
+-   Funzione [**FormatPropertyInstance**](formatpropertyinstance.md) per usare il [*formattatore generico*](g.md) Network Monitor fornisce.
 
     - oppure -
 
 -   Nome di una funzione di formato personalizzata fornita dal parser.
 
-Le funzioni [**FormatPropertyInstance**](formatpropertyinstance.md) e Format personalizzato restituiscono i dati formattati che vengono visualizzati nel riquadro dei dettagli dell'interfaccia utente di Network Monitor.
+Le [**funzioni FormatPropertyInstance**](formatpropertyinstance.md) e custom format restituiscono i dati formattati visualizzati nel riquadro dei dettagli dell'interfaccia Network Monitor interfaccia utente.
 
-Nella figura seguente viene illustrato il modo in cui Network Monitor identifica la funzione da chiamare per ogni istanza della proprietà.
+La figura seguente mostra come Network Monitor identifica la funzione da chiamare per ogni istanza di proprietà.
 
-![modalità di identificazione della funzione da chiamare in Network Monitor](images/formatprop1.png)
+![come network monitor identifica la funzione da chiamare](images/formatprop1.png)
 
-Nella procedura seguente vengono identificati i passaggi necessari per implementare [**FormatProperties**](formatproperties.md).
+La procedura seguente identifica i passaggi necessari per implementare [**FormatProperties**](formatproperties.md).
 
 **Per implementare FormatProperties**
 
--   Utilizzando una struttura di ciclo, chiamare la funzione Format per ogni struttura [**PROPERTYINST**](propertyinst.md) passata al parser nel parametro *LpPropInst* della funzione [**FormatProperties**](formatproperties.md) .
+-   Usando una struttura di ciclo, chiamare la funzione format per ogni [**struttura PROPERTYINST**](propertyinst.md) passata al parser nel parametro *lpPropInst* della [**funzione FormatProperties.**](formatproperties.md)
 
-Di seguito è riportata un'implementazione di base di [**FormatProperties**](formatproperties.md).
+Di seguito è riportata un'implementazione di [**base di FormatProperties**](formatproperties.md).
 
 ``` syntax
 #include <windows.h>

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b4f482407fadd16d7ecfe9deeafd91b032a9a24f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73bbaaefbe12e178a8ef5818665f97d29cc105e45c20c010a6c02254ab897b11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710381"
 ---
 # <a name="ishelldispatch2isrestricted-method"></a>Metodo IShellDispatch2.IsRestricted
 
@@ -65,7 +65,7 @@ Valore **String** contenente il nome del gruppo. Questo valore è il nome di una
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **String** che contiene la restrizione il cui valore deve essere recuperato.
+Valore **String** contenente la restrizione di cui recuperare il valore.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Valore della restrizione. Se la restrizione specificata non viene trovata, il va
 
 Questo metodo viene implementato e accessibile tramite il [**metodo Shell.IsRestricted.**](./shell-isrestricted.md)
 
-**IsRestricted** cerca innanzitutto un nome di sottochiave che corrisponde *a sGroup* nella chiave seguente.
+**IsRestricted** cerca prima di tutto un nome di sottochiave che corrisponda *a sGroup* nella chiave seguente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -104,9 +104,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso di **IsRestricted** per recuperare il valore dei dati della **restrizione undockwithoutlogon** dalla **sottochiave System.** L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso di **IsRestricted** per recuperare il valore dei dati della **restrizione undockwithoutlogon** dalla **sottochiave System.** L'utilizzo viene visualizzato JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -151,8 +151,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

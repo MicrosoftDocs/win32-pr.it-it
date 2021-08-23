@@ -1,7 +1,7 @@
 ---
-description: Associa un'istanza di una risorsa allocata al nodo NUMA fisico dal quale è stata allocata.
+description: Associa un'istanza di una risorsa allocata al nodo NUMA fisico da cui è stata allocata.
 ms.assetid: 811ed19f-9084-4e30-8604-860d2bf722c7
-title: Classe Msvm_ElementAllocatedFromNumaNode
+title: Msvm_ElementAllocatedFromNumaNode classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 98940306f25d46c6af1be31133ee336765f8f1a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0683ba63a76d64950f48dc9787347c4f08dd433653cef3a6f0388f97420d3ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681721"
 ---
-# <a name="msvm_elementallocatedfromnumanode-class"></a>\_Classe MSVM ElementAllocatedFromNumaNode
+# <a name="msvm_elementallocatedfromnumanode-class"></a>Classe Msvm \_ ElementAllocatedFromNumaNode
 
-Associa un'istanza di una risorsa allocata al nodo NUMA fisico dal quale è stata allocata.
+Associa un'istanza di una risorsa allocata al nodo NUMA fisico da cui è stata allocata.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,26 +41,26 @@ class Msvm_ElementAllocatedFromNumaNode : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La **classe \_ ElementAllocatedFromNumaNode di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ElementAllocatedFromNumaNode** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ElementAllocatedFromNumaNode di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ElementAllocatedFromNumaNode** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ NumaNode**](msvm-numanode.md)**
+Tipo di dati: **[ **Msvm \_ NumaNode**](msvm-numanode.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Nodo NUMA fisico.
@@ -70,13 +70,13 @@ Nodo NUMA fisico.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **\_ LogicalElement CIM**](/windows/desktop/CIMWin32Prov/cim-logicalelement)**
+Tipo di dati: **[ **CIM \_ LogicalElement**](/windows/desktop/CIMWin32Prov/cim-logicalelement)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Risorsa allocata.
@@ -89,10 +89,10 @@ Risorsa allocata.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà currentPositionTimecode di IWMPControls3
-description: La proprietà currentPositionTimecode Ottiene o imposta la posizione corrente nell'elemento multimediale corrente usando un formato di codice temporale. Questa proprietà attualmente supporta il codice ora SMPTE.
+title: Proprietà currentPositionTimecode IWMPControls3
+description: La proprietà currentPositionTimecode ottiene o imposta la posizione corrente nell'elemento multimediale corrente usando un time code predefinito. Questa proprietà supporta attualmente le time code SMPTE.
 ms.assetid: 035b812c-e976-4b4e-b4e5-820653257732
 keywords:
-- Finestra delle proprietà di currentPositionTimecode Media Player
-- Proprietà di currentPositionTimecode Media Player Windows, interfaccia IWMPControls3
-- Interfaccia IWMPControls3 Windows Media Player, proprietà currentPositionTimecode
+- Proprietà currentPositionTimecode Windows Media Player
+- proprietà currentPositionTimecode Windows Media Player, interfaccia IWMPControls3
+- Interfaccia IWMPControls3 Windows Media Player proprietà currentPositionTimecode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7660e6dc2690c310cf06f64e38190dc1cb3f24ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b91c00c166050f4f3a3bc05861fa92d4fb66efcfa139e726c7cc799e21623fa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760921"
 ---
-# <a name="iwmpcontrols3currentpositiontimecode-property"></a>Proprietà IWMPControls3:: currentPositionTimecode
+# <a name="iwmpcontrols3currentpositiontimecode-property"></a>Proprietà IWMPControls3::currentPositionTimecode
 
-La proprietà **currentPositionTimecode** Ottiene o imposta la posizione corrente nell'elemento multimediale corrente usando un formato di codice temporale. Questa proprietà attualmente supporta il codice ora SMPTE.
+La **proprietà currentPositionTimecode** ottiene o imposta la posizione corrente nell'elemento multimediale corrente usando un time code predefinito. Questa proprietà supporta attualmente le time code SMPTE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,23 +46,23 @@ Public Property currentPositionTimecode As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che rappresenta il codice ora SMPTE.
+Oggetto **System.String** che rappresenta l'oggetto SMPTE time code.
 
 ## <a name="remarks"></a>Commenti
 
-Il codice di ora SMPTE fornisce un modo standard per identificare un singolo frame video, utile per sincronizzare la riproduzione. Se un file multimediale digitale supporta il codice ora SMPTE, Windows Media Player possibile recuperare le informazioni sulla posizione del codice ora corrente o cercare un frame video identificato da un particolare codice temporale.
+SMPTE time code un modo standard per identificare un singolo fotogramma video, utile per sincronizzare la riproduzione. Se un file multimediale digitale supporta SMPTE time code, Windows Media Player può recuperare le informazioni correnti sulla posizione time code o cercare un fotogramma video identificato da un determinato time code.
 
-Il codice di ora SMPTE identifica un frame specifico per il numero di ore, minuti, secondi e frame che lo separa da un particolare frame di riferimento il frame designato come ora zero. In genere, il fotogramma ora zero è l'inizio del file e un determinato valore del codice ora SMPTE rappresenta il tempo trascorso dall'inizio del file.
+SMPTE time code un frame specifico in base al numero di ore, minuti, secondi e fotogrammi che lo separano da un frame di riferimento specifico designato come tempo zero. In genere l'intervallo di tempo zero è l'inizio del file e un particolare valore di time code SMPTE rappresenta il tempo trascorso dall'inizio del file.
 
-Il codice temporale è nell'intervallo di formato \[  \] *HH*:*mm*:*SS*.*FF* con \[ *intervallo* \] che rappresenta l'intervallo, hh rappresenta le ore, *mm* rappresenta minuti, *SS* rappresenta i secondi e *FF* rappresenta i frame. Quando si imposta un valore per **currentPositionTimecode**, è necessario includere tutte e otto le cifre, usando zeri come segnaposto.
+Il time code è nel formato \[  \] *hh*:*mm*:*ss*.*ff* dove \[ *range* \] rappresenta l'intervallo, hh rappresenta le ore, *mm* rappresenta i minuti, *ss* rappresenta i secondi e *ff* rappresenta i fotogrammi. Quando si imposta un valore per **currentPositionTimecode,** è necessario includere tutte le otto cifre, usando zeri come segnaposto.
 
-\[*intervallo* \] corrisponde al membro **Wrange** della struttura di **dati dell'estensione del \_ timecode \_ \_ WMT** del formato Windows Media. Per ulteriori informazioni sugli intervalli di codice temporali, vedere Windows Media Format SDK.
+\[*intervallo* \] corrisponde al membro **wRange** della struttura WINDOWS MEDIA FORMAT **WMT \_ TIMECODE \_ EXTENSION \_ DATA.** Per altre informazioni sugli intervalli time code, vedere l'SDK Windows Media Format.
 
-L'impostazione e il recupero di **currentPositionTimecode** sono supportati solo per i file che contengono informazioni sul codice ora SMPTE.
+L'impostazione e il **recupero di currentPositionTimecode** sono supportati solo per i file che contengono time code SMPTE.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene specificato **currentPositionTimecode** come 1 ora, zero minuti, 30 secondi e 5 fotogrammi. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio di codice seguente specifica **currentPositionTimecode** come 1 ora, zero minuti, 30 secondi e 5 fotogrammi. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -95,7 +95,7 @@ Controls.currentPositionTimecode = &quot;[00000]01:00:30.05&quot;
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

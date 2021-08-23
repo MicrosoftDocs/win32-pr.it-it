@@ -1,56 +1,56 @@
 ---
-title: Attributo StrokeWeight di la
-description: Attributo StrokeWeight di la
+title: Attributo StrokeWeight VML
+description: Attributo StrokeWeight VML
 ms.assetid: 364882b2-e5f4-4a86-b7d7-352f8780ebdc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a8da9f7220315b066676f2439f37b97250cc7c8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: abac5efa964607fdd942c8dff31a4a124d424aa5fbfeede27abc6164fddef087
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680681"
 ---
-# <a name="vml-strokeweight-attribute"></a>Attributo StrokeWeight di la
+# <a name="vml-strokeweight-attribute"></a>Attributo StrokeWeight VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce lo spessore del pennello che accarezza il percorso di una forma. Proprietà di lettura/scrittura. **VGLength**.
+Definisce lo spessore del pennello che traccia il percorso di una forma. Proprietà di lettura/scrittura. **VGLength**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* StrokeWeight = " *Expression* " >
+<v: *elemento* strokeweight=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . StrokeWeight = "*Expression*"
+*element* .strokeweight="*expression*"
 
-*espressione* = *elemento*. StrokeWeight
+*expression* = *elemento*.strokeweight
 
 **Osservazioni:**
 
-Il valore viene duplicato dall'attributo **Weight** dell'elemento **Stroke** . Se viene specificato un numero, ma non vengono aggiunte unità, l'unità di misura predefinita è Emu. Se non viene specificato alcun valore, il valore predefinito è 1 pixel (1px).
+Il valore viene duplicato **dall'attributo Weight** dell'elemento **Stroke.** Se viene specificato un numero, ma non viene aggiunta alcuna unità, l'unità di misura predefinita è emu. Se non viene specificato alcun valore, il valore predefinito è 1 pixel (1px).
 
 Per gli script, tuttavia, l'unità di misura predefinita è in punti.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Vedere anche**
 
-[Stroke](msdn-online-vml-stroke-element.md), [IVgLength](msdn-online-vml-vglength.md), [unità](msdn-online-vml-units.md)
+[Stroke](msdn-online-vml-stroke-element.md), [IVgLength](msdn-online-vml-vglength.md), [Units](msdn-online-vml-units.md)
 
 **Esempio**
 
-Lo spessore del tratto della forma è 1 punto.
+Lo spessore del tratto della forma è di 1 punto.
 
 
 ```HTML
@@ -64,8 +64,8 @@ Lo spessore del tratto della forma è 1 punto.
 
 
 
-[Esempio di attributo StrokeWeight](/previous-versions/bb264095(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo StrokeWeight](/previous-versions/bb264095(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

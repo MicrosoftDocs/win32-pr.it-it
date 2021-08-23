@@ -1,29 +1,29 @@
 ---
-description: Regola le caratteristiche dei colori di un flusso video.
+description: Regola le caratteristiche di colore di un flusso video.
 ms.assetid: 738c1f0c-8417-4b12-a7f1-9bbf3c7e9dd3
-title: Trasformazione controllo colori DSP (Wmcodecdsp. h)
+title: DSP trasformazione controllo colore (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b94c8314bfd2be85a3bbc392bfa0e83767ff0b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c51321a8ffd725306f570619b9bcbe70fe7160e784358ce265157145b40347e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606211"
 ---
-# <a name="color-control-transform-dsp"></a>Trasformazione controllo colori DSP
+# <a name="color-control-transform-dsp"></a>DSP trasformazione controllo colore
 
-Regola le caratteristiche dei colori di un flusso video.
+Regola le caratteristiche di colore di un flusso video.
 
 ## <a name="clsid"></a>CLSID
 
-\_CCOLORCONTROLDMO CLSID
+CLSID \_ CColorControlDmo
 
 ## <a name="interfaces"></a>Interfacce
 
--   **IMediaObject**
+-   **Oggetto IMediaObject**
 -   **IMFTransform**
--   **IPropertyStore**
+-   **Ipropertystore**
 
 ## <a name="formats"></a>Formati
 
@@ -38,14 +38,14 @@ Regola le caratteristiche dei colori di un flusso video.
 
 ## <a name="properties"></a>Proprietà
 
--   [\_luminosità colore \_ MFPKEY](mfpkey-color-brightness.md)
--   [\_contrasto colori \_ MFPKEY](mfpkey-color-contrast.md)
--   [\_tonalità colore \_ MFPKEY](mfpkey-color-hue.md)
--   [\_ \_ saturazione colore MFPKEY](mfpkey-color-saturation.md)
+-   [LUMINOSITÀ DEL COLORE MFPKEY \_ \_](mfpkey-color-brightness.md)
+-   [CONTRASTO DEI COLORI MFPKEY \_ \_](mfpkey-color-contrast.md)
+-   [MFPKEY \_ COLOR \_ HUE](mfpkey-color-hue.md)
+-   [SATURAZIONE DEL COLORE MFPKEY \_ \_](mfpkey-color-saturation.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo DSP modifica il contenuto del flusso video. Per la riproduzione, è possibile ottenere effetti simili in modo più efficiente usando l'interfaccia **IMFVideoProcessor** , che controlla l'elaborazione video nella scheda grafica.
+Questo DSP modifica il contenuto del flusso video. Per la riproduzione, è possibile ottenere effetti simili in modo più efficiente usando **l'interfaccia IMFVideoProcessor,** che controlla l'elaborazione video nella scheda grafica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Questo DSP modifica il contenuto del flusso video. Per la riproduzione, è possi
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Mfvdsp.dll</dt> </dl>   |
 
 

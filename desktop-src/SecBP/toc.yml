@@ -6,25 +6,25 @@
       items:
         - name: Esecuzione con privilegi di amministratore
           href: running-with-administrator-privileges.md
-        - name: Chiedere all'utente le credenziali
+        - name: Richiesta di credenziali all'utente
           href: asking-the-user-for-credentials.md
         - name: Modifica dei privilegi in un token
           href: changing-privileges-in-a-token.md
         - name: Assegnazione di privilegi a un account
           href: assigning-privileges-to-an-account.md
-    - name: Evitare i sovraccarichi del buffer
+    - name: Evitare sovraccarichi del buffer
       href: avoiding-buffer-overruns.md
     - name: Protezione del flusso di controllo
       href: control-flow-guard.md
       items:
         - name: Metadati PE
           href: pe-metadata.md
-    - name: Creazione di un DACL
+    - name: Creazione di un elenco DACL
       href: creating-a-dacl.md
     - name: Gestione delle password
       href: handling-passwords.md
       items:
-        - name: Valutazione delle minacce per la password
+        - name: Valutazione delle minacce per le password
           href: password-threat-assessment.md
         - name: Tecniche di mitigazione delle minacce
           href: threat-mitigation-techniques.md

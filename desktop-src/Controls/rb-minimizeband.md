@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_MINIMIZEBAND (COMmctrl. h)
-description: Ridimensiona una banda in un controllo Rebar alla dimensione minima.
+title: RB_MINIMIZEBAND messaggio (Commctrl.h)
+description: Ridimensiona una banda in un controllo rebar alle dimensioni più piccole.
 ms.assetid: 4962d90a-2a69-4490-9063-cc2be995df13
 keywords:
-- Controlli di Windows Message RB_MINIMIZEBAND
+- RB_MINIMIZEBAND di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 598f5fc30a9063befff384a8f081027b69fb9512
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46ef08d33903f002e3aaa8975580a770b941cf4330e8d8e2260dc9a0a4947713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798561"
 ---
-# <a name="rb_minimizeband-message"></a>\_Messaggio MINIMIZEBAND RB
+# <a name="rb_minimizeband-message"></a>Messaggio RB \_ MINIMIZEBAND
 
-Ridimensiona una banda in un controllo Rebar alla dimensione minima.
+Ridimensiona una banda in un controllo rebar alle dimensioni più piccole.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Indice in base zero della banda da ridurre a icona.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito non viene utilizzato.
+Il valore restituito non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

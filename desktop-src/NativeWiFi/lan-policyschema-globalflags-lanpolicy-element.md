@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c9a244fbbc616e3092e2293fe187da1d7be0fa53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfbfecbc1d60e34a913bb523f5af8c2ab25665fd689976c87725d392f6ea26c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801131"
 ---
 # <a name="globalflags-lanpolicy-element"></a>Elemento globalFlags (LANPolicy)
 
@@ -41,7 +41,7 @@ L'elemento globalFlags (LANPolicy) contiene le impostazioni globali per la confi
 </xs:element>
 ```
 
-L'elemento **globalFlags** è definito dall'elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+**L'elemento globalFlags** è definito dall'elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -49,7 +49,7 @@ L'elemento **globalFlags** è definito dall'elemento [**LANPolicy**](lan-policys
 
 | Elemento                                                                           | Tipo    | Descrizione                                                                                                                                                                          |
 |-----------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**enableAutoConfig**](lan-policyschema-enableautoconfig-globalflags-element.md) | boolean | Specifica se i computer utilizzano il servizio di configurazione automatica incorporato per gestire le connessioni a reti cablate che richiedono l'autenticazione di livello 2, ad esempio 802.1 X.<br/> |
+| [**enableAutoConfig**](lan-policyschema-enableautoconfig-globalflags-element.md) | boolean | Specifica se i computer usano il servizio di configurazione automatica incorporato per gestire le connessioni alle reti cablate che richiedono l'autenticazione di livello 2, ad esempio 802.1X.<br/> |
 
 
 
@@ -59,8 +59,8 @@ L'elemento **globalFlags** è definito dall'elemento [**LANPolicy**](lan-policys
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

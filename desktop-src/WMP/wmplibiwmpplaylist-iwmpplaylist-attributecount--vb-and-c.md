@@ -3,9 +3,9 @@ title: Proprietà attributeCount di IWMPPlaylist
 description: La proprietà attributeCount ottiene il numero di attributi associati a una playlist.
 ms.assetid: 0713ec4e-7e06-4ad2-8f7c-17ed5a92d5ee
 keywords:
-- Finestra delle proprietà di attributeCount Media Player
-- Proprietà di attributeCount Media Player Windows, interfaccia IWMPPlaylist
-- Interfaccia IWMPPlaylist Windows Media Player, proprietà attributeCount
+- proprietà attributeCount Windows Media Player
+- proprietà attributeCount Windows Media Player, interfaccia IWMPPlaylist
+- Interfaccia IWMPPlaylist Windows Media Player proprietà attributeCount
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4107eb1ad302415715b573b55d2dee1d7155128d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b51c621f5a484c23a2f7d0677fe20d1b62bfb4d2ec94228e003adc2ebc841cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760771"
 ---
-# <a name="iwmpplaylistattributecount-property"></a>Proprietà IWMPPlaylist:: attributeCount
+# <a name="iwmpplaylistattributecount-property"></a>Proprietà IWMPPlaylist::attributeCount
 
-La proprietà **attributeCount** ottiene il numero di attributi associati a una playlist.
+La **proprietà attributeCount** ottiene il numero di attributi associati a una playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ Public ReadOnly Property attributeCount As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il numero di attributi associati alla playlist.
+Oggetto **System.Int32** che rappresenta il numero di attributi associati alla playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Poiché le playlist possono provenire da molte origini diverse, possono avere set di attributi diversi. Questa proprietà ottiene il numero totale di attributi associati a una playlist specifica in modo che gli altri membri dell'interfaccia **IWMPPlaylist** possano accedervi.
+Poiché le playlist possono provengono da molte origini diverse, possono avere diversi set di attributi. Questa proprietà ottiene il numero totale di attributi associati a una determinata playlist in modo che altri membri **dell'interfaccia IWMPPlaylist** possano accedervi.
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per ulteriori informazioni sugli attributi supportati da Windows Media Player, vedere il [riferimento all'attributo](attribute-reference.md).
+Per altre informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni [di riferimento sugli attributi](attribute-reference.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il modo in cui vengono utilizzate le varie proprietà e i metodi delle interfacce **IWMPPlaylist** e **IWMPMedia** compilando un controllo TreeView con nodi per la playlist corrente, gli attributi della playlist, gli elementi multimediali nella playlist e gli attributi degli elementi multimediali. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente illustra l'uso di varie proprietà e metodi delle interfacce **IWMPPlaylist** e **IWMPMedia** compilando un controllo treeview con nodi per la playlist corrente, gli attributi della playlist, gli elementi multimediali nella playlist e gli attributi degli elementi multimediali. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -173,7 +173,7 @@ displayAttributes.Nodes.Add(mediaRootNode)
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

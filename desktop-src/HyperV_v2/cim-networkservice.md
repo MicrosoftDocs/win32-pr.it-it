@@ -1,7 +1,7 @@
 ---
-description: Questa classe è deprecata. È invece consigliabile derivare dalla classe del \_ servizio CIM.
+description: Questa classe è deprecata. È invece consigliabile derivare dalla classe di servizio \_ CIM.
 ms.assetid: 67b3a96e-4549-41e0-8097-f8d145df0c49
-title: Classe CIM_NetworkService
+title: CIM_NetworkService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b141e6e38f2fafefdf6e75670b975e0fcdd2961c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfb2ea7b122516cc3b62f675684649e22577171f713856638f97985d9713e8d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694691"
 ---
-# <a name="cim_networkservice-class"></a>\_Classe CIM NetworkService
+# <a name="cim_networkservice-class"></a>Classe CiM \_ NetworkService
 
-Questa classe è deprecata. È invece consigliabile derivare dalla classe [**del \_ servizio CIM**](cim-service.md) .
+Questa classe è deprecata. È invece consigliabile derivare dalla [**classe di servizio CIM. \_**](cim-service.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,32 +43,32 @@ class CIM_NetworkService : CIM_Service
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ NetworkService** presenta questi tipi di membri:
+La **classe CIM \_ NetworkService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ NetworkService** dispone di queste proprietà.
+La **classe CIM \_ NetworkService** ha queste proprietà.
 
 <dl> <dt>
 
 **Parole chiave**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore")
 </dt> </dl>
 
 Questa proprietà è deprecata e non deve essere usata.
 
 > [!Note]  
-> Descrizione deprecata: matrice di parole chiave che può essere utilizzata nelle query.
+> Descrizione deprecata: matrice di parole chiave che possono essere usate nelle query.
 
  
 
@@ -77,19 +77,19 @@ Questa proprietà è deprecata e non deve essere usata.
 **ServiceURL**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ ServiceAccessURI")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ ServiceAccessURI")
 </dt> </dl>
 
-Questa proprietà è deprecata. È invece consigliabile usare la classe **CIM \_ ServiceAccessURI** .
+Questa proprietà è deprecata. È invece consigliabile usare la **classe \_ CIM ServiceAccessURI.**
 
 > [!Note]  
-> Descrizione deprecata: un URL che fornisce il protocollo, il percorso di rete e altre informazioni specifiche del servizio necessarie per accedere al servizio.
+> Descrizione deprecata: URL che fornisce il protocollo, il percorso di rete e altre informazioni specifiche del servizio necessarie per accedere al servizio.
 
  
 
@@ -98,19 +98,19 @@ Questa proprietà è deprecata. È invece consigliabile usare la classe **CIM \_
 **StartupConditions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore")
 </dt> </dl>
 
 Questa proprietà è deprecata e non deve essere usata.
 
 > [!Note]  
-> Descrizione deprecata: le condizioni preliminari che devono essere soddisfatte affinché il servizio venga avviato correttamente.
+> Descrizione deprecata: le pre-condizioni che devono essere soddisfatte per consentire il corretto avvio del servizio.
 
  
 
@@ -119,19 +119,19 @@ Questa proprietà è deprecata e non deve essere usata.
 **StartupParameters**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore")
 </dt> </dl>
 
 Questa proprietà è deprecata e non deve essere usata.
 
 > [!Note]  
-> Deprecated Description: parametri che devono essere forniti al metodo **StartService** per poter avviare correttamente il servizio.
+> Descrizione deprecata: parametri che devono essere forniti al metodo **StartService** per consentire l'avvio corretto del servizio.
 
  
 
@@ -145,8 +145,8 @@ Questa proprietà è deprecata e non deve essere usata.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -155,7 +155,7 @@ Questa proprietà è deprecata e non deve essere usata.
 
 <dl> <dt>
 
-[**\_Servizio CIM**](cim-service.md)
+[**Servizio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

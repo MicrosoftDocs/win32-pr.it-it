@@ -1,19 +1,19 @@
 ---
-description: Origine del BoundingFrustum.
+description: Origine dell'oggetto BoundingFrustum.
 ms.assetid: 9cfe75ae-cd9c-41c6-ae05-990d6b27fb04
-title: BoundingFrustum. Origin (DirectXCollision. h)
+title: BoundingFrustum.Origin (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8769ff8ff60d115d9aca45c215945170c1b1af34
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da59c06b7fb65501d882c376bc40ab5c366aa3ab5a1764d8b0066a3e89c4d582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740841"
 ---
-# <a name="boundingfrustumorigin"></a>BoundingFrustum. Origin
+# <a name="boundingfrustumorigin"></a>BoundingFrustum.Origin
 
-Origine del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Origine dell'oggetto [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 **Riferimento**
 </dt> <dt>
 
-[**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
+[**Boundingfrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 </dt> </dl>
 
  

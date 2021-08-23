@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f9962ff94e8bf80041d7b61ecf97220d573131fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5998e26eab79d3e5f0b9e3628614e1cc2ecbfb7040e866a898a09ad54fa49f10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710721"
 ---
-# <a name="cpl_inquire-message"></a>Messaggio \_ CPL INQUIRE
+# <a name="cpl_inquire-message"></a>Messaggio CPL \_ INQUIRE
 
-Inviato alla [**funzione CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) di un'Pannello di controllo per richiedere informazioni su una finestra di dialogo che l'applicazione supporta.
+Inviato alla funzione [**CPlApplet di**](/windows/win32/api/cpl/nc-cpl-applet_proc) un'Pannello di controllo per richiedere informazioni su una finestra di dialogo che l'applicazione supporta.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Inviato alla [**funzione CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc)
 *uAppNum* 
 </dt> <dd>
 
-Numero della finestra di dialogo. Questo numero deve essere compreso nell'intervallo compreso tra zero e uno minore del valore restituito in risposta al messaggio [**\_ GETCOUNT CPL**](cpl-getcount.md) (CPL \_ GETCOUNT – 1).
+Numero della finestra di dialogo. Questo numero deve essere compreso nell'intervallo da zero a uno minore del valore restituito in risposta al messaggio [**\_ GETCOUNT CPL**](cpl-getcount.md) (CPL \_ GETCOUNT – 1).
 
 </dd> <dt>
 
@@ -50,11 +50,11 @@ Se la [**funzione CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) elabor
 
 Il Pannello di controllo invia il messaggio **CPL \_ INQUIRE** una volta per ogni finestra di dialogo supportata dall'applicazione. Il Pannello di controllo invia anche un [**messaggio CPL \_ NEWINQUIRE**](cpl-newinquire.md) per ogni finestra di dialogo. Questi messaggi vengono inviati immediatamente dopo il [**messaggio \_ GETCOUNT CPL.**](cpl-getcount.md) Tuttavia, il sistema non garantisce l'ordine in cui vengono inviati i messaggi **CPL \_ INQUIRE** e **CPL \_ NEWINQUIRE.**
 
-È possibile eseguire l'inizializzazione per la finestra di dialogo quando si riceve **CPL \_ INQUIRE**. Se è necessario allocare memoria, eseguire questa operazione in risposta al messaggio [**\_ CPL INIT.**](cpl-init.md)
+È possibile eseguire l'inizializzazione per la finestra di dialogo quando si riceve **CPL \_ INQUIRE**. Se è necessario allocare memoria, eseguire questa operazione in risposta al [**messaggio \_ CPL INIT.**](cpl-init.md)
 
 Il [**messaggio CPL \_ NEWINQUIRE**](cpl-newinquire.md) restituisce informazioni in un formato che il sistema non può memorizzare nella cache. Per questo motivo, la maggior [**parte delle funzioni CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) deve elaborare **CPL \_ INQUIRE** e ignorare **CPL \_ NEWINQUIRE**.
 
-Le uniche applicazioni che devono usare [**CPL \_ NEWINQUIRE**](cpl-newinquire.md) sono quelle che devono modificare l'icona o visualizzare le stringhe in base allo stato del computer. In questo caso, il gestore **CPL \_ INQUIRE** deve specificare il valore CPL DYNAMIC RES per i membri \_ \_ **idIcon**, **idName** o **idInfo** della struttura [**CPLINFO,**](/windows/win32/api/cpl/ns-cpl-cplinfo) anziché specificare un identificatore di risorsa valido. In questo modo il Pannello di controllo invia il messaggio **CPL \_ NEWINQUIRE** ogni volta che sono necessarie l'icona e le stringhe di visualizzazione, consentendo di specificare le informazioni in base allo stato corrente del computer. Questa operazione è notevolmente più lenta rispetto all'uso di informazioni memorizzate nella cache.
+Le uniche applicazioni che devono usare [**CPL \_ NEWINQUIRE**](cpl-newinquire.md) sono quelle che devono modificare l'icona o visualizzare le stringhe in base allo stato del computer. In questo caso, il gestore **CPL \_ INQUIRE** deve specificare il valore DYNAMIC RES CPL per i membri \_ \_ **idIcon**, **idName** o **idInfo** della [**struttura CPLINFO,**](/windows/win32/api/cpl/ns-cpl-cplinfo) anziché specificare un identificatore di risorsa valido. In questo modo il Pannello di controllo invierà il messaggio **CPL \_ NEWINQUIRE** ogni volta che sono necessarie l'icona e le stringhe di visualizzazione, consentendo di specificare le informazioni in base allo stato corrente del computer. Questa operazione è notevolmente più lenta rispetto all'uso di informazioni memorizzate nella cache.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Le uniche applicazioni che devono usare [**CPL \_ NEWINQUIRE**](cpl-newinquire.m
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                      |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                      |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
 | Intestazione<br/>                   | <dl> <dt>Cpl.h</dt> </dl> |
 
