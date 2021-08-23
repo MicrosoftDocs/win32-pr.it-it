@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. IntersectIndexes'
-title: API. IntersectIndexes, metodo
+description: Altre informazioni sul metodo Api.IntersectIndexes
+title: Metodo Api.IntersectIndexes
 TOCTitle: 'IntersectIndexes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.IntersectIndexes(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID[])
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.intersectindexes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8dfe5784ecd5ab517e183f8eeeb5f79315fe585a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88bcc872fc557e3942a119845206661bd48705317163520924059af5456f6e00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983681"
 ---
-# <a name="apiintersectindexes-method"></a>API. IntersectIndexes, metodo
+# <a name="apiintersectindexes-method"></a>Metodo Api.IntersectIndexes
 
-Intersecare un gruppo di intervalli di indice e restituire i segnalibri dei record presenti in tutti gli intervalli di indice. Vedere anche [JetIntersectIndexes (JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit)](./api.jetintersectindexes-method.md).
+Interseca un gruppo di intervalli di indici e restituisce i segnalibri dei record presenti in tutti gli intervalli di indici. Vedere anche [JetIntersectIndexes(JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit)](./api.jetintersectindexes-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,21 +65,21 @@ public static IEnumerable<byte[]> IntersectIndexes(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
   - tableids  
-    Tipo \[\]  
+    digitare: \[\]  
     
-    TableIDs da utilizzare. Ogni TableID deve provenire da un indice diverso nella stessa tabella e avere un intervallo di indice attivo. Per creare un intervallo di indici, usare [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) .
+    TableID da usare. Ogni tableid deve essere da un indice diverso nella stessa tabella e avere un intervallo di indici attivo. Usare [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) per creare un intervallo di indici.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
-Segnalibri dei record trovati in tutti gli intervalli di indice. I segnalibri vengono restituiti nell'ordine delle chiavi primarie.  
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
+Segnalibri dei record presenti in tutti gli intervalli di indici. I segnalibri vengono restituiti in ordine di chiave primaria.  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -87,6 +87,6 @@ Segnalibri dei record trovati in tutti gli intervalli di indice. I segnalibri ve
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

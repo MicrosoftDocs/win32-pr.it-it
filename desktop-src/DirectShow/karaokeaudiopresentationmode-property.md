@@ -1,15 +1,15 @@
 ---
-description: La proprietà KaraokeAudioPresentationMode imposta o recupera la combinazione di altoparlanti a destra sinistra per i canali karaoke ausiliari.
+description: La proprietà KaraokeAudioPresentationMode imposta o recupera la combinazione di altoparlanti di destra a sinistra per i canali ausiliari per il glossario.
 ms.assetid: f32706eb-7f97-433d-854a-17d57cc60190
 title: Proprietà KaraokeAudioPresentationMode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 429f15c99d58136d4c423c4f66b19d12c93802a9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: af634a3beaade7e497cdc6d158ccf1121ebb09542bdec92ceaae823b1b91ccdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952380"
 ---
 # <a name="karaokeaudiopresentationmode-property"></a>Proprietà KaraokeAudioPresentationMode
 
@@ -18,7 +18,7 @@ ms.locfileid: "106303810"
 
  
 
-La `KaraokeAudioPresentationMode` proprietà imposta o recupera la combinazione di altoparlanti a destra sinistra per i canali karaoke ausiliari.
+La proprietà imposta o recupera la combinazione di altoparlanti di destra a sinistra per i canali `KaraokeAudioPresentationMode` ausiliari per il tutto.
 
 ``` syntax
 [iMode ] = MSWebDVD.KaraokeAudioPresentationMode
@@ -26,24 +26,24 @@ La `KaraokeAudioPresentationMode` proprietà imposta o recupera la combinazione 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore integer contenente un set di flag di bit che indica il modo in cui i canali karaoke ausiliari vengono riprodottoti agli altoparlanti sinistro e destro.
+Restituisce un valore intero contenente un set di flag di bit che indicano come i canali ausiliari del disacco ai parlanti sinistro e destro vengono downmix.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e il valore predefinito è zero.
+Questa proprietà è di lettura/scrittura con un valore predefinito pari a zero.
 
-I canali audio sono in base zero, quindi i canali 0 e 1 rappresentano in genere i canali speaker destro e sinistro e i canali da 2 a 4 sono i tre canali karaoke ausiliari. Quando l'oggetto MSWebDVD entra in modalità karaoke, disattiva automaticamente i canali 2 e versioni successive. Utilizzare operazioni **OR bit per bit** per impostare il bit appropriato in modo da inviare un canale ausiliario all'altoparlante sinistro, all'altoparlante destro, a entrambi gli altoparlanti (entrambi i bit) o a nessun altoparlante (entrambi BITS). Questi bit sono tutti spenti per impostazione predefinita ogni volta che il navigatore DVD entra in modalità karaoke. Il valore dei bit e la relativa azione corrispondente sono indicati nella tabella seguente.
+I canali audio sono in base zero, quindi i canali 0 e 1 rappresentano in genere i canali del parlante destro e sinistro e i canali da 2 a 4 sono i tre canali ausiliari per il perno. Quando l'oggetto MSWebDVD entra in modalità tutto schermo, disattiva automaticamente i canali 2 e versioni successive. Usare operazioni **OR** bit per bit per impostare il bit appropriato per inviare un canale ausiliario al parlante sinistro, al parlante destro, a entrambi gli altoparlanti (entrambi i bit) o a nessun parlante (entrambi i bit disattivati). Questi bit sono tutti disattivati per impostazione predefinita ogni volta che lo strumento di spostamento DVD entra in modalità tutto schermo. Il valore dei bit e l'azione corrispondente sono riportati nella tabella seguente.
 
 
 
 | Valore  | Descrizione                            |
 |--------|----------------------------------------|
-| 0x0004 | Canale 2 downmix a sinistra  |
-| 0x0008 | Downmix Channel 3 (altoparlante a sinistra)  |
-| 0x0010 | Downmix Channel 4 (altoparlante a sinistra)  |
-| 0x0400 | Downmix Channel 2 nell'altoparlante destro |
-| 0x0800 | Downmix Channel 3 nell'altoparlante destro |
-| 0x1000 | Downmix Channel 4 nell'altoparlante destro |
+| 0x0004 | Downmix Channel 2 a sinistra  |
+| 0x0008 | Downmix Channel 3 a sinistra  |
+| 0x0010 | Downmix Channel 4 a sinistra  |
+| 0x0400 | Downmix Channel 2 al parlante destro |
+| 0x0800 | Downmix Channel 3 al parlante destro |
+| 0x1000 | Downmix Channel 4 al parlante destro |
 
 
 

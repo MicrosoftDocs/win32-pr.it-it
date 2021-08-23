@@ -1,11 +1,11 @@
 ---
-title: Metodo getchallenge IWMDRMNonSilentLicenseAquisition (wmdrmsdk. h)
-description: Il metodo getchallenge recupera la richiesta di licenza che deve essere inviata al server licenze.
+title: Metodo IWMDRMNonSilentLicenseAquisition GetChallenge (Wmdrmsdk.h)
+description: Il metodo GetChallenge recupera la richiesta di licenza che deve essere pubblicata nel server licenze.
 ms.assetid: f2ff8484-8fe2-4c74-82c1-9bc14f8197e0
 keywords:
-- Metodo getchallenge-formato Windows Media
-- Metodo getchallenge, formato Windows Media, interfaccia IWMDRMNonSilentLicenseAquisition
-- Interfaccia IWMDRMNonSilentLicenseAquisition-formato Windows Media, metodo getchallenge
+- Metodo GetChallenge per Windows Media Format
+- Metodo GetChallenge windows Media Format, interfaccia IWMDRMNonSilentLicenseAquisition
+- Interfaccia IWMDRMNonSilentLicenseAquisition windows Media Format , metodo GetChallenge
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0dc63c63e5d7a62c06cbe791d9a5e5e8d09c5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf495652033bdb5201f2b4e5bd9dc1d6a222cc3ebdf4ec6438fe391ed06fac85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027519"
 ---
-# <a name="iwmdrmnonsilentlicenseaquisitiongetchallenge-method"></a>Metodo IWMDRMNonSilentLicenseAquisition:: getchallenge
+# <a name="iwmdrmnonsilentlicenseaquisitiongetchallenge-method"></a>Metodo IWMDRMNonSilentLicenseAquisition::GetChallenge
 
-Il metodo **getchallenge** recupera la richiesta di licenza che deve essere inviata al server licenze.
+Il **metodo GetChallenge** recupera la richiesta di licenza da pubblicare nel server licenze.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT GetChallenge(
 
 <dl> <dt>
 
-*pbstrChallenge* \[ out\]
+*pbstrChallenge* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di una variabile che riceve la richiesta di licenza.
@@ -52,13 +52,13 @@ Indirizzo di una variabile che riceve la richiesta di licenza.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

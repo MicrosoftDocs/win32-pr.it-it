@@ -1,5 +1,5 @@
 ---
-description: 'Ulteriori informazioni su: classe conversioni'
+description: Altre informazioni sulla classe Conversions
 title: Classe Conversions
 TOCTitle: Conversions class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Conversions
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43a5716348fb41ce6875729f97094fddb05a228c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b224985569d5fd04c10bc923c591da0faecac2b967b6c347333d8bfe6c5d546c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042309"
 ---
 # <a name="conversions-class"></a>Classe Conversions
 
-Fornire i metodi per convertire i dati e i flag tra Win32 e il .NET Framework.
+Fornire metodi per convertire i dati e i flag tra Win32 e .NET Framework.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Conversions  
+  Microsoft.Isam.Esent.Interop.Conversions  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri delle conversioni](./conversions-members.md)
+[Conversioni di membri](./conversions-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

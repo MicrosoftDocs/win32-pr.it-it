@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bda9754efcae8ebe353b8272ba57c5640ecdf946
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d5225fb7ab3df89e719dcdcd89ddf1ab8f506db8c1098b997a7297befe1ba6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982871"
 ---
 # <a name="backupgrbit-enumeration"></a>Enumerazione BackupGrbit
 
-Opzioni per [JetBackupInstance (JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS)](./api.jetbackupinstance-method.md).
+Opzioni per [JetBackupInstance(JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS)](./api.jetbackupinstance-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -79,13 +79,13 @@ public enum BackupGrbit
 </tr>
 <tr class="even">
 <td></td>
-<td>Incremental</td>
+<td>Incrementale</td>
 <td>Crea un backup incrementale anziché un backup completo. Ciò significa che verrà eseguito il backup solo dei file di log creati dopo l'ultimo backup completo o incrementale.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Atomica</td>
-<td>Crea un backup completo del database. In questo modo è possibile mantenere un backup esistente nella stessa directory se il nuovo backup non riesce.</td>
+<td>Crea un backup completo del database. In questo modo è possibile conservare un backup esistente nella stessa directory se il nuovo backup ha esito negativo.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum BackupGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

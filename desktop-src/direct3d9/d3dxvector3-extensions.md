@@ -4,16 +4,16 @@ ms.assetid: 0ac57a45-8c84-4f38-8537-21d7dd6c7c85
 title: Estensioni D3DXVECTOR3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b70712aa9bdd35a9d2d4b7144cc281ad0785d58e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 72c359a76bb0c6dec8498b55da85e13e45e8efc04275dff6251c5b201e87784f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044509"
 ---
 # <a name="d3dxvector3-extensions"></a>Estensioni D3DXVECTOR3
 
-Il contenuto di questa pagina è stato spostato nella pagina [**D3DXVECTOR3**](d3dxvector3.md) .
+Il contenuto di questa pagina è stato spostato nella [**pagina D3DXVECTOR3.**](d3dxvector3.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

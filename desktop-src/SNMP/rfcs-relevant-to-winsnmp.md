@@ -1,44 +1,44 @@
 ---
 title: RFC rilevanti per WinSNMP
-description: Gli standard TCP/IP sono definiti nelle richieste di commenti (RFC), pubblicate da Internet Engineering Task Force (IETF). Nella tabella seguente sono elencate le RFC rilevanti per le funzionalità WinSNMP.
+description: Gli standard TCP/IP sono definiti in RFC (Requests for Comments), pubblicate da Internet Engineering Task Force (IETF). Le RFC rilevanti per le funzionalità WinSNMP sono elencate nella tabella seguente.
 ms.assetid: d02edf40-d5e0-4f58-a440-a13c160d6735
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6820e43a924824877b50f528cfad7e109407450
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9ee622c3ef261e6d0e400d23dc4244ffffecf6617964548b2fcb266d3735764
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009109"
 ---
 # <a name="rfcs-relevant-to-winsnmp"></a>RFC rilevanti per WinSNMP
 
-Gli standard TCP/IP sono definiti nelle richieste di commenti (RFC), pubblicate da Internet Engineering Task Force (IETF). Nella tabella seguente sono elencate le RFC rilevanti per le funzionalità WinSNMP.
+Gli standard TCP/IP sono definiti in RFC (Requests for Comments), pubblicate da Internet Engineering Task Force (IETF). Le RFC rilevanti per le funzionalità WinSNMP sono elencate nella tabella seguente.
 
 
 
 | Numero RFC | Titolo                                                                                                  |
 |------------|--------------------------------------------------------------------------------------------------------|
-| 1155       | "Struttura e identificazione delle informazioni di gestione per Internet basati su TCP/IP"                    |
+| 1155       | "Struttura e identificazione delle informazioni di gestione per Internet basate su TCP/IP"                    |
 | 1157       | "A Simple Network Management Protocol (SNMP)"                                                          |
-| 1213       | "Base informazioni di gestione per la gestione della rete di Internet basati su TCP/IP: MIB-II"                 |
-| 1901       | "Introduzione a SNMPv2 basato su community"                                                               |
+| 1213       | "Management Information Base for Network Management of TCP/IP-based Internets: MIB-II"                 |
+| 1901       | "Introduction to Community-based SNMPv2"                                                               |
 | 1902       | "Struttura delle informazioni di gestione per la versione 2 del Simple Network Management Protocol (SNMPv2)" |
-| 1903       | "Convenzioni testuali per la versione 2 del Simple Network Management Protocol (SNMPv2)"                 |
-| 1904       | "Istruzioni di conformità per la versione 2 del Simple Network Management Protocol (SNMPv2)"              |
-| 1905       | "Operazioni di protocollo per la versione 2 del Simple Network Management Protocol (SNMPv2)"                 |
-| 1906       | "Mapping di trasporto per la versione 2 del Simple Network Management Protocol (SNMPv2)"                  |
-| 1907       | "Information Management base per la versione 2 del Simple Network Management Protocol (SNMPv2)"         |
-| 1908       | "Coesistenza tra la versione 1 e la versione 2 del Framework di gestione di rete standard per Internet"    |
-| 2089       | "V2ToV1 mapping SNMPv2 in SNMPv1 all'interno di un agente SNMP bi-lingua"                                     |
+| 1903       | "Textual Conventions for Version 2 of the Simple Network Management Protocol (SNMPv2)"                 |
+| 1904       | "Conformance Statements for Version 2 of the Simple Network Management Protocol (SNMPv2)"              |
+| 1905       | "Protocol Operations for Version 2 of the Simple Network Management Protocol (SNMPv2)"                 |
+| 1906       | "Transport Mappings for Version 2 of the Simple Network Management Protocol (SNMPv2)"                  |
+| 1907       | "Management Information Base for Version 2 of the Simple Network Management Protocol (SNMPv2)"         |
+| 1908       | "Coesistenza tra la versione 1 e la versione 2 di Internet Standard Network Management Framework"    |
+| 2089       | "V2ToV1 Mapping SNMPv2 to SNMPv1 within a bi-lingual SNMP agent"                                     |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

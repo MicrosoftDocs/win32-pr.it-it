@@ -1,30 +1,30 @@
 ---
-title: Elenco delle sottoscrizioni degli agenti di raccolta eventi
-description: È possibile recuperare un elenco di nomi di sottoscrizioni degli agenti di raccolta eventi abilitati in un computer locale.
+title: Elenco delle sottoscrizioni dell'agente di raccolta eventi
+description: È possibile recuperare un elenco di nomi di sottoscrizioni dell'agente di raccolta eventi abilitate in un computer locale.
 ms.assetid: b44fc694-b94a-4fc5-95d1-72afb016ad72
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab030e3f85b1abc0e763c30dfa4208023b2e654
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67f67e888ba62b225603cd47293936b7010ce9f730238119d2b5d36ca9ed6dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997921"
 ---
-# <a name="listing-event-collector-subscriptions"></a>Elenco delle sottoscrizioni degli agenti di raccolta eventi
+# <a name="listing-event-collector-subscriptions"></a>Elenco delle sottoscrizioni dell'agente di raccolta eventi
 
-È possibile recuperare un elenco di nomi di sottoscrizioni degli agenti di raccolta eventi abilitati in un computer locale. Utilizzando la funzione [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) , è possibile ottenere un handle per un enumeratore di sottoscrizioni. Dopo la creazione dell'handle, la funzione [**EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) viene utilizzata per elencare le sottoscrizioni nel computer locale.
+È possibile recuperare un elenco di nomi di sottoscrizioni dell'agente di raccolta eventi abilitate in un computer locale. La funzione [**EcOpenSubscriptionEnum**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscriptionenum) consente di ottenere un handle per un enumeratore di sottoscrizione. Dopo aver creato l'handle, viene [**usata la funzione EcEnumNextSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecenumnextsubscription) per elencare le sottoscrizioni nel computer locale.
 
 > [!Note]
 >
-> È possibile utilizzare l'esempio di codice seguente per recuperare un elenco di sottoscrizioni oppure è possibile digitare il comando seguente al prompt dei comandi:
+> È possibile usare l'esempio di codice seguente per recuperare un elenco di sottoscrizioni oppure digitare il comando seguente al prompt dei comandi:
 >
 > **wecutil es**
 
- 
+ 
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come elencare le sottoscrizioni degli agenti di raccolta eventi.
+Nell'esempio di codice C++ seguente viene illustrato come elencare le sottoscrizioni dell'agente di raccolta eventi.
 
 
 ```C++
@@ -122,12 +122,12 @@ void __cdecl wmain()
 
 <dl> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

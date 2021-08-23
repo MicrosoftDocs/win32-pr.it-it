@@ -4,16 +4,16 @@ description: IAgentCharacter GestureAt
 ms.assetid: ece84652-383e-4397-a6d9-f0209dd80767
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 266dc2d5e797ec0c7b30f7f827a094cd01c04195
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9bde86f9e1e60820aa7e1bc3a3f839dc920efda001f5b15e4f1ec7df4fc0cd7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976451"
 ---
 # <a name="iagentcharactergestureat"></a>IAgentCharacter::GestureAt
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GestureAt(
@@ -23,38 +23,38 @@ HRESULT GestureAt(
 );
 ```
 
-Riproduce l'animazione dello stato **gestuale** associato in base alla posizione specificata.
+Riproduce **l'animazione dello stato di inserimento** associata in base alla posizione specificata.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata. Quando la funzione restituisce, *pdwReqID* contiene l'ID della richiesta.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita. Quando la funzione viene restituita, *pdwReqID* contiene l'ID della richiesta.
 
 <dl> <dt>
 
-<span id="x"></span><span id="X"></span>*x*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordinata x della posizione specificata, espressa in pixel, rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata x della posizione specificata in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*y*
+<span id="y"></span><span id="Y"></span>*Y*
 </dt> <dd>
 
-Coordinata y della posizione specificata, espressa in pixel, rispetto all'origine dello schermo (in alto a sinistra).
+Coordinata y della posizione specificata in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> <dt>
 
 <span id="pdwReqID"></span><span id="pdwreqid"></span><span id="PDWREQID"></span>*pdwReqID*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve l'ID richiesta **GestureAt** .
+Indirizzo di una variabile che riceve l'ID **richiesta GestureAt.**
 
 </dd> </dl>
 
-Il server determina automaticamente e riproduce l'animazione gestuale appropriata in base alla posizione corrente del carattere e alla posizione specificata. Quando si usa il protocollo HTTP per accedere ai dati di tipo carattere e animazione, usare il metodo [**Prepare**](iagentcharacter--prepare.md) per assicurarsi che le animazioni siano disponibili prima di chiamare questo metodo.
+Il server determina e riproduce automaticamente l'animazione di inserimento appropriata in base alla posizione corrente del carattere e alla posizione specificata. Quando si usa il protocollo HTTP per accedere ai dati di animazione e caratteri, usare il metodo [**Prepare**](iagentcharacter--prepare.md) per assicurarsi che le animazioni siano disponibili prima di chiamare questo metodo.
 
- 
+ 
 
- 
+ 
 
 
 

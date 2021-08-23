@@ -1,5 +1,5 @@
 ---
-title: Metodo ID3DX12PipelineParserCallbacks ErrorDuplicateSubobject (D3DX12. h)
+title: Metodo ID3DX12PipelineParserCallbacks ErrorDuplicateSubobject (D3DX12.h)
 description: Chiama il callback di errore del sottooggetto duplicato di un oggetto che implementa questa interfaccia.
 ms.assetid: 625C72C4-7BFB-4DAD-8D39-EDDBC7189499
 keywords:
@@ -17,14 +17,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43b00dae4675ff05a43e566a8ead815ea24f6c16
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c33724b1fdfec4951ce2efb31d4916ce210dc2b73858a5ef250c14a8744646bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045469"
 ---
-# <a name="id3dx12pipelineparsercallbackserrorduplicatesubobject-method"></a>Metodo ID3DX12PipelineParserCallbacks:: ErrorDuplicateSubobject
+# <a name="id3dx12pipelineparsercallbackserrorduplicatesubobject-method"></a>Metodo ID3DX12PipelineParserCallbacks::ErrorDuplicateSubobject
 
 Chiama il callback di errore del sottooggetto duplicato di un oggetto che implementa questa interfaccia.
 
@@ -43,18 +43,18 @@ void ErrorDuplicateSubobject(
 
 <dl> <dt>
 
-*DuplicateType* 
+*Tipo duplicato* 
 </dt> <dd>
 
-Tipo: **[ **\_ \_ \_ \_ tipo di sottooggetto stato della pipeline D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)**
+Tipo: **[ **D3D12 \_ PIPELINE \_ STATE \_ SUBOBJECT \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)**
 
-Tipo di sottooggetto duplicato.
+Tipo di oggetto secondario duplicato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Non restituisce alcun elemento.
+Non restituisce alcun valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Non restituisce alcun elemento.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Non restituisce alcun elemento.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Tipo di \_ \_ sottooggetto stato della pipeline D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DI OGGETTO SECONDARIO STATO PIPELINE D3D12 \_ \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

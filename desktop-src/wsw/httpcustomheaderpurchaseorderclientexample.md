@@ -1,30 +1,30 @@
 ---
 title: HttpCustomHeaderPurchaseOrderClientExample
-description: Questo esempio illustra come usare intestazioni personalizzate con il proxy di servizio.
+description: In questo esempio viene illustrato come usare intestazioni personalizzate con il proxy del servizio.
 ms.assetid: d56e68cd-c910-4f41-a672-c894ba134e3b
 keywords:
-- HttpCustomHeaderPurchaseOrderClientExample native-servizi Web
+- HttpCustomHeaderPurchaseOrderClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd2310c211159cc454e27ba3506865b09efcbf33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4372917b519ec72c3454defe6e13e323034dda1c1065848ae4e55a2a48cdc730
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963320"
 ---
 # <a name="httpcustomheaderpurchaseorderclientexample"></a>HttpCustomHeaderPurchaseOrderClientExample
 
-Questo esempio illustra come usare intestazioni personalizzate con il proxy di servizio.
+In questo esempio viene illustrato come usare intestazioni personalizzate con il proxy del servizio.
 
--   [HttpCustomHeaderClient. cpp](#httpcustomheaderclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
--   [OrderSessionHeader. xsd](#ordersessionheaderxsd)
+-   [HttpCustomHeaderClient.cpp](#httpcustomheaderclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
+-   [OrderSessionHeader.xsd](#ordersessionheaderxsd)
 -   [Makefile](#makefile)
 
-## <a name="httpcustomheaderclientcpp"></a>HttpCustomHeaderClient. cpp
+## <a name="httpcustomheaderclientcpp"></a>HttpCustomHeaderClient.cpp
 
 
 ```C++
@@ -297,7 +297,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -408,7 +408,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="ordersessionheaderxsd"></a>OrderSessionHeader. xsd
+## <a name="ordersessionheaderxsd"></a>OrderSessionHeader.xsd
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -457,9 +457,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

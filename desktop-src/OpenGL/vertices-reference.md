@@ -1,27 +1,27 @@
 ---
-title: Riferimento ai vertici
-description: Riferimento ai vertici
+title: Informazioni di riferimento sui vertici
+description: Informazioni di riferimento sui vertici
 ms.assetid: bdb885ca-cbe8-4035-af92-9c9c234ec77b
 keywords:
-- Pipeline di elaborazione OpenGL, riferimento ai vertici
-- informazioni di riferimento sui vertici OpenGL
-- Guida di riferimento a OpenGL, vertici
+- Pipeline di elaborazione OpenGL, informazioni di riferimento sui vertici
+- informazioni di riferimento per i vertici OpenGL
+- OpenGL, informazioni di riferimento sui vertici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e83e356c62d6a6b23eb136d8fa8d46fb31a5203
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e77b208b5e337ef3560b283408fb3b44df9e926d7aa3ca18568d6a67cec4d92e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011869"
 ---
-# <a name="vertices-reference"></a>Riferimento ai vertici
+# <a name="vertices-reference"></a>Informazioni di riferimento sui vertici
 
 -   [**glBegin**](glbegin.md)
 -   [**glColor\***](glcolor-functions.md)
 -   [**glColorMaterial**](glcolormaterial.md)
 -   [**glEdgeFlag\***](gledgeflag-functions.md)
--   [**Remo**](glend.md)
+-   [**glEnd**](glend.md)
 -   [**glFrontFace**](glfrontface.md)
 -   [**glIndex**](glindex-functions.md)
 -   [**glLight\***](gllight-functions.md)
@@ -44,9 +44,9 @@ ms.locfileid: "104515823"
 -   [**glTranslate\***](gltranslate.md)
 -   [**glVertex\***](glvertex-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

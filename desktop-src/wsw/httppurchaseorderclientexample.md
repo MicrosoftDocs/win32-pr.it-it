@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderClientExample
-description: Questo esempio illustra come usare il proxy del servizio per comunicare con un servizio PurchaseOrder basato su HTTP.
+description: Questo esempio illustra come usare il proxy del servizio per la conversazione con un servizio PurchaseOrder basato su HTTP.
 ms.assetid: e577b06c-28b1-4f8f-a6af-025b9672cf27
 keywords:
-- HttpPurchaseOrderClientExample native-servizi Web
+- HttpPurchaseOrderClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fa6a883fa6c9ec041bb1454ba7074c06bd20c61
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f7ce4fe1374ac3d3e328c7d3d1b28b811f2dae5d613470511ede5cdaa753e30a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963220"
 ---
 # <a name="httppurchaseorderclientexample"></a>HttpPurchaseOrderClientExample
 
-Questo esempio illustra come usare il proxy del servizio per comunicare con un servizio PurchaseOrder basato su HTTP.
+Questo esempio illustra come usare il proxy del servizio per la conversazione con un servizio PurchaseOrder basato su HTTP.
 
--   [HttpPurchaseOrderClient. cpp](#httppurchaseorderclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpPurchaseOrderClient.cpp](#httppurchaseorderclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httppurchaseorderclientcpp"></a>HttpPurchaseOrderClient. cpp
+## <a name="httppurchaseorderclientcpp"></a>HttpPurchaseOrderClient.cpp
 
 
 ```C++
@@ -300,7 +300,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -439,9 +439,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

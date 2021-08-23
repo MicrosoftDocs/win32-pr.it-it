@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4bd8e864531604fb36c2abe0bcd57ac5b3a9c869
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b75ce6b5f91f5bd9019a4bf6e46266269b72ac7a5e719f7a58b2f2e702375a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953830"
 ---
 # <a name="crenderedinputpincrenderedinputpin-constructor"></a>Costruttore CRenderedInputPin.CRenderedInputPin
 
@@ -49,7 +49,7 @@ CRenderedInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto . Per altre informazioni, vedere [**Classe CBaseObject**](cbaseobject.md).
+Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**Classe CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Puntatore al filtro che ha creato questo segnaposto.
 *Plock* 
 </dt> <dd>
 
-Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato. Può trattarsi della stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) usato per serializzare le modifiche dello stato. Può trattarsi della stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Stringa di caratteri wide contenente il nome del pin (usato anche come identific
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amextra.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Amextra.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
 description: Ottiene un set di flag che indicano le opzioni correnti della visualizzazione.
 ms.assetid: 83a17033-bd7f-44de-a0c8-460d12c4825d
-title: Proprietà ShellFolderView. ViewOptions (shldisp. h)
+title: Proprietà ShellFolderView.ViewOptions (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e336034e7d5037b8037c6fd0ef549fe5f87da312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c49389700494c646976ee7df5e67782b110fc085f4328cb139b9604523c8622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968430"
 ---
-# <a name="shellfolderviewviewoptions-property"></a>Proprietà ShellFolderView. ViewOptions
+# <a name="shellfolderviewviewoptions-property"></a>ShellFolderView.ViewOptions - proprietà
 
 Ottiene un set di flag che indicano le opzioni correnti della visualizzazione.
 
@@ -37,7 +37,7 @@ objViewOptions = ShellFolderView.ViewOptions
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che riceve l'oggetto opzioni di visualizzazione. Contiene uno o più dei valori seguenti:
+Variabile di tipo [**IDispatch che**](/windows/win32/api/oaidl/nn-oaidl-idispatch) riceve l'oggetto delle opzioni di visualizzazione. Contiene uno o più dei valori seguenti:
 
 <dt>
 
@@ -48,7 +48,7 @@ Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) c
 
 </dt> <dd>
 
-L'opzione **Mostra tutti i file** è abilitata.
+**L'opzione Mostra tutti i** file è abilitata.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ L'opzione **Mostra tutti i file** è abilitata.
 
 </dt> <dd>
 
-L'opzione **Nascondi estensioni per i tipi di file noti** è disabilitata.
+**L'opzione Nascondi estensioni per i tipi di file** noti è disabilitata.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ L'opzione **Nascondi estensioni per i tipi di file noti** è disabilitata.
 
 </dt> <dd>
 
-L'opzione **Visualizza file compressi e cartelle con colore alternativo** è abilitata.
+**L'opzione Visualizza file e cartelle compressi con colore** alternativo è abilitata.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ L'opzione **Visualizza file compressi e cartelle con colore alternativo** è abi
 
 </dt> <dd>
 
-L'opzione non **visualizzare i file nascosti** è abilitata.
+**L'opzione Non visualizzare file nascosti** è abilitata.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ L'opzione non **visualizzare i file nascosti** è abilitata.
 
 </dt> <dd>
 
-L'opzione **stile classico** è abilitata.
+**L'opzione Stile** classico è abilitata.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ L'opzione **stile classico** è abilitata.
 
 </dt> <dd>
 
-Il **doppio clic per aprire un'opzione elemento** è abilitato.
+**L'opzione Doppio clic per aprire un elemento** è abilitata.
 
 </dd> <dt>
 
@@ -114,17 +114,17 @@ Il **doppio clic per aprire un'opzione elemento** è abilitato.
 
 </dt> <dd>
 
-L'opzione **Attiva desktop-Visualizza come pagina Web** è abilitata.
+**L'opzione Active Desktop - Visualizza come pagina Web** è abilitata.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-[**FocusedItem**](shellfolderview-focuseditem.md) può essere chiamato solo sul sistema locale. Non funzionerà se eseguita in una pagina Web su HTTP o UNC.
+[**FocusedItem**](shellfolderview-focuseditem.md) può essere chiamato solo nel sistema locale. Non funzionerà quando viene eseguito in una pagina Web tramite HTTP o UNC.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo in JScript incorporato in HTML.
+L'esempio seguente illustra l'uso corretto di questo metodo JScript incorporato in HTML.
 
 
 ```JScript
@@ -178,11 +178,11 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo in J
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

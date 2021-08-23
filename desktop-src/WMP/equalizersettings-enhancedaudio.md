@@ -3,7 +3,7 @@ title: EQUALIZERSETTINGS.enhancedAudio
 description: L'attributo enhancedAudio specifica o recupera un valore che indica se l'audio avanzato è attivato.
 ms.assetid: 06f346fc-ec25-4fdc-8dc9-895d3754e36b
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. enhancedAudio
+- EQUALIZERSETTINGS.enhancedAudio Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 641e00c1b5020ebc705cdd5a00109b94dc3b72cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ac8579490f76648d2f1664e8cac4e6e473035c820ab0f2f7e8881e5424d5834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996651"
 ---
 # <a name="equalizersettingsenhancedaudio"></a>EQUALIZERSETTINGS.enhancedAudio
 
-L'attributo **enhancedAudio** specifica o recupera un valore che indica se l'audio avanzato è attivato.
+**L'attributo enhancedAudio** specifica o recupera un valore che indica se l'audio avanzato è attivato.
 
 ``` syntax
         elementID.enhancedAudio
@@ -29,14 +29,14 @@ L'attributo **enhancedAudio** specifica o recupera un valore che indica se l'aud
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Descrizione | Valore                                  |
 |-------------|----------------------------------------|
-| true        | Audio migliorato attivato.           |
-| false       | Valore predefinito. L'audio migliorato è disattivato. |
+| true        | L'audio avanzato è attivato.           |
+| false       | Valore predefinito. L'audio avanzato è disattivato. |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

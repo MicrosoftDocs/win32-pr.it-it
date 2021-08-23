@@ -1,10 +1,10 @@
 ---
-title: FRS-errore-condizione attributo
+title: Attributo FRS-Fault-Condition
 description: Condizione di errore per un membro.
 ms.assetid: 2b0472bf-d6cb-4471-b1ca-93e2aedf6572
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-fault-condition
+- Schema AD dell'attributo FRS-Fault-Condition
 - Schema AD dell'attributo fRSFaultCondition
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c97c346f962fbb3c96b399cef3455d95e3f9fe6d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9fb968ed2d09da3a47348f8672960dd97d2d67030e1addcbbda6c7acceae49c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961510"
 ---
-# <a name="frs-fault-condition-attribute"></a>FRS-errore-condizione attributo
+# <a name="frs-fault-condition-attribute"></a>Attributo FRS-Fault-Condition
 
 Condizione di errore per un membro.
 
@@ -29,13 +29,13 @@ Condizione di errore per un membro.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | FRS-condizione di errore                         |
-| LDAP-Display-Name | fRSFaultCondition                           |
+| CN                | FRS-Fault-Condition                         |
+| Ldap-Display-Name | fRSFaultCondition                           |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.491                      |
-| System-ID-GUID    | 1be8f178-a9ff-11d0-afe2-00c04fd930c9        |
+| System-Id-Guid    | 1be8f178-a9ff-11d0-afe2-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Condizione di errore per un membro.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

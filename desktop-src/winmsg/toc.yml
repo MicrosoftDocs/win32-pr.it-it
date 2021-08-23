@@ -366,9 +366,9 @@
         - name: Cenni preliminari sulla classe Window
           href: window-class-overviews.md
           items:
-            - name: Informazioni sulle classi di finestre
+            - name: Informazioni sulle classi finestra
               href: about-window-classes.md
-            - name: Uso delle classi di finestra
+            - name: Uso delle classi window
               href: using-window-classes.md
         - name: Informazioni di riferimento sulla classe Window
           href: window-class-reference.md
@@ -503,7 +503,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setmessageextrainfo
                 - name: TranslateMessage
                   href: /windows/desktop/api/winuser/nf-winuser-translatemessage
-                - name: Messaggio di attesa
+                - name: WaitMessage
                   href: /windows/desktop/api/winuser/nf-winuser-waitmessage
             - name: Strutture dei messaggi
               href: message-and-message-queue-structures.md
@@ -612,7 +612,7 @@
                   href: wm-settingchange.md
                 - name: WM_WININICHANGE
                   href: wm-wininichange.md
-    - name: Ganci
+    - name: Hook
       href: hooks.md
       items:
         - name: Panoramica dell'hook
@@ -696,7 +696,7 @@
     - name: Interfaccia a documenti multipli (MDI)
       href: multiple-document-interface.md
       items:
-        - name: Cenni preliminari su MDI
+        - name: Cenni preliminari sull'MDI
           href: multiple-document-interface-overviews.md
           items:
             - name: Informazioni sull'interfaccia a documenti multipli

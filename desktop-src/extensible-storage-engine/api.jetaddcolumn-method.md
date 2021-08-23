@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetAddColumn'
-title: API. JetAddColumn, metodo
+description: 'Altre informazioni su: Metodo Api.JetAddColumn'
+title: Metodo Api.JetAddColumn
 TOCTitle: 'JetAddColumn method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetAddColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_COLUMNDEF,System.Byte[],System.Int32,Microsoft.Isam.Esent.Interop.JET_COLUMNID@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetaddcolumn(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a864bab9c3b888622640e6226c3e7ee542a096d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1972fdf9f19ad7a249df00a07cbe8481bcb133da81a748fda865639d934e4c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983691"
 ---
-# <a name="apijetaddcolumn-method"></a>API. JetAddColumn, metodo
+# <a name="apijetaddcolumn-method"></a>Metodo Api.JetAddColumn
 
-Consente di aggiungere una nuova colonna a una tabella esistente.
+Aggiungere una nuova colonna a una tabella esistente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,51 +78,51 @@ public static void JetAddColumn(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabella alla quale aggiungere la colonna.
+    Tabella a cui aggiungere la colonna.
 
 <!-- end list -->
 
   - colonna  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome della colonna.
 
 <!-- end list -->
 
   - columndef  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
     
     Definizione della colonna.
 
 <!-- end list -->
 
   - defaultValue  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Valore predefinito della colonna.
 
 <!-- end list -->
 
   - defaultValueSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensioni del valore predefinito.
+    Dimensione del valore predefinito.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Restituisce l'ColumnID della nuova colonna.
+    Restituisce il valore columnid della nuova colonna.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -130,6 +130,6 @@ public static void JetAddColumn(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

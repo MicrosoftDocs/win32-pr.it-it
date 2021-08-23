@@ -1,42 +1,42 @@
 ---
-title: Impostazione di un controllo ACE destro per l'accesso a un controllo nell'ACL di un oggetto
-description: Con ADSI è possibile impostare un controllo ACE Rights Access Right come si farebbe con una voce ACE specifica della proprietà, ad eccezione del fatto che la proprietà IADsAccessControlEntry. ObjectType è il rightsGUID del diritto di accesso del controllo.
+title: Impostazione di una ACE del diritto di accesso di controllo nell'elenco di controllo di accesso di un oggetto
+description: Usando ADSI, si imposta una voce ACE del diritto di accesso di controllo esattamente come si farebbe con una voce ACE specifica della proprietà, ad eccezione del fatto che la proprietà IADsAccessControlEntry.ObjectType è il rightsGUID del diritto di accesso del controllo.
 ms.assetid: 454dc372-47b0-457d-8660-644fcfa59be8
 ms.tgt_platform: multiple
 keywords:
-- Impostazione di un controllo ACE destro per l'accesso a un controllo nell'ACL di un oggetto
+- Impostazione di una ACE del diritto di accesso di controllo nell'elenco di controllo di accesso di un oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f41b870ad3ed5432060fb51fe14c29a81ce4665
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 09f4a4406bfa3d16a3e3be228bf4a0f131d77ad68cb99a6b9b2a8d328f15215e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103956303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024809"
 ---
-# <a name="setting-a-control-access-right-ace-in-an-objects-acl"></a>Impostazione di un controllo ACE destro per l'accesso a un controllo nell'ACL di un oggetto
+# <a name="setting-a-control-access-right-ace-in-an-objects-acl"></a>Impostazione di una ACE del diritto di accesso di controllo nell'elenco di controllo di accesso di un oggetto
 
-Con ADSI è possibile impostare un controllo ACE Rights Access Right come si farebbe con una voce ACE specifica della proprietà, ad eccezione del fatto che la proprietà [**IADsAccessControlEntry. ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) è il **rightsGuid** del diritto di accesso del controllo. Tenere presente che è inoltre possibile utilizzare le API di sicurezza Win32 per impostare gli ACL sugli oggetti directory.
+Usando ADSI, si imposta una voce ACE del diritto di accesso di controllo esattamente come si farebbe con una voce ACE specifica della proprietà, ad eccezione del fatto che la proprietà [**IADsAccessControlEntry.ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) è il **rightsGUID** del diritto di accesso del controllo. Tenere presente che è anche possibile usare le API di sicurezza Win32 per impostare gli ACL sugli oggetti directory.
 
-Nella tabella seguente sono elencate le proprietà di [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) per i diritti di accesso di controllo che possono essere utilizzati per impostare le proprietà di una voce ACE.
+Nella tabella seguente sono elencate [**le proprietà IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) per il controllo dei diritti di accesso che possono essere usate per impostare le proprietà per una voce ACE.
 
 
 
 | Proprietà                                                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) | Per i diritti di accesso di controllo che controllano l'accesso ai diritti estesi alle operazioni speciali, AccessMask deve contenere il flag di **\_ \_ \_ \_ accesso di controllo DS Rights ADS** . Per i diritti di accesso di controllo che definiscono un set di proprietà, AccessMask contiene **Ads \_ Rights \_ DS \_ Read \_ prop** e/o **Ads \_ Rights DS \_ \_ Write \_ prop**.<br/> Per i diritti di accesso di controllo che controllano le scritture convalidate, [**accessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) contiene **Ads \_ right \_ DS \_ self**.<br/> |
-| [**Bandiere**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)      | Questo valore deve includere il flag di **\_ \_ \_ tipo oggetto \_ flag ADS** .                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [**ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) | Questo valore deve essere il formato [**StringFromGUID2**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2) dell'attributo **rightsGuid** del diritto di accesso del controllo. Tenere presente che, in una voce ACE, la stringa GUID deve includere le parentesi graffe iniziale e terminante anche se l'attributo **rightsGuid** dell'oggetto **controlAccessRight** non include le parentesi graffe.                                                                                                                                     |
-| [**AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)    | **Ads \_ ACETYPE \_ accesso consentito all' \_ \_ oggetto** per concedere al trustee il diritto di controllo di accesso o **Ads \_ ACETYPE \_ accesso \_ negato \_** per negare al trustee il diritto di accesso al controllo.                                                                                                                                                                                                                                                                                                     |
-| [**Fiduciario**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)    | Entità di sicurezza, ad esempio utente, gruppo, computer e così via, a cui si applica la voce ACE.                                                                                                                                                                                                                                                                                                                                                                                              |
+| [**Accessmask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) | Per controllare i diritti di accesso che controllano l'accesso con diritti estesi a operazioni speciali, AccessMask deve contenere il flag **ADS \_ RIGHT \_ DS \_ CONTROL \_ ACCESS.** Per controllare i diritti di accesso che definiscono un set di proprietà, AccessMask contiene **ADS \_ RIGHT \_ DS \_ READ \_ PROP** e/o **ADS RIGHT \_ \_ DS WRITE \_ \_ PROP**.<br/> Per controllare i diritti di accesso che controllano le scritture convalidate, [**AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) contiene **ADS \_ RIGHT \_ DS \_ SELF.**<br/> |
+| [**Bandiere**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)      | Questo valore deve includere il flag **ADS \_ FLAG OBJECT \_ TYPE \_ \_ PRESENT.**                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [**ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) | Questo valore deve essere il [**formato StringFromGUID2**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2) dell'attributo **rightsGUID** del diritto di accesso di controllo. Tenere presente che, in una ACE, la stringa GUID deve includere le parentesi graffe iniziale e di terminazione anche se l'attributo **rightsGUID** dell'oggetto **controlAccessRight** non include le parentesi graffe.                                                                                                                                     |
+| [**AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)    | **ADS \_ ACETYPE \_ ACCESS \_ ALLOWED \_ OBJECT** per concedere al trustee il diritto di controllo di accesso o **ADS \_ ACETYPE \_ ACCESS \_ DENIED \_ OBJECT** per negare al trustee il diritto di accesso di controllo.                                                                                                                                                                                                                                                                                                     |
+| [**Fiduciario**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods)    | Entità di sicurezza, ad esempio utente, gruppo, computer e così via, a cui si applica la ACE.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 
 
  
 
-Per ulteriori informazioni sulla creazione di una voce ACE, vedere [impostazione dei diritti di accesso per un oggetto](setting-access-rights-on-an-object.md).
+Per altre informazioni sulla creazione di una ACE, vedere [Impostazione dei diritti di accesso per un oggetto](setting-access-rights-on-an-object.md).
 
-Per ulteriori informazioni e un esempio di codice per l'impostazione di una voce ACE, vedere [il codice di esempio per l'impostazione di una voce ACE in un oggetto directory](example-code-for-setting-an-ace-on-a-directory-object.md).
+Per altre informazioni e un esempio di codice per l'impostazione di una ACE, vedere Codice di esempio per l'impostazione di una [ACE in un oggetto directory](example-code-for-setting-an-ace-on-a-directory-object.md).
 
  
 

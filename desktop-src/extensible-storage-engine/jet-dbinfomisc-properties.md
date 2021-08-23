@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC'
-title: Proprietà JET_DBINFOMISC
+description: 'Altre informazioni su: JET_DBINFOMISC proprietà'
+title: JET_DBINFOMISC proprietà
 TOCTitle: JET_DBINFOMISC properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc_properties(v=EXCHG.10)
 ms:contentKeyID: 39515692
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 43f65126c3c257f2e0c9c7735348befa44198729
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53e6cf407e06b71f5c42c42a59e42b6a4e179f19242fc60e419130c39971508e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980471"
 ---
-# <a name="jet_dbinfomisc-properties"></a>Proprietà JET_DBINFOMISC
+# <a name="jet_dbinfomisc-properties"></a>JET_DBINFOMISC proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
+Il [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -40,7 +40,7 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh565264(v=exchg.10).md">bkinfoDiffPrev</a></td>
-<td>Ottiene informazioni sull'ultimo backup differenziale riuscito. Reimposta quando <a href="hh577635(v=exchg.10).md">bkinfoFullPrev</a> è impostato.</td>
+<td>Ottiene informazioni sull'ultimo backup differenziale riuscito. Reimposta quando <a href="hh577635(v=exchg.10).md">è impostato bkinfoFullPrev.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -50,17 +50,17 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh577635(v=exchg.10).md">bkinfoFullPrev</a></td>
-<td>Ottiene informazioni sull'ultimo backup completo completato correttamente.</td>
+<td>Ottiene informazioni sull'ultimo backup completo riuscito.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh564433(v=exchg.10).md">bkinfoIncPrev</a></td>
-<td>Ottiene informazioni sull'ultimo backup incrementale riuscito. Questo valore viene reimpostato quando <a href="hh577635(v=exchg.10).md">bkinfoFullPrev</a> è impostato.</td>
+<td>Ottiene informazioni sull'ultimo backup incrementale riuscito. Questo valore viene reimpostato quando <a href="hh577635(v=exchg.10).md">è impostato bkinfoFullPrev.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh578850(v=exchg.10).md">cbPageSize</a></td>
-<td>Ottiene le dimensioni della pagina del database. Il valore 0 indica le pagine 4Kb.</td>
+<td>Ottiene le dimensioni della pagina del database. Il valore 0 indica pagine da 4 KB.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -70,22 +70,22 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh566598(v=exchg.10).md">dwBuildNumber</a></td>
-<td>Ottiene il numero di build del sistema operativo dall'ultima connessione.</td>
+<td>Ottiene il numero di build del sistema operativo dall'ultimo collegamento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh578966(v=exchg.10).md">dwMajorVersion</a></td>
-<td>Ottiene la versione principale del sistema operativo dall'ultima connessione.</td>
+<td>Ottiene la versione principale del sistema operativo dall'ultimo collegamento.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh596571(v=exchg.10).md">dwMinorVersion</a></td>
-<td>Ottiene la versione secondaria del sistema operativo dall'ultima connessione.</td>
+<td>Ottiene la versione secondaria del sistema operativo dall'ultimo collegamento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh564660(v=exchg.10).md">fShadowingDisabled</a></td>
-<td>Ottiene un valore che indica se l'ombreggiatura del catalogo è abilitata. Questo valore è solo per uso interno.</td>
+<td>Ottiene un valore che indica se lo shadowing del catalogo è abilitato. Questo valore è solo per uso interno.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -110,22 +110,22 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh577443(v=exchg.10).md">lgposAttach</a></td>
-<td>Ottiene il LGPO dell'ultima connessione.</td>
+<td>Ottiene i lgpos dell'ultimo collegamento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh163307(v=exchg.10).md">lgposConsistent</a></td>
-<td>Ottiene il LGPO quando il database è stato reso consistente. Questo valore è null se il database è incoerente.</td>
+<td>Ottiene l'oggetto lgpos quando il database è stato reso coerente. Questo valore è Null se il database è incoerente.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh566733(v=exchg.10).md">lgposDetach</a></td>
-<td>Ottiene il LGPO dell'ultimo scollegamento.</td>
+<td>Ottiene i lgpos dell'ultimo scollegamento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh564456(v=exchg.10).md">logtimeAttach</a></td>
-<td>Ottiene l'ora in cui è stato collegato il database.</td>
+<td>Ottiene l'ora in cui il database è stato collegato.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -135,17 +135,17 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh557946(v=exchg.10).md">logtimeConsistent</a></td>
-<td>Ottiene l'ora in cui il database è stato reso consistente. Questo valore è null se il database è incoerente.</td>
+<td>Ottiene l'ora in cui il database è stato reso coerente. Questo valore è Null se il database è incoerente.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh556940(v=exchg.10).md">logtimeDetach</a></td>
-<td>Ottiene l'ora dell'ultima disconnessione.</td>
+<td>Ottiene l'ora dell'ultimo scollegamento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh557356(v=exchg.10).md">logtimeECCFixFail</a></td>
-<td>Ottiene l'ultima volta in cui è stato rilevato un errore di un bit non correggibile.</td>
+<td>Ottiene l'ultima volta in cui è stato rilevato un errore di un bit non modificabile.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -155,17 +155,17 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh577625(v=exchg.10).md">logtimeGenMaxCreate</a></td>
-<td>Ottiene l'ora di creazione del file di log <a href="hh579109(v=exchg.10).md">genMaxRequired</a> .</td>
+<td>Ottiene l'ora di creazione del file di log <a href="hh579109(v=exchg.10).md">genMaxRequired.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh579510(v=exchg.10).md">logtimeRepair</a></td>
-<td>Ottiene l'ultima volta in cui è stato eseguito il ripristino sul database.</td>
+<td>Ottiene l'ora dell'ultima esecuzione del ripristino nel database.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh565142(v=exchg.10).md">lSPNumber</a></td>
-<td>Ottiene il numero del Service Pack del sistema operativo dall'ultima connessione.</td>
+<td>Ottiene il numero del Service Pack del sistema operativo dall'ultimo collegamento.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -175,57 +175,57 @@ Il tipo di [JET_DBINFOMISC](./jet-dbinfomisc-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh578351(v=exchg.10).md">signLog</a></td>
-<td>Ottiene la firma logfile dei log utilizzati per modificare il database.</td>
+<td>Ottiene la firma del file di log dei log utilizzata per modificare il database.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh596347(v=exchg.10).md">ulBadChecksum</a></td>
-<td>Ottiene il numero di volte in cui è stato trovato un errore di checksum non correggibile.</td>
+<td>Ottiene il numero di volte in cui è stato rilevato un errore di checksum non corretto.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh557876(v=exchg.10).md">ulBadChecksumOld</a></td>
-<td>Ottiene il numero di volte in cui è stato rilevato un errore di checksum non correggibile prima dell'ultimo ripristino.</td>
+<td>Ottiene il numero di volte in cui è stato rilevato un errore di checksum non corretto prima dell'ultima correzione.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh566254(v=exchg.10).md">ulECCFixFail</a></td>
-<td>Ottiene il numero di volte in cui è stato rilevato un errore di un bit non correggibile.</td>
+<td>Ottiene il numero di volte in cui è stato rilevato un errore di un bit noncorrebile.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh564490(v=exchg.10).md">ulECCFixFailOld</a></td>
-<td>Ottiene il numero di volte in cui è stato rilevato un errore di un bit non correggibile.</td>
+<td>Ottiene il numero di volte in cui è stato rilevato un errore di un bit noncorrebile.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh578574(v=exchg.10).md">ulECCFixSuccess</a></td>
-<td>Ottiene il numero di volte in cui un errore di un bit è stato corretto correttamente.</td>
+<td>Ottiene il numero di volte in cui è stato corretto un errore di un bit.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh578638(v=exchg.10).md">ulECCFixSuccessOld</a></td>
-<td>Ottiene il numero di volte in cui un errore di un bit è stato corretto prima dell'ultimo ripristino.</td>
+<td>Ottiene il numero di volte in cui un errore di un bit è stato corretto prima dell'ultima correzione.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh579357(v=exchg.10).md">ulRepairCount</a></td>
-<td>Ottiene il numero di volte in cui è stato chiamato il metodo Repair sul database.</td>
+<td>Ottiene il numero di volte in cui il ripristino è stato chiamato su questo database.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh557020(v=exchg.10).md">ulRepairCountOld</a></td>
-<td>Ottiene il numero di volte in cui il database è stato ripristinato prima dell'ultima deframmentazione.</td>
+<td>Ottiene il numero di volte in cui il database è stato riparato prima dell'ultima deframmentazione.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh596219(v=exchg.10).md">ulUpdate</a></td>
-<td>Ottiene la versione incrementale di ESENT che ha creato il database.</td>
+<td>Ottiene la versione incrementale di Esent che ha creato il database.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh577854(v=exchg.10).md">ulVersion</a></td>
-<td>Ottiene la versione di ESENT che ha creato il database.</td>
+<td>Ottiene la versione di Esent che ha creato il database.</td>
 </tr>
 </tbody>
 </table>
@@ -237,6 +237,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

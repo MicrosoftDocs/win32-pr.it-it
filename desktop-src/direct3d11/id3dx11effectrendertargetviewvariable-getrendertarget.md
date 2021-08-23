@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectRenderTargetViewVariable GetRenderTarget (D3dx11effect. h)
+title: Metodo GetRenderTarget ID3DX11EffectRenderTargetViewVariable (D3dx11effect.h)
 description: Ottenere una destinazione di rendering.
 ms.assetid: 96984d0a-b8f4-444a-9683-3c37d8274d75
 keywords:
 - Metodo GetRenderTarget Direct3D 11
-- Metodo GetRenderTarget Direct3D 11, interfaccia ID3DX11EffectRenderTargetViewVariable
-- Interfaccia ID3DX11EffectRenderTargetViewVariable Direct3D 11, metodo GetRenderTarget
+- Metodo GetRenderTarget Interfaccia Direct3D 11, ID3DX11EffectRenderTargetViewVariable
+- ID3DX11EffectRenderTargetViewVariable interface Direct3D 11 , Metodo GetRenderTarget
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa86dd3a5c950e18ae97ba1987ee0f44b9f658c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: 035ea8f82ece3ca030099eb949f2fb08229c0a9c9b068f45237403b86cf92955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045869"
 ---
-# <a name="id3dx11effectrendertargetviewvariablegetrendertarget-method"></a>Metodo ID3DX11EffectRenderTargetViewVariable:: GetRenderTarget
+# <a name="id3dx11effectrendertargetviewvariablegetrendertarget-method"></a>Metodo ID3DX11EffectRenderTargetViewVariable::GetRenderTarget
 
 Ottenere una destinazione di rendering.
 
@@ -48,7 +48,7 @@ HRESULT GetRenderTarget(
 
 Tipo: **[ **ID3D11RenderTargetView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rendertargetview)\*\***
 
-Indirizzo di un puntatore a un'interfaccia di visualizzazione della destinazione di rendering. Vedere [**ID3D11RenderTargetView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rendertargetview).
+Indirizzo di un puntatore a un'interfaccia render-target-view. Vedere [**ID3D11RenderTargetView.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rendertargetview)
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Indirizzo di un puntatore a un'interfaccia di visualizzazione della destinazione
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

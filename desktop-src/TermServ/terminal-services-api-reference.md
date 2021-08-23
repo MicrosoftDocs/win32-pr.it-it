@@ -1,45 +1,45 @@
 ---
-title: Informazioni di riferimento sull'API Servizi Desktop remoto
-description: Tipi di dati, tipi di enumerazione, funzioni, messaggi e strutture che è possibile utilizzare per eseguire attività amministrative, gestire le informazioni di configurazione degli utenti, migliorare le applicazioni client/server e utilizzare i canali virtuali in un ambiente Servizi Desktop remoto.
+title: Servizi Desktop remoto informazioni di riferimento sulle API
+description: Tipi di dati, tipi di enumerazione, funzioni, messaggi e strutture che è possibile usare per eseguire attività amministrative, gestire le informazioni di configurazione utente, migliorare le applicazioni client/server e usare canali virtuali in un ambiente Servizi Desktop remoto locale.
 ms.assetid: 3a1eb3c1-94f0-4e6a-a9cf-13010b1f3281
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Servizi Desktop remoto, informazioni di riferimento sulle API
+- Servizi Desktop remoto Servizi Desktop remoto , informazioni di riferimento sulle API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f47f9555cd09a15a771ec00c7f70d95c1204920
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ef4c5240baf494a47dfdefe71e2a26a2a7a1a00b711bfa6dff906f209656195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000191"
 ---
-# <a name="remote-desktop-services-api-reference"></a>Informazioni di riferimento sull'API Servizi Desktop remoto
+# <a name="remote-desktop-services-api-reference"></a>Servizi Desktop remoto informazioni di riferimento sulle API
 
-Con l'API Servizi Desktop remoto vengono usati gli elementi seguenti.
+Gli elementi seguenti vengono usati con l'API Servizi Desktop remoto.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Tipi di dati dell'API Servizi Desktop remoto](terminal-services-api-data-types.md)
--   [Tipi di enumerazione Servizi Desktop remoto API](terminal-services-api-enumeration-types.md)
--   [Funzioni API Servizi Desktop remoto](terminal-services-api-functions.md)
--   [Messaggi API Servizi Desktop remoto](terminal-services-api-messages.md)
--   [Strutture API Servizi Desktop remoto](terminal-services-api-structures.md)
--   [Unioni API Servizi Desktop remoto](remote-desktop-services-api-unions.md)
+-   [Servizi Desktop remoto tipi di dati dell'API](terminal-services-api-data-types.md)
+-   [Servizi Desktop remoto di enumerazione dell'API](terminal-services-api-enumeration-types.md)
+-   [Servizi Desktop remoto funzioni API](terminal-services-api-functions.md)
+-   [Servizi Desktop remoto messaggi dell'API](terminal-services-api-messages.md)
+-   [Servizi Desktop remoto di API](terminal-services-api-structures.md)
+-   [Servizi Desktop remoto unioni API](remote-desktop-services-api-unions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Servizi terminal è ora Servizi Desktop remoto](terminal-services-is-now-remote-desktop-services.md)
+[Servizi terminal è ora disponibile Servizi Desktop remoto](terminal-services-is-now-remote-desktop-services.md)
 </dt> <dt>
 
 [Uso dell'API Servizi Desktop remoto](using-the-terminal-services-api.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,39 +1,39 @@
 ---
 title: Oggetti handle di risorsa
-description: La struttura di un oggetto risorsa è limitata all'implementazione di Microsoft WinSNMP. Un'applicazione WinSNMP può accedere a un oggetto risorsa con un handle.
+description: La struttura di un oggetto risorsa è limitata all'implementazione Microsoft WinSNMP. Un'applicazione WinSNMP può accedere a un oggetto risorsa con un handle.
 ms.assetid: c70a03b1-afac-4f1a-81e7-7f31430f5655
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1afe5e6488190f95961bff7ce37f7b719d076d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 06b05702f0ad43e5b4b80a9b1a3cada471212dec3bc377bddcc95fe9a109ec78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009119"
 ---
 # <a name="resource-handle-objects"></a>Oggetti handle di risorsa
 
-La struttura di un oggetto risorsa è limitata all'implementazione di Microsoft WinSNMP. Un'applicazione WinSNMP può accedere a un oggetto risorsa con un handle.
+La struttura di un oggetto risorsa è limitata all'implementazione Microsoft WinSNMP. Un'applicazione WinSNMP può accedere a un oggetto risorsa con un handle.
 
-L'implementazione può allocare uno dei seguenti tipi di handle di risorse per un'applicazione WinSNMP.
+L'implementazione può allocare uno dei tipi seguenti di handle di risorse per un'applicazione WinSNMP.
 
 | Tipo di handle        | Descrizione                       |
 |--------------------|-----------------------------------|
-| **\_sessione HSNMP** | Handle per una sessione WinSNMP       |
-| **\_entità HSNMP**  | Handle per un'entità SNMP          |
-| **\_contesto HSNMP** | Handle per un contesto WinSNMP       |
-| **\_PDU HSNMP**     | Handle per un'unità dati del protocollo    |
-| **\_VBL HSNMP**     | Handle per un elenco di associazioni variabili |
+| **SESSIONE \_ HSNMP** | Handle per una sessione WinSNMP       |
+| **ENTITÀ \_ HSNMP**  | Handle per un'entità SNMP          |
+| **CONTESTO \_ HSNMP** | Handle per un contesto WinSNMP       |
+| **HSNMP \_ PDU**     | Handle a un'unità dati del protocollo    |
+| **HSNMP \_ VBL**     | Handle a un elenco di associazioni di variabili |
 
 
 
- 
+ 
 
-Un'applicazione WinSNMP può richiedere che l'implementazione crei o elimini gli handle di risorsa, ma l'implementazione esegue l'operazione. Per ulteriori informazioni su come liberare le singole risorse, vedere le funzioni [**SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor), [**SnmpFreeVbl**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl), [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu), [**SnmpFreeEntity**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity)e [**SnmpFreeContext**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext) .
+Un'applicazione WinSNMP può richiedere che l'implementazione crei o elimini gli handle di risorsa, ma l'implementazione esegue l'operazione. Per altre informazioni sulla liberatura di singole risorse, vedere le funzioni [**SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor), [**SnmpFreeVbl**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl), [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu), [**SnmpFreeEntity**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity)e [**SnmpFreeContext.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext)
 
- 
+ 
 
- 
+ 
 
 
 

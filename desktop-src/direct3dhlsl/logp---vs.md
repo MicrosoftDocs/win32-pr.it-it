@@ -1,6 +1,6 @@
 ---
-title: LogP-vs
-description: Precisione parziale LogP ₂ (x).
+title: logp - vs
+description: Logp e precisione parziale logp'(x).
 ms.assetid: 8547ca8a-7bde-4e41-9e65-f7fcd65454c1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a261d63ad47dcf12728b8bcd0025ec578ede0b4
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3c33242ec23070a78e8adee159d35c19121dcc7c3dfe2c013c3d00adceb16477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043779"
 ---
-# <a name="logp---vs"></a>LogP-vs
+# <a name="logp---vs"></a>logp - vs
 
-Precisione parziale LogP ₂ (x).
+Logp e precisione parziale logp'(x).
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| LogP DST, src |
+| logp dst, src |
 |---------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
--   src è un registro di origine. Il registro di origine richiede l'uso esplicito di swizzle di replica, ovvero è necessario specificare esattamente uno dei componenti con estensione x, y, z, w swizzle (o. r,. g,. b,. a equivalenti).
+-   dst è il registro di destinazione.
+-   src è un registro di origine. Il registro di origine richiede l'uso esplicito di replicate swizzle, ovvero esattamente uno dei componenti .x, .y, .z, .w swizzle (o .r, .g, .b, .a equivalenti) deve essere specificato.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | logp                   | x    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -61,18 +61,18 @@ else
 
 
 
-Questa istruzione fornisce la precisione parziale logaritmo in base 2, fino a 10 bit.
+Questa istruzione fornisce una precisione parziale in base 2 del logaritmo, fino a 10 bit.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

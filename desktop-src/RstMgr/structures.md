@@ -1,32 +1,32 @@
 ---
-title: Strutture di gestione riavvio
-description: L'API di gestione riavvio contiene le strutture seguenti
+title: Strutture di Gestione riavvio
+description: L'API di Gestione riavvio contiene le strutture seguenti
 ms.assetid: fbe76ae7-ed4b-462d-a406-e7007cea41f8
 keywords:
-- Gestione riavvio riavvio gestione, riferimento, strutture
+- Restart Manager Restart Mgr , reference, structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea75c0556cc81c220a8233a41fbbe741385dd69a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e2d86d74872d83b7c161cf694a6d9da6c8a27b758f8174fa20adcfa1a8f1c374
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010059"
 ---
-# <a name="restart-manager-structures"></a>Strutture di gestione riavvio
+# <a name="restart-manager-structures"></a>Strutture di Gestione riavvio
 
-L'API di gestione riavvio contiene le strutture seguenti:
+L'API di Gestione riavvio contiene le strutture seguenti:
 
 <dl>
 
-[**\_informazioni sul filtro RM \_**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_filter_info)  
-[**\_informazioni processo \_ RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info)  
-[**\_processo univoco \_ RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)  
+[**RM \_ FILTER \_ INFO**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_filter_info)  
+[**RM \_ PROCESS \_ INFO**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info)  
+[**RM \_ UNIQUE \_ PROCESS**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

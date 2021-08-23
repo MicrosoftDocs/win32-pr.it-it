@@ -1,7 +1,7 @@
 ---
 description: Recupera il nome del produttore del dispositivo hardware.
 ms.assetid: be8c91ea-eaf8-45d5-801d-ad02db3634f1
-title: Proprietà DeviceInfo. Manufacturer
+title: DeviceInfo.Manufacturer - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 59a9052daae1d0f01928b118233771bcf2bae02f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a40d4a416f8ca0447373b9ac9e80d2993a8ace92c2127636eb363e40f199c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965720"
 ---
-# <a name="deviceinfomanufacturer-property"></a>Proprietà DeviceInfo. Manufacturer
+# <a name="deviceinfomanufacturer-property"></a>DeviceInfo.Manufacturer - proprietà
 
 Recupera il nome del produttore del dispositivo hardware.
 
@@ -45,9 +45,9 @@ Stringa che riceve il nome.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
 description: Nell'esempio seguente viene illustrata la decrittografia di un file.
 ms.assetid: be355b08-95c1-4ad3-bb05-6f646d5db5cd
-title: 'Esempio di programma C: decrittografia di un file'
+title: 'Programma C di esempio: decrittografia di un file'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57e65b7e33ba58a80fe87cc51a25912c66bf3589
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac4aa59245600fa99f9992a08bda9dd7cdaa39bbd899851052559ee22b08997e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007869"
 ---
-# <a name="example-c-program-decrypting-a-file"></a>Esempio di programma C: decrittografia di un file
+# <a name="example-c-program-decrypting-a-file"></a>Programma C di esempio: decrittografia di un file
 
 Nell'esempio seguente viene illustrata la decrittografia di un file. Nell'esempio viene chiesto all'utente il nome di un file crittografato e il nome di un file in cui verranno scritti i dati decrittografati. Il file con i dati crittografati deve esistere. Nell'esempio viene creato o sovrascritto il file di output.
 
-Nell'esempio viene inoltre richiesta una stringa utilizzata come password. Se è stata usata una password per creare la chiave della sessione di crittografia, è necessario immettere la stessa password per creare la chiave della sessione di decrittografia. Per ulteriori informazioni, vedere [esempio di programma C: crittografia di un file](example-c-program-encrypting-a-file.md).
+L'esempio richiede anche una stringa usata come password. Se è stata usata una password per creare la chiave di sessione di crittografia, è necessario immettere la stessa password per creare la chiave di sessione di decrittografia. Per altre informazioni, vedere [Esempio di programma C: Crittografia di un file](example-c-program-encrypting-a-file.md).
 
-A causa della modifica delle restrizioni di controllo di esportazione, il [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) predefinito e la lunghezza della [*chiave*](../secgloss/k-gly.md) predefinita possono cambiare tra le versioni del sistema operativo. È importante che la crittografia e la decrittografia usino lo stesso CSP e che la lunghezza della chiave sia impostata in modo esplicito per garantire l'interoperabilità su diverse piattaforme del sistema operativo.
+A causa della modifica delle restrizioni di controllo dell'esportazione, il [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) predefinito e la lunghezza della chiave predefinita [*possono*](../secgloss/k-gly.md) cambiare tra le versioni del sistema operativo. È importante che la crittografia e la decrittografia usino lo stesso provider di servizi di crittografia e che la lunghezza della chiave sia impostata in modo esplicito per garantire l'interoperabilità su piattaforme del sistema operativo diverse.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

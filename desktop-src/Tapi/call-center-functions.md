@@ -1,19 +1,19 @@
 ---
-description: Il Call Center TAPI supporta le funzioni per creare un agente di linea e i gruppi di agenti.
+description: Call Center TAPI supporta le funzioni per creare un agente di linea e gruppi di agenti.
 ms.assetid: 81bd0e7b-2bf1-4a05-83f4-ef641641cf2b
-title: Funzioni Call Center
+title: Funzioni del call center
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 261188a4a1440ca128a6a6830149230a47672581
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac927158c260a1a2bede4e114c6e46c1a5cac5b5939eb9de1a4c30a749a7670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118870715"
 ---
-# <a name="call-center-functions"></a>Funzioni Call Center
+# <a name="call-center-functions"></a>Funzioni del call center
 
-TAPI supporta le funzioni Call Center seguenti:
+TAPI supporta le funzioni call center seguenti:
 
 -   [**lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagentspecific)
 -   [**lineCreateAgent**](/windows/desktop/api/Tapi/nf-tapi-linecreateagenta)

@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithUserNameOverSslServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP, con nome utente sulla sicurezza in modalità mista SSL.
+description: Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio PurchaseOrder su HTTP, con nome utente su sicurezza in modalità mista SSL.
 ms.assetid: 3dfedab1-d508-4cff-b179-591871078adb
 keywords:
-- HttpPurchaseOrderWithUserNameOverSslServiceExample native-servizi Web
+- HttpPurchaseOrderWithUserNameOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6558a119efda4f8e2c4c009b9de3ad2525985ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63bb584286d749687889a1a24d638ba8fc62ae8620ffb821e940115d1655b42c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026449"
 ---
 # <a name="httppurchaseorderwithusernameoversslserviceexample"></a>HttpPurchaseOrderWithUserNameOverSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP, con nome utente sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password in un'intestazione WS-Security nel messaggio.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio PurchaseOrder su HTTP, con nome utente su sicurezza in modalità mista SSL. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione del server. L'autenticazione client viene fornita da una coppia nome utente/password in un'intestazione WS-Security nel messaggio.
 
--   [PurchaseOrderServiceUserNameOverSsl. cpp](#purchaseorderserviceusernameoversslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [PurchaseOrderServiceUserNameOverSsl.cpp](#purchaseorderserviceusernameoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl. cpp
+## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl.cpp
 
 
 ```C++
@@ -470,7 +470,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -609,9 +609,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8360065e2ce124531bec63637e2b6560cfc32f54
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 18bef3eb69ab2799f7139fe2886d89e996fb8fb47d178997694c568450fb8340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104117253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983901"
 ---
 # <a name="identityprivacyparameters-complex-type"></a>Tipo complesso IdentityPrivacyParameters
 
-Il tipo complesso **IdentityPrivacyParameters** contiene informazioni sull'utilizzo di identità anonime durante l'autenticazione PEAP.
+Il **tipo complesso IdentityPrivacyParameters** contiene informazioni sull'utilizzo di identità anonime durante l'autenticazione PEAP.
 
 
 ```XML
@@ -42,12 +42,12 @@ Il tipo complesso **IdentityPrivacyParameters** contiene informazioni sull'utili
 
 | Elemento                                                                                                               | Tipo    | Descrizione                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) | boolean | Indica se viene inviata un'identità vera o anonima dell'utente.                                                                                                                                                                                                                                                                           |
-| [**AnonymousUserName**](mspeapconnectionpropertiesv2-anonymoususername-identityprivacyparameters-element.md)         | string  | contiene un'identità anonima utilizzata al posto dell'identificazione true di un utente. Viene inviato durante la prima fase dell'autenticazione PEAP quando l' **identità** viene inviata come testo normale. L'utilizzo dell'identità anonima è determinato dall'elemento [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) . |
+| [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) | boolean | Indica se viene inviata la vera identità di un utente o un'identità anonima.                                                                                                                                                                                                                                                                           |
+| [**AnonymousUserName**](mspeapconnectionpropertiesv2-anonymoususername-identityprivacyparameters-element.md)         | string  | contiene un'identità anonima usata al posto dell'identificazione vera di un utente. Viene inviato durante la prima fase dell'autenticazione PEAP quando **l'identità** viene inviata come testo normale. L'utilizzo di identità anonime è determinato [**dall'elemento EnableIdentityPrivacy.**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
@@ -63,12 +63,12 @@ L'elemento IdentityPrivacyParameters è facoltativo.
 [Schema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
-[Tipi complessi mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-complex-types.md)
+[Mspeapconnectionpropertiesv2 Tipi complessi](mspeapconnectionpropertiesv2schema-complex-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

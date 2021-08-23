@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement BackupLicenses (wmdrmsdk. h)
-description: Il metodo BackupLicenses crea una copia di backup delle licenze nell'archivio licenze locale.
+title: Metodo IWMDRMLicenseManagement BackupLicenses (Wmdrmsdk.h)
+description: Il metodo BackupLicenses crea un backup delle licenze nell'archivio licenze locale.
 ms.assetid: f265254d-b240-4a9f-9c67-de9c92e8a14d
 keywords:
-- Metodo BackupLicenses Windows Media Format
-- Metodo BackupLicenses Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo BackupLicenses
+- Metodo BackupLicenses windows Media Format
+- Metodo BackupLicenses windows Media Format , interfaccia IWMDRMLicenseManagement
+- Interfaccia IWMDRMLicenseManagement windows Media Format , metodo BackupLicenses
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c7f676b532353c839a428571f6d28540851bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3905f8fd464645f7fcd22551360e6a9610913eeea7f191d7e770e24f5ea8cd49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027649"
 ---
-# <a name="iwmdrmlicensemanagementbackuplicenses-method"></a>Metodo IWMDRMLicenseManagement:: BackupLicenses
+# <a name="iwmdrmlicensemanagementbackuplicenses-method"></a>Metodo IWMDRMLicenseManagement::BackupLicenses
 
-Il metodo **BackupLicenses** crea una copia di backup delle licenze nell'archivio licenze locale.
+Il **metodo BackupLicenses** crea un backup delle licenze nell'archivio licenze locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,36 +45,36 @@ HRESULT BackupLicenses(
 
 <dl> <dt>
 
-*bstrBackupDirectory* \[ in\]
+*bstrBackupDirectory* \[ Pollici\]
 </dt> <dd>
 
-Percorso UNC della posizione in cui verrà eseguito il backup delle licenze.
+Percorso UNC del percorso in cui verrà eseguito il backup delle licenze.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag che specificano le opzioni di backup da utilizzare. L'unico flag attualmente supportato è WMDRM \_ backup \_ overwrite, che configura il metodo per sovrascrivere eventuali file di backup esistenti nella directory.
+Flag che specificano le opzioni di backup da usare. L'unico flag attualmente supportato è WMDRM BACKUP OVERWRITE, che configura il metodo per sovrascrivere tutti i file di \_ \_ backup esistenti nella directory.
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ out\]
+*ppunkCancelationCookie* \[ Cambio\]
 </dt> <dd>
 
-Puntatore che riceve un puntatore all'interfaccia **IUnknown** di un oggetto che identifica la chiamata asincrona. Questo puntatore di interfaccia può essere utilizzato per annullare la chiamata asincrona chiamando il metodo [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntatore che riceve un puntatore **all'interfaccia IUnknown** di un oggetto che identifica questa chiamata asincrona. Questo puntatore a interfaccia può essere usato per annullare la chiamata asincrona chiamando il metodo [**IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -82,11 +82,11 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene eseguito in modo asincrono. Viene restituito immediatamente dopo la chiamata di e quindi genera una serie di eventi **MEWMDRMLicenseBackupProgress** seguiti da un evento **MEWMDRMLicenseBackupCompleted** al termine dell'elaborazione. Il valore di ogni evento **MEWMDRMLicenseBackupProgress** ottenuto chiamando **IMFMediaEvent:: GetValue** è un puntatore **IUnknown** . È possibile chiamare il metodo **QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza dell'interfaccia [**IWMDRMLicenseBackupRestoreStatus**](iwmdrmlicensebackuprestorestatus.md) .
+Questo metodo viene eseguito in modo asincrono. Restituisce immediatamente dopo la chiamata e quindi genera una serie di eventi **MEWMDRMLicenseBackupProgress** seguiti da un evento **MEWMDRMLicenseBackupCompleted** al termine dell'elaborazione. Il valore di ogni evento **MEWMDRMLicenseBackupProgress** ottenuto chiamando **IMFMediaEvent::GetValue** è un **puntatore IUnknown.** È possibile chiamare il **metodo QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza dell'interfaccia [**IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
 
-Per ulteriori informazioni sull'utilizzo dei metodi asincroni delle API estese del client Windows Media DRM, vedere [utilizzo del modello di eventi Media Foundation](using-the-media-foundation-model.md).
+Per altre informazioni sull'uso dei metodi asincroni delle API estese Windows Media DRM Client, vedere [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
 
-Non è consentito eseguire il backup di tutte le licenze. Questo metodo esegue il backup solo delle licenze che lo consentono.
+Non è consentito eseguire il backup di tutte le licenze. Questo metodo esegue solo il backup delle licenze che lo consentono.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,8 +94,8 @@ Non è consentito eseguire il backup di tutte le licenze. Questo metodo esegue i
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 - name: Monitor di sistema
   href: system-monitor-portal.md
   items:
-    - name: Novità di monitoraggio di sistema
+    - name: Novità di Monitoraggio di sistema
       href: what-s-new-in-system-monitor.md
-    - name: Utilizzo di monitoraggio di sistema
+    - name: Utilizzo di Monitoraggio di sistema
       href: using-system-monitor.md
-    - name: Guida di riferimento a monitoraggio di sistema
+    - name: Informazioni di riferimento su Monitoraggio di sistema
       href: system-monitor-reference.md
       items:
         - name: Classi SYSMON
@@ -14,33 +14,33 @@
             - name: CounterItem
               href: counteritem.md
               items:
-                - name: Metodi CounterItem
+                - name: Metodi counterItem
                   href: counteritem-methods.md
                   items:
                     - name: CounterItem.GetDataAt
                       href: counteritem-getdataat.md
-                    - name: CounterItem. GetStatistics
+                    - name: CounterItem.GetStatistics
                       href: counteritem-getstatistics.md
-                    - name: CounterItem. GetValue
+                    - name: CounterItem.GetValue
                       href: counteritem-getvalue.md
                 - name: Proprietà di CounterItem
                   href: counteritem-properties.md
                   items:
-                    - name: CounterItem. Color
+                    - name: CounterItem.Color
                       href: counteritem-color.md
-                    - name: CounterItem. LineStyle
+                    - name: CounterItem.LineStyle
                       href: counteritem-linestyle.md
-                    - name: CounterItem. Path
+                    - name: CounterItem.Path
                       href: counteritem-path.md
-                    - name: CounterItem. ScaleFactor
+                    - name: CounterItem.ScaleFactor
                       href: counteritem-scalefactor.md
-                    - name: CounterItem. Selected
+                    - name: CounterItem.Selected
                       href: counteritem-selected.md
-                    - name: CounterItem. Value
+                    - name: CounterItem.Value
                       href: counteritem-value.md
-                    - name: CounterItem. Visible
+                    - name: CounterItem.Visible
                       href: counteritem-visible.md
-                    - name: CounterItem. Width
+                    - name: CounterItem.Width
                       href: counteritem-width.md
             - name: Counters
               href: counters.md
@@ -48,16 +48,16 @@
                 - name: Metodi dei contatori
                   href: counters--methods.md
                   items:
-                    - name: Contatori. Aggiungi
+                    - name: Counters.Add
                       href: counters-add.md
-                    - name: Contatori. Remove
+                    - name: Counters.Remove
                       href: counters-remove.md
-                - name: Proprietà contatori
+                - name: Proprietà dei contatori
                   href: counters--properties.md
                   items:
-                    - name: Contatori. Count
+                    - name: Counters.Count
                       href: counters-count.md
-                    - name: Contatori. elemento
+                    - name: Counters.Item
                       href: counters-item.md
             - name: LogFileItem
               href: logfileitem.md
@@ -65,163 +65,163 @@
                 - name: Proprietà di LogFileItem
                   href: logfileitem--properties.md
                   items:
-                    - name: LogFileItem. Path
+                    - name: LogFileItem.Path
                       href: logfileitem-path.md
             - name: LogFiles
               href: logfiles.md
               items:
-                - name: Metodi LogFiles
+                - name: Metodi di LogFiles
                   href: logfiles--methods.md
                   items:
-                    - name: LogFiles. Add
+                    - name: LogFiles.Add
                       href: systemmonitor-logfiles-add.md
-                    - name: LogFiles. Remove
+                    - name: LogFiles.Remove
                       href: systemmonitor-logfiles-remove.md
                 - name: Proprietà LogFiles
                   href: logfiles--properties.md
                   items:
-                    - name: LogFiles. Count
+                    - name: LogFiles.Count
                       href: systemmonitor-logfiles-count.md
-                    - name: LogFiles. Item
+                    - name: LogFiles.Item
                       href: systemmonitor-logfiles-item.md
             - name: SystemMonitor
               href: systemmonitor.md
               items:
-                - name: Eventi SystemMonitor
+                - name: Eventi di SystemMonitor
                   href: systemmonitor--events.md
                   items:
-                    - name: SystemMonitor. OnCounterAdded
+                    - name: SystemMonitor.OnCounterAdded
                       href: systemmonitor-oncounteradded.md
-                    - name: SystemMonitor. OnCounterDeleted
+                    - name: SystemMonitor.OnCounterDeleted
                       href: '-systemmonitor-oncounterdeleted.md'
-                    - name: SystemMonitor. OnCounterSelected
+                    - name: SystemMonitor.OnCounterSelected
                       href: '-systemmonitor-oncounterselected.md'
-                    - name: SystemMonitor. OnDblClick
+                    - name: SystemMonitor.OnDblClick
                       href: '-systemmonitor-ondblclick.md'
-                    - name: SystemMonitor. OnSampleCollected
+                    - name: SystemMonitor.OnSampleCollected
                       href: '-systemmonitor-onsamplecollected.md'
-                - name: Metodi SystemMonitor
+                - name: Metodi di SystemMonitor
                   href: systemmonitor--methods.md
                   items:
                     - name: SystemMonitor.BatchingLock
                       href: systemmonitor-batchinglock.md
-                    - name: SystemMonitor. BrowseCounters
+                    - name: SystemMonitor.BrowseCounters
                       href: systemmonitor-browsecounters.md
-                    - name: SystemMonitor. ClearData
+                    - name: SystemMonitor.ClearData
                       href: systemmonitor-cleardata.md
-                    - name: SystemMonitor. CollectSample
+                    - name: SystemMonitor.CollectSample
                       href: systemmonitor-collectsample.md
-                    - name: SystemMonitor. Copy
+                    - name: SystemMonitor.Copy
                       href: systemmonitor-copy.md
-                    - name: SystemMonitor. DisplayProperties
+                    - name: SystemMonitor.DisplayProperties
                       href: systemmonitor-displayproperties.md
-                    - name: SystemMonitor. GetLogViewRange
+                    - name: SystemMonitor.GetLogViewRange
                       href: systemmonitor-getlogviewrange.md
-                    - name: SystemMonitor. LoadSettings
+                    - name: SystemMonitor.LoadSettings
                       href: systemmonitor-loadsettings.md
-                    - name: SystemMonitor. Paste
+                    - name: SystemMonitor.Paste
                       href: systemmonitor-paste.md
-                    - name: SystemMonitor. relog
+                    - name: SystemMonitor.Relog
                       href: systemmonitor-relog.md
-                    - name: SystemMonitor. Reset
+                    - name: SystemMonitor.Reset
                       href: systemmonitor-reset.md
-                    - name: SystemMonitor. SaveAs
+                    - name: SystemMonitor.SaveAs
                       href: systemmonitor-saveas.md
-                    - name: SystemMonitor. ScaleToFit
+                    - name: SystemMonitor.ScaleToFit
                       href: systemmonitor-scaletofit.md
-                    - name: SystemMonitor. SetLogViewRange
+                    - name: SystemMonitor.SetLogViewRange
                       href: systemmonitor-setlogviewrange.md
-                    - name: SystemMonitor. UpdateGraph
+                    - name: SystemMonitor.UpdateGraph
                       href: systemmonitor-updategraph.md
                 - name: Proprietà di SystemMonitor
                   href: systemmonitor--properties.md
                   items:
-                    - name: SystemMonitor. Appearance
+                    - name: SystemMonitor.Appearance
                       href: systemmonitor-appearance.md
-                    - name: SystemMonitor. BackColor
+                    - name: SystemMonitor.BackColor
                       href: systemmonitor-backcolor.md
-                    - name: SystemMonitor. BackColorCtl
+                    - name: SystemMonitor.BackColorCtl
                       href: systemmonitor-backcolorctl.md
-                    - name: SystemMonitor. BorderStyle
+                    - name: SystemMonitor.BorderStyle
                       href: systemmonitor-borderstyle.md
-                    - name: SystemMonitor. ChartScroll
+                    - name: SystemMonitor.ChartScroll
                       href: systemmonitor-chartscroll.md
-                    - name: SystemMonitor. Counters
+                    - name: SystemMonitor.Counters
                       href: systemmonitor-counters.md
-                    - name: SystemMonitor. DataPointCount
+                    - name: SystemMonitor.DataPointCount
                       href: systemmonitor-datapointcount.md
-                    - name: SystemMonitor. DataSourceType
+                    - name: SystemMonitor.DataSourceType
                       href: systemmonitor-datasourcetype.md
-                    - name: SystemMonitor. DisplayType
+                    - name: SystemMonitor.DisplayType
                       href: systemmonitor-displaytype.md
-                    - name: SystemMonitor. EnableDigitGrouping
+                    - name: SystemMonitor.EnableDigitGrouping
                       href: systemmonitor-enabledigitgrouping.md
-                    - name: SystemMonitor. EnableToolTips
+                    - name: SystemMonitor.EnableToolTips
                       href: systemmonitor-enabletooltips.md
-                    - name: SystemMonitor. font
+                    - name: SystemMonitor.Font
                       href: systemmonitor-font.md
-                    - name: SystemMonitor. ForeColor
+                    - name: SystemMonitor.ForeColor
                       href: systemmonitor-forecolor.md
-                    - name: SystemMonitor. GraphTitle
+                    - name: SystemMonitor.GraphTitle
                       href: systemmonitor-graphtitle.md
-                    - name: SystemMonitor. GridColor
+                    - name: SystemMonitor.GridColor
                       href: systemmonitor-gridcolor.md
-                    - name: SystemMonitor. Highlight
+                    - name: SystemMonitor.Highlight
                       href: systemmonitor-highlight.md
-                    - name: SystemMonitor. LogFilename
+                    - name: SystemMonitor.LogFileName
                       href: systemmonitor-logfilename.md
-                    - name: SystemMonitor. LogFiles
+                    - name: SystemMonitor.LogFiles
                       href: systemmonitor-logfiles.md
-                    - name: SystemMonitor. LogSourceStartTime
+                    - name: SystemMonitor.LogSourceStartTime
                       href: systemmonitor-logsourcestarttime.md
-                    - name: SystemMonitor. LogSourceStopTime
+                    - name: SystemMonitor.LogSourceStopTime
                       href: systemmonitor-logsourcestoptime.md
-                    - name: SystemMonitor. LogViewStart
+                    - name: SystemMonitor.LogViewStart
                       href: systemmonitor-logviewstart.md
-                    - name: SystemMonitor. LogViewStop
+                    - name: SystemMonitor.LogViewStop
                       href: systemmonitor-logviewstop.md
-                    - name: SystemMonitor. ManualUpdate
+                    - name: SystemMonitor.ManualUpdate
                       href: systemmonitor-manualupdate.md
-                    - name: SystemMonitor. MaximumScale
+                    - name: SystemMonitor.MaximumScale
                       href: systemmonitor-maximumscale.md
-                    - name: SystemMonitor. MinimumScale
+                    - name: SystemMonitor.MinimumScale
                       href: systemmonitor-minimumscale.md
-                    - name: SystemMonitor. MonitorDuplicateInstances
+                    - name: SystemMonitor.MonitorDuplicateInstances
                       href: systemmonitor-monitorduplicateinstances.md
-                    - name: SystemMonitor. ReadOnly
+                    - name: SystemMonitor.ReadOnly
                       href: systemmonitor-readonly.md
-                    - name: SystemMonitor. ReportValueType
+                    - name: SystemMonitor.ReportValueType
                       href: systemmonitor-reportvaluetype.md
-                    - name: SystemMonitor. ShowHorizontalGrid
+                    - name: SystemMonitor.ShowHorizontalGrid
                       href: systemmonitor-showhorizontalgrid.md
-                    - name: SystemMonitor. ShowLegend
+                    - name: SystemMonitor.ShowLegend
                       href: systemmonitor-showlegend.md
-                    - name: SystemMonitor. ShowScaleLabels
+                    - name: SystemMonitor.ShowScaleLabels
                       href: systemmonitor-showscalelabels.md
-                    - name: SystemMonitor. ShowTimeAxisLabels
+                    - name: SystemMonitor.ShowTimeAxisLabels
                       href: systemmonitor-showtimeaxislabels.md
-                    - name: SystemMonitor. MostraBarraStrumenti
+                    - name: SystemMonitor.ShowToolbar
                       href: systemmonitor-showtoolbar.md
-                    - name: SystemMonitor. ShowValueBar
+                    - name: SystemMonitor.ShowValueBar
                       href: systemmonitor-showvaluebar.md
-                    - name: SystemMonitor. ShowVerticalGrid
+                    - name: SystemMonitor.ShowVerticalGrid
                       href: systemmonitor-showverticalgrid.md
-                    - name: SystemMonitor. SqlDsnName
+                    - name: SystemMonitor.SqlDsnName
                       href: systemmonitor-sqldsnname.md
-                    - name: SystemMonitor. SqlLogSetName
+                    - name: SystemMonitor.SqlLogSetName
                       href: systemmonitor-sqllogsetname.md
-                    - name: SystemMonitor. TimeBarColor
+                    - name: SystemMonitor.TimeBarColor
                       href: systemmonitor-timebarcolor.md
-                    - name: SystemMonitor. UpdateInterval
+                    - name: SystemMonitor.UpdateInterval
                       href: systemmonitor-updateinterval.md
-                    - name: SystemMonitor. YAxisLabel
+                    - name: SystemMonitor.YAxisLabel
                       href: systemmonitor-yaxislabel.md
         - name: Enumerazioni SYSMON
           href: sysmon-enumerations.md
           items:
             - name: DataSourceTypeConstants
               href: /windows/win32/api/isysmon/ne-isysmon-datasourcetypeconstants
-            - name: DisplayTypeConstants
+            - name: Elementi DisplayTypeConstants
               href: /windows/win32/api/isysmon/ne-isysmon-displaytypeconstants
             - name: ReportValueTypeConstants
               href: /windows/win32/api/isysmon/ne-isysmon-reportvaluetypeconstants
@@ -231,5 +231,5 @@
               href: /windows/win32/api/ISysmon/ne-isysmon-sysmondatatype
             - name: SysmonFileType
               href: /windows/win32/api/ISysmon/ne-isysmon-sysmonfiletype
-        - name: Valori restituiti SYSMON
+        - name: Valori restituiti da SYSMON
           href: sysmon-return-values.md

@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. horizontalAlignment
-description: L'attributo horizontalAlignment specifica o recupera un valore che indica la posizione orizzontale del controllo quando la visualizzazione o la Sottovisualizzazione padre viene ridimensionata.
+title: AmbientAttributes.horizontalAlignment
+description: L'attributo horizontalAlignment specifica o recupera un valore che indica la posizione orizzontale del controllo quando l'elemento VIEW o SUBVIEW padre viene ridimensionato.
 ms.assetid: 97ca23b9-2046-45ee-b2da-ea388e7ab8d8
 keywords:
-- Media Player di Windows AmbientAttributes. horizontalAlignment
+- AmbientAttributes.horizontalAlignment Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7f946f0d095526c9fc0894cdf0270cbf7cc0c81
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9daf64189735d79e1ad3eb4f7b3637ca68cfdae489cda9423bb60acdd1f9185c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055169"
 ---
-# <a name="ambientattributeshorizontalalignment"></a>AmbientAttributes. horizontalAlignment
+# <a name="ambientattributeshorizontalalignment"></a>AmbientAttributes.horizontalAlignment
 
-L'attributo **HorizontalAlignment** specifica o recupera un valore che indica la posizione orizzontale del controllo quando la **visualizzazione** o la **Sottovisualizzazione** padre viene ridimensionata.
+**L'attributo horizontalAlignment** specifica o recupera un valore che indica la posizione orizzontale del controllo quando l'elemento **VIEW** o **SUBVIEW** padre viene ridimensionato.
 
 ``` syntax
         elementID.horizontalAlignment
@@ -29,16 +29,16 @@ L'attributo **HorizontalAlignment** specifica o recupera un valore che indica la
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura.
+Questo attributo è una stringa di **lettura/scrittura.**
 
 
 
 | Valore   | Descrizione                                                                                                                                                                                                                                                                                                                                                        |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sinistro    | Valore predefinito. Mantiene la posizione del controllo rispetto a sinistra della **visualizzazione** o della **Sottovisualizzazione** padre quando la vista viene ridimensionata.                                                                                                                                                                                                                               |
-| right   | Mantiene la posizione del controllo rispetto a destra della visualizzazione o della **Sottovisualizzazione** padre quando **la vista viene** ridimensionata.                                                                                                                                                                                                                                       |
-| center  | Mantiene la posizione del controllo in relazione al centro orizzontale della **vista** o della **Sottovisualizzazione** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                                           |
-| adattamento | Mantiene il posizionamento del controllo in relazione ai margini sinistro e destro della **vista** o della **Sottovisualizzazione** padre quando viene ridimensionato. Il controllo si adatta al momento in cui la **visualizzazione** o la **Sottovisualizzazione** è allungata. L'immagine effettiva non aumenta o diminuisce a meno che non sia ridimensionabile, ma l'area selezionabile aumenta o diminuisce se non è vincolata da un **clippingImage**. |
+| sinistro    | Valore predefinito. Mantiene la posizione del controllo rispetto alla sinistra della vista **o** della visualizzazione **secondaria** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                                               |
+| right   | Mantiene la posizione del controllo rispetto a destra della vista **o** della visualizzazione **secondaria** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                                                       |
+| center  | Mantiene la posizione del controllo rispetto al centro orizzontale dell'oggetto **VIEW** o **subVIEW** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                                           |
+| adattamento | Mantiene la posizione del controllo rispetto ai margini sinistro e destro dell'oggetto **VIEW** o **subVIEW** padre quando viene ridimensionato. Il controllo si adatta in modo da adattarsi quando **l'oggetto VIEW** **o SUBVIEW** viene allungato. L'immagine effettiva non aumenta o riduce a meno che non sia ridimensionabile, ma l'area selezionabile aumenta o si riduce se non è delimitata da **un oggetto clippingImage.** |
 
 
 
@@ -46,9 +46,9 @@ Questo attributo è una **stringa** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-A meno che **HorizontalAlignment** non sia impostato su "Center", il controllo mantiene la distanza originale dal bordo specificato oppure da entrambi i bordi se si specifica "Stretch" e il controllo è ridimensionabile. Se il controllo non è ridimensionabile e si specifica "Stretch", viene invece estesa l'area selezionabile.
+A meno che **horizontalAlignment** non sia impostato su "center", il controllo mantiene la distanza originale dal bordo specificato o da entrambi i bordi se si specifica "stretch" e il controllo è ridimensionabile. Se il controllo non è ridimensionabile ed è specificato "stretch", l'area selezionabile viene estesa.
 
-È possibile impostare qualsiasi combinazione di **HorizontalAlignment** e **VerticalAlignment**. Ad esempio, se si desidera centrare un controllo sia orizzontalmente che verticalmente, impostare horizontalAlignment = "Center" verticalAlignment = "Center".
+È possibile impostare qualsiasi combinazione **di horizontalAlignment** **e verticalAlignment.** Ad esempio, se vuoi centrare un controllo sia orizzontalmente che verticalmente, imposta horizontalAlignment="center" verticalAlignment="center".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ A meno che **HorizontalAlignment** non sia impostato su "Center", il controllo m
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -67,7 +67,7 @@ A meno che **HorizontalAlignment** non sia impostato su "Center", il controllo m
 [**Attributi di ambiente**](ambient-attributes.md)
 </dt> <dt>
 
-[**AmbientAttributes. verticalAlignment**](ambientattributes-verticalalignment.md)
+[**AmbientAttributes.verticalAlignment**](ambientattributes-verticalalignment.md)
 </dt> <dt>
 
 [**AmbientAttributes.clippingImage**](ambientattributes-clippingimage.md)

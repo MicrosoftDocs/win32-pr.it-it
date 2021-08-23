@@ -1,7 +1,7 @@
 ---
 description: Consente l'elaborazione di un comando di trasformazione rilevato in un modello di anteprima.
 ms.assetid: 0b81b780-8bd1-4667-a0a1-65319f209603
-title: IItemPreviewerExt::P metodo rocessTransformCommand
+title: Metodo IItemPreviewerExt::P rocessTransformCommand
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 384294aac177679ea7445edb880198d250310625
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f93d4be0bf9491c4fd2f6074c00692d6f634704ec820a34baeb4f1d52343c36a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969777"
 ---
-# <a name="iitempreviewerextprocesstransformcommand-method"></a>IItemPreviewerExt::P metodo rocessTransformCommand
+# <a name="iitempreviewerextprocesstransformcommand-method"></a>Metodo IItemPreviewerExt::P rocessTransformCommand
 
 Consente l'elaborazione di un comando di trasformazione rilevato in un modello di anteprima.
 
@@ -41,16 +41,16 @@ HRESULT ProcessTransformCommand(
 
 <dl> <dt>
 
-*dwContext* \[ in\]
+*dwContext* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Identificatore di contesto per l'operazione. Eseguire l'override dell'impostazione predefinita *dwContext* per impostare l'identificatore di contesto su un valore a scelta.
+Identificatore di contesto per l'operazione. Eseguire *l'override dell'impostazione predefinita dwContext* per impostare l'identificatore di contesto su un valore di propria scelta.
 
 </dd> <dt>
 
-*pwszName* \[ in\]
+*pwszName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCOLESTR**
@@ -59,7 +59,7 @@ Puntatore al nome del comando di trasformazione come stringa Unicode.
 
 </dd> <dt>
 
-*pwszArg* \[ in\]
+*pwszArg* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCOLESTR**
@@ -71,9 +71,9 @@ Puntatore all'argomento come stringa Unicode.
 *pvarResult* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **Variant \** _
+Tipo: **\* VARIANT**
 
-Puntatore alla variante di risultato. _pvarResult * non deve essere un puntatore **null** .
+Puntatore alla variante del risultato. *pvarResult non* deve essere un **puntatore NULL.**
 
 </dd> </dl>
 
@@ -81,13 +81,13 @@ Puntatore alla variante di risultato. _pvarResult * non deve essere un puntatore
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) è supportata solo in Windows XP e windows Server 2003 e non deve più essere utilizzata.
+[**L'interfaccia IItemPreviewerExt**](-search-iitempreviewerext.md) è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
 
-Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti in computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare l'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) e le API seguenti: le interfacce [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem**](-search-isearchitem.md) , la struttura [**LINKINFO**](-search-linkinfo.md) e l'enumerazione [**LinkType**](-search-linktype.md) .
+Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare l'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) e le API seguenti: le interfacce [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la struttura [**LINKINFO**](-search-linkinfo.md) e l'enumerazione [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,9 +95,9 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
-| Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3,0<br/>          |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
+| Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>          |
 
 
 

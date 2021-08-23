@@ -1,5 +1,5 @@
 ---
-description: Specifica l'icona usata per il collegamento creato sulla barra delle applicazioni quando l'utente sceglie di aggiungere un'applicazione alla barra delle applicazioni o avviare una nuova istanza tramite il relativo pulsante Jump List.
+description: Specifica l'icona usata per il collegamento creato sulla barra delle applicazioni quando l'utente sceglie di aggiungere un'applicazione alla barra delle applicazioni o avviare una nuova istanza tramite la barra delle applicazioni del Jump List.
 ms.assetid: 3559d1f5-988c-41d9-ba9a-dfa4ba643ee2
 title: System.AppUserModel.RelaunchIconResource
 ms.topic: article
@@ -13,12 +13,12 @@ ms.locfileid: "118970840"
 ---
 # <a name="systemappusermodelrelaunchiconresource"></a>System.AppUserModel.RelaunchIconResource
 
-Specifica l'icona usata per il collegamento creato sulla barra delle applicazioni quando l'utente sceglie di aggiungere un'applicazione alla barra delle applicazioni o avviare una nuova istanza tramite il relativo pulsante Jump List. Si tratta dell'icona usata per il gruppo della barra delle applicazioni e viene visualizzata per un'applicazione aggiunta indipendentemente dal fatto che l'applicazione sia in esecuzione o meno. Deve essere specificato in uno dei formati seguenti:
+Specifica l'icona usata per il collegamento creato sulla barra delle applicazioni quando l'utente sceglie di aggiungere un'applicazione alla barra delle applicazioni o avviare una nuova istanza tramite la barra delle applicazioni del Jump List. Si tratta dell'icona usata per il gruppo della barra delle applicazioni e viene visualizzata per un'applicazione aggiunta indipendentemente dal fatto che l'applicazione sia in esecuzione o meno. Deve essere specificato in uno dei formati seguenti:
 
 -   Formato di risorsa standard, ad esempio "%systemdir% \\ system32 \\shell32.dll,-128". Il carattere "-" prima dell'ID risorsa è obbligatorio. Non usare il carattere "@" all'inizio della stringa di percorso.
 -   Percorso diretto di un file di icona, ad esempio "%programfiles% \\ Microsoft \\ Blocco note \\ Blocco note.ico,0". Si noti che poiché i file con estensione ico possono contenere più risorse icona, nella stringa è necessario un ID risorsa. Se il file con estensione ico è una singola immagine, usare "0" (senza il carattere "-") come ID risorsa.
 
-[System.AppUserModel.RelaunchIconResource]() è una proprietà facoltativa. Se non è impostata, viene usata l'icona della destinazione del comando di riavvio ([System.AppUserModel.RelaunchCommand](./props-system-appusermodel-relaunchcommand.md)). Tuttavia, poiché ciò può causare risultati indesiderati, è consigliabile fornire un'icona in modo esplicito tramite questa proprietà.
+[System.AppUserModel.RelaunchIconResource]() è una proprietà facoltativa. Se non è impostato, viene usata l'icona della destinazione del comando di riavvio ([System.AppUserModel.RelaunchCommand](./props-system-appusermodel-relaunchcommand.md)). Tuttavia, poiché ciò può causare risultati indesiderati, è consigliabile fornire un'icona in modo esplicito tramite questa proprietà.
 
 Questa proprietà viene usata solo se una finestra ha un ID modello utente applicazione esplicito (AppUserModelID) ([System.AppUserModel.ID](./props-system-appusermodel-id.md), impostato tramite [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow)). Se la finestra non ha un AppUserModelID (System.AppUserModel.ID) esplicito, questa proprietà viene ignorata e la finestra viene raggruppata e bloccata come se fosse parte del processo proprietario. Per altre informazioni sull'applicazione di AppUserModelIDs espliciti e sul relativo effetto sull'aggiunta della barra delle applicazioni, vedere ID modello utente applicazione [(AppUserModelIDs).](../shell/appids.md) Questa proprietà deve essere utilizzata da applicazioni o finestre che vogliono fornire informazioni di riavvio non predefinite. Per altre informazioni, vedere [System.AppUserModel.RelaunchCommand](./props-system-appusermodel-relaunchcommand.md).
 

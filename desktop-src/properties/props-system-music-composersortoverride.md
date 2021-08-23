@@ -1,5 +1,5 @@
 ---
-description: Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Composer. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo corretto fonetico (ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio consentendo all'utente di rimuovere articoli a scopo di ordinamento.
+description: Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Composer. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo fonetico corretto (l'ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
 ms.assetid: f087cbd3-7d0e-48c8-8e59-383d6b47cb12
 title: Sistema. Musica. ComposerSortOverride
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118970230"
 ---
 # <a name="systemmusiccomposersortoverride"></a>Sistema. Musica. ComposerSortOverride
 
-Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Composer. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo corretto fonetico (ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio consentendo all'utente di rimuovere articoli a scopo di ordinamento.
+Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Composer. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo fonetico corretto (l'ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

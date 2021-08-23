@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-HAB-Seniority-index
-description: Contiene l'indice di anzianità applicato dall'organizzazione in cui lavora la persona. | attributo ms-DS-HAB-Seniority-index
+title: Attributo ms-DS-HAB-Seniority-Index
+description: Contiene l'indice di seniorità applicato dall'organizzazione in cui lavora la persona. | Attributo ms-DS-HAB-Seniority-Index
 ms.assetid: 4110b6c3-6987-4f65-bfdf-244a9c9c0f46
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-HAB-Seniority-index
-- attributo msDS-HABSeniorityIndex-schema AD
+- Schema AD dell'attributo ms-DS-HAB-Seniority-Index
+- Schema AD dell'attributo msDS-HABSeniorityIndex
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f796b30d2676df76803ec407423e34e8cd96ecb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 994719462ae47396e5765cde7ed24faf19f486c8052d089888e5751687b5619d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960761"
 ---
-# <a name="ms-ds-hab-seniority-index-attribute"></a>attributo ms-DS-HAB-Seniority-index
+# <a name="ms-ds-hab-seniority-index-attribute"></a>Attributo ms-DS-HAB-Seniority-Index
 
-Contiene l'indice di anzianità applicato dall'organizzazione in cui lavora la persona.
+Contiene l'indice di seniorità applicato dall'organizzazione in cui lavora la persona.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-HAB-Seniority-index            |
-| LDAP-Display-Name | msDS-HABSeniorityIndex               |
+| CN                | ms-DS-HAB-Seniority-Index            |
+| Ldap-Display-Name | msDS-HABSeniorityIndex               |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1997              |
-| System-ID-GUID    | def449f1-fd3b-4045-98cf-d9658da788b5 |
+| System-Id-Guid    | def449f1-fd3b-4045-98cf-d9658da788b5 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene l'indice di anzianità applicato dall'organizzazione in cui lavora la p
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene l'indice di anzianità applicato dall'organizzazione in cui lavora la p
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene l'indice di anzianità applicato dall'organizzazione in cui lavora la p
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Vero                                                               |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

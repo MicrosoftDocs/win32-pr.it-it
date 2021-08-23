@@ -3,41 +3,41 @@ title: Supporto degli schemi
 description: WsUtil.exe supporta lo schema XSD specificato in XML Schema.
 ms.assetid: 33096cda-9dbe-44d2-8d08-410bc33ae81c
 keywords:
-- Servizi Web di supporto dello schema per Windows
+- Supporto dello schema dei servizi Web per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dcf9d192c999333ee8b4e341e7722cd6bd59ff5
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 8c0f55c5ea3828c72456989f7053e2ff008e524e41552b281b88839653229863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103956223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962900"
 ---
 # <a name="schema-support"></a>Supporto degli schemi
 
-WsUtil.exe supporta lo schema XSD specificato in [XML Schema](https://www.w3.org/XML/Schema). il file XSD e WSDL: Type devono essere trattati nella stessa categoria, con l'eccezione in WSDL: Type quando un elemento globale può essere un elenco di parametri. Wsutil.exe genera descrizioni di elementi per tutte le definizioni di elemento globali che possono essere utilizzate nel serializzatore, con output aggiuntivo per la struttura di parametri specificata nel [supporto WSDL](wsdl-support.md).
+WsUtil.exe supporta lo schema XSD specificato in [XML Schema.](https://www.w3.org/XML/Schema) Il file xsd e wsdl:type devono essere trattati nella stessa categoria, con l'eccezione in wsdl:type quando un elemento globale può essere un elenco di parametri. Wsutil.exe genera descrizioni degli elementi per tutte le definizioni di elemento globali che possono essere utilizzate nel serializzatore, con output aggiuntivo per la struttura dei parametri specificata nel [supporto WSDL.](wsdl-support.md)
 
 ## <a name="xsd-schema-support-level"></a>Livello di supporto dello schema XSD
 
-WsUtil.exe non supporta l'intera estensione dello schema XSD. Il livello di supporto corrente viene definito nel [livello di supporto dello schema](schema-support-level.md).
+WsUtil.exe non supporta l'intero extent dello schema XSD. Il livello di supporto corrente è definito nel livello [di supporto dello schema](schema-support-level.md).
 
 Generazione di identificatori
 
-Il nome dell'elemento o il nome del tipo nello schema potrebbe non essere un identificatore C valido e i nomi vengono normalizzati in nomi C validi generati. I caratteri dell'identificatore C non validi vengono convertiti nel nome esadecimale e il carattere di sottolineatura ' \_ ' potrebbe essere preceduto dal nome, se necessario. I tipi anonimi vengono denominati dopo il nome dell'elemento di inclusione, ma con il carattere di sottolineatura " \_ " per evitare conflitti di nomi. I nomi dei tipi globali vengono conservati così come sono dopo la normalizzazione di caratteri non validi. I tipi anonimi annidati sono preceduti dal nome del tipo padre.
+Il nome dell'elemento o il nome del tipo nello schema potrebbe non essere un identificatore C valido e i nomi vengono normalizzati in modo da generare nomi C validi. I caratteri identificatore C non validi vengono convertiti nel nome esadecimale e un carattere di sottolineatura ' ' potrebbe essere preceduto \_ dal nome, se necessario. I tipi anonimi sono denominati in base al nome dell'elemento contenitore, ma preceduti dal carattere di sottolineatura " \_ " per evitare conflitti di nome. I nomi dei tipi globali vengono mantenuti così come sono dopo la normalizzazione dei caratteri non validi. I tipi anonimi annidati sono preceduti dal nome del tipo padre.
 
-Per ogni definizione di elemento globale, wsutil.exe genera [**una \_ \_ Descrizione dell'elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) nella struttura di descrizione globale. Per ogni definizione di tipo globale, wsutil.exe genera una descrizione del tipo nella struttura di descrizione globale a cui fa riferimento l'applicazione.
+Per ogni definizione di elemento globale, wsutil.exe genera una [**WS \_ ELEMENT \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) nella struttura di descrizione globale. Per ogni definizione di tipo globale, wsutil.exe genera una descrizione del tipo nella struttura di descrizione globale a cui l'applicazione deve fare riferimento.
 
-Per ogni campo nella struttura, wsutil.exe genera una [**Descrizione del \_ campo \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description) incorporata come parte della struttura dell'enclosure.
+Per ogni campo della struttura, wsutil.exe genera una [**WS \_ FIELD \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description) incorporata come parte della struttura dello chassis.
 
 ## <a name="simple-types"></a>Tipi semplici
 
-I tipi di valore, elencati [**nel \_ \_ tipo di valore WS**](/windows/desktop/api/WebServices/ne-webservices-ws_value_type), vengono considerati tipi semplici. Si noti che \_ \_ il tipo di valore WS è effettivamente un subset di [**WS \_ Type**](/windows/desktop/api/WebServices/ne-webservices-ws_type). Sono inclusi i tipi di dati integrali e float di base, nonché decimali, WS \_ DateTime e UUID.
+I tipi valore, elencati in [**WS \_ VALUE \_ TYPE,**](/windows/desktop/api/WebServices/ne-webservices-ws_value_type)vengono considerati come tipi semplici. Si noti che WS \_ VALUE TYPE è in realtà un subset di \_ [**WS \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_type). Include tipi di dati integrali e float di base, nonché DECIMAL, WS \_ DATETIME e UUID.
 
-Nel modello di servizio, nei tipi semplici vengono passati per valore, mentre in uscita e in i tipi semplici vengono passati per riferimento.
+Nel modello di servizio, nei tipi semplici vengono passati per valore, mentre i tipi semplici out e in uscita vengono passati per riferimento.
 
-Wsutil creare una descrizione semplice dell'elemento come la seguente per l'elemento globale contenente tipi semplici.
+Wsutil crea una descrizione di elemento semplice come quella riportata di seguito per l'elemento globale contenente tipi semplici.
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -72,7 +72,7 @@ WS_ELEMENT_DESCRIPTION helloworld;
 
 ## <a name="arrays"></a>Matrici
 
-L'elemento con maxOccurs maggiore di 1 o una sequenza con un solo elemento e l'elemento figlio ha un maxOccurs maggiore di 1, viene trattato come matrice. Per un elemento di matrice nello schema, wsutil.exe genera due campi: un campo di conteggio che non è in transito e un campo del puntatore che contiene il tipo di matrice.
+L'elemento con maxOccurs maggiore di 1 o una sequenza con un solo elemento e l'elemento figlio con maxOccurs maggiore di 1 viene considerato come matrice. Per un elemento di matrice nello schema, wsutil.exe due campi: un campo di conteggio che non è in transito e un campo puntatore contenente il tipo di matrice.
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -87,7 +87,7 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 </xs:schema>
 ```
 
-Il file di intestazione contiene la definizione della struttura C per la matrice, con l'account di campo che specifica il numero della matrice.
+Il file di intestazione contiene la definizione della struttura C per la matrice, con il campo aCount che specifica il conteggio della matrice.
 
 ``` syntax
 typedef struct SimpleArray
@@ -97,7 +97,7 @@ typedef struct SimpleArray
 } SimpleArray;
 ```
 
-Il codice seguente fa parte del prototipo LocalDefinition che descrive la matrice:
+Di seguito è riportato il prototipo LocalDefinition che descrive la matrice:
 
 ``` syntax
 ... // globalElement part of the LocalDefinitions.
@@ -137,7 +137,7 @@ struct // SimpleArray
     WS_ERROR* error);
 ```
 
-Di seguito sono riportate le definizioni generate delle descrizioni precedenti. si noti il \_ mapping del campo dell'elemento ripetuto WS \_ \_ \_ che indica il campo come campo di matrice.
+Di seguito sono riportate le definizioni generate delle descrizioni precedenti. Si noti il mapping WS REPEATING ELEMENT FIELD MAPPING che indica il campo \_ \_ come campo di \_ \_ matrice.
 
 ``` syntax
 ...
@@ -179,15 +179,15 @@ Di seguito sono riportate le definizioni generate delle descrizioni precedenti. 
 ...
 ```
 
-Se la matrice è un campo di parametri nel messaggio di input/output, verranno generati due parametri effettivi per il metodo. Se la matrice è un parametro out o in, out, esiste un ulteriore livello di riferimento indiretto per entrambi i campi in paramStruct.
+Se la matrice è un campo di parametro nel messaggio di input/output, per il metodo verranno generati due parametri effettivi. Se la matrice è un parametro out o in,out, esisterebbe un livello aggiuntivo di riferimento indiretto per entrambi i campi in paramStruct.
 
-## <a name="range-on-array"></a>Intervallo sulla matrice
+## <a name="range-on-array"></a>Intervallo nella matrice
 
-Si consiglia di non specificare maxOccur = "unbounded" per le matrici. È invece necessario specificare un numero intero fisso per impostare un limite superiore del numero di matrici consentito. l'intervallo è supportato per i tipi integrali, nonché per stringhe, matrici di byte e matrici generiche.
+È consigliabile non specificare maxOccur="unbounded" per le matrici. È invece necessario che sia specificato un numero intero fisso per impostare un limite superiore di conteggi di matrici consentiti. range è supportato per i tipi integrali, nonché per stringhe, matrici di byte e matrici generiche.
 
-## <a name="heuristic-for-wrapped-as-opposed-to-unwrapped-array"></a>Euristica per cui è stato eseguito il wrapped anziché la matrice
+## <a name="heuristic-for-wrapped-as-opposed-to-unwrapped-array"></a>Euristica per la matrice di cui è stato eseguito il wrapping anziché senza wrapping
 
-A volte le matrici vengono incapsulate all'interno di un'altra struttura per essere incorporate in una struttura di primo livello. In tal caso, è necessario rimuovere il livello wrapper intermedio. WsUtil.exe genera lo stesso prototipo e le stesse descrizioni di SimpleArray descritto in precedenza.
+In alcuni casi viene eseguito il wrapping delle matrici all'interno di un'altra struttura da incorporare in una struttura di primo livello. In tal caso, è necessario rimuovere il livello wrapper intermedio. WsUtil.exe genera lo stesso prototipo e le stesse descrizioni di SimpleArray descritte in precedenza.
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -207,7 +207,7 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 </xs:schema>
 ```
 
-Wsutil rileva che SimpleArrayWrapper è un wrapper per SimpleArray e genera solo le strutture seguenti, con una struttura separata per SimpleArray
+Wsutil rileva che SimpleArrayWrapper è un wrapper per SimpleArray e genera solo le strutture seguenti, con struttura separata per SimpleArray
 
 ``` syntax
 typedef struct SimpleArrayWrapper
@@ -230,7 +230,7 @@ struct // SimpleArrayWrapper
 ...
 ```
 
-wsutil.exe genera le seguenti definizioni per il prototipo corrispondente riportato sopra. si noti che nella descrizione del campo i campi nome wrapper e spazio dei nomi wrapper sono compilati
+wsutil.exe genera le definizioni seguenti per il prototipo corrispondente precedente, si noti che nella descrizione del campo i campi del nome del wrapper e dello spazio dei nomi del wrapper vengono compilati
 
 ``` syntax
 ... // global element part of the LocalDefinitions structure:
@@ -272,7 +272,7 @@ wsutil.exe genera le seguenti definizioni per il prototipo corrispondente riport
 
 ## <a name="structures"></a>Strutture
 
-Un complexType con più elementi in una sequenza è una struttura. Ad esempio,
+Un complexType con più elementi in una sequenza è una struttura . Ad esempio,
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -287,7 +287,7 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 </xs:schema>
 ```
 
-Wsutil.exe genera un prototipo di struttura come:
+Wsutil.exe genera un prototipo di struttura come segue:
 
 ``` syntax
 struct StructType
@@ -314,7 +314,7 @@ HRESULT CALLBACK SimpleMethod (WS_SERVICE_PROXY* serviceProxy,
   WS_ERROR* error);
 ```
 
-wsutil genera il seguente prototipo per LocalDefinition:
+wsutil genera il prototipo seguente per LocalDefinition:
 
 ``` syntax
 struct // StructType
@@ -330,7 +330,7 @@ WS_ELEMENT_DESCRIPTION elementDesc;
 }
 ```
 
-La definizione della struttura è simile alla seguente, con due descrizioni dei campi nella struttura.
+La definizione per la struttura è simile alla seguente, con due descrizioni di campo nella struttura.
 
 ``` syntax
 // global element inside LocalDefinitions.
@@ -378,11 +378,11 @@ La definizione della struttura è simile alla seguente, con due descrizioni dei 
 }, // StructType
 ```
 
-Per supportare l'estendibilità, le strutture incorporate vengono sempre definite passate per riferimento. In Service, all out o in, le strutture out vengono passate da un puntatore doppio per consentire l'estensione futura della struttura, oltre a consentire la struttura nillable.
+Per supportare l'estendibilità, le strutture incorporate sono sempre definite passate per riferimento. Nel servizio tutte le strutture out o in,out vengono passate da un puntatore double per consentire l'estensione futura della struttura, oltre a consentire una struttura nillable.
 
 ## <a name="recursive-structures"></a>Strutture ricorsive
 
-Sono supportate le strutture ricorsive e i tipi incorporati vengono passati per riferimento. Per il WSDL seguente:
+Le strutture ricorsive sono supportate e i tipi incorporati vengono passati per riferimento. Per il wsdl seguente:
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -404,7 +404,7 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 </xs:schema>
 ```
 
-Wsutil genera le definizioni dei tipi seguenti, nonché le descrizioni dei tipi:
+Wsutil genera le definizioni di tipo seguenti, nonché le descrizioni dei tipi:
 
 ``` syntax
 typedef struct example
@@ -492,9 +492,9 @@ La definizione viene generata come indicato di seguito:
 }
 ```
 
-## <a name="structure-inheritence"></a>Struttura eredità
+## <a name="structure-inheritence"></a>Ereditarietà della struttura
 
-wsutil supporta un'estensione di tipo complesso in cui un tipo complesso è un'estensione di un altro tipo complesso.
+wsutil supporta l'estensione di tipo complesso in cui un tipo complesso è un'estensione di un altro tipo complesso.
 
 ``` syntax
 <s:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -519,9 +519,9 @@ targetNamespace="http://Example.org" xmlns:s="http://www.w3.org/2001/XMLSchema">
 </s:schema>
 ```
 
-Il frammento XSD sopra riportato indica che DerivedLinkList deriva da linker.
+Il frammento xsd precedente indica che DerivedLinkList deriva da LinkList.
 
-Wsutil.exe genera routine di supporto sia per C che per C++, in modo da consentire all'applicazione di impostare in modo più semplice le informazioni sul tipo del tipo di base e dei tipi derivati. Nel codice seguente \_ \_ viene usata la macro WS CPLUSPLUS per distinguere la definizione per il linguaggio C e C++:
+Wsutil.exe genera routine helper per C e C++ per rendere più semplice per l'applicazione configurare le informazioni sul tipo di base e i tipi derivati. Nel codice seguente viene usata la macro WS CPLUSPLUS per distinguere la definizione per il \_ \_ linguaggio C e C++:
 
 ``` syntax
 #if defined(_WS_CPLUSPLUS)
@@ -566,9 +566,9 @@ struct _DerivedLinkList* WINAPI LinkList_As_DerivedLinkList(LinkList*);
 #endif
 ```
 
-Nell'helper di stile C, prima di serialiation, l'applicazione chiama WSUTIL generate routine linking \_ init per inizializzare la struttura e impostare la descrizione del tipo sulla descrizione del tipo di collegamento. Dopo la deserializzazione, l'applicazione può chiamare Linked \_ come \_ DerivedLinkList per ottenere il tipo derivato.
+Nell'helper di stile C, prima della serializzazione, l'applicazione chiama la routine generata da wsutil LinkList Init per inizializzare la struttura e impostare la descrizione del tipo su \_ LinkList type description. Dopo la deserializzazione, l'applicazione può chiamare LinkList \_ as \_ DerivedLinkList per ottenere il tipo derivato.
 
-Per recuperare le informazioni sul tipo in fase di esecuzione, WSUTIL genera il primo campo del tipo di base con il mapping del campo del tipo di [**\_ \_ Descrizione di WS struct**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description) \* e il mapping dei campi dell' [**\_ \_ attributo \_ \_ WS Type**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) per descrivere le informazioni xsi: Type. L'applicazione può impostare o controllare direttamente il campo per determinare il tipo effettivo di strutture. Il codice seguente, ad esempio, imposta il tipo della struttura come DrivedLinkList:
+Per recuperare informazioni sul tipo in fase di esecuzione, wsutil genera il primo campo del tipo di base con il tipo [**\_ WS STRUCT \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description) e il mapping dei campi WS TYPE ATTRIBUTE FIELD MAPPING per descrivere le informazioni \* xsi:type. [**\_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) L'applicazione può impostare o controllare direttamente il campo per determinare il tipo effettivo di strutture. Ad esempio, il codice seguente imposta il tipo della struttura su DrivedLinkList:
 
 ``` syntax
 _DerivedLinkList derivedLinkList;
@@ -591,7 +591,7 @@ if (derviedLinkList._base._type == (WS_STRUCT_DESCRIPTION*)test_xsd.globalElemen
 }
 ```
 
-wsutil genera la classe sia per la struttura di base che per la struttura derivata. Il costruttore predefinito inizializza il tipo e la descrizione del tipo corrispondente. La routine AsDerivedType consente di eseguire il cast di tipo sicuro tra i tipi.
+wsutil genera la classe sia per la struttura di base che per la struttura derivata. Il costruttore predefinito inizializza il tipo e la descrizione del tipo corrispondente. La routine AsDerivedType consente di eseguire il cast di tipi sicuri tra tipi.
 
 ``` syntax
   { // field description for typeOfLinkList
@@ -619,15 +619,15 @@ WsCountOf(test_xsdLocalDefinitions.globalTypes.LinkListdescs.LinkListFields),
 
 ## <a name="nillable"></a>nillable
 
-l'attributo nillable è supportato per stringhe, struct e matrici di byte. L' \_ attributo WS Field \_ NILLABLE verrà aggiunto ai campi con l'attributo NILLABLE. Se un elemento è nillable, il puntatore verrà impostato su **null** . Un campo nillable in una struttura viene considerato come un puntatore. Una struttura di parametri con attributo nillable verrà passata per riferimento.
+L'attributo nillable è supportato per stringhe, struct e matrici di byte. \_L'attributo WS FIELD \_ NILLABLE verrà aggiunto ai campi con attributo nillable. Il puntatore verrà impostato su **NULL se** un elemento è nillable. Un campo nillable in una struttura viene considerato come un puntatore. Una struttura di parametri con attributo nillable verrà passata per riferimento.
 
 ## <a name="pointers"></a>indicatori di misura
 
-Il tipo di valore deve essere passato per valore o per riferimento per i parametri out. Il puntatore doppio non è consentito tranne che per le strutture out only.
+Il tipo di valore deve essere passato per valore o per riferimento per i parametri out. Il puntatore double non è consentito ad eccezione delle strutture out only.
 
 ## <a name="parameterless"></a>Senza parametri
 
-Ricordare la discussione precedente per il nome "Parameters" per la parte del messaggio. Se si specifica questo valore, si tenterà di generare un frame combinato per il messaggio di input e di output per l'operazione del servizio risultante. Se non viene specificata, l'operazione del servizio risultante conterrà i messaggi di input e output come struct come parametri.
+Si ricordi la discussione precedente per il nome dei "parametri" per la parte del messaggio. Se viene specificato, si tenterà di generare un frame combinato per il messaggio di input e output per l'operazione del servizio risultante. Se non viene specificato, l'operazione del servizio risultante conterrà i messaggi di input e output come struct come parametri.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" 
@@ -647,7 +647,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Quindi, per l'operazione SimpleMethod la firma per il servizio e il client sarà simile a.
+Pertanto, per l'operazione SimpleMethod la firma per il servizio e il client sarà simile.
 
 ``` syntax
 typedef HRESULT (CALLBACK *SimpleMethodCallback)
@@ -668,11 +668,11 @@ HRESULT CALLBACK SimpleMethod (
 
 ## <a name="security"></a>Sicurezza
 
-Vedere la sezione sicurezza nello [strumento del compilatore WSUTIL](wsutil-compiler-tool.md) e la [serializzazione](serialization.md)
+Vedere la sezione relativa alla sicurezza [nello strumento del compilatore Wsutil](wsutil-compiler-tool.md) e [serializzazione](serialization.md)
 
- 
+ 
 
- 
+ 
 
 
 

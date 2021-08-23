@@ -1,19 +1,19 @@
 ---
-description: In questo argomento vengono elencati i metodi BeginContainer della classe Graphics. Per un elenco completo dei metodi per la classe graphics, vedere Graphics.
+description: Questo argomento elenca i metodi BeginContainer della classe Graphics. Per un elenco completo dei metodi per la classe Graphics, vedere Graphics.
 ms.assetid: f4a031db-eb60-4d01-b8e1-43ba7de41630
-title: Metodi Graphics. BeginContainer (Gdiplusgraphics. h)
+title: Metodi Graphics.BeginContainer (Gdiplusgraphics.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5e1c2ac616f4c6bca222248757a205f317ba5d6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cee702c9b4fa6103bb0075372f63fa084a7adbc0011469ab342bfe256eb207a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104996497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977881"
 ---
-# <a name="graphicsbegincontainer-methods"></a>Metodi Graphics. BeginContainer
+# <a name="graphicsbegincontainer-methods"></a>Metodi Graphics.BeginContainer
 
-In questo argomento vengono elencati i metodi BeginContainer della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Per un elenco completo dei metodi per la classe **Graphics** , vedere [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
+Questo argomento elenca i metodi BeginContainer della [**classe**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Graphics. Per un elenco completo dei metodi per la **classe Graphics,** vedere [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,9 +21,9 @@ In questo argomento vengono elencati i metodi BeginContainer della classe [**Gra
 
 | Metodo                                                                                                                      | Descrizione                                                                                                                                                              |
 |:----------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BeginContainer ()**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit))                                                         | Il metodo [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) avvia un nuovo contenitore grafico. <br/>                                      |
-| [**BeginContainer (Rect&, Rect&, unità)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit))     | Il metodo [**Graphics:: BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit)) avvia un nuovo contenitore grafico.<br/>   |
-| [**BeginContainer (RectF&, RectF&, unità)**](/previous-versions//ms536157(v=vs.85)) | Il metodo [**Graphics:: BeginContainer**](/previous-versions//ms536157(v=vs.85)) avvia un nuovo contenitore grafico.<br/> |
+| [**BeginContainer()**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit))                                                         | Il [**metodo Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrectf__inconstrectf__inunit)) avvia un nuovo contenitore di grafica. <br/>                                      |
+| [**BeginContainer(Rect&,Rect&,Unit)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit))     | Il [**metodo Graphics::BeginContainer**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-begincontainer(inconstrect__inconstrect__inunit)) avvia un nuovo contenitore di grafica.<br/>   |
+| [**BeginContainer(RectF&,RectF&,Unit)**](/previous-versions//ms536157(v=vs.85)) | Il [**metodo Graphics::BeginContainer**](/previous-versions//ms536157(v=vs.85)) avvia un nuovo contenitore di grafica.<br/> |
 
 
 
@@ -33,7 +33,7 @@ In questo argomento vengono elencati i metodi BeginContainer della classe [**Gra
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Gdiplusgraphics. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Gdiplusgraphics.h</dt> </dl> |
 
 
 

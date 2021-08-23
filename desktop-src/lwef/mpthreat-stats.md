@@ -1,10 +1,10 @@
 ---
-title: Struttura MPTHREAT_STATS (MpClient. h)
+title: MPTHREAT_STATS struttura (MpClient.h)
 description: Statistiche correlate alle minacce.
 ms.assetid: 78B7E2A8-1BB4-4610-8E90-1F8ECBE740A8
 keywords:
-- Struttura MPTHREAT_STATS le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPTHREAT_STATS
+- MPTHREAT_STATS struttura Legacy Windows Environment Features
+- PMPTHREAT_STATS puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21a2eef7acde5fbeac2cf9951dfad3e6923ccea2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7671b45dc09c8aca494ad270aa69fc386ef3d7c03d5144fdc3e89b4f657bb07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975941"
 ---
-# <a name="mpthreat_stats-structure"></a>\_Struttura statistiche MPTHREAT
+# <a name="mpthreat_stats-structure"></a>Struttura MPTHREAT \_ STATS
 
 Statistiche correlate alle minacce.
 
@@ -46,7 +46,7 @@ typedef struct tagMPTHREAT_STATS {
 **ThreatCount**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -57,22 +57,22 @@ Numero di minacce rilevate.
 **SuspiciousThreatCount**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-Numero di minacce rilevate con monitoraggio del comportamento.
+Numero di minacce rilevate con il monitoraggio del comportamento.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd>
 
-Tipo: **uint \[ 4 \]**
+Tipo: **UINT \[ 4 \]**
 
 </dd> <dd>
 
-Campi riservati per utilizzi futuri.
+Campi riservati per un uso futuro.
 
 </dd> </dl>
 
@@ -82,9 +82,9 @@ Campi riservati per utilizzi futuri.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

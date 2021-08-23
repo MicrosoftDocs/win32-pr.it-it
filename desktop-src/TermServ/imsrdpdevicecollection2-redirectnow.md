@@ -1,12 +1,12 @@
 ---
-title: Metodo IMsRdpDeviceCollection2 RedirectNow
-description: Impone il reindirizzamento o la rimozione dei dispositivi selezionati o deselezionati dalla raccolta.
+title: Metodo RedirectNow IMsRdpDeviceCollection2
+description: Forza il reindirizzamento o la rimozione dei dispositivi selezionati o deselezionati dalla raccolta.
 ms.assetid: 9cd5849d-a589-43f3-b904-6b2e15ca033d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo RedirectNow
+- Metodo RedirectNow Servizi Desktop remoto
 - Metodo RedirectNow Servizi Desktop remoto, interfaccia IMsRdpDeviceCollection2
-- Interfaccia IMsRdpDeviceCollection2 Servizi Desktop remoto, metodo RedirectNow
+- Interfaccia IMsRdpDeviceCollection2 Servizi Desktop remoto , metodo RedirectNow
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 893d1e26f504d5aeb45f795ea7425eeefc3a6232
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60c92eff142305e95a71c69cdce9789b0d2316e3d5e60b703a7c1aa8e835688f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058919"
 ---
-# <a name="imsrdpdevicecollection2redirectnow-method"></a>Metodo IMsRdpDeviceCollection2:: RedirectNow
+# <a name="imsrdpdevicecollection2redirectnow-method"></a>Metodo IMsRdpDeviceCollection2::RedirectNow
 
-Impone il reindirizzamento o la rimozione dei dispositivi selezionati o deselezionati dalla raccolta.
+Forza il reindirizzamento o la rimozione dei dispositivi selezionati o deselezionati dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,12 +43,12 @@ HRESULT RedirectNow(
 
 <dl> <dt>
 
-*Tipo* \[ di in\]
+*Tipo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **RedirectDeviceType**](redirectdevicetype.md)**
 
-Valore dell'enumerazione [**RedirectDeviceType**](redirectdevicetype.md) che specifica il tipo di dispositivo da reindirizzare.
+Valore [**dell'enumerazione RedirectDeviceType**](redirectdevicetype.md) che specifica il tipo di dispositivo da reindirizzare.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Valore dell'enumerazione [**RedirectDeviceType**](redirectdevicetype.md) che spe
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

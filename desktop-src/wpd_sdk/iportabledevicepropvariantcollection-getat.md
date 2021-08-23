@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 02fa273b3bedea78884e15d2dedb5b7d2f675c78330c735e3bfb1896bc9d5199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963730"
 ---
 # <a name="iportabledevicepropvariantcollectiongetat-method"></a>Metodo IPortableDevicePropVariantCollection::GetAt
 
@@ -44,27 +44,27 @@ HRESULT GetAt(
 *dwIndex* \[ Pollici\]
 </dt> <dd>
 
-**DWORD** che contiene l'indice in base zero dell'elemento da recuperare.
+**Valore DWORD** che contiene l'indice in base zero dell'elemento da recuperare.
 
 </dd> <dt>
 
 *pValue* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a **una struttura PROPVARIANT.** Il chiamante è responsabile della liberazione di questa memoria chiamando **PropVariantClear**.
+Puntatore a **una struttura PROPVARIANT.** Il chiamante è responsabile del liberare la memoria chiamando **PropVariantClear.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                          |
-| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>      |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice passato non è compreso nell'intervallo.<br/> |
 
 
@@ -73,7 +73,7 @@ Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono 
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [Recupero delle categorie funzionali supportate da un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md).
+Per un esempio di come usare questo metodo, vedere [Recupero delle categorie funzionali supportate da un dispositivo.](retrieving-the-functional-categories-supported-by-a-device.md)
 
 ## <a name="requirements"></a>Requisiti
 

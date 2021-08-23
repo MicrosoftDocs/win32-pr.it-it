@@ -4,12 +4,12 @@ ms.assetid: d7518ba6-a0f1-4985-aa2c-1ca15a0ceb02
 title: Enumerazione di oggetti processo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 329afb511a4551ba0449b826c7eece26d609816b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 072510f27ba91a3cad3b76cd2f0c1c04e8c9dd10dd0304f8665d12d16283fda4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061189"
 ---
 # <a name="enumerating-process-objects"></a>Enumerazione di oggetti processo
 

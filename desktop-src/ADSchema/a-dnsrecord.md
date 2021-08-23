@@ -1,10 +1,10 @@
 ---
-title: Attributo Dns-Record
-description: Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
+title: Dns-Record attributo
+description: Usato per archiviare i record di risorse DNS binari in oggetti DNS.
 ms.assetid: 2d5a17da-0efc-450e-b247-3ab6d2de3a5d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Dns-Record attribute
+- Dns-Record schema AD dell'attributo
 - Schema AD dell'attributo dnsRecord
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 013fa5ef4a9fcec151f996c347cdfd525438aa7d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89580b0b2f39e94623d080a594d5ea15ff5df1cd26bf09552bede1c8a9b021ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961630"
 ---
-# <a name="dns-record-attribute"></a>Attributo Dns-Record
+# <a name="dns-record-attribute"></a>Dns-Record attributo
 
-Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
+Usato per archiviare i record di risorse DNS binari in oggetti DNS.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Dns-Record                                            |
-| LDAP-Display-Name | dnsRecord                                             |
+| Ldap-Display-Name | dnsRecord                                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | Ogni volta che i record di risorse DNS cambiano.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.382                                |
-| System-ID-GUID    | e0fa1e69-9b45-11d0-afdd-00c04fd930c9                  |
+| System-Id-Guid    | e0fa1e69-9b45-11d0-afdd-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato per archiviare i record di risorse DNS binarie sugli oggetti DNS.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| A valore singolo       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 

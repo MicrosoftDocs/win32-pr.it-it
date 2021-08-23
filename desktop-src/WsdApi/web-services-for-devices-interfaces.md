@@ -1,19 +1,19 @@
 ---
-description: "L'interfaccia di programmazione dei servizi Web nei dispositivi definisce e utilizza le interfacce seguenti:"
+description: "L'interfaccia di programmazione Servizi Web nei dispositivi definisce e usa le interfacce seguenti:"
 ms.assetid: 85033c35-6012-4146-871d-e95d789a60b2
-title: Interfacce dei servizi Web nei dispositivi
+title: Servizi Web nelle interfacce dei dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f60483df9fa8e6fadd07f695aa28cc110b9f94fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 562b78f0b6b59445967422672d675a55c6effba3dc6182ff50e2bde6ab26285b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991451"
 ---
-# <a name="web-services-on-devices-interfaces"></a>Interfacce dei servizi Web nei dispositivi
+# <a name="web-services-on-devices-interfaces"></a>Servizi Web nelle interfacce dei dispositivi
 
-L'interfaccia di programmazione dei servizi Web nei dispositivi definisce e utilizza le interfacce seguenti:
+L'interfaccia di programmazione Servizi Web nei dispositivi definisce e usa le interfacce seguenti:
 
 -   [**IWSDAddress**](/windows/desktop/api/Wsdbase/nn-wsdbase-iwsdaddress)
 -   [**IWSDAsyncCallback**](/windows/desktop/api/WsdClient/nn-wsdclient-iwsdasynccallback)
@@ -44,7 +44,7 @@ L'interfaccia di programmazione dei servizi Web nei dispositivi definisce e util
 -   [**IWSDTransportAddress**](/windows/desktop/api/Wsdbase/nn-wsdbase-iwsdtransportaddress)
 -   [**IWSDUdpAddress**](/windows/desktop/api/Wsdbase/nn-wsdbase-iwsdudpaddress)
 -   [**IWSDUdpMessageParameters**](/windows/desktop/api/Wsdbase/nn-wsdbase-iwsdudpmessageparameters)
--   [**IWSDXMLContext**](/windows/desktop/api/WsdXml/nn-wsdxml-iwsdxmlcontext)
+-   [**Oggetto IWSDXMLContext**](/windows/desktop/api/WsdXml/nn-wsdxml-iwsdxmlcontext)
 
  
 
