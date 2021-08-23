@@ -1,28 +1,28 @@
 ---
-description: Elenca i CSP disponibili in un computer tramite CryptoAPI.
+description: Elenca i CSP disponibili in un computer usando CryptoAPI.
 ms.assetid: 10a5210d-7992-4832-9435-67ac2b851a97
-title: 'Programma C di esempio: enumerazione dei provider CSP e dei tipi di provider'
+title: 'Programma C di esempio: enumerazione di provider e tipi di provider CSP'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a109aab8bbf3788bd539d078f00f7a28926f98de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 372ea5f228008856d2a7701a7f11dbff462d239f8e0d39486a2c1634379ddec4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007649"
 ---
-# <a name="example-c-program-enumerating-csp-providers-and-provider-types"></a>Programma C di esempio: enumerazione dei provider CSP e dei tipi di provider
+# <a name="example-c-program-enumerating-csp-providers-and-provider-types"></a>Programma C di esempio: enumerazione di provider e tipi di provider CSP
 
-Nell'esempio seguente vengono elencati i CSP disponibili in un computer e vengono utilizzate le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+L'esempio seguente elenca i provider di servizi di configurazione disponibili in un computer e usa le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
 -   [**CryptEnumProviderTypes**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidertypesa)
 -   [**CryptEnumProviders**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidersa)
 -   [**CryptGetDefaultProvider**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultprovidera)
 -   [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam)
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso in questo esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso in questo esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
-Nell'esempio seguente viene illustrata l'enumerazione dei CSP e dei tipi di provider.
+L'esempio seguente illustra l'enumerazione di CSP e tipi di provider.
 
 
 ```C++

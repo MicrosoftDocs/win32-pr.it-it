@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione SystemSystemDriver Win32 mette in relazione un computer e un driver di sistema in esecuzione nel computer.
+description: La classe WMI di associazione SystemSystemDriver Win32 mette in relazione un \_ sistema computer e un driver di sistema in esecuzione in tale sistema.
 ms.assetid: 82638c29-6769-4410-90bc-b408b27adad4
 ms.tgt_platform: multiple
-title: Classe Win32_SystemSystemDriver
+title: Win32_SystemSystemDriver classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b193d173fa0592a44ba437543659dec456e432ea
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 027f720ee5b4a6be6f36a568e343ca42d097d61619098c171ce2cc279c6f202a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958890"
 ---
-# <a name="win32_systemsystemdriver-class"></a>Win32 \_ SystemSystemDriver (classe)
+# <a name="win32_systemsystemdriver-class"></a>Classe \_ SystemSystemDriver Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ SystemSystemDriver Win32** mette in relazione un computer e un driver di sistema in esecuzione nel computer.
+La classe [WMI](../wmisdk/retrieving-a-class.md) di **associazione \_ SystemSystemDriver Win32** mette in relazione un sistema computer e un driver di sistema in esecuzione in tale sistema.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,29 +42,29 @@ class Win32_SystemSystemDriver : CIM_SystemComponent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SystemSystemDriver** presenta questi tipi di membri:
+La **classe \_ SystemSystemDriver Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SystemSystemDriver** dispone di queste proprietà.
+La **classe \_ SystemSystemDriver Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ ComputerSystem**
+Tipo di dati: **\_ ComputerSystem Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta le proprietà del computer su cui è in esecuzione il driver.
+Riferimento all'istanza che rappresenta le proprietà del computer in cui è in esecuzione il driver.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo di dati: **Win32 \_ SystemDriver**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ SystemDriver")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ SystemDriver")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta il driver di sistema in esecuzione nel computer.
+Riferimento all'istanza che rappresenta il driver di sistema in esecuzione nel computer.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ SystemSystemDriver** è derivata da [**CIM \_ SystemComponent**](cim-systemcomponent.md).
+La **classe \_ SystemSystemDriver Win32** deriva da [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ SystemSystemDriver** è derivata da [**CIM \_ SystemCompone
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ SystemSystemDriver** è derivata da [**CIM \_ SystemCompone
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

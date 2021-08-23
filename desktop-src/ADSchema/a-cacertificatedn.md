@@ -1,10 +1,10 @@
 ---
-title: CA-certificate-DN (attributo)
+title: Attributo CA-Certificate-DN
 description: Nome distinto completo del certificato della CA.
 ms.assetid: 51d1a9f8-d3d7-4ac9-b029-fa66b6799820
 ms.tgt_platform: multiple
 keywords:
-- CA-certificate-DN attributo AD schema
+- Schema AD dell'attributo CA-Certificate-DN
 - Schema AD dell'attributo cACertificateDN
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f6dcdf7faf3bcb93bcb029a373e19faed68e91
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 02a3e77e19ebc8cb0f9277e529a2d249bb53f60260e121823082524d9bed1b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022669"
 ---
-# <a name="ca-certificate-dn-attribute"></a>CA-certificate-DN (attributo)
+# <a name="ca-certificate-dn-attribute"></a>Attributo CA-Certificate-DN
 
 Nome distinto completo del certificato della CA.
 
@@ -29,13 +29,13 @@ Nome distinto completo del certificato della CA.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | CA-certificato-DN                           |
-| LDAP-Display-Name | cACertificateDN                             |
+| CN                | CA-Certificate-DN                           |
+| Ldap-Display-Name | cACertificateDN                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.697                      |
-| System-ID-GUID    | 963d2740-48be-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 963d2740-48be-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome distinto completo del certificato della CA.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

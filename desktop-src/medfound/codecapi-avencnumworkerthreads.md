@@ -1,17 +1,17 @@
 ---
 description: Imposta il numero di thread di lavoro utilizzati da un codificatore video.
 ms.assetid: E490DF0C-97DE-4375-A4DB-17DA4E782E2D
-title: Proprietà CODECAPI_AVEncNumWorkerThreads (codecapit. h)
+title: CODECAPI_AVEncNumWorkerThreads proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e08e18f57478597b841e042b17c601451ad93cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 526fe4a025ce47e7c9775b677c3ef5a72d55f892ae201f5241421a2ff0d29163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974910"
 ---
-# <a name="codecapi_avencnumworkerthreads-property"></a>Proprietà AVEncNumWorkerThreads di codecapi \_
+# <a name="codecapi_avencnumworkerthreads-property"></a>CODECAPI \_ AVEncNumWorkerThreads - proprietà
 
 Imposta il numero di thread di lavoro utilizzati da un codificatore video.
 
@@ -21,7 +21,7 @@ Imposta il numero di thread di lavoro utilizzati da un codificatore video.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncNumWorkerThreads**
+**CODECAPI \_ AVEncNumWorkerThreads**
 
 ## <a name="remarks"></a>Commenti
 
@@ -33,9 +33,9 @@ Se il valore è zero, il codificatore seleziona il numero di thread.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Se il valore è zero, il codificatore seleziona il numero di thread.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

@@ -1,10 +1,10 @@
 ---
-title: attributo ms-RRAS-vendor-attribute-entry
-description: Stringa che consente ai fornitori di aggiungere attributi router al servizio di dominio Active Directory per l'utilizzo nelle query, nel formato AttributeName vendorID AttributeType.
+title: Attributo ms-RRAS-Vendor-Attribute-Entry
+description: Stringa che consente ai fornitori di aggiungere attributi del router al DS per l'uso nelle query, nel formato AttributeName vendorID AttributeType.
 ms.assetid: 07bc4d9b-eba9-456b-be21-cd7bb8a5b0b6
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-RRAS-vendor-attribute-entry
+- Attributo MS-RRAS-Vendor-Attribute-Entry schema AD
 - Schema AD dell'attributo msRRASVendorAttributeEntry
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28ee353122107db5b1247860e9799db861b4d6bf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: efaaddb014b57e5d786ecb4ac7f45ace24adc7a2384bcd90c7e1316d1310b260
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960320"
 ---
-# <a name="ms-rras-vendor-attribute-entry-attribute"></a>attributo ms-RRAS-vendor-attribute-entry
+# <a name="ms-rras-vendor-attribute-entry-attribute"></a>Attributo ms-RRAS-Vendor-Attribute-Entry
 
-Stringa che consente ai fornitori di aggiungere gli attributi del router al DS per l'utilizzo nelle query, nel formato attributeName: vendorID: AttributeType.
+Stringa che consente ai fornitori di aggiungere attributi del router al servizio directory per l'uso nelle query, nel formato AttributeName:vendorID:AttributeType.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-RRAS-vendor-attribute-entry              |
-| LDAP-Display-Name | msRRASVendorAttributeEntry                  |
+| CN                | ms-RRAS-Vendor-Attribute-Entry              |
+| Ldap-Display-Name | msRRASVendorAttributeEntry                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.883                      |
-| System-ID-GUID    | f39b98ac-938d-11d1-aebd-0000f80367c1        |
+| System-Id-Guid    | f39b98ac-938d-11d1-aebd-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa che consente ai fornitori di aggiungere gli attributi del router al DS p
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Falso                                                                               |
+| Is-Single-Valued       | Falso                                                                               |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
+| Classi usate in        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETLOCALE (winuser. h)
-description: Imposta le impostazioni locali correnti della casella di riepilogo. È possibile utilizzare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo \_ stile di ordinamento lbs) e del testo aggiunto dal \_ messaggio ADDSTRING lb.
+title: LB_SETLOCALE messaggio (Winuser.h)
+description: Imposta le impostazioni locali correnti della casella di riepilogo. È possibile usare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile SORT di LBS) e del testo aggiunto dal messaggio \_ \_ LB ADDSTRING.
 ms.assetid: e9503124-de9f-4b92-a59e-ec9320864ae7
 keywords:
-- Controlli di Windows Message LB_SETLOCALE
+- LB_SETLOCALE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd8ea7bb7b6d19144a84ab166f56cd2c0ad49e05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 623b8550b3d5f382ddc8ccc1e1cfcf861a2f8c0a7877ba60c57e393abc1401d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958540"
 ---
-# <a name="lb_setlocale-message"></a>\_Messaggio setlocale di lb
+# <a name="lb_setlocale-message"></a>Messaggio \_ LB SETLOCALE
 
-Imposta le impostazioni locali correnti della casella di riepilogo. È possibile utilizzare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile di [**\_ ordinamento lbs**](list-box-styles.md) ) e del testo aggiunto dal [**messaggio \_ ADDSTRING lb**](lb-addstring.md) .
+Imposta le impostazioni locali correnti della casella di riepilogo. È possibile usare le impostazioni locali per determinare l'ordinamento corretto del testo visualizzato (per le caselle di riepilogo con lo stile SORT di [**LBS) \_**](list-box-styles.md) e del testo aggiunto dal messaggio [**\_ LB ADDSTRING.**](lb-addstring.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta le impostazioni locali correnti della casella di riepilogo. È possibile
 *wParam* 
 </dt> <dd>
 
-Specifica l'identificatore delle impostazioni locali che la casella di riepilogo utilizzerà per l'ordinamento quando si aggiunge il testo.
+Specifica l'identificatore delle impostazioni locali che verrà utilizzato dalla casella di riepilogo per l'ordinamento durante l'aggiunta di testo.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'identificatore delle impostazioni locali precedente. Se il parametro *wParam* specifica impostazioni locali non installate nel sistema, il valore restituito è lb \_ Err e le impostazioni locali correnti della casella di riepilogo non vengono modificate.
+Il valore restituito è l'identificatore delle impostazioni locali precedente. Se il *parametro wParam* specifica impostazioni locali non installate nel sistema, il valore restituito è LB ERR e le impostazioni locali correnti della casella di riepilogo \_ non vengono modificate.
 
 ## <a name="remarks"></a>Commenti
 
-Usare la macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) per costruire un identificatore delle impostazioni locali.
+Utilizzare la macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) per costruire un identificatore delle impostazioni locali.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Usare la macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) per 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Usare la macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) per 
 **Riferimento**
 </dt> <dt>
 
-[**\_ADDSTRING lb**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**LB \_ GETlocale**](lb-getlocale.md)
+[**LB \_ GETLOCALE**](lb-getlocale.md)
 </dt> </dl>
 
  

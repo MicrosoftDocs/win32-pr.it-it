@@ -1,5 +1,5 @@
 ---
-description: Specifica le informazioni su una rete cellulare.
+description: Specifica informazioni su una rete cellulare.
 ms.assetid: 52d07b64-7939-4f1c-9793-be07af098053
 title: Tipo complesso providerType (Mobile Broadband)
 ms.topic: reference
@@ -11,16 +11,16 @@ api_name:
 - providerType
 api_type:
 - Schema
-ms.openlocfilehash: 1520425cf6ec1bc246f26f2db2d75f79f45a3dae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb62fbb55f83d004f70093fbde974f8ab08e6367742f34dbf166d1c25a63b28c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975060"
 ---
 # <a name="providertype-complex-type"></a>Tipo complesso providerType
 
-Il tipo complesso **ProviderType** specifica le informazioni su una rete cellulare.
+Il **tipo complesso providerType** specifica informazioni su una rete cellulare.
 
 ``` syntax
 <xs:complexType name="providerType">
@@ -41,7 +41,7 @@ Il tipo complesso **ProviderType** specifica le informazioni su una rete cellula
 
 | Elemento                                                          | Tipo                                                           | Descrizione               |
 |------------------------------------------------------------------|----------------------------------------------------------------|---------------------------|
-| [**ProviderID**](schema-providerid-providertype-element.md)     | [**providerIdType**](schema-provideridtype-simpletype.md)     | ID del provider.<br/>   |
+| [**ProviderID**](schema-providerid-providertype-element.md)     | [**providerIdType**](schema-provideridtype-simpletype.md)     | ID provider.<br/>   |
 | [**ProviderName**](schema-providername-providertype-element.md) | [**providerNameType**](schema-providernametype-simpletype.md) | Nome del provider.<br/> |
 
 
@@ -52,7 +52,7 @@ Il tipo complesso **ProviderType** specifica le informazioni su una rete cellula
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

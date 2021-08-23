@@ -1,33 +1,33 @@
 ---
-description: Nell'esempio seguente vengono elencati i certificati in un archivio certificati di sistema, viene visualizzato il nome dell'oggetto di ogni certificato e viene consentito all'utente di scegliere di eliminare i certificati dall'archivio.
+description: L'esempio seguente elenca i certificati in un archivio certificati di sistema, visualizzando il nome del soggetto di ogni certificato, e consente all'utente di scegliere di eliminare eventuali certificati dall'archivio.
 ms.assetid: 52a0287b-7d2a-483e-8bbc-43621c4b7103
-title: 'Esempio di programma C: eliminazione di certificati da un archivio certificati'
+title: 'Programma C di esempio: eliminazione di certificati da un archivio certificati'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f29f55d27bf2a85d82e4ab96e51fe5368c9de935
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 065a7e0e46f3072d69014e294610ec7ae546d05c98816f809b9b2de92949db62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007855"
 ---
-# <a name="example-c-program-deleting-certificates-from-a-certificate-store"></a>Esempio di programma C: eliminazione di certificati da un archivio certificati
+# <a name="example-c-program-deleting-certificates-from-a-certificate-store"></a>Programma C di esempio: eliminazione di certificati da un archivio certificati
 
-Nell'esempio seguente vengono elencati i certificati in un [*archivio certificati*](../secgloss/c-gly.md)di sistema, viene visualizzato il nome dell'oggetto di ogni certificato e viene consentito all'utente di scegliere di eliminare i certificati dall'archivio. Nell'esempio viene ottenuto il nome dell'archivio certificati dall'utente e pertanto può essere utilizzato per gestire il contenuto di qualsiasi archivio certificati di sistema.
+L'esempio seguente elenca i certificati in un archivio certificati di sistema [*,*](../secgloss/c-gly.md)visualizzando il nome del soggetto di ogni certificato e consente all'utente di scegliere di eliminare eventuali certificati dall'archivio. L'esempio ottiene il nome dell'archivio certificati dall'utente e quindi può essere usato per gestire il contenuto di qualsiasi archivio certificati di sistema.
 
-In questo esempio vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le attività e le [*funzioni CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Apertura di un archivio certificati di sistema tramite [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Elencare i certificati in un archivio certificati usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
--   Ottenere il nome dell'oggetto di un certificato utilizzando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Confronto tra il nome dell'oggetto del certificato e il nome dell'emittente del certificato utilizzando [**CertCompareCertificateName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificatename).
--   Verifica per determinare se la chiave pubblica del certificato corrente corrisponde alla chiave pubblica di un certificato precedente usando [**CertComparePublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparepublickeyinfo).
--   Duplicazione di un puntatore a un [*contesto di certificato*](../secgloss/c-gly.md) utilizzando [**CertDuplicateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatecontext).
--   Confronto tra i membri [**CERT \_ info**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) di ogni certificato usando [**CertCompareCertificate**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificate).
--   Eliminazione di un certificato da un archivio con [**CertDeleteCertificateFromStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certdeletecertificatefromstore).
--   Chiusura di un archivio certificati utilizzando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
+-   Apertura di un archivio certificati di sistema [**tramite CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Elenco dei certificati in un archivio certificati [**tramite CertEnumCertificatesInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore)
+-   Recupero del nome dell'oggetto di un certificato [**tramite CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
+-   Confronto tra il nome del soggetto del certificato e il nome dell'autorità emittente del certificato [**tramite CertCompareCertificateName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificatename).
+-   Controllo per determinare se la chiave pubblica del certificato corrente corrisponde alla chiave pubblica di un certificato precedente usando [**CertComparePublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparepublickeyinfo).
+-   Duplicazione di un puntatore a [*un contesto di*](../secgloss/c-gly.md) certificato tramite [**CertDuplicateCertificateContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatecontext)
+-   Confronto dei [**membri CERT \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) di ogni certificato [**tramite CertCompareCertificate.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificate)
+-   Eliminazione di un certificato da un archivio [**tramite CertDeleteCertificateFromStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certdeletecertificatefromstore)
+-   Chiusura di un archivio certificati [**tramite CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-Questo esempio Mostra come ottenere il nome di un archivio certificati di sistema dall'utente, apre tale archivio e passa attraverso i certificati nell'archivio. Per ogni certificato, viene visualizzato il nome dell'oggetto del certificato e all'utente viene assegnata un'opzione per eliminare il certificato.
+Questo esempio ottiene il nome di un archivio certificati di sistema dall'utente, lo apre e passa attraverso i certificati in tale archivio. Per ogni certificato, viene visualizzato il nome del soggetto del certificato e all'utente viene data un'opzione per eliminare il certificato.
 
 
 ```C++

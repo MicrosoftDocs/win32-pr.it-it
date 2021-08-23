@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-is-primary-computer-for
-description: Attributo backlink per msDS-IsPrimaryComputer.
+title: Attributo ms-DS-Is-Primary-Computer-For
+description: Attributo Backlink per msDS-IsPrimaryComputer.
 ms.assetid: ba2feaf9-7705-49ca-8b83-dce54d6f368d
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-is-primary-computer-per lo schema AD dell'attributo
-- attributo msDS-IsPrimaryComputerFor-schema AD
+- Ms-DS-Is-Primary-Computer-For attribute AD Schema
+- Schema AD msDS-IsPrimaryComputerFor
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 690b7dd2481175985dcff95c7ae0d194332bea03
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ece3dec8229b1863ebe355ca0b0185c3dd5397f673bf3104945f8cfa1af00dd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960769"
 ---
-# <a name="ms-ds-is-primary-computer-for-attribute"></a>attributo ms-DS-is-primary-computer-for
+# <a name="ms-ds-is-primary-computer-for-attribute"></a>Attributo ms-DS-Is-Primary-Computer-For
 
-Attributo backlink per msDS-IsPrimaryComputer.
+Attributo Backlink per msDS-IsPrimaryComputer.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-is-primary-computer-for           |
-| LDAP-Display-Name | msDS-IsPrimaryComputerFor               |
+| CN                | ms-DS-Is-Primary-Computer-For           |
+| Ldap-Display-Name | msDS-IsPrimaryComputerFor               |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2168                 |
-| System-ID-GUID    | 998c06ac-3f87-444e-a5df-11b03dc8a50c    |
+| System-Id-Guid    | 998c06ac-3f87-444e-a5df-11b03dc8a50c    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -53,15 +53,15 @@ Attributo backlink per msDS-IsPrimaryComputer.
 | ID collegamento                | 2187                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

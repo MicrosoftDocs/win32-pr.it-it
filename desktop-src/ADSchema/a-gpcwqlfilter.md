@@ -1,10 +1,10 @@
 ---
 title: Attributo GPC-WQL-Filter
-description: Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un percorso dello spazio dei nomi WMI.
+description: Utilizzato per archiviare una stringa contenente un GUID per il filtro e un percorso dello spazio dei nomi WMI.
 ms.assetid: ea76239b-79e2-49b2-a848-a924450d332a
 ms.tgt_platform: multiple
 keywords:
-- GPC-WQL-filtrare l'attributo AD schema
+- Schema AD dell'attributo GPC-WQL-Filter
 - Schema AD dell'attributo gPCWQLFilter
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9a6b8d3715c1692e93579d3c94cdfa44f4192e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6da17b1edd25952668e838bd06ed4ce30bd667e24161d84c5d953c4433f75b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961340"
 ---
 # <a name="gpc-wql-filter-attribute"></a>Attributo GPC-WQL-Filter
 
-Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un percorso dello spazio dei nomi WMI.
+Utilizzato per archiviare una stringa contenente un GUID per il filtro e un percorso dello spazio dei nomi WMI.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | GPC-WQL-filtro                                                                  |
-| LDAP-Display-Name | gPCWQLFilter                                                                    |
+| CN                | GpC-WQL-Filter                                                                  |
+| Ldap-Display-Name | gPCWQLFilter                                                                    |
 | Dimensione              | \-                                                                              |
-| Privilegio aggiornamento  | Amministratore di dominio                                                            |
-| Frequenza di aggiornamento  | Solo quando l'amministratore modifica la proprietà Filter nell'interfaccia utente di Criteri di gruppo. |
+| Privilegio di aggiornamento  | Amministratore di dominio                                                            |
+| Frequenza di aggiornamento  | Solo quando l'amministratore modifica la proprietà del filtro nell'interfaccia Criteri di gruppo interfaccia utente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1694                                                         |
-| System-ID-GUID    | 7bd4c7a6-1add-4436-8c04-3999a880154c                                            |
+| System-Id-Guid    | 7bd4c7a6-1add-4436-8c04-3999a880154c                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
@@ -57,15 +57,15 @@ Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un pe
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un pe
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un pe
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un pe
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Utilizzato per archiviare una stringa che contiene un GUID per il filtro e un pe
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 

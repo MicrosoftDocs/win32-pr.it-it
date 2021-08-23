@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_CHANGEBITMAP (COMmctrl. h)
+title: TB_CHANGEBITMAP messaggio (Commctrl.h)
 description: Modifica la bitmap per un pulsante in una barra degli strumenti.
 ms.assetid: 112b6f4e-6034-4e13-8b2f-b8411a351fbd
 keywords:
-- Controlli di Windows Message TB_CHANGEBITMAP
+- TB_CHANGEBITMAP di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1367a2a1b4e35d6f52bf1e7a0be42f1e75daa7ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bb75e4586960a68e68c52d01d19ad78a3b3c848dcfb7acbd495dffbe530770c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957940"
 ---
-# <a name="tb_changebitmap-message"></a>TB \_ CHANGEBITMAP messaggio
+# <a name="tb_changebitmap-message"></a>TB \_ CHANGEBITMAP message
 
 Modifica la bitmap per un pulsante in una barra degli strumenti.
 
@@ -32,22 +32,22 @@ Modifica la bitmap per un pulsante in una barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Identificatore di comando del pulsante che deve ricevere una nuova bitmap.
+Identificatore del comando del pulsante che deve ricevere una nuova bitmap.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Indice in base zero di un'immagine nell'elenco di immagini della barra degli strumenti. Il sistema Visualizza l'immagine specificata nel pulsante. Impostare questo parametro su I \_ IMAGECALLBACK e la barra degli strumenti invierà la notifica [**TBN \_ GETDISPINFO**](tbn-getdispinfo.md) per recuperare l'indice dell'immagine quando necessario.
+Indice in base zero di un'immagine nell'elenco di immagini della barra degli strumenti. Il sistema visualizza l'immagine specificata nel pulsante. Impostare questo parametro su I IMAGECALLBACK e la barra degli strumenti invierà la notifica \_ [**\_ TBN GETDISPINFO**](tbn-getdispinfo.md) per recuperare l'indice dell'immagine quando necessario.
 
-[Versione 5,81](common-control-versions.md). Impostare questo parametro su I \_ IMAGENONE per indicare che il pulsante non dispone di un'immagine. Il layout del pulsante non includerà alcuno spazio per una bitmap, ma solo per il testo.
+[Versione 5.81.](common-control-versions.md) Impostare questo parametro su I \_ IMAGENONE per indicare che il pulsante non ha un'immagine. Il layout del pulsante non includerà alcuno spazio per una bitmap, ma solo testo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

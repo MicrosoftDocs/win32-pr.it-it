@@ -1,36 +1,36 @@
 ---
-description: Analogamente ad altri provider di istanze, è possibile registrare un provider a prestazioni elevate con Microsoft Windows&\# 160; Strumentazione gestione (WMI) creando un'istanza delle \_ \_ classi Win32Provider e \_ \_ InstanceProviderRegistration.
+description: Come altri provider di istanze, si registra un provider a prestazioni elevate con Microsoft Windows&\# 160; Strumentazione gestione (WMI) creando un'istanza \_ \_ delle classi Win32Provider \_ \_ e InstanceProviderRegistration.
 ms.assetid: 6ff3f8c6-71ca-4589-bca7-b864e24a473d
 ms.tgt_platform: multiple
-title: Registrazione di un provider di High-Performance
+title: Registrazione di un provider High-Performance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e38653be78747bbfe68ce01d610e9b65b4c981d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ee52db95290810a046d23781dbccf666cd63a19b01bf9414b2e224b8137f8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992571"
 ---
-# <a name="registering-a-high-performance-provider"></a>Registrazione di un provider di High-Performance
+# <a name="registering-a-high-performance-provider"></a>Registrazione di un provider High-Performance
 
-Analogamente ad altri provider di istanze, è possibile registrare un provider a prestazioni elevate con Microsoft Strumentazione gestione Windows (WMI) creando un'istanza delle classi [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) . L'istanza **\_ \_ Win32Provider** definisce l'implementazione fisica del provider e l'istanza di **\_ \_ InstanceProviderRegistration** definisce il set di funzionalità del provider. Per ulteriori informazioni, vedere la pagina relativa alla [registrazione di un provider](registering-a-provider.md).
+Analogamente ad altri provider di istanze, è possibile registrare un provider a prestazioni elevate con Strumentazione gestione Microsoft Windows (WMI) creando un'istanza delle [**\_ \_ classi Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration.**](--instanceproviderregistration.md) **\_ \_ L'istanza Win32Provider** definisce l'implementazione fisica del provider e **\_ \_ l'istanza InstanceProviderRegistration** definisce il set di funzionalità del provider. Per altre informazioni, vedere [Registrazione di un provider.](registering-a-provider.md)
 
-Nella procedura riportata di seguito viene descritto come registrare un provider di istanze a prestazioni elevate.
+Nella procedura seguente viene descritto come registrare un provider di istanze a prestazioni elevate.
 
-**Per registrare un provider di istanze a prestazioni elevate**
+**Per registrare un provider di istanze ad alte prestazioni**
 
-1.  Creare un'istanza della classe [**\_ \_ Win32Provider**](--win32provider.md) che descrive il provider.
+1.  Creare un'istanza della [**\_ \_ classe Win32Provider**](--win32provider.md) che descrive il provider.
 
-    Assicurarsi di aggiungere una proprietà **ClientLoadableCLSID** all'istanza di [**\_ \_ Win32Provider**](--win32provider.md) . Se il provider e il client si trovano nello stesso computer, WMI carica il provider in-process nel client usando **ClientLoadableCLSID** come identificatore di classe. Quando il provider e il client si trovano in computer diversi, WMI carica il provider in-process in WMI. WMI inoltre utilizza **ClientLoadableCLSID** per supportare le operazioni di aggiornamento.
+    Assicurarsi di aggiungere una **proprietà ClientLoadableCLSID** all'istanza [**\_ \_ win32Provider.**](--win32provider.md) Se il provider e il client si trovano nello stesso computer, WMI carica il provider in-process nel client usando **ClientLoadableCLSID come** identificatore di classe. Quando il provider e il client si trovano in computer diversi, WMI carica il provider in-process in WMI. WMI usa anche **ClientLoadableCLSID per** supportare le operazioni di aggiornamento.
 
-2.  Creare un'istanza della classe [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) che descrive il set di funzionalità del provider.
+2.  Creare un'istanza della [**\_ \_ classe InstanceProviderRegistration**](--instanceproviderregistration.md) che descrive il set di funzionalità del provider.
 
-    Assicurarsi di contrassegnare la classe con i qualificatori [**dinamici**](dynamic-qualifier.md) e del [**provider**](/windows/desktop/api/Provider/nl-provider-provider) . Il qualificatore **dinamico** segnala che WMI deve usare un provider per recuperare le istanze della classe. Il qualificatore del **provider** specifica il nome del provider che WMI deve utilizzare.
+    Assicurarsi di contrassegnare la classe con entrambi i [**qualificatori Dynamic**](dynamic-qualifier.md) [**e Provider.**](/windows/desktop/api/Provider/nl-provider-provider) Il **qualificatore dinamico** segnala che WMI deve utilizzare un provider per recuperare le istanze della classe. Il **qualificatore** Provider specifica il nome del provider che WMI deve utilizzare.
 
-    Un provider a prestazioni elevate deve inoltre supportare lo stato del supporto per operazioni, operazioni di enumerazione o entrambi. Assicurarsi di usare le proprietà **SupportsGet** e **SupportsEnumeration** nell'implementazione.
+    Un provider a prestazioni elevate deve anche specificare il supporto per operazioni, operazioni di enumerazione o entrambe. Assicurarsi di usare le proprietà **SupportsGet** **e SupportsEnumeration** nell'implementazione.
 
-Nell'esempio di codice seguente viene illustrato come implementare le classi [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) per un provider a prestazioni elevate.
+L'esempio di codice seguente illustra come implementare le [**\_ \_ classi Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) per un provider ad alte prestazioni.
 
 ``` syntax
 instance of __Win32Provider as $P
@@ -68,7 +68,7 @@ class TestClass
 
 <dl> <dt>
 
-[Creazione di un provider di istanze in un provider di High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)
+[Creazione di un provider di istanze in un provider High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)
 </dt> </dl>
 
  

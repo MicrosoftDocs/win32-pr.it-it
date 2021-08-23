@@ -1,22 +1,22 @@
 ---
-title: Controllare un download BITS tramite una connessione costosa
-description: Blocca il download su una connessione costosa, ad esempio un collegamento cellulare mobile.
+title: Controllare un download BITS su una connessione costosa
+description: Bloccare il download su una connessione costosa, ad esempio un collegamento cellulare mobile.
 ms.assetid: 66C20B32-1348-44D9-81F3-43CCED0CEA34
 keywords:
-- Download di BITS, procedura
-- Scarica BITS, evitando costosi
+- download di BITS, procedura
+- scarica BITS, evitando costi elevati
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 6326838f08f1879929d9a6be67ef94c4aa035e00
-ms.sourcegitcommit: 00e0a8e56d28c4c720b97f0cf424c29f547460d7
+ms.openlocfilehash: 7cb09dbd277d9ec74ce4988db210bf80c22d97ccaa3054a170fc1c9913282cfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "103857866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959490"
 ---
-# <a name="control-a-bits-download-over-an-expensive-connection"></a>Controllare un download BITS tramite una connessione costosa
+# <a name="control-a-bits-download-over-an-expensive-connection"></a>Controllare un download BITS su una connessione costosa
 
-In questo argomento viene illustrato come bloccare il download di un processo BITS tramite una connessione costosa, ad esempio un collegamento cellulare mobile. BITS è un'API asincrona in cui l'applicazione crea un processo, aggiunge URL a tale processo e chiama la funzione [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) dell'oggetto processo. Da questo punto, BITS sceglie quando il processo viene scaricato in base a fattori quali la priorità del processo e i criteri di trasferimento. Al termine del download del processo, BITS invia una notifica all'applicazione che l'URL è stato scaricato (se l'applicazione è stata registrata per la notifica di completamento). Durante la durata del processo, se la rete dell'utente finale viene modificata, ad esempio se l'utente è in viaggio e non è attualmente in corso tariffe di roaming, il processo verrà sospeso fino a quando le condizioni della rete non saranno ottimali. Nelle istruzioni dettagliate riportate di seguito viene illustrato come creare il processo e specificare le impostazioni appropriate per i criteri di trasferimento.
+Questo argomento illustra come bloccare il download di un processo BITS tramite una connessione costosa, ad esempio un collegamento cellulare mobile. BITS è un'API asincrona in cui l'applicazione crea un processo, aggiunge URL al processo e chiama la funzione [**Resume dell'oggetto**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) processo. A questo punto, BITS sceglie quando il processo viene scaricato in base a fattori come la priorità del processo e i criteri di trasferimento. Al termine del download del processo, BITS notifica all'applicazione che l'URL è stato scaricato (se l'applicazione è stata registrata per la notifica di completamento). Durante la durata del processo, se la rete dell'utente finale cambia, ad esempio se l'utente è in viaggio e attualmente incorre in tariffe di roaming, BITS sospende il processo fino a quando le condizioni di rete non sono ottimali. Le istruzioni dettagliate seguenti illustrano come creare il processo e specificare le impostazioni dei criteri di trasferimento appropriate.
 
 ### <a name="prerequisites"></a>Prerequisiti
 
@@ -24,9 +24,9 @@ In questo argomento viene illustrato come bloccare il download di un processo BI
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-include-the-required-bits-header-files"></a>Passaggio 1: includere i file di intestazione BITS necessari
+### <a name="step-1-include-the-required-bits-header-files"></a>Passaggio 1: Includere i file di intestazione BITS necessari
 
-Inserire le direttive header seguenti all'inizio del file di origine.
+Inserire le direttive di intestazione seguenti all'inizio del file di origine.
 
 
 ```C++
@@ -36,9 +36,9 @@ Inserire le direttive header seguenti all'inizio del file di origine.
 
 
 
-### <a name="step-2-initialize-com"></a>Passaggio 2: inizializzare COM
+### <a name="step-2-initialize-com"></a>Passaggio 2: Inizializzare COM
 
-Prima di creare un'istanza dell'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (utilizzata per creare un processo BITS), è necessario inizializzare com, impostare il modello di threading com e specificare un livello di rappresentazione di almeno RPC \_ C Imp a livello di \_ \_ \_ rappresentazione.
+Prima di creare un'istanza dell'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (usata per creare un processo BITS), è necessario inizializzare COM, impostare il modello di threading COM e specificare un livello di rappresentazione di almeno RPC \_ C IMP LEVEL \_ \_ \_ IMPERSONATE.
 
 
 ```C++
@@ -58,9 +58,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-3-instantiate-the-ibackgroundcopymanager-interface"></a>Passaggio 3: creare un'istanza dell'interfaccia IBackgroundCopyManager
+### <a name="step-3-instantiate-the-ibackgroundcopymanager-interface"></a>Passaggio 3: Creare un'istanza dell'interfaccia IBackgroundCopyManager
 
-Utilizzare l'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) per creare processi di trasferimento, recuperare un oggetto enumeratore che contiene i processi nella coda e recuperare i singoli processi dalla coda.
+Usare [**l'interfaccia IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) per creare processi di trasferimento, recuperare un oggetto enumeratore contenente i processi nella coda e recuperare singoli processi dalla coda.
 
 
 ```C++
@@ -75,7 +75,7 @@ hr = CoCreateInstance(__uuidof(BackgroundCopyManager),
 
 
 
-### <a name="step-4-create-the-bits-job"></a>Passaggio 4: creare il processo BITS
+### <a name="step-4-create-the-bits-job"></a>Passaggio 4: Creare il processo BITS
 
 Solo l'utente che crea il processo o un utente con privilegi di amministratore può aggiungere file al processo e modificare le proprietà del processo.
 
@@ -92,9 +92,9 @@ hr = pQueueMgr->CreateJob(L"TransferPolicy",
 
 
 
-### <a name="step-5-specify-the-transfer-policy-setting-for-the-job"></a>Passaggio 5: specificare l'impostazione dei criteri di trasferimento per il processo
+### <a name="step-5-specify-the-transfer-policy-setting-for-the-job"></a>Passaggio 5: Specificare l'impostazione dei criteri di trasferimento per il processo
 
-Qui è possibile specificare i criteri di trasferimento dello stato dei costi. \_ \_ Per ottenere i risultati desiderati, è possibile impostare diversi flag  di stato di costo bits utilizzando una combinazione OR bit per bit.
+Qui è possibile specificare i criteri di trasferimento dello stato dei costi. È possibile impostare diversi flag BITS COST STATE usando una combinazione \_ OR bit per bit per ottenere i risultati \_ desiderati. 
 
 
 ```C++
@@ -119,7 +119,7 @@ if(SUCCEEDED(hr))
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato come impostare i criteri di trasferimento di un processo BITS in modo che l'elaborazione del processo non venga eseguita mentre vengono soddisfatte determinate condizioni, ad esempio quando l'utente è in roaming o ha superato il limite di trasferimento dati mensile.
+L'esempio di codice seguente illustra come impostare i criteri di trasferimento di un processo BITS in modo che l'elaborazione del processo non si verifichi quando vengono soddisfatte determinate condizioni, ad esempio quando l'utente è in roaming o ha superato il limite di trasferimento dati mensile.
 
 
 ```C++
@@ -240,9 +240,9 @@ cancel:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

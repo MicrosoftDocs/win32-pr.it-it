@@ -1,10 +1,10 @@
 ---
-title: MSMQ-attributo di tipo nome
+title: Attributo MSMQ-Name-Style
 description: Convenzione dello stile del nome del computer.
 ms.assetid: dff1c988-77a5-4454-b54c-bb52bf771401
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di tipo nome-MSMQ
+- Schema AD dell'attributo MSMQ-Name-Style
 - Schema AD dell'attributo mSMQNameStyle
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9f61b3ec820e4f4771c3e470a19cf79c83e85aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 365426143fca985ec5cd39cc6444994c5c6b1b734bbb2cd8b35540c1da88a720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960490"
 ---
-# <a name="msmq-name-style-attribute"></a>MSMQ-attributo di tipo nome
+# <a name="msmq-name-style-attribute"></a>Attributo MSMQ-Name-Style
 
 Convenzione dello stile del nome del computer.
 
@@ -29,13 +29,13 @@ Convenzione dello stile del nome del computer.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-stile nome                      |
-| LDAP-Display-Name | mSMQNameStyle                        |
+| CN                | MSMQ-Name-Style                      |
+| Ldap-Display-Name | mSMQNameStyle                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.939               |
-| System-ID-GUID    | 9a0dc333-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc333-c100-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Convenzione dello stile del nome del computer.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Identifica l'APN o la stringa di connessione da utilizzare per stabilire una connessione dati.
+description: Identifica l'APN o la stringa di composizione da usare per stabilire una connessione dati.
 ms.assetid: e791ffa1-b417-480c-adb8-b1dda7547d89
 title: Elemento AccessString (contextType)
 ms.topic: reference
@@ -11,16 +11,16 @@ api_name:
 - AccessString
 api_type:
 - Schema
-ms.openlocfilehash: 8cf0d37b8a1870011ae6ae3ea6febf22a98cdeb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603c4aa04bb3e86891ec121233474fa96ffd792cbcb6880bad9e76599003d979
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975280"
 ---
 # <a name="accessstring-contexttype-element"></a>Elemento AccessString (contextType)
 
-L'elemento **AccessString (ContextType)** identifica l'APN o la stringa di connessione da usare per stabilire una connessione dati.
+**L'elemento AccessString (contextType)** identifica l'APN o la stringa di composizione da usare per stabilire una connessione dati.
 
 Questo elemento può avere una lunghezza massima di 100 caratteri.
 
@@ -43,7 +43,7 @@ Questo elemento è facoltativo.
 </xs:element>
 ```
 
-L'elemento **AccessString** è definito dal tipo complesso [**contextType**](schema-contexttype-complextype.md) .
+**L'elemento AccessString** è definito dal [**tipo complesso contextType.**](schema-contexttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ L'elemento **AccessString** è definito dal tipo complesso [**contextType**](sch
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 
@@ -63,7 +63,7 @@ L'elemento **AccessString** è definito dal tipo complesso [**contextType**](sch
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**contextType**](schema-contexttype-complextype.md)
+[**Contexttype**](schema-contexttype-complextype.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**

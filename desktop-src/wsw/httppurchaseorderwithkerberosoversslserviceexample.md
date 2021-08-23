@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithKerberosOverSslServiceExample
-description: Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP, con Kerberos sulla sicurezza in modalità mista SSL.
+description: Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio PurchaseOrder su HTTP, con kerberos su sicurezza in modalità mista SSL.
 ms.assetid: 9fbf5577-6a54-4ce1-ad44-80b9ee91c0d3
 keywords:
-- HttpPurchaseOrderWithKerberosOverSslServiceExample native-servizi Web
+- HttpPurchaseOrderWithKerberosOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ef59a8a6b40afc6ddd6dcdeb95b5a6fad1718a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4f6e24fcd69bb57e9ecb3ffe207d5be9a42c8d8b45ea09e969b0bf3658e3eed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963160"
 ---
 # <a name="httppurchaseorderwithkerberosoversslserviceexample"></a>HttpPurchaseOrderWithKerberosOverSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per ospitare un servizio PurchaseOrder su HTTP, con Kerberos sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da un ticket APREQ Kerberos in un'intestazione WS-Security nel messaggio.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio PurchaseOrder su HTTP, con kerberos su sicurezza in modalità mista SSL. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da un ticket APREQ Kerberos in un'intestazione WS-Security nel messaggio.
 
--   [PurchaseOrderServiceKerberosOverSsl. cpp](#purchaseorderservicekerberosoversslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [PurchaseOrderServiceKerberosOverSsl.cpp](#purchaseorderservicekerberosoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="purchaseorderservicekerberosoversslcpp"></a>PurchaseOrderServiceKerberosOverSsl. cpp
+## <a name="purchaseorderservicekerberosoversslcpp"></a>PurchaseOrderServiceKerberosOverSsl.cpp
 
 
 ```C++
@@ -393,7 +393,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -532,9 +532,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

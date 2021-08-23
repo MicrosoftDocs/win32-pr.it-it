@@ -1,8 +1,8 @@
 ---
-description: La proprietà setlocale dell'oggetto oggetto SWbemQualifier è un valore booleano che indica se il qualificatore è locale. Questa proprietà è di sola lettura.
+description: La proprietà IsLocal dell'oggetto SWbemQualifier è un valore booleano che indica se questo qualificatore è locale. Questa proprietà è di sola lettura.
 ms.assetid: ee403bcb-894f-47b7-88cc-d354e20b4e36
 ms.tgt_platform: multiple
-title: Proprietà oggetto SWbemQualifier. setlocale (wbemdisp. h)
+title: Proprietà SWbemQualifier.IsLocal (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 584245d3325b9c83fe5a3135c24c31721c9964a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6a2e2f6f18a56310ea97fe75233d0e6674e92f19e8af96baa7d169603d7d17f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991851"
 ---
-# <a name="swbemqualifierislocal-property"></a>Proprietà oggetto SWbemQualifier. setlocale
+# <a name="swbemqualifierislocal-property"></a>Proprietà SWbemQualifier.IsLocal
 
-La proprietà **setlocale** dell'oggetto [**oggetto SWbemQualifier**](swbemqualifier.md) è un valore booleano che indica se il qualificatore è locale. Questa proprietà è di sola lettura.
+La **proprietà IsLocal** dell'oggetto [**SWbemQualifier**](swbemqualifier.md) è un valore booleano che indica se questo qualificatore è locale. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemQualifier.IsLocal As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_Oggetto SWBEMQUALIFIER CLSID<br/>                                                        |
-| IID<br/>                      | \_ISWBEMQUALIFIER IID<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemQualifier<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemQualifier<br/>                                                         |
 
 
 

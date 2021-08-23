@@ -3,26 +3,26 @@ title: PolicyTemplateExample
 description: Questo esempio illustra come creare manualmente la descrizione dei criteri e usarla per creare il proxy del servizio.
 ms.assetid: 1c7ff0fb-06a2-4285-bbc8-ea8f2d82b15b
 keywords:
-- PolicyTemplateExample native-servizi Web
+- PolicyTemplateExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2085546550f2e3eff536f59efced9719e270dce0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8e735b5d4ffb61e601ea275023abf9ad7dea78cc127e6b391382e7bce4f4d2c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963080"
 ---
 # <a name="policytemplateexample"></a>PolicyTemplateExample
 
 Questo esempio illustra come creare manualmente la descrizione dei criteri e usarla per creare il proxy del servizio.
 
--   [PolicyTemplate. cpp](#policytemplatecpp)
+-   [PolicyTemplate.cpp](#policytemplatecpp)
 -   [Makefile](#makefile)
 
-## <a name="policytemplatecpp"></a>PolicyTemplate. cpp
+## <a name="policytemplatecpp"></a>PolicyTemplate.cpp
 
 
 ```C++
@@ -228,9 +228,9 @@ clean:
 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

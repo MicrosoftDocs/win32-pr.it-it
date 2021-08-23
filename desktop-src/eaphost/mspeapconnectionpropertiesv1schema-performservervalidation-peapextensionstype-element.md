@@ -12,16 +12,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256d942d68c30788180f2d8080f963c1d79b401a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74be4614d1a08baf27b08cee7ffa46d36f658c36176e39f80714387981d45f13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042829"
 ---
 # <a name="performservervalidation-peapextensionstype-element-v1-schema"></a>Elemento PerformServerValidation (PeapExtensionsType) (schema v1)
 
-L'elemento **PerformServerValidation (PeapExtensionsType)** indica se viene eseguita la convalida del server.
+**L'elemento PerformServerValidation (PeapExtensionsType)** indica se viene eseguita la convalida del server.
 
 ``` syntax
 <xs:element
@@ -30,20 +30,20 @@ L'elemento **PerformServerValidation (PeapExtensionsType)** indica se viene eseg
  />
 ```
 
-L'elemento è definito dall'elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+L'elemento è definito [**dall'elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **PerformServerValidation** è facoltativo.
+**L'elemento PerformServerValidation** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

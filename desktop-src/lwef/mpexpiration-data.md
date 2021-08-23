@@ -1,10 +1,10 @@
 ---
-title: Struttura MPEXPIRATION_DATA (MpClient. h)
-description: Notifica sullo stato di scadenza del prodotto.
+title: MPEXPIRATION_DATA (MpClient.h)
+description: Notifica dello stato di scadenza del prodotto.
 ms.assetid: BF464FFD-16AE-4F46-83CD-E0355478180C
 keywords:
-- Struttura MPEXPIRATION_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPEXPIRATION_DATA
+- MPEXPIRATION_DATA funzionalità dell'ambiente Windows legacy
+- PMPEXPIRATION_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df5e417b1ce6b1d1f4c15d646b44b0ea6c1fade2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5f270b7d433e6de7cd1eb3e7a3cfc88c9cb85c6087c20371ac804ec61d949d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976031"
 ---
-# <a name="mpexpiration_data-structure"></a>\_Struttura dei dati MPEXPIRATION
+# <a name="mpexpiration_data-structure"></a>Struttura MPEXPIRATION \_ DATA
 
-Notifica sullo stato di scadenza del prodotto.
+Notifica dello stato di scadenza del prodotto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ typedef struct tagMPEXPIRATION_DATA {
 **Motivo**
 </dt> <dd>
 
-Tipo: **\_ \_ motivo scadenza MP**
+Tipo: **MP \_ EXPIRE \_ REASON**
 
 </dd> <dd>
 
@@ -55,9 +55,9 @@ Motivo della scadenza. Si tratta di uno dei valori possibili seguenti:
 
 | Valore                                                                                                                                                                                                                                | Significato                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="MP_EXPIRED_UNKNOWN"></span><span id="mp_expired_unknown"></span><dl> <dt>**MP \_ SCADUTO \_ sconosciuto**</dt> <dt>0</dt> </dl> | Sconosciuto.<br/>    |
-| <span id="MP_EXPIRED_EVAL"></span><span id="mp_expired_eval"></span><dl> <dt>**MP \_ Valutazione \_ scaduta**</dt> <dt>1</dt> </dl>          | Valutazione.<br/> |
-| <span id="MP_EXPIRED_WAT"></span><span id="mp_expired_wat"></span><dl> <dt>**MP \_ \_Wat**</dt> <dt>2</dt> scaduti </dl>             | Wat.<br/>        |
+| <span id="MP_EXPIRED_UNKNOWN"></span><span id="mp_expired_unknown"></span><dl> <dt>**Mp \_ EXPIRED \_ UNKNOWN**</dt> <dt>0</dt> </dl> | Sconosciuto.<br/>    |
+| <span id="MP_EXPIRED_EVAL"></span><span id="mp_expired_eval"></span><dl> <dt>**Mp \_ EXPIRED \_ EVAL**</dt> <dt>1</dt> </dl>          | Valutazione.<br/> |
+| <span id="MP_EXPIRED_WAT"></span><span id="mp_expired_wat"></span><dl> <dt>**Mp \_ \_WAT**</dt> <dt>2 SCADUTO</dt> </dl>             | Wat.<br/>        |
 
 
 
@@ -68,7 +68,7 @@ Motivo della scadenza. Si tratta di uno dei valori possibili seguenti:
 **State**
 </dt> <dd>
 
-Tipo: **\_ \_ \_ report stato di scadenza MP**
+Tipo: **MP \_ EXPIRE \_ STATE \_ REPORT**
 
 </dd> <dd>
 
@@ -78,10 +78,10 @@ Stato di scadenza. Si tratta di uno dei valori possibili seguenti:
 
 | Valore                                                                                                                                                                                                                                                                      | Significato                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| <span id="MP_EXPIRE_STATE_REPORT_UNKNOWN"></span><span id="mp_expire_state_report_unknown"></span><dl> <dt>**MP \_ \_Rapporto stato scadenza \_ \_ sconosciuto**</dt> <dt>0</dt> </dl> | Stato sconosciuto.<br/> |
-| <span id="MP_EXPIRE_STATE_REPORT_VALID"></span><span id="mp_expire_state_report_valid"></span><dl> <dt>**MP \_ \_Rapporto stato scadenza \_ \_ valido**</dt> <dt>1</dt> </dl>       | Nessuna scadenza.<br/> |
-| <span id="MP_EXPIRE_STATE_REPORT_WARNING"></span><span id="mp_expire_state_report_warning"></span><dl> <dt>**MP \_ \_ \_ \_ Avviso rapporto di stato scadenza**</dt> <dt>2</dt> </dl> | Quasi scaduto.<br/>  |
-| <span id="MP_EXPIRE_STATE_REPORT_EXPIRED"></span><span id="mp_expire_state_report_expired"></span><dl> <dt>**MP \_ Il \_ report sullo stato di scadenza è \_ \_ scaduto**</dt> <dt>3</dt> </dl> | Scaduto.<br/>       |
+| <span id="MP_EXPIRE_STATE_REPORT_UNKNOWN"></span><span id="mp_expire_state_report_unknown"></span><dl> <dt>**Mp \_ EXPIRE \_ STATE \_ REPORT \_ UNKNOWN**</dt> <dt>0</dt> </dl> | Stato sconosciuto.<br/> |
+| <span id="MP_EXPIRE_STATE_REPORT_VALID"></span><span id="mp_expire_state_report_valid"></span><dl> <dt>**Mp \_ EXPIRE \_ STATE \_ REPORT \_ VALID**</dt> <dt>1</dt> </dl>       | Nessuna scadenza.<br/> |
+| <span id="MP_EXPIRE_STATE_REPORT_WARNING"></span><span id="mp_expire_state_report_warning"></span><dl> <dt>**Mp \_ EXPIRE \_ STATE \_ REPORT \_ WARNING**</dt> <dt>2</dt> </dl> | Quasi scaduto.<br/>  |
+| <span id="MP_EXPIRE_STATE_REPORT_EXPIRED"></span><span id="mp_expire_state_report_expired"></span><dl> <dt>**Mp \_ EXPIRE \_ STATE \_ REPORT \_ EXPIRED**</dt> <dt>3</dt> </dl> | Scaduto.<br/>       |
 
 
 
@@ -95,9 +95,9 @@ Stato di scadenza. Si tratta di uno dei valori possibili seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

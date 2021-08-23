@@ -1,37 +1,37 @@
 ---
-description: Specifica la qualità di codifica per il sink multimediale Digital Living Network Alliance (DLNA).
+description: Specifica la qualità di codifica per il sink multimediale DLNA (Digital Living Network Alliance).
 ms.assetid: 4cf745ab-66ae-40f2-b5c4-3f72f1b9badb
-title: Attributo MF_MP2DLNA_ENCODE_QUALITY (Mfmp2dlna. h)
+title: MF_MP2DLNA_ENCODE_QUALITY attributo (Mfmp2dlna.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81c785ff12524d45d096d566014a5c0a5e24eea8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a612dae32aabe4276ece76e7edff1aef431cc5d93f8aeaae0dbc9087620374c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973660"
 ---
-# <a name="mf_mp2dlna_encode_quality-attribute"></a>\_Attributo MP2DLNA di \_ codifica \_ MF
+# <a name="mf_mp2dlna_encode_quality-attribute"></a>Attributo MF \_ MP2DLNA \_ ENCODE \_ QUALITY
 
-Specifica la qualità di codifica per il sink multimediale Digital Living Network Alliance (DLNA).
+Specifica la qualità di codifica per il sink multimediale DLNA (Digital Living Network Alliance).
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT32**
 
-Intervallo: 0 – 18
+Intervallo: 0-18
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-I numeri più alti indicano una migliore qualità della codifica. I numeri più bassi indicano una codifica più veloce, ma la qualità della codifica è inferiore. Il valore predefinito è 9.
+Numeri più elevati indicano una migliore qualità della codifica. I numeri inferiori indicano una codifica più veloce, ma una qualità di codifica inferiore. Il valore predefinito è 9.
 
-Per impostare questo attributo sul sink multimediale DLNA, eseguire una query sul sink multimediale per l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Impostare l'attributo prima dell'inizio del flusso.
+Per impostare questo attributo nel sink multimediale DLNA, eseguire una query sul sink multimediale per [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Impostare l'attributo prima dell'inizio del flusso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ Per impostare questo attributo sul sink multimediale DLNA, eseguire una query su
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mfmp2dlna.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Per impostare questo attributo sul sink multimediale DLNA, eseguire una query su
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

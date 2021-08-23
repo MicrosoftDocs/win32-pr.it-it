@@ -1,7 +1,7 @@
 ---
-description: NtGdiDdDeleteSurfaceObject Elimina un oggetto Surface in modalità kernel creato in precedenza.
+description: NtGdiDdDeleteSurfaceObject elimina un oggetto surface in modalità kernel creato in precedenza.
 ms.assetid: 95ce6c73-7e41-4ac3-b849-9b8f53aa3ac3
-title: Funzione NtGdiDdDeleteSurfaceObject (Ntgdi. h)
+title: Funzione NtGdiDdDeleteSurfaceObject (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 03988b842aacc29915287490508eb9e9d057e907
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 73418993e549bc3a72f1f4bc953b4f177a4b413d62f03e0c6e8b0c58b35998e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956530"
 ---
-# <a name="ntgdidddeletesurfaceobject-function"></a>NtGdiDdDeleteSurfaceObject (funzione)
+# <a name="ntgdidddeletesurfaceobject-function"></a>Funzione NtGdiDdDeleteSurfaceObject
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-**NtGdiDdDeleteSurfaceObject** Elimina un oggetto Surface in modalità kernel creato in precedenza.
+**NtGdiDdDeleteSurfaceObject** elimina un oggetto surface in modalità kernel creato in precedenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ BOOL APIENTRY NtGdiDdDeleteSurfaceObject(
 
 <dl> <dt>
 
-*hSurface* \[ in\]
+*hSurface* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto Surface in modalità kernel creato in precedenza.
+Handle per l'oggetto surface in modalità kernel creato in precedenza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'esito è positivo, la funzione restituisce **true**. in caso contrario, restituisce **false**.
+Se ha esito positivo, questa funzione restituisce **TRUE;** In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le API DirectDraw e [Direct3D](../direct3d10/d3d10-graphics-reference.md) . Questi costrutti astraggono il processo di creazione del dispositivo in modo semplificato e indipendente dal sistema operativo.
+È consigliabile che le applicazioni usino le API DirectDraw e [Direct3D](../direct3d10/d3d10-graphics-reference.md) per creare e gestire oggetti dispositivo grafico. Questi costrutti astrarno il processo di creazione del dispositivo in modo semplificato e indipendente dal sistema operativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le A
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ Per creare e gestire oggetti dispositivo di grafica, è consigliabile usare le A
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> <dt>
 
-[**DdDeleteSurfaceObject**](/windows/desktop/api/Ddrawgdi/nf-ddrawgdi-dddeletesurfaceobject)
+[**Oggetto DdDeleteSurfaceObject**](/windows/desktop/api/Ddrawgdi/nf-ddrawgdi-dddeletesurfaceobject)
 </dt> <dt>
 
 [**NtGdiDdCreateSurfaceObject**](-dxgkernel-ntgdiddcreatesurfaceobject.md)
