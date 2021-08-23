@@ -4,12 +4,12 @@ ms.assetid: 04bcdc5a-ba44-4b9c-ae87-fee50250d18b
 title: System.Media.EncodedBy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbf70589178d2ba00fd6ec4d45676a519f86587e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 57cbd7a5638c6f293dc60972786c5c329d7739dc1fdfa5612f9ef39a5ca58892
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553721"
 ---
 # <a name="systemmediaencodedby"></a>System.Media.EncodedBy
 

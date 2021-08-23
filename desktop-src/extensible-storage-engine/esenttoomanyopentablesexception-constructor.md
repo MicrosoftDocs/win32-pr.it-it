@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentTooManyOpenTablesException'
+description: Altre informazioni sul costruttore EsentTooManyOpenTablesException
 title: Costruttore EsentTooManyOpenTablesException
 TOCTitle: 'EsentTooManyOpenTablesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyOpenTablesException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 52ffd4d382689fe3a5dd926ffaae7d33c3f17fe6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02d24c14c3061cdf13fb849ee8fccdd2769b08f0524c0c3151585b6d5a3b8430
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732311"
 ---
 # <a name="esenttoomanyopentablesexception-constructor"></a>Costruttore EsentTooManyOpenTablesException
 
 Inizializza una nuova istanza della classe EsentTooManyOpenTablesException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentTooManyOpenTablesException()
 
 [Membri di EsentTooManyOpenTablesException](./esenttoomanyopentablesexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

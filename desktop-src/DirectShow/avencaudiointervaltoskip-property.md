@@ -1,29 +1,29 @@
 ---
-description: Specifica il numero di campioni audio che il codificatore deve ignorare.
+description: Specifica il numero di campioni audio da ignorare per il codificatore.
 ms.assetid: cc4342d4-07d1-44d9-8fa6-a5f921f7cf06
-title: Proprietà AVEncAudioIntervalToSkip (codecapis. h)
+title: Proprietà AVEncAudioIntervalToSkip (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a901f30e634d25e97f04fbbc49ac288d4471a62b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2c57b7a7943beeb59e138aa3f390e968c5fcea385a7bdb159755b1bbb02bd2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690301"
 ---
-# <a name="avencaudiointervaltoskip-property"></a>Proprietà AVEncAudioIntervalToSkip
+# <a name="avencaudiointervaltoskip-property"></a>AVEncAudioIntervalToSkip - proprietà
 
-Specifica il numero di campioni audio che il codificatore deve ignorare.
+Specifica il numero di campioni audio da ignorare per il codificatore.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt64** (**VT \_ UI8**)
+**UINT64** (**VT \_ UI8**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncAudioIntervalToSkip**
+**CODECAPI \_ AVEncAudioIntervalToSkip**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

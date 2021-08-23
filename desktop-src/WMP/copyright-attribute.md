@@ -1,9 +1,9 @@
 ---
-title: Attributo Copyright (msfeeds. h)
-description: L'attributo copyright è il messaggio di copyright per l'elemento.
+title: Attributo Copyright (Msfeeds.h)
+description: L'attributo Copyright è il messaggio di copyright per l'elemento.
 ms.assetid: 617272cb-883f-46d6-b0a9-29ac32c63148
 keywords:
-- Windows Media Player attributo Copyright
+- Attributi di copyright Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,33 +14,33 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c77a0db25663afde4f11199b23732c0cebe6226
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b42e68e0d3485824f502dea991048121e788dfbe574b8fa4921e93a3b7afb61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651961"
 ---
-# <a name="copyright-attribute"></a>Copyright (attributo)
+# <a name="copyright-attribute"></a>Attributo copyright
 
-L'attributo **Copyright** è il messaggio di copyright per l'elemento.
+**L'attributo Copyright** è il messaggio di copyright per l'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Playlist CD](cd-playlist-attributes.md)
+-   [Playlist cd](cd-playlist-attributes.md)
 -   [Tracce CD](cd-track-attributes.md)
--   [File di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [File multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [DVD](dvd-attributes.md)
 -   [Elementi video](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato nella libreria o nella cache e nel file multimediale digitale.
+Questo attributo viene archiviato sia nella libreria (o cache) che nel file multimediale digitale.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMCopyright.
+La Windows media format SDK per questo attributo è g \_ wszWMCopyright.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                    |
-| Intestazione<br/>  | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                    |
+| Intestazione<br/>  | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

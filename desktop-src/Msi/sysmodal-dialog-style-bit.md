@@ -1,19 +1,19 @@
 ---
-description: Se questo bit di stile è impostato, la finestra di dialogo arresterà tutte le altre applicazioni e nessuna altra applicazione sarà in grado di eseguire lo stato attivo. Questo stato rimane fino a quando la finestra di dialogo SysModal non viene rilasciata.
+description: Se questo bit di stile è impostato, la finestra di dialogo arresterà tutte le altre applicazioni e nessuna altra applicazione potrà assumere lo stato attivo. Questo stato rimane finché la finestra di dialogo SysModal non viene chiusa.
 ms.assetid: 7605820f-f020-47d1-8659-52e3d2bf34aa
-title: Bit di stile della finestra di dialogo SysModal
+title: Bit di stile della finestra di dialogo sysmodal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8f6b505bf8086bab73d654c3d598dffdedaff61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d41e07c286dbecb2d764caaca88ec6e03ca737d4e8b693da7302fedc30712db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626941"
 ---
-# <a name="sysmodal-dialog-style-bit"></a>Bit di stile della finestra di dialogo SysModal
+# <a name="sysmodal-dialog-style-bit"></a>Bit di stile della finestra di dialogo sysmodal
 
-Se questo bit di stile è impostato, la finestra di dialogo arresterà tutte le altre applicazioni e nessuna altra applicazione sarà in grado di eseguire lo stato attivo. Questo stato rimane fino a quando la finestra di dialogo SysModal non viene rilasciata.
+Se questo bit di stile è impostato, la finestra di dialogo arresterà tutte le altre applicazioni e nessuna altra applicazione potrà assumere lo stato attivo. Questo stato rimane finché la finestra di dialogo SysModal non viene chiusa.
 
 ## <a name="value"></a>Valore
 

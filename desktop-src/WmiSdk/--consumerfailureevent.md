@@ -1,8 +1,8 @@
 ---
-description: Rappresenta l'occorrenza di un altro evento che viene eliminato a causa dell'errore di un consumer di eventi.
+description: Rappresenta l'occorrenza di un altro evento eliminato a causa dell'errore di un consumer di eventi.
 ms.assetid: bb6a1ce9-72a2-4528-8bc8-71ac053b6b1d
 ms.tgt_platform: multiple
-title: Classe __ConsumerFailureEvent
+title: __ConsumerFailureEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 571785245c05d18678c10a65b192a25022fff8f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8276716a1ca706a0027f35f9b554b960efebadacf3d8841b23415a43a9663c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732939"
 ---
 # <a name="__consumerfailureevent-class"></a>\_\_Classe ConsumerFailureEvent
 
-La classe di sistema **\_ \_ ConsumerFailureEvent** rappresenta l'occorrenza di un altro evento che viene eliminato a causa dell'errore di un consumer di eventi.
+La **\_ \_ classe di sistema ConsumerFailureEvent** rappresenta l'occorrenza di un altro evento che viene eliminato a causa dell'errore di un consumer di eventi.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,20 +51,20 @@ class __ConsumerFailureEvent : __EventDroppedEvent
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ ConsumerFailureEvent** dispone di questi tipi di membri:
+La **\_ \_ classe ConsumerFailureEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ ConsumerFailureEvent** dispone di queste proprietà.
+La **\_ \_ classe ConsumerFailureEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -77,7 +77,7 @@ Codice di errore restituito dal consumer.
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,7 +90,7 @@ Descrizione del codice di errore esteso, se disponibile.
 **ErrorObject**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -103,7 +103,7 @@ Oggetto in errore.
 **Event**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -126,37 +126,37 @@ Riferimento al consumer previsto. Questa proprietà viene ereditata da [**\_ \_ 
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time). Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Times). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ ConsumerFailureEvent** deriva da [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
+La **\_ \_ classe ConsumerFailureEvent** è derivata da [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
 
 ## <a name="requirements"></a>Requisiti
 

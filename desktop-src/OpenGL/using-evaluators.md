@@ -1,38 +1,38 @@
 ---
-title: Utilizzo degli analizzatori
-description: Utilizzo degli analizzatori
+title: Uso degli analizzatori
+description: Uso degli analizzatori
 ms.assetid: a5a99d0a-526e-4492-90c4-a6b9fdbdff16
 keywords:
 - OpenGL, analizzatori
-- analizzatori OpenGL
+- Analizzatori OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1aef70a7a854e16cf4992d9dd44c4931ad4d044
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8a4bb6808ad1898b0c98906a543291c700ee61257a35befa8886789f3f8b7e31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553491"
 ---
-# <a name="using-evaluators"></a>Utilizzo degli analizzatori
+# <a name="using-evaluators"></a>Uso degli analizzatori
 
-Le funzioni dell'analizzatore OpenGL consentono di usare un mapping polinomiale per produrre vertici, normali, coordinate di trama e colori. Questi valori calcolati vengono quindi passati alla pipeline di elaborazione come se fossero stati specificati direttamente. Le funzioni dell'analizzatore rappresentano anche la base per le funzioni NURBS (non-Uniform Rational B-spline), che consentono di definire curve e superfici, come descritto nella [libreria di utilità OpenGL](opengl-utility-library.md).
+Le funzioni dell'analizzatore OpenGL consentono di usare un mapping polinomiale per produrre vertici, normali, coordinate di trama e colori. Questi valori calcolati vengono quindi passati alla pipeline di elaborazione come se fossero stati specificati direttamente. Le funzioni dell'analizzatore sono anche alla base delle funzioni NURBS (Non-Uniform Rational B-Spline), che consentono di definire curve e superfici, come descritto in Libreria dell'utilità [OpenGL](opengl-utility-library.md).
 
-Il primo passaggio nell'utilizzo degli analizzatori consiste nel definire il mapping polinomiale bidimensionale o bidimensionale appropriato utilizzando [**glMap \***](glmap1.md). È quindi possibile specificare e valutare i valori di dominio per la mappa in uno dei due modi seguenti:
+Il primo passaggio nell'uso degli analizzatori consiste nel definire il mapping polinomiale bidimensionale appropriato usando [**glMap \***](glmap1.md). È quindi possibile specificare e valutare i valori di dominio per questa mappa in uno dei due modi seguenti:
 
--   Definire una serie di valori di dominio con spazi uniformi da mappare usando [**glMapGrid**](glmapgrid-functions.md) , quindi valutare un subset rettangolare della griglia con [**glEvalMesh**](glevalmesh-functions.md). Un singolo punto della griglia può essere valutato usando [**glEvalPoint**](glevalpoint.md).
+-   Definire una serie di valori di dominio di cui eseguire il mapping in modo uniforme usando [**glMapGrid**](glmapgrid-functions.md) e quindi valutare un subset rettangolare di tale griglia con [**glEvalMesh**](glevalmesh-functions.md). È possibile valutare un singolo punto della griglia usando [**glEvalPoint**](glevalpoint.md).
 -   Specificare in modo esplicito un valore di dominio desiderato come argomento, che valuta le mappe in corrispondenza di tale valore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento per gli analizzatori](evaluators-reference.md)
+[Informazioni di riferimento per gli analizzatori](evaluators-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

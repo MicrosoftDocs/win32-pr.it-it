@@ -1,11 +1,11 @@
 ---
-title: MS-Imaging-PSP-attributo stringa
+title: Attributo ms-Imaging-PSP-String
 description: Attributo dello schema che contiene la sequenza XML per questo processo di post-analisi.
 ms.assetid: 702adafa-d332-4315-ae36-86e997bf8d74
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-Imaging-PSP-String
-- msImaging-schema AD attributo PSPString
+- Schema AD dell'attributo msImaging-PSPString
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d46f8ab0d065d80ae2d59aae4ba5639abf442bcb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9471b158b8b5453dc667f156525ccbcd30be8962fa00ca4574e591aed0dd16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551221"
 ---
-# <a name="ms-imaging-psp-string-attribute"></a>MS-Imaging-PSP-attributo stringa
+# <a name="ms-imaging-psp-string-attribute"></a>Attributo ms-Imaging-PSP-String
 
 Attributo dello schema che contiene la sequenza XML per questo processo di post-analisi.
 
@@ -29,13 +29,13 @@ Attributo dello schema che contiene la sequenza XML per questo processo di post-
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-Imaging-PSP-stringa                       |
-| LDAP-Display-Name | msImaging-PSPString                         |
+| CN                | ms-Imaging-PSP-String                       |
+| Ldap-Display-Name | msImaging-PSPString                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2054                     |
-| System-ID-GUID    | 7b6760ae-d6ed-44a6-b6be-9de62c09ec67        |
+| System-Id-Guid    | 7b6760ae-d6ed-44a6-b6be-9de62c09ec67        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,15 +54,15 @@ Attributo dello schema che contiene la sequenza XML per questo processo di post-
 | ID collegamento                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| È a valore singolo       | Vero                                                                         |
+| Is-Single-Valued       | Vero                                                                         |
 | Indicizzato             | Falso                                                                        |
 | Nel catalogo globale      | Falso                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000000                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classi utilizzate in        | [**MS-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
+| Classi usate in        | [**ms-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Attributo dello schema che contiene la sequenza XML per questo processo di post-
 | ID collegamento                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| È a valore singolo       | Vero                                                                         |
+| Is-Single-Valued       | Vero                                                                         |
 | Indicizzato             | Falso                                                                        |
 | Nel catalogo globale      | Falso                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000000                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classi utilizzate in        | [**MS-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
+| Classi usate in        | [**ms-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
 
 
 

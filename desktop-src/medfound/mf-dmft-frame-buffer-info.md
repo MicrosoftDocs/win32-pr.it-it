@@ -1,21 +1,21 @@
 ---
-description: Contiene informazioni sui buffer dei frame allocati dal sistema inviati al driver di dispositivo.
+description: Contiene informazioni sui buffer frame allocati dal sistema inviati al driver di dispositivo.
 ms.assetid: 78485F2A-A512-4FAC-8845-D2B7D7D8DCDE
-title: Attributo MF_DMFT_FRAME_BUFFER_INFO (Mftransform. h)
+title: MF_DMFT_FRAME_BUFFER_INFO attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a97bd9ceefc8aa3064b88a526cc2609ec3585bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e11f6df3819742f61aa5f55622d100262ac80a664cbc4e87b69c3bc14390a37d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664681"
 ---
-# <a name="mf_dmft_frame_buffer_info-attribute"></a>\_ \_ \_ Attributo info del buffer dei frame MF DMFT \_
+# <a name="mf_dmft_frame_buffer_info-attribute"></a>Attributo MF \_ DMFT \_ FRAME BUFFER \_ \_ INFO
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Contiene informazioni sui buffer dei frame allocati dal sistema inviati al driver di dispositivo.
+Contiene informazioni sui buffer frame allocati dal sistema inviati al driver di dispositivo.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ Contiene informazioni sui buffer dei frame allocati dal sistema inviati al drive
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mftransform. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 

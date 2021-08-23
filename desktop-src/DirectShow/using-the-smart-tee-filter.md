@@ -1,28 +1,28 @@
 ---
-description: Uso del filtro Smart Tee
+description: Uso del filtro smart tee
 ms.assetid: d2828269-6841-41a8-8d45-f864c7e85857
-title: Uso del filtro Smart Tee
+title: Uso del filtro smart tee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5260469634c613fe05c25eb9f55e24e108e8c434
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8897a93e8be7582a4acce1a2822160c58cfe1df79eb2093bd5d96bad9629b64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650777"
 ---
-# <a name="using-the-smart-tee-filter"></a>Uso del filtro Smart Tee
+# <a name="using-the-smart-tee-filter"></a>Uso del filtro smart tee
 
-Se un filtro di acquisizione presenta pin di acquisizione e di anteprima distinti, è possibile acquisire da uno durante l'anteprima dell'altro. Tuttavia, se il filtro non ha un pin di anteprima, è possibile eseguire la stessa operazione includendo il filtro [Smart Tee](smart-tee-filter.md) nel grafico. Questo filtro suddivide i dati dal pin di acquisizione in due flussi identici, uno per l'acquisizione e uno per l'anteprima. La figura seguente illustra questo processo.
+Se un filtro di acquisizione ha pin di acquisizione e anteprima separati, è possibile acquisire da uno durante l'anteprima dall'altro. Se tuttavia il filtro non ha un segnaposto di anteprima, è possibile eseguire la stessa operazione includendo il [filtro Smart Tee](smart-tee-filter.md) nel grafico. Questo filtro suddivide i dati dal pin di acquisizione in due flussi identici, uno per l'acquisizione e uno per l'anteprima. La figura seguente illustra questo processo.
 
-![Acquisisci grafico con filtro Smart Tee](images/vidcap05.png)
+![Grafico di acquisizione con filtro smart tee](images/vidcap05.png)
 
-Se necessario, il metodo [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) inserisce automaticamente il filtro Smart Tee. Tuttavia, se si usano i metodi **IGraphBuilder** per compilare il grafo e non **RenderStream**, potrebbe essere necessario inserire il filtro Smart Tee.
+Il [**metodo ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) inserisce automaticamente il filtro smart tee, se necessario. Tuttavia, se si usano **i metodi IGraphBuilder** per compilare il grafico e non **RenderStream,** potrebbe essere necessario inserire il filtro Smart Tee.
 
-Prima di eseguire il rendering dei pin nel filtro di acquisizione, controllare se il filtro ha un pin di anteprima o un PIN della porta video. In caso contrario, aggiungere il filtro Smart Tee al grafico e connetterlo al pin di acquisizione nel filtro di acquisizione.
+Prima di eseguire il rendering dei pin nel filtro di acquisizione, verificare se il filtro dispone di un segnaposto di anteprima o di una porta video. In caso contrario, aggiungere il filtro Smart Tee al grafico e connetterlo al segnaposto di acquisizione nel filtro di acquisizione.
 
 > [!Note]  
-> È possibile trattare un PIN della porta video (VP) come tipo di pin di anteprima, pertanto un filtro con un pin VP non necessita di un filtro per Smart Tee. Tuttavia, i pin VP hanno altri requisiti particolari. Per altre informazioni, vedere [pin della porta video](video-port-pins.md).
+> È possibile considerare un pin di porta video (VP) come una sorta di pin di anteprima, in modo che un filtro con un pin VP non necessiti di un filtro Smart Tee. Tuttavia, i pin VP hanno altri requisiti speciali. Per altre informazioni, vedere [Pin di porta video.](video-port-pins.md)
 
  
 
@@ -30,13 +30,13 @@ Prima di eseguire il rendering dei pin nel filtro di acquisizione, controllare s
 
 <dl> <dt>
 
-[Argomenti sull'acquisizione avanzata](advanced-capture-topics.md)
+[Argomenti di acquisizione avanzata](advanced-capture-topics.md)
 </dt> <dt>
 
 [Combinazione di acquisizione video e anteprima](combining-video-capture-and-preview.md)
 </dt> <dt>
 
-[Utilizzo delle categorie pin](working-with-pin-categories.md)
+[Uso delle categorie di aggiunta](working-with-pin-categories.md)
 </dt> </dl>
 
  

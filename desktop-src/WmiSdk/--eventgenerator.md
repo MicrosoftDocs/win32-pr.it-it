@@ -23,7 +23,7 @@ ms.locfileid: "119732903"
 ---
 # <a name="__eventgenerator-class"></a>\_\_Classe EventGenerator
 
-La classe di sistema **\_ \_ EventGenerator** è una classe di base astratta che funge da classe padre per le classi che controllano la generazione di eventi, ad esempio gli [eventi timer.](receiving-a-timed-or-repeating-event.md)
+La **\_ \_ classe di sistema EventGenerator** è una classe di base astratta che funge da classe padre per le classi che controllano la generazione di eventi, ad esempio gli [eventi timer.](receiving-a-timed-or-repeating-event.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -42,7 +42,7 @@ La **\_ \_ classe EventGenerator** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe EventGenerator** deriva da [**\_ \_ IndicationRelated,**](--indicationrelated.md)che non dispone di proprietà.
+La **\_ \_ classe EventGenerator** è derivata da [**\_ \_ IndicationRelated,**](--indicationrelated.md)che non dispone di proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ La **\_ \_ classe EventGenerator** deriva da [**\_ \_ IndicationRelated,**](--in
 
 <dl> <dt>
 
-[**\_\_Indicazione Correlata**](/windows/desktop/WmiSdk/--indicationrelated)
+[**\_\_IndicationRelated**](/windows/desktop/WmiSdk/--indicationrelated)
 </dt> <dt>
 
 [Classi di sistema WMI](wmi-system-classes.md)

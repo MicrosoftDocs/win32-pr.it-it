@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement DeleteLicense (wmdrmsdk. h)
+title: Metodo IWMDRMLicenseManagement DeleteLicense (Wmdrmsdk.h)
 description: Il metodo DeleteLicense rimuove una licenza dall'archivio licenze locale temporaneo.
 ms.assetid: 0aa7143a-845a-41a4-8b3c-a04c68ee280a
 keywords:
-- Metodo DeleteLicense Windows Media Format
-- Metodo DeleteLicense Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo DeleteLicense
+- Metodo DeleteLicense windows Media Format
+- Metodo DeleteLicense windows Media Format , interfaccia IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interface windows Media Format , DeleteLicense method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5d5b52f6277459f147285f46fc791669e56061a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 977f7eaef1d6c8a505ce55d7d1683d7c9f4dabff5e59df7d8845773eefdff696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707941"
 ---
-# <a name="iwmdrmlicensemanagementdeletelicense-method"></a>IWMDRMLicenseManagement::D Metodo eleteLicense
+# <a name="iwmdrmlicensemanagementdeletelicense-method"></a>Metodo IWMDRMLicenseManagement::D eleteLicense
 
-Il metodo **DeleteLicense** rimuove una licenza dall'archivio licenze locale temporaneo.
+Il **metodo DeleteLicense** rimuove una licenza dall'archivio licenze locale temporaneo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ HRESULT DeleteLicense(
 
 <dl> <dt>
 
-*bstrKID* \[ in\]
+*bstrKID* \[ Pollici\]
 </dt> <dd>
 
 ID chiave (KID) della licenza da eliminare.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag dell'opzione di eliminazione delle licenze. Impostare su uno dei valori riportati nella tabella seguente.
+Flag di opzione di eliminazione della licenza. Impostare su uno dei valori nella tabella seguente.
 
 
 
 | Valore                                    | Descrizione                                                                                                                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WMDRM \_ eliminare \_ immediatamente la licenza \_      | Specifica che la licenza deve essere rimossa immediatamente dall'archivio.                                                                                                                              |
-| WMDRM \_ eliminare \_ il \_ contrassegno \_ di licenza per l' \_ eliminazione | Specifica che la licenza deve essere contrassegnata per l'eliminazione, ma non deve essere rimossa dall'archivio fino a quando non viene chiamato il metodo [**CleanLicenseStore**](iwmdrmlicensemanagement-cleanlicensestore.md) . |
+| WMDRM \_ DELETE \_ LICENSE \_ IMMEDIATELY      | Specifica che la licenza deve essere rimossa immediatamente dall'archivio.                                                                                                                              |
+| WMDRM \_ DELETE \_ LICENSE \_ MARK \_ FOR \_ PURGE | Specifica che la licenza deve essere contrassegnata per l'eliminazione, ma non deve essere rimossa dall'archivio fino a quando non viene chiamato il metodo [**CleanLicenseStore.**](iwmdrmlicensemanagement-cleanlicensestore.md) |
 
 
 
@@ -71,13 +71,13 @@ Flag dell'opzione di eliminazione delle licenze. Impostare su uno dei valori rip
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                            | Descrizione                                                                                                         |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Il metodo è riuscito.<br/>                                                                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Il metodo è riuscito.<br/>                                                                                    |
 | <dl> <dt>**DRM \_ E \_ LICENSENOTFOUND**</dt> </dl> | La licenza specificata non esiste nell'archivio.<br/> oppure<br/> L'archivio non è stato trovato.<br/> |
 
 
@@ -86,7 +86,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Per eliminare le licenze dall'archivio licenze locale permanente, è necessario utilizzare la revoca delle licenze.
+Per eliminare le licenze dall'archivio licenze locale permanente, è necessario usare la revoca delle licenze.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,8 +94,8 @@ Per eliminare le licenze dall'archivio licenze locale permanente, è necessario 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: db39608007705284b4690893cb6e3196dca8dc35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a61917bab1d39df3a3b448a51da8bd40bb055b726f444a9cdb23f30c986f248a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104132058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119668311"
 ---
 # <a name="jet_columncreatecontentequals-method"></a>JET_COLUMNCREATE. Metodo ContentEquals
 
 Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,25 +62,25 @@ public bool ContentEquals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNCREATE](./jet-columncreate-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE](./jet-columncreate-class.md)  
     
     Istanza di da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IContentEquatable \<T\> . ContentEquals (T)](./icontentequatable-t-.contentequals-method.md)  
+[IContentEquatable \<T\> . ContentEquals(T)](./icontentequatable-t-.contentequals-method.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNCREATE](./jet-columncreate-class.md)
+[JET_COLUMNCREATE classe](./jet-columncreate-class.md)
 
-[Membri JET_COLUMNCREATE](./jet-columncreate-members.md)
+[JET_COLUMNCREATE membri](./jet-columncreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

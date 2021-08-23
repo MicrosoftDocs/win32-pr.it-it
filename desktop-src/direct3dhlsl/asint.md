@@ -1,9 +1,9 @@
 ---
-title: AsInt (funzione)
-description: Interpreta lo schema di bit di un valore di input come intero. Per ulteriori informazioni sulla funzione intrinseca AsInt, vedere AsInt (DirectX HLSL).
+title: Funzione asint
+description: Interpreta lo schema di bit di un valore di input come integer. Per altre informazioni sulla funzione intrinseca asint, vedere asint (DirectX HLSL).
 ms.assetid: 28ba1a51-ce41-4bb0-8381-d91871b8236f
 keywords:
-- funzione AsInt HLSL
+- Funzione asint HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb892389cc2428c3b12843ae24fc0370076023f1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f189501216c7c60d024303bdb2c47b032cec73c6c22dc6a93bff24ce596f3169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104516378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626611"
 ---
-# <a name="asint-function"></a>AsInt (funzione)
+# <a name="asint-function"></a>Funzione asint
 
-Interpreta lo schema di bit di un valore di input come intero. Per ulteriori informazioni sulla funzione intrinseca **AsInt** , vedere [**AsInt (DirectX HLSL)**](dx-graphics-hlsl-asint.md).
+Interpreta lo schema di bit di un valore di input come integer. Per altre informazioni sulla funzione **intrinseca asint,** vedere [**asint (DirectX HLSL).**](dx-graphics-hlsl-asint.md)
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 int asint(
-  in  value
+  in  value
 );
 ```
 
@@ -36,7 +36,7 @@ int asint(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Valore di input.
@@ -47,7 +47,7 @@ Valore di input.
 
 Tipo: **int**
 
-Input interpretato come Integer.
+Input interpretato come integer.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -56,9 +56,9 @@ Input interpretato come Integer.
 [**Funzioni intrinseche (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
