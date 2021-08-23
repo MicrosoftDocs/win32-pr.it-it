@@ -1,33 +1,33 @@
 ---
-description: Specifica se il flusso di output deve essere strutturato in modo che il flusso codificato abbia una latenza di decodifica bassa.
+description: Specifica se il flusso di output deve essere strutturato in modo che il flusso codificato abbia una bassa latenza di decodifica.
 ms.assetid: a000a2d4-afcf-4b88-9bbc-f42758744de2
-title: Proprietà AVEncCommonLowLatency (codecapis. h)
+title: Proprietà AVEncCommonLowLatency (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a13dd59b7aa09f6b0f2aa6a4c31031d090d41c85
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6b53c4b0122e595c930828f400600fc22b5a03977a781adab0e3a2f42b1048ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690231"
 ---
-# <a name="avenccommonlowlatency-property"></a>Proprietà AVEncCommonLowLatency
+# <a name="avenccommonlowlatency-property"></a>AVEncCommonLowLatency - proprietà
 
-Specifica se il flusso di output deve essere strutturato in modo che il flusso codificato abbia una latenza di decodifica bassa.
+Specifica se il flusso di output deve essere strutturato in modo che il flusso codificato abbia una bassa latenza di decodifica.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCommonLowLatency**
+**CODECAPI \_ AVEncCommonLowLatency**
 
 ## <a name="remarks"></a>Commenti
 
-La latenza di decodifica viene definita come la quantità di dati che il decodificatore deve memorizzare nel buffer. Se ad esempio si imposta questa proprietà su **Variant \_ true** in un codificatore video MPEG, vengono limitati i tipi di strutture GOP che il codificatore può utilizzare.
+La latenza di decodifica è definita come la quantità di dati che il decodificatore deve buffer. Ad esempio, l'impostazione di questa proprietà su **VARIANT \_ TRUE** in un codificatore video MPEG limita i tipi di strutture GOP che il codificatore può usare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La latenza di decodifica viene definita come la quantità di dati che il decodif
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows app desktop di Windows 2000 Server \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ La latenza di decodifica viene definita come la quantità di dati che il decodif
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

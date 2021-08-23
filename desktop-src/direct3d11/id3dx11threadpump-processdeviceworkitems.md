@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11ThreadPump ProcessDeviceWorkItems (D3DX11core. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Imposta gli elementi di lavoro sul dispositivo al termine del caricamento e dell'elaborazione.
+title: Metodo ID3DX11ThreadPump ProcessDeviceWorkItems (D3DX11core.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Imposta gli elementi di lavoro sul dispositivo al termine del caricamento e dell'elaborazione.
 ms.assetid: 154e6ea5-0a88-4c8a-9c20-e7fbf95f1946
 keywords:
 - Metodo ProcessDeviceWorkItems Direct3D 11
 - Metodo ProcessDeviceWorkItems Direct3D 11, interfaccia ID3DX11ThreadPump
-- Interfaccia ID3DX11ThreadPump Direct3D 11, metodo ProcessDeviceWorkItems
+- ID3DX11ThreadPump interface Direct3D 11 , ProcessDeviceWorkItems method
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ad570785ac7dc36fb5dd9d464e97ef46f52ca93
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 07a6918e9ecea9d66c3ebca034628387ea471e9173b4b14f24e9b7f866897325
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608671"
 ---
-# <a name="id3dx11threadpumpprocessdeviceworkitems-method"></a>ID3DX11ThreadPump::P metodo rocessDeviceWorkItems
+# <a name="id3dx11threadpumpprocessdeviceworkitems-method"></a>Metodo ID3DX11ThreadPump::P rocessDeviceWorkItems
 
 > [!Note]  
 > La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
@@ -48,10 +48,10 @@ HRESULT ProcessDeviceWorkItems(
 
 <dl> <dt>
 
-*iWorkItemCount* \[ in\]
+*iWorkItemCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi di lavoro da impostare sul dispositivo.
 
@@ -61,13 +61,13 @@ Numero di elementi di lavoro da impostare sul dispositivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati nei [codici restituiti di Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Al termine del caricamento e dell'elaborazione di una risorsa o di uno shader, il thread Pump lo manterrà in una coda fino a quando non viene chiamata l'API, a quel punto gli elementi elaborati verranno impostati sul dispositivo. Questa operazione è utile per controllare la quantità di elaborazione dedicata al binding delle risorse al dispositivo per ogni frame.
+Al termine del caricamento e dell'elaborazione di una risorsa o di uno shader, il thread pump lo conterà in una coda fino a quando non viene chiamata questa API, a quel punto gli elementi elaborati verranno impostati sul dispositivo. Ciò è utile per controllare la quantità di elaborazione che viene impiegato per associare le risorse al dispositivo per ogni frame.
 
-Come esempio di come è possibile usare questa API, è possibile che si stia avvicinando alla fine di un livello del gioco e si voglia iniziare a precaricare le trame, gli shader e altre risorse per il livello successivo. Il pump di thread inizierà a caricare, decomprimere ed elaborare le risorse e gli shader in un thread separato fino a quando non saranno pronti per essere impostati sul dispositivo, a quel punto li lascerà in una coda. È possibile che non si desideri impostare contemporaneamente tutte le risorse e gli shader per il dispositivo, perché ciò può causare un rallentamento temporaneo evidente nelle prestazioni del gioco. Questa API potrebbe quindi essere chiamata una volta per ogni fotogramma, in modo che solo un numero ridotto di elementi di lavoro venga impostato sul dispositivo in ogni frame, distribuendo in tal modo il carico di lavoro delle risorse di associazione al dispositivo su diversi frame.
+Come esempio di come si potrebbe usare questa API, si supponga di essere prossimi alla fine di un livello nel gioco e di voler iniziare a precaricare le trame, gli shader e altre risorse per il livello successivo. Il thread pump inizierà a caricare, decomprimere ed elaborare le risorse e gli shader in un thread separato fino a quando non saranno pronti per essere impostati sul dispositivo, a quel punto li lascerà in una coda. È possibile che non si vogliano impostare contemporaneamente tutte le risorse e gli shader sul dispositivo, perché ciò potrebbe causare un notevole rallentamento temporaneo delle prestazioni del gioco. È quindi possibile chiamare questa API una volta per ogni frame in modo che solo un numero ridotto di elementi di lavoro sia impostato sul dispositivo in ogni fotogramma, stendendo così il carico di lavoro delle risorse di binding al dispositivo su più frame.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Come esempio di come è possibile usare questa API, è possibile che si stia avv
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 

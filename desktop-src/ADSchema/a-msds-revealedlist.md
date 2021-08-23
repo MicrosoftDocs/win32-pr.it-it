@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Revealed-List
-description: Identifica le entità di sicurezza le cui password degli account computer correnti sono state replicate nel RODC.
+title: Attributo ms-DS-Revealed-List
+description: Identifica le entità di sicurezza le cui password dell'account computer corrente sono state replicate nel controller di dominio di sola lettura.
 ms.assetid: 10100719-4d03-4954-bcb6-d4ca635d00f7
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Revealed-list attributo AD schema
-- Schema AD dell'attributo msDS-Revealed
+- Schema AD dell'attributo ms-DS-Revealed-List
+- Schema AD dell'attributo msDS-RevealedList
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf8c5dc2e308b69ce142c7345957d25510168ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4f3316a57658d0dfb5f674f432aeb1a9d5bcd0f5490bccb9aee69ec8fc58689
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544891"
 ---
-# <a name="ms-ds-revealed-list-attribute"></a>attributo ms-DS-Revealed-List
+# <a name="ms-ds-revealed-list-attribute"></a>Attributo ms-DS-Revealed-List
 
-Identifica le entità di sicurezza le cui password degli account computer correnti sono state replicate nel RODC.
+Identifica le entità di sicurezza le cui password dell'account computer corrente sono state replicate nel controller di dominio di sola lettura.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Elenco di MS-DS-Revealed                                   |
-| LDAP-Display-Name | msDS-Revealed                                     |
+| CN                | ms-DS-Revealed-List                                   |
+| Ldap-Display-Name | msDS-RevealedList                                     |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1940                               |
-| System-ID-GUID    | cbdad11c-7fec-387b-6219-3a0627d9af81                  |
+| System-Id-Guid    | zionaad11c-7fec-387b-6219-3a0627d9af81                  |
 | Sintassi            | [**Object(Access-Point)**](s-object-access-point.md) |
 
 
@@ -55,15 +55,15 @@ Identifica le entità di sicurezza le cui password degli account computer corren
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000014                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Identifica le entità di sicurezza le cui password degli account computer corren
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000014                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Identifica le entità di sicurezza le cui password degli account computer corren
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000014                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

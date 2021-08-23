@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-AZ-Generic-Data
-description: Dati generici specifici di per la specifica.
+title: Attributo ms-DS-Az-Generic-Data
+description: Dati generici specifici di AzMan.
 ms.assetid: dc780736-0d45-49b4-9368-ccd43436b18b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-AZ-Generic-Data
-- attributo msDS-AzGenericData-schema AD
+- Schema AD dell'attributo ms-DS-Az-Generic-Data
+- Schema AD dell'attributo msDS-AzGenericData
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4b58ded7ded92efd8cb968a153ef4bd9f0fc10c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4417f11972ccec558b10f05b80ebc90f3c1c0f8d13bd702162d4bed83997a631
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552861"
 ---
-# <a name="ms-ds-az-generic-data-attribute"></a>attributo ms-DS-AZ-Generic-Data
+# <a name="ms-ds-az-generic-data-attribute"></a>Attributo ms-DS-Az-Generic-Data
 
-Dati generici specifici di per la specifica.
+Dati generici specifici di AzMan.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-AZ-Generic-Data                       |
-| LDAP-Display-Name | msDS-AzGenericData                          |
+| CN                | ms-DS-Az-Generic-Data                       |
+| Ldap-Display-Name | msDS-AzGenericData                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1950                     |
-| System-ID-GUID    | b5f7e349-7a5b-407c-a334-a31c3f538b98        |
+| System-Id-Guid    | b5f7e349-7a5b-407c-a334-a31c3f538b98        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Dati generici specifici di per la specifica.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**ms-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> [**ms-DS-AZ-scope**](c-msds-azscope.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Dati generici specifici di per la specifica.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**ms-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> [**ms-DS-AZ-scope**](c-msds-azscope.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Dati generici specifici di per la specifica.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                 |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> [**ms-DS-AZ-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> [**ms-DS-AZ-scope**](c-msds-azscope.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> [**ms-DS-Az-Operation**](c-msds-azoperation.md)<br/> [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

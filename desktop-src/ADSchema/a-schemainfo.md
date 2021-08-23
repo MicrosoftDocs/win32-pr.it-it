@@ -1,10 +1,10 @@
 ---
-title: Attributo Schema-Info
-description: Valore binario interno utilizzato per rilevare le modifiche dello schema tra i controller di dominio e forzare un ciclo di replica NC dello schema prima di replicare qualsiasi altro NC. Utilizzato per risolvere i vincoli quando viene sequestrato l'FSMO dello schema e viene apportata una modifica a più di un controller di dominio.
+title: Schema-Info attributo
+description: Valore binario interno usato per rilevare le modifiche dello schema tra controller di dominio e forzare un ciclo di replica NC dello schema prima di replicare qualsiasi altro NC. Usato per risolvere i conflitti quando viene effettuato il seized dell'FSMO dello schema e viene apportata una modifica in più controller di dominio.
 ms.assetid: 416cef3f-211b-439d-b177-267806c6a5d2
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Schema-Info attribute
+- Schema-Info schema AD dell'attributo
 - Schema AD dell'attributo schemaInfo
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca55fc8ad3f53709b3819a7333e3470a1ac35cd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cfa0d55dd29f207b84b0951ee448ba988d128fabfd126f38b2a4692d7cd3e0fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646530"
 ---
-# <a name="schema-info-attribute"></a>Attributo Schema-Info
+# <a name="schema-info-attribute"></a>Schema-Info attributo
 
-Valore binario interno utilizzato per rilevare le modifiche dello schema tra i controller di dominio e forzare un ciclo di replica NC dello schema prima di replicare qualsiasi altro NC. Utilizzato per risolvere i vincoli quando viene sequestrato l'FSMO dello schema e viene apportata una modifica a più di un controller di dominio.
+Valore binario interno usato per rilevare le modifiche dello schema tra controller di dominio e forzare un ciclo di replica NC dello schema prima di replicare qualsiasi altro NC. Usato per risolvere i conflitti quando viene effettuato il seized dell'FSMO dello schema e viene apportata una modifica in più controller di dominio.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Schema-Info                                           |
-| LDAP-Display-Name | schemaInfo                                            |
+| Ldap-Display-Name | schemaInfo                                            |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1358                               |
-| System-ID-GUID    | f9fb64ae-93b4-11d2-9945-0000f87a57d4                  |
+| System-Id-Guid    | f9fb64ae-93b4-11d2-9945-0000f87a57d4                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Valore binario interno utilizzato per rilevare le modifiche dello schema tra i c
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

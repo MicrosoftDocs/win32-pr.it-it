@@ -1,10 +1,10 @@
 ---
-title: Attributo Signature-Algorithms
+title: Signature-Algorithms attributo
 description: Questo attributo indica il tipo di algoritmo che deve essere utilizzato per decodificare una firma digitale durante il processo di autenticazione.
 ms.assetid: f602a009-6823-42e7-b5e4-fb433535b4cc
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Signature-Algorithms attribute
+- Signature-Algorithms schema AD dell'attributo
 - Schema AD dell'attributo signatureAlgorithms
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6487155ed8d13735a8201a41c9d1d5b087bb3711
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1d95ca49ca53a40fcad6270e882e27c091b2b06e22199ebdb9e76af83fac1c3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645751"
 ---
-# <a name="signature-algorithms-attribute"></a>Attributo Signature-Algorithms
+# <a name="signature-algorithms-attribute"></a>Signature-Algorithms attributo
 
 Questo attributo indica il tipo di algoritmo che deve essere utilizzato per decodificare una firma digitale durante il processo di autenticazione.
 
@@ -30,12 +30,12 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Signature-Algorithms                        |
-| LDAP-Display-Name | signatureAlgorithms                         |
+| Ldap-Display-Name | signatureAlgorithms                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.824                      |
-| System-ID-GUID    | 2a39c5b2-8960-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | 2a39c5b2-8960-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo indica il tipo di algoritmo che deve essere utilizzato per deco
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Vero                                                                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

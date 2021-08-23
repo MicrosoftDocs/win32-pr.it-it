@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_DRAW_SETTIME (VFW. h)
-description: Il \_ \_ periodo di tempo di disegno MCI fornisce le informazioni di sincronizzazione a un driver di rendering che gestisce la tempistica di disegno dei frame.
+title: ICM_DRAW_SETTIME messaggio (Vfw.h)
+description: Il ICM \_ DRAW \_ SETTIME fornisce informazioni di sincronizzazione a un driver di rendering che gestisce l'intervallo dei frame di disegno.
 ms.assetid: 211e8ecc-ef36-4598-aa1d-cb0a06e64f14
 keywords:
-- ICM_DRAW_SETTIME messaggi multimediali di Windows
+- ICM_DRAW_SETTIME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ce1e37709477ba6080219e5225b3fde02dfed75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c291b736b0138386c235703c29fffdae470d011f55284e8aaac4c4cfd604a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691141"
 ---
-# <a name="icm_draw_settime-message"></a>\_Messaggio di tempo di rielaborazione ICM \_
+# <a name="icm_draw_settime-message"></a>\_ICM Messaggio DRAW \_ SETTIME
 
-Il **\_ periodo di \_ tempo** di disegno MCI fornisce le informazioni di sincronizzazione a un driver di rendering che gestisce la tempistica di disegno dei frame. Le informazioni di sincronizzazione sono il numero di esempio del fotogramma da creare. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICDrawSetTime**](/windows/desktop/api/Vfw/nf-vfw-icdrawsettime) .
+**L ICM \_ DRAW \_ SETTIME fornisce** informazioni di sincronizzazione a un driver di rendering che gestisce l'intervallo di disegno dei frame. Le informazioni di sincronizzazione sono il numero di esempio del frame da disegnare. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICDrawSetTime.**](/windows/desktop/api/Vfw/nf-vfw-icdrawsettime)
 
 
 ```C++
@@ -47,13 +47,13 @@ Numero di esempio del frame di cui eseguire il rendering.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce ICERR \_ OK se ha esito positivo o un errore in caso contrario.
+Restituisce ICERR \_ OK in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
 In genere, il driver confronta il valore specificato con il numero di frame associato all'ora del clock interno e tenta di sincronizzare i due se la differenza è significativa.
 
-Utilizzare questo messaggio quando l'hardware esegue la decompressione asincrona, la temporizzazione e il disegno e l'hardware si basa su un segnale di sincronizzazione esterno (l'hardware non viene utilizzato come master di sincronizzazione).
+Utilizzare questo messaggio quando l'hardware esegue la propria decompressione asincrona, temporizzazione e disegno e l'hardware si basa su un segnale di sincronizzazione esterno (l'hardware non viene usato come master di sincronizzazione).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Utilizzare questo messaggio quando l'hardware esegue la decompressione asincrona
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

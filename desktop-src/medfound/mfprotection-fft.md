@@ -1,17 +1,17 @@
 ---
 description: Specifica la protezione FFT.
 ms.assetid: 0CFD2A1B-BAE0-4755-9B26-A3D8C3053ABD
-title: Attributo MFPROTECTION_FFT (Mfidl. h)
+title: MFPROTECTION_FFT attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8a2ac17f5b64db7ef70ef9b9d652177f6111831
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b82e4ac67cded51efa4d091c5a6f6dfcb7457c583d2e105c7a34cadf7d00aff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603271"
 ---
-# <a name="mfprotection_fft-attribute"></a>MFPROTECTION ( \_ attributo FFT)
+# <a name="mfprotection_fft-attribute"></a>Attributo FFT MFPROTECTION \_
 
 Specifica la protezione FFT.
 
@@ -25,9 +25,9 @@ Specifica la protezione FFT.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica la protezione FFT.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

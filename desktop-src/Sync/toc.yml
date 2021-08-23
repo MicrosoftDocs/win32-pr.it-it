@@ -75,7 +75,7 @@
           href: using-critical-section-objects.md
         - name: Uso delle variabili di condizione
           href: using-condition-variables.md
-        - name: Uso dellOne-Time inizializzazione
+        - name: Uso dellOne-Time di inizializzazione
           href: using-one-time-initialization.md
         - name: Uso di elenchi collegati in modo singly
           href: using-singly-linked-lists.md
@@ -513,7 +513,7 @@
               href: /windows/desktop/api/synchapi/nf-synchapi-tryacquiresrwlockshared
             - name: TryEnterCriticalSection
               href: /windows/desktop/api/synchapi/nf-synchapi-tryentercriticalsection
-            - name: UnregisterWait
+            - name: Annullare la registrazione di UnregisterWait
               href: /windows/desktop/api/WinBase/nf-winbase-unregisterwait
             - name: UnregisterWaitEx
               href: unregisterwaitex.md

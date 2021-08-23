@@ -4,39 +4,39 @@ ms.assetid: 34f5c3d5-ee40-e304-7c97-d30c17621d26
 title: 'Procedura: Creare un oggetto di elaborazione audio di XAudio2 (XAPO)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 549739462a0e76cbb437f0aa1403b099f72f5224
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ea17729c5a6d872d98443c85f79dc72e8eee6dd2233b99f31e189a9eb28708e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583851"
 ---
 # <a name="how-to-create-an-xapo"></a>Procedura: Creare un oggetto di elaborazione audio di XAudio2 (XAPO)
 
-L'API XAPO fornisce l'interfaccia [**IXAPO**](/windows/desktop/api/XAPO/nn-xapo-ixapo) e la classe [**CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) per la compilazione di nuovi tipi XAPO. L'interfaccia **IXAPO** contiene tutti i metodi che devono essere implementati per creare un nuovo XAPO. La classe **CXAPOBase** fornisce un'implementazione di base dell'interfaccia **IXAPO** . **CXAPOBase** implementa tutti i metodi dell'interfaccia **IXAPO** ad eccezione del metodo [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process) , che è univoco per ogni XAPO.
+L'API XAPO fornisce [**l'interfaccia IXAPO**](/windows/desktop/api/XAPO/nn-xapo-ixapo) e la [**classe CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) per la compilazione di nuovi tipi XAPO. **L'interfaccia IXAPO** contiene tutti i metodi che devono essere implementati per creare un nuovo XAPO. La **classe CXAPOBase** fornisce un'implementazione di base **dell'interfaccia IXAPO.** **CXAPOBase** implementa tutti i metodi di interfaccia **IXAPO,** ad eccezione del metodo [**IXAPO::P rocess,**](/windows/win32/api/xapo/nf-xapo-ixapo-process) univoco per ogni XAPO.
 
 ## <a name="to-create-a-new-static-xapo"></a>Per creare un nuovo XAPO statico
 
-1.  Derivare una nuova classe XAPO dalla classe di base [**CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) .
+1.  Derivare una nuova classe XAPO dalla classe di base [**CXAPOBase.**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase)
 
     > [!Note]  
-    > XAPOs implementano l'interfaccia **IUnknown** . Le interfacce [**IXAPO**](/windows/desktop/api/XAPO/nn-xapo-ixapo) e [**IXAPOParameters**](/windows/desktop/api/XAPO/nn-xapo-ixapoparameters) includono i tre metodi **IUnknown** : **QueryInterface**, **AddRef** e **Release**. [**CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) fornisce implementazioni di tutti e tre i metodi **IUnknown** . Una nuova istanza di **CXAPOBase** avrà un conteggio dei riferimenti pari a 1. Verrà eliminato definitivamente quando il conteggio dei riferimenti diventa 0. Per consentire a XAudio2 di eliminare un'istanza di un XAPO quando non è più necessario, chiamare **IUnknown:: Release** sul XAPO dopo che è stato aggiunto a una catena di effetti XAudio2. Vedere [procedura: usare un XAPO in XAudio2](how-to--use-an-xapo-in-xaudio2.md) per altre informazioni sull'uso di un XAPO con XAudio2.
+    > Gli XAPO implementano **l'interfaccia IUnknown.** Le [**interfacce IXAPO**](/windows/desktop/api/XAPO/nn-xapo-ixapo) e [**IXAPOParameters**](/windows/desktop/api/XAPO/nn-xapo-ixapoparameters) includono i tre metodi **IUnknown:** **QueryInterface,** **AddRef** e **Release.** [**CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) fornisce implementazioni di tutti e tre i **metodi IUnknown.** Una nuova istanza di **CXAPOBase** avrà un conteggio dei riferimenti di 1. Verrà eliminato quando il conteggio dei riferimenti diventa 0. Per consentire a XAudio2 di eliminare un'istanza di XAPO quando non è più necessaria, chiamare **IUnknown::Release** in XAPO dopo l'aggiunta a una catena di effetti XAudio2. Per altre informazioni sull'uso di [XAPO con XAudio2, vedere Procedura: Usare XAPO in XAudio2.](how-to--use-an-xapo-in-xaudio2.md)
 
      
 
-2.  Eseguire l'override dell'implementazione della classe [**CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) del metodo [**IXAPO:: LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) .
+2.  Eseguire [**l'override dell'implementazione della classe CXAPOBase**](/windows/desktop/api/XAPOBase/nl-xapobase-cxapobase) del metodo [**IXAPO::LockForProcess.**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess)
 
-    L'override di [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) consente di archiviare le informazioni sul formato dei dati audio da usare in [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process).
+    L'override di [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) consente di archiviare informazioni sul formato dei dati audio per l'uso in [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process).
 
-3.  Implementare il metodo [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process) .
+3.  Implementare [**il metodo IXAPO::P rocess.**](/windows/win32/api/xapo/nf-xapo-ixapo-process)
 
-    XAudio2 chiama il metodo [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process) ogni volta che un XAPO deve elaborare dati audio. Il **processo** contiene la maggior parte del codice per un XAPO.
+    XAudio2 chiama il [**metodo IXAPO::P rocess ogni**](/windows/win32/api/xapo/nf-xapo-ixapo-process) volta che un XAPO deve elaborare i dati audio. **Process** contiene la maggior parte del codice per un XAPO.
 
 ## <a name="implementing-the-process-method"></a>Implementazione del metodo Process
 
-Il metodo [**IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process) accetta buffer di flusso per i dati audio di input e di output. Un XAPO tipico prevede un buffer del flusso di input e un buffer del flusso di output. È necessario basare l'elaborazione dei dati dal buffer del flusso di input nel formato specificato nella funzione [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) e tutti i flag passati alla funzione **Process** con il buffer del flusso di input. Copiare i dati del buffer del flusso di input elaborato nel buffer del flusso di output. Impostare il parametro BufferFlags del buffer del flusso di output [**come \_ buffer XAPO \_ valido**](/windows/desktop/api/xapo/ne-xapo-xapo_buffer_flags) o **XAPO \_ buffer invisibile all' \_ utente**.
+Il [**metodo IXAPO::P rocess**](/windows/win32/api/xapo/nf-xapo-ixapo-process) accetta buffer di flusso per i dati audio di input e output. Un tipico XAPO prevede un buffer del flusso di input e un buffer del flusso di output. È necessario basare l'elaborazione dei dati dal buffer del flusso di input sul formato specificato nella funzione [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) ed eventuali flag passati alla funzione **Process** con il buffer del flusso di input. Copiare i dati del buffer del flusso di input elaborati nel buffer del flusso di output. Impostare il parametro BufferFlags del buffer del flusso di output come [**XAPO \_ BUFFER \_ VALID**](/windows/desktop/api/xapo/ne-xapo-xapo_buffer_flags) o **XAPO \_ BUFFER \_ SILENT**.
 
-Nell'esempio seguente viene illustrata un'implementazione di [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) e [**Process**](/windows/win32/api/xapo/nf-xapo-ixapo-process) che copia semplicemente i dati da un buffer di input a un buffer di output. Tuttavia, non esiste alcuna elaborazione se il buffer di input è contrassegnato con il [**\_ buffer XAPO invisibile all' \_ utente**](/windows/desktop/api/xapo/ne-xapo-xapo_buffer_flags).
+L'esempio seguente illustra [**un'implementazione LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) [**e Process**](/windows/win32/api/xapo/nf-xapo-ixapo-process) che copia semplicemente i dati da un buffer di input a un buffer di output. Tuttavia, non viene elaborata se il buffer di input è contrassegnato con [**XAPO \_ BUFFER \_ SILENT**](/windows/desktop/api/xapo/ne-xapo-xapo_buffer_flags).
 
 
 ```
@@ -116,7 +116,7 @@ STDMETHOD_(void, Process)(UINT32 InputProcessParameterCount,
 
 
 
-Quando si scrive un metodo di [**processo**](/windows/win32/api/xapo/nf-xapo-ixapo-process) , è importante notare che i dati audio XAudio2 sono Interleaved. Ciò significa che i dati di ogni canale sono adiacenti per un determinato numero di campione. Se ad esempio è presente un'onda a 4 canali in una voce di origine XAudio2, i dati audio sono un campione di Channel 0, un campione di Channel 1, un campione di Channel 2, un campione di Channel 3 e quindi il campione successivo di canali 0, 1, 2, 3 e così via.
+Quando si scrive [**un metodo Process,**](/windows/win32/api/xapo/nf-xapo-ixapo-process) è importante notare che i dati audio XAudio2 sono interleaved. Ciò significa che i dati di ogni canale sono adiacenti per un numero di campione specifico. Ad esempio, se è presente un'onda a 4 canali che riproduce una voce di origine XAudio2, i dati audio sono un campione di canale 0, un campione di canale 1, un campione di canale 2, un campione di canale 3 e quindi il campione successivo di canali 0, 1, 2, 3 e così via.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

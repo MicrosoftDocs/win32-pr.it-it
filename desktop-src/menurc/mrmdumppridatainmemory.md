@@ -1,9 +1,9 @@
 ---
-title: Funzione MrmDumpPriDataInMemory (MrmResourceIndexer. h)
-description: Consente di eseguire il dump delle informazioni PRI (come BLOB in memoria, creato da una precedente chiamata a MrmCreateResourceFileInMemory) al relativo equivalente XML (come dati in memoria), in modo da renderlo più facilmente leggibile.
+title: Funzione MrmDumpPriDataInMemory (MrmResourceIndexer.h)
+description: Esegue il dump delle informazioni PRI (come BLOB in memoria, creato da una precedente chiamata a MrmCreateResourceFileInMemory) nell'equivalente XML (come dati in memoria), per renderle più leggibili.
 ms.assetid: 6E563B43-4E0A-465D-A8EA-7DE61738DE06
 keywords:
-- Menu della funzione MrmDumpPriDataInMemory e altre risorse
+- Menu e altre risorse della funzione MrmDumpPriDataInMemory
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 072309dcf9ebda1ba4a5669034019582b99105f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbeec26f0741ebb77b742ff647e91cb5fd18afe633a1519228b887b4b438bb72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601781"
 ---
-# <a name="mrmdumppridatainmemory-function"></a>MrmDumpPriDataInMemory (funzione)
+# <a name="mrmdumppridatainmemory-function"></a>Funzione MrmDumpPriDataInMemory
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Consente di eseguire il dump delle informazioni PRI (come BLOB in memoria, creato da una precedente chiamata a [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md)) al relativo equivalente XML (come dati in memoria), in modo da renderlo più facilmente leggibile. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Esegue il dump delle informazioni PRI (come BLOB in memoria, creato da una precedente chiamata a [**MrmCreateResourceFileInMemory)**](mrmcreateresourcefileinmemory.md)nell'equivalente XML (come dati in memoria), per renderle più leggibili. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData.* Chiamare [**MrmFreeMemory con**](mrmfreememory.md) lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,66 +48,66 @@ HRESULT HRESULT MrmDumpPriDataInMemory(
 
 <dl> <dt>
 
-*inputPriData* \[ in\]
+*inputPriData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Puntatore ai dati PRI creati da una chiamata precedente a [_ *MrmCreateResourceFileInMemory* *](mrmcreateresourcefileinmemory.md).
+Puntatore ai dati PRI creati da una chiamata precedente a [**MrmCreateResourceFileInMemory.**](mrmcreateresourcefileinmemory.md)
 
 </dd> <dt>
 
-*inputPriSize* \[ in\]
+*inputPriSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
 
-Dimensione dei dati a cui punta *inputPriData*.
+Dimensioni dei dati a cui punta *inputPriData.*
 
 </dd> <dt>
 
 *schemaPriData* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Puntatore facoltativo a info PRI (come BLOB in memoria) che rappresenta i dati dello schema creati da una chiamata precedente a [_ *MrmCreateResourceFileInMemory* *](mrmcreateresourcefileinmemory.md). Non liberare *schemaPriData* fino al termine dell'uso dell'indicizzatore di risorse. Vedere anche la sezione Osservazioni.
+Puntatore facoltativo alle informazioni PRI (come BLOB in memoria) che rappresenta i dati dello schema creati da una precedente chiamata a [**MrmCreateResourceFileInMemory.**](mrmcreateresourcefileinmemory.md) Non liberare *schemaPriData* fino a quando non si è terminato di usare l'indicizzatore di risorse. Vedere anche La sezione Osservazioni.
 
 </dd> <dt>
 
-*schemaPriSize* \[ in\]
+*schemaPriSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
 
-Dimensione dei dati a cui punta *schemaPriData*.
+Dimensioni dei dati a cui punta *schemaPriData.*
 
 </dd> <dt>
 
-*dumpType* \[ in\]
+*dumpType* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmDumpType**](mrmdumptype.md)**
 
-Specifica il modo in cui il dump XML deve essere dettagliato o se deve essere eseguito il dump di uno schema.
+Specifica il livello di dettaglio del dump XML o se è necessario eseguire il dump di uno schema.
 
 </dd> <dt>
 
-*outputXmlData* \[ out\]
+*outputXmlData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
-Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con il puntatore a byte per liberare la memoria.
+Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData.* Chiamare [**MrmFreeMemory con**](mrmfreememory.md) il puntatore a BYTE per liberare la memoria.
 
 </dd> <dt>
 
-*outputXmlSize* \[ out\]
+*outputXmlSize* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Indirizzo di ULONG. In _outputXmlSize *, la funzione restituisce le dimensioni della memoria allocata a cui punta *outputXmlData*.
+Indirizzo di un ULONG. In *outputXmlSize* la funzione restituisce le dimensioni della memoria allocata a cui punta *outputXmlData.*
 
 </dd> </dl>
 
@@ -115,11 +115,11 @@ Indirizzo di ULONG. In _outputXmlSize *, la funzione restituisce le dimensioni d
 
 Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Un pacchetto di risorse senza schema è uno creato con l'argomento [**MrmPackagingOptionsOmitSchemaFromResourcePacks**](mrmpackagingoptions.md) passato a [**MrmCreateResourceFile**](mrmcreateresourcefile.md) o [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md) (oppure con l'opzione *omitSchemaFromResourcePacks* nel file di configurazione pri). Per eseguire il dump di un pacchetto di risorse senza schema, passare il percorso ai dati PRI del pacchetto principale come argomento per il parametro *schemaPriData* .
+Un pacchetto di risorse senza schema è quello creato con l'argomento [**MrmPackagingOptionsOmitSchemaFromResourcePacks**](mrmpackagingoptions.md) passato a [**MrmCreateResourceFile**](mrmcreateresourcefile.md) o [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md) (o con l'opzione *omitSchemaFromResourcePacks* nel file di configurazione PRI). Per eseguire il dump di un pacchetto di risorse senza schema, passare il percorso ai dati PRI del pacchetto principale come argomento per il *parametro schemaPriData.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -127,10 +127,10 @@ Un pacchetto di risorse senza schema è uno creato con l'argomento [**MrmPackagi
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

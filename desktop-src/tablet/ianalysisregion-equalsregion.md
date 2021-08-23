@@ -1,7 +1,7 @@
 ---
-description: Determina se il IAnalysisRegion specificato contiene lo stesso valore dell'oggetto IAnalysisRegion corrente.
+description: Determina se l'oggetto IAnalysisRegion specificato contiene lo stesso valore dell'oggetto IAnalysisRegion corrente.
 ms.assetid: 44c09cfe-65fc-4175-ad05-01c605218c58
-title: 'Metodo IAnalysisRegion:: EqualsRegion (IACom. h)'
+title: Metodo IAnalysisRegion::EqualsRegion (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 6a647c13f1279cd39e4947b9fdbcc9ed4e1ef4ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aecf7bd065c2da0c507c2424c0305526510c9d4f64844dfa229183cf43d5554a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596801"
 ---
-# <a name="ianalysisregionequalsregion-method"></a>Metodo IAnalysisRegion:: EqualsRegion
+# <a name="ianalysisregionequalsregion-method"></a>Metodo IAnalysisRegion::EqualsRegion
 
-Determina se il [**IAnalysisRegion**](ianalysisregion.md) specificato contiene lo stesso valore dell'oggetto **IAnalysisRegion** corrente.
+Determina se [**l'oggetto IAnalysisRegion specificato**](ianalysisregion.md) contiene lo stesso valore dell'oggetto **IAnalysisRegion** corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ HRESULT EqualsRegion(
 
 <dl> <dt>
 
-*pOtherRegion* \[ in\]
+*pOtherRegion* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IAnalysisRegion**](ianalysisregion.md) da confrontare con il **IAnalysisRegion** corrente.
+Oggetto [**IAnalysisRegion**](ianalysisregion.md) da confrontare con l'oggetto **IAnalysisRegion corrente.**
 
 </dd> <dt>
 
-*pfRegionsEqual* \[ out\]
+*pfRegionsEqual* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se l'oggetto [**IAnalysisRegion**](ianalysisregion.md) specificato contiene lo stesso valore dell'oggetto IAnalysisRegion corrente. in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se [**l'oggetto IAnalysisRegion specificato**](ianalysisregion.md) contiene lo stesso valore dell'oggetto IAnalysisRegion corrente; in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -75,7 +75,7 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 <dl> <dt>
 
-[**IAnalysisRegion**](ianalysisregion.md)
+[**Area IAnalysis**](ianalysisregion.md)
 </dt> </dl>
 
  

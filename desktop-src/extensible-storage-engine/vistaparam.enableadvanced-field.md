@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo VistaParam. EnableAdvanced'
-title: Campo VistaParam. EnableAdvanced (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Campo VistaParam.EnableAdvanced'
+title: Campo VistaParam.EnableAdvanced (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: EnableAdvanced field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.EnableAdvanced
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.enableadvanced(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 738652825c2c8b6b6600326697c563a7d219db55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70616409cd09652456734eecda67ca2a1ba3f999f997d87be27c5b0e8f87ff05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603521"
 ---
-# <a name="vistaparamenableadvanced-field"></a>Campo VistaParam. EnableAdvanced
+# <a name="vistaparamenableadvanced-field"></a>Campo VistaParam.EnableAdvanced
 
-Questo parametro viene utilizzato per controllare quando il motore di database accetta o rifiuta le modifiche apportate a un subset dei parametri di sistema. Questo parametro viene usato in combinazione con la [configurazione](./vistaparam.configuration-field.md) per impedire che alcuni parametri di sistema vengano impostati dalle impostazioni predefinite della configurazione selezionata.
+Questo parametro viene utilizzato per controllare quando il motore di database accetta o rifiuta le modifiche apportate a un subset dei parametri di sistema. Questo parametro viene usato insieme a [Configuration per](./vistaparam.configuration-field.md) impedire che alcuni parametri di sistema vengano impostati in base alle impostazioni predefinite della configurazione selezionata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param EnableAdvanced
 
 [Membri di VistaParam](./vistaparam-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

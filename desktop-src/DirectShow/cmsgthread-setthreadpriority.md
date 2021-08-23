@@ -1,7 +1,7 @@
 ---
-description: Usa la funzione SetThreadPriority di Microsoft Win32 per impostare la priorità del thread su un nuovo valore.
+description: Usa la funzione Microsoft Win32 SetThreadPriority per impostare la priorità del thread su un nuovo valore.
 ms.assetid: 5b8ad024-e651-47e5-b32a-c44d56c086cd
-title: Metodo CMsgThread. SetThreadPriority (Msgthrd. h)
+title: Metodo CMsgThread.SetThreadPriority (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0cfa3cd81907a251d2acf7129405e187286df3c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce293f32f765a89451ecf07b4532afc5fc4a7a132287d5b09b54962f93135215
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585671"
 ---
-# <a name="cmsgthreadsetthreadpriority-method"></a>CMsgThread. SetThreadPriority, metodo
+# <a name="cmsgthreadsetthreadpriority-method"></a>Metodo CMsgThread.SetThreadPriority
 
-Usa la funzione **SetThreadPriority** di Microsoft Win32 per impostare la priorità del thread su un nuovo valore.
+Usa la funzione Microsoft Win32 **SetThreadPriority** per impostare la priorità del thread su un nuovo valore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,8 +57,8 @@ Restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                              | Descrizione                               |
 |------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>TRUE * * * *</dt> </dl>  | La priorità è stata impostata correttamente.<br/> |
-| <dl> <dt>FALSE * * * *</dt> </dl> | La priorità non è stata impostata.<br/>          |
+| <dl> <dt>TRUE****</dt> </dl>  | La priorità è stata impostata correttamente.<br/> |
+| <dl> <dt>FALSE****</dt> </dl> | La priorità non è stata impostata.<br/>          |
 
 
 
@@ -74,8 +74,8 @@ Il client e il thread di lavoro possono chiamare questa funzione membro.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

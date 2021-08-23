@@ -1,34 +1,34 @@
 ---
-description: In questo argomento viene descritto come recuperare un contesto di dispositivo stampante.
+description: Questo argomento descrive come recuperare un contesto di dispositivo della stampante.
 ms.assetid: b3eb9c48-f4c4-42f1-b189-1fa42670008e
-title: 'Procedura: recuperare un contesto di dispositivo stampante'
+title: 'Procedura: Recuperare un contesto di dispositivo della stampante'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fde55450273e42f3429f173150296fdd67a1c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f723ece0e00d58ed684029e0eb3202d637443bd7f0e9d8878024346b9d79ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600561"
 ---
-# <a name="how-to-retrieve-a-printer-device-context"></a>Procedura: recuperare un contesto di dispositivo stampante
+# <a name="how-to-retrieve-a-printer-device-context"></a>Procedura: Recuperare un contesto di dispositivo della stampante
 
-In questo argomento viene descritto come recuperare un contesto di dispositivo stampante. È possibile recuperare un contesto di dispositivo stampante chiamando direttamente la funzione [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) oppure può essere restituito da una finestra di dialogo **stampa** comune.
+Questo argomento descrive come recuperare un contesto di dispositivo della stampante. È possibile recuperare un contesto di dispositivo della stampante chiamando direttamente la [**funzione CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) oppure può essere restituito da una **finestra di** dialogo stampa comune.
 
-Quando si visualizza una finestra di dialogo **stampa** comune, un utente sarà in grado di selezionare la stampante, le pagine del documento e il numero di copie del documento che si desidera stampare. La finestra di dialogo **stampa** comune restituisce queste selezioni in una struttura di dati.
+Quando si visualizza una **finestra** di dialogo Stampa comune, un utente sarà in grado di selezionare la stampante, le pagine del documento e il numero di copie del documento da stampare. La **finestra di** dialogo Stampa comune restituisce queste selezioni in una struttura di dati.
 
-In questo argomento viene descritto come ottenere un contesto di dispositivo stampante utilizzando i metodi seguenti.
+Questo argomento descrive come ottenere un contesto di dispositivo della stampante usando i metodi seguenti.
 
--   [Chiama CreateDC](#call-createdc)
--   [Visualizza una finestra di dialogo Stampa comune](#display-a-print-common-dialog-box)
+-   [Chiamare CreateDC](#call-createdc)
+-   [Visualizzare una finestra di dialogo Stampa comune](#display-a-print-common-dialog-box)
     -   [Uso della funzione PrintDlgEx](#using-the-printdlgex-function)
     -   [Uso della funzione PrintDlg](#using-the-printdlg-function)
 
-## <a name="call-createdc"></a>Chiama CreateDC
+## <a name="call-createdc"></a>Chiamare CreateDC
 
-Se si conosce il dispositivo in cui si desidera stampare, è possibile chiamare [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) e passare le informazioni direttamente alla funzione. **CreateDC** restituisce un contesto di dispositivo in cui è possibile eseguire il rendering del contenuto da stampare.
+Se si conosce il dispositivo a cui si vuole stampare, è possibile chiamare [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) e passare le informazioni direttamente alla funzione. **CreateDC** restituisce un contesto di dispositivo in cui è possibile eseguire il rendering del contenuto da stampare.
 
-La chiamata più semplice per recuperare un contesto di dispositivo è illustrata nell'esempio di codice seguente. Il codice in questo esempio recupera un contesto di dispositivo sul dispositivo di visualizzazione predefinito.
+La chiamata più semplice per recuperare un contesto di dispositivo è illustrata nell'esempio di codice seguente. Il codice in questo esempio recupera un contesto di dispositivo per il dispositivo di visualizzazione predefinito.
 
 
 ```C++
@@ -37,9 +37,9 @@ La chiamata più semplice per recuperare un contesto di dispositivo è illustrat
 
 
 
-Per eseguire il rendering in una stampante specifica, è necessario specificare "WINSPOOL" come dispositivo e passare il nome corretto della stampante a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca). È anche possibile passare una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) nella chiamata a **CreateDC** se si desidera fornire dati di inizializzazione specifici del dispositivo per il driver di dispositivo quando si crea il contesto di dispositivo.
+Per eseguire il rendering a una stampante specifica, è necessario specificare "WINSPOOL" come dispositivo e passare il nome corretto della stampante a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca). È anche possibile passare una [**struttura DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) nella chiamata a **CreateDC** se si vogliono fornire dati di inizializzazione specifici del dispositivo per il driver di dispositivo quando si crea il contesto di dispositivo.
 
-Nell'esempio seguente viene illustrata una chiamata a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) in cui è selezionato il driver "winspool" e il nome della stampante viene specificato in base al nome.
+Nell'esempio seguente viene illustrata una chiamata a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) in cui è selezionato il driver "WINSPOOL" e il nome della stampante viene specificato in base al nome.
 
 
 ```C++
@@ -48,7 +48,7 @@ Nell'esempio seguente viene illustrata una chiamata a [**CreateDC**](/windows/de
 
 
 
-È possibile ottenere la stringa del nome esatto della stampante da passare a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) chiamando la funzione [**EnumPrinters**](enumprinters.md) . Nell'esempio di codice seguente viene illustrato come chiamare **EnumPrinters** e ottenere i nomi delle stampanti locali e connesse localmente. Poiché le dimensioni del buffer richiesto non sono note in anticipo, il **EnumPrinters** viene chiamato due volte. La prima chiamata restituisce la dimensione del buffer richiesto. Tali informazioni vengono utilizzate per allocare un buffer della dimensione richiesta e la seconda chiamata a **EnumPrinters** restituisce i dati desiderati.
+È possibile ottenere la stringa esatta del nome della stampante da passare a [**CreateDC**](/windows/desktop/api/wingdi/nf-wingdi-createdca) chiamando la [**funzione EnumPrinters.**](enumprinters.md) Nell'esempio di codice seguente viene illustrato come chiamare **EnumPrinters** e ottenere i nomi delle stampanti locali e connesse in locale. Poiché le dimensioni del buffer richiesto non possono essere note in anticipo, **EnumPrinters** viene chiamato due volte. La prima chiamata restituisce le dimensioni del buffer richiesto. Queste informazioni vengono usate per allocare un buffer delle dimensioni richieste e la seconda chiamata a **EnumPrinters** restituisce i dati desiderati.
 
 
 ```C++
@@ -100,29 +100,29 @@ Nell'esempio seguente viene illustrata una chiamata a [**CreateDC**](/windows/de
 
 
 
-## <a name="display-a-print-common-dialog-box"></a>Visualizza una finestra di dialogo Stampa comune
+## <a name="display-a-print-common-dialog-box"></a>Visualizzare una finestra di dialogo Stampa comune
 
-È possibile scegliere tra due finestre di dialogo comuni di **stampa** per visualizzare un utente; la finestra di dialogo più recente, che può essere visualizzata chiamando la funzione [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) e la finestra di dialogo stile precedente, che è possibile visualizzare chiamando la funzione [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) . Nelle sezioni seguenti viene descritto come chiamare ogni finestra di dialogo da un'applicazione.
+È possibile scegliere tra due **finestre di** dialogo comuni di stampa da visualizzare a un utente. la finestra di dialogo più recente, che è possibile visualizzare chiamando la funzione [**PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) e la finestra di dialogo di stile precedente, che è possibile visualizzare chiamando la [**funzione PrintDlg.**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) Le sezioni seguenti descrivono come chiamare ogni finestra di dialogo da un'applicazione.
 
 ### <a name="using-the-printdlgex-function"></a>Uso della funzione PrintDlgEx
 
-Chiamare la funzione [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per visualizzare la finestra delle proprietà di **stampa** . Utilizzando la finestra delle proprietà, l'utente può specificare le informazioni sul processo di stampa. Ad esempio, l'utente può selezionare un intervallo di pagine da stampare, il numero di copie e così via. Il **PRINTDLGEX** può anche recuperare un handle per un contesto di dispositivo per la stampante selezionata. È possibile utilizzare l'handle per eseguire il rendering dell'output sulla stampante.
+Chiamare la [**funzione PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per visualizzare la finestra **delle proprietà** Stampa. Usando la finestra delle proprietà, l'utente può specificare informazioni sul processo di stampa. Ad esempio, l'utente può selezionare un intervallo di pagine da stampare, il numero di copie e così via. **PrintDlgEx** può anche recuperare un handle per un contesto di dispositivo per la stampante selezionata. È possibile usare l'handle per eseguire il rendering dell'output sulla stampante.
 
-Per il codice di esempio che illustra l'uso di [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per recuperare un contesto di dispositivo stampante, vedere l'argomento relativo all'uso della finestra delle proprietà di stampa in [uso di finestre di dialogo comuni](../dlgbox/using-common-dialog-boxes.md).
+Per il codice di esempio che illustra l'uso di [**PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) per recuperare un contesto di dispositivo della stampante, vedere "Uso della finestra delle proprietà Di stampa" in [Uso di finestre di dialogo comuni](../dlgbox/using-common-dialog-boxes.md).
 
 ### <a name="using-the-printdlg-function"></a>Uso della funzione PrintDlg
 
-Se l'applicazione deve essere eseguita in un sistema che non supporta la funzione [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) , ad esempio in un sistema che esegue una versione di Windows precedente a Windows 2000 o non richiede la funzionalità aggiuntiva fornita dalla funzione **PRINTDLGEX** , utilizzare la funzione [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) . Nei passaggi seguenti viene descritto come visualizzare la finestra di dialogo comune **stampa** di stile precedente.
+Se l'applicazione deve essere eseguita in un sistema che non supporta la funzione [**PrintDlgEx,**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) ad esempio in un sistema che esegue una versione di Windows precedente a Windows 2000 o non richiede la funzionalità aggiuntiva fornita dalla funzione **PrintDlgEx,** usare la [**funzione PrintDlg.**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) La procedura seguente descrive come visualizzare la finestra di dialogo **Stampa** comune di stile precedente.
 
-1.  Inizializza la struttura dei dati [**PrintDlg**](/windows/win32/api/commdlg/ns-commdlg-printdlga) .
-2.  Chiamare [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per visualizzare la finestra di dialogo **stampa** comune per l'utente.
-3.  Se la chiamata [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) restituisce **true**, bloccare la memoria della struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) restituita. Se la chiamata **PrintDlg** restituisce **false**, l'utente ha premuto il pulsante **Annulla** nella finestra di dialogo **stampa** comune in modo che non vi sia altro da elaborare.
-4.  Allocare un buffer di memoria locale sufficientemente grande da contenere una copia della struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) .
-5.  Copiare la struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) restituita in quella allocata localmente.
-6.  Salvare altre informazioni restituite nella struttura [**PrintDlg**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e che sarà necessario elaborare il processo di stampa.
-7.  Liberare il [**PrintDlg**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e i buffer di memoria a cui fa riferimento.
+1.  Inizializzare [**la struttura dei dati PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga)
+2.  Chiamare [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per visualizzare la **finestra di** dialogo Stampa comune all'utente.
+3.  Se la [**chiamata PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) restituisce **TRUE,** bloccare la memoria della [**struttura DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) restituita. Se la **chiamata PrintDlg** restituisce  **FALSE,** l'utente ha premuto il pulsante **Annulla** nella finestra di dialogo Stampa comune in modo che non ci siano altri elementi da elaborare.
+4.  Allocare un buffer di memoria locale sufficientemente grande da contenere una copia della [**struttura DEVMODE.**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+5.  Copiare la struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) restituita nella struttura allocata in locale.
+6.  Salvare altre informazioni restituite nella [**struttura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e che sarà necessario elaborare il processo di stampa.
+7.  Liberare [**PRINTDLG e**](/windows/win32/api/commdlg/ns-commdlg-printdlga) i buffer di memoria a cui fa riferimento.
 
-Nell'esempio di codice seguente viene illustrato come utilizzare la funzione [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per ottenere il contesto di dispositivo e il nome della stampante selezionata.
+Il codice di esempio seguente illustra come usare la [**funzione PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) per ottenere il contesto di dispositivo e il nome della stampante selezionata.
 
 
 ```C++
@@ -216,7 +216,7 @@ else
 
 
 
-Per ulteriori informazioni sulla funzione [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) , vedere "visualizzazione della finestra di dialogo Stampa" in utilizzo di finestre di [dialogo comuni](../dlgbox/using-common-dialog-boxes.md).
+Per altre informazioni sulla [**funzione PrintDlg,**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) vedere "Visualizzazione della finestra di dialogo Stampa" in [Uso di finestre di dialogo comuni](../dlgbox/using-common-dialog-boxes.md).
 
  
 

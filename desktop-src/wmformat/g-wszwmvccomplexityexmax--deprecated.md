@@ -1,9 +1,9 @@
 ---
 title: g_wszWMVCComplexityExMax
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMVCComplexityExMax
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | g_wszWMVCComplexityExMax
 ms.assetid: 465d31f7-f401-41c6-a060-17879e6196e8
 keywords:
-- g_wszWMVCComplexityExMax formato Windows Media
+- g_wszWMVCComplexityExMax windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b672ed50f4821c1909274349ee805fb0d361e5e7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1b7bf3a5826e8fdbab36641be99d57a290e2dea86b5c328989fdd61a268a3767
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585911"
 ---
 # <a name="g_wszwmvccomplexityexmax"></a>g \_ wszWMVCComplexityExMax
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

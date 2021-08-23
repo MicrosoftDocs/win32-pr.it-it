@@ -1,29 +1,29 @@
 ---
-title: Come creare uno Hull shader
-description: In questo argomento viene illustrato come creare un Hull shader.
+title: Come creare uno hull shader
+description: Questo argomento illustra come creare uno hull shader.
 ms.assetid: 221cb578-fcfc-411a-8515-7880a96e32ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1a1eea7d2e6e70377028976f9576790ce3b64ab
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1fa9fe55a11c68e4cbc247f6509c52b6bac1d01b823d48637ee51073437316f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608991"
 ---
-# <a name="how-to-create-a-hull-shader"></a>Procedura: creare un Hull shader
+# <a name="how-to-create-a-hull-shader"></a>Procedura: Creare uno hull shader
 
-Un Hull shader è il primo di tre fasi che interagiscono per implementare lo [schema a mosaico](direct3d-11-advanced-stages-tessellation.md). Gli output dello shader dello scafo rappresentano la fase mosaico, oltre alla fase Domain shader. In questo argomento viene illustrato come creare un Hull shader.
+Uno hull shader è la prima di tre fasi che funzionano insieme per implementare la [tessellazione.](direct3d-11-advanced-stages-tessellation.md) Gli output dello hull shader guidano la fase del tessellatore, nonché la fase domain-shader. Questo argomento illustra come creare uno hull shader.
 
-Uno scafo shader trasforma un set di punti di controllo di input (da un vertex shader) in un set di punti di controllo di output. Il numero di punti di input e di output può variare in base al contenuto e al numero a seconda della trasformazione. una trasformazione tipica sarebbe una trasformazione di base.
+Uno hull shader trasforma un set di punti di controllo di input (da un vertex shader) in un set di punti di controllo di output. Il numero di punti di input e di output può variare in base al contenuto e al numero a seconda della trasformazione (una trasformazione tipica è una trasformazione di base).
 
-Un Hull shader restituisce anche informazioni sulle costanti della patch, ad esempio i fattori a mosaico, per uno shader del dominio e il mosaico. La fase mosaico a funzione fissa usa i fattori a mosaico e altri stati dichiarati in uno scafo shader per determinare la quantità di conteggiarla suddividerla.
+Uno hull shader restituisce anche informazioni costanti sulle patch, ad esempio fattori a tassellamento, per uno shader di dominio e il tessellatore. La fase a tessellatore a funzione fissa usa i fattori a tessellazione e gli altri stati dichiarati in uno hull shader per determinare la quantità di tassellamento.
 
-**Per creare un Hull shader**
+**Per creare uno hull shader**
 
-1.  Progettare uno scafo dello shader. Vedere [procedura: progettare uno scafo dello shader](direct3d-11-advanced-stages-hull-shader-design.md).
-2.  Compilare il codice dello shader
-3.  Creare un oggetto Hull shader usando [**ID3D11Device:: CreateHullShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createhullshader).
+1.  Progettare uno hull shader. Vedere [Procedura: Progettare uno hull shader.](direct3d-11-advanced-stages-hull-shader-design.md)
+2.  Compilare il codice shader
+3.  Creare un oggetto hull-shader [**usando ID3D11Device::CreateHullShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createhullshader).
     ```
     HRESULT CreateHullShader(
       const void *pShaderBytecode,  
@@ -35,7 +35,7 @@ Un Hull shader restituisce anche informazioni sulle costanti della patch, ad ese
 
     
 
-4.  Inizializzare la fase della pipeline utilizzando [**sul ID3D11DeviceContext:: HSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-hssetshader).
+4.  Inizializzare la fase della pipeline [**usando ID3D11DeviceContext::HSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-hssetshader).
     ```
     void HSSetShader(
       ID3D11HullShader *pHullShader,  
@@ -46,7 +46,7 @@ Un Hull shader restituisce anche informazioni sulle costanti della patch, ad ese
 
     
 
-Se è associato un Hull shader, è necessario associare un Domain shader alla pipeline. In particolare, non è consentito trasmettere direttamente i punti di controllo di Hull shader con il geometry shader.
+Uno shader di dominio deve essere associato alla pipeline se è associato uno hull shader. In particolare, non è valido trasmettere direttamente i punti di controllo dello hull shader con lo shader geometry.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -55,12 +55,12 @@ Se è associato un Hull shader, è necessario associare un Domain shader alla pi
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> <dt>
 
-[Panoramica dello schema a mosaico](direct3d-11-advanced-stages-tessellation.md)
+[Panoramica dell'a tessellazione](direct3d-11-advanced-stages-tessellation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo Prior-Value
-description: Valore precedente di un segreto.
+title: Prior-Value attributo
+description: Valore precedente per un segreto.
 ms.assetid: 65440276-6337-443c-9ce3-0c18648fac20
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Prior-Value attribute
-- Schema AD dell'attributo priorValue
+- Prior-Value schema AD dell'attributo
+- Attributo priorValue - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fa186896a346b580a056f2a4936585d1ef116a6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9fd5f166009e31f1452968513fe1842a90e7e5542a134a0bcf73194338e1aef6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647031"
 ---
-# <a name="prior-value-attribute"></a>Attributo Prior-Value
+# <a name="prior-value-attribute"></a>Prior-Value attributo
 
-Valore precedente di un segreto.
+Valore precedente per un segreto.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Prior-Value                                           |
-| LDAP-Display-Name | priorValue                                            |
+| Ldap-Display-Name | priorValue                                            |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.100                                |
-| System-ID-GUID    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Valore precedente di un segreto.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Segreto**](c-secret.md)<br/> |
+| Classi usate in        | [**Segreto**](c-secret.md)<br/> |
 
 
 

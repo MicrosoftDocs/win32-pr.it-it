@@ -1,5 +1,5 @@
 ---
-description: 'Struttura DEVICEDIALOGDATA: definisce i dati necessari per chiamare un dialogo del dispositivo.'
+description: 'Struttura DEVICEDIALOGDATA: definisce i dati necessari per chiamare una finestra di dialogo del dispositivo.'
 ms.assetid: 424defa6-1452-4a8b-bacc-738209c236c3
 title: Struttura DEVICEDIALOGDATA (Wiadefd.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: ad7b08f5396a7a6e9b1f74df3dd409303b2d548d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e20b8689e71031024c46451d3079450061e8112acf1052c12129b89ed9e0a23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451201"
 ---
 # <a name="devicedialogdata-structure"></a>Struttura DEVICEDIALOGDATA
 
@@ -93,7 +93,7 @@ Specifica un set di flag che controllano l'operazione della finestra di dialogo.
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamento predefinito.                                                                                                                                                                           |
 | IMMAGINE SINGOLA \_ DELLA FINESTRA DI DIALOGO DEL \_ \_ DISPOSITIVO \_ WIA   | Limitare la selezione dell'immagine a una singola immagine nella finestra di dialogo di acquisizione dell'immagine del dispositivo.                                                                                                      |
-| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ USA \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
+| FINESTRA DI DIALOGO DEL DISPOSITIVO WIA \_ \_ - USARE \_ \_ L'INTERFACCIA \_ UTENTE COMUNE | Usare l'interfaccia utente di sistema, se disponibile, anziché l'interfaccia utente fornita dal fornitore. Se l'interfaccia utente del sistema non è disponibile, viene usata l'interfaccia utente del fornitore. Se nessuna delle due interfaccia utente è disponibile, la funzione restituisce E \_ NOTIMPL. |
 
 
 
@@ -140,8 +140,8 @@ Riceve l'indirizzo di una matrice di puntatori [**alle interfacce IWiaItem.**](/
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 

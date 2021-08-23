@@ -1,8 +1,8 @@
 ---
-description: La proprietà server dell'oggetto SWbemObjectPath contiene il nome del server che fa parte del percorso dell'oggetto.
+description: La proprietà Server dell'oggetto SWbemObjectPath contiene il nome del server che fa parte del percorso dell'oggetto.
 ms.assetid: 8d711bc5-dd5e-426f-8398-38f90655ff75
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectPath. Server (wbemdisp. h)
+title: Proprietà SWbemObjectPath.Server (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4bb7bb75358e9e93b010312c76e1b6aca33233bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a04a1b19a3d5a3f9f7b167f3e54883d7f39486a8ee4418179cc11aa0496b6de1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639931"
 ---
-# <a name="swbemobjectpathserver-property"></a>Proprietà SWbemObjectPath. Server
+# <a name="swbemobjectpathserver-property"></a>Proprietà SWbemObjectPath.Server
 
-La proprietà **Server** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il nome del server che fa parte del percorso dell'oggetto.
+La **proprietà Server** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il nome del server che fa parte del percorso dell'oggetto.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -51,11 +51,11 @@ SWbemObjectPath.Server As String
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

@@ -1,29 +1,29 @@
-- name: Introduzione lo sviluppo di interfacce utente per le applicazioni Windows
+- name: Attività iniziali sviluppo di interfacce utente per Windows applicazioni
   href: getting-started-developing-user-interfaces-portal.md
   items:
-    - name: Panoramica del processo di sviluppo dell'interfaccia utente
+    - name: Panoramica del processo Interfaccia utente di sviluppo
       href: the-process.md
-    - name: Progettazione di un'interfaccia utente
+    - name: Progettazione di un Interfaccia utente
       href: designing-a-user-interface.md
       items:
-        - name: Usabilità nella progettazione del software
+        - name: Usabilità nella progettazione software
           href: usability-in-software-design.md
-        - name: Principi dell'interfaccia utente
+        - name: Interfaccia utente principi
           href: '-user-interface-principles.md'
-        - name: Linee guida sull'interfaccia utente seguenti
+        - name: Linee Interfaccia utente seguenti
           href: following-guidelines.md
-        - name: Interfaccia utente indotta
+        - name: Induttivi Interfaccia utente
           href: inductive-user-interface.md
-    - name: Implementazione di un'interfaccia utente
+    - name: Implementazione di un Interfaccia utente
       href: implementing-a-user-interface.md
       items:
-        - name: Prototipazione di un'interfaccia utente
+        - name: Prototipazione di un Interfaccia utente
           href: prototyping-a-user-interface.md
-        - name: Tecnologie dell'interfaccia utente
+        - name: Interfaccia utente Technologies
           href: user-interface-technologies-for-windows-applications.md
-    - name: Test di un'interfaccia utente
+    - name: Test di un Interfaccia utente
       href: testing-a-user-interface.md
-    - name: 'Considerazioni sulla sicurezza: interfaccia utente di Windows'
+    - name: 'Considerazioni sulla sicurezza: Windows Interfaccia utente'
       href: sec-ui.md
     - name: Risorse aggiuntive
       href: other-resources.md

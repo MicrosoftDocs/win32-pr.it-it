@@ -5,12 +5,12 @@ ms.assetid: 85934873-8889-4564-A717-28A00614B38C
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d51d30c7a99250ee0842b79d76ccebb6150bcf9a
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 73383659727fea4ef385e56788ce97e18e7976dc5d040a4c1f3a6fc51c3616d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608281"
 ---
 # <a name="non-shader-visible-descriptor-heaps"></a>Heap dei descrittori non visibili allo shader
 
@@ -35,18 +35,18 @@ Le viste IBV (Index Buffer Views), le viste vertex buffer (VBV) e le viste di ou
 
 Dopo la registrazione nell'elenco dei comandi ,ad esempio con una chiamata come [**OMSetRenderTargets,**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets)la memoria usata per contenere i descrittori per questa chiamata è immediatamente disponibile per il nuovo uso dopo la chiamata.
 
-Anche le tabelle descrittore hanno opzioni in cui un'app può consentire all'implementazione di scegliere di registrare il contenuto della tabella durante la registrazione dell'elenco dei comandi (anziché dereferenziare il puntatore di tabella in fase di esecuzione).
+Anche le tabelle di descrizione hanno opzioni in cui un'app può consentire all'implementazione di scegliere di registrare il contenuto della tabella durante la registrazione dell'elenco dei comandi (anziché dereferenziare il puntatore di tabella in fase di esecuzione).
 
 ## <a name="summary"></a>Riepilogo
 
 
 
-|                   | Shader visibile, solo scrittura CPU                                   | Non-shader visibile, lettura/scrittura della CPU                                       |
+|                   | Shader visibile, solo scrittura CPU                                   | Non visibile con shader, lettura/scrittura della CPU                                       |
 |-------------------|------------------------------------|----------------------------------------|
-| **CBV, SRV, UAV** | Sì                                | Sì                                    |
-| **Campionatore**       | Sì                                | Sì                                    |
-| **RTV**           | No                                 | sì                                    |
-| **Dsv**           | No                                 | sì                                    |
+| **CBV, SRV, UAV** | sì                                | sì                                    |
+| **Campionatore**       | sì                                | sì                                    |
+| **RTV**           | no                                 | sì                                    |
+| **Dsv**           | no                                 | sì                                    |
 
 
 

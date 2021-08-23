@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 5adfedb833043ffc56da09c7bdab95c1c4698587
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a877b4ae061b6568b877d9b8ee65b8d9b0380a012d7fdba28408ad4bfcae7030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579721"
 ---
 # <a name="getconfiguration-method-of-the-control-class"></a>Metodo GetConfiguration della classe Control
 
@@ -41,17 +41,17 @@ Uint32 GetConfiguration(
 
 <dl> <dt>
 
-*TimestampLow* \[ out\]
+*TimestampLow* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo restituisce un risultato, questo parametro contiene i bit di ordine inferiore di un timestamp che indica quando è stata impostata la configurazione.
+Quando questo metodo viene restituito, questo parametro contiene i bit di ordine basso di un timestamp che indica quando è stata impostata la configurazione.
 
 </dd> <dt>
 
-*TimestampHigh* \[ out\]
+*TimestampHigh* \[ Cambio\]
 </dt> <dd>
 
-Quando questo metodo viene restituito, questo parametro contiene i bit più significativi di un timestamp che indica quando è stata impostata la configurazione.
+Quando questo metodo viene restituito, questo parametro contiene i bit più elevati di un timestamp che indica quando è stata impostata la configurazione.
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ Operazione completata
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                       |
-| Spazio dei nomi<br/>                | Radice \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

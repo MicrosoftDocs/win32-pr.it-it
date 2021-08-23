@@ -1,9 +1,9 @@
 ---
-title: Identificatori del tipo di supporto non compressi
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | Identificatori del tipo di supporto non compressi
+title: Identificatori dei tipi di supporti non compressi
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Identificatori dei tipi di supporti non compressi
 ms.assetid: 2ce10bf3-4829-40df-94c4-6cfd5c08208e
 keywords:
-- Formato Windows Media identificatori del tipo di supporto non compresso
+- Identificatori dei tipi di supporti non compressi in Formato windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff11ab8d7de42fe84ce309f6d0b7edd6fe303086
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ec9c1a20d664a821ac885364e2699588ff5a7f9d0171e9c87d689cd1df65e79f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585311"
 ---
-# <a name="uncompressed-media-type-identifiers"></a>Identificatori del tipo di supporto non compressi
+# <a name="uncompressed-media-type-identifiers"></a>Identificatori dei tipi di supporti non compressi
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

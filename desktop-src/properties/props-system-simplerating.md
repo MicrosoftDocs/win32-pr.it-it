@@ -1,19 +1,19 @@
 ---
-description: Sistema di classificazione che utilizza un intervallo di valori integer compreso tra 0 e 5.
+description: Sistema di classificazione che usa un intervallo di valori interi compreso tra 0 e 5.
 ms.assetid: 50353ba9-86dd-4172-91b4-1898c8fc5522
-title: System. SimpleRating
+title: System.SimpleRating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4741edd076b6027bc5f8dfbe3b2ff2a31374a7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74e13d7f65fb335aea6362509c20845bd1324b6e99d48f14cd9746f0237661f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598141"
 ---
-# <a name="systemsimplerating"></a>System. SimpleRating
+# <a name="systemsimplerating"></a>System.SimpleRating
 
-Sistema di classificazione che utilizza un intervallo di valori integer compreso tra 0 e 5.
+Sistema di classificazione che usa un intervallo di valori interi compreso tra 0 e 5.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,15 +33,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Per la compatibilità con il sistema di classificazione della shell di Windows Vista, il gestore delle proprietà deve anche popolare la proprietà [System. rating](./props-system-rating.md) con il mapping come descritto per la proprietà.
+Per garantire la compatibilità con il sistema di classificazione della shell Windows Vista, il gestore delle proprietà deve popolare anche la proprietà [System.Rating](./props-system-rating.md) con il mapping come descritto per tale proprietà.
 
-Usare la tabella seguente per eseguire la conversione da [System. rating](./props-system-rating.md) a [System. SimpleRating]().
+Usare la tabella seguente per eseguire la [conversione da System.Rating](./props-system-rating.md) [a System.SimpleRating.]()
 
 
 
-| System. rating | System. SimpleRating |
+| System.Rating | System.SimpleRating |
 |---------------|---------------------|
 | 0             | 0                   |
 | 1-12          | 1                   |
@@ -58,7 +58,7 @@ Usare la tabella seguente per eseguire la conversione da [System. rating](./prop
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,13 +67,13 @@ Usare la tabella seguente per eseguire la conversione da [System. rating](./prop
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -82,13 +82,13 @@ Usare la tabella seguente per eseguire la conversione da [System. rating](./prop
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

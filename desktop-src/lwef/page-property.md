@@ -1,19 +1,19 @@
 ---
-title: Proprietà Page
-description: Proprietà Page
+title: Proprietà pagina
+description: Proprietà pagina
 ms.assetid: c3cf07e9-a324-443b-a0c0-2fb80463548f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c51f55e4d1e9c7d2d23713810412060d915c7af
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63ca14a4f68c326d1b231aa106450fefc7607857576f817ffaa255fa27f2249b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601010"
 ---
-# <a name="page-property"></a>Proprietà Page
+# <a name="page-property"></a>Proprietà pagina
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,13 +27,13 @@ Restituisce o imposta la pagina visualizzata nella finestra delle proprietà di 
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintassi** 
 </dt> <dd>
 
-*agente * * *.* *  \[  =  *Stringa* PropertySheet.Page\]
+*agent***. PropertySheet.Page* *  \[  =  *stringa*\]
 
 
 
 | Parte     | Descrizione                                                                                                                                                                                                             |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *string* | Espressione stringa con uno dei valori seguenti. **"Sintesi vocale"** Visualizza la pagina di input vocale.<br/> **"Output"** Consente di visualizzare la pagina di output.<br/> **"Copyright"** Visualizza la pagina copyright.<br/> |
+| *string* | Espressione stringa con uno dei valori seguenti. **"Voce"** Visualizza la pagina Input vocale.<br/> **"Output"** Visualizza la pagina Output.<br/> **"Copyright"** Visualizza la pagina Copyright.<br/> |
 
 
 
@@ -43,7 +43,7 @@ Restituisce o imposta la pagina visualizzata nella finestra delle proprietà di 
 
 ## <a name="remarks"></a>Commenti
 
-Se non è installato alcun motore vocale, l'impostazione della **pagina** su **"speech"** non ha alcun effetto. Inoltre, la proprietà **Visible** della finestra deve essere impostata su **true** in modo che l'utente visualizzi la pagina.
+Se non è installato alcun motore di riconoscimento vocale, **l'impostazione di Pagina** **su "Voce"** non ha alcun effetto. Inoltre, la proprietà Visible della **finestra** deve essere impostata su **True** perché l'utente veda la pagina.
 
 > [!Note]  
 > L'utente può eseguire l'override di questa proprietà.

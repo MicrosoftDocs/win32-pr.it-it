@@ -1,19 +1,19 @@
 ---
-description: Quantità di spazio riempita come percentuale.
+description: Quantità di spazio riempita, come percentuale.
 ms.assetid: ea17d252-61ba-4c87-8568-af06cf64023a
-title: System. PercentFull
+title: System.PercentFull
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55880f5133b8bf244b93a7212aa2f1de7712be9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b6b2db135b1f27421022e935ef8896a51297ba6b067289dc788f41cf62553b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661870"
 ---
-# <a name="systempercentfull"></a>System. PercentFull
+# <a name="systempercentfull"></a>System.PercentFull
 
-Quantità di spazio riempita come percentuale.
+Quantità di spazio riempita, come percentuale.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 L'intervallo valido per questa proprietà è compreso tra 0 e 100.
 
@@ -41,7 +41,7 @@ L'intervallo valido per questa proprietà è compreso tra 0 e 100.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -50,13 +50,13 @@ L'intervallo valido per questa proprietà è compreso tra 0 e 100.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -65,13 +65,13 @@ L'intervallo valido per questa proprietà è compreso tra 0 e 100.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

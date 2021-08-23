@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Other-Settings
-description: Questo attributo a più valori viene usato per archiviare qualsiasi impostazione configurabile per il servizio DS archiviato nel formato del valore del nome.
+title: Attributo ms-DS-Other-Impostazioni
+description: Questo attributo a più valori viene usato per archiviare qualsiasi impostazione configurabile per i servizi di dominio archiviati nel formato NAME VALUE.
 ms.assetid: e7d17c8e-6264-43d1-9010-9d589f93a086
 ms.tgt_platform: multiple
 keywords:
-- attributo AD schema di AD di MS-DS-Other-Settings
-- msDS-Other-Settings attributo AD schema
+- Schema AD dell'attributo ms-DS-Other-Impostazioni
+- Schema AD dell'Impostazioni msDS-Other-Impostazioni
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3699ac7983f33730cb73bb0f1eab0c13e72cbce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d6a4e7a62313d905f5f26281bdc967631658d12eadd17ffbd4f4f3c1100db6ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551957"
 ---
-# <a name="ms-ds-other-settings-attribute"></a>attributo ms-DS-Other-Settings
+# <a name="ms-ds-other-settings-attribute"></a>Attributo ms-DS-Other-Impostazioni
 
-Questo attributo a più valori viene usato per archiviare qualsiasi impostazione configurabile per il servizio DS archiviato nel formato nome = valore.
+Questo attributo a più valori viene usato per archiviare qualsiasi impostazione configurabile per i servizi di dominio archiviati nel formato NAME=VALUE.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-altre impostazioni                        |
-| LDAP-Display-Name | msDS-Other-Settings                         |
+| CN                | ms-DS-Other-Impostazioni                        |
+| Ldap-Display-Name | msDS-Other-Impostazioni                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1621                     |
-| System-ID-GUID    | 79d2f34c-9d7d-42bb-838f-866b3e4400e2        |
+| System-Id-Guid    | 79d2f34c-9d7d-42bb-838f-866b3e4400e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -43,7 +43,7 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo a più valori viene usato per archiviare qualsiasi impostazione
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
+| Classi usate in        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

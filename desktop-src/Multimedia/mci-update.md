@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_UPDATE (mmsystem. h)
-description: Il \_ comando di aggiornamento MCI Aggiorna il rettangolo di visualizzazione. I dispositivi digitali video riconoscono questo comando.
+title: MCI_UPDATE comando (Mmsystem.h)
+description: Il comando MCI \_ UPDATE aggiorna il rettangolo di visualizzazione. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: 90a8c10f-61b9-49a1-bbcc-e0729aa8c454
 keywords:
-- Comando MCI_UPDATE Windows Multimedia
+- MCI_UPDATE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 423186096c88a8f1ff74987ff57c6b49dc6c3131
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e58333b108891a8bcd0e0548d4dcd0db2f2606d1259f0934f19b8f6804afab3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689681"
 ---
-# <a name="mci_update-command"></a>\_Comando di aggiornamento MCI
+# <a name="mci_update-command"></a>Comando MCI \_ UPDATE
 
-Il \_ comando di aggiornamento MCI Aggiorna il rettangolo di visualizzazione. I dispositivi digitali video riconoscono questo comando.
+Il comando MCI \_ UPDATE aggiorna il rettangolo di visualizzazione. I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
+Per inviare questo comando, chiamare la [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
 
 
 ```C++
@@ -46,56 +46,56 @@ MCIERROR mciSendCommand(
 <span id="wDeviceID"></span><span id="wdeviceid"></span><span id="WDEVICEID"></span>*wDeviceID*
 </dt> <dd>
 
-Identificatore del dispositivo MCI che deve ricevere il messaggio di comando.
+Identificatore di dispositivo del dispositivo MCI che deve ricevere il messaggio di comando.
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-**MCI \_ NOTIFICA**, **MCI \_ wait** o, per i dispositivi video digitali, **MCI \_ test**. Per informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+**MCI \_ NOTIFY,** **MCI \_ WAIT** o, per i dispositivi digital-video, **MCI \_ TEST**. Per informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpDest"></span><span id="lpdest"></span><span id="LPDEST"></span>*lpDest*
 </dt> <dd>
 
-Puntatore a una [**struttura \_ \_ parametri generica MCI**](mci-generic-parms.md) . I dispositivi con set di comandi estesi possono sostituire questa struttura con una struttura specifica del dispositivo.
+Puntatore a [**una struttura MCI \_ GENERIC \_ PARMS.**](mci-generic-parms.md) I dispositivi con set di comandi estesi potrebbero sostituire questa struttura con una struttura specifica del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Con il tipo di dispositivo "digitalvideo" vengono usati i flag aggiuntivi seguenti:
+I flag aggiuntivi seguenti vengono usati con il tipo di dispositivo "digitalvideo":
 
 <dl> <dt>
 
-<span id="MCI_DGV_UPDATE_HDC"></span><span id="mci_dgv_update_hdc"></span>\_ \_ aggiornamento HDC DGV \_ di MCI
+<span id="MCI_DGV_UPDATE_HDC"></span><span id="mci_dgv_update_hdc"></span>MCI \_ DGV \_ UPDATE \_ HDC
 </dt> <dd>
 
-Il membro **HDC** della struttura identificato da *lpDest* contiene una finestra valida del controller di dominio da disegnare. Questo flag è obbligatorio.
+Il **membro hDC** della struttura identificata da *lpDest* contiene una finestra valida del controller di dominio da disegnare. Questo flag è obbligatorio.
 
 </dd> <dt>
 
-<span id="MCI_DGV_RECT"></span><span id="mci_dgv_rect"></span>DGV di MCI \_ \_
+<span id="MCI_DGV_RECT"></span><span id="mci_dgv_rect"></span>MCI \_ DGV \_ RECT
 </dt> <dd>
 
-Il membro **RC** della struttura identificato da *lpUnfreeze* contiene un rettangolo di visualizzazione valido. Il rettangolo specifica il rettangolo di ridimensionamento rispetto al rettangolo client.
+Il **membro rc** della struttura identificata da *lpUnfreeze* contiene un rettangolo di visualizzazione valido. Il rettangolo specifica il rettangolo di ritaglio relativo al rettangolo client.
 
 </dd> <dt>
 
-<span id="MCI_DGV_UPDATE_PAINT"></span><span id="mci_dgv_update_paint"></span>\_ \_ disegno aggiornamento DGV \_ MCI
+<span id="MCI_DGV_UPDATE_PAINT"></span><span id="mci_dgv_update_paint"></span>MCI \_ DGV \_ UPDATE \_ PAINT
 </dt> <dd>
 
-Un'applicazione utilizza questo flag quando riceve un messaggio [**di \_ disegno WM**](/windows/desktop/gdi/wm-paint) destinato a un controller di dominio di visualizzazione. Un dispositivo buffer frame in genere disegna il colore della chiave. Se il dispositivo di visualizzazione non dispone di un buffer di frame, potrebbe ignorare il \_ comando di aggiornamento MCI quando viene usato il flag di **\_ \_ \_ disegno dell'aggiornamento DGV di MCI** , perché la visualizzazione verrà ridisegnata durante l'operazione di riproduzione.
+Un'applicazione usa questo flag quando riceve un [**messaggio WM \_ PAINT**](/windows/desktop/gdi/wm-paint) destinato a un controller di dominio di visualizzazione. Un dispositivo frame-buffer dipinge in genere il colore della chiave. Se il dispositivo di visualizzazione non dispone di un buffer di frame, potrebbe ignorare il comando MCI UPDATE quando viene usato il \_ flag **MCI \_ DGV \_ UPDATE \_ PAINT** perché la visualizzazione verrà ridisegnata durante l'operazione di riproduzione.
 
 </dd> </dl>
 
-Per i dispositivi digitali video, il parametro *lpDest* punta a una [**struttura \_ DGV \_ Update \_ parametri di MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_update_parms) .
+Per i dispositivi video digitali, il *parametro lpDest* punta a una [**struttura MCI \_ DGV \_ UPDATE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_update_parms)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,7 +105,7 @@ Per i dispositivi digitali video, il parametro *lpDest* punta a una [**struttura
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ Per i dispositivi digitali video, il parametro *lpDest* punta a una [**struttura
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandi MCI](mci-commands.md)

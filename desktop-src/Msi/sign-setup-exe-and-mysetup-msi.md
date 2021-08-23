@@ -1,19 +1,19 @@
 ---
-description: Prima di inserire Setup.exe e MySetup.msi nel server Web, è necessario firmare i file con il certificato digitale e la chiave privata, ovvero i file Cert. cer e cert. PVK, usando l'utilità SignTool.
+description: Prima di inserire Setup.exe e MySetup.msi nel server Web, è necessario firmare i file con il certificato digitale e la chiave privata, Mycert.cer e Mycert.pvk, usando l'utilità SignTool.
 ms.assetid: 0123c864-5d8f-4135-afea-9909faf3bb0f
-title: Firma Setup.exe e MySetup.msi
+title: Firmare Setup.exe e MySetup.msi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6034713baa8c01ec641c67e80c18b117383de5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b31c5e7fef94727038c6096caff4a4eb3ef57cd0bef8f7334d821f422597827a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628271"
 ---
-# <a name="sign-setupexe-and-mysetupmsi"></a>Firma Setup.exe e MySetup.msi
+# <a name="sign-setupexe-and-mysetupmsi"></a>Firmare Setup.exe e MySetup.msi
 
-Prima di inserire Setup.exe e MySetup.msi nel server Web, è necessario firmare i file con il certificato digitale e la chiave privata, ovvero i file Cert. cer e cert. PVK, usando l'utilità [SignTool](../seccrypto/signtool.md) . Per ulteriori informazioni sull'utilizzo dell'utilità SignTool, vedere la Guida di [riferimento agli strumenti CryptoAPI](../seccrypto/cryptoapi-tools-reference.md) in Microsoft Windows Software Development Kit (SDK).
+Prima di inserire Setup.exe e MySetup.msi nel server Web, è necessario firmare i file con il certificato digitale e la chiave privata, Mycert.cer e Mycert.pvk, usando l'utilità [SignTool.](../seccrypto/signtool.md) Per altre informazioni sull'uso dell'utilità SignTool, vedere Informazioni di riferimento sugli strumenti [CryptoAPI](../seccrypto/cryptoapi-tools-reference.md) in Microsoft Windows Software Development Kit (SDK).
 
 [Continua](establish-an-html-reference-to-setup-exe.md)
 

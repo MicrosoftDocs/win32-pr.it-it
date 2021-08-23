@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 8304184f3323feb92a14b523dc629c6ae45f6a85
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: abf157a8a539d98c5b75826e4568df7c3209a0efc2dab49f6487250dd08ae391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707371"
 ---
 # <a name="iportabledevicevaluescollectiongetcount-method"></a>Metodo IPortableDeviceValuesCollection::GetCount
 

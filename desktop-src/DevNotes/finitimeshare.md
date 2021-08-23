@@ -1,7 +1,7 @@
 ---
 description: Inizializza la condivisione IME.
 ms.assetid: 7f58564e-d660-4936-b74c-af4eb93e2442
-title: FInitIMEShare (funzione)
+title: Funzione FInitIMEShare
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 0724bb6cb9e44dc86699a66da37616050ce54e18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 178b39c67d12473663eb93bc300651341a9c459c19680218fa2c6f7a939c688c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691381"
 ---
-# <a name="finitimeshare-function"></a>FInitIMEShare (funzione)
+# <a name="finitimeshare-function"></a>Funzione FInitIMEShare
 
 Inizializza la condivisione IME.
 
@@ -39,13 +39,13 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso contrario.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE in caso **contrario.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-Questa funzione deve essere chiamata prima che vengano chiamate altre funzioni di condivisione IME.
+Questa funzione deve essere chiamata prima di qualsiasi altra funzione di condivisione IME.
 
 ## <a name="requirements"></a>Requisiti
 

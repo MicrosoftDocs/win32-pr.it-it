@@ -1,19 +1,19 @@
 ---
-description: Classificazione padre archiviata in un formato generalmente determinato dall'organizzazione denominata in System. ParentalRatingsOrganization.
+description: Classificazione dei genitori archiviata in un formato in genere determinato dall'organizzazione denominata in System.ParentalRatingsOrganization.
 ms.assetid: db5fb8a2-719f-4bef-9ab1-0856945ed240
-title: System. ParentalRating
+title: System.ParentalRating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3775c487921c6987810ba09f3b3ee94f60e91145
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bd27f3fd3377e60d4fa517fbd5704d6abd25a2e3a2b568ccf2718db93f173a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596821"
 ---
-# <a name="systemparentalrating"></a>System. ParentalRating
+# <a name="systemparentalrating"></a>System.ParentalRating
 
-Classificazione padre archiviata in un formato generalmente determinato dall'organizzazione denominata in [System. ParentalRatingsOrganization](./props-system-parentalratingsorganization.md).
+Classificazione dei genitori archiviata in un formato in genere determinato dall'organizzazione denominata in [System.ParentalRatingsOrganization](./props-system-parentalratingsorganization.md).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,9 +32,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Questa stringa viene visualizzata direttamente all'utente, quindi è consigliabile usare le parole semplici da usare. Ad esempio, "R-Restricted" quando si basano le classificazioni sul sistema di classificazione del Motion Picture Association of America (MPAA).
+Questa stringa viene visualizzata direttamente all'utente, quindi è consigliabile usare formulazioni di facile utilizzo. Ad esempio, "R-Restricted" quando si basano le classificazioni sul sistema di classificazione MPAA (Motion Picture Association of America).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,13 +49,13 @@ Questa stringa viene visualizzata direttamente all'utente, quindi è consigliabi
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -64,7 +64,7 @@ Questa stringa viene visualizzata direttamente all'utente, quindi è consigliabi
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

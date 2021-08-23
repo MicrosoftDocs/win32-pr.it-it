@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c8115ed3d9795720796b5f944c11a519ff366983
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 827a82bf76fe78b86f97efa3aa01e0ae1106cd81430952b5d5b2849b5b3dd492
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547431"
 ---
-# <a name="create-method-of-the-win32_baseservice-class"></a>Metodo Create della classe Win32 \_ BaseService
+# <a name="create-method-of-the-win32_baseservice-class"></a>Metodo Create della classe BaseService Win32 \_
 
-Il metodo **create** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuovo servizio. Il parametro *LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo dell'ordine di caricamento, in quanto i servizi sono dipendenti tra loro. Per il corretto funzionamento di questi servizi dipendenti è necessaria la presenza dei servizi precedenti.
+Il **metodo Crea** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuovo servizio. Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo di ordini di caricamento, in quanto i servizi dipendono l'uno dall'altro. Questi servizi dipendenti richiedono la presenza dei servizi di riferimento per il corretto funzionamento.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,34 +53,34 @@ uint32 Create(
 
 <dl> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
-Nome del servizio da installare nel metodo **create** . La lunghezza massima della stringa è 256 caratteri. Il database di gestione controllo servizi conserva la distinzione tra maiuscole e minuscole dei caratteri, ma i confronti tra nomi di servizio non fanno distinzione tra maiuscole e minuscole. Le barre (/) e le barre rovesciate doppie ( \\ ) non sono caratteri validi per il nome del servizio.
+Nome del servizio da installare nel **metodo Create.** La lunghezza massima della stringa è di 256 caratteri. Il database di Gestione controllo servizi mantiene la distinzione tra maiuscole e minuscole dei caratteri, ma nei confronti dei nomi di servizio non viene sempre fatto distinzione tra maiuscole e minuscole. Le barre (/) e le doppie barre rovesciata ( \\ ) sono caratteri del nome di servizio non validi.
 
 </dd> <dt>
 
-*DisplayName* \[ in\]
+*DisplayName* \[ Pollici\]
 </dt> <dd>
 
-Nome visualizzato del servizio. La lunghezza massima della stringa è di 256 caratteri. Il nome viene mantenuto con la distinzione tra maiuscole e minuscole in Gestione controllo servizi. I confronti *DisplayName* sono sempre senza distinzione tra maiuscole e minuscole.
+Nome visualizzato del servizio. La lunghezza massima della stringa è di 256 caratteri. Il nome viene mantenuto senza distinzione tra maiuscole e minuscole in Gestione controllo servizi. *Per i confronti displayName* non viene sempre fatto distinzione tra maiuscole e minuscole.
 
-Constraints: accetta lo stesso valore del parametro *Name* .
+Vincoli: accetta lo stesso valore del *parametro* Name.
 
-Esempio: "ATDISK".
+Esempio: "Atdisk".
 
 </dd> <dt>
 
-*Nome percorso* \[ in\]
+*PathName* \[ Pollici\]
 </dt> <dd>
 
 Percorso completo del file eseguibile che implementa il servizio.
 
-Esempio: " \\ systemroot \\ system32 \\ drivers \\afd.sys".
+Esempio: \\ "SystemRoot \\ System32 \\ drivers \\afd.sys".
 
 </dd> <dt>
 
-*ServiceType* \[ in\]
+*ServiceType* \[ Pollici\]
 </dt> <dd>
 
 Tipo di servizi forniti ai processi che li chiamano. Il valore è una bitmap.
@@ -96,7 +96,7 @@ Tipo di servizi forniti ai processi che li chiamano. Il valore è una bitmap.
 
 <span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>
 
-<span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>**Driver del file System** (2)
+<span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>**Driver del file system** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -110,7 +110,7 @@ Tipo di servizi forniti ai processi che li chiamano. Il valore è una bitmap.
 
 <span id="Recognizer_Driver"></span><span id="recognizer_driver"></span><span id="RECOGNIZER_DRIVER"></span>
 
-<span id="Recognizer_Driver"></span><span id="recognizer_driver"></span><span id="RECOGNIZER_DRIVER"></span>**Driver di riconoscimento** (8)
+<span id="Recognizer_Driver"></span><span id="recognizer_driver"></span><span id="RECOGNIZER_DRIVER"></span>**Recognizer Driver** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -141,10 +141,10 @@ Processo interattivo
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*ErrorControl* \[ in\]
+*ErrorControl* \[ Pollici\]
 </dt> <dd>
 
-Gravità dell'errore se non è possibile avviare il metodo **create** . Il valore indica l'azione eseguita dal programma di avvio in caso di errore. Tutti gli errori vengono registrati dal sistema.
+Gravità dell'errore se **l'avvio del metodo Create** non riesce. Il valore indica l'azione eseguita dal programma di avvio in caso di errore. Tutti gli errori vengono registrati dal sistema.
 
 <dt>
 
@@ -188,20 +188,20 @@ Il sistema viene riavviato con l'ultima configurazione valida nota.
 
 </dt> <dd>
 
-Il sistema tenta di iniziare con una configurazione corretta.
+Il sistema tenta di iniziare con una buona configurazione.
 
 </dd> </dl> </dd> <dt>
 
-*StartMode* \[ in\]
+*StartMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
 <span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>
 
-<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>Avvio **avvio** ("avvio")
+<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>**Avvio ("Avvio")**
 
 
 </dt> <dd>
@@ -212,7 +212,7 @@ Driver di dispositivo avviato dal caricatore del sistema operativo. Questo valor
 
 <span id="System_Start"></span><span id="system_start"></span><span id="SYSTEM_START"></span>
 
-<span id="System_Start"></span><span id="system_start"></span><span id="SYSTEM_START"></span>**Avvio del sistema** ("sistema")
+<span id="System_Start"></span><span id="system_start"></span><span id="SYSTEM_START"></span>**Avvio del sistema** ("Sistema")
 
 
 </dt> <dd>
@@ -223,7 +223,7 @@ Driver di dispositivo avviato dal processo di inizializzazione del sistema opera
 
 <span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>
 
-<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("automatico")
+<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("Automatico")
 
 
 </dt> <dd>
@@ -239,13 +239,13 @@ Servizio da avviare automaticamente da Gestione controllo servizi durante l'avvi
 
 </dt> <dd>
 
-Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il metodo [**StartService**](startservice-method-in-class-win32-service.md) .
+Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il [**metodo StartService.**](startservice-method-in-class-win32-service.md)
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("disabilitato")
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("Disabilitato")
 
 
 </dt> <dd>
@@ -254,47 +254,47 @@ Servizio che non può più essere avviato.
 
 </dd> </dl> </dd> <dt>
 
-*DesktopInteract* \[ in\]
+*DesktopInteract* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, il servizio può creare o comunicare con Windows sul desktop.
+Se **true,** il servizio può creare o comunicare con le finestre sul desktop.
 
 </dd> <dt>
 
-*StartName* \[ in\]
+*StartName* \[ Pollici\]
 </dt> <dd>
 
-Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato "NomeDominio \\ nomeutente". Il processo del servizio viene registrato utilizzando una di queste due forme durante l'esecuzione. Se l'account appartiene al dominio predefinito, ". \\ Nome utente "può essere specificato. Se viene specificato **null** , il servizio viene connesso come account LocalSystem. Per i driver del kernel o a livello di sistema, *StartName* contiene il nome dell'oggetto driver, ovvero \\ filesystem \\ RDR o \\ driver XNS, \\ usato dal sistema di input e output (i/O) per caricare il driver di dispositivo. Se viene specificato **null** , il driver viene eseguito con un nome di oggetto predefinito creato dal sistema i/O in base al nome del servizio. Esempio: amministratore di DWDOM \\ .
+Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato \\ "NomeDominioUtente". Il processo del servizio viene registrato usando uno di questi due moduli durante l'esecuzione. Se l'account appartiene al dominio predefinito, ". \\ Username" può essere specificato. Se **viene specificato NULL,** il servizio viene connesso come account LocalSystem. Per un driver a livello di kernel o di sistema, *StartName* contiene il nome dell'oggetto driver ,ovvero FileSystem Rdr o Driver Xns, utilizzato dal sistema di \\ input e output \\ \\ (I/O) per caricare il driver di \\ dispositivo. Se **viene specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio. Esempio: Amministratore \\ DWDOM.
 
 </dd> <dt>
 
-*StartPassword* \[ in\]
+*StartPassword* \[ Pollici\]
 </dt> <dd>
 
-Password per il nome dell'account specificato dal parametro *StartName* . Specificare **null** se non si sta modificando la password. Specificare una stringa vuota se il servizio non dispone di password.
+Password per il nome dell'account specificato dal *parametro StartName.* Specificare **NULL** se non si modifica la password. Specificare una stringa vuota se il servizio non dispone di password.
 
 </dd> <dt>
 
-*LoadOrderGroup* \[ in\]
+*LoadOrderGroup* \[ Pollici\]
 </dt> <dd>
 
-Nome del gruppo associato al nuovo servizio. I gruppi dell'ordine di caricamento sono contenuti nel registro di sistema e determinano la sequenza in cui i servizi vengono caricati nel sistema operativo. Se il puntatore è **null** o se punta a una stringa vuota, il servizio non appartiene a un gruppo. Le dipendenze tra i gruppi devono essere elencate nel parametro *LoadOrderGroupDependencies* . I servizi nell'elenco di gruppi per l'ordine di caricamento vengono avviati per primi, seguiti da servizi nei gruppi non inclusi nell'elenco del gruppo di ordini di carico, seguiti da servizi che non appartengono a un gruppo. Nel registro di sistema è presente un elenco di gruppi di ordini di carico disponibili in:
+Nome del gruppo associato al nuovo servizio. I gruppi degli ordini di caricamento sono contenuti nel Registro di sistema e determinano la sequenza in cui i servizi vengono caricati nel sistema operativo. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non appartiene a un gruppo. Le dipendenze tra gruppi devono essere elencate nel *parametro LoadOrderGroupDependencies.* I servizi nell'elenco dei gruppi di ordinamento del carico vengono avviati per primi, seguiti dai servizi in gruppi non presenti nell'elenco dei gruppi di ordinamento del carico, seguiti dai servizi che non appartengono a un gruppo. Il Registro di sistema include un elenco di gruppi di ordinamento del carico disponibili in:
 
-**HKEY \_ Controllo CurrentControlSet del sistema del \_ computer locale** \\  \\  \\  \\ **ServiceGroupOrder**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
-*LoadOrderGroupDependencies* \[ in\]
+*LoadOrderGroupDependencies* \[ Pollici\]
 </dt> <dd>
 
-Matrice di gruppi di ordini di caricamento che devono iniziare prima del servizio. Ogni elemento nella matrice è delimitato da **null** e l'elenco viene terminato da due valori **null** . In Visual Basic o script è possibile passare un vbArray. Se il puntatore è **null** o se punta a una stringa vuota, il servizio non ha dipendenze. I nomi dei gruppi devono essere preceduti dall' \_ identificatore del gruppo SC \_ (definito nel file winsvc. h) per distinguerlo dal nome del servizio, perché i servizi e i gruppi di servizi condividono lo stesso spazio dei nomi. La dipendenza da un gruppo significa che questo servizio può essere eseguito se almeno un membro del gruppo è in esecuzione dopo un tentativo di avviare tutti i membri del gruppo.
+Matrice di gruppi di ordinamento del carico che devono essere avviati prima di questo servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic o nello script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. I nomi dei gruppi devono essere preceduti dal carattere SC GROUP IDENTIFIER (definito nel \_ file Winsvc.h) per differenziarlo da un nome di servizio, perché i servizi e i gruppi di servizi condividono lo stesso spazio \_ dei nomi. La dipendenza da un gruppo indica che questo servizio può essere eseguito se almeno un membro del gruppo è in esecuzione dopo un tentativo di avviare tutti i membri del gruppo.
 
 </dd> <dt>
 
-*ServiceDependencies* \[ in\]
+*Dipendenze dei servizi* \[ Pollici\]
 </dt> <dd>
 
-Matrice che contiene i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento nella matrice è delimitato da **null** e l'elenco viene terminato da due valori **null** . In Visual Basic o script è possibile passare un vbArray. Se il puntatore è **null** o se punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che questo servizio può essere eseguito solo se è in esecuzione il servizio da cui dipende.
+Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic o nello script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che questo servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
 
 </dd> </dl>
 
@@ -354,7 +354,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 
 5
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -367,7 +367,7 @@ Il servizio non è stato avviato.
 
 </dd> <dt>
 
-**Timeout richiesta servizio**
+**Timeout della richiesta di servizio**
 </dt> <dd>
 
 7
@@ -390,7 +390,7 @@ Processo interattivo.
 
 9
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -412,7 +412,7 @@ Il database a cui aggiungere il nuovo servizio è bloccato.
 
 </dd> <dt>
 
-**Dipendenza servizio eliminata**
+**Dipendenza del servizio eliminata**
 </dt> <dd>
 
 12
@@ -453,11 +453,11 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 
 16
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
-**Servizio senza thread**
+**Nessun thread del servizio**
 </dt> <dd>
 
 17
@@ -466,7 +466,7 @@ Nessun thread di esecuzione per il servizio.
 
 </dd> <dt>
 
-**Stato dipendenza circolare**
+**Dipendenza circolare dello stato**
 </dt> <dd>
 
 18
@@ -475,7 +475,7 @@ All'avvio del servizio sono state rilevate dipendenze circolari.
 
 </dd> <dt>
 
-**Stato nome duplicato**
+**Nome duplicato dello stato**
 </dt> <dd>
 
 19
@@ -484,7 +484,7 @@ All'avvio del servizio sono state rilevate dipendenze circolari.
 
 </dd> <dt>
 
-**Stato nome non valido**
+**Stato Nome non valido**
 </dt> <dd>
 
 20
@@ -493,25 +493,25 @@ Il nome del servizio contiene caratteri non validi.
 
 </dd> <dt>
 
-**Stato parametro non valido**
+**Parametro stato non valido**
 </dt> <dd>
 
 21
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
-**Stato account del servizio non valido**
+**Stato Account del servizio non valido**
 </dt> <dd>
 
 22
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui eseguire il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
-**Il servizio stato esiste**
+**Il servizio di stato esiste**
 </dt> <dd>
 
 23
@@ -545,7 +545,7 @@ Il servizio è attualmente sospeso nel sistema.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -557,7 +557,7 @@ Il servizio è attualmente sospeso nel sistema.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> </dl>
 
  

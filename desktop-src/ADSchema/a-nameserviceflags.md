@@ -1,10 +1,10 @@
 ---
 title: Attributo Name-Service-Flags
-description: Flag di configurazione per il servizio di nomi RPC.
+description: Flag di configurazione per il servizio nomi RPC.
 ms.assetid: f32cd2fb-4a0a-4a1b-873b-3e4d893f80cd
 ms.tgt_platform: multiple
 keywords:
-- Nome-Service-flag attributo AD schema
+- Schema AD dell'attributo Name-Service-Flags
 - Schema AD dell'attributo nameServiceFlags
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98e0b8bec096a8dce43df7bb71658c90bbfd98a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cdd2ec0a986a1408ba3631634c6cc85ca8007b9588224a7be65b499766f83558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442671"
 ---
 # <a name="name-service-flags-attribute"></a>Attributo Name-Service-Flags
 
-Flag di configurazione per il servizio di nomi RPC.
+Flag di configurazione per il servizio nomi RPC.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Name-Service-Flags                   |
-| LDAP-Display-Name | nameServiceFlags                     |
+| Ldap-Display-Name | nameServiceFlags                     |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.753               |
-| System-ID-GUID    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
+| System-Id-Guid    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Flag di configurazione per il servizio di nomi RPC.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Contenitore RPC**](c-rpccontainer.md)<br/> |
+| Classi usate in        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 

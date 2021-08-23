@@ -1,9 +1,9 @@
 ---
-title: MCI_MAKE_MSF macro (Mciapi. h)
-description: La \_ macro MCI make \_ MSF crea un valore di ora in formato minuti/secondi/frame (MSF) compresso dai valori di minuti, secondi e frame specificati.
+title: MCI_MAKE_MSF macro (Mciapi.h)
+description: La macro MCI MAKE MSF crea un valore temporale in formato \_ \_ MSF (Packed Minutes/Seconds/Frames) dai valori di minuti, secondi e fotogrammi specificati.
 ms.assetid: 8c981d84-b049-4448-a820-bff30896065e
 keywords:
-- MCI_MAKE_MSF macro Windows Multimedia
+- MCI_MAKE_MSF macro Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae7e8566986337d6b9b5161c85bcc62cecc52be0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e16f5cfa2b99f7bdbd7eb3029b3f0186904d8b8e94f455614464fadc98cdd20a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690131"
 ---
-# <a name="mci_make_msf-macro"></a>MCI \_ creare una \_ macro MSF
+# <a name="mci_make_msf-macro"></a>Macro MCI \_ MAKE \_ MSF
 
-La macro **MCI \_ make \_ MSF** crea un valore di ora in formato minuti/secondi/frame (MSF) compresso dai valori di minuti, secondi e frame specificati.
+La macro **MCI \_ MAKE \_ MSF** crea un valore temporale in formato MSF (Packed Minutes/Seconds/Frames) dai valori di minuti, secondi e fotogrammi specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ DWORD MCI_MAKE_MSF(
 
 <dl> <dt>
 
-*minuti* 
+*Minuti* 
 </dt> <dd>
 
 Numero di minuti.
@@ -65,13 +65,13 @@ Numero di frame.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'ora nel formato MSF compresso.
+Restituisce l'ora in formato MSF imballato.
 
 ## <a name="remarks"></a>Commenti
 
-L'ora nel formato MSF è espressa come valore **DWORD** con il byte meno significativo che contiene minuti, il successivo byte meno significativo contenente i secondi e il successivo byte meno significativo contenente i frame. Il byte più significativo è inutilizzato.
+L'ora in formato MSF viene espressa come valore **DWORD** con il byte meno significativo contenente minuti, il byte meno significativo successivo contenente i secondi e il byte meno significativo successivo contenente frame. Il byte più significativo è inutilizzato.
 
-La macro **MCI \_ make \_ MSF** viene definita nel modo seguente:
+La macro **MCI \_ MAKE \_ MSF** è definita come segue:
 
 
 ```C++
@@ -90,7 +90,7 @@ La macro **MCI \_ make \_ MSF** viene definita nel modo seguente:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ La macro **MCI \_ make \_ MSF** viene definita nel modo seguente:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Macro MCI](mci-macros.md)

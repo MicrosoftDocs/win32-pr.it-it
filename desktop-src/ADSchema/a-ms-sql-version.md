@@ -1,11 +1,11 @@
 ---
-title: Attributo MS-SQL-version
+title: Attributo MS-SQL-Version
 description: Versione per l'istanza corrente di SQL Server.
 ms.assetid: 0003892c-906d-429b-bc98-bbc441b2d58b
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo MS-SQL-version
-- Schema di AD dell'attributo mS-SQL-version
+- Schema AD dell'attributo MS-SQL-Version
+- Schema AD dell'attributo mS-SQL-Version
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 446a436a30311f5696d8ed63334b0cf796eb2767
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5c79b760ab72feffc455fc2c40de807b38a15ed3a0a709fcfcb8d0ce79c20c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583231"
 ---
-# <a name="ms-sql-version-attribute"></a>Attributo MS-SQL-version
+# <a name="ms-sql-version-attribute"></a>Attributo MS-SQL-Version
 
 Versione per l'istanza corrente di SQL Server.
 
@@ -29,13 +29,13 @@ Versione per l'istanza corrente di SQL Server.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-versione                              |
-| LDAP-Display-Name | mS-SQL-versione                              |
+| CN                | MS-SQL-Version                              |
+| Ldap-Display-Name | mS-SQL-Version                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
-| Frequenza di aggiornamento  | Durante l'installazione del sistema.                            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Frequenza di aggiornamento  | Al momento dell'installazione del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1388                     |
-| System-ID-GUID    | c07cc1d0-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | c07cc1d0-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Versione per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Vero                                                                                                                          |
 | Nel catalogo globale      | Vero                                                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 

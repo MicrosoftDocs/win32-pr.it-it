@@ -1,25 +1,25 @@
 ---
-description: Le costanti seguenti vengono usate dalle applicazioni o dai framework dell'interfaccia utente per identificare il modo in cui viene elaborato il feedback dell'interfaccia utente quando viene rilevato uno dei movimenti penna elencati.
+description: Le costanti seguenti vengono usate dalle applicazioni o dai framework dell'interfaccia utente per identificare la modalità di elaborazione del feedback dell'interfaccia utente quando viene rilevato uno dei movimenti della penna elencati.
 ms.assetid: 434DC272-DC1C-4091-BB38-DDCB1A635D8D
-title: Visualizzazione penna (winuser. h)
+title: Visualizzazione penna (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e9a09aa8892647315eccbb1e8b3ca443e01c1ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60b9f75493a361cc167b65fba1783bc01f909d76211b1076e2faccc2e6f00116
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548491"
 ---
 # <a name="pen-visualization"></a>Visualizzazione penna
 
-Le costanti seguenti vengono usate dalle applicazioni o dai framework dell'interfaccia utente per identificare il modo in cui viene elaborato il feedback dell'interfaccia utente quando viene rilevato uno dei movimenti penna elencati.
+Le costanti seguenti vengono usate dalle applicazioni o dai framework dell'interfaccia utente per identificare la modalità di elaborazione del feedback dell'interfaccia utente quando viene rilevato uno dei movimenti della penna elencati.
 
-Queste costanti vengono usate con i parametri **SPI \_ GETPENVISUALIZATION** e **SPI \_ SETPENVISUALIZATION** e la funzione [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) .
+Queste costanti vengono usate con i parametri **SPI \_ GETPENNTASSI** e **SPI \_ SETPENMETRIC** e la [**funzione SystemParametersInfo.**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
 
 <dl> <dt>
 
-<span id="PENVISUALIZATION_OFF"></span><span id="penvisualization_off"></span>**PENVISUALIZATION \_ disattivato**
+<span id="PENVISUALIZATION_OFF"></span><span id="penvisualization_off"></span>**\_PENVISUALIZZAZIONE DISATTIVATA**
 </dt> <dd> <dl> <dt>
 
 0x0000
@@ -27,12 +27,12 @@ Queste costanti vengono usate con i parametri **SPI \_ GETPENVISUALIZATION** e *
 
 
 
-Specifica che il feedback dell'interfaccia utente per tutti i movimenti di penna è disattivato.
+Specifica che il feedback dell'interfaccia utente per tutti i movimenti della penna è disattivato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PENVISUALIZATION_ON"></span><span id="penvisualization_on"></span>**PENVISUALIZATION \_**
+<span id="PENVISUALIZATION_ON"></span><span id="penvisualization_on"></span>**\_PENVISUALIZZAZIONE ON**
 </dt> <dd> <dl> <dt>
 
 0x0023
@@ -40,12 +40,12 @@ Specifica che il feedback dell'interfaccia utente per tutti i movimenti di penna
 
 
 
-Specifica che il feedback dell'interfaccia utente per tutti i movimenti di penna è on.
+Specifica che il feedback dell'interfaccia utente per tutti i movimenti della penna è on.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PENVISUALIZATION_TAP"></span><span id="penvisualization_tap"></span>**\_tocco PENVISUALIZATION**
+<span id="PENVISUALIZATION_TAP"></span><span id="penvisualization_tap"></span>**TOCCO \_ PENVISUALIZZAZIONE**
 </dt> <dd> <dl> <dt>
 
 0x0001
@@ -53,12 +53,12 @@ Specifica che il feedback dell'interfaccia utente per tutti i movimenti di penna
 
 
 
-Specifica il feedback dell'interfaccia utente per un tocco della penna.
+Specifica il feedback dell'interfaccia utente per il tocco con penna.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PENVISUALIZATION_DOUBLETAP"></span><span id="penvisualization_doubletap"></span>**\_DOUBLETAP PENVISUALIZATION**
+<span id="PENVISUALIZATION_DOUBLETAP"></span><span id="penvisualization_doubletap"></span>**PEN KPI \_ DOUBLETAP**
 </dt> <dd> <dl> <dt>
 
 0x0002
@@ -66,12 +66,12 @@ Specifica il feedback dell'interfaccia utente per un tocco della penna.
 
 
 
-Specifica il feedback dell'interfaccia utente per un tocco di penna doppio.
+Specifica il feedback dell'interfaccia utente per un doppio tocco della penna.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PENVISUALIZATION_CURSOR"></span><span id="penvisualization_cursor"></span>**\_cursore PENVISUALIZATION**
+<span id="PENVISUALIZATION_CURSOR"></span><span id="penvisualization_cursor"></span>**\_PENVISUALIZZAZIONE CURSORE**
 </dt> <dd> <dl> <dt>
 
 0x0020
@@ -79,7 +79,7 @@ Specifica il feedback dell'interfaccia utente per un tocco di penna doppio.
 
 
 
-Specifica il feedback dell'interfaccia utente per il cursore della penna.
+Specifica il feedback dell'interfaccia utente per il cursore penna.
 
 
 </dt> </dl> </dd> </dl>
@@ -90,9 +90,9 @@ Specifica il feedback dell'interfaccia utente per il cursore della penna.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                          |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 
@@ -103,13 +103,13 @@ Specifica il feedback dell'interfaccia utente per il cursore della penna.
 [Costanti di configurazione](configuration-constants.md)
 </dt> <dt>
 
-[**Visualizzazione contatto**](contact-visualization.md)
+[**Visualizzazione dei contatti**](contact-visualization.md)
 </dt> <dt>
 
-[**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
+[**Systemparametersinfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
 </dt> <dt>
 
-[Configurazione feedback input](/previous-versions/windows/desktop/input_feedback/input-feedback-configuration-portal)
+[Configurazione dei commenti e suggerimenti sull'input](/previous-versions/windows/desktop/input_feedback/input-feedback-configuration-portal)
 </dt> </dl>
 
  

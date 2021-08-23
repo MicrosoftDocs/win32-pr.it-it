@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_RECT (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una \_ struttura Rect D3D12.
+title: CD3DX12_RECT struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura D3D12 \_ RECT.
 ms.assetid: FBF01294-1448-4D9A-BA6B-27D5D59C2958
 keywords:
-- Struttura CD3DX12_RECT
+- CD3DX12_RECT struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e6d8c133f14b531433ceb2239377ea85ba212af
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bff9df3a4c7df2f30e9614b16d5f8b89ea1b6f0279a1566b206cabef7260fb28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729341"
 ---
-# <a name="cd3dx12_rect-structure"></a>\_Struttura Rect CD3DX12
+# <a name="cd3dx12_rect-structure"></a>Struttura RECT CD3DX12 \_
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura [**\_ Rect D3D12**](d3d12-rect.md) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura D3D12 \_ RECT.**](d3d12-rect.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,46 +45,46 @@ struct CD3DX12_RECT  : public D3D12_RECT{
 
 <dl> <dt>
 
-**CD3DX12 \_ Rect ()**
+**CD3DX12 \_ RECT()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ rettangolo CD3DX12.
+Crea una nuova istanza non inizializzata di un oggetto CD3DX12 \_ RECT.
 
 </dd> <dt>
 
-**Explicit CD3DX12 \_ Rect (const D3D12 \_ Rect& o)**
+**EXPLICIT CD3DX12 \_ RECT(const D3D12 \_ RECT& o)**
 </dt> <dd>
 
-Crea una nuova istanza di un oggetto CD3DX12 \_ Rect, inizializzato con il contenuto di un'altra struttura [**\_ Rect di D3D12**](d3d12-rect.md) .
+Crea una nuova istanza di un oggetto CD3DX12 RECT, inizializzato con il contenuto di \_ [**un'altra struttura RECT D3D12. \_**](d3d12-rect.md)
 
 </dd> <dt>
 
-**Rect CD3DX12 esplicito \_ (Long Left, Long Top, Long Right, Long Bottom)**
+**EXPLICIT CD3DX12 \_ RECT(LONG Left, LONG Top, LONG Right, LONG Bottom)**
 </dt> <dd>
 
-Crea una nuova istanza di un oggetto CD3DX12 \_ Rect, inizializzando i parametri seguenti:
+Crea una nuova istanza di un oggetto CD3DX12 \_ RECT, inizializzando i parametri seguenti:
 
-LONG Left
+LONG A sinistra
 
-Inizio lungo
+LONG Top
 
-LUNGO a destra
+LONG Right
 
-LUNGO in basso
+LONG In basso
 
 </dd> <dt>
 
-**~ CD3DX12 \_ Rect ()**
+**~CD3DX12 \_ RECT()**
 </dt> <dd>
 
-Elimina un'istanza di un CD3DX12 \_ Rect.
+Elimina un'istanza di un oggetto CD3DX12 \_ RECT.
 
 </dd> <dt>
 
-**operatore const D3D12 \_ RECT& () const**
+**operator const D3D12 \_ RECT&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**D3D12 \_ Rect**](d3d12-rect.md)
+[**D3D12 \_ RECT**](d3d12-rect.md)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

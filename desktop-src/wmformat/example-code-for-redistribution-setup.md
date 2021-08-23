@@ -4,29 +4,29 @@ description: Codice di esempio per l'installazione della ridistribuzione
 ms.assetid: 480f0da7-68c1-4144-a623-47578ae54acb
 keywords:
 - Windows Media Format SDK, ridistribuzione software
-- ASF (Advanced Systems Format), ridistribuzione del software
-- ASF (formato avanzato dei sistemi), ridistribuzione del software
+- Advanced Systems Format (ASF), ridistribuzione software
+- ASF (Advanced Systems Format),ridistribuzione software
 - Windows Media Format SDK, ridistribuzione
-- ASF (Advanced Systems Format), ridistribuzione
-- ASF (formato avanzato dei sistemi), ridistribuzione
-- ridistribuzione del software, codice di esempio
-- ridistribuzione del software, esempi di codice
+- Advanced Systems Format (ASF), ridistribuzione
+- ASF (Advanced Systems Format),ridistribuzione
+- ridistribuzione software,codice di esempio
+- ridistribuzione software, esempi di codice
 - ridistribuzione, codice di esempio
 - ridistribuzione, esempi di codice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9990b617ed9c3492c0565b794798412f8e8373
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a845f6c4ec66f2858756071a3e0260cb812c665a2b5b4effa063369bc894abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586071"
 ---
 # <a name="example-code-for-redistribution-setup"></a>Codice di esempio per l'installazione della ridistribuzione
 
-Quando si include il pacchetto di ridistribuzione nell'applicazione, è possibile utilizzare il flag/Q: A quando si richiama il pacchetto di ridistribuzione nella routine di installazione. Viene così evitata l'interfaccia utente (UI).
+Quando si include il pacchetto di ridistribuzione nell'applicazione, è possibile usare il flag /Q:A quando si richiama il pacchetto di ridistribuzione nella routine di installazione. In questo modo viene eliminata l'interfaccia utente.
 
-Il codice di esempio seguente può essere utilizzato nella routine di installazione per eseguire i pacchetti di ridistribuzione in modalità non interattiva e inviare una notifica alla routine di installazione quando il computer deve essere riavviato.
+Il codice di esempio seguente può essere usato nella routine di installazione per eseguire i pacchetti di ridistribuzione in modalità non interattiva e inviare una notifica alla routine di installazione quando è necessario riavviare il computer.
 
 
 ```C++
@@ -214,9 +214,9 @@ BOOL SystemNeedsReboot( void )
 [**Ridistribuzione del software**](software-redistribution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

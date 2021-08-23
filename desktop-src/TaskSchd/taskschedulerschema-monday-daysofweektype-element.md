@@ -3,7 +3,7 @@ title: Elemento Monday (daysOfWeekType)
 description: Specifica che l'attività viene eseguita il lunedì.
 ms.assetid: 2b7ce0c1-c635-47d0-b482-5c93c0028c92
 keywords:
-- Utilità di pianificazione elemento Monday
+- Elemento Monday Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3967db32a6ccd536e2e389e84de4eec05b333634
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22bd1028a36efa6e2fe96a300b221073dbf87f14e77621d8b1591f85c7f6fd6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513931"
 ---
 # <a name="monday-daysofweektype-element"></a>Elemento Monday (daysOfWeekType)
 
@@ -30,7 +30,7 @@ Specifica che l'attività viene eseguita il lunedì.
 </xs:element>
 ```
 
-L'elemento **Monday** è definito dal tipo complesso [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+**L'elemento** Monday è definito dal [**tipo complesso weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,7 +38,7 @@ L'elemento **Monday** è definito dal tipo complesso [**weeklyScheduleType**](ta
 
 | Elemento                                                                                                                  | Derivato da                                                             | Descrizione                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Specifica i giorni della settimana in cui viene eseguita l'attività per una pianificazione mensile giornaliera della settimana.<br/> |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Specifica i giorni della settimana in cui viene eseguita l'attività per una pianificazione mensile del giorno della settimana.<br/> |
 | [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Specifica i giorni della settimana in cui viene eseguita l'attività per una pianificazione settimanale.<br/>              |
 
 
@@ -62,8 +62,8 @@ Il codice XML seguente definisce un calendario del giorno della settimana che av
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il codice XML seguente definisce un calendario del giorno della settimana che av
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

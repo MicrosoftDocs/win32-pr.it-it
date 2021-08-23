@@ -1,42 +1,42 @@
 ---
-title: Utilizzo dell'elemento TextBox
-description: Utilizzo dell'elemento TextBox
+title: Uso dell'elemento Textbox
+description: Uso dell'elemento Textbox
 ms.assetid: e0022722-a504-47da-aa3f-62aa7fb4ac4d
 keywords:
-- Web Workshop, elemento TextBox
-- progettazione di pagine Web, elemento TextBox
-- Vector Markup Language (la), elemento TextBox
-- LA (Vector Markup Language), elemento TextBox
-- Vector graphics, elemento TextBox
-- elemento TextBox
-- Elementi la, TextBox
-- Forme la, elemento TextBox
-- Vector Markup Language (la), associazione del testo
-- LA (Vector Markup Language), associazione di testo
-- grafica vettoriale, associazione di testo
-- LA forme, associazione di testo
-- Aggiunta di testo
+- Web workshop, elemento textbox
+- progettazione di pagine Web, elemento textbox
+- Vector Markup Language (VML), elemento textbox
+- VML (Vector Markup Language),elemento textbox
+- grafica vettoriale, elemento textbox
+- elemento textbox
+- Elementi VML, casella di testo
+- Forme VML, elemento textbox
+- Vector Markup Language (VML), collegamento di testo
+- VML (Vector Markup Language), collegamento di testo
+- grafica vettoriale, collegamento di testo
+- forme VML, collegamento di testo
+- collegamento di testo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5388a359ca8cf4e320f95d708b4cf7055287d424
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 29a9b4cb0b9096777a017dafd7df1c738621a4d5681ac3228741b3fd30386ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104474123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512627"
 ---
-# <a name="using-the-textbox-element"></a>Utilizzo dell'elemento TextBox
+# <a name="using-the-textbox-element"></a>Uso dell'elemento Textbox
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 ## <a name="examples"></a>Esempi:
 
-Per aggiungere testo a un rettangolo, è possibile digitare le righe seguenti nell' `<BODY>` area della pagina Web:
+Per associare testo a un rettangolo, è possibile digitare le righe seguenti `<BODY>` nell'area della pagina Web:
 
 
 ```HTML
@@ -53,7 +53,7 @@ I'm attaching some text to this shape!!!
 
 
 
-Per allineare un collegamento ipertestuale a un rettangolo arrotondato con riempimento sfumato, è possibile digitare le righe seguenti nell' `<BODY>` area della pagina Web:
+Per associare un collegamento ipertestuale a un rettangolo arrotondato con riempimento sfumato, è possibile digitare le righe seguenti `<BODY>` nell'area della pagina Web:
 
 ![textbox2.gif (1147 byte)](images/textbox2.gif)
 
@@ -73,8 +73,8 @@ Per allineare un collegamento ipertestuale a un rettangolo arrotondato con riemp
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://www.w3.org/TR/NOTE-VML#-toc416858397) .
+Per altre informazioni su questo elemento, vedere la specifica [VML](https://www.w3.org/TR/NOTE-VML#-toc416858397) .
 
- 
+ 
 
- 
+ 
