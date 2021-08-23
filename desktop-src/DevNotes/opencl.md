@@ -1,6 +1,6 @@
 ---
-description: OpenCL è una libreria fornita con vari componenti di Windows. Per la documentazione di riferimento per le API in questa libreria, vedere https://www.khronos.org/registry/OpenCL/ .
-title: OpenCL
+description: OpenCL è una libreria fornita con vari Windows componenti. Per la documentazione di riferimento per le API in questa libreria, vedere https://www.khronos.org/registry/OpenCL/ .
+title: Opencl
 ms.topic: article
 ms.date: 04/17/2020
 topic_type:
@@ -131,15 +131,15 @@ api_type:
 - DllExport
 api_location:
 - openCL.dll
-ms.openlocfilehash: 4a904c3ec1d251c52849c09014a83383fa58eb2b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e557fe0ad8f278954309d632bddcffc7792e5a5c21615bfed55f87b201429d75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104482957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572101"
 ---
-# <a name="opencl"></a>OpenCL
+# <a name="opencl"></a>Opencl
 
-OpenCL è una libreria fornita con vari componenti di Windows. Per la documentazione di riferimento per le API in questa libreria, vedere  [https://www.khronos.org/registry/OpenCL/](https://www.khronos.org/registry/OpenCL/) .
+OpenCL è una libreria fornita con vari Windows componenti. Per la documentazione di riferimento per le API in questa libreria, vedere  [https://www.khronos.org/registry/OpenCL/](https://www.khronos.org/registry/OpenCL/) .
 
 

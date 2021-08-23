@@ -1,9 +1,9 @@
 ---
-title: Settings. defaultFrame
-description: La proprietà defaultFrame specifica o Recupera il nome del frame usato per visualizzare un URL ricevuto in un evento ScriptCommand.
+title: Impostazioni.defaultFrame
+description: La proprietà defaultFrame specifica o recupera il nome del frame usato per visualizzare un URL ricevuto in un evento ScriptCommand.
 ms.assetid: c2edb253-a545-4820-85aa-8fb7badf4d81
 keywords:
-- Impostazioni. defaultFrame Windows Media Player
+- Impostazioni.defaultFrame Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6182a635e4bd73a946c3cf85efb7d39966c0007
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0240864cd19c1a4d84c30abfc6e6b8ecb08457d26c3c660d19fc18d228b19615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571811"
 ---
-# <a name="settingsdefaultframe"></a>Settings. defaultFrame
+# <a name="settingsdefaultframe"></a>Impostazioni.defaultFrame
 
-La proprietà **DefaultFrame** specifica o Recupera il nome del frame usato per visualizzare un URL ricevuto in un evento **ScriptCommand** .
+La **proprietà defaultFrame** specifica o recupera il nome del frame usato per visualizzare un URL ricevuto in un **evento ScriptCommand.**
 
 ## <a name="syntax"></a>Sintassi
 
-Player. Settings. defaultFrame
+player.settings.defaultFrame
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di lettura/scrittura che corrisponde al valore dell'attributo **Name** dell'elemento frame di destinazione.
+Questa proprietà è una  stringa di lettura/scrittura corrispondente al valore dell'attributo **name** dell'elemento FRAME di destinazione.
 
 ## <a name="remarks"></a>Commenti
 
-Se un frame di destinazione viene specificato nell'evento **ScriptCommand** stesso, questa proprietà viene ignorata.
+Se nell'evento **ScriptCommand** viene specificato un frame di destinazione, questa proprietà viene ignorata.
 
-Questa proprietà viene ignorata quando si usa l'applet Java del navigatore Netscape. In Navigator ogni comando script URL ricevuto Visualizza l'URL in una nuova finestra del browser, indipendentemente dal valore delle *Impostazioni*. **DefaultFrame**.
+Questa proprietà viene ignorata quando si usa Netscape Navigator applet Java. In Strumento di navigazione ogni comando di script URL ricevuto visualizza l'URL in una nuova finestra del browser, indipendentemente dal valore *di Impostazioni*. **defaultFrame**.
 
-**Windows Media Player 10 Mobile**: questa proprietà è di sola lettura e restituisce sempre una stringa vuota.
+**Windows Media Player 10 Mobile:** questa proprietà è di sola lettura e restituisce sempre una stringa vuota.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Questa proprietà viene ignorata quando si usa l'applet Java del navigatore Nets
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -56,10 +56,10 @@ Questa proprietà viene ignorata quando si usa l'applet Java del navigatore Nets
 
 <dl> <dt>
 
-[**Evento Player. ScriptCommand**](player-player-scriptcommand.md)
+[**Evento Player.ScriptCommand**](player-player-scriptcommand.md)
 </dt> <dt>
 
-[**Oggetto Settings**](settings-object.md)
+[**Impostazioni Oggetto**](settings-object.md)
 </dt> <dt>
 
 [**Uso di Windows Media Player con Netscape 7.1**](using-windows-media-player-with-netscape-7-1.md)

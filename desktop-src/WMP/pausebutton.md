@@ -1,9 +1,9 @@
 ---
 title: PAUSEBUTTON
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | PAUSEBUTTON
+description: Si tratta di un pulsante predefinito con i valori predefiniti seguenti. | PAUSEBUTTON
 ms.assetid: 73536341-c31f-4c7b-b56f-6260459e7471
 keywords:
-- Media Player Windows PAUSEBUTTON
+- Controllo PAUSEBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6713c765a27ad7d341beab58266ae3bd383674bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e1173b178adfa6e9cf3b9f6e0d5af0ef6b52e6c39a88c5d9be1af9d8836a25b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646891"
 ---
 # <a name="pausebutton"></a>PAUSEBUTTON
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **pulsante predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.controls.pause()" 
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.pause"
 
 ## <a name="remarks"></a>Commenti
 
-Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+È possibile eseguire **l'override di** tutte le proprietà di questo pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

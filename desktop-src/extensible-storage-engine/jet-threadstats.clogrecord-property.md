@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_THREADSTATS. cLogRecord'
-title: Proprietà JET_THREADSTATS. cLogRecord (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_THREADSTATS.cLogRecord'
+title: JET_THREADSTATS.cLogRecord (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cLogRecord property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.cLogRecord
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.clogrecord(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 17947c0ea74f00ae51101d3e10b2eb54c78abe7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4e33e7055e2197a024cf71f21d153841c8ab945604e09810c368d9c3174105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667731"
 ---
-# <a name="jet_threadstatsclogrecord-property"></a>Proprietà JET_THREADSTATS. cLogRecord
+# <a name="jet_threadstatsclogrecord-property"></a>JET_THREADSTATS.cLogRecord
 
-Ottiene il numero totale di record del log delle transazioni generati dal motore di database sul thread corrente.
+Ottiene il numero totale di record del log delle transazioni generati dal motore di database nel thread corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int cLogRecord { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS struttura](./jet-threadstats-structure2.md)
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

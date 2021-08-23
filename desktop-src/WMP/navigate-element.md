@@ -1,9 +1,9 @@
 ---
-title: Navigate-elemento
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. L'elemento Navigate specifica un URL usato dalle chiamate a External. NavigateTaskPaneURL.
+title: Elemento Navigate
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. L'elemento Navigate specifica un URL usato dalle chiamate a External.NavigateTaskPaneURL.
 ms.assetid: 3898e381-baf8-481a-90ee-d64e55b319a0
 keywords:
-- Esplora finestre elementi Media Player
+- Esplora elementi Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab3a76fba522332f1414b02d3e317f2793e88292
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9e62dc0defae10eb0c271543e3ef3c85aab409325a21611792011d487840740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647631"
 ---
-# <a name="navigate-element"></a>Navigate-elemento
+# <a name="navigate-element"></a>Elemento Navigate
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-L'elemento **Navigate** specifica un URL usato dalle chiamate a **External. NavigateTaskPaneURL**.
+**L'elemento Navigate** specifica un URL utilizzato dalle chiamate a **External.NavigateTaskPaneURL**.
 
 ``` syntax
 <Navigate
@@ -41,7 +41,7 @@ L'elemento **Navigate** specifica un URL usato dalle chiamate a **External. Navi
 
 | Termine                                                                                                                                             | Descrizione                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseUrl** (obbligatorio)<br/> | URL completo per la pagina Web in cui spostarsi. **NavigateTaskPaneURL** può aggiungere una stringa di query a questo URL.<br/> |
+| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obbligatorio)<br/> | URL completo per la pagina Web in cui spostarsi. **NavigateTaskPaneURL può** aggiungere una stringa di query a questo URL.<br/> |
 
 
 
@@ -54,7 +54,7 @@ L'elemento **Navigate** specifica un URL usato dalle chiamate a **External. Navi
 | Gerarchia       | Elemento         |
 |-----------------|-----------------|
 | Elementi padre | **ServiceInfo** |
-| Elementi figlio  | nessuno            |
+| Elementi figlio  | Nessuno            |
 
 
 
@@ -74,13 +74,13 @@ L'elemento **Navigate** specifica un URL usato dalle chiamate a **External. Navi
 
 <dl> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**External. NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
+[**External.NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

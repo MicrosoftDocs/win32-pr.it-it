@@ -1,9 +1,9 @@
 ---
-title: funzione glDepthMask (GL. h)
-description: La funzione glDepthMask Abilita o Disabilita la scrittura nel buffer di profondità.
+title: Funzione glDepthMask (Gl.h)
+description: La funzione glDepthMask abilita o disabilita la scrittura nel buffer di profondità.
 ms.assetid: 067b18e2-f21a-4dde-8fa6-dd975746e189
 keywords:
-- funzione glDepthMask OpenGL
+- Funzione glDepthMask OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5873d517770f1ce61f9a2eaad3ea7cce7b4fd7ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0e774917d47cecdbb276b19dbc97a7c8c7620e04e0a044cf6932aa83167e325
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625721"
 ---
-# <a name="gldepthmask-function"></a>glDepthMask (funzione)
+# <a name="gldepthmask-function"></a>Funzione glDepthMask
 
-La funzione **glDepthMask** Abilita o Disabilita la scrittura nel buffer di profondità.
+La **funzione glDepthMask** abilita o disabilita la scrittura nel buffer di profondità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI glDepthMask(
 *flag* 
 </dt> <dd>
 
-Specifica se il buffer di profondità è abilitato per la scrittura. Se il *flag* è zero, la scrittura nel buffer di profondità è disabilitata. In caso contrario, è abilitato. Inizialmente, la scrittura nel buffer di profondità è abilitata.
+Specifica se il buffer di profondità è abilitato per la scrittura. Se *il flag* è zero, la scrittura del buffer di profondità è disabilitata. In caso contrario, è abilitato. Inizialmente, la scrittura del buffer di profondità è abilitata.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
@@ -67,7 +67,7 @@ Il codice di errore seguente può essere recuperato dalla funzione [**glGetError
 
 La funzione seguente recupera le informazioni correlate a **glDepthMask**:
 
-**glGet** con argomento di \_ profondità GL \_ WRITEMASK
+**glGet con** argomento GL \_ DEPTH \_ WRITEMASK
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ La funzione seguente recupera le informazioni correlate a **glDepthMask**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -99,7 +99,7 @@ La funzione seguente recupera le informazioni correlate a **glDepthMask**:
 [**glDepthRange**](gldepthrange.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)

@@ -17,7 +17,7 @@ ms.locfileid: "119622021"
 # <a name="esentcolumnlongexception-properties"></a>Proprietà di EsentColumnLongException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) espone i membri seguenti.
 

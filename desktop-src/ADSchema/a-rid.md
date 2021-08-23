@@ -1,11 +1,11 @@
 ---
-title: RID (attributo)
+title: Attributo Rid
 description: Identificatore relativo di un oggetto.
 ms.assetid: 52110cac-033c-475c-84d7-aff631af3413
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RID
-- Schema AD dell'attributo RID
+- Rid attribute AD Schema
+- Schema AD dell'attributo rid
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90ab6327fccf804b21a9ba7de6881f98ea4f97be
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 35fabcb2cf64111b1c0e4a879ef8764293ec9956221db8d9381736b58cab0c82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646741"
 ---
-# <a name="rid-attribute"></a>RID (attributo)
+# <a name="rid-attribute"></a>Attributo Rid
 
 Identificatore relativo di un oggetto.
 
@@ -29,13 +29,13 @@ Identificatore relativo di un oggetto.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Sbarazzarsi                                         |
-| LDAP-Display-Name | rid                                         |
+| CN                | liberarsi                                         |
+| Ldap-Display-Name | rid                                         |
 | Dimensione              | 4 byte                                     |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | Quando viene creato un oggetto che richiede un RID. |
 | Attribute-Id      | 1.2.840.113556.1.4.153                      |
-| System-ID-GUID    | bf967a22-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a22-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)        |
 
 
@@ -58,15 +58,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Identificatore relativo di un oggetto.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 

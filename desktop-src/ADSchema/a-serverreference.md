@@ -1,10 +1,10 @@
 ---
-title: Attributo Server-Reference
-description: Disponibile in un oggetto computer del sito. Contiene il nome distinto del controller di dominio nel contesto dei nomi di dominio.
+title: Server-Reference attributo
+description: Trovato in un oggetto computer del sito. Contiene il nome distinto del controller di dominio nel contesto dei nomi di dominio.
 ms.assetid: 6c0ebe85-b4ed-4284-ad96-0b711d5acce7
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Server-Reference attribute
+- Server-Reference schema AD dell'attributo
 - Schema AD dell'attributo serverReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83fed3b44feeaccb87cb1f55435bbac915c1c262
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 31807e558fa7d548ad678e423c652e852768fe5ce5d53a2c8518f503a19a2216
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646211"
 ---
-# <a name="server-reference-attribute"></a>Attributo Server-Reference
+# <a name="server-reference-attribute"></a>Server-Reference attributo
 
-Disponibile in un oggetto computer del sito. Contiene il nome distinto del controller di dominio nel contesto dei nomi di dominio.
+Trovato in un oggetto computer del sito. Contiene il nome distinto del controller di dominio nel contesto dei nomi di dominio.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Server-Reference                        |
-| LDAP-Display-Name | serverReference                         |
+| Ldap-Display-Name | serverReference                         |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | Ogni volta che viene creato un sito.             |
 | Attribute-Id      | 1.2.840.113556.1.4.515                  |
-| System-ID-GUID    | 26d9736d-6070-11d1-a9c6-0000f80367c1    |
+| System-Id-Guid    | 26d9736d-6070-11d1-a9c6-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| A valore singolo       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| A valore singolo       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| A valore singolo       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Disponibile in un oggetto computer del sito. Contiene il nome distinto del contr
 | ID collegamento                | 94                                                                                                                              |
 | MAPI-Id                | \-                                                                                                                              |
 | System-Only            | Falso                                                                                                                           |
-| È a valore singolo       | Vero                                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                                            |
 | Indicizzato             | Falso                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | \-                                                                                                                              |
 | Range-Upper            | \-                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 

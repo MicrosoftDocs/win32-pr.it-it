@@ -1,10 +1,10 @@
 ---
-title: Attributo Server-Role
-description: Per la compatibilità con i server precedenti a Windows Server 2000. Un computer che esegue Windows NT Server può essere un server autonomo, un controller di dominio primario (PDC) o un controller di dominio di backup (BDC).
+title: Server-Role attributo
+description: Per la compatibilità con i server Windows 2000 Server. Un computer che esegue Windows NT Server può essere un server autonomo, un controller di dominio primario (PDC) o un controller di dominio di backup (BDC).
 ms.assetid: 0c2e5b18-14ad-4f77-a62c-eeb95aabbb99
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Server-Role attribute
+- Server-Role schema AD dell'attributo
 - Schema AD dell'attributo serverRole
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58a127a94cd1ecc2bfce3701c11ee2a5e0c2376c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e46345362e78590cd50e75e2ea592f55f3bda2db96c4c412c85afccc5eb6f2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646121"
 ---
-# <a name="server-role-attribute"></a>Attributo Server-Role
+# <a name="server-role-attribute"></a>Server-Role attributo
 
-Per la compatibilità con i server precedenti a Windows Server 2000. Un computer che esegue Windows NT Server può essere un server autonomo, un controller di dominio primario (PDC) o un controller di dominio di backup (BDC).
+Per la compatibilità con i server Windows 2000 Server. Un computer che esegue Windows NT Server può essere un server autonomo, un controller di dominio primario (PDC) o un controller di dominio di backup (BDC).
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Server-Role                          |
-| LDAP-Display-Name | serverRole                           |
+| Ldap-Display-Name | Serverrole                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | 4 byte                              |
 | Attribute-Id      | 1.2.840.113556.1.4.157               |
-| System-ID-GUID    | bf967a33-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a33-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Per la compatibilità con i server precedenti a Windows Server 2000. Un computer
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

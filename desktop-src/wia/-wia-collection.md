@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: cf9c5fc6b01574b930b7b8b74186243d00fa5202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63f2d1be37ae244eee5960feb8d5eae22ce379a8567bd782c3b0c3e43eabb53b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593341"
 ---
 # <a name="collection-object"></a>Collection (oggetto)
 
@@ -26,20 +26,20 @@ Classe Collection
 
 ## <a name="members"></a>Membri
 
-L'oggetto **raccolta** dispone di questi tipi di membri:
+**L'oggetto Collection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **raccolta** dispone di queste proprietà.
+**L'oggetto Collection** ha queste proprietà.
 
 
 
 | Proprietà                                           | Tipo di accesso          | Descrizione                                                |
 |:---------------------------------------------------|:---------------------|:-----------------------------------------------------------|
-| [**Conteggio**](-wia-icollection-count.md)<br/> | Sola lettura<br/> | Restituisce il numero di membri nella raccolta.<br/> |
-| [**Elemento**](-wia-icollection-item.md)<br/>   | Sola lettura<br/> | Restituisce l'elemento specificato nella raccolta.<br/>    |
+| [**Conteggio**](-wia-icollection-count.md)<br/> | Sola lettura<br/> | Restituisce il numero di membri nella raccolta<br/> |
+| [**Elemento**](-wia-icollection-item.md)<br/>   | Sola lettura<br/> | Restituisce l'elemento specificato nella raccolta<br/>    |
 
 
 
@@ -47,9 +47,9 @@ L'oggetto **raccolta** dispone di queste proprietà.
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="creationaccess-functions"></a>Funzioni di accesso per la creazione \\
+### <a name="creationaccess-functions"></a>Funzioni \\ di accesso per la creazione
 
-Per recuperare un riferimento all'oggetto, utilizzare uno dei seguenti elementi:
+Usare uno degli elementi seguenti per recuperare un riferimento all'oggetto :
 
 
 
@@ -69,9 +69,9 @@ Per recuperare un riferimento all'oggetto, utilizzare uno dei seguenti elementi:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

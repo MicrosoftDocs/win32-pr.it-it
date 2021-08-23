@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 2f48bb7115d19779f437a849078238cee967f2d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 434c074260a07a251ac81148616c434cb9f7de74d799a42c71bd81451a1bd3b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119668001"
 ---
-# <a name="gethardwareencryptionstatus-method-of-the-win32_encryptablevolume-class"></a>Metodo GetHardwareEncryptionStatus della \_ classe EncryptableVolume Win32
+# <a name="gethardwareencryptionstatus-method-of-the-win32_encryptablevolume-class"></a>Metodo GetHardwareEncryptionStatus della classe \_ EncryptableVolume Win32
 
-Il metodo **GetHardwareEncryptionStatus** della classe [**\_ EncryptableVolume Win32**](win32-encryptablevolume.md) determina se il volume si trova in un'unità che supporta o può supportare la crittografia hardware.
+Il **metodo GetHardwareEncryptionStatus** della classe [**\_ EncryptableVolume Win32**](win32-encryptablevolume.md) determina se il volume si trova in un'unità che supporta o può supportare la crittografia hardware.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ uint32 GetHardwareEncryptionStatus(
 
 <dl> <dt>
 
-*HardwareEncryptionStatus* \[ out\]
+*HardwareEncryptionStatus* \[ Cambio\]
 </dt> <dd>
 
-Specifica se l'unità può supportare la crittografia hardware. Può corrispondere a uno dei valori seguenti.
+Specifica se l'unità può supportare la crittografia hardware. Può essere uno dei valori seguenti.
 
 
 
@@ -50,7 +50,7 @@ Specifica se l'unità può supportare la crittografia hardware. Può corrisponde
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | <span id="Not_supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Non supportato**</dt> <dt>0</dt> </dl> | La crittografia hardware non è supportata.<br/>    |
 | <span id="No_protection"></span><span id="no_protection"></span><span id="NO_PROTECTION"></span><dl> <dt>**Nessuna protezione**</dt> <dt>1</dt> </dl> | La crittografia dell'unità non è supportata.<br/>       |
-| <span id="Uses_software"></span><span id="uses_software"></span><span id="USES_SOFTWARE"></span><dl> <dt>**Usa software**</dt> <dt>2</dt> </dl> | Il metodo di crittografia è basato su software.<br/> |
+| <span id="Uses_software"></span><span id="uses_software"></span><span id="USES_SOFTWARE"></span><dl> <dt>**Usa il software**</dt> <dt>2</dt> </dl> | Il metodo di crittografia è basato su software.<br/> |
 | <span id="Uses_hardware"></span><span id="uses_hardware"></span><span id="USES_HARDWARE"></span><dl> <dt>**Usa l'hardware**</dt> <dt>3</dt> </dl> | L'unità supporta la crittografia hardware.<br/>  |
 
 
@@ -67,7 +67,7 @@ Questa funzione restituisce zero (0) se il volume è compatibile con la crittogr
 
 | Codice/valore restituito                                                                                                                                 | Descrizione                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl> | Il volume è compatibile con la crittografia hardware di BitLocker.<br/> |
+| <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl> | Il volume è compatibile con la crittografia hardware BitLocker.<br/> |
 
 
 
@@ -79,10 +79,10 @@ Questa funzione restituisce zero (0) se il volume è compatibile con la crittogr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 Enterprise, \[ solo app desktop Windows 8 Pro\]<br/>                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftVolumeEncryption<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 Enterprise, Windows 8 Pro solo app \[ desktop\]<br/>                                    |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Questa funzione restituisce zero (0) se il volume è compatibile con la crittogr
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> </dl>
 
  

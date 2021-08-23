@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica HDN_DIVIDERDBLCLICK (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di intestazione che l'utente ha fatto doppio clic sull'area del divisore del controllo. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: HDN_DIVIDERDBLCLICK di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo intestazione che l'utente ha fatto doppio clic sull'area di divisione del controllo. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: b722196a-23ae-49c3-b0a2-8fe0d1e33b26
 keywords:
-- Controlli di Windows per il codice di notifica HDN_DIVIDERDBLCLICK
+- HDN_DIVIDERDBLCLICK del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0129096139a4d698f25de543a2628b473bfd66e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b9ba7e974ce9e3adac2b48815bfb9bba5273db8298bc9948164be5904dca8a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544676"
 ---
-# <a name="hdn_dividerdblclick-notification-code"></a>\_Codice di notifica DIVIDERDBLCLICK di HDN
+# <a name="hdn_dividerdblclick-notification-code"></a>Codice di notifica \_ DIVIDERDBLCLICK HDN
 
-Notifica alla finestra padre di un controllo di intestazione che l'utente ha fatto doppio clic sull'area del divisore del controllo. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo intestazione che l'utente ha fatto doppio clic sull'area di divisione del controllo. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ HDN_DIVIDERDBLCLICK
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) contenente informazioni sul controllo intestazione e sull'elemento il cui divisore è stato fatto doppio clic.
+Puntatore a una [**struttura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) che contiene informazioni sul controllo intestazione e sull'elemento su cui è stato fatto doppio clic sul divisore.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **HDN \_ DIVIDERDBLCLICKW** (Unicode) e **HDN \_ DIVIDERDBLCLICKA** (ANSI)<br/>   |
 
 

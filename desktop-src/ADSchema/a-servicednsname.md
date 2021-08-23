@@ -1,10 +1,10 @@
 ---
-title: Service-nome-DNS-attributo
-description: Nome DNS da cercare per individuare un server che esegue questo servizio.
+title: Attributo Service-DNS-Name
+description: Nome DNS da cercare per trovare un server che esegue questo servizio.
 ms.assetid: b2852276-30f5-4c2a-9f72-9df0d7c0c994
 ms.tgt_platform: multiple
 keywords:
-- Servizio-DNS-nome attributo AD schema
+- Schema AD dell'attributo Service-DNS-Name
 - Schema AD dell'attributo serviceDNSName
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46b881587a1358a6e7a3a814efb80af122ac5669
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2d39d1237aa52aa99d725ca4a056f914f59d4eee370acfb7be7f6d8e01e028b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646002"
 ---
-# <a name="service-dns-name-attribute"></a>Service-nome-DNS-attributo
+# <a name="service-dns-name-attribute"></a>Attributo Service-DNS-Name
 
-Nome DNS da cercare per individuare un server che esegue questo servizio.
+Nome DNS da cercare per trovare un server che esegue questo servizio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Servizio-DNS-Name                            |
-| LDAP-Display-Name | serviceDNSName                              |
+| CN                | Service-DNS-Name                            |
+| Ldap-Display-Name | serviceDNSName                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.657                      |
-| System-ID-GUID    | 28630eb8-41d5-11d1-a9c1-0000f80367c1        |
+| System-Id-Guid    | 28630eb8-41d5-11d1-a9c1-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome DNS da cercare per individuare un server che esegue questo servizio.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 

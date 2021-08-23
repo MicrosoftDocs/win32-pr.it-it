@@ -1,19 +1,19 @@
 ---
-description: Elenco di proprietà da visualizzare nel riquadro di anteprima. Eseguire la registrazione in RegValue di &\# 0034; PreviewDetails&\# 0034;.
+description: Elenco di proprietà da visualizzare nel riquadro di anteprima. Eseguire la registrazione con il valore regvalue &\# 0034; PreviewDetails&\# 0034;.
 ms.assetid: 357b3ad9-d451-44f1-abd1-67008e66f419
-title: System. Propin. PreviewDetails
+title: System.PropList.PreviewDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea2f99201da99d199f7c1cc0b35e46056c64c226
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62e1e33afa8175e9d33e709e3e047eb7489e8c6474908a28e2650ce0d85be128
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598320"
 ---
-# <a name="systemproplistpreviewdetails"></a>System. Propin. PreviewDetails
+# <a name="systemproplistpreviewdetails"></a>System.PropList.PreviewDetails
 
-Elenco di proprietà da visualizzare nel riquadro di anteprima. Eseguire la registrazione in RegValue di "PreviewDetails".
+Elenco di proprietà da visualizzare nel riquadro di anteprima. Eseguire la registrazione nel valore regvalue di "PreviewDetails".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

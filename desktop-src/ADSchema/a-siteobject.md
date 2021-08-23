@@ -1,11 +1,11 @@
 ---
-title: Attributo Site-Object
-description: Nome distinto per il sito a cui appartiene la subnet.
+title: Site-Object attributo
+description: Nome distinto del sito a cui appartiene questa subnet.
 ms.assetid: 4533c742-4276-48df-b0cd-7ba1641737a7
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Site-Object attribute
-- Schema AD dell'attributo siteObject
+- Site-Object schema AD dell'attributo
+- Attributo siteObject Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac43fb4ee0718aec855de4b7eb251a5d67c1a5fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 31bb6f97e3018ec91f308aa2a894422b79beca8e94d9659c178968c69a96aed9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645641"
 ---
-# <a name="site-object-attribute"></a>Attributo Site-Object
+# <a name="site-object-attribute"></a>Site-Object attributo
 
-Nome distinto per il sito a cui appartiene la subnet.
+Nome distinto del sito a cui appartiene questa subnet.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Site-Object                             |
-| LDAP-Display-Name | siteObject                              |
+| Ldap-Display-Name | siteObject                              |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Amministratore di dominio                    |
+| Aggiorna privilegio  | Amministratore di dominio                    |
 | Frequenza di aggiornamento  | Ogni volta che viene creato un sito.             |
 | Attribute-Id      | 1.2.840.113556.1.4.512                  |
-| System-ID-GUID    | 3e10944c-c354-11d0-aff8-0000f80367c1    |
+| System-Id-Guid    | 3e10944c-c354-11d0-aff8-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Nome distinto per il sito a cui appartiene la subnet.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome distinto per il sito a cui appartiene la subnet.
 | ID collegamento                | 46                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Subnet**](c-subnet.md)<br/> |
+| Classi usate in        | [**Subnet**](c-subnet.md)<br/> |
 
 
 

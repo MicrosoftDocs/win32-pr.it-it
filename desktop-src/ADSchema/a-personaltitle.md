@@ -1,10 +1,10 @@
 ---
-title: Attributo Personal-Title
+title: Personal-Title attributo
 description: la qualifica dell'utente.
 ms.assetid: 51faf19e-bec7-4f72-87d0-2df51af3fa1d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Personal-Title attribute
+- Personal-Title schema AD dell'attributo
 - Schema AD dell'attributo personalTitle
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b0a707cc56eac5f92c50852a0d006fe6374b802
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ff01428e1faf994766586f9e25c5e051aa88f40ae29c979b1aafb2b988f33d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647791"
 ---
-# <a name="personal-title-attribute"></a>Attributo Personal-Title
+# <a name="personal-title-attribute"></a>Personal-Title attributo
 
 la qualifica dell'utente.
 
@@ -30,12 +30,12 @@ la qualifica dell'utente.
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | Personal-Title                                                                   |
-| LDAP-Display-Name | personalTitle                                                                    |
+| Ldap-Display-Name | personalTitle                                                                    |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Privilegio di aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.2.615                                                           |
-| System-ID-GUID    | 16775858-47f3-11d1-a9c3-0000f80367c1                                             |
+| System-Id-Guid    | 16775858-47f3-11d1-a9c3-0000f80367c1                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ la qualifica dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

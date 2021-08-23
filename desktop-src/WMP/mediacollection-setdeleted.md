@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. sedeleted (metodo)
-description: Il metodo sedeleted sposta l'elemento multimediale specificato nella cartella degli elementi eliminati. | Mediacollection. sedeleted (metodo)
+title: Metodo MediaCollection.setDeleted
+description: Il metodo setDeleted sposta l'elemento multimediale specificato nella cartella degli elementi eliminati. | Metodo MediaCollection.setDeleted
 ms.assetid: 3e3c9a16-37e1-41b4-8593-58aaf4541eb9
 keywords:
-- Metodo sedeleted Media Player Windows
-- Metodo sedeleted Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo sedeleted
+- Metodo setDeleted Windows Media Player
+- Metodo setDeleted Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player, metodo setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f545953899883933286f3c38def62d9f254dfdc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63dcb4c0062acbd5f457cd09b9c1370ff9c4f7683fd8758a4a64ce5f510a6948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647841"
 ---
-# <a name="mediacollectionsetdeleted-method"></a>Mediacollection. sedeleted (metodo)
+# <a name="mediacollectionsetdeleted-method"></a>Metodo MediaCollection.setDeleted
 
-Il metodo **Sedeleted** sposta l'elemento multimediale specificato nella cartella degli elementi eliminati.
+Il **metodo setDeleted** sposta l'elemento multimediale specificato nella cartella degli elementi eliminati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ MediaCollection.setDeleted(
 
 <dl> <dt>
 
-*elemento* \[ di in\]
+*item* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **multimediale** da spostare.
+**Oggetto** multimediale da spostare.
 
 </dd> <dt>
 
-valore *true* \[ in\]
+*true* \[ Pollici\]
 </dt> <dd>
 
 Specificare sempre questo valore.
@@ -65,13 +65,13 @@ Questo metodo non restituisce valori.
 
 Questo metodo non rimuove i file dal computer dell'utente.
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 **Windows Media Player 10 Mobile:** Questo metodo non è supportato.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *mediacollection*. viene **eliminato per spostare** un particolare elemento multimediale, archiviato nella variabile denominata mediaObject, nella cartella Deleted Items. *Mediacollection*. il metodo **undeleted** verifica prima di tutto se l'elemento è già stato eliminato. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *MediaCollection*. **setDeleted per** spostare un particolare elemento multimediale, archiviato nella variabile denominata mediaObject, nella cartella degli elementi eliminati. Oggetto *MediaCollection.* **Il metodo isDeleted** verifica innanzitutto se l'elemento è già stato eliminato. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ else
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0, Windows Media Player versione 7,1 o Windows Media Player per Windows XP. Questo metodo non è supportato per Windows Media Player 9 Series o versioni successive.<br/> |
+| Versione<br/> | Windows Media Player versione 7.0, Windows Media Player 7.1 o Windows Media Player per Windows XP. Questo metodo non è supportato per Windows Media Player serie 9 o versioni successive.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                                                              |
 
 
@@ -112,16 +112,16 @@ else
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Mediacollection. viene eliminato**](mediacollection-isdeleted.md)
+[**MediaCollection.isDeleted**](mediacollection-isdeleted.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

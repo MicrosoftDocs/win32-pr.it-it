@@ -1,9 +1,9 @@
 ---
-title: funzione glFogfv (GL. h)
-description: La funzione glFogfv specifica i parametri di nebbia. | funzione glFogfv (GL. h)
+title: Funzione glFogfv (Gl.h)
+description: La funzione glFogfv specifica i parametri di osanna. | Funzione glFogfv (Gl.h)
 ms.assetid: a2243ff4-4f3a-4b8c-b4fb-ce2cd74815e4
 keywords:
-- funzione glFogfv OpenGL
+- Funzione glFogfv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b407dd9b9c984a744e903a2c269d21028d32977a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5da9c921af1a69e41c1fd38a633fccad43cd685974be2de81f4275b8388a496f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625377"
 ---
-# <a name="glfogfv-function"></a>glFogfv (funzione)
+# <a name="glfogfv-function"></a>Funzione glFogfv
 
-La funzione **glFogfv** specifica i parametri di nebbia.
+La **funzione glFogfv** specifica i parametri di osa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ void WINAPI glFogfv(
 
 <dl> <dt>
 
-*pname* 
+*Pname* 
 </dt> <dd>
 
-Specifica un parametro Fog.
+Specifica un parametro di nebbia.
 
 Accetta uno dei valori seguenti.
 
@@ -52,12 +52,12 @@ Accetta uno dei valori seguenti.
 
 | Valore                                                                                                                                                             | Significato                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span><dl> <dt>**\_modalità di nebbia GL \_**</dt> </dl>          | Il parametro *params* è un valore a virgola mobile che specifica l'equazione da usare per calcolare il fattore di Blend di nebbia, *f*. Sono accettate tre costanti simboliche: GL \_ Linear, GL \_ exp e GL \_ exp2. Le equazioni corrispondenti a queste costanti simboliche sono definite nella sezione Osservazioni riportata di seguito. La modalità di nebbia predefinita è GL \_ Exp.<br/>                                                                           |
-| <span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span><dl> <dt>**\_densità di nebbia GL \_**</dt> </dl> | Il parametro *params* è un valore a virgola mobile che specifica la *densità*, la densità di nebbia usata in entrambe le equazioni di nebbia esponenziale. Vengono accettate solo le densità non negative. La densità di nebbia predefinita è 1,0.<br/>                                                                                                                                                                                                              |
-| <span id="GL_FOG_START"></span><span id="gl_fog_start"></span><dl> <dt>**\_inizio di nebbia GL \_**</dt> </dl>       | Il parametro *params* è un valore a virgola mobile che specifica *Start*, la distanza vicina utilizzata nell'equazione Linear Fog. La distanza quasi predefinita è 0,0.<br/>                                                                                                                                                                                                                                                            |
-| <span id="GL_FOG_END"></span><span id="gl_fog_end"></span><dl> <dt>**\_fine nebbia \_ GL**</dt> </dl>             | Il parametro *params* è un valore a virgola mobile che specifica *end*, la distanza distante utilizzata nell'equazione lineare di nebbia. La distanza predefinita è 1,0.<br/>                                                                                                                                                                                                                                                                |
-| <span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span><dl> <dt>**\_indice di nebbia GL \_**</dt> </dl>       | Il parametro *params* è un valore a virgola mobile che specifica *i*<sub>f</sub> , ovvero l'indice dei colori di nebbia. L'indice di nebbia predefinito è 0,0.<br/>                                                                                                                                                                                                                                                                                     |
-| <span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span><dl> <dt>**\_colore di nebbia GL \_**</dt> </dl>       | Il parametro *params* contiene quattro valori a virgola mobile che specificano *C*<sub>f</sub> , il colore di nebbia. Ai valori integer viene eseguito il mapping lineare, in modo che il valore rappresentabile più positivo sia mappato a 1,0 e il valore rappresentativo più negativo sia mappato a-1,0. Ai valori a virgola mobile viene eseguito il mapping diretto. Dopo la conversione, tutti i componenti dei colori vengono bloccati nell'intervallo compreso tra \[ 0 e 1 \] . Il colore di nebbia predefinito è (0, 0, 0, 0).<br/> |
+| <span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span><dl> <dt>**MODALITÀ \_ GL \_ OSA**</dt> </dl>          | Il *parametro params* è un valore a virgola mobile che specifica l'equazione da usare per calcolare il fattore di blend della nebbia, *f*. Sono accettate tre costanti simboliche: GL \_ LINEAR, GL \_ EXP e GL \_ EXP2. Le equazioni corrispondenti a queste costanti simboliche sono definite nella sezione Osservazioni seguente. La modalità predefinita è GL \_ EXP.<br/>                                                                           |
+| <span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span><dl> <dt>**DENSITÀ \_ DELLA DENSITÀ DELLA \_ NEBBIA GL**</dt> </dl> | Il *parametro params* è un valore a virgola mobile che specifica *la* densità , la densità della nebbia usata in entrambe le equazioni esponenziali della nebbia. Vengono accettate solo densità non neghe. La densità di nebbia predefinita è 1,0.<br/>                                                                                                                                                                                                              |
+| <span id="GL_FOG_START"></span><span id="gl_fog_start"></span><dl> <dt>**INIZIO \_ DELLA NEBBIA \_ GL**</dt> </dl>       | Il *parametro params* è un valore a virgola mobile che specifica *start,* la distanza vicina usata nell'equazione lineare della nebbia. La distanza minima predefinita è 0,0.<br/>                                                                                                                                                                                                                                                            |
+| <span id="GL_FOG_END"></span><span id="gl_fog_end"></span><dl> <dt>**FINE \_ DELLA NEBBIA \_ GL**</dt> </dl>             | Il *parametro params* è un valore a virgola mobile che specifica *end*, la distanza lontana usata nell'equazione lineare della nebbia. La distanza predefinita è 1,0.<br/>                                                                                                                                                                                                                                                                |
+| <span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span><dl> <dt>**INDICE \_ GL FOG \_**</dt> </dl>       | Il *parametro params* è un valore a virgola mobile che specifica *i*<sub>f</sub> , l'indice dei colori della nebbia. L'indice predefinito della nebbia è 0,0.<br/>                                                                                                                                                                                                                                                                                     |
+| <span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span><dl> <dt>**COLORE \_ GL \_ OSANNA**</dt> </dl>       | Il *parametro params* contiene quattro valori a virgola mobile che *specificano C*<sub>f</sub> , il colore della nebbia. I valori interi vengono mappati in modo lineare in modo che il valore rappresentabile più positivo sia mappato a 1,0 e il valore rappresentabile più negativo sia mappato a -1,0. I valori a virgola mobile vengono mappati direttamente. Dopo la conversione, tutti i componenti di colore vengono ancorati all'intervallo \[ 0,1. \] Il colore predefinito è (0,0,0,0).<br/> |
 
 
 
@@ -68,7 +68,7 @@ Accetta uno dei valori seguenti.
 *params* 
 </dt> <dd>
 
-Specifica il valore o i valori da assegnare a *pname*. Il \_ \_ colore della nebbia GL richiede una matrice di quattro valori. Tutti gli altri parametri accettano una matrice contenente solo un valore singolo.
+Specifica il valore o i valori da assegnare a *pname*. GL \_ FOG COLOR richiede una matrice di quattro \_ valori. Tutti gli altri parametri accettano una matrice contenente un solo valore.
 
 </dd> </dl>
 
@@ -78,58 +78,58 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *pname* non è un valore accettato.<br/>                                                                                         |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *pname* non è un valore accettato.<br/>                                                                                         |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare e disabilitare Fog con [**glEnable**](glenable.md) e [**glDisable**](gldisable.md), è possibile usare l'argomento per la \_ nebbia. Se abilitata, la nebbia interessa la geometria rasterizzata, le bitmap e i blocchi pixel, ma non le operazioni di cancellazione del buffer.
+Abilitare e disabilitare osa con [**glEnable**](glenable.md) [**e glDisable**](gldisable.md)usando l'argomento GL \_ FESR. Se abilitata, la nebbia influisce sulla geometria rasterizzata, sulle bitmap e sui blocchi di pixel, ma non sulle operazioni di cancellazione del buffer.
 
-La funzione **glFogfv** assegna il valore o i valori in *params* al parametro Fog specificato da *pname*.
+La **funzione glFogfv** assegna il valore o i valori in *params* al parametro osa specificato da *pname*.
 
-Nebbia combina un colore di nebbia con ogni colore di post-texturing del frammento di pixel rasterizzato usando un fattore di fusione *f*. Il fattore *f* viene calcolato in uno dei tre modi seguenti, a seconda della modalità di nebbia. Lasciare che *z* sia la distanza nelle coordinate oculari dall'origine al frammento a cui si sta eseguendo la nebbia. L'equazione per GL \_ Linear Fog è:
+Misto sfuma un colore della fuschia con il colore posttexturing di ogni frammento di pixel rasterizzato usando un fattore di fusione *f*. Il *fattore f* viene calcolato in uno dei tre modi seguenti, a seconda della modalità nebbia. Che *z* sia la distanza in coordinate oculari dall'origine al frammento in fase di foro. L'equazione per GL \_ LINEAR è:
 
-![Equazione che mostra il valore di GL_LINEAR nebbia.](images/fog01.png)
+![Equazione che mostra il valore di GL_LINEAR foschia.](images/fog01.png)
 
-L'equazione per GL \_ Exp Fog è:
+L'equazione per gl \_ EXP exp è:
 
-![Equazione che mostra il valore del fattore di fusione in modalità GL_EXP nebbia.](images/fog02.png)
+![Equazione che mostra il valore del fattore di fusione in GL_EXP modalità nebbia.](images/fog02.png)
 
-L'equazione per GL \_ exp2 Fog è:
+L'equazione per gl \_ EXP2 exp2 è:
 
-![Equazione che mostra il valore del fattore di fusione in modalità GL_EXP2 nebbia.](images/fog03.png)
+![Equazione che mostra il valore del fattore di fusione in GL_EXP2 modalità nebbia.](images/fog03.png)
 
-Indipendentemente dalla modalità di nebbia, *f* viene bloccato nell'intervallo \[ 0, 1 dopo il \] calcolo. Quindi, se OpenGL è in modalità colore RGBA, il colore *C*<sub>r</sub> del frammento viene sostituito da
+Indipendentemente dalla modalità osanna, *f* viene ancorato all'intervallo \[ 0,1 \] dopo il calcolo. Quindi, se OpenGL è in modalità colore RGBA, il colore *C*<sub>r</sub> del frammento viene sostituito da
 
-![Equazione che mostra il colore del frammento offuscato come funzione di combinazione del fattore e del colore nebbia.](images/fog04.png)
+![Equazione che mostra il colore del frammento irregolare in funzione del fattore di fusione e del colore della fuschia.](images/fog04.png)
 
-In modalità di indice dei colori, l'indice di colore del frammento *i*<sub>r</sub> viene sostituito da
+In modalità color-index, l'indice colori del frammento *i*<sub>r</sub> viene sostituito da
 
-![Equazione che mostra l'indice dei colori del frammento con offuscamento come funzione del fattore di fusione e del colore indicizzato.](images/fog05.png)
+![Equazione che mostra l'indice dei colori del frammento dentellato in funzione del fattore di fusione e del colore indicizzato.](images/fog05.png)
 
-Le funzioni seguenti consentono di recuperare informazioni correlate alle funzioni **glFog** :
+Le funzioni seguenti recuperano informazioni correlate alle **funzioni glFog:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento del \_ colore della nebbia GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ FOG \_ COLOR
 
-**glGet** con argument GL \_ Fog \_ index
+**glGet con** argomento GL \_ FOG \_ INDEX
 
-**glGet** con densità di \_ nebbia argomento GL \_
+**glGet con** argomento GL \_ FOG \_ DENSITY
 
-**glGet** con argument GL \_ Fog \_ Start
+**glGet con** argomento GL \_ FOG \_ START
 
-**glGet** con argomento di \_ \_ fine nebbia
+**glGet con** argomento GL \_ \_ FEB END
 
-**glGet** con argomento della \_ modalità di nebbia GL \_
+**glGet con** argomento GL \_ FOG \_ MODE
 
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ Fog
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ FOG
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,8 +139,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate alle funzio
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate alle funzio
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)

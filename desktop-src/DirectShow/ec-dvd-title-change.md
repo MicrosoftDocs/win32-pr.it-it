@@ -1,7 +1,7 @@
 ---
-description: Indica quando cambia il numero del titolo DVD corrente.
+description: Indica quando cambia il numero di titolo del DVD corrente.
 ms.assetid: 9888f2ec-fc2d-4d6d-a03d-b381373337eb
-title: EC_DVD_TITLE_CHANGE (Dvdevcode. h)
+title: EC_DVD_TITLE_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 9539d29704797b1c7b001d426250762d2ed27b3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 667d8f11270865f1caa4549377db2cccb278053ea9848b71aa38f0d5f7528689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686211"
 ---
-# <a name="ec_dvd_title_change"></a>\_modifica del \_ titolo del DVD EC \_
+# <a name="ec_dvd_title_change"></a>EC \_ DVD \_ TITLE \_ CHANGE
 
-Indica quando cambia il numero del titolo DVD corrente.
+Indica quando cambia il numero di titolo del DVD corrente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Indica quando cambia il numero del titolo DVD corrente.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica il nuovo numero di titolo.
+**Valore DWORD** che indica il nuovo numero di titolo.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Commenti
 
-I numeri di titolo sono compresi tra 1 e 99. Questo numero indica il numero di TTN, ovvero il numero del titolo rispetto all'intero disco, non il TTN VTS, \_ ovvero il numero di titolo rispetto a un VTS corrente.
+I numeri dei titoli sono compreso tra 1 e 99. Questo numero indica il TTN, ovvero il numero del titolo rispetto all'intero disco, non il TTN VTS, che è il numero del titolo rispetto solo a un \_ VTS corrente.
 
 Questo evento viene generato nel dominio del titolo.
 
@@ -54,7 +54,7 @@ Questo evento viene generato nel dominio del titolo.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

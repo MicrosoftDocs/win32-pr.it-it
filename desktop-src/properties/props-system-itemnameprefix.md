@@ -1,17 +1,17 @@
 ---
-description: "Prefisso di un elemento, utilizzato per i messaggi di posta elettronica in cui l'oggetto inizia con il prefisso &\\# 0034; Re: &\\# 0034;."
+description: Prefisso di un elemento, utilizzato per i messaggi di posta elettronica in cui l'oggetto inizia con il prefisso &\# 0034; Re:&\# 0034;.
 ms.assetid: 3c257edc-b7f7-498d-8347-0be4fca41023
-title: System. ItemNamePrefix
+title: System.ItemNamePrefix
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf669dd867c8cf60046f226e33dae18f46060cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7830f63c3e9e0f6026099c95d11820a1d8592928cece72ebe72d76936d8467
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598461"
 ---
-# <a name="systemitemnameprefix"></a>System. ItemNamePrefix
+# <a name="systemitemnameprefix"></a>System.ItemNamePrefix
 
 Prefisso di un elemento, utilizzato per i messaggi di posta elettronica in cui l'oggetto inizia con il prefisso "Re:".
 
@@ -33,20 +33,20 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Se l'elemento è un file, il valore di questa proprietà è VT \_ Empty. Se l'elemento è un messaggio, il valore di questa proprietà corrisponde ai prefissi di inoltro o di risposta (inclusi i due punti di delimitazione, ma senza spazi vuoti) o VT \_ vuoti se non è presente alcun prefisso.
+Se l'elemento è un file, il valore di questa proprietà è VT \_ EMPTY. Se l'elemento è un messaggio, il valore di questa proprietà è il prefisso di inoltro o di risposta (inclusi i due punti di delimitazione, ma nessun spazio vuoto) o VT EMPTY se non è presente alcun \_ prefisso.
 
 Valori di esempio
 
 
 
-| System. ItemNamePrefix | System. ItemName  | System.ItemNameDisplay |
+| System.ItemNamePrefix | System.ItemName  | System.ItemNameDisplay |
 |-----------------------|------------------|------------------------|
-| VT \_ vuoto             | "Giorno splendido"      | "Giorno splendido"            |
-| "Re:"                 | "Giorno splendido"      | "Re: grande giorno"        |
-| "FWD:"               | "Budget mensile" | "FWD: budget mensile"  |
-| VT \_ vuoto             | accounts.xls     | accounts.xls           |
+| VT \_ EMPTY             | "Great day"      | "Great day"            |
+| "Re:"                 | "Great day"      | "Re: Great day"        |
+| "Fwd: "               | "Budget mensile" | "Fwd: Budget mensile"  |
+| VT \_ EMPTY             | accounts.xls     | accounts.xls           |
 
 
 
@@ -56,7 +56,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -65,13 +65,13 @@ Valori di esempio
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -80,13 +80,13 @@ Valori di esempio
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

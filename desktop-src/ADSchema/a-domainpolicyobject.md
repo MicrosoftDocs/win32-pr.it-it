@@ -1,10 +1,10 @@
 ---
-title: Domain-Policy-attributo oggetto
+title: Attributo Domain-Policy-Object
 description: Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicurezza locale per il dominio host.
 ms.assetid: f4f6281d-de83-48a3-9213-565e40041fc4
 ms.tgt_platform: multiple
 keywords:
-- Domain-Policy-schema di AD attributo dell'oggetto
+- Schema AD dell'attributo Domain-Policy-Object
 - Schema AD dell'attributo domainPolicyObject
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bfd3a7f35b91edb167f58a207eb4d162a34898d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 92c50a2bc131360bc318a36bee7e5715f53198a89878d1906ded480de2117084
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544931"
 ---
-# <a name="domain-policy-object-attribute"></a>Domain-Policy-attributo oggetto
+# <a name="domain-policy-object-attribute"></a>Attributo Domain-Policy-Object
 
 Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicurezza locale per il dominio host.
 
@@ -30,12 +30,12 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Domain-Policy-Object                    |
-| LDAP-Display-Name | domainPolicyObject                      |
+| Ldap-Display-Name | domainPolicyObject                      |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.32                   |
-| System-ID-GUID    | bf96795d-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf96795d-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento all'oggetto criteri che definisce i criteri dell'autorità di sicure
 | ID collegamento                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                |
 | Indicizzato             | Falso                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                        |
 | Range-Lower            | \-                                                                                                                  |
 | Range-Upper            | \-                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                          |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

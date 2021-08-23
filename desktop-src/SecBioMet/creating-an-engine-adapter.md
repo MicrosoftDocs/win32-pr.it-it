@@ -1,19 +1,19 @@
 ---
-title: Creazione di un adattatore del motore
-description: Struttura di base di un plug-in di adattatore del motore implementata come libreria di collegamento dinamico (DLL) di C++.
+title: Creazione di un adattatore motore
+description: Struttura di base di un plug-in dell'adattatore motore implementata come libreria di collegamento dinamico (DLL) C++.
 ms.assetid: d443ee2d-6b45-44ac-9d79-f71033d8b7f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d16b111af0840fcdafa7fea7482f5ab65532de5d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 142cdbbec089a27cecb55b69b78bc5e9849cb1641060d1e044c42edd3c7c7f0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119622711"
 ---
-# <a name="creating-an-engine-adapter"></a>Creazione di un adattatore del motore
+# <a name="creating-an-engine-adapter"></a>Creazione di un adattatore motore
 
-Nell'esempio di codice seguente viene illustrata la struttura di base di un plug-in di adattatore del motore implementato come libreria di collegamento dinamico (DLL) di C++. Per visualizzare le implementazioni di pseudocodice di ogni funzione pubblica nella DLL, passare a [funzioni dell'adattatore del motore](engine-adapter-functions.md). Se si sceglie di non fornire funzionalità per una funzione specifica, è necessario definire uno stub e restituire E \_ NOTIMPL.
+Nell'esempio di codice seguente viene illustrata la struttura di base di un plug-in dell'adattatore del motore implementato come libreria di collegamento dinamico (DLL) C++. Per visualizzare le implementazioni di pseudocodice di ogni funzione pubblica nella DLL, passare a [Engine Adapter Functions](engine-adapter-functions.md). Se si sceglie di non fornire funzionalità per una determinata funzione, è necessario definire uno stub per la funzione e restituire E \_ NOTIMPL.
 
 
 ```C++
@@ -842,12 +842,12 @@ EngineAdapterControlUnitPrivileged(
 
 <dl> <dt>
 
-[Creazione di plug-in di adapter](creating-adapter-plug-ins.md)
+[Creazione di plug-in adapter](creating-adapter-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

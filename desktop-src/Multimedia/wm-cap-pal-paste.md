@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_PAL_PASTE (VFW. h)
-description: Il \_ \_ \_ messaggio per la copia con capo di WM Cap copia la tavolozza dagli Appunti e la passa a un driver di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capPalettePaste.
+title: WM_CAP_PAL_PASTE messaggio (Vfw.h)
+description: Il messaggio WM CAP PAL PASTE copia il riquadro dagli \_ Appunti e lo passa a un driver di \_ \_ acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro capPalettePaste.
 ms.assetid: d49c7fd9-be40-4a07-8339-b85f7c4c331e
 keywords:
-- WM_CAP_PAL_PASTE messaggi multimediali di Windows
+- WM_CAP_PAL_PASTE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3daf88c69edbb8bad6257456b95a86c8a68df328
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7bedb760a444abe9b0667592855d701dc24a02b8ee57ea15ab30912a5e216d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686831"
 ---
-# <a name="wm_cap_pal_paste-message"></a>\_Messaggio incolla di WM Cap \_ PAL \_
+# <a name="wm_cap_pal_paste-message"></a>Messaggio \_ WM CAP PAL \_ \_ PASTE
 
-Il messaggio per la copia con **capo di WM \_ Cap \_ \_** copia la tavolozza dagli Appunti e la passa a un driver di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capPalettePaste**](/windows/desktop/api/Vfw/nf-vfw-cappalettepaste) .
+Il **messaggio WM CAP PAL \_ \_ \_ PASTE** copia il riquadro dagli Appunti e lo passa a un driver di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPalettePaste.**](/windows/desktop/api/Vfw/nf-vfw-cappalettepaste)
 
 
 ```C++
@@ -36,13 +36,13 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
-Se si verifica un errore e viene impostata una funzione di callback di errore utilizzando il messaggio di errore di richiamata di [**WM \_ Cap \_ set \_ \_**](wm-cap-set-callback-error.md) , viene chiamata la funzione di callback dell'errore.
+Se si verifica un errore e viene impostata una funzione di callback degli errori usando il messaggio [**WM CAP SET CALLBACK \_ \_ \_ \_ ERROR,**](wm-cap-set-callback-error.md) viene chiamata la funzione di callback degli errori.
 
 ## <a name="remarks"></a>Commenti
 
-Un driver di acquisizione utilizza una tavolozza quando richiesto dal formato video specificato.
+Un driver di acquisizione usa una tavolozza quando richiesto dal formato video digitalizzato specificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Un driver di acquisizione utilizza una tavolozza quando richiesto dal formato vi
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

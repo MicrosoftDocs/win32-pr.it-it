@@ -1,11 +1,11 @@
 ---
-title: ACS-attributo minimo-ritardo-variazione
-description: L'attributo ACS-Minimum-Delay-variazione è solo per uso interno.
+title: Attributo ACS-Minimum-Delay-Variation
+description: L'attributo ACS-Minimum-Delay-Variation è solo per uso interno.
 ms.assetid: eb82ac12-d570-4edc-bbfa-2de63d8f5088
 ms.tgt_platform: multiple
 keywords:
-- ACS-schema AD dell'attributo con variazione minima di ritardo
-- Schema AD dell'attributo aCSMinimumDelayVariation
+- Schema AD dell'attributo ACS-Minimum-Delay-Variation
+- Attributo aCSMinimumDelayVariation - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d4f360e87bd2d9c36da1651800e5765a0a6f924
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7cc0c3165d44a607ee52c388626d8193cb1317b6912b49d78643711ac2d6ca92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545261"
 ---
-# <a name="acs-minimum-delay-variation-attribute"></a>ACS-attributo minimo-ritardo-variazione
+# <a name="acs-minimum-delay-variation-attribute"></a>Attributo ACS-Minimum-Delay-Variation
 
-L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su RFC2210.
+**L'attributo ACS-Minimum-Delay-Variation** è solo per uso interno. Basato su RFC2210.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-minimo-ritardo-variazione          |
-| LDAP-Display-Name | aCSMinimumDelayVariation             |
+| CN                | ACS-Minimum-Delay-Variation          |
+| Ldap-Display-Name | aCSMinimumDelayVariation             |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1317              |
-| System-ID-GUID    | 9c65329b-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 9c65329b-3b90-11d2-90cc-00c04fd91ab1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **ACS-Minimum-Delay-variazione** è solo per uso interno. Basato su 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 

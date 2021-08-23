@@ -1,7 +1,7 @@
 ---
 description: Ottiene o imposta la descrizione del collegamento.
 ms.assetid: d3a95281-fb1f-4fd4-9d26-2a6e10a36a86
-title: Proprietà ShellLinkObject. Description (shldisp. h)
+title: Proprietà ShellLinkObject.Description (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: aff08831bf194da5c7ce958e5a0746abdd533dc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e1df9be00a098bbefe6a6925413a29f0e01655f9b794bb48ea14d8ac1cb91c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591931"
 ---
-# <a name="shelllinkobjectdescription-property"></a>Proprietà ShellLinkObject. Description
+# <a name="shelllinkobjectdescription-property"></a>ShellLinkObject.Description - proprietà
 
 Ottiene o imposta la descrizione del collegamento.
 
@@ -44,7 +44,7 @@ Descrizione del collegamento.
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -173,11 +173,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con le app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

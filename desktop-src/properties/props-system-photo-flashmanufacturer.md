@@ -1,19 +1,19 @@
 ---
-description: Stringa che indica il produttore del flash utilizzato per scattare l'immagine. Può essere vuoto o non presente.
+description: Stringa che indica il produttore del flash usato per scattare l'immagine. Può essere vuoto o non presente.
 ms.assetid: f95042dc-abc5-4851-9703-5f79dc7edb2f
-title: System. Photo. FlashManufacturer
+title: System.Photo.FlashManufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a49b95cac839fad25696f7d3d0e4866236dd1fa1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63fdfec257a11bb3555e8a4944317e5c2beb88a7d0063dfeee3da3da797ea918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119595431"
 ---
-# <a name="systemphotoflashmanufacturer"></a>System. Photo. FlashManufacturer
+# <a name="systemphotoflashmanufacturer"></a>System.Photo.FlashManufacturer
 
-Stringa che indica il produttore del flash utilizzato per scattare l'immagine. Può essere vuoto o non presente.
+Stringa che indica il produttore del flash usato per scattare l'immagine. Può essere vuoto o non presente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

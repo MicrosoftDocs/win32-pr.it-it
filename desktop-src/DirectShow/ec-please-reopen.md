@@ -1,19 +1,19 @@
 ---
-description: Il file di origine è stato modificato. L'applicazione deve ricompilare il grafico del filtro.
+description: Il file di origine è stato modificato. L'applicazione deve ricompilare il grafico dei filtri.
 ms.assetid: f99df68f-d7e8-4dbf-b958-84fe3f0821f0
-title: EC_PLEASE_REOPEN (dshow. h)
+title: EC_PLEASE_REOPEN (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1c02b1a945a773717f1dd1f1cfe237b764faa09
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efafbcd441dc62b48612e325a3520f9b3cfbdeb9b3b4d5b11144e12f9f22acd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686181"
 ---
-# <a name="ec_please_reopen"></a>EC \_ \_ riapri
+# <a name="ec_please_reopen"></a>EC \_ PLEASE \_ REOPEN
 
-Il file di origine è stato modificato. L'applicazione deve ricompilare il grafico del filtro.
+Il file di origine è stato modificato. L'applicazione deve ricompilare il grafico dei filtri.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Il filtro [origine Windows Media](windows-media-source-filter.md) legacy Invia questo evento. I nuovi filtri non devono inviare questo evento.
+Il filtro [Windows origine multimediale](windows-media-source-filter.md) legacy invia questo evento. I nuovi filtri non devono inviare questo evento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Il filtro [origine Windows Media](windows-media-source-filter.md) legacy Invia q
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

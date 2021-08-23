@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 583c387a553f54a4b4a0b20f3958bb71b279edba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 11c991dc38d78cd19aa2f5cc3d026d6ba9f59057dfad751229db1b0007f4fe55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119624581"
 ---
 # <a name="span-idvspixengineexperimenttriggertypespanexperimenttriggertype-enumeration"></a><span id="vspixengine.experimenttriggertype"></span>Enumerazione EXPERIMENTTRIGGERTYPE
 

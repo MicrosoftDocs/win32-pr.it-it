@@ -1,7 +1,7 @@
 ---
-description: "Il metodo inattivo notifica al pin che il filtro non è più attivo. Questo metodo esegue l'override del Metodo CBasePin:: Inactive. Se il thread di streaming è attivo, questo metodo lo arresta e attende la chiusura del thread."
+description: Il metodo Inactive notifica al pin che il filtro non è più attivo. Questo metodo esegue l'override del metodo CBasePin::Inactive. Se il thread di streaming è attivo, questo metodo lo arresta e attende la chiusura del thread.
 ms.assetid: 82cf0f13-e563-4a0b-b2e1-25ab19f7ed78
-title: Metodo CSourceStream. Inactive (source. h)
+title: Metodo CSourceStream.Inactive (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c4fab336f5f06d932189ee991fd190d1ae42b27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9d9424f4299d7a07ad98010846fa917307bd38eead028b4b8c38c40e2284c1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687371"
 ---
-# <a name="csourcestreaminactive-method"></a>Metodo CSourceStream. Inactive
+# <a name="csourcestreaminactive-method"></a>Metodo CSourceStream.Inactive
 
-Il `Inactive` metodo notifica al pin che il filtro non è più attivo. Questo metodo esegue l'override del metodo [**CBasePin:: inactive**](cbasepin-inactive.md) . Se il thread di streaming è attivo, questo metodo lo arresta e attende la chiusura del thread.
+Il `Inactive` metodo notifica al pin che il filtro non è più attivo. Questo metodo esegue l'override [**del metodo CBasePin::Inactive.**](cbasepin-inactive.md) Se il thread di streaming è attivo, questo metodo lo arresta e attende la chiusura del thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o un altro valore **HRESULT** .
+Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce S \_ OK o un altro valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: attributo ms-Exch-Owner-BL
-description: Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di proprietari per un oggetto.
+title: Attributo ms-Exch-Owner-BL
+description: Collegamento all'indietro all'attributo owner. Contiene un elenco di proprietari per un oggetto .
 ms.assetid: 7b47238d-7edd-4375-83bf-6dbb8da794ef
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff7be6dd574591f1619980e046222b8b62864534
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1945f393fb41488ad391dcee42d966f41d9572a0daf9744ce7bb23bf9cdf2bb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648091"
 ---
-# <a name="ms-exch-owner-bl-attribute"></a>attributo ms-Exch-Owner-BL
+# <a name="ms-exch-owner-bl-attribute"></a>Attributo ms-Exch-Owner-BL
 
-Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di proprietari per un oggetto.
+Collegamento all'indietro all'attributo owner. Contiene un elenco di proprietari per un oggetto .
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | ms-Exch-Owner-BL                        |
-| LDAP-Display-Name | ownerBL                                 |
+| Ldap-Display-Name | ownerBL                                 |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.104                  |
-| System-ID-GUID    | bf9679f4-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf9679f4-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di propri
 | ID collegamento                | 45                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di propri
 | ID collegamento                | 45                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di propri
 | ID collegamento                | 45                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di propri
 | ID collegamento                | 45                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Il collegamento all'indietro per l'attributo Owner. Contiene un elenco di propri
 | ID collegamento                | 45                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

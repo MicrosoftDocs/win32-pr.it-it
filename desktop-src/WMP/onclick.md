@@ -1,9 +1,9 @@
 ---
-title: OnClick
-description: Il gestore dell'evento OnClick gestisce un evento che si verifica quando l'utente fa clic sull'elemento.
+title: Onclick
+description: Il gestore eventi onclick gestisce un evento che si verifica quando l'utente fa clic sull'elemento.
 ms.assetid: 59aa0038-b004-4dc3-849a-6015db764843
 keywords:
-- fare clic su Windows Media Player
+- Onclick Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: be07d2cc8a7720f686ca5ae0847870b27279b8da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae69bcd5ff7d806db5bcaf1e7fd978fc43881d8b390ada7922f394f4f7225b4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647201"
 ---
-# <a name="onclick"></a>OnClick
+# <a name="onclick"></a>Onclick
 
-Il gestore dell'evento **OnClick** gestisce un evento che si verifica quando l'utente fa clic sull'elemento.
+Il **gestore eventi onclick** gestisce un evento che si verifica quando l'utente fa clic sull'elemento.
 
 ``` syntax
 onclick
@@ -30,7 +30,7 @@ onclick
 
 ## <a name="remarks"></a>Commenti
 
-Questo gestore eventi non è applicabile all'elemento **playlist** , elemento **popup** , elemento **video** , elemento **ListBox** , quando *video*. la **finestra** è false o l'elemento **Effects** quando *produce effetti*. **windowed** è true.
+Questo gestore eventi non è applicabile all'elemento **PLAYLIST,** all'elemento **POPUP,** all'elemento **VIDEO,** all'elemento **LISTBOX,** quando *VIDEO*. **windowless** è false o **l'elemento EFFECTS** quando *EFFECTS*. **windowed** è true.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,9 +1,9 @@
 ---
-title: OnMouseMove
-description: Il gestore eventi OnMouseMove gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse mentre è posizionato su un elemento.
+title: Onmousemove
+description: Il gestore eventi onmousemove gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse mentre si trova su un elemento.
 ms.assetid: 8c834593-c842-48db-862d-994922aad776
 keywords:
-- Media Player di Windows OnMouseMove
+- onmousemove Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d18dcbfee95b1e8c96c3074efe41ae3769b8e1a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dcb53be16f2a3422e88328561f9cb2a9613b1ee3860ad8a23cf922d01afd9aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647021"
 ---
-# <a name="onmousemove"></a>OnMouseMove
+# <a name="onmousemove"></a>Onmousemove
 
-Il gestore eventi **OnMouseMove** gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse mentre è posizionato su un elemento.
+Il **gestore eventi onmousemove** gestisce un evento che si verifica quando l'utente sposta il puntatore del mouse mentre si trova su un elemento.
 
 ``` syntax
 onmousemove
@@ -30,7 +30,7 @@ onmousemove
 
 ## <a name="remarks"></a>Commenti
 
-Questo gestore eventi non è applicabile all'elemento **playlist** , ovvero l'elemento **video** quando il *video*. la **finestra** è false o l'elemento **Effects** quando *produce effetti*. **windowed** è true.
+Questo gestore eventi non è applicabile **all'elemento PLAYLIST,** l'elemento **VIDEO** quando *VIDEO*. **windowless** è false o **l'elemento EFFECTS** quando *EFFECTS*. **windowed** è true.
 
 ## <a name="requirements"></a>Requisiti
 

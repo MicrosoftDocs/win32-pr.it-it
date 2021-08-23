@@ -1,7 +1,7 @@
 ---
 description: Individua la funzione di destinazione dell'importazione specificata e sostituisce il puntatore a funzione nel thunk di importazione con la destinazione dell'implementazione della funzione.
 ms.assetid: 4ab79b7c-81d1-40bf-a76b-217d93567e40
-title: ResolveDelayLoadedAPI (funzione)
+title: Funzione ResolveDelayLoadedAPI
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_location:
 - kernelbase.dll
 - mincoredload.dll
 - minkernelbase.dll
-ms.openlocfilehash: 019729cacb45cce87de2cc4015c661c494125108
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 359de5c52417f09c35e2fc994e36f0efd054f2a18dc3063be71dc12d588c60e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571551"
 ---
-# <a name="resolvedelayloadedapi-function"></a>ResolveDelayLoadedAPI (funzione)
+# <a name="resolvedelayloadedapi-function"></a>Funzione ResolveDelayLoadedAPI
 
 Individua la funzione di destinazione dell'importazione specificata e sostituisce il puntatore a funzione nel thunk di importazione con la destinazione dell'implementazione della funzione.
 
@@ -48,14 +48,14 @@ PVOID WINAPI ResolveDelayLoadedAPI(
 
 <dl> <dt>
 
-*ParentModuleBase* \[ in\]
+*ParentModuleBase* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo della base del modulo che importa una funzione a caricamento ritardato.
+Indirizzo della base del modulo che importa una funzione con caricamento ritardato.
 
 </dd> <dt>
 
-*DelayloadDescriptor* \[ in\]
+*DelayloadDescriptor* \[ Pollici\]
 </dt> <dd>
 
 Descrittore per il modulo da caricare.
@@ -72,21 +72,21 @@ Indirizzo dell'hook di errore. Vedere [**DelayLoadFailureHook**](delayloadfailur
 *FailureSystemHook* \[ in, facoltativo\]
 </dt> <dd>
 
-Indirizzo dell'hook di errore di sistema.
+Indirizzo dell'hook dell'errore di sistema.
 
 </dd> <dt>
 
-*ThunkAddress* \[ out\]
+*ThunkAddress* \[ Cambio\]
 </dt> <dd>
 
-Dati del thunk per la funzione di destinazione. Utilizzato per trovare la voce della tabella dei nomi specifica della funzione.
+Dati thunk per la funzione di destinazione. Usato per trovare la voce della tabella dei nomi specifica della funzione.
 
 </dd> <dt>
 
 *Flag* 
 </dt> <dd>
 
-Riservati deve essere 0.
+Riservato; deve essere 0.
 
 </dd> </dl>
 
@@ -109,7 +109,7 @@ Indirizzo dell'importazione o dello stub dell'errore.
 
 <dl> <dt>
 
-[Supporto del linker per le DLL di Delay-Loaded](https://msdn.microsoft.com/library/151kt790(v=VS.71).aspx)
+[Supporto del linker per Delay-Loaded DLL](https://msdn.microsoft.com/library/151kt790(v=VS.71).aspx)
 </dt> </dl>
 
  

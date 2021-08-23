@@ -1,11 +1,11 @@
 ---
 title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_MXType
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse di Mail Exchanger (Sig.).
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse di Mail Exchanger (MR).
 ms.assetid: 5724b14a-bb64-460c-ac49-28bac85b8620
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_MXType
-- Classe MicrosoftDNS_MXType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_MXType classe
+- MicrosoftDNS_MXType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8154e8ccdc6ac18824e2d56597ac8e0f186f3912
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad85168813abb9a5c92e77275d854050ad35256963d75b7f52792776be9a6e74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573914"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mxtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ MXType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mxtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MXType MicrosoftDNS \_
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse di Mail Exchanger (Sig.).
+Il **metodo CreateInstanceFromPropertyData** crea un'istanza di un record di risorse di Mail Exchanger (MR).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,31 +49,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zona, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per il RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe dell'oggetto RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -82,7 +82,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -90,28 +90,28 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*Preferenza* \[ in\]
+*Preferenza* \[ Pollici\]
 </dt> <dd>
 
-Preferenza assegnata a questo RR tra gli altri nello stesso proprietario. Sono preferibili valori inferiori.
+Preferenza data a questo RR tra gli altri allo stesso proprietario. Sono preferibili valori inferiori.
 
 </dd> <dt>
 
-*MailExchange* \[ in\]
+*MailExchange* \[ Pollici\]
 </dt> <dd>
 
-FQDN che specifica un host disposto a fungere da scambio di posta elettronica per il nome del proprietario.
+FQDN che specifica un host che vuole fungere da scambio di posta elettronica per il nome del proprietario.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -131,7 +131,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -139,13 +139,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_MXType MicrosoftDNS**](microsoftdns-mxtype.md)
+[**MicrosoftDNS \_ MXType**](microsoftdns-mxtype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe MXType di MicrosoftDNS**](microsoftdns-mxtype-modify.md)
+[**Metodo Modify della classe \_ MXType MicrosoftDNS**](microsoftdns-mxtype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

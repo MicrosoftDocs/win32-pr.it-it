@@ -1,10 +1,10 @@
 ---
-title: Attributo Service-binding-information
-description: Informazioni di binding specifiche del servizio in formato stringa.
+title: Attributo Service-Binding-Information
+description: Informazioni di associazione specifiche del servizio in formato stringa.
 ms.assetid: 0348b375-85cd-4ca7-87bc-122548d5e48d
 ms.tgt_platform: multiple
 keywords:
-- Service-binding-schema AD dell'attributo informazioni
+- Schema AD dell'attributo Service-Binding-Information
 - Schema AD dell'attributo serviceBindingInformation
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 061592e86561fea2c6b09563237c9213c5fb32e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd7d4f6935020287f40f86ddb16271d0005ae4254a799b34011dee8d665f4e2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646101"
 ---
-# <a name="service-binding-information-attribute"></a>Attributo Service-binding-information
+# <a name="service-binding-information-attribute"></a>Attributo Service-Binding-Information
 
-Informazioni di binding specifiche del servizio in formato stringa.
+Informazioni di associazione specifiche del servizio in formato stringa.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Service-binding-informazioni                 |
-| LDAP-Display-Name | serviceBindingInformation                   |
+| CN                | Service-Binding-Information                 |
+| Ldap-Display-Name | serviceBindingInformation                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.510                      |
-| System-ID-GUID    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
+| System-Id-Guid    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Informazioni di binding specifiche del servizio in formato stringa.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Vero                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
+| Classi usate in        | [**Punto di connessione del servizio**](c-serviceconnectionpoint.md)<br/> |
 
 
 

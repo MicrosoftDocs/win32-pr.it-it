@@ -1,7 +1,7 @@
 ---
 description: Il metodo CreateInstance crea una nuova istanza di questo oggetto.
 ms.assetid: 5c62f781-0f22-4d8f-8517-272405dd07c5
-title: Metodo CSystemClock. CreateInstance (Sysclock. h)
+title: Metodo CSystemClock.CreateInstance (Sysclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 264997448aea028c5725d207ce4b301d369a092c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63626804ad4d067e5067170e0fc17cc83c179a906c0e625bb02a3ffb8a4ef197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687331"
 ---
-# <a name="csystemclockcreateinstance-method"></a>Metodo CSystemClock. CreateInstance
+# <a name="csystemclockcreateinstance-method"></a>Metodo CSystemClock.CreateInstance
 
-Il `CreateInstance` metodo crea una nuova istanza di questo oggetto.
+Il `CreateInstance` metodo crea una nuova istanza di questo oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,27 +43,27 @@ static CUnknown* WINAPI CreateInstance(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** di aggregazione.
+Puntatore all'interfaccia **IUnknown aggregata.**
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve un valore **HRESULT** che indica l'esito positivo o negativo del metodo.
+Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito positivo o negativo del metodo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a una nuova istanza di questo oggetto.
+Restituisce un puntatore a una nuova istanza di questo oggetto .
 
 ## <a name="remarks"></a>Commenti
 
-Il class factory chiama questo metodo per creare l'oggetto.
+L class factory chiama questo metodo per creare l'oggetto .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Il class factory chiama questo metodo per creare l'oggetto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Sysclock. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Sysclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

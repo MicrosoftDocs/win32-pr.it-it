@@ -4,12 +4,12 @@ ms.assetid: c55647d8-0e6e-4da5-a822-3a91fba179ea
 title: System.Media.SubscriptionContentId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36321c4552f7f35de0580bec27d7378518c80dad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4a4390ea6328a5ce7c7331793692014c232025e1fb98f2b0a6e4dbb54485ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597501"
 ---
 # <a name="systemmediasubscriptioncontentid"></a>System.Media.SubscriptionContentId
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

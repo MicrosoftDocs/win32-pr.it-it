@@ -1,28 +1,28 @@
 ---
-description: Poiché il trasferimento dei dati di immagine è basato sul flusso in Windows Image Acquisition (WIA) 2,0, non è necessario specificare un tipo di destinazione, ad esempio
+description: Poiché il trasferimento dei dati delle immagini è basato sul flusso in Windows Image Acquisition (WIA) 2.0, non è necessario specificare un tipo di destinazione,ad esempio
 ms.assetid: ebb9fce5-9450-4ffe-b480-b21670b60f90
-title: Trasferimento dei dati di immagine in WIA 2,0
+title: Trasferimento di dati immagine in WIA 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ded5c6cd8fb94b1beccd86c3cd8aef3018aed0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66aca2179c477f49bc76197795ddf9d59792ca242da8729c169c39aa69553161
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592961"
 ---
-# <a name="transferring-image-data-in-wia-20"></a>Trasferimento dei dati di immagine in WIA 2,0
+# <a name="transferring-image-data-in-wia-20"></a>Trasferimento di dati immagine in WIA 2.0
 
 > [!Note]  
-> In questa esercitazione viene illustrato come trasferire i dati delle immagini in applicazioni eseguite in Windows Vista o versioni successive. Per informazioni sul trasferimento di dati immagine in applicazioni eseguite in Windows XP o versioni precedenti, vedere [trasferimento di dati di immagine in WIA 1,0](-wia-transferring-image-data.md) .
+> Questa esercitazione illustra come trasferire dati di immagine in applicazioni eseguite in Windows Vista o versioni successive. Per informazioni sul trasferimento di dati di immagine in applicazioni eseguite in Windows XP o versioni precedenti, vedere Trasferimento di dati immagine [in WIA 1.0.](-wia-transferring-image-data.md)
 
  
 
-Poiché il trasferimento dei dati di immagine è basato sul flusso in Windows Image Acquisition (WIA) 2,0, non è necessario specificare un tipo di destinazione (ad esempio memoria o file). L'applicazione fornisce semplicemente a WIA 2,0 il flusso da usare e il driver legge o scrive nel flusso. Il flusso può essere un flusso di file, un flusso di memoria o qualsiasi altro tipo di flusso ed è trasparente per il driver. L'uso dei flussi fornisce anche una facile integrazione con il filtro di elaborazione delle immagini.
+Poiché il trasferimento dei dati delle immagini è basato sul flusso in Windows Image Acquisition (WIA) 2.0, non è necessario specificare un tipo di destinazione,ad esempio memoria o file. L'applicazione fornisce semplicemente a WIA 2.0 il flusso da usare e il driver legge o scrive nel flusso. Il flusso può essere un flusso di file, un flusso di memoria o qualsiasi altro tipo di flusso ed è trasparente per il driver. L'uso dei flussi offre anche una facile integrazione con il filtro Elaborazione immagini.
 
-Usare i metodi dell'interfaccia [**IWiaTransfer**](-wia-iwiatransfer.md) per trasferire i dati da un dispositivo WIA 2,0 a un'applicazione. Questa interfaccia è disponibile tramite l'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) . L'interfaccia **IWiaTransfer** dispone di metodi per richiedere il caricamento o il download di dati da e verso un dispositivo. Questi metodi accettano un callback fornito dall'applicazione e usano un [IStream](/windows/win32/api/objidl/nn-objidl-istream) fornito dall'applicazione per la destinazione effettiva del trasferimento dei dati.
+Usare i metodi [**dell'interfaccia IWiaTransfer**](-wia-iwiatransfer.md) per trasferire dati da un dispositivo WIA 2.0 a un'applicazione. Questa interfaccia è disponibile tramite [**l'interfaccia IWiaItem2.**](-wia-iwiaitem2.md) **L'interfaccia IWiaTransfer** include metodi per richiedere il caricamento o il download di dati da e verso un dispositivo. Questi metodi accettano un callback fornito dall'applicazione e usano un [IStream](/windows/win32/api/objidl/nn-objidl-istream) fornito dall'applicazione per la destinazione effettiva del trasferimento dei dati.
 
-Le applicazioni devono eseguire una query su un elemento di immagine per ottenere un puntatore alla relativa interfaccia [**IWiaTransfer**](-wia-iwiatransfer.md) , come illustrato nell'esempio di codice seguente:
+Le applicazioni devono eseguire una query su un elemento immagine per ottenere un puntatore alla relativa [**interfaccia IWiaTransfer,**](-wia-iwiatransfer.md) come illustrato nell'esempio di codice seguente:
 
 
 ```
@@ -34,7 +34,7 @@ Le applicazioni devono eseguire una query su un elemento di immagine per ottener
 
 
 
-Nel codice precedente si presuppone che **pWiaItem2** sia un puntatore valido all'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) . La chiamata a [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) Compila **pWiaTransfer** con un puntatore all'interfaccia [**IWiaTransfer**](-wia-iwiatransfer.md) dell'elemento a cui fa riferimento **pWiaItem2**.
+Nel codice precedente si presuppone che **pWiaItem2 sia** un puntatore valido [**all'interfaccia IWiaItem2.**](-wia-iwiaitem2.md) La chiamata a [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) riempie **pWiaTransfer** con un puntatore all'interfaccia [**IWiaTransfer**](-wia-iwiatransfer.md) dell'elemento a cui fa riferimento **pWiaItem2.**
 
 L'applicazione crea quindi un'istanza dell'oggetto callback, come illustrato di seguito.
 
@@ -47,9 +47,9 @@ L'applicazione crea quindi un'istanza dell'oggetto callback, come illustrato di 
 
 
 
-L'applicazione imposta quindi le proprietà usando l'interfaccia [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) dell'elemento [**IWiaItem2**](-wia-iwiaitem2.md) ed esegue il trasferimento.
+L'applicazione imposta quindi le proprietà usando [**l'interfaccia IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) [**dell'elemento IWiaItem2**](-wia-iwiaitem2.md) ed esegue il trasferimento.
 
-Download
+Scaricare:
 
 
 ```
@@ -59,7 +59,7 @@ Download
 
 
 
-Caricamento
+Caricamento:
 
 
 ```
@@ -102,7 +102,7 @@ Caricamento
 
 
 
-Di seguito è riportato l'esempio completo di trasferimento dei dati:
+Ecco l'esempio completo di trasferimento dei dati:
 
 
 ```

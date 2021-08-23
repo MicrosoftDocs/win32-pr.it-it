@@ -1,5 +1,5 @@
 ---
-description: Estrae le informazioni di intestazione da un Delta.
+description: Estrae le informazioni di intestazione da un delta.
 title: Funzione ExtractPatchHeaderToFileA/W
 ms.topic: reference
 ms.date: 04/17/2020
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - mspatchc.dll
-ms.openlocfilehash: 40835a0b88558046ff9086ffcd7ec4609d1ed863
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 626bd53e3361f4d29cc76e17ae2788ddea3bc8b99b580196bcbf77c27a6983d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571801"
 ---
 # <a name="extractpatchheadertofileaw-function"></a>Funzione ExtractPatchHeaderToFileA/W
 
-Le funzioni **ExtractPatchHeaderToFileA** e **ExtractPatchHeaderToFileW** estraggono le informazioni di intestazione da un Delta. Il Delta viene fornito come percorso di file. L'intestazione di output viene scritta anche in un percorso specificato.
+Le **funzioni ExtractPatchHeaderToFileA** **ed ExtractPatchHeaderToFileW** estraggono le informazioni di intestazione da un delta. Il delta viene fornito come percorso di file. Anche l'intestazione di output viene scritta in un percorso specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ BOOL  PATCHAPI  ExtractPatchHeaderToFileW(
 
 *PatchFileName*
 
-Nome del Delta che contiene l'intestazione.
+Nome del delta contenente l'intestazione.
 
 *PatchHeaderFileName*
 
@@ -52,15 +52,15 @@ Nome del file di intestazione da creare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **true** se ha esito positivo; in caso contrario, restituisce **false**.
+Questa funzione restituisce **TRUE** se ha esito positivo. In caso contrario, restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |----------------|---------------------------------------------------------------------------------------|
-| Intestazione | PatchAPI. h |
+| Intestazione | patchapi.h |
 | DLL | mspatchc.dll |
-| Unicode | Implementato come ExtractPatchHeaderToFileW (Unicode) e ExtractPatchHeaderToFileA (ANSI) |
+| Unicode | Implementato come ExtractPatchHeaderToFileW (Unicode) ed ExtractPatchHeaderToFileA (ANSI) |
 
 ## <a name="see-also"></a>Vedi anche
 

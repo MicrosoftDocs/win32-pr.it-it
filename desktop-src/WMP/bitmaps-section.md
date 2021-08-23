@@ -1,26 +1,26 @@
 ---
-title: Sezione bitmap
-description: Sezione bitmap
+title: Sezione Bitmaps
+description: Sezione Bitmaps
 ms.assetid: db2801e5-c55a-4681-9fe9-6027f28653e0
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, bitmap
-- interfacce, bitmap
-- creazione di interfacce, sezione bitmap
-- scrittura di codice per interfacce, sezione bitmap
-- bitmap in interfacce, sezione bitmap
-- file di definizione dell'interfaccia, sezione bitmap
+- Windows Media Player Interfaccia per dispositivi mobili, bitmap
+- interfaccia, bitmap
+- creazione di interfaccia, sezione Bitmap
+- scrittura di codice per le interfaccia, sezione Bitmap
+- bitmap nelle interfaccia, sezione Bitmap
+- file di definizione dell'interfaccia utente, sezione Bitmaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf4a5e41e8e2b095b199a072e31abde3c1cbaa29
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3062a8679e916fc8eaa733ab82c3df51845969873fcf83534be5f9ec6e4c6f14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573461"
 ---
-# <a name="bitmaps-section"></a>Sezione bitmap
+# <a name="bitmaps-section"></a>Sezione Bitmaps
 
-Successivamente, è necessario disporre di una sezione che definisce ognuno dei file bitmap. Ogni tipo di bitmap che verrà usato deve avere un file assegnato, sebbene sia possibile avere più di un tipo usando la stessa bitmap.
+È quindi necessario disporre di una sezione che definisce ogni file bitmap. A ogni tipo di bitmap che verrà utilizzato deve essere assegnato un file, anche se è possibile avere più di un tipo usando la stessa bitmap.
 
 
 ```C++
@@ -38,12 +38,12 @@ Successivamente, è necessario disporre di una sezione che definisce ognuno dei 
 
 
 
-La sezione bitmap deve iniziare con le bitmap di Word tra parentesi quadre, quindi una riga per ogni tipo di bitmap che si vuole definire. In questo esempio sono stati definiti cinque tipi di bitmap. Per ulteriori informazioni sulla sezione bitmap, vedere [bitmap](bitmaps.md) nel riferimento all'interfaccia.
+La sezione Bitmaps deve iniziare con la parola Bitmaps tra parentesi quadre e quindi con una riga per ogni tipo di bitmap che si vuole definire. In questo esempio sono stati definiti cinque tipi di bitmap. Per altre informazioni sulla sezione Bitmap, vedere [Bitmap in](bitmaps.md) Riferimenti all'interfaccia.
 
 > [!Note]  
-> L'area e le bitmap con privilegi avanzati sono deprecate in Windows Media Player 10 mobile o versioni successive.
+> Le bitmap Region e Super sono deprecate in Windows Media Player 10 Mobile o versioni successive.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -52,9 +52,9 @@ La sezione bitmap deve iniziare con le bitmap di Word tra parentesi quadre, quin
 [**Scrittura del codice**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

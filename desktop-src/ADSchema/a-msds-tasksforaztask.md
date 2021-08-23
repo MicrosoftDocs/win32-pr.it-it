@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Tasks-for-AZ-Task
-description: Elenco di attività collegate a AZ-Task.
+title: Attributo ms-DS-Tasks-For-Az-Task
+description: Elenco di attività collegate ad Az-Task.
 ms.assetid: dedde550-7d8c-4f76-8e69-f90313f58c08
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Tasks-for-AZ-Task
-- attributo msDS-TasksForAzTask-schema AD
+- Schema AD dell'attributo ms-DS-Tasks-For-Az-Task
+- Schema AD dell'attributo msDS-TasksForAzTask
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ce6fee08b86772f3d541cc2d0252979158cd6f2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f13f893ecb27e83aaf26a505dc5c86f7f2eb7add8e0c80f701f9f90445a10b0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544221"
 ---
-# <a name="ms-ds-tasks-for-az-task-attribute"></a>attributo ms-DS-Tasks-for-AZ-Task
+# <a name="ms-ds-tasks-for-az-task-attribute"></a>Attributo ms-DS-Tasks-For-Az-Task
 
-Elenco di attività collegate a AZ-Task.
+Elenco di attività collegate ad Az-Task.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Tasks-for-AZ-Task                 |
-| LDAP-Display-Name | msDS-TasksForAzTask                     |
+| CN                | ms-DS-Tasks-For-Az-Task                 |
+| Ldap-Display-Name | msDS-TasksForAzTask                     |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Amministratore di AzRoles                           |
+| Privilegio di aggiornamento  | Amministratore di AzRoles                           |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri. |
 | Attribute-Id      | 1.2.840.113556.1.4.1810                 |
-| System-ID-GUID    | b11c8ee2-5fcd-46a7-95f0-f38333f096cf    |
+| System-Id-Guid    | b11c8ee2-5fcd-46a7-95f0-f38333f096cf    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Elenco di attività collegate a AZ-Task.
 | ID collegamento                | 2020                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Elenco di attività collegate a AZ-Task.
 | ID collegamento                | 2020                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Elenco di attività collegate a AZ-Task.
 | ID collegamento                | 2020                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Elenco di attività collegate a AZ-Task.
 | ID collegamento                | 2020                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Elenco di attività collegate a AZ-Task.
 | ID collegamento                | 2020                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

@@ -4,21 +4,21 @@ description: Video per Windows
 ms.assetid: e09dbeaa-c167-41e5-bc23-dcabb1bb0e4d
 keywords:
 - Video per Windows (VFW), informazioni
-- VFW (video per Windows), informazioni
+- VFW (Video per Windows),informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2debcfe05f5eaebf77660102fef88c460047ba57
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24c2a3f3f966bfcc810f5ee16c3d2025e8178c715718df4a7ca290ef09731b3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687501"
 ---
 # <a name="video-for-windows"></a>Video per Windows
 
-Video for Windows (VFW) fornisce funzioni che consentono a un'applicazione di elaborare dati video. VFW è stato introdotto in Windows a 16 bit. Molte delle sue funzionalità sono state sostituite dalle funzionalità di DirectX. Per ulteriori informazioni, vedere la documentazione di DirectX.
+Video for Windows (VFW) offre funzioni che consentono a un'applicazione di elaborare i dati video. VFW è stato introdotto in Windows a 16 bit. Molte delle funzionalità sono state sostituite dalle funzionalità di DirectX. Per altre informazioni, vedere la documentazione di DirectX.
 
-Gli argomenti seguenti sono descritti nel video per la documentazione di Windows.
+Gli argomenti seguenti sono descritti nella documentazione relativa Windows video.
 
 -   [Funzioni e macro AVIFile](avifile-functions-and-macros.md)
 -   [Gestione compressione video](video-compression-manager.md)
@@ -26,9 +26,9 @@ Gli argomenti seguenti sono descritti nel video per la documentazione di Windows
 -   [Gestori di file e flussi personalizzati](custom-file-and-stream-handlers.md)
 -   [DrawDib](drawdib.md)
 
- 
+ 
 
- 
+ 
 
 
 

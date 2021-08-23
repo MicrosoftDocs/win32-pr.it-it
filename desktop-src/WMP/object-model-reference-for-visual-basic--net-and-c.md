@@ -1,33 +1,33 @@
 ---
-title: Riferimento del modello a oggetti per Visual Basic .NET e C
-description: Riferimento del modello a oggetti per Visual Basic .NET e C \
+title: Informazioni di riferimento sul modello a oggetti Visual Basic .NET e C
+description: Informazioni di riferimento sul modello a oggetti Visual Basic .NET e C\
 ms.assetid: 81cd1f81-1bd2-420f-b20b-3505ad52f201
 keywords:
-- Windows Media Player, modello a oggetti
+- Windows Media Player,modello a oggetti
 - Windows Media Player Mobile, modello a oggetti
-- Modello a oggetti di Windows Media Player, riferimento
+- Windows Media Player a oggetti, riferimento
 - modello a oggetti, riferimento
-- Controllo ActiveX, riferimento
-- Controllo ActiveX di Windows Media Player, riferimento
-- Controllo ActiveX Windows Media Player Mobile, riferimento
-- informazioni di riferimento sul modello a oggetti, Visual Basic .NET
-- Windows Media Player, Visual Basic .NET
-- Windows Media Player Mobile Visual Basic .NET
-- Modello a oggetti di Windows Media Player, Visual Basic .NET
+- ActiveX, riferimento
+- Windows Media Player ActiveX, riferimento
+- Windows Media Player Controllo ActiveX mobile, riferimento
+- informazioni di riferimento per il modello a oggetti, Visual Basic .NET
+- Windows Media Player,Visual Basic .NET
+- Windows Media Player Mobile,Visual Basic .NET
+- Windows Media Player a oggetti, Visual Basic .NET
 - modello a oggetti, Visual Basic .NET
-- Controllo ActiveX di Windows Media Player, Visual Basic .NET
-- Controllo ActiveX Windows Media Player Mobile Visual Basic .NET
-- Controllo ActiveX, Visual Basic .NET
-- Riferimento al modello a oggetti di Visual Basic .NET
-- riferimento per il modello a oggetti, C
-- Windows Media Player, C
-- Windows Media Player Mobile, C
-- Modello a oggetti di Windows Media Player, C
-- modello a oggetti, C
-- Controllo ActiveX di Windows Media Player, C
-- Controllo ActiveX Windows Media Player Mobile, C
-- Controllo ActiveX, C
-- Riferimento al modello a oggetti C
+- Windows Media Player ActiveX controllo, Visual Basic .NET
+- Windows Media Player Controllo ActiveX per dispositivi mobili, Visual Basic .NET
+- ActiveX, Visual Basic .NET
+- Visual Basic riferimento al modello a oggetti .NET
+- informazioni di riferimento per il modello a oggetti, C
+- Windows Media Player,C
+- Windows Media Player Mobile,C
+- Windows Media Player a oggetti, C
+- modello a oggetti,C
+- Windows Media Player ActiveX, C
+- Windows Media Player Controllo ActiveX mobile,C
+- ActiveX controllo, C
+- Informazioni di riferimento sul modello a oggetti C
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -35,58 +35,58 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bf17c796173abc03261555fda264bc3868bd1964
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 720b9dc7755c383e4a4dfc657095524abb55ec726773c935071a773e09eb7df5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647291"
 ---
-# <a name="object-model-reference-for-visual-basic-net-and-c"></a>Riferimento del modello a oggetti per Visual Basic .NET e C #
+# <a name="object-model-reference-for-visual-basic-net-and-c"></a>Informazioni di riferimento sul modello a oggetti Visual Basic .NET e C #
 
 > [!Note]  
-> L'uso del controllo ActiveX di Windows Media Player con Visual Basic .NET e C# è supportato solo per Windows Media Player 9 Series SDK e versioni successive.
+> L'uso del Windows Media Player ActiveX con Visual Basic .NET e C# è supportato solo per Windows Media Player 9 Series SDK e versioni successive.
 
- 
+ 
 
-Questa sezione di riferimento fornisce la documentazione per l'oggetto **AxWindowsMediaPlayer** e per le interfacce per il controllo ActiveX di Windows Media Player. Questa funzionalità è disponibile quando si usa il controllo ActiveX di Windows Media Player tramite l'interoperabilità COM in una soluzione Visual Studio .NET 2002 o versione successiva.
+Questa sezione di riferimento fornisce la documentazione per **l'oggetto AxWindowsMediaPlayer** e per le interfacce al Windows Media Player ActiveX controllo. Questa funzionalità è disponibile quando si usa il controllo Windows Media Player ActiveX tramite interoperabilità COM in una Visual Studio .NET 2002 o versione successiva.
 
 Per una dimostrazione dell'uso del controllo Windows Media Player con il .NET Framework, vedere gli esempi Visual Basic e C# inclusi in questo SDK.
 
-Le sezioni seguenti documentano gli oggetti e le interfacce Visual Basic .NET e C# forniti dall'assembly di interoperabilità COM creato da Visual Studio.
+Le sezioni seguenti illustrano Visual Basic oggetti e interfacce .NET e C# forniti dall'assembly di interoperabilità COM Visual Studio crea.
 
 > [!Note]  
-> Funzionalità che richiede la comunicazione remota il controllo Windows Media Player non è supportato per la programmazione .NET.
+> La funzionalità che richiede la comunicazione remota Windows Media Player controllo non è supportata per la programmazione .NET.
 
- 
+ 
 
 
 
 | Sezione                                                                                | Descrizione                                                                                                                    |
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Oggetto AxWindowsMediaPlayer (VB e C#)](axwindowsmediaplayer-object--vb-and-c.md)  | Elenca le proprietà, i metodi e gli eventi disponibili per i programmatori .NET per l'oggetto radice del controllo Media Player di Windows. |
-| [Interfacce per Visual Basic .NET e C #](interfaces-for-visual-basic--net-and-c.md) | Elenca le interfacce disponibili per i programmatori .NET che utilizzano il controllo ActiveX di Windows Media Player.                           |
+| [Oggetto AxWindowsMediaPlayer (VB e C#)](axwindowsmediaplayer-object--vb-and-c.md)  | Elencare le proprietà, i metodi e gli eventi disponibili per i programmatori .NET per l'oggetto radice del Windows Media Player controllo. |
+| [Interfacce per Visual Basic .NET e C #](interfaces-for-visual-basic--net-and-c.md) | Elenca le interfacce disponibili per i programmatori .NET che usano il Windows Media Player ActiveX controllo .                           |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Riferimento al modello a oggetti di Windows Media Player**](windows-media-player-object-model-reference.md)
+[**Windows Media Player Informazioni di riferimento sul modello a oggetti**](windows-media-player-object-model-reference.md)
 </dt> <dt>
 
-[**Uso del controllo Media Player di Windows in una soluzione .NET Framework**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
+[**Uso del controllo Windows Media Player in una .NET Framework soluzione**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
 </dt> <dt>
 
 [**Esempi**](samples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

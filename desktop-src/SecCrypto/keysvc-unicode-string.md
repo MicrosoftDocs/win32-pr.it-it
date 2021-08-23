@@ -1,7 +1,7 @@
 ---
-description: La \_ \_ struttura di stringhe Unicode KEYSVC definisce una stringa Unicode e una lunghezza massima per la stringa. Questa struttura viene utilizzata dalla funzione RKeyPFXInstall.
+description: La struttura KEYSVC \_ UNICODE STRING definisce una stringa Unicode e una lunghezza massima per la \_ stringa. Questa struttura viene usata dalla funzione RKeyPFXInstall.
 ms.assetid: 12142543-5c53-4638-9fd7-f523594142c8
-title: Struttura KEYSVC_UNICODE_STRING (Rkeysvcc. h)
+title: KEYSVC_UNICODE_STRING struttura (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 5424fa103b2bbbadd735dbda0bb92f9dea21787b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1e82ab481b9844e8a21940112c6014a19f111cab53db2974c488dff0982027
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119622331"
 ---
-# <a name="keysvc_unicode_string-structure"></a>\_Struttura di \_ stringhe Unicode KEYSVC
+# <a name="keysvc_unicode_string-structure"></a>Struttura STRINGA UNICODE KEYSVC \_ \_
 
-La struttura di **\_ \_ stringhe Unicode KEYSVC** definisce una stringa [*Unicode*](../secgloss/u-gly.md) e una lunghezza massima per la stringa. Questa struttura viene utilizzata dalla funzione [**RKeyPFXInstall**](rkeypfxinstall.md) .
+La **struttura KEYSVC \_ UNICODE \_ STRING** definisce una stringa [*Unicode*](../secgloss/u-gly.md) e una lunghezza massima per la stringa. Questa struttura viene usata dalla [**funzione RKeyPFXInstall.**](rkeypfxinstall.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ typedef struct _KEYSVC_UNICODE_STRING {
 **Length**
 </dt> <dd>
 
-Valore **ushort** che specifica la lunghezza, in byte, utilizzata per il **buffer**.
+Valore **USHORT** che specifica la lunghezza, in byte, utilizzata per **buffer**.
 
 </dd> <dt>
 
 **MaximumLength**
 </dt> <dd>
 
-Valore **ushort** che specifica la lunghezza massima, in byte, consentita per il **buffer**.
+Valore **USHORT** che specifica la lunghezza massima, in byte, consentita per **Buffer**.
 
 </dd> <dt>
 
 **Buffer**
 </dt> <dd>
 
-Puntatore a un **ushort** che rappresenta la stringa Unicode.
+Puntatore a un **USHORT che** rappresenta la stringa Unicode.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ Puntatore a un **ushort** che rappresenta la stringa Unicode.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Puntatore a un **ushort** che rappresenta la stringa Unicode.
 [**RKeyPFXInstall**](rkeypfxinstall.md)
 </dt> <dt>
 
-[**\_BLOB KEYSVC**](keysvc-blob.md)
+[**KEYSVC \_ BLOB**](keysvc-blob.md)
 </dt> </dl>
 
  

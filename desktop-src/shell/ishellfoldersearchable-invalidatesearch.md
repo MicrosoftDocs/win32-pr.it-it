@@ -1,5 +1,5 @@
 ---
-description: Rende questo puntatore a un elenco di identificatori di elemento (PIDL) una parte non valida della cartella shell.
+description: Rende questo puntatore a un elenco di identificatori di elemento (PIDL) una parte non valida della cartella Shell.
 title: Metodo IShellFolderSearchable::InvalidateSearch
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6985a299-8547-4db4-99f9-d46dafe4789b
-ms.openlocfilehash: 43d76c6a27b301a61474b8028af16e5e540cf2ce
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5f443f3abd4a5cf2c1d0fc473c9267660d05c183a02c7f7705c1fabcbc9a8918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596571"
 ---
 # <a name="ishellfoldersearchableinvalidatesearch-method"></a>Metodo IShellFolderSearchable::InvalidateSearch
 
-Rende questo puntatore a un elenco di identificatori di elemento (PIDL) una parte non valida della cartella shell.
+Rende questo puntatore a un elenco di identificatori di elemento (PIDL) una parte non valida della cartella Shell.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +66,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Quando una cartella di ricerca viene invalidata, può eseguire la pulizia di tutte le risorse usate. Il **metodo IShellFolderSearchable::InvalidateSearch** può causare l'annullamento di una ricerca asincrona e comporterà la versione finale dell'oggetto [**interfaccia IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md)
+Quando una cartella di ricerca viene invalidata, può eseguire la pulizia di tutte le risorse usate. Il **metodo IShellFolderSearchable::InvalidateSearch** può causare l'annullamento di una ricerca asincrona e comporterà la versione finale dell'oggetto interfaccia [**IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md)
 
 ## <a name="requirements"></a>Requisiti
 

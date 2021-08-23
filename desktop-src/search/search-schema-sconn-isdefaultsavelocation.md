@@ -1,19 +1,19 @@
 ---
-description: L'elemento booleano facoltativo <isDefaultSaveLocation> specifica se la posizione descritta nel connettore di ricerca deve essere utilizzata come percorso di salvataggio predefinito. Questo elemento non ha elementi figlio e nessun attributo.
+description: L'elemento <isDefaultSaveLocation> booleano facoltativo specifica se il percorso descritto nel connettore di ricerca deve essere usato come percorso di salvataggio predefinito. Questo elemento non ha elementi figlio e nessun attributo.
 ms.assetid: 4a33f411-d71e-41d3-b5fd-018a92dceeac
 title: Elemento isDefaultSaveLocation (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b664e4cd6f7c88f1dfbeb44ba23faee5d24a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e94cfe2f620dd7c4ccac2bed27dd87511e9174861aeb74dce9ac5737263e9275
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597481"
 ---
 # <a name="isdefaultsavelocation-element-search-connector-schema"></a>Elemento isDefaultSaveLocation (schema del connettore di ricerca)
 
-L'elemento booleano facoltativo <isDefaultSaveLocation> specifica se la posizione descritta nel connettore di ricerca deve essere utilizzata come percorso di salvataggio predefinito. Questo elemento non ha elementi figlio e nessun attributo.
+L'elemento <isDefaultSaveLocation> booleano facoltativo specifica se il percorso descritto nel connettore di ricerca deve essere usato come percorso di salvataggio predefinito. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ L'elemento booleano facoltativo <isDefaultSaveLocation> specifica se la posizion
 
 ## <a name="remarks"></a>Commenti
 
-Quando un utente sceglie di salvare un elemento, Esplora risorse Salva l'elemento nel percorso specificato nell' <simpleLocation> elemento. Gli utenti possono modificare questa impostazione usando la finestra di dialogo delle proprietà per il connettore di ricerca.
+Quando un utente sceglie di salvare un elemento, Windows Explorer salva l'elemento nel percorso specificato <simpleLocation> nell'elemento . Gli utenti possono modificare questa impostazione usando la finestra di dialogo Proprietà per il connettore di ricerca.
 
 ## <a name="example"></a>Esempio
 

@@ -1,6 +1,6 @@
 ---
 title: HttpCalculatorWithBasicOverSslServiceExample
-description: Esaminare un esempio C++ di API dei servizi Web Windows (WWSAPI) di una calcolatrice HTTP con servizio over-SSL di base.
+description: Esaminare un Windows api dei servizi Web (WWSAPI) C++ di un calcolatore HTTP con servizio over-SSL di base.
 ms.assetid: ff56afec-da8c-4a2c-b26e-a065f9b73db1
 keywords:
 - HttpCalculatorWithBasicOverSslServiceExample Native-Web-Services
@@ -8,16 +8,16 @@ keywords:
 - Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0490c8409ea8a08c990bad49472303dd4ae58c93
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2217cbe700ec5844b824d81cc6cdc939b187e08e36ba761d690970bbc7f7edea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546011"
 ---
 # <a name="httpcalculatorwithbasicoversslserviceexample"></a>HttpCalculatorWithBasicOverSslServiceExample
 
-Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
+Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
 
 -   [HttpCalculatorWithBasicOverSslService.cpp](#httpcalculatorwithbasicoversslservicecpp)
 -   [CalculatorService.wsdl](#calculatorservicewsdl)

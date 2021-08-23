@@ -1,10 +1,10 @@
 ---
-title: Query-Policy-BL (attributo)
-description: Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio di query.
+title: Attributo Query-Policy-BL
+description: Elenco di tutti gli oggetti che contiene riferimenti a un criterio di query specificato.
 ms.assetid: af421d00-2cc8-4ea1-8374-148db58c493b
 ms.tgt_platform: multiple
 keywords:
-- Query-criteri-BL attributo AD schema
+- Schema AD dell'attributo Query-Policy-BL
 - Schema AD dell'attributo queryPolicyBL
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 739abe3dbf67e5e8d154ef1424db81476f153858
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 27e576294a66dd896ec17ad3d0c9894c53824824ed89fff043d44093245850cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646950"
 ---
-# <a name="query-policy-bl-attribute"></a>Query-Policy-BL (attributo)
+# <a name="query-policy-bl-attribute"></a>Attributo Query-Policy-BL
 
-Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio di query.
+Elenco di tutti gli oggetti che contiene riferimenti a un criterio di query specificato.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Query-criteri-BL                         |
-| LDAP-Display-Name | queryPolicyBL                           |
+| CN                | Query-Policy-BL                         |
+| Ldap-Display-Name | queryPolicyBL                           |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.608                  |
-| System-ID-GUID    | e1aea404-cd5b-11d0-afff-0000f80367c1    |
+| System-Id-Guid    | e1aea404-cd5b-11d0-afff-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di tutti gli oggetti che contiene i riferimenti a un determinato criterio
 | ID collegamento                | 69                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

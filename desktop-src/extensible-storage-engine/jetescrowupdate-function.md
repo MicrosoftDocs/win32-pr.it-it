@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetEscrowUpdate'
+description: Altre informazioni sulla funzione JetEscrowUpdate
 title: Funzione JetEscrowUpdate
 TOCTitle: JetEscrowUpdate Function
 ms:assetid: e509b6c9-a8ce-4898-a426-485e286869fa
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61fb49d50ee7c529174fe4c5546efd7de1727892
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d244bf16ab02d0bfd6f975f63c2ece32ed40119b30c178e4674037d36f519508
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667421"
 ---
 # <a name="jetescrowupdate-function"></a>Funzione JetEscrowUpdate
 
@@ -32,7 +32,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetescrowupdate-function"></a>Funzione JetEscrowUpdate
 
-La funzione **JetEscrowUpdate** esegue un'operazione di addizione atomica su una colonna. Questa funzione consente a più sessioni di aggiornare simultaneamente lo stesso record senza conflitti.
+La **funzione JetEscrowUpdate** esegue un'operazione di addizione atomica su una colonna. Questa funzione consente a più sessioni di aggiornare lo stesso record contemporaneamente senza conflitti.
 
 ```cpp
     JET_ERR JET_API JetEscrowUpdate(
@@ -54,33 +54,33 @@ La funzione **JetEscrowUpdate** esegue un'operazione di addizione atomica su una
 
 Sessione da utilizzare per questa chiamata.
 
-*TableID*
+*tableid*
 
 Cursore da utilizzare per questa chiamata.
 
-*ColumnID*
+*columnid*
 
-*ColumnID* della colonna da aggiornare.
+*Columnid* della colonna da aggiornare.
 
-*PV*
+*Pv*
 
-Puntatore a un buffer contenente Addend per la colonna.
+Puntatore a un buffer contenente il componente aggiuntivo per la colonna.
 
 *cbMax*
 
-Dimensioni del buffer che contiene Addend.
+Dimensione del buffer contenente il componente aggiuntivo.
 
 *pvOld*
 
-Il buffer di output che riceverà il valore corrente della colonna archiviato nel database (il controllo delle versioni viene ignorato).
+Buffer di output che riceverà il valore corrente della colonna come archiviato nel database (il controllo delle versioni viene ignorato).
 
 *cbOldMax*
 
-Dimensione massima del buffer di output che riceverà il valore corrente della colonna. Attualmente è supportata solo JET_coltypLong, quindi il buffer deve avere una lunghezza di 4 byte o di 0 byte. Se *pvOld* è null, *cbOldMax* deve essere 0.
+Dimensione massima del buffer di output che riceverà il valore corrente della colonna. Attualmente è JET_coltypLong supportato solo il buffer, quindi la lunghezza del buffer deve essere di 4 byte o 0 byte. Se *pvOld* è NULL, *cbOldMax* deve essere 0.
 
 *pcbOldActual*
 
-Riceve la quantità effettiva di dati del valore non elaborato ricevuti nel buffer di output.
+Riceve la quantità effettiva di dati di valore non elaborati ricevuti nel buffer di output.
 
 *grbit*
 
@@ -100,7 +100,7 @@ Gruppo di bit che specifica zero o più delle opzioni seguenti.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitEscrowNoRollback</p></td>
-<td><p>Anche se la sessione che esegue l'aggiornamento del deposito a garanzia ha il rollback della transazione, questo aggiornamento non verrà annullato. Si noti che, poiché è possibile che i record del log non vengano scaricati su disco, gli aggiornamenti del deposito recenti eseguiti con questo flag potrebbero andare persi in caso di arresto anomalo del sistema.</p></td>
+<td><p>Anche se la sessione che esegue l'aggiornamento del deposito ha eseguito il rollback delle transazioni, questo aggiornamento non verrà annullato. Si noti che poiché i record di log potrebbero non essere scaricati su disco, gli aggiornamenti recenti del deposito emersi con questo flag potrebbero andare persi in caso di arresto anomalo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -108,7 +108,7 @@ Gruppo di bit che specifica zero o più delle opzioni seguenti.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -128,35 +128,35 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errAlreadyPrepared</p></td>
-<td><p>Per il cursore è stato preparato un aggiornamento con <a href="gg269339(v=exchg.10).md">JetPrepareUpdate</a>.</p></td>
+<td><p>Il cursore dispone di un aggiornamento preparato <a href="gg269339(v=exchg.10).md">con JetPrepareUpdate</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidBufferSize</p></td>
-<td><p>È stata passata una dimensione del buffer non valida. Attualmente è supportata solo JET_coltypLong, quindi il buffer deve essere di 4 byte.</p></td>
+<td><p>È stata passata una dimensione del buffer non valida. Attualmente è JET_coltypLong supportato solo il buffer, quindi il buffer deve essere di 4 byte.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidOperation</p></td>
-<td><p>È stata specificata una colonna non valida. La colonna deve essere creata con JET_bitColumnEscrowUpdate specificato. È possibile specificare solo colonne fisse di JET_coltypLong come aggiornabili con deposito.</p></td>
+<td><p>È stata specificata una colonna non valida. La colonna deve essere creata con JET_bitColumnEscrowUpdate specificato. Solo le colonne fisse JET_coltypLong possono essere specificate come aggiornabili per il deposito.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoCurrentRecord</p></td>
-<td><p>Per aggiornare una colonna, è necessario che il cursore si trovi in un record.</p></td>
+<td><p>Per aggiornare una colonna, il cursore deve essere posizionato su un record.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInTransaction</p></td>
-<td><p>Gli aggiornamenti del deposito possono essere eseguiti solo da sessioni in una transazione.</p></td>
+<td><p>Gli aggiornamenti del deposito possono essere eseguiti solo dalle sessioni in una transazione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è stata ancora inizializzata.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errPermissionDenied</p></td>
@@ -164,15 +164,15 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione da più di un thread nello stesso momento. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
+<td><p>La stessa sessione non può essere usata da più thread contemporaneamente. Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTransReadOnly</p></td>
@@ -188,11 +188,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 
 #### <a name="remarks"></a>Commenti
 
-In genere, se due sessioni tentano di aggiornare contemporaneamente un record, la seconda sessione riceverà un errore di JET_errWriteConflict, a meno che le sessioni non siano completamente serializzate. Per serializzare due sessioni che aggiornano lo stesso record, la seconda sessione deve avviare la relativa transazione dopo che la prima transazione ha eseguito il commit della transazione. Per ulteriori informazioni, vedere [JetBeginTransaction](./jetbegintransaction-function.md) .
+In genere, se due sessioni tentano di aggiornare un record contemporaneamente, la seconda sessione riceverà un errore JET_errWriteConflict a meno che le sessioni non siano completamente serializzate. Per serializzare due sessioni che aggiornano lo stesso record, la seconda sessione deve avviare la transazione dopo che la prima transazione ha eseguito il commit della transazione. Per [altre informazioni, vedere JetBeginTransaction.](./jetbegintransaction-function.md)
 
-È possibile aggiornare più colonne nello stesso record. Gli aggiornamenti non interessano.
+È possibile aggiornare il deposito di più colonne nello stesso record. Gli aggiornamenti non influiscono l'uno sull'altro.
 
-Solo le operazioni **JetEscrowUpdate** sono compatibili tra loro. Se due diverse sessioni tentano di preparare gli aggiornamenti o di eliminare lo stesso record, verrà generato un conflitto di scrittura.
+Solo **le operazioni JetEscrowUpdate** sono compatibili tra loro. Se due sessioni diverse tentano di preparare gli aggiornamenti o eliminare lo stesso record, verrà generato un conflitto di scrittura.
 
 <table>
 <colgroup>
@@ -238,9 +238,9 @@ Solo le operazioni **JetEscrowUpdate** sono compatibili tra loro. Se due diverse
 </table>
 
 
-Le operazioni di deposito con versione vengono annullate con [JetRollback](./jetrollback-function.md) , a meno che non sia stato specificato JET_bitEscrowNoRollback. **JetEscrowUpdate** restituisce il valore non elaborato della colonna archiviata nel database, perché un'applicazione potrebbe voler eseguire un'azione speciale quando viene raggiunto un valore sentinel. [JetRetrieveColumn](./jetretrievecolumn-function.md) restituisce la visualizzazione con versione corretta della colonna ignorando gli aggiornamenti effettuati dalle sessioni simultanee.
+Le operazioni di deposito sono con controllo delle versioni e vengono annullate usando [JetRollback](./jetrollback-function.md) (a meno JET_bitEscrowNoRollback specificato). **JetEscrowUpdate** restituisce il valore non elaborato della colonna archiviata nel database, perché un'applicazione potrebbe voler eseguire un'azione speciale quando viene raggiunto un valore sentinel. [JetRetrieveColumn](./jetretrievecolumn-function.md) restituisce la visualizzazione con versione corretta della colonna, ignorando gli aggiornamenti eseguiti da sessioni simultanee.
 
-Date due sessioni che operano sulla stessa colonna dello stesso record, possiamo vedere come funziona. Si supponga che la colonna inizi con un valore pari a 0.
+Date due sessioni che operano sulla stessa colonna dello stesso record, è possibile vedere come funziona. Si supponga che la colonna inizi con un valore pari a 0.
 
 <table>
 <colgroup>
@@ -346,9 +346,9 @@ Date due sessioni che operano sulla stessa colonna dello stesso record, possiamo
 </table>
 
 
-La sostituzione di un record nella stessa transazione che esegue gli aggiornamenti del deposito a un record non è consigliata. In particolare, se un aggiornamento su un record viene preparato con una [JET_TABLEID](./jet-tableid.md) e un [JET_TABLEID](./jet-tableid.md) diverso viene usato per l'aggiornamento del record, il deposito verrà perso quando viene chiamato [JetUpdate](./jetupdate-function.md) . Ciò si verifica anche se la colonna escrow non è stata impostata durante l'aggiornamento.
+Non è consigliabile sostituire un record nella stessa transazione che esegue gli aggiornamenti del deposito a un record. In [particolare,](./jet-tableid.md) se un aggiornamento di un record viene preparato con un [JET_TABLEID](./jet-tableid.md) e viene usato un JET_TABLEID diverso per l'aggiornamento del record, il deposito aggiornato andrà perso quando viene chiamato [JetUpdate.](./jetupdate-function.md) Ciò si verifica anche se la colonna di deposito non è stata impostata durante l'aggiornamento.
 
-Quando una colonna aggiornabile del deposito ha un valore pari a zero, è possibile attivare un comportamento speciale. Questo comportamento si verifica solo se un'operazione **JetEscrowUpdate** fa sì che la colonna abbia un valore pari a zero. L'azione non viene eseguita immediatamente, ma si verifica talvolta dopo la transazione che ha causato la presenza di un valore pari a zero commit per la colonna. La colonna deve avere ancora un valore pari a zero (ovvero se nessuna altra sessione ha modificato la colonna). Se la colonna è stata creata con JET_bitColumnDeleteOnZero, il record contenente la colonna verrà eliminato. Se la colonna è stata creata con JET_bitColumnFinalize, verrà emesso un callback. Un arresto anomalo del sistema può causare la mancata verifica di queste azioni, ma la manutenzione in linea (tramite la funzione [JetDefragment](./jetdefragment-function.md) ) ripeterà correttamente le azioni.
+Quando una colonna aggiornabile con deposito a garanzia ha un valore pari a zero, è possibile attivare un comportamento speciale. Questo comportamento si verifica solo se **un'operazione JetEscrowUpdate** fa sì che la colonna abbia un valore pari a zero. L'azione non viene eseguita immediatamente, ma si verifica a volte dopo la transazione che ha causato il commit della colonna con un valore pari a zero. La colonna deve comunque avere un valore pari a zero, ovvero se nessuna altra sessione ha modificato la colonna. Se la colonna è stata creata con JET_bitColumnDeleteOnZero, il record contenente la colonna verrà eliminato. Se la colonna è stata creata con JET_bitColumnFinalize verrà generato un callback. Un arresto anomalo del sistema può causare la non esecuzione di queste azioni, ma la manutenzione online (tramite la [funzione JetDefragment)](./jetdefragment-function.md) ripristina correttamente le azioni.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -368,11 +368,11 @@ Quando una colonna aggiornabile del deposito ha un valore pari a zero, è possib
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
