@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 831dfdc228e2c8e128f328784046e833b0b45a39
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2b16f125eac6bf22904e93aef9084f00bbf6ca55be85c762de54c286631b584e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069551"
 ---
 # <a name="tcpip_v1_typegroup1-class"></a>Classe \_ \_ TypeGroup1 TcpIp V1
 
@@ -160,8 +160,8 @@ Numero di porta di origine.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

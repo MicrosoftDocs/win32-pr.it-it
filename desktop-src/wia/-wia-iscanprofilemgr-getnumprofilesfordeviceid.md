@@ -1,7 +1,7 @@
 ---
 description: Ottiene il numero di profili di analisi per il dispositivo.
 ms.assetid: fb1f8884-28ef-460e-a8c4-b9608cc89dc6
-title: 'Metodo IScanProfileMgr:: GetNumProfilesforDeviceID (Scanprofilemgr. h)'
+title: Metodo IScanProfileMgr::GetNumProfilesforDeviceID (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 1a65e1f6571f4ec12a9bd91749c7419f9f9641c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2af1e4bc73afee090d947e6bcca0060521cb15cf2faff06be8c9a893534ea4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264391"
 ---
-# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>Metodo IScanProfileMgr:: GetNumProfilesforDeviceID
+# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>Metodo IScanProfileMgr::GetNumProfilesforDeviceID
 
 Ottiene il numero di profili di analisi per il dispositivo.
 
@@ -40,7 +40,7 @@ HRESULT GetNumProfilesforDeviceID(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ in\]
+*bstrDeviceID* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -49,10 +49,10 @@ ID del dispositivo.
 
 </dd> <dt>
 
-*pulNumProfiles* \[ out\]
+*pulNumProfiles* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
 Puntatore al numero di profili disponibili per il dispositivo.
 
@@ -60,9 +60,9 @@ Puntatore al numero di profili disponibili per il dispositivo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,10 +70,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

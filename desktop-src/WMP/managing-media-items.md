@@ -7,25 +7,25 @@ keywords:
 - Windows Media Player a oggetti, libreria
 - modello a oggetti, libreria
 - Windows Media Player Mobile, libreria per il modello a oggetti
-- Windows Media Player controllo ActiveX, libreria per il modello a oggetti
-- Windows Media Player controllo ActiveX mobile, libreria per il modello a oggetti
-- Controllo ActiveX, libreria per il modello a oggetti
+- Windows Media Player ActiveX, libreria per il modello a oggetti
+- Windows Media Player Controllo ActiveX per dispositivi mobili, libreria per il modello a oggetti
+- ActiveX, libreria per il modello a oggetti
 - Windows Media Player libreria, gestione di elementi multimediali
 - libreria, gestione di elementi multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf984c2f884ae828bd6426dd2a3f6da19a78ddea
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: ac689bd6951f09b39db20975d52f6a8ccfc08668d3266d5964c2b7eac28cfd38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054629"
 ---
 # <a name="managing-media-items"></a>Gestione degli elementi multimediali
 
 Un **oggetto Media** rappresenta un elemento multimediale. Include proprietà e metodi che è possibile usare per recuperare informazioni e visualizzarle all'utente o per eseguire azioni diverse in base al valore recuperato.
 
-Gran parte del lavoro con **gli oggetti Multimediali** comporta metadati relativi al contenuto dell'elemento multimediale, denominati attributi. L'argomento [Attributi elemento multimediale](media-item-attributes.md) descrive come leggere e modificare i valori degli attributi. Oltre a questo argomento, vedere le linee guida per l'utilizzo dei metadati di [Windows Media](/previous-versions/ms867702(v=msdn.10)) nel sito Web Microsoft per altre informazioni sugli attributi e sul relativo utilizzo.
+Gran parte del lavoro con **gli oggetti Multimediali** comporta metadati relativi al contenuto dell'elemento multimediale, denominati attributi. L'argomento [Attributi elemento multimediale](media-item-attributes.md) descrive come leggere e modificare i valori degli attributi. Oltre a questo argomento, vedere le linee guida per l'utilizzo Windows [metadati](/previous-versions/ms867702(v=msdn.10)) multimediali nel sito Web Microsoft per altre informazioni sugli attributi e sul relativo utilizzo.
 
 **L'oggetto Media** dispone di proprietà e metodi che recuperano direttamente alcuni attributi, ad esempio il nome o la durata dell'elemento. Per gli elementi video, è possibile recuperare l'altezza e la larghezza dell'immagine ed è possibile recuperare le informazioni sul marcatore in base al nome o all'indice di un marcatore. È anche possibile determinare se un particolare elemento multimediale è incluso in una playlist specifica.
 

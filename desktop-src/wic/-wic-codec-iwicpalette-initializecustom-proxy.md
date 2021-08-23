@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo InitializeCustom.
 ms.assetid: fe742b12-5338-41b0-b90b-aec852a26518
-title: Funzione IWICPalette_InitializeCustom_Proxy
+title: IWICPalette_InitializeCustom_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 3b64daf458a6b916f0f9e2ba23e135d6c7328a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b68917782d768f526a21b16f22766c1a9add61eb5ee1987d27965b6f70a388db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088193"
 ---
-# <a name="iwicpalette_initializecustom_proxy-function"></a>IWICPalette \_ InitializeCustom- \_ funzione proxy
+# <a name="iwicpalette_initializecustom_proxy-function"></a>Funzione IWICPalette \_ InitializeCustom \_ Proxy
 
-Funzione proxy per il metodo [**InitializeCustom**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializecustom) .
+Funzione proxy per il [**metodo InitializeCustom.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializecustom)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT IWICPalette_InitializeCustom_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Puntatore a questo oggetto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Puntatore a [**questo oggetto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*pColors* \[ in\]
+*pColors* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **WICColor \** _
+Tipo: **WICColor \***
 
 Puntatore alla matrice di colori.
 
 </dd> <dt>
 
-_colorCount * \[ in\]
+*colorCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Il numero di colori in *pColors*.
+Numero di colori in *pColors.*
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Il numero di colori in *pColors*.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -83,9 +83,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop di Vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

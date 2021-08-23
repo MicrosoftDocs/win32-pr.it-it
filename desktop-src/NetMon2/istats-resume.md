@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ee7818da3d8a02e41488d473d3cf26607d3b84ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 72c73107ea4bf4662d4251a7c9e06ed1844feca88cb0ce6700887e65f6f08021
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063821"
 ---
 # <a name="istatsresume-method"></a>Metodo IStats::Resume
 
@@ -48,10 +48,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                                | Descrizione                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>       | Il NPP non è connesso alla rete.<br/>                                                                                          |
-| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ NON \_ SOSPESA**</dt> </dl> | L'acquisizione non è sospesa. Chiamare il [metodo IStats::P ause](istats-pause.md) per arrestare temporaneamente l'acquisizione.<br/>                     |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>       | Il NPP non è connesso alla rete. Chiamare il [metodo IStats::Connect](istats-connect.md) per connettere il NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ SOLO \_ STATISTICHE**</dt> </dl>     | Il NPP è connesso alla rete, ma non con [il metodo IStats::Connect.](istats-connect.md)<br/>                                |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>       | NPP non è connesso alla rete.<br/>                                                                                          |
+| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ NON \_ SOSPESA**</dt> </dl> | L'acquisizione non viene sospesa. Chiamare il [metodo IStats::P ause](istats-pause.md) per arrestare temporaneamente l'acquisizione.<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>       | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connessione](istats-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl>     | NPP è connesso alla rete, ma non con il [metodo IStats::Connessione.](istats-connect.md)<br/>                                |
 
 
 
@@ -59,11 +59,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione è sospesa, i nuovi dati non vengono acquisiti fino a quando non viene chiamato il metodo IStats::Resume per riavviare l'acquisizione.
+Mentre l'acquisizione è in stato di sospensione, i nuovi dati non vengono acquisiti fino a quando non viene chiamato il metodo IStats::Resume per riavviare l'acquisizione.
 
-Quando si usano **i metodi Pause** e **Resume** per controllare [](c.md) l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione alle statistiche esistenti per l'acquisizione corrente.
+Quando si usano **i metodi Pause** **e Resume** per [](c.md) controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione alle statistiche esistenti per l'acquisizione corrente.
 
-Per arrestare l'acquisizione, [chiamare IStats::Stop](istats-stop.md).
+Per arrestare l'acquisizione, chiamare [IStats::Stop](istats-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Per arrestare l'acquisizione, [chiamare IStats::Stop](istats-stop.md).
 [IStat](istats.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Connessione](istats-connect.md)
 </dt> <dt>
 
 [IStats::P ause](istats-pause.md)

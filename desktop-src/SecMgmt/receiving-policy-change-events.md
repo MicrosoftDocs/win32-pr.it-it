@@ -1,25 +1,25 @@
 ---
-description: LSA fornisce funzioni che è possibile utilizzare per ricevere una notifica quando viene apportata una modifica ai criteri nel sistema locale.
+description: L'LSA fornisce funzioni che è possibile usare per ricevere notifiche in caso di modifica dei criteri nel sistema locale.
 ms.assetid: 29c693f5-db2b-4fda-847c-4e5220eadfd3
 title: Ricezione di eventi di modifica dei criteri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33145974ce712f21b338ba35f1571c8f3046c42c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ba1fc2328d0467dcfe5b6f85b9b8384cf4c8271d35fcda106a61ae5bb068f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005049"
 ---
 # <a name="receiving-policy-change-events"></a>Ricezione di eventi di modifica dei criteri
 
-LSA fornisce funzioni che è possibile utilizzare per ricevere una notifica quando viene apportata una modifica ai criteri nel sistema locale.
+L'LSA fornisce funzioni che è possibile usare per ricevere notifiche in caso di modifica dei criteri nel sistema locale.
 
-Per ricevere la notifica, creare un nuovo oggetto evento chiamando la funzione [**CreateEvent**](/windows/desktop/api/synchapi/nf-synchapi-createeventa) e quindi chiamare la funzione [**LsaRegisterPolicyChangeNotification**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaregisterpolicychangenotification) . L'applicazione può quindi chiamare una funzione Wait come [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject), [**WaitForSingleObjectEx**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex)o [**RegisterWaitForSingleObject**](/windows/desktop/api/winbase/nf-winbase-registerwaitforsingleobject) per attendere che si verifichi l'evento. La funzione wait restituisce quando si verifica l'evento o quando il periodo di timeout scade. Gli eventi di notifica vengono in genere utilizzati nelle applicazioni multithreading, in cui un thread è in attesa di un evento, mentre altri thread continuano l'elaborazione.
+Per ricevere la notifica, creare un nuovo oggetto evento chiamando la [**funzione CreateEvent**](/windows/desktop/api/synchapi/nf-synchapi-createeventa) e quindi chiamare la [**funzione LsaRegisterPolicyChangeNotification.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaregisterpolicychangenotification) L'applicazione può quindi chiamare una funzione di attesa, ad esempio [**WaitForSingleObject,**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) [**WaitForSingleObjectEx**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex)o [**RegisterWaitForSingleObject,**](/windows/desktop/api/winbase/nf-winbase-registerwaitforsingleobject) per attendere che si verifichi l'evento. La funzione wait restituisce quando si verifica l'evento o quando scade il periodo di timeout. In genere, gli eventi di notifica vengono usati nelle applicazioni multithreading, in cui un thread attende un evento, mentre altri thread continuano l'elaborazione.
 
-Quando l'applicazione non deve più ricevere notifiche, deve chiamare [**LsaUnregisterPolicyChangeNotification**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaunregisterpolicychangenotification) e quindi chiamare [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) per liberare l'handle dell'oggetto evento.
+Quando l'applicazione non deve più ricevere notifiche, deve chiamare [**LsaUnregisterPolicyChangeNotification**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaunregisterpolicychangenotification) e quindi [**chiamare CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) per liberare l'handle dell'oggetto evento.
 
-Nell'esempio seguente viene illustrato come un'applicazione a thread singolo può ricevere eventi di notifica quando vengono modificati i criteri di controllo del sistema.
+L'esempio seguente illustra come un'applicazione a thread singolo può ricevere eventi di notifica quando i criteri di controllo del sistema cambiano.
 
 
 ```C++
@@ -86,7 +86,7 @@ void WaitForPolicyChanges()
 
 
 
-Per ulteriori informazioni sugli oggetti evento, le funzioni di attesa e la sincronizzazione, vedere [utilizzo di oggetti evento](/windows/desktop/Sync/using-event-objects).
+Per altre informazioni su oggetti evento, funzioni di attesa e sincronizzazione, vedere [Uso di oggetti evento](/windows/desktop/Sync/using-event-objects).
 
  
 

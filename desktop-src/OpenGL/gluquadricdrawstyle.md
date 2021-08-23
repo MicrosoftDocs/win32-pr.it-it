@@ -1,9 +1,9 @@
 ---
-title: funzione gluQuadricDrawStyle (Glu. h)
-description: La funzione gluQuadricDrawStyle specifica lo stile di estrazione desiderato per quadriche.
+title: Funzione gluQuadricDrawStyle (Glu.h)
+description: La funzione gluQuadricDrawStyle specifica lo stile di disegno desiderato per quadric.
 ms.assetid: 30f6da40-9306-46bb-a815-f51722e57e18
 keywords:
-- funzione gluQuadricDrawStyle OpenGL
+- Funzione gluQuadricDrawStyle OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a1b44b7894ea9762b450c5a5d6c2b022c5e02f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7a873ed4f4ceaff4aa3dad678dbb4c1fd7a635b0ce41d7a9480af84278c8360c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061559"
 ---
-# <a name="gluquadricdrawstyle-function"></a>gluQuadricDrawStyle (funzione)
+# <a name="gluquadricdrawstyle-function"></a>Funzione gluQuadricDrawStyle
 
-La funzione **gluQuadricDrawStyle** specifica lo stile di estrazione desiderato per quadriche.
+La **funzione gluQuadricDrawStyle** specifica lo stile di disegno desiderato per quadric.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,23 +44,23 @@ void WINAPI gluQuadricDrawStyle(
 *quadObject* 
 </dt> <dd>
 
-Oggetto quadrica (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
 *drawStyle* 
 </dt> <dd>
 
-Stile di disegni desiderato. I valori seguenti sono validi.
+Stile di disegno desiderato. I valori seguenti sono validi.
 
 
 
 | Valore                                                                                                                                                            | Significato                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GLU_FILL"></span><span id="glu_fill"></span><dl> <dt>**\_riempimento Glu**</dt> </dl>                   | Viene eseguito il rendering di quadriche con primitive poligonali. I poligoni vengono disegnati in senso antiorario rispetto alle normali (come definito con [**gluQuadricOrientation**](gluquadricorientation.md)).<br/> |
-| <span id="GLU_LINE"></span><span id="glu_line"></span><dl> <dt>**\_linea Glu**</dt> </dl>                   | Il rendering di quadriche viene eseguito come un set di righe.<br/>                                                                                                                                                                    |
-| <span id="GLU_SILHOUETTE"></span><span id="glu_silhouette"></span><dl> <dt>**\_Siluetta Glu**</dt> </dl> | Il rendering di quadriche viene eseguito come set di righe, ad eccezione del fatto che i bordi che separano i visi complanari non verranno disegnati<br/>                                                                                                     |
-| <span id="GLU_POINT"></span><span id="glu_point"></span><dl> <dt>**punto di GLU \_**</dt> </dl>                | Il rendering di quadriche viene eseguito come un set di punti.<br/>                                                                                                                                                                   |
+| <span id="GLU_FILL"></span><span id="glu_fill"></span><dl> <dt>**GLU \_ FILL**</dt> </dl>                   | Il rendering dei quadric viene eseguito con primitive poligonali. I poligoni vengono disegnati in senso antiorario rispetto alle normali (come definito con [**gluQuadricOrientation**](gluquadricorientation.md)).<br/> |
+| <span id="GLU_LINE"></span><span id="glu_line"></span><dl> <dt>**LINEA \_ GLU**</dt> </dl>                   | Il rendering dei quadric viene eseguito come set di righe.<br/>                                                                                                                                                                    |
+| <span id="GLU_SILHOUETTE"></span><span id="glu_silhouette"></span><dl> <dt>**GLU \_ ESEREA**</dt> </dl> | Il rendering dei quadric viene eseguito come un set di linee, ad eccezione del fatto che i bordi che separano i visi coplanari non verranno disegnati.<br/>                                                                                                     |
+| <span id="GLU_POINT"></span><span id="glu_point"></span><dl> <dt>**PUNTO \_ GLU**</dt> </dl>                | Il rendering dei quadric viene eseguito come set di punti.<br/>                                                                                                                                                                   |
 
 
 
@@ -74,7 +74,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluQuadricDrawStyle** specifica lo stile di disegna per quadriche di cui è stato eseguito il rendering con **quadObject**.
+La **funzione gluQuadricDrawStyle** specifica lo stile di disegno per quadrics sottoposto a rendering con **quadObject**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ La funzione **gluQuadricDrawStyle** specifica lo stile di disegna per quadriche 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

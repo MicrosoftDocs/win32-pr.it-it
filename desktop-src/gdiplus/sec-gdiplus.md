@@ -4,28 +4,28 @@ ms.assetid: 411e16e4-ad8f-4567-8964-564f08283ba5
 title: 'Considerazioni sulla sicurezza: GDI+'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6d8c9d50393708e58651566ee90adcb4339cb9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdc741911af403f079d16b4759431eaaa4b6cf55d5dad11826768033036aef75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035999"
 ---
 # <a name="security-considerations-gdi"></a>Considerazioni sulla sicurezza: GDI+
 
-In questo argomento vengono fornite informazioni sulle considerazioni sulla sicurezza correlate alla programmazione con Windows GDI+. Questo argomento non fornisce tutte le informazioni necessarie per i problemi di sicurezza, ma è possibile usarlo come punto di partenza e riferimento per questa area tecnologica.
+In questo argomento vengono fornite informazioni sulle considerazioni sulla sicurezza correlate alla programmazione con Windows GDI+. Questo argomento non fornisce tutte le informazioni necessarie sui problemi di sicurezza, ma può essere utilizzato come punto di partenza e riferimento per questa area di tecnologia.
 
--   [Verifica della riuscita dei costruttori](#verifying-the-success-of-constructors)
+-   [Verifica dell'esito positivo dei costruttori](#verifying-the-success-of-constructors)
 -   [Allocazione di buffer](#allocating-buffers)
--   [Controllo errori](#error-checking)
+-   [Controllo degli errori](#error-checking)
 -   [Sincronizzazione di thread](#thread-synchronization)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="verifying-the-success-of-constructors"></a>Verifica della riuscita dei costruttori
+## <a name="verifying-the-success-of-constructors"></a>Verifica dell'esito positivo dei costruttori
 
-Molte classi GDI+ forniscono un metodo [**Image:: GetLastStatus**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getlaststatus) che è possibile chiamare per determinare se i metodi richiamati in un oggetto hanno esito positivo. È anche possibile chiamare **Image:: GetLastStatus** per determinare se un costruttore ha esito positivo.
+Molte delle classi GDI+ forniscono un metodo [**Image::GetLastStatus**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getlaststatus) che è possibile chiamare per determinare se i metodi richiamati su un oggetto hanno esito positivo. È anche possibile chiamare **Image::GetLastStatus** per determinare se un costruttore ha esito positivo.
 
-Nell'esempio seguente viene illustrato come costruire un oggetto [**immagine**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e chiamare il metodo [**Image:: GetLastStatus**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getlaststatus) per determinare se il costruttore è stato eseguito correttamente. I valori **OK** e **invalidparameter** sono elementi dell'enumerazione [**status**](/windows/desktop/api/Gdiplustypes/ne-gdiplustypes-status) .
+L'esempio seguente illustra come costruire un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e chiamare il [**metodo Image::GetLastStatus**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getlaststatus) per determinare se il costruttore ha avuto esito positivo. I valori **Ok** e **InvalidParameter** sono elementi dell'enumerazione [**Status.**](/windows/desktop/api/Gdiplustypes/ne-gdiplustypes-status)
 
 
 ```C++
@@ -45,9 +45,9 @@ else
 
 ## <a name="allocating-buffers"></a>Allocazione di buffer
 
-Diversi metodi GDI+ restituiscono dati numerici o di tipo carattere in un buffer allocato dal chiamante. Per ognuno di questi metodi è disponibile un metodo complementare che fornisce la dimensione del buffer richiesto. Ad esempio, il metodo [**GraphicsPath:: GetPathPoints**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathpoints(outpoint_inint)) restituisce una matrice di oggetti [**Point**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-point) . Prima di chiamare **GraphicsPath:: GetPathPoints**, è necessario allocare un buffer sufficientemente grande da mantenere tale matrice. È possibile determinare le dimensioni del buffer necessario chiamando il metodo [**GraphicsPath:: GetPointCount**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspath-getpointcount) di un oggetto [**GraphicsPath**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath) .
+Diversi GDI+ restituiscono dati numerici o di tipo carattere in un buffer allocato dal chiamante. Per ognuno di questi metodi, è disponibile un metodo complementare che fornisce le dimensioni del buffer richiesto. Ad esempio, il [**metodo GraphicsPath::GetPathPoints**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathpoints(outpoint_inint)) restituisce una matrice di [**oggetti Point.**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-point) Prima di chiamare **GraphicsPath::GetPathPoints,** è necessario allocare un buffer sufficientemente grande da contenere tale matrice. È possibile determinare le dimensioni del buffer richiesto chiamando il [**metodo GraphicsPath::GetPointCount**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspath-getpointcount) di un [**oggetto GraphicsPath.**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath)
 
-Nell'esempio seguente viene illustrato come determinare il numero di punti in un oggetto [**GraphicsPath**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath) , allocare un buffer sufficientemente grande da poter essere utilizzato in molti punti e quindi chiamare [**GraphicsPath:: GetPathPoints**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathpoints(outpoint_inint)) per riempire il buffer. Prima che il codice chiami **GraphicsPath:: GetPathPoints**, verifica che l'allocazione del buffer abbia avuto esito positivo assicurandosi che il puntatore del buffer non sia **null**.
+L'esempio seguente illustra come determinare il numero di punti in un oggetto [**GraphicsPath,**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath) allocare un buffer sufficientemente grande da contenere tale numero di punti e quindi chiamare [**GraphicsPath::GetPathPoints**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspath-getpathpoints(outpoint_inint)) per riempire il buffer. Prima che il codice **chiami GraphicsPath::GetPathPoints**, verifica che l'allocazione del buffer sia riuscita verificando che il puntatore del buffer non sia **NULL.**
 
 
 ```C++
@@ -68,11 +68,11 @@ if(pointArray)  // Check for successful allocation.
 
 
 
-Nell'esempio precedente viene usato l'operatore New per allocare un buffer. L'operatore New è stato utile perché il buffer è stato riempito con un numero noto di oggetti [**Point**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-point) . In alcuni casi, GDI+ scrive più nel buffer rispetto a una matrice di oggetti GDI+. A volte un buffer viene riempito con una matrice di oggetti GDI+ insieme a dati aggiuntivi a cui puntano i membri di tali oggetti. Ad esempio, il metodo [**Image:: GetAllPropertyItems**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems) restituisce una matrice di oggetti [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) , uno per ogni elemento di proprietà (porzione di metadati) archiviato nell'immagine. Tuttavia **Image:: GetAllPropertyItems** restituisce solo la matrice di oggetti **PropertyItem** ; aggiunge la matrice con dati aggiuntivi.
+Nell'esempio precedente viene utilizzato l'operatore new per allocare un buffer. L'operatore new è stato utile perché il buffer è stato riempito con un numero noto di [**oggetti Point.**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-point) In alcuni casi, GDI+ scrive più nel buffer che in una matrice GDI+ oggetti . In alcuni casi un buffer viene riempito con una matrice di oggetti GDI+ insieme a dati aggiuntivi a cui puntano i membri di tali oggetti. Ad esempio, il [**metodo Image::GetAllPropertyItems**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems) restituisce una matrice di oggetti [**PropertyItem,**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) uno per ogni elemento di proprietà (parte di metadati) archiviato nell'immagine. Ma **Image::GetAllPropertyItems** restituisce più della semplice matrice di **oggetti PropertyItem.** aggiunge la matrice con dati aggiuntivi.
 
-Prima di chiamare [**Image:: GetAllPropertyItems**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems), è necessario allocare un buffer sufficientemente grande da ospitare la matrice di oggetti [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) insieme ai dati aggiuntivi. È possibile chiamare il metodo [**Image:: GetPropertySize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize) di un oggetto Image per determinare la dimensione totale del buffer richiesto.
+Prima di chiamare [**Image::GetAllPropertyItems,**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems)è necessario allocare un buffer sufficientemente grande da contenere la matrice di oggetti [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) insieme ai dati aggiuntivi. È possibile chiamare il [**metodo Image::GetPropertySize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize) di un oggetto Image per determinare le dimensioni totali del buffer richiesto.
 
-Nell'esempio seguente viene illustrato come creare un oggetto [**immagine**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e successivamente chiamare il metodo [**Image:: GetAllPropertyItems**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems) di tale oggetto **Image** per recuperare tutti gli elementi di proprietà (metadati) archiviati nell'immagine. Il codice alloca un buffer in base a un valore di dimensione restituito dal metodo [**Image:: GetPropertySize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize) . **Image:: GetPropertySize** restituisce anche un valore Count che fornisce il numero di elementi della proprietà nell'immagine. Si noti che il codice non calcola le dimensioni del buffer come `count*sizeof(PropertyItem)` . Un buffer calcolato in questo modo sarebbe troppo piccolo.
+L'esempio seguente illustra come creare un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e chiamare in seguito il metodo [**Image::GetAllPropertyItems**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getallpropertyitems) di tale oggetto **Image** per recuperare tutti gli elementi di proprietà (metadati) archiviati nell'immagine. Il codice alloca un buffer in base a un valore di dimensione restituito dal [**metodo Image::GetPropertySize.**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize) **Image::GetPropertySize** restituisce anche un valore di conteggio che fornisce il numero di elementi di proprietà nell'immagine. Si noti che il codice non calcola le dimensioni del buffer come `count*sizeof(PropertyItem)` . Un buffer calcolato in questo modo sarebbe troppo piccolo.
 
 
 ```C++
@@ -97,11 +97,11 @@ if(propBuffer)
 
 
 
-## <a name="error-checking"></a>Controllo errori
+## <a name="error-checking"></a>Controllo degli errori
 
-La maggior parte degli esempi di codice nella documentazione di GDI+ non Mostra il controllo degli errori. Il controllo completo degli errori rende un esempio di codice molto più lungo e può nascondere il punto illustrato nell'esempio. Non è consigliabile incollare esempi dalla documentazione direttamente nel codice di produzione; è invece consigliabile migliorare gli esempi aggiungendo il controllo degli errori.
+La maggior parte degli esempi di codice nella documentazione GDI+ non mostra il controllo degli errori. Il controllo completo degli errori rende un esempio di codice molto più lungo e può nascondere il punto illustrato dall'esempio. È consigliabile non incollare gli esempi della documentazione direttamente nel codice di produzione. È invece consigliabile migliorare gli esempi aggiungendo il proprio controllo degli errori.
 
-Nell'esempio seguente viene illustrato un modo per implementare il controllo degli errori con GDI+. Ogni volta che viene costruito un oggetto GDI+, il codice verifica se il costruttore ha avuto esito positivo. Questo controllo è particolarmente importante per il costruttore di [**Immagini**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) , che si basa sulla lettura di un file. Se tutti e quattro gli oggetti GDI+ ([**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics), [**GraphicsPath**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath), **Image** e [**TextureBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-texturebrush)) vengono costruiti correttamente, il codice chiama i metodi su tali oggetti. Ogni chiamata al metodo viene verificata correttamente e, in caso di errore, le chiamate al metodo rimanenti vengono ignorate.
+Nell'esempio seguente viene illustrato un modo per implementare il controllo degli errori con GDI+. Ogni volta che viene GDI+ un oggetto , il codice verifica se il costruttore ha avuto esito positivo. Questo controllo è particolarmente importante per il [**costruttore Image,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) che si basa sulla lettura di un file. Se tutti e quattro gli oggetti GDI+ ([**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics), [**GraphicsPath**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath), **Image** e [**TextureBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-texturebrush)) vengono costruiti correttamente, il codice chiama i metodi su tali oggetti. Ogni chiamata al metodo viene verificata l'esito positivo e, in caso di errore, le chiamate al metodo rimanenti vengono ignorate.
 
 
 ```C++
@@ -185,9 +185,9 @@ Status GdipExample(HDC hdc)
 
 ## <a name="thread-synchronization"></a>Sincronizzazione di thread
 
-È possibile che più di un thread possa accedere a un singolo oggetto GDI+. Tuttavia, GDI+ non fornisce alcun meccanismo di sincronizzazione automatica. Quindi, se due thread nell'applicazione hanno un puntatore allo stesso oggetto GDI+, è responsabilità dell'utente sincronizzare l'accesso a tale oggetto.
+È possibile che più di un thread abbia accesso a un singolo GDI+ oggetto . Tuttavia, GDI+ non fornisce alcun meccanismo di sincronizzazione automatica. Pertanto, se due thread nell'applicazione hanno un puntatore allo stesso oggetto GDI+, è responsabilità dell'utente sincronizzare l'accesso a tale oggetto.
 
-Alcuni metodi GDI+ restituiscono **ObjectBusy** se un thread tenta di chiamare un metodo mentre un altro thread esegue un metodo sullo stesso oggetto. Non tentare di sincronizzare l'accesso a un oggetto in base al valore restituito di **ObjectBusy** . Al contrario, ogni volta che si accede a un membro o si chiama un metodo dell'oggetto, inserire la chiamata all'interno di una sezione critica o utilizzare un'altra tecnica di sincronizzazione standard.
+Alcuni GDI+ restituiscono **ObjectBusy** se un thread tenta di chiamare un metodo mentre un altro thread sta eseguendo un metodo sullo stesso oggetto. Non tentare di sincronizzare l'accesso a un oggetto in base al **valore restituito objectBusy.** Al contrario, ogni volta che si accede a un membro o si chiama un metodo dell'oggetto , inserire la chiamata all'interno di una sezione critica o usare un'altra tecnica di sincronizzazione standard.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

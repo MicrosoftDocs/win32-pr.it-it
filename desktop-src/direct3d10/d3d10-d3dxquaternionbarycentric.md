@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 00d8e41a0173b7b26083f38beb82417365ef7067
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6a51a0606ae45be79c26d062c64ab5710a658436371ca146f81c2183c34ca85b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991151"
 ---
 # <a name="d3dxquaternionbarycentric-function-d3dx10mathh"></a>Funzione D3DXQuaternionBaryCentric (D3DX10Math.h)
 
@@ -107,7 +107,7 @@ Puntatore a una struttura D3DXQUATERNION in coordinate barycentriche.
 
 ## <a name="remarks"></a>Commenti
 
-Per calcolare le coordinate barycentric, la funzione D3DXQuaternionBaryCentric implementa la serie seguente di operazioni di interpolazione lineare sferica:
+Per calcolare le coordinate barycentriche, la funzione D3DXQuaternionBaryCentric implementa la serie seguente di operazioni di interpolazione lineare sferica:
 
 
 ```
@@ -120,7 +120,7 @@ Il valore restituito per questa funzione è lo stesso valore restituito nel para
 
 Usare [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
-Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate barycentriche, vedere Descrizione delle coordinate [barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 

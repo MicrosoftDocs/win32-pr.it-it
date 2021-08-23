@@ -1,19 +1,19 @@
 ---
-description: Pendenza della parte inferiore del BoundingFrustum.
+description: Inclinazione della parte inferiore dell'oggetto BoundingFrustum.
 ms.assetid: bb5b0e27-efe2-4f78-ab7d-752fcf9ff2e8
-title: BoundingFrustum. BottomSlope (DirectXCollision. h)
+title: BoundingFrustum.BottomSlope (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43581e551ece60be0fdef310e98eccc3307246f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d833872e4906aff5b2f67ca6d2c8796180d057bf07803ca3fd2048d5c279aa6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118578"
 ---
-# <a name="boundingfrustumbottomslope"></a>BoundingFrustum. BottomSlope
+# <a name="boundingfrustumbottomslope"></a>BoundingFrustum.BottomSlope
 
-Pendenza della parte inferiore del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Inclinazione della parte inferiore di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 **Riferimento**
 </dt> <dt>
 
-[**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
+[**Boundingfrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 </dt> </dl>
 
  

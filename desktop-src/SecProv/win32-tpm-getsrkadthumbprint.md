@@ -1,7 +1,7 @@
 ---
-description: Ottiene l'identificazione digitale della chiave radice di archiviazione per un determinato modulo della parte pubblica della chiave radice di archiviazione TPM.
+description: Ottiene l Archiviazione'identificazione personale della chiave radice per un modulo specificato della parte pubblica del TPM Archiviazione radice.
 ms.assetid: 08CBEB19-ECF5-4E43-B4A4-0F35987173E1
-title: 'Metodo Win32_Tpm:: GetSrkADThumbprint'
+title: Win32_Tpm::GetSrkADThumbprint
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 81e1ec53596a3d5ce469d412e9bd7ca17e1ad8b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9be4b7f02a9b645c29b431a9d974f5871ad5a95fc001e43df17bfe459483974e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004109"
 ---
-# <a name="win32_tpmgetsrkadthumbprint-method"></a>\_Metodo Win32 TPM:: GetSrkADThumbprint
+# <a name="win32_tpmgetsrkadthumbprint-method"></a>Metodo Win32 \_ Tpm::GetSrkADThumbprint
 
-Ottiene l'identificazione digitale della chiave radice di archiviazione per un determinato modulo della parte pubblica della chiave radice di archiviazione TPM. L'identificazione personale viene utilizzata per indicizzare le chiavi radice di archiviazione nel server Active Directory se il backup Active Directory delle informazioni di autorizzazione del proprietario del TPM viene abilitato tramite Criteri di gruppo impostazione.
+Ottiene l Archiviazione'identificazione personale della chiave radice per un modulo specificato della parte pubblica del TPM Archiviazione radice. L'identificazione personale viene usata per indicizzare le chiavi radice di Archiviazione nel server Active Directory se il backup di Active Directory delle informazioni di autorizzazione del proprietario TPM viene abilitato tramite l Criteri di gruppo predefinita.
 
 > [!Note]  
-> A partire da Windows 10, versione 1607, l'autorizzazione del proprietario del TPM non viene mai sottoposta a backup in Active Directory.
+> A partire da Windows 10 versione 1607, non viene mai eseguito il backup dell'autorizzazione del proprietario del TPM in Active Directory.
 
  
 
@@ -47,23 +47,23 @@ uint32 GetSrkADThumbprint(
 
 <dl> <dt>
 
-*SrkPublicKeyModulus* \[ in\]
+*SrkPublicKeyModulus* \[ Pollici\]
 </dt> <dd>
 
-Modulo della parte pubblica della chiave radice di archiviazione TPM. È possibile ottenerlo anche usando il metodo [**GetSrkPublicKeyModulus**](win32-tpm-getsrkpublickeymodulus.md) della classe [ \_ TPM Win32](win32-tpm.md) .
+Modulo della parte pubblica del TPM Archiviazione radice. Può anche essere ottenuto usando il [**metodo GetSrkPublicKeyModulus**](win32-tpm-getsrkpublickeymodulus.md) della [classe \_ Win32 TPM.](win32-tpm.md)
 
 </dd> <dt>
 
-*SrkADThumbprint* \[ out\]
+*SrkADThumbprint* \[ Cambio\]
 </dt> <dd>
 
-Restituisce una matrice di 20 byte contenente l'identificazione digitale della chiave radice di archiviazione per il modulo specificato.
+Restituisce una matrice di 20 byte contenente l'identificazione personale della chiave radice di archiviazione per il modulo specificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici [dei servizi di base TPM](../tbs/tbs-return-codes.md) .
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi [di base TPM.](../tbs/tbs-return-codes.md)
 
 I codici restituiti comuni sono elencati di seguito.
 
@@ -79,7 +79,7 @@ I codici restituiti comuni sono elencati di seguito.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,11 +87,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                      |
-| Spazio dei nomi<br/>                | \\\\.\\ radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                     |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                      |
+| Spazio dei nomi<br/>                | \\\\.\\ Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                     |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> </dl>
 
  

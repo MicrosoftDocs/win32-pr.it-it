@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso PatternMapListType
-description: Non usato. Definisce un elenco di coppie di espressioni regolari utilizzate per modificare la stringa del messaggio.
+description: Non usato. Definisce un elenco di coppie di espressioni regolari usate per modificare la stringa del messaggio.
 ms.assetid: f7b92821-a959-4b91-9e7e-47d0136ee61f
 keywords:
-- Log eventi di tipo complesso PatternMapListType
+- EventLog di tipo complesso PatternMapListType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5d1bb655dcf13c70fb989756cb9f5716301934c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbf96f7033f353662578e477fb8e35e0bfcda6db390f6492e29840e5e1faa5cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136204"
 ---
 # <a name="patternmaplisttype-complex-type"></a>Tipo complesso PatternMapListType
 
-Non usato. Definisce un elenco di coppie di espressioni regolari utilizzate per modificare la stringa del messaggio.
+Non usato. Definisce un elenco di coppie di espressioni regolari usate per modificare la stringa del messaggio.
 
 ``` syntax
 <xs:complexType name="PatternMapListType">
@@ -41,7 +41,7 @@ Non usato. Definisce un elenco di coppie di espressioni regolari utilizzate per 
 
 | Elemento                                                                         | Tipo                                                                     | Descrizione                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**patternMap**](eventmanifestschema-patternmap-patternmaplisttype-element.md) | [**PatternMapType**](eventmanifestschema-patternmaptype-complextype.md) | Definisce un mapping tra due espressioni regolari. Viene utilizzata un'espressione per trovare una stringa corrispondente nella stringa del messaggio e l'altra per modificare la stringa prima che il servizio lo riporti nella stringa del messaggio. Viene utilizzato il primo mapping dei criteri che corrisponde a e altri modelli non vengono tentati.<br/> |
+| [**patternMap**](eventmanifestschema-patternmap-patternmaplisttype-element.md) | [**PatternMapType**](eventmanifestschema-patternmaptype-complextype.md) | Definisce un mapping tra due espressioni regolari. Un'espressione viene usata per trovare una stringa corrispondente nella stringa di messaggio e l'altra viene usata per modificare la stringa prima che il servizio la inserisca nuovamente nella stringa del messaggio. Viene usato il primo mapping dei criteri corrispondente e non vengono tentati altri modelli.<br/> |
 
 
 
@@ -51,8 +51,8 @@ Non usato. Definisce un elenco di coppie di espressioni regolari utilizzate per 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

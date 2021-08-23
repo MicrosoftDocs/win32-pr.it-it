@@ -4,16 +4,16 @@ ms.assetid: ed623e1c-3df8-400c-8c5b-134c8a1f2ab8
 title: Menu Strumenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e678af8c3e5179a6846c51d52f52ffa203308d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73e23df63b14f91970208ef676aefc777ba97bdb439372c244e86463fca9f3c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034699"
 ---
 # <a name="tools-menu"></a>Menu Strumenti
 
-Il menu **strumenti** include i comandi seguenti:
+Nel  menu Strumenti sono disponibili i comandi seguenti:
 
 
 
@@ -30,12 +30,12 @@ Il menu **strumenti** include i comandi seguenti:
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Spy nodo selezionato</strong></td>
-<td>Registra tutte le chiamate al metodo su un nodo di trasformazione selezionato o un nodo di output e salva i risultati in un file di testo. Per altre informazioni, vedere <a href="logging-topology-node-activities.md">registrazione delle attività dei nodi della topologia</a></td>
+<td><strong>Nodo selezionato di Spy</strong></td>
+<td>Registra tutte le chiamate ai metodi su un nodo di trasformazione o un nodo di output selezionato e salva i risultati in un file di testo. Per altre informazioni, vedere <a href="logging-topology-node-activities.md">Registrazione delle attività dei nodi della topologia</a></td>
 </tr>
 <tr class="even">
 <td><strong>Topoloader personalizzato...</strong></td>
-<td>Consente all'utente di fornire un caricatore della topologia personalizzato.<br/>
+<td>Consente all'utente di fornire un caricatore di topologia personalizzato.<br/>
 <blockquote>
 [!Note]<br />
 Questa funzionalità è stata aggiunta per Windows 7.

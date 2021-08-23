@@ -11,12 +11,12 @@ keywords:
 - ODL MIDL , direttive
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db346a664ed7b8f7beeacfe73cc928a924befe10
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 9c75c959c77e13476eeeff1c9fdfda2481e006935e7ac4d05cbb8596cf6ff148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066841"
 ---
 # <a name="odl-language-features-in-midl"></a>Funzionalità del linguaggio ODL in MIDL
 
@@ -25,7 +25,7 @@ ms.locfileid: "113119786"
 
  
 
-Negli argomenti seguenti sono elencati gli Object Description Language (ODL), le parole chiave, le istruzioni e le direttive che fanno ora parte di Microsoft Interface Definition Language (MIDL):
+Negli argomenti seguenti sono elencati Object Description Language attributi, parole chiave, istruzioni e direttive ODL (ODL) che fanno ora parte di Microsoft Interface Definition Language (MIDL):
 
 -   [Attributi ODL](#odl-attributes)
 -   [Parole chiave, istruzioni e direttive ODL](#odl-keywords-statements-and-directives)
@@ -206,7 +206,7 @@ Negli argomenti seguenti sono elencati gli Object Description Language (ODL), le
 
 [**Interfaccia**](interface.md)
 
-[**library**](library.md)
+[**Libreria**](library.md)
 
 [**Modulo**](module.md)
 

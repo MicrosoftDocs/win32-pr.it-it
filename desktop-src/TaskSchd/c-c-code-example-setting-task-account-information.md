@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ impostazione delle informazioni sull'account dell'attività
-description: In questo esempio vengono impostate le informazioni sull'account per un'attività nota. In questo esempio si presuppone che l'attività \ 0034; test attività \ 0034; esiste già nel computer locale e il servizio Utilità di pianificazione è in esecuzione.
+title: Esempio di codice C/C++ Impostazione delle informazioni sull'account attività
+description: In questo esempio vengono impostate le informazioni sull'account per un'attività nota. Questo esempio presuppone che l'attività \ 0034;test task \ 0034; esiste già nel computer locale e il servizio Utilità di pianificazione è in esecuzione.
 ms.assetid: ab865f70-f8d1-411e-b637-b1b1028ccf62
 keywords:
 - impostazione delle informazioni sull'account Utilità di pianificazione
-- impostazione delle proprietà degli elementi di lavoro Utilità di pianificazione, informazioni sull'account
+- impostazione delle proprietà degli elementi di lavoro Utilità di pianificazione , informazioni sull'account
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb5673653fa5dfe4875fb57a00535b30ae384e91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9efa9307e930ba8bb23813cf9a2dd588c464435fb8df5f6c71724321f0854fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060229"
 ---
-# <a name="cc-code-example-setting-task-account-information"></a>Esempio di codice C/C++: impostazione delle informazioni sull'account attività
+# <a name="cc-code-example-setting-task-account-information"></a>Esempio di codice C/C++: Impostazione delle informazioni sull'account attività
 
-In questo esempio vengono impostate le informazioni sull'account per un'attività nota. In questo esempio si presuppone che l'attività "test Task" esista già nel computer locale e che il servizio Utilità di pianificazione sia in esecuzione.
+In questo esempio vengono impostate le informazioni sull'account per un'attività nota. In questo esempio si presuppone che l'attività "test task" esista già nel computer locale e che il Utilità di pianificazione sia in esecuzione.
 
 
 ```C++
@@ -190,12 +190,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

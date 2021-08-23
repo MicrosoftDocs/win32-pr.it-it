@@ -1,28 +1,28 @@
 ---
-title: Sottolinguaggio SQL
-description: Il sottolinguaggio SQL, derivato dalla Structured Query Language, usa espressioni leggibili per definire istruzioni di query.
+title: SQL Dialetto
+description: Il SQL dialetto, derivato dal Structured Query Language, usa espressioni leggibili per definire le istruzioni di query.
 ms.assetid: c1032268-e0f5-4d74-ab72-864cdd36851d
 ms.tgt_platform: multiple
 keywords:
-- Linguaggio ADSI SQL
-- dialetto ADSI, sottolinguaggio SQL
+- SQL Dialetto ADSI
+- dialetto ADSI , SQL dialetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0936a54bc7bd0028717967ce779fe2f2048a33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b7483a5e3785f410e6c2fd875122ba24618a82b70d1ed6dc9a85105ae4e8dcfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262051"
 ---
-# <a name="sql-dialect"></a>Sottolinguaggio SQL
+# <a name="sql-dialect"></a>SQL Dialetto
 
-Il sottolinguaggio SQL, derivato dalla Structured Query Language, usa espressioni leggibili per definire istruzioni di query. Utilizzare un'istruzione di query SQL con le interfacce di ricerca ADSI seguenti:
+Il SQL dialetto, derivato dal Structured Query Language, usa espressioni leggibili per definire le istruzioni di query. Usare un SQL di query con le interfacce di ricerca ADSI seguenti:
 
--   Le interfacce [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , ovvero interfacce di automazione che utilizzano OLE DB.
--   [OLE DB](searching-with-ole-db.md), ovvero un set di interfacce C/C++ per l'esecuzione di query sui database.
+-   Le [ActiveX ADO (Data Object),](searching-with-activex-data-objects-ado.md) ovvero interfacce di automazione che usano OLE DB.
+-   [OLE DB](searching-with-ole-db.md), ovvero un set di interfacce C/C++ per l'esecuzione di query su database.
 
-Le istruzioni SQL richiedono la sintassi seguente.
+SQL istruzioni richiedono la sintassi seguente.
 
 
 ```sql
@@ -31,27 +31,27 @@ SELECT [ALL] * | select-list FROM 'ADsPath' [WHERE search-condition] [ORDER BY s
 
 
 
-Nella tabella seguente sono elencate le parole chiave dell'istruzione di query SQL.
+Nella tabella seguente sono elencate le SQL delle istruzioni di query.
 
 
 
 | Parola chiave  | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SELECT   | Specifica un elenco delimitato da virgole di attributi da recuperare per ogni oggetto. Se si specifica \* , la query recupera solo il ADsPath di ogni oggetto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| FROM     | Specifica il ADsPath della base della ricerca. Ad esempio, il ADsPath del contenitore degli utenti in un dominio Active Directory potrebbe essere ' LDAP://CN = Users, DC = Fabrikam, DC = COM '. Tenere presente che il percorso è racchiuso tra virgolette singole (').                                                                                                                                                                                                                                                                                                                                                    |
-| WHERE    | Parola chiave facoltativa che specifica il filtro per la query.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ORDER BY | Parola chiave facoltativa che genera un ordinamento sul lato server se il server supporta il controllo di ordinamento LDAP. Active Directory supporta il controllo di ordinamento, ma può influisca sulle prestazioni del server, in particolare se il set di risultati è di grandi dimensioni. Sort-list è un elenco delimitato da virgole di attributi su cui eseguire l'ordinamento. Tenere presente che Active Directory supporta solo una singola chiave di ordinamento. È possibile usare le parole chiave ASC e DESC facoltative per specificare l'ordinamento crescente o decrescente. il valore predefinito è Ascending. La parola chiave ORDER BY esegue l'override di qualsiasi chiave di ordinamento specificata con la proprietà "Sort on" dell'oggetto comando ADO. |
+| SELECT   | Specifica un elenco delimitato da virgole di attributi da recuperare per ogni oggetto. Se si specifica \* , la query recupera solo l'ADsPath di ogni oggetto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| FROM     | Specifica il valore ADsPath della base della ricerca. Ad esempio, il percorso ADsPath del contenitore Users in un dominio di Active Directory potrebbe essere "LDAP://CN=Users,DC=Fabrikam,DC=COM". Tenere presente che il percorso è racchiuso tra una coppia di virgolette singole (').                                                                                                                                                                                                                                                                                                                                                    |
+| WHERE    | Parola chiave facoltativa che specifica il filtro di query.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ORDER BY | Parola chiave facoltativa che genera un ordinamento lato server se il server supporta il controllo di ordinamento LDAP. Active Directory supporta il controllo di ordinamento, ma può influire sulle prestazioni del server, in particolare se il set di risultati è di grandi dimensioni. L'elenco di ordinamento è un elenco delimitato da virgole di attributi in base ai quali eseguire l'ordinamento. Tenere presente che Active Directory supporta solo una singola chiave di ordinamento. È possibile usare le parole chiave facoltative ASC e DESC per specificare l'ordinamento crescente o decrescente. il valore predefinito è crescente. La parola chiave ORDER BY esegue l'override di qualsiasi chiave di ordinamento specificata con la proprietà "Sort on" dell'oggetto ADO Command. |
 
 
 
- 
+ 
 
 > [!Note]  
-> Nei casi in cui viene utilizzato un set di caratteri MultiByte, se la ricerca viene eseguita da ADO con il sottolinguaggio SQL, non è possibile utilizzare una barra rovesciata per eseguire il escape dei caratteri. Al contrario, è necessario usare le sequenze di escape elencate in [caratteri speciali](search-filter-syntax.md) . Ad esempio, per un'istruzione che usava la sintassi "samAccountName = \( test", che usa la barra rovesciata " \\ ", per eseguire l'escape della parentesi di apertura "(", invece, sostituire la barra rovesciata con il carattere speciale " \\ 28", come segue: "sAMAccountName = \\ 28Test".
+> Nei casi in cui viene usato un set di caratteri multibyte, se la ricerca viene eseguita da ADO con il dialetto SQL, non è possibile usare una barra rovesciata per i caratteri di escape. È invece necessario usare le sequenze di escape [elencate](search-filter-syntax.md) in Caratteri speciali. Ad esempio, per un'istruzione che usa la sintassi "samAccountName= Test", che usa la barra rovesciata, " ", per eseguire l'escape della parentesi aperta, "(", sostituire invece la barra rovesciata con il carattere speciale " 28", come indicato di \( \\ \\ seguito: "samAccountName= \\ 28Test".
 
- 
+ 
 
-Le istruzioni di query seguenti sono esempi di sottolinguaggio SQL in ADSI.
+Le istruzioni di query seguenti sono esempi di SQL dialetto in ADSI.
 
 Per cercare tutti gli oggetti gruppo.
 
@@ -71,7 +71,7 @@ SELECT ADsPath, cn FROM 'LDAP://OU=Sales,DC=Fabrikam,DC=COM' WHERE objectCategor
 
 
 
-La grammatica formale per le query SQL è definita nell'esempio di codice seguente. Tutte le parole chiave non fanno distinzione tra maiuscole e minuscole.
+La grammatica formale per SQL query è definita nell'esempio di codice seguente. Per tutte le parole chiave non viene fatto distinzione tra maiuscole e minuscole.
 
 
 ```sql
@@ -100,7 +100,7 @@ boolean-literal ::= TRUE | FALSE | YES | NO | ON | OFF
 
 
 
-I join interni di SQL non sono supportati dal provider Active Directory OLE DB, ma è possibile usare SQL per aggiungere dati SQL e Active Directory. Per ulteriori informazioni, vedere [creazione di un join eterogeneo tra SQL Server e Active Directory](creating-a-heterogeneous-join-between-sql-server-and-active-directory.md).
+SQL inner join non sono supportati dal provider di Active Directory OLE DB, ma è possibile usare SQL per aggiungere SQL dati di Active Directory. Per altre informazioni, vedere [Creazione di un join eterogeneo](creating-a-heterogeneous-join-between-sql-server-and-active-directory.md)tra SQL Server e Active Directory.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -115,15 +115,15 @@ I join interni di SQL non sono supportati dal provider Active Directory OLE DB, 
 [Ricerca con l'interfaccia IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Ricerca con ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+[Ricerca con oggetti ActiveX dati](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
 [Ricerca con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Cross-certificate-Pair
+title: Attributo cross-certificate-pair
 description: Certificato incrociato V3.
 ms.assetid: a6a2df06-4792-4874-a507-80c42b0606ec
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo della coppia tra certificati
+- Schema AD dell'attributo tra certificati e coppie di certificati
 - Schema AD dell'attributo crossCertificatePair
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f0c2bee3501cc2116330a75e38d573f2ca2e3eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1751ee6142348ca1fd8a244690bcd02a245150142136589f362b0e67b57fd379
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326871"
 ---
-# <a name="cross-certificate-pair-attribute"></a>Attributo Cross-certificate-Pair
+# <a name="cross-certificate-pair-attribute"></a>Attributo cross-certificate-pair
 
 Certificato incrociato V3.
 
@@ -29,13 +29,13 @@ Certificato incrociato V3.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Associazione tra certificati                                |
-| LDAP-Display-Name | crossCertificatePair                                  |
+| CN                | Coppia tra certificati                                |
+| Ldap-Display-Name | crossCertificatePair                                  |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.40                                              |
-| System-ID-GUID    | 167757b2-47f3-11d1-a9c3-0000f80367c1                  |
+| System-Id-Guid    | 167757b2-47f3-11d1-a9c3-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Certificato incrociato V3.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | 0x8025                                                                 |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Falso                                                                  |
+| A valore singolo       | Falso                                                                  |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

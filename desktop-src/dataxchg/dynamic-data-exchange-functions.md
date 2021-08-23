@@ -4,12 +4,12 @@ description: . | Funzioni DDE
 ms.assetid: d109ac50-e464-4928-9d6b-bc65f257f826
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90981c8aa85905a90abe9e73497c399a5d690210
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d94f4c719b2c20f954f014e572131ac36730d59ecb78284830af8023993f6ee0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128593"
 ---
 # <a name="dde-functions"></a>Funzioni DDE
 
@@ -20,7 +20,7 @@ ms.locfileid: "104353181"
 -   [**ImpersonateDdeClientWindow**](/windows/desktop/api/Dde/nf-dde-impersonateddeclientwindow)
 -   [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam)
 -   [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
--   [**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+-   [**Decomprimere UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 
  
 

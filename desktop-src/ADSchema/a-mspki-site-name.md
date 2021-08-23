@@ -1,11 +1,11 @@
 ---
-title: ms-PKI-Site-Name (attributo)
-description: Active Directory sito a cui appartiene il computer della CA.
+title: Attributo ms-PKI-Site-Name
+description: Sito di Active Directory a cui appartiene il computer della CA.
 ms.assetid: 62cdaa18-832d-4981-bc29-068c03dd3b09
 ms.tgt_platform: multiple
 keywords:
-- Microsoft-PKI-Site-Name attributo AD schema
-- msPKI-Site-Name attributo AD schema
+- Schema AD dell'attributo ms-PKI-Site-Name
+- Schema AD dell'attributo msPKI-Site-Name
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d9ce7b94f983ae9e6bc413b2fbd70b874e64e8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ca80dccbda813050c213a210738f96f9e6b5c619b58f6fef9fe1648d4b8b28f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081605"
 ---
-# <a name="ms-pki-site-name-attribute"></a>ms-PKI-Site-Name (attributo)
+# <a name="ms-pki-site-name-attribute"></a>Attributo ms-PKI-Site-Name
 
-Active Directory sito a cui appartiene il computer della CA.
+Sito di Active Directory a cui appartiene il computer della CA.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-PKI-Site-Name                            |
-| LDAP-Display-Name | msPKI-nome-sito                             |
+| Ldap-Display-Name | msPKI-Site-Name                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2077                     |
-| System-ID-GUID    | 0cd8711f-0afc-4926-a4b1-09b08d3d436c        |
+| System-Id-Guid    | 0cd8711f-0afc-4926-a4b1-09b08d3d436c        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,15 +54,15 @@ Active Directory sito a cui appartiene il computer della CA.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Active Directory sito a cui appartiene il computer della CA.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Vero                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**PKI-registrazione-servizio**](c-pkienrollmentservice.md)<br/> |
+| Classi usate in        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

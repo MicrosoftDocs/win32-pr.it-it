@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-password-History-length
+title: Attributo ms-DS-Password-History-Length
 description: Lunghezza della cronologia delle password per gli account utente.
 ms.assetid: 9a3a8420-253c-4a55-9d64-15c2c4035ea0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-password-History-length
-- attributo msDS-PasswordHistoryLength-schema AD
+- Attributo ms-DS-Password-History-Length schema DI AD
+- Schema AD dell'attributo msDS-PasswordHistoryLength
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfd79771e29e8fe755064e008510c5c18fd4e64
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7baa73decb4658e788125536cfafb6ef04f1641728cb37fa32b40b10d4ba2ef9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294621"
 ---
-# <a name="ms-ds-password-history-length-attribute"></a>attributo ms-DS-password-History-length
+# <a name="ms-ds-password-history-length-attribute"></a>Attributo ms-DS-Password-History-Length
 
 Lunghezza della cronologia delle password per gli account utente.
 
@@ -29,13 +29,13 @@ Lunghezza della cronologia delle password per gli account utente.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-password-cronologia-lunghezza        |
-| LDAP-Display-Name | msDS-PasswordHistoryLength           |
+| CN                | ms-DS-Password-History-Length        |
+| Ldap-Display-Name | msDS-PasswordHistoryLength           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2014              |
-| System-ID-GUID    | fed81bb7-768c-4c2f-9641-2245de34794d |
+| System-Id-Guid    | fed81bb7-768c-4c2f-9641-2245de34794d |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Lunghezza della cronologia delle password per gli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Lunghezza della cronologia delle password per gli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Lunghezza della cronologia delle password per gli account utente.
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| È a valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classi utilizzate in        | [**ms-DS-password-impostazioni**](c-msds-passwordsettings.md)<br/> |
+| Classi usate in        | [**ms-DS-Password-Impostazioni**](c-msds-passwordsettings.md)<br/> |
 
 
 

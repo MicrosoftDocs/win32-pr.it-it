@@ -1,9 +1,9 @@
 ---
 title: WM/Lyrics_Synchronised
-description: L'attributo di WM/lyrics \_ sincronizzato contiene i lyrics sincronizzati con i tempi del file.
+description: L'attributo Synchronised di WM/Lyrics contiene i testi sincronizzati con \_ gli orari nel file.
 ms.assetid: edc73826-9062-4767-8659-8ec4652c42ab
 keywords:
-- Formato WM/Lyrics_Synchronised Windows Media
+- WM/Lyrics_Synchronised windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2e38a79738dbf0258de2e6f2539c9dc16bc71fa
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6ebf4bebd746a821221f11e64800aa57e588c4b266200d417dccc88ced7b4657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084049"
 ---
-# <a name="wmlyrics_synchronised"></a>WM/lyrics \_ sincronizzati
+# <a name="wmlyrics_synchronised"></a>WM/Lyrics \_ Synchronised
 
-L'attributo di **WM/lyrics \_ sincronizzato** contiene i lyrics sincronizzati con i tempi del file.
+**L'attributo \_ Synchronised di WM/Lyrics** contiene i testi sincronizzati con gli orari nel file.
 
 ## <a name="global-constant"></a>Costante globale
 
-g \_ wszWMLyrics \_ sincronizzato
+g \_ wszWMLyrics \_ Synchronised
 
 ## <a name="data-type"></a>Tipo di dati
 
-[**WM \_ \_lyrics sincronizzati**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_synchronised_lyrics) (**WMT di \_ tipo \_ binario**)
+[**WM \_ TESTO SINCRONIZZATO \_ (**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_synchronised_lyrics) FILE BINARIO **DI TIPO WMT \_ \_**)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,9 +38,9 @@ g \_ wszWMLyrics \_ sincronizzato
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

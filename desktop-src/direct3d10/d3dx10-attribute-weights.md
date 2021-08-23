@@ -1,7 +1,7 @@
 ---
-description: 'D3DX10_ATTRIBUTE_WEIGHTS struttura : specifica gli attributi di spessore della mesh.'
+description: 'D3DX10_ATTRIBUTE_WEIGHTS struttura : specifica gli attributi del peso della mesh.'
 ms.assetid: 554bb8f2-9e92-4e9e-b500-c3cc47d57830
-title: D3DX10_ATTRIBUTE_WEIGHTS (D3DX10.h)
+title: D3DX10_ATTRIBUTE_WEIGHTS struttura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: ab163149493ad73f892a251a691ad82544d7f382
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ef80db70d0562b000aa527afe17da43eee0eed5d6498e5da5b3d1ad964f5f87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282781"
 ---
-# <a name="d3dx10_attribute_weights-structure"></a>Struttura WEIGHTS DEGLI ATTRIBUTI D3DX10 \_ \_
+# <a name="d3dx10_attribute_weights-structure"></a>Struttura WEIGHTS DELL'ATTRIBUTO D3DX10 \_ \_
 
-Specifica gli attributi di spessore della mesh.
+Specifica gli attributi del peso della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Spessore blend.
+Spessore della fusione.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Binormale.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura descrive in che modo un'operazione di semplificazione considererà i dati dei vertici durante il calcolo dei costi relativi tra i bordi di compressione. Ad esempio, se il campo Normale è 0,0, l'operazione di semplificazione ignorerà il componente normale del vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo Normal è 1.0, l'operazione di semplificazione userà il componente normale dei vertici. Se il campo Normale è 2.0, raddoppiare la quantità di errori. se il campo Normale è 4.0, quindi quadruplicare il numero di errori e così via.
+Questa struttura descrive in che modo un'operazione di semplificazione considererà i dati dei vertici durante il calcolo dei costi relativi tra i bordi di compressione. Ad esempio, se il campo Normale è 0,0, l'operazione di semplificazione ignorerà il componente normale del vertice durante il calcolo dell'errore per la compressione. Tuttavia, se il campo Normale è 1.0, l'operazione di semplificazione userà il componente normale dei vertici. Se il campo Normale è 2.0, raddoppiare la quantità di errori. se il campo Normale è 4.0, quindi quadruplicare il numero di errori e così via.
 
 Il tipo WEIGHTS ATTRIBUTE LPD3DX è definito come puntatore alla struttura \_ \_ ATTRIBUTE WEIGHTS D3DX. \_ \_
 

@@ -1,10 +1,10 @@
 ---
-title: MSMQ-attributo a livello di privacy
+title: Attributo MSMQ-Privacy-Level
 description: Livello di privacy richiesto dalla coda.
 ms.assetid: 37addd1c-9c92-4155-99ff-dd711927717f
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-schema di AD attributo a livello di privacy
+- Schema AD dell'attributo MSMQ-Privacy-Level
 - Schema AD dell'attributo mSMQPrivacyLevel
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 349bcffb521402b4f915937e205504ece541eee4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0cb153a74fb07e82f528cdbd21dddadd528e88cb2ea49cd422bff3fd69ab623b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081795"
 ---
-# <a name="msmq-privacy-level-attribute"></a>MSMQ-attributo a livello di privacy
+# <a name="msmq-privacy-level-attribute"></a>Attributo MSMQ-Privacy-Level
 
 Livello di privacy richiesto dalla coda.
 
@@ -29,13 +29,13 @@ Livello di privacy richiesto dalla coda.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-livello di privacy                   |
-| LDAP-Display-Name | mSMQPrivacyLevel                     |
+| CN                | Livello di privacy di MSMQ                   |
+| Ldap-Display-Name | mSMQPrivacyLevel                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.924               |
-| System-ID-GUID    | 9a0dc327-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc327-c100-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Livello di privacy richiesto dalla coda.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Vero                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Classi usate in        | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
 
 
 

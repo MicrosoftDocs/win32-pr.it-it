@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETPARENT (COMmctrl. h)
-description: Imposta la finestra a cui il controllo Toolbar invia messaggi di notifica.
+title: TB_SETPARENT messaggio (Commctrl.h)
+description: Imposta la finestra a cui il controllo barra degli strumenti invia messaggi di notifica.
 ms.assetid: 4863bd9f-021b-4295-9483-459fc19325d9
 keywords:
-- Controlli di Windows Message TB_SETPARENT
+- TB_SETPARENT di controllo Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8137406c8e6854f86ed81d8d6b96293074ae67b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd97cdab230317feea65f2bffce74a7dec34ee336d69bb46ec4c6963ca9b3eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078145"
 ---
-# <a name="tb_setparent-message"></a>TB \_ messaggio padre
+# <a name="tb_setparent-message"></a>TB \_ SETPARENT message
 
-Imposta la finestra a cui il controllo Toolbar invia messaggi di notifica.
+Imposta la finestra a cui il controllo barra degli strumenti invia messaggi di notifica.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta la finestra a cui il controllo Toolbar invia messaggi di notifica.
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra per la ricezione di messaggi di notifica.
+Handle alla finestra per ricevere messaggi di notifica.
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Handle per la finestra per la ricezione di messaggi di notifica.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un handle per la finestra di notifica precedente oppure **null** se non è presente una finestra di notifica precedente.
+Il valore restituito è un handle per la finestra di notifica precedente oppure **NULL** se non è presente alcuna finestra di notifica precedente.
 
 ## <a name="remarks"></a>Commenti
 
-Il **messaggio \_ padre TB** non modifica la finestra padre specificata al momento della creazione del controllo. Chiamando la funzione [**GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) per un controllo Toolbar, viene restituita la finestra padre effettiva, non la finestra specificata in **TB \_ padre**. Per modificare la finestra padre del controllo, chiamare la funzione [**padre**](/windows/desktop/api/winuser/nf-winuser-setparent) .
+Il **messaggio \_ SETPARENT** tb non modifica la finestra padre specificata al momento della creazione del controllo. La chiamata [**alla funzione GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) per un controllo barra degli strumenti restituirà la finestra padre effettiva, non la finestra specificata in **\_ SETPARENT TB.** Per modificare la finestra padre del controllo, chiamare la [**funzione SetParent.**](/windows/desktop/api/winuser/nf-winuser-setparent)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il **messaggio \_ padre TB** non modifica la finestra padre specificata al momen
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Associazione tra un sistema virtuale e i dati di impostazione dello snapshot che è l'elemento padre del sistema virtuale.
+description: Associazione tra un sistema virtuale e i dati di impostazione dello snapshot padre del sistema virtuale.
 ms.assetid: d11e00e0-a163-49ea-b8ef-e3909a7dc83f
 ms.tgt_platform: multiple
-title: Classe CIM_PreviousSettingData
+title: CIM_PreviousSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2
-ms.openlocfilehash: 4422d590714b82120b610dc4eeb9377a385519d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85f08f22409df8a17bdae33ae81c06cb8167996ecb477f6a2d207d9e0ce2acca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131763"
 ---
-# <a name="cim_previoussettingdata-class"></a>CIM \_ PreviousSettingData (classe)
+# <a name="cim_previoussettingdata-class"></a>Classe CIM \_ PreviousSettingData
 
-Associazione tra un sistema virtuale e i dati di impostazione dello snapshot che è l'elemento padre del sistema virtuale.
+Associazione tra un sistema virtuale e i dati di impostazione dello snapshot padre del sistema virtuale.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,45 +46,45 @@ class CIM_PreviousSettingData
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ PreviousSettingData** presenta questi tipi di membri:
+La **classe CIM \_ PreviousSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ PreviousSettingData** dispone di queste proprietà.
+La **classe CIM \_ PreviousSettingData** ha queste proprietà.
 
 <dl> <dt>
 
-**PreviousObject**
+**Oggetto precedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-I dati dell'impostazione dello snapshot padre di questo computer.
+Dati dell'impostazione dello snapshot padre di questo computer.
 
 </dd> <dt>
 
 **Destinazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Sistema del computer che era la destinazione dell'applicazione.
+Sistema computer di destinazione dell'applicazione.
 
 </dd> </dl>
 

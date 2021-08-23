@@ -1,9 +1,9 @@
 ---
-title: Struttura D3DX11_PASS_DESC (D3dx11effect. h)
-description: Descrive un passaggio di effetto, che contiene lo stato della pipeline.
+title: D3DX11_PASS_DESC struttura (D3dx11effect.h)
+description: Descrive un passaggio dell'effetto, che contiene lo stato della pipeline.
 ms.assetid: 3695b99f-d379-403b-aa10-e3e370a6c864
 keywords:
-- Struttura D3DX11_PASS_DESC Direct3D 11
+- D3DX11_PASS_DESC struttura Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b4d7f10268db0515b2f7e3772332b34427ba67a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6f00cc28e6ab901073e30abd2554046d61144c42af2217869c0b87dc6c19d29d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124946"
 ---
-# <a name="d3dx11_pass_desc-structure"></a>D3DX11 \_ pass \_ desc-struttura
+# <a name="d3dx11_pass_desc-structure"></a>Struttura D3DX11 \_ PASS \_ DESC
 
-Descrive un passaggio di effetto, che contiene lo stato della pipeline.
+Descrive un passaggio dell'effetto, che contiene lo stato della pipeline.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,14 +53,14 @@ Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Nome del passaggio (**null** se non anonimo).
+Nome di questo passaggio (**NULL** se non anonimo).
 
 </dd> <dt>
 
-**annotazioni**
+**Annotazioni**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -71,61 +71,61 @@ Numero di annotazioni in questo passaggio.
 **pIAInputSignature**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)\***
 
 </dd> <dd>
 
-Firma da vertex shader o geometry shader (se non è presente alcun vertex shader) o **null** se non esiste alcun vertex shader.
+Firma dal vertex shader o geometry shader (se non è presente alcun vertex shader) o **NULL** se non esiste.
 
 </dd> <dt>
 
 **IAInputSignatureSize**
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Dimensioni singature in byte.
+Dimensioni della singature in byte.
 
 </dd> <dt>
 
 **StencilRef**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Il valore di riferimento stencil usato nello stato di stencil Depth.
+Valore di riferimento dello stencil utilizzato nello stato depth-stencil.
 
 </dd> <dt>
 
 **SampleMask**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Maschera di esempio per lo stato di Blend.
+Maschera di esempio per lo stato di fusione.
 
 </dd> <dt>
 
 **BlendFactor**
 </dt> <dd>
 
-Tipo: **[ **float**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **FLOAT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Fattori di Blend per componente (RGBA) per lo stato di Blend.
+Fattori di blend per componente (RGBA) per lo stato di blend.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-D3DX11 \_ pass \_ desc viene usato con [**ID3DX11EffectPass:: getdesc**](id3dx11effectpass-getdesc.md).
+D3DX11 \_ PASS \_ DESC viene usato con [**ID3DX11EffectPass::GetDesc**](id3dx11effectpass-getdesc.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -133,7 +133,7 @@ D3DX11 \_ pass \_ desc viene usato con [**ID3DX11EffectPass:: getdesc**](id3dx11
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -141,7 +141,7 @@ D3DX11 \_ pass \_ desc viene usato con [**ID3DX11EffectPass:: getdesc**](id3dx11
 
 <dl> <dt>
 
-[Strutture Effects 11](d3d11-graphics-reference-effects11-structures.md)
+[Effetti 11 Strutture](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

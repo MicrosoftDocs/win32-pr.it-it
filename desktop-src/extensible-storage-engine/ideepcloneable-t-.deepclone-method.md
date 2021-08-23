@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: IDeepCloneable <T> . Metodo DeepClone'
-title: IDeepCloneable (T). Metodo DeepClone
+description: 'Altre informazioni su: IDeepCloneable. <T> Metodo DeepClone'
+title: IDeepCloneable(T). Metodo DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.IDeepCloneable`1.DeepClone
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh578936(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aeba4b0383c3ec1ae7ebf2cf9d986dc7a7409f9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51c81e0c68be615c9e48bab43d61a9e1ca2975112edb12388a3d2c5e7cf15fdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039489"
 ---
 # <a name="ideepcloneabletdeepclone-method"></a>IDeepCloneable \<T\> . Metodo DeepClone
 
-Restituisce una copia completa dell'oggetto.
+Restituisce una copia completa dell'oggetto .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,14 +57,14 @@ T DeepClone()
 #### <a name="return-value"></a>Valore restituito
 
 Tipo: [T](./ideepcloneable-t-interface.md)  
-Copia completa dell'oggetto.  
+Copia completa dell'oggetto .  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Interfaccia IDeepCloneable](./ideepcloneable-t-interface.md)
+[Interfaccia IDeepCloneable \<T\>](./ideepcloneable-t-interface.md)
 
-[Membri di IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
+[Membri IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

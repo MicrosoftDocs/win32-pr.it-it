@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETBIDIOPTIONS (RichEdit. h)
+title: EM_GETBIDIOPTIONS messaggio (Richedit.h)
 description: Indica lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
 ms.assetid: 055581c0-ae59-4601-a3e9-416705af429a
 keywords:
-- Controlli di Windows Message EM_GETBIDIOPTIONS
+- EM_GETBIDIOPTIONS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fade63ac94007bedbf58642dc7a9451eb158fc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90b377e0fd3a439737fea9efbc403d2ccc64d6cf78eab1c7e31feeffd6c4b0f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019909"
 ---
-# <a name="em_getbidioptions-message"></a>\_Messaggio GETBIDIOPTIONS em
+# <a name="em_getbidioptions-message"></a>Messaggio \_ EM GETBIDIOPTIONS
 
 Indica lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
 
@@ -32,7 +32,7 @@ Indica lo stato corrente delle opzioni bidirezionali nel controllo Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Struttura [**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioption
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,10 +57,10 @@ Questo messaggio imposta i valori dei membri **wMask** e **wEffects** sul valore
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -71,10 +71,10 @@ Questo messaggio imposta i valori dei membri **wMask** e **wEffects** sul valore
 **Riferimento**
 </dt> <dt>
 
-[**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions)
+[**OPZIONI DI OFFERTA**](/windows/desktop/api/Richedit/ns-richedit-bidioptions)
 </dt> <dt>
 
-[**\_SETBIDIOPTIONS em**](em-setbidioptions.md)
+[**EM \_ SETBIDIOPTIONS**](em-setbidioptions.md)
 </dt> </dl>
 
  

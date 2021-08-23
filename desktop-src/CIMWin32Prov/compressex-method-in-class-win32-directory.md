@@ -1,5 +1,5 @@
 ---
-description: Comprime il file di voce o la directory della directory logica specificata nel percorso dell'oggetto (questo metodo è una versione estesa del metodo Compress).
+description: Comprime il file di voce di directory logica (o directory) specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo Compress).
 ms.assetid: 6b6e559c-4ca6-49d4-b255-5e1511fdf2e2
 ms.tgt_platform: multiple
 title: Metodo CompressEx della classe Win32_Directory
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3ee300919efa388d27ae9d594bc2b6c27def88e6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d6340b4fa46ddebd579ab8622d502ebdd2d8eacea215a18407f0be4c222d2d03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080225"
 ---
-# <a name="compressex-method-of-the-win32_directory-class"></a>Metodo CompressEx della classe di \_ directory Win32
+# <a name="compressex-method-of-the-win32_directory-class"></a>Metodo CompressEx della classe Directory Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CompressEx** comprime il file di voce o la directory della directory logica specificata nel percorso dell'oggetto (questo metodo è una versione estesa del metodo [**Compress**](compress-method-in-class-win32-directory.md) ).
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CompressEx** comprime il file di voce di directory logica (o directory) specificato nel percorso dell'oggetto (questo metodo è una versione estesa del [**metodo Compress).**](compress-method-in-class-win32-directory.md)
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,29 +44,29 @@ uint32 CompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **CompressEx** non è riuscito. Questo parametro sarà **null** se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo CompressEx non** è riuscito. Questo parametro sarà **NULL se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **CompressEx**. Il parametro *StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata **ExecMethod** .
+Denomi il file o la directory figlio da usare come punto di partenza per **CompressEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella **chiamata a ExecMethod.**
 
-Se si usa *StartFileName* , è necessario impostare *ricorsivo* su true.
+Se *si usa StartFileName,* *anche Recursive* deve essere impostato su true.
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, la modifica della proprietà verrà applicata in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) .
+Se **true,** la modifica della proprietà verrà applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md)
 
 > [!Note]  
-> Per le istanze di file, il parametro di input *ricorsivo* viene ignorato.
+> Per le istanze di file, *il parametro di* input Ricorsivo viene ignorato.
 
  
 
@@ -74,7 +74,7 @@ Se **true**, la modifica della proprietà verrà applicata in modo ricorsivo a f
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato compresso correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato compresso correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -116,7 +116,7 @@ L'oggetto specificato esiste già.
 **11**
 </dt> <dd>
 
-Il file system non è un NTFS.
+Il file system non è ntfs.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -190,7 +190,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

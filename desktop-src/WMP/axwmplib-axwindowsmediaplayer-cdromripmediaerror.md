@@ -1,9 +1,9 @@
 ---
 title: Evento CdromRipMediaError dell'oggetto AxWindowsMediaPlayer
-description: L'evento CdromRipMediaError si verifica quando si verifica un errore durante l'estrazione di una singola traccia da un CD.
+description: L'evento CdromRipMediaError si verifica quando si verifica un errore durante lo scheggiamento di una singola traccia da un CD.
 ms.assetid: 542d0184-d893-4b98-903e-339909276fd6
 keywords:
-- Evento CdromRipMediaError dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento CdromRipMediaError dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39b429505996cd5e85bc1e0e2e85c3f47103d244
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea2be1f777c4af3385e41939743bb91a20d3d7094f1a38917b3e79686b2a2863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136184"
 ---
 # <a name="cdromripmediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromRipMediaError dell'oggetto AxWindowsMediaPlayer
 
-L'evento CdromRipMediaError si verifica quando si verifica un errore durante l'estrazione di una singola traccia da un CD.
+L'evento CdromRipMediaError si verifica quando si verifica un errore durante lo scheggiamento di una singola traccia da un CD.
 
 ``` syntax
 [C#]
@@ -41,14 +41,14 @@ Private Sub player_CdromRipMediaError(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_CdromRipMediaErrorEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromRipMediaErrorEvent**, che contiene le seguenti proprietà correlate a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromRipMediaErrorEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromRipMediaErrorEvent**, che contiene le proprietà seguenti correlate a questo evento.
 
 
 
 | Proprietà  | Descrizione                                                                                                             |
 |-----------|-------------------------------------------------------------------------------------------------------------------------|
-| pCdromRip | Interfaccia WMPLib. IWMPCdromRipThe che rappresenta l'operazione di strappo che ha generato l'errore.<br/>                |
-| pMedia    | Elemento multimediale System. ObjectThe che ha generato l'errore. È possibile eseguire il cast di questo oggetto a un'interfaccia IWMPMedia per accedervi.<br/> |
+| pCdromRip | WMPLib.IWMPCdromRip Interface che rappresenta l'operazione di depping che ha generato l'errore.<br/>                |
+| pMedia    | System.Object Elemento multimediale che ha generato l'errore. È possibile eseguire il cast a un'interfaccia IWMPMedia per accedervi.<br/> |
 
 
 

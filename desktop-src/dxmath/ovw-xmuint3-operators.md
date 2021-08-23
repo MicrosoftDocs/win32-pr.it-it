@@ -4,16 +4,16 @@ ms.assetid: 6e732b64-9926-4949-9292-c3ac3a553967
 title: Operatori XMUINT3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07195c100e7b27e6171cb7a281b13789a471bd09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4eac7a6a91fe41f2168b1c1c4265a12088b911cb8beb1a5138c4c4ab96a541af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118331"
 ---
 # <a name="xmuint3-operators"></a>Operatori XMUINT3
 
-La struttura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) espone gli operatori seguenti.
+La [**struttura XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,7 +26,7 @@ La struttura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3
 
 | Metodi                                              | Descrizione                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxmath/nf-directxmath-xmuint3-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMUINT3` all'istanza corrente di `XMUINT3` . <br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmuint3-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMUINT3` di all'istanza corrente di `XMUINT3` . <br/> |
 
 
 

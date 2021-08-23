@@ -4,7 +4,7 @@ description: Tipo di provider di crittografia utilizzato da MSMQ.
 ms.assetid: 08862f87-3dba-47f9-a028-a75a6dfd1df4
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-CSP-name attributo AD schema
+- Schema AD dell'attributo MSMQ-CSP-Name
 - Schema AD dell'attributo mSMQCSPName
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 784fc9143a811f71feb2e0ba87b8414569d0db1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d408da8006de454c846e86983922698601e8d9b1dd0e1fc386af121875cedf0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081905"
 ---
 # <a name="msmq-csp-name-attribute"></a>Attributo MSMQ-CSP-Name
 
@@ -30,12 +30,12 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MSMQ-CSP-Name                               |
-| LDAP-Display-Name | mSMQCSPName                                 |
+| Ldap-Display-Name | mSMQCSPName                                 |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.940                      |
-| System-ID-GUID    | 9a0dc334-c100-11d1-bbc5-0080c76670c0        |
+| System-Id-Guid    | 9a0dc334-c100-11d1-bbc5-0080c76670c0        |
 | Sintassi            | [**String(Teletex)**](s-string-teletex.md) |
 
 
@@ -58,15 +58,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| A valore singolo       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| A valore singolo       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tipo di provider di crittografia utilizzato da MSMQ.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| A valore singolo       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 

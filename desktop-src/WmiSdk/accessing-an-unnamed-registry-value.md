@@ -1,28 +1,28 @@
 ---
-description: Accesso a un valore del registro di sistema senza nome
+description: Accesso a un valore del Registro di sistema senza nome
 ms.assetid: 1095da4c-8b9f-4674-9801-f2d25c4f372b
 ms.tgt_platform: multiple
-title: Accesso a un valore del registro di sistema senza nome
+title: Accesso a un valore del Registro di sistema senza nome
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92860d240598f0353d1f4c9f41a77306942d272b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d62a82cfdb9d90ba11a177891ad7ee5e3310207825bd9a155c5eda3b10c4e68e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131924"
 ---
-# <a name="accessing-an-unnamed-registry-value"></a>Accesso a un valore del registro di sistema senza nome
+# <a name="accessing-an-unnamed-registry-value"></a>Accesso a un valore del Registro di sistema senza nome
 
-Il valore predefinito o senza nome di una chiave del registro di sistema viene visualizzato come (impostazione predefinita) o <No Name> nell'editor del registro di sistema Regedit. Per accedere a una chiave del registro di sistema senza nome, è possibile utilizzare il provider del registro di sistema. Analogamente, è anche possibile usare il provider del registro di sistema per accedere alle descrizioni bitmap, definite come valori senza nome.
+Il valore predefinito o senza nome di una chiave del Registro di sistema viene visualizzato come (predefinito) o <No Name> nell'editor del Registro di sistema Regedit. È possibile usare il provider del Registro di sistema per accedere a una chiave del Registro di sistema senza nome. Analogamente, è anche possibile usare il provider del Registro di sistema per accedere alle descrizioni delle bitmap, definite come valori senza nome.
 
-Nella procedura riportata di seguito viene descritto come recuperare un valore del registro di sistema senza nome.
+La procedura seguente descrive come recuperare un valore del Registro di sistema senza nome.
 
-**Per recuperare un valore del registro di sistema senza nome**
+**Per recuperare un valore del Registro di sistema senza nome**
 
-1.  Definire una proprietà e impostare il qualificatore **PropertyContext** della proprietà su una stringa vuota.
+1.  Definire una proprietà e impostare il **qualificatore PropertyContext** di tale proprietà su una stringa vuota.
 
-    Nell'esempio di codice seguente viene illustrato come la classe definisce le proprietà per mantenere i valori per la chiave specificata dal qualificatore **ClassContext** . Il valore predefinito viene archiviato nella proprietà **predefinita** .
+    Nell'esempio di codice seguente viene illustrato come la classe definisce le proprietà per contenere i valori per la chiave specificata dal **qualificatore ClassContext.** Il valore predefinito viene archiviato nella **proprietà** Default.
 
     ``` syntax
     [dynamic, 
@@ -38,11 +38,11 @@ Nella procedura riportata di seguito viene descritto come recuperare un valore d
     };
     ```
 
-    La chiave Transports non utilizza il valore senza nome, pertanto la compilazione di questo file MOF non produce alcun valore per la proprietà **predefinita** , a meno che non venga utilizzato uno strumento di modifica del registro di sistema per modificare il valore senza nome.
+    La chiave Transports non usa il valore senza nome, quindi la compilazione di questo file MOF non produce alcun valore per la proprietà **Default** a meno che non venga usato uno strumento di modifica del Registro di sistema per modificare il valore senza nome.
 
-2.  Per un file bitmap, definire una proprietà e impostare il **PropertyContext** della proprietà.
+2.  Per un file bitmap, definire una proprietà e impostare **l'oggetto PropertyContext** di tale proprietà.
 
-    Nell'esempio di codice riportato di seguito viene illustrato come definire una proprietà.
+    Nell'esempio di codice seguente viene illustrato come definire una proprietà .
 
     ```mof
     Local|hkey_classes_root\\.bmp

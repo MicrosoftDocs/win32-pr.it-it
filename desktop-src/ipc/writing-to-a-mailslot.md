@@ -1,19 +1,19 @@
 ---
-description: Come scrivere in un inserimento/espulsione. La scrittura in un inserimento/espulsione è simile alla scrittura in un file su disco standard.
+description: Come scrivere in un mailslot. La scrittura in un mailslot è simile alla scrittura in un file su disco standard.
 ms.assetid: a69ba953-cd5c-487f-b9e0-dbd6c44b88b8
-title: Scrittura in un inserimento/espulsione
+title: Scrittura in un mailslot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 568727f7a83d46925f3e681f3dec4906903ca8df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d13c31fd6b24217267b394f80c2dcdf551b6949f8692811173021fb78326f2f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359310"
 ---
-# <a name="writing-to-a-mailslot"></a>Scrittura in un inserimento/espulsione
+# <a name="writing-to-a-mailslot"></a>Scrittura in un mailslot
 
-La scrittura in un inserimento/espulsione è simile alla scrittura in un file su disco standard. Nel codice seguente vengono utilizzate le funzioni [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile)e [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) per inserire un breve messaggio in un inserimento/espulsione. Il messaggio viene trasmesso al server inserimento/espulsione denominato "Sample \_ inserimento/espulsione" nel computer locale. Il codice opera secondo il presupposto che il server inserimento/espulsione sia già stato creato.
+La scrittura in un mailslot è simile alla scrittura in un file su disco standard. Il codice seguente usa le [**funzioni CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile)e [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) per inserire un breve messaggio in un mailslot. Il messaggio viene trasmesso al server mailslot denominato "mailslot di \_ esempio" nel computer locale. Il codice funziona presupponendo che il server mailslot sia già stato creato.
 
 
 ```C++
@@ -77,7 +77,7 @@ int main()
 
 
 
-Di seguito è riportato l'output che viene visualizzato quando questo esempio viene eseguito con il server inserimento/espulsione illustrato in [lettura da un inserimento/espulsione](reading-from-a-mailslot.md).
+Di seguito è riportato l'output visualizzato quando questo esempio viene eseguito con il server mailslot illustrato in [Lettura da mailslot](reading-from-a-mailslot.md).
 
 ``` syntax
 Slot written to successfully.

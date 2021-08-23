@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentCommittedLogFileCorruptException'
+description: Altre informazioni sul costruttore EsentCommittedLogFileCorruptException
 title: Costruttore EsentCommittedLogFileCorruptException
 TOCTitle: 'EsentCommittedLogFileCorruptException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCommittedLogFileCorruptException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f4a72f79569d04046e3f425e339eef1150835f18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c0fef2a208b083228bf0cda21f84fa11ef9f8dd2344e2dbfec818a6d8451330
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116591"
 ---
 # <a name="esentcommittedlogfilecorruptexception-constructor"></a>Costruttore EsentCommittedLogFileCorruptException
 
 Inizializza una nuova istanza della classe EsentCommittedLogFileCorruptException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentCommittedLogFileCorruptException()
 
 [Membri di EsentCommittedLogFileCorruptException](./esentcommittedlogfilecorruptexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

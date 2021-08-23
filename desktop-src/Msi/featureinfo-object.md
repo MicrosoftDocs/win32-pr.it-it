@@ -13,32 +13,32 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 1db1bab5b1e55f027bb01eb9eff22484a4e39170
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 136bc160ea81367f8f55ad81cfc06f5e2e272cafae9d7b8f444a65d34e85d52b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328371"
 ---
 # <a name="featureinfo-object"></a>Oggetto FeatureInfo
 
-L'oggetto **FeatureInfo** contiene informazioni relative alla funzionalità di destinazione e viene creato dall'oggetto [**Session**](session-object.md) usando il metodo [**FeatureInfo**](session-featureinfo.md) .
+**L'oggetto FeatureInfo** contiene informazioni relative alla funzionalità di destinazione e viene creato [**dall'oggetto Session**](session-object.md) usando il [**metodo FeatureInfo.**](session-featureinfo.md)
 
 ## <a name="members"></a>Membri
 
-L'oggetto **FeatureInfo** dispone di questi tipi di membri:
+**L'oggetto FeatureInfo** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **FeatureInfo** dispone di queste proprietà.
+**L'oggetto FeatureInfo** ha queste proprietà.
 
 
 
 | Proprietà                                                  | Tipo di accesso           | Descrizione                                                                                 |
 |:----------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------|
-| [**Attributi**](featureinfo-attributes.md)<br/>   | Lettura/Scrittura<br/> | Restituisce il valore per la funzionalità nella colonna Attributes della tabella Feature.<br/> |
+| [**Attributi**](featureinfo-attributes.md)<br/>   | Lettura/Scrittura<br/> | Restituisce il valore per la funzionalità nella colonna Attributi della tabella Feature.<br/> |
 | [**Descrizione**](featureinfo-description.md)<br/> |                       | Restituisce la descrizione della funzionalità.<br/>                                          |
 | [**Titolo**](featureinfo-title.md)<br/>             | Sola lettura<br/>  | Restituisce il titolo della funzionalità.<br/>                                                |
 
@@ -52,7 +52,7 @@ L'oggetto **FeatureInfo** dispone di queste proprietà.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IFeatureInfo è definito come 000C109F-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
@@ -62,7 +62,7 @@ L'oggetto **FeatureInfo** dispone di queste proprietà.
 
 <dl> <dt>
 
-[Esempi di script di Windows Installer](windows-installer-scripting-examples.md)
+[Windows Esempi di script del programma di installazione](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

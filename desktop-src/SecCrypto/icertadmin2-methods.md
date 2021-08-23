@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ICertAdmin2 espone i metodi seguenti.
 ms.assetid: F6E0D863-5A78-48D5-8AED-DAEF80101B7E
-title: Metodi ICertAdmin2
+title: Metodi di ICertAdmin2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 619e2afc9ee8e5e2eeab91893394e21e6c33ba14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21e1d82e1da716f05b39cb2f914c15ca29881783911475f65c1909160cda339f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006209"
 ---
-# <a name="icertadmin2-methods"></a>Metodi ICertAdmin2
+# <a name="icertadmin2-methods"></a>Metodi di ICertAdmin2
 
-L'interfaccia [**ICertAdmin2**](/windows/desktop/api/Certadm/nn-certadm-icertadmin2) espone i metodi seguenti.
+[**L'interfaccia ICertAdmin2**](/windows/desktop/api/Certadm/nn-certadm-icertadmin2) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

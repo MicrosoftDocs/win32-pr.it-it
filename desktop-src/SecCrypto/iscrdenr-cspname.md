@@ -1,7 +1,7 @@
 ---
-description: Imposta o Recupera il nome del provider del servizio di crittografia (CSP).
+description: Imposta o recupera il nome del provider del servizio di crittografia (CSP).
 ms.assetid: 34fde7b0-747d-4592-a89a-207f82369f52
-title: 'Proprietà ISCrdEnr:: NomeCSP'
+title: Proprietà ISCrdEnr::CSPName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 363f2f9120d3b0a202335d0e8e450464cbc1f118
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a1b5b443807dfe7fa737cdfc5eb4da678845e53b555ffe6eebf1529583fdb35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005229"
 ---
-# <a name="iscrdenrcspname-property"></a>Proprietà ISCrdEnr:: NomeCSP
+# <a name="iscrdenrcspname-property"></a>Proprietà ISCrdEnr::CSPName
 
-La proprietà **NomeCSP** imposta o Recupera il nome del [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP).
+La **proprietà CSPName** imposta o recupera il nome del provider del [*servizio di crittografia*](../secgloss/c-gly.md) (CSP).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -52,11 +52,11 @@ Nome del CSP.
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](common-hresult-values.md).
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questa proprietà per specificare il nome del CSP da usare con il controllo di registrazione delle smart card. Ottenere questa proprietà per recuperare il nome del CSP specificato. Se non si specifica un valore per questa proprietà, per impostazione predefinita la proprietà **NomeCSP** viene impostata sul nome nell'elenco dei CSP disponibili.
+Impostare questa proprietà per specificare il nome del provider di servizi di configurazione da usare con il controllo di registrazione smart card. Ottiene questa proprietà per recuperare il nome del provider di servizi di rete specificato. Se non si specifica un valore per questa proprietà, per impostazione predefinita la proprietà **CSPName** viene impostata sul nome nell'elenco disponibile di provider di servizi condivisi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Impostare questa proprietà per specificare il nome del CSP da usare con il cont
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr è definito come \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 51f704aa839ff210b3c2de57767cb32ec609232f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: db53d399f269b48ae96558af6037b646ca19ce7de831897f672b3df4b7bbc7d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990991"
 ---
 # <a name="d3dxquaterniontoaxisangle-function-d3dx10mathh"></a>Funzione D3DXQuaternionToAxisAngle (D3DX10Math.h)
 
@@ -47,7 +47,7 @@ void D3DXQuaternionToAxisAngle(
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Puntatore all'oggetto [**D3DXQUATERNION di origine.**](d3d10-d3dxquaternion.md)
+Puntatore [**all'oggetto D3DXQUATERNION di origine.**](d3d10-d3dxquaternion.md)
 
 </dd> <dt>
 

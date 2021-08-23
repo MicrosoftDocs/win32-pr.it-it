@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Param. DbScanIntervalMinSec'
-title: Campo Windows7Param. DbScanIntervalMinSec (Microsoft. ISAM. esent. Interop. Windows7)
+description: Altre informazioni sul campo Windows7Param.DbScanIntervalMinSec
+title: Campo Windows7Param.DbScanIntervalMinSec (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: DbScanIntervalMinSec field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param.DbScanIntervalMinSec
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param.dbscanintervalminsec(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 171403c223fa9b9729900fb6db5cb3f540912785
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4e6b0446393d0a405c8258e0214ece23eb02bdda7cd80e2000dcbc184a0dc01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038549"
 ---
-# <a name="windows7paramdbscanintervalminsec-field"></a>Campo Windows7Param. DbScanIntervalMinSec
+# <a name="windows7paramdbscanintervalminsec-field"></a>Campo Windows7Param.DbScanIntervalMinSec
 
-Intervallo minimo per la ripetizione dell'analisi del database, in secondi.
+Intervallo minimo di ripetizione dell'analisi del database, espresso in secondi.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param DbScanIntervalMinSec
 
 [Membri di Windows7Param](./windows7param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

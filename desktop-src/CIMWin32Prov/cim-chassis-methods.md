@@ -1,29 +1,29 @@
 ---
-description: La \_ classe chassis CIM espone i metodi seguenti.
+description: La classe CIM \_ Chassis espone i metodi seguenti.
 ms.assetid: 6F0FBC1C-2841-4949-ADF6-649D363D9FFF
 ms.tgt_platform: multiple
-title: Metodi di CIM_Chassis
+title: CIM_Chassis metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e84bd113c39b362e74fda65348754fc7994559b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c71ad902391ebbd32cd32ac0ca5b28547876c48a64f171448b02ad8c7623cc6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119218191"
 ---
-# <a name="cim_chassis-methods"></a>\_Metodi chassis CIM
+# <a name="cim_chassis-methods"></a>Metodi \_ di chassis CIM
 
-La [**classe \_ chassis CIM**](cim-chassis.md) espone i metodi seguenti.
+La [**classe CIM \_ Chassis**](cim-chassis.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Metodo di compatibilità**](iscompatible-method-in-class-cim-chassis.md)
+-   [**Metodo IsCompatible**](iscompatible-method-in-class-cim-chassis.md)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Crea un'istanza di un'implementazione dell'interfaccia InkDivider e restituisce il relativo handle.
+description: Crea un'istanza di un'implementazione dell'interfaccia InkDivider e ne restituisce l'handle.
 ms.assetid: 77c8504b-0b63-43dd-b487-bab2a500979b
-title: CreateInkDivider (funzione)
+title: Funzione CreateInkDivider
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 26e5785845f3ce8448269a821f67fcafc98bf4b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa63937bdf6f65ab46f012bd541eadcd7e8ef5b8a4d8957a462f2d6666e62a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119266540"
 ---
-# <a name="createinkdivider-function"></a>CreateInkDivider (funzione)
+# <a name="createinkdivider-function"></a>Funzione CreateInkDivider
 
-Crea un'istanza di un'implementazione dell'interfaccia [**InkDivider**](inkdivider-class.md) e restituisce il relativo handle.
+Crea un'istanza di [**un'implementazione dell'interfaccia InkDivider**](inkdivider-class.md) e ne restituisce l'handle.
 
 Questa funzione non deve essere usata dal codice dell'applicazione.
 
@@ -54,7 +54,7 @@ Questa classe eredita dalla classe di base [**InkDivider**](inkdivider-class.md)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

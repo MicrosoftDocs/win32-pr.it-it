@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: da610d03e683b06ad743d1b6d4fe413dc5b31d34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82b35038d3c358645478b82e5c2c5ef023941ab3fc443299b2c493522c822878
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068631"
 ---
 # <a name="modifysystemsettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo ModifySystemSettings della classe CIM \_ VirtualSystemManagementService
 
 Modifica le impostazioni del sistema virtuale.
 
-Quando applicato alle impostazioni di sistema di una configurazione di sistema virtuale "corrente", come effetto collaterale è possibile che l'istanza di sistema virtuale venga modificata.
+Se applicato alle impostazioni di sistema di una configurazione di sistema virtuale "corrente", come effetto collaterale l'istanza del sistema virtuale può essere modificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,33 +42,33 @@ uint32 ModifySystemSettings(
 
 <dl> <dt>
 
-*SystemSettings* \[ in\]
+*Impostazioni di sistema* \[ Pollici\]
 </dt> <dd>
 
-Stringa contenente un'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) utilizzata per modificare le impostazioni del sistema virtuale. Per identificare l'impostazione del sistema virtuale da modificare, l'istanza deve disporre di un **InstanceID** valido.
+Stringa contenente un'istanza della [**classe CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) usata per modificare le impostazioni del sistema virtuale. L'istanza deve avere un **InstanceID valido** per identificare l'impostazione del sistema virtuale da modificare.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito facoltativamente un [**\_ ConcreteJob CIM**](cim-concretejob.md) che rappresenta il processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un [**processo \_ ConcreteJob CIM**](cim-concretejob.md) che rappresenta il processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -83,16 +83,16 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Parametri incompatibili** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -102,9 +102,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -113,7 +113,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](cim-virtualsystemmanagementservice.md)
+[**CIM \_ VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

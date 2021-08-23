@@ -1,21 +1,21 @@
 ---
 description: Questi attributi e modificatori vengono usati da WinHttpQueryHeaders.
 ms.assetid: c26dac1d-9a75-440a-a0ef-a2029f138f3b
-title: Flag di informazioni query (Winhttp.h)
+title: Flag di informazioni sulle query (Winhttp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b3d8a7f95f0e093f175901e4bed30f4055a04b8
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: c66fd75ad1258123c3047dee4cafa4e57cb4dadd6675eb02deaa307085acbd55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051959"
 ---
-# <a name="query-info-flags-winhttph"></a>Flag di informazioni query (Winhttp.h)
+# <a name="query-info-flags-winhttph"></a>Flag di informazioni sulle query (Winhttp.h)
 
-Questi attributi e modificatori vengono usati [**da WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders).
+Questi attributi e modificatori vengono usati da [**WinHttpQueryHeaders.**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders)
 
-I flag di attributo vengono usati [**da WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) per indicare le informazioni da recuperare. La maggior parte dei flag di attributo viene mappata direttamente a un'intestazione HTTP specifica. Esistono anche alcuni flag speciali, ad esempio WINHTTP QUERY RAW HEADERS, che non \_ \_ sono correlati a \_ un'intestazione specifica.
+I flag di attributo vengono usati [**da WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) per indicare le informazioni da recuperare. La maggior parte dei flag di attributo viene mappata direttamente a un'intestazione HTTP specifica. Esistono anche alcuni flag speciali, ad esempio WINHTTP \_ QUERY \_ RAW \_ HEADERS, che non sono correlati a un'intestazione specifica.
 
 <dl> <dt>
 
@@ -39,17 +39,17 @@ Recupera i set di caratteri accettabili per la risposta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_ACCEPT_ENCODING"></span><span id="winhttp_query_accept_encoding"></span>**CODIFICA WINHTTP \_ QUERY \_ ACCEPT \_**
+<span id="WINHTTP_QUERY_ACCEPT_ENCODING"></span><span id="winhttp_query_accept_encoding"></span>**CODIFICA DI \_ ACCETTAZIONE QUERY \_ \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera i valori accettabili di codifica del contenuto per la risposta.
+Recupera i valori di codifica del contenuto accettabili per la risposta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_ACCEPT_LANGUAGE"></span><span id="winhttp_query_accept_language"></span>**LINGUAGGIO DI \_ ACCETTAZIONE \_ QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_ACCEPT_LANGUAGE"></span><span id="winhttp_query_accept_language"></span>**LINGUAGGIO DI ACCETTAZIONE QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -59,7 +59,7 @@ Recupera i linguaggi naturali accettabili per la risposta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_ACCEPT_RANGES"></span><span id="winhttp_query_accept_ranges"></span>**INTERVALLI DI \_ ACCETTAZIONE \_ QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_ACCEPT_RANGES"></span><span id="winhttp_query_accept_ranges"></span>**ACCETTA \_ INTERVALLI DI QUERY WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -69,12 +69,12 @@ Recupera i tipi di richieste di intervallo accettate per una risorsa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_AGE"></span><span id="winhttp_query_age"></span>**PERIODO DI \_ VALIDITÀ DELLE QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_AGE"></span><span id="winhttp_query_age"></span>**ETÀ QUERY WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera il campo Age response-header , che contiene la stima del mittente del periodo di tempo dopo la generazione della risposta nel server di origine.
+Recupera il campo age dell'intestazione della risposta, che contiene la stima del mittente della quantità di tempo dalla generazione della risposta nel server di origine.
 
 
 </dt> </dl> </dd> <dt>
@@ -84,32 +84,32 @@ Recupera il campo Age response-header , che contiene la stima del mittente del p
 
 
 
-Riceve i [**verbi HTTP supportati**](glossary.md) dal server.
+Riceve i [**verbi HTTP**](glossary.md) supportati dal server.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_AUTHENTICATION_INFO"></span><span id="winhttp_query_authentication_info"></span>**INFORMAZIONI \_ SULL'AUTENTICAZIONE DELLE QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_AUTHENTICATION_INFO"></span><span id="winhttp_query_authentication_info"></span>**INFORMAZIONI DI AUTENTICAZIONE QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera l'intestazione Authentication-Info personalizzata.
+Recupera l'Authentication-Info specificata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_AUTHORIZATION"></span><span id="winhttp_query_authorization"></span>**AUTORIZZAZIONE DELLE QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_AUTHORIZATION"></span><span id="winhttp_query_authorization"></span>**AUTORIZZAZIONE \_ DELLE QUERY \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera le credenziali di autorizzazione usate per una richiesta.
+Recupera le credenziali di autorizzazione utilizzate per una richiesta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CACHE_CONTROL"></span><span id="winhttp_query_cache_control"></span>**CONTROLLO DELLA \_ \_ CACHE DI QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_CACHE_CONTROL"></span><span id="winhttp_query_cache_control"></span>**CONTROLLO \_ \_ DELLA CACHE DELLE QUERY WINHTTP \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -119,22 +119,22 @@ Recupera le direttive di controllo della cache.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONNECTION"></span><span id="winhttp_query_connection"></span>**CONNESSIONE A QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_CONNECTION"></span><span id="winhttp_query_connection"></span>**CONNESSIONE \_ DI QUERY \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera le opzioni specificate per una determinata connessione e non devono essere comunicate dai proxy su altre connessioni.
+Recupera tutte le opzioni specificate per una determinata connessione e che non devono essere comunicate da proxy su ulteriori connessioni.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_BASE"></span><span id="winhttp_query_content_base"></span>**BASE DEL CONTENUTO \_ DELLE \_ \_ QUERY WINHTTP**
+<span id="WINHTTP_QUERY_CONTENT_BASE"></span><span id="winhttp_query_content_base"></span>**BASE DEL CONTENUTO DELLA QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera l'URI Uniform Resource Identifier di base per risolvere gli URL relativi all'interno dell'entità.
+Recupera l'URI Uniform Resource Identifier base per risolvere gli URL relativi all'interno dell'entità.
 
 
 </dt> </dl> </dd> <dt>
@@ -144,7 +144,7 @@ Recupera l'URI Uniform Resource Identifier di base per risolvere gli URL relativ
 
 
 
-Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
+Obsoleta. Mantenuta per la compatibilità delle applicazioni legacy.
 
 
 </dt> </dl> </dd> <dt>
@@ -154,7 +154,7 @@ Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
 
 
 
-Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
+Obsoleta. Mantenuta per la compatibilità delle applicazioni legacy.
 
 
 </dt> </dl> </dd> <dt>
@@ -169,7 +169,7 @@ Recupera il codice del contenuto aggiuntivo applicato all'intera risorsa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_ID"></span><span id="winhttp_query_content_id"></span>**ID CONTENUTO QUERY WINHTTP \_ \_ \_**
+<span id="WINHTTP_QUERY_CONTENT_ID"></span><span id="winhttp_query_content_id"></span>**ID CONTENUTO DELLA QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -199,7 +199,7 @@ Recupera le dimensioni della risorsa, in byte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_LOCATION"></span><span id="winhttp_query_content_location"></span>**PERCORSO DEL CONTENUTO DELLE QUERY WINHTTP \_ \_ \_**
+<span id="WINHTTP_QUERY_CONTENT_LOCATION"></span><span id="winhttp_query_content_location"></span>**PERCORSO DEL CONTENUTO DELLA QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -219,7 +219,7 @@ Recupera un digest MD5 del corpo dell'entità allo scopo di fornire un controllo
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_RANGE"></span><span id="winhttp_query_content_range"></span>**INTERVALLO DI CONTENUTO DI QUERY WINHTTP \_ \_ \_**
+<span id="WINHTTP_QUERY_CONTENT_RANGE"></span><span id="winhttp_query_content_range"></span>**INTERVALLO DI CONTENUTO DELLA QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -229,17 +229,17 @@ Recupera la posizione nel corpo completo dell'entità in cui deve essere inserit
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_TRANSFER_ENCODING"></span><span id="winhttp_query_content_transfer_encoding"></span>**CODIFICA DI TRASFERIMENTO \_ \_ DEL CONTENUTO \_ DI QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_CONTENT_TRANSFER_ENCODING"></span><span id="winhttp_query_content_transfer_encoding"></span>**CODIFICA DI TRASFERIMENTO \_ \_ DEL CONTENUTO \_ DELLE QUERY WINHTTP \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Recupera una trasformazione di codifica applicabile a un corpo dell'entità. Potrebbe essere già stato applicato, potrebbe essere necessario applicarlo o essere facoltativamente applicabile.
+Recupera una trasformazione di codifica applicabile a un corpo dell'entità. È possibile che sia già stato applicato, che sia necessario applicarlo o che sia facoltativamente applicabile.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CONTENT_TYPE"></span><span id="winhttp_query_content_type"></span>**TIPO DI CONTENUTO DI QUERY WINHTTP \_ \_ \_**
+<span id="WINHTTP_QUERY_CONTENT_TYPE"></span><span id="winhttp_query_content_type"></span>**TIPO DI CONTENUTO DELLA QUERY WINHTTP \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -249,7 +249,7 @@ Riceve il tipo di contenuto della risorsa, ad esempio text o html.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_COOKIE"></span><span id="winhttp_query_cookie"></span>**COOKIE \_ DI QUERY WINHTTP \_**
+<span id="WINHTTP_QUERY_COOKIE"></span><span id="winhttp_query_cookie"></span>**COOKIE DI QUERY WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -259,7 +259,7 @@ Recupera tutti i cookie associati alla richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_COST"></span><span id="winhttp_query_cost"></span>**COSTO QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_COST"></span><span id="winhttp_query_cost"></span>**COSTO \_ QUERY \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -269,12 +269,12 @@ Non supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_CUSTOM"></span><span id="winhttp_query_custom"></span>**WINHTTP \_ QUERY \_ CUSTOM**
+<span id="WINHTTP_QUERY_CUSTOM"></span><span id="winhttp_query_custom"></span>**QUERY WINHTTP \_ \_ PERSONALIZZATA**
 </dt> <dd> <dl> <dt>
 
 
 
-Consente [**a WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) di cercare il nome dell'intestazione specificato nel *parametro pwszName* e di archiviare le informazioni sull'intestazione in *lpBuffer*. Un'applicazione può usare **WINHTTP \_ OPTION RECEIVE RESPONSE TIMEOUT \_ \_ \_ per** limitare il tempo massimo di attesa della query per la ricezione di tutte le intestazioni.
+Fa [**in modo che WinHttpQueryHeaders**](/windows/win32/api/Winhttp/nf-winhttp-winhttpqueryheaders) ricerca il nome dell'intestazione specificato nel parametro *pwszName* e archivia le informazioni di intestazione in *lpBuffer*. Un'applicazione può usare **WINHTTP \_ OPTION RECEIVE RESPONSE \_ \_ \_ TIMEOUT** per limitare il tempo massimo di attesa della query per la ricezione di tutte le intestazioni.
 
 
 </dt> </dl> </dd> <dt>
@@ -299,7 +299,7 @@ Non supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_ETAG"></span><span id="winhttp_query_etag"></span>**WINHTTP \_ QUERY \_ ETAG**
+<span id="WINHTTP_QUERY_ETAG"></span><span id="winhttp_query_etag"></span>**\_ETAG DI QUERY \_ WINHTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -309,7 +309,7 @@ Recupera il tag di entità per l'entità associata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_EXPECT"></span><span id="winhttp_query_expect"></span>**PREVISTA QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_EXPECT"></span><span id="winhttp_query_expect"></span>**WINHTTP \_ QUERY \_ EXPECT**
 </dt> <dd> <dl> <dt>
 
 
@@ -319,7 +319,7 @@ Recupera l'intestazione Expect, che indica se l'applicazione client deve prevede
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_EXPIRES"></span><span id="winhttp_query_expires"></span>**LA QUERY WINHTTP \_ \_ SCADE**
+<span id="WINHTTP_QUERY_EXPIRES"></span><span id="winhttp_query_expires"></span>**SCADENZA QUERY WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -334,7 +334,7 @@ Riceve la data e l'ora dopo le quali la risorsa deve essere considerata obsoleta
 
 
 
-Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
+Obsoleta. Mantenuta per la compatibilità delle applicazioni legacy.
 
 
 </dt> </dl> </dd> <dt>
@@ -344,7 +344,7 @@ Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
 
 
 
-Recupera l'indirizzo di posta elettronica per l'utente che controlla l'agente [*utente*](glossary.md) richiedente se viene specificata l'intestazione From.
+Recupera l'indirizzo di posta elettronica dell'utente che controlla l'agente utente richiedente [*se*](glossary.md) viene specificata l'intestazione From.
 
 
 </dt> </dl> </dd> <dt>
@@ -389,7 +389,7 @@ Recupera il contenuto del campo di intestazione della richiesta If-None-Match.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_IF_RANGE"></span><span id="winhttp_query_if_range"></span>**INTERVALLO DI \_ QUERY \_ WINHTTP \_ IF**
+<span id="WINHTTP_QUERY_IF_RANGE"></span><span id="winhttp_query_if_range"></span>**WINHTTP \_ QUERY \_ IF \_ RANGE**
 </dt> <dd> <dl> <dt>
 
 
@@ -399,7 +399,7 @@ Recupera il contenuto del campo If-Range di intestazione della richiesta. Questa
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_IF_UNMODIFIED_SINCE"></span><span id="winhttp_query_if_unmodified_since"></span>**WINHTTP \_ QUERY \_ IF \_ UNMODIFIED \_ SINCE**
+<span id="WINHTTP_QUERY_IF_UNMODIFIED_SINCE"></span><span id="winhttp_query_if_unmodified_since"></span>**QUERY WINHTTP \_ SE NON MODIFICATA A PARTIRE \_ \_ \_ DA**
 </dt> <dd> <dl> <dt>
 
 
@@ -409,12 +409,12 @@ Recupera il contenuto del campo di intestazione della richiesta If-Unmodified-Si
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_LINK"></span><span id="winhttp_query_link"></span>**COLLEGAMENTO A QUERY WINHTTP \_ \_**
+<span id="WINHTTP_QUERY_LINK"></span><span id="winhttp_query_link"></span>**COLLEGAMENTO ALLA QUERY WINHTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Obsoleta. Mantenuta per garantire la compatibilità delle applicazioni legacy.
+Obsoleta. Mantenuta per la compatibilità delle applicazioni legacy.
 
 
 </dt> </dl> </dd> <dt>
@@ -719,7 +719,7 @@ Recupera informazioni sull'agente utente che ha effettuato la richiesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINHTTP_QUERY_VARY"></span><span id="winhttp_query_vary"></span>**WINHTTP \_ QUERY \_ VARY**
+<span id="WINHTTP_QUERY_VARY"></span><span id="winhttp_query_vary"></span>**LA QUERY WINHTTP \_ \_ VARIA**
 </dt> <dd> <dl> <dt>
 
 
@@ -825,8 +825,8 @@ Per impostazione predefinita, [**WinHttpQueryHeaders**](/windows/win32/api/Winht
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows XP, Windows 2000 Professional con solo app desktop SP3 \[\]      |
-| Server minimo supportato | Solo Windows Server 2003, Windows 2000 Server con app desktop SP3 \[\]   |
+| Client minimo supportato | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]      |
+| Server minimo supportato | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]   |
 | Intestazione                   | <dl> <dt>Winhttp.h</dt> </dl> |
 
 ## <a name="see-also"></a>Vedi anche

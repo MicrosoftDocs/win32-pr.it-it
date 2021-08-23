@@ -1,10 +1,10 @@
 ---
-title: Attributo con codifica di testo o-Address
-description: Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato testo.
+title: Attributo TEXT-Encoded-OR-Address
+description: Questo attributo viene usato per supportare gli indirizzi X.400 in formato testo.
 ms.assetid: 90ec82c5-08c4-44e3-90d8-a0a7a6d5f7b8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo con codifica testo o indirizzo
+- Schema AD dell'attributo TEXT-Encoded-OR-Address
 - Schema AD dell'attributo textEncodedORAddress
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5123f75c4ca628671816e7e5a27c56ee2c6c8a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fdf85fab73cd70d79e07dba5c15a1d414df519a629346058408ad3c97140b9f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022049"
 ---
-# <a name="text-encoded-or-address-attribute"></a>Attributo con codifica di testo o-Address
+# <a name="text-encoded-or-address-attribute"></a>Attributo TEXT-Encoded-OR-Address
 
-Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato testo.
+Questo attributo viene usato per supportare gli indirizzi X.400 in formato testo.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Con codifica di testo o indirizzo                     |
-| LDAP-Display-Name | textEncodedORAddress                        |
+| CN                | Text-Encoded-OR-Address                     |
+| Ldap-Display-Name | textEncodedORAddress                        |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.2                   |
-| System-ID-GUID    | a8df7489-c5ea-11d1-bbcb-0080c76670c0        |
+| System-Id-Guid    | a8df7489-c5ea-11d1-kb-0080c76670c0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo viene utilizzato per supportare gli indirizzi X. 400 in formato
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentLogDiskFullException'
+description: Altre informazioni sulla classe EsentLogDiskFullException
 title: Classe EsentLogDiskFullException
 TOCTitle: EsentLogDiskFullException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentLogDiskFullException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a237a8d21aab32114708a5cb59545ed827e05bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d86c9660186762c60e9f7e6ff02afa8fef334a171ff07e59c8b4284b8dc50f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119235501"
 ---
 # <a name="esentlogdiskfullexception-class"></a>Classe EsentLogDiskFullException
 
@@ -38,16 +38,16 @@ Classe di base per JET_err. Eccezioni LogDiskFull.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentDiskException](./esentdiskexception-class.md)  
-              Microsoft. ISAM. esent. Interop. EsentLogDiskFullException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDiskException](./esentdiskexception-class.md)  
+              Microsoft.Isam.Esent.Interop.EsentLogDiskFullException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -75,4 +75,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentLogDiskFullException](./esentlogdiskfullexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

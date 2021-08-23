@@ -1,23 +1,23 @@
 ---
-description: La \_ classe CIM DeviceErrorCounts espone i metodi seguenti.
+description: La classe CIM \_ DeviceErrorCounts espone i metodi seguenti.
 ms.assetid: 688073C9-7A15-49B9-BDB6-C71B6B53C79E
 ms.tgt_platform: multiple
-title: Metodi di CIM_DeviceErrorCounts
+title: CIM_DeviceErrorCounts metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2331482628c7ba0985d389375ad27f28f66b02d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cb44b79eb10856b8698899fb1ff214161443d0fc69e1f8218838474153076c8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080795"
 ---
-# <a name="cim_deviceerrorcounts-methods"></a>\_Metodi CIM DeviceErrorCounts
+# <a name="cim_deviceerrorcounts-methods"></a>Metodi di CIM \_ DeviceErrorCounts
 
-La classe [**CIM \_ DeviceErrorCounts**](cim-deviceerrorcounts.md) espone i metodi seguenti.
+La [**classe CIM \_ DeviceErrorCounts**](cim-deviceerrorcounts.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

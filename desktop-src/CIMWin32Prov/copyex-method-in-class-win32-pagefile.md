@@ -1,5 +1,5 @@
 ---
-description: Copia il file o la directory di paging logica specificata nel percorso dell'oggetto nel percorso specificato dal parametro FileName. Questo metodo è una versione estesa del metodo Copy.
+description: Copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro FileName. Questo metodo è una versione estesa del metodo Copy.
 ms.assetid: a8376dc8-eb73-4097-b84c-839432ac3a25
 ms.tgt_platform: multiple
 title: Metodo CopyEx della classe Win32_PageFile
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 810f1d3bcf878d33756930f6bd3b6799c3513dc8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: afd3f4e5a2399c1887a1924519b7520c2b5c1f74df841a0ddc44682c74d4e175
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020599"
 ---
-# <a name="copyex-method-of-the-win32_pagefile-class"></a>Metodo CopyEx della classe di \_ paging Win32
+# <a name="copyex-method-of-the-win32_pagefile-class"></a>Metodo CopyEx della classe PageFile Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro *filename* . Questo metodo è una versione estesa del metodo [**Copy**](copy-method-in-class-win32-directory.md) . Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
+Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia il file di paging logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal *parametro FileName.* Questo metodo è una versione estesa del [**metodo Copy.**](copy-method-in-class-win32-directory.md) Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,36 +45,36 @@ uint32 CopyEx(
 
 <dl> <dt>
 
-*Nome file* \[ in\]
+*FileName* \[ Pollici\]
 </dt> <dd>
 
 Nome completo della copia del file (o directory).
 
-Esempio: c: \\ temp \\ NewDirectory
+Esempio: c: \\ temp \\ newdirectory
 
 </dd> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **CopyEx** non è riuscito. Questo parametro è **null** se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo CopyEx non** è riuscito. Questo parametro è **Null se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **CopyEx**. Il parametro *StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata ExecMethod.
+Nome del file o della directory figlio da usare come punto di partenza per **CopyEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella chiamata a ExecMethod.
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se è **true**, la modifica della proprietà verrà applicata in modo ricorsivo ai file e alle directory nella directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) .
+Se **true,** la modifica della proprietà verrà applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza \_ LogicalFile di CIM.**](cim-logicalfile.md)
 
 > [!Note]  
-> Per le istanze di file, il parametro *ricorsivo* viene ignorato.
+> Per le istanze di file, *il parametro Recursive* viene ignorato.
 
  
 
@@ -82,7 +82,7 @@ Se è **true**, la modifica della proprietà verrà applicata in modo ricorsivo 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -159,7 +159,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -198,7 +198,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Pagefile Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

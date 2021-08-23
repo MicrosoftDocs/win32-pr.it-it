@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXQuaternionRotationAxis (D3DX10Math.h): ruota un quaternione su un asse arbitrario.'
+description: 'Funzione D3DXQuaternionRotationAxis (D3DX10Math.h): ruota un quaternione intorno a un asse arbitrario.'
 ms.assetid: 9673ef89-458f-4a25-960e-8f03179e78ba
 title: Funzione D3DXQuaternionRotationAxis (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 509df80023427a20125e1b5603e85424851a640e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e1ab148eee572e5c0f2ad2965b91c869ce490f5b35d8a78644090165b33ac19a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991051"
 ---
 # <a name="d3dxquaternionrotationaxis-function-d3dx10mathh"></a>Funzione D3DXQuaternionRotationAxis (D3DX10Math.h)
 
-Ruota un quaternione su un asse arbitrario.
+Ruota un quaternione intorno a un asse arbitrario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ Puntatore [**all'oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che rapprese
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che identifica l'asse su cui ruotare il quaternione.
+Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che identifica l'asse intorno al quale ruotare il quaternione.
 
 </dd> <dt>
 
