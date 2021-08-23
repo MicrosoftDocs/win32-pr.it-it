@@ -1,29 +1,29 @@
 ---
-description: Generato dalla sessione multimediale quando lo stato di una topologia cambia.
+description: Generato dalla sessione multimediale quando cambia lo stato di una topologia.
 ms.assetid: b45fd598-ab1e-4b12-8d82-c88c96d1f770
-title: Evento MESessionTopologyStatus (Mfobjects. h)
+title: Evento MESessionTopologyStatus (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11948e27997037c1e875e192fd712a2f8a132b44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42adfd1a86319f65077e87925eb23807253f12b06e977ee1eb9e494a4c7df180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723721"
 ---
-# <a name="mesessiontopologystatus-event"></a>Evento MESessionTopologyStatus
+# <a name="mesessiontopologystatus-event"></a>EVENTO MESessionTopologyStatus
 
-Generato dalla sessione multimediale quando lo stato di una topologia cambia.
+Generato dalla sessione multimediale quando cambia lo stato di una topologia.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE                | Descrizione                                                                                         |
 |------------------------|-----------------------------------------------------------------------------------------------------|
-| VT \_ sconosciuto<br/> | Puntatore all'interfaccia [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) della topologia.<br/> <br/> |
+| VT \_ UNKNOWN<br/> | Puntatore [**all'interfaccia IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) della topologia.<br/> <br/> |
 
 
 
@@ -35,13 +35,13 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                            | Descrizione                                                      |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**\_ \_ stato topologia evento MF \_**](mf-event-topology-status-attribute.md)<br/> | Specifica il nuovo stato della topologia.<br/> <br/> |
+| [**STATO DELLA \_ TOPOLOGIA \_ DI EVENTI \_ MF**](mf-event-topology-status-attribute.md)<br/> | Specifica il nuovo stato della topologia.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per un esempio di codice che recupera il puntatore [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) dall'evento, vedere evento [MESessionTopologySet](mesessiontopologyset.md) .
+Per un esempio di codice che recupera il [**puntatore IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) dall'evento , vedere [Evento MESessionTopologySet.](mesessiontopologyset.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per un esempio di codice che recupera il puntatore [**IMFTopology**](/windows/de
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per un esempio di codice che recupera il puntatore [**IMFTopology**](/windows/de
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

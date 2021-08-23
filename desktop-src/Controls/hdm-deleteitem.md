@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_DELETEITEM (COMmctrl. h)
-description: Elimina un elemento da un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro DeleteItem dell'intestazione.
+title: HDM_DELETEITEM messaggio (Commctrl.h)
+description: Elimina un elemento da un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header DeleteItem.
 ms.assetid: 1dd1f233-2812-41ae-8a36-c42b9ac70ffc
 keywords:
-- Controlli di Windows Message HDM_DELETEITEM
+- HDM_DELETEITEM dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6a3ec4b48c3dcc77579f70d26cd55b7127f5a6d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28b0a48d769117ffd68f2ba2af9695fe7fce00031f297626ae48c111d4574dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697351"
 ---
-# <a name="hdm_deleteitem-message"></a>\_Messaggio HDM DeleteItem
+# <a name="hdm_deleteitem-message"></a>Messaggio HDM \_ DELETEITEM
 
-Elimina un elemento da un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ DeleteItem dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_deleteitem) .
+Elimina un elemento da un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header DeleteItem.**](/windows/desktop/api/Commctrl/nf-commctrl-header_deleteitem)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Indice dell'elemento da eliminare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

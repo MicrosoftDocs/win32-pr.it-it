@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::GetConstantByName: ottiene una costante cercandone il nome.'
+description: 'Metodo ID3DXConstantTable::GetConstantByName : ottiene una costante cercandone il nome.'
 ms.assetid: 785a2d4f-6391-4419-a0b8-d8244a03ceae
 title: Metodo ID3DXConstantTable::GetConstantByName (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 88461a45bf484a72c085f1776eb923a8534b8be3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25458c14ee4d1d78388edb072fd80061778902e8cca476beaf7071c5f59aea9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675581"
 ---
 # <a name="id3dxconstanttablegetconstantbyname-method"></a>Metodo ID3DXConstantTable::GetConstantByName
 

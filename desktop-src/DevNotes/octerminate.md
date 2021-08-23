@@ -1,7 +1,7 @@
 ---
 description: Chiude il gestore OC.
 ms.assetid: feba9954-03b2-4b57-b7ba-933e171751ff
-title: OcTerminate (funzione)
+title: Funzione OcTerminate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - OcManage.dll
-ms.openlocfilehash: 2e747c19db5e5a79e2827dc3bcfb88b97fae2ba6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 399bdb936befb4f7ff45f9f5a3b132245b984bf2a5201ce054ee0fbeb50f5598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833351"
 ---
-# <a name="octerminate-function"></a>OcTerminate (funzione)
+# <a name="octerminate-function"></a>Funzione OcTerminate
 
 Chiude il gestore OC.
 
@@ -39,10 +39,10 @@ VOID OcTerminate(
 
 <dl> <dt>
 
-*OcManagerContext* \[ in uscita\]
+*OcManagerContext* \[ in, out\]
 </dt> <dd>
 
-In input, contiene il puntatore di contesto del gestore OC restituito da [**OcInitialize**](ocinitialize.md). Nell'output, riceve **null**.
+In input contiene il puntatore di contesto del gestore OC restituito [**da OcInitialize.**](ocinitialize.md) Nell'output riceve **NULL.**
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
-description: Disattiva la sottoclasse automatica.
+description: Disattiva la creazione automatica di sottoclassi.
 ms.assetid: 85e5689f-6805-4aad-b97c-aa496e315900
-title: Ctl3dUnAutoSubclass (funzione)
+title: Funzione Ctl3dUnAutoSubclass
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 1250deb16307400898c92d36b9dda214115ec01d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca7980705ca93ad88b7c9e535abe59c3cdcc2e011130c843f0e89a533ce97599
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654471"
 ---
-# <a name="ctl3dunautosubclass-function"></a>Ctl3dUnAutoSubclass (funzione)
+# <a name="ctl3dunautosubclass-function"></a>Funzione Ctl3dUnAutoSubclass
 
-Disattiva la sottoclasse automatica.
+Disattiva la creazione automatica di sottoclassi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,11 +39,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo; in caso contrario, restituisce **false**.
+Restituisce **TRUE se** la funzione ha esito positivo. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

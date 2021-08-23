@@ -1,6 +1,6 @@
 ---
-title: SampleCmp (oggetto trama di DirectX HLSL)
-description: Esegue il campionamento di una trama e confronta un singolo componente con il valore di confronto specificato.
+title: SampleCmp (oggetto trama DirectX HLSL)
+description: Consente di eseguire il campionamento di una trama e di confrontare un singolo componente con il valore di confronto specificato.
 ms.assetid: e21894c4-e8c5-4c3d-92c1-727964f8fd94
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,33 +9,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6991bead4bfc42451c26fe5476b4c114626eb7e8
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: a606ad9081f1ca1fdc4261d862ea6edfef4460989bb6d51d839d85f5797c1466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104993653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854641"
 ---
-# <a name="samplecmp-directx-hlsl-texture-object"></a>SampleCmp (oggetto trama di DirectX HLSL)
+# <a name="samplecmp-directx-hlsl-texture-object"></a>SampleCmp (oggetto trama DirectX HLSL)
 
-Esegue il campionamento di una trama e confronta un singolo componente con il valore di confronto specificato.
+Consente di eseguire il campionamento di una trama e di confrontare un singolo componente con il valore di confronto specificato.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>float Object. SampleCmp ( <dl> SamplerComparisonState S,<br />
-Percorso float,<br />
+<td>float Object.SampleCmp( <dl> SamplerComparisonState S,<br />
+float Location,<br />
 float CompareValue,<br />
-[offset int]<br />
+[int Offset]<br />
 </dl>);</td>
 </tr>
 </tbody>
 </table>
  
 
-Il confronto è un confronto a componente singolo tra il primo componente archiviato nella trama e il valore di confronto passato nel metodo.
+Il confronto è un confronto a componente singolo tra il primo componente archiviato nella trama e il valore di confronto passato nel metodo .
 
-Questo metodo può essere richiamato solo da un pixel shader; non è supportato in un vertex o in un geometry shader.
+Questo metodo può essere richiamato solo da un pixel shader; non è supportato in un vertex shader o geometry shader.
 
 ## <a name="parameters"></a>Parametri
 
@@ -44,28 +44,28 @@ Questo metodo può essere richiamato solo da un pixel shader; non è supportato 
 <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Oggetto*
 </dt> <dd>
 
-Qualsiasi tipo [di oggetto trama](dx-graphics-hlsl-to-type.md) (ad eccezione di Texture2DMS, Texture2DMSArray o Texture3D).
+Qualsiasi [tipo di oggetto](dx-graphics-hlsl-to-type.md) trama (ad eccezione di Texture2DMS, Texture2DMSArray o Texture3D).
 
 </dd> <dt>
 
 <span id="S"></span><span id="s"></span>*S*
 </dt> <dd>
 
-\[in \] uno stato di confronto del campionatore, ovvero lo stato del campionatore più uno stato di confronto (una funzione di confronto e un filtro di confronto). Per informazioni dettagliate e un esempio, vedere il [tipo di campionatore](dx-graphics-hlsl-sampler.md) .
+\[in Uno stato sampler-comparison, ovvero lo stato del campionatore più uno stato di confronto (una funzione di confronto \] e un filtro di confronto). Per informazioni [dettagliate e un esempio,](dx-graphics-hlsl-sampler.md) vedere il tipo di campionatore.
 
 </dd> <dt>
 
-<span id="Location"></span><span id="location"></span><span id="LOCATION"></span>*Percorso*
+<span id="Location"></span><span id="location"></span><span id="LOCATION"></span>*Posizione*
 </dt> <dd>
 
-\[nelle \] coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
+\[in \] Coordinate della trama. Il tipo di argomento dipende dal tipo texture-object.
 
-| Tipo di Texture-Object          | Tipo di parametro |
+| Texture-Object tipo          | Tipo di parametro |
 |------------------------------|----------------|
 | Texture1D                    | float          |
 | Texture1DArray, Texture2D    | float2         |
-| Texture2DArray ¹, TextureCube | float3         |
-| TextureCubeArray ¹            | float4         |
+| Texture2DArray¹, TextureCube | float3         |
+| TextureCubeArray¹            | float4         |
 
 </dd> <dt>
 
@@ -76,47 +76,47 @@ Valore a virgola mobile da utilizzare come valore di confronto.
 
 </dd> <dt>
 
-<span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span>*Offset*
+<span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span>*compensare*
 </dt> <dd>
 
-\[in \] un offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Gli offset della trama devono essere statici. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [applicazione degli offset delle coordinate di trama](dx-graphics-hlsl-to-sample.md).
+\[in Offset delle coordinate di trama facoltativo, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione \] prima del campionamento. Gli offset di trama devono essere statici. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere [Applicazione degli offset delle coordinate di trama.](dx-graphics-hlsl-to-sample.md)
 
-| Tipo di Texture-Object            | Tipo di parametro |
+| Texture-Object tipo            | Tipo di parametro |
 |--------------------------------|----------------|
-| Texture1D, Texture1DArray      | INT            |
-| Texture2D, Texture2DArray ¹     | int2           |
-| TextureCube, TextureCubeArray ¹ | Non supportato  |
+| Texture1D, Texture1DArray      | int            |
+| Texture2D, Texture2DArray¹     | int2           |
+| TextureCube, TextureCubeArray¹ | Non supportato  |
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore a virgola mobile nell'intervallo compreso tra \[ 0 e 1 \] .
+Restituisce un valore a virgola mobile compreso nell'intervallo \[ 0..1. \]
 
-Per ogni Texel recuperato (in base alla configurazione campionatore della modalità filtro), **SampleCmp** esegue un confronto del valore z (terzo componente di input) dallo shader rispetto al valore Texel (1 se il confronto passa; in caso contrario 0). **SampleCmp** combina quindi i risultati 0 e 1 per ogni Texel insieme al normale filtro della trama (non una media) e restituisce il \[ valore 0.. 1 risultante \] allo shader.
+Per ogni texel recuperato (in base alla configurazione del campionatore della modalità filtro), **SampleCmp** esegue un confronto tra il valore z (terzo componente di input) dello shader e il valore texel (1 se il confronto passa; in caso contrario, 0). **SampleCmp** unisce quindi questi risultati 0 e 1 per ogni texel come nel normale filtro trame (non una media) e restituisce il valore \[ 0..1 risultante allo \] shader.
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro di confronto fornisce un'operazione di filtro di base che risulta utile per l'applicazione di filtri con profondità più stretta.
+Il filtro di confronto offre un'operazione di filtro di base utile per il filtro con più profondità percentuale.
 
-Quando si usa questo metodo su una risorsa a virgola mobile (invece di un formato normalizzato o senza segno), il valore di confronto non viene automaticamente premuto tra 0,0 e 1,0. Pertanto, può essere necessario un morsetto manuale del valore di confronto per le tecniche di ombreggiatura comuni.
+Quando si usa questo metodo in una risorsa a virgola mobile (anziché in un formato normalizzato con segno o senza segno), il valore di confronto non viene impostato automaticamente tra 0.0 e 1.0. Pertanto, potrebbe essere necessaria una chiusura manuale del valore di confronto per le tecniche di ombreggiatura comuni.
 
-Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
+Usare un offset solo in corrispondenza di un valore integer miplevel. In caso contrario, è possibile ottenere risultati diversi a seconda dell'implementazione dell'hardware o delle impostazioni del driver.
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1 ² | PS \_ 4 \_ 0 | PS \_ 4 \_ 1 ² | GS \_ 4 \_ 0 | GS \_ 4 \_ 1 ² |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1² | ps \_ 4 \_ 0 | ps \_ 4 \_ 1² | gs \_ 4 \_ 0 | gs \_ 4 \_ 1² |
 |----------|-----------|----------|-----------|----------|-----------|
-|          |           | x ¹       | x         |          |           |
+|          |           | x¹       | x         |          |           |
 
-1.  Texture2DArray e TextureCubeArray sono disponibili nel modello Shader 4,1 o versione successiva.
-2.  Il modello di Shader 4,1 è disponibile in Direct3D 10,1 o versione successiva.
+1.  Texture2DArray e TextureCubeArray sono disponibili in Shader Model 4.1 o versione successiva.
+2.  Shader Model 4.1 è disponibile in Direct3D 10.1 o versione successiva.
 
 > [!NOTE]  
-> **SampleCmp** è disponibile anche in PS 4 \_ 0 \_ level \_ 9 \_ 1 e 4 \_ 0 \_ level \_ 9 \_ 3 quando si usano le tecniche descritte in implementazione di [buffer shadow per il livello di funzionalità Direct3D 9](/previous-versions/windows/apps/jj262110(v=win.10)).
+> **SampleCmp** è disponibile anche in ps 4 \_ 0 \_ level 9 1 e 4 0 level 9 3 quando si usano le tecniche descritte \_ \_ in \_ \_ \_ \_ [Implementing shadow buffers for Direct3D feature level 9](/previous-versions/windows/apps/jj262110(v=win.10)).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)

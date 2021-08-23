@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_GETTIPTEXT (COMmctrl. h)
-description: Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo \_ stile della descrizione comando SBT per abilitare le descrizioni comandi.
+title: SB_GETTIPTEXT messaggio (Commctrl.h)
+description: Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo stile SBT \_ TOOLTIPS per abilitare le descrizioni comando.
 ms.assetid: a3936830-a855-4ef6-b179-3aa3730cd0b8
 keywords:
-- Controlli di Windows Message SB_GETTIPTEXT
+- SB_GETTIPTEXT del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d492bc19f82300f460666b3213c545fe95b8db85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 89a78fa6650d850cad2b6de8cc77f1d44b49b8325bf6856b989953fc6511f56f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637131"
 ---
-# <a name="sb_gettiptext-message"></a>\_Messaggio GETTIPTEXT SB
+# <a name="sb_gettiptext-message"></a>Messaggio \_ GETTIPTEXT SB
 
-Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo stile della [**\_ Descrizione comando SBT**](status-bar-styles.md) per abilitare le descrizioni comandi.
+Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo stile [**SBT \_ TOOLTIPS**](status-bar-styles.md) per abilitare le descrizioni comando.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,7 +34,7 @@ Recupera il testo della descrizione comando per una parte in una barra di stato.
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica l'indice in base zero della parte che riceve il testo della descrizione comando. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica la dimensione del buffer in corrispondenza di *lParam*, in caratteri.
+LoWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) l'indice in base zero della parte che riceve il testo della descrizione comando. La [**parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica le dimensioni del buffer in *corrispondenza di lParam,* in caratteri.
 
 </dd> <dt>
 
@@ -51,7 +51,7 @@ Il valore restituito non viene utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-**Avviso di sicurezza:** L'uso errato di questo messaggio può causare problemi per l'applicazione. Se, ad esempio, il testo è troppo grande per il buffer *lParam* , potrebbe verificarsi un overflow del buffer. Prima di continuare, è necessario esaminare le [considerazioni sulla sicurezza: controlli di Microsoft Windows](sec-comctls.md) .
+**Avviso di sicurezza:** L'uso errato di questo messaggio può causare problemi per l'applicazione. Ad esempio, se il testo è troppo grande per il buffer *lParam,* potrebbe causare un overflow del buffer. Prima di [continuare, è consigliabile](sec-comctls.md) esaminare Considerazioni sulla sicurezza: Controlli Windows Microsoft.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **SB \_ GETTIPTEXTW** (Unicode) e **SB \_ GETTIPTEXTA** (ANSI)<br/>               |
 
 

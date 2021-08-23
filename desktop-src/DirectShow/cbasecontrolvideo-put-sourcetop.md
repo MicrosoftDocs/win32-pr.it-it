@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put SourceTop imposta la coordinata superiore del rettangolo di origine.
+description: Il metodo put \_ SourceTop imposta la coordinata superiore del rettangolo di origine.
 ms.assetid: 8891771d-5a0b-4dfa-b961-9f375f13b4f7
-title: Metodo CBaseControlVideo.put_SourceTop (Ctlutil. h)
+title: CBaseControlVideo.put_SourceTop metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 76786290609026da44ada7cae962fd7d4b09c358
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de7c0da0d38da2563e0a34b5f7f894a23e7b55390fc9291321dbca46a7cb61fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793851"
 ---
-# <a name="cbasecontrolvideoput_sourcetop-method"></a>CBaseControlVideo. put \_ SourceTop (metodo)
+# <a name="cbasecontrolvideoput_sourcetop-method"></a>Metodo SourceTop CBaseControlVideo.put \_
 
 Il `put_SourceTop` metodo imposta la coordinata superiore del rettangolo di origine.
 
@@ -51,17 +51,17 @@ Nuova coordinata superiore del rettangolo di origine.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** che dipende dall'implementazione di. può essere uno dei valori seguenti oppure altri valori non sono elencati.
+Restituisce un **valore HRESULT** che dipende dall'implementazione. può essere uno dei valori seguenti o altri valori non elencati.
 
 
 
 | Codice restituito                                                                                           | Descrizione                                                                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <dl> <dt>**E \_ non riescono**</dt> </dl>                | Esito negativo.<br/>                                                              |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                | Esito negativo.<br/>                                                              |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Argomento non valido.<br/>                                                     |
-| <dl> <dt>**\_puntatore E**</dt> </dl>             | Argomento puntatore **null** .<br/>                                            |
-| <dl> <dt>**NOERROR**</dt> </dl>                | Esito positivo.<br/>                                                              |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Impossibile eseguire l'operazione perché i pin non sono connessi.<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>             | Argomento del puntatore **NULL.**<br/>                                            |
+| <dl> <dt>**NOERROR**</dt> </dl>                | Operazione completata.<br/>                                                              |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Impossibile eseguire l'operazione perché i pin non sono connessi.<br/> |
 
 
 
@@ -69,7 +69,7 @@ Restituisce un valore **HRESULT** che dipende dall'implementazione di. può esse
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione può modificare i rettangoli di origine e di destinazione per il video tramite l'interfaccia [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) . Il rettangolo di origine influiscono sulla sezione dell'origine video nativa che verrà visualizzata nella visualizzazione; il rettangolo di destinazione influiscono sul punto in cui verrà visualizzato il video quando viene riprodotto. Il rettangolo di destinazione è relativo all'area client della finestra in cui è in esecuzione. L'angolo superiore sinistro della finestra è coordinata (0, 0).
+Un'applicazione può modificare i rettangoli di origine e di destinazione per il video tramite [**l'interfaccia IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) Il rettangolo di origine influisce sulla sezione dell'origine video nativa che verrà visualizzata sullo schermo. il rettangolo di destinazione influisce sulla posizione in cui verrà visualizzato il video quando viene riprodotto. Il rettangolo di destinazione è relativo all'area client della finestra in cui viene riprodotto. L'angolo superiore sinistro della finestra è la coordinata (0,0).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Un'applicazione può modificare i rettangoli di origine e di destinazione per il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

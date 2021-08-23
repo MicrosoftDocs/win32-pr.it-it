@@ -1,7 +1,7 @@
 ---
 description: Esegue il rendering delle primitive e restituisce lo stato di rendering aggiornato.
 ms.assetid: ef28ee62-a7ad-406c-a892-ffee14123d16
-title: Funzione NtGdiD3DDrawPrimitives2 (Ntgdi. h)
+title: Funzione NtGdiD3DDrawPrimitives2 (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ntgdi.h
-ms.openlocfilehash: ebde2fd5adf3b0892606d0ebbc1c7d5f6b55d9cd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8d3964a9946da37d211aab0e5949cff5e09a40dcc18607aabb3a0c13c37acfe9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833661"
 ---
-# <a name="ntgdid3ddrawprimitives2-function"></a>NtGdiD3DDrawPrimitives2 (funzione)
+# <a name="ntgdid3ddrawprimitives2-function"></a>Funzione NtGdiD3DDrawPrimitives2
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Esegue il rendering delle primitive e restituisce lo stato di rendering aggiornato.
 
@@ -47,52 +47,52 @@ DWORD APIENTRY NtGdiD3DDrawPrimitives2(
 
 <dl> <dt>
 
-*hCmdBuf* \[ in\]
+*hCmdBuf* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [**struttura \_ \_ locale della superficie DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che identifica la superficie DirectDraw contenente i dati del comando.
+Handle per la [**struttura DD \_ SURFACE \_ LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che identifica la superficie DirectDraw contenente i dati del comando.
 
 </dd> <dt>
 
-*hVBuf* \[ in\]
+*hVBuf* \[ Pollici\]
 </dt> <dd>
 
-Handle per la [**struttura \_ \_ locale della superficie DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che identifica la superficie DirectDraw contenente i dati del vertice.
+Handle per la [**struttura DD \_ SURFACE \_ LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che identifica la superficie DirectDraw contenente i dati del vertice.
 
 </dd> <dt>
 
-*pded* \[ in uscita\]
+*pded* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una [**struttura \_ DRAWPRIMITIVES2DATA di D3DNTHAL**](/windows-hardware/drivers/ddi/) contenente le informazioni necessarie per il rendering di una o più primitive da parte del driver.
+Puntatore a [**una struttura D3DNTHAL \_ DRAWPRIMITIVES2DATA**](/windows-hardware/drivers/ddi/) che contiene le informazioni necessarie al driver per eseguire il rendering di una o più primitive.
 
 </dd> <dt>
 
-*pfpVidMemCmd* \[ in uscita\]
+*pfpVidMemCmd* \[ in, out\]
 </dt> <dd>
 
-Nuovo puntatore alla memoria video se il driver ha invertito il buffer dei comandi.
+Nuovo puntatore alla memoria video se il driver ha scambiato il buffer dei comandi.
 
 </dd> <dt>
 
-*pdwSizeCmd* \[ in uscita\]
+*pdwSizeCmd* \[ in, out\]
 </dt> <dd>
 
-Specifica il numero minimo di byte in base ai quali il driver deve aumentare il buffer dei comandi di swapping.
+Specifica il numero minimo di byte di cui il driver deve aumentare il buffer del comando di scambio.
 
 </dd> <dt>
 
-*pfpVidMemVtx* \[ in uscita\]
+*pfpVidMemVtx* \[ in, out\]
 </dt> <dd>
 
-Nuovo puntatore alla memoria video se il driver ha invertito il buffer del vertice.
+Nuovo puntatore alla memoria video se il driver ha scambiato il buffer dei vertici.
 
 </dd> <dt>
 
-*pdwSizeVtx* \[ in uscita\]
+*pdwSizeVtx* \[ in, out\]
 </dt> <dd>
 
-Specifica il numero minimo di byte che il driver deve allocare per il buffer dei vertici di swapping.
+Specifica il numero minimo di byte che il driver deve allocare per il buffer dei vertici di scambio.
 
 </dd> </dl>
 
@@ -104,8 +104,8 @@ Specifica il numero minimo di byte che il driver deve allocare per il buffer dei
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -119,7 +119,7 @@ Specifica il numero minimo di byte che il driver deve allocare per il buffer dei
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -127,7 +127,7 @@ Specifica il numero minimo di byte che il driver deve allocare per il buffer dei
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

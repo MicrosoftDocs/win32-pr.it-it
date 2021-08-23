@@ -1,6 +1,6 @@
 ---
-title: break_comp-vs
-description: Suddividere in modo condizionale il ciclo corrente nel EndLoop-vs o endrep-vs più vicino.
+title: break_comp - vs
+description: Interrompere in modo condizionale il ciclo corrente all'endloop più vicino , rispetto a endrep o endrep, rispetto a
 ms.assetid: 01745e03-874a-4594-b6ab-12db22d0cb4a
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 631998aeba6612d945495d8115a74d00f7e657c7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a02bf34844918255086b318d9a13feeabbd6e75bdecca03684adaba70b420626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626561"
 ---
-# <a name="break_comp---vs"></a>Interrompi \_ comp-vs
+# <a name="break_comp---vs"></a>break \_ comp - vs
 
-Suddividere in modo condizionale il ciclo corrente nel [EndLoop-vs](endloop---vs.md) o [endrep-vs](endrep---vs.md)più vicino.
+Interrompere in modo condizionale il ciclo corrente [all'endloop più](endloop---vs.md) vicino , rispetto a [endrep o endrep, rispetto a](endrep---vs.md).
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| Interrompi \_ comp src0, src1 |
+| break \_ comp src0, src1 |
 |------------------------|
 
 
 
- 
+ 
 
 Dove:
 
@@ -37,19 +37,19 @@ Dove:
 
     | Sintassi | Confronto            |
     |--------|-----------------------|
-    | \_gt   | Maggiore di          |
-    | \_lt   | Minore di             |
-    | \_GE   | Maggiore o uguale a |
+    | \_Gt   | Maggiore di          |
+    | \_Tenente   | Minore di             |
+    | \_Ge   | Maggiore o uguale a |
     | \_le   | Minore o uguale a    |
-    | \_EQ   | Uguale a              |
+    | \_Eq   | Uguale a              |
     | \_ne   | Diverso da          |
 
     
 
-     
+     
 
--   src0 è un registro di origine. Per selezionare un singolo componente è necessario replicare Swizzle.
--   src1 è un registro di origine. Per selezionare un singolo componente è necessario replicare Swizzle.
+-   src0 è un registro di origine. Replicare lo swizzle è necessario per selezionare un singolo componente.
+-   src1 è un registro di origine. Replicare lo swizzle è necessario per selezionare un singolo componente.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,15 +57,15 @@ Questa istruzione è supportata nelle versioni seguenti.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| Interrompi \_ comp            |      |      | x    | x     | x    | x     |
+| interrompere \_ la compilazione            |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Quando il confronto è true, viene interrotto dal ciclo corrente, come illustrato.
+Quando il confronto è true, esce dal ciclo corrente, come illustrato.
 
 
 ```
@@ -79,12 +79,12 @@ if (src0 comparison src1)
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed7db57dc3acedd1e65edab7377b525940ea10e2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ccc1d85ff1fda2bc2a67744a2e9ef75ad99839d63ee8b9e332660a2bd36a30fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630761"
 ---
 # <a name="d3dxshrotatez-function-d3dx9mathh"></a>Funzione D3DXSHRotateZ (D3dx9math.h)
 
-Ruota il vettore armonico armonico (SH) nell'asse z in base all'angolo specificato.
+Ruota il vettore armonico armonico sferico (SH) nell'asse z in base all'angolo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l I + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

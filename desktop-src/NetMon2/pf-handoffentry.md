@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura PF HANDOFFENTRY definisce un protocollo che Network Monitor aggiunge al set di continuità di un parser.
+description: La struttura PF HANDOFFENTRY definisce un protocollo \_ che Network Monitor aggiunge al set di consegna di un parser.
 ms.assetid: c26bee6e-7dbf-4994-a0a7-a280cf4838be
-title: Struttura PF_HANDOFFENTRY (Netmon. h)
+title: PF_HANDOFFENTRY struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 5ad431e936265be96831778f9949ae67ef737beb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf98490424754d6ae2223ca063e0e3a4eec69c113b1a220e9657b7db5edbb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778671"
 ---
-# <a name="pf_handoffentry-structure"></a>\_Struttura PF HANDOFFENTRY
+# <a name="pf_handoffentry-structure"></a>Struttura PF \_ HANDOFFENTRY
 
-La struttura **PF \_ HANDOFFENTRY** definisce un protocollo che Network Monitor aggiunge al set di continuità di un parser.
+La **struttura PF \_ HANDOFFENTRY** definisce un protocollo che Network Monitor aggiunge al set di handoff di un parser.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Nome del file INI associato al protocollo.
 **szIniSection**
 </dt> <dd>
 
-Etichetta della sezione all'interno del file INI.
+Etichetta di sezione all'interno del file INI.
 
 </dd> <dt>
 
@@ -74,15 +74,15 @@ Valore associato al protocollo.
 **ValueFormatBase**
 </dt> <dd>
 
-Base numerica del valore del protocollo specificato in **dwHandOffValue**. La funzione **ValueFormatBase** deve essere impostata su uno dei seguenti elementi:
+Base numerica del valore del protocollo specificato in **dwHandOffValue**. La **funzione ValueFormatBase** deve essere impostata su uno dei valori seguenti:
 
 
 
 | Valore                                                                                                                                                                                                                        | Significato                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="HANDOFF_VALUE_FORMAT_BASE_UNKNOWN"></span><span id="handoff_value_format_base_unknown"></span><dl> <dt>**\_ \_ base formato valore \_ uniforme \_ sconosciuto**</dt> </dl> | Base sconosciuta<br/>     |
-| <span id="HANDOFF_VALUE_FORMAT_BASE_DECIMAL"></span><span id="handoff_value_format_base_decimal"></span><dl> <dt>**\_ \_ \_ decimale base \_ formato valore uniforme**</dt> </dl> | Base decimale<br/>     |
-| <span id="HANDOFF_VALUE_FORMAT_BASE_HEX"></span><span id="handoff_value_format_base_hex"></span><dl> <dt>**\_ \_ \_ Hex base formato valore \_ uniforme**</dt> </dl>             | Base esadecimale<br/> |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_UNKNOWN"></span><span id="handoff_value_format_base_unknown"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ UNKNOWN**</dt> </dl> | Base sconosciuta<br/>     |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_DECIMAL"></span><span id="handoff_value_format_base_decimal"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ DECIMAL**</dt> </dl> | Base decimale<br/>     |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_HEX"></span><span id="handoff_value_format_base_hex"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ HEX**</dt> </dl>             | Base esadecimale<br/> |
 
 
 
@@ -92,7 +92,7 @@ Base numerica del valore del protocollo specificato in **dwHandOffValue**. La fu
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice di strutture **PF \_ HANDOFFENTRY** viene usata nella struttura [PF \_ HANDOFFSET](pf-handoffset.md) .
+Nella struttura [PF \_ HANDOFFSET](pf-handoffset.md) viene usata una matrice delle strutture **PF \_ HANDOFFENTRY.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Una matrice di strutture **PF \_ HANDOFFENTRY** viene usata nella struttura [PF 
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

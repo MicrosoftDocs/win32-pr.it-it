@@ -1,10 +1,10 @@
 ---
-title: Attributo dei criteri a livello di dominio
-description: Questa operazione è destinata ai criteri estendibili dall'utente per la replica ai client.
+title: Attributo Domain-Wide-Policy
+description: Ciò consente di replicare i criteri estendibili dell'utente nei client.
 ms.assetid: 930a2733-31c4-45de-a611-437e3d61d304
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo dei criteri a livello di dominio
+- Schema AD dell'attributo Domain-Wide-Policy
 - Schema AD dell'attributo domainWidePolicy
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc732ee761ee6c294ffb14dac832c36d5821927
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3d2283f49719ed188f6dbcfa1837105b4ac6112b56175dfb66bb51759668526d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656691"
 ---
-# <a name="domain-wide-policy-attribute"></a>Attributo dei criteri a livello di dominio
+# <a name="domain-wide-policy-attribute"></a>Attributo Domain-Wide-Policy
 
-Questa operazione è destinata ai criteri estendibili dall'utente per la replica ai client.
+Ciò consente di replicare i criteri estendibili dell'utente nei client.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Criteri a livello di dominio                                    |
-| LDAP-Display-Name | domainWidePolicy                                      |
+| Ldap-Display-Name | domainWidePolicy                                      |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.421                                |
-| System-ID-GUID    | 80a67e29-9f22-11d0-afdd-00c04fd930c9                  |
+| System-Id-Guid    | 80a67e29-9f22-11d0-afdd-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questa operazione è destinata ai criteri estendibili dall'utente per la replica
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Falso                                              |
+| Is-Single-Valued       | Falso                                              |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 

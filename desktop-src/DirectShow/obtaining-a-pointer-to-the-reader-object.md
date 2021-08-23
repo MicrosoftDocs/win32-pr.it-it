@@ -1,19 +1,19 @@
 ---
-description: Informazioni su come ottenere un puntatore all'oggetto Reader di Windows Media Format SDK usando l'interfaccia IWMReaderAdvanced2 in DirectShow.
+description: Informazioni su come ottenere un puntatore all'oggetto reader di Windows Media Format SDK usando l'interfaccia IWMReaderAdvanced2 in DirectShow.
 ms.assetid: d1292e2f-bd0e-4961-a6fa-8cdaeb28b692
-title: Recupero di un puntatore all'oggetto Reader (DirectShow)
+title: Recupero di un puntatore all'oggetto reader (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e131b9e111aa5e779d1208b68e04c9979e3b1d7f
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 5c1395a9d1c2cb764e8994600845362816ac2c158ca9ab7d8fdf630a1a51ed00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633621"
 ---
-# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Recupero di un puntatore all'oggetto Reader (DirectShow)
+# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Recupero di un puntatore all'oggetto reader (DirectShow)
 
-In alcuni casi, ad esempio quando si determinano le estensioni di unità dati impostate in un determinato flusso, potrebbe essere necessario accedere direttamente all'oggetto Lettore di Windows Media Format SDK. La funzione seguente illustra come ottenere [**l'interfaccia IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) nell'oggetto Reader stesso:
+In alcuni casi, ad esempio quando si determinano le estensioni di unità dati impostate in un determinato flusso, potrebbe essere necessario accedere direttamente all'oggetto lettore di Windows Media Format SDK. La funzione seguente illustra come ottenere [**l'interfaccia IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) nell'oggetto reader stesso:
 
 
 ```C++

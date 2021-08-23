@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_Video classe: questa classe è la classe del tipo di evento per gli eventi di configurazione video.'
+description: 'SystemConfig_Video: questa classe è la classe del tipo di evento per gli eventi di configurazione video.'
 ms.assetid: ddb5924b-70d9-4693-bf68-0536c3c3fa8d
 title: SystemConfig_Video classe
 ms.topic: reference
@@ -23,14 +23,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 716194eb9ceb67b609f886482393795eaef2ef09
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 09d68fcd2710e4f16b315182624ce32eaa3729f370a4a6a071c55f705dcbe6af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811701"
 ---
-# <a name="systemconfig_video-class"></a>Classe Video \_ SystemConfig
+# <a name="systemconfig_video-class"></a>Classe SystemConfig \_ Video
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione video.
 
@@ -80,7 +80,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (8), **Max** (256), **Format("s")**
 </dt> </dl>
 
-Nome o descrizione dell'adapter.
+Nome o descrizione dell'adattatore.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4)
 </dt> </dl>
 
-Numero di bit usati per visualizzare ogni pixel.
+Numero di bit utilizzati per visualizzare ogni pixel.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Nome del chip daC (Digital-to-Analog Converter) dell'adattatore.
 
 </dd> <dt>
 
-**Deviceid**
+**DeviceId**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **matrice char16**
@@ -199,11 +199,11 @@ Flag di stato del dispositivo. Può essere qualsiasi combinazione ragionevole di
 | Valore                                                                                                                                                                                                                                                                                        | Significato                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ COLLEGATO \_ A \_ DESKTOP**</dt> <dt>1 (0x1)</dt> </dl> | Il dispositivo fa parte del desktop.<br/>                                                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**VISUALIZZAZIONE \_ DRIVER \_ DI \_ MIRRORING DEL**</dt> DISPOSITIVO <dt>8 (0x8)</dt> </dl>           | Rappresenta uno pseudo dispositivo usato per eseguire il mirroring del disegno dell'applicazione per la connessione a un computer remoto o ad altri scopi. A questo dispositivo è associato uno pseudo monitor invisibile. Ad esempio, Viene utilizzato da NetMeeting.<br/> |
+| <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**VISUALIZZAZIONE \_ \_DRIVER MIRRORING DEL \_ DISPOSITIVO**</dt> <dt>8 (0x8)</dt> </dl>           | Rappresenta una pseudo-periferica utilizzata per eseguire il mirroring del disegno dell'applicazione per la connessione a un computer remoto o ad altri scopi. A questo dispositivo è associato uno pseudo monitor invisibile. Ad esempio, Viene utilizzato da NetMeeting.<br/> |
 | <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**VISUALIZZAZIONE \_ DEVICE \_ MODESPRUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | Il dispositivo ha più modalità di visualizzazione di quelle supportate dai dispositivi di output.<br/>                                                                                                                                                |
-| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ PRIMARIO \_ DISPOSITIVO**</dt> <dt>4 (0x4)</dt> </dl>                 | Il desktop primario si trova nel dispositivo. Per un sistema con una singola scheda di visualizzazione, questa opzione è sempre impostata. Per un sistema con più schede video, solo un dispositivo può avere questo set.<br/>                                   |
-| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ RIMOVIBILE**</dt> <dt>32 (0x20)</dt> </dl>                               | Il dispositivo è rimovibile. non può essere la visualizzazione primaria.<br/>                                                                                                                                                        |
-| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**VISUALIZZAZIONE \_ COMPATIBILE \_ CON VGA \_ DEL DISPOSITIVO**</dt> <dt>16 (0x10)</dt> </dl>               | Il dispositivo è compatibile con VGA.<br/>                                                                                                                                                                                     |
+| <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ PRIMARIO \_ DISPOSITIVO**</dt> <dt>4 (0x4)</dt> </dl>                 | Il desktop primario si trova nel dispositivo. Per un sistema con una singola scheda video, questa opzione è sempre impostata. Per un sistema con più schede video, questo set può essere impostato su un solo dispositivo.<br/>                                   |
+| <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ RIMOVIBILE**</dt> <dt>32 (0x20)</dt> </dl>                               | Il dispositivo è rimovibile. non può essere la visualizzazione principale.<br/>                                                                                                                                                        |
+| <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**VISUALIZZAZIONE \_ DISPOSITIVO \_ VGA \_ COMPATIBILE**</dt> <dt>16 (0x10)</dt> </dl>               | Il dispositivo è compatibile con VGA.<br/>                                                                                                                                                                                     |
 
 
 
@@ -265,8 +265,8 @@ Numero corrente di pixel verticali.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

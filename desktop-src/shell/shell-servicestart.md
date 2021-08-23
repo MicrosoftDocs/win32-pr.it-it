@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c88b1980d215ad088a4a24362f17147b5d6e432
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: afdc1e7cac8d50de08e21cfad5cb492b5b51dcb647e963b4c003e9600a924244
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709551"
 ---
 # <a name="shellservicestart-method"></a>Metodo Shell.ServiceStart
 
@@ -63,7 +63,7 @@ Valore **String** contenente il nome del servizio.
 *vPersistent* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Impostare su **true per** fare in modo che il servizio sia avviato automaticamente da Gestione controllo servizi durante l'avvio del sistema. Impostare su **false per** lasciare invariata la configurazione del servizio.
 
@@ -73,15 +73,15 @@ Impostare su **true per** fare in modo che il servizio sia avviato automaticamen
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **\* Variant**
+Tipo: **\* Variante**
 
-Restituisce **true se** ha esito positivo; in caso contrario, **false.**
+Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
 
 ### <a name="vb"></a>VB
 
 Tipo: **\* Variante**
 
-Restituisce **true se** ha esito positivo; in caso contrario, **false.**
+Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -93,7 +93,7 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 Gli esempi seguenti illustrano l'uso **di ServiceStart** per avviare il servizio Messenger. L'utilizzo viene visualizzato per JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -135,8 +135,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

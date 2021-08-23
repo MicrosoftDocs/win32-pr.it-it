@@ -1,21 +1,21 @@
 ---
-description: Il \_ messaggio WM PALETTEISCHANGING informa le applicazioni che un'applicazione sta per realizzare la relativa tavolozza logica.
+description: Il messaggio WM \_ PALETTEISCHANGING informa le applicazioni che un'applicazione sta per realizzare il riquadro logico.
 ms.assetid: 64ec1042-0ab5-496f-9a88-2f293b412704
-title: Messaggio WM_PALETTEISCHANGING (winuser. h)
+title: WM_PALETTEISCHANGING messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2127dc9c682bba1fc4cea4e10b2b96ecc92102
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b0de17e7957e4b03c0a8fb942e7c0e4f94a3329e53cb039ce1d7f0a8c33aa89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717681"
 ---
-# <a name="wm_paletteischanging-message"></a>\_Messaggio PALETTEISCHANGING WM
+# <a name="wm_paletteischanging-message"></a>Messaggio \_ WM PALETTEISCHANGING
 
-Il messaggio **WM \_ PALETTEISCHANGING** informa le applicazioni che un'applicazione sta per realizzare la relativa tavolozza logica.
+Il **messaggio WM \_ PALETTEISCHANGING** informa le applicazioni che un'applicazione sta per realizzare il riquadro logico.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra che renderà conto della tavolozza logica.
+Handle per la finestra che sta per realizzare il riquadro logico.
 
 </dd> <dt>
 
@@ -49,13 +49,13 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione che modifica la tavolozza non attende il riconoscimento del messaggio prima di modificare la tavolozza e di inviare il messaggio [**WM \_ PALETTECHANGED**](wm-palettechanged.md) . Di conseguenza, è possibile che la tavolozza sia già stata modificata dal momento in cui un'applicazione riceve il messaggio.
+L'applicazione che modifica il riquadro non attende il riconoscimento di questo messaggio prima di modificare il riquadro e inviare il [**messaggio WM \_ PALETTECHANGED.**](wm-palettechanged.md) Di conseguenza, il riquadro potrebbe essere già stato modificato nel momento in cui un'applicazione riceve questo messaggio.
 
-Se l'applicazione ignora o non riesce a elaborare il messaggio e una seconda applicazione ne realizza la tavolozza mentre la prima utilizza gli indici della tavolozza, è possibile che l'utente visualizzi colori imprevisti durante le successive operazioni di disegno.
+Se l'applicazione ignora o non riesce a elaborare questo messaggio e una seconda applicazione rileva la tavolozza mentre la prima usa gli indici della tavolozza, è possibile che l'utente veda colori imprevisti durante le operazioni di disegno successive.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Se l'applicazione ignora o non riesce a elaborare il messaggio e una seconda app
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,16 +73,16 @@ Se l'applicazione ignora o non riesce a elaborare il messaggio e una seconda app
 
 <dl> <dt>
 
-[Panoramica sui colori](colors.md)
+[Panoramica dei colori](colors.md)
 </dt> <dt>
 
-[Messaggi colori](color-messages.md)
+[Messaggi a colori](color-messages.md)
 </dt> <dt>
 
-[**\_PALETTECHANGED WM**](wm-palettechanged.md)
+[**WM \_ PALETTECHANGED**](wm-palettechanged.md)
 </dt> <dt>
 
-[**\_QUERYNEWPALETTE WM**](wm-querynewpalette.md)
+[**WM \_ QUERYNEWPALETTE**](wm-querynewpalette.md)
 </dt> </dl>
 
  

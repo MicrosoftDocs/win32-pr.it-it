@@ -1,39 +1,39 @@
 ---
-title: Registri-hs_5_0
-description: Uno scafo dello shader è costituito da tre fasi distinte per la fase di controllo, la fase della divisione e la fase di join. Ogni fase dispone di un proprio set di registri di input e di output.
+title: Registri - hs_5_0
+description: Uno hull shader è costituito da tre fasi distinte della fase del punto di controllo, della fase di fork e della fase di join. Ogni fase ha i propri set di registri di input e output.
 ms.assetid: 82F689EF-D3F4-40B5-9A2C-1F97F4CE6501
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aca1377c7ca6b56434c361ba06b01cf659319f6
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3891130b4a952cb991615dbcc386e245d5eb8abedc2d8cec0b441eb6b3c2fbae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104351896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854031"
 ---
-# <a name="registers---hs_5_0"></a>Registri-HS \_ 5 \_ 0
+# <a name="registers---hs_5_0"></a>Registri - hs \_ 5 \_ 0
 
-Un Hull shader è costituito da tre fasi distinte: fase del punto di controllo, fase della divisione e fase di join. Ogni fase dispone di un proprio set di registri di input e di output.
+Uno hull shader è costituito da tre fasi distinte: fase del punto di controllo, fase di fork e fase di join. Ogni fase ha i propri set di registri di input e output.
 
-## <a name="control-point-phase"></a>Fase punto di controllo
+## <a name="control-point-phase"></a>Fase del punto di controllo
 
-\_ \_ \_ la fase del punto di controllo HS è un programma shader con il seguente modello di registro.
+La fase \_ del punto di controllo \_ \_ hs è un programma shader con il modello di registro seguente.
 
 ### <a name="input-registers"></a>Registri di input
 
 
 
-| Tipo di registro                                     | Conteggio                 | L/S | Dimension | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Tipo di registro                                     | Conteggio                 | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |---------------------------------------------------|-----------------------|-----|-----------|------------------|----------|--------------|
-| Temp a 32 bit (r \# )                                 | 4096 (r \# + x \# \[ n \] )    | L/S | 4         | No               | nessuno     | Sì          |
-| Matrice Temp indicizzabile a 32 bit (x \# \[ n \] )            | 4096 (r \# + x \# \[ n \] )    | L/S | 4         | Sì              | nessuno     | Sì          |
-| Input a 32 bit ( \[ elemento vertice v \] \[ \] )             | 32 (elemento) \* 32 (Vert) | R   | 4         | Sì              | nessuno     | Sì          |
-| vOutputControlPointID input UINT a 32 bit (23,7)     | 1                     | R   | 1         | No               | nessuno     | Sì          |
-| PrimitiveID input UINT a 32 bit (vPrim)             | 1                     | R   | 1         | No               | N/D      | Sì          |
-| Elemento in una risorsa di input (t \# )                | 128                   | R   | 128       | Sì              | nessuno     | Sì          |
-| Campionatore/ \# i                                     | 16                    | R   | 1         | Sì              | nessuno     | Sì          |
-| Guida di riferimento a ConstantBuffer ( \# \[ Indice CB \] )          | 15                    | R   | 4         | Sì              | nessuno     | Sì          |
-| Riferimento ConstantBuffer immediato ( \[ Indice ICB \] ) | 1                     | R   | 4         | Sì (contenuto)   | nessuno     | Sì          |
+| Temp a 32 bit (r \# )                                 | 4096(r \# +x \# \[ n \] )    | L/S | 4         | No               | nessuno     | Sì          |
+| Matrice temporanea indicizzabile a 32 bit (x \# \[ n \] )            | 4096(r \# +x \# \[ n \] )    | L/S | 4         | Sì              | Nessuno     | Sì          |
+| Input a 32 bit (elemento \[ vertice \] \[ v \] )             | 32(element) \* 32(vert) | R   | 4         | Sì              | Nessuno     | Sì          |
+| Input UINT a 32 bit vOutputControlPointID(23.7)     | 1                     | R   | 1         | No               | nessuno     | Sì          |
+| PrimitiveID di input UINT a 32 bit (vPrim)             | 1                     | R   | 1         | No               | N/D      | Sì          |
+| Elemento in una risorsa di input (t \# )                | 128                   | R   | 128       | Sì              | Nessuno     | Sì          |
+| Campionatore (s \# )                                     | 16                    | R   | 1         | Sì              | Nessuno     | Sì          |
+| Riferimento ConstantBuffer (indice cb \# \[ \] )          | 15                    | R   | 4         | Sì              | Nessuno     | Sì          |
+| Riferimento ConstantBuffer immediato (indice icb \[ \] ) | 1                     | R   | 4         | Sì (contenuto)   | Nessuno     | Sì          |
 
 
 
@@ -43,121 +43,121 @@ Un Hull shader è costituito da tre fasi distinte: fase del punto di controllo, 
 
 
 
-| Tipo di registro                           | Conteggio | L/S | Dimension | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Tipo di registro                           | Conteggio | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |-----------------------------------------|-------|-----|-----------|------------------|----------|--------------|
-| Elemento dati vertex di output a 32 bit (o \# ) | 32    | W   | 4         | Sì              | nessuno     | Sì          |
+| Elemento dati vertice di output a 32 bit (o \# ) | 32    | W   | 4         | Sì              | Nessuno     | Sì          |
 
 
 
  
 
-Ogni registro di output della fase del punto di controllo di Hull shader è costituito da un vettore 4, di cui è possibile dichiarare fino a 32 registri. Sono stati dichiarati anche i punti di controllo dell'output da 1 a 32, con scalabilità della quantità di spazio di archiviazione necessaria. Viene ora fatto riferimento al numero massimo di scalabilità consentito di scalars in tutti gli output della fase del punto di controllo di Hull shader come \# \_ Max output CP \_ .
+Ogni registro di output della fase del punto di controllo dello shader è fino a un vettore a 4, di cui è possibile dichiarare fino a 32 registri. Sono inoltre dichiarati da 1 a 32 punti di controllo di output, che ridimensionano la quantità di spazio di archiviazione necessario. È possibile fare riferimento al numero aggregato massimo consentito di scalari in tutti gli output della fase del punto di controllo dello shader come \# cp \_ output \_ max.
 
-\#\_output CP \_ max = 3968 valori scalari.
+\#cp \_ output max = \_ 3968 scalari.
 
-Questo limite si basa su un punto di progettazione per un determinato hardware di 4096 di \* archiviazione a 32 bit. La quantità per l'output del punto di controllo è 3968 = 4096-128, ovvero 32 (punti di controllo) \* 4 (componenti) \* 32 (elementi)-4 (componenti) \* 32 (elementi). La sottrazione riserva 128 scalari (un punto di controllo) la quantità di spazio dedicato alla fase 2 e 3 di Hull shader. La scelta di riservare i valori scalari 128 per le costanti di patch, anziché consentire semplicemente a tutti i 4096 scalari di spazio di archiviazione, non è utilizzata dai punti di controllo di output: consente di gestire i limiti di un'altra progettazione hardware specifica. La fase del punto di controllo può dichiarare i punti di controllo dell'output di 32, ma non può essere completamente 32 elementi con 4 componenti ciascuno, perché lo spazio di archiviazione totale potrebbe essere troppo elevato.
+Questo limite si basa su un punto di progettazione per un determinato hardware di archiviazione a 32 bit a 4096. \* La quantità per l'output del punto di controllo è 3968=4096-128, ovvero 32(punti di \* controllo) 4(componenti) \* 32(elementi) - 4(componenti) \* 32 (elementi). La sottrazione riserva 128 scalari (un punto di controllo) di spazio dedicato alla fase 2 e 3 dello hull shader. La scelta di riservare 128 scalari per le costanti patch, anziché consentire che la quantità di spazio di archiviazione 4096 sia inutilizzata dai punti di controllo di output, consente di soddisfare i limiti di un'altra progettazione hardware specifica. La fase del punto di controllo può dichiarare 32 punti di controllo di output, ma non possono essere completamente 32 elementi con 4 componenti ciascuno, perché lo spazio di archiviazione totale sarebbe troppo elevato.
 
-## <a name="fork-phase"></a>Fase fork
+## <a name="fork-phase"></a>Fase di fork
 
-I registri seguenti sono visibili nel modello di \_ fase della divisione HS \_ .
+I registri seguenti sono visibili nel modello della fase \_ di fork hs. \_
 
-Le risorse di input (t \# ), i Samplers \# , i buffer costanti (CB \# ) e il buffer costante immediato (ICB) di seguito sono tutti stati condivisi con tutte le altre fasi di Hull shader. Ovvero dal punto di vista dell'API/DDI, lo scafo dello shader ha un singolo set di stato della risorsa di input per tutte le fasi. Questo è il fatto che dal punto di vista dell'API/DDI, lo scafo dello shader è un unico Atomic shader; le fasi al suo interno sono i dettagli di implementazione.
+Le risorse di input (t ), i campionatori (s ), i buffer costanti (cb ) e il buffer costante immediato \# \# (icb) riportati di seguito sono tutti stati condivisi con tutte le altre fasi \# di hull shader. Dal punto di vista dell'API/DDI, lo hull shader ha un singolo set di stato delle risorse di input per tutte le fasi. Ciò è associato al fatto che dal punto di vista dell'API/DDI, lo hull shader è un singolo shader atomico. Le fasi al suo interno sono i dettagli di implementazione.
 
 ### <a name="input-registers"></a>Registri di input
 
 
 
-| Tipo di registro                                                                         | Conteggio              | L/S | Dimension                           | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Tipo di registro                                                                         | Conteggio              | L/S | Dimensione                           | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |---------------------------------------------------------------------------------------|--------------------|-----|-------------------------------------|------------------|----------|--------------|
-| Temp a 32 bit (r \# )                                                                     | 4096 (r \# + x \# \[ n \] ) | L/S | 4                                   | No               | nessuno     | Sì          |
-| Matrice Temp indicizzabile a 32 bit (x \# \[ n \] )                                                | 4096 (r \# + x \# \[ n \] ) | L/S | 4                                   | Sì              | nessuno     | Sì          |
-| Punti di controllo di input a 32 bit ( \[ elemento del vertice VICP \] \[ \] ) (fase del punto di pre-controllo)     | 32 vedere la nota di seguito  | R   | 4 (componente) \* 32 (elemento) \* 32 (Vert) | Sì              | nessuno     | Sì          |
-| Punti di controllo dell'output a 32 bit ( \[ elemento Vertex vocp \] \[ \] \] ) (fase del punto di post-controllo) | 32 vedere la nota di seguito  | R   | 4 (componente) \* 32 (elemento) \* 32 (Vert) | Sì              | nessuno     | Sì          |
-| PrimitiveID input UINT a 32 bit (vPrim)                                                 | 1                  | R   | 1                                   | No               | N/D      | Sì          |
-| ForkInstanceID input UINT a 32 bit (23,8) (vForkInstanceID)                              | 1                  | R   | 1                                   | No               | N/D      | Sì          |
-| Elemento in una risorsa di input (t \# )                                                    | 128                | R   | 128                                 | Sì              | nessuno     | Sì          |
-| Campionatore/ \# i                                                                         | 16                 | R   | 1                                   | Sì              | nessuno     | Sì          |
-| Guida di riferimento a ConstantBuffer ( \# \[ Indice CB \] )                                              | 15                 | R   | 4                                   | Sì              | nessuno     | Sì          |
-| Riferimento ConstantBuffer immediato ( \[ Indice ICB \] )                                     | 1                  | R   | 4                                   | Sì (contenuto)   | nessuno     | Sì          |
+| Temp a 32 bit (r \# )                                                                     | 4096(r \# +x \# \[ n \] ) | L/S | 4                                   | No               | nessuno     | Sì          |
+| Matrice temporanea indicizzabile a 32 bit (x \# \[ n \] )                                                | 4096(r \# +x \# \[ n \] ) | L/S | 4                                   | Sì              | Nessuno     | Sì          |
+| Punti di controllo di input a 32 bit (elemento vertice vicp \[ \] \[ \] ) (fase del punto di pre-controllo)     | 32 Vedere la nota seguente  | R   | 4(componente) \* 32(elemento) \* 32(vert) | Sì              | Nessuno     | Sì          |
+| Punti di controllo di output a 32 bit (elemento vertice vocp \[ \] \[ \] \] ) (fase del punto di post-controllo) | 32 Vedere la nota seguente  | R   | 4(componente) \* 32(elemento) \* 32(vert) | Sì              | Nessuno     | Sì          |
+| PrimitiveID di input UINT a 32 bit (vPrim)                                                 | 1                  | R   | 1                                   | No               | N/D      | Sì          |
+| UINT Input ForkInstanceID(23.8) (vForkInstanceID) a 32 bit                              | 1                  | R   | 1                                   | No               | N/D      | Sì          |
+| Elemento in una risorsa di input (t \# )                                                    | 128                | R   | 128                                 | Sì              | Nessuno     | Sì          |
+| Campionatore (s \# )                                                                         | 16                 | R   | 1                                   | Sì              | Nessuno     | Sì          |
+| Riferimento ConstantBuffer (indice cb \# \[ \] )                                              | 15                 | R   | 4                                   | Sì              | Nessuno     | Sì          |
+| Riferimento ConstantBuffer immediato (indice icb \[ \] )                                     | 1                  | R   | 4                                   | Sì (contenuto)   | Nessuno     | Sì          |
 
 
 
  
 
 > [!Note]
-> Le dichiarazioni di registro del punto di controllo (VICP) della fase fork dello scafo shader devono essere qualsiasi subset, lungo \[ l' \] asse degli elementi, della fase di input del punto di controllo di Hull shader (fase del punto di controllo preliminare). Analogamente, le dichiarazioni per inserire i punti di controllo dell'output (vocp) devono essere qualsiasi subset, lungo l' \[ asse degli elementi \] , dei punti di controllo dell'output di Hull shader (fase di post-controllo).
+> Le dichiarazioni del registro del punto di controllo di input (vicp) della fase di fork di hull shader devono essere qualsiasi subset, lungo l'asse degli elementi, dell'input del punto di controllo (fase del punto di \[ \] pre-controllo) dello shader. Analogamente, le dichiarazioni per l'input dei punti di controllo di output (vocp) devono essere qualsiasi subset, lungo l'asse degli elementi, dei punti di controllo di output dello shader (fase del punto di \[ \] post-controllo).
 > 
-> Lungo l' \[ asse dei vertici \] , il numero di punti di controllo da leggere per ogni VICP e vocp deve essere simile a un subset del conteggio dei punti di controllo dell'input di Hull shader e del conteggio dei punti di controllo dell'output dello scafo shader, rispettivamente. Se, ad esempio, l'asse dei vertici dei registri vocp sono dichiarati con n vertici, che rende i punti di controllo di output della fase del punto di controllo \[ 0.. n-1 \] disponibile come input di sola lettura per la fase di fork.
+> Lungo l'asse dei vertici, il numero di punti di controllo da leggere per ogni vicp e vocp deve essere analogamente un subset rispettivamente del conteggio dei punti di controllo di input e del conteggio dei punti di controllo dell'output di \[ \] hull shader. Ad esempio, se l'asse dei vertici dei registri vocp viene dichiarato con n vertici, i punti di controllo di output della fase di controllo 0..n-1 saranno disponibili come input di sola lettura per la fase \[ \] di fork.
 
 ### <a name="output-registers"></a>Registri di output
 
 
 
-| Registrazione                                        | Conteggio               | L/S | Dimension | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Registrazione                                        | Conteggio               | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |-------------------------------------------------|---------------------|-----|-----------|------------------|----------|--------------|
-| Elemento dati costante patch di output a 32 bit (o \# ) | 32 vedere la nota 1 di seguito | W   | 4         | Sì              | nessuno     | Sì          |
+| Elemento dati costante patch di output a 32 bit (o \# ) | 32 Vedere la nota 1 di seguito | W   | 4         | Sì              | Nessuno     | Sì          |
 
 
 
  
 
 > [!Note]  
-> Gli output delle fasi fork e join di Hull shader sono un set condiviso di registri vettoriali 4 4. Gli output di ogni programma fork o fase di join non possono sovrapporsi tra loro. I valori interpretati dal sistema, ad esempio TessFactors, provengono da questo spazio.
+> Gli output della fase di fork e join dello hull shader sono un set condiviso di 4 registri a 4 vettori. Gli output di ogni programma di fase di fork o join non possono sovrapporsi tra loro. I valori interpretati dal sistema, ad esempio TessFactors, escno da questo spazio.
 
 ## <a name="join-phase"></a>Fase di join
 
-I registri seguenti sono visibili nel modello di \_ fase join HS \_ . Sono disponibili tre set di registri di input: punti di controllo di input della fase di controllo (VICP), punti di controllo dell'output della fase del punto di controllo vocp (vocp) e costanti di patch (VCP). VPC è l'output aggregato di tutti i programmi della fase fork di Hull shader. I registri di output della fase di join \# di Hull shader si trovano nello stesso spazio del registro degli output della fase fork dello shader.
+I registri seguenti sono visibili nel modello della fase \_ di join \_ hs. Esistono tre set di registri di input: punti di controllo di input della fase di controllo (vicp), punti di controllo di output della fase del punto di controllo vocp (vocp) e costanti di patch (vcp). vpc è l'output aggregato di tutti i programmi della fase di fork dello hull shader. I registri o dell'output della fase di join dello hull shader sono nello stesso spazio di registrazione degli output della fase \# di fork dello hulll shader.
 
-Le risorse di input (t \# ), i Samplers \# , i buffer costanti (CB \# ) e il buffer costante immediato (ICB) di seguito sono tutti stati condivisi con tutte le altre fasi di Hull shader. Ovvero dal punto di vista dell'API/DDI, lo scafo dello shader ha un singolo set di stato della risorsa di input per tutte le fasi. Questo è il fatto che dal punto di vista dell'API/DDI, lo scafo dello shader è un unico Atomic shader; le fasi al suo interno sono i dettagli di implementazione.
+Le risorse di input (t ), i campionatori (s), i buffer costanti (cb ) e il buffer costante immediato \# \# (icb) seguenti sono tutti stati condivisi con tutte le altre fasi \# dello hull shader. Dal punto di vista api/DDI, lo hull shader ha un singolo set di stato della risorsa di input per tutte le fasi. Questo vale per il fatto che dal punto di vista api/DDI, lo hull shader è un singolo shader atomico; le fasi al suo interno sono i dettagli di implementazione.
 
 ### <a name="input-registers"></a>Registri di input
 
 
 
-| Tipo di registro                                                                       | Conteggio               | L/S | Dimension                           | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Tipo di registrazione                                                                       | Conteggio               | L/S | Dimensione                           | Indicizzabile in base a r\# | Valori predefiniti | Richiede L'elenco di controllo di accesso |
 |-------------------------------------------------------------------------------------|---------------------|-----|-------------------------------------|------------------|----------|--------------|
-| Temp a 32 bit (r \# )                                                                   | 4096 (r \# + x \# \[ n \] )  | L/S | 4                                   | No               | nessuno     | Sì          |
-| Matrice Temp indicizzabile a 32 bit (x \# \[ n \] )                                              | 4096 (r \# + x \# \[ n \] )  | L/S | 4                                   | Sì              | nessuno     | Sì          |
-| Punti di controllo di input a 32 bit ( \[ elemento del vertice VICP \] \[ \] ) (fase del punto di pre-controllo)   | 32 vedere la nota 1 di seguito | R   | 4 (componente) \* 32 (elemento) \* 32 (Vert) | Sì              | nessuno     | Sì          |
-| Punti di controllo dell'output a 32 bit ( \[ elemento Vertex vocp \] \[ \] ) (fase del punto di post-controllo) | 32 vedere la nota 1 di seguito | R   | 4 (componente) \* 32 (elemento) \* 32 (Vert) | Sì              | nessuno     | Sì          |
-| Input a 32 bit ( \[ elemento VPC \] ) (dati costanti della patch)                                 | 32 vedere la nota 2 di seguito | R   | 4                                   | Sì              | nessuno     | Sì          |
-| PrimitiveID input UINT a 32 bit (vPrim)                                               | 1                   | R   | 1                                   | No               | N/D      | Sì          |
-| JoinInstanceID input UINT a 32 bit (vJoinInstanceID)                                  | 1                   | R   | 1                                   | No               | N/D      | Sì          |
-| Elemento in una risorsa di input (t \# )                                                  | 128                 | R   | 128                                 | Sì              | nessuno     | Sì          |
-| Campionatore/ \# i                                                                       | 16                  | R   | 1                                   | Sì              | nessuno     | Sì          |
-| Guida di riferimento a ConstantBuffer ( \# \[ Indice CB \] )                                            | 15                  | R   | 4                                   | Sì              | nessuno     | Sì          |
-| Riferimento ConstantBuffer immediato ( \[ Indice ICB \] )                                   | 1                   | R   | 4                                   | Sì (contenuto)   | nessuno     | Sì          |
+| Temp a 32 bit (r \# )                                                                   | 4096(r \# +x \# \[ n \] )  | L/S | 4                                   | No               | nessuno     | Sì          |
+| Matrice temporanea indicizzabile a 32 bit (x \# \[ n \] )                                              | 4096(r \# +x \# \[ n \] )  | L/S | 4                                   | Sì              | Nessuno     | Sì          |
+| Punti di controllo di input a 32 bit (elemento vertice vicp \[ \] \[ \] ) (fase del punto di controllo preliminare)   | 32 Vedere la nota 1 riportata di seguito | R   | 4(componente) \* 32(elemento) \* 32(vert) | Sì              | Nessuno     | Sì          |
+| Punti di controllo di output a 32 bit (elemento vertice vocp \[ \] \[ \] ) (fase post-punto di controllo) | 32 Vedere la nota 1 riportata di seguito | R   | 4(componente) \* 32(elemento) \* 32(vert) | Sì              | Nessuno     | Sì          |
+| Input a 32 bit (elemento vpc \[ \] ) (Patch Constant Data)                                 | 32 Vedere la nota 2 riportata di seguito | R   | 4                                   | Sì              | Nessuno     | Sì          |
+| PrimitiveID di input UINT a 32 bit (vPrim)                                               | 1                   | R   | 1                                   | No               | N/D      | Sì          |
+| UINT Input JoinInstanceID a 32 bit (vJoinInstanceID)                                  | 1                   | R   | 1                                   | No               | N/D      | Sì          |
+| Elemento in una risorsa di input (t \# )                                                  | 128                 | R   | 128                                 | Sì              | Nessuno     | Sì          |
+| Campionatore \# (s)                                                                       | 16                  | R   | 1                                   | Sì              | Nessuno     | Sì          |
+| Informazioni di riferimento su ConstantBuffer (indice cb \# \[ \] )                                            | 15                  | R   | 4                                   | Sì              | Nessuno     | Sì          |
+| Riferimento immediato a ConstantBuffer (indice icb \[ \] )                                   | 1                   | R   | 4                                   | Sì (contenuto)   | Nessuno     | Sì          |
 
 
 
  
 
-**Nota 1:** Le dichiarazioni di registro del punto di controllo (VICP) della fase di join di Hull shader devono essere qualsiasi subset, lungo l' \[ asse degli elementi \] , della fase di input del punto di controllo di Hull shader (fase del punto di controllo preliminare). Analogamente, le dichiarazioni per inserire i punti di controllo dell'output (vocp) devono essere qualsiasi subset, lungo l' \[ asse degli elementi \] , dei punti di controllo dell'output di Hull shader (fase di post-controllo).
+**Nota 1:** Le dichiarazioni vicp (Input Control Point Register) della fase di join dello hull shader devono essere qualsiasi subset, lungo l'asse degli elementi, dell'input del punto di controllo \[ \] hull shader (fase del punto di pre-controllo). Analogamente, le dichiarazioni per l'input dei punti di controllo di output (vocp) devono essere qualsiasi subset, lungo l'asse degli elementi, dei punti di controllo di output dello hull shader (fase del punto \[ \] di post-controllo).
 
-Lungo l' \[ asse dei vertici \] , il numero di punti di controllo da leggere per ogni VICP e vocp deve essere simile a un subset del conteggio dei punti di controllo dell'input di Hull shader e del conteggio dei punti di controllo dell'output dello scafo shader, rispettivamente. Se, ad esempio, l'asse dei vertici dei registri vocp sono dichiarati con n vertici, che rende i punti di controllo di output della fase del punto di controllo \[ 0.. n-1 \] disponibile come input di sola lettura per la fase di join.
+Lungo l'asse dei vertici, il numero di punti di controllo da leggere per ogni vicp e vocp deve essere analogamente un subset del conteggio dei punti di controllo di input dello hull shader e del conteggio dei punti di controllo di output dello \[ \] hull shader, rispettivamente. Ad esempio, se l'asse dei vertici dei registri vocp viene dichiarato con n vertici, i punti di controllo di output della fase di controllo \[ 0..n-1 saranno disponibili come input di sola lettura per la fase \] di join.
 
-**Nota 2:** Oltre all'input del punto di controllo, la fase di join Hull shader Considera anche come input i dati costanti della patch calcolati dal programma/i della fase di fork dello shader Hull. Questa operazione viene visualizzata in corrispondenza della fase fork dello scafo dello shader quando il VPC viene \# registrato. I registri VPC di input della fase di join di Hull shader \# condividono lo stesso spazio di registro dell'output o della fase di fork dello scafo dello shader \# . Le dichiarazioni dei \# registri o non devono sovrapporsi a una dichiarazione di output del programma o della fase fork dello scafo dello shader \# ; la fase di join Hull shader viene aggiunta all'output dei dati costanti della patch di aggregazione per Hull shader.
+**Nota 2:** Oltre all'input del punto di controllo, la fase di join dello hull shader vede anche come input i dati costanti della patch calcolati dai programmi della fase di fork dello hull shader. Questo viene visualizzato nella fase di fork dello hull shader durante la registrazione \# del vpc. I registri vpc di input della fase di join dello hull shader condividono lo stesso spazio di registrazione dei registri o dell'output della fase \# di fork dello hull \# shader. Le dichiarazioni dei registri o non devono sovrapporsi ad alcuna dichiarazione di output o programma della fase di fork dello hull shader. La fase di join dello hull shader viene aggiunta all'output dei dati delle costanti della patch aggregata per lo \# \# shader hull.
 
 ### <a name="output-registers"></a>Registri di output
 
 
 
-| Tipo di registro                                   | Conteggio             | L/S | Dimension | Indicizzabile da r\# | Valori predefiniti | Richiede DCL |
+| Tipo di registrazione                                   | Conteggio             | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede L'elenco di controllo di accesso |
 |-------------------------------------------------|-------------------|-----|-----------|------------------|----------|--------------|
-| Elemento dati costante patch di output a 32 bit (o \# ) | 32 vedere la nota di seguito | W   | 4         | Sì              | nessuno     | Sì          |
+| Elemento dati costanti patch di output a 32 bit (o \# ) | 32 Vedere la nota seguente | W   | 4         | Sì              | Nessuno     | Sì          |
 
 
 
  
 
 > [!Note]  
-> Gli output delle fasi fork e join di Hull shader sono un set condiviso di registri vettoriali 4 4. Gli output di ogni programma fork o fase di join non possono sovrapporsi tra loro. I valori interpretati dal sistema, ad esempio TessFactors, provengono da questo spazio.
+> Gli output della fase di fork e join dello hull shader sono un set condiviso di 4 registri a 4 vettori. Gli output di ogni programma di fase di fork o join non possono sovrapporsi tra loro. I valori interpretati dal sistema, ad esempio TessFactors, escno da questo spazio.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Flag che specifica se il thread deve terminare. Se TRUE, il thread viene terminato.
+description: Flag che specifica se il thread deve terminare. Se TRUE, il thread termina.
 ms.assetid: 4a49ad6f-8af8-4429-9ae0-cca334e307b3
-title: 'Membro COutputQueue:: m_bTerminate (Outputq. h)'
+title: Membro COutputQueue::m_bTerminate (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aaa51bad8e1c5c133497666b6272dee0b590e43e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4f85cdc52ed96b2a370ba5e4e02a5981e05fbcf540492e3de91a74363600c70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634211"
 ---
-# <a name="coutputqueuem_bterminate-member"></a>Membro bTerminate di COutputQueue:: m \_
+# <a name="coutputqueuem_bterminate-member"></a>COutputQueue::m \_ bTerminate member
 
-Flag che specifica se il thread deve terminare. Se **true**, il thread viene terminato.
+Flag che specifica se il thread deve terminare. Se **TRUE,** il thread termina.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bTerminate;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

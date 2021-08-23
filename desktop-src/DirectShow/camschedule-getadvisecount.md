@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetAdviseCount Recupera il numero di richieste di notifica in sospeso.
+description: Il metodo GetAdviseCount recupera il numero di richieste di consulenza in sospeso.
 ms.assetid: 5978abcf-2fc8-42d4-aaca-a8b79c623e84
-title: Metodo CAMSchedule. GetAdviseCount (Dsschedule. h)
+title: Metodo CAMSchedule.GetAdviseCount (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: da1a1722fea0c601cf0188c4a2c2530ee6afb92a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 759a0d66c3de0ad622a494c8f2d1eef89ada16a8c84aa19b054b1393f6f82b27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757741"
 ---
-# <a name="camschedulegetadvisecount-method"></a>CAMSchedule. GetAdviseCount, metodo
+# <a name="camschedulegetadvisecount-method"></a>Metodo CAMSchedule.GetAdviseCount
 
-Il `GetAdviseCount` metodo recupera il numero di richieste di notifica in sospeso.
+Il `GetAdviseCount` metodo recupera il numero di richieste di consulenza in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di richieste di notifica in sospeso.
+Restituisce il numero di richieste di consulenza in sospeso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il numero di richieste di notifica in sospeso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Dsschedule. h (include Streams. h)</dt> </dl>                                                                                |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Dsschedule.h (includere Flussi.h)</dt> </dl>                                                                                |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

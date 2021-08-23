@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6589d56e0b9dcf8debe14a7c81f86a4972a73405
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 179ad0000af976441037fc6cc8f7eee14d933ad5037694d2ebacfc19744cbeaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675541"
 ---
 # <a name="id3dxconstanttablesetfloat-method"></a>Metodo ID3DXConstantTable::SetFloat
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3332505e564846ee6b4465e057db27709958880
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e04a382b9c8d6298e3756ceef8422aa3e99b92c1ac3e3e74a3d37162faafafa5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780681"
 ---
 # <a name="jet_indexrangedeepclone-method"></a>JET_INDEXRANGE. Metodo DeepClone
 
-Restituisce una copia completa dell'oggetto.
+Restituisce una copia completa dell'oggetto .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,19 +56,19 @@ public JET_INDEXRANGE DeepClone()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXRANGE](./jet-indexrange-class.md)  
-Copia completa dell'oggetto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXRANGE](./jet-indexrange-class.md)  
+Copia completa dell'oggetto .  
 
 #### <a name="implements"></a>Implementazioni
 
-[IDeepCloneable \<T\> . DeepClone ()](./ideepcloneable-t-.deepclone-method.md)  
+[IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXRANGE](./jet-indexrange-class.md)
+[JET_INDEXRANGE classe](./jet-indexrange-class.md)
 
-[Membri JET_INDEXRANGE](./jet-indexrange-members.md)
+[JET_INDEXRANGE membri](./jet-indexrange-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

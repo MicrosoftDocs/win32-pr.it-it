@@ -1,24 +1,24 @@
 ---
-title: Attributo color2 (Shadow) (la)
-description: Attributo color2 (Shadow) (la)
+title: Attributo Color2 (Shadow)(VML)
+description: Attributo Color2 (Shadow)(VML)
 ms.assetid: 265d189a-1a11-4f57-9299-1bc1efd13595
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e735d7672457153881d384c7b625199cf4a202e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 241c7e0a620b6b5f2f54a8849779dcc905d027781fe38a5121ca74b6acbeac4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655701"
 ---
-# <a name="color2-attribute-shadowvml"></a>Attributo color2 (Shadow) (la)
+# <a name="color2-attribute-shadowvml"></a>Attributo Color2 (Shadow)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il secondo colore di un'ombreggiatura. Proprietà di lettura/scrittura. **VgColor**.
 
@@ -26,21 +26,21 @@ Definisce il secondo colore di un'ombreggiatura. Proprietà di lettura/scrittura
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* color2 = " *Expression* " >
+<v: *element* color2=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . color2 = "*Expression*"
+*element* .color2="*expression*"
 
-*espressione* = *elemento*. color2
+*expression* = *elemento*.color2
 
 **Osservazioni:**
 
-Usare un secondo colore per creare effetti speciali di ombreggiatura. Per ulteriori informazioni sui secondi colori, vedere l'attributo [Type](type-attribute--shadow--vml.md) .
+Usare un secondo colore per creare effetti ombreggiati speciali. Per altre [informazioni sui](type-attribute--shadow--vml.md) secondi colori, vedere l'attributo Type.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
@@ -59,6 +59,6 @@ L'ombreggiatura è blu per un secondo colore.
 
 
 
- 
+ 
 
- 
+ 

@@ -1,8 +1,8 @@
 ---
-description: La \_ directory Win32&\# 32; La classe WMI rappresenta una voce di directory in un computer che esegue Windows.
+description: Directory Win32 \_&\# 32; La classe WMI rappresenta una voce di directory in un computer che esegue Windows.
 ms.assetid: d61cb5ee-8e87-4604-95e6-325c9b543411
 ms.tgt_platform: multiple
-title: Classe Win32_Directory
+title: Win32_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -45,18 +45,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6185b9c0d427b7410d36f3fddfaf70c0ed8d364b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1247a965f5d447ab2e6e86737feff96b205a6a74e3cab5e3e94cade9a2f8394c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699851"
 ---
-# <a name="win32_directory-class"></a>\_Classe directory Win32
+# <a name="win32_directory-class"></a>Classe Directory Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) della **\_ directory Win32** rappresenta una voce di directory in un computer che esegue Windows. Una directory è un tipo di file che raggruppa logicamente i file di dati e fornisce informazioni sul percorso per i file raggruppati. Esempio: C: \\ Temp. **Win32 \_ La directory** non include directory di unità di rete.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Directory Win32** rappresenta una voce di directory in un computer che esegue Windows. Una directory è un tipo di file che raggruppa in modo logico i file di dati e fornisce informazioni sul percorso per i file raggruppati. Esempio: C: \\ TEMP. **Win32 \_ La** directory non include le directory delle unità di rete.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -100,33 +100,33 @@ class Win32_Directory : CIM_Directory
 
 ## <a name="members"></a>Members
 
-La classe di **\_ directory Win32** presenta questi tipi di membri:
+La **classe \_ Directory Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe di **\_ directory Win32** presenta questi metodi.
+La **classe \_ Directory Win32** include questi metodi.
 
 
 
 | Metodo                                                                                             | Descrizione                                                                                                                                                                                                                             |
 |:---------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-directory.md)     | Metodo della classe che modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto.<br/>                                                                                                                        |
+| [**Autorizzazioni changeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-directory.md)     | Metodo della classe che modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto.<br/>                                                                                                                        |
 | [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-win32-directory.md) | Metodo della classe che modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto.<br/>                                                                                                                        |
-| [**Comprimere**](compress-method-in-class-win32-directory.md)                                       | Metodo della classe che comprime il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                   |
-| [**CompressEx**](compressex-method-in-class-win32-directory.md)                                   | Metodo della classe che comprime il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                   |
-| [**Copia**](copy-method-in-class-win32-directory.md)                                               | Metodo della classe che copia il file o la directory logica specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.<br/>                                                                                        |
-| [**CopyEx**](copyex-method-in-class-win32-directory.md)                                           | Metodo della classe che copia il file o la directory logica specificata nel percorso dell'oggetto nella posizione specificata dal parametro *filename* .<br/>                                                                                   |
-| [**Delete**](delete-method-in-class-win32-directory.md)                                           | Metodo della classe che elimina il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                      |
-| [**DeleteEx**](deleteex-method-in-class-win32-directory.md)                                       | Metodo della classe che elimina il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                      |
-| [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-directory.md)           | Metodo della classe che determina se il chiamante dispone delle autorizzazioni aggregate specificate dall'argomento *delle autorizzazioni* non solo per l'oggetto file, ma sulla condivisione in cui risiede il file o la directory (se si trova in una condivisione).<br/> |
-| [**Rinominare**](rename-method-in-class-win32-directory.md)                                           | Metodo della classe che rinomina il file logico o la directory specificata nel percorso dell'oggetto.<br/>                                                                                                                                      |
+| [**Comprimere**](compress-method-in-class-win32-directory.md)                                       | Metodo della classe che comprime il file logico (o la directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                   |
+| [**CompressEx**](compressex-method-in-class-win32-directory.md)                                   | Metodo della classe che comprime il file logico (o la directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                   |
+| [**Copia**](copy-method-in-class-win32-directory.md)                                               | Metodo della classe che copia il file logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.<br/>                                                                                        |
+| [**CopyEx**](copyex-method-in-class-win32-directory.md)                                           | Metodo della classe che copia il file logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal *parametro FileName.*<br/>                                                                                   |
+| [**Elimina**](delete-method-in-class-win32-directory.md)                                           | Metodo della classe che elimina il file logico (o la directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                      |
+| [**DeleteEx**](deleteex-method-in-class-win32-directory.md)                                       | Metodo della classe che elimina il file logico (o la directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                      |
+| [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-directory.md)           | Metodo della classe che determina se il chiamante dispone delle autorizzazioni aggregate specificate dall'argomento *Permissions* non solo nell'oggetto file, ma nella condivisione in cui risiede il file o la directory (se si trova in una condivisione).<br/> |
+| [**Rinominare**](rename-method-in-class-win32-directory.md)                                           | Metodo della classe che rinomina il file logico (o la directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                      |
 | [**TakeOwnerShip**](takeownership-method-in-class-win32-directory.md)                             | Metodo della classe che ottiene la proprietà del file logico specificato nel percorso dell'oggetto.<br/>                                                                                                                                        |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-win32-directory.md)                         | Metodo della classe che ottiene la proprietà del file logico specificato nel percorso dell'oggetto.<br/>                                                                                                                                        |
-| [**Decomprimere**](uncompress-method-in-class-win32-directory.md)                                   | Metodo della classe che decomprime il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                 |
-| [**UncompressEx**](uncompressex-method-in-class-win32-directory.md)                               | Metodo della classe che decomprime il file o la directory logica specificata nel percorso dell'oggetto.<br/>                                                                                                                                 |
+| [**Decomprimere**](uncompress-method-in-class-win32-directory.md)                                   | Metodo della classe che decomprime il file logico (o directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                 |
+| [**UncompressEx**](uncompressex-method-in-class-win32-directory.md)                               | Metodo della classe che decomprime il file logico (o directory) specificato nel percorso dell'oggetto.<br/>                                                                                                                                 |
 
 
 
@@ -134,36 +134,36 @@ La classe di **\_ directory Win32** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ directory Win32** dispone di queste proprietà.
+La **classe \_ Directory Win32** ha queste proprietà.
 
 <dl> <dt>
 
-**AccessMask**
+**Accessmask**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("diritti di accesso")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Diritti di accesso")
 </dt> </dl>
 
-Maschera di maschera che rappresenta i diritti di accesso necessari per accedere o eseguire operazioni specifiche sulla directory. Per i valori di bit, vedere [**costanti di diritti di accesso a file e directory**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants).
+Maschera di bit che rappresenta i diritti di accesso necessari per accedere o eseguire operazioni specifiche sulla directory. Per i valori di bit, vedere [**Costanti dei diritti di accesso a file e directory.**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)
 
 > [!Note]  
-> Nei volumi FAT viene invece restituito il valore di **\_ accesso completo** , che indica che non è stata impostata alcuna sicurezza per l'oggetto.
+> Nei volumi FAT viene invece restituito il valore **FULL \_ ACCESS,** che indica che per l'oggetto non è stata impostata alcuna sicurezza.
 
  
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 <dt>
 
 <span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**File \_ LETTURA \_ dati (file) o \_ Directory elenco file \_ (directory)** (1)
+<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (file) o FILE \_ LIST DIRECTORY \_ (directory)** (1)
 
 
 </dt> <dd>
@@ -174,29 +174,29 @@ Concede il diritto di leggere i dati dal file. Per una directory, questo valore 
 
 <span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**File \_ SCRITTURA di \_ dati (file) o file di \_ aggiunta \_ (directory)** (2)
+<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (file) o FILE \_ ADD FILE \_ (directory)** (2)
 
 
 </dt> <dd>
 
-Concede il diritto di scrivere i dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
+Concede il diritto di scrivere dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>
 
-<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**File \_ ACCODA \_ dati (file) o \_ Aggiungi \_ sottodirectory** (4)
+<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**FILE \_ APPEND \_ DATA (file) o FILE \_ ADD \_ SUBDIRECTORY** (4)
 
 
 </dt> <dd>
 
-Concede il diritto di accodare i dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
+Concede il diritto di aggiungere dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**File \_ Leggi \_ EA** (8)
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8)
 
 
 </dt> <dd>
@@ -207,7 +207,7 @@ Concede il diritto di leggere gli attributi estesi.
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**File \_ Scrivi \_ EA** (16)
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16)
 
 
 </dt> <dd>
@@ -218,7 +218,7 @@ Concede il diritto di scrivere attributi estesi.
 
 <span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**File \_ ESECUZIONE (file) o \_ attraversamento file (directory)** (32)
+<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**FILE \_ EXECUTE (file) o FILE \_ TRAVERSE (directory)** (32)
 
 
 </dt> <dd>
@@ -229,18 +229,18 @@ Concede il diritto di eseguire un file. Per una directory, la directory può ess
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**File \_ Elimina \_ elemento figlio (directory)** (64)
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directory)** (64)
 
 
 </dt> <dd>
 
-Concede il diritto di eliminare una directory e tutti i file in esso contenuti (elementi figlio), anche se i file sono di sola lettura.
+Concede il diritto di eliminare una directory e tutti i file in essa contenuti (relativi elementi figlio), anche se i file sono di sola lettura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**File \_ Leggi \_ attributi** (128)
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** LETTURA (128)
 
 
 </dt> <dd>
@@ -251,7 +251,7 @@ Concede il diritto di leggere gli attributi del file.
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**File \_ Scrivi \_ attributi** (256)
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** SCRITTURA (256)
 
 
 </dt> <dd>
@@ -262,18 +262,18 @@ Concede il diritto di modificare gli attributi del file.
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Elimina** (65536)
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536)
 
 
 </dt> <dd>
 
-Concede l'accesso DELETE.
+Concede l'accesso per l'eliminazione.
 
 </dd> <dt>
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leggi \_ CONTROLLO** (131072)
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072)
 
 
 </dt> <dd>
@@ -284,7 +284,7 @@ Concede l'accesso in lettura al descrittore di sicurezza e al proprietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Scrivi \_ Applicazione livello dati** (262144)
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ Applicazione livello** dati (262144)
 
 
 </dt> <dd>
@@ -295,7 +295,7 @@ Concede l'accesso in scrittura all'ACL discrezionale.
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Scrivi \_ PROPRIETARIO** (524288)
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288)
 
 
 </dt> <dd>
@@ -306,7 +306,7 @@ Assegna il proprietario della scrittura.
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**Sincronizza** (1048576)
+<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**SYNCHRONIZE** (1048576)
 
 
 </dt> <dd>
@@ -317,7 +317,7 @@ Sincronizza l'accesso e consente a un processo di attendere che un oggetto entri
 
 <span id="ACCESS_SYSTEM_SECURITY"></span><span id="access_system_security"></span>
 
-<span id="ACCESS_SYSTEM_SECURITY"></span><span id="access_system_security"></span>**Accesso \_ a \_Sicurezza del sistema** (18809343)
+<span id="ACCESS_SYSTEM_SECURITY"></span><span id="access_system_security"></span>**ACCESSO \_ SICUREZZA \_ DEL** SISTEMA (18809343)
 
 
 </dt> <dd>
@@ -331,7 +331,7 @@ Controlla la possibilità di ottenere o impostare l'elenco SACL nel descrittore 
 **Archiviazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -340,43 +340,43 @@ Tipo di accesso: sola lettura
 Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("deve essere archiviato")
 </dt> </dl>
 
-Indica se è stato impostato il bit di archiviazione nella cartella. Il bit di archiviazione viene usato dai programmi di backup per identificare i file di cui eseguire il backup. Se **true**, il file deve essere archiviato.
+Indica se il bit di archivio nella cartella è stato impostato. Il bit di archivio viene usato dai programmi di backup per identificare i file di cui eseguire il backup. Se **True,** il file deve essere archiviato.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Compressed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("compresso")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Compressed")
 </dt> </dl>
 
-Indica se la cartella è stata compressa. WMI riconosce le cartelle compresse mediante WMI o l'interfaccia utente grafica; Tuttavia, non riconosce. File ZIP compressi. Se **true**, il file è compresso.
+Indica se la cartella è stata compressa o meno. WMI riconosce le cartelle compresse usando WMI stesso o l'interfaccia utente grafica. non riconosce tuttavia i .ZIP come compressi. Se **True**, il file viene compresso.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -385,16 +385,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **CompressionMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("metodo di compressione")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Metodo di compressione")
 </dt> </dl>
 
-Algoritmo o strumento (in genere un metodo) usato per comprimere il file logico. Se non è possibile (o non si desidera) descrivere lo schema di compressione (probabilmente perché non è noto), utilizzare le parole seguenti: "Unknown" per indicare che non è noto se il file logico è compresso; "Compresso" per indicare che il file è compresso, ma lo schema di compressione non è noto o non è stato divulgato; e "non compressi" per indicare che il file logico non è compresso.
+Algoritmo o strumento (in genere un metodo) usato per comprimere il file logico. Se non è possibile (o non desiderato) descrivere lo schema di compressione ,ad esempio perché non è noto, usare le parole seguenti: "Sconosciuto" per indicare che non è noto se il file logico è compresso. "Compressed" per indicare che il file è compresso, ma il relativo schema di compressione non è noto o non viene divulgato; e "Not Compressed" per rappresentare che il file logico non è compresso.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -403,16 +403,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome classe")
+Qualificatori: [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Class Name")
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, questa proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza. Se usata con le altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -421,16 +421,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **CreationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data creazione")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data di creazione")
 </dt> </dl>
 
-Data di creazione dell'oggetto file system. Per ulteriori informazioni sull'utilizzo dei formati di data e ora WMI, vedere [attività WMI: date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
+Data di creazione file system'oggetto . Per altre informazioni sull'uso dei formati di data e ora WMI, vedere [Attività WMI: Date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -439,16 +439,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **CSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ file System CIM**](cim-filesystem.md).**CSCreationClassName**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome classe di sistema computer ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ FileSystem CIM**](cim-filesystem.md).**CSCreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Class Name")
 </dt> </dl>
 
-Nome della classe di creazione del computer di ambito.
+Nome della classe di creazione del sistema informatico di ambito.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -457,16 +457,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **CSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ file System CIM**](cim-filesystem.md).**CSName**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome sistema computer ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ FileSystem CIM**](cim-filesystem.md).**CSName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Name")
 </dt> </dl>
 
-Nome del computer in cui è archiviato l'oggetto file system.
+Nome del computer in cui è archiviato file system'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -475,7 +475,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -484,25 +484,25 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Unità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("unità")
+Qualificatori: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Drive")
 </dt> </dl>
 
-Lettera di unità dell'unità (inclusi i due punti) in cui è archiviato l'oggetto file system.
+Lettera di unità dell'unità (inclusi i due punti) in cui file system'oggetto.
 
 Esempio: "c:"
 
@@ -513,18 +513,18 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **EightDotThreeFileName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("otto punto tre nome file")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Eight Dot Three File Name")
 </dt> </dl>
 
 Nome compatibile con MS-DOS per la cartella.
 
-Esempio: "c: \\ PROGRA ~ 1"
+Esempio: "c: \\ progra~1"
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -533,34 +533,34 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Crittografata**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Encrypted")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Encrypted")
 </dt> </dl>
 
-Indica se la cartella è stata crittografata o meno. Se **true**, la cartella è crittografata.
+Indica se la cartella è stata crittografata o meno. Se **True**, la cartella viene crittografata.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**EncryptionMethod**
+**Encryptionmethod**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("metodo di crittografia")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Metodo di crittografia")
 </dt> </dl>
 
-Algoritmo o strumento utilizzato per crittografare il file logico. Se non è possibile (o non si desidera) descrivere lo schema di crittografia (ad esempio per motivi di sicurezza), utilizzare le parole seguenti: "Unknown" per indicare che non è noto se il file logico è crittografato; "Encrypted" per indicare che il file è crittografato, ma lo schema di crittografia non è noto o non è stato divulgato; e "non crittografato" per indicare che il file logico non è crittografato.
+Algoritmo o strumento usato per crittografare il file logico. Se non è possibile (o non desiderato) descrivere lo schema di crittografia (ad esempio per motivi di sicurezza), usare le parole seguenti: "Sconosciuto" per indicare che non è noto se il file logico è crittografato; "Encrypted" per indicare che il file è crittografato, ma il relativo schema di crittografia non è noto o non viene divulgato; e "Not Encrypted" per rappresentare che il file logico non è crittografato.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -569,18 +569,18 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Estensione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("estensione di file")
+Qualificatori: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Estensione file")
 </dt> </dl>
 
-Estensione del nome file per l'oggetto file system, escluso il punto (.) che separa l'estensione dal nome del file.
+Estensione di file per l'file system, senza includere il punto (.) che separa l'estensione dal nome file.
 
-Esempi: "txt", "MOF", "mdb"
+Esempi: "txt", "mof", "mdb"
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -589,58 +589,58 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **FileName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome file")
+Qualificatori: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome file")
 </dt> </dl>
 
 Nome file (senza il punto o l'estensione) del file.
 
-Esempio: "Autoexec"
+Esempio: "autoexec"
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**FileSize**
+**Dimensione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("size"), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Size"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Dimensioni dell'oggetto file system, in byte. Sebbene le cartelle dispongano di una proprietà **Filesize** , viene sempre restituito il valore 0. Per determinare le dimensioni di una cartella, utilizzare FileSystemObject o sommare le dimensioni di tutti i file archiviati nella cartella.
+Dimensioni dell'file system, in byte. Anche se le cartelle **possiedono una proprietà FileSize,** viene sempre restituito il valore 0. Per determinare le dimensioni di una cartella, usare FileSystemObject o sommare le dimensioni di tutti i file archiviati nella cartella.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**FileType**
+**Filetype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo di file")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo di file")
 </dt> </dl>
 
-Tipo di file (indicato dalla proprietà **Extension** ).
+Tipo di file (indicato dalla **proprietà Extension).**
 
-Ad esempio, è probabile che un file con estensione mdb abbia il tipo di file applicazione Microsoft Access. È probabile che un file ASP includa il documento HTML di tipo file. Le cartelle vengono in genere segnalate semplicemente come cartella.
+Ad esempio, è probabile che un file con estensione mdb abbia il tipo di file Applicazione Microsoft Access. È probabile che un file asp abbia il tipo di file DOCUMENTO HTML. Le cartelle vengono in genere segnalate semplicemente come Cartella.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -649,16 +649,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **FSCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ file System CIM**](cim-filesystem.md).**CreationClassName**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome classe file System ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ FileSystem CIM**](cim-filesystem.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File System Class Name")
 </dt> </dl>
 
-Classe del file system.
+Classe dell'file system.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -667,13 +667,13 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **FSName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ file System CIM**](cim-filesystem.md).**Nome**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome file System ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ FileSystem CIM**](cim-filesystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File System Name")
 </dt> </dl>
 
 Tipo di file system (NTFS, FAT, FAT32) installato nell'unità in cui si trova il file o la cartella.
@@ -685,16 +685,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Hidden**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("hidden")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Hidden")
 </dt> </dl>
 
-Indica se l'oggetto file system è nascosto. Se **true**, il file è nascosto.
+Indica se l'file system è nascosto. Se **True,** il file è nascosto.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -703,54 +703,54 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InUseCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("conteggio aperto file corrente")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Current File Open Count")
 </dt> </dl>
 
-Numero di "file aperti" attualmente attivi sul file.
+Numero di "file aperto" attualmente attivi sul file.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **LastAccessed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("ultimo accesso")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Ultimo accesso")
 </dt> </dl>
 
-Data dell'ultimo accesso al file. Per ulteriori informazioni sull'utilizzo dei formati di data e ora WMI, vedere [attività WMI: date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
+Data dell'ultimo accesso al file. Per altre informazioni sull'uso dei formati di data e ora WMI, vedere [Attività WMI: Date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -759,7 +759,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **LastModified**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -768,7 +768,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Ultima modifica")
 </dt> </dl>
 
-Data dell'Ultima modifica del file. Per ulteriori informazioni sull'utilizzo dei formati di data e ora WMI, vedere [attività WMI: date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
+Data dell'ultima modifica del file. Per altre informazioni sull'uso dei formati di data e ora WMI, vedere [Attività WMI: Date e ore](/windows/desktop/WmiSdk/wmi-tasks--dates-and-times).
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -777,7 +777,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -786,7 +786,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-La proprietà Name è una stringa che rappresenta il nome ereditato che funge da chiave di un'istanza di file logico all'interno di una file system. È necessario specificare i nomi dei percorsi completi. Esempio: C: \\ \\ sistema Windows \\win.ini
+La proprietà Name è una stringa che rappresenta il nome ereditato che funge da chiave di un'istanza di file logico all'interno di un file system. È necessario che siano specificati nomi di percorso completi. Esempio: C: \\ Windows \\ sistema \\win.ini
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -795,18 +795,18 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Percorso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Path")
+Qualificatori: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Path")
 </dt> </dl>
 
 Percorso del file. Il percorso include le barre rovesciate iniziali e finali, ma non la lettera di unità o il nome della cartella.
 
-Per la cartella c: \\ Windows \\ system32 \\ WBEM, il percorso è \\ Windows \\ system32 \\ . Per la cartella c: \\ Scripts, il percorso è \\ .
+Per la cartella c: \\ windows \\ system32 \\ wbem, il percorso è \\ windows \\ system32 \\ . Per la cartella c: \\ scripts, il percorso è \\ .
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -815,16 +815,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Leggibile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("leggibile")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Leggibile")
 </dt> </dl>
 
-Indica se è possibile leggere gli elementi nella cartella. Se **true**, il file può essere letto.
+Indica se è possibile leggere gli elementi nella cartella. Se **True,** il file può essere letto.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -833,18 +833,18 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto.
+Stringa che indica lo stato corrente dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -859,77 +859,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -939,66 +939,66 @@ Ridotto **("danneggiato"** )
 **Sistema**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("file di sistema")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File di sistema")
 </dt> </dl>
 
-Indica se l'oggetto è un file di sistema. Se **true**, il file è un file di sistema
+Indica se l'oggetto è un file di sistema. Se **True**, il file è un file di sistema
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **Scrivibile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("scrivibile")
+Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Scrivibile")
 </dt> </dl>
 
-Se **true**, il file può essere scritto.
+Se **True,** il file può essere scritto.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalFile**](cim-logicalfile.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ directory Win32** è derivata dalla [**\_ directory CIM**](cim-directory.md).
+La **classe \_ Directory Win32** è derivata dalla [**directory CIM \_**](cim-directory.md).
 
 **Overview**
 
-Le cartelle sono file system oggetti progettati per contenere altri oggetti file system. Ciò non significa che tutte le cartelle sono comunque simili. Le cartelle possono invece variare in modo significativo. Alcune cartelle sono cartelle del sistema operativo, che in genere non devono essere modificate da uno script. Alcune cartelle sono di sola lettura, il che significa che gli utenti possono accedere al contenuto della cartella, ma non possono aggiungere, eliminare o modificare tali contenuti. Alcune cartelle vengono compresse per l'archiviazione ottimale, mentre altre sono nascoste e non sono visibili agli utenti.
+Le cartelle file system oggetti progettati per contenere altri file system oggetti . Ciò non significa tuttavia che tutte le cartelle siano uguali. Le cartelle possono invece variare notevolmente. Alcune cartelle sono cartelle del sistema operativo, che in genere non devono essere modificate da uno script. Alcune cartelle sono di sola lettura, il che significa che gli utenti possono accedere al contenuto di tale cartella, ma non possono aggiungere, eliminare o modificare tali contenuti. Alcune cartelle vengono compresse per un'archiviazione ottimale, mentre altre sono nascoste e non visibili agli utenti.
 
-WMI utilizza la **classe \_ directory Win32** per gestire le cartelle. In modo significativo, le proprietà e i metodi disponibili in questa classe sono identici alle proprietà e ai metodi disponibili nella classe [**CIM \_ DataFile**](cim-datafile.md) , la classe usata per gestire i file. Ciò significa che, dopo aver appreso come gestire le cartelle tramite WMI, si saprà anche come gestire i file, senza alcuna attività aggiuntiva.
+WMI usa la **classe \_ Directory Win32** per gestire le cartelle. In modo significativo, le proprietà e i metodi disponibili in questa classe sono identici alle proprietà e ai metodi disponibili nella classe [**\_ CiM DataFile,**](cim-datafile.md) la classe usata per gestire i file. Ciò significa che, dopo aver appreso come gestire le cartelle tramite WMI, sarà anche possibile gestire i file senza alcuna operazione aggiuntiva.
 
-La classe di associazione della [**\_ sottodirectory Win32**](win32-subdirectory.md) viene utilizzata anche per gestire file e cartelle. La classe della **\_ sottodirectory Win32** mette in correlazione una cartella e le relative sottocartelle immediate. Ad esempio, nella struttura di cartelle C: \\ log Scripts \\ , logs è una sottocartella di script e Scripts è una sottocartella della cartella radice c: \\ . Tuttavia, i log non vengono considerati sottocartelle di C: \\ .
+La [**classe di associazione \_ Sottodirectory Win32**](win32-subdirectory.md) viene usata anche per gestire file e cartelle. La **classe Win32 \_ Subdirectory** mette in relazione una cartella e le relative sottocartelle immediate. Ad esempio, nella struttura di cartelle C: Scripts Logs, Logs è una sottocartella di Scripts e Scripts è una sottocartella della \\ \\ cartella radice C: \\ . Tuttavia, Logs non è considerata una sottocartella di C: \\ .
 
-È possibile recuperare le proprietà di qualsiasi cartella nella file system usando la classe **di \_ directory Win32** . Le proprietà disponibili con questa classe sono illustrate nella tabella 11,1. Per recuperare le proprietà di una singola cartella, creare una query WQL (Windows Query Language) per la classe di **\_ directory Win32** , assicurandosi di includere il nome della cartella. Ad esempio, questa query viene associata alla cartella D: \\ Archive:
+È possibile recuperare le proprietà di qualsiasi cartella nel file system usando la **classe \_ Directory Win32.** Le proprietà disponibili con questa classe sono illustrate nella tabella 11.1. Per recuperare le proprietà per una singola cartella, costruire una query WQL (Windows Query Language) per la classe **\_ Directory Win32,** assicurando di includere il nome della cartella. Ad esempio, questa query viene associata alla cartella D: \\ Archive:
 
 `        Copy     "SELECT * FROM Win32_Directory WHERE Name = 'D:\\Archive'"`
 
-Quando si specifica un nome di file o cartella in una query WQL, assicurarsi di utilizzare due barre rovesciate ( \\ \\ ) per separare i componenti del percorso.
+Quando si specifica il nome di un file o di una cartella in una query WQL, assicurarsi di usare due barre rovesciate ( ) per separare \\ \\ i componenti del percorso.
 
-Se si vuole limitare il recupero dei dati a una singola unità disco, includere una clausola WHERE che specifichi la lettera di unità. Ad esempio, questa query restituisce un elenco di tutte le cartelle nell'unità C:
+Se si desidera limitare il recupero dei dati a una singola unità disco, includere una clausola Where che specifica la lettera di unità. Ad esempio, questa query restituisce un elenco di tutte le cartelle nell'unità C:
 
 `"SELECT * FROM Win32_Directory WHERE Drive = 'C:'"`
 
-Se è necessario enumerare tutte le cartelle in un computer, tenere presente che questa query può richiedere un tempo prolungato per il completamento.
+Se è necessario enumerare tutte le cartelle in un computer, tenere presente che il completamento di questa query può richiedere molto tempo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio VBScript seguente vengono recuperate le proprietà per la cartella C: \\ Scripts.
+L'esempio VBScript seguente recupera le proprietà per la cartella C: \\ Scripts.
 
 
 ```VB
@@ -1027,7 +1027,7 @@ Next
 
 
 
-Nell'esempio VBScript seguente viene restituito un elenco di tutte le cartelle nascoste in un computer.
+Nell'esempio vbscript seguente viene restituito un elenco di tutte le cartelle nascoste in un computer.
 
 
 ```VB
@@ -1050,7 +1050,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1059,7 +1059,7 @@ Next
 
 <dl> <dt>
 
-[**\_Directory CIM**](cim-directory.md)
+[**CIM \_ Directory**](cim-directory.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

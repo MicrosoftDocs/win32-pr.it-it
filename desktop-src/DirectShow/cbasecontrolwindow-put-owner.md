@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put Owner imposta la finestra padre della finestra video; la finestra padre quindi invia alcuni messaggi alla finestra del video.
+description: Il metodo put Owner imposta la finestra padre della finestra video. La finestra padre inoltra quindi \_ determinati messaggi alla finestra video.
 ms.assetid: 8ed85cb0-47be-40c1-947a-dd9f7850d867
-title: Metodo CBaseControlWindow.put_Owner (Ctlutil. h)
+title: CBaseControlWindow.put_Owner metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16817d1c3f0fbdf756f6c054b875b8507fd1172a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f33e0c26506faea93afc11f51aaba13007c443fc011839efafce436fe9f2b2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635893"
 ---
-# <a name="cbasecontrolwindowput_owner-method"></a>Metodo CBaseControlWindow. put \_ Owner
+# <a name="cbasecontrolwindowput_owner-method"></a>Metodo CBaseControlWindow.put \_ Owner
 
-Il `put_Owner` metodo imposta la finestra padre della finestra video; la finestra padre quindi invia alcuni messaggi alla finestra del video.
+Il metodo imposta la finestra padre della finestra video. La finestra padre inoltra quindi `put_Owner` determinati messaggi alla finestra video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,9 +55,9 @@ Restituisce NOERROR.
 
 ## <a name="remarks"></a>Commenti
 
-Internamente, questo metodo chiama la funzione **padre** di Microsoft Win32 per impostare il nuovo proprietario e imposta lo stile della finestra padre su WS \_ child. La finestra padre inoltrerà quindi determinati set di messaggi (in particolare, i messaggi del mouse e della tastiera) alla finestra del video.
+Internamente, questo metodo chiama la funzione **SetParent** di Microsoft Win32 per impostare il nuovo proprietario e imposta lo stile della finestra padre su WS \_ CHILD. La finestra padre inoltra quindi determinati set di messaggi (in particolare, i messaggi del mouse e della tastiera) alla finestra video.
 
-Dopo aver impostato il proprietario della finestra video, è necessario impostare il proprietario su **null** e lo stile della finestra del proprietario su WS \_ OVERLAPPED e WS \_ CLIPCHILDREN prima di rilasciare il grafico del filtro. Quando si imposta il proprietario su **null**, questo metodo disattiva il bit figlio WS della finestra padre \_ . Se il proprietario non viene impostato su **null**, la finestra padre continuerà a passare i messaggi alla finestra video ed è probabile che si verifichino errori durante la chiusura dell'applicazione.
+Dopo aver impostato il proprietario della finestra video, è necessario impostare il proprietario su **NULL** e lo stile della finestra del proprietario su WS OVERLAPPED e WS CLIPCHILDREN prima di rilasciare il grafico \_ \_ dei filtri. Quando si imposta il proprietario su **NULL,** questo metodo disattiva il bit WS CHILD della finestra \_ padre. Se non si imposta il proprietario su **NULL,** la finestra padre continuerà a passare messaggi alla finestra video e probabilmente si verificheranno errori alla chiusura dell'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Dopo aver impostato il proprietario della finestra video, è necessario impostar
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

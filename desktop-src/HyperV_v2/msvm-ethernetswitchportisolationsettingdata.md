@@ -1,7 +1,7 @@
 ---
-description: Rappresenta i dati dell'impostazione di isolamento.
+description: Rappresenta i dati dell'impostazione isolation.
 ms.assetid: f6bf5fcf-61c4-4e69-8ba0-fff4c4873368
-title: Classe Msvm_EthernetSwitchPortIsolationSettingData
+title: Msvm_EthernetSwitchPortIsolationSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3d7761b090cfd3bf2ae6aaaa92e9c5d09d55eae6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33ddf01fb7df5787fc35c073472987aa9a170e62086cd6c127f874cb2360b38d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681531"
 ---
-# <a name="msvm_ethernetswitchportisolationsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortIsolationSettingData
+# <a name="msvm_ethernetswitchportisolationsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortIsolationSettingData
 
-Rappresenta i dati dell'impostazione di isolamento.
+Rappresenta i dati dell'impostazione isolation.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -45,26 +45,26 @@ class Msvm_EthernetSwitchPortIsolationSettingData : Msvm_EthernetSwitchPortFeatu
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortIsolationSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortIsolationSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortIsolationSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortIsolationSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **AllowUntaggedTraffic**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (2), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (2), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Indica se la porta è autorizzata a inviare/ricevere traffico senza tag.
@@ -74,16 +74,16 @@ Indica se la porta è autorizzata a inviare/ricevere traffico senza tag.
 **DefaultIsolationId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (3), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (3), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Il valore predefinito di VirtualSubnetId o VLAN che verrà impostato su tutto il traffico di invio/ricezione se **AllowedUntaggedTraffic** è **true**.
+Valore virtualSubnetId o VLAN predefinito che verrà impostato su tutto il traffico di invio/ricezione se **AllowedUntaggedTraffic** è **true.**
 
 </dd> <dt>
 
@@ -93,29 +93,29 @@ Il valore predefinito di VirtualSubnetId o VLAN che verrà impostato su tutto il
 Tipo di dati: **Boolean**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (4), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (4), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Se **true**, lo stack di rete nella macchina virtuale sarà in grado di accedere alla configurazione di isolamento. Il valore predefinito è **false**.
+Se **true,** lo stack di rete nella macchina virtuale sarà in grado di accedere alla configurazione dell'isolamento. Il valore predefinito è **false**.
 
 </dd> <dt>
 
 **IsolationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: **WmiDataId** (1), [**versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificatori: **WmiDataId** (1), [**Versione**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisione**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Indica se la porta usa **VLAN** o **VirtualSubnetId** per l'isolamento. **NativeVirtualSubnetId** viene usato per le reti basate su VirtualSubnetId WNV.
+Indica se la porta usa **VLAN o** **VirtualSubnetId per** l'isolamento. **NativeVirtualSubnetId** viene usato per le reti WNV basate su VirtualSubnetId.
 
 <dt>
 
@@ -156,9 +156,9 @@ Indica se la porta usa **VLAN** o **VirtualSubnetId** per l'isolamento. **Native
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -167,7 +167,7 @@ Indica se la porta usa **VLAN** o **VirtualSubnetId** per l'isolamento. **Native
 
 <dl> <dt>
 
-[**\_EthernetSwitchPortFeatureSettingData MSVM**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

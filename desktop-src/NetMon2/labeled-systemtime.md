@@ -1,7 +1,7 @@
 ---
-description: La struttura con etichetta \_ SYSTEMTIME definisce un'etichetta che viene visualizzata quando viene rilevato un valore specifico della Proprietà SYSTEMTIME.
+description: La struttura LABELED \_ SYSTEMTIME definisce un'etichetta che viene visualizzata quando viene rilevato un valore della proprietà SYSTEMTIME specifico.
 ms.assetid: 307b490a-af8e-4f2a-a45a-33a84fcb4d5c
-title: Struttura LABELED_SYSTEMTIME (Netmon. h)
+title: LABELED_SYSTEMTIME struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 4484d5ec55f700410eb80d11d2249cceceef43ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94ce2a2e0b86c24ea6c16627fd0b866e18aaf48f3c1f0b318a601809e1ee03dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742711"
 ---
-# <a name="labeled_systemtime-structure"></a>Struttura con etichetta \_ SYSTEMTIME
+# <a name="labeled_systemtime-structure"></a>Struttura \_ SYSTEMTIME ETICHETTATA
 
-La struttura con **etichetta \_ SYSTEMTIME** definisce un'etichetta che viene visualizzata quando viene rilevato un valore specifico della Proprietà SYSTEMTIME.
+La **struttura LABELED \_ SYSTEMTIME** definisce un'etichetta che viene visualizzata quando viene rilevato un valore della proprietà SYSTEMTIME specifico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ typedef struct _LABELED_SYSTEMTIME {
 **Valore**
 </dt> <dd>
 
-Valore di SYSTEMTIME di una proprietà che si desidera rilevare.
+Valore SYSTEMTIME di una proprietà che si desidera rilevare.
 
 </dd> <dt>
 
 **Etichetta**
 </dt> <dd>
 
-Descrizione testuale o etichetta visualizzata quando viene rilevato il valore SYSTEMTIME specificato nel membro **value** .
+Descrizione testuale o etichetta visualizzata quando viene rilevato il valore SYSTEMTIME specificato nel **membro** Value.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il membro **lpLabeledSystemTimeTable** della struttura del [set](set.md) punta a una matrice di strutture **set** che definiscono una o più coppie di valori di etichetta. Le coppie vengono utilizzate quando si desidera visualizzare un'etichetta al posto di un valore LARGEINT specifico trovato nel pacchetto del protocollo.
+Il **membro lpLabeledSystemTimeTable** della struttura [SET](set.md) punta a una matrice di strutture **SET** che definiscono una o più coppie di valori di etichetta. Le coppie vengono usate quando si desidera visualizzare un'etichetta al posto di un valore LARGEINT specifico trovato nel pacchetto del protocollo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Il membro **lpLabeledSystemTimeTable** della struttura del [set](set.md) punta a
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

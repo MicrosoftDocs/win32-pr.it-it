@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentCannotIndexException'
+description: Altre informazioni sul costruttore EsentCannotIndexException
 title: Costruttore EsentCannotIndexException
 TOCTitle: 'EsentCannotIndexException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotIndexException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 84f56c0c6b1a7c5cd911fab4182c7465e2d746d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91cfc6fdbb5665351ced0051ce23487a72fa2c3c1423416f33594b0dacb0d89d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737121"
 ---
 # <a name="esentcannotindexexception-constructor"></a>Costruttore EsentCannotIndexException
 
 Inizializza una nuova istanza della classe EsentCannotIndexException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentCannotIndexException()
 
 [Membri di EsentCannotIndexException](./esentcannotindexexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

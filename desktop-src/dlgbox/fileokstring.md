@@ -1,6 +1,6 @@
 ---
 title: Messaggio FILEOKSTRING (Commdlg.h)
-description: Una finestra di dialogo Apri o Salva con nome invia il messaggio registrato fileOKSTRING alla procedura hook OFNHookProc, quando l'utente specifica un nome di file e fa clic sul pulsante OK.
+description: Una finestra di dialogo Apri o Salva con nome invia il messaggio registrato FILEOKSTRING alla procedura hook OFNHookProc, quando l'utente specifica un nome di file e fa clic sul pulsante OK.
 ms.assetid: 32bf3cc7-76a2-4b78-81d7-682b088c4e14
 keywords:
 - Finestre di dialogo del messaggio FILEOKSTRING
@@ -16,18 +16,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24dd07faecc66bc50c408eab36bcbd8c93c460ef
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 942fcf03d97c7d787231e896199bce0d4c53cf78d16f6b25741e604238bf06b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741761"
 ---
 # <a name="fileokstring-message"></a>Messaggio FILEOKSTRING
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, **le**  finestre di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo Elemento [comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Una finestra  **di** dialogo Apri o Salva con nome invia il messaggio registrato **fileOKSTRING** alla procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)quando l'utente specifica un nome di file e fa clic sul **pulsante OK.** La procedura hook può accettare il nome del file e consentire la chiusura della finestra di dialogo oppure rifiutare il nome del file e forzare la finestra di dialogo a rimanere aperta.
+Una finestra  **di** dialogo Apri o Salva con nome invia il messaggio **registrato FILEOKSTRING** alla routine hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)quando l'utente specifica un nome di file e fa clic sul **pulsante OK.** La procedura hook può accettare il nome del file e consentire la chiusura della finestra di dialogo oppure rifiutare il nome del file e forzare la finestra di dialogo a rimanere aperta.
 
 
 ```C++
@@ -56,7 +56,7 @@ Puntatore a una [**struttura OPENFILENAME.**](/windows/win32/api/commdlg/ns-comm
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la routine hook restituisce zero, la **finestra di** dialogo Apri o **Salva** con nome accetta il nome file specificato e viene chiusa.
+Se la routine hook restituisce  zero, la **finestra di** dialogo Apri o Salva con nome accetta il nome file specificato e viene chiusa.
 
 Se la routine hook restituisce un  valore  diverso da zero, la finestra di dialogo Apri o Salva con nome rifiuta il nome file specificato e rimane aperta.
 
@@ -84,7 +84,7 @@ La routine hook deve specificare la **costante FILEOKSTRING** in una chiamata al
 **Riferimento**
 </dt> <dt>
 
-[**FILEOK della rete CDN \_**](cdn-fileok.md)
+[**\_rete CDN FILEOK**](cdn-fileok.md)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
@@ -96,6 +96,6 @@ La routine hook deve specificare la **costante FILEOKSTRING** in una chiamata al
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
 </dt> </dl>
 

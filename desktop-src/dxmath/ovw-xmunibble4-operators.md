@@ -4,16 +4,16 @@ ms.assetid: a0f959a2-b093-42e3-ab64-cc09bd3fc860
 title: Operatori XMUNIBBLE4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 964425f5f2178540b7d9480144616864dc90b619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 129022bf28c500d2a650ae77c11b6266ace747e2f781f083e3a4585eb5c5ff6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740361"
 ---
 # <a name="xmunibble4-operators"></a>Operatori XMUNIBBLE4
 
-La struttura [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) espone gli operatori seguenti.
+La [**struttura XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,8 +26,8 @@ La struttura [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxp
 
 | Metodi                                                               | Descrizione                                                                                                              |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [**operatore UInt16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmunibble4-operatoruint16_t)<br/> | Restituisce un'istanza di `uint16_t` contenente i componenti dell' `XMUNIBBLE4` istanza in un formato compresso. <br/> |
-| [**operatore =**](xmunibble4-operator-eq.md)<br/>               | Assegna i dati del componente vettore all'istanza corrente di `XMUNIBBLE4` . <br/>                                       |
+| [**operator uint16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmunibble4-operatoruint16_t)<br/> | Restituisce un'istanza `uint16_t` di contenente i componenti `XMUNIBBLE4` dell'istanza in un formato di tipo packed. <br/> |
+| [**operator =**](xmunibble4-operator-eq.md)<br/>               | Assegna i dati dei componenti vettoriali all'istanza corrente di `XMUNIBBLE4` . <br/>                                       |
 
 
 

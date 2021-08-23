@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Site-Name-ex
-description: L'attributo MSMQ-Site-Name-ex contiene informazioni in modalità mista MSMQ.
+title: Attributo MSMQ-Site-Name-Ex
+description: L'attributo MSMQ-Site-Name-Ex contiene informazioni in modalità mista MSMQ.
 ms.assetid: 83aeaf45-5e15-45c2-9d25-a2b413c61658
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Site-Name-schema AD attributo ex
+- Schema AD dell'attributo MSMQ-Site-Name-Ex
 - Schema AD dell'attributo mSMQSiteNameEx
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace461d45356b18558e04c3b1920656f6faa5ed9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8838e6b9a77a2060a4520b45d02c1e9b1fa302ddfb3b51bffbd01691a2101e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762011"
 ---
-# <a name="msmq-site-name-ex-attribute"></a>Attributo MSMQ-Site-Name-ex
+# <a name="msmq-site-name-ex-attribute"></a>Attributo MSMQ-Site-Name-Ex
 
-L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
+**L'attributo MSMQ-Site-Name-Ex** contiene informazioni in modalità mista MSMQ.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MSMQ-Site-Name-ex                           |
-| LDAP-Display-Name | mSMQSiteNameEx                              |
+| CN                | MSMQ-Site-Name-Ex                           |
+| Ldap-Display-Name | mSMQSiteNameEx                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1416                     |
-| System-ID-GUID    | 422144fa-c17f-4649-94d6-9731ed2784ed        |
+| System-Id-Guid    | 422144fa-c17f-4649-94d6-9731ed2784ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MSMQ-Site-Name-ex** contiene informazioni in modalità mista MSMQ.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura dell'intestazione non elaborata WIA \_ definisce un'immagine nel formato dati non elaborati di un dispositivo e consente alle applicazioni di utilizzare il formato non elaborato nei trasferimenti WIA (Windows Image Acquisition).
+description: La struttura WIA RAW HEADER definisce un'immagine nel formato dati RAW di un dispositivo e consente alle applicazioni di usare il formato RAW nei trasferimenti \_ \_ WIA (Windows Image Acquisition).
 ms.assetid: c7b50816-d596-4c62-a00e-cd8d6e303e42
-title: Struttura WIA_RAW_HEADER (Wiadef. h)
+title: WIA_RAW_HEADER struttura (Wiadef.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadef.h
-ms.openlocfilehash: 8da33f0b257168712f1b16fb7f940df5db862d3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b4e89f47737788fa9ebf238f06f6420eafbc31d7b27ab7933372d0716fb6588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812951"
 ---
-# <a name="wia_raw_header-structure"></a>\_Struttura di intestazione non elaborata WIA \_
+# <a name="wia_raw_header-structure"></a>Struttura WIA \_ RAW \_ HEADER
 
-La struttura dell' **\_ \_ intestazione non elaborata WIA** definisce un'immagine nel formato dati non elaborati di un dispositivo e consente alle applicazioni di utilizzare il formato non elaborato nei trasferimenti WIA (Windows Image Acquisition).
+La **struttura WIA \_ RAW \_ HEADER** definisce un'immagine nel formato dati RAW di un dispositivo e consente alle applicazioni di usare il formato RAW nei trasferimenti WIA (Windows Image Acquisition).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,18 +64,18 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Nome del formato. Deve essere il valore letterale ' WRAW ' (caratteri ASCII a byte singolo).
+Nome del formato. Deve essere il valore letterale "WRAW" (quattro caratteri ASCII a byte singolo).
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
 Tipo: **DWORD**
 
 </dd> <dd>
 
-Versione del formato non elaborato. Usare sempre 0x00010000.
+Versione del formato RAW. Usare sempre 0x00010000.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Byte totali validi nell'intestazione.
+Totale dei byte validi nell'intestazione.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Risoluzione verticale espressa in punti per pollice.
 
 </dd> <dt>
 
-**Stampa**
+**XExtent**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -141,7 +141,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Numero di byte in una riga di un'immagine non compressa. Utilizzare 0 quando i dati vengono compressi per segnalare che il numero di byte per riga è sconosciuto.
+Numero di byte in una riga di un'immagine non compressa. Usare 0 quando i dati vengono compressi per segnalare che il numero di byte per riga è sconosciuto.
 
 </dd> <dt>
 
@@ -174,14 +174,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-\_Tipo di dati IPA WIA \_ dell'immagine. Poiché \_ il formato dell'IPA WIA \_ è impostato su WiaImgFmt \_ RAW, si tratta di un elenco di valori consentiti da cui l'applicazione sceglie.
+DATATYPE IPA WIA \_ \_ dell'immagine. Poiché WIA IPA FORMAT è impostato su \_ WiaImgFmt RAW, si tratta di un elenco di valori consentiti da cui \_ \_ l'applicazione sceglie.
 
 </dd> <dt>
 
 **BitsPerChannel \[ 8\]**
 </dt> <dd>
 
-Tipo: **byte**
+Tipo: **BYTE**
 
 </dd> <dd>
 
@@ -196,7 +196,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Un valore di compressione del pacchetto WIA che \_ \_ specifica il tipo di compressione usato, se presente.
+Valore WIA IPA COMPRESSION che specifica il tipo di compressione \_ \_ usato, se presente.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-\_ \_ Valore interp della fotometria IPA WIA che \_ specifica l'interpretazione fotometrica dell'immagine.
+Valore WIA \_ IPA \_ PHOTOMETRIC \_ INTERP che specifica l'interpretazione fotometrica dell'immagine.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valore che rappresenta l'ordine di riga dell'immagine. Si tratta sempre dell' \_ ordine della riga WIA \_ \_ dall'alto \_ verso il \_ basso o \_ \_ \_ dal basso \_ verso l'alto nell'ordine della riga \_ .
+Valore che rappresenta l'ordine delle righe dell'immagine. Si tratta sempre di WIA \_ LINE ORDER TOP TO BOTTOM o \_ \_ \_ \_ WIA LINE ORDER BOTTOM \_ TO \_ \_ \_ \_ TOP.
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Posizione dei dati dell'immagine non elaborata in byte, a partire dalla posizione in cui termina l'intestazione o dalla posizione in cui termina la tavolozza.
+Posizione in byte dei dati di immagine non elaborati, a partire dalla posizione in cui termina l'intestazione o dalla posizione in cui termina il riquadro.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensione, in byte, dei dati dell'immagine non elaborata.
+Dimensione, in byte, dei dati dell'immagine non elaborati.
 
 </dd> <dt>
 
@@ -251,7 +251,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Posizione della tavolozza in byte, a partire dalla posizione in cui termina l'intestazione o dalla posizione in cui terminano i dati. (Questo valore è 0, se non è presente alcuna tavolozza).
+Posizione del riquadro in byte, a partire dalla posizione in cui termina l'intestazione o dalla posizione in cui terminano i dati. Questo valore è 0, se non è presente alcun riquadro.
 
 </dd> <dt>
 
@@ -262,19 +262,19 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensione, in byte, della tabella della tavolozza. (Questo è 0, se non è presente alcuna tavolozza).
+Dimensioni, in byte, della tabella del riquadro. È 0, se non è presente alcun riquadro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Poiché non si tratta di un formato di file, utilizzare una stringa vuota per \_ la \_ proprietà dell'estensione del file IPA WIA \_ .
+Poiché non si tratta di un formato di file, usare una stringa vuota per la proprietà \_ WIA IPA \_ FILE \_ EXTENSION.
 
-La tavolozza e i dati possono essere in qualsiasi ordine.
+La tavolozza e i dati possono essere in entrambi gli ordini.
 
-**RawDataSize** non include l'intestazione o la tavolozza. Utilizzare questo campo per verificare che il trasferimento dell'immagine abbia avuto esito positivo.
+**RawDataSize** non include l'intestazione o il riquadro. Usare questo campo per verificare che il trasferimento dell'immagine abbia avuto esito positivo.
 
-**PaletteSize** è byte, non il numero di voci nella tavolozza.
+**PaletteSize** è byte, non il numero di voci nel riquadro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -282,9 +282,9 @@ La tavolozza e i dati possono essere in qualsiasi ordine.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

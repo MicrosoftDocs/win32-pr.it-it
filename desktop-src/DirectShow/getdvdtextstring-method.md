@@ -4,12 +4,12 @@ ms.assetid: 2b8cea1e-b0b7-4ef7-90a5-aef2978e8098
 title: Metodo GetDVDTextString
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00622519bb549768d60aba6649e926c2c155fab1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ef5fccf7278bac9d060af9e3492af7b056ac178aede625791056cca51cb09709
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812540"
 ---
 # <a name="getdvdtextstring-method"></a>Metodo GetDVDTextString
 
@@ -31,20 +31,20 @@ Il `GetDVDTextString` metodo recupera la stringa di testo specificata.
 <span id="iLangIndex"></span><span id="ilangindex"></span><span id="ILANGINDEX"></span>*iLangIndex*
 </dt> <dd>
 
-Specifica l'indice della lingua come intero.
+Specifica l'indice della lingua come integer.
 
 </dd> <dt>
 
 <span id="iStringIndex"></span><span id="istringindex"></span><span id="ISTRINGINDEX"></span>*iStringIndex*
 </dt> <dd>
 
-Specifica il numero di indice della stringa di testo come intero.
+Specifica il numero di indice della stringa di testo come integer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la stringa specificata da *iStringIndex*.
+Restituisce la stringa specificata da *iStringIndex.*
 
 ## <a name="see-also"></a>Vedi anche
 

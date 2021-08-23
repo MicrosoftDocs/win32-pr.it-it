@@ -1,7 +1,7 @@
 ---
-description: Evento di modifica del catalogo Winsock per un'operazione di disabilitazione di un provider di servizi a più livelli (LSP).
+description: Evento di modifica del catalogo Winsock per un'operazione di disabilitazione del provider di servizi a più livelli (LSP).
 ms.assetid: 6BCEECB1-92AD-47D8-952B-D0FD2A78EB45
-title: Evento WINSOCK_WS2HELP_LSP_DISABLE
+title: WINSOCK_WS2HELP_LSP_DISABLE evento
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,21 +12,21 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6d785bfbd96d35717be7bbf76dab8f28f41c9fc6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 578479710856e149760202699be13d4b30b50709f6ea9b389e055793a8b0ca94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733131"
 ---
-# <a name="winsock_ws2help_lsp_disable-event"></a>\_Evento di \_ disabilitazione LSP ws2help di Winsock \_
+# <a name="winsock_ws2help_lsp_disable-event"></a>Evento DISABLE di WINSOCK \_ WS2HELP \_ LSP \_
 
 > [!Note]  
-> I provider di servizi sovrapposti sono deprecati. A partire da Windows 8 e Windows Server 2012, usare la [piattaforma filtro Windows](../fwp/windows-filtering-platform-start-page.md).
+> I provider di servizi a più livelli sono deprecati. A partire da Windows 8 e Windows Server 2012, usare [Windows Filtering Platform](../fwp/windows-filtering-platform-start-page.md).
 
  
 
-L'evento di **\_ \_ \_ disabilitazione LSP ws2help di Winsock** è un evento di modifica del catalogo Winsock per un'operazione di disabilitazione di un provider di servizi a più livelli.
+**L'evento DISABLE di WINSOCK \_ WS2HELP \_ LSP \_** è un evento di modifica del catalogo Winsock per un'operazione di disabilitazione del provider di servizi a più livelli (LSP).
 
 
 ```C++
@@ -42,43 +42,43 @@ const EVENT_DESCRIPTOR WINSOCK_WS2HELP_LSP_DISABLE = {0x3, 0x0, 0x10, 0x0, 0x0, 
 *Nome LSP* 
 </dt> <dd>
 
-Nome dello LSP ottenuto dal membro **szProtocol** della struttura di [**\_ informazioni di WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'oggetto LSP disabilitato.
+Nome dell'LSP ottenuto dal membro **szProtocol** della struttura [**WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'LSP disabilitato.
 
 </dd> <dt>
 
 *Catalogo* 
 </dt> <dd>
 
-Il catalogo Winsock (32 bit o 64 bit) in cui lo LSP viene disabilitato. Si tratta di un valore intero che può essere 32 o 64.
+Catalogo Winsock (a 32 o 64 bit) in cui l'LSP viene disabilitato. Si tratta di un valore intero che è 32 o 64.
 
 </dd> <dt>
 
 *Programma di installazione* 
 </dt> <dd>
 
-Il nome file del modulo dell'applicazione che effettua la chiamata di disabilitazione di LSP.
+Nome file del modulo dell'applicazione che effettua la chiamata di disabilitazione LSP.
 
 </dd> <dt>
 
 *GUID* 
 </dt> <dd>
 
-Valore GUID del provider di trasporto Winsock che verrà disabilitato da LSP.
+Valore GUID del provider di trasporto Winsock disabilitato dal provider di servizi di configurazione locale.
 
 </dd> <dt>
 
 *Categoria* 
 </dt> <dd>
 
-Membro **dwCatalogEntryId** della struttura di [**\_ informazioni WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'oggetto LSP disabilitato.
+Membro **dwCatalogEntryId** della [**struttura WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'LSP disabilitato.
 
 </dd> </dl>
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-L'evento di **\_ \_ \_ disabilitazione LSP ws2help di Winsock** viene tracciato per un'operazione di disabilitazione LSP quando una voce di protocollo è disabilitata nel catalogo Winsock.
+**L'evento DISABLE di WINSOCK \_ WS2HELP \_ LSP \_** viene tracciato per un'operazione di disabilitazione LSP quando una voce di protocollo è disabilitata nel catalogo Winsock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ L'evento di **\_ \_ \_ disabilitazione LSP ws2help di Winsock** viene tracciato 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -98,13 +98,13 @@ L'evento di **\_ \_ \_ disabilitazione LSP ws2help di Winsock** viene tracciato 
 [Controllo della traccia Winsock](control-of-winsock-tracing.md)
 </dt> <dt>
 
-[Traccia Winsock](winsock-tracing.md)
+[Traccia winsock](winsock-tracing.md)
 </dt> <dt>
 
-[Livelli di traccia Winsock](winsock-tracing-levels.md)
+[Livelli di traccia di Winsock](winsock-tracing-levels.md)
 </dt> <dt>
 
-[Dettagli della traccia delle modifiche del catalogo Winsock](winsock-layered-service-provider-tracing-event-details.md)
+[Dettagli di traccia delle modifiche del catalogo Winsock](winsock-layered-service-provider-tracing-event-details.md)
 </dt> </dl>
 
  

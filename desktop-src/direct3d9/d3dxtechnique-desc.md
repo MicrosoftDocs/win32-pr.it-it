@@ -1,7 +1,7 @@
 ---
 description: Descrive una tecnica utilizzata da un effetto.
 ms.assetid: 7ba2dbb3-8039-4d1c-ad9d-130d9bf3d80a
-title: Struttura D3DXTECHNIQUE_DESC (D3dx9effect. h)
+title: D3DXTECHNIQUE_DESC struttura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: 35dd483a983f17371d6a77e6c020b3a45d9e9360
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7e835c0eac067825942568464df8d5d345a06b530b71b7eaf7f319eae5f5d366
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630731"
 ---
-# <a name="d3dxtechnique_desc-structure"></a>\_Struttura D3DXTECHNIQUE DESC
+# <a name="d3dxtechnique_desc-structure"></a>Struttura D3DXTECHNIQUE \_ DESC
 
 Descrive una tecnica utilizzata da un effetto.
 
@@ -48,14 +48,14 @@ Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Stringa che contiene il nome della tecnica.
+Stringa contenente il nome della tecnica.
 
 </dd> <dt>
 
 **Passa**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -63,20 +63,20 @@ Numero di passaggi di rendering necessari per la tecnica. Vedere la sezione Osse
 
 </dd> <dt>
 
-**annotazioni**
+**Annotazioni**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di annotazioni. Vedere [aggiungere informazioni ai parametri di effetto con le \_ annotazioni](using-an-effect.md).
+Numero di annotazioni. Vedere [Aggiungere informazioni ai parametri degli effetti con \_ annotazioni.](using-an-effect.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Alcune schede video possono eseguire il rendering di due trame in un singolo passaggio. Tuttavia, se una scheda non dispone di questa funzionalità, spesso è possibile eseguire il rendering dello stesso effetto in due passaggi, usando una trama per ogni passaggio.
+Alcune schede video possono eseguire il rendering di due trame in un unico passaggio. Tuttavia, se una scheda non ha questa funzionalità, è spesso possibile eseguire il rendering dello stesso effetto in due passaggi, usando una trama per ogni passaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Alcune schede video possono eseguire il rendering di due trame in un singolo pas
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 

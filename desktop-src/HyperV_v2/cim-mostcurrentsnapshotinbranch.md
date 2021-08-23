@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un sistema virtuale e lo snapshot più recente del sistema. Questa associazione può esistere solo se il sistema virtuale è stato creato utilizzando uno snapshot o se è stato creato uno snapshot dal sistema virtuale.
+description: Rappresenta un'associazione tra un sistema virtuale e lo snapshot più corrente del sistema. Questa associazione può esistere solo se il sistema virtuale è stato creato usando uno snapshot o se è stato creato uno snapshot dal sistema virtuale.
 ms.assetid: e6040818-84cf-4cec-ab7b-a733fe5d01d2
-title: Classe CIM_MostCurrentSnapshotInBranch
+title: CIM_MostCurrentSnapshotInBranch classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 078a7c9f1669a2aa0449dce01022eba0eadcb2c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de94bf0e6f88240ac89eb62de881540f5c747b7a1d0ec13307e7e5d35fe53da4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694971"
 ---
-# <a name="cim_mostcurrentsnapshotinbranch-class"></a>CIM \_ MostCurrentSnapshotInBranch (classe)
+# <a name="cim_mostcurrentsnapshotinbranch-class"></a>Classe CIM \_ MostCurrentSnapshotInBranch
 
-Rappresenta un'associazione tra un sistema virtuale e lo snapshot più recente del sistema. Questa associazione può esistere solo se il sistema virtuale è stato creato utilizzando uno snapshot o se è stato creato uno snapshot dal sistema virtuale.
+Rappresenta un'associazione tra un sistema virtuale e lo snapshot più corrente del sistema. Questa associazione può esistere solo se il sistema virtuale è stato creato usando uno snapshot o se è stato creato uno snapshot dal sistema virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_MostCurrentSnapshotInBranch : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ MostCurrentSnapshotInBranch** presenta questi tipi di membri:
+La **classe CIM \_ MostCurrentSnapshotInBranch** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ MostCurrentSnapshotInBranch** dispone di queste proprietà.
+La **classe CIM \_ MostCurrentSnapshotInBranch** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo di dati: **CIM \_ ComputerSystem**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Riferimento all'istanza di [**CIM \_ ComputerSystem**](cim-computersystem.md) che rappresenta il sistema virtuale.
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ VirtualSystemSettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Riferimento all'istanza di [**\_ VirtualSystemSettingData CIM**](cim-virtualsystemsettingdata.md) che rappresenta lo snapshot del sistema virtuale.
+Riferimento all'istanza di [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta lo snapshot del sistema virtuale.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Riferimento all'istanza di [**\_ VirtualSystemSettingData CIM**](cim-virtualsyst
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Riferimento all'istanza di [**\_ VirtualSystemSettingData CIM**](cim-virtualsyst
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMDRMDevice GetSecureClock
-description: Il metodo GetSecureClock Recupera il clock sicuro, quindi è possibile applicare licenze basate sul tempo.
+description: Il metodo GetSecureClock recupera l'orologio sicuro, quindi è possibile applicare licenze basate sull'ora.
 ms.assetid: 6de9b7ce-9c2a-44e5-9de7-40cfbaf4d92c
 keywords:
-- Metodo GetSecureClock Windows Media Gestione dispositivi
-- Metodo GetSecureClock Windows Media Gestione dispositivi, interfaccia IWMDRMDevice
-- Interfaccia IWMDRMDevice Windows Media Gestione dispositivi, metodo GetSecureClock
+- Metodo GetSecureClock windows Media Device Manager
+- Metodo GetSecureClock windows Media Device Manager , interfaccia IWMDRMDevice
+- Interfaccia IWMDRMDevice windows Media Device Manager, metodo GetSecureClock
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa92c3bc2ee82facf2f2e1043e71467a0c55bd8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa9494a594a396550028f083cc2b646f2093f6369ab27ae5494bf70c13628d4f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619781"
 ---
-# <a name="iwmdrmdevicegetsecureclock-method"></a>Metodo IWMDRMDevice:: GetSecureClock
+# <a name="iwmdrmdevicegetsecureclock-method"></a>Metodo IWMDRMDevice::GetSecureClock
 
-Il metodo **GetSecureClock** Recupera il clock sicuro, quindi è possibile applicare licenze basate sul tempo.
+Il **metodo GetSecureClock** recupera l'orologio sicuro, quindi è possibile applicare licenze basate sull'ora.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT GetSecureClock(
 
 <dl> <dt>
 
-*ppbSecureClock* \[ out\]
+*ppbSecureClock* \[ Cambio\]
 </dt> <dd>
 
-Clock protetto recuperato.
+Recupero dell'orologio sicuro.
 
 </dd> <dt>
 
-*pcbSecureClock* \[ out\]
+*pcbSecureClock* \[ Cambio\]
 </dt> <dd>
 
-Dimensioni del clock sicuro, in byte.
+Dimensioni dell'orologio protetto, in byte.
 
 </dd> <dt>
 
-*pdwFlags* \[ out\]
+*pdwFlags* \[ Cambio\]
 </dt> <dd>
 
 Flag di stato del dispositivo. Questo valore deve essere uno dei flag seguenti.
@@ -68,9 +68,9 @@ Flag di stato del dispositivo. Questo valore deve essere uno dei flag seguenti.
 
 | Flag                     | Descrizione                            |
 |--------------------------|----------------------------------------|
-| \_ISWMDRM del dispositivo WMDRM \_   | Il dispositivo supporta Windows Media DRM. |
-| \_NEEDCLOCK del dispositivo WMDRM \_ | Il dispositivo deve essere clock.                |
-| il dispositivo WMDRM è stato \_ \_ revocato   | Il dispositivo è stato revocato.           |
+| DISPOSITIVO WMDRM \_ \_ ISWMDRM   | Il dispositivo supporta Windows DRM multimediale. |
+| WMDRM \_ DEVICE \_ NEEDCLOCK | Il dispositivo richiede l'orologio.                |
+| DISPOSITIVO WMDRM \_ \_ REVOCATO   | Il dispositivo è stato revocato.           |
 
 
 
@@ -80,13 +80,13 @@ Flag di stato del dispositivo. Questo valore deve essere uno dei flag seguenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -98,8 +98,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Libreria<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
