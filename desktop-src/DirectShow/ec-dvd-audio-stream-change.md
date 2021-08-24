@@ -1,7 +1,7 @@
 ---
-description: Segnala che il numero corrente del flusso audio è stato modificato per il titolo principale del DVD.
+description: Segnala che il numero del flusso audio corrente è stato modificato per il titolo principale del DVD.
 ms.assetid: ab626c6b-765a-4b2e-be96-f45260d1a078
-title: EC_DVD_AUDIO_STREAM_CHANGE (Dvdevcode. h)
+title: EC_DVD_AUDIO_STREAM_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 947e19310a77869dbff97851e1ffa0684a3e43a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ad6015ef132a98d02dc207cb9d43b6324ea3a05c541f43e295e75d13b5bb7ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998131"
 ---
-# <a name="ec_dvd_audio_stream_change"></a>\_ \_ \_ Modifica flusso audio DVD \_ EC
+# <a name="ec_dvd_audio_stream_change"></a>MODIFICA DEL \_ FLUSSO AUDIO DI EC \_ DVD \_ \_
 
-Segnala che il numero corrente del flusso audio è stato modificato per il titolo principale del DVD.
+Segnala che il numero del flusso audio corrente è stato modificato per il titolo principale del DVD.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Segnala che il numero corrente del flusso audio è stato modificato per il titol
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica il nuovo numero di flusso audio dell'utente. I numeri di flusso audio variano da 0 a 7. Il flusso 0xFFFFFFFF indica che non è selezionato alcun flusso.
+**Valore DWORD** che indica il nuovo numero di flusso audio dell'utente. I numeri di flusso audio sono da 0 a 7. La 0xFFFFFFFF di flusso indica che non è selezionato alcun flusso.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il flusso audio corrente può essere modificato automaticamente con un comando di navigazione creato sul disco e tramite il controllo delle applicazioni tramite l'interfaccia [**IDVDControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) .
+Il flusso audio corrente può cambiare automaticamente con un comando di navigazione creato sul disco e tramite il controllo dell'applicazione tramite [**l'interfaccia IDvdControl2.**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2)
 
 Questo evento viene generato in tutti i domini.
 
@@ -54,7 +54,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

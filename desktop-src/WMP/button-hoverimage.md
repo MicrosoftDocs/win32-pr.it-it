@@ -1,9 +1,9 @@
 ---
-title: BUTTON. hoverImage
-description: L'attributo hoverImage specifica o recupera l'immagine visualizzata quando il pulsante si trova nello stato up e l'utente posiziona il puntatore del mouse su di esso con il puntatore del mouse.
+title: BUTTON.hoverImage
+description: L'attributo hoverImage specifica o recupera l'immagine visualizzata quando BUTTON è nello stato attivo e l'utente vi passa sopra con il puntatore del mouse.
 ms.assetid: 6704e63d-1def-4e8e-808f-131c3cc1c0de
 keywords:
-- BUTTON. hoverImage Windows Media Player
+- Button.hoverImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80b17a461ffde4b9f6777f3ce360c6b3f1747235
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8488fb599a958a96ef7b5aaa5afbf4c219110f0da5be7016a8190efe2004475d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003721"
 ---
-# <a name="buttonhoverimage"></a>BUTTON. hoverImage
+# <a name="buttonhoverimage"></a>BUTTON.hoverImage
 
-L'attributo **hoverImage** specifica o recupera l'immagine visualizzata quando il **pulsante** si trova nello stato up e l'utente posiziona il puntatore del mouse su di esso con il puntatore del mouse.
+**L'attributo hoverImage** specifica o recupera l'immagine visualizzata quando **BUTTON** è nello stato attivo e l'utente vi passa sopra con il puntatore del mouse.
 
 ``` syntax
         elementID.hoverImage
@@ -29,17 +29,17 @@ L'attributo **hoverImage** specifica o recupera l'immagine visualizzata quando i
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente il nome del file di immagine.
+Questo attributo è una stringa di **lettura/scrittura contenente** il nome del file di immagine.
 
 ## <a name="remarks"></a>Commenti
 
 I formati di immagine supportati sono BMP, JPG, PNG e GIF.
 
-L'immagine predefinita è quella specificata nell'attributo **Image** oppure il valore predefinito.
+L'immagine predefinita è quella specificata **nell'attributo image** o il relativo valore predefinito.
 
-Se l'immagine del passaggio del mouse è maggiore dell'area definita nell'attributo di ambiente, l'immagine del passaggio del mouse verrà ritagliata.
+Se l'immagine al passaggio del mouse è più grande dell'area definita nell'attributo di ambiente, l'immagine al passaggio del mouse verrà ritagliata.
 
-Se non è possibile recuperare l'immagine, viene visualizzata un'immagine predefinita, ovvero l'immagine rossa (x).
+Se non è possibile recuperare l'immagine, viene visualizzata un'immagine predefinita (l'immagine rossa-x).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Se non è possibile recuperare l'immagine, viene visualizzata un'immagine predef
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -58,7 +58,7 @@ Se non è possibile recuperare l'immagine, viene visualizzata un'immagine predef
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BUTTON. image**](button-image.md)
+[**BUTTON.image**](button-image.md)
 </dt> </dl>
 
  

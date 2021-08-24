@@ -1,19 +1,19 @@
 ---
-description: Novità di Windows 7. Identifica una proprietà correlata alla proprietà definita nel file di descrizione della proprietà.
+description: Novità per Windows 7. Identifica una proprietà correlata alla proprietà definita nel file di descrizione della proprietà.
 ms.assetid: 30167942-141A-4f37-B019-0811BA654124
 title: relatedProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cabde093a47a25834598659d3ad38e0847c1351d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4285c0f8b0731ba790cd57105f907cd4df85b6faa41c3f649588aca7ef457418
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938681"
 ---
 # <a name="relatedproperty"></a>relatedProperty
 
-Novità di Windows 7. Identifica una proprietà correlata alla proprietà definita nel file di descrizione della proprietà. È possibile che siano presenti tutti gli elementi [relatedProperty]() all'interno di un [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) in base alle esigenze.
+Novità per Windows 7. Identifica una proprietà correlata alla proprietà definita nel file di descrizione della proprietà. All'interno di un oggetto [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) possono essere presenti tutti gli elementi [relatedProperty]() necessari.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Novità di Windows 7. Identifica una proprietà correlata alla proprietà defini
 
 | Elemento padre                                                   | Elementi figlio |
 |------------------------------------------------------------------|----------------|
-| [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) | nessuno           |
+| [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) | Nessuno           |
 
 
 
@@ -57,7 +57,7 @@ Novità di Windows 7. Identifica una proprietà correlata alla proprietà defini
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento consente di eseguire il mapping di una proprietà a un'altra. Ad esempio, è possibile eseguire il mapping del testo della proprietà personalizzata fabrikam. StorageCapacity a System. Capacity:
+Questo elemento consente di eseguire il mapping di una proprietà a un'altra. Ad esempio, è possibile eseguire il mapping del testo della proprietà personalizzata Fabrikam.StorageCapacity a System.Capacity:
 
 
 ```

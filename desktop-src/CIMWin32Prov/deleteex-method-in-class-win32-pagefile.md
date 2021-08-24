@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 34e27e80c3cfaea352ee97ad29aed0b7ca358546
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a9e1d63e112ae33f33309e05e1b100f4c25101d158a2f3275d35110af74a20df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918441"
 ---
 # <a name="deleteex-method-of-the-win32_pagefile-class"></a>Metodo DeleteEx della classe PageFile Win32 \_
 
@@ -66,7 +66,7 @@ Restituisce il valore 0 (zero) se il file è stato eliminato correttamente e qua
 **0**
 </dt> <dd>
 
-La richiesta ha avuto esito positivo.
+La richiesta è stata completata.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**File di paging Win32 \_**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

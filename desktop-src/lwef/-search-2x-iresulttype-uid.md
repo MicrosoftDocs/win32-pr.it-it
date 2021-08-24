@@ -1,11 +1,11 @@
 ---
-title: Proprietà UID IResultType (WdsSharedIDL. h)
+title: Proprietà UID IResultType (WdsSharedIDL.h)
 description: Questa proprietà contiene l'identificatore univoco per il tipo.
 ms.assetid: 31c2ef7d-f5a7-441e-80ea-fd7e46fded07
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà UID
-- Funzionalità dell'ambiente Windows legacy della proprietà UID, interfaccia IResultType
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultType, proprietà UID
+- Proprietà UID Funzionalità dell'ambiente Windows legacy
+- Proprietà UID Legacy Windows Environment Features , interfaccia IResultType
+- Interfaccia IResultType Legacy Windows, proprietà UID
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dbdd5a9b17da9cde04ac0b371a885b07415d0e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 89a67561d10d07a69ed7990f7491f12cb479060829ede212bc565230c2895c93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014571"
 ---
-# <a name="iresulttypeuid-property"></a>Proprietà IResultType:: UID
+# <a name="iresulttypeuid-property"></a>Proprietà IResultType::UID
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 Questa proprietà contiene l'identificatore univoco per il tipo.
 
@@ -46,7 +46,7 @@ HRESULT get_UID(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Indirizzo della posizione contenente l'UID.
+Indirizzo della posizione contenente l'uid.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,10 +54,10 @@ Indirizzo della posizione contenente l'UID.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                      |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                             |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                             |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Intestazione<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

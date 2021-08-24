@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le funzionalità e la gestione di un processore.
 ms.assetid: 70cf9776-eeda-42c2-90c4-704ecf1cdafe
-title: CIM_Processor classe (gestione di Hyper-V)
+title: CIM_Processor classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,7 +33,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119981231"
 ---
-# <a name="cim_processor-class-hyper-v-management"></a>CIM_Processor classe (gestione di Hyper-V)
+# <a name="cim_processor-class-hyper-v-management"></a>CIM_Processor classe (gestione Hyper-V)
 
 Rappresenta le funzionalità e la gestione di un processore.
 
@@ -61,13 +61,13 @@ class CIM_Processor : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La **classe del \_ processore CIM** ha questi tipi di membri:
+La **classe \_ processore CIM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe del \_ processore CIM** ha queste proprietà.
+La **classe \_ processore CIM** ha queste proprietà.
 
 <dl> <dt>
 
@@ -80,14 +80,14 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit"), **PUnit** ("bit")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit"), **PUnit** ("bit")
 </dt> </dl>
 
 Larghezza dell'indirizzo del processore, in bit.
 
 </dd> <dt>
 
-**STATO CPU**
+**CPUStatus**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -130,7 +130,7 @@ Stato corrente del processore.
 
 <span id="CPU_Is_Idle"></span><span id="cpu_is_idle"></span><span id="CPU_IS_IDLE"></span>
 
-**CPU is Idle** (4)
+**CPU inattiva** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -153,7 +153,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processore DMTF \| \| 017.6"), **PUnit** ("hertz \* 10^6")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processore DMTF \| \| 017.6"), **PUnit** ("hertz \* 10^6")
 </dt> </dl>
 
 Velocità corrente, in MHz, del processore.
@@ -169,7 +169,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit"), **PUnit** ("bit")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit"), **PUnit** ("bit")
 </dt> </dl>
 
 Larghezza dei dati del processore, in bit.
@@ -188,7 +188,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), **PUnit** ("hertz \* 10^6")
 </dt> </dl>
 
-Velocità, in MHz, dell'interfaccia bus esterna (nota anche come bus sul lato anteriore).
+Velocità, in MHz, dell'interfaccia del bus esterno (nota anche come front side bus).
 
 </dd> <dt>
 
@@ -392,7 +392,7 @@ Tipo di famiglia di processori.
 
 <span id="AMD_R__Duron_TM__Processor"></span><span id="amd_r__duron_tm__processor"></span><span id="AMD_R__DURON_TM__PROCESSOR"></span>
 
-**Processore AMD(R) Hain(TM)** (29)
+**Processore AMD(R) Duron(TM)** (29)
 
 
 </dt> <dd></dd> <dt>
@@ -413,7 +413,7 @@ Tipo di famiglia di processori.
 
 <span id="Power_PC_Family"></span><span id="power_pc_family"></span><span id="POWER_PC_FAMILY"></span>
 
-**Famiglia Power PC** (32)
+**Famiglia power pc** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -497,28 +497,28 @@ Tipo di famiglia di processori.
 
 <span id="Alpha_Family"></span><span id="alpha_family"></span><span id="ALPHA_FAMILY"></span>
 
-**Famiglia Alfa** (48)
+**Famiglia Alpha** (48)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21064"></span><span id="alpha_21064"></span><span id="ALPHA_21064"></span>
 
-**Alfa 21064** (49)
+**Alpha 21064** (49)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21066"></span><span id="alpha_21066"></span><span id="ALPHA_21066"></span>
 
-**Alfa 21066** (50)
+**Alpha 21066** (50)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21164"></span><span id="alpha_21164"></span><span id="ALPHA_21164"></span>
 
-**Alfa 21164** (51)
+**Alpha 21164** (51)
 
 
 </dt> <dd></dd> <dt>
@@ -532,21 +532,21 @@ Tipo di famiglia di processori.
 
 <span id="Alpha_21164a"></span><span id="alpha_21164a"></span><span id="ALPHA_21164A"></span>
 
-**Alfa 21164a** (53)
+**Alpha 21164a** (53)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21264"></span><span id="alpha_21264"></span><span id="ALPHA_21264"></span>
 
-**Alfa 21264** (54)
+**Alpha 21264** (54)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21364"></span><span id="alpha_21364"></span><span id="ALPHA_21364"></span>
 
-**Alfa 21364** (55)
+**Alpha 21364** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -560,14 +560,14 @@ Tipo di famiglia di processori.
 
 <span id="AMD_Turion_TM__II_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_turion_tm__ii_dual-core_mobile_m_processor_family"></span><span id="AMD_TURION_TM__II_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**AMD Turion(TM) II Dual-Core processore M** mobile (57)
+**AMD Turion(TM) II Dual-Core famiglia** di processori Mobile M (57)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Athlon_TM__II_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_athlon_tm__ii_dual-core_mobile_m_processor_family"></span><span id="AMD_ATHLON_TM__II_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**AmD Athlon(TM) II Dual-Core processori Mobile M** (58)
+**AMD Athlon(TM) II Dual-Core famiglia di** processori Mobile M (58)
 
 
 </dt> <dd></dd> <dt>
@@ -805,7 +805,7 @@ Tipo di famiglia di processori.
 
 <span id="Dual-Core_AMD_Opteron_TM__Processor_Family"></span><span id="dual-core_amd_opteron_tm__processor_family"></span><span id="DUAL-CORE_AMD_OPTERON_TM__PROCESSOR_FAMILY"></span>
 
-**Famiglia di processori AmD Opteron(TM) Dual-Core** (135)
+**Famiglia di processori AMD Opteron(TM) Dual-Core** (135)
 
 
 </dt> <dd></dd> <dt>
@@ -973,7 +973,7 @@ Tipo di famiglia di processori.
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_7100_Series"></span><span id="dual-core_intel_r__xeon_r__processor_7100_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_7100_SERIES"></span>
 
-**Processore Intel(R) Xeon(R) dual-core serie 7100** (168)
+**Processore Intel(R) Xeon(R) Dual-Core serie 7100** (168)
 
 
 </dt> <dd></dd> <dt>
@@ -1295,7 +1295,7 @@ Famiglia di processori **VIA C7(TM)** (212)
 
 <span id="VIA_Nano_TM__Processor_Family"></span><span id="via_nano_tm__processor_family"></span><span id="VIA_NANO_TM__PROCESSOR_FAMILY"></span>
 
-**Famiglia di processori VIA Nano (TM)** (217)
+**Famiglia di processori VIA Nano(TM)** (217)
 
 
 </dt> <dd></dd> <dt>
@@ -1344,35 +1344,35 @@ Famiglia di processori **VIA C7(TM)** (212)
 
 <span id="Embedded_AMD_Opteron_TM__Quad-Core_Processor_Family"></span><span id="embedded_amd_opteron_tm__quad-core_processor_family"></span><span id="EMBEDDED_AMD_OPTERON_TM__QUAD-CORE_PROCESSOR_FAMILY"></span>
 
-**Embedded AMD Opteron(TM) Quad-Core processori** (230)
+**Embedded AMD Opteron(TM) Quad-Core Processor Family** (230)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Phenom_TM__Triple-Core_Processor_Family"></span><span id="amd_phenom_tm__triple-core_processor_family"></span><span id="AMD_PHENOM_TM__TRIPLE-CORE_PROCESSOR_FAMILY"></span>
 
-**AmD Phenom(TM) Triple-Core processori** (231)
+**AmD Phenom(TM) Triple-Core processor family** (231)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Turion_TM__Ultra_Dual-Core_Mobile_Processor_Family"></span><span id="amd_turion_tm__ultra_dual-core_mobile_processor_family"></span><span id="AMD_TURION_TM__ULTRA_DUAL-CORE_MOBILE_PROCESSOR_FAMILY"></span>
 
-**AMD Turion(TM) Ultra Dual-Core Mobile Processor Family** (232)
+**AmD Turion(TM) Ultra Dual-Core famiglia di processori mobili** (232)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Turion_TM__Dual-Core_Mobile_Processor_Family"></span><span id="amd_turion_tm__dual-core_mobile_processor_family"></span><span id="AMD_TURION_TM__DUAL-CORE_MOBILE_PROCESSOR_FAMILY"></span>
 
-**AMD Turion(TM) Dual-Core mobile processor family** (233)
+**AMD Turion(TM) Dual-Core famiglia di processori mobili** (233)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Athlon_TM__Dual-Core_Processor_Family"></span><span id="amd_athlon_tm__dual-core_processor_family"></span><span id="AMD_ATHLON_TM__DUAL-CORE_PROCESSOR_FAMILY"></span>
 
-**AmD Athlon(TM) Dual-Core processori** (234)
+**AMD Athlon(TM) Dual-Core processore** (234)
 
 
 </dt> <dd></dd> <dt>
@@ -1400,7 +1400,7 @@ Famiglia di processori **VIA C7(TM)** (212)
 
 <span id="Six-Core_AMD_Opteron_TM__Processor_Family"></span><span id="six-core_amd_opteron_tm__processor_family"></span><span id="SIX-CORE_AMD_OPTERON_TM__PROCESSOR_FAMILY"></span>
 
-**Famiglia di processori AmD Opteron(TM)** a sei core (238)
+**Famiglia di processori AMD Opteron(TM) Six-Core** (238)
 
 
 </dt> <dd></dd> <dt>
@@ -1435,7 +1435,7 @@ Famiglia di processori **VIA C7(TM)** (212)
 
 <span id="Reserved__Un-initialized_Flash_Content_-_Lo_"></span><span id="reserved__un-initialized_flash_content_-_lo_"></span><span id="RESERVED__UN-INITIALIZED_FLASH_CONTENT_-_LO_"></span>
 
-**Riservato (contenuto flash non inizializzato - Lo)** (255)
+**Riservato (contenuto Flash non inizializzato - Lo)** (255)
 
 
 </dt> <dd></dd> <dt>
@@ -1512,14 +1512,14 @@ Famiglia di processori **VIA C7(TM)** (212)
 
 <span id="Reserved__For_Future_Special_Purpose_Assignment_"></span><span id="reserved__for_future_special_purpose_assignment_"></span><span id="RESERVED__FOR_FUTURE_SPECIAL_PURPOSE_ASSIGNMENT_"></span>
 
-**Riservato (per l'assegnazione di scopi speciali futuri)** (65534)
+**Riservato (per un'assegnazione a scopo speciale futuro)** (65534)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reserved__Un-initialized_Flash_Content_-_Hi_"></span><span id="reserved__un-initialized_flash_content_-_hi_"></span><span id="RESERVED__UN-INITIALIZED_FLASH_CONTENT_-_HI_"></span>
 
-**Riservato (contenuto flash non inizializzato - Hi)** (65535)
+**Riservato (contenuto Flash non inizializzato - Hi)** (65535)
 
 
 </dt> <dd></dd> </dl>
@@ -1535,10 +1535,10 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percentuale"), [**Misuratore**](/windows/desktop/WmiSdk/standard-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrProcessorLoad"), **PUnit** ("percent")
+Qualificatori: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percent"), [**Gauge**](/windows/desktop/WmiSdk/standard-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrProcessorLoad"), **PUnit** ("percent")
 </dt> </dl>
 
-Il caricamento del processore, in media nell'ultimo minuto, come percentuale.
+Il caricamento del processore, in media nell'ultimo minuto, è stato indicato come percentuale.
 
 </dd> <dt>
 
@@ -1551,7 +1551,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processore DMTF \| \| 017.5"), **PUnit** ("hertz \* 10^6")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processore DMTF \| \| 017.5"), **PUnit** ("hertz \* 10^6")
 </dt> </dl>
 
 Velocità massima, in MHz, del processore.
@@ -1561,7 +1561,7 @@ Velocità massima, in MHz, del processore.
 **OtherFamilyDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1570,14 +1570,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Processore CIM \_**.**Famiglia**")
 </dt> </dl>
 
-Tipo di famiglia di processori quando **la proprietà Family** è impostata su **Other** ("1"). Questa stringa deve essere impostata su NULL quando la proprietà Family è un valore diverso da **Other.**
+Tipo di famiglia di processori quando **la proprietà Family** è impostata su **Other** ("1"). Questa stringa deve essere impostata su NULL quando la proprietà Family è un valore diverso da **Other**.
 
 </dd> <dt>
 
 **Ruolo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1590,7 +1590,7 @@ Ruolo del processore, ad esempio "Processore centrale" o "Processore matematico"
 **Esecuzione di istruzioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1606,7 +1606,7 @@ Livello di revisione del processore all'interno della famiglia di processori.
 **Uniqueid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1616,7 +1616,7 @@ Identificatore univoco globale per il processore, all'interno dell'ambito della 
 
 </dd> <dt>
 
-**Metodo di aggiornamento**
+**UpgradeMethod**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint16**
@@ -1628,7 +1628,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processore DMTF \| \| 017.7")
 </dt> </dl>
 
-Informazioni sul socket della CPU che includono i dati sulla modalità di aggiornamento del processore.
+Informazioni sul socket della CPU che includono i dati su come è possibile aggiornare il processore.
 
 <dt>
 
@@ -1648,7 +1648,7 @@ Informazioni sul socket della CPU che includono i dati sulla modalità di aggior
 
 <span id="Daughter_Board"></span><span id="daughter_board"></span><span id="DAUGHTER_BOARD"></span>
 
-**Board** (3)
+**Daughter Board** (3)
 
 
 </dt> <dd></dd> <dt>

@@ -1,17 +1,17 @@
 ---
-title: Strutture di controllo intestazione
-description: Strutture di controllo intestazione
+title: Strutture del controllo Header
+description: Strutture del controllo Header
 ms.assetid: f5fe232f-7620-4437-8a58-49fe160ac208
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e85a09ea5bed68ea96ca87a08f7a1d175eac73
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 47ec1418df121c866b547ea79660ec86c282611b81c9e810d11b9acc1dd184b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916721"
 ---
-# <a name="header-control-structures"></a>Strutture di controllo intestazione
+# <a name="header-control-structures"></a>Strutture del controllo Header
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,6 +1,6 @@
 ---
 title: Metodo SetStringProperty della Win32_RDMSDeploymentSettings classe (Certenroll.h)
-description: Aggiorna una proprietà stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
+description: Aggiorna una proprietà stringa per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 ms.assetid: 500ab1cb-7336-47a8-adee-790976ea30fe
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "119987501"
 ---
 # <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetStringProperty della classe \_ RDMSDeploymentSettings Win32
 
-Aggiorna una proprietà stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
+Aggiorna una proprietà stringa per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ uint32 SetStringProperty(
 *Chiave* \[ Pollici\]
 </dt> <dd>
 
-Alias dell'insieme di desktop virtuali.
+Alias della raccolta di desktop virtuali.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Nuovo valore della proprietà.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
 | Intestazione<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |

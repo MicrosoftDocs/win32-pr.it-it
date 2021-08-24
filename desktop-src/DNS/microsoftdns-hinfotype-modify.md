@@ -4,7 +4,7 @@ description: Il metodo Modify aggiorna un record di risorse HINFO (Host Informat
 ms.assetid: 8f8148f3-804f-4f99-8e79-606cd3cea660
 keywords:
 - Modificare il DNS del metodo
-- Modificare il DNS del metodo , MicrosoftDNS_HINFOType classe
+- Modificare il metodo DNS , MicrosoftDNS_HINFOType classe
 - MicrosoftDNS_HINFOType classe DNS , metodo Modify
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119984641"
 ---
-# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Metodo Modify della classe MicrosoftDNS \_ HINFOType
+# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Metodo Modify della classe \_ HINFOType MicrosoftDNS
 
 Il **metodo Modify** aggiorna un record di risorse HINFO (Host Information).
 
@@ -48,7 +48,7 @@ void Modify(
 *TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Sistema operativo del proprietario del record.
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento al nuovo oggetto .
+Riferimento al nuovo oggetto.
 
 </dd> </dl>
 

@@ -1,146 +1,146 @@
 ---
-title: Classi, parti e Stati di stile Aero
-description: In questo argomento vengono descritte le classi, le parti e gli stati supportati dal tema Aero, che definisce gli stili di visualizzazione utilizzati da Microsoft Vista per impostazione predefinita.
+title: Classi, parti e stati di stile Aero
+description: Questo argomento descrive le classi, le parti e gli stati supportati dal tema Aero, che definisce gli stili di visualizzazione utilizzati da Microsoft Vista per impostazione predefinita.
 ms.assetid: 6ec340a8-8ad1-406e-9fe1-9da9710ee27e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a484e11d04c7e935083ee85fadd9466b8f57dd4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 437ef4a4b032e4f1b5824d94f0ba924ca82745d0b7ea413044b87267ea1f891b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921921"
 ---
-# <a name="aero-style-classes-parts-and-states"></a>Classi, parti e Stati di stile Aero
+# <a name="aero-style-classes-parts-and-states"></a>Classi, parti e stati di stile Aero
 
-In questo argomento vengono descritte le classi, le parti e gli stati supportati dal tema Aero, che definisce gli stili di visualizzazione utilizzati da Microsoft Vista per impostazione predefinita.
+Questo argomento descrive le classi, le parti e gli stati supportati dal tema Aero, che definisce gli stili di visualizzazione utilizzati da Microsoft Vista per impostazione predefinita.
 
 
 
 | Classe          | Parte                        | Stati                                                                                     |
 |----------------|-----------------------------|--------------------------------------------------------------------------------------------|
-| AeroWizard     | \_pulsante aw                  |                                                                                            |
+| Creazione guidata di AeroWizard     | PULSANTE \_ AW                  |                                                                                            |
 |                | AW \_ COMMANDAREA             |                                                                                            |
-|                | AW \_ CONTENTAREA             | AW \_ S \_ CONTENTAREA \_ nomargin                                                               |
-|                | AW \_ HEADERAREA              | AW \_ S \_ HEADERAREA \_ nomargin                                                                |
-|                | barra del titolo AW \_                | \_ \_ barra di barra del titolo \_ attiva, AW barra del titolo \_ \_ \_ inattiva                                         |
-| Pulsante         | casella di controllo BP \_                |                                                                                            |
-|                | GroupBox di BP \_                |                                                                                            |
-|                | \_pulsante BP              |                                                                                            |
-|                | \_RadioButton BP             |                                                                                            |
-| ComboboxStyle  | \_DROPDOWNBUTTON CP          |                                                                                            |
-|                | \_DROPDOWNBUTTONLEFT CP      |                                                                                            |
-|                | \_DROPDOWNBUTTONRIGHT CP     |                                                                                            |
-|                | CP \_ ReadOnly                |                                                                                            |
-| Comunicazioni | \_scheda CSST                   | CSTB \_ Hot, CSTB \_ Normal, CSTB \_ selezionato                                                    |
-| ControlPanel   | \_BANNERAREA cPanel          |                                                                                            |
-|                | \_BODYTEXT cPanel            |                                                                                            |
-|                | \_BODYTITLE cPanel           |                                                                                            |
-|                | \_pulsante cPanel              |                                                                                            |
-|                | \_CONTENTLINK cPanel         | CPCL \_ disabled, CPCL \_ Hot, CPCL \_ Normal, CPCL \_ Pressed                                     |
-|                | \_CONTENTPANE cPanel         |                                                                                            |
-|                | \_CONTENTPANELABEL cPanel    |                                                                                            |
-|                | \_GROUPTEXT cPanel           |                                                                                            |
-|                | HELPLINK di CPANEL \_            | CPHL \_ disabled, CPhl \_ Hot, CPhl \_ Normal, CPhl \_ Pressed                                     |
-|                | \_LARGECOMMANDAREA cPanel    |                                                                                            |
-|                | \_MESSAGETEXT cPanel         |                                                                                            |
-|                | \_NAVIGATIONPANE cPanel      |                                                                                            |
-|                | \_NAVIGATIONPANELABEL cPanel |                                                                                            |
-|                | \_SECTIONTITLELINK cPanel    | CPSTL \_ Hot, CPSTL \_ Normal                                                                  |
-|                | \_SMALLCOMMANDAREA cPanel    |                                                                                            |
-|                | \_TASKLINK cPanel            | CPTL \_ disabled, CPTL \_ Hot, CPTL \_ Normal, CPTL \_ Page, CPTL \_ Pressed                         |
-|                | \_titolo cPanel               |                                                                                            |
-| DatePicker     | \_SHOWCALENDARBUTTONRIGHT DP |                                                                                            |
-| DragDrop       | \_copia DD                    |                                                                                            |
-|                | \_CREATELINK DD              |                                                                                            |
-|                | \_spostamento DD                    |                                                                                            |
-|                | DD \_ None                    |                                                                                            |
-|                | \_UPDATEMETADATA DD          |                                                                                            |
-|                | GG- \_ avviso                 |                                                                                            |
-| ExplorerBar    | \_HEADERBACKGROUND EBP       |                                                                                            |
-| Riquadro a comparsa         | corpo del riquadro a comparsa \_                | FBS \_ enfatizzato, FBS \_ Normal                                                               |
-|                | intestazione riquadro a comparsa \_              |                                                                                            |
-|                | etichetta riquadro a comparsa \_               | FLS \_ disabilitato, FLS \_ enfatizzato, FLS \_ Normal, FLS \_ selezionato                                 |
-|                | collegamento a riquadro a comparsa \_                | FLYOUTLINK \_ hover, FLYOUTLINK \_ Normal                                                      |
-|                | riquadro a comparsa \_ LINKAREA            |                                                                                            |
-|                | riquadro a comparsa \_ LINKHEADER          | FLH \_ hover, FLH \_ Normal                                                                    |
-|                | finestra a comparsa \_              |                                                                                            |
+|                | AW \_ CONTENTAREA             | AW \_ S \_ CONTENTAREA \_ NOMARGIN                                                               |
+|                | AW \_ HEADERAREA              | AW \_ S \_ HEADERAREA \_ NOMARGIN                                                                |
+|                | BARRA DEL \_ TITOLO AW                | AW \_ S \_ TITLEBAR \_ ACTIVE, AW \_ S \_ TITLEBAR \_ INACTIVE                                         |
+| Button         | CASELLA DI CONTROLLO \_ BP                |                                                                                            |
+|                | CASELLA \_ DI GRUPPO BP                |                                                                                            |
+|                | PULSANTE \_ DI PRESSIONE              |                                                                                            |
+|                | PULSANTE \_ DI OPZIONE BP             |                                                                                            |
+| ComboboxStyle  | PULSANTE \_ A DISCESA CP          |                                                                                            |
+|                | CP \_ DROPDOWNBUTTONLEFT      |                                                                                            |
+|                | CP \_ DROPDOWNBUTTONRIGHT     |                                                                                            |
+|                | CP \_ READONLY                |                                                                                            |
+| Comunicazioni | SCHEDA \_ CSST                   | CSTB \_ HOT, CSTB \_ NORMAL, CSTB \_ SELECTED                                                    |
+| ControlPanel   | CPANEL \_ BANNERAREA          |                                                                                            |
+|                | TESTO DEL \_ CORPO DI CPANEL            |                                                                                            |
+|                | CPANEL \_ BODYTITLE           |                                                                                            |
+|                | PULSANTE \_ CPANEL              |                                                                                            |
+|                | CPANEL \_ CONTENTLINK         | CPCL \_ DISABILITATO, CPCL \_ HOT, CPCL \_ NORMAL, CPCL \_ PREMUTO                                     |
+|                | CPANEL \_ CONTENTPANE         |                                                                                            |
+|                | CPANEL \_ CONTENTPANELABEL    |                                                                                            |
+|                | CPANEL \_ GROUPTEXT           |                                                                                            |
+|                | CPANEL \_ HELPLINK            | CPHL \_ DISABLED, CPHL \_ HOT, CPHL \_ NORMAL, CPHL \_ PRESSED                                     |
+|                | CPANEL \_ LARGECOMMANDAREA    |                                                                                            |
+|                | CPANEL \_ MESSAGETEXT         |                                                                                            |
+|                | CPANEL \_ NAVIGATIONPANE      |                                                                                            |
+|                | CPANEL \_ NAVIGATIONPANELABEL |                                                                                            |
+|                | SEZIONE \_ CPANELTITLELINK    | CPSTL \_ HOT, CPSTL \_ NORMAL                                                                  |
+|                | CPANEL \_ SMALLCOMMANDAREA    |                                                                                            |
+|                | CPANEL \_ TASKLINK            | CPTL \_ DISABLED, CPTL \_ HOT, CPTL \_ NORMAL, CPTL \_ PAGE, CPTL \_ PRESSED                         |
+|                | TITOLO \_ CPANEL               |                                                                                            |
+| DatePicker     | DP \_ SHOWCALENDARBUTTONRIGHT |                                                                                            |
+| DragDrop       | COPIA \_ DD                    |                                                                                            |
+|                | DD \_ CREATELINK              |                                                                                            |
+|                | SPOSTAMENTO \_ DD                    |                                                                                            |
+|                | DD \_ NONE                    |                                                                                            |
+|                | DD \_ UPDATEMETADATA          |                                                                                            |
+|                | AVVISO \_ DD                 |                                                                                            |
+| ExplorerBar    | EBP \_ HEADERBACKGROUND       |                                                                                            |
+| Riquadro a comparsa         | CORPO DEL RIQUADRO A \_ COMPARSA                | FBS \_ ENFATIZZATO, FBS \_ NORMAL                                                               |
+|                | INTESTAZIONE DEL RIQUADRO A \_ COMPARSA              |                                                                                            |
+|                | ETICHETTA RIQUADRO A \_ COMPARSA               | FLS \_ DISABLED, FLS \_ EMPHASIZED, FLS \_ NORMAL, FLS \_ SELECTED                                 |
+|                | COLLEGAMENTO RIQUADRO A \_ COMPARSA                | FLYOUTLINK \_ HOVER, FLYOUTLINK \_ NORMAL                                                      |
+|                | RIQUADRO A \_ COMPARSA LINKAREA            |                                                                                            |
+|                | INTESTAZIONE COLLEGAMENTO \_ RIQUADRO A COMPARSA          | FLH \_ HOVER, FLH \_ NORMAL                                                                    |
+|                | FINESTRA RIQUADRO A \_ COMPARSA              |                                                                                            |
 | Intestazione         | HP \_ HEADERDROPDOWN          |                                                                                            |
 |                | HP \_ HEADERDROPDOWNFILTER    |                                                                                            |
 |                | HP \_ HEADERITEM              |                                                                                            |
-| ListView       | \_GROUPHEADER LVP            |                                                                                            |
-| Menu           | MENU \_ BARBACKGROUND         |                                                                                            |
+| ListView       | LVP \_ GROUPHEADER            |                                                                                            |
+| Menu           | BARRA \_ DEI MENUBACKGROUND         |                                                                                            |
 |                | MENU \_ POPUPBACKGROUND       |                                                                                            |
 |                | MENU \_ POPUPGUTTER           |                                                                                            |
-| Avanzamento       | \_riempimento PP                    | \_errore PBFS, PBFS \_ parziale, PBFS \_ sospeso                                                   |
-|                | \_TRANSPARENTBAR PP          | PBB \_ Normal, PBB \_ partial                                                                |
-| Rebar          | freccia di \_ espansione RP                 |                                                                                            |
-|                | \_pinza RP                 |                                                                                            |
-| Barra di scorrimento      | \_ARROWBTN SBP               |                                                                                            |
-|                | \_LOWERTRACKHORZ SBP         |                                                                                            |
-|                | \_LOWERTRACKVERT SBP         |                                                                                            |
-|                | \_SIZEBOX SBP                |                                                                                            |
-|                | \_THUMBBTNHORZ SBP           |                                                                                            |
-|                | \_THUMBBTNVERT SBP           |                                                                                            |
-|                | \_UPPERTRACKHORZ SBP         |                                                                                            |
-|                | \_UPPERTRACKVERT SBP         |                                                                                            |
-| Selezione           | SPNP \_                  |                                                                                            |
-|                | \_DOWNHORZ SPNP              |                                                                                            |
-|                | SPNP \_                    |                                                                                            |
-|                | \_UPHORZ SPNP                |                                                                                            |
-| Stato         | \_pinza SP                 |                                                                                            |
-|                | \_riquadro SP                    |                                                                                            |
-| Scheda            | \_AEROWIZARDBODY TABP        |                                                                                            |
-|                | \_riquadro TABP                  |                                                                                            |
-|                | \_TABITEM TABP               |                                                                                            |
-| TaskDialog     | \_BUTTONSECTION TDLG         |                                                                                            |
-|                | \_CONTENTPANE TDLG           |                                                                                            |
-|                | \_EXPANDEDCONTENT TDLG       |                                                                                            |
-|                | \_EXPANDEDFOOTERAREA TDLG    |                                                                                            |
-|                | \_EXPANDOTEXT TDLG           |                                                                                            |
-|                | \_FOOTNOTEPANE TDLG          |                                                                                            |
-|                | \_MAININSTRUCTIONPANE TDLG   |                                                                                            |
-|                | \_RADIOBUTTONPANE TDLG       |                                                                                            |
-|                | \_VERIFICATIONTEXT TDLG      |                                                                                            |
-| Testo           | BODYTITLE di testo \_             |                                                                                            |
-|                | BODYTEXT di testo \_              |                                                                                            |
-|                | CONTROLLABEL di testo \_          | CONTROLLABEL di Servizi terminal \_ \_ disabilitato                                                                 |
-|                | TESTO \_ espanso              |                                                                                            |
-|                | HYPERLINKTEXT di testo \_         | collegamento ipertestuale TS disabilitato, collegamento ipertestuale TS, collegamento ipertestuale TS \_ \_ normale, \_ \_ \_ \_ \_ collegamento ipertestuale TS \_ premuto |
-|                | istruzione di testo \_           |                                                                                            |
-|                | etichetta di testo \_                 |                                                                                            |
-|                | MAININSTRUCTION di testo \_       |                                                                                            |
-|                | SECONDARYTEXT di testo \_         |                                                                                            |
-| Barra degli strumenti        | \_pulsante TP                  |                                                                                            |
-|                | \_DROPDOWNBUTTON TP          |                                                                                            |
-|                | \_separatore TP               |                                                                                            |
-|                | \_SPLITBUTTON TP             |                                                                                            |
-|                | \_SPLITBUTTONDROPDOWN TP     |                                                                                            |
-| Descrizione comando        | \_fumetto TTP                |                                                                                            |
-|                | \_BALLOONTITLE TTP           |                                                                                            |
-|                | \_standard TTP               |                                                                                            |
-|                | \_STANDARDTITLE TTP          |                                                                                            |
-| TrackBar       | SCENA \_ Thumb                  |                                                                                            |
-|                | SCENA \_ Track                  |                                                                                            |
-| TreeView       | \_glifo TVP                  |                                                                                            |
-| Finestra         | \_didascalia WP                 |                                                                                            |
-|                | WP \_ CLOSEBUTTON             |                                                                                            |
-|                | WP \_ HELPBUTTON              |                                                                                            |
-|                | WP \_ MaxButton               |                                                                                            |
+| Avanzamento       | PP \_ FILL                    | ERRORE \_ PBFS, PBFS \_ PARZIALE, PBFS \_ SOSPESO                                                   |
+|                | PP \_ TRANSPARENTBAR          | PBBS \_ NORMAL, PBBS \_ PARTIAL                                                                |
+| Rebar          | RP \_ CHEVRON                 |                                                                                            |
+|                | RP \_ GRIPPER                 |                                                                                            |
+| Barra di scorrimento      | FRECCIA \_ SBPBTN               |                                                                                            |
+|                | SBP \_ LOWERTRACKHORZ         |                                                                                            |
+|                | SBP \_ LOWERTRACKVERT         |                                                                                            |
+|                | SBP \_ SIZEBOX                |                                                                                            |
+|                | SBP \_ THUMBBTNHORZ           |                                                                                            |
+|                | SBP \_ THUMBBTNVERT           |                                                                                            |
+|                | SBP \_ UPPERTRACKHORZ         |                                                                                            |
+|                | SBP \_ UPPERTRACKVERT         |                                                                                            |
+| giro           | SPNP \_ DOWN                  |                                                                                            |
+|                | SPNP \_ DOWNHORZ              |                                                                                            |
+|                | SPNP \_ UP                    |                                                                                            |
+|                | SPNP \_ UPHORZ                |                                                                                            |
+| Stato         | SP \_ GRIPPER                 |                                                                                            |
+|                | RIQUADRO \_ SP                    |                                                                                            |
+| Scheda            | TABP \_ AEROWIZARDBODY        |                                                                                            |
+|                | RIQUADRO \_ TABP                  |                                                                                            |
+|                | TABP \_ TABITEM               |                                                                                            |
+| Finestra di dialogo Attività     | TDLG \_ BUTTONSECTION         |                                                                                            |
+|                | TDLG \_ CONTENTPANE           |                                                                                            |
+|                | TDLG \_ EXPANDEDCONTENT       |                                                                                            |
+|                | TDLG \_ EXPANDEDFOOTERAREA    |                                                                                            |
+|                | TDLG \_ EXPANDOTEXT           |                                                                                            |
+|                | RIQUADRO NOTE A \_ PIÈ DI PAGINA TDLG          |                                                                                            |
+|                | TDLG \_ MAININSTRUCTIONPANE   |                                                                                            |
+|                | TDLG \_ RADIOBUTTONPANE       |                                                                                            |
+|                | TDLG \_ VERIFICATIONTEXT      |                                                                                            |
+| Testo           | \_CORPO DEL TESTOTITLE             |                                                                                            |
+|                | CORPO \_ DEL TESTO              |                                                                                            |
+|                | TEXT \_ CONTROLLABEL          | ETICHETTA DI CONTROLLO DI TS \_ \_ DISABILITATA                                                                 |
+|                | TESTO \_ ESPANSO              |                                                                                            |
+|                | TESTO \_ HYPERLINKTEXT         | TS \_ HYPERLINK \_ DISABLED, TS \_ HYPERLINK \_ HOT, TS \_ HYPERLINK \_ NORMAL, TS \_ HYPERLINK \_ PRESSED |
+|                | ISTRUZIONE DI \_ TESTO           |                                                                                            |
+|                | ETICHETTA \_ DI TESTO                 |                                                                                            |
+|                | \_MAININSTRUCTION DI TESTO       |                                                                                            |
+|                | TESTO \_ SECONDARIOTESTO         |                                                                                            |
+| Barra degli strumenti        | PULSANTE \_ TP                  |                                                                                            |
+|                | PULSANTE A \_ DISCESA TP          |                                                                                            |
+|                | SEPARATORE TP \_               |                                                                                            |
+|                | CONTROLLO \_ SPLITBUTTON TP             |                                                                                            |
+|                | TP \_ SPLITBUTTONDROPDOWN     |                                                                                            |
+| Descrizione comando        | FUMETTO \_ TTP                |                                                                                            |
+|                | TTP \_ BALLOONTITLE           |                                                                                            |
+|                | TTP \_ STANDARD               |                                                                                            |
+|                | TTP \_ STANDARDTITLE          |                                                                                            |
+| Trackbar       | TKP \_ THUMB                  |                                                                                            |
+|                | TRACCIA \_ TKP                  |                                                                                            |
+| TreeView       | GLIFO TVP \_                  |                                                                                            |
+| Finestra         | DIDASCALIA \_ WP                 |                                                                                            |
+|                | PULSANTE CHIUDI \_ WP             |                                                                                            |
+|                | PULSANTE \_ HELPBUTTON WP              |                                                                                            |
+|                | WP \_ MAXBUTTON               |                                                                                            |
 |                | WP \_ MAXCAPTION              |                                                                                            |
 |                | WP \_ MDICLOSEBUTTON          |                                                                                            |
 |                | WP \_ MDIRESTOREBUTTON        |                                                                                            |
-|                | WP \_ MinButton               |                                                                                            |
+|                | WP \_ MINBUTTON               |                                                                                            |
 |                | WP \_ MINCAPTION              |                                                                                            |
-|                | WP \_ RESTOREBUTTON           |                                                                                            |
+|                | PULSANTE \_ DI RIPRISTINO WP           |                                                                                            |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

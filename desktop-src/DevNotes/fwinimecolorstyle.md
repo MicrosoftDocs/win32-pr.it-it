@@ -1,7 +1,7 @@
 ---
-description: Specifica se il colore specificato è un colore di Windows.
+description: Specifica se il colore specificato è un colore Windows colore.
 ms.assetid: 0d2b2039-938c-4f9d-8ddc-9eb711f55009
-title: FWinIMEColorStyle (funzione)
+title: Funzione FWinIMEColorStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 28731672f5f1aff385f9051ba8b641b7cdcdf83c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 723c74ca5017d7908423a9934c002b67ffbc755623da175cc7f1e361f40b42e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002311"
 ---
-# <a name="fwinimecolorstyle-function"></a>FWinIMEColorStyle (funzione)
+# <a name="fwinimecolorstyle-function"></a>Funzione FWinIMEColorStyle
 
-Specifica se il colore specificato è un colore di Windows.
+Specifica se il colore specificato è un colore Windows colore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ BOOL __cdecl FWinIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ in\]
+*pcolorstyle* \[ Pollici\]
 </dt> <dd>
 
-Struttura **IMECOLORSTY** restituita da una funzione [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Struttura **IMECOLORSTY** restituita da una [**funzione PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** quando il colore è un colore di Windows.
+Restituisce **TRUE** quando il colore è un Windows colore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

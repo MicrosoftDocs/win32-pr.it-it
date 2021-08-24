@@ -1,35 +1,35 @@
 ---
-description: Riproduzione di audio WMA multicanale in DirectShow
+description: Riproduzione audio WMA multicanale in DirectShow
 ms.assetid: 99c69290-545a-4368-8f51-74e547c9466d
-title: Riproduzione di audio WMA multicanale in DirectShow
+title: Riproduzione audio WMA multicanale in DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 400ee9f0cede6c7268bcd3632365db1b423d114e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c3e7f7841677a7b7bc4087b2644632bbf6ec9cd48bccc15274506c6c57f96f89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830981"
 ---
-# <a name="multichannel-wma-audio-playback-in-directshow"></a>Riproduzione di audio WMA multicanale in DirectShow
+# <a name="multichannel-wma-audio-playback-in-directshow"></a>Riproduzione audio WMA multicanale in DirectShow
 
-Per riprodurre un file di Windows Media Audio multicanale in DirectShow, è necessario impostare la proprietà **MFPKEY \_ WMADEC \_ HIRESOUTPUT** direttamente nel decodificatore dopo che è stata connessa al lettore WM ASF. Questa proprietà viene definita nel file di intestazione wmcodecdsp. h, disponibile nel Windows SDK.
+Per riprodurre un file audio multimediale Windows multicanale in DirectShow, è necessario impostare la proprietà **MFPKEY \_ WMADEC \_ HIRESOUTPUT** direttamente sul decodificatore dopo la connessione al lettore ASF WM. Questa proprietà è definita nel file di intestazione wmcodecdsp.h, disponibile in Windows SDK.
 
 > [!Note]  
-> Questa procedura di configurazione è supportata solo per i file non protetti da Rights Management digitali.
+> Questa procedura di configurazione è supportata solo per i file non protetti da Digital Rights Management.
 
  
 
 I passaggi di base per abilitare l'output multicanale sono i seguenti:
 
-1.  Chiamare **RenderFile** per creare il grafico dei filtri.
-2.  Ottenere un puntatore al filtro del wrapper DMO.
-3.  Disconnettere il wrapper DMO dal renderer audio.
-4.  Utilizzare l'interfaccia **IPropertyBag** per impostare la proprietà **MFPKEY \_ WMADEC \_ HIRESOUTPUT** sul decodificatore. Il nome della proprietà è definito dalla costante globale **g \_ wszWMACHiResOutput**.
+1.  Chiamare **RenderFile per** creare il grafico del filtro.
+2.  Ottenere un puntatore al DMO Wrapper.
+3.  Disconnettere DMO wrapper di flusso dal renderer audio.
+4.  Usare **l'interfaccia IPropertyBag** per impostare la **proprietà MFPKEY \_ WMADEC \_ HIRESOUTPUT** nel decodificatore. Il nome della proprietà è definito dalla costante **globale g \_ wszWMACHiResOutput**.
 5.  Riconnettere il wrapper DMO e il renderer audio.
 6.  Eseguire il grafo.
 
-I frammenti di codice seguenti illustrano questi passaggi. Questo codice presuppone che il file di origine contenga un flusso audio e nessun flusso video. Il video codec DMO non supporta la proprietà **MFPKEY \_ WMADEC \_ HIRESOUTPUT** .
+I frammenti di codice seguenti illustrano questi passaggi. Questo codice presuppone che il file di origine contenga un flusso audio e nessun flusso video. Il codec video DMO non supporta la **proprietà MFPKEY \_ WMADEC \_ HIRESOUTPUT.**
 
 
 ```C++
@@ -91,7 +91,7 @@ HRESULT BuildGraph(IGraphBuilder *pGraph, const WCHAR *wFileName)
 
 
 
-Le funzioni di supporto del frammento di codice precedente vengono implementate nel modo seguente:
+Le funzioni helper del frammento di codice precedente vengono implementate come segue:
 
 
 ```C++

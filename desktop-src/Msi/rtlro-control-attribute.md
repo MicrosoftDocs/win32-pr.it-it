@@ -1,19 +1,19 @@
 ---
-description: Se questo bit di stile è impostato, il testo nel controllo viene visualizzato in un ordine di lettura da destra a sinistra.
+description: Se questo bit di stile è impostato, il testo nel controllo viene visualizzato in ordine di lettura da destra a sinistra.
 ms.assetid: 68394498-98ca-4bcd-86c0-3f692a26a258
-title: Attributo di controllo RTLRO
+title: Attributo del controllo RTLRO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c452a4b5b4533b24e8e59b6fe70dc2884baec0c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3c4488b31b0bac714d0f28915c074c0a6e4a8b5105e3ef2be60f3870ebcf88d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039671"
 ---
-# <a name="rtlro-control-attribute"></a>Attributo di controllo RTLRO
+# <a name="rtlro-control-attribute"></a>Attributo del controllo RTLRO
 
-Se questo bit di stile è impostato, il testo nel controllo viene visualizzato in un ordine di lettura da destra a sinistra.
+Se questo bit di stile è impostato, il testo nel controllo viene visualizzato in ordine di lettura da destra a sinistra.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -49,7 +49,7 @@ Se questo bit di stile è impostato, il testo nel controllo viene visualizzato i
 
  
 
-[Elenco di directory](directorylist-control.md)
+[Elenco directory](directorylist-control.md)
 
  
 
@@ -97,9 +97,9 @@ Se questo bit di stile è impostato, il testo nel controllo viene visualizzato i
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit RTLRO nella colonna Attributes del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo in un controllo , includere il bit RTLRO nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [attributi](control-attributes.md) e [controlli](controls.md)del controllo.
+Vedere [Attributi e controlli](control-attributes.md) del [controllo](controls.md).
 
  
 

@@ -1,49 +1,49 @@
 ---
-description: L'aggiunta di una nebbia a una scena 3D può migliorare il realismo, fornire un ambiente o impostare un mood e nascondere gli artefatti a volte quando viene visualizzata la geometria distanti.
+description: L'aggiunta di un oggetto a una scena 3D può migliorare il gioco, fornire un ambiente o impostare uno stato d'aria e nascondere artefatti talvolta causati quando viene vista una geometria distante.
 ms.assetid: 42045e96-43aa-4cec-82b5-0b46a7d5097b
-title: Nebbia (Direct3D 9)
+title: Chiama (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44b9ed234bef0f3dea76baa98390f25e9b2003a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8f06f9ff25c132feaed4ada291e7f063fcbfb3f4f1129cf934b43795b79b20aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026936"
 ---
-# <a name="fog-direct3d-9"></a>Nebbia (Direct3D 9)
+# <a name="fog-direct3d-9"></a>Chiama (Direct3D 9)
 
-L'aggiunta di una nebbia a una scena 3D può migliorare il realismo, fornire un ambiente o impostare un mood e nascondere gli artefatti a volte quando viene visualizzata la geometria distanti. Direct3D supporta due modelli di nebbia, la nebbia dei pixel e la nebbia dei vertici, ognuno con funzionalità e interfaccia di programmazione personalizzate.
+L'aggiunta di un oggetto a una scena 3D può migliorare il gioco, fornire un ambiente o impostare uno stato d'aria e nascondere artefatti talvolta causati quando viene vista una geometria distante. Direct3D supporta due modelli di primo livello, pixel vertice e vertice, ognuno con le proprie funzionalità e l'interfaccia di programmazione.
 
-In sostanza, la nebbia viene implementata combinando il colore degli oggetti in una scena con un colore di nebbia scelto in base alla profondità di un oggetto in una scena o la relativa distanza dal punto di vista. Man mano che gli oggetti crescono più distanti, il colore originale si mescola sempre più con il colore di nebbia scelto, creando l'illusione che l'oggetto sia sempre più nascosto da piccole particelle fluttuanti nella scena. Nella figura seguente viene mostrata una scena di cui viene eseguito il rendering senza nebbia e viene visualizzata una scena simile con la nebbia abilitata.
+Essenzialmente, l'oggetto viene implementato combinando il colore degli oggetti in una scena con un colore scelto in base alla profondità di un oggetto in una scena o alla distanza dal punto di vista. Quando gli oggetti diventano più distanti, il colore originale si combina sempre di più con il colore bianco scelto, creando l'avariato che l'oggetto viene sempre più nascosto da piccole particelle che fluttuano nella scena. La figura seguente mostra una scena di cui è stato eseguito il rendering senza rendering e una scena simile con il rendering abilitato.
 
-![illustrazione della stessa scena con e senza nebbia](images/fogcomp.png)
+![illustrazione della stessa scena con e senza](images/fogcomp.png)
 
-In questa illustrazione, la scena a sinistra ha un orizzonte chiaro, oltre il quale non è visibile alcuno scenario, anche se sarebbe visibile nel mondo reale. La scena a destra nasconde l'orizzonte usando un colore di nebbia identico al colore di sfondo, facendo in modo che i poligoni sembrino dissolversi nella distanza. Combinando gli effetti di nebbia discreti con la progettazione della scena creativa è possibile aggiungere umore e ammorbidire il colore degli oggetti in una scena.
+In questa illustrazione, la scena a sinistra ha un orizzonte chiaro, oltre il quale non è visibile alcun panorama, anche se sarebbe visibile nel mondo reale. La scena a destra nasconde l'orizzonte usando un colore identico al colore di sfondo, in modo che i poligoni appaiano in dissolvenza in distanza. Combinando gli effetti discreti della luna con la progettazione di scene creative, è possibile aggiungere un'animazione e attenuare il colore degli oggetti in una scena.
 
-Direct3D offre due modi per aggiungere la nebbia a una scena: la nebbia dei pixel e la nebbia del vertice, denominate per la modalità di applicazione degli effetti di nebbia. Per informazioni dettagliate, vedere [pixel Fog (Direct3D 9)](pixel-fog.md) e [Vertex Fog (Direct3D 9)](vertex-fog.md). In breve, la nebbia dei pixel, detta anche nebbia della tabella, è implementata nel driver di dispositivo e la nebbia del vertice viene implementata nel motore di illuminazione Direct3D. Un'applicazione può implementare la nebbia con un vertex shader e contemporaneamente la nebbia pixel, se lo si desidera.
+Direct3D offre due modi per aggiungere un colore a una scena: pixel pixel e vertice, denominati in base alla modalità di applicazione degli effetti della luce. Per informazioni dettagliate, vedere [Pixel Pixel Pixel (Direct3D 9)](pixel-fog.md) e [Vertex Coordinate (Direct3D 9).](vertex-fog.md) In breve, nel driver di dispositivo viene implementata l'implementazione di pixel pixel pixel, detto anche table, e nel motore di illuminazione Direct3D viene implementato vertexrere. Un'applicazione può implementare un'applicazione con un vertex shader e un pixel contemporaneamente, se necessario.
 
 > [!Note]  
-> Indipendentemente dal fatto che si usi la nebbia pixel o vertex, l'applicazione deve fornire una matrice di proiezione conforme per assicurarsi che gli effetti di nebbia siano applicati correttamente. Questa restrizione si applica anche alle applicazioni che non utilizzano il motore di trasformazione e illuminazione Direct3D. Per ulteriori informazioni su come fornire una matrice appropriata, vedere [proiezione Transform (Direct3D 9)](projection-transform.md).
+> Indipendentemente dal fatto che si usi il pixel o il vertice, l'applicazione deve fornire una matrice di proiezione conforme per garantire che gli effetti della superficie siano applicati correttamente. Questa restrizione si applica anche alle applicazioni che non usano il motore di trasformazione e illuminazione Direct3D. Per altri dettagli su come fornire una matrice appropriata, vedere [Trasformazione proiezione (Direct3D 9).](projection-transform.md)
 
  
 
-Gli argomenti seguenti introducono la nebbia e presentano informazioni sull'uso di varie funzionalità di nebbia nelle applicazioni Direct3D.
+Negli argomenti seguenti vengono presentate alcune informazioni sull'uso di varie funzionalità nelle applicazioni Direct3D.
 
--   [Formule Fog (Direct3D 9)](fog-formulas.md)
--   [Parametri di nebbia (Direct3D 9)](fog-parameters.md)
--   [Blending di nebbia (Direct3D 9)](fog-blending.md)
--   [Colore nebbia (Direct3D 9)](fog-color.md)
--   [Nebbia vertice (Direct3D 9)](vertex-fog.md)
--   [Nebbia pixel (Direct3D 9)](pixel-fog.md)
+-   [Formule di Forma (Direct3D 9)](fog-formulas.md)
+-   [Parametri Disas (Direct3D 9)](fog-parameters.md)
+-   [Blending Di Blending (Direct3D 9)](fog-blending.md)
+-   [Colore Bianco (Direct3D 9)](fog-color.md)
+-   [VertexBie (Direct3D 9)](vertex-fog.md)
+-   [Pixel Pixel Pixel (Direct3D 9)](pixel-fog.md)
 
-La fusione di nebbia è controllata dagli Stati di rendering; non fa parte della pipeline di pixel programmabile.
+La fusione delle sfumature è controllata dagli stati di rendering; non fa parte della pipeline di pixel programmabile.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Rendering Direct3D](direct3d-rendering.md)
+[Direct3D Rendering](direct3d-rendering.md)
 </dt> </dl>
 
  

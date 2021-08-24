@@ -1,31 +1,31 @@
 ---
-description: Implementazione della conversione da un oggetto input penna (tInk) a input penna.
+description: Implementazione della conversione da un oggetto input penna di testo (tInk) a input penna.
 ms.assetid: 9365da4c-3667-49f0-838f-f099d28dab44
-title: Conversione di un oggetto input penna in input penna
+title: Conversione di un oggetto input penna di testo in input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b8c7fe4a7847834fffda2df9c4ab94293756cee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eef543fda3ed53123e99ee042aed67af9cedfef3533ae47bc40d8dd284a73675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941161"
 ---
-# <a name="converting-a-text-ink-object-to-ink"></a>Conversione di un oggetto input penna in input penna
+# <a name="converting-a-text-ink-object-to-ink"></a>Conversione di un oggetto input penna di testo in input penna
 
-Implementazione della conversione da un oggetto input penna (tInk) a input penna.
+Implementazione della conversione da un oggetto input penna di testo (tInk) a input penna.
 
 ## <a name="to-convert-from-a-text-ink-object-to-ink"></a>Per eseguire la conversione da un oggetto input penna di testo a input penna
 
-1.  Usare l'interfaccia [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) per scrivere il contenuto dell'oggetto Ink di testo in un flusso. L'oggetto Ink text usa il formato serializzato con input penna per scrivere nel flusso di vapore.
-2.  Leggere il contenuto del flusso in una matrice di BYTE.
-3.  Usare il metodo [**Load**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) dell'oggetto [**InkDisp**](inkdisp-class.md) per caricare il contenuto del flusso nell'oggetto **InkDisp** .
+1.  Usare [l'interfaccia IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) per scrivere il contenuto dell'oggetto input penna di testo in un flusso. L'oggetto input penna di testo usa il formato serializzato dell'input penna per scrivere nel flusso.
+2.  Leggere il contenuto del flusso in una matrice BYTE.
+3.  Usare il [**metodo Load**](inkdisp-class.md) dell'oggetto [**InkDisp**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) per caricare il contenuto del flusso nell'oggetto **InkDisp.**
 
-## <a name="text-ink-object-to-ink-object-example"></a>Esempio di oggetto input penna testo in oggetto Ink
+## <a name="text-ink-object-to-ink-object-example"></a>Esempio di oggetto Input penna di testo nell'oggetto Ink
 
-Il frammento di codice seguente converte un oggetto input penna in input penna.
+Il frammento di codice seguente converte un oggetto input penna di testo in input penna.
 
-In primo luogo, il codice ottiene un oggetto input penna.
+In primo luogo, il codice ottiene un oggetto input penna di testo.
 
 
 ```C++
@@ -37,7 +37,7 @@ CComPtr<IInkObject *> spITextInk;
 
 
 
-Quindi, il codice crea un puntatore per il flusso che contiene il contenuto dell'oggetto input penna di testo.
+Il codice crea quindi un puntatore per il flusso che contiene il contenuto dell'oggetto input penna di testo.
 
 
 ```C++
@@ -47,7 +47,7 @@ CComPtr<IStream *> spStream = NULL;
 
 
 
-Quindi, il codice ottiene l'interfaccia [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) dall'oggetto input penna di testo.
+Il codice ottiene quindi [l'interfaccia IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) dall'oggetto input penna di testo.
 
 
 ```C++
@@ -60,7 +60,7 @@ ASSERT(SUCCEEDED(hr) && spIPersistStream);
 
 
 
-Il codice usa quindi l'interfaccia [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) per salvare il contenuto dell'oggetto Ink di testo nel flusso.
+Il codice usa quindi [l'interfaccia IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) per salvare il contenuto dell'oggetto input penna di testo nel flusso.
 
 
 ```C++
@@ -77,7 +77,7 @@ if( SUCCEEDED(hr) && pIPersistStream )
 
 
 
-Quindi, tramite il codice viene creato un oggetto [**InkCollector**](inkcollector-class.md) , viene creato un oggetto [**InkDisp**](inkdisp-class.md) per l'oggetto **InkCollector**, viene collegato l'oggetto **InkCollector** alla finestra dell'applicazione e viene abilitata la raccolta di input penna in **InkCollector**.
+Il codice crea quindi un [**oggetto InkCollector,**](inkcollector-class.md) crea un oggetto [**InkDisp**](inkdisp-class.md) per **InkCollector,** associa **InkCollector** alla finestra dell'applicazione e abilita la raccolta di input penna **in InkCollector.**
 
 
 ```C++
@@ -113,7 +113,7 @@ if( SUCCEEDED(hr) && spStream)
 
 
 
-Il codice recupera quindi le dimensioni del flusso e crea una matrice sicura per conservare il contenuto del flusso.
+Il codice recupera quindi le dimensioni del flusso e crea una matrice sicura per contenere il contenuto del flusso.
 
 
 ```C++

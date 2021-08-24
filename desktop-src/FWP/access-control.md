@@ -1,66 +1,66 @@
 ---
-title: Controllo di accesso (piattaforma filtro Windows)
-description: In Windows Filtering Platform (WFP), il servizio BFE (Base Filtering Engine) implementa il modello di controllo di accesso di Windows standard basato sui token di accesso e i descrittori di sicurezza.
+title: Controllo di accesso (Windows Filtering Platform)
+description: In Windows Filtering Platform (WFP), il servizio Base Filtering Engine (BFE) implementa il modello di controllo di accesso Windows standard basato su token di accesso e descrittori di sicurezza.
 ms.assetid: 936ad5f0-d5cd-47ed-b9e5-a7d82a4da603
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0df63b6fe92b18614a7ccf205ccf826927664ee
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 1ad8d1cc292358b156a8853a8a141426fda638d64474d1413747e2ebdb59d7a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104350986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901097"
 ---
-# <a name="access-control-windows-filtering-platform"></a>Controllo di accesso (piattaforma filtro Windows)
+# <a name="access-control-windows-filtering-platform"></a>Controllo di accesso (Windows Filtering Platform)
 
-In Windows Filtering Platform (WFP), il servizio BFE (Base Filtering Engine) implementa il [modello di controllo di accesso di Windows](/windows/desktop/SecAuthZ/access-control-model) standard basato sui token di accesso e i descrittori di sicurezza.
+In Windows Filtering Platform (WFP), il servizio Base Filtering Engine (BFE) implementa il modello [di](/windows/desktop/SecAuthZ/access-control-model) controllo di accesso Windows standard basato su token di accesso e descrittori di sicurezza.
 
 ## <a name="access-control-model"></a>Modello di controllo di accesso
 
-I descrittori di sicurezza possono essere specificati quando si aggiungono nuovi oggetti WFP, ad esempio filtri e sottolivelli. I descrittori di sicurezza vengono gestiti tramite le funzioni di gestione PAM **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0**, dove * *\** _ sta per il nome dell'oggetto WFP. Queste funzioni sono semanticamente identiche alle funzioni Windows [_ *GetSecurityInfo* *](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) e [**SetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo) .
+I descrittori di sicurezza possono essere specificati quando si aggiungono nuovi oggetti WFP, ad esempio filtri e livelli secondari. I descrittori di sicurezza vengono gestiti usando le funzioni di gestione di WFP **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0**, dove * _ è l'acronimo del *\** nome dell'oggetto WFP. Queste funzioni sono semanticamente identiche alle funzioni Windows [_ *GetSecurityInfo* *](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) [**e SetSecurityInfo.**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)
 
 > [!Note]  
-> Non è possibile chiamare le funzioni **\* SetSecurityInfo0 di Fwpm** dall'interno di una transazione esplicita.
+> Le **funzioni Fwpm \* SetSecurityInfo0 non** possono essere chiamate dall'interno di una transazione esplicita.
 
  
 
 > [!Note]  
-> Le funzioni **Fwpm \* SetSecurityInfo0** possono essere chiamate solo dall'interno di una sessione dinamica se vengono usate per gestire un oggetto dinamico creato all'interno della stessa sessione.
+> Le **funzioni Fwpm \* SetSecurityInfo0** possono essere chiamate dall'interno di una sessione dinamica solo se vengono usate per gestire un oggetto dinamico creato all'interno della stessa sessione.
 
  
 
 Il descrittore di sicurezza predefinito per il motore di filtro (l'oggetto motore radice nel diagramma seguente) è il seguente.
 
--   Concedere i diritti di accesso **generici \_ All** (GA) al gruppo Administrators predefinito.
--   Concedere i diritti di accesso generico di **\_ lettura** (gr) Generic **\_ Write** ( **GW) per \_** gli operatori di configurazione di rete.
--   Concedere i diritti di accesso **GRGWGX** ai seguenti identificatori di sicurezza del servizio (SSID): MpsSvc (Windows Firewall), napagent (agente protezione accesso alla rete), PolicyAgent (agente criteri IPSec), RPCSS (Remote Procedure Call) e WdiServiceHost (host del servizio di diagnostica).
--   Concedere a **FWPM \_ ACTRL \_ Open** e **FWPM \_ ACTRL \_ classificate** a tutti. Si tratta di diritti di accesso specifici di WFP, descritti nella tabella seguente.
+-   Concedere **diritti \_ di** accesso GENERIC ALL (GA) al gruppo Administrators predefinito.
+-   Concedere **diritti di accesso GENERIC \_ READ** (GR) **GENERIC \_ WRITE** (GW) **GENERIC \_ EXECUTE** (GX) agli operatori di configurazione di rete.
+-   Concedere i diritti di accesso **GRGWGX** agli identificatori di sicurezza del servizio (SSID) seguenti: MpsSvc (firewall Windows), NapAgent (agente protezione accesso alla rete), PolicyAgent (agente criteri IPsec), RpcSs (Remote Procedure Call) e WdiServiceHost (host del servizio di diagnostica).
+-   Concedere **A tutti gli utenti FWPM \_ ACTRL \_ OPEN** e **FWPM \_ ACTRL \_ CLASSIFY.** Si tratta di diritti di accesso specifici di PAM, descritti nella tabella seguente.
 
-I rimanenti descrittori di sicurezza predefiniti sono derivati tramite ereditarietà.
+I descrittori di sicurezza predefiniti rimanenti vengono derivati tramite ereditarietà.
 
-Sono disponibili alcuni controlli di accesso, ad esempio per le chiamate di funzione **Fwpm \* Add0**, **Fwpm \* CreateEnumHandle0**, **Fwpm \* SubscribeChanges0** , che non possono essere eseguite a livello di singolo oggetto. Per queste funzioni sono disponibili oggetti contenitore per ogni tipo di oggetto. Per i tipi di oggetto standard (ad esempio, provider, callout, filtri), le funzioni **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0** esistenti sono in overload, in modo che un parametro **GUID** null identifichi il contenitore associato. Per gli altri tipi di oggetto (ad esempio, eventi di rete e associazioni di sicurezza IPsec), sono disponibili funzioni esplicite per la gestione delle informazioni di sicurezza del contenitore.
+Esistono alcuni controlli di accesso, ad esempio per **Fwpm \* Add0,** **Fwpm \* CreateEnumHandle0,** **Fwpm \* SubscribeChanges0** chiamate di funzione, che non possono essere eseguite a livello di singolo oggetto. Per queste funzioni sono disponibili oggetti contenitore per ogni tipo di oggetto. Per i tipi di oggetto standard (ad esempio, provider, callout, filtri), le funzioni **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0** esistenti sono in overload, in modo che un parametro **GUID** Null identifichi il contenitore associato. Per gli altri tipi di oggetto, ad esempio eventi di rete e associazioni di sicurezza IPsec, sono disponibili funzioni esplicite per la gestione delle informazioni di sicurezza del contenitore.
 
-BFE supporta l'ereditarietà automatica delle voci di controllo di accesso (DACL) dell'elenco di controllo di accesso discrezionale (DACL). BFE non supporta le voci dell'elenco di controllo di accesso di sistema (SACL). Gli oggetti ereditano le voci ACE dal relativo contenitore. I contenitori ereditano le voci ACE dal motore di filtro. Il diagramma seguente illustra i percorsi di propagazione.
+BFE supporta l'ereditarietà automatica delle voci di controllo di accesso (ACE) elenco di controllo di accesso discrezionale (DACL). BFE non supporta ACE dell'elenco di controllo di accesso di sistema (SACL). Gli oggetti ereditano le voci ACE dal relativo contenitore. I contenitori ereditano le voci ACE dal motore di filtro. I percorsi di propagazione sono illustrati nel diagramma seguente.
 
-![Diagramma che mostra i percorsi di propagazione ACE, a partire da' Engine '.](images/access-control.jpg)
+![Diagramma che mostra i percorsi di propagazione ACE, a partire da 'Engine'.](images/access-control.jpg)
 
-Per i tipi di oggetto standard, BFE impone tutti i diritti di accesso generici e standard. Inoltre, WFP definisce i seguenti diritti di accesso specifici.
+Per i tipi di oggetto standard, BFE applica tutti i diritti di accesso generici e standard. Inoltre, WFP definisce i diritti di accesso specifici seguenti.
 
 
 
-| Diritto di accesso WFP                                                                                                                        | Descrizione                                                                                                                                                              |
+| Diritto di accesso PAM                                                                                                                        | Descrizione                                                                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="FWPM_ACTRL_ADD"></span><span id="fwpm_actrl_add"></span>**\_aggiunta FWPM ACTRL \_**<br/>                                       | Obbligatorio per aggiungere un oggetto a un contenitore.<br/>                                                                                                                     |
-| <span id="FWPM_ACTRL_ADD_LINK"></span><span id="fwpm_actrl_add_link"></span>**FWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/>                       | Obbligatorio per creare un'associazione a un oggetto. Per aggiungere, ad esempio, un filtro che fa riferimento a un callout, il chiamante deve disporre dell' \_ accesso Aggiungi collegamento al callout.<br/> |
-| <span id="FWPM_ACTRL_BEGIN_READ_TXN"></span><span id="fwpm_actrl_begin_read_txn"></span>**FWPM \_ ACTRL \_ Begin \_ Read \_ transazione**<br/>    | Obbligatorio per iniziare una transazione di lettura esplicita.<br/>                                                                                                               |
-| <span id="FWPM_ACTRL_BEGIN_WRITE_TXN"></span><span id="fwpm_actrl_begin_write_txn"></span>**FWPM \_ ACTRL \_ Begin \_ Write \_ transazione**<br/> | Obbligatorio per iniziare una transazione di scrittura esplicita.<br/>                                                                                                              |
-| <span id="FWPM_ACTRL_CLASSIFY"></span><span id="fwpm_actrl_classify"></span>**\_classificazione FWPM ACTRL \_**<br/>                        | Obbligatorio per la classificazione in base a un livello in modalità utente.<br/>                                                                                                               |
-| <span id="FWPM_ACTRL_ENUM"></span><span id="fwpm_actrl_enum"></span>**\_enumerazione FWPM ACTRL \_**<br/>                                    | Obbligatorio per enumerare gli oggetti in un contenitore. Tuttavia, l'enumeratore restituisce solo gli oggetti a cui il chiamante \_ ha \_ accesso in lettura ACTRL FWPM.<br/>              |
-| <span id="FWPM_ACTRL_OPEN"></span><span id="fwpm_actrl_open"></span>**FWPM \_ ACTRL \_ aperto**<br/>                                    | Obbligatorio per aprire una sessione con BFE.<br/>                                                                                                                          |
-| <span id="FWPM_ACTRL_READ"></span><span id="fwpm_actrl_read"></span>**FWPM \_ ACTRL \_ Read**<br/>                                    | Obbligatorio per leggere le proprietà di un oggetto.<br/>                                                                                                                      |
-| <span id="FWPM_ACTRL_READ_STATS"></span><span id="fwpm_actrl_read_stats"></span>**\_ \_ statistiche leggere FWPM \_ ACTRL**<br/>                 | Obbligatorio per leggere le statistiche.<br/>                                                                                                                                  |
-| <span id="FWPM_ACTRL_SUBSCRIBE"></span><span id="fwpm_actrl_subscribe"></span>**sottoscrizione di FWPM \_ ACTRL \_**<br/>                     | Obbligatorio per sottoscrivere le notifiche. I sottoscrittori riceveranno solo le notifiche per gli oggetti a cui hanno \_ accesso in lettura ACTRL FWPM \_ .<br/>                 |
-| <span id="FWPM_ACTRL_WRITE"></span><span id="fwpm_actrl_write"></span>**\_scrittura FWPM ACTRL \_**<br/>                                 | Obbligatorio per impostare le opzioni del motore.<br/>                                                                                                                               |
+| <span id="FWPM_ACTRL_ADD"></span><span id="fwpm_actrl_add"></span>**FWPM \_ ACTRL \_ ADD**<br/>                                       | Obbligatorio per aggiungere un oggetto a un contenitore.<br/>                                                                                                                     |
+| <span id="FWPM_ACTRL_ADD_LINK"></span><span id="fwpm_actrl_add_link"></span>**FWPM \_ ACTRL \_ ADD \_ LINK**<br/>                       | Obbligatorio per creare un'associazione a un oggetto. Ad esempio, per aggiungere un filtro che fa riferimento a un callout, il chiamante deve avere accesso ADD \_ LINK al callout.<br/> |
+| <span id="FWPM_ACTRL_BEGIN_READ_TXN"></span><span id="fwpm_actrl_begin_read_txn"></span>**FWPM \_ ACTRL \_ BEGIN \_ READ \_ TXN**<br/>    | Obbligatorio per avviare una transazione di lettura esplicita.<br/>                                                                                                               |
+| <span id="FWPM_ACTRL_BEGIN_WRITE_TXN"></span><span id="fwpm_actrl_begin_write_txn"></span>**FWPM \_ ACTRL \_ BEGIN \_ WRITE \_ TXN**<br/> | Obbligatorio per iniziare una transazione di scrittura esplicita.<br/>                                                                                                              |
+| <span id="FWPM_ACTRL_CLASSIFY"></span><span id="fwpm_actrl_classify"></span>**FWPM \_ ACTRL \_ CLASSIFY**<br/>                        | Obbligatorio per la classificazione in base a un livello in modalità utente.<br/>                                                                                                               |
+| <span id="FWPM_ACTRL_ENUM"></span><span id="fwpm_actrl_enum"></span>**ENUMERAZIONE ACTRL FWPM \_ \_**<br/>                                    | Obbligatorio per enumerare gli oggetti in un contenitore. Tuttavia, l'enumeratore restituisce solo oggetti a cui il chiamante ha accesso FWPM \_ ACTRL \_ READ.<br/>              |
+| <span id="FWPM_ACTRL_OPEN"></span><span id="fwpm_actrl_open"></span>**FWPM \_ ACTRL \_ OPEN**<br/>                                    | Obbligatorio per aprire una sessione con BFE.<br/>                                                                                                                          |
+| <span id="FWPM_ACTRL_READ"></span><span id="fwpm_actrl_read"></span>**FWPM \_ ACTRL \_ READ**<br/>                                    | Obbligatorio per leggere le proprietà di un oggetto.<br/>                                                                                                                      |
+| <span id="FWPM_ACTRL_READ_STATS"></span><span id="fwpm_actrl_read_stats"></span>**STATISTICHE LETTURA ACTRL FWPM \_ \_ \_**<br/>                 | Obbligatorio per leggere le statistiche.<br/>                                                                                                                                  |
+| <span id="FWPM_ACTRL_SUBSCRIBE"></span><span id="fwpm_actrl_subscribe"></span>**FWPM \_ ACTRL \_ SUBSCRIBE**<br/>                     | Obbligatorio per sottoscrivere le notifiche. I Sottoscrittori riceveranno notifiche solo per gli oggetti a cui hanno accesso FWPM \_ ACTRL \_ READ.<br/>                 |
+| <span id="FWPM_ACTRL_WRITE"></span><span id="fwpm_actrl_write"></span>**FWPM \_ ACTRL \_ WRITE**<br/>                                 | Obbligatorio per impostare le opzioni del motore.<br/>                                                                                                                               |
 
 
 
@@ -68,24 +68,24 @@ Per i tipi di oggetto standard, BFE impone tutti i diritti di accesso generici e
 
 BFE ignora tutti i controlli di accesso per i chiamanti in modalità kernel.
 
-Per impedire agli amministratori di bloccarsi da BFE, ai membri del gruppo Administrators predefinito viene sempre concesso **FWPM \_ ACTRL \_ aperto** all'oggetto motore. Pertanto, un amministratore può ottenere nuovamente l'accesso tramite i passaggi seguenti.
+Per impedire agli amministratori di bloccarsi da BFE, ai membri del gruppo administrators predefinito viene sempre concesso **FWPM \_ ACTRL \_ OPEN** all'oggetto motore. Di conseguenza, un amministratore può ottenere nuovamente l'accesso tramite la procedura seguente.
 
--   Abilitare il **privilegio \_ se \_ accetta \_ nome proprietà** .
--   Chiamare [**FwpmEngineOpen0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0). La chiamata ha esito positivo perché il chiamante è un membro degli amministratori predefiniti.
--   Assumere la proprietà dell'oggetto motore. Questa operazione ha esito positivo perché il chiamante ha il privilegio **se \_ accetta il \_ \_ nome di proprietà** .
--   Aggiornare l'elenco DACL. Questa operazione ha esito positivo perché il proprietario ha sempre l'accesso a **\_ DAC in scrittura**
+-   Abilitare il **privilegio edizione Standard \_ TAKE OWNERSHIP \_ \_ NAME.**
+-   Chiamare [**FwpmEngineOpen0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0). La chiamata ha esito positivo perché il chiamante è membro di Amministratori predefiniti.
+-   Assumere la proprietà dell'oggetto motore. Questa operazione ha esito positivo perché il chiamante ha **edizione Standard \_ il privilegio TAKE OWNERSHIP \_ \_ NAME.**
+-   Aggiornare l'elenco DACL. L'operazione ha esito positivo perché il proprietario ha sempre accesso **\_ all'applicazione livello dati WRITE**
 
-Poiché BFE supporta il proprio controllo personalizzato, non genera controlli di accesso agli oggetti generici. Quindi, il SACL viene ignorato.
+Poiché BFE supporta il proprio controllo personalizzato, non genera controlli di accesso agli oggetti generici. Di conseguenza, l'elenco SACL viene ignorato.
 
-## <a name="wfp-required-access-rights"></a>Diritti di accesso necessari per Pam
+## <a name="wfp-required-access-rights"></a>DIRITTI DI ACCESSO OBBLIGATORI
 
-La tabella seguente illustra i diritti di accesso richiesti dalle funzioni PAM per accedere a vari oggetti della piattaforma di filtro. Le **\* *funzioni _ FwpmFilter sono elencate come esempio per l'accesso agli oggetti standard. Tutte le altre funzioni che accedono agli oggetti standard seguono il modello di* \*** accesso alle funzioni _ FwpmFilter.
+La tabella seguente illustra i diritti di accesso richiesti dalle funzioni WFP per accedere a vari oggetti della piattaforma di filtro. Le **funzioni FwpmFilter \* *_ sono elencate come esempio per l'accesso agli oggetti standard. Tutte le altre funzioni che accedono a oggetti standard seguono il modello di* accesso delle funzioni _ FwpmFilter. \***
 
 
 
 Funzione
 
-Oggetto selezionato
+Object Checked
 
 Accesso obbligatorio
 
@@ -93,131 +93,131 @@ Accesso obbligatorio
 
 Motore
 
-**FWPM \_ ACTRL \_ aperto**
+**FWPM \_ ACTRL \_ OPEN**
 
 [**FwpmEngineGetOption0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmenginegetoption0)
 
 Motore
 
-**FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ READ**
 
 [**FwpmEngineSetOption0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmenginesetoption0)
 
 Motore
 
-**\_scrittura FWPM ACTRL \_**
+**FWPM \_ ACTRL \_ WRITE**
 
 [**FwpmSessionCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessioncreateenumhandle0)
 
 Motore
 
-**\_enumerazione FWPM ACTRL \_**
+**ENUMERAZIONE ACTRL FWPM \_ \_**
 
 [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0)
 
 Motore
 
-**FWPM \_ ACTRL \_ Begin \_ Read \_ transazione**  &  **FWPM \_ ACTRL \_ Begin \_ Write \_ transazione**
+**FWPM \_ ACTRL \_ BEGIN \_ READ \_ TXN**  &  **FWPM \_ ACTRL BEGIN WRITE \_ \_ \_ TXN**
 
 [**FwpmFilterAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilteradd0)
 
 Provider di contenitori<br/> Livello<br/> Sub-Layer<br/> Callout<br/> Contesto del provider<br/>
 
-**FWPM \_ ACTRL \_ ADDFWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/> **FWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/> **FWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/> **FWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/> **FWPM \_ ACTRL \_ Aggiungi \_ collegamento**<br/>
+**FWPM \_ ACTRL \_ ADDFWPM \_ ACTRL \_ ADD \_ LINK**<br/> **FWPM \_ ACTRL \_ ADD \_ LINK**<br/> **FWPM \_ ACTRL \_ ADD \_ LINK**<br/> **FWPM \_ ACTRL \_ ADD \_ LINK**<br/> **FWPM \_ ACTRL \_ ADD \_ LINK**<br/>
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilterdeletebyid0)[**FwpmFilterDeleteByKey0** FwpmFilterDeleteById0](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilterdeletebykey0)<br/>
+[**FwpmFilterDeleteById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilterdeletebyid0)[**FwpmFilterDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilterdeletebykey0)<br/>
 
 Filtra
 
 **DELETE**
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltergetbyid0)[**FwpmFilterGetByKey0** FwpmFilterGetById0](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltergetbykey0)<br/>
+[**FwpmFilterGetById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltergetbyid0)[**FwpmFilterGetByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltergetbykey0)<br/>
 
 Filtra
 
-**FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ READ**
 
 [**FwpmFilterCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltercreateenumhandle0)
 
 Filtro contenitore<br/>
 
-**FWPM \_ ACTRL \_ ENUMFWPM \_ ACTRL \_ Read**<br/>
+**FWPM \_ ACTRL \_ ENUMFWPM \_ ACTRL \_ READ**<br/>
 
 [**FwpmFilterSubscribeChanges0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltersubscribechanges0)
 
 Contenitore
 
-**sottoscrizione di FWPM \_ ACTRL \_**
+**FWPM \_ ACTRL \_ SUBSCRIBE**
 
 [**FwpmFilterSubscriptionsGet0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltersubscriptionsget0)
 
 Contenitore
 
-**FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ READ**
 
 [**IPsecGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecgetstatistics0)
 
-DB SA IPsec
+DATABASE SA IPsec
 
-**\_ \_ statistiche leggere FWPM \_ ACTRL**
+**STATISTICHE DI LETTURA \_ FWPM ACTRL \_ \_**
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextcreate0)[**IPsecSaContextGetSpi0** IPsecSaContextCreate0](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetspi0)<br/> [**IPsecSaContextAddInbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddinbound0)<br/> [**IPsecSaContextAddOutbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddoutbound0)<br/>
+[**IPsecSaContextCreate0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextcreate0)[**IPsecSaContextGetSpi0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetspi0)<br/> [**IPsecSaContextAddInbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddinbound0)<br/> [**IPsecSaContextAddOutbound0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextaddoutbound0)<br/>
 
-DB SA IPsec
+DATABASE SA IPsec
 
-**\_aggiunta FWPM ACTRL \_**
+**FWPM \_ ACTRL \_ ADD**
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextdeletebyid0)[**IPsecSaContextExpire0** IPsecSaContextDeleteById0](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextexpire0)<br/>
+[**IPsecSaContextDeleteById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextdeletebyid0)[**IPsecSaContextExpire0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextexpire0)<br/>
 
-DB SA IPsec
+DATABASE SA IPsec
 
 **DELETE**
 
 [**IPsecSaContextGetById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextgetbyid0)
 
-DB SA IPsec
+DATABASE SA IPsec
 
-**FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ READ**
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextcreateenumhandle0)[**IPsecSaCreateEnumHandle0** IPsecSaContextCreateEnumHandle0](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacreateenumhandle0)<br/>
+[**IPsecSaContextCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacontextcreateenumhandle0)[**IPsecSaCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsacreateenumhandle0)<br/>
 
-DB SA IPsec
+DATABASE SA IPsec
 
-**FWPM \_ ACTRL \_ enum**  &  **FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ ENUM**  &  **FWPM \_ ACTRL \_ READ**
 
 [**IkeextGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics0)
 
-DB SA IKE
+Database sa IKE
 
-**\_ \_ statistiche leggere FWPM \_ ACTRL**
+**STATISTICHE DI LETTURA \_ FWPM ACTRL \_ \_**
 
 [**IkeextSaDeleteById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsadeletebyid0)
 
-DB SA IKE
+Database sa IKE
 
 **DELETE**
 
 [**IkeextSaGetById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid0)
 
-DB SA IKE
+Database sa IKE
 
-**FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ READ**
 
 [**IkeextSaCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsacreateenumhandle0)
 
-DB SA IKE
+Database sa IKE
 
-**FWPM \_ ACTRL \_ enum**  &  **FWPM \_ ACTRL \_ Read**
+**FWPM \_ ACTRL \_ ENUM**  &  **FWPM \_ ACTRL \_ READ**
 
 [**FwpmNetEventCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventcreateenumhandle0)
 
 Contenitore
 
-**\_enumerazione FWPM ACTRL \_**
+**ENUMERAZIONE \_ ACTRL FWPM \_**
 
-[](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0)[**FwpmIPsecTunnelDeleteByKey0** FwpmIPsecTunnelAdd0](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneldeletebykey0)<br/>
+[**FwpmIPsecTunnelAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0)[**FwpmIPsecTunnelDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneldeletebykey0)<br/>
 
-Nessun controllo di accesso aggiuntivo oltre a quelli per i singoli contesti di filtri e provider
+Nessun controllo di accesso aggiuntivo oltre a quelli per i singoli filtri e contesti del provider
 
 
 
@@ -230,10 +230,10 @@ Nessun controllo di accesso aggiuntivo oltre a quelli per i singoli contesti di 
 [**Diritti di accesso standard**](/windows/desktop/SecAuthZ/standard-access-rights)
 </dt> <dt>
 
-[Modello di controllo di accesso di Windows](/windows/desktop/SecAuthZ/access-control-model)
+[Windows di controllo di accesso](/windows/desktop/SecAuthZ/access-control-model)
 </dt> <dt>
 
-[**Identificatori dei diritti di accesso della piattaforma filtro Windows**](access-right-identifiers.md)
+[**Windows Filtro degli identificatori dei diritti di accesso alla piattaforma**](access-right-identifiers.md)
 </dt> </dl>
 
  

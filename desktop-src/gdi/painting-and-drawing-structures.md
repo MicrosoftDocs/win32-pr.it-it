@@ -1,5 +1,5 @@
 ---
-description: La struttura seguente viene utilizzata con il disegno e il disegno.
+description: La struttura seguente viene usata con il disegno e il disegno.
 ms.assetid: 99fa13b8-0b62-4a72-ad08-78bb3779077a
 title: Strutture di disegno e disegno
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119965601"
 ---
 # <a name="painting-and-drawing-structures"></a>Strutture di disegno e disegno
 
-La struttura seguente viene utilizzata con il disegno e il disegno.
+La struttura seguente viene usata con il disegno e il disegno.
 
 [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct)
 

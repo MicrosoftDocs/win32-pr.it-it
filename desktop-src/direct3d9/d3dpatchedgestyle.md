@@ -1,5 +1,5 @@
 ---
-description: Definisce se la modalità a tessellazione corrente è discreta o continua.
+description: Definisce se la modalità a scorrimento corrente è discreta o continua.
 ms.assetid: d8055a25-6a8e-4018-a993-762f6f0e0cd3
 title: Enumerazione D3DPATCHEDGESTYLE (D3D9Types.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119987241"
 ---
 # <a name="d3dpatchedgestyle-enumeration"></a>Enumerazione D3DPATCHEDGESTYLE
 
-Definisce se la modalità a tessellazione corrente è discreta o continua.
+Definisce se la modalità a scorrimento corrente è discreta o continua.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,27 +44,27 @@ typedef enum D3DPATCHEDGESTYLE {
 <span id="D3DPATCHEDGE_DISCRETE"></span><span id="d3dpatchedge_discrete"></span>**D3DPATCHEDGE \_ DISCRETE**
 </dt> <dd>
 
-Stile del bordo discreto. In modalità discreta è possibile specificare la virgola mobile, ma verrà troncata a numeri interi.
+Stile bordo discreto. In modalità discreta è possibile specificare lo schema a interi float, ma verrà troncato a numeri interi.
 
 </dd> <dt>
 
 <span id="D3DPATCHEDGE_CONTINUOUS"></span><span id="d3dpatchedge_continuous"></span>**D3DPATCHEDGE \_ CONTINUOUS**
 </dt> <dd>
 
-Stile bordo continuo. In modalità continua, la tessellazione viene specificata come valori float che possono essere variati senza problemi per ridurre gli artefatti "popping".
+Stile bordo continuo. In modalità continua, la struttura a scorrimento viene specificata come valori float che possono essere variati senza problemi per ridurre gli artefatti di "estrazioni".
 
 </dd> <dt>
 
 <span id="D3DPATCHEDGE_FORCE_DWORD"></span><span id="d3dpatchedge_force_dword"></span>**D3DPATCHEDGE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che la tessellazione continua produce un modello a tessellazione completamente diverso da quello discreto per gli stessi valori a tessellazione (questo è più evidente in modalità wireframe). Pertanto, 4.0 continuous non è uguale a 4 discrete.
+Si noti che la struttura a tessellazione continua produce un modello a tessitura completamente diverso da quello discreto per gli stessi valori a scorrimento (questo è più evidente in modalità wireframe). La versione 4.0 continua non corrisponde quindi a 4 valori discreti.
 
 ## <a name="requirements"></a>Requisiti
 

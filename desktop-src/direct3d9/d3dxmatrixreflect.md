@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4118a5f0a1cd997d5fab5fecebae449d4c30b09
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a26548299c73259016a640218a74c1ffa5e922cb52f6d13cdad5978e34a2e3c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027341"
 ---
 # <a name="d3dxmatrixreflect-function-d3dx9mathh"></a>Funzione D3DXMatrixReflect (D3dx9math.h)
 
@@ -46,7 +46,7 @@ D3DXMATRIX* D3DXMatrixReflect(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Puntatore alla struttura [**D3DXPLANE di**](d3dxplane.md) origine.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che riflette il sistema di coordinate sul piano di origine.
+Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che riflette il sistema di coordinate sul piano di origine.
 
 ## <a name="remarks"></a>Commenti
 

@@ -24,7 +24,7 @@ Questo argomento elenca i costruttori della [**classe**](/windows/win32/api/gdip
 | [**Grafica (HDC)**](/previous-versions//ms536160(v=vs.85))                | Crea un [**oggetto Graphics::Graphics**](/previous-versions//ms536160(v=vs.85)) associato a un contesto di dispositivo specificato.<br/>                                |
 | [**Graphics(Image \* )**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inimage))          | Crea un [**oggetto Graphics::Graphics**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inimage)) associato a un [**oggetto Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image)<br/>   |
 | [**Graphics(HWND, BOOL)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhwnd_inbool))     | Crea un [**oggetto Graphics::Graphics**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhwnd_inbool)) associato a una finestra specificata.<br/>                                   |
-| [**Graphics(HDC,HANDLE)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhdc_inhandle)) | Crea un [**oggetto Graphics::Graphics**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhdc_inhandle)) associato a un contesto di dispositivo specificato e a un dispositivo specificato.<br/> |
+| [**Graphics(HDC, HANDLE)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhdc_inhandle)) | Crea un [**oggetto Graphics::Graphics**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-graphics(inhdc_inhandle)) associato a un contesto di dispositivo specificato e a un dispositivo specificato.<br/> |
 
 
 

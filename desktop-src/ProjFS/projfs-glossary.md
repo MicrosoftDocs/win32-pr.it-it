@@ -1,74 +1,74 @@
 ---
-title: Glossario del file System proiettato di Windows
+title: Windows Glossario del file system proiettato
 description: Termini speciali usati in ProjFS.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: c6eac8faa83e2c898e4b1a3ada5c24ef81151b22
-ms.sourcegitcommit: a48b68a75323edfb902eb04fbe6d0ecba6988c21
+ms.openlocfilehash: 12b6e90d98fce3882aa5dc8d552f88e9cd9f389d24673fdc5caf175e180082f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "106299477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030984"
 ---
-# <a name="windows-projected-file-system-glossary"></a>Glossario del file System proiettato di Windows
+# <a name="windows-projected-file-system-glossary"></a>Windows Glossario del file system proiettato
 
 Termini speciali usati in ProjFS.
 
 <dl>
 <dt>
 
-<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**Archivio di backup**
+<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**archivio di backup**
 </dt>
 <dd>
 
-Dati gerarchici gestiti dal provider proiettati nella file system come file e directory.
+I dati gerarchici gestiti dal provider che vengono proiettati nel file system come file e directory.
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_dirty_placeholder"></span><span id="PROJFS.GLOSSARY_DIRTY_PLACEHOLDER"></span>**segnaposto Dirty**
+<span id="projfs.glossary_dirty_placeholder"></span><span id="PROJFS.GLOSSARY_DIRTY_PLACEHOLDER"></span>**Segnaposto dirty**
 </dt>
 <dd>
 
-Un file o una directory che è stata modificata localmente e non è più una cache dello stato nell'archivio del provider.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+Un file o una directory che è stata modificata localmente e non è più una cache del relativo stato nell'archivio del provider.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_full_file_directory"></span><span id="PROJFS.GLOSSARY_FULL_FILE_DIRECTORY"></span>**file/directory completa**
+<span id="projfs.glossary_full_file_directory"></span><span id="PROJFS.GLOSSARY_FULL_FILE_DIRECTORY"></span>**file/directory completo**
 </dt>
 <dd>
 
-Un file o una directory creata nel file system locale o un file che è stato modificato, rendendolo non più una cache dello stato nell'archivio di backup.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+Un file o una directory creata nel file system locale o un file che è stato modificato, rendendo non più una cache del relativo stato nell'archivio di backup.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_hydrated_placeholder"></span><span id="PROJFS.GLOSSARY_HYDRATED_PLACEHOLDER"></span>**segnaposto idrato**
+<span id="projfs.glossary_hydrated_placeholder"></span><span id="PROJFS.GLOSSARY_HYDRATED_PLACEHOLDER"></span>**segnaposto indossato**
 </dt>
 <dd>
 
-File il cui contenuto e metadati sono stati memorizzati nella cache su disco.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+File i cui contenuti e metadati sono stati memorizzati nella cache su disco.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**segnaposto**
+<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**Segnaposto**
 </dt>
 <dd>
 
-Un file o una directory che non è completamente presente su disco.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+File o directory non completamente presente sul disco.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**rimozione definitiva**
+<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**Tombstone**
 </dt>
 <dd>
 
-Segnaposto nascosto speciale che rappresenta un elemento eliminato dalla file system locale.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+Segnaposto nascosto speciale che rappresenta un elemento eliminato dal file system.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
@@ -77,7 +77,7 @@ Segnaposto nascosto speciale che rappresenta un elemento eliminato dalla file sy
 </dt>
 <dd>
 
-Un file o una directory che non esiste fisicamente sul disco, ma viene proiettata in risultati di enumerazione.  Vedere [lo stato della cache nella radice di virtualizzazione](cache-state.md).
+File o directory che non esiste fisicamente su disco, ma che viene proiettato nei risultati dell'enumerazione.  Vedere [Cache State (Stato della cache) in Virtualization Root (Radice di virtualizzazione).](cache-state.md)
 </dd>
 
 <dt>
@@ -86,7 +86,7 @@ Un file o una directory che non esiste fisicamente sul disco, ma viene proiettat
 </dt>
 <dd>
 
-Oggetto in memoria che gestisce la comunicazione tra il provider e ProjFS per il set di file e directory che si trovano in una particolare radice di virtualizzazione.
+Oggetto in memoria che gestisce la comunicazione tra il provider e ProjFS per il set di file e directory che si trovano in una determinata radice di virtualizzazione.
 </dd>
 
 <dt>
@@ -95,7 +95,7 @@ Oggetto in memoria che gestisce la comunicazione tra il provider e ProjFS per il
 </dt>
 <dd>
 
-Una directory nella file system in cui vengono proiettati i dati del provider.
+Una directory nel file system in cui vengono proiettati i dati del provider.
 </dd>
 
 </dl>

@@ -17,11 +17,11 @@ Sia i writer che i richiedenti mantengono le informazioni necessarie per un'oper
 
 Questi documenti, rispettivamente il documento [*dei metadati*](vssgloss-w.md) del writer e il documento dei componenti di [*backup,*](vssgloss-b.md)vengono usati come base per la comunicazione e il coordinamento del writer e del richiedente durante le attività di backup e ripristino.
 
-I metadati vengono rappresentati in formato XML usando uno schema proprietario. I metadati possono essere copiati su disco, su nastro o in qualsiasi altro dispositivo di archiviazione di massa. Deve sempre essere salvato nel supporto di backup durante un'operazione di backup e dovrà essere recuperato da tale supporto nel corso di un'operazione di ripristino.
+I metadati sono rappresentati in formato XML usando uno schema proprietario. I metadati possono essere copiati su disco, nastro o qualsiasi altro dispositivo di archiviazione di massa. Deve sempre essere salvato nel supporto di backup durante un'operazione di backup e dovrà essere recuperato da tale supporto nel corso di un'operazione di ripristino.
 
 **Attenzione:** I dettagli specifici del formato e dello schema sono solo per uso di sistema. Gli sviluppatori non devono tentare di modificare o usare direttamente la rappresentazione XML dei metadati.
 
-I writer e i richiedenti sono forniti con un'ampia gamma di metodi di query e set per accedere ai documenti Backup Components e Writer Metadata e modificarli:
+I writer e i richiedenti sono forniti con un'ampia gamma di metodi di query e set per accedere ai documenti Componenti di backup e Metadati del writer e modificarli:
 
 -   [Uso del documento dei metadati del writer](working-with-the-writer-metadata-document.md)
 -   [Uso del documento Componenti di backup](working-with-the-backup-components-document.md)

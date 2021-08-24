@@ -3,7 +3,7 @@ title: LM_GETIDEALHEIGHT messaggio (Commctrl.h)
 description: "LM_GETIDEALHEIGHT messaggio: recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo."
 ms.assetid: bf6ef3c1-89bc-4c56-9384-085fd00234e1
 keywords:
-- LM_GETIDEALHEIGHT messaggio controlli Windows
+- LM_GETIDEALHEIGHT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d6e82f259124e6da285ed2357d48ca07d5f8c08
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7b0cd4b56da08baefe36d9ce1d669c4dbc4939883005c1cd45e59760566b468b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920441"
 ---
 # <a name="lm_getidealheight-message"></a>Messaggio \_ LM GETIDEALHEIGHT
 
@@ -52,8 +52,8 @@ Intero che rappresenta l'altezza preferita del testo del collegamento, in pixel.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

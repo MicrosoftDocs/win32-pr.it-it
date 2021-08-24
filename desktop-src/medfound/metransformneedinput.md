@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120013501"
 ---
-# <a name="metransformneedinput-event"></a>Evento METransformNeedInput
+# <a name="metransformneedinput-event"></a>EVENTO METransformNeedInput
 
 Inviato da una trasformazione Media Foundation asincrona (MFT) per richiedere un nuovo esempio di input.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
@@ -35,7 +35,7 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                        | Descrizione                                                                           |
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [ID FLUSSO DI \_ \_ INPUT MFT DELL'EVENTO MF \_ \_ \_](mf-event-mft-input-stream-id.md)<br/> | Identificatore del flusso che richiede dati di input.<br/>*(Obbligatorio)*<br/> |
+| [ID FLUSSO DI \_ \_ INPUT MFT DELL'EVENTO MF \_ \_ \_](mf-event-mft-input-stream-id.md)<br/> | Identificatore del flusso che necessita di dati di input.<br/>*(Obbligatorio)*<br/> |
 
 
 
@@ -43,7 +43,7 @@ Per questo evento sono definiti gli attributi seguenti.
 
 I MFT asincroni inviano questo evento tramite [**l'interfaccia IMFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) I MFT sincroni non inviano mai questo evento.
 
-Quando il client di MFT riceve questo evento, deve chiamare [**IMFTransform::P rocessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) per recapitare l'esempio successivo. [L'attributo \_ \_ MF EVENT MFT INPUT STREAM \_ \_ \_ ID](mf-event-mft-input-stream-id.md) dell'oggetto evento specifica il flusso di input che richiede dati.
+Quando il client di MFT riceve questo evento, deve chiamare [**IMFTransform::P rocessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) per recapitare l'esempio successivo. [L'attributo \_ \_ MF EVENT MFT INPUT STREAM \_ \_ \_ ID](mf-event-mft-input-stream-id.md) dell'oggetto evento specifica quale flusso di input richiede dati.
 
 ## <a name="requirements"></a>Requisiti
 

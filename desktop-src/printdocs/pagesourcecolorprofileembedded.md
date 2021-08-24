@@ -1,19 +1,19 @@
 ---
-description: Informazioni sul parametro PageSourceColorProfileEmbedded. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sul parametro PageSourceColorProfileEmbedded. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 38411802-2b2e-441c-b3a6-334d87b11b5d
 title: PageSourceColorProfileEmbedded
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0633fa061601c1d575f174ab5572582efdf9a89e
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 330d8da4200880e071a50b35d2f713ba544bb2b270335f2de022ab835286cfff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938741"
 ---
 # <a name="pagesourcecolorprofileembedded"></a>PageSourceColorProfileEmbedded
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il profilo colori di origine incorporato.
 
@@ -74,8 +74,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

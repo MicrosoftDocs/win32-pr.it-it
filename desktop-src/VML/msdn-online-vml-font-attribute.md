@@ -13,18 +13,18 @@ ms.locfileid: "119986661"
 ---
 # <a name="vml-font-attribute"></a>Attributo del tipo di carattere VML
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Specifica un valore composto degli attributi del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
+Specifica un valore composto di attributi del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Percorso di testo](msdn-online-vml-textpath-element.md)
+[TextPath](msdn-online-vml-textpath-element.md)
 
 **Sintassi dei tag**
 
@@ -38,13 +38,13 @@ Specifica un valore composto degli attributi del tipo di carattere. Proprietà d
 
 **Osservazioni:**
 
-Definisce gli attributi di un tipo di carattere, inclusi famiglia, stile, spessore, dimensione e variante. L'ordine delle definizioni nella stringa è: **font-style,** **font-variant,** **font-weight,** **font-size,** **line-height** e **font-family.** I valori sono gli stessi degli attributi di stile HTML standard.
+Definisce gli attributi di un tipo di carattere, tra cui famiglia, stile, peso, dimensioni e variante. L'ordine delle definizioni nella stringa è: **font-style,** **font-variant,** **font-weight,** **font-size,** **line-height** e **font-family.** I valori sono gli stessi degli attributi di stile HTML standard.
 
-*Attributo VML Standard*
+*Attributo standard VML*
 
 **Esempio**
 
-Il tipo di carattere del testo del percorso di testo è corsivo, maiuscoletto, grassetto e Arial a 36 punti.
+Il tipo di carattere del testo del percorso di testo è corsivo, maiuscoletto, grassetto, Arial a 36 punti.
 
 
 ```HTML

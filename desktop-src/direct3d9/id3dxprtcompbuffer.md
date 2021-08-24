@@ -1,5 +1,5 @@
 ---
-description: L'interfaccia ID3DXPRTCompBuffer archivia una versione compressa di un buffer ID3DXPRTBuffer da usare con l'analisi dei componenti principali.
+description: L'interfaccia ID3DXPRTCompBuffer archivia una versione compressa di un buffer ID3DXPRTBuffer, da usare con l'analisi dei componenti principali (PCA).
 ms.assetid: 97f8576c-24d5-4f60-923b-4d8d94382fe9
 title: Interfaccia ID3DXPRTCompBuffer (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119985611"
 ---
 # <a name="id3dxprtcompbuffer-interface"></a>Interfaccia ID3DXPRTCompBuffer
 
-**L'interfaccia ID3DXPRTCompBuffer** archivia una versione compressa di un buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) da usare con l'analisi dei componenti principali.
+**L'interfaccia ID3DXPRTCompBuffer** archivia una versione compressa di un buffer [**ID3DXPRTBuffer,**](id3dxprtbuffer.md) da usare con l'analisi dei componenti principali (PCA).
 
 ## <a name="members"></a>Membri
 
@@ -39,16 +39,16 @@ ms.locfileid: "119985611"
 
 | Metodo                                                             | Descrizione                                                                                                                                                                                                                        |
 |:-------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ExtractBasis**](id3dxprtcompbuffer--extractbasis.md)           | Estrae i vettori di base pcA (Mean and Principal Component Analysis) per un determinato cluster da un buffer di dati **compressi ID3DXPRTCompBuffer.**<br/>                                                                       |
-| [**ExtractClusterIDs**](id3dxprtcompbuffer--extractclusterids.md) | Estrae gli ID cluster per campione da un buffer di dati **compresso ID3DXPRTCompBuffer.**<br/>                                                                                                                              |
-| [**ExtractPCA**](id3dxprtcompbuffer--extractpca.md)               | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati compressi **ID3DXPRTCompBuffer.**<br/>                                                                               |
-| [**ExtractTexture**](id3dxprtcompbuffer--extracttexture.md)       | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati compressi **ID3DXPRTCompBuffer** e aggiunge i dati a un oggetto [**IDirect3DTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)<br/> |
-| [**ExtractToMesh**](id3dxprtcompbuffer--extracttomesh.md)         | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati compresso **ID3DXPRTCompBuffer** e aggiunge i dati a un [**oggetto ID3DXMesh.**](id3dxmesh.md)<br/>                 |
+| [**ExtractBasis**](id3dxprtcompbuffer--extractbasis.md)           | Estrae i vettori di base PCA (Mean and Principal Component Analysis) per un determinato cluster da un buffer di dati **compressi ID3DXPRTCompBuffer.**<br/>                                                                       |
+| [**ExtractClusterIDs**](id3dxprtcompbuffer--extractclusterids.md) | Estrae gli ID cluster per esempio da un buffer di dati **compressi ID3DXPRTCompBuffer.**<br/>                                                                                                                              |
+| [**ExtractPCA**](id3dxprtcompbuffer--extractpca.md)               | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati **compressi ID3DXPRTCompBuffer.**<br/>                                                                               |
+| [**ExtractTexture**](id3dxprtcompbuffer--extracttexture.md)       | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati **compressi ID3DXPRTCompBuffer** e aggiunge i dati a [**un oggetto IDirect3DTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)<br/> |
+| [**ExtractToMesh**](id3dxprtcompbuffer--extracttomesh.md)         | Estrae i coefficienti di proiezione PCA (Principal Component Analysis) per campione da un buffer di dati **compressi ID3DXPRTCompBuffer** e aggiunge i dati a [**un oggetto ID3DXMesh.**](id3dxmesh.md)<br/>                 |
 | [**Getheight**](id3dxprtcompbuffer--getheight.md)                 | Recupera l'altezza della trama, in pixel.<br/>                                                                                                                                                                         |
-| [**GetNumChannels**](id3dxprtcompbuffer--getnumchannels.md)       | Recupera il numero di canali di colore utilizzati in memoria per archiviare i campioni.<br/>                                                                                                                                                 |
+| [**GetNumChannels**](id3dxprtcompbuffer--getnumchannels.md)       | Recupera il numero di canali di colore usati in memoria per archiviare gli esempi.<br/>                                                                                                                                                 |
 | [**GetNumClusters**](id3dxprtcompbuffer--getnumclusters.md)       | Recupera il numero di cluster da utilizzare per la compressione.<br/>                                                                                                                                                                |
-| [**GetNumCoeffs**](id3dxprtcompbuffer--getnumcoeffs.md)           | Recupera il numero di scalari per canale di colore utilizzato in memoria per archiviare i campioni.<br/>                                                                                                                                      |
-| [**GetNumPCA**](id3dxprtcompbuffer--getnumpca.md)                 | Recupera il numero di vettori di base dell'analisi dei componenti principali (PCA) da usare in ogni cluster.<br/>                                                                                                                        |
+| [**GetNumCoeffs**](id3dxprtcompbuffer--getnumcoeffs.md)           | Recupera il numero di scalari per canale di colore usato in memoria per archiviare gli esempi.<br/>                                                                                                                                      |
+| [**GetNumPCA**](id3dxprtcompbuffer--getnumpca.md)                 | Recupera il numero di vettori di base pca (Principal Component Analysis) da usare in ogni cluster.<br/>                                                                                                                        |
 | [**GetNumSamples**](id3dxprtcompbuffer--getnumsamples.md)         | Recupera il numero di vertici (o texel) campionati.<br/>                                                                                                                                                                   |
 | [**GetWidth**](id3dxprtcompbuffer--getwidth.md)                   | Recupera la larghezza della trama, in pixel.<br/>                                                                                                                                                                          |
 | [**IsTexture**](id3dxprtcompbuffer--istexture.md)                 | Indica se il buffer contiene una trama.<br/>                                                                                                                                                                        |

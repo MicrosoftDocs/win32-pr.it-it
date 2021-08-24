@@ -4,12 +4,12 @@ ms.assetid: 2824DA0C-7155-47BF-BAE1-4847EDD62107
 title: Condivisione IME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5664c61518862a9649a32f6c9f9aa9e1b3a554e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 96c555b4b2edd28f77e39b56b8db93f711b62708a9cc66300111ee37a489dc14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001901"
 ---
 # <a name="ime-share"></a>Condivisione IME
 

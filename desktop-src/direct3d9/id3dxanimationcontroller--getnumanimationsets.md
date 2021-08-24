@@ -1,7 +1,7 @@
 ---
 description: Restituisce il numero di set di animazioni attualmente registrati nel controller di animazione.
 ms.assetid: 1aacc84d-5025-4601-9a6c-84b3d9b06012
-title: 'Metodo ID3DXAnimationController:: GetNumAnimationSets (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::GetNumAnimationSets (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b5baedb0ea30d51cbd659e597cb000a434ec1632
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 07a6eee85c515c4b8e923aa9973eddc648ef95cbc152c27951154a7c41fbcf3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026821"
 ---
-# <a name="id3dxanimationcontrollergetnumanimationsets-method"></a>Metodo ID3DXAnimationController:: GetNumAnimationSets
+# <a name="id3dxanimationcontrollergetnumanimationsets-method"></a>Metodo ID3DXAnimationController::GetNumAnimationSets
 
 Restituisce il numero di set di animazioni attualmente registrati nel controller di animazione.
 
@@ -40,13 +40,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di set di animazioni.
+Numero di set di animazione.
 
 ## <a name="remarks"></a>Commenti
 
-Il controller contiene un numero qualsiasi di set di animazioni e tracce. I set di animazioni possono essere registrati con [**RegisterAnimationOutput**](id3dxanimationcontroller--registeranimationoutput.md). Un controller di animazione creato da una chiamata a [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) registrerà automaticamente i set di animazioni caricati.
+Il controller contiene un numero qualsiasi di set di animazioni e tracce. I set di animazione possono essere registrati [**con RegisterAnimationOutput.**](id3dxanimationcontroller--registeranimationoutput.md) Un controller di animazione creato da una chiamata a [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) registrerà automaticamente i set di animazione caricati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il controller contiene un numero qualsiasi di set di animazioni e tracce. I set 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: La sessione del logger del kernel NT è una sessione di traccia eventi che registra un set predefinito di eventi del kernel.
+description: La sessione nt Kernel Logger è una sessione di traccia eventi che registra un set predefinito di eventi del kernel.
 ms.assetid: 3c4258d8-8073-4cc5-a29d-ce485a3fdc14
 title: Configurazione e avvio della sessione del logger del kernel NT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d13cb0d429bc4b0e01e02c33e2686040f0b7454b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a41398c9caac3ecd090af68a18bfb148095632d96b8c75eaaee7f04a551360fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901221"
 ---
 # <a name="configuring-and-starting-the-nt-kernel-logger-session"></a>Configurazione e avvio della sessione del logger del kernel NT
 
-La sessione del logger del kernel NT è una sessione di traccia eventi che registra un set predefinito di eventi del kernel. Non viene chiamata la funzione [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) per abilitare i provider del kernel. Usare invece il membro **EnableFlags** della struttura di [**\_ \_ proprietà della traccia eventi**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) per specificare gli eventi del kernel che si desidera ricevere. La funzione [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa i flag enable specificati per abilitare i provider del kernel.
+La sessione nt Kernel Logger è una sessione di traccia eventi che registra un set predefinito di eventi del kernel. Non chiamare la funzione [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) per abilitare i provider del kernel. Usare invece il membro **EnableFlags** della struttura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) per specificare gli eventi del kernel che si desidera ricevere. La [**funzione StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa i flag di abilitazione specificati per abilitare i provider del kernel.
 
-Esiste una sola sessione del logger di kernel NT. Se la sessione è già in uso, la funzione [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) restituisce un errore \_ già \_ esistente.
+È presente una sola sessione del logger del kernel NT. Se la sessione è già in uso, la [**funzione StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) restituisce ERROR \_ ALREADY \_ EXISTS.
 
-Per informazioni dettagliate sull'avvio di una sessione di traccia eventi, vedere [configurazione e avvio di una sessione di traccia eventi](configuring-and-starting-an-event-tracing-session.md).
+Per informazioni dettagliate sull'avvio di una sessione di traccia eventi, vedere [Configurazione e avvio di una sessione di traccia eventi](configuring-and-starting-an-event-tracing-session.md).
 
-Per informazioni dettagliate sull'avvio di una sessione di logger privata, vedere [configurazione e avvio di una sessione di logger privati](configuring-and-starting-a-private-logger-session.md).
+Per informazioni dettagliate sull'avvio di una sessione del logger privato, vedere [Configuring and Starting a Private Logger Session](configuring-and-starting-a-private-logger-session.md).
 
-Per informazioni dettagliate sull'avvio di una sessione di logger globale, vedere [configurazione e avvio della sessione Global Logger](configuring-and-starting-the-global-logger-session.md).
+Per informazioni dettagliate sull'avvio di una sessione del logger globale, vedere [Configurazione e avvio della sessione del logger globale](configuring-and-starting-the-global-logger-session.md).
 
-Per informazioni dettagliate sull'avvio di una sessione di autologger, vedere [configurazione e avvio di una sessione di autologger](configuring-and-starting-an-autologger-session.md).
+Per informazioni dettagliate sull'avvio di una sessione di AutoLogger, vedere [Configuring and Starting an AutoLogger Session](configuring-and-starting-an-autologger-session.md).
 
-Nell'esempio seguente viene illustrato come configurare e avviare una sessione del logger del kernel NT che raccoglie gli eventi del kernel TCP/IP di rete e li scrive in un file circolare di 5 MB.
+L'esempio seguente illustra come configurare e avviare una sessione del logger del kernel NT che raccoglie gli eventi del kernel TCP/IP di rete e li scrive in un file circolare di 5 MB.
 
 
 ```C++
@@ -119,7 +119,7 @@ cleanup:
 
 <dl> <dt>
 
-[Configurazione e avvio di una sessione di logger privata](configuring-and-starting-a-private-logger-session.md)
+[Configurazione e avvio di una sessione privata del logger](configuring-and-starting-a-private-logger-session.md)
 </dt> <dt>
 
 [Configurazione e avvio di una sessione SystemTraceProvider](configuring-and-starting-a-systemtraceprovider-session.md)

@@ -1,17 +1,17 @@
 ---
 description: Indica se il contenitore dell'endpoint di associazione del dispositivo supporta l'acquisizione.
 ms.assetid: 7613f1e1-d30a-4bf2-b125-c334ac836be9
-title: System. Devices. AepContainer. SupportsCapturing
+title: System.Devices.AepContainer.SupportsCapturing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 946ef212ddabe0061b37149f4747f450ef5a2f5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f28164dc425c8cfdaef0b611c8cb74081629d11551f27ee8ce17bf1e0850ff5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938381"
 ---
-# <a name="systemdevicesaepcontainersupportscapturing"></a>System. Devices. AepContainer. SupportsCapturing
+# <a name="systemdevicesaepcontainersupportscapturing"></a>System.Devices.AepContainer.SupportsCapturing
 
 Indica se il contenitore dell'endpoint di associazione del dispositivo supporta l'acquisizione
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

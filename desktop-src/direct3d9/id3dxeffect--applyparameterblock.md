@@ -1,7 +1,7 @@
 ---
-description: Applicare i valori in un blocco di stato allo stato del sistema con effetto corrente.
+description: Applicare i valori in un blocco di stato allo stato corrente del sistema degli effetti.
 ms.assetid: f228e2a2-64fa-4354-9f49-42d1d3b12d50
-title: 'Metodo ID3DXEffect:: ApplyParameterBlock (D3DX9Effect. h)'
+title: Metodo ID3DXEffect::ApplyParameterBlock (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 12af672b929822180c4dba681ca333692a9174ec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f5a382823da73df68ec0c32e120c0e94a2a7deba86e6aac4afe01e4e46acd7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951801"
 ---
-# <a name="id3dxeffectapplyparameterblock-method"></a>Metodo ID3DXEffect:: ApplyParameterBlock
+# <a name="id3dxeffectapplyparameterblock-method"></a>Metodo ID3DXEffect::ApplyParameterBlock
 
-Applicare i valori in un blocco di stato allo stato del sistema con effetto corrente.
+Applicare i valori in un blocco di stato allo stato corrente del sistema degli effetti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT ApplyParameterBlock(
 
 <dl> <dt>
 
- *hParameterBlock* \[ in\]
+ *hParameterBlock* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle per il blocco di parametri. Si tratta dell'handle restituito da [**ID3DXEffect:: EndParameterBlock**](id3dxeffect--endparameterblock.md).
+Handle per il blocco di parametri. Si tratta dell'handle restituito da [**ID3DXEffect::EndParameterBlock**](id3dxeffect--endparameterblock.md).
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Modificare lo stato del parametro dell'effetto di acquisizione in un blocco di parametri chiamando BeginParameterBlock; arrestare l'acquisizione delle modifiche di stato chiamando EndParameterBlock. Queste modifiche di stato includono eventuali modifiche ai parametri dell'effetto che si verificano all'interno di una tecnica, incluse quelle all'esterno di un passaggio. Al termine del blocco dei parametri, chiamare DeleteParameterBlock per recuperare la memoria.
+Acquisire le modifiche dello stato dei parametri dell'effetto in un blocco di parametri chiamando BeginParameterBlock; arrestare l'acquisizione delle modifiche di stato chiamando EndParameterBlock. Queste modifiche di stato includono eventuali modifiche dei parametri di effetto che si verificano all'interno di una tecnica (incluse quelle all'esterno di un passaggio). Al termine dell'operazione con il blocco di parametri, chiamare DeleteParameterBlock per recuperare la memoria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Modificare lo stato del parametro dell'effetto di acquisizione in un blocco di p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

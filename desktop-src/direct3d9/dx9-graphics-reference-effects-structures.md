@@ -4,12 +4,12 @@ ms.assetid: d87e3c3a-0dd0-4472-b023-71de570d69b8
 title: Strutture degli effetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dcfe08e90f3230a633d8dee758b696858cf15cf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 48673c9333b3c1bcccb21a40b3476efb347bd7e56a43e16fb0c88a641f59dddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951961"
 ---
 # <a name="effect-structures"></a>Strutture degli effetti
 
@@ -29,7 +29,7 @@ Questa sezione contiene informazioni sulle strutture usate dagli effetti.
 
 <dl> <dt>
 
-[Riferimento a effetti](dx9-graphics-reference-effects.md)
+[Informazioni di riferimento sull'effetto](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

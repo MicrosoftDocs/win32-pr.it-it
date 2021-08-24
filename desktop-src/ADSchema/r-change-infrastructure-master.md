@@ -1,10 +1,10 @@
 ---
-title: Change-Infrastructure-Master esteso a destra
+title: Diritto esteso Change-Infrastructure-Master
 description: Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'infrastruttura.
 ms.assetid: f91eb790-1a05-4fbb-b269-fd80e3499bdb
 ms.tgt_platform: multiple
 keywords:
-- Modifica-infrastruttura-schema AD esteso destro Master
+- Schema ad Active Directory esteso Change-Infrastructure-Master
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bee4abf74860ba6564af65b9b94f44d08e4177d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2de28ff2be401a84a48eb17b3982cb8ae41cbf79200d23538068f596f31ff75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922411"
 ---
-# <a name="change-infrastructure-master-extended-right"></a>Change-Infrastructure-Master esteso a destra
+# <a name="change-infrastructure-master-extended-right"></a>Diritto esteso Change-Infrastructure-Master
 
 Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'infrastruttura.
 
@@ -28,8 +28,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Modifica-infrastruttura-master         |
-| Display-Name | Modifica master infrastrutture         |
+| CN           | Change-Infrastructure-Master         |
+| Display-Name | Modificare il master dell'infrastruttura         |
 | Rights-GUID  | cc17b1fb-33d9-11d2-97d4-00c04fd8d5cd |
 
 
@@ -49,8 +49,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -60,8 +60,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -71,8 +71,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -82,8 +82,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -93,8 +93,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -104,8 +104,8 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO dell'inf
 
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infrastruttura-aggiornamento**](c-infrastructureupdate.md)<br/> |
-| Localization-display-ID | 50                                                                 |
+| Applies-To              | [**Aggiornamento dell'infrastruttura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 

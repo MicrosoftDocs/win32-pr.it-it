@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3009d2dc88e9987a3559da91eed1aa5aa1b248f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9e827b1297a2bdd3bac39a22efa7f80e0d4723ded689e691423c6945a88bb729
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897487"
 ---
 # <a name="swbemservicesexecquery-method"></a>SWbemServices.Exemetodo cQuery
 
 Il **metodo ExecQuery** dell'oggetto [**SWbemServices**](swbemservices.md) esegue una query per recuperare gli oggetti. Questi oggetti sono disponibili tramite la raccolta [**SWbemObjectSet**](swbemobjectset.md) restituita.
 
-Questo metodo viene chiamato in modalità semisincrono. Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
+Questo metodo viene chiamato in modalità semisincrona. Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ objWbemObjectSet = .ExecQuery( _
 *strQuery* 
 </dt> <dd>
 
-Obbligatorio. Stringa contenente il testo della query. Questo parametro non può essere vuoto. Per altre informazioni sulla creazione di stringhe di query WMI, vedere [Query con WQL](querying-with-wql.md) e le informazioni di [riferimento su WQL.](wql-sql-for-wmi.md)
+Obbligatorio. Stringa contenente il testo della query. Questo parametro non può essere vuoto. Per altre informazioni sulla creazione di stringhe di query WMI, vedere [Query con WQL](querying-with-wql.md) e informazioni [di riferimento su WQL.](wql-sql-for-wmi.md)
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Stringa contenente il linguaggio di query da utilizzare. Se specificato, questo 
 *iFlags* \[ Opzionale\]
 </dt> <dd>
 
-Numero intero che determina il comportamento della query e determina se la chiamata viene restituita immediatamente. Il valore predefinito per questo parametro **è wbemFlagReturnImmediately.** Questo parametro può accettare i valori seguenti.
+Numero intero che determina il comportamento della query e determina se la chiamata restituisce immediatamente . Il valore predefinito per questo parametro è **wbemFlagReturnImmediately**. Questo parametro può accettare i valori seguenti.
 
 <dt>
 
@@ -145,7 +145,7 @@ In genere, questa operazione non è definita. In caso contrario, si tratta di un
 
 ## <a name="return-value"></a>Valore restituito
 
-Se non si verifica alcun errore, questo metodo restituisce un [**oggetto SWbemObjectSet.**](swbemobjectset.md) Si tratta di una raccolta di oggetti che contiene il set di risultati della query. Il chiamante può esaminare la raccolta usando l'implementazione delle raccolte per il linguaggio di programmazione in uso. Per altre informazioni, vedere [Accesso a una raccolta.](accessing-a-collection.md)
+Se non si verifica alcun errore, questo metodo restituisce un [**oggetto SWbemObjectSet.**](swbemobjectset.md) Si tratta di una raccolta di oggetti che contiene il set di risultati della query. Il chiamante può esaminare la raccolta usando l'implementazione delle raccolte per il linguaggio di programmazione in uso. Per altre informazioni, vedere [Accesso a una raccolta](accessing-a-collection.md).
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -177,7 +177,7 @@ Errore non specificato.
 **wbemErrInvalidQuery** - 2147749911 (0x80041017)
 </dt> <dd>
 
-La sintassi di query non è valida.
+La sintassi della query non è valida.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Next
 
 
 
-Si noti che si crea l'oggetto [**SWbemServices**](swbemservices.md) con un moniker che rappresenta lo spazio dei nomi e la sicurezza appropriati, quindi si effettua la chiamata **ExecQuery** tramite il servizio. Per una discussione più completa, vedere [Creazione di uno script WMI](creating-a-wmi-script.md) ed Enumerazione di [WMI.](enumerating-wmi.md)
+Si noti che si crea [**l'oggetto SWbemServices**](swbemservices.md) con un moniker che rappresenta lo spazio dei nomi e la sicurezza appropriati, quindi si effettua la chiamata **ExecQuery** tramite il servizio. Per una discussione più completa, vedere [Creazione di uno script WMI](creating-a-wmi-script.md) ed Enumerazione di [WMI.](enumerating-wmi.md)
 
 Analogamente al [**metodo InstancesOf,**](swbemservices-instancesof.md) il **metodo ExecQuery** restituisce sempre una [**raccolta SWbemObjectSet.**](swbemobjectset.md) Lo script WMI deve quindi enumerare la raccolta restituita da ExecQuery per accedere a ogni istanza di risorsa gestita nella raccolta, come illustrato di seguito:
 

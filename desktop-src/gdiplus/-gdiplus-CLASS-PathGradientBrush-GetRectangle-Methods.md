@@ -1,5 +1,5 @@
 ---
-description: Questo argomento elenca i metodi GetRectangle della classe PathGradientBrush. Per un elenco completo dei metodi per la classe PathGradientBrush, vedere Metodi pathGradientBrush.
+description: Questo argomento elenca i metodi GetRectangle della classe PathGradientBrush. Per un elenco completo dei metodi per la classe PathGradientBrush, vedi Metodi PathGradientBrush.
 ms.assetid: 626f4ef4-854f-4744-8a72-c62efb55803f
 title: Metodi PathGradientBrush.GetRectangle
 ms.date: 07/02/2019
@@ -13,7 +13,7 @@ ms.locfileid: "119964371"
 ---
 # <a name="pathgradientbrushgetrectangle-methods"></a>Metodi PathGradientBrush.GetRectangle
 
-Questo argomento elenca i metodi GetRectangle della [**classe PathGradientBrush.**](/windows/win32/api/gdipluspath/nl-gdipluspath-pathgradientbrush) Per un elenco completo dei metodi per la **classe PathGradientBrush,** vedere [Metodi PathGradientBrush](-gdiplus-class-pathgradientbrush-methods.md).
+Questo argomento elenca i metodi GetRectangle della [**classe PathGradientBrush.**](/windows/win32/api/gdipluspath/nl-gdipluspath-pathgradientbrush) Per un elenco completo dei metodi per la **classe PathGradientBrush,** vedi [Metodi PathGradientBrush.](-gdiplus-class-pathgradientbrush-methods.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 

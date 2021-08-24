@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef79271995e9817315fb918049fc22491e232a5f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cf1e8f2eb5cb810004ea219aac62973377111902071beb78eca051df19877f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002151"
 ---
 # <a name="shadowfilepath-attribute"></a>Attributo ShadowFilePath
 
-L'attributo **ShadowFilePath** è il percorso completo di un file shadow.
+**L'attributo ShadowFilePath** è il percorso completo di un file shadow.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -29,9 +29,9 @@ L'attributo **ShadowFilePath** è il percorso completo di un file shadow.
 
 ## <a name="remarks"></a>Commenti
 
-Un *file shadow* viene creato come parte di una conversione del formato di file. Si tratta della copia di un file usato dal giocatore quando l'utente Sincronizza il contenuto dal computer a un dispositivo che richiede che il contenuto sia nel formato di file originale. Questo attributo è impostato per il file convertito in modo che punti al percorso del file shadow.
+Un *file shadow viene* creato come parte di una conversione del formato di file. È la copia di un file che il lettore usa quando l'utente sincronizza il contenuto dal computer a un dispositivo che richiede che il contenuto sia nel formato di file originale. Questo attributo è impostato perché il file convertito punti al percorso del file shadow.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 [**Informazioni sul processo di conversione**](about-the-conversion-process.md)
 </dt> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

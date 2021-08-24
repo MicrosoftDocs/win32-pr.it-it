@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore per l'oggetto IContextNode.
 ms.assetid: 7578bcc1-7c69-45fc-b3c2-7350ce4df99c
-title: 'Metodo IContextNode:: GetId (IACom. h)'
+title: Metodo IContextNode::GetId (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ef316111c7464bac0339a4888b887bc5cf20b93f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7ec4546a6a6e1e5ede96074e5dddcfcd22abf7c2ffcaa4d51a69dde06efb19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940301"
 ---
-# <a name="icontextnodegetid-method"></a>Metodo IContextNode:: GetId
+# <a name="icontextnodegetid-method"></a>Metodo IContextNode::GetId
 
-Recupera l'identificatore per l'oggetto [**IContextNode**](icontextnode.md) .
+Recupera l'identificatore per [**l'oggetto IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,29 +39,29 @@ HRESULT GetId(
 
 <dl> <dt>
 
-*PID* \[ out\]
+*pId* \[ Cambio\]
 </dt> <dd>
 
-Identificatore per l'oggetto [**IContextNode**](icontextnode.md) .
+Identificatore per [**l'oggetto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Ink Analyzer assegna un identificatore univoco a tutti i nodi di contesto creati. Durante l'analisi dell'input penna, Ink Analyzer può modificare l'identificatore per un nodo di contesto. Ad esempio, Ink Analyzer può riclassificare un nodo di Word come due nodi di Word, quindi assegnare l'identificatore originale a uno e un nuovo identificatore all'altro. In alternativa, è possibile che l'analizzatore di input penna riclassifichi due nodi di Word come un nodo di Word e assegnare uno degli identificatori originali al nuovo nodo di Word.
+L'analizzatore input penna assegna un identificatore univoco a tutti i nodi di contesto creati. Durante l'analisi dell'input penna, l'analizzatore input penna può modificare l'identificatore per un nodo di contesto. Ad esempio, l'analizzatore input penna può riclassificare un nodo di parole come due nodi word e quindi assegnare l'identificatore originale a uno e un nuovo identificatore all'altro. Oppure, l'analizzatore input penna può riclassificare due nodi di parole come un nodo di parole e assegnare uno degli identificatori originali al nuovo nodo di parole.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo helper che recupera le informazioni su un nodo specificato, il relativo parametro *pContextNode* . Questo metodo helper restituisce informazioni dai metodi seguenti.
+L'esempio seguente illustra un metodo helper che recupera informazioni su un nodo specificato, il relativo *parametro pContextNode.* Questo metodo helper restituisce informazioni dai metodi seguenti.
 
--   **IContextNode:: GetId**
--   [**IContextNode:: GetType**](icontextnode-gettype.md)
--   [**IContextNode:: GetLocation**](icontextnode-getlocation.md)
--   [**IContextNode:: GetParentNode**](icontextnode-getparentnode.md)
+-   **IContextNode::GetId**
+-   [**IContextNode::GetType**](icontextnode-gettype.md)
+-   [**IContextNode::GetLocation**](icontextnode-getlocation.md)
+-   [**IContextNode::GetParentNode**](icontextnode-getparentnode.md)
 
 
 ```C++
@@ -141,9 +141,9 @@ HRESULT CMyClass::GetNodeInformation(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -155,7 +155,7 @@ HRESULT CMyClass::GetNodeInformation(
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

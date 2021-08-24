@@ -33,7 +33,7 @@ ms.locfileid: "119967041"
 ---
 # <a name="windows7paramenabledbscaninrecovery-field"></a>Campo Windows7Param.EnableDbScanInRecovery
 
-Abilitare Manutenzione database durante il ripristino.
+Abilitare la manutenzione del database durante il ripristino.
 
 **Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)

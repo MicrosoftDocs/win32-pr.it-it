@@ -1,6 +1,6 @@
 ---
 UID: ''
-title: GuardCheckLongJumpTarget (funzione)
+title: Funzione GuardCheckLongJumpTarget
 description: Tenta di verificare se la destinazione di un longjmp è valida.
 old-location: ''
 ms.assetid: na
@@ -35,24 +35,24 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 02f659f77ab2bace129c9b9d9011b4c93e59b2f4
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: bcc8565401e09e8a4a3e0dfb221f240255b00bd0e91b9c2611b21db3ee1c0201
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "106299550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002261"
 ---
-# <a name="guardchecklongjumptarget-function"></a>GuardCheckLongJumpTarget (funzione)
+# <a name="guardchecklongjumptarget-function"></a>Funzione GuardCheckLongJumpTarget
 
 ## <a name="description"></a>Descrizione
 
-Tenta di verificare se la destinazione di un [longjmp](/cpp/c-runtime-library/reference/longjmp) è valida per un processo con [protezione del flusso di controllo (cfg)](../secbp/control-flow-guard.md) abilitata.
+Tenta di verificare se la destinazione di [un longjmp](/cpp/c-runtime-library/reference/longjmp) è valida per un processo con [Control Flow Guard (CFG)](../secbp/control-flow-guard.md) abilitato.
 
-Se l'indirizzo di destinazione corrisponde a un mapping di immagini, vengono estratte le destinazioni valide per il file binario.
-La funzione utilizza tali destinazioni per convalidare la destinazione.
-Se il file binario non contiene metadati che descrivono il set di destinazioni *longjmp* valide, la funzione restituisce **true**.
+Se l'indirizzo di destinazione corrisponde a un mapping di immagini, le destinazioni valide vengono estratte per il file binario.
+La funzione usa tali destinazioni per convalidare la destinazione.
+Se il file binario non dispone di metadati che descrivono il set di *destinazioni longjmp* valide, la funzione restituisce **TRUE.**
 
-Se l'indirizzo di destinazione corrisponde a un mapping non di immagine, come nel codice JIT, viene consultato un criterio globale di sola lettura per determinare se il salto è consentito.
+Se l'indirizzo di destinazione corrisponde a un mapping non di immagine, come nel codice JIT, viene consultato un criterio di sola lettura globale per determinare se il passaggio è consentito.
 
 ## <a name="parameters"></a>Parametri
 
@@ -67,7 +67,7 @@ Se si specifica **GUARD_CHECK_LONGJUMP_NON_FATAL** (0x1), questa funzione non te
 
 ## <a name="returns"></a>Restituisce
 
-**True** se la destinazione è valida; in caso contrario, **false**.
+**TRUE** se la destinazione è valida; in caso **contrario, FALSE.**
 
 ## <a name="remarks"></a>Commenti
 

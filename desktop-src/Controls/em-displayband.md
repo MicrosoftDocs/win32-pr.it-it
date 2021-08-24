@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_DISPLAYBAND (RichEdit. h)
-description: Visualizza una parte del contenuto di un controllo Rich Edit, come in precedenza formattato per un dispositivo usando il \_ messaggio FormatRange em.
+title: EM_DISPLAYBAND messaggio (Richedit.h)
+description: Visualizza una parte del contenuto di un controllo Rich Edit, come formattato in precedenza per un dispositivo usando il messaggio \_ EM FORMATRANGE.
 ms.assetid: 845513d0-f32b-418c-8255-a5caf2d56215
 keywords:
-- Controlli di Windows Message EM_DISPLAYBAND
+- EM_DISPLAYBAND di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51896a9ba5603e799609ab52989681ecf7bcac4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e67fc951940d76dced2851a01b7049b053f3e3c2b45f6eee95eb27bef633f59c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915941"
 ---
-# <a name="em_displayband-message"></a>\_Messaggio DISPLAYBAND em
+# <a name="em_displayband-message"></a>Messaggio \_ EM DISPLAYBAND
 
-Visualizza una parte del contenuto di un controllo Rich Edit, come in precedenza formattato per un dispositivo usando il messaggio [**\_ FormatRange em**](em-formatrange.md) .
+Visualizza una parte del contenuto di un controllo Rich Edit, come formattato in precedenza per un dispositivo usando il [**messaggio \_ EM FORMATRANGE.**](em-formatrange.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,28 +32,28 @@ Visualizza una parte del contenuto di un controllo Rich Edit, come in precedenza
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che specifica l'area di visualizzazione del dispositivo.
+Struttura [**RECT**](/previous-versions//dd162897(v=vs.85)) che specifica l'area di visualizzazione del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, il valore restituito è **true**.
+Se l'operazione ha esito positivo, il valore restituito è **TRUE.**
 
-Se l'operazione ha esito negativo, il valore restituito è **false**.
+Se l'operazione non riesce, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli oggetti Text e Component Object Model (COM) vengono ritagliati dal rettangolo. Non è necessario che l'applicazione imposti l'area di visualizzazione.
+Il testo e Component Object Model oggetti (COM) vengono ritagliati dal rettangolo. L'applicazione non deve impostare l'area di ritaglio.
 
-La banda è il processo mediante il quale viene generata una singola pagina di output utilizzando uno o più rettangoli o bande separate. Quando tutte le bande vengono posizionate nella pagina, viene generato un risultato di un'immagine completa. Questo approccio viene spesso usato dalle stampanti raster che non dispongono di memoria sufficiente o della possibilità di creare un'immagine di una pagina intera in una sola volta. I dispositivi di banda includono la maggior parte delle stampanti a matrice punto, oltre ad alcune stampanti laser.
+Banding è il processo tramite il quale viene generata una singola pagina di output usando uno o più rettangoli separati o bande. Quando tutte le bande vengono posizionate nella pagina, viene restituita un'immagine completa. Questo approccio viene spesso usato dalle stampanti raster che non hanno memoria sufficiente o non sono in grado di creare un'immagine di una pagina intera contemporaneamente. I dispositivi a banda includono la maggior parte delle stampanti a matrice di punti, nonché alcune stampanti a colori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ La banda è il processo mediante il quale viene generata una singola pagina di o
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

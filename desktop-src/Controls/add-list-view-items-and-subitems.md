@@ -1,37 +1,37 @@
 ---
-title: Come aggiungere elementi e elementi secondari List-View
-description: In questo argomento viene illustrato come aggiungere elementi e elementi secondari a un controllo visualizzazione elenco.
+title: Come aggiungere elementi List-View elementi secondari
+description: In questo argomento viene illustrato come aggiungere elementi ed elementi secondari a un controllo visualizzazione elenco.
 ms.assetid: B7E204DC-FD08-4639-985D-1459A1AC0ED6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b3d20008edc10fda810261427507c77e9cfe34
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6365e077c65da33424c5dadd32a0ab98ed6ab7c82eb83e1ecb5a3a007b0f27f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104118674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922041"
 ---
-# <a name="how-to-add-list-view-items-and-subitems"></a>Come aggiungere elementi e elementi secondari List-View
+# <a name="how-to-add-list-view-items-and-subitems"></a>Come aggiungere elementi List-View elementi secondari
 
-In questo argomento viene illustrato come aggiungere elementi e elementi secondari a un controllo visualizzazione elenco.
+In questo argomento viene illustrato come aggiungere elementi ed elementi secondari a un controllo visualizzazione elenco.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per aggiungere un elemento a un controllo visualizzazione elenco, un'applicazione deve prima definire una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) e quindi inviare un messaggio [**\_ INSERTITEM INSERTITEM**](lvm-insertitem.md) , specificando l'indirizzo della struttura **LVITEM** . Se in un'applicazione viene utilizzata la visualizzazione report, è necessario fornire il testo dell'elemento secondario.
+Per aggiungere un elemento a un controllo visualizzazione elenco, un'applicazione deve prima definire una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) e quindi inviare un messaggio [**LVM \_ INSERTITEM,**](lvm-insertitem.md) specificando l'indirizzo della **struttura LVITEM.** Se in un'applicazione viene utilizzata la visualizzazione report, è necessario specificare il testo dell'elemento secondario.
 
-Nell'esempio di codice C++ seguente viene compilata una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) e vengono aggiunti gli elementi della visualizzazione elenco tramite il messaggio [**\_ InsertItem InsertItem**](lvm-insertitem.md) o la corrispondente macro [**ListView \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertitem). Poiché l'applicazione salva il proprio testo, specifica il \_ valore TEXTCALLBACK LPSTR per il membro **pszText** della struttura **LVITEM** . \_Se si specifica il valore TEXTCALLBACK di LPSTR, il controllo Invia un codice di notifica [**LVN \_ GETDISPINFO**](lvn-getdispinfo.md) alla finestra proprietaria ogni volta che è necessario visualizzare un elemento.
+L'esempio di codice C++ seguente riempie una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) e aggiunge gli elementi della visualizzazione elenco usando il messaggio [**\_ LVM INSERTITEM**](lvm-insertitem.md) o la macro [**corrispondente ListView \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertitem). Poiché l'applicazione salva il proprio testo, specifica il valore LPSTR TEXTCALLBACK per il membro \_ **pszText** della **struttura LVITEM.** Se si specifica il valore LPSTR TEXTCALLBACK, il controllo invia un codice di notifica \_ [**\_ LVN GETDISPINFO**](lvn-getdispinfo.md) alla finestra proprietaria ogni volta che è necessario visualizzare un elemento.
 
 
 ```C++
@@ -134,13 +134,13 @@ void HandleWM_NOTIFY(LPARAM lParam)
 
 <dl> <dt>
 
-[Riferimento al controllo visualizzazione elenco](bumper-list-view-list-view-control-reference.md)
+[Informazioni di riferimento sul controllo List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Informazioni sui controlli List-View](list-view-controls-overview.md)
+[Informazioni List-View controlli](list-view-controls-overview.md)
 </dt> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso di List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

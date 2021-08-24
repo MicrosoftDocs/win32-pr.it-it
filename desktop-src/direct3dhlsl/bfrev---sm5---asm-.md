@@ -28,7 +28,7 @@ Invertire un numero a 32 bit.
 
 | Elemento                                                            | Descrizione                                                  |
 |-----------------------------------------------------------------|--------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] L'indirizzo *per src0* con bit inverte.<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo per *src0 con* bit invertti.<br/> |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Numero a 32 bit da invertire.<br/>              |
 
 
@@ -51,7 +51,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
