@@ -1,19 +1,19 @@
 ---
-description: ID prodotto USB dispositivo seriale.
+description: ID prodotto USB del dispositivo seriale.
 ms.assetid: 5ac2e3cb-a314-414b-9ed3-9709965202cf
-title: System. DeviceInterface. Serial. UsbProductId
+title: System.DeviceInterface.Serial.UsbProductId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a35258dea0c15c04dfa739b4a19c27bd0361c1eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b15786fbeda5975912d58a73a0691f7165b813a12f9042a822a307bbfc68e5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823071"
 ---
-# <a name="systemdeviceinterfaceserialusbproductid"></a>System. DeviceInterface. Serial. UsbProductId
+# <a name="systemdeviceinterfaceserialusbproductid"></a>System.DeviceInterface.Serial.UsbProductId
 
-ID prodotto USB dispositivo seriale
+ID prodotto USB del dispositivo seriale
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

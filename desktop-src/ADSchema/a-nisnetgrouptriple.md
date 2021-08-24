@@ -1,5 +1,5 @@
 ---
-title: attributo nisNetgroupTriple
+title: Attributo nisNetgroupTriple
 description: Rappresenta una voce da una mappa netgroup.
 ms.assetid: abf908f8-9f83-455a-8add-97a9ebccb5ae
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05215a00788927f8c5f87de13b8f49f5e9ff9d0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fe50c77897d8e4a49a604235edc374a2cf48e986d0058abcaa12deb5475368a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703231"
 ---
-# <a name="nisnetgrouptriple-attribute"></a>attributo nisNetgroupTriple
+# <a name="nisnetgrouptriple-attribute"></a>Attributo nisNetgroupTriple
 
 Rappresenta una voce da una mappa netgroup.
 
@@ -29,12 +29,12 @@ Rappresenta una voce da una mappa netgroup.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | nisNetgroupTriple                    |
-| LDAP-Display-Name | nisNetgroupTriple                    |
+| Ldap-Display-Name | nisNetgroupTriple                    |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.14                     |
-| System-ID-GUID    | a8032e74-30ef-4ff5-affc-0fc217783fec |
+| System-Id-Guid    | a8032e74-30ef-4ff5-affc-0fc217783fec |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Rappresenta una voce da una mappa netgroup.
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Falso                                           |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Rappresenta una voce da una mappa netgroup.
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Falso                                           |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Rappresenta una voce da una mappa netgroup.
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Falso                                           |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Rappresenta una voce da una mappa netgroup.
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Falso                                           |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 

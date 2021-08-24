@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Manage-topologia estesa a destra
+title: Diritto esteso DS-Replication-Manage-Topology
 description: Diritto esteso necessario per aggiornare la topologia di replica per un determinato NC.
 ms.assetid: 43f8554b-0934-487d-bac0-8f1351eae1cd
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Manage-schema di annuncio esteso a destra
+- Schema ad Active Directory esteso replica-gestione-topologia DS
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c27a08b39cc8ad7f6cb4fc31d68726a433a500
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 813179e371810dbf5be1b414a19542f10cd2faf231ab57bf92286cb677e69215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702811"
 ---
-# <a name="ds-replication-manage-topology-extended-right"></a>DS-Replication-Manage-topologia estesa a destra
+# <a name="ds-replication-manage-topology-extended-right"></a>Diritto esteso DS-Replication-Manage-Topology
 
 Diritto esteso necessario per aggiornare la topologia di replica per un determinato NC.
 
@@ -28,7 +28,7 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | DS-Replication-Manage-topologia       |
+| CN           | DS-Replication-Manage-Topology       |
 | Display-Name | Gestire la topologia di replica          |
 | Rights-GUID  | 1131f6ac-9c07-11d1-f79f-00c04fc2dcd2 |
 
@@ -38,7 +38,7 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -50,8 +50,8 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -61,19 +61,19 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -83,8 +83,8 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -94,8 +94,8 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -105,8 +105,8 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -116,8 +116,8 @@ Diritto esteso necessario per aggiornare la topologia di replica per un determin
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 27                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 

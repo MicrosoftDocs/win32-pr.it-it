@@ -1,10 +1,10 @@
 ---
-title: RID-allocation-attributo pool
-description: Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stato utilizzato il RID-Previous-allocation-pool.
+title: Attributo RID-Allocation-Pool
+description: Pool che è stato preletturato per l'uso da parte del gestore RID quando è stato utilizzato RID-Previous-Allocation-Pool.
 ms.assetid: 6d49b497-322f-424c-badc-4801f51481f3
 ms.tgt_platform: multiple
 keywords:
-- RID-allocation-schema AD dell'attributo del pool
+- Schema AD dell'attributo RID-Allocation-Pool
 - Schema AD dell'attributo rIDAllocationPool
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a035cef460cc3081144d66391db78fb32c61108b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce6ff101ca49e8d2ffafdb31f2d05cf1cb2371ee3336525ab31318925d349805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837381"
 ---
-# <a name="rid-allocation-pool-attribute"></a>RID-allocation-attributo pool
+# <a name="rid-allocation-pool-attribute"></a>Attributo RID-Allocation-Pool
 
-Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stato utilizzato il RID-Previous-allocation-pool.
+Pool che è stato preletturato per l'uso da parte del gestore RID quando è stato utilizzato RID-Previous-Allocation-Pool.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | RID-allocazione-pool                  |
-| LDAP-Display-Name | rIDAllocationPool                    |
+| CN                | RID-Allocation-Pool                  |
+| Ldap-Display-Name | rIDAllocationPool                    |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.371               |
-| System-ID-GUID    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| Is-Single-Valued       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET RID**](c-ridset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| Is-Single-Valued       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET RID**](c-ridset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| Is-Single-Valued       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET RID**](c-ridset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| A valore singolo       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET DI RID**](c-ridset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| A valore singolo       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET DI RID**](c-ridset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Un pool che è stato preceduto per l'uso da parte del gestore RID quando è stat
 | ID collegamento                | \-                                     |
 | MAPI-Id                | \-                                     |
 | System-Only            | Vero                                   |
-| È a valore singolo       | Vero                                   |
+| A valore singolo       | Vero                                   |
 | Indicizzato             | Falso                                  |
 | Nel catalogo globale      | Falso                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classi utilizzate in        | [**Set RID**](c-ridset.md)<br/> |
+| Classi usate in        | [**SET DI RID**](c-ridset.md)<br/> |
 
 
 

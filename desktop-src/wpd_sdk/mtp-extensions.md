@@ -4,12 +4,12 @@ ms.assetid: ABF3CA59-5141-4A51-9D52-F5585FBBFEC8
 title: Estensioni MTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aeeae7c0716ea8a5935123f4fabc29461cae4cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248e3a1aee09ac44a8aa4e4aabf5f3a687a6d46d43e562d90cf35ec6a1c6c359
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839121"
 ---
 # <a name="mtp-extensions"></a>Estensioni MTP
 
@@ -17,8 +17,8 @@ ms.locfileid: "106313898"
 
 -   [Eventi di estensione MTP](mtp-extension-events.md)
 -   [Formati di estensione MTP](mtp-extension-formats.md)
--   [Proprietà estensione MTP](mtp-extension-properties.md)
--   [Comandi di estensione MTP](mtp-extension-commands.md)
+-   [Proprietà dell'estensione MTP](mtp-extension-properties.md)
+-   [Comandi dell'estensione MTP](mtp-extension-commands.md)
 
  
 

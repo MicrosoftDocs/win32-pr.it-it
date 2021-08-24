@@ -1,17 +1,17 @@
 ---
 description: Nome del file del driver della stampante.
 ms.assetid: 82366686-8661-466b-881D-EBB2E03993C5
-title: System. DeviceInterface. PrinterDriverName
+title: System.DeviceInterface.PrinterDriverName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c06e9bc6fa5fcbb4a6dcf34b872417c24b8663b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 045cdfc276a952a4255fc66bdaf1387c9559b4af874a69c1a9af7fd89634bcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823061"
 ---
-# <a name="systemdeviceinterfaceprinterdrivername"></a>System. DeviceInterface. PrinterDriverName
+# <a name="systemdeviceinterfaceprinterdrivername"></a>System.DeviceInterface.PrinterDriverName
 
 Nome del file del driver della stampante.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

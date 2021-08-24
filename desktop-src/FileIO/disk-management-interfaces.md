@@ -1,19 +1,19 @@
 ---
-description: Interfacce utilizzate in Gestione disco.
+description: Interfacce usate nella gestione del disco.
 ms.assetid: c1f79e2e-834b-41dc-a15f-6dd1034d021b
-title: Interfacce di gestione disco
+title: Interfacce di gestione del disco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c86881ff3bf6232da68c4cf1539dbbedf87c50f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a7314de976b1a5228a8b537da5d09be3df66936ed57915d86d78b0a84c4361e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823211"
 ---
-# <a name="disk-management-interfaces"></a>Interfacce di gestione disco
+# <a name="disk-management-interfaces"></a>Interfacce di gestione del disco
 
-Le interfacce seguenti vengono utilizzate in Gestione disco.
+Nella gestione del disco vengono usate le interfacce seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,11 +21,11 @@ Le interfacce seguenti vengono utilizzate in Gestione disco.
 
 | Interfaccia                                                     | Descrizione                                                                                                    |
 |---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**IDiskQuotaControl**](/windows/win32/api/dskquota/nn-dskquota-idiskquotacontrol)<br/>     | Controlla le funzionalità di quota del disco di un singolo volume di file system NTFS.<br/>                             |
-| [**IDiskQuotaEvents**](/windows/win32/api/dskquota/nn-dskquota-idiskquotaevents)<br/>       | Riceve le notifiche degli eventi relative alla quota.<br/>                                                         |
-| [**IDiskQuotaUser**](/windows/win32/api/dskquota/nn-dskquota-idiskquotauser)<br/>           | Rappresenta una singola voce della quota utente nel file di informazioni sulla quota del volume.<br/>                          |
-| [**IDiskQuotaUserBatch**](/windows/win32/api/dskquota/nn-dskquota-idiskquotauserbatch)<br/> | Aggiunge più oggetti utente della quota a un contenitore che viene quindi inviato per l'aggiornamento in una singola chiamata.<br/> |
-| [**IEnumDiskQuotaUsers**](/windows/win32/api/dskquota/nn-dskquota-ienumdiskquotausers)<br/> | Enumera le voci della quota utente nel volume.<br/>                                                        |
+| [**IDiskQuotaControl**](/windows/win32/api/dskquota/nn-dskquota-idiskquotacontrol)<br/>     | Controlla le funzionalità di quota disco di un singolo volume file system NTFS.<br/>                             |
+| [**IDiskQuotaEvents**](/windows/win32/api/dskquota/nn-dskquota-idiskquotaevents)<br/>       | Riceve le notifiche degli eventi correlati alla quota.<br/>                                                         |
+| [**IDiskQuotaUser**](/windows/win32/api/dskquota/nn-dskquota-idiskquotauser)<br/>           | Rappresenta una singola voce di quota utente nel file di informazioni sulla quota del volume.<br/>                          |
+| [**IDiskQuotaUserBatch**](/windows/win32/api/dskquota/nn-dskquota-idiskquotauserbatch)<br/> | Aggiunge più oggetti utente di quota a un contenitore che viene quindi inviato per l'aggiornamento in una singola chiamata.<br/> |
+| [**IEnumDiskQuotaUsers**](/windows/win32/api/dskquota/nn-dskquota-ienumdiskquotausers)<br/> | Enumera le voci di quota utente nel volume.<br/>                                                        |
 
 
 

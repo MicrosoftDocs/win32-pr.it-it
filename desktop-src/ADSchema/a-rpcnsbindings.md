@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-bindings
+title: Attributo rpc-Ns-Bindings
 description: Elenco di associazioni RPC per l'interfaccia corrente.
 ms.assetid: e3893b80-c4d8-4af3-b5b5-b86304456748
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo RPC-NS-bindings
+- Schema AD dell'attributo rpc-Ns-Bindings
 - Schema AD dell'attributo rpcNsBindings
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6f68227c2e57e39f3175e29efb9d82f957e926
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b29b613e06202dd015b37aa18f1aece2ffba03aa7b3922fe7e461d41b722406
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837131"
 ---
-# <a name="rpc-ns-bindings-attribute"></a>attributo RPC-NS-bindings
+# <a name="rpc-ns-bindings-attribute"></a>Attributo rpc-Ns-Bindings
 
 Elenco di associazioni RPC per l'interfaccia corrente.
 
@@ -29,13 +29,13 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Associazioni RPC-NS                             |
-| LDAP-Display-Name | rpcNsBindings                               |
+| CN                | rpc-Ns-Bindings                             |
+| Ldap-Display-Name | rpcNsBindings                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.113                      |
-| System-ID-GUID    | bf967a23-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a23-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di associazioni RPC per l'interfaccia corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Falso                                                       |
+| Is-Single-Valued       | Falso                                                       |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 

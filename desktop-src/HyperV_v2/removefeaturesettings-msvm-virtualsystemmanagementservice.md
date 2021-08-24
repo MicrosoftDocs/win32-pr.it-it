@@ -1,7 +1,7 @@
 ---
-description: Rimuove le impostazioni della funzionalità da una connessione Ethernet della macchina virtuale.
+description: Rimuove le impostazioni delle funzionalità da una connessione Ethernet della macchina virtuale.
 ms.assetid: 457056d0-7e69-47e4-8744-0136a1816f4a
-title: Metodo RemoveFeatureSettings della classe Msvm_VirtualSystemManagementService
+title: Metodo RemoveFeatureSettings della Msvm_VirtualSystemManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c29151f6544d7eb803ec72ee49e455556d8b2d70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17e87cd7c09b22758ba863d9d591370ae49a5a408e43223970c431bac9f3450b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822901"
 ---
-# <a name="removefeaturesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo RemoveFeatureSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="removefeaturesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo RemoveFeatureSettings della classe Msvm \_ VirtualSystemManagementService
 
-Rimuove le impostazioni della funzionalità da una connessione Ethernet della macchina virtuale.
+Rimuove le impostazioni delle funzionalità da una connessione Ethernet della macchina virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 RemoveFeatureSettings(
 
 <dl> <dt>
 
-*FeatureSettings* \[ in\]
+*Impostazioni funzionalità* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe che contengono un'istanza incorporata di una classe derivata dalla classe [**\_ EthernetSwitchFeatureSettingData di MSVM**](msvm-ethernetswitchfeaturesettingdata.md) , che definisce le impostazioni della funzionalità da rimuovere. La proprietà **InstanceID** di ognuna di queste istanze identifica le impostazioni della funzionalità da rimuovere.
+Matrice di stringhe che contengono un'istanza incorporata di una classe derivata dalla classe [**Msvm \_ EthernetSwitchFeatureSettingData,**](msvm-ethernetswitchfeaturesettingdata.md) che definisce le impostazioni di funzionalità da rimuovere. La **proprietà InstanceID** di ognuna di queste istanze identifica le impostazioni di funzionalità da rimuovere.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -60,13 +60,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -78,16 +78,16 @@ Questo metodo restituisce uno dei valori seguenti.
 **Stato non valido** (5)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -96,10 +96,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -108,7 +108,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Attributo via-macchina-file-percorso
-description: Questo attributo specifica il server che risponde al client. A partire dal sistema operativo Windows Server 2003, può indicare la Startrom.com che il client ottiene.
+title: Attributo Netboot-Machine-File-Path
+description: Questo attributo specifica il server che risponde al client. A partire dal Windows server 2003, può indicare il Startrom.com che il client ottiene.
 ms.assetid: 8706bf38-8027-4260-b382-4d4c2a6e0f6e
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo-Machine-file-path
+- Schema AD dell'attributo Netboot-Machine-File-Path
 - Schema AD dell'attributo netbootMachineFilePath
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d03ead4f307b7c0b524192d9c865ee437fbd9d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5495a56a5673a1aa8e62a1f57af89cc12a3f5383dbe9139625fe27c77931e8a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703381"
 ---
-# <a name="netboot-machine-file-path-attribute"></a>Attributo via-macchina-file-percorso
+# <a name="netboot-machine-file-path-attribute"></a>Attributo Netboot-Machine-File-Path
 
-Questo attributo specifica il server che risponde al client. A partire dal sistema operativo Windows Server 2003, può indicare la Startrom.com che il client ottiene.
+Questo attributo specifica il server che risponde al client. A partire dal Windows server 2003, può indicare il Startrom.com che il client ottiene.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Percorso-computer-file-percorso                   |
-| LDAP-Display-Name | netbootMachineFilePath                      |
+| CN                | Netboot-Machine-File-Path                   |
+| Ldap-Display-Name | netbootMachineFilePath                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.361                      |
-| System-ID-GUID    | 3e978923-8c01-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 3e978923-8c01-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo specifica il server che risponde al client. A partire dal siste
 | ID collegamento                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| È a valore singolo       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Vero                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

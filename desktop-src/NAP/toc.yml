@@ -1,39 +1,39 @@
 - name: Protezione accesso alla rete
   href: network-access-protection-start-page.md
   items:
-    - name: Informazioni su NAP
+    - name: Informazioni su Protezione accesso alla rete
       href: about-nap.md
       items:
-        - name: Architettura client NAP
+        - name: Architettura client di Protezione accesso alla rete
           href: nap-client-architecture.md
-        - name: Architettura lato server NAP
+        - name: Architettura lato server di Protezione accesso alla rete
           href: nap-server-side-architecture.md
-        - name: Comunicazione tra client NAP e componenti lato server
+        - name: Comunicazione tra client e componenti lato server di Protezione accesso alla rete
           href: nap-client-and-server-side-component-communication.md
     - name: Uso di Protezione accesso alla rete
       href: using-nap.md
       items:
-        - name: Configurazione di un SHA semplice
+        - name: Configurazione di un'applicazione SHA semplice
           href: setting-up-a-simple-sha.md
-        - name: Esempio di convalida integrità
+        - name: ShV di esempio
           href: exampleshv.md
-        - name: Modulo di convalida integrità sistema
+        - name: Modulo SHV
           href: shv-module.md
-    - name: Riferimento NAP
+    - name: Informazioni di riferimento su Protezione accesso alla rete
       href: nap-reference.md
       items:
-        - name: Costanti NAP
+        - name: Costanti nap
           href: nap-constants.md
           items:
-            - name: Costanti di errore NAP
+            - name: Costanti di errore nap
               href: nap-error-constants.md
             - name: Costanti di tipo NAP
               href: nap-type-constants.md
-            - name: Costanti fornitore NAP
+            - name: Costanti del fornitore di Protezione accesso alla rete
               href: nap-vendor-constants.md
-        - name: Tipi di tipo di protezione accesso alla rete
+        - name: Tipi di dati di Protezione accesso alla rete
           href: nap-datatypes.md
-        - name: Tipi enumerati NAP
+        - name: Tipi enumerati di Protezione accesso alla rete
           href: nap-enumerated-types.md
           items:
             - name: FailureCategory
@@ -52,7 +52,7 @@
               href: /windows/win32/api/NapTypes/ne-naptypes-remoteconfigurationtype
             - name: SoHAttributeType
               href: sohattributetype-enum.md
-        - name: Interfacce NAP
+        - name: Interfacce di Protezione accesso alla rete
           href: nap-interfaces.md
           items:
             - name: INapCertRelyingParty
@@ -97,7 +97,7 @@
                   href: inapcomponentconfig-invokeui.md
                 - name: Metodo GetConfig
                   href: inapcomponentconfig-getconfig.md
-                - name: Metodo Seconfig
+                - name: Metodo SetConfig
                   href: inapcomponentconfig-setconfig.md
             - name: INapComponentConfig2
               href: inapcomponentconfig2.md
@@ -128,7 +128,7 @@
                   href: inapcomponentinfo-getfriendlyname-method.md
                 - name: Metodo GetDescription
                   href: inapcomponentinfo-getdescription-method.md
-                - name: Getvendorname (metodo)
+                - name: Metodo GetVendorName
                   href: inapcomponentinfo-getvendorname-method.md
                 - name: Metodo GetVersion
                   href: inapcomponentinfo-getversion-method.md
@@ -143,7 +143,7 @@
               items:
                 - name: Metodo Initialize
                   href: inapenforcementclientbinding-initialize-method.md
-                - name: Uninitialize (metodo)
+                - name: Metodo Uninitialize
                   href: inapenforcementclientbinding-uninitialize-method.md
                 - name: Metodo CreateConnection
                   href: inapenforcementclientbinding-createconnection-method.md
@@ -158,7 +158,7 @@
             - name: INapEnforcementClientCallback
               href: inapenforcementclientcallback.md
               items:
-                - name: Metodo GetConnection
+                - name: Metodo GetConnections
                   href: inapenforcementclientcallback-getconnections-method.md
                 - name: Metodo NotifySoHChange
                   href: inapenforcementclientcallback-notifysohchange-method.md
@@ -193,7 +193,7 @@
                   href: inapenforcementclientconnection-setcorrelationid-method.md
                 - name: Metodo SetEnforcerPrivateData
                   href: inapenforcementclientconnection-setenforcerprivatedata-method.md
-                - name: Metodo seflags
+                - name: Metodo SetFlags
                   href: inapenforcementclientconnection-setflags-method.md
                 - name: Metodo SetIsolationInfo
                   href: inapenforcementclientconnection-setisolationinfo-method.md
@@ -272,7 +272,7 @@
                   href: inapsystemhealthagentbinding-initialize-method.md
                 - name: Metodo NotifySoHChange
                   href: inapsystemhealthagentbinding-notifysohchange-method.md
-                - name: Uninitialize (metodo)
+                - name: Metodo Uninitialize
                   href: inapsystemhealthagentbinding-uninitialize-method.md
             - name: INapSystemHealthAgentBinding2
               href: inapsystemhealthagentbinding2.md
@@ -319,7 +319,7 @@
               items:
                 - name: Metodo GetCorrelationId
                   href: inapsystemhealthvalidationrequest-getcorrelationid-method.md
-                - name: GetMachineName (metodo)
+                - name: Metodo GetMachineName
                   href: inapsystemhealthvalidationrequest-getmachinename-method.md
                 - name: Metodo GetPrivateData
                   href: inapsystemhealthvalidationrequest-getprivatedata-method.md
@@ -338,7 +338,7 @@
               items:
                 - name: Metodo GetConfigID
                   href: inapsystemhealthvalidationrequest2-getconfigid.md
-        - name: Strutture NAP
+        - name: Strutture di Protezione accesso alla rete
           href: nap-structures.md
           items:
             - name: Connessioni
@@ -351,7 +351,7 @@
               href: /windows/win32/api/NapTypes/ns-naptypes-failurecategorymapping
             - name: FixupInfo
               href: /windows/win32/api/NapTypes/ns-naptypes-fixupinfo
-            - name: Indirizzoipv4
+            - name: Ipv4Address
               href: /windows/win32/api/NapTypes/ns-naptypes-ipv4address
             - name: Ipv6Address
               href: /windows/win32/api/NapTypes/ns-naptypes-ipv6address
@@ -367,7 +367,7 @@
               href: /windows/win32/api/NapTypes/ns-naptypes-privatedata
             - name: ResultCodes
               href: /windows/win32/api/NapTypes/ns-naptypes-resultcodes
-            - name: Rapporto
+            - name: Soh
               href: /windows/win32/api/NapTypes/ns-naptypes-soh
             - name: SoHAttribute
               href: /windows/win32/api/NapTypes/ns-naptypes-sohattribute
@@ -375,7 +375,7 @@
               href: sohattributevalue-union.md
             - name: SystemHealthAgentState
               href: /windows/win32/api/NapTypes/ns-naptypes-systemhealthagentstate
-        - name: Funzioni di utilità NAP
+        - name: Funzioni dell'utilità Protezione accesso alla rete
           href: nap-utility-functions.md
           items:
             - name: AllocConnections

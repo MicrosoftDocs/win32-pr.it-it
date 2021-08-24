@@ -27,7 +27,7 @@ Dopo che l'applicazione ha recuperato un identificatore di oggetto (vedere l'arg
 
  
 
-Le applicazioni impostano le proprietà di un oggetto creando prima un contenitore delle proprietà che specifica i nuovi valori usando [**l'interfaccia IPortableDeviceValues**](iportabledevicevalues.md). Dopo aver creato il contenitore delle proprietà, un'applicazione imposta tali proprietà chiamando il [**metodo IPortableDeviceProperties::SetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues)
+Le applicazioni impostano le proprietà di un oggetto creando prima un contenitore di proprietà che specifica i nuovi valori usando [**l'interfaccia IPortableDeviceValues**](iportabledevicevalues.md). Dopo aver creato il contenitore delle proprietà, un'applicazione imposta tali proprietà chiamando il metodo [**IPortableDeviceProperties::SetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues)
 
 La `WriteContentProperties` funzione nel modulo ContentProperties.cpp dell'applicazione di esempio illustra come un'applicazione può impostare una nuova proprietà nome oggetto per un oggetto selezionato.
 
@@ -56,7 +56,7 @@ if (FAILED(hr))
 
 
 
-Successivamente, l'applicazione recupera il valore WPD PROPERTY ATTRIBUTE CAN WRITE per la proprietà WPD OBJECT NAME per determinare se la \_ \_ proprietà può essere \_ \_ \_ \_ scritta. Si noti che l'applicazione può impostare qualsiasi proprietà per cui la distribuzione WPD \_ PROPERTY \_ ATTRIBUTE CAN WRITE value is \_ \_ true.)
+Successivamente, l'applicazione recupera il valore WPD PROPERTY ATTRIBUTE CAN WRITE per la proprietà \_ WPD OBJECT NAME per determinare se la proprietà \_ \_ può essere \_ \_ \_ scritta. Si noti che l'applicazione può impostare qualsiasi proprietà per cui la WPD \_ Il \_ valore PROPERTY ATTRIBUTE CAN WRITE è \_ \_ true.
 
 
 ```C++

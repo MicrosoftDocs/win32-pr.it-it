@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: e6566a58212e8f20d0d999302f41ab97cb9f005e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7c98d947ad81dd1f2dc3e0dd19de144729ea8a069aefc12a820548aaeac4d15d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742661"
 ---
 # <a name="istatsgettotalstatistics-method"></a>Metodo IStats::GetTotalStatistics
 
-Il **metodo GetTotalStatistics** recupera le [*statistiche totali*](t.md) per l'acquisizione [*corrente.*](c.md)
+Il **metodo GetTotalStatistics** recupera le [*statistiche totali per*](t.md) l'acquisizione [*corrente.*](c.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Puntatore a una [struttura STATISTICS](statistics.md)che fornisce le statistiche
 *fClearAfterReading* \[ Pollici\]
 </dt> <dd>
 
-Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione TRUE indica Network Monitor l'archiviazione interna delle statistiche totali dopo il recupero delle informazioni correnti.
+Flag usato per indicare Network Monitor come gestire l'archiviazione interna delle statistiche totali. L'impostazione TRUE indica Network Monitor cancellare lo spazio di archiviazione interno delle statistiche totali dopo il recupero delle informazioni correnti.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                            | Descrizione                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connect](istats-connect.md) per connettere NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl> | NPP è connesso alla rete, ma non con il [metodo IStats::Connect.](istats-connect.md)<br/>                                |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>   | NPP non acquisisce dati. Chiamare il [metodo IStats::Start](istats-start.md) per avviare l'acquisizione dei dati.<br/>                         |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | Il NPP non è connesso alla rete. Chiamare il [metodo IStats::Connessione](istats-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ SOLO \_ STATISTICHE**</dt> </dl> | Il NPP è connesso alla rete, ma non con il [metodo IStats::Connessione.](istats-connect.md)<br/>                                |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>   | Il NPP non acquisisce dati. Chiamare il [metodo IStats::Start](istats-start.md) per avviare l'acquisizione dei dati.<br/>                         |
 
 
 
@@ -77,7 +77,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 Questo metodo restituisce i dati solo mentre è in corso un'acquisizione, incluso mentre l'acquisizione è sospesa.
 
-Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono essere recuperate chiamando il [metodo IStats::GetConversationStatistics.](istats-getconversationstatistics.md)
+Network Monitor archivia anche [*le statistiche*](c.md)di conversazione , che possono essere recuperate chiamando il [metodo IStats::GetConversationStatistics.](istats-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,10 +96,10 @@ Network Monitor anche le [*statistiche*](c.md)della conversazione, che possono e
 
 <dl> <dt>
 
-[IStat](istats.md)
+[IStats](istats.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Connessione](istats-connect.md)
 </dt> <dt>
 
 [IStats::GetConversationStatistics](istats-getconversationstatistics.md)

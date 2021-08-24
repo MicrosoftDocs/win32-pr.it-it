@@ -3,9 +3,9 @@ title: Metodo INapEnforcementClientBinding NotifyConnectionStateDown (NapEnforce
 description: Viene usato per informare NapAgent che una connessione a un client di imposizione è stata erta.
 ms.assetid: 504c61c1-c8f9-46b8-87cd-c1f04846f0b3
 keywords:
-- Metodo NotifyConnectionStateDown NAP
-- Metodo NotifyConnectionStateDown NAP, interfaccia INapEnforcementClientBinding
-- Interfaccia INapEnforcementClientBinding NAP, metodo NotifyConnectionStateDown
+- Metodo NotifyConnectionStateDown nap
+- Metodo NotifyConnectionStateDown NAP , interfaccia INapEnforcementClientBinding
+- Metodo NotifyConnectionStateDown dell'interfaccia INapEnforcementClientBinding nap
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "119803051"
 
  
 
-Il **metodo INapEnforcementClientBinding::NotifyConnectionStateDown** viene usato per informare NapAgent che una connessione a un client di imposizione non è più disponibile.
+Il **metodo INapEnforcementClientBinding::NotifyConnectionStateDown** viene usato per informare NapAgent che una connessione a un client di imposizione è stata nessa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,9 +63,9 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Codice restituito                                                                                             | Descrizione                                                        |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazione, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
-| <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE E NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'applicazione non è stata inizializzata in precedenza.<br/>       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'applicazione non è stata inizializzata in precedenza.<br/>       |
 
 
 
@@ -73,9 +73,9 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 
 ## <a name="remarks"></a>Commenti
 
-Quando una delle connessioni stabilite da un client di imposizione non è attiva, il client di imposizione deve rimuovere la connessione dall'elenco attivo e informare NapAgent usando questo metodo. Non appena la chiamata viene restituita, l'oggetto connessione può essere rilasciato e liberato. NapAgent non contenerà riferimenti all'oggetto connessione.
+Quando una delle connessioni stabilite da un client di imposizione non è più attiva, il client di imposizione deve rimuovere la connessione dall'elenco attivo e informare NapAgent usando questo metodo. Non appena questa chiamata viene restituita, l'oggetto connessione può essere rilasciato e liberato. NapAgent non contenerà riferimenti all'oggetto connessione.
 
-In seguito a questa notifica, NapAgent aggiorna lo stato di Protezione accesso alla rete del sistema in base alle esigenze.
+Come risultato di questa notifica, NapAgent aggiorna lo stato di Protezione accesso alla rete di sistema in base alle esigenze.
 
 Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) prima di chiamare questo o qualsiasi altro metodo [**dell'interfaccia INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
 
@@ -85,8 +85,8 @@ Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
 | Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |

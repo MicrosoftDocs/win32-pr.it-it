@@ -1,7 +1,7 @@
 ---
 description: Associa un dispositivo logico al sistema padre.
 ms.assetid: 2BEAAEC8-F8F2-4CC7-A209-EE3EE3C6FA90
-title: Classe Msvm_SystemDevice
+title: Msvm_SystemDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: be31a51ad4e24bd31785e64400bf5b266624d8d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67c538d82657d1ac07246f21dc2688f968ce969d1bf20238b20eeb4eea6f71cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746571"
 ---
-# <a name="msvm_systemdevice-class"></a>\_Classe MSVM SystemDevice
+# <a name="msvm_systemdevice-class"></a>Classe \_ SystemDevice msvm
 
-I dispositivi logici possono essere aggregati da un sistema. Questa relazione viene resa esplicita dall'associazione di dispositivi di sistema.
+I dispositivi logici possono essere aggregati da un sistema. Questa relazione viene resa esplicita dall'associazione del dispositivo di sistema.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ class Msvm_SystemDevice : CIM_SystemDevice
 
 ## <a name="members"></a>Members
 
-La **classe \_ SystemDevice di MSVM** dispone di questi tipi di membri:
+La **classe \_ SystemDevice msvm** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SystemDevice di MSVM** dispone di queste proprietà.
+La **classe \_ SystemDevice msvm** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **\_ sistema CIM**](/windows/desktop/CIMWin32Prov/cim-system)**
+Tipo di dati: **[ **sistema \_ CIM**](/windows/desktop/CIMWin32Prov/cim-system)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) ( 1 ), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) ( 1 )
 </dt> </dl>
 
-Sistema padre nell'associazione. Questa proprietà viene ereditata [**dal \_ componente CIM**](/windows/desktop/CIMWin32Prov/cim-component).
+Sistema padre nell'associazione. Questa proprietà viene ereditata dal [**componente CIM. \_**](/windows/desktop/CIMWin32Prov/cim-component)
 
 </dd> <dt>
 
@@ -76,13 +76,13 @@ Tipo di dati: **[ **CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-lo
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il dispositivo logico che è un elemento di un sistema. Questa proprietà viene ereditata [**dal \_ componente CIM**](/windows/desktop/CIMWin32Prov/cim-component).
+Dispositivo logico che è un elemento di un sistema. Questa proprietà viene ereditata dal [**componente CIM. \_**](/windows/desktop/CIMWin32Prov/cim-component)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ SystemDevice di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe \_ SystemDevice msvm** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,10 +90,10 @@ L'accesso alla **classe \_ SystemDevice di MSVM** potrebbe essere limitato dal f
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -102,13 +102,13 @@ L'accesso alla **classe \_ SystemDevice di MSVM** potrebbe essere limitato dal f
 
 <dl> <dt>
 
-[**\_SYSTEMDEVICE CIM**](cim-systemdevice.md)
+[**CIM \_ SystemDevice**](cim-systemdevice.md)
 </dt> <dt>
 
-[**\_SYSTEMDEVICE CIM**](/windows/desktop/CIMWin32Prov/cim-systemdevice)
+[**CIM \_ SystemDevice**](/windows/desktop/CIMWin32Prov/cim-systemdevice)
 </dt> <dt>
 
-[Classi di sistema virtuali](virtual-system-classes.md)
+[Classi di sistema virtuale](virtual-system-classes.md)
 </dt> </dl>
 
  

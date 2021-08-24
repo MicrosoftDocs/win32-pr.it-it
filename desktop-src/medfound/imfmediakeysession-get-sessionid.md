@@ -1,7 +1,7 @@
 ---
 description: Ottiene un ID di sessione univoco creato per questa sessione.
 ms.assetid: 779ebea9-69ff-469a-8ee0-06d570ede6cb
-title: 'Metodo IMFMediaKeySession:: get_SessionId'
+title: Metodo IMFMediaKeySession::get_SessionId
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 7110dbe6c24d1189019fb242621c7e3c01253264
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f598cbb1d7122bb8597d5849778a833462b4e6d9de48942fdfabbc95bbc30898
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724551"
 ---
-# <a name="imfmediakeysessionget_sessionid-method"></a>Metodo IMFMediaKeySession:: Get \_ SessionID
+# <a name="imfmediakeysessionget_sessionid-method"></a>Metodo IMFMediaKeySession::get \_ SessionId
 
 Ottiene un ID di sessione univoco creato per questa sessione.
 
@@ -39,16 +39,16 @@ HRESULT get_SessionId(
 
 <dl> <dt>
 
-*sessionId* 
+*Sessionid* 
 </dt> <dd>
 
-ID della sessione chiave multimediale.
+ID sessione della chiave multimediale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,8 +57,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

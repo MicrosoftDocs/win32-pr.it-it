@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di caricamento di Texture2DMS:: Texture2DMS'
-description: "Recupera un valore dalla risorsa nella posizione e nell'indice di esempio forniti. | Metodi di caricamento di Texture2DMS:: Texture2DMS"
+title: Metodi di caricamento texture2DMS::Texture2DMS
+description: Recupera un valore dalla risorsa nel percorso e nell'indice di esempio specificati. | Metodi di caricamento Texture2DMS::Texture2DMS
 ms.assetid: d597fc42-0b21-4e89-bb33-0b8c12ae00ae
 keywords:
-- Metodi Load HLSL
+- Metodi di caricamento HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: a29324dc108464359e333ac401a24be4cadb461d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 24df3d58413c873df4113cbd9b876ad531cb8307fbc5c8b5062d4a94847e8e2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104401876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742701"
 ---
-# <a name="texture2dmsload-methods"></a>Metodi Texture2DMS:: Load
+# <a name="texture2dmsload-methods"></a>Metodi Texture2DMS::Load
 
-Recupera un valore dalla risorsa nella posizione e nell'indice di esempio forniti.
+Recupera un valore dalla risorsa nel percorso e nell'indice di esempio specificati.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Recupera un valore dalla risorsa nella posizione e nell'indice di esempio fornit
 
 | Metodo                                                           | Descrizione                                                        |
 |:-----------------------------------------------------------------|:-------------------------------------------------------------------|
-| [**Load (int, int)**](sm5-object-texture2dms-load.md)             | Legge i dati della trama.<br/>                                     |
-| [**Load (int, int, int)**](dx-graphics-hlsl-to-load.md)            | Legge i dati della trama.<br/>                                     |
-| [**Load (int, int, int, uint)**](t2dms-load-float-int-int-uint-.md) | Legge i dati della trama e restituisce lo stato dell'operazione.<br/> |
+| [**Load(int,int)**](sm5-object-texture2dms-load.md)             | Legge i dati delle trame.<br/>                                     |
+| [**Load(int,int,int)**](dx-graphics-hlsl-to-load.md)            | Legge i dati delle trame.<br/>                                     |
+| [**Load(int,int,int,uint)**](t2dms-load-float-int-int-uint-.md) | Legge i dati della trama e restituisce lo stato dell'operazione.<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: ms-DS-quota-attributo usato
-description: Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
+title: Attributo ms-DS-Quota-Used
+description: Quota corrente utilizzata da un'entità di sicurezza nel database della directory.
 ms.assetid: 3a31c0c7-9791-4e00-81e5-ee596f94e3c9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo usato da MS-DS-quota
-- attributo msDS-QuotaUsed-schema AD
+- Schema AD dell'attributo ms-DS-Quota-Used
+- Schema AD dell'attributo msDS-QuotaUsed
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c59cc425c83fd7f1a85f41cd9d23e234115e0b55
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9a1194415d07fec5b5d6655c9721f843ebbb409441bae82fa845962e6b500489
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803591"
 ---
-# <a name="ms-ds-quota-used-attribute"></a>ms-DS-quota-attributo usato
+# <a name="ms-ds-quota-used-attribute"></a>Attributo ms-DS-Quota-Used
 
-Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
+Quota corrente utilizzata da un'entità di sicurezza nel database della directory.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-quota utilizzata                     |
-| LDAP-Display-Name | msDS-QuotaUsed                       |
+| CN                | ms-DS-Quota-Used                     |
+| Ldap-Display-Name | msDS-QuotaUsed                       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1849              |
-| System-ID-GUID    | b5a84308-615d-4bb7-b05f-2f1746aa439f |
+| System-Id-Guid    | b5a84308-615d-4bb7-b05f-2f1746aa439f |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Quota corrente utilizzata da un'entità di sicurezza nel database di directory.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 

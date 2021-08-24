@@ -1,33 +1,33 @@
 ---
-description: Ora di presentazione in cui i sink dei supporti eseguiranno il rendering del primo campione della nuova topologia.
+description: Ora di presentazione in cui i sink multimediali eseguiranno il rendering del primo esempio della nuova topologia.
 ms.assetid: 02a8c542-b519-495e-9fb2-8db2f5384db7
-title: Attributo MF_EVENT_START_PRESENTATION_TIME_AT_OUTPUT (Mfapi. h)
+title: MF_EVENT_START_PRESENTATION_TIME_AT_OUTPUT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a588bc6604deed6c6865cd8283390d28e3ffd49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bd5949a73244eec26fb0390805c11f630291a470b2016b5a3575311261b72a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723181"
 ---
-# <a name="mf_event_start_presentation_time_at_output-attribute"></a>\_ \_ \_ \_ Ora di presentazione dell'avvio \_ dell'evento MF all' \_ attributo di output
+# <a name="mf_event_start_presentation_time_at_output-attribute"></a>Attributo MF \_ EVENT START PRESENTATION TIME AT \_ \_ \_ \_ \_ OUTPUT
 
-Ora di presentazione in cui i sink dei supporti eseguiranno il rendering del primo campione della nuova topologia.
+Ora di presentazione in cui i sink multimediali eseguiranno il rendering del primo esempio della nuova topologia.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT64**
 
-Considera come valore **LONGLONG** .
+Considerare come **valore LONGLONG.**
 
 ## <a name="remarks"></a>Commenti
 
-Se tutti gli oggetti pipeline nella topologia precedente hanno memorizzato nel buffer i dati, questo valore sarà leggermente inferiore al valore nell'attributo dell' [**offset dell'ora di \_ presentazione dell'evento \_ \_ \_ MF**](mf-event-presentation-time-offset-attribute.md) , perché i sink devono eseguire il rendering dei dati memorizzati nel buffer.
+Se sono presenti oggetti pipeline nei dati memorizzati nel buffer della topologia precedente, questo valore sarà leggermente inferiore al valore nell'attributo [**MF \_ EVENT PRESENTATION \_ TIME \_ \_ OFFSET,**](mf-event-presentation-time-offset-attribute.md) perché i sink devono eseguire il rendering dei dati memorizzati nel buffer.
 
-Questo attributo è un valore con segno, sebbene venga archiviato come **UInt64**.
+Questo attributo è un valore con segno, anche se viene archiviato come **UINT64.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: NT-attributo di dominio misto
-description: Indica che il dominio è in modalità nativa o mista. Questo attributo si trova nell'oggetto domainDNS (Head) per il dominio.
+title: Attributo NT-Mixed-Domain
+description: Indica che il dominio è in modalità nativa o mista. Questo attributo si trova nell'oggetto domainDNS (head) per il dominio.
 ms.assetid: 49872cbc-844f-4d60-89b6-0150b9116740
 ms.tgt_platform: multiple
 keywords:
-- NT-schema AD dell'attributo di dominio misto
+- Schema AD dell'attributo NT-Mixed-Domain
 - Schema AD dell'attributo nTMixedDomain
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 217d73291f392141b80ca8916b86fffa0055226c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 39148883e2b5d57157c334854ab7ebdfa61b69ac61d7a0100fc8470b741909c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703031"
 ---
-# <a name="nt-mixed-domain-attribute"></a>NT-attributo di dominio misto
+# <a name="nt-mixed-domain-attribute"></a>Attributo NT-Mixed-Domain
 
-Indica che il dominio è in modalità nativa o mista. Questo attributo si trova nell'oggetto domainDNS (Head) per il dominio.
+Indica che il dominio è in modalità nativa o mista. Questo attributo si trova nell'oggetto domainDNS (head) per il dominio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------|
-| CN                | NT-misto-dominio                       |
-| LDAP-Display-Name | nTMixedDomain                         |
+| CN                | DOMINIO MISTO NT                       |
+| Ldap-Display-Name | nTMixedDomain                         |
 | Dimensione              | 4 byte. Modalità mista 1, modalità nativa 0. |
-| Privilegio aggiornamento  | \-                                    |
+| Aggiorna privilegio  | \-                                    |
 | Frequenza di aggiornamento  | \-                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.357                |
-| System-ID-GUID    | 3e97891f-8c01-11d0-afda-00c04fd930c9  |
+| System-Id-Guid    | 3e97891f-8c01-11d0-afda-00c04fd930c9  |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)  |
 
 
@@ -58,15 +58,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Vero                                                                                    |
+| Is-Single-Valued       | Vero                                                                                    |
 | Indicizzato             | Falso                                                                                   |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Vero                                                                                    |
+| Is-Single-Valued       | Vero                                                                                    |
 | Indicizzato             | Falso                                                                                   |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Vero                                                                                    |
+| Is-Single-Valued       | Vero                                                                                    |
 | Indicizzato             | Falso                                                                                   |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Vero                                                                                    |
+| Is-Single-Valued       | Vero                                                                                    |
 | Indicizzato             | Falso                                                                                   |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica che il dominio è in modalità nativa o mista. Questo attributo si trova 
 | ID collegamento                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| È a valore singolo       | Vero                                                                                    |
+| Is-Single-Valued       | Vero                                                                                    |
 | Indicizzato             | Falso                                                                                   |
 | Nel catalogo globale      | Falso                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

@@ -12,12 +12,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119701281"
 ---
-# <a name="cim_aggregatepextent-methods"></a>Metodi CIM \_ AggregatePExtent
+# <a name="cim_aggregatepextent-methods"></a>Metodi \_ AggregatePExtent CIM
 
 La [**classe CIM \_ AggregatePExtent**](cim-aggregatepextent.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

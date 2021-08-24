@@ -1,11 +1,11 @@
 ---
-title: Attribute-Security-GUID (attributo)
-description: GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti.
+title: Attributo Attribute-Security-GUID
+description: GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti .
 ms.assetid: df4709ec-273d-4294-8094-f396c10c06e2
 ms.tgt_platform: multiple
 keywords:
-- Attribute-Security-GUID-schema di AD
-- Schema AD dell'attributo attributeSecurityGUID
+- Attributo Attribute-Security-GUID Schema DI AD
+- Attributo attributeSecurityGUID - schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b2ada7c6c806bec1c524b0408750144ca1fd8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f0ea0a234bb0b050dabb4c0c64306da719ba875791c7c0070d95e5dc80842c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703471"
 ---
-# <a name="attribute-security-guid-attribute"></a>Attribute-Security-GUID (attributo)
+# <a name="attribute-security-guid-attribute"></a>Attributo Attribute-Security-GUID
 
-GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti.
+GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti .
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Attribute-Security-GUID                               |
-| LDAP-Display-Name | attributeSecurityGUID                                 |
+| CN                | ATTRIBUTE-Security-GUID                               |
+| Ldap-Display-Name | attributeSecurityGUID                                 |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Amministratore schema                                  |
+| Aggiorna privilegio  | Amministratore dello schema                                  |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.149                                |
-| System-ID-GUID    | bf967924-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967924-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ GUID da utilizzare per applicare le credenziali di sicurezza a un set di oggetti
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 

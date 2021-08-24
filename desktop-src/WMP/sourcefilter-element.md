@@ -1,9 +1,9 @@
 ---
 title: Elemento sourceFilter
-description: L'elemento sourceFilter contiene elementi che selezionano gli elementi di una raccolta.
+description: L'elemento sourceFilter contiene elementi che selezionano elementi da una libreria.
 ms.assetid: c961990f-8c57-448d-b4dc-dcfe70300e5a
 keywords:
-- Finestra elementi sourceFilter Media Player
+- Elemento sourceFilter Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb43a9577c5fe8857b63067db5be90d314037b84
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14294f227e5ebe29e422d60a95734f7b93207880ea82ef9fb70ed3f7cf6dac4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763271"
 ---
 # <a name="sourcefilter-element"></a>Elemento sourceFilter
 
-L'elemento **sourceFilter** contiene elementi che selezionano gli elementi di una raccolta.
+**L'elemento sourceFilter** contiene elementi che selezionano elementi da una libreria.
 
 ``` syntax
 <sourceFilter
@@ -37,26 +37,26 @@ L'elemento **sourceFilter** contiene elementi che selezionano gli elementi di un
 
 <dl> <dt>
 
-<span id="type"></span><span id="TYPE"></span>**tipo**
+<span id="type"></span><span id="TYPE"></span>**digitare**
 </dt> <dd>
 
-Tipo di oggetto filtro. Nessun valore predefinito per questo attributo.
+Tipo di oggetto filtro. Non sono presenti valori predefiniti per questo attributo.
 
 </dd> <dt>
 
 <span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**ID** (obbligatorio) 
 </dt> <dd>
 
-GUID che identifica in modo univoco l'oggetto filtro di origine. I metodi dell'oggetto filtro di origine vengono richiamati per interpretare gli elementi del **frammento** contenuti nell'elemento **sourceFilter** .
+GUID che identifica in modo univoco l'oggetto filtro di origine. I metodi dell'oggetto filtro di origine vengono richiamati per interpretare gli elementi **del** frammento contenuti nell'elemento **sourceFilter.**
 
 
 
 | Valore                                  | Descrizione                                              |
 |----------------------------------------|----------------------------------------------------------|
-| {4202947A-A563-4B05-A754-A1B4B5989849} | GUID per il filtro di origine "musica nel catalogo personale".    |
-| {B2D9BDDC-8E49-444B-9BA4-193ABF9C7870} | GUID per il filtro di origine "video in My Library".    |
-| {CC823400-A8E4-4081-B073-D3B6D952FE69} | GUID per il filtro di origine "Pictures in My Library". |
-| {E5415A66-7763-4BDE-B97F-5557CA73C303} | Il GUID per il filtro di origine "TV shows in My Library". |
+| {4202947A-A563-4B05-A754-A1B4B5989849} | GUID per il filtro di origine "Musica nella libreria".    |
+| {B2D9BDDC-8E49-444B-9BA4-193ABF9C7870} | GUID per il filtro di origine "Video nella libreria".    |
+| {CC823400-A8E4-4081-B073-D3B6D952FE69} | GUID per il filtro di origine "Immagini nella libreria". |
+| {E5415A66-7763-4BDE-B97F-5557CA73C303} | GUID per il filtro di origine "PROGRAMMI TV nella libreria". |
 
 
 
@@ -64,7 +64,7 @@ GUID che identifica in modo univoco l'oggetto filtro di origine. I metodi dell'o
 
 </dd> <dt>
 
-<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**nome** (obbligatorio) 
+<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**name** (obbligatorio) 
 </dt> <dd>
 
 Nome dell'oggetto filtro.
@@ -75,7 +75,7 @@ Nome dell'oggetto filtro.
 |------------------------|-------------------------------------------------------------------------------------------------|
 | Musica nella libreria    | Oggetto filtro che seleziona gli elementi specificati dal set di elementi musicali nella libreria dell'utente. |
 | Video nella libreria    | Oggetto filtro che seleziona gli elementi specificati dal set di elementi video nella libreria dell'utente. |
-| Immagini nella libreria | Oggetto filtro che seleziona gli elementi specificati dal set di elementi della foto nella libreria dell'utente. |
+| Immagini nella libreria | Oggetto filtro che seleziona gli elementi specificati dal set di elementi foto nella libreria dell'utente. |
 | Programmi TV nella libreria | Oggetto filtro che seleziona gli elementi specificati dal set di elementi TV nella libreria dell'utente.    |
 
 
@@ -91,7 +91,7 @@ Nome dell'oggetto filtro.
 | Gerarchia | Elementi                         |
 |-----------|----------------------------------|
 | Padre    | [querySet](queryset-element.md) |
-| Figlio     | [frammento](fragment-element.md) |
+| Figlio     | [Frammento](fragment-element.md) |
 
 
 
@@ -99,7 +99,7 @@ Nome dell'oggetto filtro.
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **sourceFilter** seleziona gli elementi dalla libreria senza considerare le dimensioni del set di risultati. L'elemento **Filter** , invece, limita le dimensioni del set di risultati.
+**L'elemento sourceFilter** seleziona gli elementi dalla libreria indipendentemente dalle dimensioni del set di risultati. **L'elemento** filtro, d'altra parte, limita le dimensioni del set di risultati.
 
 ## <a name="examples"></a>Esempio
 
@@ -128,7 +128,7 @@ L'elemento **sourceFilter** seleziona gli elementi dalla libreria senza consider
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/> |
 
 
 
@@ -136,16 +136,16 @@ L'elemento **sourceFilter** seleziona gli elementi dalla libreria senza consider
 
 <dl> <dt>
 
-[**Filter-elemento**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento querySet**](queryset-element.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

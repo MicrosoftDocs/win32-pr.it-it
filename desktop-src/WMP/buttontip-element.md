@@ -1,9 +1,9 @@
 ---
 title: Elemento ButtonTip
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. | Elemento ButtonTip
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. | Elemento ButtonTip
 ms.assetid: 93e5d0c8-8d2d-45c1-9d47-bbd0b6eb8b88
 keywords:
-- Finestra elementi ButtonTip Media Player
+- Elemento ButtonTip Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ab94794232ade6f924b87fd3f4d73d4452d544
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb7fb4a162a8e77fea7548265825af6c6cbda75dbafadf05fe32cb664c4d563f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764301"
 ---
 # <a name="buttontip-element"></a>Elemento ButtonTip
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
-L'elemento **ButtonTip** specifica la stringa di testo visualizzata quando l'utente fa riferimento a un pulsante del riquadro attività.
+**L'elemento ButtonTip** specifica la stringa di testo visualizzata quando l'utente punta a un pulsante del riquadro attività.
 
 ``` syntax
 <ButtonTip>
@@ -44,7 +44,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia       | Elemento                                              |
 |-----------------|------------------------------------------------------|
-| Elementi padre | **ServiceTask1**, **ServiceTask2**, **ServiceTask3** |
+| Elementi padre | **ServiceTask1,** **ServiceTask2,** **ServiceTask3** |
 | Elementi figlio  | nessuno                                                 |
 
 
@@ -53,10 +53,10 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento è facoltativo per ogni istanza di **ServiceTask1**, **ServiceTask2** o **ServiceTask3**. Se questo elemento non viene specificato, Windows Media Player usa il testo del pulsante come valore predefinito.
+Questo elemento è facoltativo per ogni istanza di **ServiceTask1,** **ServiceTask2** o **ServiceTask3.** Se questo elemento non viene fornito, Windows Media Player il testo del pulsante come valore predefinito.
 
 > [!Note]  
-> Windows Media Player 10 include tre riquadri attività in cui un negozio online può visualizzare le pagine Web. Lo Store online può scegliere di usare uno, due o tutti e tre i riquadri attività. Windows Media Player 11 dispone di un solo riquadro attività, che l'utente può visualizzare facendo clic sulla scheda **Store online** . Windows Media Player 11 ignora gli elementi **ServiceTask2** e **ServiceTask3** .
+> Windows Media Player 10 include tre riquadri attività in cui un negozio online può visualizzare le pagine Web. Lo Store online può scegliere di usare uno, due o tutti e tre i riquadri attività. Windows Media Player 11 ha un solo riquadro attività, che l'utente può visualizzare facendo clic sulla scheda **Negozi** online. Windows Media Player 11 ignora gli elementi **ServiceTask2** e **ServiceTask3.**
 
  
 
@@ -74,10 +74,10 @@ Questo elemento è facoltativo per ogni istanza di **ServiceTask1**, **ServiceTa
 
 <dl> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento ServiceInfo di esempio per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Esempio di documento ServiceInfo per un negozio online di tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

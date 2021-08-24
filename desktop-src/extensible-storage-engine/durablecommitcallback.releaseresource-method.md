@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: DurableCommitCallback. ReleaseResource, metodo'
-title: Metodo DurableCommitCallback. ReleaseResource (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul metodo DurableCommitCallback.ReleaseResource
+title: Metodo DurableCommitCallback.ReleaseResource (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 634dd081513e576c7aabaac17cc5f9d207a8769f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 758c27b1b3a67b91b7921276ec26e9c9776b65255c4cfa88d32b839f9950c2af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725271"
 ---
-# <a name="durablecommitcallbackreleaseresource-method"></a>DurableCommitCallback. ReleaseResource, metodo
+# <a name="durablecommitcallbackreleaseresource-method"></a>Metodo DurableCommitCallback.ReleaseResource
 
 Libera la sessione di commit durevole.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ protected override void ReleaseResource()
 
 ## <a name="remarks"></a>Osservazioni
 
-Non tentare di impostare il parametro di istanza su null, perché il callback viene eliminato dopo JetTerm e non è possibile impostare il callback dopo JetTerm.
+Non provare a impostare il parametro di istanza su Null, perché il callback viene eliminato dopo JetTerm e il callback non può essere impostato dopo JetTerm.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -62,6 +62,6 @@ Non tentare di impostare il parametro di istanza su null, perché il callback vi
 
 [Classe DurableCommitCallback](./durablecommitcallback-class.md)
 
-[Membri di DurableCommitCallback](./durablecommitcallback-members.md)
+[Membri durableCommitCallback](./durablecommitcallback-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

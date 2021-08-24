@@ -3,38 +3,38 @@ title: Impostazione dei metadati in un file
 description: Impostazione dei metadati in un file
 ms.assetid: 478a5412-e8b4-41c8-802f-9c2748dbaeae
 keywords:
-- Windows Media Gestione dispositivi, metadati
+- Windows Gestione dispositivi multimediali, metadati
 - Gestione dispositivi, metadati
-- Guida per programmatori, metadati
+- guida per programmatori,metadati
 - applicazioni desktop, metadati
-- creazione di applicazioni Windows Media Gestione dispositivi, metadati
+- creazione Windows applicazioni di Gestione dispositivi multimediali,metadati
 - scrittura di file in dispositivi, metadati
 - metadata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a6fa7002d4fafffe0793ef91b00dd3f1f0e20c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d64bdd173258272801886b90dca2265425eb65fd8ec3e5a25d01db37453d7eb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766272"
 ---
 # <a name="setting-metadata-on-a-file"></a>Impostazione dei metadati in un file
 
-È possibile impostare i metadati in un file prima di scriverli nel dispositivo (quando si usa [**IWMDMStorageControl3:: Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3)) o in una risorsa di archiviazione esistente (chiamando [**IWMDMStorage3:: FileMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata)). È possibile impostare gli attributi solo in una risorsa di archiviazione esistente (chiamando [**IWMDMStorage:: SetAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-setattributes) o [**IWMDMStorage2:: SetAttributes2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage2-setattributes2)).
+È possibile impostare i metadati in un file prima di scriverlo nel dispositivo (quando si usa [**IWMDMStorageControl3::Insert3)**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3)o in un archivio esistente (chiamando [**IWMDMStorage3::SetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata)). È possibile impostare gli attributi solo in un archivio esistente (chiamando [**IWMDMStorage::SetAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-setattributes) o [**IWMDMStorage2::SetAttributes2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage2-setattributes2)).
 
-L'impostazione dei metadati viene eseguita creando e riempiendo un'interfaccia [**IWMDMMetaData**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmmetadata) che viene passata in [**IWMDMStorageControl3:: Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3). Questo metodo, tuttavia, può cancellare tutti i metadati esistenti nel file, ad eccezione dei metadati hardcoded archiviati nel file system stesso, ad esempio il nome o la dimensione del file. Pertanto, è necessario copiare tutti i metadati esistenti che si desidera mantenere nell'interfaccia IWMDMMetaData inviata. Poiché non è possibile utilizzare Windows Media Gestione dispositivi per recuperare i metadati dai file locali, è necessario utilizzare Windows Media Format SDK (o un altro strumento) per recuperare tali metadati.
+L'impostazione dei metadati viene eseguita creando e compilando [**un'interfaccia IWMDMMetaData**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmmetadata) passata in [**IWMDMStorageControl3::Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3). Tuttavia, questo metodo può cancellare tutti i metadati esistenti nel file, diversi da quelli hard coded archiviati nel file system stesso, ad esempio il nome o le dimensioni del file. Pertanto, è necessario copiare tutti i metadati esistenti che si desidera conservare nell'interfaccia IWMDMMetaData che si invia. Poiché Windows Gestione dispositivi multimediali non può essere usato per recuperare i metadati dai file locali, è necessario usare Windows Media Format SDK (o un altro strumento) per recuperare tali metadati.
 
-Per utilizzare Windows Media Format SDK per recuperare le proprietà del file ASF, attenersi alla seguente procedura:
+Per usare l'SDK Windows Media Format per recuperare le proprietà del file ASF, seguire questa procedura:
 
-1.  Creare un oggetto dell'editor di metadati chiamando **WMCreateEditor** e richiedendo un'interfaccia **IWMMetadataEditor** .
-2.  Aprire il file per la lettura dei metadati chiamando **IWMMetadataEditor:: Open**.
-3.  Se il file è un file ASF valido e può essere aperto, eseguire una query sull'editor per l'interfaccia **IWMHeaderInfo** .
-4.  Recuperare le proprietà del file chiamando **IWMHeaderInfo:: GetAttributeByName**, passando la costante della proprietà SDK di formato Windows Media desiderata. Nella tabella seguente è riportato un elenco di costanti SDK di formato con costanti Windows Media Gestione dispositivi SDK equivalenti.
+1.  Creare un oggetto editor di metadati chiamando **WMCreateEditor** e richiedendo **un'interfaccia IWMMetadataEditor.**
+2.  Aprire il file per la lettura dei metadati chiamando **IWMMetadataEditor::Open**.
+3.  Se il file è un file ASF valido e può essere aperto, eseguire una query nell'editor per **l'interfaccia IWMHeaderInfo.**
+4.  Recuperare le proprietà del file chiamando **IWMHeaderInfo::GetAttributeByName**, passando la costante della proprietà Windows Media Format SDK desiderata. Nella tabella seguente è riportato un elenco di costanti di Format SDK Windows costanti equivalenti di Media Device Manager SDK.
 
 
 
-| Costante Windows Media Format SDK    | Costante Windows Media Gestione dispositivi SDK      |
+| Windows Costante di Media Format SDK    | Windows Costante dell'SDK di Gestione dispositivi multimediali      |
 |--------------------------------------|------------------------------------------------|
 | g \_ wszWMTitle                        | g \_ wszWMDMTitle                                |
 | g \_ wszWMAuthor                       | g \_ wszWMDMAuthor                               |
@@ -53,15 +53,15 @@ Per utilizzare Windows Media Format SDK per recuperare le proprietà del file AS
 | g \_ wszWMRadioStationName             | g \_ wszWMDMMediaStationName                     |
 | g \_ wszWMSubTitle                     | g \_ wszWMDMSubTitle                             |
 | g \_ wszWMVideoWidth                   | g \_ wszWMDMWidth                                |
-| g \_ wszWMVideoHeight                  | g \_ wszWMDMHeight                               |
+| g \_ wszWMVideoHeight                  | g \_ wszWMDMMHeight                               |
 | g \_ wszWMMood                         | g \_ wszWMDMTrackMood                            |
 | g \_ wszWMCodec                        | g \_ wszAudioWAVECodec o g \_ wszVideoFourCCCodec |
 
 
 
- 
+ 
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato il recupero di una serie di proprietà di metadati da un file ASF utilizzando Windows Media Format SDK e la relativa conversione ai valori equivalenti di Windows Media Gestione dispositivi.
+Il codice di esempio C++ seguente illustra il recupero di una serie di proprietà di metadati da un file ASF usando Windows Media Format SDK e la loro conversione nei valori di Media Device Manager Windows equivalenti.
 
 
 ```C++
@@ -196,7 +196,7 @@ HRESULT GetFileMetadataFromFormatSDK(IWMDMMetaData* pMetadata, LPCWSTR file)
 
 
 
-La funzione di esempio C++ seguente mostra come usare DirectShow per ottenere informazioni su file e aggiungerlo ai metadati.
+La funzione di esempio C++ seguente illustra come usare DirectShow per ottenere alcune informazioni sul file e aggiungerle ai metadati.
 
 
 ```C++
@@ -313,9 +313,9 @@ HRESULT GetFileMetadataFromDShow(IWMDMMetaData* pMetadata, LPCWSTR file)
 [**Scrittura di file nel dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

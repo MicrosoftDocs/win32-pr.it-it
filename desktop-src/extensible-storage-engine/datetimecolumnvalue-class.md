@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe DateTimeColumnValue'
+description: Altre informazioni sulla classe DateTimeColumnValue
 title: Classe DateTimeColumnValue
 TOCTitle: DateTimeColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DateTimeColumnValue
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 59275ae13287645447b0095259b1dfce34fa53d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba1417ce3b724eb028376bc9ae219af54da512c70dfafdea8f182b891b411523
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725484"
 ---
 # <a name="datetimecolumnvalue-class"></a>Classe DateTimeColumnValue
 
-Valore della colonna [GUID](/dotnet/api/system.guid) .
+Valore [della colonna Guid.](/dotnet/api/system.guid)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[DateTime](/dotnet/api/system.datetime)\>  
-      Microsoft. ISAM. esent. Interop. DateTimeColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[DateTime](/dotnet/api/system.datetime)\>  
+      Microsoft.Isam.Esent.Interop.DateTimeColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,4 +69,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di DateTimeColumnValue](./datetimecolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

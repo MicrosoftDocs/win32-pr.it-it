@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-Priority
+title: Attributo rpc-Ns-Priority
 description: Priorità di una voce del profilo RPC specificata.
 ms.assetid: a4904b21-53b7-48e3-814a-948427984fcd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-Priority
+- Schema AD dell'attributo rpc-Ns-Priority
 - Schema AD dell'attributo rpcNsPriority
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10cc2b472262d118ee4896935157d45952846db0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1ea86dc78933e7647d1210397d5fd66c287c0ca4ad638959e6cfa1dc59993db7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837059"
 ---
-# <a name="rpc-ns-priority-attribute"></a>attributo RPC-NS-Priority
+# <a name="rpc-ns-priority-attribute"></a>Attributo rpc-Ns-Priority
 
 Priorità di una voce del profilo RPC specificata.
 
@@ -29,13 +29,13 @@ Priorità di una voce del profilo RPC specificata.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | RPC-NS-priorità                      |
-| LDAP-Display-Name | rpcNsPriority                        |
+| CN                | rpc-Ns-Priority                      |
+| Ldap-Display-Name | rpcNsPriority                        |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.117               |
-| System-ID-GUID    | bf967a27-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a27-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Priorità di una voce del profilo RPC specificata.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: endrep-PS
-description: Termina una rep-PS... blocco endrep.
+title: endrep - ps
+description: Terminare un rappresentante - ps... blocco endrep.
 ms.assetid: e87ba73d-e912-4b6b-8ca0-2977b9edc1da
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4d33e85f5e34c69509350dda29a7f6703a8b52ec
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3d053e177a9378357289113a591ac2c5d3de01f549ab31757451478354467b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104976314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744201"
 ---
-# <a name="endrep---ps"></a>endrep-PS
+# <a name="endrep---ps"></a>endrep - ps
 
-Termina una [Rep-PS](rep---ps.md)... blocco endrep.
+Terminare un [rappresentante - ps](rep---ps.md)... blocco endrep.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,19 +29,19 @@ Termina una [Rep-PS](rep---ps.md)... blocco endrep.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | endrep                |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="example"></a>Esempio
 
@@ -58,12 +58,12 @@ endrep
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

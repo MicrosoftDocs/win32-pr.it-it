@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentNotInDistributedTransactionException'
+description: Altre informazioni sul costruttore EsentNotInDistributedTransactionException
 title: Costruttore EsentNotInDistributedTransactionException
 TOCTitle: 'EsentNotInDistributedTransactionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNotInDistributedTransactionException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b1e3a121d71d243b91b0924f09703844213a012b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df7bb390097538ec28b6d4ed21e51b4b562e189fbcea2b657de2568782749520
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722771"
 ---
 # <a name="esentnotindistributedtransactionexception-constructor"></a>Costruttore EsentNotInDistributedTransactionException
 
 Inizializza una nuova istanza della classe EsentNotInDistributedTransactionException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentNotInDistributedTransactionException()
 
 [Membri di EsentNotInDistributedTransactionException](./esentnotindistributedtransactionexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

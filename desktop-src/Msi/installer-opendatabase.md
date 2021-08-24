@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 897e683fd56ce3e7496dd945ee068a9e6f0c0f77
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: aab1e66dd4208817f854db88c57db5b6269a7a0b912242da649dffcf24cabab3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107492270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821371"
 ---
 # <a name="installeropendatabase-method"></a>Metodo Installer.OpenDatabase
 
@@ -72,17 +72,17 @@ Parametro dell'elenco seguente o stringa contenente il nome del percorso del nuo
 
 ## <a name="return-value"></a>Valore restituito
 
-Oggetto [**Database**](database-object.md) che rappresenta il database del programma di installazione esistente o nuovo aperto.
+Oggetto [**Database**](database-object.md) che rappresenta il database del programma di installazione nuovo o esistente aperto.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un database viene aperto come output di un altro database, il flusso di informazioni di riepilogo del database di output è in realtà un mirror di sola lettura del database originale e pertanto non può essere modificato. Inoltre, non viene salvato in modo permanente con il database. Per creare o modificare le informazioni di riepilogo per il database di output, è necessario chiuderlo e riaprirlo.
+Quando un database viene aperto come output di un altro database, il flusso di informazioni di riepilogo del database di output è in realtà un mirror di sola lettura del database originale e pertanto non può essere modificato. Inoltre, non è persistente con il database. Per creare o modificare le informazioni di riepilogo per il database di output, è necessario chiuderlo e riaprirlo.
 
-Per apportare e salvare le modifiche a un database, aprire prima il database in modalità transazione (msiOpenDatabaseModeTransact), creare (msiOpenDatabaseModeCreate o msiOpenDatabaseModeCreateDirect) o in modalità diretta (msiOpenDatabaseModeDirect). Dopo aver apportato le modifiche, chiamare sempre il [**metodo Commit**](database-commit.md) prima di chiudere l'handle del database. Il **metodo Commit** scarica tutti i buffer.
+Per apportare e salvare le modifiche a un database, aprire prima il database in modalità transazione (msiOpenDatabaseModeTransact), creare (msiOpenDatabaseModeCreate o msiOpenDatabaseModeCreateDirect) o modalità diretta (msiOpenDatabaseModeDirect). Dopo aver apportato le modifiche, chiamare sempre il [**metodo Commit**](database-commit.md) prima di chiudere l'handle del database. Il **metodo Commit** scarica tutti i buffer.
 
-Chiamare sempre il [**metodo Commit**](database-commit.md) su un database aperto in modalità diretta (msiOpenDatabaseModeDirect o msiOpenDatabaseModeCreateDirect) prima di chiudere il database. In caso negativo, il database potrebbe essere danneggiato.
+Chiamare sempre [**il metodo Commit**](database-commit.md) su un database aperto in modalità diretta (msiOpenDatabaseModeDirect o msiOpenDatabaseModeCreateDirect) prima di chiudere il database. In caso negativo, è possibile che il database venga danneggiato.
 
-Poiché il **metodo OpenDatabase avvia** l'accesso al database, non può essere usato con un'installazione in esecuzione.
+Poiché il **metodo OpenDatabase** avvia l'accesso al database, non può essere usato con un'installazione in esecuzione.
 
 Se il metodo ha esito negativo, è possibile ottenere informazioni estese sull'errore usando il [**metodo LastErrorRecord.**](installer-lasterrorrecord.md)
 
@@ -92,9 +92,9 @@ Se il metodo ha esito negativo, è possibile ottenere informazioni estese sull'e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5.0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

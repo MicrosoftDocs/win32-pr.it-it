@@ -1,19 +1,19 @@
 ---
-title: Proprietà connessa
-description: Proprietà connessa
+title: Proprietà Connected
+description: Proprietà Connected
 ms.assetid: 61b7f550-d8d6-4719-a0d4-0bf3a8cf096c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bba78358c7c42f0754da017aa0c188d41acd189
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6af3a44e97236060733adc55ec6e44eddd0b1d8879250b2a28b54c0bca384cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726092"
 ---
-# <a name="connected-property"></a>Proprietà connessa
+# <a name="connected-property"></a>Proprietà Connected
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,13 +27,13 @@ Restituisce o imposta un valore che indica se il controllo corrente è connesso 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente. * * * connesso* *  \[  =  *valore booleano*\]
+*agent.***Connected* *  \[  =  *booleano*\]
 
 
 
 | Parte      | Descrizione                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------|
-| *boolean* | Espressione booleana che specifica se il controllo è connesso. Valore **true** Il controllo è connesso.<br/> |
+| *boolean* | Espressione booleana che specifica se il controllo è connesso. **True** Il controllo è connesso.<br/> |
 
 
 
@@ -43,9 +43,9 @@ Restituisce o imposta un valore che indica se il controllo corrente è connesso 
 
 ## <a name="remarks"></a>Commenti
 
-In molte situazioni, l'impostazione del controllo crea automaticamente una connessione al server Microsoft Agent. Se, ad esempio, si specifica il CLSID del controllo Microsoft Agent nel <OBJECT> tag in una pagina Web, viene aperta automaticamente una connessione al server e l'uscita dalla pagina chiude la connessione. Analogamente, per Visual Basic o altri linguaggi che consentono di eliminare un controllo in un form, l'esecuzione del programma apre automaticamente una connessione e l'uscita dal programma chiude la connessione. Se il server non è attualmente in esecuzione, viene avviato automaticamente.
+In molte situazioni, specificando il controllo viene creata automaticamente una connessione con il server Microsoft Agent. Ad esempio, se si specifica il CLSID del controllo Microsoft Agent nel tag in una pagina Web, viene aperta automaticamente una connessione server e la chiusura della pagina chiude <OBJECT> la connessione. Analogamente, per Visual Basic o altre lingue che consentono di rilasciare un controllo in un form, l'esecuzione del programma apre automaticamente una connessione e l'uscita dal programma chiude la connessione. Se il server non è attualmente in esecuzione, viene avviato automaticamente.
 
-Tuttavia, se si desidera creare un controllo agente in fase di esecuzione, potrebbe essere necessario aprire in modo esplicito una nuova connessione al server utilizzando la proprietà **connessa** . In Visual Basic, ad esempio, è possibile creare un oggetto ActiveX in fase di esecuzione usando l'istruzione set con la parola chiave **New** (o la funzione CreateObject). Durante la creazione dell'oggetto, è possibile che non crei la connessione al server. È possibile usare la proprietà **Connected** prima del codice che chiama l'interfaccia di programmazione di Microsoft Agent, come illustrato nell'esempio seguente:
+Tuttavia, se si vuole creare un controllo Agent in fase di esecuzione, potrebbe anche essere necessario aprire in modo esplicito una nuova connessione al server usando la **proprietà Connected.** Ad esempio, in Visual Basic è possibile creare un oggetto ActiveX in fase di esecuzione usando l'istruzione Set con la parola chiave **New** (o la funzione CreateObject). Anche se questo crea l'oggetto , potrebbe non creare la connessione al server. È possibile usare la **proprietà Connected** prima di qualsiasi codice che chiama l'interfaccia di programmazione di Microsoft Agent, come illustrato nell'esempio seguente:
 
 
 ```
@@ -67,7 +67,7 @@ Tuttavia, se si desidera creare un controllo agente in fase di esecuzione, potre
 
 
 
-La creazione di un controllo utilizzando questa tecnica non espone gli eventi del controllo agente. In Visual Basic 5,0 (e versioni successive) è possibile accedere agli eventi del controllo includendo il controllo nei riferimenti del progetto e usare la parola chiave **WithEvents** nella dichiarazione di variabile:
+La creazione di un controllo con questa tecnica non espone gli eventi del controllo Agent. In Visual Basic 5.0 (e versioni successive), è possibile accedere agli eventi del controllo includendo il controllo nei riferimenti del progetto e usare la parola chiave **WithEvents** nella dichiarazione di variabile:
 
 
 ```
@@ -79,9 +79,9 @@ La creazione di un controllo utilizzando questa tecnica non espone gli eventi de
 
 
 
-L'utilizzo di **WithEvents** per creare un'istanza del controllo agente in fase di esecuzione apre automaticamente la connessione al server Microsoft Agent. Non è quindi necessario includere un'istruzione **connessa** .
+**L'uso di WithEvents** per creare un'istanza del controllo Agent in fase di esecuzione apre automaticamente la connessione con il server Microsoft Agent. Pertanto, non è necessario includere un'istruzione **Connected.**
 
-È possibile chiudere la connessione al server rilasciando tutti i riferimenti creati agli oggetti di Agent, ad esempio IAgentCtlCharacterEx e IAgentCtlCommandEx. È inoltre necessario rilasciare il riferimento al controllo agente stesso. In Visual Basic è possibile rilasciare un riferimento a un oggetto impostando la relativa variabile su **Nothing**. Se sono stati caricati caratteri, scaricarli prima di rilasciare l'oggetto carattere.
+È possibile chiudere la connessione al server rilasciando tutti i riferimenti creati agli oggetti Agent, ad esempio IAgentCtlCharacterEx e IAgentCtlCommandEx. È anche necessario rilasciare il riferimento al controllo Agent stesso. In Visual Basic, è possibile rilasciare un riferimento a un oggetto impostandone la variabile su **Nothing**. Se sono stati caricati caratteri, scaricarli prima di rilasciare l'oggetto carattere.
 
 
 ```
@@ -120,7 +120,7 @@ L'utilizzo di **WithEvents** per creare un'istanza del controllo agente in fase 
 
 
 > [!Note]  
-> Non è possibile chiudere la connessione al server rilasciando i riferimenti in cui è stato aggiunto il componente. Non è ad esempio possibile chiudere la connessione al server nelle pagine Web in cui si usa il <OBJECT> tag per dichiarare il controllo o in un'applicazione Visual Basic in cui si rilascia il controllo in un form. Quando si rilasciano tutti i riferimenti all'agente, il working set dell'agente viene ridotto, la connessione rimane fino a quando non si passa alla pagina successiva o si esce dall'applicazione.
+> Non è possibile chiudere la connessione al server rilasciando i riferimenti in cui è stato aggiunto il componente. Ad esempio, non è possibile chiudere la connessione al server nelle pagine Web in cui si usa il tag per dichiarare il controllo o in un'applicazione Visual Basic in cui si rilascia il controllo <OBJECT> in un form. Mentre il rilascio di tutti i riferimenti a Agent ridurrà l'working set di Agent, la connessione rimane finché non si passa alla pagina successiva o non si esce dall'applicazione.
 
  
 

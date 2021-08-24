@@ -1,7 +1,7 @@
 ---
 description: Ottenere una costante dalla tabella delle costanti.
 ms.assetid: ebb05a09-af20-4c71-8594-940fce3a97e7
-title: 'Metodo ID3DXTextureShader:: getconstantelement (D3DX9Shader. h)'
+title: Metodo ID3DXTextureShader::GetConstantElement (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 44b5089b6e539a8104586e27b58388a324462b37
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02d21efb3ef0ed5d4602833571b2b1a32e73df73b76f82a357cda574e93e84ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747390"
 ---
-# <a name="id3dxtextureshadergetconstantelement-method"></a>Metodo ID3DXTextureShader:: getconstantelement
+# <a name="id3dxtextureshadergetconstantelement-method"></a>Metodo ID3DXTextureShader::GetConstantElement
 
 Ottenere una costante dalla tabella delle costanti.
 
@@ -41,21 +41,21 @@ D3DXHANDLE GetConstantElement(
 
 <dl> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-[Handle](handles.md) per la matrice di costanti. Questo valore non può essere **null**.
+Handle [per](handles.md) la matrice di costanti. Questo valore non può essere **NULL.**
 
 </dd> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice in base zero dell'elemento nella tabella Constant.
+Indice in base zero dell'elemento nella tabella delle costanti.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Indice in base zero dell'elemento nella tabella Constant.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce un identificatore univoco alla costante.
+Restituisce un identificatore univoco per la costante.
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere una costante che non fa parte di una matrice, usare [**ID3DXTextureShader:: getconstant**](id3dxtextureshader--getconstant.md) o [**ID3DXTextureShader:: GetConstantByName**](id3dxtextureshader--getconstantbyname.md).
+Per ottenere una costante che non fa parte di una matrice, usare [**ID3DXTextureShader::GetConstant**](id3dxtextureshader--getconstant.md) o [**ID3DXTextureShader::GetConstantByName**](id3dxtextureshader--getconstantbyname.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Per ottenere una costante che non fa parte di una matrice, usare [**ID3DXTexture
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

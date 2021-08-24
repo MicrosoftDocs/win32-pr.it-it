@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-out-routing-Servers
-description: DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizzato tutto il traffico in uscita per questo computer.
+title: Attributo MSMQ-Out-Routing-Servers
+description: Il DN si collega ai server di routing MSMQ attraverso i quali deve essere instradato tutto il traffico in uscita per questo computer.
 ms.assetid: 169558e4-d2a6-4555-bc5f-7e6a89e51789
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD per l'attributo MSMQ-out-routing-Servers
+- Schema AD dell'attributo MSMQ-Out-Routing-Servers
 - Schema AD dell'attributo mSMQOutRoutingServers
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc2265b2d809b7a73cd19faace87473552471a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd36fa89ab33ac7757ed4cf14673d33bc32fc1495f95102454fc918b8f21c4bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762441"
 ---
-# <a name="msmq-out-routing-servers-attribute"></a>Attributo MSMQ-out-routing-Servers
+# <a name="msmq-out-routing-servers-attribute"></a>Attributo MSMQ-Out-Routing-Servers
 
-DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizzato tutto il traffico in uscita per questo computer.
+Il DN si collega ai server di routing MSMQ attraverso i quali deve essere instradato tutto il traffico in uscita per questo computer.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-out-routing-server                |
-| LDAP-Display-Name | mSMQOutRoutingServers                   |
+| CN                | MSMQ-Out-Routing-Servers                |
+| Ldap-Display-Name | mSMQOutRoutingServers                   |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.928                  |
-| System-ID-GUID    | 9a0dc32b-c100-11d1-bbc5-0080c76670c0    |
+| System-Id-Guid    | 9a0dc32b-c100-11d1-bbc5-0080c76670c0    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ DN si collega ai server di routing MSMQ attraverso i quali deve essere indirizza
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

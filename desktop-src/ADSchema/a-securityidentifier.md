@@ -1,10 +1,10 @@
 ---
-title: Attributo Security-Identifier
-description: Valore univoco di lunghezza variabile usato per identificare un account utente, un account di gruppo o una sessione di accesso a cui si applica una voce ACE.
+title: Security-Identifier attributo
+description: Valore univoco di lunghezza variabile utilizzato per identificare un account utente, un account di gruppo o una sessione di accesso a cui si applica una ACE.
 ms.assetid: bb6a16f6-d2c1-48f1-af9a-40fe2a59f281
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Security-Identifier attribute
+- Security-Identifier schema AD dell'attributo
 - Schema AD dell'attributo securityIdentifier
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dd921d0bcba08c2174475007476add8e8787456
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f15449127dd11e7e0ebfef9f63d8e79470ed662377cbdd1929ed072b2502dae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836871"
 ---
-# <a name="security-identifier-attribute"></a>Attributo Security-Identifier
+# <a name="security-identifier-attribute"></a>Security-Identifier attributo
 
-Valore univoco di lunghezza variabile usato per identificare un account utente, un account di gruppo o una sessione di accesso a cui si applica una voce ACE.
+Valore univoco di lunghezza variabile utilizzato per identificare un account utente, un account di gruppo o una sessione di accesso a cui si applica una ACE.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Security-Identifier                  |
-| LDAP-Display-Name | securityIdentifier                   |
+| Ldap-Display-Name | securityIdentifier                   |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.121               |
-| System-ID-GUID    | bf967a2f-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Stringa (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | bf967a2f-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
@@ -58,15 +58,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Valore univoco di lunghezza variabile usato per identificare un account utente, 
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Vero                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

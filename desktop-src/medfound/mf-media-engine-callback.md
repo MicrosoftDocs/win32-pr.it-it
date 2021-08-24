@@ -1,17 +1,17 @@
 ---
 description: Contiene un puntatore all'interfaccia di callback per il motore multimediale.
 ms.assetid: 5FAEF29A-B978-410A-8F5B-EB6F7E35EE6D
-title: Attributo MF_MEDIA_ENGINE_CALLBACK (Mfmediaengine. h)
+title: MF_MEDIA_ENGINE_CALLBACK attributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1173e22f9d87f4a77f9ed4a1d1b405fc040bd32b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 29ba6149c8d0b615ad13277588bbee5ee7397d9adaa089195671b3336b2b406b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723044"
 ---
-# <a name="mf_media_engine_callback-attribute"></a>\_Attributo di \_ callback del motore multimediale MF \_
+# <a name="mf_media_engine_callback-attribute"></a>Attributo CALLBACK del \_ \_ MOTORE \_ MULTIMEDIALE MF
 
 Contiene un puntatore all'interfaccia di callback per il motore multimediale.
 
@@ -21,15 +21,15 @@ Contiene un puntatore all'interfaccia di callback per il motore multimediale.
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: seunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un puntatore all'interfaccia [**IMFMediaEngineNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaenginenotify) , implementata dall'applicazione.
+Il valore di questo attributo è un puntatore [**all'interfaccia IMFMediaEngineNotify,**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaenginenotify) implementata dall'applicazione.
 
-Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale. L'attributo è obbligatorio.
+Questo attributo viene usato con il [**metodo IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale. L'attributo è obbligatorio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                          |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                          |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 
@@ -47,10 +47,10 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
+[**IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
 </dt> <dt>
 
 [**IMFMediaEngineNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaenginenotify)

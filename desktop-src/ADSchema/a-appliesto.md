@@ -1,10 +1,10 @@
 ---
-title: Attributo Applies-To
+title: Applies-To attributo
 description: Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'elenco una classe di oggetti è rappresentata dalla proprietà schemaIDGUID per il relativo oggetto schemaClass.
 ms.assetid: 8333e508-627c-42ce-865b-db061a5603db
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Applies-To attribute
+- Applies-To schema AD dell'attributo
 - Schema AD dell'attributo appliesTo
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b96a2690f420259b038b54b6d2b070b41f56d4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af1182bf81ac1475c6880356064d3db1b4281951cead10217ae86614c476892a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821281"
 ---
-# <a name="applies-to-attribute"></a>Attributo Applies-To
+# <a name="applies-to-attribute"></a>Applies-To attributo
 
 Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'elenco una classe di oggetti è rappresentata dalla proprietà schemaIDGUID per il relativo oggetto schemaClass.
 
@@ -30,12 +30,12 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Applies-To                                  |
-| LDAP-Display-Name | appliesTo                                   |
+| Ldap-Display-Name | appliesTo                                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.341                      |
-| System-ID-GUID    | 8297931d-86d3-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 8297931d-86d3-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Contiene l'elenco di classi di oggetti a cui si applica il diritto esteso. Nell'
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 

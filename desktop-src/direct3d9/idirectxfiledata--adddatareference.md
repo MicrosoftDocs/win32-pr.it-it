@@ -1,7 +1,7 @@
 ---
 description: Crea e aggiunge un oggetto riferimento ai dati come oggetto figlio. Deprecato.
 ms.assetid: 71a770a2-1502-4b93-b368-990c3318bd33
-title: 'Metodo IDirectXFileData:: AddDataReference (DXFile. h)'
+title: Metodo IDirectXFileData::AddDataReference (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 44834af51380c3b8bdbb4e9a4b24bf911ea6a07f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4c291e4f5754975f7e564c8c579b3651b29f0e6b684ad474f2f8436875dbf078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747261"
 ---
-# <a name="idirectxfiledataadddatareference-method"></a>Metodo IDirectXFileData:: AddDataReference
+# <a name="idirectxfiledataadddatareference-method"></a>Metodo IDirectXFileData::AddDataReference
 
 Crea e aggiunge un oggetto riferimento ai dati come oggetto figlio. Deprecato.
 
@@ -41,21 +41,21 @@ HRESULT AddDataReference(
 
 <dl> <dt>
 
-*szRef* \[ in\]
+*szRef* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore al nome dell'oggetto dati a cui si fa riferimento. Questo parametro può essere **null** se pguidRef fornisce un riferimento al GUID.
+Puntatore al nome dell'oggetto dati di riferimento. Questo parametro può essere **NULL** se pguidRef fornisce un riferimento al GUID.
 
 </dd> <dt>
 
-*pguidRef* \[ in\]
+*pguidRef* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**GUID**](guid.md) \* const**
+Tipo: **[**CONST GUID**](guid.md) \***
 
-Puntatore al GUID che rappresenta i dati. Questo parametro può essere **null** se szRef fornisce un riferimento al nome.
+Puntatore al GUID che rappresenta i dati. Questo parametro può essere **NULL** se szRef fornisce un riferimento al nome.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 ## <a name="remarks"></a>Commenti
 
-Affinché questo metodo abbia esito positivo, il parametro szRef o pguidRef deve essere non **null**.
+Perché questo metodo riesca, il parametro szRef o pguidRef deve essere diverso da **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Affinché questo metodo abbia esito positivo, il parametro szRef o pguidRef deve
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

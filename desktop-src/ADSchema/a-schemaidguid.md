@@ -1,10 +1,10 @@
 ---
-title: Attributo schema-ID-GUID
-description: Identificatore univoco per un attributo.
+title: Attributo Schema-ID-GUID
+description: Identificatore univoco di un attributo.
 ms.assetid: 50f0a4b6-dded-42db-9ac5-123f2885c658
 ms.tgt_platform: multiple
 keywords:
-- Schema-ID-GUID attributo schema AD
+- Schema-ID-GUID attributo AD Schema
 - Schema AD dell'attributo schemaIDGUID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72f0b16cc45ecfbcd03e2104cbc6c5b5b41bd813
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: afbf6f45b2c4518c0140eaf3188447740849ad79933d4e4eb71fe57f769f0455
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837044"
 ---
-# <a name="schema-id-guid-attribute"></a>Attributo schema-ID-GUID
+# <a name="schema-id-guid-attribute"></a>Attributo Schema-ID-GUID
 
-Identificatore univoco per un attributo.
+Identificatore univoco di un attributo.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------|
-| CN                | Schema-ID-GUID                                                      |
-| LDAP-Display-Name | schemaIDGUID                                                        |
+| CN                | SCHEMA-ID-GUID                                                      |
+| Ldap-Display-Name | schemaIDGUID                                                        |
 | Dimensione              | 16 byte                                                            |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                    |
-| Frequenza di aggiornamento  | Questo valore viene impostato quando l'oggetto viene creato e non può essere modificato. |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                                    |
+| Frequenza di aggiornamento  | Questo valore viene impostato quando viene creato l'oggetto e non può essere modificato. |
 | Attribute-Id      | 1.2.840.113556.1.4.148                                              |
-| System-ID-GUID    | bf967923-0de6-11d0-a285-00aa003049e2                                |
+| System-Id-Guid    | bf967923-0de6-11d0-a285-00aa003049e2                                |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)               |
 
 
@@ -44,7 +44,7 @@ Identificatore univoco per un attributo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Identificatore univoco per un attributo.
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

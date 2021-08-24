@@ -1,7 +1,7 @@
 ---
-description: Specifica quando viene eseguito l'accesso Single Sign-on.
+description: Specifica quando viene eseguito l'accesso Single Sign-On.
 ms.assetid: 23a7ab31-b29d-4f45-a384-bb2d2c18230f
-title: Elemento Type (singleSignOn)
+title: Elemento type (singleSignOn)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 947c8801e5b2534f4c3b4e548a2a2f2c7a4250d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8a395a5cdbd21bd33012e624f069d9447204cc96ffd2996a138ebf5d65f7bb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800731"
 ---
-# <a name="type-singlesignon-element"></a>Elemento Type (singleSignOn)
+# <a name="type-singlesignon-element"></a>Elemento type (singleSignOn)
 
-L'elemento Type (singleSignOn) specifica quando viene eseguito l'accesso Single Sign-on. Quando è impostato su `preLogon` , l'accesso Single Sign-on viene eseguito prima dell'accesso dell'utente. Quando è impostato su `postLogon` , Single Sign-on viene eseguito immediatamente dopo l'accesso dell'utente.
+L'elemento type (singleSignOn) specifica quando viene eseguito l'accesso Single Sign-On. Se impostato su `preLogon` , l'accesso Single Sign-On viene eseguito prima dell'accesso dell'utente. Se impostato su `postLogon` , l'accesso Single Sign-On viene eseguito immediatamente dopo l'accesso dell'utente.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -44,7 +44,7 @@ L'elemento Type (singleSignOn) specifica quando viene eseguito l'accesso Single 
 </xs:element>
 ```
 
-L'elemento **Type** è definito dall'elemento [**singleSignOn**](onexschema-singlesignon-onex-element.md) .
+**L'elemento** type è definito dall'elemento [**singleSignOn.**](onexschema-singlesignon-onex-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ L'elemento **Type** è definito dall'elemento [**singleSignOn**](onexschema-sing
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ L'elemento **Type** è definito dall'elemento [**singleSignOn**](onexschema-sing
 [**singleSignOn**](onexschema-singlesignon-onex-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**singleSignOn (OneX)**](onexschema-singlesignon-onex-element.md)

@@ -1,9 +1,9 @@
 ---
-title: Funzione WsSetAutoFail (WebServicesDebug. h)
-description: Imposta il punto successivo in cui inserire un errore. Si tratta di una funzione di solo DEBUG.
+title: Funzione WsSetAutoFail (WebServicesDebug.h)
+description: Imposta il punto successivo per inserire un errore. Si tratta di una funzione DEBUG ONLY.
 ms.assetid: b453dbc5-01ff-486d-8767-254b74cc5b6e
 keywords:
-- Servizi Web per la funzione WsSetAutoFail per Windows
+- Servizi Web della funzione WsSetAutoFail per Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ba10b8b038f270f764b064fac1cb81e675f5239
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e2ae3ed731edce429aac78700d52d0e7504a5688d1bf35bbb9c64a5d34bc0a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838541"
 ---
-# <a name="wssetautofail-function"></a>WsSetAutoFail (funzione)
+# <a name="wssetautofail-function"></a>Funzione WsSetAutoFail
 
-Imposta il punto successivo in cui inserire un errore. Si tratta di una funzione di solo DEBUG.
+Imposta il punto successivo per inserire un errore. Si tratta di una funzione DEBUG ONLY.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,23 +41,23 @@ HRESULT WINAPI  WsSetAutoFail(
 
 <dl> <dt>
 
-*numero* \[ di in\]
+*count* \[ Pollici\]
 </dt> <dd>
 
-Specifica il numero di operazioni prima che inizino a verificarsi degli errori.
+Specifica il numero di operazioni prima che inizino a verificarsi errori.
 
 </dd> <dt>
 
 *errore* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a un oggetto [WS \_ Error](ws-error.md) in cui è necessario archiviare informazioni aggiuntive sull'errore se la funzione ha esito negativo.
+Puntatore a un [oggetto WS \_ ERROR](ws-error.md) in cui devono essere archiviate informazioni aggiuntive sull'errore se la funzione non riesce.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>WebServicesDebug. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>WebServicesDebug.h</dt> </dl> |
 
 
 

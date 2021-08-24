@@ -1,9 +1,9 @@
 ---
-title: Funzione FreeRepairInfoExs (Ndattributils. h)
-description: Consente di deallocare la memoria allocata internamente a una matrice di strutture RepairInfoEx.
+title: Funzione FreeRepairInfoExs (Ndattributils.h)
+description: Dealloca la memoria allocata internamente a una matrice di strutture RepairInfoEx.
 ms.assetid: b4e3e758-88cd-4ce2-b1a4-5b47889aae9b
 keywords:
-- FreeRepairInfoExs funzione NDF
+- Funzione FreeRepairInfoExs NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 094c745486526caa870a500019de3aa819b6fe5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b75d3d3ee8ba710b0b0ed4755e5ee01309f955bcc1658145dc1d42fe3b9e1ed8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802421"
 ---
-# <a name="freerepairinfoexs-function"></a>FreeRepairInfoExs (funzione)
+# <a name="freerepairinfoexs-function"></a>Funzione FreeRepairInfoExs
 
-La funzione **FreeRepairInfoExs** consente di deallocare la memoria allocata internamente a una matrice di strutture [**RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) . Questa funzione chiama [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per deallocare la memoria.
+La **funzione FreeRepairInfoExs** dealloca la memoria allocata internamente a una matrice [**di strutture RepairInfoEx.**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) Questa funzione chiama [**CoTaskMemFree per**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) deallocare la memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ VOID FreeRepairInfoExs(
 
 <dl> <dt>
 
-*pInfo* \[ in\]
+*pInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) \** _
+Tipo: **[ **RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex)\***
 
-Matrice di strutture. La memoria allocata a cui fanno riferimento queste strutture verrà liberata.
+Matrice di strutture . La memoria allocata a cui puntano queste strutture verrà liberata.
 
 </dd> <dt>
 
-_RepairCount * 
+*RepairCount* 
 </dt> <dd>
 
 Tipo: **ULONG**
@@ -63,9 +63,9 @@ Numero di strutture nella matrice a cui punta *pInfo*.
 *bFreePointer* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-True se è necessario eliminare anche la matrice di strutture. in caso contrario, false.
+True se anche la matrice di strutture deve essere eliminata; in caso contrario, false.
 
 </dd> </dl>
 
@@ -79,9 +79,9 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
