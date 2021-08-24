@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-Link-Security-Descriptor-V2
-description: Descrittore di sicurezza del punto di nuova analisi dei collegamenti DFS sul file system.
+title: Attributo ms-DFS-Link-Security-Descriptor-v2
+description: Descrittore di sicurezza del punto di analisi dei collegamenti DFS nel file system.
 ms.assetid: 5a5a7a33-2228-4c1d-b1ea-79dcf7ab13d0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-Link-Security-Descriptor-V2
-- msDFS-schema AD attributo LinkSecurityDescriptorv2
+- Schema AD dell'attributo ms-DFS-Link-Security-Descriptor-v2
+- Schema AD dell'attributo msDFS-LinkSecurityDescriptorv2
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4b37362f77c150896c3781502d3af33df55df9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7b4dba9adbf42928f0a568b85ea5d70fe664d2f8b3f6c1c132b9cf42b958cffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705091"
 ---
-# <a name="ms-dfs-link-security-descriptor-v2-attribute"></a>attributo ms-DFS-Link-Security-Descriptor-V2
+# <a name="ms-dfs-link-security-descriptor-v2-attribute"></a>Attributo ms-DFS-Link-Security-Descriptor-v2
 
-Descrittore di sicurezza del punto di nuova analisi dei collegamenti DFS sul file system.
+Descrittore di sicurezza del punto di analisi dei collegamenti DFS nel file system.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------|
-| CN                | MS-DFS-Link-Security-Descriptor-V2                  |
-| LDAP-Display-Name | msDFS-LinkSecurityDescriptorv2                      |
+| CN                | ms-DFS-Link-Security-Descriptor-v2                  |
+| Ldap-Display-Name | msDFS-LinkSecurityDescriptorv2                      |
 | Dimensione              | \-                                                  |
-| Privilegio aggiornamento  | \-                                                  |
+| Aggiorna privilegio  | \-                                                  |
 | Frequenza di aggiornamento  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.2040                             |
-| System-ID-GUID    | 57cf87f7-3426-4841-b322-02b3b6e9eba8                |
+| System-Id-Guid    | 57cf87f7-3426-4841-b322-02b3b6e9eba8                |
 | Sintassi            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
@@ -55,15 +55,15 @@ Descrittore di sicurezza del punto di nuova analisi dei collegamenti DFS sul fil
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Descrittore di sicurezza del punto di nuova analisi dei collegamenti DFS sul fil
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Descrittore di sicurezza del punto di nuova analisi dei collegamenti DFS sul fil
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> |
 
 
 

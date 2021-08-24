@@ -1,26 +1,26 @@
 ---
 title: Uso della libreria ausiliaria
-description: Con OpenGL, Silicon Graphics (SGI) ha creato la libreria ausiliaria per scrivere semplici programmi di esempio per la guida per programmatori di OpenGL.
+description: Usando OpenGL, Silicon Graphics (SGI) ha creato la libreria ausiliaria per scrivere semplici programmi di esempio per la Guida per programmatori OpenGL.
 ms.assetid: a04b2db9-d253-41cb-a7db-d39a1ac50ac9
 keywords:
-- OpenGL per Windows, libreria ausiliaria
+- OpenGL in Windows,libreria ausiliaria
 - libreria ausiliaria OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef19254aca4c6678951a9c49d0792a7f2105c9aa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6399bef99c5843bf7df2b1b2e49c4714687f8b783978f363e4a1f286dec85c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776521"
 ---
 # <a name="using-the-auxiliary-library"></a>Uso della libreria ausiliaria
 
-Con OpenGL, Silicon Graphics (SGI) ha creato la libreria ausiliaria per scrivere semplici programmi di esempio per la *Guida per programmatori di OpenGL*. Il codice sorgente per la libreria ausiliaria è fornito con Microsoft Platform SDK, insieme agli esempi di OpenGL. Per comprendere il modo in cui la libreria ausiliaria è stata sviluppata da funzioni e routine OpenGL, esaminare il codice sorgente. È possibile utilizzare le funzioni della libreria ausiliaria nei propri programmi. Per una descrizione della libreria ausiliaria, vedere la *Guida alla programmazione di OpenGL*.
+Usando OpenGL, Silicon Graphics (SGI) ha creato la libreria ausiliaria per scrivere semplici programmi di esempio per la *Guida per programmatori OpenGL.* Il codice sorgente per la libreria ausiliaria viene fornito con Microsoft Platform SDK, insieme agli esempi OpenGL. Per comprendere come la libreria ausiliaria è stata sviluppata da routine e funzioni OpenGL, esaminare il codice sorgente. È possibile usare le funzioni della libreria ausiliaria nei propri programmi. Per una descrizione della libreria ausiliaria, vedere la Guida *per programmatori OpenGL.*
 
- 
+ 
 
- 
+ 
 
 
 

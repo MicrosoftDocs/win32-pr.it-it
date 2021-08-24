@@ -1,23 +1,23 @@
 ---
-title: callc (SM4-ASM)
-description: Chiama in modo condizionale una subroutine contrassegnata da where the label l \ appare nel programma.
+title: callc (sm4 - asm)
+description: Chiama in modo condizionale una subroutine contrassegnata da dove viene visualizzata l'etichetta l\ nel programma.
 ms.assetid: 7F6E81CE-0C38-499B-B83E-FA76FA154451
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6bc8c9d1e4a99ce25f99253518482181cdb74d8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: dcb751b57a09704a2fec7a9c3afb69362873e3a1d2b43091efd984f67623188a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727161"
 ---
-# <a name="callc-sm4---asm"></a>callc (SM4-ASM)
+# <a name="callc-sm4---asm"></a>callc (sm4 - asm)
 
-Chiama in modo condizionale una subroutine contrassegnata da dove viene visualizzata l'etichetta **l \#** nel programma.
+Chiama in modo condizionale una subroutine contrassegnata da dove viene visualizzata **l'etichetta \#** nel programma.
 
 
 
-| callc { \_ z \|\_NZ} src0. Selezionare il \_ componente, l\# |
+| callc{ \_ z\|\_nz} src0.select \_ component, l\# |
 |----------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Chiama in modo condizionale una subroutine contrassegnata da dove viene visualiz
 
 | Elemento                                                            | Descrizione                                                     |
 |-----------------------------------------------------------------|-----------------------------------------------------------------|
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] componente su cui eseguire il test della condizione.<br/> |
-| <span id="l_"></span><span id="L_"></span>*l\#*<br/>      | \[nell' \] etichetta della subroutine.<br/>                  |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componente in cui testare la condizione.<br/> |
+| <span id="l_"></span><span id="L_"></span>*L\#*<br/>      | \[in \] Etichetta della subroutine.<br/>                  |
 
 
 
@@ -37,11 +37,11 @@ Chiama in modo condizionale una subroutine contrassegnata da dove viene visualiz
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene rilevata una [ret](ret--sm4---asm-.md) , restituisce l'esecuzione all'istruzione dopo questa chiamata.
+Quando viene [rilevato un ret,](ret--sm4---asm-.md) restituire l'esecuzione all'istruzione dopo questa chiamata.
 
-Il formato del token contiene l'offset dell'etichetta corrispondente nello shader per praticità.
+Per praticità, il formato del token contiene l'offset dell'etichetta corrispondente nello shader.
 
-Nell'esempio seguente viene illustrata l'istruzione Call.
+Nell'esempio seguente viene illustrata l'istruzione di chiamata .
 
 
 ```
@@ -62,15 +62,15 @@ Nell'esempio seguente viene illustrata l'istruzione Call.
 
 ### <a name="restrictions"></a>Restrizioni
 
--   Le subroutine possono annidare 32 a fondo.
--   Lo stack degli indirizzi restituiti viene gestito in modo trasparente dall'implementazione di.
--   Se sono già presenti 32 voci nello stack di indirizzi restituiti e viene eseguita una **chiamata** , la chiamata viene ignorata.
--   Nessun stack di parametri automatico. L'applicazione può usare una matrice di registro temporanea indicizzabile (x \# \[ \] ) per implementare manualmente uno stack. Tuttavia, gli indirizzi restituiti della chiamata subroutine non sono visibili e sono ortogonali a qualsiasi gestione dello stack manuale eseguita dall'applicazione.
--   L'indicizzazione del parametro *l \#* non è consentita.
--   Il registro a 32 bit fornito da *src0* viene testato a livello di bit. Se un bit è diverso da zero, **callc \_ NZ** eseguirà la chiamata. Se tutti i bit sono zero, **callc \_ z** eseguirà la chiamata.
+-   Le subroutine possono annidare 32 livelli di profondità.
+-   Lo stack di indirizzi mittente viene gestito in modo trasparente dall'implementazione di .
+-   Se sono già presenti 32 voci nello  stack di indirizzi mittente e viene emessa una chiamata, la chiamata viene ignorata.
+-   Non è disponibile alcun stack di parametri automatico. L'applicazione può usare una matrice di registri temporanei indicizzabili (x \# \[ \] ) per implementare manualmente uno stack. Tuttavia, gli indirizzi restituiti delle chiamate subroutine non sono visibili e sono ortogonali per qualsiasi gestione manuale dello stack eseguita dall'applicazione.
+-   L'indicizzazione del *parametro l \#* non è consentita.
+-   Il registro a 32 bit fornito da *src0* viene testato a livello di bit. Se un bit è diverso da zero, **callc \_ nz** eseguirà la chiamata. Se tutti i bit sono zero, **callc \_ z** eseguirà la chiamata.
 -   La ricorsione non è consentita.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -82,20 +82,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -105,7 +105,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

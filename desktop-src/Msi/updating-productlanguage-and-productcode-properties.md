@@ -1,23 +1,23 @@
 ---
-description: Per la nuova lingua, è necessario aggiornare la proprietà ProductLanguage all'identificatore di lingua numerico (LANGID).
+description: La proprietà ProductLanguage deve essere aggiornata all'identificatore della lingua numerica (LANGID) per la nuova lingua.
 ms.assetid: e00ef69b-c54b-41de-9230-a7582b260891
 title: Aggiornamento delle proprietà ProductLanguage e ProductCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37a7537cdb0295075fbfd1b8b58e45a051610cf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9d6cbb47a16e0e0f2f9d696dc73d3f3fe0d1bc278c4631a99469168e2ca23d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809861"
 ---
 # <a name="updating-productlanguage-and-productcode-properties"></a>Aggiornamento delle proprietà ProductLanguage e ProductCode
 
-Per la nuova lingua, è necessario aggiornare la proprietà [**ProductLanguage**](productlanguage.md) all'identificatore di lingua numerico (LangID). Nel caso dell'esempio di localizzazione, il valore della proprietà **ProductLanguage** deve essere modificato da LangID per la lingua inglese (1033) a LangID per il francese (1036) nella tabella delle [Proprietà](property-table.md).
+La [**proprietà ProductLanguage**](productlanguage.md) deve essere aggiornata all'identificatore della lingua numerica (LANGID) per la nuova lingua. Nel caso dell'esempio di localizzazione, il valore della proprietà **ProductLanguage** deve essere modificato da LANGID per inglese (1033) a LANGID per il francese (1036) nella tabella [Proprietà](property-table.md).
 
-Il valore della proprietà [**ProductCode**](productcode.md) nella tabella delle [Proprietà](property-table.md) deve essere modificato in un nuovo valore univoco quando si localizza un database perché un prodotto localizzato è considerato un prodotto diverso. Ad esempio, le versioni tedesche e in inglese di un'applicazione sono considerate due prodotti diversi e devono avere codici prodotto diversi. Vedere [codici prodotto](product-codes.md).
+Il valore della [**proprietà ProductCode**](productcode.md) nella tabella [Property](property-table.md) deve essere modificato in un nuovo valore univoco durante la localizzazione di un database perché un prodotto localizzato è considerato un prodotto diverso. Ad esempio, le versioni tedesco e inglese di un'applicazione sono considerate due prodotti diversi e devono avere codici di prodotto diversi. Vedere [Codici prodotto](product-codes.md).
 
-Utilizzare l'Editor tabella di database per aggiornare i valori delle proprietà ProductCode e ProductLanguage nella tabella delle proprietà. Non riutilizzare il GUID visualizzato se si copia questo esempio.
+Usare l'editor di tabelle di database per aggiornare i valori delle proprietà ProductCode e ProductLanguage nella tabella Property. Non riutilizzare il GUID visualizzato se si copia questo esempio.
 
 [Tabella delle proprietà](property-table.md)
 

@@ -1,7 +1,7 @@
-- name: Ottimizzazione recapito
+- name: Ottimizzazione recapito (DO)
   href: delivery-optimization-portal.md
   items:
-    - name: Fai riferimento
+    - name: Informazioni di riferimento su DO
       href: do-reference.md
       items:
         - name: Enumerazioni DO
@@ -31,7 +31,7 @@
               href: ./dodownloadinternal/ne-dodownloadinternal-dodownloadpropertyex.md
             - name: DODownloadState
               href: ./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadstate.md
-            - name: Modalità
+            - name: DownloadMode
               href: downloadmode.md
             - name: SwarmStatus
               href: swarmstatus.md
@@ -41,7 +41,7 @@
             - name: IBackgroundCopyCallback
               href: ibackgroundcopycallback.md
               items:
-                - name: Metodi IBackgroundCopyCallback
+                - name: Metodi di IBackgroundCopyCallback
                   href: ibackgroundcopycallback-methods.md
                   items:
                     - name: Metodo JobError
@@ -53,7 +53,7 @@
             - name: IBackgroundCopyError
               href: ibackgroundcopyerror.md
               items:
-                - name: Metodi IBackgroundCopyError
+                - name: Metodi di IBackgroundCopyError
                   href: ibackgroundcopyerror-methods.md
                   items:
                     - name: Metodo GetError
@@ -63,44 +63,44 @@
             - name: IBackgroundCopyFile
               href: ibackgroundcopyfile.md
               items:
-                - name: Metodi IBackgroundCopyFile
+                - name: Metodi di IBackgroundCopyFile
                   href: ibackgroundcopyfile-methods.md
                   items:
-                    - name: GetLocalName (metodo)
+                    - name: Metodo GetLocalName
                       href: ibackgroundcopyfile-getlocalname-method.md
-                    - name: Metodo getProgress
+                    - name: Metodo GetProgress
                       href: ibackgroundcopyfile-getprogress-method.md
-                    - name: GetRemoteName (metodo)
+                    - name: Metodo GetRemoteName
                       href: ibackgroundcopyfile-getremotename-method.md
             - name: IBackgroundCopyFile2
               href: ibackgroundcopyfile2.md
               items:
-                - name: Metodi IBackgroundCopyFile2
+                - name: Metodi di IBackgroundCopyFile2
                   href: ibackgroundcopyfile2-methods.md
                   items:
                     - name: Metodo GetFileRanges
                       href: ibackgroundcopyfile2-getfileranges-method.md
-                    - name: Seremotename (metodo)
+                    - name: Metodo SetRemoteName
                       href: ibackgroundcopyfile2-setremotename-method.md
             - name: IBackgroundCopyFile5
               href: ibackgroundcopyfile5.md
               items:
-                - name: Metodi IBackgroundCopyFile5
+                - name: Metodi di IBackgroundCopyFile5
                   href: ibackgroundcopyfile5-methods.md
                   items:
                     - name: Metodo GetProperty
                       href: ibackgroundcopyfile5-getproperty.md
                     - name: Metodo SetProperty
                       href: ibackgroundcopyfile5-setproperty.md
-            - name: Metodo ibackgroundcopyjob
+            - name: IBackgroundCopyJob
               href: ibackgroundcopyjob-.md
               items:
-                - name: Metodi metodo ibackgroundcopyjob
+                - name: Metodi di IBackgroundCopyJob
                   href: ibackgroundcopyjob-methods.md
                   items:
                     - name: Metodo Cancel
                       href: ibackgroundcopyjob-cancel.md
-                    - name: Metodo complete
+                    - name: Metodo Complete
                       href: ibackgroundcopyjob-complete.md
                     - name: Metodo EnumFiles
                       href: ibackgroundcopyjob-enumfiles.md
@@ -116,13 +116,13 @@
                       href: ibackgroundcopyjob-getnotifyflags.md
                     - name: Metodo GetNotifyInterface
                       href: ibackgroundcopyjob-getnotifyinterface.md
-                    - name: GetPriority (metodo)
+                    - name: Metodo GetPriority
                       href: ibackgroundcopyjob-getpriority.md
-                    - name: Metodo getProgress
+                    - name: Metodo GetProgress
                       href: ibackgroundcopyjob-getprogress.md
                     - name: Metodo GetState
                       href: ibackgroundcopyjob-getstate.md
-                    - name: Metodo gettimes
+                    - name: Metodo GetTimes
                       href: ibackgroundcopyjob-gettimes.md
                     - name: GetType (metodo)
                       href: ibackgroundcopyjob-gettype.md
@@ -134,14 +134,14 @@
                       href: ibackgroundcopyjob-setnotifyflags.md
                     - name: Metodo SetNotifyInterface
                       href: ibackgroundcopyjob-setnotifyinterface.md
-                    - name: Metodo sepriority
+                    - name: Metodo SetPriority
                       href: ibackgroundcopyjob-setpriority.md
                     - name: Metodo Suspend
                       href: ibackgroundcopyjob-suspend.md
             - name: IBackgroundCopyJob5
               href: ibackgroundcopyjob5.md
               items:
-                - name: Metodi IBackgroundCopyJob5
+                - name: Metodi di IBackgroundCopyJob5
                   href: ibackgroundcopyjob5-methods.md
                   items:
                     - name: Metodo GetProperty
@@ -151,14 +151,14 @@
             - name: IBackgroundCopyManager
               href: ibackgroundcopymanager.md
               items:
-                - name: Metodi IBackgroundCopyManager
+                - name: Metodi di IBackgroundCopyManager
                   href: ibackgroundcopymanager-methods.md
                   items:
                     - name: Metodo CreateJob
                       href: ibackgroundcopymanager-createjob.md
                     - name: Metodo GetJob
                       href: ibackgroundcopymanager-getjob.md
-            - name: IDeliveryOptimizationJob
+            - name: Processo di iDeliveryOptimization
               href: ideliveryoptimizationjob.md
               items:
                 - name: Metodi IDeliveryOptimizationJob
@@ -178,7 +178,7 @@
             - name: IDeliveryOptimizationFile
               href: ideliveryoptimizationfile.md
               items:
-                - name: Metodi IDeliveryOptimizationFile
+                - name: Metodi di IDeliveryOptimizationFile
                   href: ideliveryoptimizationfile-methods.md
                   items:
                     - name: GetStats (metodo)
@@ -193,7 +193,7 @@
             - name: IEnumBackgroundCopyFiles
               href: ienumbackgroundcopyfiles-.md
               items:
-                - name: Metodi IEnumBackgroundCopyFiles
+                - name: Metodi di IEnumBackgroundCopyFiles
                   href: ienumbackgroundcopyfiles-methods.md
                   items:
                     - name: GetCount (metodo)
@@ -215,7 +215,7 @@
                   href: ./do/nf-do-idodownload-getproperty.md
                 - name: Metodo GetStatus
                   href: ./do/nf-do-idodownload-getstatus.md
-                - name: Pause (metodo)
+                - name: Metodo Pause
                   href: ./do/nf-do-idodownload-pause.md
                 - name: Metodo SetProperty
                   href: ./do/nf-do-idodownload-setproperty.md
@@ -240,9 +240,9 @@
                   href: ./do/nf-do-idomanager-createdownload.md
                 - name: Metodo EnumDownloads
                   href: ./do/nf-do-idomanager-enumdownloads.md
-        - name: Valori restituiti
+        - name: DO restituisce i valori
           href: do-return-values.md
-        - name: ESEGUIRE strutture e unioni
+        - name: Strutture e unioni DO
           href: do-structures-and-unions.md
           items:
             - name: BG_FILE_PROGRESS

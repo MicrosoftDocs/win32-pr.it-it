@@ -1,21 +1,21 @@
 ---
-description: Ho un file AVI contenente un flusso di Windows Media Video.
+description: Ho un file AVI contenente un flusso Windows Media Video.
 ms.assetid: 0b4c5bf2-caa6-4e14-be5f-9e25ec918cf0
-title: Ho un file AVI contenente un flusso di Windows Media Video. Come è possibile convertirlo in un file WMV?
+title: Ho un file AVI contenente un flusso Windows Media Video. Come è possibile convertirlo in un file WMV?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c770a8355e92c6cfe052d86a17c6638a7a9948
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 74dfc2a5980533487c7a1c8716806fcedda1c7147bdacaf3ea0c887acbff0f83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777141"
 ---
-# <a name="i-have-an-avi-file-containing-a-windows-media-video-stream-how-can-i-convert-it-to-a-wmv-file"></a>Ho un file AVI contenente un flusso di Windows Media Video. Come è possibile convertirlo in un file WMV?
+# <a name="i-have-an-avi-file-containing-a-windows-media-video-stream-how-can-i-convert-it-to-a-wmv-file"></a>Ho un file AVI contenente un flusso Windows Media Video. Come è possibile convertirlo in un file WMV?
 
-Le interfacce Windows Media Audio e codec video non forniscono metodi per creare file usando il formato ASF (Advanced Systems Format), che è il formato usato per i file WMV. Se si desidera convertire un file (utilizzando qualsiasi contenitore) in un file ASF, è necessario utilizzare gli oggetti di Windows Media Format SDK.
+Le Windows codec audio e video multimediali non forniscono metodi per creare file usando il formato ASF (Advanced Systems Format), che è il formato usato per i file WMV. Se si vuole convertire un file (usando qualsiasi contenitore) in un file ASF, è necessario usare gli oggetti di Windows Media Format SDK.
 
-Recuperare gli esempi di Windows Media compressi dal file di origine e passarli all'oggetto writer come esempi di flusso. Per ulteriori informazioni, vedere la documentazione di Windows Media Format 9 Series SDK.
+Recuperare gli esempi di Windows file multimediali compressi dal file di origine e passarli all'oggetto writer come esempi di flusso. Per altre informazioni, vedere la documentazione dell'SDK Windows Media Format 9 Series.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

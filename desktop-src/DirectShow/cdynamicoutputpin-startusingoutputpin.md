@@ -1,7 +1,7 @@
 ---
-description: Il metodo StartUsingOutputPin Ottiene l'accesso al pin per un'operazione di flusso.
+description: Il metodo StartUsingOutputPin ottiene l'accesso al pin per un'operazione di streaming.
 ms.assetid: afa627a9-00fd-4ad0-b674-9c54a5a1be55
-title: Metodo CDynamicOutputPin. StartUsingOutputPin (Amfilter. h)
+title: Metodo CDynamicOutputPin.StartUsingOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1c5ea7386c896f6b989a47c2574dfa4d61eacb5a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4438c6670b0535711c453e64496ffd4b21263acab728e090024f9e1e01427969
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749451"
 ---
-# <a name="cdynamicoutputpinstartusingoutputpin-method"></a>CDynamicOutputPin. StartUsingOutputPin, metodo
+# <a name="cdynamicoutputpinstartusingoutputpin-method"></a>Metodo CDynamicOutputPin.StartUsingOutputPin
 
-Il `StartUsingOutputPin` metodo ottiene l'accesso al pin per un'operazione di flusso.
+Il `StartUsingOutputPin` metodo ottiene l'accesso al pin per un'operazione di streaming.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                                                       |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                                               |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>          | Errore imprevisto.<br/>                                      |
-| <dl> <dt>**stato di VFW \_ E \_ \_ modificato**</dt> </dl> | Il filtro è stato arrestato o è iniziato lo scaricamento del PIN.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                                               |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl>          | Errore imprevisto.<br/>                                      |
+| <dl> <dt>**STATO VFW \_ E \_ \_ MODIFICATO**</dt> </dl> | Il filtro è stato arrestato o il pin ha iniziato lo scaricamento.<br/> |
 
 
 
@@ -58,24 +58,24 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo prima di chiamare i metodi che recapitano i dati al pin di input connesso o che modificano il tipo di supporto della connessione. Questa regola, ad esempio, si applica ai metodi seguenti:
+Chiamare questo metodo prima di chiamare qualsiasi metodo che recapita dati al pin di input connesso o che modifica il tipo di supporto della connessione. Ad esempio, questa regola si applica ai metodi seguenti:
 
 -   [**CDynamicOutputPin::ChangeOutputFormat**](cdynamicoutputpin-changeoutputformat.md)
 -   [**CDynamicOutputPin::ChangeMediaType**](cdynamicoutputpin-changemediatype.md)
 -   [**CDynamicOutputPin::D ynamicReconnect**](cdynamicoutputpin-dynamicreconnect.md)
--   [**CBaseOutputPin::D Eliver**](cbaseoutputpin-deliver.md)
+-   [**CBaseOutputPin::D eliver**](cbaseoutputpin-deliver.md)
 -   [**CBaseOutputPin::D eliverEndOfStream**](cbaseoutputpin-deliverendofstream.md)
 -   [**CBaseOutputPin::D eliverNewSegment**](cbaseoutputpin-delivernewsegment.md)
--   [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive)
--   [**IMemInputPin:: ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple)
--   [**IPin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
--   [**IPin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
+-   [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive)
+-   [**IMemInputPin::ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple)
+-   [**IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
+-   [**IPin::NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
 
-Successivamente, chiamare il metodo [**CDynamicOutputPin:: StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) per rilasciare l'accesso al pin.
+Chiamare quindi il [**metodo CDynamicOutputPin::StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) per rilasciare l'accesso al pin.
 
-Se il PIN è bloccato, `StartUsingOutputPin` attende che il PIN venga sbloccato. Se il filtro si interrompe mentre il metodo è in attesa, il metodo restituisce \_ immediatamente \_ lo stato VFW E \_ modificato. Il pin mantiene un conteggio del numero di volte `StartUsingOutputPin` in cui è stato chiamato senza una chiamata corrispondente a **StopUsingOutputPin**. Se un altro thread tenta di bloccare il pin mentre questo conteggio è diverso da zero, il pin imposta lo stato di blocco su "Pending". Il PIN viene bloccato una volta completate tutte le operazioni di streaming, nella chiamata finale a **StopUsingOutputPin**.
+Se il pin è bloccato, attende che il `StartUsingOutputPin` pin diventi sbloccato. Se il filtro si arresta mentre il metodo è in attesa, il metodo restituisce immediatamente VFW \_ E \_ STATE \_ CHANGED. Il pin mantiene un conteggio di quante volte è stato chiamato senza `StartUsingOutputPin` una chiamata corrispondente a **StopUsingOutputPin**. Se un altro thread tenta di bloccare il pin mentre il conteggio è diverso da zero, il pin imposta lo stato di blocco su "pending". Il pin viene bloccato al termine di tutte le operazioni di streaming, nella chiamata finale **a StopUsingOutputPin**.
 
-Quando si chiama questo metodo, non è necessario mantenere la sezione [**CDynamicOutputPin:: m \_ BlockStateLock**](cdynamicoutputpin-m-blockstatelock.md) critical. In caso contrario, se il PIN è bloccato, non può mai essere sbloccato, causando un deadlock.
+Non contenere la [**sezione critica CDynamicOutputPin::m \_ BlockStateLock**](cdynamicoutputpin-m-blockstatelock.md) quando si chiama questo metodo. In caso contrario, se il pin è bloccato, non può mai essere sbloccato, causando un deadlock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Quando si chiama questo metodo, non è necessario mantenere la sezione [**CDynam
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

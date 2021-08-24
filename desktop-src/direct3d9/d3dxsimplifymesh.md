@@ -1,7 +1,7 @@
 ---
-description: Genera una mesh semplificata usando i pesi specificati che sono più vicini possibile al valore MinValue specificato.
+description: Genera una mesh semplificata usando i pesi specificati che si avvicinano il più possibile al valore MinValue specificato.
 ms.assetid: 589356a9-f272-4851-92ae-54dbecc0b234
-title: Funzione D3DXSimplifyMesh (D3DX9Mesh. h)
+title: Funzione D3DXSimplifyMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0258047631a41e31d108ba45531988e4cb6a35ae
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3cc0bfe18afef7b91dbdf887500b485a446b154cb5775cbf950a7e712a332a9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749781"
 ---
-# <a name="d3dxsimplifymesh-function"></a>D3DXSimplifyMesh (funzione)
+# <a name="d3dxsimplifymesh-function"></a>Funzione D3DXSimplifyMesh
 
-Genera una mesh semplificata usando i pesi specificati che sono più vicini possibile al valore MinValue specificato.
+Genera una mesh semplificata usando i pesi specificati che si avvicinano il più possibile al valore MinValue specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,66 +46,66 @@ HRESULT D3DXSimplifyMesh(
 
 <dl> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh di origine.
+Puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh di origine.
 
 </dd> <dt>
 
-*pAdjacency* \[ in\]
+*pAdjacency* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per volto che specificano i tre elementi adiacenti per ogni viso nella mesh da semplificare.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh da semplificare.
 
 </dd> <dt>
 
-*pVertexAttributeWeights* \[ in\]
+*pVertexAttributeWeights* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) \***
 
-Puntatore a una struttura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) contenente il peso per ogni componente del vertice. Se questo parametro è impostato su **null**, viene utilizzata una struttura predefinita. Vedere la sezione Osservazioni.
+Puntatore a [**una struttura D3DXATTRIBUTEWEIGHTS,**](d3dxattributeweights.md) contenente il peso per ogni componente vertice. Se questo parametro è impostato su **NULL,** viene usata una struttura predefinita. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pVertexWeights* \[ in\]
+*pVertexWeights* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di pesi dei vertici. Se questo parametro è impostato su **null**, tutti i pesi dei vertici vengono impostati su 1,0.
-
-</dd> <dt>
-
-*MinValue* \[ in\]
-</dt> <dd>
-
-Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
-
-Numero di vertici o visi, a seconda del flag impostato nel parametro *options* , in base al quale è possibile semplificare la mesh di origine.
+Puntatore a una matrice di pesi dei vertici. Se questo parametro è impostato su **NULL,** tutti i pesi dei vertici vengono impostati su 1,0.
 
 </dd> <dt>
 
-*Opzioni* \[ di in\]
+*MinValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Specifica le opzioni di semplificazione per la mesh. È possibile impostare uno dei flag in [**D3DXMESHSIMP**](./d3dxmeshsimp.md) .
+Numero di vertici o visi, a seconda del flag impostato nel parametro *Options,* in base al quale semplificare la mesh di origine.
 
 </dd> <dt>
 
-*ppMesh* \[ out\]
+*Opzioni* \[ Pollici\]
+</dt> <dd>
+
+Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
+
+Specifica le opzioni di semplificazione per la mesh. È possibile impostare uno dei flag in [**D3DXMESHSIMP.**](./d3dxmeshsimp.md)
+
+</dd> <dt>
+
+*ppMesh* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh di semplificazione restituita.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh di semplificazione restituita.
 
 </dd> </dl>
 
@@ -113,15 +113,15 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che r
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione genera una mesh con vertici o visi *MinValue* .
+Questa funzione genera una mesh con vertici o visi *MinValue.*
 
-Se il processo di semplificazione non è in grado di ridurre la mesh a *MinValue*, la chiamata ha ancora esito positivo perché *MinValue* è un valore minimo desiderato, non un valore minimo assoluto.
+Se il processo di semplificazione non è in grado di ridurre la mesh a *MinValue,* la chiamata ha comunque esito positivo perché *MinValue* è un valore minimo desiderato, non un minimo assoluto.
 
-Se *pVertexAttributeWeights* è impostato su **null**, alla struttura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) predefinita vengono assegnati i valori seguenti.
+Se *pVertexAttributeWeights* è impostato su **NULL,** alla struttura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) predefinita vengono assegnati i valori seguenti.
 
 
 ```
@@ -137,7 +137,7 @@ AttributeWeights.Tex[8]   =  {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 
 
-Questa struttura predefinita è quella che la maggior parte delle applicazioni deve usare perché considera solo la regolazione geometrica e normale. Solo in casi particolari è necessario modificare gli altri campi dei membri.
+Questa struttura predefinita è quella che la maggior parte delle applicazioni deve usare perché considera solo la regolazione geometrica e normale. Solo in casi speciali sarà necessario modificare gli altri campi membro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -145,8 +145,8 @@ Questa struttura predefinita è quella che la maggior parte delle applicazioni d
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

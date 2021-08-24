@@ -1,7 +1,7 @@
 ---
 description: Inizializza un colore con i valori a virgola mobile rosso, verde, blu e alfa forniti.
 ms.assetid: 61825e33-4150-47cd-97f2-2144434a45e2
-title: D3DCOLOR_COLORVALUE macro (D3d9types. h)
+title: D3DCOLOR_COLORVALUE macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 3d5bb780a5999d8931335da1e9f49ad8af88dc12
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4ee10003e0f4fdeae937d8ac786b4d389a91ec0326c2d6288d10af2a63e2286
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751231"
 ---
-# <a name="d3dcolor_colorvalue-macro"></a>D3DCOLOR \_ COLORVALUE-macro
+# <a name="d3dcolor_colorvalue-macro"></a>Macro D3DCOLOR \_ COLORVALUE
 
 Inizializza un colore con i valori a virgola mobile rosso, verde, blu e alfa forniti.
 
@@ -45,34 +45,34 @@ D3DCOLOR D3DCOLOR_COLORVALUE(
 *r* 
 </dt> <dd>
 
-Componente rosso del colore. Questo valore deve essere un valore a virgola mobile compreso tra 0,0 e 1,0.
+Componente rosso del colore. Questo valore deve essere un valore a virgola mobile compreso nell'intervallo compreso tra 0,0 e 1,0.
 
 </dd> <dt>
 
-*g* 
+*G* 
 </dt> <dd>
 
-Componente verde del colore. Questo valore deve essere un valore a virgola mobile compreso tra 0,0 e 1,0.
+Componente verde del colore. Questo valore deve essere un valore a virgola mobile compreso nell'intervallo compreso tra 0,0 e 1,0.
 
 </dd> <dt>
 
 *b* 
 </dt> <dd>
 
-Componente blu del colore. Questo valore deve essere un valore a virgola mobile compreso tra 0,0 e 1,0.
+Componente blu del colore. Questo valore deve essere un valore a virgola mobile compreso nell'intervallo compreso tra 0,0 e 1,0.
 
 </dd> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
-Componente alfa del colore. Questo valore deve essere un valore a virgola mobile compreso tra 0,0 e 1,0.
+Componente alfa del colore. Questo valore deve essere un valore a virgola mobile compreso nell'intervallo compreso tra 0,0 e 1,0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGBA forniti.
+Restituisce il [**valore D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGBA forniti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGBA
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

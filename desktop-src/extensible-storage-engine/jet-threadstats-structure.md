@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_THREADSTATS'
-title: Struttura JET_THREADSTATS
+description: 'Altre informazioni su: JET_THREADSTATS struttura'
+title: JET_THREADSTATS struttura
 TOCTitle: JET_THREADSTATS Structure
 ms:assetid: 37e86e14-7719-4991-aae8-bcff1baa80df
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269227(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b84de9a4f64db5dda261b8ee177787f62fd01ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dcf88afc4b0f01a1691f9fb287491e9adfe71521e394a0e6b278c556fb5741f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832861"
 ---
-# <a name="jet_threadstats-structure"></a>Struttura JET_THREADSTATS
+# <a name="jet_threadstats-structure"></a>JET_THREADSTATS struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_threadstats-structure"></a>Struttura JET_THREADSTATS
+## <a name="jet_threadstats-structure"></a>JET_THREADSTATS struttura
 
-La struttura **JET_THREADSTATS** contiene statistiche cumulative sul lavoro eseguito dal motore di database sul thread corrente. Queste informazioni vengono restituite tramite [JetGetThreadStats](./jetgetthreadstats-function.md).
+La **JET_THREADSTATS** contiene statistiche cumulative sul lavoro eseguito dal motore di database nel thread corrente. Queste informazioni vengono restituite [tramite JetGetThreadStats.](./jetgetthreadstats-function.md)
 
-**Windows Vista:**  La struttura **JET_THREADSTATS** è stata introdotta in Windows Vista.
+**Windows Vista:**  La **JET_THREADSTATS** è stata introdotta in Windows Vista.
 
 ```cpp
     typedef struct {
@@ -50,37 +50,37 @@ La struttura **JET_THREADSTATS** contiene statistiche cumulative sul lavoro eseg
 
 **cbStruct**
 
-Dimensioni in byte della struttura **JET_THREADSTATS** restituita.
+Dimensione della struttura **JET_THREADSTATS** restituita, in byte.
 
-**Nota**  La struttura di **JET_THREADSTATS** si espanderà in futuro per contenere più statistiche. Le nuove statistiche verranno aggiunte alla fine della struttura e potranno essere recuperate con una dimensione del buffer di output maggiore. La presenza di statistiche aggiuntive può essere dedotta da un valore **cbStruct** più grande.
+**Nota**  La **JET_THREADSTATS** si espanderà in futuro per contenere altre statistiche. Le nuove statistiche verranno aggiunte alla fine della struttura e potranno essere recuperate con un aumento delle dimensioni del buffer di output. La presenza di statistiche aggiuntive può essere dedotto da un valore **cbStruct più** grande.
 
 **cPageReferenced**
 
-Numero totale di pagine di database visitate dal motore di database sul thread corrente.
+Numero totale di pagine di database visitate dal motore di database nel thread corrente.
 
 **cPageRead**
 
-Numero totale di pagine del database recuperate dal disco dal motore di database sul thread corrente.
+Numero totale di pagine di database recuperate dal disco dal motore di database nel thread corrente.
 
 **cPagePreread**
 
-Numero totale di pagine di database prelette dal disco dal motore di database sul thread corrente.
+Numero totale di pagine di database preletturate dal disco dal motore di database nel thread corrente.
 
 **cPageDirtied**
 
-Numero totale di pagine di database, senza modifiche non scritte, modificate dal motore di database sul thread corrente.
+Numero totale di pagine di database, senza modifiche non scritte, modificate dal motore di database nel thread corrente.
 
 **cPageRedirtied**
 
-Numero totale di pagine di database, con modifiche non scritte, modificate dal motore di database sul thread corrente.
+Numero totale di pagine di database, con modifiche non scritte, modificate dal motore di database nel thread corrente.
 
 **cLogRecord**
 
-Numero totale di record del log delle transazioni generati dal motore di database sul thread corrente.
+Numero totale di record del log delle transazioni generati dal motore di database nel thread corrente.
 
 **cbLogRecord**
 
-Dimensioni totali in byte dei record del log delle transazioni generati dal motore di database sul thread corrente.
+Dimensioni totali in byte dei record del log delle transazioni generati dal motore di database nel thread corrente.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -100,7 +100,7 @@ Dimensioni totali in byte dei record del log delle transazioni generati dal moto
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

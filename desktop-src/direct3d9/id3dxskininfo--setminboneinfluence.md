@@ -1,7 +1,7 @@
 ---
-description: Imposta l'influenza dell'osso minima. I valori più piccoli di quelli che vengono ignorati.
+description: Imposta l'influenza minima del colore. I valori di influenza inferiori a questo valore vengono ignorati.
 ms.assetid: 9af19c9e-bb6e-4f93-973f-5c38f88eea3d
-title: 'Metodo ID3DXSkinInfo:: SetMinBoneInfluence (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::SetMinBoneInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 03e3aeeed31a58231644784ba5070bc9422f7820
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: abe9f1d7f9c54b9c3086160b974e2bc7dc659eb6dae3ff647f059627ff3ef145
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747481"
 ---
-# <a name="id3dxskininfosetminboneinfluence-method"></a>Metodo ID3DXSkinInfo:: SetMinBoneInfluence
+# <a name="id3dxskininfosetminboneinfluence-method"></a>Metodo ID3DXSkinInfo::SetMinBoneInfluence
 
-Imposta l'influenza dell'osso minima. I valori più piccoli di quelli che vengono ignorati.
+Imposta l'influenza minima del colore. I valori di influenza inferiori a questo valore vengono ignorati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetMinBoneInfluence(
 
 <dl> <dt>
 
-*MinInfl* \[ in\]
+*MinInfl* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore di influenza minima. I valori più piccoli di quelli che vengono ignorati.
+Valore minimo di influenza. I valori di influenza inferiori a questo valore vengono ignorati.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

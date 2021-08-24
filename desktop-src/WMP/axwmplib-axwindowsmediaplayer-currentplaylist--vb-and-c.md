@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. currentPlaylist
-description: La proprietà currentPlaylist Ottiene o imposta l'interfaccia IWMPPlaylist corrente che fornisce un modo semplice per organizzare e modificare gli elementi multimediali in un elenco.
+title: AxWindowsMediaPlayer.currentPlaylist - proprietà
+description: La proprietà currentPlaylist ottiene o imposta l'interfaccia IWMPPlaylist corrente che offre un modo semplice per organizzare e modificare gli elementi multimediali in un elenco.
 ms.assetid: d5a9f126-a628-499c-a012-8a47c6c987ef
 keywords:
-- Finestra delle proprietà di currentPlaylist Media Player
-- Proprietà currentPlaylist Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Media Player Windows, proprietà currentPlaylist
+- Proprietà currentPlaylist Windows Media Player
+- Proprietà currentPlaylist Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , proprietà currentPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a0f5b91a2e65b81fd1f13da0bad5f77c5ea1415
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f976084773a333e40c0a278878e9a35ed913e5911ec732c0dccfe6525e5f45a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765262"
 ---
-# <a name="axwindowsmediaplayercurrentplaylist-property"></a>Proprietà AxWindowsMediaPlayer. currentPlaylist
+# <a name="axwindowsmediaplayercurrentplaylist-property"></a>AxWindowsMediaPlayer.currentPlaylist - proprietà
 
-La proprietà currentPlaylist Ottiene o imposta l'interfaccia **IWMPPlaylist** corrente che fornisce un modo semplice per organizzare e modificare gli elementi multimediali in un elenco.
+La proprietà currentPlaylist ottiene o imposta l'interfaccia **IWMPPlaylist** corrente che offre un modo semplice per organizzare e modificare gli elementi multimediali in un elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,17 +46,17 @@ Public Property currentPlaylist As IWMPPlaylist
 
 ## <a name="property-value"></a>Valore proprietà
 
-Interfaccia WMPLib. IWMPPlaylist che fornisce l'accesso alla playlist corrente.
+Interfaccia WMPLib.IWMPPlaylist che fornisce l'accesso alla playlist corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Se la proprietà IWMPSettings. AutoStart (accessibile anche tramite AxWindowsMediaPlayer. Settings.**autostart**) è true, la riproduzione viene avviata automaticamente quando si imposta **currentPlaylist**.
+Se la proprietà IWMPSettings.autoStart (accessibile anche tramite AxWindowsMediaPlayer.settings).**autoStart**) è true, la riproduzione inizia automaticamente ogni volta che si imposta **currentPlaylist**.
 
-Questa proprietà accetta un'interfaccia IWMPPlaylist, che può essere acquisita in diversi modi, ad esempio ottenendo il valore da *IWMPPlaylistArray*. **Elemento** o *IWMPPlaylistCollection*. proprietà **nuova playlist** . Per caricare un elemento della **playlist** usando un nome di file, impostare la proprietà URL o usare AxWindowsMediaPlayer. **nuova playlist**.
+Questa proprietà accetta un'interfaccia IWMPPlaylist, che può essere acquisita in diversi modi, ad esempio ottenendo il valore da *IWMPPlaylistArray.* **Item** o *IWMPPlaylistCollection.* **Proprietà newPlaylist.** Per caricare un **elemento della playlist** usando un nome file, impostare la proprietà URL o usare AxWindowsMediaPlayer. **newPlaylist**.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene recuperata la prima playlist nella libreria e viene utilizzata la proprietà currentPlaylist per impostare la playlist recuperata come playlist corrente e visualizzarne il nome. L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+L'esempio seguente recupera la prima playlist nella libreria e usa la proprietà currentPlaylist per impostare la playlist recuperata come playlist corrente e visualizzarne il nome. L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -93,7 +93,7 @@ currentPlaylistLabel.Text = (&quot;Found first playlist. Name = &quot; + player.
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -106,22 +106,22 @@ currentPlaylistLabel.Text = (&quot;Found first playlist. Name = &quot; + player.
 [**Oggetto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. nuova playlist (VB e C#)**](axwmplib-axwindowsmediaplayer-newplaylist.md)
+[**AxWindowsMediaPlayer.newPlaylist (VB e C#)**](axwmplib-axwindowsmediaplayer-newplaylist.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. Settings (VB e C#)**](axwmplib-axwindowsmediaplayer-settings--vb-and-c.md)
+[**AxWindowsMediaPlayer.settings (VB e C#)**](axwmplib-axwindowsmediaplayer-settings--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistArray. Item (VB e C#)**](wmplibiwmpplaylistarray-iwmpplaylistarray-item--vb-and-c.md)
+[**IWMPPlaylistArray.Item (VB e C#)**](wmplibiwmpplaylistarray-iwmpplaylistarray-item--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. nuova playlist (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-newplaylist--vb-and-c.md)
+[**IWMPPlaylistCollection.newPlaylist (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-newplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. AutoStart (VB e C#)**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)
+[**IWMPSettings.autoStart (VB e C#)**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)
 </dt> </dl>
 
  

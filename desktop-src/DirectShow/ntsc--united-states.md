@@ -4,20 +4,20 @@ ms.assetid: 371f91b9-d60b-477e-8f8c-a7fb01121aed
 title: NTSC (Stati Uniti)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ae84c864ec1b22f375ceb7e8059edbcec815df7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fa44b17d571df33405b9d0e4418c531d017329a6e15a39fbc3d558f4b2873225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830961"
 ---
 # <a name="ntsc-united-states"></a>NTSC (Stati Uniti)
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Le tabelle NTSC sono appropriate per le impostazioni locali che usano le linee di canale standard NTSC. Le formazioni broadcast e Cable sono standardizzate e stabili. Inoltre, gli indici di frequenza sono adatti per l'uso come numeri di canale.
+Le tabelle NTSC sono appropriate per tutte le impostazioni locali che usano le line-up del canale standard NTSC. Entrambe le lineup broadcast e cable sono standardizzate e stabili. Inoltre, gli indici di frequenza sono adatti per l'uso come numeri di canale.
 
-### <a name="ntsc-broadcast-assignments"></a>Assegnazioni broadcast NTSC
+### <a name="ntsc-broadcast-assignments"></a>Assegnazioni di broadcast NTSC
 
 
 ```C++
@@ -271,7 +271,7 @@ Le tabelle NTSC sono appropriate per le impostazioni locali che usano le linee d
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analoga internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

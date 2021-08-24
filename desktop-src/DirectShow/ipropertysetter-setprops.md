@@ -1,7 +1,7 @@
 ---
-description: Il metodo seprops imposta le proprietà dell'oggetto di destinazione sullo stato appropriato per l'ora specificata.
+description: Il metodo SetProps imposta le proprietà dell'oggetto di destinazione sullo stato appropriato per l'ora specificata.
 ms.assetid: 65e701c9-d3a1-4396-9cba-a7830757701f
-title: 'Metodo IPropertySetter:: seprops (qedit. h)'
+title: Metodo IPropertySetter::SetProps (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6a36b1735ea5b8261c37bee66ac90b9a186a55f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3b5a1832897b52d21c57e26595b7d66c4fc9a53f2bcbee0090c53d00f8fe832
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767211"
 ---
-# <a name="ipropertysettersetprops-method"></a>Metodo IPropertySetter:: seprops
+# <a name="ipropertysettersetprops-method"></a>Metodo IPropertySetter::SetProps
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -46,37 +46,37 @@ HRESULT SetProps(
 
 <dl> <dt>
 
-*PTarget* \[ in\]
+*pTarget* \[ Pollici\]
 </dt> <dd>
 
 Puntatore all'oggetto di destinazione per il quale impostare le proprietà.
 
 </dd> <dt>
 
-*rtNow* \[ in\]
+*rtNow* \[ Pollici\]
 </dt> <dd>
 
-Ora in cui impostare le proprietà, in unità 100-nanosecondi, oppure-1 per impostare le proprietà statiche (quelle che non variano nel tempo).
+Ora in cui impostare le proprietà, in unità di 100 nanosecondi, oppure -1 per impostare le proprietà statiche (quelle che non variano nel tempo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato da DES per impostare le proprietà su una transizione o un effetto. In genere, un'applicazione non chiamerà questo metodo.
+Questo metodo viene chiamato da DES per impostare le proprietà su una transizione o un effetto. In genere un'applicazione non chiama questo metodo.
 
-L'oggetto specificato da *PTarget* deve implementare l'interfaccia **IDispatch** .
+L'oggetto specificato da *pTarget* deve implementare **l'interfaccia IDispatch.**
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ L'oggetto specificato da *PTarget* deve implementare l'interfaccia **IDispatch**
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

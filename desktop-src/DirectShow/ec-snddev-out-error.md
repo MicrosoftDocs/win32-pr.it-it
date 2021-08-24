@@ -1,19 +1,19 @@
 ---
-description: Si è verificato un errore del dispositivo in un filtro renderer audio.
+description: Si è verificato un errore del dispositivo in un filtro del renderer audio.
 ms.assetid: 60e36476-f553-468d-a28d-351fdf4a02f1
-title: EC_SNDDEV_OUT_ERROR (dshow. h)
+title: EC_SNDDEV_OUT_ERROR (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1182aaba7bb30ad27511b47ba8e4432d8fd33da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eefe6dbe57b26bf167a7fbc668010930bacffc321d42d2847ae6776696e009fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792411"
 ---
-# <a name="ec_snddev_out_error"></a>\_errore SNDDEV \_ EC \_
+# <a name="ec_snddev_out_error"></a>ERRORE \_ EC SNDDEV \_ \_ OUT
 
-Si è verificato un errore del dispositivo in un filtro renderer audio.
+Si è verificato un errore del dispositivo in un filtro del renderer audio.
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,20 +22,20 @@ Si è verificato un errore del dispositivo in un filtro renderer audio.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore DWORD dal tipo enumerato [**SNDDEV \_ Err**](/previous-versions/windows/desktop/api/audevcod/ne-audevcod-snddev_err) , che indica il modo in cui è stato eseguito l'accesso al dispositivo quando si è verificato l'errore.
+Valore DWORD del tipo [**enumerato SNDDEV \_ ERR,**](/previous-versions/windows/desktop/api/audevcod/ne-audevcod-snddev_err) che indica la modalità di accesso al dispositivo quando si è verificato l'errore.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Valore DWORD che indica l'errore restituito dalla chiamata al dispositivo audio.
+Valore DWORD che indica l'errore restituito dalla chiamata del dispositivo audio.
 
 </dd> </dl>
 
 ## <a name="default-action"></a>Azione predefinita
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

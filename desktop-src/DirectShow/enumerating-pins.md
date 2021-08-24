@@ -4,18 +4,18 @@ ms.assetid: 231f10c1-46b4-4b66-b0ce-06a191237dfb
 title: Enumerazione dei pin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 322f1764c46c146d1b899c869d1708eac1f0427d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d772903321c71ab2c6d66f7cc46b7ca61b11f96a4bc17b13b8b2f8931d8eac5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748711"
 ---
 # <a name="enumerating-pins"></a>Enumerazione dei pin
 
-I filtri supportano il metodo [**IBaseFilter:: EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) , che enumera i pin disponibili sul filtro. Restituisce un puntatore all'interfaccia [**IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) . Il metodo [**IEnumPins:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-next) recupera i puntatori dell'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) .
+I filtri [**supportano il metodo IBaseFilter::EnumPins,**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) che enumera i pin disponibili nel filtro. Restituisce un puntatore [**all'interfaccia IEnumPins.**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) Il [**metodo IEnumPins::Next**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-next) recupera i [**puntatori a interfaccia IPin.**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
-Nell'esempio seguente viene illustrata una funzione che individua un pin con una determinata direzione (input o output) su un filtro specificato. Usa l'enumerazione [**di \_ direzione del pin**](/windows/win32/api/strmif/ne-strmif-pin_direction) per specificare la direzione del PIN e il metodo [**Ipin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) per trovare la direzione di ogni pin enumerato. Se questa funzione trova un pin corrispondente, restituisce un puntatore a interfaccia **Ipin** con un conteggio dei riferimenti in attesa. Il chiamante è responsabile del rilascio dell'interfaccia.
+Nell'esempio seguente viene illustrata una funzione che individua un segnaposto con una direzione specificata (input o output) in un determinato filtro. Usa [**l'enumerazione \_ PIN DIRECTION**](/windows/win32/api/strmif/ne-strmif-pin_direction) per specificare la direzione del pin e il metodo [**IPin::QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) per trovare la direzione di ogni pin enumerato. Se questa funzione trova un pin corrispondente, restituisce un puntatore a interfaccia **IPin** con un conteggio dei riferimenti in sospeso. Il chiamante è responsabile del rilascio dell'interfaccia.
 
 
 ```C++
@@ -63,22 +63,22 @@ HRESULT GetPin(IBaseFilter *pFilter, PIN_DIRECTION PinDir, IPin **ppPin)
 
 
 
-Questa funzione può essere facilmente modificata per restituire l'ennesimo pin con la direzione specificata *o il pin* non connesso. Per sapere se un PIN è connesso a un altro pin, chiamare il metodo [**Ipin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) .
+Questa funzione può essere modificata facilmente per restituire l'eesimo pin con la direzione specificata o *l'eesimo* pin non associato. Per determinare se un pin è connesso a un altro pin, chiamare il metodo [**IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Enumerazione di oggetti in un grafico di filtro](enumerating-objects-in-a-filter-graph.md)
+[Enumerazione di oggetti in un filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> <dt>
 
-[Trovare un PIN non connesso in un filtro](find-an-unconnected-pin-on-a-filter.md)
+[Trovare un pin non interconnesso in un filtro](find-an-unconnected-pin-on-a-filter.md)
 </dt> <dt>
 
-[Tecniche di Graph-Building generali](general-graph-building-techniques.md)
+[Tecniche Graph-Building generale](general-graph-building-techniques.md)
 </dt> <dt>
 
-[Imposta la proprietà pin](pin-property-set.md)
+[Impostare la proprietà Pin](pin-property-set.md)
 </dt> </dl>
 
  

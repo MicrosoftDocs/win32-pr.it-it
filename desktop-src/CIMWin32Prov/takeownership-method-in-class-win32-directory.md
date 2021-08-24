@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 178f1bf523d939883a7fc18b5bdbd7142cc4f824
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32644632e7abe15190837244116f04f647537f987d5d6f3286930d8e26d2e230
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751681"
 ---
 # <a name="takeownership-method-of-the-win32_directory-class"></a>Metodo TakeOwnerShip della classe Directory Win32 \_
 
@@ -49,7 +49,7 @@ Restituisce uno dei valori seguenti.
 **0**
 </dt> <dd>
 
-La richiesta ha avuto esito positivo.
+La richiesta è stata completata.
 
 </dd> <dt>
 

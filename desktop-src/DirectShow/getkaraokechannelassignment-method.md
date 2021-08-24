@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetKaraokeChannelAssignment recupera un valore che indica la modalità di assegnazione dei canali karaoke agli altoparlanti.
+description: Il metodo GetKaraokeChannelAssignment recupera un valore che indica come vengono assegnati i canali per il distacco ai parlanti.
 ms.assetid: 08e35fa6-fa1b-4f9f-8f56-d953c4422226
 title: Metodo GetKaraokeChannelAssignment
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dafe1217e08f3dc4f55aeec42424b1ebf9d86d22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 010e8112ece9b3fc66831055995ebf46657d4216942ac3b9dee05b1b68d18761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103877105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812551"
 ---
 # <a name="getkaraokechannelassignment-method"></a>Metodo GetKaraokeChannelAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "103877105"
 
  
 
-Il `GetKaraokeChannelAssignment` metodo recupera un valore che indica la modalità di assegnazione dei canali karaoke ai relatori.
+Il metodo recupera un valore che indica la modalità di assegnazione dei `GetKaraokeChannelAssignment` canali di disasuasore agli altoparlanti.
 
 ``` syntax
 [ iAssignment = ] MSWebDVD.GetKaraokeChannelAssignment(iStream)
@@ -28,27 +28,27 @@ Il `GetKaraokeChannelAssignment` metodo recupera un valore che indica la modalit
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Specifica il flusso audio come intero.
+Specifica il flusso audio come integer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un Integer che indica l'assegnazione del altoparlante per il flusso specificato.
+Restituisce un intero che indica l'assegnazione del parlante per il flusso specificato.
 
 
 
 | Codice restituito | Descrizione                                                             |
 |-------------|-------------------------------------------------------------------------|
 | 2           | Il flusso viene assegnato agli altoparlanti sinistro e destro.                  |
-| 3           | Il flusso viene assegnato agli altoparlanti sinistro, destro e intermedio.         |
-| 4           | Il flusso viene assegnato ai relatori Left, Right e AUDIO1.         |
-| 5           | Il flusso viene assegnato agli altoparlanti a sinistra, a destra, al centro e a AUDIO1. |
-| 6           | Il flusso viene assegnato ai relatori Left, Right e AUDIO2.         |
-| 7           | Il flusso viene assegnato agli altoparlanti a sinistra, a destra, al centro e a AUDIO2. |
+| 3           | Il flusso viene assegnato agli altoparlanti sinistro, destro e centrale.         |
+| 4           | Il flusso viene assegnato agli altoparlanti sinistro, destro e audio1.         |
+| 5           | Il flusso viene assegnato agli altoparlanti sinistro, destro, centrale e audio1. |
+| 6           | Il flusso viene assegnato agli altoparlanti sinistro, destro e audio2.         |
+| 7           | Il flusso viene assegnato agli altoparlanti sinistro, destro, centrale e audio2. |
 
 
 

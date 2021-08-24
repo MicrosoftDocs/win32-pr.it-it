@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h): compila una matrice di proiezione ortografica personalizzata mancino.'
+description: 'Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h): crea una matrice di proiezione ortografica personalizzata e mancino.'
 ms.assetid: 84175c08-5a0b-4183-afe2-8aecafd73897
 title: Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2eb10963372519827eb544371ebb0df04df2e178
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4396f060d33efef454e87d8594c2b4ca29e46cbcbc08151cacaa76a7a4965735
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852851"
 ---
 # <a name="d3dxmatrixorthooffcenterlh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoOffCenterLH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortografica personalizzata mancino.
+Compila una matrice di proiezione ortogonale personalizzata e mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ Valore x massimo del volume di visualizzazione.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore y minimo del volume della vista.
+Valore y minimo del volume di visualizzazione.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Valore y minimo del volume della vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valore y massimo del volume della vista.
+Valore y massimo del volume di visualizzazione.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ b = -h/2 e
 
 t = h/2.
 
-Tutti i parametri della funzione D3DXMatrixOrthoOffCenterLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume della vista.
+Tutti i parametri della funzione D3DXMatrixOrthoOffCenterLH sono distanze nello spazio della fotocamera. I parametri descrivono le dimensioni del volume di visualizzazione.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixOrthoOffCenterLH può essere usata come parametro per un'altra funzione.
 

@@ -1,7 +1,7 @@
 ---
 description: Salva un oggetto dati e i relativi elementi figlio in un file DirectX. Deprecato.
 ms.assetid: 18bd5ef6-9e17-4c21-bc14-373de8df9ffb
-title: 'Metodo IDirectXFileSaveObject:: SaveData (DXFile. h)'
+title: Metodo IDirectXFileSaveObject::SaveData (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: cb901bd984e1fcd923d0ea172fb5f387b3a9302a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 293525d570540e00da4e8ac7680cf850b253c7e3ccbe3ffd152b639d0bc139cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747271"
 ---
-# <a name="idirectxfilesaveobjectsavedata-method"></a>Metodo IDirectXFileSaveObject:: SaveData
+# <a name="idirectxfilesaveobjectsavedata-method"></a>Metodo IDirectXFileSaveObject::SaveData
 
 Salva un oggetto dati e i relativi elementi figlio in un file DirectX. Deprecato.
 
@@ -40,12 +40,12 @@ HRESULT SaveData(
 
 <dl> <dt>
 
-*pDataObj* \[ in\]
+*pDataObj* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)**
 
-Puntatore a un'interfaccia [**IDirectXFileData**](idirectxfiledata.md) che rappresenta l'oggetto dati del file da salvare.
+Puntatore a [**un'interfaccia IDirectXFileData,**](idirectxfiledata.md) che rappresenta l'oggetto dati del file da salvare.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

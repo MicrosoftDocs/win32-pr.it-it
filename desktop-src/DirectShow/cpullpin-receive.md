@@ -1,7 +1,7 @@
 ---
 description: Il metodo Receive viene chiamato quando l'oggetto riceve un campione multimediale dal pin di output. La classe derivata deve implementare questo metodo.
 ms.assetid: ef45388b-b038-4838-b76b-dbbdc5388495
-title: Metodo CPullPin. Receive (Pullpin. h)
+title: Metodo CPullPin.Receive (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a651822378b6a3c0754ecbd5ace4a5e464f014f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdf38c9c873dd8d95ae60341fc2f7dba02abff1f8b34fd89d0d1f720dc59b55f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831541"
 ---
-# <a name="cpullpinreceive-method"></a>Metodo CPullPin. Receive
+# <a name="cpullpinreceive-method"></a>Metodo CPullPin.Receive
 
 Il `Receive` metodo viene chiamato quando l'oggetto riceve un campione multimediale dal pin di output. La classe derivata deve implementare questo metodo.
 
@@ -45,23 +45,23 @@ virtual HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio multimediale.
+Puntatore [**all'interfaccia IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio multimediale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Se si restituisce un valore diverso da S \_ OK, il thread di pull dei dati verrà interrotto.
+Restituisce un **valore HRESULT.** La restituzione di un valore diverso da S \_ OK arresterà il thread di pull dei dati.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato ogni volta che un nuovo campione arriva dal pin di output. Scrivere questo metodo in modo analogo al metodo [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) .
+Questo metodo viene chiamato ogni volta che arriva un nuovo campione dal pin di output. Scrivere questo metodo nello stesso modo del [**metodo IMemInputPin::Receive.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive)
 
-I timestamp dell'esempio specificano gli offset di byte rispetto alla posizione iniziale originale specificata nel metodo [**CPullPin:: Seek**](cpullpin-seek.md) .
+I timestamp nell'esempio specificano gli offset dei byte rispetto alla posizione iniziale originale specificata nel [**metodo CPullPin::Seek.**](cpullpin-seek.md)
 
-La posizione iniziale viene arrotondata per difetto al limite di allineamento più vicino e la posizione di arresto viene arrotondata per eccesso al limite di allineamento più vicino. Inoltre, se la posizione di arresto supera la durata totale, viene invece utilizzata la durata.
+La posizione iniziale viene arrotondata al limite di allineamento più vicino e la posizione di arresto viene arrotondata per eserciti al limite di allineamento più vicino. Inoltre, se la posizione di arresto supera la durata totale, viene usata la durata.
 
-Tutti i timestamp vengono specificati come offset di byte moltiplicato per 10 milioni, definito come unità di costante. Di conseguenza, un secondo è un byte. Per trovare gli offset di byte effettivi, chiamare [**IMediaSample:: GetTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-gettime) e dividere i risultati in base alle unità.
+Tutti i timestamp vengono specificati come offset di byte moltiplicato per 10.000.000, definito come unità costanti. Pertanto, nozioni di secondo è un byte. Per trovare gli offset di byte effettivi, chiamare [**IMediaSample::GetTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-gettime) e dividere i risultati per UNITÀ.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Tutti i timestamp vengono specificati come offset di byte moltiplicato per 10 mi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

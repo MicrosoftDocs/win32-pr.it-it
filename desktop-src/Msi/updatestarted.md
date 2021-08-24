@@ -1,21 +1,21 @@
 ---
-description: Il programma di installazione imposta la proprietà UpdateStarted quando le modifiche apportate al sistema sono state avviate per questa installazione, inclusa la ripresa di un'installazione sospesa. Le istruzioni della condizione dell'interfaccia utente utilizzano questo valore per selezionare una finestra di dialogo.
+description: Il programma di installazione imposta la proprietà UpdateStarted quando sono iniziate le modifiche al sistema per questa installazione, inclusa la ripresa di un'installazione sospesa. Le istruzioni di condizione dell'interfaccia utente usano questo valore per selezionare una finestra di dialogo.
 ms.assetid: aebc4a20-22b9-4a81-abed-1fed61b880da
-title: Proprietà UpdateStarted
+title: UpdateStarted - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99561d17bf6fcb251f1acd7ac0d30ed5c1682997
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 341295b1bac517201bd9b3a2356637af7c883efdd68627ad94a03b6df7d4b614
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810041"
 ---
-# <a name="updatestarted-property"></a>Proprietà UpdateStarted
+# <a name="updatestarted-property"></a>UpdateStarted - proprietà
 
-Il programma di installazione imposta la proprietà **UpdateStarted** quando le modifiche apportate al sistema sono state avviate per questa installazione, inclusa la ripresa di un'installazione sospesa.
+Il programma di installazione imposta **la proprietà UpdateStarted** quando sono iniziate le modifiche al sistema per questa installazione, inclusa la ripresa di un'installazione sospesa.
 
-Le istruzioni della condizione dell'interfaccia utente utilizzano questo valore per selezionare una finestra di dialogo. Se questa proprietà è impostata, l'utente viene richiesto dopo un errore e viene annullato se ripristinare o per continuare in un secondo momento.
+Le istruzioni di condizione dell'interfaccia utente usano questo valore per selezionare una finestra di dialogo. Se questa proprietà è impostata, all'utente viene chiesto se ripristinare o continuare in un secondo momento dopo un errore e l'annullamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,7 +23,7 @@ Le istruzioni della condizione dell'interfaccia utente utilizzano questo valore 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

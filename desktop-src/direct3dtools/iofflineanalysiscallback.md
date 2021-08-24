@@ -1,5 +1,5 @@
 ---
-description: Callback per restituisce dati di analisi offline.
+description: Callback a che restituisce dati di analisi offline.
 MS-HAID: vspixengine.IOfflineAnalysisCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,26 +17,26 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 496ca07544cdc38ff9f0e3f29c0ebbd2b9e8753c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 09f1a2d2d4be258cc7288f4bced9262ba53daaeda013429a72a0006e27ae6665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853211"
 ---
 # <a name="span-idvspixengineiofflineanalysiscallbackspaniofflineanalysiscallback-interface"></a><span id="vspixengine.iofflineanalysiscallback"></span>Interfaccia IOfflineAnalysisCallback
 
-Callback per restituisce dati di analisi offline.
+Callback a che restituisce dati di analisi offline.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IOfflineAnalysisCallback** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IOfflineAnalysisCallback** dispone anche di questi tipi di membri:
+**L'interfaccia IOfflineAnalysisCallback** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IOfflineAnalysisCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **IOfflineAnalysisCallback** dispone di questi metodi.
+**L'interfaccia IOfflineAnalysisCallback** include questi metodi.
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysiscallback-offlineanalysiscomplete-dword-hresult-bstr"><strong>OfflineAnalysisComplete</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host che l'analisi offline è stata completata.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysiscallback-offlineanalysisprogress-dword-double"><strong>OfflineAnalysisProgress</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host lo stato di avanzamento dell'analisi offline.</p></td></tr></tbody></table>
 
@@ -44,7 +44,7 @@ L'interfaccia **IOfflineAnalysisCallback** dispone di questi metodi.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

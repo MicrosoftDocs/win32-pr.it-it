@@ -1,19 +1,19 @@
 ---
-description: Caricamento di un grafico da un processo esterno
+description: Caricamento di Graph da un processo esterno
 ms.assetid: 1c657c7f-46d7-4feb-88a7-4a3227c9070b
-title: Caricamento di un grafico da un processo esterno
+title: Caricamento di Graph da un processo esterno
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eac42db3a87b00b1cb8f3a9ae5297215ae9bd3fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1e92fdaebb9ce3cb6615153daf66a8991477bf76e16ac3298e8e8b2fb59d74b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104564201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831057"
 ---
-# <a name="loading-a-graph-from-an-external-process"></a>Caricamento di un grafico da un processo esterno
+# <a name="loading-a-graph-from-an-external-process"></a>Caricamento di Graph da un processo esterno
 
-GraphEdit può caricare un grafo di filtro creato da un processo esterno. Con questa funzionalità è possibile visualizzare esattamente il grafico del filtro compilato dall'applicazione, con una quantità minima di codice aggiuntivo nell'applicazione.
+GraphEdit può caricare un grafo di filtro creato da un processo esterno. Con questa funzionalità è possibile visualizzare esattamente il grafico dei filtri compilato dall'applicazione, con una quantità minima di codice aggiuntivo nell'applicazione.
 
 > [!Note]  
 > Questa funzionalità richiede Windows 2000, Windows XP o versione successiva.
@@ -21,11 +21,11 @@ GraphEdit può caricare un grafo di filtro creato da un processo esterno. Con qu
  
 
 > [!Note]  
-> A partire da Windows Vista, è necessario registrare proppage.dll per abilitare questa funzionalità. Proppage.dll è incluso nel Windows SDK.
+> A partire da Windows Vista, è necessario registrare proppage.dll per abilitare questa funzionalità. Proppage.dll è incluso in Windows SDK.
 
  
 
-L'applicazione deve registrare l'istanza del grafico di filtro nella tabella degli oggetti in esecuzione (ROT). Il ROT è una tabella di ricerca accessibile a livello globale che tiene traccia degli oggetti in esecuzione. Gli oggetti vengono registrati nel ROT per moniker. Per connettersi al grafo, GraphEdit Cerca i moniker per i moniker il cui nome visualizzato corrisponde a un formato particolare:
+L'applicazione deve registrare l'istanza del grafo del filtro nella tabella degli oggetti in esecuzione (ROT, Running Object Table). ROT è una tabella di ricerca accessibile a livello globale che tiene traccia degli oggetti in esecuzione. Gli oggetti vengono registrati nel moniker ROT. Per connettersi al grafo, GraphEdit cerca i moniker ROT il cui nome visualizzato corrisponde a un formato specifico:
 
 
 ```C++
@@ -34,9 +34,9 @@ L'applicazione deve registrare l'istanza del grafico di filtro nella tabella deg
 
 
 
-dove *X* è l'indirizzo esadecimale del gestore del grafico del filtro e *Y* è l'ID del processo, anche in formato esadecimale.
+dove *X* è l'indirizzo esadecimale di Filter Graph Manager e *Y* è l'ID processo, anche in formato esadecimale.
 
-Quando l'applicazione crea il grafico di filtro per la prima volta, chiamare la funzione seguente:
+Quando l'applicazione crea per la prima volta il grafico dei filtri, chiamare la funzione seguente:
 
 
 ```C++
@@ -76,7 +76,7 @@ HRESULT AddToRot(IUnknown *pUnkGraph, DWORD *pdwRegister)
 
 
 
-Questa funzione crea un moniker e una nuova voce ROT per il grafico dei filtri. Il primo parametro è un puntatore al grafico dei filtri. Il secondo parametro riceve un valore che identifica la nuova voce ROT. Prima che l'applicazione rilasci il grafo del filtro, chiamare la funzione seguente per rimuovere la voce ROT. Il parametro *pdwRegister* è l'identificatore restituito dalla funzione AddToRot.
+Questa funzione crea un moniker e una nuova voce ROT per il grafico dei filtri. Il primo parametro è un puntatore al grafico dei filtri. Il secondo parametro riceve un valore che identifica la nuova voce ROT. Prima che l'applicazione rilasci il grafico dei filtri, chiamare la funzione seguente per rimuovere la voce ROT. Il *parametro pdwRegister* è l'identificatore restituito dalla funzione AddToRot.
 
 
 ```C++
@@ -92,7 +92,7 @@ void RemoveFromRot(DWORD pdwRegister)
 
 
 
-Nell'esempio di codice seguente viene illustrato come chiamare queste funzioni. In questo esempio, il codice che aggiunge e rimuove le voci ROT viene compilato in modo condizionale, in modo che sia incluso solo nelle build di debug.
+Nell'esempio di codice seguente viene illustrato come chiamare queste funzioni. In questo esempio il codice che aggiunge e rimuove le voci ROT viene compilato in modo condizionale, in modo che sia incluso solo nelle compilazioni di debug.
 
 
 ```C++
@@ -116,22 +116,22 @@ pGraph->Release();
 
 
 
-Per visualizzare il grafico di filtro in GraphEdit, eseguire l'applicazione e GraphEdit allo stesso tempo. Nel menu **file** GraphEdit fare clic su **Connetti a grafo remoto...** Nella finestra di dialogo **Connetti al grafico** selezionare l'ID del processo (PID) dell'applicazione e fare clic su **OK**. GraphEdit carica il grafico del filtro e lo Visualizza. Non usare altre funzionalità di GraphEdit in questo grafico. potrebbero verificarsi risultati imprevisti. Ad esempio, non aggiungere o rimuovere filtri oppure arrestare e avviare il grafo. Chiudere GraphEdit prima di uscire dall'applicazione.
+Per visualizzare il grafico dei filtri in GraphEdit, eseguire contemporaneamente l'applicazione e GraphEdit. Nel menu GraphEdit **File (Modifica file)** **fare clic Connessione su Remote Graph...** Nella finestra **Connessione di Graph** selezionare l'ID processo (pid) dell'applicazione e fare clic su **OK.** GraphEdit carica il grafico dei filtri e lo visualizza. Non usare altre funzionalità GraphEdit in questo grafo, perché potrebbe causare risultati imprevisti. Ad esempio, non aggiungere o rimuovere filtri o arrestare e avviare il grafico. Chiudere GraphEdit prima di uscire dall'applicazione.
 
 > [!Note]  
-> L'applicazione potrebbe raggiungere varie asserzioni quando viene chiusa. che possono essere tuttavia ignorati.
+> L'applicazione potrebbe avere diverse asserzioni all'uscita. che possono essere tuttavia ignorati.
 
  
 
-Nella figura seguente viene illustrata la finestra **di dialogo Connetti al grafico** .
+La figura seguente mostra la **finestra Connessione to Graph** .
 
-![Connetti a grafico](images/gedit-spy.png)
+![connettersi al grafo](images/gedit-spy.png)
 
-Quando GraphEdit carica il grafo, viene eseguito nel contesto dell'applicazione di destinazione. Pertanto, GraphEdit potrebbe bloccarsi perché è in attesa del thread. Questo può verificarsi, ad esempio, se si esegue il codice istruzione per istruzione nel debugger.
+Quando GraphEdit carica il grafo, viene eseguito nel contesto dell'applicazione di destinazione. GraphEdit potrebbe pertanto bloccarsi perché è in attesa del thread. Ad esempio, questa operazione può verificarsi se si esegue un'istruzione alla volta nel codice nel debugger.
 
-Questa funzionalità deve essere utilizzata solo nelle build di debug dell'applicazione, non nelle compilazioni finali, perché consente ad altre applicazioni di visualizzare o controllare il grafico del filtro.
+Questa funzionalità deve essere usata solo nelle build di debug dell'applicazione, non nelle build di vendita al dettaglio, perché consente ad altre applicazioni di visualizzare o controllare il grafico dei filtri.
 
-## <a name="connecting-to-a-remote-graph-from-the-command-line"></a>Connessione a un grafo remoto dalla riga di comando
+## <a name="connecting-to-a-remote-graph-from-the-command-line"></a>Connessione a un Graph remoto dalla riga di comando
 
 GraphEdit supporta un'opzione della riga di comando per caricare automaticamente un grafo remoto all'avvio. La sintassi è:
 
@@ -142,13 +142,13 @@ GraphEdt -a moniker
 
 
 
-dove *moniker* è un moniker creato mediante la funzione AddToRot, descritto in precedenza.
+dove *moniker è* un moniker creato usando la funzione AddToRot, descritta in precedenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Simulazione della creazione di grafici con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulazione Graph compilazione con GraphModifica](simulating-graph-building-with-graphedit.md)
 </dt> </dl>
 
  

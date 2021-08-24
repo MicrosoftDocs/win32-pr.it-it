@@ -1,7 +1,7 @@
 ---
-description: Creare un token di versione di pixel shader.
+description: Creare un token pixel shader versione.
 ms.assetid: 70089a93-83df-4ac4-8d98-4e1bb6ad2581
-title: D3DPS_VERSION macro (D3d9types. h)
+title: D3DPS_VERSION macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: c3f30d673145ec9dfe38bd8e2a636ac04c9a195a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3958cfaa3afe06e22015a28e8e1ebfd8799c01e89772eb9794dd1249cc0df9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750901"
 ---
-# <a name="d3dps_version-macro"></a>D3DPS \_ versione macro
+# <a name="d3dps_version-macro"></a>Macro D3DPS \_ VERSION
 
-Creare un token di versione di pixel shader.
+Creare un token pixel shader versione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ DWORD D3DPS_VERSION(
 *\_Principali* 
 </dt> <dd>
 
-Versione principale del pixel shader.
+La versione pixel shader principale.
 
 </dd> <dt>
 
 *\_Minorenne* 
 </dt> <dd>
 
-Versione secondaria del pixel shader.
+Versione secondaria pixel shader secondaria.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore DWORD che è una versione pixel shader.
+Restituisce un valore DWORD che rappresenta una pixel shader versione.
 
 ## <a name="remarks"></a>Commenti
 
 Numeri di versione
 
-Il numero di versione è una combinazione della versione principale e dei numeri di versione di vertex shader secondari. I numeri validi sono visualizzati nella tabella.
+Il numero di versione è una combinazione della versione principale e dei numeri di versione del vertex shader secondario. I numeri validi vengono visualizzati nella tabella.
 
 
 
 | Principale | Minorenne | Esempio             |
 |-------|-------|---------------------|
-| 1     | 1     | \_Versione di D3DPS (1,1) |
-| 1     | 2     | \_Versione di D3DPS (1, 2) |
-| 1     | 3     | \_Versione di D3DPS (1,3) |
-| 1     | 4     | \_Versione di D3DPS (1,4) |
-| 2     | 0     | \_Versione di D3DPS (2, 0) |
-| 3     | 0     | \_Versione di D3DPS (3, 0) |
+| 1     | 1     | VERSIONE \_ D3DPS(1,1) |
+| 1     | 2     | VERSIONE \_ D3DPS(1,2) |
+| 1     | 3     | VERSIONE \_ D3DPS(1,3) |
+| 1     | 4     | VERSIONE \_ D3DPS(1,4) |
+| 2     | 0     | VERSIONE \_ D3DPS(2,0) |
+| 3     | 0     | VERSIONE D3DPS \_ (3,0) |
 
 
 
@@ -85,7 +85,7 @@ Il numero di versione è una combinazione della versione principale e dei numeri
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

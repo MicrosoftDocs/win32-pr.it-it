@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXVec3ProjectArray (D3dx9math.h): proietta una matrice (x, y, z, 0) dallo spazio dell'oggetto allo spazio dello schermo."
+description: 'Funzione D3DXVec3ProjectArray (D3dx9math.h): proietta una matrice (x, y, z, 0) dallo spazio oggetto allo spazio dello schermo.'
 ms.assetid: cf022741-0bae-4c22-872f-bd94c3721aff
 title: Funzione D3DXVec3ProjectArray (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 10f0e19ad5bdbff59d7386223c88ed867e8d0d88
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7ffc42934b9c341f4d07ef48a39470158155b4dfbcd352ffbc5e0ea188785752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749391"
 ---
 # <a name="d3dxvec3projectarray-function-d3dx9mathh"></a>Funzione D3DXVec3ProjectArray (D3dx9math.h)
 

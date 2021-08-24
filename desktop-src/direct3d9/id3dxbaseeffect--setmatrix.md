@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 7af7dc0daa3dcd29e7b15c4fe435b9626ea41746
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77aad0573aed5e7dcb37ea82052b535badf8ee77d438393ad8d45e4963b79609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749011"
 ---
 # <a name="id3dxbaseeffectsetmatrix-method"></a>Metodo ID3DXBaseEffect::SetMatrix
 
@@ -46,7 +46,7 @@ HRESULT SetMatrix(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice non trasposta contiene dati principali di riga. In altre parole, ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali della riga. In altre parole, ogni vettore è contenuto in una riga.
 
 Se la matrice di destinazione è più piccola della matrice di origine, i componenti aggiuntivi della matrice di origine verranno ignorati.
 

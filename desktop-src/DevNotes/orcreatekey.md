@@ -1,7 +1,7 @@
 ---
-description: Crea la chiave del registro di sistema specificata in un hive del registro di sistema offline. Se la chiave esiste già, la funzione la apre.
+description: Crea la chiave del Registro di sistema specificata in un hive del Registro di sistema offline. Se la chiave esiste già, la funzione la apre.
 ms.assetid: 40e7468d-e781-4945-9023-580c06088b87
-title: Funzione ORCreateKey (offreg. h)
+title: Funzione ORCreateKey (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 9a14198cb6f1912612a092e003a68fd9ff49f867
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7ea5a365a9c5bdcb478ce47443a713ed5bc091666b54de880dc478708e4c36c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749691"
 ---
-# <a name="orcreatekey-function"></a>ORCreateKey (funzione)
+# <a name="orcreatekey-function"></a>ORCreateKey - funzione
 
-Crea la chiave del registro di sistema specificata in un hive del registro di sistema offline. Se la chiave esiste già, la funzione la apre.
+Crea la chiave del Registro di sistema specificata in un hive del Registro di sistema offline. Se la chiave esiste già, la funzione la apre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ DWORD ORCreateKey(
 
 <dl> <dt>
 
-*Gestisci* \[ in\]
+*Handle* \[ Pollici\]
 </dt> <dd>
 
-Handle per una chiave del registro di sistema aperta in un hive del registro di sistema offline.
+Handle per una chiave del Registro di sistema aperta in un hive del Registro di sistema offline.
 
 </dd> <dt>
 
-*lpSubKey* \[ in\]
+*lpSubKey* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode che contiene il nome di una sottochiave che la funzione apre o crea. Il parametro *lpSubKey* deve specificare una sottochiave della chiave identificata dal parametro *handle* . può essere fino a 32 livelli di profondità nell'albero del registro di sistema. Per ulteriori informazioni sui nomi delle chiavi, vedere [la struttura del registro di sistema](../sysinfo/structure-of-the-registry.md).
+Puntatore a una stringa Unicode che contiene il nome di una sottochiave che questa funzione apre o crea. Il *parametro lpSubKey* deve specificare una sottochiave della chiave identificata dal *parametro Handle.* può avere una profondità fino a 32 livelli nell'albero del Registro di sistema. Per altre informazioni sui nomi delle chiavi, vedere [Struttura del Registro di sistema.](../sysinfo/structure-of-the-registry.md)
 
-Questo parametro non può essere **null**.
+Questo parametro non può essere **NULL.**
 
-Per i nomi di chiave non viene fatta distinzione tra maiuscole
+I nomi delle chiavi non supportano la distinzione tra maiuscole e minuscole.
 
 </dd> <dt>
 
 *lpClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe (tipo di oggetto) della chiave. Questo parametro può essere ignorato. Questo parametro può essere **NULL**.
+Classe (tipo di oggetto) di questa chiave. Questo parametro può essere ignorato. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
@@ -79,8 +79,8 @@ Questo parametro può essere 0 o uno dei valori seguenti.
 
 | Valore                                                                                                                                                                                                                                                          | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="REG_OPTION_CREATE_LINK"></span><span id="reg_option_create_link"></span><dl> <dt>**Reg \_ OPZIONE \_ Crea \_ collegamento**</dt> <dt>0x00000002L</dt> </dl>    | La chiave è un collegamento simbolico. Il percorso di destinazione viene assegnato al valore L "SymbolicLinkValue" della chiave. Il percorso di destinazione deve essere un percorso assoluto del registro di sistema. Se questa opzione è impostata, è necessario impostare anche l' **\_ opzione reg \_ non \_ volatile** . <br/> Se il parametro *lpSubKey* specifica una chiave esistente, deve essere stato creato con il **\_ \_ \_ collegamento reg Option create**.<br/> I collegamenti simbolici del registro di sistema devono essere usati solo quando sono assolutamente necessari per la compatibilità delle applicazioni. <br/> |
-| <span id="REG_OPTION_NON_VOLATILE"></span><span id="reg_option_non_volatile"></span><dl> <dt>**Reg \_ OPZIONE \_ non \_ volatile**</dt> <dt>0x00000000L</dt> </dl> | La chiave non è volatile; si tratta dell'impostazione predefinita. Le informazioni vengono archiviate in un file e mantenute al riavvio del sistema. La funzione [**ORSaveHive**](orsavehive.md) Salva le chiavi che non sono volatili.<br/>                                                                                                                                                                                                                                                                   |
+| <span id="REG_OPTION_CREATE_LINK"></span><span id="reg_option_create_link"></span><dl> <dt>**REG \_ OPTION \_ CREATE \_ LINK**</dt> <dt>0x000000002L</dt> </dl>    | La chiave è un collegamento simbolico. Il percorso di destinazione viene assegnato al valore L"SymbolicLinkValue" della chiave. Il percorso di destinazione deve essere un percorso assoluto del Registro di sistema. Se questa opzione è impostata, **è necessario impostare anche REG OPTION NON \_ \_ \_ VOLATILE.** <br/> Se il *parametro lpSubKey* specifica una chiave esistente, deve essere stata creata con **REG OPTION CREATE \_ \_ \_ LINK.**<br/> I collegamenti simbolici del Registro di sistema devono essere usati solo quando sono assolutamente necessari per la compatibilità delle applicazioni. <br/> |
+| <span id="REG_OPTION_NON_VOLATILE"></span><span id="reg_option_non_volatile"></span><dl> <dt>**REG \_ OPTION \_ NON \_ VOLATILE**</dt> <dt>0x00000000L</dt> </dl> | La chiave non è volatile. si tratta dell'impostazione predefinita. Le informazioni vengono archiviate in un file e mantenute al riavvio del sistema. La [**funzione ORSaveHive**](orsavehive.md) salva le chiavi non volatili.<br/>                                                                                                                                                                                                                                                                   |
 
 
 
@@ -91,52 +91,52 @@ Questo parametro può essere 0 o uno dei valori seguenti.
 *pSecurityDescriptor* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a una struttura [di \_ descrittori di sicurezza](/windows/win32/api/winnt/ns-winnt-security_descriptor) che contiene un descrittore di sicurezza per la nuova chiave. Se *pSecurityDescriptor* è **null**, la chiave ottiene un descrittore di sicurezza predefinito. Gli ACL in un descrittore di sicurezza predefinito per una chiave vengono ereditati dalla relativa chiave padre diretta.
+Puntatore a una [struttura SECURITY \_ DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor) che contiene un descrittore di sicurezza per la nuova chiave. Se *pSecurityDescriptor* è **NULL,** la chiave ottiene un descrittore di sicurezza predefinito. Gli ACL in un descrittore di sicurezza predefinito per una chiave vengono ereditati dalla relativa chiave padre diretta.
 
 </dd> <dt>
 
-*phkResult* \[ out\]
+*phkResult* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve un handle per la chiave aperta o creata. Usare la funzione [**ORCloseKey**](orclosekey.md) per chiudere la chiave dopo aver terminato di usare l'handle.
+Puntatore a una variabile che riceve un handle per la chiave aperta o creata. Usare la [**funzione ORCloseKey**](orclosekey.md) per chiudere la chiave dopo aver terminato di usare l'handle.
 
 </dd> <dt>
 
 *pdwDisposition* \[ out, facoltativo\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve uno dei seguenti valori di disposizione.
+Puntatore a una variabile che riceve uno dei valori di disposizione seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                                          | Significato                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <span id="REG_CREATED_NEW_KEY"></span><span id="reg_created_new_key"></span><dl> <dt>**Reg \_ CREAZIONE della \_ nuova \_ chiave**</dt> <dt>0x00000001L</dt> </dl>             | La chiave non esiste ed è stata creata.<br/>                       |
-| <span id="REG_OPENED_EXISTING_KEY"></span><span id="reg_opened_existing_key"></span><dl> <dt>**Reg \_ 0x00000002L \_ \_ chiave esistente aperta**</dt> <dt></dt> </dl> | La chiave esisteva ed è stata semplicemente aperta senza essere modificata.<br/> |
+| <span id="REG_CREATED_NEW_KEY"></span><span id="reg_created_new_key"></span><dl> <dt>**REG \_ CREATED \_ NEW \_ KEY**</dt> <dt>0x00000001L</dt> </dl>             | La chiave non esiste ed è stata creata.<br/>                       |
+| <span id="REG_OPENED_EXISTING_KEY"></span><span id="reg_opened_existing_key"></span><dl> <dt>**REG \_ OPENED \_ EXISTING \_ KEY**</dt> <dt>0x000000002L</dt> </dl> | La chiave esisteva ed era semplicemente aperta senza essere modificata.<br/> |
 
 
 
  
 
-Se *pdwDisposition* è **null**, non viene restituita alcuna informazione sulla disposizione.
+Se *pdwDisposition è* **NULL,** non vengono restituite informazioni sulla disposizione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
-Se la funzione ha esito negativo, il valore restituito è un codice di errore diverso da zero definito in Winerror. h. [](/windows/win32/api/winbase/nf-winbase-formatmessage) \_ \_ \_ Per ottenere una descrizione generica dell'errore, è possibile usare la funzione FormatMessage con il valore Format Message from System flag.
+Se la funzione ha esito negativo, il valore restituito è un codice di errore diverso da zero definito in Winerror.h. È possibile usare la [funzione FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con il flag FORMAT \_ MESSAGE FROM SYSTEM per ottenere una \_ \_ descrizione generica dell'errore.
 
-Se il parametro *dwOptions* è impostato con **l' \_ opzione reg \_ Create \_ link** ma l' **opzione reg \_ \_ non \_ volatile** è deselezionata, oppure se l'handle da restituire è un handle per la chiave radice dell'hive, la funzione restituisce l'errore \_ parametro non valido \_ .
+Se il *parametro dwOptions* è impostato con **REG OPTION CREATE \_ \_ \_ LINK** ma **REG OPTION NON \_ \_ \_ VOLATILE** è deselezionato o se l'handle da restituire è un handle per la chiave radice dell'hive, la funzione restituisce ERROR \_ INVALID \_ PARAMETER.
 
 ## <a name="remarks"></a>Commenti
 
-La chiave creata dalla funzione **ORCreateKey** non contiene valori. Per impostare i valori delle chiavi, un'applicazione può usare la funzione [**ORSetValue**](orsetvalue.md) .
+La chiave creata **dalla funzione ORCreateKey** non ha valori. Un'applicazione può usare la [**funzione ORSetValue**](orsetvalue.md) per impostare i valori delle chiavi.
 
-Non è possibile usare la funzione **ORCreateKey** per creare la chiave radice in un hive del registro di sistema offline. Usare la funzione [**ORCreateHive**](orcreatehive.md) per creare la chiave radice e ottenere un handle per la chiave.
+La **funzione ORCreateKey** non può essere usata per creare la chiave radice in un hive del Registro di sistema offline. Usare la [**funzione ORCreateHive**](orcreatehive.md) per creare la chiave radice e ottenere un handle per la chiave.
 
-Il registro offline non supporta il salvataggio di singole chiavi. Usare la funzione [**ORSaveHive**](orsavehive.md) per salvare una chiave e le relative sottochiavi in hive.
+Il Registro di sistema offline non supporta il salvataggio di singole chiavi. Usare la [**funzione ORSaveHive**](orsavehive.md) per salvare una chiave e le relative sottochiavi in un hive.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -144,8 +144,8 @@ Il registro offline non supporta il salvataggio di singole chiavi. Usare la funz
 
 | Requisito | Valore |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | Windows offline Registry Library versione 1,0 o successiva<br/>                      |
-| Intestazione<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Componente ridistribuibile<br/> | Windows Libreria del Registro di sistema offline versione 1.0 o successiva<br/>                      |
+| Intestazione<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 
@@ -166,7 +166,7 @@ Il registro offline non supporta il salvataggio di singole chiavi. Usare la funz
 [**ORSaveHive**](orsavehive.md)
 </dt> <dt>
 
-[descrittore di sicurezza \_](/windows/win32/api/winnt/ns-winnt-security_descriptor)
+[DESCRITTORE \_ DI SICUREZZA](/windows/win32/api/winnt/ns-winnt-security_descriptor)
 </dt> </dl>
 
  

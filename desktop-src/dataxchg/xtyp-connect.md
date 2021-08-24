@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_CONNECT (DDEML. h)
-description: Un client usa la \_ transazione di connessione XTYP per stabilire una conversazione.
+title: XTYP_CONNECT transazione (Ddeml.h)
+description: Un client usa la transazione XTYP \_ CONNECT per stabilire una conversazione.
 ms.assetid: 74f43b10-f7ac-4370-9caa-7b9ddf3413ed
 keywords:
-- Scambio di dati delle transazioni XTYP_CONNECT
+- XTYP_CONNECT dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2268994f1be000373691d6c25dbb7220d3e109e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1ff7a7a79d8b61deef6b5f19b829e5c8dd8f4603c5f60c3b47d0a84b0603736
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793421"
 ---
-# <a name="xtyp_connect-transaction"></a>\_Transazione di connessione XTYP
+# <a name="xtyp_connect-transaction"></a>Transazione XTYP \_ CONNECT
 
-Un client usa la transazione di **\_ connessione XTYP** per stabilire una conversazione. Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica un nome di servizio supportato dal server (e un nome di argomento non **null**) in una chiamata alla funzione [**DdeConnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect) .
+Un client usa la **transazione XTYP \_ CONNECT** per stabilire una conversazione. Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione quando un client specifica un nome di servizio che il server supporta (e un nome di argomento diverso da **NULL)** in una chiamata alla [**funzione DdeConnect.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect)
 
 
 ```C++
@@ -83,7 +83,7 @@ Non usato.
 *dwData1* 
 </dt> <dd>
 
-Puntatore a una struttura [**CONVCONTEXT**](/windows/win32/api/ddeml/ns-ddeml-convcontext) che contiene informazioni di contesto per la conversazione. Se il client non è un'applicazione DDEML, questo parametro è 0.
+Puntatore a una [**struttura CONVCONTEXT**](/windows/win32/api/ddeml/ns-ddeml-convcontext) che contiene informazioni di contesto per la conversazione. Se il client non è un'applicazione DDEML, questo parametro è 0.
 
 </dd> <dt>
 
@@ -96,13 +96,13 @@ Specifica se il client è la stessa istanza dell'applicazione del server. Se il 
 
 ## <a name="return-value"></a>Valore restituito
 
-Una funzione di callback del server deve restituire **true** per consentire al client di stabilire una conversazione con il nome del servizio e la coppia di nomi di argomento specificati oppure la funzione deve restituire **false** per negare la conversazione. Se la funzione di callback restituisce **true** e una conversazione viene stabilita correttamente, il sistema passa l'handle di conversazione al server eseguendo una [**XTYP \_ Connect \_ Confirm**](xtyp-connect-confirm.md) Transaction per la funzione di callback del server, a meno che il server non abbia specificato il flag **CBF \_ Skip \_ Connect \_ confirms** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Una funzione di callback del server deve restituire **TRUE** per consentire al client di stabilire una conversazione sulla coppia nome servizio e nome argomento specificata oppure la funzione deve restituire **FALSE** per negare la conversazione. Se la funzione di callback restituisce **TRUE** e una conversazione viene stabilita correttamente, il sistema passa l'handle di conversazione al server emettendo una transazione [**XTYP \_ CONNECT \_ CONFIRM**](xtyp-connect-confirm.md) alla funzione di callback del server (a meno che il server non specificasse il flag **CBF \_ SKIP CONNECT \_ \_ CONFIRMS** nella [**funzione DdeInitialize).**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="remarks"></a>Commenti
 
-Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ Fail \_ Connections** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ FAIL \_ CONNECTIONS** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Un server non è in grado di bloccare questo tipo di transazione. il codice restituito del **\_ blocco CBR** viene ignorato.
+Un server non può bloccare questo tipo di transazione. Il **codice restituito da CBR \_ BLOCK** viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,7 +112,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -135,7 +135,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

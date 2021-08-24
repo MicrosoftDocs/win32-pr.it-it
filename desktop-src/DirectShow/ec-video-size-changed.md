@@ -1,17 +1,17 @@
 ---
 description: Le dimensioni del video nativo sono state modificate.
 ms.assetid: 276f37b3-f981-4a01-bb37-1ee77248668f
-title: EC_VIDEO_SIZE_CHANGED (dshow. h)
+title: EC_VIDEO_SIZE_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b29a70ceab583d8dfc51b417fb701a2988b2e96f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da9fc430b8d36a61b90f567f082c7224765a702549d050f11555c8e55c387a86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792381"
 ---
-# <a name="ec_video_size_changed"></a>\_dimensioni del video EC \_ \_ modificate
+# <a name="ec_video_size_changed"></a>DIMENSIONI \_ VIDEO \_ EC \_ MODIFICATE
 
 Le dimensioni del video nativo sono state modificate.
 
@@ -22,7 +22,7 @@ Le dimensioni del video nativo sono state modificate.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**DWORD**) WORD di ordine inferiore specifica la nuova larghezza, in pixel; WORD di ordine superiore specifica la nuova altezza, in pixel.
+(**DWORD**) Word di ordine basso specifica la nuova larghezza, in pixel. word di alto livello specifica la nuova altezza, in pixel.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ No.
 
 I renderer video possono inviare questo evento se rilevano una modifica nelle dimensioni del video nativo.
 
-Il [video di mixaggio 7](video-mixing-renderer-filter-7.md) (VMR-7) e il [renderer video mixing 9](video-mixing-renderer-filter-9.md) (VMR-9) inviano questo evento in modalità finestra, ma non in modalità senza finestra o in modalità di rendering. Per ulteriori informazioni sulla modalità finestra in VMR, vedere rendering del [video](video-rendering.md).
+[Video Mixing Renderer 7](video-mixing-renderer-filter-7.md) (VMR-7) e [Video Mixing Renderer 9](video-mixing-renderer-filter-9.md) (VMR-9) inviano questo evento in modalità finestra, ma non in modalità senza finestra o senza rendering. Per altre informazioni sulla modalità finestra nella macchina virtuale, vedere [Rendering video](video-rendering.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Il [video di mixaggio 7](video-mixing-renderer-filter-7.md) (VMR-7) e il [render
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

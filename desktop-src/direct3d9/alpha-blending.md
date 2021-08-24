@@ -4,12 +4,12 @@ ms.assetid: 553b0bc8-1bd8-4282-9260-cdc5f2b8788d
 title: Fusione alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd79c622778e17c5acb9b17d52b6d5db278b1508
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 081c194b9eae85dca5599f2bf9f779d1cd896c8a37641df5105bb049b4a5bc22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751581"
 ---
 # <a name="alpha-blending-direct3d-9"></a>Fusione alfa (Direct3D 9)
 

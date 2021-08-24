@@ -4,19 +4,19 @@ description: Uso delle funzioni di query
 ms.assetid: 5f874a0e-77c0-4009-a18f-a852d7ffe891
 keywords:
 - OpenGL, funzioni di query
-- funzioni di query OpenGL
+- Funzioni di query OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14804b260451d4b51b0146b1cb2f796ba6b6778e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 39e3e883bdf8730dac7b1a8e07448b771109bef0ac5ec2246411703e8f841a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776481"
 ---
 # <a name="using-the-query-functions"></a>Uso delle funzioni di query
 
-Sono disponibili quattro funzioni di query per ottenere semplici variabili di stato e una per determinare se un determinato stato è abilitato o disabilitato:
+Sono disponibili quattro funzioni di query per ottenere variabili di stato semplici e una per determinare se un determinato stato è abilitato o disabilitato:
 
 -   [**glGetBooleanv**](glgetbooleanv.md)
 -   [**glGetIntegerv**](glgetintegerv.md)
@@ -26,23 +26,23 @@ Sono disponibili quattro funzioni di query per ottenere semplici variabili di st
 
 I prototipi per le funzioni di query sono:
 
-**void** **glGetBooleanv**(**GLEnum** *pname* , **GLboolean \*** *params* );
+**void** **glGetBooleanv**(**GLenum** *pname* , **GLboolean \** _ _params* );
 
-**void** **glGetIntegerv**(**GLEnum** *pname* , **riflesso \*** *params* );
+**void** **glGetIntegerv**(**GLenum** *pname* , **GLint \** _ _params* );
 
-**void** **glGetFloatv**(**GLEnum** *pname* , **GLfloat \*** *params* );
+**void** **glGetFloatv**(**GLenum** *pname* , **GLfloat \** _ _params* );
 
-**void** **glGetDoublev**(**GLEnum** *pname* , **GLdouble \*** *params* );
+**void** **glGetDoublev**(**GLenum** *pname* , **GLdouble \** _ _params* );
 
-Le funzioni di query ottengono rispettivamente variabili di stato booleane, Integer, a virgola mobile o a precisione doppia. Il parametro *pname* è una costante simbolica che indica la variabile di stato da restituire e *params* è un puntatore a una matrice del tipo indicato in cui inserire i dati restituiti. I valori possibili per *pname* sono elencati in [variabili di stato OpenGL](opengl-state-variables.md). Se necessario, viene eseguita una conversione di tipi per restituire la variabile desiderata come tipo di dati richiesto.
+Le funzioni di query ottengono rispettivamente variabili di stato booleane, intere, a virgola mobile o a precisione doppia. Il *parametro pname* è una costante simbolica che indica la variabile di stato da restituire e *params* è un puntatore a una matrice del tipo indicato in cui inserire i dati restituiti. I valori possibili per *pname* sono elencati in [OpenGL State Variables](opengl-state-variables.md). Se necessario, viene eseguita una conversione del tipo per restituire la variabile desiderata come tipo di dati richiesto.
 
-Il prototipo per [**glIsEnabled**](glisenabled.md) è:
+Il prototipo [**per glIsEnabled**](glisenabled.md) è:
 
-**GLboolean** **glIsEnabled**(GLEnum *Cap* );
+**GLboolean** **glIsEnabled**(GLenum *cap* );
 
-Se la modalità specificata da *Cap* è abilitata, **glIsEnabled** restituisce GL \_ true. Se la modalità specificata da *Cap* è disabilitata, **glIsEnabled** restituisce GL \_ false. I valori possibili per *Cap* sono elencati in [variabili di stato OpenGL](opengl-state-variables.md).
+Se la modalità specificata da *cap* è abilitata, **glIsEnabled** restituisce GL \_ TRUE. Se la modalità specificata da *cap è* disabilitata, **glIsEnabled** restituisce GL \_ FALSE. I valori possibili per *cap sono* elencati in [OpenGL State Variables](opengl-state-variables.md).
 
-Altre funzioni specializzate restituiscono variabili di stato specifiche. Per informazioni sull'uso di queste funzioni, vedere le variabili di stato OpenGL e il *Manuale di riferimento di OpenGL*. Per ulteriori informazioni sulla funzionalità di gestione degli errori di OpenGL e sulla funzione **glGetError** , vedere [gestione degli errori](error-handling.md).
+Altre funzioni specializzate restituiscono variabili di stato specifiche. Per sapere quando usare queste funzioni, vedere OpenGL State Variables (Variabili di stato OpenGL) e *openGL Reference Manual (Manuale di riferimento di OpenGL).* Per altre informazioni sulla funzionalità di gestione degli errori di OpenGL e sulla **funzione glGetError,** vedere [Gestione degli errori.](error-handling.md)
 
 Le funzioni che restituiscono variabili di stato specifiche sono:
 
@@ -60,9 +60,9 @@ Le funzioni che restituiscono variabili di stato specifiche sono:
 -   [**glGetTexLevelParameter**](glgettexlevelparameter.md)
 -   [**glGetTexParameter**](glgettexparameter.md)
 
- 
+ 
 
- 
+ 
 
 
 

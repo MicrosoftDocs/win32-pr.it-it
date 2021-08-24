@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b92a5489569765ef059af9b1023b40fc681b5d0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 754ea3124f5c2433e459331d4ebc7727a9c2519a982d1def09c7e16e794e6ae9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750101"
 ---
 # <a name="d3dxmatrixtransformation2d-function-d3dx9mathh"></a>Funzione D3DXMatrixTransformation2D (D3dx9math.h)
 
@@ -87,7 +87,7 @@ Puntatore a [**una struttura D3DXVECTOR2,**](d3dxvector2.md) un punto che identi
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a [**una struttura D3DXVECTOR2,**](d3dxvector2.md) un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>rc.</sub>
+Puntatore a [**una struttura D3DXVECTOR2,**](d3dxvector2.md) un punto che identifica il centro di rotazione. Se questo argomento è **NULL,** una matrice identity M <sub>rc</sub> viene applicata alla formula nelle osservazioni.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Angolo di rotazione in radianti.
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a [**una struttura D3DXVECTOR2,**](d3dxvector2.md) che identifica la conversione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
+Puntatore a [**una struttura D3DXVECTOR2**](d3dxvector2.md) che identifica la traslazione. Se questo argomento è **NULL,** viene applicata una matrice Identity Mt alla formula in Osservazioni.
 
 </dd> </dl>
 
@@ -117,17 +117,17 @@ Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che contiene la matric
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione calcola la matrice di trasformazione con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
+Questa funzione calcola la matrice di trasformazione con la formula seguente, con la concatenazione di matrici valutata nell'ordine da sinistra a destra:
 
-M<sub>out</sub> = (M<sub>sc</sub>)⁻¹ \* (M<sub>sr</sub>)⁻¹ \* Ms \* M<sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻¹ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
+M<sub>out</sub> = (M<sub>sc</sub>)⁻ più \* (M<sub>sr</sub>)⁻ ms \* M \* <sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻⁻ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 dove:
 
 M <sub>out</sub> = matrice di output (*pOut*)
 
-M <sub>sc</sub> = scalabilità della matrice centrale (*pScalingCenter*)
+M <sub>sc</sub> = matrice del centro di ridimensionamento (*pScalingCenter*)
 
-M <sub>sr</sub> = scalare la matrice di rotazione (*pScalingRotation*)
+M <sub>sr</sub> = matrice di rotazione di ridimensionamento (*pScalingRotation*)
 
 Ms = matrice di ridimensionamento (*pScaling*)
 

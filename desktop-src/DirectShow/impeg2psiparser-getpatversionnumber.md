@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 978da4c7076bcf8ffe91bc2b9a4b2077d9d3d48a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ffd03bea09fb9041b91bb214287442eb59a7101be7a8841e0d38e28bcdaf3ecb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767361"
 ---
 # <a name="impeg2psiparsergetpatversionnumber-method"></a>Metodo IMpeg2PsiParser::GetPatVersionNumber
 

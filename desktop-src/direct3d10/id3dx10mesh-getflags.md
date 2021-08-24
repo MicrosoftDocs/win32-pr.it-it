@@ -1,7 +1,7 @@
 ---
-description: Accedere ai flag di creazione della rete.
+description: Accedere ai flag di creazione della mesh.
 ms.assetid: df21aa5d-d8c4-43ee-8b22-ca1ee75ecf64
-title: 'Metodo ID3DX10Mesh:: GetFlags (D3DX10. h)'
+title: Metodo ID3DX10Mesh::GetFlags (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ac81d0f7371bd53bb05ce606f62c7ac44fb31a38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4746f70044ce527f1a7b9290c047d495f615b076c9a5d3cd6005e335ca2fa853
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752951"
 ---
-# <a name="id3dx10meshgetflags-method"></a>Metodo ID3DX10Mesh:: GetFlags
+# <a name="id3dx10meshgetflags-method"></a>Metodo ID3DX10Mesh::GetFlags
 
-Accedere ai flag di creazione della rete.
+Accedere ai flag di creazione della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Flag di creazione passati al parametro *options* di [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md) quando è stata creata la mesh. Vedere [**d3dx10 \_ mesh**](d3dx10-mesh.md).
+Flag di creazione passati nel *parametro options* di [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md) al momento della creazione della mesh. Vedere [**D3DX10 \_ MESH**](d3dx10-mesh.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Flag di creazione passati al parametro *options* di [**D3DX10CreateMesh**](d3d10
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

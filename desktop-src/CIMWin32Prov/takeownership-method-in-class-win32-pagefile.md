@@ -1,8 +1,8 @@
 ---
-description: "Metodo TakeOwnerShip della classe Win32_PageFile: TakeOwnerShip&\\# 8194; Il metodo della classe WMI ottiene la proprietà del file logico specificato nel percorso dell'oggetto."
+description: Metodo TakeOwnerShip della classe Win32_PageFile - TakeOwnerShip&\# 8194; Il metodo della classe WMI ottiene la proprietà del file logico specificato nel percorso dell'oggetto.
 ms.assetid: c4f42d54-562c-4163-a5ec-e94f76932631
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della classe Win32_PageFile
+title: Metodo TakeOwnerShip della Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3aa0b2ec9f3805f1877f86bdf86d72b921d53ac9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3e76a30e42ca8c8d1a9a757a6b2d9d399187b7fdf2d25c607f19c572721a7d83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751671"
 ---
 # <a name="takeownership-method-of-the-win32_pagefile-class"></a>Metodo TakeOwnerShip della classe PageFile Win32 \_
 
-Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenute nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -49,14 +49,14 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **0**
 </dt> <dd>
 
-La richiesta ha avuto esito positivo.
+La richiesta è stata completata.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-L'accesso è stato negato.
+Accesso negato.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**File di paging Win32 \_**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

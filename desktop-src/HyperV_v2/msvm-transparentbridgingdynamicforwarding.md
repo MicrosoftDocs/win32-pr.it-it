@@ -1,7 +1,7 @@
 ---
-description: Connette un servizio di bridging trasparente a una voce di avanzamento dinamico (indirizzo MAC appreso).
+description: Connette un servizio di bridging trasparente a una voce di inoltro dinamico (indirizzo MAC appreso).
 ms.assetid: CA083F15-1E75-4EB9-BE56-95742181FDAC
-title: Classe Msvm_TransparentBridgingDynamicForwarding
+title: Msvm_TransparentBridgingDynamicForwarding classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 01b9d9c752d4781864c07ff24fca5f866a57ae54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd768b458ffed82f82b682b6f121baf67c6a909e142a9e9efdf7f63e29573671
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811761"
 ---
-# <a name="msvm_transparentbridgingdynamicforwarding-class"></a>\_Classe MSVM TransparentBridgingDynamicForwarding
+# <a name="msvm_transparentbridgingdynamicforwarding-class"></a>Classe Msvm \_ TransparentBridgingDynamicForwarding
 
-Connette un servizio di bridging trasparente a una voce di avanzamento dinamico (indirizzo MAC appreso).
+Connette un servizio di bridging trasparente a una voce di inoltro dinamico (indirizzo MAC appreso).
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,51 +41,51 @@ class Msvm_TransparentBridgingDynamicForwarding : CIM_TransparentBridgingDynamic
 
 ## <a name="members"></a>Members
 
-La **classe \_ TransparentBridgingDynamicForwarding di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ TransparentBridgingDynamicForwarding** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ TransparentBridgingDynamicForwarding di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ TransparentBridgingDynamicForwarding** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ TransparentBridgingService**](msvm-transparentbridgingservice.md)**
+Tipo di dati: **[ **Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) che rappresenta il servizio bridging trasparente.
+Riferimento a un'istanza della [**classe Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) che rappresenta il servizio di bridging trasparente.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**
+Tipo di dati: **[ **Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**\_ DynamicForwardingEntry MSVM**](msvm-dynamicforwardingentry.md) che rappresenta la voce di avanzamento dinamico del database di inoltri.
+Riferimento a un'istanza della [**classe Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) che rappresenta la voce di inoltro dinamico del database di inoltro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ TransparentBridgingDynamicForwarding di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ TransparentBridgingDynamicForwarding** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,10 +93,10 @@ L'accesso alla **classe \_ TransparentBridgingDynamicForwarding di MSVM** potreb
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -105,10 +105,10 @@ L'accesso alla **classe \_ TransparentBridgingDynamicForwarding di MSVM** potreb
 
 <dl> <dt>
 
-[**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**](cim-transparentbridgingdynamicforwarding.md)
+[**CIM \_ TransparentBridgingDynamicForwarding**](cim-transparentbridgingdynamicforwarding.md)
 </dt> <dt>
 
-[**\_TRANSPARENTBRIDGINGDYNAMICFORWARDING CIM**](/previous-versions/windows/desktop/clushyperv/cim-transparentbridgingdynamicforwarding)
+[**CIM \_ TransparentBridgingDynamicForwarding**](/previous-versions/windows/desktop/clushyperv/cim-transparentbridgingdynamicforwarding)
 </dt> </dl>
 
  

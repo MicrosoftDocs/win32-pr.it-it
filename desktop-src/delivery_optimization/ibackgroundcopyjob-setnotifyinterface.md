@@ -1,11 +1,11 @@
 ---
-title: Metodo metodo ibackgroundcopyjob SetNotifyInterface (Deliveryoptimization. h)
-description: Identifica l'implementazione dell'interfaccia IBackgroundCopyCallback da eseguire. Usare l'interfaccia IBackgroundCopyCallback per ricevere notifiche di eventi correlati al processo.
+title: Metodo IBackgroundCopyJob SetNotifyInterface (Deliveryoptimization.h)
+description: Identifica l'implementazione dell'interfaccia IBackgroundCopyCallback da eseguire. Usare l'interfaccia IBackgroundCopyCallback per ricevere la notifica degli eventi correlati al processo.
 ms.assetid: 792211FC-440E-4D2C-A6C7-CE9EFB86571C
 keywords:
 - Metodo SetNotifyInterface
-- Metodo SetNotifyInterface, interfaccia metodo ibackgroundcopyjob
-- Interfaccia metodo ibackgroundcopyjob, metodo SetNotifyInterface
+- Metodo SetNotifyInterface, interfaccia IBackgroundCopyJob
+- Interfaccia IBackgroundCopyJob, metodo SetNotifyInterface
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3b6e8205eb60cbd2ca645cd484e41f8f242619d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd54255d87ee3f15f87d692e06b7a503e773634ab4ec30c3f388388233aab2b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793410"
 ---
-# <a name="ibackgroundcopyjobsetnotifyinterface-method"></a>Metodo metodo ibackgroundcopyjob:: SetNotifyInterface
+# <a name="ibackgroundcopyjobsetnotifyinterface-method"></a>Metodo IBackgroundCopyJob::SetNotifyInterface
 
-Identifica l'implementazione dell'interfaccia [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) da eseguire. Usare l'interfaccia **IBackgroundCopyCallback** per ricevere notifiche di eventi correlati al processo.
+Identifica l'implementazione [**dell'interfaccia IBackgroundCopyCallback**](ibackgroundcopycallback.md) da eseguire. Usare **l'interfaccia IBackgroundCopyCallback** per ricevere la notifica degli eventi correlati al processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ HRESULT SetNotifyInterface(
 *pNotifyInterface* 
 </dt> <dd>
 
-Puntatore di interfaccia [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) . Per rimuovere il puntatore all'interfaccia di callback corrente, impostare questo parametro su **null**.
+Puntatore [**a interfaccia IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Per rimuovere il puntatore all'interfaccia di callback corrente, impostare questo parametro su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti e altri.
+Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
 
 
 
 | Codice restituito                                                                              | Descrizione                                                     |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | Il puntatore all'interfaccia di notifica è stato impostato correttamente.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | Il puntatore dell'interfaccia di notifica è stato impostato correttamente.<br/> |
 
 
 
@@ -66,11 +66,11 @@ Questo metodo restituisce i valori **HRESULT** seguenti e altri.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo solo se si implementa l'interfaccia [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) . Utilizzare il metodo **SetNotifyInterface** insieme al metodo [**SetNotifyFlags**](ibackgroundcopyjob-setnotifyflags.md) per specificare il tipo di notifica che si desidera ricevere.
+Chiamare questo metodo solo se si implementa [**l'interfaccia IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Usare il **metodo SetNotifyInterface** insieme al [**metodo SetNotifyFlags**](ibackgroundcopyjob-setnotifyflags.md) per specificare il tipo di notifica che si vuole ricevere.
 
-L'interfaccia di notifica diventa non valida al termine dell'applicazione; DO non rende persistente l'interfaccia Notify. Di conseguenza, il processo di inizializzazione dell'applicazione deve chiamare il metodo **SetNotifyInterface** nei processi esistenti per i quali si desidera ricevere la notifica. Se è necessario acquisire informazioni sullo stato e sullo stato di avanzamento dopo l'ultima esecuzione dell'applicazione, eseguire il polling delle informazioni sullo stato e sullo stato durante l'inizializzazione dell'applicazione.
+L'interfaccia di notifica non è più valida al termine dell'applicazione. DO non rende persistente l'interfaccia di notifica. Di conseguenza, il processo di inizializzazione dell'applicazione deve chiamare il metodo **SetNotifyInterface** sui processi esistenti per cui si vuole ricevere la notifica. Se è necessario acquisire informazioni sullo stato e sull'avanzamento dell'esecuzione dall'ultima esecuzione dell'applicazione, eseguire il polling delle informazioni sullo stato e sullo stato durante l'inizializzazione dell'applicazione.
 
-Solo il proprietario/autore del processo o un amministratore può registrarsi per le notifiche.
+Solo il proprietario o l'autore del processo o un amministratore può registrarsi per le notifiche.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,13 +78,13 @@ Solo il proprietario/autore del processo o un amministratore può registrarsi pe
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob viene definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
+| IID<br/>                      | IID_IBackgroundCopyJob è definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 
@@ -92,16 +92,16 @@ Solo il proprietario/autore del processo o un amministratore può registrarsi pe
 
 <dl> <dt>
 
-[**Metodo ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
 [**IBackgroundCopyCallback**](ibackgroundcopycallback.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob:: GetNotifyInterface**](ibackgroundcopyjob-getnotifyinterface.md)
+[**IBackgroundCopyJob::GetNotifyInterface**](ibackgroundcopyjob-getnotifyinterface.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob:: SetNotifyFlags**](ibackgroundcopyjob-setnotifyflags.md)
+[**IBackgroundCopyJob::SetNotifyFlags**](ibackgroundcopyjob-setnotifyflags.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_THREADSTATS. GetHashCode (metodo)'
-title: JET_THREADSTATS. Metodo GetHashCode (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_THREADSTATS. Metodo GetHashCode'
+title: JET_THREADSTATS. Metodo GetHashCode (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f427062d07e9fb1910d27b19a5710e15007e774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3402eba1565c3c1c4ad4c2c49b251e069ca60bd5e730dd2b39121c4332311997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832611"
 ---
-# <a name="jet_threadstatsgethashcode-method"></a>JET_THREADSTATS. GetHashCode (metodo)
+# <a name="jet_threadstatsgethashcode-method"></a>JET_THREADSTATS. Metodo GetHashCode
 
 Restituisce il codice hash per l'istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Codice hash per l'istanza.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS struttura](./jet-threadstats-structure2.md)
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

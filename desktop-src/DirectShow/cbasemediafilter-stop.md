@@ -1,7 +1,7 @@
 ---
-description: "Il metodo Stop arresta l'oggetto. Questo metodo implementa il metodo IMediaFilter:: stop."
+description: Il metodo Stop arresta l'oggetto. Questo metodo implementa il metodo IMediaFilter::Stop.
 ms.assetid: 9282d90a-932c-4ba0-84f1-1de2c125bfbd
-title: Metodo CBaseMediaFilter. Stop (Amfilter. h)
+title: Metodo CBaseMediaFilter.Stop (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22bb45234c8be832f8ea30ed70b50c8f4919b7e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: effe2df53508cd9c1f6523356eb7296458208c3ee0e61c1dd12c94bd87b6ad31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793231"
 ---
-# <a name="cbasemediafilterstop-method"></a>Metodo CBaseMediaFilter. Stop
+# <a name="cbasemediafilterstop-method"></a>Metodo CBaseMediaFilter.Stop
 
-Il `Stop` metodo interrompe l'oggetto. Questo metodo implementa il metodo [**IMediaFilter:: Stop**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop) .
+Il `Stop` metodo arresta l'oggetto . Questo metodo implementa il [**metodo IMediaFilter::Stop.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Nella classe di base, questo metodo imposta la variabile membro di [**\_ stato CBaseMediaFilter:: m**](cbasemediafilter-m-state.md) su stato \_ arrestato ma non esegue alcuna operazione.
+Nella classe di base questo metodo imposta la variabile membro [**CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) su State \_ Stopped, ma non esegue altre operazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Nella classe di base, questo metodo imposta la variabile membro di [**\_ stato C
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

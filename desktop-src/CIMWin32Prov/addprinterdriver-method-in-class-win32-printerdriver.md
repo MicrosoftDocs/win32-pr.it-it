@@ -2,7 +2,7 @@
 description: Crea un nuovo driver della stampante.
 ms.assetid: 23d9ec50-235a-4bf8-ab6b-be3509c3869f
 ms.tgt_platform: multiple
-title: Metodo AddPrinterDriver della classe Win32_PrinterDriver
+title: Metodo AddPrinterDriver della Win32_PrinterDriver classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 03c029d7689743150235d20b0658cd154ef64a4c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 14681c381f8c8b9abbc5b28ec763b959854e2303b9a0b87af762238f4e5a8d27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752801"
 ---
-# <a name="addprinterdriver-method-of-the-win32_printerdriver-class"></a>Metodo AddPrinterDriver della \_ classe PrinterDriver Win32
+# <a name="addprinterdriver-method-of-the-win32_printerdriver-class"></a>Metodo AddPrinterDriver della classe PrinterDriver Win32 \_
 
-Il metodo della classe **AddPrinterDriver** crea un nuovo driver della stampante.
+Il **metodo della classe AddPrinterDriver** crea un nuovo driver della stampante.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,23 +42,23 @@ uint32 AddPrinterDriver(
 
 <dl> <dt>
 
-*DriverInfo* \[ in\]
+*DriverInfo* \[ Pollici\]
 </dt> <dd>
 
-Istanza della classe [**Win32 \_ PrinterDriver**](win32-printerdriver.md) che rappresenta il driver della stampante.
+Istanza della classe [**\_ PrinterDriver Win32**](win32-printerdriver.md) che rappresenta il driver della stampante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per i valori diversi da quelli elencati nell'elenco seguente, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per valori diversi da quelli elencati nell'elenco seguente, vedere [**Costanti di errore WMI.**](/windows/desktop/WmiSdk/wmi-error-constants)
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-Esito positivo.
+Operazione completata.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Accesso negato.
 **87**
 </dt> <dd>
 
-Parametro non corretto. Può verificarsi quando l'oggetto non è riempito correttamente o quando il driver non è stato trovato nel sistema. In alternativa, l'attributo del nome può essere diverso dal modello specificato nel file con estensione inf. In alternativa, potrebbe essere presente una barra rovesciata (" \\ ") mancante in un attributo pathFile.
+Parametro non corretto. Può verificarsi quando l'oggetto non è compilato correttamente o quando non è possibile trovare il driver nel sistema. In alternativa, l'attributo name può essere diverso dal modello specificato nel file inf. Oppure potrebbe essere presente una barra rovesciata mancante (" \\ ") in un attributo PathFile.
 
 </dd> <dt>
 
@@ -86,15 +86,15 @@ Il driver della stampante è sconosciuto.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Quando si usa il metodo **AddPrinterDriver** , è necessario usare **SeLoadDriverPrivilege** per caricare o scaricare un driver di dispositivo.
+> Quando si usa **il metodo AddPrinterDriver** è necessario usare **SeLoadDriverPrivilege** per caricare o scaricare un driver di dispositivo.
 
  
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di[installazione di un driver della stampante non trovato nell'esempio di codice CAB](https://Gallery.TechNet.Microsoft.Com/1aac6333-a794-48d3-b7da-46d87df56ee1) VBScript di driver installa una stampante ipotetica utilizzando un driver di stampa non trovato in Drivers.cab.
+L'esempio di codice Install[a Printer Driver not Found in Drivers Cab](https://Gallery.TechNet.Microsoft.Com/1aac6333-a794-48d3-b7da-46d87df56ee1) VBScript installa una stampante ipotetica usando un driver di stampa non trovato in Drivers.cab.
 
-Nell'esempio VBScript seguente viene installato il driver della stampante per una stampante Apple LaserWriter 8500.
+Nell'esempio VBScript seguente viene installato il driver della stampante per una stampante Apple® 8500.
 
 
 ```VB
@@ -123,7 +123,7 @@ intResult = objDriver.AddPrinterDriver(objDriver)
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -132,10 +132,10 @@ intResult = objDriver.AddPrinterDriver(objDriver)
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PrinterDriver Win32**](win32-printerdriver.md)
+[**Win32 \_ PrinterDriver**](win32-printerdriver.md)
 </dt> </dl>
 
  

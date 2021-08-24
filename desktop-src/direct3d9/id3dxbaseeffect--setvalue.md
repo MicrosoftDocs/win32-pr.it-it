@@ -1,7 +1,7 @@
 ---
 description: Impostare il valore di un parametro o di un'annotazione arbitraria, inclusi tipi semplici, struct, matrici, stringhe, shader e trame.
 ms.assetid: ab71f1a1-3e10-4883-99b4-607e0b5751c2
-title: 'Metodo ID3DXBaseEffect:: SetValue (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetValue (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3281306240cefc0312ff9a2af7e056dab74a085b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2bb619c9d0ef469b36f96d1e35ee70719ede8f6eee494cc950f6fabadbf86304
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748971"
 ---
-# <a name="id3dxbaseeffectsetvalue-method"></a>Metodo ID3DXBaseEffect:: SetValue
+# <a name="id3dxbaseeffectsetvalue-method"></a>Metodo ID3DXBaseEffect::SetValue
 
 Impostare il valore di un parametro o di un'annotazione arbitraria, inclusi tipi semplici, struct, matrici, stringhe, shader e trame.
 
@@ -42,30 +42,30 @@ HRESULT SetValue(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un buffer contenente i dati.
+Puntatore a un buffer contenente dati.
 
 </dd> <dt>
 
-*Byte* \[ in\]
+*Byte* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-\[\]numero di byte nel buffer. Passare \_ il valore predefinito D3DX se si è certi che il buffer è sufficientemente grande da contenere l'intero parametro e si vuole ignorare la convalida delle dimensioni.
+\[in \] Numero di byte nel buffer. Passare D3DX DEFAULT se si sa che il buffer è sufficientemente grande da contenere l'intero parametro e si vuole ignorare \_ la convalida delle dimensioni.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere utilizzato al posto di quasi tutte le chiamate API dei set di effetti.
+Questo metodo può essere usato al posto di quasi tutte le chiamate API del set di effetti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Questo metodo può essere utilizzato al posto di quasi tutte le chiamate API dei
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -97,7 +97,7 @@ Questo metodo può essere utilizzato al posto di quasi tutte le chiamate API dei
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**GetValue**](id3dxbaseeffect--getvalue.md)
+[**Getvalue**](id3dxbaseeffect--getvalue.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Aggiunge uno sprite all'elenco di sprite in batch.
 ms.assetid: 8f5c43a2-68dd-44a9-be2f-f76d9fa2d900
-title: 'ID3DXSprite: Metodo Raw:D (D3dx9core. h)'
+title: Metodo ID3DXSprite::D raw (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9cba7b12c55e7ab9f5f939347a8b500ec4965f75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d453a2e03538b7601b5f73033a4749430e8812ef317a90816cac220e61695279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747371"
 ---
-# <a name="id3dxspritedraw-method"></a>ID3DXSprite::D Metodo Raw
+# <a name="id3dxspritedraw-method"></a>Metodo ID3DXSprite::D raw
 
 Aggiunge uno sprite all'elenco di sprite in batch.
 
@@ -44,48 +44,48 @@ HRESULT Draw(
 
 <dl> <dt>
 
-*pTexture* \[ in\]
+*pTexture* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama sprite.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la trama dello sprite.
 
 </dd> <dt>
 
-*pSrcRect* \[ in\]
+*pSrcRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che indica la parte della trama di origine da usare per lo sprite. Se questo parametro è **null**, viene usata l'intera immagine di origine per lo sprite.
-
-</dd> <dt>
-
-*pCenter* \[ in\]
-</dt> <dd>
-
-Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
-
-Puntatore a un vettore [**D3DXVECTOR3**](d3dxvector3.md) che identifica il centro dello sprite. Se questo argomento è **null**, viene utilizzato il punto (0, 0, 0), ovvero l'angolo superiore sinistro.
+Puntatore a [**una struttura RECT**](/previous-versions//dd162897(v=vs.85)) che indica la parte della trama di origine da usare per lo sprite. Se questo parametro è **NULL,** per lo sprite viene usata l'intera immagine di origine.
 
 </dd> <dt>
 
-*pPosition* \[ in\]
+*pCenter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a un vettore [**D3DXVECTOR3**](d3dxvector3.md) che identifica la posizione dello sprite. Se questo argomento è **null**, viene utilizzato il punto (0, 0, 0), ovvero l'angolo superiore sinistro.
+Puntatore a [**un vettore D3DXVECTOR3**](d3dxvector3.md) che identifica il centro dello sprite. Se questo argomento è **NULL,** viene usato il punto (0,0,0), ovvero l'angolo superiore sinistro.
 
 </dd> <dt>
 
-*Colore* \[ in\]
+*pPosition* \[ Pollici\]
+</dt> <dd>
+
+Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
+
+Puntatore a [**un vettore D3DXVECTOR3**](d3dxvector3.md) che identifica la posizione dello sprite. Se questo argomento è **NULL,** viene usato il punto (0,0,0), ovvero l'angolo superiore sinistro.
+
+</dd> <dt>
+
+*Colore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-Tipo [**D3DCOLOR**](d3dcolor.md) . Il colore e i canali alfa vengono modulati in base a questo valore. Il valore 0xFFFFFFFF mantiene il colore di origine e i dati alfa originali. Usare la macro [**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md) per generare questo colore.
+[**Tipo D3DCOLOR.**](d3dcolor.md) I canali di colore e alfa vengono modulati da questo valore. Il valore 0xFFFFFFFF mantiene il colore di origine originale e i dati alfa. Usare la macro [**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md) per generare questo colore.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Tipo [**D3DCOLOR**](d3dcolor.md) . Il colore e i canali alfa vengono modulati in
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="remarks"></a>Commenti
 
-Per ridimensionare, ruotare o tradurre uno sprite, chiamare [**ID3DXSprite:: setransform**](id3dxsprite--settransform.md) con una matrice che contiene i valori scale, Rotate e translate (SRT), prima di chiamare ID3DXSprite::D RAW. Per informazioni sull'impostazione di valori SRT in una matrice, vedere [trasformazioni matrici](transforms.md).
+Per ridimensionare, ruotare o traslare uno sprite, chiamare [**ID3DXSprite::SetTransform**](id3dxsprite--settransform.md) con una matrice che contiene i valori di scala, rotazione e traslazione (SRT), prima di chiamare ID3DXSprite::D raw. Per informazioni sull'impostazione di valori SRT in una matrice, vedere [Trasformazioni di matrice.](transforms.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Per ridimensionare, ruotare o tradurre uno sprite, chiamare [**ID3DXSprite:: set
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -117,7 +117,7 @@ Per ridimensionare, ruotare o tradurre uno sprite, chiamare [**ID3DXSprite:: set
 [ID3DXSprite](id3dxsprite.md)
 </dt> <dt>
 
-[**ID3DXSprite:: GetTransform**](id3dxsprite--gettransform.md)
+[**ID3DXSprite::GetTransform**](id3dxsprite--gettransform.md)
 </dt> </dl>
 
  

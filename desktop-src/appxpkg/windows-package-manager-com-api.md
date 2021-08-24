@@ -1,25 +1,25 @@
 ---
-title: API COM di gestione pacchetti Windows
-description: Si applica a Windows 10 e implementata nella famiglia di dispositivi mobili. Per ulteriori informazioni su Gestione pacchetti di Windows, rivolgersi al rappresentante del team di account Microsoft.
+title: Gestione pacchetti Windows COM API
+description: Si applica Windows 10 e implementato nella famiglia di dispositivi mobili. Per altre informazioni sui Gestione pacchetti Windows, rivolgersi al rappresentante del team account Microsoft.
 ms.assetid: 4863EC42-413D-46E3-AE61-E29006708E39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82de491b2ceb7da7029a8db7fdf3e436a92d50a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3dd0faf1d8432ec36a3ce569589fcb596bb57cb553be0e09d5adc004ff543821
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855221"
 ---
-# <a name="windows-package-manager-com-api"></a>API COM di gestione pacchetti Windows
+# <a name="windows-package-manager-com-api"></a>Gestione pacchetti Windows COM API
 
-Si applica a Windows 10 e implementata nella famiglia di dispositivi mobili. Per ulteriori informazioni su Gestione pacchetti di Windows, rivolgersi al rappresentante del team di account Microsoft.
+Si applica Windows 10 e implementato nella famiglia di dispositivi mobili. Per altre informazioni sui Gestione pacchetti Windows, rivolgersi al rappresentante del team account Microsoft.
 
 > [!Note]
 >
-> Questa API non è disponibile per tutte le app di Windows. A meno che non sia stato effettuato il provisioning dell'account sviluppatore da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+> Questa API non è disponibile per tutte le Windows app. A meno che l'account per sviluppatore non sia stato appositamente predisposto da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
- 
+ 
 
 L'API è costituita dalla coclasse seguente.
 
@@ -27,19 +27,19 @@ L'API è costituita dalla coclasse seguente.
 
 PMSvc implementa le interfacce seguenti.
 
--   IPMApplicationInfo. IID: {50AFB58A-438C-4088-97-89-F8-C4-89-98 -29-C7}
+-   IPMApplicationInfo. IID: {50AFB58A-438C-4088-97-89-F8-C4-89-98-29-C7}
 -   IPMTilePropertyInfo. IID: {6C2B8017-1EFA-42a7-86-C0-6D-4B-64-0B-F5-28}
--   IPMTilePropertyEnumerator. IID: {CC4CD629-9047 -4250-AA-C8-93-0E-47-81-24-21}
--   IPMTileInfo. IID: {D1604833-2B08-4001 -82-CD-18-3A-D7-34-F7-52}
--   IPMTileInfoEnumerator. IID: {DED83065-E462-4B2C-AC-B5-E3-9C-EA-61-C8-74}
--   IPMApplicationInfoEnumerator. IID: {0EC42A96-4D46-4dc6-a3-D9-a7-AC-AA-C0-F5-FA}
--   IPMLiveTileJobInfo. IID: {6009A81F-4710-4697-B5-F6-22 -08-F6-05-7B-8E}
--   IPMLiveTileJobInfoEnumerator. IID: {BC042582-9415-4F36-9F-99-06-F1-04-C0-7C-03}
+-   IPMTilePropertyEnumerator. IID: {CC4CD629-9047-4250-AA-C8-93-0E-47-81-24-21}
+-   IPMTileInfo. IID: {D1604833-2B08-4001-82-CD-18-3A-D7-34-F7-52}
+-   IPMTileInfoEnumerator. IID: {DED83065-E462-4b2c-AC-B5-E3-9C-EA-61-C8-74}
+-   IPMApplicationInfoEnumerator. IID: {0EC42A96-4D46-4dc6-A3-D9-A7-AC-AA-C0-F5-FA}
+-   IPMLiveTileJobInfo. IID: {6009A81F-4710-4697-B5-F6-22-08-F6-05-7B-8E}
+-   IPMLiveTileJobInfoEnumerator. IID: {BC042582-9415-4f36-9F-99-06-F1-04-C0-7C-03}
 -   IPMDeploymentManager. IID: {35F785FA-1979-4A8B-BC-8F-FD-70-EB-0D-15-44}
 -   IPMEnumerationManager. IID: {698D57C2-292D-4CF3-B7-3C-D9-5A-69-22-ED-9A}
 -   IPMTaskInfo. IID: {BF1D8C33-1BF5-4ee0-B5-49-6B-9D-D3-83-49-42}
--   IPMTaskInfoEnumerator. IID: {0630B0F8-0BBC-4821-BE-74-C7-99-51 -66-ED-2A}
--   IPMExtensionInfo. IID: {49ACDE79-9788-4d0a-8A-a0-17 -46-AF-DB-9E-9D}
+-   IPMTaskInfoEnumerator. IID: {0630B0F8-0BBC-4821-BE-74-C7-99-51-66-ED-2A}
+-   IPMExtensionInfo. IID: {49ACDE79-9788-4d0a-8A-A0-17-46-AF-DB-9E-9D}
 -   IPMExtensionFileExtensionInfo. IID: {6B87CB6C-0B88-4989-A4-EC-03-37-14-F7-10-D4}
 -   IPMExtensionProtocolInfo. IID: {1E3FA036-51EB-4453-BA-FF-B8-D8-E4-B4-6C-8E}
 -   IPMExtensionShareTargetInfo. IID: {5471F48B-C65C-4656-8C-70-24-2E-31-19-5F-EA}
@@ -47,15 +47,15 @@ PMSvc implementa le interfacce seguenti.
 -   IPMExtensionFileOpenPickerInfo. IID: {6DC91D25-9606-420C-9A-78-E0-34-A3-41-83-45}
 -   IPMExtensionFileSavePickerInfo. IID: {38005CBA-F81A-493E-A0-F8-92-2C-86-80-DA-43}
 -   IPMExtensionCachedFileUpdaterInfo. IID: {E2D77509-4E58-4BA9-AF-7E-B6-42-E3-70-E1-B0}
--   IPMExtensionInfoEnumerator. IID: {403B9E82-GLI 11771-4573-8E-6F-6F-33-F3-9B-83-DD}
+-   IPMExtensionInfoEnumerator. IID: {403B9E82-1171-4573-8E-6F-6F-33-F3-9B-83-DD}
 -   IPMBackgroundServiceAgentInfo. IID: {3A8B46DA-928C-4879-99-8C-09-DC-96-F3-D4-90}
 -   IPMBackgroundWorkerInfo. IID: {7DD4531B-D3BF-4B6B-94-F3-69-C0-98-B1-49-7D}
 -   IPMBackgroundServiceAgentInfoEnumerator. IID: {18EB2072-AB56-43B3-87-2C-BE-AF-B7-A6-B3-91}
 -   IPMBackgroundWorkerInfoEnumerator. IID: {87F479F8-90D8-4EC7-92-B9-72-78-7E-2F-63-6B}
 
- 
+ 
 
- 
+ 
 
 
 

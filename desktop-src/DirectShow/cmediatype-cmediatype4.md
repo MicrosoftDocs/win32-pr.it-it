@@ -1,7 +1,7 @@
 ---
 description: Costruttore CMediaType.CMediaType (Mtype.h) - Metodo costruttore.
 ms.assetid: 35198320-d028-42d4-823f-4f8346d8f977
-title: 'Costruttore CMediaType.CMediaType (Mtype.h): parametri cmtype e phr'
+title: Costruttore CMediaType.CMediaType (Mtype.h) - parametri cmtype e phr
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dd91252920c74d45e4218be3c3d03249a116bfcf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2f686d1338073c65ce3e5bc3871ae8f4a5b9102e78d7678d5bcf6f77a565397d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792951"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh"></a>Costruttore CMediaType.CMediaType (Mtype.h)
 
@@ -67,7 +67,7 @@ Il costruttore chiama il [**metodo CMediaType::InitMediaType**](cmediatype-initm
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype.h (include Streams.h)</dt> </dl>                                                                                     |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

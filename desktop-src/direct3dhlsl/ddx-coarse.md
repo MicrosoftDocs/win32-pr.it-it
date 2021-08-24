@@ -1,9 +1,9 @@
 ---
-title: funzione ddx_coarse
-description: Calcola una derivata parziale con precisione bassa rispetto alla coordinata x dello spazio dello schermo.
+title: ddx_coarse funzione
+description: Calcola una derivata parziale a bassa precisione rispetto alla coordinata x dello spazio dello schermo.
 ms.assetid: 5719f45d-b2ae-4916-8f31-c2797b661814
 keywords:
-- funzione ddx_coarse HLSL
+- ddx_coarse funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4f9d4805a1d516a5d8980fcd8209fd6733fe86c4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d5521da56804156485fcacb37b43cbf27d8d4b3659cbced918eaea2c12b308ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855371"
 ---
-# <a name="ddx_coarse-function"></a>\_funzione grossolana DDX
+# <a name="ddx_coarse-function"></a>Funzione grosso modo \_ ddx
 
-Calcola una derivata parziale con precisione bassa rispetto alla coordinata x dello spazio dello schermo.
+Calcola una derivata parziale a bassa precisione rispetto alla coordinata x dello spazio dello schermo.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 float ddx_coarse(
-  in float value
+  in float value
 );
 ```
 
@@ -36,7 +36,7 @@ float ddx_coarse(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -49,11 +49,11 @@ Valore di input.
 
 Tipo: **float**
 
-Derivato parziale di precisione bassa del *valore*.
+Derivazione parziale a precisione bassa del *valore*.
 
 ## <a name="remarks"></a>Commenti
 
-Sono disponibili anche le seguenti versioni di overload:
+Sono disponibili anche le versioni di overload seguenti:
 
 ``` syntax
 float2 ddx_coarse(float2 value);
@@ -61,7 +61,7 @@ float3 ddx_coarse(float3 value);
 float4 ddx_coarse(float4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -69,23 +69,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -94,12 +94,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

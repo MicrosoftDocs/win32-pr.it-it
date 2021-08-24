@@ -1,11 +1,11 @@
 ---
-title: Metodo CheckApplicabilityMethod della classe MDM_WindowsLicensing
-description: Verifica se il codice Product Key immesso può essere usato per l'aggiornamento di un'edizione, l'attivazione o la modifica di un codice Product Key di Windows 10 per i dispositivi desktop. Vedere anche CheckApplicability.
+title: Metodo CheckApplicabilityMethod della MDM_WindowsLicensing classe
+description: Controlla se il codice Product Key immesso può essere usato per un aggiornamento dell'edizione, l'attivazione o la modifica di un codice Product Key Windows 10 per dispositivi desktop. Vedere anche CheckApplicability.
 ms.assetid: b28ea397-72dd-4c10-a9fb-53087c3b654c
 keywords:
 - Metodo CheckApplicabilityMethod
-- Metodo CheckApplicabilityMethod, classe MDM_WindowsLicensing
-- Classe MDM_WindowsLicensing, metodo CheckApplicabilityMethod
+- Metodo CheckApplicabilityMethod, MDM_WindowsLicensing classe
+- MDM_WindowsLicensing classe, metodo CheckApplicabilityMethod
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eae08c4a13d036a7d1185a3d53dee846ea460e53
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db236e05ffe7b5b6273e7cba594266c31720932b43a7df2de751a0fa66cced5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750151"
 ---
-# <a name="checkapplicabilitymethod-method-of-the-mdm_windowslicensing-class"></a>Metodo CheckApplicabilityMethod della classe MDM \_ WindowsLicensing
+# <a name="checkapplicabilitymethod-method-of-the-mdm_windowslicensing-class"></a>Metodo CheckApplicabilityMethod della classe \_ MDM WindowsLicensing
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Verifica se il codice Product Key immesso può essere usato per l'aggiornamento di un'edizione, l'attivazione o la modifica di un codice Product Key di Windows 10 per i dispositivi desktop. Vedere anche [CheckApplicability](/windows/client-management/mdm/windowslicensing-csp).
+Controlla se il codice Product Key immesso può essere usato per un aggiornamento dell'edizione, l'attivazione o la modifica di un codice Product Key Windows 10 per dispositivi desktop. Vedere anche [CheckApplicability.](/windows/client-management/mdm/windowslicensing-csp)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ uint32 CheckApplicabilityMethod(
 
 <dl> <dt>
 
-*param* \[ in\]
+*param* \[ Pollici\]
 </dt> <dd>
 
 Codice Product Key.
@@ -61,10 +61,10 @@ TRUE o FALSE
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -73,10 +73,10 @@ TRUE o FALSE
 
 <dl> <dt>
 
-[**\_WINDOWSLICENSING MDM**](mdm-windowslicensing.md)
+[**\_Windows MDMLicensing**](mdm-windowslicensing.md)
 </dt> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

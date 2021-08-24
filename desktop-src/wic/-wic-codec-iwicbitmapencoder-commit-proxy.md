@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 934b2e21097a671c2b52ea77ab07caf25ab521a3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ce68e9e13b64b422d69161c0800c8b55a14cdae6923c4bcb64c37b071ea671f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812681"
 ---
-# <a name="iwicbitmapencoder_commit_proxy-function"></a>Funzione proxy commit IWICBitmapEncoder \_ \_
+# <a name="iwicbitmapencoder_commit_proxy-function"></a>Funzione proxy di commit IWICBitmapEncoder \_ \_
 
 Funzione proxy per il [**metodo Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
 
@@ -63,8 +63,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
