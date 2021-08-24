@@ -4,12 +4,12 @@ ms.assetid: 2ef2a3fb-ec81-4a2d-b2de-1092b579f3da
 title: System.Contact.Prefix
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d882446e34f9f7d8a48610120efc4c75cf87ec4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1cb9a62deb644daf9e33c30d19e2abe9242bc069194747e7efd0f1f7c42bc57d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717503"
 ---
 # <a name="systemcontactprefix"></a>System.Contact.Prefix
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

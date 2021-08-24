@@ -1,6 +1,6 @@
 ---
-title: attributo ms-TS-Home-Directory
-description: Home directory di Servizi terminal specifica la Home Directory per l'utente.
+title: Attributo ms-TS-Home-Directory
+description: Home directory di Servizi terminal specifica la home directory per l'utente.
 ms.assetid: 07ee28e2-34c1-4091-a409-ff74001059c3
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef0cf3b0e2457c0efc3e14861ece3391551339cf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 34a8e49da3ba1283a54392253dac67d791a43d08689210f984f8f8176a37f316
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761191"
 ---
-# <a name="ms-ts-home-directory-attribute"></a>attributo ms-TS-Home-Directory
+# <a name="ms-ts-home-directory-attribute"></a>Attributo ms-TS-Home-Directory
 
-Home directory di Servizi terminal specifica la Home Directory per l'utente.
+Home directory di Servizi terminal specifica la home directory per l'utente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Home-Directory                        |
-| LDAP-Display-Name | msTSHomeDirectory                           |
+| CN                | ms-TS-Home-Directory                        |
+| Ldap-Display-Name | msTSHomeDirectory                           |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1977                     |
-| System-ID-GUID    | 5d3510f0-c4e7-4122-b91f-a20add90e246        |
+| System-Id-Guid    | 5d3510f0-c4e7-4122-b91f-a20add90e246        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Home directory di Servizi terminal specifica la Home Directory per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Home directory di Servizi terminal specifica la Home Directory per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Home directory di Servizi terminal specifica la Home Directory per l'utente.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

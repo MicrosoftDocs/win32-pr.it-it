@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_GETINSERTMARKCOLOR (COMmctrl. h)
-description: Recupera il colore utilizzato per creare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetInsertMarkColor di TreeView.
+title: TVM_GETINSERTMARKCOLOR messaggio (Commctrl.h)
+description: Recupera il colore utilizzato per disegnare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro TreeView GetInsertMarkColor.
 ms.assetid: d1fba4bb-1bdb-44e0-8083-b564cdafc055
 keywords:
-- Controlli di Windows Message TVM_GETINSERTMARKCOLOR
+- TVM_GETINSERTMARKCOLOR dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61416a428fed88ece8f50ca640dd9a05ec131614
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38c784f6b3c363d68472270f0f52cb97cea7c13b6eb709d1aba4975d3cd97bca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834151"
 ---
-# <a name="tvm_getinsertmarkcolor-message"></a>\_Messaggio GETINSERTMARKCOLOR TVM
+# <a name="tvm_getinsertmarkcolor-message"></a>Messaggio TVM \_ GETINSERTMARKCOLOR
 
-Recupera il colore utilizzato per creare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetInsertMarkColor di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getinsertmarkcolor) .
+Recupera il colore utilizzato per disegnare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ TreeView GetInsertMarkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getinsertmarkcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera il colore utilizzato per creare il segno di inserimento per la visualiz
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore [**COLORREF**](/windows/desktop/gdi/colorref) che contiene il colore del segno di inserimento corrente.
+Restituisce un [**valore COLORREF**](/windows/desktop/gdi/colorref) che contiene il colore del segno di inserimento corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore [**COLORREF**](/windows/desktop/gdi/colorref) che contiene
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce un valore [**COLORREF**](/windows/desktop/gdi/colorref) che contiene
 
 <dl> <dt>
 
-[**\_SETINSERTMARKCOLOR TVM**](tvm-setinsertmarkcolor.md)
+[**TVM \_ SETINSERTMARKCOLOR**](tvm-setinsertmarkcolor.md)
 </dt> </dl>
 
  

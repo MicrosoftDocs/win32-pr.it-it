@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1dd0bf38f2fa3be0e077f2509001680bbfc84e15
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ddd064934eea6ef2c88a4304466b15811910e8e352041e7242c75650dd54b2a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812781"
 ---
 # <a name="ctransformoutputpingetmediatype-method"></a>Metodo CTransformOutputPin.GetMediaType
 
@@ -53,7 +53,7 @@ Valore di indice in base zero.
 *pMediaType* 
 </dt> <dd>
 
-Puntatore a un [**oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
+Puntatore a [**un oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CBasePin::GetMediaType.**](cbasepin-getmediatype.md) Se il pin di input del filtro non è connesso, il metodo restituisce VFW \_ S \_ NO MORE \_ \_ ITEMS. In caso contrario, chiama il metodo [**CTransformFilter::GetMediaType**](ctransformfilter-getmediatype.md) del filtro per recuperare il tipo di supporto. Il **metodo CTransformFilter::GetMediaType** è virtuale puro. La classe derivata del filtro deve eseguirne l'override.
+Questo metodo esegue l'override [**del metodo CBasePin::GetMediaType.**](cbasepin-getmediatype.md) Se il pin di input del filtro non è connesso, il metodo restituisce VFW \_ S \_ NO MORE \_ \_ ITEMS. In caso contrario, chiama il metodo [**CTransformFilter::GetMediaType**](ctransformfilter-getmediatype.md) del filtro per recuperare il tipo di supporto. Il **metodo CTransformFilter::GetMediaType** è virtuale puro; La classe derivata del filtro deve eseguirne l'override.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Questo metodo esegue l'override [**del metodo CBasePin::GetMediaType.**](cbasepi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

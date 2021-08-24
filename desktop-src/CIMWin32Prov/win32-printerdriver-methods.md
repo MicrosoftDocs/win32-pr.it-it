@@ -1,20 +1,20 @@
 ---
-description: La \_ classe Win32 PrinterDriver espone i metodi seguenti.
+description: La classe PrinterDriver Win32 \_ espone i metodi seguenti.
 ms.assetid: 3C47E821-AF5D-4D69-B5F1-32D6715B4638
 ms.tgt_platform: multiple
-title: Metodi di Win32_PrinterDriver
+title: Win32_PrinterDriver metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7200f6a9cfa9e137b15cee23300de87226e7da6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ea8fadab44cb5460726e033b762b58f910c83ba0000ba0c5e0a3cad2a2424097
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759441"
 ---
-# <a name="win32_printerdriver-methods"></a>\_Metodi Win32 PrinterDriver
+# <a name="win32_printerdriver-methods"></a>Metodi di PrinterDriver Win32 \_
 
-La classe [**Win32 \_ PrinterDriver**](win32-printerdriver.md) espone i metodi seguenti.
+La [**classe \_ PrinterDriver Win32**](win32-printerdriver.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

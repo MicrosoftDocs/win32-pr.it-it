@@ -6,19 +6,19 @@ keywords:
 - effetto ombreggiatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42fd8755078dd79f2b01b623b1839785beb3c3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5d88924140caac22b688a0ccb6948ee74312411c770bff99360847ef2cd1b4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833056"
 ---
 # <a name="shadow-effect"></a>Effetto ombreggiatura
 
 Usare l'effetto ombreggiatura per generare un'ombreggiatura dal canale alfa di un'immagine. L'ombreggiatura è più opaca per i valori alfa più elevati e più trasparente per i valori alfa inferiori. È possibile impostare la quantità di sfocatura e il colore dell'ombreggiatura.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Modalità di ottimizzazione](#optimization-modes)
 -   [Bitmap di output](#output-bitmap)
 -   [Requisiti](#requirements)
@@ -28,15 +28,15 @@ Il CLSID per questo effetto è CLSID \_ D2D1Shadow.
 
 ## <a name="example-image"></a>Immagine di esempio
 
-Nell'esempio riportato di seguito viene illustrato l'output dell'effetto di ombreggiatura convertito verso il basso e verso destra con l'immagine di origine composita nel percorso originale. L'effetto di ombreggiatura restituisce solo l'ombreggiatura.
+L'esempio seguente mostra l'output dell'effetto ombreggiatura tradotto verso il basso e verso destra con l'immagine di origine composta sopra di essa nella posizione originale. L'effetto ombreggiatura restituisce solo l'ombreggiatura.
 
 
 
 | Prima                                                  |
 |---------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/8-crop.png)      |
+| ![l'immagine prima dell'effetto.](images/8-crop.png)      |
 | After                                                   |
-| ![immagine dopo la trasformazione.](images/25-shadow.png) |
+| ![l'immagine dopo la trasformazione.](images/25-shadow.png) |
 
 
 
@@ -78,15 +78,15 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                                        | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Nome visualizzato ed enumerazione dell'indice                                                        | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlurStandardDeviation<br/> \_ \_ \_ Deviazione standard della sfocatura d2d1 Shadow Prop \_ \_<br/> | Quantità di sfocatura da applicare al canale alfa dell'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard di 3. Le unità della deviazione standard e del raggio di sfocatura sono dip.<br/> Questa proprietà corrisponde alla proprietà della deviazione standard [sfocatura gaussiana](gaussian-blur.md) . <br/> Il tipo è FLOAT.<br/> Il valore predefinito è 3.0 f.<br/> |
-| Colore<br/> \_Colore della \_ prop \_ shadow d2d1<br/>                                     | Colore dell'ombreggiatura. Questa proprietà è un \_ vettore d2d1 \_ 4F definito come: (R, G, B, a). È necessario specificare questo colore nell'Alpha lineare.<br/> Il tipo è D2D1 \_ vector \_ 4F.<br/> Il valore predefinito è {0,0 f, 0,0 f, 0,0 f, 1.0 f}.<br/>                                                                                                                                                                     |
-| Optimization<br/> Ottimizzazione di D2D1 \_ shadow \_ prop \_<br/>                       | Livello di ottimizzazione delle prestazioni.<br/> Il tipo è l' \_ ottimizzazione dell'ombreggiatura d2d1 \_ .<br/> Il valore predefinito è l' \_ ottimizzazione dell'ombreggiatura d2d1 \_ \_ .<br/>                                                                                                                                                                                                                                                   |
+| BlurStandardDeviation<br/> DEVIAZIONE STANDARD DELLA \_ SFOCATURA DELLE PROPRIETÀ DELL'OMBREGGIATURA D2D1 \_ \_ \_ \_<br/> | Quantità di sfocatura da applicare al canale alfa dell'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard per 3. Le unità della deviazione standard e del raggio di sfocatura sono DIP.<br/> Questa proprietà è la stessa della [proprietà](gaussian-blur.md) sfocatura gaussiana deviazione standard. <br/> Il tipo è FLOAT.<br/> Il valore predefinito è 3,0f.<br/> |
+| Color<br/> COLORE DELLA PROPRIETÀ \_ DELL'OMBREGGIATURA D2D1 \_ \_<br/>                                     | Colore dell'ombreggiatura. Questa proprietà è un vettore D2D1 \_ \_ 4F definito come: (R, G, B, A). È necessario specificare questo colore in alfa diritto.<br/> Il tipo è D2D1 \_ VECTOR \_ 4F.<br/> Il valore predefinito è {0.0f, 0.0f, 0.0f, 1.0f}.<br/>                                                                                                                                                                     |
+| Optimization<br/> OTTIMIZZAZIONE DELLE PROPRIETÀ SHADOW D2D1 \_ \_ \_<br/>                       | Livello di ottimizzazione delle prestazioni.<br/> Il tipo è D2D1 \_ SHADOW \_ OPTIMIZATION.<br/> Il valore predefinito è D2D1 \_ SHADOW \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                                                                                                                                                                   |
 
 
 
@@ -98,9 +98,9 @@ m_d2dContext->EndDraw();
 
 | Nome                                          | Descrizione                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| \_Velocità di \_ ottimizzazione \_ DIRECTIONALBLUR di d2d1    | Applica le ottimizzazioni interne, ad esempio la pre-scalabilità a raggi relativamente piccoli. Usa il filtro lineare.                                  |
-| \_Ottimizzazione d2d1 \_ DIRECTIONALBLUR \_ | Usa le stesse soglie di ottimizzazione della modalità velocità, ma usa il filtro trilineare.                                                    |
-| \_ \_ Qualità ottimizzazione DIRECTIONALBLUR \_ d2d1  | USA solo le ottimizzazioni interne con raggi di sfocatura grandi, in cui è meno probabile che le approssimazioni siano visibili. Usa il filtro trilineare. |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ SPEED    | Applica ottimizzazioni interne, ad esempio il pre-ridimensionamento a raggi relativamente piccoli. Usa il filtro lineare.                                  |
+| OTTIMIZZAZIONE D2D1 \_ DIRECTIONALBLUR \_ \_ BILANCIATA | Usa le stesse soglie di ottimizzazione della modalità Velocità, ma usa il filtro trilineare.                                                    |
+| QUALITÀ DI OTTIMIZZAZIONE D2D1 \_ DIRECTIONALBLUR \_ \_  | Usa solo ottimizzazioni interne con raggi di sfocatura di grandi dimensioni, in cui è meno probabile che le approssimazioni siano visibili. Usa il filtro trilineare. |
 
 
 
@@ -108,13 +108,13 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La dimensione della bitmap di output corrisponde alla dimensione dell'output di sfocatura. La quantità di dimensioni della bitmap di output rispetto alla bitmap originale può essere calcolata utilizzando l'equazione seguente:
+Le dimensioni della bitmap di output sono le dimensioni dell'output della sfocatura. La quantità di crescita della bitmap di output rispetto alla bitmap originale può essere calcolata usando l'equazione seguente:
 
-Aumento dimensioni bitmap di output (X e Y) = BlurStandardDeviation (DIP) (device-independent pixel) \* 6 \* (dpi utente)/96
+Aumento bitmap di output (X e Y) = BlurStandardDeviation (DIP)) \* 6 \* (DPI utente)/96
 
-L'output aumenta in modo uniforme in tutte le direzioni, quindi, ad esempio, se le dimensioni aumentano di 10 pixel in ogni direzione, l'angolo superiore sinistro della bitmap si trova in corrispondenza di (-5,-5) e il diritto inferiore si trova in (105, 105), come illustrato nel diagramma.
+L'output aumenta equamente in tutte le direzioni, ad esempio se le dimensioni aumentano di 10 pixel in ogni direzione, l'angolo superiore sinistro della bitmap si trova in corrispondenza di (-5, -5) e l'angolo inferiore destro sarà pari a (105, 105), come illustrato nel diagramma qui.
 
-![diagramma di crescita della dimensione dell'output dell'effetto ombreggiatura.](images/drop-shadow-output-growth.png)
+![Diagramma di crescita delle dimensioni dell'output dell'effetto ombreggiatura.](images/drop-shadow-output-growth.png)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -122,10 +122,10 @@ L'output aumenta in modo uniforme in tutte le direzioni, quindi, ad esempio, se 
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Riferimento al contesto di interazione
+title: Informazioni di riferimento sul contesto di interazione
 description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per il contesto di interazione.
 ms.assetid: DDD141E3-7DEE-4259-87BE-E11A51CF6EEE
 keywords:
@@ -12,26 +12,26 @@ keywords:
 - stilo
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: b4c1be73e57549cb99b31a98f7bf132cfa3d667c
-ms.sourcegitcommit: 6b8d5058d02daacad4d2ed7830da63b63a509586
+ms.openlocfilehash: ce3d21b6f0ae5be8318361e8685d1ea918d5963a2ff82c2ae39f1d550f7f4e1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "104117319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717481"
 ---
-# <a name="interaction-context-reference"></a>Riferimento al contesto di interazione
+# <a name="interaction-context-reference"></a>Informazioni di riferimento sul contesto di interazione
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per il [contesto di interazione](interaction-context-portal.md).
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [il contesto di interazione.](interaction-context-portal.md)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione |
 |---|---|
-| [**HINTERACTIONCONTEXT**](hinteractioncontext.md)<br/>                                  | Handle per un oggetto del [contesto di interazione](interaction-context-portal.md) .<br/>                                                              |
-| [*\_callback di \_ output del contesto di interazione \_*](/windows/win32/api/interactioncontext/nc-interactioncontext-interaction_context_output_callback)<br/> | Callback che riceve eventi da un oggetto del [contesto di interazione](interaction-context-portal.md) .<br/>                                     |
-| [Enumerazioni del contesto di interazione](enumerations.md)<br/>                                | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni del [contesto di interazione](interaction-context-portal.md) .<br/> |
-| [Funzioni del contesto di interazione](functions.md)<br/>                                      | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le funzioni del [contesto di interazione](interaction-context-portal.md) .<br/>    |
-| [Strutture del contesto di interazione](structures.md)<br/>                                    | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le strutture del [contesto di interazione](interaction-context-portal.md) .<br/>   |
+| [**HINTERACTIONCONTEXT**](hinteractioncontext.md)<br/>                                  | Handle a un [oggetto del contesto di](interaction-context-portal.md) interazione.<br/>                                                              |
+| [*CALLBACK DI \_ OUTPUT DEL CONTESTO DI \_ \_ INTERAZIONE*](/windows/win32/api/interactioncontext/nc-interactioncontext-interaction_context_output_callback)<br/> | Callback che riceve eventi da un [oggetto del contesto di](interaction-context-portal.md) interazione.<br/>                                     |
+| [Enumerazioni del contesto di interazione](enumerations.md)<br/>                                | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [enumerazioni del contesto](interaction-context-portal.md) di interazione.<br/> |
+| [Funzioni del contesto di interazione](functions.md)<br/>                                      | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [funzioni del contesto di](interaction-context-portal.md) interazione.<br/>    |
+| [Strutture del contesto di interazione](structures.md)<br/>                                    | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le [strutture del contesto di](interaction-context-portal.md) interazione.<br/>   |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

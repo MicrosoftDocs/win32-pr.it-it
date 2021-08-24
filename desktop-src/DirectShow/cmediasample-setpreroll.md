@@ -1,7 +1,7 @@
 ---
-description: "Il metodo SetPreroll specifica se l'esempio è un esempio di preroll. Non è necessario visualizzare un campione di preroll. Questo metodo implementa il metodo IMediaSample:: SetPreroll."
+description: Il metodo SetPreroll specifica se questo esempio è un esempio di preroll. Non dovrebbe essere visualizzato un esempio di preroll. Questo metodo implementa il metodo IMediaSample::SetPreroll.
 ms.assetid: 2887e627-5999-407a-88d3-811c803c9a43
-title: Metodo CMediaSample. SetPreroll (Amfilter. h)
+title: Metodo CMediaSample.SetPreroll (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 594f26ebb738a986c85a14b88f8896b122b58f47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 410031ccf60e830c51615d267d3324167169c5de7960f79dc05b8c9e267463bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832101"
 ---
-# <a name="cmediasamplesetpreroll-method"></a>CMediaSample. SetPreroll, metodo
+# <a name="cmediasamplesetpreroll-method"></a>Metodo CMediaSample.SetPreroll
 
-Il `SetPreroll` metodo specifica se l'esempio è un esempio di preroll. Non è necessario visualizzare un campione di preroll. Questo metodo implementa il metodo [**IMediaSample:: SetPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll) .
+Il `SetPreroll` metodo specifica se questo esempio è un esempio di preroll. Non dovrebbe essere visualizzato un esempio di preroll. Questo metodo implementa il [**metodo IMediaSample::SetPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ HRESULT SetPreroll(
 *bIsPreroll* 
 </dt> <dd>
 
-Valore booleano che specifica se si tratta di un campione di preroll. Se **true**, si tratta di un esempio di preroll.
+Valore booleano che specifica se si tratta di un esempio di preroll. Se **TRUE,** si tratta di un esempio di preroll.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiorna la variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) , che specifica la proprietà preroll.
+Questo metodo aggiorna la [**variabile membro \_ dwFlags CMediaSample::m,**](cmediasample-m-dwflags.md) che specifica la proprietà preroll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo aggiorna la variabile membro [**\_ dwFlags CMediaSample:: m**](cme
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

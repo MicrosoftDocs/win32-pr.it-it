@@ -1,23 +1,23 @@
 ---
-description: L'azione UnpublishComponents gestisce l'unadvertising dei componenti elencati nella tabella PublishComponent.
+description: L'azione UnpublishComponents gestisce l'annullamento della modifica dei componenti elencati nella tabella PublishComponent.
 ms.assetid: 3e50f668-6d08-405e-a5a4-f422041ef0b1
 title: Azione UnpublishComponents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f58d9fff862295bcc06e61e1b35c05cdddb58daa
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: f1feaca4449ffa344eeda828334f879ebc12905406446dd14623e3b9c4474c6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104401918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810261"
 ---
 # <a name="unpublishcomponents-action"></a>Azione UnpublishComponents
 
-L'azione UnpublishComponents gestisce l'unadvertising dei componenti elencati nella tabella PublishComponent. Si tratta di componenti che possono avere errori in altri prodotti. Questa azione consente di rimuovere informazioni sui componenti pubblicati dalla [tabella PublishComponent](publishcomponent-table.md) per cui è attualmente selezionata la funzionalità corrispondente per la disinstallazione.
+L'azione UnpublishComponents gestisce l'annullamento della modifica dei componenti elencati nella tabella PublishComponent. Si tratta di componenti che potrebbero essere in errore da altri prodotti. Questa azione rimuove le informazioni sui componenti pubblicati dalla tabella [PublishComponent](publishcomponent-table.md) per cui la funzionalità corrispondente è attualmente selezionata per la disinstallazione.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
-Non esistono restrizioni di sequenza.
+Non sono presenti restrizioni di sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 

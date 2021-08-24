@@ -1,19 +1,19 @@
 ---
-description: Il \_ metodo Put LocalParticipantTypedInfo imposta le informazioni sul partecipante.
+description: Il metodo put \_ LocalParticipantTypedInfo imposta le informazioni sui partecipanti.
 ms.assetid: c4afd1d3-6fe4-4e5b-a9bf-81b7dffa9914
-title: 'ITLocalParticipant: metodo:p ut_LocalParticipantTypedInfo (Confpriv. h)'
+title: Metodo ITLocalParticipant::p ut_LocalParticipantTypedInfo (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77809a9a3858b6a098fa3ff6a93878cf38518f92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acca83d7ad68ed0974aaa2e7d4fb4755c11939d0711473c406cb09d78451ac41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774901"
 ---
-# <a name="itlocalparticipantput_localparticipanttypedinfo-method"></a>ITLocalParticipant::p UT \_ LocalParticipantTypedInfo metodo
+# <a name="itlocalparticipantput_localparticipanttypedinfo-method"></a>Metodo ITLocalParticipant::p ut \_ LocalParticipantTypedInfo
 
-Il metodo **put \_ LocalParticipantTypedInfo** imposta le informazioni sul partecipante.
+Il **metodo put \_ LocalParticipantTypedInfo** imposta le informazioni sui partecipanti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,27 +31,27 @@ HRESULT put_LocalParticipantTypedInfo(
 
 <dl> <dt>
 
-*InfoType* \[ in\]
+*InfoType* \[ Pollici\]
 </dt> <dd>
 
-[**Partecipante \_ Identificatore \_ info tipizzato**](participant-typed-info.md) del tipo di informazioni richieste.
+[**PARTECIPANTE \_ Identificatore TYPED \_ INFO**](participant-typed-info.md) del tipo di informazioni necessarie.
 
 </dd> <dt>
 
-*ppInfo* \[ in\]
+*ppInfo* \[ Pollici\]
 </dt> <dd>
 
-**BSTR** che contiene il nuovo valore necessario per le informazioni.
+**BSTR** contenente il nuovo valore necessario per le informazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare [SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il parametro *PpInfo* e usare [SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
+L'applicazione deve [usare SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il *parametro ppInfo* e [usare SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ L'applicazione deve usare [SysAllocString](/windows/win32/api/oleauto/nf-oleauto
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 
@@ -73,7 +73,7 @@ L'applicazione deve usare [SysAllocString](/windows/win32/api/oleauto/nf-oleauto
 [**ITLocalParticipant**](itlocalparticipant.md)
 </dt> <dt>
 
-[**\_informazioni digitate del partecipante \_**](participant-typed-info.md)
+[**INFORMAZIONI \_ DIGITATE DAL \_ PARTECIPANTE**](participant-typed-info.md)
 </dt> </dl>
 
  

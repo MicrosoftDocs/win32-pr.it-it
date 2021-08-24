@@ -1,45 +1,45 @@
 ---
-title: Utilizzo di script in una pagina Web visualizzata da Firefox
-description: Utilizzo di script in una pagina Web visualizzata da Firefox
+title: Uso di script in una pagina Web visualizzata da Firefox
+description: Uso di script in una pagina Web visualizzata da Firefox
 ms.assetid: 0f1d21b1-1824-4ba9-9c0e-bd23ba847d9d
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Controllo ActiveX di Windows Media Player, pagine Web
-- Controllo ActiveX Windows Media Player Mobile, pagine Web
-- Controllo ActiveX, pagine Web
-- Controllo ActiveX di Windows Media Player, esempio di scripting
-- Controllo ActiveX Windows Media Player Mobile, esempio di scripting
-- Controllo ActiveX, esempio di scripting
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Dispositivi mobili, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player Controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player ActiveX, pagine Web
+- Windows Media Player Controllo ActiveX per dispositivi mobili, pagine Web
+- ActiveX, pagine Web
+- Windows Media Player ActiveX, esempio di scripting
+- Windows Media Player Controllo ActiveX per dispositivi mobili, esempio di scripting
+- ActiveX, esempio di scripting
 - incorporamento, pagine Web
 - Incorporamento di pagine Web, esempio di scripting
-- Windows Media Player, Firefox
-- Modello a oggetti di Windows Media Player, Firefox
-- modello a oggetti, Firefox
+- Windows Media Player,Firefox
+- Windows Media Player a oggetti, Firefox
+- modello a oggetti,Firefox
 - Windows Media Player Mobile, Firefox
-- Controllo ActiveX di Windows Media Player, Firefox
-- Controllo ActiveX Windows Media Player Mobile, Firefox
-- Controllo ActiveX, Firefox
+- Windows Media Player ActiveX controllo, Firefox
+- Windows Media Player Controllo ActiveX per dispositivi mobili,Firefox
+- ActiveX controllo, Firefox
 - Firefox, esempio di scripting
-- Incorporamento di pagine Web, Firefox
-- esempio di script per l'incorporamento di pagine Web
+- incorporamento di pagine Web,Firefox
+- Esempio di scripting per l'incorporamento di pagine Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8629f87f954d12602999f76483fdd36ab279290
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 450b03f7adefca1a887fb31207f0a3280e1925c9d3e1f1066df370d87f0a7779
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "106299009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762061"
 ---
-# <a name="using-script-in-a-web-page-displayed-by-firefox"></a>Utilizzo di script in una pagina Web visualizzata da Firefox
+# <a name="using-script-in-a-web-page-displayed-by-firefox"></a>Uso di script in una pagina Web visualizzata da Firefox
 
-Script in una pagina Web può usare il modello a oggetti del lettore per controllare il lettore quando l'utente interagisce con la pagina. Ad esempio, l'elemento di INPUT seguente contiene uno script che imposta il volume del lettore.
+Lo script in una pagina Web può usare il modello a oggetti Player per controllare player mentre l'utente interagisce con la pagina. Ad esempio, l'elemento INPUT seguente include uno script che imposta il volume player.
 
 
 ```HTML
@@ -56,21 +56,21 @@ Script in una pagina Web può usare il modello a oggetti del lettore per control
 
 
 
-Molti degli oggetti nel modello a oggetti di Windows Media Player sono supportati da Internet Explorer e dal plug-in Firefox. Alcuni oggetti, tuttavia, non sono supportati dal plug-in di Firefox. La tabella seguente elenca tutti gli oggetti nel modello a oggetti del lettore e Mostra gli oggetti supportati dal plug-in di Firefox.
+Molti degli oggetti nel modello Windows Media Player a oggetti sono supportati da Internet Explorer e dal plug-in Firefox. Tuttavia, esistono alcuni oggetti che non sono supportati dal plug-in Firefox. La tabella seguente elenca tutti gli oggetti nel modello a oggetti di Player e mostra gli oggetti supportati dal plug-in Firefox.
 
 
 
 | Oggetto                                              | Supporto di Firefox |
 |-----------------------------------------------------|-----------------|
 | [Cdrom](cdrom-object.md)                           | no              |
-| [Cdromcollection](cdromcollection-object.md)       | no              |
+| [CdromCollection](cdromcollection-object.md)       | no              |
 | [ClosedCaption](closedcaption-object.md)           | sì             |
 | [Controlli](controls-object.md)                     | no              |
-| [DVD](dvd-object.md)                               | no              |
+| [Dvd](dvd-object.md)                               | no              |
 | [Error (Errore) (Error (Errore)e)](error-object.md)                           | sì             |
 | [ErrorItem](erroritem-object.md)                   | sì             |
 | [Supporti](media-object.md)                           | sì             |
-| [Mediacollection](mediacollection-object.md)       | no              |
+| [MediaCollection](mediacollection-object.md)       | no              |
 | [MetadataPicture](metadatapicture-object.md)       | no              |
 | [MetadataText](metadatatext-object.md)             | no              |
 | [Network](network-object.md)                       | sì             |
@@ -85,26 +85,26 @@ Molti degli oggetti nel modello a oggetti di Windows Media Player sono supportat
 
 
 
- 
+ 
 
-Il plug-in di Firefox supporta l'oggetto **Player** , ma alcune proprietà dell'oggetto **Player** restituiscono **null** in un browser Firefox. Ad esempio, la proprietà [cdromcollection](player-cdromcollection.md) dell'oggetto **Player** restituisce **null** perché il plug-in di Firefox non supporta l'oggetto **CDROM** . Analogamente, le proprietà [DVD](player-dvd.md), [mediacollection](player-mediacollection.md), [playerApplication](player-playerapplication.md)e [PlaylistCollection](player-playlistcollection.md) dell'oggetto **Player** restituiscono **null** in un browser Firefox.
+Il plug-in Firefox supporta **l'oggetto Player,** ma alcune proprietà dell'oggetto **Player** restituiscono **NULL** in un browser Firefox. Ad esempio, la [proprietà cdromCollection](player-cdromcollection.md) dell'oggetto **Player** restituisce **NULL** perché il plug-in Firefox non supporta l'oggetto **Cdrom.** Analogamente, le proprietà [dvd](player-dvd.md), [mediaCollection](player-mediacollection.md), [playerApplication](player-playerapplication.md)e [playlistCollection](player-playlistcollection.md) dell'oggetto **Player** restituiscono **NULL** in un browser Firefox.
 
-La proprietà **Player. pluginVersionInfo** è supportata dal plug-in di Firefox ma non da Internet Explorer. Questa proprietà restituisce la versione del plug-in Firefox.
+La **proprietà Player.pluginVersionInfo** è supportata dal plug-in Firefox, ma non da Internet Explorer. Questa proprietà restituisce la versione del plug-in Firefox.
 
-Il plug-in di Firefox supporta l'oggetto **multimediale** , inclusa la proprietà [getItemInfoByType](media-getiteminfobytype.md) . Tuttavia, in un browser Firefox, la proprietà **getItemInfoByType** non supporta i tipi restituiti **MetadataText** e **MetadataPicture** .
+Il plug-in Firefox supporta **l'oggetto Media,** inclusa la [proprietà getItemInfoByType.](media-getiteminfobytype.md) Tuttavia, in un browser Firefox, la **proprietà getItemInfoByType** non supporta i tipi restituiti **MetadataText** e **MetadataPicture.**
 
-Il plug-in di Firefox supporta l'oggetto [Settings](settings-object.md) , ad eccezione del metodo [semode](settings-setmode.md) e della proprietà [requestMediaAccessRights](settings-requestmediaaccessrights.md) . In un browser Firefox, la proprietà **requestMediaAccessRight** restituisce sempre false.
+Il plug-in Firefox supporta [l'oggetto Impostazioni,](settings-object.md) ad eccezione del [metodo setMode](settings-setmode.md) e della [proprietà requestMediaAccessRights.](settings-requestmediaaccessrights.md) In un browser Firefox la **proprietà requestMediaAccessRight** restituisce sempre false.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Uso del controllo Media Player Windows con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso del controllo Windows Media Player con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

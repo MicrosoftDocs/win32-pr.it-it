@@ -1,7 +1,7 @@
 ---
-description: Il metodo StopStreaming viene chiamato quando il filtro passa allo stato interrotto.
+description: Il metodo StopStreaming viene chiamato quando il filtro passa allo stato arrestato.
 ms.assetid: cfebfed2-4105-4dea-8d47-60d6160ee337
-title: Metodo CTransformFilter. StopStreaming (Transfrm. h)
+title: Metodo CTransformFilter.StopStreaming (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4990b55ad87a4eb754af7101e762ce227a090993
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b56be25e8628e888fd7532e2646e6f555aba022c14552cc96cd3f274e152b53b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812881"
 ---
-# <a name="ctransformfilterstopstreaming-method"></a>CTransformFilter. StopStreaming, metodo
+# <a name="ctransformfilterstopstreaming-method"></a>Metodo CTransformFilter.StopStreaming
 
-Il `StopStreaming` metodo viene chiamato quando il filtro passa allo stato interrotto.
+Il `StopStreaming` metodo viene chiamato quando il filtro passa allo stato arrestato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
@@ -54,8 +54,8 @@ Questo metodo non esegue alcuna operazione nella classe di base, ma la classe de
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -3,18 +3,18 @@ title: Provider di sistema
 description: Abilitare gli eventi del provider di traccia di sistema con EnableTraceEx2.
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 48a93ab94b87a43e0eb8a292320536a04ef43477
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 46c141c6449594b8030ce24bb901b0afede33f3f6e2cefcaa36f4df4bf0dde0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812151"
 ---
 # <a name="system-providers"></a>Provider di sistema
  
 A partire da Windows 10 SDK build 20348, gli eventi del provider di traccia di sistema possono essere abilitati allo stesso modo di altri provider ETW, con [EnableTraceEx2.](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2)  I diversi flag e [maschere di gruppo](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) associati al provider di traccia di sistema sono stati mappati a nuovi provider di traccia, denominati provider di sistema, e parole chiave corrispondenti.  
  
-Analogamente all'abilitazione diretta del provider di traccia di sistema, i provider di sistema possono essere abilitati solo da una sessione con il [EVENT_TRACE_SYSTEM_LOGGER_MODE](/windows/win32/etw/logging-mode-constants) impostato.
+Analogamente all'abilitazione diretta del provider di traccia di sistema, i provider di sistema possono essere abilitati solo da una sessione con [il EVENT_TRACE_SYSTEM_LOGGER_MODE](/windows/win32/etw/logging-mode-constants) impostato.
 
 ## <a name="system-provider-reference"></a>Informazioni di riferimento sul provider di sistema
 
@@ -174,7 +174,7 @@ GUID: SystemMemoryProviderGuid {82958ca9-b6cd-47f8-a3a8-03ae85a4bc24}
 | SYSTEM_MEMORY_KW_VAMAP | PERF_VAMAP, EVENT_TRACE_FLAG_VAMAP |
 
 Note: 
-* L'abilitazione SYSTEM_MEMORY_KW_MEMORY parola chiave abiliterà automaticamente SYSTEM_IO_KW_FILENAME nel provider di I/O di sistema.
+* L'abilitazione SYSTEM_MEMORY_KW_MEMORY parola chiave abilita automaticamente SYSTEM_IO_KW_FILENAME nel provider di I/O di sistema.
 * Gli eventi abilitati dal SYSTEM_MEMORY_KW_POOL supportano un filtro tag pool, per scrivere in modo selettivo gli eventi solo per determinati tag del pool.  Viene configurato come filtro [schematizzato nel](/windows/win32/api/evntprov/ns-evntprov-event_filter_descriptor) provider di memoria di sistema.  Il filtro PoolTag viene costruito come segue:
 
     ```cpp

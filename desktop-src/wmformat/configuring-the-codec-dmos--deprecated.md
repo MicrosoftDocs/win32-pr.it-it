@@ -1,9 +1,9 @@
 ---
-title: Configurazione del codec DMOs
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | Configurazione del codec DMOs
+title: Configurazione degli oggetti DMO codec
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Configurazione degli oggetti DMO codec
 ms.assetid: f4967de1-cb2e-4839-b59a-49e8bdb0e3d9
 keywords:
-- Configurazione del formato codec DMOs Windows Media
+- Configurazione del formato multimediale Windows DMO codec
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a56f3af56a3bacb8971192067c7346c47e88ca6e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f195ac64088d030efb0c35c39b14df714f6d83cc602fb64f5121317c9bdfdff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104401901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809791"
 ---
-# <a name="configuring-the-codec-dmos"></a>Configurazione del codec DMOs
+# <a name="configuring-the-codec-dmos"></a>Configurazione degli oggetti DMO codec
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Converte i gradi in radianti.
 ms.assetid: 450806bd-db2f-47be-ae80-c261088b1bb8
-title: D3DXToRadian (D3dx9math. h)
+title: D3DXToRadian (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: e06184a0d3c654a2c0e82431ff25a339f5682837
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 81f15ca3c117cb3020165bb820d221d416198893b45285931fa6cf3b1f66eea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749651"
 ---
 # <a name="d3dxtoradian"></a>D3DXToRadian
 
@@ -34,7 +34,7 @@ Converte i gradi in radianti.
 
 | Parametro                                                           | Descrizione                                              |
 |---------------------------------------------------------------------|----------------------------------------------------------|
-| <span id="degree"></span><span id="DEGREE"></span>grado<br/> | Valore, in gradi, da convertire in radianti.<br/> |
+| <span id="degree"></span><span id="DEGREE"></span>Grado<br/> | Valore, espresso in gradi, da convertire in radianti.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Converte i gradi in radianti.
 
 ## <a name="return-value"></a>Valore restituito
 
-La macro restituisce il valore Degree in radianti.
+La macro restituisce il valore del grado in radianti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ La macro restituisce il valore Degree in radianti.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ La macro restituisce il valore Degree in radianti.
 [**D3DXToDegree**](d3dxtodegree.md)
 </dt> <dt>
 
-[D3DX \_ pi](other-d3dx-constants.md)
+[D3DX \_ PI](other-d3dx-constants.md)
 </dt> </dl>
 
  

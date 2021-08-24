@@ -1,7 +1,7 @@
 ---
 description: Formatta una stringa di messaggio.
 ms.assetid: e5513b0d-5f93-4bcd-a011-eb4a6fab91e1
-title: Funzione _FormatMessage
+title: _FormatMessage funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: 27cbcfb0d69d0b4dec72834bfc8f69a9f97048ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9faa30fa69268ce3c729ce6f738e9ee0fea9831773bb736559d201bf8d09ccc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833431"
 ---
-# <a name="_formatmessage-function"></a>\_FormatMessage (funzione)
+# <a name="_formatmessage-function"></a>\_Funzione FormatMessage
 
-\[Questa funzione è un wrapper per la funzione **FormatMessage** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **FormatMessage** .\]
+\[Questa funzione è un wrapper sulla **funzione FormatMessage.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **direttamente FormatMessage.**\]
 
 Formatta una stringa di messaggio. Vedere [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage).
 

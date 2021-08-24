@@ -1,7 +1,7 @@
 ---
-description: "Ora di arresto del supporto. Questo valore viene calcolato come offset dall'ora di inizio del supporto, specificato dalla variabile membro CMediaSample:: m \\_ MediaStart."
+description: Ora di arresto del supporto. Questo valore viene calcolato come offset dall'ora di inizio del supporto, specificata dalla variabile membro CMediaSample::m \_ MediaStart.
 ms.assetid: e61f018a-1d76-4f4a-8a76-6cb102cf1d61
-title: 'Membro CMediaSample:: m_MediaEnd (Amfilter. h)'
+title: Membro CMediaSample::m_MediaEnd (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86995919ee072418cc5d768b2679078538e2a980
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0008f9fbdd0efaa8739c97b8e26c9c0bec86d89106c518e0c1512841c56c0435
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832191"
 ---
-# <a name="cmediasamplem_mediaend-member"></a>Membro MediaEnd di CMediaSample:: m \_
+# <a name="cmediasamplem_mediaend-member"></a>Membro MediaEnd CMediaSample::m \_
 
-Ora di arresto del supporto. Questo valore viene calcolato come offset dall'ora di inizio del supporto, specificato dalla variabile membro [**CMediaSample:: m \_ MediaStart**](cmediasample-m-mediastart.md) .
+Ora di arresto del supporto. Questo valore viene calcolato come offset dall'ora di inizio del supporto, specificata dalla variabile membro [**CMediaSample::m \_ MediaStart.**](cmediasample-m-mediastart.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ LONG m_MediaEnd;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

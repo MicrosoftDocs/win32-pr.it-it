@@ -1,33 +1,33 @@
 ---
-description: Specifica se il codificatore ignora gruppi parziali di immagini (GOPs) alla fine del flusso.
+description: Specifica se il codificatore rimuove gruppi parziali di immagini (GOP) alla fine del flusso.
 ms.assetid: 93cf1299-a8ba-4a14-ad4c-09dd931e18fc
-title: Proprietà AVEncCommonStreamEndHandling (codecapis. h)
+title: Proprietà AVEncCommonStreamEndHandling (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d453f1629622b12571064fe6511ec60f42d67b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ccfa6e9eae8e4b554c549ca84553260059e9dbe435df7dcf0c2d52ced16d48a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794651"
 ---
-# <a name="avenccommonstreamendhandling-property"></a>Proprietà AVEncCommonStreamEndHandling
+# <a name="avenccommonstreamendhandling-property"></a>AVEncCommonStreamEndHandling - proprietà
 
-Specifica se il codificatore ignora gruppi parziali di immagini (GOPs) alla fine del flusso.
+Specifica se il codificatore rimuove gruppi parziali di immagini (GOP) alla fine del flusso.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCommonStreamEndHandling**
+**CODECAPI \_ AVEncCommonStreamEndHandling**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncCommonStreamEndHandling**](/windows/win32/api/codecapi/ne-codecapi-eavenccommonstreamendhandling) .
+Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncCommonStreamEndHandling.**](/windows/win32/api/codecapi/ne-codecapi-eavenccommonstreamendhandling)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncCommonStr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncCommonStr
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

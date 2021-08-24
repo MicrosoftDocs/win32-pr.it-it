@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_THREADSTATS. cPageDirtied'
-title: Proprietà JET_THREADSTATS. cPageDirtied (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_THREADSTATS.cPageDirtied'
+title: JET_THREADSTATS.cPageDirtied (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cPageDirtied property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.cPageDirtied
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.cpagedirtied(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4d1f628ce821a6e35c231ccf4b469b5b1c1ff60c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d633ab829c510d6e44e72d6500da422663f9df17b145e23cb7df51b8d3c7523
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719511"
 ---
-# <a name="jet_threadstatscpagedirtied-property"></a>Proprietà JET_THREADSTATS. cPageDirtied
+# <a name="jet_threadstatscpagedirtied-property"></a>JET_THREADSTATS.cPageDirtied
 
-Ottiene il numero totale di pagine di database, senza modifiche non scritte, modificate dal motore di database sul thread corrente.
+Ottiene il numero totale di pagine di database, senza modifiche non scritte, modificate dal motore di database nel thread corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int cPageDirtied { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS struttura](./jet-threadstats-structure2.md)
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo Reset imposta lo stato dell'evento su non segnalato.
+description: Il metodo Reset imposta lo stato dell'evento su non associato.
 ms.assetid: de7f2c33-118a-4531-a9f7-9b43f89e6fc0
-title: Metodo CAMEvent. Reset (Wxutil. h)
+title: Metodo CAMEvent.Reset (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 31fdc564ad50c161f16e7054c6d0ec7d753bd0f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a41af8aebde27d8452453616dabfe0d84f8f5f0681e6257bd29774d9eca91d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794301"
 ---
-# <a name="cameventreset-method"></a>Metodo CAMEvent. Reset
+# <a name="cameventreset-method"></a>Metodo CAMEvent.Reset
 
-Il `Reset` metodo imposta lo stato dell'evento su non segnalato.
+Il `Reset` metodo imposta lo stato dell'evento su non associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

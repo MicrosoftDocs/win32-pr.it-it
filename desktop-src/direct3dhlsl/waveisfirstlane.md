@@ -1,5 +1,5 @@
 ---
-title: WaveIsFirstLane (funzione)
+title: Funzione WaveIsFirstLane
 description: Restituisce true solo per la corsia attiva nell'onda corrente con l'indice più piccolo.
 ms.assetid: 5D90F713-08C7-4BD4-867B-2E7CA3A85E87
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 49e875463d8281ff7e7699694c02d087df1a372f
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: d909d4269db61980325c48b5858d910955512f701fb09adbcb91f5e078fa3b33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104339659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852711"
 ---
-# <a name="waveisfirstlane-function"></a>WaveIsFirstLane (funzione)
+# <a name="waveisfirstlane-function"></a>Funzione WaveIsFirstLane
 
 Restituisce true solo per la corsia attiva nell'onda corrente con l'indice più piccolo.
 
@@ -43,9 +43,9 @@ True solo per la corsia attiva nell'onda corrente con l'indice più piccolo.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può essere usata per identificare le operazioni che devono essere eseguite una sola volta per ogni Wave.
+Questa funzione può essere usata per identificare le operazioni che devono essere eseguite una sola volta per ogni ondata.
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -64,7 +64,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

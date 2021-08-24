@@ -1,5 +1,5 @@
 ---
-title: attributo ms-Exch-Assistant-Name
+title: Attributo ms-Exch-Assistant-Name
 description: Contiene il nome dell'assistente per un account.
 ms.assetid: 8799d5de-2c73-41b3-b707-b6f8bf5edb6a
 ms.tgt_platform: multiple
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb81eceaed3c22c70fc75ae39b7eccb113013f7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8638597e234100e6775618472788761af341bc1138c3fed613173038a26dbc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763141"
 ---
-# <a name="ms-exch-assistant-name-attribute"></a>attributo ms-Exch-Assistant-Name
+# <a name="ms-exch-assistant-name-attribute"></a>Attributo ms-Exch-Assistant-Name
 
 Contiene il nome dell'assistente per un account.
 
@@ -30,12 +30,12 @@ Contiene il nome dell'assistente per un account.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-Exch-Assistant-Name                      |
-| LDAP-Display-Name | msExchAssistantName                         |
+| Ldap-Display-Name | msExchAssistantName                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.444                      |
-| System-ID-GUID    | a8df7394-c5ea-11d1-bbcb-0080c76670c0        |
+| System-Id-Guid    | a8df7394-c5ea-11d1-bbcb-0080c76670c0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Contiene il nome dell'assistente per un account.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contiene il nome dell'assistente per un account.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contiene il nome dell'assistente per un account.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contiene il nome dell'assistente per un account.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contiene il nome dell'assistente per un account.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 

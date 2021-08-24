@@ -1,7 +1,7 @@
 ---
-description: Ottiene un elenco di vertici influenzati da un dato osso e un elenco della quantità di influenza che l'osso ha su ogni vertice.
+description: Ottenere un elenco di vertici influenzati da una determinata leta e un elenco della quantità di influenza che ha la testa su ogni vertice.
 ms.assetid: d1dea694-874d-4f21-87a8-f6b013617544
-title: 'Metodo ID3DX10SkinInfo:: GetBoneInfluences (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::GetBoneInfluences (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9aead6b1dd381011a922c5bfbc1874976a78417c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 38d6901abd871a2b65f4d6816ad4d4b7a0d2effb5ccbd3f4ccee20bc0b8d5ea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752911"
 ---
-# <a name="id3dx10skininfogetboneinfluences-method"></a>Metodo ID3DX10SkinInfo:: GetBoneInfluences
+# <a name="id3dx10skininfogetboneinfluences-method"></a>Metodo ID3DX10SkinInfo::GetBoneInfluences
 
-Ottiene un elenco di vertici influenzati da un dato osso e un elenco della quantità di influenza che l'osso ha su ogni vertice.
+Ottenere un elenco di vertici influenzati da una determinata leta e un elenco della quantità di influenza che ha la testa su ogni vertice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT GetBoneInfluences(
 
 <dl> <dt>
 
-*BoneIndex* \[ in\]
+*IndexIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice che specifica un osso esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Indice che specifica un oggetto esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo::GetNumBones**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Offset dalla parte superiore dell'elenco dell'osso dei vertici influenzati. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo:: GetBoneInfluenceCount**](id3dx10skininfo-getboneinfluencecount.md).
+Offset dalla parte superiore dell'elenco dei vertici influenzati. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo::GetBoneInfluenceCount**](id3dx10skininfo-getboneinfluencecount.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di indici e pesi da recuperare. Deve essere compreso tra 0 e il valore restituito da ID3DX10SkinInfo:: GetBoneInfluenceCount.
+Numero di indici e pesi da recuperare. Deve essere compreso tra 0 e il valore restituito da ID3DX10SkinInfo::GetBoneInfluenceCount.
 
 </dd> <dt>
 
-*pDestIndices* \[ in uscita\]
+*pDestIndices* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Elenco di indici nel buffer dei vertici, ciascuno dei quali rappresenta un vertice influenzato dall'osso. Questi valori corrispondono ai valori di pDestWeights, in modo che pDestIndices \[ \] corrisponda a pDestWeights \[ i \] .
+Elenco di indici nel buffer dei vertici, ognuno dei quali rappresenta un vertice influenzato dal vertice. Questi valori corrispondono ai valori in pDestWeights, in modo che pDestIndices i corrisponda \[ \] a pDestWeights \[ i \] .
 
 </dd> <dt>
 
-*pDestWeights* \[ in uscita\]
+*pDestWeights* \[ in, out\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Elenco della quantità di influenza dell'osso in ogni vertice. Questi valori corrispondono ai valori di pDestIndices, in modo che pDestWeights \[ \] corrisponda a pDestIndices \[ i \] . f
+Elenco della quantità di influenza che ha la testa su ogni vertice. Questi valori corrispondono ai valori in pDestIndices, in modo che pDestWeights i corrisponda \[ \] a pDestIndices \[ i \] .f
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Elenco della quantità di influenza dell'osso in ogni vertice. Questi valori cor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ INVALIDARG o e \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ INVALIDARG o E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

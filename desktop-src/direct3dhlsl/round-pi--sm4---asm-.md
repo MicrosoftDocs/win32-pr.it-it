@@ -4,20 +4,20 @@ description: Arrotondamento a virgola mobile a float integrale. | round_pi (sm4 
 ms.assetid: AA4E4C2E-A4B0-4892-8660-1EF57767F4C4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61282078b3639681eed756e2899d06744f0369e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d26356648576cc10256f16cd1e57be469d2d8c2d87690542058f7eba4a547996
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853511"
 ---
-# <a name="round_pi-sm4---asm"></a>pi \_ greco arrotondato (sm4 - asm)
+# <a name="round_pi-sm4---asm"></a>round \_ pi (sm4 - asm)
 
 Arrotondamento a virgola mobile a float integrale.
 
 
 
-| round \_ pi \[ \_ sat \] dest \[ \] .mask, \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
+| round \_ pi \[ \_ sat \] dest \[ .mask , \] \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |------------------------------------------------------------------|
 
 
@@ -37,11 +37,11 @@ Arrotondamento a virgola mobile a float integrale.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un round a virgola mobile per componente dei valori in *src0*, scrivendo valori a virgola mobile integrali *in dest*.
+Questa istruzione esegue un round a virgola mobile a livello di componente dei valori in *src0*, scrivendo valori a virgola mobile integrali *in dest*.
 
-**pi \_ greco arrotondato** arrotonda verso +infinito, comunemente noto come ceil().
+**round \_ pi arrotonda** verso +infinito, comunemente noto come ceil().
 
-La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri.
+La tabella seguente mostra i risultati ottenuti quando si esegue l'istruzione con varie classi di numeri.
 
 F indica un numero finito-reale.
 

@@ -4,12 +4,12 @@ description: Arrotondamento a virgola mobile a float integrale. | round_ni (sm4 
 ms.assetid: 6DEF818B-AFF9-4B44-950E-320EACE1CAC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2487715bbb2596653b1ca985a2e0390457feecbf
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f8465651f4f8e3d80f963bbfe746947d768111812052224240b45bdc28e9d037
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853631"
 ---
 # <a name="round_ni-sm4---asm"></a>round \_ ni (sm4 - asm)
 
@@ -37,9 +37,9 @@ Arrotondamento a virgola mobile a float integrale.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un round a virgola mobile per componente dei valori in *src0*, scrivendo valori a virgola mobile integrali *in dest*. **round \_ ni** arrotonda verso -infinity, comunemente noto come floor().
+Questa istruzione esegue un round a virgola mobile a livello di componente dei valori in *src0*, scrivendo valori a virgola mobile integrali *in dest*. **round \_ ni** arrotonda verso -infinity, comunemente noto come floor().
 
-La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri.
+La tabella seguente mostra i risultati ottenuti quando si esegue l'istruzione con varie classi di numeri.
 
 F indica un numero finito-reale.
 

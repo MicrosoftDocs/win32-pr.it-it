@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Update_ApprovedUpdates01_01
-description: La \_ classe MDM Update \_ ApprovedUpdates01 \_ 01 viene usata per gestire e controllare l'implementazione degli aggiornamenti approvati.
+title: MDM_Update_ApprovedUpdates01_01 classe
+description: La classe MDM \_ Update ApprovedUpdates01 01 viene usata per gestire e controllare \_ l'implementazione \_ degli aggiornamenti approvati.
 ms.assetid: 3903dbc1-c745-4e9a-a7f7-455338b77563
 keywords:
-- Classe MDM_Update_ApprovedUpdates01_01
-- Classe MDM_Update_ApprovedUpdates01_01, descritta
+- MDM_Update_ApprovedUpdates01_01 classe
+- MDM_Update_ApprovedUpdates01_01 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6e12700b04f6e48fdf746cb27953da5849169d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe73cf90346b6287c609b1b5f4d905041672c1c94727d24cd53c761aed4a52de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795961"
 ---
-# <a name="mdm_update_approvedupdates01_01-class"></a>\_Classe MDM Update \_ ApprovedUpdates01 \_ 01
+# <a name="mdm_update_approvedupdates01_01-class"></a>Classe \_ \_ ApprovedUpdates01 \_ 01 dell'aggiornamento MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ Update \_ ApprovedUpdates01 \_ 01** viene usata per gestire e controllare l'implementazione degli aggiornamenti approvati.
+La **classe MDM Update \_ \_ ApprovedUpdates01 \_ 01** viene usata per gestire e controllare l'implementazione degli aggiornamenti approvati.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,23 +46,23 @@ class MDM_Update_ApprovedUpdates01_01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ Update \_ ApprovedUpdates01 \_ 01** presenta questi tipi di membri:
+La **classe MDM Update \_ \_ ApprovedUpdates01 \_ 01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ Update \_ ApprovedUpdates01 \_ 01** presenta queste proprietà.
+La **classe MDM Update \_ \_ ApprovedUpdates01 \_ 01** ha queste proprietà.
 
 <dl> <dt>
 
 [ApprovedTime](/windows/client-management/mdm/update-csp#approvedupdates-approved-update-guid-approvedtime)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,7 +70,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -83,10 +83,10 @@ Identifica il nome del nodo padre. Per questa classe, la stringa è il GUID dell
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,7 +95,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Update/ApprovedUpdates"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Update/ApprovedUpdates"
 
 </dd> </dl>
 
@@ -105,11 +105,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

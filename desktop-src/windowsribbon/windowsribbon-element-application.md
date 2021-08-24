@@ -1,9 +1,9 @@
 ---
 title: Elemento Application
-description: Rappresenta l'elemento di livello principale nella specifica di markup del Framework della barra multifunzione di Windows.
+description: Rappresenta l'elemento di primo livello nella specifica Windows markup del framework della barra multifunzione.
 ms.assetid: 05396d8b-fbd1-40bb-8d0f-8ac11506e7db
 keywords:
-- Barra multifunzione Windows elemento applicazione
+- Elemento Application Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9b116879a918ca0437c7f2bdd201ef4ffd6d3c61
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 4055e271ecf3313596b73aa36a5cbea37250416d9b517fb4512b89fbc203293a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103734714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810811"
 ---
 # <a name="application-element"></a>Elemento Application
 
-Rappresenta l'elemento di livello principale nella specifica di markup del Framework della barra multifunzione di Windows.
+Rappresenta l'elemento di primo livello nella specifica Windows markup del framework della barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -49,8 +49,8 @@ Rappresenta l'elemento di livello principale nella specifica di markup del Frame
 
 | Elemento                                                                               | Descrizione                                    |
 |---------------------------------------------------------------------------------------|------------------------------------------------|
-| [**Application. Commands**](windowsribbon-element-application-commands.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>  |
-| [**Application. views**](windowsribbon-element-application-views.md)<br/>       | Deve verificarsi esattamente una volta<br/> <br/> |
+| [**Application.Commands**](windowsribbon-element-application-commands.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>  |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/>       | Deve verificarsi esattamente una volta<br/> <br/> |
 
 
 
@@ -62,16 +62,16 @@ Non ci sono elementi padre.
 
 Obbligatorio.
 
-Deve verificarsi esattamente una volta come contenitore per tutto il markup della barra multifunzione.
+Deve essere eseguito esattamente una volta come contenitore per tutto il markup della barra multifunzione.
 
-Gli elementi figlio dell'elemento dell' **applicazione** devono essere presenti nell'ordine specificato:
+Gli elementi figlio **dell'elemento Application** devono essere presenti nell'ordine specificato:
 
-1.  [**Application. Commands**](windowsribbon-element-application-commands.md)
-2.  [**Application. views**](windowsribbon-element-application-views.md)
+1.  [**Application.Commands**](windowsribbon-element-application-commands.md)
+2.  [**Application.Views**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una dichiarazione di elemento **dell'applicazione** .
+Nell'esempio seguente viene illustrata una **dichiarazione di** elemento Application.
 
 
 ```XML
