@@ -1,21 +1,21 @@
 ---
-description: 'Visualizzazione in anteprima di un progetto: codice di esempio'
+description: 'Anteprima di un Project: Codice di esempio'
 ms.assetid: 8a4af82a-5611-4c53-8de8-04eaefd51df9
-title: 'Visualizzazione in anteprima di un progetto: codice di esempio'
+title: 'Anteprima di un Project: Codice di esempio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5527fd93d0f05d5388739cc936e4a4dd203e18
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d98a47970a333ed27e249bddc81ba6fb4fb6e2c706fdfa2dda7c29f886e74022
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583571"
 ---
-# <a name="previewing-a-project-example-code"></a>Visualizzazione in anteprima di un progetto: codice di esempio
+# <a name="previewing-a-project-example-code"></a>Anteprima di un Project: Codice di esempio
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Nell'esempio di codice seguente viene illustrato come caricare e visualizzare in anteprima un progetto di [servizi di modifica DirectShow](directshow-editing-services.md) . Per maggiore chiarezza, viene omesso il controllo degli errori.
+Nell'esempio di codice seguente viene illustrato come caricare e visualizzare in anteprima [un DirectShow di servizi di modifica.](directshow-editing-services.md) Il controllo degli errori viene omesso per maggiore chiarezza.
 
 
 ```C++
@@ -88,7 +88,7 @@ void main( void )
 
 <dl> <dt>
 
-[Caricamento e visualizzazione in anteprima di un progetto](loading-and-previewing-a-project.md)
+[Caricamento e anteprima di un Project](loading-and-previewing-a-project.md)
 </dt> </dl>
 
  

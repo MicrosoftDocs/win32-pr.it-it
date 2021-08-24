@@ -1,6 +1,6 @@
 ---
-title: Modifica dispositivo puntatore
-description: Valori che possono essere passati nel parametro wParam del messaggio di WM_POINTERDEVICECHANGE.
+title: Modifica del dispositivo puntatore
+description: Valori che possono essere passati nel parametro wParam del WM_POINTERDEVICECHANGE messaggio.
 ms.assetid: B95191D7-820B-445A-A3A4-811F9F1A8C4F
 topic_type:
 - apiref
@@ -23,16 +23,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5e4b85c17adcd2db7c0f2f672e27ca467b346b0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67dc120a4541b56638c2947c24534c9f42543533b4b1a97ace72297aaf48341c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602551"
 ---
-# <a name="pointer-device-change"></a>Modifica dispositivo puntatore
+# <a name="pointer-device-change"></a>Modifica del dispositivo puntatore
 
-Valori che possono essere passati nel parametro *wParam* del messaggio di [**WM_POINTERDEVICECHANGE**](wm-pointerdevicechange.md) .
+Valori che possono essere passati nel *parametro wParam* del [**WM_POINTERDEVICECHANGE**](wm-pointerdevicechange.md) messaggio.
 
 <dl> <dt>
 
@@ -44,7 +44,7 @@ Valori che possono essere passati nel parametro *wParam* del messaggio di [**WM_
 
 
 
-Viene collegato un nuovo dispositivo.
+È collegato un nuovo dispositivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -187,7 +187,7 @@ Origine della visualizzazione.
 
 
 
-Proporzioni di visualizzazione.
+Proporzioni dello schermo.
 
 
 </dt> </dl> </dd> </dl>
@@ -198,9 +198,9 @@ Proporzioni di visualizzazione.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

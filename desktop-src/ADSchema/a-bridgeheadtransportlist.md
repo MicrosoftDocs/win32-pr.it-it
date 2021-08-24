@@ -1,10 +1,10 @@
 ---
-title: Testa di ponte-attributo transport-List
+title: Attributo Bridgehead-Transport-List
 description: Trasporti per i quali il server è una testa di ponte.
 ms.assetid: ef024170-eee2-458d-8cd2-637892644991
 ms.tgt_platform: multiple
 keywords:
-- Testa di ponte-schema AD dell'attributo dell'elenco di trasporto
+- Schema AD dell'attributo Bridgehead-Transport-List
 - Schema AD dell'attributo bridgeheadTransportList
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 083c987f9ed40c23db4141d772c07ec73763d985
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a9ea77577c6628f4cc02d81c4cb217994a196750deeb5631d46d8fd54472baa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442751"
 ---
-# <a name="bridgehead-transport-list-attribute"></a>Testa di ponte-attributo transport-List
+# <a name="bridgehead-transport-list-attribute"></a>Attributo Bridgehead-Transport-List
 
 Trasporti per i quali il server è una testa di ponte.
 
@@ -29,13 +29,13 @@ Trasporti per i quali il server è una testa di ponte.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Testa di ponte-trasporto-elenco               |
-| LDAP-Display-Name | bridgeheadTransportList                 |
+| CN                | Bridgehead-Transport-List               |
+| Ldap-Display-Name | bridgeheadTransportList                 |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
-| Frequenza di aggiornamento  | Ogni volta che viene configurato un sito.               |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Frequenza di aggiornamento  | Ogni volta che si configura un sito.               |
 | Attribute-Id      | 1.2.840.113556.1.4.819                  |
-| System-ID-GUID    | d50c2cda-8951-11d1-aebc-0000f80367c1    |
+| System-Id-Guid    | d50c2cda-8951-11d1-aebc-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Trasporti per i quali il server è una testa di ponte.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Trasporti per i quali il server è una testa di ponte.
 | ID collegamento                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| Is-Single-Valued       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Server**](c-server.md)<br/> |
 
 
 

@@ -1,39 +1,39 @@
 ---
 title: Come creare un controllo ComboBoxEx
-description: In questo argomento viene illustrato come creare un controllo ComboBoxEx.
+description: Questo argomento illustra come creare un controllo ComboBoxEx.
 ms.assetid: E3D577AF-3290-431E-AA6C-1E9A9ED6448C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73989124982cb563fc008d7f3c543388cca685a5
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d051c668e95667948d11a8ec86ed41236f84ff78325911e008c65ad787b958fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576131"
 ---
 # <a name="how-to-create-a-comboboxex-control"></a>Come creare un controllo ComboBoxEx
 
-In questo argomento viene illustrato come creare un controllo ComboBoxEx.
+Questo argomento illustra come creare un controllo ComboBoxEx.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per creare un controllo ComboBoxEx, chiamare la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) usando [**WC \_ ComboBoxEx**](common-control-window-classes.md) come classe della finestra. Per prima cosa, è necessario registrare la classe della finestra chiamando la funzione [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) , specificando il \_ bit delle classi USEREX ICC \_ nella struttura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) associata.
+Per creare un controllo ComboBoxEx, chiama la [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) usando [**WC \_ COMBOBOXEX**](common-control-window-classes.md) come classe finestra. È prima necessario registrare la classe della finestra chiamando la [**funzione InitCommonControlsEx,**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) specificando il bit ICC USEREX CLASSES nella struttura \_ \_ [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) di cui si è accodato.
 
 ## <a name="complete-example"></a>Esempio completo
 
-La funzione definita dall'applicazione seguente crea un controllo ComboBoxEx con lo stile a [**\_ discesa CBS**](combo-box-styles.md) nella finestra principale.
+La funzione definita dall'applicazione seguente crea un controllo ComboBoxEx con lo stile [**DROPDOWN di CBS \_**](combo-box-styles.md) nella finestra principale.
 
 
 ```C++
@@ -78,10 +78,10 @@ HWND WINAPI CreateComboEx(void)
 [Informazioni sui controlli ComboBoxEx](comboboxex-controls.md)
 </dt> <dt>
 
-[Riferimento al controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
+[Informazioni di riferimento sul controllo ComboBoxEx](bumper-comboboxex-comboboxex-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
+[Uso dei controlli ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
 </dt> <dt>
 
 [ComboBoxEx](comboboxex-control-reference.md)

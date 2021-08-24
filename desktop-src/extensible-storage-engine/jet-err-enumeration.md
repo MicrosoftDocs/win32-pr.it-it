@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_err'
-title: Enumerazione JET_err
+description: Altre informazioni sull'enumerazione JET_err'
+title: JET_err enumerazione
 TOCTitle: JET_err enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_err(v=EXCHG.10)
@@ -832,19 +832,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eccc99baa6fe791f3817e7e88326e3cee9b451b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f726de52cc640c47bedc15f7204b421dabee5f0c91a9200f1f5490b224ae38d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475051"
 ---
-# <a name="jet_err-enumeration"></a>Enumerazione JET_err
+# <a name="jet_err-enumeration"></a>JET_err enumerazione
 
 Codici di errore ESENT.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -878,32 +878,32 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>RfsFailure</td>
-<td>Errore del simulatore errori risorse</td>
+<td>Errore del simulatore di errore delle risorse</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RfsNotArmed</td>
-<td>Simulatore errori risorse non inizializzato</td>
+<td>Simulatore di errore delle risorse non inizializzato</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>FileClose</td>
-<td>Non è stato possibile chiudere il file</td>
+<td>Fileclose</td>
+<td>Impossibile chiudere il file</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfThreads</td>
-<td>Non è stato possibile avviare il thread</td>
+<td>Impossibile avviare il thread</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TooManyIO</td>
-<td>Sistema occupato a causa di un numero eccessivo di IOs</td>
+<td>Sistema occupato a causa di un numero troppo grande di I/O</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TaskDropped</td>
-<td>Non è stato possibile eseguire un'attività asincrona richiesta</td>
+<td>Impossibile eseguire un'attività asincrona richiesta</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -913,17 +913,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DisabledFunctionality</td>
-<td>Si sta eseguendo My, che non include tutte le funzionalità compilate in. Questa funzionalità è supportata solo in una versione completa di ESE.</td>
+<td>Si esegue MinESE, che non dispone di tutte le funzionalità compilate in . Questa funzionalità è supportata solo in una versione completa di ESE.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UnloadableOSFunctionality</td>
-<td>Non è stato possibile trovare e caricare/collegare la funzionalità del sistema operativo desiderata.</td>
+<td>Impossibile trovare e caricare/collegare la funzionalità del sistema operativo desiderata.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseBufferDependenciesCorrupted</td>
-<td>Le dipendenze del buffer sono impostate in modo errato. Ripristino non riuscito</td>
+<td>Le dipendenze del buffer sono impostate in modo non corretto. Ripristino non riuscito</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -933,12 +933,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>PageBoundary</td>
-<td>Limite pagina raggiunto</td>
+<td>Limite di pagina raggiunto</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Delimitatore</td>
-<td>Limite chiave raggiunto</td>
+<td>KeyBoundary</td>
+<td>Raggiunto il limite della chiave</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -948,7 +948,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>BadBookmark</td>
-<td>Segnalibro senza indirizzo corrispondente nel database</td>
+<td>Il segnalibro non ha un indirizzo corrispondente nel database</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -963,7 +963,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>SPAvailExtCacheOutOfSync</td>
-<td>La cache AvailExt non corrisponde a albero b</td>
+<td>La cache di AvailExt non corrisponde al btree</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -983,47 +983,47 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DbTimeCorrupted</td>
-<td>Dbtime nella pagina corrente è maggiore del database globale dbtime</td>
+<td>Dbtime nella pagina corrente è maggiore di dbtime del database globale</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Troncato</td>
-<td>chiave troncata in corrispondenza dell'indice che non consente il troncamento della chiave</td>
+<td>KeyTruncated</td>
+<td>chiave troncata in base all'indice che non consente il troncamento della chiave</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseLeakInSpace</td>
-<td>Alcune pagine del database sono diventate irraggiungibili anche dall'albero del profitto, solo una deframmentazione non in linea può restituire lo spazio perduto.</td>
+<td>Alcune pagine di database sono diventate irraggiungibili anche dall'albero di disponibilità, solo una deframmentazione offline può restituire lo spazio perso.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadEmptyPage</td>
-<td>Database danneggiato. Ricerca di una pagina vuota imprevista.</td>
+<td>Database danneggiato. Ricerca di una pagina vuota in modo imprevisto.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>KeyTooBig</td>
-<td>Chiave troppo grande</td>
+<td>La chiave è troppo grande</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CannotSeparateIntrinsicLV</td>
-<td>tentativo non valido di separare un valore LV che deve essere intrinseco</td>
+<td>Tentativo non valido di separare una VL che deve essere intrinseca</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SeparatedLongValue</td>
-<td>Operazione non supportata sul valore Long separato</td>
+<td>Operazione non supportata in valori long separati</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MustBeSeparateLongValue</td>
-<td>Può solo preleggere le colonne con valore Long che possono essere separate, ad esempio non vincolate alle dimensioni in modo che siano colonne fisse o variabili</td>
+<td>Può preletturare solo colonne con valori lunghi che possono essere separate, ad esempio non sono vincolate alle dimensioni in modo che siano colonne fisse o variabili</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidPreread</td>
-<td>Impossibile preleggere i valori Long quando l'indice corrente è secondario</td>
+<td>Non è possibile eseguire la prelettura dei valori long quando l'indice corrente è secondario</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1038,12 +1038,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>NoBackupDirectory</td>
-<td>Non sono state specificate directory di backup</td>
+<td>Nessuna directory di backup specificata</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BackupDirectoryNotEmpty</td>
-<td>La directory di backup non è vuoto</td>
+<td>La directory di backup non è emtpy</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1068,7 +1068,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>LogDisabledDueToRecoveryFailure</td>
-<td>Tentativo di registrare un elemento dopo il recupero non riuscito</td>
+<td>Provare a registrare qualcosa dopo l'esito negativo del ripristino</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1083,27 +1083,27 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>BadLogVersion</td>
-<td>La versione del file di registro non è compatibile con la versione Jet</td>
+<td>La versione del file di log non è compatibile con la versione jet</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>InvalidLogSequence</td>
-<td>Il timestamp nel log successivo non corrisponde a quello previsto</td>
+<td>Il timestamp nel log successivo non corrisponde al previsto</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LoggingDisabled</td>
-<td>Log non attivo</td>
+<td>Il log non è attivo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogBufferTooSmall</td>
-<td>Il buffer del log è troppo piccolo per il ripristino</td>
+<td>Il buffer di log è troppo piccolo per il ripristino</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogSequenceEnd</td>
-<td>Superato il numero massimo di file di log</td>
+<td>È stato superato il numero massimo di file di log</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1118,37 +1118,37 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>BackupNotAllowedYet</td>
-<td>Non è possibile eseguire il backup ora</td>
+<td>Impossibile eseguire il backup ora</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DeleteBackupFileFail</td>
-<td>Non è stato possibile eliminare il file di backup</td>
+<td>Impossibile eliminare il file di backup</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MakeBackupDirectoryFail</td>
-<td>Non è stato possibile creare la directory temporanea del backup</td>
+<td>Impossibile creare la directory temporanea di backup</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidBackup</td>
-<td>Non è possibile eseguire il backup incrementale quando è abilitata la registrazione circolare</td>
+<td>Impossibile eseguire il backup incrementale quando è abilitata la registrazione circolare</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RecoveredWithErrors</td>
-<td>Ripristino con errori</td>
+<td>Ripristinato con errori</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MissingLogFile</td>
-<td>Manca il file di log corrente</td>
+<td>File di log corrente mancante</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogDiskFull</td>
-<td>Disco di log completo</td>
+<td>Disco di log pieno</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1163,27 +1163,27 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>BadCheckpointSignature</td>
-<td>Firma non valida per un file del checkpoint</td>
+<td>Firma non valida per un file di checkpoint</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CheckpointCorrupt</td>
-<td>Il file del checkpoint non è stato trovato o è danneggiato</td>
+<td>File del checkpoint non trovato o danneggiato</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MissingPatchPage</td>
-<td>Impossibile trovare la pagina file della patch durante il ripristino</td>
+<td>Pagina del file di patch non trovata durante il ripristino</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadPatchPage</td>
-<td>La pagina del file di patch non è valida</td>
+<td>Pagina del file di patch non valida</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RedoAbruptEnded</td>
-<td>Ripristino improvviso interrotto a causa di un errore improvviso durante la lettura dei log dal file di log</td>
+<td>L'operazione di ripetitura è stata terminata improvvisamente a causa di un errore improvviso durante la lettura dei log dal file di log</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1193,42 +1193,42 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>PatchFileMissing</td>
-<td>Il ripristino hardware ha rilevato che il file di patch non è presente nel set di backup</td>
+<td>È stato rilevato che il file di patch non è presente nel set di backup</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseLogSetMismatch</td>
-<td>Il database non appartiene al set di file di log corrente</td>
+<td>Il database non appartiene al set corrente di file di log</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseStreamingFileMismatch</td>
-<td>Il database e il file di streaming non corrispondono</td>
+<td>Il database e il file di streaming non corrispondono tra loro</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogFileSizeMismatch</td>
-<td>dimensioni effettive del file di log non corrispondenti JET_paramLogFileSize</td>
+<td>Le dimensioni effettive del file di log non corrispondono JET_paramLogFileSize</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CheckpointFileNotFound</td>
-<td>Impossibile trovare il file del checkpoint</td>
+<td>Impossibile individuare il file del checkpoint</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RequiredLogFilesMissing</td>
-<td>Mancano i file di log necessari per il ripristino.</td>
+<td>I file di log necessari per il ripristino sono mancanti.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SoftRecoveryOnBackupDatabase</td>
-<td>Il ripristino software è destinato a un database di backup. Usare invece il ripristino</td>
+<td>Il ripristino soft è destinato a un database di backup. È consigliabile usare invece il ripristino</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogFileSizeMismatchDatabasesConsistent</td>
-<td>i database sono stati ripristinati, ma le dimensioni del file di log utilizzate durante il ripristino non corrispondono JET_paramLogFileSize</td>
+<td>I database sono stati ripristinati, ma le dimensioni del file di log usate durante il ripristino non corrispondono JET_paramLogFileSize</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1238,22 +1238,22 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>LogSectorSizeMismatchDatabasesConsistent</td>
-<td>i database sono stati ripristinati, ma le dimensioni del settore del file di log (usate durante il ripristino) non corrispondono alle dimensioni del settore del volume corrente</td>
+<td>I database sono stati ripristinati, ma le dimensioni del settore del file di log (usate durante il ripristino) non corrispondono alle dimensioni del settore del volume corrente</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogSequenceEndDatabasesConsistent</td>
-<td>i database sono stati ripristinati, ma sono state usate tutte le generazioni di log possibili nella sequenza corrente. eliminare tutti i file di log e il file del checkpoint ed eseguire il backup dei database prima di continuare</td>
+<td>i database sono stati ripristinati, ma vengono usate tutte le possibili generazioni di log nella sequenza corrente. eliminare tutti i file di log e il file di checkpoint ed eseguire il backup dei database prima di continuare</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>StreamingDataNotLogged</td>
-<td>Tentativo non valido di riprodurre un'operazione di streaming di file in cui i dati non sono stati registrati. Probabilmente causato da un tentativo di eseguire il rollforward con la registrazione circolare abilitata</td>
+<td>Tentativo non valido di riprodurre un'operazione di file di streaming in cui i dati non sono stati registrati. Probabilmente causato da un tentativo di roll forward con la registrazione circolare abilitata</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseDirtyShutdown</td>
-<td>Il database non è stato arrestato in modo corretto. Il ripristino deve essere eseguito prima per completare correttamente le operazioni di database per l'arresto precedente.</td>
+<td>Il database non è stato arrestato in modo pulito. È prima necessario eseguire il ripristino per completare correttamente le operazioni del database per l'arresto precedente.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1263,17 +1263,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DatabasePatchFileMismatch</td>
-<td>Il file di patch non è stato generato da questo backup</td>
+<td>Il file di patch non viene generato da questo backup</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EndingRestoreLogTooLow</td>
-<td>Il numero di log iniziale è troppo basso per il ripristino</td>
+<td>Numero di log iniziale troppo basso per il ripristino</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>StartingRestoreLogTooHigh</td>
-<td>Il numero di log iniziale troppo elevato per il ripristino</td>
+<td>Numero di log iniziale troppo alto per il ripristino</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1288,7 +1288,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MissingRestoreLogFiles</td>
-<td>Mancano alcuni file di log di ripristino</td>
+<td>Alcuni file di log di ripristino sono mancanti</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1298,107 +1298,107 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>BadBackupDatabaseSize</td>
-<td>Le dimensioni del database di backup non sono in 4K</td>
+<td>Le dimensioni del database di backup non sono in 4k</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseAlreadyUpgraded</td>
-<td>Tentativo di aggiornare un database già esistente</td>
+<td>Tentativo di aggiornamento di un database già in corso</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseIncompleteUpgrade</td>
-<td>Si è tentato di utilizzare un database che è stato solo parzialmente convertito nel formato corrente. è necessario eseguire il ripristino da un backup</td>
+<td>Tentativo di usare un database convertito solo parzialmente nel formato corrente. È necessario eseguire il ripristino dal backup</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MissingCurrentLogFiles</td>
-<td>Alcuni file di registro correnti risultano mancanti per il ripristino continuo</td>
+<td>Alcuni file di log correnti sono mancanti per il ripristino continuo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DbTimeTooOld</td>
-<td>dbtime su una pagina di dimensioni minori di dbtimeBefore nel record</td>
+<td>dbtime nella pagina più piccola di dbtimeBefore nel record</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DbTimeTooNew</td>
-<td>dbtime nella pagina prima della dbtimeBefore nel record</td>
+<td>dbtime nella pagina precedente a dbtimeBefore nel record</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MissingFileToBackup</td>
-<td>Alcuni file di log o di patch risultano mancanti durante il backup</td>
+<td>Alcuni file di log o patch non sono presenti durante il backup</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogTornWriteDuringHardRestore</td>
-<td>è stata rilevata una scrittura errata in un set di backup durante il ripristino rigido</td>
+<td>È stata rilevata la scrittura in errore in un set di backup durante il ripristino a livello di disco</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogTornWriteDuringHardRecovery</td>
-<td>è stata rilevata una scrittura errata durante il ripristino rigido (il log non fa parte di un set di backup)</td>
+<td>È stata rilevata la scrittura in errore durante il ripristino a livello di disco (il log non fa parte di un set di backup)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogCorruptDuringHardRestore</td>
-<td>il danneggiamento è stato rilevato in un set di backup durante il ripristino rigido</td>
+<td>È stato rilevato un danneggiamento in un set di backup durante il ripristino a livello di disco</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogCorruptDuringHardRecovery</td>
-<td>è stato rilevato un danneggiamento durante il ripristino rigido (il log non faceva parte di un set di backup)</td>
+<td>È stato rilevato un danneggiamento durante il ripristino a livello di disco (il log non fa parte di un set di backup)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MustDisableLoggingForDbUpgrade</td>
-<td>Non è possibile abilitare la registrazione durante il tentativo di aggiornamento del database</td>
+<td>Impossibile avere la registrazione abilitata durante il tentativo di aggiornamento del database</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadRestoreTargetInstance</td>
-<td>Il TargetInstance specificato per il ripristino non è stato trovato o i file di log non corrispondono</td>
+<td>L'istanza di destinazione specificata per il ripristino non è stata trovata o i file di log non corrispondono</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecoveredWithoutUndo</td>
-<td>Il ripristino software ha rieseguito correttamente tutte le operazioni, ma la fase di rollback del ripristino è stata ignorata</td>
+<td>Il ripristino a riesecuzione di tutte le operazioni è stato eseguito correttamente, ma la fase di annullamento del ripristino è stata ignorata</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabasesNotFromSameSnapshot</td>
-<td>I database da ripristinare non appartengono allo stesso backup della copia shadow</td>
+<td>I database da ripristinare non derivano dallo stesso backup della copia shadow</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SoftRecoveryOnSnapshot</td>
-<td>Ripristino soft su un database da un set di backup di copie shadow</td>
+<td>Ripristino automatico in un database da un set di backup della copia shadow</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CommittedLogFilesMissing</td>
-<td>Uno o più log di cui è stato eseguito il commit nel database sono mancanti. Questi file di log sono necessari per mantenere la semantica ACID durevole, ma non devono mantenere la coerenza se il JET_bitReplayIgnoreLostLogs bit viene specificato durante il ripristino.</td>
+<td>Uno o più log di cui è stato eseguito il commit in questo database non sono presenti. Questi file di log sono necessari per mantenere la semantica ACID durevole, ma non per mantenere la coerenza se il bit JET_bitReplayIgnoreLostLogs viene specificato durante il ripristino.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SectorSizeNotSupported</td>
-<td>Le dimensioni del settore fisico restituite dal sottosistema disco non sono supportate da ESE per un tipo di file specifico.</td>
+<td>Le dimensioni del settore fisico segnalate dal sottosistema del disco non sono supportate da ESE per un tipo di file specifico.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RecoveredWithoutUndoDatabasesConsistent</td>
-<td>Il ripristino software ha rieseguito correttamente tutte le operazioni e ha intenzione di ignorare la fase di rollback del ripristino, ma la fase di rollback non era obbligatoria</td>
+<td>Il ripristino a riesecuzione automatica ha rieseguito correttamente tutte le operazioni e ha lo scopo di ignorare la fase di annullamento del ripristino, ma la fase di annullamento non era necessaria</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CommittedLogFileCorrupt</td>
-<td>È stato rilevato che uno o più log sono danneggiati durante il ripristino. Questi file di log sono necessari per mantenere la semantica ACID durevole, ma non devono mantenere la coerenza se il JET_bitIgnoreLostLogs bit e JET_paramDeleteOutOfRangeLogs vengono specificati durante il ripristino.</td>
+<td>Uno o più log sono stati danneggiati durante il ripristino. Questi file di log sono necessari per mantenere la semantica ACID durevole, ma non sono necessari per mantenere la coerenza se il bit JET_bitIgnoreLostLogs e il JET_paramDeleteOutOfRangeLogs vengono specificati durante il ripristino.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UnicodeTranslationBufferTooSmall</td>
-<td>Buffer della traduzione Unicode troppo piccolo</td>
+<td>Buffer di conversione Unicode troppo piccolo</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1408,7 +1408,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>UnicodeNormalizationNotSupported</td>
-<td>Il sistema operativo non fornisce supporto per la normalizzazione Unicode (e non è stato specificato alcun callback di normalizzazione)</td>
+<td>Il sistema operativo non fornisce il supporto per la normalizzazione Unicode (e non è stato specificato alcun callback di normalizzazione)</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1418,7 +1418,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ExistingLogFileHasBadSignature</td>
-<td>Firma del file di registro esistente non valida</td>
+<td>La firma del file di log esistente non è valida</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1438,17 +1438,17 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>CheckpointDepthTooDeep</td>
-<td>troppe generazioni in attesa tra il checkpoint e la generazione corrente</td>
+<td>troppe generazioni in sospeso tra checkpoint e generazione corrente</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RestoreOfNonBackupDatabase</td>
-<td>tentativo di ripristino rigido in un database che non era un database di backup</td>
+<td>tentativo di recupero a hard su un database che non era un database di backup</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogFileNotCopied</td>
-<td>tentativo di troncamento del log ma non di tutti i log necessari copiati</td>
+<td>tentativo di troncamento del log, ma non tutti i log necessari sono stati copiati</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1488,7 +1488,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DatabaseFileReadOnly</td>
-<td>Tentativo di alconnessione di un file di database di sola lettura per operazioni di lettura/scrittura</td>
+<td>Si è tentato di collegare un file di database di sola lettura per operazioni di lettura/scrittura</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1508,12 +1508,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>OutOfCursors</td>
-<td>Cursori di tabella</td>
+<td>Cursori fuori tabella</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfBuffers</td>
-<td>Buffer di pagine fuori database</td>
+<td>Buffer di pagina del database non in uscita</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1538,22 +1538,22 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>PageNotInitialized</td>
-<td>Pagina database vuota</td>
+<td>Pagina del database vuota</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfFileHandles</td>
-<td>Handle di file esauriti</td>
+<td>Handle di file non in uscita</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DiskReadVerificationFailure</td>
-<td>Il sistema operativo ha restituito ERROR_CRC dall'i/o file</td>
+<td>Il sistema operativo ha restituito ERROR_CRC dall'I/O del file</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DiskIO</td>
-<td>Errore IO disco</td>
+<td>Errore di I/O del disco</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1568,12 +1568,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidLogDirectory</td>
-<td>Directory log non valida</td>
+<td>Directory di log non valida</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecordTooBig</td>
-<td>Record di dimensioni maggiori di quelle massime</td>
+<td>Record più grande delle dimensioni massime</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1587,38 +1587,38 @@ public enum JET_err
 </tr>
 <tr class="even">
 <td></td>
-<td>NotInitialized</td>
+<td>Non inizializzato</td>
 <td>Motore di database non inizializzato</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>AlreadyInitialized</td>
+<td>Già inizializzato</td>
 <td>Motore di database già inizializzato</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>InitInProgress</td>
-<td>Inizializzazione del motore di database</td>
+<td>È in corso l'inizializzazione del motore di database</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FileAccessDenied</td>
-<td>Impossibile accedere al file. il file è bloccato o in uso</td>
+<td>Impossibile accedere al file, il file è bloccato o in uso</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>QueryNotSupported</td>
-<td>Supporto query non disponibile</td>
+<td>Supporto delle query non disponibile</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SQLLinkNotSupported</td>
-<td>Supporto del collegamento SQL non disponibile</td>
+<td>SQL Supporto dei collegamenti non disponibile</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BufferTooSmall</td>
-<td>Il buffer è troppo piccolo</td>
+<td>Buffer troppo piccolo</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1633,7 +1633,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidFilename</td>
-<td>Il nome file non è valido</td>
+<td>Nome file non valido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1648,7 +1648,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidBufferSize</td>
-<td>Il buffer dei dati non corrisponde alle dimensioni della colonna</td>
+<td>Il buffer di dati non corrisponde alle dimensioni della colonna</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1658,27 +1658,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>IndexInUse</td>
-<td>Indice in uso</td>
+<td>L'indice è in uso</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LinkNotSupported</td>
-<td>Supporto del collegamento non disponibile</td>
+<td>Supporto dei collegamenti non disponibile</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NullKeyDisallowed</td>
-<td>Chiavi null non consentite in un indice</td>
+<td>Le chiavi Null non sono consentite nell'indice</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>NotInTransaction</td>
-<td>L'operazione deve essere eseguita all'interno di una transazione</td>
+<td>L'operazione deve essere all'interno di una transazione</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MustRollback</td>
-<td>È necessario eseguire il rollback della transazione a causa di un errore di aggiornamento non versione</td>
+<td>È necessario eseguire il rollback della transazione a causa di un errore di aggiornamento senza versione</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1703,17 +1703,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidLCMapStringFlags</td>
-<td>Flag non validi per LCMapString ()</td>
+<td>Flag non validi per LCMapString()</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>VersionStoreEntryTooBig</td>
-<td>Tentativo di creare una voce di archivio versioni maggiore di un bucket di versione</td>
+<td>Si è tentato di creare una voce dell'archivio versioni (RCE) più grande di un bucket di versioni</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>VersionStoreOutOfMemoryAndCleanupTimedOut</td>
-<td>Memoria insufficiente per l'archivio versioni. Impossibile completare il tentativo di pulizia.</td>
+<td>Memoria insufficiente nell'archivio versioni (e il tentativo di pulizia non è riuscito)</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1723,7 +1723,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>CurrencyStackOutOfMemory</td>
-<td>Non usato: lCSRPerfFUCB * g_lCursorsMax superato (solo XJET)</td>
+<td>UNUSED: lCSRPerfFUCB * g_lCursorsMax superato (solo XNTASSI)</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1743,37 +1743,37 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>OutOfObjectIDs</td>
-<td>Da albero b ObjectId (eseguire la deframmentazione non in linea per recuperare ObjectID liberati/non usati)</td>
+<td>Fuori da ObjectID btree (eseguire la deframmentazione offline per recuperare gli ObjectId liberati/inutilizzati)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfLongValueIDs</td>
-<td>Il valore massimo del contatore ID valore Long è stato raggiunto. (eseguire la deframmentazione non in linea per recuperare il LongValueIDs disponibile/non usato)</td>
+<td>Il contatore id valore lungo ha raggiunto il valore massimo. (eseguire la deframmentazione offline per recuperare longValueID liberi/inutilizzati)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfAutoincrementValues</td>
-<td>Il contatore di incremento automatico ha raggiunto il valore massimo (la deframmentazione non in linea non sarà in grado di recuperare i valori di incremento automatico liberi/non usati).</td>
+<td>Il contatore di incremento automatico ha raggiunto il valore massimo (la deframmentazione offline NON sarà in grado di recuperare i valori di incremento automatico disponibili/inutilizzati).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfDbtimeValues</td>
-<td>Il contatore dbtime ha raggiunto il valore massimo (eseguire la deframmentazione non in linea per recuperare i valori dbtime liberi/non usati)</td>
+<td>Il contatore Dbtime ha raggiunto il valore massimo (eseguire la deframmentazione offline per recuperare i valori Dbtime disponibili/non usati)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfSequentialIndexValues</td>
-<td>Il contatore di indice sequenziale ha raggiunto il valore massimo (eseguire la deframmentazione non in linea per recuperare i valori SequentialIndex disponibili/inutilizzati)</td>
+<td>Il contatore degli indici sequenziali ha raggiunto il valore massimo (eseguire la deframmentazione offline per recuperare i valori Free/Unused SequentialIndex)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RunningInOneInstanceMode</td>
-<td>Chiamata a istanze diverse con modalità a istanza singola abilitata</td>
+<td>Chiamata a istanze multipla con la modalità a istanza singola abilitata</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RunningInMultiInstanceMode</td>
-<td>Chiamata a istanza singola con modalità a istanza singola abilitata</td>
+<td>Chiamata a istanza singola con la modalità a istanza multipla abilitata</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1783,17 +1783,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>SystemPathInUse</td>
-<td>Percorso di sistema già utilizzato da un'altra istanza di database</td>
+<td>Percorso di sistema già usato da un'altra istanza del database</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogFilePathInUse</td>
-<td>Percorso del file di log già utilizzato da un'altra istanza di database</td>
+<td>Percorso del file di log già usato da un'altra istanza del database</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TempPathInUse</td>
-<td>Percorso temporaneo già utilizzato da un'altra istanza di database</td>
+<td>Percorso temporaneo già usato da un'altra istanza del database</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1808,27 +1808,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DatabaseUnavailable</td>
-<td>Impossibile utilizzare il database perché si è verificato un errore irreversibile</td>
+<td>Impossibile utilizzare questo database perché si è verificato un errore irreversibile</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InstanceUnavailableDueToFatalLogDiskFull</td>
-<td>Non è possibile usare questa istanza perché si è verificato un errore di log-disco-completo durante l'esecuzione di un'operazione (probabile rollback delle transazioni) che non è in grado di tollerare l'errore</td>
+<td>Questa istanza non può essere usata perché si è verificato un errore log-disk-full durante l'esecuzione di un'operazione (probabile rollback della transazione) che non è riuscita a tollerare l'errore</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfSessions</td>
-<td>Sessioni inattive</td>
+<td>Sessioni non in corso</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>WriteConflict</td>
-<td>Blocco scrittura non riuscito a causa di un blocco di scrittura in attesa</td>
+<td>Blocco di scrittura non riuscito a causa di un blocco di scrittura in sospeso</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TransTooDeep</td>
-<td>Transazioni troppo profondamente nidificate</td>
+<td>Transazioni annidate troppo in profondità</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1838,7 +1838,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>WriteConflictPrimaryIndex</td>
-<td>È stato eseguito un tentativo di aggiornamento su un indice primario</td>
+<td>Tentativo di aggiornamento sull'indice primario di cui non è stato eseguito ilcommitted</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1848,17 +1848,17 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>RollbackRequired</td>
-<td>È necessario eseguire il rollback della transazione corrente. non è possibile eseguire il commit o iniziare una nuova transazione</td>
+<td>È necessario eseguire il rollback della transazione corrente: non è possibile eseguirne il commit o avviarne una nuova</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Transreadonly</td>
-<td>Transazione di sola lettura durante il tentativo di modificare il database</td>
+<td>TransReadOnly</td>
+<td>Transazione di sola lettura che ha tentato di modificare il database</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SessionWriteConflict</td>
-<td>Tentativo di sostituzione dello stesso record da parte di due cursori diffrerent nella stessa sessione</td>
+<td>Provare a sostituire lo stesso record con due cursori diffrent nella stessa sessione</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1868,7 +1868,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>CannotMaterializeForwardOnlySort</td>
-<td>Non è stato possibile creare la tabella temporanea a causa di parametri che sono in conflitto con JET_bitTTForwardOnly</td>
+<td>Impossibile creare la tabella temporanea a causa di parametri in conflitto con JET_bitTTForwardOnly</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1883,52 +1883,52 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DirtyShutdown</td>
-<td>L'istanza è stata arrestata correttamente, ma tutti i database collegati sono rimasti in uno stato dirty per richiesta tramite JET_bitTermDirty</td>
+<td>L'istanza è stata arrestata correttamente, ma tutti i database collegati sono stati lasciati in uno stato dirty tramite richiesta tramite JET_bitTermDirty</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ReadPgnoVerifyFailure</td>
-<td>La pagina del database letta dal disco presenta il numero di pagina errato.</td>
+<td>Il numero di pagina della pagina del database letto dal disco è errato.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ReadLostFlushVerifyFailure</td>
-<td>La lettura della pagina del database dal disco presenta una scrittura precedente non rappresentata nella pagina.</td>
+<td>La pagina del database letta dal disco ha una scrittura precedente non rappresentata nella pagina.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FileSystemCorruption</td>
-<td>Operazione del file System non riuscita con un errore che indica che il file system è danneggiato.</td>
+<td>L'operazione del file system non è riuscita con un errore che file system è danneggiato.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecoveryVerifyFailure</td>
-<td>Una o più pagine del database lette dal disco durante il ripristino non corrispondono allo stato previsto.</td>
+<td>Una o più pagine di database lette dal disco durante il ripristino non corrispondono allo stato previsto.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FilteredMoveNotSupported</td>
-<td>Tentativo di fornire un filtro a JetSetCursorFilter () in uno scenario non supportato.</td>
+<td>Tentativo di fornire un filtro a JetSetCursorFilter() in uno scenario non supportato.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MustCommitDistributedTransactionToLevel0</td>
-<td>Tentativo di PrepareToCommit di una transazione distribuita a un livello diverso da zero</td>
+<td>Tentativo di prepareToCommit di una transazione distribuita a un livello diverso da zero</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DistributedTransactionAlreadyPreparedToCommit</td>
-<td>Si è tentato di eseguire un'operazione di scrittura dopo che una transazione distribuita ha chiamato PrepareToCommit</td>
+<td>È stata tentata un'operazione di scrittura dopo che una transazione distribuita ha chiamato PrepareToCommit</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>NotInDistributedTransaction</td>
-<td>Tentativo di PrepareToCommit di una transazione non distribuita</td>
+<td>Tentativo di prepareToCommit di una transazione non distribuita</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DistributedTransactionNotYetPreparedToCommit</td>
-<td>Si è tentato di eseguire il commit di una transazione distribuita, ma PrepareToCommit non è ancora stato chiamato</td>
+<td>Tentativo di eseguire il commit di una transazione distribuita, ma prepareToCommit non è stato ancora chiamato</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1938,12 +1938,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DTCMissingCallback</td>
-<td>Si è tentato di avviare una transazione distribuita, ma non è stato specificato alcun callback per il coordinamento DTC durante l'inizializzazione</td>
+<td>Tentativo di avviare una transazione distribuita, ma non è stato specificato alcun callback per il coordinamento DTC all'inizializzazione</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DTCMissingCallbackOnRecovery</td>
-<td>Tentativo di recupero di una transazione distribuita, ma non è stato specificato alcun callback per il coordinamento DTC durante l'inizializzazione</td>
+<td>Tentativo di ripristino di una transazione distribuita, ma non è stato specificato alcun callback per il coordinamento DTC all'inizializzazione</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1968,7 +1968,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DatabaseInvalidName</td>
-<td>Nome database non valido</td>
+<td>Nome di database non valido</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2018,22 +2018,22 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TooManyInstances</td>
-<td>Impossibile avviare altre istanze di database</td>
+<td>Impossibile avviare altre istanze del database</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseSharingViolation</td>
-<td>Un'istanza di database diversa utilizza questo database</td>
+<td>Questo database viene utilizzato da un'altra istanza di database</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>AttachedDatabaseMismatch</td>
-<td>È stato rilevato un allegato del database in attesa all'inizio o alla fine del ripristino, ma il database è mancante o non corrisponde alle informazioni sugli allegati</td>
+<td>È stato rilevato un allegato di database in sospeso all'inizio o alla fine del ripristino, ma il database è mancante o non corrisponde alle informazioni sull'allegato</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseInvalidPath</td>
-<td>Il percorso specificato per il file di database non è valido</td>
+<td>Il percorso specificato del file di database non è valido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2043,17 +2043,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>ForceDetachNotAllowed</td>
-<td>Scollegamento forzato consentito solo dopo il normale errore di scollegamento</td>
+<td>Forza scollegamento consentito solo dopo l'errore di disconnessione normale</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CatalogCorrupted</td>
-<td>Danneggiamento rilevato nel catalogo</td>
+<td>Rilevato danneggiamento nel catalogo</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>PartiallyAttachedDB</td>
-<td>Il database è parzialmente collegato. Non è possibile completare l'operazione di connessione</td>
+<td>Il database è parzialmente collegato. Impossibile completare l'operazione di collegamento</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2068,27 +2068,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidCreateDbVersion</td>
-<td>il ripristino ha tentato di riprodurre la creazione di un database, ma il database è stato originariamente creato con una versione incompatibile (probabilmente meno recente) del motore di database</td>
+<td>il ripristino ha tentato di riprodurre la creazione di un database, ma il database è stato originariamente creato con una versione incompatibile (probabilmente precedente) del motore di database</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseIncompleteIncrementalReseed</td>
-<td>Non è possibile collegare il database perché è attualmente in fase di ricompilazione come parte di un diseeding incrementale.</td>
+<td>Impossibile collegare il database perché è in corso la ricompilazione come parte di un reseed incrementale.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseInvalidIncrementalReseed</td>
-<td>Il database non è uno stato valido per eseguire un RESEED incrementale.</td>
+<td>Il database non è uno stato valido per eseguire un reseed incrementale.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseFailedIncrementalReseed</td>
-<td>Non è possibile completare il reseeding incrementale eseguito nel database specificato a causa di un errore irreversibile. Per recuperare il database, è necessario un RESEED completo.</td>
+<td>Impossibile completare il reseed incrementale eseguito nel database specificato a causa di un errore irreversibile. Per ripristinare il database è necessario un reseed completo.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NoAttachmentsFailedIncrementalReseed</td>
-<td>Non è possibile completare il reseeding incrementale eseguito nel database specificato perché il log minimo richiesto non contiene informazioni sugli allegati. Per recuperare il database, è necessario un RESEED completo.</td>
+<td>Impossibile completare il reseed incrementale eseguito nel database specificato perché il log minimo richiesto non contiene informazioni sull'allegato. Per ripristinare il database è necessario un reseed completo.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2103,7 +2103,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>TableInUse</td>
-<td>La tabella è in uso, non è possibile bloccarla</td>
+<td>La tabella è in uso, non può essere bloccata</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2113,7 +2113,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DensityInvalid</td>
-<td>Densità di file/indici non valida</td>
+<td>Densità di file/indici non valido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2128,7 +2128,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TooManyOpenTables</td>
-<td>Non è possibile aprire altre tabelle (la pulizia è già stata tentata)</td>
+<td>Impossibile aprire altre tabelle (pulizia già tentata)</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2138,7 +2138,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TooManyOpenTablesAndCleanupTimedOut</td>
-<td>Non è possibile aprire altre tabelle. il tentativo di pulizia non è stato completato</td>
+<td>Impossibile aprire altre tabelle (non è stato possibile completare il tentativo di pulizia)</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2148,12 +2148,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidObject</td>
-<td>Oggetto non valido per l'operazione</td>
+<td>L'oggetto non è valido per l'operazione</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CannotDeleteTempTable</td>
-<td>Usare la tabella temporanea anziché DeleteTable per eliminare la tabella temporanea</td>
+<td>Usare CloseTable anziché DeleteTable per eliminare la tabella temporanea</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2168,7 +2168,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ExclusiveTableLockRequired</td>
-<td>Deve avere un blocco esclusivo per la tabella.</td>
+<td>Deve avere un blocco esclusivo sulla tabella.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2178,12 +2178,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>FixedInheritedDDL</td>
-<td>In una tabella derivata, le operazioni DDL non sono consentite sulla parte ereditata di DDL</td>
+<td>In una tabella derivata le operazioni DDL non sono consentite nella parte ereditata di DDL</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CannotNestDDL</td>
-<td>La nidificazione di DDL gerarchici non è attualmente supportata.</td>
+<td>L'annidamento del linguaggio DDL gerarchico non è attualmente supportato.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2193,7 +2193,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidSettings</td>
-<td>I parametri di sistema sono stati impostati in modo errato</td>
+<td>I parametri di sistema sono stati impostati in modo non corretto</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2203,12 +2203,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>CannotAddFixedVarColumnToDerivedTable</td>
-<td>La tabella template è stata creata con NoFixedVarColumnsInDerivedTables</td>
+<td>La tabella modello è stata creata con NoFixedVarColumnsInDerivedTables</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IndexCantBuild</td>
-<td>Compilazione indice non riuscita</td>
+<td>Compilazione dell'indice non riuscita</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2218,7 +2218,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>IndexDuplicate</td>
-<td>Indice già definito</td>
+<td>L'indice è già definito</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2238,32 +2238,32 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidCreateIndex</td>
-<td>Descrizione della creazione dell'indice non valida</td>
+<td>Descrizione dell'indice di creazione non valida</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TooManyOpenIndexes</td>
-<td>Blocchi di descrizione indici indici</td>
+<td>Blocchi di descrizione dell'indice non disponibili</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MultiValuedIndexViolation</td>
-<td>Chiavi di indice inter-record non univoche generate per un indice multivalore</td>
+<td>Chiavi di indice inter record non univoche generate per un indice multivalore</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>IndexBuildCorrupted</td>
-<td>Non è stato possibile compilare un indice secondario che riflette correttamente l'indice primario</td>
+<td>Impossibile creare un indice secondario che rifletta correttamente l'indice primario</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>PrimaryIndexCorrupted</td>
-<td>L'indice primario è danneggiato. Il database deve essere deframmentato o la tabella è stata eliminata.</td>
+<td>L'indice primario è danneggiato. Il database deve essere deframmentato o la tabella eliminata.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SecondaryIndexCorrupted</td>
-<td>L'indice secondario è danneggiato. È necessario deframmentare il database oppure eliminare l'indice interessato. Se l'indice danneggiato è su testo Unicode, è probabile che si verifichi una modifica dell'ordinamento.</td>
+<td>L'indice secondario è danneggiato. Il database deve essere deframmentato o l'indice interessato deve essere eliminato. Se l'indice danneggiato è su testo Unicode, è probabile che si sia verificata una modifica dell'ordinamento.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2273,37 +2273,37 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>IndexTuplesSecondaryIndexOnly</td>
-<td>l'indice tupla può trovarsi solo in un indice secondario</td>
+<td>L'indice di tupla può essere solo in un indice secondario</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IndexTuplesTooManyColumns</td>
-<td>nell'indice è possibile che l'indice tupla includa solo undici colonne</td>
+<td>L'indice di tupla può avere solo 11 colonne nell'indice</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>IndexTuplesNonUniqueOnly</td>
-<td>l'indice tupla deve essere un indice non univoco</td>
+<td>L'indice di tupla deve essere un indice non univoco</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IndexTuplesTextBinaryColumnsOnly</td>
-<td>l'indice tupla deve trovarsi in una colonna di tipo text/Binary</td>
+<td>L'indice di tupla deve essere in una colonna di tipo testo/binario</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>IndexTuplesVarSegMacNotAllowed</td>
-<td>l'indice Tuple non consente l'impostazione di cbVarSegMac</td>
+<td>L'indice di tupla non consente l'impostazione di cbVarSegMac</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IndexTuplesInvalidLimits</td>
-<td>lunghezza della tupla min/max non valida o numero massimo di caratteri da indicizzare specificati</td>
+<td>lunghezza della tupla min/max non valida o numero massimo di caratteri per l'indice specificato</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>IndexTuplesCannotRetrieveFromIndex</td>
-<td>Impossibile chiamare RetrieveColumn () con RetrieveFromIndex su un indice di tupla</td>
+<td>impossibile chiamare RetrieveColumn() con RetrieveFromIndex in un indice di tupla</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2313,17 +2313,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>ColumnLong</td>
-<td>Il valore della colonna è Long</td>
+<td>Il valore della colonna è long</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ColumnNoChunk</td>
-<td>Nessun blocco di questo tipo in un valore Long</td>
+<td>Nessun blocco di questo tipo nel valore long</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnDoesNotFit</td>
-<td>Il campo non rientrerà nel record</td>
+<td>Il campo non rientra nel record</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2333,12 +2333,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>ColumnIndexed</td>
-<td>Colonna indicizzata, non è possibile eliminare</td>
+<td>Colonna indicizzata, impossibile eliminare</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ColumnTooBig</td>
-<td>La lunghezza del campo è superiore al valore massimo</td>
+<td>La lunghezza del campo è maggiore del valore massimo</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2353,17 +2353,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>MultiValuedColumnMustBeTagged</td>
-<td>Si è tentato di creare una colonna multivalore, ma la colonna non è stata contrassegnata</td>
+<td>Tentativo di creare una colonna multivalore, ma la colonna non è stata contrassegnata</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ColumnRedundant</td>
-<td>Seconda colonna di incremento automatico o versione</td>
+<td>Seconda colonna dell'incenerimento automatico o della versione</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidColumnType</td>
-<td>Tipo di dati colonna non valido</td>
+<td>Tipo di dati della colonna non valido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2373,17 +2373,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>NoCurrentIndex</td>
-<td>L/o un indice corrente non è valido</td>
+<td>Indice corrente w/o non valido</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>KeyIsMade</td>
-<td>La chiave è stata completata</td>
+<td>La chiave è completamente</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BadColumnId</td>
-<td>ID colonna errato</td>
+<td>ID colonna non corretto</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2393,12 +2393,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>ColumnInRelationship</td>
-<td>Impossibile eliminare, la colonna fa parte della relazione</td>
+<td>Impossibile eliminare, la colonna partecipa alla relazione</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CannotBeTagged</td>
-<td>Impossibile contrassegnare AutoIncrement e Version</td>
+<td>Non è possibile contrassegnare AutoIncrement e Version</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2408,17 +2408,17 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MultiValuedDuplicate</td>
-<td>Rilevato duplicato in una colonna univoca multivalore</td>
+<td>Rilevato duplicato in una colonna multivalore univoca</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LVCorrupted</td>
-<td>Danneggiamento rilevato nell'albero con valori Long</td>
+<td>Si è verificato un danneggiamento nell'albero a valori lunghi</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MultiValuedDuplicateAfterTruncation</td>
-<td>Duplicato rilevato in una colonna univoca multivalore dopo la normalizzazione dei dati e la normalizzazione dei dati troncati prima del confronto</td>
+<td>Rilevato duplicato in una colonna multivalore univoca dopo la normalizzazione dei dati e la normalizzazione ha troncato i dati prima del confronto</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2428,32 +2428,32 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidPlaceholderColumn</td>
-<td>Si è tentato di convertire la colonna in un segnaposto di indice primario, ma la colonna non soddisfa i criteri necessari</td>
+<td>Tentativo di conversione della colonna in un segnaposto di indice primario, ma la colonna non soddisfa i criteri necessari</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnCannotBeCompressed</td>
-<td>Solo le colonne JET_coltypLongText e JET_coltypLongBinary possono essere compresse</td>
+<td>Solo JET_coltypLongText e JET_coltypLongBinary possono essere compresse</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RecordNotFound</td>
-<td>Chiave non trovata</td>
+<td>La chiave non è stata trovata</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecordNoCopy</td>
-<td>Nessun buffer funzionante</td>
+<td>Nessun buffer di lavoro</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NoCurrentRecord</td>
-<td>Valuta non presente in un record</td>
+<td>Valuta non in un record</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecordPrimaryChanged</td>
-<td>Non è possibile modificare la chiave primaria</td>
+<td>La chiave primaria potrebbe non cambiare</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2463,7 +2463,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>AlreadyPrepared</td>
-<td>Tentativo di aggiornare il record quando è già in corso l'aggiornamento del record</td>
+<td>Tentativo di aggiornamento del record quando è già in corso l'aggiornamento dei record</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2483,17 +2483,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>LanguageNotSupported</td>
-<td>L'installazione di Windows non supporta la lingua</td>
+<td>Windows installazione non supporta la lingua</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>DecompressionFailed</td>
-<td>Errore interno: non è stato possibile decomprimere i dati</td>
+<td>Decompressione non inattiva</td>
+<td>Errore interno: impossibile decompressire i dati</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UpdateMustVersion</td>
-<td>Nessun aggiornamento della versione solo per le tabelle di cui non è stato eseguito</td>
+<td>Nessun aggiornamento della versione solo per le tabelle di cui non è stato eseguito ilcommitted</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2503,12 +2503,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidOnSort</td>
-<td>Operazione non valida nell'ordinamento</td>
+<td>Operazione non valida per l'ordinamento</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TempFileOpenError</td>
-<td>Non è stato possibile aprire il file temporaneo</td>
+<td>Impossibile aprire il file temporaneo</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2518,11 +2518,11 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DiskFull</td>
-<td>Spazio su disco insufficiente</td>
+<td>Non è rimasto spazio su disco</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>PermissionDenied</td>
+<td>Autorizzazione negata</td>
 <td>Autorizzazione negata</td>
 </tr>
 <tr class="even">
@@ -2558,27 +2558,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TooManySplits</td>
-<td>Suddivisione infinita</td>
+<td>Divisione infinita</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SessionSharingViolation</td>
-<td>Più thread utilizzano la stessa sessione</td>
+<td>Più thread usano la stessa sessione</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EntryPointNotFound</td>
-<td>Non è stato possibile trovare un punto di ingresso in una DLL richiesta</td>
+<td>Impossibile trovare un punto di ingresso in una DLL richiesta</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SessionContextAlreadySet</td>
-<td>Per la sessione specificata è già impostato un contesto di sessione</td>
+<td>La sessione specificata ha già un contesto di sessione impostato</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SessionContextNotSetByThisThread</td>
-<td>Si è tentato di reimpostare il contesto della sessione, ma il thread corrente non originariamente l'impostazione del contesto della sessione</td>
+<td>Tentativo di reimpostazione del contesto di sessione, ma il thread corrente non ha impostato il contesto di sessione</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2603,12 +2603,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DatabaseAlreadyRunningMaintenance</td>
-<td>L'operazione non è stata completata perché il database sta già eseguendo la manutenzione nel database specificato</td>
+<td>L'operazione non è stata completata correttamente perché il database sta già eseguendo la manutenzione nel database specificato</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CallbackFailed</td>
-<td>Callback non riuscito</td>
+<td>Un callback non è riuscito</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2618,7 +2618,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>SpaceHintsInvalid</td>
-<td>Un elemento della struttura degli hint di spazio JET non è corretto o non è attivabile.</td>
+<td>Un elemento della struttura degli hint per lo spazio JET non era corretto o gestibile.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2752,7 +2752,7 @@ public enum JET_err
 </tr>
 <tr class="odd">
 <td></td>
-<td>SLVFileStale</td>
+<td>SLVFilestale</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -2813,7 +2813,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>OSSnapshotInvalidSequence</td>
-<td>API copia shadow del sistema operativo utilizzata in una sequenza non valida</td>
+<td>API copia shadow del sistema operativo usata in una sequenza non valida</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2828,67 +2828,67 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>OSSnapshotInvalidSnapId</td>
-<td>JET_OSSNAPID non valido</td>
+<td>non JET_OSSNAPID</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TooManyTestInjections</td>
-<td>Hit test interno limite attacco</td>
+<td>Raggiunto limite di test injection interno</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TestInjectionNotSupported</td>
-<td>Injection di test non supportato</td>
+<td>Test injection non supportato</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidLogDataSequence</td>
-<td>Il modo in cui i dati di log forniti sono fuori sequenza con lo stato corrente dell'istanza</td>
+<td>Informazioni su come i dati di log forniti non sono in sequenza con lo stato corrente dell'istanza</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LSCallbackNotSpecified</td>
-<td>Si è provato a usare l'archiviazione locale senza una funzione di callback specificata</td>
+<td>Tentativo di usare l'Archiviazione locale senza che sia stata specificata una funzione di callback</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LSAlreadySet</td>
-<td>Si è tentato di impostare l'archiviazione locale per un oggetto per cui è già stato impostato</td>
+<td>Tentativo di impostare l'Archiviazione locale per un oggetto già impostato</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LSNotSet</td>
-<td>Tentativo di recuperare l'archiviazione locale da un oggetto che non è stato impostato</td>
+<td>Tentativo di recuperare i Archiviazione locali da un oggetto che non è stato impostato</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>FileIOSparse</td>
-<td>un I/O è stato emesso in una posizione di tipo sparse</td>
+<td>FileIoSparse</td>
+<td>È stato eseguito un I/O in un percorso di tipo sparse</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FileIOBeyondEOF</td>
-<td>una lettura è stata rilasciata in una posizione successiva alla EOF (le Scritture espanderanno il file)</td>
+<td>è stata emessa una lettura in un percorso diverso da EOF (le scritture espandono il file)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FileIOAbort</td>
-<td>indica al chiamante del JET_ABORTRETRYFAILCALLBACK di interrompere l'i/O specificato.</td>
+<td>indica al chiamante JET_ABORTRETRYFAILCALLBACK di interrompere l'I/O specificato</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FileIORetry</td>
-<td>indica al chiamante del JET_ABORTRETRYFAILCALLBACK di ritentare l'i/O specificato.</td>
+<td>indica al chiamante JET_ABORTRETRYFAILCALLBACK di ritentare l'I/O specificato</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FileIOFail</td>
-<td>indica al chiamante del JET_ABORTRETRYFAILCALLBACK di non eseguire l'i/O specificato.</td>
+<td>indica al chiamante JET_ABORTRETRYFAILCALLBACK di eseguire l'I/O specificato</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Filecompresso</td>
-<td>l'accesso in lettura/scrittura non è supportato nei file compressi</td>
+<td>File compresso</td>
+<td>L'accesso in lettura/scrittura non è supportato nei file compressi</td>
 </tr>
 </tbody>
 </table>
@@ -2898,4 +2898,4 @@ public enum JET_err
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

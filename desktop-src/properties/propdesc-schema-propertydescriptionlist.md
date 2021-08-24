@@ -1,19 +1,19 @@
 ---
-description: Contenitore per uno o più elementi propertyDescription singoli.
+description: Contenitore per uno o più singoli elementi propertyDescription.
 ms.assetid: b54aaa85-6928-470e-9630-44b094205106
 title: propertyDescriptionList
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cd0beaf4dbbd8b71c7f4b3335c169754c704d9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f22e5e8e2c90b1a9f9587117f684ebfb89c55ee702749248cb0a886d5ba8266
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341841"
 ---
 # <a name="propertydescriptionlist"></a>propertyDescriptionList
 
-Contenitore per uno o più elementi [PropertyDescription](./propdesc-schema-propertydescription.md) singoli. Un file di schema della descrizione della proprietà. propdesc deve contenere almeno un elemento [propertyDescriptionList]() .
+Contenitore per uno o più singoli [elementi propertyDescription.](./propdesc-schema-propertydescription.md) Un file di schema di descrizione della proprietà con estensione propdesc deve contenere almeno un [elemento propertyDescriptionList.]()
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Contenitore per uno o più elementi [PropertyDescription](./propdesc-schema-prop
 
 | Elemento padre                        | Elementi figlio                                                   |
 |---------------------------------------|------------------------------------------------------------------|
-| [schema](./propdesc-schema-entry.md) | [propertyDescription](./propdesc-schema-propertydescription.md) |
+| [schema](./propdesc-schema-entry.md) | [proprietàDescrizione](./propdesc-schema-propertydescription.md) |
 
 
 
@@ -71,7 +71,7 @@ Contenitore per uno o più elementi [PropertyDescription](./propdesc-schema-prop
 
 ## <a name="remarks"></a>Commenti
 
-Il [propertyDescriptionList]() non deve essere confuso con "elenchi di proprietà" e [**IPropertyDescriptionList**](/windows/win32/api/propsys/nn-propsys-ipropertydescriptionlist), che sono completamente distinti.
+[PropertyDescriptionList non]() deve essere confuso con gli "elenchi di proprietà" e [**IPropertyDescriptionList,**](/windows/win32/api/propsys/nn-propsys-ipropertydescriptionlist)che sono completamente separati.
 
  
 

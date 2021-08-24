@@ -3,12 +3,12 @@ title: Timestamp di Winsock
 description: I timestamp dei pacchetti sono una funzionalità fondamentale per molte applicazioni di sincronizzazione dell'orologio, &mdash; ad esempio Precision Time Protocol. Più vicina è la generazione di timestamp quando un pacchetto viene ricevuto/inviato dall'hardware della scheda di rete, più accurata è l'applicazione di sincronizzazione.
 ms.topic: article
 ms.date: 10/22/2020
-ms.openlocfilehash: eae0dce8c2c16bc187ef5522f323e7f36d7fc0b4
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 329c13d76fc0c4ce0d87550623e7419af14bfdd268bf359a8f50729e0b0596e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568991"
 ---
 # <a name="winsock-timestamping"></a>Timestamp di Winsock
 
@@ -20,23 +20,23 @@ Le API di timestamping descritte in questo argomento forniscono quindi all'appli
 
 ## <a name="receive-timestamps"></a>Timestamp di ricezione
 
-È possibile configurare la ricezione del timestamp di ricezione [**tramite SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Usare tale IOCTL per abilitare la ricezione del timestamp di ricezione. Quando si riceve un datagramma usando la [**funzione LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) il relativo timestamp (se disponibile) è contenuto nel messaggio SO_TIMESTAMP **controllo.**
+È possibile configurare la ricezione del timestamp di ricezione [**SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Usare tale IOCTL per abilitare la ricezione del timestamp di ricezione. Quando si riceve un datagramma usando la funzione [**LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) il relativo timestamp (se disponibile) è contenuto nel messaggio SO_TIMESTAMP **controllo.**
 
-**SO_TIMESTAMP** (0x300A) è definito in `mstcpip.h` . I dati del messaggio di controllo vengono restituiti come **UINT64.**
+**SO_TIMESTAMP** (0x300A) è definito in `mstcpip.h` . I dati del messaggio di controllo vengono restituiti **come UINT64.**
 
-## <a name="transmit-timestamps"></a>Trasmettere i timestamp
+## <a name="transmit-timestamps"></a>Trasmettere timestamp
 
 La ricezione del timestamp di trasmissione viene configurata [**anche SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Usare tale IOCTL per abilitare la ricezione del timestamp di trasmissione e specificare il numero di timestamp di trasmissione che verranno memorizzati nel buffer dal sistema. Quando vengono generati, i timestamp di trasmissione vengono aggiunti al buffer. Se il buffer è pieno, i nuovi timestamp di trasmissione vengono eliminati.
 
-Quando si invia un datagramma, associare il datagramma a un messaggio **SO_TIMESTAMP_ID** di controllo. Deve contenere un identificatore univoco. Inviare il datagramma, insieme al relativo **SO_TIMESTAMP_ID** di controllo, usando [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). I timestamp di trasmissione potrebbero non essere immediatamente disponibili dopo il ritorno di **WSASendMsg.** Quando i timestamp di trasmissione diventano disponibili, vengono inseriti in un buffer per socket. Usare il [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL per eseguire il polling del timestamp in base al relativo ID. Se il timestamp è disponibile, viene rimosso dal buffer e restituito. Se il timestamp non è disponibile, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) restituisce **WSAEWOULDBLOCK**. Se viene generato un timestamp di trasmissione mentre il buffer è pieno, il nuovo timestamp viene eliminato.
+Quando si invia un datagramma, associare il datagramma a un messaggio **SO_TIMESTAMP_ID** di controllo. Deve contenere un identificatore univoco. Inviare il datagramma, insieme al relativo **SO_TIMESTAMP_ID** di controllo, [**usando WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). I timestamp di trasmissione potrebbero non essere immediatamente disponibili dopo il ritorno di **WSASendMsg.** Quando i timestamp di trasmissione diventano disponibili, vengono inseriti in un buffer per socket. Usare il [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL per eseguire il polling del timestamp in base al relativo ID. Se il timestamp è disponibile, viene rimosso dal buffer e restituito. Se il timestamp non è disponibile, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) restituisce **WSAEWOULDBLOCK**. Se viene generato un timestamp di trasmissione mentre il buffer è pieno, il nuovo timestamp viene eliminato.
 
 **SO_TIMESTAMP_ID** (0x300B) è definito in `mstcpip.h` . È necessario fornire i dati del messaggio di controllo come **UINT32**.
 
 I timestamp sono rappresentati come valore del contatore a 64 bit. La frequenza del contatore dipende dall'origine del timestamp. Per i timestamp software, il contatore è un [**valore QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC) ed è possibile determinarne la frequenza [**tramite QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency). Per i timestamp hardware nic, la frequenza del contatore dipende dall'hardware della scheda di interfaccia di rete ed è possibile determinarla con informazioni aggiuntive fornite da [**CaptureInterfaceHardwareCrossTimestamp**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp). Per determinare l'origine dei timestamp, usare le [**funzioni GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) e [**GetInterfaceSupportedTimestampCapabilities.**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
 
-Oltre alla configurazione a livello di socket usando l'opzione [**SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) socket per abilitare la ricezione di timestamp per un socket, è necessaria anche la configurazione a livello di sistema.
+Oltre alla configurazione a livello di socket usando [**l'opzione SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) socket per abilitare la ricezione di timestamp per un socket, è necessaria anche la configurazione a livello di sistema.
 
-## <a name="estimating-latency-of-socket-send-path"></a>Stima della latenza del percorso di invio socket
+## <a name="estimating-latency-of-socket-send-path"></a>Stima della latenza del percorso di invio del socket
 
 In questa sezione verranno utilizzati timestamp di trasmissione per stimare la latenza del percorso di invio del socket. Se si dispone di un'applicazione esistente che utilizza timestamp di I/O a livello di applicazione in cui il timestamp deve essere il più vicino possibile al punto di trasmissione effettivo, questo esempio fornisce una descrizione quantitativa di quanto le API di timestamp Di Winsock possano migliorare l'accuratezza &mdash; &mdash; dell'applicazione.
 
@@ -320,4 +320,4 @@ void estimate_receive_latency(SOCKET sock,
 
 ## <a name="a-limitation"></a>Una limitazione
 
-Una limitazione delle API di timestamp di Winsock è che la chiamata SIO_GET_TX_TIMESTAMP [**è**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) sempre un'operazione non bloccante. Anche la chiamata di IOCTL in modalità OVERLAPPED comporta un ritorno immediato di **WSAEWOULDBLOCK** se non sono attualmente disponibili timestamp di trasmissione. Poiché i timestamp di trasmissione potrebbero non essere immediatamente disponibili dopo il ritorno di [**WSASendMsg,**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) l'applicazione deve eseguire il polling di IOCTL fino a quando il timestamp non è disponibile. È garantito che un timestamp di trasmissione sia disponibile dopo una chiamata **WSASendMsg** riuscita, dato che il buffer del timestamp di trasmissione non è pieno.
+Una limitazione delle API di timestamp di Winsock è che la [**chiamata**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) SIO_GET_TX_TIMESTAMP è sempre un'operazione non bloccante. Anche la chiamata di IOCTL in modalità OVERLAPPED comporta un ritorno immediato di **WSAEWOULDBLOCK** se non sono attualmente disponibili timestamp di trasmissione. Poiché i timestamp di trasmissione potrebbero non essere immediatamente disponibili dopo il ritorno di [**WSASendMsg,**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) l'applicazione deve eseguire il polling di IOCTL fino a quando il timestamp non è disponibile. È garantito che un timestamp di trasmissione sia disponibile dopo una chiamata **WSASendMsg** riuscita, dato che il buffer del timestamp di trasmissione non è pieno.

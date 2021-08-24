@@ -1,10 +1,10 @@
 ---
-title: Sintassi di stringa (stampabile)
+title: Sintassi String(Printable)
 description: Stringa con distinzione tra maiuscole e minuscole che contiene caratteri del set di caratteri stampabili.
 ms.assetid: c2c1685f-d03f-4436-8240-a97c8ce0f571
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD della sintassi di stringa (stampabile)
+- Schema AD della sintassi String(Printable)
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22cd5ebe2a9cca95324258c5b54f8aeaabdc7c06
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 086cfc65520514f3c2817746de23c88625e93ec43a0d367d61b86b34833afb1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580121"
 ---
-# <a name="stringprintable-syntax"></a>Sintassi di stringa (stampabile)
+# <a name="stringprintable-syntax"></a>Sintassi String(Printable)
 
 Stringa con distinzione tra maiuscole e minuscole che contiene caratteri del set di caratteri stampabili.
 
@@ -30,10 +30,10 @@ Stringa con distinzione tra maiuscole e minuscole che contiene caratteri del set
 |--------------|------------------------------------------------------------------------|
 | Nome         | String(Printable)                                                      |
 | ID sintassi    | 2.5.5.5                                                                |
-| ID OM        | 19                                                                     |
+| OM ID        | 19                                                                     |
 | Tipo MAPI    | TSTRING                                                                |
-| Tipo di annunci     | \_stringa stampabile \_ ADSTYPE                                             |
-| Tipo Variant | \_BSTR VT                                                               |
+| Tipo di ADS     | STRINGA STAMPABILE ADSTYPE \_ \_                                             |
+| Tipo variant | VT \_ BSTR                                                               |
 | Tipo SDS     | [System.String](/dotnet/api/system.string) |
 
 

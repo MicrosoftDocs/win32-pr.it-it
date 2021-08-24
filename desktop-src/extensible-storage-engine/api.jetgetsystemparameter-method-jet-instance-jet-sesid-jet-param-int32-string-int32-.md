@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)'
-title: Metodo API. JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)
+description: 'Altre informazioni su: Metodo Api.JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)'
+title: Metodo Api.JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)
 TOCTitle: JetGetSystemParameter method (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetSystemParameter(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_param,System.Int32@,System.String@,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetsystemparameter(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 840c17ef1d74b57b4bee75b9efafe5a314f09a57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e32129c40405c1a2982f4eeeae7cd412f994cb3c956157c288c578711cbaa05e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455811"
 ---
-# <a name="apijetgetsystemparameter-method-jet_instance-jet_sesid-jet_param-int32-string-int32"></a>Metodo API. JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)
+# <a name="apijetgetsystemparameter-method-jet_instance-jet_sesid-jet_param-int32-string-int32"></a>Metodo Api.JetGetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String, Int32)
 
 Ottiene le opzioni di configurazione del database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,53 +74,53 @@ public static JET_wrn JetGetSystemParameter(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     Istanza da cui recuperare le opzioni.
 
 <!-- end list -->
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
   - paramid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_param](./jet-param-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_param](./jet-param-enumeration.md)  
     
     Parametro da ottenere.
 
 <!-- end list -->
 
   - paramValue  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Restituisce il valore del parametro, se il valore è un numero intero.
 
 <!-- end list -->
 
   - paramString  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Restituisce il valore del parametro, se il valore è una stringa.
 
 <!-- end list -->
 
   - maxParam  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensione massima della stringa di parametro.
+    Dimensione massima della stringa del parametro.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Codice di avviso ESENT.  
 
 ## <a name="remarks"></a>Commenti
 
-[ErrorToString](./jet-param-enumeration.md) passa il numero di errore in paramValue, motivo per cui si tratta di un parametro ref e non di un parametro out.
+[ErrorToString](./jet-param-enumeration.md) passa il numero di errore in paramValue, motivo per cui è un parametro ref e non un parametro out.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -128,8 +128,8 @@ Codice di avviso ESENT.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetGetSystemParameter](./api.jetgetsystemparameter-method.md)
+[Overload di JetGetSystemParameter](./api.jetgetsystemparameter-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

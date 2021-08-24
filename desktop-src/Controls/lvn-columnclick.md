@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_COLUMNCLICK (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che è stata fatto clic su un'intestazione di colonna mentre il controllo elenco-visualizzazione era in modalità report. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_COLUMNCLICK di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che è stato fatto clic su un'intestazione di colonna mentre il controllo visualizzazione elenco era in modalità report. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: a6bfbd6c-4778-47a7-92e9-9140d46d89cc
 keywords:
-- Controlli di Windows per il codice di notifica LVN_COLUMNCLICK
+- LVN_COLUMNCLICK del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27cfd75d913c62c89c4cfe305333a934fe172fe2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74cd88674b10a799f58fd0549a6711f3d00934f7b1baaf892cff86c6ef223d19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319811"
 ---
-# <a name="lvn_columnclick-notification-code"></a>\_Codice di notifica COLUMNCLICK di LVN
+# <a name="lvn_columnclick-notification-code"></a>Codice di notifica LVN \_ COLUMNCLICK
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che è stata fatto clic su un'intestazione di colonna mentre il controllo elenco-visualizzazione era in modalità report. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che è stato fatto clic su un'intestazione di colonna mentre il controllo visualizzazione elenco era in modalità report. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_COLUMNCLICK
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) . Il membro **iItem** è-1 e il membro **iSubItem** identifica la colonna. Tutti gli altri membri sono pari a zero.
+Puntatore a [**una struttura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) Il **membro iItem** è -1 e il **membro iSubItem** identifica la colonna. Tutti gli altri membri sono zero.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'uso di formati di controllo intestazione, ad esempio HDF \_ CheckBox per modificare il formato delle intestazioni di colonna in un controllo visualizzazione elenco, fa sì che il controllo invii il codice di notifica [ \_ ITEMSTATEICONCLICK HDN](hdn-itemstateiconclick.md) anziché LVN \_ COLUMNCLICK quando si fa clic su un elemento di intestazione.
+L'uso di formati di controllo intestazione come HDF CHECKBOX per modificare il formato delle intestazioni di colonna in un controllo visualizzazione elenco fa sì che il controllo invii il codice di notifica \_ [ \_ HDN ITEMSTATEICONCLICK](hdn-itemstateiconclick.md) anziché LVN COLUMNCLICK quando si fa clic su un elemento di \_ intestazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ L'uso di formati di controllo intestazione, ad esempio HDF \_ CheckBox per modif
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETHORIZONTALEXTENT (winuser. h)
-description: Imposta la larghezza, in pixel, in base alla quale è possibile scorrere orizzontalmente una casella di riepilogo (larghezza scorrevole).
+title: LB_SETHORIZONTALEXTENT messaggio (Winuser.h)
+description: Imposta la larghezza, in pixel, in base alla quale una casella di riepilogo può essere scorrevole orizzontalmente (larghezza scorrevole).
 ms.assetid: 7d59b6de-2a22-4246-936b-4c669d285392
 keywords:
-- Controlli di Windows Message LB_SETHORIZONTALEXTENT
+- LB_SETHORIZONTALEXTENT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ded17b9ea2d78a77b030950877047256d0e2a1a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce248354b853dd3be15e76646958ed25068648182970d748da35fb5c596ca49e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433880"
 ---
-# <a name="lb_sethorizontalextent-message"></a>\_Messaggio SETHORIZONTALEXTENT lb
+# <a name="lb_sethorizontalextent-message"></a>Messaggio \_ LB SETHORIZONTALEXTENT
 
-Imposta la larghezza, in pixel, in base alla quale è possibile scorrere orizzontalmente una casella di riepilogo (larghezza scorrevole). Se la larghezza della casella di riepilogo è inferiore a questo valore, la barra di scorrimento orizzontale scorre orizzontalmente gli elementi nella casella di riepilogo. Se la larghezza della casella di riepilogo è maggiore o uguale a questo valore, la barra di scorrimento orizzontale viene nascosta.
+Imposta la larghezza, in pixel, in base alla quale una casella di riepilogo può essere scorrevole orizzontalmente (larghezza scorrevole). Se la larghezza della casella di riepilogo è inferiore a questo valore, la barra di scorrimento orizzontale scorre orizzontalmente gli elementi nella casella di riepilogo. Se la larghezza della casella di riepilogo è uguale o maggiore di questo valore, la barra di scorrimento orizzontale è nascosta.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,7 +34,7 @@ Imposta la larghezza, in pixel, in base alla quale è possibile scorrere orizzon
 
 Specifica il numero di pixel in base al quale è possibile scorrere la casella di riepilogo.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit.
 
 </dd> <dt>
 
@@ -47,15 +47,15 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Per rispondere al messaggio **lb \_ SETHORIZONTALEXTENT** , è necessario che la casella di riepilogo sia stata definita con lo stile [**WS \_ HSCROLL**](/windows/desktop/winmsg/window-styles) .
+Per rispondere al **messaggio LB \_ SETHORIZONTALEXTENT,** la casella di riepilogo deve essere stata definita con lo [**stile \_ HSCROLL WS.**](/windows/desktop/winmsg/window-styles)
 
-Si noti che una casella di riepilogo non aggiorna in modo dinamico l'extent orizzontale.
+Si noti che una casella di riepilogo non aggiorna dinamicamente l'extent orizzontale.
 
-Questo messaggio non ha alcun effetto su una casella di riepilogo a più colonne.
+Questo messaggio non ha effetto su una casella di riepilogo a più colonne.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo messaggio non ha alcun effetto su una casella di riepilogo a più colonne
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Questo messaggio non ha alcun effetto su una casella di riepilogo a più colonne
 
 <dl> <dt>
 
-[**\_GETHORIZONTALEXTENT lb**](lb-gethorizontalextent.md)
+[**LB \_ GETHORIZONTALEXTENT**](lb-gethorizontalextent.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETEXTENDEDSTYLE (COMmctrl. h)
-description: Imposta gli stili estesi per un controllo Toolbar.
+title: TB_SETEXTENDEDSTYLE messaggio (Commctrl.h)
+description: Imposta gli stili estesi per un controllo barra degli strumenti.
 ms.assetid: aec64bc7-74b4-4efc-9864-2c8a9fbd35c2
 keywords:
-- Controlli di Windows Message TB_SETEXTENDEDSTYLE
+- TB_SETEXTENDEDSTYLE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9a540aaeff61bd81b649f0509e064a29282f598
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 600e5904637215eeb052c85ec0203c9b86c75ed6b179be643dc9a213156b3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318881"
 ---
-# <a name="tb_setextendedstyle-message"></a>TB \_ SETEXTENDEDSTYLE messaggio
+# <a name="tb_setextendedstyle-message"></a>TB \_ MESSAGGIO SETEXTENDEDSTYLE
 
-Imposta gli stili estesi per un controllo Toolbar.
+Imposta gli stili estesi per un controllo barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta gli stili estesi per un controllo Toolbar.
 *lParam* 
 </dt> <dd>
 
-Valore che specifica i nuovi stili estesi. Questo parametro può essere una combinazione di [stili estesi](toolbar-extended-styles.md).
+Valore che specifica i nuovi stili estesi. Questo parametro può essere una combinazione [di stili estesi.](toolbar-extended-styles.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **valore DWORD** che rappresenta gli stili estesi precedenti. Questo valore può essere una combinazione di [stili estesi](toolbar-extended-styles.md).
+Restituisce un **valore DWORD** che rappresenta gli stili estesi precedenti. Questo valore può essere una combinazione [di stili estesi.](toolbar-extended-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un **valore DWORD** che rappresenta gli stili estesi precedenti. Que
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 39cc8ee6-b010-428e-b729-de49fa34b91b
 title: Elemento Stationery
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 012ec2c271d7b0509cf0a9669a9d7898cf7956b6
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 1143fed10ca4390cb13c3cbb31a7a0d6a37972d5b50cb7d3dd9b6fc904e555aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350031"
 ---
 # <a name="stationery-element"></a>Elemento Stationery
 
@@ -45,7 +45,7 @@ Nessuno.
 |--------------|-------------------------------------------------------------------|
 | Tipo di elemento | [**ComplexType StationeryType**](stationerytype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                        |
-| Nome schema  | Lettore journal                                                    |
+| Nome schema  | Lettore di journal                                                    |
 
 
 

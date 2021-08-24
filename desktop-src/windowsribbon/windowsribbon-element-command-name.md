@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command.Name
-description: Rappresenta il nome di un comando.
+title: Command.Name proprietà
+description: Rappresenta il nome di un oggetto Command.
 ms.assetid: 36fb0b93-143f-4706-8c32-e6c818cce16f
 keywords:
-- Barra multifunzione di Windows proprietà Command.Name
+- Command.Name proprietà Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d93b830e29ca271052a4693b00ba64eee94309f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48162c5edda2dd8787518ce7042a8ae8eeb349ff332488cd834d10b377d96a0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587751"
 ---
-# <a name="commandname-property"></a>Proprietà Command.Name
+# <a name="commandname-property"></a>Command.Name proprietà
 
-Rappresenta il nome di un comando.
+Rappresenta il nome di un oggetto Command.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -53,17 +53,17 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-Nel markup viene fatto riferimento a **Command.Name** per associare un comando a un controllo tramite l'attributo *CommandName* del controllo.
+**Command.Name** viene fatto riferimento nel markup per associare un oggetto Command a un controllo tramite *l'attributo CommandName* del controllo.
 
-Questo elemento contiene un valore di tipo *xs: String*.
+Questo elemento contiene un valore di tipo *xs:string*.
 
-Il valore è vincolato a una stringa costituita da una lettera o un carattere di sottolineatura seguito da una sequenza di lettere, cifre e caratteri di sottolineatura.
+Il valore è vincolato a una stringa costituita da una lettera o un carattere di sottolineatura seguito da qualsiasi sequenza di lettere, cifre e caratteri di sottolineatura.
 
 La lunghezza massima è di 100 caratteri.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](windowsribbon-element-command.md) con una Dichiarazione **Command.Name** .
+L'esempio seguente illustra il markup per un [**elemento Command**](windowsribbon-element-command.md) con una **Command.Name** dichiarazione.
 
 
 ```XML
@@ -93,8 +93,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

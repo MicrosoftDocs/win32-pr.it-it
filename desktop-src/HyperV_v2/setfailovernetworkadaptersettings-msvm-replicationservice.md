@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: da5bb8c820e1dbca5103c430a7b2ce2a525a8fca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 744c1b2e56fb50e5a0c16db7d03d7558b1ed69360de98f69a4aac795f9f7db63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147764"
 ---
-# <a name="setfailovernetworkadaptersettings-method-of-the-msvm_replicationservice-class"></a>Metodo SetFailoverNetworkAdapterSettings della classe MSVM \_ ReplicationService
+# <a name="setfailovernetworkadaptersettings-method-of-the-msvm_replicationservice-class"></a>Metodo SetFailoverNetworkAdapterSettings della classe Msvm \_ ReplicationService
 
-Configura le impostazioni IP della scheda di rete da applicare a una macchina virtuale dopo un failover. Questi parametri di configurazione vengono applicati dopo un'operazione di failover, immediatamente dopo aver stabilito la comunicazione con il componente di integrazione di Exchange per KVP in esecuzione nel sistema operativo guest.
+Configura le impostazioni IP della scheda di rete da applicare a una macchina virtuale dopo un failover. Questi parametri di configurazione vengono applicati dopo un'operazione di failover, immediatamente dopo aver stabilito la comunicazione con il componente di integrazione Exchange KVP in esecuzione nel sistema operativo guest.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 SetFailoverNetworkAdapterSettings(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza di [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale di cui devono essere configurate le schede di rete.
+Riferimento a [**un'istanza CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale le cui schede di rete devono essere configurate.
 
 </dd> <dt>
 
-*NetworkSettings* \[ in\]
+*NetworkSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di istanze incorporate di [**oggetti \_ FailoverNetworkAdapterSettingData di MSVM**](msvm-failovernetworkadaptersettingdata.md) . Ogni istanza descrive i parametri di configurazione per una delle schede di rete all'interno della macchina virtuale. È necessario specificare le proprietà **IPAddresses** e **DHCPEnabled** in ogni istanza.
+Matrice di istanze incorporate di [**oggetti Msvm \_ FailoverNetworkAdapterSettingData.**](msvm-failovernetworkadaptersettingdata.md) Ogni istanza descrive i parametri di configurazione per una delle schede di rete all'interno della macchina virtuale. Le **proprietà IPAddresses** **e DHCPEnabled** devono essere specificate in ogni istanza.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -71,10 +71,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -83,25 +83,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -113,10 +113,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -128,7 +128,7 @@ Il **sistema è in uso** (32774)
 [**InitiateFailover**](initiatefailover-msvm-replicationservice.md)
 </dt> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> <dt>
 
 [**RevertFailover**](revertfailover-msvm-replicationservice.md)

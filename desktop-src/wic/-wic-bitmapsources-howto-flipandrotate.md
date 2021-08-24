@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene illustrato come ruotare un IWICBitmapSource tramite un componente di IWICBitmapFlipRotator.
+description: Questo argomento illustra come ruotare un oggetto IWICBitmapSource usando un componente IWICBitmapFlipRotator.
 ms.assetid: 371c7759-0165-4a2a-b2ff-f9c8a31053a4
 title: Come capovolgere e ruotare un'origine bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f6a805144025f185a4f4793fc4fafb27d7695a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a61a1546f5a0191d2e20cc3079af3e4d772e6d2c3c07a5dd1e1e4aa331dc3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331547"
 ---
 # <a name="how-to-flip-and-rotate-a-bitmap-source"></a>Come capovolgere e ruotare un'origine bitmap
 
-In questo argomento viene illustrato come ruotare un [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) tramite un componente di [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) .
+Questo argomento illustra come ruotare [**un oggetto IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) usando un [**componente IWICBitmapFlipRotator.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)
 
 Per capovolgere e ruotare un'origine bitmap
 
-1.  Creare un oggetto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare oggetti di Windows Imaging Component (WIC).
+1.  Creare un [**oggetto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare oggetti Windows Imaging Component (WIC).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Per capovolgere e ruotare un'origine bitmap
 
     
 
-2.  Usare il metodo [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
+2.  Usare il [**metodo CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**oggetto IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
 
     ```C++
     HRESULT hr = S_OK;
@@ -51,7 +51,7 @@ Per capovolgere e ruotare un'origine bitmap
 
     
 
-3.  Ottiene il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
+3.  Ottenere il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -63,9 +63,9 @@ Per capovolgere e ruotare un'origine bitmap
 
     
 
-    Il formato del file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo frame ( `0` ). Per i formati di immagine con più frame, vedere [How to retrieve the Frames of an image to](-wic-bitmapsources-howto-retrieveimageframes.md) accessing Each frame of the image.
+    Il formato di file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo fotogramma ( `0` ). Per i formati di immagine con più fotogrammi, vedere [Come recuperare i](-wic-bitmapsources-howto-retrieveimageframes.md) fotogrammi di un'immagine per accedere a ogni fotogramma dell'immagine.
 
-4.  Creare il [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) da utilizzare per capovolgere l'immagine.
+4.  Creare [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) da usare per capovolgere l'immagine.
 
     ```C++
     // Create the flip/rotator.
@@ -77,7 +77,7 @@ Per capovolgere e ruotare un'origine bitmap
 
     
 
-5.  Inizializzare l'oggetto Flip/rotatorio con i dati dell'immagine del frame bitmap capovolto orizzontalmente (lungo l'asse y verticale).
+5.  Inizializzare l'oggetto flip/rotator con i dati dell'immagine della cornice bitmap capovolti orizzontalmente (lungo l'asse y verticale).
 
     ```C++
     // Initialize the flip/rotator to flip the original source horizontally.
@@ -92,18 +92,18 @@ Per capovolgere e ruotare un'origine bitmap
 
     
 
-    Per ulteriori rotazioni e opzioni di capovolgimento, vedere [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) .
+    Per altre rotazioni e opzioni di capovolgimento, vedere [**WICBitmapTransformOptions.**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions)
 
-6.  Creare o elaborare l'origine della bitmap capovolta.
+6.  Disegnare o elaborare l'origine bitmap capovolta.
 
     > [!Note]  
-    > L'interfaccia [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) eredita dall'interfaccia [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) , quindi è possibile usare l'oggetto Flip/Rotator inizializzato in un punto qualsiasi che accetti un **IWICBitmapSource**.
+    > [**L'interfaccia IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) eredita dall'interfaccia [**IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) quindi è possibile usare l'oggetto flip/rotator inizializzato ovunque accetti **un oggetto IWICBitmapSource.**
 
      
 
-    Nella figura seguente viene illustrato il capovolgimento orizzontale di un'immagine (lungo l'asse x verticale).
+    Nella figura seguente viene illustrato come capovolgere orizzontalmente un'immagine lungo l'asse x verticale.
 
-    ![illustrazione che mostra un capovolgimento orizzontale (lungo l'asse x autentico) di un'immagine](graphics/fliphorizontal.png)
+    ![Figura che mostra un capovolgimento orizzontale (lungo l'asse x veritale) di un'immagine](graphics/fliphorizontal.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,27 +1,27 @@
 ---
-description: 'Per la gestione dei dispositivi vengono usati gli elementi seguenti:'
+description: 'Nella gestione dei dispositivi vengono usati gli elementi seguenti:'
 ms.assetid: 0acfbf59-1a7f-4a90-a961-559d27a0ee57
-title: Riferimento per la gestione dei dispositivi
+title: Informazioni di riferimento sulla gestione dei dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc26db442498cce2c17dbfc28a16d6f397929357
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d1a254738aab7c993e978a71f642bd6fd64f16f44fd24523b6a057d2a2fd7846
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572771"
 ---
-# <a name="device-management-reference"></a>Riferimento per la gestione dei dispositivi
+# <a name="device-management-reference"></a>Informazioni di riferimento sulla gestione dei dispositivi
 
-Per la gestione dei dispositivi vengono usati gli elementi seguenti:
+Nella gestione dei dispositivi vengono usati gli elementi seguenti:
 
 -   [Funzioni di gestione dei dispositivi](device-management-functions.md)
 -   [Costanti di gestione dei dispositivi](device-management-constants.md)
--   [Codici di controllo della gestione dei dispositivi](device-management-control-codes.md)
+-   [Codici di controllo per la gestione dei dispositivi](device-management-control-codes.md)
 -   [Messaggi di gestione dei dispositivi](device-management-messages.md)
 -   [Eventi di gestione dei dispositivi](device-management-events.md)
 -   [Strutture di gestione dei dispositivi](device-management-structures.md)
--   [Tipi di enumerazione di gestione dei dispositivi](device-management-enumeration-types.md)
+-   [Tipi di enumerazione di Gestione dei dispositivi](device-management-enumeration-types.md)
 
  
 

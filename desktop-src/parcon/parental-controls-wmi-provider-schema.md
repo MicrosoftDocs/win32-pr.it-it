@@ -1,21 +1,21 @@
 ---
-description: Il provider WMI dei controlli padre è un'istanza di e un provider di metodi. La creazione di un'istanza di nuove istanze della classe, la lettura o la modifica delle proprietà dell'istanza esistente e la chiamata dei metodi sono controllate dal file Wpcsprov. mof.
+description: Il provider WMI di Controllo genitori è un provider di istanze e di metodi. La creazione di istanze di nuove classi, la lettura o la modifica delle proprietà di istanza esistenti e la chiamata di metodi sono controllate dal file Wpcsprov.mof.
 ms.assetid: 28d46969-448e-4a67-bfb3-4240b5cebe57
-title: Schema del provider WMI per controlli padre
+title: Schema del provider WMI di Controllo genitori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 541d7fd9126d1992fab105d4b289fabae268148b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ea3c5cd54b14cc02f09f80558fe4cd5f9256c22bcdcc0f19da8553c4a8ff3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601211"
 ---
-# <a name="parental-controls-wmi-provider-schema"></a>Schema del provider WMI per controlli padre
+# <a name="parental-controls-wmi-provider-schema"></a>Schema del provider WMI di Controllo genitori
 
-Il provider WMI dei controlli padre è un'istanza di e un provider di metodi. La creazione di un'istanza di nuove istanze della classe, la lettura o la modifica delle proprietà dell'istanza esistente e la chiamata dei metodi sono controllate dal file Wpcsprov. mof.
+Il provider WMI di Controllo genitori è un provider di istanze e di metodi. La creazione di istanze di nuove classi, la lettura o la modifica delle proprietà di istanza esistenti e la chiamata di metodi sono controllate dal file Wpcsprov.mof.
 
-La sintassi seguente è da namespace. mof
+La sintassi seguente è da Namespace.mof
 
 ``` syntax
 #pragma autorecover
@@ -38,7 +38,7 @@ instance of __NAMESPACE
 };
 ```
 
-La sintassi seguente è da ratings. mof
+La sintassi seguente è di Ratings.mof
 
 ``` syntax
 //**************************************************************************
@@ -107,7 +107,7 @@ class WpcRatingsSystem
 
 ```
 
-La sintassi seguente è da WpcSettings. mof
+La sintassi seguente è da WpcSettings.mof
 
 ``` syntax
 // WPC Class definitions
@@ -268,7 +268,7 @@ class WpcClamper
 // End of WPC Class Definitions
 ```
 
-La sintassi seguente è da WpcProvider. mof
+La sintassi seguente è tratta da WpcProvider.mof
 
 ``` syntax
 #pragma namespace ("\\\\.\\root\\CIMV2\\Applications\\WindowsParentalControls")

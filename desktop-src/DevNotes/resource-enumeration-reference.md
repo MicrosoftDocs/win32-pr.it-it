@@ -1,17 +1,17 @@
 ---
 description: "Nell'enumerazione delle risorse vengono usati gli elementi seguenti:"
 ms.assetid: 2490127b-b39b-4694-b3c6-e4222f2dc5f9
-title: Riferimento all'enumerazione di risorse
+title: Informazioni di riferimento sull'enumerazione delle risorse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de2efe6c78186a70699cbaa4532b3f8f0b7e75c8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 448659dc10cfd5c35cb9c3029d7355ac42bb8ee92d0492255076c1a9c8ee8f60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571461"
 ---
-# <a name="resource-enumeration-reference"></a>Riferimento all'enumerazione di risorse
+# <a name="resource-enumeration-reference"></a>Informazioni di riferimento sull'enumerazione delle risorse
 
 Nell'enumerazione delle risorse vengono usati gli elementi seguenti:
 

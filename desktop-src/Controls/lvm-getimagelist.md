@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETIMAGELIST (COMmctrl. h)
-description: Recupera l'handle a un elenco di immagini utilizzato per disegnare elementi della visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro ListView Getimagine.
+title: LVM_GETIMAGELIST messaggio (Commctrl.h)
+description: Recupera l'handle per un elenco di immagini utilizzato per disegnare elementi di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro ListView GetImageList.
 ms.assetid: dd48d8b5-6dbd-48ab-95c3-0fcf1e8c24f0
 keywords:
-- Controlli di Windows Message LVM_GETIMAGELIST
+- LVM_GETIMAGELIST di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0abc68c5e5dd9a18c3ec203ad7fe3db97a542845
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 339de36c85b4a5d39476a93cde71cbc6db23d1bc08946d3ce2d1ab1b5a4cb926
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540811"
 ---
-# <a name="lvm_getimagelist-message"></a>\_Messaggio GETimagine LVM
+# <a name="lvm_getimagelist-message"></a>Messaggio LVM \_ GETIMAGELIST
 
-Recupera l'handle a un elenco di immagini utilizzato per disegnare elementi della visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ListView \_ getimagine**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getimagelist) .
+Recupera l'handle per un elenco di immagini utilizzato per disegnare elementi di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ ListView GetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getimagelist)
 
 ## <a name="parameters"></a>Parametri
 
@@ -38,10 +38,10 @@ Elenco di immagini da recuperare. Questo parametro può essere uno dei valori se
 
 | Valore                                                                                                                                                                     | Significato                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| <span id="LVSIL_NORMAL"></span><span id="lvsil_normal"></span><dl> <dt>**LVSIL \_ normale**</dt> </dl>                | Elenco immagini con icone grandi.<br/>  |
-| <span id="LVSIL_SMALL"></span><span id="lvsil_small"></span><dl> <dt>**LVSIL \_ Small**</dt> </dl>                   | Elenco immagini con icone piccole.<br/>  |
-| <span id="LVSIL_STATE"></span><span id="lvsil_state"></span><dl> <dt>**\_stato LVSIL**</dt> </dl>                   | Elenco immagini con immagini di stato.<br/> |
-| <span id="LVSIL_GROUPHEADER"></span><span id="lvsil_groupheader"></span><dl> <dt>**\_GROUPHEADER LVSIL**</dt> </dl> | Elenco di immagini per l'intestazione di gruppo.<br/>  |
+| <span id="LVSIL_NORMAL"></span><span id="lvsil_normal"></span><dl> <dt>**LVSIL \_ NORMAL**</dt> </dl>                | Elenco di immagini con icone grandi.<br/>  |
+| <span id="LVSIL_SMALL"></span><span id="lvsil_small"></span><dl> <dt>**LVSIL \_ SMALL**</dt> </dl>                   | Elenco di immagini con icone piccole.<br/>  |
+| <span id="LVSIL_STATE"></span><span id="lvsil_state"></span><dl> <dt>**STATO \_ LVSIL**</dt> </dl>                   | Elenco di immagini con immagini di stato.<br/> |
+| <span id="LVSIL_GROUPHEADER"></span><span id="lvsil_groupheader"></span><dl> <dt>**LVSIL \_ GROUPHEADER**</dt> </dl> | Elenco di immagini per l'intestazione del gruppo.<br/>  |
 
 
 
@@ -54,7 +54,7 @@ Elenco di immagini da recuperare. Questo parametro può essere uno dei valori se
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per l'elenco di immagini specificato, in caso di esito positivo; in caso contrario, **null** .
+Restituisce l'handle all'elenco di immagini specificato in caso di esito positivo oppure NULL in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Restituisce l'handle per l'elenco di immagini specificato, in caso di esito posi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

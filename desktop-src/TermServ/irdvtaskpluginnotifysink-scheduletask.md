@@ -4,9 +4,9 @@ description: Chiamato dall'agente attività per pianificare un'attività.
 ms.assetid: 06793439-cf16-40ca-8a91-08acc22c73ed
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo ScheduleTask
+- Metodo ScheduleTask Servizi Desktop remoto
 - Metodo ScheduleTask Servizi Desktop remoto, interfaccia IRDVTaskPluginNotifySink
-- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto, Metodo ScheduleTask
+- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto , metodo ScheduleTask
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c9bde92992eec9c4ab3d4151c59e6d687ec2f3fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdcecba38b1fd5eb773e5076f5485ae900e5423267a3a311091bf01e0ed86ac0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512021"
 ---
-# <a name="irdvtaskpluginnotifysinkscheduletask-method"></a>Metodo IRDVTaskPluginNotifySink:: ScheduleTask
+# <a name="irdvtaskpluginnotifysinkscheduletask-method"></a>Metodo IRDVTaskPluginNotifySink::ScheduleTask
 
 Chiamato dall'agente attività per pianificare un'attività.
 
@@ -47,57 +47,57 @@ HRESULT ScheduleTask(
 
 <dl> <dt>
 
-*ftStartTime* \[ in\]
+*ftStartTime* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-Ora di inizio dell'attività più recente, in formato UTC.
+Ora di inizio meno recente dell'attività, in formato UTC.
 
 </dd> <dt>
 
-*ftEndTime* \[ in\]
+*ftEndTime* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-Ora di fine dell'attività, in formato UTC. Passare un oggetto [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) impostato su tutti gli zeri se non viene specificata alcuna ora di fine.
+Ora di fine dell'attività, in formato UTC. Passare un [**valore FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) impostato su tutti gli zeri se non viene specificata alcuna ora di fine.
 
 </dd> <dt>
 
-*ftDeadline* \[ in\]
+*ftDeadline* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-Scadenza dell'attività, in formato UTC. Viene usato per impostare la priorità per più attività che si trovano all'interno della finestra di avvio. Se deve essere avviata più di un'attività, quella con la prima scadenza verrà avviata per prima.
+Scadenza dell'attività, in formato UTC. Viene usato per impostare la priorità per più attività all'interno della finestra iniziale. Se devono essere avviate più attività, verrà avviata per prima quella con la scadenza meno recente.
 
 </dd> <dt>
 
-*bstrLabel* \[ in\]
+*bstrLabel* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Etichetta per l'attività. Viene passato al metodo [**StartTask**](irdvtaskplugin-starttask.md) .
+Etichetta per l'attività. Viene passato al [**metodo StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> <dt>
 
-*bstrIdentifier* \[ in\]
+*bstrIdentifier* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Identificatore dell'attività. Viene passato al metodo [**StartTask**](irdvtaskplugin-starttask.md) .
+Identificatore dell'attività. Viene passato al [**metodo StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> <dt>
 
-*saContext* \[ in\]
+*saContext* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **SAFEARRAY (byte)**
+Tipo: **SAFEARRAY(BYTE)**
 
-Dati facoltativi per l'attività. Viene passato al metodo [**StartTask**](irdvtaskplugin-starttask.md) .
+Dati facoltativi per l'attività. Viene passato al [**metodo StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> </dl>
 
@@ -105,7 +105,7 @@ Dati facoltativi per l'attività. Viene passato al metodo [**StartTask**](irdvta
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

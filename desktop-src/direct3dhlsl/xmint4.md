@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ead9e7da8d48025c456ae6e57b0ffe64cdb00f46
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: c926d382cf9746a9a9a5603077d9bf4423dbf33368d471809108c584a7d748dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119369101"
 ---
 # <a name="xmint4-structure"></a>Struttura XMINT4
 
@@ -85,7 +85,7 @@ w-component del vettore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione in DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione nel pacchetto NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) non la definisce più e si basa invece su [DirectX::XMINT4](/windows/win32/api/directxmath/ns-directxmath-xmint4) in DirectXMath.
+Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione in DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione nel pacchetto di NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) non la definisce più e si basa invece su [DirectX::XMINT4](/windows/win32/api/directxmath/ns-directxmath-xmint4) in DirectXMath.
 
 
 

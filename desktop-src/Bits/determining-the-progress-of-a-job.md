@@ -1,23 +1,23 @@
 ---
 title: Determinazione dello stato di avanzamento di un processo
-description: BITS mantiene le informazioni sullo stato di avanzamento per ogni processo. Utilizzare le informazioni sullo stato di avanzamento per determinare il numero di byte e file trasferiti.
+description: BITS mantiene le informazioni sullo stato per ogni processo. Usare le informazioni sullo stato per determinare quanti byte e file sono stati trasferiti.
 ms.assetid: 8bac62b3-cb7e-45ba-85f0-95f3a7e8bffd
 keywords:
-- trasferimento BITS processo, stato
+- trasferimento del processo BITS, stato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085ddcdeea106be2998f828879bc92273f22b328
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09da4791bffd075d1fb0dd5868f0b78c1b949a0384ff9203555bf18c10ff39cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323251"
 ---
 # <a name="determining-the-progress-of-a-job"></a>Determinazione dello stato di avanzamento di un processo
 
-BITS mantiene le informazioni sullo stato di avanzamento per ogni processo. Utilizzare le informazioni sullo stato di avanzamento per determinare il numero di byte e file trasferiti.
+BITS mantiene le informazioni sullo stato per ogni processo. Usare le informazioni sullo stato per determinare quanti byte e file sono stati trasferiti.
 
-Per recuperare informazioni sullo stato di avanzamento del processo, chiamare il metodo [**Metodo ibackgroundcopyjob:: getProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) come illustrato nell'esempio seguente. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
+Per recuperare le informazioni sullo stato del processo, chiamare il metodo [**IBackgroundCopyJob::GetProgress,**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) come illustrato nell'esempio seguente. Nell'esempio si presuppone che il [**puntatore a interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
 
 
 ```C++
@@ -52,7 +52,7 @@ else
 
 
 
-Per recuperare informazioni sullo stato di avanzamento della parte di risposta di un processo di risposta di caricamento, chiamare il metodo [**IBackgroundCopyJob2:: GetReplyProgress**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) , come illustrato nell'esempio seguente. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
+Per recuperare informazioni sullo stato di avanzamento sulla parte di risposta di un processo di risposta di caricamento, chiamare il metodo [**IBackgroundCopyJob2::GetReplyProgress,**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) come illustrato nell'esempio seguente. Nell'esempio si presuppone che il [**puntatore a interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
 
 
 ```C++
@@ -86,11 +86,11 @@ if (SUCCEEDED(hr))
 
 
 
-I file contengono anche informazioni sullo stato di avanzamento. Per recuperare le informazioni sullo stato di avanzamento, usare il metodo [**IBackgroundCopyFile:: getProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyfile-getprogress) . Per informazioni su come recuperare i file di un processo, vedere [enumerazione di file in un processo](enumerating-files-in-a-job.md).
+I file contengono anche informazioni sullo stato. Per recuperare le informazioni sullo stato, usare [**il metodo IBackgroundCopyFile::GetProgress.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyfile-getprogress) Per informazioni su come recuperare i file di un processo, vedere [Enumerazione dei file in un processo](enumerating-files-in-a-job.md).
 
- 
+ 
 
- 
+ 
 
 
 

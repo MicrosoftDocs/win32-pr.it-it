@@ -4,12 +4,12 @@ ms.assetid: dbf8b4cc-ce9a-4350-bcb3-abc2fcfcb221
 title: System.Contact.JobInfo3OfficeLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1995b5a4380781350379d9453a07c8d46087ff4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8732cc3cf29182648b0e70ae2261c9415171a5c97285f90dcfa5b1bdcaac8ff5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446080"
 ---
 # <a name="systemcontactjobinfo3officelocation"></a>System.Contact.JobInfo3OfficeLocation
 

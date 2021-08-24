@@ -1,11 +1,11 @@
 ---
-title: attributo ms-KDS-Version
-description: Numero di versione della chiave radice.
+title: Attributo ms-Kds-Version
+description: Numero di versione di questa chiave radice.
 ms.assetid: ae91b32a-909f-4645-a520-d18eeba22208
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo ms-KDS-Version
-- msKds-schema di annuncio dell'attributo Version
+- Schema AD dell'attributo ms-Kds-Version
+- Schema AD dell'attributo msKds-Version
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31f4187fd70023db097fb1a29001810bca8a445c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 810e1fe57bd762ee683158820363d91ed0fbbcfbdcbf5cb9e816c13147a2322d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582741"
 ---
-# <a name="ms-kds-version-attribute"></a>attributo ms-KDS-Version
+# <a name="ms-kds-version-attribute"></a>Attributo ms-Kds-Version
 
-Numero di versione della chiave radice.
+Numero di versione di questa chiave radice.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-KDS-Version                       |
-| LDAP-Display-Name | msKds-versione                        |
+| CN                | ms-Kds-Version                       |
+| Ldap-Display-Name | msKds-Version                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2176              |
-| System-ID-GUID    | d5f07340-e6b0-1e4a-97be-0d3318bd9db1 |
+| System-Id-Guid    | d5f07340-e6b0-1e4a-97be-0d3318bd9db1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ Numero di versione della chiave radice.
 | ID collegamento                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classi utilizzate in        | [**MS-KDS-prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Classi usate in        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

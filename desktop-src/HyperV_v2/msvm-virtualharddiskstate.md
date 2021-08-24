@@ -1,7 +1,7 @@
 ---
 description: Fornisce informazioni sullo stato per un'immagine del disco rigido virtuale esistente.
 ms.assetid: b0177906-71dc-4be8-b351-97d7ef427acd
-title: Classe Msvm_VirtualHardDiskState
+title: Msvm_VirtualHardDiskState classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 15d0a8b150e83c17946a6d1b66c7086383f08466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5896e8b19d2897084997bd01b65bbb0d6e80e0ca15f662fff38871bdc0b6755
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426311"
 ---
-# <a name="msvm_virtualharddiskstate-class"></a>\_Classe MSVM VirtualHardDiskState
+# <a name="msvm_virtualharddiskstate-class"></a>Classe Msvm \_ VirtualHardDiskState
 
 Fornisce informazioni sullo stato per un'immagine del disco rigido virtuale esistente.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,33 +51,33 @@ class Msvm_VirtualHardDiskState
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualHardDiskState di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualHardDiskState** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualHardDiskState di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualHardDiskState** ha queste proprietà.
 
 <dl> <dt>
 
 **Allineamento**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica il tipo di allineamento del disco rigido virtuale. Si tratta di uno dei valori seguenti.
+Specifica il tipo di allineamento del disco rigido virtuale. Questo sarà uno dei valori seguenti.
 
 
 
 | Valore                                                                        | Significato                        |
 |------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>0</dt> </dl> | allineamento a 512 byte.<br/> |
-| <dl> <dt>1</dt> </dl> | allineamento a 4 KB.<br/>     |
+| <dl> <dt>0</dt> </dl> | Allineamento a 512 byte.<br/> |
+| <dl> <dt>1</dt> </dl> | Allineamento di 4 KB.<br/>     |
 
 
 
@@ -85,23 +85,23 @@ Specifica il tipo di allineamento del disco rigido virtuale. Si tratta di uno de
 
 </dd> <dt>
 
-**FileSize**
+**Dimensione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensioni del file del disco rigido virtuale, ovvero la quantità effettiva di spazio di archiviazione utilizzata dal file, in byte.
+Dimensioni in byte del file del disco rigido virtuale,ovvero la quantità effettiva di spazio di archiviazione utilizzato dal file.
 
 </dd> <dt>
 
-**FragmentationPercentage**
+**FrammentazionePercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -114,7 +114,7 @@ Approssimazione della percentuale di blocchi di dischi virtuali frammentati nel 
 **InUse**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -127,20 +127,20 @@ La proprietà viene riservata per un utilizzo futuro.
 **MinInternalSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensioni minime in byte in cui è possibile compattare il disco rigido virtuale. Questa dimensione viene arrotondata per eccesso al successivo multiplo più grande delle dimensioni del settore.
+Dimensioni minime in byte del disco rigido virtuale. Questa dimensione viene arrotondata per es. al successivo multiplo più grande delle dimensioni del settore.
 
 </dd> <dt>
 
 **PhysicalSectorSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -153,7 +153,7 @@ Dimensioni del settore fisico utilizzate dal disco fisico sottostante, in byte.
 **Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -174,10 +174,10 @@ Timestamp del disco rigido virtuale
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

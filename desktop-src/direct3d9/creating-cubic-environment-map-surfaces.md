@@ -1,21 +1,21 @@
 ---
-description: Si crea una trama di mappa dell'ambiente cubica chiamando il metodo CreateCubeTexture. Le trame della mappa dell'ambiente cubico devono essere quadrate, con dimensioni che sono una potenza di due.
+description: Per creare una trama della mappa dell'ambiente cubico, chiamare il metodo CreateCubeTexture. Le trame delle mappe dell'ambiente cubico devono essere quadrate, con dimensioni che sono una potenza di due.
 ms.assetid: 3879d215-064b-4d7d-afae-2ed46569c8bf
-title: Creazione di superfici della mappa dell'ambiente cubico (Direct3D 9)
+title: Creazione di superfici mappa dell'ambiente cubico (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36be3067c6a5f21c39cfed7cab731ca875b70799
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b37321978a40170d47718318e4b3f6898ba04d5fa229e97ada47e08e589fdcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608021"
 ---
-# <a name="creating-cubic-environment-map-surfaces-direct3d-9"></a>Creazione di superfici della mappa dell'ambiente cubico (Direct3D 9)
+# <a name="creating-cubic-environment-map-surfaces-direct3d-9"></a>Creazione di superfici mappa dell'ambiente cubico (Direct3D 9)
 
-Si crea una trama di mappa dell'ambiente cubica chiamando il metodo [**CreateCubeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) . Le trame della mappa dell'ambiente cubico devono essere quadrate, con dimensioni che sono una potenza di due.
+Per creare una trama della mappa dell'ambiente cubico, chiamare il [**metodo CreateCubeTexture.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) Le trame delle mappe dell'ambiente cubico devono essere quadrate, con dimensioni che sono una potenza di due.
 
-Nell'esempio di codice seguente viene illustrato il modo in cui l'applicazione C++ può creare una mappa dell'ambiente cubica semplice.
+L'esempio di codice seguente illustra come l'applicazione C++ potrebbe creare una semplice mappa dell'ambiente cubico.
 
 
 ```
@@ -29,11 +29,11 @@ m_d3dDevice->CreateCubeTexture(256, 1, D3DUSAGE_RENDERTARGET, D3DFMT_R8G8B8,
 
 
 
-## <a name="accessing-cubic-environment-map-faces"></a>Accesso ai visi Mappa dell'ambiente cubico
+## <a name="accessing-cubic-environment-map-faces"></a>Accesso ai visi della mappa dell'ambiente cubico
 
-È possibile spostarsi tra i visi di una mappa dell'ambiente cubica usando il metodo [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) .
+È possibile spostarsi tra i visi di una mappa dell'ambiente cubico usando il [**metodo GetCubeMapSurface.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface)
 
-Nell'esempio di codice riportato di seguito viene utilizzato [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) per recuperare l'area mappa del cubo utilizzata per la faccia y positiva (faccia 2).
+L'esempio di codice seguente usa [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) per recuperare la superficie della mappa del cubo usata per la faccia y positiva (viso 2).
 
 
 ```
@@ -45,19 +45,19 @@ m_pCubeMap->GetCubeMapSurface(D3DCUBEMAP_FACE_POSITIVE_Y, 0, &pFace2);
 
 
 
-Il primo parametro accettato da [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) è un valore enumerato di [**D3DCUBEMAP \_ Faces**](./d3dcubemap-faces.md) che descrive la superficie collegata che il metodo deve recuperare. Il secondo parametro indica a Direct3D il livello di una trama del cubo mipmap da recuperare. Il terzo parametro accettato è l'indirizzo dell'interfaccia [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) , che rappresenta la superficie di trama del cubo restituita. Poiché la mappa del cubo non è mipmap, qui viene utilizzato 0.
+Il primo parametro accettato da [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) è un valore enumerato [**FACES D3DCUBEMAP \_**](./d3dcubemap-faces.md) che descrive la superficie associata che il metodo deve recuperare. Il secondo parametro indica a Direct3D quale livello di trama del cubo mipmapped recuperare. Il terzo parametro accettato è l'indirizzo [**dell'interfaccia IDirect3DSurface9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) che rappresenta la superficie di trama del cubo restituita. Poiché questa mappa del cubo non è mipmapped, in questo caso viene usato 0.
 
 > [!Note]
 >
-> Dopo la chiamata a questo metodo, il conteggio dei riferimenti interni sull'interfaccia [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) viene aumentato. Al termine dell'operazione, assicurarsi di chiamare il metodo [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) su questa interfaccia **IDirect3DSurface9** o si disporrà di una perdita di memoria.
+> Dopo la chiamata a questo metodo, il conteggio dei riferimenti interni [**sull'interfaccia IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) viene aumentato. Al termine dell'uso di questa superficie, assicurarsi di chiamare il metodo [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) su questa **interfaccia IDirect3DSurface9** oppure si avrà una perdita di memoria.
 
  
 
-## <a name="rendering-to-cubic-environment-maps"></a>Rendering in mappe di ambienti cubici
+## <a name="rendering-to-cubic-environment-maps"></a>Rendering nell'ambiente cubico Mappe
 
-È possibile copiare le immagini nei singoli visi della mappa del cubo esattamente come qualsiasi altro oggetto trama o superficie. La cosa più importante da fare prima di eseguire il rendering in un viso è impostare le matrici di trasformazione in modo che la fotocamera venga posizionata correttamente e punti nella direzione corretta per quel volto: avanti (+ z), indietro (-z), a sinistra (-x), a destra (+ x), a freccia su (+ y) o giù (-y).
+È possibile copiare le immagini nei singoli visi della mappa del cubo esattamente come qualsiasi altro oggetto trama o superficie. La cosa più importante da fare prima del rendering su un viso è impostare le matrici di trasformazione in modo che la fotocamera sia posizionata correttamente e punti nella direzione appropriata per tale viso: avanti (+z), indietro (-z), sinistra (-x), destra (+x), su (+y) o giù (-y).
 
-Nell'esempio di codice C++ riportato di seguito viene preparata e impostata una matrice di viste in base al viso sottoposto a rendering.
+L'esempio di codice C++ seguente prepara e imposta una matrice di visualizzazione in base al viso sottoposto a rendering.
 
 
 ```
@@ -79,7 +79,7 @@ void RenderFaces()
 
 
 
-Tenere presente che ogni volto di una mappa dell'ambiente cubico rappresenta un campo di visualizzazione di 90 gradi. A meno che l'applicazione non richieda un campo di visualizzazione diverso per gli effetti speciali, ad esempio, prestare attenzione a impostare la matrice di proiezione di conseguenza.
+Tenere presente che ogni viso di una mappa dell'ambiente cubico rappresenta un campo di visualizzazione a 90 gradi. A meno che l'applicazione non richieda un angolo di visualizzazione diverso, ad esempio per gli effetti speciali, è necessario impostare la matrice di proiezione di conseguenza.
 
 Questo esempio di codice crea e imposta una matrice di proiezione per il caso più comune.
 
@@ -132,7 +132,7 @@ Questo esempio di codice crea e imposta una matrice di proiezione per il caso pi
 
 
 
-Quando la fotocamera è posizionata e la matrice di proiezione è impostata, è possibile eseguire il rendering della scena. Ogni oggetto nella scena deve essere posizionato in modo normale. L'esempio di codice seguente, fornito per completezza, descrive questa attività.
+Quando la fotocamera è in posizione e la matrice di proiezione è impostata, è possibile eseguire il rendering della scena. Ogni oggetto nella scena deve essere posizionato come si farebbe normalmente. L'esempio di codice seguente, fornito per completezza, descrive questa attività.
 
 
 ```
@@ -161,7 +161,7 @@ Quando la fotocamera è posizionata e la matrice di proiezione è impostata, è 
 
 
 
-Si noti la chiamata al metodo [**SetRenderTarget**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrendertarget) . Quando si esegue il rendering nei visi della mappa del cubo, è necessario assegnare la faccia come superficie di destinazione di rendering corrente. Le applicazioni che usano buffer di profondità possono creare in modo esplicito un buffer di profondità per la destinazione di rendering o riassegnare un buffer di profondità esistente alla superficie di destinazione di rendering. Nell'esempio di codice precedente viene usato il secondo approccio.
+Si noti la chiamata al [**metodo SetRenderTarget.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrendertarget) Quando si esegue il rendering dei visi della mappa del cubo, è necessario assegnare il viso come superficie di destinazione di rendering corrente. Le applicazioni che usano buffer di profondità possono creare in modo esplicito un buffer di profondità per la destinazione di rendering o riassegnare un buffer di profondità esistente alla superficie di destinazione del rendering. L'esempio di codice precedente usa il secondo approccio.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

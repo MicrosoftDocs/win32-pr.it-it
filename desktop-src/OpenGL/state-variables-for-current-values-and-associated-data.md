@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 149139bc11698469ce0667c2ecf77bc7ab239adb
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 4d99a9504a673d23d6923d5faf0e99770f20fe55e1cdd6b63d9adcbe68282584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553711"
 ---
 # <a name="state-variables-for-current-values-and-associated-data"></a>Variabili di stato per i valori correnti e i dati associati
 
@@ -73,7 +73,7 @@ ms.locfileid: "107908469"
 
  
 
-</dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>GL \_ CURRENT \_ RASTER POSITION</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>POSIZIONE \_ \_ RASTER CORRENTE GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|

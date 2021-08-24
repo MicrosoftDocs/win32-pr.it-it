@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo ColumnStream. ToString'
-title: ColumnStream. ToString, metodo
+description: Altre informazioni sul metodo ColumnStream.ToString
+title: Metodo ColumnStream.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 15a557c2e0570dc558a5eee66005976461d17659
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4fb9b0dfe5ad76353e93e96f65c540fa7bc5fb7eb58d0fff18c0f75d879d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454971"
 ---
-# <a name="columnstreamtostring-method"></a>ColumnStream. ToString, metodo
+# <a name="columnstreamtostring-method"></a>Metodo ColumnStream.ToString
 
-Restituisce una [stringa](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnStream](./columnstream-class.md)corrente.
+Restituisce un [oggetto String](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnStream corrente.](./columnstream-class.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnStream](./columnstream-class.md)corrente.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnStream corrente.](./columnstream-class.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Classe ColumnStream](./columnstream-class.md)
 
-[Membri di ColumnStream](./columnstream-members.md)
+[Membri ColumnStream](./columnstream-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Crea un oggetto mesh dell'interfaccia vuota utilizzando un codice FVF (Flexible Vertex Format).
+description: Crea un oggetto mesh dell'interfaccia vuota usando un codice FVF (Flexible Vertex Format).
 ms.assetid: 72e27850-0102-4121-a397-16f2e0220b93
-title: Funzione D3DXCreateSkinInfoFVF (D3DX9Mesh. h)
+title: Funzione D3DXCreateSkinInfoFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 907ab874b8cd8b766e6f9413212ba8771df9b25c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ccf10bad879b51f42c743ddd18112e24d355b366691b7922816164e57ed1b3d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495781"
 ---
-# <a name="d3dxcreateskininfofvf-function"></a>D3DXCreateSkinInfoFVF (funzione)
+# <a name="d3dxcreateskininfofvf-function"></a>Funzione D3DXCreateSkinInfoFVF
 
-Crea un oggetto mesh dell'interfaccia vuota utilizzando un codice FVF (Flexible Vertex Format).
+Crea un oggetto mesh dell'interfaccia vuota usando un codice FVF (Flexible Vertex Format).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT D3DXCreateSkinInfoFVF(
 
 <dl> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -52,30 +52,30 @@ Numero di vertici per la mesh dell'interfaccia.
 
 </dd> <dt>
 
-*FVF* \[ in\]
+*FVF* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di [D3DFVF](d3dfvf.md) che descrive il formato del vertice per la mesh dell'interfaccia restituita.
+Combinazione [di D3DFVF](d3dfvf.md) che descrive il formato dei vertici per la mesh dell'interfaccia restituita.
 
 </dd> <dt>
 
-*NumBones* \[ in\]
+*NumBones* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero di ossa per la mesh dell'interfaccia.
+Numero di esche per la mesh dell'interfaccia.
 
 </dd> <dt>
 
-*ppSkinInfo* \[ out\]
+*ppSkinInfo* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXSKININFO**](id3dxskininfo.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXSkinInfo**](id3dxskininfo.md) , che rappresenta l'oggetto informazioni di interfaccia creato.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXSkinInfo,**](id3dxskininfo.md) che rappresenta l'oggetto informazioni sull'interfaccia creato.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXSkinInfo**](id3dxskininfo.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'oggetto mesh interfaccia vuota restituito da questo metodo.
+Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'oggetto mesh dell'interfaccia vuota restituito da questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Usare [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) per popolare l'
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

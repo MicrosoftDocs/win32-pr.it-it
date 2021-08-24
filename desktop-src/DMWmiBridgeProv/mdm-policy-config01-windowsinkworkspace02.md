@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_WindowsInkWorkspace02
-description: La \_ \_ classe Config01 WindowsInkWorkspace02 dei criteri MDM \_ rappresenta i criteri dell'area di lavoro input penna disponibili.
+title: MDM_Policy_Config01_WindowsInkWorkspace02 classe
+description: La classe Mdm \_ Policy \_ Config01 \_ WindowsInkWorkspace02 rappresenta i criteri dell'area di lavoro input penna disponibili.
 ms.assetid: 676a459f-25b0-4cf7-bf64-635ac4a93f59
 keywords:
-- Classe MDM_Policy_Config01_WindowsInkWorkspace02
-- Classe MDM_Policy_Config01_WindowsInkWorkspace02, descritta
+- MDM_Policy_Config01_WindowsInkWorkspace02 classe
+- MDM_Policy_Config01_WindowsInkWorkspace02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f654326b0a44ed40faa06dfe80d933dc2c52c4f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3eabed9b4095138f1022241a3df55358b2ebe2a56e8dd9ce95e6bbb385fcb24b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588021"
 ---
-# <a name="mdm_policy_config01_windowsinkworkspace02-class"></a>\_ \_ Classe Config01 WindowsInkWorkspace02 di criteri \_ MDM
+# <a name="mdm_policy_config01_windowsinkworkspace02-class"></a>Classe \_ \_ \_ WindowsInkWorkspace02 di Mdm Policy Config01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Config01 \_ WindowsInkWorkspace02 dei criteri MDM** rappresenta i criteri dell'area di lavoro input penna disponibili.
+La **classe Mdm Policy \_ \_ Config01 \_ WindowsInkWorkspace02** rappresenta i criteri dell'area di lavoro input penna disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Config01_WindowsInkWorkspace02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ WindowsInkWorkspace02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ WindowsInkWorkspace02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ WindowsInkWorkspace02 dei criteri MDM Config01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Config01 \_ WindowsInkWorkspace02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **classe \_ \_ \_ WindowsInkWorkspace02 dei criteri MDM Config01** ha queste 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -74,7 +74,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -82,7 +82,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -91,14 +91,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "WindowsInkWorkspace".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "WindowsInkWorkspace".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -107,7 +107,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Config"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -117,11 +117,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: Funzioni glIndex
-description: Queste funzioni impostano l'indice dei colori corrente.
+description: Queste funzioni impostano l'indice colori corrente.
 ms.assetid: 239c2e5d-cd87-4c2e-8fa1-7c71a32d4350
 keywords:
-- OpenGL, funzioni glIndex
-- Riferimento OpenGL, funzioni glIndex
-- informazioni di riferimento per le funzioni OpenGL, glIndex
+- Funzioni OpenGL,glIndex
+- Informazioni di riferimento su OpenGL, funzioni glIndex
+- informazioni di riferimento per le funzioni OpenGL,glIndex
 - OpenGL, funzioni di indice
-- Guida di riferimento a OpenGL, funzioni di indice
+- Informazioni di riferimento su OpenGL, funzioni di indice
 - informazioni di riferimento per OpenGL, funzioni di indice
-- OpenGL, funzioni colori
-- Riferimento OpenGL, funzioni colori
-- informazioni di riferimento per OpenGL, funzioni colori
-- funzioni glIndex
+- OpenGL, funzioni di colore
+- Informazioni di riferimento su OpenGL, funzioni di colore
+- informazioni di riferimento per OpenGL, funzioni di colore
+- Funzioni glIndex
 - funzioni di indice
-- funzioni colore
+- funzioni di colore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f5197e8d53f9966fd5ab2e2ec63f7354463282
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cf3696102666068b94bc4aeb61738cfd11d85829529353fedd9ee1fe04c10c8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493591"
 ---
 # <a name="glindex-functions"></a>Funzioni glIndex
 
-Queste funzioni impostano l'indice dei colori corrente:
+Queste funzioni impostano l'indice colori corrente:
 
 -   [**glIndexd**](glindexd.md)
 -   [**glIndexf**](glindexf.md)
@@ -37,9 +37,9 @@ Queste funzioni impostano l'indice dei colori corrente:
 -   [**glIndexiv**](glindexiv.md)
 -   [**glIndexsv**](glindexsv.md)
 
- 
+ 
 
- 
+ 
 
 
 

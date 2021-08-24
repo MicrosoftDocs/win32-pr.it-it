@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::SetIntArray: imposta una matrice di numeri interi.'
+description: 'Metodo ID3DXConstantTable::SetIntArray : imposta una matrice di numeri interi.'
 ms.assetid: 15add9df-966d-45aa-b29c-d4bed2a125f4
 title: Metodo ID3DXConstantTable::SetIntArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f674bc730398c386856314a7e7305f33f3e7fa1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 54f2d7710d6315b2f17c9ce4a50eaee9e39ca928185d476c26c158d9827d3571
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607091"
 ---
 # <a name="id3dxconstanttablesetintarray-method"></a>Metodo ID3DXConstantTable::SetIntArray
 
@@ -48,7 +48,7 @@ HRESULT SetIntArray(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 

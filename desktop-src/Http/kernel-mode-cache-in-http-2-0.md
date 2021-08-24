@@ -4,12 +4,12 @@ description: Cache in modalità kernel
 ms.assetid: f9a46ff4-779b-4b3a-b8f5-1ae10a3c0a61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c409b00da03c0550899f5d26c4e6a0fa215118
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c34296ae6d0bca81988437478eb5893f1a7cb1b3c8a0dc2ae461356499bbfe10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340501"
 ---
 # <a name="kernel-mode-cache"></a>Cache in modalità kernel
 
@@ -43,10 +43,10 @@ Oltre alle restrizioni relative alla richiesta, la risposta deve soddisfare anch
 
 -   L'intera risposta deve essere fornita in una singola chiamata a [**HttpSendHttpResponse.**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse)
 -   L'intestazione della data nella risposta non deve essere eliminata.
--   Se è presente l'intestazione dell'ultima modifica, il valore dell'intestazione deve avere la sintassi corretta. Il valore di ora in questa intestazione viene usato per la verifica del controllo della cache.
+-   Se è presente l'ultima intestazione modificata, il valore dell'intestazione deve avere la sintassi corretta. Il valore dell'ora in questa intestazione viene usato per la verifica del controllo della cache.
 -   La cache in modalità kernel ha spazio sufficiente per archiviare la risposta.
 
-Per impostazione predefinita, la cache delle risposte in modalità kernel è abilitata. Se una delle condizioni per la richiesta o la risposta elencata sopra non viene soddisfatta, la risposta verrà inviata, ma non verrà memorizzata nella cache. Nell'API http server versione 2.0 [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse) include un parametro *pCachePolicy* facoltativo per passare la [**struttura HTTP CACHE \_ \_ POLICY.**](/windows/desktop/api/Http/ns-http-http_cache_policy) Le applicazioni usano la struttura dei criteri della cache per configurare la cache.
+Per impostazione predefinita, la cache delle risposte in modalità kernel è abilitata. Se una delle condizioni per la richiesta o la risposta elencata sopra non viene soddisfatta, la risposta verrà inviata, ma non verrà memorizzata nella cache. Nell'API del server HTTP versione 2.0 [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse) include un parametro *pCachePolicy* facoltativo per passare la [**struttura HTTP CACHE \_ \_ POLICY.**](/windows/desktop/api/Http/ns-http-http_cache_policy) Le applicazioni usano la struttura dei criteri della cache per configurare la cache.
 
  
 

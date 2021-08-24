@@ -1,7 +1,7 @@
 ---
-description: Questo metodo consente all'utente di modificare la dichiarazione mesh senza modificare il layout dei dati del buffer del vertice. La chiamata è valida solo se il vecchio e il nuovo formato di dichiarazione hanno le stesse dimensioni del vertice.
+description: Questo metodo consente all'utente di modificare la dichiarazione di mesh senza modificare il layout dei dati del vertex buffer. La chiamata è valida solo se i formati di dichiarazione precedente e nuovo hanno le stesse dimensioni del vertice.
 ms.assetid: ed2ad479-e0f7-4580-a20a-d3649759876a
-title: 'Metodo ID3DXBaseMesh:: UpdateSemantics (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::UpdateSemantics (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e31a6fe424d085467bfa795c7ce7b2d445a1f69
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3a9a628c16e7f4a26db9953298be1adcba2cef364153d4bb2e6b29dbc4d9ef83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607321"
 ---
-# <a name="id3dxbasemeshupdatesemantics-method"></a>Metodo ID3DXBaseMesh:: UpdateSemantics
+# <a name="id3dxbasemeshupdatesemantics-method"></a>Metodo ID3DXBaseMesh::UpdateSemantics
 
-Questo metodo consente all'utente di modificare la dichiarazione mesh senza modificare il layout dei dati del buffer del vertice. La chiamata è valida solo se il vecchio e il nuovo formato di dichiarazione hanno le stesse dimensioni del vertice.
+Questo metodo consente all'utente di modificare la dichiarazione di mesh senza modificare il layout dei dati del vertex buffer. La chiamata è valida solo se i formati di dichiarazione precedente e nuovo hanno le stesse dimensioni del vertice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT UpdateSemantics(
 
 <dl> <dt>
 
-*Dichiarazione* \[ di in uscita\]
+*Dichiarazione* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , che descrive il formato del vertice dei vertici della mesh. Il limite superiore della matrice di dichiaratori è [**Max \_ FVF \_ decl \_ size**](./max-fvf-decl-size.md).
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive il formato dei vertici della mesh. Il limite superiore di questa matrice di dichiaratori è [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md).
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-[**ID3DXBaseMesh:: CloneMesh**](id3dxbasemesh--clonemesh.md) viene usato per riformattare e modificare il layout dei dati del vertice. Ad esempio, usarlo per aggiungere spazio per normali, coordinate di trama, colori, pesi e così via, che non erano presenti prima.
+[**ID3DXBaseMesh::CloneMesh**](id3dxbasemesh--clonemesh.md) viene usato per riformattare e modificare il layout dei dati dei vertici. Ad esempio, usarlo per aggiungere spazio per normali, coordinate di trama, colori, pesi e così via che non erano presenti in precedenza.
 
-**ID3DXBaseMesh:: UpdateSemantics** è un metodo per l'aggiornamento della dichiarazione di vertice con informazioni semantiche diverse, senza modificare il layout del buffer dei vertici. Ad esempio, usarlo per rietichettare una coordinata di trama 3D come binormale o tangente oppure viceversa.
+**ID3DXBaseMesh::UpdateSemantics** è un metodo per aggiornare la dichiarazione del vertice con informazioni semantiche diverse, senza modificare il layout del vertex buffer. Ad esempio, usarlo per rietichettare una coordinata di trama 3D come binormale o tangente o viceversa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SETENDOFLINE (CommCtrl. h)
-description: Imposta il carattere di fine riga utilizzato quando viene inserito un LineBreak.
+title: EM_SETENDOFLINE messaggio (CommCtrl.h)
+description: Imposta il carattere di fine riga utilizzato quando viene inserita un'interruzione di riga.
 ms.assetid: a10b3f57-0e67-4a0f-89f3-9c8ebd1514f8
 keywords:
-- Controlli di Windows Message EM_SETENDOFLINE
+- EM_SETENDOFLINE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 5ee7c500ba3818cad0f5ee74e9994ed8af049ea0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5990b247757fc8e3cd39ab38edf5b88ca8ac62f74e402aac3899d51e3156231f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437591"
 ---
-# <a name="em_setendofline-message"></a>\_Messaggio SETENDOFLINE em
+# <a name="em_setendofline-message"></a>Messaggio EM \_ SETENDOFLINE
 
-Imposta il carattere di fine riga utilizzato quando viene inserito un LineBreak.
+Imposta il carattere di fine riga utilizzato quando viene inserita un'interruzione di riga.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,15 +32,15 @@ Imposta il carattere di fine riga utilizzato quando viene inserito un LineBreak.
 *wParam* 
 </dt> <dd>
 
-Specifica il carattere di fine riga utilizzato quando viene inserito un LineBreak. Può corrispondere a uno dei valori seguenti.
+Specifica il carattere di fine riga utilizzato quando viene inserita un'interruzione di riga. Può essere uno dei valori seguenti.
 
 
 | Valore                                                                                                                                                   | Significato                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| <span id="EC_ENDOFLINE_DETECTFROMCONTENT"></span><span id="ec_endofline_detectfromcontent"></span><dl> <dt>**EC \_ ENDOFLINE \_ DETECTFROMCONTENT**</dt> </dl> | Imposta il carattere di fine riga utilizzato per il nuovo interruzioni sul carattere utilizzato dal documento corrente.<br/>  |
-| <span id="EC_ENDOFLINE_CRLF"></span><span id="ec_endofline_crlf"></span><dl> <dt>**EC \_ ENDOFLINE \_ CRLF**</dt> </dl>                                        | Imposta il carattere di fine riga utilizzato per il nuovo interruzioni per il ritorno a capo seguito da avanzamento riga (CRLF).<br/> |
-| <span id="EC_ENDOFLINE_CR"></span><span id="ec_endofline_cr"></span><dl> <dt>**EC \_ ENDOFLINE \_ CR**</dt> </dl>                                              | Imposta il carattere di fine riga utilizzato per il nuovo interruzioni per il ritorno a capo (CR).<br/>                        |
-| <span id="EC_ENDOFLINE_LF"></span><span id="ec_endofline_lf"></span><dl> <dt>**EC \_ ENDOFLINE \_ LF**</dt> </dl>                                              | Imposta il carattere di fine riga utilizzato per il nuovo interruzioni di avanzamento riga (LF).<br/>                               |
+| <span id="EC_ENDOFLINE_DETECTFROMCONTENT"></span><span id="ec_endofline_detectfromcontent"></span><dl> <dt>**EC \_ ENDOFLINE \_ DETECTFROMCONTENT**</dt> </dl> | Imposta il carattere di fine riga utilizzato per le nuove interruzioni di riga sul carattere usato dal documento corrente.<br/>  |
+| <span id="EC_ENDOFLINE_CRLF"></span><span id="ec_endofline_crlf"></span><dl> <dt>**EC \_ ENDOFLINE \_ CRLF**</dt> </dl>                                        | Imposta il carattere di fine riga utilizzato per le nuove interruzioni di riga sul ritorno a capo seguito da avanzamento riga (CRLF).<br/> |
+| <span id="EC_ENDOFLINE_CR"></span><span id="ec_endofline_cr"></span><dl> <dt>**EC \_ ENDOFLINE \_ CR**</dt> </dl>                                              | Imposta il carattere di fine riga utilizzato per le nuove interruzioni di riga sul ritorno a capo (CR).<br/>                        |
+| <span id="EC_ENDOFLINE_LF"></span><span id="ec_endofline_lf"></span><dl> <dt>**EC \_ ENDOFLINE \_ LF**</dt> </dl>                                              | Imposta il carattere di fine riga utilizzato per le nuove interruzioni di riga su avanzamento riga (LF).<br/>                               |
 
 </dd> <dt>
 
@@ -55,11 +55,11 @@ Questo parametro non viene usato.
 
 Se l'operazione ha esito positivo, il valore restituito è diverso da zero.
 
-Se l'operazione ha esito negativo, il valore restituito è zero.
+Se l'operazione non riesce, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il set di caratteri di fine riga è **EC \_ ENDOFLINE \_ DETECTFROMCONTENT**, il controllo di modifica rileverà solo i caratteri di fine riga supportati in base allo stile della finestra estesa, vedere Modificare gli [stili estesi del controllo](edit-control-window-extended-styles.md).
+Quando il set di caratteri di fine riga è **EC \_ ENDOFLINE \_ DETECTFROMCONTENT,** il controllo di modifica rileverà solo i caratteri di fine riga supportati in base allo stile della finestra estesa, vedere Modifica [degli](edit-control-window-extended-styles.md)stili estesi del controllo .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Quando il set di caratteri di fine riga è **EC \_ ENDOFLINE \_ DETECTFROMCONTEN
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10, 1809 \[\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2019\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop 1809 \[\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2019 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Quando il set di caratteri di fine riga è **EC \_ ENDOFLINE \_ DETECTFROMCONTEN
 
 <dl> <dt>
 
-[**\_GETENDOFLINE em*](em-getendofline.md)
+[**EM \_ GETENDOFLINE*](em-getendofline.md)
 </dt> </dl>
 
  

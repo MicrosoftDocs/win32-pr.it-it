@@ -1,8 +1,8 @@
 ---
-description: Modifica le autorizzazioni di sicurezza per il file di voce di directory specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo ChangeSecurityPermissions).
+description: Modifica le autorizzazioni di sicurezza per il file di voci di directory specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo ChangeSecurityPermissions).
 ms.assetid: 787e48af-7cb4-4d0b-a2f1-ffa696466ef2
 ms.tgt_platform: multiple
-title: Metodo ChangeSecurityPermissionsEx della classe Win32_Directory
+title: Metodo ChangeSecurityPermissionsEx della Win32_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4bcadd4a4ad115a1a367db4f2a2f645eb6a4742c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8d90a6a76067421c3b23c0ec5124fa5da85e029e81d0307a2b4b66d01231fe56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323031"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-win32_directory-class"></a>Metodo ChangeSecurityPermissionsEx della classe di \_ directory Win32
+# <a name="changesecuritypermissionsex-method-of-the-win32_directory-class"></a>Metodo ChangeSecurityPermissionsEx della classe Directory Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** modifica le autorizzazioni di sicurezza per il file di voce di directory specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-directory.md) ). Se il file logico è una directory, questo metodo è ricorsivo e modifica le autorizzazioni di sicurezza di tutti i file e le sottodirectory in esso contenuti.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** modifica le autorizzazioni di sicurezza per il file di voci di directory specificato nel percorso dell'oggetto (questo metodo è una versione estesa del [**metodo ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-win32-directory.md) Se il file logico è una directory, questo metodo è ricorsivo e modifica le autorizzazioni di sicurezza di tutti i file e le sottodirectory contenuti nella directory.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,17 +46,17 @@ uint32 ChangeSecurityPermissionsEx(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ in\]
+*SecurityDescriptor* \[ Pollici\]
 </dt> <dd>
 
-Espressione che viene risolta in un'istanza di [**Win32 \_ securityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Questo parametro contiene nuove autorizzazioni di sicurezza per l'istanza [**del \_ paging Win32**](win32-pagefile.md).
+Espressione che viene risolta in un'istanza di [**Win32 \_ SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Questo parametro contiene nuove autorizzazioni di sicurezza per l'istanza di [**\_ Win32 PageFile**](win32-pagefile.md).
 
 </dd> <dt>
 
-*Opzione* \[ in\]
+*Opzione* \[ Pollici\]
 </dt> <dd>
 
-Privilegio di sicurezza da modificare. Per modificare, ad esempio, la sicurezza del proprietario e dell'elenco di controllo di accesso discrezionale (DACL), utilizzare quanto segue:
+Privilegi di sicurezza da modificare. Ad esempio, per modificare la sicurezza dell'elenco di controllo di accesso discrezionale (DACL) e del proprietario, usare quanto segue:
 
 `Option = 1 + 4`
 
@@ -68,7 +68,7 @@ Privilegio di sicurezza da modificare. Per modificare, ad esempio, la sicurezza 
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza del proprietario** (1)
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**MODIFICA \_ INFORMAZIONI \_ DI SICUREZZA DEL \_ PROPRIETARIO** (1)
 
 
 </dt> <dd>
@@ -79,7 +79,7 @@ Modificare il proprietario del file logico.
 
 <span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>
 
-<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**Modifica \_ di \_ \_ Informazioni sulla sicurezza del gruppo** (2)
+<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**MODIFICA \_ INFORMAZIONI \_ SULLA SICUREZZA DEI \_ GRUPPI** (2)
 
 
 </dt> <dd>
@@ -90,7 +90,7 @@ Modificare il gruppo del file logico.
 
 <span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>
 
-<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza DACL** (4)
+<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**MODIFICA \_ INFORMAZIONI DI \_ SICUREZZA DACL \_** (4)
 
 
 </dt> <dd>
@@ -101,7 +101,7 @@ Modificare l'elenco DACL del file logico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza SACL** (8)
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**MODIFICA \_ INFORMAZIONI DI \_ SICUREZZA SACL \_** (8)
 
 
 </dt> <dd>
@@ -110,32 +110,32 @@ Modificare l'elenco di controllo di accesso di sistema (SACL) del file logico.
 
 </dd> </dl> </dd> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **ChangeSecurityPermissionsEx** non è riuscito. Questo parametro è null se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo ChangeSecurityPermissionsEx** non è riuscito. Questo parametro è Null se il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **ChangeSecurityPermissionsEx**. In genere, il parametro *StartFileName* è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è null, l'operazione viene eseguita nel file o nella directory specificata nella chiamata **ExecMethod** . Questo parametro è facoltativo.
+Specifica il file o la directory figlio da usare come punto di partenza **per ChangeSecurityPermissionsEx.** In genere, il *parametro StartFileName* è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è Null, l'operazione viene eseguita sul file o sulla directory specificata nella **chiamata a ExecMethod.** Questo parametro è facoltativo.
 
-Se si usa *StartFileName* , è necessario impostare *ricorsivo* su true.
+Se *si usa StartFileName,* *anche Recursive* deve essere impostato su true.
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, la modifica della proprietà viene applicata in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) . Per le istanze di file, il parametro di input *ricorsivo* viene ignorato. Questo parametro è facoltativo.
+Se **true,** la modifica della proprietà viene applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md) Per le istanze di file, *il parametro di* input Ricorsivo viene ignorato. Questo parametro è facoltativo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se le autorizzazioni vengono modificate e un numero diverso per indicare un errore.
+Restituisce il valore 0 (zero) se le autorizzazioni vengono modificate e un numero diverso per indicare un errore.
 
 <dl> <dt>
 
@@ -144,7 +144,7 @@ Restituisce un valore pari a 0 (zero) se le autorizzazioni vengono modificate e 
 
 0
 
-La richiesta ha avuto esito positivo.
+La richiesta ha esito positivo.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Il nome specificato non è valido.
 
 </dd> <dt>
 
-**Oggetto già esistente**
+**L'oggetto esiste già**
 </dt> <dd>
 
 10
@@ -184,7 +184,7 @@ L'oggetto specificato esiste già.
 
 </dd> <dt>
 
-**File System non NTFS**
+**File system non NTFS**
 </dt> <dd>
 
 11
@@ -234,7 +234,7 @@ Si è verificata una violazione di condivisione.
 
 16
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Un privilegio necessario per l'operazione non viene mantenuto.
 
 21
 
-Parametro specificato non valido.
+Un parametro specificato non è valido.
 
 </dd> </dl>
 
@@ -265,7 +265,7 @@ Parametro specificato non valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -277,7 +277,7 @@ Parametro specificato non valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

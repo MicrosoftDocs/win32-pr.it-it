@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una raccolta che fornisce funzionalità di elaborazione ed è costituita da \_ oggetti MANAGEDSYSTEMELEMENT CIM.
+description: Rappresenta una raccolta che fornisce funzionalità di calcolo ed è costituita da oggetti \_ CIM ManagedSystemElement.
 ms.assetid: 410be43f-3368-4109-8b29-7b7cc2a3ec1b
-title: Classe CIM_ComputerSystem (gestione Hyper-V)
+title: CIM_ComputerSystem (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 00a53d0c514113175c3c6ffb7ea40f8ef4e730d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd8aac2c3846c65b633061d15e6b4311b18c0a84663eca28cf2a928df2b13f4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431601"
 ---
-# <a name="cim_computersystem-class-hyper-v-management"></a>Classe CIM_ComputerSystem (gestione Hyper-V)
+# <a name="cim_computersystem-class-hyper-v-management"></a>CIM_ComputerSystem (gestione di Hyper-V)
 
-Rappresenta una raccolta che fornisce funzionalità di elaborazione ed è costituita da oggetti [**\_ ManagedSystemElement CIM**](cim-managedsystemelement.md) .
+Rappresenta una raccolta che fornisce funzionalità di calcolo ed è costituita da [**oggetti \_ CIM ManagedSystemElement.**](cim-managedsystemelement.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ class CIM_ComputerSystem : CIM_System
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ComputerSystem** presenta questi tipi di membri:
+La **classe \_ CiM ComputerSystem** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CIM \_ ComputerSystem** presenta questi metodi.
+La **classe \_ CiM ComputerSystem** include questi metodi.
 
 
 
 | Metodo                                                    | Descrizione                                                                                                                                                                                                          |
 |:----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetPowerState**](cim-computersystem-setpowerstate.md) | Questo metodo è deprecato. Usare invece il metodo **RequestPowerStateChange** nella classe **CIM \_ PowerManagementService** .<br/> **Descrizione deprecata:** Imposta lo stato di alimentazione del computer.<br/> |
+| [**SetPowerState**](cim-computersystem-setpowerstate.md) | Questo metodo è deprecato. Usare invece il **metodo RequestPowerStateChange** nella **classe \_ CiM PowerManagementService.**<br/> **Descrizione deprecata:** Imposta lo stato di alimentazione del computer.<br/> |
 
 
 
@@ -66,23 +66,23 @@ La classe **CIM \_ ComputerSystem** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ComputerSystem** dispone di queste proprietà.
+La **classe \_ CiM ComputerSystem** ha queste proprietà.
 
 <dl> <dt>
 
 **Dedicato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \|MIB-II.sysServices "," FC-GS. INCIs-T11 \| Platform \| PlatformType "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**OtherDedicatedDescriptions**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \|MIB-II.sysServices", "FC-GS. INCITS-T11 \| \| Platform PlatformType"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**OtherDedicatedDescriptions**")
 </dt> </dl>
 
-Lo scopo e le funzionalità del sistema informatico. Ad esempio, un sistema dedicato alla stampa potrebbe specificare "11" (Print). Un sistema di utilizzo generico con funzionalità di stampa può essere impostato su "0" (non dedicato) e "11" (Print).
+Scopo e funzionalità del sistema informatico. Ad esempio, un sistema dedicato alla stampa può specificare "11" (Stampa). Un sistema per utilizzo generico con funzionalità di stampa può essere impostato su "0" (non dedicato) e "11" (stampa).
 
 <dt>
 
@@ -130,14 +130,14 @@ Lo scopo e le funzionalità del sistema informatico. Ad esempio, un sistema dedi
 
 <span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>
 
-<span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>**Switch di livello 3** (6)
+<span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>**Commutatore di livello 3** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>
 
-<span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>**Switch ufficio centrale** (7)
+<span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>**Central Office Switch** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -179,7 +179,7 @@ Lo scopo e le funzionalità del sistema informatico. Ad esempio, un sistema dedi
 
 <span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>
 
-<span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>**Caching Web** (13)
+<span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>**Web Caching** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -216,13 +216,13 @@ Questa istanza è dedicata all'hosting del software di gestione del sistema
 
 </dt> <dd>
 
-Un esempio di dispositivo utente dedicato è un telefono cellulare o uno scanner di codice a barre in un negozio che comunica tramite frequenza radio. Questi sistemi sono molto limitati in funzionalità e programmabilità e non sono considerati piattaforme di elaborazione "per utilizzo generico". In alternativa, un esempio di sistema mobile che è "utilizzo generico" (ad esempio, non è dedicato) è un computer portatile. Sebbene sia limitato nella programmabilità, è possibile scaricare il nuovo software e la relativa funzionalità espanso dall'utente.
+Un esempio di dispositivo utente dedicato è un telefono cellulare o uno scanner di codice a barre in un negozio che comunica tramite radiofrequenza. Questi sistemi sono piuttosto limitati in fatto di funzionalità e programmabilità e non sono considerati piattaforme di calcolo per utilizzo generico. In alternativa, un esempio di sistema mobile "per utilizzo generico", ovvero NON dedicato, è un computer portatile. Sebbene sia limitata a livello di programmabilità, è possibile scaricare nuovo software e espanderne le funzionalità da parte dell'utente.
 
 </dd> <dt>
 
 <span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>
 
-<span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>**Ripetitore** (18)
+<span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>**Repeater** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -243,7 +243,7 @@ Un esempio di dispositivo utente dedicato è un telefono cellulare o uno scanner
 
 <span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>
 
-<span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>**Virtualizzatore di archiviazione** (21)
+<span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>**Archiviazione Virtualizer** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -264,7 +264,7 @@ Un esempio di dispositivo utente dedicato è un telefono cellulare o uno scanner
 
 <span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>
 
-<span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>**Testa NAS** (24)
+<span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>**Nas Head** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -285,19 +285,19 @@ Un esempio di dispositivo utente dedicato è un telefono cellulare o uno scanner
 
 <span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>
 
-<span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>**Telefono IP** (27)
+<span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>**Indirizzo IP Telefono** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Management_Controller"></span><span id="management_controller"></span><span id="MANAGEMENT_CONTROLLER"></span>
 
-<span id="Management_Controller"></span><span id="management_controller"></span><span id="MANAGEMENT_CONTROLLER"></span>**Controller di gestione** (28)
+<span id="Management_Controller"></span><span id="management_controller"></span><span id="MANAGEMENT_CONTROLLER"></span>**Controller di** gestione (28)
 
 
 </dt> <dd>
 
-Questa istanza rappresenta hardware specializzato dedicato alla gestione dei sistemi, ad esempio un controller di gestione (BMC) o un processore di servizi di battiscopa.
+Questa istanza rappresenta hardware specializzato dedicato alla gestione dei sistemi, ad esempio un Baseboard Management Controller (BMC) o un processore di servizi.
 
 L'ambito di gestione di un "controller di gestione" è in genere un singolo sistema gestito in cui è contenuto.
 
@@ -305,12 +305,12 @@ L'ambito di gestione di un "controller di gestione" è in genere un singolo sist
 
 <span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>
 
-<span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>**Gestione chassis** (29)
+<span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>**Chassis Manager** (29)
 
 
 </dt> <dd>
 
-Questa istanza rappresenta un sistema dedicato alla gestione di uno chassis del pannello e dei relativi dispositivi contenuti. Questo valore verrebbe utilizzato per rappresentare un controller di scaffale. Un "gestore dello chassis" è un punto di aggregazione per la gestione e può basarsi su controller di gestione subordinati per la gestione delle parti costituenti.
+Questa istanza rappresenta un sistema dedicato alla gestione di uno chassis blade e dei relativi dispositivi contenuti. Questo valore viene usato per rappresentare un controller di scaffale. "Chassis Manager" è un punto di aggregazione per la gestione e può basarsi su controller di gestione subordinati per la gestione delle parti costituenti.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Questa istanza rappresenta un controller di archiviazione RAID contenuto in un c
 
 <span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>
 
-<span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>**Enclosure dispositivi di archiviazione** (31)
+<span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>**Archiviazione dispositivo di archiviazione** (31)
 
 
 </dt> <dd>
@@ -352,7 +352,7 @@ Questa istanza rappresenta un'enclosure che contiene dispositivi di archiviazion
 
 <span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>
 
-<span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>**Libreria di nastri virtuale** (34)
+<span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>**Libreria di nastri virtuali** (34)
 
 
 </dt> <dd>
@@ -374,43 +374,43 @@ Usa l'archiviazione su disco per emulare le librerie di nastri
 
 <span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>
 
-<span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>**PC di rete/thin client** (36)
+<span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>**PC di rete/Thin Client** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>
 
-<span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>**Switch FC** (37)
+<span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>**Commutatore FC** (37)
 
 
 </dt> <dd>
 
-Dedicato al cambio di frame Fibre Channel di livello 2.
+Dedicato al passaggio a frame Fibre Channel di livello 2.
 
 </dd> <dt>
 
 <span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>
 
-<span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>**Switch Ethernet** (38)
+<span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>**Commutatore Ethernet** (38)
 
 
 </dt> <dd>
 
-Dedicato al cambio di frame Ethernet di livello 2
+Dedicato al passaggio a frame Ethernet di livello 2
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32568.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32568..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -420,7 +420,7 @@ Dedicato al cambio di frame Ethernet di livello 2
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -512,7 +512,7 @@ Formato del nome del sistema del computer.
 
 
 
- ("E. 164")
+ ("E.164")
 
 
 </dt> <dd></dd> <dt>
@@ -550,32 +550,32 @@ Formato del nome del sistema del computer.
 **OtherDedicatedDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**Dedicato**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**Dedicato ")**
 </dt> </dl>
 
-Viene descritto come o perché il sistema è dedicato quando la matrice **dedicata** include il valore 2 (other).
+Descrive come o perché il sistema è dedicato quando la matrice **Dedicated** include il valore 2 (Altro).
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities. PowerCapabilities"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Controlli di alimentazione del sistema DMTF \| 001,2 ")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities.PowerCapabilities"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Power Controls \| 001.2")
 </dt> </dl>
 
-Questa proprietà è deprecata. Usare invece il metodo **PowerChangeCapabilities** nella classe **CIM \_ PowerManagementCapabilitiesCIM \_ PowerManagementService** .
+Questa proprietà è deprecata. Usare invece il **metodo PowerChangeCapabilities** nella **classe \_ CiM PowerManagementCapabilitiesCIM \_ PowerManagementService.**
 
 **Descrizione deprecata:** Funzionalità di risparmio energia del sistema.
 
@@ -618,21 +618,21 @@ Questa proprietà è deprecata. Usare invece il metodo **PowerChangeCapabilities
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-**Stato di alimentazione impostabile** (5)
+**Power State Settable** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-**Power Cycling supportato** (6)
+**Risparmio energia supportato** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-**Alimentazione temporizzata supportata** (7)
+**Accensione a tempo supportata** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -642,13 +642,13 @@ Questa proprietà è deprecata. Usare invece il metodo **PowerChangeCapabilities
 **ResetCapability**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sicurezza hardware del sistema DMTF \| 001,4 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Hardware Security \| 001.4")
 </dt> </dl>
 
 Indica se il sistema supporta l'operazione di reimpostazione dell'hardware.
@@ -700,8 +700,8 @@ Indica se il sistema supporta l'operazione di reimpostazione dell'hardware.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -710,7 +710,7 @@ Indica se il sistema supporta l'operazione di reimpostazione dell'hardware.
 
 <dl> <dt>
 
-[**\_Sistema CIM**](cim-system.md)
+[**Sistema \_ CIM**](cim-system.md)
 </dt> </dl>
 
  

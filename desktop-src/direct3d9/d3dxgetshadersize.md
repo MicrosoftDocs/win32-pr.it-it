@@ -1,7 +1,7 @@
 ---
 description: Restituisce le dimensioni in byte del codice byte dello shader.
 ms.assetid: 7dd091f7-fda9-49e1-982d-2eb57d9ecb23
-title: Funzione D3DXGetShaderSize (D3DX9Shader. h)
+title: Funzione D3DXGetShaderSize (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3017c5a5371e99bcf9e1d69827de0227d929f33a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7354431fa8f9e8a177b8ccc63ef434a3f0a88add8e9e4736e3fd5fffb0cea811
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564821"
 ---
-# <a name="d3dxgetshadersize-function"></a>D3DXGetShaderSize (funzione)
+# <a name="d3dxgetshadersize-function"></a>Funzione D3DXGetShaderSize
 
 Restituisce le dimensioni in byte del codice byte dello shader.
 
@@ -40,7 +40,7 @@ UINT D3DXGetShaderSize(
 
 <dl> <dt>
 
-*pFunction* \[ in\]
+*pFunction* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -51,7 +51,7 @@ Puntatore al flusso DWORD della funzione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Restituisce le dimensioni in byte del codice byte dello shader.
 
@@ -61,8 +61,8 @@ Restituisce le dimensioni in byte del codice byte dello shader.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -2,7 +2,7 @@
 description: La proprietà Name di un oggetto SWbemPrivilege è una stringa che descrive in modo univoco un privilegio.
 ms.assetid: cc1cdde7-20ad-4ff7-ad49-43eb46c15df9
 ms.tgt_platform: multiple
-title: Proprietà SWbemPrivilege.Name (wbemdisp. h)
+title: SWbemPrivilege.Name proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b83ccc7c2757c5d5a0746efd4434db3d108b6992
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45a64d0216fa202481d6213f74f7a3a0f06a1b6837d654e7b88b15035f21ba73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611671"
 ---
-# <a name="swbemprivilegename-property"></a>Proprietà SWbemPrivilege.Name
+# <a name="swbemprivilegename-property"></a>SWbemPrivilege.Name proprietà
 
-La proprietà **Name** di un oggetto [**SWbemPrivilege**](swbemprivilege.md) è una stringa che descrive in modo univoco un privilegio. Ad esempio, il privilegio che controlla se un utente può eseguire il metodo Shutdown di un oggetto ha la stringa "SeShutdownPrivilege" nella proprietà **SWbemPrivilege.Name** . Questa proprietà è di sola lettura.
+La **proprietà Name** di un oggetto [**SWbemPrivilege**](swbemprivilege.md) è una stringa che descrive in modo univoco un privilegio. Ad esempio, il privilegio che controlla se un utente può eseguire il metodo shutdown di un oggetto ha la stringa "SeShutdownPrivilege" nella **SWbemPrivilege.Name** proprietà . Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemPrivilege.Name As
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMPRIVILEGE CLSID<br/>                                                        |
-| IID<br/>                      | \_ISWBEMPRIVILEGE IID<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemPrivilege<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemPrivilege<br/>                                                         |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Tasks-for-AZ-Role
-description: Elenco di attività per AZ-Role.
+title: Attributo ms-DS-Tasks-For-Az-Role
+description: Elenco di attività per Az-Role.
 ms.assetid: 3247ccd9-f86d-453e-8150-db52aff11f6a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Tasks-for-AZ-Role
-- attributo msDS-TasksForAzRole-schema AD
+- Schema AD dell'attributo ms-DS-Tasks-For-Az-Role
+- Schema AD dell'attributo msDS-TasksForAzRole
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ffcd5bc033afa6f61ea1aa8c127276994f6d3b4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: da8c1e7a76131de1e1f1890819a60e9d5c5669e2d4098962ebb1a32322fdd0cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544321"
 ---
-# <a name="ms-ds-tasks-for-az-role-attribute"></a>attributo ms-DS-Tasks-for-AZ-Role
+# <a name="ms-ds-tasks-for-az-role-attribute"></a>Attributo ms-DS-Tasks-For-Az-Role
 
-Elenco di attività per AZ-Role.
+Elenco di attività per Az-Role.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Tasks-for-AZ-Role                 |
-| LDAP-Display-Name | msDS-TasksForAzRole                     |
+| CN                | ms-DS-Tasks-For-Az-Role                 |
+| Ldap-Display-Name | msDS-TasksForAzRole                     |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Amministratore di AzRoles                           |
+| Privilegio di aggiornamento  | Amministratore di AzRoles                           |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri. |
 | Attribute-Id      | 1.2.840.113556.1.4.1814                 |
-| System-ID-GUID    | 35319082-8c4a-4646-9386-c2949d49894d    |
+| System-Id-Guid    | 35319082-8c4a-4646-9386-c2949d49894d    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Elenco di attività per AZ-Role.
 | ID collegamento                | 2024                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Elenco di attività per AZ-Role.
 | ID collegamento                | 2024                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Elenco di attività per AZ-Role.
 | ID collegamento                | 2024                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| Is-Single-Valued       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Elenco di attività per AZ-Role.
 | ID collegamento                | 2024                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| A valore singolo       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Elenco di attività per AZ-Role.
 | ID collegamento                | 2024                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| È a valore singolo       | Falso                                             |
+| A valore singolo       | Falso                                             |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classi utilizzate in        | [**ms-DS-AZ-Role**](c-msds-azrole.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 6ab3cadf-a8ea-4a29-8a90-700f8927b339
 title: System.Contact.OtherAddress3PostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43e4bdbdd2cb18fa9419ec8947680576175cbdcb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1199dcf3dcd43cc9574aad23c188488f98a94de7766e0ef29a0b6d2e454726be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554161"
 ---
 # <a name="systemcontactotheraddress3postalcode"></a>System.Contact.OtherAddress3PostalCode
 

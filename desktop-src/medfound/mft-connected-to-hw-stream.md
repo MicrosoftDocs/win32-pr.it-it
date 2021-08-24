@@ -1,19 +1,19 @@
 ---
-description: Specifica se una trasformazione di Media Foundation basata su hardware è connessa a un'altra MFT basata su hardware.
+description: Specifica se una trasformazione Media Foundation basata su hardware (MFT) è connessa a un altro MFT basato su hardware.
 ms.assetid: 9166c43f-d2ae-4dc7-84e9-02146b67efe2
-title: Attributo MFT_CONNECTED_TO_HW_STREAM (Mftransform. h)
+title: MFT_CONNECTED_TO_HW_STREAM attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d5a3e8e4da74b3d581dd5ae4a53a03dc2b0fd67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31ff2a2dea2fcb67cff776ba02c43193b571a382df57a5d0562f3f2cd1fb7248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602871"
 ---
-# <a name="mft_connected_to_hw_stream-attribute"></a>MFT \_ connesso \_ all' \_ \_ attributo del flusso HW
+# <a name="mft_connected_to_hw_stream-attribute"></a>Attributo MFT \_ CONNECTED \_ TO \_ HW \_ STREAM
 
-Specifica se una trasformazione di Media Foundation basata su hardware è connessa a un'altra MFT basata su hardware.
+Specifica se una trasformazione Media Foundation basata su hardware (MFT) è connessa a un altro MFT basato su hardware.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,22 +21,22 @@ Specifica se una trasformazione di Media Foundation basata su hardware è connes
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni in genere non utilizzano questo attributo.
+Le applicazioni in genere non usano questo attributo.
 
-Questo attributo viene utilizzato con MFTs basato su hardware. Quando due MFTs hardware sono connessi all'interno di una topologia, il caricatore della topologia imposta questo attributo su **true** negli oggetti seguenti:
+Questo attributo viene usato con MFT basati su hardware. Quando due MFT hardware sono connessi all'interno di una topologia, il caricatore della topologia imposta questo attributo su **TRUE** negli oggetti seguenti:
 
--   Il flusso di output del MFT upstream
--   Flusso di input della MFT downstream
+-   Flusso di output del MFT upstream
+-   Flusso di input del MFT downstream
 
-Per ottenere l'archivio di attributi per il flusso di output, il caricatore della topologia chiama [**IMFTransform:: GetOutputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreamattributes) nella MFT upstream. Per ottenere l'archivio di attributi per il flusso di input, il caricatore della topologia chiama [**IMFTransform:: GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes) nella MFT downstream.
+Per ottenere l'archivio attributi per il flusso di output, il caricatore della topologia chiama [**IMFTransform::GetOutputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreamattributes) sul MFT upstream. Per ottenere l'archivio attributi per il flusso di input, il caricatore della topologia chiama [**IMFTransform::GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes) sul MFT downstream.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,9 +44,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -54,10 +54,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs hardware](hardware-mfts.md)
+[MFT hardware](hardware-mfts.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

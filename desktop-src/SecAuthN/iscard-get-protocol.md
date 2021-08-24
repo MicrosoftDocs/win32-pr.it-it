@@ -1,7 +1,7 @@
 ---
-description: Recupera l'identificatore del protocollo attualmente in uso nella smart card.
+description: Recupera l'identificatore del protocollo attualmente in uso nel smart card.
 ms.assetid: 68c75e98-da5c-4e3e-9836-369941751fb0
-title: 'Metodo IsValid:: get_Protocol (Scardmgr. h)'
+title: Metodo ISCard::get_Protocol (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: fb58f890da85e3348ede6af70a006f98daac38a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f59522f9ec5f22976874aff225d73fc44e8e0cfa8f06022e22312ab8bd80858
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482161"
 ---
-# <a name="iscardget_protocol-method"></a>Metodo IsValid:: Get \_ Protocol
+# <a name="iscardget_protocol-method"></a>Metodo ISCard::get \_ Protocol
 
-\[Il metodo **get \_ Protocol** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo get \_ Protocol** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **get \_ Protocol** recupera l'identificatore del protocollo attualmente in uso nella [*Smart Card*](../secgloss/s-gly.md).
+Il **metodo \_ get Protocol** recupera l'identificatore del protocollo attualmente in uso nel [*smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_Protocol(
 
 <dl> <dt>
 
-*pProtocol* \[ out\]
+*pProtocol* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'identificatore del protocollo.
@@ -56,9 +56,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                         |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata correttamente.<br/>        |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pProtocol* non è valido.<br/>  |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Un puntatore errato è stato passato in *pProtocol*.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata correttamente.<br/>        |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pProtocol* non è valido.<br/>  |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | È stato passato un puntatore non valido in *pProtocol*.<br/> |
 
 
 
@@ -66,11 +66,11 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come recuperare l'identificatore del protocollo attualmente in uso nella smart card.
+Nell'esempio seguente viene illustrato come recuperare l'identificatore del protocollo attualmente in uso nel smart card.
 
 
 ```C++
@@ -107,14 +107,14 @@ switch (scProtocol)
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID \_ ISCard è definito come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -122,19 +122,19 @@ switch (scProtocol)
 
 <dl> <dt>
 
-[**Ottieni \_ ATR**](iscard-get-atr.md)
+[**get \_ Atr**](iscard-get-atr.md)
 </dt> <dt>
 
-[**ottenere \_ CardHandle**](iscard-get-cardhandle.md)
+[**get \_ CardHandle**](iscard-get-cardhandle.md)
 </dt> <dt>
 
-[**ottenere il \_ contesto**](iscard-get-context.md)
+[**Get \_ Context**](iscard-get-context.md)
 </dt> <dt>
 
-[**ottenere \_ lo stato**](iscard-get-status.md)
+[**get \_ Status**](iscard-get-status.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> </dl>
 
  

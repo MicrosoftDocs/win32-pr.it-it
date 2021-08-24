@@ -1,11 +1,11 @@
 ---
-title: ms-DS-testa di ponte-server-attributo usato
-description: Elenco di server Head Bridge usati da KCC nell'esecuzione precedente.
+title: Attributo ms-DS-BridgeHead-Servers-Used
+description: Elenco di server head bridge usati da KCC nell'esecuzione precedente.
 ms.assetid: f99e9ef2-1a64-49ab-b6b7-7613f3246e61
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-testa di ponte-server-schema di AD attributo usato
-- attributo msDS-BridgeHeadServersUsed-schema AD
+- Ms-DS-BridgeHead-Servers-Used attribute AD Schema
+- Schema AD dell'attributo msDS-BridgeHeadServersUsed
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52dca97dc5d8f501588cebc04ceae090fd1ce69c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99d6f26e28528f633e9dd0593e60d2e4d7b54780740feab35ca211a2494751ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552721"
 ---
-# <a name="ms-ds-bridgehead-servers-used-attribute"></a>ms-DS-testa di ponte-server-attributo usato
+# <a name="ms-ds-bridgehead-servers-used-attribute"></a>Attributo ms-DS-BridgeHead-Servers-Used
 
-Elenco di server Head Bridge usati da KCC nell'esecuzione precedente.
+Elenco di server head bridge usati da KCC nell'esecuzione precedente.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------|
-| CN                | ms-DS-testa di ponte-server-usati                   |
-| LDAP-Display-Name | msDS-BridgeHeadServersUsed                      |
+| CN                | ms-DS-BridgeHead-Servers-Used                   |
+| Ldap-Display-Name | msDS-BridgeHeadServersUsed                      |
 | Dimensione              | \-                                              |
-| Privilegio aggiornamento  | \-                                              |
+| Aggiorna privilegio  | \-                                              |
 | Frequenza di aggiornamento  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.2049                         |
-| System-ID-GUID    | 3ced1465-7b71-2541-8780-1e1ea6243a82            |
+| System-Id-Guid    | 3ced1465-7b71-2541-8780-1e1ea6243a82            |
 | Sintassi            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
@@ -55,15 +55,15 @@ Elenco di server Head Bridge usati da KCC nell'esecuzione precedente.
 | ID collegamento                | 2160                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000019                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Elenco di server Head Bridge usati da KCC nell'esecuzione precedente.
 | ID collegamento                | 2160                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000019                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Elenco di server Head Bridge usati da KCC nell'esecuzione precedente.
 | ID collegamento                | 2160                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000019                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
