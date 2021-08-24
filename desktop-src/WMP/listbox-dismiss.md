@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. Ignora
-description: Il metodo Dismiss nasconde il controllo.
+title: LISTBOX.dismiss
+description: Il metodo dismiss nasconde il controllo.
 ms.assetid: 102f1223-7b03-4d60-b746-9abb4c8aef10
 keywords:
-- LISTBOX. Ignora Media Player Windows
+- LISTBOX.dismiss Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 54a10fc643df91d3ce066f5abcec97f04c943295
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5f1190d1f1bb5ae0481074f96c6b7d3bd2010bbe189f950fc6228e68f4702ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617021"
 ---
-# <a name="listboxdismiss"></a>LISTBOX. Ignora
+# <a name="listboxdismiss"></a>LISTBOX.dismiss
 
-Il metodo **Dismiss** nasconde il controllo.
+Il **metodo dismiss** nasconde il controllo.
 
 ``` syntax
         elementID.dismiss()
@@ -38,7 +38,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene utilizzato principalmente con l'elemento **popup** , che rappresenta un controllo casella di riepilogo visualizzato solo quando necessario.
+Questo metodo viene utilizzato principalmente con **l'elemento POPUP,** che rappresenta un controllo casella di riepilogo che viene visualizzato solo quando necessario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Questo metodo viene utilizzato principalmente con l'elemento **popup** , che rap
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -54,10 +54,10 @@ Questo metodo viene utilizzato principalmente con l'elemento **popup** , che rap
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. Show**](listbox-show.md)
+[**LISTBOX.show**](listbox-show.md)
 </dt> <dt>
 
 [**Elemento POPUP**](popup-element.md)

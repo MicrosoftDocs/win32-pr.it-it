@@ -1,31 +1,31 @@
 ---
-title: Effetto esposizione
-description: Aumentare o ridurre l'esposizione dell'immagine.
+title: Effetto di esposizione
+description: Aumenta o riduce l'esposizione dell'immagine.
 ms.assetid: d384f539-5c19-53c7-e52b-bf833e221449
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb6f5bda52fecc0b5e3896515b04a6560f17da49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcdcd99e125251c3144d96ffd6054897e6801eb3299c1d1ae90e37494620faea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652926"
 ---
-# <a name="exposure-effect"></a>Effetto esposizione
+# <a name="exposure-effect"></a>Effetto di esposizione
 
-Aumentare o ridurre l'esposizione dell'immagine.
+Aumenta o riduce l'esposizione dell'immagine.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Exposure.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/exposure-effect.png)
+![esempio di output dell'effetto](images/exposure-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -46,9 +46,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto di esposizione sono definite dall'enumerazione [**d2d1 \_ Exposure \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_exposure_prop) .
+Le proprietà per l'effetto di esposizione sono definite [**dall'enumerazione D2D1 \_ EXPOSURE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_exposure_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,10 +56,10 @@ Le proprietà per l'effetto di esposizione sono definite dall'enumerazione [**d2
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Argomenti correlati

@@ -1,10 +1,10 @@
 ---
-title: Attributo di archiviazione di livello successivo
-description: Questo attributo indica l'archivio di classi successivo in cui eseguire la ricerca.
+title: Attributo Next-Level-Store
+description: Questo attributo indica l'archivio classi successivo in cui eseguire la ricerca.
 ms.assetid: 6a2416bc-7b93-457b-809c-2a02932376bf
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di archiviazione di livello successivo
+- Schema AD dell'attributo Next-Level-Store
 - Schema AD dell'attributo nextLevelStore
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad723aeddbe2223fcde0fa5231a456ade1b99719
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1af9d6476ff4f34625fcea2c2e494e001b99524569b0263284e6d11e90c08b08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703201"
 ---
-# <a name="next-level-store-attribute"></a>Attributo di archiviazione di livello successivo
+# <a name="next-level-store-attribute"></a>Attributo Next-Level-Store
 
-Questo attributo indica l'archivio di classi successivo in cui eseguire la ricerca.
+Questo attributo indica l'archivio classi successivo in cui eseguire la ricerca.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Archivio di livello successivo                        |
-| LDAP-Display-Name | nextLevelStore                          |
+| Ldap-Display-Name | nextLevelStore                          |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.214                  |
-| System-ID-GUID    | bf9679da-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf9679da-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo indica l'archivio di classi successivo in cui eseguire la ricer
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> |
 
 
 

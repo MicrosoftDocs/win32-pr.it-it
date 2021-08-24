@@ -1,26 +1,26 @@
 ---
-title: Informazioni su Servizi Desktop remoto
-description: Servizi Desktop remoto (precedentemente noto come servizi Terminal) fornisce funzionalità simili a quelle di un ambiente basato su terminale, centralizzato o mainframe, in cui più terminali si connettono a un computer host.
+title: Informazioni Servizi Desktop remoto
+description: Servizi Desktop remoto (precedentemente noto come Servizi terminal) offre funzionalità simili a un ambiente basato su terminale, host centralizzato o mainframe, in cui più terminali si connettono a un computer host.
 ms.assetid: 5b5b0f97-f973-4f52-a965-c9c2390e6c8d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Servizi Desktop remoto, informazioni
+- Servizi Desktop remoto Servizi Desktop remoto , about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4644170cfca3b4bacdd6db647e35549d56844e9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 680ccae3d8944c92d64da526831142d662ac5dc38157c741cf8f5426768fc745
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681461"
 ---
-# <a name="about-remote-desktop-services"></a>Informazioni su Servizi Desktop remoto
+# <a name="about-remote-desktop-services"></a>Informazioni Servizi Desktop remoto
 
-Servizi Desktop remoto (precedentemente noto come servizi Terminal) fornisce funzionalità simili a quelle di un ambiente basato su terminale, centralizzato o mainframe, in cui più terminali si connettono a un computer host. Ogni terminale fornisce un canale per l'input e l'output tra un utente e il computer host. Un utente può accedere a un terminale e quindi eseguire applicazioni nel computer host, accedere a file, database, risorse di rete e così via. Ogni sessione terminal è indipendente, con il sistema operativo host che gestisce i conflitti tra più utenti che tendono a condividere le risorse condivise.
+Servizi Desktop remoto (precedentemente noto come Servizi terminal) offre funzionalità simili a un ambiente basato su terminale, host centralizzato o mainframe, in cui più terminali si connettono a un computer host. Ogni terminale fornisce un conduit per l'input e l'output tra un utente e il computer host. Un utente può accedere a un terminale e quindi eseguire applicazioni nel computer host, accedendo a file, database, risorse di rete e così via. Ogni sessione del terminale è indipendente e il sistema operativo host gestisce i conflitti tra più utenti che si contendono le risorse condivise.
 
-La differenza principale tra Servizi Desktop remoto e l'ambiente mainframe tradizionale è che i terminali muti in un ambiente mainframe forniscono solo input e output basati su caratteri. Un client o un emulatore di Connessione Desktop remoto (RDC) fornisce un'interfaccia utente grafica completa che include un desktop del sistema operativo Windows e il supporto per un'ampia gamma di dispositivi di input, ad esempio una tastiera e un mouse.
+La differenza principale tra Servizi Desktop remoto e l'ambiente mainframe tradizionale è che i terminali in un ambiente mainframe forniscono solo input e output basati su caratteri. Un client Connessione Desktop remoto (RDC) o un emulatore fornisce un'interfaccia utente grafica completa che include un desktop del sistema operativo Windows e il supporto per un'ampia gamma di dispositivi di input, ad esempio tastiera e mouse.
 
-Nell'ambiente Servizi Desktop remoto, un'applicazione viene eseguita interamente nel server di host sessione Desktop remoto (host sessione Desktop remoto), in precedenza noto come Terminal Server. Il client RDC non esegue alcuna elaborazione locale del software dell'applicazione. Il server trasmette l'interfaccia utente grafica al client. Il client trasmette di nuovo l'input dell'utente al server.
+Nell'Servizi Desktop remoto, un'applicazione viene eseguita interamente nel server Host sessione Desktop remoto (host sessione Desktop remoto) (precedentemente noto come server terminal). Il client RDC non esegue alcuna elaborazione locale del software applicativo. Il server trasmette l'interfaccia utente grafica al client. Il client trasmette l'input dell'utente al server.
 
 Per ulteriori informazioni, vedere gli argomenti seguenti.
 
@@ -28,45 +28,45 @@ Per ulteriori informazioni, vedere gli argomenti seguenti.
 
 <dl> <dt>
 
-[Modificare il reindirizzamento dei dispositivi predefinito](modify-device-redirection-default-.md)
+[Modificare il valore predefinito di Reindirizzamento dispositivo](modify-device-redirection-default-.md)
 </dt> <dd>
 
-Poiché Desktop remoto server gateway tentano di applicare criteri di reindirizzamento dei dispositivi sicuri prima di passare la connessione client tramite a un server host sessione Desktop remoto, potrebbe essere necessario disabilitare questa impostazione predefinita in alcuni casi.
+Poiché Desktop remoto server gateway tentano di applicare criteri di reindirizzamento dei dispositivi sicuri prima di passare la connessione client a un server host sessione Desktop remoto, in alcuni casi potrebbe essere necessario disabilitare questa impostazione predefinita.
 
 </dd> <dt>
 
 [Remote Desktop Protocol](remote-desktop-protocol.md)
 </dt> <dd>
 
-Il protocollo Desktop remoto Microsoft (RDP) fornisce funzionalità di visualizzazione e input Remote sulle connessioni di rete per le applicazioni basate su Windows in esecuzione in un server.
+Il protocollo RDP (Desktop remoto Microsoft Protocol) offre funzionalità remote di visualizzazione e input su connessioni di rete per Windows applicazioni basate su Windows in esecuzione in un server.
 
 </dd> <dt>
 
 [API Servizi Desktop remoto](terminal-services-api.md)
 </dt> <dd>
 
-L'API Servizi Desktop remoto è particolarmente utile per le applicazioni client/server e le applicazioni per Servizi Desktop remoto l'amministrazione.
+L Servizi Desktop remoto aPI è particolarmente utile per le applicazioni client/server e le applicazioni per Servizi Desktop remoto amministrazione.
 
 </dd> <dt>
 
-[Applicazioni di gestione Servizi Desktop remoto](terminal-services-management-applications.md)
+[Servizi Desktop remoto applicazioni di gestione](terminal-services-management-applications.md)
 </dt> <dd>
 
-Descrive le applicazioni di gestione supportate da Servizi Desktop remoto.
+Vengono descritte le applicazioni di Servizi Desktop remoto supportate da .
 
 </dd> <dt>
 
-[Linee guida per la programmazione Servizi Desktop remoto](terminal-services-programming-guidelines.md)
+[Servizi Desktop remoto linee guida per la programmazione](terminal-services-programming-guidelines.md)
 </dt> <dd>
 
-Argomenti che forniscono linee guida per lo sviluppo di applicazioni in un ambiente Servizi Desktop remoto.
+Argomenti che forniscono linee guida per lo sviluppo di applicazioni in Servizi Desktop remoto ambiente.
 
 </dd> <dt>
 
-[Sessioni di Desktop remoto](terminal-services-sessions.md)
+[Desktop remoto sessioni](terminal-services-sessions.md)
 </dt> <dd>
 
-Poiché ogni accesso a un client di Connessione Desktop remoto (RDC) riceve un ID sessione separato, l'esperienza utente è simile a quella di essere connessi contemporaneamente a più computer; ad esempio, un computer Office e un computer di casa.
+Poiché ogni accesso a un client Connessione Desktop remoto (RDC) riceve un ID sessione separato, l'esperienza utente è simile all'accesso a più computer contemporaneamente; ad esempio un computer dell'ufficio e un computer domestico.
 
 </dd> <dt>
 
@@ -77,17 +77,17 @@ Viene descritto come installare un Connessione Web Desktop remoto.
 
 </dd> <dt>
 
-[Risorse in un server di host sessione Desktop remoto](resources-on-a-terminal-server.md)
+[Risorse in un server host Desktop remoto sessione](resources-on-a-terminal-server.md)
 </dt> <dd>
 
-Più utenti possono accedere simultaneamente a un singolo server Host sessione Desktop remoto, condividendo le risorse hardware e software del server.
+Più utenti possono accedere contemporaneamente a un singolo server Host sessione Desktop remoto, condividendo le risorse hardware e software del server.
 
 </dd> <dt>
 
 [Novità di Servizi Desktop remoto](what-s-new-in-terminal-services.md)
 </dt> <dd>
 
-Argomenti che descrivono le modifiche apportate a ogni versione dell'API Servizi Desktop remoto.
+Argomenti che descrivono le modifiche in ogni versione dell'API Servizi Desktop remoto.
 
 </dd> </dl>
 
@@ -95,12 +95,12 @@ Argomenti che descrivono le modifiche apportate a ogni versione dell'API Servizi
 
 <dl> <dt>
 
-[Connettersi a un altro computer utilizzando Connessione Desktop remoto](https://windows.microsoft.com/windows/connect-using-remote-desktop-connection#connect-using-remote-desktop-connection=windows-7)
+[Connessione a un altro computer usando Connessione Desktop remoto](https://windows.microsoft.com/windows/connect-using-remote-desktop-connection#connect-using-remote-desktop-connection=windows-7)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Media. imageSourceWidth
+title: Media.imageSourceWidth
 description: La proprietà imageSourceWidth recupera la larghezza dell'elemento multimediale corrente in pixel.
 ms.assetid: 6559bd51-cec2-4fc6-aab8-f2fdd1d59bae
 keywords:
-- Media Player Windows Media. imageSourceWidth
+- Media.imageSourceWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff2a3fef7b74a3d033b058f0afd1f6eece007bd7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 710b6f0d91d7d734b12ad75f201fcd45037f67adf2c8ed3cb60f3ee5fcf6c222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508401"
 ---
-# <a name="mediaimagesourcewidth"></a>Media. imageSourceWidth
+# <a name="mediaimagesourcewidth"></a>Media.imageSourceWidth
 
-La proprietà **imageSourceWidth** recupera la larghezza dell'elemento multimediale corrente in pixel.
+La **proprietà imageSourceWidth** recupera la larghezza dell'elemento multimediale corrente in pixel.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *currentMedia*. **imageSourceWidth**
+*lettore*. *currentMedia*. **imageSourceWidth**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
 Se l'elemento multimediale non è quello corrente, questa proprietà restituisce zero.
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato il *supporto*. **imageSourceWidth** per visualizzare la dimensione dell'immagine, in pixel, dell' **elemento multimediale corrente. Le informazioni vengono stampate in un elemento TEXTAREA HTML denominato VideoSize. L'oggetto Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene *utilizzato Media*. **imageSourceWidth** per visualizzare le dimensioni dell'immagine, in pixel, **dell'elemento multimediale corrente. Le informazioni vengono stampate in un elemento HTML TEXTAREA denominato VideoSize. L'oggetto** Player è stato creato con ID = "player".
 
 
 ```JScript
@@ -76,7 +76,7 @@ if (NewState == 13){
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -88,13 +88,13 @@ if (NewState == 13){
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

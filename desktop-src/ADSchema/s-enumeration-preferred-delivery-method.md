@@ -1,10 +1,10 @@
 ---
-title: Sintassi di enumerazione (metodo di recapito preferito)
-description: Sintassi di enumerazione (metodo di recapito preferito).
+title: Sintassi enumeration(Preferred-Delivery-Method)
+description: Sintassi enumeration(preferred-delivery-method).
 ms.assetid: fab085bc-8314-4cfb-acc8-5f3ef7fd5467
 ms.tgt_platform: multiple
 keywords:
-- Sintassi dell'enumerazione (metodo di recapito preferito)
+- Sintassi enumeration(Preferred-Delivery-Method) Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bd60f18ad796e086326058dbe7908d31d3e54bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dab46225dc625b887d984ae959ecfddaade7949fd808b02d45887b55d198dbe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702581"
 ---
-# <a name="enumerationpreferred-delivery-method-syntax"></a>Sintassi di enumerazione (metodo di recapito preferito)
+# <a name="enumerationpreferred-delivery-method-syntax"></a>Sintassi enumeration(Preferred-Delivery-Method)
 
-Sintassi di enumerazione (metodo di recapito preferito).
+Sintassi enumeration(preferred-delivery-method).
 
 
 
@@ -30,17 +30,17 @@ Sintassi di enumerazione (metodo di recapito preferito).
 |--------------|---------------------------------------------------------------------------|
 | Nome         | Enumerazione (metodo di recapito preferito)                                    |
 | ID sintassi    | 2.5.5.9                                                                   |
-| ID OM        | 10                                                                        |
+| OM ID        | 10                                                                        |
 | Tipo MAPI    | LONG                                                                      |
-| Tipo di annunci     | ADSTYPE \_ Integer                                                          |
-| Tipo Variant | VT \_ I4                                                                    |
+| Tipo di ADS     | ADSTYPE \_ INTEGER                                                          |
+| Tipo variant | VT \_ I4                                                                    |
 | Tipo SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Definito da ITU. Active Directory lo considera come un numero intero.
+Definito dall'ITU. Active Directory lo considera come un numero intero.
 
 ## <a name="see-also"></a>Vedi anche
 

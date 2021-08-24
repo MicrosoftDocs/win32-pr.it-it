@@ -1,26 +1,26 @@
 ---
-title: Proprietà PersistCacheDirectory di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà PersistCacheDirectory di IMsRdpClientAdvancedSettings
+title: Proprietà PersistCacheDirectory IMsRdpClientAdvancedSettings
+description: Questa proprietà non è supportata. | Proprietà PersistCacheDirectory IMsRdpClientAdvancedSettings
 ms.assetid: 4e92a1c8-a9e6-47c5-b231-e5c1a7e0701c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà PersistCacheDirectory
-- Servizi Desktop remoto proprietà PersistCacheDirectory, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà PersistCacheDirectory
+- Impostazione della proprietà PersistCacheDirectory Servizi Desktop remoto
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà PersistCacheDirectory
+- Proprietà PersistCacheDirectory Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , PersistCacheDirectory
 topic_type:
 - apiref
 api_name:
@@ -46,14 +46,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dab6b8e6c20aca6032cb8e8538a77af0e0cf5afe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 39c5167b56c53d01501dd59f2577b22d1c28acb2c2314bd52a86e9b55e6feb07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574211"
 ---
-# <a name="imsrdpclientadvancedsettingspersistcachedirectory-property"></a>IMsRdpClientAdvancedSettings::P proprietà ersistCacheDirectory
+# <a name="imsrdpclientadvancedsettingspersistcachedirectory-property"></a>Proprietà IMsRdpClientAdvancedSettings::P ersistCacheDirectory
 
 Questa proprietà non è supportata.
 
@@ -76,7 +76,7 @@ Nuovo percorso.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,7 +89,7 @@ Restituisce un valore **\_ false**.
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

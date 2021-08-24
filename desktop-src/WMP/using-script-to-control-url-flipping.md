@@ -1,56 +1,56 @@
 ---
-title: Uso dello script per controllare il capovolgimento degli URL
-description: Uso dello script per controllare il capovolgimento degli URL
+title: Uso dello script per controllare il capovolgimento dell'URL
+description: Uso dello script per controllare il capovolgimento dell'URL
 ms.assetid: ec504ecf-10ef-4b90-bee6-8d149c251ee5
 keywords:
 - Windows Media Player, presentazioni basate sul Web
-- Modello a oggetti di Windows Media Player, presentazioni basate sul Web
+- Windows Media Player a oggetti, presentazioni basate sul Web
 - modello a oggetti, presentazioni basate sul Web
-- Presentazioni Windows Media Player per dispositivi mobili, basate sul Web
-- Windows Media Player ActiveX Control, presentazioni basate sul Web
-- Controllo ActiveX Windows Media Player Mobile, presentazioni basate sul Web
-- Controllo ActiveX, presentazioni basate sul Web
-- Windows Media Player, capovolgimento URL
-- Modello a oggetti di Windows Media Player, capovolgimento degli URL
-- modello a oggetti, capovolgimento URL
-- Windows Media Player Mobile, capovolgimento URL
-- Controllo ActiveX Windows Media Player, capovolgimento URL
-- Controllo ActiveX Windows Media Player Mobile, capovolgimento URL
-- Controllo ActiveX, capovolgimento URL
-- Presentazioni basate sul Web, capovolgimento degli URL
-- creazione di presentazioni basate sul Web, capovolgimento degli URL
-- Capovolgimento URL
-- Windows Media Player, streaming multimediale avanzato
-- Modello a oggetti di Windows Media Player, streaming multimediale avanzato
-- modello a oggetti, flusso multimediale avanzato
-- Windows Media Player Mobile, streaming multimediale avanzato
-- Controllo ActiveX di Windows Media Player, streaming multimediale avanzato
-- Controllo ActiveX Windows Media Player Mobile, streaming multimediale avanzato
-- Controllo ActiveX, streaming multimediale avanzato
-- Presentazioni basate sul Web, streaming multimediale avanzato
-- creazione di presentazioni basate sul Web, streaming multimediale avanzato
-- streaming multimediale avanzato
+- Windows Media Player Presentazioni per dispositivi mobili basate sul Web
+- Windows Media Player ActiveX, presentazioni basate sul Web
+- Windows Media Player Controllo ActiveX per dispositivi mobili, presentazioni basate sul Web
+- ActiveX controllo, presentazioni basate sul Web
+- Windows Media Player,CAPOVOLGIMENTO URL
+- Windows Media Player a oggetti, capovolgimento URL
+- modello a oggetti, capovolgimento url
+- Windows Media Player Mobile, CAPOVOLGIMENTO URL
+- Windows Media Player ActiveX controllo, capovolgimento url
+- Windows Media Player Mobile ActiveX control,URL fliping
+- ActiveX controllo, capovolgimento url
+- Presentazioni basate sul Web, capovolgimento url
+- creazione di presentazioni basate sul Web, capovolgimento url
+- CAPOVOLGIMENTO DELL'URL
+- Windows Media Player, rich media streaming
+- Windows Media Player a oggetti, rich media streaming
+- modello a oggetti, rich media streaming
+- Windows Media Player Streaming multimediale per dispositivi mobili
+- Windows Media Player ActiveX, flusso multimediale completo
+- Windows Media Player Controllo ActiveX per dispositivi mobili, streaming multimediale completo
+- ActiveX, flusso multimediale completo
+- Presentazioni basate sul Web, rich media streaming
+- creazione di presentazioni basate sul Web, rich media streaming
+- rich media streaming
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4815562bba92d67bb4b02ea0317d6c29accd9262
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 9470bf2b812d36bceb6159ab089e3b08c49bc84515320872b125ed6519568141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "104397043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507131"
 ---
-# <a name="using-script-to-control-url-flipping"></a>Uso dello script per controllare il capovolgimento degli URL
+# <a name="using-script-to-control-url-flipping"></a>Uso dello script per controllare il capovolgimento dell'URL
 
-Quando un utente si connette a un flusso multimediale avanzato mentre il flusso è già in corso, è possibile che la pagina Web trasmessa venga visualizzata prima che tutti gli elementi siano arrivati e siano stati memorizzati nella cache se Windows Media Player richiama automaticamente l'URL. Quando si verifica questa situazione, l'utente visualizza una pagina Web vuota o incompleta finché non arriva il set di dati successivo nella cache.
+Quando un utente si connette a un flusso multimediale completo mentre il flusso è già in corso, è possibile che la pagina Web trasmessa venga visualizzata prima che tutti gli elementi siano arrivati e memorizzati nella cache se Windows Media Player richiama automaticamente l'URL. In questo caso, l'utente visualizza una pagina Web vuota o incompleta fino all'arrivo del set di dati successivo nella cache.
 
-È possibile evitare di visualizzare una pagina Web vuota o incompleta richiamando l'URL utilizzando lo script anziché consentire a Windows Media Player di eseguirlo automaticamente. In questo modo, è possibile ignorare il primo capovolgimento dell'URL e quindi richiamare gli URL successivi usando il codice di script.
+È possibile evitare di visualizzare una pagina Web vuota o incompleta richiamando l'URL usando lo script Windows Media Player di farlo automaticamente. In questo modo, è possibile ignorare il primo capovolgimento dell'URL e quindi richiamare gli URL successivi usando il codice script.
 
 > [!Note]  
-> In questa sezione si presuppone che si stia eseguendo lo streaming HTML con Windows Media Encoder 9 Series SDK e che sia stato impostato il flusso HTML per la ripetizione.
+> In questa sezione si presuppone che il codice HTML sia in streaming con Windows Media Encoder 9 Series SDK e che il flusso HTML sia stato impostato per la ripetizione.
 
- 
+ 
 
-Per prima cosa, è necessario creare una pagina Web con frame che contenga il frame con il lettore incorporato e il frame in cui viene visualizzato il codice HTML di streaming. Ognuno di questi due frame visualizzerà inizialmente una pagina Web separata, pertanto si creerà un totale di tre pagine Web. Nell'esempio di codice seguente viene illustrata la pagina Web Frameset:
+In primo luogo, è necessario creare una pagina Web del set di frame per contenere il frame con il lettore incorporato e il frame che visualizza il codice HTML di streaming. Ognuno di questi due frame inizialmente visualizza una pagina Web separata, quindi si creerà un totale di tre pagine Web. Il codice di esempio seguente illustra la pagina Web del set di frame:
 
 
 ```HTML
@@ -77,7 +77,7 @@ Per prima cosa, è necessario creare una pagina Web con frame che contenga il fr
 
 
 
-Nell'esempio di pagina Web precedente sono incorporati due frame. Il primo frame viene visualizzato nella parte sinistra della finestra del browser e viene visualizzata la pagina Web denominata incorpora \_player.htm. Il codice di esempio seguente crea questa pagina Web:
+L'esempio di pagina Web precedente incorpora due frame. Il primo frame viene visualizzato nella metà sinistra della finestra del browser e visualizza la pagina Web denominata embed \_player.htm. Il codice di esempio seguente crea questa pagina Web:
 
 
 ```HTML
@@ -121,7 +121,7 @@ Nell'esempio di pagina Web precedente sono incorporati due frame. Il primo frame
 
 
 
-Il secondo frame del frame viene visualizzato nella parte destra della finestra del browser e visualizza una pagina Web denominata "blank.htm". Il codice di esempio seguente crea questa pagina Web:
+Il secondo frame nel set di frame viene visualizzato nella metà destra della finestra del browser e visualizza una pagina Web denominata "blank.htm". Il codice di esempio seguente crea questa pagina Web:
 
 
 ```HTML
@@ -138,23 +138,23 @@ Loading...
 
 
 
-Quando la pagina frameset viene caricata nel browser, il riquadro sinistro mostra il lettore incorporato e il frame destro Mostra il testo "caricamento..." informare l'utente che saranno più prossimi i dati. Quando il primo comando script URL arriva dal flusso HTML, il gestore eventi modifica semplicemente il valore del flag **booleano** . Quando ogni comando script URL successivo arriva dal flusso HTML, lo script nel gestore eventi carica il nuovo URL nel frame denominato "Content" e la pagina Web completa viene visualizzata nel frame che si trova nella metà destra della finestra del browser.
+Quando la pagina del set di frame viene caricata nel browser, il frame sinistro mostra il lettore incorporato e il frame destro mostra il testo "Caricamento in corso..." per informare l'utente che altri dati sono in arrivo. Quando il primo comando di script URL arriva dal flusso HTML, il gestore eventi modifica semplicemente il valore del flag **booleano.** Quando ogni comando di script URL successivo arriva dal flusso HTML, lo script nel gestore eventi carica il nuovo URL nel frame denominato "content" e la pagina Web completa viene visualizzata nel frame situato nella metà destra della finestra del browser.
 
-Per ulteriori informazioni sul flusso di HTML utilizzando Windows Media, vedere Windows Media Encoder SDK.
+Per altre informazioni sullo streaming DI HTML Windows Media, vedere l'Windows Media Encoder SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Streaming multimediale avanzato**](rich-media-streaming.md)
+[**Rich Media Streaming**](rich-media-streaming.md)
 </dt> <dt>
 
-[**Capovolgimento URL**](url-flipping.md)
+[**CAPOVOLGIMENTO URL**](url-flipping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

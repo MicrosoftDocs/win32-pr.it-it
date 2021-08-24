@@ -1,22 +1,22 @@
 ---
-title: Interfacce di oggetti permanenti (ADSI)
-description: In questo argomento vengono elencate le interfacce ADSI che creano oggetti persistenti nella directory.
+title: Interfacce ADSI (Persistent Object Interface)
+description: In questo argomento vengono elencate le interfacce ADSI che creano oggetti persistenti nella directory .
 ms.assetid: cbd70e89-c8cc-48b2-af00-3df613b0908e
 ms.tgt_platform: multiple
 keywords:
-- ADSI (interfacce oggetto permanenti)
+- interfacce ad oggetti persistenti ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe82aa8dbfb14e466d804a280c1b025916bbe90a
-ms.sourcegitcommit: 8ea1a82717bd3dbb3457be0697329aa37fb13f08
+ms.openlocfilehash: 4aaaad41baeca7e54e8546e9b313550d9eb935a8a253ad7bb5dd49bbd2091719
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "104117281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637791"
 ---
-# <a name="persistent-object-interfaces-adsi"></a>Interfacce di oggetti permanenti (ADSI)
+# <a name="persistent-object-interfaces-adsi"></a>Interfacce ADSI (Persistent Object Interface)
 
-In questa sezione vengono descritte le interfacce oggetto permanenti seguenti:
+In questa sezione vengono descritte le interfacce degli oggetti persistenti seguenti:
 
 -   [**IADsCollection**](/windows/desktop/api/Iads/nn-iads-iadscollection)
 -   [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)
@@ -33,9 +33,9 @@ In questa sezione vengono descritte le interfacce oggetto permanenti seguenti:
 -   [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice)
 -   [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser)
 
- 
+ 
 
- 
+ 
 
 
 

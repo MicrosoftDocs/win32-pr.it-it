@@ -1,11 +1,11 @@
 ---
-title: Attributo Options-Location
+title: Options-Location attributo
 description: Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che contengono le informazioni sulle opzioni.
 ms.assetid: 2b357733-620f-4ad7-ba69-209095e98aa6
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Options-Location attribute
-- Schema AD dell'attributo optionsLocation
+- Options-Location schema AD dell'attributo
+- Attributo optionsLocation Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72b33089770d4d9b7cd869cb6375f6224ecd361a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa40dfc13cc1f90ab5345a496cc2c6753507846ddd9f09795121565642e3c3dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702831"
 ---
-# <a name="options-location-attribute"></a>Attributo Options-Location
+# <a name="options-location-attribute"></a>Options-Location attributo
 
 Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che contengono le informazioni sulle opzioni.
 
@@ -30,12 +30,12 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Options-Location                     |
-| LDAP-Display-Name | optionsLocation                      |
+| Ldap-Display-Name | optionsLocation                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.713               |
-| System-ID-GUID    | 963d274e-48be-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 963d274e-48be-11d1-a9c3-0000f80367c1 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -58,15 +58,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Per DHCP, il percorso delle opzioni contiene il DN per i siti alternativi che co
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Gestisce le modifiche dei colori di sistema per le applicazioni che usano CTL3D.
 ms.assetid: b1eadb7d-39a5-47e9-9ae5-62bd33557f6b
-title: Ctl3dColorChange (funzione)
+title: Funzione Ctl3dColorChange
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 7e7b0d4480fde480ea24a6c2c0dd8a7a849fbc75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9c3032bb7105a27b995c236e01ce5fc5c304de4108f6c996a5cbb5799be496d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654601"
 ---
-# <a name="ctl3dcolorchange-function"></a>Ctl3dColorChange (funzione)
+# <a name="ctl3dcolorchange-function"></a>Funzione Ctl3dColorChange
 
 Gestisce le modifiche dei colori di sistema per le applicazioni che usano CTL3D.
 
@@ -39,13 +39,13 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo; in caso contrario, restituisce **false**.
+Restituisce **TRUE** se la funzione ha esito positivo. In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-Questa funzione deve essere chiamata nella procedura della finestra principale dell'applicazione per il messaggio **WM \_ SYSCOLORCHANGE** , come illustrato di seguito.
+Questa funzione deve essere chiamata nella routine della finestra principale dell'applicazione per il **messaggio WM \_ SYSCOLORCHANGE,** come illustrato di seguito.
 
 ## <a name="examples"></a>Esempio
 

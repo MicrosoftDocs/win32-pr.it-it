@@ -1,7 +1,7 @@
 ---
-description: Aggiunge due valori di colore per creare un nuovo valore di colore.
+description: Somma due valori di colore per creare un nuovo valore di colore.
 ms.assetid: 7743392d-4676-4408-93e9-f92d4bf02411
-title: Funzione D3DXColorAdd (D3dx9math. h)
+title: Funzione D3DXColorAdd (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f326c9bec4802a9a94accc76b825cd1c6ea28fd5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb96d811f94975d8c7be3225349fd4412a0d1168167066001888084a4ef59136
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631611"
 ---
-# <a name="d3dxcoloradd-function"></a>D3DXColorAdd (funzione)
+# <a name="d3dxcoloradd-function"></a>Funzione D3DXColorAdd
 
-Aggiunge due valori di colore per creare un nuovo valore di colore.
+Somma due valori di colore per creare un nuovo valore di colore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorAdd(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pC1* \[ in\]
+*pC1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> <dt>
 
-*pC2* \[ in\]
+*pC2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è la somma di due valori di colore.
+Questa funzione restituisce un puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta la somma di due valori di colore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione è lo stesso valore restituito in broncio. In questo modo, la funzione **D3DXColorAdd** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito in pOut. In questo modo, la **funzione D3DXColorAdd** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione è lo stesso valore restituito in bronc
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

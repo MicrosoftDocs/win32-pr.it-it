@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7250484e4943e8b077a63e35951c17a44eaf2de3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4fe5c7f6d95bef19ce77e7ea7815e6808eae63e7643bbfc40e6b0fa1bb45767
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750071"
 ---
 # <a name="d3dxquaternionmultiply-function-d3dx9mathh"></a>Funzione D3DXQuaternionMultiply (D3dx9math.h)
 
@@ -73,7 +73,7 @@ Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) prodotto da due quaternioni.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il prodotto di due quaternioni.
 
 ## <a name="remarks"></a>Commenti
 

@@ -1,39 +1,39 @@
 ---
-title: Definizione di modelli di dati degli eventi
-description: I provider utilizzano i modelli di dati per definire i dati specifici degli eventi che includono con un evento e per definire i dati del filtro che una sessione di traccia ETW può passare al provider quando Abilita il provider.
+title: Definizione dei modelli di dati degli eventi
+description: I provider usano modelli di dati per definire i dati specifici dell'evento che includono con un evento e per definire i dati di filtro che una sessione di traccia ETW può passare al provider quando abilita il provider.
 ms.assetid: 064227a2-7ce8-461a-9dc0-7519652e6628
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 067230472c8de5ce29145e221c109b3f390f0a6c
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: d5480ca158916801665943bd33b886bfcd5d73015e8730c1dd108123dadc1995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "103858094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652611"
 ---
-# <a name="defining-event-data-templates"></a>Definizione di modelli di dati degli eventi
+# <a name="defining-event-data-templates"></a>Definizione dei modelli di dati degli eventi
 
-I provider utilizzano i modelli di dati per definire i dati specifici degli eventi che includono con un evento e per definire i dati del filtro che una sessione di traccia ETW può passare al provider quando Abilita il provider. Se l'evento non include dati specifici dell'evento, non sarà possibile definire un modello. Per definire un modello, usare l'elemento **template** . Un modello include un elemento di dati per ogni parte di dati inclusa nel provider con l'evento. È possibile specificare tipi integrali, stringhe, matrici e strutture. È necessario scrivere i dati dell'evento nell'ordine in cui sono stati definiti gli elementi di dati nel modello.
+I provider usano modelli di dati per definire i dati specifici dell'evento che includono con un evento e per definire i dati di filtro che una sessione di traccia ETW può passare al provider quando abilita il provider. Se l'evento non include dati specifici dell'evento, non si definirà un modello. Per definire un modello, usare **l'elemento del** modello. Un modello include un elemento dati per ogni parte di dati che il provider include con l'evento . È possibile specificare tipi integrali, stringhe, matrici e strutture. È necessario scrivere i dati dell'evento nell'ordine in cui gli elementi di dati sono stati definiti nel modello.
 
-È anche possibile includere nel modello un frammento XML che i consumer devono usare per determinare come eseguire il rendering dei dati dell'evento. Se non si include il frammento, i consumer devono eseguire il rendering dei dati dell'evento nell'ordine in cui sono stati definiti gli elementi di dati nel modello.
+È anche possibile includere nel modello un frammento XML che i consumer devono usare per determinare come eseguire il rendering dei dati dell'evento. Se non si include il frammento, i consumer devono eseguire il rendering dei dati dell'evento nell'ordine in cui gli elementi di dati sono stati definiti nel modello.
 
-Quando si definisce un modello, è necessario assegnargli un identificatore di modello da usare per fare riferimento al modello in una definizione di evento. Ogni elemento di dati nel modello deve specificare un nome e un tipo di dati di input (per un elenco di tipi di input, vedere la sezione Osservazioni del tipo complesso [**InputType**](eventmanifestschema-inputtype-complextype.md) ). Se è possibile eseguire il rendering del tipo di dati di input in più formati, è necessario specificare il tipo di dati di output che indica ai consumer come eseguire il rendering dell'elemento dati. È ad esempio possibile eseguire il rendering di un tipo di dati di input UInt32 come un Unsigned Integer, un identificatore di thread, un indirizzo IPv4 e un codice di errore Win32 tra gli altri. Se non si specifica il tipo di dati di output, i consumer devono utilizzare il tipo di output predefinito del tipo di input per eseguire il rendering dell'elemento di dati.
+Quando si definisce un modello, è necessario assegnargli un identificatore di modello da usare per fare riferimento al modello in una definizione di evento. Ogni elemento di dati nel modello deve specificare un nome e un tipo di dati di input (per un elenco di tipi di input, vedere la sezione Osservazioni del [**tipo complesso InputType).**](eventmanifestschema-inputtype-complextype.md) Se è possibile eseguire il rendering del tipo di dati di input in più formati, è necessario specificare il tipo di dati di output che indica ai consumer come eseguire il rendering dell'elemento di dati. È ad esempio possibile eseguire il rendering di un tipo di dati di input UInt32 come intero senza segno, identificatore di thread, indirizzo IPv4 e codice di errore Win32. Se non si specifica il tipo di dati di output, i consumer devono usare il tipo di output predefinito del tipo di input per eseguire il rendering dell'elemento di dati.
 
-Per specificare una matrice, includere l'attributo **count** sull'elemento dati e impostarlo sul numero di elementi nella matrice. La matrice può essere una matrice di dimensioni variabili o una matrice a dimensione fissa. Se la matrice è di dimensioni fisse, impostare **count** sulla dimensione della matrice. Se, ad esempio, una matrice di numeri interi ha una dimensione fissa di 10, impostare **count** su 10. Quando si scrive la matrice, è necessario scrivere 40 byte di dati.
+Per specificare una matrice, includere **l'attributo count** nell'elemento dati e impostarlo sul numero di elementi nella matrice. La matrice può essere una matrice di dimensioni variabili o una matrice di dimensioni fisse. Se la matrice è di dimensioni fisse, impostare **count** sulla dimensione della matrice. Ad esempio, se una matrice di numeri interi ha una dimensione fissa di 10, impostare **count** su 10. Quando si scrive la matrice, è necessario scrivere 40 byte di dati.
 
-Se la matrice è una matrice di dimensioni variabili, impostare **count** sul nome dell'elemento dati che contiene la dimensione della matrice. Se la matrice contiene puntatori, l'indirizzo dei puntatori viene scritto come dati dell'evento e non per i dati a cui puntano i puntatori.
+Se la matrice è una matrice di dimensioni variabili, impostare **count** sul nome dell'elemento di dati che contiene le dimensioni della matrice. Se la matrice contiene puntatori, l'indirizzo dei puntatori viene scritto come dati dell'evento, non i dati a cui puntano i puntatori.
 
-È necessario specificare l'attributo **length** se l'elemento dati è un BLOB binario. È inoltre possibile specificare l'attributo **length** per le stringhe a lunghezza fissa.
+È necessario specificare **l'attributo length** se l'elemento dati è un BLOB binario. È anche possibile specificare **l'attributo length** per le stringhe a lunghezza fissa.
 
-Specificare l'attributo **Map** se l'elemento dati rappresenta un valore di enumerazione e si desidera che il consumer stampi una stringa per il valore anziché il valore stesso.
+Specificare **l'attributo map** se l'elemento di dati rappresenta un valore di enumerazione e si vuole che il consumer stampi una stringa per il valore anziché il valore stesso.
 
-Se si includono strutture nel modello, è necessario scrivere singolarmente i membri della struttura anziché scrivere la struttura, a meno che non sia possibile garantire l'allineamento dei limiti a 8 byte.
+Se si includono strutture nel modello, è necessario scrivere i membri della struttura singolarmente anziché scrivere la struttura, a meno che non sia possibile garantire l'allineamento dei limiti a 8 byte.
 
-È necessario considerare attentamente le informazioni incluse negli eventi, soprattutto quando gli eventi vengono scritti nei canali globali. Come regola generale, è consigliabile non includere le informazioni private negli eventi. Sono incluse le password in testo non crittografato e le informazioni personali dell'utente. Inoltre, i programmi eseguiti dall'utente, gli URL visitati dall'utente e altre informazioni relative alle attività utente nel computer devono essere considerati privati.
+È consigliabile considerare attentamente le informazioni incluse negli eventi, in particolare quando gli eventi vengono scritti nei canali globali. Come regola generale, non è consigliabile includere informazioni private negli eventi. Sono incluse le password in testo non crittografato e le informazioni utente personali. Inoltre, i programmi eseguiti dall'utente, gli URL visitati dall'utente e altre informazioni correlate alle attività dell'utente nel computer devono essere considerati privati.
 
-Se è necessario registrare gli URL e i nomi utente negli eventi, non scriverli nei canali Windows (sistema e applicazione), perché questi canali sono leggibili da tutti gli utenti autenticati. Scriverli invece nei canali operativi o analitici. Impostare le autorizzazioni di accesso su questi canali per consentire solo agli amministratori di leggere gli eventi. Potrebbe essere necessario fornire una divulgazione appropriata per informare gli utenti del fatto che le informazioni private vengono rese disponibili agli amministratori.
+Se è necessario registrare URL e nomi utente negli eventi, non scriverli nei canali Windows (Sistema e applicazione) perché questi canali sono leggibili da tutti gli utenti autenticati. Scriverli invece nei propri canali operativi o analitici. Impostare le autorizzazioni di accesso su questi canali per consentire solo agli amministratori di leggere gli eventi. Potrebbe essere necessario fornire una diffusione appropriata per informare gli utenti del fatto che le informazioni private vengono rese disponibili agli amministratori.
 
-Nell'esempio seguente viene illustrato come definire un modello. È necessario specificare l'attributo **TID** del modello a cui si fa riferimento nella definizione dell'evento o nella definizione del filtro.
+Nell'esempio seguente viene illustrato come definire un modello. È necessario specificare l'attributo **tid del** modello a cui si fa riferimento nella definizione dell'evento o del filtro.
 
 
 ```XML

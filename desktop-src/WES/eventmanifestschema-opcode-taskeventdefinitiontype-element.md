@@ -1,9 +1,9 @@
 ---
-title: Elemento Opcode (TaskEventDefinitionType)
-description: Contiene un codice operativo specifico dell'attività per un evento. Si presuppone che tutte le definizioni opcode siano specifiche dell'attività per l'attività che contiene le definizioni degli eventi.
+title: Elemento opcode (TaskEventDefinitionType)
+description: Contiene un codice operativo specifico dell'attività per un evento. Si presuppone che tutte le definizioni del codice operativo siano specifiche dell'attività per l'attività che contiene le definizioni degli eventi.
 ms.assetid: c7192772-401b-4602-918d-0e0bc4b65ca7
 keywords:
-- opcode element EventLog
+- Elemento opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d9f3b58353163e1ee5b9abeb04007a4a9d449e5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f3923e0a42375ac7d926d418943af81cc0264e111e6bdc4be56919780dfacf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652151"
 ---
-# <a name="opcode-taskeventdefinitiontype-element"></a>Elemento Opcode (TaskEventDefinitionType)
+# <a name="opcode-taskeventdefinitiontype-element"></a>Elemento opcode (TaskEventDefinitionType)
 
-\[A partire dal compilatore di messaggi fornito con la versione di Windows 7 del Windows SDK, questo elemento non è più disponibile.\]
+\[A partire dal compilatore di messaggi fornito con la versione Windows 7 di Windows SDK, questo elemento non è più disponibile.\]
 
-Contiene un codice operativo specifico dell'attività per un evento. Si presuppone che tutte le definizioni opcode siano specifiche dell'attività per l'attività che contiene le definizioni degli eventi.
+Contiene un codice operativo specifico dell'attività per un evento. Si presuppone che tutte le definizioni del codice operativo siano specifiche dell'attività per l'attività che contiene le definizioni degli eventi.
 
 ``` syntax
 <xs:element name="opcode">
@@ -43,7 +43,7 @@ Contiene un codice operativo specifico dell'attività per un evento. Si presuppo
 </xs:element>
 ```
 
-L'elemento **OpCode** è definito dal tipo complesso [**TaskEventDefinitionType**](eventmanifestschema-taskeventdefinitiontype-complextype.md) .
+**L'elemento opcode** è definito dal tipo complesso [**TaskEventDefinitionType.**](eventmanifestschema-taskeventdefinitiontype-complextype.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -51,7 +51,7 @@ L'elemento **OpCode** è definito dal tipo complesso [**TaskEventDefinitionType*
 
 | Elemento                                                   | Tipo                                                                               | Descrizione                                        |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**evento**](eventmanifestschema-event-opcode-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md) | Evento pubblicato con un'attività.<br/> |
+| [**Evento**](eventmanifestschema-event-opcode-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md) | Evento pubblicato con un'attività.<br/> |
 
 
 
@@ -71,8 +71,8 @@ L'elemento **OpCode** è definito dal tipo complesso [**TaskEventDefinitionType*
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -83,7 +83,7 @@ L'elemento **OpCode** è definito dal tipo complesso [**TaskEventDefinitionType*
 **Elemento padre**
 </dt> <dt>
 
-[**attività (DefinitionType)**](eventmanifestschema-task-definitiontype-element.md)
+[**task (DefinitionType)**](eventmanifestschema-task-definitiontype-element.md)
 </dt> </dl>
 
  

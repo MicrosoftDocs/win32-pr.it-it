@@ -1,19 +1,19 @@
 ---
 description: Data di acquisizione del file o del supporto.
 ms.assetid: 7c673d21-5243-4e41-91df-c5d84aaf620a
-title: System. DateAcquired
+title: System.DateAcquired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a85f36df252202c319e90460807e16fefa3d559a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1a78ae9ccfe938551ab6c4a265972e48c3aad1c1791f02cfa933c583c6d4b0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599181"
 ---
-# <a name="systemdateacquired"></a>System. DateAcquired
+# <a name="systemdateacquired"></a>System.DateAcquired
 
-Data di acquisizione del file o del supporto. Questa proprietà è correlata a un utente o a un gruppo di utenti specifico. Questi dati, ad esempio, vengono usati come asse di ordinamento principale per la cartella virtuale **New Music**, che consente agli utenti di esplorare le aggiunte più recenti alla propria raccolta.
+Data di acquisizione del file o del supporto. Questa proprietà è correlata a un determinato utente o gruppo di utenti. Ad esempio, questi dati vengono usati come asse di ordinamento principale per la cartella virtuale **New Musica**, che consente agli utenti di esplorare le aggiunte più recenti alla raccolta.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,15 +46,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-[DateAcquired]() viene archiviato come valore nel flusso principale del file, ma potrebbe non essere sempre presente. In tali casi, la data di acquisizione può essere approssimata in base alle altre date note per il contenuto. Il gestore di metadati deve usare un set di regole per determinare la data da restituire. Nell'esempio seguente viene illustrato questo per i file musicali.
+[DateAcquired]() viene archiviato come valore nel flusso principale del file, ma potrebbe non essere sempre presente. In questi casi, la data di acquisizione può essere approssimata in base ad altre date note per il contenuto. Il gestore dei metadati deve usare un set di regole per determinare la data da restituire. L'esempio seguente illustra questa operazione per i file musicali.
 
--   Per la musica acquistata, è consigliabile usare l'ora di creazione del file se non è presente alcuna data acquisita. Tuttavia, il provider di download deve impostare la proprietà [DateAcquired]() nel file.
--   Per i file musicali che l'utente o il gruppo ha copiato (copiando musica o video da un CD o DVD a un disco rigido), la data di acquisizione deve essere la data in cui si è verificata l'azione. Ad esempio, l'attributo [WM/EncodingTime](../wmp/wm-encodingtime-attribute.md) .
--   Per la musica copiata da un altro percorso, è necessario usare l'ora di creazione del file come data di acquisizione.
+-   Per la musica acquistata, è consigliabile usare l'ora di creazione del file se non è presente alcuna data acquisita. Tuttavia, il provider di download deve impostare la [proprietà DateAcquired]() nel file.
+-   Per i file musicali che l'utente o il gruppo ha "derubato" (copiando musica o video da un CD o DVD a un disco rigido), la data di acquisizione deve essere la data in cui è stata eseguita l'azione. Ad esempio, [l'attributo WM/EncodingTime.](../wmp/wm-encodingtime-attribute.md)
+-   Per la musica copiata da un'altra posizione, l'ora di creazione del file deve essere usata come data di acquisizione.
 
-Esempi di [System. DateAcquired]() sono la data e l'ora in cui le immagini vengono acquistate da una fotocamera o quando la musica viene acquistata online. Questa operazione non corrisponde a [System. DateImported](./props-system-dateimported.md).
+Esempi di [System.DateAcquired]() sono la data e l'ora in cui le immagini vengono acquisite da una fotocamera o quando la musica viene acquistata online. Non è uguale a [System.DateImported](./props-system-dateimported.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -69,13 +69,13 @@ Esempi di [System. DateAcquired]() sono la data e l'ora in cui le immagini vengo
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -84,7 +84,7 @@ Esempi di [System. DateAcquired]() sono la data e l'ora in cui le immagini vengo
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Param. EnableDBScanSerialization'
-title: Campo Windows8Param. EnableDBScanSerialization (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul campo Windows8Param.EnableDBScanSerialization
+title: Campo Windows8Param.EnableDBScanSerialization (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: EnableDBScanSerialization field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.EnableDBScanSerialization
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.enabledbscanserialization(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c92b0ab920354ea272e95d4aaf5bf68cf98be3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3865bc2345278a3e5007289c5321508e85432f4481fb1a1d731197786c350d64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470731"
 ---
-# <a name="windows8paramenabledbscanserialization-field"></a>Campo Windows8Param. EnableDBScanSerialization
+# <a name="windows8paramenabledbscanserialization-field"></a>Campo Windows8Param.EnableDBScanSerialization
 
-La serializzazione della manutenzione del database è abilitata per i database che condividono lo stesso disco.
+La serializzazione di Manutenzione database è abilitata per i database che condividono lo stesso disco.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param EnableDBScanSerialization
 
 [Membri di Windows8Param](./windows8param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

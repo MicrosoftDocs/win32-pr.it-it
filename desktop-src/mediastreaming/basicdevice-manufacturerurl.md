@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. ManufacturerUrl
+title: BasicDevice.ManufacturerUrl - proprietà
 description: Ottiene l'URL del produttore del dispositivo.
 ms.assetid: 5D65436F-2E0B-480E-886A-5E9AC90CE8BD
 keywords:
-- API di streaming multimediale della proprietà ManufacturerUrl
-- API di streaming multimediale della proprietà ManufacturerUrl, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà ManufacturerUrl
+- Proprietà ManufacturerUrl API Streaming multimediale
+- Proprietà ManufacturerUrl API Streaming multimediale, interfaccia BasicDevice
+- Interfaccia BasicDevice API Streaming multimediale, proprietà ManufacturerUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea2df39b5307a3eb895005630d3879c63cb11d7f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9bc0a5c603f7763b037344dd35b288567626cb2a0d070d35c8f29ec3d52cf9f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721281"
 ---
-# <a name="basicdevicemanufacturerurl-property"></a>Proprietà BasicDevice. ManufacturerUrl
+# <a name="basicdevicemanufacturerurl-property"></a>BasicDevice.ManufacturerUrl - proprietà
 
 Ottiene l'URL del produttore del dispositivo.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_ManufacturerUrl(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -50,6 +50,6 @@ Puntatore all'URL del produttore del dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

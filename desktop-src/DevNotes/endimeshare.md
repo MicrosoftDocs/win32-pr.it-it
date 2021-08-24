@@ -1,7 +1,7 @@
 ---
 description: Termina la condivisione IME.
 ms.assetid: aa33b5ed-fd4a-4829-9b7f-d545a4e7bd02
-title: EndIMEShare (funzione)
+title: Funzione EndIMEShare
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 2a0d246537f2788afbb200cd35a81f7d6809ad89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 079a8719aa8e48e8ae880f2ce2a83d5e4d0f89fda85298ec015a3f77acebeb9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653441"
 ---
-# <a name="endimeshare-function"></a>EndIMEShare (funzione)
+# <a name="endimeshare-function"></a>Funzione EndIMEShare
 
 Termina la condivisione IME.
 
@@ -43,9 +43,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-Questa funzione deve essere chiamata dopo la chiamata dell'ultima funzione di condivisione IME.
+Questa funzione deve essere chiamata dopo la chiamata dell'ultima funzione IME Share.
 
 ## <a name="requirements"></a>Requisiti
 

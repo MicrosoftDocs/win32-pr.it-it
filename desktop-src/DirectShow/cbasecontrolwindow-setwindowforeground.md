@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetWindowForeground sposta la finestra video in primo piano e, facoltativamente, lo rende attivo.
+description: Il metodo SetWindowForeground sposta la finestra video in primo piano e, facoltativamente, gli assegna lo stato attivo.
 ms.assetid: 41c26bff-0023-41ad-bca8-8f0c43c94814
-title: Metodo CBaseControlWindow. SetWindowForeground (Ctlutil. h)
+title: Metodo CBaseControlWindow.SetWindowForeground (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 52c9a37f23b555e140bfd541cf0b5e8e782f8d51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87a6768c8864de45d50dc630773b756dfad43759adbf4b09ed8070febd37f4d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635471"
 ---
-# <a name="cbasecontrolwindowsetwindowforeground-method"></a>CBaseControlWindow. SetWindowForeground, metodo
+# <a name="cbasecontrolwindowsetwindowforeground-method"></a>Metodo CBaseControlWindow.SetWindowForeground
 
-Il `SetWindowForeground` metodo sposta la finestra del video in primo piano e, facoltativamente, lo rende attivo.
+Il `SetWindowForeground` metodo sposta la finestra video in primo piano e, facoltativamente, le assegna lo stato attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ HRESULT SetWindowForeground(
 
 <dl> <dt>
 
-*Lo stato attivo* 
+*Focus* 
 </dt> <dd>
 
-Valore che specifica se la finestra video otterrà lo stato attivo. Il valore 1 indica lo stato attivo della finestra e 0 non lo è.
+Valore che specifica se la finestra video otterrà lo stato attivo. Il valore 1 indica lo stato attivo della finestra e 0 no.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Restituisce uno dei valori seguenti.
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>**NOERROR**</dt> </dl>                | Il metodo è riuscito.<br/>                                          |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Lo stato attivo non è uguale a 1 o 0.<br/>                                   |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il filtro corrente non è connesso a un grafico di filtro completo.<br/> |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il filtro corrente non è connesso a un grafo di filtro completo.<br/> |
 
 
 
@@ -71,8 +71,8 @@ Restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

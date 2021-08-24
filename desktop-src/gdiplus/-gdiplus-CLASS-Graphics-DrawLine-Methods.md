@@ -1,19 +1,19 @@
 ---
-description: In questo argomento vengono elencati i metodi DrawLine della classe Graphics. Per un elenco completo dei metodi per la classe graphics, vedere Graphics.
+description: Questo argomento elenca i metodi DrawLine della classe Graphics. Per un elenco completo dei metodi per la classe Graphics, vedere Graphics.
 ms.assetid: 15c1c3fd-4479-46ad-a70c-f7d15bc69488
-title: Metodi Graphics. DrawLine
+title: Metodi Graphics.DrawLine
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d83353c9f33b4d94b15392762da3d00accae5e72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fbe6d53441bc6b669326f7d3e01379f286d735ea8d7c28770e70b01606e9d36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467911"
 ---
-# <a name="graphicsdrawline-methods"></a>Metodi Graphics. DrawLine
+# <a name="graphicsdrawline-methods"></a>Metodi Graphics.DrawLine
 
-In questo argomento vengono elencati i metodi DrawLine della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Per un elenco completo dei metodi per la classe **Graphics** , vedere [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics).
+Questo argomento elenca i metodi DrawLine della [**classe Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Per un elenco completo dei metodi per la **classe Graphics,** vedere [**Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,10 +21,10 @@ In questo argomento vengono elencati i metodi DrawLine della classe [**Graphics*
 
 | Metodo                                                                                                                   | Descrizione                                                                                                                                                          |
 |:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DrawLine (Pen \* , point&, point&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpoint__inconstpoint_))                   | Il metodo [**Graphics::D rawline**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpoint__inconstpoint_)) disegna una linea che connette due punti.<br/>             |
-| [**DrawLine (Pen \* , int, int, int, int)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint))         | Il metodo [**Graphics::D rawline**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) disegna una linea che connette due punti.<br/>     |
-| [**DrawLine (Pen \* , pointf&, pointf&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpointf__inconstpointf_))               | Il metodo [**Graphics::D rawline**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpointf__inconstpointf_)) disegna una linea che connette due punti.<br/>           |
-| [**DrawLine (Pen, Real, Real, Real \* , Real)**](/previous-versions//ms536024(v=vs.85)) | Il metodo [**Graphics::D rawline**](/previous-versions//ms536024(v=vs.85)) disegna una linea che connette due punti.<br/> |
+| [**DrawLine(Pen,Point \*&,Point&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpoint__inconstpoint_))                   | Il [**metodo Graphics::D rawLine**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpoint__inconstpoint_)) disegna una linea che connette due punti.<br/>             |
+| [**\*DrawLine(Pen,INT,INT,INT,INT)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint))         | Il [**metodo Graphics::D rawLine**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) disegna una linea che connette due punti.<br/>     |
+| [**\*DrawLine(Pen,PointF&,PointF&)**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpointf__inconstpointf_))               | Il [**metodo Graphics::D rawLine**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inconstpointf__inconstpointf_)) disegna una linea che connette due punti.<br/>           |
+| [**\*DrawLine(Pen,REAL,REAL,REAL,REAL)**](/previous-versions//ms536024(v=vs.85)) | Il [**metodo Graphics::D rawLine**](/previous-versions//ms536024(v=vs.85)) disegna una linea che connette due punti.<br/> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Uno dei primi passaggi per la creazione di un consumer di eventi permanenti consiste nel creare la classe WMI che descrive il consumer di eventi. In particolare, la classe consumer di eventi permanenti definisce i parametri dell'azione implementata dal consumer fisico.
+description: Uno dei primi passaggi per la creazione di un consumer di eventi permanente è la creazione della classe WMI che descrive il consumer di eventi. In particolare, la classe consumer di eventi permanente definisce i parametri dell'azione implementata dal consumer fisico.
 ms.assetid: a5b6d0b9-8df1-47e3-bb3b-cc69db6d9c0e
 ms.tgt_platform: multiple
-title: Creazione di una nuova classe di consumer di eventi permanenti
+title: Creazione di una nuova classe consumer di eventi permanente
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 03f8ae8e1e83abcf3b340398d45aefde4c7141e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f86f9e8ea4339eb76bdc77087780fcfa9be09f47c92a154c5f89109d90337b41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464281"
 ---
-# <a name="creating-a-new-permanent-event-consumer-class"></a>Creazione di una nuova classe di consumer di eventi permanenti
+# <a name="creating-a-new-permanent-event-consumer-class"></a>Creazione di una nuova classe consumer di eventi permanente
 
-Uno dei primi passaggi per la creazione di un consumer di eventi permanenti consiste nel creare la classe WMI che descrive il consumer di eventi. In particolare, la classe consumer di eventi permanenti definisce i parametri dell'azione implementata dal consumer fisico.
+Uno dei primi passaggi per la creazione di un consumer di eventi permanente è la creazione della classe WMI che descrive il consumer di eventi. In particolare, la classe consumer di eventi permanente definisce i parametri dell'azione implementata dal consumer fisico.
 
-Nella procedura seguente viene descritto come creare una classe di consumer di eventi permanenti.
+Nella procedura seguente viene descritto come creare una classe consumer di eventi permanente.
 
-**Per creare una classe di consumer di eventi permanenti**
+**Per creare una classe consumer di eventi permanente**
 
-1.  Derivare una classe dalla classe di sistema [**\_ \_ EventConsumer**](--eventconsumer.md) .
+1.  Derivare una classe dalla classe di sistema [**\_ \_ EventConsumer.**](--eventconsumer.md)
 2.  Implementare tutti i parametri necessari per elaborare una notifica degli eventi.
 
-Nell'esempio seguente viene illustrata la sintassi utilizzata per creare la classe SMTPConsumerEvent. È possibile usarlo come esempio per creare la nuova classe. La classe [**SMTPEventConsumer**](smtpeventconsumer.md) Invia un messaggio di posta elettronica utilizzando Simple Mail Transfer Protocol (SMTP) ogni volta che viene recapitato un evento. Questa classe è definita in smtpcons. mof.
+Nell'esempio seguente viene illustrata la sintassi usata per creare la classe SMTPConsumerEvent. È possibile usarlo come esempio per creare la nuova classe. La [**classe SMTPEventConsumer**](smtpeventconsumer.md) invia un messaggio di posta elettronica usando Simple Mail Transfer Protocol (SMTP) ogni volta che viene recapitato un evento. Questa classe è definita in smtpcons.mof.
 
 ``` syntax
 class SMTPEventConsumer : __EventConsumer
@@ -46,7 +46,7 @@ class SMTPEventConsumer : __EventConsumer
 };
 ```
 
-Si dovrebbe essere in grado di creare istanze della classe del consumer di eventi permanenti per descrivere uno o più modi per inviare eventi al consumer fisico. Per ulteriori informazioni, vedere [creazione di un consumer logico](creating-a-logical-consumer.md).
+Dovrebbe essere possibile creare istanze della classe consumer di eventi permanente per descrivere uno o più modi per inviare eventi al consumer fisico. Per altre informazioni, vedere [Creazione di un consumer logico.](creating-a-logical-consumer.md)
 
  
 

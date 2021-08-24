@@ -1,9 +1,9 @@
 ---
-title: Messaggio DRV_ENABLE (mmsystem. h)
-description: Consente di abilitare il driver. Il driver deve inizializzare qualsiasi variabile e individuare i dispositivi con l'interfaccia di input e output (I/O).
+title: DRV_ENABLE messaggio (Mmsystem.h)
+description: Abilita il driver. Il driver deve inizializzare le variabili e individuare i dispositivi con l'interfaccia di input e output (I/O).
 ms.assetid: 8aa36f3d-b36c-4460-859c-108a7a450ae5
 keywords:
-- DRV_ENABLE messaggi multimediali di Windows
+- DRV_ENABLE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 569b4ca5f3d0dc5f439b1e2b0e25887ffd1da4ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7ab74abf08380db97a15da22fa99d58d72b6aba124a430cad665f65bc94e26c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526281"
 ---
-# <a name="drv_enable-message"></a>\_Messaggio di abilitazione DRV
+# <a name="drv_enable-message"></a>Messaggio DRV \_ ENABLE
 
-Consente di abilitare il driver. Il driver deve inizializzare qualsiasi variabile e individuare i dispositivi con l'interfaccia di input e output (I/O).
+Abilita il driver. Il driver deve inizializzare le variabili e individuare i dispositivi con l'interfaccia di input e output (I/O).
 
 ## <a name="parameters"></a>Parametri
 
@@ -42,9 +42,9 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-I parametri *dwDriverId*, *lParam1* e *lParam2* non vengono usati.
+I *parametri dwDriverId*, *lParam1* e *lParam2* non vengono usati.
 
-I driver vengono considerati abilitati dal momento in cui ricevono questo messaggio finché non vengono disabilitati usando il messaggio di [**\_ disabilitazione DRV**](drv-disable.md) .
+I driver vengono considerati abilitati dal momento in cui ricevono questo messaggio fino a quando non vengono disabilitati usando [**il messaggio DRV \_ DISABLE.**](drv-disable.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ I driver vengono considerati abilitati dal momento in cui ricevono questo messag
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

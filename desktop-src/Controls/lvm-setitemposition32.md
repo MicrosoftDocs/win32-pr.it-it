@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETITEMPOSITION32 (COMmctrl. h)
-description: Sposta un elemento in una posizione specificata in un controllo visualizzazione elenco (deve essere in una visualizzazione icona o piccola).
+title: LVM_SETITEMPOSITION32 messaggio (Commctrl.h)
+description: Sposta un elemento in una posizione specificata in un controllo visualizzazione elenco (deve essere in visualizzazione icona o icona piccola).
 ms.assetid: 77db5fd0-bbc3-47ad-95ef-61ef4ac022bc
 keywords:
-- Controlli di Windows Message LVM_SETITEMPOSITION32
+- LVM_SETITEMPOSITION32 dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 450963e4adf5ea2b0644f8d155145ba577efab83
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 737b9aa78067bd4851c907da4ac51bd2645a833d8f3335c90a6e81a902d3a30a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656251"
 ---
-# <a name="lvm_setitemposition32-message"></a>\_Messaggio SETITEMPOSITION32 LVM
+# <a name="lvm_setitemposition32-message"></a>Messaggio LVM \_ SETITEMPOSITION32
 
-Sposta un elemento in una posizione specificata in un controllo visualizzazione elenco (deve essere in una visualizzazione icona o piccola). Questo messaggio è diverso dal messaggio [**LVM \_ SETITEMPOSITION**](lvm-setitemposition.md) in quanto usa coordinate a 32 bit. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetItemPosition32 di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition32) .
+Sposta un elemento in una posizione specificata in un controllo visualizzazione elenco (deve essere in visualizzazione icona o icona piccola). Questo messaggio è diverso dal [**messaggio LVM \_ SETITEMPOSITION**](lvm-setitemposition.md) in quanto usa coordinate a 32 bit. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView SetItemPosition32.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition32)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,7 +39,7 @@ Indice dell'elemento della visualizzazione elenco per il quale impostare la posi
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) che contiene la nuova posizione dell'elemento, in coordinate di visualizzazione elenco.
+Puntatore a [**una struttura POINT**](/previous-versions//dd162805(v=vs.85)) che contiene la nuova posizione dell'elemento, nelle coordinate della visualizzazione elenco.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

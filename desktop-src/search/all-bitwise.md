@@ -1,21 +1,21 @@
 ---
-description: TUTTE le parole chiave bit per bit and bit per bit vengono usate per il testing dei bit in un tipo integrale.
+description: Le parole chiave ALL BITWISE e SOME BITWISE vengono usate per testare i bit in un tipo integrale.
 ms.assetid: 649f763f-45aa-4086-9e7f-b8934b5bd22c
-title: ALL bit per bit e SOME bit per bit
+title: ALL BITWISE e SOME BITWISE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 709db4829f5b620bcb14e0b4261fac7e7d9a6f95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac133e04eae78fe9b943c1e354d9e4dcf451640ad60be1883eecc938ec1d418a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594721"
 ---
-# <a name="all-bitwise-and-some-bitwise"></a>ALL bit per bit e SOME bit per bit
+# <a name="all-bitwise-and-some-bitwise"></a>ALL BITWISE e SOME BITWISE
 
-**Tutte** le parole chiave bit per bit **and bit per** bit vengono usate per il testing dei bit in un tipo integrale. Se tutti i bit impostati in una proprietà corrispondono alla maschera, **All bit per bit** è true. Se almeno uno dei bit impostati in una proprietà corrisponde alla maschera, **some bit per bit** è true.
+Le **parole chiave ALL BITWISE** e SOME **BITWISE** vengono usate per testare i bit in un tipo integrale. Se tutti i bit impostati in una proprietà corrispondono alla maschera, **ALL BITWISE** è true. Se almeno uno dei bit impostati in una proprietà corrisponde alla maschera, **SOME BITWISE** è true.
 
-Gli operatori possono essere applicati sia alle proprietà scalari (a valore singolo) che alle proprietà Vector (multiple-value). Nell'esempio di codice seguente viene illustrato come testare i valori delle proprietà con **tutti gli operatori bit per bit** e **bit per bit**.
+Gli operatori possono essere applicati sia alle proprietà scalari (a valore singolo) che alle proprietà vettoriali (a più valori). Nell'esempio di codice seguente viene illustrato come testare i valori delle proprietà **con ALL BITWISE** e **SOME BITWISE**.
 
 
 ```sql
@@ -28,39 +28,39 @@ ALL array SOME BITWISE [values?]
 
 ## <a name="comparison-operators"></a>Operatori di confronto
 
-Nella tabella seguente sono elencati gli operatori di confronto supportati per i test bit per bit.
+Gli operatori di confronto supportati per i test BITWISE sono elencati nella tabella seguente.
 
 
 
 | Operatore di confronto | Descrizione  |
 |---------------------|--------------|
 | =                   | Uguale a     |
-| ! = o <>      | Diverso da |
+| != o <>      | Diverso da |
 
 
 
  
 
-La logica dei test bit per bit è elencata nella tabella seguente.
+La logica dei test BITWISE è elencata nella tabella seguente.
 
 
 
-| Operatore di confronto e test bit per bit | Logica                   |
+| Operatore di test e confronto BITWISE | Logica                   |
 |--------------------------------------|-------------------------|
-| = TUTTO BIT PER BIT                        | Proprietà & mask = mask  |
-| = SOME BIT PER BIT                       | Proprietà & mask! = 0    |
-| <> BIT PER BIT                 | Proprietà & mask! = mask |
-| <> BIT PER BIT                | Proprietà & mask = 0     |
+| = ALL BIT PER BIT                        | Maschera & proprietà = Maschera  |
+| = ALCUNI BIT PER BIT                       | Proprietà & Mask != 0    |
+| <> TUTTI BIT PER BIT                 | Maschera & proprietà != Maschera |
+| <> ALCUNI BIT PER BIT                | Maschera & proprietà = 0     |
 
 
 
  
 
-La tabella di verità seguente usa i valori binari e esadecimali di esempio per demonstate la logica dei test bit per bit.
+Nella tabella seguente vengono utilizzati valori binari ed esadecimali di esempio per eseguire test BITWISE.
 
 
 
-| Property in Binary (hex) | Maschera in binario (esadecimale) | Property & mask = Binary (hex) | = SOME BIT PER BIT | = TUTTO BIT PER BIT |
+| Proprietà in formato binario (esadecimale) | Maschera in formato binario (esadecimale) | Maschera & proprietà = binario (esadecimale) | = ALCUNI BIT PER BIT | = ALL BIT PER BIT |
 |--------------------------|----------------------|--------------------------------|----------------|---------------|
 | 0001 (0x1)               | 0001 (0x1)           | 0001 (0x1)                     | True           | True          |
 | 0001 (0x1)               | 0011 (0x3)           | 0001 (0x1)                     | Vero           | Falso         |
@@ -76,7 +76,7 @@ La tabella di verità seguente usa i valori binari e esadecimali di esempio per 
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio del predicato **All bit per bit** .
+Di seguito è riportato un esempio del **predicato ALL BITWISE.**
 
 
 ```sql

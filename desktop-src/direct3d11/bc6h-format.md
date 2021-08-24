@@ -7,12 +7,12 @@ keywords:
 - DXGI_FORMAT_BC6H
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92ea15e0275bc478c0708ce08f531d8888a3c84d
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 27422e177e98ecdc53b4152ba0514866f5ad75216e9ef789145d1af882a645d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633821"
 ---
 # <a name="bc6h-format"></a>Formato BC6H
 
@@ -22,7 +22,7 @@ Il formato BC6H è un formato di compressione trame progettato per supportare sp
 -   [Implementazione di BC6H](#bc6h-implementation)
 -   [Decodifica del formato BC6H](#decoding-the-bc6h-format)
 -   [Formato dell'endpoint compresso BC6H](#bc6h-compressed-endpoint-format)
--   [Estensione della firma per i valori dell'endpoint](#sign-extension-for-endpoint-values)
+-   [Estensione di firma per i valori dell'endpoint](#sign-extension-for-endpoint-values)
 -   [Inversione della trasformazione per i valori dell'endpoint](#transform-inversion-for-endpoint-values)
 -   [Unquantization of Color Endpoints](#unquantization-of-color-endpoints)
 -   [Argomenti correlati](#related-topics)
@@ -38,12 +38,12 @@ BC6H è specificato dai valori di enumerazione DXGI \_ FORMAT seguenti:
 -   **DXGI \_ FORMAT \_ BC6H \_ SF16**. Questo formato BC6H usa un bit di segno nei valori del canale di colore a virgola mobile a 16 bit.
 
 > [!Note]  
-> Il formato a virgola mobile a 16 bit per i canali di colori viene spesso definito formato a virgola mobile "a metà". Questo formato ha il layout di bit seguente:
+> Il formato a virgola mobile a 16 bit per i canali di colore viene spesso definito formato a virgola mobile "metà". Questo formato ha il layout di bit seguente:
 >
 > |  Formato                     | Layout di bit                                                |
 > |-----------------------|-------------------------------------------------|
-> | UF16 (unsigned float) | 5 bit dell'esponente + 11 bit di mantissa              |
-> | SF16 (valore float con segno)   | Bit di 1 segno + 5 bit dell'esponente + 10 bit di mantissa |
+> | UF16 (float senza segno) | 5 bit esponenti + 11 bit di mantissa              |
+> | SF16 (float con segno)   | 1 bit di segno + 5 bit esponenti + 10 bit di mantissa |
 >
 > 
 >
@@ -51,13 +51,13 @@ BC6H è specificato dai valori di enumerazione DXGI \_ FORMAT seguenti:
 
  
 
-Il formato BC6H può essere usato per le risorse [trama Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluse le matrici), Texture3D o TextureCube (incluse le matrici). Analogamente, questo formato si applica a qualsiasi superficie mappa MIP associata a queste risorse.
+Il formato BC6H può essere usato per [le risorse texture Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluse le matrici), Texture3D o TextureCube (incluse le matrici). Analogamente, questo formato si applica a tutte le superfici della mappa MIP associate a queste risorse.
 
-BC6H usa una dimensione di blocco fissa di 16 byte (128 bit) e una dimensione di riquadro fissa di 4x4 texel. Come per i formati BC precedenti, le immagini di trama di dimensioni superiori alle dimensioni del riquadro supportate (4x4) vengono compresse usando più blocchi. Questa identità di indirizzamento si applica anche a immagini tridimensionali, mappe MIP, mappe cubi e matrici di trame. Tutti i riquadri immagine devono avere lo stesso formato.
+BC6H usa una dimensione di blocco fissa di 16 byte (128 bit) e una dimensione di riquadro fissa di 4x4 texel. Come per i formati BC precedenti, le immagini di trama più grandi delle dimensioni del riquadro supportate (4x4) vengono compresse usando più blocchi. Questa identità di indirizzamento si applica anche a immagini tridimensionali, mappe MIP, mappe cubi e matrici di trame. Tutti i riquadri immagine devono avere lo stesso formato.
 
 Alcune note importanti sul formato BC6H:
 
--   BC6H supporta la denormalizzazione a virgola mobile, ma non supporta INF (infinito) e NaN (non un numero). L'eccezione è la modalità con segno di BC6H (DXGI \_ FORMAT \_ BC6H SF16), che supporta \_ -INF (infinito negativo). Si noti che questo supporto per -INF è semplicemente un artefatto del formato stesso e non è supportato in modo specifico dai codificatori per questo formato. In generale, quando i codificatori rilevano dati di input INF (positivi o negativi) o NaN, devono convertire tali dati nel valore massimo consentito per la rappresentazione non INF ed eseguire il mapping di NaN a 0 prima della \\ compressione.
+-   BC6H supporta la denormalizzazione a virgola mobile, ma non supporta INF (infinito) e NaN (non un numero). L'eccezione è la modalità firmata di BC6H (DXGI \_ FORMAT \_ BC6H \_ SF16), che supporta -INF (infinito negativo). Si noti che questo supporto per -INF è semplicemente un artefatto del formato stesso e non è supportato in modo specifico dai codificatori per questo formato. In generale, quando i codificatori rilevano dati di input INF (positivi o negativi) o NaN, devono convertire tali dati nel valore di rappresentazione non INF massimo consentito ed eseguire il mapping di NaN a 0 prima della \\ compressione.
 -   BC6H non supporta un canale alfa.
 -   Il decodificatore BC6H esegue la decompressione prima di eseguire il filtro trame.
 -   La decompressione BC6H deve essere bit accurata; ciò significa che l'hardware deve restituire risultati identici al decodificatore descritto in questa documentazione.
@@ -66,13 +66,13 @@ Alcune note importanti sul formato BC6H:
 
 Un blocco BC6H è costituito da bit di modalità, endpoint compressi, indici compressi e un indice di partizione facoltativo. Questo formato specifica 14 modalità diverse.
 
-Un colore dell'endpoint viene archiviato come tripletta RGB. BC6H definisce una tavolozza di colori su una linea approssimativa attraverso un numero di endpoint di colore definiti. Inoltre, a seconda della modalità, un riquadro può essere suddiviso in due aree o considerato come una singola area, in cui un riquadro a due aree ha un set separato di endpoint di colore per ogni area. BC6H archivia un indice della tavolozza per ogni texel.
+Un colore dell'endpoint viene archiviato come tripletta RGB. BC6H definisce una tavolozza di colori su una linea approssimativa attraverso diversi endpoint di colore definiti. Inoltre, a seconda della modalità, un riquadro può essere suddiviso in due aree o considerato come una singola area, in cui un riquadro a due aree ha un set separato di endpoint di colore per ogni area. BC6H archivia un indice della tavolozza per ogni texel.
 
 Nel caso di due aree, sono presenti 32 partizioni possibili.
 
 ## <a name="decoding-the-bc6h-format"></a>Decodifica del formato BC6H
 
-Lo pseudocodice seguente illustra i passaggi per decomprimere il pixel in corrispondenza di (x,y) dato il blocco BC6H a 16 byte.
+Lo pseudocodice seguente illustra i passaggi per decomprimere il pixel in corrispondenza di (x,y) in base al blocco BC6H a 16 byte.
 
 ``` syntax
 decompress_bc6h(x, y, block)
@@ -123,11 +123,11 @@ La tabella seguente contiene il numero di bit e i valori per ognuno dei 14 forma
 
  
 
-Ogni formato in questa tabella può essere identificato in modo univoco dai bit della modalità. Le prime dieci modalità vengono usate per i riquadri in due aree e il campo di bit mode può avere una lunghezza di due o cinque bit. Questi blocchi hanno anche campi per gli endpoint di colore compresso (72 o 75 bit), la partizione (5 bit) e gli indici di partizione (46 bit).
+Ogni formato in questa tabella può essere identificato in modo univoco dai bit di modalità. Le prime dieci modalità vengono usate per i riquadri a due aree e il campo di bit mode può essere lungo due o cinque bit. Questi blocchi hanno anche campi per gli endpoint dei colori compressi (72 o 75 bit), la partizione (5 bit) e gli indici di partizione (46 bit).
 
-Per gli endpoint di colore compressi, i valori nella tabella precedente annotare la precisione degli endpoint RGB archiviati e il numero di bit usati per ogni valore di colore. Ad esempio, la modalità 3 specifica un livello di precisione dell'endpoint del colore di 11 e il numero di bit usati per archiviare i valori differenziali degli endpoint trasformati per i colori rosso, blu e verde (rispettivamente 5, 4 e 4). La modalità 10 non usa la compressione differenziale e archivia invece tutti e quattro gli endpoint di colore in modo esplicito.
+Per gli endpoint dei colori compressi, i valori nella tabella precedente annotano la precisione degli endpoint RGB archiviati e il numero di bit usati per ogni valore di colore. Ad esempio, la modalità 3 specifica un livello di precisione dell'endpoint del colore di 11 e il numero di bit usati per archiviare i valori differenziali degli endpoint trasformati per i colori rosso, blu e verde (rispettivamente 5, 4 e 4). La modalità 10 non usa la compressione differenziale e archivia invece tutti e quattro gli endpoint di colore in modo esplicito.
 
-Le ultime quattro modalità di blocco vengono usate per i riquadri in un'area, dove il campo mode è a 5 bit. Questi blocchi hanno campi per gli endpoint (60 bit) e gli indici compressi (63 bit). La modalità 11 (come la modalità 10) non usa la compressione differenziale e archivia invece entrambi gli endpoint di colore in modo esplicito.
+Le ultime quattro modalità di blocco vengono usate per i riquadri in un'area, in cui il campo mode è a 5 bit. Questi blocchi hanno campi per gli endpoint (60 bit) e gli indici compressi (63 bit). La modalità 11 (come la modalità 10) non usa la compressione differenziale e archivia invece entrambi gli endpoint di colore in modo esplicito.
 
 Le modalità 10011, 10111, 11011 e 11111 (non visualizzate) sono riservate. Non usarli nel codificatore. Se l'hardware viene passato a blocchi con una di queste modalità specificate, il blocco decompresso risultante deve contenere tutti gli zeri in tutti i canali ad eccezione del canale alfa.
 
@@ -153,9 +153,9 @@ I nomi dei campi nella tabella precedente sono definiti come segue:
 |-------|-------------------|
 | m     | mode              |
 | d     | indice delle forme       |
-| Rw    | endpt \[ 0 \] . A \[ 0\] |
+| Rw    | endpt \[ 0 \] . Un \[ valore 0\] |
 | Rx    | endpt \[ 0 \] . B \[ 0\] |
-| Ry    | endpt \[ 1 \] . A \[ 0\] |
+| Ry    | endpt \[ 1 \] . Un \[ valore 0\] |
 | Rz    | endpt \[ 1 \] . B \[ 0\] |
 | Gw    | endpt \[ 0 \] . A \[ 1\] |
 | Gx    | endpt \[ 0 \] . B \[ 1\] |
@@ -193,7 +193,7 @@ static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
 }
 ```
 
-Per i riquadri di un'area, il comportamento è lo stesso, solo con endpt \[ 1 \] rimosso.
+Per i riquadri in un'area, il comportamento è lo stesso, solo con endpt \[ 1 \] rimosso.
 
 ``` syntax
 static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
@@ -216,23 +216,23 @@ Per i riquadri a due aree, la trasformazione applica l'inverso della codifica de
 
 Per i riquadri in un'area è presente una sola offset differenziale e quindi solo 3 operazioni di aggiunta.
 
-Il decompressore deve assicurarsi che i risultati della trasformazione inversa non esercitino la precisione di endpt \[ 0 \] .a. In caso di overflow, i valori risultanti dalla trasformazione inversa devono essere incapsulati nello stesso numero di bit. Se la precisione di A0 è "p", l'algoritmo di trasformazione è:
+Il decompressore deve assicurarsi che i risultati della trasformazione inversa non esercitino la precisione di endpt \[ 0 \] .a. In caso di overflow, i valori risultanti dalla trasformazione inversa devono eseguire il wrapping all'interno dello stesso numero di bit. Se la precisione di A0 è "p", l'algoritmo di trasformazione è:
 
 `B0 = (B0 + A0) & ((1 << p) - 1)`
 
-Per i formati firmati, anche i risultati del calcolo differenziale devono essere estesi con segno. Se l'operazione di estensione del segno considera l'estensione di entrambi i segni, dove 0 è positivo e 1 è negativo, l'estensione del segno 0 si occupa della chiusura precedente. In modo equivalente, dopo la chiusura precedente, è necessario estendere solo il valore 1 (negativo).
+Per i formati firmati, anche i risultati del calcolo differenziale devono essere estesi con segno. Se l'operazione di estensione del segno considera l'estensione di entrambi i segni, dove 0 è positivo e 1 è negativo, l'estensione del segno 0 si occupa della chiusura precedente. In modo equivalente, dopo la chiusura precedente, deve essere esteso solo il valore 1 (negativo).
 
-## <a name="unquantization-of-color-endpoints"></a>Nonquantization of Color Endpoints (Nonquantization degli endpoint colore)
+## <a name="unquantization-of-color-endpoints"></a>Unquantization of Color Endpoints
 
-Dato gli endpoint non compressi, il passaggio successivo consiste nell'eseguire una nonquantizzazione iniziale degli endpoint di colore. Questa operazione comporta tre passaggi:
+Dato gli endpoint non compressi, il passaggio successivo consiste nell'eseguire un'iniziale nonquantizzazione degli endpoint di colore. Questa operazione comporta tre passaggi:
 
 -   Nonquantizzazione delle tavolozze dei colori
 -   Interpolazione delle tavolozze
--   Finalizzazione senzaquantization
+-   Finalizzazione nonquantization
 
-La separazione del processo di nonquantizzazione in due parti (nonquantizzazione della tavolozza dei colori prima dell'interpolazione e nonquazione finale dopo l'interpolazione) riduce il numero di operazioni di moltiplicazione necessarie rispetto a un processo di nonquantizzazione completo prima dell'interpolazione della tavolozza.
+La separazione del processo di nonquantizzazione in due parti (un'equivalenza della tavolozza dei colori prima dell'interpolazione e dell'unquantizzazione finale dopo l'interpolazione) riduce il numero di operazioni di moltiplicazione necessarie rispetto a un processo di nonquantizzazione completo prima dell'interpolazione della tavolozza.
 
-Il codice seguente illustra il processo per recuperare le stime dei valori di colore originali a 16 bit e quindi usare i valori di spessore forniti per aggiungere altri 6 valori di colore alla tavolozza. La stessa operazione viene eseguita su ogni canale.
+Il codice seguente illustra il processo per recuperare stime dei valori di colore originali a 16 bit e quindi usare i valori di peso forniti per aggiungere altri 6 valori di colore alla tavolozza. La stessa operazione viene eseguita su ogni canale.
 
 ``` syntax
 int aWeight3[] = {0, 9, 18, 27, 37, 46, 55, 64};
@@ -256,10 +256,10 @@ void generate_palette_unquantized(UINT8 uNumIndices, int c1, int c2, int prec, U
 }
 ```
 
-L'esempio di codice seguente illustra il processo di interpolazione, con le osservazioni seguenti:
+L'esempio di codice successivo illustra il processo di interpolazione, con le osservazioni seguenti:
 
--   Poiché l'intera gamma di valori di colore per la funzione **unquantize** (di seguito) è compreso tra -32768 e 65535, l'interpolatore viene implementato usando l'aritmetica con segno a 17 bit.
--   Dopo l'interpolazione, i valori vengono passati alla funzione **completa nonquantize \_** (descritta nel terzo esempio di questa sezione), che applica il ridimensionamento finale.
+-   Poiché l'intero intervallo di valori di colore per la funzione **unquantize** (sotto) è compreso tra -32768 e 65535, l'interpolatore viene implementato usando l'aritmetica con segno a 17 bit.
+-   Dopo l'interpolazione, i valori vengono passati alla funzione **finish \_ unquantize** (descritta nel terzo esempio in questa sezione), che applica il ridimensionamento finale.
 -   Tutti i decompressori hardware sono necessari per restituire risultati accurati in bit con queste funzioni.
 
 ``` syntax
@@ -306,7 +306,7 @@ int unquantize(int comp, int uBitsPerComp)
 }
 ```
 
-**Il \_ metodo finish unquantize** viene chiamato dopo l'interpolazione della tavolozza. La **funzione unquantize** posticipa il ridimensionamento di 31/32 per signed, 31/64 per unsigned. Questo comportamento è necessario per ottenere il valore finale nell'intervallo dimezzamento valido (-0x7BFF ~ 0x7BFF) dopo il completamento dell'interpolazione della tavolozza per ridurre il numero di moltiplicazioni necessarie. **finish \_ unquantize applica** il ridimensionamento finale e restituisce un valore **short** senza segno che viene reinterpretato in **metà.**
+**finish \_ unquantize viene** chiamato dopo l'interpolazione della tavolozza. La **funzione unquantize** posticipa il ridimensionamento di 31/32 per signed, 31/64 per unsigned. Questo comportamento è necessario per ottenere il valore finale nell'intervallo dimezzamento valido (-0x7BFF ~ 0x7BFF) dopo il completamento dell'interpolazione del riquadro per ridurre il numero di moltiplicazioni necessarie. **finish \_ unquantize applica** il ridimensionamento finale e restituisce un valore **short** senza segno che viene reinterpretato a **metà.**
 
 ``` syntax
 unsigned short finish_unquantize(int comp)
