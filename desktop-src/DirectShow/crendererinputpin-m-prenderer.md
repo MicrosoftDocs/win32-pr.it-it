@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro pRenderer m è un puntatore al filtro.
+description: La variabile \_ membro m pRenderer è un puntatore al filtro.
 ms.assetid: 1375baa2-554e-4027-a060-8959db491f83
-title: 'Membro CRendererInputPin:: m_pRenderer (Renbase. h)'
+title: Membro CRendererInputPin::m_pRenderer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1d708d4a342fc551e5e746cc2980133ff2e492e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db7e7886c4bb247c200c9d64819910af62dec40d6bf9890fd399a9656b1ddb43
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119213941"
 ---
-# <a name="crendererinputpinm_prenderer-member"></a>Membro pRenderer di CRendererInputPin:: m \_
+# <a name="crendererinputpinm_prenderer-member"></a>Membro CRendererInputPin::m \_ pRenderer
 
 La `m_pRenderer` variabile membro è un puntatore al filtro.
 
@@ -42,8 +42,8 @@ CBaseRenderer *m_pRenderer;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Thread_V1 classe: questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Thread_V1: questa classe è la classe padre per gli eventi del thread. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: a434938d-032f-46c6-a94b-3936e56e2db9
 title: Thread_V1 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 65b92ce6924b56a015fbc580cd478122688e474d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 42cc51f7d20cb5e37d10c90d342ca301cce5c0435709abcc08834029d16881e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069431"
 ---
 # <a name="thread_v1-class"></a>Classe \_ Thread V1
 
@@ -44,8 +44,8 @@ La **classe Thread \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

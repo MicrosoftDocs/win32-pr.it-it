@@ -8,12 +8,12 @@ keywords:
 - informazioni sullo stato OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8329fd34fc68122be8d63e4dc28756f88faf7797
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 8d13719964412bf8b74b9d2f4ef58d5a153a56fc2f8d15a3d8788cef94762637
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144163"
 ---
 # <a name="obtaining-state-information"></a>Recupero di informazioni sullo stato
 
@@ -67,7 +67,7 @@ OpenGL gestisce molte variabili di stato che influiscono sul comportamento di mo
     :::column-end:::
 :::row-end:::
 
-Per ottenere il valore di altre variabili di stato, usare [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), in base alle esigenze. Per informazioni su come usare queste funzioni, vedere [**glGet.**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) Altre funzioni di query che è possibile usare sono [**glGetError**](glgeterror.md), [**glGetString**](glgetstring.md)e [**glIsEnabled**](glisenabled.md). Per altre [informazioni sulle funzioni correlate alla gestione degli](handling-errors.md) errori, vedere Gestione degli errori. Per salvare e ripristinare set di variabili di stato, usare [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib**](glpopattrib.md).
+Per ottenere il valore di altre variabili di stato, usare [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), in base alle esigenze. Per informazioni su come usare queste funzioni, vedere [**glGet.**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) Altre funzioni di query che è possibile usare [**sono glGetError**](glgeterror.md), [**glGetString**](glgetstring.md)e [**glIsEnabled**](glisenabled.md). Per altre [informazioni sulle funzioni correlate alla gestione](handling-errors.md) degli errori, vedere Gestione degli errori. Per salvare e ripristinare set di variabili di stato, usare [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib**](glpopattrib.md).
 
 -   [Uso delle funzioni di query](using-the-query-functions.md)
 -   [Gestione degli errori](error-handling.md)

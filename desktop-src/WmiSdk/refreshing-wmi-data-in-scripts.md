@@ -1,28 +1,28 @@
 ---
-description: Negli script di monitoraggio è possibile evitare chiamate successive a GetObject usando un oggetto SWbemRefresher. L'oggetto SWbemRefresher è un contenitore che può contenere diversi oggetti WMI i cui dati possono essere aggiornati in una sola chiamata.
+description: Negli script di monitoraggio è possibile evitare chiamate successive a GetObject usando un oggetto SWbemRefresher. L'oggetto SWbemRefresher è un contenitore che può contenere diversi oggetti WMI i cui dati possono essere aggiornati in un'unica chiamata.
 ms.assetid: b34567f5-9349-4580-97d5-723759805d88
 ms.tgt_platform: multiple
 title: Aggiornamento dei dati WMI negli script
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae0f17ce718fcf5b57e4f3204337634af4129d24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 969a97c6300ac256e08c79e4f4aaeaa8d05bda072a2c310812ce3b2061c791fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050449"
 ---
 # <a name="refreshing-wmi-data-in-scripts"></a>Aggiornamento dei dati WMI negli script
 
-Negli script di monitoraggio è possibile evitare chiamate successive a **GetObject** usando un oggetto [**SWbemRefresher**](swbemrefresher.md) . L'oggetto **SWbemRefresher** è un contenitore che può contenere diversi oggetti WMI i cui dati possono essere aggiornati in una sola chiamata.
+Negli script di monitoraggio è possibile evitare chiamate successive a **GetObject** usando un [**oggetto SWbemRefresher.**](swbemrefresher.md) **L'oggetto SWbemRefresher** è un contenitore che può contenere diversi oggetti WMI i cui dati possono essere aggiornati in un'unica chiamata.
 
-L'utilizzo di un oggetto [**SWbemRefresher**](swbemrefresher.md) è necessario per ottenere dati accurati dalle classi delle prestazioni WMI, ad esempio [**Win32 \_ PerfFormattedData \_ perfdisk \_ disco logico**](./retrieving-raw-and-formatted-performance-data.md) o altre classi preinstallate derivate da [**\_ Perf Win32**](/windows/desktop/CIMWin32Prov/win32-perf).
+L'uso di un oggetto [**SWbemRefresher**](swbemrefresher.md) è necessario per ottenere dati accurati dalle classi di prestazioni WMI, ad esempio [**Win32 \_ PerfFormattedData \_ PerfDisk \_ LogicalDisk**](./retrieving-raw-and-formatted-performance-data.md) o altre classi preinstallate derivate da [**Win32 \_ Perf**](/windows/desktop/CIMWin32Prov/win32-perf).
 
-Nella procedura riportata di seguito viene descritto come aggiornare i dati negli script.
+La procedura seguente descrive come aggiornare i dati negli script.
 
 **Per aggiornare i dati negli script**
 
-1.  Chiamare **CreateObject** per creare un oggetto di aggiornamento [**SWbemRefresher**](swbemrefresher.md) .
+1.  Chiamare **CreateObject** per creare un [**oggetto di aggiornamento SWbemRefresher.**](swbemrefresher.md)
 
     ```VB
     Set objRefresher = CreateObject("WbemScripting.SWbemRefresher")
@@ -30,7 +30,7 @@ Nella procedura riportata di seguito viene descritto come aggiornare i dati negl
 
     
 
-2.  Connettersi allo spazio dei nomi WMI. Per usare le classi performance [**performance \_ Win32**](/windows/desktop/CIMWin32Prov/win32-perf) preinstallate, connettersi alla **radice \\ CIMV2**.
+2.  Connessione allo spazio dei nomi WMI. Per usare classi di prestazioni [**Win32 \_ Perf**](/windows/desktop/CIMWin32Prov/win32-perf) preinstallate, connettersi alla **radice \\ cimv2**.
 
     ```VB
     Set objServicesCimv2 = GetObject("winmgmts:\\" _
@@ -39,9 +39,9 @@ Nella procedura riportata di seguito viene descritto come aggiornare i dati negl
 
     
 
-3.  Aggiungere un singolo oggetto (Call [**SWbemRefresher. Add**](swbemrefresher-add.md)) o una raccolta (Call [**SWbemRefresher. AddEnum**](swbemrefresher-addenum.md)) all'aggiornamento.
+3.  Aggiungere un singolo oggetto (chiamare [**SWbemRefresher.Add)**](swbemrefresher-add.md)o una raccolta (chiamare [**SWbemRefresher.AddEnum)**](swbemrefresher-addenum.md)all'aggiornamento.
 
-    Usare le classi di dati precalcolate derivate da [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata), ad esempio [**Win32 \_ PerfFormattedData \_ perfdisk \_ disco logico**](./retrieving-raw-and-formatted-performance-data.md) anziché [**Win32 \_ PerfRawData \_ \_**](./retrieving-raw-and-formatted-performance-data.md)perfdisk disco logico. In caso contrario, è necessario calcolare i valori per tutte le proprietà diverse da semplici contatori.
+    Usare le classi di dati precalcolate derivate da [**Win32 \_ PerfFormattedData,**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata)ad esempio [**Win32 \_ PerfFormattedData \_ PerfDisk \_ LogicalDisk**](./retrieving-raw-and-formatted-performance-data.md) anziché [**Win32 \_ PerfRawData \_ PerfDisk \_ LogicalDisk.**](./retrieving-raw-and-formatted-performance-data.md) In caso contrario, è necessario calcolare i valori per tutte le proprietà diverse da contatori semplici.
 
     ```VB
     Set objRefreshableItem = _
@@ -53,7 +53,7 @@ Nella procedura riportata di seguito viene descritto come aggiornare i dati negl
 
 4.  Aggiornare i dati una volta per ottenere i dati sulle prestazioni iniziali.
 
-    Chiamare il metodo [**SWbemRefresher. Refresh**](swbemrefresher-refresh.md) o il metodo generico [**SWbemObjectEx. Refresh \_**](swbemobjectex-refresh-.md) .
+    Chiamare il [**metodo SWbemRefresher.Refresh**](swbemrefresher-refresh.md) o il metodo [**SWbemObjectEx.Refresh \_**](swbemobjectex-refresh-.md) generico.
 
     ```VB
     objRefresher.Refresh
@@ -61,7 +61,7 @@ Nella procedura riportata di seguito viene descritto come aggiornare i dati negl
 
     
 
-5.  Se si esegue il monitoraggio delle prestazioni e si dispone di una raccolta nell'oggetto di aggiornamento, eseguire il ciclo degli oggetti della raccolta.
+5.  Se si monitora le prestazioni e si dispone di una raccolta nell'oggetto di aggiornamento, scorrere gli oggetti raccolta.
 
     ```VB
     For Each Process in objRefreshableItem.ObjectSet
@@ -74,9 +74,9 @@ Nella procedura riportata di seguito viene descritto come aggiornare i dati negl
 
     
 
-6.  Cancellare gli elementi dall'aggiornamento chiamando [**SWbemRefresher. DeleteAll**](swbemrefresher-deleteall.md) o rimuovere elementi specifici chiamando [**SWbemRefresher. Remove**](swbemrefresher-remove.md).
+6.  Cancellare gli elementi dall'aggiornamento chiamando [**SWbemRefresher.DeleteAll**](swbemrefresher-deleteall.md) o rimuovendo elementi specifici chiamando [**SwbemRefresher.Remove**](swbemrefresher-remove.md).
 
-Nell'esempio di codice VBScript riportato di seguito viene illustrato come aggiornare un singolo oggetto nel computer locale. Lo script crea un contenitore di aggiornamento e aggiunge un'istanza di un enumeratore per le istanze di [**\_ \_ \_ processo PerfProc Win32 PerfFormattedData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) . La chiamata di [**aggiornamento**](swbemrefresher-refresh.md) viene effettuata tre volte per illustrare le modifiche apportate alla proprietà **PercentProcessorTime** per i processi che utilizzano più di una percentuale del tempo del processore.
+Nell'esempio di codice VBScript seguente viene illustrato come aggiornare un singolo oggetto nel computer locale. Lo script crea un contenitore di aggiornamento e aggiunge un'istanza di un enumeratore per le istanze di [**Win32 \_ PerfFormattedData \_ PerfProc \_ Process.**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) La [**chiamata Refresh**](swbemrefresher-refresh.md) viene effettuata tre volte per illustrare le modifiche nella proprietà **PercentProcessorTime** per i processi che usano più dell'1% del tempo del processore.
 
 
 ```VB
@@ -107,19 +107,19 @@ End If
 
 
 
-La proprietà [**index**](swbemrefreshableitem-index.md) dell'oggetto [**SWbemRefreshableItem**](swbemrefreshableitem.md) restituito rappresenta l'indice dell'oggetto nella raccolta di aggiornamenti. È possibile chiamare la proprietà [**SWbemRefreshableItem. IsSet**](swbemrefreshableitem-isset.md) per determinare se un elemento in un aggiornamento è un singolo elemento o una raccolta. Per accedere a un singolo elemento, utilizzare la proprietà [**SWbemRefreshableItem. Object**](swbemrefreshableitem-object.md) . Se non si effettua la chiamata a **SWbemRefreshableItem. Object**, lo script avrà esito negativo quando si tenta di accedere all'oggetto. Per accedere a una raccolta, usare la proprietà [**SWbemRefreshableItem. ObjectSet**](swbemrefreshableitem-objectset.md) .
+La [**proprietà Index**](swbemrefreshableitem-index.md) dell'oggetto [**SWbemRefreshableItem restituito**](swbemrefreshableitem.md) rappresenta l'indice dell'oggetto nella raccolta dell'aggiornamento. È possibile chiamare la proprietà [**SWbemRefreshableItem.IsSet**](swbemrefreshableitem-isset.md) per determinare se un elemento di un aggiornamento è un singolo elemento o una raccolta. Per accedere a un singolo elemento, usare la [**proprietà SWbemRefreshableItem.Object.**](swbemrefreshableitem-object.md) Se non si effettua la chiamata a **SWbemRefreshableItem.Object**, lo script ha esito negativo quando si tenta di accedere all'oggetto. Per accedere a una raccolta, usare la [**proprietà SWbemRefreshableItem.ObjectSet.**](swbemrefreshableitem-objectset.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Classi del contatore delle prestazioni](/windows/desktop/CIMWin32Prov/performance-counter-classes)
+[Classi di contatori delle prestazioni](/windows/desktop/CIMWin32Prov/performance-counter-classes)
 </dt> <dt>
 
 [Accesso ai dati sulle prestazioni nello script](accessing-performance-data-in-script.md)
 </dt> <dt>
 
-[Attività WMI: monitoraggio delle prestazioni](wmi-tasks--performance-monitoring.md)
+[Attività WMI: Monitoraggio delle prestazioni](wmi-tasks--performance-monitoring.md)
 </dt> <dt>
 
 [Monitoraggio dei dati sulle prestazioni](monitoring-performance-data.md)

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSVmMetadataAssociation
-description: Rappresenta un'associazione tra una macchina virtuale Desktop remoto e le relative proprietà dei metadati.
+title: Win32_TSVmMetadataAssociation classe
+description: Rappresenta un'associazione tra una Desktop remoto virtuale e le relative proprietà dei metadati.
 ms.assetid: 374b1a29-78de-45fd-97b3-c5a5b724e66b
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSVmMetadataAssociation Servizi Desktop remoto
-- Classe Win32_TSVmMetadataAssociation Servizi Desktop remoto, descritta
+- Win32_TSVmMetadataAssociation classe Servizi Desktop remoto
+- Win32_TSVmMetadataAssociation classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db3a68c20553eaf52903471d19df9df169ecde21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebe3389bb03c9e3f33a2cc3e33450318b68171f7ac35fffeaaa3976cb5ae3a33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119420001"
 ---
-# <a name="win32_tsvmmetadataassociation-class"></a>Win32 \_ TSVmMetadataAssociation (classe)
+# <a name="win32_tsvmmetadataassociation-class"></a>Classe \_ Win32 TSVmMetadataAssociation
 
-Rappresenta un'associazione tra una macchina virtuale Desktop remoto e le relative proprietà dei metadati.
+Rappresenta un'associazione tra una Desktop remoto virtuale e le relative proprietà dei metadati.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -44,13 +44,13 @@ class Win32_TSVmMetadataAssociation
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSVmMetadataAssociation** presenta questi tipi di membri:
+La **classe \_ Win32 TSVmMetadataAssociation** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSVmMetadataAssociation** dispone di queste proprietà.
+La **classe \_ Win32 TSVmMetadataAssociation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -63,23 +63,23 @@ Tipo di dati: **[ **Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md)**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Istanza della classe [**Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md) che rappresenta i metadati per la macchina virtuale.
+Istanza della classe [**\_ Win32 TSVmMetadataItem**](win32-tsvmmetadataitem.md) che rappresenta i metadati per la macchina virtuale.
 
 </dd> <dt>
 
 **TSVm**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **Win32 \_ TSVm**](win32-tsvm.md)**
+Tipo di dati: **[ **\_ TSVm Win32**](win32-tsvm.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Istanza della classe [**Win32 \_ TSVm**](win32-tsvm.md) che rappresenta la macchina virtuale.
+Istanza della classe [**\_ TSVm Win32**](win32-tsvm.md) che rappresenta la macchina virtuale.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Istanza della classe [**Win32 \_ TSVm**](win32-tsvm.md) che rappresenta la macch
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                             |
 | Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 

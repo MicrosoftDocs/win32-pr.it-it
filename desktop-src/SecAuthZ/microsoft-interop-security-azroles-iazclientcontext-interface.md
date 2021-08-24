@@ -1,7 +1,7 @@
 ---
-description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità di IAzClientContext.
+description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità IAzClientContext.
 ms.assetid: 670a4c0a-826c-485e-b426-df9ac3fc926c
-title: Interfaccia Microsoft. Interop. Security. AzRoles. IAzClientContext
+title: Interfaccia Microsoft.Interop.Security.AzRoles.IAzClientContext
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -55,36 +55,36 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: b04a73865b2d1a483daa7fee61e73983d149f6a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49e972b05bb64cde77b3e61669612ffb8a63583533488d7b132c22da1f22cad0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414211"
 ---
-# <a name="microsoftinteropsecurityazrolesiazclientcontext-interface"></a>Interfaccia Microsoft. Interop. Security. AzRoles. IAzClientContext
+# <a name="microsoftinteropsecurityazrolesiazclientcontext-interface"></a>Interfaccia Microsoft.Interop.Security.AzRoles.IAzClientContext
 
-I metodi e le proprietà del wrapper di interoperabilità **Microsoft. Interop. Security. azroles. IAzClientContext** sono documentati nella versione com del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
+I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Security.Azroles.IAzClientContext** sono documentati nella versione COM del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzClientContext** include questi tipi di membri:
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzClientContext** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzClientContext** ha questi metodi.
+Questi metodi sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzClientContext.**
 
 
 
 | Metodo                                                                        | Descrizione                                                                                          |
 |:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzClientContext. AccessCheck**           | [**IAzClientContext:: AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. GetBusinessRuleString** | [**IAzClientContext:: GetBusinessRuleString**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getbusinessrulestring)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. GetProperty**           | [**IAzClientContext:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getproperty)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. GetRoles**              | [**IAzClientContext:: GetRoles**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getroles)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.AccessCheck**           | [**IAzClientContext::AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.GetBusinessRuleString** | [**IAzClientContext::GetBusinessRuleString**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getbusinessrulestring)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.GetProperty**           | [**IAzClientContext::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getproperty)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.GetRoles**              | [**IAzClientContext::GetRoles**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getroles)<br/>                           |
 
 
 
@@ -92,20 +92,20 @@ L'interfaccia **Microsoft. Interop. Security. azroles. IAzClientContext** ha que
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzClientContext** dispone di queste proprietà.
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzClientContext** dispone di queste proprietà.
 
 
 
 | Proprietà                                                                              | Tipo di accesso           | Descrizione                                                                                               |
 |:--------------------------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzClientContext. RoleForAccessCheck**<br/> | Lettura/Scrittura<br/> | [**Proprietà RoleForAccessCheck di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserCanonical**<br/>      | Sola lettura<br/>  | [**Proprietà UserCanonical di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usercanonical)<br/>           |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserDisplay**<br/>        | Sola lettura<br/>  | [**Proprietà UserDisplay di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdisplay)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. DNUtente**<br/>             | Sola lettura<br/>  | [**Proprietà DNUtente di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdn)<br/>                         |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserDnsSamCompat**<br/>   | Sola lettura<br/>  | [**Proprietà UserDnsSamCompat di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdnssamcompat)<br/>     |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserGuid**<br/>           | Sola lettura<br/>  | [**Proprietà UserGuid di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userguid)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserSamCompat**<br/>      | Sola lettura<br/>  | [**Proprietà UserSamCompat di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usersamcompat)<br/>           |
-| **Microsoft. Interop. Security. azroles. IAzClientContext. UserUpn**<br/>            | Sola lettura<br/>  | [**Proprietà UserUpn di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userupn)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.RoleForAccessCheck**<br/> | Lettura/Scrittura<br/> | [**Proprietà RoleForAccessCheck di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserCanonical**<br/>      | Sola lettura<br/>  | [**Proprietà UserCanonical di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usercanonical)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserDisplay**<br/>        | Sola lettura<br/>  | [**Proprietà UserDisplay di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdisplay)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserDn**<br/>             | Sola lettura<br/>  | [**Proprietà UserDn di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdn)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserDnsSamCompat**<br/>   | Sola lettura<br/>  | [**Proprietà UserDnsSamCompat di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdnssamcompat)<br/>     |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserGuid**<br/>           | Sola lettura<br/>  | [**Proprietà UserGuid di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userguid)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserSamCompat**<br/>      | Sola lettura<br/>  | [**Proprietà UserSamCompat di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usersamcompat)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzClientContext.UserUpn**<br/>            | Sola lettura<br/>  | [**Proprietà UserUpn di IAzClientContext**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userupn)<br/>                       |
 
 
 

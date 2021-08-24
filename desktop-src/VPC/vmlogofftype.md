@@ -1,9 +1,9 @@
 ---
-title: Enumerazione VMLogoffType (VPCCOMInterfaces. h)
+title: Enumerazione VMLogoffType (VPCCOMInterfaces.h)
 description: Specifica come arrestare una macchina virtuale.
 ms.assetid: 3a2965e3-2637-4677-b487-98d2b508672c
 keywords:
-- VMLogoffType enumerazione PC virtuale
+- Enumerazione VMLogoffType Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2311736115390d807058bbfc54c24e7f9e9654
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e19d2b2785af4ffdedb2f2956658b678d16dd09c89132a230bab36feef30de30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136385"
 ---
 # <a name="vmlogofftype-enumeration"></a>Enumerazione VMLogoffType
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Specifica come arrestare una macchina virtuale (VM).
+Specifica come arrestare una macchina virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmLogoff_Normal"></span><span id="vmlogoff_normal"></span><span id="VMLOGOFF_NORMAL"></span>**vmLogoff \_ normale**
+<span id="vmLogoff_Normal"></span><span id="vmlogoff_normal"></span><span id="VMLOGOFF_NORMAL"></span>**vmLogoff \_ Normal**
 </dt> <dd>
 
-La disconnessione nella macchina virtuale Guest era normale.
+La disconnessione nella macchina virtuale guest era normale.
 
 </dd> <dt>
 
-<span id="vmLogoff_Forced"></span><span id="vmlogoff_forced"></span><span id="VMLOGOFF_FORCED"></span>**vmLogoff \_ forzato**
+<span id="vmLogoff_Forced"></span><span id="vmlogoff_forced"></span><span id="VMLOGOFF_FORCED"></span>**vmLogoff \_ forced**
 </dt> <dd>
 
-La disconnessione nella macchina virtuale Guest è stata forzata.
+La disconnessione nella macchina virtuale guest è stata forzata.
 
 </dd> <dt>
 
-<span id="vmLogoff_External"></span><span id="vmlogoff_external"></span><span id="VMLOGOFF_EXTERNAL"></span>**vmLogoff \_ esterno**
+<span id="vmLogoff_External"></span><span id="vmlogoff_external"></span><span id="VMLOGOFF_EXTERNAL"></span>**vmLogoff \_ External**
 </dt> <dd>
 
-La disconnessione nella VM Guest è stata eseguita usando il metodo [**IVMGuestOS:: disconnessione**](ivmguestos-logoff.md) .
+La disconnessione nella macchina virtuale guest è stata eseguita usando [**il metodo IVMGuestOS::Logoff.**](ivmguestos-logoff.md)
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ La disconnessione nella VM Guest è stata eseguita usando il metodo [**IVMGuestO
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

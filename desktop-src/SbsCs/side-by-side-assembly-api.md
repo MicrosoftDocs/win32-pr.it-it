@@ -1,26 +1,26 @@
 ---
-description: L'API assembly affiancata consente di installare, rimuovere o eseguire query in assembly affiancati dall'archivio di assembly affiancato.
+description: L'API assembly side-by-side installa, rimuove o esegue query su assembly side-by-side dall'archivio assembly side-by-side dei sistemi.
 ms.assetid: 70c1cdc4-7e8c-4d13-b371-c085f6c6eafe
-title: API assembly affiancati
+title: Side-by-Side Assembly API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f55d4f6a27f89d5e83777c923452dfcd534e0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2da02cadf7f2f7be71cfb911a3d8314d79b16445fbb70a2adb1faa63acd6e63a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141864"
 ---
-# <a name="side-by-side-assembly-api"></a>API assembly affiancati
+# <a name="side-by-side-assembly-api"></a>Side-by-Side Assembly API
 
-L'API assembly affiancata consente di installare, rimuovere o eseguire query in assembly affiancati dall'archivio di assembly affiancato del sistema. Questa operazione è detta anche archivio winSxS in Windows XP e l'archivio componenti di Component Servicing Infrastructure (CSI) a partire da Windows Vista e Windows Server 2008.
+L'API assembly side-by-side installa, rimuove o esegue query su assembly side-by-side dall'archivio assembly side-by-side del sistema. Si tratta anche dell'archivio winSxS in Windows XP e dell'archivio componenti CSI (Component Servicing Infrastructure) a partire da Windows Vista e Windows Server 2008.
 
-Le parti dell'API assembly affiancata sono descritte nelle sezioni seguenti:
+Le parti dell'API assembly side-by-side sono descritte nelle sezioni seguenti:
 
--   [Enumerazioni di assembly affiancati](enumerations.md)
+-   [Enumerazioni di assembly side-by-side](enumerations.md)
 -   [Funzioni di assembly side-by-side](side-by-side-assembly-functions.md)
--   [Interfacce di assembly affiancate](side-by-side-assembly-interfaces.md)
--   [Strutture di assembly affiancati](structures.md)
+-   [Interfacce di assembly side-by-side](side-by-side-assembly-interfaces.md)
+-   [Strutture di assembly side-by-side](structures.md)
 
  
 

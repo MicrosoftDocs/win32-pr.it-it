@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETPADDING (COMmctrl. h)
-description: Recupera la spaziatura interna per un controllo Toolbar.
+title: TB_GETPADDING messaggio (Commctrl.h)
+description: Recupera la spaziatura interna per un controllo barra degli strumenti.
 ms.assetid: dde0f44d-5d22-4cab-a7f8-48d84b8995d3
 keywords:
-- Controlli di Windows Message TB_GETPADDING
+- TB_GETPADDING dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b15babf2fd5d97377991d1827ea8947e9d794600
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f342e3322c0db60f46b0de353c2bbd2f6abe28717aa8ee23db8a3a9f26473113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078325"
 ---
-# <a name="tb_getpadding-message"></a>TB- \_ messaggio GETpadding
+# <a name="tb_getpadding-message"></a>MESSAGGIO \_ GETPADDING DA TB
 
-Recupera la spaziatura interna per un controllo Toolbar.
+Recupera la spaziatura interna per un controllo barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera la spaziatura interna per un controllo Toolbar.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **DWORD** che contiene la spaziatura interna orizzontale nella parola bassa e la spaziatura interna verticale nella parola alta, in pixel.
+Restituisce un **valore DWORD** che contiene la spaziatura interna orizzontale nella parola inferiore e la spaziatura interna verticale nella parola più alta, in pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore **DWORD** che contiene la spaziatura interna orizzontale n
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce un valore **DWORD** che contiene la spaziatura interna orizzontale n
 
 <dl> <dt>
 
-[**\_spaziatura interna TB**](tb-setpadding.md)
+[**TB \_ SETPADDING**](tb-setpadding.md)
 </dt> </dl>
 
  

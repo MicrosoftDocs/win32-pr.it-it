@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM ErrorCountersForDevice associa la \_ classe CIM DeviceErrorCounts al dispositivo logico a cui si applica.
+description: La classe CIM \_ ErrorCountersForDevice associa la classe CIM DeviceErrorCounts al dispositivo logico a \_ cui si applica.
 ms.assetid: 200971ab-df85-4a45-beb3-4ffe11ce92dc
 ms.tgt_platform: multiple
-title: Classe CIM_ErrorCountersForDevice
+title: CIM_ErrorCountersForDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c4e11b1f58cae7b544b251044657bb737525b37
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c0c978e3f21cf1596f257f8e9942fc426cfd62b8ce73746d7331b8ee000839bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080645"
 ---
-# <a name="cim_errorcountersfordevice-class"></a>CIM \_ ErrorCountersForDevice (classe)
+# <a name="cim_errorcountersfordevice-class"></a>Classe CIM \_ ErrorCountersForDevice
 
-La classe **CIM \_ ErrorCountersForDevice** associa la classe [**CIM \_ DeviceErrorCounts**](cim-deviceerrorcounts.md) al dispositivo logico a cui si applica.
+La **classe CIM \_ ErrorCountersForDevice** associa la [**classe CIM \_ DeviceErrorCounts**](cim-deviceerrorcounts.md) al dispositivo logico a cui si applica.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_ErrorCountersForDevice : CIM_Statistics
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ErrorCountersForDevice** presenta questi tipi di membri:
+La **classe CIM \_ ErrorCountersForDevice** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ErrorCountersForDevice** dispone di queste proprietà.
+La **classe CIM \_ ErrorCountersForDevice** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,10 +66,10 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("element"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ LogicalDevice CIM**](cim-logicaldevice.md) che descrive il dispositivo a cui si applicano i contatori degli errori.
+Oggetto [**CIM \_ LogicalDevice**](cim-logicaldevice.md) che descrive il dispositivo a cui si applicano i contatori degli errori.
 
 </dd> <dt>
 
@@ -82,20 +82,20 @@ Tipo di dati: **CIM \_ DeviceErrorCounts**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("stats"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Stats"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ DeviceErrorCounts CIM**](cim-deviceerrorcounts.md) che descrive l'oggetto statistico, in questo caso la classe del contatore degli errori.
+[**CiM \_ DeviceErrorCounts**](cim-deviceerrorcounts.md) che descrive l'oggetto statistico, in questo caso la classe del contatore degli errori.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ ErrorCountersForDevice** viene ereditata [**dalle \_ statistiche CIM**](cim-statistics.md).
+La **classe CIM \_ ErrorCountersForDevice** viene ereditata da [**CIM \_ Statistics**](cim-statistics.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Statistiche CIM**](cim-statistics.md)
+[**Statistiche \_ CIM**](cim-statistics.md)
 </dt> </dl>
 
  

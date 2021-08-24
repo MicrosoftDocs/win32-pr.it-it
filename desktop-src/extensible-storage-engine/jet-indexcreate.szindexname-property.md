@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INDEXCREATE. szIndexName'
-title: Proprietà JET_INDEXCREATE. szIndexName
+description: 'Altre informazioni su: JET_INDEXCREATE.szIndexName'
+title: JET_INDEXCREATE.szIndexName
 TOCTitle: 'szIndexName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.szIndexName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.szindexname(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cacddb3cc19051dc4cf74e5ba6aa7f049ac09ea4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dee418c5932551c1877dae65adf0aa678554d98373e5c2e0cd04f8153d687ca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110046"
 ---
-# <a name="jet_indexcreateszindexname-property"></a>Proprietà JET_INDEXCREATE. szIndexName
+# <a name="jet_indexcreateszindexname-property"></a>JET_INDEXCREATE.szIndexName
 
 Ottiene o imposta il nome dell'indice da creare.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public string szIndexName { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membri JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membri](./jet-indexcreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

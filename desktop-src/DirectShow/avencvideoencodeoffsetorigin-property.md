@@ -1,37 +1,37 @@
 ---
-description: Specifica gli angoli sinistro e superiore del rettangolo di ridimensionamento, se il video è ritagliato.
+description: Specifica gli angoli sinistro e superiore del rettangolo di ritaglio, se il video è ritagliato.
 ms.assetid: 8ce8b3b8-dd91-41e1-a4ba-b0c2d9d0edd2
-title: Proprietà AVEncVideoEncodeOffsetOrigin (codecapis. h)
+title: Proprietà AVEncVideoEncodeOffsetOrigin (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db4d685942b8c21f2d5047003f2172c54b1d50d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a5fdc4ffd1f168fa98ce71937b5ddc22d429c573481575432e94964fdfc5205b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275761"
 ---
-# <a name="avencvideoencodeoffsetorigin-property"></a>Proprietà AVEncVideoEncodeOffsetOrigin
+# <a name="avencvideoencodeoffsetorigin-property"></a>AVEncVideoEncodeOffsetOrigin - proprietà
 
-Specifica gli angoli sinistro e superiore del rettangolo di ridimensionamento, se il video è ritagliato.
+Specifica gli angoli sinistro e superiore del rettangolo di ritaglio, se il video è ritagliato.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoEncodeOffsetOrigin**
+**CODECAPI \_ AVEncVideoEncodeOffsetOrigin**
 
 ## <a name="property-value"></a>Valore proprietà
 
-I 16 bit superiori del valore contengono l'offset dal bordo sinistro del frame di input, espresso in pixel. I 16 bit inferiori contengono l'offset dal bordo superiore del fotogramma di input, espresso in pixel.
+I 16 bit superiori del valore contengono l'offset dal bordo sinistro del frame di input, in pixel. I 16 bit inferiori contengono l'offset dal bordo superiore del frame di input, in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni possono impostare questa proprietà per ritagliare il video di input. Utilizzare la proprietà [**AVEncVideoEncodeDimension**](avencvideoencodedimension-property.md) per specificare la larghezza e l'altezza del rettangolo di ridimensionamento.
+Le applicazioni possono impostare questa proprietà per ritagliare il video di input. Usare la [**proprietà AVEncVideoEncodeDimension**](avencvideoencodedimension-property.md) per specificare la larghezza e l'altezza del rettangolo di ritaglio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ Le applicazioni possono impostare questa proprietà per ritagliare il video di i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Le applicazioni possono impostare questa proprietà per ritagliare il video di i
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

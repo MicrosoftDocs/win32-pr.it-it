@@ -2,7 +2,7 @@
 description: Imposta il numero di rete virtuale IPX (Internetworking Packet Exchange) nel computer di destinazione.
 ms.assetid: 52064250-b94f-4dc0-bf1a-8601cd135a90
 ms.tgt_platform: multiple
-title: Metodo SetIPXVirtualNetworkNumber della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetIPXVirtualNetworkNumber della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: ed6e6802a17ef6ec4393d2ae0c5ec43f0e21d247
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 37af763450eab2fdba373fe21bfde5c0b4e1e38fda1f42aff59c425ba6b10000
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079775"
 ---
-# <a name="setipxvirtualnetworknumber-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetIPXVirtualNetworkNumber della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setipxvirtualnetworknumber-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetIPXVirtualNetworkNumber della classe NetworkAdapterConfiguration Win32 \_
 
-Imposta il numero di rete virtuale IPX (Internetworking Packet Exchange) nel computer di destinazione. Windows 2000 e Windows NT 3,51 o versione successiva utilizzano un numero di rete interno per il routing interno. Il numero di rete interno è noto anche come numero di rete virtuale. Identifica in modo univoco il sistema computer della rete. Il metodo restituisce un valore intero che può essere interpretted come segue:
+Imposta il numero di rete virtuale IPX (Internetworking Packet Exchange) nel computer di destinazione. Windows 2000 e Windows NT 3,51 o versione successiva usa un numero di rete interno per il routing interno. Il numero di rete interno è noto anche come numero di rete virtuale. Identifica in modo univoco il sistema di computer in rete. Il metodo restituisce un valore intero che può essere interpretato come segue:
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ uint32 SetIPXVirtualNetworkNumber(
 
 <dl> <dt>
 
-*IPXVirtualNetNumber* \[ in\]
+*IPXVirtualNetNumber* \[ Pollici\]
 </dt> <dd>
 
-Numero di rete virtuale per il sistema.
+Numero di rete virtuale per questo sistema.
 
 </dd> </dl>
 
@@ -51,10 +51,10 @@ Numero di rete virtuale per il sistema.
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare** il computer (0)
+**Completamento riuscito, riavvio non necessario** (0)
 </dt> <dt>
 
-**Operazione completata, riavvio richiesto** (1)
+**Completamento riuscito, riavvio necessario** (1)
 </dt> <dt>
 
 **Metodo non supportato in questa piattaforma** (64)
@@ -63,28 +63,28 @@ Numero di rete virtuale per il sistema.
 **Errore sconosciuto** (65)
 </dt> <dt>
 
-**Subnet mask non valido** (66)
+**Non subnet mask** (66)
 </dt> <dt>
 
 **Si è verificato un errore durante l'elaborazione di un'istanza restituita** (67)
 </dt> <dt>
 
-**Parametro di input non valido** (68)
+**Parametro di input non** valido (68)
 </dt> <dt>
 
-Sono stati **specificati più di 5 gateway** (69)
+**Più di 5 gateway specificati** (69)
 </dt> <dt>
 
 **Indirizzo IP non valido** (70)
 </dt> <dt>
 
-**Indirizzo IP gateway non valido** (71)
+**Indirizzo IP del gateway non valido** (71)
 </dt> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste** (72)
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste** (72)
 </dt> <dt>
 
-**Nome di dominio non valido** (73)
+**Nome di dominio non** valido (73)
 </dt> <dt>
 
 **Nome host non valido** (74)
@@ -96,13 +96,13 @@ Sono stati **specificati più di 5 gateway** (69)
 **File non valido** (76)
 </dt> <dt>
 
-**Percorso di sistema non valido** (77)
+**Percorso di sistema non** valido (77)
 </dt> <dt>
 
-**Copia del file non riuscita** (78)
+**Copia file non riuscita** (78)
 </dt> <dt>
 
-**Parametro di sicurezza non valido** (79)
+**Parametro di sicurezza non** valido (79)
 </dt> <dt>
 
 **Impossibile configurare il servizio TCP/IP** (80)
@@ -111,7 +111,7 @@ Sono stati **specificati più di 5 gateway** (69)
 **Impossibile configurare il servizio DHCP** (81)
 </dt> <dt>
 
-**Non è possibile rinnovare il lease DHCP** (82)
+**Impossibile rinnovare il lease DHCP** (82)
 </dt> <dt>
 
 **Impossibile rilasciare il lease DHCP** (83)
@@ -123,10 +123,10 @@ Sono stati **specificati più di 5 gateway** (69)
 **IPX non abilitato sulla scheda** (85)
 </dt> <dt>
 
-**Errore limite numero frame/rete** (86)
+**Errore dei limiti dei numeri di rete/frame** (86)
 </dt> <dt>
 
-**Tipo di frame non valido** (87)
+**Tipo di frame non** valido (87)
 </dt> <dt>
 
 **Numero di rete non valido** (88)
@@ -135,7 +135,7 @@ Sono stati **specificati più di 5 gateway** (69)
 **Numero di rete duplicato** (89)
 </dt> <dt>
 
-**Parametro fuori limite** (90)
+**Parametro non in limiti** (90)
 </dt> <dt>
 
 **Accesso negato** (91)
@@ -144,13 +144,13 @@ Sono stati **specificati più di 5 gateway** (69)
 **Memoria insufficiente** (92)
 </dt> <dt>
 
-**Già esistente** (93)
+**Esiste già** (93)
 </dt> <dt>
 
 **Percorso, file o oggetto non trovato** (94)
 </dt> <dt>
 
-**Non è possibile inviare una notifica al servizio** (95)
+**Impossibile inviare una notifica al** servizio (95)
 </dt> <dt>
 
 **Impossibile inviare una notifica al servizio DNS** (96)
@@ -177,7 +177,7 @@ Sono stati **specificati più di 5 gateway** (69)
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -186,7 +186,7 @@ Sono stati **specificati più di 5 gateway** (69)
 
 <dl> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_COLUMNDEF. cbMax'
-title: Proprietà JET_COLUMNDEF. cbMax
+description: 'Altre informazioni su: JET_COLUMNDEF.cbMax'
+title: JET_COLUMNDEF.cbMax
 TOCTitle: 'cbMax property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.cbMax
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef.cbmax(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 486507dc046617ea6689fcf1c5eac4199cfeecd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 760d55f40eb6c95e432e72b7dac412d2f8d912a9736acffcacba9d25804fb53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112400"
 ---
-# <a name="jet_columndefcbmax-property"></a>Proprietà JET_COLUMNDEF. cbMax
+# <a name="jet_columndefcbmax-property"></a>JET_COLUMNDEF.cbMax
 
-Ottiene o imposta la lunghezza massima della colonna. Questa operazione è significativa solo per le colonne di tipo [Text](./jet-coltyp-enumeration.md), [LONGTEXT](./jet-coltyp-enumeration.md), [Binary](./jet-coltyp-enumeration.md) e [LongBinary](./jet-coltyp-enumeration.md).
+Ottiene o imposta la lunghezza massima della colonna. Ciò è significativo solo per le colonne di tipo [Text](./jet-coltyp-enumeration.md), [LongText](./jet-coltyp-enumeration.md), [Binary](./jet-coltyp-enumeration.md) [e LongBinary](./jet-coltyp-enumeration.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public int cbMax { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNDEF](./jet-columndef-class.md)
+[JET_COLUMNDEF classe](./jet-columndef-class.md)
 
-[Membri JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF membri](./jet-columndef-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

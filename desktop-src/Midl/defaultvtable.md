@@ -1,9 +1,9 @@
 ---
 title: defaultvtable (attributo)
-description: L'attributo \ defaultvtable \ definisce un'interfaccia come interfaccia vtable predefinita.
+description: L'attributo \ defaultvtable\ definisce un'interfaccia come interfaccia Vtable predefinita.
 ms.assetid: 05e50935-c630-4f9e-a7ec-3bb70a9834f1
 keywords:
-- attributo MIDL di defaultvtable
+- attributo defaultvtable MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8086d60d0936dcf56738afadea4244a5fff758b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ffebc5907072f7fdfc539bbc2b06bf1e4ad9fb667826c6c3c5a96121b106326e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067341"
 ---
 # <a name="defaultvtable-attribute"></a>defaultvtable (attributo)
 
-L'attributo **\[ defaultvtable \]** definisce un'interfaccia come l'interfaccia vtable predefinita.
+**\[ L'attributo \] defaultvtable** definisce un'interfaccia come interfaccia Vtable predefinita.
 
 ``` syntax
 [
@@ -38,21 +38,21 @@ coclass coclass-name
 
 <dl> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-Altri attributi che si applicano alla classe. Gli **\[** attributi [**source**](source.md) **\]** e **\[** [**UUID**](uuid.md) **\]** sono obbligatori.
+Altri attributi che si applicano alla classe . Gli **\[** [**attributi di**](source.md) **\]** origine e **\[** [**uuid**](uuid.md) sono **\]** obbligatori.
 
 </dd> <dt>
 
-*coclass-nome* 
+*coclass-name* 
 </dt> <dd>
 
 Nome della classe.
 
 </dd> <dt>
 
-*coclass-interface-List* 
+*coclass-interface-list* 
 </dt> <dd>
 
 Elenco di interfacce per la classe.
@@ -61,11 +61,11 @@ Elenco di interfacce per la classe.
 
 ## <a name="remarks"></a>Commenti
 
-Un'interfaccia vtable predefinita non può essere un'interfaccia dispatch, ma deve essere un'interfaccia dual o vtable o. Se l'interfaccia è un'interfaccia duale, i sink possono presumere che ricevano gli eventi tramite vtable.
+Un'interfaccia Vtable predefinita non può essere un'interfaccia dispatch, ma deve essere un'interfaccia duale o Vtable o un'interfaccia. Se l'interfaccia è un'interfaccia duale, i sink possono presupporre che riceveranno eventi tramite Vtable.
 
-Una classe può essere sia un'interfaccia di origine predefinita che un'interfaccia di origine vtable predefinita, come illustrato nell'esempio. In questo caso, un sink di notifica deve utilizzare \_ l'IID IDISPATCH per ricevere eventi di invio e utilizzare l'identificatore di interfaccia per ricevere eventi vtable.
+Una classe può essere sia un'interfaccia di origine predefinita che un'interfaccia di origine Vtable predefinita, come illustrato nell'esempio. In questo caso un sink di consulenza deve usare IDISPATCH IID per ricevere eventi di invio e usare l'identificatore di interfaccia \_ per ricevere eventi Vtable.
 
-### <a name="typeflag-representation"></a>Rappresentazione TYPEFLAG
+### <a name="typeflag-representation"></a>Rappresentazione typeflag
 
 Presenza di IMPLTYPEFLAG \_ FDEFAULTVTABLE.
 
@@ -112,21 +112,21 @@ interface IFormEvents: IDispatch
 [**coclass**](coclass.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**origine**](source.md)
+[**fonte**](source.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

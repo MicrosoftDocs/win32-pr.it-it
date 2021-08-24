@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 84816ac72841dcda0aef726535b7f5219d5467e4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5800bc4a6bd9817369d3d2a928b7b2043ae2531ac2bc56a4a7682ea588c27c74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128563"
 ---
 # <a name="d3dxquaternioninverse-function-d3dx10mathh"></a>Funzione D3DXQuaternionInverse (D3DX10Math.h)
 

@@ -5,7 +5,7 @@ ms.assetid: 8b5a4c34-863d-4963-97c8-cc5aa2223ab5
 keywords:
 - Metodo removeItem Windows Media Player
 - Metodo removeItem Windows Media Player, interfaccia IWMPPlaylist
-- Interfaccia IWMPPlaylist Windows Media Player, metodo removeItem
+- Interfaccia IWMPPlaylist Windows Media Player metodo removeItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec845b7657e04f17c47119dd169032ebe5815786
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01ea9250cc7e368699a916b4c87f419fc5b0b66001a4d7ca12afd5587a0adda7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246431"
 ---
-# <a name="iwmpplaylistremoveitem-method"></a>Metodo IWMPPlaylist:: removeItem
+# <a name="iwmpplaylistremoveitem-method"></a>Metodo IWMPPlaylist::removeItem
 
-Il metodo **RemoveItem** rimuove l'elemento multimediale specificato dalla playlist.
+Il **metodo removeItem** rimuove l'elemento multimediale specificato dalla playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,10 +53,10 @@ Implements IWMPPlaylist.removeItem
 
 <dl> <dt>
 
-*pIWMPMedia* \[ in\]
+*pIWMPMedia* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPMedia** che rappresenta l'elemento multimediale da rimuovere dalla playlist.
+Interfaccia **WMPLib.IWMPMedia** che rappresenta l'elemento multimediale da rimuovere dalla playlist.
 
 </dd> </dl>
 
@@ -66,11 +66,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento rimosso è la traccia attualmente in esecuzione, la riproduzione viene arrestata e l'elemento successivo nella playlist diventa quello corrente.
+Se l'elemento rimosso è la traccia attualmente in riproduzione, la riproduzione si interrompe e l'elemento successivo nella playlist diventa quello corrente.
 
-Se non è presente alcun elemento successivo, viene usato l'elemento precedente. Se non sono presenti altri elementi, la proprietà **AxWindowsMediaPlayer. currentMedia** restituirà **null**.
+Se non è presente alcun elemento successivo, viene usato l'elemento precedente. Se non sono presenti altri elementi, la **proprietà AxWindowsMediaPlayer.currentMedia** restituirà **NULL.**
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -88,7 +88,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
+[**AxWindowsMediaPlayer.currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
@@ -97,16 +97,16 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. insertItem (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-insertitem--vb-and-c.md)
+[**IWMPPlaylist.insertItem (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-insertitem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. Item (VB e C#)**](iwmpplaylist-item--vb-and-c.md)
+[**IWMPPlaylist.Item (VB e C#)**](iwmpplaylist-item--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

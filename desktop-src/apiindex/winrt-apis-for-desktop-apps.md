@@ -1,21 +1,21 @@
 ---
-description: Nelle applicazioni desktop è possibile usare il subset di Windows Runtime classi seguente.
+description: Il subset seguente di Windows runtime può essere usato nelle app desktop.
 ms.assetid: F9113BEA-E383-48BE-BD17-72DC1D20DF47
 title: API Windows Runtime 8.x per app desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a962950f7bc936c25d94c4cdaed44bfd16a26091
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c810195a2ff33547a431b357eca94a7f8468e6c0d44e1f009b1646e475ceb7f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130283"
 ---
 # <a name="windows-runtime-8x-apis-for-desktop-apps"></a>API Windows Runtime 8.x per app desktop
 
-Nelle applicazioni desktop è possibile usare il subset di Windows Runtime classi seguente.
+Il subset seguente di Windows runtime può essere usato nelle app desktop.
 
--   [**Classe accelerometro**](/uwp/api/Windows.Devices.Sensors.Accelerometer?view=winrt-19041)
+-   [**Classe Accelerometer**](/uwp/api/Windows.Devices.Sensors.Accelerometer?view=winrt-19041)
 -   [**Classe AccelerometerReading**](/uwp/api/Windows.Devices.Sensors.AccelerometerReading?view=winrt-19041)
 -   [**Classe AlternateWordForm**](/uwp/api/Windows.Data.Text.AlternateWordForm?view=winrt-19041)
 -   [**Classe AnimationDescription**](/uwp/api/Windows.UI.Core.AnimationMetrics.AnimationDescription?view=winrt-19041)
@@ -52,9 +52,9 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe CmsDetachedSignature**](/uwp/api/Windows.Security.Cryptography.Certificates.CmsDetachedSignature?view=winrt-19041)
 -   [**Classe CmsSignerInfo**](/uwp/api/Windows.Security.Cryptography.Certificates.CmsSignerInfo?view=winrt-19041)
 -   [**Classe CmsTimestampInfo**](/uwp/api/Windows.Security.Cryptography.Certificates.CmsTimestampInfo?view=winrt-19041)
--   [**Compass (classe)**](/uwp/api/Windows.Devices.Sensors.Compass?view=winrt-19041)
+-   [**Classe Compass**](/uwp/api/Windows.Devices.Sensors.Compass?view=winrt-19041)
 -   [**Classe CompassReading**](/uwp/api/Windows.Devices.Sensors.CompassReading?view=winrt-19041)
--   [**Classe Compressor**](/uwp/api/Windows.Storage.Compression.Compressor?view=winrt-19041)
+-   [**Classe Disasto**](/uwp/api/Windows.Storage.Compression.Compressor?view=winrt-19041)
 -   [**Classe ConnectionCost**](/uwp/api/Windows.Networking.Connectivity.ConnectionCost?view=winrt-19041)
 -   [**Classe ConnectionProfile**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile?view=winrt-19041)
 -   [**Classe ConnectionProfileFilter**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfileFilter?view=winrt-19041)
@@ -82,7 +82,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe DataProtectionProvider**](/uwp/api/Windows.Security.Cryptography.DataProtection.DataProtectionProvider?view=winrt-19041)
 -   [**Classe DataProviderDeferral**](/uwp/api/Windows.ApplicationModel.DataTransfer.DataProviderDeferral?view=winrt-19041)
 -   [**Classe DataProviderRequest**](/uwp/api/Windows.ApplicationModel.DataTransfer.DataProviderRequest?view=winrt-19041)
--   [**DataUsage (classe)**](/uwp/api/Windows.Networking.Connectivity.DataUsage?view=winrt-19041)
+-   [**Classe DataUsage**](/uwp/api/Windows.Networking.Connectivity.DataUsage?view=winrt-19041)
 -   [**Classe DateTimeFormatter**](/uwp/api/Windows.Globalization.DateTimeFormatting.DateTimeFormatter?view=winrt-19041)
 -   [**Classe DecimalFormatter**](/uwp/api/Windows.Globalization.NumberFormatting.DecimalFormatter?view=winrt-19041)
 -   [**Classe Decompressor**](/uwp/api/Windows.Storage.Compression.Decompressor?view=winrt-19041)
@@ -113,7 +113,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe GattValueChangedEventArgs**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs?view=winrt-19041)
 -   [**Classe GeographicRegion**](/uwp/api/Windows.Globalization.GeographicRegion?view=winrt-19041)
 -   [**Classe GlobalizationPreferences**](/uwp/api/Windows.System.UserProfile.GlobalizationPreferences?view=winrt-19041)
--   [**Classe giroscopio**](/uwp/api/Windows.Devices.Sensors.Gyrometer?view=winrt-19041)
+-   [**Classe Gyrometer**](/uwp/api/Windows.Devices.Sensors.Gyrometer?view=winrt-19041)
 -   [**Classe GyrometerReading**](/uwp/api/Windows.Devices.Sensors.GyrometerReading?view=winrt-19041)
 -   [**Classe HashAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmNames?view=winrt-19041)
 -   [**Classe HashAlgorithmProvider**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmProvider?view=winrt-19041)
@@ -127,7 +127,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe HidNumericControl**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidNumericControl?view=winrt-19041)
 -   [**Classe HidNumericControlDescription**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription?view=winrt-19041)
 -   [**Classe HidOutputReport**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidOutputReport?view=winrt-19041)
--   [**HostName (classe)**](/uwp/api/Windows.Networking.HostName?view=winrt-19041)
+-   [**Classe HostName**](/uwp/api/Windows.Networking.HostName?view=winrt-19041)
 -   [**Classe HotspotCredentialsAuthenticationResult**](/uwp/api/Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult?view=winrt-19041)
 -   [**Classe HtmlFormatHelper**](https://www.bing.com/search?q=**HtmlFormatHelper+class**)
 -   [**Classe HttpBaseProtocolFilter**](/uwp/api/Windows.Web.Http.Filters.HttpBaseProtocolFilter?view=winrt-19041)
@@ -186,7 +186,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe ImageScannerFlatbedConfiguration**](/uwp/api/Windows.Devices.Scanners.ImageScannerFlatbedConfiguration?view=winrt-19041)
 -   [**Classe ImageScannerPreviewResult**](/uwp/api/Windows.Devices.Scanners.ImageScannerPreviewResult?view=winrt-19041)
 -   [**Classe ImageScannerScanResult**](/uwp/api/Windows.Devices.Scanners.ImageScannerScanResult?view=winrt-19041)
--   [**Classe inclinometro**](/uwp/api/Windows.Devices.Sensors.Inclinometer?view=winrt-19041)
+-   [**Classe Inclinometer**](/uwp/api/Windows.Devices.Sensors.Inclinometer?view=winrt-19041)
 -   [**Classe InclinometerReading**](/uwp/api/Windows.Devices.Sensors.InclinometerReading?view=winrt-19041)
 -   [**Classe IncrementNumberRounder**](/uwp/api/Windows.Globalization.NumberFormatting.IncrementNumberRounder?view=winrt-19041)
 -   [**Classe InkDrawingAttributes**](/uwp/api/Windows.UI.Input.Inking.InkDrawingAttributes?view=winrt-19041)
@@ -204,14 +204,14 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe JsonArray**](/uwp/api/Windows.Data.Json.JsonArray?view=winrt-19041)
 -   [**Classe JsonError**](/uwp/api/Windows.Data.Json.JsonError?view=winrt-19041)
 -   [**Classe JsonObject**](/uwp/api/Windows.Data.Json.JsonObject?view=winrt-19041)
--   [**JsonValue (classe)**](/uwp/api/Windows.Data.Json.JsonValue?view=winrt-19041)
+-   [**Classe JsonValue**](/uwp/api/Windows.Data.Json.JsonValue?view=winrt-19041)
 -   [**Classe KeyAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyAlgorithmNames?view=winrt-19041)
 -   [**Classe KeyAttestationHelper**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyAttestationHelper?view=winrt-19041)
 -   [**Classe KeyDerivationAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames?view=winrt-19041)
 -   [**Classe KeyDerivationAlgorithmProvider**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider?view=winrt-19041)
--   [**Classe KeyDerivationParameters da**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationParameters?view=winrt-19041)
+-   [**Classe KeyDerivationParameters**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationParameters?view=winrt-19041)
 -   [**Classe KeyStorageProviderNames**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyStorageProviderNames?view=winrt-19041)
--   [**Classe Language**](/uwp/api/Windows.Globalization.Language?view=winrt-19041)
+-   [**Classe di linguaggio**](/uwp/api/Windows.Globalization.Language?view=winrt-19041)
 -   [**Classe LanguageFont**](/uwp/api/Windows.Globalization.Fonts.LanguageFont?view=winrt-19041)
 -   [**Classe LanguageFontGroup**](/uwp/api/Windows.Globalization.Fonts.LanguageFontGroup?view=winrt-19041)
 -   [**Classe LanIdentifier**](/uwp/api/Windows.Networking.Connectivity.LanIdentifier?view=winrt-19041)
@@ -257,7 +257,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe MobileBroadbandDeviceInformation**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation?view=winrt-19041)
 -   [**Classe MobileBroadbandNetwork**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork?view=winrt-19041)
 -   [**Classe NetworkAdapter**](/uwp/api/Windows.Networking.Connectivity.NetworkAdapter?view=winrt-19041)
--   [**NetworkInformation (classe)**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation?view=winrt-19041)
+-   [**Classe NetworkInformation**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation?view=winrt-19041)
 -   [**Classe NetworkItem**](/uwp/api/Windows.Networking.Connectivity.NetworkItem?view=winrt-19041)
 -   [**Classe NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails?view=winrt-19041)
 -   [**Classe NetworkOperatorTetheringAccessPointConfiguration**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration?view=winrt-19041)
@@ -281,7 +281,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe PermilleFormatter**](/uwp/api/Windows.Globalization.NumberFormatting.PermilleFormatter?view=winrt-19041)
 -   [**Classe PersistedKeyProvider**](/uwp/api/Windows.Security.Cryptography.Core.PersistedKeyProvider?view=winrt-19041)
 -   [**Classe PhotoCapturedEventArgs**](/uwp/api/Windows.Media.Capture.PhotoCapturedEventArgs?view=winrt-19041)
--   [**Classe playlist**](/uwp/api/Windows.Media.Playlists.Playlist?view=winrt-19041)
+-   [**Classe Playlist**](/uwp/api/Windows.Media.Playlists.Playlist?view=winrt-19041)
 -   [**Classe PnpObject**](/uwp/api/Windows.Devices.Enumeration.Pnp.PnpObject?view=winrt-19041)
 -   [**Classe PnpObjectCollection**](/uwp/api/Windows.Devices.Enumeration.Pnp.PnpObjectCollection?view=winrt-19041)
 -   [**Classe PnpObjectUpdate**](/uwp/api/Windows.Devices.Enumeration.Pnp.PnpObjectUpdate?view=winrt-19041)
@@ -289,7 +289,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe PrepareTranscodeResult**](/uwp/api/Windows.Media.Transcoding.PrepareTranscodeResult?view=winrt-19041)
 -   [**Classe PropertyAnimation**](/uwp/api/Windows.UI.Core.AnimationMetrics.PropertyAnimation?view=winrt-19041)
 -   [**Classe PropertySet**](/uwp/api/Windows.Foundation.Collections.PropertySet?view=winrt-19041)
--   [**PropertyValue (classe)**](/uwp/api/Windows.Foundation.PropertyValue?view=winrt-19041)
+-   [**Classe PropertyValue**](/uwp/api/Windows.Foundation.PropertyValue?view=winrt-19041)
 -   [**Classe ProvisionedProfile**](/uwp/api/Windows.Networking.NetworkOperators.ProvisionedProfile?view=winrt-19041)
 -   [**Classe ProvisionFromXmlDocumentResults**](/uwp/api/Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults?view=winrt-19041)
 -   [**Classe ProvisioningAgent**](/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent?view=winrt-19041)
@@ -298,7 +298,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe ProxyConfiguration**](/uwp/api/Windows.Networking.Connectivity.ProxyConfiguration?view=winrt-19041)
 -   [**Classe RegionOfInterest**](/uwp/api/Windows.Media.Devices.RegionOfInterest?view=winrt-19041)
 -   [**Classe RegionsOfInterestControl**](/uwp/api/Windows.Media.Devices.RegionsOfInterestControl?view=winrt-19041)
--   [**ResourceCollection (classe)**](/uwp/api/Windows.Web.AtomPub.ResourceCollection?view=winrt-19041)
+-   [**Classe ResourceCollection**](/uwp/api/Windows.Web.AtomPub.ResourceCollection?view=winrt-19041)
 -   [**Classe RfcommDeviceService**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService?view=winrt-19041)
 -   [**Classe RfcommServiceId**](/uwp/api/windows.devices.bluetooth.rfcomm.rfcommserviceid?view=winrt-19041)
 -   [**Classe RfcommServiceProvider**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider?view=winrt-19041)
@@ -342,7 +342,7 @@ Nelle applicazioni desktop è possibile usare il subset di Windows Runtime class
 -   [**Classe SyndicationItem**](/uwp/api/Windows.Web.Syndication.SyndicationItem?view=winrt-19041)
 -   [**Classe SyndicationLink**](/uwp/api/Windows.Web.Syndication.SyndicationLink?view=winrt-19041)
 -   [**Classe SyndicationNode**](/uwp/api/Windows.Web.Syndication.SyndicationNode?view=winrt-19041)
--   [**SyndicationPerson (classe)**](/uwp/api/Windows.Web.Syndication.SyndicationPerson?view=winrt-19041)
+-   [**Classe SyndicationPerson**](/uwp/api/Windows.Web.Syndication.SyndicationPerson?view=winrt-19041)
 -   [**Classe SyndicationText**](/uwp/api/Windows.Web.Syndication.SyndicationText?view=winrt-19041)
 -   [**Classe ToastActivatedEventArgs**](/uwp/api/Windows.UI.Notifications.ToastActivatedEventArgs?view=winrt-19041)
 -   [**Classe ToastDismissedEventArgs**](/uwp/api/Windows.UI.Notifications.ToastDismissedEventArgs?view=winrt-19041)

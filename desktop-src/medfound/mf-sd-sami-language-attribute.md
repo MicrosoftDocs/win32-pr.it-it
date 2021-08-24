@@ -1,19 +1,19 @@
 ---
-description: Contiene il nome del linguaggio SAMI (Synchronized Accessible Media Interchange) definito per il flusso.
+description: Contiene il nome della lingua SAMI (Synchronized Accessible Media Interchange) definito per il flusso.
 ms.assetid: 3151c369-9d2b-4f03-9a4a-9b9267314dc1
-title: Attributo MF_SD_SAMI_LANGUAGE (Mfidl. h)
+title: MF_SD_SAMI_LANGUAGE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd476c86ddde7d369265c5302192e4a7c01295f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e70436244779dddf97ef8277c5c1e2cd8c74cfaa25a90e63472d07d32c36b56d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102327"
 ---
-# <a name="mf_sd_sami_language-attribute"></a>\_Attributo del linguaggio MF SD \_ Sami \_
+# <a name="mf_sd_sami_language-attribute"></a>Attributo \_ \_ SAMI LANGUAGE di MF SD \_
 
-Contiene il nome del linguaggio SAMI (Synchronized Accessible Media Interchange) definito per il flusso.
+Contiene il nome della lingua SAMI (Synchronized Accessible Media Interchange) definito per il flusso.
 
 Questo attributo è presente nei descrittori di flusso restituiti dall'origine dei supporti SAMI.
 
@@ -23,9 +23,9 @@ Stringa di caratteri wide
 
 ## <a name="remarks"></a>Commenti
 
-Il nome del linguaggio SAMI viene specificato nel file SAMI.
+Il nome della lingua SAMI è specificato nel file SAMI.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)

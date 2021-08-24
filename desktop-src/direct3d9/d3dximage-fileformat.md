@@ -1,7 +1,7 @@
 ---
-description: Descrive i formati di file di immagine supportati. Per le descrizioni di questi formati, vedere la sezione Osservazioni.
+description: Descrive i formati di file di immagine supportati. Per le descrizioni di questi formati, vedere Note.
 ms.assetid: 245a0052-f156-44ad-ab46-3677a818167e
-title: Enumerazione D3DXIMAGE_FILEFORMAT (D3dx9tex. h)
+title: D3DXIMAGE_FILEFORMAT enumerazione (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9tex.h
-ms.openlocfilehash: 3b1195e7503ff32e92cdbafde941b811dcf86427
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 715b9f0f6d8c56153d51c9c19b70ba253e508619229f52201a28f23c1902d26e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123167"
 ---
-# <a name="d3dximage_fileformat-enumeration"></a>\_Enumerazione FILEformat D3DXIMAGE
+# <a name="d3dximage_fileformat-enumeration"></a>Enumerazione D3DXIMAGE \_ FILEFORMAT
 
-Descrive i formati di file di immagine supportati. Per le descrizioni di questi formati, vedere la sezione Osservazioni.
+Descrive i formati di file di immagine supportati. Per le descrizioni di questi formati, vedere Note.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ typedef enum D3DXIMAGE_FILEFORMAT {
 <span id="D3DXIFF_BMP"></span><span id="d3dxiff_bmp"></span>**D3DXIFF \_ BMP**
 </dt> <dd>
 
-Formato di file bitmap di Windows (BMP).
+Windows di file bitmap (BMP).
 
 </dd> <dt>
 
-<span id="D3DXIFF_JPG"></span><span id="d3dxiff_jpg"></span>**\_Jpg D3DXIFF**
+<span id="D3DXIFF_JPG"></span><span id="d3dxiff_jpg"></span>**D3DXIFF \_ JPG**
 </dt> <dd>
 
 Formato di file compresso JPEG (Joint Photographics Experts Group).
@@ -65,35 +65,35 @@ Formato di file compresso JPEG (Joint Photographics Experts Group).
 <span id="D3DXIFF_TGA"></span><span id="d3dxiff_tga"></span>**D3DXIFF \_ TGA**
 </dt> <dd>
 
-Formato file di immagine TrueVision (targa o TGA).
+Formato di file di immagine Truevision (Tutto, O TGA).
 
 </dd> <dt>
 
-<span id="D3DXIFF_PNG"></span><span id="d3dxiff_png"></span>**\_Png D3DXIFF**
+<span id="D3DXIFF_PNG"></span><span id="d3dxiff_png"></span>**D3DXIFF \_ PNG**
 </dt> <dd>
 
-Formato di file Portable Network Graphics (PNG).
+Portable Network Graphics (PNG).
 
 </dd> <dt>
 
-<span id="D3DXIFF_DDS"></span><span id="d3dxiff_dds"></span>**\_DDS D3DXIFF**
+<span id="D3DXIFF_DDS"></span><span id="d3dxiff_dds"></span>**D3DXIFF \_ DDS**
 </dt> <dd>
 
-Formato di file DirectDraw Surface (DDS).
+Formato di file DDS (DirectDraw Surface).
 
 </dd> <dt>
 
-<span id="D3DXIFF_PPM"></span><span id="d3dxiff_ppm"></span>**D3DXIFF \_ ppm**
+<span id="D3DXIFF_PPM"></span><span id="d3dxiff_ppm"></span>**D3DXIFF \_ PPM**
 </dt> <dd>
 
-Formato di file pixmap (PPM) portatile.
+Formato di file pixmap portabile (PPM).
 
 </dd> <dt>
 
-<span id="D3DXIFF_DIB"></span><span id="d3dxiff_dib"></span>**\_DIB D3DXIFF**
+<span id="D3DXIFF_DIB"></span><span id="d3dxiff_dib"></span>**D3DXIFF \_ DIB**
 </dt> <dd>
 
-Formato file DIB (Device-Independent Bitmap) Windows.
+Windows di file bitmap indipendente dal dispositivo (DIB).
 
 </dd> <dt>
 
@@ -107,20 +107,20 @@ Formato di file HDR (High Dynamic Range).
 <span id="D3DXIFF_PFM"></span><span id="d3dxiff_pfm"></span>**D3DXIFF \_ PFM**
 </dt> <dd>
 
-Formato del file di mapping float portatile.
+Formato di file mappa float portabile.
 
 </dd> <dt>
 
-<span id="D3DXIFF_FORCE_DWORD"></span><span id="d3dxiff_force_dword"></span>**D3DXIFF \_ Force \_ DWORD**
+<span id="D3DXIFF_FORCE_DWORD"></span><span id="d3dxiff_force_dword"></span>**D3DXIFF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le funzioni che iniziano con D3DXLoadxxx supportano tutti i formati elencati. Le funzioni che iniziano con D3DXSavexxx supportano tutti i formati elencati ad eccezione dei formati TrueVision (. tga) e Portable Pixmap (. ppm).
+Le funzioni che iniziano con D3DXLoadxxx supportano tutti i formati elencati. Le funzioni che iniziano con D3DXSavexxx supportano tutti i formati elencati tranne i formati Truevision (con estensione tga) e pixmap portabile (con estensione ppm).
 
 Nella tabella seguente sono elencati i formati di input e output disponibili.
 
@@ -128,21 +128,21 @@ Nella tabella seguente sono elencati i formati di input e output disponibili.
 
 | Estensione nome del file | Descrizione                                                                                                                                                                                                                                                                                                                                        |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| bmp           | Formato bitmap di Windows. Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo di pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci della tavolozza logica. |
-| .dds           | Formato del file di superficie DirectDraw. Archivia trame, trame di volumi e mappe di ambienti cubici, con o senza livelli di mipmap e con o senza compressione pixel. Vedere [DDS](../direct3ddds/dx-graphics-dds.md).                                                                                                                                       |
-| dib           | DIB di Windows. Contiene una matrice di bit combinati con strutture che specificano la larghezza e l'altezza dell'immagine bitmap, il formato colori del dispositivo in cui è stata creata l'immagine e la risoluzione del dispositivo usato per creare l'immagine.                                                                                                              |
-| . HDR           | Formato HDR. Codifica ogni pixel come colore RGBE a 32 bit, con 8 bit di mantissa per rosso, verde e blu e un esponente a 8 bit condiviso. Ogni canale viene compresso separatamente con la codifica di lunghezza di esecuzione (RLE).                                                                                                                                       |
-| jpg           | Standard JPEG. Specifica la compressione di variabili di colori RGB a 24 bit e file di documento di immagine TIFF (grigio a 8 bit Tagged Image File Format).                                                                                                                                                                                                       |
-| . PFM           | Formato della mappa float portatile. Formato di immagine A virgola mobile non elaborato, senza compressione. L'intestazione del file specifica la larghezza dell'immagine, l'altezza, il monocromatico o il colore e l'ordine delle parole del computer. I dati pixel vengono archiviati come valori a virgola mobile a 32 bit, con 3 valori per pixel per il colore e un valore per pixel per il monocromatico.                                |
-| png           | Formato PNG. Formato bitmap non proprietario con compressione senza perdita di pagina.                                                                                                                                                                                                                                                                            |
-| . ppm           | Formato pixmap portatile. Formato di file binario o ASCII per le immagini a colori che includono l'altezza e la larghezza dell'immagine e il valore del componente colore massimo.                                                                                                                                                                                                 |
-| .tga           | Formato scheda grafica targa o Truevision. Supporta le profondità di 8, 15, 16, 24 e 32 bit, inclusa la scala di grigi a 8 bit, e contiene dati facoltativi per la tavolozza dei colori, l'immagine (x, y) e i dati di dimensioni e i dati pixel.                                                                                                                               |
+| bmp           | Windows bitmap. Contiene un'intestazione che descrive la risoluzione del dispositivo in cui è stato creato il rettangolo dei pixel, le dimensioni del rettangolo, le dimensioni della matrice di bit, una tavolozza logica e una matrice di bit che definisce la relazione tra i pixel nell'immagine bitmap e le voci nella tavolozza logica. |
+| .dds           | Formato di file DirectDraw Surface. Archivia trame, trame di volume e mappe dell'ambiente cubico, con o senza livelli mipmap e con o senza compressione dei pixel. Vedere [DDS](../direct3ddds/dx-graphics-dds.md).                                                                                                                                       |
+| dib           | Windows Dib. Contiene una matrice di bit combinati con strutture che specificano larghezza e altezza dell'immagine bitmap, il formato del colore del dispositivo in cui è stata creata l'immagine e la risoluzione del dispositivo usato per creare l'immagine.                                                                                                              |
+| .hdr           | Formato HDR. Codifica ogni pixel come colore RGBE a 32 bit, con 8 bit di mantissa per rosso, verde e blu e un esponente condiviso a 8 bit. Ogni canale viene compresso separatamente con la codifica RLE (Run-Length Encoding).                                                                                                                                       |
+| jpg           | Standard JPEG. Specifica la compressione variabile dei file di documento di immagine TIFF (Gray Scale Tagged Image File Format) a 24 bit e RGB a 24 bit.                                                                                                                                                                                                       |
+| .pfm           | Formato mappa float portabile. Formato di immagine a virgola mobile non elaborato, senza alcuna compressione. L'intestazione del file specifica la larghezza, l'altezza, la monocromatica o il colore dell'immagine e l'ordine delle parole macchina. I dati pixel vengono archiviati come valori a virgola mobile a 32 bit, con 3 valori per pixel per colore e un valore per pixel per monocromatico.                                |
+| png           | Formato PNG. Formato bitmap non proprietario che usa la compressione senza perdita di dati.                                                                                                                                                                                                                                                                            |
+| PPM           | Formato Pixmap portabile. Formato di file binario o ASCII per le immagini a colori che include l'altezza e la larghezza dell'immagine e il valore massimo del componente colore.                                                                                                                                                                                                 |
+| .tga           | Formato di Adattatore grafica Diass o Truevision. Supporta profondità di 8, 15, 16, 24 e 32 bit, tra cui scala di grigi a 8 bit e contiene dati facoltativi della tavolozza dei colori, dati di origine e dimensioni delle immagini (x, y) e pixel.                                                                                                                               |
 
 
 
  
 
-Per ulteriori informazioni su alcuni di questi formati, vedere [tipi di bitmap](../gdiplus/-gdiplus-types-of-bitmaps-about.md) .
+Per altre informazioni su alcuni di questi [formati,](../gdiplus/-gdiplus-types-of-bitmaps-about.md) vedere Tipi di bitmap.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -150,7 +150,7 @@ Per ulteriori informazioni su alcuni di questi formati, vedere [tipi di bitmap](
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9tex.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi di avvio del thread. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 412de56f-4f54-46e8-ab60-d47371247e79
-title: Classe Thread_V1_TypeGroup1
+title: Thread_V1_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 13c419b417b614eb9022d1cb7c09a84ca705b3dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90d8f4afe9d78cc774dea3159a728ccc6d4db52314e692594d026f7e4fe2161c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069441"
 ---
-# <a name="thread_v1_typegroup1-class"></a>\_Classe thread V1 \_ TypeGroup1
+# <a name="thread_v1_typegroup1-class"></a>Classe \_ \_ TypeGroup1 del thread V1
 
 Questa classe è la classe del tipo di evento per gli eventi di avvio del thread.
 
@@ -54,44 +54,44 @@ class Thread_V1_TypeGroup1 : Thread_V1
 
 ## <a name="members"></a>Members
 
-I tipi di membri della classe **thread \_ V1 \_ TypeGroup1** sono i seguenti:
+La **classe \_ \_ TypeGroup1 thread V1** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **thread \_ V1 \_ TypeGroup1** dispone di queste proprietà.
+La **classe \_ \_ TypeGroup1 thread V1** ha queste proprietà.
 
 <dl> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
-Identificatore del processo del thread che interessano l'evento.
+Identificatore del processo del thread coinvolto nell'evento.
 
-**Windows Server 2003:** Contiene il qualificatore di formato ("x").
+**Windows Server 2003:** Contiene il qualificatore Format("x").
 
 </dd> <dt>
 
 StackBase
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), puntatore
+Qualificatori: WmiDataId(3), Puntatore
 </dt> </dl>
 
 Indirizzo di base dello stack del thread.
@@ -101,13 +101,13 @@ Indirizzo di base dello stack del thread.
 StackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Puntatore
 </dt> </dl>
 
 Limite dello stack del thread.
@@ -117,47 +117,47 @@ Limite dello stack del thread.
 StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7), puntatore
+Qualificatori: WmiDataId(7), Puntatore
 </dt> </dl>
 
-Indirizzo di memoria in cui viene avviata la traccia.
+Indirizzo di memoria in corrispondenza del quale viene avviata la traccia.
 
 </dd> <dt>
 
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Identificatore del thread associato all'evento.
+Identificatore di thread del thread coinvolto nell'evento.
 
-**Windows Server 2003:** Contiene il qualificatore di formato ("x").
+**Windows Server 2003:** Contiene il qualificatore Format("x").
 
 </dd> <dt>
 
 UserStackBase
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), puntatore
+Qualificatori: WmiDataId(5), Puntatore
 </dt> </dl>
 
 Indirizzo di base dello stack in modalità utente del thread.
@@ -167,13 +167,13 @@ Indirizzo di base dello stack in modalità utente del thread.
 UserStackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), puntatore
+Qualificatori: WmiDataId(6), Puntatore
 </dt> </dl>
 
 Limite dello stack in modalità utente del thread.
@@ -189,7 +189,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (9), Format ("c")
+Qualificatori: WmiDataId(9), Format("c")
 </dt> </dl>
 
 Non usato.
@@ -199,13 +199,13 @@ Non usato.
 Win32StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8), puntatore
+Qualificatori: WmiDataId(8), Puntatore
 </dt> </dl>
 
 Indirizzo iniziale della funzione che deve essere eseguita da questo thread.

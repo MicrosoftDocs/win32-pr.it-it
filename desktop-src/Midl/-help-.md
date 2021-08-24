@@ -1,9 +1,9 @@
 ---
-title: opzione/Help (/)
-description: L'opzione/Help (/) indica al compilatore di visualizzare un messaggio di utilizzo che illustra in dettaglio tutte le opzioni e le opzioni della riga di comando di MIDL disponibili.
+title: Opzione /help (/ )
+description: L'opzione /help (/ ) indica al compilatore di visualizzare un messaggio di utilizzo che indica in dettaglio tutte le opzioni e le opzioni della riga di comando MIDL disponibili.
 ms.assetid: 387e1346-bb43-409d-bd4c-9e10e708ec4f
 keywords:
-- /Help (/) switch MIDL
+- /help (/ ) - Opzione MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,33 +12,33 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d78d28604b339f0472567026ac44af32b8e0c23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e1cd6beab4bad3cf02c8211b32bc5dd598d598f5c7be23687efff923df2e6b9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529621"
 ---
-# <a name="help--switch"></a>opzione/Help (/?)
+# <a name="help--switch"></a>Opzione /help (/?)
 
-L'opzione **/Help** (**/?**) indica al compilatore di visualizzare un messaggio di utilizzo che illustra in dettaglio tutte le opzioni e le opzioni della riga di comando di MIDL disponibili.
+**L'opzione /help** (**/?**) indica al compilatore di visualizzare un messaggio di utilizzo che indica in dettaglio tutte le opzioni e le opzioni della riga di comando MIDL disponibili.
 
-L'opzione [**/Confirm**](-confirm.md) Visualizza le impostazioni dell'opzione del compilatore MIDL selezionate dall'utente.
+[**L'opzione /confirm**](-confirm.md) visualizza le impostazioni dell'opzione del compilatore MIDL selezionate dall'utente.
 
 ``` syntax
 midl /help
 midl /?
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
 ## <a name="examples"></a>Esempio
 
-**/Help MIDL**
+**midl /help**
 
-**MIDL/?**
+**midl /?**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,9 +50,9 @@ Questa opzione non ha parametri.
 [**/confirm**](-confirm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 0d0c6b3d-23bc-4628-a684-14bb9e18967f
 title: Recupero di proprietà per più oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56c069f6a28b923339f66f8423f211eff4704ef6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d1ad9ec397daa90c149fe950c1fc4777c407e3f5f3a359f46cf8bef56e18b9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083515"
 ---
 # <a name="retrieving-properties-for-multiple-objects"></a>Recupero di proprietà per più oggetti
 
-Alcuni driver di dispositivo supportano il recupero di proprietà per più oggetti in una singola chiamata di funzione. Questa operazione viene definita recupero in blocco. Esistono due tipi di operazioni di recupero bulk: il primo tipo recupera le proprietà per un elenco di oggetti e il secondo tipo recupera le proprietà per tutti gli oggetti di un determinato formato. Nell'esempio descritto in questa sezione viene illustrata la prima.
+Alcuni driver di dispositivo supportano il recupero di proprietà per più oggetti in una singola chiamata di funzione. questa operazione viene definita recupero bulk. Esistono due tipi di operazioni di recupero bulk: il primo tipo recupera le proprietà per un elenco di oggetti e il secondo tipo recupera le proprietà per tutti gli oggetti di un determinato formato. L'esempio descritto in questa sezione illustra il primo.
 
 L'applicazione può eseguire un recupero bulk usando le interfacce descritte nella tabella seguente.
 
@@ -23,17 +23,17 @@ L'applicazione può eseguire un recupero bulk usando le interfacce descritte nel
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Fornisce l'accesso ai metodi specifici del contenuto.                   |
 | [**Interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Utilizzato per identificare le proprietà da recuperare.                   |
-| [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Utilizzato per determinare se un determinato driver supporta le operazioni bulk. |
-| [**Interfaccia IPortableDevicePropertiesBulk**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)               | Supporta l'operazione di recupero in blocco.                             |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per archiviare gli identificatori di oggetto per l'operazione bulk.       |
+| [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Usato per determinare se un determinato driver supporta le operazioni bulk. |
+| [**Interfaccia IPortableDevicePropertiesBulk**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)               | Supporta l'operazione di recupero bulk.                             |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per archiviare gli identificatori di oggetto per l'operazione in blocco.       |
 
 
 
  
 
-La funzione ReadContentPropertiesBulk nel modulo ContentProperties. cpp dell'applicazione di esempio illustra un'operazione di recupero in blocco.
+La funzione ReadContentPropertiesBulk nel modulo ContentProperties.cpp dell'applicazione di esempio illustra un'operazione di recupero bulk.
 
-La prima attività eseguita in questo esempio è determinare se il driver specificato supporta le operazioni bulk. Questa operazione viene eseguita chiamando QueryInterface sull'interfaccia IPortableDeviceProperties e verificando l'esistenza di IPortableDevicePropertiesBulk.
+La prima attività eseguita in questo esempio è determinare se il driver specificato supporta o meno le operazioni bulk. Questa operazione viene eseguita chiamando QueryInterface sull'interfaccia IPortableDeviceProperties e verificando l'esistenza di IPortableDevicePropertiesBulk.
 
 
 ```C++
@@ -82,9 +82,9 @@ if (SUCCEEDED(hr))
 
 
 
-Se il driver supporta le operazioni bulk, il passaggio successivo consiste nel creare un'istanza dell' [**interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) e specificare le chiavi che corrispondono alle proprietà che l'applicazione recupererà. Per una descrizione di questo processo, vedere l'argomento [recupero delle proprietà per un singolo oggetto](retrieving-properties-for-a-single-object.md) .
+Se il driver supporta operazioni bulk, il passaggio successivo consiste nel creare un'istanza [**dell'interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) e specificare le chiavi che corrispondono alle proprietà che verranno recuperate dall'applicazione. Per una descrizione di questo processo, vedere [l'argomento Recupero di proprietà per un singolo oggetto.](retrieving-properties-for-a-single-object.md)
 
-Una volta specificate le chiavi appropriate, l'applicazione di esempio crea un'istanza dell' [**interfaccia IPortableDevicePropertiesBulkCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk). L'applicazione utilizzerà i metodi in questa interfaccia per tenere traccia dello stato di avanzamento dell'operazione di recupero bulk asincrono.
+Dopo aver specificato le chiavi appropriate, l'applicazione di esempio crea un'istanza [**dell'interfaccia IPortableDevicePropertiesBulkCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk). L'applicazione userà i metodi in questa interfaccia per tenere traccia dello stato di avanzamento dell'operazione asincrona di recupero bulk.
 
 
 ```C++
@@ -101,9 +101,9 @@ if (SUCCEEDED(hr))
 
 
 
-La funzione successiva chiamata dall'applicazione di esempio è la funzione di supporto CreateIPortableDevicePropVariantCollectionWithAllObjectIDs. Questa funzione crea un elenco di tutti gli identificatori di oggetto disponibili, ad esempio scopi. Un'applicazione reale limita l'elenco di identificatori a un particolare set di oggetti. Ad esempio, un'applicazione può creare un elenco di identificatori per tutti gli oggetti attualmente presenti in una determinata visualizzazione di cartelle.
+La funzione successiva chiamata dall'applicazione di esempio è la funzione helper CreateIPortableDevicePropVariantCollectionWithAllObjectIDs. Questa funzione crea un elenco di tutti gli identificatori di oggetto disponibili a scopo di esempio. Un'applicazione reale limita l'elenco di identificatori a un determinato set di oggetti. Ad esempio, un'applicazione può creare un elenco di identificatori per tutti gli oggetti attualmente in una determinata visualizzazione cartelle.
 
-Come indicato in precedenza, la funzione helper enumera in modo ricorsivo tutti gli oggetti in un determinato dispositivo. Restituisce questo elenco in un' [**interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene un identificatore per ogni oggetto trovato. La funzione helper è definita nel modulo ContentEnumeration. cpp.
+Come indicato in precedenza, la funzione helper enumera in modo ricorsivo tutti gli oggetti in un determinato dispositivo. Restituisce questo elenco in [**un'interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene un identificatore per ogni oggetto trovato. La funzione helper è definita nel modulo ContentEnumeration.cpp.
 
 
 ```C++
@@ -120,12 +120,12 @@ if (SUCCEEDED(hr))
 
 
 
-Una volta eseguiti i passaggi precedenti, l'applicazione di esempio avvia il recupero asincrono della proprietà. Questa operazione viene eseguita eseguendo le operazioni seguenti:
+Una volta completati i passaggi precedenti, l'applicazione di esempio avvia il recupero asincrono delle proprietà. A tale scopo, eseguire le operazioni seguenti:
 
-1.  Chiamata di IPortableDevicePropertiesBulk:: QueueGetValuesByObjectList, che accoda una richiesta per il recupero della proprietà bulk. Si noti che anche se la richiesta viene accodata, non è stata avviata.
-2.  Chiamata di IPortableDevicePropertiesBulk:: Start per avviare la richiesta in coda.
+1.  Chiamata di IPortableDevicePropertiesBulk::QueueGetValuesByObjectList, che accoda una richiesta per il recupero bulk della proprietà. Si noti che, anche se la richiesta è in coda, non viene avviata.
+2.  Chiamata di IPortableDevicePropertiesBulk::Start per avviare la richiesta in coda.
 
-Questi passaggi sono illustrati nell'estratto di codice seguente nell'applicazione di esempio.
+Questi passaggi sono illustrati nell'estratto di codice seguente dell'applicazione di esempio.
 
 
 ```C++

@@ -1,28 +1,28 @@
 ---
-title: Schema WinSAT
-description: È possibile utilizzare lo schema Windows System Assessment Tool (WinSAT) per determinare le query XPath valide da eseguire.
+title: WinSAT Schema
+description: È possibile usare lo schema Windows System Assessment Tool (WinSAT) per determinare le query XPath valide da eseguire.
 ms.assetid: da497f3b-f5a2-401e-8230-937362ecf4f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e18cd775d8dab59bbe9b7f23392242f7eca1e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 57e3096e9ad514740c409933ce60418def7e5704d0e284b2ad83ef6502fdee6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119412221"
 ---
-# <a name="winsat-schema"></a>Schema WinSAT
+# <a name="winsat-schema"></a>WinSAT Schema
 
 \[Le enumerazioni WinSAT possono essere modificate o non disponibili per le versioni dopo Windows 8.1.\]
 
-È possibile utilizzare lo schema Windows System Assessment Tool (WinSAT) per determinare le query XPath valide da eseguire. Per eseguire una query XPath, vedere uno dei metodi seguenti:
+È possibile usare lo schema Windows System Assessment Tool (WinSAT) per determinare le query XPath valide da eseguire. Per eseguire una query XPath, vedere uno dei metodi seguenti:
 
--   [**IQueryAllWinSATAssessments:: Get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
--   [**IQueryRecentWinSATAssessment:: Get \_ XML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
+-   [**IQueryAllWinSATAssessments::get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
+-   [**IQueryRecentWinSATAssessment::get \_ XML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
 
-L'elemento **WinSAT** può avere un elemento **WinsatAssessments** come elemento padre quando si chiama il metodo [**get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) .
+**L'elemento WinSAT** può avere un **elemento WinsatAssessments** come elemento padre quando si chiama il [**metodo get \_ AllXML.**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
 
-Di seguito è riportato lo schema WinSAT che è possibile utilizzare per determinare l'XPath.
+Di seguito è riportato lo schema WinSAT che è possibile usare per determinare XPath.
 
 
 ```xsd
@@ -1235,9 +1235,9 @@ Di seguito è riportato lo schema WinSAT che è possibile utilizzare per determi
 
 
 
- 
+ 
 
- 
+ 
 
 
 

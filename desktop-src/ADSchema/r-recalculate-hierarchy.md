@@ -1,10 +1,10 @@
 ---
-title: Recalculate-Hierarchy esteso a destra
-description: Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
+title: Recalculate-Hierarchy esteso
+description: Diritto esteso per forzare il DS a ricalcolare la gerarchia.
 ms.assetid: 8a9d5f3c-2fc2-45e3-bd65-f26fd339af34
 ms.tgt_platform: multiple
 keywords:
-- Recalculate-Hierarchy schema AD esteso a destra
+- Recalculate-Hierarchy schema ad active directory esteso
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 441ef83b2c904e64f03d9aacb2338ea9f2e29d4c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dbd510dadf39cfb816850cb081454cad2424bb2c1633ed14bcedc9d871c93510
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531461"
 ---
-# <a name="recalculate-hierarchy-extended-right"></a>Recalculate-Hierarchy esteso a destra
+# <a name="recalculate-hierarchy-extended-right"></a>Recalculate-Hierarchy esteso
 
-Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
+Diritto esteso per forzare il DS a ricalcolare la gerarchia.
 
 
 
@@ -50,7 +50,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 
@@ -61,7 +61,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 
@@ -72,7 +72,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 
@@ -83,7 +83,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 
@@ -94,7 +94,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 
@@ -105,7 +105,7 @@ Diritto esteso per forzare il ricalcolo della gerarchia da parte del DS.
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 32                                       |
+| Localization-Display-ID | 32                                       |
 
 
 

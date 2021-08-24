@@ -1,23 +1,23 @@
 ---
-title: Uso di IADs GetInfoEx per il recupero di intervalli
-description: Il metodo IADs. GetInfoEx può essere usato per recuperare un intervallo di valori di attributo. L'intervallo di valori da recuperare è specificato nella matrice di nomi di attributo passata al metodo.
+title: Uso di IAD GetInfoEx per il recupero di intervalli
+description: Il metodo IADs.GetInfoEx può essere usato per recuperare un intervallo di valori di attributo. L'intervallo di valori da recuperare è specificato nella matrice del nome dell'attributo passata al metodo .
 ms.assetid: 2098862f-e5ec-4912-a941-8faceade22ee
 ms.tgt_platform: multiple
 keywords:
-- Uso di IADs GetInfoEx per il recupero di intervalli ADSI
-- IADs GetInfoEx ADSI, utilizzo per il recupero di intervalli
+- Uso di IAD GetInfoEx per il recupero di intervalli ADSI
+- IADs GetInfoEx ADSI , usando per il recupero di intervalli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50681facd811adf26a89754fecb5490ee059eed6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 218f6cf8c0b0346a5b5554f870f5729bd55f8b221a3ebe0e425305333ee00cf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082195"
 ---
-# <a name="using-iadsgetinfoex-for-range-retrieval"></a>Utilizzo di IADs:: GetInfoEx per il recupero di intervalli
+# <a name="using-iadsgetinfoex-for-range-retrieval"></a>Uso di IADs::GetInfoEx per il recupero di intervalli
 
-Il metodo [**IADs. GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) può essere usato per recuperare un intervallo di valori di attributo. L'intervallo di valori da recuperare è specificato nella matrice di nomi di attributo passata al metodo.
+Il [**metodo IADs.GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) può essere usato per recuperare un intervallo di valori di attributo. L'intervallo di valori da recuperare è specificato nella matrice del nome dell'attributo passata al metodo .
 
 Gli identificatori di intervallo per una query di proprietà richiedono il formato seguente:
 
@@ -28,9 +28,9 @@ Gli identificatori di intervallo per una query di proprietà richiedono il forma
 
 
 
-dove " &lt; Property Name &gt; " è l' **ldapDisplayName** dell'attributo " &lt; Low Range &gt; " è l'indice in base zero del primo valore dell'attributo da recuperare e " &lt; High Range &gt; " è l'indice in base zero dell'ultimo valore dell'attributo da recuperare. Per &lt; &gt; specificare la prima voce, viene utilizzato zero per "intervallo minimo". Il carattere jolly ( \* ) può essere usato per " &lt; intervallo elevato &gt; " per specificare tutte le voci rimanenti.
+dove " property name " è il &lt; &gt; **ldapDisplayName** dell'attributo, " low range " è l'indice in base zero del primo valore di attributo da recuperare e " high range " è l'indice in base zero dell'ultimo valore di attributo &lt; &gt; da &lt; &gt; recuperare. Zero viene usato per " &lt; low range " per specificare la prima &gt; voce. Il carattere jolly ( \* ) può essere usato per " intervallo elevato " per specificare tutte le voci &lt; &gt; rimanenti.
 
-L'esempio di codice seguente contiene una funzione che Mostra come usare il recupero intervallo con [**IADs:: GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) per enumerare i membri di un gruppo.
+L'esempio di codice seguente contiene una funzione che illustra come usare il recupero di intervalli con [**IADs::GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) per enumerare i membri di un gruppo.
 
 
 ```C++
@@ -143,7 +143,7 @@ HRESULT EnumGroupWithGetInfoEx(LPCWSTR pwszGroupDN,
 
 
 
-L'esempio di codice seguente contiene una funzione che Mostra come usare il recupero intervallo con [**IADs. GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) per enumerare i membri di un gruppo.
+L'esempio di codice seguente contiene una funzione che illustra come usare il recupero di intervalli con [**IADs.GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) per enumerare i membri di un gruppo.
 
 
 ```VB
@@ -209,9 +209,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Descrive una chiave di callback da usare nell'animazione del fotogramma chiave.
+description: Descrive un tasto di callback da usare nell'animazione con fotogrammi chiave.
 ms.assetid: aca034f5-6961-49f1-ba7c-addcf016af2b
-title: Struttura D3DXKEY_CALLBACK (D3dx9anim. h)
+title: D3DXKEY_CALLBACK struttura (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 5c2c4dc90cbb95218268bf673204867f5b5d6636
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f488445bbb018b62445ff802abcf5a82c22b4e31c9d71618e61437efd5e36a26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123069"
 ---
-# <a name="d3dxkey_callback-structure"></a>\_Struttura di callback D3DXKEY
+# <a name="d3dxkey_callback-structure"></a>Struttura CALLBACK D3DXKEY \_
 
-Descrive una chiave di callback da usare nell'animazione del fotogramma chiave.
+Descrive un tasto di callback da usare nell'animazione con fotogrammi chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct D3DXKEY_CALLBACK {
 **Time**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -58,7 +58,7 @@ Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Puntatore ai dati di callback utente.
+Puntatore ai dati di callback dell'utente.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Puntatore ai dati di callback utente.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

@@ -1,33 +1,33 @@
 ---
 title: ServiceParameters
-description: Specifica i parametri della riga di comando da passare a un oggetto installato per l'uso da parte di COM tramite il valore del registro di sistema LocalService.
+description: Specifica i parametri della riga di comando da passare a un oggetto installato per l'uso da parte di COM tramite il valore del Registro di sistema LocalService.
 ms.assetid: da11e422-c0f2-4e44-9728-740ea6b61421
 keywords:
-- Valore ServiceParameters del registro di sistema COM
+- Valore del Registro di sistema ServiceParameters COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 235de1052df72e88e2093647928ed68ab67451cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 103b55269b700beaf5c85e3408e3597e63fb9140e4dc79fe4bb895ff6767bfc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129963"
 ---
 # <a name="serviceparameters"></a>ServiceParameters
 
-Specifica i parametri della riga di comando da passare a un oggetto installato per l'uso da parte di COM tramite il valore del registro di sistema [**LocalService**](localservice.md) .
+Specifica i parametri della riga di comando da passare a un oggetto installato per l'uso da parte di COM tramite il valore del Registro di sistema [**LocalService.**](localservice.md)
 
 ## <a name="registry-entry"></a>Voce del Registro di sistema
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      ServiceParameters = parameter
+   {AppID_GUID}
+      ServiceParameters = parameter
 ```
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un valore **reg \_ SZ** . Questa stringa viene passata al servizio come argomento della riga di comando mentre viene avviata.
+Si tratta di **un valore \_ REG SZ.** Questa stringa viene passata al servizio come argomento della riga di comando durante l'avvio.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -39,9 +39,9 @@ Si tratta di un valore **reg \_ SZ** . Questa stringa viene passata al servizio 
 [Registrazione di server COM](registering-com-servers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

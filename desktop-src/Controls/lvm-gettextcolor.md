@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETTEXTCOLOR (COMmctrl. h)
-description: Recupera il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetTextColor di ListView.
+title: LVM_GETTEXTCOLOR messaggio (Commctrl.h)
+description: Recupera il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetTextColor.
 ms.assetid: 51685e61-dd0a-4c21-8c66-31cf72c2b3e4
 keywords:
-- Controlli di Windows Message LVM_GETTEXTCOLOR
+- LVM_GETTEXTCOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7686e8f06f49dbfc14899f47ba52017daaf23c07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4ea7d295d87b8db5d0fa43403ccd01a8b41790447fd7ed6b7bae5d08150c934
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079045"
 ---
-# <a name="lvm_gettextcolor-message"></a>\_Messaggio GETTEXTCOLOR LVM
+# <a name="lvm_gettextcolor-message"></a>Messaggio LVM \_ GETTEXTCOLOR
 
-Recupera il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetTextColor di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettextcolor) .
+Recupera il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView GetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettextcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il colore del testo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

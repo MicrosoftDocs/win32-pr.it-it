@@ -1,24 +1,24 @@
 ---
-description: Questo argomento elenca i metodi della classe size. Per un elenco completo delle classi, vedere Classe Size.
+description: In questo argomento vengono elencati i metodi della classe Size. Per un elenco completo delle classi, vedere Classe Size.
 ms.assetid: 617626ed-9272-418a-815d-39d10b18df99
-title: Metodi di ridimensionamento
+title: Metodi size
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94b8fabca893390015027602114cc2fb0ded5937
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63b40fcf82482a7bf751811b6dc80d1e169a4dffa77a32d94d3223a258ea862b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036989"
 ---
-# <a name="size-methods"></a>Metodi di ridimensionamento
+# <a name="size-methods"></a>Metodi size
 
-Questo argomento elenca i metodi della classe [**size**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-size) . Per un elenco completo delle classi, vedere **classe Size**.
+In questo argomento vengono elencati i metodi della [**classe Size.**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-size) Per un elenco completo delle classi, vedere **Classe Size.**
 
 -   [**Empty**](/windows/desktop/api/Gdiplustypes/nf-gdiplustypes-size-empty)
 -   [**Uguale a**](/windows/desktop/api/Gdiplustypes/nf-gdiplustypes-size-equals)
--   [**operatore-(Size&)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-size-operator-sub)
--   [**operatore + (dimensioni&)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-size-operator-add)
+-   [**operator-(Size&)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-size-operator-sub)
+-   [**operator+(Size&)**](/windows/win32/api/gdiplustypes/nf-gdiplustypes-size-operator-add)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Definisce i diversi Stati di errore dell'estensione di origine multimediale.
+description: Definisce i diversi stati di errore di Media Source Extension.
 ms.assetid: 8FD54833-F60B-49E8-A673-6130F3B06160
-title: Enumerazione MF_MSE_ERROR
+title: MF_MSE_ERROR enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 6b6aaea772376b0e57c006a56a5a1bb30bc497c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71246aaa2897540b272360a790718f8d5900934108c98dfcc6b4023898f9f2db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104587"
 ---
-# <a name="mf_mse_error-enumeration"></a>\_ \_ Enumerazione errori MF MSE
+# <a name="mf_mse_error-enumeration"></a>Enumerazione \_ MSE ERROR MF \_
 
-Definisce i diversi Stati di errore dell'estensione di origine multimediale.
+Definisce i diversi stati di errore di Media Source Extension.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ typedef enum _MF_MSE_ERROR {
 
 <dl> <dt>
 
-<span id="MF_MSE_ERROR_NOERROR"></span><span id="mf_mse_error_noerror"></span>**\_errore MF \_ MSE \_ NOERROR**
+<span id="MF_MSE_ERROR_NOERROR"></span><span id="mf_mse_error_noerror"></span>**ERRORE \_ MSE MF \_ \_ NOERROR**
 </dt> <dd>
 
 Non specifica alcun errore.
 
 </dd> <dt>
 
-<span id="MF_MSE_ERROR_NETWORK"></span><span id="mf_mse_error_network"></span>**\_rete di \_ errori MF MSE \_**
+<span id="MF_MSE_ERROR_NETWORK"></span><span id="mf_mse_error_network"></span>**MF \_ MSE \_ ERROR \_ NETWORK**
 </dt> <dd>
 
 Specifica un errore con la rete.
 
 </dd> <dt>
 
-<span id="MF_MSE_ERROR_DECODE"></span><span id="mf_mse_error_decode"></span>**\_ \_ decodifica errore MF \_ MSE**
+<span id="MF_MSE_ERROR_DECODE"></span><span id="mf_mse_error_decode"></span>**DECODIFICA DEGLI ERRORI MSE MF \_ \_ \_**
 </dt> <dd>
 
 Specifica un errore di decodifica.
 
 </dd> <dt>
 
-<span id="MF_MSE_ERROR_UNKNOWN_ERROR"></span><span id="mf_mse_error_unknown_error"></span>**errore di MF \_ MSE \_ \_ sconosciuto \_**
+<span id="MF_MSE_ERROR_UNKNOWN_ERROR"></span><span id="mf_mse_error_unknown_error"></span>**ERRORE \_ MSE MF \_ \_ SCONOSCIUTO \_**
 </dt> <dd>
 
 Specifica un errore sconosciuto.
@@ -76,9 +76,9 @@ Specifica un errore sconosciuto.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Specifica un errore sconosciuto.
 
 <dl> <dt>
 
-[Enumerazioni di Media Foundation](media-foundation-enumerations.md)
+[Media Foundation di dati](media-foundation-enumerations.md)
 </dt> </dl>
 
  

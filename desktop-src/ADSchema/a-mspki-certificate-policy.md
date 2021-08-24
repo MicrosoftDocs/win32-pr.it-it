@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-Certificate-Policy
-description: Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certificato emesso.
+title: Attributo ms-PKI-Certificate-Policy
+description: Contiene l'elenco degli OID dei criteri e i relativi CSP facoltativi nel certificato emesso.
 ms.assetid: bc84c5ff-9cb1-406c-825c-97fa479d52eb
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-PKI-Certificate-Policy
-- msPKI-Certificate-attributo criterio AD schema
+- Schema AD dell'attributo msPKI-Certificate-Policy
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d2d6857b6035cc72271c7276b679b8a497aaab9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8abe92cda39428e397f06105a0ca8c5b151f84989615e06ec2f6c8371f87fc75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081685"
 ---
-# <a name="ms-pki-certificate-policy-attribute"></a>attributo ms-PKI-Certificate-Policy
+# <a name="ms-pki-certificate-policy-attribute"></a>Attributo ms-PKI-Certificate-Policy
 
-Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certificato emesso.
+Contiene l'elenco degli OID dei criteri e i relativi CSP facoltativi nel certificato emesso.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------|
 | CN                | ms-PKI-Certificate-Policy                                                                         |
-| LDAP-Display-Name | msPKI-Certificate-Policy                                                                          |
+| Ldap-Display-Name | msPKI-Certificate-Policy                                                                          |
 | Dimensione              | 64 byte per il numero di voci.                                                             |
-| Privilegio aggiornamento  | Amministratore di dominio                                                                              |
-| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-certificate-template) viene modificato, creato o clonato. |
+| Privilegio di aggiornamento  | Amministratore di dominio                                                                              |
+| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-Certificate-Template) viene modificato, creato o clonato. |
 | Attribute-Id      | 1.2.840.113556.1.4.1439                                                                           |
-| System-ID-GUID    | 38942346-cc5b-424B-a7d8-6ffd12029c5f                                                              |
+| System-Id-Guid    | 38942346-cc5b-424b-a7d8-6ffd12029c5f                                                              |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                       |
 
 
@@ -57,15 +57,15 @@ Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certific
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certific
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certific
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certific
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contiene l'elenco dei criteri di OID e i rispettivi CSP facoltativi nel certific
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

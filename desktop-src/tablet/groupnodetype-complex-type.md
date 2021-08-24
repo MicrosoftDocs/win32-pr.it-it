@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che contiene un set di contenuto raggruppato in una nota del journal.
+description: Definisce il tipo che contiene un set di contenuto raggruppato in una nota journal.
 ms.assetid: 823ed820-0cdb-4ca6-af8d-494db8f7fe8b
 title: Tipo complesso GroupNodeType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 816d093512f7fcba1b694e63d99ef054a3c10fc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b486a5e0fc336ca766e33b6e50f2abd9e32197786f7e10ed9627d7613a512ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119266377"
 ---
 # <a name="groupnodetype-complex-type"></a>Tipo complesso GroupNodeType
 
-Definisce il tipo che contiene un set di contenuto raggruppato in una nota del journal.
+Definisce il tipo che contiene un set di contenuto raggruppato in una nota journal.
 
 ``` syntax
 <xs:complexType name="GroupNodeType" />
@@ -33,7 +33,7 @@ Definisce il tipo che contiene un set di contenuto raggruppato in una nota del j
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

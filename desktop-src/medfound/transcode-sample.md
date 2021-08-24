@@ -1,27 +1,27 @@
 ---
-description: Viene illustrato come ricodificare un file multimediale in un formato Windows Media.
+description: Illustra come ricodificare un file multimediale per Windows formato multimediale.
 ms.assetid: 1e958f26-3ac1-4b20-abf5-d8a65ba38112
 title: Esempio di transcodifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 528ef8dbed6d6ae18f534210caa5a2cc57516c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b2d185d5a486493053d0b85ae48257cc6a7a2640aea9cd5cfc839616cd7e690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034619"
 ---
 # <a name="transcode-sample"></a>Esempio di transcodifica
 
-Viene illustrato come ricodificare un file multimediale in un formato Windows Media.
+Illustra come ricodificare un file multimediale per Windows formato multimediale.
 
 ## <a name="apis-demonstrated"></a>API illustrate
 
-In questo esempio vengono illustrate le API seguenti.
+Questo esempio illustra le API seguenti.
 
 -   [**IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession)
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
--   [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
+-   [**Topologia IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 -   [**IMFTranscodeProfile**](/windows/desktop/api/mfidl/nn-mfidl-imftranscodeprofile)
 
 ## <a name="requirements"></a>Requisiti
@@ -38,7 +38,7 @@ In questo esempio vengono illustrate le API seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Transcode).
+Questo esempio è disponibile nel [repository github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Transcode).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

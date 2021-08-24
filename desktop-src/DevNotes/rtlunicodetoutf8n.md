@@ -1,7 +1,7 @@
 ---
-description: Converte la stringa Unicode specificata in una nuova stringa di caratteri utilizzando la tabella codici UTF-8 (Unicode Transformation Format) a 8 bit.
+description: Converte la stringa Unicode specificata in una nuova stringa di caratteri usando la tabella codici UTF-8 (Unicode Transformation Format) a 8 bit.
 ms.assetid: ecd63eee-bf86-42b5-93d8-3c7871aa6324
-title: Funzione RtlUnicodeToUTF8N (WDM. h)
+title: Funzione RtlUnicodeToUTF8N (Wdm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 46153dd152ed5a45a65de50ca214fbb24a6dc2ac
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3580eb86deba77bcc214cf69fbd21f65fee2735ef3a5ff73319b415d2c814d88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538031"
 ---
-# <a name="rtlunicodetoutf8n-function"></a>RtlUnicodeToUTF8N (funzione)
+# <a name="rtlunicodetoutf8n-function"></a>Funzione RtlUnicodeToUTF8N
 
-Converte la stringa Unicode specificata in una nuova stringa di caratteri utilizzando la tabella codici UTF-8 (Unicode Transformation Format) a 8 bit.
+Converte la stringa Unicode specificata in una nuova stringa di caratteri usando la tabella codici UTF-8 (Unicode Transformation Format) a 8 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,38 +43,38 @@ NTSTATUS WINAPI RtlUnicodeToUTF8N(
 
 <dl> <dt>
 
-*UTF8StringDestination* \[ out\]
+*UTF8StringDestination* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer allocato dal chiamante per ricevere la stringa tradotta.
+Puntatore a un buffer allocato dal chiamante per ricevere la stringa convertita.
 
 </dd> <dt>
 
-*UTF8StringMaxByteCount* \[ in\]
+*UTF8StringMaxByteCount* \[ Pollici\]
 </dt> <dd>
 
-Numero massimo di byte da scrivere in *UTF8StringDestination*. Se questo valore fa sì che la stringa tradotta venga troncata, **RtlUnicodeToUTF8N** restituisce uno stato di errore.
+Numero massimo di byte da scrivere in *UTF8StringDestination.* Se questo valore causa il troncamento della stringa convertita, **RtlUnicodeToUTF8N** restituisce uno stato di errore.
 
 </dd> <dt>
 
 *UTF8StringActualByteCount* \[ out, facoltativo\]
 </dt> <dd>
 
-Puntatore a una variabile allocata dal chiamante che riceve la lunghezza, in byte, della stringa tradotta. Questo parametro è facoltativo e può essere **null**. Se la stringa viene troncata, il numero restituito conteggia il conteggio effettivo delle stringhe troncate.
+Puntatore a una variabile allocata dal chiamante che riceve la lunghezza, in byte, della stringa convertita. Questo parametro è facoltativo e può essere **NULL.** Se la stringa viene troncata, il numero restituito conta il conteggio effettivo delle stringhe troncate.
 
 </dd> <dt>
 
-*UnicodeStringSource* \[ in\]
+*UnicodeStringSource* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla stringa di origine Unicode da tradurre.
+Puntatore alla stringa di origine Unicode da convertire.
 
 </dd> <dt>
 
-* UnicodeStringByteCount * \[ in\]
+*UnicodeStringByteCount * \[ in\]
 </dt> <dd>
 
-Specifica il numero di byte nella stringa di origine Unicode a cui punta il parametro *UnicodeStringSource* .
+Specifica il numero di byte nella stringa di origine Unicode a cui punta il *parametro UnicodeStringSource.*
 
 </dd> </dl>
 
@@ -86,11 +86,11 @@ Specifica il numero di byte nella stringa di origine Unicode a cui punta il para
 
 | Codice restituito                                                                                                  | Descrizione                                                                                                     |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**STATO \_ riuscito**</dt> </dl>               | La stringa Unicode è stata convertita in UTF-8.<br/>                                                           |
-| <dl> <dt>**STATO \_ \_ non \_ mappato**</dt> </dl>     | È stato rilevato e sostituito un carattere di input non valido. Questo stato è considerato uno stato di esito positivo.<br/> |
-| <dl> <dt>**STATO \_ parametro non valido \_**</dt> </dl>    | Entrambi i puntatori a *UTF8StringDestination* e *UTF8StringActualByteCount* sono **null**.<br/>              |
-| <dl> <dt>**STATO \_ parametro non valido \_ \_ 4**</dt> </dl> | *UnicodeStringSource* è **null**.<br/>                                                              |
-| <dl> <dt>**BUFFER di stato \_ \_ troppo \_ piccolo**</dt> </dl>    | *UTF8StringDestination* troncato.<br/>                                                               |
+| <dl> <dt>**STATO \_ RIUSCITO**</dt> </dl>               | La stringa Unicode è stata convertita in UTF-8.<br/>                                                           |
+| <dl> <dt>**STATO \_ DI ALCUNI NON \_ \_ MAPPATI**</dt> </dl>     | È stato rilevato e sostituito un carattere di input non valido. Questo stato viene considerato uno stato di esito positivo.<br/> |
+| <dl> <dt>**STATO \_ PARAMETRO NON \_ VALIDO**</dt> </dl>    | Entrambi i puntatori *a UTF8StringDestination* *e UTF8StringActualByteCount* erano **NULL.**<br/>              |
+| <dl> <dt>**STATO \_ PARAMETRO NON VALIDO \_ \_ 4**</dt> </dl> | *UnicodeStringSource era* **NULL.**<br/>                                                              |
+| <dl> <dt>**BUFFER \_ DI STATO TROPPO \_ \_ PICCOLO**</dt> </dl>    | *UTF8StringDestination* è stato troncato.<br/>                                                               |
 
 
 
@@ -98,13 +98,13 @@ Specifica il numero di byte nella stringa di origine Unicode a cui punta il para
 
 ## <a name="remarks"></a>Commenti
 
-Anche se *UTF8StringActualByteCount* è facoltativo e può essere **null**, i chiamanti devono fornire lo spazio di archiviazione, perché la lunghezza ricevuta può essere usata per determinare se la conversione è stata eseguita correttamente. Questa routine non modifica la stringa di origine. Restituisce una stringa UTF-8 con terminazione null se il *UnicodeStringSource* specificato include un carattere di terminazione null e se il *UTF8StringMaxByteCount* specificato non ha causato il troncamento.
+Anche *se UTF8StringActualByteCount* è facoltativo e può essere **NULL,** i chiamanti devono fornire spazio di archiviazione, perché la lunghezza ricevuta può essere usata per determinare se la conversione ha avuto esito positivo. Questa routine non modifica la stringa di origine. Restituisce una stringa UTF-8 con terminazione Null se l'oggetto *UnicodeStringSource* specificato include un terminatore NULL e se l'oggetto *UTF8StringMaxByteCount* specificato non ha causato il troncamento.
 
-Se l'output viene troncato e viene rilevato un carattere di input non valido, la funzione restituisce un errore di buffer di stato \_ \_ troppo \_ piccolo.
+Se l'output viene troncato e viene rilevato un carattere di input non valido, la funzione restituisce l'errore STATUS \_ BUFFER \_ TOO \_ SMALL.
 
-Se *UTF8StringDestination* è impostato su **null** , la funzione restituirà il numero di byte richiesto per ospitare la stringa tradotta senza troncamenti in *UTF8StringActualByteCount*.
+Se *UTF8StringDestination* è impostato su **NULL,** la funzione restituirà il numero necessario di byte per ospitare la stringa convertita senza alcun troncamento in *UTF8StringActualByteCount.*
 
-I chiamanti di **RtlUnicodeToUTF8N** devono essere in esecuzione a livello IRQL < livello di invio \_ .
+I chiamanti **di RtlUnicodeToUTF8N** devono essere in esecuzione in IRQL < DISPATCH \_ LEVEL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,9 +112,9 @@ I chiamanti di **RtlUnicodeToUTF8N** devono essere in esecuzione a livello IRQL 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                           |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>WDM. h</dt> </dl>     |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Wdm.h</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 
 

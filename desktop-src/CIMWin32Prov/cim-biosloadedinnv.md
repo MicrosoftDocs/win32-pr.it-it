@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM BIOSLoadedInNV associa un elemento BIOS e l'archiviazione non volatile in cui viene caricata.
+description: La classe CIM BIOSLoadedInNV associa un elemento BIOS e l'archiviazione non volatile \_ in cui viene caricato.
 ms.assetid: 11641616-e11d-49ff-bfe4-f95fe27f00b8
 ms.tgt_platform: multiple
-title: Classe CIM_BIOSLoadedInNV
+title: CIM_BIOSLoadedInNV classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,23 +18,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0de07e1d4b886ad14f6a7fd8dbb96c1c0f2d2079
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b38e05be817a388a8edf7a8407a0ada90999cc4e779a5270d0d2271af169aaf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119284581"
 ---
-# <a name="cim_biosloadedinnv-class"></a>CIM \_ BIOSLoadedInNV (classe)
+# <a name="cim_biosloadedinnv-class"></a>Classe CIM \_ BIOSLoadedInNV
 
-La classe **CIM \_ BIOSLoadedInNV** associa un elemento BIOS e l'archiviazione non volatile in cui viene caricata.
+La **classe CIM \_ BIOSLoadedInNV** associa un elemento BIOS e l'archiviazione non volatile in cui viene caricato.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,13 +51,13 @@ class CIM_BIOSLoadedInNV : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ BIOSLoadedInNV** presenta questi tipi di membri:
+La **classe CIM \_ BIOSLoadedInNV** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ BIOSLoadedInNV** dispone di queste proprietà.
+La **classe CIM \_ BIOSLoadedInNV** ha queste proprietà.
 
 <dl> <dt>
 
@@ -70,66 +70,66 @@ Tipo di dati: **CIM \_ NonVolatileStorage**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ NonVolatileStorage CIM**](cim-nonvolatilestorage.md) che descrive l'archiviazione non volatile.
+Oggetto [**CIM \_ NonVolatileStorage**](cim-nonvolatilestorage.md) che descrive l'archiviazione non volatile.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ bioselement**
+Tipo di dati: **CIM \_ BIOSElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Oggetto [**CIM \_ bioselement**](cim-bioselement.md) che descrive il BIOS archiviato nell'extent non volatile.
+[**\_ BIOSElement CIM**](cim-bioselement.md) che descrive il BIOS archiviato nell'extent non volatile.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo finale in cui il BIOS si trova in una risorsa di archiviazione non volatile.
+Indirizzo finale in cui il BIOS si trova in una memoria non volatile.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**Indirizzo iniziale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo iniziale in cui il BIOS si trova in una risorsa di archiviazione non volatile.
+Indirizzo iniziale in cui il BIOS si trova in una memoria non volatile.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ BIOSLoadedInNV** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe CIM \_ BIOSLoadedInNV** è derivata dalla [**dipendenza CIM \_**](cim-dependency.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -140,7 +140,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -149,7 +149,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

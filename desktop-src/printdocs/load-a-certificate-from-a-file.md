@@ -1,25 +1,25 @@
 ---
-description: In questo argomento viene descritto come caricare un certificato da un file di certificato.
+description: Questo argomento descrive come caricare un certificato da un file di certificato.
 ms.assetid: 60cced55-9fcc-4fce-a462-7abf3f4466f0
 title: Caricare un certificato da un file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c708fb042ccdf4acd43986de1404f9ccb266148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e73161b133fec74478643baa8453421130b3f3ad18ff4e75429d79b3312919b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099095"
 ---
 # <a name="load-a-certificate-from-a-file"></a>Caricare un certificato da un file
 
-In questo argomento viene descritto come caricare un certificato da un file di certificato.
+Questo argomento descrive come caricare un certificato da un file di certificato.
 
 Per caricare un certificato da un file di certificato
 
 1.  Aprire il file del certificato per l'accesso in lettura.
-2.  Leggere il contenuto del file del certificato nel buffer del certificato.
-3.  Creare un certificato utilizzando il contenuto del buffer.
+2.  Leggere il contenuto del file di certificato nel buffer del certificato.
+3.  Creare un certificato usando il contenuto del buffer.
 
 
 ```C++
@@ -119,7 +119,7 @@ if (NULL != certFileHandle) CloseHandle(certFileHandle);
 [**CertCreateCertificateContext**](/windows/desktop/api/wincrypt/nf-wincrypt-certcreatecertificatecontext)
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
 [API di crittografia](/windows/desktop/SecCrypto/cryptography-portal)
@@ -131,7 +131,7 @@ if (NULL != certFileHandle) CloseHandle(certFileHandle);
 [Errori dell'API firma digitale XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errori del documento XPS](xps-document-errors.md)
+[Errori dei documenti XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

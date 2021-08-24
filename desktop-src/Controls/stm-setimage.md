@@ -1,9 +1,9 @@
 ---
-title: Messaggio STM_SETIMAGE (winuser. h)
-description: Un'applicazione invia un \_ messaggio di immagine STM per associare una nuova immagine a un controllo statico.
+title: STM_SETIMAGE messaggio (Winuser.h)
+description: Un'applicazione invia un messaggio SETIMAGE STM \_ per associare una nuova immagine a un controllo statico.
 ms.assetid: d3e7c5d4-f621-40f6-9558-7fb699e8b489
 keywords:
-- Controlli di Windows Message STM_SETIMAGE
+- STM_SETIMAGE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c4f9c216d2e987727a1e2fa9bc6de12a823d52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d48cc8aeb5e28ac67a6bbe25636be1a2f6f9b89f225568be02e517e1ad04dc55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078455"
 ---
-# <a name="stm_setimage-message"></a>\_Messaggio immagine STM
+# <a name="stm_setimage-message"></a>Messaggio \_ SETIMAGE STM
 
-Un'applicazione invia un messaggio di **\_ Immagine STM** per associare una nuova immagine a un controllo statico.
+Un'applicazione invia un **messaggio \_ SETIMAGE STM** per associare una nuova immagine a un controllo statico.
 
 ## <a name="parameters"></a>Parametri
 
@@ -38,10 +38,10 @@ Specifica il tipo di immagine da associare al controllo statico. Questo parametr
 
 | Valore                                                                                                                                                                     | Significato                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**\_bitmap immagine**</dt> </dl>                | Bitmap.<br/>            |
-| <span id="IMAGE_CURSOR"></span><span id="image_cursor"></span><dl> <dt>**\_cursore immagine**</dt> </dl>                | Cursore.<br/>            |
-| <span id="IMAGE_ENHMETAFILE"></span><span id="image_enhmetafile"></span><dl> <dt>**\_ENHMETAFILE immagine**</dt> </dl> | Enhanced Metafile.<br/> |
-| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**\_icona immagine**</dt> </dl>                      | Icona.<br/>              |
+| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**BITMAP \_ IMMAGINE**</dt> </dl>                | Bitmap.<br/>            |
+| <span id="IMAGE_CURSOR"></span><span id="image_cursor"></span><dl> <dt>**IMAGE \_ CURSOR**</dt> </dl>                | Cursore.<br/>            |
+| <span id="IMAGE_ENHMETAFILE"></span><span id="image_enhmetafile"></span><dl> <dt>**IMAGE \_ ENHMETAFILE**</dt> </dl> | Metafile avanzato.<br/> |
+| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**ICONA \_ IMMAGINE**</dt> </dl>                      | Icona.<br/>              |
 
 
 
@@ -58,20 +58,20 @@ Handle per l'immagine da associare al controllo statico.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un handle per l'immagine associata in precedenza al controllo statico, se disponibile. in caso contrario, è **null**.
+Il valore restituito è un handle all'immagine precedentemente associata al controllo statico, se presente; in caso contrario, è **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-Per associare un'immagine a un controllo statico, il controllo deve avere lo stile appropriato. La tabella seguente illustra lo stile necessario per ogni tipo di immagine.
+Per associare un'immagine a un controllo statico, il controllo deve avere lo stile corretto. La tabella seguente illustra lo stile necessario per ogni tipo di immagine.
 
 
 
 | Tipo di immagine         | Stile del controllo statico |
 |--------------------|----------------------|
-| \_bitmap immagine      | \_bitmap SS           |
-| \_cursore immagine      | \_icona SS             |
-| \_ENHMETAFILE immagine | \_ENHMETAFILE SS      |
-| \_icona immagine        | \_icona SS             |
+| BITMAP \_ IMMAGINE      | SS \_ BITMAP           |
+| IMAGE \_ CURSOR      | ICONA \_ SS             |
+| IMAGE \_ ENHMETAFILE | SS \_ ENHMETAFILE      |
+| ICONA \_ IMMAGINE        | ICONA \_ SS             |
 
 
 
@@ -79,9 +79,9 @@ Per associare un'immagine a un controllo statico, il controllo deve avere lo sti
 
 > [!IMPORTANT]
 >
-> Nella versione 6 dei controlli Microsoft Win32, una bitmap passata a un controllo statico che utilizza il messaggio di **\_ Immagine STM** è la stessa bitmap restituita da un successivo messaggio di **\_ Immagine STM** . Il client è responsabile dell'eliminazione di tutte le bitmap inviate a un controllo statico.
+> Nella versione 6 dei controlli Microsoft Win32, una bitmap passata a un controllo statico usando il messaggio **\_ SETIMAGE STM** era la stessa bitmap restituita da un messaggio **\_ SETIMAGE STM** successivo. Il client è responsabile dell'eliminazione di qualsiasi bitmap inviata a un controllo statico.
 >
-> Con Windows XP, se la bitmap passata nel messaggio **di \_ Immagine STM** contiene pixel con un valore alfa diverso da zero, il controllo statico acquisisce una copia della bitmap. Questa bitmap copiata viene restituita dal successivo messaggio dell' **\_ Immagine STM** . Il codice client può rilevare in modo indipendente le bitmap passate al controllo statico, ma se non controlla e rilascia le bitmap restituite da messaggi di **\_ Immagine STM** , le bitmap vengono perse.
+> Con Windows XP, se la bitmap passata nel messaggio **\_ SETIMAGE STM** contiene pixel con alfa diverso da zero, il controllo statico accetta una copia della bitmap. Questa bitmap copiata viene restituita dal messaggio **\_ SETIMAGE STM** successivo. Il codice client può tenere traccia in modo indipendente delle bitmap passate al controllo statico, ma se non controlla e rilascia le bitmap restituite dai messaggi **\_ SETIMAGE STM,** le bitmap vengono persi.
 
  
 
@@ -91,9 +91,9 @@ Per associare un'immagine a un controllo statico, il controllo deve avere lo sti
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Per associare un'immagine a un controllo statico, il controllo deve avere lo sti
 
 <dl> <dt>
 
-[**GetImage STM \_**](stm-getimage.md)
+[**STM \_ GETIMAGE**](stm-getimage.md)
 </dt> </dl>
 
  

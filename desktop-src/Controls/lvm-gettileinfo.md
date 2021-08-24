@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETTILEINFO (COMmctrl. h)
-description: Recupera le informazioni su un riquadro in un controllo visualizzazione elenco.
+title: LVM_GETTILEINFO messaggio (Commctrl.h)
+description: Recupera informazioni su un riquadro in un controllo visualizzazione elenco.
 ms.assetid: e89a3eae-0970-488c-ba95-1072aa85bbf4
 keywords:
-- Controlli di Windows Message LVM_GETTILEINFO
+- LVM_GETTILEINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db5bfd085cd5cbaced0bf90b17e8862a6c0e159b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8141b3a39c47966348dfd823b557c1b0af4cca84a90ba979a358d6ac0eaa4757
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079035"
 ---
-# <a name="lvm_gettileinfo-message"></a>\_Messaggio GETTILEINFO LVM
+# <a name="lvm_gettileinfo-message"></a>Messaggio \_ LVM GETTILEINFO
 
-Recupera le informazioni su un riquadro in un controllo visualizzazione elenco.
+Recupera informazioni su un riquadro in un controllo visualizzazione elenco.
 
 ## <a name="parameters"></a>Parametri
 
@@ -33,7 +33,7 @@ Recupera le informazioni su un riquadro in un controllo visualizzazione elenco.
 </dt> <dd>Deve essere zero.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntatore a una struttura <a href="/windows/win32/api/commctrl/ns-commctrl-lvtileinfo">**LVTILEINFO**</a> che riceve le informazioni recuperate.</dd> </dl>
+</dt> <dd>Puntatore a <a href="/windows/win32/api/commctrl/ns-commctrl-lvtileinfo">**una struttura LVTILEINFO**</a> che riceve le informazioni recuperate.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -41,10 +41,10 @@ Valore restituito non utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-Visualizzazione affiancata è un nuovo modo per organizzare e visualizzare gli elementi in un controllo visualizzazione elenco. Le altre viste sono Icon, Small Icon, Details ed List.
+La visualizzazione affiancata è un nuovo modo per disporre e visualizzare gli elementi in un controllo visualizzazione elenco. Le altre visualizzazioni sono icona, icona piccola, dettagli ed elenco.
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -54,9 +54,9 @@ Visualizzazione affiancata è un nuovo modo per organizzare e visualizzare gli e
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
