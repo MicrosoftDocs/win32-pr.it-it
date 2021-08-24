@@ -4,12 +4,12 @@ ms.assetid: 52165e1b-a178-4483-bf76-4197281f856d
 title: Comandi OPM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b00240925c28322b911ab55a0e4f026f051d6ec
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 8f6d21119f86ab8f51392df248498681f8fe5dc1aa8218a0232b9f3bd1c7cb02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722241"
 ---
 # <a name="opm-commands"></a>Comandi OPM
 

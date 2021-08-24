@@ -1,10 +1,10 @@
 ---
-description: Annulla una richiesta precedente per impostare una connessione remota.
+description: Annulla una richiesta precedente per configurare una connessione remota.
 MS-HAID: vspixengine.IPeerToPeerEngine\_CancelSetPlaybackEndpoint
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPeerToPeerEngine:: CancelSetPlaybackEndpoint'
+title: Metodo IPeerToPeerEngine::CancelSetPlaybackEndpoint
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 0B4776B8-AF29-495B-91FC-70778B3E0C7B
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 479efee10843c4e51015f3b6065d923762bef1ed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fa96aea751d93b4078115aa69e5949680c763f4c1294b694dd22fc64cbc91dc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892511"
 ---
-# <a name="span-idvspixengineipeertopeerengine_cancelsetplaybackendpointspanipeertopeerenginecancelsetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_cancelsetplaybackendpoint"></span>Metodo IPeerToPeerEngine:: CancelSetPlaybackEndpoint
+# <a name="span-idvspixengineipeertopeerengine_cancelsetplaybackendpointspanipeertopeerenginecancelsetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_cancelsetplaybackendpoint"></span>Metodo IPeerToPeerEngine::CancelSetPlaybackEndpoint
 
-Annulla una richiesta precedente per impostare una connessione remota.
+Annulla una richiesta precedente per configurare una connessione remota.
 
 ## <a name="syntax"></a>Sintassi
 

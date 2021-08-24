@@ -4,12 +4,12 @@ ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e0e0cadbf26d6ff516ab0ace90165e11420a9b7
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: b961ede78b313e7fb3655024705a13f04edb947344493be4fe49ff14b5d00843
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947857"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   | Nome o restrizione                                                                                                  |
+| Category                   | Nome o restrizione                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | PrintTicket (radice PrintTicket)<br/>                                                         |
 | Elementi figlio<br/>  | Valore (uno)<br/>                                                                            |

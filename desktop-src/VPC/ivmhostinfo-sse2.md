@@ -5,7 +5,7 @@ ms.assetid: 1db5583c-fb8e-400e-87d3-3c4309696307
 keywords:
 - Proprietà SSE2 Virtual PC
 - Proprietà SSE2 Virtual PC , interfaccia IVMHostInfo
-- Interfaccia IVMHostInfo Virtual PC, proprietà SSE2
+- Interfaccia IVMHostInfo Virtual PC , proprietà SSE2
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ HRESULT get_SSE2(
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
-| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -70,7 +70,7 @@ HRESULT get_SSE2(
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID IVMHostInfo è definito come \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| IID<br/>                      | IID \_ IVMHostInfo è definito come 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

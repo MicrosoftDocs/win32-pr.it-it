@@ -1,6 +1,6 @@
 ---
 description: Altre informazioni sulle proprietà InstanceParameters
-title: Proprietà instanceParameters
+title: Proprietà di InstanceParameters
 TOCTitle: InstanceParameters properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.InstanceParameters
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters_properties(v=EXCHG.10)
@@ -14,10 +14,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119721161"
 ---
-# <a name="instanceparameters-properties"></a>Proprietà instanceParameters
+# <a name="instanceparameters-properties"></a>Proprietà di InstanceParameters
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
 Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri seguenti.
 
@@ -35,17 +35,17 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350971(v=exchg.10).md">AlternateDatabaseRecoveryDirectory</a></td>
-<td>Ottiene o imposta il percorso di file system relativo o assoluto di una cartella in cui il recupero con arresto anomalo del sistema o un'operazione di ripristino può trovare i database a cui si fa riferimento nel log delle transazioni nella cartella specificata.</td>
+<td>Ottiene o imposta il percorso file system assoluto di una cartella in cui il ripristino anomalo del sistema o un'operazione di ripristino può trovare i database a cui si fa riferimento nel log delle transazioni nella cartella specificata.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350972(v=exchg.10).md">Basename</a></td>
-<td>Ottiene o imposta il prefisso di tre lettere utilizzato per molti dei file utilizzati dal motore di database. Ad esempio, il file del checkpoint è denominato EDB. ChK per impostazione predefinita perché EDB è il nome di base predefinito.</td>
+<td>Ottiene o imposta il prefisso di tre lettere utilizzato per molti dei file utilizzati dal motore di database. Ad esempio, il file del checkpoint è denominato EDB. CHK per impostazione predefinita perché EDB è il nome di base predefinito.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350951(v=exchg.10).md">CachedClosedTables</a></td>
-<td>Ottiene o imposta un valore che specifica il numero di risorse albero B+ memorizzate nella cache dall'istanza dopo che le tabelle rappresentate sono state chiuse dall'applicazione. Valori di grandi dimensioni per questo parametro causeranno l'uso di una quantità maggiore di memoria da parte del motore di database, ma aumenterà la velocità con cui un numero elevato di tabelle può essere aperto in modo casuale dall'applicazione. Ciò è utile per le applicazioni che dispongono di uno schema con un numero molto elevato di tabelle. Supportato in Windows Vista e versioni seguenti. Ignorato Windows XP e Windows Server 2003.</td>
+<td>Ottiene o imposta un valore che specifica il numero di risorse dell'albero B+ memorizzate nella cache dall'istanza dopo che le tabelle che rappresentano sono state chiuse dall'applicazione. I valori di grandi dimensioni per questo parametro determinano l'uso di una maggiore quantità di memoria da parte del motore di database, ma aumentano la velocità con cui un numero elevato di tabelle può essere aperto in modo casuale dall'applicazione. Ciò è utile per le applicazioni che dispongono di uno schema con un numero molto elevato di tabelle. Supportato in Windows Vista e versioni seguenti. Ignorato Windows XP e Windows Server 2003.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -55,37 +55,37 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350953(v=exchg.10).md">CheckpointDepthMax</a></td>
-<td>Ottiene o imposta la soglia in byte per il numero di file di log delle transazioni che dovranno essere riprodotti dopo un arresto anomalo. Se la registrazione circolare è abilitata tramite CircularLog, questo parametro controlla anche la quantità approssimativa di file di log delle transazioni che verranno mantenuti su disco.</td>
+<td>Ottiene o imposta la soglia in byte per il numero di file di log delle transazioni che dovranno essere riprodotti dopo un arresto anomalo. Se la registrazione circolare è abilitata tramite CircularLog, questo parametro controlla anche la quantità approssimativa di file di log delle transazioni che verranno conservati su disco.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350977(v=exchg.10).md">CircularLog</a></td>
-<td>Ottiene o imposta un valore che indica se la registrazione circolare è attivata. Quando la registrazione circolare è disattivata, tutti i file di log delle transazioni generati vengono mantenuti su disco fino a quando non sono più necessari perché è stato eseguito un backup completo del database. Quando la registrazione circolare è attivata, solo i file di log delle transazioni più piccoli rispetto al checkpoint corrente vengono mantenuti su disco. Il vantaggio di questa modalità è che i backup non sono necessari per ritirare i file di log delle transazioni meno recente.</td>
+<td>Ottiene o imposta un valore che indica se la registrazione circolare è attivata. Quando la registrazione circolare è disattivata, tutti i file di log delle transazioni generati vengono mantenuti su disco fino a quando non sono più necessari perché è stato eseguito un backup completo del database. Quando la registrazione circolare è attivata, vengono conservati su disco solo i file di log delle transazioni più piccoli rispetto al checkpoint corrente. Il vantaggio di questa modalità è che i backup non sono necessari per ritirare i file di log delle transazioni meno recente.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350955(v=exchg.10).md">CleanupMismatchedLogFiles</a></td>
-<td>Ottiene o imposta un valore che indica se JetInit ha esito negativo quando il motore di database è configurato per iniziare a usare file di log delle transazioni su disco di dimensioni diverse da quelle configurate. In <a href="dn292210(v=exchg.10).md">genere, JetInit(JET_INSTANCE)</a> recupererà correttamente i database, ma avrà esito negativo con <a href="hh564840(v=exchg.10).md">LogFileSizeMismatchDatabasesConsistent</a> per indicare che le dimensioni del file di log non sono configurate correttamente. Tuttavia, quando questo parametro è impostato su true, il motore di database eliminerà automaticamente tutti i vecchi file di log, avviando un nuovo set di file di log delle transazioni usando le dimensioni del file di log configurate. Questo parametro è utile quando l'applicazione vuole modificare in modo trasparente le dimensioni del file di log delle transazioni, ma continua a funzionare in modo trasparente negli scenari di aggiornamento e ripristino.</td>
+<td>Ottiene o imposta un valore che indica se JetInit ha esito negativo quando il motore di database è configurato per iniziare a usare file di log delle transazioni su disco di dimensioni diverse da quelle configurate. In genere, <a href="dn292210(v=exchg.10).md">JetInit(JET_INSTANCE)</a> recupererà correttamente i database, ma avrà esito negativo con <a href="hh564840(v=exchg.10).md">LogFileSizeMismatchDatabasesConsistent</a> per indicare che le dimensioni del file di log non sono configurate correttamente. Tuttavia, quando questo parametro è impostato su true, il motore di database eliminerà automaticamente tutti i file di log vecchi, avviando un nuovo set di file di log delle transazioni usando le dimensioni del file di log configurate. Questo parametro è utile quando l'applicazione vuole modificare in modo trasparente le dimensioni del file di log delle transazioni, ma funziona ancora in modo trasparente negli scenari di aggiornamento e ripristino.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350978(v=exchg.10).md">CreatePathIfNotExist</a></td>
-<td>Ottiene o imposta un valore che indica se ESENT creerà automaticamente cartelle mancanti nei percorsi del file system.</td>
+<td>Ottiene o imposta un valore che indica se ESENT creerà automaticamente le cartelle mancanti nei percorsi del file system.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350957(v=exchg.10).md">DbExtensionSize</a></td>
-<td>Ottiene o imposta il numero di pagine aggiunte a un file di database ogni volta che è necessario aumentare le dimensioni per contenere più dati.</td>
+<td>Ottiene o imposta il numero di pagine aggiunte a un file di database ogni volta che è necessario aumentare per contenere più dati.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350980(v=exchg.10).md">DbScanIntervalMaxSec</a></td>
-<td>Ottiene o imposta l'intervallo massimo, in secondi, per consentire il completamento dell'analisi del database.</td>
+<td>Ottiene o imposta l'intervallo massimo, espresso in secondi, per consentire il completamento dell'analisi del database.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350959(v=exchg.10).md">DbScanIntervalMinSec</a></td>
-<td>Ottiene o imposta l'intervallo minimo in secondi per ripetere l'analisi del database.</td>
+<td>Ottiene o imposta l'intervallo minimo di ripetizione dell'analisi del database, espresso in secondi.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -95,12 +95,12 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350961(v=exchg.10).md">EnableDbScanInRecovery</a></td>
-<td>Ottiene o imposta un valore che indica se la manutenzione del database deve essere eseguita durante il ripristino.</td>
+<td>Ottiene o imposta un valore che indica se Manutenzione database deve essere eseguito durante il ripristino.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350984(v=exchg.10).md">EnableDBScanSerialization</a></td>
-<td>Ottiene o imposta un valore che indica se la serializzazione manutenzione database è abilitata per i database che condividono lo stesso disco.</td>
+<td>Ottiene o imposta un valore che indica se la serializzazione di Manutenzione database è abilitata per i database che condividono lo stesso disco.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -120,17 +120,17 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350966(v=exchg.10).md">EventSourceKey</a></td>
-<td>Ottiene o imposta il nome del registro eventi utilizzato dal motore di database per i messaggi del registro eventi. Per impostazione predefinita, tutti i messaggi del registro eventi verranno inviati al registro eventi dell'applicazione. Se il nome della chiave del Registro di sistema per un altro registro eventi è configurato, i messaggi del registro eventi verranno inviati in questa pagina.</td>
+<td>Ottiene o imposta il nome del log eventi utilizzato dal motore di database per i messaggi del log eventi. Per impostazione predefinita, tutti i messaggi del registro eventi verranno inviati al registro eventi dell'applicazione. Se il nome della chiave del Registro di sistema per un altro registro eventi è configurato, i messaggi del registro eventi verranno visualizzati.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn350968(v=exchg.10).md">LogBuffers</a></td>
-<td>Ottiene o imposta la quantità di memoria utilizzata per memorizzare nella cache i record del log prima che siano scritti nel file di log delle transazioni. L'unità per questo parametro è la dimensione del settore del volume che contiene i file di log delle transazioni. Le dimensioni del settore sono quasi sempre di 512 byte, pertanto è sicuro presupporre che le dimensioni per l'unità. Questo parametro influisce sulle prestazioni. Quando il motore di database è in condizioni di carico di aggiornamento elevato, questo buffer può diventare pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è fondamentale per prestazioni di aggiornamento ottimali in condizioni di carico così elevate. Il valore predefinito è noto come troppo piccolo per questo caso. Non impostare questo parametro su un numero di buffer maggiore (in byte) rispetto alla metà delle dimensioni di un file di log delle transazioni.</td>
+<td><a href="dn350968(v=exchg.10).md">LogBuffer</a></td>
+<td>Ottiene o imposta la quantità di memoria utilizzata per memorizzare nella cache i record del log prima che siano scritti nel file di log delle transazioni. L'unità per questo parametro è la dimensione del settore del volume che contiene i file di log delle transazioni. La dimensione del settore è quasi sempre di 512 byte, quindi è sicuro presupporre che le dimensioni per l'unità. Questo parametro influisce sulle prestazioni. Quando il motore di database è in un carico di aggiornamento elevato, questo buffer può diventare pieno molto rapidamente. Una dimensione della cache maggiore per il file di log delle transazioni è fondamentale per prestazioni di aggiornamento ottimali in una condizione di carico elevato. Il valore predefinito è noto per essere troppo piccolo per questo caso. Non impostare questo parametro su un numero di buffer maggiore (in byte) della metà delle dimensioni di un file di log delle transazioni.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350991(v=exchg.10).md">LogFileDirectory</a></td>
-<td>Ottiene o imposta il percorso relativo o file system assoluto della cartella che conterrà i log delle transazioni per l'istanza di .</td>
+<td>Ottiene o imposta il percorso relativo o file system assoluto della cartella che conterrà i log delle transazioni per l'istanza.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -145,7 +145,7 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350970(v=exchg.10).md">MaxOpenTables</a></td>
-<td>Ottiene o imposta il numero di risorse albero B+ riservate per questa istanza.</td>
+<td>Ottiene o imposta il numero di risorse dell'albero B+ riservate per questa istanza.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -195,17 +195,17 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350981(v=exchg.10).md">Ripristino</a></td>
-<td>Ottiene o imposta un valore che indica se il ripristino dell'arresto anomalo del sistema è on.</td>
+<td>Ottiene o imposta un valore che indica se il ripristino dell'arresto anomalo del sistema è in esecuzione.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351007(v=exchg.10).md">SystemDirectory</a></td>
-<td>Ottiene o imposta il percorso relativo o file system assoluto della cartella che conterrà il file del checkpoint per l'istanza.</td>
+<td>Ottiene o imposta il percorso file system assoluto della cartella che conterrà il file del checkpoint per l'istanza.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350983(v=exchg.10).md">TempDirectory</a></td>
-<td>Ottiene o imposta il percorso file system assoluto o relativo della cartella che conterrà il database temporaneo per l'istanza.</td>
+<td>Ottiene o imposta il percorso file system assoluto della cartella che conterrà il database temporaneo per l'istanza.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -215,7 +215,7 @@ Il [tipo InstanceParameters](./instanceparameters-class.md) espone i membri segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350985(v=exchg.10).md">WaypointLatency</a></td>
-<td>Ottiene o imposta il numero di log per cui esent rinviare gli scaricamenti del database. Può essere usato per aumentare la recuperabilità del database se gli errori causano la perdita dei file di log. Supportato in Windows 7 e versioni seguenti. Ignorato Windows XP, Windows Server 2003, Windows Vista e Windows Server 2008.</td>
+<td>Ottiene o imposta il numero di log per cui esent rinviare gli scaricamenti del database. Può essere usato per aumentare la recuperabilità del database se gli errori causano la perdita dei file di log. Supportato in Windows 7 e versioni seguenti. Ignorato in Windows XP, Windows Server 2003, Windows Vista e Windows Server 2008.</td>
 </tr>
 </tbody>
 </table>

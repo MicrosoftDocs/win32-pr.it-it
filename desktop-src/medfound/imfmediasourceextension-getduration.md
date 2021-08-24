@@ -1,7 +1,7 @@
 ---
-description: Ottiene la durata dell'origine multimediale in unità 100-nanosecondi.
+description: Ottiene la durata dell'origine multimediale in unità da 100 nanosecondi.
 ms.assetid: d0c644a0-9784-40b0-9d1f-7d9e8334d705
-title: 'Metodo IMFMediaSourceExtension:: GetDuration'
+title: Metodo IMFMediaSourceExtension::GetDuration
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: a64aa611e4c34a03097027b9001908db72556479
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a5f3e3914f7434508464564758f14421c15949cadd1ef0b727a0f9824107b707
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104234516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941971"
 ---
-# <a name="imfmediasourceextensiongetduration-method"></a>Metodo IMFMediaSourceExtension:: GetDuration
+# <a name="imfmediasourceextensiongetduration-method"></a>Metodo IMFMediaSourceExtension::GetDuration
 
-Ottiene la durata dell'origine multimediale in unità 100-nanosecondi.
+Ottiene la durata dell'origine multimediale in unità da 100 nanosecondi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Durata dell'origine del supporto in unità 100-nanosecondi.
+Durata dell'origine multimediale in unità da 100 nanosecondi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,9 +47,9 @@ Durata dell'origine del supporto in unità 100-nanosecondi.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

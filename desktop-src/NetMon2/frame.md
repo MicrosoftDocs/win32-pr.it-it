@@ -1,7 +1,7 @@
 ---
-description: Frame effettivo dal driver.
+description: Frame effettivo del driver.
 ms.assetid: 867082c1-196a-4580-ba24-187b0752f6f8
-title: Struttura cornice (Netmon. h)
+title: Struttura FRAME (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: b4ff8d66f88b18988cbb33bbcd8196cc01177b73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7447e0ba8e13a593af6ac346ad47f8fe992b4a3187f0c46e8ee8fc28ddeb5646
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910951"
 ---
 # <a name="frame-structure"></a>Struttura FRAME
 
-La struttura del **frame** è un frame effettivo dal driver.
+La **struttura FRAME** è un frame effettivo del driver.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ typedef struct _FRAME {
 
 <dl> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd>
 
-Tempo trascorso, in microsecondi, tra l'inizio dell'acquisizione e l'ora in cui è stato acquisito il frame.
+Tempo trascorso, in microsecondi, tra l'inizio dell'acquisizione e il momento in cui è stato acquisito il frame.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Dati del frame.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

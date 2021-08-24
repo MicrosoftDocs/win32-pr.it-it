@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica DTN_DATETIMECHANGE (COMmctrl. h)
-description: Inviato da un controllo di selezione data e ora (DTP) ogni volta che viene apportata una modifica. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: DTN_DATETIMECHANGE di notifica (Commctrl.h)
+description: Inviato da un controllo di selezione data e ora ogni volta che si verifica una modifica. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 65cdd8fb-1f07-4447-b503-d40fdfa37202
 keywords:
-- Controlli di Windows per il codice di notifica DTN_DATETIMECHANGE
+- DTN_DATETIMECHANGE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a40072a54732a0a3575e3153ddb901ca1df291b2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be916859a8c963c81d1f68410e9e821c430832610aa85378a6ae6162e0488bf1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877701"
 ---
-# <a name="dtn_datetimechange-notification-code"></a>\_Codice di notifica DATETIMECHANGE di DTN
+# <a name="dtn_datetimechange-notification-code"></a>Codice di notifica \_ DTN DATETIMECHANGE
 
-Inviato da un controllo di selezione data e ora (DTP) ogni volta che viene apportata una modifica. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo di selezione data e ora ogni volta che si verifica una modifica. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ DTN_DATETIMECHANGE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMDATETIMECHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) contenente informazioni sulla modifica che ha avuto luogo nel controllo.
+Puntatore a una [**struttura NMDATETIMECHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) contenente informazioni sulla modifica apportata al controllo.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il proprietario del controllo deve restituire zero.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

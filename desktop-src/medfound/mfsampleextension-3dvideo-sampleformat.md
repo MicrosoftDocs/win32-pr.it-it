@@ -1,19 +1,19 @@
 ---
-description: Specifica il modo in cui un frame video 3D viene archiviato in un esempio di supporto.
+description: Specifica la modalità di archiviazione di un fotogramma video 3D in un campione multimediale.
 ms.assetid: 1B996B22-C76B-47E5-8937-1E5E672E32EC
-title: Attributo MFSampleExtension_3DVideo_SampleFormat (Mfapi. h)
+title: MFSampleExtension_3DVideo_SampleFormat attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14829c879c151149edc48bf1635b3a5591ddeac5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6529a08c14846fb1d06cd9b3ed0827a43d1b1ba75310c0379efddadebecdaeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722871"
 ---
-# <a name="mfsampleextension_3dvideo_sampleformat-attribute"></a>MFSampleExtension \_ 3DVideo- \_ attributo SampleFormat
+# <a name="mfsampleextension_3dvideo_sampleformat-attribute"></a>Attributo SampleFormat MFSampleExtension \_ 3DVideo \_
 
-Specifica il modo in cui un frame video 3D viene archiviato in un esempio di supporto.
+Specifica la modalità di archiviazione di un fotogramma video 3D in un campione multimediale.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica il modo in cui un frame video 3D viene archiviato in un esempio di sup
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un membro dell'enumerazione [**MFVideo3DSampleFormat**](/windows/desktop/api/mfapi/ne-mfapi-mfvideo3dsampleformat) .
+Il valore di questo attributo è un membro [**dell'enumerazione MFVideo3DSampleFormat.**](/windows/desktop/api/mfapi/ne-mfapi-mfvideo3dsampleformat)
 
-Un componente che genera fotogrammi video 3D deve impostare questo attributo su **true** in ogni esempio multimediale che contiene un frame 3D. L'attributo viene ignorato se l'attributo [MFSampleExtension \_ 3DVideo](mfsampleextension-3dvideo.md) è **false** o non impostato.
+Un componente che genera fotogrammi video 3D deve impostare questo attributo su **TRUE** in ogni campione multimediale che contiene un fotogramma 3D. L'attributo viene ignorato [se l'attributo MFSampleExtension \_ 3DVideo](mfsampleextension-3dvideo.md) è **FALSE** o non è impostato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Un componente che genera fotogrammi video 3D deve impostare questo attributo su 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,10 +41,10 @@ Un componente che genera fotogrammi video 3D deve impostare questo attributo su 
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[\_3DVideo MFSampleExtension](mfsampleextension-3dvideo.md)
+[MFSampleExtension \_ 3DVideo](mfsampleextension-3dvideo.md)
 </dt> </dl>
 
  

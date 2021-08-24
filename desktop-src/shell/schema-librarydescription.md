@@ -1,19 +1,19 @@
 ---
-description: L' <libraryDescription> elemento è il contenitore di livello superiore per la definizione della libreria. Questo elemento è obbligatorio.
+description: <libraryDescription>L'elemento è il contenitore di primo livello per la definizione della libreria. Questo elemento è obbligatorio.
 ms.assetid: 62098944-E1B2-46e8-AC87-314C55F96B62
 title: Elemento libraryDescription (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 125cb01ce1bd38418c10f5b14ff7b28f64efba87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a454321649746dc9408110e2fb96a616934977022ac80a4c0325494d354bfb46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942061"
 ---
 # <a name="librarydescription-element-library-schema"></a>Elemento libraryDescription (schema della libreria)
 
-L' <libraryDescription> elemento è il contenitore di livello superiore per la definizione della libreria. Questo elemento è obbligatorio.
+<libraryDescription>L'elemento è il contenitore di primo livello per la definizione della libreria. Questo elemento è obbligatorio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,14 +68,14 @@ L' <libraryDescription> elemento è il contenitore di livello superiore per la d
 
 | Elemento padre | Elementi figlio                                                                                                          |
 |----------------|-------------------------------------------------------------------------------------------------------------------------|
-|                | [elemento Name (schema della libreria)](schema-library-name.md). Obbligatorio.                                                     |
-|                | [elemento ownerSID (schema della libreria)](schema-library-ownersid.md). facoltativo.                                             |
-|                | [elemento Version (schema della libreria)](schema-library-version.md). facoltativo.                                               |
-|                | [elemento isLibraryPinned (schema della libreria)](schema-library-islibrarypinned.md). facoltativo.                               |
-|                | [elemento iconReference (schema della libreria)](schema-library-iconreference.md). facoltativo.                                   |
-|                | [elemento PropertyStore (schema della libreria)](schema-library-propertystore.md). facoltativo.                                   |
-|                | [elemento TemplateInfo (schema della libreria)](schema-library-templateinfo.md). facoltativo.                                     |
-|                | [elemento searchConnectorDescriptionList (schema della libreria)](schema-library-searchconnectordescriptionlist.md). Obbligatorio. |
+|                | [Elemento name (schema di libreria)](schema-library-name.md). Obbligatorio.                                                     |
+|                | [Elemento ownerSID (schema di libreria)](schema-library-ownersid.md). facoltativo.                                             |
+|                | [Elemento version (schema della libreria)](schema-library-version.md). facoltativo.                                               |
+|                | [Elemento isLibraryPinned (schema di libreria)](schema-library-islibrarypinned.md). facoltativo.                               |
+|                | [Elemento iconReference (schema di libreria)](schema-library-iconreference.md). facoltativo.                                   |
+|                | [Elemento propertyStore (schema di libreria)](schema-library-propertystore.md). facoltativo.                                   |
+|                | [Elemento templateInfo (schema della libreria)](schema-library-templateinfo.md). facoltativo.                                     |
+|                | [Elemento searchConnectorDescriptionList (schema di libreria)](schema-library-searchconnectordescriptionlist.md). Obbligatorio. |
 
 
 
@@ -83,9 +83,9 @@ L' <libraryDescription> elemento è il contenitore di livello superiore per la d
 
 ## <a name="remarks"></a>Commenti
 
-Ogni raccolta può contenere una o più posizioni che possono essere visualizzate o cercate da un utente tramite Esplora risorse. I percorsi vengono definiti dai connettori di ricerca usando [<searchConnectorDescription>](schema-library-searchconnectordescription.md) gli elementi in un [<searchConnectorDescriptionList>](schema-library-searchconnectordescriptionlist.md) elemento contenitore.
+Ogni libreria può contenere uno o più percorsi che possono essere esplorati o cercati da un utente usando Windows Explorer. I percorsi vengono definiti dai connettori di ricerca usando [<searchConnectorDescription>](schema-library-searchconnectordescription.md) gli elementi in un elemento [<searchConnectorDescriptionList>](schema-library-searchconnectordescriptionlist.md) contenitore.
 
-Una raccolta può avere un set univoco di proprietà e i percorsi nella libreria possono avere anche set di proprietà univoci. Queste proprietà sono definite in [<property>](schema-library-property.md) elementi all'interno di un [<propertyStore>](schema-library-propertystore.md) elemento contenitore.
+Una libreria può avere un set univoco di proprietà e i percorsi nella libreria possono anche avere set univoci di proprietà. Queste proprietà sono definite negli elementi all'interno [<property>](schema-library-property.md) di un elemento [<propertyStore>](schema-library-propertystore.md) contenitore.
 
 ## <a name="example"></a>Esempio
 
@@ -128,10 +128,10 @@ Una raccolta può avere un set univoco di proprietà e i percorsi nella libreria
 
 <dl> <dt>
 
-[Schema Descrizione libreria](library-schema-entry.md)
+[Schema di descrizione della libreria](library-schema-entry.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](../search/search-sconn-desc-schema-entry.md)
+[Schema di descrizione del connettore di ricerca](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

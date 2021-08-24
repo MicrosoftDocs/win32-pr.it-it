@@ -1,10 +1,10 @@
 ---
-title: Ultimo attributo Update-Sequence
-description: Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo elemento nell'archivio classi che è stato modificato.
+title: Attributo Last-Update-Sequence
+description: Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo elemento nell'archivio classi modificato.
 ms.assetid: fd434b8d-31b4-45f7-8d8f-048f61cabb92
 ms.tgt_platform: multiple
 keywords:
-- Ultimo schema di AD dell'attributo di sequenza di aggiornamento
+- Schema AD dell'attributo Last-Update-Sequence
 - Schema AD dell'attributo lastUpdateSequence
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e670c6784ded96a1e81d98f5f1c9bfb859efaa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c5ff31db81cbdbc1767c05cb2f4c7d366ad685c39cd873f15d2a113eb5b2dbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924691"
 ---
-# <a name="last-update-sequence-attribute"></a>Ultimo attributo Update-Sequence
+# <a name="last-update-sequence-attribute"></a>Attributo Last-Update-Sequence
 
-Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo elemento nell'archivio classi che è stato modificato.
+Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo elemento nell'archivio classi modificato.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Ultima sequenza di aggiornamento                        |
-| LDAP-Display-Name | lastUpdateSequence                          |
+| CN                | Sequenza ultimo aggiornamento                        |
+| Ldap-Display-Name | lastUpdateSequence                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.330                      |
-| System-ID-GUID    | 7d6c0e9c-7e20-11d0-afd6-00c04fd930c9        |
+| System-Id-Guid    | 7d6c0e9c-7e20-11d0-afd6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene il numero di sequenza di aggiornamento per l'ultimo el
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| È a valore singolo       | Vero                                                                                                            |
+| Is-Single-Valued       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Archivio classi**](c-classstore.md)<br/> [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

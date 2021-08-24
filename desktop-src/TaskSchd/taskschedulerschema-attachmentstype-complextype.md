@@ -3,7 +3,7 @@ title: Tipo complesso attachmentsType
 description: Definisce gli elementi utilizzati per specificare un allegato inviato con un messaggio di posta elettronica.
 ms.assetid: b13d9346-a28d-4362-bcfc-dc11869fb8eb
 keywords:
-- Utilità di pianificazione di tipo complesso attachmentsType
+- Tipi complessi attachmentsType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce5bc25b74221112b487be58a729bffa47b8688d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d98b266fcb15fbd47fbb2a5bb792b95e4fb765a48b2fbcf6c1185aad9475df1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772391"
 ---
 # <a name="attachmentstype-complex-type"></a>Tipo complesso attachmentsType
 
@@ -52,8 +52,8 @@ Definisce gli elementi utilizzati per specificare un allegato inviato con un mes
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

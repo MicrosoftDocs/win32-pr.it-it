@@ -1,21 +1,21 @@
 ---
-description: ICEM09 verifica che il modulo unione gestisca in modo sicuro le directory predefinite.
+description: ICEM09 verifica che il modulo di merge gestisca in modo sicuro le directory predefinite.
 ms.assetid: 747ae5ee-adc1-4aa7-8239-2379f76bfd0f
 title: ICEM09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4b4d2d52c35d6dd3670daff5150a785e19d0b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e4d2af38903d2e704d49b48f932818d8dfaeeb1e12588c007d4af05c297642c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894491"
 ---
 # <a name="icem09"></a>ICEM09
 
-ICEM09 verifica che il modulo unione gestisca in modo sicuro le directory predefinite. Questa operazione viene eseguita verificando che nessun componente del modulo installi una directory in una directory di sistema predefinita, ad esempio "ProgramFilesFolder" o "dei". I moduli devono invece usare directory con nomi univoci (creati con la convenzione di denominazione del modulo merge) e usare azioni personalizzate per la directory di destinazione appropriata. Questo approccio impedisce ai moduli di entrare in conflitto con una struttura di directory esistente nel database finale. ICEM09 verifica che le azioni personalizzate necessarie per il funzionamento di questa tecnica non esistano (in modo che lo strumento di merge possa generarle) o esistano nel formato corretto (in modo che funzionino come previsto).
+ICEM09 verifica che il modulo di merge gestisca in modo sicuro le directory predefinite. A tale scopo, verificare che nessun componente nel modulo installi una directory in una directory di sistema predefinita, ad esempio "ProgramFilesFolder" o "StartMenuFolder". I moduli devono invece usare directory con nomi univoci (creati con la convenzione di denominazione del modulo unione) e usare azioni personalizzate per la destinazione della directory di destinazione appropriata. Questo approccio impedisce ai moduli di essere in conflitto con una struttura di directory esistente nel database finale. ICEM09 verifica che le azioni personalizzate necessarie per il funzionamento di questa tecnica non esistano (in modo che lo strumento di merge possa generarle) o esistano nel formato corretto (in modo che funzionino come previsto).
 
-La mancata correzione di un avviso o di un errore segnalato da ICEM09 potrebbe causare problemi per i client del modulo merge. Le righe della tabella di directory con chiavi primarie, ad esempio ProgramFilesFolder, sono spesso presenti in un database. Se pertanto i componenti del modulo vengono installati direttamente in directory predefinite, ad esempio ProgramFilesFolder, è possibile che le voci di directory del modulo entrino in conflitto con le righe già esistenti. Questa condizione richiede che l'utente del modulo suddivida i file di origine dal modulo per poter corrispondere alla directory di origine esistente.
+La mancata correzione di un avviso o di un errore segnalato da ICEM09 può causare problemi per i client del modulo unione. Le righe della tabella directory con chiavi primarie, ad esempio ProgramFilesFolder, sono spesso presenti in un database. Pertanto, se i componenti nel modulo vengono installati direttamente in directory predefinite, ad esempio ProgramFilesFolder, le voci di directory nel modulo potrebbero entrare in conflitto con le righe già esistenti. Questa condizione richiederebbe all'utente del modulo di dividere i file di origine dal modulo in modo che corrispondano alla directory di origine esistente.
 
 ## <a name="result"></a>Risultato
 
@@ -31,7 +31,7 @@ directory 'ProgramFilesFolder'. It is recommended that merge modules alias
 all such directories to unique names.
 ```
 
-Rinominare la directory del modulo merge in modo che non corrisponda a una proprietà di Windows Installer e pertanto sia univoca. Impostare quindi una proprietà con lo stesso nome sul valore della directory Windows Installer. Quando si verifica la risoluzione della directory, la directory ha una proprietà con lo stesso nome, quindi il percorso di installazione della directory corrisponde al valore della proprietà. I file passano dalla posizione di origine distinta allo stesso percorso di destinazione. Questo processo dovrebbe rimuovere completamente i conflitti di Unione.
+Rinominare la directory del modulo unione in modo che non corrisponda a una Windows installer e pertanto è univoca. Impostare quindi una proprietà con lo stesso nome sul valore della directory Windows Installer. Quando viene verificata la risoluzione della directory, la directory ha lo stesso nome, quindi il percorso di installazione della directory è il valore della proprietà . I file vengono spostati dal percorso di origine distinto allo stesso percorso di destinazione. Questo processo deve rimuovere completamente i conflitti di merge.
 
 ``` syntax
 Warning: The 'ModuleInstallExecuteSequence' table contains a type 51 action 
@@ -39,9 +39,9 @@ Warning: The 'ModuleInstallExecuteSequence' table contains a type 51 action
 does not have sequence number '1'
 ```
 
-Se per l'azione non è presente il numero di sequenza 1, è possibile che non venga eseguito il merge del database di destinazione abbastanza presto nella sequenza per funzionare in modo efficace.
+Se l'azione non ha il numero di sequenza 1, potrebbe non eseguire il merge nel database di destinazione abbastanza presto nella sequenza per funzionare in modo efficace.
 
-Per correggere il problema, impostare il numero di sequenza su 1. Si noti che la maggior parte degli strumenti di merge correnti (ma non alcune versioni precedenti) genera queste azioni personalizzate in fase di merge, pertanto non è sempre necessario creare esplicitamente le azioni nel modulo merge.
+Per correggere questo avviso, impostare il numero di sequenza su 1. Si noti che la maggior parte degli strumenti di merge correnti (ma non alcune versioni precedenti) genererà queste azioni personalizzate in fase di unione, quindi non è sempre necessario creare in modo esplicito le azioni nel modulo unione.
 
 ``` syntax
 Warning: The 'CustomAction' table contains a type 51 action (MyAppDataFolderAction) 
@@ -49,35 +49,35 @@ for a pre-defined directory, but the name is not the same as the target director
 Many merge tools will generate duplicate actions."
 ```
 
-Poiché la colonna CustomAction è la chiave primaria della tabella CustomAction, alcuni strumenti di merge possono generare azioni duplicate poiché il nome dell'azione creato in precedenza è diverso.
+Poiché la colonna CustomAction è la chiave primaria della tabella CustomAction, alcuni strumenti di merge possono generare azioni duplicate perché il nome dell'azione pre-creazione è diverso.
 
-Per correggere il problema, denominare l'azione come la directory di destinazione. Si noti che la maggior parte degli strumenti di merge correnti (ma non alcune versioni precedenti) genera queste azioni personalizzate in fase di merge, pertanto non è sempre necessario creare esplicitamente le azioni nel modulo merge.
+Per correggere questo avviso, assegnare all'azione lo stesso nome della directory di destinazione. Si noti che la maggior parte degli strumenti di merge correnti (ma non alcune versioni precedenti) generano queste azioni personalizzate in fase di unione, quindi non è sempre necessario creare in modo esplicito le azioni nel modulo unione.
 
 [Tabella directory](directory-table.md)
 
 
 
-| Directory          | \_Padre directory | DefaultDir |
+| Directory          | Padre \_ della directory | DefaultDir |
 |--------------------|-------------------|------------|
-| ProgramFilesFolder | Directory1        | A          |
-| Dei    | Directory2        | B:C        |
-| CartellaDatiApp      | Directory3        | D          |
-| MyPicturesFolder   | Directory4        | E          |
+| Cartella ProgramFilesFolder | Directory1        | A          |
+| StartMenuFolder    | Directory2        | B:C        |
+| AppDataFolder      | Directory3        | D          |
+| Cartella MyPictures   | Directory4        | E          |
 
 
 
  
 
-[Tabella componenti](component-table.md)
+[Tabella dei componenti](component-table.md)
 
 
 
 | Componente               | Directory          |
 |-------------------------|--------------------|
-| Component1.<GUID> | ProgramFilesFolder |
-| Component2.<GUID> | Dei    |
-| Component3.<GUID> | CartellaDatiApp      |
-| Component4.<GUID> | MyPicturesFolder   |
+| Componente1.<GUID> | Cartella ProgramFilesFolder |
+| Componente2.<GUID> | StartMenuFolder    |
+| Componente3.<GUID> | AppDataFolder      |
+| Componente4.<GUID> | Cartella MyPictures   |
 
 
 
@@ -89,8 +89,8 @@ Per correggere il problema, denominare l'azione come la directory di destinazion
 
 | CustomAction                 | Tipo | Source (Sorgente)                       | Destinazione              |
 |------------------------------|------|------------------------------|---------------------|
-| Dei.<GUID> | 51   | Dei.<GUID> | \[Dei\] |
-| MyAppDataFolderAction        | 51   | CartellaDatiApp.<GUID>   | \[CartellaDatiApp\]   |
+| StartMenuFolder.<GUID> | 51   | StartMenuFolder.<GUID> | \[StartMenuFolder\] |
+| MyAppDataFolderAction        | 51   | AppDataFolder.<GUID>   | \[AppDataFolder\]   |
 
 
 
@@ -100,9 +100,9 @@ Per correggere il problema, denominare l'azione come la directory di destinazion
 
 
 
-| Azione                       | Sequenza | BaseAction | After | Condizione |
+| Azione                       | Sequenza | BaseAction | After | Condition |
 |------------------------------|----------|------------|-------|-----------|
-| Dei.<GUID> | 100      |            |       |           |
+| StartMenuFolder.<GUID> | 100      |            |       |           |
 
 
 
@@ -112,7 +112,7 @@ Per correggere il problema, denominare l'azione come la directory di destinazion
 
 <dl> <dt>
 
-[Riferimento ghiaccio del modulo merge](merge-module-ice-reference.md)
+[Informazioni di riferimento sul modulo di unione ICE](merge-module-ice-reference.md)
 </dt> </dl>
 
  

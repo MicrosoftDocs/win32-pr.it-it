@@ -1,7 +1,7 @@
 ---
-description: Inviato quando viene modificato il PGC (Current Program Chain).
+description: Inviato quando la catena di programmi corrente (PGC) cambia.
 ms.assetid: 80fcd059-6ab4-4116-ac3a-012c451237b3
-title: EC_DVD_PROGRAM_CHAIN_CHANGE (Dvdevcode. h)
+title: EC_DVD_PROGRAM_CHAIN_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: eefd45ac1d147a0409417f215e56a4db490dfdbe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4ae4a68263b8a2f85186f62c40708871ba6d7563acd50f78f701f1e2d6da597f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792671"
 ---
-# <a name="ec_dvd_program_chain_change"></a>\_ \_ \_ modifica catena programma DVD \_ EC
+# <a name="ec_dvd_program_chain_change"></a>EC \_ DVD \_ PROGRAM \_ CHAIN \_ CHANGE
 
-Inviato quando viene modificato il PGC (Current Program Chain).
+Inviato quando la catena di programmi corrente (PGC) cambia.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Inviato quando viene modificato il PGC (Current Program Chain).
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Il nuovo numero della catena di programmi (PGCN).
+Nuovo numero della catena di programmi (PGCN).
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Identificatore delle impostazioni locali (LCID) della lingua audio.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDVDControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **DVD \_ NotifyPositionChange** su **true**.
+Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **DVD \_ NotifyPositionChange** su **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Questo evento è disabilitato per impostazione predefinita. Per abilitare questo
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

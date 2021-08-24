@@ -1,19 +1,19 @@
 ---
-description: Informazioni sull'elemento JobComment, che specifica un commento associato al processo, ad esempio, Recapitare alla stanza 1234 al termine.
+description: Informazioni sull'elemento JobComment, che specifica un commento associato al processo, ad esempio Please deliver to room 1234 when completed (Recapita alla stanza 1234 al termine dell'operazione).
 ms.assetid: 100fe310-8e64-453f-8eaf-10abaf8b10b7
 title: JobComment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1decf4cf3af7b3a992b07d8008579ac005d3d14e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8132d3a6f1b7f488fe1f88e04d134b7d60cad8c415419b61ba794445aab44e95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845971"
 ---
 # <a name="jobcomment"></a>JobComment
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica un commento associato al processo. Esempio: "Recapitare alla stanza 1234 al termine".
 
@@ -73,8 +73,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

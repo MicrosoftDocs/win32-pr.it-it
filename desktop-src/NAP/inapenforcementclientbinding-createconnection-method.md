@@ -1,11 +1,11 @@
 ---
-title: Metodo INapEnforcementClientBinding CreateConnection (NapEnforcementClient. h)
-description: Viene utilizzato dalle forze di esecuzione per creare oggetti connessione.
+title: Metodo INapEnforcementClientBinding CreateConnection (NapEnforcementClient.h)
+description: Viene utilizzato dagli imponitori per creare oggetti connessione.
 ms.assetid: 4d31928f-1a10-4168-a53c-256cbbf3e5c9
 keywords:
-- NAP Metodo CreateConnection
+- Metodo CreateConnection NAP
 - Metodo CreateConnection NAP, interfaccia INapEnforcementClientBinding
-- Interfaccia INapEnforcementClientBinding NAP, Metodo CreateConnection
+- Interfaccia INapEnforcementClientBinding NAP, metodo CreateConnection
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bf530b9fefd0e5b361f4f86ef2421712c750be9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e72c8ef4760d611c45291f0de1039b915e9bc8fedde94c314bb1272e4b99b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891281"
 ---
-# <a name="inapenforcementclientbindingcreateconnection-method"></a>Metodo INapEnforcementClientBinding:: CreateConnection
+# <a name="inapenforcementclientbindingcreateconnection-method"></a>Metodo INapEnforcementClientBinding::CreateConnection
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo factory **INapEnforcementClientBinding:: CreateConnection** viene usato dalle forze di esecuzione per creare gli oggetti di connessione.
+Il metodo factory **INapEnforcementClientBinding::CreateConnection** viene usato dagli imponitori per creare oggetti connessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT CreateConnection(
 
 <dl> <dt>
 
-*connessione* \[ a out\]
+*connessione* \[ Cambio\]
 </dt> <dd>
 
-Puntatore COM a una nuova interfaccia [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) restituita dal sistema NAP.
+Puntatore COM a una nuova [**interfaccia INapEnforcementClientConnection**](inapenforcementclientconnection.md) restituita dal sistema nap.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -72,7 +72,7 @@ Puntatore COM a una nuova interfaccia [**INapEnforcementClientConnection**](inap
 
 ## <a name="remarks"></a>Commenti
 
-Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding:: Initialize**](inapenforcementclientbinding-initialize-method.md) prima di chiamare questo o qualsiasi altro metodo dell'interfaccia [**INapEnforcementClientBinding**](inapenforcementclientbinding.md) .
+Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) prima di chiamare questo o qualsiasi altro metodo [**dell'interfaccia INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,10 +80,10 @@ Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

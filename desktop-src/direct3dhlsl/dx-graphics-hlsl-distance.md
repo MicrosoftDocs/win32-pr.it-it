@@ -1,9 +1,9 @@
 ---
 title: distance
-description: Restituisce un valore scalare distanza tra due vettori.
+description: Restituisce una distanza scalare tra due vettori.
 ms.assetid: dda8dc39-fd72-4e92-bf9d-e700db0ede9e
 keywords:
-- distanza HLSL
+- distance HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0f3a64778666ac8f7de16b91eed202e36e90ed1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: f51c5e9865b9dfc1c5a941beb43010dc8fad64e2d8ac8763998c22cb3e0dfbd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726541"
 ---
 # <a name="distance"></a>distance
 
-Restituisce un valore scalare distanza tra due vettori.
+Restituisce una distanza scalare tra due vettori.
 
 
 
-| distanza *ret* (*x*, *y*) |
+| *ret* distance(*x*, *y*) |
 |--------------------------|
 
 
@@ -39,8 +39,8 @@ Restituisce un valore scalare distanza tra due vettori.
 
 | Elemento                                                   | Descrizione                                                    |
 |--------------------------------------------------------|----------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] primo vettore a virgola mobile da confrontare.<br/>  |
-| <span id="y"></span><span id="Y"></span>*y*<br/> | \[nel \] secondo vettore a virgola mobile da confrontare.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Primo vettore a virgola mobile da confrontare.<br/>  |
+| <span id="y"></span><span id="Y"></span>*Y*<br/> | \[in \] Secondo vettore a virgola mobile da confrontare.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Restituisce un valore scalare distanza tra due vettori.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore scalare A virgola mobile che rappresenta la distanza tra il parametro *x* e il parametro *y* .
+Valore scalare a virgola mobile che rappresenta la distanza tra il *parametro x* e il *parametro y.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -56,24 +56,24 @@ Valore scalare A virgola mobile che rappresenta la distanza tra il parametro *x*
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *y*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
-| *RET* | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
+| *x*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *y*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
+| *Ret* | [**Scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì       |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì       |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
 

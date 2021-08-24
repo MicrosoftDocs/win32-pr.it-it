@@ -4,12 +4,12 @@ description: Panoramica degli elenchi di immagini
 ms.assetid: 937f2009-7cf7-40ea-8d93-b81373dc3352
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a464f3a78dc8e3cdf42713c8af02ea3cfa0f0e1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f5af7583d7f8120f079b190432de0ed631f6f78159b1b4a4dd75a28fcd36ffee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826871"
 ---
 # <a name="image-lists-overview"></a>Panoramica degli elenchi di immagini
 

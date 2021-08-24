@@ -1,19 +1,19 @@
 ---
-description: Inviato dal navigatore DVD quando è necessario ignorare i frame.
+description: Inviato dallo strumento di navigazione DVD quando è necessario ignorare i fotogrammi.
 ms.assetid: 252ffbcc-e81a-499d-9dd2-170be01f7ce1
-title: EC_SKIP_FRAMES (dshow. h)
+title: EC_SKIP_FRAMES (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da28321ec06940cebf637c4da89290b69765f64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c872d2a49af5226e60cbeffe3e7e9770dce5d61ae7995dad1f0a2dc99227db51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792441"
 ---
-# <a name="ec_skip_frames"></a>\_frame ignorati EC \_
+# <a name="ec_skip_frames"></a>EC \_ SKIP \_ FRAMES
 
-Inviato dal navigatore DVD quando è necessario ignorare i frame.
+Inviato dallo strumento di navigazione DVD quando è necessario ignorare i fotogrammi.
 
 ## <a name="parameters"></a>Parametri
 
@@ -43,7 +43,7 @@ Questo evento non viene inviato all'applicazione. Le applicazioni non possono es
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e981254677c2e0a361a0a21f125f734ff1403db
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9a48bd2d3231979a30f8f7ff0d8144929115c51b9ca3f464f85d6d0163954ad7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823721"
 ---
 # <a name="ctransforminputpincheckconnect-method"></a>Metodo CTransformInputPin.CheckConnect
 
@@ -45,7 +45,7 @@ HRESULT CheckConnect(
 *pPin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di output.
+Puntatore all'interfaccia [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin di output.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CBasePin::CheckConnect.**](cbasepin-checkconnect.md) Chiama il metodo [**CTransformFilter::CheckConnect**](ctransformfilter-checkconnect.md) del filtro, che restituisce S \_ OK nella classe di base. La classe derivata può eseguire l'override del **metodo CTransformFilter::CheckConnect** per eseguire controlli aggiuntivi.
+Questo metodo esegue l'override [**del metodo CBasePin::CheckConnect.**](cbasepin-checkconnect.md) Chiama il metodo [**CTransformFilter::CheckConnect**](ctransformfilter-checkconnect.md) del filtro, che restituisce S \_ OK nella classe di base. La classe derivata può eseguire l'override del metodo **CTransformFilter::CheckConnect** per eseguire controlli aggiuntivi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Questo metodo esegue l'override [**del metodo CBasePin::CheckConnect.**](cbasepi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

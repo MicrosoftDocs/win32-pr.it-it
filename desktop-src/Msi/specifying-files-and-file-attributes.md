@@ -1,23 +1,23 @@
 ---
-description: L'installazione e la rimozione di ogni file è determinata dal componente Windows Installer che controlla il file.
+description: L'installazione e la rimozione di ogni file sono determinate dal Windows programma di installazione che controlla il file.
 ms.assetid: 6f84bf57-2c68-4f37-b9cd-eee3a657e7cd
 title: Specifica di file e attributi di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 719dacbc434d47b4074a183e67edb02a88cb3c90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfdb63bf2779ddc5730013bad06b382c168a62bab5e897d5d621f7a65644e445
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893731"
 ---
 # <a name="specifying-files-and-file-attributes"></a>Specifica di file e attributi di file
 
-L'installazione e la rimozione di ogni file è determinata dal [componente Windows Installer](windows-installer-components.md) che controlla il file. Una volta specificato il raggruppamento di risorse in componenti, è possibile aggiungere informazioni sugli attributi di file al database di installazione. In questa sezione si aggiungono informazioni sul file al database di installazione per l'esempio del blocco note. Vedere il [gruppo di tabelle di file](file-tables-group.md).
+L'installazione e la rimozione di ogni file sono determinate dal [Windows programma](windows-installer-components.md) di installazione che controlla il file. Dopo aver specificato il raggruppamento delle risorse in componenti, è possibile aggiungere le informazioni sull'attributo del file al database di installazione. In questa sezione si aggiungono informazioni sul file al database di installazione per l'Blocco note esempio. Vedere file [tables group](file-tables-group.md).
 
-I file nell'esempio del blocco note sono decompressi. Per informazioni su come aggiungere file CAB ai pacchetti, vedere [origini compresse e non compresse](compressed-and-uncompressed-sources.md) . Questo esempio non contiene informazioni sul controllo delle versioni dei file. Per ulteriori informazioni sul controllo delle versioni dei file, vedere [regole di controllo delle versioni](file-versioning-rules.md) dei file e [controllo delle versioni dei file predefiniti](default-file-versioning.md).
+I file nell'esempio Blocco note sono decompressi. Per [informazioni su come aggiungere file CAB ai](compressed-and-uncompressed-sources.md) pacchetti, vedere Origini compresse e non compresse. Questo esempio non contiene informazioni sul controllo delle versioni dei file. Per altre informazioni sul controllo delle versioni dei file, vedere [Regole di controllo delle versioni dei file](file-versioning-rules.md) e Controllo delle versioni dei file [predefinito.](default-file-versioning.md)
 
-Utilizzare l'editor di database per aprire MNP2000.msi e immettere i dati seguenti nella tabella file vuota.
+Usare l'editor di database per MNP2000.msi e immettere i dati seguenti nella tabella File vuota.
 
 [Tabella file](file-table.md)
 

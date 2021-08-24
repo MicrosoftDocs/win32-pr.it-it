@@ -1,19 +1,19 @@
 ---
-description: Specifica se il trigger Take Photo è incapsulato nell'origine del dispositivo.
+description: Specifica se il trigger di scattare foto è incapsulato nell'origine del dispositivo.
 ms.assetid: E20AB303-A8C6-4CD1-B3DC-3FE5C5D95678
-title: Attributo MF_DEVICESTREAM_TAKEPHOTO_TRIGGER (Mfidl. h)
+title: MF_DEVICESTREAM_TAKEPHOTO_TRIGGER attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b982539a1b6ef4f098c14a4c950bec0957e7f32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 528bf73ebd0adcdaed4f3ceca1bb72d913c55da768b9e4ec29e0d54b3b7a39b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848361"
 ---
-# <a name="mf_devicestream_takephoto_trigger-attribute"></a>\_ \_ Attributo trigger MF DEVICESTREAM TAKEPHOTO \_
+# <a name="mf_devicestream_takephoto_trigger-attribute"></a>Attributo \_ MF DEVICESTREAM \_ TAKEPHOTO \_ TRIGGER
 
-Specifica se il trigger Take Photo è incapsulato nell'origine del dispositivo.
+Specifica se il trigger di scattare foto è incapsulato nell'origine del dispositivo.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Specifica se il trigger Take Photo è incapsulato nell'origine del dispositivo.
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questo attributo su un valore diverso da zero per incapsulare il trigger Take Photo nell'origine del dispositivo.
+Impostare questo attributo su un valore diverso da zero per incapsulare il trigger di scattare foto nell'origine del dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Impostare questo attributo su un valore diverso da zero per incapsulare il trigg
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Impostare questo attributo su un valore diverso da zero per incapsulare il trigg
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckTime determina se è previsto un periodo di tempo specificato.
+description: Il metodo CheckTime determina se è scaduta un'ora specificata.
 ms.assetid: 522bc7ae-f998-4a7d-8bc3-caf09b4108a6
-title: Metodo CCmdQueue. CheckTime (Winutil. h)
+title: Metodo CCmdQueue.CheckTime (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 17fd67973e122830e53d93d1d8db17046f716507
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 826b59d12c135e9c86ce923f37e1558dca4f13efafb4880aecab1384829a484a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910431"
 ---
-# <a name="ccmdqueuechecktime-method"></a>CCmdQueue. CheckTime, metodo
+# <a name="ccmdqueuechecktime-method"></a>Metodo CCmdQueue.CheckTime
 
-Il `CheckTime` metodo determina se è previsto un periodo di tempo specificato.
+Il `CheckTime` metodo determina se è scaduta un'ora specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,20 +46,20 @@ BOOL CheckTime(
 *time* 
 </dt> <dd>
 
-Tempo da verificare.
+Ora di controllo.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-**True** se il parametro *Time* è un valore del flusso di tempo; **False** se *Time* è un valore in fase di presentazione.
+**TRUE** se il *parametro time* è un valore di tempo di flusso; **FALSE** se *l'ora* è un valore dell'ora di presentazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'ora specificata non è stata ancora superata.
+Restituisce **TRUE** se l'ora specificata non è ancora passata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce **true** se l'ora specificata non è stata ancora superata.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentReadLostFlushVerifyFailureException'
+description: Altre informazioni sul costruttore EsentReadLostFlushVerifyFailureException
 title: Costruttore EsentReadLostFlushVerifyFailureException
 TOCTitle: 'EsentReadLostFlushVerifyFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentReadLostFlushVerifyFailureException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8b57470509599160544df2bf93846fd31d73506
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e462438ea762160988e44f034bc0e32f4d631a9fbd472a9584dd40886211ae9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722341"
 ---
 # <a name="esentreadlostflushverifyfailureexception-constructor"></a>Costruttore EsentReadLostFlushVerifyFailureException
 
 Inizializza una nuova istanza della classe EsentReadLostFlushVerifyFailureException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentReadLostFlushVerifyFailureException()
 
 [Membri di EsentReadLostFlushVerifyFailureException](./esentreadlostflushverifyfailureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

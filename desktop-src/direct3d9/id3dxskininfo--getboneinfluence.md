@@ -1,7 +1,7 @@
 ---
-description: Ottiene i vertici e i pesi influenzati da un osso.
+description: Ottiene i vertici e i pesi influenzati da un'osso.
 ms.assetid: 84cb064b-b6b2-402d-81cc-8c02de6f8b52
-title: 'Metodo ID3DXSkinInfo:: GetBoneInfluence (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::GetBoneInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8b4b31ab08aca476ced1cb28dfc5ed5bfe61d044
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f49afb4175559bb5338c01c0ebb22fb89801aef5e7cafa62386e25c095ea139
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847307"
 ---
-# <a name="id3dxskininfogetboneinfluence-method"></a>Metodo ID3DXSkinInfo:: GetBoneInfluence
+# <a name="id3dxskininfogetboneinfluence-method"></a>Metodo ID3DXSkinInfo::GetBoneInfluence
 
-Ottiene i vertici e i pesi influenzati da un osso.
+Ottiene i vertici e i pesi influenzati da un'osso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT GetBoneInfluence(
 
 <dl> <dt>
 
-*Osso* \[ in\]
+*Osso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero osso.
+Numero di osso.
 
 </dd> <dt>
 
-*vertici* \[ in uscita\]
+*vertici* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ottenere la matrice di vertici influenzato da un osso.
+Ottiene la matrice di vertici influenzati da un osso.
 
 </dd> <dt>
 
-*pesi* \[ in uscita\]
+*pesi* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ottenere la matrice di pesi influenzata da un osso.
+Ottenere la matrice di pesi influenzati da un osso.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Usare [**ID3DXSkinInfo:: GetNumBoneInfluences**](id3dxskininfo--getnumboneinfluences.md) per determinare il numero di vertici influenzati dall'osso.
+Usare [**ID3DXSkinInfo::GetNumBoneInfluences**](id3dxskininfo--getnumboneinfluences.md) per scoprire il numero di vertici influenzati dall'osso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Usare [**ID3DXSkinInfo:: GetNumBoneInfluences**](id3dxskininfo--getnumboneinflue
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

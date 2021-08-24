@@ -1,7 +1,7 @@
 ---
-description: Crea un oggetto della sessione di chiavi multimediali usando i dati di inizializzazione e i dati personalizzati specificati. .
+description: Crea un oggetto sessione della chiave multimediale usando i dati di inizializzazione e i dati personalizzati specificati. .
 ms.assetid: 9f11433c-7cff-4a59-9d4a-7f4b56ba62cf
-title: 'Metodo IMFMediaKeys:: CreateSession'
+title: Metodo IMFMediaKeys::CreateSession
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 89d3abce0c1c15d472f7008fa0ef2c5f27bba6ad
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2dd9bcc7a1151b042d275917e8bd8106eb079de3315137ca41fa7faecaf5c957
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942041"
 ---
-# <a name="imfmediakeyscreatesession-method"></a>Metodo IMFMediaKeys:: CreateSession
+# <a name="imfmediakeyscreatesession-method"></a>Metodo IMFMediaKeys::CreateSession
 
-Crea un oggetto della sessione di chiavi multimediali usando i dati di inizializzazione e i dati personalizzati specificati. .
+Crea un oggetto sessione della chiave multimediale usando i dati di inizializzazione e i dati personalizzati specificati. .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT CreateSession(
 
 <dl> <dt>
 
-*mimeType* 
+*Mimetype* 
 </dt> <dd>
 
 Tipo MIME del contenitore multimediale utilizzato per il contenuto.
@@ -59,44 +59,44 @@ Dati di inizializzazione per il sistema di chiavi.
 
 </dd> <dt>
 
-*CB* 
+*Cb* 
 </dt> <dd>
 
-Conteggio in byte di *initData*.
+Conteggio in byte di *initData.*
 
 </dd> <dt>
 
-*customData* 
+*Customdata* 
 </dt> <dd>
 
-Dati personalizzati inviati al sistema di chiavi.
+Dati personalizzati inviati al sistema delle chiavi.
 
 </dd> <dt>
 
 *cbCustomData* 
 </dt> <dd>
 
-Conteggio in byte di *cbCustomData*.
+Conteggio in byte di *cbCustomData.*
 
 </dd> <dt>
 
-*comunica* 
+*Notificare* 
 </dt> <dd>
 
-comunica
+Notificare
 
 </dd> <dt>
 
 *ppSession* 
 </dt> <dd>
 
-La sessione del tasto supporto.
+Sessione della chiave multimediale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,9 +104,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

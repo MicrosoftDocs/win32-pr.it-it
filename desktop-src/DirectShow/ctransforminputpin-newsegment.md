@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo NewSegment notifica al pin che gli esempi di supporti ricevuti dopo questa chiamata vengono raggruppati come un segmento. Questo metodo implementa il metodo IPin:: NewSegment.'
+description: Il metodo NewSegment notifica al pin che i campioni multimediali ricevuti dopo questa chiamata vengono raggruppati come segmento. Questo metodo implementa il metodo IPin::NewSegment.
 ms.assetid: 8925b8b5-13dd-4127-82d8-96525bd4d6fc
-title: Metodo CTransformInputPin. NewSegment (Transfrm. h)
+title: Metodo CTransformInputPin.NewSegment (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25c455fe5ec6ddf9157e991b70b468ace653daa9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c522755fe898717f0c06af9698be07ab2ebca491666982d6ff62756ef48ae08f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907421"
 ---
-# <a name="ctransforminputpinnewsegment-method"></a>CTransformInputPin. NewSegment, metodo
+# <a name="ctransforminputpinnewsegment-method"></a>Metodo CTransformInputPin.NewSegment
 
-Il `NewSegment` metodo notifica al pin che gli esempi di supporti ricevuti dopo questa chiamata vengono raggruppati come segmento. Questo metodo implementa il metodo [**Ipin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) .
+Il `NewSegment` metodo notifica al pin che i campioni multimediali ricevuti dopo questa chiamata vengono raggruppati come segmento. Questo metodo implementa il [**metodo IPin::NewSegment.**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,11 +67,11 @@ Frequenza del segmento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o un altro valore **HRESULT** .
+Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBasePin:: NewSegment**](cbasepin-newsegment.md) . Chiama il metodo [**CTransformFilter:: NewSegment**](ctransformfilter-newsegment.md) del filtro per recapitare la chiamata downstream.
+Questo metodo esegue l'override [**del metodo CBasePin::NewSegment.**](cbasepin-newsegment.md) Chiama il metodo [**CTransformFilter::NewSegment**](ctransformfilter-newsegment.md) del filtro per recapitare la chiamata a valle.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Questo metodo esegue l'override del metodo [**CBasePin:: NewSegment**](cbasepin-
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

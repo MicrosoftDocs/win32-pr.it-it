@@ -1,7 +1,7 @@
 - name: Simple Network Management Protocol
   href: snmp-start-page.md
   items:
-    - name: Novità in SNMP
+    - name: Novità di SNMP
       href: new-in-snmp.md
     - name: Simple Network Management Protocol (SNMP)
       href: simple-network-management-protocol-snmp-.md
@@ -13,10 +13,10 @@
           items:
             - name: Funzionamento di SNMP
               href: how-snmp-works.md
-            - name: MIB (Management Information Base) SNMP
+            - name: SNMP Management Information Base (MIB)
               href: the-snmp-management-information-base-mib-.md
               items:
-                - name: Albero nome MIB
+                - name: Albero dei nomi MIB
                   href: mib-name-tree.md
             - name: RFC pertinenti
               href: relevant-rfcs.md
@@ -27,17 +27,17 @@
             - name: Configurazione del servizio SNMP
               href: configuring-the-snmp-service.md
               items:
-                - name: Nomi comunità
+                - name: Community Nomi
                   href: community-names.md
                 - name: Nomi host e indirizzi IP
                   href: host-names-and-ip-addresses.md
                 - name: Configurazione della sicurezza SNMP
                   href: configuring-snmp-security.md
-                - name: Configurazione Criteri di gruppo SNMP
+                - name: Configurazione di SNMP Criteri di gruppo
                   href: configuring-snmp-group-policy.md
-                - name: Configurazione delle informazioni sugli agenti SNMP
+                - name: Configurazione delle informazioni dell'agente SNMP
                   href: configuring-snmp-agent-information.md
-        - name: Riferimento SNMP
+        - name: Informazioni di riferimento su SNMP
           href: snmp-reference.md
           items:
             - name: Costanti SNMP
@@ -47,13 +47,13 @@
                   href: pdu-type-values.md
                 - name: Valori della sintassi dell'applicazione SNMP
                   href: snmp-application-syntax-values.md
-                - name: Valori di sintassi semplici SNMP
+                - name: Valori di sintassi semplice SNMP
                   href: snmp-simple-syntax-values.md
-                - name: Valori di sintassi del costruttore SNMP
+                - name: Valori della sintassi del costruttore SNMP
                   href: snmp-constructor-syntax-values.md
                 - name: Tipi di richiesta SNMP
                   href: snmp-request-types.md
-                - name: Tipi trap SNMPv1
+                - name: Tipi di trap SNMPv1
                   href: snmpv1-trap-types.md
             - name: Tipi di dati SNMP
               href: snmp-data-types.md
@@ -88,7 +88,7 @@
                   href: /windows/desktop/api/Mgmtapi/nf-mgmtapi-snmpmgroidtostr
                 - name: SnmpMgrOpen
                   href: /windows/desktop/api/Mgmtapi/nf-mgmtapi-snmpmgropen
-                - name: Chiamata SnmpMgrRequest
+                - name: SnmpMgrRequest
                   href: /windows/desktop/api/Mgmtapi/nf-mgmtapi-snmpmgrrequest
                 - name: SnmpMgrStrToOid
                   href: /windows/desktop/api/Mgmtapi/nf-mgmtapi-snmpmgrstrtooid
@@ -161,15 +161,15 @@
                   href: /windows/desktop/api/Snmp/ns-snmp-snmpvarbind
                 - name: SnmpVarBindList
                   href: /windows/desktop/api/Snmp/ns-snmp-snmpvarbindlist
-            - name: Tipi di variabili SNMP e tipi PDU di richiesta
+            - name: Tipi di variabili SNMP e tipi di richiesta PDU
               href: snmp-variable-types-and-request-pdu-types.md
-    - name: API WinSNMP
+    - name: WinSNMP API
       href: winsnmp-api.md
       items:
         - name: Informazioni sull'API WinSNMP
           href: about-the-winsnmp-api.md
           items:
-            - name: 'Informazioni sull''Addendum 2,0 di WinSNMP'
+            - name: Informazioni sull'addendum WinSNMP 2.0
               href: about-the-winsnmp-2-0-addendum.md
             - name: Informazioni sulle versioni SNMP
               href: about-snmp-versions.md
@@ -183,13 +183,13 @@
             - name: Informazioni sull'implementazione di Microsoft WinSNMP
               href: about-the-microsoft-winsnmp-implementation.md
               items:
-                - name: Database WinSNMP
+                - name: The WinSNMP Database
                   href: the-winsnmp-database.md
                 - name: Livelli di supporto SNMP
                   href: levels-of-snmp-support.md
             - name: Sessioni WinSNMP
               href: winsnmp-sessions.md
-            - name: Concetti di WinSNMP Gestione dati
+            - name: Concetti di Gestione dati WinSNMP
               href: winsnmp-data-management-concepts.md
               items:
                 - name: Identificatori di oggetto
@@ -200,7 +200,7 @@
                   href: resource-handle-objects.md
                 - name: Stringhe di tipo C
                   href: c-style-strings.md
-                - name: Allocazione di oggetti memoria WinSNMP
+                - name: Allocazione di oggetti di memoria WinSNMP
                   href: allocating-winsnmp-memory-objects.md
             - name: Concetti relativi alla gestione delle comunicazioni WinSNMP
               href: winsnmp-communications-management-concepts.md
@@ -208,12 +208,12 @@
                 - name: Informazioni sui messaggi SNMP
                   href: about-snmp-messages.md
                   items:
-                    - name: Conversione di richieste di messaggi
+                    - name: Traduzione delle richieste di messaggi
                       href: translating-message-requests.md
                 - name: Informazioni su trap e notifiche
                   href: about-traps-and-notifications.md
                   items:
-                    - name: Conversione di trap da SNMPv1 a SNMPv2C
+                    - name: Traduzione di trap da SNMPv1 a SNMPv2C
                       href: translating-traps-from-snmpv1-to-snmpv2c.md
                     - name: Formati trap
                       href: trap-formats.md
@@ -230,14 +230,14 @@
               items:
                 - name: Più registrazioni trap
                   href: multiple-trap-registrations.md
-            - name: Utilizzo degli elenchi di associazioni variabili
+            - name: Uso degli elenchi di associazioni di variabili
               href: working-with-variable-binding-lists.md
               items:
-                - name: Creazione di un elenco di associazioni variabili
+                - name: Creazione di un elenco di associazioni di variabili
                   href: creating-a-variable-binding-list.md
-                - name: Gestione di un elenco di associazioni variabili
+                - name: Gestione di un elenco di associazioni di variabili
                   href: managing-a-variable-binding-list.md
-            - name: Utilizzo delle unità dati del protocollo
+            - name: Uso delle unità dati del protocollo
               href: working-with-protocol-data-units.md
               items:
                 - name: Creazione di una PDU
@@ -262,9 +262,9 @@
               items:
                 - name: Gestione degli identificatori di oggetto
                   href: managing-object-identifiers.md
-                - name: Liberazione di descrittori WinSNMP
+                - name: Liberare i descrittori WinSNMP
                   href: freeing-winsnmp-descriptors.md
-                - name: Impostazione della modalità di conversione dell'entità e del contesto
+                - name: Impostazione della modalità di conversione di entità e contesto
                   href: setting-the-entity-and-context-translation-mode.md
                   items:
                     - name: Supporto per le stringhe di indirizzi IPX in WinSNMP
@@ -282,7 +282,7 @@
                   href: writing-winsnmp-applications-with-multiple-threads.md
                 - name: Registrazione di un'applicazione agente SNMP
                   href: registering-an-snmp-agent-application.md
-        - name: Informazioni di riferimento sull'API WinSNMP
+        - name: Informazioni di riferimento sulle API WinSNMP
           href: winsnmp-api-reference.md
           items:
             - name: Tipi di dati WinSNMP
@@ -290,11 +290,11 @@
             - name: Codici di errore WinSNMP
               href: winsnmp-error-codes.md
               items:
-                - name: Codici di errore comuni di WinSNMP
+                - name: Codici di errore comuni WinSNMP
                   href: winsnmp-common-error-codes.md
                 - name: Errori di trasporto di rete
                   href: network-transport-errors.md
-            - name: Valori restituiti dalla funzione WinSNMP
+            - name: Valori restituiti della funzione WinSNMP
               href: winsnmp-function-return-values.md
             - name: Funzioni WinSNMP
               href: winsnmp-functions.md

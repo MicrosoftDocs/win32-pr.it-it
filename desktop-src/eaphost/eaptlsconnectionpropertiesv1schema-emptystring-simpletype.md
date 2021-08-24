@@ -1,9 +1,9 @@
 ---
 title: Tipo semplice emptyString
-description: Informazioni sul tipo semplice emptyString, che non è in uso. Vedere requisiti e visualizzare altre risorse disponibili.
+description: Informazioni sul tipo semplice emptyString, che non è in uso. Vedere i requisiti e visualizzare altre risorse disponibili.
 ms.assetid: e561b8d5-8683-41a1-bd72-73b1a767b6cf
 keywords:
-- emptyString di tipo semplice EAPHost
+- EAPHost di tipo semplice emptyString
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 756c8976c8b989cf77be921491770fcff9ea62d5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4f210fadeb0097ffd7a11d80dd47b252dbbfdc614950af0ac07d612b44edd0aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948211"
 ---
 # <a name="emptystring-simple-type"></a>Tipo semplice emptyString
 
-Il tipo semplice **EmptyString** non è in uso.
+Il **tipo semplice emptyString** non è in uso.
 
 ``` syntax
 <xs:simpleType name="emptyString">
@@ -41,10 +41,10 @@ Il tipo semplice **EmptyString** non è in uso.
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |-------------------------------------|------------------------------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -52,7 +52,7 @@ Il tipo semplice **EmptyString** non è in uso.
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)

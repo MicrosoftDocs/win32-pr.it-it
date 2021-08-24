@@ -1,9 +1,9 @@
 ---
 title: Elemento Repetition (triggerBaseType)
-description: Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il modello di ripetizione viene ripetuto dopo l'avvio dell'attività.
+description: Specifica la frequenza di esecuzione dell'attività e la durata della ripetizione del criterio di ripetizione dopo l'avvio dell'attività.
 ms.assetid: d43c7f9a-3a7b-44a9-901b-9ad18c027b1b
 keywords:
-- Elemento Repetition Utilità di pianificazione
+- Ripetizione di elementi Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "119959541"
 ---
 # <a name="repetition-triggerbasetype-element"></a>Elemento Repetition (triggerBaseType)
 
-Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il modello di ripetizione viene ripetuto dopo l'avvio dell'attività.
+Specifica la frequenza di esecuzione dell'attività e la durata della ripetizione del criterio di ripetizione dopo l'avvio dell'attività.
 
 ``` syntax
 <xs:element name="Repetition"
@@ -30,7 +30,7 @@ Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il 
  />
 ```
 
-**L'elemento Repetition** è definito dal [**tipo complesso triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
+**L'elemento Repetition** è definito dal tipo complesso [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,10 +39,10 @@ Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il 
 | Elemento                                                                                     | Derivato da                                                                               | Descrizione                                                                                  |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                 | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività all'avvio del sistema.<br/>                 |
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Specifica un trigger giornaliero, settimanale, mensile o mensile del giorno della settimana.<br/>   |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Specifica un trigger giornaliero, settimanale, mensile o mensile.<br/>   |
 | [**EventTrigger**](taskschedulerschema-eventtrigger-triggergroup-element.md)               | [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando si verifica un evento di sistema.<br/>                |
-| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il computer entra in uno stato di inattività.<br/> |
-| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando un utente esegue l'accesso.<br/>                       |
+| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il computer passa a uno stato di inattività.<br/> |
+| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando un utente accede.<br/>                       |
 | [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando l'attività viene registrata.<br/>               |
 | [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md)                 | [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il trigger viene attivato.<br/>             |
 
@@ -55,8 +55,8 @@ Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il 
 | Elemento                                                                                   | Tipo     | Descrizione                                                                                                         |
 |-------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------|
 | [**Durata**](taskschedulerschema-duration-repetitiontype-element.md)                   | duration | Specifica per quanto tempo il criterio viene ripetuto.<br/>                                                              |
-| [**Intervallo**](taskschedulerschema-interval-repetitiontype-element.md)                   | duration | Specifica l'intervallo di tempo tra ogni riavvio dell'attività.<br/>                                           |
-| [**StopAtDurationEnd**](taskschedulerschema-stopatdurationend-repetitiontype-element.md) | boolean  | Specifica che un'istanza in esecuzione dell'attività viene arrestata alla fine della durata del modello di ripetizione.<br/> |
+| [**Intervallo**](taskschedulerschema-interval-repetitiontype-element.md)                   | duration | Specifica la quantità di tempo tra ogni riavvio dell'attività.<br/>                                           |
+| [**StopAtDurationEnd**](taskschedulerschema-stopatdurationend-repetitiontype-element.md) | boolean  | Specifica che un'istanza in esecuzione dell'attività viene arrestata alla fine della durata del criterio di ripetizione.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Specifica la frequenza con cui viene eseguita l'attività e per quanto tempo il 
 
 Se si specifica una durata di ripetizione per un'attività, è necessario specificare anche l'intervallo di ripetizione.
 
-Se si registra un'attività che contiene un trigger con un intervallo di ripetizione pari a un minuto e una durata di ripetizione pari a quattro minuti, l'attività verrà avviata cinque volte. Le cinque ripetizioni possono essere definite nel modello seguente.
+Se si registra un'attività che contiene un trigger con un intervallo di ripetizione pari a un minuto e una durata di ripetizione pari a quattro minuti, l'attività verrà avviata cinque volte. Le cinque ripetizioni possono essere definite dal modello seguente.
 
 1.  Un'attività inizia all'inizio del primo minuto.
 2.  L'attività successiva inizia alla fine del primo minuto.
@@ -74,15 +74,15 @@ Se si registra un'attività che contiene un trigger con un intervallo di ripetiz
 
 **Windows Server 2003, Windows XP e Windows 2000:** Se si registra un'attività che contiene un trigger con un intervallo di ripetizione pari a un minuto e una durata di ripetizione pari a quattro minuti, l'attività verrà avviata quattro volte.
 
-**Windows Vista, Windows 7, Windows Server 2008, Windows 8 e Windows Server 2012:** In genere, l'impostazione della durata della ripetizione su un multiplo esatto dell'intervallo produce i numeri descritti in precedenza. Tuttavia, in determinate condizioni di carico elevato, è possibile che si sia verificato un timeout per la durata prima che TaskScheduler possa avviare l'intervallo di attività finale.
+**Windows Vista, Windows 7, Windows Server 2008, Windows 8 e Windows Server 2012:** In genere, l'impostazione della durata della ripetizione su un multiplo esatto dell'intervallo produce i numeri descritti in precedenza. Tuttavia, in determinate condizioni di carico elevato, è possibile che la durata si timeout prima che TaskScheduler possa avviare l'intervallo di attività finale.
 
-Per lo sviluppo di script, il modello di ripetizione viene specificato usando [**la proprietà Trigger.Repetition**](trigger-repetition.md) ereditata da tutti gli oggetti trigger.
+Per lo sviluppo di script, il modello di ripetizione viene specificato usando la [**proprietà Trigger.Repetition**](trigger-repetition.md) ereditata da tutti gli oggetti trigger.
 
-Per lo sviluppo in C++, il modello di ripetizione viene specificato usando la proprietà [**ITRigger::Repetition**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_repetition) ereditata da tutte le interfacce del trigger.
+Per lo sviluppo C++, il modello di ripetizione viene specificato usando la proprietà [**ITRigger::Repetition**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_repetition) ereditata da tutte le interfacce trigger.
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un elemento trigger di avvio che specifica un modello di ripetizione per un trigger.
+Il codice XML seguente definisce un elemento trigger di avvio che specifica un criterio di ripetizione per un trigger.
 
 
 ```XML
@@ -108,8 +108,8 @@ Il codice XML seguente definisce un elemento trigger di avvio che specifica un m
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -117,7 +117,7 @@ Il codice XML seguente definisce un elemento trigger di avvio che specifica un m
 
 <dl> <dt>
 
-[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

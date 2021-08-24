@@ -1,7 +1,7 @@
 ---
-description: La funzione DestroyProtocol Elimina il protocollo creato dalla funzione CreateProtocol.
+description: La funzione DestroyProtocol elimina il protocollo creato dalla funzione CreateProtocol.
 ms.assetid: f7621c2a-1905-4748-b8e3-7b49f3f2bf03
-title: Funzione DestroyProtocol (Netmon. h)
+title: Funzione DestroyProtocol (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: be96a13816a6a35bdd554380dacd5e8e2f5d5450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c3a89bfd74a01a7455ecd9393d913ddd906474ceabd1c8884f187444cb483a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911141"
 ---
-# <a name="destroyprotocol-function"></a>DestroyProtocol (funzione)
+# <a name="destroyprotocol-function"></a>Funzione DestroyProtocol
 
-La funzione **DestroyProtocol** Elimina il protocollo creato dalla funzione **CreateProtocol** .
+La **funzione DestroyProtocol** elimina il protocollo creato **dalla funzione CreateProtocol.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ VOID WINAPI DestroyProtocol(
 
 <dl> <dt>
 
-*hProtocol* \[ in\]
+*hProtocol* \[ Pollici\]
 </dt> <dd>
 
-Handle per il protocollo da eliminare definitivamente.
+Handle per il protocollo da eliminare.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-La DLL del parser chiama la funzione **DestroyProtocol** durante la relativa implementazione di [DllMain](dllmain-parser.md). **DestroyProtocol** viene chiamato quando il sistema operativo sta per scaricare la dll.
+La DLL del parser chiama la **funzione DestroyProtocol** durante l'implementazione di [DllMain.](dllmain-parser.md) **DestroyProtocol** viene chiamato quando il sistema operativo scarica la DLL.
 
 
 
 | Per informazioni su                                        | Vedere                                                     |
 |-----------------------------------------------------------|---------------------------------------------------------|
-| Quali sono i parser e come funzionano con Network Monitor. | [Parser](parsers.md)                                  |
+| Che cosa sono i parser e come funzionano con Network Monitor. | [Parser](parsers.md)                                  |
 | Come implementare **DllMain** include un esempio.         | [Implementazione di DllMain](implementing-dllmain-parser.md) |
 
 
@@ -73,8 +73,8 @@ La DLL del parser chiama la funzione **DestroyProtocol** durante la relativa imp
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

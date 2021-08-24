@@ -1,7 +1,7 @@
 ---
-description: La funzione DbgCheckModuleLevel controlla se la registrazione è abilitata per i tipi di messaggio e il livello specificati. Ignorato nelle compilazioni al dettaglio.
+description: La funzione DbgCheckModuleLevel controlla se la registrazione è abilitata per i tipi di messaggio e il livello specificati. Ignorato nelle build di vendita al dettaglio.
 ms.assetid: f4b12df7-9001-4bfb-9d84-84a0e8295a8b
-title: Funzione DbgCheckModuleLevel (Wxdebug. h)
+title: Funzione DbgCheckModuleLevel (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 79df8cd06617cf9b17fa9933d4d7a87954a6e2b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd6d7c61e7989987401c22386054c02f87410ce66dbb98bb6e20a813f2c851be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823701"
 ---
-# <a name="dbgcheckmodulelevel-function"></a>DbgCheckModuleLevel (funzione)
+# <a name="dbgcheckmodulelevel-function"></a>Funzione DbgCheckModuleLevel
 
-La `DbgCheckModuleLevel` funzione controlla se la registrazione è abilitata per i tipi di messaggio e il livello specificati. Ignorato nelle compilazioni al dettaglio.
+La `DbgCheckModuleLevel` funzione controlla se la registrazione è abilitata per i tipi di messaggio e il livello specificati. Ignorato nelle build di vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Livello di registrazione
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la registrazione per uno dei tipi di messaggio specificati è impostata sul livello specificato o su un valore superiore. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se la registrazione per uno dei tipi di messaggio specificati è impostata sul livello specificato o su un livello superiore. In caso contrario, restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce **true** se la registrazione per uno dei tipi di messaggio specifica
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

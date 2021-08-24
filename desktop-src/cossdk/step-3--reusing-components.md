@@ -1,43 +1,43 @@
 ---
-description: 'Passaggio 3: riutilizzo dei componenti'
+description: 'Passaggio 3: Riutilizzo dei componenti'
 ms.assetid: d9c14cf8-5bc9-4a6c-9421-c16c3f41b10d
-title: 'Passaggio 3: riutilizzo dei componenti'
+title: 'Passaggio 3: Riutilizzo dei componenti'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f44446ee20baa6dc8c947ef0650f4478847a1c
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 9cf500746e7c9052a421691299903437e129108405b49c7753a841e8ca505518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104566930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895812"
 ---
-# <a name="step-3-reusing-components"></a>Passaggio 3: riutilizzo dei componenti
+# <a name="step-3-reusing-components"></a>Passaggio 3: Riutilizzo dei componenti
 
 ## <a name="objectives"></a>Obiettivi
 
-In questo passaggio si apprenderanno le informazioni seguenti:
+In questo passaggio verranno fornite informazioni sugli elementi seguenti:
 
 -   Componenti riutilizzabili.
--   Come pianificare la riusabilità.
+-   Come pianificare la riutilizzabilità.
 
 ## <a name="description"></a>Descrizione
 
-Due parti precedenti di questo nozioni di base sui servizi COM+, [passaggio 1: creazione di un componente transazionale](step-1--creating-a-transactional-component.md) e [passaggio 2: l'estensione di una transazione tra più componenti](step-2--extending-a-transaction-across-multiple-components.md) Mostra come scrivere un componente che chiama un secondo componente per facilitare il completamento del lavoro, aggiornando le informazioni sull'autore nel database Microsoft SQL Server pubs; tutte le operazioni sono protette da un'unica transazione. I componenti di esempio incentrati sul lavoro di aggiornamento dei dati di un autore e la verifica dell'indirizzo dell'autore e l'elaborazione delle transazioni, l' [attivazione JIT](com--just-in-time-activation.md)e la [protezione della concorrenza](com--synchronization.md)fornite da com+.
+Due parti precedenti di questo primer di servizi COM+, [Passaggio 1:](step-1--creating-a-transactional-component.md) Creazione di un componente transazionale e Passaggio [2:](step-2--extending-a-transaction-across-multiple-components.md) Estensione di una transazione tra più componenti, illustrano come scrivere un componente che chiama un secondo componente per facilitare il completamento di alcune operazioni, l'aggiornamento delle informazioni sull'autore nel database pubs di Microsoft SQL Server. tutto il lavoro è protetto da una singola transazione. I componenti di esempio sono incentrati sul lavoro di aggiornamento dei dati di un autore e verifica dell'indirizzo dell'autore e sull'elaborazione delle transazioni fornita da COM+, attivazione [JIT](com--just-in-time-activation.md)e protezione della [concorrenza.](com--synchronization.md)
 
-In questo passaggio viene illustrato come riutilizzare i componenti creati nei passaggi 1 e 2 e vengono esaminati i metodi per la progettazione di tali componenti. Come illustrato nella figura seguente, ciò significa creare un nuovo componente, `AddNewAuthor` , che aggiunge nuovi autori al database chiamando `UpdateAuthorAddress` .
+Questo passaggio illustra come riutilizzare i componenti creati nei passaggi 1 e 2 e esamina cosa significa per la progettazione di tali componenti. Come illustrato nella figura seguente, ciò significa creare un nuovo componente, , che aggiunge `AddNewAuthor` nuovi autori al database chiamando `UpdateAuthorAddress` .
 
-![Diagramma che mostra il flusso quando si riutilizzano i componenti.](images/e746f50e-2e86-4e59-82f9-f407d2b0325c.png)
+![Diagramma che mostra il flusso durante il riutilizzo dei componenti.](images/e746f50e-2e86-4e59-82f9-f407d2b0325c.png)
 
-Oltre a riutilizzare la funzionalità del componente esistente, `AddNewAuthor` chiama un altro nuovo componente denominato `ValidateAuthorName` . Come illustrato nella figura precedente, `ValidateAuthorName` è non transazionale. Il valore dell'attributo Transaction per questo componente viene lasciato con l'impostazione predefinita (**non supportata**) per escluderne il lavoro dalla transazione. Come illustrato nel codice di esempio Step 3, `ValidateAuthorName` esegue query di sola lettura sul database e l'errore di questa attività secondaria non dovrebbe essere in grado di interrompere la transazione. Tuttavia, il valore dell'attributo Transaction del `AddNewAuthor` componente viene impostato su **required**.
+Oltre a riutilizzare le funzionalità dei componenti esistenti, `AddNewAuthor` chiama un altro nuovo componente denominato `ValidateAuthorName` . Come illustrato nella figura precedente, `ValidateAuthorName` non è transazionale. Il valore dell'attributo della transazione per questo componente viene lasciato nell'impostazione predefinita (**Non** supportato ) per escludere il lavoro dalla transazione. Come illustrato nel codice di esempio del passaggio 3, esegue query di sola lettura sul database e l'errore di questa attività secondaria non deve avere la possibilità di `ValidateAuthorName` interrompere la transazione. Tuttavia, il valore dell'attributo transaction del `AddNewAuthor` componente è impostato su **Required**.
 
-I `AddNewAuthor` `UpdateAuthorAddress` componenti, e `ValidateAuthorAddress` tutti votano nella transazione. In questa transazione, `AddNewAuthor` è l'oggetto radice. COM+ rende sempre il primo oggetto creato nella transazione come oggetto radice.
+I `AddNewAuthor` componenti , e `UpdateAuthorAddress` `ValidateAuthorAddress` votano tutti nella transazione. In questa transazione è `AddNewAuthor` l'oggetto radice. COM+ rende sempre il primo oggetto creato nella transazione l'oggetto radice.
 
-In questo esempio, il riutilizzo del `UpdateAuthorAddress` componente è facile: com + recapita automaticamente i servizi previsti. Tuttavia, i risultati sarebbero diversi se il valore dell'attributo Transaction del `UpdateAuthorAddress` componente era inizialmente impostato su **requires New** anziché **required**. In superficie, entrambe le impostazioni appaiono simili; entrambi garantiscono una transazione. **Richiede New**, tuttavia, avvia sempre una nuova transazione, mentre **required** avvia una nuova transazione solo quando il chiamante dell'oggetto è non transazionale. È possibile osservare da quanto è importante configurare `UpdateAuthorAddress` con attenzione e ponderatamente. In caso contrario, COM+ potrebbe avere interpretato la richiesta di servizio in modo diverso, generando due transazioni non correlate, come illustrato nella figura seguente, anziché una.
+In questo esempio il riutilizzo del `UpdateAuthorAddress` componente è semplice: COM+ fornisce automaticamente i servizi previsti. Tuttavia, i risultati sarebbero diversi se il valore dell'attributo della transazione del componente fosse inizialmente impostato su Requires `UpdateAuthorAddress` **New** invece di **Required**. In superficie, entrambe le impostazioni appaiono simili. entrambi garantiscono una transazione. **Richiede New**, tuttavia, avvia sempre una nuova transazione, mentre **Required** avvia una nuova transazione solo quando il chiamante dell'oggetto è non transazionale. È possibile vedere da questo aspetto quanto fosse importante configurare con attenzione `UpdateAuthorAddress` e attenzione. In caso contrario, COM+ potrebbe aver interpretato la richiesta di servizio in modo diverso, generando due transazioni non correlate, come illustrato nella figura seguente, anziché una.
 
-![Diagramma che mostra il flusso quando si riutilizzano i componenti con "requires New".](images/24b9edf6-af00-4994-8fa1-cee4ace16379.png)
+![Diagramma che mostra il flusso durante il riutilizzo dei componenti con "Richiede nuovo".](images/24b9edf6-af00-4994-8fa1-cee4ace16379.png)
 
 > [!Note]  
-> Quando si riutilizzano i componenti, assicurarsi che i servizi siano configurati in modo da supportare il risultato desiderato.
+> Quando si riutilizzano i componenti, assicurarsi che i servizi siano configurati per supportare il risultato desiderato.
 
  
 
@@ -161,7 +161,7 @@ End Sub
 
 
 
-Il `ValidateAuthorName` componente convalida i nomi di autore prima `AddNewAuthor` di aggiungere il nome al database. Questo componente genera un errore al chiamante se si verifica un evento imprevisto.
+Il `ValidateAuthorName` componente convalida i nomi degli autori prima di aggiungere il nome al `AddNewAuthor` database. Questo componente genera un errore al chiamante se si verifica qualcosa di imprevisto.
 
 
 ```VB
@@ -229,21 +229,21 @@ End Function
 
 ## <a name="summary"></a>Riepilogo
 
--   In alcuni casi non si vuole che un componente voti nella transazione.
--   COM+ non impone l'attivazione JIT o la protezione della concorrenza su componenti non transazionali. Questi servizi possono essere configurati separatamente.
--   La configurazione di un componente chiamante influiscono sul modo in cui COM+ interpreta le richieste di servizio del componente chiamato.
+-   A volte non si vuole che un componente voti nella transazione.
+-   COM+ non applica l'attivazione JIT o la protezione della concorrenza nei componenti non transazionali. È possibile configurare questi servizi separatamente.
+-   La configurazione di un componente chiamante influisce sul modo in cui COM+ interpreta le richieste di servizio del componente chiamato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Passaggio 1: creazione di un componente transazionale](step-1--creating-a-transactional-component.md)
+[Passaggio 1: Creazione di un componente transazionale](step-1--creating-a-transactional-component.md)
 </dt> <dt>
 
-[Passaggio 2: estensione di una transazione tra più componenti](step-2--extending-a-transaction-across-multiple-components.md)
+[Passaggio 2: Estensione di una transazione tra più componenti](step-2--extending-a-transaction-across-multiple-components.md)
 </dt> <dt>
 
-[Configurazione di transazioni](configuring-transactions.md)
+[Configurazione delle transazioni](configuring-transactions.md)
 </dt> <dt>
 
 [Progettazione per la scalabilità](designing-for-scalability.md)

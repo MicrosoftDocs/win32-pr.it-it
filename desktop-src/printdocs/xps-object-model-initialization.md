@@ -1,27 +1,27 @@
 ---
-description: Viene descritto come inizializzare un oggetto XPS OM, che consente a un programma di creare un documento XPS.
+description: Viene descritto come inizializzare un OM XPS, che consente a un programma di creare un documento XPS.
 ms.assetid: 920d940f-5ae2-4376-8c7b-0cef04f21df7
 title: Inizializzare un OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cac44a69d171c1d38633512b0e275dcdeaea8738
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16edb992efee7c9cba1d5bc454ca5bcb44bd3267a2e91d4ca714120182df0657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946993"
 ---
 # <a name="initialize-an-xps-om"></a>Inizializzare un OM XPS
 
-Viene descritto come inizializzare un oggetto XPS OM, che consente a un programma di creare un documento XPS.
+Viene descritto come inizializzare un OM XPS, che consente a un programma di creare un documento XPS.
 
-Le interfacce dell'API documento XPS vengono create da un'interfaccia [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) . Per ottenere un puntatore a un **IXpsOMObjectFactory** che può essere usato nel programma, chiamare [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+Le interfacce dell'API documento XPS vengono create da [**un'interfaccia IXpsOMObjectFactory.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) Per ottenere un puntatore a **un oggetto IXpsOMObjectFactory** che può essere usato nel programma, chiamare [**CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 
-Prima di usare gli esempi di codice seguenti nel programma, leggere la dichiarazione di non responsabilità nelle [attività comuni di programmazione dei documenti XPS](common-xps-document-tasks.md).
+Prima di usare gli esempi di codice seguenti nel programma, leggere la dichiarazione di non responsabilità in [Common XPS Document Programming Tasks](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Esempio di codice
 
-Nell'esempio seguente viene creata la factory di oggetti che verrà utilizzata per creare interfacce XPS OM in altri esempi.
+Nell'esempio seguente viene creata l'object factory che verrà usata per creare interfacce OM XPS in altri esempi.
 
 
 ```C++
@@ -59,7 +59,7 @@ Nell'esempio seguente viene creata la factory di oggetti che verrà utilizzata p
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-È possibile rendere più efficiente il programma ottenendo un puntatore a un'interfaccia [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) la prima volta che è necessario chiamare **IXpsOMObjectFactory** per creare un'interfaccia e quindi salvare il puntatore per l'utilizzo in altre aree del programma. Quando il programma non necessita più dell'object factory o non lo richiede per un certo periodo di tempo, il puntatore può essere rilasciato.
+È possibile rendere il programma più efficiente ottenendo un puntatore a un'interfaccia [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) la prima volta che è necessario chiamare **IXpsOMObjectFactory** per creare un'interfaccia e quindi salvare il puntatore per l'uso in altre aree del programma. Quando l'object factory non è più necessaria o non è più necessaria per un periodo di tempo, il puntatore può essere rilasciato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -68,7 +68,7 @@ Nell'esempio seguente viene creata la factory di oggetti che verrà utilizzata p
 **Passaggi successivi**
 </dt> <dt>
 
-[Creazione di un OM XPS vuoto](create-a-blank-xps-om.md)
+[Creare un OM XPS vuoto](create-a-blank-xps-om.md)
 </dt> <dt>
 
 **Usato in questa sezione**
@@ -77,10 +77,10 @@ Nell'esempio seguente viene creata la factory di oggetti che verrà utilizzata p
 [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory)
 </dt> <dt>
 
-[**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+[**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
 [Packaging](/previous-versions/windows/desktop/opc/packaging)

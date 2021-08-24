@@ -1,9 +1,9 @@
 ---
 title: faceforward
-description: Capovolge la superficie normale, se necessario, in una direzione opposta a i; Restituisce il risultato in n.
+description: Capovolge la superficie normale (se necessario) per il viso in una direzione opposta a i; restituisce il risultato in n.
 ms.assetid: 6530a928-d221-49e4-ab68-6285c3db370f
 keywords:
-- HLSL faceforward
+- Faceforward HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,27 +13,27 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c6a3f035ed4f0d16b500864f941bc4fe5413ff54
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 253d581ef5ea2eddac55c63245039f1ccda6c0e73032468d1598fb919e850a18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104117934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950381"
 ---
 # <a name="faceforward"></a>faceforward
 
-Capovolge la superficie normale, se necessario, in una direzione opposta a i; Restituisce il risultato in n.
+Capovolge la superficie normale (se necessario) per il viso in una direzione opposta a i; restituisce il risultato in n.
 
 
 
-| faceforward *ret* (*n*, *i*, *ng*) |
+| *ret* faceforward(*n*, *i*, *ng*) |
 |-----------------------------------|
 
 
 
  
 
-Questa funzione usa la formula seguente:-*n*  Sign (dot (*i*, *ng*)).
+Questa funzione usa la formula seguente: -*n*  sign(dot(*i*, *ng*)).
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,9 +41,9 @@ Questa funzione usa la formula seguente:-*n*  Sign (dot (*i*, *ng*)).
 
 | Elemento                                                      | Descrizione                                                                                                     |
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <span id="n"></span><span id="N"></span>*n*<br/>    | \[nella \] superficie a virgola mobile risultante, vector normale.<br/>                                           |
-| <span id="i"></span><span id="I"></span>*i*<br/>    | \[in \] un vettore di evento imprevisto a virgola mobile che punta dalla posizione di visualizzazione alla posizione di ombreggiatura.<br/> |
-| <span id="ng"></span><span id="NG"></span>*ng*<br/> | \[in \] una superficie a virgola mobile-vettore normale.<br/>                                                       |
+| <span id="n"></span><span id="N"></span>*N*<br/>    | \[in \] Vettore normale della superficie a virgola mobile risultante.<br/>                                           |
+| <span id="i"></span><span id="I"></span>*Ho*<br/>    | \[in \] Un vettore di eventi imprevisti a virgola mobile che punta dalla posizione di visualizzazione alla posizione dell'ombreggiatura.<br/> |
+| <span id="ng"></span><span id="NG"></span>*Ng*<br/> | \[in \] Un vettore normale della superficie a virgola mobile.<br/>                                                       |
 
 
 
@@ -51,7 +51,7 @@ Questa funzione usa la formula seguente:-*n*  Sign (dot (*i*, *ng*)).
 
 ## <a name="return-value"></a>Valore restituito
 
-Vettore normale della superficie A virgola mobile che si trova verso la direzione della visualizzazione.
+Vettore normale della superficie a virgola mobile rivolto verso la direzione di visualizzazione.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -59,25 +59,25 @@ Vettore normale della superficie A virgola mobile che si trova verso la direzion
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *n*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *i*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *n* |
-| *ng*  | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *n*   |
-| *RET* | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *n*   |
+| *n*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *i*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *n* |
+| *Ng*  | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *n*   |
+| *Ret* | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *n*   |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato             |
 |------------------------------------------------------------------------------------|-----------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                   |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 e PS \_ 1 \_ 4 |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                   |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 e ps \_ 1 \_ 4 |
 
 
 

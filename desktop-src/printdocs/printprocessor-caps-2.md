@@ -1,7 +1,7 @@
 ---
-description: Rappresenta le informazioni sulla funzionalità della stampante.
+description: Rappresenta le informazioni sulle funzionalità della stampante.
 ms.assetid: 70120739-a4e0-4b87-ac7a-40a42fb509ee
-title: Struttura PRINTPROCESSOR_CAPS_2 (winspool. h)
+title: PRINTPROCESSOR_CAPS_2 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 1847ffa1912a8638476ce80dfbdb71c40fc376d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3425f9477b153721980e3bb44b919b0baea37aa645caea6a3ee328a9ff923eb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824732"
 ---
-# <a name="printprocessor_caps_2-structure"></a>\_Struttura PRINTPROCESSOR Caps \_ 2
+# <a name="printprocessor_caps_2-structure"></a>Struttura PRINTPROCESSOR \_ CAPS \_ 2
 
-Rappresenta le informazioni sulla funzionalità della stampante.
+Rappresenta le informazioni sulle funzionalità della stampante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,44 +50,44 @@ typedef struct _PRINTPROCESSOR_CAPS_2 {
 **dwLevel**
 </dt> <dd>
 
-Valore che indica il numero di versione della struttura.
+Valore che indica il numero di versione della struttura .
 
 </dd> <dt>
 
 **dwNupOptions**
 </dt> <dd>
 
-Maschera di bit che rappresenta i vari numeri di pagine del documento che la stampante è in grado di stampare su un solo lato di un foglio fisico. Il bit meno significativo rappresenta una pagina del documento per lato, il bit successivo rappresenta 2 pagine del documento per lato e così via. Ad esempio, 0x0000810B indica che la stampante supporta 1, 2, 4, 9 e 16 pagine documento per lato fisico.
+Maschera di bit che rappresenta i vari numeri di pagine del documento che la stampante può stampare su un singolo lato di un foglio fisico. Il bit meno significativo rappresenta una pagina del documento per lato, il bit successivo rappresenta 2 pagine di documento per lato e così via. Ad esempio, 0x0000810B la stampante supporta 1, 2, 4, 9 e 16 pagine di documento per lato fisico.
 
 </dd> <dt>
 
 **dwPageOrderFlags**
 </dt> <dd>
 
-Valore del flag che indica l'ordine in cui verranno stampate le pagine. Può essere stampa **normale \_**, **\_ Stampa inversa** o **opuscolo \_**.
+Valore del flag che indica l'ordine in cui verranno stampate le pagine. Può essere **NORMAL \_ PRINT,** **REVERSE \_ PRINT** o **BOOKLET \_ PRINT.**
 
 </dd> <dt>
 
 **dwNumberOfCopies**
 </dt> <dd>
 
-Numero massimo di copie che la stampante è in grado di gestire.
+Numero massimo di copie che la stampante può gestire.
 
 </dd> <dt>
 
 **dwNupDirectionCaps**
 </dt> <dd>
 
-Modelli disponibili quando più pagine del documento vengono stampate sullo stesso lato di un foglio di carta. I flag possibili sono i seguenti:
+I modelli disponibili quando più pagine del documento vengono stampate sullo stesso lato di un foglio di carta. I possibili flag sono i seguenti:
 
 
 
 | Valore                     | Significato                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
-| PPCAPS \_ subito \_ dopo \_ | Le pagine vengono visualizzate in righe da destra a sinistra, ogni riga successiva al di sotto del suo predecessore.                 |
-| PPCAPS \_ giù \_ a \_ destra | Le pagine vengono visualizzate in colonne dall'alto verso il basso, ciascuna colonna successiva a destra del relativo predecessore. |
-| PPCAPS verso il \_ \_ \_ basso  | Le pagine vengono visualizzate in righe da sinistra a destra, ogni riga successiva al di sotto del suo predecessore.                 |
-| PPCAPS \_ a \_ \_ sinistra  | Le pagine vengono visualizzate in colonne dall'alto verso il basso, ogni colonna successiva a sinistra del relativo predecessore.  |
+| PPCAPS \_ SUBITO \_ IN \_ BASSO | Le pagine vengono visualizzate in righe da destra a sinistra, ogni riga successiva sotto il predecessore.                 |
+| PPCAPS \_ VERSO IL BASSO E QUINDI A \_ \_ DESTRA | Le pagine vengono visualizzate in colonne dall'alto verso il basso, ogni colonna successiva a destra del predecessore. |
+| PPCAPS \_ VERSO SINISTRA E QUINDI VERSO IL \_ \_ BASSO  | Le pagine vengono visualizzate in righe da sinistra a destra, ogni riga successiva sotto il predecessore.                 |
+| PPCAPS \_ VERSO IL BASSO E QUINDI A \_ \_ SINISTRA  | Le pagine vengono visualizzate in colonne dall'alto verso il basso, ogni colonna successiva a sinistra del predecessore.  |
 
 
 
@@ -98,21 +98,21 @@ Modelli disponibili quando più pagine del documento vengono stampate sullo stes
 **dwNupBorderCaps**
 </dt> <dd>
 
-Può essere solo \_ Stampa bordo PPCAPS \_ , a indicare che, quando vengono stampate più pagine del documento su un solo lato di un foglio fisico, è possibile indicare alla stampante se stampare un bordo intorno all'area stampabile di ogni pagina del documento.
+Può essere solo PPCAPS BORDER PRINT, a indicare che, quando vengono stampate più pagine del documento su un singolo lato di un foglio fisico, alla stampante può essere indicato se stampare o meno un bordo intorno all'area stampabile di ogni pagina \_ \_ del documento.
 
 </dd> <dt>
 
 **dwBookletHandlingCaps**
 </dt> <dd>
 
-Può essere PPCAPS solo \_ per \_ il bordo dell'opuscolo, a indicare che la stampante può stampare lo stile del libretto.
+Può essere solo PPCAPS BOOKLET EDGE, a indicare che la \_ stampante può stampare lo stile del \_ libretto.
 
 </dd> <dt>**dwDuplexHandlingCaps**</dt> <dd> 
 
 | Valore                                         | Significato                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PPCAPS \_ le \_ pagine inverse \_ per \_ duplex invertito \_  | Quando si esegue la stampa in ordine inverso e duplexing, il processore può stampare lo swap dell'ordine di ogni coppia di pagine, quindi anziché stampare nell'ordine 4, 3, 2, 1, verranno stampate nell'ordine 3, 4, 1, 2.                                                                                                       |
-| PPCAPS \_ non \_ inviano \_ \_ pagine aggiuntive \_ per \_ duplex | Quando si esegue la duplexing, il processore di stampa può essere avvisato di non inviare una pagina aggiuntiva quando è presente un numero dispari di pagine documento. Il processore rispetterà il valore nel modo migliore possibile, ma nei casi in cui impedire una pagina vuota aggiuntiva potrebbe causare un output non corretto, le pagine aggiuntive potrebbero essere ancora inviate. |
+| PAGINE INVERSA PPCAPS \_ \_ PER IL \_ \_ \_ DUPLEX INVERSO  | Quando si stampa in ordine inverso e duplex, il processore può stampare scambiando l'ordine di ogni coppia di pagine, quindi anziché stampare nell'ordine 4,3,2,1, verranno stampati nell'ordine 3,4,1,2.                                                                                                       |
+| PPCAPS \_ NON INVIA PAGINE AGGIUNTIVE PER \_ \_ \_ \_ \_ DUPLEX | Quando si esegue il duplexing, al processore di stampa può essere detto di non inviare una pagina aggiuntiva quando è presente un numero dispari di pagine del documento. Il processore rispetta al meglio il valore possibile, ma nei casi in cui impedire una pagina vuota aggiuntiva causerebbe un output non corretto, le pagine aggiuntive potrebbero comunque essere inviate. |
 
 
 
@@ -123,15 +123,15 @@ Può essere PPCAPS solo \_ per \_ il bordo dell'opuscolo, a indicare che la stam
 **dwScalingCaps**
 </dt> <dd>
 
-Può essere PPCAPS solo \_ il \_ ridimensionamento quadrato, a indicare che la stampante può ridimensionare l'immagine della pagina.
+Può essere solo PPCAPS SQUARE SCALING, a indicare che \_ la stampante può \_ ridimensionare l'immagine della pagina.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori per tutti i membri della struttura sono forniti dalla funzione **GetPrintProcessorCapabilities** , documentata in Windows Driver Kit.
+I valori per tutti i membri della struttura vengono forniti dalla **funzione GetPrintProcessorCapabilities** documentata in Windows Driver Kit.
 
-Quando un'applicazione chiama [**GetPrinterData**](getprinterdata.md), lo spooler chiama la funzione **GetPrintProcessorCapabilities** di un processore di stampa e specifica un nome di valore con formato **PrintProcCaps \_**_DataType_, dove *DataType* è il nome di un tipo di dati di input.
+Quando un'applicazione chiama [**GetPrinterData,**](getprinterdata.md)lo spooler chiama la funzione **GetPrintProcessorCapabilities** di un processore di stampa e specifica un nome di valore con un formato di _tipo_ di dati **PrintProcCaps \_**, dove *tipo* di dati è il nome di un tipo di dati di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,9 +139,9 @@ Quando un'applicazione chiama [**GetPrinterData**](getprinterdata.md), lo spoole
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -152,7 +152,7 @@ Quando un'applicazione chiama [**GetPrinterData**](getprinterdata.md), lo spoole
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinterData**](getprinterdata.md)

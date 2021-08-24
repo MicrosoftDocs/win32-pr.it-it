@@ -1,11 +1,11 @@
 ---
-title: Struttura TSMF_SUPPORT_NODEDATA_OUT
-description: Usati all'interno \_ di TSMF supportano la \_ struttura dei dati \_ per contenere informazioni sui formati multimediali supportati.
+title: TSMF_SUPPORT_NODEDATA_OUT struttura
+description: Utilizzato all'interno della struttura TSMF \_ SUPPORT DATA OUT per \_ \_ contenere informazioni sui formati multimediali supportati.
 ms.assetid: cac0af9e-6750-4735-b075-46c77aea7d41
 ms.tgt_platform: multiple
 keywords:
-- Struttura TSMF_SUPPORT_NODEDATA_OUT Servizi Desktop remoto
-- Puntatore alla struttura PTSMF_SUPPORT_NODEDATA_OUT Servizi Desktop remoto
+- TSMF_SUPPORT_NODEDATA_OUT struttura Servizi Desktop remoto
+- PTSMF_SUPPORT_NODEDATA_OUT puntatore alla struttura Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 517170e9d6580f69b59f71e0994351ebe0484ddc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df3eb4c515963e13d2a7919c58a6d55ca4b2a7600c429a33516093215b5ac0eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869011"
 ---
-# <a name="tsmf_support_nodedata_out-structure"></a>TSMF \_ supporta \_ la \_ struttura NODEDATA out
+# <a name="tsmf_support_nodedata_out-structure"></a>Struttura \_ \_ NODEDATA OUT DI SUPPORTO TSMF \_
 
-Usati all'interno di [**TSMF supportano la struttura \_ \_ dei dati \_**](tsmf-support-data-out.md) per contenere informazioni sui formati multimediali supportati.
+Utilizzato all'interno [**della struttura TSMF \_ SUPPORT DATA \_ \_ OUT**](tsmf-support-data-out.md) per contenere informazioni sui formati multimediali supportati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct tagTSMF_SUPPORT_NODEDATA_OUT {
 
 <dl> <dt>
 
-**nodeId**
+**Nodeid**
 </dt> <dd>
 
 Nodo.
@@ -54,9 +54,9 @@ Nodo.
 **hrSupportStatus**
 </dt> <dd>
 
-Indica se il sink identificato dal parametro *clsidNewSink* è supportato.
+Indica se il sink identificato dal *parametro clsidNewSink* è supportato.
 
-I valori possibili sono.
+I valori possibili sono .
 
 <dt>
 
@@ -110,7 +110,7 @@ Indice in base zero del tipo di supporto supportato dal sink.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**TSMF \_ supporta \_ i dati in \_ uscita**](tsmf-support-data-out.md)
+[**TSMF \_ SUPPORT \_ DATA \_ OUT**](tsmf-support-data-out.md)
 </dt> </dl>
 
  
