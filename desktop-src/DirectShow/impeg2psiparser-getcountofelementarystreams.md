@@ -1,5 +1,5 @@
 ---
-description: "Metodo IMpeg2PsiParser::GetCountOfElementaryStreams: l'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata."
+description: "Metodo IMpeg2PsiParser::GetCountOfElementaryStreams: l'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API di DirectShow supportata."
 ms.assetid: 19ef96a8-3d5b-4da1-8cff-d6a271ad4915
 title: Metodo IMpeg2PsiParser::GetCountOfElementaryStreams
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: fc81c0a66751751a73a3895fd31fe8651aee8caf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e241697884a4b665c160dc9991e4cb7f02c76f1ba32bc7a0656515faf1117a58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767381"
 ---
 # <a name="impeg2psiparsergetcountofelementarystreams-method"></a>Metodo IMpeg2PsiParser::GetCountOfElementaryStreams
 
-L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API DirectShow supportata.
+L'implementazione di questo metodo viene fornita come codice di esempio con DirectShow SDK. Non è un'API di DirectShow supportata.
 
 Il `GetCountOfElementaryStreams` metodo recupera il numero di flussi elementari in un programma specificato.
 

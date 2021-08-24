@@ -1,19 +1,19 @@
 ---
-description: XMFLOAT4 descrive una struttura contenente un vettore 4D costituito da quattro valori a virgola mobile a precisione singola.
+description: XMFLOAT4 descrive una struttura contenente un vettore 4D costituito da quattro valori a virgola mobile e precisione singola.
 ms.assetid: 79c3abc5-1896-4c51-b6a9-a97031961e8e
 title: Estensioni XMFLOAT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db2b1d958c3ced24f791a6f6f9a02381ed218807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 739d47395e7b181fb559bb26b8b28cf9bbe482ce3c17151197024dacbfbd7b2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740630"
 ---
 # <a name="xmfloat4-extensions"></a>Estensioni XMFLOAT4
 
-[**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) descrive una struttura contenente un vettore 4D costituito da quattro valori a virgola mobile a precisione singola.
+[**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) descrive una struttura contenente un vettore 4D costituito da quattro valori a virgola mobile e precisione singola.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

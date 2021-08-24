@@ -1,50 +1,50 @@
 ---
-description: QueryAccept (upstream)
+description: QueryAccept (Upstream)
 ms.assetid: 3153e3a4-2227-4fdd-b2b0-218763013d2d
-title: QueryAccept (upstream)
+title: QueryAccept (Upstream)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7707c52d36c3d065c4a7277939f724aabdb73e46
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 65133e132a0e1c2e6880009eda8b56fde9bf77a8bc7d68a850a6f8963604aecd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747577"
 ---
-# <a name="queryaccept-upstream"></a>QueryAccept (upstream)
+# <a name="queryaccept-upstream"></a>QueryAccept (Upstream)
 
-Questo meccanismo consente a un pin di input di proporre una modifica di formato al peer upstream. Il filtro downstream deve alleghi un tipo di supporto all'esempio che il filtro upstream otterrà nella chiamata successiva a [**IMemAllocator:: GetBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer). A tale scopo, tuttavia, il filtro downstream deve fornire un allocatore personalizzato per la connessione. Questo allocatore deve implementare un metodo privato che il filtro downstream può utilizzare per impostare il tipo di supporto nell'esempio successivo.
+Questo meccanismo consente a un pin di input di proporre una modifica del formato al peer upstream. Il filtro downstream deve collegare un tipo di supporto all'esempio che il filtro upstream otterrà nella chiamata successiva a [**IMemAllocator::GetBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer). A tale scopo, tuttavia, il filtro downstream deve fornire un allocatore personalizzato per la connessione. Questo allocatore deve implementare un metodo privato che il filtro downstream può usare per impostare il tipo di supporto nell'esempio successivo.
 
 Si verificano i passaggi seguenti:
 
 1.  Il filtro downstream controlla se la connessione pin usa l'allocatore personalizzato del filtro. Se il filtro upstream è proprietario dell'allocatore, il filtro downstream non può modificare il formato.
-2.  Il filtro downstream chiama [**Ipin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) sul pin di output upstream (vedere la figura, passaggio A).
-3.  Se `QueryAccept` restituisce S \_ OK, il filtro downstream chiama il metodo privato sul relativo allocatore per impostare il tipo di supporto. All'interno di questo metodo privato, l'allocatore chiama [**IMediaSample:: SetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setmediatype) sul successivo esempio disponibile (B).
-4.  Il filtro upstream chiama **GetBuffer** per ottenere un nuovo esempio (C) e [**IMediaSample:: GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype) per ottenere il tipo di supporto (D).
-5.  Quando il filtro upstream recapita l'esempio, deve lasciare il tipo di supporto allegato a tale esempio. In questo modo, il filtro downstream può confermare che il tipo di supporto è stato modificato (E).
+2.  Il filtro downstream chiama [**IPin::QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) sul pin di output upstream (vedere la figura, passaggio A).
+3.  Se `QueryAccept` restituisce S \_ OK, il filtro downstream chiama il metodo privato sull'allocatore per impostare il tipo di supporto. All'interno di questo metodo privato, l'allocatore chiama [**IMediaSample::SetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setmediatype) nell'esempio disponibile successivo (B).
+4.  Il filtro upstream chiama **GetBuffer** per ottenere un nuovo esempio (C) e [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype) per ottenere il tipo di supporto (D).
+5.  Quando il filtro upstream recapita l'esempio, deve lasciare il tipo di supporto collegato a tale esempio. In questo modo, il filtro downstream può confermare che il tipo di supporto è stato modificato (E).
 
-Se il filtro upstream accetta la modifica del formato, deve anche essere in grado di tornare al tipo di supporto originale, come illustrato nella figura seguente.
+Se il filtro upstream accetta la modifica del formato, deve anche essere in grado di tornare al tipo di supporto originale, come illustrato nel diagramma seguente.
 
 ![queryaccept (upstream)](images/dynformat4.png)
 
-Gli esempi principali di questo tipo di modifica del formato coinvolgono i renderer video DirectShow.
+Gli esempi principali di questo tipo di modifica del formato coinvolgono DirectShow renderer video.
 
--   Il filtro [renderer video](video-renderer-filter.md) originale può spostarsi tra i tipi RGB e YUV durante il flusso. Quando il filtro si connette, è necessario un formato RGB che corrisponda alle impostazioni di visualizzazione correnti. In questo modo si garantisce che sia possibile eseguire il fallback su GDI se necessario. Dopo l'inizio del flusso, se è disponibile DirectDraw, il renderer video richiede una modifica del formato a un tipo YUV. In un secondo momento potrebbe tornare a RGB se la superficie DirectDraw viene persa per qualsiasi motivo.
--   Il nuovo filtro VMR (video Mixing Renderer) si connetterà con qualsiasi formato supportato dall'hardware grafico, inclusi i tipi YUV. Tuttavia, l'hardware grafico potrebbe modificare lo stride della superficie DirectDraw sottostante per ottimizzare le prestazioni. Il filtro VMR USA `QueryAccept` per segnalare la nuova stride, specificata nel membro **biWidth** della struttura **BITMAPINFOHEADER** . I rettangoli di origine e di destinazione nella struttura **VIDEOINFOHEADER** o **VIDEOINFOHEADER2** identificano l'area in cui il video deve essere decodificato.
+-   Il filtro [renderer video originale](video-renderer-filter.md) può passare da RGB a YUV durante lo streaming. Quando il filtro si connette, richiede un formato RGB che corrisponda alle impostazioni di visualizzazione correnti. In questo modo è possibile eseguire il fall back su GDI, se necessario. Dopo l'inizio dello streaming, se DirectDraw è disponibile, il renderer video richiede una modifica del formato a un tipo YUV. In un secondo momento, potrebbe tornare a RGB se perde la superficie directdraw per qualsiasi motivo.
+-   Il filtro vmr (Video Mixing Renderer) più recente si connetterà a qualsiasi formato supportato dall'hardware grafico, inclusi i tipi YUV. Tuttavia, l'hardware grafico potrebbe modificare lo stride della superficie DirectDraw sottostante per ottimizzare le prestazioni. Il filtro VMR usa per segnalare il nuovo stride, specificato nel membro `QueryAccept` **biWidth** della **struttura BITMAPINFOHEADER.** I rettangoli di origine e di destinazione nella struttura **VIDEOINFOHEADER** o **VIDEOINFOHEADER2** identificano l'area in cui deve essere decodificato il video.
 
 **Nota sull'implementazione**
 
-È improbabile che si scriva un filtro che deve richiedere modifiche al formato upstream, poiché si tratta principalmente di una funzionalità dei renderer di video. Tuttavia, se si scrive un filtro di trasformazione video o un decodificatore video, è necessario che il filtro risponda correttamente alle richieste dal renderer video.
+È improbabile che si scriverà un filtro che deve richiedere modifiche al formato upstream, poiché si tratta principalmente di una funzionalità dei renderer video. Tuttavia, se si scrive un filtro di trasformazione video o un decodificatore video, il filtro deve rispondere correttamente alle richieste del renderer video.
 
-Un filtro Trans-on-Place che si trova tra il renderer video e il decodificatore deve passare tutte le `QueryAccept` chiamate upstream. Archiviare le nuove informazioni sul formato al suo arrivo.
+Un filtro trans-in-place che si trova tra il renderer video e il decodificatore deve passare tutte le `QueryAccept` chiamate a monte. Archiviare le nuove informazioni sul formato all'arrivo.
 
-Un filtro per la trasformazione copia, ovvero un filtro non trans-on-Place, deve implementare uno dei comportamenti seguenti:
+Un filtro di copia-trasformazione, ovvero un filtro non trans-in-place, deve implementare uno dei comportamenti seguenti:
 
--   Il formato del passaggio passa a Monte e archivia le nuove informazioni sul formato al suo arrivo. Il filtro deve usare un allocatore personalizzato per poter alleghiare il formato all'esempio upstream.
--   Eseguire la conversione del formato all'interno del filtro. Questa operazione è probabilmente più semplice rispetto alla modifica del formato a Monte. Tuttavia, potrebbe essere meno efficiente rispetto a consentire al filtro del decodificatore di decodificare il formato corretto.
--   Come ultima risorsa, è sufficiente rifiutare la modifica del formato. Per ulteriori informazioni, fare riferimento al codice sorgente per il metodo [**CTransInPlaceOutputPin:: CheckMediaType**](ctransinplaceoutputpin-checkmediatype.md) nella libreria di classi base DirectShow. Il rifiuto di una modifica di formato può tuttavia ridurre le prestazioni, perché impedisce al renderer video di usare il formato più efficiente.
+-   Passare le modifiche del formato a monte e archiviare le nuove informazioni sul formato all'arrivo. Il filtro deve usare un allocatore personalizzato in modo che possa collegare il formato all'esempio upstream.
+-   Eseguire la conversione del formato all'interno del filtro. Questo è probabilmente più semplice rispetto al passaggio della modifica del formato a monte. Tuttavia, potrebbe essere meno efficiente rispetto all'uso della decodifica del filtro decodificatore nel formato corretto.
+-   Come ultima risorsa, è sufficiente rifiutare la modifica del formato. Per altre informazioni, vedere il codice sorgente per il metodo [**CTransInPlaceOutputPin::CheckMediaType**](ctransinplaceoutputpin-checkmediatype.md) nella libreria DirectShow di classi di base. Il rifiuto di una modifica del formato può tuttavia ridurre le prestazioni, perché impedisce al renderer video di usare il formato più efficiente.
 
-Lo pseudo codice seguente mostra come implementare un filtro di copia/trasformazione (derivato da **CTransformFilter**) che può passare tra i tipi di output YUV e RGB. In questo esempio si presuppone che il filtro esegue la conversione stessa, anziché passare la modifica del formato upstream.
+Lo pseudocodice seguente illustra come implementare un filtro di copia-trasformazione (derivato da **CTransformFilter**) in grado di passare tra i tipi di output YUV e RGB. In questo esempio si presuppone che il filtro esempli la conversione stessa, anziché passare la modifica del formato a monte.
 
 
 ```C++

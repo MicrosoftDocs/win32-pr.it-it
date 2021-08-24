@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ModifyResourceSettings della classe CIM_VirtualSystemManagementService: modifica le impostazioni delle risorse virtuali.'
+description: 'Metodo ModifyResourceSettings della classe CIM_VirtualSystemManagementService : modifica le impostazioni delle risorse virtuali.'
 ms.assetid: 4942f167-0e53-4ae2-b973-4a06b636b44a
 title: Metodo ModifyResourceSettings della classe CIM_VirtualSystemManagementService
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 26971c80ce6f7d0ffcdcef069d76aef5fdc15138
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc001d87a95e54682f6b6b4ffdecd3c53d3288b58a6dcb5b6e9a8a4d2dc528e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682731"
 ---
 # <a name="modifyresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo ModifyResourceSettings della classe \_ CIM VirtualSystemManagementService
 
 Modifica le impostazioni delle risorse virtuali.
 
-Se applicato a parti di una configurazione del sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere modificate.
+Se applicato a parti di una configurazione di sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere modificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ uint32 ModifyResourceSettings(
 *ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe ognuna delle quali contiene un'istanza incorporata della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che descrive le modifiche agli aspetti virtuali di una risorsa virtuale esistente. Tutte le istanze devono avere un **InstanceID valido** per identificare l'impostazione della risorsa virtuale da modificare.
+Matrice di stringhe contenente ognuna un'istanza incorporata della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che descrive le modifiche agli aspetti virtuali di una risorsa virtuale esistente. Tutte le istanze devono avere un **InstanceID valido** per identificare l'impostazione della risorsa virtuale da modificare.
 
 </dd> <dt>
 
@@ -66,11 +66,11 @@ Se l'operazione è a esecuzione lunga, facoltativamente viene restituito un proc
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -82,7 +82,7 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non** valido (4)
+**Parametro non valido** (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -110,7 +110,7 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

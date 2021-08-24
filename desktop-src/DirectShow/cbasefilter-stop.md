@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo Stop arresta il filtro. Questo metodo implementa il metodo IMediaFilter:: stop.'
+description: Il metodo Stop arresta il filtro. Questo metodo implementa il metodo IMediaFilter::Stop.
 ms.assetid: 68d77f9a-95a2-4a71-bbe1-28be76fbc538
-title: Metodo CBaseFilter. Stop (Amfilter. h)
+title: Metodo CBaseFilter.Stop (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b4c4893edcf02fa18da3dc207a49f87c91b2a9ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 659ad34c01ca6c74a24f6bbf5f5bef42df46f94f06b7e03541f9caf3398b39e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768191"
 ---
-# <a name="cbasefilterstop-method"></a>Metodo CBaseFilter. Stop
+# <a name="cbasefilterstop-method"></a>Metodo CBaseFilter.Stop
 
-Il `Stop` metodo interrompe il filtro. Questo metodo implementa il metodo [**IMediaFilter:: Stop**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop) .
+Il `Stop` metodo arresta il filtro. Questo metodo implementa il [**metodo IMediaFilter::Stop.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**CBasePin:: inactive**](cbasepin-inactive.md) su ognuno dei pin connessi del filtro. Imposta anche lo stato del filtro sullo stato \_ arrestato.
+Questo metodo chiama il [**metodo CBasePin::Inactive**](cbasepin-inactive.md) su ognuno dei pin connessi del filtro. Imposta anche lo stato del filtro su Stato \_ arrestato.
 
-Quando il filtro si interrompe, deve rifiutare esempi da upstream, interrompere la distribuzione di campioni a valle, arrestare i thread di lavoro e liberare le risorse usate per lo streaming.
+Quando il filtro si arresta, deve rifiutare gli esempi da upstream, interrompere la distribuzione degli esempi a valle, arrestare i thread di lavoro e liberare le risorse usate per lo streaming.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Quando il filtro si interrompe, deve rifiutare esempi da upstream, interrompere 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

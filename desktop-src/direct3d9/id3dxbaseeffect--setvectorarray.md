@@ -1,7 +1,7 @@
 ---
 description: Imposta una matrice di vettori.
 ms.assetid: 7a9c61b4-7bfc-4879-abd2-a42d40e9b2a7
-title: 'Metodo ID3DXBaseEffect:: SetVectorArray (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetVectorArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 4c5deace65608ee547b8fdcc4fb236b11d38c810
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 79018873b512b54277f2b63da23a9360389e10b32672be59807e7ef47c9884f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790641"
 ---
-# <a name="id3dxbaseeffectsetvectorarray-method"></a>Metodo ID3DXBaseEffect:: SetVectorArray
+# <a name="id3dxbaseeffectsetvectorarray-method"></a>Metodo ID3DXBaseEffect::SetVectorArray
 
 Imposta una matrice di vettori.
 
@@ -42,28 +42,28 @@ HRESULT SetVectorArray(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pVector* \[ in\]
+*pVector* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Matrice di vettori di punti a virgola mobile 4D.
+Matrice di vettori a virgola mobile 4D.
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di vettori nella matrice.
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Se i vettori di destinazione sono inferiori ai vettori di origine, i componenti aggiuntivi dei vettori di origine verranno ignorati.
+Se i vettori di destinazione sono più piccoli dei vettori di origine, i componenti aggiuntivi dei vettori di origine verranno ignorati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Se i vettori di destinazione sono inferiori ai vettori di origine, i componenti 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

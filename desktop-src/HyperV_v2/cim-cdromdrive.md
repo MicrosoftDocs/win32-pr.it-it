@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le funzionalità e la gestione di un'unità CD ROM.
 ms.assetid: 937be389-11f8-4298-92c8-4bf67a36fb16
-title: Classe CIM_CDROMDrive (gestione Hyper-V)
+title: CIM_CDROMDrive classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1f1910fbdbf71d1fea69d394fb4d0c374a2917df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4d8d6db34a516fa540b9a3c7bd926a3ce26fa270bad623a11c3ef9c9e8fb38c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790591"
 ---
-# <a name="cim_cdromdrive-class-hyper-v-management"></a>Classe CIM_CDROMDrive (gestione Hyper-V)
+# <a name="cim_cdromdrive-class-hyper-v-management"></a>CIM_CDROMDrive classe (gestione Hyper-V)
 
 Rappresenta le funzionalità e la gestione di un'unità CD ROM.
 
@@ -35,7 +35,7 @@ class CIM_CDROMDrive : CIM_MediaAccessDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ CDROMDrive** non definisce membri.
+La **classe \_ CIM CDROMDrive** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,9 +44,9 @@ La classe **CIM \_ CDROMDrive** non definisce membri.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ La classe **CIM \_ CDROMDrive** non definisce membri.
 
 <dl> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> </dl>
 
  

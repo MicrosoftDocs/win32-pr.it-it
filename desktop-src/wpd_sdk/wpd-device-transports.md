@@ -1,7 +1,7 @@
 ---
-description: Il \_ \_ tipo di enumerazione trasporti dispositivi WPD specifica la relazione di ereditarietà per un servizio. Questa enumerazione viene utilizzata dalla proprietà di \_ trasporto del dispositivo WPD \_ .
+description: Il tipo di enumerazione \_ WPD DEVICE \_ TRANSPORTS specifica la relazione di ereditarietà per un servizio. Questa enumerazione viene usata dalla proprietà \_ WPD DEVICE \_ TRANSPORT.
 ms.assetid: a9d48034-3588-4e48-a03a-91cbe679cbc9
-title: Enumerazione WPD_DEVICE_TRANSPORTS (PortableDevice. h)
+title: WPD_DEVICE_TRANSPORTS enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 574c6b0b00980d110f2374e7426dd101c9122854
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f091a84c573038c7d74cf5c2760c298a2542f70f06bdb45d1e72954c9dd5f25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703821"
 ---
-# <a name="wpd_device_transports-enumeration"></a>\_ \_ Enumerazione trasporti dispositivi WPD
+# <a name="wpd_device_transports-enumeration"></a>Enumerazione \_ TRANSPORTS DEL DISPOSITIVO WPD \_
 
-Il tipo di enumerazione [**\_ \_ trasporti dispositivi WPD**](/windows/desktop/wpd_sdk/wpd-device-transports) specifica la relazione di ereditarietà per un servizio. Questa enumerazione viene utilizzata dalla proprietà **di \_ \_ trasporto del dispositivo WPD** .
+Il [**tipo di enumerazione WPD DEVICE \_ \_ TRANSPORTS**](/windows/desktop/wpd_sdk/wpd-device-transports) specifica la relazione di ereditarietà per un servizio. Questa enumerazione viene usata dalla **proprietà \_ WPD DEVICE \_ TRANSPORT.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ typedef enum tagWPD_DEVICE_TRANSPORTS {
 
 <dl> <dt>
 
-<span id="WPD_DEVICE_TRANSPORT_UNSPECIFIED"></span><span id="wpd_device_transport_unspecified"></span>**WPD \_ trasporto dispositivo non \_ \_ specificato**
+<span id="WPD_DEVICE_TRANSPORT_UNSPECIFIED"></span><span id="wpd_device_transport_unspecified"></span>**WPD \_ DEVICE \_ TRANSPORT UNSPECIFIED (TRASPORTO DI DISPOSITIVI WPD \_ NON SPECIFICATO)**
 </dt> <dd>
 
-Tipo di trasporto non specificato.
+Il tipo di trasporto non è stato specificato.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TRANSPORT_USB"></span><span id="wpd_device_transport_usb"></span>**\_ \_ USB trasporto dispositivi \_ WPD**
+<span id="WPD_DEVICE_TRANSPORT_USB"></span><span id="wpd_device_transport_usb"></span>**WPD \_ DEVICE \_ TRANSPORT \_ USB**
 </dt> <dd>
 
 Il dispositivo è connesso tramite USB.
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TRANSPORT_IP"></span><span id="wpd_device_transport_ip"></span>**\_ \_ IP trasporto dispositivi \_ WPD**
+<span id="WPD_DEVICE_TRANSPORT_IP"></span><span id="wpd_device_transport_ip"></span>**IP DI TRASPORTO DEL DISPOSITIVO WPD \_ \_ \_**
 </dt> <dd>
 
-Il dispositivo è connesso tramite Internet Protocol (IP).
+Il dispositivo è connesso tramite IP (Internet Protocol).
 
 </dd> <dt>
 
-<span id="WPD_DEVICE_TRANSPORT_BLUETOOTH"></span><span id="wpd_device_transport_bluetooth"></span>**\_ \_ Bluetooth trasporto dispositivi \_ WPD**
+<span id="WPD_DEVICE_TRANSPORT_BLUETOOTH"></span><span id="wpd_device_transport_bluetooth"></span>**BLUETOOTH PER IL \_ TRASPORTO \_ DI DISPOSITIVI \_ WPD**
 </dt> <dd>
 
 Il dispositivo è connesso tramite Bluetooth.
@@ -76,7 +76,7 @@ Il dispositivo è connesso tramite Bluetooth.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

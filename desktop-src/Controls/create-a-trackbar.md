@@ -1,36 +1,36 @@
 ---
-title: Come creare un TrackBar
-description: Quando viene creato il TrackBar, viene inizializzato sia l'intervallo che l'intervallo di selezione. Anche le dimensioni della pagina sono impostate in questo momento.
+title: Come creare un trackbar
+description: Quando viene creato il trackbar, vengono inizializzati sia l'intervallo che l'intervallo di selezione. Al momento vengono impostate anche le dimensioni della pagina.
 ms.assetid: FA110B4A-D3D7-49D8-A3DC-368099F6DA1E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9468ff044b94837f54d04cda4a9105f15410692
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71713e09167812786a5d5f57986242ef5fcf016931cdff40d5190cd6e0daafea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826551"
 ---
-# <a name="how-to-create-a-trackbar"></a>Come creare un TrackBar
+# <a name="how-to-create-a-trackbar"></a>Come creare un trackbar
 
-Quando viene creato il TrackBar, viene inizializzato sia l'intervallo che l'intervallo di selezione. Anche le dimensioni della pagina sono impostate in questo momento.
+Quando viene creato il trackbar, vengono inizializzati sia l'intervallo che l'intervallo di selezione. Al momento vengono impostate anche le dimensioni della pagina.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="create-a-trackbar"></a>Creare un TrackBar
+### <a name="create-a-trackbar"></a>Creare un trackbar
 
-Nell'esempio seguente viene illustrato come creare un TrackBar con gli [**stili \_ TBS**](trackbar-control-styles.md) [**\_ autoENABLESELRANGE e TBS**](trackbar-control-styles.md) .
+L'esempio seguente illustra come creare un trackbar con gli stili [**TBS \_ AUTOTICKS**](trackbar-control-styles.md) e [**\_ TBS ENABLESELRANGE.**](trackbar-control-styles.md)
 
 
 ```
@@ -92,12 +92,12 @@ HWND WINAPI CreateTrackbar(
 
 <dl> <dt>
 
-[Uso di controlli TrackBar](using-trackbar-controls.md)
+[Uso dei controlli Trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

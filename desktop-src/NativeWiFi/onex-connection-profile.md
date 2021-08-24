@@ -1,7 +1,7 @@
 ---
-description: Contiene informazioni sul profilo di connessione 802.1 X attualmente utilizzato per l'autenticazione 802.1 X.
+description: Contiene informazioni sul profilo di connessione 802.1X attualmente usato per l'autenticazione 802.1X.
 ms.assetid: ec494c74-bc79-445a-8889-a6f441e95ac5
-title: Struttura ONEX_CONNECTION_PROFILE
+title: ONEX_CONNECTION_PROFILE struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 21e02a1f09d3439c64fb8124cd0cfc8140732be9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 500e714b6f0728104987f53ff0a8c0e7083c1af5996679a78a986b5674d54514
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684891"
 ---
-# <a name="onex_connection_profile-structure"></a>Struttura del profilo di \_ connessione Onex \_
+# <a name="onex_connection_profile-structure"></a>Struttura ONEX \_ CONNECTION \_ PROFILE
 
-La struttura del **\_ \_ profilo di connessione Onex** contiene informazioni sul profilo di connessione 802.1 x attualmente utilizzato per l'autenticazione 802.1 x.
+La **struttura ONEX \_ CONNECTION \_ PROFILE** contiene informazioni sul profilo di connessione 802.1X attualmente usato per l'autenticazione 802.1X.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,120 +66,120 @@ typedef struct _ONEX_CONNECTION_PROFILE {
 **dwVersion**
 </dt> <dd>
 
-Versione della struttura del **\_ \_ profilo di connessione Onex** .
+Versione di questa **struttura ONEX \_ CONNECTION \_ PROFILE.**
 
 </dd> <dt>
 
 **dwTotalLen**
 </dt> <dd>
 
-Lunghezza, in byte, della struttura del **\_ \_ profilo di connessione Onex** .
+Lunghezza, in byte, della struttura **ONEX \_ CONNECTION \_ PROFILE.**
 
 </dd> <dt>
 
 **fOneXSupplicantFlags**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwOneXSupplicantFlags** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwOneXSupplicantFlags.**
 
 </dd> <dt>
 
 **fsupplicantMode**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **supplicantMode** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro supplicantMode.**
 
 </dd> <dt>
 
 **fauthMode**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **AuthMode** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro authMode.**
 
 </dd> <dt>
 
 **fHeldPeriod**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwHeldPeriod** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwHeldPeriod.**
 
 </dd> <dt>
 
 **fAuthPeriod**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwAuthPeriod** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwAuthPeriod.**
 
 </dd> <dt>
 
 **fStartPeriod**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwStartPeriod** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwStartPeriod.**
 
 </dd> <dt>
 
 **fMaxStart**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwMaxStart** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwMaxStart.**
 
 </dd> <dt>
 
 **fMaxAuthFailures**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwMaxAuthFailures** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwMaxAuthFailures.**
 
 </dd> <dt>
 
 **fNetworkAuthTimeout**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwNetworkAuthTimeout** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwNetworkAuthTimeout.**
 
 </dd> <dt>
 
 **fAllowLogonDialogs**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **bAllowLogonDialogs** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro bAllowLogonDialogs.**
 
 </dd> <dt>
 
 **fNetworkAuthWithUITimeout**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **dwNetworkAuthWithUITimeout** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro dwNetworkAuthWithUITimeout.**
 
 </dd> <dt>
 
 **fUserBasedVLan**
 </dt> <dd>
 
-Indica se la struttura del **\_ \_ profilo di connessione Onex** contiene dati validi nel membro **bUserBasedVLan** .
+Indica se la **struttura ONEX \_ CONNECTION \_ PROFILE** contiene dati validi nel **membro bUserBasedVLan.**
 
 </dd> <dt>
 
 **dwOneXSupplicantFlags**
 </dt> <dd>
 
-Set di flag 802.1 X che possono essere presenti nel profilo. Questi flag sono riservati per uso interno da parte del modulo di autenticazione 802.1 X.
+Set di flag 802.1X che possono essere presenti nel profilo. Questi flag sono riservati per l'uso interno da parte del modulo di autenticazione 802.1X.
 
 </dd> <dt>
 
 **supplicantMode**
 </dt> <dd>
 
-Elemento supplicantMode nello schema 802.1 X che specifica il metodo di trasmissione utilizzato per i messaggi di EAPOL-Start. Per ulteriori informazioni, vedere l' [**elemento supplicantMode (Onex)**](onexschema-supplicantmode-onex-element.md) nello schema 802.1 x.
+Elemento supplicantMode nello schema 802.1X che specifica il metodo di trasmissione usato per EAPOL-Start messaggi. Per altre informazioni, vedere l'elemento [**supplicantMode (OneX)**](onexschema-supplicantmode-onex-element.md) nello schema 802.1X.
 
 
 
 | Valore                                                                                                                                                                                                                                                                                                                                               | Significato                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OneXSupplicantModeInhibitTransmission"></span><span id="onexsupplicantmodeinhibittransmission"></span><span id="ONEXSUPPLICANTMODEINHIBITTRANSMISSION"></span><dl> <dt>**OneXSupplicantModeInhibitTransmission**</dt> <dt>0</dt> </dl> | EAPOL-Start messaggi non vengono trasmessi. Valido solo per i profili LAN cablati.<br/>                                                                                             |
-| <span id="OneXSupplicantModeLearn"></span><span id="onexsupplicantmodelearn"></span><span id="ONEXSUPPLICANTMODELEARN"></span><dl> <dt>**OneXSupplicantModeLearn**</dt> <dt>1</dt> </dl>                                                         | Il client determina quando inviare pacchetti di EAPOL-Start in base alla funzionalità di rete. EAPOL-Start messaggi vengono inviati solo quando richiesto. Valido solo per i profili LAN cablati.<br/> |
-| <span id="OneXSupplicantModeCompliant"></span><span id="onexsupplicantmodecompliant"></span><span id="ONEXSUPPLICANTMODECOMPLIANT"></span><dl> <dt>**OneXSupplicantModeCompliant**</dt> <dt>2</dt> </dl>                                         | EAPOL-Start messaggi vengono trasmessi come specificato da 802.1 X. Valido per i profili LAN cablati e wireless.<br/>                                                             |
+| <span id="OneXSupplicantModeLearn"></span><span id="onexsupplicantmodelearn"></span><span id="ONEXSUPPLICANTMODELEARN"></span><dl> <dt>**OneXSupplicantModeLearn**</dt> <dt>1</dt> </dl>                                                         | Il client determina quando inviare EAPOL-Start pacchetti in base alla funzionalità di rete. EAPOL-Start messaggi vengono inviati solo quando necessario. Valido solo per i profili LAN cablati.<br/> |
+| <span id="OneXSupplicantModeCompliant"></span><span id="onexsupplicantmodecompliant"></span><span id="ONEXSUPPLICANTMODECOMPLIANT"></span><dl> <dt>**OneXSupplicantModeCompliant**</dt> <dt>2</dt> </dl>                                         | EAPOL-Start messaggi vengono trasmessi come specificato da 802.1X. Valido per i profili LAN cablati e wireless.<br/>                                                             |
 
 
 
@@ -187,10 +187,10 @@ Elemento supplicantMode nello schema 802.1 X che specifica il metodo di trasmiss
 
 </dd> <dt>
 
-**authMode**
+**Authmode**
 </dt> <dd>
 
-Elemento authMode nello schema 802.1 X che specifica il tipo di credenziali utilizzate per l'autenticazione 802.1 X. Per ulteriori informazioni, vedere l' [**elemento authMode (Onex)**](onexschema-authmode-onex-element.md) nello schema 802.1 x.
+Elemento authMode nello schema 802.1X che specifica il tipo di credenziali usate per l'autenticazione 802.1X. Per altre informazioni, vedere [**l'elemento authMode (OneX)**](onexschema-authmode-onex-element.md) nello schema 802.1X.
 
 
 
@@ -199,8 +199,8 @@ Elemento authMode nello schema 802.1 X che specifica il tipo di credenziali util
 | <span id="OneXAuthModeMachineOrUser"></span><span id="onexauthmodemachineoruser"></span><span id="ONEXAUTHMODEMACHINEORUSER"></span><dl> <dt>**OneXAuthModeMachineOrUser**</dt> <dt>0</dt> </dl> | Usare le credenziali del computer o dell'utente. Quando un utente è connesso, le credenziali dell'utente vengono usate per l'autenticazione. Quando nessun utente è connesso, vengono usate le credenziali del computer.<br/> |
 | <span id="OneXAuthModeMachineOnly"></span><span id="onexauthmodemachineonly"></span><span id="ONEXAUTHMODEMACHINEONLY"></span><dl> <dt>**OneXAuthModeMachineOnly**</dt> <dt>1</dt> </dl>         | Usare solo le credenziali del computer.<br/>                                                                                                                                           |
 | <span id="OneXAuthModeUserOnly"></span><span id="onexauthmodeuseronly"></span><span id="ONEXAUTHMODEUSERONLY"></span><dl> <dt>**OneXAuthModeUserOnly**</dt> <dt>2</dt> </dl>                     | Usare solo le credenziali utente.<br/>                                                                                                                                              |
-| <span id="OneXAuthModeGuest"></span><span id="onexauthmodeguest"></span><span id="ONEXAUTHMODEGUEST"></span><dl> <dt>**OneXAuthModeGuest**</dt> <dt>3</dt> </dl>                                 | Utilizzare solo le credenziali Guest (vuote).<br/>                                                                                                                                     |
-| <span id="OneXAuthModeUnspecified"></span><span id="onexauthmodeunspecified"></span><span id="ONEXAUTHMODEUNSPECIFIED"></span><dl> <dt>**OneXAuthModeUnspecified**</dt> <dt>4</dt> </dl>         | Non sono state specificate le credenziali da usare.<br/>                                                                                                                                   |
+| <span id="OneXAuthModeGuest"></span><span id="onexauthmodeguest"></span><span id="ONEXAUTHMODEGUEST"></span><dl> <dt>**OneXAuthModeGuest**</dt> <dt>3</dt> </dl>                                 | Usare solo credenziali guest (vuote).<br/>                                                                                                                                     |
+| <span id="OneXAuthModeUnspecified"></span><span id="onexauthmodeunspecified"></span><span id="ONEXAUTHMODEUNSPECIFIED"></span><dl> <dt>**OneXAuthModeUnspecified**</dt> <dt>4</dt> </dl>         | Le credenziali da utilizzare non sono specificate.<br/>                                                                                                                                   |
 
 
 
@@ -211,79 +211,79 @@ Elemento authMode nello schema 802.1 X che specifica il tipo di credenziali util
 **dwHeldPeriod**
 </dt> <dd>
 
-Elemento heldPeriod nello schema 802.1 X che specifica il periodo di tempo, in secondi, in cui un client non tenterà di nuovo l'autenticazione dopo un tentativo di autenticazione non riuscito. Per ulteriori informazioni, vedere l' [**elemento heldPeriod (Onex)**](onexschema-heldperiod-onex-element.md) nello schema 802.1 x.
+Elemento heldPeriod nello schema 802.1X che specifica l'intervallo di tempo, in secondi, durante il quale un client non tenterà nuovamente l'autenticazione dopo un tentativo di autenticazione non riuscito. Per altre informazioni, vedere [**l'elemento heldPeriod (OneX)**](onexschema-heldperiod-onex-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwAuthPeriod**
 </dt> <dd>
 
-Elemento authPeriod nello schema 802.1 X che specifica il periodo di tempo massimo, in secondi, in cui un client attende una risposta dall'autenticatore. Se non viene ricevuta una risposta entro il periodo specificato, il client presuppone che non sia presente alcun autenticatore nella rete. Per ulteriori informazioni, vedere l' [**elemento authPeriod (Onex)**](onexschema-authperiod-onex-element.md) nello schema 802.1 x.
+Elemento authPeriod nello schema 802.1X che specifica la durata massima, in secondi, in cui un client attende una risposta dall'autenticatore. Se una risposta non viene ricevuta entro il periodo specificato, il client presuppone che nella rete non sia presente alcun autenticatore. Per altre informazioni, vedere [**l'elemento authPeriod (OneX)**](onexschema-authperiod-onex-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwStartPeriod**
 </dt> <dd>
 
-Elemento startPeriod nello schema 802.1 X che specifica il periodo di tempo, in secondi, di attesa prima dell'invio di un EAPOL-Start. Viene inviato un messaggio di EAPOL-Start per avviare il processo di autenticazione 802.1 X. Per ulteriori informazioni, vedere l' [**elemento startPeriod (Onex)**](onexschema-startperiod-onex-element.md) nello schema 802.1 x.
+Elemento startPeriod nello schema 802.1X che specifica l'intervallo di tempo, in secondi, di attesa prima dell'invio EAPOL-Start un'istanza. Viene EAPOL-Start un messaggio di errore per avviare il processo di autenticazione 802.1X. Per altre informazioni, vedere [**l'elemento startPeriod (OneX)**](onexschema-startperiod-onex-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwMaxStart**
 </dt> <dd>
 
-Elemento maxStart nello schema 802.1 X che specifica il numero massimo di messaggi di EAPOL-Start inviati. Una volta inviato il numero massimo di EAPOL-Start messaggi, il client presuppone che non sia presente alcun autenticatore nella rete. Per ulteriori informazioni, vedere l' [**elemento maxStart (Onex)**](onexschema-maxstart-onex-element.md) nello schema 802.1 x.
+Elemento maxStart nello schema 802.1X che specifica il numero massimo di EAPOL-Start inviati. Dopo l'invio EAPOL-Start numero massimo di messaggi, il client presuppone che nella rete non sia presente alcun autenticatore. Per altre informazioni, vedere [**l'elemento maxStart (OneX)**](onexschema-maxstart-onex-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwMaxAuthFailures**
 </dt> <dd>
 
-Elemento maxAuthFailures nello schema 802.1 X che specifica il numero massimo di errori di autenticazione consentiti per un set di credenziali. Per ulteriori informazioni, vedere l'elemento [**maxAuthFailures (Onex)**](onexschema-maxauthfailures-onex-element.md) nello schema 802.1 x.
+Elemento maxAuthFailures nello schema 802.1X che specifica il numero massimo di errori di autenticazione consentiti per un set di credenziali. Per altre informazioni, vedere [**l'elemento maxAuthFailures (OneX)**](onexschema-maxauthfailures-onex-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwNetworkAuthTimeout**
 </dt> <dd>
 
-Tempo di attesa, in secondi, per il completamento dell'autenticazione 802.1 X prima di procedere con l'accesso normale. Questo valore viene utilizzato in scenari Single Sign-on (SSO). Il valore predefinito è 10 secondi in un profilo 802.1 X. Per ulteriori informazioni, vedere l' [**elemento maxDelay (singleSignOn)**](onexschema-maxdelay-singlesignon-element.md) nello schema 802.1 x.
+Tempo di attesa, in secondi, per il completamento dell'autenticazione 802.1X prima che l'accesso normale proceda. Questo valore viene usato in scenari single sign-on (SSO). Il valore predefinito è 10 secondi in un profilo 802.1X. Per altre informazioni, vedere [**l'elemento maxDelay (singleSignOn)**](onexschema-maxdelay-singlesignon-element.md) nello schema 802.1X.
 
 </dd> <dt>
 
 **dwNetworkAuthWithUITimeout**
 </dt> <dd>
 
-Tempo massimo di attesa, in secondi, per la connessione, nel caso in cui venga visualizzata una finestra di dialogo dell'interfaccia utente che richiede l'input dell'utente durante l'accesso SSO per accesso.
+Durata massima, in secondi, di attesa di una connessione nel caso in cui una finestra di dialogo dell'interfaccia utente che richiede l'input dell'utente sia visualizzata durante l'accesso SSO per accesso.
 
-In Windows Vista con SP1 e versioni successive questo valore è hardcoded a 10 minuti e non è configurabile. In Windows Vista Release to Manufacturing, questo valore viene impostato su 60 secondi in un profilo 802.1 X e controllato dall'elemento **maxDelayWithAdditionalDialogs** nello schema.
+In Windows Vista con SP1 e versioni successive, questo valore è hardcoded a 10 minuti e non è configurabile. In Windows Vista Release to Manufacturing questo valore predefinito è 60 secondi in un profilo 802.1X ed è stato controllato dall'elemento **maxDelayWithAdditionalDialogs** nello schema.
 
-In Windows Vista con SP1 e versioni successive, l'elemento **maxDelayWithAdditionalDialogs** nello schema 802.1 x viene ignorato e deprecato.
+In Windows Vista con SP1 e versioni successive, l'elemento **maxDelayWithAdditionalDialogs** nello schema 802.1X viene ignorato e deprecato.
 
 </dd> <dt>
 
 **bAllowLogonDialogs**
 </dt> <dd>
 
-Valore che specifica se consentire la visualizzazione di finestre di dialogo EAP quando si utilizza SSO di pre-accesso. Per ulteriori informazioni, vedere l'elemento **allowAdditionalDialogs** nello schema 802.1 x.
+Valore che specifica se consentire la visualizzazione delle finestre di dialogo EAP quando si usa l'accesso SSO pre-accesso. Per altre informazioni, vedere **l'elemento allowAdditionalDialogs** nello schema 802.1X.
 
 </dd> <dt>
 
 **bUserBasedVLan**
 </dt> <dd>
 
-Elemento userBasedVirtualLan nello schema 802.1 X che specifica se la LAN virtuale (VLAN) usata dal dispositivo viene modificata in base alle credenziali dell'utente. Alcuni dispositivi NAS (Network Access Server) modificano la VLAN dopo l'autenticazione dell'utente. Quando userBasedVirtualLan è TRUE, il NAS può modificare la VLAN di un dispositivo dopo l'autenticazione dell'utente. Per ulteriori informazioni, vedere l' [**elemento userBasedVirtualLan (singleSignOn)**](onexschema-userbasedvirtuallan-singlesignon-element.md) nello schema 802.1 x.
+Elemento userBasedVirtualLan nello schema 802.1X che specifica se la LAN virtuale (VLAN) usata dal dispositivo viene modificata in base alle credenziali dell'utente. Alcuni dispositivi NAS (Network Access Server) modificano la VLAN dopo l'autenticazione di un utente. Quando userBasedVirtualLan è TRUE, il nas può modificare la VLAN di un dispositivo dopo l'autenticazione di un utente. Per altre informazioni, vedere [**l'elemento userBasedVirtualLan (singleSignOn)**](onexschema-userbasedvirtuallan-singlesignon-element.md) nello schema 802.1X.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura del **\_ \_ profilo di connessione Onex** viene utilizzata dal modulo 802.1 x, un nuovo componente di configurazione wireless supportato in Windows Vista e versioni successive.
+La **struttura ONEX \_ CONNECTION \_ PROFILE** viene usata dal modulo 802.1X, un nuovo componente di configurazione wireless supportato in Windows Vista e versioni successive.
 
-I [**\_ dati dell' \_ aggiornamento \_ dei risultati di Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) contengono informazioni su una modifica dello stato dell'autenticazione 802.1 x. La **struttura \_ \_ \_ dei dati di aggiornamento dei risultati di Onex** viene restituita quando il membro **NotificationSource** della struttura dei [**\_ \_ dati di notifica**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85)) WLAN è l'origine di **\_ notifica WLAN \_ \_ Onex** e il membro **NotificationCode** della struttura **\_ \_ dei dati di notifica WLAN** per la notifica ricevuta è **OneXNotificationTypeResultUpdate**. Per questa notifica, il membro **pData** della struttura **di \_ \_ dati di notifica WLAN** punta a una struttura di dati di **\_ \_ aggiornamento \_ dei risultati di Onex** che contiene informazioni sulla modifica dello stato di autenticazione 802.1 x.
+[**ONEX \_ RESULT UPDATE DATA \_ \_ contiene**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) informazioni su una modifica dello stato all'autenticazione 802.1X. La struttura **ONEX \_ RESULT UPDATE \_ \_ DATA** viene restituita quando il membro **NotificationSource** della struttura [**WLAN NOTIFICATION \_ \_ DATA**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85)) è **WLAN \_ NOTIFICATION SOURCE \_ \_ ONEX** e il membro **NotificationCode** della struttura **WLAN NOTIFICATION \_ \_ DATA** per la notifica ricevuta è **OneXNotificationTypeResultUpdate.** Per questa notifica, il membro **pData** della struttura **WLAN \_ NOTIFICATION \_ DATA** punta a una struttura **ONEX \_ RESULT UPDATE \_ \_ DATA** contenente informazioni sulla modifica dello stato di autenticazione 802.1X.
 
-Se il membro **fOneXAuthParams** nella struttura [**\_ \_ \_ dei dati di aggiornamento dei risultati di Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) è impostato, il membro **authParams** della struttura **\_ \_ \_ dei dati di aggiornamento dei risultati Onex** contiene una struttura di [**\_ \_ BLOB di variabili Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob) con una struttura di [**\_ \_ parametri auth Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params) incorporata a partire dal membro **dwOffset** del **\_ \_ BLOB della variabile Onex**. Il membro **oneXConnProfile** della struttura **Onex \_ auth \_ params** contiene una struttura **\_ \_ BLOB della variabile Onex** con una struttura del **\_ \_ profilo di connessione Onex** incorporata a partire dal membro **dwOffset** del **\_ \_ BLOB della variabile Onex**.
+Se il membro **fOneXAuthParams** nella struttura [**ONEX \_ RESULT UPDATE \_ \_ DATA**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) è impostato, il membro **authParams** della struttura **ONEX RESULT UPDATE \_ \_ \_ DATA** contiene una struttura [**ONEX VARIABLE \_ \_ BLOB**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob) con una struttura [**ONEX \_ AUTH \_ PARAMS**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params) incorporata a partire dal membro **dwOffset** del **BLOB ONEX \_ VARIABLE. \_** Il **membro oneXConnProfile** della struttura **ONEX \_ AUTH \_ PARAMS** contiene una struttura **ONEX VARIABLE \_ \_ BLOB** con una struttura **ONEX CONNECTION \_ \_ PROFILE** incorporata a partire dal membro **dwOffset** di **ONEX VARIABLE \_ \_ BLOB.**
 
-La struttura del **\_ \_ profilo di connessione Onex** non è definita in un file di intestazione pubblico.
+La **struttura ONEX \_ CONNECTION \_ PROFILE** non è definita in un file di intestazione pubblico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -291,8 +291,8 @@ La struttura del **\_ \_ profilo di connessione Onex** non è definita in un fil
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -303,7 +303,7 @@ La struttura del **\_ \_ profilo di connessione Onex** non è definita in un fil
 [Informazioni sull'architettura di ACM](about-the-acm-architecture.md)
 </dt> <dt>
 
-[Schema OneX](onexschema-schema.md)
+[OneX Schema](onexschema-schema.md)
 </dt> <dt>
 
 [**Elemento authMode (OneX)**](onexschema-authmode-onex-element.md)
@@ -330,22 +330,22 @@ La struttura del **\_ \_ profilo di connessione Onex** non è definita in un fil
 [**Elemento userBasedVirtualLan (singleSignOn)**](onexschema-userbasedvirtuallan-singlesignon-element.md)
 </dt> <dt>
 
-[**\_parametri di autenticazione Onex \_**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params)
+[**ONEX \_ AUTH \_ PARAMS**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params)
 </dt> <dt>
 
-[**\_tipo di notifica Onex \_**](/windows/desktop/api/dot1x/ne-dot1x-onex_notification_type)
+[**TIPO DI \_ NOTIFICA \_ ONEX**](/windows/desktop/api/dot1x/ne-dot1x-onex_notification_type)
 </dt> <dt>
 
-[**\_ \_ dati aggiornamento risultati \_ Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data)
+[**DATI DI AGGIORNAMENTO DEI RISULTATI ONEX \_ \_ \_**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data)
 </dt> <dt>
 
 [**Elemento dello schema OneX**](onexschema-onex-element.md)
 </dt> <dt>
 
-[**\_BLOB variabile \_ Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob)
+[**BLOB DI VARIABILI ONEX \_ \_**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob)
 </dt> <dt>
 
-[**\_dati di notifica WLAN \_**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85))
+[**DATI DI NOTIFICA WLAN \_ \_**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85))
 </dt> <dt>
 
 [**WlanRegisterNotification**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanregisternotification)

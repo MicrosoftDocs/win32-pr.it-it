@@ -1,16 +1,16 @@
 ---
-description: Impostazioni locali \_ IUSEUTF8LEGACYOEMCP
+description: IMPOSTAZIONI \_ LOCALI IUSEUTF8LEGACYOEMCP
 ms.assetid: 41efe160-8f0e-4fb8-b819-6eb9853dba4b
 title: LOCALE_IUSEUTF8LEGACYOEMCP
 ms.topic: article
 ms.date: 03/02/2020
-ms.openlocfilehash: 37ca33bd30dff12833ec2b353d297130a88d2469
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adc888310c29305885f85bad12f68f7d24b1c3e284413c1cc7a484e3572943bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788681"
 ---
-# <a name="locale_iuseutf8legacyoemcp"></a>Impostazioni locali \_ IUSEUTF8LEGACYOEMCP
+# <a name="locale_iuseutf8legacyoemcp"></a>IMPOSTAZIONI \_ LOCALI IUSEUTF8LEGACYOEMCP
 
-**A partire dalla versione successiva di Windows:** È consigliabile che le applicazioni utilizzino invece Unicode. Nei computer configurati dall'utente per l'utilizzo di una tabella codici UTF-8, LOCALE_IUSEUTF8LEGACYOEMCP è la tabella codici OEM legacy che verrebbe utilizzata in un computer Windows legacy non UTF-8.
+**A partire dalla versione successiva di Windows:** È consigliabile che le applicazioni usino invece Unicode. Nei computer configurati dall'utente per l'uso di una tabella codici UTF-8, LOCALE_IUSEUTF8LEGACYOEMCP è la tabella codici OEM legacy che sarebbe stata usata in un computer Windows legacy non UTF-8.

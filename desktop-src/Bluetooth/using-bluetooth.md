@@ -1,25 +1,25 @@
 ---
 title: Uso di Bluetooth
-description: In questa sezione vengono descritte le attività correlate alla scrittura di applicazioni basate su Windows per Bluetooth.
+description: In questa sezione vengono descritte le attività correlate alla scrittura Windows applicazioni basate su Bluetooth.
 ms.assetid: a5eddf48-b548-44a8-ac09-ce16f8aa3943
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4b9b396de2635f9d1e76005c6638abb1d49c0ff
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: a80d57d12b2594ab5bbaeb5ad5d026552ab180ae409ba81446288ac396c746a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103734530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701831"
 ---
 # <a name="using-bluetooth"></a>Uso di Bluetooth
 
-In questa sezione vengono descritte le attività correlate alla scrittura di applicazioni basate su Windows per Bluetooth.
+In questa sezione vengono descritte le attività correlate alla scrittura Windows applicazioni basate su Bluetooth.
 
-Bluetooth fornisce le definizioni di programmazione nei file Ws2bth. h e BluetoothAPIs. h. Il file Bthsdpdef. h deve essere incluso prima di BluetoothAPIs. h. Per usare i Socket Bluetooth, è necessario includere il file Ws2bth. h dopo Winsock2. h. Collegare solo a bthprops. lib ed evitare il collegamento a irprops. lib. Irprops. lib è disponibile solo per compatibilità con le versioni precedenti. Bthprops. lib è disponibile in Windows Vista SDK. È possibile utilizzare Windows Vista SDK per sviluppare applicazioni per Windows XP con Service Pack 2 (SP2). Windows Vista SDK è disponibile nell' [area download](https://download.microsoft.com/download/a/7/7/a7767f09-0136-4a96-a1f8-276bf0ee31fa/Setup.exe).
+Bluetooth le definizioni di programmazione nei file Ws2bth.h e BluetoothAPIs.h. Il file Bthsdpdef.h deve essere incluso prima di BluetoothAPIs.h. Il file Ws2bth.h deve essere incluso dopo Winsock2.h per usare Bluetooth socket. Eseguire il collegamento solo a Bthprops.lib ed evitare il collegamento a Irprops.lib. Irprops.lib viene fornito solo per la compatibilità con le versioni precedenti. Bthprops.lib è disponibile nell'SDK Windows Vista. È possibile usare l'SDK Windows Vista per sviluppare applicazioni per Windows XP con Service Pack 2 (SP2). L Windows SDK di Vista è disponibile [nell'Area download](https://download.microsoft.com/download/a/7/7/a7767f09-0136-4a96-a1f8-276bf0ee31fa/Setup.exe).
 
-Tutti i meccanismi sincroni e sovrapposti standard per la lettura e la scrittura di dati attualmente supportati con altre famiglie di indirizzi funzionano correttamente anche con la \_ famiglia di indirizzi AF BTH.
+Tutti i meccanismi sincroni e sovrapposti standard per leggere e scrivere dati attualmente supportati con altre famiglie di indirizzi funzionano correttamente anche con la famiglia di indirizzi AF \_ BTH.
 
-Con l'SDK è incluso un codice di esempio che illustra una semplice applicazione Bluetooth che usa il protocollo Winsock 2,2 e RFCOMM. Il codice sorgente per l'esempio si trova nel percorso di installazione di SDK in C: \\ programmi \\ Microsoft SDK \\ Windows \\ <version number> \\ Samples \\ NetDs \\ Winsock \\ Bluetooth.
+Nell'SDK è incluso un codice di esempio che illustra una semplice Bluetooth applicazione con Winsock 2.2 e il protocollo RFCOMM. Il codice sorgente per l'esempio è disponibile nel percorso di installazione dell'SDK in C: Programmi \\ Microsoft SDK Windows Samples \\ \\ \\ <version number> \\ \\ NetDs \\ winsock \\ Bluetooth.
 
 In questa sezione vengono descritti gli argomenti seguenti.
 
@@ -27,15 +27,15 @@ In questa sezione vengono descritti gli argomenti seguenti.
 
 | Sezione                                                                                      | Content                                                                          |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Programmazione Bluetooth con Windows Sockets](bluetooth-programming-with-windows-sockets.md) | Viene illustrato come utilizzare le interfacce Windows Sockets per implementare una rete Bluetooth. |
+| [Bluetooth Programmazione con Windows socket](bluetooth-programming-with-windows-sockets.md) | Viene illustrato come usare Windows Sockets per implementare una Bluetooth rete. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

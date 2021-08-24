@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 83719d364fac22923d68206c8cfe7d37adad5edb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c645bc4c6dbf7cf6f7b3fb43cc229af3ef744b264b088356d192e4ad58e68a88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790181"
 ---
 # <a name="msvm_collectedcollections-class"></a>Classe Msvm \_ CollectedCollections
 
@@ -63,7 +63,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Oggetto [**di \_ raggruppamento Msvm ManagementCollection**](msvm-managementcollection.md) o "bag" che rappresenta la raccolta.
+Oggetto di raggruppamento o "bag" [**di Msvm \_ ManagementCollection**](msvm-managementcollection.md) che rappresenta la raccolta.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Oggetto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) contenente i memb
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

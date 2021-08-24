@@ -1,39 +1,39 @@
 ---
-description: Contiene il collegamento simbolico per una trasformazione di Media Foundation basata su hardware (MFT).
+description: Contiene il collegamento simbolico per una trasformazione Media Foundation basata su hardware (MFT).
 ms.assetid: 7e153051-a167-4ff7-8178-b290d8a1345e
-title: Attributo MFT_ENUM_HARDWARE_URL_Attribute (Mftransform. h)
+title: MFT_ENUM_HARDWARE_URL_Attribute attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 539aa1ecbf8bf322e7397a50bb16175dbcca806f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7119ea4bde7900087f706cb6fbc77c845721debab54dfa05b48f5c0094b1e29e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722587"
 ---
-# <a name="mft_enum_hardware_url_attribute-attribute"></a>\_ \_ \_ Attributo attributo URL dell' \_ enumerazione MFT
+# <a name="mft_enum_hardware_url_attribute-attribute"></a>Attributo URL \_ hardware MFT ENUM \_ \_ \_
 
-Contiene il collegamento simbolico per una trasformazione di Media Foundation basata su hardware (MFT).
+Contiene il collegamento simbolico per una trasformazione Media Foundation basata su hardware (MFT).
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WCHAR \** _
+**Wchar\***
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo è supportato da MFTs basato su hardware. Il valore dell'attributo è il collegamento simbolico per il driver di dispositivo. Questo attributo viene inoltre impostato sui puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) allocati dalla funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) , quando tali puntatori rappresentano MFTS basati su hardware.
+Questo attributo è supportato da MFT basati su hardware. Il valore dell'attributo è il collegamento simbolico per il driver di dispositivo. Questo attributo viene impostato anche sui puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) allocati dalla [**funzione MFTEnumEx,**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) quando tali puntatori rappresentano MFT basati su hardware.
 
-Il collegamento simbolico deve essere considerato una stringa opaca. Per ottenere il nome visualizzato per un dispositivo, eseguire una query sull'attributo [ \_ \_ nome descrittivo di MFT](mft-friendly-name-attribute.md) .
+Il collegamento simbolico deve essere considerato una stringa opaca. Per ottenere il nome visualizzato per un dispositivo, eseguire una query [sull'attributo MFT \_ FRIENDLY \_ NAME.](mft-friendly-name-attribute.md)
 
-Per il software MFTs non deve essere impostato questo attributo.
+Gli MFT software non devono avere questo attributo impostato.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs hardware](hardware-mfts.md)
+[MFT hardware](hardware-mfts.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

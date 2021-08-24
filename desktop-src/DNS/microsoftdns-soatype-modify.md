@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_SOAType
-description: Il metodo modify aggiorna un record di risorse di inizio di autorità (SOA).
+description: Il metodo Modify aggiorna un record di risorse SOA (Start Of Authority).
 ms.assetid: 531b770d-9ac9-43da-8595-fbc175b51b23
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_SOAType classe
-- Classe MicrosoftDNS_SOAType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il metodo DNS , MicrosoftDNS_SOAType classe
+- MicrosoftDNS_SOAType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff40abc7f4e93b7122a1c48889c17f9efc4f625
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74785804ebed8266443f0dd708a5d122e350a6cf88b91f228d2ce266481dffaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825081"
 ---
-# <a name="modify-method-of-the-microsoftdns_soatype-class"></a>Metodo Modify della \_ classe SOAType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_soatype-class"></a>Metodo Modify della classe \_ SOAType MicrosoftDNS
 
-Il metodo **Modify** aggiorna un record di risorse di inizio di autorità (SOA).
+Il **metodo Modify** aggiorna un record di risorse SOA (Start Of Authority).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,17 +50,17 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
 *SerialNumber* \[ in, facoltativo\]
 </dt> <dd>
 
-Numero di serie SOA che rappresenta il numero di volte in cui la zona è stata aggiornata, usata dai [*server secondari*](s-gly.md) per determinare se è necessario il trasferimento di zona.
+Numero di serie SOA che rappresenta il numero di [](s-gly.md) volte in cui la zona è stata aggiornata, usata dai server secondari per determinare se è necessario il trasferimento della zona.
 
 </dd> <dt>
 
@@ -71,42 +71,42 @@ Nome del server primario.
 
 </dd> <dt>
 
-*Qualcunoresponsabile* \[ in, facoltativo\]
+*ResponsibleParty* \[ in, facoltativo\]
 </dt> <dd>
 
-Indirizzo della cassetta postale della parte responsabile, nel formato alias. dominio, ad esempio xyz.microsoft.com. Si noti l'uso di un punto anziché un simbolo di chiocciola (@).
+Indirizzo della cassetta postale della parte responsabile, sotto forma di alias.domain, ad esempio xyz.microsoft.com. Si noti l'uso di un punto anziché di un simbolo at (@).
 
 </dd> <dt>
 
 *RefreshInterval* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, prima che sia necessario aggiornare la zona contenente questo record.
+Tempo, in secondi, prima dell'aggiornamento della zona contenente questo record.
 
 </dd> <dt>
 
 *RetryDelay* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, per cui il server DNS deve ritardare tra i tentativi di risoluzione dei nomi.
+Tempo, in secondi, in cui il server DNS deve ritardare tra i tentativi di risoluzione dei nomi.
 
 </dd> <dt>
 
 *ExpireLimit* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, durante il quale i server secondari devono attendere una risposta dal server primario prima di rimuovere le copie del file di zona come non valide.
+Tempo, in secondi, in cui i server secondari devono attendere una risposta dal server primario prima di eliminare le copie del file di zona come non valide.
 
 </dd> <dt>
 
 *MinimumTTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo TTL, in secondi, applicato ai record di risorse nella zona che non specificano un valore TTL specifico.
+Tempo TTL, in secondi, applicato ai record di risorse nella zona che non specificano il proprio TTL.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento all'oggetto modificato
@@ -119,7 +119,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -130,7 +130,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -138,10 +138,10 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_SOAType MicrosoftDNS**](microsoftdns-soatype.md)
+[**MicrosoftDNS \_ SOAType**](microsoftdns-soatype.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

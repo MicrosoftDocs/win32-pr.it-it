@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero del tempo di NextRun dell'attività
-description: Questo esempio recupera la volta successiva che l'attività è pianificata per l'esecuzione e visualizza tale ora sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ Recupero dell'attività NextRun Time
+description: Questo esempio recupera la successiva esecuzione pianificata dell'attività e visualizza tale ora sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 2134a188-2fd4-4b55-bd9e-3363772080c0
 keywords:
-- recupero del tempo di esecuzione successivo dell'attività Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, esecuzione successiva dell'attività
+- recupero dell'attività in fase di esecuzione successiva Utilità di pianificazione
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione, ora di esecuzione successiva dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d57341db57debb0270668c1236e5b353c7f703a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0472f867aea83457bbb4cb77a5a092b8c302f793b0df052e4addb0422adedb5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738501"
 ---
-# <a name="cc-code-example-retrieving-the-task-nextrun-time"></a>Esempio di codice C/C++: recupero del tempo di NextRun dell'attività
+# <a name="cc-code-example-retrieving-the-task-nextrun-time"></a>Esempio di codice C/C++: recupero dell'attività NextRun Time
 
-Questo esempio recupera la volta successiva che l'attività è pianificata per l'esecuzione e visualizza tale ora sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio recupera la successiva esecuzione pianificata dell'attività e visualizza tale ora sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

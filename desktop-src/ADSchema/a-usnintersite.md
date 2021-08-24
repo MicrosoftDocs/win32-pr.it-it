@@ -1,10 +1,10 @@
 ---
-title: Attributo USN-Intersite
+title: USN-Intersite attributo
 description: Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 ms.assetid: c4a4640b-2890-46ea-9eb9-8acb9e749499
 ms.tgt_platform: multiple
 keywords:
-- Schema AD USN-Intersite attribute
+- USN-Intersite schema AD dell'attributo
 - Schema AD dell'attributo USNIntersite
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d101d854650a689679b95282734865ac19f6ced1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 280a8e1e801afd3b27589a1aa35f7d2006556781a6620cdaa9e3a3a2d3878703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703961"
 ---
-# <a name="usn-intersite-attribute"></a>Attributo USN-Intersite
+# <a name="usn-intersite-attribute"></a>USN-Intersite attributo
 
 Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 
@@ -30,12 +30,12 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | USN-Intersite                        |
-| LDAP-Display-Name | USNIntersite                         |
+| Ldap-Display-Name | USNIntersite                         |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.469               |
-| System-ID-GUID    | a8df7498-c5ea-11d1-bbcb-0080c76670c0 |
+| System-Id-Guid    | a8df7498-c5ea-11d1-bbcb-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Numero di sequenza di aggiornamento (USN) per la replica tra siti.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

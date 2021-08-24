@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRM_ENCRYPT_SCATTER_BLOCK (wmdrmsdk. h)
-description: La \_ \_ struttura di blocco a dispersione crittografata WMDRM \_ contiene un blocco di dati da crittografare.
+title: WMDRM_ENCRYPT_SCATTER_BLOCK (Wmdrmsdk.h)
+description: La struttura WMDRM \_ ENCRYPT SCATTER BLOCK contiene un blocco di dati da \_ \_ crittografare.
 ms.assetid: 73c871f0-3d0d-480f-856c-0f7d5dde5895
 keywords:
-- Formato di Windows Media per la struttura WMDRM_ENCRYPT_SCATTER_BLOCK
-- struttura Windows Media Format
+- WMDRM_ENCRYPT_SCATTER_BLOCK struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8911ba1822b146de4a99ff1fe144afcfd8e212e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 258cb7e0d8d2cac8da40197aaa45028a56af0ff3a313d65c1a98c50d45b8d3b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658161"
 ---
-# <a name="wmdrm_encrypt_scatter_block-structure"></a>\_ \_ Struttura blocco a dispersione crittografia WMDRM \_
+# <a name="wmdrm_encrypt_scatter_block-structure"></a>Struttura DEL BLOCCO A DISPERSIONE WMDRM \_ ENCRYPT \_ \_
 
-La struttura di **\_ \_ \_ blocco a dispersione crittografata WMDRM** contiene un blocco di dati da crittografare.
+La **struttura WMDRM \_ ENCRYPT SCATTER \_ \_ BLOCK** contiene un blocco di dati da crittografare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Identificatore del flusso a cui appartiene il blocco di dati.
 **cbBlock**
 </dt> <dd>
 
-Dimensioni del blocco in byte.
+Dimensione del blocco in byte.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntatore a un buffer contenente il blocco di dati.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata dal metodo [**IWMDRMEncryptScatter:: EncryptScatter**](iwmdrmencryptscatter-encryptscatter.md) per identificare i blocchi di dati da crittografare.
+Questa struttura viene usata dal [**metodo IWMDRMEncryptScatter::EncryptScatter**](iwmdrmencryptscatter-encryptscatter.md) per identificare i blocchi di dati da crittografare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Questa struttura viene utilizzata dal metodo [**IWMDRMEncryptScatter:: EncryptSc
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

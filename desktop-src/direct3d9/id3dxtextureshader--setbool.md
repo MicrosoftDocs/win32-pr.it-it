@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 512daf7e770c72fe038622877d1756a5fd3532bf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bb16cd5199a9f8638a1d50878bc10cbf264fa2ad1bce37ab61e4c312794710ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790411"
 ---
 # <a name="id3dxtextureshadersetbool-method"></a>Metodo ID3DXTextureShader::SetBool
 

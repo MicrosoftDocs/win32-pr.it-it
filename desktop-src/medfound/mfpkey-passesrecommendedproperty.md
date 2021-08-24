@@ -1,17 +1,17 @@
 ---
 description: Specifica il numero massimo di passaggi supportati dal codificatore.
 ms.assetid: 7e21cd0f-f13f-4321-b246-f1adaa5c6094
-title: Proprietà MFPKEY_PASSESRECOMMENDED (Wmcodecdsp. h)
+title: MFPKEY_PASSESRECOMMENDED proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433e0a0d254c09965976e5659bacfacf3be06643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af869c6acca584547083b3de245913a35680306b47feabaf2a602a3c1c15e87e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826361"
 ---
-# <a name="mfpkey_passesrecommended-property"></a>\_Proprietà PASSESRECOMMENDED di MFPKEY
+# <a name="mfpkey_passesrecommended-property"></a>Proprietà MFPKEY \_ PASSESRECOMMENDED
 
 Specifica il numero massimo di passaggi supportati dal codificatore. Di sola lettura.
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-È possibile ottenere il valore di questa proprietà chiamando [IWMCodecProps:: GetCodecProp](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprops-getcodecprop). Se si usa **IPropertyBag**, è innanzitutto necessario impostare il valore fourcc del formato compresso desiderato usando la proprietà [MFPKEY \_ fourcc](mfpkey-fourccproperty.md) .
+È possibile ottenere il valore di questa proprietà chiamando [IWMCodecProps::GetCodecProp](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmcodecprops-getcodecprop). Se si usa **IPropertyBag,** è prima necessario impostare il valore FOURCC del formato compresso desiderato usando la [proprietà MFPKEY \_ FOURCC.](mfpkey-fourccproperty.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

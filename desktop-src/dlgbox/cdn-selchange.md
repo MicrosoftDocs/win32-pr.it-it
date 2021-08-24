@@ -1,9 +1,9 @@
 ---
-title: CDN_SELCHANGE di notifica (Commdlg.h)
+title: CDN_SELCHANGE codice di notifica (Commdlg.h)
 description: Inviato da una finestra di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 ms.assetid: e622babf-7024-45c5-a8db-f80896f69140
 keywords:
-- CDN_SELCHANGE di dialogo del codice di notifica
+- CDN_SELCHANGE finestre di dialogo del codice di notifica
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c21aa9dda117c74707b3c890ad96e017b45bcc0
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: be7306bf8a1cf012c70738ddf81ae9422e8d658bda33d31b7adda1d57a25629c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843261"
 ---
-# <a name="cdn_selchange-notification-code"></a>Codice di notifica \_ SELCHANGE della rete CDN
+# <a name="cdn_selchange-notification-code"></a>\_rete CDN Codice di notifica SELCHANGE
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, **le**  finestre di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo Elemento [comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Inviato da una  finestra  di dialogo Apri o Salva con nome di tipo Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
+Inviato da una  finestra  di dialogo Apri o Salva con nome in stile Esplora risorse quando la selezione cambia nella casella di riepilogo che visualizza il contenuto della cartella o della directory attualmente aperta.
 
 La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
@@ -51,7 +51,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **struttura OFNOTIFY** contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro **di** codice indica il messaggio di **notifica \_ SELCHANGE della rete CDN.**
+Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **struttura OFNOTIFY** contiene una  [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di codice indica rete CDN messaggio di notifica **\_ SELCHANGE.**
 
 </dd> </dl>
 

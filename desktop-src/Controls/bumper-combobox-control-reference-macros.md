@@ -4,52 +4,52 @@ description: Macro del controllo ComboBox
 ms.assetid: e147234e-0536-4719-b879-1ab5aa77d109
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 091c56dae1ea73af516efed20ed86adc80efa517
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 918ff733382073c89540fdc4e1c8b36514e5bce086bf0f1bc0165bbfb52c2edd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699881"
 ---
 # <a name="combobox-control-macros"></a>Macro del controllo ComboBox
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_AddItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_additemdata)
--   [**\_AddString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_addstring)
--   [**\_DeleteString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_deletestring)
--   [**\_Dir ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_dir)
--   [**\_Abilita ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_enable)
--   [**\_FindItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_finditemdata)
--   [**\_FindString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstring)
--   [**\_FindExactString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstringexact)
--   [**GetCount ComboBox \_**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcount)
--   [**\_GetCueBannerText ComboBox**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getcuebannertext)
+-   [**ComboBox \_ AddItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_additemdata)
+-   [**ComboBox \_ AddString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_addstring)
+-   [**ComboBox \_ DeleteString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_deletestring)
+-   [**ComboBox \_ Dir**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_dir)
+-   [**Abilitazione di ComboBox \_**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_enable)
+-   [**ComboBox \_ FindItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_finditemdata)
+-   [**ComboBox \_ FindString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstring)
+-   [**ComboBox \_ FindStringExact**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstringexact)
+-   [**GetCount di ComboBox \_**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcount)
+-   [**ComboBox \_ GetCueBannerText**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getcuebannertext)
 -   [**ComboBox \_ GetCurSel**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcursel)
--   [**\_GetDroppedControlRect ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getdroppedcontrolrect)
--   [**\_GetDroppedState ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getdroppedstate)
--   [**\_GetExtendedUI ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getextendedui)
--   [**\_GetItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getitemdata)
--   [**\_GetItemHeight ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getitemheight)
--   [**\_GetLBText ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtext)
--   [**\_GetLBTextLen ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtextlen)
--   [**\_GetMinVisible ComboBox**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getminvisible)
--   [**Casella combinata \_ GetText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettext)
--   [**\_GetTextLength ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettextlength)
--   [**\_InsertItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertitemdata)
--   [**\_InsertString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertstring)
--   [**\_LimitText ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_limittext)
--   [**\_ResetContent ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_resetcontent)
--   [**\_SelectItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_selectitemdata)
--   [**\_SelectString ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_selectstring)
--   [**\_SetCueBannerText ComboBox**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_setcuebannertext)
--   [**Controllo \_ ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setcursel)
--   [**\_SetExtendedUI ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setextendedui)
--   [**\_SetItemData ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemdata)
--   [**\_SetItemHeight ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemheight)
--   [**\_SetMinVisible ComboBox**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_setminvisible)
--   [**\_Testo ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_settext)
--   [**\_ShowDropdown ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_showdropdown)
+-   [**ComboBox \_ GetDroppedControlRect**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getdroppedcontrolrect)
+-   [**ComboBox \_ GetDroppedState**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getdroppedstate)
+-   [**ComboBox \_ GetExtendedUI**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getextendedui)
+-   [**ComboBox \_ GetItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getitemdata)
+-   [**ComboBox \_ GetItemHeight**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getitemheight)
+-   [**ComboBox \_ GetLBText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtext)
+-   [**ComboBox \_ GetLBTextLen**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtextlen)
+-   [**ComboBox \_ GetMinVisible**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getminvisible)
+-   [**ComboBox \_ GetText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettext)
+-   [**ComboBox \_ GetTextLength**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettextlength)
+-   [**ComboBox \_ InsertItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertitemdata)
+-   [**ComboBox \_ InsertString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertstring)
+-   [**ComboBox \_ LimitText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_limittext)
+-   [**ComboBox \_ ResetContent**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_resetcontent)
+-   [**ComboBox \_ SelectItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_selectitemdata)
+-   [**ComboBox \_ SelectString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_selectstring)
+-   [**ComboBox \_ SetCueBannerText**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_setcuebannertext)
+-   [**ComboBox \_ SetCurSel**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setcursel)
+-   [**ComboBox \_ SetExtendedUI**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setextendedui)
+-   [**ComboBox \_ SetItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemdata)
+-   [**ComboBox \_ SetItemHeight**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemheight)
+-   [**ComboBox \_ SetMinVisible**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_setminvisible)
+-   [**ComboBox \_ SetText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_settext)
+-   [**ComboBox \_ ShowDropdown**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_showdropdown)
 
  
 

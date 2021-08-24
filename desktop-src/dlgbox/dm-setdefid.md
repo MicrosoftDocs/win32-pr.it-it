@@ -1,9 +1,9 @@
 ---
-title: Messaggio DM_SETDEFID (winuser. h)
-description: Modifica l'identificatore del pulsante di push predefinito per una finestra di dialogo.
+title: DM_SETDEFID messaggio (Winuser.h)
+description: Modifica l'identificatore del pulsante di comando predefinito per una finestra di dialogo.
 ms.assetid: 30720fa1-48cb-42d4-8370-87bdbaa34600
 keywords:
-- Finestre di dialogo DM_SETDEFID messaggio
+- DM_SETDEFID finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73ceda9ac9e8fd399604e9c55431b8fcd74646f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92749cc7eca569b57d239a36bb6559e59a6a7ebc31c63787a93d0720b334d1ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741751"
 ---
-# <a name="dm_setdefid-message"></a>\_Messaggio DM SETDEFID
+# <a name="dm_setdefid-message"></a>Dm \_ SETDEFID message
 
-Modifica l'identificatore del pulsante di push predefinito per una finestra di dialogo.
+Modifica l'identificatore del pulsante di comando predefinito per una finestra di dialogo.
 
 
 ```C++
@@ -40,7 +40,7 @@ Modifica l'identificatore del pulsante di push predefinito per una finestra di d
 *wParam* 
 </dt> <dd>
 
-Identificatore di un controllo pulsante di comando che diventerà il valore predefinito.
+Identificatore di un controllo pulsante di comando che diventerà l'impostazione predefinita.
 
 </dd> <dt>
 
@@ -53,13 +53,13 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è sempre **true**.
+Il valore restituito è sempre **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene elaborato dalla funzione [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) . Per impostare il pulsante di push predefinito, la funzione può inviare i messaggi [**di \_ tipo**](../controls/bm-setstyle.md) " [**WM \_ GETDLGCODE**](wm-getdlgcode.md) " e "BM" al controllo specificato e al pulsante di push predefinito corrente.
+Questo messaggio viene elaborato dalla [**funzione DefDlgProc.**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) Per impostare il pulsante di comando predefinito, la funzione può inviare messaggi [**WM \_ GETDLGCODE**](wm-getdlgcode.md) e [**BM \_ SETSTYLE**](../controls/bm-setstyle.md) al controllo specificato e al pulsante di comando predefinito corrente.
 
-L'uso del messaggio **DM \_ SETDEFID** può comportare la visualizzazione di più di un pulsante con lo stato predefinito del pulsante di push. Quando il sistema Visualizza una finestra di dialogo, disegna il primo pulsante di push nel modello di finestra di dialogo con il bordo dello stato predefinito. L'invio di un messaggio **DM \_ SETDEFID** per modificare il pulsante predefinito non ridurrà sempre il bordo di stato predefinito dal primo pulsante di push. In questi casi, l'applicazione deve inviare un messaggio di [**\_ tipo BM**](../controls/bm-setstyle.md) per modificare il primo stile del bordo del pulsante di push.
+**L'uso del messaggio DM \_ SETDEFID** può comportare la visualizzazione dello stato predefinito di più pulsanti. Quando il sistema apre una finestra di dialogo, disegna il primo pulsante di comando nel modello di finestra di dialogo con il bordo di stato predefinito. L'invio di un messaggio **\_ DM SETDEFID** per modificare il pulsante predefinito non rimuoverà sempre il bordo dello stato predefinito dal primo pulsante. In questi casi, l'applicazione deve inviare un [**messaggio \_ SETSTYLE BM**](../controls/bm-setstyle.md) per modificare lo stile del bordo del primo pulsante di comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ L'uso del messaggio **DM \_ SETDEFID** può comportare la visualizzazione di pi�
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -83,10 +83,10 @@ L'uso del messaggio **DM \_ SETDEFID** può comportare la visualizzazione di pi�
 [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw)
 </dt> <dt>
 
-[**\_GETDEFID DM**](dm-getdefid.md)
+[**DM \_ GETDEFID**](dm-getdefid.md)
 </dt> <dt>
 
-[**\_GETDLGCODE WM**](wm-getdlgcode.md)
+[**WM \_ GETDLGCODE**](wm-getdlgcode.md)
 </dt> <dt>
 
 **Informazioni concettuali**
@@ -98,10 +98,10 @@ L'uso del messaggio **DM \_ SETDEFID** può comportare la visualizzazione di pi�
 **Altre risorse**
 </dt> <dt>
 
-[**distile BM \_**](../controls/bm-setstyle.md)
+[**BM \_ SETSTYLE**](../controls/bm-setstyle.md)
 </dt> <dt>
 
-[**\_SETLIMITTEXT em**](../controls/em-setlimittext.md)
+[**EM \_ SETLIMITTEXT**](../controls/em-setlimittext.md)
 </dt> </dl>
 
  

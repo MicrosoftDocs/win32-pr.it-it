@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-Annotation
-description: Stringa che descrive un determinato elemento del profilo RPC.
+title: Attributo rpc-Ns-Annotation
+description: Stringa che descriva un determinato elemento profilo RPC.
 ms.assetid: c4f148ec-c3c0-4ff8-9982-e941939ed823
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-Annotation
+- Schema AD dell'attributo rpc-Ns-Annotation
 - Schema AD dell'attributo rpcNsAnnotation
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3234177476db1006f63ca1d58c36e31ddeaf570c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b33889f998b78b7900770ad98c25b2b57783be131eedb9e7846f088e7c94694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704171"
 ---
-# <a name="rpc-ns-annotation-attribute"></a>attributo RPC-NS-Annotation
+# <a name="rpc-ns-annotation-attribute"></a>Attributo rpc-Ns-Annotation
 
-Stringa che descrive un determinato elemento del profilo RPC.
+Stringa che descriva un determinato elemento profilo RPC.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-annotazione                           |
-| LDAP-Display-Name | rpcNsAnnotation                             |
+| CN                | rpc-Ns-Annotation                           |
+| Ldap-Display-Name | rpcNsAnnotation                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.366                      |
-| System-ID-GUID    | 88611bde-8cf4-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 88611bde-8cf4-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa che descrive un determinato elemento del profilo RPC.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**RPC-profile-element**](c-rpcprofileelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Profile**](c-rpcprofileelement.md)<br/> |
 
 
 

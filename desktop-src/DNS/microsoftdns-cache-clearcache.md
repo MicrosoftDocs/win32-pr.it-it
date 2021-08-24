@@ -1,11 +1,11 @@
 ---
 title: Metodo ClearCache della classe MicrosoftDNS_Cache
-description: Il metodo ClearCache Cancella la cache del server DNS dei record di risorse.
+description: Il metodo ClearCache cancella la cache del server DNS dei record di risorse.
 ms.assetid: ff8d24b7-e3c0-401d-ad4b-a33400f6ae21
 keywords:
 - DNS del metodo ClearCache
-- DNS del metodo ClearCache, classe MicrosoftDNS_Cache
-- Classe MicrosoftDNS_Cache DNS, Metodo ClearCache
+- Metodo ClearCache DNS , MicrosoftDNS_Cache classe
+- MicrosoftDNS_Cache classe DNS , metodo ClearCache
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ec9ee2edb05362c56e2f011a5fbf35592d74ebd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 913b4ae23a7e8f5e0ee9b08f48924ea44553038dabc73b2b5367786d8dd44a0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825241"
 ---
-# <a name="clearcache-method-of-the-microsoftdns_cache-class"></a>Metodo ClearCache della \_ classe cache MicrosoftDNS
+# <a name="clearcache-method-of-the-microsoftdns_cache-class"></a>Metodo ClearCache della classe Cache MicrosoftDNS \_
 
-Il metodo **ClearCache** Cancella la cache del server DNS dei record di risorse.
+Il **metodo ClearCache** cancella la cache del server DNS dei record di risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                              |
 | Fine del supporto server<br/>    | Windows Server 2003 R2<br/>                                                      |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_Dominio MicrosoftDNS**](microsoftdns-domain.md)
+[**Dominio \_ MicrosoftDNS**](microsoftdns-domain.md)
 </dt> <dt>
 
-[**Metodo getdistinguishname della \_ classe cache MicrosoftDNS**](microsoftdns-cache-getdistinguishedname.md)
+[**Metodo GetDistinguishedName della classe Cache MicrosoftDNS \_**](microsoftdns-cache-getdistinguishedname.md)
 </dt> </dl>
 
  

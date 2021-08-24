@@ -1,11 +1,11 @@
 ---
-title: Attributo Object-Guid
-description: Identificatore univoco per un oggetto.
+title: Object-Guid attributo
+description: Identificatore univoco di un oggetto.
 ms.assetid: fc2d65a3-7472-41ef-9780-d1a7ec965804
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Object-Guid attribute
-- Schema AD dell'attributo objectGUID
+- Object-Guid schema AD dell'attributo
+- Attributo objectGUID - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e3715c38b629869296e6f8df5dbebd9a515d1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2cf264ef8e48cf8515da32a09768ff3db2f544461f27e849fafdfca8998fab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704581"
 ---
-# <a name="object-guid-attribute"></a>Attributo Object-Guid
+# <a name="object-guid-attribute"></a>Object-Guid attributo
 
-Identificatore univoco per un oggetto.
+Identificatore univoco di un oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------|
 | CN                | Object-Guid                                                         |
-| LDAP-Display-Name | objectGUID                                                          |
+| Ldap-Display-Name | objectGUID                                                          |
 | Dimensione              | 16 byte                                                            |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                    |
-| Frequenza di aggiornamento  | Questo valore viene impostato quando l'oggetto viene creato e non può essere modificato. |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                                    |
+| Frequenza di aggiornamento  | Questo valore viene impostato quando viene creato l'oggetto e non può essere modificato. |
 | Attribute-Id      | 1.2.840.113556.1.4.2                                                |
-| System-ID-GUID    | bf9679e7-0de6-11d0-a285-00aa003049e2                                |
+| System-Id-Guid    | bf9679e7-0de6-11d0-a285-00aa003049e2                                |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)               |
 
 
@@ -44,7 +44,7 @@ Identificatore univoco per un oggetto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Identificatore univoco per un oggetto.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

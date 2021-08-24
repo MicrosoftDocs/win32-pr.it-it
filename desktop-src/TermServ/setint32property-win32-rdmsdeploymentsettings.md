@@ -1,12 +1,12 @@
 ---
 title: Metodo SetInt32Property della classe Win32_RDMSDeploymentSettings
-description: Aggiorna una proprietà integer per le impostazioni di distribuzione di un insieme di desktop virtuali.
+description: Aggiorna una proprietà integer per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 ms.assetid: c5e6dbd5-7db7-4409-bf53-c2680e4a5319
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetInt32Property
-- Metodo SetInt32Property Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo SetInt32Property
+- Metodo SetInt32Property Servizi Desktop remoto
+- Metodo SetInt32Property Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto metodo SetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fecdc42031514d5219fc03172b951602ad021ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73fa8f9ad7560e4d0eeeb8708feb547da00a8e9804e242ceb94666da211b03a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865381"
 ---
-# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetInt32Property della \_ classe RDMSDeploymentSettings Win32
+# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetInt32Property della classe \_ RDMSDeploymentSettings Win32
 
-Aggiorna una proprietà integer per le impostazioni di distribuzione di un insieme di desktop virtuali.
+Aggiorna una proprietà integer per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 SetInt32Property(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Alias dell'insieme di desktop virtuali.
+Alias della raccolta di desktop virtuali.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore della proprietà.
@@ -66,8 +66,8 @@ Nuovo valore della proprietà.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ Nuovo valore della proprietà.
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

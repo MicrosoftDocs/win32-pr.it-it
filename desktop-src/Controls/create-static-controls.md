@@ -1,36 +1,36 @@
 ---
 title: Come creare controlli statici
-description: Nell'esempio riportato in questa sezione viene illustrato come creare un controllo statico animato.
+description: L'esempio in questa sezione illustra come creare un controllo statico animato.
 ms.assetid: D2DA38CB-360C-49EC-90BC-9AFA88C4B751
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 217135a6590fcee60286d21f00233916c4eba967
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 3ef4bdb4cce808ab3f8f8133a731c7f4ef5638bb1fbf9fd45370e4304d0138d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104472430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826382"
 ---
 # <a name="how-to-create-static-controls"></a>Come creare controlli statici
 
-Nell'esempio riportato in questa sezione viene illustrato come creare un controllo statico animato.
+L'esempio in questa sezione illustra come creare un controllo statico animato.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="create-a-static-control"></a>Creazione di un controllo statico
+### <a name="create-a-static-control"></a>Creare un controllo statico
 
-Nell'esempio di codice riportato di seguito vengono utilizzati un timer e il messaggio dell' [**\_ icona STM**](stm-seticon.md) per animare un controllo icona statica in una finestra di dialogo.
+Nell'esempio di codice seguente vengono utilizzati un timer e il [**messaggio \_ STM SETICON**](stm-seticon.md) per animare un controllo icona statica in una finestra di dialogo.
 
 
 ```C++
@@ -100,7 +100,7 @@ INT_PTR CALLBACK StaticDlgProc(HWND hDlg, UINT message, WPARAM wParam,
 
 ## <a name="remarks"></a>Commenti
 
-L'identificatore del controllo icona statica ( \_ icona statica Idi \_ ) viene definito in un file di intestazione globale e le icone vengono caricate dalle risorse dell'applicazione.
+L'identificatore del controllo icona statica (ICONA STATICA IDI) è definito in un file di intestazione globale e le icone vengono caricate \_ \_ dalle risorse dell'applicazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -109,12 +109,12 @@ L'identificatore del controllo icona statica ( \_ icona statica Idi \_ ) viene d
 [Uso di controlli statici](using-static-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

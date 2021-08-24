@@ -1,43 +1,43 @@
 ---
-description: In questo articolo viene descritto il modo in cui il gestore del grafico dei filtri individua un filtro di origine, dato un nome file.
+description: Questo articolo descrive in che modo Gestione filtri Graph individua un filtro di origine, dato un nome di file.
 ms.assetid: bc0d5719-6325-40fe-8261-ad00b91f272c
 title: Registrazione di un tipo di file personalizzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e98c01555497ac628fff452f464c826475edbb8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fd2815748fafaff3e2d20d0de1ab5fa0bcc9dec62f4e65ffbdd8479fec434d99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697051"
 ---
 # <a name="registering-a-custom-file-type"></a>Registrazione di un tipo di file personalizzato
 
-In questo articolo viene descritto il modo in cui il gestore del grafico dei filtri individua un filtro di origine, dato un nome file. È possibile utilizzare questo meccanismo per registrare i tipi di file personalizzati. Una volta registrato il tipo di file, DirectShow caricherà automaticamente il filtro di origine corretto ogni volta che un'applicazione chiama [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) o [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter).
+Questo articolo descrive in che modo Gestione filtri Graph individua un filtro di origine, dato un nome di file. È possibile usare questo meccanismo per registrare tipi di file personalizzati. Dopo aver registrato il tipo di file, DirectShow carica automaticamente il filtro di origine corretto ogni volta che un'applicazione chiama [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) o [**IGraphBuilder::AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter).
 
 -   [Overview](#overview)
 -   [Protocolli](#protocols)
--   [Estensioni di file](#file-extensions)
--   [Byte di controllo](#check-bytes)
+-   [Estensione](#file-extensions)
+-   [Controlla byte](#check-bytes)
 -   [Caricamento del filtro di origine](#loading-the-source-filter)
 -   [Tipi di file personalizzati in Windows Media Player](#custom-file-types-in-windows-media-player)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="overview"></a>Panoramica
 
-Per individuare un filtro di origine da un nome file specificato, il gestore del grafico del filtro tenta di eseguire le operazioni seguenti, nell'ordine indicato:
+Per individuare un filtro di origine da un determinato nome di file, Filter Graph Manager tenta di eseguire le operazioni seguenti, nell'ordine indicato:
 
-1.  Trovare la corrispondenza con il protocollo, se disponibile.
-2.  Corrisponde all'estensione del file.
-3.  Corrisponde ai modelli di byte all'interno del file, detti *Check bytes*.
+1.  Corrisponde al protocollo, se presente.
+2.  Trova la corrispondenza con l'estensione del file.
+3.  Corrisponde ai modelli di byte all'interno del file, denominati *byte di controllo.*
 
 ## <a name="protocols"></a>Protocolli
 
-I nomi di protocollo, ad esempio "FTP" o "http", sono registrati nel
+I nomi di protocollo, ad esempio "ftp" o "http", vengono registrati nel
 
-**\_radice delle classi HKEY \_**
+**HKEY \_ CLASSES \_ ROOT**
 
-chiave, con la struttura seguente:
+chiave , con la struttura seguente:
 
 
 ```C++
@@ -51,32 +51,32 @@ HKEY_CLASSES_ROOT
 
 
 
-Se il nome file o l'URL contiene i due punti (':'), il gestore del grafico del filtro tenta di utilizzare la parte prima di ':' come nome di protocollo. Se, ad esempio, il nome è "myprot://myfile.ext", viene eseguita la ricerca di una chiave del registro di sistema denominata **prot**. Se questa chiave esiste e contiene una sottochiave denominata "Extensions", il gestore del grafo dei filtri Cerca le voci che corrispondono all'estensione di file nella sottochiave. Il valore della chiave deve essere un GUID in formato stringa. ad esempio, " {00000000-0000-0000-0000-000000000000} ". Se il gestore del grafo del filtro non può corrispondere ad alcun elemento all'interno della sottochiave **Extensions** , Cerca una sottochiave denominata **Filter di origine**, che deve essere anche un GUID in formato stringa.
+Se il nome file o l'URL contiene i due punti (':'), Filter Graph Manager tenta di usare la parte prima di ':' come nome di protocollo. Ad esempio, se il nome è "myprot://myfile.ext", cerca una chiave del Registro di sistema denominata **myprot**. Se questa chiave esiste e contiene una sottochiave denominata "Extensions", Filter Graph Manager cerca all'interno di tale sottochiave le voci che corrispondono all'estensione di file. Il valore della chiave deve essere un GUID in formato stringa. ad esempio " {00000000-0000-0000-0000-000000000000} ". Se Filter Graph Manager non può corrispondere ad alcun elemento all'interno della sottochiave **Extensions,** cerca una sottochiave denominata **Source Filter,** che deve anche essere un GUID in formato stringa.
 
-Se il gestore del grafo del filtro trova un GUID corrispondente, lo utilizza come CLSID del filtro di origine e tenta di caricare il filtro. Se non trova una corrispondenza, usa il filtro di [origine file (URL)](file-source--url--filter.md) , che considera il nome del file come un URL.
+Se Gestione filtri Graph trova un GUID corrispondente, lo usa come CLSID del filtro di origine e tenta di caricare il filtro. Se non trova una corrispondenza, usa il filtro Origine file [(URL),](file-source--url--filter.md) che considera il nome del file come URL.
 
-Questo algoritmo presenta due eccezioni:
+Esistono due eccezioni a questo algoritmo:
 
--   Per escludere le lettere di driver, le stringhe a carattere singolo non vengono considerate protocolli.
--   Se la stringa è "file:" o "file://", non viene considerata come un protocollo.
+-   Per escludere le lettere dei driver, le stringhe a carattere singolo non sono considerate protocolli.
+-   Se la stringa è "file:" o "file://", non viene considerata come protocollo.
 
 ## <a name="file-extensions"></a>Estensioni di file
 
-Se non è presente alcun protocollo nel nome del file, il gestore del grafico dei filtri Cerca nel registro di sistema le voci con le principali **\_ \_ \\ \\ estensioni \\ del tipo di supporto radice delle classi HKEY**.*EXT* \\ , dove.*EXT* è l'estensione di file. Se questa chiave esiste, il **filtro di origine** del valore contiene il CLSID del filtro di origine, in formato stringa. Facoltativamente, la chiave può avere valori per il **tipo di supporto** e il **sottotipo**, che assegnano al tipo principale e ai GUID del sottotipo.
+Se il nome file non contiene alcun protocollo, Filter Graph Manager cerca nel Registro di sistema le voci con la chiave **HKEY \_ CLASSES ROOT Media \_ Type \\ \\ Extensions \\**.*ext* \\ , dove .*ext è* l'estensione del file. Se questa chiave esiste, il valore **Source Filter** contiene il CLSID del filtro di origine, in formato stringa. Facoltativamente, la chiave può avere valori per **Tipo** di supporto e **Sottotipo**, che forniscono i GUID del tipo principale e del sottotipo.
 
-## <a name="check-bytes"></a>Byte di controllo
+## <a name="check-bytes"></a>Controlla byte
 
-Alcuni tipi di file possono essere identificati da modelli specifici di bit che si verificano in offset di byte specifici nel file. Filter Graph Manager cerca le chiavi nel registro di sistema con il formato seguente:
+Alcuni tipi di file possono essere identificati da modelli specifici di bit che si verificano in corrispondenza di offset di byte specifici nel file. Gestione filtri Graph cerca nel Registro di sistema le chiavi con il formato seguente:
 
-**HKEY \_ Classi \_ radice \\ mediaType \\**{ *tipo principale* } \\ { *sottotipo* }
+**HKEY \_ CLASSES \_ ROOT \\ MediaType \\**{ major *type* } \\ { *subtype* }
 
-dove il *tipo principale* e il *sottotipo* sono GUID che definiscono il tipo di supporto per il flusso di byte. Ogni chiave contiene una o più sottochiavi, in genere denominate 1, 2 e così via, che definiscono i byte di controllo; e una sottochiave denominata **filtro di origine** che fornisce il CLSID del filtro di origine, in formato stringa. Le sottochiavi di byte di controllo sono stringhe che contengono uno o più quad di numeri chiamati:
+dove *il tipo principale* e il *sottotipo* sono GUID che definiscono il tipo di supporto per il flusso di byte. Ogni chiave contiene una o più sottochiavi, in genere denominate 1, 2 e così via, che definiscono i byte di controllo. e una sottochiave denominata **Source Filter che** fornisce il CLSID del filtro di origine, in formato stringa. Le sottochiavi check-byte sono stringhe che contengono uno o più quad di numeri denominati:
 
-*offset*, *CB*, *mask*, *Val*
+*offset*, *cb*, *mask*, *val*
 
-Per trovare la corrispondenza con il file, il gestore del grafo del filtro legge i byte CB, a partire dall'offset del numero di byte. Esegue quindi un operatore and bit per bit sul valore in mask. Se il risultato è uguale a Val, il file corrisponde a tale quad. I valori mask e Val sono specificati in esadecimale. Una voce vuota per la maschera viene considerata come una stringa di 1s di lunghezza CB. Un valore negativo per offset indica un offset dalla fine del file. Per trovare la corrispondenza con la chiave, il file deve corrispondere a tutti i quad in una qualsiasi delle sottochiavi.
+Per trovare la corrispondenza con il file, Il gestore Graph legge i byte cb, a partire dall'offset dei numeri di byte. Esegue quindi un'operazione AND bit per bit sul valore in mask. Se il risultato è uguale a val, il file corrisponde a tale quad. I valori mask e val sono specificati in formato esadecimale. Una voce vuota per mask viene considerata come una stringa di 1 di lunghezza cb. Un valore negativo per offset indica un offset dalla fine del file. Per trovare la corrispondenza con la chiave, il file deve corrispondere a tutti i quad in una delle sottochiavi.
 
-Si supponga, ad esempio, che il registro di sistema contenga le chiavi seguenti in **HKCR \\ Media Type**:
+Si supponga, ad esempio, che il Registro di sistema contenga le chiavi seguenti in **HKCR \\ Media Type**:
 
 
 ```C++
@@ -89,9 +89,9 @@ Si supponga, ad esempio, che il registro di sistema contenga le chiavi seguenti 
 
 
 
-La prima chiave corrisponde al tipo principale flusso MEDIATYPE \_ . Sottochiave seguente che corrisponde al sottotipo MEDIATYPE \_ MIDI. Il valore della sottochiave del filtro di origine è CLSID \_ AsyncReader, il CLSID del filtro di [origine file (Async)](file-source--async--filter.md) .
+La prima chiave corrisponde al tipo principale MEDIATYPE \_ Stream. Sottochiave seguente che corrisponde al sottotipo MEDIATYPE \_ Midi. Il valore della sottochiave Source Filter è CLSID AsyncReader, il CLSID del filtro di \_ [origine file (Async).](file-source--async--filter.md)
 
-Ogni voce può avere più quadruple; tutte devono corrispondere. Nell'esempio seguente, i primi 4 byte del file devono essere 0xAB, 0xCD, 0x12, 0x34; e gli ultimi 4 byte del file devono essere 0xAB, 0xAB, 0x00, 0xAB:
+Ogni voce può avere più quadruple. tutti devono corrispondere. Nell'esempio seguente i primi 4 byte del file devono essere 0xAB, 0xCD, 0x12, 0x34; e gli ultimi 4 byte del file devono essere 0xAB, 0xAB, 0x00, 0xAB:
 
 
 ```C++
@@ -100,28 +100,28 @@ Ogni voce può avere più quadruple; tutte devono corrispondere. Nell'esempio se
 
 
 
-Inoltre, possono essere presenti più voci in un unico tipo di supporto. È sufficiente una corrispondenza con uno di essi. Questo schema consente un set di maschere alternative. ad esempio, i file con estensione wav che possono o non possono avere un'intestazione RIFF.
+Possono inoltre essere presenti più voci elencate in un singolo tipo di supporto. È sufficiente una corrispondenza con uno di essi. Questo schema consente un set di maschere alternative. ad esempio file wav che potrebbero avere o meno un'intestazione RIFF.
 
 > [!Note]  
-> Questo schema è simile a quello usato dalla funzione [**GetClassFile**](/windows/win32/api/objbase/nf-objbase-getclassfile) .
+> Questo schema è simile a quello usato dalla [**funzione GetClassFile.**](/windows/win32/api/objbase/nf-objbase-getclassfile)
 
  
 
 ## <a name="loading-the-source-filter"></a>Caricamento del filtro di origine
 
-Supponendo che Filter Graph Manager trovi un filtro di origine corrispondente per il file, aggiunge tale filtro al grafo, esegue una query sul filtro per l'interfaccia [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) e chiama [**IFileSourceFilter:: Load**](/windows/desktop/api/Strmif/nf-strmif-ifilesourcefilter-load). Gli argomenti per il metodo **Load** sono il nome del file e il tipo di supporto, come determinato dal registro di sistema.
+Supponendo che Filter Graph Manager trovi un filtro di origine corrispondente per il file, aggiunge tale filtro al grafico, esegue una query sul filtro per l'interfaccia [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) e chiama [**IFileSourceFilter::Load**](/windows/desktop/api/Strmif/nf-strmif-ifilesourcefilter-load). Gli argomenti del metodo **Load sono** il nome del file e il tipo di supporto, come determinato dal Registro di sistema.
 
-Se il gestore del grafo del filtro non riesce a trovare nulla dal registro di sistema, per impostazione predefinita viene usato il filtro di origine file asincrono. In tal caso, imposta il tipo di supporto su **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ None**.
+Se Gestione Graph non riesce a trovare alcun elemento dal Registro di sistema, per impostazione predefinita viene utilizzato il filtro Origine file asincrona. In tal caso, imposta il tipo di supporto su **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ None**.
 
 ## <a name="custom-file-types-in-windows-media-player"></a>Tipi di file personalizzati in Windows Media Player
 
-Windows Media Player utilizza un set aggiuntivo di voci del registro di sistema. Per ulteriori informazioni, vedere [impostazioni del registro di sistema](../wmp/file-name-extension-registry-settings.md) per l'estensione di file in Windows Media Player SDK.
+Windows Media Player usa un set aggiuntivo di voci del Registro di sistema. Per altre informazioni, vedere [File Name Extension Registry Impostazioni](../wmp/file-name-extension-registry-settings.md) in Windows Media Player SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Scrittura di filtri DirectShow](writing-directshow-filters.md)
+[Scrittura DirectShow filtri](writing-directshow-filters.md)
 </dt> </dl>
 
  

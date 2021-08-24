@@ -1,25 +1,25 @@
 ---
-description: In questa sezione sono contenute informazioni di riferimento per lo schema che definisce il codice XML restituito dal componente Reader note Journal.
+description: Questa sezione contiene informazioni di riferimento per lo schema che definisce il codice XML restituito dal componente Journal Note Reader.
 ms.assetid: fd4a34fb-39e9-47e5-9761-9cbf0f28d9fe
-title: Riferimento allo schema del lettore Journal
+title: Informazioni di riferimento sullo schema del lettore journal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f58e748798dec6c6d19ff47e0194c9caec2f814f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ede7f6449175113829c8491bb470fe84627a3188e477d111a072c5b6d008c3d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843431"
 ---
-# <a name="journal-reader-schema-reference"></a>Riferimento allo schema del lettore Journal
+# <a name="journal-reader-schema-reference"></a>Informazioni di riferimento sullo schema del lettore journal
 
-In questa sezione sono contenute informazioni di riferimento per lo schema che definisce il codice XML restituito dal componente Reader note Journal.
+Questa sezione contiene informazioni di riferimento per lo schema che definisce il codice XML restituito dal componente Journal Note Reader.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Elementi spazio dei nomi Reader Journal](journal-reader-namespace-elements.md)
--   [Tipi di spazio dei nomi Reader Journal](journal-reader-namespace-types.md)
--   [Definizione dello schema Reader Journal](journal-reader-schema-definition.md)
+-   [Elementi dello spazio dei nomi del lettore journal](journal-reader-namespace-elements.md)
+-   [Tipi di spazio dei nomi del lettore journal](journal-reader-namespace-types.md)
+-   [Definizione dello schema del lettore di journal](journal-reader-schema-definition.md)
 
  
 

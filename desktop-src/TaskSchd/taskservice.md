@@ -1,10 +1,10 @@
 ---
 title: Oggetto TaskService
-description: Per gli script, fornisce l'accesso al servizio Utilità di pianificazione per la gestione delle attività registrate.
+description: Per lo scripting, fornisce l'accesso al Utilità di pianificazione per la gestione delle attività registrate.
 ms.assetid: 6ddd43dc-d027-4792-a53b-07fe4d4a3576
 keywords:
-- Utilità di pianificazione oggetto TaskService
-- Oggetto TaskService Utilità di pianificazione, descritto
+- Oggetto TaskService Utilità di pianificazione
+- Oggetto TaskService Utilità di pianificazione , descritto
 topic_type:
 - apiref
 api_name:
@@ -16,38 +16,38 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 762cd2445c3c6b720bba0f01ae48b787abc1fb38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74f20840a5580d0188354ca6b65ab3ce5b7402d57ea7346462d2f990ecfe34cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658651"
 ---
 # <a name="taskservice-object"></a>Oggetto TaskService
 
-Per gli script, fornisce l'accesso al servizio Utilità di pianificazione per la gestione delle attività registrate.
+Per lo scripting, fornisce l'accesso al Utilità di pianificazione per la gestione delle attività registrate.
 
-Prima di chiamare uno degli altri metodi **TaskService** , è necessario chiamare il metodo [**TaskService. Connect**](taskservice-connect.md) .
+Il [**metodo TaskService.Connessione**](taskservice-connect.md) deve essere chiamato prima di chiamare qualsiasi altro **metodo TaskService.**
 
 ## <a name="members"></a>Membri
 
-L'oggetto **TaskService** dispone di questi tipi di membri:
+**L'oggetto TaskService** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **TaskService** dispone di questi metodi.
+**L'oggetto TaskService** dispone di questi metodi.
 
 
 
 | Metodo                                                 | Descrizione                                                                                                                                                                                                          |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Connettersi**](taskservice-connect.md)                 | Si connette a un computer remoto e associa tutte le chiamate successive a questa interfaccia con una sessione remota.<br/>                                                                                                 |
+| [**Connettere**](taskservice-connect.md)                 | Si connette a un computer remoto e associa tutte le chiamate successive su questa interfaccia a una sessione remota.<br/>                                                                                                 |
 | [**GetFolder**](taskservice-getfolder.md)             | Ottiene il percorso di una cartella di attività registrate.<br/>                                                                                                                                                            |
 | [**GetRunningTasks**](taskservice-getrunningtasks.md) | Ottiene una raccolta di attività in esecuzione.<br/>                                                                                                                                                                       |
-| [**NewTask**](taskservice-newtask.md)                 | Restituisce un oggetto definizione di attività vuoto da compilare con le impostazioni e le proprietà e quindi registrato utilizzando il metodo [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) .<br/> |
+| [**NewTask**](taskservice-newtask.md)                 | Restituisce un oggetto definizione di attività vuoto da riempire con impostazioni e proprietà e quindi registrato usando il [**metodo TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md)<br/> |
 
 
 
@@ -55,17 +55,17 @@ L'oggetto **TaskService** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **TaskService** dispone di queste proprietà.
+**L'oggetto TaskService** ha queste proprietà.
 
 
 
 | Proprietà                                                          | Descrizione                                                                                                                 |
 |:------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
-| [**Connesso**](taskservice-connected.md)<br/>             | Ottiene un valore booleano che indica se si è connessi al servizio Utilità di pianificazione.<br/>                          |
-| [**ConnectedDomain**](taskservice-connecteddomain.md)<br/> | Ottiene il nome del dominio a cui è connesso il computer [**TargetServer**](taskservice-targetserver.md) .<br/> |
-| [**ConnectedUser**](taskservice-connecteduser.md)<br/>     | Ottiene il nome dell'utente connesso al servizio Utilità di pianificazione.<br/>                                       |
-| HighestVersion<br/>                                         | Ottiene la versione più recente di Utilità di pianificazione supportata da un computer.<br/>                                             |
-| [**TargetServer**](taskservice-targetserver.md)<br/>       | Ottiene il nome del computer in cui è in esecuzione il servizio Utilità di pianificazione a cui è connesso l'utente.<br/>          |
+| [**Connesso**](taskservice-connected.md)<br/>             | Ottiene un valore booleano che indica se si è connessi al Utilità di pianificazione servizio.<br/>                          |
+| [**ConnectedDomain**](taskservice-connecteddomain.md)<br/> | Ottiene il nome del dominio a cui è connesso il computer [**TargetServer.**](taskservice-targetserver.md)<br/> |
+| [**ConnectedUser**](taskservice-connecteduser.md)<br/>     | Ottiene il nome dell'utente connesso al Utilità di pianificazione servizio.<br/>                                       |
+| HighestVersion<br/>                                         | Ottiene la versione più elevata Utilità di pianificazione supportata da un computer.<br/>                                             |
+| [**TargetServer**](taskservice-targetserver.md)<br/>       | Ottiene il nome del computer che esegue il servizio Utilità di pianificazione cui l'utente è connesso.<br/>          |
 
 
 
@@ -73,7 +73,7 @@ L'oggetto **TaskService** dispone di queste proprietà.
 
 ## <a name="examples"></a>Esempio
 
-Per ulteriori informazioni e codice di esempio per questo oggetto di scripting, vedere [esempio di trigger di ora (scripting)](time-trigger-example--scripting-.md), [esempio di trigger di evento (scripting)](https://www.bing.com/search?q=Event+Trigger+Example+(Scripting)), [esempio di trigger giornaliero (scripting)](daily-trigger-example--scripting-.md), esempio di trigger di [registrazione (script)](registration-trigger-example--scripting-.md), esempio di [trigger settimanale (scripting)](weekly-trigger-example--scripting-.md), [esempio di trigger LOGON (scripting](logon-trigger-example--scripting-.md)), [esempio di trigger di avvio (](boot-trigger-example--scripting-.md)scripting) o [visualizzazione di nomi e Stati delle attività (script)](displaying-task-names-and-state--scripting-.md).
+Per altre informazioni e codice di esempio per questo oggetto di scripting, vedere Time [Trigger Example (Scripting)](time-trigger-example--scripting-.md), [Event Trigger Example (Scripting)](https://www.bing.com/search?q=Event+Trigger+Example+(Scripting)), [Daily Trigger Example (Scripting)](daily-trigger-example--scripting-.md), [Registration Trigger Example (Scripting)](registration-trigger-example--scripting-.md), [Weekly Trigger Example (Scripting)](weekly-trigger-example--scripting-.md), [Logon Trigger Example (Scripting)](logon-trigger-example--scripting-.md), [Boot Trigger Example (Scripting)](boot-trigger-example--scripting-.md)o [Displaying Task Names and States (Scripting)](displaying-task-names-and-state--scripting-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,9 +81,9 @@ Per ulteriori informazioni e codice di esempio per questo oggetto di scripting, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

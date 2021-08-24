@@ -1,9 +1,9 @@
 ---
-title: Metodi di IDCompositionRotateTransform3D (Dcomp. h)
-description: Modifica o aggiunge un'animazione al valore della proprietà centrale di una trasformazione di rotazione 3D. La proprietà CenterY specifica la coordinata y del punto su cui viene eseguita la rotazione. Il valore predefinito è zero.
+title: Metodi IDCompositionRotateTransform3D SetCenterY (Dcomp.h)
+description: Modifica o aggiunge un'animazione al valore della proprietà CenterY di una trasformazione di rotazione 3D. La proprietà CenterY specifica la coordinata y del punto intorno al quale viene eseguita la rotazione. Il valore predefinito è zero.
 ms.assetid: 19B3B065-BE8C-4CBD-8A94-54934CA0B421
 keywords:
-- Metodi di DirectComposition
+- Metodi SetCenterY DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c492e926ebb2dc6355ce1a3acfa68090dfd560f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ea3ff52abd6b90e79b270b4e5d2e447a672380b79f4427ef74e755e3e2c5bed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844388"
 ---
-# <a name="idcompositionrotatetransform3dsetcentery-methods"></a>Metodi IDCompositionRotateTransform3D:: secentery
+# <a name="idcompositionrotatetransform3dsetcentery-methods"></a>Metodi IDCompositionRotateTransform3D::SetCenterY
 
-Modifica o aggiunge un'animazione al valore della proprietà centrale di una trasformazione di rotazione 3D. La proprietà CenterY specifica la coordinata y del punto su cui viene eseguita la rotazione. Il valore predefinito è zero.
+Modifica o aggiunge un'animazione al valore della proprietà CenterY di una trasformazione di rotazione 3D. La proprietà CenterY specifica la coordinata y del punto intorno al quale viene eseguita la rotazione. Il valore predefinito è zero.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Modifica o aggiunge un'animazione al valore della proprietà centrale di una tra
 
 | Metodo                                                                                                           | Descrizione                                            |
 |:-----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**Secentery (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(float))                                     | Modifica il valore della proprietà centrale.<br/>  |
-| [**SetCenterX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà centrale.<br/> |
+| [**SetCenterY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(float))                                     | Modifica il valore della proprietà CenterY.<br/>  |
+| [**SetCenterX(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà CenterY.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Modifica o aggiunge un'animazione al valore della proprietà centrale di una tra
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

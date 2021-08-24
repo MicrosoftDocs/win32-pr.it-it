@@ -1,5 +1,5 @@
 ---
-description: Il metodo StartService posiziona il servizio nello stato started.
+description: Il metodo StartService posiziona il servizio nello stato avviato.
 ms.assetid: 0f221db1-29ad-4071-98d3-6d06e4f5e026
 ms.tgt_platform: multiple
 title: Metodo StartService della classe Win32_PrinterDriver
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 44e6fedb9e1d0edd9f355c654c7fe2cd25760ec7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fe5afb79f2c5d74f2e9a68093cb98ac0b8597d767a747c8bd66b766ba72dd00f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752381"
 ---
-# <a name="startservice-method-of-the-win32_printerdriver-class"></a>Metodo StartService della \_ classe PrinterDriver Win32
+# <a name="startservice-method-of-the-win32_printerdriver-class"></a>Metodo StartService della classe PrinterDriver Win32 \_
 
-Il metodo **StartService** posiziona il servizio nello stato started.
+Il **metodo StartService** posiziona il servizio nello stato avviato.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per i valori diversi da quelli elencati nell'elenco seguente, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per valori diversi da quelli elencati nell'elenco seguente, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Richiesta non supportata.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -78,10 +78,10 @@ Richiesta non supportata.
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PrinterDriver Win32**](win32-printerdriver.md)
+[**Win32 \_ PrinterDriver**](win32-printerdriver.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 440246fb47a851f9f5339c72a484a2cb59e8f662
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ccdc8644f63bdb048f6caa97ef635165a11a4473f549214410558583c8f807c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754261"
 ---
 # <a name="d3dxplane-structure-d3dx10mathh"></a>Struttura D3DXPLANE (D3DX10Math.h)
 
@@ -88,7 +88,7 @@ Coefficiente d del piano di ritaglio nell'equazione del piano generale. Vedere l
 
 ## <a name="remarks"></a>Commenti
 
-I membri della struttura **D3DXPLANE** hanno la forma dell'equazione del piano generale. Rientrano nell'equazione del piano generale in modo che ax + by + cz + dw = 0.
+I membri della struttura **D3DXPLANE** hanno la forma dell'equazione del piano generale. Si adattano all'equazione del piano generale in modo che ax + by + cz + dw = 0.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,9 +1,9 @@
 ---
 title: Evento PlaylistCollectionPlaylistSetAsDeleted dell'oggetto AxWindowsMediaPlayer
-description: L'evento PlaylistCollectionPlaylistSetAsDeleted è riservato per un utilizzo futuro.
+description: L'evento PlaylistCollectionPlaylistSetAsDeleted è riservato per un uso futuro.
 ms.assetid: 6c0a4d2c-e965-4a88-acd4-2a2a12265e36
 keywords:
-- Evento PlaylistCollectionPlaylistSetAsDeleted dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento PlaylistCollectionPlaylistSetAsDeleted dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf432ede40298abed98cdf0c5b02b0a192f7b3a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b11187ffaf6e16612ba7edb573e0b0bc71e9d2abf44ee509db2404026e3ed570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864580"
 ---
 # <a name="playlistcollectionplaylistsetasdeleted-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistSetAsDeleted dell'oggetto AxWindowsMediaPlayer
 
-L'evento PlaylistCollectionPlaylistSetAsDeleted è riservato per un utilizzo futuro.
+L'evento PlaylistCollectionPlaylistSetAsDeleted è riservato per un uso futuro.
 
 ``` syntax
 [C#]
@@ -41,14 +41,14 @@ Private Sub player_PlaylistCollectionPlaylistSetAsDeleted(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_PlaylistCollectionPlaylistSetAsDeletedEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ PlaylistCollectionPlaylistSetAsDeletedEvent**, che contiene le seguenti proprietà correlate a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ Playlist Di \_ WMPOCXEventsCollectionPlaylistSetAsDeletedEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ \_PlaylistCollectionPlaylistSetAsDeletedEvent di WMPOCXEvents** che contiene le proprietà seguenti correlate a questo evento.
 
 
 
 | Proprietà         | Descrizione                                 |
 |------------------|---------------------------------------------|
-| bstrPlaylistName | **System. String** Non supportato.<br/>  |
-| varfIsDeleted    | **System. Boolean** Non supportato.<br/> |
+| bstrPlaylistName | **System.String** Non supportato.<br/>  |
+| varfIsDeleted    | **System.Boolean** Non supportato.<br/> |
 
 
 
@@ -56,7 +56,7 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_PlaylistCollect
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è riservato per un utilizzo futuro.
+Questo evento è riservato per un uso futuro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo evento è riservato per un utilizzo futuro.
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

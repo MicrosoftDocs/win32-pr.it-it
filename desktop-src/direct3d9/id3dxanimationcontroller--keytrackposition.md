@@ -1,7 +1,7 @@
 ---
-description: Imposta una chiave evento che modifica l'ora locale di una traccia di animazione.
+description: Imposta un tasto evento che modifica l'ora locale di una traccia di animazione.
 ms.assetid: b527e960-8ab9-42a0-bb4d-bea5aaf83424
-title: 'Metodo ID3DXAnimationController:: KeyTrackPosition (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::KeyTrackPosition (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d027069efa9fb49cad3d2344da593eae4c3c844c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e66bac7b5aaa8da87b0cb88e3bfd12469d8aa8b6ec755eaa47268c70da5eadf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791231"
 ---
-# <a name="id3dxanimationcontrollerkeytrackposition-method"></a>Metodo ID3DXAnimationController:: KeyTrackPosition
+# <a name="id3dxanimationcontrollerkeytrackposition-method"></a>Metodo ID3DXAnimationController::KeyTrackPosition
 
-Imposta una chiave evento che modifica l'ora locale di una traccia di animazione.
+Imposta un tasto evento che modifica l'ora locale di una traccia di animazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXEVENTHANDLE KeyTrackPosition(
 
 <dl> <dt>
 
-*Traccia* \[ in\]
+*Tenere traccia* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificatore della traccia da modificare.
 
 </dd> <dt>
 
-*NewPosition* \[ in\]
+*NewPosition* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Nuova ora locale della traccia dell'animazione.
+Nuova ora locale della traccia di animazione.
 
 </dd> <dt>
 
-*StartTime* \[ in\]
+*StartTime* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Chiave temporale globale. Specifica l'ora globale in cui verrà eseguita la modifica.
+Chiave temporale globale. Specifica l'ora globale in cui verrà apportata la modifica.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Chiave temporale globale. Specifica l'ora globale in cui verrà eseguita la modi
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Handle di evento per l'evento di combinazione di priorità. Viene restituito **null** se Track non è valido o se non è disponibile alcun evento free.
+Handle dell'evento per l'evento di combinazione di priorità. **Viene** restituito NULL se Track non è valido o se non è disponibile alcun evento gratuito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Handle di evento per l'evento di combinazione di priorità. Viene restituito **n
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

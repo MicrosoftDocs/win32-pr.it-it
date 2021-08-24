@@ -4,48 +4,48 @@ ms.assetid: 2e003ad4-9fcb-4834-a335-e4969ffd3a00
 title: Generatori di eventi multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 125bf165740b0260f9131e0df8af420c8a669d97
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b24bd37b347fb06f97448b43241a1da40123195b63b9191b97581be60d7378ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724161"
 ---
 # <a name="media-event-generators"></a>Generatori di eventi multimediali
 
-Media Foundation consente agli oggetti di inviare eventi in modo coerente. Un oggetto può usare gli eventi per segnalare il completamento di un metodo asincrono o per notificare all'applicazione una modifica nello stato dell'oggetto.
+Media Foundation un modo coerente per gli oggetti di inviare eventi. Un oggetto può usare eventi per segnalare il completamento di un metodo asincrono o per notificare all'applicazione una modifica nello stato dell'oggetto.
 
-Se un oggetto invia eventi, espone l'interfaccia [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) . Ogni volta che l'oggetto invia un nuovo evento, l'evento viene inserito in una coda. L'applicazione può richiedere l'evento successivo dalla coda chiamando uno dei metodi seguenti:
+Se un oggetto invia eventi, espone [**l'interfaccia IMFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Ogni volta che l'oggetto invia un nuovo evento, l'evento viene inserito in una coda. L'applicazione può richiedere l'evento successivo dalla coda chiamando uno dei metodi seguenti:
 
--   [**IMFMediaEventGenerator:: GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent)
+-   [**IMFMediaEventGenerator::GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent)
 
 -   [**IMFMediaEventGenerator::BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent)
 
-Il metodo [**GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent) è sincrono. Se un evento è già presente nella coda, il metodo restituisce immediatamente un risultato. Se nella coda non è presente alcun evento, il metodo ha esito negativo immediatamente oppure si blocca fino a quando l'evento successivo non viene accodato, a seconda del flag passato a **GetEvent**.
+Il [**metodo GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent) è sincrono. Se un evento è già presente nella coda, il metodo restituisce immediatamente un risultato. Se non è presente alcun evento nella coda, il metodo ha esito negativo immediatamente o si blocca fino a quando l'evento successivo non viene accodato, a seconda del flag passato a **GetEvent.**
 
-Il metodo [**BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent) è asincrono, pertanto non viene mai bloccato. Questo metodo accetta un puntatore all'interfaccia [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) , che deve essere implementata dall'applicazione. Quando viene richiamato il callback, l'applicazione chiama [**IMFMediaEventGenerator:: EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) per ottenere l'evento dalla coda. Per altre informazioni su **IMFAsyncCallback**, vedere [metodi di callback asincroni](asynchronous-callback-methods.md).
+Il [**metodo BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent) è asincrono, quindi non si blocca mai. Questo metodo accetta un puntatore [**all'interfaccia IMFAsyncCallback,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) che l'applicazione deve implementare. Quando viene richiamato il callback, l'applicazione chiama [**IMFMediaEventGenerator::EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) per ottenere l'evento dalla coda. Per altre informazioni su **IMFAsyncCallback,** vedere [Metodi di callback asincroni.](asynchronous-callback-methods.md)
 
-Gli eventi sono rappresentati dall'interfaccia [**IMFMediaEvent**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) . Questa interfaccia presenta i metodi seguenti:
+Gli eventi sono rappresentati [**dall'interfaccia IMFMediaEvent.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) Questa interfaccia dispone dei metodi seguenti:
 
--   [**GetType**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype): Recupera il tipo di evento. Il tipo di evento indica che cosa è successo ad attivare l'evento.
+-   [**GetType:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype)recupera il tipo di evento. Il tipo di evento indica cosa è successo per attivare l'evento.
 
--   [**GetStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus): Recupera un valore **HRESULT** che indica se l'operazione che ha attivato l'evento è stata eseguita correttamente. Se un'operazione ha esito negativo in modo asincrono, **GetStatus** restituisce un codice di errore.
+-   [**GetStatus:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus)recupera un valore **HRESULT** che indica se l'operazione che ha attivato l'evento è riuscita. Se un'operazione non riesce in modo asincrono, **GetStatus** restituisce un codice di errore.
 
--   [**GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue): Recupera un **PROPVARIANT** che contiene i dati dell'evento. I dati dell'evento dipendono dal tipo di evento. Alcuni eventi non contengono dati.
+-   [**GetValue:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue)recupera un oggetto **PROPVARIANT** che contiene i dati dell'evento. I dati dell'evento dipendono dal tipo di evento. Alcuni eventi non hanno dati.
 
--   [**GetExtendedType**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getextendedtype): Recupera un **GUID**. Questo metodo si applica all' [evento MEExtendedType](meextendedtype.md)e fornisce un modo per definire eventi personalizzati.
+-   [**GetExtendedType:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getextendedtype)recupera un **GUID**. Questo metodo si applica [all'evento MEExtendedType](meextendedtype.md)e consente di definire eventi personalizzati.
 
-L'interfaccia [**IMFMediaEvent**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) eredita anche l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Alcuni eventi contengono informazioni aggiuntive come attributi.
+[**L'interfaccia IMFMediaEvent**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) eredita anche [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Alcuni eventi trasportano informazioni aggiuntive come attributi.
 
-Per un elenco dei tipi di evento e i relativi dati e attributi associati, vedere [eventi Media Foundation](media-foundation-events.md).
+Per un elenco dei tipi di evento e dei relativi dati e attributi associati, [vedere Media Foundation eventi](media-foundation-events.md).
 
 ## <a name="implementing-imfmediaeventgenerator"></a>Implementazione di IMFMediaEventGenerator
 
-Se si sta scrivendo un componente plug-in per Media Foundation, ad esempio un'origine multimediale personalizzata o un sink multimediale, potrebbe essere necessario implementare [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator). Per semplificare questa operazione, Media Foundation fornisce un oggetto helper che implementa una coda degli eventi. Creare la coda degli eventi chiamando la funzione [**MFCreateEventQueue**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateeventqueue) . La coda degli eventi espone l'interfaccia [**IMFMediaEventQueue**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventqueue) . Nell'implementazione dell'oggetto dei metodi **IMFMediaEventGenerator** , chiamare il metodo corrispondente nella coda degli eventi.
+Se si scrive un componente plug-in per Media Foundation, ad esempio un'origine multimediale personalizzata o un sink multimediale, potrebbe essere necessario implementare [**IMFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Per semplificare questa operazione, Media Foundation un oggetto helper che implementa una coda di eventi. Creare la coda eventi chiamando la [**funzione MFCreateEventQueue.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateeventqueue) La coda eventi espone [**l'interfaccia IMFMediaEventQueue.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventqueue) Nell'implementazione dell'oggetto dei **metodi IMFMediaEventGenerator** chiamare il metodo corrispondente nella coda degli eventi.
 
-L'oggetto coda di eventi è thread-safe. Non mantenere mai lo stesso oggetto sezione critica quando si chiamano [**GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-getevent) e [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent), perché **GetEvent** potrebbe bloccarsi per un tempo indefinito in attesa di [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueevent). Se si tiene la stessa sezione critica per entrambi i metodi, verrà generato un deadlock.
+L'oggetto coda eventi è thread-safe. Non mantenere mai lo stesso oggetto sezione critica quando si chiamano [**GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-getevent) e [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent), perché **GetEvent** potrebbe bloccarsi per un periodo illimitato in attesa di [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueevent). Se si contiene la stessa sezione critica per entrambi i metodi, si verifica un deadlock.
 
-Prima di rilasciare la coda degli eventi, chiamare [**IMFMediaEventQueue:: Shutdown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-shutdown) per rilasciare le risorse detenute dall'oggetto.
+Prima di rilasciare la coda di eventi, chiamare [**IMFMediaEventQueue::Shutdown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-shutdown) per rilasciare le risorse che l'oggetto contiene.
 
 Quando l'oggetto deve generare un evento, chiamare uno dei metodi seguenti nella coda degli eventi:
 
@@ -55,9 +55,9 @@ Quando l'oggetto deve generare un evento, chiamare uno dei metodi seguenti nella
 
 -   [**IMFMediaEventQueue::QueueEventParamUnk**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueeventparamunk)
 
-Questi metodi inseriscono un nuovo evento nella coda e segnalano qualsiasi chiamante in attesa dell'evento successivo.
+Questi metodi consentono di inserire un nuovo evento nella coda e di segnalare qualsiasi chiamante in attesa dell'evento successivo.
 
-Nel codice seguente viene illustrata una classe che implementa [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) utilizzando questo oggetto helper. Questa classe definisce un metodo di **arresto** pubblico che arresta la coda degli eventi e rilascia il puntatore della coda degli eventi. Questo comportamento è tipico per le origini dei supporti e i sink multimediali, che hanno sempre un metodo di **arresto** .
+Il codice seguente illustra una classe che implementa [**IMFMediaEventGenerator usando**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) questo oggetto helper. Questa classe definisce un metodo **Shutdown** pubblico che arresta la coda degli eventi e rilascia il puntatore della coda di eventi. Questo comportamento è tipico per le origini multimediali e i sink multimediali, che hanno sempre un **metodo Shutdown.**
 
 
 ```C++
@@ -213,7 +213,7 @@ private:
 
 <dl> <dt>
 
-[API della piattaforma Media Foundation](media-foundation-platform-apis.md)
+[API Media Foundation platform](media-foundation-platform-apis.md)
 </dt> </dl>
 
  

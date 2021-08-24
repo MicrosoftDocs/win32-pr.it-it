@@ -9,12 +9,12 @@ keywords:
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: da0e83639eaa92e84dd076e797431d5f7138245c
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 223e5985b7282efd3349cd412279510f476315fb078ea459e524e80d703474ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825321"
 ---
 # <a name="dns-structures"></a>Strutture DNS
 

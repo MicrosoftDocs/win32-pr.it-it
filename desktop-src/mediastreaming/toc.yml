@@ -1,4 +1,4 @@
-- name: API di streaming multimediale
+- name: API Streaming multimediale
   href: media-streaming-api-portal.md
   items:
     - name: Classi
@@ -19,19 +19,19 @@
               href: activebasicdevice-isaudiosupported.md
             - name: Proprietà IsImageSupported
               href: activebasicdevice-isimagesupported.md
-            - name: Proprietà IsMuteSupported
+            - name: IsMuteSupported - proprietà
               href: activebasicdevice-ismutesupported.md
-            - name: Proprietà IsSearchSupported
+            - name: IsSearchSupported - proprietà
               href: activebasicdevice-issearchsupported.md
-            - name: Proprietà IsSetNextSourceSupported
+            - name: IsSetNextSourceSupported - proprietà
               href: activebasicdevice-issetnextsourcesupported.md
             - name: Proprietà IsVideoSupported
               href: activebasicdevice-isvideosupported.md
-            - name: Proprietà LogicalNetworkInterface
+            - name: LogicalNetworkInterface - proprietà
               href: activebasicdevice-logicalnetworkinterface.md
-            - name: Proprietà MaxVolume
+            - name: MaxVolume - proprietà
               href: activebasicdevice-maxvolume.md
-            - name: Proprietà PhysicalNetworkInterface
+            - name: PhysicalNetworkInterface - proprietà
               href: activebasicdevice-physicalnetworkinterface.md
             - name: Metodo SetCachedBitrateMeasurement
               href: activebasicdevice-setcachedbitratemeasurement.md
@@ -40,7 +40,7 @@
         - name: BasicDevice
           href: /previous-versions/windows/desktop/legacy/hh828813(v=vs.85)
           items:
-            - name: Metodo add_ConnectionStatusChanged
+            - name: metodo add_ConnectionStatusChanged
               href: basicdevice-add-connectionstatuschanged.md
             - name: Proprietà CanWakeDevices
               href: basicdevice-canwakedevices.md
@@ -52,11 +52,11 @@
               href: basicdevice-discoveredoncurrentnetwork.md
             - name: Proprietà FriendlyName
               href: basicdevice-friendlyname.md
-            - name: Proprietà icons
+            - name: Proprietà Icons
               href: basicdevice-icons.md
             - name: Proprietà IpAddresses
               href: basicdevice-ipaddresses.md
-            - name: Proprietà manufacturname
+            - name: Proprietà ManufacturerName
               href: basicdevice-manufacturername.md
             - name: Proprietà ManufacturerUrl
               href: basicdevice-manufacturerurl.md
@@ -70,77 +70,77 @@
               href: basicdevice-presentationurl.md
             - name: Proprietà RemoteStreamingUrls
               href: basicdevice-remotestreamingurls.md
-            - name: Metodo remove_ConnectionStatusChanged
+            - name: metodo remove_ConnectionStatusChanged
               href: basicdevice-remove-connectionstatuschanged.md
             - name: Proprietà SerialNumber
               href: basicdevice-serialnumber.md
-            - name: Type (proprietà)
+            - name: Proprietà Type
               href: basicdevice-type.md
             - name: Proprietà UniqueDeviceName
               href: basicdevice-uniquedevicename.md
         - name: CreateMediaRendererOperation
           href: createmediarendereroperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: createmediarendereroperation-completed.md
             - name: Metodo GetResults
               href: createmediarendereroperation-getresults.md
         - name: DeviceController
           href: /previous-versions/windows/desktop/legacy/hh828842(v=vs.85)
           items:
-            - name: Metodo add_DeviceArrival
+            - name: metodo add_DeviceArrival
               href: /previous-versions/windows/desktop/legacy/hh828845(v=vs.85)
-            - name: Metodo add_DeviceDeparture
+            - name: metodo add_DeviceDeparture
               href: /previous-versions/hh828846(v=vs.85)
             - name: Metodo AddDevice
               href: /previous-versions/windows/desktop/legacy/hh828844(v=vs.85)
             - name: Metodo CachedDevices
               href: devicecontroller-cacheddevices.md
-            - name: Metodo remove_DeviceArrival
+            - name: metodo remove_DeviceArrival
               href: /previous-versions/windows/desktop/legacy/hh828849(v=vs.85)
-            - name: Metodo remove_DeviceDeparture
+            - name: metodo remove_DeviceDeparture
               href: /previous-versions/windows/desktop/legacy/hh828850(v=vs.85)
             - name: Metodo RemoveDevice
               href: /previous-versions/windows/desktop/legacy/hh828848(v=vs.85)
         - name: DevicePair
           href: /previous-versions/windows/desktop/legacy/dn385771(v=vs.85)
           items:
-            - name: Renderer (proprietà)
+            - name: Renderer - proprietà
               href: devicepair-renderer.md
             - name: proprietà del server
               href: devicepair-server.md
         - name: GetMuteOperation
           href: getmuteoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: getmuteoperation-completed.md
             - name: Metodo GetResults
               href: getmuteoperation-getresults.md
         - name: GetPositionInformationOperation
           href: getpositioninformationoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: getpositioninformationoperation-completed.md
             - name: Metodo GetResults
               href: getpositioninformationoperation-getresults.md
         - name: GetStreamPropertiesOperation
           href: getstreampropertiesoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: getstreampropertiesoperation-completed.md
             - name: Metodo GetResults
               href: getstreampropertiesoperation-getresults.md
         - name: GetTransportInformationOperation
           href: gettransportinformationoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: gettransportinformationoperation-completed.md
             - name: Metodo GetResults
               href: gettransportinformationoperation-getresults.md
         - name: GetVolumeOperation
           href: getvolumeoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: getvolumeoperation-completed.md
             - name: Metodo GetResults
               href: getvolumeoperation-getresults.md
@@ -149,9 +149,9 @@
           items:
             - name: Proprietà ActionInformation
               href: mediarenderer-actioninformation.md
-            - name: Metodo add_RenderingParametersUpdate
+            - name: metodo add_RenderingParametersUpdate
               href: /previous-versions/windows/desktop/legacy/hh828962(v=vs.85)
-            - name: Metodo add_TransportParametersUpdate
+            - name: metodo add_TransportParametersUpdate
               href: /previous-versions/windows/desktop/legacy/hh828963(v=vs.85)
             - name: Metodo GetMuteAsync
               href: /previous-versions/windows/desktop/legacy/hh828964(v=vs.85)
@@ -173,9 +173,9 @@
               href: /previous-versions/windows/desktop/legacy/hh828972(v=vs.85)
             - name: Metodo PlayAtSpeedAsync
               href: /previous-versions/windows/desktop/legacy/hh828973(v=vs.85)
-            - name: Metodo remove_RenderingParametersUpdate
+            - name: metodo remove_RenderingParametersUpdate
               href: /previous-versions/windows/desktop/legacy/hh828974(v=vs.85)
-            - name: Metodo remove_TransportParametersUpdate
+            - name: metodo remove_TransportParametersUpdate
               href: /previous-versions/windows/desktop/legacy/hh828975(v=vs.85)
             - name: Metodo SeekAsync
               href: /previous-versions/windows/desktop/legacy/hh828976(v=vs.85)
@@ -200,14 +200,14 @@
         - name: PlaybackOperation
           href: playbackoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: playbackoperation-completed.md
             - name: Metodo GetResults
               href: playbackoperation-getresults.md
         - name: StreamSelectOperation
           href: streamselectoperation.md
           items:
-            - name: Proprietà completed
+            - name: Proprietà Completed
               href: streamselectoperation-completed.md
             - name: Metodo GetResults
               href: streamselectoperation-getresults.md
@@ -251,7 +251,7 @@
           href: devicedeparture.md
         - name: Evento RenderingParametersUpdate
           href: renderingparametersupdate.md
-        - name: Evento TransportParametersUpdate
+        - name: TransportParametersUpdate Event
           href: transportparametersupdate.md
     - name: Interfacce
       href: interfaces.md
@@ -305,27 +305,27 @@
         - name: IBasicDevice
           href: ibasicdevice.md
           items:
-            - name: Metodo add_ConnectionStatusChanged
+            - name: add_ConnectionStatusChanged metodo
               href: ibasicdevice-add-connectionstatuschanged.md
             - name: Metodo CanWakeDevices
               href: ibasicdevice-canwakedevices.md
             - name: Metodo ConnectionStatus
               href: /previous-versions/windows/desktop/legacy/hh828873(v=vs.85)
-            - name: Description (metodo)
+            - name: Metodo Description
               href: ibasicdevice-description.md
             - name: Metodo DiscoveredOnCurrentNetwork
               href: ibasicdevice-discoveredoncurrentnetwork.md
-            - name: FriendlyName (metodo)
+            - name: Metodo FriendlyName
               href: ibasicdevice-friendlyname.md
-            - name: Icons (metodo)
+            - name: Metodo Icons
               href: ibasicdevice-icons.md
             - name: Metodo IpAddresses
               href: ibasicdevice-ipaddresses.md
-            - name: Costruttorename (metodo)
+            - name: Metodo ManufacturerName
               href: ibasicdevice-manufacturername.md
             - name: Metodo ManufacturerUrl
               href: ibasicdevice-manufacturerurl.md
-            - name: ModelName (metodo)
+            - name: Metodo ModelName
               href: ibasicdevice-modelname.md
             - name: Metodo ModelNumber
               href: ibasicdevice-modelnumber.md
@@ -337,7 +337,7 @@
               href: ibasicdevice-presentationurl.md
             - name: Metodo RemoteStreamingUrls
               href: ibasicdevice-remotestreamingurls.md
-            - name: Metodo remove_ConnectionStatusChanged
+            - name: remove_ConnectionStatusChanged metodo
               href: ibasicdevice-remove-connectionstatuschanged.md
             - name: Metodo SerialNumber
               href: ibasicdevice-serialnumber.md
@@ -348,46 +348,46 @@
         - name: IDeviceController
           href: /previous-versions/windows/desktop/legacy/hh828901(v=vs.85)
           items:
-            - name: Metodo add_DeviceArrival
+            - name: add_DeviceArrival metodo
               href: /previous-versions/windows/desktop/legacy/hh828903(v=vs.85)
-            - name: Metodo add_DeviceDeparture
+            - name: add_DeviceDeparture metodo
               href: /previous-versions/windows/desktop/legacy/hh828904(v=vs.85)
             - name: Metodo AddDevice
               href: /previous-versions/windows/desktop/legacy/hh828902(v=vs.85)
             - name: Metodo CachedDevices
               href: idevicecontroller-cacheddevices.md
-            - name: Metodo remove_DeviceArrival
+            - name: remove_DeviceArrival metodo
               href: /previous-versions/windows/desktop/legacy/hh828907(v=vs.85)
-            - name: Metodo remove_DeviceDeparture
+            - name: remove_DeviceDeparture metodo
               href: /previous-versions/windows/desktop/legacy/hh828908(v=vs.85)
             - name: Metodo RemoveDevice
               href: /previous-versions/windows/desktop/legacy/hh828906(v=vs.85)
         - name: IDeviceIcon
           href: /previous-versions/windows/desktop/legacy/hh828909(v=vs.85)
           items:
-            - name: ContentType (metodo)
+            - name: Metodo ContentType
               href: ideviceicon-contenttype.md
-            - name: Height (metodo)
+            - name: Metodo Height
               href: ideviceicon-height.md
-            - name: Stream (metodo)
+            - name: Metodo Stream
               href: ideviceicon-stream.md
-            - name: Width (metodo)
+            - name: Metodo Width
               href: ideviceicon-width.md
         - name: IDevicePair
           href: /previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-idevicepair
           items:
-            - name: Metodo get_Renderer
+            - name: get_Renderer metodo
               href: /previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-idevicepair-get_renderer
-            - name: Metodo get_Server
+            - name: get_Server metodo
               href: /previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-idevicepair-get_server
         - name: IMediaRenderer
           href: imediarenderer.md
           items:
             - name: Metodo ActionInformation
               href: imediarenderer-actioninformation.md
-            - name: Metodo add_RenderingParametersUpdate
+            - name: add_RenderingParametersUpdate metodo
               href: /previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-add_renderingparametersupdate
-            - name: Metodo add_TransportParametersUpdate
+            - name: add_TransportParametersUpdate metodo
               href: /previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-add_transportparametersupdate
             - name: Metodo GetMuteAsync
               href: /previous-versions/windows/desktop/legacy/hh828930(v=vs.85)
@@ -409,9 +409,9 @@
               href: /previous-versions/windows/desktop/legacy/hh828938(v=vs.85)
             - name: Metodo PlayAtSpeedAsync
               href: /previous-versions/windows/desktop/legacy/hh828939(v=vs.85)
-            - name: Metodo remove_RenderingParametersUpdate
+            - name: remove_RenderingParametersUpdate metodo
               href: /previous-versions/windows/desktop/legacy/hh828940(v=vs.85)
-            - name: Metodo remove_TransportParametersUpdate
+            - name: remove_TransportParametersUpdate metodo
               href: /previous-versions/windows/desktop/legacy/hh828941(v=vs.85)
             - name: Metodo SeekAsync
               href: /previous-versions/windows/desktop/legacy/hh828942(v=vs.85)

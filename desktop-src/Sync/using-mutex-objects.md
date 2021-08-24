@@ -1,27 +1,27 @@
 ---
 description: È possibile usare un oggetto mutex per proteggere una risorsa condivisa dall'accesso simultaneo da più thread o processi.
 ms.assetid: 0f69ba50-69ce-467a-b068-8fd8f07c6c78
-title: Utilizzo di oggetti mutex
+title: Uso di oggetti Mutex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd68f41319125613e8569e7b343c0b1601a7735
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c629d90e1cd811c62f62e1151cee4c3e2af77b84133e142fcfe7f93a35b2e5bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739261"
 ---
-# <a name="using-mutex-objects"></a>Utilizzo di oggetti mutex
+# <a name="using-mutex-objects"></a>Uso di oggetti Mutex
 
-È possibile usare un [oggetto mutex](mutex-objects.md) per proteggere una risorsa condivisa dall'accesso simultaneo da più thread o processi. Ogni thread deve attendere la proprietà del mutex prima di poter eseguire il codice che accede alla risorsa condivisa. Se, ad esempio, più thread condividono l'accesso a un database, i thread possono usare un oggetto mutex per consentire a un solo thread alla volta di scrivere nel database.
+È possibile usare un [oggetto mutex per](mutex-objects.md) proteggere una risorsa condivisa dall'accesso simultaneo da più thread o processi. Ogni thread deve attendere la proprietà del mutex prima di poter eseguire il codice che accede alla risorsa condivisa. Ad esempio, se più thread condividono l'accesso a un database, i thread possono usare un oggetto mutex per consentire la scrittura nel database di un solo thread alla volta.
 
-Nell'esempio seguente viene usata la funzione [**CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) per creare un oggetto mutex e la funzione [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) per creare thread di lavoro.
+Nell'esempio seguente viene utilizzata [**la funzione CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) per creare un oggetto mutex e la [**funzione CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) per creare thread di lavoro.
 
-Quando un thread di questo processo scrive nel database, richiede prima di tutto la proprietà del mutex usando la funzione [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) . Se il thread ottiene la proprietà del mutex, scrive nel database e quindi rilascia la relativa proprietà del mutex utilizzando la funzione [**ReleaseMutex**](/windows/win32/api/synchapi/nf-synchapi-releasemutex) .
+Quando un thread di questo processo scrive nel database, richiede prima la proprietà del mutex usando la [**funzione WaitForSingleObject.**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) Se il thread ottiene la proprietà del mutex, scrive nel database e quindi rilascia la proprietà del mutex usando la [**funzione ReleaseMutex.**](/windows/win32/api/synchapi/nf-synchapi-releasemutex)
 
-In questo esempio viene utilizzata la gestione strutturata delle eccezioni per garantire che il thread rilasci correttamente l'oggetto mutex. Il blocco **\_ \_ finally** del codice viene eseguito indipendentemente dal modo in cui il blocco **\_ \_ try** termina (a meno che il blocco **\_ \_ try** non includa una chiamata alla funzione [**TerminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) ). In questo modo si impedisce che l'oggetto mutex venga abbandonato inavvertitamente.
+In questo esempio viene utilizzata la gestione delle eccezioni strutturata per garantire che il thread rilasci correttamente l'oggetto mutex. Il **\_ \_ blocco di** codice finally viene eseguito indipendentemente dal modo in cui termina il blocco **\_ \_ try** (a meno che il blocco **\_ \_ try** non includa una chiamata alla funzione [**TerminateThread).**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) In questo modo si impedisce che l'oggetto mutex venga abbandonato inavvertitamente.
 
-Se un mutex viene abbandonato, il thread di proprietà del mutex non lo rilascia correttamente prima di terminare. In questo caso, lo stato della risorsa condivisa è indeterminato e la continuazione dell'utilizzo del mutex può nascondere un errore potenzialmente grave. Alcune applicazioni potrebbero tentare di ripristinare lo stato coerente della risorsa; in questo esempio viene semplicemente restituito un errore e viene interrotto l'utilizzo del mutex. Per ulteriori informazioni, vedere [oggetti mutex](mutex-objects.md).
+Se un mutex viene abbandonato, il thread proprietario del mutex non lo ha rilasciato correttamente prima della chiusura. In questo caso, lo stato della risorsa condivisa è indeterminato e continuare a usare il mutex può nascondere un errore potenzialmente grave. Alcune applicazioni potrebbero tentare di ripristinare lo stato coerente della risorsa. Questo esempio restituisce semplicemente un errore e interrompe l'uso del mutex. Per altre informazioni, vedere [Oggetti Mutex](mutex-objects.md).
 
 
 ```C++

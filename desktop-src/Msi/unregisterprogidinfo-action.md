@@ -1,27 +1,27 @@
 ---
-description: L'azione UnregisterProgIdInfo gestisce l'annullamento della registrazione delle informazioni del ProgId OLE con il sistema.
+description: L'azione UnregisterProgIdInfo gestisce l'annullamento della registrazione delle informazioni sul ProgId OLE con il sistema.
 ms.assetid: c9837845-4ffc-4496-8330-11b46d27ec7a
 title: Azione UnregisterProgIdInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff880c1d339fc3db3db50bd34d3afb828f65ec07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6666e5648cba220dbb9bbc6e2d50c3959c1d73c98f97dcfd8c45cb3de8d94c82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786961"
 ---
 # <a name="unregisterprogidinfo-action"></a>Azione UnregisterProgIdInfo
 
-L'azione UnregisterProgIdInfo gestisce l'annullamento della registrazione delle informazioni del ProgId OLE con il sistema.
+L'azione UnregisterProgIdInfo gestisce l'annullamento della registrazione delle informazioni sul ProgId OLE con il sistema.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
-L'azione UnregisterProgIdInfo deve essere successiva all'azione [InstallInitialize](installinitialize-action.md) , [UnregisterClassInfo](unregisterclassinfo-action.md) Action, [UnregisterExtensioninfo](unregisterextensioninfo-action.md) Action e before the [RegisterProgIdInfo](registerprogidinfo-action.md) Action.
+L'azione UnregisterProgIdInfo deve essere eseguita dopo l'azione [InstallInitialize,](installinitialize-action.md) [UnregisterClassInfo,](unregisterclassinfo-action.md) [UnregisterExtensioninfo](unregisterextensioninfo-action.md) e prima dell'azione [RegisterProgIdInfo.](registerprogidinfo-action.md)
 
-[RemoveRegistryValues](removeregistryvalues-action.md) deve precedere UnregisterProgIdInfo nella sequenza.
+[RemoveRegistryValues](removeregistryvalues-action.md) deve essere prima di UnregisterProgIdInfo nella sequenza.
 
-La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di queste azioni si verifica insieme in una tabella di sequenza, è necessario che disponga dello stesso ordine di sequenza relativo, come illustrato:
+La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di queste azioni si verifica insieme in una tabella di sequenze, deve avere lo stesso ordine di sequenza relativo illustrato:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   [UnregisterExtensioninfo](unregisterextensioninfo-action.md)
@@ -32,7 +32,7 @@ La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di 
 -   [RegisterProgIdInfo](registerprogidinfo-action.md)
 -   [RegisterMIMEInfo](registermimeinfo-action.md)
 
-Ad esempio, UnregisterProgIdInfo deve precedere [UnregisterMIMEInfo](unregistermimeinfo-action.md) nella tabella di sequenza.
+Ad esempio, UnregisterProgIdInfo deve essere prima [di UnregisterMIMEInfo](unregistermimeinfo-action.md) nella tabella di sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
@@ -40,7 +40,7 @@ Ad esempio, UnregisterProgIdInfo deve precedere [UnregisterMIMEInfo](unregisterm
 
 | Campo | Descrizione dei dati dell'azione                |
 |-------|-------------------------------------------|
-| \[1\] | Identificatore del programma registrato. |
+| \[1\] | Identificatore di programma del programma registrato. |
 
 
 
@@ -48,7 +48,7 @@ Ad esempio, UnregisterProgIdInfo deve precedere [UnregisterMIMEInfo](unregisterm
 
 ## <a name="remarks"></a>Commenti
 
-L'azione UnregisterProgIdInfo rimuove le informazioni sul ProgId dal registro di sistema ([tabella ProgId](progid-table.md)) per le funzionalità connesse alle informazioni sull'estensione ([tabella di estensione](extension-table.md)) o alle informazioni sulla classe ([tabella delle classi](class-table.md)) e attualmente selezionate per la disinstallazione.
+L'azione UnregisterProgIdInfo rimuove le informazioni progId dal Registro di sistema ( Tabella[ProgId](progid-table.md)) per le funzionalità connesse alle informazioni sull'estensione[(tabella](extension-table.md)di estensione ) o alle informazioni sulla classe[(tabella](class-table.md)class ) e attualmente selezionate per la disinstallazione.
 
  
 

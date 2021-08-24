@@ -1,7 +1,7 @@
 ---
-description: Seleziona una scheda di interfaccia di rete Register.
+description: Seleziona una scheda di interfaccia di rete del registro.
 ms.assetid: 27814a40-6933-498b-a0d2-535698b1e402
-title: Funzione GetNPPBlobFromUI (Netmon. h)
+title: Funzione GetNPPBlobFromUI (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 4ff3887f10d35ec3b66d8eaaf1443140c768ca55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b88c369145d53d32d23773072f878d9834110e705cd8ff623a3726cbb98b88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743881"
 ---
-# <a name="getnppblobfromui-function"></a>GetNPPBlobFromUI (funzione)
+# <a name="getnppblobfromui-function"></a>Funzione GetNPPBlobFromUI
 
-La funzione **GetNPPBlobFromUI** seleziona una scheda di interfaccia di rete Register.
+La **funzione GetNPPBlobFromUI** seleziona una scheda di interfaccia di rete del registro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ DWORD GetNPPBlobFromUI(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
-Handle per una finestra che visualizza la finestra di dialogo **Seleziona rete** .
+Handle per una finestra che visualizza la **finestra di dialogo** Seleziona una rete.
 
 </dd> <dt>
 
-*hFilterBlob* \[ in\]
+*hFilterBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un [*BLOB di filtro*](f.md) usato per limitare le schede di rete visualizzate.
+Handle di un [*BLOB di*](f.md) filtro usato per limitare le schede di interfaccia di rete visualizzate.
 
 </dd> <dt>
 
-*phBlob* \[ out\]
+*phBlob* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'handle del BLOB che rappresenta la scheda di interfaccia di rete selezionata.
@@ -64,25 +64,25 @@ Puntatore all'handle del BLOB che rappresenta la scheda di interfaccia di rete s
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo (l'utente seleziona una scheda di interfaccia di rete), il valore restituito è NMERR \_ Success e il BLOB a cui punta *phBlob* viene compilato.
+Se la funzione ha esito positivo (l'utente seleziona una scheda di interfaccia di rete), il valore restituito è NMERR SUCCESS e il BLOB a cui \_ *punta phBlob* viene compilato.
 
-Se l'utente non seleziona una scheda di interfaccia di rete, il valore restituito è **NMERR non è stato \_ \_ \_ selezionato alcun NPP**.
+Se l'utente non seleziona una scheda di interfaccia di rete, il valore restituito **è NMERR \_ NO \_ NPP \_ SELECTED**.
 
 Se la funzione ha esito negativo, il valore restituito è un altro valore NMERR.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene chiamato, Network Monitor Visualizza la finestra di dialogo **Seleziona rete** che può essere usata per selezionare una scheda di interfaccia di rete. Il BLOB di NPP che rappresenta la scheda di interfaccia di rete viene restituito all'applicazione chiamante.
+Quando viene chiamato, Network Monitor viene visualizzata **la finestra** di dialogo Seleziona una rete, che è possibile usare per selezionare una scheda di interfaccia di rete. Il BLOB NPP che rappresenta la scheda di interfaccia di rete viene restituito all'applicazione chiamante.
 
-Se il BLOB denominato da *hFilterBlob* è un [*BLOB speciale*](s.md), il Finder tenterà di elaborarlo. Un esempio potrebbe essere una chiamata che in precedenza aveva restituito un BLOB speciale dall'oggetto NPP remoto. L'applicazione ha inserito il tag richiesto, il nome del computer \_ . In questa situazione, il Finder passa questo BLOB all'oggetto NPP remoto, che restituisce quindi una tabella di BLOB NPP che rappresenta il computer richiesto. Questi BLOB di NPP remoti verranno visualizzati nella finestra di dialogo.
+Se il BLOB denominato *da hFilterBlob* è un [*BLOB*](s.md)speciale, il finder tenterà di elaborarlo. Un esempio è una chiamata che in precedenza aveva restituito un BLOB speciale dal servizio NPP remoto. L'applicazione ha inserito il tag richiesto, MACHINE \_ NAME. In questo caso, il finder passerebbe questo BLOB all'NPP remoto, che restituirebbe quindi una tabella di BLOB NPP che rappresentano il computer richiesto. Questi BLOB NPP remoti verranno visualizzati nella finestra di dialogo.
 
-Il chiamante deve chiamare la funzione [DestroyBlob](destroyblob.md) , che elimina il BLOB restituito quando non è più necessario.
+Il chiamante deve chiamare [la funzione DestroyBlob,](destroyblob.md) che elimina il BLOB restituito quando non è più necessario.
 
 
 
 | Per altre informazioni su | Vedere                                                                          |
 |----------------------------|------------------------------------------------------------------------------|
-| Tre modi per selezionare le schede di rete  | [Selezione di una scheda di interfaccia di rete](selecting-a-network-interface-card.md) |
+| Tre modi per selezionare le schede di interfaccia di rete  | [Selezione di una scheda di interfaccia di rete](selecting-a-network-interface-card.md) |
 | Specifica di un BLOB di filtro   | [Specifica di un BLOB di filtro](specifying-a-filter-blob.md)                     |
 
 
@@ -97,8 +97,8 @@ Il chiamante deve chiamare la funzione [DestroyBlob](destroyblob.md) , che elimi
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

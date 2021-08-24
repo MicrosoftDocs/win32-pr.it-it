@@ -1,5 +1,5 @@
 ---
-description: Definisce l'elenco delle reti consentite e negate per i computer.
+description: Definisce l'elenco di reti consentite e negate per i computer.
 ms.assetid: 21502c97-36a4-4cd6-9dd0-ee44c4cc522f
 title: Elemento networkFilter (WLANPolicy)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: d78a23ba1a456f1ad45745fcc25580c27de148c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fff0738b8497bd52bee02a04402c77e959e2689c66e47519be20c95a58d56a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684381"
 ---
 # <a name="networkfilter-wlanpolicy-element"></a>Elemento networkFilter (WLANPolicy)
 
-L'elemento networkFilter (WLANPolicy) definisce l'elenco delle reti consentite e negate per i computer.
+L'elemento networkFilter (WLANPolicy) definisce l'elenco di reti consentite e negate per i computer.
 
 ``` syntax
 <xs:element name="networkFilter">
@@ -82,7 +82,7 @@ L'elemento networkFilter (WLANPolicy) definisce l'elenco delle reti consentite e
 </xs:element>
 ```
 
-L'elemento **networkFilter** è definito dall'elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) .
+**L'elemento networkFilter** è definito dall'elemento [**WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -90,12 +90,12 @@ L'elemento **networkFilter** è definito dall'elemento [**WLANPolicy**](wlan-pol
 
 | Elemento                                                                    | Tipo                                                                     | Descrizione                                                                                    |
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [**Elenco serializzazione**](wlan-policyschema-allowlist-networkfilter-element.md)     |                                                                          | Elenco di reti LAN wireless a cui deve essere consentita la connessione di qualsiasi computer. <br/> |
+| [**allowList**](wlan-policyschema-allowlist-networkfilter-element.md)     |                                                                          | Elenco di reti LAN wireless a cui qualsiasi computer deve essere autorizzato a connettersi. <br/> |
 | [**blockList**](wlan-policyschema-blocklist-networkfilter-element.md)     |                                                                          | Elenco di reti LAN wireless a cui un computer non deve connettersi.<br/>              |
 | [**denyAllESS**](wlan-policyschema-denyalless-networkfilter-element.md)   | boolean                                                                  | Specifica se l'accesso a tutte le reti dell'infrastruttura è bloccato. <br/>                     |
 | [**denyAllIBSS**](wlan-policyschema-denyallibss-networkfilter-element.md) | boolean                                                                  | Specifica se l'accesso a tutte le reti ad hoc è bloccato. <br/>                             |
-| [**network**](wlan-policyschema-network-allowlist-element.md)             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Rete consentita. <br/>                                                                |
-| [**network**](wlan-policyschema-network-blocklist-element.md)             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Rete bloccata. <br/>                                                                 |
+| [**Rete**](wlan-policyschema-network-allowlist-element.md)             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una rete consentita. <br/>                                                                |
+| [**Rete**](wlan-policyschema-network-blocklist-element.md)             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una rete bloccata. <br/>                                                                 |
 
 
 
@@ -105,8 +105,8 @@ L'elemento **networkFilter** è definito dall'elemento [**WLANPolicy**](wlan-pol
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -117,13 +117,13 @@ L'elemento **networkFilter** è definito dall'elemento [**WLANPolicy**](wlan-pol
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md)
+[**Criteri WLAN**](wlan-policyschema-wlanpolicy-element.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md)
+[**Criteri WLAN**](wlan-policyschema-wlanpolicy-element.md)
 </dt> </dl>
 
  

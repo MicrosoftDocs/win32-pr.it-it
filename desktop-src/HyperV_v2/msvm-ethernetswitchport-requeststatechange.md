@@ -1,7 +1,7 @@
 ---
 description: 'Metodo RequestStateChange della classe Msvm_EthernetSwitchPort : richiede una modifica dello stato.'
 ms.assetid: 967c1256-d44e-476f-a24e-edcca2b083d2
-title: Metodo RequestStateChange della Msvm_EthernetSwitchPort classe
+title: Metodo RequestStateChange della classe Msvm_EthernetSwitchPort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f83cf73af26e4118a342cce4059dab0a58b4f4c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7538d24218d2cb4a9abc5087b47cae588e02bd40729565a180a13dd1e19edac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789971"
 ---
 # <a name="requeststatechange-method-of-the-msvm_ethernetswitchport-class"></a>Metodo RequestStateChange della classe Msvm \_ EthernetSwitchPort
 
@@ -158,7 +158,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

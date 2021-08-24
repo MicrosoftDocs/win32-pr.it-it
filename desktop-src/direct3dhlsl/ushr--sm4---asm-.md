@@ -1,23 +1,23 @@
 ---
-title: USHR (SM4-ASM)
-description: Spostamento a destra. | USHR (SM4-ASM)
+title: ushr (sm4 - asm)
+description: Maiusc a destra. | ushr (sm4 - asm)
 ms.assetid: 3E7CB515-9D0F-44C7-A770-AD0584631BFE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c48b706afb1223a5289f93b5ca393a89c36e915
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a55343f9c9b4db4fff4b0df7ab4e2a567f25f0eb43e93486fe9c41b89cf68454
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787821"
 ---
-# <a name="ushr-sm4---asm"></a>USHR (SM4-ASM)
+# <a name="ushr-sm4---asm"></a>ushr (sm4 - asm)
 
-Spostamento a destra.
+Maiusc a destra.
 
 
 
-| USHR dest \[ . mask \] , src0 \[ . Swizzle \] , src1. Select \_ Component |
+| ushr dest \[ .mask \] , src0 \[ .swizzle \] , src1.select \_ component |
 |--------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Spostamento a destra.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti da spostare.<br/>                    |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nel \] valore da spostare *src0*.<br/>                 |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componenti da spostare.<br/>                    |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Quantità di spostamento di *src0*.<br/>                 |
 
 
 
@@ -38,9 +38,9 @@ Spostamento a destra.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue uno spostamento a livello di componente di ogni valore a 32 bit in *src0* a destra di un numero di bit unsigned integer fornito da LSB 5 bits (intervallo 0-31) in *src1. Select \_ componente*, inserendo 0. Il risultato di 32 bit per componente viene inserito in *dest*. Il conteggio è un valore scalare applicato a tutti i componenti.
+Questa istruzione esegue uno spostamento a livello di componente di ogni valore a 32 bit in *src0* a destra di un numero di bit intero senza segno fornito dall'intervallo LSB a 5 bit (intervallo 0-31) nel *componente src1.select \_*, inserendo 0. Il risultato a 32 bit per componente viene inserito in *dest*. Il conteggio è un valore scalare applicato a tutti i componenti.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -52,20 +52,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

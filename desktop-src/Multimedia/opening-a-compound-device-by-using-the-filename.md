@@ -1,21 +1,21 @@
 ---
-title: Apertura di un dispositivo composto utilizzando il nome file
-description: Apertura di un dispositivo composto utilizzando il nome file
+title: Apertura di un dispositivo composto tramite il nome file
+description: Apertura di un dispositivo composto tramite il nome file
 ms.assetid: 5199bb68-44be-4fad-af5b-8fe89f27caee
 keywords:
-- mciSendCommand (funzione)
+- MciSendCommand - funzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20eb271658f77c5af4d35db96dd7bdbe6753af08
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9c5ef021c283337c0cea2085d79fefa91667ce1dac095ff7ae17fcc448c9461c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806361"
 ---
-# <a name="opening-a-compound-device-by-using-the-filename"></a>Apertura di un dispositivo composto utilizzando il nome file
+# <a name="opening-a-compound-device-by-using-the-filename"></a>Apertura di un dispositivo composto tramite il nome file
 
-L'esempio seguente mostra come aprire il dispositivo Waveform-Audio specificando un file audio con forma d'onda denominato "TIMPANI". WAV "tramite la funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+L'esempio seguente apre il dispositivo audio waveform specificando un file audio waveform denominato "TIMPANI. WAV" usando la [**funzione mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -43,6 +43,6 @@ wDeviceID = mciOpenParms.wDeviceID;
 
 
 
- 
+ 
 
- 
+ 

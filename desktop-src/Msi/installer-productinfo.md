@@ -1,7 +1,7 @@
 ---
 description: La proprietà ProductInfo è una proprietà di sola lettura che restituisce il valore dell'attributo specificato per un prodotto installato o pubblicato.
 ms.assetid: 144cbba7-ec2b-44cd-acc8-868c210ccebd
-title: Proprietà Installer. ProductInfo (Oemupgex. h)
+title: Proprietà Installer.ProductInfo (Oemupgex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 03ad741dd1c92fe68caccc4582738e54032750e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d04ad49fd8c1cf017131b5ded6be088e6436731b6bd97dd437060d09988d3aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119745291"
 ---
-# <a name="installerproductinfo-property"></a>Proprietà Installer. ProductInfo
+# <a name="installerproductinfo-property"></a>Proprietà Installer.ProductInfo
 
-La proprietà **ProductInfo** è una proprietà di sola lettura che restituisce il valore dell'attributo specificato per un prodotto installato o pubblicato.
+La **proprietà ProductInfo** è una proprietà di sola lettura che restituisce il valore dell'attributo specificato per un prodotto installato o pubblicato.
 
 Questa proprietà è di sola lettura.
 
@@ -39,7 +39,7 @@ propVal = Installer.ProductInfo
 
 ## <a name="remarks"></a>Commenti
 
-La proprietà **ProductInfo** ("LocalPackage") non restituisce necessariamente un percorso al pacchetto memorizzato nella cache. Le installazioni in modalità manutenzione non devono essere richiamate da LocalPackage. Il pacchetto memorizzato nella cache è solo per uso interno.
+La **proprietà ProductInfo** ("LocalPackage") non restituisce necessariamente un percorso al pacchetto memorizzato nella cache. Le installazioni in modalità manutenzione non devono essere richiamate da LocalPackage. Il pacchetto memorizzato nella cache è solo per usi interni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,10 +47,10 @@ La proprietà **ProductInfo** ("LocalPackage") non restituisce necessariamente u
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003 o Windows XP.<br/> |
-| Intestazione<br/>  | <dl> <dt>Oemupgex. h</dt> </dl>                                                                                                                                                                                 |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP.<br/> |
+| Intestazione<br/>  | <dl> <dt>Oemupgex.h</dt> </dl>                                                                                                                                                                                 |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 
@@ -64,7 +64,7 @@ La proprietà **ProductInfo** ("LocalPackage") non restituisce necessariamente u
 [**MsiGetUserInfo**](/windows/desktop/api/Msi/nf-msi-msigetuserinfoa)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

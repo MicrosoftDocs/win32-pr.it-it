@@ -1,58 +1,58 @@
 ---
-title: File di immagine (per dispositivi mobili)
-description: File di immagine (per dispositivi mobili)
+title: File di grafica (dispositivi mobili)
+description: File di grafica (dispositivi mobili)
 ms.assetid: 90393c3c-7952-4f77-96f6-0a0541bded9e
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di immagine per le interfacce, informazioni
-- file di grafica per interfacce, Windows Media Player Mobile
+- Windows Media Player Interfaccia per dispositivi mobili, file di grafica
+- skins, file art
+- file per le interfaccia, grafica
+- file di grafica per le interfaccia, informazioni
+- file di grafica per le interfaccia, Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b84ad1e78a18b84e8836e3a1c3324702945a7fd9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9c88dbe11b93314274df2efe6ce1ecc12803963b265b459d7766313c6dc7b902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104225186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865000"
 ---
-# <a name="art-files-mobile"></a>File di immagine (per dispositivi mobili)
+# <a name="art-files-mobile"></a>File di grafica (dispositivi mobili)
 
-Sarà necessario creare file di grafica per l'interfaccia personalizzata. Sono disponibili diversi tipi di file di immagine che è possibile creare e che devono essere in un formato di file di immagine specifico.
+Sarà necessario creare file di grafica per l'interfaccia. È possibile creare diversi tipi di file di grafica e devono essere in un formato di file di grafica specifico.
 
-La tabella seguente descrive i sette tipi di file di immagine che è possibile creare per l'interfaccia personalizzata.
+La tabella seguente descrive sette tipi di file di grafica che è possibile creare per l'interfaccia.
 
 
 
-| Tipo di file Art                            | Descrizione                                                                                                |
+| Tipo di file art                            | Descrizione                                                                                                |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [File in background](background-file.md)   | Obbligatorio. Lo sfondo è l'immagine su cui si sovrappongono tutte le immagini dei pulsanti                        |
-| [File disabilitato](disabled-file.md)       | Obbligatorio. Immagini utilizzate per indicare che i pulsanti di push non avranno alcun effetto.                                |
-| [File con push](pushed-file.md)           | Obbligatorio. Definisce le immagini visualizzate quando l'utente effettua il push dei pulsanti.                              |
-| [File di area](region-files.md)         | Definisce le bitmap che usano aree dei colori per rappresentare i percorsi di risposta tap per i pulsanti di tipo hit      |
-| [File con privilegi avanzati](super-files.md)           | Definisce le immagini disabilitate per trackbars.                                                                 |
-| [File SeekThumb](seekthumb-file.md)     | Definisce un'immagine da usare insieme a un TrackBar per indicare la posizione corrente nell'elemento multimediale. |
-| [File VolumeThumb](volumethumb-file.md) | Definisce un'immagine da usare insieme a un TrackBar per indicare la posizione del controllo del volume.            |
+| [Background File](background-file.md)   | Obbligatorio. Lo sfondo è l'immagine su cui vengono sovrapposte tutte le immagini dei pulsanti                        |
+| [File disabilitato](disabled-file.md)       | Obbligatorio. Immagini usate per indicare che il push dei pulsanti non avrà alcun effetto.                                |
+| [File di cui è stato push](pushed-file.md)           | Obbligatorio. Definisce le immagini visualizzate quando l'utente preme i pulsanti.                              |
+| [File di area](region-files.md)         | Definisce bitmap che usano aree di colore per rappresentare le posizioni di risposta tocco per i pulsanti di hit type      |
+| [Super Files](super-files.md)           | Definisce le immagini disabilitate per i trackbar.                                                                 |
+| [SeekThumb File](seekthumb-file.md)     | Definisce un'immagine da utilizzare insieme a un trackbar per indicare la posizione corrente nell'elemento multimediale. |
+| [VolumeThumb File](volumethumb-file.md) | Definisce un'immagine da usare in combinazione con un trackbar per indicare la posizione di controllo del volume.            |
 
 
 
  
 
-Nelle sezioni seguenti vengono fornite ulteriori informazioni sui file di immagine.
+Le sezioni seguenti forniscono altre informazioni sui file di grafica.
 
--   [Formati di file di immagine](art-file-formats-mobile.md)
--   [Tavolozze dei colori](color-palettes.md)
+-   [Formati di file di grafica](art-file-formats-mobile.md)
+-   [Tavolozze](color-palettes.md)
 -   [Dimensioni delle immagini](image-sizes.md)
--   [Posizionamento pulsante](button-placement.md)
+-   [Posizionamento dei pulsanti](button-placement.md)
 
-Per ulteriori informazioni sui tipi di file di immagine e su come identificarli nel file di definizione della pelle, vedere la sezione [bitmap](bitmaps.md) del riferimento all'interfaccia.
+Per altre informazioni sui tipi di file di grafica e su come identificarli nel file di definizione dell'interfaccia, vedere la [sezione Bitmaps (Bitmap)](bitmaps.md) di Informazioni di riferimento sull'interfaccia.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Informazioni sulle interfacce**](about-skins-mobile.md)
+[**Informazioni sulle interfaccia**](about-skins-mobile.md)
 </dt> </dl>
 
  

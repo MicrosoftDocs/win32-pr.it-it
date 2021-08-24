@@ -4,12 +4,12 @@ ms.assetid: 2f6c51a3-003c-4d68-9e4d-9be5d325a477
 title: Connessione di PrintCapabilities con lo schema di stampa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 661a8eb93c6f788381713c0c6620e8a09a53648f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 65b82efc36798cc39439ff1dcf30d10c02b33aaa7ca4b0e92be5ce3e305875dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720151"
 ---
 # <a name="connecting-printcapabilities-with-the-print-schema"></a>Connessione di PrintCapabilities con lo schema di stampa
 
@@ -17,7 +17,7 @@ Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Sp
 
 Lo schema PrintCapabilities generale illustra la struttura, lo scopo e l'uso dei vari tipi di elementi. Specifica l'attributo name usato per definire istanze specifiche di ogni tipo di elemento. Specifica che gli autori printcapabilities possono usare istanze di elementi definiti dalle parole chiave dello schema di stampa oppure possono introdurre le proprie istanze definite privatamente, purché queste istanze definite privatamente siano definite in uno spazio dei nomi chiaramente identificato come proprie. Gli autori di PrintCapabilities possono anche usare istanze definite in precedenza in un altro spazio dei nomi privato.
 
-Il documento Parole chiave dello schema di stampa definisce le istanze specifiche di ogni tipo di elemento disponibili per l'uso nei documenti PrintCapabilities e in PrintTickets. Documenta anche lo scopo e l'utilizzo. Il documento Parole chiave dello schema di stampa definisce anche istanze di diversi tipi di elementi, come indicato di seguito:
+Il documento Parole chiave dello schema di stampa definisce le istanze specifiche di ogni tipo di elemento disponibili per l'uso nei documenti PrintCapabilities e in PrintTicket. Documenta anche lo scopo e l'utilizzo. Il documento Parole chiave dello schema di stampa definisce anche istanze di diversi tipi di elementi, come indicato di seguito:
 
 -   Istanze di proprietà e sottoproprietà che si trovano nella radice del documento PrintCapabilities
 
@@ -29,7 +29,7 @@ Il documento Parole chiave dello schema di stampa definisce le istanze specifich
 
 -   Istanze di proprietà e sottoproprietà che sono elementi figlio degli elementi Option
 
-    -   Questi elementi descrivono i vari aspetti e funzionalità del dispositivo che dipendono dall'opzione selezionata per una funzionalità specifica. Questi potrebbero essere sostituiti da istanze property che si trovano nella radice del documento PrintCapabilities, ma offrono maggiore praticità in alcuni casi. Per altre informazioni, vedere [Aggiunta di istanze di proprietà](adding-property-instances.md).
+    -   Questi elementi descrivono i vari aspetti e funzionalità del dispositivo che dipendono dall'opzione selezionata per una funzionalità specifica. Possono essere sostituite da istanze property che si trovano nella radice del documento PrintCapabilities, ma offrono maggiore praticità in alcuni casi. Per altre informazioni, vedere [Aggiunta di istanze di proprietà](adding-property-instances.md).
 
 <!-- -->
 
@@ -47,9 +47,9 @@ Il documento Parole chiave dello schema di stampa definisce le istanze specifich
 
 -   Istanze di ParameterDef
 
-    -   Un'istanza ParameterDef fornita da parole chiave dello schema di stampa definisce anche un valore per ogni proprietà in essa contenuta. Il provider PrintCapabilities è libero di modificare le istanze Value per le istanze Property che possono essere modificate. Per informazioni sulle istanze Property che possono essere modificate e che non possono essere modificate (non modificabili), vedere [Elementi ParameterDef e ParameterInit](parameterdef-and-parameterinit-elements.md).
+    -   Un'istanza ParameterDef fornita da parole chiave dello schema di stampa definisce anche un valore per ogni proprietà in essa contenuta. Il provider PrintCapabilities è libero di modificare le istanze Value per le istanze Property che possono essere modificate. Per informazioni sulle istanze property che possono essere modificate e che non possono essere modificate (non modificabili), vedere [Elementi ParameterDef e ParameterInit](parameterdef-and-parameterinit-elements.md).
 
-È importante notare che lo schema PrintCapabilities non denota alcuna istanza di Option. Le istanze di opzione sono caratterizzate esclusivamente dalle istanze ScoredProperty nel loro complesso. Un errore comune è che l'uso dell'attributo 'name' per definire un'opzione identifichi le istanze option, ma questo non è corretto. Gli elementi opzione non devono essere univoci per le istanze Option di pari livello né usano l'attributo 'name' per definire un'opzione obbligatoria.
+È importante notare che lo schema PrintCapabilities non denota alcuna istanza di Option. Le istanze di opzione sono caratterizzate esclusivamente dalle istanze ScoredProperty nel loro complesso. Un errore comune è che l'uso dell'attributo 'name' per definire un'opzione identifichi le istanze di Option, ma questo non è corretto. Gli elementi opzione non devono essere univoci per le istanze Option di pari livello né usano l'attributo 'name' per definire un'opzione obbligatoria.
 
 Il documento Parole chiave dello schema di stampa definisce uno spazio dei nomi standard a cui appartengono tutti gli attributi del nome dell'istanza negli schemi PrintCapabilities e PrintTicket. Anche tutti i tag del tipo di elemento e gli attributi XML usati dai tipi di elemento appartengono a questo spazio dei nomi.
 

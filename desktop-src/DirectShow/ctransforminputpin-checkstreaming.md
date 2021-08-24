@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckStreaming determina se il pin può accettare esempi.
+description: Il metodo CheckStreaming determina se il pin può accettare campioni.
 ms.assetid: fa063966-4c72-466e-933c-def6a6818621
-title: Metodo CTransformInputPin. CheckStreaming (Transfrm. h)
+title: Metodo CTransformInputPin.CheckStreaming (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0e5c49a00054547193e3f492f0731f77af8331a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c32dce44e48b033e0a76f5bb5af6aff3eb71948d54c73d670c6226571a1c938b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767607"
 ---
-# <a name="ctransforminputpincheckstreaming-method"></a>CTransformInputPin. CheckStreaming, metodo
+# <a name="ctransforminputpincheckstreaming-method"></a>Metodo CTransformInputPin.CheckStreaming
 
-Il `CheckStreaming` metodo determina se il pin può accettare esempi.
+Il `CheckStreaming` metodo determina se il pin può accettare campioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                                 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                         |
-| <dl> <dt>**S \_ false**</dt> </dl>               | È in corso lo scaricamento del PIN.<br/>       |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il pin di output non è connesso.<br/> |
-| <dl> <dt>**errore di runtime di VFW \_ E \_ \_**</dt> </dl> | Si è verificato un errore in fase di esecuzione.<br/>       |
-| <dl> <dt>**\_ \_ stato non corretto di VFW E \_**</dt> </dl>   | Il PIN è stato arrestato.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                         |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>               | Lo scaricamento del pin è in corso.<br/>       |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin di output non è connesso.<br/> |
+| <dl> <dt>**ERRORE DI RUNTIME DI VFW \_ E \_ \_**</dt> </dl> | Si è verificato un errore di run-time.<br/>       |
+| <dl> <dt>**VFW \_ E \_ STATO \_ ERRATO**</dt> </dl>   | Il pin viene arrestato.<br/>              |
 
 
 
@@ -60,7 +60,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseInputPin:: CheckStreaming**](cbaseinputpin-checkstreaming.md) .
+Questo metodo esegue l'override [**del metodo CBaseInputPin::CheckStreaming.**](cbaseinputpin-checkstreaming.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Questo metodo esegue l'override del metodo [**CBaseInputPin:: CheckStreaming**](
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

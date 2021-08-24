@@ -1,19 +1,19 @@
 ---
-description: '\_ \_ servizio tipo di contenuto WPD \_'
+description: SERVIZIO TIPO DI CONTENUTO WPD \_ \_ \_
 ms.assetid: 87c4c228-69e0-4b55-b91f-fe6e561f6d18
 title: WPD_CONTENT_TYPE_SERVICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1655825828867e38ef1962d35bcb0cfebf4ed76e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fc302c8bf884b58cab092a0a0e87a79f556b3b8178df0628622e2c3a323d49f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703921"
 ---
-# <a name="wpd_content_type_service"></a>\_ \_ servizio tipo di contenuto WPD \_
+# <a name="wpd_content_type_service"></a>SERVIZIO TIPO DI CONTENUTO WPD \_ \_ \_
 
-Un oggetto che descrive il tipo come \_ servizio del tipo di contenuto WPD \_ \_ rappresenta un servizio del dispositivo.
+Un oggetto che descrive il tipo come WPD \_ CONTENT TYPE SERVICE rappresenta un servizio del \_ \_ dispositivo.
 
 Questo tipo di oggetto supporta le proprietà seguenti.
 
@@ -21,16 +21,16 @@ Questo tipo di oggetto supporta le proprietà seguenti.
 
 | Nome della proprietà                                                                                        | Obbligatorio o facoltativo                                                           |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [\_ID oggetto \_ WPD](object-properties.md)                                               | Obbligatorio, di sola lettura. Un client non può impostare questa proprietà, anche in fase di creazione. |
-| [\_ \_ ID padre dell'oggetto WPD \_](object-properties.md)                                | Obbligatorio.                                                                      |
-| [\_nome dell'oggetto WPD \_](object-properties.md)                                           | Obbligatorio se l'oggetto rappresenta un file.                                      |
-| [\_ \_ \_ ID univoco permanente dell'oggetto WPD \_](object-properties.md)         | Obbligatorio, di sola lettura. Un client non può impostare questa proprietà, anche in fase di creazione. |
-| [\_oggetto WPD \_ nascosto](object-properties.md)                                   | Obbligatorio se il servizio non deve essere visualizzato all'utente.                       |
-| [\_oggetto WPD \_](object-properties.md)                                   | Obbligatorio se l'oggetto è un oggetto di sistema (rappresenta un file di sistema).          |
-| [\_ \_ categoria oggetto funzionale \_ WPD](object-properties.md) | Obbligatorio. Rappresenta il tipo di servizio del dispositivo.                             |
-| [\_versione del servizio WPD \_](object-properties.md)           | Obbligatorio.                                                                      |
-| [\_tipo di archiviazione WPD \_](object-properties.md)                                                          | Obbligatorio se il servizio viene utilizzato per archiviare gli oggetti.                              |
-| [\_capacità di archiviazione WPD \_](object-properties.md)                                                      | Obbligatorio se il servizio viene utilizzato per archiviare gli oggetti.                              |
+| [ID OGGETTO WPD \_ \_](object-properties.md)                                               | Obbligatorio, di sola lettura. Un client non può impostare questa proprietà, anche in fase di creazione. |
+| [ID PADRE \_ DELL'OGGETTO WPD \_ \_](object-properties.md)                                | Obbligatorio.                                                                      |
+| [NOME OGGETTO \_ WPD \_](object-properties.md)                                           | Obbligatorio se l'oggetto rappresenta un file.                                      |
+| [\_ID UNIVOCO PERMANENTE DELL'OGGETTO WPD \_ \_ \_](object-properties.md)         | Obbligatorio, di sola lettura. Un client non può impostare questa proprietà, anche in fase di creazione. |
+| [\_ISHIDDEN DELL'OGGETTO \_ WPD](object-properties.md)                                   | Obbligatorio se il servizio non deve essere visualizzato all'utente.                       |
+| [ISSYSTEM \_ DELL'OGGETTO \_ WPD](object-properties.md)                                   | Obbligatorio se l'oggetto è un oggetto di sistema (rappresenta un file di sistema).          |
+| [CATEGORIA DI OGGETTI FUNZIONALI WPD \_ \_ \_](object-properties.md) | Obbligatorio. Rappresenta il tipo di servizio del dispositivo.                             |
+| [VERSIONE DEL SERVIZIO WPD \_ \_](object-properties.md)           | Obbligatorio.                                                                      |
+| [TIPO DI ARCHIVIAZIONE WPD \_ \_](object-properties.md)                                                          | Obbligatorio se il servizio viene usato per archiviare gli oggetti.                              |
+| [CAPACITÀ DI \_ ARCHIVIAZIONE WPD \_](object-properties.md)                                                      | Obbligatorio se il servizio viene usato per archiviare gli oggetti.                              |
 
 
 

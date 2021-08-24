@@ -1,5 +1,5 @@
 ---
-description: Tenta di collocare il servizio gestito dal driver di sistema nello stato di avvio.
+description: Tenta di impostare lo stato di avvio del servizio gestito dal driver di sistema.
 ms.assetid: 3f9d29aa-b549-4a55-be9c-01fad4932fe6
 ms.tgt_platform: multiple
 title: Metodo StartService della classe Win32_SystemDriver
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2c189d9b5f24a3ccc803a588abb94337ee65a1da
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 21f6814ef8c96e88b11b6e998da7b3e24334b56782929e37c3d6d97965887af7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752271"
 ---
-# <a name="startservice-method-of-the-win32_systemdriver-class"></a>Metodo StartService della \_ classe SystemDriver Win32
+# <a name="startservice-method-of-the-win32_systemdriver-class"></a>Metodo StartService della classe SystemDriver Win32 \_
 
-Il metodo **StartService** tenta di collocare il servizio gestito dal driver di sistema nello stato di avvio.
+Il **metodo StartService** tenta di impostare lo stato di avvio del servizio gestito dal driver di sistema.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State)** è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Errore sconosciuto durante l'avvio del servizio.
 **9**
 </dt> <dd>
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Il database a cui aggiungere il nuovo servizio è bloccato.
 **12**
 </dt> <dd>
 
-Una dipendenza per cui si basa questo servizio è stata rimossa dal sistema.
+Una dipendenza su cui si basa questo servizio è stata rimossa dal sistema.
 
 </dd> <dt>
 
@@ -161,7 +161,7 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 **16**
 </dt> <dd>
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
@@ -196,14 +196,14 @@ Il nome del servizio contiene caratteri non validi.
 **21**
 </dt> <dd>
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
 **22**
 </dt> <dd>
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui eseguire il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -223,7 +223,7 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="examples"></a>Esempio
 
-Il codice di PowerShell seguente avvia il servizio "classe stampante USB Microsoft".
+Il codice di PowerShell seguente avvia il servizio "Classe Stampante USB Microsoft".
 
 
 ```PowerShell
@@ -244,7 +244,7 @@ $Return = $usbPrintDriver.StartService()
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -256,7 +256,7 @@ $Return = $usbPrintDriver.StartService()
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_SystemDriver Win32**](win32-systemdriver.md)
+[**Win32 \_ SystemDriver**](win32-systemdriver.md)
 </dt> </dl>
 
  

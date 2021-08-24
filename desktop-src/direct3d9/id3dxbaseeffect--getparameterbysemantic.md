@@ -1,7 +1,7 @@
 ---
-description: Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercando la relativa semantica con una ricerca senza distinzione tra maiuscole e minuscole.
+description: Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercandone la semantica con una ricerca senza distinzione tra maiuscole e minuscole.
 ms.assetid: 3de3791a-fe09-4a39-bd6f-0e20a641dd32
-title: 'Metodo ID3DXBaseEffect:: GetParameterBySemantic (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetParameterBySemantic (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c70d30d68d73d6c4dd33d483747be4293a255693
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fa00ef4585462f068e95fcefca8332acd46930efaf1bb1c108a471511ab63eb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791011"
 ---
-# <a name="id3dxbaseeffectgetparameterbysemantic-method"></a>Metodo ID3DXBaseEffect:: GetParameterBySemantic
+# <a name="id3dxbaseeffectgetparameterbysemantic-method"></a>Metodo ID3DXBaseEffect::GetParameterBySemantic
 
-Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercando la relativa semantica con una ricerca senza distinzione tra maiuscole e minuscole.
+Ottiene l'handle di un parametro di primo livello o di un parametro del membro della struttura cercandone la semantica con una ricerca senza distinzione tra maiuscole e minuscole.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetParameterBySemantic(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle del parametro o **null** per i parametri di primo livello. Vedere [handle (Direct3D 9)](handles.md).
+Handle del parametro o **NULL per i** parametri di primo livello. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pSemantic* \[ in\]
+*pSemantic* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Stringa contenente il nome semantico.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce l'handle del primo parametro che corrisponde alla semantica specificata o **null** se la semantica non è stata trovata. Vedere [handle (Direct3D 9)](handles.md).
+Restituisce l'handle del primo parametro che corrisponde alla semantica specificata oppure **NULL se** la semantica non è stata trovata. Vedere [Handle (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Restituisce l'handle del primo parametro che corrisponde alla semantica specific
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

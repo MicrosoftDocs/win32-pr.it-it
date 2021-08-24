@@ -1,7 +1,7 @@
 ---
-description: Imposta una chiave evento che modifica la frequenza di riproduzione di una traccia di animazione.
+description: Imposta un tasto evento che modifica la frequenza di riproduzione di una traccia di animazione.
 ms.assetid: 217d3a2d-0fb7-4995-86ec-7a4e8420e338
-title: 'Metodo ID3DXAnimationController:: KeyTrackSpeed (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::KeyTrackSpeed (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 09705dd03e7767e94b1508cf4951186a509a3c5b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 21ad7b0b1423a25ede319a623cad0a8b453af481d4aac5fae4e5bcce252dd31e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791191"
 ---
-# <a name="id3dxanimationcontrollerkeytrackspeed-method"></a>Metodo ID3DXAnimationController:: KeyTrackSpeed
+# <a name="id3dxanimationcontrollerkeytrackspeed-method"></a>Metodo ID3DXAnimationController::KeyTrackSpeed
 
-Imposta una chiave evento che modifica la frequenza di riproduzione di una traccia di animazione.
+Imposta un tasto evento che modifica la frequenza di riproduzione di una traccia di animazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ D3DXEVENTHANDLE KeyTrackSpeed(
 
 <dl> <dt>
 
-*Traccia* \[ in\]
+*Traccia* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificatore della traccia da modificare.
 
 </dd> <dt>
 
-*NewSpeed* \[ in\]
+*NewSpeed* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Nuova velocità della traccia dell'animazione.
+Nuova velocità della traccia di animazione.
 
 </dd> <dt>
 
-*StartTime* \[ in\]
+*StartTime* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Chiave temporale globale. Specifica l'ora globale in cui verrà eseguita la modifica.
+Chiave temporale globale. Specifica l'ora globale in cui verrà apportata la modifica.
 
 </dd> <dt>
 
-*Durata* \[ in\]
+*Durata* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Tempo di transizione, che specifica il tempo necessario per il completamento della transizione senza problemi.
+Tempo di transizione, che specifica il tempo necessario per completare la transizione senza problemi.
 
 </dd> <dt>
 
-*Transizione* \[ in\]
+*Transizione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXTRANSITION \_**](./d3dxtransition-type.md)**
+Tipo: **[ **D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md)**
 
-Specifica il tipo di transizione utilizzato per la transizione tra le velocità. Vedere [**D3DXTRANSITION \_ Type**](./d3dxtransition-type.md).
+Specifica il tipo di transizione usato per la transizione tra le velocità. Vedere [**D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md).
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Specifica il tipo di transizione utilizzato per la transizione tra le velocità.
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Handle di evento per l'evento di combinazione di priorità. Se uno o più parametri di input non sono validi oppure non è disponibile alcun evento libero, viene restituito **null** .
+Handle di evento per l'evento di blend di priorità. **Se** uno o più parametri di input non sono validi o se non è disponibile alcun evento gratuito, viene restituito NULL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Handle di evento per l'evento di combinazione di priorità. Se uno o più parame
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

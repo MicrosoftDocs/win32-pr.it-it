@@ -1,7 +1,7 @@
 ---
 description: Rappresenta gli aspetti della definizione di una metrica.
 ms.assetid: 861a69f6-a3bf-4e18-a9c2-931632e3cccc
-title: Classe Msvm_BaseMetricDefinition
+title: Msvm_BaseMetricDefinition classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,18 +28,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8d1edbd722e3bf87631371b5650576917a7cfb39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4193f934dd17224091974a705288831e28253876d05ca1b5fc4b99c9c70424e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790241"
 ---
-# <a name="msvm_basemetricdefinition-class"></a>\_Classe MSVM BaseMetricDefinition
+# <a name="msvm_basemetricdefinition-class"></a>Classe Msvm \_ BaseMetricDefinition
 
-Rappresenta gli aspetti della definizione di una metrica. La **classe \_ BaseMetricDefinition di MSVM** deve essere associata al [**\_ ManagedElements CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) a cui si applica.
+Rappresenta gli aspetti della definizione di una metrica. La **classe Msvm \_ BaseMetricDefinition** deve essere associata agli [**\_ elementi gestiti CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) a cui si applica.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,47 +67,47 @@ class Msvm_BaseMetricDefinition : CIM_BaseMetricDefinition
 
 ## <a name="members"></a>Members
 
-La **classe \_ BaseMetricDefinition di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ BaseMetricDefinition** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ BaseMetricDefinition di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ BaseMetricDefinition** ha queste proprietà.
 
 <dl> <dt>
 
 **BreakdownDimensions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Definisce una o più stringhe che possono essere utilizzate per perfezionare (suddividere) query sui valori della metrica lungo una determinata dimensione. Un esempio è un nome di transazione, che consente l'interruzione del valore totale di tutte le transazioni in un set di valori, uno per ogni nome di transazione. Altri esempi possono essere il nome del sistema dell'applicazione o del gruppo di utenti. Le stringhe sono di formato libero e dovrebbero essere significative per gli utenti finali dei dati della metrica. Le stringhe indicano quali dimensioni di suddivisione sono supportate per questa definizione di metrica, dalla strumentazione sottostante. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Definisce una o più stringhe che possono essere usate per affinare (suddividere) le query sui valori delle metriche lungo una determinata dimensione. Un esempio è un nome di transazione, che consente di suddividere il valore totale per tutte le transazioni in un set di valori, uno per ogni nome di transazione. Altri esempi possono essere il nome del sistema dell'applicazione o del gruppo di utenti. Le stringhe sono in formato libero e devono essere significative per gli utenti finali dei dati delle metriche. Le stringhe indicano le dimensioni di scomposimento supportate per questa definizione di metrica dalla strumentazione sottostante. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> <dt>
 
 **Calcolabile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive le caratteristiche della metrica a scopo di esecuzione dei calcoli. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**. Può essere **null** o uno dei valori seguenti.
+Descrive le caratteristiche della metrica ai fini dell'esecuzione dei calcoli. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.** Può essere **Null** o uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                                   | Significato                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Non-calculable"></span><span id="non-calculable"></span><span id="NON-CALCULABLE"></span><dl> <dt>**Non calcolabile**</dt> <dt>1</dt> </dl> | Non è possibile calcolare il valore. Ad esempio, una stringa.<br/>                                                                                                                                                                                                                                                                                                         |
-| <span id="Summable"></span><span id="summable"></span><span id="SUMMABLE"></span><dl> <dt>**Sommabile**</dt> <dt>2</dt> </dl>                         | Il valore può essere sommato in molte istanze. Ad esempio, se ogni processo di backup è un'unità di lavoro e ogni processo esegue il backup di 27.000 file in media, 100 processi di backup elaborati 2,7 milioni file.<br/>                                                                                                                                                                 |
-| <span id="Non-summable_"></span><span id="non-summable_"></span><span id="NON-SUMMABLE_"></span><dl> <dt> **Non sommabile**</dt> <dt>3</dt> </dl>    | Questo valore non può essere sommato in molte istanze. Un esempio è una metrica che misura la lunghezza della coda quando un processo arriva a un server. Se ogni processo è un'unità di lavoro e la lunghezza media della coda quando ogni processo arriva è 33, non è sensato dire che la lunghezza della coda per i processi 100 è 3300. È sensato dire che la media è 33.<br/> |
+| <span id="Non-calculable"></span><span id="non-calculable"></span><span id="NON-CALCULABLE"></span><dl> <dt>**Non calcolo**</dt> <dt>1</dt> </dl> | Il valore non può essere calcolato. Ad esempio, una stringa.<br/>                                                                                                                                                                                                                                                                                                         |
+| <span id="Summable"></span><span id="summable"></span><span id="SUMMABLE"></span><dl> <dt>**Sommabile**</dt> <dt>2</dt> </dl>                         | Il valore può essere sommato su molte istanze. Ad esempio, se ogni processo di backup è un'unità di lavoro e ogni processo backup di 27.000 file in media, 100 processi di backup hanno elaborato 2.700.000 file.<br/>                                                                                                                                                                 |
+| <span id="Non-summable_"></span><span id="non-summable_"></span><span id="NON-SUMMABLE_"></span><dl> <dt> **Non sommabile**</dt> <dt>3</dt> </dl>    | Questo valore non può essere sommato in molte istanze. Un esempio è una metrica che misura la lunghezza della coda quando un processo arriva a un server. Se ogni processo è un'unità di lavoro e la lunghezza media della coda all'arrivo di ogni processo è 33, non ha senso dire che la lunghezza della coda per 100 processi è 3300. È opportuno dire che la media è 33.<br/> |
 
 
 
@@ -118,37 +118,37 @@ Descrive le caratteristiche della metrica a scopo di esecuzione dei calcoli. Que
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ChangeType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il modo in cui viene modificato il valore della metrica, sotto forma di combinazioni tipiche di attributi di granularità più sottili, ad esempio la modifica della direzione, i valori minimo e massimo e la semantica di wrapping. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Indica il modo in cui cambia il valore della metrica, sotto forma di combinazioni tipiche di attributi di granularità più fine, ad esempio modifica della direzione, valori minimi e massimi e semantica di wrapping. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 
 
 | Valore                                                                                                                                                                                                                                                                       | Significato                                                                                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | La finestra di progettazione metrica non ha qualificato il **ChangeType.**<br/>                                                                                                                              |
-| <span id="N_A"></span><span id="n_a"></span><dl> <dt>**N/A**</dt> <dt>2</dt> </dl>                                                                                       | Se la proprietà di **discontinuità** è "false", **ChangeType** non ha senso e deve essere impostato su "N/A".<br/>                                                                             |
-| <span id="Counter"></span><span id="counter"></span><span id="COUNTER"></span><dl> <dt>**Contatore**</dt> <dt>3</dt> </dl>                                                 | La metrica è una metrica del contatore. Questi includono valori interi non negativi che aumentano fino a raggiungere il numero massimo rappresentabile, quindi eseguire il wrapping e iniziare ad aumentare da 0.<br/> |
-| <span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span><dl> <dt>**Misuratore**</dt> <dt>4</dt> </dl>                                                         | La metrica è una metrica del misuratore. Hanno valori integer o float che possono aumentare e diminuire in modo arbitrario.<br/>                                                                          |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>5.. 32767</dt> </dl>                  |                                                                                                                                                                                                  |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32768 <dt> **riservato al fornitore**</dt> <dt>.. 65535</dt> </dl> | I fornitori possono estendere la proprietà **ChangeType** nell'intervallo riservato del fornitore.<br/>                                                                                                          |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | La finestra di progettazione delle metriche non ha qualificato **ChangeType.**.<br/>                                                                                                                              |
+| <span id="N_A"></span><span id="n_a"></span><dl> <dt>**N/D**</dt> <dt>2</dt> </dl>                                                                                       | Se la **proprietà IsContinuous** è "false", **ChangeType** non ha senso e deve essere impostato su "N/D".<br/>                                                                             |
+| <span id="Counter"></span><span id="counter"></span><span id="COUNTER"></span><dl> <dt>**Contatore**</dt> <dt>3</dt> </dl>                                                 | La metrica è una metrica contatore. Questi hanno valori interi non negativi che aumentano fino a raggiungere il numero massimo rappresentabile e quindi vengono incapsulati e iniziano ad aumentare da 0.<br/> |
+| <span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span><dl> <dt>**Misuratore**</dt> <dt>4</dt> </dl>                                                         | La metrica è una metrica del misuratore. Hanno valori interi o float che possono aumentare e diminuire in modo arbitrario.<br/>                                                                          |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>5..32767</dt> </dl>                  |                                                                                                                                                                                                  |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornitore riservato**</dt> <dt>32768..65535</dt> </dl> | I fornitori possono estendere la **proprietà ChangeType** nell'intervallo riservato del fornitore.<br/>                                                                                                          |
 
 
 
@@ -159,23 +159,23 @@ Indica il modo in cui viene modificato il valore della metrica, sotto forma di c
 **DataType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di dati della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Tipo di dati della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 <dl> <dt>
 
-<span id="boolean"></span><span id="BOOLEAN"></span>**valore booleano** (1)
+<span id="boolean"></span><span id="BOOLEAN"></span>**booleano** (1)
 </dt> <dt>
 
-<span id="char16"></span><span id="CHAR16"></span>**Char16** (2)
+<span id="char16"></span><span id="CHAR16"></span>**char16** (2)
 </dt> <dt>
 
-<span id="datetime"></span><span id="DATETIME"></span>**DateTime** (3)
+<span id="datetime"></span><span id="DATETIME"></span>**datetime** (3)
 </dt> <dt>
 
 <span id="real32"></span><span id="REAL32"></span>**real32** (4)
@@ -196,19 +196,19 @@ Tipo di dati della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMe
 <span id="sint8"></span><span id="SINT8"></span>**sint8** (9)
 </dt> <dt>
 
-<span id="string"></span><span id="STRING"></span>**stringa** (10)
+<span id="string"></span><span id="STRING"></span>**string** (10)
 </dt> <dt>
 
-<span id="uint16"></span><span id="UINT16"></span>**UInt16** (11)
+<span id="uint16"></span><span id="UINT16"></span>**uint16** (11)
 </dt> <dt>
 
-<span id="uint32"></span><span id="UINT32"></span>**UInt32** (12)
+<span id="uint32"></span><span id="UINT32"></span>**uint32** (12)
 </dt> <dt>
 
-<span id="uint64"></span><span id="UINT64"></span>**UInt64** (13)
+<span id="uint64"></span><span id="UINT64"></span>**uint64** (13)
 </dt> <dt>
 
-<span id="uint8_"></span><span id="UINT8_"></span>**Uint8** (14)
+<span id="uint8_"></span><span id="UINT8_"></span>**uint8** (14 )
 </dt> </dl>
 
 </dd> <dt>
@@ -216,39 +216,39 @@ Tipo di dati della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMe
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **GatheringType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il modo in cui i valori delle metriche vengono raccolti dalla strumentazione sottostante. Ciò consente all'applicazione client di scegliere la metrica corretta per lo scopo. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**. Può essere **null** o uno dei valori seguenti.
+Indica come i valori delle metriche vengono raccolti dalla strumentazione sottostante. In questo modo l'applicazione client può scegliere la metrica giusta per lo scopo. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.** Può essere **Null** o uno dei valori seguenti.
 
 
 
@@ -256,10 +256,10 @@ Indica il modo in cui i valori delle metriche vengono raccolti dalla strumentazi
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | Il tipo di raccolta non è noto.<br/>                                                                                                                                                                                                                               |
 | <span id="OnChange"></span><span id="onchange"></span><span id="ONCHANGE"></span><dl> <dt>**OnChange**</dt> <dt>2</dt> </dl>                                             | I valori delle metriche vengono aggiornati immediatamente quando i valori all'interno della risorsa misurata cambiano.<br/>                                                                                                                                                              |
-| <span id="Periodic"></span><span id="periodic"></span><span id="PERIODIC"></span><dl> <dt>3</dt> <dt>**periodici**</dt> </dl>                                             | I valori delle metriche vengono aggiornati periodicamente. Ad esempio, per un'applicazione client, un valore della metrica che si applica all'ora corrente apparirà costante durante ogni intervallo di raccolta, quindi passa al nuovo valore alla fine di ogni intervallo di raccolta.<br/> |
+| <span id="Periodic"></span><span id="periodic"></span><span id="PERIODIC"></span><dl> <dt>**Periodico**</dt> <dt>3</dt> </dl>                                             | I valori delle metriche vengono aggiornati periodicamente. Ad esempio, per un'applicazione client, un valore della metrica che si applica all'ora corrente apparirà costante durante ogni intervallo di raccolta e quindi passa al nuovo valore alla fine di ogni intervallo di raccolta.<br/> |
 | <span id="OnRequest"></span><span id="onrequest"></span><span id="ONREQUEST"></span><dl> <dt>**OnRequest**</dt> <dt>4</dt> </dl>                                         | Il valore della metrica viene determinato ogni volta che viene letto da un'applicazione client.<br/>                                                                                                                                                                                        |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>5.. 32767</dt> </dl>                  |                                                                                                                                                                                                                                                                           |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32768 <dt> **riservato al fornitore**</dt> <dt>.. 65535</dt> </dl> |                                                                                                                                                                                                                                                                           |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reserved**</dt> <dt>5..32767</dt> </dl>                  |                                                                                                                                                                                                                                                                           |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornitore riservato**</dt> <dt>32768..65535</dt> </dl> |                                                                                                                                                                                                                                                                           |
 
 
 
@@ -270,95 +270,95 @@ Indica il modo in cui i valori delle metriche vengono raccolti dalla strumentazi
 **Id**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Stringa che identifica in modo univoco la definizione della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Stringa che identifica in modo univoco la definizione della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Stringa che identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Stringa che identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IsContinuous**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il valore della metrica è continuo o scalare. Le metriche delle prestazioni sono un esempio di metrica continua. Esempi di metriche scalari includono codici di errore o stati operativi. È possibile confrontare le metriche continue usando la relazione "maggiore di". Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Indica se il valore della metrica è continuo o scalare. Le metriche delle prestazioni sono un esempio di metrica continua. Esempi di metriche scalari includono codici di errore o stati operativi. Le metriche continue possono essere confrontate usando la relazione "maggiore di". Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Nome della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> <dt>
 
-**ProgrammaticUnits**
+**Unità programmatiche**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica le unità specifiche di un valore. Il valore di questa proprietà sarà un valore valido del qualificatore unità programmatiche come definito nell'Appendice C. 1 di [DSP0004 v 2.4](https://www.dmtf.org/sites/default/files/standards/documents/DSP0004_2.5.0.pdf) o versione successiva. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Identifica le unità specifiche di un valore. Il valore di questa proprietà sarà un valore valido del qualificatore di unità programmatiche, come definito nell'Appendice C.1 di [DSP0004 V2.4](https://www.dmtf.org/sites/default/files/standards/documents/DSP0004_2.5.0.pdf) o versione successiva. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> <dt>
 
-**TimeScope**
+**Ambito temporale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica l'ambito temporale a cui si applica il valore della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Indica l'ambito temporale a cui si applica il valore della metrica. Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 
 
 | Valore                                                                                                                                                                                                                                                                       | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | L'ambito temporale non è stato qualificato dalla finestra di progettazione della metrica o è sconosciuto al provider.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| <span id="Point"></span><span id="point"></span><span id="POINT"></span><dl> <dt>**Punto**</dt> <dt>2</dt> </dl>                                                         | La metrica si applica a un punto nel tempo. Nelle istanze [**MSVM \_ BaseMetricValue**](msvm-basemetricvalue.md) corrispondenti la proprietà **timestamp** specifica il punto nel tempo e la proprietà **Duration** è sempre 0.<br/>                                                                                                                                                                                                                                                                                              |
-| <span id="Interval"></span><span id="interval"></span><span id="INTERVAL"></span><dl> <dt>**Intervallo**</dt> <dt>3</dt> </dl>                                             | La metrica si applica a un intervallo di tempo. Nelle istanze [**MSVM \_ BaseMetricValue**](msvm-basemetricvalue.md) corrispondenti la proprietà **timestamp** specifica la fine dell'intervallo di tempo e la proprietà **Duration** ne specifica la durata.<br/>                                                                                                                                                                                                                                                                        |
-| <span id="StartupInterval"></span><span id="startupinterval"></span><span id="STARTUPINTERVAL"></span><dl> <dt>**StartupInterval**</dt> <dt>4</dt> </dl>                 | La metrica si applica a un intervallo di tempo che inizia all'avvio della risorsa misurata (ovvero l'oggetto gestito associato da MetricDefForMe). Nelle istanze [**MSVM \_ BaseMetricValue**](msvm-basemetricvalue.md) corrispondenti la proprietà **timestamp** specifica la fine dell'intervallo di tempo. Se la proprietà **Duration** è 0, indica che il tempo di avvio della risorsa misurata è sconosciuto. In caso contrario, **Duration** specifica la durata tra l'avvio della risorsa e il **timestamp**.<br/> |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>5.. 32767</dt> </dl>                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32768 <dt> **riservato al fornitore**</dt> <dt>.. 65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                                 | L'ambito temporale non è stato qualificato dalla finestra di progettazione delle metriche o è sconosciuto al provider.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| <span id="Point"></span><span id="point"></span><span id="POINT"></span><dl> <dt>**Punto**</dt> <dt>2</dt> </dl>                                                         | La metrica si applica a un punto nel tempo. Nelle istanze [**di \_ Msvm BaseMetricValue**](msvm-basemetricvalue.md) corrispondenti, la **proprietà TimeStamp** specifica il punto nel tempo e la proprietà **Duration** è sempre 0.<br/>                                                                                                                                                                                                                                                                                              |
+| <span id="Interval"></span><span id="interval"></span><span id="INTERVAL"></span><dl> <dt>**Intervallo**</dt> <dt>3</dt> </dl>                                             | La metrica si applica a un intervallo di tempo. Nelle istanze [**di \_ Msvm BaseMetricValue**](msvm-basemetricvalue.md) corrispondenti, la proprietà **TimeStamp** specifica la fine dell'intervallo di tempo e la **proprietà Duration** ne specifica la durata.<br/>                                                                                                                                                                                                                                                                        |
+| <span id="StartupInterval"></span><span id="startupinterval"></span><span id="STARTUPINTERVAL"></span><dl> <dt>**StartupInterval**</dt> <dt>4</dt> </dl>                 | La metrica si applica a un intervallo di tempo iniziato all'avvio della risorsa misurata, ovvero l'elemento ManagedElement associato da MetricDefForMe. Nelle istanze [**Di \_ BaseMetricValue msvm**](msvm-basemetricvalue.md) corrispondenti, la proprietà **TimeStamp** specifica la fine dell'intervallo di tempo. Se la **proprietà Duration** è 0, significa che il tempo di avvio della risorsa misurata è sconosciuto. In caso **contrario, Durata** specifica la durata tra l'avvio della risorsa e **TimeStamp.**<br/> |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reserved**</dt> <dt>5..32767</dt> </dl>                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornitore riservato**</dt> <dt>32768..65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
@@ -369,13 +369,13 @@ Indica l'ambito temporale a cui si applica il valore della metrica. Questa propr
 **Unità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica le unità specifiche di un valore, ad esempio "megabyte". Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition**.
+Identifica le unità specifiche di un valore, ad esempio "megabyte". Questa proprietà viene ereditata da **CIM \_ BaseMetricDefinition.**
 
 </dd> </dl>
 
@@ -385,10 +385,10 @@ Identifica le unità specifiche di un valore, ad esempio "megabyte". Questa prop
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
