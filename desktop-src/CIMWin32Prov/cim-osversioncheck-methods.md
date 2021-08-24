@@ -1,23 +1,23 @@
 ---
-description: La \_ classe CIM OSVersionCheck espone i metodi seguenti.
+description: La classe CIM \_ OSVersionCheck espone i metodi seguenti.
 ms.assetid: F1CA0689-D6CD-4900-ACEA-AE4AD9E294E5
 ms.tgt_platform: multiple
-title: Metodi di CIM_OSVersionCheck
+title: CIM_OSVersionCheck metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc4a854c626b01f85010bd2265c01327e384d519
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9e556a29de484a3cddaa0ab1b05f507f13f98a2da520ced6c41aec2b12b09fec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820771"
 ---
-# <a name="cim_osversioncheck-methods"></a>\_Metodi CIM OSVersionCheck
+# <a name="cim_osversioncheck-methods"></a>Metodi CIM \_ OSVersionCheck
 
-La classe [**CIM \_ OSVersionCheck**](cim-osversioncheck.md) espone i metodi seguenti.
+La [**classe CIM \_ OSVersionCheck**](cim-osversioncheck.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

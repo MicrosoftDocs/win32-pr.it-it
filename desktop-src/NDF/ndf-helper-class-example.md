@@ -1,25 +1,25 @@
 ---
 title: Estensione della classe helper NDF
-description: Questo esempio illustra come implementare le funzioni di diagnostica e ripristino di NDF.
+description: In questo esempio viene illustrato come implementare le funzioni di diagnosi e correzione NDF.
 ms.assetid: 18e66d09-e565-4b86-8bc3-600f2159a4bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5b2a0dbcba29449b8f21850fa0669f8154dcbd7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1fd8fd7683aded0573034ffec56097256093c61e2bb0f9ec2e7bcd353ff8d3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802111"
 ---
 # <a name="ndf-helper-class-extension"></a>Estensione della classe helper NDF
 
-Questo esempio illustra come implementare le funzioni di diagnostica e ripristino di NDF. In questo esempio è necessario che esista un file di configurazione critico affinché il sistema rimanga integro. Di conseguenza, il problema consiste nel determinare se il file esiste. In caso contrario, il sistema non è integro e il problema viene diagnosticato da NDF. Il ripristino prevede la ricreazione del file mancante.
+In questo esempio viene illustrato come implementare le funzioni di diagnosi e correzione NDF. In questo esempio deve esistere un file di configurazione critico perché il sistema rimanga integro. Di conseguenza, il problema è determinare se il file esiste. In caso contrario, il sistema non è integro e il problema viene diagnosticato dalla funzione NDF. Il ripristino consente di creare nuovamente il file mancante.
 
-Per diagnosticare e risolvere il problema, è necessario usare quattro metodi [**INetDiagHelper**](/windows/desktop/api/ndhelper/nn-ndhelper-inetdiaghelper) : [**Initialize**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-initialize), [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth), [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo)e [**Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair).
+Per diagnosticare e correggere il problema, è necessario usare quattro metodi [**INetDiagHelper:**](/windows/desktop/api/ndhelper/nn-ndhelper-inetdiaghelper) [**Initialize**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-initialize), [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth), [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo)e [**Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair).
 
 ## <a name="initializing-the-helper-class"></a>Inizializzazione della classe helper
 
-Inizializzare e recuperare il nome del file da individuare. Questo nome file viene passato durante la diagnosi come attributo Helper denominato "filename".
+Inizializzare e recuperare il nome del file da individuare. Questo nome file viene passato durante la diagnosi come attributo helper denominato "filename".
 
 
 ```C++
@@ -87,7 +87,7 @@ HRESULT SimpleFileHelperClass::Initialize(
 
 ## <a name="checking-on-the-files-existence"></a>Verifica dell'esistenza del file
 
-Il metodo [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) viene utilizzato per verificare l'esistenza del file. Se il file esiste, lo stato della diagnosi viene impostato su **DS \_ rifiutato**, a indicare che non si è verificato alcun errore. Se il file non viene trovato, lo stato della diagnosi viene impostato su **DS \_ confermato**.
+Il [**metodo LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) viene usato per verificare l'esistenza del file. Se il file esiste, lo stato della diagnosi viene impostato **su DS \_ REJECTED,** a indicare che non ci sono problemi. Se non è possibile trovare il file, lo stato della diagnosi viene impostato su **DS \_ CONFIRMED.**
 
 
 ```C++
@@ -138,7 +138,7 @@ HRESULT SimpleFileHelperClass::LowHealth(
 
 ## <a name="determining-the-repair-action"></a>Determinazione dell'azione di ripristino
 
-Se [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) restituisce **DS \_ confermato**, viene implementato [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo) per determinare l'azione di correzione appropriata. In questo esempio, significa ricreare il file.
+Se [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) restituisce **DS \_ CONFIRMED,** [**GetRepairInfo viene**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo) implementato per determinare l'azione di ripristino appropriata. In questo esempio, ciò significa creare nuovamente il file.
 
 
 ```C++
@@ -204,9 +204,9 @@ Error:
 
 
 
-## <a name="repairing-the-problem"></a>Ripristino del problema
+## <a name="repairing-the-problem"></a>Correzione del problema
 
-All'utente vengono visualizzate le opzioni di correzione restituite da [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo), a meno che non sia presente una sola opzione di ripristino, nel qual caso viene eseguita automaticamente. Il metodo [**Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair) viene chiamato con la struttura [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) applicabile, in modo che il file di configurazione possa essere ripristinato.
+All'utente vengono presentate le opzioni di correzione restituite da [**GetRepairInfo,**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo)a meno che non sia presente una sola opzione di ripristino, nel qual caso viene eseguita automaticamente. Il [**metodo Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair) viene chiamato con la struttura [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) applicabile in modo che il file di configurazione possa essere ripristinato.
 
 
 ```C++
@@ -247,9 +247,9 @@ SimpleFileHelperClass::Repair(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

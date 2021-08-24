@@ -1,5 +1,5 @@
 ---
-description: Contiene le impostazioni globali per il modulo di configurazione automatica (ACM).
+description: Contiene le impostazioni globali per il modulo di configurazione automatica.
 ms.assetid: fb2b96d0-38cc-44fe-a82a-97e73b6a8f2a
 title: Elemento globalFlags (WLANPolicy)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 97d0b8ee90407efd94ac46cc1df6b084b9dcc54d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2851ae779bf1693d44642f87d33a71c17000e9dc0b68eeb8daab83972b37457d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800331"
 ---
 # <a name="globalflags-wlanpolicy-element"></a>Elemento globalFlags (WLANPolicy)
 
-L'elemento globalFlags (WLANPolicy) contiene le impostazioni globali per il modulo di configurazione automatica (ACM). Questo elemento è obbligatorio.
+L'elemento globalFlags (WLANPolicy) contiene le impostazioni globali per il modulo di configurazione automatica . Questo elemento è obbligatorio.
 
 ``` syntax
 <xs:element name="globalFlags">
@@ -47,7 +47,7 @@ L'elemento globalFlags (WLANPolicy) contiene le impostazioni globali per il modu
 </xs:element>
 ```
 
-L'elemento **globalFlags** è definito dall'elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) .
+**L'elemento globalFlags** è definito dall'elemento [**WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -55,9 +55,9 @@ L'elemento **globalFlags** è definito dall'elemento [**WLANPolicy**](wlan-polic
 
 | Elemento                                                                                                                    | Tipo    | Descrizione                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean | Specifica se un utente può creare un profilo per tutti gli utenti. <br/>                                                               |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean | Specifica se i computer utilizzano il servizio di configurazione automatica (AutoConfig) incorporato per gestire le connessioni wireless. <br/> |
-| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean | Specifica se le reti negate vengono visualizzate nella procedura guidata **Connetti a una rete** . <br/>                                         |
+| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean | Specifica se qualsiasi utente può creare un profilo per tutti gli utenti. <br/>                                                               |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean | Specifica se i computer usano il servizio configurazione automatica (AutoConfig) incorporato per gestire le connessioni wireless. <br/> |
+| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean | Specifica se le reti negate vengono visualizzate nella **Connessione a una procedura guidata di** rete. <br/>                                         |
 
 
 
@@ -67,8 +67,8 @@ L'elemento **globalFlags** è definito dall'elemento [**WLANPolicy**](wlan-polic
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -79,13 +79,13 @@ L'elemento **globalFlags** è definito dall'elemento [**WLANPolicy**](wlan-polic
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md)
+[**Criteri WLAN**](wlan-policyschema-wlanpolicy-element.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md)
+[**Criteri WLAN**](wlan-policyschema-wlanpolicy-element.md)
 </dt> </dl>
 
  

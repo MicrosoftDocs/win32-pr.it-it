@@ -3,7 +3,7 @@ title: CBEM_SETUNICODEFORMAT messaggio (Commctrl.h)
 description: Imposta il flag di formato carattere UNICODE per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover creare nuovamente il controllo.
 ms.assetid: 4811709b-1639-4468-8598-97d9dc8d9057
 keywords:
-- CBEM_SETUNICODEFORMAT di controllo Windows messaggio
+- CBEM_SETUNICODEFORMAT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:

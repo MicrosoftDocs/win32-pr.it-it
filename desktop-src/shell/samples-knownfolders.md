@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come definire, registrare, enumerare e trovare il percorso per tutte le cartelle note nel sistema corrente.
+description: Illustra come definire, registrare, enumerare e trovare il percorso di tutte le cartelle note nel sistema corrente.
 title: Esempio di cartelle note
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 8d3784e64986a338f6554534199852191bd06ca7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c189b315387bfbd5e6051ecc382d2ea354d18925c15b11763c28602d2015c482
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820311"
 ---
 # <a name="known-folders-sample"></a>Esempio di cartelle note
 
-Viene illustrato come definire, registrare, enumerare e trovare il percorso per tutte le cartelle note nel sistema corrente.
+Illustra come definire, registrare, enumerare e trovare il percorso di tutte le cartelle note nel sistema corrente.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -31,7 +31,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-Questo esempio include un file del registro di sistema che illustra come registrare una cartella nota scrivendo alcune chiavi del registro di sistema e i valori comuni per gli sviluppatori che preferiscono l'accesso al registro.
+Questo esempio include un file del Registro di sistema che illustra come registrare una cartella nota scrivendo alcune chiavi e valori comuni del Registro di sistema per gli sviluppatori che preferiscono l'accesso al Registro di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,13 +46,13 @@ Questo esempio include un file del registro di sistema che illustra come registr
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio KnownFolders](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/knownfolders) |
+| GitHub  | [Esempio di KnownFolders](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/knownfolders) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

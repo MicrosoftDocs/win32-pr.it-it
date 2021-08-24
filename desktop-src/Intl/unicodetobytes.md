@@ -1,7 +1,7 @@
 ---
 UID: ''
-title: UnicodeToBytes (funzione)
-description: Converte i caratteri Unicode in GB18030 byte.
+title: Funzione UnicodeToBytes
+description: Converte i caratteri Unicode in byte GB18030.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,20 +34,20 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 66ed21768c3acef7f2aa2128df057da8552b2ad2
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 01109763644dc04aeb398e5fc64e221cd5f3d18870df2654fa5348bc163a277c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "103719951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764729"
 ---
-# <a name="unicodetobytes-function"></a>UnicodeToBytes (funzione)
+# <a name="unicodetobytes-function"></a>Funzione UnicodeToBytes
 
 ## <a name="description"></a>Descrizione
 
-Deprecato. Converte i caratteri Unicode in GB18030 byte.
+Deprecato. Converte i caratteri Unicode in byte GB18030.
 
-**Nota**  Quando si convertono i caratteri Unicode in GB18030 byte, un'applicazione da eseguire in Windows Vista e versioni successive deve usare la funzione [WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte) .
+**Nota:**  Quando si convertono caratteri Unicode in byte GB18030, un'applicazione da eseguire Windows Vista e versioni successive deve usare la funzione [WideCharToMultiByte.](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)
 
 ```cpp
 DWORD UnicodeToBytes(

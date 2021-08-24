@@ -1,5 +1,5 @@
 ---
-description: Il metodo SetDynamicDNSRegistration indica la registrazione DNS dinamica degli indirizzi IP per questa scheda con binding IP.
+description: Il metodo SetDynamicDNSRegistration indica la registrazione DNS dinamica degli indirizzi IP per questa scheda associata a IP.
 ms.assetid: 8e6ca408-3283-40b8-b621-9befdc39b730
 ms.tgt_platform: multiple
 title: Metodo SetDynamicDNSRegistration della classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 36818205e356f873b391159293e9204a9ced44a7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d6aa7a47a70d9058832fc809b30c8031fd279dd5f7b96d1abadb05177bd4280f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759741"
 ---
-# <a name="setdynamicdnsregistration-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetDynamicDNSRegistration della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setdynamicdnsregistration-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetDynamicDNSRegistration della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo **SetDynamicDNSRegistration** indica la registrazione DNS dinamica degli indirizzi IP per questa scheda con binding IP.
+Il **metodo SetDynamicDNSRegistration** indica la registrazione DNS dinamica degli indirizzi IP per questa scheda associata a IP.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,41 +43,41 @@ uint32 SetDynamicDNSRegistration(
 
 <dl> <dt>
 
-*FullDNSRegistrationEnabled* \[ in\]
+*FullDNSRegistrationEnabled* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, gli indirizzi IP per questa connessione sono registrati in DNS con il nome DNS completo del computer. Il nome DNS completo del computer viene visualizzato nella scheda **Identificazione rete** del pannello di controllo del sistema.
+Se **true,** gli indirizzi IP per questa connessione vengono registrati in DNS con il nome DNS completo del computer. Il nome DNS completo del computer viene visualizzato nella scheda **Identificazione** di rete del sistema Pannello di controllo.
 
 </dd> <dt>
 
 *DomainDNSRegistrationEnabled* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, gli indirizzi IP per questa connessione vengono registrati con il nome di dominio della connessione, oltre a essere registrati con il nome DNS completo del computer. Il nome di dominio della connessione viene impostato utilizzando il metodo [**SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md) o assegnato da DHCP. Il nome registrato è il nome host del computer a cui è stato aggiunto il nome di dominio. Questo parametro ha un significato solo quando *FullDNSRegistrationEnabled* è abilitato. Il valore predefinito è **false**.
+Se **true,** gli indirizzi IP per questa connessione vengono registrati con il nome di dominio di questa connessione, oltre a essere registrati con il nome DNS completo del computer. Il nome di dominio di questa connessione viene impostato usando il [**metodo SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md) o assegnato da DHCP. Il nome registrato è il nome host del computer con il nome di dominio aggiunto. Questo parametro ha significato solo quando *FullDNSRegistrationEnabled è* abilitato. Il valore predefinito è **false**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -99,12 +99,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -144,7 +144,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -153,12 +153,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -207,12 +207,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -234,7 +234,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -243,16 +243,16 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -270,7 +270,7 @@ IP non abilitato sulla scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -279,12 +279,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di frame o di rete.
 
 </dd> <dt>
 
@@ -315,12 +315,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro fuori dai limiti.
 
 </dd> <dt>
 
@@ -356,20 +356,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -396,7 +396,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -414,9 +414,9 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Modify Dynamic DNS Registration for a Network Adapter](https://Gallery.TechNet.Microsoft.Com/6c72969c-16c8-4bb6-92e9-b9020001759f) VBScript configura la registrazione DNS dinamica per una scheda di rete.
+[L'esempio VBScript](https://Gallery.TechNet.Microsoft.Com/6c72969c-16c8-4bb6-92e9-b9020001759f) Modify Dynamic DNS Registration for a Network Adapter configura la registrazione DNS dinamica per una scheda di rete.
 
-L'esempio di configurazione delle [schede di rete iSCSI come per le procedure consigliate di Microsoft](https://Gallery.TechNet.Microsoft.Com/Configure-iSCSI-Network-81232a5e) consente di automatizzare le impostazioni di configurazione per una macchina virtuale.
+L'esempio di PowerShell Configure [iSCSI Network Cards as per Microsoft Best Practices](https://Gallery.TechNet.Microsoft.Com/Configure-iSCSI-Network-81232a5e) automatizza le impostazioni di configurazione per una macchina virtuale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -427,7 +427,7 @@ L'esempio di configurazione delle [schede di rete iSCSI come per le procedure co
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -436,19 +436,19 @@ L'esempio di configurazione delle [schede di rete iSCSI come per le procedure co
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
-[Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
+[Supporto IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
 </dt> </dl>
 
  

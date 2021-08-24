@@ -1,19 +1,19 @@
 ---
-description: Questo attributo specifica se il controllo specificato è abilitato o disabilitato. La maggior parte dei controlli è grigio quando è disabilitata.
+description: Questo attributo specifica se il controllo specificato è abilitato o disabilitato. La maggior parte dei controlli viene visualizzata in grigio quando è disabilitata.
 ms.assetid: d84b1b55-34e1-4173-b945-39a809014d55
-title: Attributo di controllo abilitato
+title: Attributo del controllo Enabled
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb7c5cbbbc12353fc07cf50404a1feae1d98f1b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a40de14ac0205c52cce46c6050de0282e62df90d50f3bcdeb576771c9107ffc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763921"
 ---
-# <a name="enabled-control-attribute"></a>Attributo di controllo abilitato
+# <a name="enabled-control-attribute"></a>Attributo del controllo Enabled
 
-Questo attributo specifica se il controllo specificato è abilitato o disabilitato. La maggior parte dei controlli è grigio quando è disabilitata.
+Questo attributo specifica se il controllo specificato è abilitato o disabilitato. La maggior parte dei controlli viene visualizzata in grigio quando è disabilitata.
 
 Se questo bit è impostato, il controllo viene creato come abilitato.
 
@@ -21,7 +21,7 @@ Se questo bit non è impostato, il controllo viene creato come disabilitato.
 
 ## <a name="valid-controls"></a>Controlli validi
 
-Tutti i controlli. L'aspetto di alcuni controlli che non sono associati a una proprietà, ad esempio bitmap e icone, non è influenzato dall'impostazione di questo attributo.
+Tutti i controlli. L'impostazione di questo attributo non ha alcun effetto sull'aspetto di alcuni controlli non associati a una proprietà, ad esempio bitmap e icone.
 
 ## <a name="value"></a>Valore
 
@@ -37,11 +37,11 @@ Tutti i controlli. L'aspetto di alcuni controlli che non sono associati a una pr
 
 ## <a name="remarks"></a>Commenti
 
-È anche possibile usare la [tabella ControlCondition](controlcondition-table.md) per disabilitare o abilitare un controllo in base al valore di una proprietà o di un'istruzione condizionale.
+È anche possibile usare la [tabella ControlCondition per](controlcondition-table.md) disabilitare o abilitare un controllo in base al valore di una proprietà o di un'istruzione condizionale.
 
-È anche possibile abilitare o disabilitare un controllo sottoscrivendo il controllo a un [ControlEvent](control-events.md). Immettere l'identificatore dell'attributo nella colonna Attribute e l'identificatore dell'evento nella colonna Event della [tabella EventMapping](eventmapping-table.md).
+È anche possibile abilitare o disabilitare un controllo sottoscrivendo il controllo a [un oggetto ControlEvent.](control-events.md) Immettere l'identificatore dell'attributo nella colonna Attributo e l'identificatore dell'evento nella colonna Event della [tabella EventMapping](eventmapping-table.md).
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di](control-attributes.md) controllo e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

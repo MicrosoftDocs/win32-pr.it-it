@@ -1,8 +1,8 @@
 ---
-description: Determina se l'utente dispone di tutte le autorizzazioni necessarie specificate nel parametro delle autorizzazioni per l'oggetto file, la directory e la condivisione in cui si trova il file di collegamento, se il file o la directory si trova in una condivisione.
+description: Determina se l'utente dispone di tutte le autorizzazioni necessarie specificate nel parametro Permissions per l'oggetto file, la directory e la condivisione in cui si trova il file di collegamento, se il file o la directory si trova in una condivisione.
 ms.assetid: 36f823c1-fa19-40a1-b750-41e1f73bdf01
 ms.tgt_platform: multiple
-title: Metodo GetEffectivePermission della classe Win32_ShortcutFile (aclui. h)
+title: Metodo GetEffectivePermission della Win32_ShortcutFile classe (Aclui.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 52b57318ac05212304024ead82026d6daf0d8ea4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 90c359a40b482cf3335dde26f0fc4ae49ca5541b3c4fa1d8599b25c68d1365d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760531"
 ---
-# <a name="geteffectivepermission-method-of-the-win32_shortcutfile-class"></a>Metodo GetEffectivePermission della \_ classe ShortcutFile Win32
+# <a name="geteffectivepermission-method-of-the-win32_shortcutfile-class"></a>Metodo GetEffectivePermission della classe ShortcutFile Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **GetEffectivePermission** determina se l'utente dispone di tutte le autorizzazioni necessarie specificate nel parametro *Permissions* per l'oggetto file, la directory e la condivisione in cui si trova il file di collegamento, se il file o la directory si trova in una condivisione.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **GetEffectivePermission** determina se l'utente dispone di tutte le autorizzazioni necessarie specificate nel parametro *Permissions* per l'oggetto file, la directory e la condivisione in cui si trova il file di collegamento, se il file o la directory si trova in una condivisione.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ boolean GetEffectivePermission(
 
 <dl> <dt>
 
-*Autorizzazioni* \[ in\]
+*Autorizzazioni* \[ Pollici\]
 </dt> <dd>
 
-Bitmap delle autorizzazioni.
+Mappa di bit delle autorizzazioni.
 
 <dt>
 
 <span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>**File \_ LEGGERE la \_ directory dell'elenco di file (file) di dati ( \_ \_ Directory)** (1 (0x1))
+<span id="FILE_READ_DATA__file__FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (file) FILE \_ LIST DIRECTORY \_ (directory)** (1 (0x1))
 
 
 </dt> <dd>
@@ -62,29 +62,29 @@ Concede il diritto di leggere i dati dal file. Per una directory, questo valore 
 
 <span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>**File \_ Scrivi file di \_ dati (file) \_ Aggiungi \_ file (directory)** (2 (0x2))
+<span id="FILE_WRITE_DATA__file__FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (file) FILE \_ ADD FILE \_ (directory)** (2 (0x2))
 
 
 </dt> <dd>
 
-Concede il diritto di scrivere i dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
+Concede il diritto di scrivere dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**File \_ ACCODA \_ file di dati (file) \_ Aggiungi \_ sottodirectory (directory)** (4 (0x4))
+<span id="FILE_APPEND_DATA__file__FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>**FILE \_ APPEND \_ DATA (file) FILE \_ ADD \_ SUBDIRECTORY (directory)** (4 (0x4))
 
 
 </dt> <dd>
 
-Concede il diritto di accodare i dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
+Concede il diritto di aggiungere dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**File \_ Leggi \_ EA** (8 (0x8))
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8 (0x8))
 
 
 </dt> <dd>
@@ -95,7 +95,7 @@ Concede il diritto di leggere gli attributi estesi.
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**File \_ Scrivi \_ EA** (16 (0x10))
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16 (0x10))
 
 
 </dt> <dd>
@@ -106,7 +106,7 @@ Concede il diritto di scrivere attributi estesi.
 
 <span id="FILE_EXECUTE__file__FILE_TRAVERSE_directory_"></span><span id="file_execute__file__file_traverse_directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE_DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file__FILE_TRAVERSE_directory_"></span><span id="file_execute__file__file_traverse_directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE_DIRECTORY_"></span>**File \_ Attraversamento FILE di esecuzione (file) ( \_ Directory)** (32 (0x20))
+<span id="FILE_EXECUTE__file__FILE_TRAVERSE_directory_"></span><span id="file_execute__file__file_traverse_directory_"></span><span id="FILE_EXECUTE__FILE__FILE_TRAVERSE_DIRECTORY_"></span>**FILE \_ EXECUTE (file) FILE \_ TRAVERSE (directory)** (32 (0x20))
 
 
 </dt> <dd>
@@ -117,18 +117,18 @@ Concede il diritto di eseguire un file. Per una directory, la directory può ess
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**File \_ Elimina \_ elemento figlio (directory)** (64 (0x40))
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directory)** (64 (0x40))
 
 
 </dt> <dd>
 
-Concede il diritto di eliminare una directory e tutti i file in esso contenuti, anche se i file sono di sola lettura.
+Concede il diritto di eliminare una directory e tutti i file in essa contenuti, anche se i file sono di sola lettura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**File \_ Leggi \_ attributi** (128 (0x80))
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** LETTURA (128 (0x80))
 
 
 </dt> <dd>
@@ -139,7 +139,7 @@ Concede il diritto di leggere gli attributi del file.
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**File \_ Scrivi \_ attributi** (256 (0x100))
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** SCRITTURA (256 (0x100))
 
 
 </dt> <dd>
@@ -150,18 +150,18 @@ Concede il diritto di modificare gli attributi del file.
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Elimina** (65536 (0x10000))
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536 (0x10000))
 
 
 </dt> <dd>
 
-Concede l'accesso DELETE.
+Concede l'accesso per l'eliminazione.
 
 </dd> <dt>
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leggi \_ CONTROLLO** (131072 (0x20000))
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072 (0x20000))
 
 
 </dt> <dd>
@@ -172,7 +172,7 @@ Concede l'accesso in lettura al descrittore di sicurezza e al proprietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Scrivi \_ DAC** (262144 (0x40000))
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ Applicazione livello** dati (262144 (0x40000))
 
 
 </dt> <dd>
@@ -183,7 +183,7 @@ Concede l'accesso in scrittura all'elenco di controllo di accesso discrezionale 
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Scrivi \_ PROPRIETARIO** (524288 (0x80000))
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288 (0x80000))
 
 
 </dt> <dd>
@@ -194,7 +194,7 @@ Assegna il proprietario della scrittura.
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**Sincronizza** (1048576 (0x100000))
+<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**SYNCHRONIZE** (1048576 (0x100000))
 
 
 </dt> <dd>
@@ -205,7 +205,7 @@ Sincronizza l'accesso e consente a un processo di attendere che un oggetto entri
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'utente dispone delle autorizzazioni specificate e **false** se l'utente non dispone delle autorizzazioni specificate.
+Restituisce **True** se l'utente dispone delle autorizzazioni specificate e **false** se l'utente non dispone delle autorizzazioni specificate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -216,8 +216,8 @@ Restituisce **true** se l'utente dispone delle autorizzazioni specificate e **fa
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| Intestazione<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Aclui.h</dt> </dl>      |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -229,7 +229,7 @@ Restituisce **true** se l'utente dispone delle autorizzazioni specificate e **fa
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ShortcutFile Win32**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

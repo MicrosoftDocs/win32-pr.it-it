@@ -1,9 +1,9 @@
 ---
-title: Funzione UtilAssembleStringsWithAlloc (Ndattributils. h)
-description: Alloca una stringa e la formatta usando le stringhe fornite dalla tabella delle stringhe. Questa funzione USA StringCchPrintf per creare la stringa formattata.
+title: Funzione UtilAssembleStringsWithAlloc (Ndattributils.h)
+description: Alloca una stringa e la formatta usando le stringhe fornite dalla tabella delle stringhe. Questa funzione usa StringCchPrintf per creare la stringa formattata.
 ms.assetid: eedc2874-b949-4cc2-ba7c-ebf1924f1156
 keywords:
-- UtilAssembleStringsWithAlloc funzione NDF
+- Funzione UtilAssembleStringsWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dae121b1d5f2d968f696190c64828be91adc71da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38473f45e2bd4c53b964bb38ec285cdf3eea091a96d72684c1d801b949f4d0a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801731"
 ---
-# <a name="utilassemblestringswithalloc-function"></a>UtilAssembleStringsWithAlloc (funzione)
+# <a name="utilassemblestringswithalloc-function"></a>Funzione UtilAssembleStringsWithAlloc
 
-La funzione **UtilAssembleStringsWithAlloc** alloca una stringa e la formatta usando le stringhe fornite dalla tabella delle stringhe. Questa funzione usa [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa) per creare la stringa formattata.
+La **funzione UtilAssembleStringsWithAlloc** alloca una stringa e la formatta usando le stringhe fornite dalla tabella delle stringhe. Questa funzione usa [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa) per creare la stringa formattata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT UtilAssembleStringsWithAlloc(
 
 <dl> <dt>
 
-*Buffer* \[ out\]
+*Buffer* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-Posizione in cui verrà posizionata la stringa appena allocata. Quando la stringa non è più necessaria, deve essere rilasciata con [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Posizione in cui verrà inserita la stringa appena allocata. Quando la stringa non è più necessaria, deve essere rilasciata con [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> <dt>
 
-*BufferMax* \[ in\]
+*BufferMax* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Numero massimo di caratteri consentiti nella stringa allocata dal *buffer*. Se la stringa formattata risultante supera il numero di caratteri specificato, viene troncata e terminata con null.
+Numero massimo di caratteri consentiti nella stringa allocata da *Buffer*. Se la stringa formattata risultante è più lunga del numero di caratteri specificato, viene troncata e con terminazione Null.
 
 > [!Note]  
 > Questo parametro non può essere impostato su zero.
@@ -68,36 +68,36 @@ Numero massimo di caratteri consentiti nella stringa allocata dal *buffer*. Se l
 
 </dd> <dt>
 
-*InputFormat* \[ in\]
+*InputFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Risorsa di stringa fuori dalla tabella delle stringhe che rappresenta un parametro di formato passato a [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa). Viene costruito usando [**MAKEINTRESOURCE**](/windows/desktop/api/winuser/nf-winuser-makeintresourcea).
+Risorsa stringa dalla tabella di stringhe che rappresenta un parametro di formato passato a [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa). Viene costruito usando [**MAKEINTRESOURCE**](/windows/desktop/api/winuser/nf-winuser-makeintresourcea).
 
-Il formato della stringa di risorsa deve specificare un parametro di formato che accetta una stringa di caratteri "wide" oppure un parametro di formato che accetta un valore long senza segno e una stringa di caratteri "wide".
+Il formato della stringa di risorsa deve specificare un parametro di formato che prende una stringa wide o un parametro di formato che prende un valore long senza segno e una stringa wide.
 
 </dd> <dt>
 
-*InputString* \[ in\]
+*InputString* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Risorsa di tipo stringa fuori dalla tabella delle stringhe che rappresenta un argomento passato a [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa) al posto della stringa estesa nel parametro format. Viene costruito usando [**MAKEINTRESOURCE**](/windows/desktop/api/winuser/nf-winuser-makeintresourcea).
+Risorsa stringa dalla tabella di stringhe che rappresenta un argomento passato a [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa) al posto della stringa wide nel parametro format. Viene costruito usando [**MAKEINTRESOURCE**](/windows/desktop/api/winuser/nf-winuser-makeintresourcea).
 
 </dd> <dt>
 
-*AdditionalArgument* \[ in\]
+*AdditionalArgument* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **booleano**
+Tipo: **BOOLEAN**
 
-True se *AdditionalValue* deve essere passato come primo argomento di formattazione a [**StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa); in caso contrario, false (verrà passata solo la stringa di risorsa identificata da *InputString* ).
+True se *AdditionalValue* deve essere passato come primo argomento di formattazione [**a StringCchPrintf**](/windows/desktop/api/strsafe/nf-strsafe-stringcchprintfa); in caso contrario, false (e verrà passata solo la stringa di risorsa identificata da *InputString).*
 
 </dd> <dt>
 
-*AdditionalValue* \[ in\]
+*AdditionalValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
@@ -110,14 +110,14 @@ Valore da passare come primo argomento di formattazione a [**StringCchPrintf**](
 
 Tipo: **HRESULT**
 
-I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
+I possibili valori restituiti includono, ma non solo, quanto segue.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata.<br/>                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o più parametri non sono stati specificati correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o più parametri non sono stati forniti correttamente.<br/> |
 
 
 
@@ -129,9 +129,9 @@ I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Utilizzare per impostare VFP come obbligatorio su una porta.
+description: Usare per impostare VFP come obbligatorio su una porta.
 ms.assetid: efc54e06-26ff-4773-b4b4-a1c5e03d06cc
-title: Classe Msvm_EthernetSwitchPortVfpSettingData
+title: Msvm_EthernetSwitchPortVfpSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 95d143b8e5cbc4845cc25361204fafa9efa45459
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9eb92e71944f43d87228667754df19874a65c6009637a5730d736cb80bb26b9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681391"
 ---
-# <a name="msvm_ethernetswitchportvfpsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortVfpSettingData
+# <a name="msvm_ethernetswitchportvfpsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortVfpSettingData
 
-Utilizzare per impostare VFP come obbligatorio su una porta.
+Usare per impostare VFP come obbligatorio su una porta.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -37,7 +37,7 @@ class Msvm_EthernetSwitchPortVfpSettingData : Msvm_EthernetSwitchPortFeatureSett
 
 ## <a name="members"></a>Members
 
-La classe **MSVM \_ EthernetSwitchPortVfpSettingData** non definisce membri.
+La **classe Msvm \_ EthernetSwitchPortVfpSettingData** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,10 +45,10 @@ La classe **MSVM \_ EthernetSwitchPortVfpSettingData** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La classe **MSVM \_ EthernetSwitchPortVfpSettingData** non definisce membri.
 
 <dl> <dt>
 
-[**\_EthernetSwitchPortFeatureSettingData MSVM**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Questo argomento contiene il punto di ingresso di primo livello per
 ms.assetid: e63a1da1-9137-4571-9881-eee66a29dfe1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1413618330f3698977f10d56b365d644367c155d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8fc090bcb4805103a6abf4d83f78e8be15e85b397e43117f5a9f4d0732d37660
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801541"
 ---
 # <a name="network-list-manager-api-reference"></a>Informazioni di riferimento sulle API di Network List Manager
 
@@ -19,16 +19,16 @@ Questo argomento contiene il punto di ingresso di primo livello per gli elementi
 
 | Elemento API                              | Descrizione                                                                                 |
 |------------------------------------------|---------------------------------------------------------------------------------------------|
-| [Enumerazioni di NLM](nlm-enumerations.md) | Tipi di enumerazione e costanti dell'API Gestione elenco reti.                                   |
-| [Interfacce NLM](nlm-interfaces.md)     | Interfacce COM che espongono i metodi utilizzati dall'infrastruttura di gestione dei percorsi di rete. |
+| [Enumerazioni NLM](nlm-enumerations.md) | Tipi e costanti di enumerazione dell'API Gestione elenchi di rete.                                   |
+| [Interfacce NLM](nlm-interfaces.md)     | Interfacce COM che espongono i metodi utilizzati dall'infrastruttura di Gestione percorso di rete. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

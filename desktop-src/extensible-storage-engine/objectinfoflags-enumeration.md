@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione ObjectInfoFlags'
+description: Altre informazioni sull'enumerazione ObjectInfoFlags
 title: Enumerazione ObjectInfoFlags
 TOCTitle: ObjectInfoFlags enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ObjectInfoFlags
@@ -36,21 +36,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3f301f1e786d126dbd57c071fe89356e0acc891
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06cd7cecaa536106f70cc469e3b690a46bee8301fe2d1142bc3fa1ff2c045346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780271"
 ---
 # <a name="objectinfoflags-enumeration"></a>Enumerazione ObjectInfoFlags
 
-Flag per oggetti ESENT (tabelle). Utilizzato in [JET_OBJECTINFO](./jet-objectinfo-class.md).
+Flag per oggetti ESENT (tabelle). Usato in [JET_OBJECTINFO](./jet-objectinfo-class.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -91,22 +91,22 @@ public enum ObjectInfoFlags
 <tr class="odd">
 <td></td>
 <td>TableFixedDDL</td>
-<td>La DDL della tabella è fissa.</td>
+<td>Il DDL della tabella è fisso.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TableTemplate</td>
-<td>La DDL della tabella è ereditabile.</td>
+<td>Il linguaggio DDL della tabella è ereditabile.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TableDerived</td>
-<td>La DDL della tabella viene ereditata da una tabella del modello.</td>
+<td>Il linguaggio DDL della tabella viene ereditato da una tabella modello.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TableNoFixedVarColumnsInDerivedTables</td>
-<td>Colonne fisse o variabili nelle tabelle derivate. in questo modo è possibile aggiungere colonne fisse o variabili al modello in futuro. Utilizzato insieme a TableTemplate.</td>
+<td>Colonne fisse o variabili nelle tabelle derivate ( in modo che le colonne fisse o variabili possano essere aggiunte al modello in futuro). Usato in combinazione con TableTemplate.</td>
 </tr>
 </tbody>
 </table>
@@ -116,4 +116,4 @@ public enum ObjectInfoFlags
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

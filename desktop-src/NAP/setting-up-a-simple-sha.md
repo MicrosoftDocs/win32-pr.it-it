@@ -1,29 +1,29 @@
 ---
-title: Configurazione di un SHA semplice
-description: Nell'esempio seguente viene impostato un semplice agente integrità sistema (SHA) e vengono illustrate due azioni facoltative per la notifica di modifica del rapporto di integrità e lo scaricamento della cache del rapporto di integrità.
+title: Configurazione di un'applicazione SHA semplice
+description: Nell'esempio seguente viene impostato un semplice agente di integrità del sistema (SHA) e vengono illustrate due azioni facoltative di notifica delle modifiche dell'istruzione di integrità (SoH) e lo scaricamento della cache SoH.
 ms.assetid: 7c96e1ca-f9b2-40e6-bd89-c8ef77b48dfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef60b7ab9e390289a9bc1a2c3a00dd81ccf46240
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 94625e99f604fd282a5b1177992f6e9e413b30d35f61767ad7231315dddfab53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780741"
 ---
-# <a name="setting-up-a-simple-sha"></a>Configurazione di un SHA semplice
+# <a name="setting-up-a-simple-sha"></a>Configurazione di un'applicazione SHA semplice
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
- 
+ 
 
-Nell'esempio seguente viene impostato un semplice agente integrità sistema (SHA) e vengono illustrate due azioni facoltative: notifica di modifica del rapporto di integrità e scaricamento della cache del rapporto di integrità. Si noti che l'elaborazione degli errori non è inclusa nella funzione Main () per semplificare l'esempio.
+L'esempio seguente configura un semplice agente di integrità del sistema (SHA) e mostra due azioni facoltative: notifica di modifica dell'istruzione di integrità (SoH) e scaricamento della cache SoH. Si noti che l'elaborazione degli errori non è inclusa nella funzione main() per semplicità in questo esempio.
 
 > [!Note]  
-> NAP SDK contiene anche un set completo di codice di esempio, disponibile in... \\ Esempi di \\ NetDS \\ NAP... Directory dell'installazione dell'SDK. Questo set di esempio include un servizio di convalida dell'integrità di sistema e un client di imposizione (EC). Dispone di scenari di protezione accesso alla rete completamente funzionanti che configurano la comunicazione tra SHA-convalida e SHA-EC.
+> Nap SDK contiene anche un set completo di codice di esempio, disponibile nel ... \\ Esempi \\ di Protezione accesso alla rete NetDS... \\ directory dell'installazione dell'SDK. Questo set di esempio include sha, convalida dell'integrità del sistema (SHV) e client di imposizione (EC). Dispone di scenari di Protezione accesso alla rete completamente funzionanti che configurano la comunicazione tra SHA-SHV e SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -221,9 +221,9 @@ STDMETHODIMP ShaCallback::GetFixupInfo(FixupInfo** ppStatus)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

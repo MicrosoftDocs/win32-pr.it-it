@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. EventSource'
-title: Proprietà InstanceParameters. EventSource
+description: 'Altre informazioni su: Proprietà InstanceParameters.EventSource'
+title: InstanceParameters.EventSource - proprietà
 TOCTitle: 'EventSource property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.EventSource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.eventsource(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5cba0c6f9aef4b9e6633a5d0073b1fdbc2c3b1a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36b158815366ee36a4c9d4313d0490e51272e3513e77f79d557dd8ec2b36dba2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721131"
 ---
-# <a name="instanceparameterseventsource-property"></a>Proprietà InstanceParameters. EventSource
+# <a name="instanceparameterseventsource-property"></a>InstanceParameters.EventSource - proprietà
 
-Ottiene o imposta una stringa specifica dell'applicazione che verrà aggiunta a qualsiasi messaggio del registro eventi emesso dal motore di database. In questo modo è possibile correlare facilmente i messaggi del log eventi con l'applicazione di origine. Per impostazione predefinita, verrà usato il nome dell'eseguibile dell'applicazione host.
+Ottiene o imposta una stringa specifica dell'applicazione che verrà aggiunta a tutti i messaggi del log eventi generati dal motore di database. In questo modo è possibile correlare facilmente i messaggi del log eventi con l'applicazione di origine. Per impostazione predefinita, verrà usato il nome eseguibile dell'applicazione host.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public string EventSource { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

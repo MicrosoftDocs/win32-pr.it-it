@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_WAVE_SET_PARMS (Mciapi. h)
-description: La \_ struttura parametri di MCI WAVE \_ set \_ contiene informazioni per il \_ comando set di MCI per i dispositivi Waveform-Audio.
+title: MCI_WAVE_SET_PARMS struttura (Mciapi.h)
+description: La struttura MCI \_ WAVE \_ SET \_ PARMS contiene informazioni per il comando MCI \_ SET per i dispositivi audio waveform.
 ms.assetid: 24c26124-274f-457e-ab87-887f3bcffce3
 keywords:
-- Struttura MCI_WAVE_SET_PARMS di Windows Multimedia
+- MCI_WAVE_SET_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11446eda931da1a645b9bb6218c93898862b59bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85508ec493ecdc38825b90877e608683fe6c0bb7c099365c187a434890c605d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783751"
 ---
-# <a name="mci_wave_set_parms-structure"></a>\_ \_ Struttura parametri set Wave MCI \_
+# <a name="mci_wave_set_parms-structure"></a>Struttura MCI \_ WAVE \_ SET \_ PARMS
 
-La struttura **parametri di MCI \_ Wave \_ set \_** contiene informazioni per il comando [**\_ set di MCI**](mci-set.md) per i dispositivi Waveform-Audio.
+La **struttura MCI \_ WAVE SET \_ \_ PARMS** contiene informazioni per il [**comando MCI \_ SET**](mci-set.md) per i dispositivi audio waveform.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -85,14 +85,14 @@ Canale di input audio.
 **wOutput**
 </dt> <dd>
 
-Dispositivo di output da usare. Questo valore, ad esempio, può essere 2 Se un sistema ha due schede audio installate.
+Dispositivo di output da usare. Ad esempio, questo valore potrebbe essere 2 se un sistema aveva due schede audio installate.
 
 </dd> <dt>
 
 **wFormatTag**
 </dt> <dd>
 
-Formato dei dati audio della forma d'onda, come il \_ formato Wave \_ PCM. I valori possibili sono definiti in mmreg. h.
+Formato dei dati audio della forma d'onda, ad esempio WAVE \_ FORMAT \_ PCM. I valori possibili sono definiti in Mmreg.h.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Riservato.
 **nSamplesPerSec**
 </dt> <dd>
 
-Campioni al secondo.
+Esempi al secondo.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Frequenza di campionamento in byte al secondo.
 **nBlockAlign**
 </dt> <dd>
 
-Blocca l'allineamento dei dati.
+Allineamento dei blocchi dei dati.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Riservato.
 **wBitsPerSample**
 </dt> <dd>
 
-BITS per campione.
+Bit per campione.
 
 </dd> <dt>
 
@@ -161,7 +161,7 @@ Riservato.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -171,7 +171,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -179,13 +179,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**SET di MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

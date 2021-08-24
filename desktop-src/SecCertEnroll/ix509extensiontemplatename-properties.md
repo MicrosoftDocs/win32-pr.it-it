@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IX509ExtensionTemplateName espone le proprietà seguenti.
 ms.assetid: 7BECF603-DB9C-4FBD-9E27-F961A5CDFBB0
-title: Proprietà di IX509ExtensionTemplateName
+title: Proprietà IX509ExtensionTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49e8fb23d50e244ce272673186c50cc617e0d8ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a31f4de0cddb28d0041de11083473dc3c35741fd988a1cbacbfc33996c471f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739721"
 ---
-# <a name="ix509extensiontemplatename-properties"></a>Proprietà di IX509ExtensionTemplateName
+# <a name="ix509extensiontemplatename-properties"></a>Proprietà IX509ExtensionTemplateName
 
-L'interfaccia [**IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) espone le proprietà seguenti.
+[**L'interfaccia IX509ExtensionTemplateName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensiontemplatename) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

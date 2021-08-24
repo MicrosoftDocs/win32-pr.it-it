@@ -1,7 +1,7 @@
 ---
-description: La funzione GetFrame restituisce un handle per un frame specificato all'interno di un'acquisizione.
+description: La funzione GetFrame restituisce un handle a un frame specificato all'interno di un'acquisizione.
 ms.assetid: d40bc364-0028-4006-a6c2-6ee100366ba3
-title: Funzione GetFrame (Netmon. h)
+title: Funzione GetFrame (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 3f79e7fa6fc4e79f4dea804769cc9d51b8096860
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f6f992c0c61978e2de6f90755852c9e29d6ac51d7ae7f2405ef981ed695c4b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779251"
 ---
 # <a name="getframe-function"></a>Funzione GetFrame
 
-La funzione **GetFrame** restituisce un handle per un frame specificato all'interno di un'acquisizione.
+La **funzione GetFrame** restituisce un handle a un frame specificato all'interno di un'acquisizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ HFRAME WINAPI GetFrame(
 
 <dl> <dt>
 
-*hCapture* \[ in\]
+*hCapture* \[ Pollici\]
 </dt> <dd>
 
-Handle per un'acquisizione. Per ottenere l'handle di acquisizione, chiamare la funzione [GetFrameCaptureHandle](getframecapturehandle.md) .
+Handle per un'acquisizione. Per ottenere l'handle di acquisizione, chiamare [la funzione GetFrameCaptureHandle.](getframecapturehandle.md)
 
 </dd> <dt>
 
-*NumeroFrame* \[ in\]
+*FrameNumber* \[ Pollici\]
 </dt> <dd>
 
-Numero (in base zero) del frame. Il numero del primo fotogramma in un'acquisizione è zero.
+Numero (in base zero) del frame. Il numero del primo frame in un'acquisizione è zero.
 
 </dd> </dl>
 
@@ -58,13 +58,13 @@ Numero (in base zero) del frame. Il numero del primo fotogramma in un'acquisizio
 
 Se la funzione ha esito positivo, il valore restituito è un handle per il frame.
 
-Se la funzione ha esito negativo, ovvero se *hCapture* non è valido o il numero di frame non è compreso nell'intervallo, il valore restituito è **null**.
+Se la funzione ha esito negativo, ovvero se *hCapture* non è valido o il numero di frame non è compreso nell'intervallo, il valore restituito è **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-Usare la funzione **GetFrame** per ottenere l'handle di frame necessario per l'individuazione delle istanze di una proprietà. Le funzioni utilizzate per individuare le istanze di proprietà sono [FindPropertyInstance](findpropertyinstance.md) che individua la prima istanza e [FindPropertyInstanceRestart](findpropertyinstancerestart.md) che individua l'istanza successiva.
+Usare la **funzione GetFrame** per ottenere l'handle di frame necessario quando si individuano istanze di una proprietà. Le funzioni usate per individuare le istanze di proprietà sono [FindPropertyInstance](findpropertyinstance.md) che individua la prima istanza e [FindPropertyInstanceRestart,](findpropertyinstancerestart.md) che individua l'istanza successiva.
 
-Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFrame** .
+[*Esperti*](e.md) e [*parser possono*](p.md) chiamare la **funzione GetFrame.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Gli [*esperti*](e.md) e i [*parser*](p.md) possono chiamare la funzione **GetFra
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

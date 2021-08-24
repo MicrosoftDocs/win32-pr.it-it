@@ -1,11 +1,11 @@
 ---
-title: Site-Link-List-attributo
-description: Elenco di collegamenti di sito associati a questo Bridge.
+title: Attributo Site-Link-List
+description: Elenco dei collegamenti di sito associati al bridge.
 ms.assetid: 79ec0ae2-ceb3-4321-8b6d-ce5c3bda667a
 ms.tgt_platform: multiple
 keywords:
-- Site-Link-List attributo AD schema
-- Schema AD dell'attributo siteLinkList
+- Schema AD dell'attributo Site-Link-List
+- Attributo siteLinkList - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e71284e4650a3cb146b1656c846483e33a6dd66
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 803b72a29eaa4c9f82f589e4f8578cc48a64e3857c9789db59bd2eef5cb6e815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802121"
 ---
-# <a name="site-link-list-attribute"></a>Site-Link-List-attributo
+# <a name="site-link-list-attribute"></a>Attributo Site-Link-List
 
-Elenco di collegamenti di sito associati a questo Bridge.
+Elenco dei collegamenti di sito associati al bridge.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------|
-| CN                | Elenco di collegamenti di sito                                               |
-| LDAP-Display-Name | siteLinkList                                                 |
+| CN                | Elenco dei collegamenti di sito                                               |
+| Ldap-Display-Name | siteLinkList                                                 |
 | Dimensione              | \-                                                           |
-| Privilegio aggiornamento  | Amministratore di dominio                                         |
-| Frequenza di aggiornamento  | Ogni volta che un collegamento di sito viene aggiunto o rimosso dal Bridge. |
+| Aggiorna privilegio  | Amministratore di dominio                                         |
+| Frequenza di aggiornamento  | Ogni volta che un collegamento di sito viene aggiunto o rimosso dal bridge. |
 | Attribute-Id      | 1.2.840.113556.1.4.822                                       |
-| System-ID-GUID    | d50c2cdd-8951-11d1-aebc-0000f80367c1                         |
+| System-Id-Guid    | d50c2cdd-8951-11d1-aebc-0000f80367c1                         |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)                      |
 
 
@@ -44,7 +44,7 @@ Elenco di collegamenti di sito associati a questo Bridge.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Collegamento di sito -Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Collegamento di sito -Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Site-Link-Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Site-Link-Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Site-Link-Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Site-Link-Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di collegamenti di sito associati a questo Bridge.
 | ID collegamento                | 142                                                     |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Falso                                                   |
+| Is-Single-Valued       | Falso                                                   |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**Site-link-Bridge**](c-sitelinkbridge.md)<br/> |
+| Classi usate in        | [**Site-Link-Bridge**](c-sitelinkbridge.md)<br/> |
 
 
 

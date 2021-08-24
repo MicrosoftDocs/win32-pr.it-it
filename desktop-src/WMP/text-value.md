@@ -1,9 +1,9 @@
 ---
-title: TEXT. Value
-description: L'attributo value specifica o Recupera il testo visualizzato nel controllo di testo.
+title: TEXT.value
+description: L'attributo value specifica o recupera il testo visualizzato nel controllo Text.
 ms.assetid: dbc50be2-ee18-4661-a343-9e906879aba0
 keywords:
-- Media Player di Windows TEXT. Value
+- Text.value Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d87f688f7afffeb588a37ac13ebff4cdc7cc105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8eef6b17428831a52a0e3cf5b8f8ec3dd7f795d5d4b78e2c4700a6274b877820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762861"
 ---
-# <a name="textvalue"></a>TEXT. Value
+# <a name="textvalue"></a>TEXT.value
 
-L'attributo **value** specifica o Recupera il testo visualizzato nel controllo di testo.
+**L'attributo** value specifica o recupera il testo visualizzato nel controllo Text.
 
 ``` syntax
         elementID.value
@@ -29,21 +29,21 @@ L'attributo **value** specifica o Recupera il testo visualizzato nel controllo d
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura.
+Questo attributo è una stringa di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Se la larghezza del controllo di testo non è sufficiente per contenere il testo specificato, il testo viene ritagliato e vengono visualizzati i puntini di sospensione per illustrare il fatto. Se l'attributo **ToolTip** non è stato impostato, il testo completo verrà visualizzato come descrizione comando quando il cursore passa il puntatore del mouse sul controllo.
+Se la larghezza del controllo Testo non è sufficiente per contenere il testo fornito, il testo viene ritagliato e vengono visualizzati i puntini di sospensione per illustrare il fatto. Se **l'attributo toolTip** non è stato impostato, il testo completo verrà visualizzato come descrizione comando quando il cursore viene posizionato sul controllo.
 
-Se non viene specificata una larghezza, la larghezza predefinita per il controllo corrisponde a quella della stringa.
+Se non viene specificata una larghezza, la larghezza predefinita per il controllo è la larghezza della stringa.
 
 Se l'altezza del controllo non è specificata, l'altezza predefinita è una riga.
 
-Se l'attributo **WordWrap** è impostato su true e l'altezza del controllo è sufficiente per contenere un'altra riga di testo, il testo viene incapsulato in una riga successiva. Il wrapping si verifica solo tra le parole. È anche possibile forzare le interruzioni di riga, come descritto in **WordWrap**.
+Se **l'attributo wordWrap** è impostato su true e l'altezza del controllo è sufficiente per contenere un'altra riga di testo, il testo va a capo in una riga successiva. Il ritorno a capo si verifica solo tra le parole. È anche possibile forzare le interruzioni di riga, come illustrato in **wordWrap**.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente è un file di definizione dell'interfaccia completa che illustra come vengono usati gli attributi dell'elemento di **testo** . Si trova nella directory degli esempi installata con l'SDK.
+L'esempio seguente è un file di definizione dell'interfaccia completo che illustra come vengono usati **gli** attributi dell'elemento TEXT. È disponibile nella directory Samples installata con l'SDK.
 
 
 ```C++
@@ -156,7 +156,7 @@ L'esempio seguente è un file di definizione dell'interfaccia completa che illus
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -167,10 +167,10 @@ L'esempio seguente è un file di definizione dell'interfaccia completa che illus
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TESTO. toolTip**](text-tooltip.md)
+[**TEXT.toolTip**](text-tooltip.md)
 </dt> <dt>
 
-[**TESTO. wordWrap**](text-wordwrap.md)
+[**TEXT.wordWrap**](text-wordwrap.md)
 </dt> </dl>
 
  

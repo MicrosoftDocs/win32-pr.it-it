@@ -4,12 +4,12 @@ description: Strutture delle informazioni sulla versione
 ms.assetid: 44252d74-abb6-4ff3-9d4c-969bbc25439e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ababc1e22c01670af10ad09730e7aa0ae89551d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 76186b793f7856f0fc9e8d39d9ab01ed7efd6c6282dcf25c35b3634d376090aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662781"
 ---
 # <a name="version-information-structures"></a>Strutture delle informazioni sulla versione
 

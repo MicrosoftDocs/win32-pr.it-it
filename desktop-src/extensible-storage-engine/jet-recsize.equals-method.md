@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_RECSIZE. Equals (metodo)'
-title: JET_RECSIZE. Metodo Equals (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_RECSIZE. Metodo Equals'
+title: JET_RECSIZE. Metodo Equals (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.equals(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: e71c1abac163f3b874a5708d4004d9592d721503
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d11841e4a179046707be49a1f9fbee2c3dee95d00cb2e1f3387ea05677574259
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719921"
 ---
-# <a name="jet_recsizeequals-method"></a>JET_RECSIZE. Equals (metodo)
+# <a name="jet_recsizeequals-method"></a>JET_RECSIZE. Metodo Equals
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,12 +39,12 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh558506(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.</td>
+<td><a href="hh558506(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">di ValueType.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh577992(v=exchg.10).md">Uguale a (JET_RECSIZE)</a></td>
+<td><a href="hh577992(v=exchg.10).md">Equals(JET_RECSIZE)</a></td>
 <td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE struttura](./jet-recsize-structure2.md)
 
-[Membri JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membri](./jet-recsize-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

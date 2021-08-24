@@ -1,7 +1,7 @@
 ---
-description: Rappresenta i dati di stato della funzionalità della larghezza di banda della porta.
+description: Rappresenta i dati sullo stato della funzionalità della larghezza di banda della porta.
 ms.assetid: 1f7be0dd-3d2f-49ef-aff0-cb162389194a
-title: Classe Msvm_EthernetSwitchPortBandwidthData
+title: Msvm_EthernetSwitchPortBandwidthData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 55e8ad735d712bdd388e42b1f4174ee1a78af184
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f591c5b4f62cda04324fab6b962d7dad8873058cdb90aab2d998081578d259a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681511"
 ---
-# <a name="msvm_ethernetswitchportbandwidthdata-class"></a>\_Classe MSVM EthernetSwitchPortBandwidthData
+# <a name="msvm_ethernetswitchportbandwidthdata-class"></a>Classe Msvm \_ EthernetSwitchPortBandwidthData
 
-Rappresenta i dati di stato della funzionalità della larghezza di banda della porta.
+Rappresenta i dati sullo stato della funzionalità della larghezza di banda della porta.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,123 +59,123 @@ class Msvm_EthernetSwitchPortBandwidthData : Msvm_EthernetPortData
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortBandwidthData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortBandwidthData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortBandwidthData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortBandwidthData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Bandwidth status feature status".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Stato funzionalità larghezza di banda porta commutatore Ethernet".
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome della sottoclasse utilizzata per la creazione di questa istanza di dati di porta. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "MSVM \_ EthernetSwitchPortBandwidthData".
+Nome della sottoclasse usata nella creazione di questa istanza di dati della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "Msvm \_ EthernetSwitchPortBandwidthData".
 
 </dd> <dt>
 
 **CurrentBandwidthReservationPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Percentuale di larghezza di banda corrente riservata per questa porta.
+Percentuale corrente di larghezza di banda riservata per questa porta.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "rappresenta i dati di stato della funzionalità della larghezza di banda della porta".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta i dati di stato della funzionalità della larghezza di banda della porta".
 
 </dd> <dt>
 
 **DeviceCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "MSVM \_ EthernetSwitchPort".
+Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "Msvm \_ EthernetSwitchPort".
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (64)
+Qualificatori: **Key,** **MaxLen** ( 64 )
 </dt> </dl>
 
-ID dispositivo della porta che ha come ambito questa istanza di dati di porta. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+ID dispositivo della porta che ha come ambito questa istanza di dati della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Bandwidth status feature status".
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Stato funzionalità larghezza di banda porta commutatore Ethernet".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -184,55 +184,55 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Stringa che identifica in modo univoco questa istanza di dati di porta nell'ambito dell'opzione e della porta. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+Stringa che identifica in modo univoco questa istanza di dati della porta nell'ambito del commutatore e della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "MSVM \_ VirtualEthernetSwitch".
+Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)ed è sempre impostata su "Msvm \_ VirtualEthernetSwitch".
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome del Commuter virtuale che ha come ambito questa istanza di dati di porta. Questa proprietà viene ereditata da [**MSVM \_ EthernetPortData**](msvm-ethernetportdata.md).
+Nome del commutatore virtuale che ha come ambito questa istanza di dati della porta. Questa proprietà viene ereditata da [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> </dl>
 
@@ -242,10 +242,10 @@ Nome del Commuter virtuale che ha come ambito questa istanza di dati di porta. Q
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

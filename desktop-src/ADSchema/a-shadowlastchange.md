@@ -1,6 +1,6 @@
 ---
-title: attributo shadowLastChange
-description: Contiene l'ultima modifica delle informazioni Shadow.
+title: Attributo shadowLastChange
+description: Contiene l'ultima modifica delle informazioni sull'ombreggiatura.
 ms.assetid: 397b32f4-9657-40ab-9525-a27474c978cf
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb8e7b75d6b1ba3b6751dc27774caf5d04935b5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 07d50e5f6ec31d950609c9503d40ede80ad7d019c649c1a26e026758fb919c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802291"
 ---
-# <a name="shadowlastchange-attribute"></a>attributo shadowLastChange
+# <a name="shadowlastchange-attribute"></a>Attributo shadowLastChange
 
-Contiene l'ultima modifica delle informazioni Shadow.
+Contiene l'ultima modifica delle informazioni sull'ombreggiatura.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | shadowLastChange                     |
-| LDAP-Display-Name | shadowLastChange                     |
+| Ldap-Display-Name | shadowLastChange                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.5                      |
-| System-ID-GUID    | f8f2689c-29e8-4843-8177-e8b98e15eeac |
+| System-Id-Guid    | f8f2689c-29e8-4843-8177-e8b98e15eeac |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene l'ultima modifica delle informazioni Shadow.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene l'ultima modifica delle informazioni Shadow.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene l'ultima modifica delle informazioni Shadow.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene l'ultima modifica delle informazioni Shadow.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 

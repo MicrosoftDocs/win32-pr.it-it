@@ -1,23 +1,23 @@
 ---
-title: Riferimento all'interfaccia
-description: Riferimento all'interfaccia
+title: Informazioni di riferimento per l'interfaccia
+description: Informazioni di riferimento per l'interfaccia
 ms.assetid: af778d1e-f6e8-47b0-bf98-e826880f48b7
 keywords:
-- Windows Media Player, interfacce
-- Windows Media Player Mobile Skins, informazioni di riferimento
-- interfacce, riferimenti per la programmazione
-- riferimento per le interfacce, informazioni
-- informazioni di riferimento per le interfacce, Windows Media Player Mobile
+- Windows Media Player,skins
+- Windows Media Player interfaccia per dispositivi mobili, informazioni di riferimento
+- interfacce, informazioni di riferimento sulla programmazione
+- informazioni di riferimento per le interfaccia, informazioni
+- informazioni di riferimento per le interfaccia, Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c0c84d5acccf88c4dc3d893eb32f54a24135257
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4572d45f43c37fca52625288013dbf366db3f96b02961b17cb12edac9c02ab12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763481"
 ---
-# <a name="skin-reference"></a>Riferimento all'interfaccia
+# <a name="skin-reference"></a>Informazioni di riferimento per l'interfaccia
 
 Questo riferimento è suddiviso nelle sezioni seguenti.
 
@@ -25,35 +25,35 @@ Questo riferimento è suddiviso nelle sezioni seguenti.
 
 | Sezione                        | Descrizione                                                                     |
 |--------------------------------|---------------------------------------------------------------------------------|
-| [Album artistico](album-art.md)     | Informazioni su come includere gli album grafici nelle interfacce.                                 |
-| [Bitmap](bitmaps.md)         | Informazioni sui file di grafica usati per la creazione di interfacce.                          |
-| [Pulsanti](buttons.md)         | Informazioni sui controlli pulsante disponibili nelle interfacce.                       |
-| [Descrizione](description.md) | Informazioni su come specificare le dimensioni e l'orientamento dell'interfaccia.                   |
-| [Testo scorrevole](marquee.md)         | Informazioni sull'utilizzo delle caselle di testo di scorrimento nelle interfacce.                          |
-| [Classificazioni](ratings.md) \*      | Informazioni sul valore di classificazione assegnato a un elemento multimediale.                   |
-| [Status](status.md)           | Informazioni su come includere una visualizzazione dello stato in Skins.                          |
-| [Text](text.md)               | Informazioni sull'utilizzo delle caselle di testo per visualizzare le informazioni nelle interfacce.             |
-| [TrackBar](trackbars.md)     | Informazioni sull'utilizzo di controlli TrackBar scorrevoli per il volume e la posizione di ricerca. |
-| [Video](video.md)             | Informazioni sull'inclusione di un'area di visualizzazione video nelle interfacce.                      |
+| [Album Art](album-art.md)     | Informazioni sull'inclusione della grafica degli album nelle interfaccia.                                 |
+| [Bitmap](bitmaps.md)         | Informazioni sui file di grafica usati nella creazione dell'interfaccia.                          |
+| [Pulsanti](buttons.md)         | Informazioni sui controlli pulsante di comando disponibili nelle interfaccia.                       |
+| [Descrizione](description.md) | Informazioni sulla specifica delle dimensioni e dell'orientamento dell'interfaccia.                   |
+| [Testo scorrevole](marquee.md)         | Informazioni sull'uso delle caselle di testo scorrenti nelle interfaccia.                          |
+| [Classificazioni](ratings.md) \*      | Informazioni sul valore ratings assegnato a un elemento multimediale.                   |
+| [Status](status.md)           | Informazioni sull'inclusione di una visualizzazione dello stato nelle interfaccia.                          |
+| [Text](text.md)               | Informazioni sull'uso delle caselle di testo per visualizzare informazioni nelle interfaccia.             |
+| [Trackbar](trackbars.md)     | Informazioni sull'uso dei controlli trackbar scorrevoli per il volume e la posizione di ricerca. |
+| [Video](video.md)             | Informazioni sull'inclusione di un'area di visualizzazione video nelle interfaccia.                      |
 
 
 
- 
+ 
 
-\*Novità per Windows Media Player 10,1 mobile.
+\*Novità di Windows Media Player 10.1 Mobile.
 
-Ogni sezione corrisponde a una sezione del file di definizione dell'interfaccia che è necessario fornire per utilizzare elementi specifici. Le sezioni sono elencate in ordine alfabetico. Per conoscere l'ordine in cui devono essere visualizzati in un file di definizione dell'interfaccia utente, vedere [creazione di un file di definizione dell'interfaccia](creating-a-skin-definition-file.md). Informazioni dettagliate sulla composizione del file di definizione dell'interfaccia sono disponibili nella sezione [About Skins](about-skins-mobile.md) .
+Ogni sezione corrisponde a una sezione del file di definizione dell'interfaccia che è necessario fornire per usare elementi specifici. Le sezioni sono elencate qui in ordine alfabetico. Per informazioni sull'ordine in cui devono essere visualizzati in un file di definizione dell'interfaccia, vedere Creazione di un file [di definizione dell'interfaccia.](creating-a-skin-definition-file.md) I dettagli sulla composizione del file di definizione dell'interfaccia sono disponibili nella [sezione About Skins (Informazioni sulle](about-skins-mobile.md) interfaccia).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Interfacce di Windows Media Player Mobile**](windows-media-player-mobile-skins.md)
+[**Windows Media Player Interfaccia per dispositivi mobili**](windows-media-player-mobile-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

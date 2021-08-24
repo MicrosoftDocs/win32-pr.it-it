@@ -5,19 +5,19 @@ ms.assetid: 664e4d99-48ed-4948-b816-e92ad1ca3ece
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f3c543e01f3c8f154628c6e204aff53c6ad210
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77b0399a75e9301fcdb5e88e6f30b7e0b2ef66160fa05136ed43b51fa8e80eca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742111"
 ---
 # <a name="enumerating-objects-in-a-collection"></a>Enumerazione di oggetti in una raccolta
 
 > [!Note]  
-> Il servizio di autenticazione Internet (IAS) è stato rinominato server dei criteri di rete (NPS) a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a NPS. In tutto il testo, NPS viene utilizzato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente indicate come IAS.
+> Il servizio Autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a Server dei criteri di rete. In tutto il testo, Server dei criteri di rete viene usato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente denominate IAS.
 
- 
+ 
 
 Il codice seguente enumera i protocolli nella raccolta di protocolli NPS.
 
@@ -124,13 +124,13 @@ Il codice seguente enumera i protocolli nella raccolta di protocolli NPS.
 
 ## <a name="remarks"></a>Commenti
 
-Le variabili vtName e vtProtocol sono di tipo [ \_ Variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un oggetto [ \_ Variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)) incapsula o racchiude il tipo di dati **Variant** . La classe gestisce l'allocazione e la deallocazione delle risorse e effettua chiamate di funzione a [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) e [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) in base alle esigenze.
+Le variabili vtName e vtProtocol sono di tipo [ \_ variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un [ \_ oggetto variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)) incapsula o racchiude il tipo di dati **VARIANT.** La classe gestisce l'allocazione e la deallocazione delle risorse e effettua chiamate di funzione [**a VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) e [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) in base alle esigenze.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[\_variante \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
+[\_variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
 </dt> <dt>
 
 [Aggiunta di un client](/windows/desktop/Nps/sdo-adding-a-client)
@@ -142,10 +142,10 @@ Le variabili vtName e vtProtocol sono di tipo [ \_ Variant \_ t](/previous-versi
 [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 </dt> <dt>
 
-[**ISdo:: GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
+[**ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
 </dt> <dt>
 
-[Recupero di un servizio SDO](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
+[Recupero di un SDO del servizio](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
 </dt> <dt>
 
 [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear)
@@ -154,9 +154,9 @@ Le variabili vtName e vtProtocol sono di tipo [ \_ Variant \_ t](/previous-versi
 [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit)
 </dt> <dt>
 
-[**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
+[**Variante**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

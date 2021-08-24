@@ -1,6 +1,6 @@
 ---
-title: attributo shadowInactive
-description: Contiene il numero di giorni di inattività consentito per l'utente.
+title: Attributo shadowInactive
+description: Contiene il numero di giorni di inattività consentiti per l'utente.
 ms.assetid: 0e6b023f-9806-4c7e-82e4-505807647733
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c05a63ba03cc45e1c5c1914bda98d9c09b8a2f3f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: df5f399e400d0ddb0bbddab9deadfe89908c4d53144e1c2cad4ae603bbc3e6fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836571"
 ---
-# <a name="shadowinactive-attribute"></a>attributo shadowInactive
+# <a name="shadowinactive-attribute"></a>Attributo shadowInactive
 
-Contiene il numero di giorni di inattività consentito per l'utente.
+Contiene il numero di giorni di inattività consentiti per l'utente.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | shadowInactive                       |
-| LDAP-Display-Name | shadowInactive                       |
+| Ldap-Display-Name | shadowInactive                       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.9                      |
-| System-ID-GUID    | 86871d1f-3310-4312-8efd-af49dcfb2671 |
+| System-Id-Guid    | 86871d1f-3310-4312-8efd-af49dcfb2671 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene il numero di giorni di inattività consentito per l'utente.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il numero di giorni di inattività consentito per l'utente.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il numero di giorni di inattività consentito per l'utente.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene il numero di giorni di inattività consentito per l'utente.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| A valore singolo       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 

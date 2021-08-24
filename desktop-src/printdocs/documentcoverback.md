@@ -1,21 +1,21 @@
 ---
-description: Informazioni sull'elemento DocumentCoverBack, che descrive il foglio di presentazione. Ogni documento avrà un foglio separato.
+description: Informazioni sull'elemento DocumentCoverBack, che descrive il foglio di presentazione posteriore. Ogni documento avrà un foglio separato.
 ms.assetid: 29d0bf2d-4897-43ed-ba3d-0b38b2f30375
 title: DocumentCoverBack
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad5c75fd4bbce89bbc707c17a82202846cf2490a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ae46d2672e53a72e015cf7b12559f727ae184ef7132ca1b7ea8014c7a984a46a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719371"
 ---
 # <a name="documentcoverback"></a>DocumentCoverBack
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il foglio di presentazione posteriore (finale). Ogni documento avrà un foglio separato. Il foglio di presentazione deve essere stampato nelle proprietà PageMediaSize e PageMediaType usate per la pagina finale del documento. Il foglio di presentazione deve essere integrato nelle opzioni di elaborazione(ad esempio DocumentDuplex, DocumentNUp) come indicato dall'opzione specificata.
+Descrive il foglio di presentazione posteriore (finale). Ogni documento avrà un foglio separato. Il foglio di presentazione deve essere stampato nelle proprietà PageMediaSize e PageMediaType usate per la pagina finale del documento. Il foglio di presentazione deve essere integrato nelle opzioni di elaborazione, ad esempio DocumentDuplex, DocumentNUp, come indicato dall'opzione specificata.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -29,7 +29,7 @@ Descrive il foglio di presentazione posteriore (finale). Ogni documento avrà un
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefisso di ambito <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Note <br/>          | I consumer conformi a XPS DEVONO imporre che un riferimento URI a una risorsa, ad esempio un profilo immagine o colore in un documento di funzionalità di stampa o PrintTicket MUST, faccia riferimento a un nome di parte (un URI relativo alla radice del pacchetto) all'interno dello stesso pacchetto di documenti XPS che contiene il printTicket risultante. Un consumer XPS conforme NON DEVE utilizzare un URI non conforme alla sintassi del nome della parte. Queste impostazioni sono specifiche di XPS. <br/> Gli URI a cui viene fatto riferimento in un documento di funzionalità di stampa o printTicket NON DEVONO essere risolti come URL. Ciò non è sicuro perché potrebbero non risolversi come previsto e potrebbero creare rischi di sicurezza dannosi per il driver e il sistema operativo.<br/> |
+| Note <br/>          | I consumer conformi a XPS DEVONO imporre che un riferimento URI a una risorsa, ad esempio un profilo immagine o colore in un documento di funzionalità di stampa o PrintTicket DEVE fare riferimento a un nome di parte (un URI relativo alla radice del pacchetto) all'interno dello stesso pacchetto di documenti XPS che contiene il PrintTicket risultante. Un consumer XPS conforme NON DEVE utilizzare un URI non conforme alla sintassi del nome della parte. Queste impostazioni sono specifiche di XPS. <br/> Gli URI a cui si fa riferimento in un documento di funzionalità di stampa o printTicket NON DEVONO essere risolti come URL. Ciò non è sicuro perché potrebbero non risolversi come previsto e possono creare rischi di sicurezza dannosi per il driver e il sistema operativo.<br/> |
 
 
 
