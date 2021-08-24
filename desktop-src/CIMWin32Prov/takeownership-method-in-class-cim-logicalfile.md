@@ -2,7 +2,7 @@
 description: Il metodo TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 ms.assetid: 5db62da0-ac93-4a8c-af17-306e02bfa756
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della classe CIM_LogicalFile
+title: Metodo TakeOwnerShip della CIM_LogicalFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7cdd9515a5e947a3e707464dcbd524c875f7785f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ac5dcd0f2e22a22459e218e72a13c8d1d0e1a02d475fbfc187a8f822accb41eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800741"
 ---
-# <a name="takeownership-method-of-the-cim_logicalfile-class"></a>Metodo TakeOwnerShip della classe CIM \_ LogicalFile
+# <a name="takeownership-method-of-the-cim_logicalfile-class"></a>Metodo TakeOwnerShip della classe \_ CiM LogicalFile
 
-Il metodo **TakeOwnership** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
+Il **metodo TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Oggetto non valido.
 
 </dd> <dt>
 
-**Oggetto già esistente**
+**L'oggetto esiste già**
 </dt> <dd>
 
 10
@@ -96,12 +96,12 @@ Oggetto già esistente.
 
 </dd> <dt>
 
-**File System non NTFS**
+**File system non NTFS**
 </dt> <dd>
 
 11
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Piattaforma non Windows.
 
 13
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -172,7 +172,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -183,7 +183,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -192,10 +192,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_LOGICALFILE CIM](takeownership-method-in-class-cim-logicalfile.md)
+[CIM \_ LogicalFile](takeownership-method-in-class-cim-logicalfile.md)
 </dt> <dt>
 
-[**\_LOGICALFILE CIM**](cim-logicalfile.md)
+[**CIM \_ LogicalFile**](cim-logicalfile.md)
 </dt> </dl>
 
  

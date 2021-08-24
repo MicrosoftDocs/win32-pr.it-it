@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETTARGETDEVICE (RichEdit. h)
-description: Imposta il dispositivo di destinazione e lo spessore della riga usati per \ 0034; ciò che viene visualizzato è quello che si ottiene \ 0034; (WYSIWYG) formattazione in un controllo Rich Edit.
+title: EM_SETTARGETDEVICE messaggio (Richedit.h)
+description: Imposta il dispositivo di destinazione e lo spessore della linea usati per \ 0034; ciò che viene visualizzato è ciò che si ottiene \ 0034; (WYSIWYG) in un controllo Rich Edit.
 ms.assetid: dfc829f5-e711-419e-abb5-c1e8df994c4a
 keywords:
-- Controlli di Windows Message EM_SETTARGETDEVICE
+- EM_SETTARGETDEVICE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f82d6ee5df86572564cffcf192395ccee1fbd05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d9a3cd4e59f3800b91fedee446e927ab0ec39988474752561a04dace5572ef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697591"
 ---
-# <a name="em_settargetdevice-message"></a>\_Messaggio SETTARGETDEVICE em
+# <a name="em_settargetdevice-message"></a>Messaggio \_ EM SETTARGETDEVICE
 
-Imposta il dispositivo di destinazione e la lunghezza di riga usati per la formattazione "What You See is what you get" (WYSIWYG) in un controllo Rich Edit.
+Imposta il dispositivo di destinazione e lo spessore della linea usati per la formattazione "what you see is what you get" (WYSIWYG) in un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,17 +39,17 @@ HDC per il dispositivo di destinazione.
 *lParam* 
 </dt> <dd>
 
-Spessore riga da usare per la formattazione.
+Spessore della riga da usare per la formattazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è zero se l'operazione ha esito negativo o è diverso da zero se ha esito positivo.
+Il valore restituito è zero se l'operazione non riesce oppure è diverso da zero se ha esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-HDC per la stampante predefinita può essere ottenuto come indicato di seguito.
+L'HDC per la stampante predefinita può essere ottenuto come indicato di seguito.
 
 
 ```
@@ -64,7 +64,7 @@ if (PrintDlg(&pd))
 
 
 
-Se *lParam* è zero, non vengono create interruzioni di riga.
+Se *lParam* è zero, non viene creata alcuna interruzione di riga.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Se *lParam* è zero, non vengono create interruzioni di riga.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: La MSO-position-vertical (attributo)
-description: La MSO-position-vertical (attributo)
+title: Attributo VML MSO-Position-Vertical
+description: Attributo VML MSO-Position-Vertical
 ms.assetid: ff71a446-58c5-4431-aa82-d86858787444
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51d01366f803cea32be23f73854216e6cc5054ac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d9cd8fee18b31a5b0f6225ba3fda94707ac48c353e8ea6735cfdf025bfbf1135
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680811"
 ---
-# <a name="vml-mso-position-vertical-attribute"></a>La MSO-position-vertical (attributo)
+# <a name="vml-mso-position-vertical-attribute"></a>Attributo VML MSO-Position-Vertical
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Specifica i dati di posizione verticale per gli oggetti in Microsoft Word. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* mso-position-vertical = " *Expression* " >
+<v: *elemento* mso-position-vertical=" *espressione* ">
 
 **Osservazioni:**
 
@@ -38,11 +38,11 @@ I valori possibili sono:
 -   top
 -   center
 -   bottom
--   dentro
--   fuori
+-   all'interno
+-   Fuori
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

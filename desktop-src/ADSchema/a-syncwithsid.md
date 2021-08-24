@@ -29,10 +29,10 @@ Per la sincronizzazione dell'oggetto gruppo predefinito SAM o dei criteri locali
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Sincronizza con SID                        |
+| CN                | Sincronizzazione con SID                        |
 | Ldap-Display-Name | syncWithSID                          |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.667               |
 | System-Id-Guid    | 037651e5-441d-11d1-a9c3-0000f80367c1 |

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM SoftwareFeatureSAPImplementation rappresenta un'associazione tra un punto di accesso al servizio (SAP) e il modo in cui viene implementato nel software.
+description: La classe CIM SoftwareFeatureSAPImplementation rappresenta un'associazione tra un punto di accesso al servizio (SAP) e la modalità di \_ implementazione nel software.
 ms.assetid: d9a5a747-b37b-4005-a661-2bfc6a83bbb2
 ms.tgt_platform: multiple
-title: Classe CIM_SoftwareFeatureSAPImplementation
+title: CIM_SoftwareFeatureSAPImplementation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4130163ce90aea7a72b4d76a5c6c20b0631edf3b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ca763199f346936431671d99190595455cc4142d78e749183bcbf5183fc65995
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817831"
 ---
-# <a name="cim_softwarefeaturesapimplementation-class"></a>CIM \_ SoftwareFeatureSAPImplementation (classe)
+# <a name="cim_softwarefeaturesapimplementation-class"></a>Classe CIM \_ SoftwareFeatureSAPImplementation
 
-La classe **CIM \_ SoftwareFeatureSAPImplementation** rappresenta un'associazione tra un punto di accesso al servizio (SAP) e il modo in cui viene implementato nel software. Un SAP può essere fornito da più di una funzionalità software per operare insieme tra loro. Inoltre, una funzionalità software può fornire più di un SAP. Quando molte funzionalità software sono associate a un singolo SAP, si presuppone che gli elementi funzionino insieme per fornire il punto di accesso. Se sono presenti implementazioni diverse di un SAP, ogni implementazione comporterebbe la creazione di istanze singole dell'oggetto SAP. Le singole creazioni di istanze avrebbero quindi le associazioni alle implementazioni univoche.
+La **classe CIM \_ SoftwareFeatureSAPImplementation** rappresenta un'associazione tra un punto di accesso al servizio (SAP) e la modalità di implementazione nel software. Un sap può essere fornito da più funzionalità software per operare in combinazione tra loro. Inoltre, una funzionalità software può fornire più di un SAP. Quando molte funzionalità software sono associate a un singolo SAP, si presuppone che gli elementi funzionino insieme per fornire il punto di accesso. Se esistono implementazioni diverse di un sap, ogni implementazione comporterebbe singole istanze dell'oggetto SAP. Le singole istanze avrebbero quindi associazioni alle implementazioni univoche.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_SoftwareFeatureSAPImplementation : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SoftwareFeatureSAPImplementation** presenta questi tipi di membri:
+La **classe CIM \_ SoftwareFeatureSAPImplementation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SoftwareFeatureSAPImplementation** dispone di queste proprietà.
+La **classe CIM \_ SoftwareFeatureSAPImplementation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,36 +66,36 @@ Tipo di dati: **CIM \_ SoftwareFeature**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ SoftwareFeature CIM**](cim-softwarefeature.md) che descrive la funzionalità del software precedente.
+Funzionalità [**software CIM \_**](cim-softwarefeature.md) che descrive la funzionalità software precedente.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-Un [**\_ serviceAccessPoint CIM**](cim-serviceaccesspoint.md) che descrive il punto di accesso al servizio dipendente.
+Oggetto [**CIM \_ ServiceAccessPoint**](cim-serviceaccesspoint.md) che descrive il punto di accesso del servizio dipendente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ SoftwareFeatureSAPImplementation** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe CIM \_ SoftwareFeatureSAPImplementation** è derivata da [**CIM \_ Dependency**](cim-dependency.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

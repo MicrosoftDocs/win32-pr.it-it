@@ -1,7 +1,7 @@
 ---
 description: Questa classe rappresenta un processo dell'operazione di esportazione del punto di riferimento della raccolta.
 ms.assetid: c752ff1d-163c-4aa9-b29e-76478a18a08c
-title: Classe Msvm_CollectionReferencePointExportJob
+title: Msvm_CollectionReferencePointExportJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,14 +25,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d21fab1519664471bdc2bb5d7102d94cbe3dde1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3baf6405f160401b3a2fe8024861d92560484a513e1c55436f9e149e92daed7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681911"
 ---
-# <a name="msvm_collectionreferencepointexportjob-class"></a>\_Classe MSVM CollectionReferencePointExportJob
+# <a name="msvm_collectionreferencepointexportjob-class"></a>Classe Msvm \_ CollectionReferencePointExportJob
 
 Questa classe rappresenta un processo dell'operazione di esportazione del punto di riferimento della raccolta.
 
@@ -61,14 +61,14 @@ class Msvm_CollectionReferencePointExportJob : CIM_ConcreteJob
 
 ## <a name="members"></a>Members
 
-La **classe \_ CollectionReferencePointExportJob di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ CollectionReferencePointExportJob** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ CollectionReferencePointExportJob di MSVM** dispone di questi metodi.
+La **classe Msvm \_ CollectionReferencePointExportJob** include questi metodi.
 
 
 
@@ -84,27 +84,27 @@ La **classe \_ CollectionReferencePointExportJob di MSVM** dispone di questi met
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CollectionReferencePointExportJob di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ CollectionReferencePointExportJob** ha queste proprietà.
 
 <dl> <dt>
 
 **BaseReferencePointGroupId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-GUID del punto di riferimento della raccolta usato come base in exportoperation.
+GUID del punto di riferimento alla raccolta utilizzato come base nell'operazione di esportazione.
 
 </dd> <dt>
 
-**Annullabili**
+**Annullabile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -117,36 +117,36 @@ Indica se il processo può essere annullato. Il valore di questa proprietà non 
 **CollectionId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-GUID del gruppo di macchine virtuali per cui i file di log wereexported.
+GUID del gruppo di macchine virtuali per cui sono stati esportati i file di log.
 
 </dd> <dt>
 
 **ErrorSummaryDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ processo CIM**](cim-job.md).**ErrorCode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**PROCESSO CIM \_**](cim-job.md).**ErrorCode**")
 </dt> </dl>
 
-Contiene una descrizione di riepilogo dell'errore.
+Contiene una descrizione di riepilogo degli errori.
 
 </dd> <dt>
 
 **ExportDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -159,7 +159,7 @@ Percorso di esportazione.
 **ExportedConfigFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -172,7 +172,7 @@ Percorso del file di configurazione della macchina virtuale esportato.
 **ExportedDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -185,7 +185,7 @@ ID istanza dei dischi virtuali per i quali sono stati esportati i file di log.
 **ExportedGuestStateFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -203,7 +203,7 @@ Percorso del file di stato guest della macchina virtuale esportato.
 **ExportedLogFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -216,7 +216,7 @@ Percorsi dei file di log esportati.
 **ExportedRuntimeFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -229,20 +229,20 @@ Percorso del file di stato di runtime della macchina virtuale esportato.
 **ReferencePointGroupId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-GUID del punto di riferimento della raccolta che viene esportato.
+GUID del punto di riferimento alla raccolta esportato.
 
 </dd> <dt>
 
 **VirtualMachineId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -258,10 +258,10 @@ GUID delle macchine virtuali per cui è stata eseguita l'operazione di esportazi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -270,7 +270,7 @@ GUID delle macchine virtuali per cui è stata eseguita l'operazione di esportazi
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](cim-concretejob.md)
+[**CIM \_ ConcreteJob**](cim-concretejob.md)
 </dt> </dl>
 
  

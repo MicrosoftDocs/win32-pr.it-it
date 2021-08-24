@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 12c328f30e56db348b018b73b02aa4320bf99505
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7f994c858b9a2817ac89a5d5c6db794e054652fb2a57c69404030074ad14cd45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800751"
 ---
 # <a name="takeownership-method-of-the-cim_directory-class"></a>Metodo TakeOwnerShip della classe Directory CIM \_
 
@@ -146,7 +146,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="examples"></a>Esempio
 

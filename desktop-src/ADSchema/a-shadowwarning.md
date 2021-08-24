@@ -1,5 +1,5 @@
 ---
-title: attributo shadowWarning
+title: Attributo shadowWarning
 description: Contiene il numero di giorni prima della scadenza della password per avvisare l'utente.
 ms.assetid: f4ffa073-af53-40c5-8235-e713828d72d9
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99446711d881e04e8c6769fa00498656f7f4fa67
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 157e6d59a6e6623b2174041f962b22960813a032d1eb705144659ddb57d76268
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836501"
 ---
-# <a name="shadowwarning-attribute"></a>attributo shadowWarning
+# <a name="shadowwarning-attribute"></a>Attributo shadowWarning
 
 Contiene il numero di giorni prima della scadenza della password per avvisare l'utente.
 
@@ -29,12 +29,12 @@ Contiene il numero di giorni prima della scadenza della password per avvisare l'
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | shadowWarning                        |
-| LDAP-Display-Name | shadowWarning                        |
+| Ldap-Display-Name | shadowWarning                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.8                      |
-| System-ID-GUID    | 7ae89c9c-2976-4a46-bb8a-340f88560117 |
+| System-Id-Guid    | 7ae89c9c-2976-4a46-bb8a-340f88560117 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene il numero di giorni prima della scadenza della password per avvisare l'
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il numero di giorni prima della scadenza della password per avvisare l'
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il numero di giorni prima della scadenza della password per avvisare l'
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene il numero di giorni prima della scadenza della password per avvisare l'
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 

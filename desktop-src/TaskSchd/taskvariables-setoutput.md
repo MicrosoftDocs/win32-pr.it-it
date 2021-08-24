@@ -1,11 +1,11 @@
 ---
-title: Metodo TaskVariables. seoutput
+title: Metodo TaskVariables.SetOutput
 description: Per lo scripting, imposta le variabili di output per un'attività.
 ms.assetid: 346c8204-5e64-4932-b939-08b8b479e7e0
 keywords:
-- Metodo seoutput Utilità di pianificazione
-- Metodo seoutput Utilità di pianificazione, oggetto TaskVariables
-- Oggetto TaskVariables Utilità di pianificazione, metodo seoutput
+- Metodo SetOutput Utilità di pianificazione
+- Metodo SetOutput Utilità di pianificazione, oggetto TaskVariables
+- Oggetto TaskVariables Utilità di pianificazione, metodo SetOutput
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d979fa4bfae882179248f6f4c81787b3b31ba17d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bbb6faa0a2dc09b61817e214e7f5021e8de4e33223d7dc5fa20f3de48f3718a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738091"
 ---
-# <a name="taskvariablessetoutput-method"></a>Metodo TaskVariables. seoutput
+# <a name="taskvariablessetoutput-method"></a>Metodo TaskVariables.SetOutput
 
 Per lo scripting, imposta le variabili di output per un'attività. Questo metodo non è implementato.
 
@@ -42,7 +42,7 @@ TaskVariables.SetOutput( _
 
 <dl> <dt>
 
-*input* \[ di in\]
+*input* \[ Pollici\]
 </dt> <dd>
 
 Variabili di output per un'attività.
@@ -59,9 +59,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

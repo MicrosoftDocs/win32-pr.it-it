@@ -1,5 +1,5 @@
 ---
-title: Metodo IWMPPlaylist moveItem
+title: Metodo moveItem IWMPPlaylist
 description: Il metodo moveItem modifica la posizione di un elemento multimediale nella playlist.
 ms.assetid: e82c820f-4640-4289-88c1-79a92e520f00
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c2d5be745fc3dcf799eb7203e607e493b284b4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9f2c4f2aa3d4478a114e405b1b40816fc1697c2c291c272aabc68db3813766d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760661"
 ---
-# <a name="iwmpplaylistmoveitem-method"></a>Metodo IWMPPlaylist:: moveItem
+# <a name="iwmpplaylistmoveitem-method"></a>Metodo IWMPPlaylist::moveItem
 
-Il metodo **moveItem** modifica la posizione di un elemento multimediale nella playlist.
+Il **metodo moveItem** modifica la posizione di un elemento multimediale nella playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPPlaylist.moveItem
 
 <dl> <dt>
 
-*lIndexOld* \[ in\]
+*lIndexOld* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che rappresenta l'indice originale.
+**System.Int32** che rappresenta l'indice originale.
 
 </dd> <dt>
 
-*lIndexNew* \[ in\]
+*lIndexNew* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che rappresenta il nuovo indice.
+**System.Int32** che rappresenta il nuovo indice.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per tutti gli elementi dopo l'elemento inserito i numeri di indice aumenteranno di uno.
+I numeri di indice di tutti gli elementi dopo l'elemento inserito saranno aumentati di uno.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -98,10 +98,10 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

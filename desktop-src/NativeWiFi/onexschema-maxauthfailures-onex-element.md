@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 31dae7a8805275254a1d398108128380b1aa2e54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cb48479b2fe26ecb2667812cc6ee2048226c0665c25b12e25e8c7edbc35dac2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104529029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800781"
 ---
 # <a name="maxauthfailures-onex-element"></a>Elemento maxAuthFailures (OneX)
 
 L'elemento maxAuthFailures (OneX) specifica il numero massimo di errori di autenticazione consentiti per un set di credenziali.
 
-Questo elemento è facoltativo. Quando maxAuthFailures non viene specificato in un profilo, viene utilizzato un valore di uno.
+Questo elemento è facoltativo. Quando maxAuthFailures non è specificato in un profilo, viene usato un valore pari a uno.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -44,7 +44,7 @@ Questo elemento è facoltativo. Quando maxAuthFailures non viene specificato in 
 </xs:element>
 ```
 
-L'elemento **maxAuthFailures** è definito dall'elemento [**Onex**](onexschema-onex-element.md) .
+**L'elemento maxAuthFailures** è definito dall'elemento [**OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ L'elemento **maxAuthFailures** è definito dall'elemento [**Onex**](onexschema-o
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ L'elemento **maxAuthFailures** è definito dall'elemento [**Onex**](onexschema-o
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come utilizzare i metodi dell'interfaccia IFileOperationProgressSink per il monitoraggio dei dettagli delle azioni dell'interfaccia IFileOperation.
+description: Illustra come usare i metodi dell'interfaccia IFileOperationProgressSink per monitorare i dettagli delle azioni dell'interfaccia IFileOperation.
 title: FileOperationProgressSink
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 60e3bde90da36a6122608b463b28df670f0d2a8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe0ba5c86fdb2df5fe168559aa019941897563823e75670b0813ecb7e9e44d69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820351"
 ---
 # <a name="file-operation-progress-sink"></a>FileOperationProgressSink
 
-Viene illustrato come utilizzare i metodi dell'interfaccia [**IFileOperationProgressSink**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperationprogresssink) per il monitoraggio dei dettagli delle azioni dell'interfaccia [**IFileOperation**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation) .
+Illustra come usare i metodi [**dell'interfaccia IFileOperationProgressSink**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperationprogresssink) per monitorare i dettagli [**delle azioni dell'interfaccia IFileOperation.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation)
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -42,32 +42,32 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio FileOperationProgressSink](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/FileOperationProgressSink) |
+| GitHub  | [Esempio di FileOperationProgressSink](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/FileOperationProgressSink) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 Per compilare l'esempio dalla finestra del prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **FileOperationProgressSink** .
+1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **FileOperationProgressSink.**
 2.  Immettere `msbuild FileOperationProgressSinkSample.sln`.
 
-Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
+Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Esplora risorse e passare alla directory del progetto **filesinus** . Ad esempio, il percorso di installazione predefinito completo è `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppPlatform\FileOperationProgressSinkSample` .
-2.  Fare doppio clic sull'icona per il file FileOperationProgressSinkSample. sln per aprire il progetto in Visual Studio.
+1.  Aprire Windows Explorer e passare alla directory **del progetto FilesInUse.** Ad esempio, il percorso di installazione predefinito completo è `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppPlatform\FileOperationProgressSinkSample` .
+2.  Fare doppio clic sull'icona per il file FileOperationProgressSinkSample.sln per aprire il progetto in Visual Studio.
     > [!Note]  
-    > L'estensione del nome di file sln non viene visualizzata in impostazioni cartella predefinite. In tal caso, può essere identificato dalla relativa icona univoca o dalla descrizione del tipo, "Microsoft Visual Studio soluzione".
+    > L'estensione del nome file sln non viene visualizzata nelle impostazioni predefinite della cartella. In questo caso, può essere identificato dall'icona univoca o dalla descrizione del tipo, "Microsoft Visual Studio soluzione".
 
      
 
-3.  Scegliere **Compila soluzione** dal menu **Compila** .
+3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Passare alla directory contenente il nuovo eseguibile, utilizzando la finestra del prompt dei comandi o Esplora risorse.
-2.  Al prompt dei comandi, immettere `FileOperationProgressSinkSample.exe` o da Esplora risorse, fare doppio clic sull'icona per FileOperationProgressSinkSample.exe.
+1.  Passare alla directory che contiene il nuovo eseguibile, usando la finestra del prompt dei comandi o Windows Explorer.
+2.  Al prompt dei comandi immettere o in Windows Explorer fare doppio clic `FileOperationProgressSinkSample.exe` sull'icona per FileOperationProgressSinkSample.exe.
 
  
 

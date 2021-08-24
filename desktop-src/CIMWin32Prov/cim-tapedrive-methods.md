@@ -1,24 +1,24 @@
 ---
-description: La \_ classe CIM TapeDrive espone i metodi seguenti.
+description: La classe CIM \_ TapeDrive espone i metodi seguenti.
 ms.assetid: 53D03E02-DD6D-4C81-9EED-703A99ADE270
 ms.tgt_platform: multiple
-title: Metodi di CIM_TapeDrive
+title: CIM_TapeDrive metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f65d12ce24a5dd48f9b5f78e688c71077c549e1d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a763ad33f005704d0d7cd922e3389922638f51a5bd4c354a5fe66b5c2cf8026f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817591"
 ---
-# <a name="cim_tapedrive-methods"></a>\_Metodi CIM TapeDrive
+# <a name="cim_tapedrive-methods"></a>Metodi di \_ CIM TapeDrive
 
-La classe [**CIM \_ TapeDrive**](cim-tapedrive.md) espone i metodi seguenti.
+La [**classe CIM \_ TapeDrive**](cim-tapedrive.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Reset (metodo)**](reset-method-in-class-cim-tapedrive.md)
+-   [**Metodo Reset**](reset-method-in-class-cim-tapedrive.md)
 -   [**Metodo SetPowerState**](setpowerstate-method-in-class-cim-tapedrive.md)
 
  

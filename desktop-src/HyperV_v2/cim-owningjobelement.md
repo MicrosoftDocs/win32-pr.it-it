@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un processo e l'elemento gestito che ha creato il processo.
 ms.assetid: 08c33a81-0a3f-4545-9812-96a854a7509e
-title: Classe CIM_OwningJobElement
+title: CIM_OwningJobElement classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9d3879104a8f7406ff24dc2f63b79b51eb2fa58c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ea0e4371246f71d125295730c19de75c59eafb08a4c081699b6b40575f27a99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694661"
 ---
-# <a name="cim_owningjobelement-class"></a>CIM \_ OwningJobElement (classe)
+# <a name="cim_owningjobelement-class"></a>Classe CIM \_ OwningJobElement
 
-Rappresenta un'associazione tra un processo e l'elemento gestito che ha creato il processo. Poiché un processo può spostarsi tra i sistemi e l'elemento gestito potrebbe non esistere per l'intera durata del processo, in alcuni casi, questa associazione potrebbe non essere possibile o esistere solo per una parte dell'esistenza del processo.
+Rappresenta un'associazione tra un processo e l'elemento gestito che ha creato il processo. Poiché un processo potrebbe spostarsi tra sistemi e l'elemento gestito potrebbe non esistere per l'intera durata del processo, in alcuni casi questa associazione potrebbe non essere possibile o potrebbe esistere solo per una parte dell'esistenza del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ class CIM_OwningJobElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ OwningJobElement** presenta questi tipi di membri:
+La **classe CIM \_ OwningJobElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ OwningJobElement** dispone di queste proprietà.
+La **classe CIM \_ OwningJobElement** ha queste proprietà.
 
 <dl> <dt>
 
-**Proprietàelement**
+**OwnedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ processo CIM**
+Tipo di dati: **processo \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Riferimento al processo creato dall'elemento gestito.
@@ -68,13 +68,13 @@ Riferimento al processo creato dall'elemento gestito.
 **OwningElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Riferimento all'elemento gestito che ha creato il processo.
@@ -89,8 +89,8 @@ Riferimento all'elemento gestito che ha creato il processo.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

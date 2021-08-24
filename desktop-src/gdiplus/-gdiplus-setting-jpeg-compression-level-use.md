@@ -1,23 +1,23 @@
 ---
-description: Per specificare il livello di compressione quando si salva un'immagine JPEG, inizializzare un oggetto EncoderParameters e passare l'indirizzo dell'oggetto al metodo Save della classe Image.
+description: Per specificare il livello di compressione quando si salva un'immagine JPEG, inizializzare un oggetto EncoderParameters e passare l'indirizzo di tale oggetto al metodo Save della classe Image.
 ms.assetid: b8365c00-2223-4aff-9fb2-422976af4c31
 title: Impostazione del livello di compressione JPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07d2e82dfb21e121609d5e09e5c31e2242ec652f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd72762d27f1e9179b8a1f9bd52ea5b4b7df6cf97a6af658f9e603b87a629e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778631"
 ---
 # <a name="setting-jpeg-compression-level"></a>Impostazione del livello di compressione JPEG
 
-Per specificare il livello di compressione quando si salva un'immagine JPEG, inizializzare un oggetto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passare l'indirizzo dell'oggetto al metodo [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) della classe [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . Inizializzare l'oggetto **EncoderParameters** in modo che disponga di una matrice costituita da un oggetto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) . Inizializzare un oggetto **EncoderParameter** in modo che il relativo membro **value** punti a un valore **ULONG** compreso tra 0 e 100. Impostare il membro **GUID** dell'oggetto **EncoderParameter** su EncoderQuality.
+Per specificare il livello di compressione quando si salva un'immagine JPEG, inizializzare un oggetto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passare l'indirizzo di tale oggetto al [metodo Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) della [**classe Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Inizializzare **l'oggetto EncoderParameters** in modo che abbia una matrice costituita da un [**oggetto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Inizializzare un **oggetto EncoderParameter** in modo che il membro **Value** punti a un **valore ULONG** compreso tra 0 e 100. Impostare il **membro Guid** dell'oggetto **EncoderParameter** su EncoderQuality.
 
-La seguente applicazione console salva tre immagini JPEG, ognuna con un livello di qualità diverso. Un livello di qualità pari a 0 corrisponde alla compressione massima, mentre un livello di qualità pari a 100 corrisponde alla compressione minima.
+L'applicazione console seguente salva tre immagini JPEG, ognuna con un livello di qualità diverso. Un livello di qualità pari a 0 corrisponde alla compressione massima, mentre un livello di qualità pari a 100 corrisponde alla compressione minima.
 
-La funzione Main si basa sulla funzione helper GetEncoderClsid, che viene illustrata nel [recupero dell'identificatore di classe per un codificatore](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md):
+La funzione main si basa sulla funzione helper GetEncoderClsid, illustrata in Recupero dell'identificatore di classe [per un codificatore:](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)
 
 
 ```

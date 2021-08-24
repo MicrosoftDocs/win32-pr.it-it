@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCube:: TextureCube GatherCmpBlue'
-description: 'Campiona e confronta una trama e restituisce il componente blu. | Metodi di TextureCube:: TextureCube GatherCmpBlue'
+title: Metodi Di TextureCube::TextureCube GatherCmpBlue
+description: Campiota e confronta una trama e restituisce il componente blu. | Metodi Di TextureCube::TextureCube GatherCmpBlue
 ms.assetid: 28BF865B-906E-4BAC-9EBE-F75590346392
 keywords:
 - Metodi GatherCmpBlue HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7124d9bfa3aadd201604aef91b25ba06ad45ca79
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 217ce618acbc16382da17155245c1534cd043b7b9593aa00f79f5b4b9f9ff440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742631"
 ---
-# <a name="texturecubegathercmpblue-methods"></a>Metodi TextureCube:: GatherCmpBlue
+# <a name="texturecubegathercmpblue-methods"></a>Metodi textureCube::GatherCmpBlue
 
-Campiona e confronta una trama e restituisce il componente blu.
+Campiota e confronta una trama e restituisce il componente blu.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campiona e confronta una trama e restituisce il componente blu.
 
 | Metodo                                                                               | Descrizione                                                                                                     |
 |:-------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpBlue (S, float, float, uint)**](tcube-gathercmpblue-s-float-float-uint-.md) | Campiona e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpBlue(S,float,float,uint)**](tcube-gathercmpblue-s-float-float-uint-.md) | Esempi e confronta una trama e restituisce il componente blu insieme allo stato dell'operazione.<br/> |
 
 
 

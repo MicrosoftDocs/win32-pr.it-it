@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Foreign
-description: Indica se il computer è un computer MSMQ esterno.
+title: MSMQ-Foreign attributo
+description: Indica se il computer è un computer MSMQ estraneo.
 ms.assetid: 97842a86-f2c6-4532-8534-484f266561c2
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Foreign attribute
+- MSMQ-Foreign schema AD dell'attributo
 - Schema AD dell'attributo mSMQForeign
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f48b2ac1bedf02ef9c02350c7bc5f5d7e0292cd6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a5c3ca7e328e096647a0661fbf2409e0145f7383ce62373c9c93d76f3becc0ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762611"
 ---
-# <a name="msmq-foreign-attribute"></a>Attributo MSMQ-Foreign
+# <a name="msmq-foreign-attribute"></a>MSMQ-Foreign attributo
 
-Indica se il computer è un computer MSMQ esterno.
+Indica se il computer è un computer MSMQ estraneo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Foreign                         |
-| LDAP-Display-Name | mSMQForeign                          |
+| Ldap-Display-Name | mSMQForeign                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.934               |
-| System-ID-GUID    | 9a0dc32f-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc32f-c100-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se il computer è un computer MSMQ esterno.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

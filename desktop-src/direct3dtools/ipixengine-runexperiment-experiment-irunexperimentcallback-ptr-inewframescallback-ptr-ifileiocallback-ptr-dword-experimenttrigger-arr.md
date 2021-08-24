@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine\_RunExperiment\_Experiment\_IRunExperimentCallba
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine:: RunExperiment'
+title: Metodo IPixEngine::RunExperiment
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: A2EEC278-C074-44B3-94DC-E2D9DC770576
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c656d57dda496b6c1d8c128dc5e832ec40ef13f7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 94698ae1f90bc9e7b242672e93117cfd48f8462cc047b676cadadc9832739afa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741931"
 ---
-# <a name="span-idvspixengineipixengine_runexperiment_experiment_irunexperimentcallback_ptr_inewframescallback_ptr_ifileiocallback_ptr_dword_experimenttrigger_arrspanipixenginerunexperiment-method"></a><span id="vspixengine.ipixengine_runexperiment_experiment_irunexperimentcallback_ptr_inewframescallback_ptr_ifileiocallback_ptr_dword_experimenttrigger_arr"></span>Metodo IPixEngine:: RunExperiment
+# <a name="span-idvspixengineipixengine_runexperiment_experiment_irunexperimentcallback_ptr_inewframescallback_ptr_ifileiocallback_ptr_dword_experimenttrigger_arrspanipixenginerunexperiment-method"></a><span id="vspixengine.ipixengine_runexperiment_experiment_irunexperimentcallback_ptr_inewframescallback_ptr_ifileiocallback_ptr_dword_experimenttrigger_arr"></span>Metodo IPixEngine::RunExperiment
 
 Esegue un esperimento.
 
@@ -44,31 +44,31 @@ HRESULT RunExperiment(
 
 ## <a name="parameters"></a>Parametri
 
-*esperimento*   
+*rsperimento*   
 Descrive l'esperimento da eseguire.
 
 *pRequestCallback*   
-Indirizzo di una funzione utilizzata per notificare all'host che il motore ha avviato l'esperimento.
+Indirizzo di una funzione usata per notificare all'host che il motore ha avviato l'esperimento.
 
-*callback*   
+*Callback*   
 Indirizzo di una funzione utilizzata per notificare all'host che sono stati acquisiti nuovi frame.
 
 *pFileIOCallback*   
-Indirizzo di una funzione utilizzata per notificare all'host gli errori di i/o di file durante l'analisi.
+Indirizzo di una funzione usata per notificare all'host gli errori di I/O del file durante l'analisi.
 
 *triggersCount*   
-Il numero di trigger nell'esperimento.
+Numero di trigger nell'esperimento.
 
-*\_triggersBuffer count4*   
+*count4 \_ triggersBuffer*   
 Trigger di acquisizione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

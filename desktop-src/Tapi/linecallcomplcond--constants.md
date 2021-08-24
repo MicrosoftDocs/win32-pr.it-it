@@ -1,23 +1,23 @@
 ---
-description: Le \_ costanti del flag di bit LINECALLCOMPLCOND descrivono le condizioni in base alle quali è possibile completare una chiamata.
+description: Le costanti del flag di bit LINECALLCOMPLCOND descrivono le \_ condizioni in cui è possibile completare una chiamata.
 ms.assetid: 0d7b82e8-ce97-410a-a946-30055cd2d558
-title: Costanti LINECALLCOMPLCOND_ (TAPI. h)
+title: LINECALLCOMPLCOND_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23663b2939761ea8ef1293875bc78d3ed1ccb31d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 515a3def9167624af60f93abfebc47ba56363880bb375dd1f224aceb38bab18c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682003"
 ---
-# <a name="linecallcomplcond_-constants"></a>\_Costanti LINECALLCOMPLCOND
+# <a name="linecallcomplcond_-constants"></a>Costanti LINECALLCOMPLCOND \_
 
-Le costanti del flag di bit **LINECALLCOMPLCOND \_** descrivono le condizioni in base alle quali è possibile completare una chiamata.
+Le costanti del flag di bit **LINECALLCOMPLCOND \_** descrivono le condizioni in cui è possibile completare una chiamata.
 
 <dl> <dt>
 
-<span id="LINECALLCOMPLCOND_BUSY"></span><span id="linecallcomplcond_busy"></span>**LINECALLCOMPLCOND \_ occupato**
+<span id="LINECALLCOMPLCOND_BUSY"></span><span id="linecallcomplcond_busy"></span>**LINECALLCOMPLCOND \_ BUSY**
 </dt> <dd> <dl> <dt>
 
 
@@ -27,19 +27,19 @@ Completamento della chiamata in condizioni di occupato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLCOMPLCOND_NOANSWER"></span><span id="linecallcomplcond_noanswer"></span>**LINECALLCOMPLCOND \_ NOanswer**
+<span id="LINECALLCOMPLCOND_NOANSWER"></span><span id="linecallcomplcond_noanswer"></span>**LINECALLCOMPLCOND \_ NOANSWER**
 </dt> <dd> <dl> <dt>
 
 
 
-Completamento della chiamata in nessuna condizione di risposta.
+Completamento della chiamata in stato ringback senza condizioni di risposta.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Nessuna estensibilità. Tutti i 32 bit sono riservati.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

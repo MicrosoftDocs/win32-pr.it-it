@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_SETTIPTEXT (COMmctrl. h)
-description: Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo \_ stile SBT Tooltips per abilitare le descrizioni comandi.
+title: SB_SETTIPTEXT messaggio (Commctrl.h)
+description: Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo stile SBT \_ TOOLTIPS per abilitare le descrizioni comando.
 ms.assetid: 8fc3cc00-9742-4861-b2c2-b8aa30f75aaa
 keywords:
-- Controlli di Windows Message SB_SETTIPTEXT
+- SB_SETTIPTEXT dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d5ddb3f4fdfe18525e2b444438295f8a926180
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 864ba53066b000f9f7ae65365341238a701b4e70bc4ce8cc70adba923d57a5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637021"
 ---
-# <a name="sb_settiptext-message"></a>\_Messaggio SETTIPTEXT SB
+# <a name="sb_settiptext-message"></a>Messaggio \_ SETTIPTEXT SB
 
-Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo stile [**SBT \_ Tooltips**](status-bar-styles.md) per abilitare le descrizioni comandi.
+Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo [**stile SBT \_ TOOLTIPS**](status-bar-styles.md) per abilitare le descrizioni comando.
 
 ## <a name="parameters"></a>Parametri
 
@@ -62,9 +62,9 @@ Questo testo della descrizione comando viene visualizzato in due situazioni:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **SB \_ SETTIPTEXTW** (Unicode) e **SB \_ SETTIPTEXTA** (ANSI)<br/>               |
 
 

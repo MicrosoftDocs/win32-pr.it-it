@@ -1,10 +1,10 @@
 ---
-title: attributo ms-TS-Secondary-desktop-BL
-description: Questo attributo rappresenta il collegamento indietro a un utente. | attributo ms-TS-Secondary-desktop-BL
+title: Attributo ms-TS-Secondary-Desktop-BL
+description: Questo attributo rappresenta il collegamento all'indietro a un utente. | Attributo ms-TS-Secondary-Desktop-BL
 ms.assetid: e87ebdd5-9a8c-4b1a-9213-1b22ffaf0363
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TS-Secondary-desktop-BL
+- Schema AD dell'attributo ms-TS-Secondary-Desktop-BL
 - Schema AD dell'attributo msTSSecondaryDesktopBL
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9486aed4897566886722d9f06253cc111be0a4f8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 630c7c4f917dc5b9bef36b6da72aae7d41e4a918dcf60427edd5e9b36eb69fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760901"
 ---
-# <a name="ms-ts-secondary-desktop-bl-attribute"></a>attributo ms-TS-Secondary-desktop-BL
+# <a name="ms-ts-secondary-desktop-bl-attribute"></a>Attributo ms-TS-Secondary-Desktop-BL
 
-Questo attributo rappresenta il collegamento indietro a un utente.
+Questo attributo rappresenta il collegamento all'indietro a un utente.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MS-TS-Secondary-desktop-BL              |
-| LDAP-Display-Name | msTSSecondaryDesktopBL                  |
+| CN                | ms-TS-Secondary-Desktop-BL              |
+| Ldap-Display-Name | msTSSecondaryDesktopBL                  |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2078                 |
-| System-ID-GUID    | 34b107af-a00a-455a-b139-dd1a1b12d8af    |
+| System-Id-Guid    | 34b107af-a00a-455a-b139-dd1a1b12d8af    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -54,15 +54,15 @@ Questo attributo rappresenta il collegamento indietro a un utente.
 | ID collegamento                | 2173                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000011                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Questo attributo rappresenta il collegamento indietro a un utente.
 | ID collegamento                | 2173                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Vero                                      |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000011                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

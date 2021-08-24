@@ -1,9 +1,9 @@
 ---
 title: MIM_MOREDATA messaggio (Mmsystem.h)
-description: Il messaggio MIM MOREDATA viene inviato a una funzione di callback di input MIDI quando un messaggio MIDI viene ricevuto da un dispositivo di input MIDI, ma l'applicazione non elabora i messaggi DI DATI MIM abbastanza velocemente da rimanere al passo con il driver di dispositivo di \_ \_ input.
+description: Il messaggio MIM MOREDATA viene inviato a una funzione di callback di input MIDI quando un messaggio MIDI viene ricevuto da un dispositivo di input MIDI, ma l'applicazione non elabora i messaggi MIM DATA abbastanza velocemente da restare al passo con il driver di dispositivo di \_ \_ input.
 ms.assetid: 74ed46ab-a18e-4df5-bf36-ab3dec7fafa5
 keywords:
-- MIM_MOREDATA messaggio Windows Multimedia
+- MIM_MOREDATA di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6342823e13a085b377a3e71f28a0f9ff016681c
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 130a07d1d205e9944c7be6ab9ad1294e09d0ebdcdb81d5befc5468ff5a65218f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782971"
 ---
-# <a name="mim_moredata-message"></a>Messaggio \_ MOREDATA MIM
+# <a name="mim_moredata-message"></a>\_MIM MESSAGGIO MOREDATA
 
-Il messaggio **\_ MIM MOREDATA** viene inviato a una funzione di callback di input MIDI quando un messaggio MIDI viene ricevuto da un dispositivo di input MIDI, ma l'applicazione non elabora i messaggi [**MIM \_ DATA**](mim-data.md) in modo sufficientemente veloce da rimanere al passo con il driver di dispositivo di input. La funzione di callback riceve questo messaggio solo quando l'applicazione specifica MIDI IO STATUS nella \_ \_ chiamata alla funzione [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
+Il messaggio **\_ MIM MOREDATA** viene inviato a una funzione di callback di input MIDI quando un messaggio MIDI viene ricevuto da un dispositivo di input MIDI, ma l'applicazione non elabora i messaggi [**MIM \_ DATA in**](mim-data.md) modo sufficientemente veloce da rimanere al passo con il driver di dispositivo di input. La funzione di callback riceve questo messaggio solo quando l'applicazione specifica MIDI IO STATUS nella chiamata \_ \_ alla funzione [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 
 
 ```C++
@@ -73,9 +73,9 @@ Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione deve eseguire solo una quantità minima di elaborazione dei messaggi \_ MOREDATA MIM. In particolare, le applicazioni non devono chiamare la [funzione PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) durante l'elaborazione di MIM \_ MOREDATA. Al contrario, l'applicazione deve inserire i dati dell'evento in un buffer e quindi restituire .
+Un'applicazione deve eseguire solo una quantità minima di elaborazione MIM \_ messaggi MOREDATA. In particolare, le applicazioni non devono chiamare la [funzione PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) durante l'elaborazione MIM \_ MOREDATA. Al contrario, l'applicazione deve inserire i dati dell'evento in un buffer e quindi restituire .
 
-Quando un'applicazione riceve un messaggio [**MIM \_ DATA**](mim-data.md) dopo una serie di messaggi MIM MOREDATA, ha raggiunto gli eventi MIDI in ingresso e può chiamare in modo sicuro funzioni a elevato utilizzo \_ di tempo.
+Quando un'applicazione riceve un messaggio [**MIM \_ DATA**](mim-data.md) dopo una serie di messaggi MOREDATA di MIM, ha raggiunto gli eventi MIDI in ingresso e può chiamare in modo sicuro funzioni a elevato utilizzo di \_ tempo.
 
 Lo stato di esecuzione dei messaggi MIDI ricevuti da una porta di input MIDI è disabilitato. ogni messaggio viene espanso per includere il byte di stato MIDI.
 
@@ -89,11 +89,11 @@ Questo messaggio non viene inviato quando viene ricevuto un messaggio esclusivo 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (include Windows.h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

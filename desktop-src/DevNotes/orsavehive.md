@@ -1,7 +1,7 @@
 ---
-description: Scrive l'hive del registro di sistema offline specificato in un file.
+description: Scrive l'hive del Registro di sistema offline specificato in un file.
 ms.assetid: 26f2eed9-e6e0-4dc0-8b91-212cde072744
-title: Funzione ORSaveHive (offreg. h)
+title: Funzione ORSaveHive (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 59df5b191a9bc0cfe98e1681665c5814935aa2c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b4dde44b6cc6d2c5cfd80f4041cd6370f680eb6ca867e9e8f2bbce5f0702e27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758511"
 ---
-# <a name="orsavehive-function"></a>ORSaveHive (funzione)
+# <a name="orsavehive-function"></a>ORSaveHive - funzione
 
-Scrive l'hive del registro di sistema offline specificato in un file.
+Scrive l'hive del Registro di sistema offline specificato in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ DWORD ORSaveHive(
 
 <dl> <dt>
 
-*Gestisci* \[ in\]
+*Handle* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'hive del registro di sistema offline da salvare.
+Handle per l'hive del Registro di sistema offline da salvare.
 
 </dd> <dt>
 
-*lpHivePath* \[ in\]
+*lpHivePath* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode che specifica il nome del file hive del registro di sistema. Non può corrispondere al nome di un file esistente.
+Puntatore a una stringa Unicode che specifica il nome del file hive del Registro di sistema. Non può essere il nome di un file esistente.
 
 </dd> <dt>
 
-*dwOsMajorVersion* \[ in\]
+*dwOsMajorVersion* \[ Pollici\]
 </dt> <dd>
 
-Numero di versione principale del sistema operativo. Il membro può essere uno dei valori seguenti.
+Numero di versione principale del sistema operativo. Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                        | Significato                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>5</dt> </dl> | Se *dwOsMinorVersion* è 1, il sistema operativo è Windows XP.<br/> Se *dwOsMinorVersion* è 2, il sistema operativo è windows Server 2003 R2, windows Server 2003 o Windows XP Professional x64 Edition.<br/> |
-| <dl> <dt>6</dt> </dl> | Se *dwOsMinorVersion* è 0, il sistema operativo è windows Server 2008 o Windows Vista.<br/> Se *dwOsMinorVersion* è 1, il sistema operativo è windows Server 2008 R2 o Windows 7.<br/>                       |
+| <dl> <dt>5</dt> </dl> | Se *dwOsMinorVersion* è 1, il sistema operativo è Windows XP.<br/> Se *dwOsMinorVersion* è 2, il sistema operativo è Windows Server 2003 R2, Windows Server 2003 o Windows XP Professional x64 Edition.<br/> |
+| <dl> <dt>6</dt> </dl> | Se *dwOsMinorVersion* è 0, il sistema operativo è Windows Server 2008 o Windows Vista.<br/> Se *dwOsMinorVersion* è 1, il sistema operativo è Windows Server 2008 R2 o Windows 7.<br/>                       |
 
 
 
@@ -74,18 +74,18 @@ Numero di versione principale del sistema operativo. Il membro può essere uno d
 
 </dd> <dt>
 
-*dwOsMinorVersion* \[ in\]
+*dwOsMinorVersion* \[ Pollici\]
 </dt> <dd>
 
-Numero di versione secondario del sistema operativo. Il membro può essere uno dei valori seguenti.
+Numero di versione secondaria del sistema operativo. Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                        | Significato                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | Se *dwOsMajorVersion* è 6, il sistema operativo è windows Server 2008 o Windows Vista.<br/>                                                                                                                                          |
-| <dl> <dt>1</dt> </dl> | Se *dwOsMajorVersion* è 5, il sistema operativo è Windows XP.<br/> Se *dwOsMajorVersion* è 6, il sistema operativo è windows Server 2008 R2 o Windows 7.<br/>                                                                |
-| <dl> <dt>2</dt> </dl> | Se *dwOsMajorVersion* è 5, il sistema operativo è windows Server 2003 R2, windows Server 2003 o Windows XP Professional x64 Edition. <br/> Se *dwOsMajorVersion* è 6, il parametro *dwOsMinorVersion* deve essere 0 o 1. <br/> |
+| <dl> <dt>0</dt> </dl> | Se *dwOsMajorVersion* è 6, il sistema operativo Windows Server 2008 o Windows Vista.<br/>                                                                                                                                          |
+| <dl> <dt>1</dt> </dl> | Se *dwOsMajorVersion* è 5, il sistema operativo è Windows XP.<br/> Se *dwOsMajorVersion* è 6, il sistema operativo è Windows Server 2008 R2 o Windows 7.<br/>                                                                |
+| <dl> <dt>2</dt> </dl> | Se *dwOsMajorVersion* è 5, il sistema operativo è Windows Server 2003 R2, Windows Server 2003 o Windows XP Professional x64 Edition. <br/> Se *dwOsMajorVersion* è 6, il *parametro dwOsMinorVersion* deve essere 0 o 1. <br/> |
 
 
 
@@ -95,18 +95,18 @@ Numero di versione secondario del sistema operativo. Il membro può essere uno d
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
-Se la funzione ha esito negativo, il valore restituito è un codice di errore diverso da zero definito in Winerror. h. [](/windows/win32/api/winbase/nf-winbase-formatmessage) \_ \_ \_ Per ottenere una descrizione generica dell'errore, è possibile usare la funzione FormatMessage con il valore Format Message from System flag. I codici di errore possibili includono i seguenti:
+Se la funzione ha esito negativo, il valore restituito è un codice di errore diverso da zero definito in Winerror.h. È possibile usare la [funzione FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con il flag FORMAT \_ MESSAGE FROM SYSTEM per ottenere una \_ \_ descrizione generica dell'errore. I codici di errore possibili sono i seguenti:
 
--   Se il chiamante non dispone dei diritti di accesso necessari per scrivere il file, la funzione restituisce l'errore di \_ accesso \_ negato.
--   Se il file specificato esiste già, la funzione restituisce un errore \_ già \_ esistente.
+-   Se il chiamante non dispone dei diritti di accesso necessari per scrivere il file, la funzione restituisce ERROR \_ ACCESS \_ DENIED.
+-   Se il file specificato esiste già, la funzione restituisce ERROR \_ ALREADY \_ EXISTS.
 
 ## <a name="remarks"></a>Commenti
 
-Per salvare le modifiche apportate a un hive del registro di sistema offline, è necessario usare la funzione **ORSaveHive** . Le modifiche non vengono mantenute fino a quando non viene chiamato **ORSaveHive** per salvare l'hive in un file.
+La **funzione ORSaveHive** deve essere usata per salvare le modifiche apportate a un hive del Registro di sistema offline. Le modifiche non vengono mantenute fino **a quando non viene chiamato ORSaveHive** per salvare l'hive in un file.
 
-I parametri *dwOsMajorVersion* e *dwOsMinorVersion* insieme specificano il formato di destinazione del file hive del registro di sistema. Nella tabella seguente sono riepilogati i numeri di versione del sistema operativo più recenti.
+I *parametri dwOsMajorVersion* e *dwOsMinorVersion* insieme specificano il formato di destinazione del file hive del Registro di sistema. Nella tabella seguente sono riepilogati i numeri di versione del sistema operativo più recenti.
 
 
 
@@ -125,11 +125,11 @@ I parametri *dwOsMajorVersion* e *dwOsMinorVersion* insieme specificano il forma
 
  
 
-Utilizzare la funzione [GetVersionEx](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) per recuperare le informazioni sul sistema operativo corrente.
+Usare la [funzione GetVersionEx](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) per recuperare informazioni sul sistema operativo corrente.
 
-La funzione **ORSaveHive** blocca l'hive del registro di sistema mentre scrive l'hive nel file, quindi chiude il file e rilascia il blocco. L'hive del registro di sistema rimane in memoria fino a quando non viene chiuso chiamando la funzione [**ORCloseHive**](orclosehive.md) . È possibile apportare ulteriori modifiche all'hive del registro di sistema mentre è aperto. Tuttavia, per mantenere queste modifiche, è necessario salvare l'hive in un nuovo file, perché la funzione **ORSaveHive** non sovrascriverà un file esistente.
+La **funzione ORSaveHive** blocca l'hive del Registro di sistema durante la scrittura dell'hive nel file, quindi chiude il file e rilascia il blocco. L'hive del Registro di sistema rimane in memoria fino a quando non viene chiuso chiamando la [**funzione ORCloseHive.**](orclosehive.md) È possibile apportare ulteriori modifiche all'hive del Registro di sistema mentre è aperto. Tuttavia, per mantenere queste modifiche, l'hive deve essere salvato in un nuovo file, perché la funzione **ORSaveHive** non sovrascriverà un file esistente.
 
-La funzione **ORSaveHive** può essere usata per salvare parte dell'hive del registro di sistema offline. La chiave specificata nel parametro *handle* diventa la chiave radice di un hive costituita dalla chiave specificata e da tutte le relative sottochiavi.
+La **funzione ORSaveHive** può essere usata per salvare parte dell'hive del Registro di sistema offline. La chiave specificata nel *parametro Handle* diventa la chiave radice di un hive costituito dalla chiave specificata e da tutte le relative sottochiavi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -137,8 +137,8 @@ La funzione **ORSaveHive** può essere usata per salvare parte dell'hive del reg
 
 | Requisito | Valore |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | Windows offline Registry Library versione 1,0 o successiva<br/>                      |
-| Intestazione<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Componente ridistribuibile<br/> | Windows Libreria del Registro di sistema offline versione 1.0 o successiva<br/>                      |
+| Intestazione<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 
@@ -147,7 +147,7 @@ La funzione **ORSaveHive** può essere usata per salvare parte dell'hive del reg
 
 <dl> <dt>
 
-[GetVersionEx](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
+[Getversionex](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
 </dt> <dt>
 
 [**ORCloseHive**](orclosehive.md)

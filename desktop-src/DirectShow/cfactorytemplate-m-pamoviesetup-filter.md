@@ -1,7 +1,7 @@
 ---
-description: Puntatore a una \_ struttura di filtro AMOVIESETUP.
+description: Puntatore a una struttura AMOVIESETUP \_ FILTER.
 ms.assetid: 72db601b-78a3-484a-a27f-147ec36022ab
-title: 'Membro CFactoryTemplate:: m_pAMovieSetup_Filter (ComBase. h)'
+title: Membro CFactoryTemplate::m_pAMovieSetup_Filter (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 087612acf99a41966ccd98d3b41d2b83255a86f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bc4ee059eb47e08ae827392e8f29968463bb9bd4ca86e0c6b8a87a9f3bbd5667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697711"
 ---
-# <a name="cfactorytemplatem_pamoviesetup_filter-member"></a>\_Membro del filtro pAMovieSetup di CFactoryTemplate:: m \_
+# <a name="cfactorytemplatem_pamoviesetup_filter-member"></a>Membro del filtro CFactoryTemplate::m \_ pAMovieSetup \_
 
-Puntatore a una struttura di [**\_ filtro AMOVIESETUP**](amoviesetup-filter.md) .
+Puntatore a [**una struttura AMOVIESETUP \_ FILTER.**](amoviesetup-filter.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ const AMOVIESETUP_FILTER *m_pAMovieSetup_Filter;
 
 ## <a name="remarks"></a>Osservazioni
 
-Usare questa struttura per applicare un filtro a una registrazione automatica. Se il componente non è un filtro, questa variabile membro può essere **null**. Per altre informazioni, vedere How to register DirectShow Filters.
+Usare questa struttura per creare un filtro autoregistrato. Se il componente non è un filtro, questa variabile membro può essere **NULL.** Per altre informazioni, vedere Come registrare DirectShow filtri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Usare questa struttura per applicare un filtro a una registrazione automatica. S
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

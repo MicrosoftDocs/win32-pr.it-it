@@ -1,26 +1,26 @@
 ---
 title: Supportare pattern di controllo in un provider di automazione interfaccia utente
-description: Questo argomento illustra in che modo un provider di automazione interfaccia utente Microsoft implementa i pattern di controllo per un controllo. I pattern di controllo consentono alle applicazioni client di manipolare il controllo e ottenere informazioni su di esso.
+description: Questo argomento illustra come un provider di Automazione interfaccia utente Microsoft implementa i pattern di controllo per un controllo . I pattern di controllo consentono alle applicazioni client di modificare il controllo e di ottenere informazioni su di esso.
 ms.assetid: 504d0ed8-32c1-43ed-9f71-328a013ab350
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54e75fa12dba891bc4eded5fd9763f7825eb7f88
-ms.sourcegitcommit: 2e9db3c7d9a3dbea15196b03c883846fad6f32be
+ms.openlocfilehash: 649f9419c5e3003c0185f435cba4d38f4a25c3d7adc1bdc7cf9c53cd06b32a6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "104335399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759231"
 ---
 # <a name="support-control-patterns-in-a-ui-automation-provider"></a>Supportare pattern di controllo in un provider di automazione interfaccia utente
 
-Questo argomento illustra in che modo un provider di automazione interfaccia utente Microsoft implementa i pattern di controllo per un controllo. I pattern di controllo consentono alle applicazioni client di manipolare il controllo e ottenere informazioni su di esso.
+Questo argomento illustra come un provider di Automazione interfaccia utente Microsoft implementa i pattern di controllo per un controllo . I pattern di controllo consentono alle applicazioni client di modificare il controllo e di ottenere informazioni su di esso.
 
 Un provider implementa un pattern di controllo seguendo questi passaggi principali:
 
-1.  Implementare l'interfaccia del provider che supporta il pattern di controllo. Ad esempio, per supportare il pattern di controllo [Selection](uiauto-implementingselection.md) , un provider per un controllo elenco personalizzato implementa l'interfaccia [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) .
-2.  Restituisce un oggetto che contiene l'interfaccia del provider del pattern di controllo quando l'automazione interfaccia utente chiama il metodo [**IRawElementProviderSimple:: GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) del provider.
+1.  Implementare l'interfaccia del provider che supporta il pattern di controllo. Ad esempio, per supportare il pattern di controllo [Selection,](uiauto-implementingselection.md) un provider per un controllo elenco personalizzato implementerebbe [**l'interfaccia ISelectionProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)
+2.  Restituisce un oggetto che contiene l'interfaccia del provider del pattern di controllo Automazione interfaccia utente chiama il metodo [**IRawElementProviderSimple::GetPatternProvider del**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) provider.
 
-Nell'esempio seguente viene illustrata l'implementazione dell'interfaccia [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) per un controllo elenco personalizzato a selezione singola. L'implementazione include metodi di recupero delle proprietà per le proprietà IsSelectionRequired e CanSelectMultiple e un metodo per recuperare il provider per l'elemento elenco selezionato.
+Nell'esempio seguente viene [**illustrata l'implementazione dell'interfaccia ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) per un controllo elenco personalizzato a selezione singola. L'implementazione include metodi di recupero delle proprietà IsSelectionRequired e CanSelectMultiple e un metodo per recuperare il provider per l'elemento dell'elenco selezionato.
 
 
 ```C++
@@ -73,7 +73,7 @@ IFACEMETHODIMP ListProvider::GetSelection(SAFEARRAY** pRetVal)
 
 
 
-Nell'esempio seguente viene illustrata un'implementazione di [**IRawElementProviderSimple:: GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) che restituisce un oggetto che implementa [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider). La maggior parte dei controlli elenco supporta anche altri modelli, ma in questo esempio viene restituito un riferimento null per tutti gli altri identificatori del pattern di controllo.
+L'esempio seguente illustra un'implementazione di [**IRawElementProviderSimple::GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) che restituisce un oggetto che [**implementa ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider). La maggior parte dei controlli elenco supporta anche altri modelli, ma in questo esempio viene restituito un riferimento Null per tutti gli altri identificatori di pattern di controllo.
 
 
 ```C++
@@ -105,12 +105,12 @@ IFACEMETHODIMP ListProvider::GetPatternProvider(PATTERNID patternId, IUnknown** 
 [Cenni preliminari sui pattern di controllo per l'automazione interfaccia utente](uiauto-controlpatternsoverview.md)
 </dt> <dt>
 
-[Procedure per i provider di automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-providers.md)
+[Procedure per i provider di Automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

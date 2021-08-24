@@ -1,21 +1,21 @@
 ---
-description: Il messaggio di riga \_ PROXYSTATUS viene inviato quando i proxy disponibili cambiano in una riga attualmente aperta dall'applicazione.
+description: Il messaggio LINE PROXYSTATUS viene inviato quando i proxy disponibili cambiano in una riga attualmente \_ aperta dall'applicazione.
 ms.assetid: e20d4b48-a72a-4a83-ae04-a608791a1a3a
-title: Messaggio di LINE_PROXYSTATUS (TAPI. h)
+title: LINE_PROXYSTATUS messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cb00c5df4f531309bdd1311fb7c34c3e9967a8a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 585feda6194a13ecfbe17292aadb9036784d244c9ee5b7df4361981ab7401f65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682351"
 ---
-# <a name="line_proxystatus-message"></a>\_Messaggio linea PROXYSTATUS
+# <a name="line_proxystatus-message"></a>MESSAGGIO \_ LINE PROXYSTATUS
 
-Il messaggio di **riga \_ PROXYSTATUS** viene inviato quando i proxy disponibili cambiano in una riga attualmente aperta dall'applicazione.
+Il **messaggio LINE \_ PROXYSTATUS** viene inviato quando i proxy disponibili cambiano in una riga attualmente aperta dall'applicazione.
 
-TAPISRV genera questo messaggio durante una funzione [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) usando LINEPROXYSTATUS \_ Open e LINEPROXYSTATUS \_ ALLOPENFORACD o una funzione [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose) usando LINEPROXYSTATUS \_ Close (tutte le [**\_ costanti LINEPROXYSTATUS**](lineproxystatus--constants.md)).
+TAPISRV genera questo messaggio durante una funzione [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) usando LINEPROXYSTATUS OPEN e \_ LINEPROXYSTATUS \_ ALLOPENFORACD o una funzione [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose) usando LINEPROXYSTATUS CLOSE (tutte le \_ costanti [**\_ LINEPROXYSTATUS**](lineproxystatus--constants.md)).
 
 
 ```C++
@@ -31,7 +31,7 @@ TAPISRV genera questo messaggio durante una funzione [**lineOpen**](/windows/des
 *dwDevice* 
 </dt> <dd>
 
-Handle dell'applicazione per il dispositivo linea. Questo si riferisce al gestore agenti.
+Handle dell'applicazione per il dispositivo line. Si riferisce al gestore dell'agente.
 
 </dd> <dt>
 
@@ -45,37 +45,37 @@ Istanza di callback fornita all'apertura della riga.
 *dwParam1* 
 </dt> <dd>
 
-Specifica lo stato della coda che è stato modificato. Può essere una o più delle [**\_ costanti LINEPROXYSTATUS**](lineproxystatus--constants.md).
+Specifica lo stato della coda modificato. Può essere una o più costanti [**LINEPROXYSTATUS. \_**](lineproxystatus--constants.md)
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Se *dwParam1* è impostato su LINEPROXYSTATUS \_ Open o LINEPROXYSTATUS \_ Close, *dwParam2* indica il tipo di richiesta proxy correlato, che è uno dei seguenti:
+Se *dwParam1* è impostato su LINEPROXYSTATUS OPEN o \_ LINEPROXYSTATUS \_ CLOSE, *dwParam2* indica il tipo di richiesta proxy correlato, che è uno dei seguenti:
 
--   \_SETAGENTGROUP LINEPROXYREQUEST
--   \_SETAGENTSTATE LINEPROXYREQUEST
--   \_SETAGENTACTIVITY LINEPROXYREQUEST
--   \_GETAGENTCAPS LINEPROXYREQUEST
--   \_GETAGENTSTATUS LINEPROXYREQUEST
--   \_AGENTSPECIFIC LINEPROXYREQUEST
--   \_GETAGENTACTIVITYLIST LINEPROXYREQUEST
--   \_GETAGENTGROUPLIST LINEPROXYREQUEST
--   \_CREATEAGENT LINEPROXYREQUEST
--   \_SETAGENTMEASUREMENTPERIOD LINEPROXYREQUEST
--   \_GETAGENTINFO LINEPROXYREQUEST
--   \_CREATEAGENTSESSION LINEPROXYREQUEST
--   \_GETAGENTSESSIONLIST LINEPROXYREQUEST
--   \_SETAGENTSESSIONSTATE LINEPROXYREQUEST
--   \_GETAGENTSESSIONINFO LINEPROXYREQUEST
--   LINEPROXYREQUEST \_ GETqueuein
--   \_SETQUEUEMEASUREMENTPERIOD LINEPROXYREQUEST
--   \_GETQUEUEINFO LINEPROXYREQUEST
--   LINEPROXYREQUEST \_ GETgrouping
--   \_SETAGENTSTATEEX LINEPROXYREQUEST
+-   LINEPROXYREQUEST \_ SETAGENTGROUP
+-   LINEPROXYREQUEST \_ SETAGENTSTATE
+-   LINEPROXYREQUEST \_ SETAGENTACTIVITY
+-   LINEPROXYREQUEST \_ GETAGENTCAPS
+-   LINEPROXYREQUEST \_ GETAGENTSTATUS
+-   LINEPROXYREQUEST \_ AGENTSPECIFIC
+-   LINEPROXYREQUEST \_ GETAGENTACTIVITYLIST
+-   LINEPROXYREQUEST \_ GETAGENTGROUPLIST
+-   LINEPROXYREQUEST \_ CREATEAGENT
+-   LINEPROXYREQUEST \_ SETAGENTMEASUREMENTPERIOD
+-   LINEPROXYREQUEST \_ GETAGENTINFO
+-   LINEPROXYREQUEST \_ CREATEAGENTSESSION
+-   LINEPROXYREQUEST \_ GETAGENTSESSIONLIST
+-   LINEPROXYREQUEST \_ SETAGENTSESSIONSTATE
+-   LINEPROXYREQUEST \_ GETAGENTSESSIONINFO
+-   LINEPROXYREQUEST \_ GETQUEUELIST
+-   LINEPROXYREQUEST \_ SETQUEUEMEASUREMENTPERIOD
+-   LINEPROXYREQUEST \_ GETQUEUEINFO
+-   LINEPROXYREQUEST \_ GETGROUPLIST
+-   LINEPROXYREQUEST \_ SETAGENTSTATEEX
 
-In caso contrario, *dwParam2* è impostato su zero.
+In caso contrario, *dwParam2* viene impostato su zero.
 
 </dd> <dt>
 
@@ -92,8 +92,8 @@ Riservato. Imposta su zero.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -107,10 +107,10 @@ Riservato. Imposta su zero.
 [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose)
 </dt> <dt>
 
-[**LINEA \_ PROXYREQUEST**](line-proxyrequest.md)
+[**LINE \_ PROXYREQUEST**](line-proxyrequest.md)
 </dt> <dt>
 
-[**\_Costanti LINEPROXYREQUEST**](lineproxyrequest--constants.md)
+[**Costanti \_ LINEPROXYREQUEST**](lineproxyrequest--constants.md)
 </dt> </dl>
 
  

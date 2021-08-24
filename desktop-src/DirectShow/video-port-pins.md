@@ -1,35 +1,35 @@
 ---
-description: PIN della porta video
+description: Pin della porta video
 ms.assetid: a6be24e5-7937-48f1-abeb-3f29c3deeafd
-title: PIN della porta video
+title: Pin della porta video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d13ab4ad63995dd38460bf29064035c9c1802dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94202e05cc467eabb77719a145a77310a62482e6f82772261b57e5ff544d2b63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696786"
 ---
-# <a name="video-port-pins"></a>PIN della porta video
+# <a name="video-port-pins"></a>Pin della porta video
 
-Un dispositivo di acquisizione con una porta video hardware può usare VPE (video Port Extensions) in Microsoft® DirectX®. In tal caso, il filtro di acquisizione avrà un PIN della porta video (VP). Nessun dato video passa dal perno VP al grafico del filtro. Al contrario, i frame video vengono prodotti nell'hardware e inviati direttamente alla memoria del video. Il pin VP consente l'invio di messaggi di controllo all'hardware.
+Un dispositivo di acquisizione con una porta video hardware potrebbe usare le estensioni della porta video (VPE) in Microsoft® DirectX®. In questo caso, il filtro di acquisizione avrà un pin di porta video (VP). Nessun dato video passa dal pin del VP attraverso il grafico del filtro. I fotogrammi video vengono invece prodotti nell'hardware e inviati direttamente alla memoria video. Il pin VP consente di inviare messaggi di controllo all'hardware.
 
-È importante connettere il pin VP, anche se l'applicazione esegue solo l'acquisizione di file senza anteprima. Se si lascia il PIN non connesso, il grafico non viene eseguito correttamente. Questo comportamento è diverso dai pin di anteprima, che non devono essere connessi.
+È importante connettere il pin VP, anche se l'applicazione esegue solo l'acquisizione di file senza anteprima. Se si lascia la puntina non connessa, il grafico non verrà eseguito correttamente. Questo è diverso dai pin di anteprima, che non devono essere connessi.
 
-I diversi renderer video DirectShow offrono un supporto variabile per i pin VP:
+I diversi DirectShow renderer video offrono un supporto variabile per i pin VP:
 
--   Renderer video: connettere il pin VP al pin 0 nel filtro [sovrimpressione](overlay-mixer-filter.md) e connettere il filtro del mixer sovrapposto al renderer video.
--   VMR-7: connettere il pin VP al filtro di [Gestione porte video](video-port-manager.md) e connettere Gestione porta video a VMR-7.
+-   Renderer video: Connessione il pin VP per aggiungere 0 al filtro overlay Mixer e connettere il filtro overlay [Mixer](overlay-mixer-filter.md) al renderer video.
+-   VMR-7: Connessione il pin VP al filtro [di Gestione](video-port-manager.md) porte video e connettere Video Port Manager a VMR-7.
 -   VMR-9: non è possibile usare VMR-9 se il dispositivo ha un pin VP, perché Direct3D 9 non supporta le porte video. Usare il renderer video o VMR-7.
 
-Per gli scenari di porta video, il mixer overlay e il renderer video sono consigliati rispetto a gestione porta video e VMR-7, perché non tutti i driver supportano il gestore della porta video. In generale, il mixer overlay è l'opzione più affidabile per le porte video.
+Per gli scenari con porte video, i renderer di overlay Mixer e video sono consigliati su Gestione porte video e VMR-7, perché non tutti i driver supportano Gestione porte video. In generale, la sovrapposizione Mixer è l'opzione più affidabile per le porte video.
 
-Il metodo [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) inserisce automaticamente il mixer della sovrimpressione se è presente un pin VP. Se si compila il grafico senza usare questo metodo, è necessario verificare la presenza di un PIN della porta video nel filtro di acquisizione e, se presente, connetterlo al filtro della sovrimpressione, come illustrato nella figura seguente.
+Il [**metodo ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) inserisce automaticamente la sovrimpressione Mixer se è presente un pin VP. Se si compila il grafo senza usare questo metodo, è necessario verificare la presenza di un pin della porta video nel filtro di acquisizione e, se presente, connetterlo al filtro overlay Mixer, come illustrato nel diagramma seguente.
 
-![connessione di un PIN della porta video al filtro della sovrimpressione.](images/vidcap11.png)
+![connessione di un pin della porta video al filtro del mixer di sovrimpressione.](images/vidcap11.png)
 
-È possibile usare il metodo [**ICaptureGraphBuilder2:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) per cercare un pin VP sul filtro di acquisizione:
+È possibile usare il [**metodo ICaptureGraphBuilder2::FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) per cercare un pin VP nel filtro di acquisizione:
 
 
 ```C++
@@ -46,7 +46,7 @@ hr = pBuild->FindPin(
 
 
 
-Dopo aver aggiunto il mixer della sovrimpressione al grafo, chiamare di nuovo **FindPin** per trovare il pin 0 nel mixer della sovrimpressione. Il pin 0 è sempre il primo pin di input sul filtro.
+Dopo aver aggiunto la sovrimpressione Mixer al grafo, chiamare di nuovo **FindPin** per trovare il segnaposto 0 nella Mixer. Pin 0 è sempre il primo pin di input nel filtro.
 
 
 ```C++
@@ -55,7 +55,7 @@ pBuild->FindPin(pOvMix, PINDIR_INPUT, NULL, NULL, TRUE, 0, &pOVPin);
 
 
 
-Connettere i due pin chiamando [**IGraphBuilder:: Connect**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect).
+Connessione i due segnaposto chiamando [**IGraphBuilder::Connessione**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect).
 
 
 ```C++
@@ -64,18 +64,18 @@ pGraph->Connect(pVPPin, pOvPin);
 
 
 
-Quindi connettere il pin di output del mixer overlay al filtro renderer video. È possibile nascondere il video chiamando il [**IVideoWindow::p UT \_ AutoShow**](/windows/desktop/api/Control/nf-control-ivideowindow-put_autoshow) e [**IVideoWindow::p UT \_ Visible**](/windows/desktop/api/Control/nf-control-ivideowindow-put_visible) methods on the Filter Graph Manager.
+Connettere quindi il pin Mixer di output della sovrimpressione al filtro Renderer video. È possibile nascondere il video chiamando i metodi [**IVideoWindow::p ut \_ AutoShow**](/windows/desktop/api/Control/nf-control-ivideowindow-put_autoshow) e [**IVideoWindow::p ut \_ Visible**](/windows/desktop/api/Control/nf-control-ivideowindow-put_visible) in Filter Graph Manager.
 
-Per i sintonizzatori TV, il filtro di acquisizione potrebbe avere anche una porta video VBI pin (PIN \_ Category \_ VIDEOPORT \_ VBI). In tal caso, connettere il PIN al filtro [VBI Surface allocator](vbi-surface-allocator.md) . Per ulteriori informazioni, vedere [visualizzazione di didascalie chiuse](viewing-closed-captions.md).
+Per gli ottimizzatori TV, il filtro di acquisizione potrebbe avere anche un pin VBI della porta video (PIN \_ CATEGORY \_ VIDEOPORT \_ VBI). In tal caso, connettere il segnaposto al filtro [VBI Surface Allocator.](vbi-surface-allocator.md) Per altre informazioni, vedere [Visualizzazione di sottotitoli codificati.](viewing-closed-captions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Argomenti sull'acquisizione avanzata](advanced-capture-topics.md)
+[Argomenti avanzati sull'acquisizione](advanced-capture-topics.md)
 </dt> <dt>
 
-[Uso del mixer overlay in acquisizione video](using-the-overlay-mixer-in-video-capture.md)
+[Uso della sovrimpressione Mixer'acquisizione video](using-the-overlay-mixer-in-video-capture.md)
 </dt> </dl>
 
  

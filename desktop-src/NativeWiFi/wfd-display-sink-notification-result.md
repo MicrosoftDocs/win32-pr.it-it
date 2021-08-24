@@ -1,7 +1,7 @@
 ---
-description: Descrive il risultato che è possibile impostare facoltativamente dopo l'elaborazione di un sink di visualizzazione notifica \_ nella \_ \_ funzione di richiamata della notifica del sink di visualizzazione della direttiva \_ .
+description: Descrive il risultato che è possibile impostare facoltativamente dopo l'elaborazione di una notifica del sink di visualizzazione nella funzione \_ WFD DISPLAY SINK NOTIFICATION \_ \_ \_ CALLBACK.
 ms.assetid: 6ED04294-2ED9-455B-9274-8C3DB06D4B21
-title: Struttura WFD_DISPLAY_SINK_NOTIFICATION_RESULT (Wfdsink. h)
+title: WFD_DISPLAY_SINK_NOTIFICATION_RESULT (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - wfdsink.h
-ms.openlocfilehash: dc23416d4d13284862aea652dd71909e71879afc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d72f444d409a7a3d43103967aff671fa7c808e5a37858e79f175db3511960e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780081"
 ---
-# <a name="wfd_display_sink_notification_result-structure"></a>\_Struttura del \_ risultato della notifica del sink di visualizzazione della \_ direttiva. \_
+# <a name="wfd_display_sink_notification_result-structure"></a>Struttura RISULTATO NOTIFICA SINK VISUALIZZAZIONE WFD \_ \_ \_ \_
 
-La struttura del risultato della notifica del sink di visualizzazione della direttiva per la visualizzazione del sink descrive il risultato che è possibile impostare facoltativamente dopo l'elaborazione di un sink di visualizzazione notifica nella funzione di [**\_ \_ \_ \_ richiamata della notifica di sink**](wfd-display-sink-notification-callback.md) **\_ \_ \_ \_**
+La **struttura WFD \_ DISPLAY SINK NOTIFICATION \_ \_ \_ RESULT** descrive il risultato che è possibile impostare facoltativamente dopo l'elaborazione di una notifica del sink di visualizzazione nella [**funzione \_ WFD DISPLAY SINK NOTIFICATION \_ \_ \_ CALLBACK.**](wfd-display-sink-notification-callback.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,25 +53,25 @@ typedef struct _WFD_DISPLAY_SINK_NOTIFICATION {
 **Intestazione**
 </dt> <dd>
 
-[**Intestazione dell' \_ \_ \_ oggetto \_ sink di visualizzazione della direttiva**](wfd-display-sink-object-header.md) , che descrive i dati inclusi nel risultato della notifica.
+Intestazione [**dell'oggetto \_ SINK DISPLAY \_ \_ DI \_ WFD**](wfd-display-sink-object-header.md) che descrive i dati inclusi nel risultato della notifica.
 
 </dd> <dt>
 
 **type**
 </dt> <dd>
 
-Un valore del tipo di notifica del sink di visualizzazione della direttiva, che indica il tipo di risultato della notifica. [**\_ \_ \_ \_**](wfd-display-sink-notification-type.md) Questo parametro determina inoltre le informazioni da utilizzare nell'Unione sottostante.
+Valore [**WFD \_ DISPLAY SINK NOTIFICATION \_ \_ \_ TYPE**](wfd-display-sink-notification-type.md) che indica il tipo di risultato della notifica. Questo parametro determina anche le informazioni da usare nell'unione seguente.
 
 </dd> <dt>
 
 **ProvisioningData**
 </dt> <dd>
 
-Informazioni sul risultato di una richiesta di provisioning. Usare questa se il *tipo* ha il valore **ProvisioningRequestNotification**.
+Informazioni sul risultato di una richiesta di provisioning. Usare questo valore *se il tipo* ha il valore **ProvisioningRequestNotification**.
 
 <dl> <dt>
 
-**ConfigMethod**
+**Metodo di configurazione**
 </dt> <dd>
 
 Metodo per visualizzare l'interfaccia utente per l'accettazione interattiva.
@@ -81,21 +81,21 @@ Metodo per visualizzare l'interfaccia utente per l'accettazione interattiva.
 **uPassKeyLength**
 </dt> <dd>
 
-Il numero di caratteri wide nella *passkey*, senza contare alcun carattere di terminazione null.
+Numero di caratteri wide in *Passkey,* senza contare alcun carattere di terminazione NULL.
 
 </dd> <dt>
 
 **Passkey**
 </dt> <dd>
 
-Contiene il tasto pass come matrice di caratteri wide. \_ \_ \_ \_ \_ La lunghezza di passkey massima delle informazioni WPS del sink \_ di direttiva è definita come valore (8).
+Contiene la chiave di passaggio come matrice di caratteri wide. WFD \_ SINK \_ WPS INFO MAX PASSKEY LENGTH è definito come \_ valore \_ \_ \_ (8).
 
 </dd> </dl> </dd> <dt>
 
-**ReconnectData**
+**Riconnettere i dati**
 </dt> <dd>
 
-Informazioni sul risultato di una richiesta di riconnessione. Usare questa se il *tipo* ha il valore **ReconnectRequestNotification**.
+Informazioni sul risultato di una richiesta di riconnessione. Usare questo valore *se type* ha il valore **ReconnectRequestNotification**.
 
 <dl> <dt>
 
@@ -112,9 +112,9 @@ Puntatore a una stringa con terminazione NULL che descrive il profilo.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl> |
 
 
 

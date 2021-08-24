@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 160134a2ae48bb23dc525eeded70b483484e0b71
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dbbd77b87c0df1d12b20958497d145b77ad62ed5b9691b443be2596fd58e4df6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682521"
 ---
 # <a name="getbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Metodo GetButtonState della classe Msvm \_ Ps2Mouse
 
@@ -107,7 +107,7 @@ Un valore restituito pari a zero indica l'esito positivo. Un valore diverso da z
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+L'accesso alla [**classe Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,9 +115,9 @@ L'accesso alla [**classe Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) potrebbe essere l
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

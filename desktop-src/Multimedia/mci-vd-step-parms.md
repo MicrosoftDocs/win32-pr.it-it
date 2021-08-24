@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VD_STEP_PARMS (Mciapi. h)
-description: La \_ struttura parametri di MCI VD \_ Step \_ contiene informazioni per il \_ comando del passaggio MCI per i dispositivi videodisco.
+title: MCI_VD_STEP_PARMS struttura (Mciapi.h)
+description: La struttura MCI \_ VD STEP PARMS contiene informazioni per \_ il comando \_ MCI \_ STEP per i dispositivi videodisc.
 ms.assetid: 5345468c-b195-485a-8101-4a076410f26a
 keywords:
-- Struttura MCI_VD_STEP_PARMS di Windows Multimedia
+- MCI_VD_STEP_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8b368046375f87a897d002c362624fed3ea105
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f494c821a1df68b98548c95a10af47b817e00b8bc0ffbd52ee7836bb4d97441f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783856"
 ---
-# <a name="mci_vd_step_parms-structure"></a>\_ \_ Struttura parametri del passaggio di MCI VD \_
+# <a name="mci_vd_step_parms-structure"></a>Struttura MCI \_ VD \_ STEP \_ PARMS
 
-La struttura **parametri di MCI \_ VD \_ Step \_** contiene informazioni per il comando del [**\_ passaggio MCI**](mci-step.md) per i dispositivi videodisco.
+La **struttura MCI \_ VD STEP \_ \_ PARMS** contiene informazioni per il [**comando MCI \_ STEP**](mci-step.md) per i dispositivi videodisc.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwFrames**
 </dt> <dd>
 
-Numero di frame da scorrere.
+Numero di fotogrammi da eseguire.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_passaggio MCI**](mci-step.md)
+[**PASSAGGIO \_ MCI**](mci-step.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

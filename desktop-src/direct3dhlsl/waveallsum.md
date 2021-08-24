@@ -1,6 +1,6 @@
 ---
-title: WaveActiveSum (funzione)
-description: Somma il valore dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie nell'onda corrente.
+title: Funzione WaveActiveSum
+description: Somma il valore dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie nell'onda corrente.
 ms.assetid: 94CEF4AA-D6DE-4B00-9743-F491F255FE3D
 keywords:
 - Funzione WaveActiveSum HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b98ecf2521841b9da73e1b917d44f1d91b7876d2
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 403768b875ed9462b79fb5d0abeee9539189597591f3a3b20f5a3b9662995542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742261"
 ---
-# <a name="waveactivesum-function"></a>WaveActiveSum (funzione)
+# <a name="waveactivesum-function"></a>Funzione WaveActiveSum
 
-Somma il valore dell'espressione in tutte le corsie attive nell'onda corrente e la replica in tutte le corsie nell'onda corrente.
+Somma il valore dell'espressione in tutte le corsie attive nell'onda corrente e lo replica in tutte le corsie nell'onda corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Somma il valore dell'espressione in tutte le corsie attive nell'onda corrente e 
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -45,13 +45,13 @@ Espressione da valutare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore sum.
+Valore della somma.
 
 ## <a name="remarks"></a>Commenti
 
 L'ordine delle operazioni non è definito.
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -68,7 +68,7 @@ float3 center = total/count;           // compute average of these positions
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

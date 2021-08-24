@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero di un commento di attività
-description: In questo esempio viene recuperata la stringa di commento di un'attività nota e viene visualizzata la stringa di commento sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ Recupero di un commento di attività
+description: Questo esempio recupera la stringa di commento di un'attività nota e visualizza la stringa di commento sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: f6f558d8-2e34-4314-9583-f815921aac7e
 keywords:
 - recupero del commento dell'attività Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, commento dell'attività
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione , commento dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b89ada9b135e42e25a81baf9bee60910b4e1a483
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77aa94b5832d8f0a109ad07f1d8cbdd799dd81ac7ab25c4ed202d87f16ae468c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738891"
 ---
 # <a name="cc-code-example-retrieving-a-task-comment"></a>Esempio di codice C/C++: recupero di un commento di attività
 
-In questo esempio viene recuperata la stringa di commento di un'attività nota e viene visualizzata la stringa di commento sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio recupera la stringa di commento di un'attività nota e visualizza la stringa di commento sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -119,12 +119,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

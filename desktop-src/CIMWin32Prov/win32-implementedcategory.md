@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione ImplementedCategory Win32 mette in relazione una categoria di componenti e la classe Component Object Model (com) utilizzando le relative interfacce.
+description: La classe WMI di associazione Win32 ImplementedCategory mette in relazione una categoria di componenti e \_ la classe Component Object Model (COM) usando le relative interfacce.
 ms.assetid: 7cf32b50-9ae6-44e5-b364-bc74dea3dc17
 ms.tgt_platform: multiple
-title: Classe Win32_ImplementedCategory
+title: Win32_ImplementedCategory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1d885c8c8e92ea661e06b46f338924355438ff9a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d461dd4e1ac6601b9d088b517ac0592f828782b9e48be2b5d08acd25657d7f48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699601"
 ---
-# <a name="win32_implementedcategory-class"></a>Win32 \_ ImplementedCategory (classe)
+# <a name="win32_implementedcategory-class"></a>Classe ImplementedCategory Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ ImplementedCategory Win32** mette in relazione una categoria di componenti e la classe Component Object Model (com) utilizzando le relative interfacce.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di associazione **Win32 \_ ImplementedCategory** mette in relazione una categoria di componenti e la classe Component Object Model (COM) usando le relative interfacce.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_ImplementedCategory
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ ImplementedCategory** presenta questi tipi di membri:
+La **classe Win32 \_ ImplementedCategory** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ ImplementedCategory** dispone di queste proprietà.
+La **classe Win32 \_ ImplementedCategory** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo di dati: **Win32 \_ ComponentCategory**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ComponentCategory")
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Wmi \| Win32 \_ ComponentCategory")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta la categoria di componenti utilizzata dalla classe COM.
+Riferimento all'istanza che rappresenta la categoria di componenti utilizzata dalla classe COM.
 
 </dd> <dt>
 
@@ -77,10 +77,10 @@ Tipo di dati: **Win32 \_ ClassicCOMClass**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta la classe COM utilizzando la categoria associata.
+Riferimento all'istanza che rappresenta la classe COM usando la categoria associata.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Riferimento all'istanza di che rappresenta la classe COM utilizzando la categori
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

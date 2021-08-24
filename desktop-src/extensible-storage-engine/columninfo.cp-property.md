@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà ColumnInfo. CP'
-title: Proprietà ColumnInfo. CP
+description: Altre informazioni sulla proprietà ColumnInfo.Cp
+title: ColumnInfo.Cp - proprietà
 TOCTitle: 'Cp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.Cp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.cp(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b6876c6b43d615b5298263aa448caac064278610
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8468692c0d9ee89f39e70d5ef63b09de00626730f3a153eb3d600484f02c16d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738201"
 ---
-# <a name="columninfocp-property"></a>Proprietà ColumnInfo. CP
+# <a name="columninfocp-property"></a>ColumnInfo.Cp - proprietà
 
 Ottiene la tabella codici della colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ public JET_CP Cp { get; private set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_CP](./jet-cp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_CP](./jet-cp-enumeration.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -68,6 +68,6 @@ Tipo: [Microsoft.ISAM.esent.Interop.JET_CP](./jet-cp-enumeration.md)
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Membri di ColumnInfo](./columninfo-members.md)
+[Membri ColumnInfo](./columninfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

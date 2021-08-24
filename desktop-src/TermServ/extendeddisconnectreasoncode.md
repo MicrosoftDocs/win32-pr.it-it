@@ -1,10 +1,10 @@
 ---
 title: Enumerazione ExtendedDisconnectReasonCode
-description: Definisce le informazioni estese sul motivo del controllo per la disconnessione.
+description: Definisce informazioni estese sul motivo della disconnessione del controllo.
 ms.assetid: E73E73B4-6C6B-4270-A1BD-947FA6D7B31B
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto enumerazione ExtendedDisconnectReasonCode
+- Enumerazione ExtendedDisconnectReasonCode Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 657d0faee03ca37b9a5a49b95b978a24b0c8955c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cfb917e2a74b82b55dc91a507e2c5815fbe83c632c4b3e29eb76941ab07662e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737841"
 ---
 # <a name="extendeddisconnectreasoncode-enumeration"></a>Enumerazione ExtendedDisconnectReasonCode
 
-Definisce le informazioni estese sul motivo del controllo per la disconnessione.
+Definisce informazioni estese sul motivo della disconnessione del controllo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ Non sono disponibili informazioni aggiuntive.
 <span id="exDiscReasonAPIInitiatedDisconnect"></span><span id="exdiscreasonapiinitiateddisconnect"></span><span id="EXDISCREASONAPIINITIATEDDISCONNECT"></span>**exDiscReasonAPIInitiatedDisconnect**
 </dt> <dd>
 
-La disconnessione è stata avviata da un'applicazione.
+Un'applicazione ha avviato la disconnessione.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Un'applicazione ha disconnesso il client.
 <span id="exDiscReasonServerIdleTimeout"></span><span id="exdiscreasonserveridletimeout"></span><span id="EXDISCREASONSERVERIDLETIMEOUT"></span>**exDiscReasonServerIdleTimeout**
 </dt> <dd>
 
-Il server ha disconnesso il client perché il client è rimasto inattivo per un periodo di tempo più lungo rispetto al periodo di timeout designato.
+Il server ha disconnesso il client perché il client è rimasto inattivo per un periodo di tempo superiore al periodo di timeout designato.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ La connessione del client è stata sostituita da un'altra connessione.
 <span id="exDiscReasonOutOfMemory"></span><span id="exdiscreasonoutofmemory"></span><span id="EXDISCREASONOUTOFMEMORY"></span>**exDiscReasonOutOfMemory**
 </dt> <dd>
 
-Memoria non disponibile.
+Non è disponibile memoria.
 
 </dd> <dt>
 
@@ -141,14 +141,14 @@ Il server ha negato la connessione per motivi di sicurezza.
 <span id="exDiscReasonServerFreshCredsRequired"></span><span id="exdiscreasonserverfreshcredsrequired"></span><span id="EXDISCREASONSERVERFRESHCREDSREQUIRED"></span>**exDiscReasonServerFreshCredsRequired**
 </dt> <dd>
 
-Sono necessarie credenziali aggiornate.
+Sono necessarie credenziali nuove.
 
 </dd> <dt>
 
 <span id="exDiscReasonRpcInitiatedDisconnectByUser"></span><span id="exdiscreasonrpcinitiateddisconnectbyuser"></span><span id="EXDISCREASONRPCINITIATEDDISCONNECTBYUSER"></span>**exDiscReasonRpcInitiatedDisconnectByUser**
 </dt> <dd>
 
-La disconnessione è stata avviata dall'attività dell'utente.
+L'attività dell'utente ha avviato la disconnessione.
 
 </dd> <dt>
 
@@ -162,21 +162,21 @@ L'utente si è disconnesso, disconnettendo la sessione.
 <span id="exDiscReasonLicenseInternal"></span><span id="exdiscreasonlicenseinternal"></span><span id="EXDISCREASONLICENSEINTERNAL"></span>**exDiscReasonLicenseInternal**
 </dt> <dd>
 
-Errore interno di gestione licenze.
+Errore di licenza interno.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseNoLicenseServer"></span><span id="exdiscreasonlicensenolicenseserver"></span><span id="EXDISCREASONLICENSENOLICENSESERVER"></span>**exDiscReasonLicenseNoLicenseServer**
 </dt> <dd>
 
-Nessun server licenze disponibile.
+Non è disponibile alcun server licenze.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseNoLicense"></span><span id="exdiscreasonlicensenolicense"></span><span id="EXDISCREASONLICENSENOLICENSE"></span>**exDiscReasonLicenseNoLicense**
 </dt> <dd>
 
-Non è disponibile una licenza software valida.
+Non è disponibile alcuna licenza software valida.
 
 </dd> <dt>
 
@@ -201,28 +201,28 @@ Errore di licenza client.
 
 </dd> <dt>
 
-<span id="exDiscReasonLicenseCantFinishProtocol"></span><span id="exdiscreasonlicensecantfinishprotocol"></span><span id="EXDISCREASONLICENSECANTFINISHPROTOCOL"></span>**exDiscReasonLicenseCantFinishProtocol**
+<span id="exDiscReasonLicenseCantFinishProtocol"></span><span id="exdiscreasonlicensecantfinishprotocol"></span><span id="EXDISCREASONLICENSECANTFINISHPROTOCOL"></span>**exDiscReasonLicenseFinishProtocol**
 </dt> <dd>
 
-Si sono verificati problemi di rete durante il protocollo di gestione licenze.
+Si sono verificati problemi di rete durante il protocollo di licenza.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseClientEndedProtocol"></span><span id="exdiscreasonlicenseclientendedprotocol"></span><span id="EXDISCREASONLICENSECLIENTENDEDPROTOCOL"></span>**exDiscReasonLicenseClientEndedProtocol**
 </dt> <dd>
 
-Il client ha terminato il protocollo di gestione delle licenze in modo anomalo.
+Il client ha terminato il protocollo di licenza in modo prematuro.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseErrClientEncryption"></span><span id="exdiscreasonlicenseerrclientencryption"></span><span id="EXDISCREASONLICENSEERRCLIENTENCRYPTION"></span>**exDiscReasonLicenseErrClientEncryption**
 </dt> <dd>
 
-Un messaggio di licenza è stato crittografato in modo errato.
+Un messaggio di licenza è stato crittografato in modo non corretto.
 
 </dd> <dt>
 
-<span id="exDiscReasonLicenseCantUpgradeLicense"></span><span id="exdiscreasonlicensecantupgradelicense"></span><span id="EXDISCREASONLICENSECANTUPGRADELICENSE"></span>**exDiscReasonLicenseCantUpgradeLicense**
+<span id="exDiscReasonLicenseCantUpgradeLicense"></span><span id="exdiscreasonlicensecantupgradelicense"></span><span id="EXDISCREASONLICENSECANTUPGRADELICENSE"></span>**exDiscReasonLicenseDiscUpgradeLicense**
 </dt> <dd>
 
 Non è stato possibile aggiornare o rinnovare la licenza di accesso client del computer locale.
@@ -232,35 +232,35 @@ Non è stato possibile aggiornare o rinnovare la licenza di accesso client del c
 <span id="exDiscReasonLicenseNoRemoteConnections"></span><span id="exdiscreasonlicensenoremoteconnections"></span><span id="EXDISCREASONLICENSENOREMOTECONNECTIONS"></span>**exDiscReasonLicenseNoRemoteConnections**
 </dt> <dd>
 
-Il computer remoto non dispone della licenza per accettare le connessioni remote.
+Il computer remoto non dispone di una licenza per accettare connessioni remote.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseCreatingLicStoreAccDenied"></span><span id="exdiscreasonlicensecreatinglicstoreaccdenied"></span><span id="EXDISCREASONLICENSECREATINGLICSTOREACCDENIED"></span>**exDiscReasonLicenseCreatingLicStoreAccDenied**
 </dt> <dd>
 
-È stato ricevuto un errore di accesso negato durante la creazione di una chiave del registro di sistema per l'archivio licenze.
+È stato ricevuto un errore di accesso negato durante la creazione di una chiave del Registro di sistema per l'archivio licenze.
 
 </dd> <dt>
 
 <span id="exDiscReasonRdpEncInvalidCredentials"></span><span id="exdiscreasonrdpencinvalidcredentials"></span><span id="EXDISCREASONRDPENCINVALIDCREDENTIALS"></span>**exDiscReasonRdpEncInvalidCredentials**
 </dt> <dd>
 
-Sono state rilevate credenziali non valide.
+Sono state riscontrate credenziali non valide.
 
 </dd> <dt>
 
 <span id="exDiscReasonProtocolRangeStart"></span><span id="exdiscreasonprotocolrangestart"></span><span id="EXDISCREASONPROTOCOLRANGESTART"></span>**exDiscReasonProtocolRangeStart**
 </dt> <dd>
 
-Inizio dell'intervallo di errori interni del protocollo. Per ulteriori informazioni, consultare il registro eventi del server.
+Inizio dell'intervallo di errori interni del protocollo. Per altri dettagli, controllare il registro eventi del server.
 
 </dd> <dt>
 
 <span id="exDiscReasonProtocolRangeEnd"></span><span id="exdiscreasonprotocolrangeend"></span><span id="EXDISCREASONPROTOCOLRANGEEND"></span>**exDiscReasonProtocolRangeEnd**
 </dt> <dd>
 
-Fine dell'intervallo di errori interni del protocollo.
+Terminazione dell'intervallo di errori interni del protocollo.
 
 </dd> </dl>
 

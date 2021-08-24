@@ -1,7 +1,7 @@
 ---
 description: Stringa di caratteri wide contenente il nome del filtro.
 ms.assetid: 7d41990f-aba2-4ea9-9d83-50a99cd0a648
-title: 'Membro CFactoryTemplate:: m_Name (ComBase. h)'
+title: Membro CFactoryTemplate::m_Name (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea8a6f3ee79ec5a487456e7571928d91fd2da307
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3d78833707384825b6b2c6694b70a62618f9fb6cf40bb16bbd2d329ea725807
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697871"
 ---
-# <a name="cfactorytemplatem_name-member"></a>Membro nome CFactoryTemplate:: m \_
+# <a name="cfactorytemplatem_name-member"></a>Membro CFactoryTemplate::m \_ Name
 
 Stringa di caratteri wide contenente il nome del filtro.
 
@@ -42,8 +42,8 @@ const WCHAR *m_Name;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

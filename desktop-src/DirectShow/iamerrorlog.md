@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IAMErrorLog fornisce un metodo di callback per la registrazione degli errori in DirectShow editing Services (DES). DES non implementa questa interfaccia.
+description: L'interfaccia IAMErrorLog fornisce un metodo di callback per la registrazione degli errori in DirectShow Editing Services (DES). DES non implementa questa interfaccia.
 ms.assetid: d5366072-2de7-437c-b198-cbc4d8623c45
-title: Interfaccia IAMErrorLog (qedit. h)
+title: Interfaccia IAMErrorLog (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,35 +14,35 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 48a1515ebf3e7c829a3e23772f1f84ee76c36ae0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2edd1d315cc7ae35bbc200209667d49d53392ce86a10b40a067182cd0621124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756461"
 ---
 # <a name="iamerrorlog-interface"></a>Interfaccia IAMErrorLog
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `IAMErrorLog` interfaccia fornisce un metodo di callback per la registrazione degli errori in [DirectShow editing Services](directshow-editing-services.md) (des).
+`IAMErrorLog`L'interfaccia fornisce un metodo di callback per la registrazione degli errori in DirectShow Editing [Services](directshow-editing-services.md) (DES).
 
-DES non implementa questa interfaccia. Per eseguire la registrazione degli errori, implementare questa interfaccia nell'applicazione e chiamare [**IAMSetErrorLog::p \_ log**](iamseterrorlog-put-errorlog.md) degli errori UT nella sequenza temporale. Se si verifica un errore quando si esegue il rendering del progetto, DES chiamerà il metodo [**IAMErrorLog:: LogError**](iamerrorlog-logerror.md) implementato dall'applicazione.
+DES non implementa questa interfaccia. Per eseguire la registrazione degli errori, implementare questa interfaccia nell'applicazione e chiamare [**IAMSetErrorLog::p ut \_ ErrorLog**](iamseterrorlog-put-errorlog.md) nella sequenza temporale. Se si verifica un errore durante il rendering del progetto, DES chiamerà il metodo [**IAMErrorLog::LogError**](iamerrorlog-logerror.md) implementato dall'applicazione.
 
-DES registra gli errori solo quando si esegue il rendering di un progetto usando l'interfaccia [**IRenderEngine**](irenderengine.md) . Se, ad esempio, si salva un progetto come un grafico del filtro DirectShow (formato. GRF) e si riproduce il file del grafo, non viene eseguita alcuna registrazione degli errori. Per ulteriori informazioni sull'utilizzo di questa interfaccia, vedere [registrazione degli errori](logging-errors.md).
+DES registra gli errori solo quando si esegue il rendering di un progetto usando [**l'interfaccia IRenderEngine.**](irenderengine.md) Ad esempio, se si salva un progetto come grafico DirectShow filtro (con estensione grf) e si riproduce il file del grafo, non è presente alcuna registrazione degli errori. Per altre informazioni sull'uso di questa interfaccia, vedere [Registrazione degli errori](logging-errors.md).
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IAMErrorLog** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IAMErrorLog** dispone anche di questi tipi di membri:
+**L'interfaccia IAMErrorLog** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMErrorLog** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IAMErrorLog** dispone di questi metodi.
+**L'interfaccia IAMErrorLog** include questi metodi.
 
 
 
@@ -57,12 +57,12 @@ L'interfaccia **IAMErrorLog** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -72,8 +72,8 @@ L'interfaccia **IAMErrorLog** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM AdjacentSlots descrive il layout degli slot in una scheda di hosting o scheda di scheda.
+description: L'associazione CIM AdjacentSlots descrive il layout degli slot in una scheda di scheda o \_ scheda di hosting.
 ms.assetid: d604647f-7b2f-4f99-8d98-adf115ae9dfb
 ms.tgt_platform: multiple
-title: Classe CIM_AdjacentSlots
+title: CIM_AdjacentSlots classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,23 +18,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 695f9c668d6f75864e46026deac9a969993596ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a219c2bbe95d8ccf3f89c029b4cb9f417ef8e2f0633a058c736b1339a41d7571
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701301"
 ---
-# <a name="cim_adjacentslots-class"></a>CIM \_ AdjacentSlots (classe)
+# <a name="cim_adjacentslots-class"></a>Classe CIM \_ AdjacentSlots
 
-L'associazione **CIM \_ AdjacentSlots** descrive il layout degli slot in una scheda di hosting o scheda di scheda. Le informazioni, ad esempio la distanza tra gli slot e il fatto che siano "condivise" (se ne viene popolato uno, non è possibile usare l'altro slot), vengono trasmesse come proprietà di associazione.
+**L'associazione CIM \_ AdjacentSlots** descrive il layout degli slot in una scheda di scheda o scheda di hosting. Le informazioni, ad esempio la distanza tra gli slot e se sono "condivise" (se ne viene popolato uno, l'altro slot non può essere usato), vengono trasmesse come proprietà di associazione.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,13 +51,13 @@ class CIM_AdjacentSlots
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AdjacentSlots** presenta questi tipi di membri:
+La **classe CIM \_ AdjacentSlots** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AdjacentSlots** dispone di queste proprietà.
+La **classe CIM \_ AdjacentSlots** ha queste proprietà.
 
 <dl> <dt>
 
@@ -80,39 +80,39 @@ Distanza, in pollici, tra gli slot adiacenti.
 **SharedSlots**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, uno degli slot viene popolato da una scheda di adapter; l'altro slot deve essere lasciato vuoto.
+Se **TRUE,** uno degli slot viene popolato da una scheda dell'adapter. l'altro slot deve essere lasciato vuoto.
 
 </dd> <dt>
 
 **SlotA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ slot CIM**
+Tipo di dati: **\_ slot CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento a uno degli slot adiacenti.
+Fare riferimento a uno degli slot adiacenti.
 
 </dd> <dt>
 
 **SlotB**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ slot CIM**
+Tipo di dati: **\_ slot CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento allo slot adiacente "altro".
+Riferimento all'altro slot adiacente.
 
 </dd> </dl>
 
@@ -120,7 +120,7 @@ Riferimento allo slot adiacente "altro".
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,7 +131,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

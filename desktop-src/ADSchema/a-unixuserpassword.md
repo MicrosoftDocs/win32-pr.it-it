@@ -1,6 +1,6 @@
 ---
-title: attributo unixUserPassword
-description: Contiene una password utente compatibile con un sistema UNIX.
+title: Attributo unixUserPassword
+description: Contiene una password utente compatibile con un UNIX sistema.
 ms.assetid: 9a5f900f-b4e2-4c95-81e9-e5a9e2823e08
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b834e9dcddeb8da0295e0fbcd17670c65c4dceb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ab37b033fd24a554bff845e811884379ea37c0e07632f626d4f91a649ca5b2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801891"
 ---
-# <a name="unixuserpassword-attribute"></a>attributo unixUserPassword
+# <a name="unixuserpassword-attribute"></a>Attributo unixUserPassword
 
-Contiene una password utente compatibile con un sistema UNIX.
+Contiene una password utente compatibile con un UNIX sistema.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | unixUserPassword                                      |
-| LDAP-Display-Name | unixUserPassword                                      |
+| Ldap-Display-Name | unixUserPassword                                      |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1910                               |
-| System-ID-GUID    | 612cb747-c0e8-4f92-9221-fdd5f15b550d                  |
+| System-Id-Guid    | 612cb747-c0e8-4f92-9221-fdd5f15b550d                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,15 +55,15 @@ Contiene una password utente compatibile con un sistema UNIX.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -76,15 +76,15 @@ Contiene una password utente compatibile con un sistema UNIX.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -97,15 +97,15 @@ Contiene una password utente compatibile con un sistema UNIX.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -118,15 +118,15 @@ Contiene una password utente compatibile con un sistema UNIX.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

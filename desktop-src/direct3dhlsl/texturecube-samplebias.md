@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCube:: TextureCube SampleBias'
-description: 'Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap. | Metodi di TextureCube:: TextureCube SampleBias'
+title: Metodi di TextureCube::TextureCube SampleBias
+description: Campionamento di una trama, dopo l'applicazione del valore di distorsione al livello mipmap. | Metodi di TextureCube::TextureCube SampleBias
 ms.assetid: 6D63F216-2DF9-4B23-A741-8D7F7543E73C
 keywords:
 - Metodi SampleBias HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 90325b3ea3fdd3702a6f03e7b6e0608e49fcc3f3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 3493fdb2711462ea4fba736fb53fb90e7d10f129905aa28f1396f190541d7eda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742561"
 ---
-# <a name="texturecubesamplebias-methods"></a>Metodi TextureCube:: SampleBias
+# <a name="texturecubesamplebias-methods"></a>Metodi di TextureCube::SampleBias
 
-Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap.
+Campionamento di una trama, dopo l'applicazione del valore di distorsione al livello mipmap.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Esegue il campionamento di una trama, dopo aver applicato il valore di distorsio
 
 | Metodo                                                                                     | Descrizione                                                                                                                                                                                  |
 |:-------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleBias (S, float, float)**](dx-graphics-hlsl-to-samplebias.md)                        | Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap.<br/>                                                                                                             |
-| [**SampleBias (S, float, float, float)**](tcube-samplebias-s-float-float-float-.md)           | Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a.<br/>                                     |
-| [**SampleBias (S, float, float, float, uint)**](tcube-samplebias-s-float-float-float-uint-.md) | Esegue il campionamento di una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo per limitare i valori del livello di dettaglio (LOD) campione a. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleBias(S,float,float)**](dx-graphics-hlsl-to-samplebias.md)                        | Campionamento di una trama, dopo l'applicazione del valore di distorsione al livello mipmap.<br/>                                                                                                             |
+| [**SampleBias(S,float,float,float)**](tcube-samplebias-s-float-float-float-.md)           | Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori di livello di dettaglio (LOD) del campione.<br/>                                     |
+| [**SampleBias(S,float,float,float,uint)**](tcube-samplebias-s-float-float-float-uint-.md) | Campionare una trama, dopo aver applicato il valore di distorsione al livello mipmap, con un valore facoltativo a cui applicare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Esegue il campionamento di una trama, dopo aver applicato il valore di distorsio
 [**TextureCube**](texturecube.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

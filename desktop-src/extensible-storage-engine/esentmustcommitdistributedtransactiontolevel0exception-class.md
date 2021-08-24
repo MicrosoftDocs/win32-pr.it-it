@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentMustCommitDistributedTransactionToLevel0Exception'
+description: Altre informazioni sulla classe EsentMustCommitDistributedTransactionToLevel0Exception
 title: Classe EsentMustCommitDistributedTransactionToLevel0Exception
 TOCTitle: EsentMustCommitDistributedTransactionToLevel0Exception class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentMustCommitDistributedTransactionToLevel0Exception
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 660610563676276bb3387fcbb8e9b5959df03067
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efd2469c0f3adeeb56062cd1cd889df9aa70fe94dc4266045d8957fbd82f5311
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782661"
 ---
 # <a name="esentmustcommitdistributedtransactiontolevel0exception-class"></a>Classe EsentMustCommitDistributedTransactionToLevel0Exception
 
@@ -38,15 +38,15 @@ Classe di base per JET_err. Eccezioni MustCommitDistributedTransactionToLevel0.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentMustCommitDistributedTransactionToLevel0Exception  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentMustCommitDistributedTransactionToLevel0Exception  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,4 +74,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentMustCommitDistributedTransactionToLevel0Exception](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

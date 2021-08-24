@@ -1,50 +1,50 @@
 ---
-title: Attributo on (Fill) (la)
-description: Attributo on (Fill) (la)
+title: Su attributo (riempimento)(VML)
+description: Su attributo (riempimento)(VML)
 ms.assetid: 9b7d42e5-4fd9-402d-8d1f-af01f6577475
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e25e805be23b4678b1be828b711365a8624f10
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ee692bf1beb8c9a7c79b50ef8be3c115deea615f18ee6702d0817d4f81439555
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680641"
 ---
-# <a name="on-attribute-fillvml"></a>Attributo on (Fill) (la)
+# <a name="on-attribute-fillvml"></a>Su attributo (riempimento)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se verrà visualizzato il riempimento. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se il riempimento verrà visualizzato. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* on = " *Expression* " >
+<v: *element* on=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . on = "*Expression*"
+*element* .on="*expression*"
 
-*espressione* = *elemento*. on
+*expression* = *Elemento*.on
 
 **Osservazioni:**
 
-Se **false**, il riempimento non viene visualizzato. Il valore predefinito è **True**.
+Se **False**, il riempimento non viene visualizzato. Il valore predefinito è **True**.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Anche se il riempimento è definito come rosso, non viene visualizzato.
+Anche se il riempimento è definito rosso, non viene visualizzato.
 
 
 ```HTML
@@ -59,6 +59,6 @@ Anche se il riempimento è definito come rosso, non viene visualizzato.
 
 
 
- 
+ 
 
- 
+ 

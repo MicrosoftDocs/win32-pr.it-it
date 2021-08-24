@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene illustrato come viene utilizzato un gestore di terminazione per garantire che le risorse vengano rilasciate quando viene terminata l'esecuzione di un corpo sorvegliato di codice.
+description: L'esempio seguente illustra come viene usato un gestore di terminazione per garantire che le risorse siano rilasciate quando termina l'esecuzione di un corpo di codice sorvegliato.
 ms.assetid: 442af2a3-d62a-4dd8-a934-da69c1d2a738
 title: Uso di un gestore di terminazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cbe73eda8533ed5805159d5386b69daa4d03194
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8d6fe2d2ba8a7b8443eb164571a42347ce6cfb7e99c44f90da25c6fd57863e0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655081"
 ---
 # <a name="using-a-termination-handler"></a>Uso di un gestore di terminazione
 
-Nell'esempio seguente viene illustrato come viene utilizzato un gestore di terminazione per garantire che le risorse vengano rilasciate quando viene terminata l'esecuzione di un corpo sorvegliato di codice. In questo caso, un thread utilizza la funzione [**EnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection) per attendere la proprietà di un oggetto della sezione critica. Al termine dell'esecuzione del codice protetto dalla sezione critica, il thread deve chiamare la funzione [**LeaveCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection) per rendere disponibile l'oggetto sezione critica ad altri thread. L'utilizzo di un gestore di terminazione garantisce che questa operazione verrà eseguita. Per ulteriori informazioni, vedere [oggetti sezione critica](../sync/critical-section-objects.md).
+L'esempio seguente illustra come viene usato un gestore di terminazione per garantire che le risorse siano rilasciate quando termina l'esecuzione di un corpo di codice sorvegliato. In questo caso, un thread usa la [**funzione EnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection) per attendere la proprietà di un oggetto sezione critica. Al termine dell'esecuzione del codice protetto dalla sezione critica, il thread deve chiamare la funzione [**LeaveCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection) per rendere disponibile l'oggetto sezione critica ad altri thread. L'uso di un gestore di terminazione garantisce che ciò si verifica. Per altre informazioni, vedere [oggetti sezione critica](../sync/critical-section-objects.md).
 
 
 ```C++

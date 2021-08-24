@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_RETURN (visualizzazione elenco) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo ha lo stato attivo per l'input e che l'utente ha premuto il tasto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RETURN di notifica (visualizzazione elenco) (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha lo stato attivo per l'input e che l'utente ha premuto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 21a8d308-d747-4020-8925-d982234bcf81
 keywords:
-- Codice di notifica NM_RETURN (visualizzazione elenco) controlli Windows
+- NM_RETURN di notifica (visualizzazione elenco) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b221189ced0e351f088493f00fa7b8849717668
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d230315d09bf56a7a139b5cb089cdcd177bf21128f2407859e1c010abc6d6766
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816371"
 ---
-# <a name="nm_return-list-view-notification-code"></a>\_Codice di notifica restituito da Nm (visualizzazione elenco)
+# <a name="nm_return-list-view-notification-code"></a>Codice di \_ notifica NM RETURN (visualizzazione elenco)
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo ha lo stato attivo per l'input e che l'utente ha premuto il tasto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha lo stato attivo per l'input e che l'utente ha premuto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_RETURN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

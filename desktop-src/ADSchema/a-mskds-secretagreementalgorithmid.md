@@ -1,11 +1,11 @@
 ---
-title: attributo ms-KDS-SecretAgreement-AlgorithmID
-description: Nome dell'algoritmo di accordo segreto da utilizzare con le chiavi pubbliche.
+title: Attributo ms-Kds-SecretAgreement-AlgorithmID
+description: Nome dell'algoritmo del contratto segreto da usare con le chiavi pubbliche.
 ms.assetid: 32a9a33c-8abd-463b-ba45-f4f862664b15
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-KDS-SecretAgreement-AlgorithmID
-- msKds-schema AD attributo SecretAgreementAlgorithmID
+- Schema AD dell'attributo ms-Kds-SecretAgreement-AlgorithmID
+- Schema AD dell'attributo msKds-SecretAgreementAlgorithmID
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28e7a34252986ad6e470c9f7b4fa18ab3ce96032
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fbc7bd862b14cd2c26df8113c4c3d40aad0a8a8d8fcd3bccc1ecaf0620778ce8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762801"
 ---
-# <a name="ms-kds-secretagreement-algorithmid-attribute"></a>attributo ms-KDS-SecretAgreement-AlgorithmID
+# <a name="ms-kds-secretagreement-algorithmid-attribute"></a>Attributo ms-Kds-SecretAgreement-AlgorithmID
 
-Nome dell'algoritmo di accordo segreto da utilizzare con le chiavi pubbliche.
+Nome dell'algoritmo del contratto segreto da usare con le chiavi pubbliche.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-KDS-SecretAgreement-AlgorithmID          |
-| LDAP-Display-Name | msKds-SecretAgreementAlgorithmID            |
+| CN                | ms-Kds-SecretAgreement-AlgorithmID          |
+| Ldap-Display-Name | msKds-SecretAgreementAlgorithmID            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2171                     |
-| System-ID-GUID    | 1702975d-225e-cb4a-b15d-0daea8b5e990        |
+| System-Id-Guid    | 1702975d-225e-cb4a-b15d-0daea8b5e990        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,15 +53,15 @@ Nome dell'algoritmo di accordo segreto da utilizzare con le chiavi pubbliche.
 | ID collegamento                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classi utilizzate in        | [**MS-KDS-prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Classi usate in        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

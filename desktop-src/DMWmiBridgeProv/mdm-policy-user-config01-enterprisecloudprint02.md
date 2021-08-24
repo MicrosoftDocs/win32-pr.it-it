@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_EnterpriseCloudPrint02
-description: La \_ classe del criterio MDM \_ utente \_ Config01 \_ EnterpriseCloudPrint02 rappresenta i criteri di stampa cloud disponibili.
+title: MDM_Policy_User_Config01_EnterpriseCloudPrint02 classe
+description: La classe MDM \_ \_ Policy User \_ Config01 \_ EnterpriseCloudPrint02 rappresenta i criteri di stampa cloud disponibili.
 ms.assetid: cc885184-1197-48c4-ba48-a2944a416534
 keywords:
-- Classe MDM_Policy_User_Config01_EnterpriseCloudPrint02
-- Classe MDM_Policy_User_Config01_EnterpriseCloudPrint02, descritta
+- MDM_Policy_User_Config01_EnterpriseCloudPrint02 classe
+- MDM_Policy_User_Config01_EnterpriseCloudPrint02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2b9d42afbab4d3f17d91b6db630ef67faf6ccc7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5b9bece6259b1f999c263fb514dd57fff58455b3d100e205098465747dbe87c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815741"
 ---
-# <a name="mdm_policy_user_config01_enterprisecloudprint02-class"></a>\_Utente criteri \_ MDM \_ Config01 \_ classe EnterpriseCloudPrint02
+# <a name="mdm_policy_user_config01_enterprisecloudprint02-class"></a>Classe \_ MDM Policy User \_ \_ Config01 \_ EnterpriseCloudPrint02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe del criterio MDM \_ utente \_ Config01 \_ EnterpriseCloudPrint02 rappresenta i criteri di stampa cloud disponibili.
+La classe MDM \_ \_ Policy User \_ Config01 \_ EnterpriseCloudPrint02 rappresenta i criteri di stampa cloud disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -51,23 +51,23 @@ class MDM_Policy_User_Config01_EnterpriseCloudPrint02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Config01 \_ EnterpriseCloudPrint02 dell'utente dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy User \_ \_ \_ Config01 \_ EnterpriseCloudPrint02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Config01 \_ EnterpriseCloudPrint02 dell'utente dei criteri MDM** ha queste proprietà.
+La **classe MDM Policy User \_ \_ \_ Config01 \_ EnterpriseCloudPrint02** ha queste proprietà.
 
 <dl> <dt>
 
 [CloudPrinterDiscoveryEndPoint](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-cloudprinterdiscoveryendpoint)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,10 +75,10 @@ Tipo di accesso: lettura/scrittura
 [CloudPrintOAuthAuthority](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-cloudprintoauthauthority)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -86,10 +86,10 @@ Tipo di accesso: lettura/scrittura
 [CloudPrintOAuthClientId](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-cloudprintoauthclientid)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -97,10 +97,10 @@ Tipo di accesso: lettura/scrittura
 [CloudPrintResourceId](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-cloudprintresourceid)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,7 +111,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -119,13 +119,13 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -133,24 +133,24 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [MopriaDiscoveryResourceId](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-mopriadiscoveryresourceid)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> </dl>
@@ -161,10 +161,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

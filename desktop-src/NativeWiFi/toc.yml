@@ -1,4 +1,4 @@
-- name: WiFi nativo
+- name: Wi-Fi nativo
   href: portal.md
   items:
     - name: Novità di Native WiFi
@@ -8,37 +8,37 @@
       items:
         - name: Informazioni sull'architettura di ACM
           href: about-the-acm-architecture.md
-        - name: Informazioni sull'API WiFi nativa
+        - name: Informazioni sull'API Wi-Fi nativa
           href: about-the-native-wifi-api.md
-        - name: Supporto per le API WiFi native in Windows XP
+        - name: Supporto dell'API Wifi nativa in Windows XP
           href: about-wireless-lan-api-for-windows-xp-service-pack-2.md
-        - name: Autorizzazioni API WiFi Native
+        - name: Autorizzazioni per l'API Wi-Fi nativa
           href: native-wifi-api-permissions.md
-        - name: Informazioni sulla funzionalità Wi-Fi Direct
+        - name: Informazioni sulla Wi-Fi Direct
           href: about-the-wi-fi-direct-api.md
         - name: Informazioni sull'API ad hoc wireless
           href: about-the-wireless-ad-hoc-api.md
         - name: Informazioni sulla rete wireless ospitata
           href: about-the-wireless-hosted-network.md
-    - name: Uso del WiFi nativo
+    - name: Uso del Wi-Fi nativo
       href: using-native-wifi.md
       items:
-        - name: API dell'interfaccia utente wireless
+        - name: API Interfaccia utente wireless
           href: wireless-user-interface-apis.md
-        - name: Esempio di API WiFi nativa
+        - name: Esempio di API Wi-Fi nativa
           href: native-wifi-api-sample.md
-        - name: Uso delle funzioni Wi-Fi dirette
+        - name: Uso delle Wi-Fi Direct
           href: using-the-wi-fi-direct-api.md
-        - name: 'Usa rete ospitata senza fili, condivisione connessione Internet'
+        - name: 'Usa rete ospitata wireless, Condivisione connessione Internet'
           href: using-hosted-network-and-internet-connection-sharing.md
         - name: Effettuare il provisioning di un profilo Wi-Fi tramite un sito Web
           href: prov-wifi-profile-via-website.md
-        - name: Esempio di rete wireless ospitata
+        - name: Esempio di rete ospitata wireless
           href: wireless-hosted-network-sample.md
         - name: Esempi di profili cablati
           href: wired-profile-samples.md
           items:
-            - name: Esempio di profilo certificato del computer
+            - name: Esempio di profilo certificato computer
               href: machine-certificate-profile-sample.md
             - name: Esempio di profilo PEAP
               href: peap-profile-sample.md
@@ -47,30 +47,30 @@
         - name: Esempi di profili wireless
           href: wireless-profile-samples.md
           items:
-            - name: Esempio di profilo bootstrap
+            - name: Bootstrap Profile Sample
               href: bootstrap-profile-sample.md
             - name: Esempio di profilo FIPS
               href: fips-profile-sample.md
-            - name: Esempio di profilo non broadcast
+            - name: Esempio di profilo non di trasmissione
               href: non-broadcast-profile-sample.md
-            - name: Esempio di profilo Single Sign-On
+            - name: Esempio di profilo Sign-On singolo
               href: single-sign-on-profile-sample.md
-            - name: Esempio di WPA-Enterprise con PEAP-MSCHAPv2 profile
+            - name: WPA-Enterprise esempio di PEAP-MSCHAPv2 profilo
               href: wpa-enterprise-with-peap-mschapv2-profile-sample.md
-            - name: Esempio di WPA-Enterprise con il profilo TLS
+            - name: WPA-Enterprise esempio di profilo TLS
               href: wpa-enterprise-with-tls-profile-sample.md
-            - name: Esempio di profilo di WPA-Personal
+            - name: WPA-Personal profilo di esempio
               href: wpa-personal-profile-sample.md
-            - name: Esempio di WPA2-Enterprise con PEAP-MSCHAPv2 profile
+            - name: WPA2-Enterprise esempio di PEAP-MSCHAPv2 profilo
               href: wpa2-enterprise-with-peap-mschapv2-profile-sample.md
-            - name: Esempio di WPA2-Enterprise con il profilo TLS
+            - name: WPA2-Enterprise esempio di profilo TLS
               href: wpa2-enterprise-with-tls-profile-sample.md
-            - name: Esempio di profilo di WPA2-Personal
+            - name: WPA2-Personal profilo di esempio
               href: wpa2-personal-profile-sample.md
-    - name: Riferimento a Wi-Fi nativo
+    - name: Informazioni di riferimento sul Wi-Fi nativo
       href: native-wifi-reference.md
       items:
-        - name: Enumerazioni Wi-Fi Native
+        - name: Enumerazioni Wi-Fi native
           href: native-wifi-enumerations.md
           items:
             - name: WFD_DISPLAY_SINK_NOTIFICATION_TYPE
@@ -135,7 +135,7 @@
               href: /windows/win32/api/wlanapi/ne-wlanapi-wlan_power_setting-r1
             - name: WLAN_SECURABLE_OBJECT
               href: /windows/win32/api/wlanapi/ne-wlanapi-wlan_securable_object
-        - name: Funzioni WiFi Native
+        - name: Funzioni Wi-Fi native
           href: native-wifi-functions.md
           items:
             - name: WFD_DISPLAY_SINK_NOTIFICATION_CALLBACK
@@ -250,7 +250,7 @@
               href: /windows/win32/api/Wlanapi/nf-wlanapi-wlansetautoconfigparameter
             - name: WlanSetFilterList
               href: /windows/win32/api/wlanapi/nf-wlanapi-wlansetfilterlist
-            - name: WlanSetInterface
+            - name: Interfaccia WlanSet
               href: /windows/win32/api/Wlanapi/nf-wlanapi-wlansetinterface
             - name: WlanSetProfile
               href: /windows/win32/api/wlanapi/nf-wlanapi-wlansetprofile
@@ -270,7 +270,7 @@
               href: /windows/win32/api/wlanapi/nf-wlanapi-wlansetsecuritysettings
             - name: WlanUIEditProfile
               href: /windows/win32/api/wlanapi/nf-wlanapi-wlanuieditprofile
-        - name: Strutture Wi-Fi Native
+        - name: Strutture Wi-Fi native
           href: native-wifi-structures.md
           items:
             - name: WFD_DISPLAY_SINK_NOTIFICATION
@@ -377,18 +377,18 @@
               href: /windows/win32/api/wlanapi/ns-wlanapi-wlan_security_attributes
             - name: WLAN_STATISTICS
               href: /windows/win32/api/wlanapi/ns-wlanapi-wlan_statistics
-        - name: Profilo XML Schema
+        - name: Schema XML del profilo
           href: profile-xml-schema.md
           items:
-            - name: Compatibilità del profilo wireless
+            - name: Compatibilità dei profili wireless
               href: wireless-profile-compatibility.md
-            - name: Schema LAN_policy
+            - name: LAN_policy Schema
               href: lan-policyschema-schema.md
               items:
-                - name: Elementi dello schema LAN_policy
+                - name: LAN_policy di schema
                   href: lan-policyschema-elements.md
                   items:
-                    - name: Description (LANPolicy)-elemento
+                    - name: Elemento description (LANPolicy)
                       href: lan-policyschema-description-lanpolicy-element.md
                     - name: Elemento enableAutoConfig (globalFlags)
                       href: lan-policyschema-enableautoconfig-globalflags-element.md
@@ -396,32 +396,32 @@
                       href: lan-policyschema-globalflags-lanpolicy-element.md
                     - name: Elemento LANPolicy
                       href: lan-policyschema-lanpolicy-element.md
-                    - name: Elemento Name (LANPolicy)
+                    - name: Elemento name (LANPolicy)
                       href: lan-policyschema-name-lanpolicy-element.md
-                    - name: Elemento Profiler (LANPolicy)
+                    - name: Elemento profileList (LANPolicy)
                       href: lan-policyschema-profilelist-lanpolicy-element.md
-                - name: Tipi semplici dello schema LAN_policy
+                - name: LAN_policy tipi semplici dello schema
                   href: lan-policyschema-simple-types.md
                   items:
                     - name: Tipo semplice nameType
                       href: lan-policyschema-nametype-simpletype.md
-            - name: Schema LAN_profile
+            - name: LAN_profile Schema
               href: lan-profileschema-schema.md
               items:
-                - name: Elementi dello schema LAN_profile
+                - name: LAN_profile Schema Elements
                   href: lan-profileschema-elements.md
                   items:
                     - name: Elemento LANProfile
                       href: lan-profileschema-lanprofile-element.md
                     - name: Elemento MSM (LANProfile)
                       href: lan-profileschema-msm-lanprofile-element.md
-                    - name: Elemento OneXEnabled (Security)
+                    - name: Elemento OneXEnabled (security)
                       href: lan-profileschema-onexenabled-security-element.md
-                    - name: Elemento OneXEnforced (Security)
+                    - name: Elemento OneXEnforced (security)
                       href: lan-profileschema-onexenforced-security-element.md
-                    - name: Security (MSM)-elemento
+                    - name: Elemento security (MSM)
                       href: lan-profileschema-security-msm-element.md
-            - name: Schema OneX
+            - name: OneX Schema
               href: onexschema-schema.md
               items:
                 - name: Elementi dello schema OneX
@@ -451,145 +451,145 @@
                       href: onexschema-startperiod-onex-element.md
                     - name: Elemento supplicantMode (OneX)
                       href: onexschema-supplicantmode-onex-element.md
-                    - name: Elemento Type (singleSignOn)
+                    - name: Elemento type (singleSignOn)
                       href: onexschema-type-singlesignon-element.md
                     - name: Elemento userBasedVirtualLan (singleSignOn)
                       href: onexschema-userbasedvirtuallan-singlesignon-element.md
-            - name: Schema WLAN_policy
+            - name: WLAN_policy Schema
               href: wlan-policyschema-schema.md
               items:
-                - name: Elementi dello schema WLAN_policy
+                - name: WLAN_policy elementi dello schema
                   href: wlan-policyschema-elements.md
                   items:
                     - name: Elemento allowEveryoneToCreateAllUserProfiles (globalFlags)
                       href: wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md
-                    - name: Elemento allow (networkFilter)
+                    - name: Elemento allowList (networkFilter)
                       href: wlan-policyschema-allowlist-networkfilter-element.md
-                    - name: Elemento Blocker (networkFilter)
+                    - name: Elemento blockList (networkFilter)
                       href: wlan-policyschema-blocklist-networkfilter-element.md
                     - name: Elemento denyAllESS (networkFilter)
                       href: wlan-policyschema-denyalless-networkfilter-element.md
                     - name: Elemento denyAllIBSS (networkFilter)
                       href: wlan-policyschema-denyallibss-networkfilter-element.md
-                    - name: Description (WLANPolicy)-elemento
+                    - name: Elemento description (WLANPolicy)
                       href: wlan-policyschema-description-wlanpolicy-element.md
                     - name: Elemento enableAutoConfig (globalFlags)
                       href: wlan-policyschema-enableautoconfig-globalflags-element.md
                     - name: Elemento globalFlags (WLANPolicy)
                       href: wlan-policyschema-globalflags-wlanpolicy-element.md
-                    - name: Elemento Name (WLANPolicy)
+                    - name: Elemento name (WLANPolicy)
                       href: wlan-policyschema-name-wlanpolicy-element.md
                     - name: Elemento networkFilter (WLANPolicy)
                       href: wlan-policyschema-networkfilter-wlanpolicy-element.md
-                    - name: Elemento NetworkName (networkItemType)
+                    - name: Elemento networkName (networkItemType)
                       href: wlan-policyschema-networkname-networkitemtype-element.md
-                    - name: Elemento Network (Consenti)
+                    - name: Elemento network (allowList)
                       href: wlan-policyschema-network-allowlist-element.md
-                    - name: Elemento Network (Blocker)
+                    - name: Elemento network (blockList)
                       href: wlan-policyschema-network-blocklist-element.md
                     - name: Elemento networkType (networkItemType)
                       href: wlan-policyschema-networktype-networkitemtype-element.md
-                    - name: Elemento Profiler (WLANPolicy)
+                    - name: Elemento profileList (WLANPolicy)
                       href: wlan-policyschema-profilelist-wlanpolicy-element.md
                     - name: Elemento showDeniedNetwork (globalFlags)
                       href: wlan-policyschema-showdeniednetwork-globalflags-element.md
                     - name: Elemento WLANPolicy
                       href: wlan-policyschema-wlanpolicy-element.md
-                - name: Tipi semplici dello schema WLAN_policy
+                - name: WLAN_policy tipi semplici dello schema
                   href: wlan-policyschema-simple-types.md
                   items:
-                    - name: Tipo semplice nameType
+                    - name: tipo semplice nameType
                       href: wlan-policyschema-nametype-simpletype.md
                     - name: Tipo semplice networkNameType
                       href: wlan-policyschema-networknametype-simpletype.md
                     - name: Tipo semplice networkTypeType
                       href: wlan-policyschema-networktypetype-simpletype.md
-                - name: Tipi complessi dello schema WLAN_policy
+                - name: WLAN_policy complessi dello schema
                   href: wlan-policyschema-complex-types.md
                   items:
                     - name: Tipo complesso networkItemType
                       href: wlan-policyschema-networkitemtype-complextype.md
-            - name: Schema WLAN_profile
+            - name: WLAN_profile Schema
               href: wlan-profileschema-schema.md
               items:
-                - name: Elementi dello schema WLAN_profile
+                - name: WLAN_profile elementi dello schema
                   href: wlan-profileschema-elements.md
                   items:
-                    - name: Elemento authEncryption (Security)
+                    - name: Elemento authEncryption (security)
                       href: wlan-profileschema-authencryption-security-element.md
-                    - name: Authentication (authEncryption)-elemento
+                    - name: Elemento authentication (authEncryption)
                       href: wlan-profileschema-authentication-authencryption-element.md
-                    - name: Elemento autoswitch (WLANProfile)
+                    - name: Elemento autoSwitch (WLANProfile)
                       href: wlan-profileschema-autoswitch-wlanprofile-element.md
                     - name: Elemento connectionMode (WLANProfile)
                       href: wlan-profileschema-connectionmode-wlanprofile-element.md
                     - name: Elemento connectionType (WLANProfile)
                       href: wlan-profileschema-connectiontype-wlanprofile-element.md
-                    - name: Connectivity (IHV)-elemento
+                    - name: Elemento connectivity (IHV)
                       href: wlan-profileschema-connectivity-ihv-element.md
-                    - name: connettività (MSM)-elemento
+                    - name: Elemento connectivity (MSM)
                       href: wlan-profileschema-connectivity-msm-element.md
                     - name: Elemento DomainName (Hotspot2)
                       href: wlan-profileschema-hotspot2-domainname-element.md
-                    - name: Elemento Encryption (authEncryption)
+                    - name: Elemento encryption (authEncryption)
                       href: wlan-profileschema-encryption-authencryption-element.md
                     - name: Elemento FIPSMode (authEncryption)
                       href: wlan-profileschema-fipsmode-authencryption-element.md
-                    - name: Hex (SSID) (elemento)
+                    - name: Elemento hex (SSID)
                       href: wlan-profileschema-hex-ssid-element.md
                     - name: Elemento IHV (WLANProfile)
                       href: wlan-profileschema-ihv-wlanprofile-element.md
                     - name: Elemento Hotspot2
                       href: wlan-profileschema-hotspot2-element.md
-                    - name: Elemento index (Security)
+                    - name: Elemento keyIndex (security)
                       href: wlan-profileschema-keyindex-security-element.md
-                    - name: Elemento portamateriali (sharedKey)
+                    - name: Elemento keyMaterial (sharedKey)
                       href: wlan-profileschema-keymaterial-sharedkey-element.md
-                    - name: Elemento Type (sharedKey)
+                    - name: Elemento keyType (sharedKey)
                       href: wlan-profileschema-keytype-sharedkey-element.md
                     - name: Elemento MSM (WLANProfile)
                       href: wlan-profileschema-msm-wlanprofile-element.md
                     - name: Elemento NAIRealm (Hotspot2)
                       href: wlan-profileschema-hotspot2-nairealm-element.md
-                    - name: Elemento Name (SSID)
+                    - name: Elemento name (SSID)
                       href: wlan-profileschema-name-ssid-element.md
-                    - name: Elemento Name (WLANProfile)
+                    - name: Elemento name (WLANProfile)
                       href: wlan-profileschema-name-wlanprofile-element.md
                     - name: Elemento Network3GPP (Hotspot2)
                       href: wlan-profileschema-hotspot2-network3gpp-element.md
-                    - name: Elemento nonbroadcast (SSIDConfig)
+                    - name: Elemento nonBroadcast (SSIDConfig)
                       href: wlan-profileschema-nonbroadcast-ssidconfig-element.md
                     - name: Elemento OUIHeader (IHV)
                       href: wlan-profileschema-ouiheader-ihv-element.md
                     - name: Elemento OUI (OUIHeader)
                       href: wlan-profileschema-oui-ouiheader-element.md
-                    - name: Elemento phyType (Connectivity)
+                    - name: Elemento phyType (connettività)
                       href: wlan-profileschema-phytype-connectivity-element.md
-                    - name: Elemento PMKCacheMode (Security)
+                    - name: Elemento PMKCacheMode (security)
                       href: wlan-profileschema-pmkcachemode-security-element.md
-                    - name: Elemento PMKCacheSize (Security)
+                    - name: Elemento PMKCacheSize (security)
                       href: wlan-profileschema-pmkcachesize-security-element.md
-                    - name: Elemento PMKCacheTTL (Security)
+                    - name: Elemento PMKCacheTTL (security)
                       href: wlan-profileschema-pmkcachettl-security-element.md
-                    - name: Elemento preAuthMode (Security)
+                    - name: Elemento preAuthMode (security)
                       href: wlan-profileschema-preauthmode-security-element.md
-                    - name: Elemento preAuthThrottle (Security)
+                    - name: Elemento preAuthThrottle (security)
                       href: wlan-profileschema-preauththrottle-security-element.md
-                    - name: Elemento Protected (sharedKey)
+                    - name: Elemento protected (sharedKey)
                       href: wlan-profileschema-protected-sharedkey-element.md
                     - name: Elemento RoamingConsortium (Hotspot2)
                       href: wlan-profileschema-hotspot2-roamingconsortium-element.md
-                    - name: Security (IHV)-elemento
+                    - name: Elemento security (IHV)
                       href: wlan-profileschema-security-ihv-element.md
-                    - name: Security (MSM)-elemento
+                    - name: Elemento security (MSM)
                       href: wlan-profileschema-security-msm-element.md
-                    - name: Elemento sharedKey (Security)
+                    - name: Elemento sharedKey (security)
                       href: wlan-profileschema-sharedkey-security-element.md
                     - name: Elemento SSIDConfig (WLANProfile)
                       href: wlan-profileschema-ssidconfig-wlanprofile-element.md
                     - name: Elemento SSID (SSIDConfig)
                       href: wlan-profileschema-ssid-ssidconfig-element.md
-                    - name: Elemento Type (OUIHeader)
+                    - name: Elemento type (OUIHeader)
                       href: wlan-profileschema-type-ouiheader-element.md
                     - name: Elemento useMSOneX (IHV)
                       href: wlan-profileschema-usemsonex-ihv-element.md
@@ -597,12 +597,12 @@
                       href: wlan-profileschema-useonex-authencryption-element.md
                     - name: Elemento WLANProfile
                       href: wlan-profileschema-wlanprofile-element.md
-                - name: Tipi semplici dello schema WLAN_profile
+                - name: WLAN_profile tipi semplici dello schema
                   href: wlan-profileschema-simple-types.md
                   items:
-                    - name: Tipo semplice nameType
+                    - name: tipo semplice nameType
                       href: wlan-profileschema-nametype-simpletype.md
-    - name: Riferimento ad hoc senza fili
+    - name: Riferimento ad hoc wireless
       href: wireless-ad-hoc-reference.md
       items:
         - name: Enumerazioni ad hoc wireless
@@ -656,7 +656,7 @@
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocmanager-getienumdot11adhocinterfaces
                 - name: Metodo GetIEnumDot11AdHocNetworks
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocmanager-getienumdot11adhocnetworks
-                - name: Metodo getnetwork
+                - name: Metodo GetNetwork
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocmanager-getnetwork
             - name: IDot11AdHocManagerNotificationSink
               href: /windows/win32/api/adhoc/nn-adhoc-idot11adhocmanagernotificationsink
@@ -672,17 +672,17 @@
             - name: IDot11AdHocNetwork
               href: /windows/win32/api/adhoc/nn-adhoc-idot11adhocnetwork
               items:
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-connect
                 - name: Metodo DeleteProfile
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-deleteprofile
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-disconnect
                 - name: Metodo GetContextGuid
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getcontextguid
                 - name: Metodo GetInterface
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getinterface
-                - name: Metodo getprofilename
+                - name: Metodo GetProfileName
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getprofilename
                 - name: Metodo GetSecuritySetting
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getsecuritysetting
@@ -690,7 +690,7 @@
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getsignalquality
                 - name: Metodo GetSignature
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getsignature
-                - name: Metodo getssid
+                - name: Metodo GetSSID
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getssid
                 - name: Metodo GetStatus
                   href: /windows/win32/api/adhoc/nf-adhoc-idot11adhocnetwork-getstatus
@@ -743,10 +743,10 @@
                   href: /windows/win32/api/adhoc/nf-adhoc-ienumdot11adhocsecuritysettings-reset
                 - name: Metodo Skip
                   href: /windows/win32/api/adhoc/nf-adhoc-ienumdot11adhocsecuritysettings-skip
-    - name: Riferimento alla configurazione senza fili zero
+    - name: Informazioni di riferimento su Wireless Zero Configuration
       href: wireless-zero-configuration-reference.md
       items:
-        - name: Funzioni di configurazione senza fili zero
+        - name: Funzioni wireless zero configuration
           href: wireless-zero-configuration-functions.md
           items:
             - name: WZCEapolGetInterfaceParams
@@ -757,7 +757,7 @@
               href: wzcqueryinterface.md
             - name: WZCRefreshInterface
               href: wzcrefreshinterface.md
-        - name: Strutture di configurazione senza fili zero
+        - name: Strutture wireless zero configuration
           href: wireless-zero-configuration-structures.md
           items:
             - name: EAPOL_INTF_PARAMS

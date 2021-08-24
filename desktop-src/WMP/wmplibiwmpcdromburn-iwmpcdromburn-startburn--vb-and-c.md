@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMPCdromBurn startBurn
-description: Il metodo startBurn brucia il CD.
+title: Metodo startBurn IWMPCdromBurn
+description: Il metodo startBurn masterizza il CD.
 ms.assetid: e852c011-5f54-469f-aead-37fa711ef876
 keywords:
 - Metodo startBurn Windows Media Player
 - Metodo startBurn Windows Media Player, interfaccia IWMPCdromBurn
-- Interfaccia IWMPCdromBurn Windows Media Player, metodo startBurn
+- Interfaccia IWMPCdromBurn Windows Media Player , metodo startBurn
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe185d8993286e4be3935b43f6c1e9757623309d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7806501a619d6172d9f1ce0715045c822b30326c2b59c268f432708ea13923ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761071"
 ---
-# <a name="iwmpcdromburnstartburn-method"></a>Metodo IWMPCdromBurn:: startBurn
+# <a name="iwmpcdromburnstartburn-method"></a>Metodo IWMPCdromBurn::startBurn
 
-Il metodo **startBurn** brucia il CD.
+Il **metodo startBurn** masterizza il CD.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,9 +55,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, il valore di **burnstate** deve essere WmpbsReady o wmpbsStopped.
+Il valore **di burnstate** deve essere wmpbsReady o wmpbsStopped prima di chiamare questo metodo.
 
-Questo metodo non funzionerà se l'unità CD non è un masterizzatore o se il disco nell'unità non è scrivibile. Utilizzare **l'** oggetto per determinare se è possibile masterizzare un CD.
+Questo metodo non funziona se l'unità CD non è un masterizzatore o se il disco nell'unità non è scrivibile. Usare **isAvailable per** determinare se un CD può essere masterizzato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,13 +78,13 @@ Questo metodo non funzionerà se l'unità CD non è un masterizzatore o se il di
 [**Interfaccia IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. burnState (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
+[**IWMPCdromBurn.burnState (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. disavailable (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
+[**IWMPCdromBurn.isAvailable (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. stopBurn (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
+[**IWMPCdromBurn.stopBurn (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: d9d0e14a-f68c-4b3d-b91d-a3fa824031ea
 title: Estrazione di file da un archivio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aeb7089ded913a874a41c458bc99a8546f63bad6
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 09b7ed62e9455b1d9490af67c2071f6a4380d0a11f7d2b474222afb98ddac229
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758711"
 ---
 # <a name="extracting-files-from-a-cabinet"></a>Estrazione di file da un archivio
 

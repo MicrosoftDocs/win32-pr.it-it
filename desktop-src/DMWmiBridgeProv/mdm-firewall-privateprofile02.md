@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Firewall_PrivateProfile02
-description: La \_ classe PrivateProfile02 del firewall MDM \_ viene usata per configurare le impostazioni di Windows Defender Firewall.
+title: MDM_Firewall_PrivateProfile02 classe
+description: La classe MDM \_ Firewall \_ PrivateProfile02 viene usata per configurare le impostazioni Windows Defender firewall MDM.
 ms.assetid: 9d25c181-e9a8-4f63-b276-b22676842667
 keywords:
-- Classe MDM_Firewall_PrivateProfile02
-- Classe MDM_Firewall_PrivateProfile02, descritta
+- MDM_Firewall_PrivateProfile02 classe
+- MDM_Firewall_PrivateProfile02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57812ef7c8550937b009e4ff4855321983391585
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21c1ce2f2ffd9c06a9c6ba07766e212d1896a6851d3bd1a578acc490b05421df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815801"
 ---
-# <a name="mdm_firewall_privateprofile02-class"></a>\_Classe PrivateProfile02 del firewall MDM \_
+# <a name="mdm_firewall_privateprofile02-class"></a>Classe \_ \_ PrivateProfile02 del firewall MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe PrivateProfile02 del firewall MDM \_ viene usata per configurare le impostazioni di Windows Defender Firewall.
+La classe MDM \_ Firewall \_ PrivateProfile02 viene usata per configurare le impostazioni Windows Defender firewall MDM.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -57,13 +57,13 @@ class MDM_Firewall_PrivateProfile02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ PrivateProfile02 del firewall MDM** presenta questi tipi di membri:
+La **classe Mdm Firewall \_ \_ PrivateProfile02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ PrivateProfile02 del firewall MDM** presenta queste proprietà.
+La **classe Mdm Firewall \_ \_ PrivateProfile02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ La **classe \_ \_ PrivateProfile02 del firewall MDM** presenta queste proprietà
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -84,7 +84,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -95,7 +95,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -117,7 +117,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -128,7 +128,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -139,7 +139,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -150,7 +150,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -161,7 +161,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -172,7 +172,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -183,7 +183,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -191,7 +191,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -202,10 +202,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -222,7 +222,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -233,10 +233,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                     |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

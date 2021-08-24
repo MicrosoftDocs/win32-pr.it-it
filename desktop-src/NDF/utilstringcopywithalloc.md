@@ -1,9 +1,9 @@
 ---
-title: Funzione UtilStringCopyWithAlloc (Ndattributils. h)
+title: Funzione UtilStringCopyWithAlloc (Ndattributils.h)
 description: Alloca e copia una stringa di origine.
 ms.assetid: e1400ae1-0edd-4b59-af03-3da1b9d7073b
 keywords:
-- UtilStringCopyWithAlloc funzione NDF
+- Funzione UtilStringCopyWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b68bd1815ff09473f0431dde19a12a87603a9dec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3654fa5eefd45a51d963325e10fbcba765420afe25a5c47a058bbaf4e4093ef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801531"
 ---
-# <a name="utilstringcopywithalloc-function"></a>UtilStringCopyWithAlloc (funzione)
+# <a name="utilstringcopywithalloc-function"></a>Funzione UtilStringCopyWithAlloc
 
-La funzione **UtilStringCopyWithAlloc** alloca e copia una stringa di origine.
+La **funzione UtilStringCopyWithAlloc** alloca e copia una stringa di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,25 +42,25 @@ HRESULT UtilStringCopyWithAlloc(
 
 <dl> <dt>
 
-*Buffer* \[ out\]
+*Buffer* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-Posizione in cui è archiviato il puntatore alla memoria allocata. Quando non è più necessario, è necessario rilasciarlo con [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree). Questo buffer è sempre con terminazione null.
+Posizione in cui è archiviato il puntatore alla memoria allocata. Quando non è più necessario, deve essere rilasciato con [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) Questo buffer ha sempre terminazione Null.
 
 </dd> <dt>
 
-*BufferMax* \[ in\]
+*BufferMax* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Numero massimo di caratteri da leggere dall' *origine*.
+Numero massimo di caratteri da leggere da *Source.*
 
 </dd> <dt>
 
-*Origine* \[ dati in\]
+*Origine* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -73,13 +73,13 @@ Stringa da copiare.
 
 Tipo: **HRESULT**
 
-I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
+I valori restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata.<br/>                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                                |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o più parametri non sono stati specificati correttamente.<br/> |
 
 
@@ -92,9 +92,9 @@ I valori restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

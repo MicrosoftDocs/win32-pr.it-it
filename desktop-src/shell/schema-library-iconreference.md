@@ -1,5 +1,5 @@
 ---
-description: L' <iconReference> elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
+description: <iconReference>L'elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
 title: Elemento iconReference (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 1f307ecd4fa523cc28881164869dca3329dfd698
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84e200fa4969dc376661bd32851296d80c74120939afc995754cb2937ea04be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820231"
 ---
 # <a name="iconreference-element-library-schema"></a>Elemento iconReference (schema della libreria)
 
-L' <iconReference> elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
+<iconReference>L'elemento specifica un'icona personalizzata per questa libreria. Questo elemento è facoltativo e non dispone di attributi o elementi figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ L' <iconReference> elemento specifica un'icona personalizzata per questa libreri
 
 ## <a name="remarks"></a>Commenti
 
-Il riferimento all'icona deve essere specificato in un formato appropriato per la funzione [**PathParseIconLocation**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) . Ad esempio: `ModuleFileName,IconResourceIndex`.
+Il riferimento all'icona deve essere specificato in un formato adatto per la [**funzione PathParseIconLocation.**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) Ad esempio: `ModuleFileName,IconResourceIndex`.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -59,7 +59,7 @@ Il riferimento all'icona deve essere specificato in un formato appropriato per l
 [Elemento libraryDescription (schema della libreria)](schema-librarydescription.md)
 </dt> <dt>
 
-[Elemento Name (schema della libreria)](schema-library-name.md)
+[Elemento name (schema della libreria)](schema-library-name.md)
 </dt> <dt>
 
 [Elemento ownerSID (schema della libreria)](schema-library-ownersid.md)
@@ -77,7 +77,7 @@ Il riferimento all'icona deve essere specificato in un formato appropriato per l
 [Elemento templateInfo (schema della libreria)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[Elemento Version (schema della libreria)](schema-library-version.md)
+[Elemento version (schema della libreria)](schema-library-version.md)
 </dt> </dl>
 
  
