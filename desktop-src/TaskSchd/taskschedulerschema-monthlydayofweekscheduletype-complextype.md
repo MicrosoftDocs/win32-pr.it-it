@@ -3,7 +3,7 @@ title: Tipo complesso monthlyDayOfWeekScheduleType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento ScheduleByMonthDayOfWeek.
 ms.assetid: fb4e5ba3-592b-47a4-bedf-5181d2b7a50f
 keywords:
-- Utilità di pianificazione di tipo complesso monthlyDayOfWeekScheduleType
+- Tipo complesso monthlyDayOfWeekScheduleType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 782715aed5cbf59a98e996bfa18fdd7c1022227a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0e15a697c07de4df59f7762e4b6dc0d167b1fff8ab7477f77f5e59d6b654f7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575201"
 ---
 # <a name="monthlydayofweekscheduletype-complex-type"></a>Tipo complesso monthlyDayOfWeekScheduleType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento ScheduleByMonthDayOfWeek.**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="monthlyDayOfWeekScheduleType">
@@ -60,8 +60,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -69,7 +69,7 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

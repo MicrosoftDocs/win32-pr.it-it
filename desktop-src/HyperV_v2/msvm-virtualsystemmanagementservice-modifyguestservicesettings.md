@@ -1,7 +1,7 @@
 ---
-description: Modifica le impostazioni del servizio Guest.
+description: Modifica le impostazioni del servizio guest.
 ms.assetid: a308aa59-bd43-4dd5-a690-c435102e8043
-title: Metodo ModifyGuestServiceSettings della classe Msvm_VirtualSystemManagementService
+title: Metodo ModifyGuestServiceSettings della Msvm_VirtualSystemManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: bc0af24346c445022ba3f8725ea6102c61dc9c69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 514e24f49b2f0b1909e59514a86848dde2497b2f5228b2cfb7cac7fd141113ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789181"
 ---
-# <a name="modifyguestservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyGuestServiceSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="modifyguestservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyGuestServiceSettings della classe Msvm \_ VirtualSystemManagementService
 
-Modifica le impostazioni del servizio Guest.
+Modifica le impostazioni del servizio guest.
 
-Quando applicato alle parti di una configurazione di sistema virtuale "corrente", è possibile che vengano modificati i servizi guest di un effetto collaterale del sistema virtuale attivo.
+Se applicato a parti di una configurazione di sistema virtuale "corrente", come effetto collaterale i servizi guest del sistema virtuale attivo possono essere modificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,21 +43,21 @@ uint32 ModifyGuestServiceSettings(
 
 <dl> <dt>
 
-*GuestServiceSettings* \[ in\]
+*GuestServiceSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice che contiene le nuove impostazioni del servizio Guest.
+Matrice che contiene le nuove impostazioni del servizio guest.
 
 </dd> <dt>
 
-*ResultingGuestServiceSettings* \[ out\]
+*ResultingGuestServiceSettings* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione riesce, contiains una matrice di [**\_ SettingData CIM**](cim-settingdata.md) che fanno riferimento alle impostazioni del servizio Guest risultante.
+In caso di esito positivo, contiene una matrice di [**CIM \_ SettingData**](cim-settingdata.md) che fanno riferimento alle impostazioni del servizio guest risultanti.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -70,13 +70,13 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -91,16 +91,16 @@ Questo metodo restituisce uno dei valori seguenti:
 **Parametri incompatibili** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -109,10 +109,10 @@ Questo metodo restituisce uno dei valori seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,7 +121,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 5df10efd-7055-43fa-881f-67eb5fd6adcf
 title: Evento InkPicture.TabletAdded (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81c5121b668f27034a04230311ee88ebb7564802
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 071fea9895c8c89653012cfa6df5ff28c6637de55d896a705a580f8648890812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712262"
 ---
 # <a name="inkpicturetabletadded-event"></a>Evento InkPicture.TabletAdded
 
@@ -51,7 +51,7 @@ Questo metodo di evento è definito nelle interfacce **\_ IInkCollectorEvents**,
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

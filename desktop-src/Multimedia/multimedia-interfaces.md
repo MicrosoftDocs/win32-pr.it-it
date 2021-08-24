@@ -3,23 +3,23 @@ title: Interfacce multimediali
 description: Interfacce multimediali
 ms.assetid: fe57d8b4-bc39-4b8d-bb57-d81c32c9f578
 keywords:
-- Multimedia di Windows, interfacce
-- Multimedia, interfacce
-- riferimenti multimediali, interfacce
-- informazioni di riferimento per Multimedia, interfacce
+- Windows multimediali, interfacce
+- multimediali, interfacce
+- informazioni di riferimento multimediali, interfacce
+- informazioni di riferimento per elementi multimediali, interfacce
 - interfacce multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa309e43fed00ae69853f58af9fc568e60f2a922
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8f78e967635aca888dcea4a92068f12f9b20ad0e6ea728642fa01ae2d153a9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806781"
 ---
 # <a name="multimedia-interfaces"></a>Interfacce multimediali
 
-Con i contenuti multimediali vengono usate le interfacce seguenti.
+Le interfacce seguenti vengono usate con elementi multimediali.
 
 -   [**IAVIEditStream**](/windows/desktop/api/Vfw/nn-vfw-iavieditstream)
 -   [**IAVIFile**](/windows/desktop/api/Vfw/nn-vfw-iavifile)
@@ -31,12 +31,12 @@ Con i contenuti multimediali vengono usate le interfacce seguenti.
 
 <dl> <dt>
 
-[Riferimenti multimediali](multimedia-reference.md)
+[Informazioni di riferimento sul contenuto multimediale](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Determina se un raggio si interseca con la mesh.
+description: Determina se un raggio si interseca con questa mesh.
 ms.assetid: 74565d4a-94e6-4faa-bf70-9c1b35e5e5d8
 title: Metodo ID3DX10Mesh::Intersect (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8ceed03ab21debf61371da9e53b5150d2dc83e4a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1693db027baad13d69c43e394407ed8eb037d2dbb95eb217ccca473d1f91d08a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634551"
 ---
-# <a name="id3dx10meshintersect-method"></a>Metodo ID3DX10Mesh:: Intersect
+# <a name="id3dx10meshintersect-method"></a>Metodo ID3DX10Mesh::Intersect
 
-Determina se un raggio si interseca con la mesh.
+Determina se un raggio si interseca con questa mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,75 +47,75 @@ HRESULT Intersect(
 
 <dl> <dt>
 
-*pRayPos* \[ in\]
+*pRayPos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , che specifica il punto in cui inizia il raggio.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che specifica il punto in cui inizia il raggio.
 
 </dd> <dt>
 
-*pRayDir* \[ in\]
+*pRayDir* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , che specifica la direzione del raggio.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3d10-d3dxvector3.md) che specifica la direzione del raggio.
 
 </dd> <dt>
 
-*pHitCount* \[ in\]
+*pHitCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Numero di volte in cui il raggio è stato intersecato con la mesh.
+Numero di volte in cui il raggio si interseca con la mesh.
 
 </dd> <dt>
 
-*pFaceIndex* \[ in\]
+*pFaceIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntatore a un valore di indice della faccia più vicina all'origine del raggio, se pHit è **true**.
+Puntatore a un valore di indice del viso più vicino all'origine del raggio, se pHit è **TRUE.**
 
 </dd> <dt>
 
-unità di *elaborazione* \[ in\]
+*pU* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntatore a una coordinata baricentrica hit, U.
+Puntatore a una coordinata di hit barycentric, U.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntatore a una coordinata baricentrica hit, V.
+Puntatore a una coordinata di hit barycentric, V.
 
 </dd> <dt>
 
-*pDist* \[ in\]
+*pDist* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntatore alla distanza del parametro di intersezione del raggio.
+Puntatore a una distanza del parametro di intersezione dei raggi.
 
 </dd> <dt>
 
-*ppAllHits* \[ out\]
+*ppAllHits* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntatore a un' [**interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)contenente una matrice di strutture [**di \_ \_ informazioni di intersezione d3dx10**](d3dx10-intersect-info.md) . Si tratta di un elenco di tutti i riscontri che si sono verificati nel test di intersezione.
+Puntatore a [**un'interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)contenente una matrice [**di strutture D3DX10 \_ INTERSECT \_ INFO.**](d3dx10-intersect-info.md) Questo è un elenco di tutti i riscontri che si sono verificati nel test di intersezione.
 
 </dd> </dl>
 
@@ -123,17 +123,17 @@ Puntatore a un' [**interfaccia ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa API fornisce un modo per comprendere i punti in e intorno a un triangolo, indipendentemente dalla posizione in cui si trova effettivamente il triangolo. Questa funzione restituisce il punto risultante utilizzando l'equazione seguente: V1 + U (v2-v1) + V (V3-V1).
+Questa API consente di comprendere i punti all'interno e intorno a un triangolo, indipendentemente dalla posizione in cui si trova effettivamente il triangolo. Questa funzione restituisce il punto risultante usando l'equazione seguente: V1 + U(V2 - V1) + V(V3 - V1).
 
-Qualsiasi punto nel V1V2V3 del piano può essere rappresentato dalla coordinata baricentrica (U, V). Il parametro U controlla la quantità di V2 che viene ponderata nel risultato e il parametro V controlla la quantità di V3 che viene ponderata nel risultato. Infine, il valore \[ 1-(U + V) controlla la \] quantità di V1 che viene ponderata nel risultato.
+Qualsiasi punto nel piano V1V2V3 può essere rappresentato dalla coordinata barycentric (U,V). Il parametro U controlla quanto V2 viene ponderato nel risultato e il parametro V controlla quanto V3 viene ponderato nel risultato. Infine, il valore 1 - (U + V) controlla quanto \[ \] V1 viene ponderato nel risultato.
 
-Le coordinate baricentrica sono costituite da coordinate generali. In questo contesto, l'utilizzo delle coordinate baricentrica rappresenta una modifica nei sistemi di coordinate. Ciò che è valido per le coordinate cartesiane è valido per le coordinate baricentrica.
+Le coordinate barycentriche sono una forma di coordinate generali. In questo contesto, l'uso di coordinate barycentrice rappresenta una modifica nei sistemi di coordinate. Ciò che vale per le coordinate cartesiane è vero per le coordinate barycentriche.
 
-Le coordinate baricentrica definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate baricentrica, vedere [la descrizione delle coordinate baricentrica di articolo MathWorld](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -141,8 +141,8 @@ Le coordinate baricentrica definiscono un punto all'interno di un triangolo in t
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

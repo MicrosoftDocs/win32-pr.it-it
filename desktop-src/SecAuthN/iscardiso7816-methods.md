@@ -1,27 +1,27 @@
 ---
 description: L'interfaccia ISCardISO7816 espone i metodi seguenti.
 ms.assetid: D9A0F5E3-8A1E-4016-BE33-5F4F9AD8ADBD
-title: Metodi ISCardISO7816
+title: Metodi di ISCardISO7816
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73cdf3af0b74006c4fab2bf6fcbe4835b7ae9c31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92c66d2af8375eaf868fd9d568b03dc4e1ca295b549989e7d53ebf43e5c12ef4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672361"
 ---
-# <a name="iscardiso7816-methods"></a>Metodi ISCardISO7816
+# <a name="iscardiso7816-methods"></a>Metodi di ISCardISO7816
 
-L'interfaccia [**ISCardISO7816**](iscardiso7816.md) espone i metodi seguenti.
+[**L'interfaccia ISCardISO7816**](iscardiso7816.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Metodo AppendRecord**](iscardiso7816-appendrecord.md)
 -   [**Metodo EraseBinary**](iscardiso7816-erasebinary.md)
 -   [**Metodo ExternalAuthenticate**](iscardiso7816-externalauthenticate.md)
--   [**Metodo getchallenge**](iscardiso7816-getchallenge.md)
--   [**GetData (metodo)**](iscardiso7816-getdata.md)
+-   [**Metodo GetChallenge**](iscardiso7816-getchallenge.md)
+-   [**Metodo GetData**](iscardiso7816-getdata.md)
 -   [**Metodo GetResponse**](iscardiso7816-getresponse.md)
 -   [**Metodo InternalAuthenticate**](iscardiso7816-internalauthenticate.md)
 -   [**Metodo ManageChannel**](iscardiso7816-managechannel.md)

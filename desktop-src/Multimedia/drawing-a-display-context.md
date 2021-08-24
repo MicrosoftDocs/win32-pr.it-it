@@ -1,23 +1,23 @@
 ---
-title: Creazione di un contesto di visualizzazione
-description: Creazione di un contesto di visualizzazione
+title: Disegno di un contesto di visualizzazione
+description: Disegno di un contesto di visualizzazione
 ms.assetid: c3328375-faa3-4b29-a155-8a25cc62269f
 keywords:
 - DrawDib, contesto di dispositivo (DC)
 - DrawDib, disegno di controller di dominio
-- DrawDibRealize (funzione)
+- Funzione DrawDibRealize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1c79c2b7bb938cc34527b23cfc66fda6d19503
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0f10d533fff97064ba3c6a081a2f1d0aaa9e1b72011f2baa1ac3a6bd1a81d43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678721"
 ---
-# <a name="drawing-a-display-context"></a>Creazione di un contesto di visualizzazione
+# <a name="drawing-a-display-context"></a>Disegno di un contesto di visualizzazione
 
-Nell'esempio seguente viene preparato un controller di dominio DrawDib utilizzando la funzione [**DrawDibRealize**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize) prima di visualizzare diverse immagini in una sequenza bitmap.
+L'esempio seguente prepara un controller di dominio DrawDib usando la [**funzione DrawDibRealize**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize) prima di visualizzare diverse immagini in una sequenza bitmap.
 
 
 ```C++
@@ -43,9 +43,9 @@ ReleaseDC(hwnd, hdc);
 [Uso di DrawDib](using-drawdib.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

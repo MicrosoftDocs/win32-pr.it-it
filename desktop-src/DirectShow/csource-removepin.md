@@ -1,7 +1,7 @@
 ---
-description: Il metodo RemovePin rimuove dal filtro un PIN specificato. Il metodo non elimina il PIN.
+description: Il metodo RemovePin rimuove un segnaposto specificato dal filtro. Il metodo non elimina il segnaposto.
 ms.assetid: 104eccfa-3fff-4f47-ba1b-3206eab9eef8
-title: Metodo CSource. RemovePin (source. h)
+title: Metodo CSource.RemovePin (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b71ced14a6f92a3056ac4f42e55bc3858c578ff6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 376c2b292b0bdba9a79593c8264ecce17b916a88cfd49407638d637d1fbda6b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767841"
 ---
-# <a name="csourceremovepin-method"></a>CSource. RemovePin, metodo
+# <a name="csourceremovepin-method"></a>Metodo CSource.RemovePin
 
-Il `RemovePin` metodo rimuove un PIN specificato dal filtro. Il metodo non elimina il PIN.
+Il `RemovePin` metodo rimuove un segnaposto specificato dal filtro. Il metodo non elimina il segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT RemovePin(
 *pStream* 
 </dt> <dd>
 
-Puntatore all'oggetto [**CSourceStream**](csourcestream.md) che implementa il PIN.
+Puntatore [**all'oggetto CSourceStream**](csourcestream.md) che implementa il pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                      |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                              |
-| <dl> <dt>**S \_ false**</dt> </dl> | Il filtro non contiene questo pin.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                              |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il filtro non contiene questo segnaposto.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo del distruttore chiama questo metodo per rimuovere il pin di output dal filtro.
+Il metodo del distruttore chiama questo metodo per rimuovere il segnaposto di output dal filtro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Il metodo del distruttore chiama questo metodo per rimuovere il pin di output da
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Specifica un nome completo nello spazio dei nomi .
 ms.assetid: cba708cc-1a4a-4e46-9376-065d3c879c38
-title: elemento name
+title: name - elemento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6997f75ce554e6a91fb594b8b31afa22696dda
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 96d6d8f2830df0f20022418988a6003790e96287bee8867283a8a74bc610fa49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611591"
 ---
-# <a name="name-element"></a>elemento name
+# <a name="name-element"></a>name - elemento
 
 Specifica un nome completo nello spazio dei nomi .
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                                   | Descrizione                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione del codice.<br/> <br/> |
+| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione di codice.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

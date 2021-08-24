@@ -1,9 +1,9 @@
 ---
-title: Struttura DDS_HEADER (DDS. h)
-description: Descrive un'intestazione del file DDS.
+title: DDS_HEADER struttura (Dds.h)
+description: Descrive un'intestazione di file DDS.
 ms.assetid: 7f8bde30-0ff9-4bb9-b444-5c875e6a0865
 keywords:
-- Struttura DDS_HEADER DDS
+- DDS_HEADER struttura DDS
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d70fa0c4b05b6655ce0329cc73651ea21d4d808
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d974c319206d0a0cbe6abda291e9d376bd6478a5b8eb8ba3ef3bb12f182b1288
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746001"
 ---
-# <a name="dds_header-structure"></a>\_Struttura dell'intestazione DDS
+# <a name="dds_header-structure"></a>Struttura DDS \_ HEADER
 
-Descrive un'intestazione del file DDS.
+Descrive un'intestazione di file DDS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Dimensione della struttura. Questo membro deve essere impostato su 124.
+Dimensione della struttura . Questo membro deve essere impostato su 124.
 
 </dd> <dt>
 
@@ -77,33 +77,33 @@ Flag per indicare quali membri contengono dati validi.
 
 | Flag              | Descrizione                                                  | Valore    |
 |-------------------|--------------------------------------------------------------|----------|
-| DDSD \_ Caps        | Obbligatorio in ogni file. DDS.                                 | 0x1      |
-| \_altezza DDSD      | Obbligatorio in ogni file. DDS.                                 | 0x2      |
-| \_larghezza DDSD       | Obbligatorio in ogni file. DDS.                                 | 0x4      |
-| DDSD \_ pitch       | Obbligatorio quando viene fornito un pitch per una trama non compressa. | 0x8      |
-| DDSD \_ PIXELFORMAT | Obbligatorio in ogni file. DDS.                                 | 0x1000   |
-| \_MIPMAPCOUNT DDSD | Obbligatorio in una trama mipmap.                             | 0x20000  |
-| \_LINEARSIZE DDSD  | Obbligatorio quando viene fornito un pitch per una trama compressa.    | 0x80000  |
-| \_profondità DDSD       | Obbligatorio in una trama di profondità.                                 | 0x800000 |
+| DDSD \_ CAPS        | Obbligatorio in ogni file con estensione dds.                                 | 0x1      |
+| ALTEZZA \_ DDSD      | Obbligatorio in ogni file con estensione dds.                                 | 0x2      |
+| LARGHEZZA \_ DDSD       | Obbligatorio in ogni file con estensione dds.                                 | 0x4      |
+| PASSO \_ DDSD       | Obbligatorio quando viene specificata l'altezza per una trama non compressa. | 0x8      |
+| DDSD \_ PIXELFORMAT | Obbligatorio in ogni file con estensione dds.                                 | 0x1000   |
+| DDSD \_ MIPMAPCOUNT | Obbligatorio in una trama mipmapped.                             | 0x20000  |
+| DDSD \_ LINEARSIZE  | Obbligatorio quando viene specificato un passo per una trama compressa.    | 0x80000  |
+| PROFONDITÀ \_ DDSD       | Obbligatorio in una trama di profondità.                                 | 0x800000 |
 
 
 
  
 
 > [!Note]  
-> Quando si scrivono file con estensione DDS, è necessario impostare i \_ flag DDSD Caps e DDSD \_ PIXELFORMAT e per le trame mipmap è necessario impostare anche il \_ flag DDSD MIPMAPCOUNT. Tuttavia, quando si legge un file con estensione DDS, è consigliabile non basarsi sui \_ flag DDSD Caps, DDSD \_ PIXELFORMAT e DDSD \_ MIPMAPCOUNT impostati in quanto alcuni writer di tale file potrebbero non impostare questi flag.
+> Quando si scrivono file DDS, è necessario impostare i flag DDSD CAPS e DDSD PIXELFORMAT e, per le trame mipmapped, è necessario impostare anche il \_ \_ flag \_ MIPMAPCOUNT DDSD. Tuttavia, quando si legge un file DDS, non è consigliabile basarsi sui flag DDSD \_ CAPS, DDSD PIXELFORMAT e \_ DDSD MIPMAPCOUNT impostati perché alcuni writer di tale file potrebbero non impostare questi \_ flag.
 
  
 
-Il \_ \_ flag di trama dei flag di intestazione DDS \_ , definito in DDS. h, è una combinazione OR bit per bit dei \_ flag DDSD Caps, DDSD \_ Height, DDSD \_ Width e DDSD \_ PIXELFORMAT.
+Il flag TEXTURE DDS HEADER FLAGS, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag \_ DDSD \_ CAPS, DDSD \_ HEIGHT, DDSD WIDTH e \_ \_ DDSD PIXELFORMAT.
 
-Il flag di \_ intestazione DDS \_ flag \_ MIPMAP, che è definito in DDS. h, è uguale al \_ flag DDSD MIPMAPCOUNT.
+Il \_ flag MIPMAP DDS HEADER FLAGS, definito in Dds.h, è uguale al \_ flag \_ \_ MIPMAPCOUNT DDSD.
 
-Il flag \_ del \_ volume dei flag di intestazione DDS \_ , definito in DDS. h, è uguale al \_ flag di profondità DDSD.
+Il flag VOLUME DDS HEADER FLAGS, definito \_ \_ in \_ Dds.h, è uguale al flag DDSD \_ DEPTH.
 
-Il flag \_ di \_ pitch dei flag di intestazione DDS \_ , definito in DDS. h, è uguale al \_ flag di pitch DDSD.
+Il \_ flag PITCH DDS HEADER FLAGS, definito in \_ \_ Dds.h, è uguale al flag PITCH \_ DDSD.
 
-Il flag di \_ intestazione DDS \_ flag \_ LINEARSIZE, che è definito in DDS. h, è uguale al \_ flag DDSD LINEARSIZE.
+Il flag DDS HEADER FLAGS LINEARSIZE, definito in Dds.h, è uguale al \_ \_ flag \_ DDSD \_ LINEARSIZE.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Il pitch o il numero di byte per riga di analisi in una trama non compressa; numero totale di byte nella trama di primo livello per una trama compressa. Per informazioni su come calcolare il passo, vedere la sezione relativa al layout dei file DDS della [Guida alla programmazione per DDS](dx-graphics-dds-pguide.md).
+Passo o numero di byte per riga di analisi in una trama non compressa. numero totale di byte nella trama di primo livello per una trama compressa. Per informazioni su come calcolare l'altezza, vedere la sezione Layout di file DDS della [Guida per programmatori per DDS](dx-graphics-dds-pguide.md).
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Profondità di una trama del volume (in pixel), altrimenti inutilizzata.
+Profondità di una trama del volume (in pixel), in caso contrario non utilizzata.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Numero di livelli di mipmap, altrimenti non utilizzati.
+Numero di livelli mipmap, altrimenti inutilizzati.
 
 </dd> <dt>
 
@@ -197,24 +197,24 @@ Specifica la complessità delle superfici archiviate.
 
 | Flag             | Descrizione                                                                                                                              | Valore    |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| \_complesso DDSCAPS | Opzionale deve essere usato in qualsiasi file che contiene più di una superficie (un mipmap, una mappa dell'ambiente cubica o una trama del volume mipmap). | 0x8      |
-| \_MIPMAP DDSCAPS  | Opzionale deve essere usato per un mipmap.                                                                                                   | 0x400000 |
-| \_trama DDSCAPS | Necessario                                                                                                                                 | 0x1000   |
+| COMPLESSO DDSCAPS \_ | Facoltativo. deve essere usato in qualsiasi file che contiene più di una superficie (una mappa mipmap, una mappa dell'ambiente cubico o una trama di volume mipmapped). | 0x8      |
+| DDSCAPS \_ MIPMAP  | Facoltativo. deve essere usato per un mipmap.                                                                                                   | 0x400000 |
+| TRAMA DDSCAPS \_ | Necessario                                                                                                                                 | 0x1000   |
 
 
 
  
 
 > [!Note]  
-> Quando si scrivono file con estensione DDS, è necessario impostare il \_ flag di trama ddsCaps e per più superfici è necessario impostare anche il \_ flag complesso ddsCaps. Tuttavia, quando si legge un file con estensione DDS, è consigliabile non basarsi sulla \_ trama ddsCaps e sui \_ flag complessi ddsCaps impostati, perché alcuni writer di tale file potrebbero non impostare questi flag.
+> Quando si scrivono file con estensione dds, è necessario impostare il flag TEXTURE DDSCAPS e per più superfici è necessario impostare anche il \_ flag COMPLEX DDSCAPS. \_ Tuttavia, quando si legge un file con estensione dds, non è consigliabile basarsi sui flag DDSCAPS TEXTURE e DDSCAPS COMPLEX impostati perché alcuni writer di tale file potrebbero non impostare questi \_ \_ flag.
 
  
 
-Il \_ flag MIPMAP della superficie DDS \_ \_ , definito in DDS. h, è una combinazione OR bit per bit dei \_ flag ddsCaps Complex e ddsCaps \_ MIPMAP.
+Il flag MIPMAP DDS SURFACE FLAGS, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag \_ DDSCAPS COMPLEX e \_ DDSCAPS \_ MIPMAP.
 
-Il flag \_ di \_ trama dei flag di superficie DDS \_ , definito in DDS. h, è uguale al \_ flag di trama ddsCaps.
+Il flag TEXTURE DDS SURFACE FLAGS, definito \_ \_ in \_ Dds.h, è uguale al flag TEXTURE DDSCAPS. \_
 
-Il flag \_ mappa cubi della superficie DDS \_ \_ , definito in DDS. h, equivale al \_ flag ddsCaps complesso.
+Il \_ flag \_ CUBEMAP DDS SURFACE FLAGS, definito in \_ Dds.h, è uguale al flag COMPLEX DDSCAPS. \_
 
 </dd> <dt>
 
@@ -225,43 +225,43 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Ulteriori dettagli sulle superfici archiviate.
+Dettagli aggiuntivi sulle superfici archiviate.
 
 
 
 | Flag                         | Descrizione                                            | Valore    |
 |------------------------------|--------------------------------------------------------|----------|
-| \_Mappa cubi DDSCAPS2            | Obbligatorio per una mappa cubo.                               | 0x200    |
-| DDSCAPS2 \_ mappa cubi \_ POSITIVEX | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x400    |
-| DDSCAPS2 \_ mappa cubi \_ NEGATIVEX | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x800    |
-| DDSCAPS2 \_ mappa cubi \_ positivo | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x1000   |
-| DDSCAPS2 \_ mappa cubi \_ negativo | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x2000   |
-| DDSCAPS2 \_ mappa cubi \_ POSITIVEZ | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x4000   |
-| DDSCAPS2 \_ mappa cubi \_ NEGATIVEZ | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x8000   |
-| \_Volume DDSCAPS2             | Obbligatorio per una trama del volume.                         | 0x200000 |
+| MAPPING DEI CUBI DDSCAPS2 \_            | Obbligatorio per una mappa del cubo.                               | 0x200    |
+| DDSCAPS2 \_ CUBEMAP \_ POSITIVEX | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x400    |
+| DDSCAPS2 \_ CUBEMAP \_ NEGATIVEX | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x800    |
+| DDSCAPS2 \_ CUBEMAP \_ POSITIVEY | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x1000   |
+| DDSCAPS2 \_ CUBEMAP \_ NEGATIVEY | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x2000   |
+| DDSCAPS2 \_ CUBEMAP \_ POSITIVEZ | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x4000   |
+| DDSCAPS2 \_ CUBEMAP \_ NEGATIVEZ | Obbligatorio quando queste superfici vengono archiviate in una mappa cubo. | 0x8000   |
+| DDSCAPS2 \_ VOLUME             | Obbligatorio per una trama del volume.                         | 0x200000 |
 
 
 
  
 
-Il \_ flag DDS mappa cubi \_ POSITIVEX, definito in DDS. h, è una combinazione bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi POSITIVEX \_ .
+Il flag DDS CUBEMAP POSITIVEX, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag CUBEMAP DDSCAPS2 e \_ DDSCAPS2 \_ CUBEMAP \_ POSITIVEX.
 
-Il \_ flag DDS mappa cubi \_ NEGATIVEX, definito in DDS. h, è una combinazione bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi NEGATIVEX \_ .
+Il flag DDS CUBEMAP NEGATIVEX, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag DDSCAPS2 CUBEMAP e \_ DDSCAPS2 \_ CUBEMAP \_ NEGATIVEX.
 
-Il \_ \_ flag positivo mappa cubi DDS, definito in DDS. h, è una combinazione OR bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi \_ positivo.
+Il flag DDS CUBEMAP POSITIVEY, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag CUBEMAP DDSCAPS2 e \_ DDSCAPS2 \_ CUBEMAP \_ POSITIVEY.
 
-Il \_ flag mappa cubi \_ , che è definito in DDS. h, è una combinazione OR bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi \_ negative.
+Il flag DDS CUBEMAP NEGATIVEY, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag CUBEMAP DDSCAPS2 e \_ DDSCAPS2 \_ CUBEMAP \_ NEGATIVEY.
 
-Il \_ flag DDS mappa cubi \_ POSITIVEZ, definito in DDS. h, è una combinazione bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi POSITIVEZ \_ .
+Il flag DDS CUBEMAP POSITIVEZ, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag CUBEMAP DDSCAPS2 e \_ DDSCAPS2 \_ CUBEMAP \_ POSITIVEZ.
 
-Il \_ flag DDS mappa cubi \_ NEGATIVEZ, definito in DDS. h, è una combinazione bit per bit dei \_ flag DDSCAPS2 mappa cubi e DDSCAPS2 \_ mappa cubi NEGATIVEZ \_ .
+Il flag DDS CUBEMAP NEGATIVEZ, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag CUBEMAP DDSCAPS2 e \_ DDSCAPS2 \_ CUBEMAP \_ NEGATIVEZ.
 
-Il \_ flag DDS mappa cubi \_ ALLFACES, definito in DDS. h, è una combinazione OR bit per bit dei \_ flag DDS mappa cubi \_ POSITIVEX, DDS \_ mappa cubi \_ NEGATIVEX, DDS \_ mappa cubi \_ positivey, DDS \_ mappa cubi \_ negative, DDS \_ mappa cubi \_ POSITIVEZ e \_ \_ DDSCAPS2 mappa cubi NEGATIVEZ.
+Il flag DDS CUBEMAP ALLFACES, definito in Dds.h, è una combinazione OR bit per bit dei \_ \_ flag DDS \_ \_ CUBEMAP POSITIVEX, DDS \_ CUBEMAP \_ NEGATIVEX, DDS \_ CUBEMAP \_ POSITIVEY, DDS \_ CUBEMAP \_ NEGATIVEY, DDS \_ CUBEMAP POSITIVEZ e \_ DDSCAPS2 \_ CUBEMAP \_ NEGATIVEZ.
 
-Il flag del \_ volume dei flag DDS \_ , definito in DDS. h, è uguale al flag del \_ volume DDSCAPS2.
+Il flag VOLUME DDS FLAGS, definito \_ \_ in Dds.h, è uguale al flag VOLUME DDSCAPS2. \_
 
 > [!Note]  
-> Sebbene Direct3D 9 supporti le mappe di cubi parziali, Direct3D 10, 10,1 e 11 richiedono la definizione di tutti e sei i visi della mappa cubo, ovvero è necessario impostare DDS \_ mappa cubi \_ ALLFACES.
+> Anche se Direct3D 9 supporta mappe cubi parziali, Direct3D 10, 10.1 e 11 richiedono la definizione di tutte e sei le visi della mappa cubo, ovvero è necessario impostare \_ CUBEMAP \_ ALLFACES DDS.
 
  
 
@@ -302,11 +302,11 @@ Non utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-Includere i flag in **dwFlags** per i membri della struttura che contengono dati validi.
+Includere flag in **dwFlags** per i membri della struttura che contengono dati validi.
 
-Usare questa struttura insieme a un' [**intestazione DDS \_ \_ DXT10**](dds-header-dxt10.md) per archiviare una matrice di risorse in un file DDS. Per altre informazioni, vedere [matrici di trame](dx-graphics-dds-pguide.md).
+Usare questa struttura in combinazione con [**un'intestazione \_ \_ DDS DXT10**](dds-header-dxt10.md) per archiviare una matrice di risorse in un file DDS. Per altre informazioni, vedere [Matrici di trame.](dx-graphics-dds-pguide.md)
 
-**DDS \_ L'intestazione** è identica alla struttura DDSURFACEDESC2 di DirectDraw senza dipendenze di DirectDraw.
+**DDS \_ HEADER** è identica alla struttura DDSURFACEDESC2 di DirectDraw senza dipendenze DirectDraw.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -314,7 +314,7 @@ Usare questa struttura insieme a un' [**intestazione DDS \_ \_ DXT10**](dds-head
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DDS. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dds.h</dt> </dl> |
 
 
 

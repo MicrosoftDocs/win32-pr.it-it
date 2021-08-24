@@ -1,19 +1,19 @@
 ---
-title: CTX (tag)
-description: CTX (tag)
+title: Ctx Tag
+description: Ctx Tag
 ms.assetid: 96ceaa98-869d-4c51-a419-882cc9d40ae2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f16beae0fd4ccc062969d9aafb4d8747e4c5afe9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7071994e741cb7dfd1147f163f0d7ef6299ec0dcb9d568ad068251d5a9436809
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726101"
 ---
-# <a name="ctx-tag"></a>CTX (tag)
+# <a name="ctx-tag"></a>Ctx Tag
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,13 +27,13 @@ Imposta il contesto del testo di output.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-\\**Ctx** = *stringa* di\\
+\\**Ctx** = *string*\\
 
 
 
 | Parte     | Descrizione                                                                                                                                                                                                                                                                                      |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *string* | Stringa che specifica il contesto del testo che segue, che determina il modo in cui vengono pronunciati simboli o abbreviazioni.<br/> **"Indirizzo"**    Indirizzi e/o numeri di telefono.<br/> **"Posta elettronica"**    Posta elettronica.<br/> Il contesto **"Unknown"** (impostazione predefinita) è sconosciuto.<br/> |
+| *string* | Stringa che specifica il contesto del testo seguente, che determina la modalità di pronuncia dei simboli o delle abbreviazioni.<br/> **"Address"**    Indirizzi e/o numeri di telefono.<br/> **"Posta elettronica"**    Posta elettronica.<br/> **Il contesto "Sconosciuto"**    (predefinito) è sconosciuto.<br/> |
 
 
 

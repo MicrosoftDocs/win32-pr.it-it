@@ -1,8 +1,8 @@
 ---
-description: Il metodo Reset della classe CIM \_ Printer richiede la reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe CIM \_ Printer richiede una reimpostazione del dispositivo logico.
 ms.assetid: 7d5c9e57-0f48-4a31-855d-d06197a9b5df
 ms.tgt_platform: multiple
-title: Reimposta il metodo della classe CIM_Printer
+title: Metodo Reset della classe CIM_Printer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 42e4f4ff44eb1de7b0834239cf0d8af0ea88b42c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: feede16d7dc7ad06e0253c4869b17b46acaa8c5b8206b2170314ae3c60fedc14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701201"
 ---
-# <a name="reset-method-of-the-cim_printer-class"></a>Metodo Reset della \_ classe Printer CIM
+# <a name="reset-method-of-the-cim_printer-class"></a>Metodo Reset della classe CiM \_ Printer
 
-Il metodo **Reset** della classe CIM \_ Printer richiede la reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo Reset** della classe CIM Printer richiede una \_ reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_Stampante CIM](reset-method-in-class-cim-printer.md)
+[Stampante \_ CIM](reset-method-in-class-cim-printer.md)
 </dt> <dt>
 
-[**\_Stampante CIM**](cim-printer.md)
+[**Stampante \_ CIM**](cim-printer.md)
 </dt> </dl>
 
  

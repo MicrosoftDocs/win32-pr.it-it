@@ -1,10 +1,10 @@
 ---
-title: attributo per l'allungamento
-description: Elenco di punti di connessione del servizio che fanno riferimento A questo server.
+title: Attributo netboot-SCP-BL
+description: Elenco di punti di connessione del servizio che fanno riferimento a questo server NetBoot.
 ms.assetid: 65e7b762-ed7b-4edd-882f-df9b8f094c67
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo per la piattaforma di avviamento
+- Schema AD dell'attributo netboot-SCP-BL
 - Schema AD dell'attributo netbootSCPBL
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c95652dc7c4273029fb6f05f00b82a636cb16d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9771b430852aa77ff9633c16e203842649493163e220539c98acaae6171ed394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648550"
 ---
-# <a name="netboot-scp-bl-attribute"></a>attributo per l'allungamento
+# <a name="netboot-scp-bl-attribute"></a>Attributo netboot-SCP-BL
 
-Elenco di punti di connessione del servizio che fanno riferimento A questo server.
+Elenco di punti di connessione del servizio che fanno riferimento a questo server NetBoot.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | -SCP-BL                          |
-| LDAP-Display-Name | netbootSCPBL                            |
+| CN                | netboot-SCP-BL                          |
+| Ldap-Display-Name | netbootSCPBL                            |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.864                  |
-| System-ID-GUID    | 07383082-91df-11d1-aebc-0000f80367c1    |
+| System-Id-Guid    | 07383082-91df-11d1-aebc-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di punti di connessione del servizio che fanno riferimento A questo serve
 | ID collegamento                | 101                             |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Ottiene la matrice di offset dell'osso.
 ms.assetid: 99d47635-ffae-4668-a37c-b15442148fa1
-title: 'Metodo ID3DXSkinInfo:: GetBoneOffsetMatrix (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::GetBoneOffsetMatrix (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fce108dc1d0eb08f198ae9375ac35ed149c5e760
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d10586fc9d4008ebd22b7edf2fa955628ffa0ab703ef70ed06cb2f2cb1fd8d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492301"
 ---
-# <a name="id3dxskininfogetboneoffsetmatrix-method"></a>Metodo ID3DXSkinInfo:: GetBoneOffsetMatrix
+# <a name="id3dxskininfogetboneoffsetmatrix-method"></a>Metodo ID3DXSkinInfo::GetBoneOffsetMatrix
 
 Ottiene la matrice di offset dell'osso.
 
@@ -40,12 +40,12 @@ LPD3DXMATRIX GetBoneOffsetMatrix(
 
 <dl> <dt>
 
-*Osso* \[ in\]
+*Osso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero osso.
+Numero di osso.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Restituisce un puntatore alla matrice di offset dell'osso. Non liberare questo p
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: Per impostazione predefinita, a partire da gli elementi del pannello di controllo di Windows Vista non vengono visualizzati quando Windows viene eseguito in modalità provvisoria.
-title: Accesso al pannello di controllo in modalità provvisoria
+description: Per impostazione predefinita, a Windows vista Pannello di controllo gli elementi non vengono visualizzati quando Windows viene eseguito in modalità sicura.
+title: Accesso al Pannello di controllo in Cassaforte predefinita
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f37bcb0f-9417-4cc4-a57d-4f67a9ccda19
@@ -9,30 +9,30 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0f7a401bbc22a7f8de3618f844bfe463fa3baa50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 777a44c7fe30b0481096a1c5d62c98410277a3bc76169925aff4ae5e59e549d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710791"
 ---
-# <a name="accessing-the-control-panel-in-safe-mode"></a>Accesso al pannello di controllo in modalità provvisoria
+# <a name="accessing-the-control-panel-in-safe-mode"></a>Accesso al Pannello di controllo in Cassaforte predefinita
 
-Per impostazione predefinita, a partire da gli elementi del pannello di controllo di Windows Vista non vengono visualizzati quando Windows viene eseguito in modalità provvisoria. Per consentire la visualizzazione di un nuovo elemento del pannello di controllo in modalità provvisoria, è possibile impostare i valori del registro di sistema appropriati per il tipo di elemento. I valori vengono interpretati nel modo seguente:
+Per impostazione predefinita, a Windows vista Pannello di controllo gli elementi non vengono visualizzati quando Windows viene eseguito in modalità sicura. Per consentire la visualizzazione di Pannello di controllo nuovo elemento in modalità sicura, è possibile impostare i valori del Registro di sistema appropriati per il tipo di elemento. I valori vengono interpretati come segue:
 
 
 
 | Valore | Significato                                                            |
 |-------|--------------------------------------------------------------------|
 | 1     | L'elemento deve essere visualizzato solo in modalità provvisoria minima.                  |
-| 2     | L'elemento deve essere visualizzato in modalità provvisoria solo se la rete è abilitata. |
-| 3     | L'elemento deve essere sempre visualizzato in qualsiasi forma di modalità provvisoria.            |
+| 2     | L'elemento deve essere visualizzato in modalità sicura solo se la rete è abilitata. |
+| 3     | L'elemento deve essere sempre visualizzato in qualsiasi forma di modalità sicura.            |
 
 
 
  
 
-Questo esempio mostra le voci necessarie per un elemento implementato come file con estensione CPL o dll. Specifica che l'elemento deve essere visualizzato in modalità provvisoria con la rete.
+Questo esempio illustra le voci necessarie per un elemento implementato come .cpl o .dll file. Specifica che l'elemento deve essere visualizzato in modalità sicura con rete.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
                         %ProgramFiles%\MyCorp\MyApp\MyCpl.cpl = [REG_DWORD] 2
 ```
 
-Questo esempio mostra le voci necessarie per un elemento implementato come file con estensione exe. Specifica che l'elemento deve essere visualizzato in qualsiasi forma di modalità provvisoria.
+In questo esempio vengono illustrate le voci necessarie per un elemento implementato come file .exe. Specifica che l'elemento deve essere visualizzato in qualsiasi forma di modalità sicura.
 
 ```
 HKEY_CLASSES_ROOT
@@ -59,31 +59,31 @@ HKEY_CLASSES_ROOT
 
 <dl> <dt>
 
-[Elementi del pannello di controllo](control-panel-applications.md)
+[Pannello di controllo elementi](control-panel-applications.md)
 </dt> <dt>
 
 [Linee guida sull'esperienza utente](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrazione degli elementi del pannello di controllo](registering-control-panel-items.md)
+[Registrazione di Pannello di controllo elementi](registering-control-panel-items.md)
 </dt> <dt>
 
 [Uso di CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Elaborazione del messaggio del pannello di controllo](message-processing.md)
+[Pannello di controllo di messaggi](message-processing.md)
 </dt> <dt>
 
-[Esecuzione degli elementi del pannello di controllo](executing-control-panel-items.md)
+[Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estensione degli elementi del pannello di controllo di sistema](extending-system-control-panel-items.md)
+[Estensione degli elementi di Pannello di controllo sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Assegnazione delle categorie del pannello di controllo](assigning-control-panel-categories.md)
+[Assegnazione di Pannello di controllo categorie](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Creazione di collegamenti alle attività ricercabili per un elemento del pannello di controllo](creating-searchable-task-links.md)
+[Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 </dt> </dl>
 
  

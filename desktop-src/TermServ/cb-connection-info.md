@@ -1,11 +1,11 @@
 ---
-title: Struttura CB_CONNECTION_INFO (Cbclient. h)
+title: CB_CONNECTION_INFO struttura (Cbclient.h)
 description: Contiene informazioni su una richiesta di connessione in ingresso.
 ms.assetid: BA908425-3B68-40AA-B1E3-153D6873EF2C
 ms.tgt_platform: multiple
 keywords:
-- Struttura CB_CONNECTION_INFO Servizi Desktop remoto
-- Puntatore alla struttura PCB_CONNECTION_INFO Servizi Desktop remoto
+- CB_CONNECTION_INFO struttura Servizi Desktop remoto
+- PCB_CONNECTION_INFO puntatore alla struttura Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36370a4faa823f509d1f3356768add0ece9a6904
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fd433f668c178973a4e3690ea130d01d75fab79e739610f77ac00619b9e326c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575041"
 ---
-# <a name="cb_connection_info-structure"></a>Struttura delle informazioni di \_ connessione CB \_
+# <a name="cb_connection_info-structure"></a>Struttura CB \_ CONNECTION \_ INFO
 
-Contiene informazioni su una richiesta di connessione in ingresso. Questa struttura viene utilizzata con il metodo [**IConnectionBrokerClient:: GetTargetInfo**](iconnectionbrokerclient-gettargetinfo.md) .
+Contiene informazioni su una richiesta di connessione in ingresso. Questa struttura viene usata con il [**metodo IConnectionBrokerClient::GetTargetInfo.**](iconnectionbrokerclient-gettargetinfo.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,32 +59,32 @@ Nome dell'utente che richiede una sessione.
 **Dominio**
 </dt> <dd>
 
-Nome del dominio di cui è membro il nome **utente** .
+Nome del dominio di cui **UserName** è membro.
 
 </dd> <dt>
 
 **InitialProgram**
 </dt> <dd>
 
-Percorso completo e nome file del programma iniziale avviato all'avvio della sessione. Impostare questo membro su una stringa vuota se non è necessario avviare alcun programma iniziale.
+Percorso completo e nome file del programma iniziale avviato all'avvio della sessione. Impostare questo membro su una stringa vuota se non deve essere avviato alcun programma iniziale.
 
 </dd> <dt>
 
 **Risorsa**
 </dt> <dd>
 
-Valore dell'enumerazione del [**\_ \_ tipo di risorsa CB**](cb-resource-type.md) che specifica il tipo di risorsa a cui si connette la connessione in ingresso. Se il membro **pluginName** è **null**, questo membro viene usato da connessione Desktop remoto broker per determinare il plug-in da richiamare per determinare il computer di destinazione.
+Valore dell'enumerazione [**CB \_ RESOURCE \_ TYPE**](cb-resource-type.md) che specifica il tipo di risorsa a cui si connette la connessione in ingresso. Se il **membro PluginName** è **NULL,** questo membro viene usato da Connessione Desktop remoto Broker per determinare quale plug-in richiamare per determinare il computer di destinazione.
 
 </dd> <dt>
 
 **PluginName**
 </dt> <dd>
 
-Nome del plug-in da richiamare per determinare il computer di destinazione. Se questo parametro è **null**, viene usato il membro della **risorsa** per determinare il plug-in da richiamare.
+Nome del plug-in da richiamare per determinare il computer di destinazione. Se questo parametro è **NULL,** il **membro Resource** viene usato per determinare quale plug-in richiamare.
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd>
 
 Nome della farm che contiene i computer, uno dei quali sarà il computer di destinazione in cui verrà reindirizzata la connessione.
@@ -113,7 +113,7 @@ Questo membro è riservato per usi futuri.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 

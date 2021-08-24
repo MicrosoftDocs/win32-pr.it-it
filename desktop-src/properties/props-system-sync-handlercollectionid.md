@@ -4,12 +4,12 @@ ms.assetid: e4eb8e49-57b9-4591-a398-cd9fab5f9980
 title: System.Sync.HandlerCollectionID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af3c4a65b9f967ddc43c65d959910177d2cadd65
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 311c5643926145d75061537be289d4da37bb22e4f1889113102627dabbed15cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597921"
 ---
 # <a name="systemsynchandlercollectionid"></a>System.Sync.HandlerCollectionID
 

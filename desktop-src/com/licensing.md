@@ -4,17 +4,17 @@ description: Gestione delle licenze
 ms.assetid: a77c0141-62b4-4032-a734-5a55da6a50e0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06066365d2cf00a7b5db6d6ca755261e5a9470fa
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: f3058bd6bb543f2f3fc97f2e6a851b456638128c6e731050237aa0d36b12d681
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567741"
 ---
 # <a name="licensing"></a>Gestione delle licenze
 
-Per incorporare correttamente i controlli con licenza, i contenitori di controlli ActiveX devono usare [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2) anziché [**IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory). Diverse funzioni di supporto per la creazione e il caricamento OLE ([**OleLoad**](/windows/desktop/api/Ole2/nf-ole2-oleload) e [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)) chiamano in modo esplicito **IClassFactory** e non **IClassFactory2** e pertanto non possono essere usate per creare o caricare controlli ActiveX con licenza. I contenitori di controlli ActiveX devono creare e caricare i controlli ActiveX in modo esplicito tramite **IClassFactory2**.
+Per incorporare correttamente i controlli concessi in licenza, ActiveX contenitori di controlli devono usare [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2) anziché [**IClassFactory.**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) Diverse funzioni helper di creazione e caricamento OLE ([**OleLoad**](/windows/desktop/api/Ole2/nf-ole2-oleload) e [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)) chiamano in modo esplicito **IClassFactory** e non **IClassFactory2** e pertanto non possono essere usate per creare o caricare controlli ActiveX licenza. ActiveX contenitori di controlli devono creare e caricare in modo esplicito ActiveX controlli usando **IClassFactory2.**
 
- 
+ 
 
- 
+ 

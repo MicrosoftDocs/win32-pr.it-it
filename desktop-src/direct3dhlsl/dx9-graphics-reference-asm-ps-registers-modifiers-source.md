@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a9dd4476dd7a1a885edb2e62a29b5127f5ff0a14
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 0626449e0a38cb695f5f3c9402969df3a25c192ad7a16ef3311053c7843e0667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673311"
 ---
 # <a name="pixel-shader-source-register-modifiers"></a>Modificatori del registro di origine pixel shader
 
-Usare i modificatori del registro di origine per modificare il valore letto da un registro prima dell'esecuzione di un'istruzione. Il contenuto di un registro di origine rimane invariato. I modificatori sono utili per modificare l'intervallo di dati del registro in preparazione dell'istruzione . Un set di modificatori denominati selettori copia o replica i dati da un singolo canale (r,g,b,a) negli altri canali.
+Usare i modificatori del registro di origine per modificare il valore letto da un registro prima dell'esecuzione di un'istruzione. Il contenuto di un registro di origine rimane invariato. I modificatori sono utili per modificare l'intervallo di dati del registro in preparazione dell'istruzione . Un set di modificatori denominato selettori copia o replica i dati da un singolo canale (r,g,b,a) negli altri canali.
 
 ## <a name="ps_1_1---ps_1_4"></a>ps \_ 1 \_ 1 - ps \_ 1 \_ 4
 
@@ -40,7 +40,7 @@ Questa tabella identifica le versioni che supportano ogni modificatore:
 
  
 
-I modificatori del registro di origine possono essere usati solo nelle istruzioni aritmetiche. Non possono essere usati nelle istruzioni relative all'indirizzo della trama. L'eccezione è il [modificatore scale by 2.](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) Per la versione 1 1, è possibile usare la scalabilità con segno \_ nell'argomento di origine di qualsiasi istruzione texm. \* Per la versione 1 \_ 2 o 1 3, è possibile usare la scalabilità con segno nell'argomento di origine \_ di qualsiasi istruzione di indirizzo di trama.
+I modificatori del registro di origine possono essere usati solo su istruzioni aritmetiche. Non possono essere usati nelle istruzioni relative all'indirizzo della trama. L'eccezione è il [modificatore scale by 2.](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) Per la versione 1 1, è possibile usare la scalabilità con segno \_ nell'argomento di origine di qualsiasi istruzione texm. \* Per la versione 1 \_ 2 o 1 3, è possibile usare la scalabilità con segno nell'argomento di origine \_ di qualsiasi istruzione di indirizzo di trama.
 
 Alcune restrizioni specifiche del modificatore:
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8'
-title: Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8 ()
+description: 'Altre informazioni su: Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8'
+title: Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8 ()
 TOCTitle: '@NoTitle'
 ms:assetid: N:Microsoft.Isam.Esent.Interop.Windows8
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 14c82eaae707f23c8f696593496d556bfa61277a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 768064e19af76a03aa0d4f11c087f8d7ff7086b04cd1de46edfb504ba8e6be2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614477"
 ---
-# <a name="microsoftisamesentinteropwindows8-namespace"></a>Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8
+# <a name="microsoftisamesentinteropwindows8-namespace"></a>Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8
 
 ## <a name="classes"></a>Classi
 
@@ -37,12 +37,12 @@ ms.locfileid: "103967649"
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
 <td><a href="dn335323(v=exchg.10).md">DurableCommitCallback</a></td>
-<td>Esegue il wrapping del callback che riguarda i commit durevoli.</td>
+<td>Esegue il wrapping del callback che si occupa di commit durevoli.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
 <td><a href="dn335448(v=exchg.10).md">JET_COMMIT_ID</a></td>
-<td>Contesto delle informazioni racchiuso tra i dati emessi dal JET_PFNEMITLOGDATA.</td>
+<td>Dati racchiusi tra contesto delle informazioni emessi JET_PFNEMITLOGDATA.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
@@ -52,12 +52,12 @@ ms.locfileid: "103967649"
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
 <td><a href="dn335349(v=exchg.10).md">JET_INDEX_COLUMN</a></td>
-<td>Contiene la definizione del filtro per <a href="dn335382(v=exchg.10).md">JetPrereadIndexRanges (JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a> e <a href="dn335383(v=exchg.10).md">JetSetCursorFilter (JET_SESID, JET_TABLEID, [], CursorFilterGrbit)</a>.</td>
+<td>Contiene la definizione del filtro <a href="dn335382(v=exchg.10).md">per JetPrereadIndexRanges(JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a> e <a href="dn335383(v=exchg.10).md">JetSetCursorFilter(JET_SESID, JET_TABLEID, [], CursorFilterGrbit)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
 <td><a href="dn335481(v=exchg.10).md">JET_INDEX_RANGE</a></td>
-<td>Contiene la definizione per <a href="dn335382(v=exchg.10).md">JetPrereadIndexRanges (JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a>.</td>
+<td>Contiene la definizione <a href="dn335382(v=exchg.10).md">per JetPrereadIndexRanges(JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
@@ -72,7 +72,7 @@ ms.locfileid: "103967649"
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
 <td><a href="dn335399(v=exchg.10).md">Windows8IdxInfo</a></td>
-<td>Livelli di informazioni sulle colonne che sono stati aggiunti alla versione di Windows 8 di ESENT.</td>
+<td>Livelli di informazioni sulle colonne che sono stati aggiunti alla Windows 8 di ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Classe pubblica" alt="Public class" /></td>
@@ -117,22 +117,22 @@ ms.locfileid: "103967649"
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335440(v=exchg.10).md">CursorFilterGrbit</a></td>
-<td>Opzioni passate durante l'impostazione dei filtri del cursore.</td>
+<td>Opzioni passate durante l'impostazione dei filtri di cursore.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335446(v=exchg.10).md">DurableCommitCallbackGrbit</a></td>
-<td>Opzioni passate al callback di scaricamento log.</td>
+<td>Opzioni passate al callback di scaricamento del log.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335447(v=exchg.10).md">ErrorInfoGrbit</a></td>
-<td>Opzioni per <a href="dn335493(v=exchg.10).md">JetGetErrorInfo (JET_err, JET_ERRINFOBASIC)</a>.</td>
+<td>Opzioni per <a href="dn335493(v=exchg.10).md">JetGetErrorInfo(JET_err, JET_ERRINFOBASIC)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335469(v=exchg.10).md">JET_ERRCAT</a></td>
-<td>Categoria dell'errore. La gerarchia è la seguente: JET_errcatError | |--JET_errcatOperation | |--JET_errcatFatal | |--JET_errcatIO//problemi di IO non sono temporanei. | |--JET_errcatResource | |--JET_errcatMemory//memoria insufficiente (tutte le varianti) | |--JET_errcatQuota | |--JET_errcatDisk//spazio su disco insufficiente (tutte le varianti) |--JET_errcatData | |--JET_errcatCorruption | |--JET_errcatInconsistent//in genere causati da utenti malgestiti | |--JET_errcatFragmentation |--JET_errcatApi |--JET_errcatUsage |--JET_errcatState |--JET_errcatObsolete</td>
+<td>Categoria di errore. La gerarchia è la seguente: JET_errcatError | |-- JET_errcatOperation | |-- JET_errcatFatal | |-- JET_errcatIO // problemi di I/O non è possibile, possono essere temporanei o meno. | |-- JET_errcatResource | |-- JET_errcatMemory // memoria insufficiente (tutte le varianti) | |-- JET_errcatQuota | |-- JET_errcatDisk // spazio su disco (tutte le varianti) |-- JET_errcatData | |-- JET_errcatCorruption | |-- JET_errcatInconsistent // in genere causato da errori di gestione | |-- JET_errcatFragmentation |-- JET_errcatApi |-- JET_errcatUsage |-- JET_errcatState |-- JET_errcatObsolete</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
@@ -142,7 +142,7 @@ ms.locfileid: "103967649"
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335486(v=exchg.10).md">JET_sesparam</a></td>
-<td>Parametri della sessione ESENT.</td>
+<td>Parametri di sessione ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
@@ -152,22 +152,22 @@ ms.locfileid: "103967649"
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335491(v=exchg.10).md">JetRelop</a></td>
-<td>Operazione di confronto per il filtro definito come <a href="dn335349(v=exchg.10).md">JET_INDEX_COLUMN</a>.</td>
+<td>Operazione di confronto per il filtro definito <a href="dn335349(v=exchg.10).md">come JET_INDEX_COLUMN</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335366(v=exchg.10).md">PrereadIndexRangesGrbit</a></td>
-<td>Opzioni per <a href="dn335382(v=exchg.10).md">JetPrereadIndexRanges (JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a>.</td>
+<td>Opzioni per <a href="dn335382(v=exchg.10).md">JetPrereadIndexRanges(JET_SESID, JET_TABLEID, [], Int32, Int32, Int32, [], PrereadIndexRangesGrbit)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335369(v=exchg.10).md">ResizeDatabaseGrbit</a></td>
-<td>Opzioni per <a href="dn335496(v=exchg.10).md">JetResizeDatabase (JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)</a>.</td>
+<td>Opzioni per <a href="dn335496(v=exchg.10).md">JetResizeDatabase(JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumerazione pubblica" alt="Public enumeration" /></td>
 <td><a href="dn335370(v=exchg.10).md">StopServiceGrbit</a></td>
-<td>Opzioni per <a href="dn335494(v=exchg.10).md">JetStopServiceInstance2 (JET_INSTANCE, StopServiceGrbit)</a>.</td>
+<td>Opzioni per <a href="dn335494(v=exchg.10).md">JetStopServiceInstance2(JET_INSTANCE, StopServiceGrbit)</a>.</td>
 </tr>
 </tbody>
 </table>

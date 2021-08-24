@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3ee9075cfaf4c5bbfbf17e8e2cfef6166be032
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce45f41d97c202b0836ff3537357b1d822a330210886d87bd0de1e8f0e104923
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706831"
 ---
 # <a name="control-access-rights-attribute"></a>Attributo Control-Access-Rights
 
@@ -29,13 +29,13 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Controllo-accesso-diritti                                 |
-| LDAP-Display-Name | controlAccessRights                                   |
+| CN                | Control-Access-Rights                                 |
+| Ldap-Display-Name | controlAccessRights                                   |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.200                                |
-| System-ID-GUID    | 6da8a4fc-0e52-11d0-a286-00aa003049e2                  |
+| System-Id-Guid    | 6da8a4fc-0e52-11d0-a286-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato dalla sicurezza DS per determinare quali utenti possono eseguire oper
 | ID collegamento                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
 | System-Only            | Falso                                                                                                              |
-| È a valore singolo       | Falso                                                                                                              |
+| Is-Single-Valued       | Falso                                                                                                              |
 | Indicizzato             | Falso                                                                                                              |
 | Nel catalogo globale      | Falso                                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

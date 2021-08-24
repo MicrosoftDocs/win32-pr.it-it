@@ -1,9 +1,9 @@
 ---
-title: Risorsa un'STRINGTABLE
-description: Definisce una o più risorse di stringa per un'applicazione. Le risorse di tipo stringa sono semplicemente stringhe Unicode o ASCII con terminazione null che possono essere caricate quando necessario dal file eseguibile, usando la funzione LoadString.
+title: Risorsa STRINGTABLE
+description: Definisce una o più risorse stringa per un'applicazione. Le risorse stringa sono semplicemente stringhe Unicode o ASCII con terminazione Null che possono essere caricate quando necessario dal file eseguibile, usando la funzione LoadString.
 ms.assetid: 5868245d-3445-4792-86f5-253945310d36
 keywords:
-- Menu risorse un'STRINGTABLE e altre risorse
+- Menu delle risorse STRINGTABLE e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 271abd022bdedd3b27e0434e7364542fa51c8987
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7994b6853195ba164c766ca6ee275e4535ab1249c0c78907ab996b9dc644013a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720651"
 ---
-# <a name="stringtable-resource"></a>Risorsa un'STRINGTABLE
+# <a name="stringtable-resource"></a>Risorsa STRINGTABLE
 
-Definisce una o più risorse di stringa per un'applicazione. Le risorse di tipo stringa sono semplicemente stringhe Unicode o ASCII con terminazione null che possono essere caricate quando necessario dal file eseguibile, usando la funzione [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa) .
+Definisce una o più risorse stringa per un'applicazione. Le risorse stringa sono semplicemente stringhe Unicode o ASCII con terminazione Null che possono essere caricate quando necessario dal file eseguibile, usando la [**funzione LoadString.**](/windows/win32/api/winuser/nf-winuser-loadstringa)
 
-Esistono due modi per formattare un'istruzione **un'STRINGTABLE** :
+Esistono due modi per formattare **un'istruzione STRINGTABLE:**
 
 ``` syntax
 STRINGTABLE  [optional-statements] {stringID string  ...}
@@ -44,22 +44,22 @@ END
 
 <dl> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*facoltativo-istruzioni*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*istruzioni facoltative*
 </dt> <dd>
 
-Questo parametro può essere costituito da zero o più delle istruzioni seguenti.
+Questo parametro può essere zero o più delle istruzioni seguenti.
 
 
 
 | Istruzione                                                        | Descrizione                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Caratteristiche**](characteristics-statement.md) *DWORD*     | Informazioni definite dall'utente su una risorsa che possono essere usate da strumenti per la lettura e la scrittura di file di risorse. Per ulteriori informazioni, vedere [**caratteristiche**](characteristics-statement.md). |
-| [](language-statement.md) *Lingua* lingua, *lingua* | Specifica la lingua per la risorsa. Per ulteriori informazioni, vedere [**Language**](language-statement.md).                                                                              |
-| [](version-statement.md) *DWORD* versione                     | Numero di versione definito dall'utente per la risorsa che può essere usato da strumenti che leggono e scrivono file di risorse. Per ulteriori informazioni, vedere [**Version**](version-statement.md).              |
+| [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Informazioni definite dall'utente su una risorsa che possono essere usate dagli strumenti che leggono e scrivono file di risorse. Per altre informazioni, vedere [**CHARACTERISTICS**](characteristics-statement.md). |
+| [**LANGUAGE**](language-statement.md) *language*, *sottolinguaggio* | Specifica la lingua per la risorsa. Per altre informazioni, vedere [**LANGUAGE**](language-statement.md).                                                                              |
+| [**VERSION**](version-statement.md) *dword*                     | Numero di versione definito dall'utente per la risorsa che può essere usato dagli strumenti che leggono e scrivono file di risorse. Per altre informazioni, vedere [**VERSION**](version-statement.md).              |
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -70,37 +70,37 @@ Intero senza segno a 16 bit che identifica la risorsa.
 
 </dd> <dt>
 
-<span id="string"></span><span id="STRING"></span>*stringa*
+<span id="string"></span><span id="STRING"></span>*Stringa*
 </dt> <dd>
 
-Una o più stringhe, racchiuse tra virgolette. La stringa non deve contenere più di 4097 caratteri e deve occupare una sola riga nel file di origine. Per aggiungere un ritorno a capo alla stringa, usare questa sequenza di caratteri: \\ 012. Ad esempio, "Line One \\ 012Line Two" definisce una stringa che viene visualizzata come segue:
+Una o più stringhe, racchiuse tra virgolette. La stringa non deve contenere più di 4097 caratteri e deve occupare una singola riga nel file di origine. Per aggiungere un ritorno a capo alla stringa, usare questa sequenza di caratteri: \\ 012. Ad esempio, "Riga \\ 1 012Line two" definisce una stringa che viene visualizzata come segue:
 
 ``` syntax
 Line one
 Line two
 ```
 
-Per incorporare le virgolette nella stringa, usare la sequenza seguente: "". Ad esempio, "" "riga tre" "" definisce una stringa che viene visualizzata come segue:
+Per incorporare le virgolette nella stringa, usare la sequenza seguente: "". Ad esempio, """Riga tre"""" definisce una stringa che viene visualizzata come segue:
 
 ``` syntax
 "Line three"
 ```
 
-Per codificare i caratteri Unicode, usare "L" seguito dai caratteri Unicode racchiusi tra virgolette. Per un esempio, vedere la sezione esempi.
+Per codificare i caratteri Unicode, usare una "L" seguita dai caratteri Unicode racchiusi tra virgolette. Per un esempio, vedere la sezione Esempi.
 
-Il compilatore di risorse supporta inoltre le continuazioni di riga nella *stringa*. Per un esempio, vedere la sezione esempi.
+Il compilatore di risorse supporta anche le continuazioni di riga nella *stringa*. Per un esempio, vedere la sezione Esempi.
 
 </dd> </dl>
 
-Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [attributi di risorse comuni](common-resource-attributes.md).
+Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [Attributi comuni delle risorse](common-resource-attributes.md).
 
 ## <a name="remarks"></a>Commenti
 
-RC alloca 16 stringhe per sezione e usa il valore Identifier per determinare quale sezione deve contenere la stringa. Le stringhe i cui identificatori differiscono solo nei 4 bit inferiori vengono inserite nella stessa sezione. Per ulteriori informazioni, vedere [Q196774](https://support.microsoft.com/kb/196774).
+RC alloca 16 stringhe per ogni sezione e usa il valore dell'identificatore per determinare quale sezione deve contenere la stringa. Le stringhe i cui identificatori differiscono solo nei 4 bit più in basso vengono inserite nella stessa sezione. Per altre informazioni, vedere [Q196774](https://support.microsoft.com/kb/196774).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'uso dell'istruzione **un'STRINGTABLE** per visualizzare le stringhe ASCII:
+L'esempio seguente illustra l'uso **dell'istruzione STRINGTABLE** per visualizzare stringhe ASCII:
 
 ``` syntax
 #define IDS_HELLO    1
@@ -113,7 +113,7 @@ STRINGTABLE
 } 
 ```
 
-Nell'esempio seguente viene illustrato come codificare i caratteri Unicode:
+L'esempio seguente illustra come codificare i caratteri Unicode:
 
 ``` syntax
 STRINGTABLE
@@ -123,7 +123,7 @@ IDS_ARABICSTRING L"\x062a\x0639\x0644\x064a\x0645\x0627\x062a"
 END
 ```
 
-Nell'esempio seguente vengono illustrate le stringhe con ASCII e Unicode. Si noti che le stringhe senza "L" iniziale utilizzano il formato di escape a 2 cifre:
+L'esempio seguente illustra le stringhe con ASCII e Unicode. Si noti che le stringhe senza la "L" iniziale usano il formato di escape a 2 cifre:
 
 ``` syntax
 STRINGTABLE
@@ -136,7 +136,7 @@ IDS_3a L"Copyright \x00a92001"
 END
 ```
 
-Nell'esempio seguente viene illustrato come è possibile utilizzare le continuazioni di riga:
+L'esempio seguente illustra come è possibile usare le continuazioni di riga:
 
 ``` syntax
 STRINGTABLE
@@ -155,16 +155,16 @@ END
 [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa)
 </dt> <dt>
 
-[**ACCELERATORI**](accelerators-resource.md)
+[**Acceleratori**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARATTERISTICHE**](characteristics-statement.md)
+[**Caratteristiche**](characteristics-statement.md)
 </dt> <dt>
 
-[**LINGUAGGIO**](language-statement.md)
+[**Lingua**](language-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menu**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -173,6 +173,6 @@ END
 [**Versione**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 32c9f8ed-c5a8-43a4-9347-d631ff56827b
 title: System.Contact.HomeAddress3Country
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0ebb779af97ec865389008acc0b3d47afa4ab67
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 06921453b99437c4a742d3de92f89f215446a2f953a4d2d2f373ec63e4715a08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599770"
 ---
 # <a name="systemcontacthomeaddress3country"></a>System.Contact.HomeAddress3Country
 

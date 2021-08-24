@@ -1,6 +1,6 @@
 ---
-title: Oggetto Stream-Output
-description: Un oggetto Stream-output è un oggetto basato su modelli che trasmette i dati fuori dalla fase geometry-shader. Usare la sintassi seguente per dichiarare un oggetto Stream-output.
+title: Stream-Output Object
+description: Un oggetto di output di flusso è un oggetto basato su modelli che consente di trasmettere dati dalla fase geometry-shader. Usare la sintassi seguente per dichiarare un oggetto di output di flusso.
 ms.assetid: 07a5489c-c238-4466-9282-5b168448aff7
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,56 +9,56 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 98063ddb45633dda6c897abf0f82f29a394c3f95
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 79e0247b424ebb6f72622565845c17b622ab715cd8860a83ce24ae58ac7420c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789481"
 ---
-# <a name="stream-output-object"></a>Oggetto Stream-Output
+# <a name="stream-output-object"></a>Stream-Output Object
 
-Un oggetto Stream-output è un oggetto basato su modelli che trasmette i dati fuori dalla [fase geometry-shader](/previous-versions//bb205146(v=vs.85)). Usare la sintassi seguente per dichiarare un oggetto Stream-output.
+Un oggetto di output di flusso è un oggetto basato su modelli che consente di trasmettere dati dalla [fase geometry-shader](/previous-versions//bb205146(v=vs.85)). Usare la sintassi seguente per dichiarare un oggetto di output di flusso.
 
 
 
-| nome del tipo di dati *StreamOutputObject* di InOut <  >  *;* |
+| inout *StreamOutputObject* < *DataType* >  *Name;* |
 |------------------------------------------------------|
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-<span id="StreamOutputObject___________________________DataType_________________________________________Name"></span><span id="streamoutputobject___________________________datatype_________________________________________name"></span><span id="STREAMOUTPUTOBJECT___________________________DATATYPE_________________________________________NAME"></span>*StreamOutputObject*  <  *Tipo*  >  di dati   *Nome*
+<span id="StreamOutputObject___________________________DataType_________________________________________Name"></span><span id="streamoutputobject___________________________datatype_________________________________________name"></span><span id="STREAMOUTPUTOBJECT___________________________DATATYPE_________________________________________NAME"></span>*StreamOutputObject*  <  *Tipo di dati*  >    *Nome*
 </dt> <dd>
 
-Dichiarazione dell'oggetto Stream-output (SO).
+Dichiarazione so (Stream-Output Object).
 
 
 
-| Tipi di oggetti Stream-Output | Descrizione                       |
+| Stream-Output tipi di oggetto | Descrizione                       |
 |----------------------------|-----------------------------------|
 | *PointStream*              | Sequenza di primitive di punti    |
-| *LineStream*               | Sequenza di primitive di linea     |
-| *TriangleStream*           | Sequenza di primitive triangolari |
+| *LineStream*               | Sequenza di primitive di riga     |
+| *TriangleStream*           | Sequenza di primitive di triangoli |
 
 
 
- 
+ 
 
-*DataType* -tipo di dati di output; può essere qualsiasi [tipo di dati HLSL](dx-graphics-hlsl-data-types.md). Deve essere racchiuso tra parentesi acute.
+*Tipo di dati* : tipo di dati di output; può essere qualsiasi [tipo di dati HLSL](dx-graphics-hlsl-data-types.md). Deve essere racchiuso tra parentesi angolari.
 
-*Nome: nome* della variabile; stringa ASCII che identifica in modo univoco l'oggetto.
+*Nome* - Nome variabile; Stringa ASCII che identifica in modo univoco l'oggetto .
 
 </dd> </dl>
 
 ## <a name="example"></a>Esempio
 
-Questo è un esempio di dichiarazione di un oggetto di output di flusso che trasmette le primitive triangolari i cui dati sono definiti da PS \_ mappa cubi \_ nella struttura. Geometry shader è limitato alla generazione di 18 vertici.
+Questo è un esempio di dichiarazione di oggetto di output di flusso che genera il flusso di primitive triangolo i cui dati sono definiti dalla struttura PS \_ CUBEMAP \_ IN. Lo shader geometry è limitato alla generazione di 18 vertici.
 
 
 ```
@@ -78,11 +78,11 @@ void main( inout TriangleStream<PS_CUBEMAP_IN> CubeMapStream, triangle PS_CUBEMA
 
 
 
-Si tratta di un frammento di codice dell' [esempio CubeMapGS](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx).
+Si tratta di un frammento di codice [dell'esempio CubeMapGS](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx).
 
-## <a name="stream-output-object-methods"></a>Metodi dell'oggetto Stream-Output
+## <a name="stream-output-object-methods"></a>Stream-Output metodi dell'oggetto
 
-Usare la sintassi seguente per chiamare i metodi Stream-output-Object.
+Usare la sintassi seguente per chiamare i metodi stream-output-object.
 
 
 ```
@@ -97,14 +97,14 @@ Vengono implementati i metodi seguenti.
 
 | Metodi                                              | Descrizione                                                      |
 |------------------------------------------------------|------------------------------------------------------------------|
-| [Accoda](dx-graphics-hlsl-so-append.md)             | Accodare i dati di output a un flusso esistente.                        |
+| [Accoda](dx-graphics-hlsl-so-append.md)             | Aggiungere i dati di output a un flusso esistente.                        |
 | [RestartStrip](dx-graphics-hlsl-so-restartstrip.md) | Terminare la striscia primitiva corrente e avviare una nuova striscia primitiva. |
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questo oggetto è supportato nei modelli shader seguenti.
 
@@ -112,19 +112,19 @@ Questo oggetto è supportato nei modelli shader seguenti.
 
 | Modello di shader                                                        | Supportato |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4](dx-graphics-hlsl-sm4.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 4](dx-graphics-hlsl-sm4.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Modello Shader 4](dx-graphics-hlsl-sm4.md)
+[Modello shader 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

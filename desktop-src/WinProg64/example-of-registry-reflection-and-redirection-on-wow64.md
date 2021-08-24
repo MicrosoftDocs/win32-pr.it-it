@@ -1,27 +1,27 @@
 ---
-title: Esempio di reindirizzamento del registro di sistema in WOW64
-description: Nell'esempio di codice riportato di seguito vengono illustrate le visualizzazioni separate del registro di sistema fornite dal redirector del registro di sistema in Windows a 64 bit.
+title: Esempio di reindirizzamento del Registro di sistema in WOW64
+description: Nell'esempio di codice seguente vengono illustrate le visualizzazioni separate del Registro di sistema fornite dal redirector del Registro di sistema in un Windows a 64 bit.
 ms.assetid: b3ca2a47-402d-4e91-88bc-ddda6c776468
 keywords:
-- esempi di programmazione di Windows a 64 bit
-- Guida alla programmazione di Windows a 64 bit esempi di programmazione Windows a 64 bit
-- Guida alla programmazione di Windows a 64 bit esempi di programmazione Windows a 64 bit, reindirizzamento del registro di sistema in WOW64
-- 'esempio di reindirizzamento del registro di sistema: programmazione Windows a 64 bit'
-- Guida alla programmazione di Windows a 64 bit 64 Guida alla programmazione Windows a più bit, esempi vedere la guida alla programmazione di Windows a 64 bit
+- Esempi di programmazione Windows a 64 bit
+- Esempi di guida alla programmazione Windows a 64 bit Windows a 64 bit
+- Esempi di guida alla programmazione Windows a 64 bit Windows programmazione a 64 bit, reindirizzamento del Registro di sistema in WOW64
+- esempio di reindirizzamento del Registro di sistema a 64 bit Windows programmazione
+- 64-bit Windows 64-bit Windows Programming ( Programmazione di applicazioni a 64 bit), esempi Vedere esempi della guida alla programmazione Windows a 64 bit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff37b077137e9802e6716319623fe8e372941500
-ms.sourcegitcommit: 46376be61d3fa308f9b1a06d7e2fa122a39755af
+ms.openlocfilehash: 83428edb31e53bdd1c70825c7fa5a4d799a36536fa9c17f9ce1c4587ab096048
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "104399867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680230"
 ---
-# <a name="example-of-registry-redirection-on-wow64"></a>Esempio di reindirizzamento del registro di sistema in WOW64
+# <a name="example-of-registry-redirection-on-wow64"></a>Esempio di reindirizzamento del Registro di sistema in WOW64
 
-Nell'esempio di codice riportato di seguito vengono illustrate le visualizzazioni separate del registro di sistema fornite dal redirector del registro di sistema in Windows a 64 bit. Viene inoltre illustrato come vengono impostati i valori delle chiavi a seconda che una chiave venga condivisa o reindirizzata. Per altre informazioni, vedere [chiavi del registro di sistema interessate da WOW64](shared-registry-keys.md).
+Nell'esempio di codice seguente vengono illustrate le visualizzazioni separate del Registro di sistema fornite dal redirector del Registro di sistema in un Windows a 64 bit. Viene inoltre illustrato come vengono impostati i valori delle chiavi a seconda che una chiave sia condivisa o reindirizzata. Per altre informazioni, vedere [Chiavi del Registro di sistema interessate da WOW64.](shared-registry-keys.md)
 
-Compilare il codice seguente separatamente per Windows a 32 bit e a 64 bit. Eseguire tutti i file eseguibili risultanti in Windows a 64 bit e confrontare l'output. L'output di esempio per entrambe le versioni è elencato sotto il codice sorgente.
+Compilare il codice seguente separatamente per le applicazioni a 32 bit e a 64 bit Windows. Eseguire ogni file eseguibile risultante in un Windows a 64 bit e confrontare l'output. L'output di esempio per entrambe le versioni è elencato sotto il codice sorgente.
 
 
 ```C++
@@ -248,9 +248,9 @@ main()
 
 
 
-Quando viene eseguita la versione a 64 bit dell'esempio, viene generato il seguente output. I valori delle visualizzazioni predefinite e alternative di **HKCR \\ Hello** sono gli stessi perché questa chiave è condivisa. I valori delle altre chiavi sono diversi perché vengono reindirizzati.
+Quando viene eseguita la versione a 64 bit dell'esempio, viene generato l'output seguente. I valori delle visualizzazioni predefinite e alternative di **HKCR \\ Hello** sono gli stessi perché questa chiave è condivisa. I valori delle altre chiavi sono diversi perché vengono reindirizzati.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Quando questo esempio viene eseguito in questi sistemi operativi, le visualizzazioni predefinite e alternative della chiave LocalServer32 hanno lo stesso valore. Il motivo è che la chiave LocalServer32 viene reindirizzata e *riflessa*, che determina la sincronizzazione del relativo valore tra le visualizzazioni a 64 bit e a 32 bit del registro di sistema non appena viene chiuso l'handle della chiave. La reflection del registro di sistema è stata rimossa a partire da Windows 7. Per altre informazioni, vedere [Reflection del registro di sistema](registry-reflection.md).
+**Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Quando questo esempio viene eseguito in questi sistemi operativi, le viste predefinite e alternative della chiave LocalServer32 hanno lo stesso valore. Ciò è dovuto al fatto che la chiave LocalServer32 viene reindirizzata e riflessa, causando la sincronizzazione del relativo valore tra le visualizzazioni a 64 bit e a 32 bit del Registro di sistema non appena l'handle per la chiave viene chiuso. La reflection del Registro di sistema è stata rimossa a partire Windows 7. Per altre informazioni, vedere Reflection [del Registro di sistema.](registry-reflection.md)
 
 ``` syntax
 Application string: Hello! 64-bit World
@@ -271,7 +271,7 @@ Default view:     Hello! 64-bit World
 Alternate view:   Hello! 32-bit World
 ```
 
-Quando viene eseguita la versione a 32 bit dell'esempio, viene generato il seguente output. Per un'applicazione a 32 bit, la visualizzazione a 64 bit del registro di sistema è la visualizzazione alternativa, in modo che i valori siano invertiti, ad eccezione di HKCR \\ Hello, che è una chiave condivisa.
+Quando viene eseguita la versione a 32 bit dell'esempio, viene generato l'output seguente. Per un'applicazione a 32 bit, la visualizzazione a 64 bit del Registro di sistema è la visualizzazione alternativa, quindi i valori vengono invertati, ad eccezione di HKCR Hello, che è una chiave \\ condivisa.
 
 ``` syntax
 Application string: Hello! 32-bit World
@@ -292,16 +292,16 @@ Default view:     Hello! 32-bit World
 Alternate view:   Hello! 64-bit World
 ```
 
-Per esaminare l'effetto dell'esecuzione di questo esempio con regedit, controllare i valori delle chiavi seguenti. Si noti che le applicazioni devono evitare di usare Wow6432Node nei percorsi del registro di sistema hardcoded.
+Per esaminare l'effetto dell'esecuzione di questo esempio con regedit, esaminare i valori delle chiavi seguenti. Si noti che le applicazioni devono evitare l'uso di Wow6432Node nei percorsi del Registro di sistema hard-coded.
 
-**\\Hello World Software \\ HKLM**  
-**HKLM \\ software \\ Wow6432Node \\ Hello World**  
+**HKLM \\ SOFTWARE \\ Hello World**  
+**HKLM \\ SOFTWARE \\ Wow6432Node \\ Hello World**  
 **HKCR \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000}**  
 **HKCR \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000} \\ InprocServer32**  
-**HKCR \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000} \\ LocalServer32**  
+**HKCR \\ CLSID \\ {000000000-0000-0000-0000-ABCD00000000} \\ LocalServer32**  
 **HKCR \\ Hello HKCR \\ Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000}**  
-**HKCR \\ Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000} \\ InprocServer32**  
-**HKCR \\ Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD00000000} \\ LocalServer32**  
+**HKCR \\ Wow6432Node \\ CLSID \\ {000000000-0000-0000-0000-ABCD000000000} \\ InprocServer32**  
+**HKCR \\ Wow6432Node \\ CLSID \\ {000000000-0000-0000-0000-ABCD000000000} \\ LocalServer32**  
 **HKCR \\ Wow6432Node \\ Hello**  
 
 
@@ -309,15 +309,15 @@ Per esaminare l'effetto dell'esecuzione di questo esempio con regedit, controlla
 
 <dl> <dt>
 
-[Redirector del registro di sistema](registry-redirector.md)
+[Redirector del Registro di sistema](registry-redirector.md)
 </dt> <dt>
 
-[Reflection del registro di sistema](registry-reflection.md)
+[Reflection del Registro di sistema](registry-reflection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Restituisce il componente z prendendo il prodotto incrociato di due vettori 2D.
 ms.assetid: daec19f2-cd0f-4a68-affc-9a42bda8912c
-title: Funzione D3DXVec2CCW (D3dx9math. h)
+title: Funzione D3DXVec2CCW (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71c6e14171a9e7d12d86c30f05885cecf50ce973
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2b38adaf28b6e2394608cfb6f73f4a39d803d4fd5106f826d810a5c8dfd02618
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630701"
 ---
-# <a name="d3dxvec2ccw-function"></a>D3DXVec2CCW (funzione)
+# <a name="d3dxvec2ccw-function"></a>Funzione D3DXVec2CCW
 
 Restituisce il componente z prendendo il prodotto incrociato di due vettori 2D.
 
@@ -41,33 +41,33 @@ FLOAT D3DXVec2CCW(
 
 <dl> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR2**](d3dxvector2.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR2**](d3dxvector2.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR2 di**](d3dxvector2.md) origine.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Componente z.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione determina il componente z determinando il prodotto incrociato in base alla formula seguente: ((x1, Y1, 0) Cross (X2, Y2, 0)). O come illustrato nell'esempio seguente.
+Questa funzione determina il componente z determinando il prodotto incrociato in base alla formula seguente: ((x1,y1,0) cross (x2,y2,0)). Oppure, come illustrato nell'esempio seguente.
 
 
 ```
@@ -76,7 +76,7 @@ pV1->x * pV2->y - pV1->y * pV2->x
 
 
 
-Se il valore del componente z è positivo, il vettore V2 è in senso antiorario rispetto al vettore v1. Queste informazioni sono utili per l'abbattimento del back-face.
+Se il valore del componente z è positivo, il vettore V2 è in senso antiorario rispetto al vettore V1. Queste informazioni sono utili per il back-face culling.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Se il valore del componente z è positivo, il vettore V2 è in senso antiorario 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

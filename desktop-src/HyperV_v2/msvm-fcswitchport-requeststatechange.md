@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 74ef1d921cac8d6dc5b5ac1db84c343f0ff4bd06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 10b3b57c783dc57c1c08d9fae7c45689ca7da57dd7dba52f3fbc5d97f11af698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789913"
 ---
 # <a name="requeststatechange-method-of-the-msvm_fcswitchport-class"></a>Metodo RequestStateChange della classe Msvm \_ FcSwitchPort
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState** dell'istanza se il codice restituito del metodo **RequestStateChange** è 0 (processo completato senza errori) o 4096 (processo avviato). Per altre informazioni, vedi la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento . Deve essere uno dei valori seguenti.
+Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState** dell'istanza se il codice restituito del metodo **RequestStateChange** è 0 (Processo completato senza errori) o 4096 (Processo avviato). Per altre informazioni, vedere la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento. Deve essere uno dei valori seguenti.
 
 <dt>
 
@@ -64,7 +64,7 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresta** (4)
+**Arresto** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -85,7 +85,7 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvia** (8)
+**Rinvio** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -106,21 +106,21 @@ Nuovo stato. Le informazioni vengono inserite nella proprietà **RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reset** (11)
+**Reimposta** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Vendor Reserved** (32768..65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -158,7 +158,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -1,9 +1,9 @@
 ---
 title: onendalphablend
-description: Il gestore dell'evento onendalphablend gestisce un evento che si verifica quando un elemento completa un'operazione alphaBlendTo.
+description: Il gestore eventi onendalphablend gestisce un evento che si verifica quando un elemento completa un'operazione alphaBlendTo.
 ms.assetid: 3d075ce5-3e95-4a00-bc77-068b88d6c54e
 keywords:
-- Media Player Windows onendalphablend
+- onendalphablend Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81780d8a59d386513b97d137d43eb170c93034f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d77f6a488546760f61fb04d57f01fe5ee3a74a23b8b8d975b791ae22a5e2304a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647211"
 ---
 # <a name="onendalphablend"></a>onendalphablend
 
-Il gestore dell'evento **onendalphablend** gestisce un evento che si verifica quando un elemento completa un'operazione alphaBlendTo.
+Il **gestore eventi onendalphablend** gestisce un evento che si verifica quando un elemento completa un'operazione alphaBlendTo.
 
 ``` syntax
 onendalphablend
@@ -34,7 +34,7 @@ onendalphablend
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

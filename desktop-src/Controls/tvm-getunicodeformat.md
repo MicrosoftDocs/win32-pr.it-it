@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere Unicode per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetUnicodeFormat di TreeView.
+title: TVM_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: Recupera il flag di formato carattere Unicode per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la \_ macro TreeView GetUnicodeFormat.
 ms.assetid: d95f61b6-9ec1-4471-b24b-efe141428747
 keywords:
-- Controlli di Windows Message TVM_GETUNICODEFORMAT
+- TVM_GETUNICODEFORMAT di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88478d30e8da98ebf2e2325d6152087a14bc066a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f39bf926d488a8feb6a4015a531da34f88e4dbcb0452922c3f7715d0f14071e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769211"
 ---
-# <a name="tvm_getunicodeformat-message"></a>\_Messaggio GETUNICODEFORMAT TVM
+# <a name="tvm_getunicodeformat-message"></a>Messaggio TVM \_ GETUNICODEFORMAT
 
-Recupera il flag del formato carattere Unicode per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetUnicodeFormat di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getunicodeformat) .
+Recupera il flag di formato carattere Unicode per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ TreeView GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getunicodeformat)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT TVM**](tvm-setunicodeformat.md)
+[**TVM \_ SETUNICODEFORMAT**](tvm-setunicodeformat.md)
 </dt> </dl>
 
  

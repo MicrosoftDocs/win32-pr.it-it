@@ -1,22 +1,22 @@
 ---
-title: Uso della fase Input-Assembler senza buffer
-description: La creazione e l'associazione dei buffer non sono necessari se gli shader non richiedono buffer. Questa sezione contiene un esempio di semplici Vertex e pixel shader che delineano un singolo triangolo.
+title: Uso della Input-Assembler senza buffer
+description: La creazione e l'associazione di buffer non è necessaria se gli shader non richiedono buffer. Questa sezione contiene un esempio di vertici semplici e pixel shader che disegnano un singolo triangolo.
 ms.assetid: 84d24494-f2cb-4ca1-84fd-635e20f2c9ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3aa4c63176d184e1e67349149bd1f4044159e1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2bccbdb059e58efbef9e6c80eacbd9af5eb8a24045bdaab20bf540c13a9b719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104975954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752541"
 ---
-# <a name="using-the-input-assembler-stage-without-buffers"></a>Uso della fase Input-Assembler senza buffer
+# <a name="using-the-input-assembler-stage-without-buffers"></a>Uso della Input-Assembler senza buffer
 
-La creazione e l'associazione dei buffer non sono necessari se gli shader non richiedono buffer. Questa sezione contiene un esempio di semplici Vertex e pixel shader che delineano un singolo triangolo.
+La creazione e l'associazione di buffer non è necessaria se gli shader non richiedono buffer. Questa sezione contiene un esempio di vertici semplici e pixel shader che disegnano un singolo triangolo.
 
--   [Vertex shader](#vertex-shader)
--   [Pixel shader](#pixel-shader)
+-   [Vertex Shader](#vertex-shader)
+-   [Pixel Shader](#pixel-shader)
 -   [Tecnica](#technique)
 -   [Codice dell'applicazione](#application-code)
 -   [Argomenti correlati](#related-topics)
@@ -131,12 +131,12 @@ m_pD3D11Device->Draw( 3, 0 );
 
 <dl> <dt>
 
-[Introduzione con la fase di Input-Assembler](d3d10-graphics-programming-guide-input-assembler-stage-getting-started.md)
+[Attività iniziali con la Input-Assembler di lavoro](d3d10-graphics-programming-guide-input-assembler-stage-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

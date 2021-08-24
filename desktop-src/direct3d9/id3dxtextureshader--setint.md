@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 23c347c35b8accd60bdb81c931ebc3d35b48f957
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 984115e6e28c6d2c9cfe574a6097c94d6eca96e6f649f10bd7411f40abd13667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747341"
 ---
 # <a name="id3dxtextureshadersetint-method"></a>Metodo ID3DXTextureShader::SetInt
 

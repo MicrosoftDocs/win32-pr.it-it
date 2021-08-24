@@ -1,9 +1,9 @@
 ---
-title: Visualizza scriptFile
-description: L'attributo scriptFile specifica i nomi file dei file JScript associati.
+title: VIEW.scriptFile
+description: L'attributo scriptFile specifica i nomi dei file JScript file.
 ms.assetid: c285c467-5ba7-4f46-b316-977e833c3cdd
 keywords:
-- Visualizza Media Player Windows scriptFile
+- View.scriptFile Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac7f447f1934c2589b7ae52b3a24e2dcb2b1ef7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f22b0fb5f0815c8977a363c033d26c0d68f725e0cdcd546bc2f2c1a7b723c64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615331"
 ---
-# <a name="viewscriptfile"></a>Visualizza scriptFile
+# <a name="viewscriptfile"></a>VIEW.scriptFile
 
-L'attributo **scriptFile** specifica i nomi file dei file JScript associati.
+**L'attributo scriptFile** specifica i nomi dei file JScript file.
 
 ``` syntax
         elementID.scriptFile
@@ -29,11 +29,11 @@ L'attributo **scriptFile** specifica i nomi file dei file JScript associati.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di sola scrittura senza valore predefinito. I nomi file di più file JScript sono delimitati da punti e virgola. Gli spazi iniziali e successivi e i punti e virgola non devono essere presenti.
+Questo attributo è una stringa di sola **scrittura** senza alcun valore predefinito. I nomi file di più JScript sono delimitati da punti e virgola. Gli spazi iniziali e seguenti e i punti e virgola non devono essere presenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il codice nei file specificati può essere utilizzato da qualsiasi gestore eventi nella vista. Il codice usato dai gestori eventi in più visualizzazioni può essere inserito in un file con lo stesso nome del file di definizione dell'interfaccia, ma con un'estensione js anziché un'estensione WMS. Questo file viene caricato automaticamente e non deve essere specificato nel file di definizione dell'interfaccia.
+Il codice nei file specificati può essere usato da qualsiasi gestore eventi nella visualizzazione. Il codice usato dai gestori eventi in più visualizzazioni può essere inserito in un file con lo stesso nome del file di definizione dell'interfaccia, ma con estensione .js anziché wms. Questo file viene caricato automaticamente e non deve essere specificato nel file di definizione dell'interfaccia.
 
 ## <a name="examples"></a>Esempio
 
@@ -52,7 +52,7 @@ Il codice nei file specificati può essere utilizzato da qualsiasi gestore event
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo InactivateWindow disattiva la finestra. Nella classe di base, questo metodo nasconde la finestra.
+description: Il metodo InactivateWindow attiva la finestra. Nella classe di base questo metodo nasconde la finestra.
 ms.assetid: b575d4fd-dee1-4ae5-abb4-e92ae361e82a
-title: Metodo CBaseWindow. InactivateWindow (Winutil. h)
+title: Metodo CBaseWindow.InactivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d1c5e925a3d9b510918636a221d5ad6e1b7da736
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3cf175a55ab5739b0fa171fe4c9553d3691be82d71b38fd5eb480d6e28043440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567461"
 ---
-# <a name="cbasewindowinactivatewindow-method"></a>CBaseWindow. InactivateWindow, metodo
+# <a name="cbasewindowinactivatewindow-method"></a>Metodo CBaseWindow.InactivateWindow
 
-Il `InactivateWindow` metodo disattiva la finestra. Nella classe di base, questo metodo nasconde la finestra.
+Il `InactivateWindow` metodo disattiva la finestra. Nella classe di base questo metodo nasconde la finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                            |
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                    |
-| <dl> <dt>**S \_ false**</dt> </dl> | La finestra è già inattiva.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La finestra è già inattiva.<br/> |
 
 
 
@@ -61,8 +61,8 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

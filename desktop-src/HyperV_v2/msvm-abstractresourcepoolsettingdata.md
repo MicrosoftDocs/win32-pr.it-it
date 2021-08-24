@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dca3da14ac74a8d6fab1ba96db98f9e2eccd74ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 74e396da1135c481079e9fc20ce940774ef58dab983d36cabc131aa8bbe13f38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693650"
 ---
 # <a name="msvm_abstractresourcepoolsettingdata-class"></a>Classe Msvm \_ AbstractResourcePoolSettingData
 
 Rappresenta le impostazioni di [**un'istanza di Msvm \_ ResourcePool**](msvm-resourcepool.md) che non sono correlate all'allocazione.
 
-La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -222,21 +222,21 @@ Specifica se il pool di risorse può tentare di usare altre risorse host per sod
 
 <span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>
 
-**Affinità rigida** (5)
+**Affinità hard** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF Reserved** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Vendor Reserved** (32767..65535)
+**Fornitore riservato** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -373,7 +373,7 @@ Tipo di risorsa che il pool di risorse può allocare.
 
 <span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>
 
-**HBA SCSI parallela** (6)
+**HBA SCSI parallelo** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -387,7 +387,7 @@ Tipo di risorsa che il pool di risorse può allocare.
 
 <span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>
 
-**ISCSI HBA** (8)
+**HBA iSCSI** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -464,7 +464,7 @@ Tipo di risorsa che il pool di risorse può allocare.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extent di** archiviazione (19)
+**Archiviazione extent** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -555,7 +555,7 @@ Tipo di risorsa che il pool di risorse può allocare.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volume di archiviazione** (32)
+**Archiviazione volume** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -589,9 +589,9 @@ Tipo di risorsa che il pool di risorse può allocare.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

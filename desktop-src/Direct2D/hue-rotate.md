@@ -1,41 +1,41 @@
 ---
-title: Effetto Rotazione tonalità
-description: Usare l'effetto di rotazione tonalità per modificare la tonalità di un'immagine applicando una matrice di colori basata sull'angolo di rotazione.
+title: Effetto di rotazione della tonalità
+description: Usare l'effetto di rotazione della tonalità per modificare la tonalità di un'immagine applicando una matrice di colori in base all'angolo di rotazione.
 ms.assetid: D322DB2C-2B8B-4101-BFB2-97E49CAC7BF6
 keywords:
-- effetto Rotazione tonalità
+- Effetto di rotazione della tonalità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 525dbe8fc94377080fbae34b80252c84c05073ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 531ab9b1649db96bc5ee100df98ed10b4021b506e3ad71bb426778655348b2df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104562147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569132"
 ---
-# <a name="hue-rotatation-effect"></a>Effetto Rotazione tonalità
+# <a name="hue-rotatation-effect"></a>Effetto di rotazione della tonalità
 
-Usare l'effetto di rotazione tonalità per modificare la tonalità di un'immagine applicando una matrice di colori basata sull'angolo di rotazione.
+Usare l'effetto di rotazione della tonalità per modificare la tonalità di un'immagine applicando una matrice di colori in base all'angolo di rotazione.
 
 Il CLSID per questo effetto è CLSID \_ D2D1HueRotation.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Bitmap di output](#output-bitmap)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-Nell'esempio riportato di seguito vengono illustrate le immagini di input e di output dell'effetto Rotazione tonalità con un angolo di rotazione di 270 gradi.
+L'esempio seguente mostra le immagini di input e output dell'effetto di rotazione della tonalità con un angolo di rotazione di 270 gradi.
 
 
 
 | Prima                                                       |
 |--------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)   |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)   |
 | After                                                        |
-| ![immagine dopo la trasformazione.](images/17-huerotation.png) |
+| ![l'immagine dopo la trasformazione.](images/17-huerotation.png) |
 
 
 
@@ -56,19 +56,19 @@ m_d2dContext->EndDraw();
 
 
 
-L'effetto calcola una matrice di colori basata sull'angolo di rotazione (*?*) specificato con la proprietà d2d1 \_ HUEROTATION \_ prop \_ Angle. Ecco le equazioni della matrice.
+L'effetto calcola una matrice di colori in base all'angolo di rotazione (*?*) specificato con la proprietà D2D1 \_ HUEROTATION \_ PROP \_ ANGLE. Ecco le equazioni della matrice.
 
-![calcoli di rotazione tonalità](images/hue-formula.png)
+![Calcoli della rotazione della tonalità](images/hue-formula.png)
 
-La matrice creata dipende solo dall'angolo di rotazione. Se è necessaria una matrice specifica, è possibile usare l'effetto della [matrice di colori](color-matrix.md) .
+La matrice creata dipende solo dall'angolo di rotazione. Se è necessaria [una matrice specifica,](color-matrix.md) è possibile usare l'effetto matrice di colori.
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                         | Tipo e valore predefinito           | Descrizione                              |
+| Enumerazione del nome visualizzato e dell'indice                         | Tipo e valore predefinito           | Descrizione                              |
 |------------------------------------------------------------|----------------------------------|------------------------------------------|
-| Angle<br/> \_Angolo della \_ prop \_ HUEROTATION d2d1<br/> | FLOAT<br/> 0,0 f<br/> | Angolo per ruotare la tonalità, in gradi. |
+| Angle<br/> D2D1 \_ HUEROTATION \_ PROP \_ ANGLE<br/> | FLOAT<br/> 0,0f<br/> | Angolo in gradi per ruotare la tonalità. |
 
 
 
@@ -76,7 +76,7 @@ La matrice creata dipende solo dall'angolo di rotazione. Se è necessaria una ma
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
+Le dimensioni della bitmap di output sono le stesse della bitmap di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,10 +84,10 @@ La dimensione bitmap di output corrisponde alla dimensione bitmap di input.
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

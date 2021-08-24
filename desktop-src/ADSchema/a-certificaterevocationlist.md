@@ -1,10 +1,10 @@
 ---
-title: Attributo certificate-revoche-List
-description: Rappresenta un elenco di certificati che sono stati revocati.
+title: Attributo Certificate-Revocation-List
+description: Rappresenta un elenco di certificati revocati.
 ms.assetid: fb7b4888-15c0-475b-a87a-7cb0656963bb
 ms.tgt_platform: multiple
 keywords:
-- Certificate-revoca-elenca attributo AD schema
+- Schema AD dell'attributo Certificate-Revocation-List
 - Schema AD dell'attributo certificateRevocationList
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae77265ffeeae76ae07d608845723b1828772f0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03d3977093099bb3935db9833ae96f7cc3e689bb6265d679513164c67a1a9e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509771"
 ---
-# <a name="certificate-revocation-list-attribute"></a>Attributo certificate-revoche-List
+# <a name="certificate-revocation-list-attribute"></a>Attributo Certificate-Revocation-List
 
-Rappresenta un elenco di certificati che sono stati revocati.
+Rappresenta un elenco di certificati revocati.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Elenco di revoche di certificati                           |
-| LDAP-Display-Name | certificateRevocationList                             |
+| Ldap-Display-Name | certificateRevocationList                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 2.5.4.39                                              |
-| System-ID-GUID    | 1677579f-47f3-11d1-a9c3-0000f80367c1                  |
+| System-Id-Guid    | 1677579f-47f3-11d1-a9c3-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Rappresenta un elenco di certificati che sono stati revocati.
 | ID collegamento                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**CRL-punto di distribuzione**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 

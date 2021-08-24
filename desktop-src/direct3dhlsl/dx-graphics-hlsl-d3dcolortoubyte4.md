@@ -1,9 +1,9 @@
 ---
 title: D3DCOLORtoUBYTE4
-description: Converte un vettore 4D a virgola mobile impostato da un D3DCOLOR in un UBYTE4.
+description: Converte un vettore 4D a virgola mobile impostato da D3DCOLOR in UBYTE4.
 ms.assetid: 20a7be00-1e36-41c3-bc98-933b3faa8f35
 keywords:
-- HLSL D3DCOLORtoUBYTE4
+- D3DCOLORtoUBYTE4 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,27 +13,27 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c60f0934d6700ec7fbd9e6d9e6443cb6409ab15f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cea438b8c305c7ff76b6f9795c9f2c869a0f262f70e670d2e34c5b882de7c9c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104517073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789801"
 ---
 # <a name="d3dcolortoubyte4"></a>D3DCOLORtoUBYTE4
 
-Converte un vettore 4D a virgola mobile impostato da un D3DCOLOR in un UBYTE4.
+Converte un vettore 4D a virgola mobile impostato da D3DCOLOR in UBYTE4.
 
 
 
-| *ret* D3DCOLORtoUBYTE4 (*x*) |
+| *ret* D3DCOLORtoUBYTE4(*x*) |
 |-----------------------------|
 
 
 
  
 
-Questa funzione swizzles e ridimensiona i componenti del parametro *x* . Usare questa funzione per compensare la mancanza di supporto UBYTE4 in alcuni componenti hardware.
+Questa funzione scorre e ridimensiona i componenti del *parametro x.* Usare questa funzione per compensare la mancanza di supporto UBYTE4 in alcuni componenti hardware.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Questa funzione swizzles e ridimensiona i componenti del parametro *x* . Usare q
 
 | Elemento                                                   | Descrizione                                              |
 |--------------------------------------------------------|----------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nell' \] oggetto Vector4 a virgola mobile da convertire.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Vettore a virgola mobile 4 da convertire.<br/> |
 
 
 
@@ -49,7 +49,7 @@ Questa funzione swizzles e ridimensiona i componenti del parametro *x* . Usare q
 
 ## <a name="return-value"></a>Valore restituito
 
-Rappresentazione UBYTE4 del parametro *x* .
+Rappresentazione UBYTE4 del *parametro x.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -57,14 +57,14 @@ Rappresentazione UBYTE4 del parametro *x* .
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| *x*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| *RET* | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**intero**](/windows/desktop/WinProg/windows-data-types)                      | 4    |
+| *x*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| *Ret* | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Intero**](/windows/desktop/WinProg/windows-data-types)                      | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -72,8 +72,8 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì       |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì       |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
 

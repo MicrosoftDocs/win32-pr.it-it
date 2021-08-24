@@ -1,19 +1,19 @@
 ---
-description: L'API Direct3D 9 opera sul modello di driver video (XPDM) di Windows XP o sul modello di driver di visualizzazione (WDDM) di Windows Vista, a seconda del sistema operativo installato.
+description: L'API Direct3D 9 opera sul modello di driver video Windows XP (XPDM) o sul modello di driver di visualizzazione di Windows Vista (WDDM), a seconda del sistema operativo installato.
 ms.assetid: b552c822-aa01-4f1d-a0a6-1411ab006e7b
 title: XPDM e WDDM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e12c7d811850c953eb53c346b628363a2642dda9
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: c0332198cd7c9425a3b5a107259dda1b1e974a04a2379244cdf939384260a89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746051"
 ---
 # <a name="xpdm-vs-wddm"></a>XPDM e WDDM
 
-L'API Direct3D 9 opera sul modello di driver video (XPDM) di Windows XP o sul modello di driver di visualizzazione (WDDM) di Windows Vista, a seconda del sistema operativo installato. Esistono alcune differenze nel comportamento dell'API Direct3D nei due modelli di driver.
+L'API Direct3D 9 opera sul modello di driver video Windows XP (XPDM) o sul modello di driver di visualizzazione di Windows Vista (WDDM), a seconda del sistema operativo installato. Esistono alcune differenze nel comportamento dell'API Direct3D nei due modelli di driver.
 
 -   [Desktop sicuro](#secure-desktop)
 -   [Desktop remoto](#remote-desktop)
@@ -50,7 +50,7 @@ Differenze tra XPDM e WDDM:
 
 ## <a name="windows-service"></a>Servizio Windows
 
-Un servizio Windows è un processo eseguito in background, controllato da Gestione controllo servizi. Un servizio viene eseguito indipendentemente dal desktop attivo e pertanto ha una capacità limitata di interagire con gli utenti.
+Un Windows è un processo che viene eseguito in background, controllato da Gestione controllo servizi. Un servizio viene eseguito indipendentemente dal desktop attivo e pertanto ha una capacità limitata di interagire con gli utenti.
 
 Differenze tra XPDM e WDDM:
 
@@ -61,7 +61,7 @@ Differenze tra XPDM e WDDM:
  
 
 > [!Note]  
-> Non è possibile usare Direct3D 9 in un servizio Windows. Per altre informazioni, vedere [l'articolo del supporto tecnico Microsoft 978635.](https://support.microsoft.com/kb/978635)
+> Non è possibile usare Direct3D 9 in un Windows servizio. Per altre informazioni, vedere l'articolo del supporto [tecnico Microsoft 978635](https://support.microsoft.com/kb/978635).
 
  
 
@@ -89,7 +89,7 @@ La tabella seguente riepiloga le differenze elencate di seguito.
 
  
 
-Per altre informazioni su XPDM, WDDM, Direct3D9Ex e Direct3D 10, vedere API [di grafica in Windows.](../direct3darticles/graphics-apis-in-windows-vista.md)
+Per altre informazioni su XPDM, WDDM, Direct3D9Ex e Direct3D 10, vedere API grafiche [in Windows](../direct3darticles/graphics-apis-in-windows-vista.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

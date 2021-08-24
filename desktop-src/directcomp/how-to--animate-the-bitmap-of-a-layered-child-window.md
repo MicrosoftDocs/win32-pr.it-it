@@ -1,22 +1,22 @@
 ---
-title: Come aggiungere un'animazione alla bitmap di una finestra figlio a più livelli
-description: In questo argomento viene descritto come creare e animare un oggetto visivo che utilizza la bitmap di una finestra figlio sovrapposta come contenuto dell'oggetto visivo.
+title: Come animare la bitmap di una finestra figlio su più livelli
+description: Questo argomento descrive come creare e animare un oggetto visivo che usa la bitmap di una finestra figlio su più livelli come contenuto dell'oggetto visivo.
 ms.assetid: 8912CCF9-C343-45CB-AB31-55D26C118AF2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 038ae3d32fd49a8f795a35f35c6c87889e4c9406
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b882d1be2642f341e74a193605b217a9b7e2d0cc295370c7a5ec8bee4a844f03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670971"
 ---
-# <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Come aggiungere un'animazione alla bitmap di una finestra figlio a più livelli
+# <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Come animare la bitmap di una finestra figlio su più livelli
 
 > [!NOTE]
-> Per le app in Windows 10, è consigliabile usare le API Windows. UI. Composition anziché DirectComposition. Per altre informazioni, vedere [modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Per le app Windows 10, è consigliabile usare le API Windows.UI.Composition anziché DirectComposition. Per altre informazioni, vedi [Modernizzare l'app desktop usando il livello visivo](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-In questo argomento viene descritto come creare e animare un oggetto visivo che utilizza la bitmap di una finestra figlio sovrapposta come contenuto dell'oggetto visivo. Nell'esempio descritto in questo argomento viene utilizzata una trasformazione scala animata per "aumentare" la bitmap di una finestra figlio dalle dimensioni del pollice alla dimensione massima. Per ulteriori informazioni sulle finestre sovrapposte, vedere [bitmap della finestra](bitmap-surfaces.md).
+Questo argomento descrive come creare e animare un oggetto visivo che usa la bitmap di una finestra figlio su più livelli come contenuto dell'oggetto visivo. L'esempio descritto in questo argomento usa una trasformazione della scala animata per "aumentare" la bitmap di una finestra figlio dalle dimensioni del cursore alle dimensioni complete. Per altre informazioni sulle finestre su più livelli, vedere [Bitmap delle finestre.](bitmap-surfaces.md)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
@@ -24,7 +24,7 @@ In questo argomento viene descritto come creare e animare un oggetto visivo che 
 
 -   [DirectComposition](directcomposition-portal.md)
 -   [Grafica Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
--   [Infrastruttura grafica DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
+-   [DirectX Graphic Infrastructure (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
@@ -34,11 +34,11 @@ In questo argomento viene descritto come creare e animare un oggetto visivo che 
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-a-layered-child-window"></a>Passaggio 1: creare una finestra figlio a più livelli
+### <a name="step-1-create-a-layered-child-window"></a>Passaggio 1: Creare una finestra figlio su più livelli
 
-Usare la procedura seguente per creare una finestra figlio a più livelli.
+Usare la procedura seguente per creare una finestra figlio su più livelli.
 
-1.  Registrare la classe della finestra figlio e creare una finestra figlio con lo stile [**WS \_ ex a \_ livelli**](/windows/desktop/winmsg/extended-window-styles) . Nell'esempio seguente `m_dpiX` e `m_dpiY` specificare la risoluzione dello schermo in pixel per pollice logico e `m_hwndMain` è l'handle della finestra principale dell'applicazione.
+1.  Registrare la classe della finestra figlio e creare una finestra figlio con lo [**stile WS \_ EX \_ LAYERED.**](/windows/desktop/winmsg/extended-window-styles) Nell'esempio seguente specificare la risoluzione dello schermo in pixel per pollice logico e è l'handle della finestra principale `m_dpiX` `m_dpiY` `m_hwndMain` dell'applicazione.
 ```C++
     HWND m_hwndLayeredChild;
 
@@ -82,7 +82,7 @@ HRESULT hr = S_OK;
 
     
 
-2.  Chiamare la funzione [**SetLayeredWindowAttributes**](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) per impostare la chiave di colore della trasparenza e l'opacità della finestra figlio sovrapposta. Il codice seguente imposta la chiave di colore della trasparenza su zero e l'opacità su 255 (opaco).
+2.  Chiamare la [**funzione SetLayeredWindowAttributes**](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) per impostare la chiave di colore di trasparenza e l'opacità della finestra figlio su più livelli. Il codice seguente imposta la chiave di colore della trasparenza su zero e l'opacità su 255 (opaca).
 
 ```C++
     if (!SetLayeredWindowAttributes(m_hwndLayeredChild, 0, 255, LWA_ALPHA))
@@ -93,22 +93,22 @@ HRESULT hr = S_OK;
 
     
 
-3.  Eseguire il rendering del contenuto nella finestra figlio.
+3.  Eseguire il rendering di contenuto nella finestra figlio.
 
-### <a name="step-2-initialize-directcomposition-objects"></a>Passaggio 2: inizializzare gli oggetti DirectComposition
+### <a name="step-2-initialize-directcomposition-objects"></a>Passaggio 2: Inizializzare gli oggetti DirectComposition
 
-Creare l'oggetto dispositivo e l'oggetto di destinazione della composizione. Per ulteriori informazioni, vedere [come inizializzare DirectComposition](initialize-directcomposition.md).
+Creare l'oggetto dispositivo e l'oggetto di destinazione della composizione. Per altre informazioni, vedere [Come inizializzare DirectComposition.](initialize-directcomposition.md)
 
-### <a name="step-3-create-a-visual-object-and-set-the-layered-child-windows-bitmap-as-the-content-property"></a>Passaggio 3: creare un oggetto visivo e impostare la bitmap della finestra figlio sovrapposta come proprietà di contenuto
+### <a name="step-3-create-a-visual-object-and-set-the-layered-child-windows-bitmap-as-the-content-property"></a>Passaggio 3: Creare un oggetto visivo e impostare la bitmap della finestra figlio su più livelli come proprietà del contenuto
 
-Usare la procedura seguente per creare un oggetto visivo, impostare la relativa proprietà Content per usare la bitmap della finestra figlio sovrapposta, quindi aggiungere l'oggetto visivo alla struttura ad albero visuale.
+Usare la procedura seguente per creare un oggetto visivo, impostarne la proprietà del contenuto in modo da usare la bitmap della finestra figlio su più livelli e quindi aggiungere l'oggetto visivo alla struttura ad albero visuale.
 
-1.  Chiamare [**IDCompositionDevice:: CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) per creare un oggetto visivo.
-2.  Creare una superficie Microsoft DirectComposition per la finestra figlio sovrapposta passando l'handle della finestra figlio alla funzione [**CreateSurfaceFromHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd) .
-3.  Chiamare il metodo [**IDCompositionVisual::**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) SetValue dell'oggetto visivo per impostare la nuova superficie come contenuto visivo della finestra figlio sovrapposta.
-4.  Aggiungere l'oggetto visivo alla struttura ad albero visuale. Per aggiungere l'oggetto visivo alla radice della struttura ad albero, chiamare il metodo [**IDCompositionTarget:: seroot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) . Per aggiungere l'oggetto visivo come figlio di un altro oggetto visivo, usare il metodo [**IDCompositionVisual:: AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) dell'oggetto visivo padre.
+1.  Chiamare [**IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) per creare un oggetto visivo.
+2.  Creare una superficie Microsoft DirectComposition per la finestra figlio su più livelli passando l'handle della finestra figlio alla [**funzione CreateSurfaceFromHwnd.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd)
+3.  Chiamare il metodo [**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) dell'oggetto visivo per impostare la nuova superficie come contenuto visivo della finestra figlio su più livelli.
+4.  Aggiungere l'oggetto visivo alla struttura ad albero visuale. Per aggiungere l'oggetto visivo alla radice dell'albero, chiamare il [**metodo IDCompositionTarget::SetRoot.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) Per aggiungere l'oggetto visivo come figlio di un altro oggetto visivo, usare il [**metodo IDCompositionVisual::AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) dell'oggetto visivo padre.
 
-Nell'esempio seguente viene creato un oggetto visivo, viene impostata la relativa proprietà Content per utilizzare la bitmap della finestra figlio sovrapposta e viene aggiunto l'oggetto visivo alla radice della struttura ad albero visuale.
+L'esempio seguente crea un oggetto visivo, ne imposta la proprietà Content per usare la bitmap della finestra figlio su più livelli e aggiunge l'oggetto visivo alla radice della struttura ad albero visuale.
 
 
 ```C++
@@ -134,9 +134,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-4-create-an-animation-object-and-a-scale-transform-object"></a>Passaggio 4: creare un oggetto animazione e un oggetto trasformazione scala
+### <a name="step-4-create-an-animation-object-and-a-scale-transform-object"></a>Passaggio 4: Creare un oggetto animazione e un oggetto di trasformazione della scala
 
-Usare il metodo [**IDCompositionDevice:: CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) per creare un oggetto animazione e il metodo [**IDCompositionDevice:: CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform) per creare un oggetto trasformazione di scala.
+Usare il [**metodo IDCompositionDevice::CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) per creare un oggetto animazione e il metodo [**IDCompositionDevice::CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform) per creare un oggetto di trasformazione della scala.
 
 
 ```C++
@@ -157,11 +157,11 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-5-build-the-animation-function"></a>Passaggio 5: compilare la funzione di animazione
+### <a name="step-5-build-the-animation-function"></a>Passaggio 5: Creare la funzione di animazione
 
-Usare i metodi dell'interfaccia [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) dell'oggetto Animation per compilare una funzione di animazione.
+Usare i metodi dell'interfaccia [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) dell'oggetto animazione per creare una funzione di animazione.
 
-Nell'esempio seguente viene creata una funzione di animazione semplice costituita da un segmento polinomiale cubico e un segmento finale.
+Nell'esempio seguente viene compilata una semplice funzione di animazione costituita da un segmento polinomiale cubico e un segmento finale.
 
 
 ```C++
@@ -176,9 +176,9 @@ pAnimateScale->End(1.0f, 1.0f);
 
 
 
-### <a name="step-6-apply-the-animation-object-to-properties-of-the-scale-transform-object"></a>Passaggio 6: applicare l'oggetto animazione alle proprietà dell'oggetto trasformazione scala
+### <a name="step-6-apply-the-animation-object-to-properties-of-the-scale-transform-object"></a>Passaggio 6: Applicare l'oggetto animazione alle proprietà dell'oggetto di trasformazione della scala
 
-Usare i metodi [**IDCompositionScale:: SetScaleX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(idcompositionanimation)) e [**sescaley**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)) per applicare l'oggetto animazione alle proprietà ScaleX e ScaleY dell'oggetto Transform di ridimensionamento.
+Usare i [**metodi IDCompositionScale::SetScaleX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(idcompositionanimation)) e [**SetScaleY**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)) per applicare l'oggetto animazione alle proprietà ScaleX e ScaleY dell'oggetto di trasformazione della scala.
 
 
 ```C++
@@ -200,9 +200,9 @@ pScale->SetScaleY(pAnimateScale);
 
 
 
-### <a name="step-7-apply-the-scale-transform-object-to-the-transform-property-of-the-visual"></a>Passaggio 7: applicare l'oggetto Transform di ridimensionamento alla proprietà Transform dell'oggetto visivo
+### <a name="step-7-apply-the-scale-transform-object-to-the-transform-property-of-the-visual"></a>Passaggio 7: Applicare l'oggetto trasformazione della scala alla proprietà transform dell'oggetto visivo
 
-Usare il metodo [**IDCompositionVisual:: setransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)) per applicare l'oggetto Transform di ridimensionamento alla proprietà Transform dell'oggetto visivo.
+Usa il [**metodo IDCompositionVisual::SetTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)) per applicare l'oggetto trasformazione della scala alla proprietà Transform dell'oggetto visivo.
 
 
 ```C++
@@ -211,9 +211,9 @@ hr = pVisual->SetTransform(pScale);
 
 
 
-### <a name="step-8-cloak-the-layered-child-window"></a>Passaggio 8: mascherare la finestra figlio sovrapposta
+### <a name="step-8-cloak-the-layered-child-window"></a>Passaggio 8: Mascherare la finestra figlio su più livelli
 
-Prima di eseguire il commit dell'animazione, usare la funzione [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con il flag [**DWMWA \_ Cloak**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) per "mascherare" la finestra figlio a più livelli. Il mascheramento rimuove la finestra figlio sovrapposta dalla visualizzazione mentre la versione animata della visualizzazione bitmap della finestra viene sottoposta a rendering sullo schermo.
+Prima di eseguire il commit dell'animazione, usare la funzione [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con il flag [**\_ CLOAK DWMWA**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) per "mascherare" la finestra figlio su più livelli. La clonazione rimuove la finestra figlio su più livelli dalla visualizzazione mentre viene eseguito il rendering sullo schermo della versione animata della visualizzazione bitmap della finestra.
 
 
 ```C++
@@ -226,15 +226,15 @@ DwmSetWindowAttribute(pDemoApp->m_hwndLayeredChild,
 
 
 
-### <a name="step-9-commit-the-composition"></a>Passaggio 9: eseguire il commit della composizione
+### <a name="step-9-commit-the-composition"></a>Passaggio 9: Eseguire il commit della composizione
 
-Usare il metodo [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) per eseguire il commit del batch di comandi in Microsoft DirectComposition per l'elaborazione. L'animazione verrà visualizzata nella finestra di destinazione.
+Usare il [**metodo IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) per eseguire il commit del batch di comandi in Microsoft DirectComposition per l'elaborazione. L'animazione verrà visualizzata nella finestra di destinazione.
 
-### <a name="step-10-uncloak-the-layered-child-window"></a>Passaggio 10: rendere visibile la finestra figlio sovrapposta
+### <a name="step-10-uncloak-the-layered-child-window"></a>Passaggio 10: Rimuovere la finestra figlio su più livelli
 
-Al termine dell'animazione, usare la funzione [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con il flag **DWMWA \_ Cloak** per rendere visibile la finestra figlio a più livelli.
+Al termine dell'animazione, usare la funzione [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con il flag **\_ CLOAK DWMWA** per rimuovere la finestra figlio su più livelli.
 
-### <a name="step-11-release-directcomposition-objects"></a>Passaggio 11: rilasciare oggetti DirectComposition
+### <a name="step-11-release-directcomposition-objects"></a>Passaggio 11: Rilasciare oggetti DirectComposition
 
 Assicurarsi di rilasciare tutti gli oggetti DirectComposition quando non sono più necessari. Nell'esempio seguente viene chiamata la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definita dall'applicazione per liberare gli oggetti DirectComposition.
 
@@ -1284,9 +1284,9 @@ HRESULT DemoApp::LoadResourceD2DBitmap(
 [Oggetti bitmap](bitmap-surfaces.md)
 </dt> <dt>
 
-[Esempio di finestra figlio DirectComposition a livelli](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionLayeredChildWindow)
+[Esempio di finestra figlio su più livelli DirectComposition](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionLayeredChildWindow)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

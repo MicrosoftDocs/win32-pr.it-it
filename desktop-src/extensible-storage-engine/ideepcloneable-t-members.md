@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri di IDeepCloneable <T>'
-title: Membri IDeepCloneable (T)
+description: 'Altre informazioni su: Membri IDeepCloneable <T>'
+title: Membri IDeepCloneable(T)
 TOCTitle: IDeepCloneable(T) members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IDeepCloneable`1
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh596443(v=EXCHG.10)
 ms:contentKeyID: 39515520
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 34d2274172cbb80f3c1bf18153aab58170279ebd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 254b315a87910ccef1feeae1213a55ca5396263b31e1b1c2ae748905155a2b23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721491"
 ---
-# <a name="ideepcloneablet-members"></a>Membri di IDeepCloneable \<T\>
+# <a name="ideepcloneablet-members"></a>Membri IDeepCloneable \<T\>
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Interfaccia per gli oggetti che possono essere clonati. Viene creata una copia completa dell'oggetto. Viene usato per la clonazione di oggetti meta-dati.
+Interfaccia per gli oggetti che possono essere clonati. Verrà creata una copia completa dell'oggetto . Viene usato per la clonazione di oggetti meta-dati.
 
-Il [tipo \<T\> IDeepCloneable](./ideepcloneable-t-interface.md) espone i membri seguenti.
+Il [tipo IDeepCloneable \<T\> ](./ideepcloneable-t-interface.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -37,7 +37,7 @@ Il [tipo \<T\> IDeepCloneable](./ideepcloneable-t-interface.md) espone i membri 
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="hh578936(v=exchg.10).md">DeepClone</a></td>
-<td>Restituisce una copia completa dell'oggetto.</td>
+<td>Restituisce una copia completa dell'oggetto .</td>
 </tr>
 </tbody>
 </table>
@@ -49,6 +49,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Interfaccia IDeepCloneable](./ideepcloneable-t-interface.md)
+[Interfaccia IDeepCloneable \<T\>](./ideepcloneable-t-interface.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMDRMDevice GetMeterChallenge
-description: Il metodo GetMeterChallenge recupera la richiesta di misurazione.
+description: Il metodo GetMeterChallenge recupera la sfida di misurazione.
 ms.assetid: 4c122886-46bd-4e63-8e7d-5e6132363662
 keywords:
-- Metodo GetMeterChallenge Windows Media Gestione dispositivi
-- Metodo GetMeterChallenge Windows Media Gestione dispositivi, interfaccia IWMDRMDevice
-- Interfaccia IWMDRMDevice Windows Media Gestione dispositivi, metodo GetMeterChallenge
+- Metodo GetMeterChallenge windows Media Device Manager
+- Metodo GetMeterChallenge windows Media Device Manager, interfaccia IWMDRMDevice
+- Metodo GetMeterChallenge dell'interfaccia IWMDRMDevice di Windows Media Device Manager
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a916afa90d1db310041f9b92be94d3af9154df4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ccccf8ffe17bdcbf25c89830e34e7a52294a6c661bc4b7d9193afd215246cf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766631"
 ---
-# <a name="iwmdrmdevicegetmeterchallenge-method"></a>Metodo IWMDRMDevice:: GetMeterChallenge
+# <a name="iwmdrmdevicegetmeterchallenge-method"></a>Metodo IWMDRMDevice::GetMeterChallenge
 
-Il metodo **GetMeterChallenge** recupera la richiesta di misurazione.
+Il **metodo GetMeterChallenge** recupera la sfida di misurazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,36 +45,36 @@ HRESULT GetMeterChallenge(
 
 <dl> <dt>
 
-*bstrMeterCert* \[ in\]
+*bstrMeterCert* \[ Pollici\]
 </dt> <dd>
 
 Certificato di misurazione inviato dal proprietario del contenuto al computer host per la raccolta dei dati di misurazione associati nel dispositivo
 
 </dd> <dt>
 
-*ppbMeterChallenge* \[ out\]
+*ppbMeterChallenge* \[ Cambio\]
 </dt> <dd>
 
-Risultato della richiesta di misurazione recuperato.
+È stato recuperato il risultato della sfida di misurazione.
 
 </dd> <dt>
 
-*pcbMeterChallenge* \[ out\]
+*pcbMeterChallenge* \[ Cambio\]
 </dt> <dd>
 
-Dimensioni in byte della richiesta di misurazione.
+Dimensioni della richiesta di misurazione, in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -82,9 +82,9 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-I dati di misurazione vengono raccolti e archiviati nell'archivio dati DRM sul dispositivo per il contenuto con misurazione abilitata. Verranno registrate azioni come Play. Quando questa funzione viene chiamata, il dispositivo raccoglie i dati di misurazione nell'archivio dati DRM sotto forma di documento XML e lo invia a Hostcomputer. Se la quantità di dati è eccessiva, viene inviata in fasi.
+I dati di misurazione vengono raccolti e archiviati nell'archivio dati DRM nel dispositivo per il contenuto con la misurazione abilitata. Verranno registrate azioni come la riproduzione. Quando viene chiamata questa funzione, il dispositivo raccoglie i dati di misurazione nell'archivio dati DRM sotto forma di documento XML e li invia al computer host. Se sono presenti troppi dati, vengono inviati in più fasi.
 
-Quando il computer host riceve i dati di controllo, invia i dati tramite Internet all'URL specificato nel certificato di misurazione.
+Quando il computer host riceve i dati di misurazione, invia i dati tramite Internet all'URL specificato nel certificato di misurazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,8 +92,8 @@ Quando il computer host riceve i dati di controllo, invia i dati tramite Interne
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Libreria<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
