@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put MaskNum specifica il codice di cancellazione SMPTE della cancellazione.
+description: Il metodo put \_ MaskNum specifica il codice di cancellazione SMPTE della cancellazione.
 ms.assetid: d2d2382c-d920-49e7-b9b7-6897356a78de
-title: 'IDxtJpeg: metodo:p ut_MaskNum (qedit. h)'
+title: Metodo IDxtJpeg::p ut_MaskNum (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0f814fab2654a5585567273301dab285c32a1019
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5cfb5229c7b1dfc6fff52bf3aa1078793e14f00655c4dc67cc193a6cd1cea40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584611"
 ---
-# <a name="idxtjpegput_masknum-method"></a>IDxtJpeg::p UT \_ MaskNum metodo
+# <a name="idxtjpegput_masknum-method"></a>Metodo IDxtJpeg::p ut \_ MaskNum
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -45,26 +45,26 @@ HRESULT put_MaskNum(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
-Specifica il codice di cancellazione SMPTE. Per un elenco delle salviette SMPTE supportate, vedere la pagina relativa alla [transizione di cancellazione SMPTE](smpte-wipe-transition.md).
+Specifica il codice di cancellazione SMPTE. Per un elenco delle cancellazioni SMPTE supportate, vedere [Transizione di cancellazione SMPTE.](smpte-wipe-transition.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

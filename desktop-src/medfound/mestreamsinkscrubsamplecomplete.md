@@ -1,33 +1,33 @@
 ---
-description: Generato da un sink del flusso quando completa una richiesta di ripulitura.
+description: Generato da un sink di flusso quando completa una richiesta di scrubbing.
 ms.assetid: 451c7e09-868e-4c05-b970-d222b97223f2
-title: Evento MEStreamSinkScrubSampleComplete (Mfobjects. h)
+title: Evento MEStreamSinkScrubSampleComplete (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81f29d478635d5a9ba7e7c5356c49ebd8da216f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2ae6e0ea7a90db33fe21d39017ac99908ace86bb263e0ad6e2047f70e70f5de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715171"
 ---
 # <a name="mestreamsinkscrubsamplecomplete-event"></a>Evento MEStreamSinkScrubSampleComplete
 
-Generato da un sink del flusso quando completa una richiesta di ripulitura.
+Generato da un sink di flusso quando completa una richiesta di scrubbing.
 
-Lo scrubbing si verifica quando la velocità di riproduzione è zero e il clock di presentazione viene avviato con un tempo di srubbing specificato. Se un sink multimediale supporta lo scrubbing, ogni flusso del sink genera questo evento ogni volta che viene chiamato il metodo [**IMFClockStateSink:: OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart) mentre la velocità di riproduzione è zero.
+Lo scrubbing si verifica quando la velocità di riproduzione è zero e l'orologio della presentazione viene avviato con un'ora di scorrimento specificata. Se un sink multimediale supporta lo scrubbing, ogni flusso sul sink genera questo evento ogni volta che viene chiamato il metodo [**IMFClockStateSink::OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart) mentre la velocità di riproduzione è zero.
 
-Se il flusso esegue il rendering dei dati durante lo scrubbing, invia l'evento non appena viene eseguito il rendering dei dati. Se il flusso non esegue il rendering dei dati, invia l'evento immediatamente dopo la chiamata a [**OnClockStart**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart) .
+Se il flusso esegue il rendering dei dati durante lo scrubbing, invia l'evento non appena viene eseguito il rendering dei dati. Se il flusso non esegue il rendering dei dati, invia l'evento immediatamente dopo la chiamata a [**OnClockStart.**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclockstart)
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -39,7 +39,7 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                              | Descrizione                                                                                                                                                   |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_tempo di \_ SCRUBSAMPLE \_ evento MF**](mf-event-scrubsample-time-attribute.md)<br/> | Tempo di presentazione per cui è stato eseguito il rendering dei dati. Se il sink multimediale non esegue il rendering dei dati durante lo scrubbing, questo attributo non viene impostato.<br/> <br/> |
+| [**TEMPO DI \_ \_ SCRUBSAMPLE DELL'EVENTO MF \_**](mf-event-scrubsample-time-attribute.md)<br/> | Ora di presentazione per cui è stato eseguito il rendering dei dati. Se il sink multimediale non esegue il rendering dei dati durante lo scrubbing, non imposta questo attributo.<br/> <br/> |
 
 
 
@@ -49,9 +49,9 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per questo evento sono definiti gli attributi seguenti.
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> <dt>
 
 [Sink di supporti](media-sinks.md)

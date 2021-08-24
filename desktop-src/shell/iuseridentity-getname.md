@@ -22,7 +22,7 @@ ms.locfileid: "119661191"
 ---
 # <a name="iuseridentitygetname-method"></a>Metodo IUserIdentity::GetName
 
-\[**IUserIdentity::GetName** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio utente rapido e Desktop remoto](fastuserswitching.md).\]
+\[**IUserIdentity::GetName** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e Desktop remoto](fastuserswitching.md).\]
 
 Ottiene il nome associato a questa identità utente.
 
@@ -56,7 +56,7 @@ Puntatore a una stringa di caratteri wide che riceve il nome di questa identità
 
 Tipo: **ULONG**
 
-Valore che specifica le dimensioni di *pszName.*
+Valore che specifica le dimensioni di *pszName*.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                  |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                         |
 | Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |

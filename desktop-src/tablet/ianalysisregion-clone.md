@@ -22,7 +22,7 @@ ms.locfileid: "119596791"
 ---
 # <a name="ianalysisregionclone-method"></a>Metodo IAnalysisRegion::Clone
 
-Crea una copia di [**IAnalysisRegion.**](ianalysisregion.md)
+Crea una copia [**dell'oggetto IAnalysisRegion.**](ianalysisregion.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,14 +48,14 @@ Puntatore a una copia di [**IAnalysisRegion.**](ianalysisregion.md)
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è eqivalent per theSystem. Windows. Metodo Ink.AnalysisCore.AnalysisRegionBase.Clone nel .NET Framework.
+Questo metodo è eqivalent per theSystem. Windows. Metodo Ink.AnalysisCore.AnalysisRegionBase.Clone nella .NET Framework.
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) in \* *pClonedRegion* quando non è più necessario usare l'area di analisi clonata.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) \* *su pClonedRegion* quando non è più necessario usare l'area di analisi clonata.
 
  
 
@@ -65,7 +65,7 @@ Questo metodo è eqivalent per theSystem. Windows. Metodo Ink.AnalysisCore.Analy
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
@@ -79,7 +79,7 @@ Questo metodo è eqivalent per theSystem. Windows. Metodo Ink.AnalysisCore.Analy
 [**Area IAnalysis**](ianalysisregion.md)
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

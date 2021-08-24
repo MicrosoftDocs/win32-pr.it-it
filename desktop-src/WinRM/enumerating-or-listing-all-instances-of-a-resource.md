@@ -1,6 +1,6 @@
 ---
 title: Enumerazione o elenco di tutte le istanze di una risorsa
-description: Il metodo Session. enumerate è l'approccio Gestione remota Windows per ottenere tutte le istanze di una risorsa specificata.
+description: Il metodo Session.Enumerate è l'Windows di gestione remota per ottenere tutte le istanze di una risorsa specificata.
 ms.assetid: c50c37bf-e19a-473b-8d27-ab3bb4ec86a0
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,20 +10,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54587ce97ec6ed5e87af8b0424a6a18d684f7698
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f510d0e0cc8115ca4dca7c7e46dd5e987ef0dd15dd4fa7d92e47d737e467d8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104223977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119679991"
 ---
 # <a name="enumerating-or-listing-all-instances-of-a-resource"></a>Enumerazione o elenco di tutte le istanze di una risorsa
 
-Il metodo [**Session. enumerate**](session-enumerate.md) è l'approccio gestione remota Windows per ottenere tutte le istanze di una risorsa specificata.
+Il [**metodo Session.Enumerate**](session-enumerate.md) è l'Windows di gestione remota per ottenere tutte le istanze di una risorsa specificata.
 
-Il metodo [**Session. enumerate**](session-enumerate.md) non ottiene una raccolta in un oggetto [**SWbemObjectSet**](/windows/desktop/WmiSdk/swbemobjectset) come un [**SWbemService.Exechiamata cQuery**](/windows/desktop/WmiSdk/swbemservices-execquery) con una [query WMI](/windows/desktop/WmiSdk/querying-wmi) come parametro (ad esempio, `ExecQuery("SELECT * from Win32_LogicalDisk")` ) o una chiamata a un metodo come [**SWbemObject. instances \_**](/windows/desktop/WmiSdk/swbemobject-instances-). **Session. enumerate** e i metodi dell'oggetto [**Enumerator**](enumerator.md) sono molto più simili all'operazione dell'oggetto [TextStream](/previous-versions//312a5kbt(v=vs.85)) di scripting utilizzato per la lettura dei file come flusso.
+Il metodo [**Session.Enumerate**](session-enumerate.md) non ottiene una raccolta in un oggetto [**SWbemObjectSet**](/windows/desktop/WmiSdk/swbemobjectset) come una chiamata [**cQuerySWbemService.Exe**](/windows/desktop/WmiSdk/swbemservices-execquery) con una [query WMI](/windows/desktop/WmiSdk/querying-wmi) come parametro (ad esempio, ) o una chiamata a un metodo come `ExecQuery("SELECT * from Win32_LogicalDisk")` [**SWbemObject.Instances \_**](/windows/desktop/WmiSdk/swbemobject-instances-). **I metodi dell'oggetto Session.Enumerate** e [**Enumerator**](enumerator.md) sono molto più simili al funzionamento dell'oggetto [TextStream](/previous-versions//312a5kbt(v=vs.85)) di scripting usato per la lettura di file come flusso.
 
-Per leggere i file come flusso di testo, è necessario creare l'oggetto [TextStream](/previous-versions//312a5kbt(v=vs.85)) di scripting e chiamare il metodo [TextStream. ReadLine](/previous-versions//h7se9d4f(v=vs.85)) per leggere ogni riga del file. In modo analogo, è possibile chiamare il metodo [**Session. enumerate**](session-enumerate.md) per ottenere un oggetto [**enumeratore**](enumerator.md) e chiamare il metodo [**Enumerator. ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo. Come nel caso della lettura dal file di testo, è possibile chiamare la proprietà [**Enumerator. AtEndOfStream**](enumerator-atendofstream.md) per verificare se è stata raggiunta la fine degli elementi di dati.
+Per leggere i file come flusso di testo, è necessario creare l'oggetto [TextStream](/previous-versions//312a5kbt(v=vs.85)) di scripting e chiamare il metodo [TextStream.Readline](/previous-versions//h7se9d4f(v=vs.85)) per leggere ogni riga del file. In modo analogo, è possibile chiamare il metodo [**Session.Enumerate**](session-enumerate.md) per ottenere un oggetto [**Enumerator**](enumerator.md) e chiamare il metodo [**Enumerator.ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo. Come nel caso della lettura dal file di testo, è possibile chiamare la proprietà [**Enumerator.AtEndOfStream**](enumerator-atendofstream.md) per verificare se è stata raggiunta la fine degli elementi di dati.
 
 **Per enumerare una risorsa**
 
@@ -47,7 +47,7 @@ Per leggere i file come flusso di testo, è necessario creare l'oggetto [TextStr
 
     
 
-3.  Chiamare il metodo [**Session. enumerate**](session-enumerate.md) . Questa chiamata avvia un'enumerazione. In WinRM un'operazione di enumerazione non ottiene una raccolta in modo analogo a WMI. Il metodo **Session. enumerate** stabilisce invece un WS-Management contesto di enumerazione del protocollo gestito nell'oggetto [**enumeratore**](enumerator.md) .
+3.  Chiamare il [**metodo Session.Enumerate.**](session-enumerate.md) Questa chiamata avvia un'enumerazione. In WinRM, un'operazione di enumerazione non ottiene una raccolta allo stesso modo di WMI. Il metodo **Session.Enumerate stabilisce** invece un contesto WS-Management di enumerazione del protocollo gestito nell'oggetto [**Enumerator.**](enumerator.md)
 
     ```VB
     Set EnumJobs = objSession.Enumerate( strResource )
@@ -55,7 +55,7 @@ Per leggere i file come flusso di testo, è necessario creare l'oggetto [TextStr
 
     
 
-4.  Chiamare il metodo [**Enumerator. ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo dei risultati. Nel protocollo WS-Management corrisponde all'operazione pull. Usare il metodo [**Enumerator. AtEndOfStream**](enumerator-atendofstream.md) come controllo per capire quando interrompere la lettura.
+4.  Chiamare il [**metodo Enumerator.ReadItem**](enumerator-readitem.md) per ottenere l'elemento successivo dei risultati. Nel WS-Management, corrisponde all'operazione pull. Usare il [**metodo Enumerator.AtEndOfStream**](enumerator-atendofstream.md) come controllo per sapere quando interrompere la lettura.
 
     ```VB
     While Not EnumJobs.AtEndOfStream
@@ -66,7 +66,7 @@ Per leggere i file come flusso di testo, è necessario creare l'oggetto [TextStr
 
     
 
-Nell'esempio di codice VBScript riportato di seguito viene illustrato lo script completo.
+Nell'esempio di codice VBScript seguente viene illustrato lo script completo.
 
 
 ```VB
@@ -103,15 +103,15 @@ End Sub
 
 <dl> <dt>
 
-[Informazioni su Gestione remota Windows](about-windows-remote-management.md)
+[Informazioni Windows gestione remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Utilizzo di Gestione remota Windows](using-windows-remote-management.md)
+[Uso Windows gestione remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Riferimento Gestione remota Windows](windows-remote-management-reference.md)
+[Windows Informazioni di riferimento sulla gestione remota](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

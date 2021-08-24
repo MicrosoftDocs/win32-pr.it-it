@@ -1,9 +1,9 @@
 ---
-title: tex3D (riferimento HLSL)
-description: Campiona una trama 3D.
+title: tex3D (informazioni di riferimento su HLSL)
+description: Campio una trama 3D.
 ms.assetid: 713eec24-bdf5-456e-98da-30e2c9d7e808
 keywords:
-- HLSL tex3D
+- tex3D HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3a071d00dedabdff02bae302c71aa8ecece4ba2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8f5f5ea1db13e2c7aea9ee27cb4035bc59b7ac2672e7cb7527f5bd749c8833e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744801"
 ---
-# <a name="tex3d-hlsl-reference"></a>tex3D (riferimento HLSL)
+# <a name="tex3d-hlsl-reference"></a>tex3D (informazioni di riferimento su HLSL)
 
-Campiona una trama 3D.
+Campio una trama 3D.
 
 
 
-| tex3D RET (s, t) |
+| ret tex3D(s, t) |
 |-----------------|
 
 
@@ -40,7 +40,7 @@ Campiona una trama 3D.
 | Elemento                                                   | Descrizione                               |
 |--------------------------------------------------------|-------------------------------------------|
 | <span id="s"></span><span id="S"></span>*s*<br/> | \[nello \] stato del campionatore.<br/>      |
-| <span id="t"></span><span id="T"></span>*t*<br/> | \[nella \] coordinata di trama.<br/> |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[in \] Coordinata trama.<br/> |
 
 
 
@@ -56,26 +56,26 @@ Valore dei dati della trama.
 
 | Nome | Ingresso/Uscita | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| s    | in ingresso     | [**oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler3D](dx-graphics-hlsl-sampler.md)                      | 1    |
-| u    | in ingresso     | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 3    |
-| RET  | in uscita    | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| s    | in     | [**Oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler3D](dx-graphics-hlsl-sampler.md)                      | 1    |
+| t    | in     | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 3    |
+| Ret  | in uscita    | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato                                                                                                                         |
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | Sì (solo pixel shader), ma è necessario usare l' [opzione di compilazione legacy](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax) durante la compilazione. |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | Sì (solo pixel shader)                                                                                                           |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | Sì (solo pixel shader)                                                                                                           |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | Sì (solo pixel shader)                                                                                                           |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì (pixel shader solo ), ma è necessario usare l'opzione [di compilazione legacy](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax) durante la compilazione. |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sì (solo pixel shader)                                                                                                           |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sì (solo pixel shader)                                                                                                           |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | sì (solo pixel shader)                                                                                                           |
 
 
 

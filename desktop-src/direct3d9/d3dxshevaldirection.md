@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXSHEvalDirection (D3dx9math.h): valuta le funzioni di base armoniche sferiche (SH) da un vettore di direzione di input.'
+description: 'Funzione D3DXSHEvalDirection (D3dx9math.h): valuta le funzioni di base sferiche ariche (SH) da un vettore di direzione di input.'
 ms.assetid: f30ba32c-d6b0-4e4e-b5cd-839ed7821855
 title: Funzione D3DXSHEvalDirection (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e02f0f3d8770b4b703f275de3225eacb301a7843
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 16b2d75c885a2d5328b9a11ff9c8924ad78bf3e514e5b5696397625b5b080529
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676081"
 ---
 # <a name="d3dxshevaldirection-function-d3dx9mathh"></a>Funzione D3DXSHEvalDirection (D3dx9math.h)
 
-Valuta le funzioni di base armoniche sferiche (SH) da un vettore di direzione di input.
+Valuta le funzioni di base sferiche aricali (SH) da un vettore di direzione di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ FLOAT* D3DXSHEvalDirection(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera coefficienti Order². Vedere la sezione Osservazioni.
+Puntatore ai coefficienti di output sferici aricali (SH). La valutazione genera coefficienti Di ordine. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso nell'intervallo [tra D3DXSH \_ MINORDER](other-d3dx-constants.md) e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore ai coefficienti di output SH. Vedere la sezione Osservazioni.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l I + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria lÊ + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

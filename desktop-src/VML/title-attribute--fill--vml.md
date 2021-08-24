@@ -1,24 +1,24 @@
 ---
-title: Attributo title (Fill) (la)
-description: Attributo title (Fill) (la)
+title: Attributo Title (Fill)(VML)
+description: Attributo Title (Fill)(VML)
 ms.assetid: f137a8d8-287c-40be-b859-51a4f615a022
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf02d5c7f085b5cfad1b93b341404998ba89cb0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fad313a4e788fd6a9ae80dd980e9c3ec872d0e6b05b1d400905ac31d774a681c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654541"
 ---
-# <a name="title-attribute-fillvml"></a>Attributo title (Fill) (la)
+# <a name="title-attribute-fillvml"></a>Attributo Title (Fill)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il titolo di un'immagine di riempimento. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,16 +26,16 @@ Definisce il titolo di un'immagine di riempimento. Proprietà di lettura/scrittu
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:title = " *Expression* " >
+<v: *elemento* o:title=" *espressione* ">
 
 **Osservazioni:**
 
-Se questo attributo ha un valore, l'immagine del tratto è incorporata. Il valore effettivo dell'attributo è il testo da visualizzare con l'immagine quando il puntatore del mouse viene spostato sull'immagine.
+Se questo attributo ha un valore, l'immagine del tratto viene incorporata. Il valore effettivo dell'attributo è il testo da visualizzare con l'immagine quando il puntatore del mouse passa sull'immagine.
 
-**Attributo Microsoft Office Extensions**
+**Microsoft Office Attributo Extensions**
 
- 
+ 
 
- 
+ 

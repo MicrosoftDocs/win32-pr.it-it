@@ -1,5 +1,5 @@
 ---
-title: Tipi complessi dello schema baseeapmethodusercredentials
+title: baseeapmethodusercredentials Schema Complex Types
 description: Informazioni sullo schema baseeapmethodusercredentials. Questo schema definisce il tipo complesso BaseEapMethodUserCredentials.
 ms.assetid: 2ebb2030-90bb-404e-b10c-009d06599e4e
 ms.topic: article
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7b52ad7adde69273c825c29ca495b6ad584ec1d6
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: efad3d679336af25fc816fd26e87582bff727e482ac3ca65e90b2634ae298bc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739431"
 ---
-# <a name="baseeapmethodusercredentials-schema-complex-types"></a>Tipi complessi dello schema baseeapmethodusercredentials
+# <a name="baseeapmethodusercredentials-schema-complex-types"></a>baseeapmethodusercredentials Schema Complex Types
 
 Lo schema [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md) definisce il tipo complesso seguente.
 
@@ -26,15 +26,15 @@ Lo schema [baseeapmethodusercredentials](baseeapmethodusercredentialsschema-sche
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

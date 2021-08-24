@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause sospende il filtro.
+description: Il metodo Pause sospende il filtro.
 ms.assetid: 9dfd23d1-bf07-424b-9952-13719358d0a5
-title: Metodo CBaseRenderer. pause (Renbase. h)
+title: Metodo CBaseRenderer.Pause (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e0b422882c07808f560f5256f67d01054d097726
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9769a1243fdbd69037e275fc083a9b1b0766f7f404190b2e68920f238e2bf140
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586081"
 ---
-# <a name="cbaserendererpause-method"></a>CBaseRenderer. pause (metodo)
+# <a name="cbaserendererpause-method"></a>Metodo CBaseRenderer.Pause
 
 Il `Pause` metodo sospende il filtro.
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                            |
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>    | La transizione è stata completata.<br/> |
-| <dl> <dt>**S \_ false**</dt> </dl> | La transizione non è completa.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | La transizione è stata completata.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La transizione non è completa.<br/> |
 
 
 
@@ -57,12 +57,12 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseFilter::P ause**](cbasefilter-pause.md) . Esegue i passaggi seguenti:
+Questo metodo esegue l'override [**del metodo CBaseFilter::P ause.**](cbasefilter-pause.md) Esegue i passaggi seguenti:
 
--   Chiama il metodo **CBaseFilter::P ause** .
--   Viene eseguito il commit dell'allocatore. Vedere [**IMemAllocator:: commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit).
--   Se lo stato precedente è stato interrotto, il filtro rilascia tutti i campioni che contiene. (L'esempio non è più valido).
--   Chiama il metodo [**CBaseRenderer:: CompleteStateChange**](cbaserenderer-completestatechange.md) e restituisce il valore.
+-   Chiama il **metodo CBaseFilter::P ause.**
+-   Esegue il commit dell'allocatore. Vedere [**IMemAllocator::Commit.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit)
+-   Se lo stato precedente è stato arrestato, il filtro rilascia qualsiasi esempio che contiene. L'esempio non è più valido.
+-   Chiama il [**metodo CBaseRenderer::CompleteStateChange**](cbaserenderer-completestatechange.md) e restituisce il valore .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Questo metodo esegue l'override del metodo [**CBaseFilter::P ause**](cbasefilter
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

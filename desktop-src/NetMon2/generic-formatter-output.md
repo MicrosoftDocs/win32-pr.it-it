@@ -1,257 +1,257 @@
 ---
-description: Negli elenchi e nelle tabelle di questa sezione viene illustrato l'output del formattatore generico. Tenere presente che il formattatore generico usa i membri DataType e dataqualifier della struttura PROPERTYINFO per determinare come formattare i dati visualizzati.
+description: Gli elenchi e le tabelle in questa sezione mostrano l'output del formattatore generico. Tenere presente che il formattatore generico usa i membri DataType e DataQualifier della struttura PROPERTYINFO per determinare come formattare i dati visualizzati.
 ms.assetid: cf3dc6cd-7b24-464a-9d2b-5e35c4e8825e
-title: Output formattatore generico
+title: Output del formattatore generico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf4b334dd717c7ff332c3b730afb57d4be611ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d76a67fadbed3bde5eb3e5534c8f104e918ac870df27c767b98575058a0a188
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743971"
 ---
-# <a name="generic-formatter-output"></a>Output formattatore generico
+# <a name="generic-formatter-output"></a>Output del formattatore generico
 
-Negli elenchi e nelle tabelle di questa sezione viene illustrato l'output del [*formattatore generico*](g.md). Tenere presente che il formattatore generico usa i membri **DataType** e **dataqualifier** della struttura [**PROPERTYINFO**](propertyinfo.md) per determinare come formattare i dati visualizzati.
+Gli elenchi e le tabelle in questa sezione mostrano l'output del [*formattatore generico*](g.md). Tenere presente che il formattatore generico usa i **membri DataType** e **DataQualifier** della [**struttura PROPERTYINFO**](propertyinfo.md) per determinare come formattare i dati visualizzati.
 
-Per ulteriori informazioni e un esempio dell'output per un tipo di dati di proprietà specifico, vedere:
+Per altre informazioni e un esempio dell'output per un tipo di dati di proprietà specifico, vedere:
 
--   [\_tipo Prop \_ void](/windows)
--   [\_Riepilogo del tipo di Prop \_](/windows)
--   [tipo di PROP \_ \_ byte](/windows)
--   [tipo di PROP \_ \_ Word](/windows)
--   [tipo di PROP \_ \_ DWORD](/windows)
--   PROP \_ Type \_ largeInt (il formattatore generico non supporta)
--   \_Tipo Prop \_ addr (il formattatore generico non supporta)
--   [\_ora tipo di Prop \_](/windows)
--   [\_stringa di tipo Prop \_](/windows)
--   [\_ \_ indirizzo IP del tipo Prop \_](/windows)
--   PROP \_ Type \_ BYTESWAPPED \_ Word (obsoleto. Per altre informazioni, vedere [ \_ tipo Prop \_ Word](/windows))
--   PROP \_ Type \_ BYTESWAPPED \_ DWORD (obsoleto. Per altre informazioni, vedere [ \_ tipo Prop \_ DWORD](/windows))
--   \_Tipo Prop \_ stringa tipizzata \_ (obsoleto)
--   [tipi di PROP \_ \_ dati non elaborati \_](/windows)
--   [\_commento tipo \_ prop](/windows)
--   PROP \_ Type \_ SRCFRIENDLYNAME (il formattatore generico non supporta)
--   PROP \_ Type \_ DSTFRIENDLYNAME (il formattatore generico non supporta)
--   \_Indirizzo Tokenring di tipo Prop \_ \_ (il formattatore generico non supporta)
--   \_Indirizzo FDDI di tipo Prop \_ \_ (il formattatore generico non supporta)
--   \_Indirizzo Ethernet del tipo Prop \_ \_ (il formattatore generico non supporta)
--   \_Identificatore di oggetto di tipo Prop \_ \_ (il formattatore generico non supporta)
--   \_Indirizzo IP delle viti di tipo Prop \_ \_ \_ (il formattatore generico non supporta)
--   \_Tipo Prop \_ var \_ Len \_ small \_ int (il formattatore generico non supporta)
+-   [PROP \_ TYPE \_ VOID](/windows)
+-   [RIEPILOGO \_ DEL TIPO DI \_ PROPRIETÀ](/windows)
+-   [PROP \_ TYPE \_ BYTE](/windows)
+-   [PROP \_ TYPE \_ WORD](/windows)
+-   [PROP \_ TYPE \_ DWORD](/windows)
+-   PROP \_ TYPE \_ LARGEINT (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ ADDR (il formattatore generico non supporta)
+-   [PROP \_ TYPE \_ TIME](/windows)
+-   [PROP \_ TYPE \_ STRING](/windows)
+-   [INDIRIZZO \_ IP DI TIPO \_ \_ PROP](/windows)
+-   TIPO PROP \_ \_ BYTESWAPPED \_ WORD (obsoleto. Per altre informazioni, vedere [PROP \_ TYPE \_ WORD](/windows))
+-   TIPO \_ PROP \_ BYTESWAPPED \_ DWORD (obsoleto. Per altre informazioni, vedere [PROP \_ TYPE \_ DWORD](/windows))
+-   PROP \_ TYPE \_ TYPED STRING \_ (Obsolete)
+-   [DATI NON \_ ELABORATI \_ DI TIPO \_ PROP](/windows)
+-   [PROP \_ TYPE \_ COMMENT](/windows)
+-   PROP \_ TYPE \_ SRCFRIENDLYNAME (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ DSTFRIENDLYNAME (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ TOKENRING ADDRESS \_ (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ FDDI \_ ADDRESS (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ INDIRIZZO ETHERNET \_ (il formattatore generico non supporta)
+-   PROP \_ TYPE OBJECT IDENTIFIER \_ \_ (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ VINES IP ADDRESS \_ \_ (il formattatore generico non supporta)
+-   PROP \_ TYPE \_ VAR \_ LEN SMALL INT \_ \_ (il formattatore generico non supporta)
 
-## <a name="prop_type_void-and-prop_type_comment"></a>Il \_ tipo Prop \_ void e il \_ tipo Prop \_ Comment
+## <a name="prop_type_void-and-prop_type_comment"></a>PROP \_ TYPE VOID e PROP TYPE \_ \_ \_ COMMENT
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati del tipo di dati del tipo di oggetto **prop \_ \_ void** e **prop \_ \_** .
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà dei tipi di dati **PROP \_ TYPE \_ VOID** e **PROP TYPE \_ \_ COMMENT.**
 
-Nella colonna formattatore output il valore dei dati nell'acquisizione è XYZ.
+Nella colonna di output del formattatore il valore dei dati nell'acquisizione è XYZ.
 
 
 
-| Qualificatore proprietà            | Output formattatore                                      |
+| Qualificatore proprietà            | Output del formattatore                                      |
 |-------------------------------|-------------------------------------------------------|
-| PROP \_ qual \_ None              | XYZ                                                   |
-| intervallo di proprietà PROP \_ \_             | XYZ                                                   |
-| PROP \_ qual \_ bit          | Obsoleti                                              |
-| \_set con \_ etichetta \_ set di prop      | XYZ                                                   |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ flag prop qual \_ |
-| PROP \_ qual \_ const             | XYZ                                                   |
-| flag di PROP \_ qual \_             | XYZ                                                   |
-| \_Array prop qual \_             | XYZ                                                   |
+| PROP \_ QUAL \_ NONE              | XYZ                                                   |
+| PROP \_ QUAL \_ RANGE             | XYZ                                                   |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleti                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ QUAL \_ |
+| PROP \_ QUAL \_ CONST             | XYZ                                                   |
+| FLAG PROP \_ QUAL \_             | XYZ                                                   |
+| PROP \_ QUAL \_ ARRAY             | XYZ                                                   |
 
 
 
  
 
-## <a name="prop_type_summary"></a>\_Riepilogo del tipo di Prop \_
+## <a name="prop_type_summary"></a>RIEPILOGO \_ DEL TIPO DI \_ PROPRIETÀ
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati di **\_ \_ Riepilogo del tipo prop** .
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà del tipo di dati **\_ PROP TYPE \_ SUMMARY.**
 
-Nella colonna di output di esempio, il valore dei dati nell'acquisizione è XYZ.
+Nella colonna di output di esempio il valore dei dati nell'acquisizione è XYZ.
 
 
 
 | Qualificatore proprietà            | Output di esempio                                        |
 |-------------------------------|-------------------------------------------------------|
-| PROP \_ qual \_ None              | XYZ                                                   |
-| intervallo di proprietà PROP \_ \_             | XYZ                                                   |
-| PROP \_ qual \_ bit          | Obsoleti                                              |
-| \_set con \_ etichetta \_ set di prop      | XYZ                                                   |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ flag prop qual \_ |
-| PROP \_ qual \_ const             | XYZ                                                   |
-| flag di PROP \_ qual \_             | XYZ                                                   |
-| \_Array prop qual \_             | XYZ                                                   |
+| PROP \_ QUAL \_ NONE              | XYZ                                                   |
+| PROP \_ QUAL \_ RANGE             | XYZ                                                   |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleti                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ QUAL \_ |
+| PROP \_ QUAL \_ CONST             | XYZ                                                   |
+| FLAG PROP \_ QUAL \_             | XYZ                                                   |
+| PROP \_ QUAL \_ ARRAY             | XYZ                                                   |
 
 
 
  
 
-## <a name="prop_type_byte"></a>tipo di PROP \_ \_ byte
+## <a name="prop_type_byte"></a>PROP \_ TYPE \_ BYTE
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati **\_ \_ byte di tipo prop** .
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà del tipo di dati **PROP \_ TYPE \_ BYTE.**
 
-Nella colonna di output di esempio, il valore dei dati nell'acquisizione è 10.
+Nella colonna di output di esempio il valore dei dati nell'acquisizione è 10.
 
 
 
 | Qualificatore proprietà            | Output di esempio                                                                                                |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| PROP \_ qual \_ None              | 10 (0xA) "                                                                                                     |
-| intervallo di proprietà PROP \_ \_             | Intervallo di 10 (0xA):(1 (0x1)-20 (0x14))                                                                          |
-| SET di proprietà PROP \_ \_               | 10 (0xA) corrisponde al valore impostato o<br/> 10 (0xA) valore impostato sconosciuto<br/>                                |
-| PROP \_ qual \_ bit          | Obsoleta.                                                                                                     |
-| \_set con \_ etichetta \_ set di prop      | Etichetta corrispondente in un set di etichette o un numero.                                                                 |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop.                                                        |
-| PROP \_ qual \_ const             | Nessun output. Non vengono visualizzati dati nel riquadro dei dettagli.                                                           |
-| flag di PROP \_ qual \_             | ....... 0 = etichetta fuori stringa...... 1. = Etichetta sulla stringa.... 0... = Etichetta fuori stringa... 1... = etichetta sulla stringa |
-| \_Array prop qual \_             | 0A FF...                                                                                                     |
+| PROP \_ QUAL \_ NONE              | 10 (0xa)"                                                                                                     |
+| PROP \_ QUAL \_ RANGE             | 10 (0xa) Range:(1 (0x1) - 20 (0x14))                                                                          |
+| PROP \_ QUAL \_ SET               | 10 (0xa) corrisponde al valore impostato o<br/> 10 (0xa) Unknown Set Value<br/>                                |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                                                                                     |
+| PROP \_ QUAL \_ LABELED \_ SET      | Etichetta corrispondente in un set di etichette o in un numero.                                                                 |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL.                                                        |
+| PROP \_ QUAL \_ CONST             | Nessun output. Nel riquadro dei dettagli non viene visualizzato alcun dato.                                                           |
+| FLAG PROP \_ QUAL \_             | ....... 0 = Label Off String ...... 1. = Etichetta sulla stringa ..... 0.. = Label Off String .... 1... = Etichetta su stringa |
+| PROP \_ QUAL \_ ARRAY             | 0a ff ...                                                                                                     |
 
 
 
  
 
-## <a name="prop_type_word"></a>tipo di PROP \_ \_ Word
+## <a name="prop_type_word"></a>PROP \_ TYPE \_ WORD
 
-La tabella seguente elenca l'output di formato generico per una proprietà tipo di dati **\_ \_ Word di tipo prop** .
+Nella tabella seguente viene elencato l'output di formato generico per una proprietà del tipo di dati **\_ PROP TYPE \_ WORD.**
 
 > [!Note]  
-> Per le proprietà DWORD con scambio di byte non Intel, è necessario modificare i dati in un formato Intel. Per modificare il formato, impostare il parametro *iFlags* della funzione di istanza della proprietà di **connessione** IFLAG \_ invertita quando si esegue il mapping dell'istanza di proprietà a un percorso.
+> Per le proprietà DWORD non Intel scambiate con byte, è necessario modificare i dati in un formato Intel. Per modificare il formato, impostare il *parametro IFlags* della funzione di istanza della proprietà **Attach** IFLAG SWAPPED quando si esegue il mapping dell'istanza della proprietà \_ a una posizione.
 
  
 
-Nella colonna di output di esempio, il valore dei dati nell'acquisizione è 10.
+Nella colonna di output di esempio il valore dei dati nell'acquisizione è 10.
 
 
 
 | Qualificatore proprietà            | Output di esempio                                                                                                                                                                                                                |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PROP \_ qual \_ None              | 10 (0xA)                                                                                                                                                                                                                      |
-| intervallo di proprietà PROP \_ \_             | Intervallo di 10 (0xA):(1 (0x1)-20 (0x14))                                                                                                                                                                                          |
-| SET di proprietà PROP \_ \_               | 10 (0xA) corrisponde al valore impostato o<br/> 10 (0xA) valore impostato sconosciuto<br/>                                                                                                                                                |
-| PROP \_ qual \_ bit          | Obsoleta.                                                                                                                                                                                                                     |
-| \_set con \_ etichetta \_ set di prop      | Etichetta corrispondente nel set di etichette o nel numero.                                                                                                                                                                               |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop.                                                                                                                                                                        |
-| PROP \_ qual \_ const             | Nessun output. Non vengono visualizzati dati nel riquadro dei dettagli.                                                                                                                                                                           |
-| flag di PROP \_ qual \_             | ....... 0 = etichetta fuori stringa...... 0. = Etichetta fuori stringa.... 0... = Etichetta fuori stringa... 0... = etichetta fuori stringa... 0.... = etichetta off stringa.. 1..... = Etichetta su String. 0...... = Etichetta disattivato stringa 1....... = Etichetta sulla stringa |
-| \_Array prop qual \_             | 000A FFFF...                                                                                                                                                                                                                 |
+| PROP \_ QUAL \_ NONE              | 10 (0xa)                                                                                                                                                                                                                      |
+| PROP \_ QUAL \_ RANGE             | 10 (0xa) Range:(1 (0x1) - 20 (0x14))                                                                                                                                                                                          |
+| PROP \_ QUAL \_ SET               | 10 (0xa) corrisponde al valore impostato o<br/> 10 (0xa) Unknown Set Value<br/>                                                                                                                                                |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                                                                                                                                                                                                     |
+| PROP \_ QUAL \_ LABELED \_ SET      | Etichetta corrispondente nel set di etichette o nel numero.                                                                                                                                                                               |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL.                                                                                                                                                                        |
+| PROP \_ QUAL \_ CONST             | Nessun output. Nel riquadro dei dettagli non viene visualizzato alcun dato.                                                                                                                                                                           |
+| FLAG PROP \_ QUAL \_             | ....... 0 = Label Off String ...... 0. = Label Off String ..... 0.. = Label Off String .... 0... = Label Off String ... 0.... = Label Off String .. 1..... = Etichetta sulla stringa .0...... = Label Off String 1....... = Etichetta su stringa |
+| PROP \_ QUAL \_ ARRAY             | 000a ffff ...                                                                                                                                                                                                                 |
 
 
 
  
 
-## <a name="prop_type_dword"></a>tipo di PROP \_ \_ DWORD
+## <a name="prop_type_dword"></a>PROP \_ TYPE \_ DWORD
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati **\_ \_ DWORD di tipo prop** .
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà del tipo di dati **\_ \_ DWORD PROP TYPE.**
 
 > [!Note]  
-> Per le proprietà DWORD con scambio di byte non Intel, è necessario modificare i dati in un formato Intel. Per modificare il formato, impostare il parametro *iFlags* della funzione di istanza della proprietà di **connessione** IFLAG \_ invertita quando si esegue il mapping dell'istanza di proprietà a un percorso.
+> Per le proprietà DWORD non Intel scambiate con byte, è necessario modificare i dati in un formato Intel. Per modificare il formato, impostare il *parametro IFlags* della funzione di istanza della proprietà **Attach** IFLAG SWAPPED quando si esegue il mapping dell'istanza della proprietà \_ a una posizione.
 
  
 
-Nella colonna di output di esempio, il valore dei dati nell'acquisizione è 10.
+Nella colonna di output di esempio il valore dei dati nell'acquisizione è 10.
 
 
 
 | Qualificatore proprietà            | Output di esempio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PROP \_ qual \_ None              | 10 (0xA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| intervallo di proprietà PROP \_ \_             | Intervallo di 10 (0xA):(1 (0x1)-20 (0x14))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| SET di proprietà PROP \_ \_               | 10 (0xA) corrisponde al valore impostato o<br/> 10 (0xA) valore impostato sconosciuto<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| PROP \_ qual \_ bit          | Obsoleta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| \_set con \_ etichetta \_ set di prop      | Etichetta corrispondente nel set di etichette o nel numero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| PROP \_ qual \_ const             | Nessun output. Non vengono visualizzati dati nel riquadro dei dettagli.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| flag di PROP \_ qual \_             | ............... 0 = etichetta fuori stringa.............. 0. = Etichetta off stringa............. 0... = Etichetta off stringa............ 0... = etichetta off stringa........... 0.... = etichetta off stringa.......... 0..... = Etichetta off stringa......... 0...... = etichetta off stringa........ 0....... = etichetta off stringa....... 0....... = Etichetta fuori stringa...... 0......... = etichetta off stringa..... 0.......... = etichetta off stringa.... 0........... = Etichetta fuori stringa... 0............ = etichetta off stringa.. 1............. = etichetta su String. 0.............. = Etichetta off stringa 1............... = Etichetta sulla stringa |
-| \_Array prop qual \_             | 0000000A FFFFFFFF...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| PROP \_ QUAL \_ NONE              | 10 (0xa)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| PROP \_ QUAL \_ RANGE             | 10 (0xa) Range:(1 (0x1) - 20 (0x14))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| PROP \_ QUAL \_ SET               | 10 (0xa) corrisponde al valore impostato o<br/> 10 (0xa) Unknown Set Value<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| PROP \_ QUAL \_ LABELED \_ SET      | Etichetta corrispondente nel set di etichette o nel numero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| PROP \_ QUAL \_ CONST             | Nessun output. Nel riquadro dei dettagli non viene visualizzato alcun dato.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| FLAG PROP \_ QUAL \_             | ............... 0 = Label Off String .............. 0. = Label Off String ............. 0.. = Label Off String ............ 0... = Label Off String ........... 0.... = Label Off String .......... 0..... = Label Off String ......... 0...... = Label Off String ........ 0....... = Label Off String ....... 0........ = Label Off String ...... 0......... = Label Off String ..... 0.......... = Label Off String .... 0........... = Label Off String ... 0............ = Label Off String .. 1............. = Etichetta sulla stringa .0.............. = Label Off String 1.................. = Etichetta su stringa |
+| PROP \_ QUAL \_ ARRAY             | 0000000a ffffffff ...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
  
 
-## <a name="prop_type_raw_data"></a>tipi di PROP \_ \_ dati non elaborati \_
+## <a name="prop_type_raw_data"></a>DATI NON \_ ELABORATI \_ DI TIPO \_ PROP
 
-La tabella seguente elenca l'output di formato generico per una proprietà tipo di dati **\_ \_ RAW \_ data del tipo prop** . Tenere presente che l'output del formattatore non Visualizza i dati non elaborati, ma Visualizza l'etichetta della proprietà.
+Nella tabella seguente viene elencato l'output di formato generico per una proprietà del tipo di dati **RAW DATA DI \_ \_ TIPO \_ PROP.** Tenere presente che l'output del formattatore non visualizza i dati non elaborati, ma visualizza l'etichetta della proprietà.
 
 
 
-| Qualificatore proprietà            | Output formattatore |
+| Qualificatore proprietà            | Output del formattatore |
 |-------------------------------|------------------|
-| PROP \_ qual \_ None              | Etichetta della proprietà.  |
-| intervallo di proprietà PROP \_ \_             | Etichetta della proprietà.  |
-| PROP \_ qual \_ bit          | Etichetta della proprietà.  |
-| \_set con \_ etichetta \_ set di prop      | Etichetta della proprietà.  |
-| PROP \_ qual \_ etichettato \_ bit | Etichetta della proprietà.  |
-| PROP \_ qual \_ const             | Etichetta della proprietà.  |
-| flag di PROP \_ qual \_             | Etichetta della proprietà.  |
-| \_Array prop qual \_             | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ NONE              | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ RANGE             | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ BITFIELD          | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ LABELED \_ SET      | Etichetta della proprietà.  |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ CONST             | Etichetta della proprietà.  |
+| FLAG PROP \_ QUAL \_             | Etichetta della proprietà.  |
+| PROP \_ QUAL \_ ARRAY             | Etichetta della proprietà.  |
 
 
 
  
 
-## <a name="prop_type_time"></a>\_ora tipo di Prop \_
+## <a name="prop_type_time"></a>PROP \_ TYPE \_ TIME
 
-La tabella seguente elenca l'output di formato generico per una proprietà tipo di dati **\_ \_ Time del tipo prop** . Tenere presente che l'output formattato può variare a seconda del qualificatore dati della proprietà.
+Nella tabella seguente viene elencato l'output di formato generico per una proprietà del tipo di dati **\_ PROP TYPE \_ TIME.** Tenere presente che l'output formattato può variare a seconda del qualificatore di dati della proprietà .
 
-Il formattatore generico chiama [**GetDateFormat**](/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata) per ottenere un'ora basata sull'orologio di sistema del computer locale.
+Il formattatore generico [**chiama GetDateFormat**](/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata) per ottenere un'ora basata sull'orologio di sistema del computer locale.
 
 
 
-| Qualificatore proprietà            | Output formattatore                                            |
+| Qualificatore proprietà            | Output del formattatore                                            |
 |-------------------------------|-------------------------------------------------------------|
-| PROP \_ qual \_ None              | Visualizza l'ora di sistema in base all'orologio del computer locale. |
-| intervallo di proprietà PROP \_ \_             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
-| PROP \_ qual \_ bit          | Obsoleta.                                                   |
-| \_set con \_ etichetta \_ set di prop      | Visualizza l'ora di sistema in base all'orologio del computer locale. |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop.      |
-| PROP \_ qual \_ const             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
-| flag di PROP \_ qual \_             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
-| \_Array prop qual \_             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| PROP \_ QUAL \_ NONE              | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| PROP \_ QUAL \_ RANGE             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                                   |
+| PROP \_ QUAL \_ LABELED \_ SET      | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL.      |
+| PROP \_ QUAL \_ CONST             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| FLAG PROP \_ QUAL \_             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
+| PROP \_ QUAL \_ ARRAY             | Visualizza l'ora di sistema in base all'orologio del computer locale. |
 
 
 
  
 
-## <a name="prop_type_string"></a>\_stringa di tipo Prop \_
+## <a name="prop_type_string"></a>PROP \_ TYPE \_ STRING
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati **\_ \_ stringa di tipo prop** . Tenere presente che l'output del formattatore può variare a seconda del qualificatore dati della proprietà.
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà del tipo di dati **\_ PROP TYPE \_ STRING.** Tenere presente che l'output del formattatore può variare a seconda del qualificatore di dati della proprietà.
 
 
 
-| Qualificatore proprietà            | Output formattatore                                       |
+| Qualificatore proprietà            | Output del formattatore                                       |
 |-------------------------------|--------------------------------------------------------|
-| PROP \_ qual \_ None              | Stringa collegata.                                       |
-| intervallo di proprietà PROP \_ \_             | Stringa collegata.                                       |
-| PROP \_ qual \_ bit          | Obsoleta.                                              |
-| \_set con \_ etichetta \_ set di prop      | Stringa collegata.                                       |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop. |
-| PROP \_ qual \_ const             | Stringa collegata.                                       |
-| flag di PROP \_ qual \_             | Stringa collegata.                                       |
-| \_Array prop qual \_             | Stringa collegata.                                       |
+| PROP \_ QUAL \_ NONE              | Stringa associata.                                       |
+| PROP \_ QUAL \_ RANGE             | Stringa associata.                                       |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | Stringa associata.                                       |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL. |
+| PROP \_ QUAL \_ CONST             | Stringa associata.                                       |
+| FLAG PROP \_ QUAL \_             | Stringa associata.                                       |
+| PROP \_ QUAL \_ ARRAY             | Stringa associata.                                       |
 
 
 
  
 
-## <a name="prop_type_ip_address"></a>\_ \_ indirizzo IP del tipo Prop \_
+## <a name="prop_type_ip_address"></a>INDIRIZZO \_ IP DI TIPO \_ \_ PROP
 
-La tabella seguente elenca l'output di formato generico per le proprietà del tipo di dati dell' **\_ \_ \_ indirizzo IP del tipo prop** . Tenere presente che l'output formattato può variare a seconda del qualificatore dei dati della proprietà.
+Nella tabella seguente viene elencato l'output di formato generico per le proprietà del tipo di dati **\_ \_ \_ INDIRIZZO IP** TIPO PROP. Tenere presente che l'output formattato può variare a seconda del qualificatore di dati della proprietà.
 
-Nella colonna di output di esempio, il valore dei dati nell'acquisizione è "129.65.100.2".
+Nella colonna di output di esempio il valore dei dati nell'acquisizione è "129.65.100.2".
 
 
 
 | Qualificatore proprietà            | Output di esempio                                         |
 |-------------------------------|--------------------------------------------------------|
-| PROP \_ qual \_ None              | 129.65.100.2                                           |
-| intervallo di proprietà PROP \_ \_             | 129.65.100.2                                           |
-| PROP \_ qual \_ bit          | Obsoleta.                                              |
-| \_set con \_ etichetta \_ set di prop      | 129.65.100.2                                           |
-| PROP \_ qual \_ etichettato \_ bit | Obsoleta. Per ulteriori informazioni, vedere la pagina relativa ai \_ \_ flag prop. |
-| PROP \_ qual \_ const             | 129.65.100.2                                           |
-| flag di PROP \_ qual \_             | 129.65.100.2                                           |
-| \_Array prop qual \_             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ NONE              | 129.65.100.2                                           |
+| PROP \_ QUAL \_ RANGE             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleta.                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | 129.65.100.2                                           |
+| CAMPO \_ DI BIT CON \_ ETICHETTA \_ PROP QUAL | Obsoleta. Per altre informazioni, vedere FLAG PROP \_ \_ QUAL. |
+| PROP \_ QUAL \_ CONST             | 129.65.100.2                                           |
+| FLAG PROP \_ QUAL \_             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ ARRAY             | 129.65.100.2                                           |
 
 
 

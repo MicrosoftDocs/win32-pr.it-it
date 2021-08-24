@@ -1,9 +1,9 @@
 ---
-title: Enumerazione MrmPlatformVersion (MrmResourceIndexer. h)
-description: Definisce le costanti che specificano una versione della piattaforma. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere API PRI (Package Resource Indexing) e sistemi di compilazione personalizzati.
+title: Enumerazione MrmPlatformVersion (MrmResourceIndexer.h)
+description: Definisce costanti che specificano una versione della piattaforma. Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi di compilazione personalizzati.
 ms.assetid: 7BA30B8F-FB23-4DCA-930D-099C7F8476E9
 keywords:
-- Menu di enumerazione MrmPlatformVersion e altre risorse
+- Menu e altre risorse dell'enumerazione MrmPlatformVersion
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8127d3e6e99d974315327cf89ae9e82add7bc628
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c41eec2f3839de5a8de6bcfd2f3a12910d146a0c2327286024ba36a52526d0a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662981"
 ---
 # <a name="mrmplatformversion-enumeration"></a>Enumerazione MrmPlatformVersion
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Definisce le costanti che specificano una versione della piattaforma. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Definisce costanti che specificano una versione della piattaforma. Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi [di compilazione personalizzati.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ typedef enum _MrmPlatformVersion {
 
 <dl> <dt>
 
-<span id="MrmPlatformVersion_Default"></span><span id="mrmplatformversion_default"></span><span id="MRMPLATFORMVERSION_DEFAULT"></span>**\_Impostazione predefinita MrmPlatformVersion**
+<span id="MrmPlatformVersion_Default"></span><span id="mrmplatformversion_default"></span><span id="MRMPLATFORMVERSION_DEFAULT"></span>**Valore predefinito di MrmPlatformVersion \_**
 </dt> <dd>
 
-Specifica che la versione della piattaforma è quella predefinita.
+Specifica che la versione della piattaforma è l'impostazione predefinita.
 
 </dd> <dt>
 
@@ -71,9 +71,9 @@ Specifica una versione della piattaforma di Windows 10.0.0.5.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

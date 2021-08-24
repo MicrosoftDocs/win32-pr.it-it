@@ -1,7 +1,7 @@
 ---
-description: La funzione CorePrinterDriverInstalled segnala se è installato un driver della stampante principale con un GUID, una data e una versione specificati.
+description: La funzione CorePrinterDriverInstalled indica se è installato un driver della stampante core con un GUID, una data e una versione specificati.
 ms.assetid: fb859aca-bb7b-495d-bd38-16ffa084c240
-title: Funzione CorePrinterDriverInstalled (winspool. h)
+title: Funzione CorePrinterDriverInstalled (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 2e4f7033e5ca15a892a208621049c2f500873d73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 014b9932046ab6d66b64794bbe042f43a390f9f6a4b6183d36a6338eca434526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719771"
 ---
-# <a name="coreprinterdriverinstalled-function"></a>CorePrinterDriverInstalled (funzione)
+# <a name="coreprinterdriverinstalled-function"></a>Funzione CorePrinterDriverInstalled
 
-La funzione **CorePrinterDriverInstalled** segnala se è installato un driver della stampante principale con un GUID, una data e una versione specificati.
+La **funzione CorePrinterDriverInstalled** indica se è installato un driver della stampante core con un GUID, una data e una versione specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,58 +46,58 @@ HRESULT CorePrinterDriverInstalled(
 
 <dl> <dt>
 
-*pszServer* \[ in\]
+*pszServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica il nome del server di stampa. Utilizzare **null** per il computer locale.
+Puntatore a una stringa costante con terminazione Null che specifica il nome del server di stampa. Usare **NULL** per il computer locale.
 
 </dd> <dt>
 
-*pszEnvironment* \[ in\]
+*pszEnvironment* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa costante a terminazione null che specifica l'architettura del processore, ad esempio Windows NT x86. Può essere **null**.
+Puntatore a una stringa costante con terminazione Null che specifica l'architettura del processore, ad esempio Windows NT x86. Può essere **NULL.**
 
 </dd> <dt>
 
-*CoreDriverGUID* \[ in\]
+*Guida di base* \[ Pollici\]
 </dt> <dd>
 
 GUID del driver della stampante principale.
 
 </dd> <dt>
 
-*ftDriverDate* \[ in\]
+*ftDriverDate* \[ Pollici\]
 </dt> <dd>
 
 Data del driver della stampante principale.
 
 </dd> <dt>
 
-*dwlDriverVersion* \[ in\]
+*dwlDriverVersion* \[ Pollici\]
 </dt> <dd>
 
 Versione del driver della stampante principale.
 
 </dd> <dt>
 
-*pbDriverInstalled* \[ out\]
+*pbDriverInstalled* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a **true** se il driver, o una versione più recente, è installato; in caso contrario, **false** .
+Puntatore a **TRUE se** è installato il driver o una versione più recente, FALSE in **caso contrario.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, il valore restituito è \_ OK, altrimenti **HRESULT** conterrà un codice di errore.
+Se l'operazione ha esito positivo, il valore restituito è S OK. In \_ caso contrario, **HRESULT** conterrà un codice di errore.
 
-Per ulteriori informazioni sui codici di errore COM, vedere [gestione degli errori](../com/error-handling-in-com.md).
+Per altre informazioni sui codici di errore COM, vedere [Gestione degli errori.](../com/error-handling-in-com.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
@@ -107,10 +107,10 @@ Per ulteriori informazioni sui codici di errore COM, vedere [gestione degli erro
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomi Unicode e ANSI<br/>   | **CorePrinterDriverInstalledW** (Unicode) e **CorePrinterDriverInstalledA** (ANSI)<br/>           |
 

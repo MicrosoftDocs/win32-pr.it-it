@@ -1,7 +1,7 @@
 ---
 description: Accoda una richiesta di esecuzione da parte del thread di lavoro.
 ms.assetid: a854f962-143d-4776-bf98-119d003867df
-title: Metodo CMsgThread. PutThreadMsg (Msgthrd. h)
+title: Metodo CMsgThread.PutThreadMsg (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3445d9af4ec9c7abe6a4401e219fc305e254d555
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7eefa95c4fd6ab19c895b4d1d47dba3a19302023985a4631708c3cf7ccc10d06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585641"
 ---
-# <a name="cmsgthreadputthreadmsg-method"></a>CMsgThread. PutThreadMsg, metodo
+# <a name="cmsgthreadputthreadmsg-method"></a>Metodo CMsgThread.PutThreadMsg
 
 Accoda una richiesta di esecuzione da parte del thread di lavoro.
 
@@ -45,10 +45,10 @@ void PutThreadMsg(
 
 <dl> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Codice della richiesta.
+Richiedere il codice.
 
 </dd> <dt>
 
@@ -62,11 +62,11 @@ Parametro flags facoltativo.
 *lpMsgParam* 
 </dt> <dd>
 
-Puntatore facoltativo a un blocco di dati contenente parametri o valori restituiti aggiuntivi. Deve essere allocato in modo statico o heap e non automatico.
+Puntatore facoltativo a un blocco di dati contenente parametri aggiuntivi o valori restituiti. Deve essere allocato in modo statico o heap e non automatico.
 
 </dd> <dt>
 
-*pEvent* 
+*Pevent* 
 </dt> <dd>
 
 Puntatore facoltativo a un oggetto evento da segnalare al completamento.
@@ -79,9 +79,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro accoda una richiesta di esecuzione da parte del thread di lavoro. I parametri di questa funzione membro verranno accodati (in un oggetto [**CMsg**](cmsg.md) ) e passati alla funzione membro [**CMsgThread:: ThreadMessageProc**](cmsgthread-threadmessageproc.md) del thread di lavoro. Questa funzione membro viene restituita immediatamente dopo l'accodamento della richiesta e non attende che il thread soddisfi la richiesta. La funzione membro **CMsgThread:: ThreadMessageProc** della classe derivata definisce i quattro parametri.
+Questa funzione membro accoda una richiesta di esecuzione da parte del thread di lavoro. I parametri di questa funzione membro verranno accodati (in un oggetto [**CMsg)**](cmsg.md) e passati alla funzione membro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) del thread di lavoro. Questa funzione membro restituisce immediatamente dopo l'accodamento della richiesta e non attende che il thread adempia la richiesta. La **funzione membro CMsgThread::ThreadMessageProc** della classe derivata definisce i quattro parametri.
 
-Questa funzione membro usa un elenco multithread safe, quindi è possibile rendere sicure più chiamate a questa funzione membro da thread diversi.
+Questa funzione membro usa un elenco di thread sicuri multithread, pertanto è possibile effettuare più chiamate a questa funzione membro da thread diversi in modo sicuro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Questa funzione membro usa un elenco multithread safe, quindi è possibile rende
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

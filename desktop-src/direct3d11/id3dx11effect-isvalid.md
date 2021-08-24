@@ -1,11 +1,11 @@
 ---
-title: Metodo Id3DX11Effect IsValid (D3dx11effect.h)
-description: Testare un effetto per verificare se contiene una sintassi valida. | Metodo ID3DX11Effect IsValid (D3dx11effect.h)
+title: Metodo ID3DX11Effect IsValid (D3dx11effect.h)
+description: Testare un effetto per verificare se contiene una sintassi valida. | Metodo Id3DX11Effect IsValid (D3dx11effect.h)
 ms.assetid: 42bf0069-1828-4f55-99f5-d0f81eb04336
 keywords:
 - Metodo IsValid Direct3D 11
 - Metodo IsValid Direct3D 11, interfaccia ID3DX11Effect
-- INTERFACCIA ID3DX11Effect Direct3D 11, metodo IsValid
+- Interfaccia ID3DX11Effect Direct3D 11, metodo IsValid
 topic_type:
 - apiref
 api_name:
@@ -50,7 +50,7 @@ Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 

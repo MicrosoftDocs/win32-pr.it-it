@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CBaseOutputPin.CBaseOutputPin : metodo del costruttore.'
+description: 'Costruttore CBaseOutputPin.CBaseOutputPin : metodo costruttore.'
 ms.assetid: 1105c951-a51d-49ab-a69d-f3d482d61233
 title: Costruttore CBaseOutputPin.CBaseOutputPin (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9901591be32d431ebe53a2098456446a0126d26b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 53f875ffc016a68b6cf714174f4aa39ab57565a73900a0d00ec4d2900722103c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652481"
 ---
 # <a name="cbaseoutputpincbaseoutputpin-constructor"></a>Costruttore CBaseOutputPin.CBaseOutputPin
 
@@ -49,7 +49,7 @@ CBaseOutputPin(
 *pObjectName* 
 </dt> <dd>
 
-Stringa contenente il nome di debug dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
+Stringa contenente il nome di debug dell'oggetto . Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Puntatore al filtro che ha creato questo segnaposto.
 *Plock* 
 </dt> <dd>
 
-Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato. Può trattarsi della stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) usato per serializzare le modifiche dello stato. Può trattarsi della stessa sezione critica del blocco del filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
@@ -77,13 +77,13 @@ Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito po
 *Pname* 
 </dt> <dd>
 
-Stringa di caratteri wide contenente il nome del segnaposto (usato anche come identificatore pin).
+Stringa di caratteri wide contenente il nome del pin (usato anche come identificatore pin).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri vengono passati direttamente al [**costruttore CBasePin.**](cbasepin.md)
+Tutti i parametri vengono passati direttamente al costruttore [**CBasePin.**](cbasepin.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,7 +91,7 @@ Tutti i parametri vengono passati direttamente al [**costruttore CBasePin.**](cb
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
